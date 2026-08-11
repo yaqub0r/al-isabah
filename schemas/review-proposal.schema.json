@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sabiqah.org/schemas/al-isabah/review-proposal-1.0.0.json",
+  "title": "Al-Isabah review proposal envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["proposal"],
+  "properties": {
+    "proposal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "proposalVersion",
+        "bookSlug",
+        "baseReleaseId",
+        "entryId",
+        "createdAt",
+        "operations"
+      ],
+      "properties": {
+        "proposalVersion": { "const": "1.0.0" },
+        "bookSlug": { "const": "al-isabah" },
+        "baseReleaseId": { "$ref": "#/$defs/identifier" },
+        "entryId": { "$ref": "#/$defs/identifier" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "operations": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/operation" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 160,
+      "pattern": "^[a-z0-9][a-z0-9._-]+$"
+    },
+    "operation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["segmentId", "target", "proposedText", "rationale", "evidenceRefs"],
+      "properties": {
+        "segmentId": { "$ref": "#/$defs/identifier" },
+        "target": { "enum": ["translation", "canonical_arabic"] },
+        "proposedText": { "type": "string", "minLength": 1 },
+        "rationale": { "type": "string" },
+        "evidenceRefs": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "target": { "const": "canonical_arabic" } },
+            "required": ["target"]
+          },
+          "then": {
+            "properties": {
+              "rationale": { "type": "string", "minLength": 10 },
+              "evidenceRefs": { "type": "array", "minItems": 1 }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
