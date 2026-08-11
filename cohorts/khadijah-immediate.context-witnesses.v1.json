@@ -1,0 +1,26 @@
+{
+  "schema": "al-isabah.context-witness-plan.v1",
+  "cohort_id": "khadijah-immediate",
+  "items": [
+    {
+      "context_id": "reader-2479",
+      "reader_index": 2479,
+      "volume": 5,
+      "queries": [
+        "عسكلان بن عواكن",
+        "شهدت بنا مع الأملاك منا",
+        "فبادوا أجمعين فصرت جلسا"
+      ]
+    },
+    {
+      "context_id": "reader-2977",
+      "reader_index": 2977,
+      "volume": 6,
+      "queries": [
+        "محمد بن صيفي",
+        "وصيفي بن أمية يوم بدر",
+        "كان له رفاعة وبه كان يكنى"
+      ]
+    }
+  ]
+}

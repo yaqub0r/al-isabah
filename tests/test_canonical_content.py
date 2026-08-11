@@ -21,17 +21,19 @@ class CanonicalContentTests(unittest.TestCase):
         cls.manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
 
     def test_volume_8_entry_sequence_is_complete_and_unique(self) -> None:
-        self.assertEqual(len(self.entries), 1550)
-        numbers = [entry["printed_entry_number"] for entry in self.entries]
+        volume_8 = [entry for entry in self.entries if 10759 <= entry["printed_entry_number"] <= 12308]
+        self.assertGreaterEqual(len(self.entries), 1550)
+        numbers = [entry["printed_entry_number"] for entry in volume_8]
         self.assertEqual(numbers, list(range(10759, 12309)))
-        self.assertEqual(len({entry["id"] for entry in self.entries}), 1550)
+        self.assertEqual(len({entry["id"] for entry in self.entries}), len(self.entries))
         self.assertEqual(self.report["entries"], 1550)
         self.assertTrue(self.report["pass"])
 
     def test_segments_and_translation_state_are_internally_valid(self) -> None:
         segment_ids = set()
         unresolved = 0
-        for entry in self.entries:
+        volume_8 = [entry for entry in self.entries if 10759 <= entry["printed_entry_number"] <= 12308]
+        for entry in volume_8:
             self.assertEqual(entry["schema"], "al-isabah.entry.v1")
             self.assertTrue(entry["segments"])
             self.assertEqual(entry["translation"]["human_review"], "unreviewed")
@@ -66,9 +68,9 @@ class CanonicalContentTests(unittest.TestCase):
         self.assertTrue(all(
             entry["provenance"]["source_artifact_sha256"] == source["sha256"]
             for entry in self.entries
+            if 10759 <= entry["printed_entry_number"] <= 12308
         ))
 
 
 if __name__ == "__main__":
     unittest.main()
-

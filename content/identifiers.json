@@ -2,6 +2,96 @@
   "schema": "al-isabah.identifier-ledger.v1",
   "entries": [
     {
+      "id": "isabah-entry-00001805",
+      "allocation_source": "printed-entry-number:dar-al-kutub-al-ilmiyyah-1995",
+      "printed_entry_number": 1805,
+      "state": "active"
+    },
+    {
+      "id": "isabah-entry-00002263",
+      "allocation_source": "printed-entry-number:dar-al-kutub-al-ilmiyyah-1995",
+      "printed_entry_number": 2263,
+      "state": "active"
+    },
+    {
+      "id": "isabah-entry-00002847",
+      "allocation_source": "printed-entry-number:dar-al-kutub-al-ilmiyyah-1995",
+      "printed_entry_number": 2847,
+      "state": "active"
+    },
+    {
+      "id": "isabah-entry-00002897",
+      "allocation_source": "printed-entry-number:dar-al-kutub-al-ilmiyyah-1995",
+      "printed_entry_number": 2897,
+      "state": "active"
+    },
+    {
+      "id": "isabah-entry-00004321",
+      "allocation_source": "printed-entry-number:dar-al-kutub-al-ilmiyyah-1995",
+      "printed_entry_number": 4321,
+      "state": "active"
+    },
+    {
+      "id": "isabah-entry-00005602",
+      "allocation_source": "printed-entry-number:dar-al-kutub-al-ilmiyyah-1995",
+      "printed_entry_number": 5602,
+      "state": "active"
+    },
+    {
+      "id": "isabah-entry-00007284",
+      "allocation_source": "printed-entry-number:dar-al-kutub-al-ilmiyyah-1995",
+      "printed_entry_number": 7284,
+      "state": "active"
+    },
+    {
+      "id": "isabah-entry-00008302",
+      "allocation_source": "printed-entry-number:dar-al-kutub-al-ilmiyyah-1995",
+      "printed_entry_number": 8302,
+      "state": "active"
+    },
+    {
+      "id": "isabah-entry-00008695",
+      "allocation_source": "printed-entry-number:dar-al-kutub-al-ilmiyyah-1995",
+      "printed_entry_number": 8695,
+      "state": "active"
+    },
+    {
+      "id": "isabah-entry-00008907",
+      "allocation_source": "printed-entry-number:dar-al-kutub-al-ilmiyyah-1995",
+      "printed_entry_number": 8907,
+      "state": "active"
+    },
+    {
+      "id": "isabah-entry-00008912",
+      "allocation_source": "printed-entry-number:dar-al-kutub-al-ilmiyyah-1995",
+      "printed_entry_number": 8912,
+      "state": "active"
+    },
+    {
+      "id": "isabah-entry-00008935",
+      "allocation_source": "printed-entry-number:dar-al-kutub-al-ilmiyyah-1995",
+      "printed_entry_number": 8935,
+      "state": "active"
+    },
+    {
+      "id": "isabah-entry-00009027",
+      "allocation_source": "printed-entry-number:dar-al-kutub-al-ilmiyyah-1995",
+      "printed_entry_number": 9027,
+      "state": "active"
+    },
+    {
+      "id": "isabah-entry-00009151",
+      "allocation_source": "printed-entry-number:dar-al-kutub-al-ilmiyyah-1995",
+      "printed_entry_number": 9151,
+      "state": "active"
+    },
+    {
+      "id": "isabah-entry-00010182",
+      "allocation_source": "printed-entry-number:dar-al-kutub-al-ilmiyyah-1995",
+      "printed_entry_number": 10182,
+      "state": "active"
+    },
+    {
       "id": "isabah-entry-00010759",
       "allocation_source": "printed-entry-number:dar-al-kutub-al-ilmiyyah-1995",
       "printed_entry_number": 10759,

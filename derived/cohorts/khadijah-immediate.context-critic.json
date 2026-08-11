@@ -1,0 +1,364 @@
+{
+  "schema": "al-isabah.cohort-context-critic.v1",
+  "cohort_id": "khadijah-immediate",
+  "stage": "critic",
+  "generated_at": "2026-08-11T07:05:13Z",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "prompt_version": "khadijah-context-critic-v1",
+  "prompt_sha256": "76eb90c1e1adf7b31b96aeafbed51da5d770ab4824cbe3cfd7d035952c0965bd",
+  "item_count": 14,
+  "items": [
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Nzc",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Nzc",
+          "pages": [
+            {
+              "index": 77,
+              "page": 84,
+              "volume": "1"
+            }
+          ],
+          "text_sha256": "a3385c1b8a82edae8433f62609f7bd06068d601b79bb85b5d045abeaf946d566"
+        },
+        "relationship": "subject; earliest believer",
+        "rationale": "Preserves the disputed ordering of the earliest converts and the qualified claim that Khadijah was the first woman to embrace Islam.",
+        "arabic_sha256": "913f22d274031ca7f578284eaa49d59913fdbe41c235b423378ea46d3362b2d6"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Nzc",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTg5",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTg5",
+          "pages": [
+            {
+              "index": 189,
+              "page": 205,
+              "volume": "1"
+            }
+          ],
+          "text_sha256": "b19fce8410efd3826dec9ff0e063136fb1b9d961060b093e290220d1883880dc"
+        },
+        "relationship": "alleged nephew; genealogical dispute",
+        "rationale": "Substantively records uncertainty over the identity of a reported nephew and conflicting information about Khadijah’s brothers.",
+        "arabic_sha256": "00826aaba0a7c5127889f6a0ee781698cc7a4d9bbbd3b11ba6edd9aa7a2c08ee"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTg5",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjEz",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjEz",
+          "pages": [
+            {
+              "index": 213,
+              "page": 229,
+              "volume": "1"
+            }
+          ],
+          "text_sha256": "c7e2e8c1452e75d6ba7ac8bd576bc9940a9493b7ffc02552a623b2fa8ff09ac5"
+        },
+        "relationship": "nephew",
+        "rationale": "Adds migration history for Khadijah’s nephew and notes that his father Nوفل persecuted Muslims in the early period.",
+        "arabic_sha256": "505c29746d60a0c9bea4d97c2c5c4dd175efd838f50a7a6b8ff7e96dad82e8dd"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjEz",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzA1",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzA1",
+          "pages": [
+            {
+              "index": 305,
+              "page": 321,
+              "volume": "1"
+            }
+          ],
+          "text_sha256": "568140d2ff535a672783095ffe3402b6d626d0fc675284de46d723e4df12b9d1"
+        },
+        "relationship": "disputed son",
+        "rationale": "Records an isolated, explicitly exceptional report assigning Ibrahim to Khadijah and listing the order of her children.",
+        "arabic_sha256": "2a793c1cf039d244d40653fee4abd7d59b82feac167aa5c553c17e58f84f4c2d"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzA1",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzA2",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzA2",
+          "pages": [
+            {
+              "index": 306,
+              "page": 322,
+              "volume": "1"
+            }
+          ],
+          "text_sha256": "3196b9acfe4d76c99c04161d7e88abd66a8a46ca08b23e160693839f2ecc3f3a"
+        },
+        "relationship": "disputed son",
+        "rationale": "Continues Ibn Hajar’s qualification of the exceptional report, explaining it as a probable confusion between Khadijah and Mariya.",
+        "arabic_sha256": "e8ae004eeafa26151f95266f2a1784f3fbb8b667fe65337aeff32746e5be9602"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzA2",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDYw",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDYw",
+          "pages": [
+            {
+              "index": 460,
+              "page": 476,
+              "volume": "1"
+            }
+          ],
+          "text_sha256": "6a7e4e03eecf7cc67cd2d7919c026538e3a337870ee7030a84bbb61982eff0b8"
+        },
+        "relationship": "trade journey and pre-prophetic witness",
+        "rationale": "Adds a report about Muhammad’s journey in Khadijah’s trade with Maysara and Bahira’s alleged recognition of prophetic signs.",
+        "arabic_sha256": "94a87b5711d95cc9a25fbc1897443fbb43a2b8971516a4ba002a36b7b89f89d1"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDYw",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTg5MQ",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTg5MQ",
+          "pages": [
+            {
+              "index": 1891,
+              "page": 149,
+              "volume": "4"
+            }
+          ],
+          "text_sha256": "107b5aece0c2394989e599af12615217ad145869213defae8b1e92fe67e68e98"
+        },
+        "relationship": "marriage chronology; Abu Bakr report",
+        "rationale": "Preserves a chronologically significant report connecting Abu Bakr, Khadijah’s marriage, and Ali’s birth, despite its unusual formulation.",
+        "arabic_sha256": "914246faa65b4a4038d871c8260ef14074a8b5d7832a7d80308f54787c64e11c"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTg5MQ",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjEyOA",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjEyOA",
+          "pages": [
+            {
+              "index": 2128,
+              "page": 386,
+              "volume": "4"
+            }
+          ],
+          "text_sha256": "3b617736f89316590aa0625d7ad64828cd14313201638a16bfcd048af3f0a0a8"
+        },
+        "relationship": "revelation adviser and Christian witnesses",
+        "rationale": "Adds a distinct revelation narrative in which Khadijah cites pre-marriage predictions and consults a monk, Addas, and Waraqa.",
+        "arabic_sha256": "7a674c3e6344076c0c0904c6330c37597fd49ed9444e511d18a853f77e3d1e77"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjEyOA",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjIzNw",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjIzNw",
+          "pages": [
+            {
+              "index": 2237,
+              "page": 495,
+              "volume": "4"
+            }
+          ],
+          "text_sha256": "f41a71150668f5533472f54c90814fa0080f02002ba3d2c10428e01551430138"
+        },
+        "relationship": "maternal cousin, Ibn Umm Maktum",
+        "rationale": "Identifies a maternal cousin through Khadijah’s mother and supplies substantive, conflicting migration and later-life information about him.",
+        "arabic_sha256": "f41a71150668f5533472f54c90814fa0080f02002ba3d2c10428e01551430138"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjIzNw",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjQ3OQ",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjQ3OQ",
+          "pages": [
+            {
+              "index": 2479,
+              "page": 98,
+              "volume": "5"
+            }
+          ],
+          "text_sha256": "3752cd6ff1b92c7a72e15ca4f6c0a001b947c7a90705a7a2fb68cc6cda4bede0"
+        },
+        "relationship": "early household setting",
+        "rationale": "Places Muhammad in Khadijah’s house when Abd al-Rahman ibn Awf came to him at the beginning of the mission.",
+        "arabic_sha256": "3752cd6ff1b92c7a72e15ca4f6c0a001b947c7a90705a7a2fb68cc6cda4bede0"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjQ3OQ",
+      "verdict": "witness_required",
+      "issues": [
+        {
+          "severity": "major",
+          "category": "meaning",
+          "location": "Prose after the first poem: “Eventually I arrived on the journey during which…”",
+          "explanation": "قدمت القدمة التي بعث النبي ... وأنا غائب فيها means that Abd al-Rahman returned from the journey during which the Prophet had been commissioned in his absence. The proposed wording instead says that he “arrived on the journey,” obscuring the sequence of departure, commission, and return.",
+          "suggested_fix": "Use: “Eventually I returned from the journey during which the Prophet had been commissioned while I was away.”",
+          "witness_recommended": false
+        },
+        {
+          "severity": "major",
+          "category": "poetry",
+          "location": "First poem, especially “شهدت بنا مع الأملاك منا” and “لا أبوح إلى الخلايا”",
+          "explanation": "These Arabic readings are syntactically and lexically uncertain and may be textually damaged. The proposed lines supply confident meanings—“I witnessed among us kings…” and “unable to speak to those in the chambers”—that are not securely established by the transmitted wording.",
+          "suggested_fix": "Consult another edition or manuscript witness for these two lines before fixing the translation; meanwhile mark the uncertain readings rather than silently resolving them.",
+          "witness_recommended": true
+        }
+      ]
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mjk3Nw",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mjk3Nw",
+          "pages": [
+            {
+              "index": 2977,
+              "page": 14,
+              "volume": "6"
+            }
+          ],
+          "text_sha256": "ed475a6b2be905111d56c83bcc8799929a074a6e64279ca85c757566469009c5"
+        },
+        "relationship": "grandson through daughter Hind",
+        "rationale": "Adds genealogy and chronological reasoning concerning Khadijah’s grandson through her daughter Hind from an earlier marriage.",
+        "arabic_sha256": "b56a5f9be94a3cdb7ae87089a57c0bbbb1b54887e022f0271492bbea51dc674f"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mjk3Nw",
+      "verdict": "witness_required",
+      "issues": [
+        {
+          "severity": "major",
+          "category": "ambiguity",
+          "location": "Paragraph citing al-Zubayr ibn Bakkar: “and Sayfi ibn Umayya [was killed] on the day of Badr”",
+          "explanation": "The Arabic as supplied reads وصيفي بن أمية يوم بدر and lacks the verb “was killed.” The following sentence strongly supports that reconstruction, but the proposed English is still an editorial emendation rather than a translation of an intact reading.",
+          "suggested_fix": "Check another edition or manuscript for a verb such as قتل. Until verified, retain the restoration in editorial brackets and explicitly identify it as a conjectural completion.",
+          "witness_recommended": true
+        }
+      ]
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE2OQ",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE2OQ",
+          "pages": [
+            {
+              "index": 3169,
+              "page": 206,
+              "volume": "6"
+            }
+          ],
+          "text_sha256": "77d4489030c0cb300b6621f72c11eba7196c82dca349de11074f2a217695a774"
+        },
+        "relationship": "disputed son",
+        "rationale": "Preserves a disputed additional son’s name and Ibn Hajar’s discussion of possible confusion with a child from Khadijah’s earlier marriage.",
+        "arabic_sha256": "c652c2e561eb9e37af96a690040b3fa4541f8892ea3963ff1bf6274936ddd427"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE2OQ",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE3MA",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE3MA",
+          "pages": [
+            {
+              "index": 3170,
+              "page": 207,
+              "volume": "6"
+            }
+          ],
+          "text_sha256": "85b29e63c178ab5b19711aba4733a306715ae09209d8057123294d30d5d10acc"
+        },
+        "relationship": "disputed sons",
+        "rationale": "Records conflicting child lists and claims about identity, twin births, and the otherwise separately listed al-Mutayyab.",
+        "arabic_sha256": "84894631b02d7a7137eecb25c7957ee8c6aae86f510571d8839bfb9f38ae3519"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE3MA",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQwMA",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQwMA",
+          "pages": [
+            {
+              "index": 3400,
+              "page": 437,
+              "volume": "6"
+            }
+          ],
+          "text_sha256": "20bfcfeedaec8f1e3daea2c8d929f5478e10311d15e8df90502b95af2c28fa37"
+        },
+        "relationship": "grandson Hind ibn Hind",
+        "rationale": "Entry 9028 is not selected and adds substantive genealogical, transmission, and death information about Khadijah’s grandson.",
+        "arabic_sha256": "8efdb33f9373df3813b5e518de3474a8e9a3f9971990a9999e83b4d35ebcf8c2"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQwMA",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "minor",
+          "category": "meaning",
+          "location": "Opening genealogy: “the name sequence would be Hind ibn Abi Hind for three successive generations”",
+          "explanation": "The Arabic indicates that, according to Qatada’s view, there would be three persons named Hind in succession. The English can instead suggest that the complete patronymic “Hind ibn Abi Hind” recurs in all three generations.",
+          "suggested_fix": "Use: “According to Qatada and those who followed him, there would thus be three successive generations bearing the name Hind.”",
+          "witness_recommended": false
+        },
+        {
+          "severity": "minor",
+          "category": "ambiguity",
+          "location": "Paragraph beginning “Ibn Abi Hatim al-Razi and Abd Allah ibn Ahmad likewise included it…”",
+          "explanation": "The placement of “in Ziyadat al-Zuhd” can make it appear that the title applies to both transmitters. In the Arabic, the work is specifically associated with Abd Allah ibn Ahmad.",
+          "suggested_fix": "Use: “Ibn Abi Hatim al-Razi likewise transmitted it by this route, as did Abd Allah ibn Ahmad in Ziyadat al-Zuhd.”",
+          "witness_recommended": false
+        }
+      ]
+    }
+  ]
+}

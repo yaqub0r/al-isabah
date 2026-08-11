@@ -156,6 +156,30 @@ The first validation set must include:
 2. an entry spanning a page boundary,
 3. an entry with an unresolved witness or name reading.
 
+## Story cohorts and incremental fill
+
+A story cohort is a review and prioritization layer over the canonical entry
+dataset, not a second copy of the book. A cohort specification records exact
+search queries, selection policy, targeted complete entries, relationship
+classes, and its fill contract.
+
+The fill unit remains the printed biography entry. Once a complete entry has
+been translated, its stable `isabah-entry-*` record can satisfy any later
+cohort. Substantive passages discovered outside selected complete entries are
+kept in a derived cohort bundle with exact source hashes and reader locations.
+When the surrounding biography is eventually filled, that canonical entry may
+replace the contextual passage without changing earlier reviewed entry IDs.
+
+Every exact-name search result receives an explicit coverage decision:
+selected entry, already translated volume, contextual passage, bare relation,
+namesake, or non-narrative occurrence. This inventory is what makes an
+incremental story claim auditable rather than merely plausible.
+
+Human review begins only after canonical extraction, facsimile collation,
+blind translation, independent critique, targeted witness checks, final
+adjudication, and deterministic import have completed. Machine confidence and
+human review state remain separate.
+
 ## Web and editor
 
 The first client is a static-first Astro application. React is used for the

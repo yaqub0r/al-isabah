@@ -1,0 +1,1393 @@
+{
+  "schema": "al-isabah.cohort-context-blind.v1",
+  "cohort_id": "khadijah-immediate",
+  "stage": "blind",
+  "generated_at": "2026-08-11T07:00:03Z",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "prompt_version": "khadijah-context-blind-v1",
+  "prompt_sha256": "ccb6a88bfc1aeeac72f9e8167fb6db1f3759a9424394405720144f68b880db00",
+  "item_count": 14,
+  "items": [
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Nzc",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Nzc",
+          "pages": [
+            {
+              "index": 77,
+              "page": 84,
+              "volume": "1"
+            }
+          ],
+          "text_sha256": "a3385c1b8a82edae8433f62609f7bd06068d601b79bb85b5d045abeaf946d566"
+        },
+        "relationship": "subject; earliest believer",
+        "rationale": "Preserves the disputed ordering of the earliest converts and the qualified claim that Khadijah was the first woman to embrace Islam.",
+        "arabic_sha256": "913f22d274031ca7f578284eaa49d59913fdbe41c235b423378ea46d3362b2d6"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Nzc",
+      "english_text": "Who was first to embrace Islam? There are several opinions: it is said that it was Abu Bakr; it is said, Ali; it is said, Zayd; and it is said, Khadijah. The sound view is that Abu Bakr was the first free man to embrace Islam. This was stated by Ibn Abbas, Hassan, al-Sha'bi, al-Nakha'i, and others. Supporting it is the report narrated by Muslim from Amr ibn Abasa in the account of his conversion to Islam and of his asking the Prophet (peace and blessings be upon him), “Who is with you in this?” He replied, “A free man and a slave.” He said: With him at that time were Abu Bakr and Bilal, among those who believed in him. [(1)]\n\nAl-Hakim narrated in al-Mustadrak, by way of Khalid ibn Sa'id, who said: Al-Sha'bi was asked, “Who was the first to embrace Islam?” He replied, “Have you not heard the words of Hassan?” [al-Basit]\n\nIf you recall the sorrow of a trustworthy brother,\nremember your brother Abu Bakr for what he did.\n\nThe best of creation, its most God-fearing and most just\n after the Prophet, and its most faithful to what he bore;\n\nThe second, the next, whose presence is praised,\nand the first of the people among them to affirm the Messenger.\n\nAl-Tabarani narrated in al-Kabir from al-Sha'bi, who said: I asked Ibn Abbas—and he related it. [(2)]\n\nIbn al-Salah said: “The more scrupulous formulation is to say: the first free man to embrace Islam was Abu Bakr; the first boy, Ali; the first woman, Khadijah; the first client, Zayd; and the first slave, Bilal.”\n\nAl-Birmawi said: “This reconciliation is also related from Abu Hanifa.” Ibn Khalawayh said: “The first woman to embrace Islam after Khadijah was Lubaba bint al-Harith, the wife of al-Abbas.”\n\n_________\n[(1)] Muslim included it in al-Sahih, 1/569, Book of the Prayer of Travelers and Its Abbreviation (6), chapter on the conversion of Amr ibn Abasa (52), hadith no. 294/832; al-Nasa'i in al-Sunan, 1/283, Book of Prayer (5), chapter on the permissibility of prayer until the dawn prayer is performed (40), hadith no. 584; Ibn Majah in al-Sunan, 1/434, Book of Establishing the Prayer and the Sunna Concerning It (5), chapter concerning which hours of the night are best (182), hadith no. 1364; Ahmad in al-Musnad, 4/111, 112, 113, 114, 385; al-Bayhaqi in al-Sunan, 2/454 and 6/369; Ibn Sa'd, 4/1/157–158; and Abu Nu'aym in al-Hilya, 2/16. Al-Bayhaqi mentioned it in al-Zawa'id, 1/57, 63, and Ibn Abd al-Barr in al-Tamhid, 4/14, 24.\n[(2)] Tadrib al-Rawi, 2/225–226.",
+      "names": [
+        {
+          "arabic": "أبو بكر",
+          "english": "Abu Bakr",
+          "kind": "person"
+        },
+        {
+          "arabic": "عليّ",
+          "english": "Ali",
+          "kind": "person"
+        },
+        {
+          "arabic": "زيد",
+          "english": "Zayd ibn Haritha",
+          "kind": "person"
+        },
+        {
+          "arabic": "خديجة",
+          "english": "Khadijah",
+          "kind": "person"
+        },
+        {
+          "arabic": "ابن عباس",
+          "english": "Ibn Abbas",
+          "kind": "person"
+        },
+        {
+          "arabic": "حسّان",
+          "english": "Hassan ibn Thabit",
+          "kind": "person"
+        },
+        {
+          "arabic": "الشّعبي",
+          "english": "al-Sha'bi",
+          "kind": "person"
+        },
+        {
+          "arabic": "النّخعي",
+          "english": "al-Nakha'i",
+          "kind": "person"
+        },
+        {
+          "arabic": "عمرو بن عبسة",
+          "english": "Amr ibn Abasa",
+          "kind": "person"
+        },
+        {
+          "arabic": "بلال",
+          "english": "Bilal ibn Rabah",
+          "kind": "person"
+        },
+        {
+          "arabic": "الحاكم",
+          "english": "al-Hakim al-Naysaburi",
+          "kind": "person"
+        },
+        {
+          "arabic": "المستدرك",
+          "english": "al-Mustadrak",
+          "kind": "work"
+        },
+        {
+          "arabic": "خالد بن سعيد",
+          "english": "Khalid ibn Sa'id",
+          "kind": "person"
+        },
+        {
+          "arabic": "الطبرانيّ",
+          "english": "al-Tabarani",
+          "kind": "person"
+        },
+        {
+          "arabic": "الكبير",
+          "english": "al-Mu'jam al-Kabir",
+          "kind": "work"
+        },
+        {
+          "arabic": "ابن الصّلاح",
+          "english": "Ibn al-Salah",
+          "kind": "person"
+        },
+        {
+          "arabic": "البرماويّ",
+          "english": "al-Birmawi",
+          "kind": "person"
+        },
+        {
+          "arabic": "أبو حنيفة",
+          "english": "Abu Hanifa",
+          "kind": "person"
+        },
+        {
+          "arabic": "ابن خالويه",
+          "english": "Ibn Khalawayh",
+          "kind": "person"
+        },
+        {
+          "arabic": "لبابة بنت الحارث",
+          "english": "Lubaba bint al-Harith",
+          "kind": "person"
+        },
+        {
+          "arabic": "العبّاس",
+          "english": "al-Abbas ibn Abd al-Muttalib",
+          "kind": "person"
+        }
+      ],
+      "uncertainties": [
+        {
+          "location": "Hassan’s first verse",
+          "issue": "The phrase “shajwan min akhi thiqa” can denote sorrow, longing, or distress associated with a trusted brother.",
+          "best_rendering": "If you recall the sorrow of a trustworthy brother",
+          "witness_recommended": false
+        }
+      ]
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTg5",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTg5",
+          "pages": [
+            {
+              "index": 189,
+              "page": 205,
+              "volume": "1"
+            }
+          ],
+          "text_sha256": "b19fce8410efd3826dec9ff0e063136fb1b9d961060b093e290220d1883880dc"
+        },
+        "relationship": "alleged nephew; genealogical dispute",
+        "rationale": "Substantively records uncertainty over the identity of a reported nephew and conflicting information about Khadijah’s brothers.",
+        "arabic_sha256": "00826aaba0a7c5127889f6a0ee781698cc7a4d9bbbd3b11ba6edd9aa7a2c08ee"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTg5",
+      "english_text": "97—Asad ibn Khuwaylid [(3)]\n\nIn Khadijah’s lineage [(4)]\n\nMuhammad ibn Jabir narrated his hadith from Simak and from someone who heard Asad ibn Khuwaylid. This is how Ibn Manda mentioned him. Abu Umar said: “Asad, Khadijah’s nephew, narrated from the Prophet (peace and blessings be upon him) that he said: ‘Do not sell what you do not possess.’”\n\nAl-Uqayli mentioned him and said: “There is criticism concerning its chain of transmission.”\n\nEnd quote. The genealogists mention no brother of Khadijah apart from al-Awwam, al-Zubayr’s father, who died during the pre-Islamic period, and Nawfal, who was killed at Badr as an unbeliever. It is said that his nephew al-Zubayr killed him, and it is said that Ali killed him. It is therefore possible that this Asad was a son of Nawfal, although they did not mention that.\n\n_________\n[(3)] Tajrid Asma' al-Sahaba, 1/14; Usd al-Ghaba, entry 90; al-Isti'ab, entry 26.\n[(4)] Manuscript J reads: “a relative of Khadijah.”",
+      "names": [
+        {
+          "arabic": "أسد بن خويلد",
+          "english": "Asad ibn Khuwaylid",
+          "kind": "person"
+        },
+        {
+          "arabic": "خديجة",
+          "english": "Khadijah",
+          "kind": "person"
+        },
+        {
+          "arabic": "محمد بن جابر",
+          "english": "Muhammad ibn Jabir",
+          "kind": "person"
+        },
+        {
+          "arabic": "سماك",
+          "english": "Simak",
+          "kind": "person"
+        },
+        {
+          "arabic": "ابن مندة",
+          "english": "Ibn Manda",
+          "kind": "person"
+        },
+        {
+          "arabic": "أبو عمر",
+          "english": "Abu Umar ibn Abd al-Barr",
+          "kind": "person"
+        },
+        {
+          "arabic": "العقيلي",
+          "english": "al-Uqayli",
+          "kind": "person"
+        },
+        {
+          "arabic": "العوام",
+          "english": "al-Awwam ibn Khuwaylid",
+          "kind": "person"
+        },
+        {
+          "arabic": "الزبير",
+          "english": "al-Zubayr ibn al-Awwam",
+          "kind": "person"
+        },
+        {
+          "arabic": "نوفل",
+          "english": "Nawfal ibn Khuwaylid",
+          "kind": "person"
+        },
+        {
+          "arabic": "بدر",
+          "english": "Badr",
+          "kind": "place"
+        },
+        {
+          "arabic": "علي",
+          "english": "Ali ibn Abi Talib",
+          "kind": "person"
+        }
+      ],
+      "uncertainties": [
+        {
+          "location": "Heading footnote [(4)]",
+          "issue": "The base text reads “in Khadijah’s lineage,” while manuscript J reads “a relative of Khadijah.”",
+          "best_rendering": "In Khadijah’s lineage",
+          "witness_recommended": true
+        }
+      ]
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjEz",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjEz",
+          "pages": [
+            {
+              "index": 213,
+              "page": 229,
+              "volume": "1"
+            }
+          ],
+          "text_sha256": "c7e2e8c1452e75d6ba7ac8bd576bc9940a9493b7ffc02552a623b2fa8ff09ac5"
+        },
+        "relationship": "nephew",
+        "rationale": "Adds migration history for Khadijah’s nephew and notes that his father Nوفل persecuted Muslims in the early period.",
+        "arabic_sha256": "505c29746d60a0c9bea4d97c2c5c4dd175efd838f50a7a6b8ff7e96dad82e8dd"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjEz",
+      "english_text": "171—Al-Aswad ibn Nawfal [(2)]\n\nIbn Khuwaylid ibn Asad ibn Abd al-Uzza ibn Qusayy, the Qurashi of the Banu Asad and Khadijah’s nephew. He was among those who emigrated to Abyssinia in the second emigration; Ibn Ishaq mentioned him. His mother was Furay'a bint Adi ibn Nawfal ibn Abd Manaf. He emigrated to Medina after the Prophet (peace and blessings be upon him) arrived. He was the grandfather of Abu al-Aswad Muhammad ibn Abd al-Rahman ibn al-Aswad, the ward of Urwa. His father Nawfal was severe toward the Muslims at the beginning of Islam.\n\n_________\n[(2)] Al-Iqd al-Thamin, 3/317; Usd al-Ghaba, entry 155; al-Isti'ab, entry 41.",
+      "names": [
+        {
+          "arabic": "الأسود بن نوفل",
+          "english": "al-Aswad ibn Nawfal",
+          "kind": "person"
+        },
+        {
+          "arabic": "خويلد بن أسد بن عبد العزى بن قصي",
+          "english": "Khuwaylid ibn Asad ibn Abd al-Uzza ibn Qusayy",
+          "kind": "person"
+        },
+        {
+          "arabic": "قريش",
+          "english": "Quraysh",
+          "kind": "tribe"
+        },
+        {
+          "arabic": "خديجة",
+          "english": "Khadijah",
+          "kind": "person"
+        },
+        {
+          "arabic": "الحبشة",
+          "english": "Abyssinia",
+          "kind": "place"
+        },
+        {
+          "arabic": "ابن إسحاق",
+          "english": "Ibn Ishaq",
+          "kind": "person"
+        },
+        {
+          "arabic": "فريعة بنت عدي بن نوفل بن عبد مناف",
+          "english": "Furay'a bint Adi ibn Nawfal ibn Abd Manaf",
+          "kind": "person"
+        },
+        {
+          "arabic": "المدينة",
+          "english": "Medina",
+          "kind": "place"
+        },
+        {
+          "arabic": "محمد بن عبد الرحمن بن الأسود",
+          "english": "Muhammad ibn Abd al-Rahman ibn al-Aswad",
+          "kind": "person"
+        },
+        {
+          "arabic": "عروة",
+          "english": "Urwa ibn al-Zubayr",
+          "kind": "person"
+        },
+        {
+          "arabic": "نوفل",
+          "english": "Nawfal ibn Khuwaylid",
+          "kind": "person"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzA1",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzA1",
+          "pages": [
+            {
+              "index": 305,
+              "page": 321,
+              "volume": "1"
+            }
+          ],
+          "text_sha256": "568140d2ff535a672783095ffe3402b6d626d0fc675284de46d723e4df12b9d1"
+        },
+        "relationship": "disputed son",
+        "rationale": "Records an isolated, explicitly exceptional report assigning Ibrahim to Khadijah and listing the order of her children.",
+        "arabic_sha256": "2a793c1cf039d244d40653fee4abd7d59b82feac167aa5c553c17e58f84f4c2d"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzA1",
+      "english_text": "399—[Ibrahim, son of the Prophet (peace and blessings be upon him) [(3)]\n\nAnother. Ali ibn al-Husayn ibn al-Junayd al-Razi mentioned in his History—which is a small volume—that Khadijah bore the Prophet (peace and blessings be upon him) his four daughters. Then, after the daughters, she bore al-Qasim, al-Tahir, Ibrahim, and al-Tayyib. The boys died while they were still nursing. He did not mention Mariya the Copt. In his account he said: “She bore Ibrahim, and he died young.” I have not seen this stated by anyone else, and he did not mention\n\n_________\n[(3)] Ibn Sa'd, al-Tabaqat al-Kubra, 1/134; Tahdhib al-Asma' wa-l-Lughat, 1/102; Tajrid Asma' al-Sahaba, 1/8; Ma'rifat al-Sahaba, 2/142.",
+      "names": [
+        {
+          "arabic": "إبراهيم",
+          "english": "Ibrahim, son of the Prophet",
+          "kind": "person"
+        },
+        {
+          "arabic": "عليّ بن الحسين بن الجنيد الرّازي",
+          "english": "Ali ibn al-Husayn ibn al-Junayd al-Razi",
+          "kind": "person"
+        },
+        {
+          "arabic": "خديجة",
+          "english": "Khadijah",
+          "kind": "person"
+        },
+        {
+          "arabic": "القاسم",
+          "english": "al-Qasim, son of the Prophet",
+          "kind": "person"
+        },
+        {
+          "arabic": "الطّاهر",
+          "english": "al-Tahir, son of the Prophet",
+          "kind": "person"
+        },
+        {
+          "arabic": "الطّيب",
+          "english": "al-Tayyib, son of the Prophet",
+          "kind": "person"
+        },
+        {
+          "arabic": "مارية القبطية",
+          "english": "Mariya the Copt",
+          "kind": "person"
+        }
+      ],
+      "uncertainties": [
+        {
+          "location": "End of the passage",
+          "issue": "The source sentence and its editorial square bracket continue in the following supplied passage.",
+          "best_rendering": "I have not seen this stated by anyone else, and he did not mention",
+          "witness_recommended": false
+        }
+      ]
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzA2",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzA2",
+          "pages": [
+            {
+              "index": 306,
+              "page": 322,
+              "volume": "1"
+            }
+          ],
+          "text_sha256": "3196b9acfe4d76c99c04161d7e88abd66a8a46ca08b23e160693839f2ecc3f3a"
+        },
+        "relationship": "disputed son",
+        "rationale": "Continues Ibn Hajar’s qualification of the exceptional report, explaining it as a probable confusion between Khadijah and Mariya.",
+        "arabic_sha256": "e8ae004eeafa26151f95266f2a1784f3fbb8b667fe65337aeff32746e5be9602"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzA2",
+      "english_text": "Mariya, or the child he had by her. What he mentioned was not a pure error; rather, his mind probably shifted, so that he supposed all the children were by Khadijah and overlooked Mariya.] [(1)]\n\n_________\n[(1)] Omitted in manuscripts A, J, and D.",
+      "names": [
+        {
+          "arabic": "مارية",
+          "english": "Mariya the Copt",
+          "kind": "person"
+        },
+        {
+          "arabic": "خديجة",
+          "english": "Khadijah",
+          "kind": "person"
+        }
+      ],
+      "uncertainties": [
+        {
+          "location": "Opening phrase",
+          "issue": "The pronoun in “what he had by her” is elliptical and most naturally denotes Ibrahim, the Prophet’s child by Mariya.",
+          "best_rendering": "Mariya, or the child he had by her",
+          "witness_recommended": false
+        },
+        {
+          "location": "Entire passage",
+          "issue": "The whole continuation is absent from manuscripts A, J, and D.",
+          "best_rendering": "Retain the passage as printed while recording the omission.",
+          "witness_recommended": true
+        }
+      ]
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDYw",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDYw",
+          "pages": [
+            {
+              "index": 460,
+              "page": 476,
+              "volume": "1"
+            }
+          ],
+          "text_sha256": "6a7e4e03eecf7cc67cd2d7919c026538e3a337870ee7030a84bbb61982eff0b8"
+        },
+        "relationship": "trade journey and pre-prophetic witness",
+        "rationale": "Adds a report about Muhammad’s journey in Khadijah’s trade with Maysara and Bahira’s alleged recognition of prophetic signs.",
+        "arabic_sha256": "94a87b5711d95cc9a25fbc1897443fbb43a2b8971516a4ba002a36b7b89f89d1"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDYw",
+      "english_text": "In Abu Sa'id al-Naysaburi’s Sharaf al-Mustafa it is also related that the Prophet (peace and blessings be upon him) passed by Bahira when he went out on a trading journey for Khadijah accompanied by Maysara. Bahira said to him: “I have recognized all the signs in you except the seal of prophethood, so uncover your back for me.” He uncovered his back, and Bahira saw it. He then said: “I testify that there is no god but God, and I testify that you are God’s Messenger, the unlettered Prophet of whom Jesus son of Mary gave glad tidings.” He then related the account at very great length. God knows best.",
+      "names": [
+        {
+          "arabic": "أبو سعيد النّيسابوريّ",
+          "english": "Abu Sa'id al-Naysaburi",
+          "kind": "person"
+        },
+        {
+          "arabic": "شرف المصطفى",
+          "english": "Sharaf al-Mustafa",
+          "kind": "work"
+        },
+        {
+          "arabic": "بحيرا",
+          "english": "Bahira",
+          "kind": "person"
+        },
+        {
+          "arabic": "خديجة",
+          "english": "Khadijah",
+          "kind": "person"
+        },
+        {
+          "arabic": "ميسرة",
+          "english": "Maysara",
+          "kind": "person"
+        },
+        {
+          "arabic": "عيسى ابن مريم",
+          "english": "Jesus son of Mary",
+          "kind": "person"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTg5MQ",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTg5MQ",
+          "pages": [
+            {
+              "index": 1891,
+              "page": 149,
+              "volume": "4"
+            }
+          ],
+          "text_sha256": "107b5aece0c2394989e599af12615217ad145869213defae8b1e92fe67e68e98"
+        },
+        "relationship": "marriage chronology; Abu Bakr report",
+        "rationale": "Preserves a chronologically significant report connecting Abu Bakr, Khadijah’s marriage, and Ali’s birth, despite its unusual formulation.",
+        "arabic_sha256": "914246faa65b4a4038d871c8260ef14074a8b5d7832a7d80308f54787c64e11c"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTg5MQ",
+      "english_text": "Maymun ibn Mihran said: “Abu Bakr had indeed believed in the Prophet (peace and blessings be upon him) since the time [(1)] of Bahira the monk. He went back and forth between him and Khadijah until the Prophet married her. That was before Ali was born.”\n\n_________\n[(1)] Manuscript A reads: “at the time.”",
+      "names": [
+        {
+          "arabic": "ميمون بن مهران",
+          "english": "Maymun ibn Mihran",
+          "kind": "person"
+        },
+        {
+          "arabic": "أبو بكر",
+          "english": "Abu Bakr",
+          "kind": "person"
+        },
+        {
+          "arabic": "بحيرا الراهب",
+          "english": "Bahira the monk",
+          "kind": "person"
+        },
+        {
+          "arabic": "خديجة",
+          "english": "Khadijah",
+          "kind": "person"
+        },
+        {
+          "arabic": "عليّ",
+          "english": "Ali ibn Abi Talib",
+          "kind": "person"
+        }
+      ],
+      "uncertainties": [
+        {
+          "location": "“He went back and forth between him and Khadijah”",
+          "issue": "The Arabic pronouns are elliptical. The strongest contextual reading makes Abu Bakr the intermediary between Muhammad and Khadijah until Muhammad married her.",
+          "best_rendering": "He went back and forth between him and Khadijah until the Prophet married her.",
+          "witness_recommended": false
+        },
+        {
+          "location": "Footnote [(1)]",
+          "issue": "The printed text has “since the time of Bahira,” while manuscript A has “at the time of Bahira.”",
+          "best_rendering": "since the time of Bahira the monk",
+          "witness_recommended": true
+        }
+      ]
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjEyOA",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjEyOA",
+          "pages": [
+            {
+              "index": 2128,
+              "page": 386,
+              "volume": "4"
+            }
+          ],
+          "text_sha256": "3b617736f89316590aa0625d7ad64828cd14313201638a16bfcd048af3f0a0a8"
+        },
+        "relationship": "revelation adviser and Christian witnesses",
+        "rationale": "Adds a distinct revelation narrative in which Khadijah cites pre-marriage predictions and consults a monk, Addas, and Waraqa.",
+        "arabic_sha256": "7a674c3e6344076c0c0904c6330c37597fd49ed9444e511d18a853f77e3d1e77"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjEyOA",
+      "english_text": "Sulayman al-Taymi also mentioned it. He said: “It has reached us that the first thing with which God specially favored Muhammad (peace and blessings be upon him) was that he saw a vision at Hira [(1)], to which he used to withdraw in flight from what they did with their gods. Gabriel descended to him and drew near, and Muhammad became afraid of him.” He then related the hadith. Khadijah said to him: “Rejoice, for you are the prophet of this community. Before I married, Nasih, my servant, and Bahira the monk informed me of this.” She then left him and went to the monk, who told her: “Gabriel is God’s messenger and His trusted emissary to the messengers.” She then departed from him and came to a Christian slave of Utba ibn Rabi'a, a man from Nineveh called Addas. She told him, and he told her the same. Then she went to Waraqa.\n\nMusa ibn Uqba also related this account. In his version Addas said: “He is God’s trusted intermediary between Him and the prophets, and the companion of Moses and Jesus.”\n\nIbn A'idh also related in al-Maghazi, by way of Uthman ibn Ata, from his father, from Ikrima, from Ibn Abbas, a similar account in full.\n\n_________\n[(1)] Hira, with the first consonant pronounced i and without gemination, is one of the mountains of Mecca. See Mu'jam al-Buldan, 2/269.",
+      "names": [
+        {
+          "arabic": "سليمان التّيميّ",
+          "english": "Sulayman al-Taymi",
+          "kind": "person"
+        },
+        {
+          "arabic": "محمد",
+          "english": "Muhammad",
+          "kind": "person"
+        },
+        {
+          "arabic": "حراء",
+          "english": "Hira",
+          "kind": "place"
+        },
+        {
+          "arabic": "جبرائيل",
+          "english": "Gabriel",
+          "kind": "person"
+        },
+        {
+          "arabic": "خديجة",
+          "english": "Khadijah",
+          "kind": "person"
+        },
+        {
+          "arabic": "ناصح",
+          "english": "Nasih",
+          "kind": "person"
+        },
+        {
+          "arabic": "بحيرا الراهب",
+          "english": "Bahira the monk",
+          "kind": "person"
+        },
+        {
+          "arabic": "عتبة بن ربيعة",
+          "english": "Utba ibn Rabi'a",
+          "kind": "person"
+        },
+        {
+          "arabic": "نينوى",
+          "english": "Nineveh",
+          "kind": "place"
+        },
+        {
+          "arabic": "عداس",
+          "english": "Addas",
+          "kind": "person"
+        },
+        {
+          "arabic": "ورقة",
+          "english": "Waraqa ibn Nawfal",
+          "kind": "person"
+        },
+        {
+          "arabic": "موسى بن عقبة",
+          "english": "Musa ibn Uqba",
+          "kind": "person"
+        },
+        {
+          "arabic": "موسى",
+          "english": "Moses",
+          "kind": "person"
+        },
+        {
+          "arabic": "عيسى",
+          "english": "Jesus",
+          "kind": "person"
+        },
+        {
+          "arabic": "ابن عائذ",
+          "english": "Ibn A'idh",
+          "kind": "person"
+        },
+        {
+          "arabic": "المغازي",
+          "english": "al-Maghazi",
+          "kind": "work"
+        },
+        {
+          "arabic": "عثمان بن عطاء",
+          "english": "Uthman ibn Ata",
+          "kind": "person"
+        },
+        {
+          "arabic": "عكرمة",
+          "english": "Ikrima",
+          "kind": "person"
+        },
+        {
+          "arabic": "ابن عباس",
+          "english": "Ibn Abbas",
+          "kind": "person"
+        },
+        {
+          "arabic": "مكة",
+          "english": "Mecca",
+          "kind": "place"
+        },
+        {
+          "arabic": "معجم البلدان",
+          "english": "Mu'jam al-Buldan",
+          "kind": "work"
+        }
+      ],
+      "uncertainties": [
+        {
+          "location": "“what they did with their gods”",
+          "issue": "The phrase may refer generally to the Meccans’ idolatrous practices or more specifically to what they did in worship of their idols.",
+          "best_rendering": "what they did with their gods",
+          "witness_recommended": false
+        }
+      ]
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjIzNw",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjIzNw",
+          "pages": [
+            {
+              "index": 2237,
+              "page": 495,
+              "volume": "4"
+            }
+          ],
+          "text_sha256": "f41a71150668f5533472f54c90814fa0080f02002ba3d2c10428e01551430138"
+        },
+        "relationship": "maternal cousin, Ibn Umm Maktum",
+        "rationale": "Identifies a maternal cousin through Khadijah’s mother and supplies substantive, conflicting migration and later-life information about him.",
+        "arabic_sha256": "f41a71150668f5533472f54c90814fa0080f02002ba3d2c10428e01551430138"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjIzNw",
+      "english_text": "Humayr ibn Mu'ays ibn Amir ibn Lu'ayy, the Qurashi of the Banu Amir.\n\nHis mother, Umm Maktum, was Atika bint Abd Allah ibn Ankatha—the latter name beginning with an undotted consonant, followed by a vowelless nun, and with tha after the kaf—ibn A'idh ibn Makhzum. He was Khadijah Mother of the Believers’ maternal cousin, for Khadijah’s mother, whose name was Fatima, was the sister of Qays ibn Za'ida. He embraced Islam early in Mecca and was among the earliest emigrants. He arrived in Medina before the Prophet (peace and blessings be upon him) emigrated. It is also said that he arrived after him, shortly after the Battle of Badr; this was stated by al-Waqidi.\n\nThe first view is sounder. It has been narrated by way of Abu Ishaq from al-Bara, who said: “The first emigrant to come to us was Mus'ab ibn Umayr; then Ibn Umm Maktum arrived.” The Prophet (peace and blessings be upon him) used to appoint him as his deputy over Medina during most of his military expeditions, and he would lead the people in prayer.\n\nAl-Zubayr ibn Bakkar said: “He went out to al-Qadisiyya, participated in the fighting, and was martyred there. He was carrying the standard at the time.” It is also said that he returned to Medina after al-Qadisiyya and died there; al-Baghawi mentioned this.\n\nAl-Waqidi said instead: “He participated in it, returned to Medina, and died there. No mention of him was heard after Umar ibn al-Khattab.”\n\nHe narrated from the Prophet (peace and blessings be upon him), and his hadith appears in the Sunan collections.\n\nAbd Allah ibn Shaddad ibn al-Had, Abd al-Rahman ibn Abi Layla, Abu Razin al-Asadi, and others narrated from him.\n\nIbn Abd al-Barr said: “A group of scholars of genealogy and the military campaigns related that the Prophet (peace and blessings be upon him) appointed Ibn Umm Maktum as his deputy thirteen times: at al-Abwa, Buwat, Dhu al-Ashira, his expedition in pursuit of Kurz ibn Jabir, the expedition of al-Sawiq, Ghatafan, the expedition of Uhud, Hamra al-Asad, Najran, Dhat al-Riqa, when he departed for the Farewell Pilgrimage, and when he departed for Badr—after which he appointed Abu Lubaba instead when he sent him back from the road.” He said: “As for Qatada’s narration from Anas that the Prophet (peace and blessings be upon him) appointed Ibn Umm Maktum as his deputy, the extent that reached him was not what reached others.” End quote.\n\nHe is the person mentioned in the sura, “He frowned and turned away” [Abasa 80:1], and concerning him was revealed, “other than those suffering disability” [al-Nisa 4:95], when “Those believers who remain seated are not equal…” [al-Nisa 4:95] was revealed. Al-Bukhari included it.\n\nIn the Sunan, by way of Asim ibn Abi Razin, Ibn Umm Maktum said: “I said, ‘O Messenger of God, I am a blind man…’” followed by the hadith emphasizing communal prayer. God knows best.",
+      "names": [
+        {
+          "arabic": "حمير بن معيص بن عامر بن لؤيّ",
+          "english": "Humayr ibn Mu'ays ibn Amir ibn Lu'ayy",
+          "kind": "person"
+        },
+        {
+          "arabic": "قريش",
+          "english": "Quraysh",
+          "kind": "tribe"
+        },
+        {
+          "arabic": "أم مكتوم عاتكة بنت عبد اللَّه بن عنكثة",
+          "english": "Umm Maktum Atika bint Abd Allah ibn Ankatha",
+          "kind": "person"
+        },
+        {
+          "arabic": "خديجة أم المؤمنين",
+          "english": "Khadijah, Mother of the Believers",
+          "kind": "person"
+        },
+        {
+          "arabic": "فاطمة",
+          "english": "Fatima, Khadijah’s mother",
+          "kind": "person"
+        },
+        {
+          "arabic": "قيس بن زائدة",
+          "english": "Qays ibn Za'ida",
+          "kind": "person"
+        },
+        {
+          "arabic": "ابن أم مكتوم",
+          "english": "Ibn Umm Maktum",
+          "kind": "person"
+        },
+        {
+          "arabic": "مكة",
+          "english": "Mecca",
+          "kind": "place"
+        },
+        {
+          "arabic": "المدينة",
+          "english": "Medina",
+          "kind": "place"
+        },
+        {
+          "arabic": "بدر",
+          "english": "Badr",
+          "kind": "place"
+        },
+        {
+          "arabic": "الواقديّ",
+          "english": "al-Waqidi",
+          "kind": "person"
+        },
+        {
+          "arabic": "أبو إسحاق",
+          "english": "Abu Ishaq al-Sabi'i",
+          "kind": "person"
+        },
+        {
+          "arabic": "البراء",
+          "english": "al-Bara ibn Azib",
+          "kind": "person"
+        },
+        {
+          "arabic": "مصعب بن عمير",
+          "english": "Mus'ab ibn Umayr",
+          "kind": "person"
+        },
+        {
+          "arabic": "الزّبير بن بكّار",
+          "english": "al-Zubayr ibn Bakkar",
+          "kind": "person"
+        },
+        {
+          "arabic": "القادسية",
+          "english": "al-Qadisiyya",
+          "kind": "place"
+        },
+        {
+          "arabic": "البغوي",
+          "english": "al-Baghawi",
+          "kind": "person"
+        },
+        {
+          "arabic": "عمر ابن الخطاب",
+          "english": "Umar ibn al-Khattab",
+          "kind": "person"
+        },
+        {
+          "arabic": "عبد اللَّه بن شداد بن الهاد",
+          "english": "Abd Allah ibn Shaddad ibn al-Had",
+          "kind": "person"
+        },
+        {
+          "arabic": "عبد الرحمن بن أبي ليلى",
+          "english": "Abd al-Rahman ibn Abi Layla",
+          "kind": "person"
+        },
+        {
+          "arabic": "أبو رزين الأسدي",
+          "english": "Abu Razin al-Asadi",
+          "kind": "person"
+        },
+        {
+          "arabic": "ابن عبد البرّ",
+          "english": "Ibn Abd al-Barr",
+          "kind": "person"
+        },
+        {
+          "arabic": "الأبواء",
+          "english": "al-Abwa",
+          "kind": "place"
+        },
+        {
+          "arabic": "بواط",
+          "english": "Buwat",
+          "kind": "place"
+        },
+        {
+          "arabic": "ذي العشيرة",
+          "english": "Dhu al-Ashira",
+          "kind": "place"
+        },
+        {
+          "arabic": "كرز ابن جابر",
+          "english": "Kurz ibn Jabir",
+          "kind": "person"
+        },
+        {
+          "arabic": "غطفان",
+          "english": "Ghatafan",
+          "kind": "tribe"
+        },
+        {
+          "arabic": "أحد",
+          "english": "Uhud",
+          "kind": "place"
+        },
+        {
+          "arabic": "حمراء الأسد",
+          "english": "Hamra al-Asad",
+          "kind": "place"
+        },
+        {
+          "arabic": "نجران",
+          "english": "Najran",
+          "kind": "place"
+        },
+        {
+          "arabic": "ذات الرّقاع",
+          "english": "Dhat al-Riqa",
+          "kind": "place"
+        },
+        {
+          "arabic": "أبو لبابة",
+          "english": "Abu Lubaba",
+          "kind": "person"
+        },
+        {
+          "arabic": "قتادة",
+          "english": "Qatada",
+          "kind": "person"
+        },
+        {
+          "arabic": "أنس",
+          "english": "Anas ibn Malik",
+          "kind": "person"
+        },
+        {
+          "arabic": "البخاري",
+          "english": "al-Bukhari",
+          "kind": "person"
+        },
+        {
+          "arabic": "عاصم بن أبي رزين",
+          "english": "Asim ibn Abi Razin",
+          "kind": "person"
+        }
+      ],
+      "uncertainties": [
+        {
+          "location": "Opening genealogy",
+          "issue": "The supplied passage begins mid-entry, without the subject’s principal name; “Humayr ibn Mu'ays…” is the continuation of his paternal genealogy.",
+          "best_rendering": "Humayr ibn Mu'ays ibn Amir ibn Lu'ayy",
+          "witness_recommended": true
+        },
+        {
+          "location": "Ibn Abd al-Barr’s comment on Qatada’s narration",
+          "issue": "The Arabic is elliptical: “what reached him was not what reached others” most likely means that Qatada’s report preserved fewer instances of the appointment than other reports did.",
+          "best_rendering": "the extent that reached him was not what reached others",
+          "witness_recommended": false
+        }
+      ]
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjQ3OQ",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjQ3OQ",
+          "pages": [
+            {
+              "index": 2479,
+              "page": 98,
+              "volume": "5"
+            }
+          ],
+          "text_sha256": "3752cd6ff1b92c7a72e15ca4f6c0a001b947c7a90705a7a2fb68cc6cda4bede0"
+        },
+        "relationship": "early household setting",
+        "rationale": "Places Muhammad in Khadijah’s house when Abd al-Rahman ibn Awf came to him at the beginning of the mission.",
+        "arabic_sha256": "3752cd6ff1b92c7a72e15ca4f6c0a001b947c7a90705a7a2fb68cc6cda4bede0"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjQ3OQ",
+      "english_text": "Al-Balawi narrated his hadith from Umara ibn Zayd, from Abd Allah ibn al-Ala, from Abd al-Rahman ibn Humayd ibn Abd al-Rahman, who said: Humayd ibn Abd al-Rahman used to say: I heard my father say:\n\n“I traveled to Yemen one year before the prophetic mission and stayed with Asqalan ibn Awakin al-Himyari. He was a very old man whose life had been prolonged until he had become like a fledgling, and he would say:\n\nWhen an old man grows deaf and no longer speaks, [(1)]\nand his hearing is gone, leaving only his hands;\n\nthat is an illness for which there is no cure\napart from death, which gives voice to calamities.\n\nI witnessed among us kings who were of us,\nand lived to see the decisive stations in affairs.\n\nThey all perished, and I became one confined to his seat,\nprostrate, unable to speak to those in the chambers. [al-Wafir]\n\nAbd al-Rahman said: Whenever I arrived, I would stay with him, and he would continually ask me about Mecca and its circumstances and whether anyone had appeared there who opposed their religion. Eventually I arrived on the journey during which the Prophet (peace and blessings be upon him) had been commissioned while I was away. I stayed with him. He sat with a bandage tied over his eyes and said to me, ‘State your lineage, brother of Quraysh.’ I replied, ‘I am Abd al-Rahman ibn Awf ibn Abd Awf ibn Abd al-Harith ibn Zuhra.’ He said, ‘That is enough.’ Then he said, ‘Shall I give you glad tidings that are better for you than trade?’ I replied, ‘Yes.’ He said, ‘I have brought you a wondrous report and give you glad tidings of something greatly to be desired. In the first month, God raised up a prophet from your people whom He approved as His chosen one. He sent down to him a complete Book. He forbids idols and summons to Islam; he commands what is true and does it, and forbids falsehood and abolishes it. He is from the Banu Hashim, and your people are indeed his maternal kinsmen. Abd al-Rahman, support him and affirm him, and convey these verses to him:\n\nI bear witness by God, Possessor of the heights\nand Cleaver of the night and morning,\n\nthat you are of the innermost stock of Quraysh,\nand the son of the man redeemed from slaughter.\n\nYou have been sent to summon people to certainty,\nguiding them to truth and success.\n\nThe repeated passage of the years has broken my strength,\npreventing repeated journeying by evening and morning.\n\nI bear witness by God, the Lord of Moses,\nthat you were sent in the valleys of Mecca.\n\nSo be my intercessor before a Sovereign\nwho summons created beings to righteousness. [Mukhal-la' al-Basit]\n\nAbd al-Rahman said: I arrived and met Abu Bakr, who was my close associate. I told him the news, and he said: ‘This is Muhammad ibn Abd Allah. God has sent him as a messenger to His creation, so go to him.’ I went to him, and he was in Khadijah’s house.\n\n_________\n[(1)] Manuscript H reads: “does not talk.”",
+      "names": [
+        {
+          "arabic": "البلويّ",
+          "english": "al-Balawi",
+          "kind": "person"
+        },
+        {
+          "arabic": "عمارة بن زيد",
+          "english": "Umara ibn Zayd",
+          "kind": "person"
+        },
+        {
+          "arabic": "عبد اللَّه بن العلاء",
+          "english": "Abd Allah ibn al-Ala",
+          "kind": "person"
+        },
+        {
+          "arabic": "عبد الرحمن بن حميد بن عبد الرحمن",
+          "english": "Abd al-Rahman ibn Humayd ibn Abd al-Rahman",
+          "kind": "person"
+        },
+        {
+          "arabic": "حميد بن عبد الرحمن",
+          "english": "Humayd ibn Abd al-Rahman",
+          "kind": "person"
+        },
+        {
+          "arabic": "اليمن",
+          "english": "Yemen",
+          "kind": "place"
+        },
+        {
+          "arabic": "عسكلان بن عواكن الحميري",
+          "english": "Asqalan ibn Awakin al-Himyari",
+          "kind": "person"
+        },
+        {
+          "arabic": "مكة",
+          "english": "Mecca",
+          "kind": "place"
+        },
+        {
+          "arabic": "عبد الرحمن بن عوف بن عبد عوف بن عبد الحارث بن زهرة",
+          "english": "Abd al-Rahman ibn Awf ibn Abd Awf ibn Abd al-Harith ibn Zuhra",
+          "kind": "person"
+        },
+        {
+          "arabic": "قريش",
+          "english": "Quraysh",
+          "kind": "tribe"
+        },
+        {
+          "arabic": "بنو هاشم",
+          "english": "Banu Hashim",
+          "kind": "tribe"
+        },
+        {
+          "arabic": "موسى",
+          "english": "Moses",
+          "kind": "person"
+        },
+        {
+          "arabic": "أبو بكر",
+          "english": "Abu Bakr",
+          "kind": "person"
+        },
+        {
+          "arabic": "محمد بن عبد اللَّه",
+          "english": "Muhammad ibn Abd Allah",
+          "kind": "person"
+        },
+        {
+          "arabic": "خديجة",
+          "english": "Khadijah",
+          "kind": "person"
+        }
+      ],
+      "uncertainties": [
+        {
+          "location": "First poem, “إلّا يدايا”",
+          "issue": "The wording is difficult. It most plausibly means that, once hearing is gone, only communication by the hands remains.",
+          "best_rendering": "and his hearing is gone, leaving only his hands",
+          "witness_recommended": true
+        },
+        {
+          "location": "First poem, third and fourth lines",
+          "issue": "The transmitted wording is syntactically difficult, especially “شهدت بنا” and “فصرت جلسا … إلى الخلايا.”",
+          "best_rendering": "I witnessed among us kings who were of us … I became one confined to his seat, prostrate, unable to speak to those in the chambers.",
+          "witness_recommended": true
+        },
+        {
+          "location": "“in the first month”",
+          "issue": "The Arabic does not identify the calendrical point from which this “first month” is reckoned.",
+          "best_rendering": "In the first month, God raised up a prophet from your people",
+          "witness_recommended": false
+        },
+        {
+          "location": "Second poem, “في السر من قريش”",
+          "issue": "Literally “in the secret/core of Quraysh”; it denotes Muhammad’s place within its intimate or select genealogical stock.",
+          "best_rendering": "you are of the innermost stock of Quraysh",
+          "witness_recommended": false
+        }
+      ]
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mjk3Nw",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mjk3Nw",
+          "pages": [
+            {
+              "index": 2977,
+              "page": 14,
+              "volume": "6"
+            }
+          ],
+          "text_sha256": "ed475a6b2be905111d56c83bcc8799929a074a6e64279ca85c757566469009c5"
+        },
+        "relationship": "grandson through daughter Hind",
+        "rationale": "Adds genealogy and chronological reasoning concerning Khadijah’s grandson through her daughter Hind from an earlier marriage.",
+        "arabic_sha256": "b56a5f9be94a3cdb7ae87089a57c0bbbb1b54887e022f0271492bbea51dc674f"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mjk3Nw",
+      "english_text": "7794—Muhammad ibn Sayfi [(2)]\n\nIbn Umayya ibn Abid ibn Abd Allah ibn Umar ibn Makhzum.\n\nIbn al-Qaddah said: “He had Companionship.” Ibn Shahin mentioned him on the authority of [(3)] Abu Dawud. Abu Umar said: “He did not see the Prophet,” [(4)] and his status as a Companion is open to question. He was Khadijah bint Khuwaylid’s grandson through her daughter. His mother was Hind bint Atiq ibn Amir ibn Abd Allah ibn Umar ibn Makhzum, whose mother was Khadijah.\n\nAbid is spelled with ba and an undotted dal.\n\nI say: Al-Zubayr ibn Bakkar mentioned something that strengthens Ibn al-Qaddah’s position. When he mentioned Muhammad’s father, he said: “He had Rifa'a, from whom he took his kunya, and Sayfi ibn Umayya [was killed] on the day of Badr.” End quote.\n\nA man whose father was killed at Badr—which occurred in the second year after the Emigration—would have lived for eight years or more during the Prophetic period. He would not have been named Muhammad unless his father and mother had embraced Islam. Perhaps, then, he was born after his father was killed, and his mother embraced Islam and named him Muhammad—or one of his relatives did so, if his mother died before he was named.\n\n_________\n[(2)] Usd al-Ghaba, entry 4742; al-Isti'ab, entry 2360; al-Thiqat, 3/365; al-Tarikh al-Kabir, 1/14; al-Kashif, 3/54; Talqih Fuhum Ahl al-Athar, 371; al-Jarh wa-l-Ta'dil, 7/287; al-Tabaqat al-Kubra, entry 2476; Tajrid Asma' al-Sahaba, 2/59; Baqi ibn Makhlad, 340.\n[(3)] Manuscript A reads: “from Ibn Abi Dawud.”\n[(4)] Manuscript A reads: “He has no narration.”",
+      "names": [
+        {
+          "arabic": "محمد بن صيفي",
+          "english": "Muhammad ibn Sayfi",
+          "kind": "person"
+        },
+        {
+          "arabic": "أمية بن عابد بن عبد اللَّه بن عمر بن مخزوم",
+          "english": "Umayya ibn Abid ibn Abd Allah ibn Umar ibn Makhzum",
+          "kind": "person"
+        },
+        {
+          "arabic": "ابن القداح",
+          "english": "Ibn al-Qaddah",
+          "kind": "person"
+        },
+        {
+          "arabic": "ابن شاهين",
+          "english": "Ibn Shahin",
+          "kind": "person"
+        },
+        {
+          "arabic": "أبو داود",
+          "english": "Abu Dawud",
+          "kind": "person"
+        },
+        {
+          "arabic": "أبو عمر",
+          "english": "Abu Umar ibn Abd al-Barr",
+          "kind": "person"
+        },
+        {
+          "arabic": "خديجة بنت خويلد",
+          "english": "Khadijah bint Khuwaylid",
+          "kind": "person"
+        },
+        {
+          "arabic": "هند بنت عتيق بن عامر بن عبد اللَّه بن عمر بن مخزوم",
+          "english": "Hind bint Atiq ibn Amir ibn Abd Allah ibn Umar ibn Makhzum",
+          "kind": "person"
+        },
+        {
+          "arabic": "الزّبير بن بكّار",
+          "english": "al-Zubayr ibn Bakkar",
+          "kind": "person"
+        },
+        {
+          "arabic": "رفاعة",
+          "english": "Rifa'a",
+          "kind": "person"
+        },
+        {
+          "arabic": "بدر",
+          "english": "Badr",
+          "kind": "place"
+        },
+        {
+          "arabic": "ابن أبي داود",
+          "english": "Ibn Abi Dawud",
+          "kind": "person"
+        }
+      ],
+      "uncertainties": [
+        {
+          "location": "Al-Zubayr ibn Bakkar quotation",
+          "issue": "The supplied Arabic lacks an explicit verb before “Sayfi ibn Umayya on the day of Badr,” although Ibn Hajar’s ensuing argument expressly treats Sayfi as having been killed at Badr.",
+          "best_rendering": "Sayfi ibn Umayya [was killed] on the day of Badr",
+          "witness_recommended": true
+        },
+        {
+          "location": "Footnote [(4)]",
+          "issue": "The base text says that he did not see the Prophet; manuscript A instead says that he has no narration.",
+          "best_rendering": "He did not see the Prophet",
+          "witness_recommended": true
+        }
+      ]
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE2OQ",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE2OQ",
+          "pages": [
+            {
+              "index": 3169,
+              "page": 206,
+              "volume": "6"
+            }
+          ],
+          "text_sha256": "77d4489030c0cb300b6621f72c11eba7196c82dca349de11074f2a217695a774"
+        },
+        "relationship": "disputed son",
+        "rationale": "Preserves a disputed additional son’s name and Ibn Hajar’s discussion of possible confusion with a child from Khadijah’s earlier marriage.",
+        "arabic_sha256": "c652c2e561eb9e37af96a690040b3fa4541f8892ea3963ff1bf6274936ddd427"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE2OQ",
+      "english_text": "8344—Mutahhar, a son of:\n\nMuhammad (peace and blessings be upon him), the master of humankind.\n\nIbn Zafar al-Hamawi mentioned him in his book al-Bishr bi-Khayr al-Bashar when enumerating the Prophet’s children by Khadijah. He said: “Some people call him al-Tahir, but this is an error, for al-Tahir was the son of Abu Hala, and he too was Khadijah’s son.” He did not mention his authority for this claim. But what would prevent Khadijah from naming one of her children by the Prophet (peace and blessings be upon him) after a son she had by another man? This occurs frequently among the Arabs. Others had preceded him in making that claim.",
+      "names": [
+        {
+          "arabic": "مطهّر",
+          "english": "Mutahhar",
+          "kind": "person"
+        },
+        {
+          "arabic": "محمد",
+          "english": "Muhammad",
+          "kind": "person"
+        },
+        {
+          "arabic": "ابن ظفر الحمويّ",
+          "english": "Ibn Zafar al-Hamawi",
+          "kind": "person"
+        },
+        {
+          "arabic": "البشر بخير البشر",
+          "english": "al-Bishr bi-Khayr al-Bashar",
+          "kind": "work"
+        },
+        {
+          "arabic": "خديجة",
+          "english": "Khadijah",
+          "kind": "person"
+        },
+        {
+          "arabic": "الطّاهر",
+          "english": "al-Tahir ibn Abi Hala",
+          "kind": "person"
+        },
+        {
+          "arabic": "أبو هالة",
+          "english": "Abu Hala",
+          "kind": "person"
+        },
+        {
+          "arabic": "العرب",
+          "english": "Arabs",
+          "kind": "tribe"
+        }
+      ],
+      "uncertainties": [
+        {
+          "location": "Final sentence",
+          "issue": "“Others had preceded him in that” most naturally means that other writers had previously advanced the same naming or identification claim, though the precise claim referenced is not restated.",
+          "best_rendering": "Others had preceded him in making that claim.",
+          "witness_recommended": false
+        }
+      ]
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE3MA",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE3MA",
+          "pages": [
+            {
+              "index": 3170,
+              "page": 207,
+              "volume": "6"
+            }
+          ],
+          "text_sha256": "85b29e63c178ab5b19711aba4733a306715ae09209d8057123294d30d5d10acc"
+        },
+        "relationship": "disputed sons",
+        "rationale": "Records conflicting child lists and claims about identity, twin births, and the otherwise separately listed al-Mutayyab.",
+        "arabic_sha256": "84894631b02d7a7137eecb25c7957ee8c6aae86f510571d8839bfb9f38ae3519"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE3MA",
+      "english_text": "In Ibn al-Barqi’s History: “Khadijah bore the Prophet (peace and blessings be upon him) al-Qasim, Abd Allah, al-Tayyib, al-Tahir, al-Mutahhar, and it is said that al-Tayyib is identical with al-Tahir, namely Abd Allah. It is also said that al-Tayyib and al-Mutayyab were born from one pregnancy, and that al-Tahir and al-Mutahhar were born from one pregnancy.” Al-Tahir has already been mentioned above in addition to this.\n\n8345—Al-Mutayyab, son of the Prophet (peace and blessings be upon him):\n\nHe was mentioned in the preceding entry.",
+      "names": [
+        {
+          "arabic": "ابن البرقي",
+          "english": "Ibn al-Barqi",
+          "kind": "person"
+        },
+        {
+          "arabic": "خديجة",
+          "english": "Khadijah",
+          "kind": "person"
+        },
+        {
+          "arabic": "القاسم",
+          "english": "al-Qasim, son of the Prophet",
+          "kind": "person"
+        },
+        {
+          "arabic": "عبد اللَّه",
+          "english": "Abd Allah, son of the Prophet",
+          "kind": "person"
+        },
+        {
+          "arabic": "الطّيب",
+          "english": "al-Tayyib, son of the Prophet",
+          "kind": "person"
+        },
+        {
+          "arabic": "الطّاهر",
+          "english": "al-Tahir, son of the Prophet",
+          "kind": "person"
+        },
+        {
+          "arabic": "المطهّر",
+          "english": "al-Mutahhar, son of the Prophet",
+          "kind": "person"
+        },
+        {
+          "arabic": "المطيّب",
+          "english": "al-Mutayyab, son of the Prophet",
+          "kind": "person"
+        }
+      ],
+      "uncertainties": [
+        {
+          "location": "“born from one pregnancy”",
+          "issue": "The expression can mean that each named pair were twins or, more literally, were born from the same pregnancy.",
+          "best_rendering": "were born from one pregnancy",
+          "witness_recommended": false
+        },
+        {
+          "location": "“Al-Tahir has already been mentioned above in addition to this”",
+          "issue": "The referent and force of “in addition to this” are compressed, but the sentence clearly points to an earlier separate notice of al-Tahir.",
+          "best_rendering": "Al-Tahir has already been mentioned above in addition to this.",
+          "witness_recommended": false
+        }
+      ]
+    },
+    {
+      "source": {
+        "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQwMA",
+        "source": {
+          "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQwMA",
+          "pages": [
+            {
+              "index": 3400,
+              "page": 437,
+              "volume": "6"
+            }
+          ],
+          "text_sha256": "20bfcfeedaec8f1e3daea2c8d929f5478e10311d15e8df90502b95af2c28fa37"
+        },
+        "relationship": "grandson Hind ibn Hind",
+        "rationale": "Entry 9028 is not selected and adds substantive genealogical, transmission, and death information about Khadijah’s grandson.",
+        "arabic_sha256": "8efdb33f9373df3813b5e518de3474a8e9a3f9971990a9999e83b4d35ebcf8c2"
+      },
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQwMA",
+      "english_text": "9028—Hind ibn Hind\n\nIbn [(1)] Abi Hala, the son of the subject of the preceding entry. According to the view of Qatada and those who followed him, the name sequence would be Hind ibn Abi Hind for three successive generations.\n\nIbn Manda mentioned him and cited, by way of Hassan ibn Abd Allah al-Wasiti, from al-Sari ibn Yahya, from Malik ibn Dinar: “Hind, son of Khadijah, the wife of the Prophet (peace and blessings be upon him), related to me, saying: The Prophet (peace and blessings be upon him) passed by al-Hakam, the father of Marwan. Al-Hakam began making mocking gestures at the Prophet and pointing with his finger, until the Prophet turned toward him and said, ‘O God, afflict him with a twitch’—meaning a tremor. He immediately began trembling where he stood.”\n\nIbn Abi Hatim al-Razi and Abd Allah ibn Ahmad likewise included it by this route in Ziyadat al-Zuhd. Malik ibn Dinar did not meet Hind ibn Abi Hala; he met only his son. It is therefore as though Malik attributed the son to his grandfather.\n\nIbn Abi Hatim related from his father that Hind ibn Hind’s narration from the Prophet (peace and blessings be upon him) is disconnected. Abu Umar followed the wording’s apparent sense and assigned this hadith to Hind ibn Abi Hala.\n\nAl-Zubayr ibn Bakkar and al-Dulabi transmitted, by way of Muhammad ibn al-Hajjaj, from a man of the Banu Tamim, who said: “I saw Hind ibn Hind ibn Abi Hala wearing a green suit. He died during the plague, and because the people were occupied with their own dead, four men carried him out. A woman cried, ‘Alas for Hind ibn Hind! Alas for the son of the Messenger of God’s stepson!’ The people then crowded around his funeral procession and left their own dead.”\n\n_________\n[(1)] Usd al-Ghaba, entry 5412; Ansab al-Ashraf, 1/506; al-Thiqat, 3/436; al-Kamil, 7/2594; Jamharat Ansab al-Arab, 210; Tajrid Asma' al-Sahaba, 2/123; Taqrib al-Tahdhib, 2/322; Tahdhib al-Asma' wa-l-Lughat, 2/141; Tahdhib al-Tahdhib, 11/72; al-Tabaqat al-Kubra, 1/422; Ahd al-Khulafa' al-Rashidin, from Tarikh al-Islam, 536; Tarikh al-Islam, 2/265; Khulasat Tadhhib, 3/125; al-Iqd al-Thamin, 7/378; Tarikh man Dufina bi-l-Iraq, 472; Tarikh al-Islam, 3/220; Tahdhib al-Kamal, 3/1450; al-Tarikh al-Kabir, 8/240; Talqih Fuhum Ahl al-Athar, 385; al-Tabaqat, 43, 179; Mu'jam al-Thiqat, 356; Baqi ibn Makhlad, 598; al-Ma'rifa wa-l-Tarikh, 3/284, 288; Jami' al-Tahsil, 364.",
+      "names": [
+        {
+          "arabic": "هند بن هند بن أبي هالة",
+          "english": "Hind ibn Hind ibn Abi Hala",
+          "kind": "person"
+        },
+        {
+          "arabic": "قتادة",
+          "english": "Qatada",
+          "kind": "person"
+        },
+        {
+          "arabic": "ابن مندة",
+          "english": "Ibn Manda",
+          "kind": "person"
+        },
+        {
+          "arabic": "حسان بن عبد اللَّه الواسطيّ",
+          "english": "Hassan ibn Abd Allah al-Wasiti",
+          "kind": "person"
+        },
+        {
+          "arabic": "السّري بن يحيى",
+          "english": "al-Sari ibn Yahya",
+          "kind": "person"
+        },
+        {
+          "arabic": "مالك بن دينار",
+          "english": "Malik ibn Dinar",
+          "kind": "person"
+        },
+        {
+          "arabic": "خديجة",
+          "english": "Khadijah",
+          "kind": "person"
+        },
+        {
+          "arabic": "الحكم أبي مروان",
+          "english": "al-Hakam, father of Marwan",
+          "kind": "person"
+        },
+        {
+          "arabic": "ابن أبي حاتم الرّازيّ",
+          "english": "Ibn Abi Hatim al-Razi",
+          "kind": "person"
+        },
+        {
+          "arabic": "عبد اللَّه بن أحمد",
+          "english": "Abd Allah ibn Ahmad",
+          "kind": "person"
+        },
+        {
+          "arabic": "زيادات الزهد",
+          "english": "Ziyadat al-Zuhd",
+          "kind": "work"
+        },
+        {
+          "arabic": "أبو عمر",
+          "english": "Abu Umar ibn Abd al-Barr",
+          "kind": "person"
+        },
+        {
+          "arabic": "الزّبير بن بكّار",
+          "english": "al-Zubayr ibn Bakkar",
+          "kind": "person"
+        },
+        {
+          "arabic": "الدّولابيّ",
+          "english": "al-Dulabi",
+          "kind": "person"
+        },
+        {
+          "arabic": "محمد بن الحجاج",
+          "english": "Muhammad ibn al-Hajjaj",
+          "kind": "person"
+        },
+        {
+          "arabic": "بني تميم",
+          "english": "Banu Tamim",
+          "kind": "tribe"
+        }
+      ],
+      "uncertainties": [
+        {
+          "location": "Opening genealogy",
+          "issue": "The footnote marker interrupts “ibn Abi Hala,” while “the son of the preceding entry” establishes that the full genealogy is Hind ibn Hind ibn Abi Hala.",
+          "best_rendering": "Hind ibn Hind ibn Abi Hala, the son of the subject of the preceding entry",
+          "witness_recommended": false
+        },
+        {
+          "location": "“Hind ibn Abi Hind for three successive generations”",
+          "issue": "The Arabic describes a three-name genealogical sequence under Qatada’s view; its compressed phrasing permits slightly different English formulations.",
+          "best_rendering": "the name sequence would be Hind ibn Abi Hind for three successive generations",
+          "witness_recommended": false
+        },
+        {
+          "location": "Funeral lament",
+          "issue": "The highly idiomatic lament “wa Hind ibn Hindah” uses an extended vocative ending that cannot be reproduced literally in natural English.",
+          "best_rendering": "Alas for Hind ibn Hind! Alas for the son of the Messenger of God’s stepson!",
+          "witness_recommended": false
+        }
+      ]
+    }
+  ]
+}

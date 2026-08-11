@@ -1,0 +1,1409 @@
+{
+  "schema": "al-isabah.cohort-mention-classification.v1",
+  "cohort_id": "khadijah-immediate",
+  "generated_at": "2026-08-11T06:52:08Z",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "prompt_version": "khadijah-exhaustive-mention-classification-v1",
+  "prompt_sha256": "83016962a228d793628b6964005bd78fe89c88335684e07972ded520cdf5f435",
+  "source_result_count": 69,
+  "source_results": [
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Nzc",
+      "pages": [
+        {
+          "index": 77,
+          "page": 84,
+          "volume": "1"
+        }
+      ],
+      "text_sha256": "a3385c1b8a82edae8433f62609f7bd06068d601b79bb85b5d045abeaf946d566"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTg5",
+      "pages": [
+        {
+          "index": 189,
+          "page": 205,
+          "volume": "1"
+        }
+      ],
+      "text_sha256": "b19fce8410efd3826dec9ff0e063136fb1b9d961060b093e290220d1883880dc"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjEz",
+      "pages": [
+        {
+          "index": 213,
+          "page": 229,
+          "volume": "1"
+        }
+      ],
+      "text_sha256": "c7e2e8c1452e75d6ba7ac8bd576bc9940a9493b7ffc02552a623b2fa8ff09ac5"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzA1",
+      "pages": [
+        {
+          "index": 305,
+          "page": 321,
+          "volume": "1"
+        }
+      ],
+      "text_sha256": "568140d2ff535a672783095ffe3402b6d626d0fc675284de46d723e4df12b9d1"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzA2",
+      "pages": [
+        {
+          "index": 306,
+          "page": 322,
+          "volume": "1"
+        }
+      ],
+      "text_sha256": "3196b9acfe4d76c99c04161d7e88abd66a8a46ca08b23e160693839f2ecc3f3a"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDYw",
+      "pages": [
+        {
+          "index": 460,
+          "page": 476,
+          "volume": "1"
+        }
+      ],
+      "text_sha256": "6a7e4e03eecf7cc67cd2d7919c026538e3a337870ee7030a84bbb61982eff0b8"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Nzgx",
+      "pages": [
+        {
+          "index": 781,
+          "page": 91,
+          "volume": "2"
+        }
+      ],
+      "text_sha256": "7271bfd8df693c20bda88400943e497b19ca0171639aedd6a591294aa856daf5"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Nzg3",
+      "pages": [
+        {
+          "index": 787,
+          "page": 97,
+          "volume": "2"
+        }
+      ],
+      "text_sha256": "c18f2ad6b21511aaaed4050d55fb05c8507e5f7605b1580e954ec335fd586e38"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6ODY3",
+      "pages": [
+        {
+          "index": 867,
+          "page": 177,
+          "volume": "2"
+        }
+      ],
+      "text_sha256": "7871f5812c33bf52af233b9e929eb1a163c941ea72dd519ccd4f3009c8d91d77"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6OTMy",
+      "pages": [
+        {
+          "index": 932,
+          "page": 242,
+          "volume": "2"
+        }
+      ],
+      "text_sha256": "e2ee4a65585490b9d76f6ef779508e720c7b38304a3e87d6d95c8eec00ee752d"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTAwMA",
+      "pages": [
+        {
+          "index": 1000,
+          "page": 310,
+          "volume": "2"
+        }
+      ],
+      "text_sha256": "37a9f2adda0db52c4d4b3dc7ed4ab5a18ff4ede9440f729cb4fb524b88ad29a5"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTE2OA",
+      "pages": [
+        {
+          "index": 1168,
+          "page": 478,
+          "volume": "2"
+        }
+      ],
+      "text_sha256": "6e1d7e1ef984c5b5df0bf1e5ffb6fe1a8b3e0f124486856d4a4fbe0ff24a15f8"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTE4NQ",
+      "pages": [
+        {
+          "index": 1185,
+          "page": 495,
+          "volume": "2"
+        }
+      ],
+      "text_sha256": "75d3656bc1eacc04c9911ffff22f5e7556e13e948375af1667fe9959e984e50a"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTY3NQ",
+      "pages": [
+        {
+          "index": 1675,
+          "page": 445,
+          "volume": "3"
+        }
+      ],
+      "text_sha256": "8b3074707e96b605d855437c89fa08aa1dcc5632f39fe66414f4ce0184bd0490"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTY3Ng",
+      "pages": [
+        {
+          "index": 1676,
+          "page": 446,
+          "volume": "3"
+        }
+      ],
+      "text_sha256": "99474b6ac91852f561175b3c12680a9a49a90ff7f47b03b0dcf6f7ea4281a75b"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTc5Ng",
+      "pages": [
+        {
+          "index": 1796,
+          "page": 54,
+          "volume": "4"
+        }
+      ],
+      "text_sha256": "c626a01450b10b09d6d7f51073253ec313291157bea19403e457bee91ed71334"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTgyMw",
+      "pages": [
+        {
+          "index": 1823,
+          "page": 81,
+          "volume": "4"
+        }
+      ],
+      "text_sha256": "ac4c07409f5d1498b701e995ac1a226c9c512dfe7a0e9c547a70d9ddcf2e081e"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTg5MQ",
+      "pages": [
+        {
+          "index": 1891,
+          "page": 149,
+          "volume": "4"
+        }
+      ],
+      "text_sha256": "107b5aece0c2394989e599af12615217ad145869213defae8b1e92fe67e68e98"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjEyOA",
+      "pages": [
+        {
+          "index": 2128,
+          "page": 386,
+          "volume": "4"
+        }
+      ],
+      "text_sha256": "3b617736f89316590aa0625d7ad64828cd14313201638a16bfcd048af3f0a0a8"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjE2Nw",
+      "pages": [
+        {
+          "index": 2167,
+          "page": 425,
+          "volume": "4"
+        }
+      ],
+      "text_sha256": "1dd8f9ddf4d20402072d84de4877ddc568e8f3ed21b692ca37e48fc80c62c507"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjIzNw",
+      "pages": [
+        {
+          "index": 2237,
+          "page": 495,
+          "volume": "4"
+        }
+      ],
+      "text_sha256": "f41a71150668f5533472f54c90814fa0080f02002ba3d2c10428e01551430138"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjI0MQ",
+      "pages": [
+        {
+          "index": 2241,
+          "page": 499,
+          "volume": "4"
+        }
+      ],
+      "text_sha256": "fcf82cc81f49a9c62c4bc2ffb85e33c9e7d8712ebcccc83ad0eed0603a1b556c"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjQ3OQ",
+      "pages": [
+        {
+          "index": 2479,
+          "page": 98,
+          "volume": "5"
+        }
+      ],
+      "text_sha256": "3752cd6ff1b92c7a72e15ca4f6c0a001b947c7a90705a7a2fb68cc6cda4bede0"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mjc3MA",
+      "pages": [
+        {
+          "index": 2770,
+          "page": 389,
+          "volume": "5"
+        }
+      ],
+      "text_sha256": "5a0a12230228b2d1a0dbb16e1197215f6089c6f6cdd62dbee37b117f2b06c6f9"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mjk3Nw",
+      "pages": [
+        {
+          "index": 2977,
+          "page": 14,
+          "volume": "6"
+        }
+      ],
+      "text_sha256": "ed475a6b2be905111d56c83bcc8799929a074a6e64279ca85c757566469009c5"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE1Mg",
+      "pages": [
+        {
+          "index": 3152,
+          "page": 189,
+          "volume": "6"
+        }
+      ],
+      "text_sha256": "6c26bc6dbccbd332d65b27d10dd1e3e2821f5b4aaa4142326bd49b3de19d352d"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE2OQ",
+      "pages": [
+        {
+          "index": 3169,
+          "page": 206,
+          "volume": "6"
+        }
+      ],
+      "text_sha256": "77d4489030c0cb300b6621f72c11eba7196c82dca349de11074f2a217695a774"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE3MA",
+      "pages": [
+        {
+          "index": 3170,
+          "page": 207,
+          "volume": "6"
+        }
+      ],
+      "text_sha256": "85b29e63c178ab5b19711aba4733a306715ae09209d8057123294d30d5d10acc"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzI5MQ",
+      "pages": [
+        {
+          "index": 3291,
+          "page": 328,
+          "volume": "6"
+        }
+      ],
+      "text_sha256": "daecbe25bb49fdce5e73f41c7e9c0aa8cc165d7846f52dba3971f4ec709347e4"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzI5Mg",
+      "pages": [
+        {
+          "index": 3292,
+          "page": 329,
+          "volume": "6"
+        }
+      ],
+      "text_sha256": "3ac5ec5d72a79f217550647ad8a8705c84e84e2a7bb4aeaad0c5795f1e3c2ff7"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzM2MA",
+      "pages": [
+        {
+          "index": 3360,
+          "page": 397,
+          "volume": "6"
+        }
+      ],
+      "text_sha256": "2468ab5f931acf9023b074cdddc6074130993ad60b7c37634c09f754eee17452"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzM2OQ",
+      "pages": [
+        {
+          "index": 3369,
+          "page": 406,
+          "volume": "6"
+        }
+      ],
+      "text_sha256": "a82c5ac7fa0c51ef3e510e9148669c834fc197c35e00b0dc5384b101b70c58b9"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzM5OQ",
+      "pages": [
+        {
+          "index": 3399,
+          "page": 436,
+          "volume": "6"
+        }
+      ],
+      "text_sha256": "3b90182c86275f643c329b51f93da60fd8bd6a4d287c284ff036e661b2094b5c"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQwMA",
+      "pages": [
+        {
+          "index": 3400,
+          "page": 437,
+          "volume": "6"
+        }
+      ],
+      "text_sha256": "20bfcfeedaec8f1e3daea2c8d929f5478e10311d15e8df90502b95af2c28fa37"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQzNw",
+      "pages": [
+        {
+          "index": 3437,
+          "page": 474,
+          "volume": "6"
+        }
+      ],
+      "text_sha256": "5ba04dc4cb0cf65c1c7df8977412c6490b9910cbb42d00851c732a50455ba748"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQzOA",
+      "pages": [
+        {
+          "index": 3438,
+          "page": 475,
+          "volume": "6"
+        }
+      ],
+      "text_sha256": "a6cbf1d4de03dcedb2f0ebb53cdf151c2f4d4c911049d1f05f1a19980be02647"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQzOQ",
+      "pages": [
+        {
+          "index": 3439,
+          "page": 476,
+          "volume": "6"
+        }
+      ],
+      "text_sha256": "2b1361667f659f2c68260ef2871f89786a97b0e3b290c891d72901833116722c"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQ0MA",
+      "pages": [
+        {
+          "index": 3440,
+          "page": 477,
+          "volume": "6"
+        }
+      ],
+      "text_sha256": "c849e0c148ee25eece36e784dce3443b55b81d6021ba0d4753a9b5a1344f3723"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQ0MQ",
+      "pages": [
+        {
+          "index": 3441,
+          "page": 478,
+          "volume": "6"
+        }
+      ],
+      "text_sha256": "0852a3fa1627276652625a646daa89be580bfa5932c08ead44e4c5d828a60a3c"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzczOA",
+      "pages": [
+        {
+          "index": 3738,
+          "page": 207,
+          "volume": "7"
+        }
+      ],
+      "text_sha256": "6b0d156c4844a6dab290ab656ea94d5ba5320db571266f434e13ed63164eb713"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mzk0Mw",
+      "pages": [
+        {
+          "index": 3943,
+          "page": 31,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "8e1b859d60a9ad34fbd3d2f7c3fd99d70b2be810116b7ffb041d98464f2e8e20"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mzk2Ng",
+      "pages": [
+        {
+          "index": 3966,
+          "page": 54,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "38bc998ad3a3df7858b57583bc4b16ce4570aa8d40a6f380d894d085a79fd1c6"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mzk2OA",
+      "pages": [
+        {
+          "index": 3968,
+          "page": 56,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "bb401aadf44f012edd0d1ee4cdf876d32adf6ed1120dc117593aefe108d666fa"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mzk3Mg",
+      "pages": [
+        {
+          "index": 3972,
+          "page": 60,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "cc0de1fca9f03c7af00b9893cb731071e83d146f32d0569a0db82a3eaba5a608"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mzk5Nw",
+      "pages": [
+        {
+          "index": 3997,
+          "page": 85,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "0dd9b3e0caf2616a2d1975c6b85b27494be34bb3fa013fed3899bb131b53e5d2"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDAwNg",
+      "pages": [
+        {
+          "index": 4006,
+          "page": 94,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "d97322034f57ba5690ae2edcad828e7bb8a560e656f9c5beaec2b62b396cd0ef"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDAxMQ",
+      "pages": [
+        {
+          "index": 4011,
+          "page": 99,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "fdac675d99f928f41f6128d73f12ccd722b816a55d19befafa36e83d59bf9a5f"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDAxMg",
+      "pages": [
+        {
+          "index": 4012,
+          "page": 100,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "f9d0b88be30f17b211598ac9c822c1d27f395c9ae1a3136fa1040c47a8e62897"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDAxMw",
+      "pages": [
+        {
+          "index": 4013,
+          "page": 101,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "eeba02f08dd9ae47d37f3f4a6615c38fd1d317846aea6bf4d47751407d38d309"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDAxNA",
+      "pages": [
+        {
+          "index": 4014,
+          "page": 102,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "36b0a2b3db9d0f76689ae550c11906acbd07edd1c4eb9c6e7ec66b478db740bc"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDAxNQ",
+      "pages": [
+        {
+          "index": 4015,
+          "page": 103,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "03615966d9f9f409cc7260be7ebb351a4a6e7bbcfffe53683f7c71c9502a5fae"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDAxNg",
+      "pages": [
+        {
+          "index": 4016,
+          "page": 104,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "f0255ea7f0d3aebdc61bd65b585eb0bca044e4e17df002b908bfb713dddf1223"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDAzNw",
+      "pages": [
+        {
+          "index": 4037,
+          "page": 125,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "7352a3d085e048d28ab3efd9ae3c1379ee90ae046151c40b617dc842c89ecc6c"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDA0OQ",
+      "pages": [
+        {
+          "index": 4049,
+          "page": 137,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "ab8d84d2bad35bc566cf9cd8b9e9bdebc595d06a1b45e06e8c7e5fb26aeedd83"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDA2Mw",
+      "pages": [
+        {
+          "index": 4063,
+          "page": 151,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "6e2562332e8cf9c1d71c1e7980174c60b324317f72bfadc25eb8552612723d15"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDEwMQ",
+      "pages": [
+        {
+          "index": 4101,
+          "page": 189,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "e43c19e4f12ba9186d5cada2c4defb96e41339d3e0e6b4aec09f6e8ba7f11c0e"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDEwOA",
+      "pages": [
+        {
+          "index": 4108,
+          "page": 196,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "06e60a828bb1298d51db37a44bf2c10d848d029c4e9444a20599f5abeb1b414e"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDEzNg",
+      "pages": [
+        {
+          "index": 4136,
+          "page": 224,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "c571242593f12c0b1c3bec2a6de76b41951681ff8379cbfb0d2f4e702a3b19f7"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDE0NA",
+      "pages": [
+        {
+          "index": 4144,
+          "page": 232,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "e87a1020078ff78ba6777fc9a0e77b7d14c4d61dc4204029c4b011add37219cb"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDE3Ng",
+      "pages": [
+        {
+          "index": 4176,
+          "page": 264,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "ea9da735f58135c7c58de3e804c5451ac0d2e4d2af507717489e80ac65e9bf9d"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDI0OA",
+      "pages": [
+        {
+          "index": 4248,
+          "page": 336,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "ba2c5166a32f35a6db419f39d88051f4829c6e8dc47a1f7c2242cbd3cf2d50f7"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDI1MA",
+      "pages": [
+        {
+          "index": 4250,
+          "page": 338,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "e312c6e1292be3dee594dee5cb56256601102621a4262f94861f1476d086451d"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDI1MQ",
+      "pages": [
+        {
+          "index": 4251,
+          "page": 339,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "157653851b3f5ff1078c567399ea6e3762ef9c744c5d27eec701ed5e831d1b08"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDI1Ng",
+      "pages": [
+        {
+          "index": 4256,
+          "page": 344,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "3139adfa42eb2ca869976def414dafb3a4fb3a41c723dea0368ef632ba131bbf"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDI1OQ",
+      "pages": [
+        {
+          "index": 4259,
+          "page": 347,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "fbea758ad6ef8735a60eeabb212b5e5eb30df88a950413fc72112b24dea5f51f"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDI3MQ",
+      "pages": [
+        {
+          "index": 4271,
+          "page": 359,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "f311f12fe6960b26a75b6c7a7b272ce9812c201416716256b51d99133b3f21ce"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDMwOA",
+      "pages": [
+        {
+          "index": 4308,
+          "page": 396,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "77f965189759e30986d181477f9ab2c2281b4a8fcd2833830aae5557c8ac57e4"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDM0MA",
+      "pages": [
+        {
+          "index": 4340,
+          "page": 428,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "d764df63771acf8e0f1da97e7ce76780ae0e37639b33cf9b9b0917f129757f01"
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDM2Mg",
+      "pages": [
+        {
+          "index": 4362,
+          "page": 450,
+          "volume": "8"
+        }
+      ],
+      "text_sha256": "14bba06bb5c841d4ef81bb0a5b449edb1f707da1996761366e2e70b0df9d9219"
+    }
+  ],
+  "items": [
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Nzc",
+      "decision": "include_context",
+      "relationship": "subject; earliest believer",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "إسلاما؟ على أقوال: قيل: أبو بكر، وقيل: عليّ وقيل: زيد، وقيل: خديجة، والصّحيح أن أبا بكر أوّل من أسلم من الرّجال الأحرار، قاله ابن عباس وحسّان والشّعبي والنّخعي في آخرين، ويدلّ له ما رواه مسلم عن عمرو بن عبسة في قصّة إسلامه،\nوقوله للنّبيّ ﷺ: من معك على هذا؟ قال: «حرّ وعبد»، قال: ومعه يومئذ أبو بكر وبلال ممّن آمن به [(١)] .\nوروى الحاكم في «المستدرك» من رواية خالد بن سعيد قال: سئل الشّعبي: من أوّل من أسلم؟ فقال: أما سمعت قول حسّان: البسيط\nإن تذكّرت شجوا من أخي ثقة ... فاذكر أخاك أبا بكر بما فعلا\nفخير البريّة أتقاها وأعدلها ... بعد النّبيّ وأوفاها بما حملا\nوالثّاني التّالي المحمود مشهده ... وأوّل النّاس منهم صدّق الرّسلا\nوروى الطبرانيّ في «الكبير» عن الشعبي قال: سألت ابن عباس، فذكره [(٢)] .\nقال ابن الصّلاح: والأورع أنه يقال: أوّل من أسلم من الرّجال الأحرار أبو بكر، ومن الصّبيان عليّ، ومن النساء خديجة، ومن الموالي زيد، ومن العبيد بلال.\nقال البرماويّ: ويحكى هذا الجمع عن أبي حنيفة. قال ابن خالويه: وأول امرأة أسلمت بعد خديجة لبابة بنت الحارث زوجة العبّاس.\n_________\n[(١)] أخرجه مسلم في الصحيح ١/ ٥٦٩ كتاب صلاة المسافرين وقصرها (٦) باب إسلام عمرو بن عبسة (٥٢) حديث رقم (٢٩٤/ ٨٣٢) . والنسائي في السنن ١/ ٢٨٣ كتاب الصلاة (٥) باب إباحة الصلاة إلى أن يصلي الصبح (٤٠) حديث رقم ٥٨٤ وابن ماجة في السنن ١/ ٤٣٤ كتاب إقامة الصلاة والسنة فيها (٥) باب ما جاء في أي ساعات الليل أفضل (١٨٢) حديث رقم ١٣٦٤- وأحمد في المسند ٤/ ١١١، ١١٢، ١١٣، ١١٤، ٣٨٥ والبيهقي في السنن ٢/ ٤٥٤، ٦/ ٣٦٩. وابن سعد ٤/ ١/ ١٥٧، ١٥٨- وأبو نعيم في الحلية ٢/ ١٦ وذكره البيهقي في الزوائد ١/ ٥٧، ٦٣ وابن عبد البر في التمهيد ٤/ ١٤، ٢٤.\n[(٢)] تدريب الراويّ ٢/ ٢٢٥، ٢٢٦.",
+      "rationale": "Preserves the disputed ordering of the earliest converts and the qualified claim that Khadijah was the first woman to embrace Islam."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTg5",
+      "decision": "include_context",
+      "relationship": "alleged nephew; genealogical dispute",
+      "candidate_entry_numbers": [
+        97
+      ],
+      "relevant_arabic": "٩٧- أسد بن خويلد [(٣)]\nفي نسب [(٤)] خديجة\n- روى حديثه محمد بن جابر عن سماك وعمن سمع أسد بن خويلد، كذا ذكره ابن مندة، وقال أبو عمر: أسد ابن أخي خديجة روى عن النبي ﷺ أنه قال: «لا تبع ما ليس عندك» .\nذكره العقيلي، وقال: في إسناده مقال.\nانتهى. ولم يذكر أهل النسب لخديجة أخا سوى العوام والد الزبير، ومات في الجاهلية، ونوفل وقتل يوم بدر كافرا. وقيل: قتله ابن أخيه الزبير، وقيل: علي، فيحتمل أن يكون أسد هذا ابن نوفل لكنهم لم يذكروا ذلك.\n_________\n[(٣)] تجريد أسماء الصحابة ١/ ١٤، أسد الغابة ت (٩٠)، الاستيعاب ت (٢٦) .\n[(٤)] في ج نسيب.",
+      "rationale": "Substantively records uncertainty over the identity of a reported nephew and conflicting information about Khadijah’s brothers."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjEz",
+      "decision": "include_context",
+      "relationship": "nephew",
+      "candidate_entry_numbers": [
+        171
+      ],
+      "relevant_arabic": "١٧١- الأسود بن نوفل [(٢)]\nبن خويلد بن أسد بن عبد العزى بن قصي القرشي الأسدي، ابن أخي خديجة كان من مهاجرة الحبشة الهجرة الثانية، ذكره ابن إسحاق، وأمه فريعة بنت عدي بن نوفل بن عبد مناف. وهاجر إلى المدينة بعد قدوم النبي ﷺ. وهو جد أبي الأسود محمد بن عبد الرحمن بن الأسود يتيم عروة، وكان أبوه نوفل شديدا على المسلمين في أول الإسلام.\n_________\n[(٢)] العقد الثمين ٣/ ٣١٧، أسد الغابة ت (١٥٥)، الاستيعاب ت (٤١) .",
+      "rationale": "Adds migration history for Khadijah’s nephew and notes that his father Nوفل persecuted Muslims in the early period."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzA1",
+      "decision": "include_context",
+      "relationship": "disputed son",
+      "candidate_entry_numbers": [
+        399
+      ],
+      "relevant_arabic": "٣٩٩-[إبراهيم ابن النبيّ ﷺ [(٣)]\nآخر. ذكر عليّ بن الحسين بن الجنيد الرّازي في تاريخه، وهو جزء لطيف- أن خديجة ولدت للنّبيّ ﷺ بناته الأربع، ثم ولدت من بعد البنات: القاسم، والطّاهر، وإبراهيم، والطّيب، فذهبت الغلمة وهم مرضعون، ولم يذكر مارية القبطية. وقال في قصتها: ولدت إبراهيم ومات صغيرا. وهذا لم يره لغيره، ولم يذكر\n_________\n[(٣)] الطبقات الكبرى لابن سعد ١/ ١٣٤، تهذيب الأسماء واللغات ١/ ١٠٢، تجريد أسماء الصحابة ١/ ٨، معرفة الصحابة ٢/ ١٤٢.",
+      "rationale": "Records an isolated, explicitly exceptional report assigning Ibrahim to Khadijah and listing the order of her children."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzA2",
+      "decision": "include_context",
+      "relationship": "disputed son",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "مارية وما له منها، ولم يكن ما ذكره غلطا محضا بل يكون انتقل ذهنه فظنّ أن الأولاد كلهم من خديجة، وغفل عن مارية] [(١)] .\n_________\n[(١)] سقط في أ، ج، د.",
+      "rationale": "Continues Ibn Hajar’s qualification of the exceptional report, explaining it as a probable confusion between Khadijah and Mariya."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDYw",
+      "decision": "include_context",
+      "relationship": "trade journey and pre-prophetic witness",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "وفي «شرف المصطفى لأبي سعيد النّيسابوريّ» أنّه ﷺ مرّ ببحيرا أيضا لما خرج في تجارة خديجة ومعه ميسرة، وأن بحيرا قال له: قد عرفت العلامات فيك كلها إلا خاتم النبوة فاكشف لي عن ظهرك، وأنه كشف له عن ظهره فرآه، فقال: أشهد أن لا إله إلا اللَّه وأشهد أنّك رسول اللَّه النبي الأمي الّذي بشرّ به عيسى ابن مريم، ثم ذكر القصّة مطولة جدا. فاللَّه أعلم.",
+      "rationale": "Adds a report about Muhammad’s journey in Khadijah’s trade with Maysara and Bahira’s alleged recognition of prophetic signs."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Nzgx",
+      "decision": "exclude_non_narrative",
+      "relationship": "incidental narrator identification",
+      "candidate_entry_numbers": [
+        1786
+      ],
+      "relevant_arabic": "",
+      "rationale": "Khadijah occurs only inside the identification of a narrator in a report about al-Hakam; it adds no fact about her life."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Nzg3",
+      "decision": "covered_selected_entry",
+      "relationship": "nephew",
+      "candidate_entry_numbers": [
+        1805
+      ],
+      "relevant_arabic": "",
+      "rationale": "The relevant passage is the opening of selected complete entry 1805, Hakim ibn Hizam."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6ODY3",
+      "decision": "exclude_bare_relation",
+      "relationship": "brother",
+      "candidate_entry_numbers": [
+        2093
+      ],
+      "relevant_arabic": "",
+      "rationale": "The occurrence only identifies Hizam ibn Khuwaylid as Khadijah’s brother and supplies no substantive fact about her."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6OTMy",
+      "decision": "covered_selected_entry",
+      "relationship": "relative and member of her caravan",
+      "candidate_entry_numbers": [
+        2263
+      ],
+      "relevant_arabic": "",
+      "rationale": "The trade-caravan report is contained in selected complete entry 2263, Khuzayma ibn Hakim."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTAwMA",
+      "decision": "exclude_other_person",
+      "relationship": "unrelated female transmitter",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "This is Khadijah bint al-Nahrawani in a transmission chain, not Khadijah bint Khuwaylid."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTE2OA",
+      "decision": "covered_selected_entry",
+      "relationship": "associate at Hira",
+      "candidate_entry_numbers": [
+        2847
+      ],
+      "relevant_arabic": "",
+      "rationale": "The passage belongs to selected complete entry 2847, Zuhayr ibn Qunfudh."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTE4NQ",
+      "decision": "covered_selected_entry",
+      "relationship": "household member Zayd ibn Haritha",
+      "candidate_entry_numbers": [
+        2897
+      ],
+      "relevant_arabic": "",
+      "rationale": "Deterministic source-span match: the passage is already covered by complete entry 2897. Substantively explains how Zayd entered Khadijah’s possession, his purchase price, and her gift of him to Muhammad after their marriage."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTY3NQ",
+      "decision": "covered_selected_entry",
+      "relationship": "son",
+      "candidate_entry_numbers": [
+        4321
+      ],
+      "relevant_arabic": "",
+      "rationale": "The conflicting reports about Khadijah’s sons occur in selected complete entry 4321, al-Tahir."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTY3Ng",
+      "decision": "covered_selected_entry",
+      "relationship": "son",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "This is the continuation of selected complete entry 4321; its printed number is not visible in this block."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTc5Ng",
+      "decision": "exclude_bare_relation",
+      "relationship": "grandnephew through a niece",
+      "candidate_entry_numbers": [
+        4648
+      ],
+      "relevant_arabic": "",
+      "rationale": "Khadijah is mentioned only to identify the subject’s mother as her niece; no substantive fact about Khadijah is added."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTgyMw",
+      "decision": "exclude_bare_relation",
+      "relationship": "great-aunt of Abdullah ibn al-Zubayr",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "The occurrence is solely a kinship item in Ibn Abbas’s praise of Ibn al-Zubayr."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MTg5MQ",
+      "decision": "include_context",
+      "relationship": "marriage chronology; Abu Bakr report",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "وقال ميمون بن مهران: لقد آمن أبو بكر بالنبيّ ﷺ من زمن «١» بحيرا الراهب. واختلف بينه وبين خديجة حتى تزوجها، وذلك قبل أن يولد عليّ.\n_________\n(١) في أ: في زمن.",
+      "rationale": "Preserves a chronologically significant report connecting Abu Bakr, Khadijah’s marriage, and Ali’s birth, despite its unusual formulation."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjEyOA",
+      "decision": "include_context",
+      "relationship": "revelation adviser and Christian witnesses",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "وقد ذكرها سليمان التّيميّ أيضا، قال: بلغنا أنّ أول شيء اختص اللَّه به محمدا ﷺ أنه رأى رؤيا في حراء «١» كان يخرج إليه فرارا مما يفعل بآلهتهم، فنزل عليه جبرائيل، فدنا منه، فخافه، فذكر الحديث، فقالت له خديجة: أبشر، فإنك نبيّ هذه الأمة، قد أخبرني به قبل أن أتزوج ناصح غلامي وبحيرا الراهب، ثم خرجت من عنده إلى الراهب، فقال لها: إن جبرائيل رسول اللَّه وأمينه إلى الرسل، ثم أقبلت من عنده حتى تأتي عبدا لعتبة بن ربيعة نصرانيا من أهل نينوى يقال له عداس، فقالت له، فقال لها مثل ذلك، ثم أتت ورقة.\nوذكر هذه القصة أيضا موسى بن عقبة، وقال فيه عداس: هو أمين اللَّه بينه وبين النبيين، وصاحب موسى وعيسى.\nوذكر ابن عائذ في «المغازي»، من طريق عثمان بن عطاء، عن أبيه، عن عكرمة، عن ابن عباس نحوه بطوله.\n_________\n(١) - حراء: بالكسر والتخفيف جبل من جبال مكة انظر معجم البلدان ٢/ ٢٦٩.",
+      "rationale": "Adds a distinct revelation narrative in which Khadijah cites pre-marriage predictions and consults a monk, Addas, and Waraqa."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjE2Nw",
+      "decision": "covered_selected_entry",
+      "relationship": "witness to earliest household prayer",
+      "candidate_entry_numbers": [
+        5602
+      ],
+      "relevant_arabic": "",
+      "rationale": "The passage belongs to selected complete entry 5602, Afif al-Kindi."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjIzNw",
+      "decision": "include_context",
+      "relationship": "maternal cousin, Ibn Umm Maktum",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "حمير بن معيص بن عامر بن لؤيّ القرشي العامري.\nواسم أمه أم مكتوم عاتكة بنت عبد اللَّه بن عنكثة، بمهملة ونون ساكنة وبعد الكاف مثلثة، ابن عائذ بن مخزوم، وهو ابن خال خديجة أم المؤمنين، فإنّ أم خديجة أخت قيس بن زائدة، واسمها فاطمة. أسلم قديما بمكة، وكان من المهاجرين الأولين، قدم المدينة قبل أن يهاجر النبيّ ﷺ. وقيل: بل بعده، بعد وقعة بدر بيسير، قاله الواقديّ.\nوالأول أصحّ، فقد روي من طريق أبي إسحاق عن البراء، قال: أول من أتانا مهاجرا مصعب بن عمير، ثم قدم ابن أم مكتوم، وكان النبيّ ﷺ يستخلفه على المدينة في عامّة غزواته يصلّي بالناس.\nوقال الزّبير بن بكّار: خرج إلى القادسية، فشهد القتال، واستشهد هناك، وكان معه اللواء حينئذ. وقيل: بل رجع إلى المدينة بعد القادسية فمات بها، ذكره البغوي.\nوقال الواقديّ: بل شهدها، ورجع إلى المدينة فمات بها، ولم يسمع له بذكر بعد عمر ابن الخطاب.\nروى عن النبيّ ﷺ، وحديثه في كتب السنن.\nروى عنه عبد اللَّه بن شداد بن الهاد، وعبد الرحمن بن أبي ليلى، وأبو رزين الأسدي، وآخرون.\nوقال ابن عبد البرّ: روى جماعة من أهل العلم بالنسب والسير أنّ النبيّ ﷺ استحلف ابن أم مكتوم ثلاث عشرة مرة: في الأبواء، وبواط، وذي العشيرة، وغزوته في طلب كرز ابن جابر، وغزوة السّويق، وغطفان. وفي غزوة أحد، وحمراء الأسد، ونجران. وذات الرّقاع، وفي خروجه في حجة الوداع، وفي خروجه إلى بدر، ثم استخلف أبا لبابة لما رده من الطريق، قال: وأما رواية قتادة عن أنس: أن النبيّ ﷺ استخلف ابن أم مكتوم فلم يبلغه ما بلغ غيره. انتهى.\nوهو المذكور في سورة: عَبَسَ وَتَوَلَّى [عبس: ١]، ونزلت فيه: غَيْرُ أُولِي الضَّرَرِ [النساء: ٩٥] لما نزلت: لا يَسْتَوِي الْقاعِدُونَ ... [النساء: ٩٥] أخرجه البخاري.\nوفي «السّنن» من طريق عاصم بن أبي رزين، عن ابن أم مكتوم، قال: قلت: يا رسول اللَّه، رجل ضرير ... الحديث في تأكيد الصلاة في الجماعة. واللَّه أعلم\n.",
+      "rationale": "Identifies a maternal cousin through Khadijah’s mother and supplies substantive, conflicting migration and later-life information about him."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjI0MQ",
+      "decision": "exclude_other_person",
+      "relationship": "unrelated female transmitter",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "The occurrence is Khadijah bint Imran ibn Abi Anas in an isnad, not Khadijah bint Khuwaylid."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjQ3OQ",
+      "decision": "include_context",
+      "relationship": "early household setting",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "روى حديثه البلويّ، عن عمارة بن زيد، عن عبد اللَّه بن العلاء، عن عبد الرحمن بن حميد بن عبد الرحمن، قال: كان حميد بن عبد الرحمن يقول: سمعت أبي يقول: سافرت إلى اليمن قبل المبعث بسنة، فنزلت على عسكلان بن عواكن الحميري، وكان شيخا كبيرا قد أنسئ له في العمر حتى عاد كالفرخ، وهو يقول:\nإذا ما الشّيخ صمّ فلم يكلّم «١» ... وأودى سمعه إلّا يدايا\nفذاك الدّاء ليس له دواء ... سوى الموت المنطّق بالرّزايا\nشهدت بنا مع الأملاك منّا ... وأدركت المواقف في القضايا\nفبادوا أجمعين فصرت جلسا ... صريعا لا أبوح إلى الخلايا\n[الوافر] قال عبد الرّحمن: وكنت إذا قدمت نزلت عليه فلا يزال يسألني عن مكة وأحوالها، وهل ظهر فيها من خالف دينهم أو لا؟ حتى قدمت القدمة التي بعث النبيّ ﵌ وأنا غائب فيها، فنزلت عليه فقعد وقد شد عصابة على عينيه، فقال لي: انتسب يا أخا قريش، فقلت: أنا عبد الرحمن بن عوف بن عبد عوف بن عبد الحارث بن زهرة قال:\nحسبك. قال: ألا أبشّرك ببشارة، وهي خير لك من التجارة؟ قلت: بلى قال: أتيتك بالمعجبة وأبشرك بالمرغبة، إن اللَّه قد بعث في الشهر الأول من قومك نبيا ارتضاه صفيّا، وأنزل عليه كتابا وفيّا، ينهى عن الأصنام، ويدعو إلى الإسلام، يأمر بالحق ويفعله، وينهى عن الباطل ويبطله، وهو من بني هاشم، وإن قومك لأخواله، يا عبد الرحمن، وازره وصدّقه، واحمل إليه هذه الأبيات:\nأشهد باللَّه ذي المعالي ... وفالق اللّيل والصّباح\nإنّك في السّرّ من قريش ... وابن المفدّى من الذّباح\nأرسلت تدعو إلى يقين ... ترشد للحقّ والفلاح\nهدّ كرور السّنين ركني ... عن مكرّ السّير والرّواح\nأشهد باللَّه ربّ موسى ... أنّك أرسلت بالبطاح\nفكن شفيعي إلى مليك ... يدعو البرايا إلى الصّلاح\n[مخلع البسيط] قال عبد الرّحمن: فقدمت فلقيت أبا بكر، وكان لي خليطا، فأخبرته الخبر، فقال:\nهذا محمد بن عبد اللَّه قد بعثه اللَّه إلى خلقه رسولا، فأته، فأتيته وهو في بيت خديجة\n_________\n(١) في هـ: يتكلم.",
+      "rationale": "Places Muhammad in Khadijah’s house when Abd al-Rahman ibn Awf came to him at the beginning of the mission."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mjc3MA",
+      "decision": "covered_selected_entry",
+      "relationship": "son",
+      "candidate_entry_numbers": [
+        7284
+      ],
+      "relevant_arabic": "",
+      "rationale": "The passage belongs to selected complete entry 7284, al-Qasim."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mjk3Nw",
+      "decision": "include_context",
+      "relationship": "grandson through daughter Hind",
+      "candidate_entry_numbers": [
+        7794
+      ],
+      "relevant_arabic": "٧٧٩٤- محمد بن صيفيّ «٢»\nبن أمية بن عابد بن عبد اللَّه بن عمر بن مخزوم.\nقال ابن القداح: له صحبة، ذكره ابن شاهين عن «٣» أبي داود، وقال أبو عمر: لا رؤية له «٤» وفي صحبته نظر. وهو سبط خديجة بنت خويلد، أمه هند بنت عتيق بن عامر بن عبد اللَّه بن عمر بن مخزوم، وأمّها خديجة.\nوعابد: بالموحدة والدال المهملة.\nقلت: ذكر الزّبير بن بكّار ما يقوّي قول ابن القداح فإنه لما ذكر أباه قال: كان له رفاعة، وبه كان يكنى، وصيفي بن أمية يوم بدر. انتهى.\nومن يقتل أبوه ببدر وهي في السنة الثانية من الهجرة يكون أدرك من العهد النبويّ ثمان سنين فأكثر، فلا يسمى محمدا إلّا وقد أسلّم أبوه وأمه، فلعله ولد بعد قتل أبيه، وأسلمت أمه فسمّيته محمدا أو بعض أهله إن كانت أمّه ماتت قبل تسميته.\n_________\n(٢) أسد الغابة ت ٤٧٤٢، الاستيعاب ت ٢٣٦٠، الثقات ٣/ ٣٦٥، التاريخ الكبير ١/ ١٤، الكاشف ٣/ ٥٤- تلقيح فهو أهل الأثر ٣٧١- الجرح والتعديل ٧/ ٢٨٧- الطبقات الكبرى ٢٤٧٦- تجريد أسماء الصحابة ٢/ ٥٩، بقي بن مخلد ٣٤٠.\n(٣) في أ: عن ابن أبي داود.\n(٤) في أ: رواية.",
+      "rationale": "Adds genealogy and chronological reasoning concerning Khadijah’s grandson through her daughter Hind from an earlier marriage."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE1Mg",
+      "decision": "covered_selected_entry",
+      "relationship": "servant and trade companion Maysara",
+      "candidate_entry_numbers": [
+        8302
+      ],
+      "relevant_arabic": "",
+      "rationale": "The passage is selected complete entry 8302, Maysara, Khadijah’s servant and Muhammad’s trade companion."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE2OQ",
+      "decision": "include_context",
+      "relationship": "disputed son",
+      "candidate_entry_numbers": [
+        8344
+      ],
+      "relevant_arabic": "٨٣٤٤- مطهّر، ولد:\nسيّد البشر محمد ﷺ.\nذكره ابن ظفر الحمويّ في كتاب البشر بخير البشر لما عدّ أولاد النبيّ ﵌ من خديجة، وقال: وبعض النّاس يسمّيه الطّاهر، وهو سهو، فإن الطّاهر هو ابن أبي هالة، وهو من خديجة أيضا، ولم يذكر مستنده فيما زعم، وما المانع أن تكون خديجة سمّت أحد أولادها من النبيّ ﵌ باسم ولد لها من غيره، وذلك موجود في العرب كثيرا، وسبقه إلى ذلك غيره.",
+      "rationale": "Preserves a disputed additional son’s name and Ibn Hajar’s discussion of possible confusion with a child from Khadijah’s earlier marriage."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzE3MA",
+      "decision": "include_context",
+      "relationship": "disputed sons",
+      "candidate_entry_numbers": [
+        8345
+      ],
+      "relevant_arabic": "وفي تاريخ ابن البرقي: ولدت خديجة للنّبيّ ﵌: القاسم، وعبد اللَّه، والطّيب، والطّاهر، والمطهّر، ويقال: إن الطيّب هو الطّاهر، وهو عبد اللَّه، ويقال: إن الطيّب والمطيّب ولدا في بطن، وإن الطّاهر والمطهّر ولدا في بطن. وقد تقدم ذكر الطّاهر زيادة على هذا.\n\n٨٣٤٥- المطيّب ابن النبيّ ﵌:\nذكر في الّذي قبله.",
+      "rationale": "Records conflicting child lists and claims about identity, twin births, and the otherwise separately listed al-Mutayyab."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzI5MQ",
+      "decision": "covered_selected_entry",
+      "relationship": "former husband Abu Hala",
+      "candidate_entry_numbers": [
+        8695
+      ],
+      "relevant_arabic": "",
+      "rationale": "The passage belongs to selected complete entry 8695, Nabbash ibn Zurara."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzI5Mg",
+      "decision": "covered_selected_entry",
+      "relationship": "former husband Abu Hala",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "This is the continuation of selected complete entry 8695; that entry number is not printed in this block."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzM2MA",
+      "decision": "covered_selected_entry",
+      "relationship": "former husband and trade-journey witness",
+      "candidate_entry_numbers": [
+        8907
+      ],
+      "relevant_arabic": "",
+      "rationale": "The relevant material is covered by selected complete entries 8907 and 8912; the visible matching entry is 8907."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzM2OQ",
+      "decision": "covered_selected_entry",
+      "relationship": "son or sister-name variant",
+      "candidate_entry_numbers": [
+        8935
+      ],
+      "relevant_arabic": "",
+      "rationale": "The passage belongs to selected complete entry 8935, Hala ibn Abi Hala, including the variant identifying Hala as Khadijah’s sister."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzM5OQ",
+      "decision": "covered_selected_entry",
+      "relationship": "son from an earlier marriage",
+      "candidate_entry_numbers": [
+        9027
+      ],
+      "relevant_arabic": "",
+      "rationale": "The passage belongs to selected complete entry 9027, Hind ibn Abi Hala."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQwMA",
+      "decision": "include_context",
+      "relationship": "grandson Hind ibn Hind",
+      "candidate_entry_numbers": [
+        9028
+      ],
+      "relevant_arabic": "٩٠٢٨- هند بن هند\nبن «١» أبي هالة، ولد الّذي قبله. وعلي قول قتادة ومن تبعه يكون هند بن أبي هند ثلاثة في نسق.\nذكره ابن مندة، وأورد من طريق حسان بن عبد اللَّه الواسطيّ، عن السّري بن يحيى، عن مالك بن دينار، حدثني هند بن خديجة زوج النبيّ ﵌، قال: مرّ النبيّ ﵌ بالحكم أبي مروان، فجعل يغمز النبيّ ﵌ ويشير بإصبعه، حتى التفت إليه النبيّ ﵌، فقال: «اللَّهمّ اجعل له وزغا»، يعني ارتعاشا، قال: فرجف مكانه.\nوهكذا أخرجه ابن أبي حاتم الرّازيّ، وعبد اللَّه بن أحمد في زيادات الزهد من هذا الوجه، ومالك بن دينار لم يدرك هند بن أبي هالة، وإنما أدرك ابنه، فكأنه نسبه لجدّه.\nوقد ذكر ابن أبي حاتم، عن أبيه- أنّ رواية هند بن هند عن النبيّ ﵌ مرسلة. وجرى أبو عمر على ظاهره، فذكر هذا الحديث لهند بن أبي هالة.\nوأخرج الزّبير بن بكّار والدّولابيّ، من طريق محمد بن الحجاج، عن رجل من بني تميم، قال: رأيت هند بن هند بن أبي هالة وعليه حلة خضراء، فمات في الطّاعون، فخرجوا به بين أربعة لشغل الناس بموتاهم، فصاحت امرأة: وا هند بن هنداه! وابن ربيب رسول اللَّه ﵌! قال: فازدحم الناس على جنازته وتركوا موتاهم.\n_________\n(١) أسد الغابة ت (٥٤١٢)، أنساب الأشراف ١/ ٥٠٦، الثقات ٣/ ٤٣٦، الكامل ٧/ ٢٥٩٤، جمهرة أنساب العرب ٢١٠، تجريد أسماء الصحابة ٢/ ١٢٣، تقريب التهذيب ٢/ ٣٢٢، تهذيب الأسماء واللغات ٢/ ١٤١، تهذيب التهذيب ١١/ ٧٢، الطبقات الكبرى ١/ ٤٢٢، عهد الخلفاء الراشدين (من تاريخ الإسلام) ٥٣٦، تاريخ الإسلام ٢/ ٢٦٥، خلاصة تذهيب ٣/ ١٢٥، العقد الثمين ٧/ ٣٧٨، تاريخ من دفن بالعراق ٤٧٢، تاريخ الإسلام ٣/ ٢٢٠، تهذيب الكمال ٣/ ١٤٥٠، التاريخ الكبير ٨/ ٢٤٠، تلقيح فهوم أهل الأثر ٣٨٥، الطبقات ٤٣، ١٧٩، معجم الثقات ٣٥٦، بقي بن مخلد ٥٩٨، المعرفة والتاريخ ٣/ ٢٨٤، ٢٨٨، جامع التحصيل ٣٦٤.",
+      "rationale": "Entry 9028 is not selected and adds substantive genealogical, transmission, and death information about Khadijah’s grandson."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQzNw",
+      "decision": "covered_selected_entry",
+      "relationship": "cousin and revelation adviser",
+      "candidate_entry_numbers": [
+        9151
+      ],
+      "relevant_arabic": "",
+      "rationale": "The passage opens selected complete entry 9151, Waraqa ibn Nawfal."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQzOA",
+      "decision": "covered_selected_entry",
+      "relationship": "cousin and revelation adviser",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "This is a continuation of selected complete entry 9151."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQzOQ",
+      "decision": "covered_selected_entry",
+      "relationship": "cousin and revelation adviser",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "This is a continuation of selected complete entry 9151, including Khadijah’s repeated consultations with Waraqa."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQ0MA",
+      "decision": "covered_selected_entry",
+      "relationship": "cousin remembered after death",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "This continues selected complete entry 9151, including Khadijah’s question about Waraqa’s fate."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzQ0MQ",
+      "decision": "exclude_bare_relation",
+      "relationship": "nephew through sister Hala",
+      "candidate_entry_numbers": [
+        9155
+      ],
+      "relevant_arabic": "",
+      "rationale": "The passage merely identifies Wafa’s mother Hala as Khadijah’s sister."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MzczOA",
+      "decision": "covered_selected_entry",
+      "relationship": "son-in-law Abu al-As and daughter Zaynab",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "The necklace and marriage material belongs to selected complete entry 10182, although its number is not visible here."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mzk0Mw",
+      "decision": "covered_volume8",
+      "relationship": "niece or cousin under conflicting genealogy",
+      "candidate_entry_numbers": [
+        10855
+      ],
+      "relevant_arabic": "",
+      "rationale": "The passage concerns Khadijah’s kin and is in volume 8, whose complete entries are already translated."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mzk2Ng",
+      "decision": "covered_volume8",
+      "relationship": "alleged daughter Baraka",
+      "candidate_entry_numbers": [
+        10951
+      ],
+      "relevant_arabic": "",
+      "rationale": "The disputed claim that Khadijah bore a daughter named Baraka is covered by the translated volume-8 entry."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mzk2OA",
+      "decision": "covered_volume8",
+      "relationship": "alleged daughter Baraka; textual correction",
+      "candidate_entry_numbers": [
+        10956
+      ],
+      "relevant_arabic": "",
+      "rationale": "The correction explaining how Baraka was mistakenly made Khadijah’s daughter is covered in volume 8."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mzk3Mg",
+      "decision": "covered_volume8",
+      "relationship": "Thuwaiba, respected wet nurse",
+      "candidate_entry_numbers": [
+        10970
+      ],
+      "relevant_arabic": "",
+      "rationale": "Khadijah’s honoring of Thuwaiba and unsuccessful effort to purchase her are covered in the translated volume-8 entry."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mzk5Nw",
+      "decision": "covered_volume8",
+      "relationship": "old acquaintance remembered after her death",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "The remembrance of a woman who visited during Khadijah’s lifetime is narrative material already covered by volume 8."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDAwNg",
+      "decision": "covered_volume8",
+      "relationship": "old acquaintance; variant identification",
+      "candidate_entry_numbers": [
+        11074
+      ],
+      "relevant_arabic": "",
+      "rationale": "The variant report about al-Hawla visiting during Khadijah’s lifetime is covered in volume 8."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDAxMQ",
+      "decision": "covered_volume8",
+      "relationship": "subject",
+      "candidate_entry_numbers": [
+        11092
+      ],
+      "relevant_arabic": "",
+      "rationale": "The correct Khadijah’s principal biography begins here in volume 8 and is already translated."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDAxMg",
+      "decision": "covered_volume8",
+      "relationship": "subject",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "This is a continuation of Khadijah’s complete translated volume-8 biography."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDAxMw",
+      "decision": "covered_volume8",
+      "relationship": "subject",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "This continuation covers her marriage negotiations, age, children, and virtues in the translated volume-8 biography."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDAxNA",
+      "decision": "covered_volume8",
+      "relationship": "subject",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "This continuation covers grief after her death, household role, trade, Zayd, Gabriel’s greeting, and her rank."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDAxNQ",
+      "decision": "covered_volume8",
+      "relationship": "subject",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "This continuation covers Muhammad’s praise, remembrance of her friends, and conflicting death chronology."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDAxNg",
+      "decision": "exclude_other_person",
+      "relationship": "another Khadijah, daughter of al-Zubayr",
+      "candidate_entry_numbers": [
+        11093
+      ],
+      "relevant_arabic": "",
+      "rationale": "The result concerns Khadijah bint al-Zubayr, not Khadijah bint Khuwaylid."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDAzNw",
+      "decision": "exclude_other_person",
+      "relationship": "another Khadijah, daughter of al-Zubayr",
+      "candidate_entry_numbers": [
+        11146
+      ],
+      "relevant_arabic": "",
+      "rationale": "This is a cross-reference for Khadijah bint al-Zubayr, not the subject."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDA0OQ",
+      "decision": "covered_volume8",
+      "relationship": "death chronology and al-Taif context",
+      "candidate_entry_numbers": [
+        11183
+      ],
+      "relevant_arabic": "",
+      "rationale": "The statement dating Raqiqa’s conversion after the deaths of Abu Talib and Khadijah is covered in volume 8."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDA2Mw",
+      "decision": "covered_volume8",
+      "relationship": "daughter Zaynab and wedding necklace",
+      "candidate_entry_numbers": [
+        11223
+      ],
+      "relevant_arabic": "",
+      "rationale": "The account of Khadijah’s necklace, Muhammad’s recognition of it, and his prayer for her is covered in volume 8."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDEwMQ",
+      "decision": "covered_volume8",
+      "relationship": "midwife for Khadijah’s children",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "The statement that the woman served as Khadijah’s midwife is in volume 8 and already covered."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDEwOA",
+      "decision": "covered_volume8",
+      "relationship": "successor wife Sawda",
+      "candidate_entry_numbers": [
+        11363
+      ],
+      "relevant_arabic": "",
+      "rationale": "Sawda’s status as Muhammad’s first wife after Khadijah and the ensuing marriage negotiations are covered in volume 8."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDEzNg",
+      "decision": "exclude_bare_relation",
+      "relationship": "sister al-Tahira",
+      "candidate_entry_numbers": [
+        11437
+      ],
+      "relevant_arabic": "",
+      "rationale": "The entry only identifies al-Tahira as Khadijah’s sister."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDE0NA",
+      "decision": "covered_volume8",
+      "relationship": "successor wife Aisha",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "The dating of Aisha’s marriage after Khadijah’s death and Khawla’s proposal narrative are covered in volume 8."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDE3Ng",
+      "decision": "covered_volume8",
+      "relationship": "comparative virtue with Fatima, Maryam, and Asiya",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "The reports naming Khadijah among the foremost women are contained in translated volume-8 material."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDI0OA",
+      "decision": "covered_volume8",
+      "relationship": "marriage intermediary Nafisa",
+      "candidate_entry_numbers": [
+        11820
+      ],
+      "relevant_arabic": "",
+      "rationale": "Nafisa’s role as intermediary in Khadijah’s marriage is covered by the translated volume-8 entry."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDI1MA",
+      "decision": "exclude_bare_relation",
+      "relationship": "sister Hala",
+      "candidate_entry_numbers": [
+        11832
+      ],
+      "relevant_arabic": "",
+      "rationale": "Within this block the entry only identifies Hala as Khadijah’s sister; the substantive narrative occurs in the next result."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDI1MQ",
+      "decision": "covered_volume8",
+      "relationship": "sister Hala and posthumous remembrance",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "Muhammad’s emotional recognition of Hala’s manner of seeking entry as resembling Khadijah is covered in volume 8."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDI1Ng",
+      "decision": "exclude_other_person",
+      "relationship": "another Khadijah, daughter of al-Husayn",
+      "candidate_entry_numbers": [
+        11850
+      ],
+      "relevant_arabic": "",
+      "rationale": "The cross-reference concerns Hind’s sister Khadijah bint al-Husayn, not Khadijah bint Khuwaylid."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDI1OQ",
+      "decision": "covered_volume8",
+      "relationship": "daughter Hind from an earlier marriage",
+      "candidate_entry_numbers": [
+        11861
+      ],
+      "relevant_arabic": "",
+      "rationale": "The genealogy, marriage, and descendants of Khadijah’s daughter Hind are covered by the translated volume-8 entry."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDI3MQ",
+      "decision": "covered_volume8",
+      "relationship": "household associate Umm Ayman and freedman Zayd",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "The reports concerning Umm Ayman’s ownership, Muhammad’s marriage to Khadijah, and Khadijah’s gift of Zayd are covered in volume 8."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDMwOA",
+      "decision": "covered_volume8",
+      "relationship": "hairdresser and old acquaintance Umm Zafar",
+      "candidate_entry_numbers": [
+        12031
+      ],
+      "relevant_arabic": "",
+      "rationale": "The identification of Umm Zafar as Khadijah’s hairdresser and a remembered visitor is covered in volume 8."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDM0MA",
+      "decision": "covered_volume8",
+      "relationship": "niece Umm Abdullah and her family",
+      "candidate_entry_numbers": [
+        12142
+      ],
+      "relevant_arabic": "",
+      "rationale": "The entry adds the niece’s marriage and child, and it is already covered by the translated volume-8 biographies."
+    },
+    {
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6NDM2Mg",
+      "decision": "covered_volume8",
+      "relationship": "earliest female believer after Khadijah",
+      "candidate_entry_numbers": [],
+      "relevant_arabic": "",
+      "rationale": "The report that Umm al-Fadl was the first woman to believe after Khadijah is in volume 8 and already translated."
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00008935",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 8935,
+  "title": {
+    "english": "Hala ibn Abi Hala al-Tamimi (1)",
+    "arabic_observed": "هالة بن أبي هالة التميميّ «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00008935-segment-0001",
+      "volume": 6,
+      "reader_page": 3370,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3370",
+      "reader_pages": [
+        3370
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/3370"
+      ],
+      "source_unit_id": "isabah-usul-4CPCkl83K7:entry:8935:1860e8dae8a12cfc",
+      "arabic": "٨٩٣٥- هالة بن أبي هالة التميميّ «١»\n. قال أبو عمر: له صحبة. وقال ابن حبّان: هالة بن خديجة زوج النّبيّ ﵌ له صحبة، واسم أبي هالة هند بن النبّاش بن زرارة بن وقدان بن حبيب بن سلامة بن غذيّ بن جردة بن أسيّد بالتّصغير مثقلا، ابن عمرو بن تميم.\nوقال الزّبير بن بكّار: اسم أبي هالة مالك بن النبّاش، وباقي النسب سواء. وقيل اسمه: زرارة.\nوغذي في نسبه ضبطه ابن ماكولا بالتّصغير، ونقل أن الزّبير ذكره كالجادة. والصّواب بالتصغير.\nوأخرج الطّبرانيّ، عن علي بن محمد بن عمرو بن تميم، عن زيد بن هالة بن أبي هالة التميميّ بمصر، حدّثني أبي، عن أبيه تميم، عن أبيه زيد بن هالة، عن أبيه هالة بن أبي هالة- أنه دخل علي النبيّ ﵌ وهو راقد فاستيقظ، فضمّ هالة إلى صدره، وقال: «هالة، هالة، هالة» !\nوأخرج جعفر المستغفريّ، من طريق مؤمل بن إسماعيل، عن حماد بن سلمة، عن هشام، عن أبيه، عن عائشة، قال: قدم ابن لخديجة يقال له هالة، والنبيّ ﵌ قائل، فسمع في قائلته هالة فانتبه، فقال: «هالة! هالة!» .\nقال جعفر: خالفه موسى بن إسماعيل، فقال: عن حمّاد بهذا السّند: قال هالة أخت خديجة. قال جعفر: وهو الصّواب. انتهى.\nوقد ذكر هالة أخت خديجة من طريق علي بن مسهر، عن هشام، عن أبيه، عن عائشة في الصّحيح.\n(١) الثقات ٣/ ٤٣٧، تجريد أسماء الصحابة ٢/ ١١٦، أسد الغابة ت (٥٣٢٩)، الطبقات الكبرى ٨/ ١٩، العقد الثمين ٧/ ٣٦٢، الاستيعاب ت (٢٧٣٩) .",
+      "english": "8935 — Hala ibn Abi Hala al-Tamimi (1)\n\nAbu Umar said: He had Companionship. Ibn Hibban said: Hala ibn Khadija, the wife of the Prophet ﷺ, had Companionship. The name of Abu Hala was Hind ibn al-Nabbash ibn Zurara ibn Waqdan ibn Habib ibn Salama ibn Ghudhayy ibn Jarda ibn Usayyid—the latter in the diminutive form, with gemination—ibn Amr ibn Tamim.\n\nAl-Zubayr ibn Bakkar said: The name of Abu Hala was Malik ibn al-Nabbash; the remainder of the genealogy is the same. It is also said that his name was Zurara.\n\nIn this genealogy, Ibn Makula vocalized Ghudhayy in the diminutive form, and related that al-Zubayr mentioned it in the usual, non-diminutive form. The correct form is the diminutive.\n\nAl-Tabarani transmitted from Ali ibn Muhammad ibn Amr ibn Tamim, from Zayd ibn Hala ibn Abi Hala al-Tamimi in Egypt: “My father related to me, from his father Tamim, from his father Zayd ibn Hala, from his father Hala ibn Abi Hala, that he entered upon the Prophet ﷺ while he was asleep. He awoke, drew Hala to his breast, and said, ‘Hala! Hala! Hala!’”\n\nJafar al-Mustaghfiri transmitted, by way of Mu’ammal ibn Ismail, from Hammad ibn Salama, from Hisham, from his father, from Aisha. He said: “A son of Khadija called Hala arrived while the Prophet ﷺ was taking his midday rest. During his rest, he heard ‘Hala,’ awoke, and said, ‘Hala! Hala!’”\n\nJafar said: Musa ibn Ismail differed from him and related from Hammad, with this isnad: “He said: Hala was Khadija’s sister.” Jafar said: “This is the correct version.” End quote.\n\nHala, Khadija’s sister, has indeed been mentioned by way of Ali ibn Mushir, from Hisham, from his father, from Aisha, in the Sahih.\n\n(1) al-Thiqat 3/437; Tajrid Asma al-Sahaba 2/116; Usd al-Ghaba, t. (5329); al-Tabaqat al-Kubra 8/19; al-Iqd al-Thamin 7/362; al-Isti‘ab, t. (2739).",
+      "arabic_sha256": "1860e8dae8a12cfcc1f0a91e41c455db81131cd846fc6bf56c49017cd776d679",
+      "english_sha256": "2408c3c4b164fd365245bd5c29380a847fd2616398a50f1edc86efa187596f96",
+      "machine_state": "machine_adjudicated_needs_attention"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "هالة بن أبي هالة التميمي",
+      "english": "Hala ibn Abi Hala al-Tamimi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبّان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadija",
+      "kind": "person"
+    },
+    {
+      "arabic": "النّبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند بن النبّاش بن زرارة بن وقدان بن حبيب بن سلامة بن غذيّ بن جردة بن أسيّد بن عمرو بن تميم",
+      "english": "Hind ibn al-Nabbash ibn Zurara ibn Waqdan ibn Habib ibn Salama ibn Ghudhayy ibn Jarda ibn Usayyid ibn Amr ibn Tamim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّبير بن بكّار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "مالك بن النبّاش",
+      "english": "Malik ibn al-Nabbash",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماكولا",
+      "english": "Ibn Makula",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطّبرانيّ",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن محمد بن عمرو بن تميم",
+      "english": "Ali ibn Muhammad ibn Amr ibn Tamim",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن هالة بن أبي هالة التميميّ",
+      "english": "Zayd ibn Hala ibn Abi Hala al-Tamimi",
+      "kind": "person"
+    },
+    {
+      "arabic": "تميم",
+      "english": "Tamim",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن هالة",
+      "english": "Zayd ibn Hala",
+      "kind": "person"
+    },
+    {
+      "arabic": "جعفر المستغفريّ",
+      "english": "Jafar al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "مؤمل بن إسماعيل",
+      "english": "Mu’ammal ibn Ismail",
+      "kind": "person"
+    },
+    {
+      "arabic": "حماد بن سلمة",
+      "english": "Hammad ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام",
+      "english": "Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن إسماعيل",
+      "english": "Musa ibn Ismail",
+      "kind": "person"
+    },
+    {
+      "arabic": "هالة أخت خديجة",
+      "english": "Hala, Khadija’s sister",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن مسهر",
+      "english": "Ali ibn Mushir",
+      "kind": "person"
+    },
+    {
+      "arabic": "مصر",
+      "english": "Egypt",
+      "kind": "place"
+    },
+    {
+      "arabic": "الصّحيح",
+      "english": "the Sahih",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "Tajrid Asma al-Sahaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبقات الكبرى",
+      "english": "al-Tabaqat al-Kubra",
+      "kind": "work"
+    },
+    {
+      "arabic": "العقد الثمين",
+      "english": "al-Iqd al-Thamin",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti‘ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [
+    {
+      "location": "Jafar al-Mustaghfiri’s report, after “from Aisha”",
+      "issue": "The canonical Arabic uses the masculine verb قال (“he said”) after the isnad ending with Aisha, so the identity of the quoted speaker cannot be determined from the supplied evidence.",
+      "best_rendering": "“from Aisha. He said: ‘A son of Khadija called Hala arrived …’”",
+      "human_question": "Is قال a textual irregularity to be retained, or should it be emended editorially to قالت and attributed explicitly to Aisha?",
+      "source_unit_id": "isabah-usul-4CPCkl83K7:entry:8935:1860e8dae8a12cfc"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.cohort-entry-importer.v1",
+    "cohort_id": "khadijah-immediate",
+    "source_manifest_sha256": "00a9848a8af2fc6855f0b340a5b7605e66a851d88cf2dc98af6a67ad246988a5",
+    "source_sha256": "1860e8dae8a12cfcc1f0a91e41c455db81131cd846fc6bf56c49017cd776d679",
+    "adjudication_prompt_sha256": "eac4d50100d9e165c73f3e260f8067133ef26f898c85308ef36c810b1c0880d8",
+    "source_repairs": [
+      {
+        "repair_id": "khadijah-immediate-8935-reader-ocr-1",
+        "reader_page": 3370,
+        "facsimile_pdf_page": 3588,
+        "observed_reader_text": "فقال: ع حمّاد بهذا السّند",
+        "facsimile_text": "فقال: عن حمّاد بهذا السّند"
+      }
+    ]
+  }
+}

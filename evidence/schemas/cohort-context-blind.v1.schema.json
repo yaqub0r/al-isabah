@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object", "additionalProperties": false, "required": ["items"],
+  "properties": {"items": {"type": "array", "items": {
+    "type": "object", "additionalProperties": false,
+    "required": ["result_id", "english_text", "names", "uncertainties"],
+    "properties": {
+      "result_id": {"type": "string"},
+      "english_text": {"type": "string", "minLength": 1},
+      "names": {"type": "array", "items": {"$ref": "#/$defs/name"}},
+      "uncertainties": {"type": "array", "items": {"type": "object", "additionalProperties": false,
+        "required": ["location", "issue", "best_rendering", "witness_recommended"],
+        "properties": {"location": {"type": "string"}, "issue": {"type": "string"}, "best_rendering": {"type": "string"}, "witness_recommended": {"type": "boolean"}}
+      }}
+    }
+  }}},
+  "$defs": {"name": {"type": "object", "additionalProperties": false,
+    "required": ["arabic", "english", "kind"],
+    "properties": {"arabic": {"type": "string"}, "english": {"type": "string"}, "kind": {"enum": ["person", "tribe", "place", "work", "other"]}}
+  }}
+}

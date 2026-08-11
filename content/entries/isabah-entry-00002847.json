@@ -1,0 +1,97 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00002847",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 2847,
+  "title": {
+    "english": "2847 Z—Zuhayr ibn Qunfudh al-Asadi:",
+    "arabic_observed": "٢٨٤٧ ز- زهير بن قنفد الأسديّ:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00002847-segment-0001",
+      "volume": 2,
+      "reader_page": 1169,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/1169",
+      "reader_pages": [
+        1169
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/1169"
+      ],
+      "source_unit_id": "isabah-usul-4CPCkl83K7:entry:2847:7014a94131219138",
+      "arabic": "٢٨٤٧ ز- زهير بن قنفد الأسديّ:\nذكره الفاكهيّ في «أخبار مكّة» من طريق زكريّا من طريق زكريّا بن قطن «٢»، عن صفية بنت زهير بن قنفد الأسديّة، عن أبيها أنّ النبيّ ﵌ كان يكون في حراء بالنهار، فإذا كان الليل نزل من حراء. فأتى المسجد الّذي في الشّعب وتأتيه خديجة من مكة فتلقاه بالمسجد الّذي في الشّعب، فإذا قرب الصّباح افترقا.\n(٢) في أ: فطن.",
+      "english": "2847 Z—Zuhayr ibn Qunfudh al-Asadi:\n\nAl-Fakihi mentioned him in Akhbar Makka, by way of Zakariyya, by way of Zakariyya ibn Qatan (2), from Safiyya bint Zuhayr ibn Qunfudh al-Asadiyya, from her father, that the Prophet—may God bless him and grant him peace—would stay at Hira during the day; when night came, he would descend from Hira. He would then go to the mosque in the mountain pass, and Khadija would come to him from Mecca and meet him at the mosque in the mountain pass. When dawn drew near, they would part.\n\n(2) In A: Fatan.",
+      "arabic_sha256": "7014a94131219138bf582ecbaa14ade50e2b788b5c24be080e3d0b1e0446aa5f",
+      "english_sha256": "a7a50bbaf8eb8ad2a849fe75810e9c089b0563abb8c5a3f3be602e8c893dd18e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زهير بن قنفد الأسدي",
+      "english": "Zuhayr ibn Qunfudh al-Asadi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفاكهي",
+      "english": "al-Fakihi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أخبار مكة",
+      "english": "Akhbar Makka",
+      "kind": "work"
+    },
+    {
+      "arabic": "زكريا",
+      "english": "Zakariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "زكريا بن قطن",
+      "english": "Zakariyya ibn Qatan",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت زهير بن قنفد الأسدية",
+      "english": "Safiyya bint Zuhayr ibn Qunfudh al-Asadiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadija",
+      "kind": "person"
+    },
+    {
+      "arabic": "حراء",
+      "english": "Hira",
+      "kind": "place"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "فطن",
+      "english": "Fatan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.cohort-entry-importer.v1",
+    "cohort_id": "khadijah-immediate",
+    "source_manifest_sha256": "00a9848a8af2fc6855f0b340a5b7605e66a851d88cf2dc98af6a67ad246988a5",
+    "source_sha256": "7014a94131219138bf582ecbaa14ade50e2b788b5c24be080e3d0b1e0446aa5f",
+    "adjudication_prompt_sha256": "05306f7bee1baf1a3aedfefd17abf9ac361df1afd6b44acb6b104bf980e2f55b",
+    "source_repairs": []
+  }
+}

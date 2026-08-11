@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.cohort-spec.v1",
+  "cohort_id": "khadijah-immediate",
+  "title": "Khadijah and her immediate associates",
+  "issue": 4,
+  "canonical_source": {
+    "work_id": "ibn_hajar_isabah_v1",
+    "edition_id": "ibn_hajar_isabah_dar_al_kutub_1995",
+    "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+    "version_id": "4CPCkl83K7",
+    "source_and_version": "turath:9767",
+    "facsimile_url": "https://assets.usul.ai/pdfs/4CPCkl83K7.pdf"
+  },
+  "discovery_queries": [
+    {
+      "id": "khadijah-name",
+      "arabic": "خديجة",
+      "purpose": "Exhaustive direct-mention inventory; false positives with the male name Khudayj are retained and classified."
+    },
+    {
+      "id": "khadijah-full-name",
+      "arabic": "خديجة بنت خويلد",
+      "purpose": "High-precision identity and close-kin inventory."
+    }
+  ],
+  "relationship_classes": [
+    "household-and-kin",
+    "marriage-and-trade",
+    "earliest-belief",
+    "children-and-prior-household",
+    "direct-narrative-witness"
+  ],
+  "seed_people": [
+    {"name": "Khadijah bint Khuwaylid", "arabic": "خديجة بنت خويلد", "relationship": "subject"},
+    {"name": "Waraqa ibn Nawfal", "arabic": "ورقة بن نوفل", "relationship": "earliest-belief"},
+    {"name": "Maysara", "arabic": "ميسرة", "relationship": "marriage-and-trade"},
+    {"name": "Nafisa bint Munya", "arabic": "نفيسة بنت منية", "relationship": "marriage-and-trade"},
+    {"name": "Hakim ibn Hizam", "arabic": "حكيم بن حزام", "relationship": "household-and-kin"},
+    {"name": "Zayd ibn Haritha", "arabic": "زيد بن حارثة", "relationship": "household-and-kin"},
+    {"name": "Abu Hala al-Tamimi", "arabic": "أبو هالة", "relationship": "children-and-prior-household"},
+    {"name": "Atiq ibn A'idh al-Makhzumi", "arabic": "عتيق بن عائذ", "relationship": "children-and-prior-household"},
+    {"name": "Hind ibn Abi Hala", "arabic": "هند بن أبي هالة", "relationship": "children-and-prior-household"},
+    {"name": "Hala bint Khuwaylid", "arabic": "هالة بنت خويلد", "relationship": "household-and-kin"},
+    {"name": "Khawla bint Hakim", "arabic": "خولة بنت حكيم", "relationship": "direct-narrative-witness"}
+  ],
+  "entry_targets": [
+    {"entry_number": 1805, "name": "Hakim ibn Hizam", "relationship": "household-and-kin", "first_reader_page": 788, "reason": "Nephew and purchaser of Zayd for Khadijah; the entry supplies his direct household and trade connection."},
+    {"entry_number": 2263, "name": "Khuzayma ibn Hakim al-Sulami", "relationship": "marriage-and-trade", "first_reader_page": 933, "reason": "A weak but explicit report places him in Khadijah's caravan with Muhammad before the marriage; retained with Ibn Hajar's criticism."},
+    {"entry_number": 2847, "name": "Zuhayr ibn Qunfudh", "relationship": "earliest-belief", "first_reader_page": 1169, "reason": "His report places Khadijah meeting Muhammad at the valley mosque during the Hira period."},
+    {"entry_number": 2897, "name": "Zayd ibn Haritha", "relationship": "household-and-kin", "first_reader_page": 1185, "reason": "Khadijah's household acquired Zayd and she gave him to Muhammad; his entry preserves the adoption and earliest-belief history."},
+    {"entry_number": 4321, "name": "al-Tahir (Abd Allah), son of Muhammad", "relationship": "children-and-prior-household", "first_reader_page": 1676, "reason": "Direct child entry preserving conflicting enumerations and names of Khadijah's sons."},
+    {"entry_number": 5602, "name": "Afif al-Kindi", "relationship": "direct-narrative-witness", "first_reader_page": 2168, "reason": "Eyewitness report of Muhammad, Ali, and Khadijah praying together at the beginning of Islam."},
+    {"entry_number": 7284, "name": "al-Qasim ibn Muhammad", "relationship": "children-and-prior-household", "first_reader_page": 2771, "reason": "Direct child entry, including disputed age at death and Khadijah's grief."},
+    {"entry_number": 8302, "name": "Maysara", "relationship": "marriage-and-trade", "first_reader_page": 3153, "reason": "Khadijah's servant and Muhammad's companion on her caravan before their marriage."},
+    {"entry_number": 8695, "name": "Nabbash ibn Zurara", "relationship": "children-and-prior-household", "first_reader_page": 3292, "reason": "One identification of Abu Hala, Khadijah's earlier husband; Ibn Hajar explicitly disputes his companionship."},
+    {"entry_number": 8907, "name": "Nabbash ibn Zurara (duplicate Abu Hala entry)", "relationship": "children-and-prior-household", "first_reader_page": 3361, "reason": "A second, explicitly erroneous Abu Hala identification needed to preserve the name conflict."},
+    {"entry_number": 8912, "name": "Nastur the monk", "relationship": "marriage-and-trade", "first_reader_page": 3361, "reason": "The caravan omen report attributed to Maysara and tied to Khadijah's decision to marry Muhammad."},
+    {"entry_number": 8935, "name": "Hala ibn Abi Hala", "relationship": "children-and-prior-household", "first_reader_page": 3370, "reason": "A disputed prior-household child whose entry records confusion with Khadijah's sister Hala."},
+    {"entry_number": 9027, "name": "Hind ibn Abi Hala", "relationship": "children-and-prior-household", "first_reader_page": 3400, "reason": "Khadijah's son and Muhammad's stepson; the entry also preserves competing names for Abu Hala."},
+    {"entry_number": 9151, "name": "Waraqa ibn Nawfal", "relationship": "earliest-belief", "first_reader_page": 3438, "reason": "Khadijah's cousin and principal witness-interpreter in the first-revelation account."},
+    {"entry_number": 10182, "name": "Abu al-As ibn al-Rabi", "relationship": "children-and-prior-household", "first_reader_page": 3738, "reason": "Khadijah's nephew and Zaynab's husband; his entry preserves the necklace and household continuity after Khadijah's death."}
+  ],
+  "entry_volume_map": {
+    "1805": 2, "2263": 2, "2847": 2, "2897": 2,
+    "4321": 3, "5602": 4, "7284": 5,
+    "8302": 6, "8695": 6, "8907": 6, "8912": 6, "8935": 6, "9027": 6, "9151": 6,
+    "10182": 7
+  },
+  "witness_queries": {
+    "1805": ["حكيم بن حزام", "وقيل سنة أربع", "شطرها في الجاهلية في الإسلام"],
+    "2897": ["زيد بن حارثة", "بالكسر واحد الذي قبله", "بلاد بين سليم"],
+    "7284": ["القاسم بن محمد", "درت لبينة القاسم", "اللبنة واللبنة"],
+    "9151": ["ورقة بن نوفل", "مات قبل أن يدعو بحيرا رسول الله الناس إلى الإسلام"]
+  },
+  "selection_policy": {
+    "include": [
+      "Every passage that directly concerns Khadijah's life, household, marriage, trade, first-belief role, death, or remembered character.",
+      "The complete al-Isabah entry of an immediate associate when that entry adds material context to one of those events.",
+      "Conflicting genealogical, chronological, or naming evidence needed to understand the canonical account."
+    ],
+    "exclude": [
+      "A bare kinship reference that adds no fact about Khadijah or the relevant associate.",
+      "A false positive for the distinct male name Khudayj or another Khadijah.",
+      "Generic transmitters, later historians, and cited book authors who are not actors in the narrative."
+    ],
+    "uncertain": "Retain as pending with evidence; never silently discard it."
+  },
+  "fill_contract": {
+    "unit": "printed biography entry",
+    "stable_key": "printed_entry_number",
+    "source_locator": "Usul result id plus volume, printed page, reader index, and canonical text hash",
+    "incremental_rule": "A later cohort or full-volume run may add entries and mentions without rewriting reviewed entries.",
+    "review_rule": "Autonomous translation, criticism, witness comparison, adjudication, and deterministic QA precede human review."
+  }
+}

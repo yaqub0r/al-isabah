@@ -1,0 +1,114 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00008695",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 8695,
+  "title": {
+    "english": "Nabbash ibn Zarara (1)",
+    "arabic_observed": "نبّاش بن زرارة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00008695-segment-0001",
+      "volume": 6,
+      "reader_page": 3292,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3292",
+      "reader_pages": [
+        3292,
+        3293
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/3292",
+        "https://usul.ai/t/isaba-fi-tamyiz/3293"
+      ],
+      "source_unit_id": "isabah-usul-4CPCkl83K7:entry:8695:025c2abdd97fe8ab",
+      "arabic": "٨٦٩٥- نبّاش بن زرارة «١»\n. قال ابن مندة: له ذكر في المغازي، صحب النبيّ ﵌، كذا ذكره مختصرا. وقال أبو موسى: نباش بن زرارة التميمي، أبو هالة، أورده المستغفريّ في باب النّون من الصّحابة. وتعقبه ابن الأثير فساق نسبه، فقال: ابن زرارة بن وقدان بن حبيب بن سلامة بن عدي بن جروة بن أسيّد بن عمرو بن تميم، أبو هالة التميمي، ثم قال: قال مصعب الزّبيريّ: هو حليف بني عبد الدّار، قال ابن الأثير: استدركه أبو موسى على ابن مندة، وقد ذكره ابن مندة، فلا وجه لاستدراكه، ثم إنه لا صحبة له، فإنه كان قبل النبوّة، لأنه كان زوج خديجة قبل النبيّ ﵌، فولد لها منه أبو هالة، ولا صحبة لزرارة ولا لابنه. انتهى.\nفأما تعقّبه على أبي موسى فموجّه لكونه كني نبّاشا، وقال: إنه تميمي، وأما تعقّبه\n(١) أسد الغابة ت (٥١٩٥) .\nعلى ابن مندة ففيه نظر، لأنه لم يسق نسبه، فاحتمل أن يكون آخر، ومن ثمّ استدركه أبو موسى، وأسند إلى ذكر المستغفريّ، ومستند المستغفريّ في ذكره ما ساقه من طريق مصعب الزّبيريّ أنه قال: نباش بن زرارة التميميّ، أبو هالة، حليف بني عبد الدّار هو والد هند ابن خديجة. انتهى ملخصا.\nوليس في هذا ما يدل على صحبته، لأنه يتكلم على الأنساب من حيث هي لا من جهة خصوص الصّحابة.",
+      "english": "8695—Nabbash ibn Zarara (1)\n\nIbn Mandah said: “He is mentioned in the accounts of the military campaigns. He accompanied the Prophet (peace and blessings be upon him).” Thus he mentioned him, in brief.\n\nAbu Musa said: “Nabbash ibn Zarara al-Tamimi, Abu Hala: al-Mustaghfiri included him among the Companions in the chapter on the letter nun.” Ibn al-Athir objected to this and set forth his genealogy, saying: “[Nabbash] ibn Zarara ibn Waqdan ibn Habib ibn Salama ibn Adi ibn Jurwa ibn Usayyid ibn Amr ibn Tamim, Abu Hala al-Tamimi.” He then said: “Musab al-Zubayri said: ‘He was a confederate of Banu Abd al-Dar.’” Ibn al-Athir said: “Abu Musa added him as a supplement to Ibn Mandah, although Ibn Mandah had already mentioned him, so there was no reason for this supplementary inclusion. Moreover, he was not a Companion, for he lived before the Prophethood: he was Khadija’s husband before the Prophet (peace and blessings be upon him), and she bore Abu Hala to him. Neither Zarara nor his son was a Companion.” End quote.\n\nAs for his objection to Abu Musa, it is apposite, since Abu Musa gave Nabbash the kunya Abu Hala and said that he was a Tamimi. His objection concerning Ibn Mandah, however, is open to question, because Ibn Mandah did not set forth the man’s genealogy, so it was possible that he was another person. It was for this reason that Abu Musa added him as a supplement, tracing the report by isnad to al-Mustaghfiri’s mention of him. Al-Mustaghfiri’s basis for mentioning him was the report he transmitted through Musab al-Zubayri, who said: “Nabbash ibn Zarara al-Tamimi, Abu Hala, a confederate of Banu Abd al-Dar, was the father of Hind, the son of Khadija.” End quote, abridged.\n\nThere is nothing in this that indicates he was a Companion, because Musab was discussing genealogies simply as genealogies, not specifically from the standpoint of the Companions.\n\n(1) Asad al-Ghaba, entry no. 5195.",
+      "arabic_sha256": "025c2abdd97fe8ab491ed5d732b490842119a070bd097f6f193b69cf02ee0629",
+      "english_sha256": "5b9d0dae987be05b009c7c0d125300dc832f5abc7962bc6a2470cc725f50954b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "نبّاش بن زرارة",
+      "english": "Nabbash ibn Zarara",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "نباش بن زرارة التميمي، أبو هالة",
+      "english": "Nabbash ibn Zarara al-Tamimi, Abu Hala",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفريّ",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "زرارة بن وقدان بن حبيب بن سلامة بن عدي بن جروة بن أسيّد بن عمرو بن تميم",
+      "english": "Zarara ibn Waqdan ibn Habib ibn Salama ibn Adi ibn Jurwa ibn Usayyid ibn Amr ibn Tamim",
+      "kind": "person"
+    },
+    {
+      "arabic": "مصعب الزّبيريّ",
+      "english": "Musab al-Zubayri",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عبد الدّار",
+      "english": "Banu Abd al-Dar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadija",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند ابن خديجة",
+      "english": "Hind, the son of Khadija",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Asad al-Ghaba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.cohort-entry-importer.v1",
+    "cohort_id": "khadijah-immediate",
+    "source_manifest_sha256": "00a9848a8af2fc6855f0b340a5b7605e66a851d88cf2dc98af6a67ad246988a5",
+    "source_sha256": "025c2abdd97fe8ab491ed5d732b490842119a070bd097f6f193b69cf02ee0629",
+    "adjudication_prompt_sha256": "f6c0ba04eeff6b5b8cc03e6852eb82d38df377b9458969657c2622ed3ccfc86c",
+    "source_repairs": []
+  }
+}

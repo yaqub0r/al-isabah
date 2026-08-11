@@ -1,0 +1,119 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00008912",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 8912,
+  "title": {
+    "english": "Nastur the Monk",
+    "arabic_observed": "نسطور الراهب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00008912-segment-0001",
+      "volume": 6,
+      "reader_page": 3361,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3361",
+      "reader_pages": [
+        3361,
+        3362
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/3361",
+        "https://usul.ai/t/isaba-fi-tamyiz/3362"
+      ],
+      "source_unit_id": "isabah-usul-4CPCkl83K7:entry:8912:3018bd6e4df5180b",
+      "arabic": "٨٩١٢- نسطور الراهب\nذكر ابن سعد عن الواقديّ أن خديجة لما فاوضت النبي ﵌ قبل البعثة، وقبل أن يتزوجها- في تجارة إلى الشام أرسلت معه غلامها ميسرة، فذكر ميسرة أنهما قدما بصرى، فنزلا تحت ظل شجرة، فقال له نسطور الراهب: ما نزل تحت هذه الشجرة قط إلا نبي، ثم وقع بين النبي ﵌ وبين رجل آخر ملاحاة، فقال له: احلف باللات والعزى. فقال: ما حلفت بهما قط، وإني لأمر بهما معرضا عنهما، فقال الرجل لميسرة: هذا نبيّ هذه الأمة.\n(١) أسد الغابة ت (٥١٩٥) .\n(٢) أسد الغابة ت (٥١٩٨)، الاستيعاب ت (٢٦٨٨) .\n(٣) أسد الغابة ت (٥٢٠٧)، الاستيعاب ت (٢٦٨٩) .\nقلت: وقد تقدم في الباء الموحدة قصة بحيرا بنحو قصة نسطور، وهي لبحيرا أشهر، وقد ذكر بحيرا في الصحابة ابن مندة لذلك، فهذا على شرطه.",
+      "english": "8912 — Nastur the Monk\n\nIbn Sa'd related from al-Waqidi that, before the prophetic mission and before the Prophet (may God bless him and grant him peace) married Khadija, she entered into an agreement with him concerning a trading journey to al-Sham and sent her servant Maysara with him. Maysara related that the two of them arrived at Busra and stopped in the shade of a tree. Nastur the monk said to him, “No one has ever stopped beneath this tree except a prophet.” Then a dispute arose between the Prophet (may God bless him and grant him peace) and another man, who said to him, “Swear by al-Lat and al-Uzza.” He replied, “I have never sworn by them. Indeed, whenever I pass by them, I turn away from them.” The man then said to Maysara, “This is the prophet of this nation.”\n\n(1) Usd al-Ghaba, t. (5195).\n(2) Usd al-Ghaba, t. (5198); al-Isti'ab, t. (2688).\n(3) Usd al-Ghaba, t. (5207); al-Isti'ab, t. (2689).\n\nI say: The story of Buhayra, which is similar to the story of Nastur, has already appeared under the single-dotted letter ba. The story is better known in connection with Buhayra, and Ibn Mandah therefore included Buhayra among the Companions. Accordingly, Nastur meets his criterion.",
+      "arabic_sha256": "3018bd6e4df5180b92ffea5482daa1dc703dc7a068c5a3135e4dc870851d0dd6",
+      "english_sha256": "1e6d718d449795e42fc2616c2fff4e67e5ed33f46534913806197ad55291184a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "نسطور الراهب",
+      "english": "Nastur the Monk",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadija",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشام",
+      "english": "al-Sham",
+      "kind": "place"
+    },
+    {
+      "arabic": "ميسرة",
+      "english": "Maysara",
+      "kind": "person"
+    },
+    {
+      "arabic": "بصرى",
+      "english": "Busra",
+      "kind": "place"
+    },
+    {
+      "arabic": "اللات",
+      "english": "al-Lat",
+      "kind": "other"
+    },
+    {
+      "arabic": "العزى",
+      "english": "al-Uzza",
+      "kind": "other"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "بحيرا",
+      "english": "Buhayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.cohort-entry-importer.v1",
+    "cohort_id": "khadijah-immediate",
+    "source_manifest_sha256": "00a9848a8af2fc6855f0b340a5b7605e66a851d88cf2dc98af6a67ad246988a5",
+    "source_sha256": "3018bd6e4df5180b92ffea5482daa1dc703dc7a068c5a3135e4dc870851d0dd6",
+    "adjudication_prompt_sha256": "13e591614a3a961ab2c30ed9a8f641eb69ed39a239706bdb5e0c3d717e0467ba",
+    "source_repairs": []
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "schema": "al-isabah.cohort-source-manifest.v1",
+  "cohort_id": "khadijah-immediate",
+  "generated_at": "2026-08-11T06:28:45Z",
+  "canonical_source": {
+    "work_id": "ibn_hajar_isabah_v1",
+    "edition_id": "ibn_hajar_isabah_dar_al_kutub_1995",
+    "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+    "version_id": "4CPCkl83K7",
+    "source_and_version": "turath:9767",
+    "facsimile_url": "https://assets.usul.ai/pdfs/4CPCkl83K7.pdf"
+  },
+  "summary": {
+    "entry_count": 15,
+    "reader_page_count": 33,
+    "arabic_character_count": 30177
+  },
+  "entries": [
+    {
+      "entry_number": 1805,
+      "name": "Hakim ibn Hizam",
+      "relationship": "household-and-kin",
+      "first_reader_page": 788,
+      "reason": "Nephew and purchaser of Zayd for Khadijah; the entry supplies his direct household and trade connection.",
+      "arabic_text_sha256": "90ff486a9564ec6867a8bb0eecc58769bbe62ddf33935d1f0b54818d8d2873bf",
+      "arabic_character_count": 2308,
+      "reader_pages": [
+        788,
+        789
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/788",
+        "https://usul.ai/t/isaba-fi-tamyiz/789"
+      ],
+      "cache_key": "sha256/90/90ff486a9564ec6867a8bb0eecc58769bbe62ddf33935d1f0b54818d8d2873bf.json",
+      "source_state": "canonical_usul_reader",
+      "source_repairs": []
+    },
+    {
+      "entry_number": 2263,
+      "name": "Khuzayma ibn Hakim al-Sulami",
+      "relationship": "marriage-and-trade",
+      "first_reader_page": 933,
+      "reason": "A weak but explicit report places him in Khadijah's caravan with Muhammad before the marriage; retained with Ibn Hajar's criticism.",
+      "arabic_text_sha256": "317d73fe889dff70fc982f2ac929e8e975fe792307d5695f9623d2164afb6da7",
+      "arabic_character_count": 1187,
+      "reader_pages": [
+        933,
+        934
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/933",
+        "https://usul.ai/t/isaba-fi-tamyiz/934"
+      ],
+      "cache_key": "sha256/31/317d73fe889dff70fc982f2ac929e8e975fe792307d5695f9623d2164afb6da7.json",
+      "source_state": "canonical_usul_reader",
+      "source_repairs": []
+    },
+    {
+      "entry_number": 2847,
+      "name": "Zuhayr ibn Qunfudh",
+      "relationship": "earliest-belief",
+      "first_reader_page": 1169,
+      "reason": "His report places Khadijah meeting Muhammad at the valley mosque during the Hira period.",
+      "arabic_text_sha256": "7014a94131219138bf582ecbaa14ade50e2b788b5c24be080e3d0b1e0446aa5f",
+      "arabic_character_count": 332,
+      "reader_pages": [
+        1169
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/1169"
+      ],
+      "cache_key": "sha256/70/7014a94131219138bf582ecbaa14ade50e2b788b5c24be080e3d0b1e0446aa5f.json",
+      "source_state": "canonical_usul_reader",
+      "source_repairs": []
+    },
+    {
+      "entry_number": 2897,
+      "name": "Zayd ibn Haritha",
+      "relationship": "household-and-kin",
+      "first_reader_page": 1185,
+      "reason": "Khadijah's household acquired Zayd and she gave him to Muhammad; his entry preserves the adoption and earliest-belief history.",
+      "arabic_text_sha256": "45c77d51379ca0c6a88cbbdb1baff72b962e77aa71fbb533b79caac2797affd7",
+      "arabic_character_count": 5960,
+      "reader_pages": [
+        1185,
+        1186,
+        1187,
+        1188,
+        1189
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/1185",
+        "https://usul.ai/t/isaba-fi-tamyiz/1186",
+        "https://usul.ai/t/isaba-fi-tamyiz/1187",
+        "https://usul.ai/t/isaba-fi-tamyiz/1188",
+        "https://usul.ai/t/isaba-fi-tamyiz/1189"
+      ],
+      "cache_key": "sha256/45/45c77d51379ca0c6a88cbbdb1baff72b962e77aa71fbb533b79caac2797affd7.json",
+      "source_state": "canonical_usul_reader",
+      "source_repairs": []
+    },
+    {
+      "entry_number": 4321,
+      "name": "al-Tahir (Abd Allah), son of Muhammad",
+      "relationship": "children-and-prior-household",
+      "first_reader_page": 1676,
+      "reason": "Direct child entry preserving conflicting enumerations and names of Khadijah's sons.",
+      "arabic_text_sha256": "f1154397cc68c2fe86f385b3b59cad9a85743679b18cfa4cc932329563116468",
+      "arabic_character_count": 1453,
+      "reader_pages": [
+        1676,
+        1677
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/1676",
+        "https://usul.ai/t/isaba-fi-tamyiz/1677"
+      ],
+      "cache_key": "sha256/f1/f1154397cc68c2fe86f385b3b59cad9a85743679b18cfa4cc932329563116468.json",
+      "source_state": "canonical_usul_reader",
+      "source_repairs": []
+    },
+    {
+      "entry_number": 5602,
+      "name": "Afif al-Kindi",
+      "relationship": "direct-narrative-witness",
+      "first_reader_page": 2168,
+      "reason": "Eyewitness report of Muhammad, Ali, and Khadijah praying together at the beginning of Islam.",
+      "arabic_text_sha256": "42921c6d967cb088c363681baf3a3d66b3901a15c0a82abcce0be8afaef0cb86",
+      "arabic_character_count": 2196,
+      "reader_pages": [
+        2168,
+        2169
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/2168",
+        "https://usul.ai/t/isaba-fi-tamyiz/2169"
+      ],
+      "cache_key": "sha256/42/42921c6d967cb088c363681baf3a3d66b3901a15c0a82abcce0be8afaef0cb86.json",
+      "source_state": "canonical_usul_reader",
+      "source_repairs": []
+    },
+    {
+      "entry_number": 7284,
+      "name": "al-Qasim ibn Muhammad",
+      "relationship": "children-and-prior-household",
+      "first_reader_page": 2771,
+      "reason": "Direct child entry, including disputed age at death and Khadijah's grief.",
+      "arabic_text_sha256": "ae858dead3f7af1fab1cce0e8b47688ef8c149bcf148d9c23e0b5dae3275d374",
+      "arabic_character_count": 1681,
+      "reader_pages": [
+        2771,
+        2772
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/2771",
+        "https://usul.ai/t/isaba-fi-tamyiz/2772"
+      ],
+      "cache_key": "sha256/ae/ae858dead3f7af1fab1cce0e8b47688ef8c149bcf148d9c23e0b5dae3275d374.json",
+      "source_state": "canonical_usul_reader",
+      "source_repairs": []
+    },
+    {
+      "entry_number": 8302,
+      "name": "Maysara",
+      "relationship": "marriage-and-trade",
+      "first_reader_page": 3153,
+      "reason": "Khadijah's servant and Muhammad's companion on her caravan before their marriage.",
+      "arabic_text_sha256": "db6462c23a4f074095abbb2a545484a725e428ecd3590284eeb77f55edd92776",
+      "arabic_character_count": 197,
+      "reader_pages": [
+        3153
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/3153"
+      ],
+      "cache_key": "sha256/db/db6462c23a4f074095abbb2a545484a725e428ecd3590284eeb77f55edd92776.json",
+      "source_state": "canonical_usul_reader",
+      "source_repairs": []
+    },
+    {
+      "entry_number": 8695,
+      "name": "Nabbash ibn Zurara",
+      "relationship": "children-and-prior-household",
+      "first_reader_page": 3292,
+      "reason": "One identification of Abu Hala, Khadijah's earlier husband; Ibn Hajar explicitly disputes his companionship.",
+      "arabic_text_sha256": "025c2abdd97fe8ab491ed5d732b490842119a070bd097f6f193b69cf02ee0629",
+      "arabic_character_count": 1042,
+      "reader_pages": [
+        3292,
+        3293
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/3292",
+        "https://usul.ai/t/isaba-fi-tamyiz/3293"
+      ],
+      "cache_key": "sha256/02/025c2abdd97fe8ab491ed5d732b490842119a070bd097f6f193b69cf02ee0629.json",
+      "source_state": "canonical_usul_reader",
+      "source_repairs": []
+    },
+    {
+      "entry_number": 8907,
+      "name": "Nabbash ibn Zurara (duplicate Abu Hala entry)",
+      "relationship": "children-and-prior-household",
+      "first_reader_page": 3361,
+      "reason": "A second, explicitly erroneous Abu Hala identification needed to preserve the name conflict.",
+      "arabic_text_sha256": "a3e3dba1252b7964a81c1a10cf160c94feccfd8ad2506470a6835b1fe640905f",
+      "arabic_character_count": 175,
+      "reader_pages": [
+        3361
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/3361"
+      ],
+      "cache_key": "sha256/a3/a3e3dba1252b7964a81c1a10cf160c94feccfd8ad2506470a6835b1fe640905f.json",
+      "source_state": "canonical_usul_reader",
+      "source_repairs": []
+    },
+    {
+      "entry_number": 8912,
+      "name": "Nastur the monk",
+      "relationship": "marriage-and-trade",
+      "first_reader_page": 3361,
+      "reason": "The caravan omen report attributed to Maysara and tied to Khadijah's decision to marry Muhammad.",
+      "arabic_text_sha256": "3018bd6e4df5180b92ffea5482daa1dc703dc7a068c5a3135e4dc870851d0dd6",
+      "arabic_character_count": 650,
+      "reader_pages": [
+        3361,
+        3362
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/3361",
+        "https://usul.ai/t/isaba-fi-tamyiz/3362"
+      ],
+      "cache_key": "sha256/30/3018bd6e4df5180b92ffea5482daa1dc703dc7a068c5a3135e4dc870851d0dd6.json",
+      "source_state": "canonical_usul_reader",
+      "source_repairs": []
+    },
+    {
+      "entry_number": 8935,
+      "name": "Hala ibn Abi Hala",
+      "relationship": "children-and-prior-household",
+      "first_reader_page": 3370,
+      "reason": "A disputed prior-household child whose entry records confusion with Khadijah's sister Hala.",
+      "arabic_text_sha256": "1860e8dae8a12cfcc1f0a91e41c455db81131cd846fc6bf56c49017cd776d679",
+      "arabic_character_count": 1184,
+      "reader_pages": [
+        3370
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/3370"
+      ],
+      "cache_key": "sha256/18/1860e8dae8a12cfcc1f0a91e41c455db81131cd846fc6bf56c49017cd776d679.json",
+      "source_state": "canonical_usul_reader",
+      "source_repairs": [
+        {
+          "repair_id": "khadijah-immediate-8935-reader-ocr-1",
+          "reader_page": 3370,
+          "facsimile_pdf_page": 3588,
+          "observed_reader_text": "فقال: ع حمّاد بهذا السّند",
+          "facsimile_text": "فقال: عن حمّاد بهذا السّند"
+        }
+      ]
+    },
+    {
+      "entry_number": 9027,
+      "name": "Hind ibn Abi Hala",
+      "relationship": "children-and-prior-household",
+      "first_reader_page": 3400,
+      "reason": "Khadijah's son and Muhammad's stepson; the entry also preserves competing names for Abu Hala.",
+      "arabic_text_sha256": "875057103453d4e1bd31877e9dd51828bcbd12fd8d1e158ce2b5b9543c993d6b",
+      "arabic_character_count": 1389,
+      "reader_pages": [
+        3400,
+        3401
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/3400",
+        "https://usul.ai/t/isaba-fi-tamyiz/3401"
+      ],
+      "cache_key": "sha256/87/875057103453d4e1bd31877e9dd51828bcbd12fd8d1e158ce2b5b9543c993d6b.json",
+      "source_state": "canonical_usul_reader",
+      "source_repairs": [
+        {
+          "repair_id": "khadijah-immediate-9027-reader-ocr-1",
+          "reader_page": 3401,
+          "facsimile_pdf_page": 3619,
+          "observed_reader_text": "وكذا قال الدّار الدّارقطنيّ",
+          "facsimile_text": "وكذا قال الدّارقطنيّ"
+        }
+      ]
+    },
+    {
+      "entry_number": 9151,
+      "name": "Waraqa ibn Nawfal",
+      "relationship": "earliest-belief",
+      "first_reader_page": 3438,
+      "reason": "Khadijah's cousin and principal witness-interpreter in the first-revelation account.",
+      "arabic_text_sha256": "1aa9d30d613fcccbe9d6c42e5ab794daf02c096c1723c14e739eace912b341f5",
+      "arabic_character_count": 5160,
+      "reader_pages": [
+        3438,
+        3439,
+        3440,
+        3441
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/3438",
+        "https://usul.ai/t/isaba-fi-tamyiz/3439",
+        "https://usul.ai/t/isaba-fi-tamyiz/3440",
+        "https://usul.ai/t/isaba-fi-tamyiz/3441"
+      ],
+      "cache_key": "sha256/1a/1aa9d30d613fcccbe9d6c42e5ab794daf02c096c1723c14e739eace912b341f5.json",
+      "source_state": "canonical_usul_reader",
+      "source_repairs": []
+    },
+    {
+      "entry_number": 10182,
+      "name": "Abu al-As ibn al-Rabi",
+      "relationship": "children-and-prior-household",
+      "first_reader_page": 3738,
+      "reason": "Khadijah's nephew and Zaynab's husband; his entry preserves the necklace and household continuity after Khadijah's death.",
+      "arabic_text_sha256": "6a3bf07b61e0849111d9313e9391dea3118f698c2b1d51a76c563dc6dec38ba3",
+      "arabic_character_count": 5263,
+      "reader_pages": [
+        3738,
+        3739,
+        3740,
+        3741
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/3738",
+        "https://usul.ai/t/isaba-fi-tamyiz/3739",
+        "https://usul.ai/t/isaba-fi-tamyiz/3740",
+        "https://usul.ai/t/isaba-fi-tamyiz/3741"
+      ],
+      "cache_key": "sha256/6a/6a3bf07b61e0849111d9313e9391dea3118f698c2b1d51a76c563dc6dec38ba3.json",
+      "source_state": "canonical_usul_reader",
+      "source_repairs": []
+    }
+  ]
+}

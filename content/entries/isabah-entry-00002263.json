@@ -1,0 +1,227 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00002263",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 2263,
+  "title": {
+    "english": "Khuzayma ibn Hakim al-Sulami «4»: al-Bahzi. He is also said to be Ibn Thabit.",
+    "arabic_observed": "خزيمة بن حكيم السلميّ «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00002263-segment-0001",
+      "volume": 2,
+      "reader_page": 933,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/933",
+      "reader_pages": [
+        933,
+        934
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/933",
+        "https://usul.ai/t/isaba-fi-tamyiz/934"
+      ],
+      "source_unit_id": "isabah-usul-4CPCkl83K7:entry:2263:317d73fe889dff70",
+      "arabic": "٢٢٦٣- خزيمة بن حكيم السلميّ «٤»\n: البهزي. ويقال ابن ثابت.\nذكره ابن شاهين وغيره، وذكر ابن مندة أنه كان صهر خديجة أم المؤمنين.\nوروى ابن مردويه في «التفسير» من طريق أبي عمران الجوني. عن ابن جريج، عن عطاء، عن جابر، أنّ خزيمة بن ثابت- وليس بالأنصاريّ- سأل النبي ﷺ عن البلد الأمين، فقال: «مكّة» .\nورواه الطّبرانيّ في «الأوسط» من هذا الوجه مطوّلا جدا، وأوله أنه كان في عير لخديجة مع النبيّ ﷺ، فقال له: يا محمد، إنّي أرى فيك خصالا، وأشهد أنك النبي الّذي يخرج بتهامة، وقد آمنت بك، فإذا سمعت بخروجك أتيتك، فأبطأ عن النبي ﷺ إلى يوم الفتح فأتاه. فلما رآه قال: «مرحبا بالمهاجر الأوّل..» . الحديث.\nوقال: لم يروه عن ابن جريج إلا أبو عمران.\nقال أبو موسى: رواه أبو معشر، وعبيد بن حكيم، عن ابن جريج، عن الزهري مرسلا، لكن قال خزيمة بن حكيم السلمي.\nوكذا سماه ابن شاهين من طريق يزيد بن عياض، عن الزهري، قال: كان خزيمة بن حكم يأتي خديجة في كل عام، وكانت بينهما قرابة، فأتاها فبعثته مع النبي ﷺ ... فذكره مطوّلا في ورقتين. وفيه غريب كثير، وإسناده ضعيف جدا مع انقطاعه.\nورويناه في «تاريخ» ابن عساكر من طريق عبيد بن حكيم، عن ابن خريج مطوّلا\n(١) سقط من أ.\n(٢) أسد الغابة ت (١٤٥١)، الاستيعاب ت (٦٦٩) .\n(٣) في أ: ولبان أبا عمر.\n(٤) أسد الغابة ت (١٤٥٢) .\nكذلك. وروى عن منصور بن المعتمر، عن قبيصة عن خزيمة بن حكيم أيضا.",
+      "english": "2263—Khuzayma ibn Hakim al-Sulami «4»: al-Bahzi. He is also said to be Ibn Thabit.\n\nIbn Shahin and others mentioned him, and Ibn Manda stated that he was related by marriage to Khadija, Mother of the Believers.\n\nIbn Mardawayh narrated in al-Tafsir, by way of Abu Imran al-Jawni, from Ibn Jurayj, from Ata, from Jabir, that Khuzayma ibn Thabit—not the Ansari—asked the Prophet ﷺ about “the secure city,” and he replied, “Mecca.”\n\nAl-Tabarani narrated it in al-Awsat through this same route in a very lengthy form. It begins by stating that he was in a caravan belonging to Khadija with the Prophet ﷺ, and he said to him, “O Muhammad, I see qualities in you, and I bear witness that you are the Prophet who will arise in Tihama. I have believed in you, and when I hear that you have come forth, I shall come to you.” He delayed coming to the Prophet ﷺ until the Day of the Conquest, when he came to him. When he saw him, he said, “Welcome to the first emigrant . . .” The hadith.\n\nHe said, “No one narrated it from Ibn Jurayj except Abu Imran.”\n\nAbu Musa said, “Abu Mashar and Ubayd ibn Hakim narrated it from Ibn Jurayj, from al-Zuhri, as a mursal report; however, they called him Khuzayma ibn Hakim al-Sulami.”\n\nIbn Shahin likewise named him thus, by way of Yazid ibn Iyad, from al-Zuhri, who said, “Khuzayma ibn Hakam used to visit Khadija every year, and there was kinship between them. He came to her, and she sent him with the Prophet ﷺ . . .” He related it at length over two folios. It contains much that is unusual, and its isnad is extremely weak, in addition to being interrupted.\n\nWe also transmitted it in Ibn Asakir’s Tarikh by way of Ubayd ibn Hakim, from Ibn Khurayj, at similar length.\n\n(1) Omitted from A.\n\n(2) Asad al-Ghaba, entry (1451); al-Istiab, entry (669).\n\n(3) In A: “wa-laban Aba Umar.”\n\n(4) Asad al-Ghaba, entry (1452).\n\nIbn Asakir also narrated from Mansur ibn al-Mutamir, from Qabisa, from Khuzayma ibn Hakim.",
+      "arabic_sha256": "317d73fe889dff70fc982f2ac929e8e975fe792307d5695f9623d2164afb6da7",
+      "english_sha256": "5f191d627c69a508cc5f324174c794ad3c2c322cfa80966a559a0095734fee80",
+      "machine_state": "machine_adjudicated_needs_attention"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خزيمة بن حكيم السلمي",
+      "english": "Khuzayma ibn Hakim al-Sulami",
+      "kind": "person"
+    },
+    {
+      "arabic": "البهزي",
+      "english": "al-Bahzi",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن ثابت",
+      "english": "Ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن شاهين",
+      "english": "Ibn Shahin",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة أم المؤمنين",
+      "english": "Khadija, Mother of the Believers",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مردويه",
+      "english": "Ibn Mardawayh",
+      "kind": "person"
+    },
+    {
+      "arabic": "التفسير",
+      "english": "al-Tafsir",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عمران الجوني",
+      "english": "Abu Imran al-Jawni",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن جريج",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاء",
+      "english": "Ata",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر",
+      "english": "Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "خزيمة بن ثابت",
+      "english": "Khuzayma ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصاري",
+      "english": "the Ansari",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأوسط",
+      "english": "al-Awsat",
+      "kind": "work"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "تهامة",
+      "english": "Tihama",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو معشر",
+      "english": "Abu Mashar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد بن حكيم",
+      "english": "Ubayd ibn Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن عياض",
+      "english": "Yazid ibn Iyad",
+      "kind": "person"
+    },
+    {
+      "arabic": "خزيمة بن حكم",
+      "english": "Khuzayma ibn Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "تاريخ ابن عساكر",
+      "english": "Ibn Asakir’s Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن عساكر",
+      "english": "Ibn Asakir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن خريج",
+      "english": "Ibn Khurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Asad al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Istiab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "منصور بن المعتمر",
+      "english": "Mansur ibn al-Mutamir",
+      "kind": "person"
+    },
+    {
+      "arabic": "قبيصة",
+      "english": "Qabisa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "location": "Footnote (3)",
+      "issue": "The witness reading “ولبان أبا عمر” is syntactically and contextually unclear, and no collateral evidence was supplied to resolve or emend it.",
+      "best_rendering": "In A: “wa-laban Aba Umar.”",
+      "human_question": "What underlying text or referenced edition does the siglum A preserve here?",
+      "source_unit_id": "isabah-usul-4CPCkl83K7:entry:2263:317d73fe889dff70"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.cohort-entry-importer.v1",
+    "cohort_id": "khadijah-immediate",
+    "source_manifest_sha256": "00a9848a8af2fc6855f0b340a5b7605e66a851d88cf2dc98af6a67ad246988a5",
+    "source_sha256": "317d73fe889dff70fc982f2ac929e8e975fe792307d5695f9623d2164afb6da7",
+    "adjudication_prompt_sha256": "3574c1d3e3e4626bfae63a7015e755fe886f34ca6c0ae517a5508f11b9861d2d",
+    "source_repairs": []
+  }
+}

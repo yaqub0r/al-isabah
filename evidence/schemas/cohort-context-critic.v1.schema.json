@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object", "additionalProperties": false, "required": ["items"],
+  "properties": {"items": {"type": "array", "items": {
+    "type": "object", "additionalProperties": false, "required": ["result_id", "verdict", "issues"],
+    "properties": {
+      "result_id": {"type": "string"},
+      "verdict": {"enum": ["pass", "revise", "witness_required"]},
+      "issues": {"type": "array", "items": {"type": "object", "additionalProperties": false,
+        "required": ["severity", "category", "location", "explanation", "suggested_fix", "witness_recommended"],
+        "properties": {
+          "severity": {"enum": ["minor", "major"]},
+          "category": {"enum": ["omission", "addition", "meaning", "name", "number", "structure", "quotation", "poetry", "footnote", "ambiguity", "style"]},
+          "location": {"type": "string"}, "explanation": {"type": "string"}, "suggested_fix": {"type": "string"}, "witness_recommended": {"type": "boolean"}
+        }
+      }}
+    }
+  }}}
+}

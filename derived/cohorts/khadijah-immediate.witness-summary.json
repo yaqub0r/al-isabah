@@ -1,0 +1,49 @@
+{
+  "schema": "al-isabah.cohort-witness-summary.v1",
+  "cohort_id": "khadijah-immediate",
+  "entries": [
+    {
+      "entry_number": 1805,
+      "concern_count": 2,
+      "urdu_candidates": 4,
+      "collateral_queries": 12,
+      "collateral_states": {
+        "hit": 10,
+        "error": 2
+      },
+      "evidence_sha256": "7225ed75a8bf71a6c09600acdb770b2424447561a9ad8c4bfc23bfa7e33e2c33"
+    },
+    {
+      "entry_number": 2897,
+      "concern_count": 1,
+      "urdu_candidates": 4,
+      "collateral_queries": 12,
+      "collateral_states": {
+        "hit": 12
+      },
+      "evidence_sha256": "340431dfaffb5f39b9e8cbffe2b41ae8e6e8ef3620572916b0819fc2fa5921cb"
+    },
+    {
+      "entry_number": 7284,
+      "concern_count": 1,
+      "urdu_candidates": 4,
+      "collateral_queries": 12,
+      "collateral_states": {
+        "error": 3,
+        "hit": 9
+      },
+      "evidence_sha256": "c356cd63dd272bae40ef28923e8fcc6cbdbbc0d910f7bc644e1e9679b942415d"
+    },
+    {
+      "entry_number": 9151,
+      "concern_count": 1,
+      "urdu_candidates": 4,
+      "collateral_queries": 8,
+      "collateral_states": {
+        "hit": 6,
+        "error": 2
+      },
+      "evidence_sha256": "3294d660225082da0e12427328f7aa94354f82f9c4b9a27dbb5ed951cddb34eb"
+    }
+  ]
+}

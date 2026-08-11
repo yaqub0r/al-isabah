@@ -1,0 +1,10 @@
+{
+  "schema": "al-isabah.cohort-import-report.v1",
+  "cohort_id": "khadijah-immediate",
+  "entries": 15,
+  "segments": 15,
+  "unresolved_items": 6,
+  "needs_attention_entries": 6,
+  "source_manifest_sha256": "00a9848a8af2fc6855f0b340a5b7605e66a851d88cf2dc98af6a67ad246988a5",
+  "pass": true
+}

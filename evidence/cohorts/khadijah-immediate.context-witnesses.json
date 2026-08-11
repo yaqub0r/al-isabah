@@ -1,0 +1,1567 @@
+{
+  "schema": "al-isabah.context-witness-evidence.v1",
+  "cohort_id": "khadijah-immediate",
+  "items": [
+    {
+      "context_id": "reader-2479",
+      "reader_index": 2479,
+      "volume": 5,
+      "queries": [
+        "عسكلان بن عواكن",
+        "شهدت بنا مع الأملاك منا",
+        "فبادوا أجمعين فصرت جلسا"
+      ],
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6MjQ3OQ",
+      "arabic_sha256": "3752cd6ff1b92c7a72e15ca4f6c0a001b947c7a90705a7a2fb68cc6cda4bede0",
+      "critic_issues": [
+        {
+          "severity": "major",
+          "category": "poetry",
+          "location": "First poem, especially “شهدت بنا مع الأملاك منا” and “لا أبوح إلى الخلايا”",
+          "explanation": "These Arabic readings are syntactically and lexically uncertain and may be textually damaged. The proposed lines supply confident meanings—“I witnessed among us kings…” and “unable to speak to those in the chambers”—that are not securely established by the transmitted wording.",
+          "suggested_fix": "Consult another edition or manuscript witness for these two lines before fixing the translation; meanwhile mark the uncertain readings rather than silently resolving them.",
+          "witness_recommended": true
+        }
+      ],
+      "urdu": {
+        "artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/urdu_witness_v1/volume_05.translation-units.jsonl",
+        "artifact_sha256": "ab6cecf03758737164a09cda24ed9fb81198fc0df3601bc49f4f233b5c51262e",
+        "candidates": [
+          {
+            "scan_page": 183,
+            "score": 47.6176,
+            "expected_scan_page": null,
+            "distance_from_expected": null,
+            "selection_signals": [
+              "arabic_token_overlap"
+            ],
+            "matched_names": [],
+            "matched_headings": [],
+            "matched_entry_numbers": [],
+            "matched_tokens": [
+              "فقلت",
+              "يسالني",
+              "حتي",
+              "فقال",
+              "ابا",
+              "عبد",
+              "فلا",
+              "انا",
+              "الا",
+              "لا",
+              "يا",
+              "لي",
+              "بن"
+            ],
+            "text_sha256": "9fcd3845403ea00eff81d3db9def247acc35375c3cf90552eb68cb88f1d81f01",
+            "quality": {
+              "word_count": 275,
+              "mean_word_confidence": 48.78,
+              "low_confidence_word_count": 142,
+              "low_confidence_ratio": 0.5164
+            },
+            "text": "قیاء ا سکو ڈکوائ کہا جاتا ہت :و ا ںکالڑ6ا ہے۔قذاکی نے جواب دیا کہ یڈ پ لو کفکہدرے ہوا ال\nپارے می الفلاغ کچ ہیں:\nیسالنی معاویة بن ھند\n٠‏ لقیتٌ ابا سلالة عبدالشمس\nفقلت لە: رأیتٌ اباكَ شیا\nکبیر اليِنٌ مضروبًً بطمس\nیقرد بہ افیج عبد سواء\nفقال بل البە لیزیل لیسی _\nھرزہانی کت ہیں: 97 7چ\nبعیل نپ خز:ائی نے\" '' شا رالشممراء نی بھم رم یس ا نکا تک روک رت ہوئے ایک ات 1ری ےرک ہیں نلم یی\nایک غلام فلاخ کے لے ارات اس نے اس فلا مک نام معلو مکرنے کے لیے ا کا تاج بکیاء اود جب مہ ایک لوم کے پا پ چاو\nان پوں نے ااس کے نا مکی بات در یاف تکیاء نے لگا:\n۱ أنا القلاخ جئت أبغی مقسما\nاأقسمت لا اسام حتی یساما\n٠‏ ابویشی ال می نے القلا غکوقی کےضمہ لام اورغ کےتخفیف کے سساتککھاء طض کیا ہے این نو نے بھی :س6\nطبط با نکیا ےت ہم اس کے اور الا رخ بین زان السحد کی کے درمیان فرق میا نکیا ےہ ای الک رک ی٤کنیت‏ الیٹراش ہے ال\nالک کے پارے میں این ماکولاف مات ہی ںکہ یسل نے ا کا ؤکرکا سے ٹائی الذکرخوامی کے دورکامشپورش رکز ا ہے۔\nسکپتا ہوں: تا ہوں: گی کدف ایک خ :ال رمانے انا\" تی رفس نو رخ مرک نام بھی کر\n\nکیاے۔\nٰ اب‌تاف کے بعدیاء\n2۵ قیسان بن سفیان\nٰ انا دراک حا ہے انا دن شہادت دائ ہوئ۔\n)72 قیس بن بجرہ*\n\nاعم کے:ءرے جانے جاے ہیں ریا ندال ا ھی ےن اع و زار ےا مبلا\n\nری 8ل الاءکمال یف أسد الغابہء تجرید (۱۸/۳) ۰ معجم الشعراء",
+            "pdf": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/urdu_witness_v1/volume_05.pdf"
+          },
+          {
+            "scan_page": 322,
+            "score": 38.648,
+            "expected_scan_page": null,
+            "distance_from_expected": null,
+            "selection_signals": [
+              "arabic_token_overlap"
+            ],
+            "matched_names": [],
+            "matched_headings": [],
+            "matched_entry_numbers": [],
+            "matched_tokens": [
+              "وهل",
+              "عوف",
+              "قد",
+              "مع",
+              "هد",
+              "رب",
+              "الا",
+              "الي",
+              "ابي",
+              "لک",
+              "ما",
+              "او",
+              "يا",
+              "لي",
+              "بن"
+            ],
+            "text_sha256": "7ad5a3d93213c0a9a291b83d2b3ea051189196badaf1ef5772245c392d14b977",
+            "quality": {
+              "word_count": 532,
+              "mean_word_confidence": 46.32,
+              "low_confidence_word_count": 272,
+              "low_confidence_ratio": 0.5113
+            },
+            "text": "الا ھلظافاھ سو صریھر سعجوت۔۔\n\nعائذ یش اختقمار کے ساتیل‌ لکیا ہے۔ مع فی کی جلییس وال نس میں بطر 7 ماڑیءبحوالہابویییرہمزدئی ہے مالک مک نعوف اسلام\n\nلانے کے بعد ویش نی کے پا ںآ ۓ دہ ہوازن کے ریس تھے انبوں نے شع رپ ھاء جی کہ پی ےگزر کا ہے اسی موم میس\n۱ ذکرکاء ضا کیا آ پ کے لس ے بھلا یکا با کیا اوداے علہ پنایا۔\n\nول کا قول ہے: مالک می نعوف کے اھ اشعار ہیں ءا ین راڑکی ت ےکھا: شی میں وارہونھم کیم ےٹ کھم\n\nنسارکیکاعبادت مانتھاءابتا ریش جب زش تج ہوانا نک بنکوف وہل ف روش ہد ےتذاٹھی کے نام سے جانا ینا بانے لگا۔\n\nبیا نکیاجا تا ےکمان کے بارے می ںکھاجا جا ہے :ما تو س ‏ تک\n\n(5) مالك بن عوف\n\n۱ ئ بک ای سال تو فک وا ما کی طرف ارہز کاہے۔ ا وھانے ا کیا ۱\n\n۳ ( ے2٤‏ مالك بن عوف جشٛمی\n\nبٹوبی نے بط لی امواجھ ز پیرگیاء توالہ ما تک بن عوغ لف ل کیا ےء پچ رعدبیٹ 000 جوا کے ماریے مین\n\nٰ مروف ےک دہ ما تک مین صلہ ہؤں بات آ ےآ ےکی وی بھی ار الی گرا۶ مگوالہابواعویل گناہ کیا\nجرشتڈگ رت\n\nْ 227| مالك بن ابی عیزارٴ؟\n\nےھ : +۰ پ رتو ہز\n\nحدبیٹ عائ بن سی ہج رک یس ا نکا ذکہ ہےء ای رح اسے این مندہ نے لکیا ہے۔ عائذ بن سعیدکی سوائ یس الن\nکے ال ا نکا کیل ء ہا ابر پیم لی کے پا رب حدبیث یٹس ا نکا ذکر ہے :یکن فرماتے ہیں : ما نک بن ای عیزاروءالسی سند\n\nسے ہیس میس تبول رادی ہے الہ ان بین معر ری فر مانے ٹیںء بھم رسول ارڈ نر سے ا سس وفندر یس۷ ےۓ شیا اک من مفیان\n١‏ اوراہنع ڈکیکیرکلا یی سے ملا تا ت ہوثی ان دوفو لکواجازت ٹین دکہا: ما لک بن ای گیزارء جووفد کے ایک رگن ت یاوفد کے اک فرد\n\nُ تھے وس کول ا گیا ےہ جب تم رسول الڈ نأ کے اس پانچنا تق فلاں فلاں با تکہناءانہوں تن ےکہا: میں لقن سے زیادہ اچاز کا\n\nبی کم ٭\n\n: اح ہوںء اور پھر ما لک نے پأوانی بلن دکہا :الد کے رسوگل !جح رکواجازت دتھ _آ پ نے می اجازت دے دگء ء چپ کم نیہاں\n\n٠‏ دہاں علق بن علا کو مو جودپایامگلس بی ش کی ما کین گے 2 ۳ئ\n۱ کھڑڑے ہو گے اور بات ھی اک نے گے مھیراپاپنم پت بائن ہو ءاپٹی بات کے تم ہون ےکک یہاں ٹیٹھوق مال ک کے گے الام\nشمر والو ںکا ایک ز مات کآآپ نے اور ہوا نکا نیک می کک مقا بل ہکیاءنذ انہوں نے جھ کر نات اک لیا او رآ پ معزوررے۔\nرسول اون نے فرمایا:”نفیلہ لی حفیرار ہکا فیملہ ےہ نے شک جع راللد ک ےآ ڑادکردولوگک ہیںء اسلام لائۓے اورننہوں نے\nاونوں کےکان چھیدےء راو یکا بیان ے ضرم اوننڈل کےکائن بچھاڑ نے دک سک ہیں بیہاں ت ککہ جب الد کے رسو لٹا کے\nکیچ ہو ےشکر نے اان لوکوں تم لہکی قد ہین لیے گے نے ءاش سے1 سوات گیا۔ ایراڈیم کے ہی کہ جا نکی عات کے\n\n. گل اسد الغابہ ز٤٢٦٦)‏ تجرید )٦۷/۲(‏",
+            "pdf": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/urdu_witness_v1/volume_05.pdf"
+          },
+          {
+            "scan_page": 444,
+            "score": 37.0673,
+            "expected_scan_page": null,
+            "distance_from_expected": null,
+            "selection_signals": [
+              "arabic_token_overlap"
+            ],
+            "matched_names": [],
+            "matched_headings": [],
+            "matched_entry_numbers": [],
+            "matched_tokens": [
+              "انک",
+              "الاسلام",
+              "علي",
+              "بنا",
+              "کان",
+              "رب",
+              "الي",
+              "لا",
+              "لک",
+              "ما",
+              "او",
+              "يا",
+              "لي",
+              "بن"
+            ],
+            "text_sha256": "1e9ed24e4065356aa4d6c595a376cb4ff015eaac9572bdc3b17d5843dc865f32",
+            "quality": {
+              "word_count": 422,
+              "mean_word_confidence": 49.91,
+              "low_confidence_word_count": 209,
+              "low_confidence_ratio": 0.4953
+            },
+            "text": "':\n:\n.\n\nاہ یت -۔ ھا تح\n\nا ن کا پت وتدکرہ النع کے وال دن بنا یوہپ کے عالات یںگزرا ہے۔ اور بک بخاری وسلم یس ایک اورحد یٹ\nبھی ےجنس میس ابوطال کی وناج کاواترے گا\n\nانام روابات سے مصعب ز گی کے تو لک ت دید ہوٹی ےےکہانہوں ےکسا ئن پراھای ےک مب اوران و\n207 کہ کےم وج لمران ہوۓ تے۔ ای طر رح او ا حمنصکریی نے بھی ان کے ا سقو لکی تر دی دی سے\n\nسیب امک نگ موک میس بھی ش بک تے۔ا نکی وفات کے تلق بج ےکوکی رت یج تل ی۔\n\nسیب بن اہی السائب*_\nنب : صیقب :رع الی الساخب زی نبدالٹہبن عابد بن عم رب نپخزوم ۔ اقب :ری بھردئی ۔ سا کب الن کے بھال یکا نام ہے۔\nز بن پکارانع کت ذکرہ می ابوٹنشر ےل‌ لکرتے ہی ںکہ بی لمان ہوسگئے تے اور نی خللقام کے سا تع ججرر تک حد ید کے متقام\n\n۱ سے۔اورال نکا ایک یا پر الند ۵‌ىۓؤ9 00\n\nاایلوکی نے ذمل میس ال نکا تک کیا ےاورمائل بن سلیمان سے لکیا ےکا ننکا کو سور وافطاد یا کفیرٹ\nتنا ےک ہنی انلم نے ہنوکنانہ کےا ای پیل کےخلاف فو گی دستہ روات کیا اور یتب ب نجرد ال سکاککمان مرف مایا۔ پچھورھےکک\nاں قاف لک یکوئیخر 7ئ چنا نیہ مانقوں نے بپافواواڑاد یکردوسب مارے گے اس ٹہ سور؟ عادیات نازل ہو اظوالمٰدیٰت\n\nکی سے ۱\n\nابس کے بعد بین\nمشرح اشعری*\nبقول بفری: رام ہار ول نے صحاہہریس ان کا جک ہکیا سے اوران الی ام اور این سن جن وخیرہ نے سم جن\nدہرام ےھر لت نز کیاک نیل اشعری جک یضر کی نی ہیں انہوں نے اپے وال شرع کے بارے می بے تا اک مصرے\nوال رای تھے اور انہوں نے ناش نکیا فک رب کر کے ال نکو دن نکر دبا اددفرما کیہ ٹیش نے بی خللق کو ای ےکرتے ہوئۓ دریکھا\nہے لا ار سک سند می ئن سلیمان بن صسمول راو اتچائی یف ہیں۔\n\nگل بخاری کتاب التفسیر باب ما کان للنبی والذین امنوا.... الخ 4 (الحدیث: )٦٦٤٤‏ باب فإ انک لا تھدی من احبب )ا\n\n(الحدیٹ: )٦۷۷۲‏ مسلم کتاب الایمان باب الدلیل علی صحۃ الاسلام ... الخ (الحدیث: ۳۹) ۱\n\nگل اسد الغابہ (ت: )۹٤٤‏ استیعاب (ت: )۲٣٢۷‏ تجرید (۷۷/۲) تل اسد الفابہ (ت: )٦۹۲۳‏ تجرید (۷۷/۲) _\n\nلے سورة العادیات الاأیۃ پٹ اسد الغابہ (ت: )٦۹۲٤‏ استیعاب (ت: ۲۷۸۱) تجرید (۷۸/۲)\n\nتاریخ کببر )6٤/۸(‏ گن احاد والیٹانی )60۹/٤(‏ گن معجم الکبیر (الحدیٹ: )۷٦٦١/٢١‏ مسند ہزار (الحدیث: ۲۸۵)\nمجمع الزوائد (الحدیث: )۱٦۸/٥‏ جامع المسانید (۳۲۱/۱۱)",
+            "pdf": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/urdu_witness_v1/volume_05.pdf"
+          },
+          {
+            "scan_page": 379,
+            "score": 32.4574,
+            "expected_scan_page": null,
+            "distance_from_expected": null,
+            "selection_signals": [
+              "arabic_token_overlap"
+            ],
+            "matched_names": [],
+            "matched_headings": [],
+            "matched_entry_numbers": [],
+            "matched_tokens": [
+              "صم",
+              "قد",
+              "هد",
+              "انا",
+              "کان",
+              "له",
+              "رب",
+              "لک",
+              "ما",
+              "او",
+              "يا",
+              "لي",
+              "بن"
+            ],
+            "text_sha256": "8137204b316690abfccc186dc85ffe350a59ee85b95852200c4f9e63d0490a2e",
+            "quality": {
+              "word_count": 407,
+              "mean_word_confidence": 44.96,
+              "low_confidence_word_count": 232,
+              "low_confidence_ratio": 0.57
+            },
+            "text": "022 تا ا تا انا 2ودیصھصر ھی ''\n\nدوفو لک مخاللش کی ے۔\n\nگی اھ ہش رکز ہد ممرا تی ید نے یا ے یں\nنے الوم نکیمر سے انہوں نے اپ داللد ےت کیا ے_ ْ\nاسےطبرا لی وی نے دوسرے رشن سے بحوالہ قد أش کیا سے فر ماے یں :وا لنفر بن الس انہوں نے اہیۓ والر .\n\" 0ھ 00 بوالرابوگرئن الس ءانہویں ن کون رک سے .مہو نے غان\nےش کیاہے ٠اس‏ یس ےکا کین الس نے فا :او میں خپان سے طاء بی سب زیادۃو یش بے عحد ی ثکاش روح حصہز ہر ول یڑ\nکا جات ے دی تا موک ہا ےق ےد تک ورس ولچ ۱\n۸ے محمودین پیٹ حا ض۶\n\nابچ را بن ام ریس بن زی بن عداشنل انار اڑی ءا - .امام بفاری ویج کاقول ے :انیس شرف صوابیت\nعاصل ہے پھر بط رلقی عام من عم ین قادہ ان کے جوا لے س ےن لکیا ہے ہف ماتے ہیں: نیس دن حطرت سجد بن موا پاچ کا\nانال ہوا تا پ نے انی جلدری اک یکہہمارے جوتے تجوز جن سے ٹوٹ گے ال سے ما ہرہوتا ‏ ےک دہ اس یس حاضر ےہ ریکھی\nاخقالی ےک رانچی مس اف لکیا ہہ ہمارے جونوں سے مر گی ای موم جودوگیں سو شی کر\nانی سے رت سعد بن معاڈ اہن کا نما نراان جاک ۱\n\nیپ 0و2 مھ بن اححاق ا نکی عد ٹا لک ك0 باون کوال۔\nمود بن لہ یٹ لکیا ہے ہفرماتے ہیں: :ہمارے پا نیکم توشر ما کی نا\nو فرما: ”ان دورکھتو ںکوآپےگھروں می پڑ کرو“ نی کی دوینیس اورمخرب کے بعد دیضییں۔ ۱\n\n۱ راز ا و کرت ای کو تا ے ےی رف کرد ۱\nلیر ہیں ۔کی ونود بین رج ولبیر کے بے یں ان نا کے داداکی طرف ا نکی ہت ہہ اس جس پر مر بی\nامن لیر اشھلی ہیں ء اوس تل سے ہیں ادرتودبن رب خز ری ہیں۔\n\nاع حباان ولچ ن ےجود بین لبی رکا جا لین یں ذک رکیا ہے۔فرماتے ہیں: 0 صم یں\nنے کعابہ ٹوا ٹس ان کا ذک کیا ہے کبونکہ اکٹ دبدارحاصل ہے امی رح فمایا: کا قول ‏ ےکہاسل دجر سے عحابہ نان ش\nا ن کا ذکر ےکرائیل دیدارحاصل ےفر اتے یں :ان ںا 2 ہے یز ہی کی ےگا کان\nکی دلد وھ من مھ گی ہیں\n\nارول سد الغابہ (۴۷۷۳) استیعاب (۲۳۷۰) تجرید )٥٦/٢(‏ للا التاریخ ایر ۷۱|\nگل مسند احمد )٦٢٤۷/۵(‏ گل استیعاب )٦٥٤٤/٣(‏ ٰ",
+            "pdf": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/urdu_witness_v1/volume_05.pdf"
+          }
+        ]
+      },
+      "collateral_arabic": [
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_al_athir_usd_al_ghaba_v1",
+          "witness_role": "collateral_work",
+          "title": "Usd al-Ghaba fi Ma'rifat al-Sahaba",
+          "author": "Ibn al-Athir al-Jazari",
+          "edition": "Usul turath:1110",
+          "book_id": "e5j6lo7201j98j5cnn750wc6",
+          "version_id": "pRzuFotC79",
+          "source_and_version": "turath:1110",
+          "facsimile_url": "https://assets.usul.ai/pdfs/pRzuFotC79.pdf",
+          "query": "عسكلان بن عواكن",
+          "endpoint": "https://api.usul.ai/search/content?q=%D8%B9%D8%B3%D9%83%D9%84%D8%A7%D9%86+%D8%A8%D9%86+%D8%B9%D9%88%D8%A7%D9%83%D9%86&bookId=e5j6lo7201j98j5cnn750wc6&versionId=pRzuFotC79&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "error",
+          "http_status": 500,
+          "error": "HTTP 500",
+          "authenticated_fallback": null,
+          "reported_total": 0,
+          "hits": []
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_abd_al_barr_istiab_v1",
+          "witness_role": "collateral_work",
+          "title": "al-Isti'ab fi Ma'rifat al-Ashab",
+          "author": "Ibn Abd al-Barr",
+          "edition": "Usul turath:12288",
+          "book_id": "0463IbnCabdBarr.IsticabFiMacrifatAshab",
+          "version_id": "zDYIs6bLxz",
+          "source_and_version": "turath:12288",
+          "facsimile_url": "https://assets.usul.ai/pdfs/zDYIs6bLxz.pdf",
+          "query": "عسكلان بن عواكن",
+          "endpoint": "https://api.usul.ai/search/content?q=%D8%B9%D8%B3%D9%83%D9%84%D8%A7%D9%86+%D8%A8%D9%86+%D8%B9%D9%88%D8%A7%D9%83%D9%86&bookId=0463IbnCabdBarr.IsticabFiMacrifatAshab&versionId=zDYIs6bLxz&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "error",
+          "http_status": 500,
+          "error": "HTTP 500",
+          "authenticated_fallback": null,
+          "reported_total": 0,
+          "hits": []
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_hajar_isabah_dar_hajr_v1",
+          "witness_role": "alternative_edition",
+          "title": "al-Isabah fi Tamyiz al-Sahaba",
+          "author": "Ibn Hajar al-Asqalani",
+          "edition": "Dar Hajr / Markaz Hajr critical text; Usul OpenITI ShamAY0034568-ara3",
+          "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+          "version_id": "-aZ_8_5c6S",
+          "source_and_version": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.ShamAY0034568-ara3",
+          "facsimile_url": "https://usul.ai/t/isaba-fi-tamyiz",
+          "query": "عسكلان بن عواكن",
+          "endpoint": "https://api.usul.ai/search/content?q=%D8%B9%D8%B3%D9%83%D9%84%D8%A7%D9%86+%D8%A8%D9%86+%D8%B9%D9%88%D8%A7%D9%83%D9%86&bookId=0852IbnHajarCasqalani.IsabaFiTamyiz&versionId=-aZ_8_5c6S&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "hit",
+          "reported_total": 1,
+          "hits": [
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5TaGFtQVkwMDM0NTY4LWFyYTM6NzY3Nw",
+              "text": "العين بعدها السين 6460- (ز) عسكلان بن عواكن الحميري. أحد المعمرين كان ممن بشر برسالة النبي صلى الله عليه وسلم ثم أدرك البعثة. وأرسل إلى النبي صلى الله عليه وسلم بشعر يمدحه ويذكر فيه إسلامه ولم يبلغنا أنه هاجر. روى حديثه البلوي، عن عمارة بن زيد، عن عبد الله بن العلاء، عن عبد الرحمن بن حميد بن عبد الرحمن، قال: كان حميد بن عبد الرحمن يقول سمعت أبي يقول سافرت إلى اليمن قبل المبعث بسنة فنزلت على عسكلان بن عواكن الحميري، وكان شيخا كبيرا قد انسىء له في العمر حتى عاد كالفرخ وهو يقول: إذا ما الشيخ صم فلم يكلم ... واودى سمعه الا يدايا فذاك الداء ليس له دواء ... سوى الموت المنطق بالرزايا شهدت بنا مع الاملاك منا ... وادركت المواقف في القضايا فبادوا أجمعين فصرت حلسا ... صريعا لا ابوح إلى الخلايا.",
+              "text_truncated": false,
+              "text_sha256": "1992917ddfe1025af649cfc7d0f899df3301a885a1302a26a6308d146cb36b35",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.ShamAY0034568-ara3",
+                "pages": [
+                  {
+                    "index": 7677,
+                    "page": 180,
+                    "volume": "8"
+                  }
+                ],
+                "chapters": [
+                  142,
+                  145
+                ]
+              }
+            }
+          ],
+          "retrieved_at": "2026-08-11T07:07:38Z"
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_hajar_isabah_dar_jil_v1",
+          "witness_role": "alternative_edition",
+          "title": "al-Isabah fi Tamyiz al-Sahaba",
+          "author": "Ibn Hajar al-Asqalani",
+          "edition": "Ali Muhammad al-Bajawi ed.; Dar al-Jil, first edition, 1412 AH; Usul OpenITI JK000533-ara1",
+          "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+          "version_id": "xAOjIqxYuv",
+          "source_and_version": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1",
+          "facsimile_url": "https://usul.ai/t/isaba-fi-tamyiz",
+          "query": "عسكلان بن عواكن",
+          "endpoint": "https://api.usul.ai/search/content?q=%D8%B9%D8%B3%D9%83%D9%84%D8%A7%D9%86+%D8%A8%D9%86+%D8%B9%D9%88%D8%A7%D9%83%D9%86&bookId=0852IbnHajarCasqalani.IsabaFiTamyiz&versionId=xAOjIqxYuv&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "hit",
+          "reported_total": 2,
+          "hits": [
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5KSzAwMDUzMy1hcmExOjI2Mjg",
+              "text": "(العين بعدها السين) 6432 عسكلان بن عواكن الحميري أحد المعمرين كان ممن بشر برسالة النبي صلى",
+              "text_truncated": false,
+              "text_sha256": "8a0d8040218ad08c18881ae276764e65b6d0341bd39316ea0d5f8f153c0c3224",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1",
+                "pages": [
+                  {
+                    "index": 2628,
+                    "page": 126,
+                    "volume": "5"
+                  }
+                ],
+                "chapters": [
+                  649,
+                  650,
+                  664,
+                  671
+                ]
+              }
+            },
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5KSzAwMDUzMy1hcmExOjI2Mjk",
+              "text": "الله عليه وسلم ثم أدرك البعثة وأرسل إلى النبي صلى الله عليه وسلم بشعر يمدحه ويذكر فيه إسلامه ولم يبلغنا انه هاجر روى حديثه البلوي عن عمارة بن زيد عن عبد الله بن العلاء عن عبد الرحمن بن حميد بن عبد الرحمن قال كان حميد بن عبد الرحمن يقول سمعت أبي يقول سافرت إلى اليمن قبل المبعث بسنة فنزلت على عسكلان بن عواكن الحميري وكان شيخا كبيرا قد انسىء له في العمر حتى عاد كالفرخ وهو يقول إذا ما الشيخ صم فلم يكلم\tواودى سمعه الا يدايا\tفذاك الداء ليس له دواء\tسوى الموت المنطق بالرزايا\tشهدت بنا مع الاملاك منا\tوادركت المواقف في القضايا\tفبادوا أجمعين فصرت حلسا\tصريعا لا ابوح إلى الخلايا  قال عبد الرحمن وكنت إذا قدمت نزلت عليه فلا يزال يسألني عن مكة واحوالها وهل ظهر فيها من خالف دينهم أو لا حتى قدمت القدمة التي بعث النبي صلى الله عليه وسلم وانا غائب فيها فنزلت عليه فقعد وقد شد عصابة على عينيه فقال لي انتسب يا أخا قريش فقلت انا عبد الرحمن بن عوف بن عبد عوف بن عبد الحارث بن زهرة قال حسبك قال الا أبشرك ببشارة وهي خير لك من التجارة قلت بلى قال اتيتك بالمعجبة وابشرك بالمرغبة ان الله قد بعث في الشهر الأول من قومك نبيا ارتضاه صفيا وانزل عليه كتابا وفيا ينهى عن الأصنام ويدعو إلى الإسلام يأمر بالحق ويفعله وينهى عن الباطل ويبطله وهو من بني هاشم وان قومك لاخواله يا عبد الرحمن وازره وصدقه واحمل اليه هذه الأبيات\tاشهد بالله ذي المعالي\tوفالق الليل والصباح\tانك في السر من قريش\tوابن المفدى من الذباح\tأرسلت تدعو إلى يقين\tترشد للحق والفلاح\tهد كرور السنين ركنى\tعن مكر السير والرواح\tاشهد بالله رب موسى\tانك أرسلت بالبطاح\tفكن شفيعي إلى مليك\tيدعو البرايا إلى الصلاح قال عبد الرحمن فقدمت فلقيت أبا بكر وكان لي خليطا فأخبرته الخبر فقال هذا محمد بن عبد الله بعثه الله إلى خلقه رسولا فأته فأتيته وهو في بيت خديجة فأخبرته فقال اما ان أخا حمير من خواص المؤمنين ورب مؤمن بي ولم يرني ومصدق لي وما شهدني أولئك إخواني حقا أخرجه بن عساكر في تاريخه الكبير من هذا الوجه والبلوي ضعيف وراويه عنه عمر بن مدرك اتهمه يحيى بن معين",
+              "text_truncated": false,
+              "text_sha256": "3fbe6791f17b210a9ff2426f02ea5ac1c6f81dac497a6eb92b0c5fc8f5b69cce",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1",
+                "pages": [
+                  {
+                    "index": 2629,
+                    "page": 127,
+                    "volume": "5"
+                  }
+                ],
+                "chapters": [
+                  649,
+                  650,
+                  664,
+                  671
+                ]
+              }
+            }
+          ],
+          "retrieved_at": "2026-08-11T07:07:38Z"
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_al_athir_usd_al_ghaba_v1",
+          "witness_role": "collateral_work",
+          "title": "Usd al-Ghaba fi Ma'rifat al-Sahaba",
+          "author": "Ibn al-Athir al-Jazari",
+          "edition": "Usul turath:1110",
+          "book_id": "e5j6lo7201j98j5cnn750wc6",
+          "version_id": "pRzuFotC79",
+          "source_and_version": "turath:1110",
+          "facsimile_url": "https://assets.usul.ai/pdfs/pRzuFotC79.pdf",
+          "query": "شهدت بنا مع الأملاك منا",
+          "endpoint": "https://api.usul.ai/search/content?q=%D8%B4%D9%87%D8%AF%D8%AA+%D8%A8%D9%86%D8%A7+%D9%85%D8%B9+%D8%A7%D9%84%D8%A3%D9%85%D9%84%D8%A7%D9%83+%D9%85%D9%86%D8%A7&bookId=e5j6lo7201j98j5cnn750wc6&versionId=pRzuFotC79&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "error",
+          "http_status": 500,
+          "error": "HTTP 500",
+          "authenticated_fallback": null,
+          "reported_total": 0,
+          "hits": []
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_abd_al_barr_istiab_v1",
+          "witness_role": "collateral_work",
+          "title": "al-Isti'ab fi Ma'rifat al-Ashab",
+          "author": "Ibn Abd al-Barr",
+          "edition": "Usul turath:12288",
+          "book_id": "0463IbnCabdBarr.IsticabFiMacrifatAshab",
+          "version_id": "zDYIs6bLxz",
+          "source_and_version": "turath:12288",
+          "facsimile_url": "https://assets.usul.ai/pdfs/zDYIs6bLxz.pdf",
+          "query": "شهدت بنا مع الأملاك منا",
+          "endpoint": "https://api.usul.ai/search/content?q=%D8%B4%D9%87%D8%AF%D8%AA+%D8%A8%D9%86%D8%A7+%D9%85%D8%B9+%D8%A7%D9%84%D8%A3%D9%85%D9%84%D8%A7%D9%83+%D9%85%D9%86%D8%A7&bookId=0463IbnCabdBarr.IsticabFiMacrifatAshab&versionId=zDYIs6bLxz&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "error",
+          "http_status": 500,
+          "error": "HTTP 500",
+          "authenticated_fallback": null,
+          "reported_total": 0,
+          "hits": []
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_hajar_isabah_dar_hajr_v1",
+          "witness_role": "alternative_edition",
+          "title": "al-Isabah fi Tamyiz al-Sahaba",
+          "author": "Ibn Hajar al-Asqalani",
+          "edition": "Dar Hajr / Markaz Hajr critical text; Usul OpenITI ShamAY0034568-ara3",
+          "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+          "version_id": "-aZ_8_5c6S",
+          "source_and_version": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.ShamAY0034568-ara3",
+          "facsimile_url": "https://usul.ai/t/isaba-fi-tamyiz",
+          "query": "شهدت بنا مع الأملاك منا",
+          "endpoint": "https://api.usul.ai/search/content?q=%D8%B4%D9%87%D8%AF%D8%AA+%D8%A8%D9%86%D8%A7+%D9%85%D8%B9+%D8%A7%D9%84%D8%A3%D9%85%D9%84%D8%A7%D9%83+%D9%85%D9%86%D8%A7&bookId=0852IbnHajarCasqalani.IsabaFiTamyiz&versionId=-aZ_8_5c6S&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "hit",
+          "reported_total": 1,
+          "hits": [
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5TaGFtQVkwMDM0NTY4LWFyYTM6NzY3Nw",
+              "text": "العين بعدها السين 6460- (ز) عسكلان بن عواكن الحميري. أحد المعمرين كان ممن بشر برسالة النبي صلى الله عليه وسلم ثم أدرك البعثة. وأرسل إلى النبي صلى الله عليه وسلم بشعر يمدحه ويذكر فيه إسلامه ولم يبلغنا أنه هاجر. روى حديثه البلوي، عن عمارة بن زيد، عن عبد الله بن العلاء، عن عبد الرحمن بن حميد بن عبد الرحمن، قال: كان حميد بن عبد الرحمن يقول سمعت أبي يقول سافرت إلى اليمن قبل المبعث بسنة فنزلت على عسكلان بن عواكن الحميري، وكان شيخا كبيرا قد انسىء له في العمر حتى عاد كالفرخ وهو يقول: إذا ما الشيخ صم فلم يكلم ... واودى سمعه الا يدايا فذاك الداء ليس له دواء ... سوى الموت المنطق بالرزايا شهدت بنا مع الاملاك منا ... وادركت المواقف في القضايا فبادوا أجمعين فصرت حلسا ... صريعا لا ابوح إلى الخلايا.",
+              "text_truncated": false,
+              "text_sha256": "1992917ddfe1025af649cfc7d0f899df3301a885a1302a26a6308d146cb36b35",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.ShamAY0034568-ara3",
+                "pages": [
+                  {
+                    "index": 7677,
+                    "page": 180,
+                    "volume": "8"
+                  }
+                ],
+                "chapters": [
+                  142,
+                  145
+                ]
+              }
+            }
+          ],
+          "retrieved_at": "2026-08-11T07:07:48Z"
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_hajar_isabah_dar_jil_v1",
+          "witness_role": "alternative_edition",
+          "title": "al-Isabah fi Tamyiz al-Sahaba",
+          "author": "Ibn Hajar al-Asqalani",
+          "edition": "Ali Muhammad al-Bajawi ed.; Dar al-Jil, first edition, 1412 AH; Usul OpenITI JK000533-ara1",
+          "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+          "version_id": "xAOjIqxYuv",
+          "source_and_version": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1",
+          "facsimile_url": "https://usul.ai/t/isaba-fi-tamyiz",
+          "query": "شهدت بنا مع الأملاك منا",
+          "endpoint": "https://api.usul.ai/search/content?q=%D8%B4%D9%87%D8%AF%D8%AA+%D8%A8%D9%86%D8%A7+%D9%85%D8%B9+%D8%A7%D9%84%D8%A3%D9%85%D9%84%D8%A7%D9%83+%D9%85%D9%86%D8%A7&bookId=0852IbnHajarCasqalani.IsabaFiTamyiz&versionId=xAOjIqxYuv&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "hit",
+          "reported_total": 1,
+          "hits": [
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5KSzAwMDUzMy1hcmExOjI2Mjk",
+              "text": "الله عليه وسلم ثم أدرك البعثة وأرسل إلى النبي صلى الله عليه وسلم بشعر يمدحه ويذكر فيه إسلامه ولم يبلغنا انه هاجر روى حديثه البلوي عن عمارة بن زيد عن عبد الله بن العلاء عن عبد الرحمن بن حميد بن عبد الرحمن قال كان حميد بن عبد الرحمن يقول سمعت أبي يقول سافرت إلى اليمن قبل المبعث بسنة فنزلت على عسكلان بن عواكن الحميري وكان شيخا كبيرا قد انسىء له في العمر حتى عاد كالفرخ وهو يقول إذا ما الشيخ صم فلم يكلم\tواودى سمعه الا يدايا\tفذاك الداء ليس له دواء\tسوى الموت المنطق بالرزايا\tشهدت بنا مع الاملاك منا\tوادركت المواقف في القضايا\tفبادوا أجمعين فصرت حلسا\tصريعا لا ابوح إلى الخلايا  قال عبد الرحمن وكنت إذا قدمت نزلت عليه فلا يزال يسألني عن مكة واحوالها وهل ظهر فيها من خالف دينهم أو لا حتى قدمت القدمة التي بعث النبي صلى الله عليه وسلم وانا غائب فيها فنزلت عليه فقعد وقد شد عصابة على عينيه فقال لي انتسب يا أخا قريش فقلت انا عبد الرحمن بن عوف بن عبد عوف بن عبد الحارث بن زهرة قال حسبك قال الا أبشرك ببشارة وهي خير لك من التجارة قلت بلى قال اتيتك بالمعجبة وابشرك بالمرغبة ان الله قد بعث في الشهر الأول من قومك نبيا ارتضاه صفيا وانزل عليه كتابا وفيا ينهى عن الأصنام ويدعو إلى الإسلام يأمر بالحق ويفعله وينهى عن الباطل ويبطله وهو من بني هاشم وان قومك لاخواله يا عبد الرحمن وازره وصدقه واحمل اليه هذه الأبيات\tاشهد بالله ذي المعالي\tوفالق الليل والصباح\tانك في السر من قريش\tوابن المفدى من الذباح\tأرسلت تدعو إلى يقين\tترشد للحق والفلاح\tهد كرور السنين ركنى\tعن مكر السير والرواح\tاشهد بالله رب موسى\tانك أرسلت بالبطاح\tفكن شفيعي إلى مليك\tيدعو البرايا إلى الصلاح قال عبد الرحمن فقدمت فلقيت أبا بكر وكان لي خليطا فأخبرته الخبر فقال هذا محمد بن عبد الله بعثه الله إلى خلقه رسولا فأته فأتيته وهو في بيت خديجة فأخبرته فقال اما ان أخا حمير من خواص المؤمنين ورب مؤمن بي ولم يرني ومصدق لي وما شهدني أولئك إخواني حقا أخرجه بن عساكر في تاريخه الكبير من هذا الوجه والبلوي ضعيف وراويه عنه عمر بن مدرك اتهمه يحيى بن معين",
+              "text_truncated": false,
+              "text_sha256": "3fbe6791f17b210a9ff2426f02ea5ac1c6f81dac497a6eb92b0c5fc8f5b69cce",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1",
+                "pages": [
+                  {
+                    "index": 2629,
+                    "page": 127,
+                    "volume": "5"
+                  }
+                ],
+                "chapters": [
+                  649,
+                  650,
+                  664,
+                  671
+                ]
+              }
+            }
+          ],
+          "retrieved_at": "2026-08-11T07:07:48Z"
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_al_athir_usd_al_ghaba_v1",
+          "witness_role": "collateral_work",
+          "title": "Usd al-Ghaba fi Ma'rifat al-Sahaba",
+          "author": "Ibn al-Athir al-Jazari",
+          "edition": "Usul turath:1110",
+          "book_id": "e5j6lo7201j98j5cnn750wc6",
+          "version_id": "pRzuFotC79",
+          "source_and_version": "turath:1110",
+          "facsimile_url": "https://assets.usul.ai/pdfs/pRzuFotC79.pdf",
+          "query": "فبادوا أجمعين فصرت جلسا",
+          "endpoint": "https://api.usul.ai/search/content?q=%D9%81%D8%A8%D8%A7%D8%AF%D9%88%D8%A7+%D8%A3%D8%AC%D9%85%D8%B9%D9%8A%D9%86+%D9%81%D8%B5%D8%B1%D8%AA+%D8%AC%D9%84%D8%B3%D8%A7&bookId=e5j6lo7201j98j5cnn750wc6&versionId=pRzuFotC79&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "error",
+          "http_status": 500,
+          "error": "HTTP 500",
+          "authenticated_fallback": null,
+          "reported_total": 0,
+          "hits": []
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_abd_al_barr_istiab_v1",
+          "witness_role": "collateral_work",
+          "title": "al-Isti'ab fi Ma'rifat al-Ashab",
+          "author": "Ibn Abd al-Barr",
+          "edition": "Usul turath:12288",
+          "book_id": "0463IbnCabdBarr.IsticabFiMacrifatAshab",
+          "version_id": "zDYIs6bLxz",
+          "source_and_version": "turath:12288",
+          "facsimile_url": "https://assets.usul.ai/pdfs/zDYIs6bLxz.pdf",
+          "query": "فبادوا أجمعين فصرت جلسا",
+          "endpoint": "https://api.usul.ai/search/content?q=%D9%81%D8%A8%D8%A7%D8%AF%D9%88%D8%A7+%D8%A3%D8%AC%D9%85%D8%B9%D9%8A%D9%86+%D9%81%D8%B5%D8%B1%D8%AA+%D8%AC%D9%84%D8%B3%D8%A7&bookId=0463IbnCabdBarr.IsticabFiMacrifatAshab&versionId=zDYIs6bLxz&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "error",
+          "http_status": 500,
+          "error": "HTTP 500",
+          "authenticated_fallback": null,
+          "reported_total": 0,
+          "hits": []
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_hajar_isabah_dar_hajr_v1",
+          "witness_role": "alternative_edition",
+          "title": "al-Isabah fi Tamyiz al-Sahaba",
+          "author": "Ibn Hajar al-Asqalani",
+          "edition": "Dar Hajr / Markaz Hajr critical text; Usul OpenITI ShamAY0034568-ara3",
+          "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+          "version_id": "-aZ_8_5c6S",
+          "source_and_version": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.ShamAY0034568-ara3",
+          "facsimile_url": "https://usul.ai/t/isaba-fi-tamyiz",
+          "query": "فبادوا أجمعين فصرت جلسا",
+          "endpoint": "https://api.usul.ai/search/content?q=%D9%81%D8%A8%D8%A7%D8%AF%D9%88%D8%A7+%D8%A3%D8%AC%D9%85%D8%B9%D9%8A%D9%86+%D9%81%D8%B5%D8%B1%D8%AA+%D8%AC%D9%84%D8%B3%D8%A7&bookId=0852IbnHajarCasqalani.IsabaFiTamyiz&versionId=-aZ_8_5c6S&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "error",
+          "http_status": 500,
+          "error": "HTTP 500",
+          "authenticated_fallback": null,
+          "reported_total": 0,
+          "hits": []
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_hajar_isabah_dar_jil_v1",
+          "witness_role": "alternative_edition",
+          "title": "al-Isabah fi Tamyiz al-Sahaba",
+          "author": "Ibn Hajar al-Asqalani",
+          "edition": "Ali Muhammad al-Bajawi ed.; Dar al-Jil, first edition, 1412 AH; Usul OpenITI JK000533-ara1",
+          "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+          "version_id": "xAOjIqxYuv",
+          "source_and_version": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1",
+          "facsimile_url": "https://usul.ai/t/isaba-fi-tamyiz",
+          "query": "فبادوا أجمعين فصرت جلسا",
+          "endpoint": "https://api.usul.ai/search/content?q=%D9%81%D8%A8%D8%A7%D8%AF%D9%88%D8%A7+%D8%A3%D8%AC%D9%85%D8%B9%D9%8A%D9%86+%D9%81%D8%B5%D8%B1%D8%AA+%D8%AC%D9%84%D8%B3%D8%A7&bookId=0852IbnHajarCasqalani.IsabaFiTamyiz&versionId=xAOjIqxYuv&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "error",
+          "http_status": 500,
+          "error": "HTTP 500",
+          "authenticated_fallback": null,
+          "reported_total": 0,
+          "hits": []
+        }
+      ]
+    },
+    {
+      "context_id": "reader-2977",
+      "reader_index": 2977,
+      "volume": 6,
+      "queries": [
+        "محمد بن صيفي",
+        "وصيفي بن أمية يوم بدر",
+        "كان له رفاعة وبه كان يكنى"
+      ],
+      "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6dHVyYXRoOjk3Njc6Mjk3Nw",
+      "arabic_sha256": "b56a5f9be94a3cdb7ae87089a57c0bbbb1b54887e022f0271492bbea51dc674f",
+      "critic_issues": [
+        {
+          "severity": "major",
+          "category": "ambiguity",
+          "location": "Paragraph citing al-Zubayr ibn Bakkar: “and Sayfi ibn Umayya [was killed] on the day of Badr”",
+          "explanation": "The Arabic as supplied reads وصيفي بن أمية يوم بدر and lacks the verb “was killed.” The following sentence strongly supports that reconstruction, but the proposed English is still an editorial emendation rather than a translation of an intact reading.",
+          "suggested_fix": "Check another edition or manuscript for a verb such as قتل. Until verified, retain the restoration in editorial brackets and explicitly identify it as a conjectural completion.",
+          "witness_recommended": true
+        }
+      ],
+      "urdu": {
+        "artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/urdu_witness_v1/volume_06.translation-units.jsonl",
+        "artifact_sha256": "34ea158e855510c90cc4477fe650ce4e283b7084ce152e3b7740a3eccf342ad7",
+        "candidates": [
+          {
+            "scan_page": 460,
+            "score": 50.7299,
+            "expected_scan_page": null,
+            "distance_from_expected": null,
+            "selection_signals": [
+              "arabic_token_overlap"
+            ],
+            "matched_names": [],
+            "matched_headings": [],
+            "matched_entry_numbers": [],
+            "matched_tokens": [
+              "اميه",
+              "الطبقات",
+              "التاريخ",
+              "الجرح",
+              "والتعديل",
+              "الکبري",
+              "له",
+              "الکبير",
+              "الا",
+              "ابن",
+              "بعد",
+              "ابي",
+              "قول",
+              "لا",
+              "او",
+              "اسد"
+            ],
+            "text_sha256": "536628d6f030f921b94c1ff47c03716f8bef7e891c6ef268a3350dc39c101d14",
+            "quality": {
+              "word_count": 426,
+              "mean_word_confidence": 44.51,
+              "low_confidence_word_count": 238,
+              "low_confidence_ratio": 0.5587
+            },
+            "text": "فوللاىسمیب)صعریاکھرسھت٭\n\n65۳۸۴۵۸۰ یحیں بن خلا*؟\n\n: 0000 0 00000صتىّ922<23 ٔ۳\n\nبن راف بن مالک من الا ن الزرقی بقول ابی ھا نکی احعادبیث اسحاقی بن عدا جن الی لک کاب یل نمی بن\nکی بن لا ون این جیہکی سند سے میں کس وان ىہ پہدا ہد تے نیرک پا لائۓ گئے ےآ پ نےعججود چپاردکی اورفرمایا:\nیس ا سکااییا نام رکھو ںگا جوم بن زکرہا ٹا کے بع دی انیس رکھا گیا رپ نے ان کا ام یی رکا مار ےک تو\nعافظصلاع الد بین علائیکاقول ے: جھے ا سک سند ےن لگ ی-\n\nتا ہوں :اب مندونے ا کا کر کیا ےلین م سلا۔ چنا اط بی شبان ن بلالگن جامن اسحاق+ح شی گا\nامن خلاد ہف بایا: جب میرک وللادت ہ وی فو میرے داللد مشھے نل ےکآ ے ...کچھ را لکا نک رکیا۔ اہو رنے وم سے ال نکاس بکنری بتایا\nہ ےس کی اکن ون نے تد یدکی سے جوورست ین\n\nباب یاء کے بعر ڑاء\n\nیزید بن الاصع*\nپیگرو ہکن خی بن ماد یجن حبادہ من الک ء بن عام رین رہن عاھ رن صحصدعہ ۲ای مپقب ہے۔ بزیدکی والدہبرز ویشت\nالیارث الہاالیعطرت ام المو۲ن میمونہ لٹ کی ہن ہیں ۔ بقو لن :ا نکی ول دت ععبد ہیس جہوکی ۔ ان مندہ نے ان\n\nو با بجی ذک کیا ہے۔ ااڈأٛھم فرماتے ہیں: الع کے صھالی ہون ےک با تج نیس ۔ اپٹی خمالےنطرت میمویہ خطخرت عامشہ لاہ\n\nإُ الو ہریرہ سعد بن ان وقاگل موا دب اورابکن عبال تل سے رواجب تر تے ہیں ۔النع ے دروثو ں کنل ےگپراٹر او رعبیرالش رص اج زاوگان\nداد بن الایھمءز جرگ یءاوفزارہ أعسی ,سی رقزانی ءمیمون بن مپران ڈنف رین برقان وغیرہ روای تکرتے ہیں این سنج :\n\nقول ےہ بقول ای نکی: نیک نے الس مکا نا عمبد لکن رکھا۔ ابن سعدفرماتے ہیں : یزیلدبکشرت حد یٹ جیا نگرتے .۱۰۳ھ یا\n۴٣ھ‏ مںفوت ہو ہے بقو لپچ :۰۱ات ٹیس وفات پائی ‏ اق دک یکا مان ہے :ھت( سے سال زندورے۔\nسکپچتا ہوں؟ ا اتک ہےنذ پچ یں ریت اص٥‏ لی ۔ اس ساب سےا نکیا نشی وفات وب ےتترم]\n\n۱ میں (۳۰)سال بعد ہوئی ہوگی-\n۴۳۸۷2۰ یزید بن امیّه الأوٰلی*٭\n\nابنان الدوی۔حضرت ٦ی‏ ابدداقر یی اوران عباس ڑل سے اور ان سے نافع ءز ہرگیء ز یبن اسم روا ٹکرتے\n\nُ ال اسد الغابہ )۵۰۰0٥(‏ استیعاب (۲۷۷۹) تجرید (۱۳۳/۲) ا استبعاب )۱۲۹/٤(‏\nگل الطبقات العکبرٰی )٢٥/٥(‏ التاریخ الکبیر )۲٦۹/٤(‏ الجرح والتعدیل (۱۳۹/۹)\nا گل اد الغابہ (۵۵۲۱) تجریذ )۱۳٣/١(‏ گٌُ الطبقات الکبرٰی )٦۷۹/۷(‏\n\nلہ اسد الغابہ )۵٥٥٥(‏ استیعاب (۲۷۸۷) تجرید )۱۳٣/١(‏ ْ\n\nآگآ[__لیلپ۔پےگ۶للگثثث_ _ . سسسہتہ ہیں ہیا اک",
+            "pdf": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/urdu_witness_v1/volume_06.pdf"
+          },
+          {
+            "scan_page": 481,
+            "score": 49.6021,
+            "expected_scan_page": null,
+            "distance_from_expected": null,
+            "selection_signals": [
+              "arabic_token_overlap"
+            ],
+            "matched_names": [],
+            "matched_headings": [],
+            "matched_entry_numbers": [],
+            "matched_tokens": [
+              "ابيه",
+              "الزبير",
+              "التاريخ",
+              "الجرح",
+              "والتعديل",
+              "محمد",
+              "الکبير",
+              "ابو",
+              "ابن",
+              "ابي",
+              "قول",
+              "لا",
+              "ما",
+              "اسد",
+              "الغابه",
+              "تجريد"
+            ],
+            "text_sha256": "c83f3629e2f9759b05d46ecc95b81974e66f3e6438566dbe0a08d3c3d7f22e28",
+            "quality": {
+              "word_count": 354,
+              "mean_word_confidence": 48.55,
+              "low_confidence_word_count": 178,
+              "low_confidence_ratio": 0.5028
+            },
+            "text": "ا پا شالت اس\n\nیہ کر نے انٹول مر کیا اے دا\nاوھ رنے الع کے نام بی اخلاف ذک رکیا ہے ۔ائن کے تلق تام اقوال مس ےا ایک قول ہے لی ری نیرز“ 0/ ً\nکاقولی ہے جیباکہ پل مان ہواے۔\n\nو ٠۸‏ یسر\nائ نعبرائہءجچھوٹوں یں سے ایک متس نےمعالی ہوے کا دوگ کیاے۔ مین بن مارکا گان نا سےا و\nسے مطابقات گی ہے اس نے سس سے ڈک رک اہ ال سکی ع رین سو( ٣۰٭۳)‏ سمال ہے حافظ ابین عس اکر ولٹ ٹیڈ نے ' ”السا عیات ما\nپر یتین بن ناج ہحوالہائس ک ےک اعاد ٹف لک ہیں ذبی مین م کھت ہیں :ا ککی سن ںنلمبات ہیں۔ میں\nا حر سو تپ\nذکرہوگا_\n\nالیسع بن اٹمغیرہ المخرومی :\n\nچھو ےش پور بی ہیں اکم نے ا نکیا عدیٹ اپنے متدرک می‌أئ لکی ہے جے بط رب اسماعیل بن ابی اویم\n\nعن محمد بن طلحهہ التمیمی عن عبدالرحمٰن بن ابی بکر بن المغیرۃ نف کیا ےک 'رسول اط ازارریش ای ک1 :\n\nکے پاسل ےگ دے جو باادکی خر ےک بھاڈ اناج پل رہ تھ....“۔ (حدیٹ )ینس سے اکن ےکبھھلیا سال ہیںہ می تال\n\n۱ ہیں۔ عالانکہ ابو داد نے ربیل میس ا نکی حد بیث اط رگ الزبیر بن سعید عن الیسع ہ بن العغی پا لک ہےکہ مال بن ول\n\nنے ںول لے اپ ےگ کک شا ت کاب تر :رون می نکشادگی اتا رکروہ رای نے سے الع ڈکور]\n\nرواىت مل عن ابی عن خالد بن ولید صو(ا لا ؤکریا یا ے۔ شع کوعطاء بن الی ربا :ئگ بن سی رین دغیرہ گی روامنا\n\nعاصل ہے۔ ادا تم ال رای ان کے بارے می کے ہیں 77 0\" و\nزگ رکیاے۔\n\n6522 يسَیرٌ ابن العنبس انصاری\n\n٣\n\nسی\n1\n\n7 و سسح مس طت ۱\n×چاے۔ ۱\nو ۰ ۰ 7 خط3 ۱\n2 یُسیر بن یزید انصاری*٭ 113:77 نات تم]۷۵أم۳م۷۷۷۱۸۷۳ ١‏\nتی نے اطخ میں مب محملہ بن اسحاق الہلاخی عن عمرو بن قیس عن ابیہ عن جندہ عن خالدرداا\n\nاول تجرید )٤٢٤/٢١(‏ گل التاریخ الکبیر )٦٢٤/٤(‏ كَّّ الجرح والتعدیل (۳۰۸/۹)\nاسد الغابہ )٢٦٥٥(‏ تجرید )۱٣٤/١(‏ گل اسد الغابہ )۳٦۰/٤(‏ لک استیعاب (۲۸۱)",
+            "pdf": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/urdu_witness_v1/volume_06.pdf"
+          },
+          {
+            "scan_page": 130,
+            "score": 43.6075,
+            "expected_scan_page": null,
+            "distance_from_expected": null,
+            "selection_signals": [
+              "arabic_token_overlap"
+            ],
+            "matched_names": [],
+            "matched_headings": [],
+            "matched_entry_numbers": [],
+            "matched_tokens": [
+              "نظر",
+              "اسلم",
+              "التاريخ",
+              "فلا",
+              "محمد",
+              "الکبير",
+              "الا",
+              "بعد",
+              "ابي",
+              "لا",
+              "ما",
+              "او",
+              "اسد",
+              "الغابه",
+              "تجريد",
+              "بن"
+            ],
+            "text_sha256": "4740536fee20d318acc55b4f3d5ab2c3e85afe63027d62206ce11d49f4932ae4",
+            "quality": {
+              "word_count": 425,
+              "mean_word_confidence": 46.41,
+              "low_confidence_word_count": 231,
+              "low_confidence_ratio": 0.5435
+            },
+            "text": "ٰٴ ان رات گا (ارو)\n\n۲۹ ۱\n\n\" بچی الفا نل کے پ لا نے فاا یں !رین ہے۔ اس کے بعدارشادغ ماش نے ان کے نام حضرت پاردن فلا کے بی\nشی شیب او می کے ا موں پہ رکے ہیں۔ا سک سدق بعد\n)۸۳| محمد بن ابی بن کەب انصاری*٭\n\nااوسعازکنیٹتی_نب ان کے واللد کے عالات میں بیان ہو گا سے این سعدء ان ال حائم اور جعا بی کاقول ے:عمری\n\n: یٹ یس پیراہہەوۓےء اروام اففمل بدت اضففل م نعھروالمد وسیہ ہیں ء اچ والر, والرم+نظر ےگ راو رتخرت عفان ریْردے ٰ\n۱ روا ےکرتے ہیں۔ ان سے ا نکا بنا ما بن سعیرفریی اورفرئی بن لاق روای تکرتے ہیں ۔ ان صعدرظرباتے ہیں: راو تل\n\n: ار یٹ إں۔وائدی کاِل 7 رہ کے روڑ ٣۹ھ‏ میں شمی رہ ۓے ۔وانڈرا م\n\n:677:02 محمد بن اسلم\n\nجو وس سس سس سس سب\n\nمیں دہ می 8یں۔\n\nبن ںہ انصاری نز ری ۔ اتقول اب شائین:ھ ینہ کہ تے۔ می کر سے رواب ت۷ر تے ہیں۔امام مار وھ نے\n\nا نک وکیا ہے ابع مند وھ ہیں :ای ریت اوران کے وال مکوشرف صحابیت عاصل ہسے۔ بچھرالن کے عالات یسل ایک صدےثٹ\nَ لف کیج س کا تقاضا سے یا ی ہیں۔ یش نم اڑل مس سلم بن املم بن برہ کے الا ت میں ان کےچص وہ مکی جال کردا\n\nہے۔مرة بای کیج ہیں مھ بن اسلم انصارگی نے مہ کے و نکھا: ط\n۱ رق میں2 :وک یکٹاکی وانے دنق کر تے وق ہم اسلام گی ہونے واملےۓے پیا مملمان ہیں ۔ جم نے بدد\n25 تھی ںکرورکر کے بچوڑاتھا۔اورقم سے اپنے لے تر مال لےکرلوٹے تھے\nتاب ا یس ےھ بن اسلم مکل سے انی مرسل روا تکرتے ہیں۔ ان الخ شف رماتے ہیں: میرے خیال\n\nیس کتا ہوں: ای باتننیس جیما ا نکامممان سے کیو امام ہارمگ اوران الی حاتم نے بوالہ اپ واللددوڈول مل\n\n۱ فر یا ےمم ال میں ڈکرہواے_\n\nمحمد بن ایاس٭٭\n\nبن البکیر اللیٹی المدنی-ب ان کے وال کے عالات شل بیان ٭ چگا ےکہوہ رر بی شش ریک ہہوئے ے۔امین\nمندونے ان ش رکا کرک کےککھاے :دو شیوی پایا چان الن کے مال ہد نے کی بات ں نہیں ۔مرز بانی لص ہیں :بی دی م نکعب\nکےعلیف تے۔ پچلرا نکاوومرشیففُ لکیا جوانوں نے زیدب نکعمرین خطاب کےکگی کے مو تن پرکہاتھا۔ جب دہ مین بی حدکا من\nکس بک جنگ مس نات مار ے گے۔ جم\n\nاسد الغابہ (۹۷) گل اصد الغابہ )٦٦٤٤(‏ استیعاب )۲۳٣٣(‏ تجرید )۵٥/٥(‏ گل استیعاب )٦٢٤/٣(‏\nاد الغابہ )۵۷/٤(‏ لن التاریخ الکبیر )٦١/۱(‏ ّه اسد الغابہ )٦۷۰۱(‏ تجرید )٤٥/٢(‏",
+            "pdf": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/urdu_witness_v1/volume_06.pdf"
+          },
+          {
+            "scan_page": 425,
+            "score": 42.8961,
+            "expected_scan_page": null,
+            "distance_from_expected": null,
+            "selection_signals": [
+              "arabic_token_overlap"
+            ],
+            "matched_names": [],
+            "matched_headings": [],
+            "matched_entry_numbers": [],
+            "matched_tokens": [
+              "ومن",
+              "الطبقات",
+              "التاريخ",
+              "عبد",
+              "الکبري",
+              "امه",
+              "الکبير",
+              "الا",
+              "ابو",
+              "ابن",
+              "قول",
+              "اسد",
+              "الغابه",
+              "تجريد",
+              "بن"
+            ],
+            "text_sha256": "f5b3f3e85cdf38f799c0026284ca5b4071e19157bbb07acfb6821b6cfd82361f",
+            "quality": {
+              "word_count": 548,
+              "mean_word_confidence": 46.41,
+              "low_confidence_word_count": 290,
+              "low_confidence_ratio": 0.5292
+            },
+            "text": "٤2ے‏ کا وڈ وھ\nای انان لوا\n\nیزید بن اسد بن کُززالبجل\"*\n\nام الد بن عبدائلہ لیس بی کے دادا۔ ابن سسددھن صحابہ اٹ کے حطب ارم ٹس ان کا ذک کیا ہے ۔ کن ہیں : ن یریم\nخی کے پا س1 نے والوں مس سے ہیں : امام ہار ولیھ کین ہیں : ٹیک رن ےسا ع کیا ہے ابڑھا تم را کی ء ابو دنہ\nفی اوران حبا نکا قول ہے : صمالی ہیں ۔ ان کے دالد اس دکات کر درف الف مل ہو کا ہے اور ھم نے مسن عبد بن حیدٹش\nبط بی سیار جن ال اکن خالم ین عبدائلر الس راگن اہین جدہ ردای تکی ےک ٹیک یمرن رما یا: زین اسداجھ چم\nانپنے لیے پپنرکرتے ہووجی ( بعلا کی بات ) دوسروں کے لیے پپن کر“ لمکم نے اسے ھا ہے۔ کی بن تی نککھتے ہیں:\nخالد کےگھرانے کے لوگ ناد کے دادا کے م“ھالی ہو ن ےکا انگارکر تے ہیں ء ہشام بن عبداللیک خال کو ولا یت لے پراحمان جتلانے\nکے لیے طول خیدککتتا ےء اس یس ہے :یہار دادای: بد بن اسد یت جصفین یس ام رمعاوس کے ساط تھے ۔انہوں نے اپنے\nخون اوردی تکوانع کے یآ ڑ ہنا دیا تھا۔ ان ول نے الع ےکسا برتا ؤکیا۔ اور جوامی الم ومن نے تم سے سلو کیا ہے اس کے وہ\n\nبب -\nبش رہے۔\n\nاوالرخ اصبہانٰی کھت ہیں :زین اسددورفاروتی میں مسلمافو کی جماعتول میس شظام گے ادرو ہیں رے گال بین\nین ہریحزیز اورصاحب حیثیت تھ۔امی رمعادیہ ٹاڈ نے انیس تار نزا دی نفری یں حضرت خثان یھ کی ایت ونصرت کے\nلیے روا گیا تم جب پھ ین گج خرت عنان اھ شبادت سے س ذراز ہو چےے تھے ۔انہوں نے جھ کے اغی روائیچ یکر کی ۔م“فین\nیش امیرمتاومہ اھ کے ساتھ ت عبدانشبین یذ یدکاپنے وال کی ط رح خشرافت کے ح۔ص لن ںی مبردککھت ہیں :عبداہ بن زی\nمعقرلوگوں می س تق ندمردوں میس سے تے۔ عبدالملک بن ھردان نے الن ےکا مہا راک یاکننا مال ہے؟ انوں تن ےکہا: دو زی ہیں\nکہ گے ان کے ساتمھ ان لوگکو ںک یکوکی اتی یں ۔ اللہ تتعالی (کی فقر) پ راگ رہن اوراوگیں سے بے خیاڑگی۔ ان حبان نے\nعراش بن بیز دک مات میس شا رکیا ہے_ ۱\n\nاین سع نگ لکھ ہیں :زی بن الاسود(اسد)نہکوڈیفروشش ہو اورتہ انی ںکوکی اتی رقبملا۔ دہاں تذ خاللد نے علاقہ لیا\nتھا۔ اہن السبار ککتاب الزھد می فرماتے ہیں :ٛییں الوگر بن عیاش نے بتاک رعبدال بن یبد بن اسدرامی رمعاد یی کے پا ال نکی\nآں یکارگی شل عیادت کے لے حاضرہویۓ جس ےا نکی وفات ہوگیء دیکھ اک وہ بڑگی نے مرک یکا مظاہر رر سے ہیں ۔ کے\nگے :امہ رالموسین !ای ےئن یک یکیادجہ ہے؟ 1پ فوت ہو گے جنت ہے اود گر زطد ور ہے تپ چان ہی لوکو ںکو پک یلع ی\n\nضردرت ہے۔انہوں نے فربایا: ا تہارے ابا پت مکرے دہ ہمارے بڑے خرخواہ تءامہوں نے بے این الا دب رشن جج رین\n\nعدکی کےکل سے کیا تھا۔\n\nگل اسد الغابہ )۵۰۱٦٦‏ استیعاب (۲۷۸۲) تجرید )۱۳١/١(‏\n\nالطبقات الکبری )۱٣٤/۷(‏ گل التاریخ الکبیر )٥۹/۲(‏\n\nگل مسند احمد )٦٤/٤(‏ مجمع الزوائد )۱۳٦٣۷(‏ اتحاف السادة المتقین (٦/۲۲۳ء )۲٦٢‏ کنز العمال )٤٤٤٤٤(‏\nگن الطبقات الکبری )۱٣١/۷(‏ گل عمل الیوم واللّیلۃ لابن السنی (۷۱۲)\n\n۴\n\nوش ریش یش شر ہہ",
+            "pdf": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/urdu_witness_v1/volume_06.pdf"
+          }
+        ]
+      },
+      "collateral_arabic": [
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_al_athir_usd_al_ghaba_v1",
+          "witness_role": "collateral_work",
+          "title": "Usd al-Ghaba fi Ma'rifat al-Sahaba",
+          "author": "Ibn al-Athir al-Jazari",
+          "edition": "Usul turath:1110",
+          "book_id": "e5j6lo7201j98j5cnn750wc6",
+          "version_id": "pRzuFotC79",
+          "source_and_version": "turath:1110",
+          "facsimile_url": "https://assets.usul.ai/pdfs/pRzuFotC79.pdf",
+          "query": "محمد بن صيفي",
+          "endpoint": "https://api.usul.ai/search/content?q=%D9%85%D8%AD%D9%85%D8%AF+%D8%A8%D9%86+%D8%B5%D9%8A%D9%81%D9%8A&bookId=e5j6lo7201j98j5cnn750wc6&versionId=pRzuFotC79&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "hit",
+          "reported_total": 27,
+          "hits": [
+            {
+              "result_id": "ZTVqNmxvNzIwMWo5OGo1Y25uNzUwd2M2OnR1cmF0aDoxMTEwOjI0MzU",
+              "text": "٤٧٤٢ - محمد بن صيفي القرشي\nب س: مُحَمَّد بْن صيفي بْن أمية بْن عابد بْن عَبْد اللَّهِ بْن عمر بْن مخزوم القرشي المخزومي، وأمه: هند بنت عتيق بْن عابد بْن عَبْد اللَّهِ بْن عمر بْن مخزوم، وأمها: خديجة بنت خويلد.\nلا رواية لَهُ، وَفِي صحبته نظر، قاله أَبُو عمر.\nوقال أَبُو موسى: مُحَمَّد بْن صيفي المخزومي، قَالَ ابن شاهين: وليس بالأنصاري، هَذَا مُحَمَّد بْن صيفي بْن أمية بْن عابد بْن عَبْد اللَّهِ بْن عمر بْن مخزوم، قَالَ: سمعت عَبْد اللَّهِ بْن سُلَيْمَان يقوله فِي ابتداء كتاب المصابيح، ذكره من نسب القداح.\nأخرجه أَبُو عمر، وَأَبُو موسى.\nعابد: بالباء الموحدة، والدال المهملة.\n\n٤٧٤٣ - محمد بن صيفي الأنصاري\nب د ع: مُحَمَّد بْن صيفي الأنصار يعد فِي الكوفيين، لَمْ يرو عَنْهُ غير الشعبي.\nحديثه فِي صوم عاشوراء، لَيْسَ لَهُ غيره، قاله أَبُو عمر.\nوقال ابن منده، وَأَبُو نعيم: عن مُحَمَّدِ بْنِ سعد كاتب الواقدي، أَنَّهُ قَالَ: مُحَمَّد بْن صيفي غير مُحَمَّد بْن صفوان، هُوَ آخر، روى عنهما الشعبي ونزلا الكوفة.\nوقال أَبُو أحمد العسكري: مُحَمَّد بْن صيفي بْن الحارث بْن عُبَيْد بْن عنان بْن عَامِر بْن خطمة، قَالَ: وقال بعضهم: هُوَ مُحَمَّد بْن صفوان بْن سهل، قيل: هما واحد، وفرق أَبُو حاتم بينهما، فذكر أن مُحَمَّد بْن صيفي مدني، وَمُحَمَّد بْن صفوان كوفي، قَالَ: وبعضهم يقول: مُحَمَّد بْن صيفي مخزومي.\nوقال ابن أَبِي خيثمة: مُحَمَّد بْن صيفي، وَمُحَمَّد بْن صفوان جميعا من الأنصار.\nأَخْبَرَنَا عَبْدُ الْوَهَّابِ بْنُ هِبَةِ اللَّهِ بِإِسْنَادِهِ، إِلَى عَبْدِ اللَّهِ بْنِ أَحْمَدَ، حَدَّثَنِي أَبِي، حدثنا هُشَيْمٌ، أَخْبَرَنَا حُصَيْنٌ، عن الشَّعْبِيِّ، عن مُحَمَّدِ بْنِ صَيْفِيٍّ، أَنَّهُ قَالَ: خَرَجَ عَلَيْنَا رَسُولُ",
+              "text_truncated": false,
+              "text_sha256": "ffa3af76d663a0772ebe2f041f31bc9a1f91bbf9806dda7ae0f33878272b218a",
+              "metadata": {
+                "bookId": "e5j6lo7201j98j5cnn750wc6",
+                "sourceAndVersion": "turath:1110",
+                "pages": [
+                  {
+                    "index": 2435,
+                    "page": 92,
+                    "volume": "5"
+                  }
+                ],
+                "chapters": [
+                  4816,
+                  4817,
+                  4930,
+                  4935,
+                  4939,
+                  4953,
+                  5015
+                ]
+              }
+            },
+            {
+              "result_id": "ZTVqNmxvNzIwMWo5OGo1Y25uNzUwd2M2OnR1cmF0aDoxMTEwOjI3NzU",
+              "text": "٥٥٠٠ - وهب بن معقل\nد ع: وهب بن معقل الغفاري نزل مصر، روى عَنْهُ أَبُو قبيل المعافري، قاله أبو سعيد بن يونس.\nأخرجه ابن منده، وأبو نعيم.\n\n٥٥٠١ - وهبان بن صيفي\nب د ع: وهبان بن صيفي الغفاري ويقال: أهبان، وقد تقدم ذكره فِي الْهَمْزَة، وهو من ولد حرام.\nنزل البصرة وله بِهَا دار، سمع النَّبِيّ ﷺ\nأخبرنا إِبْرَاهِيِم بن مُحَمَّد، وغير واحد بإسنادهم، إلى مُحَمَّد بن عيسى، حدثنا عَليّ بن حجر، حدثنا إِسْمَاعِيل بن إِبْرَاهِيِم، عن عبد الله بن عُبَيْد، عن عديسة بنت أهبان بن صيفي الغفاري، قالت: جاء عَليّ بن أبي طالب إلى أبي، فدعاه إلى الخروج معه، فقال لَهُ أبي: إن خليلي وابن عمك عهد إلي إذا اختلف الناس أن أتخذ سيفا من خشب، فقد اتخذته، فإن شئت خرجت بِهِ معك؟ قالت: فتركه.\nقالت ابنته العديسة: لِمَا حضرته الوفاة، قَالَ: كفنوني فِي ثوبين.\nقالت: فزدنا ثوبا ثالثا، قميصا، ودفناه، فأصبح ذَلِكَ القميص عَلَى المشجب موضوعا.\nقَالَ أبو عمر: أخرج خبره هَذَا ثقات البصريين.\nأخرجه الثلاثة والله أعلم",
+              "text_truncated": false,
+              "text_sha256": "ced3b99686a93d9c6bf2d3d669ab493b334be208cbc9ea546ddd0379b13ba77f",
+              "metadata": {
+                "bookId": "e5j6lo7201j98j5cnn750wc6",
+                "sourceAndVersion": "turath:1110",
+                "pages": [
+                  {
+                    "index": 2775,
+                    "page": 432,
+                    "volume": "5"
+                  }
+                ],
+                "chapters": [
+                  5733,
+                  5807
+                ]
+              }
+            },
+            {
+              "result_id": "ZTVqNmxvNzIwMWo5OGo1Y25uNzUwd2M2OnR1cmF0aDoxMTEwOjE4MDI",
+              "text": "قاله هشام بْن الكلبي.\n\n٣٥٣١ - عبيدة بن صيفي\nد ع: عبيدة أيضًا هُوَ ابْنُ صيفي الجهني وقيل الجعفي رَوَى حَمَّادُ بْنُ عِيسَى الْجُهَنِيُّ، حَدَّثَنَا أَبِي، عَنْ أَبِيهِ، عَنْ جَدِّهِ عُبَيْدَةَ بْنِ صَيْفِيٍّ، قَالَ: أَتَيْتُ النَّبِيَّ ﷺ فَقُلْتُ: يَا نَبِيَّ اللَّهِ، ادْعُ اللَّهَ لِذُرِّيَّتِي، فَفَعَلَ، ثُمَّ قَالَ: «يَا عُبَيْدَةُ، إِنَّكُمْ لأَهْلُ بَيْتٍ لا تُصِيبُكُمْ خَصَاصَةٌ إِلا فَرَّجَهَا اللَّهُ تَعَالَى».\nوروي عَنْ حَمَّاد بْن عِيسَى، عَنْ بشر بْن مُحَمَّد بْن طفيل، عَنْ أَبِيهِ، عَنْ عبيدة بْن صيفي، قَالَ: هاجرت إِلَى رَسُول اللَّه ﷺ وحملت إليه صدقات مالي، وقلت: يا رَسُول اللَّه، ادع لي.\nفذكر نحو ما تقدم.\nأَخْرَجَهُ ابْنُ منده، وَأَبُو نعيم.\n\n٣٥٣٢ - عبيدة بن عمرو\nب د ع: عبيدة بْن عَمْرو وقيل ابْنُ قيس السلماني، وسلمان بطن من مراد، يكنى أبا مُسْلِم وقيل أَبُو عَمْرو، وكان فقيهًا جليلًا، صحب عَبْد اللَّه بْن مَسْعُود، ثُمَّ صحب عليًا، وروى عَنْهُمَا، وعن عُمَر بْن الخطاب ﵃.\nروى عَنْهُ ابْنُ سِيرِينَ أَنَّهُ قَالَ: أسلمت قبل وفاة النَّبِيّ ﷺ بسنتين، وصليت ولم ألقه، وكان من أكابر التابعين.\nأَخْرَجَهُ الثلاثة.",
+              "text_truncated": false,
+              "text_sha256": "689e80eda16196c4752bda0566272c9a7e7ca1052db1ffef5509df5a0bc5f24a",
+              "metadata": {
+                "bookId": "e5j6lo7201j98j5cnn750wc6",
+                "sourceAndVersion": "turath:1110",
+                "pages": [
+                  {
+                    "index": 1802,
+                    "page": 546,
+                    "volume": "3"
+                  }
+                ],
+                "chapters": [
+                  2856,
+                  2857,
+                  2959,
+                  3267,
+                  3741
+                ]
+              }
+            }
+          ],
+          "retrieved_at": "2026-08-11T07:08:06Z"
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_abd_al_barr_istiab_v1",
+          "witness_role": "collateral_work",
+          "title": "al-Isti'ab fi Ma'rifat al-Ashab",
+          "author": "Ibn Abd al-Barr",
+          "edition": "Usul turath:12288",
+          "book_id": "0463IbnCabdBarr.IsticabFiMacrifatAshab",
+          "version_id": "zDYIs6bLxz",
+          "source_and_version": "turath:12288",
+          "facsimile_url": "https://assets.usul.ai/pdfs/zDYIs6bLxz.pdf",
+          "query": "محمد بن صيفي",
+          "endpoint": "https://api.usul.ai/search/content?q=%D9%85%D8%AD%D9%85%D8%AF+%D8%A8%D9%86+%D8%B5%D9%8A%D9%81%D9%8A&bookId=0463IbnCabdBarr.IsticabFiMacrifatAshab&versionId=zDYIs6bLxz&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "hit",
+          "reported_total": 15,
+          "hits": [
+            {
+              "result_id": "MDQ2M0libkNhYmRCYXJyLklzdGljYWJGaU1hY3JpZmF0QXNoYWI6dHVyYXRoOjEyMjg4OjEzNjI",
+              "text": "(٢٣٣٢) محمد بن صيفي بن أمية بن عابد بن عبد الله بن عمر بن مخزوم القرشي المخزومي\nلا رواية له، في صحبته نظر.\n\n(٢٣٣٣) محمد بن صيفي الأنصاري\nلم يرو له غير الشعبي، حديثه في صوم يوم عاشوراء، ليس له غيره.\n\n(٢٣٣٤) محمد بن طلحة بن عبيد الله القرشي التيمي\nالمعروف بالسجاد. أمه حمنة بنت جحش أخت زينب بنت جحش، أنى به أبوه طلحة إلى النبي ﷺ، فمسح رأسه وسماه محمدا، وكناه بأبي القاسم. وقد قيل: كنيته أبو سليمان. والصحيح أبو القاسم.\nروى يزيد بن هارون، عن أبى شيبة إبراهيم ابن عثمان، عن محمد بن عبد الرحمن مولى لطلحة، عن عيسى بن طلحة، قال:\nحدثتني ظئر محمد بن طلحة، قالت: لما ولد محمد بن طلحة أتينا به النبي ﷺ، فقال: ما سميتموه؟ قلنا: محمدا. فقال: هذا سميي، وكنيته أبو القاسم. ومن قال: كنيته أبو سليمان احتج بما\nروى عن محمد بن زيد بن المهاجر بن قنفذ قال: لما ولد محمد بن طلحة أتى به أبوه طلحة إلى رسول الله ﷺ، فقال: سمه محمدا، فقال: يا رسول الله، أكنيه أبا القاسم؟ فقال رسول الله ﷺ: لا أجمعهما له هو أبو سليمان.\nوروى عن محمد بن زيد بن المهاجر بن قنفذ، عن إبراهيم بن محمد بن طلحة، قال: لما ولدت حمنة بنت جحش محمد بن طلحة بن عبيد الله جاءت به إلى رسول الله ﷺ، فسماه محمدا، وكناه أبا سليمان.\nوقال أبو راشد (^١) بن حفص الزهري: أدركت أربعة من أبناء أصحاب النبي ﷺ كلهم يسمى محمدا، ويكنى أبا القاسم: محمد بن على،\n_________\n(^١) في ش: وقال راشد بن خلف.",
+              "text_truncated": false,
+              "text_sha256": "e2b450eb654fac2ba753786fc7786a993001478dd23e271b1b8f0893fafac09e",
+              "metadata": {
+                "bookId": "0463IbnCabdBarr.IsticabFiMacrifatAshab",
+                "sourceAndVersion": "turath:12288",
+                "pages": [
+                  {
+                    "index": 1362,
+                    "page": 1371,
+                    "volume": "3"
+                  }
+                ],
+                "chapters": [
+                  2546,
+                  2547,
+                  2550,
+                  2553,
+                  2612,
+                  2615,
+                  2618,
+                  2624,
+                  2644
+                ]
+              }
+            },
+            {
+              "result_id": "MDQ2M0libkNhYmRCYXJyLklzdGljYWJGaU1hY3JpZmF0QXNoYWI6dHVyYXRoOjEyMjg4OjE0Nw",
+              "text": "ﷺ، وقد ذكره أبو على بن السكن في كتاب الصحابة فلم يصنع شيئا،\nوالحديث الذي ذكره له في ذلك هو أن قال: لما بلغ أكثم بن صيفي مخرج رسول الله ﷺ فأراد أن يأتيه فأبى قومه أن يدعوه قالوا: أنت كبيرنا لم تك لتخف عليه. قال: فليأت من يبلغه عني ويبلغنى عنه قال: فانتدب له رجلان فأتيا النبي ﷺ، فقالا: نحن رسل أكثم بن صيفي، وهو يسألك من أنت؟ وما أنت؟ وبم جئت؟ فقال النبي ﷺ: أنا محمد بن عبد الله، وأنا عبد الله ورسوله، ثم تلا عليهم هذه الآية (^١): ﴿إِنَّ اللهَ يَأْمُرُ بِالْعَدْلِ والْإِحْسانِ وإِيتاءِ ذِي الْقُرْبى ويَنْهى عَنِ الْفَحْشاءِ وَالْمُنْكَرِ﴾ … الآية. فأتيا أكثم فقالا: أبى أن يرفع نسبه، فسألناه عن نسبه فوجدناه زاكي النسب واسطا في مضر، وقد رمى إلينا بكلمات قد حفظناهن، فلما سمعهن أكثم قال: أي قوم، أراه يأمر بمكارم الأخلاق وينهى عن ملائمها، فكونوا في هذا الأمر رؤساء، ولا تكونوا فيه أذنابا، وكونوا فيه أولا، ولا تكونوا فيه آخرا، فلم يلبث أن حضرته الوفاة، فقال: أوصيكم بتقوى الله وصلة الرحم، فإنه لا يبلى عليهما أصل. وذكر الحديث إلى آخره.\nقال ابن السكن: والحديث حدثناه يحيى بن محمد بن صاعد إملاء، قال حدثنا الحسن بن داود بن محمد بن المنكدر. قال: حدثنا عمر بن على المقدمي عن على بن عبد الملك بن عمير عن أبيه قال لما بلغ أكثم بن صيفي مخرج النبي ﷺ، فذكر الخبر على حسب ما أوردناه، وليس في هذا الخبر شيء يدل على إسلامه، بل فيه بيان واضح أنه إذ أتاه\n_________\n(^١) سورة النحل، آية ٩٠.",
+              "text_truncated": false,
+              "text_sha256": "366e49b732b109852d0885373e62f573101f59691bdf16d0bbd1ba46798be209",
+              "metadata": {
+                "bookId": "0463IbnCabdBarr.IsticabFiMacrifatAshab",
+                "sourceAndVersion": "turath:12288",
+                "pages": [
+                  {
+                    "index": 147,
+                    "page": 146,
+                    "volume": "1"
+                  }
+                ],
+                "chapters": [
+                  7,
+                  8,
+                  12,
+                  15,
+                  20,
+                  24,
+                  27,
+                  30,
+                  35,
+                  41,
+                  46,
+                  51,
+                  56,
+                  59,
+                  74,
+                  81,
+                  85,
+                  88,
+                  91,
+                  94,
+                  98,
+                  101,
+                  108,
+                  120,
+                  127,
+                  130,
+                  135,
+                  153,
+                  156,
+                  166,
+                  169,
+                  198
+                ]
+              }
+            },
+            {
+              "result_id": "MDQ2M0libkNhYmRCYXJyLklzdGljYWJGaU1hY3JpZmF0QXNoYWI6dHVyYXRoOjEyMjg4OjExNw",
+              "text": "(١٠٠) أهبان بن صيفي الغفاري البصري\nيكنى أبا مسلم،\nحديثه (^١) عن النبي ﷺ: في الفتنة اتخذ سيفا من خشب. ويقال وهبان بن صيفي، وقد ذكرناه في باب الواو أيضا.\nروت عنه ابنته عديسة.\nولما ظهر علي ﵁ على أهل البصرة سمع بأهبان بن صيفي فأتاه وقال له: ما خلفك عنا يا أهبان؟ قال: خلفنى عنك عهد عهد إلي رسول الله ﷺ، أخوك وابن عمك قال لي إذا تفرقت الأمة فرقتين فاتخذ سيفا من خشب، والزم بيتك، فأنا الآن قد اتخذت سيفا من خشب ولزمت بيتي فقال له علي ﵁:\nفأطع أخى وابن عمى رسول الله ﷺ، وانصرف عنه.\nوقصته في القميص الذي كفن فيه رواها الناس، وفيها آية. وذلك أنه لما حضرته الوفاة قال: كفنونى في ثوبين. قالت ابنته: فزدنا ثوبا ثالثا قميصا، فدفناه فيها، فأصبح ذلك القميص على المشجب موضوعا. وهذا خبر رواه جماعة من ثقات البصريين وغيرهم منهم سليمان التيمي وابنه معتمر، ويزيد ابن زريع، ومحمد بن عبد الله بن المثنى عن المعلى بن جابر بن مسلم، عن عديسة بنت وهبان عن أبها.\n\n(١٠١) [أهبان ابن الأكوع\nصحب النبي ﷺ في قول ابن الكلبي. وقال: هو أخو سلمة بن الأكوع، كذا قال، فاعلمه] (^٢).\n_________\n(^١) في م: روى عن النبي.\n(^٢) هذه الزيادة في أوحدها، وهي في هامش م، وليست في الأصل به.",
+              "text_truncated": false,
+              "text_sha256": "d53f6e166a90302c2b4726090ddf2c11ea6c9d10b0423fd0cbbbc32a2fb088ab",
+              "metadata": {
+                "bookId": "0463IbnCabdBarr.IsticabFiMacrifatAshab",
+                "sourceAndVersion": "turath:12288",
+                "pages": [
+                  {
+                    "index": 117,
+                    "page": 116,
+                    "volume": "1"
+                  }
+                ],
+                "chapters": [
+                  7,
+                  8,
+                  12,
+                  15,
+                  20,
+                  24,
+                  27,
+                  30,
+                  35,
+                  41,
+                  46,
+                  51,
+                  56,
+                  59,
+                  74,
+                  81,
+                  85,
+                  88,
+                  91,
+                  94,
+                  98,
+                  101,
+                  108,
+                  120,
+                  127,
+                  130,
+                  133
+                ]
+              }
+            }
+          ],
+          "retrieved_at": "2026-08-11T07:08:06Z"
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_hajar_isabah_dar_hajr_v1",
+          "witness_role": "alternative_edition",
+          "title": "al-Isabah fi Tamyiz al-Sahaba",
+          "author": "Ibn Hajar al-Asqalani",
+          "edition": "Dar Hajr / Markaz Hajr critical text; Usul OpenITI ShamAY0034568-ara3",
+          "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+          "version_id": "-aZ_8_5c6S",
+          "source_and_version": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.ShamAY0034568-ara3",
+          "facsimile_url": "https://usul.ai/t/isaba-fi-tamyiz",
+          "query": "محمد بن صيفي",
+          "endpoint": "https://api.usul.ai/search/content?q=%D9%85%D8%AD%D9%85%D8%AF+%D8%A8%D9%86+%D8%B5%D9%8A%D9%81%D9%8A&bookId=0852IbnHajarCasqalani.IsabaFiTamyiz&versionId=-aZ_8_5c6S&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "hit",
+          "reported_total": 17,
+          "hits": [
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5TaGFtQVkwMDM0NTY4LWFyYTM6OTI3OA",
+              "text": "7815- محمد بن صيفي بن سهل بن الحارث الخطبي، الأنصاري. نسبه هشيم في روايته، عن حصين، عن الشعبي عنه حديثا مرفوعا في صوم يوم عاشوراء، ويقال: أنه نزل الكوفة. وأخرج له أحمد والنسائي، وابن ماجة وابن خزيمة والحاكم في صحيحها من طريق حصين، عن الشعبي، عن محمد بن صيفي في صوم يوم عاشوراء وسنده صحيح. وأخرج البغوي من طريق الأعمش وغيره، عن الشعبي، عن محمد بن صيفي، قال: أتيت رسول الله صلى الله عليه وسلم بأرنبين ...الحديث. وقال البغوي: هذا وهم والصواب محمد بن صفوان يعني كما تقدم في الذي قبله.",
+              "text_truncated": false,
+              "text_sha256": "fc16c1b9198da90a128d8d2d87fa902ba45473824870d6c9b579621322f5eca8",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.ShamAY0034568-ara3",
+                "pages": [
+                  {
+                    "index": 9278,
+                    "page": 30,
+                    "volume": "10"
+                  }
+                ],
+                "chapters": [
+                  172,
+                  173
+                ]
+              }
+            },
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5TaGFtQVkwMDM0NTY4LWFyYTM6MTM5NDM",
+              "text": "11997- هند بنت عتيق بن عائذ بن عبد الله بن عمر بن مجزوم. أمها خديجة زوج النبي صلى الله عليه وسلم. ذكرها الدارقطني في كتاب الإخوة وقال أسلمت وتزوجت ولم ترو عنه شيئا. وقال ابن سعد في ترجمة خديجة خلف على خديجة بعد أبي هالة عتيق بن عائذ بن عبد الله بن عمر بن مخزوم فولدت له جارية لها هند فتزوجها صيفي بن أمية بن عائذ بن عبد الله بن عمر بن مخزوم وهو ابن عمها فولدت له محمد بن صيفي فولد محمد يقال له: م بنو الطاهرة لمكان خديجة.",
+              "text_truncated": false,
+              "text_sha256": "e1e7289d56c8e4e8986b1bfd2a2823534c6c42227f846ce399dcabc4cc71a471",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.ShamAY0034568-ara3",
+                "pages": [
+                  {
+                    "index": 13943,
+                    "page": 269,
+                    "volume": "14"
+                  }
+                ],
+                "chapters": [
+                  197,
+                  198,
+                  203,
+                  208,
+                  213,
+                  218,
+                  223,
+                  228,
+                  233,
+                  237,
+                  242,
+                  247,
+                  252,
+                  257,
+                  262,
+                  267,
+                  271,
+                  276,
+                  281,
+                  286,
+                  290,
+                  295,
+                  300,
+                  305,
+                  310,
+                  311
+                ]
+              }
+            },
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5TaGFtQVkwMDM0NTY4LWFyYTM6NjQzNQ",
+              "text": "5413- عبيدة بن صيفي الجهني. ذكره مطين والإسماعيلي والباوردي، وابن منده في الصحابة وأخرجوا له من طريق حماد بن عيسى الجهني، عن أبيه، عن عبيدة بن صيفي، قال: أتيت النبي صلى الله عليه وسلم فقلت يا رسول الله ادع الله لذريتي فقال يا عبيدة إنكم أهل البيت لا يعنيكم شيء إلا فرج الله واللفظ لإسماعيل. وقال من طريق يحيى بن راشد، عن حماد بن عيسى حدثني أبي، عن أبيه، عن جده عبيدة بن صيفي وضبطه الخطيب بفتح أوله وقيل، عن حماد بن عيسى، عن بشير بن محمد بن طفيل، عن أبيه سمعت عبيدة بن صيفي يقول هاجرت إلى النبي صلى الله عليه وسلم وحملت إليه صدقة مالي وقلت يا رسول الله ادع لذريتي ...فذكره.",
+              "text_truncated": false,
+              "text_sha256": "34b0f67277b45b52bf01ad9e8dac7dd6f8230e6ee5356124897bb0ef087dba45",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.ShamAY0034568-ara3",
+                "pages": [
+                  {
+                    "index": 6435,
+                    "page": 60,
+                    "volume": "7"
+                  }
+                ],
+                "chapters": [
+                  142,
+                  143
+                ]
+              }
+            }
+          ],
+          "retrieved_at": "2026-08-11T07:08:07Z"
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_hajar_isabah_dar_jil_v1",
+          "witness_role": "alternative_edition",
+          "title": "al-Isabah fi Tamyiz al-Sahaba",
+          "author": "Ibn Hajar al-Asqalani",
+          "edition": "Ali Muhammad al-Bajawi ed.; Dar al-Jil, first edition, 1412 AH; Usul OpenITI JK000533-ara1",
+          "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+          "version_id": "xAOjIqxYuv",
+          "source_and_version": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1",
+          "facsimile_url": "https://usul.ai/t/isaba-fi-tamyiz",
+          "query": "محمد بن صيفي",
+          "endpoint": "https://api.usul.ai/search/content?q=%D9%85%D8%AD%D9%85%D8%AF+%D8%A8%D9%86+%D8%B5%D9%8A%D9%81%D9%8A&bookId=0852IbnHajarCasqalani.IsabaFiTamyiz&versionId=xAOjIqxYuv&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "hit",
+          "reported_total": 29,
+          "hits": [
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5KSzAwMDUzMy1hcmExOjMyNzE",
+              "text": "7784 محمد بن صيفي بن سهل بن الحارث الخطبي الأنصاري نسبه هشيم في روايته عن حصين عن الشعبي عنه حديثا مرفوعا في صوم يوم عاشوراء ويقال إنه نزل الكوفة وأخرج له أحمد والنسائي وابن ماجة وابن خزيمة والحاكم في صحيحها من طريق حصين عن الشعبي عن محمد بن صيفي في صوم يوم عاشوراء وسنده صحيح وأخرج البغوي من طريق الأعمش وغيره عن الشعبي عن محمد بن صيفي قال أتيت رسول الله صلى الله عليه وسلم بأرنبين الحديث وقال البغوي هذا وهم والصواب محمد بن صفوان يعني كما تقدم في الذي قبله 7785 محمد بن ضمرة بن الأسود بن عباد بن غنم بن سواد ذكر بن القداح أن النبي صلى الله عليه وسلم سماه محمدا وشهد فتح مكة أخرجه بن شاهين عن أبي داود عنه 7786 محمد بن طلحة بن عبيد الله القرشي التيمي تقدم نسبه في ترجمة أبيه",
+              "text_truncated": false,
+              "text_sha256": "a5b0e0192f20cbc7b97a603ef9656b9180e1c1c58fa56f9b3f5f3b2637989fa9",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1",
+                "pages": [
+                  {
+                    "index": 3271,
+                    "page": 17,
+                    "volume": "6"
+                  }
+                ],
+                "chapters": [
+                  840,
+                  841,
+                  842,
+                  847,
+                  848
+                ]
+              }
+            },
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5KSzAwMDUzMy1hcmExOjE2MjU",
+              "text": "(الصاد بعدها الياء) 4111 صيفي بلفظ النسب بن الأسلت أبو قيس يأتي في الكنى 4112 صيفي بن ربعي بن أوس الأنصاري قال أبو عمر في صحبته نظر وشهد صفين مع علي 4113 صيفي بن ساعدة بن عبد الأشهل بن مالك بن لوذان بن عمرو بن عوف بن مالك بن الأوس الأنصاري أبو الخريف قال بن الكلبي خرج مع النبي صلى الله عليه وسلم في بعض المغازي فتوفي بالكديد فكفنه النبي صلى الله عليه وسلم في قميصه واستدركه بن فتحون 4114 صيفي بن سواد بن عباد بن عمرو بن غنم بن كعب بن سلمة الأنصاري السلمي ذكره بن إسحاق فيمن شهد العقبة الثانية وقال أبو الأسود عن عروة شهد بدرا 4115 صيفي بن عامر سيد بني ثعلبة أمره النبي صلى الله عليه وسلم على قومه ذكره أبو عمر مختصرا وقال بن السكن في إسناد حديثه نظر وهو من رواية البصريين وأورد من طريق عبيد الله بن ميمون بن عمرو بن خباب العبدي قال حضرت عمرا ومحمدا والصلت بن كريب العبديين قال جاءوا بكتاب فوضعوه على يد ثمامة بن خليفة وكانوا تشاحوا فيه فقالوا إن جدنا دفع إلينا هذا الكتاب وأخبرنا أن صيفي بن عامر دفعه إليه وذكر صيفي أن النبي صلى الله عليه وسلم كتبه له فإذا فيه بسم الله الرحمن الرحيم هذا كتاب من محمد رسول الله لصيفي بن عامر على بني ثعلبة بن عامر من أسلم منهم وأقام الصلاة وآتى الزكاة وأعطى خمس المغنم وسهم النبي والصفي فهو آمن بأمان الله الحديث",
+              "text_truncated": false,
+              "text_sha256": "6c5bdb783cf48fe429be8cb380bc7f7d25d7d5cde04448e29f87762fcfe5daf4",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1",
+                "pages": [
+                  {
+                    "index": 1625,
+                    "page": 453,
+                    "volume": "3"
+                  }
+                ],
+                "chapters": [
+                  524,
+                  525,
+                  538
+                ]
+              }
+            },
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5KSzAwMDUzMy1hcmExOjIxODg",
+              "text": "(ذكر من اسمه عبيدة بفتح أوله) 5388 عبيدة بن جابر بن سليم الهجيمي قال أبو عمر له ولأبيه صحبة ولم يذكر سنده في ذلك 5389 عبيدة بن حزن النصري تقدم في عبدة بسكون الموحدة وهو الراجح 5390 عبيدة بن خالد المحاربي ويقال بضم أوله والأشهر عبيد بلا هاء كما تقدم في عبيد وذكرت الاختلاف فيه 5391 عبيدة بن ربيعة بن جبير البهراني من بني عمرو بن كعب بن عمرو بن الحيون بن تام مناة بن شبيب بن دريم بن القين بن أهود بن بهراء البهراني كان حليف بني غصينة وبنو غصينة حلفاء بعض الأنصار قال بن الكلبي وشهد بدرا واستدركه بن فتحون 5392 عبيدة بن صيفي الجهني ذكره مطين والإسماعيلي والباوردي وابن منده في الصحابة وأخرجوا له من طريق حماد بن عيسى الجهني عن أبيه عن عبيدة بن صيفي قال أتيت النبي صلى الله عليه وسلم فقلت يا رسول الله ادع الله لذريتي فقال يا عبيدة إنكم أهل البيت لا يعنيكم شيء إلا فرج الله واللفظ لإسماعيل وقال من طريق يحيى بن راشد عن حماد بن عيسى حدثني أبي عن أبيه عن جده عبيدة بن صيفي وضبطه الخطيب بفتح أوله وقيل عن حماد بن عيسى عن بشير بن محمد بن طفيل عن أبيه سمعت عبيدة بن صيفي يقول هاجرت إلى النبي صلى الله عليه وسلم وحملت إليه صدقة مالي وقلت يا رسول الله ادع لذريتي فذكره",
+              "text_truncated": false,
+              "text_sha256": "d5b768af37e5accab4812a89349a679ab5aada19d51ff81675ad174a344c45a2",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1",
+                "pages": [
+                  {
+                    "index": 2188,
+                    "page": 427,
+                    "volume": "4"
+                  }
+                ],
+                "chapters": [
+                  607,
+                  608,
+                  609,
+                  611,
+                  617,
+                  625
+                ]
+              }
+            }
+          ],
+          "retrieved_at": "2026-08-11T07:08:07Z"
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_al_athir_usd_al_ghaba_v1",
+          "witness_role": "collateral_work",
+          "title": "Usd al-Ghaba fi Ma'rifat al-Sahaba",
+          "author": "Ibn al-Athir al-Jazari",
+          "edition": "Usul turath:1110",
+          "book_id": "e5j6lo7201j98j5cnn750wc6",
+          "version_id": "pRzuFotC79",
+          "source_and_version": "turath:1110",
+          "facsimile_url": "https://assets.usul.ai/pdfs/pRzuFotC79.pdf",
+          "query": "وصيفي بن أمية يوم بدر",
+          "endpoint": "https://api.usul.ai/search/content?q=%D9%88%D8%B5%D9%8A%D9%81%D9%8A+%D8%A8%D9%86+%D8%A3%D9%85%D9%8A%D8%A9+%D9%8A%D9%88%D9%85+%D8%A8%D8%AF%D8%B1&bookId=e5j6lo7201j98j5cnn750wc6&versionId=pRzuFotC79&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "hit",
+          "reported_total": 2,
+          "hits": [
+            {
+              "result_id": "ZTVqNmxvNzIwMWo5OGo1Y25uNzUwd2M2OnR1cmF0aDoxMTEwOjY5Ng",
+              "text": "ابن الكلبي: حنظلة بْن أَبِي عامر الراهب بْن صيفي بْن النعمان بْن مالك بْن أمية بْن ضبيعة بْن زيد بْن عوف بْن عمرو بْن عوف بْن مالك بْن الأوس بْن حارثة، الأنصاري الأوسي، ثم من بني عمرو بْن عوف.\nوكان أبوه عامر يعرف بالراهب في الجاهلية، وكان أَبُو عامر وعبد اللَّه بْن أَبِي بْن سلول قد حسدا رَسُول اللَّهِ ﷺ عَلَى ما مَنّ اللَّه به عليه، فأما عَبْد اللَّهِ بْن أَبِي فأضمر النفاق، وأما أَبُو عامر فخرج إِلَى مكة، ثم قدم مع قريش يَوْم أحد محاربًا، فسماه رَسُول اللَّهِ ﷺ: الفاسق.\nوأقام بمكة فلما فتحت هرب إِلَى هرقل والروم فمات كافرًا هنالك سنة تسع، وقيل: سنة عشر، وكان معه كنانة بْن عبد ياليل، وعلقمة بْن علاثة، فاختصما في ميراثه إِلَى هرقل، فدفعه إِلَى كنانة، وقال لعلقمة: هما من أهل المدر، وأنت من أهل الوبر.\nوأما حنظلة ابنه فهو من سادات المسلمين وفضلائهم، وهو المعروف بغسيل الملائكة، وَإِنما قيل له ذلك لما\nأخبرنا أَبُو جَعْفَرِ بْنُ السَّمِينِ الْبَغْدَادِيُّ، بِإِسْنَادِهِ إِلَى يُونُسَ بْنِ بُكَيْرٍ، عن ابْنِ إِسْحَاقَ، قَالَ: حَدَّثَنِي عَاصِمُ بْنُ عُمَرَ بْنِ قَتَادَةَ، أَنَّ رَسُول اللَّهِ ﷺ قال: «إِنَّ صَاحِبَكُمْ لَتُغَسِّلُهُ الْمَلائِكَةُ»، يَعْنِي حَنْظَلَةَ، فَسَأَلُوا أَهْلَهُ: مَا شَأْنُهُ؟ فَسُئِلَتْ صَاحِبَتُهُ فَقَالَتْ: خَرَجَ وَهُوَ جُنُبٌ حِينَ سَمِعَ الْهَائِعَةَ، فَقَالَ رَسُول اللَّهِ ﷺ: «لِذَلِكَ غَسَّلَتْهُ الْمَلائِكَةُ»، وَكَفَى بِهَذَا شَرَفًا وَمَنْزِلَةً عِنْدَ اللَّهِ تَعَالَى ولما كان حنظلة يقاتل يَوْم أحد التقى هو وَأَبُو سفيان بْن حرب، فاستعلى عليه حنظلة وكاد يقتله، فأتاه شداد بْن الأسود المعروف بابن شعوب الليثي، فأعانه عَلَى حنظلة، فخلص أبا سفيان، وقتل حنظلة، وقال أَبُو سفيان:\nولو شئت نجتني كميت طمرة … ولم أحمل النعماء لابن شعول\nوقيل: بل قتله أَبُو سفيان بْن حرب، وقال: حنظلة بحنظلة، يعني بحنظلة الأول هذا غسيل الملائكة، وبحنظلة الثاني ابنه حنظلة، قتل يَوْم بدر كافرًا.\nروى قتادة، عن أنس قال: افتخرت الأوس والخزرج، فقالت الأوس: منا غسيل الملائكة: حنظلة، ومنا الذي حمته الدبر: عاصم بْن ثابت، ومنا الذي اهتز لموته عرش الرحمن: سعد بْن معاذ، ومنا من أجيزت شهادته بشهادة رجلين: خزيمة بْن بن ثابت.\nفقال الخزرجيون: منا أربعة نفر قرءوا القرآن، عَلَى عهد رَسُول اللَّهِ ﷺ لم يقرأه غيرهم: زيد بْن",
+              "text_truncated": false,
+              "text_sha256": "74ad702547a77f8fe2d3843ffd2098b549ef23934bd1e2018719f57968b277b6",
+              "metadata": {
+                "bookId": "e5j6lo7201j98j5cnn750wc6",
+                "sourceAndVersion": "turath:1110",
+                "pages": [
+                  {
+                    "index": 696,
+                    "page": 86,
+                    "volume": "2"
+                  }
+                ],
+                "chapters": [
+                  928,
+                  929,
+                  1113,
+                  1174,
+                  1177,
+                  1202,
+                  1207,
+                  1218,
+                  1249,
+                  1256,
+                  1278,
+                  1305,
+                  1310,
+                  1315,
+                  1348,
+                  1381,
+                  1391
+                ]
+              }
+            },
+            {
+              "result_id": "ZTVqNmxvNzIwMWo5OGo1Y25uNzUwd2M2OnR1cmF0aDoxMTEwOjEwMDQ",
+              "text": "وكان شريك النَّبِيّ ﷺ قبل المبعث بمكة، وقد اختلف فيمن كان شريك النَّبِيّ ﷺ فقيل هذا، وقيل: إن أباه كان شريك النَّبِيّ ﷺ وقيل: قيس بْن السائب، وقيل غيرهم.\nوقد اختلف في إسلام السائب، فقال ابن إِسْحَاق، والزبير بْن بكار: إن السائب قتل يَوْم بدر كافرًا ونقض الزبير عَلَى نفسه بأن روى أن معاوية حج فطاف بالبيت، ومعه جنده، فزحموا السائب بْن صيفي، فسقط، فوقف عليه معاوية، وهو يومئذ خليفة، فقال: ارفعوا الشيخ، فلما قام، قال: ما هذا يا معاوية تصرعوننا حول البيت، أما والله لقد أردت أن أتزوج أمك، فقال معاوية: ليتك فعلت، فجاءت بمثل أَبِي السائب، يعني عَبْد اللَّهِ بْن السائب، وهذا يدل عَلَى إسلامه.\nوقال ابن هشام: ذكر عبيد اللَّه بْن عَبْد اللَّهِ بْن عتبة بْن مسعود، عن ابن عباس، أن السائب بْن أَبِي السائب، ممن هاجر مع رَسُول اللَّهِ ﷺ وأعطاه من غنائم حنين.\nوالسائب بْن أَبِي السائب من المؤلفة قلوبهم، وممن حسن إسلامه منهم.\nوذكر مسلم بْن الحجاج أن له ولولده صحبة من النَّبِيّ ﷺ فقال: السائب بْن أَبِي السائب المخزومي، وعبد اللَّه بْن السائب، ومثله قال ابن المديني.\nوقال ابن شهاب: السائب بْن أَبِي السائب، هو الذي جاء فيه الحديث، عن رَسُول اللَّهِ ﷺ: «نعم الشريك، كان لا يشارى ولا يماري»، قاله أَبُو عمر.\nوهو مولى مجاهد بْن جبر من فوق وروى مجاهد، عن قائد السائب، عن السائب، قال: أتيت رَسُول اللَّهِ ﷺ فجعلوا يثنون علي، ويذكرونني، فقال رسول ﷺ: «أنا أعلمكم به»، قلت: صدقت بأبي أنت وأمي، كنت شريكك فنعم الشريك، لا تداري ولا تماري.\nورى إسرائيل، عن إِبْرَاهِيم بْن مهاجر، عن مجاهد، عن السائب بْن عَبْد اللَّهِ، وكان شريك النَّبِيّ.\nأخرجه الثلاثة قلت: قال بعض العلماء: أما السائب بْن نميلة فرجل غير هذا، له حديث واحد: «صلاة القاعد عَلَى النصف من صلاة القائم».\nقال: ولا نعمل أحدًا من المتقدمين ذكر في اسم أبيه: نميلة، ولا يبعد أن يكونا واحدًا، فأن بْن منده، وأبا نعيم، رويا عن أَبِي الجواب، عن عمار بْن رزيق، عن ابن أَبِي ليلى، عن عبد الكريم، عن مجاهد، عن السائب بْن نميلة، عن النَّبِيّ ﷺ ذكراه في هذه الترجمة، والله أعلم.",
+              "text_truncated": false,
+              "text_sha256": "648a35c33955d53c216b0152ff9a0991d95a134588eb7bede1602f0c462dab98",
+              "metadata": {
+                "bookId": "e5j6lo7201j98j5cnn750wc6",
+                "sourceAndVersion": "turath:1110",
+                "pages": [
+                  {
+                    "index": 1004,
+                    "page": 394,
+                    "volume": "2"
+                  }
+                ],
+                "chapters": [
+                  2033,
+                  2034,
+                  2063
+                ]
+              }
+            }
+          ],
+          "retrieved_at": "2026-08-11T07:08:08Z"
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_abd_al_barr_istiab_v1",
+          "witness_role": "collateral_work",
+          "title": "al-Isti'ab fi Ma'rifat al-Ashab",
+          "author": "Ibn Abd al-Barr",
+          "edition": "Usul turath:12288",
+          "book_id": "0463IbnCabdBarr.IsticabFiMacrifatAshab",
+          "version_id": "zDYIs6bLxz",
+          "source_and_version": "turath:12288",
+          "facsimile_url": "https://assets.usul.ai/pdfs/zDYIs6bLxz.pdf",
+          "query": "وصيفي بن أمية يوم بدر",
+          "endpoint": "https://api.usul.ai/search/content?q=%D9%88%D8%B5%D9%8A%D9%81%D9%8A+%D8%A8%D9%86+%D8%A3%D9%85%D9%8A%D8%A9+%D9%8A%D9%88%D9%85+%D8%A8%D8%AF%D8%B1&bookId=0463IbnCabdBarr.IsticabFiMacrifatAshab&versionId=zDYIs6bLxz&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "hit",
+          "reported_total": 2,
+          "hits": [
+            {
+              "result_id": "MDQ2M0libkNhYmRCYXJyLklzdGljYWJGaU1hY3JpZmF0QXNoYWI6dHVyYXRoOjEyMjg4OjU3Mw",
+              "text": "هاهنا. ومنهم من يجعلها [لقيس بن السائب، ومن يجعلها (^١)] لعبد الله بن السائب، وهذا اضطراب لا يثبت به شيء ولا تقوم به حجة. والسائب بن أبي السائب من جملة المؤلفة قلوبهم، وممن حسن إسلامه منهم. [ذكر الزبير هذا الخبر في الموقفيات فقال:\nأخبرنى أبو ضمرة أنس بن عياض عن ابن السائب المخزومي قال: كان جدى في الجاهلية يكنى أبا السائب، وبه اكتنيت، وهو أبو السائب بن صيفي بن أبي السائب، كان خليطا لرسول الله ﷺ إذا ذكر في الإسلام قال: نعم الخليط كان أبو السائب لا يشارى ولا يمارى (^٢)].\n\n(٨٩٣) السائب بن سويد\nمدني\nروى عنه محمد كعب بن القرظي، عن النبي ﷺ قال: ما من شيء يصاب به أحدكم من العافية والضر (^٣) إلا الله (^٤) يكتب له به أجرا.\n\n[(٨٩٤) السائب بن عبيد بن عبد يزيد بن هاشم بن عبد المطلب بن مناف\nجد الإمام محمد بن إدريس بن العباس بن عثمان بن شافع بن السائب الشافعي.\nكان السائب هذا صاحب راية بني هاشم يوم بدر مع المشركين فأسر ففدى نفسه ثم أسلم.\n\n(٨٩٥) السائب الغفاري\nذكر ابن لهيعة قال:\nحدثنا أبو قبيل - رجل من بنى غفار -: أن أم السائب أتت به النبي ﷺ، وعليه تميمة فقطعها رسول الله ﷺ وقال: ما اسم ابنك؟ قالت: السائب. فقال رسول الله ﷺ: بل اسمه عبد الله (^٥)].\n_________\n(^١) ليست في أ.\n(^٢) من أ.\n(^٣) في ى: والطير.\n(^٤) في أسد الغابة: إلا أن الله\n(^٥) من أ.",
+              "text_truncated": false,
+              "text_sha256": "7b34ca781ad8423f7d28931d04b4912713b41c04f3a44449910299f21286fab3",
+              "metadata": {
+                "bookId": "0463IbnCabdBarr.IsticabFiMacrifatAshab",
+                "sourceAndVersion": "turath:12288",
+                "pages": [
+                  {
+                    "index": 573,
+                    "page": 574,
+                    "volume": "2"
+                  }
+                ],
+                "chapters": [
+                  1018,
+                  1019,
+                  1022,
+                  1030,
+                  1042
+                ]
+              }
+            },
+            {
+              "result_id": "MDQ2M0libkNhYmRCYXJyLklzdGljYWJGaU1hY3JpZmF0QXNoYWI6dHVyYXRoOjEyMjg4OjMxNw",
+              "text": "باب حباب\n\n(٤٥٨) الحباب بن المنذر بن الجموح بن زيد بن حرام بن كعب بن غنم بن كعب بن سلمة الأنصاري السلمي\nيكنى أبا عمرو (^١)، شهد بدرا وهو ابن ثلاث وثلاثين سنة، هكذا قال الواقدي وغيره، وكلهم ذكره في البدريين إلا ابن إسحاق في رواية سلمة عنه.\nكان يقال له ذو الرأى،\nوهو الذي أشار على رسول الله ﷺ أن ينزل على ماء بدر للقاء القوم، قال ابن عباس: فنزل جبرئيل ﵇ على رسول الله ﷺ، فقال: الرأى ما أشار به حباب. وشهد أحدا والخندق والمشاهد كلها مع رسول الله ﷺ، وهو القائل يوم السقيفة: أنا جذيلها المحكك، وعذيقها المرجب، منا أمير ومنكم أمير.\nمات الحباب بن المنذر في خلافة عمر ﵁. روى عنه أبو الطفيل عامر بن وائلة.\n\n(٤٥٩) الحباب (^٢) بن قيظى الأنصاري\nقتل يوم أحد شهيدا هو وأخوه لأبيه وأمه: صيفي بن قيظى. أمه الصعبة بنت التيهان (^٣) أخت الهيثم بن التيهان.\n_________\n(^١) في أ، ت، وأسد الغابة: يكنى أبا عمر، وقيل: أبا عمرو.\n(^٢) في أسد الغابة: أخرجه أبو عمر وأبو موسى في الخاء المعجمة والباء الموحدة، ثم قال: وفي رواية عن ابن سعد جباب - بالجيم.\n(^٣) في ت: النبهان.",
+              "text_truncated": false,
+              "text_sha256": "ea8615deaf347e4000826ed3297149791fef61d741d4828227282ba31f83c827",
+              "metadata": {
+                "bookId": "0463IbnCabdBarr.IsticabFiMacrifatAshab",
+                "sourceAndVersion": "turath:12288",
+                "pages": [
+                  {
+                    "index": 317,
+                    "page": 316,
+                    "volume": "1"
+                  }
+                ],
+                "chapters": [
+                  461,
+                  462,
+                  466,
+                  469,
+                  535,
+                  544,
+                  548,
+                  553,
+                  555
+                ]
+              }
+            }
+          ],
+          "retrieved_at": "2026-08-11T07:08:09Z"
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_hajar_isabah_dar_hajr_v1",
+          "witness_role": "alternative_edition",
+          "title": "al-Isabah fi Tamyiz al-Sahaba",
+          "author": "Ibn Hajar al-Asqalani",
+          "edition": "Dar Hajr / Markaz Hajr critical text; Usul OpenITI ShamAY0034568-ara3",
+          "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+          "version_id": "-aZ_8_5c6S",
+          "source_and_version": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.ShamAY0034568-ara3",
+          "facsimile_url": "https://usul.ai/t/isaba-fi-tamyiz",
+          "query": "وصيفي بن أمية يوم بدر",
+          "endpoint": "https://api.usul.ai/search/content?q=%D9%88%D8%B5%D9%8A%D9%81%D9%8A+%D8%A8%D9%86+%D8%A3%D9%85%D9%8A%D8%A9+%D9%8A%D9%88%D9%85+%D8%A8%D8%AF%D8%B1&bookId=0852IbnHajarCasqalani.IsabaFiTamyiz&versionId=-aZ_8_5c6S&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "hit",
+          "reported_total": 1,
+          "hits": [
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5TaGFtQVkwMDM0NTY4LWFyYTM6OTI3Nw",
+              "text": "7814- محمد بن صيفي بن أمية بن عابد بن عبد الله بن عمر بن مخزوم. قال ابن القداح له صحبة. ذكره ابن شاهين، عن أبي داود. وقال أبو عمر لا رؤية له وفي صحبته نظر وهو سبط خديحة بنت خويلد أمه هند بنت عتيق بن عامر بن عبد الله بن عمر بن مخزوم وأمها خديجة. وعابد بالموحدة والدال المهملة. قلت: ذكر الزبير بن بكار ما يقوي قول بن القداح فأنه لما ذكر أباه، قال: كان له رفاعة وبه كان يكنى وصيفي بن أمية قتل يوم بدر. انتهى. ومن يقتل أبوه ببدر وهي في السنة الثانية من الهجرة يكون أدرك من العهد النبوي ثمان سنين فأكثر فلا يسمى محمدا إلا وقد أسلم أبوه وأمه فلعله ولد بعد قتل أبيه وأسلمت أمه فسمته محمدا أو بعض أهله إن كانت أمه ماتت قبل تسميته.",
+              "text_truncated": false,
+              "text_sha256": "cacbe86b664f77cc65f2f0c1c50ec0db18081aaaf317ded5a386e3bfd28044ce",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.ShamAY0034568-ara3",
+                "pages": [
+                  {
+                    "index": 9277,
+                    "page": 29,
+                    "volume": "10"
+                  }
+                ],
+                "chapters": [
+                  172,
+                  173
+                ]
+              }
+            }
+          ],
+          "retrieved_at": "2026-08-11T07:08:09Z"
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_hajar_isabah_dar_jil_v1",
+          "witness_role": "alternative_edition",
+          "title": "al-Isabah fi Tamyiz al-Sahaba",
+          "author": "Ibn Hajar al-Asqalani",
+          "edition": "Ali Muhammad al-Bajawi ed.; Dar al-Jil, first edition, 1412 AH; Usul OpenITI JK000533-ara1",
+          "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+          "version_id": "xAOjIqxYuv",
+          "source_and_version": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1",
+          "facsimile_url": "https://usul.ai/t/isaba-fi-tamyiz",
+          "query": "وصيفي بن أمية يوم بدر",
+          "endpoint": "https://api.usul.ai/search/content?q=%D9%88%D8%B5%D9%8A%D9%81%D9%8A+%D8%A8%D9%86+%D8%A3%D9%85%D9%8A%D8%A9+%D9%8A%D9%88%D9%85+%D8%A8%D8%AF%D8%B1&bookId=0852IbnHajarCasqalani.IsabaFiTamyiz&versionId=xAOjIqxYuv&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "hit",
+          "reported_total": 2,
+          "hits": [
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5KSzAwMDUzMy1hcmExOjMyNzA",
+              "text": "7782 محمد بن صفوان الأنصاري من بني مالك بن الأوس ذكر ذلك العسكري وقيل فيه صفوان بن محمد والأول أصوب وأخرج أحمد وأصحاب السنن وابن حبان والحاكم في صحيحيهما من طريق داود بن أبي هند عن الشعبي عنه أنه أتى النبي صلى الله عليه وسلم بأرنبين ذبحهما بمروة على الشك وأخرجه علي بن عبد العزيز في مسنده من رواية حماد بن سلمة عن داود فقال عن محمد بن صفوان بالجزم وكذا أخرجه البغوي من طريق شعبة ومن طريق عبدة بن سليمان وحكى بن شاهين عن البغوي أنه الراجح وقال لا أعلم لمحمد بن صفوان غيره 7783 محمد بن صيفي بن أمية بن عابد بن عبد الله بن عمر بن مخزوم قال بن القداح له صحبة ذكره بن شاهين عن أبي داود وقال أبو عمر لا رؤية له وفي صحبته نظر وهو سبط خديحة بنت خويلد أمه هند بنت عتيق بن عامر بن عبد الله بن عمر بن مخزوم وأمها خديجة وعابد بالموحدة والدال المهملة قلت ذكر الزبير بن بكار ما يقوي قول بن القداح فإنه لما ذكر أباه قال كان له رفاعة وبه كان يكنى وصيفي بن أمية قتل يوم بدر انتهى ومن يقتل أبوه ببدر وهي في السنة الثانية من الهجرة يكون أدرك من العهد النبوي ثمان سنين فأكثر فلا يسمى محمدا إلا وقد أسلم أبوه وأمه فلعله ولد بعد قتل أبيه وأسلمت أمه فسمته محمدا أو بعض أهله إن كانت أمه ماتت قبل تسميته",
+              "text_truncated": false,
+              "text_sha256": "34fa1bec5556363880cb7aadba82daf34e1358a0212873e4b7a16f0e19470926",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1",
+                "pages": [
+                  {
+                    "index": 3270,
+                    "page": 16,
+                    "volume": "6"
+                  }
+                ],
+                "chapters": [
+                  840,
+                  841,
+                  842,
+                  847,
+                  848
+                ]
+              }
+            },
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5KSzAwMDUzMy1hcmExOjM3NjM",
+              "text": "8937 هبار بن صيفى ذكر في الصحابة وفيه نظر قاله أبو عمر قلت ولم أره لغيره 8938 هبار بن أبي العاص بن نوفل بن عبد شمس بن عبد مناف القرشي العبشمي قتل أبوه يوم بدر كافرا فهو من مسلمة الفتح وله ولد يقال له عمر كان بالشام ومن ذريته خالد بن يزيد بن عمر قتل في أول دولة بني العباس مع من قتل من بني أمية بالشام 8939 هبار بن وهب بن حذافة ذكره بن إسحاق فيمن هاجر إلى الحبشة حكى ذلك البلاذري 8940 هبيب بموحدتين مصغرا بن مغفل بضم أوله وسكون الغين المعجمة وكسر الفاء بعدها لام ويقال إن مغفلا جد أبيه نسب اليه قاله أبو نعيم وقال هو بن عمر بن مغفل بن الواقعة بن حرام بن غفار الغفاري نسبه بن يونس وقال شهد فتح مصر قلت وله حديث صحيح السند في الإزار تقدم في ترحمة محمد بن علبة وهو عند أحمد وغيره وذكر بن يونس أنه اعتزل في الفتنة بعد قتل عثمان في واد بين مربوط والفيوم فصار ذلك يعرف به ويقال له وادي هبيب",
+              "text_truncated": false,
+              "text_sha256": "e2d52dde32caf99ac28d420c23881e2ea5aedd50f5040335b0d021e62a3acf7b",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1",
+                "pages": [
+                  {
+                    "index": 3763,
+                    "page": 529,
+                    "volume": "6"
+                  }
+                ],
+                "chapters": [
+                  962,
+                  963,
+                  965
+                ]
+              }
+            }
+          ],
+          "retrieved_at": "2026-08-11T07:08:10Z"
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_al_athir_usd_al_ghaba_v1",
+          "witness_role": "collateral_work",
+          "title": "Usd al-Ghaba fi Ma'rifat al-Sahaba",
+          "author": "Ibn al-Athir al-Jazari",
+          "edition": "Usul turath:1110",
+          "book_id": "e5j6lo7201j98j5cnn750wc6",
+          "version_id": "pRzuFotC79",
+          "source_and_version": "turath:1110",
+          "facsimile_url": "https://assets.usul.ai/pdfs/pRzuFotC79.pdf",
+          "query": "كان له رفاعة وبه كان يكنى",
+          "endpoint": "https://api.usul.ai/search/content?q=%D9%83%D8%A7%D9%86+%D9%84%D9%87+%D8%B1%D9%81%D8%A7%D8%B9%D8%A9+%D9%88%D8%A8%D9%87+%D9%83%D8%A7%D9%86+%D9%8A%D9%83%D9%86%D9%89&bookId=e5j6lo7201j98j5cnn750wc6&versionId=pRzuFotC79&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "error",
+          "http_status": 500,
+          "error": "HTTP 500",
+          "authenticated_fallback": null,
+          "reported_total": 0,
+          "hits": []
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_abd_al_barr_istiab_v1",
+          "witness_role": "collateral_work",
+          "title": "al-Isti'ab fi Ma'rifat al-Ashab",
+          "author": "Ibn Abd al-Barr",
+          "edition": "Usul turath:12288",
+          "book_id": "0463IbnCabdBarr.IsticabFiMacrifatAshab",
+          "version_id": "zDYIs6bLxz",
+          "source_and_version": "turath:12288",
+          "facsimile_url": "https://assets.usul.ai/pdfs/zDYIs6bLxz.pdf",
+          "query": "كان له رفاعة وبه كان يكنى",
+          "endpoint": "https://api.usul.ai/search/content?q=%D9%83%D8%A7%D9%86+%D9%84%D9%87+%D8%B1%D9%81%D8%A7%D8%B9%D8%A9+%D9%88%D8%A8%D9%87+%D9%83%D8%A7%D9%86+%D9%8A%D9%83%D9%86%D9%89&bookId=0463IbnCabdBarr.IsticabFiMacrifatAshab&versionId=zDYIs6bLxz&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "error",
+          "http_status": 500,
+          "error": "HTTP 500",
+          "authenticated_fallback": null,
+          "reported_total": 0,
+          "hits": []
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_hajar_isabah_dar_hajr_v1",
+          "witness_role": "alternative_edition",
+          "title": "al-Isabah fi Tamyiz al-Sahaba",
+          "author": "Ibn Hajar al-Asqalani",
+          "edition": "Dar Hajr / Markaz Hajr critical text; Usul OpenITI ShamAY0034568-ara3",
+          "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+          "version_id": "-aZ_8_5c6S",
+          "source_and_version": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.ShamAY0034568-ara3",
+          "facsimile_url": "https://usul.ai/t/isaba-fi-tamyiz",
+          "query": "كان له رفاعة وبه كان يكنى",
+          "endpoint": "https://api.usul.ai/search/content?q=%D9%83%D8%A7%D9%86+%D9%84%D9%87+%D8%B1%D9%81%D8%A7%D8%B9%D8%A9+%D9%88%D8%A8%D9%87+%D9%83%D8%A7%D9%86+%D9%8A%D9%83%D9%86%D9%89&bookId=0852IbnHajarCasqalani.IsabaFiTamyiz&versionId=-aZ_8_5c6S&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "hit",
+          "reported_total": 1,
+          "hits": [
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5TaGFtQVkwMDM0NTY4LWFyYTM6OTI3Nw",
+              "text": "7814- محمد بن صيفي بن أمية بن عابد بن عبد الله بن عمر بن مخزوم. قال ابن القداح له صحبة. ذكره ابن شاهين، عن أبي داود. وقال أبو عمر لا رؤية له وفي صحبته نظر وهو سبط خديحة بنت خويلد أمه هند بنت عتيق بن عامر بن عبد الله بن عمر بن مخزوم وأمها خديجة. وعابد بالموحدة والدال المهملة. قلت: ذكر الزبير بن بكار ما يقوي قول بن القداح فأنه لما ذكر أباه، قال: كان له رفاعة وبه كان يكنى وصيفي بن أمية قتل يوم بدر. انتهى. ومن يقتل أبوه ببدر وهي في السنة الثانية من الهجرة يكون أدرك من العهد النبوي ثمان سنين فأكثر فلا يسمى محمدا إلا وقد أسلم أبوه وأمه فلعله ولد بعد قتل أبيه وأسلمت أمه فسمته محمدا أو بعض أهله إن كانت أمه ماتت قبل تسميته.",
+              "text_truncated": false,
+              "text_sha256": "cacbe86b664f77cc65f2f0c1c50ec0db18081aaaf317ded5a386e3bfd28044ce",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.ShamAY0034568-ara3",
+                "pages": [
+                  {
+                    "index": 9277,
+                    "page": 29,
+                    "volume": "10"
+                  }
+                ],
+                "chapters": [
+                  172,
+                  173
+                ]
+              }
+            }
+          ],
+          "retrieved_at": "2026-08-11T07:08:19Z"
+        },
+        {
+          "schema": "firstlight.usul-secondary-witness.v1",
+          "work_id": "ibn_hajar_isabah_dar_jil_v1",
+          "witness_role": "alternative_edition",
+          "title": "al-Isabah fi Tamyiz al-Sahaba",
+          "author": "Ibn Hajar al-Asqalani",
+          "edition": "Ali Muhammad al-Bajawi ed.; Dar al-Jil, first edition, 1412 AH; Usul OpenITI JK000533-ara1",
+          "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+          "version_id": "xAOjIqxYuv",
+          "source_and_version": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1",
+          "facsimile_url": "https://usul.ai/t/isaba-fi-tamyiz",
+          "query": "كان له رفاعة وبه كان يكنى",
+          "endpoint": "https://api.usul.ai/search/content?q=%D9%83%D8%A7%D9%86+%D9%84%D9%87+%D8%B1%D9%81%D8%A7%D8%B9%D8%A9+%D9%88%D8%A8%D9%87+%D9%83%D8%A7%D9%86+%D9%8A%D9%83%D9%86%D9%89&bookId=0852IbnHajarCasqalani.IsabaFiTamyiz&versionId=xAOjIqxYuv&type=keyword&page=1&limit=3&locale=en",
+          "retrieval_state": "hit",
+          "reported_total": 3,
+          "hits": [
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5KSzAwMDUzMy1hcmExOjMyNzA",
+              "text": "7782 محمد بن صفوان الأنصاري من بني مالك بن الأوس ذكر ذلك العسكري وقيل فيه صفوان بن محمد والأول أصوب وأخرج أحمد وأصحاب السنن وابن حبان والحاكم في صحيحيهما من طريق داود بن أبي هند عن الشعبي عنه أنه أتى النبي صلى الله عليه وسلم بأرنبين ذبحهما بمروة على الشك وأخرجه علي بن عبد العزيز في مسنده من رواية حماد بن سلمة عن داود فقال عن محمد بن صفوان بالجزم وكذا أخرجه البغوي من طريق شعبة ومن طريق عبدة بن سليمان وحكى بن شاهين عن البغوي أنه الراجح وقال لا أعلم لمحمد بن صفوان غيره 7783 محمد بن صيفي بن أمية بن عابد بن عبد الله بن عمر بن مخزوم قال بن القداح له صحبة ذكره بن شاهين عن أبي داود وقال أبو عمر لا رؤية له وفي صحبته نظر وهو سبط خديحة بنت خويلد أمه هند بنت عتيق بن عامر بن عبد الله بن عمر بن مخزوم وأمها خديجة وعابد بالموحدة والدال المهملة قلت ذكر الزبير بن بكار ما يقوي قول بن القداح فإنه لما ذكر أباه قال كان له رفاعة وبه كان يكنى وصيفي بن أمية قتل يوم بدر انتهى ومن يقتل أبوه ببدر وهي في السنة الثانية من الهجرة يكون أدرك من العهد النبوي ثمان سنين فأكثر فلا يسمى محمدا إلا وقد أسلم أبوه وأمه فلعله ولد بعد قتل أبيه وأسلمت أمه فسمته محمدا أو بعض أهله إن كانت أمه ماتت قبل تسميته",
+              "text_truncated": false,
+              "text_sha256": "34fa1bec5556363880cb7aadba82daf34e1358a0212873e4b7a16f0e19470926",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1",
+                "pages": [
+                  {
+                    "index": 3270,
+                    "page": 16,
+                    "volume": "6"
+                  }
+                ],
+                "chapters": [
+                  840,
+                  841,
+                  842,
+                  847,
+                  848
+                ]
+              }
+            },
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5KSzAwMDUzMy1hcmExOjMzMTM",
+              "text": "7860 مدرك الغفاري غير منسوب ذكره البغوي وابن أبي عاصم وأخرجا من طريق كثير بن زيد عن خالد بن الطفيل بن مدرك عن جده أن النبي صلى الله عليه وسلم بعثه إلى ابنته يأتي بها من مكة وبه إلى النبي صلى الله عليه وسلم كان إذا سجد ورفع قال اللهم إني أعوذ بك من سخطك الحديث لفظ بن أبي عاصم أخرجه عن يعقوب بن حميد عن سفيان بن حمزة عن كثير وأما البغوي فأخرجه عن حمزة بن مالك بن حمزة بن سفيان الأسلمي قال حدثني عمي سفيان بن حمزة فذكره ولكن قال عن خالد إن رسول الله صلى الله عليه وسلم بعث جده مدركا إلى ابنته يأتي بها من مكة قال وكان رسول الله صلى الله عليه وسلم إذا سجد فذكره قال البغوي لا يروى عن مدرك إلا بهذا الإسناد 7861 مدعم الأسود مولى رسول الله صلى الله عليه وسلم كان مولدا من حسمى أهداه رفاعة بن زيد الجذامي لرسول الله صلى الله عليه وسلم ثبت ذكره في الموطأ والصحيحين من طريق سالم مولى بن مطيع عن أبي هريرة في فتح خيبر فذكر الحديث وفيه أن مدعما أصابه سهم غائر فقتله قال البلاذري يقال إنه يكنى أبا سلام ويقال إن أبا سلام غيره قال ويقال إنما أهداه فروة بن عمر الجذامي",
+              "text_truncated": false,
+              "text_sha256": "19ab73affc453c2215fd1118a0a160621e5a0de37761337eae37af2ef83440ba",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1",
+                "pages": [
+                  {
+                    "index": 3313,
+                    "page": 60,
+                    "volume": "6"
+                  }
+                ],
+                "chapters": [
+                  840,
+                  841,
+                  842,
+                  847,
+                  851
+                ]
+              }
+            },
+            {
+              "result_id": "MDg1MklibkhhamFyQ2FzcWFsYW5pLklzYWJhRmlUYW15aXo6b3Blbml0aTowODUySWJuSGFqYXJDYXNxYWxhbmkuSXNhYmFGaVRhbXlpei5KSzAwMDUzMy1hcmExOjM3MDI",
+              "text": "مالك بن النجار الأنصاري ووقع عند بن أبي حاتم نعيمان بن رفاعة من بني تميم بن مالك بن النجار وله صحبة مات في زمن معاوية قلت فنسبه لجده وصحف غنم بن مالك فقال تميم بن مالك وقال بن الكلبي أمه فطيمة الكاهنة وفي مسند محمد بن هارون الروياني حدثنا خالد بن يوسف حدثنا أبو عوانة عن عمر بن أبي سلمة عن أبيه قال مات عبد الرحمن بن عوف عن أربع نسوة أم كلثوم بنت عقبة بن أبي معيط وأخت نعيمان قلت فما أدري هو ذا أم غيره قال البخاري وأبو حاتم وغيرهما له صحبة وذكره موسى بن عقبة عن بن شهاب الزهري وأبو الأسود عن عروة وغيرهما فيمن شهد بدرا وذكر بن إسحاق انه شهد العقبة الأخيرة وقال بن سعد شهد بدرا وأحدا والخندق والمشاهد كلها  وأخرج البخاري في تاريخه من طريق وهيب عن أيوب عن بن أبي مليكة عن عقبة بن الحارث أن النبي صلى الله عليه وسلم أتى بالنعيمان أو بن النعيمان كذا بالشك والراجح النعيمان بلا شك وفي لفظ لأحمد وكنت فيمن ضربه وقال فيه أتى بالنعيمان ولم يشك ورواه بالشك أيضا محمد بن سعد من طريق معمر عن زيد بن أسلم مرسلا وقال بن عبد البر إن صاحب هذه القصة هو بن النعيمان وفيه نظر وقد تقدم في ترجمة مروان بن قيس السلمي أن صاحب القصة النعيمان وكذا ذكره الزبير بن بكار في كتاب الفكاهة والمزاح من طريق أبي طوالة عن أبي بكر بن محمد بن عمرو بن حزم عن أبيه قال كان بالمدينة رجل يقال له النعيمان يصيب من الشراب فذكر نحوه وبه أن رجلا من أصحاب النبي صلى الله عليه وسلم قال للنعيمان لعنك الله فقال له النبي صلى الله عليه وسلم لا تفعل فإنه يحب الله ورسوله وقد بينت في فتح الباري أن قائل ذلك عمير لكنه قاله لعبد الله الذي كان يلقب حمارا فهو يقوى قول من زعم أنه بن النعيمان فيكون ذلك وقع للنعيمان وابنه ومن يشابه أباه فما ظلم قال الزبير وكان لا يدخل المدينة طرفة إلا اشترى منها ثم جاء بها إلى النبي صلى الله عليه وسلم فيقول ها أهديته لك فإذا جاء صاحبها يطلب نعيمان بثمنها أحضره إلى النبي صلى الله عليه وسلم وقال أعط هذا ثمن متاعه فيقول أو لم تهده لي فيقول انه والله لم يكن عندي ثمنه ولقد أحببت أن تأكله فيضحك وبأمر لصاحبه بثمنه وأخرج الزبير قصة البعير بسياق آخر من طريق ربيعة بن عثمان قال دخل  أعرابي على النبي صلى الله عليه وسلم وأناخ ناقته بفنائه فقال بعض الصحابة للنعيمان الأنصاري لو عقرتها فأكلناها فإنا قد قرمنا إلى اللحم ففعل فخرج الأعرابي وصاح واعقراه يا محمد فخرج النبي صلى الله عليه وسلم فقال من فعل هذا فقالوا النعيمان فاتبعه يسأل عنه حتى وجده قد دخل دار ضباعة بنت الزبير بن عبد المطلب واستخفى تحت سرب لها فوقه جريد فأشار رجل إلى النبي صلى الله عليه وسلم حيث هو فقال ما حملك على ما صنعت قال الذين دلوك علي يا رسول الله هم الذين أمروني بذلك قال فجعل يمسح التراب عن وجهه ويضحك ثم غرمها للأعرابي وقال الزبير أيضا حدثني عمي عن جدي قال كان مخرمة بن نوفل قد بلغ مائة وخمس عشرة سنة فقام في المسجد يريد أن يبول فصاح به الناس المسجد المسجد فأخذ نعيمان بن عمرو بيده وتنحى به ثم أجلسه في ناحية أخرى فقال له بل هاهنا قال فصاح به الناس فقال ويحكم فمن أتى به إلى هذا الموضع قالوا نعيمان قال أما إن لله علي ان ظفرت به أن أضربه بعصاي هذه ضربة تبلغ منه ما بلغت فبلغ ذلك نعيمان فمكث ما شاء الله ثم أتاه يوما وعثمان قائم يصلي في ناحية المسجد فقال لمخرمة هل لك في نعيمان قال نعم قال فأخذ بيده حتى أوقفه على عثمان وكان إذا صلى لا يلتفت فقال دونك هذا نعيمان فجمع يده بعصاه فضرب عثمان فشجه فصاحوا به ضربت أمير المؤمنين فذكر بقية القصة وقال الزبير حدثني علي بن صالح عن جدي عبدان بن مصعب قال لقي نعيمان أبا سفيان بن الحارث فقال له يا عدو الله أنت الذي تهجو سيد الأنصار نعيمان بن عمرو فاعتذر إليه فلما ولى قيل لأبي سفيان إن نعيمان هو الذي قال لك ذلك فعجب منه وقصته مع سويط بن حرملة تقدمت في ترجمة سويط وقال عبد الرزاق أنبأنا معمر عن أيوب عن محمد بن سيرين أن ناسا من أصحاب رسول الله صلى الله عليه وسلم نزلوا بماء وكان النعيمان بن عمرو يقول لأهل الماء يكون كذا وكذا فيأتونه باللبن والطعام فيرسله إلى أصحابه فبلغ أبا بكر خبره فقال أراني آكل من كهانة النعيمان منذ اليوم فاستقاء ما في بطنه قلت وقد استقاء أبو بكر ما أكل من جهة كهانة عبد كان يخدمه أخرجها البخاري وهي غير هذه القصة فإن فيها أنه قال كنت تكهنت لهم في الجاهلية قال محمد بن سعد بقي النعيمان حتى توفي في خلافة معاوية",
+              "text_truncated": false,
+              "text_sha256": "e0d62c244862d972ef484cd5a87037b3d08956131315fd3dbaed813d4ebd1d42",
+              "metadata": {
+                "bookId": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+                "sourceAndVersion": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1",
+                "pages": [
+                  {
+                    "index": 3702,
+                    "page": 465,
+                    "volume": "6"
+                  }
+                ],
+                "chapters": [
+                  921,
+                  922,
+                  932
+                ]
+              }
+            }
+          ],
+          "retrieved_at": "2026-08-11T07:08:19Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "al-isabah.cohort-source-repairs.v1",
+  "cohort_id": "khadijah-immediate",
+  "canonical_facsimile": {
+    "artifact_id": "firstlight:docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/usul_canonical_facsimile_v1.pdf",
+    "sha256": "4ef2895578497d5ef2224f662a76efc4a0d4d17943cf1abbdaca68370b204843"
+  },
+  "repairs": [
+    {
+      "repair_id": "khadijah-immediate-8935-reader-ocr-1",
+      "entry_number": 8935,
+      "reader_page": 3370,
+      "facsimile_pdf_page": 3588,
+      "printed_page": 406,
+      "observed_reader_text": "فقال: ع حمّاد بهذا السّند",
+      "facsimile_text": "فقال: عن حمّاد بهذا السّند",
+      "reason": "The locked facsimile visibly prints عن; the Usul reader omitted the final letter ن."
+    },
+    {
+      "repair_id": "khadijah-immediate-9027-reader-ocr-1",
+      "entry_number": 9027,
+      "reader_page": 3401,
+      "facsimile_pdf_page": 3619,
+      "printed_page": 437,
+      "observed_reader_text": "وكذا قال الدّار الدّارقطنيّ",
+      "facsimile_text": "وكذا قال الدّارقطنيّ",
+      "reason": "The locked facsimile prints الدارقطني once; the Usul reader duplicated الدار."
+    }
+  ]
+}

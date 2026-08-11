@@ -1,0 +1,405 @@
+{
+  "schema": "al-isabah.cohort-critic-aggregate.v1",
+  "stage": "critic",
+  "entry_count": 15,
+  "entries": [
+    {
+      "schema": "al-isabah.cohort-critic-pass.v1",
+      "cohort_id": "khadijah-immediate",
+      "entry_number": 1805,
+      "source_sha256": "90ff486a9564ec6867a8bb0eecc58769bbe62ddf33935d1f0b54818d8d2873bf",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "prompt_version": "isabah-entry-critic-v1",
+      "prompt_sha256": "3523a8473a20fd0fb7d0472214a5e14ff76a2ed9adfe13c4585234442db710f1",
+      "completed_at": "2026-08-11T06:00:03Z",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "major",
+          "category": "name",
+          "location": "Throughout the heading, genealogy, isnad, narrative, and footnotes",
+          "explanation": "The translation repeatedly uses scholarly ʿayn and hamza characters in names and titles—such as ʿAbd, al-ʿUzza, Saʿid, ʿUrwa, Muʿawiya, Kaʿba, al-Istiʿab, and al-Maʿarif—contrary to the required stable, search-friendly transliteration without scholarly diacritics.",
+          "suggested_fix": "Regularize these forms throughout, for example: Abd al-Uzza, Abd Allah, Sa'id, Urwa, Muawiya, Kaaba, al-Isti'ab, al-Ma'arif, and Kanz al-Ummal.",
+          "witness_recommended": false
+        },
+        {
+          "severity": "minor",
+          "category": "quotation",
+          "location": "Paragraph beginning “Al-Waqidi related something similar”",
+          "explanation": "The Arabic reports al-Waqidi's addition indirectly (“and he added that this was…”), whereas the English introduces typographical quotation marks, presenting it as a verbatim quotation.",
+          "suggested_fix": "Write: “Al-Waqidi related something similar and added that this was five years before the birth of the Prophet…” without quotation marks.",
+          "witness_recommended": false
+        }
+      ]
+    },
+    {
+      "schema": "al-isabah.cohort-critic-pass.v1",
+      "cohort_id": "khadijah-immediate",
+      "entry_number": 2263,
+      "source_sha256": "317d73fe889dff70fc982f2ac929e8e975fe792307d5695f9623d2164afb6da7",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "prompt_version": "isabah-entry-critic-v1",
+      "prompt_sha256": "2a6869986030cd2e76b441d37e6960492a5f3be9384838e6a779a6530782f58c",
+      "completed_at": "2026-08-11T05:21:03Z",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "major",
+          "category": "omission",
+          "location": "Final sentence: “It was also narrated from Mansur ibn al-Mu‘tamir...”",
+          "explanation": "The Arabic uses an active verb, “wa-rawa” (“and he narrated”), whose antecedent is apparently Ibn Asakir. The passive rendering suppresses that source attribution, an important transmission link.",
+          "suggested_fix": "Render: “Ibn Asakir also narrated it from Mansur ibn al-Mutamir, from Qabisa, from Khuzayma ibn Hakim.” If the antecedent is intentionally left unresolved, use: “And he also narrated it from Mansur ibn al-Mutamir...”",
+          "witness_recommended": false
+        },
+        {
+          "severity": "minor",
+          "category": "name",
+          "location": "“Abu Ma‘shar,” “al-Isti‘ab,” and “Ibn al-Mu‘tamir”",
+          "explanation": "The modifier-letter apostrophes are scholarly transliteration signs, contrary to the requested stable, search-friendly transliteration without scholarly diacritics.",
+          "suggested_fix": "Use “Abu Mashar,” “al-Istiab,” and “Ibn al-Mutamir.”",
+          "witness_recommended": false
+        }
+      ]
+    },
+    {
+      "schema": "al-isabah.cohort-critic-pass.v1",
+      "cohort_id": "khadijah-immediate",
+      "entry_number": 2847,
+      "source_sha256": "7014a94131219138bf582ecbaa14ade50e2b788b5c24be080e3d0b1e0446aa5f",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "prompt_version": "isabah-entry-critic-v1",
+      "prompt_sha256": "27b735270f9c7cc87779314e884d2a2d059bf76b16218bb213350719b222e357",
+      "completed_at": "2026-08-11T05:58:48Z",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "schema": "al-isabah.cohort-critic-pass.v1",
+      "cohort_id": "khadijah-immediate",
+      "entry_number": 2897,
+      "source_sha256": "45c77d51379ca0c6a88cbbdb1baff72b962e77aa71fbb533b79caac2797affd7",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "prompt_version": "isabah-entry-critic-v1",
+      "prompt_sha256": "a4d7194b83b2289531a2440aab45c17f5d99ef389155fc26980598a83be4ae1d",
+      "completed_at": "2026-08-11T05:23:38Z",
+      "verdict": "witness_required",
+      "issues": [
+        {
+          "severity": "major",
+          "category": "ambiguity",
+          "location": "Geographical footnote (3), opening description of al-‘Is",
+          "explanation": "The canonical reading “بالكسر واحد الّذي قبله” is apparently damaged or corrupt, while “بلاد بين سليم” is also problematic. The translation flags the first phrase but silently changes the second to “lands of Banu Sulaym.” That emendation cannot be established from the canonical text alone.",
+          "suggested_fix": "Consult another edition or textual witness. Until resolved, mark both readings as uncertain and do not silently emend “بين” to “بني.”",
+          "witness_recommended": true
+        },
+        {
+          "severity": "major",
+          "category": "footnote",
+          "location": "Poem footnotes (1) and (2)",
+          "explanation": "Their markers occur beside Haritha’s poem, but their texts have been moved to the very end, after a separate series of geographical footnotes also numbered (1)–(4). The repeated numbering makes the associations structurally ambiguous.",
+          "suggested_fix": "Place the two poem notes immediately after their markers, as in the canonical arrangement, or give each footnote an unambiguous unique label.",
+          "witness_recommended": false
+        },
+        {
+          "severity": "minor",
+          "category": "meaning",
+          "location": "Geographical footnotes (1) and (4): “with all its consonants vowelled”",
+          "explanation": "The lexicographical expression “بالتحريك” does not mean that all consonants are vowelled. It indicates the relevant consonant is pronounced with a short vowel, conventionally a fatha in this context.",
+          "suggested_fix": "Translate more precisely, such as “with the relevant consonant vocalized with a,” or state the intended pronunciation directly.",
+          "witness_recommended": false
+        },
+        {
+          "severity": "minor",
+          "category": "omission",
+          "location": "Geographical footnote (2), “One of the Prophet’s expeditions”",
+          "explanation": "The blessing represented by “ﷺ” after “النبي” has been omitted, although comparable honorifics are translated elsewhere.",
+          "suggested_fix": "Add “may Allah bless him and grant him peace” after “the Prophet.”",
+          "witness_recommended": false
+        },
+        {
+          "severity": "minor",
+          "category": "meaning",
+          "location": "Report from Muhammad ibn Usama ibn Zayd: “with a sound isnad”",
+          "explanation": "The canonical technical grade is “إسناد حسن” (a hasan or good chain). Rendering it “sound” can blur the distinction from “صحيح,” which the translation separately renders “Authentic.”",
+          "suggested_fix": "Use “with a hasan isnad” or “with a good chain of transmission.”",
+          "witness_recommended": false
+        }
+      ]
+    },
+    {
+      "schema": "al-isabah.cohort-critic-pass.v1",
+      "cohort_id": "khadijah-immediate",
+      "entry_number": 4321,
+      "source_sha256": "f1154397cc68c2fe86f385b3b59cad9a85743679b18cfa4cc932329563116468",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "prompt_version": "isabah-entry-critic-v1",
+      "prompt_sha256": "ea765f4eb47b3b35b8656aaf6d237dea5192be74d8165ac2e8270e9ee4e61f66",
+      "completed_at": "2026-08-11T05:59:51Z",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "minor",
+          "category": "meaning",
+          "location": "Paragraph beginning “And through Abu Damra”",
+          "explanation": "The Arabic makes Khadija the grammatical subject of “وسماهم ... وسمّاهن” (“and she named them”), whereas “whom they named” introduces an unsupported plural subject, apparently Abu Bakr ibn Uthman and the other transmitters.",
+          "suggested_fix": "Render: “Khadija bore the four sons and named them, and the four daughters and named them.”",
+          "witness_recommended": false
+        }
+      ]
+    },
+    {
+      "schema": "al-isabah.cohort-critic-pass.v1",
+      "cohort_id": "khadijah-immediate",
+      "entry_number": 5602,
+      "source_sha256": "42921c6d967cb088c363681baf3a3d66b3901a15c0a82abcce0be8afaef0cb86",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "prompt_version": "isabah-entry-critic-v1",
+      "prompt_sha256": "946e4e79cba4144e52e385cd3fec327b5855833ad89276bb1a97ede5294ebc09",
+      "completed_at": "2026-08-11T06:01:45Z",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "major",
+          "category": "poetry",
+          "location": "Poem, second line: “I have abstained from that which you know”",
+          "explanation": "The Arabic “عما تعلمينا” includes the object “us” (-na), which the translation omits. Depending on vocalization, the verb may mean “you teach us” or possibly “you know us”; it cannot simply mean “you know.”",
+          "suggested_fix": "Translate provisionally as “I said, ‘I have abstained from what you teach us,’” while checking a vocalized witness or commentary if available.",
+          "witness_recommended": true
+        },
+        {
+          "severity": "minor",
+          "category": "meaning",
+          "location": "“his paternal cousin and his maternal brother”",
+          "explanation": "“أخوه لأمه” specifically means his brother through their mother, normally expressed in English as “maternal half-brother.” “Maternal brother” is less precise.",
+          "suggested_fix": "Use “his paternal cousin and maternal half-brother.”",
+          "witness_recommended": false
+        },
+        {
+          "severity": "major",
+          "category": "name",
+          "location": "Final two paragraphs concerning al-Bawardi’s vocalization of عفيف",
+          "explanation": "The translation uses “Afif” for both contrasted pronunciations, making the source’s substantive distinction disappear. “بالتصغير” indicates the diminutive “Ufaif,” whereas “بالفتح” indicates “Afif.” The following sentence explicitly endorses al-Bawardi’s reading in sound manuscripts.",
+          "suggested_fix": "Render: “Al-Bawardi vocalized his name as Ufaif, in the diminutive, while the form most commonly spoken is Afif, with an initial a-vowel.” Then: “Its reading in sound manuscripts of Mu'jam al-Baghawi is Ufaif, as al-Bawardi vocalized it.”",
+          "witness_recommended": false
+        },
+        {
+          "severity": "minor",
+          "category": "footnote",
+          "location": "Poem and the second isnad; notes (5) and the following-page (1)",
+          "explanation": "The Arabic anchors note (5) immediately after “عففت” and the later note (1) immediately after “إياس.” Their contents are reproduced, but the corresponding inline markers are omitted, weakening the exact linkage required for textual variants.",
+          "suggested_fix": "Insert “[5]” after the translated word corresponding to “عففت” and “[1]” after “Iyas,” retaining the notes under their respective numbers.",
+          "witness_recommended": false
+        }
+      ]
+    },
+    {
+      "schema": "al-isabah.cohort-critic-pass.v1",
+      "cohort_id": "khadijah-immediate",
+      "entry_number": 7284,
+      "source_sha256": "ae858dead3f7af1fab1cce0e8b47688ef8c149bcf148d9c23e0b5dae3275d374",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "prompt_version": "isabah-entry-critic-v1",
+      "prompt_sha256": "aa8d2315ff8e579cd114f49bbd76f1bde1a726ee7cfa57300ba9c99ab3683b9b",
+      "completed_at": "2026-08-11T05:24:42Z",
+      "verdict": "witness_required",
+      "issues": [
+        {
+          "severity": "minor",
+          "category": "ambiguity",
+          "location": "Footnote (3), second occurrence of “al-labna”",
+          "explanation": "The canonical text repeats اللّبنة/اللبنة while stating that the second form is the diminutive, which is internally problematic. The proposed English conjectures “[presumably al-lubayna],” a plausible but unverified correction not securely present in the canonical wording.",
+          "suggested_fix": "Check the cited al-Nihaya 4/228 or another reliable witness to establish whether the second word is اللبينة (al-lubayna). Until verified, retain the canonical form and explicitly mark the reading as problematic rather than adopting the conjecture.",
+          "witness_recommended": true
+        }
+      ]
+    },
+    {
+      "schema": "al-isabah.cohort-critic-pass.v1",
+      "cohort_id": "khadijah-immediate",
+      "entry_number": 8302,
+      "source_sha256": "db6462c23a4f074095abbb2a545484a725e428ecd3590284eeb77f55edd92776",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "prompt_version": "isabah-entry-critic-v1",
+      "prompt_sha256": "48e4cfb438c2d77e54395ceb7b116890f1a11264f2599706d95c73ed067b91a7",
+      "completed_at": "2026-08-11T05:24:53Z",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "schema": "al-isabah.cohort-critic-pass.v1",
+      "cohort_id": "khadijah-immediate",
+      "entry_number": 8695,
+      "source_sha256": "025c2abdd97fe8ab491ed5d732b490842119a070bd097f6f193b69cf02ee0629",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "prompt_version": "isabah-entry-critic-v1",
+      "prompt_sha256": "40c92a87eb5955a6f007aedec9af2277d0fd459a28a6a03ac621d03e9d12abf9",
+      "completed_at": "2026-08-11T05:25:40Z",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "minor",
+          "category": "name",
+          "location": "Throughout: “Ibn Manda”",
+          "explanation": "The established search-friendly English form of ابن مندة is “Ibn Mandah,” with the final h retained.",
+          "suggested_fix": "Replace every occurrence of “Ibn Manda” with “Ibn Mandah.”",
+          "witness_recommended": false
+        }
+      ]
+    },
+    {
+      "schema": "al-isabah.cohort-critic-pass.v1",
+      "cohort_id": "khadijah-immediate",
+      "entry_number": 8907,
+      "source_sha256": "a3e3dba1252b7964a81c1a10cf160c94feccfd8ad2506470a6835b1fe640905f",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "prompt_version": "isabah-entry-critic-v1",
+      "prompt_sha256": "a9d94d287a85dee7d41d96a089a2bf6ea3c957883f088707d26420609ea2fe78",
+      "completed_at": "2026-08-11T06:00:15Z",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "schema": "al-isabah.cohort-critic-pass.v1",
+      "cohort_id": "khadijah-immediate",
+      "entry_number": 8912,
+      "source_sha256": "3018bd6e4df5180b92ffea5482daa1dc703dc7a068c5a3135e4dc870851d0dd6",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "prompt_version": "isabah-entry-critic-v1",
+      "prompt_sha256": "2b4f62d85ab28b483295b99abdb05a87c613dc72eb865562d1255262aa47d1f8",
+      "completed_at": "2026-08-11T05:25:23Z",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "minor",
+          "category": "name",
+          "location": "Final paragraph: “Ibn Manda”",
+          "explanation": "The Arabic name ابن مندة is conventionally rendered “Ibn Mandah”; “Ibn Manda” drops the final consonantal h and is less search-stable.",
+          "suggested_fix": "Change “Ibn Manda” to “Ibn Mandah.”",
+          "witness_recommended": false
+        },
+        {
+          "severity": "minor",
+          "category": "name",
+          "location": "Throughout: “Sa‘d,” “al-‘Uzza,” and “al-Isti‘ab”",
+          "explanation": "The modifier-letter ayn conflicts with the requested search-friendly transliteration without scholarly diacritics.",
+          "suggested_fix": "Use consistent plain forms such as “Sa'd,” “al-Uzza,” and “al-Isti'ab.”",
+          "witness_recommended": false
+        }
+      ]
+    },
+    {
+      "schema": "al-isabah.cohort-critic-pass.v1",
+      "cohort_id": "khadijah-immediate",
+      "entry_number": 8935,
+      "source_sha256": "1860e8dae8a12cfcc1f0a91e41c455db81131cd846fc6bf56c49017cd776d679",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "prompt_version": "isabah-entry-critic-v1",
+      "prompt_sha256": "cd3b498be8516bb9bc7244362ca71bfc3ef78e24577eae429e4f957fc04cbb73",
+      "completed_at": "2026-08-11T06:35:40Z",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "major",
+          "category": "quotation",
+          "location": "Jafar al-Mustaghfiri report: “from Aisha, who said”",
+          "explanation": "The canonical text has the masculine قال after “from Aisha,” whereas the translation silently resolves the speaker as Aisha. Even if the Arabic reflects a grammatical or transmission irregularity, the English should not silently normalize the attribution.",
+          "suggested_fix": "Render the discontinuity without resolving it, for example: “from Aisha. He said: ‘A son of Khadija …’” An editorial note may flag the masculine verb if desired.",
+          "witness_recommended": false
+        },
+        {
+          "severity": "minor",
+          "category": "name",
+          "location": "Genealogy and following discussion: “Ghudayy”",
+          "explanation": "غذيّ contains the consonant dhal (ذ); “Ghudayy” drops it and is not a stable search-friendly transliteration.",
+          "suggested_fix": "Use “Ghudhayy” consistently in both occurrences.",
+          "witness_recommended": false
+        }
+      ]
+    },
+    {
+      "schema": "al-isabah.cohort-critic-pass.v1",
+      "cohort_id": "khadijah-immediate",
+      "entry_number": 9027,
+      "source_sha256": "875057103453d4e1bd31877e9dd51828bcbd12fd8d1e158ce2b5b9543c993d6b",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "prompt_version": "isabah-entry-critic-v1",
+      "prompt_sha256": "a163e6c65d11db8ea4fa879871e5fff3664b9590b3e501d16e7f1162b146388c",
+      "completed_at": "2026-08-11T06:35:39Z",
+      "verdict": "pass",
+      "issues": []
+    },
+    {
+      "schema": "al-isabah.cohort-critic-pass.v1",
+      "cohort_id": "khadijah-immediate",
+      "entry_number": 9151,
+      "source_sha256": "1aa9d30d613fcccbe9d6c42e5ab794daf02c096c1723c14e739eace912b341f5",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "prompt_version": "isabah-entry-critic-v1",
+      "prompt_sha256": "5c5e4a88dfc4992dd5fc1992545ce08aecee82d7f5772b0044ca4927b20884ed",
+      "completed_at": "2026-08-11T05:27:52Z",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "major",
+          "category": "poetry",
+          "location": "Poem beginning “That Ahmad will come to him…”",
+          "explanation": "The translation reverses the syntax. In “بأن أحمد يأتيه فيخبره / جبريل أنك مبعوث إلى البشر,” Gabriel is the delayed subject who comes to Ahmad and informs him. The proposed English instead says that Ahmad comes to an unspecified person and then Gabriel speaks, inventing a separate action and object.",
+          "suggested_fix": "Translate along the lines of: “That Gabriel will come to Ahmad and inform him: / ‘You have been sent to humankind.’”",
+          "witness_recommended": false
+        },
+        {
+          "severity": "major",
+          "category": "ambiguity",
+          "location": "Paragraph beginning “The apparent meaning is that he affirmed his prophethood…”",
+          "explanation": "The canonical phrase “مات قبل أن يدعو بحيرا رسول الله الناس إلى الإسلام” is syntactically damaged or corrupt because “بحيرا” intrudes between “يدعو” and “رسول الله.” The proposed editorial aside identifies the problem but cannot establish the intended reading from this witness alone.",
+          "suggested_fix": "Consult another edition or manuscript witness. If none is available, retain an explicit textual-corruption note and avoid presenting the reconstructed syntax as certain.",
+          "witness_recommended": true
+        },
+        {
+          "severity": "minor",
+          "category": "name",
+          "location": "“Dalaʾil al-Nubuwwa” and “Ibn Lahiʿa”",
+          "explanation": "The Unicode scholarly signs ʾ and ʿ conflict with the requested stable, search-friendly transliteration without scholarly diacritics and are inconsistent with the otherwise simplified name policy.",
+          "suggested_fix": "Use consistent plain transliteration, such as “Dala'il al-Nubuwwa” and “Ibn Lahi'a,” or the project’s established ASCII convention.",
+          "witness_recommended": false
+        }
+      ]
+    },
+    {
+      "schema": "al-isabah.cohort-critic-pass.v1",
+      "cohort_id": "khadijah-immediate",
+      "entry_number": 10182,
+      "source_sha256": "6a3bf07b61e0849111d9313e9391dea3118f698c2b1d51a76c563dc6dec38ba3",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "prompt_version": "isabah-entry-critic-v1",
+      "prompt_sha256": "a3df16a8d6df700924e7a68577af0427faa300dbba9acc35043715ed11d5c21c",
+      "completed_at": "2026-08-11T06:06:56Z",
+      "verdict": "revise",
+      "issues": [
+        {
+          "severity": "minor",
+          "category": "meaning",
+          "location": "Aisha’s necklace report: “which Khadija had given her when she was conducted as a bride to Abu al-As”",
+          "explanation": "The Arabic says that Khadija had brought or sent Zaynab in to Abu al-As wearing the necklace (أدخلتها بها); it does not explicitly say that Khadija gave her ownership of it. The English changes the described bridal action into a gift.",
+          "suggested_fix": "Use: “a necklace of hers which Khadija had sent her in wearing when she entered upon Abu al-As.”",
+          "witness_recommended": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00008907",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 8907,
+  "title": {
+    "english": "Nabbash ibn Zurara al-Tamimi¹",
+    "arabic_observed": "نبّاش بن زرارة التميميّ «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00008907-segment-0001",
+      "volume": 6,
+      "reader_page": 3361,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3361",
+      "reader_pages": [
+        3361
+      ],
+      "reader_urls": [
+        "https://usul.ai/t/isaba-fi-tamyiz/3361"
+      ],
+      "source_unit_id": "isabah-usul-4CPCkl83K7:entry:8907:a3e3dba1252b7964",
+      "arabic": "٨٩٠٧- نبّاش بن زرارة التميميّ «١»\n: أبو هالة، زوج خديجة قبل النبي ﵌، ووالد هند، وخال الحسن بن علي.\nذكره المستغفريّ، وتبعه أبو موسى في الذيل، وهو غلط.\n(١) أسد الغابة ت (٥١٩٥) .",
+      "english": "8907—Nabbash ibn Zurara al-Tamimi¹\n\nAbu Hala, the husband of Khadija before the Prophet (peace and blessings be upon him), the father of Hind, and the maternal uncle of al-Hasan ibn Ali.\n\nAl-Mustaghfiri mentioned him, and Abu Musa followed him in al-Dhayl (the Supplement). This is an error.\n\n¹ Usd al-Ghaba, t (5195).",
+      "arabic_sha256": "a3e3dba1252b7964a81c1a10cf160c94feccfd8ad2506470a6835b1fe640905f",
+      "english_sha256": "6b97dd2d992f58ecf6143999ccb0cac852ec99973f444b7dc39b3500ed62bfd9",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "نبّاش بن زرارة التميميّ",
+      "english": "Nabbash ibn Zurara al-Tamimi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو هالة",
+      "english": "Abu Hala",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadija",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند",
+      "english": "Hind",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن علي",
+      "english": "al-Hasan ibn Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفريّ",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl (the Supplement)",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.cohort-entry-importer.v1",
+    "cohort_id": "khadijah-immediate",
+    "source_manifest_sha256": "00a9848a8af2fc6855f0b340a5b7605e66a851d88cf2dc98af6a67ad246988a5",
+    "source_sha256": "a3e3dba1252b7964a81c1a10cf160c94feccfd8ad2506470a6835b1fe640905f",
+    "adjudication_prompt_sha256": "2b11ba4843076e48361d952664ca6bfed9c5b5c3d78e2c629cf0440c3ecb8deb",
+    "source_repairs": []
+  }
+}
