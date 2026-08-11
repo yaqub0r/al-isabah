@@ -1,0 +1,20 @@
+{
+  "proposal": {
+    "proposalVersion": "1.0.0",
+    "bookSlug": "al-isabah",
+    "baseReleaseId": "fixture-beta-v1",
+    "entryId": "isabah-fixture-0001",
+    "createdAt": "2026-08-11T22:38:10.058Z",
+    "operations": [
+      {
+        "segmentId": "isabah-fixture-0001-segment-0001",
+        "target": "translation",
+        "proposedText": "This is synthetic Arabic text used to demonstrate the reading interface.",
+        "rationale": "Bootstrap smoke test for the reviewer-to-pull-request workflow.",
+        "evidenceRefs": [
+          "fixture-edition, vol. 8, p. 101"
+        ]
+      }
+    ]
+  }
+}
