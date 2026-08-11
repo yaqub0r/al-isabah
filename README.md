@@ -24,3 +24,10 @@ human review. Complete biographies live in `content/entries/`; story-specific
 coverage and context live in `derived/cohorts/` so later volume work can fill
 the series without rewriting reviewed records.
 
+The operator-facing dossier is
+`derived/cohorts/khadijah-immediate.review.md`. A fresh clone can hydrate only
+the three external objects needed to reproduce this cohort by passing
+`evidence/manifests/khadijah-immediate-artifacts.v1.json` to
+`scripts/artifact_store.py hydrate`; normal endpoint, bucket, and credential
+configuration still applies.
+

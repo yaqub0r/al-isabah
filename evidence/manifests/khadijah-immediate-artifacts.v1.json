@@ -1,0 +1,64 @@
+{
+  "schema": "al-isabah.artifact-manifest.v1",
+  "work_id": "ibn-hajar-al-isabah",
+  "generated_from": {
+    "repository": "yaqub0r/firstlight",
+    "revision": "2689ff40",
+    "inventory_sha256": "15e5e7fc96f46d99db8e344bc57239d1e5205c71e588b7db11e9e21edba91c58"
+  },
+  "cohort_id": "khadijah-immediate",
+  "selection": {
+    "purpose": "Hydrate only immutable external evidence required to reproduce the cohort.",
+    "artifact_count": 3
+  },
+  "artifacts": [
+    {
+      "artifact_id": "firstlight:docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/usul_canonical_facsimile_v1.pdf",
+      "role": "immutable_source_and_witness_evidence",
+      "language": "ar",
+      "format": "application/pdf",
+      "volume": null,
+      "byte_size": 87560277,
+      "sha256": "4ef2895578497d5ef2224f662a76efc4a0d4d17943cf1abbdaca68370b204843",
+      "object_key": "sha256/4e/4ef2895578497d5ef2224f662a76efc4a0d4d17943cf1abbdaca68370b204843",
+      "rights": "private",
+      "origin": {
+        "repository_path": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/usul_canonical_facsimile_v1.pdf",
+        "source_url": null
+      },
+      "derived_from": []
+    },
+    {
+      "artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/urdu_witness_v1/volume_05.translation-units.jsonl",
+      "role": "translation_and_qa_evidence",
+      "language": "ur",
+      "format": "application/x-ndjson",
+      "volume": 5,
+      "byte_size": 1791484,
+      "sha256": "ab6cecf03758737164a09cda24ed9fb81198fc0df3601bc49f4f233b5c51262e",
+      "object_key": "sha256/ab/ab6cecf03758737164a09cda24ed9fb81198fc0df3601bc49f4f233b5c51262e",
+      "rights": "private",
+      "origin": {
+        "repository_path": "firstlight-research/data/translated/ibn_hajar_isabah/urdu_witness_v1/volume_05.translation-units.jsonl",
+        "source_url": null
+      },
+      "derived_from": []
+    },
+    {
+      "artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/urdu_witness_v1/volume_06.translation-units.jsonl",
+      "role": "translation_and_qa_evidence",
+      "language": "ur",
+      "format": "application/x-ndjson",
+      "volume": 6,
+      "byte_size": 1934183,
+      "sha256": "34ea158e855510c90cc4477fe650ce4e283b7084ce152e3b7740a3eccf342ad7",
+      "object_key": "sha256/34/34ea158e855510c90cc4477fe650ce4e283b7084ce152e3b7740a3eccf342ad7",
+      "rights": "private",
+      "origin": {
+        "repository_path": "firstlight-research/data/translated/ibn_hajar_isabah/urdu_witness_v1/volume_06.translation-units.jsonl",
+        "source_url": null
+      },
+      "derived_from": []
+    }
+  ]
+}

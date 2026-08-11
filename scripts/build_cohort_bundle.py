@@ -89,6 +89,8 @@ def build(spec: dict, classification: dict, context: dict, import_report: dict, 
             "entry_adjudication": "derived/cohorts/khadijah-immediate.adjudicated.json",
             "context_adjudication": "derived/cohorts/khadijah-immediate.context-adjudicated.json",
             "context_witnesses": "evidence/cohorts/khadijah-immediate.context-witnesses.json",
+            "operator_review": "derived/cohorts/khadijah-immediate.review.md",
+            "cohort_artifact_manifest": "evidence/manifests/khadijah-immediate-artifacts.v1.json",
             "import_report": import_report,
         },
     }
