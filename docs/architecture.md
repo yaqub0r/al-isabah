@@ -3,8 +3,9 @@
 ## Product boundary
 
 Al-Isabah is a platform-neutral scholarly dataset with multiple clients. The
-public reader, web editor, import and validation tools, future workflow
-integration, and future mobile application consume the same domain model.
+Sabiqah reader and review editor, import and validation tools, and future
+clients consume explicit book-owned contracts rather than importing a web
+application from this repository.
 
 The repository owns the scholarly truth. FirstLight is a downstream consumer
 of explicit, versioned releases; it does not own the canonical al-Isabah data.
@@ -32,9 +33,9 @@ Evidence records are append-only. A correction creates a new record that cites
 the superseded record. Canonical Arabic bytes are never normalized in place.
 Every localized artifact has a SHA-256 digest and edition/witness identity.
 
-Large source binaries may use Git LFS initially. They are excluded from normal
-web deployment builds. A future object store may serve binaries, but the
-repository retains hash-bound acquisition metadata sufficient to verify them.
+Large source binaries live in versioned R2 object storage and are excluded from
+Git. The repository retains hash-bound acquisition and rights metadata
+sufficient to verify every object and determine whether it may be published.
 
 ### 2. Canonical editorial dataset
 
@@ -55,13 +56,11 @@ source of truth and may be deleted and rebuilt.
 ## Initial repository shape
 
 ```text
-apps/
-  web/                    Astro reader with an interactive /admin route
 packages/
-  model/                  TypeScript types, Zod schemas, serialization, IDs
-  editor/                 Decap-independent React editor
+  model/                  Book-owned types, schemas, serialization, IDs
 content/
   entries/                Canonical entry JSON
+  review-proposals/       Validated, non-canonical review workflow inputs
   identifiers.json        Permanent allocation and retirement ledger
 evidence/
   manifests/              Hash-bound acquisition and migration manifests
@@ -71,14 +70,15 @@ pipelines/
   import/                 Evidence-to-canonical importers
   export/                 Versioned release builders
 scripts/
+schemas/                  Interchange and workflow JSON Schemas
 docs/
   decisions/
 ```
 
 Validation remains in `packages/model` at first. A separate validation package
 is warranted only when it gains a genuinely independent release or dependency
-boundary. The reader and admin route remain one Astro application initially;
-the reusable editor is the meaningful UI boundary.
+boundary. Book exporters publish Sabiqah's smaller reader contract without
+making that client contract the complete editorial model.
 
 ## Stable identifiers
 
@@ -155,18 +155,19 @@ The first validation set must include:
 2. an entry spanning a page boundary,
 3. an entry with an unresolved witness or name reading.
 
-## Web and editor
+## Sabiqah reader and review workflow
 
-The first client is a static-first Astro application. React is used for the
-specialized segment editor and only where interaction requires it.
+Sabiqah owns the static-first Astro reader, reusable React proposal editor,
+reviewer enrollment and reputation, and Cloudflare deployment. This repository
+does not contain or deploy a second web application.
 
-The public reader requires no CMS or runtime content API. `/admin` initially
-mounts the same reusable editor package. Authentication and PR creation are
-workflow adapters at the edge.
-
-Decap is deferred until the model, importer, and editor vertical slice are
-proven. If adopted, it may provide authentication and generic Git workflow, but
-only through a thin adapter. No model or editor package may import Decap.
+Decap is available from the first beta as Sabiqah's replaceable GitHub workflow
+shell. Open Authoring creates a contributor-owned fork and a pull request to
+this repository. The Sabiqah editor emits a validated proposal; its Decap
+adapter stores the proposal in `content/review-proposals/` using
+`schemas/review-proposal.schema.json`. A proposal is not canonical scholarship
+and never silently changes Arabic. Repository validation and maintainer review
+must approve the corresponding editorial change.
 
 ## Search
 
@@ -187,17 +188,15 @@ upgrade, and roll back.
 
 ## Hosting and future API
 
-Cloudflare Pages is a candidate deployment target, not part of the domain
-architecture. The public reader remains statically deployable.
-
-A backend or workflow service is introduced only when collaboration needs can
-no longer be met safely with GitHub and a replaceable adapter. A future mobile
-client consumes the same schemas or a generated API contract; the current web
-UI is not abstracted into a cross-platform component system prematurely.
+Sabiqah deploys the public client through Cloudflare Workers Static Assets and
+uses R2 for large versioned objects. Hosting stays outside this book's domain
+model. A future mobile client consumes the same book releases or a generated
+API contract; this repository does not abstract a web UI into a cross-platform
+component system.
 
 ## Rights and publication
 
 Repository visibility, source redistribution, and public deployment are
-separate decisions. Each source artifact records its rights status. The
-repository remains private and no source binary is published until an explicit
+separate decisions. The repository is public, while each source artifact still
+records its rights status. No source binary is published until an explicit
 release decision confirms the intended rights posture.
