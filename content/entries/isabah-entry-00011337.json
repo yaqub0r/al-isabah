@@ -1,0 +1,123 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011337",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11337,
+  "title": {
+    "english": "Samra bint Qays al-Ansariyya (1)",
+    "arabic_observed": "سمراء"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011337-segment-0001",
+      "volume": 8,
+      "scan_page": 190,
+      "printed_page": 189,
+      "reader_page": 4102,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4102",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0190:32466e2658464c43",
+      "arabic": "١١٣٣٧- سمراء\nبنت قيس الأنصارية «١» .\nقال ابن مندة: لها ذكر في حديث أبي أمامة بن سهل بن حنيف في حديث الواقدي.\nوقال أبو عمر: سميراء، بالتصغير، بنت قيس الأنصارية مدنية، روى عنها أبو أمامة بن سهل. وكذا ذكرها ابن سعد بالتصغير، ونسبها، فقال: بنت قيس بن مالك بن كعب بن عبد الأشهل بن حارثة بن دينار بن النجار، تزوجها عبد عمرو بن عبد الأشهل، فولدت له النعمان، والضحاك، وقطبة، وأم الرياع، وهم صحابة، ثم خلف عليها عمرو بن غزية بن عمرو بن ثعلبة بن مبذول، فولدت له، ثم خلف عليها الحارث بن ثعلبة بن كعب بن عبد الأشهل بن حارثة بن دينار بن النجار، فولدت له سلمى ... وهم صحابة أيضا.",
+      "english": "11337—Samra bint Qays al-Ansariyya (1)\n\nIbn Manda said: She is mentioned in a report of Abu Umama ibn Sahl ibn Hunayf, in the account transmitted by al-Waqidi.\n\nAbu 'Umar said: “Sumayra”—in the diminutive—“bint Qays al-Ansariyya, a Medinan woman; Abu Umama ibn Sahl transmitted from her.” Ibn Sa'd likewise mentioned her in the diminutive and gave her lineage, saying: She was the daughter of Qays ibn Malik ibn Ka'b ibn 'Abd al-Ashhal ibn Haritha ibn Dinar ibn al-Najjar. 'Abd 'Amr ibn 'Abd al-Ashhal married her, and she bore him al-Nu'man, al-Dahhak, Qutba, and Umm al-Riya'; they were Companions. Then 'Amr ibn Ghaziyya ibn 'Amr ibn Tha'laba ibn Mabdhul married her after him, and she bore him children. Then al-Harith ibn Tha'laba ibn Ka'b ibn 'Abd al-Ashhal ibn Haritha ibn Dinar ibn al-Najjar married her after him, and she bore him Salma … They too were Companions.",
+      "arabic_sha256": "d828e9f9a1630253ee3b855ab8909235a496c63a81d3911d99c4b3310c61bfcf",
+      "english_sha256": "6b17ddbbaeb1300eb72b326f990d144c7fe18484fdf5f4e6613a2af5743787c8",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سمراء بنت قيس الأنصارية",
+      "english": "Samra bint Qays al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أمامة بن سهل بن حنيف",
+      "english": "Abu Umama ibn Sahl ibn Hunayf",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس بن مالك بن كعب بن عبد الأشهل بن حارثة بن دينار بن النجار",
+      "english": "Qays ibn Malik ibn Ka'b ibn 'Abd al-Ashhal ibn Haritha ibn Dinar ibn al-Najjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد عمرو بن عبد الأشهل",
+      "english": "'Abd 'Amr ibn 'Abd al-Ashhal",
+      "kind": "person"
+    },
+    {
+      "arabic": "النعمان",
+      "english": "al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "الضحاك",
+      "english": "al-Dahhak",
+      "kind": "person"
+    },
+    {
+      "arabic": "قطبة",
+      "english": "Qutba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الرياع",
+      "english": "Umm al-Riya'",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن غزية بن عمرو بن ثعلبة بن مبذول",
+      "english": "'Amr ibn Ghaziyya ibn 'Amr ibn Tha'laba ibn Mabdhul",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن ثعلبة بن كعب بن عبد الأشهل بن حارثة بن دينار بن النجار",
+      "english": "al-Harith ibn Tha'laba ibn Ka'b ibn 'Abd al-Ashhal ibn Haritha ibn Dinar ibn al-Najjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى",
+      "english": "Salma",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "أم الرياع",
+      "explanation": "The consonants are secure, but the supplied Arabic and Urdu witnesses do not establish the vowels of الرياع. “Umm al-Riya'” is therefore retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0190:32466e2658464c43"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

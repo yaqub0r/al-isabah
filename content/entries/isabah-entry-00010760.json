@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010760",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10760,
+  "title": {
+    "english": "Asiya bint al-Faraj al-Jurhamiyya (1).",
+    "arabic_observed": "آسية بنت الفرج الجرهمية (١)."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010760-segment-0001",
+      "volume": 8,
+      "scan_page": 4,
+      "printed_page": 3,
+      "reader_page": 3916,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3916",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0004:0a8a599d4636fa27",
+      "arabic": "١٠٧٦٠- آسية بنت الفرج الجرهمية (١).\nذكرها ابن منده، وأورد من طريق أيوب بن محمد الوزان، عن يعلى بن الأشدق؛ قال: جاءت آسية بنت الفرج، امرأة من جرهم، وكان مسكنها الحجون بمكة - النبي ﷺ، فقالت: يا رسول الله، إني قد أخطأت على نفسي، وزنيت فطهرني؛ فقال: «هل ولدت؟» قالت: لا. قال: «فما بقي عليك من ولادتك؟» فأخبرته بنحو شهر؛ فقال: «لست بمطهرك حتى تلدي»، قال: فولدت؛ فأتته فأخبرته ... فذكر الحديث بطوله، كذا في الأصل، ولم يخرجه ابن منده.",
+      "english": "10760—Asiya bint al-Faraj al-Jurhamiyya (1).\nIbn Mandah mentioned her and cited, through Ayyub ibn Muhammad al-Wazzan, from Ya'la ibn al-Ashdaq, who said: Asiya bint al-Faraj, a woman of Jurhum whose residence was al-Hajun in Mecca, came to the Prophet—may Allah bless him and grant him peace—and said, “O Messenger of Allah, I have sinned against myself and committed illicit sexual intercourse, so purify me.” He said, “Have you given birth?” She replied, “No.” He asked, “How long remains until you give birth?” She told him approximately one month. He then said, “I will not purify you until you give birth.” He said: She gave birth, then came to him and informed him... He then related the hadith at length. Thus it appears in the original, but Ibn Mandah did not transmit the hadith.",
+      "arabic_sha256": "9d1778f1540eea6eb66138d9d41ecd7fe456604edbd2b1de4e621e87a88f1581",
+      "english_sha256": "92e88b01391dcdeced05a8dbe3b9ea73356fd3f6d3a7c3cc5706cd3740be8185",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "آسية بنت الفرج الجرهمية",
+      "english": "Asiya bint al-Faraj al-Jurhamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن منده",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أيوب بن محمد الوزان",
+      "english": "Ayyub ibn Muhammad al-Wazzan",
+      "kind": "person"
+    },
+    {
+      "arabic": "يعلى بن الأشدق",
+      "english": "Ya'la ibn al-Ashdaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "جرهم",
+      "english": "Jurhum",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الحجون",
+      "english": "al-Hajun",
+      "kind": "place"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

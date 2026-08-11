@@ -16,6 +16,8 @@ from pathlib import Path, PurePosixPath
 
 SCOPE_SCHEMA = "al-isabah.firstlight-migration-scope.v1"
 INVENTORY_SCHEMA = "al-isabah.firstlight-migration-inventory.v1"
+IGNORED_DIRECTORY_NAMES = {"__pycache__", ".pytest_cache", ".mypy_cache"}
+IGNORED_FILE_SUFFIXES = {".pyc", ".pyo"}
 
 
 def sha256_file(path: Path) -> str:
@@ -61,7 +63,13 @@ def files_for_include(source_root: Path, item: dict) -> list[Path]:
     if links:
         relative_link = links[0].relative_to(source_root).as_posix()
         raise RuntimeError(f"Migration trees may not contain symlinks: {relative_link}")
-    return [value for value in descendants if value.is_file()]
+    return [
+        value
+        for value in descendants
+        if value.is_file()
+        and not any(part in IGNORED_DIRECTORY_NAMES for part in value.parts)
+        and value.suffix.lower() not in IGNORED_FILE_SUFFIXES
+    ]
 
 
 def build_inventory(

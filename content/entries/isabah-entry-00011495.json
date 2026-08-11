@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011495",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11495,
+  "title": {
+    "english": "'Amra bint al-Barsa':",
+    "arabic_observed": "عمرة بنت البرصاء:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011495-segment-0001",
+      "volume": 8,
+      "scan_page": 244,
+      "printed_page": 243,
+      "reader_page": 4156,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4156",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0244:348f5494feef74c2",
+      "arabic": "١١٤٩٥- عمرة بنت البرصاء:\nهي بنت الحارث. تأتي.",
+      "english": "11495—'Amra bint al-Barsa':\nShe is the daughter of al-Harith. Her entry follows.",
+      "arabic_sha256": "9b2cee2ae7a599d7ef7f0492575f602b7d3633b7228d4ac8c0c6bd2eb8b1c242",
+      "english_sha256": "ec93aa2720534e775eadece89e3dc6a8b28007743f266c61c97006e48929da1c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمرة بنت البرصاء",
+      "english": "'Amra bint al-Barsa'",
+      "kind": "person"
+    },
+    {
+      "arabic": "البرصاء",
+      "english": "al-Barsa'",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

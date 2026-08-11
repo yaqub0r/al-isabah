@@ -1,0 +1,140 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011798",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11798,
+  "title": {
+    "english": "Mazida al-Asariyya[3]:",
+    "arabic_observed": "مزيدة العصريّة «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011798-segment-0001",
+      "volume": 8,
+      "scan_page": 331,
+      "printed_page": 330,
+      "reader_page": 4243,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4243",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0331:1ac8849640fb7197",
+      "arabic": "١١٧٩٨- مزيدة العصريّة «٣»\n: ذكرها أبو نعيم وأخرج من طريق قيس بن حفص، عن طالب بن حجير، عن هود بن عبد اللَّه بن سعد، عن جدّته مزيدة العصرية- أنّ رسول اللَّه ﵌ عقد رايات الأنصار، وجعلها صفراء «٤»، قال أبو موسى: كذا أورده، ومزيدة رجل لا امرأة. وقد ذكره أبو نعيم في الرّجال على الصّواب، وذكر ابن الأثير نحو كلام أبي موسى، ثم قال: هو رجل، وذكره في النساء وهم. وقد قال البخاريّ: مزيدة العصري له صحبة، روى عنه هود.\nيعدّ في البصريين، وكذا ذكره غير واحد.\nقلت: وقد مضى في الرّجال في حرف الميم.\n(١) في أ: فإن علقمة.\n(٢) شبه ما قلّد أعناقها من الأوزار والآثام أو من وجوب الحج بالأرباق اللازمة لأعناق البهم. النهاية ٢/ ١٩٠.\n(٣) أسد الغابة ت (٧٢٨٦)، تجريد أسماء الصحابة ٢/ ٣٠٤.\n(٤) أورده الهيثمي في الزوائد ٥/ ٣٢٤ عن مزيدة العبديّ وقال: رواه الطبراني وفيه من لم أعرفهم.",
+      "english": "11798 — Mazida al-Asariyya[3]:\n\nAbu Nu'aym mentioned her and transmitted, by way of Qays ibn Hafs, from Talib ibn Hujayr, from Hud ibn Abdullah ibn Sa'd, from his grandmother Mazida al-Asariyya, that the Messenger of Allah—may Allah bless him and grant him peace—tied the banners of the Ansar and made them yellow.[4]\n\nAbu Musa said: “This is how he presented it, but Mazida is a man, not a woman.” Abu Nu'aym had correctly mentioned him among the men. Ibn al-Athir said much the same as Abu Musa, then said: “He is a man, and mentioning him among the women is an error.” al-Bukhari said: “Mazida al-Asari was a Companion; Hud narrated from him.”\n\nHe is counted among the Basrans, and more than one scholar likewise mentioned him as such.\n\nI say: He has already appeared among the men under the letter mim.\n\n[1] In A: fa-inna Alqama, omitting li- before Alqama.\n\n[2] What was hung around their necks—burdens and sins, or the obligation of Hajj—is likened to halters fastened around the necks of beasts. al-Nihaya, 2/190.\n\n[3] Usd al-Ghaba, entry 7286; al-Tajrid, 2/304.\n\n[4] al-Haythami included it in al-Zawa'id, 5/324, on the authority of Mazida al-Abdi, and said: “al-Tabarani narrated it, and its chain includes people whom I do not know.”",
+      "arabic_sha256": "0988fa2361f188c4e09c275551034169b627e85c09099fbc63c84c1c578a74a9",
+      "english_sha256": "3654ba460b343d09ddf5cfc24d20152cf9f05ef290800e61e7cc36a9b6a025de",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "البصرة",
+      "english": "Basra",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "مزيدة العصرية",
+      "english": "Mazida al-Asari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس بن حفص",
+      "english": "Qays ibn Hafs",
+      "kind": "person"
+    },
+    {
+      "arabic": "طالب بن حجير",
+      "english": "Talib ibn Hujayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "هود بن عبد اللَّه بن سعد",
+      "english": "Hud ibn Abdullah ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "مزيدة العصري",
+      "english": "Mazida al-Asari",
+      "kind": "person"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "مزيدة العبدي",
+      "english": "Mazida al-Asari",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010916",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10916,
+  "title": {
+    "english": "Buhayna,",
+    "arabic_observed": "بحينة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010916-segment-0001",
+      "volume": 8,
+      "scan_page": 47,
+      "printed_page": 46,
+      "reader_page": 3959,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3959",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0047:45b7170304b9be78",
+      "arabic": "١٠٩١٦- بحينة ،\nبمهملة ونون مصغرا، بنت الحارث «٢» .\nذكرها ابن إسحاق فيمن قسم له رسول اللَّه ﷺ من خيبر ثلاثين وسقا. وأخرجها المستغفريّ، وأبو موسى، وقال ابن الأثير: هي والدة عبد اللَّه بن بحينة، وقد ذكر ذلك ابن سعد وأفرد لها ترجمة، وقال اسمها عبدة بنت الحارث، وهو الأرت بن المطلب، تزوجها مالك الأزدي حليفا لهم، فولدت له عبد اللَّه بن بحينة، ولهما صحبة، وأسلمت أمّها وبايعت رسول اللَّه ﷺ، وأطعمها من خيبر ثلاثين وسقا.",
+      "english": "10916—Buhayna,\n\nwith an unpointed ha and a nun, in the diminutive form, daughter of al-Harith.²\n\nIbn Ishaq mentioned her among those to whom the Messenger of Allah, may Allah bless him and grant him peace, allotted thirty wasqs from Khaybar. al-Mustaghfiri and Abu Musa included her. Ibn al-Athir said: “She was the mother of Abd Allah ibn Buhayna.” Ibn Sa'd also mentioned this, gave her a separate entry, and said: “Her name was Abda bint al-Harith, al-Harith being al-Art ibn al-Muttalib. Malik al-Azdi, an ally of theirs, married her, and she bore him Abd Allah ibn Buhayna. Both of them were Companions. Her mother accepted Islam and gave the pledge to the Messenger of Allah, may Allah bless him and grant him peace, and he allotted her thirty wasqs from Khaybar.”",
+      "arabic_sha256": "52947c2b328299e831b42daf6f1d7fc1acf45e45c45eb195b2c06718ece05289",
+      "english_sha256": "b35f4de7f6d27636f3a271301d0e5fed35731db721a9d7ffe77947c82f6fce5f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    },
+    {
+      "arabic": "المستغفريّ",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن بحينة",
+      "english": "Abd Allah ibn Buhayna",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبدة بنت الحارث",
+      "english": "Abda bint al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأرت بن المطلب",
+      "english": "al-Art ibn al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "مالك الأزدي",
+      "english": "Malik al-Azdi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source-text referent",
+      "arabic_span": "وأسلمت أمّها وبايعت رسول اللَّه ﷺ، وأطعمها من خيبر ثلاثين وسقا",
+      "explanation": "The canonical text explicitly says “her mother,” and that literal wording has therefore been retained. The collateral accounts indicate that Buhayna herself received the Khaybar allotment, creating a contextual difficulty, but no direct witness supplied here establishes a different Arabic reading.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0047:45b7170304b9be78"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

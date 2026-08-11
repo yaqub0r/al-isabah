@@ -1,0 +1,169 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012297",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12297,
+  "title": {
+    "english": "Umm Waraqa bint Hamza ibn 'Abd al-Muttalib.[5]",
+    "arabic_observed": "أم ورقة بنت حمزة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012297-segment-0001",
+      "volume": 8,
+      "scan_page": 489,
+      "printed_page": 488,
+      "reader_page": 4401,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4401",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0489:11550dfff0eb14c4",
+      "arabic": "١٢٢٩٧- أم ورقة بنت حمزة\nبن عبد المطّلب «٥» .\n(١) أخرجه أبو داود في السنن ١/ ٣٥٦ من بنت الحارث بن النعمان في كتاب الصلاة باب الرجل يخطب على قوس حديث رقم ١١٠٠ والحاكم في المستدرك ١/ ٢٨٤ عن أم هشام بنت الحارث بن النعمان ... الحديث وقال الحاكم في هذا حديث صحيح الإسناد على شرط مسلم ولم يخرجاه ووافقه الذهبي.\n(٢) في أ: أم هشام.\n(٣) في ط: أم هلام.\n(٤) أسد الغابة ت (٧٦٢٤) .\n(٥) الثقات ٣/ ٤٦٦- أعلام النساء ١/ ٦١، ٦١، ص ٤، ١٧٠- تجريد أسماء الصحابة ٢/ ٣٣٧، أسد الغابة ت (٧٦٢٥) .",
+      "english": "12297—Umm Waraqa bint Hamza ibn 'Abd al-Muttalib.[5]\n\n[1] Abu Dawud recorded it in al-Sunan, 1/356, on the authority of the daughter of al-Harith ibn al-Nu'man, in the Book of Prayer, chapter “A Man Delivers the Sermon Leaning on a Bow,” hadith no. 1100; and al-Hakim recorded it in al-Mustadrak, 1/284, on the authority of Umm Hisham bint al-Harith ibn al-Nu'man ... the hadith. Al-Hakim said: “This hadith has a sound isnad according to the criterion of Muslim, though neither of them recorded it.” Al-Dhahabi agreed with him.\n\n[2] The printed text reads “Ibn Hisham”; in A: “Umm Hisham.”\n\n[3] In T: “Umm Hallam.”\n\n[4] Usd al-Ghaba, entry 7624.\n\n[5] Al-Thiqat, 3/466; A'lam al-Nisa', 1/61, 61, p. 4, 170; al-Tajrid, 2/337; Usd al-Ghaba, entry 7625.",
+      "arabic_sha256": "34a2a56e3a9fe3a0b81562be2f14bf1d4b2df9f59cb5c8a8f366ef881f6a95d8",
+      "english_sha256": "afae4365fca13b88bffd51f7e46305348f2ecbf95f384e0cb5c3908a288a0c90",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012297-segment-0002",
+      "volume": 8,
+      "scan_page": 490,
+      "printed_page": 489,
+      "reader_page": 4402,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4402",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0490:b16e41341eb1eb2a",
+      "arabic": "ذكرها أبو موسى، عن المستغفري: ونقل عن ابن حبّان أنه اختلف في اسمها، فقيل أمامة، وقيل غير ذلك. ولم يذكر من كناها أم ورقة.",
+      "english": "Abu Musa mentioned her on the authority of al-Mustaghfiri, and transmitted from Ibn Hibban that there was disagreement concerning her name: it was said to be Umama, and something else was also said. He did not mention who gave her the kunya Umm Waraqa.",
+      "arabic_sha256": "a96a0e42392c18ebc72f8ccc339cacf1c1d6a1063c29d04c0cebacc4cd62d087",
+      "english_sha256": "1d84d72ccfeb10a4fd899f6f6b252581ebe0c3414a2cb5885f2fb4516ec7516f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "السّنن",
+      "english": "al-Sunan",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن هشام",
+      "english": "Ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هشام",
+      "english": "Umm Hisham bint Haritha ibn al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هلام",
+      "english": "Umm Hallam",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم ورقة بنت حمزة بن عبد المطّلب",
+      "english": "Umm Waraqa bint Hamza ibn 'Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "al-Sunan",
+      "kind": "work"
+    },
+    {
+      "arabic": "بنت الحارث بن النعمان",
+      "english": "Umm Hisham bint al-Harith ibn al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الصلاة",
+      "english": "Book of Prayer",
+      "kind": "work"
+    },
+    {
+      "arabic": "باب الرجل يخطب على قوس",
+      "english": "A Man Delivers the Sermon Leaning on a Bow",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم هشام بنت الحارث بن النعمان",
+      "english": "Umm Hisham bint al-Harith ibn al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة",
+      "english": "Umama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

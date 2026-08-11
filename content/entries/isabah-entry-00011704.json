@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011704",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11704,
+  "title": {
+    "english": "Lubna bint Qayzi ibn Qays ibn Lawdhan ibn Tha'laba ibn 'Adi ibn Mujadda'a ibn Haritha al-Ansariyya",
+    "arabic_observed": "لبني بنت قيظي"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011704-segment-0001",
+      "volume": 8,
+      "scan_page": 302,
+      "printed_page": 301,
+      "reader_page": 4214,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4214",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0302:adc267fe23e1d097",
+      "arabic": "١١٧٠٤- لبني بنت قيظي\nبن قيس بن لوذان بن ثعلبة بن عدي بن مجدعة بن حارثة الأنصارية، ذكرها ابن سعد في المبايعات.",
+      "english": "11704—Lubna bint Qayzi ibn Qays ibn Lawdhan ibn Tha'laba ibn 'Adi ibn Mujadda'a ibn Haritha al-Ansariyya\n\nIbn Sa'd mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "cfaf41f62ca396aa6723413bc062216e25b874a2895aa53024b88387f2b7eace",
+      "english_sha256": "61930a908872443f6a76ed7a61c1c2780d7e154f3da52bfe6be8a92f6b9cb0a5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "لبني بنت قيظي بن قيس بن لوذان بن ثعلبة بن عدي بن مجدعة بن حارثة الأنصارية",
+      "english": "Lubna bint Qayzi ibn Qays ibn Lawdhan ibn Tha'laba ibn 'Adi ibn Mujadda'a ibn Haritha al-Ansariyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

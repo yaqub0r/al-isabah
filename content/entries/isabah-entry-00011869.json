@@ -1,0 +1,129 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011869",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11869,
+  "title": {
+    "english": "Hind bint Hubayra (6).",
+    "arabic_observed": "هند بنت هبيرة «٦» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011869-segment-0001",
+      "volume": 8,
+      "scan_page": 349,
+      "printed_page": 348,
+      "reader_page": 4261,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4261",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0349:4bda574326c611c7",
+      "arabic": "١١٨٦٩- هند بنت هبيرة «٦» .\n(١) أسد الغابة ت (٧٣٥١)، الاستيعاب ت (٣٥٦٩) .\n(٢) أسد الغابة ت (٧٣٥٢) .\n(٣) سقط في أ.\n(٤) أسد الغابة ت (٧٣٥٣) .\n(٥) أسد الغابة ت (٧٣٥٤) .\n(٦) أسد الغابة ت (٧٣٥٥) .",
+      "english": "11869—Hind bint Hubayra (6).\n\n(1) Usd al-Ghaba, entry 7351; al-Isti'ab, entry 3569.\n\n(2) Usd al-Ghaba, entry 7352.\n\n(3) Omitted in manuscript A.\n\n(4) Usd al-Ghaba, entry 7353.\n\n(5) Usd al-Ghaba, entry 7354.\n\n(6) Usd al-Ghaba, entry 7355.",
+      "arabic_sha256": "f6b5372e5b366bc826a19fe3fd6023ad442e666edba9830afea25335228802f8",
+      "english_sha256": "b4d45a716c4605ee498e1123b2ae08e1245e9e591f65d84e2205c1ed1db59aa6",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011869-segment-0002",
+      "volume": 8,
+      "scan_page": 350,
+      "printed_page": 349,
+      "reader_page": 4262,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4262",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0350:56b402dc24293c55",
+      "arabic": "ذكرت في حديث ثوبان الّذي أخرجه النّسائيّ، من طريق أبي سلام الحبشيّ، عن أبي أسماء الرّحبي- أن ثوبان مولى رسول اللَّه ﵌ حدث قال: جاءت هند بنت هبيرة إلى رسول اللَّه ﵌ [وفي يدها فتخ، أي خواتم، فجعل رسول اللَّه ﵌] يضرب يدها، فدخلت على فاطمة تشكو إليها الّذي صنع بها.. الحديث، وفيه قوله ﵌: «الحمد للَّه الّذي نجّى فاطمة من النّار» .\nقال ابن الأثير: ذكرها أبو موسى.\nقلت: ولم يقع في النسخة التي وقفت عليها بخط الصّريفيني.",
+      "english": "She was mentioned in the hadith of Thawban that al-Nasa'i transmitted through Abu Salam al-Habashi, from Abu Asma al-Rahabi: Thawban, the client of the Messenger of Allah (may Allah bless him and grant him peace), related, saying: Hind bint Hubayra came to the Messenger of Allah (may Allah bless him and grant him peace), [and on her hand were fatakh—that is, rings—so the Messenger of Allah (may Allah bless him and grant him peace) began striking her hand]. She then went to Fatima and complained to her about what he had done to her ... and the hadith continues. It includes his words (may Allah bless him and grant him peace): “Praise be to Allah, who saved Fatima from the Fire.”\n\nIbn al-Athir said: Abu Musa mentioned her.\n\nI say: She does not appear in the copy I examined, written in al-Sarifini's hand.",
+      "arabic_sha256": "8d052f1a26b60a0e5a32d99b62affa46be0fda678a868c2c8bbeb4c8a5532b72",
+      "english_sha256": "95fae2eaa769636e0870ecf68ce974f247b7b09b8ad68a5c179e3cc340d6d8ea",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "هند بنت هبيرة",
+      "english": "Hind bint Hubayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "ثوبان",
+      "english": "Thawban",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سلام الحبشي",
+      "english": "Abu Salam al-Habashi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أسماء الرحبي",
+      "english": "Abu Asma al-Rahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النار",
+      "english": "the Fire",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصريفيني",
+      "english": "al-Sarifini",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند",
+      "english": "Hind al-Khawlaniyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011064",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11064,
+  "title": {
+    "english": "Humayma bint al-Humam ibn al-Jamuh,",
+    "arabic_observed": "حميمة بنت الحمام بن الجموح ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011064-segment-0001",
+      "volume": 8,
+      "scan_page": 90,
+      "printed_page": 89,
+      "reader_page": 4002,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4002",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0090:d2b7f6cc4d4ff2a9",
+      "arabic": "١١٠٦٤- حميمة بنت الحمام بن الجموح ،\nأخت عمرو «٥» بن الحمام.\n(١) أسد الغابة ت ٦٨٥٨.\n(٢) أخرجه أحمد ٦/ ٢٩١.\n(٣) الاستيعاب ت ٣٣٥٠.\n(٤) أسد الغابة ت ٦٨٥٩.\n(٥) في أ: عمر.",
+      "english": "11064—Humayma bint al-Humam ibn al-Jamuh,\n\nsister of Amr(5) ibn al-Humam.\n\n(1) Usd al-Ghaba, entry 6858.\n(2) Transmitted by Ahmad, 6/291.\n(3) al-Isti'ab, entry 3350.\n(4) Usd al-Ghaba, entry 6859.\n(5) In manuscript A: Umar.",
+      "arabic_sha256": "5d47545a493370f0295347437c53319fe58c581d5f16b847714c4608faa6d3a4",
+      "english_sha256": "4555262e8b1d90d73f1cbb8e8131c0e510ebcc069b6d5c293a6e283db2335c67",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011064-segment-0002",
+      "volume": 8,
+      "scan_page": 91,
+      "printed_page": 90,
+      "reader_page": 4003,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4003",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0091:d880b30f1b3c0a23",
+      "arabic": "ذكرها ابن سعد، واستدركها الذّهبيّ في الحاء المهملة، وقد ذكرها ابن الأثير في الجيم. فليحرر.",
+      "english": "Ibn Sa'd mentioned her, and al-Dhahabi added her under the unpointed letter ha, whereas Ibn al-Athir mentioned her under the letter jim. This should be critically verified.",
+      "arabic_sha256": "d881b446b159a127ac89ced779f7c8195a9542e2dd10c7b4cab3abdb92150ec5",
+      "english_sha256": "82da82f3a309c46e7cde581b7b796af2fa09e0e2cde60e375727f9d8541999cc",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حميمة بنت الحمام بن الجموح",
+      "english": "Humayma bint al-Humam ibn al-Jamuh",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar ibn al-Humam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

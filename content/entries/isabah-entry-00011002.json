@@ -1,0 +1,68 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011002",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11002,
+  "title": {
+    "english": "Jamilah bint Yasar",
+    "arabic_observed": "جميلة بنت يسار ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011002-segment-0001",
+      "volume": 8,
+      "scan_page": 73,
+      "printed_page": 72,
+      "reader_page": 3985,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3985",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0073:67a9c22cb9e5312c",
+      "arabic": "١١٠٠٢- جميلة بنت يسار ،\nتقدم في جمل.",
+      "english": "11002—Jamilah bint Yasar\n\nPreviously mentioned under Juml.",
+      "arabic_sha256": "a1c83aae5d69413c8e5292fb0986bb1e16c55900e08f5b52a391cc351b05f187",
+      "english_sha256": "7e63a7b021120594e890d0a451495b927471f703c6ba5c513a6d9d06b30ac37b",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "جميلة بنت يسار",
+      "english": "Jamilah bint Yasar",
+      "kind": "person"
+    },
+    {
+      "arabic": "جمل",
+      "english": "Juml bint Yasar",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة",
+      "english": "Jamilah bint Abd al-Uzza",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة",
+      "english": "Jamilah bint Abi Jahl",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source_uncertainty",
+      "arabic_span": "ت",
+      "explanation": "The isolated letter between ﷺ and فسماها has no securely identifiable function. It is preserved neutrally rather than labeled a siglum.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0073:67a9c22cb9e5312c"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011899",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11899,
+  "title": {
+    "english": "Umm Aws al-Bahziyya (1)",
+    "arabic_observed": "أم أوس البهزيّة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011899-segment-0001",
+      "volume": 8,
+      "scan_page": 359,
+      "printed_page": 358,
+      "reader_page": 4271,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4271",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0359:6351033704f285eb",
+      "arabic": "١١٨٩٩- أم أوس البهزيّة «١»\n. قال أبو عمر: روى أوس بن خالد حديثها من أعلام النبوّة. وأخرج الطّبراني، وابن مندة، من طريق عصمة بن سليمان عن خلف بن خليفة، عن أبي هاشم الرّماني، عن أوس بن خالد البهزي، عن أم أوس بن خالد البهزيّة- أنها أسلت سمنا لها، فجعلته في عكّة، ثم أهدته للنّبيّ ﵌ فقبله وأخذ ما فيه ودعا لها بالبركة، وردّها إليها، فرأتها ممتلئة سمنا، فظنّت أنه لم يقبلها، فجاءت ولها صراخ، فقال: أخبروها بالقصّة، فأكلت منه بقية عمر النّبي ﵌ وولاية أبي بكر وولاية عمر وولاية عثمان، حتى كان بين عليّ ومعاوية ما كان.\nوأخرجه ابن السّكن، من طريق الحسن بن عرفة، عن خليفة، فلم يذكر أوس بن خالد في السّند.",
+      "english": "11899—Umm Aws al-Bahziyya (1)\n\nAbu Umar said: Aws ibn Khalid transmitted her account, which is one of the signs of prophethood. Al-Tabarani and Ibn Mandah related, through Isma ibn Sulayman, from Khalaf ibn Khalifa, from Abu Hashim al-Rummani, from Aws ibn Khalid al-Bahzi, from his mother, Umm Aws al-Bahziyya, that she melted some ghee of hers, placed it in a leather vessel, and then presented it as a gift to the Prophet (may Allah bless him and grant him peace). He accepted it, took what was in it, prayed that she be blessed, and returned the vessel to her. She saw that it was full of ghee and thought that he had not accepted her gift, so she came crying out loudly. He said, “Tell her what happened.” She continued to eat from it for the remainder of the Prophet's lifetime (may Allah bless him and grant him peace), through the caliphate of Abu Bakr, the caliphate of Umar, and the caliphate of Uthman, until what occurred between Ali and Mu'awiya occurred.\n\nIbn al-Sakan also related it by way of al-Hasan ibn Arafa, from Khalifa, but he did not mention Aws ibn Khalid in the chain of transmission.",
+      "arabic_sha256": "69054b3374b2b2e29153ee34246342fdfb5dc6f379dd62e4ae9772a945c27adb",
+      "english_sha256": "ce8103eaa71c81cf729b721e062dad43c8574af84e03141d47b07605b9fb8ac5",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم أوس البهزية",
+      "english": "Umm Aws al-Bahziyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أوس بن خالد البهزي",
+      "english": "Aws ibn Khalid al-Bahzi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عصمة بن سليمان",
+      "english": "Isma ibn Sulayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "خلف بن خليفة",
+      "english": "Khalaf ibn Khalifa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو هاشم الرماني",
+      "english": "Abu Hashim al-Rummani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن عرفة",
+      "english": "al-Hasan ibn Arafa",
+      "kind": "person"
+    },
+    {
+      "arabic": "خليفة",
+      "english": "Khalifa",
+      "kind": "person"
+    },
+    {
+      "arabic": "بهز، البهزي، البهزية",
+      "english": "Bahz",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأوس، الأوسي",
+      "english": "Aws",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

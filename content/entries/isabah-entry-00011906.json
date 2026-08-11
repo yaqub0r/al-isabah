@@ -1,0 +1,144 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011906",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11906,
+  "title": {
+    "english": "Umm Ayyub bint Masud:²",
+    "arabic_observed": "أم أيوب بنت مسعود «٢»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011906-segment-0001",
+      "volume": 8,
+      "scan_page": 363,
+      "printed_page": 362,
+      "reader_page": 4275,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4275",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0363:0fb0128a4e9a2cf8",
+      "arabic": "١١٩٠٦- أم أيوب بنت مسعود «٢»:\n(١) الثقات ٣/ ٤٥٩ أعلام النساء ١/ ٨٨، الاستبصار ٦٩، ٧٠، ١١٩، ١٢٠، الكاشف ٣/ ٤٨٥ تجريد أسماء الصحابة ٢/ ٣١٣، تقريب التهذيب ٢/ ٦١٩، تهذيب التهذيب ١٢/ ٤٦٠، تهذيب الكمال ٣/ ١٧٠٠، خلاصة تذهيب ٣/ ٣٩٦. تلقيح فهوم أهل الأثر ٣٨٧، الجرح والتعديل ٩/ ٤٦١، أسد الغابة ت (٧٣٧٢)، الاستيعاب ت (٣٥٨٠) .\n(٢) أسد الغابة ت (٧٣٨٣) .",
+      "english": "11906—Umm Ayyub bint Masud:²\n\n¹ al-Thiqat, 3/459; Alam al-Nisa, 1/88; al-Istibsar, 69, 70, 119, 120; al-Kashif, 3/485; al-Tajrid, 2/313; Taqrib al-Tahdhib, 2/619; Tahdhib al-Tahdhib, 12/460; Tahdhib al-Kamal, 3/1700; Khulasat Tadhhib, 3/396; Talqih Fuhum Ahl al-Athar, 387; al-Jarh wa-l-Tadil, 9/461; Usd al-Ghaba, entry 7372; al-Isti'ab, entry 3580.\n\n² Usd al-Ghaba, entry 7383.",
+      "arabic_sha256": "61488d472126d35fac4caff655ba19f20bc5e9be7a0ca6d02889b36027fb772f",
+      "english_sha256": "818cb97261b2abb8a72bd5b62176608f833a02cbf1ba6586b6377cf9ce06c3f8",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011906-segment-0002",
+      "volume": 8,
+      "scan_page": 364,
+      "printed_page": 363,
+      "reader_page": 4276,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4276",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0364:6e0f5cf398860a3a",
+      "arabic": "ذكرها أبو موسى في «الذّيل» ونقل عن المستغفريّ أنّ البخاريّ ذكرها ولم يورد لها شيئا.\nالقسم الثاني",
+      "english": "Abu Musa mentioned her in al-Dhayl and transmitted from al-Mustaghfiri that al-Bukhari had mentioned her but had related nothing concerning her.\n\nSECTION TWO",
+      "arabic_sha256": "8df8c3f8d174a6ff78473d40ffd2e34a5979e2da27f59bff98f101c99bf28f47",
+      "english_sha256": "2dde56d97d071e76c3e14c41a8e65cabede985e67222b890dcf8055351279b43",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم أيوب بنت مسعود",
+      "english": "Umm Ayyub bint Masud",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "Alam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب",
+      "english": "Khulasat Tadhhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "الجرح والتعديل",
+      "english": "al-Jarh wa-l-Tadil",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

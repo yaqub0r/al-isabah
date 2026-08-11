@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011709",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11709,
+  "title": {
+    "english": "Layla bint al-Itnaba ibn Mansur",
+    "arabic_observed": "ليلى بنت الإطنابة بن منصور"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011709-segment-0001",
+      "volume": 8,
+      "scan_page": 303,
+      "printed_page": 302,
+      "reader_page": 4215,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4215",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0303:93e173b6aa8ba109",
+      "arabic": "١١٧٠٩- ليلى بنت الإطنابة بن منصور\nبن معيص- بمهملتين- الأنصاريّة «٤»، من بني الحبلي، ذكرها ابن حبيب في المبايعات.",
+      "english": "11709—Layla bint al-Itnaba ibn Mansur\n\nibn Mu'ays—with two undotted letters—al-Ansariyya,[4] of Banu al-Hubli. Ibn Habib mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "f0dfa4fcb448be9dd98c3c03ff23c366fa3bf0aae50a48cadaa3e1f67e93b4be",
+      "english_sha256": "2a9d19f7c3e65acf27747c6cd1c4dc88ace9239464f2a348542ec5e7e28408f9",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بنو الحبلي",
+      "english": "Banu al-Hubli",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name-vocalization",
+      "arabic_span": "الإطنابة",
+      "explanation": "The consonantal spelling is confirmed, but the supplied witnesses do not establish its precise vocalization. “al-Itnaba” is retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0303:93e173b6aa8ba109"
+    },
+    {
+      "category": "name-vocalization",
+      "arabic_span": "معيص",
+      "explanation": "The witnesses confirm the consonants but not the exact vocalization. “Mu'ays” is retained provisionally with policy-compliant ASCII punctuation.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0303:93e173b6aa8ba109"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

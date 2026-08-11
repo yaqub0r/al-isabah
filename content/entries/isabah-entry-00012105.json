@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012105",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12105,
+  "title": {
+    "english": "Umm Shayba al-Azdiyya (1)",
+    "arabic_observed": "أم شيبة الأزديّة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012105-segment-0001",
+      "volume": 8,
+      "scan_page": 421,
+      "printed_page": 420,
+      "reader_page": 4333,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4333",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0421:706983acd6db7d04",
+      "arabic": "١٢١٠٥- أم شيبة الأزديّة «١»\n. قال أبو عمر: مكيّة، روى عنها عبد الملك بن عمير حديثا في أدب المجالسة، وهو حديث حسن. وقال ابن مندة: لها ذكر في حديث حماد بن سلمة عن عبد الملك بن عمير.\nالقسم الثاني\nخال.\nالقسم الثالث",
+      "english": "12105—Umm Shayba al-Azdiyya (1)\n\nAbu Umar said: “She was Meccan. Abd al-Malik ibn Umayr narrated from her a hadith concerning the etiquette of sitting in company, and it is a hasan hadith.” Ibn Mandah said: “She is mentioned in a hadith of Hammad ibn Salama, from Abd al-Malik ibn Umayr.”\n\nSECTION TWO\n\nEmpty.\n\nSECTION THREE",
+      "arabic_sha256": "c54711fd4ea41edd6b59c8e345f7d43d185fd6262a12c9f7faeb8039f181bc93",
+      "english_sha256": "aee8ac9d7541a0f0e418e143326c7063c8b65d221255ff3211d400460731a1f4",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أزدية",
+      "english": "Azd",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم شيبة الأزديّة",
+      "english": "Umm Shayba al-Azdiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكيّة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "عبد الملك بن عمير",
+      "english": "Abd al-Malik ibn Umayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "حماد بن سلمة",
+      "english": "Hammad ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

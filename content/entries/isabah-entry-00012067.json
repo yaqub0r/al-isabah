@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012067",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12067,
+  "title": {
+    "english": "Umm Salama bint Rafi'",
+    "arabic_observed": "أم سلمة بنت رافع:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012067-segment-0001",
+      "volume": 8,
+      "scan_page": 408,
+      "printed_page": 407,
+      "reader_page": 4320,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4320",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0408:61b8435bc6de9999",
+      "arabic": "١٢٠٦٧- أم سلمة بنت رافع:\nاسمها سعاد. تقدّمت.",
+      "english": "12067—Umm Salama bint Rafi'\n\nHer name was Su'ad. She was mentioned previously.",
+      "arabic_sha256": "f372b0b73ba149f37c061418ce1c65712d01a66aa13504450a15a5e771d63228",
+      "english_sha256": "8c8f1024c7c16efcbe1ee57ebbc9a8fa48029c4ad1208a2ca13dcb57ae39c071",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة بنت رافع",
+      "english": "Umm Salama bint Rafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعاد",
+      "english": "Su'ad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

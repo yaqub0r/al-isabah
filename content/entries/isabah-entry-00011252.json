@@ -1,0 +1,120 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011252",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11252,
+  "title": {
+    "english": "Zaynab bint Ka'b ibn Ujra,⁴",
+    "arabic_observed": "زينب بنت كعب بن عجرة «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011252-segment-0001",
+      "volume": 8,
+      "scan_page": 163,
+      "printed_page": 162,
+      "reader_page": 4075,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4075",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0163:e40af4ae4170ccd3",
+      "arabic": "١١٢٥٢- زينب بنت كعب بن عجرة «٤»\n، صحابية، تزوجها أبو سعيد الخدريّ.\nكذا في التّجريد من زياداته، وكان سلفه فيه أبو إسحاق بن الأمين، فإنه ذكرها في ذيله على الاستيعاب، وكذا ذكرها ابن فتحون وذكرها غيرهما في التابعين، وروايتها عن زوجها أبي سعيد، وأخته الفريعة في السنن الأربعة، ومسند أحمد.\nروى عنها ابنا أخويها سعد بن إسحاق، وسليمان بن محمد ابنا كعب بن عجرة، وذكرها ابن حبّان في الثقات.",
+      "english": "11252—Zaynab bint Ka'b ibn Ujra,⁴\n\na female Companion. Abu Sa'id al-Khudri married her.\n\nThis is stated in al-Tajrid among its author's additions. Its author was preceded in this by Abu Ishaq ibn al-Amin, who mentioned her in his al-Dhayl to al-Isti'ab. Ibn Fathun likewise mentioned her. Others besides those two listed her among the Followers. Her narration from her husband, Abu Sa'id, and from his sister al-Furay'a is found in the four Sunan collections and Musnad Ahmad.\n\nThe sons of her two brothers narrated from her: Sa'd ibn Ishaq and Sulayman ibn Muhammad, whose fathers were the two sons of Ka'b ibn Ujra. Ibn Hibban mentioned her in al-Thiqat.",
+      "arabic_sha256": "83211200cb0f40f3a0fff2b07fdf05d427b228e6af2090107242697d23af0606",
+      "english_sha256": "a78376452e7509c38d862e6afa184b0999b4d2615b09599007657ad5c6594d6a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زينب بنت كعب بن عجرة",
+      "english": "Zaynab bint Ka'b ibn Ujra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سعيد الخدري",
+      "english": "Abu Sa'id al-Khudri",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو إسحاق بن الأمين",
+      "english": "Abu Ishaq ibn al-Amin",
+      "kind": "person"
+    },
+    {
+      "arabic": "ذيله",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن فتحون",
+      "english": "Ibn Fathun",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفريعة",
+      "english": "al-Furay'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن الأربعة",
+      "english": "Four Sunan Collections",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسند أحمد",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "سعد بن إسحاق",
+      "english": "Sa'd ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان بن محمد",
+      "english": "Sulayman ibn Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "كعب بن عجرة",
+      "english": "Ka'b ibn Ujra",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

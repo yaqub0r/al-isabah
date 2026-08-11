@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010891",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10891,
+  "title": {
+    "english": "Unaysa bint Adi",
+    "arabic_observed": "أنيسة بنت عدي"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010891-segment-0001",
+      "volume": 8,
+      "scan_page": 40,
+      "printed_page": 39,
+      "reader_page": 3952,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3952",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0040:fb896d23dab8c7de",
+      "arabic": "١٠٨٩١- أنيسة بنت عدي\nبن نضلة القرشية العدوية «٣» أخت النعمان بن عدي.\nذكرها الزّبير بن بكّار مع أخيها النعمان. وقد تقدم ذكر النعمان في مكانه.\n(١) أسد الغابة ت ٦٧٥٤.\n(٢) أعلام النساء ١/ ٨٧، تجريد أسماء الصحابة ٢/ ٢٤٩.\n(٣) أسد الغابة ت ٦٧٥٥.",
+      "english": "10891—Unaysa bint Adi\n\nibn Nadla, the Qurashi woman of Banu Adi,³ sister of al-Nu'man ibn Adi.\n\nAl-Zubayr ibn Bakkar mentioned her together with her brother al-Nu'man. The account of al-Nu'man has already appeared in its proper place.\n\n¹ Usd al-Ghaba, entry 6754.\n² A'lam al-Nisa, 1/87; al-Tajrid, 2/249.\n³ Usd al-Ghaba, entry 6755.",
+      "arabic_sha256": "c7be2287f7a2124e54a13f507bf9b58d9813960e390756bee2fc497abd952d46",
+      "english_sha256": "9c1ca450e9ab4cb6b69d586b678df850238da2d5407dca0a7e9338d11ff7ea6b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أنيسة بنت عدي الأنصارية",
+      "english": "Unaysa bint Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "العدوية",
+      "english": "Banu Adi",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النعمان بن عدي",
+      "english": "al-Nu'man ibn Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

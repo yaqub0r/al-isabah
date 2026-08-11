@@ -1,0 +1,739 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011092",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11092,
+  "title": {
+    "english": "Khadija bint Khuwaylid (5)",
+    "arabic_observed": "خديجة بنت خويلد «٥»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011092-segment-0001",
+      "volume": 8,
+      "scan_page": 100,
+      "printed_page": 99,
+      "reader_page": 4012,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4012",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0100:b5fe86f8a8ec1ea9",
+      "arabic": "١١٠٩٢- خديجة بنت خويلد «٥»\nبن أسد بن عبد العزى بن قصيّ القرشية الأسدية.\nزوج النبي ﷺ، وأول من صدقت ببعثته مطلقا.\nقال الزّبير بن بكّار: كانت تدعى قبل البعثة الطاهرة، وأمها فاطمة بنت زائدة، قرشية من بني عامر بن لؤيّ، وكانت عند أبي هالة بن زرارة بن النباش بن عدي التميمي أولا، ثم خلف عليها بعد أبي هالة عتيق بن عائذ بن عبد اللَّه بن عمر بن مخزوم، ثم خلف عليها رسول اللَّه ﷺ، هذا قول ابن عبد البر، ونسبه للأكثر.\nوعن قتادة عكس هذا: إن أول أزواجها عتيق، ثم أبو هالة، ووافقه ابن إسحاق في رواية يونس بن بكير عنه، وهكذا في كتاب النسب للزبير بن بكار، لكن حكى القول الأخير أيضا عن بعض الناس، وكان تزويج النبي ﷺ خديجة قبل البعثة بخمس عشرة سنة. وقيل:\nأكثر من ذلك، وكانت موسرة، وكان سبب رغبتها فيه ما حكاه لها غلامها ميسرة مما شاهده من علامات النبوة قبل البعثة، ومما سمعته من بحيرا الراهب في حقه لما سافر معه ميسرة في تجارة خديجة، وولدت من رسول اللَّه ﷺ أولاده كلهم إلا إبراهيم.\nوقد ذكرت في ترجمة كل منهم ما يليق به.\nوقد ذكرت عائشة في حديث بدء الوحي\n(١) أسد الغابة ت ٦٨٧٣.\n(٢) في أالحاء المهملة.\n(٣) في أالحاء المهملة.\n(٤) الثقات ٣/ ١١٤، تجريد أسماء الصحابة ٢/ ٢٦٢.\n(٥) طبقات ابن سعد ٥٢١٨، المعارف ٥٩، تاريخ الفسوي ٣/ ٢٥٣، والمستدرك ٣/ ١٨٢، جامع الأصول ٩/ ١٢٠، تاريخ الإسلام ١/ ٤١، مجمع الزوائد ٩/ ٢١٨، كنز العمال ١٣/ ٦٩٠ شذرات الذهب ١/ ١٤.",
+      "english": "11092—Khadija bint Khuwaylid (5)\nibn Asad ibn Abd al-Uzza ibn Qusayy, al-Qurashiyya al-Asadiyya.\n\nThe wife of the Prophet, may Allah bless him and grant him peace, and the first, without qualification, to affirm the truth of his prophetic mission.\n\nAl-Zubayr ibn Bakkar said: Before the mission she was called al-Tahira. Her mother was Fatima bint Za'ida, a Qurashi woman of Banu Amir ibn Lu'ayy. She was first married to Abu Hala ibn Zurara ibn al-Nabbash ibn Adi al-Tamimi. Then, after Abu Hala, Atiq ibn A'idh ibn Abd Allah ibn Umar ibn Makhzum married her; then the Messenger of Allah, may Allah bless him and grant him peace, married her. This is Ibn Abd al-Barr's account, which he attributed to the majority.\n\nQatada reported the reverse: her first husband was Atiq and then Abu Hala. Ibn Ishaq agreed with him in Yunus ibn Bukayr's narration from him. It is likewise stated in al-Zubayr ibn Bakkar's Book of Genealogy, though he also related the latter view from some people. The Prophet, may Allah bless him and grant him peace, married Khadija fifteen years before the mission; it is also said that it was more than that. She was wealthy. The reason for her interest in him was what her servant Maysara related to her concerning the signs of prophethood that he had witnessed before the mission, and what she had heard from Bahira the monk concerning him when Maysara traveled with him on Khadija's trading business. She bore the Messenger of Allah, may Allah bless him and grant him peace, all his children except Ibrahim.\n\nI have mentioned under the biographical entry for each of them what is appropriate to that person.\n\nAisha mentioned, in the hadith concerning the beginning of revelation—\n\n(1) Usd al-Ghaba, entry 6873.\n\n(2) In manuscript A: “the unpointed letter ha.”\n\n(3) In manuscript A: “the unpointed letter ha.”\n\n(4) al-Thiqat, 3/114; al-Tajrid, 2/262.\n\n(5) al-Tabaqat, 8/52; al-Ma'arif, 59; Tarikh al-Fasawi, 3/253; al-Mustadrak, 3/182; Jami al-Usul, 9/120; Tarikh al-Islam, 1/41; Majma al-Zawa'id, 9/218; Kanz al-Ummal, 13/690; Shadharat al-Dhahab, 1/14.",
+      "arabic_sha256": "413e50d6aaf0ed04d9ea7a12774aa73dc4dc5edbf2d4a887f831d5ca168019fa",
+      "english_sha256": "00417aa747741b4d7bd29d898ae2835705d5fee8f22cc40adceb9e7740ec4dc3",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011092-segment-0002",
+      "volume": 8,
+      "scan_page": 101,
+      "printed_page": 100,
+      "reader_page": 4013,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4013",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0101:f9d0b88be30f17b2",
+      "arabic": "ما صنعته خديجة من تقوية قلب النبي ﷺ لتلقي ما أنزل اللَّه عليه، فقال لها: «لقد خشيت على نفسي» .\nفقالت: كلا، واللَّه لا يخزيك اللَّه أبدا، وذكرت خصاله الحميدة، وتوجهت به إلى ورقة. وهو في الصحيح.\nوقد ذكره ابن إسحاق، فقال: وكانت خديجة أول من آمن باللَّه، ورسوله وصدق بما جاء به، فخفف اللَّه بذلك عن رسول اللَّه ﷺ، فكان لا يسمع شيئا يكرهه من الرد عليه، فيرجع إليها إلا تثبته وتهوّن عليه أمر الناس.\nوعند أبي نعيم في «الدّلائل» بسند ضعيف عن عائشة- أن رسول اللَّه ﷺ كان جالسا معها إذ رأى شخصا بين السماء والأرض، فقالت له خديجة: ادن مني، فدنا منها، فقالت:\nتراه: قال: «نعم» . قالت: أدخل رأسك تحت درعي، ففعل، فقالت: تراه؟ قال: «لا» .\nقالت: أبشر، هذا ملك، إذا لو كان شيطانا لما استحيا، ثم رآه بأجياد، فنزل إليه وبسط له بساطا، وبحث في الأرض فنبع الماء، فعلمه جبرئيل كيف يتوضأ، فتوضأ وصلّى ركعتين نحو الكعبة وبشره بنبوته وعلمه: اقْرَأْ بِاسْمِ رَبِّكَ [العلق: ١]، ثم انصرف، فلم يمر على شجر ولا حجر إلا قال: سلام عليك يا رسول اللَّه، فجاء إلى خديجة فأخبرها، فقالت:\nأرني كيف أراك، فأراها فتوضأت كما توضأ ثم صلت معه، وقالت: أشهد أنك رسول اللَّه.\nقلت: وهذا أصرح ما وقفت عليه في نسبتها إلى الإسلام.\nقال ابن سعد: كانت ذكرت لورقة ابن عمها، فلم يقدر، فتزوجها أبو هالة، ثم عتيق بن عائذ، ثم أسند عن الواقدي بسند له عن عائشة، قال: كانت خديجة تكنى أم هند.\nوعن حكيم بن حزام أنها كانت أسنّ من النبي ﷺ بخمس عشرة سنة.\nوروى عن المدائنيّ بسند له عن ابن عباس- أن نساء أهل مكة اجتمعن في عيد لهن في الجاهلية، فتمثّل فهن رجل، فلما قرب نادى بأعلى صوته: يا نساء مكة، إنه سيكون في بلدكن نبي يقال له أحمد، فمن استطاع منكن أن تكون زوجا له فلتفعل، فحصبنه إلا خديجة، فإنّها عضت على قوله، ولم تعرض له.\nوأسند أيضا عن الواقديّ، من حديث نفيسة أخت يعلى بن أمية، قالت: كانت خديجة ذات شرف وجمال. فذكر قصة إرسالها إلى النبيّ ﷺ وخروجه في التجارة لها إلى سوق بصرى، بربح ضعف ما كان غيره يربح، قالت نفيسة: فأرسلتني خديجة إليه دسيسا أعرض عليه نكاحها، فقبل، وتزوجها وهو ابن خمس وعشرين سنة، فولدت له القاسم، وعبد اللَّه، وهو الطيب، وهو الطاهر، سمي بذلك لأنها ولدته في الإسلام وبناته الأربع، وكان من",
+      "english": "what Khadijah did to strengthen the heart of the Prophet (may Allah bless him and grant him peace) so that he could receive what Allah revealed to him. He said to her, “I feared for myself.”\n\nShe said, “Never! By Allah, Allah will never disgrace you,” and she mentioned his praiseworthy qualities and took him to Waraqa. This is in al-Sahih.\n\nIbn Ishaq also mentioned it, saying: Khadijah was the first to believe in Allah and His Messenger and to affirm the truth of what he brought. Through this, Allah lightened the burden upon the Messenger of Allah (may Allah bless him and grant him peace). Whenever he heard anything he disliked by way of rejection and returned to her, she would reassure him and make the matter of the people easier for him.\n\nIn Abu Nu'aym's al-Dala'il, through a weak chain from Aisha, it is related that the Messenger of Allah (may Allah bless him and grant him peace) was sitting with her when he saw a figure between heaven and earth. Khadijah said to him, “Come close to me.” He came close to her, and she asked, “Do you see him?” He said, “Yes.” She said, “Put your head beneath my shift.” He did so, and she asked, “Do you see him?” He said, “No.” She said, “Rejoice! This is an angel; had he been a devil, he would not have felt shame.” Then he saw him at Ajyad. He descended to him, spread out a mat for him, and dug into the ground, whereupon water sprang forth. Gabriel taught him how to perform ablution, so he performed ablution and prayed two rak'as facing the Ka'ba. He gave him glad tidings of his prophethood and taught him: “Recite in the name of your Lord” [al-'Alaq: 1]. Then he departed. He did not pass by any tree or stone without its saying, “Peace be upon you, O Messenger of Allah.” He then came to Khadijah and informed her. She said, “Show me how he showed you.” He showed her, and she performed ablution as he had performed it. Then she prayed with him and said, “I bear witness that you are the Messenger of Allah.”\n\nI say: This is the most explicit report I have found concerning her acceptance of Islam.\n\nIbn Sa'd said: She had been mentioned as a prospective wife to Waraqa, her cousin, but he was unable to marry her. Abu Hala then married her, followed by Atiq ibn A'idh. Ibn Sa'd then transmitted from al-Waqidi, through a chain of his from Aisha, that Khadijah's kunyah was Umm Hind.\n\nIt is related from Hakim ibn Hizam that she was fifteen years older than the Prophet (may Allah bless him and grant him peace).\n\nHe related from al-Mada'ini, through a chain of his from Ibn Abbas, that the women of Mecca gathered for one of their festivals during the Age of Ignorance. A man appeared among them, and when he drew near, he called out at the top of his voice: “Women of Mecca! There will be in your city a prophet called Ahmad. Whichever of you is able to become his wife, let her do so.” They pelted him with pebbles, except for Khadijah, who took his words to heart and did not accost him.\n\nHe also transmitted from al-Waqidi, from the report of Nafisa, the sister of Ya'la ibn Umayya. She said: Khadijah possessed nobility and beauty. He then related the story of her sending [Nafisa] to the Prophet (may Allah bless him and grant him peace), and of his setting out to trade on her behalf at the market of Busra, making twice the profit that others used to make. Nafisa said: “Khadijah secretly sent me to him to propose that he marry her. He accepted and married her when he was twenty-five years old. She bore him al-Qasim and Abdullah—who was al-Tayyib and al-Tahir, being so named because she bore him during Islam—and his four daughters. And among…”",
+      "arabic_sha256": "f9d0b88be30f17b211598ac9c822c1d27f395c9ae1a3136fa1040c47a8e62897",
+      "english_sha256": "c157c942e4b535355c331112d5c16ca13d4a380a5322d0fbdba6291d5ee3360a",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011092-segment-0003",
+      "volume": 8,
+      "scan_page": 102,
+      "printed_page": 101,
+      "reader_page": 4014,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4014",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0102:455614d7a7fe8609",
+      "arabic": "ولدته ستة. وكانت قابلتها سلمى، مولاة صفية، وكانت تسترضع لولدها وتعدّ ذلك قبل أن تلد.\nثم أسند عن عائشة أن الّذي زوجها عمها عمرو، لأن أباها كان مات في الجاهلية.\nقال الواقديّ: هذا المجمع عليه عندنا، وأسند من طرق أنها حين تزويجها به كانت بنت أربعين سنة.\nوقد أسند الواقديّ قصة تزويج خديجة من طريق أم سعد بنت سعد بن الربيع، عن نفيسة بنت منية أخت يعلى، قال: كانت خديجة امرأة شريفة جلدة كثيرة المال، ولما تأيمت كان كلّ شريف من قريش يتمنى أن يتزوجها، فلما أن سافر النبيّ ﷺ في تجارتها، ورجع بربح وافر رغبت فيه، فأرسلتني دسيسا إليه، فقلت له: ما يمنعك أن تزوج؟ فقال: «ما في يدي شيء» . فقلت: فإن كفيت ودعيت إلى المال والجمال والكفاءة، قال: «ومن»؟ قلت:\nخديجة، فأجاب.\nوفي الصّحيحين، عن عائشة- أن رسول اللَّه ﷺ بشر خديجة ببيت في الجنة من قصب، لا صخب فيه ولا نصب.\nوعند مسلم، من رواية عبد اللَّه بن جعفر بن أبي طالب، عن علي- أنه سمعه يقول:\nسمعت رسول اللَّه ﷺ يقول: «خير نسائها خديجة بنت خويلد، وخير نسائها مريم بنت عمران» «١» .\nوعنده من حديث أبي زرعة: سمعت أبا هريرة يقول: قال رسول اللَّه ﷺ: «أتاني جبريل، فقال: يا رسول اللَّه، هذه خديجة أتتك ومعها إناء فيه طعام وشراب، فإذا هي أتتك فاقرأ عليها من ربّها السّلام ومنّي..» الحديث.\nقال ابن سعد: حدثنا محمد بن عبيد الطنافسي، حدثنا محمد بن عمرو، عن أبي سلمة ويحيى بن عبد الرحمن بن حاطب، قالا: جاءت خولة بنت حكيم فقالت: يا رسول\n(١) أخرجه البخاري في صحيحه ٤/ ٢٠٠، ٥/ ٤٧، ومسلم في الصحيح ٤/ ١٨٨٦ كتاب فضائل الصحابة ٤٤ باب فضائل خديجة أم المؤمنين ﵂ (١٢) حديث رقم (٦٩/ ٢٤٣٠) والترمذي في السنن. ٥/ ٦٥٩- ٦٦٠ كتاب المناقب (٥٠) باب فضل خديجة ﵂ (٦٢) حديث رقم ٣٨٧٧ وقال أبو عيسى الترمذي هذا حديث حسن صحيح، وأحمد في المسند ١/ ٨٤، ١١٦، البيهقي في السنن الكبرى ٩/ ٣٦٧ والحاكم في المستدرك ٢/ ٤٩٧، ٣/ ١٨٤، والمتقي الهندي في كنز العمال حديث ٣٤٤٠٥.",
+      "english": "The children she bore were six. Salma, the freedwoman of Safiyya, was her midwife. Khadija used to seek a wet nurse for her child and make arrangements for that before she gave birth.\n\nThen he transmitted from Aisha that it was her paternal uncle Amr who gave her in marriage, because her father had died during the pre-Islamic period.\n\nAl-Waqidi said: “This is the account unanimously accepted among us.” He also transmitted through several routes that she was forty years old when she married him.\n\nAl-Waqidi also transmitted the account of Khadija's marriage by way of Umm Sa'd bint Sa'd ibn al-Rabi', from Nafisa bint Munya, the sister of Ya'la. She said: “Khadija was a noble, strong woman of great wealth. When she was without a husband, every nobleman of Quraysh wished to marry her. Then, when the Prophet (may Allah bless him and grant him peace) traveled on her trading business and returned with abundant profit, she became interested in him. She sent me secretly to him, and I said, ‘What prevents you from marrying?’ He replied, ‘I have nothing.’ I said, ‘What if that were taken care of for you and you were offered wealth, beauty, and compatibility?’ He asked, ‘Who?’ I said, ‘Khadija.’ He agreed.”\n\nIn the Two Sahihs, from Aisha, it is related that the Messenger of Allah (may Allah bless him and grant him peace) gave Khadija the glad tidings of a house in Paradise made of hollow pearl, in which there would be neither clamor nor weariness.\n\nMuslim also records, through Abd Allah ibn Ja'far ibn Abi Talib, from Ali, whom Abd Allah heard say: “I heard the Messenger of Allah (may Allah bless him and grant him peace) say: ‘The best of its women is Khadija bint Khuwaylid, and the best of its women is Maryam bint Imran.’”¹\n\nMuslim also records from Abu Zur'a: “I heard Abu Hurayra say: The Messenger of Allah (may Allah bless him and grant him peace) said: ‘Gabriel came to me and said, “O Messenger of Allah, here is Khadija coming to you with a vessel containing food and drink. When she comes to you, convey to her greetings of peace from her Lord and from me…”’” —the rest of the hadith.\n\nIbn Sa'd said: Muhammad ibn Ubayd al-Tanafisi related to us: Muhammad ibn Amr related to us, from Abu Salama and Yahya ibn Abd al-Rahman ibn Hatib; the two said: Khawla bint Hakim came and said, “O Messenger—”\n\n¹ Al-Bukhari recorded it in Sahih al-Bukhari, 4/200 and 5/47; Muslim in Sahih Muslim, 4/1886, Book of the Merits of the Companions (44), chapter on the merits of Khadija, Mother of the Believers (may Allah be pleased with her) (12), hadith no. (69/2430); and al-Tirmidhi in al-Sunan, 5/659–660, Book of Virtues (50), chapter on the merit of Khadija (may Allah be pleased with her) (62), hadith no. 3877. Abu Isa al-Tirmidhi said: “This is a hasan sahih hadith.” It was also recorded by Ahmad in Musnad Ahmad, 1/84 and 116; al-Bayhaqi in al-Sunan al-Kubra, 9/367; al-Hakim in al-Mustadrak, 2/497 and 3/184; and al-Muttaqi al-Hindi in Kanz al-Ummal, hadith no. 34405.",
+      "arabic_sha256": "455614d7a7fe8609952759de8fcedcc50a4f0c447a1556d0aad48e606e4c358a",
+      "english_sha256": "984f0d6fada4372294095ca8407e1d904a025aa4d18ff6937beb921ede682a23",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011092-segment-0004",
+      "volume": 8,
+      "scan_page": 103,
+      "printed_page": 102,
+      "reader_page": 4015,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4015",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0103:d30692b16e6bf64c",
+      "arabic": "اللَّه، كأني أراك قد دخلتك خلة لفقد خديجة. قال: «أجل، كانت أمّ العيال وربّة البيت ...»\nالحديث.\nوسنده قوي مع إرساله.\nوقال أيضا: أخبرنا يزيد بن هارون، أخبرنا حماد بن سلمة، عن حميد الطويل، عن عبد اللَّه بن عمير، قال: وجد رسول اللَّه ﷺ على خديجة حتى خشي عليه حتى تزوج عائشة.\nومن مزايا خديجة أنها ما زالت تعظّم النبي ﷺ، وتصدق حديثه قبل البعثة وبعدها، وقالت له لما أرادت أن يتوجّه في تجارتها: إنه دعاني إلى البعث إليك ما بلغني من صدق حديثك، وعظم أمانتك، وكرم أخلاقك، ذكره ابن إسحاق.\nوذكر أيضا أنها قالت لما خطبها: إني قد رغبت فيك لحسن خلقك، وصدق حديثك.\nومن طواعيتها له قبل البعثة أنها رأت ميله إلى زيد بن حارثة بعد أن صار في ملكها، فوهبته له ﷺ، فكانت هي السبب فيما امتاز به زيد من السبق إلى الإسلام، حتى قيل: إنه أول من أسلم مطلقا.\nوأخرج ابن السّنّيّ بسند له عن خديجة- أنها خرجت تلتمس رسول اللَّه ﷺ بأعلى مكة ومعها غذاؤه، فلقيها جبريل في صورة رجل، فسألها عن النبي ﷺ فهابته، وخشيت أن يكون بعض من يريد أن يغتاله، فلما ذكرت ذلك للنّبيّ ﷺ قال لها: «هو جبريل، وقد أمرني أن أقرأ عليك السّلام، وبشّرها ببيت في الجنّة من قصب لا صخب فيه ولا نصب» «١» .\nوأخرجه النّسائيّ، والحاكم، من حديث أنس: جاء جبريل إلى النبي ﷺ، فقال: «إن اللَّه يقرأ على خديجة السّلام»، فقالت: إنّ اللَّه هو السّلام، وعلى جبريل السّلام، وعليك، السلام ورحمة اللَّه.\nوفي «صحيح البخاريّ» عن علي- رفعه: خير نسائها مريم، وخير نسائها خديجة.\nويفسر المراد به\nما أخرجه ابن عبد البرّ في ترجمة فاطمة عن عمران بن حصين- أن النبي ﷺ عاد فاطمة، وهي وجعة، فقال: «كيف تجدينك يا بنيّة؟» قالت: إني لوجعة، وإنه ليزيد ما بي ما لي طعام آكله. فقال: «يا بنيّة، ألا ترضين أنّك سيّدة نساء العالمين؟» قالت:\nيا أبت، فأين مريم بنت عمران؟ قال: «تلك سيّدة نساء عالمها» .\nفعلى هذا مريم خير نساء الأمة الماضية، وخديجة خير نساء الأمة الكائنة.\n(١) أخرجه الحاكم في المستدرك ٣/ ١٨٥ وقال هذا حديث صحيح على شرط مسلم ولم يخرجاه ووافقه الذهبي وأورده الهيثمي في الزوائد. ٩/ ٢٢٧.",
+      "english": "“…of Allah, it is as though I see that need has come upon you because of the loss of Khadijah.” He said, “Indeed. She was the mother of the children and the mistress of the household…” to the end of the hadith.\n\nIts chain of transmission is strong despite its being mursal.\n\nHe also said: Yazid ibn Harun informed us: Hammad ibn Salama informed us, from Humayd al-Tawil, from Abd Allah ibn Umayr, who said: The Messenger of Allah grieved so deeply over Khadijah that there was concern for him, until he married Aisha.\n\nAmong Khadijah's distinctions was that she continually honored the Prophet and affirmed the truth of what he said, both before and after the prophetic mission. When she wished him to undertake her trading venture, she said to him, “What prompted me to send for you was what has reached me concerning the truthfulness of your speech, the greatness of your trustworthiness, and the nobility of your character.” Ibn Ishaq related this.\n\nHe also related that when he proposed marriage to her, she said, “I have taken a liking to you because of your fine character and the truthfulness of your speech.”\n\nOne instance of her compliance with him before the prophetic mission was that, after Zayd ibn Haritha had come into her ownership, she saw the Prophet's inclination toward Zayd and gave him to the Prophet. She was therefore the cause of the distinction Zayd attained through his precedence in accepting Islam, to the extent that it was said that he was the very first person to accept Islam, without qualification.\n\nIbn al-Sunni transmitted, through a chain of his, from Khadijah that she went out to look for the Messenger of Allah in the upper part of Mecca, carrying his food with her. Gabriel met her in the form of a man and asked her about the Prophet. She was apprehensive of him, fearing that he might be one of those who wished to assassinate the Prophet. When she mentioned this to the Prophet, he told her, “That was Gabriel. He commanded me to convey greetings of peace to you,” and he gave her glad tidings of a house in Paradise made of hollow pearl, in which there would be neither clamor nor fatigue.[1]\n\nThis was also transmitted by al-Nasa'i and al-Hakim from a report of Anas: Gabriel came to the Prophet and said, “Allah sends greetings of peace to Khadijah.” She said, “Indeed, Allah is Peace; peace be upon Gabriel, and upon you be peace and the mercy of Allah.”\n\nIn Sahih al-Bukhari, it is related from Ali, who attributed it to the Prophet: “The best of its women is Mary, and the best of its women is Khadijah.”\n\nThe intended meaning of this is explained by what Ibn Abd al-Barr transmitted in the biography of Fatima, from Imran ibn Husayn: The Prophet visited Fatima when she was ill and said, “How are you feeling, my little daughter?” She said, “I am indeed in pain, and what makes my condition still worse is that I have no food to eat.” He said, “My little daughter, are you not content to be the foremost of the women of all the worlds?” She said, “Father, then what of Mary bint Imran?” He said, “She was the foremost of the women of her world.”\n\nAccordingly, Mary was the best of the women of the former community, and Khadijah was the best of the women of the present community.\n\n[1] This was transmitted by al-Hakim in al-Mustadrak, 3/185. He said, “This is a sound hadith according to Muslim's criteria, though neither al-Bukhari nor Muslim included it.” al-Dhahabi agreed with him, and al-Haythami cited it in al-Zawa'id, 9/227.",
+      "arabic_sha256": "d30692b16e6bf64c1c8f8619c927de88258921c3891b26aa6743bb2aa6eea815",
+      "english_sha256": "bb04b6160c1bebf6979d72b9451ec516031c0ef30640b65a0f40f349e74580e6",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011092-segment-0005",
+      "volume": 8,
+      "scan_page": 104,
+      "printed_page": 103,
+      "reader_page": 4016,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4016",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0104:2809cdbf4ed3a53a",
+      "arabic": "ويحمل قصة فاطمة إن ثبتت على أحد أمرين: إما التفرقة بين السيادة والخيرية، وإما أن يكون ذلك بالنسبة إلى من وجد من النساء حين ذكر قصة فاطمة.\nوقد أثنى النبي ﷺ على خديجة ما لم يثن على غيرها، وذلك\nفي حديث عائشة، قالت: كان رسول اللَّه ﷺ لا يكاد يخرج من البيت حتى يذكر خديجة فيحسن الثناء عليها، فذكرها يوما من الأيام، فأخذتني الغيرة، فقلت: هل كانت إلا عجوزا قد أبدلك اللَّه خيرا منها، فغضب. ثم قال: «لا، واللَّه ما أبدلني اللَّه خيرا منها، آمنت إذ كفر النّاس، وصدّقتني إذ كذّبني النّاس، وواستني بمالها إذ حرمني النّاس، ورزقني منها اللَّه الولد دون غيرها من النّساء.»\nقالت عائشة: فقلت في نفسي: لا أذكرها بعدها بسبة أبدا.\nأخرجه أبو عمر أيضا، رويناه في كتاب الذرية الطاهرة للدّولابي من طريق وائل بن أبي داود، عن عبد اللَّه البهي، عن عائشة.\nوفي الصحيح عن عائشة: كان رسول اللَّه ﷺ إذا ذبح الشاة يقول: «أرسلوا إلى أصدقاء خديجة» «١» . فقال: فذكرت له يوما، فقال: «إنّي لأحبّ حبيبها» .\nقال ابن إسحاق: كانت وفاة خديجة وأبي طالب في عام واحد، وكانت خديجة وزيد صدقا على الإسلام، وكان يسكن إليها. وقال غيره: ماتت قبل الهجرة بثلاث سنين على الصحيح، وقيل بأربع، وقيل بخمس.\nوقالت عائشة: ماتت قبل أن تفرض الصلاة، يعني قبل أن يعرج بالنبيّ ﷺ، ويقال:\nكان موتها في رمضان.\nوقال الواقديّ: توفيت لعشر خلون من رمضان، وهي بنت خمس وستين سنة، ثم أسند من حديث حكيم بن حزام أنها توفيت سنة عشر من البعثة بعد خروج بني هاشم من الشعب، ودفنت بالحجون، ونزل النبي اللَّه ﷺ في حفرتها، ولم تكن شرعت الصلاة على الجنائز.",
+      "english": "The account concerning Fatima, if it is established, may be understood in one of two ways: either by distinguishing between preeminence and superior merit, or by taking it as referring only to those women who were alive when the account concerning Fatima was mentioned.\n\nThe Prophet—may Allah bless him and grant him peace—praised Khadijah as he praised no one else. This is found in the hadith of Aisha, who said: The Messenger of Allah—may Allah bless him and grant him peace—would hardly leave the house without mentioning Khadijah and speaking highly of her. One day he mentioned her, and jealousy seized me, so I said, “Was she anything but an old woman? Allah has given you someone better than her in her place.” He became angry and then said: “No, by Allah! Allah did not give me anyone better than her in her place. She believed when the people disbelieved; she believed me when the people called me a liar; she supported me with her wealth when the people withheld from me; and through her Allah granted me children, to the exclusion of the other women.”\n\nAisha said: I said to myself, “After this, I shall never mention her disparagingly again.”\n\nAbu Umar also reported it. We narrated it in al-Dulabi's book al-Dhurriyya al-Tahira, through Wail ibn Abi Dawud, from Abdullah al-Bahi, from Aisha.\n\nIn the Sahih, from Aisha: Whenever the Messenger of Allah—may Allah bless him and grant him peace—slaughtered a sheep, he would say, “Send some to Khadijah's friends.”¹ She said: “I mentioned her to him one day, and he said, ‘Indeed, I love the one she loved.’”\n\nIbn Ishaq said: Khadijah and Abu Talib died in the same year. Khadijah was a true and faithful supporter in Islam, and he would find repose with her. Another authority said: She died three years before the Hijra, according to the sound view; it was also said four years, and it was said five.\n\nAisha said: She died before the prayer was made obligatory—that is, before the Prophet—may Allah bless him and grant him peace—was taken up. It is also said that she died in Ramadan.\n\nal-Waqidi said: She died after ten nights of Ramadan had elapsed, at the age of sixty-five. He then furnished an isnad from a report of Hakim ibn Hizam stating that she died in the tenth year of the prophetic mission, after Banu Hashim had left the ravine. She was buried at al-Hajun, and the Prophet of Allah—may Allah bless him and grant him peace—descended into her grave. The funeral prayer had not yet been instituted.",
+      "arabic_sha256": "146565172ffa4181f52521dad6dfdad1b4620606fb08eed10cbebbb94b9bd986",
+      "english_sha256": "e7eb3ff17446973a5710bda1a4a9137300087de6d83a95a602c29b4b50a3bdf8",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Prophet Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطاهرة",
+      "english": "al-Tahira",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت زائدة",
+      "english": "Fatima bint Za'ida",
+      "kind": "person"
+    },
+    {
+      "arabic": "قرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني عامر بن لؤي",
+      "english": "Banu Amir ibn Lu'ayy",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبي هالة بن زرارة بن النباش بن عدي التميمي",
+      "english": "Abu Hala ibn Zurara ibn al-Nabbash ibn Adi al-Tamimi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عتيق بن عائذ بن عبد الله بن عمر بن مخزوم",
+      "english": "Atiq ibn A'idh ibn Abd Allah ibn Umar ibn Makhzum",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبد البر",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتادة",
+      "english": "Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن بكير",
+      "english": "Yunus ibn Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب النسب",
+      "english": "Book of Genealogy",
+      "kind": "work"
+    },
+    {
+      "arabic": "ميسرة",
+      "english": "Maysara",
+      "kind": "person"
+    },
+    {
+      "arabic": "بحيرا الراهب",
+      "english": "Bahira",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم",
+      "english": "Ibrahim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "المعارف",
+      "english": "al-Ma'arif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ الفسوي",
+      "english": "Tarikh al-Fasawi",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "جامع الأصول",
+      "english": "Jami al-Usul",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ الإسلام",
+      "english": "Tarikh al-Islam",
+      "kind": "work"
+    },
+    {
+      "arabic": "مجمع الزوائد",
+      "english": "Majma al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "شذرات الذهب",
+      "english": "Shadharat al-Dhahab",
+      "kind": "work"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ورقة",
+      "english": "Waraqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "al-Sahih",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدّلائل",
+      "english": "al-Dala'il",
+      "kind": "work"
+    },
+    {
+      "arabic": "أجياد",
+      "english": "Ajyad",
+      "kind": "place"
+    },
+    {
+      "arabic": "جبرئيل",
+      "english": "Gabriel",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكعبة",
+      "english": "Ka'ba",
+      "kind": "place"
+    },
+    {
+      "arabic": "العلق",
+      "english": "al-'Alaq",
+      "kind": "work"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو هالة",
+      "english": "Abu Hala",
+      "kind": "person"
+    },
+    {
+      "arabic": "عتيق بن عائذ",
+      "english": "Atiq ibn A'idh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هند",
+      "english": "Umm Hind",
+      "kind": "person"
+    },
+    {
+      "arabic": "حكيم بن حزام",
+      "english": "Hakim ibn Hizam",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدائنيّ",
+      "english": "al-Mada'ini",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "الجاهلية",
+      "english": "Age of Ignorance",
+      "kind": "other"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "نفيسة",
+      "english": "Nafisa",
+      "kind": "person"
+    },
+    {
+      "arabic": "يعلى بن أمية",
+      "english": "Ya'la ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بصرى",
+      "english": "Busra",
+      "kind": "place"
+    },
+    {
+      "arabic": "القاسم",
+      "english": "al-Qasim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abdullah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطيب",
+      "english": "al-Tayyib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطاهر",
+      "english": "al-Tahir",
+      "kind": "person"
+    },
+    {
+      "arabic": "الإسلام",
+      "english": "Islam",
+      "kind": "other"
+    },
+    {
+      "arabic": "سلمى",
+      "english": "Salma",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية",
+      "english": "Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة بنت خويلد",
+      "english": "Khadija bint Khuwaylid",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو",
+      "english": "Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعد بنت سعد بن الربيع",
+      "english": "Umm Sa'd bint Sa'd ibn al-Rabi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "نفيسة بنت منية",
+      "english": "Nafisa bint Munya",
+      "kind": "person"
+    },
+    {
+      "arabic": "يعلى",
+      "english": "Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيحين",
+      "english": "Two Sahihs",
+      "kind": "work"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجنة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن جعفر بن أبي طالب",
+      "english": "Abd Allah ibn Ja'far ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "مريم بنت عمران",
+      "english": "Maryam bint Imran",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو زرعة",
+      "english": "Abu Zur'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو هريرة",
+      "english": "Abu Hurayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "جبريل",
+      "english": "Gabriel",
+      "kind": "other"
+    },
+    {
+      "arabic": "محمد بن عبيد الطنافسي",
+      "english": "Muhammad ibn Ubayd al-Tanafisi",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمرو",
+      "english": "Muhammad ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سلمة",
+      "english": "Abu Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن عبد الرحمن بن حاطب",
+      "english": "Yahya ibn Abd al-Rahman ibn Hatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت حكيم",
+      "english": "Khawla bint Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيحه",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "كتاب فضائل الصحابة",
+      "english": "Book of the Merits of the Companions",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عيسى الترمذي",
+      "english": "Abu Isa al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "al-Sunan",
+      "kind": "work"
+    },
+    {
+      "arabic": "كتاب المناقب",
+      "english": "Book of Virtues",
+      "kind": "work"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن الكبرى",
+      "english": "al-Sunan al-Kubra",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah bint Khuwaylid",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن هارون",
+      "english": "Yazid ibn Harun",
+      "kind": "person"
+    },
+    {
+      "arabic": "حماد بن سلمة",
+      "english": "Hammad ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "حميد الطويل",
+      "english": "Humayd al-Tawil",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عمير",
+      "english": "Abd Allah ibn Umayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن حارثة",
+      "english": "Zayd ibn Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن السّنّيّ",
+      "english": "Ibn al-Sunni",
+      "kind": "person"
+    },
+    {
+      "arabic": "جبريل",
+      "english": "Gabriel",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجنّة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "النّسائيّ",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس",
+      "english": "Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيح البخاريّ",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "مريم بنت عمران",
+      "english": "Mary bint Imran",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبد البرّ",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمران بن حصين",
+      "english": "Imran ibn Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدولابي",
+      "english": "al-Dulabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذرية الطاهرة",
+      "english": "al-Dhurriyya al-Tahira",
+      "kind": "work"
+    },
+    {
+      "arabic": "وائل بن أبي داود",
+      "english": "Wail ibn Abi Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله البهي",
+      "english": "Abdullah al-Bahi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو طالب",
+      "english": "Abu Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهجرة",
+      "english": "Hijra",
+      "kind": "other"
+    },
+    {
+      "arabic": "رمضان",
+      "english": "Ramadan",
+      "kind": "other"
+    },
+    {
+      "arabic": "بنو هاشم",
+      "english": "Banu Hashim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الحجون",
+      "english": "al-Hajun",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source_uncertainty",
+      "arabic_span": "ونزل النبي اللَّه ﷺ في حفرتها",
+      "explanation": "The malformed النبي اللَّه could represent نبي الله (“the Prophet of Allah”) or النبي ﷺ (“the Prophet”) after textual or extraction corruption. No direct al-Isabah witness containing this continuation was supplied. The final text provisionally uses “the Prophet of Allah” because it accounts for both lexical elements, but the precise underlying title remains uncertain.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0104:2809cdbf4ed3a53a"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

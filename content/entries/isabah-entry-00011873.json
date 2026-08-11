@@ -1,0 +1,165 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011873",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11873,
+  "title": {
+    "english": "Hind al-Juhaniyya",
+    "arabic_observed": "هند الجهنيّة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011873-segment-0001",
+      "volume": 8,
+      "scan_page": 350,
+      "printed_page": 349,
+      "reader_page": 4262,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4262",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0350:56b402dc24293c55",
+      "arabic": "١١٨٧٣- هند الجهنيّة\nذكرها أبو موسى في «الذّيل»، عن المستغفريّ، عن الحسن بن محمد بن أبي عبد اللَّه بن محفوظ السّمرقنديّ، عن أبي بكر الشّافعيّ، عن أبي العبّاس مسروق، عن عمر بن الحكم، وحفص الوراق، والقاسم بن الحسن، عن ابن سعد، عن أبيه، قال: كان في بدء الإسلام رجل شاب يقال له بشر، وكان من بني أسد بن عبد العزّى، وكان إذا توّجه إلى رسول اللَّه ﵌ أخذ على جهينة، فنظرت إليه فتاة جميلة ولها زوج يقال له سعد بن سعيد، فعلقته، فكانت تعقد له كل غداة لينظر إليها ... فذكر القصّة مطوّلة.\nوقد تقدّمت الإشارة إليها في ترجمة بشر الأسديّ من حرف الباء الموحدة من الرّجال.\n(١) أسد الغابة ت (٧٣٥٦) .\n(٢) أسد الغابة ت (٧٣٥٧)، الاستيعاب ت (٣٥٧٠)، طبقات ابن سعد ٨/ ٢٢٠، تاريخ خليفة ٩٢، المعارف ١٤٠، المستدرك ٤/ ٣٥.",
+      "english": "11873—Hind al-Juhaniyya\n\nAbu Musa mentioned her in al-Dhayl, from al-Mustaghfiri, from al-Hasan ibn Muhammad ibn Abi Abd Allah ibn Mahfuz al-Samarqandi, from Abu Bakr al-Shafi'i, from Abu al-Abbas Masruq, from Umar ibn al-Hakam, Hafs al-Warraq, and al-Qasim ibn al-Hasan, from Ibn Sa'd, from his father, who said: At the beginning of Islam there was a young man called Bishr. He belonged to Banu Asad ibn Abd al-Uzza. Whenever he set out for the Messenger of Allah (may Allah bless him and grant him peace), he took a route through Juhayna. A beautiful young woman saw him; she had a husband called Sa'd ibn Sa'id. She became infatuated with him, and every morning she would arrange for him to look at her ... He then related the story at length.\n\nReference to this story has already been made in the entry on Bishr al-Asadi, under the single-dotted letter ba in the section on men.\n\n¹ Usd al-Ghaba, entry 7356.\n\n² Usd al-Ghaba, entry 7357; al-Isti'ab, entry 3570; al-Tabaqat of Ibn Sa'd, 8/220; Tarikh Khalifa, 92; al-Ma'arif, 140; al-Mustadrak, 4/35.",
+      "arabic_sha256": "969f4a883e00612888580cef7c5ea9b9ce7353391f1aa83d92d3ffff9e45dca9",
+      "english_sha256": "e114409cc49fab299c0bab2be730e7256fff262eaa0d619359a4f37f19dd5183",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند",
+      "english": "Hind al-Khawlaniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند الجهنية",
+      "english": "Hind al-Juhaniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن محمد بن أبي عبد اللَّه بن محفوظ السمرقندي",
+      "english": "al-Hasan ibn Muhammad ibn Abi Abd Allah ibn Mahfuz al-Samarqandi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر الشافعي",
+      "english": "Abu Bakr al-Shafi'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو العباس مسروق",
+      "english": "Abu al-Abbas Masruq",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن الحكم",
+      "english": "Umar ibn al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفص الوراق",
+      "english": "Hafs al-Warraq",
+      "kind": "person"
+    },
+    {
+      "arabic": "القاسم بن الحسن",
+      "english": "al-Qasim ibn al-Hasan",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشر",
+      "english": "Bishr al-Asadi",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني أسد بن عبد العزى",
+      "english": "Banu Asad ibn Abd al-Uzza",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "جهينة",
+      "english": "Juhayna",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سعد بن سعيد",
+      "english": "Sa'd ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشر الأسدي",
+      "english": "Bishr al-Asadi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ خليفة",
+      "english": "Tarikh Khalifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "المعارف",
+      "english": "al-Ma'arif",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

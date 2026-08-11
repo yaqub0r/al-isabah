@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011133",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11133,
+  "title": {
+    "english": "Khawla bint Qays²",
+    "arabic_observed": "خولة بنت قيس «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011133-segment-0001",
+      "volume": 8,
+      "scan_page": 121,
+      "printed_page": 120,
+      "reader_page": 4033,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4033",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0121:451efd762885e440",
+      "arabic": "١١١٣٣- خولة بنت قيس «٢»\n، أم صبيّة، بصاد مهملة ثم موحدة مصغرة، مع التثقيل.\nأخرج الطّبرانيّ، من طريق خارجة بن الحارث بن رافع بن مكيث الجهنيّ، عن سالم بن سرح مولى أم صبيّة بنت قيس، وهي خولة بنت قيس، وهي جدة خارجة بن الحارث- أنه سمعها تقول: اختلفت يدي ويد رسول اللَّه ﷺ في إناء واحد. وأخرجه أبو نعيم من وجه آخر عن خارجة بن الحارث، وزعم ابن مندة أنّ أم صبيّة هي خولة بنت قيس بن قهد، وردّ عليه أبو نعيم فأصاب. وقد فرّق بينهما ابن سعد وغيره.",
+      "english": "11133—Khawla bint Qays²\n\nUmm Subayya—with an unpointed sad, followed by a single-dotted ba, in the diminutive form and with gemination.\n\nal-Tabarani transmitted, through Kharija ibn al-Harith ibn Rafi' ibn Makith al-Juhani, from Salim ibn Sarh, the client of Umm Subayya bint Qays—she being Khawla bint Qays and the grandmother of Kharija ibn al-Harith—that he heard her say: “My hand and the hand of the Messenger of Allah, may Allah bless him and grant him peace, moved in turn in a single vessel.” Abu Nu'aym transmitted it by another route from Kharija ibn al-Harith. Ibn Manda asserted that Umm Subayya was Khawla bint Qays ibn Qahd, but Abu Nu'aym refuted him and was correct. Ibn Sa'd and others also distinguished between the two women.",
+      "arabic_sha256": "34ada485641686288cf9105c7240acdf1d23e5092a15f4446c0e515de165eee9",
+      "english_sha256": "4312b024830ebd67c5c161a426302ab3de898e60d9faccda3cbcdc3bf5f84235",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خولة بنت قيس بن قهد",
+      "english": "Khawla bint Qays ibn Qahd",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله ﷺ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت قيس",
+      "english": "Khawla bint Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم صبية بنت قيس",
+      "english": "Umm Subayya bint Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "خارجة بن الحارث بن رافع بن مكيث الجهني",
+      "english": "Kharija ibn al-Harith ibn Rafi' ibn Makith al-Juhani",
+      "kind": "person"
+    },
+    {
+      "arabic": "سالم بن سرح",
+      "english": "Salim ibn Sarh",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

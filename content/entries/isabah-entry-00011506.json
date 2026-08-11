@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011506",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11506,
+  "title": {
+    "english": "Amra bint Uwaym³",
+    "arabic_observed": "عمرة بنت عويم «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011506-segment-0001",
+      "volume": 8,
+      "scan_page": 246,
+      "printed_page": 245,
+      "reader_page": 4158,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4158",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0246:22e2ad2466062f85",
+      "arabic": "١١٥٠٦- عمرة بنت عويم «٣»\n: ذكرها المستغفريّ عن البخاريّ، واستدركها أبو موسى.",
+      "english": "11506—Amra bint Uwaym³\nal-Mustaghfiri mentioned her on the authority of al-Bukhari, and Abu Musa included her by way of supplement.",
+      "arabic_sha256": "f709b98b1a5c7fafc5d9591e8406d9beefd97879568d6f1955ba877f9039d376",
+      "english_sha256": "cc6b6dfa2d6941ce823805dcb7948a7fdbbe45b5e858539f2d07f090bb77398f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة بنت عويم",
+      "english": "Amra bint Uwaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011146",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11146,
+  "title": {
+    "english": "Khadijah bint al-Zubayr ibn al-Awwam.",
+    "arabic_observed": "خديجة بنت الزبير"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011146-segment-0001",
+      "volume": 8,
+      "scan_page": 126,
+      "printed_page": 125,
+      "reader_page": 4038,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4038",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0126:a6a9e6ceddb77e24",
+      "arabic": "١١١٤٦- خديجة بنت الزبير\nبن العوّام.\nتقدم ذكرها في القسم الأول، ويغلب علي الظنّ أنها من أهل هذا القسم، وأنها كانت في العهد النبوي صغيرة.\nالقسم الثالث",
+      "english": "11146. Khadijah bint al-Zubayr ibn al-Awwam.\n\nShe was mentioned previously in the first section. I am strongly inclined to think that she belongs to this section and that she was a young child during the Prophetic era.\n\nSECTION THREE",
+      "arabic_sha256": "cc05a6f2ddde9278e48ccbe78d0d9d8587410a63c4468661f1b8eed01343cd33",
+      "english_sha256": "5a88a63feb1022ae1a78fc62f4d574b73db4b4ceae49c5c67f1e1a5ab035b3d0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خديجة بنت الزبير بن العوّام",
+      "english": "Khadijah bint al-Zubayr ibn al-Awwam",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Prophet",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

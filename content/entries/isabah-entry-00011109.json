@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011109",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11109,
+  "title": {
+    "english": "Khunas¹",
+    "arabic_observed": "خناس «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011109-segment-0001",
+      "volume": 8,
+      "scan_page": 109,
+      "printed_page": 108,
+      "reader_page": 4021,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4021",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0109:4db6c4f9ef5e61b2",
+      "arabic": "١١١٠٩- خناس «١»\n: في اللتين بعدها بنت خذام الشاعرة.",
+      "english": "11109—Khunas¹\n\n[See] the two later entries: Khansa bint Khidham and Khansa the poetess.",
+      "arabic_sha256": "dabb2873952e71900cc0463d88de0c1767856eb78bc2fc862a39edc1a8e6b8dd",
+      "english_sha256": "be1ea49dfbcb7877abae9a901cdd1b7c594d1c794f77fbd3231c4ebc6cc05868",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خناس",
+      "english": "Khunas",
+      "kind": "person"
+    },
+    {
+      "arabic": "خنساء",
+      "english": "Khansa",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنت خذام",
+      "english": "Khansa bint Khidham ibn Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشاعرة",
+      "english": "Khansa bint Amr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

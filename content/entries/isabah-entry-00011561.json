@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011561",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11561,
+  "title": {
+    "english": "Ghathina²:",
+    "arabic_observed": "غاثنة «٢»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011561-segment-0001",
+      "volume": 8,
+      "scan_page": 255,
+      "printed_page": 254,
+      "reader_page": 4167,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4167",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0255:45e9e7d78ac67bbf",
+      "arabic": "١١٥٦١- غاثنة «٢»:\nبمثلثة بعد الألف وقبل النون، وقيل إنها مثناة تحتانية.\nقال ابن مندة: روى ابن وهب، عن عثمان، عن عطاء الخراساني، عن أبيه- أنها أنت النبيّ ﵌ فقال: إنّ أمّي ماتت وعليها نذر أن تمشي إلى الكعبة، فقال:\n«اقضي عنها» .",
+      "english": "11561—Ghathina²:\n\nWith a tha after the alif and before the nun; it is also said to have a ya instead.\n\nIbn Manda said: Ibn Wahb narrated from Uthman, from Ata al-Khurasani, from his father, that she came to the Prophet, may Allah bless him and grant him peace, and said, “My mother died with a vow incumbent upon her to walk to the Kaaba.” He said:\n\n“Discharge it on her behalf.”",
+      "arabic_sha256": "b088369de043da0d9e2d0e04da14dd106b51e683c9af2380a69d8396097f4096",
+      "english_sha256": "bf3fbb814582277d203da4fd82c00d96b2bbce0060985edda24123ab7287bc5c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "غاثنة",
+      "english": "Ghathina",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن وهب",
+      "english": "Ibn Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاء الخراساني",
+      "english": "Ata al-Khurasani",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكعبة",
+      "english": "Kaaba",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

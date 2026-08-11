@@ -1,0 +1,98 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011403",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11403,
+  "title": {
+    "english": "Safiyya bint Bushama⁴",
+    "arabic_observed": "صفية بنت بشامة «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011403-segment-0001",
+      "volume": 8,
+      "scan_page": 210,
+      "printed_page": 209,
+      "reader_page": 4122,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4122",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0210:cef0daed91286189",
+      "arabic": "١١٤٠٣- صفية بنت بشامة «٤»\n، أخت الأعور «٥»، من بني العنبر بن تميم.\nذكرها ابن حبيب في المحبر ممن خطبهنّ النبي ﷺ ولم يدخل بهنّ.\nقلت:\nوأسند ابن سعد عن ابن عباس بسند فيه الكلبي أنّ النبي ﷺ خطبها وكان أصابها سباء فخيرها النبيّ ﷺ، فقال: «إن شئت أنا وإن شئت زوجك» . فقالت: بل زوجي، فأرسلها فلعنها بنو تميم.",
+      "english": "11403 — Safiyya bint Bushama⁴\n\nThe sister of al-A'war⁵, from the Banu al-Anbar ibn Tamim.\n\nIbn Habib mentioned her in al-Muhabbar among the women to whom the Prophet, may Allah bless him and grant him peace, proposed marriage but with whom he did not consummate a marriage.\n\nI say:\n\nIbn Sa'd transmitted from Ibn Abbas, through a chain containing al-Kalbi, that the Prophet, may Allah bless him and grant him peace, proposed marriage to her. She had been taken captive, and the Prophet, may Allah bless him and grant him peace, gave her the choice, saying: “If you wish, choose me; and if you wish, choose your husband.” She said, “Rather, my husband.” He then sent her away, and the Banu Tamim cursed her.",
+      "arabic_sha256": "c9edddc0631f60a907c54182366242eb94eec68686518dc6f5dfa0ea2f6fd599",
+      "english_sha256": "b0219a9719ca1ac1a83d572fdf5b50d0888be292b25129a8b8ea188c1f90b0f2",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "صفية بنت بشامة",
+      "english": "Safiyya bint Bushama",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأعور",
+      "english": "al-A'war",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو العنبر بن تميم",
+      "english": "Banu al-Anbar ibn Tamim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "المحبر",
+      "english": "al-Muhabbar",
+      "kind": "work"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكلبي",
+      "english": "al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو تميم",
+      "english": "Banu Tamim",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "بشامة",
+      "explanation": "The canonical text and the collateral Usd al-Ghaba entry agree on the consonantal spelling, but neither supplies vowels. The evidence therefore cannot decide securely between Bushama and Bashama; Bushama is retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0210:cef0daed91286189"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

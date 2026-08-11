@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010936",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10936,
+  "title": {
+    "english": "Buray'ah bint Abi Kharijah ibn Aws",
+    "arabic_observed": "بريعة بنت أبي خارجة بن أوس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010936-segment-0001",
+      "volume": 8,
+      "scan_page": 52,
+      "printed_page": 51,
+      "reader_page": 3964,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3964",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0052:e992a00a68b50b54",
+      "arabic": "١٠٩٣٦- بريعة بنت أبي خارجة بن أوس\nذكرها ابن سعد، كذا في «التّجريد»، وأنا أظن أنها والتي قبلها واحدة، وقع في اسمها واسم أبيها تصحيف، فليحرر.",
+      "english": "10936 — Buray'ah bint Abi Kharijah ibn Aws\n\nIbn Sa'd mentioned her—thus it appears in al-Tajrid. I believe that she and the preceding woman are one and the same, and that a scribal corruption occurred in her name and her father's name. This should therefore be carefully verified.",
+      "arabic_sha256": "f6b43a71e1f9aaeecba5cbe69864b96f19880db8ff52e08943212e5b314012dd",
+      "english_sha256": "733d1e6216a78144c479be379225cb851ab4e5c81cc1c06cdfc038f2053ccd4a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بريعة بنت أبي خارجة بن أوس",
+      "english": "Buray'ah bint Abi Kharijah ibn Aws",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

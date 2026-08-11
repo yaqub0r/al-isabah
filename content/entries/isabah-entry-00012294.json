@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012294",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12294,
+  "title": {
+    "english": "Umm Abi al-Haytham ibn al-Tayyihan al-Ansari",
+    "arabic_observed": "أم أبي الهيثم"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012294-segment-0001",
+      "volume": 8,
+      "scan_page": 489,
+      "printed_page": 488,
+      "reader_page": 4401,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4401",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0489:11550dfff0eb14c4",
+      "arabic": "١٢٢٩٤- أم أبي الهيثم\nبن التيهان الأنصاري. جاء ذكرها في مسند البزار.\nالقسم الثاني والثالث\nخاليان.\nالقسم الرابع",
+      "english": "12294—Umm Abi al-Haytham ibn al-Tayyihan al-Ansari\n\nShe is mentioned in Musnad al-Bazzar.\n\nTHE SECOND AND THIRD SECTIONS\n\nThey are empty.\n\nTHE FOURTH SECTION",
+      "arabic_sha256": "8007ffdce6b8b1ae9be853b36f8c8aebb83b01ec29b495953cc26c22832ad401",
+      "english_sha256": "7ccdcb60f33bd8bef80dbf7e38e8b2e00bca5f0d19162df905ed9aaf14ed636e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم أبي الهيثم بن التيهان الأنصاري",
+      "english": "Umm Abi al-Haytham ibn al-Tayyihan al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند البزار",
+      "english": "Musnad al-Bazzar",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010847",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10847,
+  "title": {
+    "english": "Umayma bint Bishr,²",
+    "arabic_observed": "أميمة بنت بشر «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010847-segment-0001",
+      "volume": 8,
+      "scan_page": 30,
+      "printed_page": 29,
+      "reader_page": 3942,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3942",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0030:72c0de50d3109001",
+      "arabic": "١٠٨٤٧- أميمة بنت بشر «٢»\n، من بني عمرو بن عوف، كانت تحت حسان بن الدحداحة، فنفرت منه، وهو كافر يومئذ، فزوّجها النبيّ ﷺ سهل بن حنيف، فولدت له ولده عبد اللَّه، وفيها نزلت: يا أَيُّهَا الَّذِينَ آمَنُوا إِذا جاءَكُمُ الْمُؤْمِناتُ مُهاجِراتٍ [الممتحنة: ١٠] ... الآية.\nذكره ابن وهب، عن ابن لهيعة، عن يزيد بن أبي حبيب- أنه بلغه ذلك، أسنده ابن مندة، واستبعده ابن الأثير بأن بني عمرو بن عوف من أهل المدينة، والآية إنما نزلت في المهاجرات، فلعلّ زوجها كان من غير الأنصار، فنقلها إلى مكة مثلا، فكان حكمها حكم المهاجرات.",
+      "english": "10847—Umayma bint Bishr,²\n\nof the Banu 'Amr ibn 'Awf. She was married to Hassan ibn al-Dahdaha, but she fled from him while he was an unbeliever at that time. The Prophet, may Allah bless him and grant him peace, then married her to Sahl ibn Hunayf, and she bore him his son 'Abd Allah. Concerning her was revealed: “O you who believe, when believing women come to you as emigrants” [al-Mumtahana 60:10] … the verse.\n\nIbn Wahb mentioned it from Ibn Lahi'a, from Yazid ibn Abi Habib, who had received word of it; Ibn Manda transmitted it with a connected chain. Ibn al-Athir considered it unlikely, because the Banu 'Amr ibn 'Awf were inhabitants of Medina, whereas the verse was revealed only concerning female emigrants. Perhaps her husband was not one of the Ansar and took her to Mecca, for example, in which case her legal status was that of the female emigrants.",
+      "arabic_sha256": "664df35dd031856e6a96812efc87975b64bbd9a3ad0e723dff5a6ea8474d2eac",
+      "english_sha256": "4991225bf4266296b49d40d5e5d470ec1c3efc9c4caaf25bee5c3f0f2ebe8921",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "'Abd Allah ibn Sa'd ibn Abi Sarh",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "أميمة بنت بشر",
+      "english": "Umayma bint Bishr",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عمرو بن عوف",
+      "english": "Banu 'Amr ibn 'Awf",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "حسان بن الدحداحة",
+      "english": "Hassan ibn al-Dahdaha",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهل بن حنيف",
+      "english": "Sahl ibn Hunayf",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "'Abd Allah ibn Sahl ibn Hunayf",
+      "kind": "person"
+    },
+    {
+      "arabic": "الممتحنة",
+      "english": "al-Mumtahana",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن وهب",
+      "english": "Ibn Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن لهيعة",
+      "english": "Ibn Lahi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن أبي حبيب",
+      "english": "Yazid ibn Abi Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

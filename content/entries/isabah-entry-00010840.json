@@ -1,0 +1,130 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010840",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10840,
+  "title": {
+    "english": "Ama bint Khalid",
+    "arabic_observed": "أمة بنت خالد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010840-segment-0001",
+      "volume": 8,
+      "scan_page": 29,
+      "printed_page": 28,
+      "reader_page": 3941,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3941",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0029:3ec744145c09c670",
+      "arabic": "١٠٨٤٠- أمة بنت خالد\nبن سعيد بن العاص بن أمية بن عبد شمس «١»، تكنى أم خالد، وهي مشهورة بكنيتها.\nقدمت مع والدها من الحبشة، وكان هاجر إليها، وكانت ولدت له فيها من أميمة، ويقال همينة بنت خلف الخزاعية. وقال ابن سعد: كان خالد بن سعيد قد هاجر إلى الحبشة، ومعه امرأته همينة بنت خلف، فولدت له هناك أمة بنت خالد، [وقدموا] في السفينتين، وقد بلغت أمة وعقلت.\nثم أخرج بسند فيه الواقديّ عنها، قالت: سمعت النجاشي يقول لأصحاب السفينتين:\nأقرئوا رسول اللَّه ﷺ مني السلام. قالت أمة: فكنت فيمن أقرأه السلام من النجاشي.\nقلت: قوله: إنها بلغت بالحبشة يردّه قوله في الرواية التي في الصحيح: ائتوني بأم خالد «٢»، فأتى بي أحمل، فألبسنيها- يعني الخميصة، نعم، قد حفظت عن النبي ﷺ.\nروى عنها سعيد بن عمر والأشدق بن سعيد بن العاص، وهي بنت عم جده، وموسى وإبراهيم ابنا عقبة المدنيان، وتزوّجها الزبير بن العوام، فهي أم ولديه: خالد، وعمرو.\nحدثيها في صحيح البخاريّ في قول النبي ﷺ لما كساها الحلّة: سنه سنه «٣» . أي حسنة، وقوله لها: «أبلي وأخلقي» «٤»،\nحتى ذكر- أي ذكر دهرا طويلا.\nوفي بعض طرقه عند البخاري في الجهاد، قال أبو عبد اللَّه: لم تعش امرأة ما عاشت هذه.",
+      "english": "10840—Ama bint Khalid\n\nibn Sa'id ibn al-'As ibn Umayya ibn 'Abd Shams.[1] Her kunya was Umm Khalid, and she is well known by her kunya.\n\nShe came with her father from Abyssinia, to which he had emigrated. She had been born to him there by Umayma, also said to be Humayna bint Khalaf al-Khuza'iyya. Ibn Sa'd said: Khalid ibn Sa'id had emigrated to Abyssinia with his wife, Humayna bint Khalaf, and there she bore him Ama bint Khalid. [They arrived] in the two ships, by which time Ama had reached maturity and attained understanding.\n\nHe then transmitted, through an isnad containing al-Waqidi, from her that she said: “I heard the Negus say to the people of the two ships, ‘Convey my greetings of peace to the Messenger of Allah, may Allah bless him and grant him peace.’” Ama said: “I was among those who conveyed the Negus's greetings of peace to him.”\n\nI say: The statement that she reached maturity in Abyssinia is refuted by her statement in the version found in Sahih al-Bukhari: “Bring me Umm Khalid.” I was brought to him while being carried, and he clothed me in it—meaning the khamisa.[2] Still, she did retain reports from the Prophet, may Allah bless him and grant him peace.\n\nSa'id ibn 'Amr al-Ashdaq ibn Sa'id ibn al-'As narrated from her; she was the paternal cousin of his grandfather. The two Medinans Musa and Ibrahim, the sons of 'Uqba, also narrated from her. Al-Zubayr ibn al-'Awwam married her, and she was the mother of his two sons, Khalid and 'Amr.\n\nHer hadith is in Sahih al-Bukhari, in connection with the words of the Prophet, may Allah bless him and grant him peace, when he clothed her in the robe: “Sanah, sanah,”[3] meaning “beautiful,” and his words to her: “May you wear it out and make it threadbare,”[4] until mention was made—that is, of a very long span of time.\n\nIn one of its routes of transmission in al-Bukhari's Book of Jihad, Abu 'Abd Allah said: “No woman lived as long as this woman did.”",
+      "arabic_sha256": "b060c8d3518d4ed6e61fc93087d3b3c3a04610c5444e355ecbcf449fbecd7137",
+      "english_sha256": "51fde9ad77cc76df70259f0a7140395587f7419231acdaa3299309d4ccf3a84d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم خالد",
+      "english": "Umm Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة",
+      "english": "Umayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "همينة بنت خلف الخزاعية",
+      "english": "Humayna bint Khalaf al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد بن سعيد",
+      "english": "Khalid ibn Sa'id ibn al-'As ibn Umayya ibn 'Abd Shams",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "النجاشي",
+      "english": "Negus",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن عمر والأشدق بن سعيد بن العاص",
+      "english": "Sa'id ibn 'Amr al-Ashdaq ibn Sa'id ibn al-'As",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن العوام",
+      "english": "al-Zubayr ibn al-'Awwam",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد",
+      "english": "Khalid ibn al-Zubayr ibn al-'Awwam",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو",
+      "english": "'Amr ibn al-Zubayr ibn al-'Awwam",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عبد الله",
+      "english": "Abu 'Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "المدنيان",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "الخزاعية",
+      "english": "Khuza'a",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "صحيح البخاري",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "الجهاد",
+      "english": "Book of Jihad",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

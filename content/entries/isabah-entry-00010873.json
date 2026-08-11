@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010873",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10873,
+  "title": {
+    "english": "Umayma bint Abi al-Haytham ibn al-Tayyihan, the Ansari woman.³",
+    "arabic_observed": "أميمة بنت أبي الهيثم"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010873-segment-0001",
+      "volume": 8,
+      "scan_page": 36,
+      "printed_page": 35,
+      "reader_page": 3948,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3948",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0036:c4a2b286be23a713",
+      "arabic": "١٠٨٧٣- أميمة بنت أبي الهيثم\nبن التيهان الأنصارية» .\nتقدم ذكر والدها. وقد ذكرها أبو جعفر بن حبيب فيمن بايع النبي ﷺ من نساء الأنصار. وقال ابن سعد: أمها مليكة بنت سهل، أسلمت وبايعت في رواية محمد بن عمر.\n(١) الاستيعاب: ت ٣٢٨٨.\n(٢) أسد الغابة ت ٦٧٤١.\n(٣) أسد الغابة ت ٦٧٤٦.",
+      "english": "10873—Umayma bint Abi al-Haytham ibn al-Tayyihan, the Ansari woman.³\n\nHer father was mentioned previously. Abu Ja'far ibn Habib mentioned her among the women of the Ansar who pledged allegiance to the Prophet—may Allah bless him and grant him peace. Ibn Sa'd said: Her mother was Mulayka bint Sahl. She embraced Islam and pledged allegiance, according to the narration of Muhammad ibn Umar.\n\n(1) al-Isti'ab, entry 3288.\n(2) Usd al-Ghaba, entry 6741.\n(3) Usd al-Ghaba, entry 6746.",
+      "arabic_sha256": "65f1d5993a81a3b1ea16563c118f2f6f1a5017693449561a8f3d25209855a316",
+      "english_sha256": "875a7190dd38a5a5ad9b88b4c42927ffb2eb53cf8f7b125495a6e4f349e9af2d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة بنت أبي الهيثم بن التيهان الأنصارية",
+      "english": "Umayma bint Abi al-Haytham ibn al-Tayyihan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو جعفر بن حبيب",
+      "english": "Abu Ja'far ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "مليكة بنت سهل",
+      "english": "Mulayka bint Sahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمر",
+      "english": "Muhammad ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

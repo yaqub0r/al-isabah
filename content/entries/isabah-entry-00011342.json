@@ -1,0 +1,259 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011342",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11342,
+  "title": {
+    "english": "Sumayya bint Khubbat (5)",
+    "arabic_observed": "سميّة بنت خباط «٥»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011342-segment-0001",
+      "volume": 8,
+      "scan_page": 190,
+      "printed_page": 189,
+      "reader_page": 4102,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4102",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0190:32466e2658464c43",
+      "arabic": "١١٣٤٢- سميّة بنت خباط «٥»\n، بمعجمة مضمومة وموحدة ثقيلة، ويقال بمثناة تحتانية، وعند الفاكهي سمية بنت خبط، بفتح أوله بغير ألف، مولاة أبي حذيفة بن المغيرة\n(١) أسد الغابة ت (٧٠٢٠)، الاستيعاب ت (٣٤٣٢) .\n(٢) الاستيعاب: ت (٣٤٣٣) الثقات ٣/ ١٨٥، أعلام النساء ٢/ ٢٦٠، تجريد أسماء الصحابة ٢/ ٢٧٨.\n(٣) أسد الغابة: ت (٧٠٢٠) .\n(٤) في أ: سميراء.\n(٥) أسد الغابة: ت (٧٠٢١)، الثقات ٣/ ١٨٤، أعلام النساء ٢/ ٢٦١، الدر المنثور ٢٥٢، تجريد أسماء الصحابة ٢/ ٢٧٨، المنمق ٣١٢، تلقيح فهوم أهل الأثر ٣٣٠.",
+      "english": "11342—Sumayya bint Khubbat (5)\n\n“Khubbat” begins with a kha' bearing damma and contains a doubled ba'; it is also read “Khayyat,” with a ya' bearing two dots beneath in place of the ba'. According to al-Fakihi, she was Sumayya bint Khabt, with the first letter bearing fatha and without an alif. She was a client of Abu Hudhayfa ibn al-Mughira—\n\n(1) Usd al-Ghaba, entry 7020; al-Isti'ab, entry 3432.\n\n(2) al-Isti'ab, entry 3433; al-Thiqat 3/185; A'lam al-Nisa 2/260; al-Tajrid 2/278.\n\n(3) Usd al-Ghaba, entry 7020.\n\n(4) In manuscript A: “Sumayra.”\n\n(5) Usd al-Ghaba, entry 7021; al-Thiqat 3/184; A'lam al-Nisa 2/261; al-Durr al-Manthur, 252; al-Tajrid 2/278; al-Munammaq, 312; Talqih Fuhum Ahl al-Athar, 330.",
+      "arabic_sha256": "20574e385c72a1cf9c868552e5a889aabf5e8af2c4ac07f0e709feb5ef1bb40d",
+      "english_sha256": "9fed3f080ba39db4c591a0554fca8d0b06c2c5aaf850af793529cf6350557b9e",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011342-segment-0002",
+      "volume": 8,
+      "scan_page": 191,
+      "printed_page": 190,
+      "reader_page": 4103,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4103",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0191:6b558c7ddbf5d7e3",
+      "arabic": "ابن عبد اللَّه بن عمرو بن مخزوم، والدة عمار بن ياسر، كانت سابعة سبعة في الإسلام، عذّبها أبو جهل وطعنها، في قبلها، فماتت، فكانت أول شهيدة في الإسلام. وكان ياسر حليفا لأبي حذيفة فزوجها سمية فولدت له عمارا فأعتقه، وكان ياسر وزوجته وولده منها ممّن سبق إلى الإسلام.\nقال ابن إسحاق في «المغازي»: حدثني رجال من آل عمار بن ياسر أنّ سمية أم عمار عذّبها آل بني المغيرة على الإسلام، وهي تأبى غيره حتى قتلوها، وكان رسول اللَّه ﷺ يمرّ بعمار وأمه وأبيه وهم يعذّبون بالأبطح في رمضاء مكة فيقول: «صبرا يا آل ياسر، موعدكم الجنّة» .\nوقال مجاهد: أول من أظهر الإسلام بمكة سبعة: رسول اللَّه ﷺ، وأبو بكر، وبلال، وخباب، وصهيب، وعمار، وسمية. فأما رسول اللَّه ﷺ وأبو بكر فمنعهما قومهما. وأما الآخرون فألبسوا أدراع الحديد ثم صهروا في الشمس، وجاء أبو جهل إلى سمية فطعنها بحربة فقتلها.\nأخرجه أبو بكر بن أبي شيبة، عن جرير، عن منصور، عن مجاهد، وهو مرسل، صحيح السند.\nوقال أبو عمر: قال ابن قتيبة خلف على سمية بعد ياسر الأزرق غلام الحارث بن كلدة وكان روميا، فولدت له سلمة، فهو أخو عمار لأمه، كذا قال: وهو وهم فاحش، فإن الأزرق إنما خلف على سمية والدة زياد، فسلمة بن الأزرق أخو سمية لأمه، فاشتبه على ابن قتيبة.\nوأخرج ابن سعد بسند صحيح عن مجاهد قال: أول شهيد في الإسلام سمية والدة عمار بن ياسر، وكانت عجوزا كبيرة ضعيفة، ولما قتل أبو جهل يوم بدر قال النبيّ ﷺ لعمار: «قتل اللَّه قاتل أمّك» «١» .",
+      "english": "[continued:] ibn Abd Allah ibn Amr ibn Makhzum. She was the mother of Ammar ibn Yasir and was the seventh of the seven who embraced Islam. Abu Jahl tortured her and stabbed her in her private parts, and she died. Thus, she was the first martyr in Islam. Yasir was a confederate of Abu Hudhayfa, who married Sumayya to him. She bore him Ammar, whom Abu Hudhayfa then emancipated. Yasir, his wife, and their son by her were among the earliest to embrace Islam.\n\nIbn Ishaq said in al-Maghazi: “Men from the family of Ammar ibn Yasir related to me that members of Banu al-Mughira tortured Sumayya, Ammar's mother, on account of Islam. She would accept nothing else, until they killed her. The Messenger of Allah—may Allah bless him and grant him peace—would pass by Ammar, his mother, and his father while they were being tortured at al-Abtah on Mecca's sun-scorched ground, and he would say, ‘Be patient, O family of Yasir! Your meeting-place is Paradise.’”\n\nMujahid said: “The first seven to proclaim Islam openly in Mecca were the Messenger of Allah—may Allah bless him and grant him peace—Abu Bakr, Bilal, Khabbab, Suhayb, Ammar, and Sumayya. As for the Messenger of Allah—may Allah bless him and grant him peace—and Abu Bakr, their respective peoples protected them. As for the others, they were clothed in iron coats of mail and then made to swelter in the sun. Abu Jahl came to Sumayya and stabbed her with a spear, killing her.”\n\nAbu Bakr ibn Abi Shayba transmitted it from Jarir, from Mansur, from Mujahid. It is a mursal report with a sound chain of transmission.\n\nAbu Umar said: “Ibn Qutayba said that, after Yasir, al-Azraq, the slave of al-Harith ibn Kalada, married Sumayya. He was a Byzantine, and she bore him Salama, who was therefore Ammar's maternal half-brother.” Thus he stated it, but it is a gross error. Al-Azraq in fact married Sumayya, the mother of Ziyad, and Salama ibn al-Azraq was Ziyad's maternal half-brother [the printed Arabic reads “Sumayya's”]. This is where Ibn Qutayba became confused.\n\nIbn Sa'd transmitted with a sound chain from Mujahid, who said: “The first martyr in Islam was Sumayya, the mother of Ammar ibn Yasir. She was an elderly, frail woman.” When Abu Jahl was killed on the day of Badr, the Prophet—may Allah bless him and grant him peace—said to Ammar, “Allah has killed your mother's killer.” (1)",
+      "arabic_sha256": "6d74ec7eb4d4969a9499233f802bc66eb3a13557aae765e897e12115f439772d",
+      "english_sha256": "ebffcf2e298e24721cc3247dfebd97eb5033894c31c7cc52195f3d392c8fbf1c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سمية بنت خباط",
+      "english": "Sumayya bint Khubbat",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفاكهي",
+      "english": "al-Fakihi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سمية بنت خبط",
+      "english": "Sumayya bint Khabt",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو حذيفة بن المغيرة",
+      "english": "Abu Hudhayfa ibn al-Mughira",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدر المنثور",
+      "english": "al-Durr al-Manthur",
+      "kind": "work"
+    },
+    {
+      "arabic": "المنمق",
+      "english": "al-Munammaq",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "سمية أم عمار",
+      "english": "Sumayya Umm Ammar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمار بن ياسر",
+      "english": "Ammar ibn Yasir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ياسر",
+      "english": "Yasir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو جهل",
+      "english": "Abu Jahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "المغازي",
+      "english": "al-Maghazi",
+      "kind": "work"
+    },
+    {
+      "arabic": "آل بني المغيرة",
+      "english": "Banu al-Mughira",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "رسول اللَّه / النبيّ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأبطح",
+      "english": "al-Abtah",
+      "kind": "place"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "الجنّة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "مجاهد",
+      "english": "Mujahid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "بلال",
+      "english": "Bilal",
+      "kind": "person"
+    },
+    {
+      "arabic": "خباب",
+      "english": "Khabbab",
+      "kind": "person"
+    },
+    {
+      "arabic": "صهيب",
+      "english": "Suhayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر بن أبي شيبة",
+      "english": "Abu Bakr ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "جرير",
+      "english": "Jarir",
+      "kind": "person"
+    },
+    {
+      "arabic": "منصور",
+      "english": "Mansur",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن قتيبة",
+      "english": "Ibn Qutayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأزرق",
+      "english": "al-Azraq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن كلدة",
+      "english": "al-Harith ibn Kalada",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمة بن الأزرق",
+      "english": "Salama ibn al-Azraq",
+      "kind": "person"
+    },
+    {
+      "arabic": "سمية والدة زياد",
+      "english": "Sumayya Umm Ziyad",
+      "kind": "person"
+    },
+    {
+      "arabic": "زياد",
+      "english": "Ziyad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,473 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010828",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10828,
+  "title": {
+    "english": "Umama bint Abu al-As(2)",
+    "arabic_observed": "أمامة بنت أبي العاص «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010828-segment-0001",
+      "volume": 8,
+      "scan_page": 25,
+      "printed_page": 24,
+      "reader_page": 3937,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3937",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0025:844818361ccf1b32",
+      "arabic": "١٠٨٢٨- أمامة بنت أبي العاص «٢»\nبن الربيع بن عبد العزى بن عبد شمس بن عبد مناف العبشمية، وهي من زينب بنت رسول اللَّه ﷺ.\nقال الزّبير في كتاب «النّسب»: كانت زينب تحت أبي العاص، فولدت له أمامة، وعليا وثبت ذكرها في الصحيحين من حديث أبي قتادة- أنّ النبي ﷺ كان يحمل أمامة بنت زينب على عاتقه فإذا سجد وضعها، وإذا قام حملها. أخرجاه من رواية مالك، عن عامر بن عبد اللَّه بن الزبير.\nوأخرجه ابن سعد، من رواية الليث، عن سعيد المقبري، عن عمرو بن سليم أنه سمع أبا قتادة يقول: بينا نحن على باب رسول اللَّه ﷺ إذ خرج يحمل أمامة بنت أبي العاص بن الربيع، وأمها زينب بنت رسول اللَّه ﷺ، وهي صبية، فصلّى وهي على عاتقه إذ قام حتى قضى صلاته يفعل ذلك بها.\nوأخرج من طريق حماد بن سلمة، عن علي بن زيد، عن أم محمد، عن عائشة- أن\n(١) أسد الغابة: ت ٦٧٢٣.\n(٢) نسب قريش للزبيري ١٥٨، الطبقات الكبرى ٨/ ٢٣٢، ٢٣٣، المحبر لابن حبيب ٥٣ و٩٠، المعارف لابن قتيبة ١٢٧، المعرفة والتاريخ للفسوي ٣/ ٢٧٠، أنساب الأشراف ١/ ٤٠٠، تهذيب الأسماء واللغات ٢/ ٢٣١، والسيرة النبويّة للذهبي ٧٤ و٧٥ الوافي بالوفيات ٩/ ٣٧٧، تاريخ الإسلام ١/ ٢٤.",
+      "english": "10828—Umama bint Abu al-As(2)\nibn al-Rabi ibn Abd al-Uzza ibn Abd Shams ibn Abd Manaf, of Banu Abd Shams. Her mother was Zaynab, daughter of the Messenger of Allah, may Allah bless him and grant him peace.\n\nAl-Zubayr said in the Book of Genealogy: Zaynab was married to Abu al-As and bore him Umama and Ali. Her mention is established in the two Sahih collections, in the hadith of Abu Qatada: The Prophet, may Allah bless him and grant him peace, used to carry Umama bint Zaynab on his shoulder; when he prostrated himself, he put her down, and when he stood, he picked her up. They both transmitted it through Malik, from Amir ibn Abd Allah ibn al-Zubayr.\n\nIbn Sa'd transmitted it through al-Layth, from Sa'id al-Maqburi, from Amr ibn Sulaym, who heard Abu Qatada say: While we were at the door of the Messenger of Allah, may Allah bless him and grant him peace, he came out carrying Umama bint Abu al-As ibn al-Rabi, whose mother was Zaynab, daughter of the Messenger of Allah, may Allah bless him and grant him peace. She was a little girl. He then prayed, with her on his shoulder whenever he stood, until he completed his prayer, doing this with her.\n\nIbn Sa'd also transmitted, through Hammad ibn Salama, from Ali ibn Zayd, from Umm Muhammad, from Aisha, that—\n\n(1) Usd al-Ghaba, entry 6723.\n\n(2) Al-Zubayri, Nasab Quraysh, p. 158; al-Tabaqat, 8/232–233; Ibn Habib, al-Muhabbar, pp. 53 and 90; Ibn Qutayba, al-Ma'arif, p. 127; al-Fasawi, al-Ma'rifa wa-l-Tarikh, 3/270; Ansab al-Ashraf, 1/400; Tahdhib al-Asma wa-l-Lughat, 2/231; al-Dhahabi, al-Sira al-Nabawiyya, pp. 74 and 75; al-Wafi bi-l-Wafayat, 9/377; Tarikh al-Islam, 1/24.",
+      "arabic_sha256": "b4edc5191f2aa81af93b91014ee75ffcbf3c600d0a699360f8e265bb73f238cf",
+      "english_sha256": "a7a603e453a515cdea7c905f3c50ef6aebcaab09ef0ee22933bd30bd9b04fc61",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010828-segment-0002",
+      "volume": 8,
+      "scan_page": 26,
+      "printed_page": 25,
+      "reader_page": 3938,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3938",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0026:43b14b61a2cd82b0",
+      "arabic": "رسول اللَّه ﷺ أهديت له هدية فيها قلادة من جزع. فقال: «لأدفعنّها إلى أحبّ أهلي إليّ» .\nفقالت النساء: ذهبت بها ابنة أبي قحافة. فدعا رسول اللَّه ﷺ أمامة بنت زينب فأعلقها في عنقها.\nوأخرجه ابن سعد من رواية حماد بن زيد، عن علي بن زيد، مرسلا، وقال فيه:\nلأعطينّها أرحمكن. وقال فيه: فدعا ابنة أبي العاص من زينب، فعقدها بيده، وزاد: وكان على عينها غمض فمسحه بيده.\nوأخرج أحمد من طريق ابن إسحاق، عن يحيى بن عباد بن عبد اللَّه بن الزبير، عن أبيه، عن عائشة- أنّ النجاشي أهدى إلى النبي ﷺ حلية فيها خاتم من ذهب فصّه حبشي، فأعطاه أمامة.\nقال أبو عمر: تزوجها علي بن أبي طالب بعد فاطمة، زوجها منه الزبير بن العوام، وكان أبوها قد أوصى بها إلى الزبير، فلما قتل عليّ فآمت منه أمامة قالت أم الهيثم النخعية:\nأشاب ذوائبي وأذلّ ركني ... أمامة حين فارقت القرينا\nتطيف به لحاجتها إليه ... فلمّا استيأست رفعت رنينا «١»\n[الوافر] قال: وكان عليّ قد أمر المغيرة بن نوفل بن الحارث أن يتزوّج أمامة بنت أبي العاص، فتزوجها المغيرة، فولدت له يحيى، وبه كان يكنى، وهلكت عند المغيرة. وقد قيل: إنها لم تلد لعليّ ولا للمغيرة كذلك.\nوقال الزّبير: ليس لزينب عقب.\nوقال عمر بن شبّة: حدثنا علي بن محمد النّوفلي، عن أبيه- أنه حدثه عن أهله أنّ عليّا لما حضرته الوفاة قال لأمامة بنت العاص: إني لا آمن أن يخطبك هذا الطاغية بعد موتي- يعني معاوية، فإن كان لك في الرجال حاجة فقد رضيت لك المغيرة بن نوفل عشيرا.\nفلما انقضت عدّتها كتب معاوية إلى مروان يأمره أن يخطبها عليه، وبذل لها مائة ألف دينار، فأرسلت إلى المغيرة: إن هذا قد أرسل يخطبني، فإن كان لك بنا حاجة فأقبل، فخطبها إلى الحسن فزوجها منه.\nقلت: النوفلي ضعيف جدا مع انقطاع الإسناد، والراويّ مجهول فيه، لكن قال أبو\n(١) ينظر البيتان في الاستيعاب ترجمة رقم (٣٢٨١) .",
+      "english": "The Messenger of Allah, may Allah bless him and grant him peace, was given a gift containing a necklace of onyx. He said, “I shall certainly give it to the member of my family dearest to me.”\n\nThe women said, “The daughter of Abu Quhafa has carried it off.” The Messenger of Allah, may Allah bless him and grant him peace, then summoned Umama bint Zaynab and hung it around her neck.\n\nIbn Sa'd also transmitted it through Hammad ibn Zayd, from Ali ibn Zayd, as a mursal report. In it he said, “I shall certainly give it to the one among you most closely related to me.” He also said in it: He summoned the daughter of Abu al-As by Zaynab and fastened it with his own hand. He added: There was a crusting over her eye, so he wiped it away with his hand.\n\nAhmad transmitted, through Ibn Ishaq, from Yahya ibn Abbad ibn Abd Allah ibn al-Zubayr, from his father, from Aisha, that the Negus presented the Prophet, may Allah bless him and grant him peace, with an ornament containing a gold ring set with an Abyssinian stone, and he gave it to Umama.\n\nAbu Umar said: Ali ibn Abi Talib married her after Fatima; al-Zubayr ibn al-Awwam gave her to him in marriage, for her father had entrusted her to al-Zubayr. When Ali was killed and Umama was widowed by his death, Umm al-Haytham al-Nakha'iyya said:\n\nUmama grayed my locks and brought low my pillar,\nwhen she parted from her spouse.\n\nShe circles around him because of her need for him;\nthen, when she despaired, she raised a wail.¹\n\n[al-Wafir meter]\n\nHe said: Ali had instructed al-Mughira ibn Nawfal ibn al-Harith to marry Umama bint Abi al-As. Al-Mughira therefore married her, and she bore him Yahya, from whom he took his kunya. She died while married to al-Mughira. It has also been said that she bore no child to Ali or to al-Mughira.\n\nAl-Zubayr said: Zaynab left no descendants.\n\nUmar ibn Shabba said: Ali ibn Muhammad al-Nawfali related to us, from his father, who related to him from his family, that when death approached Ali, he said to Umama bint al-As: “I do not feel safe from this tyrant seeking your hand after my death”—meaning Muawiya—“so, if you have any desire for a husband, I approve al-Mughira ibn Nawfal for you as a consort.”\n\nWhen her waiting period had ended, Muawiya wrote to Marwan, instructing him to seek her hand on his behalf, and he offered her one hundred thousand dinars. She sent word to al-Mughira: “This man has sent someone to seek my hand. If you have any desire for us, then come.” So he came and sought her hand from al-Hasan, who gave her to him in marriage.\n\nI say: Al-Nawfali is extremely weak, in addition to the interruption in the chain of transmission, and the narrator in it is unknown. However, Abu—\n\n¹ See the two verses in al-Isti'ab, biography no. 3281.",
+      "arabic_sha256": "43b14b61a2cd82b09a7298eff41f5e9e38d743e2489f5992871ccfecf49c6cb1",
+      "english_sha256": "5285199cb2fd43a78677d6c6e62a503af322bf09bb406e7ec971aa11e10f243a",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010828-segment-0003",
+      "volume": 8,
+      "scan_page": 27,
+      "printed_page": 26,
+      "reader_page": 3939,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3939",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0027:2304d49de3177790",
+      "arabic": "عمر: روى هيثم عن داود بن أبي هند عن الشعبي، قال: كانت أمامة عند عليّ فذكر معنى ما تقدم سواء، كذا قال. وأخرجه ابن سعد عن الواقدي بمعناه.\nوقال ابن سعد: أخبرنا ابن أبي فديك، عن ابن أبي ذئب- أن أمامة بنت أبي العاص قالت للمغيرة بن نوفل: إن معاوية خطبني، فقال لها: أتتزوجين ابن آكلة الأكباد! فلو جعلت ذلك إليّ. قالت: نعم. قال: قد تزوجتك. قال: ابن أبي ذئب: فجاز نكاحه.\nوقد قال الدّار الدّارقطنيّ في كتاب «الإخوة»: تزوجها بعد عليّ المغيرة بن نوفل. وقيل: بل تزوجها بعده أبو الهياج بن أبي سفيان بن الحارث بن عبد المطلب.",
+      "english": "Abu Umar said: Haytham narrated from Dawud ibn Abi Hind, from al-Sha'bi, who said: Umama was married to Ali—and he related exactly the same account as the foregoing. That is how he stated it. ibn Sa'd also transmitted it from al-Waqidi with the same meaning.\n\nibn Sa'd said: ibn Abi Fudayk informed us, from ibn Abi Dhi'b, that Umama bint Abi al-As said to al-Mughira ibn Nawfal, “Mu'awiya has proposed marriage to me.” He said to her, “Would you marry the son of the liver-eater? If only you would entrust that matter to me.” She said, “Yes.” He said, “I have married you.” ibn Abi Dhi'b said: Thus his marriage was valid.\n\nal-Daraqutni said in the Book of Brothers: “After Ali, al-Mughira ibn Nawfal married her.” It is also said that, instead, after him she married Abu al-Hayyaj ibn Abi Sufyan ibn al-Harith ibn Abd al-Muttalib.",
+      "arabic_sha256": "28200cfb3658544ab76302852ed6768e457c43d45800aa99110c0d466d73ea14",
+      "english_sha256": "7b6f975053e2c76489679b8cca8046339ec76890a4a56e9b9a0933a99e44fef1",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "رسول اللَّه / النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو العاص بن الربيع",
+      "english": "Abu al-As ibn al-Rabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت رسول اللَّه",
+      "english": "Zaynab bint Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّبير / الزبيري",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو قتادة",
+      "english": "Abu Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "مالك",
+      "english": "Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "عامر بن عبد اللَّه بن الزبير",
+      "english": "Amir ibn Abd Allah ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الليث",
+      "english": "al-Layth",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد المقبري",
+      "english": "Sa'id al-Maqburi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن سليم",
+      "english": "Amr ibn Sulaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "حماد بن سلمة",
+      "english": "Hammad ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن زيد",
+      "english": "Ali ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم محمد",
+      "english": "Umm Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن قتيبة",
+      "english": "Ibn Qutayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفسوي",
+      "english": "al-Fasawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو عبد شمس / العبشمية",
+      "english": "Banu Abd Shams",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "كتاب النسب",
+      "english": "Book of Genealogy",
+      "kind": "work"
+    },
+    {
+      "arabic": "الصحيحين",
+      "english": "the two Sahih collections",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "نسب قريش",
+      "english": "Nasab Quraysh",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبقات الكبرى",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "المحبر",
+      "english": "al-Muhabbar",
+      "kind": "work"
+    },
+    {
+      "arabic": "المعارف",
+      "english": "al-Ma'arif",
+      "kind": "work"
+    },
+    {
+      "arabic": "المعرفة والتاريخ",
+      "english": "al-Ma'rifa wa-l-Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "أنساب الأشراف",
+      "english": "Ansab al-Ashraf",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الأسماء واللغات",
+      "english": "Tahdhib al-Asma wa-l-Lughat",
+      "kind": "work"
+    },
+    {
+      "arabic": "السيرة النبويّة",
+      "english": "al-Sira al-Nabawiyya",
+      "kind": "work"
+    },
+    {
+      "arabic": "الوافي بالوفيات",
+      "english": "al-Wafi bi-l-Wafayat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ الإسلام",
+      "english": "Tarikh al-Islam",
+      "kind": "work"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابنة أبي قحافة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي قحافة",
+      "english": "Abu Quhafa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة بنت زينب",
+      "english": "Umama bint Abi al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة",
+      "english": "Umama bint Abi al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "حماد بن زيد",
+      "english": "Hammad ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابنة أبي العاص من زينب",
+      "english": "Umama bint Abi al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي العاص",
+      "english": "Abu al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن عباد بن عبد اللَّه بن الزبير",
+      "english": "Yahya ibn Abbad ibn Abd Allah ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "النجاشي",
+      "english": "Negus",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن أبي طالب",
+      "english": "Ali ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن العوام",
+      "english": "al-Zubayr ibn al-Awwam",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr ibn al-Awwam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الهيثم النخعية",
+      "english": "Umm al-Haytham al-Nakha'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "المغيرة بن نوفل بن الحارث",
+      "english": "al-Mughira ibn Nawfal ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "المغيرة",
+      "english": "al-Mughira ibn Nawfal ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة بنت أبي العاص",
+      "english": "Umama bint Abi al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى",
+      "english": "Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن شبة",
+      "english": "Umar ibn Shabba",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن محمد النوفلي",
+      "english": "Ali ibn Muhammad al-Nawfali",
+      "kind": "person"
+    },
+    {
+      "arabic": "النوفلي",
+      "english": "Ali ibn Muhammad al-Nawfali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة بنت العاص",
+      "english": "Umama bint Abi al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Muawiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "مروان",
+      "english": "Marwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن",
+      "english": "al-Hasan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوافر",
+      "english": "al-Wafir",
+      "kind": "other"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "هيثم",
+      "english": "Haytham",
+      "kind": "person"
+    },
+    {
+      "arabic": "داود بن أبي هند",
+      "english": "Dawud ibn Abi Hind",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشعبي",
+      "english": "al-Sha'bi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي فديك",
+      "english": "ibn Abi Fudayk",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي ذئب",
+      "english": "ibn Abi Dhi'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "المغيرة بن نوفل",
+      "english": "al-Mughira ibn Nawfal",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدارقطني",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الإخوة",
+      "english": "Book of Brothers",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو الهياج بن أبي سفيان بن الحارث بن عبد المطلب",
+      "english": "Abu al-Hayyaj ibn Abi Sufyan ibn al-Harith ibn Abd al-Muttalib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

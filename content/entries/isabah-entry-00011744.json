@@ -1,0 +1,162 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011744",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11744,
+  "title": {
+    "english": "Mariya, or Mawiyya:[2]",
+    "arabic_observed": "مارية، أو ماوية «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011744-segment-0001",
+      "volume": 8,
+      "scan_page": 313,
+      "printed_page": 312,
+      "reader_page": 4225,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4225",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0313:9fe9e29e0d8ef67e",
+      "arabic": "١١٧٤٤- مارية، أو ماوية «٢»\n: بواو بدل الراء مع تشديد المثناة التحتانية.\n(١) أسد الغابة ت (٧٢٧٧) .\n(٢) أسد الغابة ت (٧٢٧٩)، الاستيعاب ت (٣٥٤١) .",
+      "english": "11744 — Mariya, or Mawiyya:[2]\n\nWith a waw in place of the ra, and with the ya doubled.\n\n[1] Usd al-Ghaba, entry no. 7277.\n\n[2] Usd al-Ghaba, entry no. 7279; al-Isti'ab, entry no. 3541.",
+      "arabic_sha256": "094fea9eff3428320499f89e995ed397c3bb54c53206b66cae9d640110ce8f24",
+      "english_sha256": "23737fd67a570398a5407f2c1ab70b8537d16f0fb84094a94311ee61ca5371a7",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011744-segment-0002",
+      "volume": 8,
+      "scan_page": 314,
+      "printed_page": 313,
+      "reader_page": 4226,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4226",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0314:0da8e7ded6b9da4c",
+      "arabic": "اختلف فيه الرّواة عن ابن إسحاق، فقال يونس بن بكير وغيره عنه ماوية بالواو، فذكر قصّة خبيب بن عدي لما أسره المشركون من بئر معونة وصفدوه ليقتلوه.\nقال ابن إسحاق: فحدثني عبد اللَّه بن أبي نجيح، عن مارية مولاة حجير بن أبي إهاب، قالت: حبس خبيب بمكّة في بيتي، فلقد اطلعت عليه يوما وإن في يده لقطفا من عنب أعظم من رأسه يأكل منه وما في الأرض يومئذ حبّة عنب.\nقلت: وهذا ذكره البخاريّ في الصّحيح في قصّة قتل خبيب، لكن ليس في روايته:\nأعظم من رأسه، وقال في روايته: وما بمكّة يومئذ، وهو المراد، فكأنه أطلق الأرض وأراد أرض مكّة.\nوذكر أبو عمر، عن العقيليّ بسنده إلى عبد اللَّه بن إدريس الأودي، عن محمد بن إسحاق: حدّثني ابن أبي نجيح، أنه حدّث عن مارية مولاة حجير، كذا ذكرها بالرّاء والتخفيف، وكان خبيب بن عدي حين حبس في بيتها، فكانت تحدّث بعد أن أسلمت قالت: واللَّه إنه لمحبوس في بيتي مغلق دونه إذ اطلعت من خلل الباب وفي يده قطف من عنب مثل رأس الرجل يأكل منه، وما أعلم في الأرض حبّة عنب، فلما حضره القتل قال: يا مارية، التمسي لي حديدة أتطهر بها. قالت: فأعطيت الموسى غلاما منّا، وأمرته أن يدخل بها عليه، فما هو إلا أن ولّى داخلا عليه، فقلت: فأعطيت الموسى غلاما منّا، وأمرته أن يدخل بها عليه، فما هو إلا أن ولّى داخلا عليه، فقلت: أصاب الرجل ثأره، يقتل هذا الغلام بهذه الحديدة ليكون رجل برجل، فلما انتهى إليه الغلام أخذ الحديدة، وقال: لعمري! ما خافت أمّك غدري حين أرسلت إليّ بهذه الحديدة- يعني معك، ثم خلّي سبيله.\nوهذه القصّة عند البخاريّ أيضا، وفيها بعض مغايرة. وذكره ابن سعد عن الواقديّ عن رجاله من أهل العلم، وفيها أنهم حبسوه عندها حتى يخرج الشّهر الحرام فيقتلوه، وكانت تحدّث بقصّته بعد، وأسلمت وحسن إسلامها، وفيها: وكان يتهجد بالقرآن، فإذا سمعه النّساء بكين ورققن عليه، فقلت له: هل لك من حاجة؟ قال: لا، إلا أن تسقيني العذيب، ولا تطعميني ما ذبح على النّصب، وتخبريني إذا أرادوا قتلي، فلما أرادوا قتله أخبرته، فو اللَّه ما اكترث بذلك، وقال: ابعثي لي حديدة أستصلح بها، فبعثت إليه بموسى مع ابني أبي حسين، وكانت أرضعته، ولم يكن ابنها ولادة، فذكرت نحو ما تقدّم، وفيه: ما كنت لأقتله ولا يستحلّ في ديننا الغدر.",
+      "english": "The transmitters reporting from Ibn Ishaq differed over her name. Yunus ibn Bukayr and others reported from him the form Mawiyya, with a waw, and he related the story of Khubayb ibn Adi, when the polytheists took him captive from Bi'r Ma'una and fettered him in order to kill him.\n\nIbn Ishaq said: “Abd Allah ibn Abi Najih narrated to me from Mariya, the female client of Hujayr ibn Abi Ihab. She said: ‘Khubayb was confined in my house in Mecca. One day I looked in on him, and in his hand was a cluster of grapes larger than his head, from which he was eating, although that day there was not a single grape anywhere on earth.’”\n\nI say: al-Bukhari mentioned this in his Sahih, in the account of Khubayb’s killing, but his version does not contain the words “larger than his head.” His version says, “There were none in Mecca that day,” which is what is meant. It is as though “the earth” was used without qualification, with the land of Mecca intended.\n\nAbu Umar cited al-Uqayli, through his chain to Abd Allah ibn Idris al-Awdi, from Muhammad ibn Ishaq: “Abd Allah ibn Abi Najih narrated to me that he narrated from Mariya, the female client of Hujayr.” Thus he recorded her name with an r and without doubling the y. Khubayb ibn Adi had been confined in her house, and after embracing Islam she used to relate the following. She said: “By Allah, he was indeed confined in my house, with the door locked against him, when I peered through a crack in the door and saw in his hand a cluster of grapes the size of a man’s head, from which he was eating, although I knew of no single grape anywhere on earth. When the time came to kill him, he said, ‘Mariya, find me a blade with which I may cleanse myself.’” She said: “So I gave the razor to one of our boys and ordered him to take it in to him. No sooner had he turned to go in to him than I said, ‘So I gave the razor to one of our boys and ordered him to take it in to him. No sooner had he turned to go in to him than I said: “The man has obtained his vengeance! He will kill this boy with this blade, so that it will be one man for another.”’ When the boy reached him, he took the blade and said, ‘By my life! Your mother did not fear treachery from me when she sent this blade to me’—meaning, ‘with you.’ Then he let him go.”\n\nThis story also appears in Sahih al-Bukhari, though with some differences. Ibn Sa'd also mentioned it from al-Waqidi, from his authorities among the men of learning. That version says that they confined him with her until the sacred month had ended, whereupon they would kill him. Afterward she used to relate his story; she embraced Islam and practiced it well. It also says: “He used to pray at night, reciting the Qur'an. When the women heard him, they wept and felt compassion for him. I said to him, ‘Do you need anything?’ He replied, ‘No, except that you give me fresh water to drink, do not feed me anything slaughtered on the stone altars, and inform me when they intend to kill me.’ When they intended to kill him, I informed him. By Allah, he was not at all troubled by that and said, ‘Send me a blade with which I may groom myself.’ I sent him a razor with my son Abu Husayn.” She had nursed him, although he was not her son by birth. She then related approximately what has preceded. It includes the words: “I would never have killed him, nor is treachery considered lawful in our religion.”",
+      "arabic_sha256": "a9391ae4b809c560a63eb47aba2efb72c99ac92c2868fa77635953dc06026dc0",
+      "english_sha256": "965c9e147f78b966f3712647d645b2ac59c32b7cf25d4be2d29dcb010104e596",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مارية",
+      "english": "Mariya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ماوية",
+      "english": "Mawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن بكير",
+      "english": "Yunus ibn Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "خبيب بن عدي",
+      "english": "Khubayb ibn Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "بئر معونة",
+      "english": "Bi'r Ma'una",
+      "kind": "place"
+    },
+    {
+      "arabic": "عبد اللَّه بن أبي نجيح",
+      "english": "Abd Allah ibn Abi Najih",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجير بن أبي إهاب",
+      "english": "Hujayr ibn Abi Ihab",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكّة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "البخاريّ",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصّحيح",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "العقيليّ",
+      "english": "al-Uqayli",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن إدريس الأودي",
+      "english": "Abd Allah ibn Idris al-Awdi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرآن",
+      "english": "Qur'an",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو حسين",
+      "english": "Abu Husayn",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "footnote cross-reference",
+      "arabic_span": "(١) أسد الغابة ت (٧٢٧٧)",
+      "explanation": "The canonical footnote is preserved as entry 7277. The supplied Usd al-Ghaba edition numbers this Kufan-report biography 7278 and assigns 7277 to the preceding Mariya; this may reflect an editorial transposition or an edition difference and should not be silently corrected.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0313:9fe9e29e0d8ef67e"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

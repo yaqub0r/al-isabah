@@ -1,0 +1,169 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011069",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11069,
+  "title": {
+    "english": "Hawwa bint Yazid",
+    "arabic_observed": "حواء بنت يزيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011069-segment-0001",
+      "volume": 8,
+      "scan_page": 91,
+      "printed_page": 90,
+      "reader_page": 4003,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4003",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0091:d880b30f1b3c0a23",
+      "arabic": "١١٠٦٩- حواء بنت يزيد\nبن السكن «٣» .\nقال ابن سعد: أخبرنا محمد بن عمر، يعني الواقدي: حدثني أسامة بن زيد، عن داود بن الحصين، عن أبي سفيان مولى بن أبي أحمد: سمعت أم عامر الأشهلية تقول: جئت أنا وليلى بنت الخطيم، وحوّاء بنت يزيد بن السكن بن كرز بن زعوراء، فدخلنا عليه، أيّ النبي ﷺ، ونحن متلفّعات بمروطنا بين المغرب والعشاء، فقال: «ما حاجتكنّ» . فقلنا:\nجئنا لنبايعك على الإسلام ... الحديث.\n(١) أسد الغابة ت ٦٨٦٠.\n(٢) أسد الغابة ت ٦٨٦٢.\n(٣) الثقات ٣/ ٩٩، أعلام النساء ١/ ٢٥٧، تجريد أسماء الصحابة ٢/ ٢٦٠، تلقيح فهوم أهل الأثر ٣٨٠، تقريب التهذيب ٢/ ٥٩٥، تهذيب التهذيب ١٢/ ٤١٣، الاستبصار ٢١٩.",
+      "english": "11069—Hawwa bint Yazid\n\nibn al-Sakan.[3]\n\nIbn Sa'd said: Muhammad ibn Umar—meaning al-Waqidi—informed us: Usama ibn Zayd related to me, from Dawud ibn al-Husayn, from Abu Sufyan, the client of Ibn Abi Ahmad: I heard Umm Amir al-Ashhaliyya say: “I came with Layla bint al-Khatim and Hawwa bint Yazid ibn al-Sakan ibn Kurz ibn Za'ura, and we entered upon him—that is, the Prophet, may Allah bless him and grant him peace—while we were wrapped in our cloaks, between the sunset and evening prayers. He said, ‘What do you need?’ We replied, ‘We have come to pledge allegiance to you in Islam …’” The hadith.\n\n[1] Usd al-Ghaba, entry 6860.\n\n[2] Usd al-Ghaba, entry 6862.\n\n[3] al-Thiqat 3/99; A'lam al-Nisa 1/257; al-Tajrid 2/260; Talqih Fuhum Ahl al-Athar 380; Taqrib al-Tahdhib 2/595; Tahdhib al-Tahdhib 12/413; al-Istibsar 219.",
+      "arabic_sha256": "e532cb3af268ddde790007b23fcbc99b6a20893bba460aca674e2cfad732c2e0",
+      "english_sha256": "8b15ecedf51ae27a300b4e164c6332f20b91b17cbc2872254120920e977209e2",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011069-segment-0002",
+      "volume": 8,
+      "scan_page": 92,
+      "printed_page": 91,
+      "reader_page": 4004,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4004",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0092:b604be6c43724e78",
+      "arabic": "وسبق لها ذكر في ترجمة جميلة بنت ثابت بن أبي الأقلح. وذكر ابن سعد قصتها مطولة كما ذكرها مصعب وأتمّ منه.",
+      "english": "She has already been mentioned in the entry on Jamila bint Thabit ibn Abi al-Aqlah. Ibn Sa'd related her story at length, as did Mus'ab, though Ibn Sa'd's account was more complete.",
+      "arabic_sha256": "f5aae2378b6afef9a1086e503f78a379dde3259d295ba33a24d09367f0546864",
+      "english_sha256": "d92081d8c5a69eebfc3a8b387b6828e5bf49bb412dadbc4b8f4557493e140d0b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله تعالى",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الإسلام",
+      "english": "Islam",
+      "kind": "other"
+    },
+    {
+      "arabic": "النساء",
+      "english": "al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمر، يعني الواقدي",
+      "english": "Muhammad ibn Umar al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "حواء بنت يزيد بن السكن بن كرز بن زعوراء",
+      "english": "Hawwa bint Yazid ibn al-Sakan ibn Kurz ibn Za'ura",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسامة بن زيد",
+      "english": "Usama ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "داود بن الحصين",
+      "english": "Dawud ibn al-Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سفيان",
+      "english": "Abu Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي أحمد",
+      "english": "Ibn Abi Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عامر الأشهلية",
+      "english": "Umm Amir al-Ashhaliyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليلى بنت الخطيم",
+      "english": "Layla bint al-Khatim",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "جميلة بنت ثابت بن أبي الأقلح",
+      "english": "Jamila bint Thabit ibn Abi al-Aqlah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

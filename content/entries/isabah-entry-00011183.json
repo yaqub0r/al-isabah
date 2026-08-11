@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011183",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11183,
+  "title": {
+    "english": "Ruqayqa al-Thaqafiyya (1)",
+    "arabic_observed": "رقيقة الثقفية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011183-segment-0001",
+      "volume": 8,
+      "scan_page": 138,
+      "printed_page": 137,
+      "reader_page": 4050,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4050",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0138:305d0523d61b144e",
+      "arabic": "١١١٨٣- رقيقة الثقفية «١»\n. قال أبو عمر: أسلمت حين خروج النبي ﷺ من مكة إلى الطائف بعد موت أبي طالب وخديجة، حديثها عند عبد ربه بن الحكم عن أميمة بنت رقيقة.\nقلت:\nأخرجه ابن أبي عاصم، من طريق عبد اللَّه بن عبد الرحمن الطائفي، عن عبد ربه، ولفظه: عن أمها، قالت: لما جاء النبيّ ﷺ يبتغي النصر بالطائف دخل عليّ فأخرجت له شرابا من سويق، فقال: «يا رقيقة، لا تعبدي طاغيتهم ولا تصلّي إليها» . قالت: إذا يقتلوني. قال: «فإذا صلّيت فولّيها ظهرك» «٢» ثم خرج من عندي.",
+      "english": "11183—Ruqayqa al-Thaqafiyya (1)\n\nAbu 'Umar said: She embraced Islam when the Prophet (may Allah bless him and grant him peace) departed from Mecca for al-Ta'if, after the deaths of Abu Talib and Khadijah. Her report is transmitted by 'Abd Rabbihi ibn al-Hakam, from Umayma bint Ruqayqa.\n\nI say:\n\nIbn Abi 'Asim transmitted it by way of 'Abd Allah ibn 'Abd al-Rahman al-Ta'ifi, from 'Abd Rabbihi. Its wording is: From her mother, who said: When the Prophet (may Allah bless him and grant him peace) came seeking support in al-Ta'if, he came in to me, and I brought him a drink made from sawiq. He said: “O Ruqayqa, do not worship their false deity, and do not pray toward it.” She said: “Then they will kill me.” He said: “When you pray, turn your back to it.” (2) Then he left me.",
+      "arabic_sha256": "163fa4afd4f00922bc356d38feed89ed5989b8e81ed153bcf3e9fb29dfbbf056",
+      "english_sha256": "24f0160ad9ef3d38883d34f4ec4e1170388b7903be29b735966471d5b3031e2d",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رقيقة",
+      "english": "Ruqayqa bint Abi Sayfi ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "'Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "رقيقة الثقفية",
+      "english": "Ruqayqa al-Thaqafiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "الطائف",
+      "english": "al-Ta'if",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو طالب",
+      "english": "Abu Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد ربه بن الحكم",
+      "english": "'Abd Rabbihi ibn al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة بنت رقيقة",
+      "english": "Umayma bint Ruqayqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi 'Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عبد الرحمن الطائفي",
+      "english": "'Abd Allah ibn 'Abd al-Rahman al-Ta'ifi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

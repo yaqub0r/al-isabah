@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011284",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11284,
+  "title": {
+    "english": "Sakhta bint Aswad",
+    "arabic_observed": "سخطى بنت أسود"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011284-segment-0001",
+      "volume": 8,
+      "scan_page": 174,
+      "printed_page": 173,
+      "reader_page": 4086,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4086",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0174:2b7a365ec3693914",
+      "arabic": "١١٢٨٤- سخطى بنت أسود\nبن عباد بن عمرو بن سواد بن غنم. ذكرها ابن سعد في المبايعات وقال: أمها حميمة بنت عبيد بن أبي بكر بن القين بن كعب، تزوجها ما عص بن قيس بن خلدة، ثم خلف عليها عبيد بن المعلى بن لوذان.",
+      "english": "11284—Sakhta bint Aswad\n\nibn Abbad ibn Amr ibn Sawad ibn Ghanm. Ibn Sa'd mentioned her among the women who pledged allegiance and said: Her mother was Humayma bint Ubayd ibn Abi Bakr ibn al-Qayn ibn Ka'b. Ma'is ibn Qays ibn Khalda married her; after him, Ubayd ibn al-Mu'alla ibn Lawdhan married her.",
+      "arabic_sha256": "2ef0ab604b299023241f220e9fdcc574eb1356351f77dbe9366ceea6059c1265",
+      "english_sha256": "cab56acd7f4c2ae91f5cb6158fbb03f9a460528d228c3ff10c9d9320f8a12857",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "حميمة بنت عبيد بن أبي بكر بن القين بن كعب",
+      "english": "Humayma bint Ubayd ibn Abi Bakr ibn al-Qayn ibn Ka'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "ما عص بن قيس بن خلدة",
+      "english": "Ma'is ibn Qays ibn Khalda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد بن المعلى بن لوذان",
+      "english": "Ubayd ibn al-Mu'alla ibn Lawdhan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

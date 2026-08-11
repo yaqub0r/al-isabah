@@ -1,0 +1,1151 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011587",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11587,
+  "title": {
+    "english": "Fatima al-Zahra:",
+    "arabic_observed": "فاطمة الزّهراء:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011587-segment-0001",
+      "volume": 8,
+      "scan_page": 263,
+      "printed_page": 262,
+      "reader_page": 4175,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4175",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0263:9979e597d3cbada4",
+      "arabic": "١١٥٨٧- فاطمة الزّهراء:\nبنت إمام المتقين رسول اللَّه: محمد بن عبد اللَّه بن عبد المطلب بن هاشم، الهاشميّة «٢»، صلّى اللَّه على أبيها وآله وسلّم ورضي عنها.\nكانت تكنى أم أبيها، بكسر الموحدة بعدها تحتانية ساكنة. ونقل ابن فتحون عن بعضهم بسكون الموحّدة بعدها نون، وهو تصحيف، وتلقّب الزهراء.\nروت عن أبيها. روى عنها ابناها، وأبوهما، وعائشة، وأم سلمة، وسلمى أم رافع، وأنس. وأرسلت عنها فاطمة بنت الحسين وغيرها.\n(١) أسد الغابة ت (٧١٧٥)، الاستيعاب ت (٣٤٩٩)، تجريد أسماء الصحابة ٢/ ٢٩٣.\n(٢) أسد الغابة ت (٧١٨٣)، الاستيعاب ت (٣٥٠٥)، مسند أحمد ٦/ ٢٨٢، طبقات ابن سعد ٨/ ١٩، طبقات خليفة ٣٣٠، تاريخ خليفة ٦٥، المعارف ١٤١، حلية الأولياء ٢/ ٣٩، المستدرك ٣/ ١٥١، جامع الأصول ٩/ ١٢٥، تهذيب الكمال ٦٩٠، تاريخ الإسلام ١/ ٣٦٠، العبر ١/ ١٣، مجمع الزوائد ٩/ ٢٠١، تهذيب التهذيب ١٢/ ٤٤٠، كنز العمال ١٣/ ٦٧٤، شذرات الذهب ١/ ٩، خلاصة تذهيب الكمال ٤٩٤.",
+      "english": "11587—Fatima al-Zahra:\n\nDaughter of the leader of the God-fearing, the Messenger of Allah, Muhammad ibn 'Abd Allah ibn 'Abd al-Muttalib ibn Hashim, the Hashimite (2)—may Allah bless her father and his family and grant them peace, and may He be pleased with her.\n\nHer kunya was Umm Abiha, with the ba bearing a kasra and followed by a vowelless ya. Ibn Fathun reported from some authorities that the ba was vowelless and followed by a nun, but this is a scribal corruption. She was given the epithet al-Zahra.\n\nShe narrated from her father. Her two sons, their father, Aisha, Umm Salama, Salma Umm Rafi', and Anas narrated from her. Fatima bint al-Husayn and others transmitted reports from her in disconnected form.\n\n(1) Usd al-Ghaba, entry 7175; al-Isti'ab, entry 3499; al-Tajrid, 2/293.\n\n(2) Usd al-Ghaba, entry 7183; al-Isti'ab, entry 3505; Musnad Ahmad, 6/282; al-Tabaqat of Ibn Sa'd, 8/19; al-Tabaqat of Khalifa, 330; Tarikh Khalifa, 65; al-Ma'arif, 141; Hilyat al-Awliya', 2/39; al-Mustadrak, 3/151; Jami' al-Usul, 9/125; Tahdhib al-Kamal, 690; Tarikh al-Islam, 1/360; al-'Ibar, 1/13; Majma' al-Zawa'id, 9/201; Tahdhib al-Tahdhib, 12/440; Kanz al-'Ummal, 13/674; Shadharat al-Dhahab, 1/9; Khulasat Tadhhib al-Kamal, 494.",
+      "arabic_sha256": "7dd06828cf38afb40ba1d5f5549cfc93bfa2d26031e96be961849d49177139d8",
+      "english_sha256": "0b30443e3806b92b22f2b95c34006844f19383ea95f441a4b878138b5f8f3225",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011587-segment-0002",
+      "volume": 8,
+      "scan_page": 264,
+      "printed_page": 263,
+      "reader_page": 4176,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4176",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0264:555b620000d377ca",
+      "arabic": "قال عبد الرّازق، عن ابن جريج: قال لي غير واحد: كانت فاطمة أصغر بنات النبيّ ﵌ وأحبهنّ إليه.\nوقال أبو عمر: اختلفوا أيتهن أصغر؟ والّذي يسكن إليه اليقين أنّ أكبرهنّ زينب، ثم رقيّة، ثم أم كلثوم، ثم فاطمة. وقد تقدّم شيء من هذا في ترجمة رقية.\nواختلف في سنة مولدها، فروى الواقديّ، عن طريق أبي جعفر الباقر، قال: قال العبّاس: ولدت فاطمة والكعبة تبنى، والنّبيّ ﵌ ابن خمس وثلاثين سنة، وبهذا جزم المدائنيّ.\nونقل أبو عمر عن عبيد اللَّه بن محمد بن سليمان بن جعفر الهاشمي- أنها ولدت سنة إحدى وأربعين من مولد النّبيّ ﵌. وكان مولدها قبل البعثة بقليل نحو سنة أو أكثر، وهي أسنّ من عائشة بنحو خمس سنين، وتزوّجها عليّ أوائل المحرم سنة اثنتين بعد عائشة بأربعة أشهر، وقيل غير ذلك. وانقطع نسل رسول اللَّه ﵌ إلا من فاطمة.\nذكر ابن إسحاق في «المغازي الكبرى»: حدّثني ابن أبي نجيح، عن علي- أنه خطب فاطمة، فقال له النّبيّ ﵌: «هل عندك من شيء؟» قلت: لا. قال:\n«فما فعلت الدّرع التي أصبتها» - يعني من مغانم بدر.\nوقال ابن سعد: أخبرنا خالد بن مخلد، حدّثنا سليمان- هو ابن بلال، حدّثني جعفر بن محمد، عن أبيه: أصدق عليّ فاطمة درعا من حديد.\nوعن حازم، عن حماد بن زيد، عن أيوب، عن عكرمة- أنّ النّبيّ ﵌ قال لعليّ حين زوّجه فاطمة: «أعطها درعك «١» الحطميّة» «٢» .\nهذا مرسل صحيح الإسناد.\nوعن يزيد بن هارون، عن جرير بن حازم، عن أيّوب أتمّ منه.\nوأخرج أحمد في مسندة، من طريق ابن أبي نجيح، عن أبيه، عن رجل سمع عليّا يقول: أردت أن أخطب إلى رسول اللَّه ﵌ ابنته، فقلت: واللَّه ما لي من\n(١) هي التي تحطم السيوف أي تكسرها، وقيل: هي العريضة الثقيلة، وقيل: هي منسوبة إلى بطن من عبد القيس يقال لهم حطمة بن محارب كانوا يعملون الدروع وهذا أشبه الأقوال. النهاية ١/ ٤٠٢.\n(٢) أخرجه أبو داود (٢١٢٦)، والطبراني في الكبير ١١/ ٣٥٥ والبيهقي في السنن ٧/ ٢٥٢ وابن أبي شيبة في المصنف ٤/ ١٩٩.",
+      "english": "Abd al-Razzaq narrated from Ibn Jurayj, who said: “More than one person told me that Fatima was the youngest of the Prophet's daughters—may Allah bless him and grant him peace—and the dearest of them to him.”\n\nAbu Umar said: They differed over which of them was the youngest. The view that may confidently be regarded as certain is that the eldest of them was Zaynab, then Ruqayya, then Umm Kulthum, and then Fatima. Some of this has already been given in the entry on Ruqayya.\n\nThey differed regarding the year of her birth. al-Waqidi related by way of Abu Ja'far al-Baqir, who said that al-Abbas said: “Fatima was born while the Ka'ba was being built, when the Prophet—may Allah bless him and grant him peace—was thirty-five years old.” al-Mada'ini stated this categorically.\n\nAbu Umar transmitted from Ubayd Allah ibn Muhammad ibn Sulayman ibn Ja'far al-Hashimi that she was born in the forty-first year after the Prophet's birth—may Allah bless him and grant him peace. Her birth occurred shortly before the prophetic mission, approximately a year or more beforehand. She was about five years older than Aisha. Ali married her at the beginning of Muharram in year 2, four months after Aisha, though other views have also been given. The line of descent of the Messenger of Allah—may Allah bless him and grant him peace—continued only through Fatima.\n\nIbn Ishaq mentioned in al-Maghazi al-Kubra: Ibn Abi Najih narrated to me from Ali, who said: “I sought Fatima's hand in marriage. The Prophet—may Allah bless him and grant him peace—said to me, ‘Do you have anything?’ I said, ‘No.’ He said, ‘Then what became of the coat of armor that you acquired?’”—meaning from the spoils of Badr.\n\nIbn Sa'd said: Khalid ibn Makhlad informed us; Sulayman—that is, Ibn Bilal—narrated to us; Ja'far ibn Muhammad narrated to me, from his father: Ali gave Fatima an iron coat of armor as her dower.\n\nThere is also a report from Hazim, from Hammad ibn Zayd, from Ayyub, from Ikrima, that when the Prophet—may Allah bless him and grant him peace—gave Fatima to Ali in marriage, he said to him, “Give her your Hutamiyya[1] coat of armor.”[2]\n\nThis is a mursal report with a sound chain of transmission.\n\nFrom Yazid ibn Harun, from Jarir ibn Hazim, from Ayyub, there is a version more complete than this one.\n\nAhmad reported it in Musnad Ahmad, by way of Ibn Abi Najih, from his father, from a man who heard Ali say: “I wanted to ask the Messenger of Allah—may Allah bless him and grant him peace—for his daughter's hand, but I said, ‘By Allah, I have no—’”\n\n[1] It is the kind that shatters swords—that is, breaks them. It is also said to mean a broad, heavy coat of armor. It is further said to be attributed to a clan of Abd al-Qays called Hutama ibn Muharib, whose members used to manufacture coats of armor; this is the most plausible of the explanations. al-Nihayah, 1/402.\n\n[2] It was reported by Abu Dawud (2126), al-Tabarani in al-Kabir, 11/355, al-Bayhaqi in al-Sunan, 7/252, and Ibn Abi Shayba in al-Musannaf, 4/199.",
+      "arabic_sha256": "555b620000d377ca5ab383d7e02dfedfdf9d7f73716af720f8428514756cb5fb",
+      "english_sha256": "f66bc69071811715eba598732fb4b12543da4e85a4920f8d848cbe42f22fc81f",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011587-segment-0003",
+      "volume": 8,
+      "scan_page": 265,
+      "printed_page": 264,
+      "reader_page": 4177,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4177",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0265:61da474777a69efc",
+      "arabic": "شيء، ثمّ ذكرت صلته وعائدته، فخطبتها إليه، فقال: «وهل عندك شيء؟ فقلت: لا. قال:\n«فأين درعك الحطميّة الّتي أعطيتك يوم كذا وكذا؟» قلت: هو عندي. قال: «فأعطها إيّاها» .\nوله شاهد عند أبي داود من حديث ابن عبّاس.\nوأخرج ابن سعد، عن الواقديّ، من طريق أبي جعفر، قال: نزل النبيّ ﵌ على أبي أيّوب، فلمّا تزوّج عليّ فاطمة قال له: «التمس منزلا»، فأصابه مستأخرا، فبنى بها فيه، فجاء إليها، فقالت له: كلّم حارثة بن النّعمان. فقال: قد تحوّل حارثة حتى استحييت منه، فبلغ حارثة فجاء فقال: يا رسول اللَّه، واللَّه الّذي تأخذ أحبّ إلي من الّذي تدع. فقال: صدقت، بارك اللَّه فيك، فتحوّل حارثة من بيت له فسكنه عليّ بفاطمة.\nومن طريق عمر بن عليّ، قال: تزوّج عليّ فاطمة في رجب سنة مقدمهم المدينة، وبنى بها مرجعه من بدر، ولها يومئذ ثمان عشرة سنة.\nوفي «الصّحيح» عن عليّ قصّة الشّارفين لما ذبحهما حمزة، وكان عليّ أراد أن يبني بفاطمة، فهذا يدفع قول من زعم أنّ تزويجه بها كان بعد أحد، فإن حمزة قتل بأحد.\nقال يزيد بن زريع، عن روح بن القاسم، عن عمرو بن دينار، قالت عائشة: ما رأيت قط أحدا أفضل من فاطمة غير أبيها. أخرجه الطّبراني في ترجمة إبراهيم بن هاشم من المعجم الأوسط، وسنده صحيح على شرط الشّيخين إلى عمر.\nوقال عكرمة، عن ابن عبّاس: خطّ النبيّ ﵌ أربعة خطوط، فقال: «أفضل نساء أهل الجنّة خديجة، وفاطمة، ومريم، وآسية» «١» .\nوقال أبو يزيد المدائني، عن أبي هريرة- مرفوعا: «خير نساء العالمين أربع: مريم، وآسية، وخديجة، وفاطمة» «٢» .\nوقال الشّعبي، عن جابر: «حسبك من نساء العالمين أربع ...» «٣» فذكرهن.\n(١) أخرجه الحاكم في المستدرك ٣/ ١٨٥ وأورده الهيثمي في الزوائد ٩/ ٢٢٦ وقال رواه أحمد وأبو يعلى والطبراني ورجالهم رجال الصحيح.\n(٢) أخرج ابن حبان في صحيحه ٤/ ٥٤٩ عن أنس بن مالك حديث رقم ٢٢٢٢ وأبو بكر الخطيب في تاريخ بغداد ٧/ ١٨٥، ٩/ ٤٠٤، والمتقي الهندي في كنز العمال حديث رقم ٣٤٤٠٤.\n(٣) أخرجه أحمد في المسند ٣/ ١٣٥ وابن أبي شيبة في المصنف ١٢/ ١٣٤ وأبو نعيم في الحل ٢/ ٣٤٤ وقال هذا حديث غريب من حديث قتادة تفرد به عنه معمر حدث به الأئمة عن عبد الرزاق أحمد وإسحاق وأبو مسعود وأخرجه الحاكم في المستدرك ٣/ ١٥٧ وقال هذا الحديث في المسند لأبي عبد اللَّه أحمد بن حنبل هكذا. وقال الذهبي معمر عن أنس مرفوعا حسبك من النساء العالمين أربع مريم وآسية امرأة فرعون وخديجة وفاطمة البخاري ومسلم ويروى عن معمر عن الزهري.",
+      "english": "anything. Then I remembered his kinship with me and his favors toward me, so I asked him for her hand. He said, “Do you have anything?” I said, “No.” He said, “Where, then, is your Hutamiyya coat of mail, which I gave you on such-and-such a day?” I said, “It is with me.” He said, “Then give it to her.”\n\nIt is corroborated by a report transmitted by Abu Dawud from Ibn Abbas.\n\nIbn Sa'd transmitted from al-Waqidi, by way of Abu Ja'far, who said: The Prophet—may Allah bless him and grant him peace—lodged with Abu Ayyub. When Ali married Fatima, the Prophet told him, “Look for a dwelling.” He found one farther away and consummated his marriage with her there. The Prophet came to her, and she said to him, “Speak to Haritha ibn al-Nu'man.” He said, “Haritha has moved so much that I have become embarrassed before him.” This reached Haritha, so he came and said, “O Messenger of Allah, by Allah, what you take is dearer to me than what you leave.” He said, “You have spoken truly. May Allah bless you.” Haritha then moved out of a house of his, and Ali took up residence in it with Fatima.\n\nAnd by way of Umar ibn Ali, who said: Ali married Fatima in Rajab of the year in which they arrived in Medina, and he consummated his marriage with her upon his return from Badr. She was eighteen years old at the time.\n\nIn al-Sahih, from Ali, is the story of the two aged she-camels when Hamza slaughtered them. Ali had intended to consummate his marriage with Fatima. This refutes the assertion of anyone who claimed that his marriage to her took place after Uhud, for Hamza was killed at Uhud.\n\nYazid ibn Zuray' said, from Rawh ibn al-Qasim, from Amr ibn Dinar: Aisha said, “I have never seen anyone at all better than Fatima, apart from her father.” Al-Tabarani transmitted it in the entry for Ibrahim ibn Hashim in al-Mu'jam al-Awsat. Its chain is sound according to the criteria of the Two Shaykhs as far as Umar.\n\nIkrima related from Ibn Abbas: The Prophet—may Allah bless him and grant him peace—drew four lines and said, “The best women of Paradise are Khadijah, Fatima, Maryam, and Asiya.” (1)\n\nAbu Yazid al-Mada'ini related from Abu Hurayra, as a report attributed to the Prophet: “The best women of all the worlds are four: Maryam, Asiya, Khadijah, and Fatima.” (2)\n\nAl-Sha'bi related from Jabir: “Sufficient for you among the women of the worlds are four...” (3) He then named them.\n\n(1) Al-Hakim transmitted it in al-Mustadrak, 3/185. Al-Haythami included it in al-Zawa'id, 9/226, and said: “It was narrated by Ahmad, Abu Ya'la, and al-Tabarani, and their narrators are narrators of the Sahih.”\n\n(2) Ibn Hibban transmitted it in his Sahih, 4/549, from Anas ibn Malik, hadith no. 2222; it was also transmitted by Abu Bakr al-Khatib in Tarikh Baghdad, 7/185 and 9/404, and by al-Muttaqi al-Hindi in Kanz al-Ummal, hadith no. 34404.\n\n(3) Ahmad transmitted it in Musnad Ahmad, 3/135; Ibn Abi Shayba in al-Musannaf, 12/134; and Abu Nu'aym in al-Hilya, 2/344. Abu Nu'aym said: “This is a gharib hadith transmitted from Qatada; Ma'mar alone transmitted it from him. The imams Ahmad, Ishaq, and Abu Mas'ud transmitted it from Abd al-Razzaq.” Al-Hakim also transmitted it in al-Mustadrak, 3/157, and said: “This hadith appears thus in Musnad Ahmad, by Abu Abd Allah Ahmad ibn Hanbal.” Al-Dhahabi said: Ma'mar, from Anas, as a report attributed to the Prophet: “Sufficient for you among the women of the worlds are four: Maryam, Asiya the wife of Pharaoh, Khadijah, and Fatima.” Al-Bukhari and Muslim. It is also narrated from Ma'mar, from al-Zuhri.",
+      "arabic_sha256": "61da474777a69efc8af0bcf5173d1ad02f873ae1457c3193bf58523cf0ea88a3",
+      "english_sha256": "1a954ba98a5e7926aba9417372f8f40461b3c50787a93628fb5026ba58883b97",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011587-segment-0004",
+      "volume": 8,
+      "scan_page": 266,
+      "printed_page": 265,
+      "reader_page": 4178,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4178",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0266:23a1ff10bc39a5d1",
+      "arabic": "وقال عبد الرّحمن بن أبي نعيم، عن أبي سعيد الخدريّ مرفوعا: «سيّدة نساء أهل الجنّة فاطمة إلّا ما كان من مريم» «١» .\nوفي الصّحيحين- عن المسور بن مخرمة: سمعت رسول اللَّه ﷺ على المنبر يقول: «فاطمة بضعة منّي، يؤذيني ما آذاها، ويريبني ما رابها» «٢» .\nوعن علي بن الحسين بن علي، عن أبيه، عن عليّ، قال: قال النّبي ﷺ لفاطمة: «إنّ اللَّه يرضى لرضاك، ويغضب لغضبك» .\nوأخرج الدولابيّ في الذّرية الطّاهرة بسند جيد عن عبد اللَّه بن بريدة، عن أبيه، قال:\nقال رسول اللَّه ﵌ ليلة بني عليّ بفاطمة: «لا تحدث شيئا حتّى تلقاني»، فدعا بماء فتوضأ منه، ثم أفرغه عليهما، وقال: «اللَّهمّ بارك فيهما، وبارك عليهما، وبارك لهما في نسلهما» «٣» .\nوقالت أم سلمة: في بيتي نزلت: إِنَّما يُرِيدُ اللَّهُ لِيُذْهِبَ عَنْكُمُ الرِّجْسَ أَهْلَ الْبَيْتِ ... [الأحزاب: ٣٣] الآية.\nقالت: فأرسل رسول اللَّه ﵌ إلى فاطمة وعلي والحسن والحسين، فقال: «هؤلاء أهل بيتي» الحديث.\nوأخرج التّرمذيّ والحاكم في «المستدرك»، وقال: صحيح على شرط مسلم.\nوقال مسروق، عن عائشة: أقبلت فاطمة تمشي كأن مشيتها مشية رسول اللَّه ﵌، فقال: «مرحبا بابنتي» «٤»، ثم أجلسها عن يمينه، ثم أسرّ إليها حديثا فبكت، ثم أسرّ إليها حديثا فضحكت، فقلت: ما رأيت كاليوم أقرب فرحا من حزن!\n(١) أخرجه البخاري في صحيح ٥/ ٢٥، ٣٦، وأحمد في المسند ٣/ ٨٠، ٥/ ٣٩١، وأورده المتقي الهندي في كنز العمال حديث رقم ٣٤٢٢٤.\n(٢) أخرج البخاري في الصحيح ٥/ ٢٦، ٣٦ والحاكم في المستدرك ٣/ ١٥٨ وقال صحيح الإسناد ولم يخرجاه ووافقه الذهبي بقوله صحيح والبيهقي في السنن الكبرى ٧/ ٦٤، ١٠/ ٢٠١ وأورده العجلوني في كشف الخفاء ٢/ ١٣٠، والمتقي الهندي في كنز العمال حديث رقم ٣٤٢٢٢، ٣٤٢٢٣.\n(٣) أخرجه الطبراني في الكبير ٢/ ٤ وابن سعد في الطبقات ٨/ ١٣.\n(٤) أصله في البخاري ٤/ ٢٤٨ ومسلم ٤/ ١٩٠٥ (٩٩- ٢٤٥٠) .",
+      "english": "And Abd al-Rahman ibn Abi Nu'aym reported from Abu Sa'id al-Khudri, as a statement traced to the Prophet: “Fatima is the foremost of the women of Paradise, except for Mary.” [1]\n\nIt is reported in the two Sahih collections from al-Miswar ibn Makhrama: I heard the Messenger of Allah—may Allah bless him and grant him peace—say from the pulpit: “Fatima is a part of me. Whatever harms her harms me, and whatever troubles her troubles me.” [2]\n\nIt is reported from Ali ibn al-Husayn ibn Ali, from his father, from Ali, who said: The Prophet—may Allah bless him and grant him peace—said to Fatima: “Indeed, Allah is pleased when you are pleased and is angry when you are angry.”\n\nal-Dawlabi transmitted in al-Dhurriyya al-Tahira, with a good chain of transmission, from Abdullah ibn Burayda, from his father, who said:\n\nOn the night when Ali consummated his marriage with Fatima, the Messenger of Allah—may Allah bless him and grant him peace—said: “Do not do anything until you meet me.” He then called for water, performed ablution with it, and poured it over them both, saying: “O Allah, bless them both, bestow blessing upon them both, and bless them in their offspring.” [3]\n\nUmm Salama said: In my house the following was revealed: “Allah only desires to remove impurity from you, O People of the House…” [al-Ahzab 33:33]—to the end of the verse.\n\nShe said: The Messenger of Allah—may Allah bless him and grant him peace—then sent for Fatima, Ali, al-Hasan, and al-Husayn, and said: “These are the people of my household”—to the end of the hadith.\n\nIt was transmitted by al-Tirmidhi and by al-Hakim in al-Mustadrak; the latter said: “It is sound according to Muslim's criteria.”\n\nMasruq reported from Aisha: Fatima approached, walking as though her gait were the gait of the Messenger of Allah—may Allah bless him and grant him peace. He said, “Welcome, my daughter!” [4] Then he seated her on his right and confided something to her, whereupon she wept. He then confided something else to her, whereupon she laughed. I said, “Never have I seen, as I have today, joy so close to sorrow!”\n\n[1] al-Bukhari transmitted it in his Sahih, 5/25, 36; Ahmad in Musnad Ahmad, 3/80 and 5/391; and al-Muttaqi al-Hindi cited it in Kanz al-Ummal, hadith no. 34224.\n\n[2] al-Bukhari transmitted it in al-Sahih, 5/26, 36; al-Hakim in al-Mustadrak, 3/158, saying, “Its chain of transmission is sound, though the two of them did not transmit it,” and al-Dhahabi concurred, saying, “Sound”; al-Bayhaqi in al-Sunan al-Kubra, 7/64 and 10/201; al-Ajluni cited it in Kashf al-Khafa, 2/130; and al-Muttaqi al-Hindi in Kanz al-Ummal, hadith nos. 34222 and 34223.\n\n[3] al-Tabarani transmitted it in al-Kabir, 2/4, and Ibn Sa'd in al-Tabaqat, 8/13.\n\n[4] Its original is in al-Bukhari, 4/248, and Muslim, 4/1905 (99-2450).",
+      "arabic_sha256": "23a1ff10bc39a5d143ab0b3174e9bcccaf2be21715efede5ba71df5ccd703e36",
+      "english_sha256": "f57cf1c31e3004765aba927059b774cba0f345291d24fd54ecfba8bc6882969a",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011587-segment-0005",
+      "volume": 8,
+      "scan_page": 267,
+      "printed_page": 266,
+      "reader_page": 4179,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4179",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0267:e95aa8cb3d566af3",
+      "arabic": "فسألتها عمّا قال. فقالت: ما كنت لأفشي على رسول اللَّه ﵌ سرّه، فلما قبض سألتها فأخبرتني أنه قال: «إن جبريل كان يعارضني بالقرآن في كلّ سنة مرة، وإنّه عارضني العام مرّتين، وما أراه إلّا قد حضر أجلي، وإنّك أوّل أهل بيتي لحوقا بي، ونعم السّلف أنا لك» . فبكيت: فقال: «ألا ترضين أن تكوني سيّدة نساء العالمين؟» فضحكت «١» .\nأخرجاه.\nوقالت أم سلمة: جاءت فاطمة إلى النبيّ ﵌، فسألتها عنه، فقالت: أخبرني أنه مقبوض في هذه السنة، فبكيت، فقال: «أما يسرّك أن تكوني سيّدة نساء أهل الجنّة إلّا مريم»، فضحكت.\nأخرجه أبو يعلى.\nوأخرج ابن أبي عاصم، عن عبد اللَّه بن عمرو بن سالم المفلوج بسند من أهل البيت عن علي أنّ النبيّ ﵌ قال لفاطمة: «إنّ اللَّه يغضب لغضبك ويرضى لرضاك»» .\nوأخرج التّرمذيّ من حديث زيد بن أرقم أنّ رسول اللَّه ﵌ قال: «عليّ، وفاطمة، والحسن، والحسين- أنا حرب لمن حاربهم وسلم لمن سالمهم» «٣» .\nونقل أبو عمر في قصّة وفاتها أنّ فاطمة أوصت عليّا أن يغسلها هو وأسماء بنت عميس. واستبعده ابن فتحون، فإن أسماء كانت حينئذ زوج أبي بكر الصّديق، قال: فكيف تنكشف بحضرة عليّ في غسل فاطمة، وهو محلّ الاستبعاد.\nوقد وقع عند أحمد أنها اغتسلت قيل موتها بقليل، وأوصت ألّا تكشف، ويكتفى بذلك في غسلها، واستبعد هذا أيضا.\nوقد ثبت في الصّحيح عن عائشة أنّ فاطمة عاشت بعد النبيّ ﵌ ستة أشهر. وقال الواقديّ، وهو ثبت: وروى الحميديّ، عن سفيان، عن عمرو بن دينار-\n(١) أخرجه البخاري في صحيحه ٤/ ٢٤٨، ٦/ ٢٢٩ وأحمد في المسند ٦/ ٢٨٢، وأورده الهيثمي في الزوائد ٩/ ٢٦ رواه الطبراني بإسناد ضعيف وروى البزار بعضه أيضا وفي رجاله ضعف، وأورده البيهقي في دلائل النبوة ٧/ ١٥٥ وعزاه البخاري في الصحيح.\n(٢) أخرجه الطبراني في الكبير ١/ ٦٦ والحاكم في المستدرك ٣/ ١٥٤، وقال صحيح الإسناد ولم يخرجاه وعقب الذهبي بل حسين منكر الحديث ولا يحل أن يحتج به قال الهيثمي في الزوائد ٩/ ٢٠٦ رواه الطبراني وإسناده حسن.\n(٣) أخرجه الطبراني في الكبير ٣/ ٣٩، ١١/ ٤٤٤.",
+      "english": "So I asked her what he had said. She replied, “I would not divulge the secret of the Messenger of Allah (may Allah bless him and grant him peace).” When he died, I asked her, and she informed me that he had said: “Gabriel used to review the Qur'an with me once every year, but this year he reviewed it with me twice. I can only think that my appointed time has drawn near. You will be the first of my household to join me, and what an excellent predecessor I am for you.” So I wept. Then he said, “Would you not be pleased to be the foremost woman among the women of all the worlds?” So I laughed. (1)\n\nal-Bukhari and Muslim both transmitted it.\n\nUmm Salama said: Fatima came to the Prophet (may Allah bless him and grant him peace), and I asked her about him. She said, “He informed me that he would be taken in death this year, so I wept. Then he said, ‘Would it not please you to be the foremost woman among the women of Paradise, apart from Mary?’ So I laughed.”\n\nAbu Ya'la transmitted it.\n\nIbn Abi Asim transmitted, from Abd Allah ibn Amr ibn Salim al-Mafluj, through an isnad from the Ahl al-Bayt, from Ali, that the Prophet (may Allah bless him and grant him peace) said to Fatima: “Allah becomes angry because of your anger and is pleased because of your pleasure.” (2)\n\nal-Tirmidhi transmitted from the hadith of Zayd ibn Arqam that the Messenger of Allah (may Allah bless him and grant him peace) said: “Ali, Fatima, al-Hasan, and al-Husayn—I am at war with whoever wages war against them and at peace with whoever makes peace with them.” (3)\n\nAbu Umar related, in the account of her death, that Fatima instructed Ali that he and Asma bint Umays should wash her. Ibn Fathun considered this unlikely, since Asma was then the wife of Abu Bakr al-Siddiq. He said: “How, then, could she uncover herself in Ali's presence while Fatima was being washed?” This is the basis for considering it unlikely.\n\nIt is related in Ahmad's account that she washed herself shortly [before] her death and instructed that she not be uncovered, and that this should suffice as her washing. This too was considered unlikely.\n\nIt is established in the Sahih, from Aisha, that Fatima lived for six months after the Prophet (may Allah bless him and grant him peace). al-Waqidi said—and he is reliable—and al-Humaydi narrated from Sufyan, from Amr ibn Dinar—\n\n(1) al-Bukhari transmitted it in his Sahih, 4/248 and 6/229, and Ahmad in Musnad Ahmad, 6/282. al-Haythami cited it in al-Zawa'id, 9/26: al-Tabarani narrated it with a weak isnad; al-Bazzar also narrated part of it, and some of its transmitters are weak. al-Bayhaqi cited it in Dala'il al-Nubuwwa, 7/155, and attributed it to al-Bukhari in the Sahih.\n\n(2) al-Tabarani transmitted it in al-Kabir, 1/66, and al-Hakim in al-Mustadrak, 3/154. He said: “Its isnad is sound, although neither al-Bukhari nor Muslim included it.” al-Dhahabi replied: “Rather, Husayn's hadiths are objectionable, and it is not permissible to cite him as proof.” al-Haythami said in al-Zawa'id, 9/206: “al-Tabarani narrated it, and its isnad is fair.”\n\n(3) al-Tabarani transmitted it in al-Kabir, 3/39 and 11/444.",
+      "arabic_sha256": "e95aa8cb3d566af35e34487cbe3147667aea0abd60beff4282f79afb01ba4919",
+      "english_sha256": "9bc79fa3401bb0ecee9e20ee429a902f3a89fe2add261feb0eee0deb84243105",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011587-segment-0006",
+      "volume": 8,
+      "scan_page": 268,
+      "printed_page": 267,
+      "reader_page": 4180,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4180",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0268:4c892228f7edaf69",
+      "arabic": "أنها بقيت بعده ثلاثة أشهر وقال غيره: بعده أربعة أشهر، وقيل شهرين، وعند الدّولابي في الذّرية الطّاهرة: بقيت بعده خمسة وتسعين يوما. وعن عبد اللَّه بن الحارث بقيت بعده ثمانية أشهر.\nوأخرج ابن سعد، وأحمد بن حنبل، من حديث أمّ رافع، قال: مرضت فاطمة فلما كان اليوم الّذي توفيت قالت لي: يا أمة، اسكبي لي غسلا، فاغتسلت كأحسن ما كانت تغتسل. ثم لبست ثيابا لها جددا ثم قالت: اجعلي فراشي وسط البيت، فاضطجعت عليه، واستقبلت القبلة، وقالت يا أمة، إني مقبوضة الساعة، وقد اغتسلت، فلا يكشفنّ لي أحد كنفا «١»، فماتت، فجاء عليّ فأخبرته فاحتملها ودفنها بغسلها ذلك.\nوأخرج ابن سعد من طريق محمد بن موسى- أنّ عليا غسّل فاطمة. ومن طريق عبيد اللَّه بن أبي بكر، عن عمرة، قالت: صلّى العباس على فاطمة، ونزل هو وعلي والفضل بن عبّاس في حفرتها.\nوروى الواقديّ، عن طريق الشّعبي، قال: صلّى أبو بكر على فاطمة، وهذا فيه ضعف وانقطاع.\nوقد روى بعض المتروكين عن مالك، عن جعفر بن محمد، عن أبيه نحوه، ووهّاه الدّارقطنيّ، وابن عديّ.\nقال ابن سعد: أخبرنا عفان، حدثنا حماد بن سلمة، عن عطاء بن السّائب، عن أبيه، عن علي أنّ رسول اللَّه ﵌ لما زوجه فاطمة بعث معها بخميلة ووسادة أدم حشوها ليف ورحاءين وسقاءين، قال: فقال عليّ لفاطمة يوما: سنوت «٢» حتى اشتكيت صدري، وقد جاء اللَّه بسبي فاذهبي فاستخدمي. فقالت: وأنا واللَّه قد طحنت حتى مجلت «٣» يداي، فأتت النبيّ ﵌، فقال: «ما جاء بك أي بنيّة؟» فقالت: جئت لأسلّم عليك، واستحيت أن تسأله ورجعت، فأتياه جميعا، فذكر له عليّ حالهما، قال: «لا واللَّه لا أعطيكما، وأدع أهل الصّفة تتلوّى بطونهم لا أجد ما أنفق عليهم، ولكن أبيع وأنفق عليهم أثمانهم»، فرجعا، فأتاهما وقد دخلا قطيفتهما، إذ غطيا رءوسهما بدت أقدامهما، وإذا غطّيا أقدامهما انكشفت رءوسهما، فثارا، فقال: «مكانكما، ألا أخبركما بخير ممّا\n(١) الكنف: الجانب. النهاية ٤/ ٢٠٤.\n(٢) يقال: سنوت الدّلو سناوة إذا جررتها من البئر. اللسان ٣/ ٢١٢٩.\n(٣) ثخن جلدها وتعجّر وظهر فيها ما يشبه البثر من العمل بالأشياء الصّلبة الخشنة. النهاية ٤/ ٣٠٠.",
+      "english": "—that she remained alive for three months after him. Another said: four months after him; and it was said: two months. According to al-Dulabi in al-Dhurriyya al-Tahira, she remained alive for ninety-five days after him. It is related from Abd Allah ibn al-Harith that she remained alive for eight months after him.\n\nIbn Sa'd and Ahmad ibn Hanbal transmitted from Umm Rafi', who said: Fatima fell ill. When the day on which she died came, she said to me, “O servant-woman, pour out water for me to wash.” She washed herself as thoroughly as she ever used to wash. Then she put on some new clothes of hers and said, “Place my bedding in the middle of the house.” She lay down upon it, faced the qibla, and said, “O servant-woman, I am about to be taken at this very hour. I have washed myself, so let no one uncover any side of me.”¹ She then died. Ali came, and I informed him; he carried her and buried her with that washing of hers.\n\nIbn Sa'd transmitted, through Muhammad ibn Musa, that Ali washed Fatima. And through Ubayd Allah ibn Abi Bakr, from Amra, who said: al-Abbas performed the funeral prayer over Fatima, and he, Ali, and al-Fadl ibn Abbas descended into her grave.\n\nal-Waqidi related through al-Sha'bi, who said: Abu Bakr performed the funeral prayer over Fatima. This report contains weakness and a break in its chain.\n\nOne of the abandoned transmitters also related something similar from Malik, from Ja'far ibn Muhammad, from his father. al-Daraqutni and Ibn Adi declared it feeble.\n\nIbn Sa'd said: Affan informed us: Hammad ibn Salama narrated to us, from Ata ibn al-Sa'ib, from his father, from Ali, that when the Messenger of Allah—may Allah bless him and grant him peace—married Fatima to him, he sent with her a velvet covering, a leather pillow stuffed with palm fiber, two handmills, and two waterskins. Ali said: One day Ali said to Fatima, “I have drawn water² until my chest has begun to hurt, and Allah has now brought captives, so go and ask him to provide you with a servant.” She said, “By Allah, I too have ground grain until my hands have become calloused.”³ She went to the Prophet—may Allah bless him and grant him peace—and he said, “What has brought you, my dear daughter?” She replied, “I came to greet you.” She was too shy to ask him and returned. Then they both came to him, and Ali described their condition to him. He said, “No, by Allah, I will not give the two of you anything while leaving the people of al-Suffa with their stomachs writhing, when I can find nothing to spend on them. Instead, I shall sell the captives and spend their proceeds on them.” So they returned. He later came to them when they had gone beneath their blanket: whenever they covered their heads, their feet showed, and whenever they covered their feet, their heads were exposed. They rose, but he said, “Stay where you are. Shall I not tell you of something better than what—”\n\n¹ al-kanf: the side. al-Nihaya, 4/204.\n\n² One says, “sanawtu al-dalwa sinawatan,” when one draws the bucket from the well. al-Lisan, 3/2129.\n\n³ That is, the skin became thick and roughened, and marks resembling pustules appeared on it from working with hard, coarse objects. al-Nihaya, 4/300.",
+      "arabic_sha256": "4c892228f7edaf6943bdb2c4d13f21e14e50e0cbd347eb41c931f49440ce95c7",
+      "english_sha256": "f3b1bed9a5beb7eb624e8f12b1b0e99fa5ea8c41ec01a07d57298745a4d96f18",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011587-segment-0007",
+      "volume": 8,
+      "scan_page": 269,
+      "printed_page": 268,
+      "reader_page": 4181,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4181",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0269:eba22a100055146e",
+      "arabic": "سألتماني؟» فقالا: بلى. فقال: «كلمات علّمنيهنّ جبريل، تسبّحان، في دبر كلّ صلاة عشرا، وتحمدان عشرا، وتكبّران عشرا، وإذا أويتما إلى فراشكما فسبّحا ثلاثا وثلاثين، واحمدا ثلاثا وثلاثين، وكبّرا أربعا وثلاثين» . قال علي: فو اللَّه ما تركتهنّ منذ علمنيهن.\nوقال له ابن الكواء: ولا ليلة صفين؟ فقال: قاتلكم اللَّه يا أهل الطروق! ولا ليلة صفين.\nوقال: أخبرنا يزيد بن هارون، أخبرنا جرير بن حازم، حدثنا عمرو بن سعيد، قال: كان في علي شدة على فاطمة، فقالت: واللَّه لأشكونك إلى رسول اللَّه ﵌، فانطلقت وانطلق عليّ في أثرها، فكلمته، فقال: «أي بنيّة، اسمعي واستمعي واعقلي، إنّه لا إمرة لامرأة لا تأتي هوى زوجها وهو ساكت» . قال علي: فكففت عما كنت أصنع، وقلت: واللَّه لا أتي شيئا تكرهينه أبدا.\nأخبرنا عبيد اللَّه بن موسى، حدثنا عبد العزيز بن سياه، عن حبيب بن أبي ثابت، قال: كان بين عليّ وفاطمة كلام، فدخل رسول اللَّه ﵌، فلم يزل حتى أصلح بينهما، ثم خرج، قال: فقيل له: دخلت وأنت على حال وخرجت ونحن نرى البشر في وجهك! فقال: وما يمنعني وقد أصلحت بين أحبّ اثنين إلي.\nوأخرج الواقديّ بسند له، عن أبي جعفر، قال: دخل العباس على عليّ وفاطمة وهي تقول: أنا أسن منك. فقال العباس: ولدت فاطمة وقريش تبني الكعبة، وولد علي قبلها بسنوات.\nوقال الواقديّ: توفيت فاطمة ليلة الثلاثاء لثلاث خلون من شهر رمضان سنة إحدى عشرة.\nومن طريق عمرة: صلّى العباس على فاطمة، ونزل في حفرتها هو وعليّ والفضل.\nومن طريق علي بن الحسين أنّ عليّا صلّى عليها ودفنها بليل بعد هدأة.\nوذكر عن ابن عباس أنه سأله فأخبره بذلك. وقال الواقديّ: قلت لعبد الرحمن بن أبي الموالي: إن الناس يقولون: إن قبر فاطمة بالبقيع. فقال: ما دفنت إلا في زاوية في دار عقيل، وبين قبرها وبين الطريق سبعة أذرع.",
+      "english": "“…than what you two asked me for?” They both said, “Yes.” He said, “Words that Gabriel taught me: after every prayer, glorify Allah ten times, praise Him ten times, and magnify Him ten times. When the two of you retire to your bed, glorify Him thirty-three times, praise Him thirty-three times, and magnify Him thirty-four times.” Ali said, “By Allah, I have never omitted them since he taught them to me.”\n\nIbn al-Kawwa' said to him, “Not even on the night of Siffin?” He replied, “May Allah fight you, O people of Iraq! Not even on the night of Siffin.”\n\n[Editorial note: The supplied text reads “O people of nocturnal incursions” (ya ahl al-turuq); “people of Iraq” is an editorial correction based on the parallel transmission in Ibn Sa'd's al-Tabaqat.]\n\nHe said: Yazid ibn Harun informed us; Jarir ibn Hazim informed us; Amr ibn Sa'id related to us, saying: Ali used to behave harshly toward Fatima. She said, “By Allah, I shall complain about you to the Messenger of Allah, may Allah bless him and grant him peace.” She set out, and Ali followed behind her. She spoke to him, and he said, “My dear daughter, hear, listen attentively, and understand: there is no good sense in a woman who does not respond to her husband's wishes while he remains calm.” Ali said, “I then refrained from what I had been doing, and I said, ‘By Allah, I shall never again do anything you dislike.’”\n\nUbayd Allah ibn Musa informed us; Abd al-Aziz ibn Siyah related to us, from Habib ibn Abi Thabit, who said: There was an altercation between Ali and Fatima. The Messenger of Allah, may Allah bless him and grant him peace, entered and did not cease until he had reconciled them; then he came out. He said: It was said to him, “You entered in one state, but you came out while we could see cheerfulness upon your face!” He replied, “What should prevent me from being cheerful, when I have reconciled the two people dearest to me?”\n\nal-Waqidi transmitted, through an isnad of his, from Abu Ja'far, who said: al-Abbas entered upon Ali and Fatima while she was saying, “I am older than you.” al-Abbas said, “Fatima was born while Quraysh was rebuilding the Kaaba, whereas Ali was born several years before her.”\n\nal-Waqidi said: Fatima died on the eve of Tuesday, when three nights of Ramadan had passed, in the year eleven.\n\nThrough Amra: al-Abbas performed the funeral prayer over Fatima, and he, Ali, and al-Fadl descended into her grave.\n\nThrough Ali ibn al-Husayn: Ali performed the funeral prayer over her and buried her at night, after the night had grown still.\n\nHe also reported from Ibn Abbas that he asked him about it, and he informed him accordingly. al-Waqidi said: I said to Abd al-Rahman ibn Abi al-Mawali, “People say that Fatima's grave is in al-Baqi.” He replied, “She was buried only in a corner of Aqil's house, and between her grave and the road there are seven cubits.”",
+      "arabic_sha256": "a56ce013f4d5783be7f1e0cd7197b475fe343f223a0f9efdc20a4701f166d95e",
+      "english_sha256": "255b00045577b9de5e7ae70017801293c06630a630b65e9a3cd907e18f2c50f0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "فاطمة الزهراء",
+      "english": "Fatima al-Zahra",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عبد اللَّه بن عبد المطلب بن هاشم",
+      "english": "Muhammad ibn 'Abd Allah ibn 'Abd al-Muttalib ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم أبيها",
+      "english": "Umm Abiha",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن فتحون",
+      "english": "Ibn Fathun",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى أم رافع",
+      "english": "Salma Umm Rafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس",
+      "english": "Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت الحسين",
+      "english": "Fatima bint al-Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسند أحمد",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat of Ibn Sa'd",
+      "kind": "work"
+    },
+    {
+      "arabic": "طبقات خليفة",
+      "english": "al-Tabaqat of Khalifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ خليفة",
+      "english": "Tarikh Khalifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "المعارف",
+      "english": "al-Ma'arif",
+      "kind": "work"
+    },
+    {
+      "arabic": "حلية الأولياء",
+      "english": "Hilyat al-Awliya'",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "جامع الأصول",
+      "english": "Jami' al-Usul",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ الإسلام",
+      "english": "Tarikh al-Islam",
+      "kind": "work"
+    },
+    {
+      "arabic": "العبر",
+      "english": "al-'Ibar",
+      "kind": "work"
+    },
+    {
+      "arabic": "مجمع الزوائد",
+      "english": "Majma' al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-'Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "شذرات الذهب",
+      "english": "Shadharat al-Dhahab",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب الكمال",
+      "english": "Khulasat Tadhhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد الرّازق",
+      "english": "Abd al-Razzaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن جريج",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima al-Zahra",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ؛ رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab",
+      "kind": "person"
+    },
+    {
+      "arabic": "رقيّة",
+      "english": "Ruqayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم",
+      "english": "Umm Kulthum",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو جعفر الباقر",
+      "english": "Abu Ja'far al-Baqir",
+      "kind": "person"
+    },
+    {
+      "arabic": "العبّاس",
+      "english": "al-Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكعبة",
+      "english": "Ka'ba",
+      "kind": "place"
+    },
+    {
+      "arabic": "المدائنيّ",
+      "english": "al-Mada'ini",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد اللَّه بن محمد بن سليمان بن جعفر الهاشمي",
+      "english": "Ubayd Allah ibn Muhammad ibn Sulayman ibn Ja'far al-Hashimi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "المحرم",
+      "english": "Muharram",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "المغازي الكبرى",
+      "english": "al-Maghazi al-Kubra",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن أبي نجيح",
+      "english": "Ibn Abi Najih",
+      "kind": "person"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد بن مخلد",
+      "english": "Khalid ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "جعفر بن محمد",
+      "english": "Ja'far ibn Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "حازم",
+      "english": "Hazim",
+      "kind": "person"
+    },
+    {
+      "arabic": "حماد بن زيد",
+      "english": "Hammad ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أيوب",
+      "english": "Ayyub",
+      "kind": "person"
+    },
+    {
+      "arabic": "عكرمة",
+      "english": "Ikrima",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحطميّة",
+      "english": "Hutamiyya",
+      "kind": "other"
+    },
+    {
+      "arabic": "يزيد بن هارون",
+      "english": "Yazid ibn Harun",
+      "kind": "person"
+    },
+    {
+      "arabic": "جرير بن حازم",
+      "english": "Jarir ibn Hazim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسنده",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد القيس",
+      "english": "Abd al-Qays",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "حطمة بن محارب",
+      "english": "Hutama ibn Muharib",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihayah",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "al-Sunan",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن أبي شيبة",
+      "english": "Ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "المصنف",
+      "english": "al-Musannaf",
+      "kind": "work"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبّاس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو جعفر",
+      "english": "Abu Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أيّوب",
+      "english": "Abu Ayyub",
+      "kind": "person"
+    },
+    {
+      "arabic": "حارثة بن النّعمان",
+      "english": "Haritha ibn al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن عليّ",
+      "english": "Umar ibn Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "رجب",
+      "english": "Rajab",
+      "kind": "other"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "الصّحيح",
+      "english": "al-Sahih",
+      "kind": "work"
+    },
+    {
+      "arabic": "حمزة",
+      "english": "Hamza",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "يزيد بن زريع",
+      "english": "Yazid ibn Zuray'",
+      "kind": "person"
+    },
+    {
+      "arabic": "روح بن القاسم",
+      "english": "Rawh ibn al-Qasim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن دينار",
+      "english": "Amr ibn Dinar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطّبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن هاشم",
+      "english": "Ibrahim ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المعجم الأوسط",
+      "english": "al-Mu'jam al-Awsat",
+      "kind": "work"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجنّة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "مريم",
+      "english": "Maryam",
+      "kind": "person"
+    },
+    {
+      "arabic": "آسية",
+      "english": "Asiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو يزيد المدائني",
+      "english": "Abu Yazid al-Mada'ini",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو هريرة",
+      "english": "Abu Hurayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشّعبي",
+      "english": "al-Sha'bi",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر",
+      "english": "Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عبد اللَّه أحمد بن حنبل",
+      "english": "Ahmad ibn Hanbal",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو يعلى",
+      "english": "Abu Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس بن مالك",
+      "english": "Anas ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر الخطيب",
+      "english": "Abu Bakr al-Khatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "تاريخ بغداد",
+      "english": "Tarikh Baghdad",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحل",
+      "english": "al-Hilya",
+      "kind": "work"
+    },
+    {
+      "arabic": "قتادة",
+      "english": "Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "معمر",
+      "english": "Ma'mar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرزاق",
+      "english": "Abd al-Razzaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق",
+      "english": "Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو مسعود",
+      "english": "Abu Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "فرعون",
+      "english": "Pharaoh",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرّحمن بن أبي نعيم",
+      "english": "Abd al-Rahman ibn Abi Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سعيد الخدريّ",
+      "english": "Abu Sa'id al-Khudri",
+      "kind": "person"
+    },
+    {
+      "arabic": "مريم",
+      "english": "Mary",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسور بن مخرمة",
+      "english": "al-Miswar ibn Makhrama",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن الحسين بن علي",
+      "english": "Ali ibn al-Husayn ibn Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسين بن علي",
+      "english": "al-Husayn ibn Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "النّبي",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدولابيّ",
+      "english": "al-Dawlabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذّرية الطّاهرة",
+      "english": "al-Dhurriyya al-Tahira",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد اللَّه بن بريدة",
+      "english": "Abdullah ibn Burayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "بريدة",
+      "english": "Burayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأحزاب",
+      "english": "al-Ahzab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحسن",
+      "english": "al-Hasan",
+      "kind": "person"
+    },
+    {
+      "arabic": "التّرمذيّ",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسروق",
+      "english": "Masruq",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيح",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "السنن الكبرى",
+      "english": "al-Sunan al-Kubra",
+      "kind": "work"
+    },
+    {
+      "arabic": "العجلوني",
+      "english": "al-Ajluni",
+      "kind": "person"
+    },
+    {
+      "arabic": "كشف الخفاء",
+      "english": "Kashf al-Khafa",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبقات",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "جبريل",
+      "english": "Gabriel",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرآن",
+      "english": "Qur'an",
+      "kind": "work"
+    },
+    {
+      "arabic": "أخرجاه؛ لم يخرجاه",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عمرو بن سالم المفلوج",
+      "english": "Abd Allah ibn Amr ibn Salim al-Mafluj",
+      "kind": "person"
+    },
+    {
+      "arabic": "أهل البيت",
+      "english": "Ahl al-Bayt",
+      "kind": "other"
+    },
+    {
+      "arabic": "زيد بن أرقم",
+      "english": "Zayd ibn Arqam",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسين",
+      "english": "al-Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت عميس",
+      "english": "Asma bint Umays",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر الصّديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحميديّ",
+      "english": "al-Humaydi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سفيان",
+      "english": "Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيحه",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "al-Sahih",
+      "kind": "work"
+    },
+    {
+      "arabic": "البزار",
+      "english": "al-Bazzar",
+      "kind": "person"
+    },
+    {
+      "arabic": "دلائل النبوة",
+      "english": "Dala'il al-Nubuwwa",
+      "kind": "work"
+    },
+    {
+      "arabic": "حسين",
+      "english": "Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدّولابي",
+      "english": "al-Dulabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن الحارث",
+      "english": "Abd Allah ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد بن حنبل",
+      "english": "Ahmad ibn Hanbal",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمّ رافع",
+      "english": "Umm Rafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن موسى",
+      "english": "Muhammad ibn Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد اللَّه بن أبي بكر",
+      "english": "Ubayd Allah ibn Abi Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة",
+      "english": "Amra",
+      "kind": "person"
+    },
+    {
+      "arabic": "العباس",
+      "english": "al-Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفضل بن عبّاس",
+      "english": "al-Fadl ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "مالك",
+      "english": "Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدّارقطنيّ",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عديّ",
+      "english": "Ibn Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عفان",
+      "english": "Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "حماد بن سلمة",
+      "english": "Hammad ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاء بن السّائب",
+      "english": "Ata ibn al-Sa'ib",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصّفة",
+      "english": "al-Suffa",
+      "kind": "place"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "اللسان",
+      "english": "al-Lisan",
+      "kind": "work"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima bint Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الكواء",
+      "english": "Ibn al-Kawwa'",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفين",
+      "english": "Siffin",
+      "kind": "place"
+    },
+    {
+      "arabic": "العراق",
+      "english": "Iraq",
+      "kind": "place"
+    },
+    {
+      "arabic": "عمرو بن سعيد",
+      "english": "Amr ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد اللَّه بن موسى",
+      "english": "Ubayd Allah ibn Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد العزيز بن سياه",
+      "english": "Abd al-Aziz ibn Siyah",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيب بن أبي ثابت",
+      "english": "Habib ibn Abi Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الكعبة",
+      "english": "Kaaba",
+      "kind": "place"
+    },
+    {
+      "arabic": "رمضان",
+      "english": "Ramadan",
+      "kind": "other"
+    },
+    {
+      "arabic": "الفضل",
+      "english": "al-Fadl ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن الحسين",
+      "english": "Ali ibn al-Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن أبي الموالي",
+      "english": "Abd al-Rahman ibn Abi al-Mawali",
+      "kind": "person"
+    },
+    {
+      "arabic": "البقيع",
+      "english": "al-Baqi",
+      "kind": "place"
+    },
+    {
+      "arabic": "عقيل",
+      "english": "Aqil",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "isnad_name",
+      "arabic_span": "وسنده صحيح على شرط الشّيخين إلى عمر",
+      "explanation": "The canonical text prints Umar, although the immediately preceding chain names Amr ibn Dinar and contains no Umar. None of the supplied witnesses contains this passage. The translation therefore retains Umar rather than silently emending it to Amr, and the names array treats the two printed forms separately.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0265:61da474777a69efc"
+    },
+    {
+      "category": "elliptical_citation",
+      "arabic_span": "البخاري ومسلم ويروى عن معمر عن الزهري",
+      "explanation": "“Al-Bukhari and Muslim” appears without a governing verb or decisive punctuation, and the supplied witnesses do not clarify its relationship to the surrounding statements. The English preserves the fragment without inferring that either scholar transmitted, authenticated, or recorded the report.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0265:61da474777a69efc"
+    },
+    {
+      "category": "source_reading",
+      "arabic_span": "أنها اغتسلت قيل موتها بقليل",
+      "explanation": "The supplied canonical text reads قيل, which is syntactically defective here. The context strongly suggests قبل, “before,” and the next page confirms that Fatima washed shortly before dying, but none of the supplied witnesses verifies that exact reading. The final text therefore marks “[before]” as a conjectural emendation.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0267:e95aa8cb3d566af3"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011125",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11125,
+  "title": {
+    "english": "Khawla bint Asim",
+    "arabic_observed": "خولة بنت عاصم"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011125-segment-0001",
+      "volume": 8,
+      "scan_page": 119,
+      "printed_page": 118,
+      "reader_page": 4031,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4031",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0119:c2f10e4443c25805",
+      "arabic": "١١١٢٥- خولة بنت عاصم\nامرأة بلال بن أمية، هي التي قذفا «٣»، ففرّق بينهما النبيّ ﷺ، يعني باللعان، لها ذكر، ولا يعرف لها رواية، قاله ابن مندة.",
+      "english": "11125—Khawla bint Asim\n\nShe was the wife of Bilal ibn Umayya and the woman whom he accused [3]. The Prophet (may Allah bless him and grant him peace) separated them—that is, by mutual imprecation. She is mentioned, but no narration from her is known. Ibn Manda said this.",
+      "arabic_sha256": "cf8d85154a1782e403848f568f3ec58955d61493c22cdb8475bf4e1c20d46830",
+      "english_sha256": "c144a9d49809cec785c1017e9a0b464f6d1e7341b9d2682ad2632b5fe87276a6",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خولة",
+      "english": "Khawla bint Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت عاصم",
+      "english": "Khawla bint Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "بلال بن أمية",
+      "english": "Bilal ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "identity_discrepancy",
+      "arabic_span": "بلال بن أمية",
+      "explanation": "The authoritative canonical text explicitly reads Bilal ibn Umayya and is retained. The Urdu witness and Usd al-Ghaba instead read Hilal ibn Umayya, leaving an underlying historical identification discrepancy without changing the translation of al-Isabah.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0119:c2f10e4443c25805"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

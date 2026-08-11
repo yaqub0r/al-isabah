@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011797",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11797,
+  "title": {
+    "english": "Mayya bint Muhriz:",
+    "arabic_observed": "ميّة بنت محرز:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011797-segment-0001",
+      "volume": 8,
+      "scan_page": 331,
+      "printed_page": 330,
+      "reader_page": 4243,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4243",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0331:1ac8849640fb7197",
+      "arabic": "١١٧٩٧- ميّة بنت محرز:\nمن بني الحارث بن كعب، من أهل البصرة.\nذكرها ابن سعد فيمن لم يرو عن النّبيّ ﵌، وأورد لها بسند جيد إليها، قالت: سمعت عمر بن الخطاب يقول: أحجّوا هذه الذريّة، ولا تأكلوا أرزاقها، وتدعوا أرباقها «٢» .\nالقسم الرابع",
+      "english": "11797 — Mayya bint Muhriz:\n\nOf Banu al-Harith ibn Ka'b and among the people of Basra.\n\nIbn Sa'd mentioned her among those who did not narrate from the Prophet—may Allah bless him and grant him peace—and cited for her, through a good chain reaching her, a report in which she said: I heard Umar ibn al-Khattab say, “Have these children perform Hajj; do not consume their provisions while leaving their neck-bonds upon them.”[2]\n\nSECTION FOUR",
+      "arabic_sha256": "ab1297b7b1d43eaa7ee91930da3c76e3d2ce60c8e3e747cc777aec268b8676bb",
+      "english_sha256": "b4e2474d8229237ddbed00f637a30f8d1f2558ec6cecede1092e96218afc6bec",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ميّة بنت محرز",
+      "english": "Mayya bint Muhriz",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني الحارث بن كعب",
+      "english": "Banu al-Harith ibn Ka'b",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "البصرة",
+      "english": "Basra",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن الخطاب",
+      "english": "Umar ibn al-Khattab",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

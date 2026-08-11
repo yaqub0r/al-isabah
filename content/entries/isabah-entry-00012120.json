@@ -1,0 +1,135 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012120",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12120,
+  "title": {
+    "english": "Umm al-Tufayl:",
+    "arabic_observed": "أم الطّفيل:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012120-segment-0001",
+      "volume": 8,
+      "scan_page": 425,
+      "printed_page": 424,
+      "reader_page": 4337,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4337",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0425:538f1d143e4219b5",
+      "arabic": "١٢١٢٠- أم الطّفيل:\nامرأة أبيّ بن كعب سيد القراء «١» .\nأخرج لها أحمد، والطّبرانيّ، والحسن بن سفيان، من طريق بسر بن سعيد، عن أبيّ بن كعب، قال: نازعني عمر في المتوفّى عنها وهي حامل، فقلت: تزوّج إذا وضعت فقالت أم الطّفيل أم ابني: قد أمر رسول اللَّه ﵌ سبيعة الأسلميّة أن تنكح إذا وضعت. وفي سنده ابن لهيعة. وأخرج [...] «٢» .\nقال أبو عمر: روى عنها محمد بن أبي بن كعب، وعمارة بن عمرو بن حزم.\nقلت:\nرواية عمارة أخرجها الدّار الدّارقطنيّ، من طريق مروان بن عثمان عنه، عن أم الطّفيل امرأة، عنه، عن أم الطّفيل امرأة أبيّ بن كعب، قالت: سمعت رسول اللَّه ﵌ يقول: «رأيت أمّي في المنام ...» الحديث.\nومروان متروك. قال ابن معين: من مروان حتى يصدق!",
+      "english": "12120 - Umm al-Tufayl:\n\nThe wife of Ubayy ibn Ka'b, the chief of the Qur'an reciters.¹\n\nAhmad, al-Tabarani, and al-Hasan ibn Sufyan transmitted her report by way of Busr ibn Sa'id, from Ubayy ibn Ka'b, who said: “'Umar disputed with me concerning a woman whose husband had died while she was pregnant. I said, ‘She may marry once she has delivered.’ Umm al-Tufayl, the mother of my son, said: ‘The Messenger of Allah, may Allah bless him and grant him peace, instructed Subay'a al-Aslamiyya to marry once she had delivered.’” Its chain of transmission contains Ibn Lahi'a. And [...] transmitted it.²\n\nAbu 'Umar said: Muhammad ibn Ubayy ibn Ka'b and 'Umara ibn 'Amr ibn Hazm narrated from her.\n\nI say:\n\n[The Arabic text of the chain is corrupt and repeats wording; its apparent sense is:] al-Daraqutni transmitted 'Umara's narration by way of Marwan ibn 'Uthman, from him, from Umm al-Tufayl, the wife of Ubayy ibn Ka'b, who said: “I heard the Messenger of Allah, may Allah bless him and grant him peace, say: ‘I saw my mother in a dream ...’” to the end of the hadith.\n\nMarwan is rejected as a transmitter. Ibn Ma'in said: “Who is Marwan that he should be believed!”",
+      "arabic_sha256": "b5c1b41f50789cc82a3fdafa39fcc0e003e198efe479536b1dc1c4b3f9bdded9",
+      "english_sha256": "d867a326ae9ccde48d954cc88df94baa5997dcfad28c5dc39b629ca2281b620f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الطفيل",
+      "english": "Umm al-Tufayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبيّ بن كعب",
+      "english": "Ubayy ibn Ka'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن سفيان",
+      "english": "al-Hasan ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "بسر بن سعيد",
+      "english": "Busr ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "سبيعة الأسلمية",
+      "english": "Subay'a al-Aslamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن لهيعة",
+      "english": "Ibn Lahi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن أبي بن كعب",
+      "english": "Muhammad ibn Ubayy ibn Ka'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمارة بن عمرو بن حزم",
+      "english": "'Umara ibn 'Amr ibn Hazm",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدارقطني",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "مروان بن عثمان",
+      "english": "Marwan ibn 'Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن معين",
+      "english": "Ibn Ma'in",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source_lacuna",
+      "arabic_span": "وأخرج [...]",
+      "explanation": "The transmitter or work omitted after “And ... transmitted it” cannot be recovered. Urdu witness page 484 confirms that the underlying source contained a blank.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0425:538f1d143e4219b5"
+    },
+    {
+      "category": "corrupt_isnad",
+      "arabic_span": "أخرجها الدّار الدّارقطنيّ، من طريق مروان بن عثمان عنه، عن أم الطّفيل امرأة، عنه، عن أم الطّفيل امرأة أبيّ بن كعب",
+      "explanation": "The exact original wording and links of 'Umara's isnad remain unrecoverable. The final text transparently gives the apparent sense supported by the Urdu witness, but that secondary witness cannot establish the precise Arabic reconstruction.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0425:538f1d143e4219b5"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

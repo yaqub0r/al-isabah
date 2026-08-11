@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012006",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12006,
+  "title": {
+    "english": "Umm Khalid bint Ya'ish",
+    "arabic_observed": "أم خالد بنت يعيش"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012006-segment-0001",
+      "volume": 8,
+      "scan_page": 386,
+      "printed_page": 385,
+      "reader_page": 4298,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4298",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0386:e1ff388273593787",
+      "arabic": "١٢٠٠٦- أم خالد بنت يعيش\nبن قيس بن عمرو الأنصارية.\nذكرها ابن حبيب في المبايعات، وأظنها الأولى، نسبت لجدها.",
+      "english": "12006—Umm Khalid bint Ya'ish\n\nibn Qays ibn Amr, the Ansari woman.\n\nIbn Habib mentioned her among the women who gave the pledge of allegiance. I think she is the preceding woman, with her lineage ascribed directly to her grandfather.",
+      "arabic_sha256": "9f7416da6d8a382e17c123873e45ba81d925292bd212cfb572f90cd65264e060",
+      "english_sha256": "6bdf4a894b0ae6b808cdad8dd711ce30d6322f64ca437f17c5ec94fe034ec03b",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

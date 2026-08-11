@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011855",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11855,
+  "title": {
+    "english": "Hind bint Abi Sufyan:",
+    "arabic_observed": "هند بنت أبي سفيان:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011855-segment-0001",
+      "volume": 8,
+      "scan_page": 346,
+      "printed_page": 345,
+      "reader_page": 4258,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4258",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0346:e87dd40f714ce507",
+      "arabic": "١١٨٥٥- هند بنت أبي سفيان:\nيقال: إنه اسم أم حبيبة زوج النّبي ﵌، والمعروف أن اسمها رملة، كما تقدم.",
+      "english": "11855—Hind bint Abi Sufyan:\n\nIt is said that this was the name of Umm Habiba, the wife of the Prophet—may Allah bless him and grant him peace. What is well known, however, is that her name was Ramla, as stated previously.",
+      "arabic_sha256": "5f8e7bc906e42c8e0a3da10c27526ed5cede5fced2fceb404d36cc1faa1fbc95",
+      "english_sha256": "d39f23d7d7f9e9aa60175c7c9d3cc42b67fe5cd570b410f687c92b9286dac7b0",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "رملة",
+      "english": "Ramla bint al-Harith ibn Nawfal",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند بنت أبي سفيان",
+      "english": "Hind bint Abi Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "رملة",
+      "english": "Ramla bint Abi Sufyan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

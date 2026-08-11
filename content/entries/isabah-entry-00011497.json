@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011497",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11497,
+  "title": {
+    "english": "'Amra bint al-Harith",
+    "arabic_observed": "عمرة بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011497-segment-0001",
+      "volume": 8,
+      "scan_page": 244,
+      "printed_page": 243,
+      "reader_page": 4156,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4156",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0244:348f5494feef74c2",
+      "arabic": "١١٤٩٧- عمرة بنت الحارث\nبن أبي عوف، أخت قرصافة.\nذكرها المرزباني مع أختها، وأمها البرصاء اسمها أمامة فيما قيل.",
+      "english": "11497—'Amra bint al-Harith\nibn Abi 'Awf, the sister of Qursafa.\n\nAl-Marzubani mentioned her together with her sister. Their mother was al-Barsa', whose name is said to have been Umama.",
+      "arabic_sha256": "265356033955ed783bf255205a638d225e4c803441837e6fde3a29d8c764b567",
+      "english_sha256": "4ef80b112fe63e9ed57ed04ca46e854ab51c084a997b5038c385efafd99b29ea",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "قرصافة",
+      "english": "Qursafa",
+      "kind": "person"
+    },
+    {
+      "arabic": "المرزباني",
+      "english": "al-Marzubani",
+      "kind": "person"
+    },
+    {
+      "arabic": "البرصاء",
+      "english": "al-Barsa'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة",
+      "english": "Umama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

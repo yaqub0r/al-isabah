@@ -1,0 +1,159 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011202",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11202,
+  "title": {
+    "english": "Rawda,",
+    "arabic_observed": "روضة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011202-segment-0001",
+      "volume": 8,
+      "scan_page": 146,
+      "printed_page": 145,
+      "reader_page": 4058,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4058",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0146:fa9112975377feed",
+      "arabic": "١١٢٠٢- روضة ،\nأخرى «٣» .\nذكرها الطّبريّ في تفسير سورة النور عند قوله تعالى: لا تَدْخُلُوا بُيُوتًا غَيْرَ بُيُوتِكُمْ\n(١) الدر المنثور ٢٠٨، الثقات ٣/ ١٣٢، أعلام النساء ١/ ٤٠٣، ٢/ ٢٥٦، تجريد أسماء الصحابة ٢/ ٢٧٠، تقريب التهذيب ٢/ ٥٩٩، تهذيب التهذيب ١٢/ ٤٢٠، تهذيب الكمال ٣/ ١٦٨٤، حلية الأولياء ٩/ ٥٧.\n(٢) أسد الغابة: ت ٦٩٤١، الاستيعاب: ت ٣٣٩٥.\n(٣) أسد الغابة: ت ٦٩٤١.",
+      "english": "11202—Rawda,\nanother woman.³\n\nAl-Tabari mentioned her in his commentary on Surat al-Nur, at the words of Allah Most High: “Do not enter houses other than your own houses …”\n\n(1) al-Durr al-Manthur, 208; al-Thiqat, 3/132; A'lam al-Nisa', 1/403, 2/256; al-Tajrid, 2/270; Taqrib al-Tahdhib, 2/599; Tahdhib al-Tahdhib, 12/420; Tahdhib al-Kamal, 3/1684; Hilyat al-Awliya', 9/57.\n\n(2) Usd al-Ghaba: entry 6941; al-Isti'ab: entry 3395.\n\n(3) Usd al-Ghaba: entry 6941.",
+      "arabic_sha256": "f2987159215b7d4d4b0fe07efe1b577f80b54b7f49add1d00275954bb2275142",
+      "english_sha256": "afe796c0a3d7d8e369b0aaceb26d06cf0e3f7835403eaa0d1aee76c8263f65ef",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011202-segment-0002",
+      "volume": 8,
+      "scan_page": 147,
+      "printed_page": 146,
+      "reader_page": 4059,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4059",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0147:ddd1d3cc492806f7",
+      "arabic": "حَتَّى تَسْتَأْنِسُوا وَتُسَلِّمُوا عَلى أَهْلِها [النور: ٢٧] .\nفأخرج من طريق هشيم، أخبرنا منصور، عن ابن سيرين ويونس بن عبيد، عن عمرو بن سعيد الثقفي- أن رجلا استأذن على النبيّ ﷺ فقال: أألج؟ فقال النبي ﷺ لأمة له يقال له روضة: «قومي إلى هذا فعلّميه، فإنّه لا يحسن يستأذن، فقولي له: يقول السّلام عليكم أأدخل؟» فسمعها الرجل فقالها. فقال: «أدخل» .",
+      "english": "“UNTIL YOU ASK PERMISSION AND GREET THEIR INHABITANTS” [al-Nur: 27].\n\nHe transmitted, through Hushaym: Mansur informed us, from Ibn Sirin and Yunus ibn Ubayd, from Amr ibn Sa'id al-Thaqafi, that a man sought permission to enter upon the Prophet, may Allah bless him and grant him peace, and said, “May I come in?” The Prophet, may Allah bless him and grant him peace, said to a slave woman of his called Rawda, “Go to this man and teach him, for he does not know how to ask permission properly. Tell him to say: ‘Peace be upon you. May I enter?’” The man heard her and repeated it. The Prophet said, “Enter.”",
+      "arabic_sha256": "056bc988555c6295f050fb8bf949139aa4b1b63739b146e15f54e8abe4b6da6b",
+      "english_sha256": "8e0bff2cd974dc9fcf6a9c2b50ebcc94ed16f24d5382556b96b848c5fb332a4a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "روضة",
+      "english": "Rawda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطّبريّ",
+      "english": "al-Tabari",
+      "kind": "person"
+    },
+    {
+      "arabic": "سورة النور",
+      "english": "Surat al-Nur",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدر المنثور",
+      "english": "al-Durr al-Manthur",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "حلية الأولياء",
+      "english": "Hilyat al-Awliya'",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "النور",
+      "english": "al-Nur",
+      "kind": "work"
+    },
+    {
+      "arabic": "هشيم",
+      "english": "Hushaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "منصور",
+      "english": "Mansur",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سيرين",
+      "english": "Ibn Sirin",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن عبيد",
+      "english": "Yunus ibn Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن سعيد الثقفي",
+      "english": "Amr ibn Sa'id al-Thaqafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

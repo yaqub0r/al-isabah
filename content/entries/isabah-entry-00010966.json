@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010966",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10966,
+  "title": {
+    "english": "Thubayta bint Sulayt",
+    "arabic_observed": "ثبيتة بنت سليط"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010966-segment-0001",
+      "volume": 8,
+      "scan_page": 60,
+      "printed_page": 59,
+      "reader_page": 3972,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3972",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0060:55bb090c7496d275",
+      "arabic": "١٠٩٦٦- ثبيتة بنت سليط\nبن قيس بن عمرو بن عبيد الأنصارية النجارية «٤» .\nذكرها ابن سعد في المبايعات، وقال: أمها سخيلة بنت الصمة، وهي والدة عبد الرحمن بن عبد اللَّه بن أبي صعصعة، وأخت قتيلة وميمونة.",
+      "english": "10966—Thubayta bint Sulayt\nibn Qays ibn 'Amr ibn 'Ubayd, the Ansari woman of Banu al-Najjar.[4]\n\nIbn Sa'd mentioned her among the women who pledged allegiance and said: Her mother was Sukhayla bint al-Simma. She was the mother of 'Abd al-Rahman ibn 'Abd Allah ibn Abi Sa'sa'a and the sister of Qutayla and Maymuna.",
+      "arabic_sha256": "898032c61e78053991481220da63a0c49dff1011af15eeda0b824acb08b7568a",
+      "english_sha256": "58503d49cf06beff3ab999ae10becde07381657d049fbc781f2bd8d62238cd47",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "'Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو النجار",
+      "english": "Banu al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سخيلة بنت الصمة",
+      "english": "Sukhayla bint al-Simma",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عبد اللَّه بن أبي صعصعة",
+      "english": "'Abd al-Rahman ibn 'Abd Allah ibn Abi Sa'sa'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتيلة",
+      "english": "Qutayla",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمونة",
+      "english": "Maymuna",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

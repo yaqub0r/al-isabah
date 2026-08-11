@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011579",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11579,
+  "title": {
+    "english": "Fari'a bint Zurara",
+    "arabic_observed": "فارعة بنت زرارة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011579-segment-0001",
+      "volume": 8,
+      "scan_page": 260,
+      "printed_page": 259,
+      "reader_page": 4172,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4172",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0260:bc3844fc30bddd42",
+      "arabic": "١١٥٧٩- فارعة بنت زرارة\nبن عدس «١» بن حرام الأنصاريّة «٢»، من بني مالك بن النّجّار، قاله أبو موسى في «الذّيل»، كذا قال ابن الأثير. ولم أرها في الذّيل الّذي بخط الصّريفيني، ولعلها التي قبلها بواحدة نسبت إلى جدّها، ثم ظهر لي أنها عمتها.\nقال ابن سعد: الفارعة، وهي الفريعة بنت زرارة بن عدس بن عبيد بن ثعلبة بن غنم بن مالك بن النّجّار، أخت أبي أمامة أسعد بن زرارة شقيقته، تزوّجها قيس بن فهد بن قيس بن ثعلبة، وأسلمت وبايعت.",
+      "english": "11579—Fari'a bint Zurara\n\nibn Adas (1) ibn Haram, an Ansari woman (2) of Banu Malik ibn al-Najjar. Abu Musa stated this in al-Dhayl—so said Ibn al-Athir. I did not find her in the copy of al-Dhayl in al-Sarifini's handwriting. Perhaps she is the woman two entries before this one, who was attributed to her grandfather. Then it became clear to me that she was that woman's paternal aunt.\n\nIbn Sa'd said: Fari'a—namely, Furay'a bint Zurara ibn Adas ibn Ubayd ibn Tha'laba ibn Ghanm ibn Malik ibn al-Najjar—was the full sister of Abu Umama As'ad ibn Zurara. Qays ibn Fahd ibn Qays ibn Tha'laba married her. She embraced Islam and pledged allegiance.",
+      "arabic_sha256": "5c268ddf65ded6d0cf0028c59ad588d51d4a5fb6b61d1a8e71f0d0ecc12174c2",
+      "english_sha256": "0181c420600c3a0429711502610206109152b4b6c5c9bc11c13a49834870c4c0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بني مالك بن النّجّار",
+      "english": "Banu Malik ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذّيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصّريفيني",
+      "english": "al-Sarifini",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفريعة بنت زرارة بن عدس بن عبيد بن ثعلبة بن غنم بن مالك بن النّجّار",
+      "english": "Furay'a bint Zurara ibn Adas ibn Ubayd ibn Tha'laba ibn Ghanm ibn Malik ibn al-Najjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أمامة أسعد بن زرارة",
+      "english": "Abu Umama As'ad ibn Zurara",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس بن فهد بن قيس بن ثعلبة",
+      "english": "Qays ibn Fahd ibn Qays ibn Tha'laba",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011617",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11617,
+  "title": {
+    "english": "Fartana:",
+    "arabic_observed": "فرتنى:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011617-segment-0001",
+      "volume": 8,
+      "scan_page": 280,
+      "printed_page": 279,
+      "reader_page": 4192,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4192",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0280:c4201e5a192e04a8",
+      "arabic": "١١٦١٧- فرتنى:\nبفتح الفاء وسكون الراء وفتح المثناة الفوقانية بعدها نون: إحدى القينتين اللتين كان ابن خطل يعلمهما الغناء بهجاء النبي ﵌ وأصحابه، فكانتا ممّن أهدر دمهما يوم الفتح، فأسلمت هذه، فتركت، وقتلت الأخرى، قاله السهيليّ.",
+      "english": "11617—Fartana:\n\nWith an a-vowel on the fa, no vowel on the ra, and an a-vowel on the upper two-dotted ta, followed by a nun. She was one of the two singing girls whom Ibn Khatal used to teach songs lampooning the Prophet, may Allah bless him and grant him peace, and his Companions. The two were therefore among those whose blood was declared forfeit on the Day of the Conquest. This one embraced Islam and was spared, while the other was killed. This was stated by al-Suhayli.",
+      "arabic_sha256": "2e1c1b7c7185255280d6a229e29195c648d77ae3a3c83b0c50f5552ac033e079",
+      "english_sha256": "fd6105f80a9f1076a452ef88cb2541376a0cf9229d0dca28685aac92b3b455a9",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "فرتنى",
+      "english": "Fartana",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن خطل",
+      "english": "Ibn Khatal",
+      "kind": "person"
+    },
+    {
+      "arabic": "السهيلي",
+      "english": "al-Suhayli",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

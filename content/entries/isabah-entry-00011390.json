@@ -1,0 +1,218 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011390",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11390,
+  "title": {
+    "english": "al-Shayma bint al-Harith ibn Abd al-Uzza ibn Rifa'a [2]",
+    "arabic_observed": "الشيماء بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011390-segment-0001",
+      "volume": 8,
+      "scan_page": 206,
+      "printed_page": 205,
+      "reader_page": 4118,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4118",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0206:f6e1bbc778ee9480",
+      "arabic": "١١٣٩٠- الشيماء بنت الحارث\nبن عبد العزى بن رفاعة «٢» .\nقال أبو نعيم: لها ذكر، وأوردها أبو سليمان- يعني الطّبرانيّ، ولم يورد لها حديثا، وهي أخت النبي ﷺ من الرضاعة.\nوقال أبو عمر: الشيماء أو الشماء اسمها حذافة.\nذكر ابن إسحاق من رواية يونس بن بكير وغيره عنه إنّ إخوة النبي ﷺ من الرضاعة:\nعبد اللَّه، وأنيسة، وحذيفة بنو الحارث، وحذافة هي الشيماء غلب عليها ذلك، قال: وذكروا أنّ الشيماء كانت تحضن رسول اللَّه ﷺ مع أمها.\nوقال ابن إسحاق، عن أبي وجزة السعدي: إن الشيماء لما انتهت إلى رسول اللَّه ﷺ قالت: يا رسول اللَّه، إني لأختك من الرضاعة. قال: «وما علامة ذلك؟» قالت: عضة عضضتها في ظهري، وأنا متورّكتك. فعرف رسول اللَّه ﷺ العلامة، فبسط لها رداءه، ثم قال\n(١) أسد الغابة ت (٧٠٥٥) .\n(٢) أسد الغابة ت (٧٠٥٧) .",
+      "english": "11390 — al-Shayma bint al-Harith ibn Abd al-Uzza ibn Rifa'a [2]\n\nAbu Nu'aym said, “She is mentioned.” Abu Sulayman—meaning al-Tabarani—included her, but cited no hadith for her. She was a sister of the Prophet through nursing; may Allah bless him and grant him peace.\n\nAbu Umar said, “Al-Shayma, or al-Shamma, was named Hudhafa.”\n\nIbn Ishaq mentioned, in the transmission from him by Yunus ibn Bukayr and others, that the foster-siblings through nursing of the Prophet—may Allah bless him and grant him peace—were Abd Allah, Anisa, and Hudhayfa, the children of al-Harith; Hudhafa is al-Shayma, that appellation having become predominant in her case. He said, “They mentioned that al-Shayma used to care for the Messenger of Allah—may Allah bless him and grant him peace—together with her mother.”\n\nIbn Ishaq reported from Abu Wajza al-Sa'di that when al-Shayma came before the Messenger of Allah—may Allah bless him and grant him peace—she said, “O Messenger of Allah, I am your sister through nursing.” He asked, “What is the sign of that?” She replied, “A bite you gave me on my back while I was carrying you on my hip.” The Messenger of Allah—may Allah bless him and grant him peace—recognized the sign, spread out his cloak for her, and then said—\n\n[1] Usd al-Ghaba, biography no. 7055.\n\n[2] Usd al-Ghaba, biography no. 7057.",
+      "arabic_sha256": "081df9fe6be9641e2a3631f2f7a54a2848e63fbaa1083c8a56b3a4a37406f774",
+      "english_sha256": "531b670c06b9c440060c46d9b24e721c725b76a4dee99e7cc94a4d3ce70e4fe7",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011390-segment-0002",
+      "volume": 8,
+      "scan_page": 207,
+      "printed_page": 206,
+      "reader_page": 4119,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4119",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0207:e5ec7b874993eed4",
+      "arabic": "لها: «هاهنا» . فأجلسها عليه وخيّرها، فقال: «إن أحببت فأقيمي عندي محبّبة مكرمة، وإن أحببت أن أمتّعك فارجعي إلى قومك» . فقالت: بل تمتّعني وتردّني إلى قومي. فمتعها وردّها إلى قومها،\nفزعم بنو سعد بن بكر أنه أعطاها غلاما يقال له مكحول وجارية، فزوّجت إحداهما الآخر، فلم يزل فيهم من نسلهم بقية.\nأخرجه المستغفريّ من طريق سلمة بن الفضل، عن ابن إسحاق هكذا. وقال ابن سعد: كانت الشيماء تحضن النبي ﷺ مع أمها وتوركه،\nوقال أبو عمر: أغارت خيل رسول اللَّه ﷺ على هوازن، فأخذوها فيما أخذوا من السبي، فقالت لهم: أنا أخت صاحبكم، فلما قدموا بها قالت: يا محمد. أنا أختك، وعرفته بعلامة عرفها، فرحّب بها وبسط رداءه، فأجلسها عليه ودمعت عيناه، فقال لها: «إن أحببت أن ترجعي إلى قومك أوصلتك، وإن أحببت فأقيمي مكرّمة محبّبة»، فقالت: بل أرجع، فأسلمت وأعطاها رسول اللَّه ﷺ نعما وشاء وثلاثة أعبد وجارية.\nوذكر محمّد بن المعلّى الأزديّ في كتاب «التّرقيص»، قال: وقالت الشيماء ترقص النبي ﷺ وهو صغير:\nيا ربّنا أبق لنا محمّدا ... حتّى أراه يافعا وأمردا\nثمّ أراه سيّدا مسوّدا ... وأكبت أعاديه معا والحسّدا\nوأعطه عزّا يدوم أبدا\n[الرجز] قال: فكان أبو عروة الأزدي إذا أنشد هذا يقول: ما أحسن ما أجاب اللَّه دعاءها!.\nالقسم الثاني\nخال، وكذا.\nالقسم الثالث\nلم يذكر فيهما شيء.",
+      "english": "He said to her, “Here.” Then he seated her upon it and gave her the choice, saying, “If you wish, remain with me, beloved and honored; and if you wish, I will give you provisions, and you may return to your people.” She said, “Rather, give me provisions and return me to my people.” So he gave her provisions and returned her to her people.\n\nThe Banu Sa'd ibn Bakr claimed that he gave her a male slave named Makhul and a slave girl. She married the two to each other, and a remnant of their descendants continued to live among the tribe.\n\nal-Mustaghfiri transmitted it by way of Salama ibn al-Fadl, from Ibn Ishaq, in this form. Ibn Sa'd said: al-Shayma used to care for the Prophet—may Allah bless him and grant him peace—together with her mother and carry him upon her hip.\n\nAbu Umar said: The cavalry of the Messenger of Allah—may Allah bless him and grant him peace—raided Hawazin, and they took her among the captives they seized. She said to them, “I am the sister of your companion.” When they brought her to him, she said, “O Muhammad, I am your sister,” and she made herself known to him by a mark that he recognized. He welcomed her, spread out his cloak, seated her upon it, and his eyes filled with tears. He said to her, “If you wish to return to your people, I shall convey you to them; and if you wish, remain here, honored and beloved.” She said, “Rather, I shall return.” She embraced Islam, and the Messenger of Allah—may Allah bless him and grant him peace—gave her camels, sheep, three male slaves, and a slave girl.\n\nMuhammad ibn al-Mu'alla al-Azdi mentioned in the book al-Tarqis that al-Shayma said while dandling the Prophet—may Allah bless him and grant him peace—when he was small:\n\nO our Lord, preserve Muhammad for us,\nUntil I see him a youth, his beard not yet grown;\nThen may I see him a lord, acknowledged as master.\nAbase his enemies and the envious together,\nAnd grant him might that endures forever.\n\n[rajaz]\n\nHe said: Whenever Abu Urwa al-Azdi recited this, he would say, “How beautifully Allah answered her prayer!”\n\nSECTION TWO\n\nEmpty, and likewise the next section.\n\nSECTION THREE\n\nNothing was mentioned in either section.",
+      "arabic_sha256": "e5ec7b874993eed4c1d2fe44fa0531f9bbbc2d0760c6705b04cc32bfff045e68",
+      "english_sha256": "0cc03acb3ced7a453b5ca301c0b091efd22121ff2efe0ccabcd6c4f0f540d1c1",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011390-segment-0003",
+      "volume": 8,
+      "scan_page": 208,
+      "printed_page": 207,
+      "reader_page": 4120,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4120",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0208:6c4b2990b5b78fb8",
+      "arabic": "القسم الرابع",
+      "english": "SECTION FOUR",
+      "arabic_sha256": "0b186da367d0cac1b2f8f8349004cc083e7a88764112cc9bfddf266313e587f8",
+      "english_sha256": "b6179fda7f390cbc0b4953e4a59c97bc60676488062dc133ae8042ee889eb6cf",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشيماء بنت الحارث بن عبد العزى بن رفاعة",
+      "english": "al-Shayma bint al-Harith ibn Abd al-Uzza ibn Rifa'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سليمان",
+      "english": "Abu Sulayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشماء",
+      "english": "al-Shamma bint al-Harith ibn Abd al-Uzza ibn Rifa'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "حذافة",
+      "english": "Hudhafa bint al-Harith ibn Abd al-Uzza ibn Rifa'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن بكير",
+      "english": "Yunus ibn Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنيسة",
+      "english": "Anisa bint al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "حذيفة",
+      "english": "Hudhayfa ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث",
+      "english": "al-Harith ibn Abd al-Uzza ibn Rifa'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبي وجزة السعدي",
+      "english": "Abu Wajza al-Sa'di",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "بنو سعد بن بكر",
+      "english": "Banu Sa'd ibn Bakr",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "مكحول",
+      "english": "Makhul",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفريّ",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمة بن الفضل",
+      "english": "Salama ibn al-Fadl",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشيماء",
+      "english": "al-Shayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "هوازن",
+      "english": "Hawazin",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمّد بن المعلّى الأزديّ",
+      "english": "Muhammad ibn al-Mu'alla al-Azdi",
+      "kind": "person"
+    },
+    {
+      "arabic": "التّرقيص",
+      "english": "al-Tarqis",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عروة الأزدي",
+      "english": "Abu Urwa al-Azdi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

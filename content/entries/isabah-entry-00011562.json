@@ -1,0 +1,139 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011562",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11562,
+  "title": {
+    "english": "Uzayla:",
+    "arabic_observed": "عزيلة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011562-segment-0001",
+      "volume": 8,
+      "scan_page": 255,
+      "printed_page": 254,
+      "reader_page": 4167,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4167",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0255:45e9e7d78ac67bbf",
+      "arabic": "١١٥٦٢- عزيلة:\nبالتّصغير، ويقال غزيّة، بالتّشديد بدل اللّام «٣»، ويقال بفتح أوله مع\n(١) أسد الغابة ت (٧٠٩٨)، تجريد أسماء الصحابة ٢/ ٢٨٦.\n(٢) أسد الغابة ت (٧١٥٧) .\n(٣) أسد الغابة ت (٧١٥٨)، الاستيعاب ت (٣٤٩٣) . أعلام النساء ٩١٤، تجريد أسماء الصحابة ٢/ ٢٩٢، تقريب التهذيب ٢/ ٦٠٨، تهذيب التهذيب ١٢/ ٤٤٠.",
+      "english": "11562—Uzayla:\n\nIn the diminutive form. It is also said Ghuzayya, with a doubled ya in place of the lam;³ and it is also said with its first letter bearing a fatha, together with—\n\n¹ Usd al-Ghaba, biographical notice no. 7098; al-Tajrid, 2/286.\n\n² Usd al-Ghaba, biographical notice no. 7157.\n\n³ Usd al-Ghaba, biographical notice no. 7158; al-Isti'ab, biographical notice no. 3493; A'lam al-Nisa, p. 914; al-Tajrid, 2/292; Taqrib al-Tahdhib, 2/608; Tahdhib al-Tahdhib, 12/440.",
+      "arabic_sha256": "5b9e43eab07a2cf15ee151defa0b1e3d916a2278b3bb5d3dcc78e9b0ec29b48f",
+      "english_sha256": "ce4a4f67f9926b61e5744277f9f543d97e061ae1c116fa25229475af6f82fa4c",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011562-segment-0002",
+      "volume": 8,
+      "scan_page": 256,
+      "printed_page": 255,
+      "reader_page": 4168,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4168",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0256:7c798b969c700c6b",
+      "arabic": "التّشديد بلا لام: هي أم شريك، مشهورة بكنيتها، وستأتي في الكنى.\nوأخرج ابن سعد عن الواقديّ من مرسل سليمان بن يسار، قال: لما تزوّج رسول اللَّه ﵌ الكنديّة، وخطب في العامريات، ووهبت له أمّ شريك غزية بنت جابر نفسها قالت أزواجه: لئن تزوّج الغرائب لا تبقى له فينا حاجة ... الحديث.",
+      "english": "with gemination and without a lam: she is Umm Sharik, well known by her kunya, and she will appear in the section on kunyahs.\n\nIbn Sa'd transmitted from al-Waqidi, as a mursal report of Sulayman ibn Yasar, who said: When the Messenger of Allah, may Allah bless him and grant him peace, married the Kindite woman, proposed marriage among the women of Amir, and Umm Sharik—Ghaziyya bint Jabir—offered herself to him, his wives said, “If he marries women from outside, he will no longer have any need for us” ... the hadith.",
+      "arabic_sha256": "52be25dcedfbe228fcc0a1c2f21e9a25ca2be5b6a168778343a74d15981142fb",
+      "english_sha256": "04462efd4ab2831568c7bc4b3606b04d60777c2e8bc0802b5a53be9646aafdab",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عزيلة",
+      "english": "Uzayla",
+      "kind": "person"
+    },
+    {
+      "arabic": "غزيّة",
+      "english": "Ghuzayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم شريك",
+      "english": "Umm Sharik",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان بن يسار",
+      "english": "Sulayman ibn Yasar",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الكنديّة",
+      "english": "Kindah",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "العامريات",
+      "english": "Amir",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "غزية بنت جابر",
+      "english": "Ghaziyya bint Jabir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

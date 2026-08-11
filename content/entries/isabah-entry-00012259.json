@@ -1,0 +1,150 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012259",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12259,
+  "title": {
+    "english": "Umm Mu'adh:",
+    "arabic_observed": "أم معاذ:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012259-segment-0001",
+      "volume": 8,
+      "scan_page": 475,
+      "printed_page": 474,
+      "reader_page": 4387,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4387",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0475:11ef9a2168013d2a",
+      "arabic": "١٢٢٥٩- أم معاذ:\nغير منسوبة «٧» .\nروى حديثها أبو بشر الدّولابيّ\nفي «الكنى»، من طريق يحيى بن معقل، عن أنس:\nقال: أرسلتني أم معاذ إلى النبي ﵌، فقلت: يا رسول اللَّه، أرسلتني أمّ معاذ أن تدعو اللَّه لها. فقال: «اللَّهمّ اغفر لأمّ معاذ ولمعاذ» - ثلاث مرات.\nووقع لي هذا الحديث بعلو في السادس من حديث ابن صاعد، من طريق أبي الوقت.\n(١) في أ: لو لم يكن.\n(٢) أخرجه أحمد في المسند ٦/ ٤٣٧ وذكره الهيثمي في المجمع ١/ ٢١٨.\n(٣) سقط في أ.\n(٤) أسد الغابة ت (٧٦٠٠) .\n(٥) أسد الغابة ت (٧٦٠١) .\n(٦) أسد الغابة ت (٧٦٠٢)، الاستيعاب ت (٣٦٧٤)، أعلام النساء ٥/ ٥٨. الثقات ٣/ ٤٦٤، تجريد أسماء الصحابة ٢/ ٣٣٥.\n(٧) أسد الغابة ت (٧٦٠٣)، الثقات ٣/ ٤٦٥، أعلام النساء ٥/ ٥٩، تجريد أسماء الصحابة ٢/ ٣٣٥.",
+      "english": "12259 — Umm Mu'adh:\n\nNo further affiliation is given.(7)\n\nAbu Bishr al-Dulabi narrated her hadith in al-Kuna, by way of Yahya ibn Ma'qil, from Anas, who said:\n\n“Umm Mu'adh sent me to the Prophet (may Allah bless him and grant him peace), and I said, ‘O Messenger of Allah, Umm Mu'adh has sent me to ask you to supplicate to Allah for her.’ He said, ‘O Allah, forgive Umm Mu'adh and Mu'adh’—three times.”\n\nI obtained this hadith through a high chain in the sixth part of the Hadith of Ibn Sa'id, by way of Abu al-Waqt.\n\n(1) In A: “if only there were no.”\n\n(2) Ahmad transmitted it in Musnad Ahmad, 6/437, and al-Haythami mentioned it in al-Majma', 1/218.\n\n(3) “[Ibn Sa'd]” is omitted in A.\n\n(4) Usd al-Ghaba, entry 7600.\n\n(5) Usd al-Ghaba, entry 7601.\n\n(6) Usd al-Ghaba, entry 7602; al-Isti'ab, entry 3674; A'lam al-Nisa', 5/58; al-Thiqat, 3/464; al-Tajrid, 2/335.\n\n(7) Usd al-Ghaba, entry 7603; al-Thiqat, 3/465; A'lam al-Nisa', 5/59; al-Tajrid, 2/335.",
+      "arabic_sha256": "3965be23f62ffa19ffe7b2cbefc8f705bf4ea466236697a3d3c9054db9c2665f",
+      "english_sha256": "45ce4719d64192cb0cd2fdf1a5a9ad26fabba5680d163d72be0a55fcc4f991ae",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معاذ",
+      "english": "Umm Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بشر الدولابي",
+      "english": "Abu Bishr al-Dulabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكنى",
+      "english": "al-Kuna",
+      "kind": "work"
+    },
+    {
+      "arabic": "يحيى بن معقل",
+      "english": "Yahya ibn Ma'qil",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس",
+      "english": "Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاذ",
+      "english": "Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن صاعد",
+      "english": "Ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "حديث ابن صاعد",
+      "english": "Hadith of Ibn Sa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو الوقت",
+      "english": "Abu al-Waqt",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "المجمع",
+      "english": "al-Majma'",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

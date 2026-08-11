@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011655",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11655,
+  "title": {
+    "english": "al-Qaswa:",
+    "arabic_observed": "القصواء:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011655-segment-0001",
+      "volume": 8,
+      "scan_page": 288,
+      "printed_page": 287,
+      "reader_page": 4200,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4200",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0288:331e52b93aa21505",
+      "arabic": "١١٦٥٥- القصواء:\nجدة القاسم بن غنام.\nلها حديث في مسند ابن سنجر، كذا في التجريد.",
+      "english": "11655—al-Qaswa:\n\nThe grandmother of al-Qasim ibn Ghannam.\n\nA hadith of hers is found in Musnad Ibn Sanjar. Thus it appears in al-Tajrid.",
+      "arabic_sha256": "ea4f19d81633be2cd20469bef05b17b7950f95bd24fc8ad878698d5ecfc5b936",
+      "english_sha256": "f324bfd72bc2748d5e2b2e3abefbc4c262fc0222f2aee1e07ae63f15f2159d8b",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "القصواء",
+      "english": "al-Qaswa",
+      "kind": "person"
+    },
+    {
+      "arabic": "القاسم بن غنام",
+      "english": "al-Qasim ibn Ghannam",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند ابن سنجر",
+      "english": "Musnad Ibn Sanjar",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سنجر",
+      "english": "Ibn Sanjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

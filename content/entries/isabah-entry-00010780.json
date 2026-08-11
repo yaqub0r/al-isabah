@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010780",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10780,
+  "title": {
+    "english": "Athila al-Khuza'iyya,",
+    "arabic_observed": "أثيلة الخزاعية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010780-segment-0001",
+      "volume": 8,
+      "scan_page": 7,
+      "printed_page": 6,
+      "reader_page": 3919,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3919",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0007:16f979fa3c96671e",
+      "arabic": "١٠٧٨٠- أثيلة الخزاعية ،\nجدة أيوب بن عبد اللَّه بن زهير الأسدي.\nذكرها الفاكهيّ في كتاب «مكّة» خبرا من طريق ابن جريج عن ابن أبي حسين- أن النبي ﷺ كتب إلى سهيل بن عمرو: إن جاءك كتابي ليلا فلا تصبحن أو نهارا فلا تمسين حتى تبعث إليّ مزادتين من ماء زمزم. قال: فاستعانت امرأته الخزاعية جدة أيوب، فأدلجتاهما فلم تصبحا حتى فرغتا من مزادتين فجعلتاهما في كرين، فبعث بهما على بعير من ليلتهما،\nوأخرجه عمر بن شبة كذلك.",
+      "english": "10780 — Athila al-Khuza'iyya,\n\ngrandmother of Ayyub ibn 'Abd Allah ibn Zuhayr al-Asadi.\n\nal-Fakihi mentioned her in the Book of Mecca in a report transmitted by way of Ibn Jurayj, from Ibn Abi Husayn: The Prophet, may Allah bless him and grant him peace, wrote to Suhayl ibn 'Amr: “If my letter reaches you at night, do not let morning overtake you, and if it reaches you by day, do not let evening overtake you, before you send me two waterskins of Zamzam water.” His wife then sought the help of Athila al-Khuza'iyya, Ayyub's grandmother, and the two women set out with the waterskins by night. Morning did not overtake them before they had finished filling two waterskins. They placed them in two panniers, and he sent them on a camel that same night.\n\n'Umar ibn Shabba also transmitted it in this manner.",
+      "arabic_sha256": "d4f9bd1ab46e1d4eef66acf836900a8481483b60f022113903c7c757a3a550c4",
+      "english_sha256": "0b6983a6db3d386296f60a88010bf1503182e8859f850553cceaf46f3423840d",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أثيلة الخزاعية",
+      "english": "Athila al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أيوب بن عبد اللَّه بن زهير الأسدي",
+      "english": "Ayyub ibn 'Abd Allah ibn Zuhayr al-Asadi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفاكهي",
+      "english": "al-Fakihi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب مكة",
+      "english": "Book of Mecca",
+      "kind": "work"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن جريج",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي حسين",
+      "english": "Ibn Abi Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "سهيل بن عمرو",
+      "english": "Suhayl ibn 'Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "زمزم",
+      "english": "Zamzam",
+      "kind": "place"
+    },
+    {
+      "arabic": "عمر بن شبة",
+      "english": "'Umar ibn Shabba",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

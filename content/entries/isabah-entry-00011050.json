@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011050",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11050,
+  "title": {
+    "english": "Hasana, mother of Shurahbil ibn Hasana. (2)",
+    "arabic_observed": "حسنة، والدة شرحبيل بن حسنة «٢» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011050-segment-0001",
+      "volume": 8,
+      "scan_page": 86,
+      "printed_page": 85,
+      "reader_page": 3998,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3998",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0086:2c11aa9db10e830f",
+      "arabic": "١١٠٥٠- حسنة، والدة شرحبيل بن حسنة «٢» .\nقال العجليّ: لها صحبة. وقال ابن سعد: هاجرت مع أبيها إلى أرض الحبشة. ذكر إبراهيم بن سعد فيمن هاجر إلى الحبشة من بني جمح معمر بن حبيب، ومعه ابناها خالد، وجنادة، وامرأته حسنة هي أمهما وأخوهما لأمهما شرحبيل بن حسنة.",
+      "english": "11050 — Hasana, mother of Shurahbil ibn Hasana. (2)\n\nal-Ijli said: She had companionship with the Prophet. Ibn Sa'd said: She emigrated with her father to the land of Abyssinia. Ibrahim ibn Sa'd mentioned, among those of Banu Jumah who emigrated to Abyssinia, Muammar ibn Habib, accompanied by her two sons, Khalid and Junada; his wife Hasana, who was their mother; and their maternal half-brother Shurahbil ibn Hasana.",
+      "arabic_sha256": "bad546ab10855523157d16dd93c389e7623a9e34cfe1932893ad88902439c7fd",
+      "english_sha256": "63d5ae342a8f67c9d30aab4d971e7b8aaa6e8b74d295ebdf1a15d8053624ea44",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "حسنة",
+      "english": "Hasana",
+      "kind": "person"
+    },
+    {
+      "arabic": "شرحبيل بن حسنة",
+      "english": "Shurahbil ibn Hasana",
+      "kind": "person"
+    },
+    {
+      "arabic": "العجليّ",
+      "english": "al-Ijli",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أرض الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "إبراهيم بن سعد",
+      "english": "Ibrahim ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني جمح",
+      "english": "Banu Jumah",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "معمر بن حبيب",
+      "english": "Muammar ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد",
+      "english": "Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "جنادة",
+      "english": "Junada",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

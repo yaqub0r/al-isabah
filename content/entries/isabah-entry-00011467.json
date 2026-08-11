@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011467",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11467,
+  "title": {
+    "english": "Aisha bint Umayr",
+    "arabic_observed": "عائشة بنت عمير"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011467-segment-0001",
+      "volume": 8,
+      "scan_page": 237,
+      "printed_page": 236,
+      "reader_page": 4149,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4149",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0237:b884cdae99928e6f",
+      "arabic": "١١٤٦٧- عائشة بنت عمير\nبن الحارث بن ثعلبة الأنصارية «٣»، من بني حزام.",
+      "english": "11467—Aisha bint Umayr\nibn al-Harith ibn Tha'laba al-Ansariyya,[3] of Banu Hizam.",
+      "arabic_sha256": "dcda057a734e00b6e5f1e9e36cbce3f925394ea7a9e89a5f9205a67828800bf8",
+      "english_sha256": "34063f9f06e56f40c84d43c36e372b7ed353d0f157e2139db2ea2b7cb256b0b7",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بنو حزام",
+      "english": "Banu Hizam",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

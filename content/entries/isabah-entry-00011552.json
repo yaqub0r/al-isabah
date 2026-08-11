@@ -1,0 +1,115 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011552",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11552,
+  "title": {
+    "english": "'Unaba:",
+    "arabic_observed": "عنبة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011552-segment-0001",
+      "volume": 8,
+      "scan_page": 253,
+      "printed_page": 252,
+      "reader_page": 4165,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4165",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0253:93ab0a11e5b3efbd",
+      "arabic": "١١٥٥٢- عنبة:\nغير منسوبة.\nذكرها أبو نعيم، وأخرج عن أبي بكر المقرئ، عن محمد بن قارن، عن أبي زرعة، عن غسان بن الفضل، حدّثنا صبيح بن سعيد النّجاشي سنة ثمانين ومائة، وزعم أنه بلغ ستّا وخمسين ومائة، سمعت أمي تقول: إنها كان اسمها عنبة فسمّاها رسول اللَّه ﵌ عنقودة.\nوأخرجه الخطيب في المؤتلف من وجه آخر عن محمد بن قارن. وصبيح المذكور كذّبه يحيى بن معين.",
+      "english": "11552—'Unaba:\n\nHer lineage is not given.\n\nAbu Nu'aym mentioned her and transmitted from Abu Bakr al-Muqri', from Muhammad ibn Qarin, from Abu Zur'a, from Ghassan ibn al-Fadl: Subayh ibn Sa'id al-Najashi narrated to us in the year 180, claiming that he had reached the age of 156. He said: I heard my mother say that her name had been 'Unaba, but the Messenger of Allah—may Allah bless him and grant him peace—renamed her 'Unquda.\n\nAl-Khatib also transmitted it in al-Mu'talif by another route from Muhammad ibn Qarin. The aforementioned Subayh was declared a liar by Yahya ibn Ma'in.",
+      "arabic_sha256": "7c42592248e264ee2b50241c57753922e9e7359d993fd14909a3689f3034f3b3",
+      "english_sha256": "ddb1aacee18249f8131f84e9a4709caf5494a658d954f7b3fa2eea4eb33f170f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبيّ، رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عنبة",
+      "english": "'Unaba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر المقرئ",
+      "english": "Abu Bakr al-Muqri'",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن قارن",
+      "english": "Muhammad ibn Qarin",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو زرعة",
+      "english": "Abu Zur'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "غسان بن الفضل",
+      "english": "Ghassan ibn al-Fadl",
+      "kind": "person"
+    },
+    {
+      "arabic": "صبيح بن سعيد النّجاشي",
+      "english": "Subayh ibn Sa'id al-Najashi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عنقودة",
+      "english": "'Unquda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخطيب",
+      "english": "al-Khatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "المؤتلف",
+      "english": "al-Mu'talif",
+      "kind": "work"
+    },
+    {
+      "arabic": "يحيى بن معين",
+      "english": "Yahya ibn Ma'in",
+      "kind": "person"
+    },
+    {
+      "arabic": "عنقودة أخرى",
+      "english": "'Unquda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

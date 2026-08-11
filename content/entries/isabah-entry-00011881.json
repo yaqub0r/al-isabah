@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011881",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11881,
+  "title": {
+    "english": "Wadda bint 'Uqba ibn Rafi' ibn Imru' al-Qays ibn Zayd ibn 'Abd al-Ashhal al-Ashhaliyya",
+    "arabic_observed": "ودّة بنت عقبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011881-segment-0001",
+      "volume": 8,
+      "scan_page": 352,
+      "printed_page": 351,
+      "reader_page": 4264,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4264",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0352:f2194a056d0a2fdd",
+      "arabic": "١١٨٨١- ودّة بنت عقبة\nبن رافع بن امرئ القيس بن زيد بن عبد الأشهل الأشهليّة، أم الحكم، زوج قيس بن مخرمة بن المطّلب بن عبد مناف.\nقال ابن سعد: أسلمت وبايعت، وهي عمة محمود بن لبيد، وأمّها أم البنين بنت حذيفة بن ربيعة القضاعيّة، من بني سلامان.\n(١) في أ: خمارتنا.\n(٢) أسد الغابة ت (٧٣٣٣) .",
+      "english": "11881—Wadda bint 'Uqba ibn Rafi' ibn Imru' al-Qays ibn Zayd ibn 'Abd al-Ashhal al-Ashhaliyya\n\nHer kunyah was Umm al-Hakam, and she was the wife of Qays ibn Makhrama ibn al-Muttalib ibn 'Abd Manaf.\n\nIbn Sa'd said: “She embraced Islam and pledged allegiance. She was the paternal aunt of Mahmud ibn Labid, and her mother was Umm al-Banin bint Hudhayfa ibn Rabi'a al-Quda'iyya, of Banu Salaman.”\n\n[1] In manuscript A: “our veil” (khimaratuna).\n\n[2] Usd al-Ghaba, entry 7333.",
+      "arabic_sha256": "6797a4b205e88b2d2015097500d39a17399e5d9ea50cf5d926e440166fdad39c",
+      "english_sha256": "7ac26e53c05a18995b0067bc89661b0e17ab68fb5409d24cf9a71809cfed8676",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ودة بنت عقبة بن رافع بن امرئ القيس بن زيد بن عبد الأشهل الأشهلية",
+      "english": "Wadda bint 'Uqba ibn Rafi' ibn Imru' al-Qays ibn Zayd ibn 'Abd al-Ashhal al-Ashhaliyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الحكم",
+      "english": "Umm al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس بن مخرمة بن المطلب بن عبد مناف",
+      "english": "Qays ibn Makhrama ibn al-Muttalib ibn 'Abd Manaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمود بن لبيد",
+      "english": "Mahmud ibn Labid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم البنين بنت حذيفة بن ربيعة القضاعية",
+      "english": "Umm al-Banin bint Hudhayfa ibn Rabi'a al-Quda'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني سلامان",
+      "english": "Banu Salaman",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

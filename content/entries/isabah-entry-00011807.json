@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011807",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11807,
+  "title": {
+    "english": "Nadbah:",
+    "arabic_observed": "ندبة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011807-segment-0001",
+      "volume": 8,
+      "scan_page": 334,
+      "printed_page": 333,
+      "reader_page": 4246,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4246",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0334:c12f4a85744d6795",
+      "arabic": "١١٨٠٧- ندبة:\nمولاة ميمونة «١» . لها ذكر في حديث لعائشة، ذكرها ابن مندة مختصرا.",
+      "english": "11807 - Nadbah:\n\nA female client of Maymuna.[1] She is mentioned in a hadith of Aisha; Ibn Mandah mentioned her briefly.",
+      "arabic_sha256": "7a3564256ae10cacea1a2f6db2801afa023014f743d69a7d51dfa01df17e8c66",
+      "english_sha256": "116f7a2bd67090b38f9dd026c830f9022a47f7f751d27dd2e7356596443d85ed",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ندبة",
+      "english": "Nadbah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمونة",
+      "english": "Maymuna",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

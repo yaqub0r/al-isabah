@@ -1,0 +1,110 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011822",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11822,
+  "title": {
+    "english": "Nafisa bint Amr",
+    "arabic_observed": "نفيسة بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011822-segment-0001",
+      "volume": 8,
+      "scan_page": 337,
+      "printed_page": 336,
+      "reader_page": 4249,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4249",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0337:e71cb7c477091877",
+      "arabic": "١١٨٢٢- نفيسة بنت عمرو\nبن خلدة بن مخلد الأنصاري «٦»، من بني زريق، ذكرها ابن حبيب في المبايعات.\n(١) تنظر الأبيات في أسد الغابة ترجمة رقم (٧٣٢٣) .\n(٢) الثقات ٣/ ٤٢٣، تجريد أسماء الصحابة ٢/ ٣٠٨، أسد الغابة ت (٧٣٢٤) .\n(٣) بنحوه أخرجه مسلم ٦٠ والبيهقي ٩/ ٣٤٨.\n(٤) أسد الغابة ت (٧٣٢٥)، الاستيعاب ت (٣٥٥٩)، الثقات ٣/ ٤٢٤- أعلام النساء ٥/ ١٨٦- تجريد أسماء الصحابة ٢/ ٣٠٨- الإكمال ٦/ ٤٦.\n(٥) في أ: تقدمت في نفيسة.\n(٦) أسد الغابة ت (٧٣٢٦) .",
+      "english": "11822 — Nafisa bint Amr\n\nibn Khalda ibn Makhlad al-Ansari,⁶ of Banu Zurayq. Ibn Habib mentioned her among the women who gave the pledge of allegiance.\n\n¹ See the verses in Usd al-Ghaba, entry no. 7323.\n\n² al-Thiqat, 3/423; al-Tajrid, 2/308; Usd al-Ghaba, entry no. 7324.\n\n³ A similar report was transmitted by Muslim, no. 60, and al-Bayhaqi, 9/348.\n\n⁴ Usd al-Ghaba, entry no. 7325; al-Isti'ab, entry no. 3559; al-Thiqat, 3/424; A'lam al-Nisa', 5/186; al-Tajrid, 2/308; al-Ikmal, 6/46.\n\n⁵ In manuscript A: “She was previously mentioned under Nafisa.”\n\n⁶ Usd al-Ghaba, entry no. 7326.",
+      "arabic_sha256": "c96e243c4663eea84110a555c9750c8b386434b8dd27f23b66e996fe7d2af985",
+      "english_sha256": "a99a0615e97a0f4fb623b1b9c34112518b77d75f54f9f95f75fed98ac3e290a6",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "نفيسة",
+      "english": "Nafisa bint Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني زريق",
+      "english": "Banu Zurayq",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الإكمال",
+      "english": "al-Ikmal",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "textual lacuna",
+      "arabic_span": "قال لها في بيت جعفر [...] . إلخ. ويريد هذا [...] أخرج من طريق [...] عن إسماعيل بن عميس [...] . قالت",
+      "explanation": "The canonical passage contains explicit lacunae and a grammatically defective continuation. Neither the Urdu witness nor the collateral Arabic material permits a safe reconstruction, so every lacuna and surviving fragment has been retained.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0337:e71cb7c477091877"
+    },
+    {
+      "category": "manuscript variant",
+      "arabic_span": "تقدمت في أنيسة / في أ: تقدمت في نفيسة",
+      "explanation": "The main text cross-references Unaysa, whereas manuscript A has the self-referential Nafisa. Both readings are translated exactly; the supplied evidence cannot establish how manuscript A's variant arose.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0337:e71cb7c477091877"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

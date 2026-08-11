@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012126",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12126,
+  "title": {
+    "english": "Umm Amir bint Suwayd (2):",
+    "arabic_observed": "أم عامر بنت سويد»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012126-segment-0001",
+      "volume": 8,
+      "scan_page": 426,
+      "printed_page": 425,
+      "reader_page": 4338,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4338",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0426:6633b99d43784c8a",
+      "arabic": "١٢١٢٦- أم عامر بنت سويد»\n: ذكرها أبو موسى في الذّيل عن المستغفري، ولم يورد لها شيئا.",
+      "english": "12126 — Umm Amir bint Suwayd (2):\n\nAbu Musa mentioned her in al-Dhayl, on the authority of al-Mustaghfiri, but related nothing concerning her.",
+      "arabic_sha256": "85028da8861fabefbcb02457f75b22b014d1e787b5989e883caa501fe95f11be",
+      "english_sha256": "89bb07aef2f3a0bfb0fd7a9056098db5a338d39144392e8ec693c38c4f7b7e71",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم عامر بنت سويد",
+      "english": "Umm Amir bint Suwayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذّيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

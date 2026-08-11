@@ -1,0 +1,130 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010803",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10803,
+  "title": {
+    "english": "Asma bint Shakal (1)",
+    "arabic_observed": "أسماء بنت شكل «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010803-segment-0001",
+      "volume": 8,
+      "scan_page": 13,
+      "printed_page": 12,
+      "reader_page": 3925,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3925",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0013:ecc36648d856b02e",
+      "arabic": "١٠٨٠٣- أسماء بنت شكل «١»\n، بمعجمة وفتحتين وآخره لام.\nثبت ذكرها في صحيح مسلم في كتاب «الحيض»، من طريق عائشة، قالت: دخلت أسماء بنت شكل على رسول اللَّه ﷺ، فقالت له: يا رسول اللَّه، كيف تغتسل إحدانا إذا طهرت من الحيض؟ الحديث.\nوذكرها أبو موسى في «الذّيل» من طريق المستغفري بسنده إلى أبي بكر بن أبي شيبة شيخ مسلم فيه. وقال أبو علي الجياني فيما ذيّل به على الاستيعاب: لا أدري أهي إحدى من ذكره أبو عمر أو بعض الرواة غلط في شكل، وإنما هي أسماء بنت يزيد بن السكن الآتي ذكرها سقط ذكر أبيها، وصحّف اسم جدها، ونسبت إليه، وسبقه إلى ذلك الخطيب أبو بكر الحافظ.\nويؤيده أنه ليس في الأنصار من اسمه شكل، فقد ثبت في صحيح البخاري في هذه القصة أنّ التي سألت امرأة من الأنصار، وتبعه أبو الفتح بن سيد الناس على ذلك، وفيه نظر.",
+      "english": "10803 — Asma bint Shakal (1)\n\nWith a dotted shin, two fathas, and a final lam.\n\nHer mention is attested in Sahih Muslim, in the “Book of Menstruation,” through Aisha, who said: Asma bint Shakal came to the Messenger of Allah, may Allah bless him and grant him peace, and said to him, “O Messenger of Allah, how should one of us perform the ritual bath after becoming pure from menstruation?”—the rest of the hadith.\n\nAbu Musa mentioned her in al-Dhayl, by way of al-Mustaghfiri, with his chain of transmission to Abu Bakr ibn Abi Shayba, Muslim's shaykh in this report. In his supplement to al-Isti'ab, Abu Ali al-Jayyani said: “I do not know whether she is one of those mentioned by Abu Umar or whether one of the transmitters erred concerning ‘Shakal.’ Rather, she is Asma bint Yazid ibn al-Sakan, who will be mentioned below: her father's name was omitted, her grandfather's name was miscopied, and she was ascribed to him.” al-Khatib Abu Bakr al-Hafiz had preceded him in this view.\n\nThis is supported by the fact that no one among the Ansar bore the name Shakal, while it is established in Sahih al-Bukhari, in this account, that the woman who asked the question was one of the Ansar. Abu al-Fath ibn Sayyid al-Nas followed him in this, though the matter is open to question.",
+      "arabic_sha256": "b0a400462ab8625dd7aafe761d152d3754090a417ce4a5d33ecf53df66d64c48",
+      "english_sha256": "9f6a084a7aa8db4bd59b1152f28a76a209f429b178a4209c483f2fe30d074cd8",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أسماء بنت شكل",
+      "english": "Asma bint Shakal",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيح مسلم",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "كتاب الحيض",
+      "english": "Book of Menstruation",
+      "kind": "work"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذّيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر بن أبي شيبة",
+      "english": "Abu Bakr ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو علي الجياني",
+      "english": "Abu Ali al-Jayyani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسماء بنت يزيد بن السكن",
+      "english": "Asma bint Yazid ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخطيب أبو بكر الحافظ",
+      "english": "al-Khatib Abu Bakr al-Hafiz",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "صحيح البخاري",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو الفتح بن سيد الناس",
+      "english": "Abu al-Fath ibn Sayyid al-Nas",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

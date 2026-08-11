@@ -1,0 +1,551 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011849",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11849,
+  "title": {
+    "english": "Hind bint Abi Umayya(2)",
+    "arabic_observed": "هند بنت أبي أمية «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011849-segment-0001",
+      "volume": 8,
+      "scan_page": 343,
+      "printed_page": 342,
+      "reader_page": 4255,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4255",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0343:17a67b3274f51657",
+      "arabic": "١١٨٤٩- هند بنت أبي أمية «٢»\n: واسمه حذيفة، وقيل سهل بن المغيرة بن عبد اللَّه بن عمر بن مخزوم القرشيّة المخزوميّة، أم المؤمنين أم سلمة، مشهورة بكنيتها، معروفة باسمها.\nوشذّ من قال: إن اسمها رملة. وكان أبوها يلقّب زاد الركب، لأنه كان أحد الأجواد فكان إذا سافر لم يحمل أحد معه من رفقته زادا، بل هو كان يكفيهم.\nوأمّها عاتكة بنت عامر، كنانية من بني فراس، وكانت تحت أبي سلمة بن عبد الأسد، وهو ابن عمها.\nوهاجرت معه إلى الحبشة، ثم هاجرت إلى المدينة، فيقال: إنها أول ظعينة دخلت إلى المدينة مهاجرة. ولما مات زوجها من الجراحة التي أصابته خطبها النبيّ ﵌.\n(١) أسد الغابة ت (٧٣٤٤) .\n(٢) مسند أحمد ٦/ ٢٨٨، التاريخ لابن معين ٧٤٢، طبقات ابن سعد ٨/ ٨٦، طبقات خليفة ٣٣٤، المعارف ١٢٨، الجرح والتعديل ٩/ ٤٦٤، المستدرك ٤/ ١٦، تهذيب الكمال ١٦٩٨، العبر ١/ ٦٥، مجمع الزوائد ٩/ ٢٤٥، تهذيب التهذيب ١٢/ ٤٥٥، خلاصة تذهيب الكمال ٤٩٦، شذرات الذهب ١/ ٦٩- اعلام النساء ٥/ ٢٢١، تجريد أسماء الصحابة ٢/ ٣١٠، أزمنة التاريخ الإسلامي ٩٨٥، أسد الغابة ت (٧٣٤٣) الاستيعاب ت (٣٥٦٥) .",
+      "english": "11849—Hind bint Abi Umayya(2)\n\nAbu Umayya's name was Hudhayfa; it is also said that his name was Sahl ibn al-Mughira ibn Abd Allah ibn Umar ibn Makhzum. She was a Qurashi Makhzumi woman, the Mother of the Believers Umm Salama, famous by her kunyah and known by her personal name.\n\nThe view that her name was Ramlah is anomalous. Her father was nicknamed Zad al-Rakb (“Provisions of the Caravan”), because he was one of the generous men. Whenever he traveled, none of his companions would carry provisions; rather, he himself would provide for them.\n\nHer mother was Atika bint Amir, a Kinani woman from Banu Firas. Hind was married to Abu Salama ibn Abd al-Asad, who was her paternal cousin.\n\nShe emigrated with him to Abyssinia and then emigrated to Medina. It is said that she was the first woman traveling in a camel-litter to enter Medina as an emigrant. When her husband died from the wound he had sustained, the Prophet—may Allah bless him and grant him peace—proposed marriage to her.\n\n(1) Usd al-Ghaba, entry (7344).\n\n(2) Musnad Ahmad 6/288; al-Tarikh by Ibn Ma'in, 742; al-Tabaqat of Ibn Sa'd 8/86; al-Tabaqat of Khalifa, 334; al-Ma'arif, 128; al-Jarh wa-l-Ta'dil 9/464; al-Mustadrak 4/16; Tahdhib al-Kamal, 1698; al-Ibar 1/65; Majma' al-Zawa'id 9/245; Tahdhib al-Tahdhib 12/455; Khulasat Tadhhib al-Kamal, 496; Shadharat al-Dhahab 1/69; A'lam al-Nisa' 5/221; al-Tajrid 2/310; Azminat al-Tarikh al-Islami, 985; Usd al-Ghaba, entry (7343); al-Isti'ab, entry (3565).",
+      "arabic_sha256": "1474b16315393b31df05764212f89e1610b9cdf338441905f7cc88f6c0579a24",
+      "english_sha256": "a43ae477d36b7b37da241e181edcff55395f5f0800965bfc46479deb6104ac94",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011849-segment-0002",
+      "volume": 8,
+      "scan_page": 344,
+      "printed_page": 343,
+      "reader_page": 4256,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4256",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0344:4e1013db5fe031d8",
+      "arabic": "وأخرج ابن أبي عاصم، من طريق عبد الواحد بن أيمن، عن أبي بكر بن عبد الرحمن، عن أم سلمة، قالت: لما خطبني النبيّ ﷺ قلت له: فيّ خلال ثلاث: أما أنا فكبيرة السنّ، وأنا امرأة معيل، وأنا امرأة شديدة الغيرة. فقال: «أنا أكبر منك. وأمّا العيال فإلى اللَّه. وأمّا الغيرة فأدعو اللَّه فيذهبها عنك»، فتزوّجها: فلما دخل عليها قال: «إن شئت سبّعت لك وإن سبّعت لك سبّعت لنسائي»، فرضيت بالثّلاث «١» .\nوالحديث في الصحيح من طرق.\nوأخرج ابن سعد، من طريق عاصم الأحول، عن زياد بن أبي مريم، قال: قالت أم سلمة لأبي سلمة: بلغني أنه ليس امرأة يموت زوجها وهو من أهل الجنّة ثم لم تتزوّج بعده إلا جمع اللَّه بينهما في الجنّة، وكذا إذا ماتت امرأة وبقي الرجل بعدها، فتعال أعاهدك أن لا أتزوّج بعدك ولا تتزوّج بعدي، قال: أتطيعيني؟ قالت: ما استأمرتك إلا وأنا أريد أن أطيعك. قال: فإذا متّ فتزوّجي. ثم قال: اللَّهمّ ارزق أمّ سلمة بعدي رجلا خيرا مني، لا يخزيها ولا يؤذيها. قالت: فلما مات قلت: من هذا الّذي هو خير لي من أبي سلمة، فلبثت ما لبثت، ثم تزوّجني رسول اللَّه ﵌.\nوفي «الصّحيح»، عن أم سلمة- أن أبا سلمة قال: قال رسول اللَّه ﵌: «إذا أصاب أحدكم مصيبة فليقل: إنّا للَّه وإنّا إليه راجعون، اللَّهمّ عندك أحتسب مصيبتي وآجرني فيها»، وأردت أن أقول: «وأبدلني بها خيرا منها»،\nفقلت: من هو خير من أبي سلمة؟ فما زلت حتى قلتها، فذكرت القصّة.\nوقال ابن سعد: أخبرنا معمر، عن الزّهري، عن هند بنت الحارث الفراسيّة، قالت:\nقال رسول اللَّه ﵌: «إنّ لعائشة منّي شعبة ما نزلها منّي أحد»، فلما تزوّج أم سلمة سئل: ما فعلت الشّعبة؟ فعرف أن أمّ سلمة قد نزلت عنده.\nوقال: أخبرنا محمد بن عمر، أخبرنا عبد الرّحمن بن أبي الزّناد، عن هشام بن عروة، عن أبيه، عن عائشة: لما تزوّج رسول اللَّه ﵌ أم سلمة حزنت حزنا شديدا لما ذكر لنا في جمالها، قالت: فتلطّفت لها حتى رأيتها، فرأيتها أضعاف ما وصف لي في الحسن والجمال، فقالت حفصة [...] واللَّه إن هذا إلا الغيرة، فتلطّفت لها حفصة\n(١) أخرجه أحمد في المسند ٦/ ٣٠٧، والبيهقي في السنن الكبرى ٧/ ٣٠١ والبيهقي في دلائل النبوة ٣/ ٤٦٤، وعبد الرزاق في مصنفه حديث رقم ١٦٠٤٤ وابن حجر في المطالب العالية حديث رقم ٤١٥٠.",
+      "english": "Ibn Abi Asim transmitted, through Abd al-Wahid ibn Ayman, from Abu Bakr ibn Abd al-Rahman, from Umm Salama, who said: When the Prophet (may Allah bless him and grant him peace) proposed marriage to me, I said to him, “I have three traits: I am advanced in age, I am a woman with dependents, and I am a woman of intense jealousy.” He said, “I am older than you. As for the dependents, they are entrusted to Allah. As for jealousy, I shall pray to Allah, and He will remove it from you.” He then married her. When he came in to her, he said, “If you wish, I will allot you seven nights; but if I allot you seven, I shall allot seven to each of my wives.” She was content with three nights.(1)\n\nThe hadith is found in the Sahih through several routes.\n\nIbn Sa'd transmitted, through Asim al-Ahwal, from Ziyad ibn Abi Maryam, who said: Umm Salama said to Abu Salama, “I have heard that whenever a woman’s husband dies while he is among the people of Paradise, and she does not marry after him, Allah will unite them in Paradise; and likewise when a woman dies and the man survives her. Come, then, and let us pledge to one another that I will not marry after you and you will not marry after me.” He said, “Will you obey me?” She said, “I sought your counsel only because I intend to obey you.” He said, “Then, when I die, marry.” He then said, “O Allah, after me provide Umm Salama with a man better than I, who will neither disgrace nor harm her.” She said: When he died, I said, “Who could be better for me than Abu Salama?” I remained thus for as long as I did, and then the Messenger of Allah (may Allah bless him and grant him peace) married me.\n\nIn the Sahih, it is related from Umm Salama that Abu Salama said: The Messenger of Allah (may Allah bless him and grant him peace) said, “When a calamity befalls any one of you, let him say: ‘Indeed, we belong to Allah, and indeed to Him we return. O Allah, with You I seek the reward for my calamity, so reward me for it.’” I wanted to say as well, “And replace it for me with something better than it,” but I said, “Who is better than Abu Salama?” I continued thus until I said it; she then related the story.\n\nIbn Sa'd said: Ma'mar informed us, from al-Zuhri, from Hind bint al-Harith al-Firasiyya, who said: The Messenger of Allah (may Allah bless him and grant him peace) said, “Aisha has a place in me that no one else has occupied.” When he married Umm Salama, he was asked, “What has become of that place?” It was thereby recognized that Umm Salama had come to occupy a place with him.\n\nHe also said: Muhammad ibn Umar informed us; Abd al-Rahman ibn Abi al-Zinad informed us, from Hisham ibn Urwa, from his father, from Aisha: When the Messenger of Allah (may Allah bless him and grant him peace) married Umm Salama, I grieved intensely because of what we had been told about her beauty. She said: I contrived tactfully until I saw her, and I found her many times more lovely and beautiful than she had been described to me. Hafsa said, “[...] By Allah, this is nothing but jealousy.” Hafsa then approached her tactfully—\n\n(1) Transmitted by Ahmad in Musnad Ahmad, 6/307; al-Bayhaqi in al-Sunan al-Kubra, 7/301; al-Bayhaqi in Dala'il al-Nubuwwa, 3/464; Abd al-Razzaq in his Musannaf, hadith no. 16044; and Ibn Hajar in al-Matalib al-Aliya, hadith no. 4150.",
+      "arabic_sha256": "4e1013db5fe031d8a19c0700308382af80e4e74ca95159fa5b4e8054d09d25ad",
+      "english_sha256": "4ab728980b5bcfdca54965ea71ac9b49c4b808f1496a1e567a451847c30b1e3e",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011849-segment-0003",
+      "volume": 8,
+      "scan_page": 345,
+      "printed_page": 344,
+      "reader_page": 4257,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4257",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0345:60204e47c123d848",
+      "arabic": "حتى رأتها، فقالت لي: لا، واللَّه ما هي كما تقولين، وإنها لجميلة، قالت: فرأيتها بعد فكانت كما قالت حفصة.\nروت أمّ سلمة عن النّبيّ ﵌ كثيرا، وعن أبي سلمة، وروى عنها أولادها: عمر، وزينب، ومكاتبها نبهان، وأخوها عامر بن أبي أميّة، ومواليها: عبد اللَّه بن رافع، ونافع، وسفينة، وأبو كثير، وسليمان بن يسار.\nوروى عنها أيضا ابن عبّاس، وعائشة، وأبو سعيد الخدريّ، وقبيصة بن ذؤيب، ونافع مولى ابن عمر، وعبد الرّحمن بن الحارث بن هشام، وآخرون.\nقال الواقديّ: ماتت في شوال سنة تسع وخمسين، وصلّى عليها أبو هريرة، ولها أربع وثمانون سنة، كذا قال.\nوتلقّاه عنه جماعة، وليس بجيد، فقد ثبت في صحيح مسلم أن الحارث بن عبد اللَّه ابن أبي ربيعة، وعبد اللَّه بن صفوان- دخلا على أم سلمة في ولاية يزيد بن معاوية فسألاها عن الجيش الّذي يخسف به ... الحديث. وكانت ولاية يزيد بعد موت أبيه في سنة ستين.\nوقال ابن حبان: ماتت في آخر سنة إحدى وستين بعد ما جاءها الخبر بقتل الحسين بن علي.\nقلت: وهذا أقرب. قال محارب بن دثار: أوصت أمّ سلمة أن يصلّي عليها سعيد بن زيد، وكان أمير المدينة يومئذ مروان بن الحكم، وقيل: الوليد بن عتبة بن أبي سفيان.\nقلت والثّاني أقرب، فإن سعيد بن زيد مات قبل تاريخ موت أم سلمة على الأقوال كلها، فكأنها كانت أوصت بأن يصلّي سعيد عليها في مرضة مرضتها ثم عوفيت. ومات سعيد قبلها.",
+      "english": "until she saw her. She then said to me, “No, by Allah, she is not as you say, though she is indeed beautiful.” She said: I saw her afterward, and she was as Hafsa had said.\n\nUmm Salama narrated extensively from the Prophet—may Allah bless him and grant him peace—and from Abu Salama. Her children Umar and Zaynab narrated from her, as did Nabhan, her slave under a manumission contract; her brother Amir ibn Abi Umayya; and her clients Abd Allah ibn Rafi, Nafi, Safina, Abu Kathir, and Sulayman ibn Yasar.\n\nAlso narrating from her were Ibn Abbas, Aisha, Abu Sa'id al-Khudri, Qabisa ibn Dhu'ayb, Nafi the client of Ibn Umar, Abd al-Rahman ibn al-Harith ibn Hisham, and others.\n\nal-Waqidi said: She died in Shawwal in the year 59, Abu Hurayra led the funeral prayer over her, and she was eighty-four years old. That is what he said.\n\nA number of scholars accepted this from him, but it is unsound. It is established in Sahih Muslim that al-Harith ibn Abd Allah ibn Abi Rabi'a and Abd Allah ibn Safwan entered upon Umm Salama during the reign of Yazid ibn Muawiya and asked her about the army that would be swallowed by the earth… the hadith. Yazid’s reign began after his father’s death in the year 60.\n\nIbn Hibban said: She died at the end of the year 61, after news reached her of the killing of al-Husayn ibn Ali.\n\nI say: This is more likely. Muharib ibn Dithar said: Umm Salama instructed that Sa'id ibn Zayd should lead the funeral prayer over her. The governor of Medina at that time was Marwan ibn al-Hakam; it is also said that it was al-Walid ibn Utba ibn Abi Sufyan.\n\nI say: The second is more likely, for Sa'id ibn Zayd died before the date assigned to Umm Salama’s death according to every opinion. It is therefore as though she had instructed that Sa'id lead the funeral prayer over her during an illness from which she suffered and then recovered. Sa'id died before her.",
+      "arabic_sha256": "c454094be3b7b1f10a56ec8d198238cbf455f4a299423e1ae3deafaed3bcc9ef",
+      "english_sha256": "a5da7cc97886b6f0230d2bd67a11b9d13a1a5196f164af2f8dc0481d4f0b5497",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Muhammad ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند بنت أبي أمية",
+      "english": "Hind bint Abi Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أمية",
+      "english": "Abu Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "حذيفة",
+      "english": "Hudhayfa",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهل بن المغيرة بن عبد الله بن عمر بن مخزوم",
+      "english": "Sahl ibn al-Mughira ibn Abd Allah ibn Umar ibn Makhzum",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "رملة",
+      "english": "Ramlah",
+      "kind": "person"
+    },
+    {
+      "arabic": "زاد الركب",
+      "english": "Zad al-Rakb",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاتكة بنت عامر",
+      "english": "Atika bint Amir",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنانية",
+      "english": "Kinana",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني فراس",
+      "english": "Banu Firas",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو سلمة بن عبد الأسد",
+      "english": "Abu Salama ibn Abd al-Asad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسند أحمد",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "التاريخ لابن معين",
+      "english": "al-Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن معين",
+      "english": "Ibn Ma'in",
+      "kind": "person"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat of Ibn Sa'd",
+      "kind": "work"
+    },
+    {
+      "arabic": "طبقات خليفة",
+      "english": "al-Tabaqat of Khalifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "خليفة",
+      "english": "Khalifa",
+      "kind": "person"
+    },
+    {
+      "arabic": "المعارف",
+      "english": "al-Ma'arif",
+      "kind": "work"
+    },
+    {
+      "arabic": "الجرح والتعديل",
+      "english": "al-Jarh wa-l-Ta'dil",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "العبر",
+      "english": "al-Ibar",
+      "kind": "work"
+    },
+    {
+      "arabic": "مجمع الزوائد",
+      "english": "Majma' al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب الكمال",
+      "english": "Khulasat Tadhhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "شذرات الذهب",
+      "english": "Shadharat al-Dhahab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أزمنة التاريخ الإسلامي",
+      "english": "Azminat al-Tarikh al-Islami",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الواحد بن أيمن",
+      "english": "Abd al-Wahid ibn Ayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر بن عبد الرحمن",
+      "english": "Abu Bakr ibn Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "al-Sahih",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاصم الأحول",
+      "english": "Asim al-Ahwal",
+      "kind": "person"
+    },
+    {
+      "arabic": "زياد بن أبي مريم",
+      "english": "Ziyad ibn Abi Maryam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سلمة",
+      "english": "Abu Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجنّة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "معمر",
+      "english": "Ma'mar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند بنت الحارث الفراسيّة",
+      "english": "Hind bint al-Harith al-Firasiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمر",
+      "english": "Muhammad ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرّحمن بن أبي الزّناد",
+      "english": "Abd al-Rahman ibn Abi al-Zinad",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن عروة",
+      "english": "Hisham ibn Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفصة",
+      "english": "Hafsa",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن الكبرى",
+      "english": "al-Sunan al-Kubra",
+      "kind": "work"
+    },
+    {
+      "arabic": "دلائل النبوة",
+      "english": "Dala'il al-Nubuwwa",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد الرزاق",
+      "english": "Abd al-Razzaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "مصنفه",
+      "english": "Musannaf Abd al-Razzaq",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن حجر",
+      "english": "Ibn Hajar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المطالب العالية",
+      "english": "al-Matalib al-Aliya",
+      "kind": "work"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab",
+      "kind": "person"
+    },
+    {
+      "arabic": "نبهان",
+      "english": "Nabhan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عامر بن أبي أمية",
+      "english": "Amir ibn Abi Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن رافع",
+      "english": "Abd Allah ibn Rafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "نافع",
+      "english": "Nafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سفينة",
+      "english": "Safina",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو كثير",
+      "english": "Abu Kathir",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان بن يسار",
+      "english": "Sulayman ibn Yasar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سعيد الخدري",
+      "english": "Abu Sa'id al-Khudri",
+      "kind": "person"
+    },
+    {
+      "arabic": "قبيصة بن ذؤيب",
+      "english": "Qabisa ibn Dhu'ayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "نافع مولى ابن عمر",
+      "english": "Nafi mawla Ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عمر",
+      "english": "Ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن الحارث بن هشام",
+      "english": "Abd al-Rahman ibn al-Harith ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "شوال",
+      "english": "Shawwal",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو هريرة",
+      "english": "Abu Hurayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيح مسلم",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحارث بن عبد الله بن أبي ربيعة",
+      "english": "al-Harith ibn Abd Allah ibn Abi Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن صفوان",
+      "english": "Abd Allah ibn Safwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن معاوية",
+      "english": "Yazid ibn Muawiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد",
+      "english": "Yazid ibn Muawiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسين بن علي",
+      "english": "al-Husayn ibn Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "محارب بن دثار",
+      "english": "Muharib ibn Dithar",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن زيد",
+      "english": "Sa'id ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد",
+      "english": "Sa'id ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "مروان بن الحكم",
+      "english": "Marwan ibn al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوليد بن عتبة بن أبي سفيان",
+      "english": "al-Walid ibn Utba ibn Abi Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source_lacuna",
+      "arabic_span": "فقالت حفصة [...] واللَّه إن هذا إلا الغيرة",
+      "explanation": "The canonical Arabic explicitly omits words after “Hafsa said.” None of the supplied witnesses contains this report, so the missing wording cannot safely be reconstructed; the ellipsis has therefore been preserved.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0344:4e1013db5fe031d8"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

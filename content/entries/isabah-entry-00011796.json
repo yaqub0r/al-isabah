@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011796",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11796,
+  "title": {
+    "english": "Mahdad bint Hamran ibn Bishr ibn Amr ibn Marthad",
+    "arabic_observed": "مهدد بنت حمران"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011796-segment-0001",
+      "volume": 8,
+      "scan_page": 331,
+      "printed_page": 330,
+      "reader_page": 4243,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4243",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0331:1ac8849640fb7197",
+      "arabic": "١١٧٩٦- مهدد بنت حمران\nبن بشر بن عمرو بن مرثد، والدة سنان بن علقمة بن حاجب، من رواية التميميّ.\nتقدم ذكر سنان وولده وجدّه في أماكنهم، ولهذه إدراك لا محالة، قرأت في مقدّمة كتاب الأنساب لأبي سعيد بن السّمعاني بسند له إلى يزيد بن سنان بن علقمة- أنه حج فلقي رجلا من بني مهرة، فانتسب له، فدار بينهما كلام إلى أن قال له المهريّ: فإن لعلقمة «١» ولدا واحدا يقال له سنان، وكنت أظنّه مات، فقلت: أنا يزيد ولده. قال: ممّن؟ قلت: من مهدد بنت حمران ... فذكر القصّة.",
+      "english": "11796 — Mahdad bint Hamran ibn Bishr ibn Amr ibn Marthad\n\nMother of Sinan ibn Alqama ibn Hajib, as related by al-Tamimi.\n\nSinan, his son, and his grandfather have already been mentioned in their respective places. This woman unquestionably lived into the Prophetic era. I read in the introduction to Abu Sa'id ibn al-Sam'ani's Kitab al-Ansab, through a chain of his reaching Yazid ibn Sinan ibn Alqama, that he performed Hajj and met a man from Banu Mahra. He stated his lineage to him, and a conversation ensued between them, until al-Mahri said to him, “Alqama[1] had a single son named Sinan, and I had thought that he had died.” I said, “I am Yazid, his son.” He asked, “By whom?” I replied, “By Mahdad bint Hamran...” He then related the story.",
+      "arabic_sha256": "9628c3197266ea795a37f2a56677bdb1cc1ec8cb33e0404a3a0bd7e464fe77ce",
+      "english_sha256": "e0adae6cab03082b273bbba8833ebf91442a12fca32f889eb24ebed5c82feeca",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مهدد بنت حمران بن بشر بن عمرو بن مرثد",
+      "english": "Mahdad bint Hamran ibn Bishr ibn Amr ibn Marthad",
+      "kind": "person"
+    },
+    {
+      "arabic": "سنان بن علقمة بن حاجب",
+      "english": "Sinan ibn Alqama ibn Hajib",
+      "kind": "person"
+    },
+    {
+      "arabic": "التميمي",
+      "english": "al-Tamimi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سعيد بن السمعاني",
+      "english": "Abu Sa'id ibn al-Sam'ani",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الأنساب",
+      "english": "Kitab al-Ansab",
+      "kind": "work"
+    },
+    {
+      "arabic": "يزيد بن سنان بن علقمة",
+      "english": "Yazid ibn Sinan ibn Alqama",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني مهرة",
+      "english": "Banu Mahra",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "المهري",
+      "english": "al-Mahri",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

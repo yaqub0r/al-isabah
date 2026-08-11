@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012125",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12125,
+  "title": {
+    "english": "Umm Amir bint Sulaym ibn Dabi' ibn Amir ibn Majda'a ibn Jusham ibn Haritha al-Ansariyya:",
+    "arabic_observed": "أم عامر بنت سليم"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012125-segment-0001",
+      "volume": 8,
+      "scan_page": 426,
+      "printed_page": 425,
+      "reader_page": 4338,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4338",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0426:6633b99d43784c8a",
+      "arabic": "١٢١٢٥- أم عامر بنت سليم\nبن ضبع بن عامر بن مجدعة بن جشم بن حارثة الأنصاريّة، هي حبّانة، بكسر المهملة وموحدة ثقيلة ثم نون. تقدّمت في الأسماء.\nقال ابن سعد: تزوّجت أسيد بن ساعدة، فولدت له يزيد، وبايعت في قول ابن عمارة.",
+      "english": "12125 — Umm Amir bint Sulaym ibn Dabi' ibn Amir ibn Majda'a ibn Jusham ibn Haritha al-Ansariyya:\n\nShe is Hibbana—the unpointed ha bears a kasra, followed by a doubled ba and then a nun. She appeared previously among the personal names.\n\nIbn Sa'd said: “She married Usayd ibn Sa'ida and bore him Yazid; and, according to Ibn 'Umara, she pledged allegiance.”",
+      "arabic_sha256": "4a50d77d6deba10701e8cdf0a8f4b319410d909ac4110333189b052cbe3e92c2",
+      "english_sha256": "50c5e0cb65ee0222a94699c6ab84b83b7f1db6c39cc529bab83df6cdb82cbcfa",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم عامر بنت سليم بن ضبع بن عامر بن مجدعة بن جشم بن حارثة الأنصاريّة",
+      "english": "Umm Amir bint Sulaym ibn Dabi' ibn Amir ibn Majda'a ibn Jusham ibn Haritha al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبّانة",
+      "english": "Hibbana",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسيد بن ساعدة",
+      "english": "Usayd ibn Sa'ida",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد",
+      "english": "Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عمارة",
+      "english": "Ibn 'Umara",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

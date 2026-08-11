@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011879",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11879,
+  "title": {
+    "english": "Hujayma",
+    "arabic_observed": "هجيمة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011879-segment-0001",
+      "volume": 8,
+      "scan_page": 352,
+      "printed_page": 351,
+      "reader_page": 4264,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4264",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0352:f2194a056d0a2fdd",
+      "arabic": "١١٨٧٩- هجيمة:\nوقيل: خيرة، أم الدرداء «٢» .\nقال ابن الأثير: ذكرها أبو نعيم، وكلامه يدلّ على أنها واحدة، واختلف في اسمها.\nوالصّحيح أنهما اثنتان: الكبرى، واسمها خيرة، والصّغرى واسمها هجيمة، ولا صحبة لها.",
+      "english": "11879—Hujayma\n\nIt is also said: Khayra, Umm al-Darda.[2]\n\nIbn al-Athir said: Abu Nu'aym mentioned her, and his wording indicates that she was one woman whose name was disputed.\n\nThe correct view is that they were two women: the elder, whose name was Khayra, and the younger, whose name was Hujayma; the latter was not a Companion.",
+      "arabic_sha256": "143ad40615875c867b842725a6e65caed65b66a0fd9ce0e3ba4baf599d354811",
+      "english_sha256": "1cb5f3881eaf53dd15e54e9c879de75872c877224f072944199a0ddf39c6547f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "هجيمة",
+      "english": "Hujayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيرة",
+      "english": "Khayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الدرداء",
+      "english": "Umm al-Darda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

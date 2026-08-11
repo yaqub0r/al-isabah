@@ -1,0 +1,154 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012170",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12170,
+  "title": {
+    "english": "Umm 'Ata",
+    "arabic_observed": "أم عطاء:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012170-segment-0001",
+      "volume": 8,
+      "scan_page": 437,
+      "printed_page": 436,
+      "reader_page": 4349,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4349",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0437:a5a5a73800a82aa8",
+      "arabic": "١٢١٧٠- أم عطاء:\nمولاة الزّبير بن العوّام «٤» . قال أبو عمر: لها صحبة ورواية.\nقلت: أما الصّحبة فصحيحة، وأما الرواية فقد روت عن مولاها الزّبير.\nروى حديثها أحمد، من طريق ابن إسحاق، عن عبد اللَّه بن عطاء مولى الزّبير بن العوّام، عن أمّه وجدّته أم عطاء، قالت: لكأنا ننظر إلى الزّبير بن العوّام حين أتانا على بغلة بيضاء، فقال: يا أم\n(١) أسد الغابة ت (٧٥٣٨)، الاستيعاب ت (٣٦٤٤)، تجريد أسماء الصحابة ٢/ ٣٥٩.\n(٢) أسد الغابة ت (٧٥٣٩)، تجريد أسماء الصحابة ٢/ ٣٢٩.\n(٣) أخرجه الحاكم في المستدرك ٤/ ٢٦٢ عن أم عصمة العوصية ... الحديث وقال الحاكم صحيح الإسناد ولم يخرجاه وأقره الذهبي وأورده المنذري في الترغيب ٢/ ٤٦٩ والمتقي الهندي في كنز العمال حديث رقم ٢٣٥.\n(٤) أسد الغابة ت (٧٥٤٠)، الاستيعاب ت (٣٦٤٥) .",
+      "english": "12170—Umm 'Ata\n\nA client of al-Zubayr ibn al-'Awwam. [4] Abu 'Umar said: “She had companionship and transmitted reports.”\n\nI say: As for her companionship, that is sound; as for transmission, she narrated from her patron al-Zubayr.\n\nAhmad transmitted her hadith by way of Ibn Ishaq, from 'Abdullah ibn 'Ata, the client of al-Zubayr ibn al-'Awwam, from his mother and his grandmother Umm 'Ata, who said: “It is as though we can still see al-Zubayr ibn al-'Awwam when he came to us on a white mule and said, ‘O Umm—’”\n\n[1] Usd al-Ghaba, entry 7538; al-Isti'ab, entry 3644; al-Tajrid, 2/359.\n\n[2] Usd al-Ghaba, entry 7539; al-Tajrid, 2/329.\n\n[3] Al-Hakim transmitted it in al-Mustadrak, 4/262, from Umm 'Isma al-'Awsiyya … the hadith. Al-Hakim said, “Its chain of transmission is sound, though neither of them transmitted it,” and al-Dhahabi concurred with him. Al-Mundhiri cited it in al-Targhib, 2/469, and al-Muttaqi al-Hindi in Kanz al-'Ummal, hadith no. 235.\n\n[4] Usd al-Ghaba, entry 7540; al-Isti'ab, entry 3645.",
+      "arabic_sha256": "a9602b9fb2bdddd9a5c5d32decd061dc072c5ea50b2f82202eb2fcf92e14e4f7",
+      "english_sha256": "54fe97572ce0f7eefded945d107a7fb5ea5974dd9fdc94c926b88b305c6c5db0",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012170-segment-0002",
+      "volume": 8,
+      "scan_page": 438,
+      "printed_page": 437,
+      "reader_page": 4350,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4350",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0438:6eab152f2fc72c7e",
+      "arabic": "عطاء، إن رسول اللَّه ﵌ قد نهى المسلمين أن يأكلوا من لحوم نسكهم فوق ثلاث، فقالت: كيف نصنع بما أهدي لنا؟ فقال: «أمّا ما أهدي لكم فشأنكم» .",
+      "english": "“O Umm Ata, the Messenger of Allah, peace and blessings be upon him, has forbidden Muslims to eat the meat of their sacrificial offerings for more than three days.” She asked, “What should we do with what has been given to us?” He replied, “As for what has been given to you, that is your affair.”",
+      "arabic_sha256": "2f4e467a1276c5304a7eedb8a2d18b8a69ceb3989f0384b5a029cb3be94a021c",
+      "english_sha256": "236a7556dcc68cb211683386af20256e864a4f61a3736c7b5926feaa09cda758",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عصمة العوصية",
+      "english": "Umm 'Isma al-'Awsiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم عطاء",
+      "english": "Umm 'Ata",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن العوام",
+      "english": "al-Zubayr ibn al-'Awwam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عطاء",
+      "english": "'Abdullah ibn 'Ata",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "المنذري",
+      "english": "al-Mundhiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الترغيب",
+      "english": "al-Targhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-'Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم عطاء",
+      "english": "Umm Ata",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

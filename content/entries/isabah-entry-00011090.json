@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011090",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11090,
+  "title": {
+    "english": "Khudama bint Wahb al-Asadiyya",
+    "arabic_observed": "خدامة بنت وهب الأسدية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011090-segment-0001",
+      "volume": 8,
+      "scan_page": 100,
+      "printed_page": 99,
+      "reader_page": 4012,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4012",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0100:b5fe86f8a8ec1ea9",
+      "arabic": "١١٠٩٠- خدامة بنت وهب الأسدية ،\nتقدمت في جدامة في حرف الجيم «٣»، وقيل:\nهما واحدة.",
+      "english": "11090—Khudama bint Wahb al-Asadiyya\n\nShe appeared previously as Judama under the letter jim, (3) and it is said that the two are one and the same woman.",
+      "arabic_sha256": "273f3a5c19fdd490280350a03607fbdbf39fc90c0979f011ffa050a4b544f191",
+      "english_sha256": "6bc1dc3b814d97ec7f4d0f40afbefae113adcfcdbe395765c9723ac6cc5aa335",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خدامة بنت وهب الأسدية",
+      "english": "Khudama bint Wahb al-Asadiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "جدامة",
+      "english": "Judama bint Wahb al-Asadiyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

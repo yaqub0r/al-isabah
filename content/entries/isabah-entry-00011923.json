@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011923",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11923,
+  "title": {
+    "english": "Umm Thabit bint Sinan",
+    "arabic_observed": "أم ثابت بنت سنان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011923-segment-0001",
+      "volume": 8,
+      "scan_page": 367,
+      "printed_page": 366,
+      "reader_page": 4279,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4279",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0367:8ad674b3a8eee04d",
+      "arabic": "١١٩٢٣- أم ثابت بنت سنان\nبن عبيد الأنصاريّة «٦» .\nذكرها ابن حبيب] «٧» .",
+      "english": "11923—Umm Thabit bint Sinan\n\nibn Ubayd al-Ansariyya. (6)\n\n[Ibn Habib mentioned her]. (7)",
+      "arabic_sha256": "132f45588eb6ab967f00bffd9d3ac0dffbbd07fc90b631ec697df0a2b902b6a5",
+      "english_sha256": "5d0f7775973f59c340d18eaf4d9e50593947b76b56a03559e0b3caa3771c75c3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت",
+      "english": "Thabit ibn Qays ibn Shammas",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011266",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11266,
+  "title": {
+    "english": "Zaynab bint al-Zubayr ibn al-Awwam ibn Khuwaylid al-Asadiyya",
+    "arabic_observed": "زينب بنت الزبير"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011266-segment-0001",
+      "volume": 8,
+      "scan_page": 167,
+      "printed_page": 166,
+      "reader_page": 4079,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4079",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0167:281b962cb294b34a",
+      "arabic": "١١٢٦٦- زينب بنت الزبير\nبن العوام بن خويلد الأسدية، أمها أم كلثوم بنت عقبة بن أبي معيط.\nوكان تزويج الزبير لأمها بعد الهجرة، وتفارقا في عهد النبي ﷺ بعد أن ولدت.\nقال ابن سعد: أخبرنا يزيد بن هارون، عن عمرو بن ميمون، عن أبيه: قال: كانت أمّ كلثوم بنت عقبة تحت الزبير، وكان فيه شدة على النساء، وكانت له كارهة، فكانت تسأله الطلاق فيأبى عليها حتى ضربها الطلق وهو لا يعلم، فألحّت عليه وهو يتوضأ للصلاة، فطلقها تطليقة، ثم خرجت فوضعت فأدركه إنسان من أهلها، فأخبره أنها قد وضعت، فقال: خدعتني خدعها اللَّه! فأتى النبيّ ﷺ فذكر ذلك له، فقال: «قد سبق فيها كتاب اللَّه، فاخطبها»، فقال: لا ترجع أبدا.\nوقد تقدم في ترجمة أم كلثوم أن ابن إسحاق سمى بنتها من الزبير زينب.",
+      "english": "11266—Zaynab bint al-Zubayr ibn al-Awwam ibn Khuwaylid al-Asadiyya\n\nHer mother was Umm Kulthum bint Uqba ibn Abi Mu'ayt.\n\nAl-Zubayr married her mother after the Hijra, and they separated during the lifetime of the Prophet—may Allah bless him and grant him peace—after she had given birth.\n\nIbn Sa'd said: Yazid ibn Harun informed us, from Amr ibn Maymun, from his father, who said: Umm Kulthum bint Uqba was married to al-Zubayr. He was harsh toward women, and she disliked him. She would ask him for a divorce, but he refused her, until labor pains seized her without his knowing. She persisted in asking him while he was performing ablution for prayer, and he divorced her with a single pronouncement. She then went out and gave birth. A man from her family caught up with him and told him that she had given birth. He said, “She outwitted me—may Allah outwit her!” He went to the Prophet—may Allah bless him and grant him peace—and mentioned this to him. He said, “Allah's ordinance concerning her has already taken effect, so seek her hand in marriage.” He replied, “She will never return.”\n\nIt was stated previously in the biography of Umm Kulthum that Ibn Ishaq named her daughter by al-Zubayr as Zaynab.",
+      "arabic_sha256": "e3a07af0f009eb3eabb052978c99c7ec795a419c37202f395f861189e81f8d05",
+      "english_sha256": "244d4379d9d4987fa69bbe3127691dfe8cb0ce63639d3e3ad1ceac03cc42232b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زينب",
+      "english": "Rabiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت الزبير بن العوام بن خويلد الأسدية",
+      "english": "Zaynab bint al-Zubayr ibn al-Awwam ibn Khuwaylid al-Asadiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr ibn al-Awwam ibn Khuwaylid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم بنت عقبة بن أبي معيط",
+      "english": "Umm Kulthum bint Uqba ibn Abi Mu'ayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهجرة",
+      "english": "Hijra",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن هارون",
+      "english": "Yazid ibn Harun",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن ميمون",
+      "english": "Amr ibn Maymun",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

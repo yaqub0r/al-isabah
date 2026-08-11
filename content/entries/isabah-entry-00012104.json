@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012104",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12104,
+  "title": {
+    "english": "Umm Shihab al-Ghanawiyya",
+    "arabic_observed": "أم شهاب الغنويّة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012104-segment-0001",
+      "volume": 8,
+      "scan_page": 421,
+      "printed_page": 420,
+      "reader_page": 4333,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4333",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0421:706983acd6db7d04",
+      "arabic": "١٢١٠٤- أم شهاب الغنويّة\nذكرها ابن سعيد في «المؤتلف والمختلف» في ترجمة الأعرابي، واسمه عبد اللَّه بن أحمد، وساق بسنده إليه، قال: حدّثتنا ماوية بنت ماجد، حدّثتني مولاتي أم شهاب الغنويّة:\nأتيت النّبيّ ﵌ فأمر لي بوسق من شعير وكساني كساء. وذكرها الرّشاطي وقال: لم يذكرها أبو عمر، ولا ابن فتحون.",
+      "english": "12104—Umm Shihab al-Ghanawiyya\n\nIbn Sa'id mentioned her in al-Mu'talif wa-l-Mukhtalif, in the biographical notice of al-A'rabi, whose name was Abd Allah ibn Ahmad. He traced his chain of transmission to al-A'rabi, who said: “Mawiya bint Majid related to us: My patroness, Umm Shihab al-Ghanawiyya, related to me:\n\n‘I came to the Prophet, may Allah bless him and grant him peace, and he ordered that a wasq of barley be given to me and clothed me with a cloak.’”\n\nAl-Rushati also mentioned her and said: “Neither Abu Umar nor Ibn Fathun mentioned her.”",
+      "arabic_sha256": "cf79cbc044aed20a2197c318dc37081784d4b841accb896ad76dbfb0d66fbfe7",
+      "english_sha256": "34e597af765b53dd3ca453e6b44430a91e53e40cc3fc82fbc8dbbbaf66d50c8a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم شهاب الغنويّة",
+      "english": "Umm Shihab al-Ghanawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعيد",
+      "english": "Ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "المؤتلف والمختلف",
+      "english": "al-Mu'talif wa-l-Mukhtalif",
+      "kind": "work"
+    },
+    {
+      "arabic": "الأعرابي، واسمه عبد اللَّه بن أحمد",
+      "english": "Abd Allah ibn Ahmad al-A'rabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ماوية بنت ماجد",
+      "english": "Mawiya bint Majid",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرّشاطي",
+      "english": "al-Rushati",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن فتحون",
+      "english": "Ibn Fathun",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

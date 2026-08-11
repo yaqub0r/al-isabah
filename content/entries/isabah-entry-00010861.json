@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010861",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10861,
+  "title": {
+    "english": "Umayma bint 'Abd Allah ibn Bijad",
+    "arabic_observed": "أميمة بنت عبد اللَّه بن بجاد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010861-segment-0001",
+      "volume": 8,
+      "scan_page": 34,
+      "printed_page": 33,
+      "reader_page": 3946,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3946",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0034:68350d931ff8e07d",
+      "arabic": "١٠٨٦١- أميمة بنت عبد اللَّه بن بجاد\nبن عمير بن الحارث بن خارجة بن سعد بن تميم بن مرة، هي بنت رقيقة- تقدمت. نسبها أبو علي بن السكن.",
+      "english": "10861—Umayma bint 'Abd Allah ibn Bijad\n\nibn 'Umayr ibn al-Harith ibn Kharija ibn Sa'd ibn Tamim ibn Murra. She is the daughter of Ruqayqa; she was mentioned previously. Abu 'Ali ibn al-Sakan gave her lineage.",
+      "arabic_sha256": "c481770c0557a3b5e5839ac0f3d74327e4dd23be2b3b2eabd2987efa79287dc9",
+      "english_sha256": "4b78582f51d8aee9cb1be91e188a23930621e74bcbae8c985f88898f223b832e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أميمة",
+      "english": "Umayma bint Subayh",
+      "kind": "person"
+    },
+    {
+      "arabic": "رقيقة",
+      "english": "Ruqayqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو علي بن السكن",
+      "english": "Abu 'Ali ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

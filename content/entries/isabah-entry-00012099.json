@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012099",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12099,
+  "title": {
+    "english": "Umm Sharik bint Jabir [6]",
+    "arabic_observed": "أم شريك بنت جابر «٦»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012099-segment-0001",
+      "volume": 8,
+      "scan_page": 416,
+      "printed_page": 415,
+      "reader_page": 4328,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4328",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0416:f7659d7718f758b0",
+      "arabic": "١٢٠٩٩- أم شريك بنت جابر «٦»\n: الغفارية. قال أبو عمر: ذكرها أحمد بن صالح في أزواج النّبيّ ﵌ اللاتي لم يدخل بهن. وقال ابن الأثير: ذكرها ابن حبيب في المبايعات.",
+      "english": "12099—Umm Sharik bint Jabir [6]\n\nThe Ghifari woman. Abu Umar said: Ahmad ibn Salih mentioned her among the wives of the Prophet—may Allah bless him and grant him peace—with whom he did not consummate the marriage. Ibn al-Athir said: Ibn Habib mentioned her among the women who gave the pledge of allegiance.",
+      "arabic_sha256": "5c40e9a880e87df80b16eefd71744243e39798fa7b64c7af1da6e64d1ef6f6ea",
+      "english_sha256": "210b205844bd24feee42bea54d386efa87b478f87b3ef302a57b6b259c89b7ff",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم شريك بنت جابر",
+      "english": "Umm Sharik bint Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد بن صالح",
+      "english": "Ahmad ibn Salih",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

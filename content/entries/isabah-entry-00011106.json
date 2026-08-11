@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011106",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11106,
+  "title": {
+    "english": "Khulaysa bint Qays(1)",
+    "arabic_observed": "خليسة بنت قيس «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011106-segment-0001",
+      "volume": 8,
+      "scan_page": 108,
+      "printed_page": 107,
+      "reader_page": 4020,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4020",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0108:65680e5dda584248",
+      "arabic": "١١١٠٦- خليسة بنت قيس «١»\nبن ثابت بن خالد الأشجعية، من بني دهمان.\nكانت زوج البراء بن معرور، بايعت، ولها رواية. وهي أمّ بشر بن البراء، قاله ابن سعد، وأخرج من رواية أم بشر بن البراء بن معرور أحاديث.",
+      "english": "11106—Khulaysa bint Qays(1)\n\nibn Thabit ibn Khalid, al-Ashja'iyya, of Banu Duhman.\n\nShe was the wife of al-Bara' ibn Ma'rur. She pledged allegiance and transmitted reports. She was the mother of Bishr ibn al-Bara'. Ibn Sa'd stated this, and he also transmitted hadiths narrated by Umm Bishr, mother of Bishr ibn al-Bara' ibn Ma'rur.",
+      "arabic_sha256": "7c1762ac929c1886d5015097061cbe7feafc6ba150f5613c0bce80cea7be5f3f",
+      "english_sha256": "56a31c2de68bb5f053937645eae4be29bde493c7caa0addc07de0a441e196e66",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأشجعية",
+      "english": "Ashja'",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بنو دهمان",
+      "english": "Banu Duhman",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "البراء بن معرور",
+      "english": "al-Bara' ibn Ma'rur",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشر بن البراء بن معرور",
+      "english": "Bishr ibn al-Bara' ibn Ma'rur",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم بشر",
+      "english": "Umm Bishr",
+      "kind": "person"
+    },
+    {
+      "arabic": "خليسة",
+      "english": "Khulaysa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

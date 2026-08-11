@@ -1,0 +1,189 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011890",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11890,
+  "title": {
+    "english": "Umm Ishaq al-Ghanawiyya.",
+    "arabic_observed": "أم إسحاق الغنويّة «٤» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011890-segment-0001",
+      "volume": 8,
+      "scan_page": 355,
+      "printed_page": 354,
+      "reader_page": 4267,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4267",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0355:96464c315376e6a0",
+      "arabic": "١١٨٩٠- أم إسحاق الغنويّة «٤» .\n(١) في هـ- زمعة.\n(٢) أسد الغابة ت (٧٣٦٠)، الاستيعاب ت (٣٥٧٣) .\n(٣) أسد الغابة ت (٧٣٦١)، الاستيعاب ت (٣٥٧٤) .\n(٤) أسد الغابة ت (٧٣٦٢)، الاستيعاب ت (٣٥٧٥)، الثقات ٣/ ٤٥٩، أعلام النساء ١/ ٣٣، بقي بن مخلد ٩٨٨، تعجيل المنفعة ص ٥٦١.",
+      "english": "11890—Umm Ishaq al-Ghanawiyya.\n\n(1) In manuscript H: “Zam'a.”\n\n(2) Usd al-Ghaba, biography no. 7360; al-Isti'ab, biography no. 3573.\n\n(3) Usd al-Ghaba, biography no. 7361; al-Isti'ab, biography no. 3574.\n\n(4) Usd al-Ghaba, biography no. 7362; al-Isti'ab, biography no. 3575; al-Thiqat, 3/459; A'lam al-Nisa', 1/33; Baqi ibn Makhlad, no. 988; Ta'jil al-Manfa'a, p. 561.",
+      "arabic_sha256": "8c5f986df5495135d928597ed6fabefe0c4502f29ca9da75964a22f289219b2e",
+      "english_sha256": "c5c2c5f3bb9b4ce2394c04909ae37805411b78a6612542f772157de56c657c4b",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011890-segment-0002",
+      "volume": 8,
+      "scan_page": 356,
+      "printed_page": 355,
+      "reader_page": 4268,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4268",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0356:c46459b8fafe19f0",
+      "arabic": "تقدم ذكر أول حديثها في ترجمة ولدها إسحاق في حرف الألف من الرّجال، وبقيته:\nفدخلت على رسول اللَّه ﵌ وهو يتوضّأ، قلت: يا رسول اللَّه وأنا أبكي: قتل إسحاق- تعني أخاها- فأخذ كفّا من ماء فنضحه في وجهي، قالت أم حكيم بنت دينار الرواية عنها: فلقد كانت تصيبها المصيبة العظيمة فترى الدّموع في عينها ولا تسيل على خدّها.\nوأخرج أحمد، من طريق أم حكيم بنت دينار أيضا، عن مولاتها أم إسحاق- أنها كانت عند رسول اللَّه ﵌، فأتى بقصعة من ثريد فأكلت معه، ومعه ذو اليدين، فناولها رسول اللَّه ﷺ عرقا، فقال: «يا أمّ إسحاق، أصيبي من هذا» «١»، فذكرت أني صائمة فنسيت، فقال ذو اليدين: الآن بعد ما شبعت. فقال النّبيّ ﵌:\n«إنّما هو رزق ساقه اللَّه إليك» «٢» .\nووقع لي عاليا: قرأته على الشّيخ أبي إسحاق التّنوخي- أنّ أحمد بن أبي طالب أخبرهم، أخبرنا ابن اللّيثي، أخبرنا أبو الوقت، أخبرنا أبو داود، أخبرنا ابن أعين، أخبرنا أبو إسحاق الشّامي، حدّثنا عبد بن حميد أبو عاصم، عن يسار بن عبد الملك، حدّثتني أم حكيم بنت دينار، عن مولاتها أم إسحاق، قالت: دخلت على رسول اللَّه ﵌ فأتى بخبز ولحم، فقال: «كلي»، فأكلت، ثم ناولني عرقا فرفعت إلى فيّ، فذكرت أني صائمة فبقيت يدي لا أستطيع أن أرفعها إلى فمي، ولا أستطيع أن أضعها، فقال النّبيّ ﵌: «ما لك يا أمّ إسحاق؟» قلت: يا رسول اللَّه، إني كنت صائمة. فقال:\nأتمّي صومك. فقال ذو اليدين: الآن حيث شبعت! فقال النّبي ﵌:\n«إنّما هو رزق ساقه اللَّه إليها» .",
+      "english": "The beginning of her hadith was mentioned previously in the biography of her son Ishaq, under the letter alif among the men. Its remainder is:\n\n“I entered upon the Messenger of Allah (may Allah bless him and grant him peace) while he was performing ablution. I said, weeping, ‘O Messenger of Allah, Ishaq has been killed’—meaning her brother. He took a handful of water and sprinkled it on my face.” Umm Hakim bint Dinar, who narrated from her, said: “A tremendous calamity would befall her, and tears could be seen in her eyes, but they would not run down her cheek.”\n\nAhmad also transmitted, by way of Umm Hakim bint Dinar, from her mistress Umm Ishaq, that she was with the Messenger of Allah (may Allah bless him and grant him peace) when a bowl of tharid was brought. She ate with him, while Dhu al-Yadayn was also with him. The Messenger of Allah (may Allah bless him and grant him peace) handed her a bone with meat on it and said, “O Umm Ishaq, eat some of this.”¹ She said: “I then remembered that I was fasting, for I had forgotten.” Dhu al-Yadayn said, “Now, after you have eaten your fill!” The Prophet (may Allah bless him and grant him peace) said:\n\n“It is only provision that Allah has brought to you.”²\n\nI obtained it through a high chain: I recited it to the shaykh Abu Ishaq al-Tanukhi—that Ahmad ibn Abi Talib informed them; Ibn al-Laythi informed us; Abu al-Waqt informed us; Abu Dawud informed us; Ibn A'yan informed us; Abu Ishaq al-Shami informed us; Abd ibn Humayd narrated to us: Abu Asim, from Yasar ibn Abd al-Malik: Umm Hakim bint Dinar narrated to me, from her mistress Umm Ishaq, who said: “I entered upon the Messenger of Allah (may Allah bless him and grant him peace), and bread and meat were brought. He said, ‘Eat,’ so I ate. Then he handed me a bone with meat on it. I lifted it toward my mouth, but then remembered that I was fasting. My hand remained suspended: I could neither raise it to my mouth nor put it down. The Prophet (may Allah bless him and grant him peace) said, ‘What is the matter with you, O Umm Ishaq?’ I said, ‘O Messenger of Allah, I had been fasting.’ He said:\n\n‘Complete your fast.’ Dhu al-Yadayn said, ‘Now that you have eaten your fill!’ The Prophet (may Allah bless him and grant him peace) said:\n\n‘It is only provision that Allah has brought to her.’”",
+      "arabic_sha256": "10c5f1117f124603156e989aad994bfbbce1c21880fd9bf06794cd39dc384181",
+      "english_sha256": "5159a54b1b488106e0c170444b6a3a7c0d267c22a9365a5a52a2eb7b872ff486",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم إسحاق الغنوية",
+      "english": "Umm Ishaq al-Ghanawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "زمعة",
+      "english": "Zam'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "تعجيل المنفعة",
+      "english": "Ta'jil al-Manfa'a",
+      "kind": "work"
+    },
+    {
+      "arabic": "إسحاق",
+      "english": "Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم حكيم بنت دينار",
+      "english": "Umm Hakim bint Dinar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم إسحاق",
+      "english": "Umm Ishaq al-Ghanawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ذو اليدين",
+      "english": "Dhu al-Yadayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "النّبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو إسحاق التّنوخي",
+      "english": "Abu Ishaq al-Tanukhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد بن أبي طالب",
+      "english": "Ahmad ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن اللّيثي",
+      "english": "Ibn al-Laythi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الوقت",
+      "english": "Abu al-Waqt",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أعين",
+      "english": "Ibn A'yan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو إسحاق الشّامي",
+      "english": "Abu Ishaq al-Shami",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد بن حميد",
+      "english": "Abd ibn Humayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عاصم",
+      "english": "Abu Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "يسار بن عبد الملك",
+      "english": "Yasar ibn Abd al-Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم",
+      "english": "Umm Hakim bint Dinar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

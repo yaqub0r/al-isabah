@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011381",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11381,
+  "title": {
+    "english": "al-Shifa bint Awf (2)",
+    "arabic_observed": "الشفاء بنت عوف «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011381-segment-0001",
+      "volume": 8,
+      "scan_page": 204,
+      "printed_page": 203,
+      "reader_page": 4116,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4116",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0204:cf869f69d7d0f295",
+      "arabic": "١١٣٨١- الشفاء بنت عوف «٢»\nأخت عبد الرحمن بن عوف.\nقال الزّبير: هاجرت مع أختها عاتكة، وعاتكة هي أم المسور، وقيل بل أم المسور هي الشفاء. حكى ذلك أبو أحمد العسكريّ.",
+      "english": "11381 — al-Shifa bint Awf (2)\n\nThe sister of Abd al-Rahman ibn Awf.\n\nal-Zubayr said: She emigrated with her sister Atika. Atika was the mother of al-Miswar, though it is also said that al-Shifa was the mother of al-Miswar. Abu Ahmad al-Askari related this.",
+      "arabic_sha256": "631b91a6aed60b7df0de017777c59dc5c5e861a9366bb8d3d255aa8a2ceaaced",
+      "english_sha256": "6f8cd6c01c96ca3e09f75dbce470932e06cd862af8f57ad635f301c091e4e422",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عوف",
+      "english": "Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "عوف",
+      "english": "Awf ibn Abd al-Rahman ibn al-Harith ibn Zuhra",
+      "kind": "person"
+    },
+    {
+      "arabic": "عوف",
+      "english": "Awf ibn Abd Awf ibn Abd al-Rahman ibn al-Harith ibn Zuhra",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشفاء بنت عوف",
+      "english": "al-Shifa bint Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاتكة",
+      "english": "Atika",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسور",
+      "english": "al-Miswar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أحمد العسكري",
+      "english": "Abu Ahmad al-Askari",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

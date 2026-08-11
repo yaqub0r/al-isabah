@@ -1,0 +1,664 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011902",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11902,
+  "title": {
+    "english": "Umm Ayman (2):",
+    "arabic_observed": "أم أيمن «٢»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011902-segment-0001",
+      "volume": 8,
+      "scan_page": 359,
+      "printed_page": 358,
+      "reader_page": 4271,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4271",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0359:6351033704f285eb",
+      "arabic": "١١٩٠٢- أم أيمن «٢»:\nمولاة النبيّ ﵌ وحاضنته.\nقال أبو عمر: اسمها بركة بنت ثعلبة بن عمرو بن حصن بن مالك بن سلمة بن عمرو بن النّعمان، وكان يقال لها أم الظّباء.\n(١) أسد الغابة ت (٧٣٧٠)، الاستيعاب ت (٣٥٧٨)، تجريد أسماء الصحابة ٢/ ٣١٢.\n(٢) أسد الغابة ت (٧٣٧١)، الاستيعاب ت (٣٥٧٩)، تجريد أسماء الصحابة ٢/ ٣١٣ تقريب التهذيب ٢/ ٦١٩ تهذيب التهذيب ١٢/ ٤٥٩، الكاشف ٣/ ٤٨٥، تهذيب الكمال ٣/ ١٧٠٠، خلاصة تذهيب ٣/ ٣٩٦، حلية الأولياء ٢/ ٦٧، تلقيح فهوم أهل الأثر ٣١٨، ٣٧٢ بقي بن مخلد ٣١٠، الجرح والتعديل ٩/ ٤٦١، شذرات الذهب ١/ ١٥، العبر ١/ ١٣، المعارف ١٤٤.",
+      "english": "11902—Umm Ayman (2):\n\nThe freedwoman and nurse of the Prophet (may Allah bless him and grant him peace).\n\nAbu Umar said: Her name was Baraka bint Tha'laba ibn Amr ibn Hisn ibn Malik ibn Salama ibn Amr ibn al-Nu'man, and she was called Umm al-Ziba'.\n\n(1) Usd al-Ghaba, entry (7370); al-Isti'ab, entry (3578); al-Tajrid, 2/312.\n\n(2) Usd al-Ghaba, entry (7371); al-Isti'ab, entry (3579); al-Tajrid, 2/313; Taqrib al-Tahdhib, 2/619; Tahdhib al-Tahdhib, 12/459; al-Kashif, 3/485; Tahdhib al-Kamal, 3/1700; Khulasat Tadhhib, 3/396; Hilyat al-Awliya, 2/67; Talqih Fuhum Ahl al-Athar, 318, 372; Baqi ibn Makhlad, 310; al-Jarh wa-al-Ta'dil, 9/461; Shadharat al-Dhahab, 1/15; al-Ibar, 1/13; al-Ma'arif, 144.",
+      "arabic_sha256": "092895619d79d31e15c2b964edd4f4c1b9ed5fcc391d0f9e0799a1d5122c732d",
+      "english_sha256": "28a678004b8ff3fa50cfdcb257bf009eb1561f29db791d80c7eb67a04551605a",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011902-segment-0002",
+      "volume": 8,
+      "scan_page": 360,
+      "printed_page": 359,
+      "reader_page": 4272,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4272",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0360:0f3b121738635999",
+      "arabic": "وقال ابن أبي خيثمة: حدّثنا سليمان بن أبي شيخ، قال: أم أيمن اسمها بركة، وكانت لأمّ رسول اللَّه ﵌، وكان رسول اللَّه ﷺ يقول: «أمّ أيمن أمّي بعد أمّي» .\nوقال أبو نعيم: قيل: وكانت لأخت خديجة، فوهبتها للنبيّ ﵌.\nوقال ابن سعد: قالوا: كان ورثها عن أمّه، فأعتق رسول اللَّه ﵌ أم أيمن حين تزوّج خديجة، وتزوّج عبيد بن زيد، من بني الحارث بن الخزرج، أمّ أيمن، فولدت له أيمن فصحب النبيّ ﵌، فاستشهد يوم خيبر، وكان زيد بن حارثة لخديجة فوهبته لرسول اللَّه ﵌، فأعتقه وزوّجه أم أيمن بعد النبوّة فولدت له أسامة.\nثم أسند عن الواقديّ، عن طريق شيخ من بني سعد بن بكر، قال: كان رسول اللَّه ﵌ يقول لأم أيمن: «يا أمّه» . وكان إذا نظر إليها يقول «هذه بقيّة أهل بيتي» .\nوقال ابن سعد: خبرنا أبو أمامة عن جرير بن حازم: سمعت عثمان بن القاسم يقول:\nلما هاجرت أم أيمن أمست «١» بالمنصرف ودون الرّوحاء فعطشت وليس معها ماء وهي صائمة، فأجهدها العطش، فدلّي عليها من السّماء دلو من ماء برشاء أبيض، فأخذته فشربته حتى رويت، فكانت تقول: ما أصابني بعد ذلك عطش، ولقد تعرضت للعطش بالصّوم في الهواجر، فما عطشت.\nوأخرجه ابن السّكن، من طريق هشام بن حسان، عن عثمان بنحوه، وقال في روايته:\nخرجت مهاجرة من مكّة إلى المدينة وهي ماشية ليس معها زاد، وقال فيه: فلما غابت الشمس إذ أنا بإناء معلّق عند رأسي، وقالت فيه: ولقد كنت بعد ذلك أصوم في اليوم الحار، ثم أطوف في الشمس كي أعطش فما عطشت بعد.\nأخبرنا عبد اللَّه «٢» بن موسى، أخبرنا فضيل بن مرزوق، عن سفيان بن عيينة، قال: كانت أم أيمن تلطف النبيّ ﵌ وتقدّم عليه، فقال: «من سرّه أن يتزوّج امرأة من أهل الجنّة فليتزوّج أمّ أيمن» «٣» .\nفتزوّجها زيد بن حارثة.\n(١) في هـ- أمسية.\n(٢) في هـ- عبيد اللَّه.\n(٣) أخرجه ابن سعد في الطبقات الكبرى ٨/ ١٦٢ وأورده المتقي الهندي في كنز العمال حديث رقم ٣٤٤١٦ وعزاه لابن سعد عن سفيان بن عقبة مرسلا.",
+      "english": "Ibn Abi Khaythama said: Sulayman ibn Abi Shaykh related to us, saying: Umm Ayman's name was Baraka. She belonged to the mother of the Messenger of Allah (may Allah bless him and grant him peace), and the Messenger of Allah (may Allah bless him and grant him peace) used to say, “Umm Ayman is my mother after my mother.”\n\nAbu Nu'aym said: It is said that she belonged to Khadijah's sister, who gave her to the Prophet (may Allah bless him and grant him peace).\n\nIbn Sa'd said: They said that he had inherited her from his mother. The Messenger of Allah (may Allah bless him and grant him peace) freed Umm Ayman when he married Khadijah. 'Ubayd ibn Zayd, of the Banu al-Harith ibn al-Khazraj, married Umm Ayman, and she bore him Ayman, who accompanied the Prophet (may Allah bless him and grant him peace) and was then martyred on the day of Khaybar. Zayd ibn Haritha belonged to Khadijah, and she gave him to the Messenger of Allah (may Allah bless him and grant him peace), who freed him and, after the commencement of his prophethood, married him to Umm Ayman. She bore him Usama.\n\nHe then transmitted with an isnad from al-Waqidi, by way of a shaykh of the Banu Sa'd ibn Bakr, who said: The Messenger of Allah (may Allah bless him and grant him peace) used to say to Umm Ayman, “O Mother!” Whenever he looked at her, he would say, “This is the remnant of my household.”\n\nIbn Sa'd said: Abu Umama informed us, from Jarir ibn Hazim, who said: I heard 'Uthman ibn al-Qasim say: When Umm Ayman emigrated, evening overtook her[1] at al-Munsaraf, short of al-Rawha. She became thirsty, having no water with her, while she was fasting. Thirst afflicted her severely, and a bucket of water, suspended by a white rope, was lowered to her from the sky. She took it and drank until she was quenched. She used to say, “No thirst ever befell me after that. I would deliberately expose myself to thirst by fasting during the midday heats, but I never became thirsty.”\n\nIbn al-Sakan also transmitted it by way of Hisham ibn Hassan, from 'Uthman, with similar wording. In his version it says: “I set out on foot as an emigrant from Mecca to Medina, with no provisions.” It also says: “When the sun had set, behold, there was a vessel hanging beside my head.” And in it she said: “Afterward I would fast on a hot day and then walk about in the sun so that I might become thirsty, but I never became thirsty thereafter.”\n\n'Abd Allah[2] ibn Musa informed us: Fudayl ibn Marzuq informed us, from Sufyan ibn 'Uyayna, who said: Umm Ayman used to treat the Prophet (may Allah bless him and grant him peace) tenderly and would come to him. He said, “Whoever would be pleased to marry a woman from among the people of Paradise, let him marry Umm Ayman.”[3]\n\nSo Zayd ibn Haritha married her.\n\n[1] In manuscript H: “amsiyya.”\n\n[2] In manuscript H: “'Ubayd Allah.”\n\n[3] Ibn Sa'd transmitted it in al-Tabaqat, 8/162. Al-Muttaqi al-Hindi cited it in Kanz al-'Ummal, hadith no. 34416, and attributed it to Ibn Sa'd, from Sufyan ibn 'Uqba, as a mursal report.",
+      "arabic_sha256": "0f3b121738635999de14696c5d0eaec8d88e5ffb1efbb374d219afc1ffe9d755",
+      "english_sha256": "40ce92098cf0a70ef840c0f672d6c01dd1f94e6390720d2e2a9d71bbcd453c4e",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011902-segment-0003",
+      "volume": 8,
+      "scan_page": 361,
+      "printed_page": 360,
+      "reader_page": 4273,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4273",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0361:ab99a3fb7ccc76b0",
+      "arabic": "وأخرج البغويّ، وابن السّكن، من طريق سعيد بن عبد العزيز، عن مكحول، عن أم أيمن- وكانت حاضنة النبيّ ﵌ أنّ النبيّ ﵌ قال لبعض أهله: «إيّاك والخمر ...» الحديث.\nقال ابن السكن: هذا مرسل.\nوأخرج البخاريّ في «تاريخه» ومسلم، وابن السّكن، من طريق الزّهري، قال: كان من شأن أم أيمن أنها كانت وصيفة لعبد اللَّه بن عبد المطّلب والد النّبي ﵌، وكانت من الحبشة، فلما ولدت آمنة رسول اللَّه ﵌ بعد ما توفي أبوه كانت أمّ أيمن تحضنه حتى كبر، ثم أنكحها زيد بن حارثة- لفظ ابن السّكن.\nوأخرج أحمد، والبخاريّ أيضا، وابن سعد، من طريق سليمان التيميّ عن أنس- أن الرجل كان يجعل للنّبيّ ﵌ النخلات حتى فتحت عليه قريظة والنّضير، فجعل يردّ بعد ذلك، فكلمني أهلي أن أسأله الّذي كانوا أعطوه أو بعضه، وكان أعطاه لأم أيمن، فسألته فأعطانيه، فجاءت أم أيمن فجعلت تلوّح بالثّوب وتقول: كلا واللَّه لا يعطيكهن، وقد أعطانيهن، فقال النبيّ ﵌: «لك كذا وكذا» . وتقول:\nكلّا حتى أعطاها، حسبته قال: عشرة أمثاله أو قريبا من عشرة أمثاله.\nوأخرج ابن السّكن، من طريق عبد الملك بن حصين، عن نافع بن عطاء، عن الوليد بن عبد الرحمن، عن أم أيمن، قالت: كان للنبيّ ﵌ فخّارة يبول فيها باللّيل، فكنت إذا أصبحت صببتها، فنمت ليلة وأنا عطشانة، فغلطت فشربتها، فذكرت ذلك للنّبيّ ﵌ فقال: «إنّك لا تشتكين بطنك بعد هذا» .\nقلت: وهذا يحتمل أن تكون قصّة أخرى غير القصّة التي اتفقت لبركة خادم أم حبيبة كما تقدّم في ترجمتها، لكن ادّعى ابن السّكن أنّ بركة خادم أم حبيبة كانت تكنى أيضا أم أيمن أخذا من هذا الحديث، والعلم عند اللَّه تعالى.\nوأسند ابن السّكن، من طريق سليمان بن المغيرة، عن ثابت، عن أنس، قال: كان النبيّ ﵌ يدخل على أم أيمن فقرّبت إليه لبنا فإمّا كان صائما وإما قال:\n«لا أريد»، فأقبلت تضاحكه، فلما كان بعد وفاة النبيّ ﵌ قال أبو بكر لعمر: انطلق بنا نزر أم أيمن كما كان رسول اللَّه ﵌ يزورها، فلما دخلا عليها بكت، فقالا: ما يبكيك؟ فما عند اللَّه خير لرسوله.\nقالت: أبكي أنّ وحي السماء انقطع، فهيّجتهما على البكاء، فجعلت تبكي، ويبكيان معها.",
+      "english": "Al-Baghawi and Ibn al-Sakan transmitted, through Sa'id ibn 'Abd al-'Aziz, from Makhul, from Umm Ayman—who was the caretaker of the Prophet (may Allah bless him and grant him peace)—that the Prophet (may Allah bless him and grant him peace) said to one of his household: “Beware of wine…” [and the rest of] the hadith.\n\nIbn al-Sakan said: This is mursal.\n\nAl-Bukhari, in his al-Tarikh, Muslim, and Ibn al-Sakan transmitted, through al-Zuhri, who said: Part of the account of Umm Ayman is that she was a maidservant of 'Abd Allah ibn 'Abd al-Muttalib, the father of the Prophet (may Allah bless him and grant him peace), and she was from Abyssinia. When Amina gave birth to the Messenger of Allah (may Allah bless him and grant him peace), after his father had died, Umm Ayman cared for him until he grew up. Then he gave her in marriage to Zayd ibn Haritha. This is the wording of Ibn al-Sakan.\n\nAhmad, al-Bukhari as well, and Ibn Sa'd transmitted, through Sulayman al-Taymi, from Anas, that a man would assign some date palms to the Prophet (may Allah bless him and grant him peace), until Qurayza and al-Nadir were conquered for him. Thereafter, he began returning them. My family asked me to request from him what they had given him, or part of it, but he had given it to Umm Ayman. I asked him, and he gave it to me. Umm Ayman then came, waving the cloth and saying: “No, by Allah! He shall not give them to you when he has already given them to me!” The Prophet (may Allah bless him and grant him peace) said: “You shall have such-and-such and such-and-such.” But she kept saying, “No!” until he gave her—I think he said—ten times their amount, or nearly ten times their amount.\n\nIbn al-Sakan transmitted, through 'Abd al-Malik ibn Husayn, from Nafi' ibn 'Ata', from al-Walid ibn 'Abd al-Rahman, from Umm Ayman, who said: The Prophet (may Allah bless him and grant him peace) had an earthenware vessel in which he would urinate at night. In the morning, I would pour it out. One night I went to sleep while thirsty, and by mistake I drank it. I mentioned that to the Prophet (may Allah bless him and grant him peace), and he said: “You will never suffer a complaint of your stomach after this.”\n\nI say: It is possible that this was another incident, distinct from the incident that befell Baraka, the servant of Umm Habiba, as previously related in her biographical notice. Ibn al-Sakan, however, claimed that Baraka, the servant of Umm Habiba, was also given the kunya Umm Ayman, basing this upon this hadith. Knowledge rests with Allah Most High.\n\nIbn al-Sakan related with an isnad, through Sulayman ibn al-Mughira, from Thabit, from Anas, who said: The Prophet (may Allah bless him and grant him peace) used to visit Umm Ayman. She brought him some milk, but either he was fasting or he said, “I do not want it.” She then began jesting with him. After the death of the Prophet (may Allah bless him and grant him peace), Abu Bakr said to 'Umar: “Let us go and visit Umm Ayman, just as the Messenger of Allah (may Allah bless him and grant him peace) used to visit her.” When they entered upon her, she wept. They said: “What makes you weep? What is with Allah is better for His Messenger.”\n\nShe said: “I weep because revelation from heaven has ceased.” She thereby stirred them to weeping; she continued to weep, and they wept with her.",
+      "arabic_sha256": "ab99a3fb7ccc76b0feee62dc59ecf63c928c24bae990912ce362d39d005579d8",
+      "english_sha256": "dfceabeb805b295d375fd8c2c5df2f5cdbad0f582810c07fc0ecb696fb556bee",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011902-segment-0004",
+      "volume": 8,
+      "scan_page": 362,
+      "printed_page": 361,
+      "reader_page": 4274,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4274",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0362:c23e271ac95b475c",
+      "arabic": "وأخرجه مسلم، وأحمد، وأبو يعلى، من هذا الوجه، وفيه: ولكني أبكي على الوحي الّذي رفع عنا.\nوقال الواقديّ: حضرت أم أيمن أحدا، وكانت تسقي الماء، وتداوي الجرحى، وشهدت خيبر.\nوفي مسند يحيى الحمّانيّ، وأخرجه أبو نعيم، من طريقه، عن شريك، عن منصور، عن عطاء، عن ابن أم أيمن، عن أيمن، قالت: قال رسول اللَّه ﵌ «لا يقطع السّارق إلّا في حجفة» «١»،\nوقوّمت في عهد رسول اللَّه ﵌ دينارا أو عشرة دراهم، وهذا في سنده مقال.\nوفي الطّبرانيّ، من طريق أبي عامر الخراز، عن أبي زيد المدني، قالت أم أيمن: قال رسول اللَّه ﵌: «ناولني الخمرة من المسجد» . قلت: إني حائض، قال: «إنّ حيضتك ليست في يدك» «٢»،\nوهذا فيه انقطاع.\nوأخرج ابن سعد بسند صحيح، عن طارق بن شهاب، قال: لمّا قبض النّبي ﵌ بكت أم أيمن، فقيل لها: «ما يبكيك؟ قالت: أبكي على خبر السّماء ...\nوفيه: لما قتل عمر بكت أم أيمن فقيل لها. فقالت: اليوم وهي الإسلام. وقال:\nحدّثنا عفّان، وقال أحمد: حدّثنا عبد الصّمد، قالا: حدّثنا حمّاد، عن ثابت، عن أنس- أن أم أيمن بكت حين مات النبيّ ﵌، فقيل لها. فقالت: إني واللَّه لقد علمت أنّ رسول اللَّه ﵌ يموت، ولكني إنما أبكي على الوحي إذا انقطع عنا من السّماء.\nوفي رواية عبد الصّمد الّذي رفع عنا: قال الواقديّ: ماتت أم أيمن في خلافة عثمان، وأخرج ابن السّكن بسند صحيح عن الزّهري أنها توفيت بعد رسول اللَّه صلى اللَّه\n(١) الحجفة والمجن والترس بمعنى. مجمع الزوائد ٦/ ٢٧٧.\n(٢) أخرجه مسلم في الصحيح ١/ ٢٤٥ عن عائشة بلفظة كتاب الحيض (٣) باب جواز غسل الحائض رأس زوجها ... (٣) حديث رقم (١١/ ٢٩٨) وأبو داود في السنن ١/ ١١٨ كتاب الطهارة باب الحائض تناول من المسجد حديث رقم ٢٦١ والترمذي في السنن ١/ ٢٤١ كتاب أبواب الطهارة باب ما جاء في الحائض تناول الشيء من المسجد حديث رقم ١٣٤ قال أبو عيسى حديث عائشة حديث حسن صحيح وابن ماجة في السنن ١/ ٢٠٧ كتاب الطهارة وسننها (١) باب الحائض تناول الشيء من المسجد (١٢٠) حديث رقم ٦٣٢ وأحمد في المسند ٢/ ٤٥، ٧٠، ٨٦، ١١٢، ٢٤٥ الدارميّ في السنن ١/ ١٩٧، وابن أبي شيبة ٢/ ٣٦٥ وكنز العمال حديث رقم ٢٧٤٤٧.",
+      "english": "And Muslim, Ahmad, and Abu Ya'la transmitted it by this route. Its wording includes: “But I weep for the revelation that has been taken away from us.”\n\nal-Waqidi said: Umm Ayman was present at Uhud, where she gave water to drink and treated the wounded, and she was present at Khaybar.\n\nIn Musnad Yahya al-Hammani—and Abu Nu'aym transmitted it by his route—from Sharik, from Mansur, from 'Ata', from Ibn Umm Ayman, from Ayman, she said: The Messenger of Allah, may Allah bless him and grant him peace, said: “A thief's hand is not cut off except for a hajafah.” (1) It was valued during the time of the Messenger of Allah, may Allah bless him and grant him peace, at one dinar, or ten dirhams. There is criticism concerning its chain of transmission.\n\nIn al-Tabarani, by way of Abu 'Amir al-Kharraz, from Abu Zayd al-Madani, Umm Ayman said: The Messenger of Allah, may Allah bless him and grant him peace, said: “Hand me the khumrah from the mosque.” I said, “I am menstruating.” He said: “Your menstruation is not in your hand.” (2) This report has a break in its chain of transmission.\n\nIbn Sa'd transmitted with a sound chain from Tariq ibn Shihab, who said: When the Prophet, may Allah bless him and grant him peace, died, Umm Ayman wept. She was asked, “What makes you weep?” She replied, “I weep over the tidings from heaven ...”\n\nIt also contains: When 'Umar was killed, Umm Ayman wept. She was asked about it, and she said: “Today Islam has grown weak.”\n\nIbn Sa'd said: 'Affan related to us; and Ahmad said: 'Abd al-Samad related to us. Both said: Hammad related to us, from Thabit, from Anas, that Umm Ayman wept when the Prophet, may Allah bless him and grant him peace, died. She was asked about it, and she replied: “By Allah, I certainly knew that the Messenger of Allah, may Allah bless him and grant him peace, would die. I am only weeping over the revelation when it is cut off from us from heaven.”\n\nIn 'Abd al-Samad's version, the wording is: “that which was taken away from us.” al-Waqidi said: Umm Ayman died during the caliphate of 'Uthman. Ibn al-Sakan transmitted with a sound chain from al-Zuhri that she died after the Messenger of Allah—may Allah bless ...\n\n(1) Hajafah, mijann, and turs are synonymous. Majma' al-Zawa'id, 6/277.\n\n(2) Muslim transmitted it in Sahih Muslim, 1/245, from Aisha, with this wording: Book of Menstruation (3), chapter “The Permissibility of a Menstruating Woman Washing Her Husband's Head ...” (3), hadith no. (11/298); Abu Dawud in Sunan Abi Dawud, 1/118, Book of Purification, chapter “A Menstruating Woman Handing Something from the Mosque,” hadith no. 261; and al-Tirmidhi in Sunan al-Tirmidhi, 1/241, Book of the Chapters on Purification, chapter “What Has Been Related Concerning a Menstruating Woman Handing Something from the Mosque,” hadith no. 134. Abu 'Isa said: “Aisha's hadith is a good, sound hadith.” Also Ibn Majah in Sunan Ibn Majah, 1/207, Book of Purification and Its Sunna Practices (1), chapter “A Menstruating Woman Handing Something from the Mosque” (120), hadith no. 632; Musnad Ahmad, 2/45, 70, 86, 112, 245; Sunan al-Darimi, 1/197; Ibn Abi Shayba, 2/365; and Kanz al-'Ummal, hadith no. 27447.",
+      "arabic_sha256": "c23e271ac95b475c304189c066f54e88904f91d3a51066db1c99401ed0ad8edf",
+      "english_sha256": "219e67833ce13b2ca78f8be8460a4f577dae895bc3829c33ac900ae04e805646",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011902-segment-0005",
+      "volume": 8,
+      "scan_page": 363,
+      "printed_page": 362,
+      "reader_page": 4275,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4275",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0363:0fb0128a4e9a2cf8",
+      "arabic": "عليه وآله وسلم بخمسة أشهر، وهذا مرسل، ويعارضه حديث طارق أنها قالت بعد قتل عمر ما قالت، وهو موصول، فهو أقوى، وأعتمده ابن مندة وغيره، وزاد ابن مندة بأنها ماتت بعد عمر بعشرين يوما، وجمع ابن السّكن بين القولين بأن التي ذكرها الزّهري هي مولاة النبي ﵌، وأن التي ذكرها طارق بن شهاب هي مولاة أم حبيبة بركة، وأن كلّا منهما كان اسمها بركة، وتكنى أم أيمن، وهو محتمل على بعد.",
+      "english": "…him and his family and grant them peace—by five months. This is a mursal report, and it is contradicted by Tariq's hadith that she made the statement she did after Umar was killed. That report has a connected chain and is therefore stronger; Ibn Manda and others relied upon it. Ibn Manda added that she died twenty days after Umar. Ibn al-Sakan reconciled the two statements by saying that the woman mentioned by al-Zuhri was the client of the Prophet, may Allah bless him and grant him peace, while the woman mentioned by Tariq ibn Shihab was Baraka, the client of Umm Habiba; both were named Baraka and bore the kunyah Umm Ayman. This is possible, though far-fetched.",
+      "arabic_sha256": "1b48bab0a50fc9cb7cb6af998da5c64ecafe66a0113d13ffd6cc668876fc1af3",
+      "english_sha256": "02965cbcd65886b31f3d4cc52a604098738dad4bd404456c1b1841e71f595d75",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم أيمن",
+      "english": "Umm Ayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "بركة بنت ثعلبة بن عمرو بن حصن بن مالك بن سلمة بن عمرو بن النعمان",
+      "english": "Baraka bint Tha'laba ibn Amr ibn Hisn ibn Malik ibn Salama ibn Amr ibn al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الظباء",
+      "english": "Umm al-Ziba'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب",
+      "english": "Khulasat Tadhhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "حلية الأولياء",
+      "english": "Hilyat al-Awliya",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجرح والتعديل",
+      "english": "al-Jarh wa-al-Ta'dil",
+      "kind": "work"
+    },
+    {
+      "arabic": "شذرات الذهب",
+      "english": "Shadharat al-Dhahab",
+      "kind": "work"
+    },
+    {
+      "arabic": "العبر",
+      "english": "al-Ibar",
+      "kind": "work"
+    },
+    {
+      "arabic": "المعارف",
+      "english": "al-Ma'arif",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن أبي خيثمة",
+      "english": "Ibn Abi Khaythama",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان بن أبي شيخ",
+      "english": "Sulayman ibn Abi Shaykh",
+      "kind": "person"
+    },
+    {
+      "arabic": "بركة",
+      "english": "Baraka",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد بن زيد",
+      "english": "'Ubayd ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني الحارث بن الخزرج",
+      "english": "Banu al-Harith ibn al-Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أيمن",
+      "english": "Ayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    },
+    {
+      "arabic": "زيد بن حارثة",
+      "english": "Zayd ibn Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسامة",
+      "english": "Usama",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني سعد بن بكر",
+      "english": "Banu Sa'd ibn Bakr",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو أمامة",
+      "english": "Abu Umama",
+      "kind": "person"
+    },
+    {
+      "arabic": "جرير بن حازم",
+      "english": "Jarir ibn Hazim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن القاسم",
+      "english": "'Uthman ibn al-Qasim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المنصرف",
+      "english": "al-Munsaraf",
+      "kind": "place"
+    },
+    {
+      "arabic": "الرّوحاء",
+      "english": "al-Rawha",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن السّكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن حسان",
+      "english": "Hisham ibn Hassan",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكّة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "فضيل بن مرزوق",
+      "english": "Fudayl ibn Marzuq",
+      "kind": "person"
+    },
+    {
+      "arabic": "سفيان بن عيينة",
+      "english": "Sufyan ibn 'Uyayna",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد اللَّه",
+      "english": "'Ubayd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبقات الكبرى",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-'Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "سفيان بن عقبة",
+      "english": "Sufyan ibn 'Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "البغويّ",
+      "english": "al-Baghawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن عبد العزيز",
+      "english": "Sa'id ibn 'Abd al-'Aziz",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكحول",
+      "english": "Makhul",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "البخاريّ",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "تاريخه",
+      "english": "al-Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عبد المطّلب",
+      "english": "'Abd Allah ibn 'Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "آمنة",
+      "english": "Amina",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان التيميّ",
+      "english": "Sulayman al-Taymi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس",
+      "english": "Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريظة",
+      "english": "Qurayza",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النّضير",
+      "english": "al-Nadir",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عبد الملك بن حصين",
+      "english": "'Abd al-Malik ibn Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "نافع بن عطاء",
+      "english": "Nafi' ibn 'Ata'",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوليد بن عبد الرحمن",
+      "english": "al-Walid ibn 'Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان بن المغيرة",
+      "english": "Sulayman ibn al-Mughira",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت",
+      "english": "Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو يعلى",
+      "english": "Abu Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "مسند يحيى الحمّانيّ",
+      "english": "Musnad Yahya al-Hammani",
+      "kind": "work"
+    },
+    {
+      "arabic": "يحيى الحمّانيّ",
+      "english": "Yahya al-Hammani",
+      "kind": "person"
+    },
+    {
+      "arabic": "شريك",
+      "english": "Sharik",
+      "kind": "person"
+    },
+    {
+      "arabic": "منصور",
+      "english": "Mansur",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاء",
+      "english": "'Ata'",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أم أيمن",
+      "english": "Ibn Umm Ayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطّبرانيّ",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عامر الخراز",
+      "english": "Abu 'Amir al-Kharraz",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو زيد المدني",
+      "english": "Abu Zayd al-Madani",
+      "kind": "person"
+    },
+    {
+      "arabic": "طارق بن شهاب",
+      "english": "Tariq ibn Shihab",
+      "kind": "person"
+    },
+    {
+      "arabic": "النّبي",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الإسلام",
+      "english": "Islam",
+      "kind": "other"
+    },
+    {
+      "arabic": "عفّان",
+      "english": "'Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الصّمد",
+      "english": "'Abd al-Samad",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمّاد",
+      "english": "Hammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "'Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "مجمع الزوائد",
+      "english": "Majma' al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan Abi Dawud",
+      "kind": "work"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan al-Tirmidhi",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عيسى",
+      "english": "Abu 'Isa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan Ibn Majah",
+      "kind": "work"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدارميّ",
+      "english": "al-Darimi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan al-Darimi",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن أبي شيبة",
+      "english": "Ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "textual anomaly",
+      "arabic_span": "عن ابن أم أيمن، عن أيمن، قالت",
+      "explanation": "The canonical text has the feminine “she said,” which the translation preserves. The collateral works identify Ayman as male, but they are not manuscripts of al-Isabah and cannot establish whether the feminine form is a printing or transmission error. The two consecutively named transmitters have therefore not been merged.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0362:c23e271ac95b475c"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

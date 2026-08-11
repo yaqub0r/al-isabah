@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011904",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11904,
+  "title": {
+    "english": "Umm Ayyub bint Qays ibn Amr ibn Imru al-Qays, the Khazraji Ansari woman.¹",
+    "arabic_observed": "أم أيّوب بنت قيس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011904-segment-0001",
+      "volume": 8,
+      "scan_page": 363,
+      "printed_page": 362,
+      "reader_page": 4275,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4275",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0363:0fb0128a4e9a2cf8",
+      "arabic": "١١٩٠٤- أم أيّوب بنت قيس\nبن عمرو بن امرئ القيس الخزرجيّة الأنصاريّة «١» .\nامرأة أبي أيّوب الصّحابيّ المشهور.\nأ\nخرج التّرمذيّ، من طريق ابن عيينة، عن عبد اللَّه بن أبي يزيد، عن أبيه- أن أم أيوب أخبرته قالت: نزل علينا رسول اللَّه ﵌ فتكلفنا له طعاما فيه بعض هذه البقول، فكره أكله وقال لأصحابه: «كلوه، إنّي لست كأحدكم، إنّي أخاف أن أوذي صاحبي» .\nوقال الحميدي: قال أبو سفيان: رأيت النّبي ﵌ في النوم:\nفقلت: يا رسول اللَّه، أهذا الحديث الّذي تحدّث به أم أيوب عنك إن الملائكة تتأذى مما يتأذى به بنو آدم، قال: «حقّ» .",
+      "english": "11904—Umm Ayyub bint Qays ibn Amr ibn Imru al-Qays, the Khazraji Ansari woman.¹\n\nShe was the wife of Abu Ayyub, the well-known Companion.\n\nal-Tirmidhi related, through Ibn Uyayna, from Abd Allah ibn Abi Yazid, from his father, that Umm Ayyub informed him, saying: “The Messenger of Allah, may Allah bless him and grant him peace, stayed with us, and we went to some trouble to prepare food for him containing some of these vegetables. He disliked eating it and said to his Companions, ‘Eat it. I am not like any of you; I fear that I may offend my companion.’”\n\nal-Humaydi said: Abu Sufyan said, “I saw the Prophet, may Allah bless him and grant him peace, in a dream and said, ‘O Messenger of Allah, is this hadith that Umm Ayyub relates from you—that the angels are offended by that which offends the children of Adam—true?’ He replied, ‘True.’”",
+      "arabic_sha256": "926e6b6be2eff04ec0621f12c6b580dd68b873f8d84bf4889ab26eb530f30d62",
+      "english_sha256": "9e5f112517429c36e7fd9534b127efec85e993f6ff92848c6a7361147ce9b0b3",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أيوب",
+      "english": "Abu Ayyub",
+      "kind": "person"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عيينة",
+      "english": "Ibn Uyayna",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن أبي يزيد",
+      "english": "Abd Allah ibn Abi Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحميدي",
+      "english": "al-Humaydi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سفيان",
+      "english": "Abu Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "آدم",
+      "english": "Adam",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخزرجية",
+      "english": "Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

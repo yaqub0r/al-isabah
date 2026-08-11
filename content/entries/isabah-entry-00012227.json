@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012227",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12227,
+  "title": {
+    "english": "Umm Kulthum bint Zam'a",
+    "arabic_observed": "أم كلثوم بنت زمعة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012227-segment-0001",
+      "volume": 8,
+      "scan_page": 462,
+      "printed_page": 461,
+      "reader_page": 4374,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4374",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0462:0fcb250426b0aa45",
+      "arabic": "١٢٢٢٧- أم كلثوم بنت زمعة:\nالقرشية ثم العامريّة، أخت سودة أم المؤمنين، كانت زوج حويطب بن عبد العزّى، فولدت له أبا الحكم بن حويطب. ذكرها الزبير بن بكّار.",
+      "english": "12227 — Umm Kulthum bint Zam'a\n\nShe was of Quraysh, specifically of Banu Amir, and was the sister of Sawda, Mother of the Believers. She was the wife of Huwaytib ibn Abd al-Uzza and bore him Abu al-Hakam ibn Huwaytib. Al-Zubayr ibn Bakkar mentioned her.",
+      "arabic_sha256": "d735b21f427edae3c2c2c7cf2e896b533c4e96f9b14d242f91c674f39a206b28",
+      "english_sha256": "33f025e207a57909a3d1b1665cced7fc04da07793106bee355ca32fbf85554dc",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم كلثوم بنت زمعة",
+      "english": "Umm Kulthum bint Zam'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "العامرية",
+      "english": "Banu Amir",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سودة",
+      "english": "Sawda",
+      "kind": "person"
+    },
+    {
+      "arabic": "حويطب بن عبد العزّى",
+      "english": "Huwaytib ibn Abd al-Uzza",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الحكم بن حويطب",
+      "english": "Abu al-Hakam ibn Huwaytib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكّار",
+      "english": "Al-Zubayr ibn Bakkar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

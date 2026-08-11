@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010818",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10818,
+  "title": {
+    "english": "Usayra,",
+    "arabic_observed": "أسيرة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010818-segment-0001",
+      "volume": 8,
+      "scan_page": 23,
+      "printed_page": 22,
+      "reader_page": 3935,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3935",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0023:246082fad1c8a476",
+      "arabic": "١٠٨١٨- أسيرة ،\nبالتصغير الأنصارية «٢»، ويقال يسيرة- بالياء آخر الحروف.\nذكرها أبو عمر مختصرا، وأعادها في الياء، ولم ينبّه ابن الأثير على أنهما واحد ولا الذهبي.",
+      "english": "10818 — Usayra,\n\nin the diminutive, al-Ansariyya [2]; she is also called Yusayra—with ya, the last of the letters.\n\nAbu 'Umar mentioned her briefly and listed her again under the letter ya. Neither Ibn al-Athir nor al-Dhahabi pointed out that the two were one and the same.",
+      "arabic_sha256": "2975953f8f137089046c1f5423ec0c57f8c1501aeeb216c0ca04e1210a4a18b8",
+      "english_sha256": "d581f0c0d18c822863b7b34c37d6e9927cda5d7898e8c461cb437dc90f8aff0c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "يسيرة",
+      "english": "Yusayra al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

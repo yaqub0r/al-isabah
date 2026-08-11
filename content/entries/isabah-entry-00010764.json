@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010764",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10764,
+  "title": {
+    "english": "Amina bint Khalaf al-Aslamiyya.¹",
+    "arabic_observed": "آمنة بنت خلف الأسلمية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010764-segment-0001",
+      "volume": 8,
+      "scan_page": 5,
+      "printed_page": 4,
+      "reader_page": 3917,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3917",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0005:f37adfaaa723fce4",
+      "arabic": "١٠٧٦٤- آمنة بنت خلف الأسلمية «١»\n. ذكرها أبو موسى في «الذّيل»، وأخرج من وجهين واهيين إلى المبارك بن فضالة، عن الحسن- أنّ آمنة بنت خلف الأسلمية جاءت إلى النبي ﷺ لما أصابت الفاحشة، فقالت: يا رسول اللَّه، إني امرأة محصنة، وزوجي غائب، وإني أصبت الفاحشة فطهرني ... وذكر قصة طويلة، ودعا كثيرا لها حين رجمت نحوا من ورقتين، كذا في الأصل.",
+      "english": "10764—Amina bint Khalaf al-Aslamiyya.¹\nAbu Musa mentioned her in al-Dhayl and transmitted, through two feeble chains leading to al-Mubarak ibn Fadala, from al-Hasan, that Amina bint Khalaf al-Aslamiyya came to the Prophet—may Allah bless him and grant him peace—after she had committed an indecent act. She said, “O Messenger of Allah, I am a married woman, my husband is absent, and I have committed an indecent act, so purify me.…” He then related a lengthy account, approximately two folios in extent, and the Prophet prayed extensively for her when she was stoned. Thus it appears in the original.",
+      "arabic_sha256": "f37025d790011a022218a52149fac0edd2c7319ad13a0557e005841d22c8e27b",
+      "english_sha256": "f75dc2cd976408eff86f0e6484ff274d255a3828c3745f3be5065a1541274e48",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "آمنة بنت خلف الأسلمية",
+      "english": "Amina bint Khalaf al-Aslamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذّيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "المبارك بن فضالة",
+      "english": "al-Mubarak ibn Fadala",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن",
+      "english": "al-Hasan",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

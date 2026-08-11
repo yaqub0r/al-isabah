@@ -1,0 +1,93 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011224",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11224,
+  "title": {
+    "english": "Zaynab bint Asram",
+    "arabic_observed": "زينب بنت أصرم"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011224-segment-0001",
+      "volume": 8,
+      "scan_page": 153,
+      "printed_page": 152,
+      "reader_page": 4065,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4065",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0153:39b727548f7a0d16",
+      "arabic": "١١٢٢٤- زينب بنت أصرم\nبن الحارث بن السباق بن عبد الدار القرشية العبدرية، كانت زوج زهير بن أبي أمية أخي أم سلمة أم المؤمنين فولدت له معبدا وعبد اللَّه. ذكر ذلك الزبير بن بكار.\n(١) أخرجه البخاري ٣/ ١٣ (١٢٥٤) ومسلم ٢/ ٢٤٦ (٣٦/ ٩٣٩) .",
+      "english": "11224. Zaynab bint Asram\n\nZaynab bint Asram ibn al-Harith ibn al-Sabbaq ibn Abd al-Dar, the Qurashi Abdari woman. She was the wife of Zuhayr ibn Abi Umayya, the brother of Umm Salama, Mother of the Believers, and she bore him Mabad and Abdullah. Al-Zubayr ibn Bakkar mentioned this.\n\n[1] Transmitted by al-Bukhari, 3/13 (1254), and Muslim, 2/246 (36/939).",
+      "arabic_sha256": "483eb9e0d9948fd2a2bc540451780e27e524f966c650e0b051b201a54ed5c83d",
+      "english_sha256": "0a3e63bfc7a33b06f131f369d6869abb34a10593aa69ed22e579ddfb67660b32",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت أصرم بن الحارث بن السباق بن عبد الدار",
+      "english": "Zaynab bint Asram ibn al-Harith ibn al-Sabbaq ibn Abd al-Dar",
+      "kind": "person"
+    },
+    {
+      "arabic": "العبدرية",
+      "english": "Banu Abd al-Dar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "زهير بن أبي أمية",
+      "english": "Zuhayr ibn Abi Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "معبد",
+      "english": "Mabad ibn Zuhayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abdullah ibn Zuhayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "السباق",
+      "explanation": "The canonical text and the available Urdu witness are unvocalized, so they cannot determine whether the name is al-Sabbaq or al-Sibaq. The final text retains al-Sabbaq provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0153:39b727548f7a0d16"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

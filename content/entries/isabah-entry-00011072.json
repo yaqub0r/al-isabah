@@ -1,0 +1,239 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011072",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11072,
+  "title": {
+    "english": "al-Hawla bint Tuwait—",
+    "arabic_observed": "الحولاء بنت تويت ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011072-segment-0001",
+      "volume": 8,
+      "scan_page": 94,
+      "printed_page": 93,
+      "reader_page": 4006,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4006",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0094:94b288dbb99109cb",
+      "arabic": "١١٠٧٢- الحولاء بنت تويت ،\nبثمانين مصغرا «٤»، ابن حبيب بن أسد بن عبد العزى بن قصيّ القرشية الأسدية.\n(١) الإسفار بالصبح: هو أن يصبح الفجر لا يشك فيه. اللسان ٣/ ٢٠٢٥.\n(٢) قال الهيثمي في الزوائد ١/ ٣٢٠ رواه الطبراني في الكبير وفيه معلى بن عبد الرحمن الواسطي قال الدار الدّارقطنيّ كذاب وضعفه الناس وقال ابن عدي أرجو أنه لا بأس به، والطبراني في الكبير ١٩/ ١٢، والمتقي الهندي في كنز العمال حديث رقم ١٩٢٨٥.\n(٣) أخرجه أحمد في المسند ٦/ ٣٨٣، والحاكم في المستدرك ١/ ٤١٧ والبخاري في التاريخ ٥/ ٢٨٢ وابن خزيمة (٤٧٣) .\n(٤) الثقات ٣/ ١٠٠، أعلام النساء ١/ ٢٥٩، تجريد أسماء الصحابة ٢/ ٢٦١، حلية الأولياء ٢/ ٦٥، تلقيح فهوم أهل الأثر ٣٣٠، المشتبه ١٠٥، صيانة صحيح مسلم ١٢٥.",
+      "english": "11072. al-Hawla bint Tuwait—\n\nwith two ta's, in the diminutive form(4)—ibn Habib ibn Asad ibn Abd al-Uzza ibn Qusayy, a woman of Quraysh from Banu Asad.\n\n(1) “Letting the morning grow light” means that dawn becomes unmistakably clear. al-Lisan, 3/2025.\n\n(2) al-Haythami said in al-Zawa'id, 1/320: “al-Tabarani narrated it in al-Kabir. Its chain contains Mu'alla ibn Abd al-Rahman al-Wasiti. al-Daraqutni said: ‘He is a liar.’ The scholars deemed him weak, while Ibn Adi said: ‘I hope there is no problem with him.’” al-Tabarani, al-Kabir, 19/12; and al-Muttaqi al-Hindi, Kanz al-Ummal, hadith no. 19285.\n\n(3) Transmitted by Ahmad in Musnad Ahmad, 6/383; al-Hakim in al-Mustadrak, 1/417; al-Bukhari in al-Tarikh, 5/282; and Ibn Khuzayma (473).\n\n(4) al-Thiqat, 3/100; A'lam al-Nisa, 1/259; al-Tajrid, 2/261; Hilyat al-Awliya, 2/65; Talqih Fuhum Ahl al-Athar, p. 330; al-Mushtabih, p. 105; Siyanat Sahih Muslim, p. 125.",
+      "arabic_sha256": "16f444d0ffa2116a70901c33402e33a76b05fd4d02b449b4d7a2c0d72bf94280",
+      "english_sha256": "26e91c274e7154f55f14e139857efb702aff1f6e9b1a3cd0ebe8405fda79f91d",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011072-segment-0002",
+      "volume": 8,
+      "scan_page": 95,
+      "printed_page": 94,
+      "reader_page": 4007,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4007",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0095:1749274e3ab1cd52",
+      "arabic": "ذكرها ابن سعد، وقال: أسلمت وبايعت.\nوثبت في الصحيحين وغيرهما في حديث الزهري عن عروة، عن عائشة- أن الحولاء بنت تويت مرّت بها وعندها رسول اللَّه ﷺ، فقالت: هذه الحولاء بنت تويت يزعمون أنها لا تنام الليل. فقام «١» النبيّ ﷺ: «خذوا من العمل ما تطيقون ...» الحديث.\nوللحديث طرق بألفاظ، ولم تسمّ في أكثرها. ووقع عند أحمد عن أبي اليمان عن شعيب عن الزهري.",
+      "english": "Ibn Sa'd mentioned her and said: She embraced Islam and gave the pledge of allegiance.\n\nIt is established in the Two Sahihs and elsewhere, in the hadith of al-Zuhri, from 'Urwa, from Aisha, that al-Hawla bint Tuwayt passed by her while the Messenger of Allah—may Allah bless him and grant him peace—was with her. She said, “This is al-Hawla bint Tuwayt. They claim that she does not sleep at night.” The Prophet—may Allah bless him and grant him peace—then rose [1]: “Undertake only such deeds as you are able to bear ...” [the rest of] the hadith.\n\nThe hadith has several transmission routes with differing wordings, and she is not named in most of them. Ahmad transmits it from Abu al-Yaman, from Shu'ayb, from al-Zuhri.",
+      "arabic_sha256": "1f479b73fb79e6645298fef66f48e8344be1c77c33424c069c942d1fda36e971",
+      "english_sha256": "10261a002e8c0dab5980e8e7bd9a8bee87461f82162fc5ecf66f6741ab766a29",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأسدية",
+      "english": "Banu Asad",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "اللسان",
+      "english": "al-Lisan",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "معلى بن عبد الرحمن الواسطي",
+      "english": "Mu'alla ibn Abd al-Rahman al-Wasiti",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدارقطنيّ",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عدي",
+      "english": "Ibn Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "التاريخ",
+      "english": "al-Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن خزيمة",
+      "english": "Ibn Khuzayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "حلية الأولياء",
+      "english": "Hilyat al-Awliya",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "المشتبه",
+      "english": "al-Mushtabih",
+      "kind": "work"
+    },
+    {
+      "arabic": "صيانة صحيح مسلم",
+      "english": "Siyanat Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيحين",
+      "english": "Two Sahihs",
+      "kind": "work"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "'Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحولاء بنت تويت",
+      "english": "al-Hawla bint Tuwayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو اليمان",
+      "english": "Abu al-Yaman",
+      "kind": "person"
+    },
+    {
+      "arabic": "شعيب",
+      "english": "Shu'ayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحولاء",
+      "english": "al-Hawla",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

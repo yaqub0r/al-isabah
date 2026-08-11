@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012123",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12123,
+  "title": {
+    "english": "Umm Asim al-Sawda:",
+    "arabic_observed": "أم عاصم السّوداء:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012123-segment-0001",
+      "volume": 8,
+      "scan_page": 426,
+      "printed_page": 425,
+      "reader_page": 4338,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4338",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0426:6633b99d43784c8a",
+      "arabic": "١٢١٢٣- أم عاصم السّوداء:\nأنت النبيّ ﵌ لتبايعه، كذا في «التّجريد» .",
+      "english": "12123 — Umm Asim al-Sawda:\n\nShe came to the Prophet, may Allah bless him and grant him peace, to pledge allegiance to him. Thus it appears in al-Tajrid.",
+      "arabic_sha256": "b1903621b289ee21054d595425e67f1e7a32a67b6e674c6a0184dc152f392534",
+      "english_sha256": "c309126b854fe45b397ab627dd1845d401e687a1613d033ab6a84ff248ba3fb2",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم عاصم السّوداء",
+      "english": "Umm Asim al-Sawda",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "التّجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

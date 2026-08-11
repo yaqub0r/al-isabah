@@ -1,0 +1,105 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010995",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10995,
+  "title": {
+    "english": "Jamila bint Abi Sa'sa'a (1),",
+    "arabic_observed": "جميلة بنت أبي صعصعة «١»،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010995-segment-0001",
+      "volume": 8,
+      "scan_page": 71,
+      "printed_page": 70,
+      "reader_page": 3983,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3983",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0071:65d1a2f0a4e3a6cf",
+      "arabic": "١٠٩٩٥- جميلة بنت أبي صعصعة «١»،\nواسمه عمرو بن زيد بن عوف بن مبذول بن عمرو بن غنم بن مازن بن النجار.\nذكرها ابن سعد في المبايعات، وقال: تزوجها عبادة بن الصامت، فولدت له الوليد، ثم تزوجت الربيع بن سراقة، وولدت له عبد اللَّه ومحمدا وبثينة، ثم تزوجها كلدة بن أبي خالد بن قيس بن خالد بن مخلد بن عامر بن زريق، قال: وأمها أنيسة بنت عاصم بن عمرو بن عوف بن مبذول.",
+      "english": "10995—Jamila bint Abi Sa'sa'a (1),\nAbu Sa'sa'a's name was Amr ibn Zayd ibn Awf ibn Mabdhul ibn Amr ibn Ghanm ibn Mazin ibn al-Najjar.\n\nIbn Sa'd included her among the women who pledged allegiance. He said: 'Ubada ibn al-Samit married her, and she bore him al-Walid. She then married al-Rabi' ibn Suraqa and bore him Abd Allah, Muhammad, and Buthayna. Then Kalada ibn Abi Khalid ibn Qays ibn Khalid ibn Mukhallad ibn Amir ibn Zurayq married her. He said: Her mother was Anisa bint Asim ibn Amr ibn Awf ibn Mabdhul.",
+      "arabic_sha256": "cf5f1883253ed632f0fca523c507723586d657519be6e93a74e6a8ffb5130187",
+      "english_sha256": "7718b97f73665ef41201d925cefc46e593ead72e7279e525a84b6174355c157a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة بنت أبي صعصعة",
+      "english": "Jamila bint Abi Sa'sa'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن زيد بن عوف بن مبذول بن عمرو بن غنم بن مازن بن النجار",
+      "english": "Amr ibn Zayd ibn Awf ibn Mabdhul ibn Amr ibn Ghanm ibn Mazin ibn al-Najjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبادة بن الصامت",
+      "english": "'Ubada ibn al-Samit",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوليد",
+      "english": "al-Walid ibn 'Ubada ibn al-Samit",
+      "kind": "person"
+    },
+    {
+      "arabic": "الربيع بن سراقة",
+      "english": "al-Rabi' ibn Suraqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad ibn al-Rabi' ibn Suraqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "بثينة",
+      "english": "Buthayna bint al-Rabi' ibn Suraqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "كلدة بن أبي خالد بن قيس بن خالد بن مخلد بن عامر بن زريق",
+      "english": "Kalada ibn Abi Khalid ibn Qays ibn Khalid ibn Mukhallad ibn Amir ibn Zurayq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنيسة بنت عاصم بن عمرو بن عوف بن مبذول",
+      "english": "Anisa bint Asim ibn Amr ibn Awf ibn Mabdhul",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad ibn Thabit ibn Qays ibn Shammas",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة بنت أبي",
+      "english": "Jamila bint Ubayy",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

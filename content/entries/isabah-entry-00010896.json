@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010896",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10896,
+  "title": {
+    "english": "Anisa bint Qays al-Khazrajiyya [3]",
+    "arabic_observed": "أنيسة بنت قيس الخزرجية «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010896-segment-0001",
+      "volume": 8,
+      "scan_page": 41,
+      "printed_page": 40,
+      "reader_page": 3953,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3953",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0041:e4605fe0c8a3cf89",
+      "arabic": "١٠٨٩٦- أنيسة بنت قيس الخزرجية «٣»\nكذا في التجريد، ذكرها ابن حبيب.",
+      "english": "10896—Anisa bint Qays al-Khazrajiyya [3]\n\nThus it appears in al-Tajrid. Ibn Habib mentioned her.",
+      "arabic_sha256": "456393b6f48982610663a3eead17032787919041f9d3c8f400dbd93f188e9399",
+      "english_sha256": "a0fb570025626713b89329d1a82768ae68be01034549ab1099d98914a69fe12c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنيسة بنت قيس الخزرجية",
+      "english": "Anisa bint Qays al-Khazrajiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

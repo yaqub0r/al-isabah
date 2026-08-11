@@ -1,0 +1,108 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012286",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12286,
+  "title": {
+    "english": "Umm Nahshal bint 'Ubayda",
+    "arabic_observed": "أم نهشل بنت عبيدة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012286-segment-0001",
+      "volume": 8,
+      "scan_page": 485,
+      "printed_page": 484,
+      "reader_page": 4397,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4397",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0485:f8f6f862d41faae4",
+      "arabic": "١٢٢٨٦- أم نهشل بنت عبيدة:\nبضم العين، ابن سعيد بن العاص بن أمية.\nقتل أبوها ببدر، وكانت هي بمكّة إلى أن غرفت في السبيل في خلافة عمر، فهي على شرط هذا الكتاب، إذ لم يبق بمكة عند حجة الوداع إلا من شهدها مسلما.\nقال الفاكهيّ في كتاب «مكّة»: فمن السيول التي وقعت بمكة في الإسلام سيل أمّ نهشل، كان في خلافة عمر، أقبل من أعلى مكّة حتى دخل المسجد الحرام، وكانت طريقه بين الدّارين، فذهب بأم نهشل بنت عبيدة بن سعيد بن العاص بن أمية حتى استخرجت من أسفل مكّة، فسمي ذلك السيل سيل أم نهشل.",
+      "english": "12286—Umm Nahshal bint 'Ubayda\n\nThe name 'Ubayda has a damma on the letter 'ayn; he was the son of Sa'id ibn al-'As ibn Umayya.\n\nHer father was killed at Badr, and she remained in Mecca until she was swept away by a flood during the caliphate of 'Umar. She therefore meets the criteria of this book, since no one remained in Mecca at the Farewell Pilgrimage except those who attended it as Muslims.\n\nAl-Fakihi said in the Book of Mecca: “Among the floods that occurred in Mecca during the Islamic period was the Flood of Umm Nahshal. It occurred during the caliphate of 'Umar and came from Upper Mecca until it entered the Sacred Mosque. Its course ran between the two houses, and it carried away Umm Nahshal bint 'Ubayda ibn Sa'id ibn al-'As ibn Umayya until she was recovered from Lower Mecca. That flood was therefore called the Flood of Umm Nahshal.”",
+      "arabic_sha256": "0b35e1964489a6a0e5cd35a369f08c8037b45dba3c41a049cdbed656eb859e1a",
+      "english_sha256": "9887680f36dd1cda63e000ce23783f5efc3ab4f9a5623bba64b4f1ac7401f874",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم نهشل بنت عبيدة بن سعيد بن العاص بن أمية",
+      "english": "Umm Nahshal bint 'Ubayda ibn Sa'id ibn al-'As ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "عمر",
+      "english": "'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجة الوداع",
+      "english": "Farewell Pilgrimage",
+      "kind": "other"
+    },
+    {
+      "arabic": "الفاكهي",
+      "english": "al-Fakihi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب مكة",
+      "english": "Book of Mecca",
+      "kind": "work"
+    },
+    {
+      "arabic": "سيل أم نهشل",
+      "english": "Flood of Umm Nahshal",
+      "kind": "other"
+    },
+    {
+      "arabic": "أعلى مكة",
+      "english": "Upper Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "المسجد الحرام",
+      "english": "Sacred Mosque",
+      "kind": "place"
+    },
+    {
+      "arabic": "أسفل مكة",
+      "english": "Lower Mecca",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source_reading",
+      "arabic_span": "إلى أن غرفت في السبيل في خلافة عمر",
+      "explanation": "The supplied witnesses do not verify this anomalous wording. The final text therefore uses the contextual rendering “swept away by a flood” and does not adopt “drowned.” Searchable reproductions outside the supplied witness set instead read غرقت في السيل, including an [al-Isabah facsimile](https://www.cia.gov/library/abbottabad-compound/AE/AED120ADBAEA1006F669D935962EA163_VOL8.pdf) and an [independent textual reproduction](https://sahaba.rasoolona.com/Sahaby/26956/%D8%AA%D9%81%D8%B5%D9%8A%D9%84-%D9%85%D8%A7-%D8%B0%D9%83%D8%B1-%D8%B9%D9%86%D9%87%D8%A7-%D9%81%D9%8A-%D8%A7%D9%84%D9%83%D8%AA%D8%A8-%D8%A7%D9%84%D8%A3%D8%B1%D8%A8%D8%B9%D8%A9/%D8%A3%D9%85-%D9%86%D9%87%D8%B4%D9%84-%D8%A8%D9%86%D8%AA-%D8%B9%D8%A8%D9%8A%D8%AF%D8%A9-%D8%A8%D9%86-%D8%B3%D8%B9%D9%8A%D8%AF-%D8%A8%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5-%D8%A8%D9%86-%D8%A3%D9%85%D9%8A%D8%A9), but the authoritative supplied Arabic cannot be silently replaced on that basis.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0485:f8f6f862d41faae4"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

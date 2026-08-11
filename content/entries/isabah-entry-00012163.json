@@ -1,0 +1,190 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012163",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12163,
+  "title": {
+    "english": "Umm 'Ubays[2]",
+    "arabic_observed": "أم عبيس «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012163-segment-0001",
+      "volume": 8,
+      "scan_page": 435,
+      "printed_page": 434,
+      "reader_page": 4347,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4347",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0435:68b332c74d74bc6f",
+      "arabic": "١٢١٦٣- أم عبيس «٢»\n: وزن التي قبلها: هي أحد من كان يعذّبه المشركون ممن سبق إلى الإسلام.\nقال أبو بشر الدّولابيّ عن الشّعبي: أسلمت وهي زوج كريز بن ربيعة بن حبيب ابن عبد شمس، ولدت له عبيسا فكنيت به.\nوروى يونس بن بكير في «زيادات المغازي» لابن إسحاق، عن هشام بن عروة، عن أبيه- أن أبا بكر الصّدّيق ﵁ أعتق ممن كان يعذّب في اللَّه سبعة، وهم: بلال، وعامر بن فهيرة، وزنبرة، وجارية ابنا المؤمّل، والنهديّة، وابنتها، وأمّ عنيس.\nوأخرج محمّد بن عثمان بن أبي شيبة في تاريخه، عن منجاب بن الحارث، عن إبراهيم بن يوسف بن زياد البكائيّ، عن ابن إسحاق، عن حميد، عن أنس: قال: قالت أم هانئ بنت أبي طالب: أعتق أبو بكر بلالا، وأعتق معه ستة، منهم أم عبيس.\nوأخرجه أبو نعيم، وأبو موسى، من طريقه. وقال الزّبير بن بكّار: كانت فتاة لبني تيم بن مرة، فأسلمت أول الإسلام، وكانت ممن استضعفه المشركون يعذبونها، فاشتراها أبو بكر فأعتقها، وكنيت بابنها عبيس بن كريز.\nقلت: قال البلاذريّ: كانت أمة لبني زهرة، وكان الأسود بن عبد يغوث يعذبها.",
+      "english": "12163 — Umm 'Ubays[2]\n\nHer name follows the same pattern as that of the preceding woman. She was one of those early converts to Islam whom the polytheists used to torture.\n\nAbu Bishr al-Dulabi related from al-Sha'bi: She embraced Islam while she was the wife of Kurayz ibn Rabi'a ibn Habib ibn 'Abd Shams. She bore him 'Ubays and took her kunya from him.\n\nYunus ibn Bukayr related in Ibn Ishaq's Ziyadat al-Maghazi, from Hisham ibn 'Urwa, from his father, that Abu Bakr al-Siddiq—may Allah be pleased with him—freed seven of those who were being tortured for Allah's sake. They were Bilal, 'Amir ibn Fuhayra, Zanbara, a slave woman belonging to the two sons of al-Mu'ammal, al-Nahdiyya, her daughter, and Umm 'Unays.\n\nMuhammad ibn 'Uthman ibn Abi Shayba transmitted in his History, from Minjab ibn al-Harith, from Ibrahim ibn Yusuf ibn Ziyad al-Bakka'i, from Ibn Ishaq, from Humayd, from Anas, who said: Umm Hani' bint Abi Talib said, “Abu Bakr freed Bilal, and together with him he freed six others, among them Umm 'Ubays.”\n\nAbu Nu'aym and Abu Musa transmitted it through his route. al-Zubayr ibn Bakkar said: She was a young slave woman belonging to Banu Taym ibn Murra. She embraced Islam at the beginning of Islam and was among those whom the polytheists deemed weak and tortured. Abu Bakr purchased and emancipated her. Her kunya was taken from her son, 'Ubays ibn Kurayz.\n\nI say: al-Baladhuri said that she was a slave woman belonging to Banu Zuhra, and that al-Aswad ibn 'Abd Yaghuth used to torture her.",
+      "arabic_sha256": "c85765d56c58b64cee45ff2745734174cb48437a1b224c455fc449cf106eb18d",
+      "english_sha256": "31d0923fd23411c74b898e7fbbde171adbfff6560e0d46cb65b514f2a7f20721",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبيس",
+      "english": "Umm 'Ubays",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بشر الدّولابيّ",
+      "english": "Abu Bishr al-Dulabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشّعبي",
+      "english": "al-Sha'bi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كريز بن ربيعة بن حبيب بن عبد شمس",
+      "english": "Kurayz ibn Rabi'a ibn Habib ibn 'Abd Shams",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيس بن كريز",
+      "english": "'Ubays ibn Kurayz",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن بكير",
+      "english": "Yunus ibn Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيادات المغازي",
+      "english": "Ziyadat al-Maghazi",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن عروة",
+      "english": "Hisham ibn 'Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر الصّدّيق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "بلال",
+      "english": "Bilal",
+      "kind": "person"
+    },
+    {
+      "arabic": "عامر بن فهيرة",
+      "english": "'Amir ibn Fuhayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "زنبرة",
+      "english": "Zanbara",
+      "kind": "person"
+    },
+    {
+      "arabic": "المؤمّل",
+      "english": "al-Mu'ammal",
+      "kind": "person"
+    },
+    {
+      "arabic": "النهديّة",
+      "english": "al-Nahdiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمّ عنيس",
+      "english": "Umm 'Unays",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمّد بن عثمان بن أبي شيبة",
+      "english": "Muhammad ibn 'Uthman ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "منجاب بن الحارث",
+      "english": "Minjab ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن يوسف بن زياد البكائيّ",
+      "english": "Ibrahim ibn Yusuf ibn Ziyad al-Bakka'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "حميد",
+      "english": "Humayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس",
+      "english": "Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هانئ بنت أبي طالب",
+      "english": "Umm Hani' bint Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّبير بن بكّار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو تيم بن مرة",
+      "english": "Banu Taym ibn Murra",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "البلاذريّ",
+      "english": "al-Baladhuri",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو زهرة",
+      "english": "Banu Zuhra",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأسود بن عبد يغوث",
+      "english": "al-Aswad ibn 'Abd Yaghuth",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

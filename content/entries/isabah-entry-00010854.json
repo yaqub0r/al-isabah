@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010854",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10854,
+  "title": {
+    "english": "Umayma bint Rabi'a ibn al-Harith ibn 'Abd al-Muttalib",
+    "arabic_observed": "أميمة بنت ربيعة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010854-segment-0001",
+      "volume": 8,
+      "scan_page": 32,
+      "printed_page": 31,
+      "reader_page": 3944,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3944",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0032:542a50dde803c14d",
+      "arabic": "١٠٨٥٤- أميمة بنت ربيعة\nبن الحارث بن عبد المطلب، ويقال اسمها أمامة، فكأن من صغرها لقبها، وقال في التجريد: لها صحبة.",
+      "english": "10854—Umayma bint Rabi'a ibn al-Harith ibn 'Abd al-Muttalib\n\nIt is also said that her name was Umama; apparently, whoever used the diminutive form made it her byname. It says in al-Tajrid: “She was a Companion.”",
+      "arabic_sha256": "62fa7f7932b82a9990d2158f8762a8837c3d67c07d1cc2b78e4f6a26cc056fc6",
+      "english_sha256": "23ee5fa2e9d5afc8773a42599a70155a6f84b4e771764460ba45c71f7f005edf",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أميمة بنت ربيعة بن الحارث بن عبد المطلب",
+      "english": "Umayma bint Rabi'a ibn al-Harith ibn 'Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة",
+      "english": "Umama",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

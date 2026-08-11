@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012189",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12189,
+  "title": {
+    "english": "Umm Amr bint Mahmud",
+    "arabic_observed": "أم عمرو بنت محمود"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012189-segment-0001",
+      "volume": 8,
+      "scan_page": 445,
+      "printed_page": 444,
+      "reader_page": 4357,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4357",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0445:3ffaff7672c6c364",
+      "arabic": "١٢١٨٩- أم عمرو بنت محمود\nبن مسلمة بن سلمة بن خالد بن عديّ بن مجدعة بن حارثة الأنصاريّة» .\nتقدّم نسبها في ترجمة والدها، وفي ترجمة عمها محمد بن مسلمة، ذكرها ابن حبيب في المبايعات، وكذا ابن سعد، وقال: أمها أمامة بنت بشر بن وقش، قال: وتزوّجها عبد اللَّه بن محمد بن مسلمة، فولدت له حميدا، وعمر، ثم خلف عليها زيد بن سعد بن زيد بن مالك.",
+      "english": "12189—Umm Amr bint Mahmud\n\nibn Maslama ibn Salama ibn Khalid ibn Adi ibn Majda'a ibn Haritha, the Ansari woman.[1]\n\nHer lineage was given previously in the biography of her father and in the biography of her paternal uncle, Muhammad ibn Maslama. Ibn Habib mentioned her among the women who pledged allegiance, as did Ibn Sa'd. He said: Her mother was Umama bint Bishr ibn Waqsh. He said: Abd Allah ibn Muhammad ibn Maslama married her, and she bore him Humayd and Umar. Zayd ibn Sa'd ibn Zayd ibn Malik then married her after him.",
+      "arabic_sha256": "5a0aee394135c20c2f29f07d6b70fa5f5d29eee24268efa5c7ca47a56d0b6c9a",
+      "english_sha256": "779e55b277f2e05a69080939c42d12fe43810f36fdb1dacb0a464e4cbeb6198f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن مسلمة",
+      "english": "Muhammad ibn Maslama",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة بنت بشر بن وقش",
+      "english": "Umama bint Bishr ibn Waqsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن محمد بن مسلمة",
+      "english": "Abd Allah ibn Muhammad ibn Maslama",
+      "kind": "person"
+    },
+    {
+      "arabic": "حميد",
+      "english": "Humayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن سعد بن زيد بن مالك",
+      "english": "Zayd ibn Sa'd ibn Zayd ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو زوج حريث بن عمرو بن عثمان المخزومي",
+      "english": "Umm Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو زوج سليم الزرقي",
+      "english": "Umm Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

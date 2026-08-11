@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012268",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12268,
+  "title": {
+    "english": "Umm Ma'bad:[6]",
+    "arabic_observed": "أم معبد «٦»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012268-segment-0001",
+      "volume": 8,
+      "scan_page": 479,
+      "printed_page": 478,
+      "reader_page": 4391,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4391",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0479:f0ec8b9772680ce2",
+      "arabic": "١٢٢٦٨- أم معبد «٦»\n: تأتي في أم مغيث.",
+      "english": "12268—Umm Ma'bad:[6]\nShe will appear under Umm Mughith.",
+      "arabic_sha256": "5dab4bd7b50863a5a2ea74728f38c6dcf4d9201a3c281e36134918781f913760",
+      "english_sha256": "4130bf228c38eeb8f0feab5a6612a56bc156f7b84ee1dee6c10ede399964ad55",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم معبد مولاة قرظة",
+      "english": "Umm Ma'bad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد زوج كعب بن مالك",
+      "english": "Umm Ma'bad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد غير منسوبة",
+      "english": "Umm Ma'bad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد",
+      "english": "Umm Ma'bad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم مغيث",
+      "english": "Umm Mughith",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

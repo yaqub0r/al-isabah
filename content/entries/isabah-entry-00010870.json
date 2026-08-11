@@ -1,0 +1,114 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010870",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10870,
+  "title": {
+    "english": "Umayma bint al-Najjar al-Ansariyya.³",
+    "arabic_observed": "أميمة بنت النجار الأنصارية «٣» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010870-segment-0001",
+      "volume": 8,
+      "scan_page": 35,
+      "printed_page": 34,
+      "reader_page": 3947,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3947",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0035:f93ed50f5abcc3d8",
+      "arabic": "١٠٨٧٠- أميمة بنت النجار الأنصارية «٣» .\n(١) أسد الغابة ت ٦٧٤٣.\n(٢) الدر المنثور ٦٧، الثقات ٣/ ٢٥.\n(٣) الاستيعاب ت ٣٢٨٧.",
+      "english": "10870—Umayma bint al-Najjar al-Ansariyya.³\n\n¹ Usd al-Ghaba, entry 6743.\n² al-Durr al-Manthur, 67; al-Thiqat, 3/25.\n³ al-Isti'ab, entry 3287.",
+      "arabic_sha256": "4b93051714eab3de28839c152ddbb85436d4dbc787ba7157285cc50ef15a926d",
+      "english_sha256": "5115275e1456a7a5b2ec91eaff4003a7cc7b65910fe75d1071a4e5f61f42eeb8",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010870-segment-0002",
+      "volume": 8,
+      "scan_page": 36,
+      "printed_page": 35,
+      "reader_page": 3948,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3948",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0036:c4a2b286be23a713",
+      "arabic": "ذكرها العقيليّ في الصحابة، وأخرج لها من طريق ابن جريج، عن حكيمة بنت أبي حكيم، عن أمها أميمة- أن أزواج النبي ﷺ كنّ لهن عصائب فيها الورس والزعفران يغطين بها أسافل رءوسهن قبل أن يحرمن ثم يحر من كذلك.\nقال أبو عمر: أظن هذا الحديث لأميمة بنت رقيقة راوية حديث القدح من عيدان.\nقلت: وهو بعيد، وقد ذكرها ابن سعد في النسوة اللاتي روين عن أزواج النبي ﷺ، ولم يروين عنه، وساق هذا الحديث من طريق ابن جريج.",
+      "english": "al-Uqayli mentioned her among the Companions and transmitted a report of hers by way of Ibn Jurayj, from Hakima bint Abi Hakim, from her mother Umayma: the wives of the Prophet—may Allah bless him and grant him peace—had headbands containing wars and saffron, with which they covered the lower parts of their heads before entering ihram; then they entered ihram in that same condition.\n\nAbu Umar said: I think this hadith belongs to Umayma bint Ruqayqa, the narrator of the hadith concerning the cup made of sticks.\n\nI say: This is unlikely. Ibn Sa'd mentioned her among the women who narrated from the wives of the Prophet—may Allah bless him and grant him peace—but did not narrate from him, and he cited this hadith by way of Ibn Jurayj.",
+      "arabic_sha256": "8ae1a7559293dc00d8bb9798f5997285a1fcbab27aa480ec7c689d8eab5bd312",
+      "english_sha256": "7a2bbe07b97c7237cdf5d7f07dad4d2135e8ef8d5909869f919d9b76371c4d9a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أميمة بنت النجار الأنصارية",
+      "english": "Umayma bint al-Najjar al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدر المنثور",
+      "english": "al-Durr al-Manthur",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "العقيلي",
+      "english": "al-Uqayli",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن جريج",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "حكيمة بنت أبي حكيم",
+      "english": "Hakima bint Abi Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة بنت رقيقة",
+      "english": "Umayma bint Ruqayqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

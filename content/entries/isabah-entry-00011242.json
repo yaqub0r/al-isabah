@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011242",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11242,
+  "title": {
+    "english": "Zaynab bint Suwayd",
+    "arabic_observed": "زينب بنت سويد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011242-segment-0001",
+      "volume": 8,
+      "scan_page": 161,
+      "printed_page": 160,
+      "reader_page": 4073,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4073",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0161:0cdc3ef05e850773",
+      "arabic": "١١٢٤٢- زينب بنت سويد\nبن الصامت الأنصارية.\nتقدم نسبها في ترجمة والدها، كانت زوج سعيد بن زيد بن عمرو بن نفيل أحد العشرة، فولدت له عاتكة، ذكرها الزّبير بن بكّار في نسب قريش.",
+      "english": "11242—Zaynab bint Suwayd\n\nibn al-Samit, the Ansari woman.\n\nHer lineage was given above in the entry on her father. She was the wife of Sa'id ibn Zayd ibn Amr ibn Nufayl, one of the Ten, and she bore him Atika. Al-Zubayr ibn Bakkar mentioned her in Nasab Quraysh.",
+      "arabic_sha256": "01babdc189d248336493c89c789b2031c1158f302fcc001314555cee0f07c677",
+      "english_sha256": "30bf872f21a66721df42fcf4a1a4374dcffc09c699b92a69ded2e56005635915",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن زيد بن عمرو بن نفيل",
+      "english": "Sa'id ibn Zayd ibn Amr ibn Nufayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاتكة",
+      "english": "Atika",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "نسب قريش",
+      "english": "Nasab Quraysh",
+      "kind": "work"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

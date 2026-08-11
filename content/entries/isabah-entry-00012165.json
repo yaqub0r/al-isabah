@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012165",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12165,
+  "title": {
+    "english": "Umm Uthman bint Khalda:",
+    "arabic_observed": "أم عثمان بنت خلدة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012165-segment-0001",
+      "volume": 8,
+      "scan_page": 436,
+      "printed_page": 435,
+      "reader_page": 4348,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4348",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0436:1bbcac580ca9ef55",
+      "arabic": "١٢١٦٥- أم عثمان بنت خلدة:\nروى عنها ولدها في مسند أبي يعلى، كذا في «التّجريد» .",
+      "english": "12165—Umm Uthman bint Khalda:\n\nHer son narrated from her in the Musnad of Abu Ya'la; thus it appears in al-Tajrid.",
+      "arabic_sha256": "ad9b4f75b8da05270033f1b2240194c4cae84836d5538157fcd14aa03a4a9baa",
+      "english_sha256": "c962172d043532dd4c47a1ccd55dd23fb8359c467e9b58f48690a00bd9cc64ac",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم عثمان بنت خلدة",
+      "english": "Umm Uthman bint Khalda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو يعلى",
+      "english": "Abu Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند أبي يعلى",
+      "english": "Musnad of Abu Ya'la",
+      "kind": "work"
+    },
+    {
+      "arabic": "التّجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

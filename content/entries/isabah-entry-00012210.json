@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012210",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12210,
+  "title": {
+    "english": "Umm Qahtam:",
+    "arabic_observed": "أم قهطم:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012210-segment-0001",
+      "volume": 8,
+      "scan_page": 454,
+      "printed_page": 453,
+      "reader_page": 4366,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4366",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0454:ed54e7c92e72373b",
+      "arabic": "١٢٢١٠- أم قهطم:\nهي فاطمة بنت علقمة. تقدمت في الأسماء.",
+      "english": "12210—Umm Qahtam:\n\nShe is Fatima bint Alqama. She appeared earlier in the section of names.",
+      "arabic_sha256": "1228fa1fbf57d544711d8feb9e87e1d50262a607e29c35fd31d3b3f98d8bed01",
+      "english_sha256": "adb52f4a0c52a13677cd5901bf7af6a32eebb1d18463611f638042c9ab4ec4c0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم قهطم",
+      "english": "Umm Qahtam",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت علقمة",
+      "english": "Fatima bint Alqama",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima bint Abi Sulayt ibn Abi Haritha",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

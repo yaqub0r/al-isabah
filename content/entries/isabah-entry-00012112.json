@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012112",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12112,
+  "title": {
+    "english": "Umm Asahba'.¹",
+    "arabic_observed": "أم أصهباء «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012112-segment-0001",
+      "volume": 8,
+      "scan_page": 423,
+      "printed_page": 422,
+      "reader_page": 4335,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4335",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0423:24440e7a4bef8914",
+      "arabic": "١٢١١٢- أم أصهباء «١»\n: ذكر الذّهبيّ في التجريد أن لها في مسند بقيّ بن مخلد حديثا «٢» .",
+      "english": "12112 — Umm Asahba'.¹\n\nAl-Dhahabi stated in al-Tajrid that she has one hadith in the Musnad of Baqi ibn Makhlad.²",
+      "arabic_sha256": "fe15f24f041790e3d56ef7c8271d0bc2ca2505660fffc2b769720b5d7c307bee",
+      "english_sha256": "247ccb587bc725318f5adee69618ab7042adf63a2f54e59a060d746d9667fba8",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم أصهباء",
+      "english": "Umm Asahba'",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

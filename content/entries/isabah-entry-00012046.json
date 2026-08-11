@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012046",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12046,
+  "title": {
+    "english": "Umm Siba':[4]",
+    "arabic_observed": "أم سباع «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012046-segment-0001",
+      "volume": 8,
+      "scan_page": 400,
+      "printed_page": 399,
+      "reader_page": 4312,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4312",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0400:e6789e9a089d2669",
+      "arabic": "١٢٠٤٦- أم سباع «٤»\n: أخرج حديثها في العقيقة محمد بن سعد، عن عبد اللَّه بن إدريس: حدّثنا أسلم المنقري عن عطاء- أن أم السباع سألت رسول اللَّه ﵌ أنعقّ عن أولادنا؟ قال: نعم.",
+      "english": "12046—Umm Siba':[4]\n\nMuhammad ibn Sa'd transmitted her hadith concerning the 'aqiqah, from Abd Allah ibn Idris: Aslam al-Minqari related to us, from Ata, that Umm Siba' asked the Messenger of Allah (may Allah bless him and grant him peace), “Should we perform the 'aqiqah for our children?” He replied, “Yes.”",
+      "arabic_sha256": "84caf4a1c854e665e17aabbf0ec4dfdaa27cfc03ec519c9ffecbf0d53088a75f",
+      "english_sha256": "f275ddb663e1b02e5f88dbeb4fd74b0f6db60fb1608f23e65e7e613174aa2314",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "محمد بن سعد",
+      "english": "Muhammad ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عبد الله",
+      "english": "Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سباع",
+      "english": "Umm Siba'",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن إدريس",
+      "english": "Abd Allah ibn Idris",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسلم المنقري",
+      "english": "Aslam al-Minqari",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاء",
+      "english": "Ata",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

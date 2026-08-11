@@ -1,0 +1,133 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011708",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11708,
+  "title": {
+    "english": "Lahiyya:",
+    "arabic_observed": "لهيّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011708-segment-0001",
+      "volume": 8,
+      "scan_page": 303,
+      "printed_page": 302,
+      "reader_page": 4215,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4215",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0303:93e173b6aa8ba109",
+      "arabic": "١١٧٠٨- لهيّة:\nبمثناة تحتانية مثقلة: جارية عمر بن الخطاب «٣» وأم ولده، وكانت تخدم ابنته حفصة.\nوقال ابن ماكولا: هي أم عبد الرّحمن بن عمر الّذي يكنى أبا شحمة، وقيل إنها نهية بالنّون بدل اللّام، وذكرها المستغفريّ وقال: لها صحبة، وأورد من طريق إبراهيم بن موسى بن تيم، قال: حدّثني عمي زكريّا بن يحيى، قال: حدّثني ابن أخي ابن شهاب عن عمه، قال: حدّثني رجال من أهل العلم أن حفصة زوج النّبيّ ﵌ أرسلت لهيّة أم ولد عمر في يومها الّذي يدور إليها فيه رسول اللَّه ﵌، فقالت: إنه خرج من عندي فاحتبس عني، فانظري عند أيّ نسائه؟ فانطلقت لهية فوجدته عند صفيّة، فرجعت إلى حفصة فأخبرتها، فطفقت حفصة تقول: خلا بيهودية، ثم أمرت لهيّة أن ترجع إلى صفيّة حتى يخرج النبيّ ﵌ من عندها فتخبرها بالذي قالت حفصة، فقالت صفية: واللَّه إني لابنة هارون، وإنّ عمي لموسى، وإن زوجي لرسول اللَّه ﷺ، ما أعرف لأحد أن يكون أفضل مني، فدخل وصفيّة تبكي، فقال لها في ذلك، فأخبرته بالذي بلغتها لهية عن حفصة وبالذي قالت لها، فصدّقها رسول اللَّه ﵌، فلما رأت حفصة ذلك قالت: واللَّه لا أوذي صفيّة أبدا.",
+      "english": "11708—Lahiyya:\n\nWith a doubled ya: a slave woman of Umar ibn al-Khattab[3] and the mother of his child. She used to serve his daughter Hafsa.\n\nIbn Makula said: She was the mother of Abd al-Rahman ibn Umar, who had the kunyah Abu Shahma. It is also said that her name was Nuhayya, with nun in place of lam. Al-Mustaghfiri mentioned her and said, “She was a Companion.” He transmitted through Ibrahim ibn Musa ibn Taym, who said: My paternal uncle Zakariyya ibn Yahya related to me, saying: The nephew of Ibn Shihab related to me from his paternal uncle, who said: Men possessing knowledge related to me that Hafsa, the wife of the Prophet—may Allah bless him and grant him peace—sent Lahiyya, Umar’s slave woman who was the mother of his child, on the day allotted to Hafsa in the Messenger of Allah’s rotation. She said, “He left me and has been away from me for some time. Go and see with which of his wives he is.” Lahiyya went and found him with Safiyya. She returned to Hafsa and informed her, whereupon Hafsa began saying, “He has secluded himself with a Jewess.” She then instructed Lahiyya to return to Safiyya and, after the Prophet—may Allah bless him and grant him peace—had left her, to tell her what Hafsa had said. Safiyya said, “By Allah, I am indeed the daughter of Aaron, my paternal uncle is indeed Moses, and my husband is indeed the Messenger of Allah—may Allah bless him and grant him peace. I know of no one who could be better than I.” He entered while Safiyya was weeping and asked her about it. She told him what Lahiyya had conveyed to her from Hafsa and what she herself had said in reply. The Messenger of Allah—may Allah bless him and grant him peace—affirmed that she had spoken truthfully. When Hafsa saw that, she said, “By Allah, I shall never hurt Safiyya again.”",
+      "arabic_sha256": "ff4b8473e428aae45776d5481874aeb6cf3271553b12dbc3bdd6c4a4c1acac61",
+      "english_sha256": "2b3a2f247f4ec682c50e89392b327a3dae9c0722eddbd8b19912da4089115974",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "لهية",
+      "english": "Lahiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن الخطاب",
+      "english": "Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفصة",
+      "english": "Hafsa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماكولا",
+      "english": "Ibn Makula",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عمر",
+      "english": "Abd al-Rahman ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو شحمة",
+      "english": "Abu Shahma",
+      "kind": "person"
+    },
+    {
+      "arabic": "نهية",
+      "english": "Nuhayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن موسى بن تيم",
+      "english": "Ibrahim ibn Musa ibn Taym",
+      "kind": "person"
+    },
+    {
+      "arabic": "زكريا بن يحيى",
+      "english": "Zakariyya ibn Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن شهاب",
+      "english": "Ibn Shihab",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "the Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية",
+      "english": "Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "هارون",
+      "english": "Aaron",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى",
+      "english": "Moses",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name-vocalization",
+      "arabic_span": "لهية",
+      "explanation": "The consonantal spelling and doubled ya are secure, but the supplied unvocalized witnesses do not independently establish the precise vocalization. “Lahiyya” is retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0303:93e173b6aa8ba109"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

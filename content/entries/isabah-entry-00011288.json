@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011288",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11288,
+  "title": {
+    "english": "Sadus bint Batna ibn Abd Amr ibn Mas'ud, of the Banu Dinar ibn al-Najjar.[1]",
+    "arabic_observed": "سدوس بنت بطنة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011288-segment-0001",
+      "volume": 8,
+      "scan_page": 175,
+      "printed_page": 174,
+      "reader_page": 4087,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4087",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0175:b2f9fbda8782eeaa",
+      "arabic": "١١٢٨٨- سدوس بنت بطنة\nبن عبد عمرو بن مسعود، من بني دينار بن النجار «١» .\nذكرها ابن حبيب في المبايعات.",
+      "english": "11288—Sadus bint Batna ibn Abd Amr ibn Mas'ud, of the Banu Dinar ibn al-Najjar.[1]\n\nIbn Habib mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "5daebc45020993167b595bb2e93b3c929163454af291168d925e1cce79d60ce3",
+      "english_sha256": "ae2a628709b587677ee628e3a5f35d0debfd968f27494a96a7ee80270f8c95c3",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سدوس بنت بطنة بن عبد عمرو بن مسعود",
+      "english": "Sadus bint Batna ibn Abd Amr ibn Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني دينار بن النجار",
+      "english": "Banu Dinar ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

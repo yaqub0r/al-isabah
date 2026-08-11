@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011439",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11439,
+  "title": {
+    "english": "Tu'ayma:",
+    "arabic_observed": "طعيمة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011439-segment-0001",
+      "volume": 8,
+      "scan_page": 225,
+      "printed_page": 224,
+      "reader_page": 4137,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4137",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0225:a5959950db0cf411",
+      "arabic": "١١٤٣٩- طعيمة:\nلها ذكر، وليس لها حديث، ذكرها ابن مندة هكذا.",
+      "english": "11439 — Tu'ayma:\n\nShe is mentioned, but no hadith is transmitted from her. Ibn Manda mentioned her in this form.",
+      "arabic_sha256": "0f0de9dff329b3074c88977fed7220232721e884aba34d8ab723d2212630c6d1",
+      "english_sha256": "7e390d059c7fd9391c0c64795e33ae0bc42b61a07c0d13a3c87c6c33829d3841",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "طعيمة",
+      "english": "Tu'ayma",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

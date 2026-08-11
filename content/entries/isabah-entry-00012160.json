@@ -1,0 +1,200 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012160",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12160,
+  "title": {
+    "english": "Umm Ubayd bint Sawd",
+    "arabic_observed": "أم عبيد بنت سود"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012160-segment-0001",
+      "volume": 8,
+      "scan_page": 434,
+      "printed_page": 433,
+      "reader_page": 4346,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4346",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0434:74754fd4b8427997",
+      "arabic": "١٢١٦٠- أم عبيد بنت سود\nبن قريم بن صاهلة الهذليّة «١» .\nهي والدة عبد اللَّه بن مسعود، كذا نسبها ابن عبد البرّ، وفيه نظر.\nوقال ابن الكلبيّ: هي أم عبد بنت عبد ود بن سود بن قريم، وهذا هو المعتمد، فإن بين صاهلة وبين عبد اللَّه بن مسعود خمسة آباء.\nقال ابن سعد: أسلمت وبايعت.\nوروى حديثها حفص بن سليمان، عن أبان عن أبي عياش، عن إبراهيم النّخعي، عن علقمة، عن عبد اللَّه بن مسعود، قال: أرسلت أمي ليلة لتبيت عند رسول اللَّه ﵌ لتنظر كيف يوتر، فباتت عنده، فصلّى ما شاء أن يصلّي حتى إذا كان آخر الليل وأراد الوتر قرأ: سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَى في الركعة الأولى، وقرأ في الثّانية: قُلْ يا أَيُّهَا الْكافِرُونَ، ثم قعد ثم قام ولم يفصل بينهما بسلام، ثم قرأ: قُلْ هُوَ اللَّهُ أَحَدٌ، حتى إذا فرغ كبّر ثم قنت، فدعا ما شاء اللَّه أن يدعو ثم كبّر وركع.\nوهذا سند ضعيف جدا من أجل أبان، والرّاوي عنه.\nوقد روى سفيان الثّوري، عن يزيد بن أبي زياد، عن إبراهيم بهذا السّند- أن النّبيّ ﵌ قنت في الوتر.\nوروى وكيع عن سفيان، عن أبي إسحاق، عن مصعب بن يزيد، قال: فرض عمر للنساء المهاجرات في ألفين ألفين منهن أم عبيد. وأخرج ابن سعد، عن أحمد بن يونس، عن زهير، عن أبي إسحاق نحوه. لكن قال: ألف درهم، والأول أثبت.\nوقال أبو موسى: ما كنت أظن ابن مسعود وأمه إلا من آل النّبيّ ﵌ لكثرة ما كان يدخل على رسول اللَّه ﵌.\nوأخرج ابن مندة من طريق المسعوديّ، عن أخيه عيينة، عن أبي إسحاق السّبيعي- أن عمر انتظر أم عبيد حتى جاءت فصلّت على ابنها عتبة بن مسعود.",
+      "english": "12160—Umm Ubayd bint Sawd\n\nibn Quraym ibn Sahila al-Hudhaliyya.[1]\n\nShe was the mother of Abdullah ibn Masud. Ibn Abd al-Barr gave her lineage thus, but it is open to question.\n\nIbn al-Kalbi said: She was Umm Abd bint Abd Wudd ibn Sawd ibn Quraym. This is the relied-upon version, for there are five forefathers between Sahila and Abdullah ibn Masud.\n\nIbn Sad said: She embraced Islam and pledged allegiance.\n\nHer hadith was related by Hafs ibn Sulayman, from Aban, from Abu Ayyash, from Ibrahim al-Nakhai, from Alqama, from Abdullah ibn Masud, who said: “One night I sent my mother to spend the night with the Messenger of Allah, may Allah bless him and grant him peace, so that she might observe how he performed the witr prayer. She spent the night with him, and he prayed as much as he wished to pray. When the end of the night came and he wished to perform witr, he recited, ‘Glorify the name of your Lord, the Most High,’ in the first rak'a, and in the second he recited, ‘Say: O disbelievers!’ Then he sat, after which he stood, without separating the two with a salutation. He then recited, ‘Say: He is Allah, One.’ When he had finished, he pronounced the takbir and then recited the qunut, supplicating for as long as Allah willed him to supplicate. He then pronounced the takbir and bowed.”\n\nThis chain of transmission is extremely weak because of Aban and the narrator who related from him.\n\nSufyan al-Thawri related from Yazid ibn Abi Ziyad, from Ibrahim, through this chain, that the Prophet, may Allah bless him and grant him peace, recited the qunut in the witr prayer.\n\nWaki related from Sufyan, from Abu Ishaq, from Musab ibn Yazid, who said: “Umar assigned stipends of two thousand each to the female Emigrants; Umm Ubayd was among them.” Ibn Sad also transmitted something similar from Ahmad ibn Yunus, from Zuhayr, from Abu Ishaq, but his version says: “one thousand dirhams.” The former is more firmly established.\n\nAbu Musa said: “I used to think that Ibn Masud and his mother were none other than members of the household of the Prophet, may Allah bless him and grant him peace, because he so frequently entered upon the Messenger of Allah, may Allah bless him and grant him peace.”\n\nIbn Manda transmitted, through al-Masudi, from his brother Uyayna, from Abu Ishaq al-Sabii, that Umar waited for Umm Ubayd until she arrived and performed the funeral prayer over her son Utba ibn Masud.",
+      "arabic_sha256": "882c603caddd414ef2834af68b7b58fde1ecbcabbd6463f97821d3afe0f37189",
+      "english_sha256": "b3b9e0c5edb503759f660d3a426c5224a5817662ea14db93ba0ca7ae6964cb73",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الهذليّة",
+      "english": "Hudhayl",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عبد اللَّه بن مسعود",
+      "english": "Abdullah ibn Masud",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبد البرّ",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الكلبيّ",
+      "english": "Ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبد بنت عبد ود بن سود بن قريم",
+      "english": "Umm Abd bint Abd Wudd ibn Sawd ibn Quraym",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sad",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفص بن سليمان",
+      "english": "Hafs ibn Sulayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبان",
+      "english": "Aban",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عياش",
+      "english": "Abu Ayyash",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم النّخعي",
+      "english": "Ibrahim al-Nakhai",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم",
+      "english": "Ibrahim al-Nakhai",
+      "kind": "person"
+    },
+    {
+      "arabic": "علقمة",
+      "english": "Alqama",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مسعود",
+      "english": "Abdullah ibn Masud",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النّبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "سفيان الثّوري",
+      "english": "Sufyan al-Thawri",
+      "kind": "person"
+    },
+    {
+      "arabic": "سفيان",
+      "english": "Sufyan al-Thawri",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن أبي زياد",
+      "english": "Yazid ibn Abi Ziyad",
+      "kind": "person"
+    },
+    {
+      "arabic": "وكيع",
+      "english": "Waki",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو إسحاق",
+      "english": "Abu Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "مصعب بن يزيد",
+      "english": "Musab ibn Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبيد",
+      "english": "Umm Ubayd bint Sawd ibn Quraym ibn Sahila al-Hudhaliyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد بن يونس",
+      "english": "Ahmad ibn Yunus",
+      "kind": "person"
+    },
+    {
+      "arabic": "زهير",
+      "english": "Zuhayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسعوديّ",
+      "english": "al-Masudi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عيينة",
+      "english": "Uyayna",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو إسحاق السّبيعي",
+      "english": "Abu Ishaq al-Sabii",
+      "kind": "person"
+    },
+    {
+      "arabic": "عتبة بن مسعود",
+      "english": "Utba ibn Masud",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

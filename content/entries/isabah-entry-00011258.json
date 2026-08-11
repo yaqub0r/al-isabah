@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011258",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11258,
+  "title": {
+    "english": "Zaynab bint al-Ansariyya³",
+    "arabic_observed": "زينب بنت الأنصارية «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011258-segment-0001",
+      "volume": 8,
+      "scan_page": 165,
+      "printed_page": 164,
+      "reader_page": 4077,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4077",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0165:620781664ee07575",
+      "arabic": "١١٢٥٨- زينب بنت الأنصارية «٣»\n، امرأة أبي مسعود، عقبة بن عمرو البدري. تقدم ذكرها",
+      "english": "11258—Zaynab bint al-Ansariyya³\n\nThe wife of Abu Mas'ud, 'Uqba ibn 'Amr al-Badri. She was mentioned previously.",
+      "arabic_sha256": "e7e781b5a89e3f5dcd846daec0af824c0b37bbd4f3d022b2f5e6bc5099847ee3",
+      "english_sha256": "817ef9e2a6d5b86f536a1acdd623b781611e66019caed13d3bff2bc8a9aa128d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمر",
+      "english": "'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "زينب الأنصارية امرأة أبي مسعود",
+      "english": "Zaynab bint al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو مسعود",
+      "english": "'Uqba ibn 'Amr al-Badri",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت الأنصارية",
+      "english": "Zaynab bint al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عقبة بن عمرو البدري",
+      "english": "'Uqba ibn 'Amr al-Badri",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

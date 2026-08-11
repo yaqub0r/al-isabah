@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012044",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12044,
+  "title": {
+    "english": "Umm al-Sa'ib al-Ghifariyya:",
+    "arabic_observed": "أم السّائب الغفاريّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012044-segment-0001",
+      "volume": 8,
+      "scan_page": 400,
+      "printed_page": 399,
+      "reader_page": 4312,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4312",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0400:e6789e9a089d2669",
+      "arabic": "١٢٠٤٤- أم السّائب الغفاريّة:\nتقدّم في السّائب الغفاريّ في حرف السّين من الرّجال- أنّ أمّه أتت به النّبيّ ﵌، فسمّاه عبد اللَّه ... الحديث.",
+      "english": "12044—Umm al-Sa'ib al-Ghifariyya:\n\nIt was related previously, under al-Sa'ib al-Ghifari in the letter sin among the men, that his mother brought him to the Prophet (may Allah bless him and grant him peace), who named him Abd Allah ... the hadith.",
+      "arabic_sha256": "3075040ccb8f44998e8ab1c8fcfe80438ee44980e07f350574d3a9f0d2640d7f",
+      "english_sha256": "49540936dcc7f4a62aa383c912566ea177ee68df1d529d4b6a0f4a69a6578181",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم السائب الغفارية",
+      "english": "Umm al-Sa'ib al-Ghifariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "السائب الغفاري",
+      "english": "al-Sa'ib al-Ghifari",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله",
+      "english": "Abd Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

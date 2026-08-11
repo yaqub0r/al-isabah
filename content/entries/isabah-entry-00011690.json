@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011690",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11690,
+  "title": {
+    "english": "Kulthum",
+    "arabic_observed": "كلثم:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011690-segment-0001",
+      "volume": 8,
+      "scan_page": 298,
+      "printed_page": 297,
+      "reader_page": 4210,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4210",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0298:f8ea76f8e004b883",
+      "arabic": "١١٦٩٠- كلثم:\nجدة عبد الرحمن بن أبي عمرة «٨» . تقدمت في كبشة.",
+      "english": "11690 — Kulthum\n\nShe was the grandmother of Abd al-Rahman ibn Abi Amra. [8] She was previously mentioned under Kabsha.",
+      "arabic_sha256": "37c1e424513056e1f750c8d74e02f93ebe77c73faea669b142f9bb69965b81f4",
+      "english_sha256": "9870215f72465725f71fc834c9f7e3fad7ee4c7c36c72e4df62472bd1b182157",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عبد الرحمن بن أبي عمرة",
+      "english": "Abd al-Rahman ibn Abi Amra",
+      "kind": "person"
+    },
+    {
+      "arabic": "كبشة",
+      "english": "Kabsha",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

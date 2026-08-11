@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011630",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11630,
+  "title": {
+    "english": "Furay'a bint Wahb al-Zuhriyya [1]",
+    "arabic_observed": "فريعة بنت وهب الزهريّة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011630-segment-0001",
+      "volume": 8,
+      "scan_page": 282,
+      "printed_page": 281,
+      "reader_page": 4194,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4194",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0282:ec4557337e6f53e6",
+      "arabic": "١١٦٣٠- فريعة بنت وهب الزهريّة «١»\n: رفعها النّبيّ ﵌ بيده، وقال: من أراد أن ينظر إلى خالة رسول اللَّه فلينظر إلى هذه.\nذكره أبو موسى في الذيل عن المستغفري، وقال: لم يزد على هذا.\nقلت: وقد تقدّم شيء من هذا في «٢» فاختة بنت عمرو.",
+      "english": "11630—Furay'a bint Wahb al-Zuhriyya [1]\n\nThe Prophet (may Allah bless him and grant him peace) raised her with his hand and said: “Whoever wishes to look upon a maternal aunt of the Messenger of Allah should look upon this woman.”\n\nAbu Musa mentioned it in al-Dhayl, reporting from al-Mustaghfiri, and said: “He added nothing beyond this.”\n\nI say: Something of this has already appeared under Fakhita bint Amr. [2]",
+      "arabic_sha256": "58268d61de022e2dc6dbdaeb133dc556fdad49e5185b37a6e99af47db55f4d4a",
+      "english_sha256": "7b6ee2801d3d89bcd80f791c5699435bd0315985943750f0fe3d517588593cb4",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "فريعة بنت وهب الزهريّة",
+      "english": "Furay'a bint Wahb al-Zuhriyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاختة بنت عمرو",
+      "english": "Fakhita bint Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

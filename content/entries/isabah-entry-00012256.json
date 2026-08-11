@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012256",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12256,
+  "title": {
+    "english": "Umm Muslim:",
+    "arabic_observed": "أم مسلم:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012256-segment-0001",
+      "volume": 8,
+      "scan_page": 475,
+      "printed_page": 474,
+      "reader_page": 4387,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4387",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0475:11ef9a2168013d2a",
+      "arabic": "١٢٢٥٦- أم مسلم:\nخادم صفية «٤» ذكرت في الصحابة، ولا يعرف لها صحبة، قاله ابن مندة.",
+      "english": "12256 — Umm Muslim:\n\nA servant of Safiyya.(4) She was mentioned among the Companions, but it is not known that she had companionship with the Prophet. Ibn Manda said this.",
+      "arabic_sha256": "6c70ee81026542dea8d359d7fc546134f89b821b2509c0f7c1427e7b029bf6d0",
+      "english_sha256": "dc59526f840e104d7d6092ca8bc2fad14353db989d0d58f9279898266d367954",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم مسلم",
+      "english": "Umm Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية",
+      "english": "Safiyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

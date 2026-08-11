@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011762",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11762,
+  "title": {
+    "english": "Malika bint Abi Umayya:",
+    "arabic_observed": "مليكة بنت أبي أمية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011762-segment-0001",
+      "volume": 8,
+      "scan_page": 319,
+      "printed_page": 318,
+      "reader_page": 4231,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4231",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0319:fbba915439251974",
+      "arabic": "١١٧٦٢- مليكة بنت أبي أمية:\nلها ذكر في طبقات النّساء من طبقات ابن سعد، وأن عمر طلّقها لما نزلت: وَلا تُمْسِكُوا بِعِصَمِ الْكَوافِرِ [سورة الممتحنة آية ١٠]، فتزوّجها معاوية، وهي والدة عبيد اللَّه، بالتّصغير، ابن عمر بن الخطّاب.",
+      "english": "11762—Malika bint Abi Umayya:\n\nShe is mentioned in the section on women in Ibn Sa'd's al-Tabaqat, where it is stated that 'Umar divorced her when the verse was revealed: “And do not hold fast to the marriage bonds of unbelieving women” [Surat al-Mumtahana, verse 10]. Mu'awiya then married her. She was the mother of 'Ubayd Allah—in the diminutive—ibn 'Umar ibn al-Khattab.",
+      "arabic_sha256": "28c9b64ef8c21f84f5bd140945e0a5394da78667960fb7e1648f91059f77558c",
+      "english_sha256": "c332e1a46c78e01d7bc38ceed0ff026a7e0e6f8f3bb5183ed653c1bb3197b0f8",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مليكة بنت أبي أمية",
+      "english": "Malika bint Abi Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن الخطّاب",
+      "english": "'Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "سورة الممتحنة",
+      "english": "Surat al-Mumtahana",
+      "kind": "work"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Mu'awiya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

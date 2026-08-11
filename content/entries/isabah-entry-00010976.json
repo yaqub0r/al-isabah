@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010976",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10976,
+  "title": {
+    "english": "al-Jarba bint Qasama",
+    "arabic_observed": "الجرباء بنت قسامة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010976-segment-0001",
+      "volume": 8,
+      "scan_page": 64,
+      "printed_page": 63,
+      "reader_page": 3976,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3976",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0064:04908af676ed7379",
+      "arabic": "١٠٩٧٦- الجرباء بنت قسامة\nبن قيس بن عبيد بن طريف بن مالك «١»، أخت حنظلة.\nقال الزّبير بن بكّار: قدمت على النبيّ ﷺ، فتزوّجت طلحة بن عبيد اللَّه، فهي والدة أم إسحاق بنت طلحة، وسيأتي لها ذكر في ترجمة أختها زينب.",
+      "english": "10976—al-Jarba bint Qasama\nibn Qays ibn Ubayd ibn Tarif ibn Malik (1), the sister of Hanzala.\nal-Zubayr ibn Bakkar said: She came to the Prophet, may Allah bless him and grant him peace, and then married Talha ibn Ubayd Allah. She was the mother of Umm Ishaq bint Talha. Mention of her will come in the biography of her sister Zaynab.",
+      "arabic_sha256": "6abad77d4aa52df65cb7cabb19d88b47046f64ec101a327f8aaf74255b5af18b",
+      "english_sha256": "0e2e0497befa1967843f9e1da7367e3f3879f1b14ac326fe417d78d57ba0e623",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حنظلة",
+      "english": "Hanzala",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّبير بن بكّار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "طلحة بن عبيد اللَّه",
+      "english": "Talha ibn Ubayd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم إسحاق بنت طلحة",
+      "english": "Umm Ishaq bint Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

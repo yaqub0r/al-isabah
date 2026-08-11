@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012091",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12091,
+  "title": {
+    "english": "Umm Sahl bint al-Nu'man, the Ansari woman of the Banu Zafar and sister of Qatada ibn al-Nu'man.",
+    "arabic_observed": "أم سهل"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012091-segment-0001",
+      "volume": 8,
+      "scan_page": 415,
+      "printed_page": 414,
+      "reader_page": 4327,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4327",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0415:80d9332d2a04c870",
+      "arabic": "١٢٠٩١- أم سهل\nبنت النّعمان الأنصاريّة، من بني ظفر، أخت قتادة بن النّعمان.\nذكرها ابن سعد أيضا، وقال: أمها أنيسة بنت قيس بن عمرو النّجّارية، أسلمت أم سهل وبايعت.",
+      "english": "12091—Umm Sahl bint al-Nu'man, the Ansari woman of the Banu Zafar and sister of Qatada ibn al-Nu'man.\n\nIbn Sa'd also mentioned her and said: Her mother was Unaysa bint Qays ibn Amr, of the Banu al-Najjar. Umm Sahl embraced Islam and pledged allegiance.",
+      "arabic_sha256": "dc7c5fccd7654779ba5c60cb9f3e07fd2283894b91a92d6cc7102ca5cd803544",
+      "english_sha256": "110a7b62d3a079f2dabccf3771e87fd8b9ba95835fa2a4057313e6db6e8f469c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو النجار",
+      "english": "Banu al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم سهل بنت النعمان الأنصارية",
+      "english": "Umm Sahl bint al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو ظفر",
+      "english": "Banu Zafar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "قتادة بن النعمان",
+      "english": "Qatada ibn al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنيسة بنت قيس بن عمرو",
+      "english": "Unaysa bint Qays ibn Amr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

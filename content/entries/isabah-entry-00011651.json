@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011651",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11651,
+  "title": {
+    "english": "Qariba bint Abi Sufyan ibn Harb al-Umawiyya",
+    "arabic_observed": "قريبة بنت أبي سفيان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011651-segment-0001",
+      "volume": 8,
+      "scan_page": 288,
+      "printed_page": 287,
+      "reader_page": 4200,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4200",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0288:331e52b93aa21505",
+      "arabic": "١١٦٥١- قريبة بنت أبي سفيان\nبن حرب الأمويّة، أخت معاوية، ذكرها صاحب التاريخ المظفريّ، قال: خطبها أربعة عشر رجلا من أهل بدر، فأبت وتزوّجت عقيل بن أبي طالب، وقالت: كان مع الأحبة يوم بدر- تعني أباه وأخاه «١» حنظلة وجدّها عتبة، وأخاه شيبة، ومن كان معه من المشركين يوم بدر.",
+      "english": "11651—Qariba bint Abi Sufyan ibn Harb al-Umawiyya\n\nThe sister of Mu'awiya. The author of al-Tarikh al-Muzaffari mentioned her and said: Fourteen men from among the people of Badr proposed marriage to her, but she refused and married Aqil ibn Abi Talib. She said, “He was with the loved ones on the day of Badr”—meaning his father and his brother Hanzala,(1) her grandfather Utba and his brother Shayba, and those polytheists who were with him on the day of Badr.",
+      "arabic_sha256": "e76ec1212a1abdac28be71f2f2014c9201369bf4835bfe8a1fab69ac843fb6dc",
+      "english_sha256": "db87170de0966a2f9594e831064ac6f3106163e2b6c27b73f23bffa2f5edee17",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "قريبة بنت أبي سفيان بن حرب الأمويّة",
+      "english": "Qariba bint Abi Sufyan ibn Harb al-Umawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "التاريخ المظفريّ",
+      "english": "al-Tarikh al-Muzaffari",
+      "kind": "work"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "عقيل بن أبي طالب",
+      "english": "Aqil ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "حنظلة",
+      "english": "Hanzala",
+      "kind": "person"
+    },
+    {
+      "arabic": "عتبة",
+      "english": "Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "شيبة",
+      "english": "Shayba",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

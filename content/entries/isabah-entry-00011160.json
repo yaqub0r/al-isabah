@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011160",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11160,
+  "title": {
+    "english": "Rabita bint Hassan³ ibn 'Anaza ibn Thamira⁴, one of the captives of Hawazin. The Messenger of Allah—may Allah bless him and grant him peace—gave her to Ali ibn Abi Talib, who taught her something of the Quran.",
+    "arabic_observed": "رابطة بنت حسان «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011160-segment-0001",
+      "volume": 8,
+      "scan_page": 131,
+      "printed_page": 130,
+      "reader_page": 4043,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4043",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0131:46c29236c3b64007",
+      "arabic": "١١١٦٠- رابطة بنت حسان «٣»\nبن عنزة بن ثامرة «٤»، من سبي هوازن، وهبها رسول اللَّه ﷺ لعلي بن أبي طالب فعلمها شيئا من القرآن.\nذكرها ابن إسحاق في رواية يونس بن بكير وغيره عنه.",
+      "english": "11160 — Rabita bint Hassan³ ibn 'Anaza ibn Thamira⁴, one of the captives of Hawazin. The Messenger of Allah—may Allah bless him and grant him peace—gave her to Ali ibn Abi Talib, who taught her something of the Quran.\n\nIbn Ishaq mentioned her in the transmission of Yunus ibn Bukayr and others from him.",
+      "arabic_sha256": "4033b928b2bc28f20b9c34c4acae5f312010ca8778ed2f3b4b560d08ea720a06",
+      "english_sha256": "eb6b83aed3597b1d6ae8d60b52c458b8ba4d00f410d6bffa5867eba078b8210b",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "هوازن",
+      "english": "Hawazin",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن أبي طالب",
+      "english": "Ali ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرآن",
+      "english": "Quran",
+      "kind": "work"
+    },
+    {
+      "arabic": "يونس بن بكير",
+      "english": "Yunus ibn Bukayr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

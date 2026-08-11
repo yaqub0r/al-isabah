@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011595",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11595,
+  "title": {
+    "english": "Fatima bint Sawda",
+    "arabic_observed": "فاطمة بنت سودة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011595-segment-0001",
+      "volume": 8,
+      "scan_page": 273,
+      "printed_page": 272,
+      "reader_page": 4185,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4185",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0273:d377e72fdb7386de",
+      "arabic": "١١٥٩٥- فاطمة بنت سودة\nبن أبي ضبيس «١» - بضاد معجمة وموحدة ثم مهملة مصغر، الجهنية.\nذكرها ابن حبيب في المبايعات.",
+      "english": "11595—Fatima bint Sawda\n\nibn Abi Dubays(1)—with a dotted dad, a single-dotted ba, and then an unpointed sin, in the diminutive form—al-Juhaniyya.\n\nIbn Habib mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "d052ada58b162d014b30e4ea13e583a759ae997945e95af3b4efd7dc2d9f2dba",
+      "english_sha256": "f49cc8e8e959a76b5d3cad1c980c74e9a568499611f6e41a468901672d94ac4f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

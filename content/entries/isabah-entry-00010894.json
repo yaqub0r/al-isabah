@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010894",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10894,
+  "title": {
+    "english": "Anisa bint Amr",
+    "arabic_observed": "أنيسة بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010894-segment-0001",
+      "volume": 8,
+      "scan_page": 41,
+      "printed_page": 40,
+      "reader_page": 3953,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3953",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0041:e4605fe0c8a3cf89",
+      "arabic": "١٠٨٩٤- أنيسة بنت عمرو\nبن قيس بن مالك بن عدي بن النجار، أخت أبي سليط أسيرة بن عمر، وأمهما أمية بنت أوس بن عجرة.\nتزوجها النعمان، فولدت له قتادة، وأم سهل، ثم خلف عليها مالك بن سنان فولدت له أبا سعيد.",
+      "english": "10894—Anisa bint Amr\n\nibn Qays ibn Malik ibn Adi ibn al-Najjar. She was the sister of Usayra ibn Umar, known as Abu Sulayt. Their mother was Umayya bint Aws ibn Ajara.\n\nAl-Numan married her, and she bore him Qatada and Umm Sahl. Malik ibn Sinan then married her after him, and she bore him Abu Said.",
+      "arabic_sha256": "ef3f854a8b9c814dc4bfa53f190f8e09e967c438eeab7d19a18bd7cd0da6f16b",
+      "english_sha256": "e100c552b6e6559b7f97cc742a55ba6bd9279e61e02a87807f991c4af166627a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أمية بنت أوس بن عجرة",
+      "english": "Umayya bint Aws ibn Ajara",
+      "kind": "person"
+    },
+    {
+      "arabic": "النعمان",
+      "english": "al-Numan",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتادة",
+      "english": "Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سهل",
+      "english": "Umm Sahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "مالك بن سنان",
+      "english": "Malik ibn Sinan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سعيد",
+      "english": "Abu Said",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

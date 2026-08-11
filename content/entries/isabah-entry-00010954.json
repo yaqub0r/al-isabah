@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010954",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10954,
+  "title": {
+    "english": "Bujayda,",
+    "arabic_observed": "بجيدة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010954-segment-0001",
+      "volume": 8,
+      "scan_page": 56,
+      "printed_page": 55,
+      "reader_page": 3968,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3968",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0056:6ddbd915a60776ee",
+      "arabic": "١٠٩٥٤- بجيدة ،\nبجيم مصغرة «٣» .\nقال أبو عمر:\nذكر ابن أبي خيثمة بسنده عن ابن أبي ذئب، عن المقبري، عن عبد الرحمن بن بجيدة، عن أمه بجيدة، قالت: قال رسول اللَّه ﷺ: «اجعل في يد السّائل ولو ظلفا محرقا» .\nكذا قال، وإنما هي أم بجيدة. انتهى.\nوالصواب عن عبد الرحمن بن أم بجيدة، عن أم بجيدة، كما سيأتي على الصواب في الكنى.",
+      "english": "10954. Bujayda,\n\nwith a jim, in the diminutive form.³\n\nAbu Umar said:\n\nIbn Abi Khaythama related, with his chain of transmission, from Ibn Abi Dhi'b, from al-Maqburi, from Abd al-Rahman ibn Bujayda, from his mother Bujayda, who said: The Messenger of Allah, may Allah bless him and grant him peace, said: “Put something into the beggar's hand, even if it is a scorched hoof.”\n\nThat is how he stated it, but she is actually Umm Bujayda. End quote.\n\nThe correct form is: from Abd al-Rahman ibn Umm Bujayda, from Umm Bujayda, as will appear correctly in the section on kunyas.",
+      "arabic_sha256": "1327b3830ab9cfb3ea7167c21f5d5aa0eea1fddb3264077a38c10fb78756d52e",
+      "english_sha256": "1f1850c37eb1d640df1ca6e3d15f9f9c0375e4f6f325ef1d557d38a3bc61831f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "بجيدة",
+      "english": "Bujayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي خيثمة",
+      "english": "Ibn Abi Khaythama",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي ذئب",
+      "english": "Ibn Abi Dhi'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "المقبري",
+      "english": "al-Maqburi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن بجيدة",
+      "english": "Abd al-Rahman ibn Bujayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم بجيدة",
+      "english": "Umm Bujayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن أم بجيدة",
+      "english": "Abd al-Rahman ibn Umm Bujayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

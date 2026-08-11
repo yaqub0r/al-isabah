@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010941",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10941,
+  "title": {
+    "english": "Bashira bint Thabit",
+    "arabic_observed": "بشيرة بنت ثابت"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010941-segment-0001",
+      "volume": 8,
+      "scan_page": 53,
+      "printed_page": 52,
+      "reader_page": 3965,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3965",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0053:89f56c72ae8a0c23",
+      "arabic": "١٠٩٤١- بشيرة بنت ثابت\nبن النعمان بن الحارث الأنصارية. ذكرها ابن سعد في «المبايعات» .",
+      "english": "10941—Bashira bint Thabit\n\nibn al-Nu'man ibn al-Harith, the Ansari woman. Ibn Sa'd mentioned her among “the women who pledged allegiance.”",
+      "arabic_sha256": "7aa692b018f4988b8a31b690898166e5cf2b5abbb3a11d8d4272e09b424af48b",
+      "english_sha256": "b3fc8fd5fb1e2cf94bcd88f31dd27b27b722ae05d78ab35d27526d8ce4ee783b",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

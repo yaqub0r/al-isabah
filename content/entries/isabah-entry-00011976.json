@@ -1,0 +1,379 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011976",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11976,
+  "title": {
+    "english": "Umm al-Hakam bint al-Zubayr ibn Abd al-Muttalib ibn Hashim, a Qurashi Hashimite woman,[4] and a paternal cousin of the Prophet.",
+    "arabic_observed": "أم الحكم بنت الزّبير"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011976-segment-0001",
+      "volume": 8,
+      "scan_page": 378,
+      "printed_page": 377,
+      "reader_page": 4290,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4290",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0378:37c06e0586709ca4",
+      "arabic": "١١٩٧٦- أم الحكم بنت الزّبير\nبن عبد المطلب بن هاشم القرشيّة الهاشمية «٤»، ابنة عم النبي ﵌.\nقال الزّبير بن بكّار: ويقال: إنها كانت أخته من الرضاعة، وكان يزورها بالمدينة، ويقال لها أم حكيم، وهي أخت ضباعة التي تقدمت في الأسماء.\n(١) أخرجه أبو داود في السنن ١/ ٥٦٩ كتاب المناسك باب في المحرم يظلل حديث رقم ١٨٣٤.\n(٢) أخرجه ابن ماجة في السنن ٢/ ٧٢٥ كتاب التجارة باب (٢) الاقتصاد في طلب المعيشة حديث رقم ٢١٤٤ قال البوصيري في الزوائد علي ابن ماجة ٢/ ٧٢٥ اسناده ضعيف لأن فيه الوليد بن مسلم وابن جريج وكل منهما كان يدلس وكذلك أبو الزبير وقد عنعنوه لكن لم ينفرد به المصنف من حديث أبي الزبير عن جابر فقد رواه ابن حبان في صحيحه بإسنادين عن جابر أ. هـ-. وأحمد في المسند ٥/ ٣٨١، والحاكم في المستدرك ٤/ ٣٢٥ وقال صحيح الإسناد ولم يخرجاه، والطبراني في الكبير ٤/ ٧٥ والبغوي في شرح السنن ٦/ ١٤٩، وكنز العمال حديث رقم ٩٢٨٩.\n(٣) أسد الغابة ت (٧٤١٥)، الاستيعاب ت (٣٥٩٦)، الثقات ٣/ ٤٦٠، تجريد أسماء الصحابة ٢/ ٣١٧.\n(٤) أعلام النساء ١/ ٢٣٥ تجريد أسماء الصحابة ٢/ ٣١٧، تقريب التهذيب ٢/ ٦٢٠، تهذيب التهذيب ١٢/ ٤٦٣ الكاشف ٣/ ٤٨٧، تهذيب الكمال ٣/ ١٧٠٢، المنمق ٢٨٩، ٤٣٦، ٤٣٧. خلاصة تهذيب الكمال ٣/ ٣٩٨، بقي بن مخلد ٥٤٢، أسد الغابة ت (٧٤١٦) .",
+      "english": "11976 — Umm al-Hakam bint al-Zubayr ibn Abd al-Muttalib ibn Hashim, a Qurashi Hashimite woman,[4] and a paternal cousin of the Prophet.\n\nAl-Zubayr ibn Bakkar said: It is also said that she was his foster sister. The Prophet used to visit her in Medina. She was also called Umm Hakim, and she was the sister of Duba'a, who was mentioned previously in the section on names.\n\n[1] Abu Dawud recorded it in Sunan Abi Dawud, 1/569, Book of the Pilgrimage Rites, chapter “On the Pilgrim in Ihram Being Shaded,” hadith no. 1834.\n\n[2] Ibn Majah recorded it in Sunan Ibn Majah, 2/725, Book of Commerce, chapter (2), “Moderation in Seeking a Livelihood,” hadith no. 2144. Al-Busiri said in al-Zawa'id 'ala Ibn Majah, 2/725: “Its chain of transmission is weak because it contains al-Walid ibn Muslim and Ibn Jurayj, each of whom practiced tadlis, as did Abu al-Zubayr, and they narrated it using 'an. However, the compiler was not alone in transmitting it as a hadith of Abu al-Zubayr from Jabir, for Ibn Hibban narrated it in Sahih Ibn Hibban through two chains from Jabir.” End of quotation. It was also recorded by Ahmad in Musnad Ahmad, 5/381; al-Hakim in al-Mustadrak, 4/325, who said, “Its chain of transmission is sound, though the two of them did not include it”; al-Tabarani in al-Kabir, 4/75; al-Baghawi in Sharh al-Sunan, 6/149; and in Kanz al-Ummal, hadith no. 9289.\n\n[3] Usd al-Ghaba, entry 7415; al-Isti'ab, entry 3596; al-Thiqat, 3/460; al-Tajrid, 2/317.\n\n[4] A'lam al-Nisa', 1/235; al-Tajrid, 2/317; Taqrib al-Tahdhib, 2/620; Tahdhib al-Tahdhib, 12/463; al-Kashif, 3/487; Tahdhib al-Kamal, 3/1702; al-Munammaq, 289, 436, 437; Khulasat Tahdhib al-Kamal, 3/398; Baqi ibn Makhlad, 542; Usd al-Ghaba, entry 7416.",
+      "arabic_sha256": "960cba09901154da2d4ce89f8a80c6b00dffebe303eaabcc333c321206a19a5a",
+      "english_sha256": "6bccea5209174a52f4052bc50bf01f998956db7c0dd938f1bb0a0698e1c84887",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011976-segment-0002",
+      "volume": 8,
+      "scan_page": 379,
+      "printed_page": 378,
+      "reader_page": 4291,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4291",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0379:161f9027f835d652",
+      "arabic": "قال الدّار الدّارقطنيّ في كتاب «الإخوة» «١»: كانت زوج ربيعة بن الحارث بن عبد المطلب، وكذا ابن سعد «٢»، وزاد: إنها شقيقتها، وأنها ولدت له عبد شمس، وعبد المطلب، وأروى الكبرى، ومحمدا، وعبد اللَّه، والعباس، والحارث، وأمية، قال: وأطعم رسول اللَّه ﵌ أم الحكم من خيبر ثلاثين وسقا، قال: روت أم الحكم عن النبي ﵌،\nوأخرج أبو داود، من طريق عباس بن عقبة، عن الفضل بن الحسن بن عمرو بن أمية الضمريّ- أن ابن أم الحكم أو ضباعة ابنتي الزبير حدثته إحداهما أنها قالت: أصاب رسول اللَّه ﵌ سبيا، فذهبت أنا وأختي فاطمة بنت رسول اللَّه ﵌ إلى رسول اللَّه ﵌ نشكو إليه، وسألناه أن يأمر لنا بشيء من السبي، فقال: «سبقكنّ نساء بني بدر، ولكن أدلّكما على ما هو خير لكما من ذلك ...» الحديث في الذّكر في أثر كل صلاة.\nوأخرجه ابن مندة من هذا الوجه، فقال: أخبرني ابن أمّ الحكم، قال: أخبرتني أمي بنت الزبير ... فذكره، ثم قال: رواه ابن لهيعة عن الفضل كذلك.",
+      "english": "Al-Daraqutni said in the Book of Siblings (1): She was the wife of Rabi'a ibn al-Harith ibn Abd al-Muttalib. Ibn Sa'd said likewise, adding that she was Duba'a's full sister and that she bore him Abd Shams, Abd al-Muttalib, Arwa the Elder, Muhammad, Abd Allah, al-Abbas, al-Harith, and Umayya. He said: The Messenger of Allah—may Allah bless him and grant him peace—assigned Umm al-Hakam thirty wasqs from Khaybar. He said: Umm al-Hakam transmitted from the Prophet—may Allah bless him and grant him peace.\n\nAbu Dawud transmitted, through Abbas ibn Uqba, from al-Fadl ibn al-Hasan ibn Amr ibn Umayya al-Damri, that the son of either Umm al-Hakam or Duba'a—the two daughters of al-Zubayr—had been told by one of the two that she said: “The Messenger of Allah—may Allah bless him and grant him peace—acquired captives, so I and my sister Fatima, daughter of the Messenger of Allah—may Allah bless him and grant him peace—went to the Messenger of Allah—may Allah bless him and grant him peace—to complain to him, and we asked him to assign us something from the captives. He said: ‘The women of Banu Badr have preceded you, but I shall direct you both to something better for you than that…’” The rest of the hadith concerns remembrance following each prayer.\n\nIbn Manda transmitted it by this route, wording it: “The son of Umm al-Hakam informed me; he said: My mother, the daughter of al-Zubayr, informed me…” He then cited it and said: “Ibn Lahi'a transmitted it likewise from al-Fadl.”",
+      "arabic_sha256": "93d8445a93d8a9e219db6e5ea9f9ad8a44ffb31ddbaded9639736255a05a1899",
+      "english_sha256": "ac35bbaf0b0b2449552c040fcbb7fba1e1723e6f3f0a3e28ca99abec4edfad76",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم الحكم بنت الزبير بن عبد المطلب بن هاشم",
+      "english": "Umm al-Hakam bint al-Zubayr ibn Abd al-Muttalib ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن عبد المطلب بن هاشم",
+      "english": "al-Zubayr ibn Abd al-Muttalib ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد المطلب بن هاشم",
+      "english": "Abd al-Muttalib ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "هاشم",
+      "english": "Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهاشمية",
+      "english": "Banu Hashim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "أم حكيم",
+      "english": "Umm Hakim bint al-Zubayr ibn Abd al-Muttalib ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ضباعة",
+      "english": "Duba'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن لأبي داود",
+      "english": "Sunan Abi Dawud",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن لابن ماجة",
+      "english": "Sunan Ibn Majah",
+      "kind": "work"
+    },
+    {
+      "arabic": "البوصيري",
+      "english": "al-Busiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد على ابن ماجة",
+      "english": "al-Zawa'id 'ala Ibn Majah",
+      "kind": "work"
+    },
+    {
+      "arabic": "الوليد بن مسلم",
+      "english": "al-Walid ibn Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن جريج",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الزبير",
+      "english": "Abu al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر",
+      "english": "Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيح ابن حبان",
+      "english": "Sahih Ibn Hibban",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "البغوي",
+      "english": "al-Baghawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "شرح السنن",
+      "english": "Sharh al-Sunan",
+      "kind": "work"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "المنمق",
+      "english": "al-Munammaq",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدارقطني",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الإخوة",
+      "english": "Book of Siblings",
+      "kind": "work"
+    },
+    {
+      "arabic": "ربيعة بن الحارث بن عبد المطلب",
+      "english": "Rabi'a ibn al-Harith ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد شمس",
+      "english": "Abd Shams ibn Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد المطلب",
+      "english": "Abd al-Muttalib ibn Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أروى الكبرى",
+      "english": "Arwa al-Kubra bint Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad ibn Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah ibn Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "العباس",
+      "english": "al-Abbas ibn Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث",
+      "english": "al-Harith ibn Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمية",
+      "english": "Umayya ibn Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    },
+    {
+      "arabic": "عباس بن عقبة",
+      "english": "Abbas ibn Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفضل بن الحسن بن عمرو بن أمية الضمري",
+      "english": "al-Fadl ibn al-Hasan ibn Amr ibn Umayya al-Damri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت رسول اللَّه",
+      "english": "Fatima bint Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو بدر",
+      "english": "Banu Badr",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن لهيعة",
+      "english": "Ibn Lahi'a",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

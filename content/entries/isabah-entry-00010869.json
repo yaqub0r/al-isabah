@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010869",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10869,
+  "title": {
+    "english": "Umayma bint Qays ibn Abd Allah al-Asadiyya.",
+    "arabic_observed": "أميمة بنت قيس بن عبد اللَّه الأسدية."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010869-segment-0001",
+      "volume": 8,
+      "scan_page": 35,
+      "printed_page": 34,
+      "reader_page": 3947,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3947",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0035:f93ed50f5abcc3d8",
+      "arabic": "١٠٨٦٩- أميمة بنت قيس بن عبد اللَّه الأسدية.\nذكرها في «التّجريد»، وهي التي كانت مع أم حبيبة بأرض الحبشة، وكان أبواها ظئر بن لأم حبيبة، وبنو أسد كانوا حلفاء، بني أمية في الجاهلية.",
+      "english": "10869—Umayma bint Qays ibn Abd Allah al-Asadiyya.\n\nHe mentioned her in al-Tajrid. She was the woman who was with Umm Habiba in the land of Abyssinia. Her parents were Umm Habiba's foster parents, and the Banu Asad were allies of the Banu Umayya during the pre-Islamic period.",
+      "arabic_sha256": "fd5acb0eb23bca9aa1dc0a53fc4ff04a31e186313e5d186e2f95b34247cfe4fb",
+      "english_sha256": "5fb0006195f098ead3e7e3c9064239ec87015999f323fa5da59d6ef8ae85a323",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah ibn Hujayr ibn Ri'ab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة بنت قيس بن عبد اللَّه الأسدية",
+      "english": "Umayma bint Qays ibn Abd Allah al-Asadiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "بنو أسد",
+      "english": "Banu Asad",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني أمية",
+      "english": "Banu Umayya",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

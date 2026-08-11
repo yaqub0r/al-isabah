@@ -1,0 +1,83 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012145",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12145,
+  "title": {
+    "english": "Umm 'Abd Allah",
+    "arabic_observed": "أم عبد اللَّه"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012145-segment-0001",
+      "volume": 8,
+      "scan_page": 430,
+      "printed_page": 429,
+      "reader_page": 4342,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4342",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0430:96428fab8f77ded7",
+      "arabic": "١٢١٤٥- أم عبد اللَّه\nبنت نبيه بن الحجاج بن حذيفة السهميّة، والدة عبد اللَّه بن عمرو بن العاص السّهمي.\nأخرج الحارث بن أبي أسامة في مسندة، من طريق عبد الملك بن قدامة، عن عمرو بن شعيب، هو أخو عمرو، عن أبيه، عن جدّه، قال: كانت أمّ عبد اللَّه بن عمرو بنت نبيه بن الحجاج، وكانت تلطف برسول اللَّه ﷺ، فأتاها ذات يوم فقال: «كيف أنت يا أمّ عبد اللَّه؟» قالت: بخير. وعبد اللَّه رجل قد ترك الدّنيا «١» ... الحديث.",
+      "english": "12145—Umm 'Abd Allah\n\nBint Nubayh ibn al-Hajjaj ibn Hudhayfa al-Sahmiyya, the mother of 'Abd Allah ibn 'Amr ibn al-'As al-Sahmi.\n\nal-Harith ibn Abi Usama reported in his Musnad, by way of 'Abd al-Malik ibn Qudama, from 'Amr ibn Shu'ayb—he is 'Amr's brother—from his father, from his grandfather, who said: “The mother of 'Abd Allah ibn 'Amr was the daughter of Nubayh ibn al-Hajjaj, and she used to show kindness to the Messenger of Allah (may Allah bless him and grant him peace). One day he came to her and said, ‘How are you, Umm 'Abd Allah?’ She replied, ‘Well. And 'Abd Allah is a man who has forsaken this world.’”¹ … the hadith.",
+      "arabic_sha256": "c855311183c92f1965e8eb92774394a1a79a68709d0554f4e4fc08beb9040928",
+      "english_sha256": "7a986e3a8e379b505818529ceef93d3532c8df15cfa62acf93f71e5ada8bb660",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "نبيه بن الحجاج بن حذيفة",
+      "english": "Nubayh ibn al-Hajjaj ibn Hudhayfa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن عمرو بن العاص السهمي",
+      "english": "'Abd Allah ibn 'Amr ibn al-'As al-Sahmi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن أبي أسامة",
+      "english": "al-Harith ibn Abi Usama",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسندة",
+      "english": "Musnad al-Harith ibn Abi Usama",
+      "kind": "work"
+    },
+    {
+      "arabic": "عمرو بن شعيب",
+      "english": "'Amr ibn Shu'ayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو",
+      "english": "'Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبد الله",
+      "english": "Umm 'Abd Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "textual_uncertainty",
+      "arabic_span": "عن عمرو بن شعيب، هو أخو عمرو، عن أبيه، عن جدّه",
+      "explanation": "The words «هو أخو عمرو» are present in the canonical Arabic and corroborated by the Urdu translation witness, but their pronoun referent and the identity of 'Amr are incoherent in this isnad. No supplied independent Arabic witness provides a defensible emendation. The final text therefore retains the words literally without resolving or silently altering them.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0430:96428fab8f77ded7"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

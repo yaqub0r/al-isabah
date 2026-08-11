@@ -1,0 +1,115 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011108",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11108,
+  "title": {
+    "english": "Khulaysa:",
+    "arabic_observed": "خليسة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011108-segment-0001",
+      "volume": 8,
+      "scan_page": 108,
+      "printed_page": 107,
+      "reader_page": 4020,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4020",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0108:65680e5dda584248",
+      "arabic": "١١١٠٨- خليسة:\nمولاة سلمان الفارسيّ «٣» .\nيقال: إنها هي التي كاتبت سلمان،\nذكر ذلك ابن مندة في قصة إسلام سلمان في بعض طرقه، من طريق أبي سلمة بن عبد الرحمن، عن سلمان الفارسيّ، قال فيها: فمرّ بي أعرابيّ من كلب، فاحتملني حتى أتى يثرب، فاشترتني امرأة يقال لها خليسة بنت فلان حليف لبني النجار بثلاثمائة درهم، فمكثت معها ستة عشر شهرا، حتى قدم النبيّ ﷺ المدينة، فأتيته، فذكر إسلامه، قال: فأرسل إليها النبيّ ﷺ علي بن أبي طالب يقول لها: إما أن تعتقي سلمان، وإما أن أعتقه، وكانت قد أسلمت، فقالت: قل للنبيّ ﷺ ما شئت.\nفقال: أعتقته. قال: فغرس لها رسول اللَّه ﷺ ثلاثمائة سنبلة ... الحديث\nأخرجه أبو موسى في الأحاديث الطوال.\n(١) الثقات ٣/ ١١٧، أعلام النساء ١/ ٣٠١، تجريد أسماء الصحابة ٢/ ٢٦٢.\n(٢) تجريد أسماء الصحابة ٢/ ٢٦٢.\n(٣) أسد الغابة ت ٦٨٨١.",
+      "english": "11108—Khulaysa:\n\nThe patroness of Salman al-Farisi.(3)\n\nIt is said that she was the woman who concluded a manumission contract with Salman.\n\nIbn Manda mentioned this in the account of Salman's embrace of Islam, in one of its transmission routes, through Abu Salama ibn Abd al-Rahman, from Salman al-Farisi. In it, Salman said: “A Bedouin of Kalb passed by me and carried me away until he brought me to Yathrib. A woman called Khulaysa, the daughter of a certain man who was an ally of Banu al-Najjar, bought me for three hundred dirhams. I remained with her for sixteen months, until the Prophet, may Allah bless him and grant him peace, arrived in Medina. I went to him”—and he related the account of his embrace of Islam. He said: “The Prophet, may Allah bless him and grant him peace, sent Ali ibn Abi Talib to her to say: ‘Either you free Salman, or I shall free him.’ She had already embraced Islam, and she said: ‘Say whatever you wish to the Prophet, may Allah bless him and grant him peace.’ Then he said: ‘I have freed him.’” He said: “The Messenger of Allah, may Allah bless him and grant him peace, then planted three hundred ears [of grain] for her…”—the rest of the hadith.\n\nAbu Musa included it in al-Ahadith al-Tiwal.\n\n(1) al-Thiqat, 3/117; A'lam al-Nisa', 1/301; al-Tajrid, 2/262.\n\n(2) al-Tajrid, 2/262.\n\n(3) Usd al-Ghaba, entry 6881.",
+      "arabic_sha256": "7ac5218ad8768292fe45e49dab94c560c43cc58870bc2e38387462b49cbe4838",
+      "english_sha256": "3c82e75551bd1f765852cd2277a5e88f6d29300c4a33c2b491e2e8c40ab9972e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خليسة",
+      "english": "Khulaysa",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمان الفارسي",
+      "english": "Salman al-Farisi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سلمة بن عبد الرحمن",
+      "english": "Abu Salama ibn Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "كلب",
+      "english": "Kalb",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "يثرب",
+      "english": "Yathrib",
+      "kind": "place"
+    },
+    {
+      "arabic": "بنو النجار",
+      "english": "Banu al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "علي بن أبي طالب",
+      "english": "Ali ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأحاديث الطوال",
+      "english": "al-Ahadith al-Tiwal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011434",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11434,
+  "title": {
+    "english": "al-Dayzana(2) bint Abi Qays(3):",
+    "arabic_observed": "الضيزنة «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011434-segment-0001",
+      "volume": 8,
+      "scan_page": 224,
+      "printed_page": 223,
+      "reader_page": 4136,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4136",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0224:d68f9a3007255024",
+      "arabic": "١١٤٣٤- الضيزنة «٢»\nبنت أبي قيس «٣»: أسلمت وهاجرت، وقد تقدّم ذكرها في الشّفاء بنت عوف.\nالقسم الثاني والقسم الثالث\nلم يذكر فيهما أحد.\nالقسم الرابع",
+      "english": "11434—al-Dayzana(2) bint Abi Qays(3):\n\nShe embraced Islam and emigrated. She has already been mentioned under al-Shifa' bint 'Awf.\n\nTHE SECOND AND THIRD SECTIONS\n\nNo one was mentioned in either of them.\n\nTHE FOURTH SECTION",
+      "arabic_sha256": "28d50ac1554294125a42c03970ce018b80678bca2a6d71eb55dbbc2a2d9d23c9",
+      "english_sha256": "ddc1a2ea00bc552f29a61799502dc063a2756de5f4e585d2d93768c2885849fa",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الشفاء بنت عوف",
+      "english": "al-Shifa' bint 'Awf",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

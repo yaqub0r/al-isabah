@@ -1,0 +1,105 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012215",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12215,
+  "title": {
+    "english": "Umm Qays:",
+    "arabic_observed": "أم قيس:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012215-segment-0001",
+      "volume": 8,
+      "scan_page": 455,
+      "printed_page": 454,
+      "reader_page": 4367,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4367",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0455:7e05e71311e1b1ab",
+      "arabic": "١٢٢١٥- أم قيس:\nغير منسوبة «١» .\nأخرج ابن مندة، وأبو نعيم، من طريق إسماعيل بن عصام بن يزيد، قال: وجدت في كتاب جدي يزيد الّذي يقال له حبر: حدثنا سفيان عن الأعمش، عن أبي وائل، عن ابن مسعود، قال: كان فينا رجل خطب امرأة يقال لها أم قيس، فأبت أن تتزوجه حتى يهاجر، فهاجر فتزوجها، فكنا نسميه مهاجر أم قيس.\nقال ابن مسعود: من هاجر لشيء فهو له.\nقال أبو نعيم: تابعه عبد الملك الذّماريّ، عن سفيان. انتهى.\nوهو يدفع إشارة أبي موسى أنه من أفراد حبر.",
+      "english": "12215. Umm Qays:\n\nOf unspecified lineage.¹\n\nIbn Manda and Abu Nu'aym transmitted, by way of Isma'il ibn 'Isam ibn Yazid, who said: “I found in the book of my grandfather Yazid, who was called Habr: Sufyan related to us, from al-A'mash, from Abu Wa'il, from Ibn Mas'ud, who said: ‘There was among us a man who proposed marriage to a woman called Umm Qays. She refused to marry him until he emigrated. He therefore emigrated and married her, and we used to call him “the Emigrant of Umm Qays.”’”\n\nIbn Mas'ud said: “Whoever emigrates for something shall have that for which he emigrated.”\n\nAbu Nu'aym said: “He was followed in this by 'Abd al-Malik al-Dhimari, from Sufyan.” End of quotation.\n\nThis refutes Abu Musa's indication that it was among Habr's unique reports.",
+      "arabic_sha256": "4b9381d3257906bd8e5de40b17e558ffd12e82465b223e7da7e6b3896a48b59b",
+      "english_sha256": "01c876efd66c05c4910b50d2a0c018ea92d676e408c1bbdc00f50c712c163484",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم قيس",
+      "english": "Umm Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسماعيل بن عصام بن يزيد",
+      "english": "Isma'il ibn 'Isam ibn Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد",
+      "english": "Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبر",
+      "english": "Habr",
+      "kind": "person"
+    },
+    {
+      "arabic": "سفيان",
+      "english": "Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأعمش",
+      "english": "al-A'mash",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو وائل",
+      "english": "Abu Wa'il",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مسعود",
+      "english": "Ibn Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "مهاجر أم قيس",
+      "english": "Emigrant of Umm Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الملك الذماري",
+      "english": "'Abd al-Malik al-Dhimari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

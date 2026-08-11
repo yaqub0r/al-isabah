@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012157",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12157,
+  "title": {
+    "english": "Umm Ubayd bint Suraqa",
+    "arabic_observed": "أم عبيد بنت سراقة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012157-segment-0001",
+      "volume": 8,
+      "scan_page": 433,
+      "printed_page": 432,
+      "reader_page": 4345,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4345",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0433:ab8b952361d246b1",
+      "arabic": "١٢١٥٧- أم عبيد بنت سراقة\nبن الحارث بن عديّ بن مالك بن عديّ بن عامر بن غنم بن النّجّار.\nذكرها ابن سعد وقال: وهي أخت حارثة بن سراقة، وأمها الرّبيّع بنت النضر عمة أنس، تزوّجها بعد سراقة تميم بن غزيّة.",
+      "english": "12157 — Umm Ubayd bint Suraqa\n\nibn al-Harith ibn Adi ibn Malik ibn Adi ibn Amir ibn Ghanm ibn al-Najjar.\n\nIbn Sa'd mentioned her and said: She was the sister of Haritha ibn Suraqa. Her mother was al-Rubayyi' bint al-Nadr, the paternal aunt of Anas. After Suraqa, Tamim ibn Ghaziyya married her mother.",
+      "arabic_sha256": "2550dcd5223d37b935462230ac544f12504bff1db21975b2beb86431725dd715",
+      "english_sha256": "d88274a0abf3649b5c2ee3908ff09c10c0261ab73d0df9c28a0819c4c6a42b9f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "حارثة بن سراقة",
+      "english": "Haritha ibn Suraqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الربيع بنت النضر",
+      "english": "al-Rubayyi' bint al-Nadr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس",
+      "english": "Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "سراقة",
+      "english": "Suraqa ibn al-Harith ibn Adi ibn Malik ibn Adi ibn Amir ibn Ghanm ibn al-Najjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "تميم بن غزية",
+      "english": "Tamim ibn Ghaziyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عدي",
+      "english": "Ibn Adi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

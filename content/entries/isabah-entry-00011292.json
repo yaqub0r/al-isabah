@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011292",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11292,
+  "title": {
+    "english": "Su'ad (2) bint Rafi' ibn Abi 'Umar ibn 'A'idh ibn Tha'laba al-Ansariyya (3), of Banu Malik ibn al-Najjar. Her kunyah was Umm Salama.",
+    "arabic_observed": "سعاد «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011292-segment-0001",
+      "volume": 8,
+      "scan_page": 176,
+      "printed_page": 175,
+      "reader_page": 4088,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4088",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0176:a45db5a9903559b3",
+      "arabic": "١١٢٩٢- سعاد «٢»\nبنت رافع بن أبي عمر بن عائذ بن ثعلبة الأنصارية «٣»، من بني مالك بن النجار، تكنى أم سلمة.\nذكرها ابن سعد هي وأختها كبشة في المبايعات، وقال: تزوجها أسلم بن حريش بن عدي بن سهل بن ثعلبة، فولدت له سلمة.",
+      "english": "11292 — Su'ad (2) bint Rafi' ibn Abi 'Umar ibn 'A'idh ibn Tha'laba al-Ansariyya (3), of Banu Malik ibn al-Najjar. Her kunyah was Umm Salama.\n\nIbn Sa'd mentioned her and her sister Kabsha among the women who gave the pledge of allegiance. He said: “Aslam ibn Huraysh ibn 'Adi ibn Sahl ibn Tha'laba married her, and she bore him Salama.”",
+      "arabic_sha256": "122f823d0fff0ad97c7acd03f6e0bba694dd9a64234ccb740cad0612c0a5bab7",
+      "english_sha256": "1582b2b7c3c1bb396d1c67e3357a3df8304b60bb00f593118ae4d36b9c65860a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني مالك بن النجار",
+      "english": "Banu Malik ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "كبشة",
+      "english": "Kabsha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسلم بن حريش بن عدي بن سهل بن ثعلبة",
+      "english": "Aslam ibn Huraysh ibn 'Adi ibn Sahl ibn Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمة",
+      "english": "Salama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

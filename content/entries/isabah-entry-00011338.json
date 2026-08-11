@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011338",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11338,
+  "title": {
+    "english": "Samra bint Nuhayk (2)",
+    "arabic_observed": "سمراء بنت نهيك «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011338-segment-0001",
+      "volume": 8,
+      "scan_page": 190,
+      "printed_page": 189,
+      "reader_page": 4102,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4102",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0190:32466e2658464c43",
+      "arabic": "١١٣٣٨- سمراء بنت نهيك «٢»\n. تأتي في القسم الثالث.",
+      "english": "11338—Samra bint Nuhayk (2)\n\nShe will appear in the third section.",
+      "arabic_sha256": "3875aa5b2ef5b7644356b4ed0a532a3e710bc5788c2b796b78b3968eeff97469",
+      "english_sha256": "064f32a6c298a7e44334791980c5a4b1ac60ee5caf294ca259f93c9c79edcdf3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سمراء بنت نهيك",
+      "english": "Samra bint Nuhayk",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

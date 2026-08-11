@@ -1,0 +1,135 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012219",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12219,
+  "title": {
+    "english": "Umm Kabsha al-Quda'iyya (2):",
+    "arabic_observed": "أم كبشة القضاعية «٢»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012219-segment-0001",
+      "volume": 8,
+      "scan_page": 456,
+      "printed_page": 455,
+      "reader_page": 4368,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4368",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0456:4efa6e098e2ddf37",
+      "arabic": "١٢٢١٩- أم كبشة القضاعية «٢»:\nذكرها ابن أبي عاصم في «الوحدان»،\nوأخرج حديثها أبو بكر بن أبي شيبة، ومطين والطبراني وغيرهم، من طريق الأسود بن قيس، عن سعيد بن عمرو القرشي- أن أم كبشة امرأة من قضاعة- قالت: يا رسول اللَّه، ائذن لي أن أخرج في حبيش كذا وكذا. قال: لا.\nقالت: يا رسول اللَّه، إني لست أريد أن أقاتل، إنما أريد أن أداوي الجرحى والمرضى وأسقي الماء. قال: «لولا أن تكون سنة، ويقال: فلانة خرجت لأذنت لك، ولكن اجلسي» .\nوأخرجه ابن سعد، عن ابن أبي شيبة، وفي آخره: «اجلسي لا يتحدّث النّاس أنّ محمّدا يغزو بامرأة» .\nويمكن الجمع بين هذا وبين ما تقدم في ترجمة أم سنان الأسلمي- أن هذا ناسخ لذاك، لأن ذلك كان بخيبر، وقد وقع قبله بأحد كما في الصحيح من حديث البراء بن عازب، وكان هذا بعد الفتح.",
+      "english": "12219 - Umm Kabsha al-Quda'iyya (2):\n\nIbn Abi 'Asim mentioned her in al-Wuhdan.\n\nHer hadith was transmitted by Abu Bakr ibn Abi Shayba, Mutayyan, al-Tabarani, and others, by way of al-Aswad ibn Qays, from Sa'id ibn 'Amr al-Qurashi—that Umm Kabsha, a woman of Quda'a, said: “O Messenger of Allah, permit me to go out with such-and-such a force.” He said, “No.”\n\nShe said, “O Messenger of Allah, I do not wish to fight. I only wish to tend the wounded and the sick and to give water to drink.” He said: “Were it not that this might become an established precedent, and that people would say, ‘So-and-so went out,’ I would permit you; but stay.”\n\nIbn Sa'd also transmitted it from Ibn Abi Shayba, and at its end it reads: “Stay, lest people say that Muhammad goes on military expeditions accompanied by a woman.”\n\nThis can be reconciled with what was mentioned previously in the biography of Umm Sinan al-Aslamiyya by holding that this report abrogates that one, because that occurred at Khaybar, while it had also occurred earlier at Uhud, as is found in al-Sahih in the hadith of al-Bara' ibn 'Azib, whereas this occurred after the Conquest.",
+      "arabic_sha256": "9738921618f4f82453890946183c2123474361b480fd44ea8cd36192f7c69ab3",
+      "english_sha256": "5ef72de3fc3a1f69117ad37689ea617a75aba1a362d5e0d903fc84a2560418a0",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم كبشة القضاعية",
+      "english": "Umm Kabsha al-Quda'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi 'Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوحدان",
+      "english": "al-Wuhdan",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو بكر بن أبي شيبة",
+      "english": "Abu Bakr ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "مطين",
+      "english": "Mutayyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأسود بن قيس",
+      "english": "al-Aswad ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن عمرو القرشي",
+      "english": "Sa'id ibn 'Amr al-Qurashi",
+      "kind": "person"
+    },
+    {
+      "arabic": "قضاعة",
+      "english": "Quda'a",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سنان الأسلمي",
+      "english": "Umm Sinan al-Aslamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "al-Sahih",
+      "kind": "work"
+    },
+    {
+      "arabic": "البراء بن عازب",
+      "english": "al-Bara' ibn 'Azib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفتح",
+      "english": "the Conquest",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

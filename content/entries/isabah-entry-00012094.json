@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012094",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12094,
+  "title": {
+    "english": "Umm Shubath [1]",
+    "arabic_observed": "أم شباث «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012094-segment-0001",
+      "volume": 8,
+      "scan_page": 416,
+      "printed_page": 415,
+      "reader_page": 4328,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4328",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0416:f7659d7718f758b0",
+      "arabic": "١٢٠٩٤- أم شباث «١»\n: بمعجمة وموّحدة ثم مثلثة. تقدّم ذكرها في شباث. وتأتي في أم منيع.",
+      "english": "12094—Umm Shubath [1]\n\nIt is spelled with dotted shin, then single-dotted ba, then three-dotted tha. She was mentioned previously under Shubath, and she will appear under Umm Mani'.",
+      "arabic_sha256": "133535bdbe4262012fb6b2b055045034c166a20967801ef25941bb34bb26a462",
+      "english_sha256": "6a9fe614423400c0594cbd0a3523feabf69e2146c22196d5819f24959d9b695b",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم شباث",
+      "english": "Umm Shubath",
+      "kind": "person"
+    },
+    {
+      "arabic": "شباث",
+      "english": "Shubath",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم منيع",
+      "english": "Umm Mani'",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

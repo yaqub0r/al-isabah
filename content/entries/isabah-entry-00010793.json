@@ -1,0 +1,224 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010793",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10793,
+  "title": {
+    "english": "Arwa bint Kurayz",
+    "arabic_observed": "أروى بنت كريز"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010793-segment-0001",
+      "volume": 8,
+      "scan_page": 10,
+      "printed_page": 9,
+      "reader_page": 3922,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3922",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0010:3b6d798359005da6",
+      "arabic": "١٠٧٩٣- أروى بنت كريز\nبن ربيعة «١» بن حبيب بن عبد شمس العبشمية، والدة عثمان بن عفان.\nأمّها البيضاء بنت عبد المطلب عمة رسول اللَّه ﷺ.\nذكرها ابن أبي عاصم في «الوحدان»، وأخرج هو والحاكم من طريق فيها ضعف، عن الزهري، عن عبيد «٢» اللَّه ابن عبد اللَّه بن عتبة، عن ابن عباس، قال: أسلمت أمّ عثمان، وأم طلحة، وأم عمار، وأم أبي بكر، وأم الزبير، وأم عبد الرحمن بن عوف. قال ابن مندة:\nماتت في خلافة عثمان بن عفان، ولا يعرف لها حديث.\nقال ابن سعد: تزوجها عفان بن أبي العاص، فولدت له عثمان وآمنة، ثم تزوجها عقبة بن أبي معيط، فولدت له الوليد، وعمارة، وخالدا، وأم كلثوم، وأم حكيم وهندا.\nوأسلمت أروى وهاجرت بعد ابنتها أمّ كلثوم، وبايعت رسول اللَّه ﷺ، ولم تزل بالمدينة حتى ماتت.\nوقرأت بخط البجيري: توفيت أم عثمان ولها تسعون سنة، فحمل عثمان سريرها، وصلّى عليها.\nوأخرج ابن سعد بسند فيه الواقدي إلى عبد اللَّه بن حنظلة بن الراهب: شهدت أم عثمان يوم ماتت فدفنها ابنها بالبقيع، ورجع وقد صلّى الناس فصلّى وحده، وصليت إلى جنبه، فسمعته وهو ساجد يقول: اللَّهمّ ارحم أمي، اللَّهمّ اغفر لأمي، وذلك في خلافته.\n(١) الثقات ٢٥٣، تجريد أسماء الصحابة ٢/ ٢٤٤.\n(٢) في أ: عبد.",
+      "english": "10793—Arwa bint Kurayz\n\nibn Rabi'a(1) ibn Habib ibn Abd Shams, the Abshami woman and mother of Uthman ibn Affan.\n\nHer mother was al-Bayda bint Abd al-Muttalib, the paternal aunt of the Messenger of Allah—may Allah bless him and grant him peace.\n\nIbn Abi Asim mentioned her in al-Wuhdan. He and al-Hakim transmitted, through a chain containing weakness, from al-Zuhri, from Ubayd(2) Allah ibn Abd Allah ibn Utba, from Ibn Abbas, who said: “The mother of Uthman, the mother of Talha, the mother of Ammar, the mother of Abu Bakr, the mother of al-Zubayr, and the mother of Abd al-Rahman ibn Awf embraced Islam.” Ibn Manda said: “She died during the caliphate of Uthman ibn Affan, and no hadith is known from her.”\n\nIbn Sa'd said: “Affan ibn Abi al-As married her, and she bore him Uthman and Amina. Then Uqba ibn Abi Mu'ayt married her, and she bore him al-Walid, Umara, Khalid, Umm Kulthum, Umm Hakim, and Hind.”\n\nArwa embraced Islam, emigrated after her daughter Umm Kulthum, and pledged allegiance to the Messenger of Allah—may Allah bless him and grant him peace. She remained in Medina until she died.\n\nI read in al-Bujayri's handwriting: “Uthman's mother died at the age of ninety. Uthman carried her bier and performed the funeral prayer over her.”\n\nIbn Sa'd transmitted, through a chain containing al-Waqidi, reaching Abd Allah ibn Hanzala ibn al-Rahib: “I was present on the day Uthman's mother died. Her son buried her in al-Baqi and returned after the people had already performed the prayer. He then prayed alone, and I prayed beside him. I heard him saying while prostrating: ‘O Allah, have mercy on my mother. O Allah, forgive my mother.’ That was during his caliphate.”\n\n(1) al-Thiqat, p. 253; al-Tajrid, 2/244.\n\n(2) In manuscript A: “Abd.”",
+      "arabic_sha256": "24e23ae5bc3b2a00cccd067ac13f520bee0cea52899c40015338bacaf4a440ee",
+      "english_sha256": "0607527409976f6222dffc0e2e14dc3948ce4d3421a536d77435e24a6543a9ce",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00010793-segment-0002",
+      "volume": 8,
+      "scan_page": 11,
+      "printed_page": 10,
+      "reader_page": 3923,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3923",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0011:55c54a283604bf8c",
+      "arabic": "ومن طريق عيسى بن طلحة: رأيت عثمان حمل سرير أمّه بين العمودين من دار غطيش، فلم يزل حتى وضعها بموضع الجنائز، قال: ورأيته بعد أن دفنها قائما على قبرها يدعو لها.",
+      "english": "And by way of Isa ibn Talha: I saw Uthman carrying his mother's bier between the two poles from the house of Ghatish. He continued until he set it down at the place for funerals. He said: I also saw him, after he had buried her, standing at her grave and supplicating for her.",
+      "arabic_sha256": "c51371b54a47e9c8a2b967db3eaf1976d9a7cf9302c1bfd4e06d7515d92fca1b",
+      "english_sha256": "b47710a1fd4ae82aa4d9466cd1bd847beaf12ec0a0403aa061faafc72e945f78",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أروى",
+      "english": "Arwa bint Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن عفان",
+      "english": "Uthman ibn Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "البيضاء بنت عبد المطلب",
+      "english": "al-Bayda bint Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوحدان",
+      "english": "al-Wuhdan",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد",
+      "english": "Abd Allah ibn Abd Allah ibn Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "طلحة",
+      "english": "Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمار",
+      "english": "Ammar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عوف",
+      "english": "Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عفان بن أبي العاص",
+      "english": "Affan ibn Abi al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "آمنة",
+      "english": "Amina",
+      "kind": "person"
+    },
+    {
+      "arabic": "عقبة بن أبي معيط",
+      "english": "Uqba ibn Abi Mu'ayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوليد",
+      "english": "al-Walid",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمارة",
+      "english": "Umara",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد",
+      "english": "Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم",
+      "english": "Umm Kulthum",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم",
+      "english": "Umm Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند",
+      "english": "Hind",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "البجيري",
+      "english": "al-Bujayri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن حنظلة بن الراهب",
+      "english": "Abd Allah ibn Hanzala ibn al-Rahib",
+      "kind": "person"
+    },
+    {
+      "arabic": "البقيع",
+      "english": "al-Baqi",
+      "kind": "place"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "عيسى بن طلحة",
+      "english": "Isa ibn Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "غطيش",
+      "english": "Ghatish",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

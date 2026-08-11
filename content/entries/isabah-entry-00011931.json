@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011931",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11931,
+  "title": {
+    "english": "Umm al-Jalandaj:",
+    "arabic_observed": "أم الجلندج:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011931-segment-0001",
+      "volume": 8,
+      "scan_page": 368,
+      "printed_page": 367,
+      "reader_page": 4280,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4280",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0368:8e680841dd9b1c66",
+      "arabic": "١١٩٣١- أم الجلندج:\nوالدة أشعب الطماع.\nروى أبو الفرج، الأصبهانيّ، من طريق المطّلب بن عبد اللَّه بن يزيد بن عبد الملك، قال، كان عندي أشعب وجماعة فسبقت بينهم على دينار فسبقهم أشعب، وقال: أنا ابن أم الخلندج التي كانت تحرّش بين أزواج النّبيّ ﵌، فقلت له: ويحك! أو يفخر أحد بهذا! قال: لو لم يكن موثوقا بها عندهنّ ما قبلن منها.\nقلت: ويقال لها أيضا أم حميدة، وأم جعدة.\n(١) أسد الغابة ت (٧٣٨٤) .\n(٢) أسد الغابة ت (٧٣٨٥) .\n(٣) أسد الغابة ت (٧٣٨٦)، الاستيعاب ت (٣٥٨٥) .",
+      "english": "11931—Umm al-Jalandaj:\nThe mother of Ash'ab the Greedy.\nAbu al-Faraj al-Isbahani related, through al-Muttalib ibn 'Abd Allah ibn Yazid ibn 'Abd al-Malik, that he said: “Ash'ab and a group of people were with me, so I held a race among them for a dinar, and Ash'ab beat them. He said: ‘I am the son of Umm al-Khalandaj, who used to stir up trouble among the wives of the Prophet—may Allah bless him and grant him peace.’ I said to him: ‘Woe to you! Does anyone boast of such a thing?’ He replied: ‘Had they not trusted her, they would not have accepted anything from her.’”\n\nI say: She was also called Umm Humayda and Umm Ja'da.\n\n¹ Usd al-Ghaba, entry 7384.\n² Usd al-Ghaba, entry 7385.\n³ Usd al-Ghaba, entry 7386; al-Isti'ab, entry 3585.",
+      "arabic_sha256": "f5b47aabefec1a67a51855e55ad65dfeba1a936263106b7e7cc572ea34e34b70",
+      "english_sha256": "26d858f429be6c5d395063eb221a38f1e0a80be2dec3c37ef57846d31e22fdb5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم جعدة",
+      "english": "Umm Ja'da",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الجلندج",
+      "english": "Umm al-Jalandaj",
+      "kind": "person"
+    },
+    {
+      "arabic": "أشعب الطماع",
+      "english": "Ash'ab the Greedy",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الفرج الأصبهاني",
+      "english": "Abu al-Faraj al-Isbahani",
+      "kind": "person"
+    },
+    {
+      "arabic": "المطلب بن عبد الله بن يزيد بن عبد الملك",
+      "english": "al-Muttalib ibn 'Abd Allah ibn Yazid ibn 'Abd al-Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الخلندج",
+      "english": "Umm al-Khalandaj",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم حميدة",
+      "english": "Umm Humayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

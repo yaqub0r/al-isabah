@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012026",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12026,
+  "title": {
+    "english": "Umm Ramtha [1]",
+    "arabic_observed": "أم رمثة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012026-segment-0001",
+      "volume": 8,
+      "scan_page": 392,
+      "printed_page": 391,
+      "reader_page": 4304,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4304",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0392:a32db8c11ca9ff62",
+      "arabic": "١٢٠٢٦- أم رمثة «١»\n: قال أبو عمر: شهدت خيبر، ولا أعرف لها غير هذا الخبر. وقد ذكرها ابن إسحاق في رواية يونس بن بكير، فقال في تسمية من أعطاه النبيّ ﵌ من خيبر: ولأمّ رمثة أربعين وسقا.\nقلت: قد ذكرها ابن سعد، وزاد مع التمر خمسة أوسق من الشّعير، ونسبها، فقال:\nأم رمثة بنت عمرو بن هاشم بن المطّلب «٢» بن عبد مناف، ويقال أم رميثة، بالتّصغير، أسلمت وبايعت. قال: وهي والدة حكيم والد القعقاع، وذكرها فيمن بايع النّبيّ ﵌ من المهاجرات.",
+      "english": "12026 — Umm Ramtha [1]\n\nAbu Umar said: “She witnessed Khaybar, and I know no report concerning her other than this one.” Ibn Ishaq mentioned her in the recension of Yunus ibn Bukayr, saying, when naming those to whom the Prophet, peace and blessings be upon him, gave shares from Khaybar: “Umm Ramtha received forty wasqs.”\n\nI say: Ibn Sa'd mentioned her and added five wasqs of barley along with the dates. He also gave her lineage, saying: Umm Ramtha bint Amr ibn Hashim ibn al-Muttalib [2] ibn Abd Manaf. She is also called Umm Rumaytha, in the diminutive form. She embraced Islam and gave the pledge of allegiance. He said: She was the mother of Hakim, the father of al-Qa'qa'. He included her among the female Emigrants who gave the pledge of allegiance to the Prophet, peace and blessings be upon him.",
+      "arabic_sha256": "9277797770b0a4b2c80a6cb5d7cbbb32bb71239e307ae1d7c5e1f0cf545718fe",
+      "english_sha256": "a208b4885f13c5254cd9638b44a475ea7724b2aa2eaa27315b0e5bad9088dca7",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم رمثة",
+      "english": "Umm Ramtha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن بكير",
+      "english": "Yunus ibn Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم رميثة",
+      "english": "Umm Rumaytha",
+      "kind": "person"
+    },
+    {
+      "arabic": "حكيم",
+      "english": "Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "القعقاع",
+      "english": "al-Qa'qa'",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011304",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11304,
+  "title": {
+    "english": "Sukayna bint Abi Waqqas al-Zuhri, the sister of Sa'd [2]",
+    "arabic_observed": "سكينة بنت أبي وقاص"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011304-segment-0001",
+      "volume": 8,
+      "scan_page": 181,
+      "printed_page": 180,
+      "reader_page": 4093,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4093",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0181:dc70dfa0e18df5df",
+      "arabic": "١١٣٠٤- سكينة بنت أبي وقاص\nالزهري، أخت سعد «٢» .\nذكرها أبو عروبة في الصّحابة،\nوأخرج هو والفاكهيّ من كتاب مكة، من طريق هاشم بن هاشم، عن أم الحكم سكينة بنت أبي وقاص- أن النبي ﷺ ذكر الجهاد، فقلت: يا رسول اللَّه، ما جهادنا؟ قال: «جهاد كنّ الحجّ» «٣» .",
+      "english": "11304 — Sukayna bint Abi Waqqas al-Zuhri, the sister of Sa'd [2]\n\nAbu Aruba mentioned her among the Companions.\n\nHe and al-Fakihi, in the latter's Book of Mecca, reported by way of Hashim ibn Hashim, from Umm al-Hakam Sukayna bint Abi Waqqas, who said: The Prophet, may Allah bless him and grant him peace, mentioned jihad, and I said, “O Messenger of Allah, what is our jihad?” He replied, “Your jihad is the Hajj.” [3]",
+      "arabic_sha256": "93a3fb7a87cff08d30426b3c2147dceda440cb576cfd7e43a8dc1766fd4e3e49",
+      "english_sha256": "0c30572794d7f7aa9abdd0ef4289db0b3dfd39d2ca65f93b5f3e59838c76d0d6",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "سكينة بنت أبي وقاص الزهري",
+      "english": "Sukayna bint Abi Waqqas al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد",
+      "english": "Sa'd ibn Abi Waqqas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عروبة",
+      "english": "Abu Aruba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفاكهي",
+      "english": "al-Fakihi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب مكة",
+      "english": "Book of Mecca",
+      "kind": "work"
+    },
+    {
+      "arabic": "هاشم بن هاشم",
+      "english": "Hashim ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الحكم سكينة بنت أبي وقاص",
+      "english": "Umm al-Hakam Sukayna bint Abi Waqqas",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "سكينة",
+      "english": "Sukayna",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

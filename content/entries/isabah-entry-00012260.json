@@ -1,0 +1,105 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012260",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12260,
+  "title": {
+    "english": "Umm Mu'adh al-Ansariyya (1):",
+    "arabic_observed": "أم معاذ الأنصارية «١»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012260-segment-0001",
+      "volume": 8,
+      "scan_page": 476,
+      "printed_page": 475,
+      "reader_page": 4388,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4388",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0476:c4df7ad071bdd1f9",
+      "arabic": "١٢٢٦٠- أم معاذ الأنصارية «١»:\nوقع ذكرها في حديث أم عطية بالبيعة على ألا ينحن. قالت: فما وفت منا امرأة إلا أم سليم، وأم العلاء، وأم معاذ، كذا أورده المستغفري، وهو عند ابن سعد من رواية أيوب عن حفصة، عن أم عطية.\nوالحديث في الصحيح من طريق أيوب، عن محمد بن سيرين، عن أم عطية، بلفظ أم سليم، وأم العلاء، وابنة أبي سبرة امرأة معاذ ... الحديث.",
+      "english": "12260- Umm Mu'adh al-Ansariyya (1):\n\nShe is mentioned in the hadith of Umm 'Atiyya concerning the pledge that they would not wail for the dead. She said: “No woman among us fulfilled it except Umm Sulaym, Umm al-'Ala', and Umm Mu'adh.” This is how al-Mustaghfiri cited it. It is found in Ibn Sa'd through the narration of Ayyub, from Hafsa, from Umm 'Atiyya.\n\nThe hadith appears in al-Sahih through the route of Ayyub, from Muhammad ibn Sirin, from Umm 'Atiyya, with the wording: “Umm Sulaym, Umm al-'Ala', and Bint Abi Sabra, the wife of Mu'adh...” - the remainder of the hadith.",
+      "arabic_sha256": "6e949ce448600fc4d5052534964b3499ab28ff97ded28c633f4a4c4fdc22984a",
+      "english_sha256": "5ca6fe106235601dda8934092b9014693bea51e2deb24baca46183db1c4e24a0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم معاذ الأنصارية",
+      "english": "Umm Mu'adh al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عطية",
+      "english": "Umm 'Atiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سليم",
+      "english": "Umm Sulaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم العلاء",
+      "english": "Umm al-'Ala'",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أيوب",
+      "english": "Ayyub",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفصة",
+      "english": "Hafsa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "al-Sahih",
+      "kind": "work"
+    },
+    {
+      "arabic": "محمد بن سيرين",
+      "english": "Muhammad ibn Sirin",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابنة أبي سبرة",
+      "english": "Bint Abi Sabra",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاذ",
+      "english": "Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

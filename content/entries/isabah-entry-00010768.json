@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010768",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10768,
+  "title": {
+    "english": "Amina bint Abi Sufyan",
+    "arabic_observed": "آمنة بنت أبي سفيان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010768-segment-0001",
+      "volume": 8,
+      "scan_page": 5,
+      "printed_page": 4,
+      "reader_page": 3917,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3917",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0005:f37adfaaa723fce4",
+      "arabic": "١٠٧٦٨- آمنة بنت أبي سفيان\nبن حرب بن أمية.\nذكرها ابن إسحاق في غزوة الطائف، وهي أميمة بالتصغير. وستأتي.",
+      "english": "10768—Amina bint Abi Sufyan\nibn Harb ibn Umayya.\nIbn Ishaq mentioned her in connection with the expedition to al-Ta'if. She is Umayma, in the diminutive form, and she will appear later.",
+      "arabic_sha256": "8af70e8268ec7b682af838799167c17d1f14538c2198c0b5c293b1d6bc8aff23",
+      "english_sha256": "4cbaddce56a7de34c50049ed09e5ce10486fe29c2494292d39c818ef1a85bff9",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أميمة",
+      "english": "Umayma bint Abi al-Khiyar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطائف",
+      "english": "al-Ta'if",
+      "kind": "place"
+    },
+    {
+      "arabic": "أميمة",
+      "english": "Umayma bint Abi Sufyan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

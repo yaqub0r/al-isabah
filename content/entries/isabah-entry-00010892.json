@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010892",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10892,
+  "title": {
+    "english": "Anisa bint Urwa ibn Masud ibn Sinan ibn Amir ibn Umayya al-Ansariyya [1], of Banu Bayada.",
+    "arabic_observed": "أنيسة بنت عروة بن مسعود"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010892-segment-0001",
+      "volume": 8,
+      "scan_page": 41,
+      "printed_page": 40,
+      "reader_page": 3953,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3953",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0041:e4605fe0c8a3cf89",
+      "arabic": "١٠٨٩٢- أنيسة بنت عروة بن مسعود\nبن سنان بن عامر بن أمية الأنصارية «١»، من بني بياضة.\nبايعت النبي ﷺ، قاله ابن حبيب، واستدركها ابن الأثير.",
+      "english": "10892—Anisa bint Urwa ibn Masud ibn Sinan ibn Amir ibn Umayya al-Ansariyya [1], of Banu Bayada.\n\nShe pledged allegiance to the Prophet (may Allah bless him and grant him peace), according to Ibn Habib. Ibn al-Athir added her as an omitted entry.",
+      "arabic_sha256": "e943aea3f864760b43801ffd32f21ba1c380aa5fdebc1e20b85137a75894fde2",
+      "english_sha256": "a5895d0eefad4cf27970d9b610d4f835c7c63e12afee6576d69982276ea30b43",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أنيسة بنت عروة بن مسعود بن سنان بن عامر بن أمية الأنصارية",
+      "english": "Anisa bint Urwa ibn Masud ibn Sinan ibn Amir ibn Umayya al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني بياضة",
+      "english": "Banu Bayada",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

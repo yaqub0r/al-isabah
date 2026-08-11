@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011164",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11164,
+  "title": {
+    "english": "al-Rabab bint al-Bara' ibn Ma'rur (1)",
+    "arabic_observed": "الرباب بنت البراء"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011164-segment-0001",
+      "volume": 8,
+      "scan_page": 132,
+      "printed_page": 131,
+      "reader_page": 4044,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4044",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0132:5ed4b7dc6b1909fb",
+      "arabic": "١١١٦٤- الرباب بنت البراء\nبن معرور «١» .\nذكرها في «التّجريد» مجردة، وكأن مستند ذلك ما اشتهر أنه مات أبوها في عهد النبي ﷺ في أوائل الهجرة، فتكون من هذا القسم",
+      "english": "11164 — al-Rabab bint al-Bara' ibn Ma'rur (1)\n\nShe is mentioned in al-Tajrid without further information. It appears that the basis for this is the well-known fact that her father died during the lifetime of the Prophet, may Allah bless him and grant him peace, in the early part of the Hijra; she would therefore belong to this section.",
+      "arabic_sha256": "cb4ff2dee0362a52a9c8b8da257848186b7fb7144303ace4d9f20c2b9533b5d5",
+      "english_sha256": "d6a4b8015099be38a05938d485b8909c9c6e2601a416b22c25d8ee81173ac745",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الرباب بنت البراء بن معرور",
+      "english": "al-Rabab bint al-Bara' ibn Ma'rur",
+      "kind": "person"
+    },
+    {
+      "arabic": "البراء بن معرور",
+      "english": "al-Bara' ibn Ma'rur",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الرباب",
+      "english": "al-Rabab bint al-Ma'rur",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرباب، غير منسوبة",
+      "english": "al-Rabab",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012069",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12069,
+  "title": {
+    "english": "Umm Salama bint Mas'ud ibn Aws ibn Malik ibn Sawad ibn Zafar",
+    "arabic_observed": "أم سلمة بنت مسعود"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012069-segment-0001",
+      "volume": 8,
+      "scan_page": 408,
+      "printed_page": 407,
+      "reader_page": 4320,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4320",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0408:61b8435bc6de9999",
+      "arabic": "١٢٠٦٩- أم سلمة بنت مسعود\nبن أوس بن مالك بن سواد بن ظفر.\nذكرها ابن سعد في المبايعات، وقال: أمها الشّموس بنت عمرو بن حرام النّجاريّة.\nتزوّجها أوس بن مالك بن قيس بن محرّث، فولدت له الحارث.",
+      "english": "12069—Umm Salama bint Mas'ud ibn Aws ibn Malik ibn Sawad ibn Zafar\n\nIbn Sa'd listed her among the women who gave the pledge of allegiance and said: Her mother was al-Shamus bint Amr ibn Haram al-Najjariyya.\n\nAws ibn Malik ibn Qays ibn Muharrith married her, and she bore him al-Harith.",
+      "arabic_sha256": "f9a711ac5ffa941cef2ff19c41b7d0972e9cad6d3ced12eb73d8ed3b3677c309",
+      "english_sha256": "15b91700e053a561b50d626505c3facdd966cbcb346f69208a998e60cd2f965d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة بنت مسعود بن أوس بن مالك بن سواد بن ظفر",
+      "english": "Umm Salama bint Mas'ud ibn Aws ibn Malik ibn Sawad ibn Zafar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشّموس بنت عمرو بن حرام النّجاريّة",
+      "english": "al-Shamus bint Amr ibn Haram al-Najjariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أوس بن مالك بن قيس بن محرّث",
+      "english": "Aws ibn Malik ibn Qays ibn Muharrith",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث",
+      "english": "al-Harith",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

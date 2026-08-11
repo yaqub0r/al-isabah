@@ -1,0 +1,104 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011415",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11415,
+  "title": {
+    "english": "Safiyya bint 'Atiyya",
+    "arabic_observed": "صفية بنت عطية"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011415-segment-0001",
+      "volume": 8,
+      "scan_page": 216,
+      "printed_page": 215,
+      "reader_page": 4128,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4128",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0216:797d7d8d80bfb917",
+      "arabic": "١١٤١٥- صفية بنت عطية\nروى عنها غياث بن عبد العزيز، وهي جدّته، حديثها عند أبي داود، من رواية أبي بحر البكراوي، عنه، عنها: دخلت مع نسوة من عبد القيس على عائشة، فسألناها عن التمر والزبيب ... الحديث.",
+      "english": "11415—Safiyya bint 'Atiyya\n\nGhiyath ibn 'Abd al-'Aziz narrated from her; she was his grandmother. Her hadith is recorded by Abu Dawud through the narration of Abu Bahr al-Bakrawi, from him, from her: “I entered the presence of Aisha with a group of women from 'Abd al-Qays, and we asked her about dates and raisins…”—the hadith.",
+      "arabic_sha256": "be60c982410afa9658ef1991876193fda71e3b3c804a4e05cb34df563a6b54e9",
+      "english_sha256": "bdae58fdc65b7e9e5a3a60a991e84a765c7b38740d152cbc7848efa56578c34e",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011415-segment-0002",
+      "volume": 8,
+      "scan_page": 217,
+      "printed_page": 216,
+      "reader_page": 4129,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4129",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0217:2806209a8535e29a",
+      "arabic": "قال البخاريّ: رواه عبد الواحد بن واصل، عن غياث، عن جدته، قالت: ربما ألقينا في نبيذ رسول اللَّه ﷺ كفا من زبيب، وقال: الأول أصح.",
+      "english": "al-Bukhari said: Abd al-Wahid ibn Wasil transmitted it from Ghiyath, from his grandmother, who said: “We would sometimes put a handful of raisins into the nabidh of the Messenger of Allah, may Allah bless him and grant him peace.” He said: “The former version is sounder.”",
+      "arabic_sha256": "0e571e0ad138df107b8f6ed8c0d99b14de4fc34b0a2098337b27abc544b90edd",
+      "english_sha256": "1953254fa849e372bc29de50094a69bbcef8c8c9a11773dbb93a13d55c000c57",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "صفية بنت عطية",
+      "english": "Safiyya bint 'Atiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "غياث بن عبد العزيز",
+      "english": "Ghiyath ibn 'Abd al-'Aziz",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي بحر البكراوي",
+      "english": "Abu Bahr al-Bakrawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد القيس",
+      "english": "'Abd al-Qays",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الواحد بن واصل",
+      "english": "Abd al-Wahid ibn Wasil",
+      "kind": "person"
+    },
+    {
+      "arabic": "غياث",
+      "english": "Ghiyath",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

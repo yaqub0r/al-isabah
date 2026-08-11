@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011851",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11851,
+  "title": {
+    "english": "Hind bint al-Hakam ibn Abi al-As ibn Umayya",
+    "arabic_observed": "هند بنت الحكم بن أبي العاص"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011851-segment-0001",
+      "volume": 8,
+      "scan_page": 345,
+      "printed_page": 344,
+      "reader_page": 4257,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4257",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0345:60204e47c123d848",
+      "arabic": "١١٨٥١- هند بنت الحكم بن أبي العاص\nبن أميّة. تأتي في القسم الثالث.",
+      "english": "11851 — Hind bint al-Hakam ibn Abi al-As ibn Umayya\n\nShe will appear in the third section.",
+      "arabic_sha256": "d3e022aab6813168a4c5e5b847b7c489e941b7bf99dd7adf1ea27843300f69d0",
+      "english_sha256": "67391b8515512740650b0e7663cf2c1aaaaa6a3c4b88c056f854680566d55cc3",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "هند بنت الحكم بن أبي العاص بن أمية",
+      "english": "Hind bint al-Hakam ibn Abi al-As ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند",
+      "english": "Hind bint Rabi'a ibn al-Harith ibn Abd al-Muttalib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010859",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10859,
+  "title": {
+    "english": "Umayma bint Sharahil (3)",
+    "arabic_observed": "أميمة بنت شراحيل «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010859-segment-0001",
+      "volume": 8,
+      "scan_page": 33,
+      "printed_page": 32,
+      "reader_page": 3945,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3945",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0033:4fd52b895dd47e6e",
+      "arabic": "١٠٨٥٩- أميمة بنت شراحيل «٣»\n، هي ابنة النعمان بن شراحيل. تأتي.",
+      "english": "10859 — Umayma bint Sharahil (3)\n\nShe is the daughter of al-Nu'man ibn Sharahil. She will be discussed below.",
+      "arabic_sha256": "451d11833dc537976bd7d48ee66deccdbb248b0dd7363807b8c4f67b6f74e2a4",
+      "english_sha256": "3e41706c081c1a97e24fea061d16c61bf1667d6f3a6822989d7e21ec1e47ef40",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أميمة بنت شراحيل",
+      "english": "Umayma bint al-Nu'man ibn Sharahil",
+      "kind": "person"
+    },
+    {
+      "arabic": "النعمان بن شراحيل",
+      "english": "al-Nu'man ibn Sharahil",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

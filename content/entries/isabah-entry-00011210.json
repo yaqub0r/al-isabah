@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011210",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11210,
+  "title": {
+    "english": "Rayta bint Abd Allah ibn Mu'awiya al-Thaqafiyya [1]",
+    "arabic_observed": "ريطة بنت عبد اللَّه بن معاوية الثقفية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011210-segment-0001",
+      "volume": 8,
+      "scan_page": 149,
+      "printed_page": 148,
+      "reader_page": 4061,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4061",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0149:7660ae87a4da8f5b",
+      "arabic": "١١٢١٠- ريطة بنت عبد اللَّه بن معاوية الثقفية «١»\n، امرأة عبد اللَّه بن مسعود، ويقال اسمها رائطة، ويقال بل اسمها زينب، فرائطة لقب، وقيل هما اثنتان.\nروى حديثها ابن أبي الزناد، عن أبيه، عن عروة، عن عبد اللَّه الثقفي، عن أخته رائطة. وقيل: عن عروة، عن ريطة بغير واسطة، ولفظه عند ابن أبي عاصم: عن رائطة امرأة عبد اللَّه بن مسعود، وأم ولده، وكانت صناعا، وليس لعبد اللَّه بن مسعود مال، وكانت تنفق عليه وعلى ولده ... الحديث.\nوقد ورد نحو هذه القصة لزينب امرأة عبد اللَّه، وهي في الصحيح. وستأتي.",
+      "english": "11210—Rayta bint Abd Allah ibn Mu'awiya al-Thaqafiyya [1]\n\nShe was the wife of Abd Allah ibn Mas'ud. It is said that her name was Ra'ita, and it is also said that her name was instead Zaynab and that Ra'ita was a nickname. It has also been said that they were two different women.\n\nHer hadith was related by Ibn Abi al-Zinad, from his father, from Urwa, from Abd Allah al-Thaqafi, from his sister Ra'ita. It is also said: from Urwa, from Rayta, with no intermediary. Its wording as given by Ibn Abi Asim is: “From Ra'ita, the wife of Abd Allah ibn Mas'ud and the mother of his children. She was an artisan, and Abd Allah ibn Mas'ud had no wealth, so she used to spend on him and on his children…”—the hadith.\n\nA similar account has been transmitted concerning Zaynab, the wife of Abd Allah, and it is in the Sahih. She will appear below.",
+      "arabic_sha256": "b9f20ea4c9d52ee0c3a450e735ffe7902e53208fc5341fef2a82650dd6c7f999",
+      "english_sha256": "fe45809ea34df033f1a56eea541960d8f050368f45607fc04e937f0504282c3a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ريطة بنت عبد اللَّه بن معاوية الثقفية",
+      "english": "Rayta bint Abd Allah ibn Mu'awiya al-Thaqafiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن مسعود",
+      "english": "Abd Allah ibn Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "رائطة",
+      "english": "Ra'ita bint Abd Allah ibn Mu'awiya al-Thaqafiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي الزناد",
+      "english": "Ibn Abi al-Zinad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه الثقفي",
+      "english": "Abd Allah al-Thaqafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "the Sahih",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

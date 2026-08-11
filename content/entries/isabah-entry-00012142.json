@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012142",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12142,
+  "title": {
+    "english": "Umm Abd Allah",
+    "arabic_observed": "أم عبد اللَّه"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012142-segment-0001",
+      "volume": 8,
+      "scan_page": 429,
+      "printed_page": 428,
+      "reader_page": 4341,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4341",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0429:c656a103def0737c",
+      "arabic": "١٢١٤٢- أم عبد اللَّه\nبنت عدي بن خويلد الأسديّة، بنت أخي خديجة، وزوج الحسين بن الحارث بن المطّلب.\nذكرها ابن سعد في ترجمة الحصين، وهي والدة عبد اللَّه بن الحصين المذكور.",
+      "english": "12142—Umm Abd Allah\n\nbint Adi ibn Khuwaylid, the Asadi woman, daughter of Khadijah's brother and wife of al-Husayn ibn al-Harith ibn al-Muttalib.\n\nIbn Sa'd mentioned her in the notice on al-Husayn [written الحصين here rather than الحسين as above]. She was the mother of the aforementioned Abd Allah ibn al-Husayn [likewise written الحصين].",
+      "arabic_sha256": "a5b6415f6f0cd0aece1d4a05b1c273b35915db60c400dd3ed483c6fc2a36ad56",
+      "english_sha256": "59ed09848c2e5b3fe2a472671a8040fdee878a0177e4ed5c9b3dd56dc52288a5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسين بن الحارث بن المطّلب",
+      "english": "al-Husayn ibn al-Harith ibn al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحصين بن الحارث بن المطّلب",
+      "english": "al-Husayn ibn al-Harith ibn al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن الحصين",
+      "english": "Abd Allah ibn al-Husayn",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

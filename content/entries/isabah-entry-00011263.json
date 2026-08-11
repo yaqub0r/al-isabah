@@ -1,0 +1,139 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011263",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11263,
+  "title": {
+    "english": "Zaynab",
+    "arabic_observed": "زينب ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011263-segment-0001",
+      "volume": 8,
+      "scan_page": 166,
+      "printed_page": 165,
+      "reader_page": 4078,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4078",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0166:1e5302aa4bea9fe7",
+      "arabic": "١١٢٦٣- زينب ،\nغير منسوبة «٢» .\nكانت تخدم أم سليم امرأة أبي طلحة، جاء عنها حديث في المعجزات،\nأخرجه الطّبرانيّ، من طريق محمد بن زياد البرجمي، حدثنا أبو طلال، عن أنس، عن أمه، قالت: كانت لي شاة فجعلت من سمنها في عكة، فبعثت بها مع زينب، فقلت: يا زينب، أبلغي هذه رسول اللَّه ﷺ، فأبلغته، فقال: «أفرغوا لها عكّتها»، ففرغت فجاءت، فعلقت العكة.\nفجاءت أمّ سليم فرأت العكة ممتلئة تقطر سمنا، فقالت: يا زينب، ألست أمرتك أن تبلّغي هذه العكة رسول اللَّه ﷺ يأتدم بها؟ قالت: قد فعلت، فإن لم تصدقيني فتعالي معي، فذهبت معها إلى النبي ﷺ، فأخبرته، فقال: «قد جاءت بها» . فقلت: والّذي بعثك بالهدى ودين الحق، إنها ممتلئة سمنا يقطر! فقال: «أتعجبين يا أمّ سليم؟ إنّ اللَّه أطعمك» .\n(١) أعلام النساء ٢/ ٥٧، تجريد أسماء الصحابة ٢/ ٢٧١، تلقيح فهوم أهل الأثر ٣٧٦.\n(٢) أسد الغابة ت ٦٩٧٧.",
+      "english": "11263 — Zaynab\n\nHer lineage is not given.²\n\nShe used to serve Umm Sulaym, the wife of Abu Talha. A hadith concerning miracles is related from her.\n\nThis was transmitted by al-Tabarani by way of Muhammad ibn Ziyad al-Barjami: Abu Talal related to us, from Anas, from his mother, who said: I had a ewe, and I put some of its clarified butter into a leather container. I sent it with Zaynab and said, “Zaynab, deliver this to the Messenger of Allah (may Allah bless him and grant him peace).” She delivered it to him, and he said, “Empty her container for her.” The container was emptied; Zaynab then returned and hung it up.\n\nUmm Sulaym came and saw the container full and dripping clarified butter. She said, “Zaynab, did I not instruct you to deliver this container to the Messenger of Allah (may Allah bless him and grant him peace), so that he might use its contents as a condiment?” She replied, “I did. If you do not believe me, come with me.” Umm Sulaym went with her to the Prophet (may Allah bless him and grant him peace) and informed him. He said, “She did bring it.” I said, “By the One who sent you with guidance and the religion of truth, it is full of clarified butter, dripping!” He said, “Are you amazed, Umm Sulaym? Allah has fed you.”\n\n¹ A'lam al-Nisa, 2/57; al-Tajrid, 2/271; Talqih Fuhum Ahl al-Athar, 376.\n\n² Usd al-Ghaba, entry no. 6977.",
+      "arabic_sha256": "5b2c42544fe7f873574f0fca76a778631e497e86e77c305aba5db9bf474bf257",
+      "english_sha256": "6ddf1da42dcd39d84bdc0cc43a63d4f3e8deb502e635f4bfc23f9fc818d96bfd",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011263-segment-0002",
+      "volume": 8,
+      "scan_page": 167,
+      "printed_page": 166,
+      "reader_page": 4079,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4079",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0167:281b962cb294b34a",
+      "arabic": "قلت: وسيأتي شيبة بهذه القصة في ترجمة أم مالك الأنصارية، وفي حفظي أن قوله زينب تصحيف، وإنما هي ربيبة، بمهملة وموحدتين الأولى مكسورة بينهما تحتانية وآخره هاء تأنيث، فليحرر هذا إن شاء اللَّه تعالى.\nالقسم الثاني",
+      "english": "I say: Something similar to this story will appear in the biography of Umm Malik al-Ansariyya. In my recollection, the reading “Zaynab” is a scribal corruption; it is actually “Rabiba”—with an undotted ra, two singly dotted ba's, the first bearing a kasra, a ya between them, and a feminine ha at the end. Let this be checked carefully, Allah Most High willing.\n\nSECTION TWO",
+      "arabic_sha256": "f27781291ca452b2a52b5d5e9e853d7e50f1086738d4f0b84625556af41cd9ba",
+      "english_sha256": "1072067ed6261178deb7b0415a2897d27c0545d24cc6999450fe05b08bd98b9d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سليم",
+      "english": "Umm Sulaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو طلحة",
+      "english": "Abu Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن زياد البرجمي",
+      "english": "Muhammad ibn Ziyad al-Barjami",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو طلال",
+      "english": "Abu Talal",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس",
+      "english": "Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم مالك الأنصارية",
+      "english": "Umm Malik al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Rabiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ربيبة",
+      "english": "Rabiba",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

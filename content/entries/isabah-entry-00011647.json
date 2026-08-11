@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011647",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11647,
+  "title": {
+    "english": "Qursafa bint al-Harith ibn Awf:",
+    "arabic_observed": "قرصافة بنت الحارث بن عوف:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011647-segment-0001",
+      "volume": 8,
+      "scan_page": 287,
+      "printed_page": 286,
+      "reader_page": 4199,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4199",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0287:f0d7af8c542e48ab",
+      "arabic": "١١٦٤٧- قرصافة بنت الحارث بن عوف:\nيقال هو اسم البرصاء، وخبرها في ترجمة والدها المذكور.",
+      "english": "11647—Qursafa bint al-Harith ibn Awf:\n\nIt is said that this was the name of al-Barsa'. Her account appears in the aforementioned entry on her father.",
+      "arabic_sha256": "c9e8e1170bc6ff84c6b0cdef3146c98a9bd09a7cbc0457466e25267ccce27bfd",
+      "english_sha256": "af11275551834dd107caa256f9e8a49e9a3b0c456a84d941400af69ccd4b2bab",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "قرصافة بنت الحارث بن عوف",
+      "english": "Qursafa bint al-Harith ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "البرصاء",
+      "english": "al-Barsa'",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

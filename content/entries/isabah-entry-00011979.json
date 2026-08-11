@@ -1,0 +1,58 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011979",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11979,
+  "title": {
+    "english": "Umm al-Hakam bint Uqba:",
+    "arabic_observed": "أم الحكم بنت عقبة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011979-segment-0001",
+      "volume": 8,
+      "scan_page": 379,
+      "printed_page": 378,
+      "reader_page": 4291,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4291",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0379:161f9027f835d652",
+      "arabic": "١١٩٧٩- أم الحكم بنت عقبة:\nتقدمت في ودة، في حرف الواو.",
+      "english": "11979—Umm al-Hakam bint Uqba:\n\nShe was mentioned previously under Wadda, in the letter waw.",
+      "arabic_sha256": "8ef2a588eedddeff3da814b9fcf6bdc69393ee5d810a13885c823bfe69399e90",
+      "english_sha256": "7b55ed805b6e68b476766ebdda374ff6ad914d20fbb49ec45fe08ea0a886c577",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم الحكم بنت عقبة",
+      "english": "Umm al-Hakam bint Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ودة",
+      "english": "Wadda",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "ودة",
+      "explanation": "The consonantal form is preserved provisionally as Wadda, but neither the supplied Arabic nor the witnesses establish its vocalization securely.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0379:161f9027f835d652"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

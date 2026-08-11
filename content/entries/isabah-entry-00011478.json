@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011478",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11478,
+  "title": {
+    "english": "Azza bint Abi Lahab ibn Abd al-Muttalib al-Hashimiyya",
+    "arabic_observed": "عزة بنت أبي لهب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011478-segment-0001",
+      "volume": 8,
+      "scan_page": 240,
+      "printed_page": 239,
+      "reader_page": 4152,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4152",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0240:4ea98228eacce38b",
+      "arabic": "١١٤٧٨- عزة بنت أبي لهب\nبن عبد المطلب الهاشمية.\nذكرها الدار الدّارقطنيّ في كتاب «الإخوة»، وقال: لا رواية لها. قال ابن سعد: تزوّجها أوفى بن حكيم بن أمية بن حارثة بن الأوقص السلمي، فولدت عبيدة وسعيدا وإبراهيم بني أوفى.",
+      "english": "11478 — Azza bint Abi Lahab ibn Abd al-Muttalib al-Hashimiyya\n\nal-Daraqutni mentioned her in the Book of Siblings and said: “No narration is transmitted from her.” Ibn Sa'd said: “Awfa ibn Hakim ibn Umayya ibn Haritha ibn al-Awqas al-Sulami married her, and she bore Ubayda, Sa'id, and Ibrahim, the sons of Awfa.”",
+      "arabic_sha256": "29332089e91b58e2f3ecba710b9fc6cb0c08cfb2eea63ec77db4f0b18c486785",
+      "english_sha256": "46862f5420bdac52d600f95c02d5f847b4c3ab09c18e7499599782b675762a44",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عزة بنت أبي لهب بن عبد المطلب الهاشمية",
+      "english": "Azza bint Abi Lahab ibn Abd al-Muttalib al-Hashimiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدارقطني",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الإخوة",
+      "english": "Book of Siblings",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أوفى بن حكيم بن أمية بن حارثة بن الأوقص السلمي",
+      "english": "Awfa ibn Hakim ibn Umayya ibn Haritha ibn al-Awqas al-Sulami",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

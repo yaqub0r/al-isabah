@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011526",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11526,
+  "title": {
+    "english": "Umayra bint Jubayr ibn Sakhr ibn Umayya ibn Khansa' ibn Ubayd ibn Adi ibn Ghanm ibn Ka'b ibn Salima al-Salamiyya [2]",
+    "arabic_observed": "عميرة بنت جبير"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011526-segment-0001",
+      "volume": 8,
+      "scan_page": 249,
+      "printed_page": 248,
+      "reader_page": 4161,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4161",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0249:fb364e33a3806aca",
+      "arabic": "١١٥٢٦- عميرة بنت جبير\nبن صخر بن أمية بن خنساء بن عبيد بن عديّ بن غنم بن كعب بن سلمة السلميّة «٢» .\nذكرها ابن سعد، وقال: تزوّجها كعب بن مالك، فولدت له عبد اللَّه، وفضالة، ووهبا، ومعبدا، وخولة، وسعاد، وبايعت عميرة وصلّت القبلتين، وجاء عنها أنها سمعت رسول اللَّه ﵌.",
+      "english": "11526—Umayra bint Jubayr ibn Sakhr ibn Umayya ibn Khansa' ibn Ubayd ibn Adi ibn Ghanm ibn Ka'b ibn Salima al-Salamiyya [2]\n\nIbn Sa'd mentioned her and said: Ka'b ibn Malik married her, and she bore him Abd Allah, Fadala, Wahb, Ma'bad, Khawla, and Su'ad. Umayra pledged allegiance, prayed toward both qiblas, and it is related from her that she heard the Messenger of Allah (may Allah bless him and grant him peace).",
+      "arabic_sha256": "e7a0498516ff3509caca99e050bc711847d922165c50c99c3b1c6a289dffbabc",
+      "english_sha256": "073f55fb301d487ee3b9e47f8e69b4f3416b042704284c4eaaba59a21f701a7e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سالم",
+      "english": "Salim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة بنت جبير بن صخر بن أمية بن خنساء بن عبيد بن عدي بن غنم بن كعب بن سلمة السلمية",
+      "english": "Umayra bint Jubayr ibn Sakhr ibn Umayya ibn Khansa' ibn Ubayd ibn Adi ibn Ghanm ibn Ka'b ibn Salima al-Salamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "كعب بن مالك",
+      "english": "Ka'b ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله",
+      "english": "Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "فضالة",
+      "english": "Fadala",
+      "kind": "person"
+    },
+    {
+      "arabic": "وهب",
+      "english": "Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "معبد",
+      "english": "Ma'bad",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة",
+      "english": "Khawla",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعاد",
+      "english": "Su'ad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

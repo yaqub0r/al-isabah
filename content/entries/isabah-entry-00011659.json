@@ -1,0 +1,125 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011659",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11659,
+  "title": {
+    "english": "Qayla al-Anmariyya [1]",
+    "arabic_observed": "قيلة الأنمارية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011659-segment-0001",
+      "volume": 8,
+      "scan_page": 292,
+      "printed_page": 291,
+      "reader_page": 4204,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4204",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0292:e8d004fd8765cb34",
+      "arabic": "١١٦٥٩- قيلة الأنمارية «١»\n: يقال لها أم بني أنمار، وأخت بني أنمار.\nوقال الطّبريّ العقيلية، وقال ابن أبي خيثمة الأنصاريّة: أخت بني أنمار، لها صحبة،\nوأخرج حديثها هو وابن ماجة، من طريق عبد اللَّه بن عثمان بن خثيم، عنها، قالت: رأيت رسول اللَّه ﷺ عند المروة يحل من عمرة له، فقلت: إني امرأة اشتري وأبيع فأستام أكثر مما أريد ثم أنقص ... الحديث. وفيه: «لا تفعلي» .\nوأخرجه ابن سعد من طريق ابن خثيم مطولا، وأخرجه ابن السكن، ووقع في روايته أن عبد اللَّه بن عثمان بن خثيم قال: إنه سمع قيلة.\nوقال الفاكهيّ: دار أم أنمار بمكة، وكانت برزة من النساء بأخرة.",
+      "english": "11659—Qayla al-Anmariyya [1]\n\nShe is called Umm Bani Anmar and a sister of Banu Anmar.\n\nAl-Tabari said that she was al-Uqayliyya. Ibn Abi Khaythama said that she was al-Ansariyya: a sister of Banu Anmar. She was a Companion.\n\nHe and Ibn Majah transmitted her hadith through Abdullah ibn Uthman ibn Khuthaym, from her. She said: “I saw the Messenger of Allah (may Allah bless him and grant him peace) at al-Marwa, leaving ihram after an 'umra of his. I said, ‘I am a woman who buys and sells. I begin bargaining at more than I want and then lower it …’” The hadith continues, and it contains: “Do not do that.”\n\nIbn Sa'd transmitted it at length through Ibn Khuthaym. Ibn al-Sakan also transmitted it, and in his version Abdullah ibn Uthman ibn Khuthaym said that he had heard Qayla.\n\nAl-Fakihi said: “The house of Umm Anmar was in Mecca, and in her later years she was one of the women who appeared openly before people.”",
+      "arabic_sha256": "2e84fd74226f1540e05c49dfa0444632d208bb040f9c54916a42b08b7d1ac6c5",
+      "english_sha256": "c758d44d15cf867a7ea6ca8bcd678db4c27d5fa8555bf5cd053292fabf17600c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "قيلة",
+      "english": "Qayla",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيلة الأنمارية",
+      "english": "Qayla al-Anmariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم بني أنمار",
+      "english": "Umm Bani Anmar",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني أنمار",
+      "english": "Banu Anmar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الطّبريّ",
+      "english": "al-Tabari",
+      "kind": "person"
+    },
+    {
+      "arabic": "العقيلية",
+      "english": "Qayla al-Uqayliyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي خيثمة",
+      "english": "Ibn Abi Khaythama",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصاريّة",
+      "english": "Qayla al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن عثمان بن خثيم",
+      "english": "Abdullah ibn Uthman ibn Khuthaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "المروة",
+      "english": "al-Marwa",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفاكهيّ",
+      "english": "al-Fakihi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم أنمار",
+      "english": "Umm Anmar",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

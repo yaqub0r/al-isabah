@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010888",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10888,
+  "title": {
+    "english": "Unaysa bint Abu Talha",
+    "arabic_observed": "أنيسة بنت أبي طلحة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010888-segment-0001",
+      "volume": 8,
+      "scan_page": 40,
+      "printed_page": 39,
+      "reader_page": 3952,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3952",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0040:fb896d23dab8c7de",
+      "arabic": "١٠٨٨٨- أنيسة بنت أبي طلحة\nبن عصمة بن زيد الأنصارية، من بني خطمة «١» .\nبايعت النبي ﷺ، قاله ابن حبيب، واستدركها ابن الأثير.",
+      "english": "10888—Unaysa bint Abu Talha\n\nibn Isma ibn Zayd, the Ansari woman of Banu Khatma.¹\n\nShe pledged allegiance to the Prophet—may Allah bless him and grant him peace. Ibn Habib said this, and Ibn al-Athir added her.",
+      "arabic_sha256": "c62f587d9726b91abca3f7d1fa9241de0424fc92303fdfa7f5770ca3f5fbef91",
+      "english_sha256": "2e262a33491e1bd494b83153df08a48b0712d3f794f80b1f9641172928e9a0f8",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني خطمة",
+      "english": "Banu Khatma",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

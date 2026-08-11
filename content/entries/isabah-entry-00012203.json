@@ -1,0 +1,73 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012203",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12203,
+  "title": {
+    "english": "Umm Fazr",
+    "arabic_observed": "أم فزر:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012203-segment-0001",
+      "volume": 8,
+      "scan_page": 450,
+      "printed_page": 449,
+      "reader_page": 4362,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4362",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0450:2d724618d9bd932e",
+      "arabic": "١٢٢٠٣- أم فزر:\nبعد الفاء زاي منقوطة ساكنة ثم راء بلا نقطة.\nذكرها الذهبي في تجريده، وقال: أسرها زيد بن حارثة فيمن أسر من جذام.",
+      "english": "12203—Umm Fazr\n\nAfter the letter fa comes a dotted zay bearing a sukun, followed by an undotted ra.\n\nAl-Dhahabi mentioned her in his al-Tajrid and said: “Zayd ibn Haritha took her captive among those of Judham whom he took captive.”",
+      "arabic_sha256": "a00c7ce0a33eef3489955afc3bd8b114e67b26900260b14172ac8b5b5ede2a63",
+      "english_sha256": "8744387bebdb88df47b1c0ec8deed2979ac3994593849a0a7108c6c02a2ebee8",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم فزر",
+      "english": "Umm Fazr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "زيد بن حارثة",
+      "english": "Zayd ibn Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "جذام",
+      "english": "Judham",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "vocalization",
+      "arabic_span": "أم فزر",
+      "explanation": "The text specifies that the zay is vowelless but does not mark the vowel of the initial fa. “Umm Fazr” is retained provisionally because the supplied witnesses do not establish the vocalization.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0450:2d724618d9bd932e"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010850",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10850,
+  "title": {
+    "english": "Umayma bint Abi Hathma",
+    "arabic_observed": "أميمة بنت أبي حثمة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010850-segment-0001",
+      "volume": 8,
+      "scan_page": 31,
+      "printed_page": 30,
+      "reader_page": 3943,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3943",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0031:39f9e796adf302b7",
+      "arabic": "١٠٨٥٠- أميمة بنت أبي حثمة ،\nواسمه عبد اللَّه بن ساعدة بن عامر بن عديّ بن جشم بن مجدعة بن حارثة الساعدية، أخت جميلة وعميرة.\nذكرها ابن سعد في الصحابيات، وقال: أمها حجة بنت عمير بن عقبة بن عمرو بن عدي بن زيد بن جشم. قال: وتزوجها هلال بن الحارث بن ربيعة بن منقذ، ثم خلف عليها أبو سندر بن الحصين بن بجاد، وأسلمت وبايعت.",
+      "english": "10850 — Umayma bint Abi Hathma\n\nHis name was Abd Allah ibn Sa'ida ibn Amir ibn Adi ibn Jashm ibn Majda'a ibn Haritha. She was of Banu Sa'ida and was the sister of Jamila and Umayra.\n\nIbn Sa'd included her among the female Companions and said: “Her mother was Hujja bint Umayr ibn Uqba ibn Amr ibn Adi ibn Zayd ibn Jashm.” He said: “Hilal ibn al-Harith ibn Rabi'a ibn Munqidh married her; after him, Abu Sandar ibn al-Husayn ibn Bijad married her. She embraced Islam and gave the pledge of allegiance.”",
+      "arabic_sha256": "d56c58293302e3497cfe3bf312f594a11036466e1adcc1bae3f97bfa28e4249b",
+      "english_sha256": "8516772fd4c5ae09ac9dcfb6257584e3e1d1532864f7eda3d41b24b67d7858e0",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أميمة بنت أبي حثمة",
+      "english": "Umayma bint Abi Hathma",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن ساعدة بن عامر بن عديّ بن جشم بن مجدعة بن حارثة",
+      "english": "Abd Allah ibn Sa'ida ibn Amir ibn Adi ibn Jashm ibn Majda'a ibn Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الساعدية",
+      "english": "Banu Sa'ida",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "جميلة",
+      "english": "Jamila",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة",
+      "english": "Umayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجة بنت عمير بن عقبة بن عمرو بن عدي بن زيد بن جشم",
+      "english": "Hujja bint Umayr ibn Uqba ibn Amr ibn Adi ibn Zayd ibn Jashm",
+      "kind": "person"
+    },
+    {
+      "arabic": "هلال بن الحارث بن ربيعة بن منقذ",
+      "english": "Hilal ibn al-Harith ibn Rabi'a ibn Munqidh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سندر بن الحصين بن بجاد",
+      "english": "Abu Sandar ibn al-Husayn ibn Bijad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar ibn al-Khattab",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011578",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11578,
+  "title": {
+    "english": "Fari'a bint Thabit ibn al-Mundhir ibn Hizam, the Ansari woman of Banu al-Najjar, sister of Hassan ibn Thabit, the poet of the Messenger of Allah—may Allah bless him and grant him peace.",
+    "arabic_observed": "فارعة بنت ثابت"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011578-segment-0001",
+      "volume": 8,
+      "scan_page": 259,
+      "printed_page": 258,
+      "reader_page": 4171,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4171",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0259:6fcc7f9445369b65",
+      "arabic": "١١٥٧٨- فارعة بنت ثابت\nبن المنذر بن حزام الأنصارية، من بني النّجّار، أخت حسان بن ثابت شاعر رسول اللَّه ﵌.\n(١) الرّعاث: القرط، وهي من حلي الأذن، واحدتها رعثة ورعثة، وجنسها الرّعث. النهاية ٢/ ٢٣٤.\n(٢) أخرجه أحمد في المسند ٣/ ٣٩١ عن جابر بن عبد اللَّه وأخرجه ابن ماجة في السنن ١/ ٦١٢- ٦١٣، كتاب النكاح (٩) باب الغناء والدف (٢١) الحديث (١٩٠٠) ولفظه عن ابن عباس وأخرجه البزار ذكره الهيثمي في كشف الأستار ٢/ ١٦٤ كتاب النكاح باب اللهو عند العرس الحديث (١٤٣٢) ولفظه عن جابر وأخرجه البيهقي في السنن الكبرى ٧/ ٢٨٩.\n(٣) أخرجه أبو داود في السنن ٢/ ٢٠ عن عبيد بن خالد السلمي قال آخر رسول اللَّه ﵌.... الحديث كتاب الجهاد باب في النور يرى عند قبر الشهيد حديث رقم ٢٥٢٤ والنسائي في السنن ٤/ ٧٤ كتاب الجنائز باب الدعاء (٧٧) حديث رقم ١٩٨٥، وأحمد في المسند ٤/ ٢١٩، والبيهقي في السنن الكبرى ٣/ ٣٧١، ٧/ ٤٧٩، وابن أبي شيبة في المصنف ١٣/ ٢٥٦ والطبراني في الكبير ٥/ ٩٠، والتبريزي في مشكاة المصابيح حديث رقم ٢٨٦.",
+      "english": "11578—Fari'a bint Thabit ibn al-Mundhir ibn Hizam, the Ansari woman of Banu al-Najjar, sister of Hassan ibn Thabit, the poet of the Messenger of Allah—may Allah bless him and grant him peace.\n\n(1) Al-ra'ath means earrings, which are ornaments worn on the ear. Its singular is ra'tha or ra'atha, and its generic noun is al-ra'th. Al-Nihaya, 2/234.\n\n(2) Ahmad transmitted it in Musnad Ahmad, 3/391, from Jabir ibn Abdullah. Ibn Majah transmitted it in al-Sunan, 1/612–613, Book of Marriage (9), chapter on singing and the tambourine (21), hadith 1900; its wording is from Ibn Abbas. Al-Bazzar also transmitted it, as al-Haythami mentioned in Kashf al-Astar, 2/164, Book of Marriage, chapter on entertainment at weddings, hadith 1432; its wording is from Jabir. Al-Bayhaqi transmitted it in al-Sunan al-Kubra, 7/289.\n\n(3) Abu Dawud transmitted it in al-Sunan, 2/20, from Ubayd ibn Khalid al-Sulami, who said: “The Messenger of Allah—may Allah bless him and grant him peace—established a bond of brotherhood …”—the hadith; Book of Jihad, chapter on the light seen at the grave of a martyr, hadith 2524. Al-Nasa'i transmitted it in al-Sunan, 4/74, Book of Funerals, chapter on supplication (77), hadith 1985; Ahmad in Musnad Ahmad, 4/219; al-Bayhaqi in al-Sunan al-Kubra, 3/371 and 7/479; Ibn Abi Shayba in al-Musannaf, 13/256; al-Tabarani in al-Kabir, 5/90; and al-Tabrizi in Mishkat al-Masabih, hadith 286.",
+      "arabic_sha256": "cc73906aff32412f32e73c7f0e371425525a85eeee049e1fea947c55eabdce57",
+      "english_sha256": "97299e185a59dc19b8c57fdad42dcd418d4296e93bbfe679dfa934059b0b6cf8",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011578-segment-0002",
+      "volume": 8,
+      "scan_page": 260,
+      "printed_page": 259,
+      "reader_page": 4172,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4172",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0260:bc3844fc30bddd42",
+      "arabic": "ذكر أبو الحسن المدائنيّ أن طويا غنّى عبد اللَّه بن جعفر بشعر، فقال: لمن هذا الشّعر؟ قال: لفارعة أخت حسّان في عبد الرّحمن بن الحارث بن هشام.\nقلت: مات والدها في الجاهليّة، وعبد الرّحمن بن الحارث كان في عهد النبيّ ﵌ صغيرا كما تقدّم في ترجمته، فلا يتأتى أن يقال فيه الشّعر إلا بعد أن يبلغ، فتكون الفارعة من هذا القسم.",
+      "english": "Abu al-Hasan al-Mada'ini mentioned that Tuways sang verses to Abdullah ibn Ja'far. He asked, “Whose poetry is this?” He replied, “It is by Fari'a, the sister of Hassan, about Abd al-Rahman ibn al-Harith ibn Hisham.”\n\nI say: Her father died in the pre-Islamic period, while Abd al-Rahman ibn al-Harith was a child during the time of the Prophet—may Allah bless him and grant him peace—as previously stated in his entry. Thus, this poetry could not have been composed about him until after he came of age, and so Fari'a belongs to this section.",
+      "arabic_sha256": "c8c8253eb743fb6397771db1900de3238df84e9baa4bb0b2a65bb7026f8b028e",
+      "english_sha256": "f423a3690d996b18814d63bf9c384d4aedda3bd5a37c5a069aaed7fa4c8728d6",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "فارعة بنت ثابت بن المنذر بن حزام",
+      "english": "Fari'a bint Thabit ibn al-Mundhir ibn Hizam",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني النجار",
+      "english": "Banu al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "حسان بن ثابت",
+      "english": "Hassan ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "جابر بن عبد الله",
+      "english": "Jabir ibn Abdullah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan Ibn Majah",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "البزار",
+      "english": "al-Bazzar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "كشف الأستار",
+      "english": "Kashf al-Astar",
+      "kind": "work"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن الكبرى",
+      "english": "al-Sunan al-Kubra",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan Abi Dawud",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبيد بن خالد السلمي",
+      "english": "Ubayd ibn Khalid al-Sulami",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan al-Nasa'i",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن أبي شيبة",
+      "english": "Ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "المصنف",
+      "english": "al-Musannaf",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "التبريزي",
+      "english": "al-Tabrizi",
+      "kind": "person"
+    },
+    {
+      "arabic": "مشكاة المصابيح",
+      "english": "Mishkat al-Masabih",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو الحسن المدائنيّ",
+      "english": "Abu al-Hasan al-Mada'ini",
+      "kind": "person"
+    },
+    {
+      "arabic": "طويا",
+      "english": "Tuways",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن جعفر",
+      "english": "Abdullah ibn Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرّحمن بن الحارث بن هشام",
+      "english": "Abd al-Rahman ibn al-Harith ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

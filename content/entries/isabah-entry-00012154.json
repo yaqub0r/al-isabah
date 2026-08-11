@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012154",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12154,
+  "title": {
+    "english": "Umm Abd al-Rahman (1):",
+    "arabic_observed": "أم عبد الرّحمن «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012154-segment-0001",
+      "volume": 8,
+      "scan_page": 433,
+      "printed_page": 432,
+      "reader_page": 4345,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4345",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0433:ab8b952361d246b1",
+      "arabic": "١٢١٥٤- أم عبد الرّحمن «١»\n: قال أبو عمر: روي عنها حديث مخرجه من أهل الكوفة\nأنها سمعت رسول اللَّه ﵌ يقول: «ارموا الجمار بمثل حصى الخذف» «٢»\nوهي والدة عبد الرّحمن بن أذينة.",
+      "english": "12154 — Umm Abd al-Rahman (1):\n\nAbu Umar said: A hadith whose line of transmission comes from the people of Kufa is related from her: she heard the Messenger of Allah say, “Cast pebbles at the jamarat with stones like the pebbles used for flicking.” (2)\n\nShe was the mother of Abd al-Rahman ibn Udhayna.",
+      "arabic_sha256": "cddd3aae7785510da7d8955112e61cf749cd0b1765a15f6663896205e090c4ff",
+      "english_sha256": "1dcb2b76b15db3c218104f391ff63e39b4e3c1d71e89e2ab788490c07604dc01",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم عبد الرحمن",
+      "english": "Umm Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكوفة",
+      "english": "Kufa",
+      "kind": "place"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عبد الرحمن بن أذينة",
+      "english": "Abd al-Rahman ibn Udhayna",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

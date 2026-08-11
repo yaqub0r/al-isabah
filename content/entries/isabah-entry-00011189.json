@@ -1,0 +1,110 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011189",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11189,
+  "title": {
+    "english": "Ramlah bint al-Harith",
+    "arabic_observed": "رملة بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011189-segment-0001",
+      "volume": 8,
+      "scan_page": 141,
+      "printed_page": 140,
+      "reader_page": 4053,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4053",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0141:10ca4d77a9520638",
+      "arabic": "١١١٨٩- رملة بنت الحارث\nبن ثعلبة بن الحارث بن زيد الأنصارية النجارية «١» .\nذكرها ابن حبيب في المبايعات، وذكر ابن إسحاق في السيرة النبويّة- أن بني قريظة لما حكم فيهم سعد بن معاذ حبسوا في دار رملة بنت الحارث امرأة من الأنصار من بني النجار.\nقلت: وتكرر ذكرها في السيرة. وأما الواقدي فيقول: رملة بنت الحدث، بفتح الدال المهملة بغير ألف قبلها. وقال ابن سعد: رملة بنت الحارث، وهو الحارث بن ثعلبة بن زيد بن ثعلبة بن غنم بن مالك بن النجار، تكنى أم ثابت، وأمها كبشة بنت ثابت بن النعمان بن حرام، وزوجها معاذ بن الحارث بن رفاعة.",
+      "english": "11189—Ramlah bint al-Harith\n\nibn Tha'laba ibn al-Harith ibn Zayd, the Ansari woman of Banu al-Najjar. (1)\n\nIbn Habib mentioned her among the women who gave the pledge of allegiance. Ibn Ishaq stated in al-Sira al-Nabawiyya that when Sa'd ibn Mu'adh pronounced judgment concerning Banu Qurayza, they were confined in the house of Ramlah bint al-Harith, a woman of the Ansar from Banu al-Najjar.\n\nI say: Her mention recurs in the Sira. As for al-Waqidi, he gives her name as Ramlah bint al-Hadath, with the undotted dal bearing a fatha and without an alif before it. Ibn Sa'd said: Ramlah bint al-Harith. This al-Harith was ibn Tha'laba ibn Zayd ibn Tha'laba ibn Ghanm ibn Malik ibn al-Najjar. Her kunya was Umm Thabit. Her mother was Kabsha bint Thabit ibn al-Nu'man ibn Haram, and her husband was Mu'adh ibn al-Harith ibn Rifa'a.",
+      "arabic_sha256": "a802b28aa63055bedc6bf64e87e2e73f6cd64d32e52e3a928187c021d6c75079",
+      "english_sha256": "0f2c4dc985733c8425a2aeea926ffb134d4dd1bb7f48c50e5b1ce075548fe9c6",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بنو النجار",
+      "english": "Banu al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "السيرة النبوية",
+      "english": "al-Sira al-Nabawiyya",
+      "kind": "work"
+    },
+    {
+      "arabic": "بنو قريظة",
+      "english": "Banu Qurayza",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سعد بن معاذ",
+      "english": "Sa'd ibn Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "رملة بنت الحدث",
+      "english": "Ramlah bint al-Hadath",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن ثعلبة بن زيد بن ثعلبة بن غنم بن مالك بن النجار",
+      "english": "al-Harith ibn Tha'laba ibn Zayd ibn Tha'laba ibn Ghanm ibn Malik ibn al-Najjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم ثابت",
+      "english": "Umm Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "كبشة بنت ثابت بن النعمان بن حرام",
+      "english": "Kabsha bint Thabit ibn al-Nu'man ibn Haram",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاذ بن الحارث بن رفاعة",
+      "english": "Mu'adh ibn al-Harith ibn Rifa'a",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

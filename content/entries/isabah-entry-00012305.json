@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012305",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12305,
+  "title": {
+    "english": "Umm Yazid (3)",
+    "arabic_observed": "أم يزيد «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012305-segment-0001",
+      "volume": 8,
+      "scan_page": 492,
+      "printed_page": 491,
+      "reader_page": 4404,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4404",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0492:36b2b0210aeb1722",
+      "arabic": "١٢٣٠٥- أم يزيد «٣»\n: تأتي في المبهمات أيضا، حديثها عند\nالحجاج بن أرطاة، عن يزيد بن الحارث، عن أمه- أنها سمعت رسول اللَّه ﵌ يقول: «يا أيّها النّاس، عليكم بالسّكينة والوقار» .\nوقيل: عن حجاج، عن أبي يزيد مولى عبد اللَّه بن الحارث، عن أم جندب الأزديّة، وقد مضى في حرف الجيم.",
+      "english": "12305—Umm Yazid (3)\n\nShe will also appear among the unidentified women. Her hadith is related by al-Hajjaj ibn Artat, from Yazid ibn al-Harith, from his mother, that she heard the Messenger of Allah—may Allah bless him and grant him peace—say: “O people, you must observe tranquility and dignity.”\n\nIt has also been related from al-Hajjaj, from Abu Yazid, the client of Abd Allah ibn al-Harith, from Umm Jundab al-Azdiyya. She has already been discussed under the letter jim.",
+      "arabic_sha256": "30bb860fa58da1a20d3dad2f7951ae72321819a437b470b1eed4a19a6c10bc22",
+      "english_sha256": "2b1b63619e091900e4f90ae49c1979b1a691278fb5eeeb16f89048a26c794c0d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم يزيد",
+      "english": "Umm Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحجاج بن أرطاة",
+      "english": "al-Hajjaj ibn Artat",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن الحارث",
+      "english": "Yazid ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي يزيد",
+      "english": "Abu Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن الحارث",
+      "english": "Abd Allah ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جندب الأزديّة",
+      "english": "Umm Jundab al-Azdiyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

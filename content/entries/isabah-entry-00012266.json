@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012266",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12266,
+  "title": {
+    "english": "Umm Ma'bad:",
+    "arabic_observed": "أم معبد:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012266-segment-0001",
+      "volume": 8,
+      "scan_page": 479,
+      "printed_page": 478,
+      "reader_page": 4391,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4391",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0479:f0ec8b9772680ce2",
+      "arabic": "١٢٢٦٦- أم معبد:\nزوج كعب بن مالك «١» .\nروى حديثها\nمحمد بن إسحاق، عن معبد بن كعب بن مالك، عن أمه، وكانت صلت القبلتين، قالت: قال رسول اللَّه ﵌: «لا تنتبذوا التّمر والزّبيب جميعا، وانتبذوا كلّ واحد على حدة» «٢» .\nأخرجه أحمد والطبراني وابن مندة.",
+      "english": "12266—Umm Ma'bad:\nWife of Ka'b ibn Malik.[1]\n\nHer hadith was narrated by Muhammad ibn Ishaq, from Ma'bad ibn Ka'b ibn Malik, from his mother, who had prayed toward both qiblas. She said: The Messenger of Allah, may Allah bless him and grant him peace, said: “Do not prepare nabidh from dates and raisins together; prepare nabidh from each one separately.”[2]\n\nAhmad, al-Tabarani, and Ibn Manda transmitted it.",
+      "arabic_sha256": "8c18dd4be81df745a39b5f1c7b7b1dbd0bbf4b6ebf49713aa9e04c15e5dfcba4",
+      "english_sha256": "2c8688756c373b36e9b2daa1c19514a833110a82d5072b6ae22a9fdc0eef02ee",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم معبد مولاة قرظة",
+      "english": "Umm Ma'bad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد زوج كعب بن مالك",
+      "english": "Umm Ma'bad",
+      "kind": "person"
+    },
+    {
+      "arabic": "كعب بن مالك",
+      "english": "Ka'b ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "معبد بن كعب بن مالك",
+      "english": "Ma'bad ibn Ka'b ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد غير منسوبة",
+      "english": "Umm Ma'bad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد",
+      "english": "Umm Ma'bad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

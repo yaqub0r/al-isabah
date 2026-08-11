@@ -1,0 +1,98 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012100",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12100,
+  "title": {
+    "english": "Umm Sharik",
+    "arabic_observed": "أم شريك"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012100-segment-0001",
+      "volume": 8,
+      "scan_page": 416,
+      "printed_page": 415,
+      "reader_page": 4328,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4328",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0416:f7659d7718f758b0",
+      "arabic": "١٢١٠٠- أم شريك\nبنت خالد بن خنيس «٧» بن لوذان بن عبد ود بن زيد بن ثعلبة بن الخزرج بن ساعدة الأنصاريّة الخزرجيّة. قال ابن سعد وابن حبيب: بايعت النبيّ ﵌. قال ابن سعد: أمها هند بنت وهب بن عمرو بن وقش. تزوّج أم شريك أنس بن رافع بن امرئ القيس بن زيد بن عبد الأشهل، فولدت له الحارث بن أنس.\n(١) أسد الغابة ت (٧٤٨٩) .\n(٢) أسد الغابة ت (٧٤٩٠) .\n(٣) أسد الغابة ت (٧٤٩١) .\n(٤) أسد الغابة ت (٧٤٩٢) .\n(٥) أسد الغابة ت (٧٤٩٣)، بقي بن مخلد ٩٦٩.\n(٦) أسد الغابة ت (٧٤٩٤)، الاستيعاب ت (٣٦٢٥) .\n(٧) أسد الغابة ت (٧٤٩٥) .",
+      "english": "12100—Umm Sharik\n\nbint Khalid ibn Khunays [7] ibn Lawdhan ibn Abd Wudd ibn Zayd ibn Tha'laba ibn al-Khazraj ibn Sa'ida, the Ansari Khazraji woman. Ibn Sa'd and Ibn Habib said: She gave the pledge of allegiance to the Prophet—may Allah bless him and grant him peace. Ibn Sa'd said: Her mother was Hind bint Wahb ibn Amr ibn Waqsh. Anas ibn Rafi' ibn Imru' al-Qays ibn Zayd ibn Abd al-Ashhal married Umm Sharik, and she bore him al-Harith ibn Anas.\n\n[1] Usd al-Ghaba, entry 7489.\n\n[2] Usd al-Ghaba, entry 7490.\n\n[3] Usd al-Ghaba, entry 7491.\n\n[4] Usd al-Ghaba, entry 7492.\n\n[5] Usd al-Ghaba, entry 7493; Baqi ibn Makhlad, 969.\n\n[6] Usd al-Ghaba, entry 7494; al-Isti'ab, entry 3625.\n\n[7] Usd al-Ghaba, entry 7495.",
+      "arabic_sha256": "798b928e5932416c066731c885c72a5c2bec448647c068f0589772aa5bec2990",
+      "english_sha256": "007feec4e074d59988ece05f126de0425beae10c96f2c7583e597dc7f2bc6c95",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند بنت وهب بن عمرو بن وقش",
+      "english": "Hind bint Wahb ibn Amr ibn Waqsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس بن رافع بن امرئ القيس بن زيد بن عبد الأشهل",
+      "english": "Anas ibn Rafi' ibn Imru' al-Qays ibn Zayd ibn Abd al-Ashhal",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن أنس",
+      "english": "al-Harith ibn Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "isnad_antecedent",
+      "arabic_span": "عن جدته عنه",
+      "explanation": "The antecedent of the pronoun in “from his grandmother, from him” cannot be identified safely. The Urdu witness preserves the same ambiguity, while the supplied Usd al-Ghaba parallel omits this chain. The final translation therefore retains the canonical wording without assigning the pronoun conjecturally.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0416:f7659d7718f758b0"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

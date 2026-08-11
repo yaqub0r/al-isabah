@@ -1,0 +1,376 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012246",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12246,
+  "title": {
+    "english": "Umm Mubashshir bint al-Bara ibn Ma'rur al-Ansariyya.[1]",
+    "arabic_observed": "أم مبشر بنت البراء"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012246-segment-0001",
+      "volume": 8,
+      "scan_page": 471,
+      "printed_page": 470,
+      "reader_page": 4383,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4383",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0471:989864a482d7e25a",
+      "arabic": "١٢٢٤٦- أم مبشر بنت البراء\nبن معرور الأنصاريّة» .\nتقدم نسبها في ترجمة والدها، وتقدم لها ذكر في أم مبشر بنت البراء.\nروى حديثها ابن إسحاق، عن ابن أبي نجيح، عن مجاهد، عن أم مبشر بنت البراء بن معرور، قالت: سمعت رسول اللَّه ﵌ يقول: «ألا أخبركم بخير النّاس»؟ قالوا: بلى يا رسول اللَّه. قال: «رجل في غنيمة له يقيم الصّلاة ويؤتي الزّكاة قد اعتزل شرور النّاس» «٢» .\nولها ذكر في حديث آخر أخرجه أبو داود، من طريق الزهري، عن ابن كعب بن مالك، عن أبيه، عن أم مبشر: دخلت على النبي ﵌ في مرضه الّذي مات فيه، قالت: من يتهم يا رسول اللَّه، فإنّي لا أتهم بأبي إلا الشاة المسمومة التي أكل معك ... الحديث.\nوأخرجه من وجه آخر عن الزّهريّ، عن عبد الرحمن بن عبد اللَّه بن كعب بن مالك عن أبيه.\nروت عن النبي ﵌، روى عنها جابر بن عبد اللَّه الأنصاري.\n(١) أسد الغابة ت (٧٥٩٠)، الاستيعاب ت (٣٦٦٩)، أعلام النساء ٥/ ٢٠- الثقات ٣/ ٤٥٩- تجريد أسماء، الصحابة ٢/ ٣٣٤- الكاشف ٣/ ٤٩٢- الاستبصار ٧٨/ ٣- تهذيب الكمال ٣/ ١٧٠٦- خلاصة تذهيب ٣/ ٤٠٣- تلقيح فهوم أهل الأثر ٣٧٠- بقي بن مخلد ١٨٦.\n(٢) أخرجه النسائي في السنن ٦/ ١٢ كتاب الجهاد باب ٨ فضل من عمل في سبيل اللَّه على قدميه حديث رقم ٣١٠٦ والدارمي في سننه/ ٢٠١، وأحمد في المسند ٣/ ٣٧، ٥٨، والحاكم في المستدرك ٣/ ٦٧، وقال صحيح على شرط الشيخين ولم يخرجاه، وكنز العمال رقم ١٠٥٣٠، ٤٣٠٢٦.",
+      "english": "12246—Umm Mubashshir bint al-Bara ibn Ma'rur al-Ansariyya.[1]\n\nHer lineage was given earlier in the entry on her father, and she was mentioned earlier under Umm Mubashshir bint al-Bara.\n\nIbn Ishaq narrated her hadith from Ibn Abi Najih, from Mujahid, from Umm Mubashshir bint al-Bara ibn Ma'rur, who said: I heard the Messenger of Allah, may Allah bless him and grant him peace, say: “Shall I not tell you of the best of people?” They said, “Yes, O Messenger of Allah.” He said: “A man with a small flock of his own who establishes the prayer and gives the zakat, having withdrawn from the evils of people.”[2]\n\nShe is also mentioned in another hadith transmitted by Abu Dawud by way of al-Zuhri, from Ibn Ka'b ibn Malik, from his father, from Umm Mubashshir: She entered upon the Prophet, may Allah bless him and grant him peace, during the illness in which he died. She said: “Who is suspected, O Messenger of Allah? For, concerning my father, I suspect nothing except the poisoned ewe that he ate with you …” The rest of the hadith.\n\nHe also transmitted it by another route from al-Zuhri, from Abd al-Rahman ibn Abd Allah ibn Ka'b ibn Malik, from his father.\n\nShe narrated from the Prophet, may Allah bless him and grant him peace, and Jabir ibn Abd Allah al-Ansari narrated from her.\n\n(1) Usd al-Ghaba, entry 7590; al-Isti'ab, entry 3669; A'lam al-Nisa' 5/20; al-Thiqat 3/459; al-Tajrid 2/334; al-Kashif 3/492; al-Istibsar 78/3; Tahdhib al-Kamal 3/1706; Khulasat Tadhhib 3/403; Talqih Fuhum Ahl al-Athar 370; Baqi ibn Makhlad 186.\n\n(2) Al-Nasa'i transmitted it in al-Sunan, 6/12, Book of Jihad, chapter 8, “The Merit of One Who Acts in the Path of Allah on Foot,” hadith no. 3106; al-Darimi in Sunan al-Darimi, p. 201; Ahmad in Musnad Ahmad, 3/37 and 58; and al-Hakim in al-Mustadrak, 3/67, who said: “It is sound according to the criteria of the Two Shaykhs, though they did not transmit it”; and Kanz al-'Ummal, nos. 10530 and 43026.",
+      "arabic_sha256": "b42c973c71b9a887fb7decd9b6dc8c9ddf9afa36761089b96cabe7a3b1de610f",
+      "english_sha256": "74ceb89b63159e824371c99dc90e49718c5cee650fe1ab4013985aa3b43afc34",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012246-segment-0002",
+      "volume": 8,
+      "scan_page": 472,
+      "printed_page": 471,
+      "reader_page": 4384,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4384",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0472:1ad2a6ea61bc564b",
+      "arabic": "أخرج حديثها مسلم والنّسائيّ من طريق حجاج بن محمد، عن ابن جريج، عن أبي الزبير، عن جابر، عن أم مبشر- أنها سمعت النبي ﵌ يقول عند حفصة: «لا يدخل النّار إن شاء اللَّه من أصحاب الشّجرة أحد» . الحديث.\nوأخرجه ابن ماجة، عن طريق أبي معاوية، عن الأعمش، عن أبي سفيان عن جابر، عن أم مبشر، عن حفصة، وخالفه عبد اللَّه بن إدريس، فقال: عن الأعمش، عن أبي سفيان، عن جابر، عن أم مبشر- أنها سمعت النبي ﵌ يقول: في بيت حفصة.\nأخرجه أحمد عنه، وترجم لها: أم مبشر الأنصارية امرأة زيد بن حارثة.\nولها حديث آخر أخرجه مسلم أيضا، عن أبي بكر بن أبي شيبة، عن محمد بن فضيل، وعن عمرو بن محمد الباقر، عن عمار بن محمد، عن أبي كريب، وإسحاق بن إبراهيم، عن أبي معاوية- ثلاثتهم عن الأعمش، عن أبي سفيان، عن جابر، عن أم مبشر، هذه رواية عمار بن محمد. وكذا في رواية أبي معاوية في رواية أبي كريب عنه. وقال إسحاق عنه: ربما قال عن أم مبشر، وربما لم يقل.\nوقال ابن فضيل في روايته عن امرأة زيد بن حارثة، ولم يسمها.\nوأخرجه أيضا عن أبي بكر بن أبي شيبة، عن حفص بن غياث، عن الأعمش، فلم يذكر أم مبشر.\nوكذا أخرجه من رواية ابن جريج، عن أبي الزبير، عن جابر، عن النبي ﵌.\nومن طريق الليث: عن أبي الزبير، عن جابر- أن النبي ﵌ دخل على أم مبشر الأنصارية في نخل لها، فقال: «من غرس هذا النّخل؟ مسلم أو كافر؟» قالت:\nبل مسلم. فقال: «فلا يغرس مسلم غرسا» «١» الحديث.\nولها حديث ثالث أخرجه أحمد عن أبي معاوية، عن الأعمش، عن أبي سفيان، عن جابر، عن أم مبشر، قالت: دخل عليّ النبي ﵌ وأنا في حائط من حائط الأنصار ... الحديث في عذاب القبر.",
+      "english": "Muslim and al-Nasa'i transmitted her hadith by way of Hajjaj ibn Muhammad, from Ibn Jurayj, from Abu al-Zubayr, from Jabir, from Umm Mubashshir: she heard the Prophet, may Allah bless him and grant him peace, say in Hafsa’s presence, “Allah willing, not one of the Companions of the Tree will enter the Fire.”—the hadith.\n\nIbn Majah transmitted it by way of Abu Mu'awiya, from al-A'mash, from Abu Sufyan, from Jabir, from Umm Mubashshir, from Hafsa. Abd Allah ibn Idris differed from him, saying: from al-A'mash, from Abu Sufyan, from Jabir, from Umm Mubashshir—that she heard the Prophet, may Allah bless him and grant him peace, say this in Hafsa’s house.\n\nAhmad transmitted it from him and gave her the heading: “Umm Mubashshir al-Ansariyya, the wife of Zayd ibn Haritha.”\n\nShe has another hadith that Muslim also transmitted through Abu Bakr ibn Abi Shayba, from Muhammad ibn Fudayl; through Amr ibn Muhammad al-Baqir, from Ammar ibn Muhammad; and through Abu Kurayb and Ishaq ibn Ibrahim, from Abu Mu'awiya—each of the three, Muhammad ibn Fudayl, Ammar ibn Muhammad, and Abu Mu'awiya, narrating from al-A'mash, from Abu Sufyan, from Jabir, from Umm Mubashshir. The wording here is that of Ammar ibn Muhammad. It is likewise found in Abu Mu'awiya’s version as related from him by Abu Kurayb. Ishaq, relating from him, said: “Sometimes he said, ‘from Umm Mubashshir,’ and sometimes he did not say it.”\n\nIbn Fudayl said in his version, “from the wife of Zayd ibn Haritha,” without naming her.\n\nHe also transmitted it through Abu Bakr ibn Abi Shayba, from Hafs ibn Ghiyath, from al-A'mash, without mentioning Umm Mubashshir.\n\nHe likewise transmitted it from the narration of Ibn Jurayj, from Abu al-Zubayr, from Jabir, from the Prophet, may Allah bless him and grant him peace.\n\nHe also transmitted it by way of al-Layth, from Abu al-Zubayr, from Jabir: the Prophet, may Allah bless him and grant him peace, entered upon Umm Mubashshir al-Ansariyya in a date-palm grove belonging to her and said, “Who planted these date palms—a Muslim or an unbeliever?” She replied, “Rather, a Muslim.” He said, “No Muslim plants anything…” (1)—the hadith.\n\nShe has a third hadith, transmitted by Ahmad from Abu Mu'awiya, from al-A'mash, from Abu Sufyan, from Jabir, from Umm Mubashshir, who said: “The Prophet, may Allah bless him and grant him peace, entered upon me while I was in one of the orchards of the Ansar…”—the hadith concerning the punishment of the grave.",
+      "arabic_sha256": "833aeb89d30b72767781c991b06b4c6336c7ff17ad6787b48467420eba873145",
+      "english_sha256": "b7d72a32745a81e2fa5e141dd41d0b248f3cad38dc062681815a17a2db8acb42",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم مبشر بنت البراء بن معرور الأنصارية",
+      "english": "Umm Mubashshir bint al-Bara ibn Ma'rur al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "البراء بن معرور",
+      "english": "al-Bara ibn Ma'rur",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي نجيح",
+      "english": "Ibn Abi Najih",
+      "kind": "person"
+    },
+    {
+      "arabic": "مجاهد",
+      "english": "Mujahid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن كعب بن مالك",
+      "english": "Ibn Ka'b ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "كعب بن مالك",
+      "english": "Ka'b ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عبد اللَّه بن كعب بن مالك",
+      "english": "Abd al-Rahman ibn Abd Allah ibn Ka'b ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن كعب بن مالك",
+      "english": "Abd Allah ibn Ka'b ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر بن عبد اللَّه الأنصاري",
+      "english": "Jabir ibn Abd Allah al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب",
+      "english": "Khulasat Tadhhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "al-Sunan",
+      "kind": "work"
+    },
+    {
+      "arabic": "كتاب الجهاد",
+      "english": "Book of Jihad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدارمي",
+      "english": "al-Darimi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سننه",
+      "english": "Sunan al-Darimi",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-'Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجاج بن محمد",
+      "english": "Hajjaj ibn Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن جريج",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الزبير",
+      "english": "Abu al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر",
+      "english": "Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم مبشر",
+      "english": "Umm Mubashshir bint al-Bara ibn Ma'rur",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفصة",
+      "english": "Hafsa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أصحاب الشجرة",
+      "english": "Companions of the Tree",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو معاوية",
+      "english": "Abu Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأعمش",
+      "english": "al-A'mash",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سفيان",
+      "english": "Abu Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن إدريس",
+      "english": "Abd Allah ibn Idris",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن حارثة",
+      "english": "Zayd ibn Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر بن أبي شيبة",
+      "english": "Abu Bakr ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن فضيل",
+      "english": "Muhammad ibn Fudayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن محمد الباقر",
+      "english": "Amr ibn Muhammad al-Baqir",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمار بن محمد",
+      "english": "Ammar ibn Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو كريب",
+      "english": "Abu Kurayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق بن إبراهيم",
+      "english": "Ishaq ibn Ibrahim",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفص بن غياث",
+      "english": "Hafs ibn Ghiyath",
+      "kind": "person"
+    },
+    {
+      "arabic": "الليث",
+      "english": "al-Layth",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم مبشر: الأنصارية أخرى",
+      "english": "Umm Mubashshir al-Ansariyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source_text_corruption",
+      "arabic_span": "من يتهم يا رسول اللَّه، فإنّي لا أتهم بأبي إلا الشاة المسمومة التي أكل معك",
+      "explanation": "The canonical page reads “Who is suspected?” and “my father,” while the cited Abu Dawud report reportedly reads “What is thought to be the cause of your illness?” and “my son,” and additionally mentions Khaybar. Because the canonical Arabic was designated authoritative and facts absent from it may not be introduced, the final translation retains its printed wording conservatively.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0471:989864a482d7e25a"
+    },
+    {
+      "category": "citation_detail",
+      "arabic_span": "والدارمي في سننه/ ٢٠١",
+      "explanation": "The source supplies page 201 but no volume number; the available evidence does not establish the omitted volume or edition.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0471:989864a482d7e25a"
+    },
+    {
+      "category": "citation_order",
+      "arabic_span": "الاستبصار ٧٨/٣",
+      "explanation": "The printed order 78/3 has been preserved. The supplied evidence cannot determine whether the intended reference was instead 3/78.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0471:989864a482d7e25a"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

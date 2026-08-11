@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010927",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10927,
+  "title": {
+    "english": "Barrah bint Sufyan al-Sulamiyya",
+    "arabic_observed": "برة بنت سفيان السلمية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010927-segment-0001",
+      "volume": 8,
+      "scan_page": 49,
+      "printed_page": 48,
+      "reader_page": 3961,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3961",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0049:960dd5cda8447117",
+      "arabic": "١٠٩٢٧- برة بنت سفيان السلمية ،\nأخت أبي الأعور السلمي.\nتزوجها الحارث بن طلحة، فقتل يوم أحد كافرا، فتزوّجها عبد اللَّه بن عمر، فولدت له ولديه: عبد اللَّه، وصفية وغيرهما، وعاشت بعده. ذكر ذلك الزبير بن بكار.",
+      "english": "10927 — Barrah bint Sufyan al-Sulamiyya\n\nthe sister of Abu al-A'war al-Sulami.\n\nal-Harith ibn Talha married her, but he was killed on the day of Uhud as an unbeliever. Abd Allah ibn Umar then married her, and she bore him his two children: Abd Allah and Safiyya, as well as others. She survived him. al-Zubayr ibn Bakkar mentioned this.",
+      "arabic_sha256": "5fbc01f1f989497e74c653587658d71430982c14edcf09964b9009a044231d26",
+      "english_sha256": "f64b15c415514a438b97f6b9045fa7e20864f2af27d2196e92d09e58410a920e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "برة بنت سفيان السلمية",
+      "english": "Barrah bint Sufyan al-Sulamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي الأعور السلمي",
+      "english": "Abu al-A'war al-Sulami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن طلحة",
+      "english": "al-Harith ibn Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "عبد اللَّه بن عمر",
+      "english": "Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah ibn Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية",
+      "english": "Safiyya bint Abd Allah ibn Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

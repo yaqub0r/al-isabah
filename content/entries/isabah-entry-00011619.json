@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011619",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11619,
+  "title": {
+    "english": "Farwa bint al-Harith al-'Atwariyya:",
+    "arabic_observed": "فروة بنت الحارث العتوارية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011619-segment-0001",
+      "volume": 8,
+      "scan_page": 280,
+      "printed_page": 279,
+      "reader_page": 4192,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4192",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0280:c4201e5a192e04a8",
+      "arabic": "١١٦١٩- فروة بنت الحارث العتوارية:\nوالدة عقيلة.\nتقدمت في عقيلة، قرأتها بالفاء والراء الساكنة بخط الخطيب.",
+      "english": "11619—Farwa bint al-Harith al-'Atwariyya:\n\nThe mother of 'Aqila.\n\nShe was mentioned above under 'Aqila. I read the name with a fa and an unvowelled ra in al-Khatib's handwriting.",
+      "arabic_sha256": "6ca409a026b8dfe82d67323d312314a27e5172809c2aa78100d02f85150805cb",
+      "english_sha256": "f25c58dfa9df0457b576dfff9fa89d902f19b6c44800b84d96c167809e319559",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "فروة بنت الحارث العتوارية",
+      "english": "Farwa bint al-Harith al-'Atwariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عقيلة",
+      "english": "'Aqila",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخطيب",
+      "english": "al-Khatib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

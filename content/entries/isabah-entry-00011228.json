@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011228",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11228,
+  "title": {
+    "english": "Zaynab bint Jahsh (1)",
+    "arabic_observed": "زينب بنت جحش «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011228-segment-0001",
+      "volume": 8,
+      "scan_page": 156,
+      "printed_page": 155,
+      "reader_page": 4068,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4068",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0156:c7dcf2b3af36eb61",
+      "arabic": "١١٢٢٨- زينب بنت جحش «١»\n. زعم يونس بن مغيث في شرحه على الموطأ أنه اسم حمنة بنت جحش، وأن حمنة لقب، وكذا زعم أنه اسم أم حبيبة، أو أم حبيب، قال: وكان اسم كل من بنات جحش زينب.",
+      "english": "11228—Zaynab bint Jahsh (1)\n\nYunus ibn Mughith claimed in his commentary on al-Muwatta that Zaynab was the name of Hamna bint Jahsh and that Hamna was a sobriquet. He similarly claimed that Zaynab was the name of Umm Habiba—or Umm Habib. He said: “Every one of Jahsh’s daughters was named Zaynab.”",
+      "arabic_sha256": "0193ca417ff755acf1f14db8c06a3ea29dffe061de567d37df9e72a5eac4b968",
+      "english_sha256": "f1a409eb8b2101096fcf449625d8214cf3ca1fc05c4ec41c789576c99ac087fc",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حمنة بنت جحش",
+      "english": "Hamna bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت جحش",
+      "english": "Zaynab bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن مغيث",
+      "english": "Yunus ibn Mughith",
+      "kind": "person"
+    },
+    {
+      "arabic": "الموطأ",
+      "english": "al-Muwatta",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيب",
+      "english": "Umm Habib bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "جحش",
+      "english": "Jahsh",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

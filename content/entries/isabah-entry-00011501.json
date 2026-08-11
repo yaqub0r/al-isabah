@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011501",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11501,
+  "title": {
+    "english": "Amra bint al-Rabi ibn al-Nu'man ibn Yasaf al-Ansariyya (2):",
+    "arabic_observed": "عمرة بنت الربيع"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011501-segment-0001",
+      "volume": 8,
+      "scan_page": 245,
+      "printed_page": 244,
+      "reader_page": 4157,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4157",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0245:9cdb6fca7392041a",
+      "arabic": "١١٥٠١- عمرة بنت الربيع\nبن النّعمان بن يساف الأنصاريّة «٢» .\nمن بني مالك بن النّجار، ذكرها ابن حبيب في المبايعات، وقال: [اسمها] «٣» عميرة.",
+      "english": "11501 — Amra bint al-Rabi ibn al-Nu'man ibn Yasaf al-Ansariyya (2):\n\nShe was of Banu Malik ibn al-Najjar. Ibn Habib included her among the women who pledged allegiance and said: “[Her name was] (3) Umayra.”",
+      "arabic_sha256": "fbb9b8b224dc3a66d930564b24d6e03bc3acf60e4fb4db7c8b78a223cda5ec03",
+      "english_sha256": "4439d206dd2a1afa9c24d13caba160117cd22b6a99296ab014e9ea09e2e0d3a3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمرة بنت الربيع بن النعمان بن يساف الأنصارية",
+      "english": "Amra bint al-Rabi ibn al-Nu'man ibn Yasaf al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة",
+      "english": "Umayra bint al-Rabi ibn al-Nu'man ibn Yasaf al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو مالك بن النجار",
+      "english": "Banu Malik ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

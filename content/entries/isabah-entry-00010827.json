@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010827",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10827,
+  "title": {
+    "english": "Umama bint al-Samit al-Ansariyya,",
+    "arabic_observed": "أمامة بنت الصامت الأنصارية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010827-segment-0001",
+      "volume": 8,
+      "scan_page": 25,
+      "printed_page": 24,
+      "reader_page": 3937,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3937",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0025:844818361ccf1b32",
+      "arabic": "١٠٨٢٧- أمامة بنت الصامت الأنصارية ،\nأخت عبادة بن الصامت.\nأسلمت وبايعت، قاله محمد بن سعد.",
+      "english": "10827—Umama bint al-Samit al-Ansariyya,\nthe sister of Ubada ibn al-Samit.\n\nShe embraced Islam and pledged allegiance, according to Muhammad ibn Sa'd.",
+      "arabic_sha256": "e98ea5242feb34c55ed9ec779f64da60e1db283f17973042a538f08d248ccf81",
+      "english_sha256": "293112ad44b76b9c7501c4258e1b971b29979d766a164fdef6e509a0efac581a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه / النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن سعد / ابن سعد",
+      "english": "Muhammad ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة بنت الصامت الأنصارية",
+      "english": "Umama bint al-Samit al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبادة بن الصامت",
+      "english": "Ubada ibn al-Samit",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار / الأنصارية",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

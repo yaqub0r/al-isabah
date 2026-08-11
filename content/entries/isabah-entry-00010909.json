@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010909",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10909,
+  "title": {
+    "english": "Asma bint Yazid al-Ansariyya [3],",
+    "arabic_observed": "أسماء بنت يزيد الأنصارية «٣»،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010909-segment-0001",
+      "volume": 8,
+      "scan_page": 44,
+      "printed_page": 43,
+      "reader_page": 3956,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3956",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0044:c3f95d25d7387978",
+      "arabic": "١٠٩٠٩- أسماء بنت يزيد الأنصارية «٣»،\nمن بني عبد الأشهل.\nأفردها ابن مندة عن بنت يزيد بن السكن، وهما واحدة، فإن بنت يزيد بن السكن من بني عبد الأشهل كما أوضحته في ترجمتها.",
+      "english": "10909 — Asma bint Yazid al-Ansariyya [3],\n\nof the Banu Abd al-Ashhal.\n\nIbn Manda gave her an entry separate from the daughter of Yazid ibn al-Sakan, but the two are one and the same, for the daughter of Yazid ibn al-Sakan belonged to the Banu Abd al-Ashhal, as I explained in her entry.",
+      "arabic_sha256": "a0cf3639c7f3b81563c9750410b15595407ce8dc57ba1f58d0374a0a5975979d",
+      "english_sha256": "3298913aa242154a997f0be73696050f529fe9a209721710173abc91722dad24",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أسماء",
+      "english": "Asma bint Yazid ibn al-Sakan al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت يزيد الأنصارية",
+      "english": "Asma bint Yazid ibn al-Sakan al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عبد الأشهل",
+      "english": "Banu Abd al-Ashhal",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

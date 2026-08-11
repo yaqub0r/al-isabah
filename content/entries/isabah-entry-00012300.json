@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012300",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12300,
+  "title": {
+    "english": "Umm Wahb",
+    "arabic_observed": "أم وهب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012300-segment-0001",
+      "volume": 8,
+      "scan_page": 491,
+      "printed_page": 490,
+      "reader_page": 4403,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4403",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0491:7dbc49a508947579",
+      "arabic": "١٢٣٠٠- أم وهب\nبنت أبي أمية بن قيس «٤»، من العياطلة.\nتقدّم ذكرها في ترجمة عاتكة بنت الوليد المخزوميّة في الأسماء.\nحرف الياء\nالقسم الأول",
+      "english": "12300—Umm Wahb\n\nBint Abi Umayya ibn Qays,⁴ of al-Ayatila.\n\nShe was previously mentioned in the biographical notice of Atika bint al-Walid al-Makhzumiyya in the section on names.\n\nTHE LETTER YA\n\nSECTION ONE",
+      "arabic_sha256": "82cd939003086c275e2d104b0307b2acacc4a65c743f65d8756d7322a5d2f670",
+      "english_sha256": "adadcd869e5d724c04617ea6f26ad793dcecb17ec560cc0d1afde598407c0c6b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الوليد",
+      "english": "al-Walid",
+      "kind": "person"
+    },
+    {
+      "arabic": "العياطلة",
+      "english": "al-Ayatila",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عاتكة بنت الوليد المخزوميّة",
+      "english": "Atika bint al-Walid al-Makhzumiyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

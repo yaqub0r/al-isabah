@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011194",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11194,
+  "title": {
+    "english": "Ramla bint Abi Awf ibn Sabra ibn Sa'id ibn Sa'd ibn Sahm²",
+    "arabic_observed": "رملة بنت أبي عوف"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011194-segment-0001",
+      "volume": 8,
+      "scan_page": 144,
+      "printed_page": 143,
+      "reader_page": 4056,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4056",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0144:58b1f1b0508ffb94",
+      "arabic": "١١١٩٤- رملة بنت أبي عوف\nبن صبرة بن سعيد بن سعد بن سهم «٢»، زوج المطلب بن أزهر بن عوف الزهري.\nذكرها ابن إسحاق في تسمية من أسلم من أهل مكة، وهاجر إلى الحبشة، قال:\nوولدت للمطلب بن أزهر بن عوف الزهري هناك عبد اللَّه بن المطلب. قال: ويقال إنّه أول من ورث أباه في الإسلام. وذكرها أبو عمر في ترجمة زوجها. وقال ابن سعد: أسلمت بمكة قديما قبل دار الأرقم، وبايعت وهاجرت.",
+      "english": "11194—Ramla bint Abi Awf ibn Sabra ibn Sa'id ibn Sa'd ibn Sahm²\n\nShe was the wife of al-Muttalib ibn Azhar ibn Awf al-Zuhri.\n\nIbn Ishaq included her in his list of those among the people of Mecca who embraced Islam and emigrated to Abyssinia. He said: “There she bore al-Muttalib ibn Azhar ibn Awf al-Zuhri a son, Abd Allah ibn al-Muttalib.” He said: “It is said that he was the first person to inherit from his father in Islam.” Abu Umar mentioned her in the biographical entry on her husband. Ibn Sa'd said: “She embraced Islam in Mecca at an early time, before the house of al-Arqam; she pledged allegiance and emigrated.”",
+      "arabic_sha256": "e87be1f7161fbda9ce1af72a5df1da5ea7792aff34fb328cccf70537071122bc",
+      "english_sha256": "e9c16104d94797a39dc25bff802a6efe86811745680e13565197d3ae9504e1e5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "وج",
+      "english": "Wajj",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "رملة بنت أبي عوف بن صبرة بن سعيد بن سعد بن سهم",
+      "english": "Ramla bint Abi Awf ibn Sabra ibn Sa'id ibn Sa'd ibn Sahm",
+      "kind": "person"
+    },
+    {
+      "arabic": "المطلب بن أزهر بن عوف الزهري",
+      "english": "al-Muttalib ibn Azhar ibn Awf al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "عبد اللَّه بن المطلب",
+      "english": "Abd Allah ibn al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "دار الأرقم",
+      "english": "House of al-Arqam",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

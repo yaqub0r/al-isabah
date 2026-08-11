@@ -1,0 +1,68 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011766",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11766,
+  "title": {
+    "english": "Malika bint Dawud:",
+    "arabic_observed": "مليكة بنت داود:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011766-segment-0001",
+      "volume": 8,
+      "scan_page": 319,
+      "printed_page": 318,
+      "reader_page": 4231,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4231",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0319:fbba915439251974",
+      "arabic": "١١٧٦٦- مليكة بنت داود:\nذكرها ابن بشكوال في المزدوجات، ولم يصحّ. وستأتي مليكة بنت كعب، فليحرر ذلك.",
+      "english": "11766—Malika bint Dawud:\n\nIbn Bashkuwal mentioned her in al-Muzdawijat, but this was not soundly established. Malika bint Ka'b will appear later, so this should be carefully verified.",
+      "arabic_sha256": "934fe40322909c08c59d973cecc1ac87d72ccef6bf2d0129d9a40834bd234c65",
+      "english_sha256": "90ca1b3a8469ed7a25495820293313ccead82d1e60a2d6bb61430386c4ffb919",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مليكة بنت داود",
+      "english": "Malika bint Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن بشكوال",
+      "english": "Ibn Bashkuwal",
+      "kind": "person"
+    },
+    {
+      "arabic": "المزدوجات",
+      "english": "al-Muzdawijat",
+      "kind": "work"
+    },
+    {
+      "arabic": "مليكة بنت كعب",
+      "english": "Malika bint Ka'b",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "work_identification",
+      "arabic_span": "المزدوجات",
+      "explanation": "The precise bibliographic identity or technical sense of al-Muzdawijat cannot be established from the supplied evidence. The Arabic term itself is clear, so it has been conservatively transliterated without treating it as a securely identified formal title.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0319:fbba915439251974"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

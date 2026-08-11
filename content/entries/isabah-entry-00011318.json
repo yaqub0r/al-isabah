@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011318",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11318,
+  "title": {
+    "english": "Salma bint Abi Dhu'ayb",
+    "arabic_observed": "سلمى بنت أبي ذؤيب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011318-segment-0001",
+      "volume": 8,
+      "scan_page": 185,
+      "printed_page": 184,
+      "reader_page": 4097,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4097",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0185:5f22dcc716a75836",
+      "arabic": "١١٣١٨- سلمى بنت أبي ذؤيب\nالسعدية «١»، أخت حليمة مرضعة النبي ﷺ.\nيقال: إنها أتت النبي ﷺ فبسط لها رداءه، وقال لها: مرحبا بأمي.\nذكرها أبو موسى في الذّيل عن المستغفري بغير سند.",
+      "english": "11318—Salma bint Abi Dhu'ayb\n\nThe Sa'diyya(1), sister of Halima, the wet nurse of the Prophet, may Allah bless him and grant him peace.\n\nIt is said that she came to the Prophet, may Allah bless him and grant him peace, whereupon he spread out his cloak for her and said to her, “Welcome, my mother.”\n\nAbu Musa mentioned her in al-Dhayl, on the authority of al-Mustaghfiri, without an isnad.",
+      "arabic_sha256": "3adaceada60a845de0ddfd5fa5f800afbddaee1637d64ddf3ff41020bad9c793",
+      "english_sha256": "da1a26160182e77b6f90a9f8a6e34f483f2d44ae3a40ab17e8155680c29d66a6",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حليمة",
+      "english": "Halima",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011694",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11694,
+  "title": {
+    "english": "Kayyisa:",
+    "arabic_observed": "كيّسة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011694-segment-0001",
+      "volume": 8,
+      "scan_page": 299,
+      "printed_page": 298,
+      "reader_page": 4211,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4211",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0299:e028f5de042dddb1",
+      "arabic": "١١٦٩٤- كيّسة:\nبتشديد المثناة التحتانية بعدها مهملة، بنت الحارث بن كريز بن عبد شمس. كانت زوج مسيلمة الكذاب، ثم خلف عليها عبد اللَّه بن عامر الأكبر. ذكرها الزّبير ابن بكّار وضبطها.\nالقسم الثاني",
+      "english": "11694—Kayyisa:\nWith a doubled ya followed by an undotted sin. She was the daughter of al-Harith ibn Kurayz ibn Abd Shams. She was the wife of Musaylima the Liar; afterward, Abd Allah ibn Amir al-Akbar married her. Al-Zubayr ibn Bakkar mentioned her and specified the pronunciation of her name.\n\nSECTION TWO",
+      "arabic_sha256": "a42c353734442151e2e84c0d267a5ac5a167c7fbcb38315fe103dc4eceefa295",
+      "english_sha256": "ccad20534ab13a10674c4b8e5258512df5796172ab75914b8cc78cd55126abaa",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مسيلمة الكذاب",
+      "english": "Musaylima the Liar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عامر الأكبر",
+      "english": "Abd Allah ibn Amir al-Akbar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

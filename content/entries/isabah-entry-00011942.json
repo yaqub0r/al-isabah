@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011942",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11942,
+  "title": {
+    "english": "Umm Jundab bint Mas'ud ibn Aws al-Ansariyya (1), of Banu Zafar.",
+    "arabic_observed": "أمّ جندب بنت مسعود"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011942-segment-0001",
+      "volume": 8,
+      "scan_page": 371,
+      "printed_page": 370,
+      "reader_page": 4283,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4283",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0371:a9bd57645d099a96",
+      "arabic": "١١٩٤٢- أمّ جندب بنت مسعود\nبن أوس الأنصاريّة «١»، من بني ظفر.\nذكرها ابن حبيب، وابن سعد في المبايعات. وقال ابن سعد: أمها وأم أختها أم سلمة الشموس بنت عمرو، تزوّجها نضر بن الحارث بن عبد رزاح بن ظفر، فولدت له الحارث.",
+      "english": "11942—Umm Jundab bint Mas'ud ibn Aws al-Ansariyya (1), of Banu Zafar.\n\nIbn Habib and Ibn Sa'd mentioned her among the women who gave the pledge of allegiance. Ibn Sa'd said: “Her mother—and the mother of her sister—was Umm Salama al-Shamus bint 'Amr. Al-Nadr ibn al-Harith ibn 'Abd Razah ibn Zafar married her, and she bore him al-Harith.”",
+      "arabic_sha256": "b7ac8ed483ba5f87029a214e980a5ce0b545297766a0a80436f0d1c376f55d9f",
+      "english_sha256": "211649178b710cf9fa00dd53412458db2b92bf685ba793000a42b8a9032cf177",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "جندب",
+      "english": "Jundab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جندب والدة أبي ذرّ",
+      "english": "Umm Jundab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جندب بنت مسعود بن أوس الأنصاريّة",
+      "english": "Umm Jundab bint Mas'ud ibn Aws al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني ظفر",
+      "english": "Banu Zafar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة الشموس بنت عمرو",
+      "english": "Umm Salama al-Shamus bint 'Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "نضر بن الحارث بن عبد رزاح بن ظفر",
+      "english": "al-Nadr ibn al-Harith ibn 'Abd Razah ibn Zafar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث",
+      "english": "al-Harith ibn al-Nadr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

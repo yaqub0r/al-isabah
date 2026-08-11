@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011388",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11388,
+  "title": {
+    "english": "al-Shamus al-Ansariyya",
+    "arabic_observed": "الشّموس الأنصارية"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011388-segment-0001",
+      "volume": 8,
+      "scan_page": 206,
+      "printed_page": 205,
+      "reader_page": 4118,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4118",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0206:f6e1bbc778ee9480",
+      "arabic": "١١٣٨٨- الشّموس الأنصارية\nلها قصة مع أبي محجن في خلافة عمر مقتضاها أن تكون من الشرط، لأنّ من تكون متزوّجة بحيث يحتاج من رآها إلى الحيلة في التوصل إلى التملي برؤيتها بحيث يستعدي زوجها عليها أن تكون أدركت العصر النبوي، وكانت القصة قبل فتح القادسية، ذكرت القصة في ترجمة أبي محجن في كنى الرجال.",
+      "english": "11388 — al-Shamus al-Ansariyya\n\nShe has a story involving Abu Mihjan during Umar's caliphate, the implication of which is that she met the criterion for inclusion. This is because a married woman whom someone who saw her could gaze upon at length only by resorting to a stratagem—to such an extent that her husband sought redress against her—must have lived during the Prophetic era. The story occurred before the conquest of al-Qadisiyya. I related the story in the biography of Abu Mihjan, in the section on the kunyahs of men.",
+      "arabic_sha256": "5b34d60f685df21df7adf2d2b6330ea250b4ea37288dd6607f0685e41faf7ca3",
+      "english_sha256": "de6b3d1f40b581914c89f252e4da5708abf8f49d7d2d7e3e5e39f9cb1fb1e062",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الشّموس الأنصارية",
+      "english": "al-Shamus al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي محجن",
+      "english": "Abu Mihjan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "القادسية",
+      "english": "al-Qadisiyya",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

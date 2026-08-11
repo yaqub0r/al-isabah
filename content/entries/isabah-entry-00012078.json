@@ -1,0 +1,271 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012078",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12078,
+  "title": {
+    "english": "Umm Sulayman bint Abi Hakim:",
+    "arabic_observed": "أم سليمان بنت أبي حكيم:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012078-segment-0001",
+      "volume": 8,
+      "scan_page": 411,
+      "printed_page": 410,
+      "reader_page": 4323,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4323",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0411:c3527fd72e78ca19",
+      "arabic": "١٢٠٧٨- أم سليمان بنت أبي حكيم:\nيقال: هي والدة سليمان بن أبي حثمة «١» .\nوتقدم أن اسمها الشّفاء، وقال: هي غيرها. قال أبو عمر: أم سليمان، وقيل أم سليم العدويّة، وقال بعضهم: أم سلمة. روى عنها عبد اللَّه بن الطّيب أو الطبيب- أنها قالت:\nأدركت من النّساء وهن يصلّين مع النّبي ﷺ الفرائض.\nقلت: وصله ابن مندة من طريق أحمد بن يونس، عن ابن شهاب، عن ابن أبي ليلى، عن عبد الكريم، عن عبد اللَّه بن فلان، عن أم سليم بنت أبي حكيم- فذكره، ولم يقل في آخره الفرائض. قال: ورواه محمد بن عبد الوهاب، عن ابن شهاب، فقال: عن أم سلمة بنت حكيم.\nقلت: رواية بنت عبد الوهاب وصلها الطّبرانيّ في الأوسط، عن موسى بن هارون،\n(١) أسد الغابة ت (٧٤٨٠) .",
+      "english": "12078 - Umm Sulayman bint Abi Hakim:\n\nShe is said to have been the mother of Sulayman ibn Abi Hathma.[1]\n\nIt was stated above that her name was al-Shifa; however, it was also said that she was a woman other than al-Shifa. Abu Umar said: “Umm Sulayman”; she was also called Umm Sulaym al-Adawiyya, while some called her Umm Salama. Abd Allah ibn al-Tayyib—or Abd Allah ibn al-Tabib—related from her that she said, “I lived to see [elderly] women performing the obligatory prayers with the Prophet (may Allah bless him and grant him peace).”\n\nI say: Ibn Mandah connected it by way of Ahmad ibn Yunus, from Ibn Shihab, from Ibn Abi Layla, from Abd al-Karim, from Abd Allah ibn so-and-so, from Umm Sulaym bint Abi Hakim; he then cited the report, but did not include “the obligatory prayers” at its end. He said: “Muhammad ibn Abd al-Wahhab transmitted it from Ibn Shihab, but gave it as: ‘from Umm Salama bint Hakim.’”\n\nI say: al-Tabarani transmitted the narration of the daughter of Abd al-Wahhab with a connected chain in al-Awsat, from Musa ibn Harun,\n\n[1] Usd al-Ghaba, biography no. 7480.",
+      "arabic_sha256": "e5ffe4cf79b9ed6d6aea3b1c8434f030e918643d72c4386a9c2fce98d4f0e471",
+      "english_sha256": "1e48439df49b66f40e30a3d209231010bb84ca2b6abdcb05a841595643499e44",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012078-segment-0002",
+      "volume": 8,
+      "scan_page": 412,
+      "printed_page": 411,
+      "reader_page": 4324,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4324",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0412:b868f66989c7606d",
+      "arabic": "عنه. واعتمد الذّهبي على رواية ابن يونس، ففسر القواعد بقواعد إبراهيم، وليس كما ظنّ، بل المراد القواعد من النّساء.\nهكذا أخرجه أبو بكر بن أبي شيبة، عن أحمد بن يونس بلفظ: «لا تصلّين الفرائض» .\nوالسند ضعيف من أجل ابن أبي ليلى، وهو محمد، وشيخه عبد الكريم، وهو ابن أبي المخارق.\nوقد أخرجه ابن مندة أيضا في ترجمة أم سليمان بن أبي خثمة، من طريق أبي محصن [ابن حصين] «١» بن نمير، عن ابن أبي ليلى كذلك، فقال: عبد اللَّه بن الطّيب، فذكره.\nوأخرجه أبو نعيم من مسند الحسن بن سفيان، عن محمد بن جامع، عن أبي محصن، عن ابن أبي ليلى كذلك.",
+      "english": "from him. al-Dhahabi relied on Ahmad ibn Yunus's narration and interpreted qawa'id as the foundations of Ibrahim. That is not as he supposed; rather, what is meant is elderly women.\n\nAbu Bakr ibn Abi Shayba transmitted it in this form from Ahmad ibn Yunus, with the wording: “You do not perform the obligatory prayers.”\n\nThe chain is weak on account of Ibn Abi Layla—namely, Muhammad—and his teacher Abd al-Karim—namely, Ibn Abi al-Mukhariq.\n\nIbn Manda also transmitted it in the entry for the mother of Sulayman ibn Abi Khathama, through Abu Mihsan [ibn Husayn]¹ ibn Numayr, from Ibn Abi Layla in the same manner. He gave the name as Abdullah ibn al-Tayyib and then related the report.\n\nAbu Nu'aym also transmitted it from Musnad al-Hasan ibn Sufyan, from Muhammad ibn Jami', from Abu Mihsan, from Ibn Abi Layla in the same manner.",
+      "arabic_sha256": "2d6bea243d4814251279982287da94dedbf3399fed59ffad350adb1ca3655f99",
+      "english_sha256": "7447989c09a1b114a55e0f2550989616df47f25ad8d7ab13bb43e9574877b0de",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سليم",
+      "english": "Umm Sulaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سليمان بنت أبي حكيم",
+      "english": "Umm Sulayman bint Abi Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان بن أبي حثمة",
+      "english": "Sulayman ibn Abi Hathma",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشّفاء",
+      "english": "al-Shifa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سليم العدويّة",
+      "english": "Umm Sulaym al-Adawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن الطّيب",
+      "english": "Abd Allah ibn al-Tayyib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبيب",
+      "english": "Abd Allah ibn al-Tabib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد بن يونس",
+      "english": "Ahmad ibn Yunus",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن شهاب",
+      "english": "Ibn Shihab",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي ليلى",
+      "english": "Ibn Abi Layla",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الكريم",
+      "english": "Abd al-Karim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سليم بنت أبي حكيم",
+      "english": "Umm Sulaym bint Abi Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عبد الوهاب",
+      "english": "Muhammad ibn Abd al-Wahhab",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الوهاب",
+      "english": "Abd al-Wahhab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة بنت حكيم",
+      "english": "Umm Salama bint Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطّبرانيّ",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأوسط",
+      "english": "al-Awsat",
+      "kind": "work"
+    },
+    {
+      "arabic": "موسى بن هارون",
+      "english": "Musa ibn Harun",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن يونس",
+      "english": "Ahmad ibn Yunus",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم",
+      "english": "Ibrahim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر بن أبي شيبة",
+      "english": "Abu Bakr ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي ليلى، وهو محمد",
+      "english": "Muhammad ibn Abi Layla",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الكريم، وهو ابن أبي المخارق",
+      "english": "Abd al-Karim ibn Abi al-Mukhariq",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سليمان",
+      "english": "Umm Sulayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان بن أبي خثمة",
+      "english": "Sulayman ibn Abi Khathama",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن الطيب",
+      "english": "Abdullah ibn al-Tayyib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند الحسن بن سفيان",
+      "english": "Musnad al-Hasan ibn Sufyan",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحسن بن سفيان",
+      "english": "al-Hasan ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن جامع",
+      "english": "Muhammad ibn Jami'",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "textual_variant",
+      "arabic_span": "رواية بنت عبد الوهاب",
+      "explanation": "The canonical page reads “the daughter of Abd al-Wahhab,” which the translation retains. The preceding Muhammad ibn Abd al-Wahhab and the masculine pronoun عنه on the following page make ابن عبد الوهاب plausible, but no supplied al-Isabah witness confirms an emendation.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0411:c3527fd72e78ca19"
+    },
+    {
+      "category": "referent",
+      "arabic_span": "وقال: هي غيرها",
+      "explanation": "The statement compares this woman with al-Shifa, but the individual represented by “he said” is not identified by the supplied evidence. The final English therefore uses a neutral passive construction.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0411:c3527fd72e78ca19"
+    },
+    {
+      "category": "textual syntax",
+      "arabic_span": "«لا تصلّين الفرائض»",
+      "explanation": "The canonical vocalization supports a second-person feminine singular statement, which the final text preserves. The context and Urdu witness favor a third-person description, while collateral Arabic reports have a positive third-person clause; whether the canonical wording is intentional or textually disturbed cannot be determined.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0412:b868f66989c7606d"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

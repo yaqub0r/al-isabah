@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011325",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11325,
+  "title": {
+    "english": "Salma bint Malik ibn Hudhayfa ibn Badr al-Fazariyya",
+    "arabic_observed": "سلمى بنت مالك بن حذيفة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011325-segment-0001",
+      "volume": 8,
+      "scan_page": 187,
+      "printed_page": 186,
+      "reader_page": 4099,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4099",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0187:4faeefa7de874ae2",
+      "arabic": "١١٣٢٥- سلمى بنت مالك بن حذيفة\nبن بدر الفزارية، أم قرفة الصغرى، هي بنت عم عيينة بن حصن.\nكانت تشبّه في العز بجدتها أم قرفة الكبرى التي قتلها زيد بن حارثة لما سبى بني فزارة، وكانت سلمى سبيت فأعتقتها عائشة، ودخل النبيّ ﷺ وهي عندها\n، فقال: إنّ إحداكن تستنبح كلاب الحوأب» .\nقالوا: وكان يعلق في بيت أم قرفة خمسون سيفا لخمسين رجلا كلّهم لها محرم، فما أدري هذه أو أم قرفة الكبرى؟.",
+      "english": "11325- Salma bint Malik ibn Hudhayfa ibn Badr al-Fazariyya\n\nUmm Qirfa the Younger. She was the daughter of the paternal uncle of 'Uyayna ibn Hisn.\n\nShe was likened in eminence to her grandmother, Umm Qirfa the Elder, whom Zayd ibn Haritha killed when he took Banu Fazara captive. Salma was taken captive, and Aisha freed her. The Prophet—may Allah bless him and grant him peace—came in while Salma was with Aisha and said, “One of you women will have the dogs of al-Haw'ab barking at her.”\n\nThey said: Fifty swords belonging to fifty men, all of whom were her unmarriageable male relatives, used to hang in the house of Umm Qirfa. I do not know whether this refers to this woman or to Umm Qirfa the Elder.",
+      "arabic_sha256": "29597047ccae73a2f69e4a0d92a405000852354a1598ca204067ad126ba8db8e",
+      "english_sha256": "a2a472fc5a88fe6f0834d78cce0dc2d0c847d87711567cad6e8cd4abd1905921",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سلمى بنت مالك بن حذيفة بن بدر الفزارية",
+      "english": "Salma bint Malik ibn Hudhayfa ibn Badr al-Fazariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم قرفة الصغرى",
+      "english": "Umm Qirfa the Younger",
+      "kind": "person"
+    },
+    {
+      "arabic": "عيينة بن حصن",
+      "english": "'Uyayna ibn Hisn",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم قرفة الكبرى",
+      "english": "Umm Qirfa the Elder",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن حارثة",
+      "english": "Zayd ibn Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو فزارة",
+      "english": "Banu Fazara",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحوأب",
+      "english": "al-Haw'ab",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

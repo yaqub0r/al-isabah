@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011167",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11167,
+  "title": {
+    "english": "al-Rabab,",
+    "arabic_observed": "الرباب ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011167-segment-0001",
+      "volume": 8,
+      "scan_page": 132,
+      "printed_page": 131,
+      "reader_page": 4044,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4044",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0132:5ed4b7dc6b1909fb",
+      "arabic": "١١١٦٧- الرباب ،\nغير منسوبة.\nذكرها محمود بن أحمد الفريابيّ «٤» في كتاب «خالصة الحقائق»، وأنها كانت زوجا لرجل يقال له عمرو، فتعاهدا أيّهما مات قبل الآخر لا يتزوّج الّذي يبقى حتى يموت، فمات، فأقامت مدة فزوّجها أبوها، فرأت في تلك الليلة عمرا أنشدها أبياتا فأصبحت مذعورة وقصّت على النبيّ ﷺ القصة، فأمرها أن تستأنس بالوحدة حتى تموت وأمر زوجها بفراقها ففعل ذلك.\nقلت: وهي حكاية مشهورة لغير هذين حتى الشعر المذكور في هذه القصة، ولكن الزوج اسمه مالك بن نصر، وكان في إمارة قتيبة بن مسلم على خراسان، وذلك في أواخر المائة الأولى من الهجرة.",
+      "english": "11167 — al-Rabab,\n\nwith no lineage given.\n\nMahmud ibn Ahmad al-Firyabi (4) mentioned her in the book Khalisat al-Haqa'iq. She was the wife of a man called Amr, and they made a mutual covenant that whichever of them survived the other would not marry again until death. He died, and she remained so for a period; then her father gave her in marriage. That night she saw Amr reciting verses of poetry to her. She awoke terrified and related the story to the Prophet, may Allah bless him and grant him peace. He instructed her to take comfort in solitude until she died, and he instructed her husband to separate from her, which he did.\n\nI say: This is a well-known tale about two people other than these, including the poetry mentioned in the story. The husband's name, however, was Malik ibn Nasr, and this occurred during the governorship of Qutayba ibn Muslim over Khurasan, in the closing years of the first century after the Hijra.",
+      "arabic_sha256": "1e9c8de19e3bc15881db2371754046b02feaca2f7f8fd4c0ce6f7f02f991dcf4",
+      "english_sha256": "e69b69d5c984af4ced913df796e5f37175b09a0b761b06fece2d4fa4069d9774",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الرباب",
+      "english": "al-Rabab bint al-Ma'rur",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرباب، غير منسوبة",
+      "english": "al-Rabab",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمود بن أحمد الفريابي",
+      "english": "Mahmud ibn Ahmad al-Firyabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالصة الحقائق",
+      "english": "Khalisat al-Haqa'iq",
+      "kind": "work"
+    },
+    {
+      "arabic": "عمرو",
+      "english": "Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "مالك بن نصر",
+      "english": "Malik ibn Nasr",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتيبة بن مسلم",
+      "english": "Qutayba ibn Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "خراسان",
+      "english": "Khurasan",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011928",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11928,
+  "title": {
+    "english": "Umm Tha'laba bint Zayd",
+    "arabic_observed": "أم ثعلبة بنت زيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011928-segment-0001",
+      "volume": 8,
+      "scan_page": 368,
+      "printed_page": 367,
+      "reader_page": 4280,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4280",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0368:8e680841dd9b1c66",
+      "arabic": "١١٩٢٨- أم ثعلبة بنت زيد\nبن الحارث بن حرام.\nذكرها ابن سعد في المبايعات، وقال: هي أخت ثعلبة بن زيد بن الجذع، تزوّجها عمرو بن أوس بن عائذ بن الصّامت بن خالد بن عطية بن عديّ بن كعب، وأمها لبابة بنت خالد بن مخلد.\nحرف الجيم\nالقسم الأول",
+      "english": "11928—Umm Tha'laba bint Zayd\nibn al-Harith ibn Haram.\nIbn Sa'd mentioned her among the women who gave the pledge of allegiance and said: “She is the sister of Tha'laba ibn Zayd ibn al-Jadh'. 'Amr ibn Aws ibn 'A'idh ibn al-Samit ibn Khalid ibn 'Atiyya ibn 'Adi ibn Ka'b married her, and her mother was Lubaba bint Khalid ibn Mukhlid.”\n\nTHE LETTER JIM\n\nTHE FIRST SECTION",
+      "arabic_sha256": "27594ac3c6dac3c730789ce7b1642b4801ec25e4cf24e147ca46684b2ab35328",
+      "english_sha256": "8ec71cca5709fdd2cd3329637b51ddd4920c352ee8c7e49601c464f5deef86a2",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثعلبة بن زيد بن الجذع",
+      "english": "Tha'laba ibn Zayd ibn al-Jadh'",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن أوس بن عائذ بن الصامت بن خالد بن عطية بن عدي بن كعب",
+      "english": "'Amr ibn Aws ibn 'A'idh ibn al-Samit ibn Khalid ibn 'Atiyya ibn 'Adi ibn Ka'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "لبابة بنت خالد بن مخلد",
+      "english": "Lubaba bint Khalid ibn Mukhlid",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

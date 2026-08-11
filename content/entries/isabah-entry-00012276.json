@@ -1,0 +1,149 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012276",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12276,
+  "title": {
+    "english": "Umm Mani' [printed: Umm Manba']:³",
+    "arabic_observed": "أم منبع «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012276-segment-0001",
+      "volume": 8,
+      "scan_page": 482,
+      "printed_page": 481,
+      "reader_page": 4394,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4394",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0482:d894001a077d765b",
+      "arabic": "١٢٢٧٦- أم منبع «٣»\n: والدة شباث، بمعجمة وموحدة وآخره مثلثة. قيل: هي أسماء بنت عمرو التي تقدّمت في حرف الألف.\n(١) في أ: منها فقام علي ليأكل فقال:\n(٢) أسد الغابة ت (٧٦١٣) .\n(٣) أسد الغابة ت (٧٦١٤) .",
+      "english": "12276—Umm Mani' [printed: Umm Manba']:³\n\nThe mother of Shabath. Shabath is spelled with a dotted shin, a single-dotted ba, and a final three-dotted tha. It is said that she was Asma bint Amr, who appeared earlier under the letter alif.\n\n¹ In A: “from them; then Ali rose to eat, and he said:”\n² Usd al-Ghaba, entry 7613.\n³ Usd al-Ghaba, entry 7614.",
+      "arabic_sha256": "e9de2440afd1a5809d4e4023738524d4f0d5b2e259ccf39e4817e8898f8f228b",
+      "english_sha256": "fb3c38b883f7c4eab03c6c29b1689e49ee754b12fde8019a9514db91c05eb856",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012276-segment-0002",
+      "volume": 8,
+      "scan_page": 483,
+      "printed_page": 482,
+      "reader_page": 4395,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4395",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0483:b57cabe1299fcb39",
+      "arabic": "وقد أخرج ابن سعد عن الواقديّ بسند له إلى أم عمارة، قالت: كان الرّجال تصفق على يدي رسول اللَّه ﵌ ليلة بيعة العقبة، والعبّاس آخذ بيده، فلما بقيت أنا وأم منيع نادى زوجي غزية بن عمرو: يا رسول اللَّه، هاتان امرأتان حضرتا معنا يبايعانك. فقال: «قد بايعتكما، إنّي لا أصافح النّساء» .\nوقال ابن سعد أيضا: أمها شهدت العقبة مع زوجها خديج بن سلامة، وشهدت خيبر أيضا.\nالقسم الثاني\nخال.\nالقسم الثالث",
+      "english": "Ibn Sa'd transmitted from al-Waqidi, through a chain of his leading to Umm 'Umara, that she said: “On the night of the Pledge of al-'Aqaba, the men were clasping the hands of the Messenger of Allah, may Allah bless him and grant him peace, while al-'Abbas was holding his hand. When only Umm Mani' and I remained, my husband, Ghaziyya ibn 'Amr, called out: ‘O Messenger of Allah, these are two women who attended with us to pledge allegiance to you.’ He said: ‘I have accepted the pledge of you both. Indeed, I do not shake hands with women.’”\n\nIbn Sa'd also said: “Her mother attended al-'Aqaba with her husband, Khudayj ibn Salama, and also attended Khaybar.”\n\nSECTION TWO\n\nVacant.\n\nSECTION THREE",
+      "arabic_sha256": "9696a8b83c05b47acf22b642066b3c418283036aa4f2acf0a02316de41cb03f0",
+      "english_sha256": "3861e144d8f3f3b7d77de9e55d10c970c831bef807be58cdf922b4192d880e1f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم منيع",
+      "english": "Umm Mani'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم منبع",
+      "english": "Umm Manba'",
+      "kind": "person"
+    },
+    {
+      "arabic": "شباث",
+      "english": "Shabath",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت عمرو",
+      "english": "Asma bint Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمارة",
+      "english": "Umm 'Umara",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "بيعة العقبة",
+      "english": "Pledge of al-'Aqaba",
+      "kind": "other"
+    },
+    {
+      "arabic": "العباس",
+      "english": "al-'Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "غزية بن عمرو",
+      "english": "Ghaziyya ibn 'Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديج بن سلامة",
+      "english": "Khudayj ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "syntax_and_pronoun_reference",
+      "arabic_span": "وابن أبي فديك من أقرانه، فلعله حمله عنه، ولم يفصح باسم ابنه لصغره. قال محمد بن إسحاق: فالتبس",
+      "explanation": "The supplied evidence does not securely determine every referent of “his,” “him,” and “his son,” whose youth is intended, or the precise syntactic connection of “Muhammad ibn Ishaq said.” The English therefore preserves the source's pronoun sequence without silently reassigning it.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0482:d894001a077d765b"
+    },
+    {
+      "category": "textual_reading",
+      "arabic_span": "أمها",
+      "explanation": "The authoritative Arabic literally reads “her mother.” Collateral accounts suggest that Umm Mani' herself may be intended and that أمها could be corrupt, but those works are not manuscript witnesses to al-Isabah and cannot establish an emendation. The final translation therefore preserves the canonical wording literally.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0483:b57cabe1299fcb39"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

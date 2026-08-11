@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011088",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11088,
+  "title": {
+    "english": "Khalida bint Amr",
+    "arabic_observed": "خالدة بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011088-segment-0001",
+      "volume": 8,
+      "scan_page": 100,
+      "printed_page": 99,
+      "reader_page": 4012,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4012",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0100:b5fe86f8a8ec1ea9",
+      "arabic": "١١٠٨٨- خالدة بنت عمرو\nبن ورقة، من بني بياضة. ذكرها ابن سعد في المبايعات.",
+      "english": "11088—Khalida bint Amr\nibn Waraqa, of Banu Bayada. Ibn Sa'd mentioned her among the women who gave the pledge of allegiance.",
+      "arabic_sha256": "6ccd427eb1be1dfaa2da9ae4766e2a7feab478e9606a7a49c9eb2fe37804eb74",
+      "english_sha256": "f1b164671bb80f214bdfc96faeeccdc02a3f113433e34d59fe5fd6c780bdb27a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بني بياضة",
+      "english": "Banu Bayada",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

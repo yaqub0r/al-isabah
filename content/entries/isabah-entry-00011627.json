@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011627",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11627,
+  "title": {
+    "english": "Furay'a bint Malik ibn al-Dukhshum:",
+    "arabic_observed": "فريعة بنت مالك بن الدخشم:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011627-segment-0001",
+      "volume": 8,
+      "scan_page": 281,
+      "printed_page": 280,
+      "reader_page": 4193,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4193",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0281:80592b72a369a987",
+      "arabic": "١١٦٢٧- فريعة بنت مالك بن الدخشم:\nمن بني عوف بن الخزرج «٣» . تقدم نسبها في ترجمة والدها. ذكرها ابن حبيب في المبايعات.",
+      "english": "11627—Furay'a bint Malik ibn al-Dukhshum:\nOf Banu Awf ibn al-Khazraj.(3) Her lineage was given previously in the entry on her father. Ibn Habib mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "82ecd1df2b63df6f3ab94ba2848192c4645bbd943666bb83016a91af90c2b553",
+      "english_sha256": "fde4648809d746e09c418e55cc16470f3495e2115d8d0307ff9c06e5df560428",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "فريعة بنت مالك بن الدخشم",
+      "english": "Furay'a bint Malik ibn al-Dukhshum",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عوف بن الخزرج",
+      "english": "Banu Awf ibn al-Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

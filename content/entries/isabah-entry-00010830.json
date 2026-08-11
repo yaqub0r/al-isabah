@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010830",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10830,
+  "title": {
+    "english": "Umama bint Uthman ibn Khalida, the Ansari woman of Banu Zurayq",
+    "arabic_observed": "أمامة بنت عثمان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010830-segment-0001",
+      "volume": 8,
+      "scan_page": 27,
+      "printed_page": 26,
+      "reader_page": 3939,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3939",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0027:2304d49de3177790",
+      "arabic": "١٠٨٣٠- أمامة بنت عثمان\nبن خالدة الأنصارية الزرقية. ذكرها ابن سعد.",
+      "english": "10830—Umama bint Uthman ibn Khalida, the Ansari woman of Banu Zurayq\n\nibn Sa'd mentioned her.",
+      "arabic_sha256": "99bb1ddd73efb52be23a8af7fc33ba14663916ffafc7884a36657c8f18ae62cb",
+      "english_sha256": "e5fb307ea023986ccbb8596c2d24ba02344a9f9cc751a473a1537fa9b2d13407",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة بنت عثمان بن خالدة",
+      "english": "Umama bint Uthman ibn Khalida",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الزرقية",
+      "english": "Banu Zurayq",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

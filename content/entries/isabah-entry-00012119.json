@@ -1,0 +1,189 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012119",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12119,
+  "title": {
+    "english": "Umm Talib bint Abi Talib ibn Abd al-Muttalib ibn Hashim, the Hashimite woman",
+    "arabic_observed": "أم طالب بنت أبي طالب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012119-segment-0001",
+      "volume": 8,
+      "scan_page": 424,
+      "printed_page": 423,
+      "reader_page": 4336,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4336",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0424:e87149484b923332",
+      "arabic": "١٢١١٩- أم طالب بنت أبي طالب\nبن عبد المطّلب بن هاشم الهاشميّة، أخت عليّ وإخوته، ويقال اسمها ريطة.\n(١) الفرسن: عظم قليل اللحم، وهو خف البعير كالحافر للدابة وقد يستعار للشاة فيقال: فرسن شاة، والّذي للشاة هو الظلف، والنون زائدة، وقيل: أصلية. النهاية ٣/ ٤٢٩.\n(٢) أسد الغابة ت (٧٥٠٣) .\n(٣) أسد الغابة ت (٧٥٠٤)، الاستيعاب ت (٣٦٣٠)، الثقات ٣/ ٤٦٤. تجريد أسماء الصحابة ٢/ ٣٢٥، الاستبصار ٩٩، تلقيح فهوم أهل الأثر ٣٧٨. بقي بن مخلد ٥٣٧. ذيل الكاشف ٢١٧٠. تعجيل المنفعة ص ٥٦٢.\n(٤) أخرجه أحمد في المسند ٦/ ٣٧٨ والبيهقي في الدلائل ٦/ ١٥٨ وابن سعد في الطبقات ٨/ ٢٢٢ وانظر المجمع ٢/ ٣٠٦.\n(٥) أسد الغابة ت (٧٥٠٥) .",
+      "english": "12119 — Umm Talib bint Abi Talib ibn Abd al-Muttalib ibn Hashim, the Hashimite woman\n\nShe was the sister of Ali and his brothers. It is also said that her name was Rayta.\n\n(1) The farsan is a bone with little flesh upon it. It is the padded foot of a camel, corresponding to the hoof of a riding animal. The term is sometimes applied figuratively to a sheep, so that one says “the farsan of a sheep,” although the sheep's foot is properly called the zilf. The letter n is additional; it is also said to be an original root letter. al-Nihaya, 3/429.\n\n(2) Usd al-Ghaba, entry 7503.\n\n(3) Usd al-Ghaba, entry 7504; al-Isti'ab, entry 3630; al-Thiqat, 3/464; al-Tajrid, 2/325; al-Istibsar, p. 99; Talqih Fuhum Ahl al-Athar, p. 378; Baqi ibn Makhlad, no. 537; al-Dhayl, no. 2170; Ta'jil al-Manfa'a, p. 562.\n\n(4) Ahmad transmitted it in Musnad Ahmad, 6/378; al-Bayhaqi in al-Dala'il, 6/158; and Ibn Sa'd in al-Tabaqat, 8/222. See also al-Majma', 2/306.\n\n(5) Usd al-Ghaba, entry 7505.",
+      "arabic_sha256": "44215e0a9ccfd56c5537ac2476808f13d7de9354b632dd8254ddd609404710f8",
+      "english_sha256": "a533e81694e0e86811ac9c695161356289df33a1faad1c2869fe9bfbeaccef8c",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012119-segment-0002",
+      "volume": 8,
+      "scan_page": 425,
+      "printed_page": 424,
+      "reader_page": 4337,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4337",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0425:538f1d143e4219b5",
+      "arabic": "قال ابن سعد: ذكرها الواقديّ فيمن أطعم رسول اللَّه ﵌ من تمر خيبر أربعين وسقا، قال: ولم يذكر هشام بن الكلبيّ في كتاب النّسب أمّ طالب في أولاد طالب بن أبي طالب، بل ذكر ريطة، فلعلها كانت أم طالب.",
+      "english": "Ibn Sa'd said: al-Waqidi mentioned her among those to whom the Messenger of Allah, may Allah bless him and grant him peace, gave forty wasqs of Khaybar dates. He said: “Hisham ibn al-Kalbi did not mention Umm Talib in the Book of Genealogy among the children of Talib ibn Abi Talib. Rather, he mentioned Rayta; perhaps she was Umm Talib.”",
+      "arabic_sha256": "4227fdb63bd253c9ecf41bb06ff6acae5777d0c87a71686764e9c1c91430167d",
+      "english_sha256": "fa86790c8b5a8bc05a724743cfaef49777b051d25c949f3883ada652c1bde40a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم طالب بنت أبي طالب بن عبد المطلب بن هاشم الهاشمية",
+      "english": "Umm Talib bint Abi Talib ibn Abd al-Muttalib ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "ريطة",
+      "english": "Rayta",
+      "kind": "person"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ذيل الكاشف",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "تعجيل المنفعة",
+      "english": "Ta'jil al-Manfa'a",
+      "kind": "work"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدلائل",
+      "english": "al-Dala'il",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبقات",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "المجمع",
+      "english": "al-Majma'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    },
+    {
+      "arabic": "هشام بن الكلبي",
+      "english": "Hisham ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب النسب",
+      "english": "Book of Genealogy",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم طالب",
+      "english": "Umm Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "طالب بن أبي طالب",
+      "english": "Talib ibn Abi Talib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

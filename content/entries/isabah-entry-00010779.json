@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010779",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10779,
+  "title": {
+    "english": "Athila bint Rashid al-Hudhaliyya (1)",
+    "arabic_observed": "أثيلة بنت راشد الهذلية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010779-segment-0001",
+      "volume": 8,
+      "scan_page": 7,
+      "printed_page": 6,
+      "reader_page": 3919,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3919",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0007:16f979fa3c96671e",
+      "arabic": "١٠٧٧٩- أثيلة بنت راشد الهذلية «١»\n، تقدم ذكرها في ترجمة عامر بن مرقش.",
+      "english": "10779 — Athila bint Rashid al-Hudhaliyya (1)\n\nShe was previously mentioned in the biography of 'Amir ibn Muraqqish.",
+      "arabic_sha256": "77107447f1608aac769b6ecef8869e8034e9c0e33937fd15ed67ea351d3d72c2",
+      "english_sha256": "a099dc4400666732be7b9697aa55b212de6288ee117becc8b95f610224dcd09e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أثيلة بنت راشد الهذلية",
+      "english": "Athila bint Rashid al-Hudhaliyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عامر بن مرقش",
+      "english": "'Amir ibn Muraqqish",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

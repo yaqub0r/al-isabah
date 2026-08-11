@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011402",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11402,
+  "title": {
+    "english": "Safiyya bint Safih²",
+    "arabic_observed": "صفية بنت صفيح «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011402-segment-0001",
+      "volume": 8,
+      "scan_page": 210,
+      "printed_page": 209,
+      "reader_page": 4122,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4122",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0210:cef0daed91286189",
+      "arabic": "١١٤٠٢- صفية بنت صفيح «٢»\nبن الحارث بن أبي صعب بن هنية بن سعد «٣» بن ثعلبة الدوسية، أم أبي هريرة.\nذكرها ابن فتحون، وقال: سماها ونسبها الطّبريّ والبغويّ.\nقلت: وقد تقدم خبر إسلامها في أميمة في حرف الألف.",
+      "english": "11402 — Safiyya bint Safih²\n\nibn al-Harith ibn Abi Sa'b ibn Haniyya ibn Sa'd³ ibn Tha'laba, al-Dawsiyya, the mother of Abu Hurayra.\n\nIbn Fathun mentioned her and said: “She was named and her lineage was given by al-Tabari and al-Baghawi.”\n\nI say: The account of her acceptance of Islam has already appeared under Umayma, in the letter alif.",
+      "arabic_sha256": "00b0e13d6bc804dc69cdf0de3c1db0dc223d74a0ef1b18511b367e98ab370c48",
+      "english_sha256": "2404302a7f1589e8538fba86e87a15c50dea9b1ec53674f723ca3ad8dd324572",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو هريرة",
+      "english": "Abu Hurayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن فتحون",
+      "english": "Ibn Fathun",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبري",
+      "english": "al-Tabari",
+      "kind": "person"
+    },
+    {
+      "arabic": "البغوي",
+      "english": "al-Baghawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة",
+      "english": "Umayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

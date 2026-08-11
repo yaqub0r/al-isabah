@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011952",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11952,
+  "title": {
+    "english": "Umm al-Harith:",
+    "arabic_observed": "أم الحارث:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011952-segment-0001",
+      "volume": 8,
+      "scan_page": 373,
+      "printed_page": 372,
+      "reader_page": 4285,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4285",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0373:8358d8799676c9a7",
+      "arabic": "١١٩٥٢- أم الحارث:\nجدّة عمارة «٢» بن غزية الأنصاريّة، من بني الخزرج.\nقال أبو عمر: شهدت حنينا مع النّبيّ ﵌.",
+      "english": "11952—Umm al-Harith:\n\nShe was the grandmother of 'Umara² ibn Ghaziyya and was an Ansari woman of Banu al-Khazraj.\n\nAbu 'Umar said: She was present at Hunayn with the Prophet—may Allah bless him and grant him peace.",
+      "arabic_sha256": "6675834de95a0468c0178c3f59b56910c724a70b00f5ffd0c191c85462615629",
+      "english_sha256": "ecfb79960a648df843c5e41690043800e347e20f13b231d1b87db288367703cf",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم الحارث",
+      "english": "Umm al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني الخزرج",
+      "english": "Banu al-Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "حنين",
+      "english": "Hunayn",
+      "kind": "place"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

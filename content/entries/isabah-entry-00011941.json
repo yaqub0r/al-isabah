@@ -1,0 +1,302 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011941",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11941,
+  "title": {
+    "english": "Umm Jundab al-Azdiyya:",
+    "arabic_observed": "أم جندب الأزدية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011941-segment-0001",
+      "volume": 8,
+      "scan_page": 370,
+      "printed_page": 369,
+      "reader_page": 4282,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4282",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0370:56fa4e301fceadfb",
+      "arabic": "١١٩٤١- أم جندب الأزدية:\nوالدة سليمان بن عمرو بن الأحوص «٤» .\nأخرج حديثها أحمد وابن سعد، كلاهما عن يزيد بن هارون، عن حجاج بن أرطاة، عن يزيد مولى عبد اللَّه بن الحارث، عن أم جندب الأزديّة، قالت: قال النبي ﵌: «ارموا الجمرة بمثل حصى الخذف» «٥» .\n(١) أسد الغابة ت (٧٣٩٣) .\n(٢) أسد الغابة ت (٧٣٩٤)، الاستيعاب ت (٣٥٨٦) .\n(٣) أسد الغابة ت (٧٣٩٥)، الثقات ٣/ ٤٦٠، تجريد أسماء الصحابة ٢/ ٣١٥.\n(٤) أسد الغابة ت (٧٣٩٧)، الاستيعاب ت (٣٥٨٧)، الكاشف ١/ ٤٨١، تجريد أسماء الصحابة ٢/ ٣١٥، تقريب التهذيب ٢/ ٦١٩، تهذيب التهذيب ١٢/ ٤٦١ تهذيب الكمال ١/ ١٧٠٠، بقي بن مخلد ٢٧٩.\n(٥) أخرجه أحمد في المسند ٤/ ٣٤٣، ٥/ ٢٧٠، ٣٧٤ قال الهيثمي في الزوائد ٣/ ٢٦١ رواه أحمد والبزار والطبراني في الكبير ورجاله ثقات، وابن سعد في الطبقات الكبرى ٤/ ٢٣٧ عن حرملة بن عمرو.",
+      "english": "11941—Umm Jundab al-Azdiyya:\nThe mother of Sulayman ibn Amr ibn al-Ahwas.⁴\n\nAhmad and Ibn Sa'd both transmitted her hadith from Yazid ibn Harun, from Hajjaj ibn Arta'a, from Yazid, the client of Abd Allah ibn al-Harith, from Umm Jundab al-Azdiyya, who said: The Prophet—may Allah bless him and grant him peace—said: “Throw at the Jamra with pebbles like those used for flicking.”⁵\n\n(1) Usd al-Ghaba, entry 7393.\n\n(2) Usd al-Ghaba, entry 7394; al-Isti'ab, entry 3586.\n\n(3) Usd al-Ghaba, entry 7395; al-Thiqat, 3/460; al-Tajrid, 2/315.\n\n(4) Usd al-Ghaba, entry 7397; al-Isti'ab, entry 3587; al-Kashif, 1/481; al-Tajrid, 2/315; Taqrib al-Tahdhib, 2/619; Tahdhib al-Tahdhib, 12/461; Tahdhib al-Kamal, 1/1700; Baqi ibn Makhlad, 279.\n\n(5) Ahmad transmitted it in Musnad Ahmad, 4/343; 5/270, 374. Al-Haythami said in al-Zawa'id, 3/261: “It was transmitted by Ahmad and al-Bazzar, and by al-Tabarani in al-Kabir; its transmitters are trustworthy.” Ibn Sa'd also transmitted it in al-Tabaqat, 4/237, from Harmala ibn Amr.",
+      "arabic_sha256": "3516d5f88f385e057c40e7b9725903a77f36219e32ae14fc6d29516522582136",
+      "english_sha256": "0154b8ac1c7d4707c41479db8b217b4933249b1b2c38008253e9476b393af5f2",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011941-segment-0002",
+      "volume": 8,
+      "scan_page": 371,
+      "printed_page": 370,
+      "reader_page": 4283,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4283",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0371:a9bd57645d099a96",
+      "arabic": "وأخرجه ابن سعد عن عبد اللَّه بن إدريس، عن يزيد بن زياد، عن سليمان بن عمرو بن الأحوص، عن أمه به،\nوأنتم منه، وفيه: وخلفه رجل يقيه حجارة النّاس، فسألت عنه، فقيل العبّاس بن عبد المطّلب.\nوأخرجه أيضا من طريق مندل بن علي، عن يزيد، عن سليمان، عن أمه أم جندب به، لكن قال: فقيل الفضل بن العبّاس، وهو الصّواب.\nوأخرجه ابن مندة من الوجه الأول، ثم قال: خالفه حماد بن سلمة، فقال: عن حجاج، عن يزيد بن الحارث، عن جندب، عن أمّه.\nوفرق أبو نعيم بينهما، فجعل أم جندب والدة سليمان غير أم جندب الأزديّة، وجعل ترجمة أم جندب والدة أبي ذرّ بينهما، وهو وهم. والعجب أنه قال في الأزديّة، وهي والدة سليمان.",
+      "english": "Ibn Sa'd also transmitted it from 'Abd Allah ibn Idris, from Yazid ibn Ziyad, from Sulayman ibn 'Amr ibn al-Ahwas, from his mother, to the same effect. His version is fuller than that one, and it contains: “Behind him was a man shielding him from the people's stones. I asked about him, and it was said: ‘al-'Abbas ibn 'Abd al-Muttalib.’”\n\nHe also transmitted it by way of Mandal ibn 'Ali, from Yazid, from Sulayman, from his mother Umm Jundab, to the same effect; however, he said: “It was said: ‘al-Fadl ibn al-'Abbas,’” and this is correct.\n\nIbn Manda transmitted it by the first route, then said: “Hammad ibn Salama differed from him, saying: from Hajjaj, from Yazid ibn al-Harith, from Jundab, from his mother.”\n\nAbu Nu'aym distinguished between the two, making Umm Jundab, the mother of Sulayman, someone other than Umm Jundab al-Azdiyya; and he placed the entry for Umm Jundab, the mother of Abu Dharr, between them. This is an error. What is astonishing is that, in the entry on al-Azdiyya, he said: “She is the mother of Sulayman.”",
+      "arabic_sha256": "feb5e9c10d653f8a2559e566dfb5f32c9ac43da49fe929bd55ce1cd5ccf6677b",
+      "english_sha256": "f9acd77be8101f70764672fa40e5b1d7139813ac639e866281238cf9599a3b80",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث",
+      "english": "al-Harith ibn Hatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم جندب",
+      "english": "Umm Jundab",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم جندب الأزدية",
+      "english": "Umm Jundab al-Azdiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأزدية",
+      "english": "Azd",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سليمان بن عمرو بن الأحوص",
+      "english": "Sulayman ibn Amr ibn al-Ahwas",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن هارون",
+      "english": "Yazid ibn Harun",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجاج بن أرطاة",
+      "english": "Hajjaj ibn Arta'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن الحارث",
+      "english": "Abd Allah ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "البزار",
+      "english": "al-Bazzar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبقات الكبرى",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "حرملة بن عمرو",
+      "english": "Harmala ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن إدريس",
+      "english": "'Abd Allah ibn Idris",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن زياد",
+      "english": "Yazid ibn Ziyad",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان بن عمرو بن الأحوص",
+      "english": "Sulayman ibn 'Amr ibn al-Ahwas",
+      "kind": "person"
+    },
+    {
+      "arabic": "العبّاس بن عبد المطّلب",
+      "english": "al-'Abbas ibn 'Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "مندل بن علي",
+      "english": "Mandal ibn 'Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد",
+      "english": "Yazid ibn Ziyad",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان",
+      "english": "Sulayman ibn 'Amr ibn al-Ahwas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جندب",
+      "english": "Umm Jundab al-Azdiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفضل بن العبّاس",
+      "english": "al-Fadl ibn al-'Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "حماد بن سلمة",
+      "english": "Hammad ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجاج",
+      "english": "Hajjaj ibn Arta'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن الحارث",
+      "english": "Yazid ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "جندب",
+      "english": "Jundab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جندب والدة سليمان",
+      "english": "Umm Jundab al-Azdiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جندب الأزديّة",
+      "english": "Umm Jundab al-Azdiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جندب والدة أبي ذرّ",
+      "english": "Umm Jundab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو ذرّ",
+      "english": "Abu Dharr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث",
+      "english": "al-Harith ibn al-Nadr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "textual_reading",
+      "arabic_span": "وأنتم منه",
+      "explanation": "The printed phrase is syntactically incoherent. The context and Urdu witness securely support the intended sense “and it is fuller than it,” reflected in the English, but they do not establish whether the exact underlying Arabic was وأتم منه or another wording.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0371:a9bd57645d099a96"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011493",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11493,
+  "title": {
+    "english": "Umara bint Hamza",
+    "arabic_observed": "عمارة بنت حمزة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011493-segment-0001",
+      "volume": 8,
+      "scan_page": 243,
+      "printed_page": 242,
+      "reader_page": 4155,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4155",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0243:1e8ea87983cbdbf4",
+      "arabic": "١١٤٩٣- عمارة بنت حمزة\nبن عبد المطلب «٦» [مرت في ترجمة سلمى بنت عميس] «٧» .",
+      "english": "11493—Umara bint Hamza\n\nibn Abd al-Muttalib.[6] [She was previously discussed in the entry on Salma bint Umays.][7]",
+      "arabic_sha256": "4013bf02e7f42dee93fd231e86349378fa72a51e97861c07fc5752fe256809c1",
+      "english_sha256": "b0f84959dbfbcf5e40457405f4ddb06bc9a679d6920f13f9b0cec3e759967d15",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عبد المطلب",
+      "english": "Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى بنت عميس",
+      "english": "Salma bint Umays",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

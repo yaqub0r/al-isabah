@@ -1,0 +1,113 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011200",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11200,
+  "title": {
+    "english": "Rawda,",
+    "arabic_observed": "روضة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011200-segment-0001",
+      "volume": 8,
+      "scan_page": 146,
+      "printed_page": 145,
+      "reader_page": 4058,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4058",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0146:fa9112975377feed",
+      "arabic": "١١٢٠٠- روضة ،\nوصيفة كانت لامرأة من أهل المدينة «٢» .\nأسلمت هي ومولاتها عند قدوم النبي ﷺ، هكذا ذكرها أبو عمر مختصرا، وأخرج حديثهما ابن مندة، من طريق عبد الجليل بن الحارث، حدثتني ثبيتة بنت بنت عميا، قالت:\nحدثتني روضة، قالت: كنت وصيفة لامرأة من أهل المدينة، فلما هاجر النبيّ ﷺ من مكة إلى المدينة قالت لي مولاتي: يا روضة، قومي على الباب، فإذا مر هذا الرجل فأعلميني، فقمت على باب الدار فإذا هو قد مر ومعه نفر من أصحابه، فأخذت بطرف ردائه، فبشّ في وجهي، فقلت لمولاتي: قد جاء هذا الرجل، فخرجت مولاتي وكان زوجها في الدار فعرض عليهم الإسلام فأسلموا.\nوأخرج النّسائيّ في الكنى، عن أبي صالح عبد الجليل بن الحارث بن عبد اللَّه بن النضر، حدثتني ثبيتة بنت الأسود، حدثتني روضة به. وفي رواية: فتبسم في وجهي، فأخذت بطرف ثوبه.",
+      "english": "11200—Rawda,\na young female servant who belonged to a woman of Medina.²\n\nShe and her mistress accepted Islam when the Prophet (may Allah bless him and grant him peace) arrived. Abu Umar mentioned her briefly in this manner. Ibn Manda transmitted their report by way of Abd al-Jalil ibn al-Harith, who said: Thubayta, the daughter of the daughter of Amya, narrated to me; she said:\n\nRawda narrated to me, saying: I was a young female servant belonging to a woman of Medina. When the Prophet (may Allah bless him and grant him peace) emigrated from Mecca to Medina, my mistress said to me, “Rawda, stand at the door, and when this man passes by, inform me.” I stood at the door of the house, and there he was, passing by with a group of his Companions. I took hold of the edge of his cloak, and he beamed at me. I said to my mistress, “This man has arrived.” My mistress came out, while her husband was in the house. He presented Islam to them, and they accepted Islam.\n\nAl-Nasa'i transmitted it in al-Kuna from Abu Salih Abd al-Jalil ibn al-Harith ibn Abd Allah ibn al-Nadr: Thubayta bint al-Aswad narrated to me; Rawda narrated it to me. In one recension: “He smiled at me, and I took hold of the edge of his garment.”",
+      "arabic_sha256": "d975c0d865b5358b5e32c49a53771419bd1c83bc148bb1aa1eecf4e7465453da",
+      "english_sha256": "fc697f1e5e821a82f54fb5b6f1c244dd68f2cba974144e6b2965cd19bc7ae257",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "روضة",
+      "english": "Rawda",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الجليل بن الحارث",
+      "english": "Abu Salih Abd al-Jalil ibn al-Harith ibn Abd Allah ibn al-Nadr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثبيتة بنت بنت عميا",
+      "english": "Thubayta bint bint Amya",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكنى",
+      "english": "al-Kuna",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو صالح عبد الجليل بن الحارث بن عبد اللَّه بن النضر",
+      "english": "Abu Salih Abd al-Jalil ibn al-Harith ibn Abd Allah ibn al-Nadr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثبيتة بنت الأسود",
+      "english": "Thubayta bint al-Aswad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "isnad_name_identification",
+      "arabic_span": "ثبيتة بنت بنت عميا",
+      "explanation": "The canonical Arabic literally gives “Thubayta, the daughter of the daughter of Amya.” The supplied witnesses preserve incompatible forms: the Urdu witness reflects this wording, the later al-Nasa'i chain has Thubayta bint al-Aswad, and Usd al-Ghaba has Shayba bint al-Aswad. The intended identification therefore cannot be established safely, so the canonical wording has been retained literally.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0146:fa9112975377feed"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

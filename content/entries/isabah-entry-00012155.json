@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012155",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12155,
+  "title": {
+    "english": "Umm Abd al-Rahman:",
+    "arabic_observed": "أم عبد الرّحمن:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012155-segment-0001",
+      "volume": 8,
+      "scan_page": 433,
+      "printed_page": 432,
+      "reader_page": 4345,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4345",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0433:ab8b952361d246b1",
+      "arabic": "١٢١٥٥- أم عبد الرّحمن:\nزوج طارق بن علقمة «٣» .\nأخرج حديثها ابن أبي عاصم، من رواية عبد اللَّه بن أبي يزيد، عن عبد الرّحمن بن طارق، عن أمه- أن النّبيّ ﵌ كان يأتي مكانا في دار يعلى فيستقبل البيت فيدعو ويخرج معه ونحن مسلمات.",
+      "english": "12155 — Umm Abd al-Rahman:\n\nThe wife of Tariq ibn Alqama. (3)\n\nIbn Abi Asim transmitted her hadith through Abdullah ibn Abi Yazid, from Abd al-Rahman ibn Tariq, from his mother: The Prophet used to come to a place in the house of Ya'la, face the House, and supplicate; Ya'la would go out with him, and we Muslim women would accompany them.",
+      "arabic_sha256": "33523604067070cf1fc9d7c82f7990899c47741d36ae7b3a36309b19dfb9dc8a",
+      "english_sha256": "589c46f1d46b81bc579c72d64ba3b717068c8e317d0316b5a9ccd23b251b45df",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم عبد الرحمن",
+      "english": "Umm Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "طارق بن علقمة",
+      "english": "Tariq ibn Alqama",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن أبي يزيد",
+      "english": "Abdullah ibn Abi Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن طارق",
+      "english": "Abd al-Rahman ibn Tariq",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "يعلى",
+      "english": "Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "البيت",
+      "english": "the House",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

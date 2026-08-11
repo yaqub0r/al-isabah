@@ -1,0 +1,204 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012270",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12270,
+  "title": {
+    "english": "Umm Mughith (2): Ibn Manda said, “She was a Companion.” He then cited, through Sa'id ibn Abi Maryam, from 'Abd al-Jabbar ibn 'Umar, from Ishaq ibn 'Abd Allah ibn Abi Farwa, from Muhammad ibn Yusuf, from his father, from Umm Mughith, that she heard the Messenger of Allah—may Allah bless him and grant him peace—forbid combining the two ingredients.",
+    "arabic_observed": "أم مغيث «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012270-segment-0001",
+      "volume": 8,
+      "scan_page": 480,
+      "printed_page": 479,
+      "reader_page": 4392,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4392",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0480:dbe37cc9243b808c",
+      "arabic": "١٢٢٧٠- أم مغيث «٢»\n: قال ابن مندة: لها صحبة، ثم\nساق من طريق سعيد بن أبي مريم، عن عبد الجبار بن عمر، عن إسحاق بن عبد اللَّه بن أبي فروة، عن محمد بن يوسف، عن أبيه، عن أم مغيث- أنها سمعت رسول اللَّه ﵌ ينهى عن الخليطين.\nقلت: وقال: هما التمر والزبيب. زاد الطبراني: وكانت أم مغيث جدة ربيعة بن أبي عبد الرحمن، وقد صلت القبلتين على عهد رسول اللَّه ﵌. قال أبو عمر: تعدّ في أهل المدينة، حديثها عند عبد اللَّه «٣» بن يوسف، عن أبيه، عنها- في الخليطين وتحريم المسكر. ويقال: إنها أم أم ابن أبي عبد الرحمن، وكانت قد صلّت القبلتين مع رسول اللَّه ﵌.\nوذكر ابن الفرضيّ أن ابن وهب روى الحديث المذكور، وأن محمد بن وضاح تعقبه، فحكاه عن حرملة أن ابن وهب أخطأ فيه، فقال: أم مغيث، وإنما هي أم معبد- بفتح الميم وسكون المهملة ثم دال.\nقلت: وكان الحامل له على هذه الدّعوى اتحاد المتن، ووصفها بكونها صلّت\n(١) أخرجه البخاري ٣/ ٤ ومسلم في كتاب الحج (٢٢١) .\n(٢) أعلام النساء ٥/ ٦٦، تجريد، أسماء الصحابة ٢/ ٣٣٦، أسد الغابة ت (٧٦١٠) .\n(٣) في أ: حديثها عن محمد بن يوسف.",
+      "english": "12270—Umm Mughith (2): Ibn Manda said, “She was a Companion.” He then cited, through Sa'id ibn Abi Maryam, from 'Abd al-Jabbar ibn 'Umar, from Ishaq ibn 'Abd Allah ibn Abi Farwa, from Muhammad ibn Yusuf, from his father, from Umm Mughith, that she heard the Messenger of Allah—may Allah bless him and grant him peace—forbid combining the two ingredients.\n\nI say: He said, “They are dates and raisins.” Al-Tabarani added: “Umm Mughith was the grandmother of Rabi'a ibn Abi 'Abd al-Rahman, and she had prayed facing both qiblas during the lifetime of the Messenger of Allah—may Allah bless him and grant him peace.” Abu 'Umar said: “She is counted among the people of Medina. Her hadith is transmitted by 'Abd Allah (3) ibn Yusuf, from his father, from her, concerning the two mixed ingredients and the prohibition of intoxicants. It is also said that she was the maternal grandmother of Rabi'a ibn Abi 'Abd al-Rahman, and that she had prayed facing both qiblas with the Messenger of Allah—may Allah bless him and grant him peace.”\n\nIbn al-Faradi mentioned that Ibn Wahb transmitted the aforementioned hadith, and that Muhammad ibn Waddah criticized him for it. He related from Harmala that Ibn Wahb had erred therein by saying “Umm Mughith,” whereas she was actually Umm Ma'bad—with a fatha on the mim, followed by the unpointed consonant with a sukun, and then dal.\n\nI say: What prompted him to make this claim was that the report's text was identical and that she was described as having prayed—\n\n(1) Al-Bukhari transmitted it, 3/4, and Muslim in the Book of Pilgrimage (221).\n\n(2) A'lam al-Nisa', 5/66; al-Tajrid, 2/336; Usd al-Ghaba, entry (7610).\n\n(3) In manuscript A: “Her hadith is from Muhammad ibn Yusuf.”",
+      "arabic_sha256": "7e884095e45730ae89863dd382b02fb52229f9f9e4fd9c9cd2845d3c8cc7317c",
+      "english_sha256": "ab0063c846e9d066c8508fb4ec1fdd5e3ad258a66fb414a96d6ed9b87bb82301",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012270-segment-0002",
+      "volume": 8,
+      "scan_page": 481,
+      "printed_page": 480,
+      "reader_page": 4393,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4393",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0481:564bbdd8f60f6676",
+      "arabic": "القبلتين، وفيه نظر، لأن مخرج الحدثين مختلف، واتفاق صحابيين على رواية حديث واحد واجتماعهما في صفة واحدة ليس ببعيد، فالحكم على ابن وهب مع حفظه وسعة روايته مردود، وهذا لو تفرد بقوله أبي مغيث وهو لم يتفرد، بل وافقه سعيد بن أبي مريم كما ترى.\nوقد أخرج ابن عبد البرّ ترجمة أم معبد تلو أم مغيث، وقال: روت في الخليطين.\nروى عنها معبد بن كعب. ثم وجدت في المؤتلف للخطيب أم مغيث، بالغين المعجمة والمثلثة، وساق الحديث من طريق ابن عبد الحكم عن ابن وهب بتمامه، ثم قال الخطيب:\nثم وجدت الحديث من وجه آخر، قال فيه أم معتّب، بمهملة ومثناة ثقيلة وآخره موحدة، ثم ساقه من طريق بكر بن يونس بن بكير، عن عبد الجبّار به.\nقلت: فهذا اختلاف ثالث في ضبطها، وإسحاق بن أبي فروة ضعيف جدّا.",
+      "english": "…the two qiblas. Yet this is open to question, because the points of origin of the two occurrences are different. It is not far-fetched that two Companions should agree in transmitting a single hadith and share a single characteristic. The judgment against Ibn Wahb, despite his retentiveness and the breadth of his transmission, is therefore to be rejected. This would be so even had he alone given the name as “Abu Mughith,” but he was not alone; rather, Sa'id ibn Abi Maryam agreed with him, as you can see.\n\nIbn 'Abd al-Barr also placed the entry on Umm Ma'bad immediately after that on Umm Mughith and said: “She transmitted concerning the two mixed drinks. Ma'bad ibn Ka'b transmitted from her.”\n\nI then found in al-Khatib's al-Mu'talif “Umm Mughith,” with a dotted ghayn and a three-dotted tha. He cited the hadith in full by way of Ibn 'Abd al-Hakam, from Ibn Wahb. Al-Khatib then said: “I subsequently found the hadith by another route in which she was called Umm Mu'attib”—with an undotted ayn, a geminated two-dotted ta, and a final one-dotted ba. He then cited it by way of Bakr ibn Yunus ibn Bukayr, from 'Abd al-Jabbar, with the foregoing chain.\n\nI say: This is a third variation in the reading of her name, and Ishaq ibn Abi Farwa is extremely weak.",
+      "arabic_sha256": "71b143e6b17a023a6b455ef8b4480f28b4090aac12e45684a2dbbbf66e0c8bc7",
+      "english_sha256": "e7595ee4bbd883d17a1ba491a483bef666267f55567390f0d86da9beb2448cd2",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم مغيث",
+      "english": "Umm Mughith",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن أبي مريم",
+      "english": "Sa'id ibn Abi Maryam",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الجبار بن عمر",
+      "english": "'Abd al-Jabbar ibn 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق بن عبد اللَّه بن أبي فروة",
+      "english": "Ishaq ibn 'Abd Allah ibn Abi Farwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن يوسف",
+      "english": "Muhammad ibn Yusuf",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ربيعة بن أبي عبد الرحمن",
+      "english": "Rabi'a ibn Abi 'Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن الفرضيّ",
+      "english": "Ibn al-Faradi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن وهب",
+      "english": "Ibn Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن وضاح",
+      "english": "Muhammad ibn Waddah",
+      "kind": "person"
+    },
+    {
+      "arabic": "حرملة",
+      "english": "Harmala",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد",
+      "english": "Umm Ma'bad",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبي مغيث",
+      "english": "Abu Mughith",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبد البر",
+      "english": "Ibn 'Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "معبد بن كعب",
+      "english": "Ma'bad ibn Ka'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخطيب",
+      "english": "al-Khatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "المؤتلف",
+      "english": "al-Mu'talif",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن عبد الحكم",
+      "english": "Ibn 'Abd al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معتّب",
+      "english": "Umm Mu'attib",
+      "kind": "person"
+    },
+    {
+      "arabic": "بكر بن يونس بن بكير",
+      "english": "Bakr ibn Yunus ibn Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الجبار",
+      "english": "'Abd al-Jabbar",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق بن أبي فروة",
+      "english": "Ishaq ibn Abi Farwa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

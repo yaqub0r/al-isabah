@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011174",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11174,
+  "title": {
+    "english": "Raja' al-Ghanawiyya [1]",
+    "arabic_observed": "رجاء الغنوية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011174-segment-0001",
+      "volume": 8,
+      "scan_page": 135,
+      "printed_page": 134,
+      "reader_page": 4047,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4047",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0135:36514fc8d8613200",
+      "arabic": "١١١٧٤- رجاء الغنوية «١»\n. روى ابن سيرين عن امرأة يقال لها رجاء أنها قالت: كنت عند النبي ﷺ، فجاءته امرأة بابن لها، فقالت: يا رسول اللَّه، ادع اللَّه لي فيه بالبركة، فإنه توفي لي ثلاثة، فقال لها: «منذ أسلمت؟» قالت: نعم. فقال: «جنّة حصينة» . قالت: فقال لي رجل عنده: اسمعي ما يقول رسول اللَّه ﷺ.\nأخرجه أحمد، عن عبد الرزاق، عن هشام، عنه،\nورجاله ثقات. ووقع لنا بعلوّ في المعرفة لابن مندة، وذكرها أبو موسى في الراء وفي الزاي ومع الإهمال: هل هي بتخفيف.\nالجيم أو بتثقيلها؟",
+      "english": "11174—Raja' al-Ghanawiyya [1]\n\nIbn Sirin narrated from a woman called Raja', who said: I was with the Prophet—may Allah bless him and grant him peace—when a woman came to him with a son of hers and said, “O Messenger of Allah, ask Allah to bless him for me, for I have lost three children.” He asked, “Since you became Muslim?” She replied, “Yes.” He said, “A strong shield.” She said: A man who was there with him then said to me, “Listen to what the Messenger of Allah—may Allah bless him and grant him peace—is saying.”\n\nAhmad related it from 'Abd al-Razzaq, from Hisham, from him.\n\nIts transmitters are trustworthy. It reached us through a high chain in Ibn Manda's al-Ma'rifa. Abu Musa mentioned her under ra' and under zay, but left unspecified whether the jim is single or doubled.",
+      "arabic_sha256": "907448d0a7b70ee012d5ed3bead9ec344aa6f5c5739117f05a29e7cd357fd280",
+      "english_sha256": "d61a3c1f1ad271fccb3a8542f7cf8a6db9734dd71fbc510d9d4faa338efea9de",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "رجاء الغنوية",
+      "english": "Raja' al-Ghanawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سيرين",
+      "english": "Ibn Sirin",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرزاق",
+      "english": "'Abd al-Razzaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام",
+      "english": "Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "المعرفة",
+      "english": "al-Ma'rifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

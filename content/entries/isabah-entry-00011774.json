@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011774",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11774,
+  "title": {
+    "english": "Mulayka:",
+    "arabic_observed": "مليكة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011774-segment-0001",
+      "volume": 8,
+      "scan_page": 321,
+      "printed_page": 320,
+      "reader_page": 4233,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4233",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0321:52231aa80310bf96",
+      "arabic": "١١٧٧٤- مليكة:\nامرأة خبّاب بن الأرتّ «١» .\nقال ابن مندة: أدركت النبيّ ﵌. روى حديثها أبو خالد الوالبيّ، عن المنهال بن عمرو موقوفا.",
+      "english": "11774—Mulayka:\n\nThe wife of Khabbab ibn al-Aratt¹.\n\nIbn Manda said: She lived to see the Prophet—may Allah bless him and grant him peace. Abu Khalid al-Walibi transmitted her report from al-Minhal ibn Amr as a mawquf report.",
+      "arabic_sha256": "2304dc51ac967b9efc1fbdcdb0ef3d8b49f1a4a73a5a49db853075daf94d0d83",
+      "english_sha256": "e00467ec070890d66f2ae9309cbaf2f44767fdfecfc12df3a84d0eaa8794d95b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مليكة",
+      "english": "Mulayka",
+      "kind": "person"
+    },
+    {
+      "arabic": "خبّاب بن الأرتّ",
+      "english": "Khabbab ibn al-Aratt",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو خالد الوالبيّ",
+      "english": "Abu Khalid al-Walibi",
+      "kind": "person"
+    },
+    {
+      "arabic": "المنهال بن عمرو",
+      "english": "al-Minhal ibn Amr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

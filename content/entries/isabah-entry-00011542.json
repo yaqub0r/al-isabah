@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011542",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11542,
+  "title": {
+    "english": "Umayra bint Qurt ibn Khansa ibn Sinan, of Banu Haram¹. Ibn Habib mentioned her among the women who pledged allegiance.",
+    "arabic_observed": "عميرة بنت قرط بن خنساء"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011542-segment-0001",
+      "volume": 8,
+      "scan_page": 252,
+      "printed_page": 251,
+      "reader_page": 4164,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4164",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0252:003c313ae415e2f3",
+      "arabic": "١١٥٤٢- عميرة بنت قرط بن خنساء\nبن سنان، من بني حرام «١» . ذكرها ابن حبيب في المبايعات.",
+      "english": "11542—Umayra bint Qurt ibn Khansa ibn Sinan, of Banu Haram¹. Ibn Habib mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "3e9986a4c520a45f5ba7c3561e86db718bfef635e2c0c3ee006470ab69939c1b",
+      "english_sha256": "e703487d2ad6a6d4eb23d6605d8365c6545da988cd2b26e0fb7bb3ec0e1e78e4",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عميرة بنت قرط بن خنساء بن سنان",
+      "english": "Umayra bint Qurt ibn Khansa ibn Sinan",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني حرام",
+      "english": "Banu Haram",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

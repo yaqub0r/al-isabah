@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011633",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11633,
+  "title": {
+    "english": "Fakiha:",
+    "arabic_observed": "فكيهة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011633-segment-0001",
+      "volume": 8,
+      "scan_page": 283,
+      "printed_page": 282,
+      "reader_page": 4195,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4195",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0283:bb967d6a78c7d53b",
+      "arabic": "١١٦٣٣- فكيهة:\nبنت [السّكن] «١» الأنصاريّة، من بني سواد «٢» .\nذكرها ابن حبيب في المبايعات، وقال ابن سعد: ذكر محمد بن عمر أنها أسلمت وبايعت. وقال ابن السّكن: أسماء بنت يزيد بن السّكن تكنى أم عامر، ويقال إن اسم أم عامر فكيهة.",
+      "english": "11633—Fakiha:\n\nDaughter of [al-Sakan][1], the Ansari woman, of Banu Sawad.[2]\n\nIbn Habib mentioned her among the women who pledged allegiance. Ibn Sa'd said, “Muhammad ibn Umar mentioned that she embraced Islam and pledged allegiance.” Ibn al-Sakan said, “Asma bint Yazid ibn al-Sakan bore the kunya Umm Amir, and it is said that Umm Amir's name was Fakiha.”",
+      "arabic_sha256": "7f5c0e7209a94ad18c60c5dc8406b52908e84badb4414606450d115d3a8ad23e",
+      "english_sha256": "ff464a2781944518a57b57d816e694388b808f263f1a20377730397514f48d08",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بني سواد",
+      "english": "Banu Sawad",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمر",
+      "english": "Muhammad ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت يزيد بن السكن",
+      "english": "Asma bint Yazid ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عامر",
+      "english": "Umm Amir",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد",
+      "english": "Yazid",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

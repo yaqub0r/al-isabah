@@ -1,0 +1,253 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011887",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11887,
+  "title": {
+    "english": "Yusayra:",
+    "arabic_observed": "يسيرة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011887-segment-0001",
+      "volume": 8,
+      "scan_page": 353,
+      "printed_page": 352,
+      "reader_page": 4265,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4265",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0353:e6c1cc9510087de4",
+      "arabic": "١١٨٨٧- يسيرة:\nأمّ ياسر «٣»، ويقال بنت ياسر الأنصاريّة، وتكنى أم حميضة.\n(١) سقط من أ.\n(٢) أسد الغابة ت (٧٣٥٨) .\n(٣) الثقات ٣/ ٤٥٠- أعلام النساء ٥/ ٢٢٩- تجريد أسماء الصحابة ٢/ ٣١٢- تقريب التهذيب ٢/ ٦١٨- تهذيب التهذيب ١٢/ ٤٥٨- الكاشف ٣/ ٤٨٢- خلاصة تهذيب الكمال ٣/ ٣٩٥- تهذيب الكمال ٣/ ١٦٩٩- حلية الأولياء ٢/ ٦٨- تبصير المنتبه ٤/ ١٤٩٣- الإكمال ٧/ ٤٣١، أسد الغابة ت (٧٣٥٩)، الاستيعاب ت (٣٥٧٢) .",
+      "english": "11887—Yusayra:\n\nUmm Yasir [3]; she is also said to have been bint Yasir al-Ansariyya, and her kunya was Umm Humayda.\n\n[1] Omitted from manuscript A.\n\n[2] Usd al-Ghaba, entry 7358.\n\n[3] al-Thiqat 3/450; Alam al-Nisa 5/229; al-Tajrid 2/312; Taqrib al-Tahdhib 2/618; Tahdhib al-Tahdhib 12/458; al-Kashif 3/482; Khulasat Tahdhib al-Kamal 3/395; Tahdhib al-Kamal 3/1699; Hilyat al-Awliya 2/68; Tabsir al-Muntabih 4/1493; al-Ikmal 7/431; Usd al-Ghaba, entry 7359; al-Isti'ab, entry 3572.",
+      "arabic_sha256": "a285531cee5a97912651adcfed79266e61b5336056929968b8255247a2d673e7",
+      "english_sha256": "f765920b128c8fd27dbf26db0633577459d7a14025647472ff97a7215391c36c",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011887-segment-0002",
+      "volume": 8,
+      "scan_page": 354,
+      "printed_page": 353,
+      "reader_page": 4266,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4266",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0354:8edc65daf9b2dc6c",
+      "arabic": "قال ابن سعد: أسلمت وبايعت وروت حديثا. وقال أبو عمر: كانت من المهاجرات.\nوأخرج التّرمذيّ وابن سعد، من طريق هانئ بن عثمان، عن أم حميضة بنت ياسر، عن جدتها يسيرة، وكانت من المهاجرات، قالت: قال رسول اللَّه ﵌: «عليكنّ بالتّسبيح والتّقديس والتّهليل، واعقدن بالأنامل فإنّهنّ مسئولات ومستنطقات» «١» .\n(١) أخرجه الترمذي في السنن ٥/ ٥٣٣ عن يسيرة كتاب الدعوات (٤٩) باب في فضل التسبيح والتهليل والتقديس (١٢١) حديث رقم ٣٥٨٣ قال أبو عيسى هذا حديث غريب إنما نعرفه من حديث هانئ بن عثمان، وأحمد في المسند ٦/ ٣٧١، وابن حبان في صحيحه حديث رقم ٣٣٣، وابن أبي شيبة في المصنف ١٠/ ٨٩، ١٣/ ٤٥٣، والحاكم في المستدرك ١/ ٥٤٧، والمتقي الهندي في كنز العمال حديث رقم ٢٠٠٦.",
+      "english": "Ibn Sa'd said: She embraced Islam, pledged allegiance, and transmitted one hadith. Abu 'Umar said: She was among the Emigrant women.\n\nal-Tirmidhi and Ibn Sa'd related, by way of Hani' ibn 'Uthman, from Umm Humayda bint Yasir, from her grandmother Yusayra—who was among the Emigrant women—that she said: The Messenger of Allah, may Allah bless him and grant him peace, said: “You must glorify Allah, declare His holiness, and proclaim His oneness. Count these on your fingertips, for they will be questioned and made to speak.” [1]\n\n[1] al-Tirmidhi related it in al-Sunan, 5/533, from Yusayra, in the Book of Supplications (49), chapter “On the Merit of Glorification, Proclaiming Allah's Oneness, and Declaring His Holiness” (121), hadith no. 3583. Abu 'Isa said: “This is a gharib hadith; we know it only through the hadith of Hani' ibn 'Uthman.” It was also related by Ahmad in Musnad Ahmad, 6/371; Ibn Hibban in his Sahih, hadith no. 333; Ibn Abi Shayba in al-Musannaf, 10/89 and 13/453; al-Hakim in al-Mustadrak, 1/547; and al-Muttaqi al-Hindi in Kanz al-'Ummal, hadith no. 2006.",
+      "arabic_sha256": "8edc65daf9b2dc6c674e2b549dd922a56262434fbddde18b100e118dc71984ca",
+      "english_sha256": "3d8e7cda4dc961acdc5dad038317b3e9fd2ddb9eb4888f81c232d9c20c938583",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011887-segment-0003",
+      "volume": 8,
+      "scan_page": 355,
+      "printed_page": 354,
+      "reader_page": 4267,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4267",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0355:96464c315376e6a0",
+      "arabic": "فصل فيمن عرف بالكنية من النساء\nحرف الألف\nالقسم الأول",
+      "english": "Section on Women Known by Kunyas\n\nThe Letter Alif\n\nThe First Section",
+      "arabic_sha256": "181f60a048b3adfe2a1c747a347696d36eec951828016da17b7eecefbe328fb7",
+      "english_sha256": "bc138f70348adeee0cfe7fbc4bb1bf09379aa98822b83dd7746fcd3703fb157f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسماء",
+      "english": "Asma bint al-Salt al-Sulamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حميضة",
+      "english": "Umm Humayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "Alam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "حلية الأولياء",
+      "english": "Hilyat al-Awliya",
+      "kind": "work"
+    },
+    {
+      "arabic": "تبصير المنتبه",
+      "english": "Tabsir al-Muntabih",
+      "kind": "work"
+    },
+    {
+      "arabic": "الإكمال",
+      "english": "al-Ikmal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "التّرمذيّ",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "هانئ بن عثمان",
+      "english": "Hani' ibn 'Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حميضة بنت ياسر",
+      "english": "Umm Humayda bint Yasir",
+      "kind": "person"
+    },
+    {
+      "arabic": "يسيرة",
+      "english": "Yusayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan al-Tirmidhi",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عيسى",
+      "english": "Abu 'Isa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيحه",
+      "english": "Sahih Ibn Hibban",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن أبي شيبة",
+      "english": "Ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "المصنف",
+      "english": "Musannaf Ibn Abi Shayba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-'Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

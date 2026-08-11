@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012306",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12306,
+  "title": {
+    "english": "Umm Yaqaza bint Alqama",
+    "arabic_observed": "أم يقظة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012306-segment-0001",
+      "volume": 8,
+      "scan_page": 492,
+      "printed_page": 491,
+      "reader_page": 4404,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4404",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0492:36b2b0210aeb1722",
+      "arabic": "١٢٣٠٦- أم يقظة\nبنت علقمة، زوج سليط بن عمرو «٤»، ذكروها فيمن هاجر إلى أرض الحبشة مع زوجها، فولدت له سليطا، وقد تقدّم في حرف السّين من الرّجال.\n(١) أسد الغابة ت (٧٦٣٠)، الاستيعاب ت (٣٦٨٨) .\n(٢) أسد الغابة ت (٧٦٣٢) .\n(٣) أسد الغابة ت (٧٦٣٤)، تجريد أسماء الصحابة ٢/ ٣٣٨.\n(٤) أسد الغابة ت (٧٦٣٥) .",
+      "english": "12306—Umm Yaqaza bint Alqama\n\nThe wife of Sulayt ibn Amr. (4) They included her among those who emigrated to the land of Abyssinia with her husband. She bore him Sulayt, who has already been discussed under the letter sin in the section on men.\n\n(1) Usd al-Ghaba, entry 7630; al-Isti'ab, entry 3688.\n\n(2) Usd al-Ghaba, entry 7632.\n\n(3) Usd al-Ghaba, entry 7634; al-Tajrid, 2/338.\n\n(4) Usd al-Ghaba, entry 7635.",
+      "arabic_sha256": "5ada148a8a96a3e96828f0b37f1f3483463bb494ded067dbf254e1c489a3c8d5",
+      "english_sha256": "e963b7f1767945cf704e8b9912fea39d136f5fa4faf82cd6bfb93184c8633f40",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم يقظة بنت علقمة",
+      "english": "Umm Yaqaza bint Alqama",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليط بن عمرو",
+      "english": "Sulayt ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أرض الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "سليطا",
+      "english": "Sulayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011264",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11264,
+  "title": {
+    "english": "Zaynab bint al-Harith ibn Khalid al-Tamimiyya (1)",
+    "arabic_observed": "زينب بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011264-segment-0001",
+      "volume": 8,
+      "scan_page": 167,
+      "printed_page": 166,
+      "reader_page": 4079,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4079",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0167:281b962cb294b34a",
+      "arabic": "١١٢٦٤- زينب بنت الحارث\nبن خالد التميمية «١» .\nهاجرت هي وأختاها: عائشة، وفاطمة، وأمهم رائطة بنت الحارث بن جبيلة، فلما رجعوا من الحبشة هلكت زينب وأخواها: موسى، وعائشة، من ماء شربوه في الطريق، ولم يبق من ولد رائطة إلا فاطمة: ذكر ذلك ابن إسحاق، وقيل: إن رائطة هاجرت بزينب.",
+      "english": "11264—Zaynab bint al-Harith ibn Khalid al-Tamimiyya (1)\n\nShe emigrated together with her two sisters, Aisha and Fatima, and their mother, Ra'ita bint al-Harith ibn Jubayla. When they returned from Abyssinia, Zaynab and her two siblings, Musa and Aisha, died from water they drank on the journey. Of Ra'ita's children, only Fatima remained. Ibn Ishaq mentioned this. It is also said that Ra'ita emigrated with Zaynab.",
+      "arabic_sha256": "c83e42d5476302e0e26f7b39867e4e9039f38f1729fcfa9a4cfeae73da5c142e",
+      "english_sha256": "f18240ea7ae90f8a97720b45d2cba811f16ea81ee5f22aa8a93dd93c17511a11",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زينب",
+      "english": "Rabiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت الحارث بن خالد التميمية",
+      "english": "Zaynab bint al-Harith ibn Khalid al-Tamimiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima",
+      "kind": "person"
+    },
+    {
+      "arabic": "رائطة بنت الحارث بن جبيلة",
+      "english": "Ra'ita bint al-Harith ibn Jubayla",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى",
+      "english": "Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

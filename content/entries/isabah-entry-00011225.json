@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011225",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11225,
+  "title": {
+    "english": "Zaynab bint Abi Umama As'ad ibn Zurara, the Ansari woman[1]",
+    "arabic_observed": "زينب بنت أبي أمامة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011225-segment-0001",
+      "volume": 8,
+      "scan_page": 154,
+      "printed_page": 153,
+      "reader_page": 4066,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4066",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0154:caf41289118a1954",
+      "arabic": "١١٢٢٥- زينب بنت أبي أمامة\nأسعد بن زرارة الأنصارية «١» .\nتقدم نسبها في ترجمة ولدها، ذكرها أبو موسى في «الذّيل»، وسيأتي ذكرها في ترجمة زينب بنت جابر في القسم الثالث.",
+      "english": "11225—Zaynab bint Abi Umama As'ad ibn Zurara, the Ansari woman[1]\n\nHer lineage was given earlier in the entry on her son. Abu Musa mentioned her in al-Dhayl, and she will be mentioned in the entry on Zaynab bint Jabir in the third section.",
+      "arabic_sha256": "67279f46f4cd57e8c0f75b2a71a69c7a102c766e3e3ced4ed97e98001476c897",
+      "english_sha256": "c94a84cef8500f827dc6b79d182efe0e4a1939df19d6f8dd4c63d4894154c6a9",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زينب بنت أبي أمامة أسعد بن زرارة",
+      "english": "Zaynab bint Abi Umama As'ad ibn Zurara",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "زينب بنت جابر",
+      "english": "Zaynab bint Jabir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

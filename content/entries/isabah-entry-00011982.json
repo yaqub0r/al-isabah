@@ -1,0 +1,110 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011982",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11982,
+  "title": {
+    "english": "Umm Hakim bint Abi Umayya ibn Haritha al-Sulamiyya",
+    "arabic_observed": "أم حكيم بنت أبي أمية"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011982-segment-0001",
+      "volume": 8,
+      "scan_page": 380,
+      "printed_page": 379,
+      "reader_page": 4292,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4292",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0380:abc125e25290fccd",
+      "arabic": "١١٩٨٢- أم حكيم بنت أبي أمية\nبن حارثة السلمية، زوج عثمان بن مظعون.\nنسبها ابن الكلبيّ، عن أبي صالح، عن ابن عباس في تفسير قوله تعالى: يا أَيُّهَا الَّذِينَ آمَنُوا لا تُحَرِّمُوا طَيِّباتِ ما أَحَلَّ اللَّهُ لَكُمْ [المائدة: ٨٧] .\nووقع عند ابن مندة أم حكيم امرأة عثمان بن مظعون كانت تعتكف مع عمر. رواه من طريق عمر بن ذر، عن مجاهد مرسلا، وتعقبه أبو نعيم بأن الصواب بنت حكيم، وهي خولة، وهي كما قال، لكن أم حكيم هذه خولة بنت حكيم كما ذكرته من تفسير ابن الكلبي.",
+      "english": "11982 — Umm Hakim bint Abi Umayya ibn Haritha al-Sulamiyya\n\nShe was the wife of 'Uthman ibn Maz'un.\n\nIbn al-Kalbi traced her lineage, through Abu Salih, from Ibn 'Abbas, in the exegesis of the words of Allah Most High: “O you who believe, do not forbid the good things that Allah has made lawful for you” [al-Ma'ida 5:87].\n\nIbn Manda has: “Umm Hakim, the wife of 'Uthman ibn Maz'un, used to perform the devotional retreat with 'Umar.” He transmitted it through 'Umar ibn Dharr, from Mujahid, in mursal form. Abu Nu'aym objected that the correct form is “bint Hakim,” namely Khawla. It is as he said; however, this Umm Hakim is Khawla bint Hakim, as I have mentioned from Ibn al-Kalbi's Tafsir.",
+      "arabic_sha256": "6c74714891427495069450130d175a4b8d5dc981c567d02b2ff4ccef280450f4",
+      "english_sha256": "d27be1ba1a799c262403698a1a892cc4cfbf99b3eb375d2cefb705b9702b3914",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم حكيم بنت أبي أمية بن حارثة السلمية",
+      "english": "Umm Hakim bint Abi Umayya ibn Haritha al-Sulamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن مظعون",
+      "english": "'Uthman ibn Maz'un",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الكلبي",
+      "english": "Ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو صالح",
+      "english": "Abu Salih",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn 'Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "المائدة",
+      "english": "al-Ma'ida",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن ذر",
+      "english": "'Umar ibn Dharr",
+      "kind": "person"
+    },
+    {
+      "arabic": "مجاهد",
+      "english": "Mujahid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت حكيم",
+      "english": "Khawla bint Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "تفسير ابن الكلبي",
+      "english": "Tafsir Ibn al-Kalbi",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

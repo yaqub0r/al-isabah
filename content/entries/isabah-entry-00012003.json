@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012003",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12003,
+  "title": {
+    "english": "Umm Khalid bint al-Aswad",
+    "arabic_observed": "أم خالد بنت الأسود"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012003-segment-0001",
+      "volume": 8,
+      "scan_page": 386,
+      "printed_page": 385,
+      "reader_page": 4298,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4298",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0386:e1ff388273593787",
+      "arabic": "١٢٠٠٣- أم خالد بنت الأسود\nبن عبد يغوث القرشية الزهرية «١» . تقدمت في الأسماء في خالدة.",
+      "english": "12003—Umm Khalid bint al-Aswad\n\nibn Abd Yaghuth, the Qurashi woman of the Zuhra clan.(1) She was discussed previously among the personal names, under Khalida.",
+      "arabic_sha256": "223e1389464234758832d0a83ec9f0a8d0981c1b97c7b28ac820603325cccfb9",
+      "english_sha256": "d3b6b32e1358cb76b8336284de67af74584c063ffbb132c577c11cde4d80a71f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خالدة",
+      "english": "Khalida bint al-Aswad ibn Abd Yaghuth",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

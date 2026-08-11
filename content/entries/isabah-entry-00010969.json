@@ -1,0 +1,125 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010969",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10969,
+  "title": {
+    "english": "Thubayta bint Ya'ar (1)",
+    "arabic_observed": "ثبيتة بنت يعار «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010969-segment-0001",
+      "volume": 8,
+      "scan_page": 61,
+      "printed_page": 60,
+      "reader_page": 3973,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3973",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0061:373ee1cd8b9788bf",
+      "arabic": "١٠٩٦٩- ثبيتة بنت يعار «١»\n، بمثناة تحتانية بعدها مهملة خفيفة، ابن زيد بن عبيد بن زيد بن مالك بن عوف بن عمرو بن عوف الأنصارية الأوسية، امرأة أبي حذيفة بن عتبة بن ربيعة، وهي التي أعتقت سالما مولى أبي حذيفة.\nوقد تقدم ذكرها في ترجمته. سماها مصعب الزبيري وجماعة، وسماها موسى بن عقبة، عن ابن شهاب الزهري- سلمي، وكذا قال ابن إسحاق في رواية، وسماها أبو طوالة عمرة. وأما أبوها ففي قول موسى بن عقبة بالمثناة الفوقانية، وصوب إبراهيم بن المنذر الأول. حكى جميع ذلك أبو عمر، وقد تقدم في تسميتها قولان آخران: ليلى، وفاطمة. قال أبو عمر: كانت من المهاجرات الأول، ومن فضلاء نساء الصحابة.\nقلت: في قوله: إنها من المهاجرات نظر، لأن نسبها في الأنصار، وفي قوله: إنها امرأة أبي حذيفة نظر آخر، فقد تقدم في ترجمة أبي حذيفة أن اسم امرأته التي أمرت بأن ترضعه وهي كبيرة سهلة بنت سهل الأنصارية، إلا أن يقال: كانت له امرأتان: التي أعتقت سالما، والتي أمرت أن ترضعه، فيحتمل على بعد. والعلم عند اللَّه تعالى.",
+      "english": "10969—Thubayta bint Ya'ar (1)\n\nThe name Ya'ar is spelled with ya, followed by an undotted, ungeminated 'ayn. She was Thubayta bint Ya'ar ibn Zayd ibn 'Ubayd ibn Zayd ibn Malik ibn 'Awf ibn 'Amr ibn 'Awf, an Ansari woman of the Aws and the wife of Abu Hudhayfa ibn 'Utba ibn Rabi'a. It was she who manumitted Salim, the client of Abu Hudhayfa.\n\nShe has already been mentioned in his entry. Mus'ab al-Zubayri and a group of others called her by this name. Musa ibn 'Uqba, on the authority of Ibn Shihab al-Zuhri, called her Salma; Ibn Ishaq likewise called her that in one transmission. Abu Tuwala called her 'Amra. As for her father's name, according to Musa ibn 'Uqba it is spelled with ta, the letter with two dots above, while Ibrahim ibn al-Mundhir held the first form to be correct. Abu 'Umar related all of this. Two other opinions concerning her name have already been given: Layla and Fatima. Abu 'Umar said: “She was one of the earliest women to emigrate and one of the eminent women among the Companions.”\n\nI say: His statement that she was one of the women emigrants is open to question, because her lineage belongs to the Ansar. His statement that she was the wife of Abu Hudhayfa presents another difficulty, for it was stated previously, in the entry on Abu Hudhayfa, that the wife who was instructed to nurse him while she herself was an adult was Sahla bint Sahl, the Ansari woman. Unless it is said that he had two wives—one who manumitted Salim and another who was instructed to nurse him—this is conceivable, though far-fetched. Allah Most High knows best.",
+      "arabic_sha256": "55950108fe1179ad6065d08f3851de8743e0ff442a7120009a5fd328236f3652",
+      "english_sha256": "c194b7d81cf1925a033ed106c619c18c454fe2bdf689702ef317c76dbeefaa84",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ثبيتة بنت يعار بن زيد بن عبيد بن زيد بن مالك بن عوف بن عمرو بن عوف",
+      "english": "Thubayta bint Ya'ar ibn Zayd ibn 'Ubayd ibn Zayd ibn Malik ibn 'Awf ibn 'Amr ibn 'Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأوسية",
+      "english": "Aws",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو حذيفة بن عتبة بن ربيعة",
+      "english": "Abu Hudhayfa ibn 'Utba ibn Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "مصعب الزبيري",
+      "english": "Mus'ab al-Zubayri",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن عقبة",
+      "english": "Musa ibn 'Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن شهاب الزهري",
+      "english": "Ibn Shihab al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمي",
+      "english": "Salma bint Ta'ar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو طوالة",
+      "english": "Abu Tuwala",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة",
+      "english": "'Amra bint Ya'ar",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن المنذر",
+      "english": "Ibrahim ibn al-Mundhir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليلى",
+      "english": "Layla bint Ya'ar",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima bint Ya'ar",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهلة بنت سهل الأنصارية",
+      "english": "Sahla bint Sahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه تعالى",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

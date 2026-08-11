@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011471",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11471,
+  "title": {
+    "english": "Utba bint Zurara",
+    "arabic_observed": "عتبة بنت زرارة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011471-segment-0001",
+      "volume": 8,
+      "scan_page": 238,
+      "printed_page": 237,
+      "reader_page": 4150,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4150",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0238:d20a14a7e592fbb8",
+      "arabic": "١١٤٧١- عتبة بنت زرارة\nبن عدس الأنصارية «٢» .\nذكرها ابن حبيب في المبايعات.",
+      "english": "11471 — Utba bint Zurara\n\nibn Adas, the Ansari woman. (2)\n\nIbn Habib mentioned her among the women who gave the pledge of allegiance.",
+      "arabic_sha256": "4abe23877237333621b30c096f38e57c90be2dc896151976774f4da3f4755114",
+      "english_sha256": "98fe62c47535c335d82e1d24329f68464b21f0da1dae403f3bb017984b95a349",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

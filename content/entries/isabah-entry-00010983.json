@@ -1,0 +1,154 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010983",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10983,
+  "title": {
+    "english": "Jamra bint Qahafa al-Kindiyya.[2]",
+    "arabic_observed": "جمرة بنت قحافة الكندية «٢» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010983-segment-0001",
+      "volume": 8,
+      "scan_page": 65,
+      "printed_page": 64,
+      "reader_page": 3977,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3977",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0065:73a9e31b1c64c35b",
+      "arabic": "١٠٩٨٣- جمرة بنت قحافة الكندية «٢» .\nقال ابن مندة: عدادها في الكوفيين. روى عنها شبيب بن غرقدة. وقال أبو عمر:\nروت عنها ابنتها أم كلثوم إن صح حديثها ذاك، لأنه لا يعبأ بإسناد، فأما حديث شبيب عنها\nفأخرجه الطّبرانيّ وغيره من طريق بشر بن الوليد، حدثنا الحسن بن قارب، عن شبيب بن غرقدة، حدثتني جمرة بنت قحافة، قالت: كنت مع أم سلمة في حجة الوداع، فسمعت النبيّ ﷺ يقول: «يا أمّتاه، هل بلّغتكم؟» فقال بنيّ لها: يا أمه، ما له يدعو أمه؟ فقالت: يا بني،\n(١) الثقات ٣/ ٦٧، بقي بن مخلد ٩٧٤، تجريد أسماء الصحابة ٢/ ٢٥٥.\n(٢) أعلام النساء ١/ ١٧٠، تجريد أسماء الصحابة ٢/ ٢٥٥.",
+      "english": "10983—Jamra bint Qahafa al-Kindiyya.[2]\n\nIbn Manda said: She is counted among the Kufans. Shabib ibn Gharqada transmitted from her. Abu Umar said: “Her daughter Umm Kulthum transmitted from her—if that report of hers is sound, for its chain of transmission carries no weight.” As for Shabib's report from her, al-Tabarani and others related it through Bishr ibn al-Walid: al-Hasan ibn Qarib told us, from Shabib ibn Gharqada: Jamra bint Qahafa told me, saying: “I was with Umm Salama during the Farewell Pilgrimage, and I heard the Prophet, may Allah bless him and grant him peace, saying, ‘O my community! Have I conveyed the message to you?’ A little son of hers said, ‘Mother, why is he calling his mother?’ She said, ‘My son—’”\n\n[1] al-Thiqat, 3/67; Baqi ibn Makhlad, no. 974; al-Tajrid, 2/255.\n\n[2] A'lam al-Nisa, 1/170; al-Tajrid, 2/255.",
+      "arabic_sha256": "6e44621513f1312220fff9a013f67104139c65fa56ca6c04dcf654f6c387821d",
+      "english_sha256": "338628cd2bacdcef70329f808ec161c78d7741ee0573799f4d5d62877f9d7647",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010983-segment-0002",
+      "volume": 8,
+      "scan_page": 66,
+      "printed_page": 65,
+      "reader_page": 3978,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3978",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0066:d8f9a799c69539c9",
+      "arabic": "إنما يدعو أمته، وهو يقول: «ألا إنّ أعراضكم وأموالكم ودماءكم عليكم حرام كحرمة يومكم هذا في بلدكم هذا في شهركم هذا» .\nوأما رواية بنتها أم كلثوم فإنّها لا تحضرني الآن، وقد اختصر ابن الأثير حديث أبي عمر في رواية أم كلثوم، فصار قوله إسناد حديثها لا يعبأ به يتناول حديث شبيب خاصة، وليس كذلك.",
+      "english": "Rather, he is calling his community, and he is saying: “Behold, your honor, your property, and your blood are inviolable among you, like the inviolability of this day of yours, in this city of yours, in this month of yours.”\n\nAs for the narration of her daughter Umm Kulthum, it is not before me at present. Ibn al-Athir abridged Abu Umar's account of Umm Kulthum's narration, so that his words, “No weight is given to the chain of transmission of her hadith,” came to refer specifically to Shabib's hadith, though that is not the case.",
+      "arabic_sha256": "4e6584c07ae5a639d07fed9af29a0ca211cccd50b5c79a33768eb235a036d5b5",
+      "english_sha256": "06df7c20b222b15edecebf0eec76cc2dfa27af68c9d065d36a654e053f2b4dc4",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكوفيين",
+      "english": "Kufa",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "جمرة بنت قحافة الكندية",
+      "english": "Jamra bint Qahafa al-Kindiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكندية",
+      "english": "Kinda",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "شبيب بن غرقدة",
+      "english": "Shabib ibn Gharqada",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم",
+      "english": "Umm Kulthum",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطّبرانيّ",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشر بن الوليد",
+      "english": "Bishr ibn al-Walid",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن قارب",
+      "english": "al-Hasan ibn Qarib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجة الوداع",
+      "english": "Farewell Pilgrimage",
+      "kind": "other"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "شبيب",
+      "english": "Shabib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

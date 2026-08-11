@@ -1,0 +1,125 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010772",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10772,
+  "title": {
+    "english": "Amina bint Ghifar",
+    "arabic_observed": "آمنة بنت غفار"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010772-segment-0001",
+      "volume": 8,
+      "scan_page": 6,
+      "printed_page": 5,
+      "reader_page": 3918,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3918",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0006:f373c7735745e8e2",
+      "arabic": "١٠٧٧٢- آمنة بنت غفار\nقال الذهبيّ في «مبهمات النّوويّ»: إنها امرأة ابن عمر التي طلقها فأمر برجعتها.\nقلت: سماها ابن لهيعة، عن عبد الرحمن الأعرج- آمنة بنت عفان، وقال: المرأة التي طلقها ابن عمر على عهد رسول اللَّه ﷺ آمنة بنت عفان.\nذكره ابن سعد، عن الحسن بن موسى، عن ابن لهيعة. ورويناه فيما جمع من حديث قتيبة، من رواية سعيد العيار بسنده، عن قتيبة، عن ابن لهيعة، وفي رواية قتيبة بنت غفار، بكسر المعجمة وتخفيف الفاء، ثم راء. وفي النسخة التي من الطبقات: بفتح المهملة وتشديد الفاء وبعد الألف نون.",
+      "english": "10772—Amina bint Ghifar\n\nAl-Dhahabi said in Mubhamat al-Nawawi: “She was Ibn 'Umar's wife, whom he divorced; he was then ordered to take her back.”\n\nI say: Ibn Lahi'a, transmitting from 'Abd al-Rahman al-A'raj, named her Amina bint 'Affan and said: “The woman whom Ibn 'Umar divorced during the lifetime of the Messenger of Allah, may Allah bless him and grant him peace, was Amina bint 'Affan.”\n\nIbn Sa'd mentioned it from al-Hasan ibn Musa, from Ibn Lahi'a. We also transmitted it among the material compiled from the hadith of Qutayba, in the narration of Sa'id al-'Ayyar through his chain, from Qutayba, from Ibn Lahi'a. In Qutayba's narration the reading is “bint Ghifar,” with the dotted letter carrying an i-vowel, the fa undoubled, and then a ra. In the copy of al-Tabaqat, however, it is written with the undotted letter carrying an a-vowel, the fa doubled, and a nun after the alif: “bint 'Affan.”",
+      "arabic_sha256": "c4094f15c541a68e80d5476d9e42ca93107fe3b2705d62df9330d4f8f03ac130",
+      "english_sha256": "3cd47f41ad283a18db4ad61fa10ac915352494d62904c96eb6eb88f27456275b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سعد",
+      "english": "Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "آمنة بنت غفار",
+      "english": "Amina bint Ghifar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "مبهمات النووي",
+      "english": "Mubhamat al-Nawawi",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن عمر",
+      "english": "Ibn 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله ﷺ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن لهيعة",
+      "english": "Ibn Lahi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن الأعرج",
+      "english": "'Abd al-Rahman al-A'raj",
+      "kind": "person"
+    },
+    {
+      "arabic": "آمنة بنت عفان",
+      "english": "Amina bint 'Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن موسى",
+      "english": "al-Hasan ibn Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتيبة",
+      "english": "Qutayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد العيار",
+      "english": "Sa'id al-'Ayyar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبقات",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أمة",
+      "english": "Ama",
+      "kind": "person"
+    },
+    {
+      "arabic": "آمنة",
+      "english": "Amina",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

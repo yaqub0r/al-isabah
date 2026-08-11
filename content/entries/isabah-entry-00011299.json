@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011299",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11299,
+  "title": {
+    "english": "Sa'ida bint Rifa'a ibn Amr ibn Ubayd ibn Umayya, the Ansari woman of the Ashhal clan.(3)",
+    "arabic_observed": "سعيدة بنت رفاعة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011299-segment-0001",
+      "volume": 8,
+      "scan_page": 179,
+      "printed_page": 178,
+      "reader_page": 4091,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4091",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0179:032b8c150c6cee95",
+      "arabic": "١١٢٩٩- سعيدة بنت رفاعة\nبن عمرو بن عبيد بن أمية الأنصارية الأشهلية «٣» . ذكرها ابن حبّان في المبايعات.",
+      "english": "11299—Sa'ida bint Rifa'a ibn Amr ibn Ubayd ibn Umayya, the Ansari woman of the Ashhal clan.(3)\n\nIbn Hibban included her among the women who pledged allegiance.",
+      "arabic_sha256": "ffd8d8fde2c5efb4ad21fe7ecd7accc77d583b93667ce0408959c6e443a314f1",
+      "english_sha256": "cfe916b938c89924da048c7dc2ac5def2395a655bd430971327824e876844e1b",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سعيدة بنت رفاعة بن عمرو بن عبيد بن أمية",
+      "english": "Sa'ida bint Rifa'a ibn Amr ibn Ubayd ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأشهلية",
+      "english": "Ashhal",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبّان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

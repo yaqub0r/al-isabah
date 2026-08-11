@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011720",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11720,
+  "title": {
+    "english": "Layla bint Simak ibn Thabit ibn Sinan ibn Jashm ibn 'Amr (4) ibn Imri' al-Qays, al-Ansariyya, of Banu al-Harith ibn al-Khazraj.",
+    "arabic_observed": "ليلى بنت سماك:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011720-segment-0001",
+      "volume": 8,
+      "scan_page": 306,
+      "printed_page": 305,
+      "reader_page": 4218,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4218",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0306:047fab026cbe7652",
+      "arabic": "١١٧٢٠- ليلى بنت سماك:\nبن ثابت بن سنان بن جشم بن عمرو «٤» بن امرئ القيس الأنصاريّة، من بني الحارث بن الخزرج. ذكرها ابن حبيب أيضا.",
+      "english": "11720—Layla bint Simak ibn Thabit ibn Sinan ibn Jashm ibn 'Amr (4) ibn Imri' al-Qays, al-Ansariyya, of Banu al-Harith ibn al-Khazraj.\n\nIbn Habib also mentioned her.",
+      "arabic_sha256": "a815c464272b2f21aff2f1896998cc13e7bdd4638312983b4123f02fd7109470",
+      "english_sha256": "38294cc9ec72a0b5cc9ab3c5fe0672580ab0a0d58588546da95085c0e551c1de",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس",
+      "english": "Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "سماك",
+      "english": "Simak ibn Thabit ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو الحارث بن الخزرج",
+      "english": "Banu al-Harith ibn al-Khazraj",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

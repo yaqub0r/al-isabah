@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011612",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11612,
+  "title": {
+    "english": "Fatima bint al-Walid",
+    "arabic_observed": "فاطمة بنت الوليد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011612-segment-0001",
+      "volume": 8,
+      "scan_page": 278,
+      "printed_page": 277,
+      "reader_page": 4190,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4190",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0278:4f540644354a08bc",
+      "arabic": "١١٦١٢- فاطمة بنت الوليد\nبن عبد شمس بن الوليد بن المغيرة المخزومية.\nقتل أبوها باليمامة، وأمّها أم حكيم بنت أبي جهل، وتزوّج فاطمة المذكورة عثمان بن عفان، فولدت له سعيدا والوليد، ويقال إن اسمها أسماء.",
+      "english": "11612—Fatima bint al-Walid\n\nibn Abd Shams ibn al-Walid ibn al-Mughira, al-Makhzumiyya.\n\nHer father was killed at al-Yamama, and her mother was Umm Hakim bint Abi Jahl. Uthman ibn Affan married the aforementioned Fatima, and she bore him Sa'id and al-Walid. It is also said that her name was Asma.",
+      "arabic_sha256": "4076f25efa7becfc42a7797fc8398ccadbc1a21b0339d63adc339fd201abc82c",
+      "english_sha256": "62fb1a869385f4fbb5e96e77e6925c31ccef3f42f685c7c0ffca189a6f607a20",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "المخزومية",
+      "english": "al-Makhzumiyya",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "اليمامة",
+      "english": "al-Yamama",
+      "kind": "place"
+    },
+    {
+      "arabic": "أم حكيم بنت أبي جهل",
+      "english": "Umm Hakim bint Abi Jahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن عفان",
+      "english": "Uthman ibn Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد",
+      "english": "Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوليد",
+      "english": "al-Walid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء",
+      "english": "Asma",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

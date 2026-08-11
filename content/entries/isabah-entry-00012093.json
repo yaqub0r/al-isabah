@@ -1,0 +1,74 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012093",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12093,
+  "title": {
+    "english": "Umm Sayf:[2]",
+    "arabic_observed": "أم سيف «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012093-segment-0001",
+      "volume": 8,
+      "scan_page": 415,
+      "printed_page": 414,
+      "reader_page": 4327,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4327",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0415:80d9332d2a04c870",
+      "arabic": "١٢٠٩٣- أم سيف «٢»\n: مرضعة ابن النبيّ ﵌، امرأة أبي سيف القين.\nتقدم ذكرها في ترجمة أبي سيف في كنى الرّجال.\n(١) أسد الغابة ت (٧٤٨٧) .\n(٢) أسد الغابة ت (٧٤٨٨) .",
+      "english": "12093—Umm Sayf:[2]\n\nThe wet nurse of the son of the Prophet—may Allah bless him and grant him peace—and the wife of Abu Sayf the smith.\n\nShe was mentioned previously in the entry on Abu Sayf in the section on men's kunyas.\n\n[1] Usd al-Ghaba, entry 7487.\n\n[2] Usd al-Ghaba, entry 7488.",
+      "arabic_sha256": "39ab57d116c65d7dec7ca6863547a1001b6b46464fdf6657e5f11a6b80700e03",
+      "english_sha256": "c5d445a5289f79bfa8214d4fe452e616528b6b65ce2a28d339af4acb95a4a6d4",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012093-segment-0002",
+      "volume": 8,
+      "scan_page": 416,
+      "printed_page": 415,
+      "reader_page": 4328,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4328",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0416:f7659d7718f758b0",
+      "arabic": "حرف الشين المعجمة\nالقسم الأول",
+      "english": "The Dotted Letter Shin\n\nThe First Section",
+      "arabic_sha256": "1f31596299a3d3cd83d90fbb44fe559775691cd459b66dbe074165bc52cc36c7",
+      "english_sha256": "91a44bd4b7ee415ac39ab4734ae6d131a9d4c59bde744124238e54f10a45a701",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم سيف",
+      "english": "Umm Sayf",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سيف",
+      "english": "Abu Sayf",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

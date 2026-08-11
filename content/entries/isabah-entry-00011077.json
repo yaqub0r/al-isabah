@@ -1,0 +1,124 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011077",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11077,
+  "title": {
+    "english": "Hayya,",
+    "arabic_observed": "حية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011077-segment-0001",
+      "volume": 8,
+      "scan_page": 96,
+      "printed_page": 95,
+      "reader_page": 4008,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4008",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0096:b59aecbc198f371f",
+      "arabic": "١١٠٧٧- حية ،\nبمهملة ومثناة تحتانية ثقيلة، بنت أبي حية «٣» - ضبطها ابن ماكولا.\nذكرها ابن مندة، وقال: روى أزهر بن سعد وابن علية، عن عبد اللَّه بن عون، عن عمرو بن سعيد، عن أبي زرعة عن عمرو بن جرير، عن حية بنت أبي حية، قالت: دخل عليّ رجل فقلت: من أنت؟ قال: أبو بكر الصديق. قلت: صاحب رسول اللَّه ﷺ؟ قال: نعم. فذكر قصة شبيهة بقصة زينب بنت جابر الأحمسية مع أبي بكر. ويحتمل التعدد. واللَّه أعلم.\n(١) أسد الغابة ت ٦٨٦٦.\n(٢) أسد الغابة ت ٦٨٦٨، الاستيعاب ت ٣٣٥٥.\n(٣) أسد الغابة ت ٦٨٦٩.",
+      "english": "11077—Hayya,\n\nspelled with an undotted ha and a doubled ya, daughter of Abu Hayya.³ Ibn Makula established its vocalization.\n\nIbn Manda mentioned her and said: Azhar ibn Sa'd and Ibn Ulayya related from Abd Allah ibn Awn, from Amr ibn Sa'id, from Abu Zur'a, from Amr ibn Jarir, from Hayya bint Abi Hayya, who said: “A man entered upon me, and I asked, ‘Who are you?’ He replied, ‘Abu Bakr al-Siddiq.’ I asked, ‘The Companion of the Messenger of Allah, may Allah bless him and grant him peace?’ He replied, ‘Yes.’” The report then relates a story similar to that of Zaynab bint Jabir al-Ahmasiyya with Abu Bakr. Multiplicity is possible. Allah knows best.\n\n¹ Usd al-Ghaba, entry 6866.\n² Usd al-Ghaba, entry 6868; al-Isti'ab, entry 3355.\n³ Usd al-Ghaba, entry 6869.",
+      "arabic_sha256": "d42d5742342473e3924d8394e8b93477afff36e965e73ed08daa267392540609",
+      "english_sha256": "6ea161fb4b4cb4df199db656e6ef3ca29431f0c8baaf9572e396c36246cd0b02",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011077-segment-0002",
+      "volume": 8,
+      "scan_page": 97,
+      "printed_page": 96,
+      "reader_page": 4009,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4009",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0097:fef400f01af3cf16",
+      "arabic": "القسم الرابع",
+      "english": "Section Four",
+      "arabic_sha256": "0b186da367d0cac1b2f8f8349004cc083e7a88764112cc9bfddf266313e587f8",
+      "english_sha256": "19ff07ba21b45e241017b4471a2f49651a5a1b1d03216970f0931a5d55b3f2a0",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه تعالى",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "حية بنت أبي حية",
+      "english": "Hayya bint Abi Hayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماكولا",
+      "english": "Ibn Makula",
+      "kind": "person"
+    },
+    {
+      "arabic": "أزهر بن سعد",
+      "english": "Azhar ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن علية",
+      "english": "Ibn Ulayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عون",
+      "english": "Abd Allah ibn Awn",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن سعيد",
+      "english": "Amr ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو زرعة",
+      "english": "Abu Zur'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن جرير",
+      "english": "Amr ibn Jarir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر الصديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت جابر الأحمسية",
+      "english": "Zaynab bint Jabir al-Ahmasiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

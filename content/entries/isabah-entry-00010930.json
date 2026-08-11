@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010930",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10930,
+  "title": {
+    "english": "Barra,",
+    "arabic_observed": "برة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010930-segment-0001",
+      "volume": 8,
+      "scan_page": 50,
+      "printed_page": 49,
+      "reader_page": 3962,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3962",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0050:12c822ca7d9d3ce6",
+      "arabic": "١٠٩٣٠- برة ،\nغير منسوبة.\nقال الطّبرانيّ في «الأوسط»: حدثنا محمد بن العباس المؤدب، حدثنا عبيد بن إسحاق العطار، حدثنا القاسم بن محمد بن عبد اللَّه بن عقيل، حدثني أبي عبد اللَّه، وكنت أدعو جدّي أبي، حدثنا جابر بن عبد اللَّه، قال: كان لرسول اللَّه ﷺ خادمة تخدمه يقال لها برّة، فلقيها رجل، فقال لها: يا برة، غطّي سيقانك، فإنّ محمدا لن يغني عنك من اللَّه شيئا.\nفأخبرت النبي ﷺ، فخرج يجرّ رداءه محمرة وجنتاه ... الحديث.\nوعبيد وشيخه متروكان. واللَّه أعلم.",
+      "english": "10930—Barra,\nwith no lineage given.\n\nal-Tabarani said in al-Awsat: Muhammad ibn al-Abbas al-Mu'addib related to us: Ubayd ibn Ishaq al-Attar related to us: al-Qasim ibn Muhammad ibn Abd Allah ibn Aqil related to us: My grandfather, Abd Allah—whom I used to call “my father”—related to me: Jabir ibn Abd Allah related to us, saying: The Messenger of Allah, may Allah bless him and grant him peace, had a maidservant who served him, called Barra. A man met her and said to her, “O Barra, cover your shins, for Muhammad will not avail you at all against Allah.”\n\nShe informed the Prophet, may Allah bless him and grant him peace, and he came out dragging his cloak, with his cheeks flushed … the hadith.\n\nUbayd and his shaykh are both abandoned as transmitters. Allah knows best.",
+      "arabic_sha256": "60d312acd7e36e3129cf7997a96e0dab390862ba3d8df974e8389dfcbc282ba6",
+      "english_sha256": "22cb4ebcc864a02457ae691af3a6cfdd6b14f3d7b4e815aa973245cadaba08d8",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "برة",
+      "english": "Barra",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطّبرانيّ",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأوسط",
+      "english": "al-Awsat",
+      "kind": "work"
+    },
+    {
+      "arabic": "محمد بن العباس المؤدب",
+      "english": "Muhammad ibn al-Abbas al-Mu'addib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد بن إسحاق العطار",
+      "english": "Ubayd ibn Ishaq al-Attar",
+      "kind": "person"
+    },
+    {
+      "arabic": "القاسم بن محمد بن عبد اللَّه بن عقيل",
+      "english": "al-Qasim ibn Muhammad ibn Abd Allah ibn Aqil",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah ibn Aqil",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر بن عبد اللَّه",
+      "english": "Jabir ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

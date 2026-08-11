@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011729",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11729,
+  "title": {
+    "english": "Layla al-Sadusiyya [1]",
+    "arabic_observed": "ليلى السّدوسيّة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011729-segment-0001",
+      "volume": 8,
+      "scan_page": 308,
+      "printed_page": 307,
+      "reader_page": 4220,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4220",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0308:663ccd951412ac20",
+      "arabic": "١١٧٢٩- ليلى السّدوسيّة «١»\n: امرأة بشير بن الخصاصيّة، يقال لها الجهدمة، ويقال هي غيرها. وقد تقدّم بيان ذلك في الجهدمة.",
+      "english": "11729 — Layla al-Sadusiyya [1]\n\nThe wife of Bashir ibn al-Khasasiyya; she is said to be al-Jahdama, and it is also said that she was someone else. This has already been explained under al-Jahdama.",
+      "arabic_sha256": "da7794b58313b0c8c8254e2cd0e0d4deceb6b4b6907850bf88df2da51c684ba8",
+      "english_sha256": "f94e984b833cc3c08931fb68a5a92628961dc44b439c030e2132061a5c098c9e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ليلى السّدوسيّة",
+      "english": "Layla al-Sadusiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشير بن الخصاصيّة",
+      "english": "Bashir ibn al-Khasasiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجهدمة",
+      "english": "al-Jahdama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

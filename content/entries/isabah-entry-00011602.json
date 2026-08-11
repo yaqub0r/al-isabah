@@ -1,0 +1,129 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011602",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11602,
+  "title": {
+    "english": "Fatima bint 'Amir",
+    "arabic_observed": "فاطمة بنت عامر"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011602-segment-0001",
+      "volume": 8,
+      "scan_page": 275,
+      "printed_page": 274,
+      "reader_page": 4187,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4187",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0275:33d3106da0174c85",
+      "arabic": "١١٦٠٢- فاطمة بنت عامر\nبن حذيم القرشية الجمحية، أخت سعيد بن عامر الصحابي المشهور.\n(١) أسد الغابة ت (٧١٨٨)، الثقات ٣/ ٣٣٧، الدر المنثور ٣٥٦، تجريد أسماء الصحابة ٢/ ٢٩٤، تقريب التهذيب ٢/ ٦٠٩، ٦٢٥، تهذيب التهذيب ١٢/ ٤٤٠، ٤٨١.",
+      "english": "11602—Fatima bint 'Amir\n\nibn Hudhaym, the Qurashi woman of Jumah, sister of Sa'id ibn 'Amir, the well-known Companion.\n\n¹ Usd al-Ghaba, biography no. 7188; al-Thiqat, 3/337; al-Durr al-Manthur, p. 356; al-Tajrid, 2/294; Taqrib al-Tahdhib, 2/609, 625; Tahdhib al-Tahdhib, 12/440, 481.",
+      "arabic_sha256": "3a622ad9b9a8623c77c65f99eac45adaa5c0591adaf27aa4b8c7840993aca059",
+      "english_sha256": "9d49629c32df62d0278a5ab1ee800181405f90710836e09c1c63608c0836b0ae",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011602-segment-0002",
+      "volume": 8,
+      "scan_page": 276,
+      "printed_page": 275,
+      "reader_page": 4188,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4188",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0276:72a2cdfcffe238ac",
+      "arabic": "كانت زوج المغيرة بن أبي العاص عم عثمان بن عفان، فولدت له عائشة التي تزوّجها مروان، فولدت له عبد الملك. ذكر ذلك الزبير بن بكار.",
+      "english": "She was the wife of al-Mughira ibn Abi al-As, the paternal uncle of Uthman ibn Affan, and bore him Aisha; Marwan married Aisha, and Aisha bore him Abd al-Malik. Al-Zubayr ibn Bakkar mentioned this.",
+      "arabic_sha256": "41aee3b833067acbbca65c64822e0568860ac7ecc9cfa39bd0091a9f3f659e86",
+      "english_sha256": "c7cdb20e06d888e299adae9bbcfe6eb04d65b59f53419ef8485894733f79d637",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الجمحية",
+      "english": "Jumah",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سعيد بن عامر",
+      "english": "Sa'id ibn 'Amir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدر المنثور",
+      "english": "al-Durr al-Manthur",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "المغيرة بن أبي العاص",
+      "english": "al-Mughira ibn Abi al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن عفان",
+      "english": "Uthman ibn Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha bint al-Mughira ibn Abi al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "مروان",
+      "english": "Marwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الملك",
+      "english": "Abd al-Malik ibn Marwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

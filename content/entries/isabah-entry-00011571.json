@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011571",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11571,
+  "title": {
+    "english": "Fakhita bint Abi Uhayha:",
+    "arabic_observed": "فاختة بنت أبي أحيحة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011571-segment-0001",
+      "volume": 8,
+      "scan_page": 257,
+      "printed_page": 256,
+      "reader_page": 4169,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4169",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0257:65dbf35993e88518",
+      "arabic": "١١٥٧١- فاختة بنت أبي أحيحة:\nسعد بن العاص بن أميّة امرأة أبي العاص بن الرّبيع. تزوّجها بعد زينب بنت النبيّ ﵌، وولد [ت له] «٤» منها بنته مريم- ذكرها الزّبير.",
+      "english": "11571—Fakhita bint Abi Uhayha:\n\nAbu Uhayha was Sa'd ibn al-As ibn Umayya. She was the wife of Abu al-As ibn al-Rabi. He married her after Zaynab, daughter of the Prophet (may Allah bless him and grant him peace), and she bore him his daughter Maryam. (4) She was mentioned by al-Zubayr.",
+      "arabic_sha256": "0adc79b30a5ab2f93fc3fa1a5b4bf29aca27a601f00bf47181ad14b41bcc8ce5",
+      "english_sha256": "f026e6115174773b58a98037a1608a5d68cf60b5d9ec6efedc6c3afa41da9b8c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "فاختة بنت أبي أحيحة",
+      "english": "Fakhita bint Abi Uhayha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أحيحة: سعد بن العاص بن أميّة",
+      "english": "Sa'd ibn al-As ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو العاص بن الرّبيع",
+      "english": "Abu al-As ibn al-Rabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت النبيّ",
+      "english": "Zaynab bint Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "مريم",
+      "english": "Maryam",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

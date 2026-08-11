@@ -1,0 +1,139 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011254",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11254,
+  "title": {
+    "english": "Zaynab bint Malik ibn Sinan al-Khudriyya,⁵ the sister of Abu Sa'id.",
+    "arabic_observed": "زينب بنت مالك"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011254-segment-0001",
+      "volume": 8,
+      "scan_page": 163,
+      "printed_page": 162,
+      "reader_page": 4075,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4075",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0163:e40af4ae4170ccd3",
+      "arabic": "١١٢٥٤- زينب بنت مالك\nبن سنان الخدرية «٥»، أخت أبي سعيد.\n(١) أسد الغابة ت ٦٩٧١.\n(٢) الثقات ٣/ ١٤٦، تجريد أسماء الصحابة ٢/ ٢٧٣.\n(٣) في أ: مخرمة بن المطلب بن عبد مناف.\n(٤) الاستيعاب: ت ٣٤١٠.\n(٥) أسد الغابة: ت ٦٩٧٢.",
+      "english": "11254—Zaynab bint Malik ibn Sinan al-Khudriyya,⁵ the sister of Abu Sa'id.\n\n¹ Usd al-Ghaba, entry 6971.\n² al-Thiqat, 3/146; al-Tajrid, 2/273.\n³ In manuscript A: “Makhrama ibn al-Muttalib ibn Abd Manaf.”\n⁴ al-Isti'ab, entry 3410.\n⁵ Usd al-Ghaba, entry 6972.",
+      "arabic_sha256": "89642e1a935cdef386121607509c898904e2745ef195f82bc209d6e4d3c859fc",
+      "english_sha256": "85f93dc8743c4a0c78bc7fa6fd6c6d050331058cbd1025173c7cf66bb50674bd",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011254-segment-0002",
+      "volume": 8,
+      "scan_page": 164,
+      "printed_page": 163,
+      "reader_page": 4076,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4076",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0164:daa560d50bf22a86",
+      "arabic": "تقدم نسبها في والدها، ذكرها أبو موسى في «الذّيل»، وقال: روى أبو ضمرة عن سعد بن إسحاق بن كعب بن عجرة، عن عمته زينب بنت كعب، عن أبي سعيد، وأخته زينب، عن النبي ﷺ في كفارة المرض، قال: ورواه يحيى بن سعيد القطان، عن سعد بن إسحاق، فلم يذكر مع أبي سعد أحدا.",
+      "english": "Her lineage was given above in the entry on her father. Abu Musa mentioned her in al-Dhayl and said: Abu Damra transmitted from Sa'd ibn Ishaq ibn Ka'b ibn 'Ujra, from his paternal aunt Zaynab bint Ka'b, from Abu Sa'id and his sister Zaynab, from the Prophet—may Allah bless him and grant him peace—concerning the expiation afforded by illness. He said: Yahya ibn Sa'id al-Qattan also transmitted it from Sa'd ibn Ishaq, but did not mention anyone alongside Abu Sa'id [the printed Arabic reads: Abu Sa'd].",
+      "arabic_sha256": "eec4ddbc4061678415179289645feee4dd5f8868e3e8e20f593cccc457c68b1f",
+      "english_sha256": "af7b3184dbcfae391d23622ff2b6d6aaac1a7be9e2e1febecc04ad73177afd90",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "زينب بنت مالك بن سنان الخدرية",
+      "english": "Zaynab bint Malik ibn Sinan al-Khudriyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخدرية",
+      "english": "Banu Khudra",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو ضمرة",
+      "english": "Abu Damra",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن إسحاق بن كعب بن عجرة",
+      "english": "Sa'd ibn Ishaq ibn Ka'b ibn 'Ujra",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت كعب",
+      "english": "Zaynab bint Ka'b ibn 'Ujra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي سعيد",
+      "english": "Abu Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي سعد",
+      "english": "Abu Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن سعيد القطان",
+      "english": "Yahya ibn Sa'id al-Qattan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

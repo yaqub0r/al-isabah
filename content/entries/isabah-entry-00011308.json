@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011308",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11308,
+  "title": {
+    "english": "Sulafa bint Sa'd",
+    "arabic_observed": "سلافة بنت سعد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011308-segment-0001",
+      "volume": 8,
+      "scan_page": 182,
+      "printed_page": 181,
+      "reader_page": 4094,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4094",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0182:3dd89ad41d329bb3",
+      "arabic": "١١٣٠٨- سلافة بنت سعد\nالأنصارية، والدة عثمان بن طلحة.\nلها ذكرى في مغازي الواقديّ في فتح مكة، قال الواقديّ: حدثنا معاذ بن محمد، عن عاصم بن عمر، عن علقمة بن وقاص الليثي قصة دخول النبي ﷺ في الفتح، وفيه: فصلّى ثم جلس في المسجد، ثم أرسل بلالا إلى عثمان بن طلحة يطلب منه مفتاح الكعبة، فطلبه عثمان من أمه سلافة بنت سعد الأنصارية الأوسية، فنازعته طويلا ثم أعطته له، فجاء به إلى النبي ﷺ وأسلمت سلافة بعد.",
+      "english": "11308 — Sulafa bint Sa'd\n\nal-Ansariyya, mother of 'Uthman ibn Talha.\n\nShe is mentioned in al-Waqidi's Maghazi in the account of the conquest of Mecca. al-Waqidi said: Mu'adh ibn Muhammad related to us, from 'Asim ibn 'Umar, from 'Alqama ibn Waqqas al-Laythi, the account of the Prophet's entrance during the conquest, may Allah bless him and grant him peace. It includes: He prayed, then sat in the mosque. He then sent Bilal to 'Uthman ibn Talha to ask him for the key to the Ka'ba. 'Uthman asked his mother, Sulafa bint Sa'd al-Ansariyya al-Awsiyya, for it. She resisted him for a long time, then gave it to him. He brought it to the Prophet, may Allah bless him and grant him peace. Sulafa later embraced Islam.",
+      "arabic_sha256": "c6728c9319680e01b788a0c7d9fab568069339dc6d1de1d843128e31c8e0a73f",
+      "english_sha256": "41c1ca9421747f81c2711d6f673d43e3414705c036b7f1e2d3c9921b5e53347c",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "سلافة بنت سعد الأنصارية الأوسية",
+      "english": "Sulafa bint Sa'd al-Ansariyya al-Awsiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن طلحة",
+      "english": "'Uthman ibn Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "مغازي الواقديّ",
+      "english": "al-Waqidi's Maghazi",
+      "kind": "work"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاذ بن محمد",
+      "english": "Mu'adh ibn Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاصم بن عمر",
+      "english": "'Asim ibn 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "علقمة بن وقاص الليثي",
+      "english": "'Alqama ibn Waqqas al-Laythi",
+      "kind": "person"
+    },
+    {
+      "arabic": "بلال",
+      "english": "Bilal",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكعبة",
+      "english": "Ka'ba",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011815",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11815,
+  "title": {
+    "english": "Nusaybah bint Niyar",
+    "arabic_observed": "نسيبة بنت نيار"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011815-segment-0001",
+      "volume": 8,
+      "scan_page": 336,
+      "printed_page": 335,
+      "reader_page": 4248,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4248",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0336:5668b6390c509ad2",
+      "arabic": "١١٨١٥- نسيبة بنت نيار\nبن الحارث بن بلال بن أحيحة بن الجلاح الأنصاريّة.\nتزوجها عقبة بن عبد ودّ بن عقبة بن أحيحة بن الجلاح قريبها، وأسلمت وبايعت، قاله ابن سعد. ورأيتها مضبوطة في نسخة من الطّبقات معتمده بالتصغير، وقيل فيها بالفتح كما سيأتي.",
+      "english": "11815—Nusaybah bint Niyar\nibn al-Harith ibn Bilal ibn Uhayha ibn al-Julah, the Ansari woman.\n\nHer relative Uqbah ibn Abd Wudd ibn Uqbah ibn Uhayha ibn al-Julah married her. She accepted Islam and pledged allegiance, according to Ibn Sa'd. I saw her name vocalized in the diminutive form in a reliable copy of al-Tabaqat, though it is also said with an a-vowel, as will follow.",
+      "arabic_sha256": "7895b6cf3780b86f90d0d6c8204bc289bef195ee9a4b47cb252d9ac0b13bce69",
+      "english_sha256": "7c3078ffead11cef4ebfebbd8fb7521c3edb4f7345396f289e9758f6995758e5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عقبة بن عبد ود بن عقبة بن أحيحة بن الجلاح",
+      "english": "Uqbah ibn Abd Wudd ibn Uqbah ibn Uhayha ibn al-Julah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبقات",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

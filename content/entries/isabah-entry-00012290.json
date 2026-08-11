@@ -1,0 +1,259 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012290",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12290,
+  "title": {
+    "english": "Umm Hani al-Ansariyya (1)",
+    "arabic_observed": "أم هانئ الأنصاريّة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012290-segment-0001",
+      "volume": 8,
+      "scan_page": 487,
+      "printed_page": 486,
+      "reader_page": 4399,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4399",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0487:5161e4de3b3c92ca",
+      "arabic": "١٢٢٩٠- أم هانئ الأنصاريّة «١»\n: قال أبو عمر: حدثها عند ابن لهيعة من روايته، عن أبي الأسود- أنه سمع درة بنت معاذ تحدّث عن أم هانئ الأنصارية أنها سألت رسول اللَّه ﵌ فقالت:\nأنتزاور إذا متنا ويرى بعضنا بعضا؟ فقال: «تكون النّسم طيرا تعلّق بالشّجر، حتّى إذا كان يوم القيامة دخلت كلّ نفس في جسدها» «٢» .\nأخرجه أبو بكر بن أبي شيبة، وابن سعد، وابن أبي خيثمة معا، عن الحسن بن موسى [عن] «٣» الأشعث عنه، وكذا أخرجه الحسن بن سفيان، عن أبي بكر، والطّبراني، وابن مندة من طريق الشعبي عن الحسن.\n(١) أسد الغابة ت (٧٦١٩)، الاستيعاب ت (٣٦٨٥)، الثقات ٣/ ٤٦٦- أعلام النساء ٥/ ٢٠٣- تجريد أسماء الصحابة ٢/ ٣٣٧- تهذيب التهذيب ١٢/ ٤٨١- الكاشف ٣/ ٤٩٢- تهذيب الكمال ٣/ ١٧٠٦- الاستبصار ٦١- خلاصة تذهيب ٣/ ٤٠٤- تلقيح فهوم أهل الأثر ٣٧٠.\n(٢) أخرجه أحمد في المسند ٦/ ٤٢٥ وأورده الهيثمي في الزوائد ٢/ ٣٣٢ وقال رواه أحمد والطبراني في الكبير وفيه ابن لهيعة وفيه كلام والمتقي الهندي في كنز العمال حديث ٣٢٧٥٤.\n(٣) ليس في أ.",
+      "english": "12290—Umm Hani al-Ansariyya (1)\n\nAbu Umar said: Her hadith is found with Ibn Lahi'a, in his narration from Abu al-Aswad, who heard Durra bint Mu'adh narrating from Umm Hani al-Ansariyya that she asked the Messenger of Allah—may Allah bless him and grant him peace—saying, “Will we visit one another after we die, and will some of us see others?” He replied: “The souls will become birds that cling to the trees. Then, when the Day of Resurrection comes, every soul will enter its body.” (2)\n\nAbu Bakr ibn Abi Shayba, Ibn Sa'd, and Ibn Abi Khaythama all transmitted it from al-Hasan ibn Musa, [from] (3) al-Ash'ath, from Ibn Lahi'a. Al-Hasan ibn Sufyan likewise transmitted it from Abu Bakr; and al-Tabarani and Ibn Manda transmitted it by way of al-Sha'bi, from al-Hasan.\n\n(1) Usd al-Ghaba, entry 7619; al-Isti'ab, entry 3685; al-Thiqat 3/466; A'lam al-Nisa' 5/203; al-Tajrid 2/337; Tahdhib al-Tahdhib 12/481; al-Kashif 3/492; Tahdhib al-Kamal 3/1706; al-Istibsar 61; Khulasat Tadhhib 3/404; Talqih Fuhum Ahl al-Athar 370.\n\n(2) It was transmitted by Ahmad in Musnad Ahmad 6/425. Al-Haythami included it in al-Zawa'id 2/332 and said: “Ahmad and al-Tabarani transmitted it in al-Kabir. Its chain contains Ibn Lahi'a, concerning whom there is discussion.” Al-Muttaqi al-Hindi also included it in Kanz al-Ummal, hadith 32754.\n\n(3) Not present in A.",
+      "arabic_sha256": "01bcd6cbbfee1a2301d220f76890eaffc4a7ad83a25f2a87ff06611cb4ee81a7",
+      "english_sha256": "5ca963ea5111ec0e31f9b7fe829a277502984069f1f05f6a9a366d44e0840dc9",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012290-segment-0002",
+      "volume": 8,
+      "scan_page": 488,
+      "printed_page": 487,
+      "reader_page": 4400,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4400",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0488:d4ef17ea9cc7916a",
+      "arabic": "قال أبو عمر: اختلف عليه، فقيل عن أم هانئ، وقيل أم قيس.\nقلت: وتقدّم في أم قيس أنّ العقيلي أخرج الحديث بعينه من طريق ابن لهيعة، فقال:\nعن أم قيس.",
+      "english": "Abu Umar said: The transmission from him differed: it was said to be from Umm Hani, and it was said to be from Umm Qays.\n\nI say: It was stated earlier, under Umm Qays, that al-'Uqayli transmitted this very hadith through Ibn Lahi'a, saying: “From Umm Qays.”",
+      "arabic_sha256": "2c598d7bad5ee80052b46c162f51dc5f853c5c1ff941cc5e6aeb7b26d0559b05",
+      "english_sha256": "140117ff22b4687bf8e1a6579b874fc8b7b98a0b20ca627d70b8b2274781b4ca",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم هانئ",
+      "english": "Umm Hani bint Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هانئ الأنصاريّة",
+      "english": "Umm Hani al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن لهيعة",
+      "english": "Ibn Lahi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الأسود",
+      "english": "Abu al-Aswad",
+      "kind": "person"
+    },
+    {
+      "arabic": "درة بنت معاذ",
+      "english": "Durra bint Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر بن أبي شيبة",
+      "english": "Abu Bakr ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي خيثمة",
+      "english": "Ibn Abi Khaythama",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن موسى",
+      "english": "al-Hasan ibn Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأشعث",
+      "english": "al-Ash'ath",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن سفيان",
+      "english": "al-Hasan ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطّبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشعبي",
+      "english": "al-Sha'bi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن",
+      "english": "al-Hasan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب",
+      "english": "Khulasat Tadhhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم هانئ",
+      "english": "Umm Hani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم قيس",
+      "english": "Umm Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "العقيلي",
+      "english": "al-'Uqayli",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "isnad",
+      "arabic_span": "من طريق الشعبي عن الحسن",
+      "explanation": "The supplied evidence does not identify this al-Hasan or establish any rearrangement of the route. The final translation therefore retains the canonical wording without merging him with al-Hasan ibn Musa.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0487:5161e4de3b3c92ca"
+    },
+    {
+      "category": "isnad",
+      "arabic_span": "عن الحسن بن موسى [عن] الأشعث عنه",
+      "explanation": "The matching collateral chains support taking “عنه” as referring to Ibn Lahi'a, but they omit al-Ash'ath and therefore do not resolve his identity, exact position, or the status of the bracketed preposition beyond the canonical editorial note. The final translation preserves the canonical sequence.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0487:5161e4de3b3c92ca"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

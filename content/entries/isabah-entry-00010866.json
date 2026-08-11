@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010866",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10866,
+  "title": {
+    "english": "Umayma bint Uqba",
+    "arabic_observed": "أميمة بنت عقبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010866-segment-0001",
+      "volume": 8,
+      "scan_page": 35,
+      "printed_page": 34,
+      "reader_page": 3947,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3947",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0035:f93ed50f5abcc3d8",
+      "arabic": "١٠٨٦٦- أميمة بنت عقبة\nبن عمرو بن عدي بن زيد بن جشم الأنصارية.\nذكرها ابن سعد في «المبايعات» . وقال: أمها أم عمير بنت عمرو الحنظلية، وتزوجت سهل بن عتيك.",
+      "english": "10866—Umayma bint Uqba\n\nibn Amr ibn Adi ibn Zayd ibn Jusham al-Ansariyya.\n\nIbn Sa'd mentioned her under “The Women Who Pledged Allegiance.” He said: Her mother was Umm Umayr bint Amr al-Hanzaliyya, and she married Sahl ibn Utayk.",
+      "arabic_sha256": "9004a44c20c6037adf9932ba37156229adb9e0e586915cd701595e6c54931d92",
+      "english_sha256": "ac0ce3f89845829090a6e4ff86c00c5549bb0e9f05fa111c18a4bd1ec6fe8af1",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "المبايعات",
+      "english": "The Women Who Pledged Allegiance",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم عمير بنت عمرو الحنظلية",
+      "english": "Umm Umayr bint Amr al-Hanzaliyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهل بن عتيك",
+      "english": "Sahl ibn Utayk",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011603",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11603,
+  "title": {
+    "english": "Fatima bint Abd Allah:",
+    "arabic_observed": "فاطمة بنت عبد اللَّه:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011603-segment-0001",
+      "volume": 8,
+      "scan_page": 276,
+      "printed_page": 275,
+      "reader_page": 4188,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4188",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0276:72a2cdfcffe238ac",
+      "arabic": "١١٦٠٣- فاطمة بنت عبد اللَّه:\nوالدة عثمان بن أبي العاص الثقفي «١» .\nذكرها أبو عمر، فقال: شهدت ولادة النبي ﵌ حين وضعته أمه آمنة، وكان ذلك ليلا، قالت: فما شيء انظر إليه من البيت إلا نور، وإني لأنظر إلى النجوم تدنو حتى أني لأقول ليقعن عليّ.\nقلت: أسند ذلك [أبو عمر] «٢» .",
+      "english": "11603—Fatima bint Abd Allah:\n\nThe mother of Uthman ibn Abi al-As al-Thaqafi.¹\n\nAbu Umar mentioned her and said: She witnessed the birth of the Prophet—may Allah bless him and grant him peace—when his mother Amina gave birth to him. This occurred at night. She said: “There was nothing in the house at which I looked without seeing light, and I could see the stars drawing near until I would say, ‘They are surely going to fall upon me.’”\n\nI say: [Abu Umar] transmitted this with its chain of transmission.²",
+      "arabic_sha256": "bf9698c85b75ab56c420684648d9efae81a9252550a168ad7b6b91dd1e5e259e",
+      "english_sha256": "48270cc9fe7cc8000d11bd5c1f7038c435a4bdd30187e4f88687102675ca2473",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "فاطمة بنت عبد اللَّه",
+      "english": "Fatima bint Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن أبي العاص الثقفي",
+      "english": "Uthman ibn Abi al-As al-Thaqafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "آمنة",
+      "english": "Amina",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

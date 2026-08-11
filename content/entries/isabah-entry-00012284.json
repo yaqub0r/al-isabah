@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012284",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12284,
+  "title": {
+    "english": "Umm Nasr al-Muharibiyya²",
+    "arabic_observed": "أم نصر المحاربيّة «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012284-segment-0001",
+      "volume": 8,
+      "scan_page": 485,
+      "printed_page": 484,
+      "reader_page": 4397,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4397",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0485:f8f6f862d41faae4",
+      "arabic": "١٢٢٨٤- أم نصر المحاربيّة «٢»\n: روى حديثها\nابن إسحاق «٣»، عن عاصم بن عمر بن قتادة، عن أم نصر المحاربيّة، قالت: سأل رجل رسول اللَّه ﵌ عن لحوم الحمر الأهلية، فقال:\n«أليس ترعى الكلأ وتأكل الشّجر؟» قال: بلى. قال: «فأصب من لحومها» .\nأخرجه الطّبرانيّ، وابن مندة. قال أبو عمر: تفرد بن إبراهيم بن المختار الرّازي، عن محمد بن إسحاق، وليس ممن يحتج بحديثه.",
+      "english": "12284—Umm Nasr al-Muharibiyya²\n\nHer hadith was transmitted by Ibn Ishaq³, from 'Asim ibn 'Umar ibn Qatada, from Umm Nasr al-Muharibiyya, who said: A man asked the Messenger of Allah, may Allah bless him and grant him peace, about the meat of domesticated donkeys. He said, “Do they not graze on herbage and eat from trees?” The man replied, “Yes.” He said, “Then take some of their meat.”\n\nAl-Tabarani and Ibn Manda transmitted it. Abu 'Umar said: “Ibrahim ibn al-Mukhtar al-Razi alone transmitted it from Muhammad ibn Ishaq, and he is not one whose hadith may be cited as proof.”",
+      "arabic_sha256": "b93d42306d6a912bf58b0e80bfff07fc45f3c81cba775deaa3a055e9666bf826",
+      "english_sha256": "306a7fc3de51f857e371765e458c6989664c068ade701e80b74526c214eda8e2",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم نصر المحاربية",
+      "english": "Umm Nasr al-Muharibiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاصم بن عمر بن قتادة",
+      "english": "'Asim ibn 'Umar ibn Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن المختار الرازي",
+      "english": "Ibrahim ibn al-Mukhtar al-Razi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "'Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

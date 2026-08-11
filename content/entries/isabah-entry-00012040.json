@@ -1,0 +1,125 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012040",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12040,
+  "title": {
+    "english": "Umm Sara:",
+    "arabic_observed": "أم سارة «١»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012040-segment-0001",
+      "volume": 8,
+      "scan_page": 399,
+      "printed_page": 398,
+      "reader_page": 4311,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4311",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0399:97ae5762f77afadd",
+      "arabic": "١٢٠٤٠- أم سارة «١»:\nكنود، التي أعطاها حاطب بن أبي بلتعة الكتاب إلى قريش فنزلت فيه: لا تَتَّخِذُوا عَدُوِّي وَعَدُوَّكُمْ أَوْلِياءَ [سورة الممتحنة: آية ١] . سمّاها قتادة عن أنس في حديث مختصر أخرجه ابن مندة، من طريق [....] عن قتادة، عن أنس- أن أمّ سارة أمة لقريش أتت النبيّ ﵌ فشكت إليه الحاجة، ثم إن رجلا بعث معها كتابا إلى أهل مكّة ليحفظوا عياله، فنزلت: يا أَيُّهَا الَّذِينَ آمَنُوا لا تَتَّخِذُوا عَدُوِّي وَعَدُوَّكُمْ أَوْلِياءَ ... [سورة الممتحنة آية ١] الآية.\nقال أبو نعيم: لا أعلم أحدا ذكرها في الصّحابة ونسبها إلى الإسلام.\nقلت: قد ذكروا أنّ النبيّ ﵌ كان أهدر دمها ثم أمّها يوم الفتح.\nوقد تقدّم بيان ذلك في سارة. فإنه اختلف في اسمها وكنيتها، فقيل سارة أم كنود، وقيل كنود أم سارة.",
+      "english": "12040—Umm Sara:\n\nKanud, to whom Hatib ibn Abi Balta'a gave the letter for Quraysh; concerning this the following was revealed: “Do not take My enemy and your enemy as allies” [Surat al-Mumtahana, verse 1]. Qatada named her in a brief hadith from Anas, transmitted by Ibn Manda by way of [lacuna], from Qatada, from Anas: Umm Sara, a bondwoman of Quraysh, came to the Prophet—may Allah bless him and grant him peace—and complained to him of her need. Then a man sent with her a letter to the people of Mecca so that they might safeguard his dependents. Thereupon the following was revealed: “O you who believe, do not take My enemy and your enemy as allies ...” [Surat al-Mumtahana, verse 1], to the end of the verse.\n\nAbu Nu'aym said: “I do not know of anyone who included her among the Companions or attributed her to Islam.”\n\nI say: They have mentioned that the Prophet—may Allah bless him and grant him peace—had declared her blood forfeit and then [apparently granted her safe-conduct; the Arabic wording is uncertain] on the Day of the Conquest.\n\nAn explanation of this has already been given under Sara. Her name and kunya were disputed: she was said to be Sara, Umm Kanud, and she was said to be Kanud, Umm Sara.",
+      "arabic_sha256": "fb3d77be7282df95ae9fe826a4ea7181883cd1f23fcbc8039117a3ec999e1027",
+      "english_sha256": "77b3737a41911bc33bc727fc5daefe1846c2858cdbf797ade873ad014474edac",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم سارة",
+      "english": "Umm Sara",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنود",
+      "english": "Kanud",
+      "kind": "person"
+    },
+    {
+      "arabic": "حاطب بن أبي بلتعة",
+      "english": "Hatib ibn Abi Balta'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سورة الممتحنة",
+      "english": "Surat al-Mumtahana",
+      "kind": "work"
+    },
+    {
+      "arabic": "قتادة",
+      "english": "Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس",
+      "english": "Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "مكّة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "يوم الفتح",
+      "english": "Day of the Conquest",
+      "kind": "other"
+    },
+    {
+      "arabic": "سارة",
+      "english": "Sara",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كنود",
+      "english": "Umm Kanud",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source text",
+      "arabic_span": "ثم أمّها يوم الفتح",
+      "explanation": "The supplied Arabic does not yield the safe-conduct sense naturally. The Urdu witness supports an intended reading equivalent to أمنها, but no Arabic al-Isabah manuscript confirms that restoration.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0399:97ae5762f77afadd"
+    },
+    {
+      "category": "isnad lacuna",
+      "arabic_span": "من طريق [....] عن قتادة",
+      "explanation": "No supplied witness identifies the missing transmitter or transmitters before Qatada; the lacuna has therefore been preserved.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0399:97ae5762f77afadd"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

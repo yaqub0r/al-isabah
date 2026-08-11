@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011826",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11826,
+  "title": {
+    "english": "Al-Nawwar bint Qays",
+    "arabic_observed": "النّوار بنت قيس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011826-segment-0001",
+      "volume": 8,
+      "scan_page": 338,
+      "printed_page": 337,
+      "reader_page": 4250,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4250",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0338:886a095e5bfe533b",
+      "arabic": "١١٨٢٦- النّوار بنت قيس\nبن الحارث بن عدي بن جشم بن مجدعة بن حارثة الأنصاريّة.\nذكرها العدويّ «٢» في الأنصار، واستدركها أبو عليّ الجيانيّ. وقال ابن سعد: كان أبوها يكنى بها، تزوّجها زيد بن نويرة بن الحارث بن عدي بن جشم، فولدت له، وأسلمت النّوار، وبايعت رسول اللَّه ﵌.",
+      "english": "11826—Al-Nawwar bint Qays\nibn al-Harith ibn Adi ibn Jusham ibn Mujadda'a ibn Haritha, the Ansari woman.\nAl-Adawi[2] mentioned her in his account of the Ansar, and Abu Ali al-Jayyani supplied her as an omitted entry. Ibn Sa'd said: Her father used a kunya derived from her name. Zayd ibn Nuwayra ibn al-Harith ibn Adi ibn Jusham married her, and she bore him children. Al-Nawwar embraced Islam and pledged allegiance to the Messenger of Allah—may Allah bless him and grant him peace.",
+      "arabic_sha256": "05fb6dff7aac28e85172bb6488b2009ecfdf46aef2406e668b97a4fd1239a4a0",
+      "english_sha256": "97f694523de61c1399d5fb1ec81ae5141e1d53f5d2ed546de53857fad1728934",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "العدويّ",
+      "english": "al-Adawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عليّ الجيانيّ",
+      "english": "Abu Ali al-Jayyani",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن نويرة بن الحارث بن عدي بن جشم",
+      "english": "Zayd ibn Nuwayra ibn al-Harith ibn Adi ibn Jusham",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

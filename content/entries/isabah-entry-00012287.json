@@ -1,0 +1,144 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012287",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12287,
+  "title": {
+    "english": "Umm Niyar bint Zayd ibn Malik ibn 'Adi ibn Ka'b ibn 'Abd al-Ashhal",
+    "arabic_observed": "أم نيار بنت زيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012287-segment-0001",
+      "volume": 8,
+      "scan_page": 485,
+      "printed_page": 484,
+      "reader_page": 4397,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4397",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0485:f8f6f862d41faae4",
+      "arabic": "١٢٢٨٧- أم نيار بنت زيد\nبن مالك بن عديّ بن كعب بن عبد الأشهل الأنصارية ثم الأشهلية، أخت سعد بن زيد.\nذكرها الواقديّ في المبايعات. وقال ابن سعد: ولم نجد لها في نسب الأنصار ذكرا.\n(١) سقط من أ.\n(٢) أسد الغابة ت (٧٦١٧)، الثقات ٣/ ٤٦٥، أعلام النساء ٥/ ٢٠١، ٢١١- تجريد أسماء الصحابة ٢/ ٣٣٧- تهذيب التهذيب ١٢/ ٤٨١ الكاشف ٣/ ٤٩٢- تهذيب الكمال ٣/ ١٧٠٦- الاستبصار ٦١- خلاصة تذهيب ٣/ ٤٠٤ تلقيح فهوم أهل الأثر ٣٧٠، الاستيعاب ت (٣٦٨٢) .\n(٣) في أ: روى حديثها محمد بن إسحاق.",
+      "english": "12287—Umm Niyar bint Zayd ibn Malik ibn 'Adi ibn Ka'b ibn 'Abd al-Ashhal\n\nShe was a woman of the Ansar, specifically of Banu 'Abd al-Ashhal, and the sister of Sa'd ibn Zayd.\n\nAl-Waqidi mentioned her among the women who pledged allegiance. Ibn Sa'd said: “We found no mention of her in the genealogy of the Ansar.”\n\n¹ “That is” is omitted from manuscript A.\n\n² Usd al-Ghaba, entry 7617; al-Thiqat, 3/465; A'lam al-Nisa, 5/201, 211; al-Tajrid, 2/337; Tahdhib al-Tahdhib, 12/481; al-Kashif, 3/492; Tahdhib al-Kamal, 3/1706; al-Istibsar, 61; Khulasat Tadhhib, 3/404; Talqih Fuhum Ahl al-Athar, 370; al-Isti'ab, entry 3682.\n\n³ In manuscript A: “Her hadith was transmitted by Muhammad ibn Ishaq.”",
+      "arabic_sha256": "72db951751a8638277c70d65fc068dbf5aa14d2831ed608be5420825c7520922",
+      "english_sha256": "51931fa4616afa53b417b2ee710e3d356f73cd83265023f197517555a9769303",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012287-segment-0002",
+      "volume": 8,
+      "scan_page": 486,
+      "printed_page": 485,
+      "reader_page": 4398,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4398",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0486:9da92ce31be51176",
+      "arabic": "القسم الثاني والثالث وكذا الرابع\nخالية.\nحرف الهاء\nالقسم الأول",
+      "english": "Sections Two and Three, and likewise Four\n\nare empty.\n\nThe Letter Ha\n\nSection One",
+      "arabic_sha256": "1ff3b287f3041e516cbdd5ef3e54685735e5c02cbdcb7501cf4fa394dd3ecd32",
+      "english_sha256": "2e33c37a5f85b1a3cce09b9123732431fa55c45c9a9a98247affe0e78f6d911a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم نيار بنت زيد بن مالك بن عدي بن كعب بن عبد الأشهل",
+      "english": "Umm Niyar bint Zayd ibn Malik ibn 'Adi ibn Ka'b ibn 'Abd al-Ashhal",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأشهلية",
+      "english": "Banu 'Abd al-Ashhal",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سعد بن زيد",
+      "english": "Sa'd ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب",
+      "english": "Khulasat Tadhhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010974",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10974,
+  "title": {
+    "english": "Judama bint al-Harith,²",
+    "arabic_observed": "جدامة بنت الحارث «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010974-segment-0001",
+      "volume": 8,
+      "scan_page": 63,
+      "printed_page": 62,
+      "reader_page": 3975,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3975",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0063:f6be2baa3fc1083a",
+      "arabic": "١٠٩٧٤- جدامة بنت الحارث «٢»\n، أخت حليمة مرضعة النبيّ ﷺ.\nلقبها الشيماء، لا تعرف لها رواية. ذكرها ابن مندة، وتعقبه ابن الأثير بأن الشيماء بنت حليمة لا أختها كما سيأتي عند ذكرها، فهي أخت النبيّ ﷺ لا خالته.\nقلت: إن كان ما ذكره ابن مندة محفوظا احتمل أن تكون بنت حليمة سمّيت باسم خالتها ولقّبت لقبها، على أنهم لم يتفقوا على أن اسم الشيماء جدامة- بالجيم والميم، بل جزم أبو عمر بأنها حذافة بالمهلمة والفاء، وجزم ابن سعد بالأول.",
+      "english": "10974—Judama bint al-Harith,²\n\nthe sister of Halima, the wet nurse of the Prophet (may Allah bless him and grant him peace).\n\nHer sobriquet was al-Shayma. No narration from her is known. Ibn Manda mentioned her, and Ibn al-Athir criticized him on the grounds that al-Shayma was Halima's daughter, not her sister, as will come when she is mentioned. She was therefore the Prophet's foster-sister, not his foster-maternal aunt.\n\nI say: If what Ibn Manda mentioned has been correctly preserved, it is possible that Halima's daughter was given the name of her maternal aunt and also given her sobriquet, although they did not agree that al-Shayma's name was Judama—with jim and mim. Rather, Abu Umar asserted that it was Hudhafa, with the unpointed ha and the letter fa, while Ibn Sa'd asserted the former.",
+      "arabic_sha256": "a9eea5dc98b8b1864e60f166fad5b130e46b2c027f0ad1d9467a4adbfe5d9ad5",
+      "english_sha256": "f830a35f324747a4895d744246464303e050f5ab1bf66f42ac518e910c35f7a2",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "جدامة بنت الحارث",
+      "english": "Judama bint al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "حليمة",
+      "english": "Halima",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشيماء",
+      "english": "al-Shayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "حذافة",
+      "english": "Hudhafa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

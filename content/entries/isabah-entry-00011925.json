@@ -1,0 +1,104 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011925",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11925,
+  "title": {
+    "english": "Umm Thabit bint Qays",
+    "arabic_observed": "أم ثابت بنت قيس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011925-segment-0001",
+      "volume": 8,
+      "scan_page": 367,
+      "printed_page": 366,
+      "reader_page": 4279,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4279",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0367:8ad674b3a8eee04d",
+      "arabic": "١١٩٢٥- أم ثابت بنت قيس\nبن شماس الأنصاريّة «٩»، أخت ثابت. ذكرها ابن حبيب\n(١) أسد الغابة: ت (٧٣٨٠) .\n(٢) في أ: أم ثابت بنت جابر بن عتيك.\n(٣) سقط من أ.\n(٤) في أ: جابر.\n(٥) أسد الغابة ت (٧٣٨١) .\n(٦) أسد الغابة ت (٧٣٨٢) .\n(٧) سقط من أ.\n(٨) في أ: تأتي في أم سهل بنت سهل.\n(٩) أسد الغابة ت (٧٣٨٣) .",
+      "english": "11925—Umm Thabit bint Qays\n\nibn Shammas al-Ansariyya, (9) the sister of Thabit. Ibn Habib mentioned her\n\n(1) Usd al-Ghaba, entry 7380.\n\n(2) In A: “Umm Thabit bint Jabir ibn Atik.”\n\n(3) Omitted from A.\n\n(4) In A: “Jabir.”\n\n(5) Usd al-Ghaba, entry 7381.\n\n(6) Usd al-Ghaba, entry 7382.\n\n(7) Omitted from A.\n\n(8) In A: “She will appear under Umm Sahl bint Sahl.”\n\n(9) Usd al-Ghaba, entry 7383.",
+      "arabic_sha256": "f902587eca475de36eed20af47e53b02724d8dcac2e803e4355625a2e0d688ab",
+      "english_sha256": "75e922de33fe7f47901043b16c0b5ff71b6d793405328cf73e17425f20c62120",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011925-segment-0002",
+      "volume": 8,
+      "scan_page": 368,
+      "printed_page": 367,
+      "reader_page": 4280,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4280",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0368:8e680841dd9b1c66",
+      "arabic": "في المبايعات. وقال ابن سعد: تزوجها ثابت بن سفيان بن عدي بن عمرو، فولدت له سماكا، ولها ذكر في ترجمة ليلى بنت سماك.",
+      "english": "[Ibn Habib mentioned her] among the women who gave the pledge of allegiance. Ibn Sa'd said: Thabit ibn Sufyan ibn 'Adi ibn 'Amr married her, and she bore him Simak. She is also mentioned in the biographical notice of Layla bint Simak.",
+      "arabic_sha256": "ce55846bda6a7832ff767b92478b73f8a1ecb2c3784c5d91f023da29e4e7733d",
+      "english_sha256": "07f6ace11dd6ee3bde9ad1ca27b7239841aedc153acf655419a8e5e9e518360f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم ثابت بنت جابر بن عتيك",
+      "english": "Umm Thabit bint Jabir ibn Atik",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سهل",
+      "english": "Umm Sahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سهل بنت سهل",
+      "english": "Umm Sahl bint Sahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت",
+      "english": "Thabit ibn Qays ibn Shammas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت بن سفيان بن عدي بن عمرو",
+      "english": "Thabit ibn Sufyan ibn 'Adi ibn 'Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "سماك",
+      "english": "Simak",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليلى بنت سماك",
+      "english": "Layla bint Simak",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011229",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11229,
+  "title": {
+    "english": "Zaynab bint al-Harith ibn Salam, the Israelite woman",
+    "arabic_observed": "زينب بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011229-segment-0001",
+      "volume": 8,
+      "scan_page": 156,
+      "printed_page": 155,
+      "reader_page": 4068,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4068",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0156:c7dcf2b3af36eb61",
+      "arabic": "١١٢٢٩- زينب بنت الحارث\nبن سلام الإسرائيلية.\nذكر معمّر في جامعه عن الزّهريّ- أنها اليهودية التي كانت دسّت الشاة المسمومة للنّبيّ ﷺ. فأسلمت، فتركها النبيّ ﷺ. انتهى.\nوقال غيره: إنه قتلها. وقيل: إنما قتلها قصاصا لبشر بن البراء، لأنه كان أكل معه من الشاة فمات بعد حول.",
+      "english": "11229—Zaynab bint al-Harith ibn Salam, the Israelite woman\n\nMa'mar mentioned in his Jami', from al-Zuhri, that she was the Jewish woman who had secretly placed the poisoned sheep before the Prophet—may Allah bless him and grant him peace. She then embraced Islam, so the Prophet—may Allah bless him and grant him peace—spared her. End quote.\n\nAnother authority said that he killed her. It is also said that he killed her only in retaliation for Bishr ibn al-Bara, because Bishr had eaten some of the sheep with him and died after a year.",
+      "arabic_sha256": "72d20fe51a0ada8f8d63733865e47734cc1299caa5eb0a915960a28705d04cf8",
+      "english_sha256": "81d169b1a7afb2456605ad0be70aa732c891bab5747295d512c78f50594e9ac2",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت الحارث بن سلام",
+      "english": "Zaynab bint al-Harith ibn Salam",
+      "kind": "person"
+    },
+    {
+      "arabic": "معمّر",
+      "english": "Ma'mar",
+      "kind": "person"
+    },
+    {
+      "arabic": "جامعه",
+      "english": "Jami'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشر بن البراء",
+      "english": "Bishr ibn al-Bara",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

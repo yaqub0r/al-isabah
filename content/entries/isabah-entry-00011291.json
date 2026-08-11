@@ -1,0 +1,120 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011291",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11291,
+  "title": {
+    "english": "Sarra (1)",
+    "arabic_observed": "سرّا «١»،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011291-segment-0001",
+      "volume": 8,
+      "scan_page": 176,
+      "printed_page": 175,
+      "reader_page": 4088,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4088",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0176:a45db5a9903559b3",
+      "arabic": "١١٢٩١- سرّا «١»،\nبتشديد الراء مقصورة، ضبطها الأمير قال: وتقال بالمد، بنت نبهان بن عمرو الغنوية.\nقال ابن حبّان: لها صحبة،\nوأخرج حديثها أبو داود وغيره من طريق أبي عاصم، عن ربيعة بن عبد الرحمن الغنوي، عن سرّا بنت نبهان، وكانت ربّة بيت في الجاهلية، قالت:\nخطبنا رسول اللَّه ﷺ في حجة الوداع يوم الرءوس، فقال: «أيّ يوم هذا»؟ قلنا: اللَّه ورسوله أعلم. قال: «أليس [أوسط] أيّام التّشريق ...» الحديث. وفي آخره: فلما قدم المدينة لم يلبث إلا قليلا حتى مات.\nوقال أبو عمر: روت عنها أيضا ساكنة بنت الجعد. وأخرج ابن سعد، عن أحمد بن الحارث الغساني عن ساكنة بنت الجعد عنها حديثا، وقال: روت أحاديث بهذا الإسناد.",
+      "english": "11291 — Sarra (1)\n\nWith the ra doubled and in the maqsur form; al-Amir vocalized it this way and said that it is also given in the mamdud form, Sarra'. She was Sarra bint Nabhan ibn 'Amr al-Ghanawiyya.\n\nIbn Hibban said: “She was a Companion.”\n\nAbu Dawud and others transmitted her hadith by way of Abu 'Asim, from Rabi'a ibn 'Abd al-Rahman al-Ghanawi, from Sarra bint Nabhan, who had been the mistress of a household during the pre-Islamic period. She said:\n\n“The Messenger of Allah, may Allah bless him and grant him peace, addressed us during the Farewell Pilgrimage, on the Day of the Heads. He said, ‘What day is this?’ We replied, ‘Allah and His Messenger know best.’ He said, ‘Is this not [the middle] of the Days of Tashriq...?’” The hadith continues. At its end is: “When he arrived in Medina, he remained only a short while before he died.”\n\nAbu 'Umar said: “Sakina bint al-Ja'd also narrated from her.” Ibn Sa'd transmitted, from Ahmad ibn al-Harith al-Ghassani, from Sakina bint al-Ja'd, from her, a hadith, and said: “She narrated hadiths with this isnad.”",
+      "arabic_sha256": "d917af1ed4cb5218f8b592df587956021d0fe494478f31b23de3269575d3af33",
+      "english_sha256": "5da9c05d67773e93c09c3bfdeca6c8bb17d68b9193e2b5a08683848ff9b5bcc9",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سرّا بنت نبهان بن عمرو الغنوية",
+      "english": "Sarra bint Nabhan ibn 'Amr al-Ghanawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأمير",
+      "english": "al-Amir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عاصم",
+      "english": "Abu 'Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ربيعة بن عبد الرحمن الغنوي",
+      "english": "Rabi'a ibn 'Abd al-Rahman al-Ghanawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "حجة الوداع",
+      "english": "Farewell Pilgrimage",
+      "kind": "other"
+    },
+    {
+      "arabic": "يوم الرءوس",
+      "english": "Day of the Heads",
+      "kind": "other"
+    },
+    {
+      "arabic": "أيام التشريق",
+      "english": "Days of Tashriq",
+      "kind": "other"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ساكنة بنت الجعد",
+      "english": "Sakina bint al-Ja'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد بن الحارث الغساني",
+      "english": "Ahmad ibn al-Harith al-Ghassani",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

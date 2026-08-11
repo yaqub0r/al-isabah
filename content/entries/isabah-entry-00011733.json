@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011733",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11733,
+  "title": {
+    "english": "Layla:",
+    "arabic_observed": "ليلى:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011733-segment-0001",
+      "volume": 8,
+      "scan_page": 309,
+      "printed_page": 308,
+      "reader_page": 4221,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4221",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0309:0ba619c4fb4f3e1c",
+      "arabic": "١١٧٣٣- ليلى:\nمولاة عائشة «٢» .\nقال أبو عمر: حديثها ليس بالقائم الإسناد. روى عنها أبو عبد اللَّه المدنيّ، وهو مجهول.\nقلت:\nأسنده المستغفريّ، من طريق عبد الكريم الجرار، عن أبي عبد اللَّه المدنيّ، عن حاجبة عائشة ومولاتها، قالت: يا رسول اللَّه، إنك تخرج من الخلاء فأدخل في أثرك فلا أرى شيئا إلا أني أجد رائحة المسك! فقال: «إنّا معاشر الأنبياء تنبت أجسادنا على أرواح أهل الجنّة، فما خرج منّا من نتن ابتلعته الأرض» .",
+      "english": "11733—Layla:\n\nThe freedwoman of Aisha.(2)\n\nAbu 'Umar said: Her hadith does not have a sound chain of transmission. Abu 'Abd Allah al-Madani, who is unknown, narrated from her.\n\nI say:\n\nAl-Mustaghfiri supplied its chain through 'Abd al-Karim al-Jarrar, from Abu 'Abd Allah al-Madani, from Aisha's doorkeeper and freedwoman, who said, “O Messenger of Allah, you come out of the privy, and I enter after you, but I see nothing; I find only the fragrance of musk!” He replied, “We, the company of prophets—our bodies grow upon the spirits of the people of Paradise, and whatever foul matter comes out of us, the earth swallows it.”",
+      "arabic_sha256": "cf5689d3328a8bf8c039834f571d888fa1167a0109659a3c32750bffd732bb7e",
+      "english_sha256": "7c20793b333564677e2f24728c5206ad4e37cc1147e11aad9305bcd0c17a2813",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عبد الله المدني",
+      "english": "Abu 'Abd Allah al-Madani",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الكريم الجرار",
+      "english": "'Abd al-Karim al-Jarrar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجنة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "ليلى",
+      "english": "Layla",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

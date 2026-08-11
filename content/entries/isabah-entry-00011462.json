@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011462",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11462,
+  "title": {
+    "english": "Aisha bint Jarir ibn Amr[1] ibn Razah al-Ansariyya, of Banu Salama",
+    "arabic_observed": "عائشة بنت جرير"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011462-segment-0001",
+      "volume": 8,
+      "scan_page": 236,
+      "printed_page": 235,
+      "reader_page": 4148,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4148",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0236:7648c33cbdb74026",
+      "arabic": "١١٤٦٢- عائشة بنت جرير\nبن عمرو»\nبن رزاح الأنصارية، من بني سلمة.\nذكرها ابن حبيب في المبايعات، وقال: كانت زوج «٢» أبي المنذر يزيد بن عامر بن حديدة.",
+      "english": "11462 — Aisha bint Jarir ibn Amr[1] ibn Razah al-Ansariyya, of Banu Salama\n\nIbn Habib mentioned her among the women who pledged allegiance and said: She was the wife[2] of Abu al-Mundhir Yazid ibn Amir ibn Hadida.",
+      "arabic_sha256": "b4e7cde665909d2e0845712a76733d972c45ddfde7d022462c8585c1f811a6f4",
+      "english_sha256": "6268bceddd34a62a9c99c33a2dcee5a5af03d5d5641c5cc2d63c3fb9dfe89c23",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو سلمة",
+      "english": "Banu Salama",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو المنذر يزيد بن عامر بن حديدة",
+      "english": "Abu al-Mundhir Yazid ibn Amir ibn Hadida",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

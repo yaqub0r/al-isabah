@@ -1,0 +1,140 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011302",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11302,
+  "title": {
+    "english": "Su'ayra (2)",
+    "arabic_observed": "سعيرة «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011302-segment-0001",
+      "volume": 8,
+      "scan_page": 180,
+      "printed_page": 179,
+      "reader_page": 4092,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4092",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0180:f49454f6a493220d",
+      "arabic": "١١٣٠٢- سعيرة «٢»\n، بالتصغير، ضبطها المستغفري،\nوأخرج من طريق عطاء الخراساني، عن عطاء بن أبي رباح، عن ابن عباس أنه قال له: ألا أريك امرأة من أهل الجنة، فأراني حبشية صفراء عظيمة قال: هذه سعيرة الأسدية أتت رسول اللَّه ﷺ، فقالت: يا رسول اللَّه، إنّ بي هذه تعني الريح، فادع اللَّه أن يشفيني مما بي، فقال: «إن شئت دعوت اللَّه أن يعافيك ممّا بك ويثبت لك حسناتك وسيّئاتك، وإن شئت فاصبري ولك الجنّة» «٣»،\nفاختارت الصبر والجنة.\nوأخرج قصتها أبو موسى، من طريق المستغفريّ، ثم من رواية محمد بن إسحاق بن خزيمة، عن المقدام بن داود، عن علي بن معبد، عن بشر بن ميمون، عن عطاء الخراساني به، قال بشر: وفي سعيرة هذه نزلت: وَلا تَكُونُوا كَالَّتِي نَقَضَتْ غَزْلَها مِنْ بَعْدِ قُوَّةٍ أَنْكاثًا [النحل: ٩٢]: كانت تجمع الصوف والشعر والليف فتغزل كبّة عظيمة، فإذا ثقلت عليها نقضتها، فقال: يا معشر قريش، لا تكونوا مثل سعيرة فتنقضوا أيمانكم بعد توكيدها، ثم قال ابن خزيمة: أنا أبرأ إلى اللَّه تعالى عن عهدة هذا الإسناد.\nقال المستغفريّ في كتابه: سعيرة بالشين المعجمة. والصحيح بالمهملة.\nقلت: ذكرها ابن مندة بالشين المعجمة والقاف، وأورد حديثها من هذا الطريق زيد ابن أبي زيد عن بشر بن ميمون، وتبعه أبو نعيم.\n(١) أسد الغابة ت (٦٩٩٤) .\n(٢) أسد الغابة ت (٦٩٩٥) .\n(٣) أخرجه أحمد ١/ ٣٤٧.",
+      "english": "11302 — Su'ayra (2)\n\nIn the diminutive form, as vocalized by al-Mustaghfiri.\n\nHe transmitted by way of Ata al-Khurasani, from Ata ibn Abi Rabah, from Ibn Abbas, who said to him, “Shall I not show you a woman from among the people of Paradise?” He then showed me a large, yellow-complexioned Abyssinian woman and said, “This is Su'ayra al-Asadiyya. She came to the Messenger of Allah (may Allah bless him and grant him peace) and said, ‘O Messenger of Allah, I suffer from this’—meaning the wind—‘so supplicate Allah to cure me of what afflicts me.’ He said, ‘If you wish, I shall supplicate Allah to grant you well-being from what afflicts you and to record for you your good deeds and your bad deeds; or, if you wish, be patient, and Paradise shall be yours.’” (3)\n\nShe chose patience and Paradise.\n\nAbu Musa included her story by way of al-Mustaghfiri, then through the narration of Muhammad ibn Ishaq ibn Khuzayma, from al-Miqdam ibn Dawud, from Ali ibn Ma'bad, from Bishr ibn Maymun, from Ata al-Khurasani, with this account. Bishr said: Concerning this Su'ayra was revealed, “And do not be like the woman who unraveled her spun yarn after it had become strong, reducing it to loose strands” [al-Nahl 16:92]. She used to gather wool, hair, and palm fiber and spin them into a great ball; when it became burdensome for her, she would unravel it. He then said, “O assembly of Quraysh, do not be like Su'ayra and thus undo your oaths after making them firm.” Ibn Khuzayma then said, “I declare myself free before Allah Most High of responsibility for this chain of transmission.”\n\nAl-Mustaghfiri said in his book: “Shu'ayra, with the dotted letter shin.” The correct form is Su'ayra, with the undotted sin.\n\nI say: Ibn Manda mentioned her as Shuqayra, with the dotted shin and qaf, and cited her hadith by this route: Zayd ibn Abi Zayd, from Bishr ibn Maymun. Abu Nu'aym followed him.\n\n(1) Usd al-Ghaba, entry 6994.\n\n(2) Usd al-Ghaba, entry 6995.\n\n(3) Transmitted by Ahmad, 1/347.",
+      "arabic_sha256": "96cfa9762703ee81268b28e2193e64abcf3b5d76572010d4973c3d10abd3c552",
+      "english_sha256": "3af44817e1641b1df0519485b8938d7e8c7772c06aceff532546e9afbfe1e034",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول الله",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيرة الأسدية",
+      "english": "Su'ayra al-Asadiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاء الخراساني",
+      "english": "Ata al-Khurasani",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاء بن أبي رباح",
+      "english": "Ata ibn Abi Rabah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجنة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "محمد بن إسحاق بن خزيمة",
+      "english": "Muhammad ibn Ishaq ibn Khuzayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "المقدام بن داود",
+      "english": "al-Miqdam ibn Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن معبد",
+      "english": "Ali ibn Ma'bad",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشر بن ميمون",
+      "english": "Bishr ibn Maymun",
+      "kind": "person"
+    },
+    {
+      "arabic": "النحل",
+      "english": "al-Nahl",
+      "kind": "work"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد ابن أبي زيد",
+      "english": "Zayd ibn Abi Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

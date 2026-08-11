@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011901",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11901,
+  "title": {
+    "english": "Umm Iyas bint Abi al-Haysar al-Ansariyya:",
+    "arabic_observed": "أم إياس بنت أبي الحيسر الأنصارية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011901-segment-0001",
+      "volume": 8,
+      "scan_page": 359,
+      "printed_page": 358,
+      "reader_page": 4271,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4271",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0359:6351033704f285eb",
+      "arabic": "١١٩٠١- أم إياس بنت أبي الحيسر الأنصارية:\nزوج عبد الرّحمن بن عوف التي تزوجها، فقيل له: «أو لم ولو بشاة» . سماها ابن القداح في أنساب الأوس، واسم أبي الحيسر، وهو بفتح المهملة وسكون التحتانية وفتح السّين المهملة بعدها راء- أنس بن رافع الأوسيّ.",
+      "english": "11901—Umm Iyas bint Abi al-Haysar al-Ansariyya:\n\nShe was the wife of Abd al-Rahman ibn Awf whom he married, whereupon he was told, “Give a wedding feast, even if only with one sheep.” Ibn al-Qaddah gave her name in Ansab al-Aws. The name of Abu al-Haysar—with an unpointed ha bearing fatha, a ya bearing sukun, then an unpointed sin bearing fatha, followed by ra—was Anas ibn Rafi al-Awsi.",
+      "arabic_sha256": "4e3ab09a837a8e2a706340f0955978825c52c2f8ab337952ac1aaf3b467e0e2d",
+      "english_sha256": "9662438f6713d97964f7f5a3e9901759c28a4cac0f4d14ed99cc04ed73c1fb55",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم إياس بنت أبي الحيسر الأنصارية",
+      "english": "Umm Iyas bint Abi al-Haysar al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عوف",
+      "english": "Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن القداح",
+      "english": "Ibn al-Qaddah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار، الأنصارية",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأوس، الأوسي",
+      "english": "Aws",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أنساب الأوس",
+      "english": "Ansab al-Aws",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

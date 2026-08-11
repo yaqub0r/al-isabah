@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011547",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11547,
+  "title": {
+    "english": "Umayra bint Marthad ibn Jubayr ibn Malik, the Ansari woman, [the sister of Asma. Ibn Sa'd said: “She embraced Islam and pledged allegiance. Her mother was Salama bint Mas'ud ibn Ka'b; Suwayd ibn al-Nu'man married her.”",
+    "arabic_observed": "عميرة بنت مرثد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011547-segment-0001",
+      "volume": 8,
+      "scan_page": 252,
+      "printed_page": 251,
+      "reader_page": 4164,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4164",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0252:003c313ae415e2f3",
+      "arabic": "١١٥٤٧- عميرة بنت مرثد\nبن جبير بن مالك الأنصاريّة، [أخت أسماء. قال ابن سعد: أسلمت وبايعت، وأمّها سلامة بنت مسعود بن كعب تزوّجها سويد بن النّعمان.",
+      "english": "11547—Umayra bint Marthad ibn Jubayr ibn Malik, the Ansari woman, [the sister of Asma. Ibn Sa'd said: “She embraced Islam and pledged allegiance. Her mother was Salama bint Mas'ud ibn Ka'b; Suwayd ibn al-Nu'man married her.”",
+      "arabic_sha256": "6f952f70bfff3e9aff6027d3e0dd20fec747d0e377e7e8467baf416969982daa",
+      "english_sha256": "35409bfc4a759a890b30140b81a5d340a30b8dd82ed2d673cf7f7024080c6d0e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة بنت مرثد بن جبير بن مالك",
+      "english": "Umayra bint Marthad ibn Jubayr ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء",
+      "english": "Asma",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلامة بنت مسعود بن كعب",
+      "english": "Salama bint Mas'ud ibn Ka'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "سويد بن النعمان",
+      "english": "Suwayd ibn al-Nu'man",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

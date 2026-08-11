@@ -1,0 +1,133 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011897",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11897,
+  "title": {
+    "english": "Umm Anas bint Amr ibn Mardakha al-Ansariyya (5)",
+    "arabic_observed": "أم أنس بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011897-segment-0001",
+      "volume": 8,
+      "scan_page": 358,
+      "printed_page": 357,
+      "reader_page": 4270,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4270",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0358:1ed72c77eac0f3b1",
+      "arabic": "١١٨٩٧- أم أنس بنت عمرو\nبن مرضخة الأنصارية «٥» . من بني عوف بن الخزرج.\nذكرها ابن حبيب في المبايعات.\n(١) أخرجه ابن سعد في الطبقات الكبرى ٨: ٢٢٩ وأورده المتقي الهندي في كنز العمال حديث رقم ٤٣١٩٦ وعزاه لابن سعد عن أم بشر بن البراء بن معرور.\n(٢) أسد الغابة ت (٧٣٦٨) .\n(٣) ذكره الهيثمي في المجمع ١٠/ ٧٨ وعزاه للطبراني في الكبير والأوسط وقال: فيه إسحاق بن إبراهيم بن نسطاس وهو ضعيف.\n(٤) أحمد في المسند ٣/ ٤٣٨.\n(٥) أسد الغابة ت (٧٣٦٩) .",
+      "english": "11897—Umm Anas bint Amr ibn Mardakha al-Ansariyya (5)\n\nShe was from Banu Awf ibn al-Khazraj.\n\nIbn Habib mentioned her among the women who pledged allegiance.\n\n(1) Ibn Sa'd transmitted it in al-Tabaqat, 8:229. al-Muttaqi al-Hindi included it in Kanz al-Ummal, hadith no. 43196, and attributed it to Ibn Sa'd, from Umm Bishr bint al-Bara' ibn Ma'rur.\n\n(2) Usd al-Ghaba, entry 7368.\n\n(3) al-Haythami mentioned it in al-Majma', 10:78, and attributed it to al-Tabarani in al-Kabir and al-Awsat. He said: “Its chain contains Ishaq ibn Ibrahim ibn Nastas, and he is weak.”\n\n(4) Musnad Ahmad, 3:438.\n\n(5) Usd al-Ghaba, entry 7369.",
+      "arabic_sha256": "d07eff290a921c2f0c5524ce85c09020835662c92086f606c5fbed6a8baecf2a",
+      "english_sha256": "7aa395dfbb9161ff9913d13254661f10c9abe0a75cea7bf9f4df689b794f9396",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم بشر بن البراء بن معرور",
+      "english": "Umm Bishr bint al-Bara' ibn Ma'rur",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم أنس زوج أبي أنس",
+      "english": "Umm Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق بن إبراهيم بن نسطاس",
+      "english": "Ishaq ibn Ibrahim ibn Nastas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم أنس بنت عمرو بن مرضخة الأنصارية",
+      "english": "Umm Anas bint Amr ibn Mardakha al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عوف بن الخزرج",
+      "english": "Banu Awf ibn al-Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبقات الكبرى",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "المجمع",
+      "english": "al-Majma'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "الأوسط",
+      "english": "al-Awsat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد في المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "مرضخة",
+      "explanation": "The canonical text and Usd al-Ghaba confirm the consonantal spelling but do not establish its vocalization. Mardakha is retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0358:1ed72c77eac0f3b1"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

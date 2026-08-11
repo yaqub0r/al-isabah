@@ -1,0 +1,124 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011660",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11660,
+  "title": {
+    "english": "Qayla al-Khuza'iyya",
+    "arabic_observed": "قيلة الخزاعية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011660-segment-0001",
+      "volume": 8,
+      "scan_page": 292,
+      "printed_page": 291,
+      "reader_page": 4204,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4204",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0292:e8d004fd8765cb34",
+      "arabic": "١١٦٦٠- قيلة الخزاعية:\nأم سباع بن عبد العزى بن عمرو بن نضلة، من حلفاء بني زهرة.\nذكرها ابن عبد البرّ، وقال: فيها نظر.\n(١) أسد الغابة ت (٧٢٢٩)، الاستيعاب ت (٣٥٢٥)، أعلام النساء ٤/ ٢٢٢- تجريد أسماء الصحابة ٢/ ٢٩٩- تقريب التهذيب ٢/ ٦١١- الكاشف ٣/ ١٧٩- تهذيب الكمال ٣/ ١٦٩٦- تلقيح فهوم أهل الأثر ٣٨٤- بقي بن مخلد ١٠٠٧.",
+      "english": "11660—Qayla al-Khuza'iyya\n\nThe mother of Siba' ibn Abd al-Uzza ibn Amr ibn Nadla, from among the confederates of Banu Zuhra.\n\nIbn Abd al-Barr mentioned her and said: “Her case calls for scrutiny.”\n\n[1] Usd al-Ghaba, biographical entry 7229; al-Isti'ab, biographical entry 3525; A'lam al-Nisa, 4/222; al-Tajrid, 2/299; Taqrib al-Tahdhib, 2/611; al-Kashif, 3/179; Tahdhib al-Kamal, 3/1696; Talqih Fuhum Ahl al-Athar, p. 384; Baqi ibn Makhlad, no. 1007.",
+      "arabic_sha256": "273c3a883f2442de478d8739f1b306be469b7b627011f1e58ee55ef4c1f7a6c1",
+      "english_sha256": "c97f63e82513235919cf6d70e415ac5c53ed43eba6151f7434bb202f1e1769b9",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011660-segment-0002",
+      "volume": 8,
+      "scan_page": 293,
+      "printed_page": 292,
+      "reader_page": 4205,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4205",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0293:604699d88aa941ad",
+      "arabic": "القسم الثاني\nخال.\nالقسم الثالث",
+      "english": "Section Two\n\nVacant.\n\nSection Three",
+      "arabic_sha256": "2840f4f547a7c37277402ed2a1d9502f3b7f11745bfe8996ef499277c9dae02c",
+      "english_sha256": "236c6849a02c2ebea962b4da728ded8d51451379959ff9d20291ef6f7bec6de4",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "قيلة",
+      "english": "Qayla",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيلة الخزاعية",
+      "english": "Qayla al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "سباع بن عبد العزى بن عمرو بن نضلة",
+      "english": "Siba' ibn Abd al-Uzza ibn Amr ibn Nadla",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني زهرة",
+      "english": "Banu Zuhra",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن عبد البرّ",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

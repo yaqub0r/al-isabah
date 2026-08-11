@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011563",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11563,
+  "title": {
+    "english": "Ghufayra:",
+    "arabic_observed": "غفيرة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011563-segment-0001",
+      "volume": 8,
+      "scan_page": 256,
+      "printed_page": 255,
+      "reader_page": 4168,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4168",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0256:7c798b969c700c6b",
+      "arabic": "١١٥٦٣- غفيرة:\nبفاء مصغّرة، بنت رباح «١»، بفتح الرّاء والموحدة، أخت بلال المؤذّن وأخيه خالد.\nذكرها المستغفريّ، وقال: هم أخوان وأخت، قاله البخاريّ. ووقع في الطّحاويّ في أثناء إسناد عن عمير مولى غفيرة بنت رباح أخت بلال.",
+      "english": "11563—Ghufayra:\n\nWith a fa, in the diminutive, bint Rabah (1)—with the ra vowelled a and a single-dotted ba—the sister of Bilal the muezzin and of his brother Khalid.\n\nal-Mustaghfiri mentioned her and said: “They are two brothers and a sister; al-Bukhari stated this.” In al-Tahawi, in the course of an isnad, there occurs: “from Umayr, the client of Ghufayra bint Rabah, the sister of Bilal.”",
+      "arabic_sha256": "ce34061c55ea0107d4b40a78aad3983719110559e4a6da43a17565f6cbcd8e70",
+      "english_sha256": "0c4e0daff353d69d5cba0e9829312da931fad78cc0faa38163f705e9491ab6d7",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "غفيرة بنت رباح",
+      "english": "Ghufayra bint Rabah",
+      "kind": "person"
+    },
+    {
+      "arabic": "بلال",
+      "english": "Bilal",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد",
+      "english": "Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفريّ",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاريّ",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطّحاويّ",
+      "english": "al-Tahawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمير",
+      "english": "Umayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "غفيرة",
+      "english": "Ghufayra",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

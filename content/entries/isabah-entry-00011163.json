@@ -1,0 +1,120 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011163",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11163,
+  "title": {
+    "english": "Rabita bint Karama al-Madhhijiyya.",
+    "arabic_observed": "رابطة بنت كرامة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011163-segment-0001",
+      "volume": 8,
+      "scan_page": 131,
+      "printed_page": 130,
+      "reader_page": 4043,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4043",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0131:46c29236c3b64007",
+      "arabic": "١١١٦٣- رابطة بنت كرامة\nالمذحجية.\nأخرج الطّبرانيّ في «الكبير»، من طريق عليّ بن أبي علي، عن الشعبي، عن رابطة بنت كرامة، قالت: كنا عند النبي ﷺ، فقال لقوم سفر: «لا يصبحنّكم من هذا النّعم الضّوالّ، ولا يضمن أحد منكم ضالّة، ولا تردّنّ سائلا إن كنتم تريدون الرّبح والسّلامة ...» الحديث.\n(١) أسد الغابة ت ٦٩١٢.\n(٢) الثقات ٣/ ١٣٣، تجريد أسماء الصحابة ٢/ ٢٦٦، ٢٧٠.\n(٣) في أ: حبان بن عسرة.\n(٤) أسد الغابة ت ٦٩٠٩.\n(٥) الثقات ٣/ ١٣٣، أعلام ١/ ٤٠٩، تجريد أسماء الصحابة ٢/ ٢٦٧، ٢٧٠.\n(٦) الثقات ٣/ ١٣٣، أعلام النساء ١/ ٤١٢، تجريد أسماء الصحابة ٢/ ٢٦٧، ٢٧٠.",
+      "english": "11163 — Rabita bint Karama al-Madhhijiyya.\n\nAl-Tabarani transmitted in al-Kabir, through Ali ibn Abi Ali, from al-Sha'bi, from Rabita bint Karama, who said: We were with the Prophet—may Allah bless him and grant him peace—when he said to a party of travelers: “Let none of these stray livestock be with you when morning comes; let none of you assume responsibility for a stray animal; and do not turn away anyone who asks, if you desire profit and safety …”—to the end of the hadith.\n\n(1) Usd al-Ghaba, entry 6912.\n\n(2) al-Thiqat 3/133; al-Tajrid 2/266, 270.\n\n(3) In A: “Hibban ibn 'Usra.”\n\n(4) Usd al-Ghaba, entry 6909.\n\n(5) al-Thiqat 3/133; A'lam al-Nisa 1/409; al-Tajrid 2/267, 270.\n\n(6) al-Thiqat 3/133; A'lam al-Nisa 1/412; al-Tajrid 2/267, 270.",
+      "arabic_sha256": "4b7d8fcd27496bdf5eec06e6c825f435b0d0ea483c1bc8d103e3c41cb570168b",
+      "english_sha256": "17ef6e3dcde065775a0e035cc16285cb13e1475c4c84cf1a790dce8b93b324c0",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "حبان بن عسرة",
+      "english": "Hibban ibn 'Usra",
+      "kind": "person"
+    },
+    {
+      "arabic": "رابطة بنت كرامة المذحجية",
+      "english": "Rabita bint Karama al-Madhhijiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "المذحجية",
+      "english": "Madhhij",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "علي بن أبي علي",
+      "english": "Ali ibn Abi Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشعبي",
+      "english": "al-Sha'bi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "variant_scope",
+      "arabic_span": "في أ: حبان بن عسرة",
+      "explanation": "The note securely records the reading “Hibban ibn 'Usra,” but its placement does not conclusively show whether it replaces only “Hassan” or a longer portion of the genealogy. The final footnote therefore translates the note literally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0131:46c29236c3b64007"
+    },
+    {
+      "category": "lexical_ambiguity",
+      "arabic_span": "ولا يضمن أحد منكم ضالة",
+      "explanation": "The attached witnesses do not contain this entry, so the precise contextual force of يضمن remains uncertain. “Assume responsibility for a stray animal” preserves its broad sense without choosing a narrower implication such as taking possession or incurring legal liability.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0131:46c29236c3b64007"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011691",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11691,
+  "title": {
+    "english": "Kanud bint Quraza",
+    "arabic_observed": "كنود بنت قرظة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011691-segment-0001",
+      "volume": 8,
+      "scan_page": 298,
+      "printed_page": 297,
+      "reader_page": 4210,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4210",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0298:f8ea76f8e004b883",
+      "arabic": "١١٦٩١- كنود بنت قرظة:\nفي فاختة بنت قرظة.",
+      "english": "11691 — Kanud bint Quraza\n\nHer account is under Fakhita bint Quraza.",
+      "arabic_sha256": "0518adc44b38b6e273839b9ceb94984be2fc52ffd648a58010dbebb677f22bf9",
+      "english_sha256": "dedfbd6f8f6a9519f08abd1bb070fab2916571aa90a9f1c8feea96fdac246d17",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "كنود بنت قرظة",
+      "english": "Kanud bint Quraza",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاختة بنت قرظة",
+      "english": "Fakhita bint Quraza",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنود",
+      "english": "Kanud",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

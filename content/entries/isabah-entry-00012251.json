@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012251",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12251,
+  "title": {
+    "english": "Umm Muhammad:",
+    "arabic_observed": "أم محمد:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012251-segment-0001",
+      "volume": 8,
+      "scan_page": 473,
+      "printed_page": 472,
+      "reader_page": 4385,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4385",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0473:b9f6c84fc251ec4d",
+      "arabic": "١٢٢٥١- أم محمد:\nهي خولة بنت قيس «٥»، تقدمت في الخاء المعجمة.",
+      "english": "12251—Umm Muhammad:\n\nShe is Khawla bint Qays,⁵ mentioned previously under the dotted letter kha.",
+      "arabic_sha256": "4f752c8f9f636ce1ba69e4890fa51880258ef4d63bc7321c91aa49c95b730c3f",
+      "english_sha256": "bc24416fd8e44e89e5a1076bd5a9d33527c00867a7d95a5478801962465d2546",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم محمد، هي خولة بنت قيس",
+      "english": "Khawla bint Qays",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

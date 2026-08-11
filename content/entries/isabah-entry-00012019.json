@@ -1,0 +1,179 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012019",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12019,
+  "title": {
+    "english": "Umm Rafi:",
+    "arabic_observed": "أم رافع:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012019-segment-0001",
+      "volume": 8,
+      "scan_page": 389,
+      "printed_page": 388,
+      "reader_page": 4301,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4301",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0389:8ce4f866914419a9",
+      "arabic": "١٢٠١٩- أم رافع:\nزوج أبي رافع مولى رسول اللَّه ﵌ «٧»،\n(١) أسد الغابة ت (٧٤٤١)، تجريد أسماء الصحابة ٢/ ٣١٩، تقريب التهذيب ٢/ ٦٢١، تهذيب التهذيب ١/ ٤١٧، الكاشف ٣/ ٤٨٨، تهذيب الكمال ٣/ ١٧٠٣، خلاصة تهذيب الكمال ٣/ ٣٩٩.\n(٢) سقط من أ.\n(٣) أخرجه البخاري في صحيحه ٧/ ٦٨، ٨/ ١٠ وأبو داود في السنن ٢/ ٧٦٠ كتاب الأدب باب في ضم اليتيم حديث رقم ٥١٥٠، والبيهقي في السنن الكبرى ٦/ ٢٨٣، والبغوي في شرح السنة ١/ ١٢٣، والطبراني في الكبير ٦/ ٢١٣، ٨/ ٣٥١ وابن حجر في المطالب العالية حديث رقم ٢٥٣٠، ٢٥٣١، ٣٥٢٩ وكنز العمال حديث رقم ٥٩٩٣، ٥٩٩٦، ٦٠٢٤، ٦٠٢٥.\n(٤) في أ: كرز.\n(٥) أسد الغابة ت (٧٤٤٤) .\n(٦) أسد الغابة ت (٧٤٤٢) .\n(٧) أسد الغابة ت (٧٤٤٣)، الجرح والتعديل ٩/ ٤٦٣ تجريد أسماء الصحابة ٢/ ٣١٩.\nا",
+      "english": "12019—Umm Rafi:\n\nWife of Abu Rafi, the client of the Messenger of Allah, may Allah bless him and grant him peace,⁷\n\n¹ Usd al-Ghaba, entry 7441; al-Tajrid, 2/319; Taqrib al-Tahdhib, 2/621; Tahdhib al-Tahdhib, 1/417; al-Kashif, 3/488; Tahdhib al-Kamal, 3/1703; Khulasat Tahdhib al-Kamal, 3/399.\n\n² Omitted in A.\n\n³ al-Bukhari included it in his Sahih, 7/68 and 8/10; Abu Dawud in al-Sunan, 2/760, Book of Conduct, chapter “On Taking an Orphan into One’s Care,” hadith no. 5150; al-Bayhaqi in al-Sunan al-Kubra, 6/283; al-Baghawi in Sharh al-Sunna, 1/123; al-Tabarani in al-Kabir, 6/213 and 8/351; Ibn Hajar in al-Matalib al-Aliya, hadith nos. 2530, 2531, and 3529; and Kanz al-Ummal, hadith nos. 5993, 5996, 6024, and 6025.\n\n⁴ In A: Kurz.\n\n⁵ Usd al-Ghaba, entry 7444.\n\n⁶ Usd al-Ghaba, entry 7442.\n\n⁷ Usd al-Ghaba, entry 7443; al-Jarh wa-l-Ta'dil, 9/463; al-Tajrid, 2/319.\n\n[An isolated letter alif is printed at the foot of the Arabic page.]",
+      "arabic_sha256": "d2ad844658d2bfb59f427dcd88f38c498e01509e28da805b7f90d1cc2f547200",
+      "english_sha256": "fa15fa363d7c7fd1deed0cc00f35456e04f9741fa5f57a7b15b8cdef8d7efa5f",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012019-segment-0002",
+      "volume": 8,
+      "scan_page": 390,
+      "printed_page": 389,
+      "reader_page": 4302,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4302",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0390:0dc771c586ab0770",
+      "arabic": "اسمها سلمى، مشهورة باسمها وكنيتها. تقدّمت في الأسماء.",
+      "english": "Her name was Salma, and she was well known by both her name and her kunya. She has already been discussed in the section on names.",
+      "arabic_sha256": "ac491161e13cb13f3a14ff08ebcc7fb8d80379d9e1071ee943392f8d02b53ad4",
+      "english_sha256": "a88076821ce15b50304c8d17447554811bb6fe61e8a071b9698ef1a9b45830fb",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم رافع",
+      "english": "Umm Rafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو رافع",
+      "english": "Abu Rafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "the Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "البخاريّ",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "al-Sunan",
+      "kind": "work"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن الكبرى",
+      "english": "al-Sunan al-Kubra",
+      "kind": "work"
+    },
+    {
+      "arabic": "البغوي",
+      "english": "al-Baghawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "شرح السنة",
+      "english": "Sharh al-Sunna",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن حجر",
+      "english": "Ibn Hajar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المطالب العالية",
+      "english": "al-Matalib al-Aliya",
+      "kind": "work"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الجرح والتعديل",
+      "english": "al-Jarh wa-l-Ta'dil",
+      "kind": "work"
+    },
+    {
+      "arabic": "سلمى",
+      "english": "Salma",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

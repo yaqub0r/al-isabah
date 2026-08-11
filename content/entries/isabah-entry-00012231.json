@@ -1,0 +1,373 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012231",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12231,
+  "title": {
+    "english": "Umm Kulthum bint Uqba",
+    "arabic_observed": "أم كلثوم بنت عقبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012231-segment-0001",
+      "volume": 8,
+      "scan_page": 463,
+      "printed_page": 462,
+      "reader_page": 4375,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4375",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0463:9d20999ab2780a15",
+      "arabic": "١٢٢٣١- أم كلثوم بنت عقبة\nبن أبي معيط الأمويّة «٣» .\n(١) أسد الغابة ت (٧٥٨٣)، الثقات ٣/ ٤٥٨- تجريد أسماء الصحابة ٢/ ٣٣٣.\n(٢) الثقات ٣/ ٤٥٨- تجريد أسماء الصحابة ٢/ ٣٣٣.\n(٣) أسد الغابة ت (٧٥٨٥)، الاستيعاب ت (٣٦٦٣)، الثقات ٣/ ٤٥٨- مسند أحمد ٦/ ٢٣٠- طبقات خليفة ٣٣٢- تاريخ خليفة ٨٦- الطبقات الكبرى ٨/ ٢٣٠- المحبر ٤٠٧- المغازي ٦٢٩- سيرة ابن هشام ٣/ ٢٧١- المستدرك ٤/ ٦٦- تاريخ الإسلام ١/ ١٣٦، أعلام النساء ٤/ ٢٥٥- تجريد أسماء الصحابة ٢/ ٣٣٣- تقريب التهذيب ٢/ ٦٢٤- الإكمال ١/ ٢٧١- تهذيب التهذيب ١٢/ ٤٧٧- الكاشف ٣/ ٤٩١- تهذيب الكمال ٣/ ١٧٠٥- بقي بن مخلد ١٨٧- التاريخ الصغير ١/ ٩٠، ٢٠٥، أزمنة التاريخ الإسلامي ٩٩٩- تلقيح فهوم أهل الأثر ٣١٨- تفسير الطبري ٥/ ٥٢٠٤- در السحابة ٥٨١- الإكمال. بالمشكاة رقم ٧٨٠. جمهرة أنساب العرب ١٣١- الكامل في التاريخ ٢/ ٢٠٦ و٣/ ٧٢.",
+      "english": "12231—Umm Kulthum bint Uqba\nibn Abi Mu'ayt, the Umayyad (3).\n\n(1) Usd al-Ghaba, entry 7583; al-Thiqat, 3/458; al-Tajrid, 2/333.\n\n(2) al-Thiqat, 3/458; al-Tajrid, 2/333.\n\n(3) Usd al-Ghaba, entry 7585; al-Isti'ab, entry 3663; al-Thiqat, 3/458; Musnad Ahmad, 6/230; Tabaqat Khalifa, 332; Tarikh Khalifa, 86; al-Tabaqat, 8/230; al-Muhabbar, 407; al-Maghazi, 629; Sirat Ibn Hisham, 3/271; al-Mustadrak, 4/66; Tarikh al-Islam, 1/136; A'lam al-Nisa, 4/255; al-Tajrid, 2/333; Taqrib al-Tahdhib, 2/624; al-Ikmal, 1/271; Tahdhib al-Tahdhib, 12/477; al-Kashif, 3/491; Tahdhib al-Kamal, 3/1705; Baqi ibn Makhlad, 187; al-Tarikh al-Saghir, 1/90, 205; Azminat al-Tarikh al-Islami, 999; Talqih Fuhum Ahl al-Athar, 318; Tafsir al-Tabari, 5/5204; Durr al-Sahaba, 581; al-Ikmal. In al-Mishkat, no. 780. Jamharat Ansab al-Arab, 131; al-Kamil fi al-Tarikh, 2/206 and 3/72.",
+      "arabic_sha256": "40b564f55d56cdd55aad3d49f168b118d5c02bee9440ccd84b3e69f46ac17788",
+      "english_sha256": "9b15d0719bab6c9b2c81d7209e4226932969349332289502adf556aa0eeaee72",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012231-segment-0002",
+      "volume": 8,
+      "scan_page": 464,
+      "printed_page": 463,
+      "reader_page": 4376,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4376",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0464:5f60e05f41c0ff95",
+      "arabic": "تقدّم نسبها في ترجمة أخيها الوليد بن عقبة، وأمهما أروى بنت كريز بن ربيعة «١» بن حبيب بن عبد شمس، وهي والدة عثمان. وكانت أم كلثوم ممن أسلم قديما وبايعت وخرجت إلى المدينة مهاجرة تمشي، فتبعها أخواها: عمارة والوليد، ليردّاها فلم ترجع.\nقال ابن إسحاق في «المغازي» حدّثني الزّهريّ، وعبد اللَّه بن أبي بكر بن حزم، قال:\nهاجرت أم كلثوم بنت عقبة عام الحديبيّة، فجاء أخواها عمارة وفلان ابنا عقبة يطلبانها، فأبى النبيّ ﵌ أن يردّها إليهما، وكانت قبل أن تهاجر بلا زوج، فلما قدمت المدينة تزوّجها زيد بن حارثة، ثم تزوّجها الزّبير بن العوّام بعد قتل زيد، فولدت له زينب، ثم فارقها فتزوّجها عبد الرّحمن بن عوف، فولدت له إبراهيم وحميدا، ثم مات عنها فتزوّجها عمرو بن العاص فمكثت عنده شهرا وماتت.\nروى عنها ولداها: حميد بن عبد الرّحمن، وإبراهيم، وحديثها في الصّحيحين والسّنن الثلاثة، قالت: لم أسمعه- يعني النّبيّ ﵌ يرخّص في شيء مما يقول النّاس إنه كذب إلا في ثلاث ... الحديث.\nومنهم من اختصره. وأخرج لها النّسائيّ في الكبرى حديثا آخر في فضل «قل هو اللَّه أحد» .\nوأخرج ابن مندة من طريق مجمّع بن جارية أنّ عمر قال لأم كلثوم بنت عقبة امرأة عبد الرّحمن بن عوف: أقال لك رسول اللَّه ﵌ «انكحي سيّد المسلمين عبد الرّحمن بن عوف: أقال لك رسول اللَّه ﵌ «انكحي سيّد المسلمين عبد الرّحمن بن عوف؟» فقالت: نعم. قال ابن سعد: هي أول من هاجر إلى المدينة بعد هجرة النبيّ ﵌، ولا نعلم قرشية خرجت من بين أبويها مسلمة مهاجرة إلى اللَّه ورسوله إلا أم كلثوم، خرجت من مكّة وحدها، وصاحبت رجلا من خزاعة حتى قدمت في الهدنة، فخرج في أثرها أخواها فقدما ثاني يوم قدومها، فقالا: يا محمد، شرطنا أوف به. فقالت أم كلثوم: يا رسول اللَّه أنا امرأة وحال النّساء إلى الضّعف، فأخشى أن يفتنوني في ديني ولا صبر لي، فنقض اللَّه العهد في النّساء، وأنزل آية الامتحان، وحكم في ذلك بحكم رضوا به كلهم، فامتحنها رسول اللَّه ﵌ والنّساء بعدها: «ما أخرجكنّ إلّا حبّ اللَّه ورسوله والإسلام، لا حبّ زوج ولا مال»، فإذا قلن ذلك لم يرددن.\n(١) في أ: كريز بن زمعة.",
+      "english": "Her lineage was given above in the entry on her brother al-Walid ibn Uqba. Their mother was Arwa bint Kurayz ibn Rabi'a ibn Habib ibn Abd Shams, who was the mother of Uthman. Umm Kulthum was among those who embraced Islam early and gave the pledge of allegiance. She set out for Medina as an emigrant, traveling on foot. Her two brothers, Umara and al-Walid, followed her in order to take her back, but she did not return.\n\nIbn Ishaq said in al-Maghazi: al-Zuhri and Abd Allah ibn Abi Bakr ibn Hazm related to me, saying: Umm Kulthum bint Uqba emigrated in the year of al-Hudaybiyya. Her two brothers, Umara and so-and-so, the sons of Uqba, came seeking her, but the Prophet—may Allah bless him and grant him peace—refused to return her to them. Before emigrating she had no husband. When she arrived in Medina, Zayd ibn Haritha married her; then, after Zayd was killed, al-Zubayr ibn al-Awwam married her, and she bore him Zaynab. He then separated from her, and Abd al-Rahman ibn Awf married her; she bore him Ibrahim and Humayd. He then died while she was his wife, whereupon Amr ibn al-As married her. She remained with him for a month and then died.\n\nHer two sons, Humayd ibn Abd al-Rahman and Ibrahim, transmitted from her. Her hadith is found in the two Sahih collections and the three Sunan collections. She said: “I did not hear him”—meaning the Prophet, may Allah bless him and grant him peace—“granting a concession regarding anything people say that is a lie except in three cases…” to the end of the hadith.\n\nSome transmitters abridged it. al-Nasa'i also included another hadith of hers in al-Kubra concerning the merit of “Say: He is Allah, One.”\n\nIbn Manda transmitted, through Mujammi' ibn Jariya, that Umar said to Umm Kulthum bint Uqba, the wife of Abd al-Rahman ibn Awf: “Did the Messenger of Allah—may Allah bless him and grant him peace—say to you, ‘Marry the chief of the Muslims, Abd al-Rahman ibn Awf’?” She replied, “Yes.” Ibn Sa'd said: She was the first woman to emigrate to Medina after the Prophet’s emigration—may Allah bless him and grant him peace. We know of no Qurayshi woman other than Umm Kulthum who left her parents as a Muslim woman emigrating to Allah and His Messenger. She left Mecca alone and traveled in the company of a man from Khuza'a until she arrived during the truce. Her two brothers then set out after her and arrived on the day following her arrival. They said, “O Muhammad, fulfill our stipulation.” Umm Kulthum said, “O Messenger of Allah, I am a woman, and women are prone to weakness. I fear that they will tempt me away from my religion, and I have no endurance.” Allah therefore annulled the covenant with respect to women and revealed the verse of examination. He ruled in the matter with a judgment with which they were all satisfied. The Messenger of Allah—may Allah bless him and grant him peace—examined her, and the women after her, by asking: “Was it nothing but love of Allah, His Messenger, and Islam that brought you women out—not love of a husband or wealth?” When they answered thus, they were not returned.\n\n(1) In manuscript A: “Kurayz ibn Zam'a.”",
+      "arabic_sha256": "5f60e05f41c0ff9536f569abe5c04db135625735245ef08bf2fd7d9b16924041",
+      "english_sha256": "efb92a08318d035dbfb26de68f70d62279c3c5aa1c5907fc6e27791ee0d6255c",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012231-segment-0003",
+      "volume": 8,
+      "scan_page": 465,
+      "printed_page": 464,
+      "reader_page": 4377,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4377",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0465:001b6f3c46297f7f",
+      "arabic": "قال: ولم يكن لها بمكّة زوج، فتزوجها زيد، ثم الزّبير، ثم عبد الرّحمن بن عوف، ثم عمرو بن العاص، فماتت عنده.",
+      "english": "He said: She had no husband in Mecca. Zayd then married her, followed by al-Zubayr, then Abd al-Rahman ibn Awf, and then Amr ibn al-As; she died while married to him.",
+      "arabic_sha256": "ccbfa91e29fad0bab3554620b029810c1f07c8c7f9df3b4958fc36ebc07ec2d9",
+      "english_sha256": "3b36e668ab90c25419e4545fd03428f11165547ece409a0779b4235f54a62cce",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأمويّة",
+      "english": "Banu Umayya",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسند أحمد",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "طبقات خليفة",
+      "english": "Tabaqat Khalifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ خليفة",
+      "english": "Tarikh Khalifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبقات الكبرى",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "المحبر",
+      "english": "al-Muhabbar",
+      "kind": "work"
+    },
+    {
+      "arabic": "المغازي",
+      "english": "al-Maghazi",
+      "kind": "work"
+    },
+    {
+      "arabic": "سيرة ابن هشام",
+      "english": "Sirat Ibn Hisham",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ الإسلام",
+      "english": "Tarikh al-Islam",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الإكمال",
+      "english": "al-Ikmal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "التاريخ الصغير",
+      "english": "al-Tarikh al-Saghir",
+      "kind": "work"
+    },
+    {
+      "arabic": "أزمنة التاريخ الإسلامي",
+      "english": "Azminat al-Tarikh al-Islami",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "تفسير الطبري",
+      "english": "Tafsir al-Tabari",
+      "kind": "work"
+    },
+    {
+      "arabic": "در السحابة",
+      "english": "Durr al-Sahaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "المشكاة",
+      "english": "al-Mishkat",
+      "kind": "work"
+    },
+    {
+      "arabic": "جمهرة أنساب العرب",
+      "english": "Jamharat Ansab al-Arab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكامل في التاريخ",
+      "english": "al-Kamil fi al-Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "الوليد بن عقبة",
+      "english": "al-Walid ibn Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أروى بنت كريز بن ربيعة بن حبيب بن عبد شمس",
+      "english": "Arwa bint Kurayz ibn Rabi'a ibn Habib ibn Abd Shams",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم بنت عقبة",
+      "english": "Umm Kulthum bint Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "عمارة",
+      "english": "Umara ibn Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن أبي بكر بن حزم",
+      "english": "Abd Allah ibn Abi Bakr ibn Hazm",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحديبية",
+      "english": "al-Hudaybiyya",
+      "kind": "place"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن حارثة",
+      "english": "Zayd ibn Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن العوام",
+      "english": "al-Zubayr ibn al-Awwam",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab bint al-Zubayr ibn al-Awwam",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عوف",
+      "english": "Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم",
+      "english": "Ibrahim ibn Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن العاص",
+      "english": "Amr ibn al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكبرى",
+      "english": "al-Kubra",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "مجمّع بن جارية",
+      "english": "Mujammi' ibn Jariya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "قرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "مكّة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "خزاعة",
+      "english": "Khuza'a",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الإسلام",
+      "english": "Islam",
+      "kind": "other"
+    },
+    {
+      "arabic": "كريز بن زمعة",
+      "english": "Kurayz ibn Zam'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد",
+      "english": "Zayd ibn Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّبير",
+      "english": "al-Zubayr ibn al-Awwam",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرّحمن بن عوف",
+      "english": "Abd al-Rahman ibn Awf",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

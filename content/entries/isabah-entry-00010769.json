@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010769",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10769,
+  "title": {
+    "english": "Amina bint Abi al-Salt al-Ghifariyya,³",
+    "arabic_observed": "آمنة بنت أبي الصلت الغفارية «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010769-segment-0001",
+      "volume": 8,
+      "scan_page": 5,
+      "printed_page": 4,
+      "reader_page": 3917,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3917",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0005:f37adfaaa723fce4",
+      "arabic": "١٠٧٦٩- آمنة بنت أبي الصلت الغفارية «٣»\n، أو بنت الصلت. تأتي في القسم الأخير.",
+      "english": "10769—Amina bint Abi al-Salt al-Ghifariyya,³\nor bint al-Salt. She will appear in the last section.",
+      "arabic_sha256": "11be2d9397ff45630a78488e586845e5bd797bdacdfc77b479730ed12a36fd9c",
+      "english_sha256": "005c2a97463df07d35901436c5dc971cd0c5a30fc984309ccb04ad9fb3cbd772",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "آمنة بنت أبي الصلت الغفارية",
+      "english": "Amina bint Abi al-Salt al-Ghifariyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

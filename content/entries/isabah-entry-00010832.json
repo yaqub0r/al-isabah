@@ -1,0 +1,73 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010832",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10832,
+  "title": {
+    "english": "Umama bint Qurt ibn Khansa ibn Sinan ibn Ubayd ibn Adi ibn Ghanm ibn Ka'b ibn Salima, the Ansari woman of Banu Salima",
+    "arabic_observed": "أمامة بنت قرط"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010832-segment-0001",
+      "volume": 8,
+      "scan_page": 27,
+      "printed_page": 26,
+      "reader_page": 3939,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3939",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0027:2304d49de3177790",
+      "arabic": "١٠٨٣٢- أمامة بنت قرط\nبن خنساء بن سنان بن عبيد بن عدي بن غنم بن كعب بن سلمة الأنصارية السلمية.\nقال ابن سعد: هي زوج يزيد بن قيظي، وكان من رهطها، وأسلمت وبايعت.",
+      "english": "10832—Umama bint Qurt ibn Khansa ibn Sinan ibn Ubayd ibn Adi ibn Ghanm ibn Ka'b ibn Salima, the Ansari woman of Banu Salima\n\nibn Sa'd said: She was the wife of Yazid ibn Qayzi, who belonged to her clan. She accepted Islam and gave the pledge of allegiance.",
+      "arabic_sha256": "e60e8bee14b1c798dd2ae60d27e0bc00df24c93fdd23c4222a22c2ba2a232ca7",
+      "english_sha256": "61532df06feccfccdab2f1dbbaa69abf0ca27d8676300e13c66ac1ca8128f177",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أمامة بنت قرط بن خنساء بن سنان بن عبيد بن عدي بن غنم بن كعب بن سلمة",
+      "english": "Umama bint Qurt ibn Khansa ibn Sinan ibn Ubayd ibn Adi ibn Ghanm ibn Ka'b ibn Salima",
+      "kind": "person"
+    },
+    {
+      "arabic": "السلمية",
+      "english": "Banu Salima",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "يزيد بن قيظي",
+      "english": "Yazid ibn Qayzi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "قيظي",
+      "explanation": "“Qayzi” is a plausible consonant-compatible transliteration, but none of the supplied materials contains an exact vocalized Arabic witness for this name. Its vowels therefore remain uncertain.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0027:2304d49de3177790"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

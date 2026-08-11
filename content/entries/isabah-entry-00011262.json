@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011262",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11262,
+  "title": {
+    "english": "Zaynab al-Ta'iyya",
+    "arabic_observed": "زينب الطائية"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011262-segment-0001",
+      "volume": 8,
+      "scan_page": 166,
+      "printed_page": 165,
+      "reader_page": 4078,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4078",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0166:1e5302aa4bea9fe7",
+      "arabic": "١١٢٦٢- زينب الطائية\nذكرها ابن فتحون في «ذيل الاستيعاب» مختصرا.",
+      "english": "11262 — Zaynab al-Ta'iyya\n\nIbn Fathun mentioned her briefly in al-Dhayl to al-Isti'ab.",
+      "arabic_sha256": "37e79e0f17a328fbadec5f6497819525bc17af6ea1146bd0116bd9820a4160fa",
+      "english_sha256": "e7ae50f3c8fd6c63f067cd39dd336aab878ab7e510bea958084a2193d4f142d6",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زينب الطائية",
+      "english": "Zaynab al-Ta'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن فتحون",
+      "english": "Ibn Fathun",
+      "kind": "person"
+    },
+    {
+      "arabic": "ذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

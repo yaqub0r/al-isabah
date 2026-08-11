@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011269",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11269,
+  "title": {
+    "english": "Zur'a bint Mihrash",
+    "arabic_observed": "زرعة بنت محرش"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011269-segment-0001",
+      "volume": 8,
+      "scan_page": 168,
+      "printed_page": 167,
+      "reader_page": 4080,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4080",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0168:a6071ac49f0eb142",
+      "arabic": "١١٢٦٩- زرعة بنت محرش\nبكسر الميم وسكون المهملة وفتح الراء بعدها معجمة، وأبوها أحد ملوك حمير الأربعة الذين كانوا أسلموا ثم ارتدّوا فقتلوا على الكفر لما قاتل الصحابة أهل الردة. فتزوج عبد اللَّه بن عباس بعد ذلك زرعة هذه، فولدت له عليا والد الخلفاء وإخوته: العباس، والفضل، ومحمدا، وعبد الرحمن، ولبابة.",
+      "english": "11269—Zur'a bint Mihrash\n\nThe mim has a kasra, the unpointed consonant is quiescent, and the ra has a fatha and is followed by a pointed consonant. Her father was one of the four kings of Himyar who had embraced Islam, then apostatized and were killed as unbelievers when the Companions fought the apostates. Abd Allah ibn Abbas subsequently married this Zur'a, and she bore him Ali, the father of the caliphs, and his siblings: al-Abbas, al-Fadl, Muhammad, Abd al-Rahman, and Lubaba.",
+      "arabic_sha256": "f6beed07a5e0beb56f46bfab70a7727474eea23e38bd5a8bf5ca27de3d21fd9b",
+      "english_sha256": "f345fc751ceecf9f936f007f35ea452ad6c6b9c7aa6599c34d9d5f4d45074222",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زرعة بنت محرش",
+      "english": "Zur'a bint Mihrash",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمير",
+      "english": "Himyar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عبد اللَّه بن عباس",
+      "english": "Abd Allah ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليا",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "العباس",
+      "english": "al-Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفضل",
+      "english": "al-Fadl",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمدا",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن",
+      "english": "Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "لبابة",
+      "english": "Lubaba",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

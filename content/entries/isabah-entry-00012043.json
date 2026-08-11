@@ -1,0 +1,224 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012043",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12043,
+  "title": {
+    "english": "Umm al-Sa'ib al-Ansariyya.",
+    "arabic_observed": "أم السّائب الأنصاريّة «٥» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012043-segment-0001",
+      "volume": 8,
+      "scan_page": 399,
+      "printed_page": 398,
+      "reader_page": 4311,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4311",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0399:97ae5762f77afadd",
+      "arabic": "١٢٠٤٣- أم السّائب الأنصاريّة «٥» .\n(١) أسد الغابة ت (٧٤٦٠) .\n(٢) أسد الغابة ت (٧٤٥٩)، تجريد أسماء الصحابة ٢/ ٣٢١.\n(٣) بياض في أ، وفي ج بياض وبعده وهي في قبة فقال ما أحسنها.\n(٤) أخرجه أحمد في المسند ٦/ ٤٣٧ وأورده الهيثمي في الزوائد ١/ ٢٢٣ عن أم مسلم الأشجعية وقال رواه أحمد والطبراني وقال في قبة من أدم وفيه رجل لم يسم.\n(٥) أسد الغابة ت (٧٤٦١)، الاستيعاب ت (٣٦١١) .",
+      "english": "12043—Umm al-Sa'ib al-Ansariyya.\n\n(1) Usd al-Ghaba, entry 7460.\n\n(2) Usd al-Ghaba, entry 7459; al-Tajrid, 2/321.\n\n(3) There is a blank in manuscript A; in manuscript J there is also a blank, followed by: “while she was in a tent, and he said, ‘How fine it is.’”\n\n(4) Ahmad transmitted it in Musnad Ahmad, 6/437, and al-Haythami cited it in al-Zawa'id, 1/223, from Umm Muslim al-Ashja'iyya, saying: “Ahmad and al-Tabarani transmitted it.” The wording there is, “in a tent of leather,” and its chain contains an unnamed man.\n\n(5) Usd al-Ghaba, entry 7461; al-Isti'ab, entry 3611.",
+      "arabic_sha256": "573b3617da5d03c08960dac2961d19b62bb114f6987730c676598b7d590fd730",
+      "english_sha256": "6df035c142ada534b5868c5365929a866a8c865b780eb3d8eb3a0375bccda222",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012043-segment-0002",
+      "volume": 8,
+      "scan_page": 400,
+      "printed_page": 399,
+      "reader_page": 4312,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4312",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0400:e6789e9a089d2669",
+      "arabic": "قال أبو عمر: روى عنها أبو قلابة عن النّبيّ ﵌ في الحمى، وقال بعضهم فيها: أم المسيّب، كذا قال. والّذي\nفي صحيح مسلم وعند ابن سعد وأبي يعلى، وغيرهما، من طريق حجاج الصّواف، عن أبي الزبير، عن جابر- أن رسول اللَّه ﵌ دخل على أم السّائب أم المسيّب وهي تزفزف، قال: «ما لك يا أمّ السّائب- أو أم المسيب- تزفزفين «١»؟ قالت: من الحمّى، لا بارك اللَّه فيها.\nفقال: «لا تسبى الحمّى، فإنّها تذهب خطايا ابن آدم كما يذهب الكير خبث الحديد» «٢»،\nلفظ أبي يعلى.\nنعم، أخرج أبو نعيم من طريق الحسن بن أبي جعفر، وأبي الزّبير عن جابر، قال: أتى رسول اللَّه ﵌ على امرأة من الأنصار يقال لها أم المسيّب، فذكر نحوه، وقال: رواه داود بن الزّبرقان، عن أيّوب، عن أبي الزّبير، فقال: أم السّائب.\nقلت: وصله ابن مندة من طريق داود، فقال: أم السّائب جزما، وأسنده من طريق الثقفيّ عن أيّوب، عن أبي الزّبير، عن جابر، قال: ثبت أن النبيّ ﵌ مر على أم السّائب، فذكر الحديث نحوه. ولم أر في شيء من طرقه أنها أنصارية، بل ذكرها ابن كعب في قبائل العرب بين المهاجرين والأنصار.",
+      "english": "Abu Umar said: Abu Qilaba narrated from her, from the Prophet (may Allah bless him and grant him peace), concerning fever. Some of them called her Umm al-Musayyib. That is what he said. What is found in Sahih Muslim and in the works of Ibn Sa'd, Abu Ya'la, and others, through Hajjaj al-Sawwaf, from Abu al-Zubayr, from Jabir, is that the Messenger of Allah (may Allah bless him and grant him peace) entered upon Umm al-Sa'ib, Umm al-Musayyib, while she was shivering. He said, “What is the matter with you, Umm al-Sa'ib—or Umm al-Musayyib—that you are shivering?”[1] She said, “It is because of fever; may Allah not bless it.” He said, “Do not revile fever, for it removes the sins of the son of Adam just as the bellows remove the dross of iron.”[2] This is the wording of Abu Ya'la.\n\nIndeed, Abu Nu'aym transmitted, through al-Hasan ibn Abi Ja'far and Abu al-Zubayr, from Jabir, who said: The Messenger of Allah (may Allah bless him and grant him peace) came upon a woman of the Ansar called Umm al-Musayyib. He then related a similar account. He said: Dawud ibn al-Zibriqan narrated it from Ayyub, from Abu al-Zubayr, and gave her name as Umm al-Sa'ib.\n\nI say: Ibn Mandah supplied a connected chain for it through Dawud, decisively naming her Umm al-Sa'ib. He also transmitted it with an isnad through al-Thaqafi, from Ayyub, from Abu al-Zubayr, from Jabir, who said: “It is established that the Prophet (may Allah bless him and grant him peace) passed by Umm al-Sa'ib,” and he related the hadith similarly. I have not seen in any of its transmission routes any statement that she was of the Ansar. Rather, Ibn Ka'b mentioned her in Qaba'il al-Arab among the Emigrants and the Ansar.",
+      "arabic_sha256": "37fdafb5bc3346744447c06c9fc84e8caf932b2c3799ca7864d88615e22a303f",
+      "english_sha256": "e5bc797ebafdfc22f426fc275273099dd689eba1d5d80a4110e62da307c774c0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم السّائب الأنصاريّة",
+      "english": "Umm al-Sa'ib al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم مسلم الأشجعية",
+      "english": "Umm Muslim al-Ashja'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو قلابة",
+      "english": "Abu Qilaba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم المسيب",
+      "english": "Umm al-Musayyib",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيح مسلم",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو يعلى",
+      "english": "Abu Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجاج الصواف",
+      "english": "Hajjaj al-Sawwaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الزبير",
+      "english": "Abu al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر",
+      "english": "Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "آدم",
+      "english": "Adam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن أبي جعفر",
+      "english": "al-Hasan ibn Abi Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "داود بن الزبرقان",
+      "english": "Dawud ibn al-Zibriqan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أيوب",
+      "english": "Ayyub",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثقفي",
+      "english": "al-Thaqafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن كعب",
+      "english": "Ibn Ka'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "قبائل العرب",
+      "english": "Qaba'il al-Arab",
+      "kind": "work"
+    },
+    {
+      "arabic": "المهاجرين",
+      "english": "Emigrants",
+      "kind": "other"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "other"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "quotation lacuna",
+      "arabic_span": "أنّ رسول اللَّه ﵌ [....] إلى أن قال",
+      "explanation": "The exact omitted wording in al-Isabah remains unrecovered. The collateral Usd al-Ghaba report supplies the tent as antecedent but is not an al-Isabah manuscript and cannot fill the lacuna silently.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0399:97ae5762f77afadd"
+    },
+    {
+      "category": "identity relationship",
+      "arabic_span": "أم سالم الأشجعيّة ... عن أم مسلم الأشجعية",
+      "explanation": "The sources supplied do not establish whether Umm Salim al-Ashja'iyya and Umm Muslim al-Ashja'iyya are variant names for one woman or two distinct women. Both forms have been preserved without conflation.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0399:97ae5762f77afadd"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

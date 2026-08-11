@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011332",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11332,
+  "title": {
+    "english": "Salma, Umm Mistah (1)",
+    "arabic_observed": "سلمى، أم مسطح «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011332-segment-0001",
+      "volume": 8,
+      "scan_page": 189,
+      "printed_page": 188,
+      "reader_page": 4101,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4101",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0189:6769ea1e4d04ada4",
+      "arabic": "١١٣٣٢- سلمى، أم مسطح «١»\n. مذكورة، في حديث الإفك المشهور، وهي معروفة بكنيتها أكثر من اسمها، وستأتي، في الكنى.",
+      "english": "11332—Salma, Umm Mistah (1)\n\nShe is mentioned in the well-known hadith of the Slander. She is better known by her kunya than by her name, and her notice will come in the section on kunyas.",
+      "arabic_sha256": "cb44b206af8fa992eb0d8b1c8310b7d958b6e128246f33cfb173fca6e130ecff",
+      "english_sha256": "8cbeeb7c43b79d93e83831a45170717e266dbdb178421a94cf8cae5ccfbb2b4e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سلمى، أم مسطح",
+      "english": "Salma Umm Mistah",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى، غير منسوبة، مولاة حكيم بن أمية بن الأوقص السلمي",
+      "english": "Salma",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى، غير منسوبة",
+      "english": "Salma",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى، خادم رسول الله",
+      "english": "Salma",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى، مولاة صفية",
+      "english": "Salma",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

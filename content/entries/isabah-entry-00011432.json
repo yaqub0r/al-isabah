@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011432",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11432,
+  "title": {
+    "english": "Dubay'a(1) bint Hudhaym al-Sahmiyya:",
+    "arabic_observed": "ضبيعة «١» بنت حذيم السّهمية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011432-segment-0001",
+      "volume": 8,
+      "scan_page": 224,
+      "printed_page": 223,
+      "reader_page": 4136,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4136",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0224:d68f9a3007255024",
+      "arabic": "١١٤٣٢\n- ضبيعة «١» بنت حذيم السّهمية:\nوالدة عبد اللَّه بن حذافة.\nفي الصّحيح ما يدلّ على صحبتها، ففي كتاب الفضائل من صحيح مسلم أنها قالت لولدها منكرة عليه حيث قال: من أبي؟ قالت: أبوك حذافة لو أن أمّك تدنّست بشيء من أمر الجاهليّة ... الحديث.",
+      "english": "11432—Dubay'a(1) bint Hudhaym al-Sahmiyya:\n\nThe mother of 'Abd Allah ibn Hudhafa.\n\nThe Sahih contains evidence that she was a Companion. In the Book of Virtues of Sahih Muslim, it is reported that she said to her son, rebuking him when he said, “Who is my father?”: “Your father is Hudhafa. Had your mother sullied herself with anything from the ways of the Age of Ignorance…”—the hadith.",
+      "arabic_sha256": "376de931ccb156e0a91d18f03b633900b8dd05b9509e9de59d8338ad69d65eee",
+      "english_sha256": "41a5b3d10d03e249275d6ef6f2fa5d012b6e8200c4c612c59aff4a0be0ccc49f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عبد الله بن حذافة",
+      "english": "'Abd Allah ibn Hudhafa",
+      "kind": "person"
+    },
+    {
+      "arabic": "حذافة",
+      "english": "Hudhafa",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الفضائل",
+      "english": "Book of Virtues",
+      "kind": "work"
+    },
+    {
+      "arabic": "صحيح مسلم",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

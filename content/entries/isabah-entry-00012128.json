@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012128",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12128,
+  "title": {
+    "english": "Umm Amir bint Ka'b al-Ansariyya (3):",
+    "arabic_observed": "أم عامر"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012128-segment-0001",
+      "volume": 8,
+      "scan_page": 426,
+      "printed_page": 425,
+      "reader_page": 4338,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4338",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0426:6633b99d43784c8a",
+      "arabic": "١٢١٢٨- أم عامر\nبنت كعب الأنصاريّة «٣» .\nروت عنها ليلى مولاة حبيب بن عبد الرّحمن- أن النبيّ ﵌ قال لها: هلمي فكلي. فقالت: إنّي صائمة، فقال: «إنّ الصّائم إذا أكل عنده تصلّي عليه الملائكة» «٤» .",
+      "english": "12128 — Umm Amir bint Ka'b al-Ansariyya (3):\n\nLayla, the client of Habib ibn Abd al-Rahman, narrated from her that the Prophet, may Allah bless him and grant him peace, said to her, “Come and eat.” She replied, “I am fasting.” He said, “Indeed, when food is eaten in the presence of one who is fasting, the angels pray for him.” (4)",
+      "arabic_sha256": "b771295dbc8064bc92814b3ef8b959f9c38a60b55d8a9c98c9bea95d47375091",
+      "english_sha256": "8fe65abed6fdd874bbff86158b7273135cafd7e56c683968fdb85c7123a59a54",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم عامر بنت كعب الأنصاريّة",
+      "english": "Umm Amir bint Ka'b al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليلى",
+      "english": "Layla",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيب بن عبد الرّحمن",
+      "english": "Habib ibn Abd al-Rahman",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

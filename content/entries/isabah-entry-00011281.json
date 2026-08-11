@@ -1,0 +1,309 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011281",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11281,
+  "title": {
+    "english": "Subay'a al-Aslamiyya,",
+    "arabic_observed": "سبيعة الأسلمية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011281-segment-0001",
+      "volume": 8,
+      "scan_page": 173,
+      "printed_page": 172,
+      "reader_page": 4085,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4085",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0173:8fc64c7545811e85",
+      "arabic": "١١٢٨١- سبيعة الأسلمية ،\nالتي روى عنها ابن عمر، ذكرها العقيلي، وقال: هي غير بنت الحارث زوج سعد بن خولة. وردّه ابن عبد البر، فقال: لا يصح ذلك عندي.\nقلت:\nوأخرج حديث ابن عمر المذكور ابن مندة في ترجمة سبيعة بنت الحارث، وهو في مسند يحيى الحماني، عن الدّراوردي، عن أسامة بن زيد، عن عبد اللَّه بن عكرمة، عن عبد اللَّه بن عبد اللَّه بن عمر، عن أبيه، عن سبيعة الأسلمية- أنّ النبي ﷺ قال: «من استطاع منكم أن يموت بالمدينة فليمت، فإنّه لن يموت بها أحد إلّا كنت له شفيعا يوم القيامة» «٣» .\n(١) أسد الغابة ت (٦٩٨٠)، الاستيعاب ت (٣٤١٨)، أعلام النساء ٢/ ١٤٨، تجريد أسماء الصحابة ٢/ ٢٧٤.\n(٢) أسد الغابة ت (٦٩٨٢) .\n(٣) أخرجه الترمذي في السنن ٥/ ٦٧٦ عن ابن عمر بلفظ متقارب كتاب المناقب (٥٥) باب فضل المدينة (٦٨) حديث رقم ٣٩١٧ قال أبو عيسى هذا حديث غريب من حديث أيوب السختياني وأخرجه ابن ماجة في السنن ٢/ ١٠٣٩ عن ابن عمر بلفظه كتاب المناسك (٢٥) باب فضل المدينة (١٠٤) حديث رقم ٣١١٢ وأحمد في المسند ٢/ ٧٤، وأخرجه البيهقي في السنن الكبرى ٧/ ٣٦١ عن مكحول عن معاذ ابن جبل قال البيهقي هو حديث ضعيف ومكحول عن معاذ منقطع وأورده المنذري في الترغيب ٢/ ٢٢٣، والهيثمي في الزوائد ٣/ ٣٠٩ عن سبيعة الأسلمية ... الحديث وقال الهيثمي رواه الطبراني في الكبير ورجاله رجال الصحيح خلا عبد اللَّه بن عكرمة وقد ذكره ابن أبي حاتم وروى عنه جماعة ولم يتكلم فيه أحد بسوء.",
+      "english": "11281—Subay'a al-Aslamiyya,\n\nfrom whom Ibn Umar transmitted. al-Uqayli mentioned her and said: “She is not the daughter of al-Harith who was the wife of Sa'd ibn Khawla.” Ibn Abd al-Barr rejected this, saying: “In my view, that is not sound.”\n\nI say:\n\nIbn Manda transmitted the aforementioned hadith of Ibn Umar in the entry on Subay'a bint al-Harith. It is in the Musnad of Yahya al-Himmani, from al-Darawardi, from Usama ibn Zayd, from Abd Allah ibn Ikrima, from Abd Allah ibn Abd Allah ibn Umar, from his father, from Subay'a al-Aslamiyya, that the Prophet (may Allah bless him and grant him peace) said: “Whoever among you is able to die in Medina should die there, for no one will die there without my being an intercessor for him on the Day of Resurrection.” (3)\n\n(1) Usd al-Ghaba, entry 6980; al-Isti'ab, entry 3418; A'lam al-Nisa', 2/148; al-Tajrid, 2/274.\n\n(2) Usd al-Ghaba, entry 6982.\n\n(3) al-Tirmidhi transmitted it in the Sunan, 5/676, from Ibn Umar with similar wording: Book of Virtues (55), chapter on the virtue of Medina (68), hadith no. 3917. Abu Isa said: “This is a strange hadith through Ayyub al-Sakhtiyani.” Ibn Majah also transmitted it in the Sunan, 2/1039, from Ibn Umar with this wording: Book of Pilgrimage Rites (25), chapter on the virtue of Medina (104), hadith no. 3112; and Ahmad transmitted it in the Musnad, 2/74. al-Bayhaqi transmitted it in al-Sunan al-Kubra, 7/361, from Makhul, from Mu'adh ibn Jabal. al-Bayhaqi said: “It is a weak hadith, and Makhul's transmission from Mu'adh is disconnected.” al-Mundhiri included it in al-Targhib, 2/223, and al-Haythami in al-Zawa'id, 3/309, from Subay'a al-Aslamiyya—the hadith. al-Haythami said: “al-Tabarani transmitted it in al-Kabir. The men of its chain are transmitters of the Sahih, except Abd Allah ibn Ikrima. Ibn Abi Hatim mentioned him, a group transmitted from him, and no one spoke ill of him.”",
+      "arabic_sha256": "ccfc137356039a0379df6411d5280663e2fe3cc9263fa2cd5a9c492c568d6e3e",
+      "english_sha256": "92d67bc7a3eca0174e344b81de40310a5fb4b582bcbc566803a70cdba9310578",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011281-segment-0002",
+      "volume": 8,
+      "scan_page": 174,
+      "printed_page": 173,
+      "reader_page": 4086,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4086",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0174:2b7a365ec3693914",
+      "arabic": "وانتصر ابن فتحون للعقيليّ، فقال: ذكر الفاكهي أنّ سبيعة بنت الحارث أوّل امرأة أسلمت بعد صلح الحديبيّة إثر العقد وطى الكتاب ولم تخف، فنزلت آية الامتحان، فامتحنها النبيّ ﷺ، وردّ على زوجها مهر مثلها وتزوّجها عمر.\nقال ابن فتحون: فابن عمر إنما يروي عن سبيعة- يعني امرأة أبيه- قال: ويؤيد ذلك أن هبة اللَّه في الناسخ والمنسوخ ذكر أنّ النبيّ ﷺ لما انصرف من الحديبيّة لحقت به سبيعة بنت الحارث امرأة من قريش، فبان أنها غير الأسلمية.",
+      "english": "Ibn Fathun defended al-Uqayli's position, saying: Al-Fakihi stated that Sabi'a bint al-Harith was the first woman to embrace Islam after the Treaty of al-Hudaybiya, immediately following the conclusion of the pact and the folding of the document, and she was not afraid. The verse of examination was then revealed, so the Prophet ﷺ examined her, repaid her husband a dowry equivalent to that of a woman like her, and Umar married her.\n\nIbn Fathun said: Ibn Umar therefore narrated only from Sabi'a—meaning his father’s wife. He said: This is supported by the fact that Hibat Allah, in al-Nasikh wa-l-Mansukh, mentioned that when the Prophet ﷺ departed from al-Hudaybiya, Sabi'a bint al-Harith, a woman of Quraysh, caught up with him. It thus became clear that she was not the Aslamiyya.",
+      "arabic_sha256": "6116b909caaf501d2e37314fc85bd80782e4866b93b3358e08cd273eba8af79b",
+      "english_sha256": "fe9e28d64199e60d2aaacebc32c98440c5e0a1ca735f78c4a47920741871f495",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سبيعة بنت الحارث",
+      "english": "Subay'a bint al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن خولة",
+      "english": "Sa'd ibn Khawla",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن عمر",
+      "english": "Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "سبيعة الأسلمية",
+      "english": "Subay'a al-Aslamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "العقيلي",
+      "english": "al-Uqayli",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبد البر",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى الحماني",
+      "english": "Yahya al-Himmani",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند يحيى الحماني",
+      "english": "Musnad Yahya al-Himmani",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدراوردي",
+      "english": "al-Darawardi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسامة بن زيد",
+      "english": "Usama ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن عكرمة",
+      "english": "Abd Allah ibn Ikrima",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن عبد الله بن عمر",
+      "english": "Abd Allah ibn Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan al-Tirmidhi",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عيسى",
+      "english": "Abu Isa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أيوب السختياني",
+      "english": "Ayyub al-Sakhtiyani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan Ibn Majah",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن الكبرى",
+      "english": "al-Sunan al-Kubra",
+      "kind": "work"
+    },
+    {
+      "arabic": "مكحول",
+      "english": "Makhul",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاذ بن جبل",
+      "english": "Mu'adh ibn Jabal",
+      "kind": "person"
+    },
+    {
+      "arabic": "المنذري",
+      "english": "al-Mundhiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الترغيب",
+      "english": "al-Targhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن أبي حاتم",
+      "english": "Ibn Abi Hatim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن فتحون",
+      "english": "Ibn Fathun",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفاكهي",
+      "english": "al-Fakihi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سبيعة بنت الحارث",
+      "english": "Sabi'a bint al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "صلح الحديبية",
+      "english": "Treaty of al-Hudaybiya",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبيّ ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عمر",
+      "english": "Ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "هبة اللَّه",
+      "english": "Hibat Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الناسخ والمنسوخ",
+      "english": "al-Nasikh wa-l-Mansukh",
+      "kind": "work"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأسلمية",
+      "english": "Sabi'a al-Aslamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

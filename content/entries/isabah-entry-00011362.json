@@ -1,0 +1,105 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011362",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11362,
+  "title": {
+    "english": "Sawda bint Haritha",
+    "arabic_observed": "سودة بنت حارثة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011362-segment-0001",
+      "volume": 8,
+      "scan_page": 196,
+      "printed_page": 195,
+      "reader_page": 4108,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4108",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0196:afff052c117be696",
+      "arabic": "١١٣٦٢- سودة بنت حارثة\nبن النعمان الأنصارية.\nذكرها ابن حبيب في المبايعات.\nقلت: هي امرأة عمرو بن حزم. وقال ابن سعد: أسلمت وبايعت. وتزوجها عبد اللَّه بن أبي حرام بن قيس بن مالك بن كعب بن عبد الأشهل بن حارثة بن دينار بن النجار.\nوأمّها أم خالد بنت خالد بن يعيش.\n(١) أسد الغابة: ت (٧٠٣٤)، الثقات ٣/ ١٨٥، أعلام النساء ٢/ ٢٦٧، تجريد أسماء الصحابة ٢/ ٢٧٩، تلقيح فهوم أهل الأثر ٣٧٦.\n(٢) أعلام النساء ٢/ ٢٦٦، ٢٧٢، تجريد أسماء الصحابة ٢/ ٢٧٩، أسد الغابة ت (٧٠٣٣)، الاستيعاب (٣٤٣٩) .",
+      "english": "11362 — Sawda bint Haritha\nibn al-Nu'man, the Ansari woman.\n\nIbn Habib listed her among the women who pledged allegiance.\n\nI say: She was the wife of Amr ibn Hazm. Ibn Sa'd said: “She embraced Islam and pledged allegiance. Abd Allah ibn Abi Haram ibn Qays ibn Malik ibn Ka'b ibn Abd al-Ashhal ibn Haritha ibn Dinar ibn al-Najjar married her.”\n\nHer mother was Umm Khalid bint Khalid ibn Ya'ish.\n\n(1) Usd al-Ghaba, entry (7034); al-Thiqat, 3/185; A'lam al-Nisa', 2/267; al-Tajrid, 2/279; Talqih Fuhum Ahl al-Athar, 376.\n\n(2) A'lam al-Nisa', 2/266, 272; al-Tajrid, 2/279; Usd al-Ghaba, entry (7033); al-Isti'ab, entry (3439).",
+      "arabic_sha256": "3ea464b8c9fc7e8b3caa24e655e7407b2fc66296372ab7b76e46a9e16d89afe2",
+      "english_sha256": "7e62cf72435d6b482361c39d0a5159097c7c040b47bb93d66eb0cc40ea9b2ab7",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن حزم",
+      "english": "Amr ibn Hazm",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن أبي حرام بن قيس بن مالك بن كعب بن عبد الأشهل بن حارثة بن دينار بن النجار",
+      "english": "Abd Allah ibn Abi Haram ibn Qays ibn Malik ibn Ka'b ibn Abd al-Ashhal ibn Haritha ibn Dinar ibn al-Najjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم خالد بنت خالد بن يعيش",
+      "english": "Umm Khalid bint Khalid ibn Ya'ish",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

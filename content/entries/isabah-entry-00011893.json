@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011893",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11893,
+  "title": {
+    "english": "Umm Iyas bint Thabit ibn al-Ajda'",
+    "arabic_observed": "أم إياس بنت ثابت بن الأجدع:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011893-segment-0001",
+      "volume": 8,
+      "scan_page": 357,
+      "printed_page": 356,
+      "reader_page": 4269,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4269",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0357:3baf653154db3ecb",
+      "arabic": "١١٨٩٣- أم إياس بنت ثابت بن الأجدع:\nتأتي في أم الحارث.",
+      "english": "11893 — Umm Iyas bint Thabit ibn al-Ajda'\n\nShe will appear under Umm al-Harith.",
+      "arabic_sha256": "d52006d74a8cf783aac83bfa2fd0a8f5362b87c9914f6d8e79e7a661aa4d6ac6",
+      "english_sha256": "2cb8a10043826fbc918ba4109194fe550dd5ea3f0353f171a944b25d973d2c52",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم إياس بنت ثابت بن الأجدع",
+      "english": "Umm Iyas bint Thabit ibn al-Ajda'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الحارث",
+      "english": "Umm al-Harith",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

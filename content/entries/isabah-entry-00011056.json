@@ -1,0 +1,204 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011056",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11056,
+  "title": {
+    "english": "Halima al-Sa'diyya:",
+    "arabic_observed": "حليمة السعدية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011056-segment-0001",
+      "volume": 8,
+      "scan_page": 88,
+      "printed_page": 87,
+      "reader_page": 4000,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4000",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0088:79ce22d0b4609671",
+      "arabic": "١١٠٥٦- حليمة السعدية:\nمرضعة النبيّ ﷺ «٣»، هي بنت أبي ذؤيب، واسمه عبد اللَّه بن الحارث بن شجنة، بكسر المعجمة وسكون الجيم بعدها نون، ابن رزام بكسر المهملة ثم المنقوطة، ابن ناضرة بن سعد بن بكر بن هوازن.\nقال أبو عمر: أرضعت النّبي ﷺ، ورأت له برهانا تركنا ذكره لشهرته، وروى زيد بن أسلم، عن عطاء بن يسار، قال: جاءت حليمة ابنة عبد اللَّه أمّ النبي ﷺ من الرضاعة إلى رسول اللَّه ﷺ، فقام إليها وبسط لها رداءه، فجلست عليه. وروى عنها عبد اللَّه بن جعفر.\nقلت: حديثه عنها بقصة إرضاعها أخرجه أبو يعلى وابن حبان في صحيحه، وصرّح فيه بالتحديث بين عبد اللَّه وحليمة، ووقع في السيرة الكبرى لابن إسحاق بسنده إلى عبد اللَّه بن جعفر، قال: حدثت عن حليمة، والنسب الّذي ساقه ذكره ابن إسحاق في أول السيرة النبويّة، وفيه: ثم التمس له الرّضعاء واسترضع له من حليمة، فساق نسبها.\n(١) الثقات ٣/ ١٠٠، تجريد أسماء الصحابة ٢/ ٢٥٩.\n(٢) أسد الغابة ت ٦٨٥٤، الاستيعاب ت ٣٣٤٦.\n(٣) أسد الغابة ت ٦٨٥٥، الاستيعاب ت ٣٣٤٧.",
+      "english": "11056—Halima al-Sa'diyya:\nThe wet nurse of the Prophet—may Allah bless him and grant him peace—[3]. She was the daughter of Abu Dhu'ayb, whose name was Abdullah ibn al-Harith ibn Shijna—with a kasra on the dotted shin, a sukun on the jim, followed by a nun—ibn Rizam—with a kasra on the undotted ra, followed by a dotted zay—ibn Nadira ibn Sa'd ibn Bakr ibn Hawazin.\n\nAbu Umar said: She nursed the Prophet—may Allah bless him and grant him peace—and saw a sign concerning him whose account we have omitted because it is well known. Zayd ibn Aslam narrated from Ata ibn Yasar, who said: “Halima bint Abdullah, the Prophet's nursing mother, came to the Messenger of Allah—may Allah bless him and grant him peace. He rose to receive her and spread out his cloak for her, and she sat upon it.” Abdullah ibn Ja'far narrated from her.\n\nI say: Abu Ya'la and Ibn Hibban, in his Sahih, transmitted Abdullah ibn Ja'far's hadith from her concerning the account of her nursing him. It explicitly states direct transmission between Abdullah and Halima. In Ibn Ishaq's al-Sira al-Kubra, however, it occurs through his isnad to Abdullah ibn Ja'far, who said: “I was told on the authority of Halima.” The genealogy set forth above was mentioned by Ibn Ishaq at the beginning of al-Sira al-Nabawiyya. It contains the words: “Then wet nurses were sought for him, and Halima was engaged to nurse him”; he then set forth her genealogy.\n\n(1) al-Thiqat, 3/100; al-Tajrid, 2/259.\n\n(2) Usd al-Ghaba, entry 6854; al-Isti'ab, entry 3346.\n\n(3) Usd al-Ghaba, entry 6855; al-Isti'ab, entry 3347.",
+      "arabic_sha256": "6287bb397e3bf3afc9a48dd29448d95110d4a26be7bb16705ce7808231632ae9",
+      "english_sha256": "fb2cef6b1fd33e00436f45051b4a1e7b8fa048884d17dae56c83fd31b7154792",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011056-segment-0002",
+      "volume": 8,
+      "scan_page": 89,
+      "printed_page": 88,
+      "reader_page": 4001,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4001",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0089:2055a24fd86ae353",
+      "arabic": "وأخرج أبو داود، وأبو يعلى، وغيرهما، من طريق عمارة بن ثوبان عن أبي الطفيل- أن النبيّ ﷺ كان بالجعرانة يقسم لحما، فأقبلت امرأة بدوية، فلما دنت من النبي ﷺ بسط لها رداءه، فجلست عليه، فقلت: من هذه؟ قالوا: هذه أمّه التي أرضعته.\nونسبها ابن مندة إلى جدها، فقال: حليمة بنت الحارث السعدية، وساق الحديث من طريق نوح بن أبي مريم، [عن ابن إسحاق بسنده، فقال فيه: عن عبد اللَّه بن جعفر، عن حليمة بنت الحارث السعدية] .",
+      "english": "Abu Dawud, Abu Ya'la, and others transmitted, by way of 'Umara ibn Thawban, from Abu al-Tufayl, that the Prophet—may Allah bless him and grant him peace—was at al-Ji'rana distributing meat. A Bedouin woman approached, and when she drew near the Prophet—may Allah bless him and grant him peace—he spread out his cloak for her, and she sat upon it. I asked, “Who is this?” They replied, “This is his mother who nursed him.”\n\nIbn Manda traced her lineage to her grandfather, calling her Halima bint al-Harith al-Sa'diyya. He related the hadith by way of Nuh ibn Abi Maryam, [from Ibn Ishaq through his chain of transmission, wording it: from 'Abd Allah ibn Ja'far, from Halima bint al-Harith al-Sa'diyya].",
+      "arabic_sha256": "3e3bf17e8805c02332b3be0384464382452b834a5070474944cf946121e64ff9",
+      "english_sha256": "7993727a7a797781af26044d58337eebad0ecef813ecc69224a4a150d4c60187",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "حليمة السعدية",
+      "english": "Halima bint Abdullah al-Sa'diyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "حليمة ابنة عبد اللَّه",
+      "english": "Halima bint Abdullah al-Sa'diyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "السعدية",
+      "english": "Banu Sa'd",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو ذؤيب",
+      "english": "Abu Dhu'ayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن أسلم",
+      "english": "Zayd ibn Aslam",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاء بن يسار",
+      "english": "Ata ibn Yasar",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن جعفر",
+      "english": "Abdullah ibn Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو يعلى",
+      "english": "Abu Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيحه",
+      "english": "Sahih Ibn Hibban",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "السيرة الكبرى",
+      "english": "al-Sira al-Kubra",
+      "kind": "work"
+    },
+    {
+      "arabic": "السيرة النبوية",
+      "english": "al-Sira al-Nabawiyya",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمارة بن ثوبان",
+      "english": "'Umara ibn Thawban",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الطفيل",
+      "english": "Abu al-Tufayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجعرانة",
+      "english": "al-Ji'rana",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "حليمة بنت الحارث السعدية",
+      "english": "Halima bint al-Harith al-Sa'diyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "نوح بن أبي مريم",
+      "english": "Nuh ibn Abi Maryam",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن جعفر",
+      "english": "'Abd Allah ibn Ja'far",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

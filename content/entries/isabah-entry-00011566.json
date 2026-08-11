@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011566",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11566,
+  "title": {
+    "english": "al-Ghumaysa bint Milhan al-Ansariyya (4).",
+    "arabic_observed": "الغميصاء بنت ملحان الأنصارية «٤» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011566-segment-0001",
+      "volume": 8,
+      "scan_page": 256,
+      "printed_page": 255,
+      "reader_page": 4168,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4168",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0256:7c798b969c700c6b",
+      "arabic": "١١٥٦٦- الغميصاء بنت ملحان الأنصارية «٤» .\nقيل هي أم والدة أنس، وهي مشهورة بكنيتها.\nقال أحمد في مسندة: حدّثنا يحيى- هو القطان، حدّثنا حميد، عن أنس، عن النّبيّ ﵌، قال: «دخلت الجنّة فسمعت خشفة «٥»، فقلت: ما هذا، فقال: الغميصاء بنت ملحان «٦»» .\nقلت: وقد تقدّم من وجه آخر عن أنس في حرف الرّاء.",
+      "english": "11566—al-Ghumaysa bint Milhan al-Ansariyya (4).\n\nIt is said that she was the mother of Anas's mother, and she is well known by her kunya.\n\nAhmad said in Musnad Ahmad: Yahya—that is, al-Qattan—related to us: Humayd related to us, from Anas, from the Prophet, may Allah bless him and grant him peace, who said: “I entered Paradise and heard a khashfa (5). I said, ‘What is this?’ It was said, ‘al-Ghumaysa bint Milhan.’” (6)\n\nI say: This has already appeared through another route from Anas under the letter ra.",
+      "arabic_sha256": "559fe2f2ffc4bb579b8d36520fb50bae57099d942b8b24ad23207cf31b3478f1",
+      "english_sha256": "e57cc0a797f67c4cc314ae0442ca6a072db9d81a8dfe76bcb7e67c0dda49004c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الغميصاء بنت ملحان الأنصارية",
+      "english": "al-Ghumaysa bint Milhan al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسنده",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "يحيى- هو القطان",
+      "english": "Yahya al-Qattan",
+      "kind": "person"
+    },
+    {
+      "arabic": "حميد",
+      "english": "Humayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "النّبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجنّة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "الغميصاء",
+      "english": "al-Ghumaysa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

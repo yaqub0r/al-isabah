@@ -1,0 +1,115 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011256",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11256,
+  "title": {
+    "english": "Zaynab bint Maz'un ibn Habib al-Jumahiyya (2)",
+    "arabic_observed": "زينب بنت مظعون"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011256-segment-0001",
+      "volume": 8,
+      "scan_page": 164,
+      "printed_page": 163,
+      "reader_page": 4076,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4076",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0164:daa560d50bf22a86",
+      "arabic": "١١٢٥٦- زينب بنت مظعون\nبن حبيب الجمحية «٢» .\nتقدم نسبها عند ذكر أخويها عثمان وقدامة.\nقال أبو عمر: هي زوجة عمر بن الخطاب، ووالدة ولديه: عبد اللَّه، وحفصة.\nذكر الزّبير أنها كانت من المهاجرات، وأخشى أن يكون وهما، لأنه قد قيل: إنها ماتت بمكة قبل الهجرة.\nقلت: بل الوهم ممن قال ذلك، فقد ثبت عن عمر أنه قال في حق ولده عبد اللَّه:\nهاجر به أبواه.\nأخرجه البخاريّ من طريق نافع، عن ابن عمر، عن عمر، لما فضّل أسامة على عبد اللَّه بن عمر في القسم.\nوقد تعقب ابن فتحون كلام أبي عمر بهذا، وذكرها أبو موسى في الذيل بهذا الخير.",
+      "english": "11256 — Zaynab bint Maz'un ibn Habib al-Jumahiyya (2)\n\nHer lineage was given above when her two brothers, 'Uthman and Qudama, were mentioned.\n\nAbu 'Umar said: “She was the wife of 'Umar ibn al-Khattab and the mother of his two children, 'Abd Allah and Hafsa. Al-Zubayr mentioned that she was among the female Emigrants, but I fear that this is an error, because it has been said that she died in Mecca before the Emigration.”\n\nI say: Rather, the error is on the part of whoever said that, for it is reliably established that 'Umar said concerning his son 'Abd Allah: “Both his parents emigrated with him.”\n\nAl-Bukhari related it by way of Nafi', from Ibn 'Umar, from 'Umar, on the occasion when 'Umar gave Usama preference over 'Abd Allah ibn 'Umar in the allotment.\n\nIbn Fathun criticized Abu 'Umar's statement on this basis, and Abu Musa mentioned her in al-Dhayl with this report.",
+      "arabic_sha256": "00d2a5b2d9f15e89bc41ec05e2b92c9f2998d6dccffeb3f859ee3fe9e0d48c92",
+      "english_sha256": "d32a052a02a8c66496f30d62ec15ab36659e8cac6e35a584ae9c2003a299a2c1",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "زينب بنت مظعون بن حبيب الجمحية",
+      "english": "Zaynab bint Maz'un ibn Habib al-Jumahiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "'Uthman ibn Maz'un",
+      "kind": "person"
+    },
+    {
+      "arabic": "قدامة",
+      "english": "Qudama ibn Maz'un",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن الخطاب",
+      "english": "'Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله",
+      "english": "'Abd Allah ibn 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفصة",
+      "english": "Hafsa bint 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "نافع",
+      "english": "Nafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عمر",
+      "english": "'Abd Allah ibn 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسامة",
+      "english": "Usama",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن فتحون",
+      "english": "Ibn Fathun",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

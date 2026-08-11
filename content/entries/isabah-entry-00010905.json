@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010905",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10905,
+  "title": {
+    "english": "Anisa al-Nakha'iyya (1)",
+    "arabic_observed": "أنيسة النخعية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010905-segment-0001",
+      "volume": 8,
+      "scan_page": 43,
+      "printed_page": 42,
+      "reader_page": 3955,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3955",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0043:ed928aba822b3abd",
+      "arabic": "١٠٩٠٥- أنيسة النخعية «١»\n. ذكرت قدوم معاذ بن جبل عليهم اليمن رسولا لرسول اللَّه ﷺ، قالت: قال لنا معاذ:\nأنا رسول اللَّه ﷺ إليكم، صلّوا خمسا، وصوموا شهر رمضان، وحجّوا البيت لمن استطاع إليه سبيلا.\nقالت: وهو يومئذ ابن ثمان عشرة سنة، كذا ذكرها أبو عمر.\nقال ابن الأثير: في قدر عمره نظر، فإن إرساله كان سنة تسع، ويلزم أن يكون أسلم وهو ابن تسع، وليس كذلك، وإنما بايع وهو رجل.\nقلت: الصواب ابن ثمان وعشرين سنة. وقد ورد في سنّ معاذ من وجه آخر.\nالقسم الرابع",
+      "english": "10905—Anisa al-Nakha'iyya (1)\n\nShe recounted Mu'adh ibn Jabal's arrival among them in Yemen as an envoy of the Messenger of Allah ﷺ. She said: Mu'adh told us, “I am the envoy of the Messenger of Allah ﷺ to you. Perform five prayers, fast the month of Ramadan, and let whoever is able to make his way to it perform pilgrimage to the House.”\n\nShe said: “At that time he was eighteen years old.” This is how Abu Umar mentioned her.\n\nIbn al-Athir said: “There is reason to question his stated age, for he was sent in the year nine, which would entail that he embraced Islam when he was nine years old. That is not so; rather, he pledged allegiance when he was already a man.”\n\nI say: The correct age is twenty-eight years. A report concerning Mu'adh's age has also come by another route.\n\nSection Four",
+      "arabic_sha256": "fde31654481f6d9b9662aaf0024fa93a89fe82d1961240315dd9d7410bb8cae4",
+      "english_sha256": "c157f4335629f827ce21c0727d49e4918cccab9fbf7a06a9a8ee52abb8f1f7f4",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أنيسة النخعية",
+      "english": "Anisa al-Nakha'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاذ بن جبل",
+      "english": "Mu'adh ibn Jabal",
+      "kind": "person"
+    },
+    {
+      "arabic": "اليمن",
+      "english": "Yemen",
+      "kind": "place"
+    },
+    {
+      "arabic": "رمضان",
+      "english": "Ramadan",
+      "kind": "other"
+    },
+    {
+      "arabic": "البيت",
+      "english": "the House",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

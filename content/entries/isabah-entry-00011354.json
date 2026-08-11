@@ -1,0 +1,78 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011354",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11354,
+  "title": {
+    "english": "Suhayma bint Aslam",
+    "arabic_observed": "سهيمة بنت أسلم"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011354-segment-0001",
+      "volume": 8,
+      "scan_page": 195,
+      "printed_page": 194,
+      "reader_page": 4107,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4107",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0195:0a149c0a43c2cf13",
+      "arabic": "١١٣٥٤- سهيمة بنت أسلم\nبن الحريش «١»، أخت سلمة بن أسلم شقيقته، أمّهما سعاد بنت رافع النجارية، وزوجها محيصة بن مسعود. وأسلمت سهيمة وبايعت، قاله ابن سعد، وذكرها ابن حبيب في المبايعات.",
+      "english": "11354 — Suhayma bint Aslam\n\nibn al-Huraysh,[1] the full sister of Salama ibn Aslam. Their mother was Su'ad bint Rafi al-Najjariyya, and her husband was Muhayyisa ibn Mas'ud. Suhayma embraced Islam and pledged allegiance, according to Ibn Sa'd. Ibn Habib also mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "dfe579d7fa5146ebb4de1a7c76c9550cb08ed177e8d9b10d10cb8565899ad5ed",
+      "english_sha256": "37b4d66854776476951fbaa9e8a65147e070003bb347136062c7ec1e2507593b",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سلمة بن أسلم",
+      "english": "Salama ibn Aslam",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعاد بنت رافع النجارية",
+      "english": "Su'ad bint Rafi al-Najjariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "محيصة بن مسعود",
+      "english": "Muhayyisa ibn Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهيمة",
+      "english": "Suhayma",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "الحريش",
+      "explanation": "The supplied Urdu and collateral Arabic witnesses are unvocalized and do not establish the pronunciation. The final text provisionally retains al-Huraysh while preserving the canonical definite article.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0195:0a149c0a43c2cf13"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

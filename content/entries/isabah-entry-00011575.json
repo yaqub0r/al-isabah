@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011575",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11575,
+  "title": {
+    "english": "Fakhita bint Ghazwan",
+    "arabic_observed": "فاختة بنت غزوان:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011575-segment-0001",
+      "volume": 8,
+      "scan_page": 258,
+      "printed_page": 257,
+      "reader_page": 4170,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4170",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0258:5194b9842196d8a0",
+      "arabic": "١١٥٧٥- فاختة بنت غزوان:\nأخت عتبة.\nتقدم نسبها في ترجمته، وكانت «٣» من المهاجرات.",
+      "english": "11575—Fakhita bint Ghazwan\n\nThe sister of Utba.\n\nHer lineage was given previously in his entry, and she was (3) one of the Emigrant women.",
+      "arabic_sha256": "44afea3fb23f89968adc53ff692de58d3952b2a37b2752ca9c1353ca7ed59dc2",
+      "english_sha256": "ab9bd573f7098ec19a3ce09e33553e5cca9a4af7b84524995af81cc6baa124ec",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "فاختة بنت غزوان",
+      "english": "Fakhita bint Ghazwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عتبة",
+      "english": "Utba",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

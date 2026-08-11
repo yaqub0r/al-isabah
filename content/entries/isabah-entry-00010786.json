@@ -1,0 +1,142 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010786",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10786,
+  "title": {
+    "english": "Arnab the Medinan singer",
+    "arabic_observed": "أرنب المدينة المغنية"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010786-segment-0001",
+      "volume": 8,
+      "scan_page": 7,
+      "printed_page": 6,
+      "reader_page": 3919,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3919",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0007:16f979fa3c96671e",
+      "arabic": "١٠٧٨٦- أرنب المدينة المغنية\n(١) أسد الغابة: ت ٦٦٩٨.\n(٢) الاستيعاب: ت ٣٢٦٨.",
+      "english": "10786 — Arnab the Medinan singer\n\n(1) Usd al-Ghaba: entry 6698.\n(2) al-Isti'ab: entry 3268.",
+      "arabic_sha256": "18f2fa80d4afcc3e72afbf374163a6b734aa257f0c5430b7f88c35913db880aa",
+      "english_sha256": "0db5b5ec03d2d858949caafd01efcf9cbd54a915c8f4872430618e29274315dc",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00010786-segment-0002",
+      "volume": 8,
+      "scan_page": 8,
+      "printed_page": 7,
+      "reader_page": 3920,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3920",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0008:d390cb59fff2b09a",
+      "arabic": "روينا في الجزء الثالث من أمالي المحامليّ رواية الأصبهانيين، من طريق ابن جريج، أخبرني أبو الأصبع أن جميلة المغنية أخبرته أنها سألت جابر بن عبد اللَّه عن الغناء، فقال:\nنكح بعض الأنصار بعض أهل عائشة فأهدتها إلى قباء، فقال لها النبيّ ﷺ «أهديت عروسك؟» قالت: نعم. قال: «فأرسلت معها بغناء، فإنّ الأنصار يحبّونه؟» قالت: لا.\nقال: «فأدركيها بأرنب»،\nامرأة كانت تغنّي بالمدينة.",
+      "english": "We transmitted in the third part of Amali al-Mahamili, in the recension of the Isfahanis, through Ibn Jurayj: Abu al-Asba' informed me that Jamila the singer informed him that she asked Jabir ibn Abd Allah about singing. He said:\n\n“One of the Ansar married a woman from Aisha's household, and Aisha escorted her to Quba. The Prophet (may Allah bless him and grant him peace) said to her, ‘Did you escort your bride?’ She replied, ‘Yes.’ He said, ‘Did you send singing along with her? The Ansar are fond of it.’ She replied, ‘No.’ He said, ‘Then send Arnab after her’”—a woman who used to sing in Medina.",
+      "arabic_sha256": "b89353522af62c8e12125e705440efa63f73ad30d6d4c9e3ccdfcd716e19b0be",
+      "english_sha256": "b5daf849740c9ba87f6972c5c6f0d0f40a647e333a0d5961803ee440f8251113",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أرنب المدينة المغنية",
+      "english": "Arnab the Medinan singer",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أمالي المحامليّ",
+      "english": "Amali al-Mahamili",
+      "kind": "work"
+    },
+    {
+      "arabic": "المحامليّ",
+      "english": "al-Mahamili",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأصبهانيين",
+      "english": "Isfahanis",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن جريج",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الأصبع",
+      "english": "Abu al-Asba'",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة المغنية",
+      "english": "Jamila the Singer",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر بن عبد اللَّه",
+      "english": "Jabir ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "قباء",
+      "english": "Quba",
+      "kind": "place"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أرنب",
+      "english": "Arnab",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "vocalization",
+      "arabic_span": "أثيلة، أثيمة، إدام، أردة",
+      "explanation": "The supplied Arabic and collateral witnesses establish the consonantal spellings but are unvocalized. Athila, Athima, Idam, and Arda have therefore been retained provisionally; their exact historical vocalization cannot be determined safely from the supplied evidence.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0007:16f979fa3c96671e"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

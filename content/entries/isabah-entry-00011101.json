@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011101",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11101,
+  "title": {
+    "english": "Khadra:",
+    "arabic_observed": "خضرة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011101-segment-0001",
+      "volume": 8,
+      "scan_page": 107,
+      "printed_page": 106,
+      "reader_page": 4019,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4019",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0107:0ca239c6d68dcc2e",
+      "arabic": "١١١٠١- خضرة:\nخادم النبي ﷺ» .\nذكرها ابن سعد، وأسند عن الواقديّ من حديث سلمى أم رافع بسنده إليها، قالت:\nكان خدم رسول اللَّه ﷺ أنا وخضرة، ورضوى، وميمونة بنت سعد، أعتقهن كلهنّ. وذكرها البلاذريّ أيضا. ولها ذكر في تفسير سورة التحريم من كتاب ابن مردويه.",
+      "english": "11101 — Khadra:\n\nA female servant of the Prophet—may Allah bless him and grant him peace.[5]\n\nIbn Sa'd mentioned her and, through al-Waqidi, gave an isnad for a report of Salma Umm Rafi', with his chain leading to her. She said: “The servants of the Messenger of Allah—may Allah bless him and grant him peace—were myself, Khadra, Radwa, and Maymuna bint Sa'd. He emancipated all of them.” Al-Baladhuri also mentioned her. She is also mentioned in the commentary on Surat al-Tahrim in Ibn Mardawayh's book.",
+      "arabic_sha256": "7df8d841d275a984b3a583ddbb5f4ebfa6c83b718b71624abf99082719eed967",
+      "english_sha256": "9c1f46f937d61889fc4b78118cdb757a1b2fe3112bd24e7cade3dce80d29ddb5",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله / النبي",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "خضرة",
+      "english": "Khadra",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى أم رافع",
+      "english": "Salma Umm Rafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "رضوى",
+      "english": "Radwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمونة بنت سعد",
+      "english": "Maymuna bint Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "البلاذري",
+      "english": "al-Baladhuri",
+      "kind": "person"
+    },
+    {
+      "arabic": "سورة التحريم",
+      "english": "Surat al-Tahrim",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن مردويه",
+      "english": "Ibn Mardawayh",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

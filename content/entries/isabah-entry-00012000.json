@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012000",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12000,
+  "title": {
+    "english": "Umm al-Hakam al-Damriyya.¹",
+    "arabic_observed": "أم الحكم الضمرية «١» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012000-segment-0001",
+      "volume": 8,
+      "scan_page": 385,
+      "printed_page": 384,
+      "reader_page": 4297,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4297",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0385:9f5dbcc10c3dfc02",
+      "arabic": "١٢٠٠٠- أم الحكم الضمرية «١» .\nاستدركها أبو موسى، وأورد في ترجمتها حديث أم الحكم بنت الزبير أنها ذهبت هي وفاطمة ﵍ يسألان من النبي ﵌ السبي، وهذه هاشمية ليست ضمرية. وقال ابن الأثير: إن كان ظنها غيرها فقد وهم.\nحرف الخاء المعجمة\nالقسم الأول",
+      "english": "12000—Umm al-Hakam al-Damriyya.¹\n\nAbu Musa supplied her as an omitted entry and, in her notice, cited the hadith of Umm al-Hakam bint al-Zubayr: she and Fatima—may Allah be pleased with her—went to ask the Prophet—may Allah bless him and grant him peace—for captives. This woman, however, is a Hashimite, not a woman of Damra. Ibn al-Athir said: “If he thought her to be someone else, he was mistaken.”\n\nTHE LETTER KHA' WITH A DOT\n\nSECTION ONE",
+      "arabic_sha256": "b9027233ee30dd2683df2f4a9e8f10ebb637811d4b4abe8426f5576a938ce192",
+      "english_sha256": "e114b73a142abf5a56674ad7d9ecddd489b9e8ac2ace289fef3890ab469a9787",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم الحكم الضمرية",
+      "english": "Umm al-Hakam al-Damriyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الحكم بنت الزبير",
+      "english": "Umm al-Hakam bint al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

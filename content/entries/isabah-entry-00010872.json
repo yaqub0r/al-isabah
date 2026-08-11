@@ -1,0 +1,110 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010872",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10872,
+  "title": {
+    "english": "Umayma bint al-Nu'man ibn Sharahil, al-Jawniyya.²",
+    "arabic_observed": "أميمة بنت النعمان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010872-segment-0001",
+      "volume": 8,
+      "scan_page": 36,
+      "printed_page": 35,
+      "reader_page": 3948,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3948",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0036:c4a2b286be23a713",
+      "arabic": "١٠٨٧٢- أميمة بنت النعمان\nبن شراحيل الجونية «٢» .\nذكرها البخاريّ في كتاب «النّكاح» تعليقا من طريق حمزة بن أبي أسيد الساعدي، عن أبيه. ومن طريق عباس بن سهل بن سعد الساعدي، عن أبيه، قالا: تزوج رسول اللَّه ﷺ أميمة بنت النعمان بن شراحيل، فلما أدخلت عليه بسط يده إليها، فكأنها كرهت ذلك، فأمر أبا أسيد أن يجهزها ويكسوها ثوبين رازقيين.\nوأخرجه موصولا من وجه آخر، فقال: حدثنا عبد الرحمن بن الغسيل، عن حمزة بن أبي أسيد، عن أبي أسيد، قال: خرجنا مع رسول اللَّه ﷺ حتى انطلقنا إلى حائط يقال له الشوط، وقد أتى بالجونية، فنزلت في بيت في نخل أميمة بنت النعمان بن شراحيل، ومعها دايتها حاضنة لها، فلما دخل عليها النبي ﷺ قال لها: هبي لي نفسك. فقالت: وهل تهب الملكة نفسها للسوقة؟ قال: فأهوى ليضع يده عليها لتسكن، فقالت: أعوذ باللَّه منك.\nفقال: لقد عذت بمعاذ. ثم خرج، فقال: يا أبا سيد، اكسها رازقيين وألحقها بأهلها.\nورجح البيهقيّ أنها المستعيذة بهذا الحديث الصحيح. وقد تقدم في أسماء بنت النعمان بن الجون شبيه بقصتها. فاللَّه أعلم.",
+      "english": "10872—Umayma bint al-Nu'man ibn Sharahil, al-Jawniyya.²\n\nal-Bukhari mentioned her in the “Book of Marriage” in suspended form, by way of Hamza ibn Abi Usayd al-Sa'idi, from his father, and by way of Abbas ibn Sahl ibn Sa'd al-Sa'idi, from his father. Both said: The Messenger of Allah—may Allah bless him and grant him peace—married Umayma bint al-Nu'man ibn Sharahil. When she was brought in to him, he extended his hand toward her, but she seemed to dislike that. He therefore ordered Abu Usayd to prepare her and clothe her in two Raziqi garments.\n\nHe also transmitted it with a connected chain through another route, saying: Abd al-Rahman ibn al-Ghasil related to us, from Hamza ibn Abi Usayd, from Abu Usayd, who said: We went out with the Messenger of Allah—may Allah bless him and grant him peace—until we reached an enclosed garden called al-Shawt. al-Jawniyya had been brought and was lodged in a house among the date palms—she was Umayma bint al-Nu'man ibn Sharahil—and with her was her nurse, who served as her caretaker. When the Prophet—may Allah bless him and grant him peace—entered upon her, he said to her, “Give yourself to me.” She replied, “Would a queen give herself to a commoner?” He reached out to place his hand upon her so that she might be reassured, but she said, “I seek refuge in Allah from you.”\n\nHe said, “You have indeed sought refuge in One who grants refuge.” He then went out and said, “Abu Usayd, clothe her in two Raziqi garments and return her to her family.”\n\nOn the basis of this sound hadith, al-Bayhaqi considered it more likely that she was the woman who sought refuge. A story resembling hers appeared earlier under Asma bint al-Nu'man ibn al-Jawn. Allah knows best.",
+      "arabic_sha256": "03853bf4e6db3f562c81b6ecdb819792ef7e7a4bd94727bd7fc4a0befc24b037",
+      "english_sha256": "5bf8a255bae6dcaf7dc4aac3f11e85d11c09aa1a4c5a2b1a30efe41c0b8ba218",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة بنت النعمان بن شراحيل الجونية",
+      "english": "Umayma bint al-Nu'man ibn Sharahil",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب النكاح",
+      "english": "Book of Marriage",
+      "kind": "work"
+    },
+    {
+      "arabic": "حمزة بن أبي أسيد الساعدي",
+      "english": "Hamza ibn Abi Usayd al-Sa'idi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي أسيد الساعدي",
+      "english": "Abu Usayd al-Sa'idi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عباس بن سهل بن سعد الساعدي",
+      "english": "Abbas ibn Sahl ibn Sa'd al-Sa'idi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهل بن سعد الساعدي",
+      "english": "Sahl ibn Sa'd al-Sa'idi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن الغسيل",
+      "english": "Abd al-Rahman ibn al-Ghasil",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشوط",
+      "english": "al-Shawt",
+      "kind": "place"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت النعمان بن الجون",
+      "english": "Asma bint al-Nu'man ibn al-Jawn",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

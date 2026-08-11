@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012053",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12053,
+  "title": {
+    "english": "Umm Sa'd bint Qays ibn Hisn ibn Khalida[2] ibn Mukhallad ibn 'Amir[3] ibn Zurayq, the Ansari woman of the Zurayq clan.",
+    "arabic_observed": "أم سعد بنت قيس بن حصن"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012053-segment-0001",
+      "volume": 8,
+      "scan_page": 403,
+      "printed_page": 402,
+      "reader_page": 4315,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4315",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0403:a01cb66255fb593f",
+      "arabic": "١٢٠٥٣- أم سعد بنت قيس بن حصن\nبن خالدة «٢» بن مخلّد بن عامر «٣» بن زريق الأنصاريّة الزرقية.\nذكرها ابن سعد، وقال: أمها خولة بنت الفاكه بن قيس بن مخلّد، تزوّجها قيس بن عمرو بن حصن بن خالدة بن مخلد، ثم خلف عليها مسعود الأكبر بن عبادة بن سعد بن عثمان بن خالدة بن مخلد، وأسلمت أم سعد وبايعت.",
+      "english": "12053 — Umm Sa'd bint Qays ibn Hisn ibn Khalida[2] ibn Mukhallad ibn 'Amir[3] ibn Zurayq, the Ansari woman of the Zurayq clan.\n\nIbn Sa'd mentioned her and said: Her mother was Khawla bint al-Fakih ibn Qays ibn Mukhallad. Qays ibn 'Amr ibn Hisn ibn Khalida ibn Mukhallad married her; then, after him, Mas'ud al-Akbar ibn 'Ubada ibn Sa'd ibn 'Uthman ibn Khalida ibn Mukhallad married her. Umm Sa'd embraced Islam and pledged allegiance.",
+      "arabic_sha256": "6aecbeed3713973d8ea62805df98ca16ad041b9ccd1a3d604007e1ee707a65f4",
+      "english_sha256": "1311a2d0fe4bde74ee1173f144c449e59e249630d22cce84948c332aec613175",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت الفاكه بن قيس بن مخلد",
+      "english": "Khawla bint al-Fakih ibn Qays ibn Mukhallad",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس بن عمرو بن حصن بن خالدة بن مخلد",
+      "english": "Qays ibn 'Amr ibn Hisn ibn Khalida ibn Mukhallad",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسعود الأكبر بن عبادة بن سعد بن عثمان بن خالدة بن مخلد",
+      "english": "Mas'ud al-Akbar ibn 'Ubada ibn Sa'd ibn 'Uthman ibn Khalida ibn Mukhallad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

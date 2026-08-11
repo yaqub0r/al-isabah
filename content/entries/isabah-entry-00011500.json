@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011500",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11500,
+  "title": {
+    "english": "Amra bint Hazm al-Ansariyya (1):",
+    "arabic_observed": "عمرة بنت حزم الأنصاريّة «١»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011500-segment-0001",
+      "volume": 8,
+      "scan_page": 245,
+      "printed_page": 244,
+      "reader_page": 4157,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4157",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0245:9cdb6fca7392041a",
+      "arabic": "١١٥٠٠- عمرة بنت حزم الأنصاريّة «١»:\nروى عنها جابر في ترك الوضوء مما مسّت النار. وقال ابن مندة: رواه عبد اللَّه بن محمد بن عقيل، عن جابر، فلم يسمّها.\nوذكرها ابن سعد في المبايعات، فقال: عمرة بنت حزم بن زيد بن لوذان بن عمرو بن عبد بن عوف بن غنم بن مالك بن النّجّار، قال: وهي أخت عمرو بن حزم وأخويه عمارة ومعمر شقيقتهم، وأمهم خالدة بنت أبي أنس.",
+      "english": "11500 — Amra bint Hazm al-Ansariyya (1):\n\nJabir narrated from her concerning foregoing ablution because of what fire had touched. Ibn Manda said: “Abd Allah ibn Muhammad ibn Aqil transmitted it from Jabir but did not name her.”\n\nIbn Sa'd included her among the women who pledged allegiance, saying: “Amra bint Hazm ibn Zayd ibn Lawdhan ibn Amr ibn Abd ibn Awf ibn Ghanm ibn Malik ibn al-Najjar.” He said: “She was the sister of Amr ibn Hazm and his two brothers, Imara and Mu'ammar, and was their full sister. Their mother was Khalida bint Abi Anas.”",
+      "arabic_sha256": "88bdb6212eaa72e778a9e2fb63097741c6c82c3485bcdf96f5b41095deeeaefb",
+      "english_sha256": "31bc6832ea46334c4020fc0b7aee0bdebeab44881c8718caba3a2399dec527af",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "جابر",
+      "english": "Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن محمد بن عقيل",
+      "english": "Abd Allah ibn Muhammad ibn Aqil",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن حزم",
+      "english": "Amr ibn Hazm",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمارة",
+      "english": "Imara ibn Hazm",
+      "kind": "person"
+    },
+    {
+      "arabic": "معمر",
+      "english": "Mu'ammar ibn Hazm",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالدة بنت أبي أنس",
+      "english": "Khalida bint Abu Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

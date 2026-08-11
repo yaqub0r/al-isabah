@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011055",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11055,
+  "title": {
+    "english": "Hukayma,",
+    "arabic_observed": "حكيمة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011055-segment-0001",
+      "volume": 8,
+      "scan_page": 88,
+      "printed_page": 87,
+      "reader_page": 4000,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4000",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0088:79ce22d0b4609671",
+      "arabic": "١١٠٥٥- حكيمة ،\nبالتصغير، بنت غيلان الثقفية «٢»، امرأة يعلى بن مرة.\nما أدري أسمعت النبيّ ﷺ أو لا، قاله أبو عمر، قال: ولها رواية عن زوجها.\nقلت: ...",
+      "english": "11055—Hukayma,\nin the diminutive form, bint Ghaylan al-Thaqafiyya, [2] the wife of Ya'la ibn Murra.\n\n“I do not know whether she heard the Prophet—may Allah bless him and grant him peace—or not,” Abu Umar said. He added: She has a report from her husband.\n\nI say: …",
+      "arabic_sha256": "a52a8562ea39b7ef36fffb8d0837d61105a3a1d2227be2934d94e4b0400992ae",
+      "english_sha256": "611ce9db439dfbacf6263f7985790343a96bc982d51acb589fbb35821996bb91",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثقفية",
+      "english": "Thaqif",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "يعلى بن مرة",
+      "english": "Ya'la ibn Murra",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

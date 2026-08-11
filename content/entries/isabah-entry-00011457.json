@@ -1,0 +1,130 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011457",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11457,
+  "title": {
+    "english": "Atika bint Nu'aym al-Ansariyya. (3)",
+    "arabic_observed": "عاتكة بنت نعيم الأنصارية «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011457-segment-0001",
+      "volume": 8,
+      "scan_page": 231,
+      "printed_page": 230,
+      "reader_page": 4143,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4143",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0231:97b0c3ca1779eb87",
+      "arabic": "١١٤٥٧- عاتكة بنت نعيم الأنصارية «٣»\n. قال أبو عمر: حديثها عن أبي لهيعة، عن أبي الأسود، عن حميد بن نافع، عن زينب بنت أبي سلمة، عن عاتكة بنت نعيم أخت عبد اللَّه بن نعيم- أنها جاءت رسول اللَّه ﵌ فقالت: إنّ ابنتها توفّي زوجها فحدّت عليه، فرمدت رمدا شديدا، وخشيت على بصرها أفتكتحل؟ قال: «لا، إنّما هي أربعة أشهر وعشر. فقد كانت المرأة منكنّ تحدّ سنة ثمّ تخرج فترمي بالبعرة على رأس الحول» .\nقلت: وصله [...] ابن مندة، من طريق عثمان بن صالح، عن ابن لهيعة مثله، لكن أدخل بين زينب بنت أبي سلمة وعاتكة أم سلمة، ولم ينسب عاتكة أنصارية.\nونسبها أبو نعيم عدويّة، وهو الصّواب، وأخرجه الطّبراني من وجه آخر عن ابن لهيعة، فذكر بدل حميد بن نافع القاسم بن محمّد، وأشار أبو نعيم إلى تصويبه، ووقع في سياقه عن أم سلمة أنّ بنت نعيم بن عبد اللَّه العدويّ أتت النبي ﵌ ...\nفذكر الحديث.",
+      "english": "11457 — Atika bint Nu'aym al-Ansariyya. (3)\n\nAbu Umar said: Her hadith comes by way of Abu Lahi'a, from Abu al-Aswad, from Humayd ibn Nafi, from Zaynab bint Abi Salama, from Atika bint Nu'aym, the sister of Abd Allah ibn Nu'aym: she came to the Messenger of Allah, may Allah bless him and grant him peace, and said: “Her daughter's husband died, and she mourned him. She then suffered severe inflammation of the eyes and feared for her sight. May she use kohl?” He said: “No. It is only four months and ten days. A woman among you used to mourn for a year; then she would go out and throw a pellet of dung at the completion of the year.”\n\nI say: Ibn Manda transmitted it with a connected chain, by way of Uthman ibn Salih, from Ibn Lahi'a, with a similar report. In his chain, however, he inserted Umm Salama between Zaynab bint Abi Salama and Atika, and he did not describe Atika as an Ansari woman.\n\nAbu Nu'aym identified her as an Adawiyya, which is correct. Al-Tabarani transmitted it by another route from Ibn Lahi'a, naming al-Qasim ibn Muhammad in place of Humayd ibn Nafi. Abu Nu'aym indicated that this was the correct version. Its wording reports from Umm Salama that the daughter of Nu'aym ibn Abd Allah al-Adawi came to the Prophet, may Allah bless him and grant him peace ... He then related the hadith.",
+      "arabic_sha256": "2f081908b52c89701df9af78adc3bf45a965e48b940ce4274505cc2745673970",
+      "english_sha256": "cba076749fabc464f06f3f16c9479c03e37ff52c392b014190cd543ea7d0f212",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاتكة بنت نعيم الأنصارية",
+      "english": "Atika bint Nu'aym al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي لهيعة",
+      "english": "Abu Lahi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي الأسود",
+      "english": "Abu al-Aswad",
+      "kind": "person"
+    },
+    {
+      "arabic": "حميد بن نافع",
+      "english": "Humayd ibn Nafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت أبي سلمة",
+      "english": "Zaynab bint Abi Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن نعيم",
+      "english": "Abd Allah ibn Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن صالح",
+      "english": "Uthman ibn Salih",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن لهيعة",
+      "english": "Ibn Lahi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطّبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "القاسم بن محمّد",
+      "english": "al-Qasim ibn Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "نعيم بن عبد اللَّه العدويّ",
+      "english": "Nu'aym ibn Abd Allah al-Adawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

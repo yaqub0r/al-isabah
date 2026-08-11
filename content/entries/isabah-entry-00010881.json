@@ -1,0 +1,88 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010881",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10881,
+  "title": {
+    "english": "Umayya bint Abi Qays al-Ghifariyya¹",
+    "arabic_observed": "أمية بنت أبي قيس الغفارية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010881-segment-0001",
+      "volume": 8,
+      "scan_page": 38,
+      "printed_page": 37,
+      "reader_page": 3950,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3950",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0038:0055ac798faa54ad",
+      "arabic": "١٠٨٨١- أمية بنت أبي قيس الغفارية «١»\n. لها ذكر في ترجمة صفية بنت حيي عند ابن سعد، قال: أخبرنا الواقدي، حدثنا محمد بن موسى، عن عمارة بن المهاجر، عن أمية بنت أبي قيس الغفارية، قالت: أنبأتنا إحدى النسوة اللاتي زففن صفية بنت حيي إلى النبي ﷺ، فسمعتها تقول: ما بلغت سبع عشرة سنة ... فذكر القصة.",
+      "english": "10881—Umayya bint Abi Qays al-Ghifariyya¹\n\nShe is mentioned in Ibn Sa'd's entry on Safiyya bint Huyayy. He said: Al-Waqidi informed us: Muhammad ibn Musa narrated to us, from 'Umara ibn al-Muhajir, from Umayya bint Abi Qays al-Ghifariyya, who said: One of the women who escorted Safiyya bint Huyayy as a bride to the Prophet—may Allah bless him and grant him peace—informed us, and I heard her say: “I had not reached seventeen years of age ...” He then related the story.",
+      "arabic_sha256": "6c0eaffbc4352e2ee480bc28ec9ab514a8aaedc6c383afe2b361b6a45d29add6",
+      "english_sha256": "421f4a03e6f1bf30cbd51f1857e84e8a48d64d5d7036de9ef899446146f35b48",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمية بنت أبي قيس الغفارية",
+      "english": "Umayya bint Abi Qays al-Ghifariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت حيي",
+      "english": "Safiyya bint Huyayy",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن موسى",
+      "english": "Muhammad ibn Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمارة بن المهاجر",
+      "english": "'Umara ibn al-Muhajir",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ، رسول الله ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "pronoun-antecedent",
+      "arabic_span": "فسمعتها تقول",
+      "explanation": "The supplied witnesses do not establish whether the feminine pronoun was intended to refer to Safiyya or to the unnamed woman who escorted her. The English preserves the source's ambiguity as “I heard her say” and does not impose an unsupported identification.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0038:0055ac798faa54ad"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

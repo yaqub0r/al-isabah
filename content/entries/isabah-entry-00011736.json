@@ -1,0 +1,139 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011736",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11736,
+  "title": {
+    "english": "Lina:",
+    "arabic_observed": "لينة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011736-segment-0001",
+      "volume": 8,
+      "scan_page": 309,
+      "printed_page": 308,
+      "reader_page": 4221,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4221",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0309:0ba619c4fb4f3e1c",
+      "arabic": "١١٧٣٦- لينة:\nصاحبة مكان «٣» قباء.\nأخرج عمر بن شبّة في أخبار المدينة بسند صحيح إلى عروة، قال: كان موضع مسجد قباء لامرأة يقال لها لينة، كانت تربط حمارا لها، فابتنى فيه سعد بن خيثمة مسجدا، فقال\n(١) الاستيعاب ت (٣٥٣٧) .\n(٢) أسد الغابة ت (٧٢٦٩)، الاستيعاب ت (٣٥٣٩) .\n(٣) في أ: صاحبة مكان مسجد قباء.",
+      "english": "11736—Lina:\n\nThe owner of a site at Quba.(3)\n\n'Umar ibn Shabba transmitted in Akhbar al-Madina, with a sound chain to 'Urwa, who said: The site of Quba Mosque belonged to a woman called Lina, who used to tether a donkey of hers there. Sa'd ibn Khaythama then built a mosque there, and [the people of the Mosque of Harm] said—\n\n(1) al-Isti'ab, entry 3537.\n\n(2) Usd al-Ghaba, entry 7269; al-Isti'ab, entry 3539.\n\n(3) In A: “The owner of the site of Quba Mosque.”",
+      "arabic_sha256": "ba4ae28ff96eeb67aa930f7ff13669a3c18509a8ac3abc1f9312446a081e09a7",
+      "english_sha256": "0cacb326a0e23e55aec842c5e7a8aa2242018b34bc8494a2cdf71e210fc3fed3",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011736-segment-0002",
+      "volume": 8,
+      "scan_page": 310,
+      "printed_page": 309,
+      "reader_page": 4222,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4222",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0310:30796c9ae0facfda",
+      "arabic": "أهل مسجد الضرار: أنحن نصلّي في مربط حمار لينة، لا، لعمر اللَّه، لكنا نبني مسجدا فنصلي فيه إلى أن يجيء أبو عامر فيؤمنا فيه، فأنزل اللَّه تعالى: وَالَّذِينَ اتَّخَذُوا مَسْجِدًا ضِرارًا ... [التوبة: ١٠٧] الآية.\nالقسم الثاني\nخال.\nالقسم الثالث",
+      "english": "The people of the Mosque of Harm said: “Are we to pray in the place where Lina's donkey is tethered? No, by the life of Allah! Rather, we shall build a mosque and pray in it until Abu Amir comes and leads us in prayer there.” Then Allah Most High revealed: “And those who took a mosque for harm …” [al-Tawba: 107]—the verse.\n\nSECTION TWO\n\nEmpty.\n\nSECTION THREE",
+      "arabic_sha256": "6989161970ee550a7fe13b6f54d2da7ae5d3d1f2cb82e2098d1bb21dad95d158",
+      "english_sha256": "607ff21adc95d295efc6ba4328b2332bd80261e9daa1a5645a33fd516c77773d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "لينة",
+      "english": "Lina",
+      "kind": "person"
+    },
+    {
+      "arabic": "قباء",
+      "english": "Quba",
+      "kind": "place"
+    },
+    {
+      "arabic": "مسجد قباء",
+      "english": "Quba Mosque",
+      "kind": "place"
+    },
+    {
+      "arabic": "عمر بن شبة",
+      "english": "'Umar ibn Shabba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أخبار المدينة",
+      "english": "Akhbar al-Madina",
+      "kind": "work"
+    },
+    {
+      "arabic": "عروة",
+      "english": "'Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن خيثمة",
+      "english": "Sa'd ibn Khaythama",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسجد الضرار",
+      "english": "Mosque of Harm",
+      "kind": "place"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عامر",
+      "english": "Abu Amir",
+      "kind": "person"
+    },
+    {
+      "arabic": "التوبة",
+      "english": "al-Tawba",
+      "kind": "work"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "الطايسكاني",
+      "explanation": "The consonantal spelling supports the provisional ASCII form al-Tayisakani, but none of the supplied witnesses establishes its conventional vocalization.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0309:0ba619c4fb4f3e1c"
+    },
+    {
+      "category": "semantic_nuance",
+      "arabic_span": "تنبت أجسادنا على أرواح أهل الجنة",
+      "explanation": "The canonical syntax is translated literally as “our bodies grow upon the spirits of the people of Paradise,” but the specialized intended sense of the phrase remains uncertain; the collateral variant بنيت cannot replace al-Isabah's تنبت.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0309:0ba619c4fb4f3e1c"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

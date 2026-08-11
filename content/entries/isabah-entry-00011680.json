@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011680",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11680,
+  "title": {
+    "english": "Kubaysha bint Malik ibn Qays al-Ansariyya²",
+    "arabic_observed": "كبيشة بنت مالك"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011680-segment-0001",
+      "volume": 8,
+      "scan_page": 297,
+      "printed_page": 296,
+      "reader_page": 4209,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4209",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0297:6a96b80e7cf7315e",
+      "arabic": "١١٦٨٠- كبيشة بنت مالك\nبن قيس الأنصارية «٢»، من بني مازن.\nذكرها ابن حبيب في المبايعات، وهي الشموس، وذكرها ابن سعد بغير تصغير وقال:\nأمها سهمية بنت عويمر بن أسعر، تزوجها ثعلبة بن محصن بن عمرو بن عتيك بن عمرو بن مبذول، ثم خلف عليها الحباب بن عمرو بن مبذل، فولدت له زينب.",
+      "english": "11680 — Kubaysha bint Malik ibn Qays al-Ansariyya²\n\nShe was of Banu Mazin.\n\nIbn Habib mentioned her among the women who gave the pledge of allegiance. She is al-Shamus. Ibn Sa'd mentioned her name without the diminutive form and said: “Her mother was Sahmiyya bint 'Uwaymir ibn As'ar. Tha'laba ibn Mihsan ibn 'Amr ibn 'Atik ibn 'Amr ibn Mabdhul married her. Then, after him, al-Hubab ibn 'Amr ibn Mabdhal married her, and she bore him Zaynab.”",
+      "arabic_sha256": "abc913131a74786d879dc8d8c1552890529877cdf3ead4ba343f42b4fc7bfd97",
+      "english_sha256": "c18e56b01f76585267758eedec5eac2f4de21e2f82e84ec1137e4c3b939a45c2",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "كبيشة بنت مالك بن قيس الأنصارية",
+      "english": "Kubaysha bint Malik ibn Qays al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني مازن",
+      "english": "Banu Mazin",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشموس",
+      "english": "al-Shamus",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهمية بنت عويمر بن أسعر",
+      "english": "Sahmiyya bint 'Uwaymir ibn As'ar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثعلبة بن محصن بن عمرو بن عتيك بن عمرو بن مبذول",
+      "english": "Tha'laba ibn Mihsan ibn 'Amr ibn 'Atik ibn 'Amr ibn Mabdhul",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحباب بن عمرو بن مبذل",
+      "english": "al-Hubab ibn 'Amr ibn Mabdhal",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

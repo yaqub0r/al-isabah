@@ -1,0 +1,105 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011197",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11197,
+  "title": {
+    "english": "Rumaitha al-Ansariyya",
+    "arabic_observed": "رميثة الأنصارية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011197-segment-0001",
+      "volume": 8,
+      "scan_page": 145,
+      "printed_page": 144,
+      "reader_page": 4057,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4057",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0145:4202cd84d3358069",
+      "arabic": "١١١٩٧- رميثة الأنصارية ،\nجدة عاصم بن عمر بن قتادة الأنصاري التابعي المشهور.\nأخرج التّرمذيّ،\nمن طريق يوسف الماجشون، عن أبيه، عن عاصم بن عمر، عن جدته رميثة، قالت سمعت رسول اللَّه ﷺ ولو أشاء أن أقبل الخاتم الّذي بين كتفيه من قربه لفعلت. يقول لسعد بن معاذ يوم مات: «اهتزّ له عرش الرّحمن» .\nوروى ابن المنكدر عن ابن رميثة عنها، عن عائشة حديثا في صلاة الضحى.",
+      "english": "11197 — Rumaitha al-Ansariyya\n\nThe grandmother of Asim ibn Umar ibn Qatada al-Ansari, the famous Successor.\n\nal-Tirmidhi transmitted, by way of Yusuf al-Majishun, from his father, from Asim ibn Umar, from his grandmother Rumaitha, who said: “I heard the Messenger of Allah ﷺ—such was his nearness that, had I wished, I could have kissed the seal between his shoulders—say concerning Sa'd ibn Mu'adh on the day he died: ‘The Throne of the All-Merciful shook for him.’”\n\nIbn al-Munkadir transmitted from Ibn Rumaitha, from her, from Aisha, a hadith concerning the Duha prayer.",
+      "arabic_sha256": "478c141121c6e837e1375c6572bb690f343e99fb387c7c212acb1dab96d4aebb",
+      "english_sha256": "6a966fb31a16fc1b495fa0a36673abc1a92ecf67de5d25433f9d15044649d301",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رميثة",
+      "english": "Rumaitha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاصم بن قتادة",
+      "english": "Asim ibn Umar ibn Qatada al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "رميثة الأنصارية",
+      "english": "Rumaitha al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاصم بن عمر بن قتادة الأنصاري",
+      "english": "Asim ibn Umar ibn Qatada al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "يوسف الماجشون",
+      "english": "Yusuf al-Majishun",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن معاذ",
+      "english": "Sa'd ibn Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن المنكدر",
+      "english": "Muhammad ibn al-Munkadir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن رميثة",
+      "english": "Ibn Rumaitha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الرّحمن",
+      "english": "the All-Merciful",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

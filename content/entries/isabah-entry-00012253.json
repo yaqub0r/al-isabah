@@ -1,0 +1,229 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012253",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12253,
+  "title": {
+    "english": "Umm Mistah:",
+    "arabic_observed": "أم مسطح:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012253-segment-0001",
+      "volume": 8,
+      "scan_page": 473,
+      "printed_page": 472,
+      "reader_page": 4385,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4385",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0473:b9f6c84fc251ec4d",
+      "arabic": "١٢٢٥٣- أم مسطح:\nالقرشية التيمية، ويقال المطلبية، وهي بنت أبي رهم أنيس «٧»،\n(١) أخرجه أحمد ٣/ ٤٥٥، ٤٥٦، ٤٦٠.\n(٢) أسد الغابة ت (٧٥٩٢) .\n(٣) أسد الغابة ت (٧٥٩٣)، تجريد أسماء الصحابة ٢/ ٣٣٤،.\n(٤) وهو حفص بن سليمان أبو عمر الأسدي مولاهم الكوفي الغاضري صاحب القراءة كان ثبتا في القراءة واهيا في الحديث قاله الذهبي، وقال ابن معين: ليس بثقة، وقال البخاري: تركوه، قال ابن خرشة: كذاب يضع الحديث أيضا ميزان الاعتدال ١/ ٥٥٨.\n(٥) تجريد أسماء الصحابة ٢/ ٣٣٤، أسد الغابة ت (٧٥٩٥) .\n(٦) أسد الغابة ت (٧٥٩٦)، الاستيعاب ت (٣٦٧٠)، أعلام النساء ٥/ ٣٣، تجريد أسماء الصحابة ٢/ ٣٣٥.\n(٧) أسد الغابة ت (٧٥٩٧) .",
+      "english": "12253—Umm Mistah:\n\nThe Qurashi woman of Taym; she is also said to have been of al-Muttalib. She was the daughter of Abu Rahm Anis,⁷\n\n(1) Transmitted by Ahmad, 3/455, 456, 460.\n\n(2) Usd al-Ghaba, entry 7592.\n\n(3) Usd al-Ghaba, entry 7593; al-Tajrid, 2/334.\n\n(4) He is Hafs ibn Sulayman, Abu Umar al-Asadi, their client, the Kufan al-Ghadiri, the master of Qur'anic recitation. He was reliable in recitation but feeble in hadith, according to al-Dhahabi. Ibn Ma'in said, “He is not trustworthy.” Al-Bukhari said, “They abandoned him.” Ibn Khirash said, “A liar who also fabricates hadith.” Mizan al-I'tidal, 1/558.\n\n(5) al-Tajrid, 2/334; Usd al-Ghaba, entry 7595.\n\n(6) Usd al-Ghaba, entry 7596; al-Isti'ab, entry 3670; A'lam al-Nisa', 5/33; al-Tajrid, 2/335.\n\n(7) Usd al-Ghaba, entry 7597.",
+      "arabic_sha256": "4e7ef451494f05a6c32085198a16fdb70d39c67414fc4bb9ebbec86a7150b08f",
+      "english_sha256": "c5fc6ac331b71fbbe2ec050767c51a92170037ead74b829aa8e79abfaf66b537",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012253-segment-0002",
+      "volume": 8,
+      "scan_page": 474,
+      "printed_page": 473,
+      "reader_page": 4386,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4386",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0474:bc3f02d2ccc56767",
+      "arabic": "بفتح الهمزة بعدها نون مكسورة، ابن عبد المطلب بن عبد مناف. ويقال بنت صخر بن عامر بن كعب بن تيم بن مرة.\nقلت: هكذا حكى أبو موسى، وهو غلط، فإن هذا نسب سلمى أم الخير والدة أبي بكر هي بنت صخر إلى آخره، والّذي قال غيره أنها بنت خالة أبي بكر الصديق، اسمها رائطة بنت صخر ... إلخ، هكذا قال ابن سعد يقال اسمها سلمى، ويقال ريطة، حكاه ابن الأمين، عن ابن بشكوال، وبه حزم ابن جزم في الجمهرة، وهي مشهورة بكنيتها.\nثبت ذكرها في «الصّحيحين» في قصة الإفك حين خرجت عائشة لقضاء الحاجة، فعثرت فقالت: تعس مسطح! فقال لها عائشة: تسبين رجلا شهد بدرا! فقالت: أو لم تعلمي ما قال؟ فذكرت لها قصة الإفك، وكان مسطح ممن تكلّم في ذلك.\nوقد تقدم ذلك في ترجمته.\nوقال ابن سعد: أسلمت أم مسطح، فحسن إسلامها، وكانت من أشد الناس على مسطح حين تكلّم مع أهل الإفك.",
+      "english": "—with the hamza bearing a fatha, followed by a nun bearing a kasra—ibn Abd al-Muttalib ibn Abd Manaf. It is also said: bint Sakhr ibn Amir ibn Ka'b ibn Taym ibn Murra.\n\nI say: This is how Abu Musa related it, but it is an error, for this is the lineage of Salma Umm al-Khayr, the mother of Abu Bakr: she was bint Sakhr, and so on. What others said is that she was the daughter of Abu Bakr al-Siddiq's maternal aunt, and that aunt's name was Ra'ita bint Sakhr ... etc. This is what Ibn Sa'd said. It is said that her name was Salma, and it is also said Rayta; Ibn al-Amin related this from Ibn Bashkuwal. Ibn Hazm stated this decisively in al-Jamhara. She is well known by her kunyah.\n\nShe is mentioned in al-Sahihayn in the account of the Slander. When Aisha went out to relieve herself, Umm Mistah stumbled and said, “May Mistah come to grief!” Aisha said to her, “Are you reviling a man who witnessed Badr?” She replied, “Have you not learned what he said?” She then recounted to Aisha the account of the Slander. Mistah was among those who spoke about it.\n\nThis has already been presented in his biography.\n\nIbn Sa'd said: Umm Mistah embraced Islam and practiced it well. She was among the people most severe toward Mistah when he joined the people of the Slander in speaking about it.",
+      "arabic_sha256": "112522dd6aada258e5d0010dc0ddd32e840b3f789a92847e8a3f41282ac0a8b6",
+      "english_sha256": "73623801f12d00a0535ccce54f5ebd0c0ed7e13b3950d640d71646eb2442d8f0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حفص بن أبي داود",
+      "english": "Hafs ibn Sulayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفص بن سليمان القارئ",
+      "english": "Hafs ibn Sulayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم مسطح",
+      "english": "Umm Mistah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي رهم أنيس",
+      "english": "Abu Rahm Anis",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "التيمية",
+      "english": "Taym",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "المطلبية",
+      "english": "Banu al-Muttalib",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن معين",
+      "english": "Ibn Ma'in",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن خرشة",
+      "english": "Ibn Khirash",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميزان الاعتدال",
+      "english": "Mizan al-I'tidal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد المطلب بن عبد مناف",
+      "english": "Abd al-Muttalib ibn Abd Manaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "صخر بن عامر بن كعب بن تيم بن مرة",
+      "english": "Sakhr ibn Amir ibn Ka'b ibn Taym ibn Murra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى أم الخير",
+      "english": "Salma Umm al-Khayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي بكر الصديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "رائطة بنت صخر",
+      "english": "Ra'ita bint Sakhr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى",
+      "english": "Salma",
+      "kind": "person"
+    },
+    {
+      "arabic": "ريطة",
+      "english": "Rayta",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأمين",
+      "english": "Ibn al-Amin",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن بشكوال",
+      "english": "Ibn Bashkuwal",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن جزم",
+      "english": "Ibn Hazm",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجمهرة",
+      "english": "al-Jamhara",
+      "kind": "work"
+    },
+    {
+      "arabic": "الصحيحين",
+      "english": "al-Sahihayn",
+      "kind": "work"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسطح",
+      "english": "Mistah",
+      "kind": "person"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

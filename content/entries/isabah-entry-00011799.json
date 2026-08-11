@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011799",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11799,
+  "title": {
+    "english": "Maymuna bint Sa'd [1]",
+    "arabic_observed": "ميمونة بنت سعد «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011799-segment-0001",
+      "volume": 8,
+      "scan_page": 332,
+      "printed_page": 331,
+      "reader_page": 4244,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4244",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0332:360e00215fcfb92d",
+      "arabic": "١١٧٩٩- ميمونة بنت سعد «١»\n: التي روت عنها أمية بنت عمر بن عبد العزيز.\nأفردها بعضهم عن ميمونة بنت سعد خادم النّبيّ ﵌، وقد أوضحت حالها في ذلك في\nالقسم الأول ، وأن الّذي أفردها وهم في ذلك لكونها لم تنسب في روايته.\nحرف النون\nالقسم الأول",
+      "english": "11799 — Maymuna bint Sa'd [1]\n\nShe was the woman from whom Umayya bint 'Umar ibn 'Abd al-'Aziz narrated.\n\nSome distinguished her from Maymuna bint Sa'd, the servant of the Prophet—may Allah bless him and grant him peace. I clarified her status in this regard in Section One and explained that whoever treated her as a separate person was mistaken because she was not given a lineage in his narration.\n\nTHE LETTER NUN\n\nSECTION ONE",
+      "arabic_sha256": "dcab9ec7a3305cc9f2102f72ddb5f65ff1a209b4b9be0fc1d534e0f4ddac8792",
+      "english_sha256": "7fb5c9a1500c8ed081a2be7b3e8b4ce0dd7bca77f0c06fba4527fda95c24aff9",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ميمونة بنت سعد",
+      "english": "Maymuna bint Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمية بنت عمر بن عبد العزيز",
+      "english": "Umayya bint 'Umar ibn 'Abd al-'Aziz",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

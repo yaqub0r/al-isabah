@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011830",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11830,
+  "title": {
+    "english": "NUWAYLA BINT ASLAM(2):",
+    "arabic_observed": "نويلة بنت أسلم «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011830-segment-0001",
+      "volume": 8,
+      "scan_page": 339,
+      "printed_page": 338,
+      "reader_page": 4251,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4251",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0339:94acd764432c5177",
+      "arabic": "١١٨٣٠- نويلة بنت أسلم «٢»\n: أو مسلم، الأنصاريّة الحارثيّة.\nويقال أولها مثناة فوقانية، تقدمت في المثناة، وهذه التي بالنون رواية إسحاق بن إدريس، عن جعفر بن محمود والتي تقدّمت رواية إبراهيم بن حمزة، وهو أوثق.\nالقسم الثاني والقسم والثالث\nخاليان.\nالقسم الرابع",
+      "english": "11830—NUWAYLA BINT ASLAM(2):\n\nOr bint Muslim; an Ansari woman of Banu Haritha.\n\nIt is also said that the first letter of her name is ta, with two dots above; she was discussed previously under that letter. The form here beginning with nun is the version narrated by Ishaq ibn Idris from Ja'far ibn Mahmud, whereas the form given previously is the version narrated by Ibrahim ibn Hamza, who is more reliable.\n\nTHE SECOND SECTION AND THE THIRD SECTION\n\nBoth are empty.\n\nTHE FOURTH SECTION",
+      "arabic_sha256": "d88aef4b7daf49e3743f60a21776d0a6d6731ddf080db21fefe4214fc4d155a2",
+      "english_sha256": "f9746bf048efd042afbfa6c52ac9544bab18491f41afb5297d3230099c8654d3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "نويلة بنت أسلم",
+      "english": "Nuwayla bint Aslam",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصاريّة",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الحارثيّة",
+      "english": "Banu Haritha",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "إسحاق بن إدريس",
+      "english": "Ishaq ibn Idris",
+      "kind": "person"
+    },
+    {
+      "arabic": "جعفر بن محمود",
+      "english": "Ja'far ibn Mahmud",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن حمزة",
+      "english": "Ibrahim ibn Hamza",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011494",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11494,
+  "title": {
+    "english": "Umara bint Abi Ayyub (Khalid ibn Zayd), al-Ansariyya:",
+    "arabic_observed": "عمارة بنت أبي أيوب:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011494-segment-0001",
+      "volume": 8,
+      "scan_page": 243,
+      "printed_page": 242,
+      "reader_page": 4155,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4155",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0243:1e8ea87983cbdbf4",
+      "arabic": "١١٤٩٤- عمارة بنت أبي أيوب:\nخالد بن زيد الأنصارية.\nذكرها ابن حبيب فيمن بايع النبي ﵌ من النساء، وكذا ابن\n(١) أسد الغابة ت (٧١١٦)، تجريد أسماء الصحابة ٢/ ٢٨٨.\n(٢) في أ: حدثنا عبد اللَّه بن عبيد اللَّه.\n(٣) أخرجه أحمد في المسند ١/ ٢٩١، ٣١٠، ٤/ ٦ والطبراني في الكبير ١٢/ ٥٠، وابن عدي في الكامل. ٤/ ١٧١ عن أبي موسى.\n(٤) أسد الغابة ت (٧١١٨)، الاستيعاب ت (٣٤٨٥) .\n(٥) أخرجه أحمد في المسند ٣/ ٤٤٩ عن السائب بن يزيد، والطبراني في الكبير ٧/ ١٧٦.\n(٦) أسد الغابة ت (٧١١٩) .\n(٧) في أ: هي بنت الحارث. تأتي.",
+      "english": "11494—Umara bint Abi Ayyub (Khalid ibn Zayd), al-Ansariyya:\n\nIbn Habib mentioned her among the women who pledged allegiance to the Prophet (may Allah bless him and grant him peace), and likewise Ibn—\n\n[1] Usd al-Ghaba, entry 7116; al-Tajrid, 2/288.\n\n[2] In manuscript A: “Abd Allah ibn Ubayd Allah related to us.”\n\n[3] Reported in Musnad Ahmad, 1/291, 310 and 4/6; by al-Tabarani in al-Kabir, 12/50; and by Ibn Adi in al-Kamil, 4/171, from Abu Musa.\n\n[4] Usd al-Ghaba, entry 7118; al-Isti'ab, entry 3485.\n\n[5] Reported in Musnad Ahmad, 3/449, from al-Sa'ib ibn Yazid; and by al-Tabarani in al-Kabir, 7/176.\n\n[6] Usd al-Ghaba, entry 7119.\n\n[7] In manuscript A: “She is bint al-Harith. She will appear later.”",
+      "arabic_sha256": "bfbf84498287b3d6abfd172c3f26c317b24db11f169868d69e6791685f236b65",
+      "english_sha256": "b65a6c64a28b9f6fdbcdadb28aa18573a2f8a4846c7b3f922a948c226084607f",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011494-segment-0002",
+      "volume": 8,
+      "scan_page": 244,
+      "printed_page": 243,
+      "reader_page": 4156,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4156",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0244:348f5494feef74c2",
+      "arabic": "سعد، وقال: تزوجها صفوان بن أوس بن جابر بن قرط، من بني معاوية بن مالك بن النجار، فولدت له خالد بن صفوان.",
+      "english": "Sa'd; he said: Safwan ibn Aws ibn Jabir ibn Qurt, of Banu Mu'awiya ibn Malik ibn al-Najjar, married her, and she bore him Khalid ibn Safwan.",
+      "arabic_sha256": "fa5cec145442a6f70ab03f3ec89101814bbad643b398dcc18416a0f10bad397a",
+      "english_sha256": "fa8e528f55bc7b0fb65bbe665898264363cddecf074101d1d29209b9187422b1",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عبد اللَّه بن عبيد اللَّه",
+      "english": "Abd Allah ibn Ubayd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "السائب بن يزيد",
+      "english": "al-Sa'ib ibn Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث",
+      "english": "al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عدي",
+      "english": "Ibn Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكامل",
+      "english": "al-Kamil",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "صفوان بن أوس بن جابر بن قرط",
+      "english": "Safwan ibn Aws ibn Jabir ibn Qurt",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني معاوية بن مالك بن النجار",
+      "english": "Banu Mu'awiya ibn Malik ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "خالد بن صفوان",
+      "english": "Khalid ibn Safwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر",
+      "english": "Jabir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

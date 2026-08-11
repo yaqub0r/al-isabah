@@ -1,0 +1,114 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012161",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12161,
+  "title": {
+    "english": "Umm Ubays[2]",
+    "arabic_observed": "أم عبيس «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012161-segment-0001",
+      "volume": 8,
+      "scan_page": 434,
+      "printed_page": 433,
+      "reader_page": 4346,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4346",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0434:74754fd4b8427997",
+      "arabic": "١٢١٦١- أم عبيس «٢»\nبنت مسلمة الأنصاريّة، أخت محمد بن مسلمة.\nتقدم نسبها في ترجمة محمّد، وكانت امرأة أبي عبس بن جبر فولدت له، وأسلمت وبايعت.\n(١) أعلام النساء ٣/ ٢٣٥ تجريد أسماء الصحابة ٢/ ٣٢٨، أسد الغابة ت (٧٥٢٩) .\n(٢) في أ: أم عبس.",
+      "english": "12161—Umm Ubays[2]\n\nbint Maslama al-Ansariyya, the sister of Muhammad ibn Maslama.\n\nHer lineage was given previously in the entry on Muhammad. She was the wife of Abu Abs ibn Jabr and bore him children. She embraced Islam and pledged allegiance.\n\n[1] A'lam al-Nisa, 3/235; al-Tajrid, 2/328; Usd al-Ghaba, entry 7529.\n\n[2] In manuscript A: “Umm Abs.”",
+      "arabic_sha256": "1330c10cdaaad7c00aa6c64b32c13a5092a489c60bfd3ffc4cfd03ef4f44671e",
+      "english_sha256": "4443a68313f4cde412825422baabb99318f8418e87d3bdcba1208290f9ccc5fb",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012161-segment-0002",
+      "volume": 8,
+      "scan_page": 435,
+      "printed_page": 434,
+      "reader_page": 4347,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4347",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0435:68b332c74d74bc6f",
+      "arabic": "قال محمّد بن سعد: أمها خليدة بنت أبي عبيد بن وهب بن لوذان.",
+      "english": "Muhammad ibn Sa'd said: Her mother was Khulayda bint Abi 'Ubayd ibn Wahb ibn Lawdhan.",
+      "arabic_sha256": "60a5a8e3502a1e342ad9962695dbd0a5fe4f2f384e9b6df1cf2a783227f1e281",
+      "english_sha256": "da64fce61c640206d7517394c415ac911b1bcc6224a2ec46b745fef4a2bedbf6",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النّبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصاريّة",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "محمد بن مسلمة",
+      "english": "Muhammad ibn Maslama",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمّد",
+      "english": "Muhammad ibn Maslama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عبس بن جبر",
+      "english": "Abu Abs ibn Jabr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبس",
+      "english": "Umm Abs bint Maslama al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "محمّد بن سعد",
+      "english": "Muhammad ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "خليدة بنت أبي عبيد بن وهب بن لوذان",
+      "english": "Khulayda bint Abi 'Ubayd ibn Wahb ibn Lawdhan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

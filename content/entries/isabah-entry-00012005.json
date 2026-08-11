@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012005",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12005,
+  "title": {
+    "english": "Umm Khalid bint Khalid",
+    "arabic_observed": "أم خالد بنت خالد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012005-segment-0001",
+      "volume": 8,
+      "scan_page": 386,
+      "printed_page": 385,
+      "reader_page": 4298,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4298",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0386:e1ff388273593787",
+      "arabic": "١٢٠٠٥- أم خالد بنت خالد\nبن يعيش بن قيس بن عمرو بن زيد مناة «٣»، من بني عدي بن النجار.\nذكرها ابن سعد في المبايعات، وقال: تزوجها حارثة بن النعمان، فولدت له عبد اللَّه، وسودة، وعمرة، وأم هشام.",
+      "english": "12005—Umm Khalid bint Khalid\n\nibn Ya'ish ibn Qays ibn Amr ibn Zayd Manat,(3) of Banu Adi ibn al-Najjar.\n\nIbn Sa'd mentioned her among the women who gave the pledge of allegiance. He said: Haritha ibn al-Nu'man married her, and she bore him Abd Allah, Sawda, Amra, and Umm Hisham.",
+      "arabic_sha256": "89139d6f1d52017c105de1fdaab5ff8c328d03c83daf64a46be6e8420b950269",
+      "english_sha256": "c823e4db3e4061b19d5c247a93c893526e14367b1591b4f317bb1f3e9844cc0b",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "بنو عدي بن النجار",
+      "english": "Banu Adi ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "حارثة بن النعمان",
+      "english": "Haritha ibn al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "سودة",
+      "english": "Sawda bint Haritha ibn al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة",
+      "english": "Amra bint Haritha ibn al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هشام",
+      "english": "Umm Hisham bint Haritha ibn al-Nu'man",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011372",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11372,
+  "title": {
+    "english": "Salama bint Sa'd",
+    "arabic_observed": "سلامة بنت سعد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011372-segment-0001",
+      "volume": 8,
+      "scan_page": 200,
+      "printed_page": 199,
+      "reader_page": 4112,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4112",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0200:f95182c4c4f61235",
+      "arabic": "١١٣٧٢- سلامة بنت سعد\nبن شهيد «٢»، أم بني طلحة.\nأوردها ابن الأثير، عن ابن حبيب، وإنما هي سلافة، بفاء بدل الميم.",
+      "english": "11372—Salama bint Sa'd\n\nibn Shahid, mother of the sons of Talha.\n\nibn al-Athir included her on the authority of ibn Habib. She is in fact Sulafa, with fa in place of mim.",
+      "arabic_sha256": "341b290c7fe73a105ab069b3e3957df8bf0408745d1bc2bac024690751bb0475",
+      "english_sha256": "ab30f329819a9c8be44acd441f24bb4984fd8950ec82567fd531afd738c62c77",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "طلحة",
+      "english": "Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "ibn Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

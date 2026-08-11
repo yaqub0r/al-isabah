@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010782",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10782,
+  "title": {
+    "english": "Idam bint al-Jamuh al-Ansariyya,",
+    "arabic_observed": "إدام بنت الجموح الأنصارية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010782-segment-0001",
+      "volume": 8,
+      "scan_page": 7,
+      "printed_page": 6,
+      "reader_page": 3919,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3919",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0007:16f979fa3c96671e",
+      "arabic": "١٠٧٨٢- إدام بنت الجموح الأنصارية ،\nأخت عمرو بن الجموح سيد الخزرج. ذكرها ابن سعد.",
+      "english": "10782 — Idam bint al-Jamuh al-Ansariyya,\n\nsister of 'Amr ibn al-Jamuh, the chief of the Khazraj. Ibn Sa'd mentioned her.",
+      "arabic_sha256": "76e973e50ff3882940bc33884a0a8d09f94edecb97d1861c3f4fcc959b875ec7",
+      "english_sha256": "cb5c24c73010538b81071f8f053200863bf9c1483c4ced0b12df18a6b4dd5c9d",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "إدام بنت الجموح الأنصارية",
+      "english": "Idam bint al-Jamuh al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن الجموح",
+      "english": "'Amr ibn al-Jamuh",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخزرج",
+      "english": "Khazraj",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

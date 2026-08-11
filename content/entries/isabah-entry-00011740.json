@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011740",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11740,
+  "title": {
+    "english": "al-Marida:",
+    "arabic_observed": "الماردة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011740-segment-0001",
+      "volume": 8,
+      "scan_page": 311,
+      "printed_page": 310,
+      "reader_page": 4223,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4223",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0311:1a8db88cf780aa48",
+      "arabic": "١١٧٤٠- الماردة:\nلها ذكر في حديث حكيم بن حزام من مسند أبي يعلى، وقيل المراديّة.",
+      "english": "11740 — al-Marida:\n\nShe is mentioned in the hadith of Hakim ibn Hizam in the Musnad of Abu Ya'la; and it is also said that her name was al-Muradiyya.",
+      "arabic_sha256": "4f50ca91259dc6dc933a1b8d24c37cbccabfb26d420e9fbcd6bae330ecf7d20e",
+      "english_sha256": "2f9ec04b3114c388e0f9b65e5c2d82c846914816470822cc544252d3d5882a40",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الماردة",
+      "english": "al-Marida",
+      "kind": "person"
+    },
+    {
+      "arabic": "حكيم بن حزام",
+      "english": "Hakim ibn Hizam",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند أبي يعلى",
+      "english": "Musnad Abi Ya'la",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو يعلى",
+      "english": "Abu Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "المراديّة",
+      "english": "al-Muradiyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

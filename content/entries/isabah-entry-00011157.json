@@ -1,0 +1,114 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011157",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11157,
+  "title": {
+    "english": "Dharra,",
+    "arabic_observed": "ذرة «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011157-segment-0001",
+      "volume": 8,
+      "scan_page": 130,
+      "printed_page": 129,
+      "reader_page": 4042,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4042",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0130:344bc7521497372a",
+      "arabic": "١١١٥٧- ذرة «٢»\n، غير منسوبة: لها\nحديث عند أبي النضر هاشم بن القاسم، عن أبي جعفر الرازيّ، عن الليث، عن ابن المنكدر، عن ذرة، قالت: قال رسول اللَّه ﷺ: «أنا وكافل اليتيم له أو لغيره كهاتين في الجنّة» . وأشار بإصبعيه- «والسّاعي على الأرملة والمسكين كالغازي في سبيل اللَّه تعالى، وكالقائم الصّائم الّذي لا يفتر» .\nأخرجه ابن مندة.\nالقسم الثاني خال، وكذا القسم الثالث، والقسم الرابع\n(١) أسد الغابة ت ٦٩٠٦.\n(٢) أعلام النساء ١/ ٣٦٣، تجريد أسماء الصحابة ٢/ ٢٦٦.",
+      "english": "11157 — Dharra,\n\nwith no lineage given. A hadith of hers is related by Abu al-Nadr Hashim ibn al-Qasim, from Abu Ja'far al-Razi, from al-Layth, from Ibn al-Munkadir, from Dharra, who said: The Messenger of Allah, peace and blessings be upon him, said: “I and the guardian of an orphan—whether the orphan is his or someone else's—will be like these two in Paradise.” He gestured with his two fingers. “The one who labors on behalf of a widow and a poor person is like one who fights in the path of Allah, Exalted is He, and like one who stands in prayer and fasts without flagging.”\n\nIbn Manda transmitted it.\n\nSection Two is empty, as are Section Three and Section Four.\n\n(1) Usd al-Ghaba, entry 6906.\n\n(2) A'lam al-Nisa, 1/363; al-Tajrid, 2/266.",
+      "arabic_sha256": "0b1212057adf04dc4ab88fb48ceefa7220e7c77040c842a1a1937d09cf0e1dc4",
+      "english_sha256": "22ac96523d91fe95fc10bcc75a48b455f64be964e4109b4c3b1157f99cac3819",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011157-segment-0002",
+      "volume": 8,
+      "scan_page": 131,
+      "printed_page": 130,
+      "reader_page": 4043,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4043",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0131:46c29236c3b64007",
+      "arabic": "حرف الراء\nالقسم الأول",
+      "english": "THE LETTER RA\n\nSECTION ONE",
+      "arabic_sha256": "def3bb263d177a246ee5a043a72e12a2e0cc98c20532fde9b169cb88df257dc5",
+      "english_sha256": "ce487d8aa949c26bd77a5469d129380e109ddf15c3c5a6e35c60120d50afc04a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ذرة",
+      "english": "Dharra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو النضر هاشم بن القاسم",
+      "english": "Abu al-Nadr Hashim ibn al-Qasim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو جعفر الرازي",
+      "english": "Abu Ja'far al-Razi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الليث",
+      "english": "al-Layth",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن المنكدر",
+      "english": "Ibn al-Munkadir",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الجنة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011883",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11883,
+  "title": {
+    "english": "M—Waqsa bint Masud",
+    "arabic_observed": "م- وقصاء بنت مسعود"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011883-segment-0001",
+      "volume": 8,
+      "scan_page": 353,
+      "printed_page": 352,
+      "reader_page": 4265,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4265",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0353:e6c1cc9510087de4",
+      "arabic": "١١٨٨٣- م- وقصاء بنت مسعود\nبن عامر بن عديّ بن جشم الأنصاريّة.\nقال ابن سعد: أسلمت وبايعت، قال: وأمها كبشة بنت أوس بن أمية بن عامر بن خطمة. وتزوّج الوقصاء النعمان بن مالك بن عامر بن مجدعة بن جشم بن حارثة الحارثي.",
+      "english": "11883—M—Waqsa bint Masud\n\nibn Amir ibn Adi ibn Jashm, al-Ansariyya.\n\nIbn Sad said: She embraced Islam and pledged allegiance. He said: Her mother was Kabsha bint Aws ibn Umayya ibn Amir ibn Khatma. Waqsa married al-Numan ibn Malik ibn Amir ibn Majdaa ibn Jashm ibn Haritha, al-Harithi.",
+      "arabic_sha256": "9942d805828099b8c6e5929092c38463347fde3dc70931a490da30044abb632f",
+      "english_sha256": "96bd25a266d2bd705aa3648b5feab8eb9fcc8c18f9c1ce19728bc4c5583b62c1",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sad",
+      "kind": "person"
+    },
+    {
+      "arabic": "كبشة بنت أوس بن أمية بن عامر بن خطمة",
+      "english": "Kabsha bint Aws ibn Umayya ibn Amir ibn Khatma",
+      "kind": "person"
+    },
+    {
+      "arabic": "النعمان بن مالك بن عامر بن مجدعة بن جشم بن حارثة الحارثي",
+      "english": "al-Numan ibn Malik ibn Amir ibn Majdaa ibn Jashm ibn Haritha al-Harithi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

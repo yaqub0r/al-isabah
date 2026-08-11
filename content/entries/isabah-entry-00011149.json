@@ -1,0 +1,129 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011149",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11149,
+  "title": {
+    "english": "Khawla bint Amr.",
+    "arabic_observed": "خولة بنت عمرو ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011149-segment-0001",
+      "volume": 8,
+      "scan_page": 126,
+      "printed_page": 125,
+      "reader_page": 4038,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4038",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0126:a6a9e6ceddb77e24",
+      "arabic": "١١١٤٩- خولة بنت عمرو .\nذكرها ابن مندة، وأورد من طريق عبد الملك بن يحيى عن هشام بن عروة [عن أبيه] «٣»، عن عائشة، قالت: ابتاع النبيّ ﷺ جزورا من أعرابي، فبعث إلى خولة بنت عمرو يستسلفها، ثم قال: رواه مرجّي بن رجاء وغيره عن هشام، فقالوا في حديثهم: بعث إلى خولة بنت حكيم. وهذا أصحّ.\n(١) سقط في أ.\n(٢) سقط في أ.\n(٣) قال الهيثمي في الزوائد ٤/ ١٤٢ وعن عائشة قالت ابتاع رسول اللَّه ﷺ من رجل من الأعراب جزورا ... الحديث رواه أحمد والبزار وإسناد أحمد صحيح.",
+      "english": "11149. Khawla bint Amr.\n\nIbn Manda mentioned her and cited, by way of Abd al-Malik ibn Yahya, from Hisham ibn Urwa, [from his father],[3] from Aisha, who said: The Prophet, may Allah bless him and grant him peace, purchased a camel intended for slaughter from a Bedouin and sent to Khawla bint Amr to ask her for a loan. He then said: Murajja ibn Raja and others related it from Hisham, but in their versions of the hadith they said: “He sent to Khawla bint Hakim.” This is more correct.\n\n[1] Omitted in A.\n\n[2] Omitted in A.\n\n[3] Al-Haythami said in al-Zawa'id, 4/142: “From Aisha, who said: ‘The Messenger of Allah, may Allah bless him and grant him peace, purchased a camel intended for slaughter from a Bedouin man…’” the hadith. Ahmad and al-Bazzar related it, and Ahmad's chain of transmission is sound.",
+      "arabic_sha256": "fa3feab051e499d912d745cbe1dd0f87067dc913c3c646a1582f2142743c467d",
+      "english_sha256": "019282c21000dbc0137311eca3283557fd44e35b9e0bcbf4a4da48c695025d7d",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011149-segment-0002",
+      "volume": 8,
+      "scan_page": 127,
+      "printed_page": 126,
+      "reader_page": 4039,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4039",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0127:99be53fc5d48a677",
+      "arabic": "قلت: الحديث مشهور لخولة بنت حكيم، وبنت عمرو وهم، ويحتمل أن تتعدّد القصة، وقد أشرت إلى ذلك في\nالقسم الأول\nحرف الدال المهملة",
+      "english": "I say: The hadith is well known as the hadith of Khawla bint Hakim, while “bint 'Amr” is an error. It is possible that the incident occurred more than once, and I have already alluded to that in Section One.\n\nTHE UNDOTTED LETTER DAL",
+      "arabic_sha256": "3be7dc0aa9b60ff6910519e8fe320c4b399cbf99a8be64d803ee2ba2cbc3b495",
+      "english_sha256": "c143f4f61ecbff426f999af558ad40770896d3a04258bcb14f95bfcdc038e7e0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت عمرو",
+      "english": "Khawla bint Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الملك بن يحيى",
+      "english": "Abd al-Malik ibn Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن عروة",
+      "english": "Hisham ibn Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "مرجّي بن رجاء",
+      "english": "Murajja ibn Raja",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت حكيم",
+      "english": "Khawla bint Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "البزار",
+      "english": "al-Bazzar",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنت عمرو",
+      "english": "Khawla bint 'Amr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

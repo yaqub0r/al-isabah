@@ -1,0 +1,145 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010931",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10931,
+  "title": {
+    "english": "Barwa' bint Washiq,",
+    "arabic_observed": "بروع بنت واشق"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010931-segment-0001",
+      "volume": 8,
+      "scan_page": 50,
+      "printed_page": 49,
+      "reader_page": 3962,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3962",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0050:12c822ca7d9d3ce6",
+      "arabic": "١٠٩٣١- بروع بنت واشق\nالرؤاسية الكلابية «١»، أو الأشجعية، زوج هلال بن مرة.\nلها ذكر في حديث معقل الأشجعي وغيره، وأخرج حديثها ابن أبي عاصم من روايتها، فساق من طريق المثنى بن الصباح، عن عمرو بن شعيب، عن سعيد بن المسيب، عن بروع بنت واشق- أنها نكحت رجلا، وفوّضت إليه، فتوفي قبل أن يجامعها، فقضى لها رسول اللَّه ﷺ بصداق نسائها.\nوحديث معقل مخرج في السنن، وأكثر النسائي من تخريج طرقه، وبيان الاختلاف من رواته في قصة عبد اللَّه بن مسعدة.\nوعند أحمد، من طريق زائدة، عن منصور، عن إبراهيم، عن علقمة والأسود ...\nالحديث- وفيه: فقام رجل من أشجع- أراه سلمة بن يزيد- فقال: تزوّج رجل منا امرأة من بني رؤاس يقال لها بروع ... الحديث.",
+      "english": "10931—Barwa' bint Washiq,\nof Banu Ru'as of Kilab,(1) or of Ashja', wife of Hilal ibn Murra.\n\nShe is mentioned in the hadith of Ma'qil al-Ashja'i and others. Ibn Abi Asim also transmitted her hadith from her own narration, giving it through al-Muthanna ibn al-Sabbah, from Amr ibn Shu'ayb, from Sa'id ibn al-Musayyab, from Barwa' bint Washiq: She married a man and left the determination of her dower to him. He died before consummating the marriage with her, so the Messenger of Allah, may Allah bless him and grant him peace, awarded her a dower equal to that of the women of her family.\n\nThe hadith of Ma'qil is recorded in the Sunan collections; al-Nasa'i transmitted many of its routes and set out the disagreement among its transmitters concerning the account of Abd Allah ibn Mas'ada.\n\nAhmad also records it through Za'ida, from Mansur, from Ibrahim, from Alqama and al-Aswad … the hadith—which includes: A man from Ashja' stood up—I think it was Salama ibn Yazid—and said, “A man from among us married a woman of Banu Ru'as called Barwa' …” the hadith.",
+      "arabic_sha256": "e6a8e15e19b5f86443970b94fef54c555f01a20c8de790efdc52dca3ad1b9375",
+      "english_sha256": "ad661f4fe185a55fa58e86ac2e8efb1833b2713e0e0eba50c404a6a92f8f4050",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah ibn Aqil",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "بروع بنت واشق",
+      "english": "Barwa' bint Washiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرؤاسية؛ بني رؤاس",
+      "english": "Banu Ru'as",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الكلابية",
+      "english": "Kilab",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأشجعية؛ أشجع",
+      "english": "Ashja'",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "هلال بن مرة",
+      "english": "Hilal ibn Murra",
+      "kind": "person"
+    },
+    {
+      "arabic": "معقل الأشجعي",
+      "english": "Ma'qil al-Ashja'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المثنى بن الصباح",
+      "english": "al-Muthanna ibn al-Sabbah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن شعيب",
+      "english": "Amr ibn Shu'ayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن المسيب",
+      "english": "Sa'id ibn al-Musayyab",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن مسعدة",
+      "english": "Abd Allah ibn Mas'ada",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "زائدة",
+      "english": "Za'ida",
+      "kind": "person"
+    },
+    {
+      "arabic": "منصور",
+      "english": "Mansur",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم",
+      "english": "Ibrahim",
+      "kind": "person"
+    },
+    {
+      "arabic": "علقمة",
+      "english": "Alqama",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأسود",
+      "english": "al-Aswad",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمة بن يزيد",
+      "english": "Salama ibn Yazid",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

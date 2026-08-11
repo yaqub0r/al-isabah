@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011081",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11081,
+  "title": {
+    "english": "Hamna bint Aws al-Muzaniyya,",
+    "arabic_observed": "حمنة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011081-segment-0001",
+      "volume": 8,
+      "scan_page": 97,
+      "printed_page": 96,
+      "reader_page": 4009,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4009",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0097:fef400f01af3cf16",
+      "arabic": "١١٠٨١- حمنة ،\nبفتح أوله وسكون الميم، بنت أوس المزنية.\nمرت في جميلة. استدركها الذّهبيّ في «التّجريد» ولم يبين من الّذي سماها حمنة، وقد ذكرت في جميلة، بالجيم، من سماها كذلك، وأن ابن قانع قال: إنها أم جميل.",
+      "english": "11081. Hamna bint Aws al-Muzaniyya,\n\nwith fatha on the first letter of Hamna and sukun on the mim.\n\nShe was mentioned previously under Jamila. Al-Dhahabi included her as an addendum in al-Tajrid, but he did not explain who had called her Hamna. Under Jamila—with jim—I have mentioned who called her that, and that Ibn Qani' said she was Umm Jamil.",
+      "arabic_sha256": "b9626dba7992ab95abd7a50f20eda13c9f41a0bb3077db63ae7e7f421ad889d5",
+      "english_sha256": "0e1c8a3fa6702f27320382fd2efa96d2fb3f80b9e9792894c5906b9a55a3cac8",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حمنة بنت أوس المزنية",
+      "english": "Hamna bint Aws al-Muzaniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة",
+      "english": "Jamila",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن قانع",
+      "english": "Ibn Qani'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جميل",
+      "english": "Umm Jamil",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

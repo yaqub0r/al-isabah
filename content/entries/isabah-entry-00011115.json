@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011115",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11115,
+  "title": {
+    "english": "Khawla bint Thabit ibn al-Mundhir ibn 'Amr ibn Hizam al-Ansari, the sister of Hassan ibn Thabit.",
+    "arabic_observed": "خولة بنت ثابت"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011115-segment-0001",
+      "volume": 8,
+      "scan_page": 114,
+      "printed_page": 113,
+      "reader_page": 4026,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4026",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0114:f7c92753c9b2ac08",
+      "arabic": "١١١١٥- خولة بنت ثابت\nبن المنذر بن عمرو بن حزام الأنصاري، أخت حسان بن ثابت.\nروى إسحاق بن إبراهيم الموصليّ، عن الأصمعي لها شعرا، ذكره في كتاب الأغاني، ونقله عنه أبو الفرج الأصبهاني بسنده إليه.",
+      "english": "11115 — Khawla bint Thabit ibn al-Mundhir ibn 'Amr ibn Hizam al-Ansari, the sister of Hassan ibn Thabit.\n\nIshaq ibn Ibrahim al-Mawsili transmitted, from al-Asma'i, poetry by her. Abu al-Faraj al-Isfahani mentioned it in Kitab al-Aghani, transmitting it from Ishaq through his chain back to Ishaq.",
+      "arabic_sha256": "8415d83483031b38d84cf548dbbc8e2c4f5a1b81d9ee4e657e3904db523dd777",
+      "english_sha256": "ac2f168778995c163e415ac936dc9f99f4945dbb9d368cbeeb3c6336ebff374a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خولة بنت ثابت بن المنذر بن عمرو بن حزام الأنصاري",
+      "english": "Khawla bint Thabit ibn al-Mundhir ibn 'Amr ibn Hizam al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "حسان بن ثابت",
+      "english": "Hassan ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق بن إبراهيم الموصليّ",
+      "english": "Ishaq ibn Ibrahim al-Mawsili",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأصمعي",
+      "english": "al-Asma'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الأغاني",
+      "english": "Kitab al-Aghani",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو الفرج الأصبهاني",
+      "english": "Abu al-Faraj al-Isfahani",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011048",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11048,
+  "title": {
+    "english": "Hazma,",
+    "arabic_observed": "حزمة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011048-segment-0001",
+      "volume": 8,
+      "scan_page": 85,
+      "printed_page": 84,
+      "reader_page": 3997,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3997",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0085:f06f6b3846d86122",
+      "arabic": "١١٠٤٨- حزمة ،\nبسكون الزاي المنقوطة، بنت قيس الفهرية، أخت فاطمة «٤» .\nتقدم نسبها في ترجمة أخيها الضحاك بن قيس، ووقع ذكرها في حديث أخيها الضحاك بن قيس، ووقع ذكرها في حديث أختها فاطمة بنت قيس من مسند أحمد، وكان سعيد بن زيد بن عمرو بن نفيل تزوّجها فولدت له.",
+      "english": "11048 — Hazma,\n\nwith an unvowelled dotted zay, bint Qays al-Fihriyya, the sister of Fatima.⁴\n\nHer lineage was given above in the biography of her brother al-Dahhak ibn Qays. She was mentioned in a hadith of her brother al-Dahhak ibn Qays, and she was also mentioned in a hadith of her sister Fatima bint Qays in Musnad Ahmad. Sa'id ibn Zayd ibn Amr ibn Nufayl married her, and she bore children for him.",
+      "arabic_sha256": "03cc761f33fbd661c3437803faca11c1298e49fc56b67bcbc8152ba034a39436",
+      "english_sha256": "0d847a2478bc6564635f096d5980410781b23ad59cd5d2943dfc046733293c84",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "فاطمة بنت قيس",
+      "english": "Fatima bint Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "الضحاك بن قيس",
+      "english": "al-Dahhak ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند أحمد",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "سعيد بن زيد بن عمرو بن نفيل",
+      "english": "Sa'id ibn Zayd ibn Amr ibn Nufayl",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

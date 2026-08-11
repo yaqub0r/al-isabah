@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012074",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12074,
+  "title": {
+    "english": "Umm Sulaym bint Suhaym [4] [al-Ghifariyya] [5]",
+    "arabic_observed": "أم سليم:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012074-segment-0001",
+      "volume": 8,
+      "scan_page": 409,
+      "printed_page": 408,
+      "reader_page": 4321,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4321",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0409:7479f4ab93253906",
+      "arabic": "١٢٠٧٤- أم سليم:\nبنت سحيم «٤» [الغفاريّة] «٥» .\nهي أمه أو أمته.",
+      "english": "12074 — Umm Sulaym bint Suhaym [4] [al-Ghifariyya] [5]\n\nShe was Ama or Umayya.",
+      "arabic_sha256": "dc3e994b49939410f021851420b0d1275e502377617ea76ea526fb6857f2783f",
+      "english_sha256": "97138f1005b943ca85e8a0ad24b9dab008b2ae1a0ab2fa2f36d6bd9c544e146a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سليم",
+      "english": "Sulaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمه",
+      "english": "Ama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمته",
+      "english": "Umayya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011260",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11260,
+  "title": {
+    "english": "Zaynab al-Ansariyya",
+    "arabic_observed": "زينب الأنصارية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011260-segment-0001",
+      "volume": 8,
+      "scan_page": 166,
+      "printed_page": 165,
+      "reader_page": 4078,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4078",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0166:1e5302aa4bea9fe7",
+      "arabic": "١١٢٦٠- زينب الأنصارية ،\nغير منسوبة. جاء أنها كانت تغني بالمدينة،\nفأخرج ابن طاهر في كتاب «الصّفوة» من طريق المحاملي، حدثنا الزبير بن خالد، حدثنا صفوان بن هبيرة، عن ابن جريج، أخبرني أبو الأصبع أن جميلة أخبرته أنها سألت جابر بن عبد اللَّه عن الغناء، فقال: نكح بعض الأنصار بعض أهل عائشة، فأهدتها إلى قباء، فقال لها رسول اللَّه ﷺ: «أهديت عروسك»؟ قالت: نعم. قال: «فأرسلت معها بغناء، فإنّ الأنصار يحبّونه»؟\nقالت: لا، قال: «فأدركيها بزينب»:\nامرأة كانت تغني بالمدينة.",
+      "english": "11260 — Zaynab al-Ansariyya\n\nHer lineage is not given. It is related that she used to sing in Medina.\n\nIbn Tahir transmitted in the book al-Safwa, by way of al-Mahamili: al-Zubayr ibn Khalid related to us; Safwan ibn Hubayra related to us, from Ibn Jurayj: Abu al-Asba' informed me that Jamila informed him that she asked Jabir ibn Abdullah about singing. He said: One of the Ansar married a woman from Aisha's household, and Aisha sent the bride to Quba. The Messenger of Allah (may Allah bless him and grant him peace) said to her, “Did you send your bride?” She replied, “Yes.” He said, “Did you send someone singing with her? The Ansar are fond of that?”\n\nShe said, “No.” He said, “Then send Zaynab after her”—a woman who used to sing in Medina.",
+      "arabic_sha256": "48d154a95e43ad4975999eefbc1d407a1513d09663b907c238b12dc5d1dccb5a",
+      "english_sha256": "0ce3434d785616e20189e90af8aa3b1fab5aa0ccd9817126a7e1136c3359020e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "زينب الأنصارية",
+      "english": "Zaynab al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن طاهر",
+      "english": "Ibn Tahir",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصفوة",
+      "english": "al-Safwa",
+      "kind": "work"
+    },
+    {
+      "arabic": "المحاملي",
+      "english": "al-Mahamili",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن خالد",
+      "english": "al-Zubayr ibn Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفوان بن هبيرة",
+      "english": "Safwan ibn Hubayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن جريج",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الأصبع",
+      "english": "Abu al-Asba'",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة",
+      "english": "Jamila",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر بن عبد اللَّه",
+      "english": "Jabir ibn Abdullah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "قباء",
+      "english": "Quba",
+      "kind": "place"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

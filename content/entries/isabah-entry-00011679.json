@@ -1,0 +1,135 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011679",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11679,
+  "title": {
+    "english": "Kabira¹",
+    "arabic_observed": "كبيرة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011679-segment-0001",
+      "volume": 8,
+      "scan_page": 297,
+      "printed_page": 296,
+      "reader_page": 4209,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4209",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0297:6a96b80e7cf7315e",
+      "arabic": "١١٦٧٩- كبيرة «١»\n: وقيل بالمثلثة بدل الموحدة.\nذكرها ابن مندة بالمثلثة، وتبعه أبو نعيم، وذكرها أبو موسى في الذّيل بالموحدة تبعا لابن ماكولا.\nقلت: وسبق ابن ماكولا الخطيب، فقال: كبيرة- بالباء المعجمة بواحدة- هو اسم كبيرة بنت أبي سفيان لها صحبة ورواية، ثم\nساق من طريق محمد بن سليمان بن مسمول، عن يحيى بن أبي روقة بن سعيد، عن أبيه، قال: حدثتني مولاتي كبيرة بنت أبي سفيان، وكانت قد أدركت الجاهلية، وكانت من المبايعات، قالت: قلت: يا رسول اللَّه، إني وأدت أربع بنين لي في الجاهلية، قال: «أعتقي أربع رقاب» . فأعتقت أبا سعيد، وابنه ميسرة، وأم ميسرة.\nقال الخطيب: لم يذكر الرابع، ولعله راوي هذا الحديث، يعني أبا روقة. انتهى.\nوقال ابن الأثير تبعا لسلفه: إنها خزاعية، وقيل ثقفية، ومنهم من قال كبيرة بنت أبي سفيان، وأورد لها بالإسناد المذكور حديثا آخر: دم عفراء أزكى عند اللَّه من دم سوداوين.",
+      "english": "11679 — Kabira¹\n\nIt is also said that the name is Kathira, with tha in place of ba.\n\nIbn Manda mentioned her with tha, and Abu Nu'aym followed him. Abu Musa mentioned her in al-Dhayl with ba, following Ibn Makula.\n\nI say: al-Khatib preceded Ibn Makula in this, saying: “Kabira—with a ba marked by one dot—is the name of Kabira bint Abi Sufyan. She was a Companion and transmitted reports.” He then cited, through Muhammad ibn Sulayman ibn Masmul, from Yahya ibn Abi Ruqa ibn Sa'id, from his father, who said: “My mistress Kabira bint Abi Sufyan related to me. She had lived during the Age of Ignorance and was one of the women who gave the pledge of allegiance. She said: ‘I said, “O Messenger of Allah, I buried alive four sons of mine during the Age of Ignorance.” He said, “Free four slaves.”’ So she freed Abu Sa'id, his son Maysara, and Umm Maysara.”\n\nAl-Khatib said: “He did not mention the fourth; perhaps the fourth was the transmitter of this hadith”—meaning Abu Ruqa. End.\n\nIbn al-Athir, following his predecessor, said that she was of Khuza'a, though it is also said that she was of Thaqif. Some called her Kabira bint Abi Sufyan. He also cited for her, with the aforementioned chain of transmission, another hadith: “The blood of one pale, dust-colored animal is purer in the sight of Allah than the blood of two black ones.”",
+      "arabic_sha256": "b492d13b75d059e46336d1f65a1ee424a3fd075d6fd270ae210b3bd08f9608f0",
+      "english_sha256": "c8ce8f0a7b777ed6d430b13989f23ab4b5bc797058fa806d37ad9cafa541032a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "كبيرة بنت أبي سفيان",
+      "english": "Kabira bint Abi Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذّيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن ماكولا",
+      "english": "Ibn Makula",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخطيب",
+      "english": "al-Khatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن سليمان بن مسمول",
+      "english": "Muhammad ibn Sulayman ibn Masmul",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن أبي روقة بن سعيد",
+      "english": "Yahya ibn Abi Ruqa ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو روقة",
+      "english": "Abu Ruqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الجاهلية",
+      "english": "Age of Ignorance",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو سعيد",
+      "english": "Abu Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميسرة",
+      "english": "Maysara",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم ميسرة",
+      "english": "Umm Maysara",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "خزاعية",
+      "english": "Khuza'a",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ثقفية",
+      "english": "Thaqif",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

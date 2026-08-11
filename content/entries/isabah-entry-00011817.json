@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011817",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11817,
+  "title": {
+    "english": "Na'amah:",
+    "arabic_observed": "نعامة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011817-segment-0001",
+      "volume": 8,
+      "scan_page": 336,
+      "printed_page": 335,
+      "reader_page": 4248,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4248",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0336:5668b6390c509ad2",
+      "arabic": "١١٨١٧- نعامة:\nمن سبي بني العنبر» .\nكانت جميلة، فعرض عليها النّبيّ ﵌ أن يتزوّجها فلم تلبث أن جاء زوجها الحريش.\nوقد تقدّم ذلك في حرف الحاء المهملة في ترجمة الحريش المذكور مسند الرواية.",
+      "english": "11817—Na'amah:\nOne of the captives of Banu al-Anbar. [3]\n\nShe was beautiful, and the Prophet, may Allah bless him and grant him peace, offered to marry her. It was not long before her husband, al-Huraysh, arrived.\n\nThis has already been related under the unpointed letter ha, in the biography of the aforementioned al-Huraysh, with the chain of transmission for the report.",
+      "arabic_sha256": "b18796497b033272dfae0e4a7f3431406d8237ba32ae818f023f41000b716e92",
+      "english_sha256": "52f001d14e2a41fb4be50a39903ea721b4f584308459375ca1a96e7c4b0803da",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "نعامة",
+      "english": "Na'amah",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني العنبر",
+      "english": "Banu al-Anbar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الحريش",
+      "english": "al-Huraysh",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

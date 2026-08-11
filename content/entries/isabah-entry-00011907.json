@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011907",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11907,
+  "title": {
+    "english": "Umm Aban bint Jundab",
+    "arabic_observed": "أم أبان بنت جندب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011907-segment-0001",
+      "volume": 8,
+      "scan_page": 364,
+      "printed_page": 363,
+      "reader_page": 4276,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4276",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0364:6e0f5cf398860a3a",
+      "arabic": "١١٩٠٧- أم أبان بنت جندب\nبن عمرو بن حممة الدوسيّة.\nذكر لها الزّبير قصّة في تزويج عمر إياها عثمان بن عفان.\nحرف الباء الموحدة\nالقسم الأول",
+      "english": "11907—Umm Aban bint Jundab\n\nibn Amr ibn Humama, al-Dawsiyya.\n\nAl-Zubayr related an account concerning her in which Umar gave her in marriage to Uthman ibn Affan.\n\nTHE SINGLE-DOTTED LETTER BA\n\nSECTION ONE",
+      "arabic_sha256": "bc0ad44e04d4496ec9fdd8eb82d159cdca1487f38cbed930df326fb5dac1c662",
+      "english_sha256": "e6ae239642787e27d8e530d2a7a62ba6fefd581bf8d91b6c8fb907f823535643",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن عفان",
+      "english": "Uthman ibn Affan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

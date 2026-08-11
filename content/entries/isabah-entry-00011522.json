@@ -1,0 +1,68 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011522",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11522,
+  "title": {
+    "english": "Amra bint Yasar ibn Uzayhir.(7)",
+    "arabic_observed": "عمرة بنت يسار بن أزيهر «٧» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011522-segment-0001",
+      "volume": 8,
+      "scan_page": 248,
+      "printed_page": 247,
+      "reader_page": 4160,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4160",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0248:3d2d89bab4de13b0",
+      "arabic": "١١٥٢٢- عمرة بنت يسار بن أزيهر «٧» .\nذكرها أبو موسى في الذّيل عن المستغفريّ وأنه قال: لها صحبة.",
+      "english": "11522—Amra bint Yasar ibn Uzayhir.(7)\n\nAbu Musa mentioned her in al-Dhayl, on the authority of al-Mustaghfiri, who said: “She was a Companion.”",
+      "arabic_sha256": "751250a1f6e6703d93df6864a7b4994855c91fc780031f27c7e791712b4776ec",
+      "english_sha256": "59d47aadaefca9ca3d7d9e097f2b42a6facc7ad8707cd8d8c258fe9bb0ad0420",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمرة بنت يسار بن أزيهر",
+      "english": "Amra bint Yasar ibn Uzayhir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذّيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستغفريّ",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "أزيهر",
+      "explanation": "The canonical text and the supplied Urdu and collateral Arabic witnesses are unvocalized. “Uzayhir” is morphologically plausible and has therefore been retained provisionally, but the precise vocalization cannot be securely established from the supplied evidence.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0248:3d2d89bab4de13b0"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012282",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12282,
+  "title": {
+    "english": "Umm Mu'attib:¹",
+    "arabic_observed": "أم معتب «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012282-segment-0001",
+      "volume": 8,
+      "scan_page": 484,
+      "printed_page": 483,
+      "reader_page": 4396,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4396",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0484:e5a8561eb904665f",
+      "arabic": "١٢٢٨٢- أم معتب «١»\n: تقدّم في الأوّل دعوى ابن وضلح «٢» أن ابن وهب صحّفها.\nحرف النون",
+      "english": "12282 — Umm Mu'attib:¹\n\nIn the first [section] there appeared Ibn Wadluh's² assertion that Ibn Wahb had miscopied her [name].\n\nTHE LETTER NUN",
+      "arabic_sha256": "d86a4813211bf38f07af638c114e4384d8f7754b9ef450327552b94f16bb318f",
+      "english_sha256": "468156d8e4130e9d5cca103ce46b54129600e9e9d16b53b5390746127456c0c0",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم معتب",
+      "english": "Umm Mu'attib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن وضلح",
+      "english": "Ibn Wadluh",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن وهب",
+      "english": "Ibn Wahb",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

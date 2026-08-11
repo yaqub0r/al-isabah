@@ -2,6 +2,11 @@
   "schema": "al-isabah.firstlight-migration-scope.v1",
   "includes": [
     {
+      "path": "docs/narrative/sources/schemas/source-bundle-v1.schema.json",
+      "kind": "file",
+      "role": "canonical_schema"
+    },
+    {
       "path": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1",
       "kind": "tree",
       "role": "immutable_source_and_witness_evidence"

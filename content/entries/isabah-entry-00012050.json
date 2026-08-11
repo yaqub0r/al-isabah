@@ -1,0 +1,193 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012050",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12050,
+  "title": {
+    "english": "Umm Sa'd bint Sa'd ibn al-Rabi' al-Ansariyya (1).",
+    "arabic_observed": "أم سعد بنت سعد بن الرّبيع الأنصاريّة «١» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012050-segment-0001",
+      "volume": 8,
+      "scan_page": 402,
+      "printed_page": 401,
+      "reader_page": 4314,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4314",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0402:c5de95020b160d19",
+      "arabic": "١٢٠٥٠- أم سعد بنت سعد بن الرّبيع الأنصاريّة «١» .\nتقدّم نسبها في ترجمة والدها، أخرج حديثها أبو داود عن أبي نعيم، من طريق ابن إسحاق، عن داود بن الحصين، قال: كنت أقرأ على أم سعد بنت سعد بن الرّبيع مع ابن ابنها موسى بن سعد، وكانت يتيمة في حجر أبي بكر الصّديق، فقرأت عليها: وَالَّذِينَ عَقَدَتْ أَيْمانُكُمْ [سورة النساء آية ٣٣] قال: لا، ولكن: وَالَّذِينَ عَقَدَتْ أَيْمَانُكُمْ إنها نزلت في أبي بكر وعبد الرحمن بن أبي بكر حين أبى أن يسلم، فحلف أبو بكر ألّا يورثه، فلما أسلم أمره اللَّه ﷿ أن يورثه.\nوأخرج ابن سعد عن الواقديّ، عن ابن أبي الزناد، عن إبراهيم بن يحيى بن زيد بن ثابت، عن أم سعيد بن الرّبيع، قالت: دخل عليّ زيد بن ثابت، فقال: إن كنت تريدين أن تكلّمي في ميراثك من أبيك فتكلّمي، فإنّ عمر قد ورث اليوم الحمل، وكان أبوها قتل يوم أحد وهي حمل.\nقال ابن سعد: أمها خلّادة بنت أنس بن سنان، من بني ساعدة، ولدتها بعد قتل سعد بأشهر، وتزوّجها زيد بن ثابت فولدت له خارجة، وسعدا، وعثمان، وسليمان، وأم زيد.\nوروى خارجة بن زيد بن ثابت عن أم سعد بنت سعد بن الرّبيع عن أبي بكر الصديق شيئا من مناقب سعد بن الربيع. وقال ابن سعد في ترجمة خارجة بن زيد: هذا أمّه أم سعد جميلة بنت سعد بن الرّبيع، كذا قال. وسيأتي في أم العلاء ما يخالف هذا.",
+      "english": "12050—Umm Sa'd bint Sa'd ibn al-Rabi' al-Ansariyya (1).\n\nHer lineage was given above in the entry on her father. Abu Dawud transmitted her report from Abu Nu'aym, through Ibn Ishaq, from Dawud ibn al-Husayn, who said: I used to recite to Umm Sa'd bint Sa'd ibn al-Rabi', together with her grandson Musa ibn Sa'd. She was an orphan under the guardianship of Abu Bakr al-Siddiq. I recited to her: “And those whom your oaths have bound” [Surat al-Nisa, verse 33]. She said: “No, rather: ‘And those whom your oaths have bound.’ It was revealed concerning Abu Bakr and Abd al-Rahman ibn Abi Bakr, when he refused to embrace Islam. Abu Bakr therefore swore that he would not make him an heir; but when he embraced Islam, Allah, Mighty and Majestic, commanded Abu Bakr to make him an heir.”\n\nIbn Sa'd also transmitted, from al-Waqidi, from Ibn Abi al-Zinad, from Ibrahim ibn Yahya ibn Zayd ibn Thabit, from Umm Sa'id ibn al-Rabi', who said: Zayd ibn Thabit came in to me and said, “If you wish to speak concerning your inheritance from your father, then speak, for Umar has today granted inheritance to an unborn child.” Her father had been killed on the Day of Uhud while she was still in the womb.\n\nIbn Sa'd said: Her mother was Khallada bint Anas ibn Sinan, of Banu Sa'ida. She gave birth to her several months after Sa'd was killed. Zayd ibn Thabit married her, and she bore him Kharija, Sa'd, Uthman, Sulayman, and Umm Zayd.\n\nKharija ibn Zayd ibn Thabit related from Umm Sa'd bint Sa'd ibn al-Rabi', from Abu Bakr al-Siddiq, something concerning the merits of Sa'd ibn al-Rabi'. Ibn Sa'd said in the entry on Kharija ibn Zayd: “His mother was Umm Sa'd Jamila bint Sa'd ibn al-Rabi'.” Thus he stated it. Something contradicting this will appear under Umm al-Ala.",
+      "arabic_sha256": "76741bc554da15c1136ca2710dc45badb0c39aa5f0e36a2449f8604e036d5c3d",
+      "english_sha256": "f3ec077561c4ffff229851b134756ac024a6dc0a2b12a6755f1a6f632cb03fb9",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم سعد بنت سعد بن الرّبيع الأنصاريّة",
+      "english": "Umm Sa'd bint Sa'd ibn al-Rabi' al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن الرّبيع",
+      "english": "Sa'd ibn al-Rabi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "داود بن الحصين",
+      "english": "Dawud ibn al-Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن سعد",
+      "english": "Musa ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر الصّديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "سورة النساء",
+      "english": "Surat al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد الرحمن بن أبي بكر",
+      "english": "Abd al-Rahman ibn Abi Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي الزناد",
+      "english": "Ibn Abi al-Zinad",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن يحيى بن زيد بن ثابت",
+      "english": "Ibrahim ibn Yahya ibn Zayd ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعيد بن الرّبيع",
+      "english": "Umm Sa'id ibn al-Rabi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن ثابت",
+      "english": "Zayd ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "خلّادة بنت أنس بن سنان",
+      "english": "Khallada bint Anas ibn Sinan",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني ساعدة",
+      "english": "Banu Sa'ida",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "خارجة بن زيد بن ثابت",
+      "english": "Kharija ibn Zayd ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد",
+      "english": "Sa'd ibn Zayd ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman ibn Zayd ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان",
+      "english": "Sulayman ibn Zayd ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم زيد",
+      "english": "Umm Zayd bint Zayd ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعد جميلة بنت سعد بن الرّبيع",
+      "english": "Umm Sa'd Jamila bint Sa'd ibn al-Rabi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم العلاء",
+      "english": "Umm al-Ala",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة",
+      "english": "Jamila",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name-in-isnad",
+      "arabic_span": "عن أم سعيد بن الرّبيع",
+      "explanation": "The canonical chain gives the feminine kunya Umm Sa'id followed by the masculine patronymic ibn al-Rabi'. The supplied evidence cannot determine whether this is a textual error, a missing element, or the intended surface form, so it has been retained literally.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0402:c5de95020b160d19"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011914",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11914,
+  "title": {
+    "english": "Umm Bishr bint al-Bara",
+    "arabic_observed": "أم بشر بنت البراء"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011914-segment-0001",
+      "volume": 8,
+      "scan_page": 365,
+      "printed_page": 364,
+      "reader_page": 4277,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4277",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0365:3bb0df53e85f4dcb",
+      "arabic": "١١٩١٤- أم بشر بنت البراء\n(١) الثقات ٣/ ٤٥٩ أعلام النساء ١/ ١١٢، تجريد أسماء الصحابة ٢/ ٣١٣، الجرح والتعديل ٩/ ٤٦١ بقي ابن مخلد ٥٤٣، تلقيح فهوم أهل الأثر ٣٧٨، أسد الغابة ت (٧٣٧٦)، الاستيعاب ت (٨٥٨٣) .\n(٢) سقط في أ.\n(٣) في أ: حديث شاءوا.\n(٤) في أبشر بن آمنة.",
+      "english": "11914—Umm Bishr bint al-Bara\n\n¹ al-Thiqat 3/459; A'lam al-Nisa 1/112; al-Tajrid 2/313; al-Jarh wa-l-Ta'dil 9/461; Baqi ibn Makhlad, 543; Talqih Fuhum Ahl al-Athar, 378; Usd al-Ghaba, entry 7376; al-Isti'ab, entry 8583.\n\n² The words from “al-Zuhri related” through “bint al-Bara” are omitted in manuscript A.\n\n³ In manuscript A: “hadith: ‘they wished’” (حديث شاءوا), apparently a corruption of “wherever they wished” (حيث شاءوا).\n\n⁴ In manuscript A: “Bishr ibn Amina.”",
+      "arabic_sha256": "d1a14a83942f57f82298868516887c9c57c639449ff470ea368a1458f4fa42eb",
+      "english_sha256": "8cfa6b7465cf3d45bb9bff6935fd765cff0df709197a327152f1afc68a0aeeff",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011914-segment-0002",
+      "volume": 8,
+      "scan_page": 366,
+      "printed_page": 365,
+      "reader_page": 4278,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4278",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0366:49c89291ce515a7e",
+      "arabic": "قال ابن سعد في بعض أحاديث أم بشر: أم بشير، وهي واحدة.",
+      "english": "Ibn Sa'd said in some of the reports concerning Umm Bishr: “Umm Bashir”; she is one and the same woman.",
+      "arabic_sha256": "78fb59a7229ebb1de000ebc3639eb116f4ca0d1d5171743392e55347aee4822c",
+      "english_sha256": "6b0189880af732798f4156ce0f4c111f6c1be3020159dbc6228a0da4937cef89",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشر بن آمنة",
+      "english": "Bishr ibn Amina",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الجرح والتعديل",
+      "english": "al-Jarh wa-l-Ta'dil",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي ابن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم بشر",
+      "english": "Umm Bishr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم بشير",
+      "english": "Umm Bashir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

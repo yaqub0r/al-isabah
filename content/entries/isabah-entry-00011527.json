@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011527",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11527,
+  "title": {
+    "english": "Umayra bint al-Harith ibn Abd Razah al-Zafariyya [3]",
+    "arabic_observed": "عميرة بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011527-segment-0001",
+      "volume": 8,
+      "scan_page": 249,
+      "printed_page": 248,
+      "reader_page": 4161,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4161",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0249:fb364e33a3806aca",
+      "arabic": "١١٥٢٧- عميرة بنت الحارث\nبن عبد رزاح الظّفرية «٣» .",
+      "english": "11527—Umayra bint al-Harith ibn Abd Razah al-Zafariyya [3]",
+      "arabic_sha256": "6d5e305c4faf7a6fbaaca89f99e4a9cf5fbd41f7f1c88f8eb5563cd07227c8d0",
+      "english_sha256": "6c784081f35731fbe77e821d4836c43ff183b597297360b9ef65358bfd10c5ab",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عميرة بنت الحارث بن عبد رزاح الظفرية",
+      "english": "Umayra bint al-Harith ibn Abd Razah al-Zafariyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

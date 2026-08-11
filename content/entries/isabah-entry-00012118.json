@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012118",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12118,
+  "title": {
+    "english": "Umm Tariq(5)",
+    "arabic_observed": "أم طارق «٥»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012118-segment-0001",
+      "volume": 8,
+      "scan_page": 424,
+      "printed_page": 423,
+      "reader_page": 4336,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4336",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0424:e87149484b923332",
+      "arabic": "١٢١١٨- أم طارق «٥»:\nذكرها أبو موسى عن المستغفريّ، وساق بسنده إلى ابن إسحاق- أنّ النبيّ ﵌ قسم لها من خيبر أربعين وسقا.",
+      "english": "12118 — Umm Tariq(5)\n\nAbu Musa mentioned her on the authority of al-Mustaghfiri and cited, through his chain of transmission to Ibn Ishaq, that the Prophet (may Allah bless him and grant him peace) allotted her forty wasqs from Khaybar.",
+      "arabic_sha256": "51447d866aff52379b1eef6bb4d79fc42827308e3a7ca516d91a3518e4675d41",
+      "english_sha256": "5df24cd3598ca3dff47a1b96b54e9cb8c0c1e3c83354c8a0dc94b594fc57c3ef",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم طارق مولاة سعد بن عبادة",
+      "english": "Umm Tariq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم طارق",
+      "english": "Umm Tariq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

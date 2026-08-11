@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011162",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11162,
+  "title": {
+    "english": "Rabita bint Abd Allah,⁶ wife of Abd Allah ibn Mas'ud. She will appear under Rayta.",
+    "arabic_observed": "رابطة بنت عبد اللَّه «٦»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011162-segment-0001",
+      "volume": 8,
+      "scan_page": 131,
+      "printed_page": 130,
+      "reader_page": 4043,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4043",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0131:46c29236c3b64007",
+      "arabic": "١١١٦٢- رابطة بنت عبد اللَّه «٦»\n، امرأة عبد اللَّه بن مسعود. تأتي في ريطة.",
+      "english": "11162 — Rabita bint Abd Allah,⁶ wife of Abd Allah ibn Mas'ud. She will appear under Rayta.",
+      "arabic_sha256": "f6bd52b29d4ada864cfa380b529ecf854655bb7f69123499791b939fd74d9872",
+      "english_sha256": "95281fea2a28bf9e1d877dc0ab097b04140f110a5edc3d99971af6919f8e8382",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "رابطة بنت عبد الله",
+      "english": "Rabita bint Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن مسعود",
+      "english": "Abd Allah ibn Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "ريطة",
+      "english": "Rayta bint Abd Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

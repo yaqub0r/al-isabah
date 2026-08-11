@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011684",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11684,
+  "title": {
+    "english": "Karima bint Abi Hadrad al-Aslamiyya⁵",
+    "arabic_observed": "كريمة بنت أبي حدرد الأسلمية «٥»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011684-segment-0001",
+      "volume": 8,
+      "scan_page": 297,
+      "printed_page": 296,
+      "reader_page": 4209,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4209",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0297:6a96b80e7cf7315e",
+      "arabic": "١١٦٨٤- كريمة بنت أبي حدرد الأسلمية «٥»\n: يقال لها صحبة، ذكرها ابن حبّان ثم المستغفري، وقيل هي أم الدرداء الكبرى وليست هي انتهى.\nوالمعروف في أم الدرداء الكبرى أن اسمها خيرة كما تقدم في حرف الخاء المعجمة.\n(١) أعلام النساء ٤/ ٢٣٥- تجريد أسماء الصحابة ٢/ ٣٠٠.\n(٢) أسد الغابة ت (٧٢٤٥) .\n(٣) أسد الغابة ت (٧٢٤٦) .\n(٤) أسد الغابة ت (٧٢٤٤)، الاستيعاب ت (٣٥٣٠) .\n(٥) أسد الغابة ت (٧٢٤٧)، الثقات ٣/ ٣٥٨، أعلام النساء ١/ ٣٣٧، ٣٥١، ج ٤/ ٢٤١، تجريد أسماء الصحابة ٢/ ٣٠٠.",
+      "english": "11684 — Karima bint Abi Hadrad al-Aslamiyya⁵\n\nIt is said that she was a Companion. Ibn Hibban mentioned her, followed by al-Mustaghfiri. It is also said that she was Umm al-Darda al-Kubra, but she is not the same woman. End.\n\nWhat is well known concerning Umm al-Darda al-Kubra is that her name was Khayra, as was mentioned previously under the letter kha with a dot.\n\n(1) A'lam al-Nisa' 4/235; al-Tajrid 2/300.\n\n(2) Usd al-Ghaba, entry 7245.\n\n(3) Usd al-Ghaba, entry 7246.\n\n(4) Usd al-Ghaba, entry 7244; al-Isti'ab, entry 3530.\n\n(5) Usd al-Ghaba, entry 7247; al-Thiqat 3/358; A'lam al-Nisa' 1/337, 351, vol. 4/241; al-Tajrid 2/300.",
+      "arabic_sha256": "6073ae03e19e67fd62b9a62cbb6903d09b87a0244d7a147749dd2db8077dd297",
+      "english_sha256": "1089d7cc481bb7b5a46e354b4b51b9353d3f69ee2912b8757a19d698ee8698f5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "كريمة بنت أبي حدرد الأسلمية",
+      "english": "Karima bint Abi Hadrad al-Aslamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبّان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الدرداء الكبرى",
+      "english": "Umm al-Darda al-Kubra",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيرة",
+      "english": "Khayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

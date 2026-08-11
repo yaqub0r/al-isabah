@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011732",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11732,
+  "title": {
+    "english": "Layla:",
+    "arabic_observed": "ليلى:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011732-segment-0001",
+      "volume": 8,
+      "scan_page": 309,
+      "printed_page": 308,
+      "reader_page": 4221,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4221",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0309:0ba619c4fb4f3e1c",
+      "arabic": "١١٧٣٢- ليلى:\nعمة عبد الرحمن بن أبي ليلى «١»: في ليلى بنت بلال.\nوقد تقدّم في ترجمة أبي ليلى أنه اختلف في اسمه واسم أبيه اختلافا كثيرا، والأقرب أنّ اسم أبيه بلال أو بليل.",
+      "english": "11732—Layla:\n\nThe paternal aunt of 'Abd al-Rahman ibn Abi Layla.(1) See under Layla bint Bilal.\n\nIt has already been stated in the biographical notice of Abu Layla that there was extensive disagreement regarding his name and his father's name. The most likely view is that his father's name was Bilal or Bulayl.",
+      "arabic_sha256": "ad963745bf21d1beb306fdf72a11492b50fc2c2d29cd1835ba9d8049e4d42efb",
+      "english_sha256": "0cbde81a7ae37c96c0243edad194e280df6e0e885360a94a3d2ba80ea18ff82a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ليلى بنت بلال",
+      "english": "Layla bint Bilal",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن أبي ليلى",
+      "english": "'Abd al-Rahman ibn Abi Layla",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو ليلى",
+      "english": "Abu Layla",
+      "kind": "person"
+    },
+    {
+      "arabic": "بلال",
+      "english": "Bilal",
+      "kind": "person"
+    },
+    {
+      "arabic": "بليل",
+      "english": "Bulayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليلى",
+      "english": "Layla",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

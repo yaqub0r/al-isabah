@@ -1,0 +1,331 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011760",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11760,
+  "title": {
+    "english": "Mu'adha, a slave-girl of Abd Allah ibn Ubayy ibn Salul (6):",
+    "arabic_observed": "معاذة: جارية عبد اللَّه بن أبيّ ابن سلول «٦»،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011760-segment-0001",
+      "volume": 8,
+      "scan_page": 317,
+      "printed_page": 316,
+      "reader_page": 4229,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4229",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0317:6a6b44529b9a0a52",
+      "arabic": "١١٧٦٠- معاذة: جارية عبد اللَّه بن أبيّ ابن سلول «٦»،\nرقيقة مسيكة، جارية عبد اللَّه بن أبيّ.\nثبت ذكر مسيكة في صحيح مسلم وغيره، من طريق الأعمش، عن أبي سفيان، عن جابر، قال: كانت جارية لعبد اللَّه بن أبيّ يقال لها مسيكة فأكرهها على البغاء، فأتت النبيّ\n(١) أسد الغابة ت (٧٢٨٥) .\n(٢) أسد الغابة ت (٧٢٨٧) .\n(٣) أسد الغابة ت (٧٢٨٨) .\n(٤) أسد الغابة ت (٧٢٨٩) .\n(٥) أسد الغابة ت (٧٢٩٠) .\n(٦) أسد الغابة ت (٧٢٩١)، الاستيعاب ت (٣٥٤٦) .",
+      "english": "11760—Mu'adha, a slave-girl of Abd Allah ibn Ubayy ibn Salul (6):\n\nShe was the fellow slave-girl of Musayka, the slave-girl of Abd Allah ibn Ubayy.\n\nThe mention of Musayka is established in Sahih Muslim and elsewhere, through al-A'mash, from Abu Sufyan, from Jabir, who said: “Abd Allah ibn Ubayy had a slave-girl called Musayka. He compelled her into prostitution, so she went to the Prophet—”\n\n(1) Usd al-Ghaba, entry 7285.\n\n(2) Usd al-Ghaba, entry 7287.\n\n(3) Usd al-Ghaba, entry 7288.\n\n(4) Usd al-Ghaba, entry 7289.\n\n(5) Usd al-Ghaba, entry 7290.\n\n(6) Usd al-Ghaba, entry 7291; al-Isti'ab, entry 3546.",
+      "arabic_sha256": "be706000e4ffc350d53a966fd1cc38c912137bde5755b204f2d31b15f4bb2511",
+      "english_sha256": "1b6ab4481b4b6f83e7624feb3941a94613ccecfab3143876a2b73fb7802a899b",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011760-segment-0002",
+      "volume": 8,
+      "scan_page": 318,
+      "printed_page": 317,
+      "reader_page": 4230,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4230",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0318:52ed8b9aa37a3c1c",
+      "arabic": "﵌ فشكت له، فأنزل اللَّه تعالى: وَلا تُكْرِهُوا فَتَياتِكُمْ عَلَى الْبِغاءِ إِنْ أَرَدْنَ تَحَصُّنًا [سورة النور آية ٣٣] الآية، ووقع لنا بعلو في المعرفة، من طريق أبي معاوية، عن الأعمش، ولفظه: أما أميمة ومسيكة جاريتا عبد اللَّه بن أبيّ جاءتا إلى النبيّ ... ﵌ فشكتا عبد اللَّه بن أبي، فنزلت فيهما: وَلا تُكْرِهُوا فَتَياتِكُمْ عَلَى الْبِغاءِ ... [سورة النور آية ٣٣] .\nوثبت ذكر معاذة في مرسل الشّعبيّ، قال: التي اختلعت من زوجها وتزوّجها خولة أمّها معاذة التي نزلت فيها: وَلا تُكْرِهُوا فَتَياتِكُمْ عَلَى الْبِغاءِ إِنْ أَرَدْنَ تَحَصُّنًا [سورة النور آية ٣٣] . أخرجه عمر بن شبة بسند صحيح إلى الشّعبي.\nوأخرج أبو موسى، من طريق آدم بن أبي إياس، عن اللّيث، عن عقيل، عن ابن شهاب: حدّثني محمد بن ثابت أخو بني الحارث بن الخزرج في قوله تعالى: وَلا تُكْرِهُوا فَتَياتِكُمْ عَلَى الْبِغاءِ [سورة النور آية ٣٣]- نزلت في معاذة جارية عبد اللَّه بن أبيّ ابن سلول، وذلك أنه كان عندهم أسيرا، فكان عبد اللَّه بن أبي يضربها لتمكنه من نفسها رجاء أن تحبل منه فيأخذ في ذلك فداء، وهو العرض الّذي قال اللَّه تعالى: لِتَبْتَغُوا عَرَضَ الْحَياةِ الدُّنْيا [سورة النور آية ٣٣]، وكانت الجارية تأبى عليه، وكانت مسلمة، فأنزل اللَّه فيها الآية، فنهاهم عن ذلك فيها.\nوذكره أبو عمر، من طريق إبراهيم بن سعد، عن محمد بن إسحاق، عن الزّهري، قال: كانت معاذة مولاة عبد اللَّه بن أبيّ امرأة مسلمة فاضلة، وكانت تأبى عليه ما يدعوها إليه. انتهى.\nوعند أبي عمر أنّهما واحدة، واختلف في اسمها، فقال: قال الزّهري: معاذة، وقال الأعمش، عن أبي سفيان، عن جابر: مسيكة، قال: والصّحيح ما قاله ابن شهاب إن شاء اللَّه، قال: وقد روى أبو صالح عن ابن عباس القصّة وسمى الجارية مسيكة، فوافق الأعمش.\nقلت: لا ترجيح مع إمكان الجمع، وقد دلّ أثر الشّعبي على التعدّد، وظاهر الآية من قوله تعالى: فَتَياتِكُمْ [سورة النور آية ٣٣] يشعر بأنه أزيد من واحدة ثم قال ابن إسحاق متصلا بأثر الزهري. وبلغني ممّن بايع النبيّ ﵌ بيعة النساء، فتزوّجها سهل بن قرظة، أخو بني عمرو بن الحارث، فولدت له عبد اللَّه بن سهل، وأمّ سعيد بنت سهل، ثم هلك عنها أو فارقها، فتزوجها الحميّر بن عديّ القاري أخو بني حنظلة، فولدت له توأما: الحارث، وعديا، وأم سعد، ثم فارقها فتزوّجها عامر بن عديّ، من بني خطمة،",
+      "english": "—may Allah bless him and grant him peace—and complained to him. Thereupon Allah Most High revealed: “Do not compel your slave girls to prostitution if they desire chastity” [Surat al-Nur, verse 33], to the end of the verse. We have it with a high chain in al-Ma'rifa, by way of Abu Mu'awiya, from al-A'mash. Its wording is: “As for Umayma and Musayka, the two slave girls of 'Abdullah ibn Ubayy, they came to the Prophet—may Allah bless him and grant him peace—... and complained about 'Abdullah ibn Ubayy. Then concerning the two of them it was revealed: ‘Do not compel your slave girls to prostitution ...’” [Surat al-Nur, verse 33].\n\nMention of Mu'adha is also established in the mursal report of al-Sha'bi. He said: “The woman who obtained a khul' divorce from her husband and was subsequently married was Khawla; her mother was Mu'adha, concerning whom it was revealed: ‘Do not compel your slave girls to prostitution if they desire chastity’” [Surat al-Nur, verse 33]. 'Umar ibn Shabba transmitted it with a sound chain to al-Sha'bi.\n\nAbu Musa transmitted, by way of Adam ibn Abi Iyas, from al-Layth, from 'Uqayl, from Ibn Shihab: “Muhammad ibn Thabit, a member of Banu al-Harith ibn al-Khazraj, related to me concerning the words of Allah Most High, ‘Do not compel your slave girls to prostitution’ [Surat al-Nur, verse 33]: It was revealed concerning Mu'adha, the slave girl of 'Abdullah ibn Ubayy ibn Salul. This was because there was a captive in their possession, and 'Abdullah ibn Ubayy would beat her so that she would give the captive access to herself, hoping that she would become pregnant by him and that he could thereby obtain a ransom. That was the worldly gain of which Allah Most High said, ‘so that you may seek the fleeting gain of the life of this world’ [Surat al-Nur, verse 33]. The slave girl refused him, and she was a Muslim. Allah therefore revealed the verse concerning her and forbade them to do that to her.”\n\nAbu 'Umar also mentioned it by way of Ibrahim ibn Sa'd, from Muhammad ibn Ishaq, from al-Zuhri, who said: “Mu'adha, the female client of 'Abdullah ibn Ubayy, was a virtuous Muslim woman, and she refused what he called upon her to do.” End.\n\nAccording to Abu 'Umar, the two were one woman, but there was disagreement over her name. He said: “Al-Zuhri said, ‘Mu'adha,’ whereas al-A'mash, from Abu Sufyan, from Jabir, said, ‘Musayka.’” He said: “What Ibn Shihab said is correct, Allah willing.” He said: “Abu Salih also related the story from Ibn 'Abbas and named the slave girl Musayka, thus agreeing with al-A'mash.”\n\nI say: There is no basis for preferring one report when reconciliation is possible. Al-Sha'bi's report indicates that there was more than one woman, while the apparent sense of the verse—Allah Most High's words, “your slave girls” [Surat al-Nur, verse 33]—suggests more than one. Ibn Ishaq then said, continuing directly after al-Zuhri's report: “It has reached me that she was among those who pledged allegiance to the Prophet—may Allah bless him and grant him peace—in the women's pledge. Sahl ibn Quraza, of Banu 'Amr ibn al-Harith, married her, and she bore him 'Abdullah ibn Sahl and Umm Sa'id bint Sahl. Then either he died while married to her or he separated from her. Al-Humayyir ibn 'Adi al-Qari, of Banu Hanzala, then married her, and she bore him twins, al-Harith and 'Adi, as well as Umm Sa'd. He then separated from her, and 'Amir ibn 'Adi, of Banu Khatma, married her,",
+      "arabic_sha256": "52ed8b9aa37a3c1cbf5241bb0796a0af95fadb2b3d85f95a230c5ccf78c5f903",
+      "english_sha256": "ecb520c50b68b1bf02cfa015f125d84b3063d0ae9f51e3a2cd23a47bafda5d4e",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011760-segment-0003",
+      "volume": 8,
+      "scan_page": 319,
+      "printed_page": 318,
+      "reader_page": 4231,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4231",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0319:fbba915439251974",
+      "arabic": "فولدت له أم حبيب بنت عامر، وهي معاذة بنت عبد اللَّه بن جرير الضّرير، بضاد معجمة مصغّرا، ابن أميّة بن خدارة بن الحارث بن الخزرج.\nتنبيه: ظن ابن الأثير أنّ القائل: «وبلغني» هو الزّهري، ثم قال: قول الزّهري في نسبها ما ذكر يدلّ على أنّ الأنصار كان يسبي بعضهم بعضا في الجاهليّة، فكانت معاذة وهي من الخزرج أمة لعبد اللَّه بن أبيّ.\nقلت: وفيما قاله نظر، لأنه لم يتعين ذلك في السّبي مع احتمال أن يكون والد معاذة تزوّج أمّة رقيقة لعبد اللَّه أو بغى بها فجاءت بمعاذة، فكانت رقيقة لعبد اللَّه. وقد دلّ الأثر على أن عبد اللَّه إذ أمر معاذة أن تمكّن الأسير من نفسها أنه أراد أن تحمل من الأسير فيصير الولد رقيقا فيفديه أبوه، ولا يلزم من ذلك ما ذكر من أنهم كان يسبي بعضهم بعضا.",
+      "english": "And she bore him Umm Habib bint Amir. The woman being discussed was Mu'adha bint 'Abd Allah ibn Jarir al-Durayr—with a dotted dad, in the diminutive—ibn Umayya ibn Khudara ibn al-Harith ibn al-Khazraj.\n\nNotice: Ibn al-Athir supposed that al-Zuhri was the one who said, “And it has reached me.” He then said: “Al-Zuhri's statement concerning her lineage, as cited, indicates that the Ansar used to take one another captive during the pre-Islamic period. Thus Mu'adha, though she was of al-Khazraj, was a slave woman belonging to 'Abd Allah ibn Ubayy.”\n\nI say: What he said is open to question, because it is not established that this resulted from captivity. Mu'adha's father may have married a slave woman belonging to 'Abd Allah or fornicated with her, after which she bore Mu'adha, who was therefore a slave belonging to 'Abd Allah. The report indicates that when 'Abd Allah ordered Mu'adha to make herself available to the captive, he wanted her to become pregnant by him so that the child would be a slave and his father would ransom him. This does not entail what he stated, that they used to take one another captive.",
+      "arabic_sha256": "e9dc2dc94dde7f6f950d2025a6e38de0dfec45df39ad2b82910366054f03aec4",
+      "english_sha256": "9885156667720103de7e104c721a5329336be3a1dbacacccfe5b022f9a4b94cb",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مسيكة",
+      "english": "Musayka",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن أبيّ ابن سلول",
+      "english": "Abd Allah ibn Ubayy ibn Salul",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاذة",
+      "english": "Mu'adha",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيح مسلم",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "الأعمش",
+      "english": "al-A'mash",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سفيان",
+      "english": "Abu Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر",
+      "english": "Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "سورة النور",
+      "english": "Surat al-Nur",
+      "kind": "work"
+    },
+    {
+      "arabic": "المعرفة",
+      "english": "al-Ma'rifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو معاوية",
+      "english": "Abu Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة",
+      "english": "Umayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن أبيّ",
+      "english": "'Abdullah ibn Ubayy ibn Salul",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن أبيّ ابن سلول",
+      "english": "'Abdullah ibn Ubayy ibn Salul",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشّعبيّ",
+      "english": "al-Sha'bi",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة",
+      "english": "Khawla",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن شبة",
+      "english": "'Umar ibn Shabba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "آدم بن أبي إياس",
+      "english": "Adam ibn Abi Iyas",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللّيث",
+      "english": "al-Layth",
+      "kind": "person"
+    },
+    {
+      "arabic": "عقيل",
+      "english": "'Uqayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن شهاب",
+      "english": "Ibn Shihab al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّهري",
+      "english": "Ibn Shihab al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن ثابت",
+      "english": "Muhammad ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني الحارث بن الخزرج",
+      "english": "Banu al-Harith ibn al-Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن سعد",
+      "english": "Ibrahim ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو صالح",
+      "english": "Abu Salih",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn 'Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهل بن قرظة",
+      "english": "Sahl ibn Quraza",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عمرو بن الحارث",
+      "english": "Banu 'Amr ibn al-Harith",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عبد اللَّه بن سهل",
+      "english": "'Abdullah ibn Sahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمّ سعيد بنت سهل",
+      "english": "Umm Sa'id bint Sahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحميّر بن عديّ القاري",
+      "english": "al-Humayyir ibn 'Adi al-Qari",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني حنظلة",
+      "english": "Banu Hanzala",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الحارث",
+      "english": "al-Harith ibn al-Humayyir ibn 'Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عديّ",
+      "english": "'Adi ibn al-Humayyir ibn 'Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعد",
+      "english": "Umm Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عامر بن عديّ",
+      "english": "'Amir ibn 'Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني خطمة",
+      "english": "Banu Khatma",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم حبيب بنت عامر",
+      "english": "Umm Habib bint Amir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الخزرج",
+      "english": "al-Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عبد اللَّه بن أبيّ",
+      "english": "'Abd Allah ibn Ubayy",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source_text_corruption",
+      "arabic_span": "التي اختلعت من زوجها وتزوّجها خولة أمّها معاذة",
+      "explanation": "The evidence supports identifying the divorced woman as Khawla and her mother as Mu'adha, but neither the canonical wording nor the supplied collateral evidence establishes the exact original construction behind تزوّجها. The passive rendering preserves the recoverable event without inventing the unidentified male subject.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0318:52ed8b9aa37a3c1c"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010762",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10762,
+  "title": {
+    "english": "Amina bint Harmala, the mother of al-Walid ibn al-Walid ibn al-Mughira; it is also said that her name was Atika.",
+    "arabic_observed": "آمنة بنت حرملة، والدة الوليد بن الوليد بن المغيرة، ويقال اسمها عاتكة."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010762-segment-0001",
+      "volume": 8,
+      "scan_page": 4,
+      "printed_page": 3,
+      "reader_page": 3916,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3916",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0004:0a8a599d4636fa27",
+      "arabic": "١٠٧٦٢- آمنة بنت حرملة، والدة الوليد بن الوليد بن المغيرة، ويقال اسمها عاتكة.\nذكر في ترجمة ولدها ما يدل على أن لها صحبة.\n\n(١) أسد الغابة: ت ٦٦٨٩.\n(٢) أسد الغابة: ت ٦٦٩٠.",
+      "english": "10762—Amina bint Harmala, the mother of al-Walid ibn al-Walid ibn al-Mughira; it is also said that her name was Atika.\nWhat is mentioned in her son's biographical entry indicates that she enjoyed Companionship with the Prophet.\n\n(1) Usd al-Ghaba: entry 6689.\n(2) Usd al-Ghaba: entry 6690.",
+      "arabic_sha256": "cad340210a20cfa7c6153ccc0515a921321fb76616d8373570588e119bb37842",
+      "english_sha256": "bffda61418d2d02338299bf61576cd37cd9b2b020ec23273712849cf340eb507",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "آمنة بنت حرملة",
+      "english": "Amina bint Harmala",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوليد بن الوليد بن المغيرة",
+      "english": "al-Walid ibn al-Walid ibn al-Mughira",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاتكة",
+      "english": "Atika",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

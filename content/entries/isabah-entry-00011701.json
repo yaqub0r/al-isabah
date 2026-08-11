@@ -1,0 +1,129 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011701",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11701,
+  "title": {
+    "english": "Lubaba bint Abi Lubaba al-Ansariyya²",
+    "arabic_observed": "لبابة بنت أبي لبابة الأنصارية «٢» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011701-segment-0001",
+      "volume": 8,
+      "scan_page": 301,
+      "printed_page": 300,
+      "reader_page": 4213,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4213",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0301:251701731a80c548",
+      "arabic": "١١٧٠١- لبابة بنت أبي لبابة الأنصارية «٢» .\n(١) النّقع: رفع الصّوت، ونقع الصّوت واستنقع إذا ارتفع، وقيل: أراد بالنقع شق الجيوب، وقيل: أراد به وضع التراب على الرءوس من النقع: الغبار وهو أولى لأنه قرن به اللّقلقة وهي الصوت، فحمل اللفظين على معنيين أولى من حملهما على معنّى واحد. النهاية ٥/ ١٠٩.\n(٢) أسد الغابة ت (٧٢٥٤) .",
+      "english": "11701- Lubaba bint Abi Lubaba al-Ansariyya²\n\n¹ Naq' means raising the voice. A voice is said to naq'a and istanqa'a when it rises. It is also said that by naq' he meant tearing open the collars of garments. Another view is that he meant placing earth upon the heads, from naq' in the sense of “dust.” This is preferable because he coupled it with laqlaqa, which means sound; interpreting the two expressions as having two different meanings is preferable to interpreting both as having the same meaning. al-Nihaya, 5/109.\n\n² Usd al-Ghaba, entry 7254.",
+      "arabic_sha256": "e42efb02826ed870a4debb0dea840cc261628ce7fa845c040209d20cacb8fa6d",
+      "english_sha256": "8f29da9f913714c80f81020bc267eb863226e18773910de2a62c0afec86206d6",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011701-segment-0002",
+      "volume": 8,
+      "scan_page": 302,
+      "printed_page": 301,
+      "reader_page": 4214,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4214",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0302:adc267fe23e1d097",
+      "arabic": "أدركت النبي ﵌، ولها ذكر، كذا ذكرها ابن مندة مختصرا.\nوساق أبو نعيم قصتها من طريق موسى بن عبيدة الرَّبَذيّ- أحد الضعفاء- عن سعيد بن جبير مولى أبي لبابة، ويعقوب بن زيد، عن لبابة، قالت: كنت أنا صاحبته، فكان يقول: شدي وثاق عدو اللَّه الّذي خان اللَّه ورسوله، ومر به أخوه فقال: يا أخي، هلم إليّ! فقال: لا واللَّه لا أكلمك حتى يرضى اللَّه عنك ورسوله، فسأل عنه رسول اللَّه ﵌ فقال: «هو في المسجد»، وأخبره بخبره، فقال: لو جاءني لكان فيه أمر، فنزلت: يا أَيُّهَا الَّذِينَ آمَنُوا لا تَخُونُوا اللَّهَ وَالرَّسُولَ وَتَخُونُوا أَماناتِكُمْ ... [الأنفال: ٢٧] الآية، والآية الأخرى: وَآخَرُونَ مُرْجَوْنَ لِأَمْرِ اللَّهِ [التوبة: ١٠٦] .",
+      "english": "She lived during the time of the Prophet—may Allah bless him and grant him peace—and there is a report about her. Ibn Mandah mentioned her thus, briefly.\n\nAbu Nu'aym related her story by way of Musa ibn 'Ubayda al-Rabadhi—one of the weak transmitters—from Sa'id ibn Jubayr, the client of Abu Lubaba, and Ya'qub ibn Zayd, from Lubaba. She said: “I was the one attending him. He would say, ‘Tighten the bonds of the enemy of Allah who betrayed Allah and His Messenger.’ When his brother passed by him, he called to him, ‘My brother, come over to me!’ His brother replied, ‘No, by Allah, I will not speak to you until Allah and His Messenger are pleased with you.’ The Messenger of Allah—may Allah bless him and grant him peace—asked about him and was told, ‘He is in the mosque,’ and was informed of his situation. He said, ‘Had he come to me, I would have had some course of action concerning him.’ Then there was revealed: ‘O you who believe, do not betray Allah and the Messenger, nor betray your trusts ...’ [al-Anfal: 27], to the end of the verse; and the other verse: ‘And others are deferred for the command of Allah’ [al-Tawba: 106].”",
+      "arabic_sha256": "d93913b13a3afe3e1b8a92efd0fdd9de2fa6230384e1c05769f43ef76ce29db8",
+      "english_sha256": "f7d9be07d5e0618134f3a4cb98d9a019dfb7d4862895aaf58eb9c810020c0581",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "لبابة بنت أبي لبابة الأنصارية",
+      "english": "Lubaba bint Abi Lubaba al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن عبيدة الرَّبَذيّ",
+      "english": "Musa ibn 'Ubayda al-Rabadhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن جبير",
+      "english": "Sa'id ibn Jubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو لبابة",
+      "english": "Abu Lubaba",
+      "kind": "person"
+    },
+    {
+      "arabic": "يعقوب بن زيد",
+      "english": "Ya'qub ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "لبابة",
+      "english": "Lubaba bint Abi Lubaba al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنفال",
+      "english": "al-Anfal",
+      "kind": "work"
+    },
+    {
+      "arabic": "التوبة",
+      "english": "al-Tawba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

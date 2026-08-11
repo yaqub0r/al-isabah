@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012001",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12001,
+  "title": {
+    "english": "Umm Kharija bint al-Nadr",
+    "arabic_observed": "أم خارجة بنت النضر"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012001-segment-0001",
+      "volume": 8,
+      "scan_page": 385,
+      "printed_page": 384,
+      "reader_page": 4297,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4297",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0385:9f5dbcc10c3dfc02",
+      "arabic": "١٢٠٠١- أم خارجة بنت النضر\nبن ضمضم الأنصارية «٢»، من بني عدي بن النجار.\nذكرها ابن حبيب في المبايعات.",
+      "english": "12001—Umm Kharija bint al-Nadr\n\nibn Damdam al-Ansariyya,² of Banu 'Adi ibn al-Najjar.\n\nIbn Habib mentioned her among the women who gave the pledge of allegiance.",
+      "arabic_sha256": "bb8b9615e8fbb5dffd0d10210f6ed5d63b26f0fc0bebd4c436463afa24e7fa3b",
+      "english_sha256": "32c52142f9f475a32b7136524f0539a4eb3c4e8bdc78c474ccd671d9434b90ac",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بنو عدي بن النجار",
+      "english": "Banu 'Adi ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم خارجة",
+      "english": "Umm Kharija",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

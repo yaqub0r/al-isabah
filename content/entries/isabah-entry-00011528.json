@@ -1,0 +1,154 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011528",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11528,
+  "title": {
+    "english": "Umayra bint Abi al-Hakam [4]",
+    "arabic_observed": "عميرة بنت أبي الحكم «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011528-segment-0001",
+      "volume": 8,
+      "scan_page": 249,
+      "printed_page": 248,
+      "reader_page": 4161,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4161",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0249:fb364e33a3806aca",
+      "arabic": "١١٥٢٨- عميرة بنت أبي الحكم «٤»\n: رافع بن سنان «٥» .\nروى حديثها بكر بن بكّار، عن عبد الحميد بن جعفر، حدّثني أبي وغير واحد من قومنا أنّ أبا الحكم أسلم ولم تسلم امرأته، فأتت النبيّ ﵌، فقالت:\nإن أبا الحكم أخذ ابنتي ومنعنيها، فأمر أبا الحكم فجلس ناحية وأمر المرأة فجلست ناحية،\n(١) أسد الغابة ت (٧١٢٠) .\n(٢) أعلام النساء ٣/ ٣٦٠.\n(٣) في أجاءت هذه الترجمة بعد ترجمة عميرة بنت سهيل.\n(٤) أسد الغابة ت (٧١٤١) .\n(٥) في أ: جاءت هذه الترجمة بعد ترجمة عميرة بنت أبي خيثمة.",
+      "english": "11528—Umayra bint Abi al-Hakam [4]\n\nNamely, Rafi' ibn Sinan. [5]\n\nBakr ibn Bakkar transmitted her report from Abd al-Hamid ibn Ja'far, whose father and more than one man from his people related to him that Abu al-Hakam embraced Islam, but his wife did not. She came to the Prophet (may Allah bless him and grant him peace) and said: “Abu al-Hakam has taken my daughter and kept her from me.” He ordered Abu al-Hakam to sit to one side and the woman to sit to one side,\n\n[1] Usd al-Ghaba, entry 7120.\n\n[2] A'lam al-Nisa', 3/360.\n\n[3] In manuscript A, this entry comes after the entry for Umayra bint Suhayl.\n\n[4] Usd al-Ghaba, entry 7141.\n\n[5] In manuscript A, this entry comes after the entry for Umayra bint Abi Khaythama.",
+      "arabic_sha256": "1e0bdc373dce4ac2d87333507f2d5478ac76f02216718597d675f1ece2547a6e",
+      "english_sha256": "764f706a7c532c9e1069594c9478ad7bbc60511b691b5db53a1b184d334b297e",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011528-segment-0002",
+      "volume": 8,
+      "scan_page": 250,
+      "printed_page": 249,
+      "reader_page": 4162,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4162",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0250:84c4c7edb08cc2ea",
+      "arabic": "ووضع الجارية بينهما، ثم قال: ادعواها، فدعواها، فمالت إلى أمها، فقال رسول اللَّه صلى اللَّه عليه وعلى آله وسلّم: «اللَّهمّ اهدها»» فمالت إلى أبيها، فأخذها. واسمها عميرة.\nأخرجه أبو نعيم، وأبو موسى من طريقه، وأخرجه الدّار الدّارقطنيّ من طريق أخرى عن عبد الحميد بن جعفر، عن أبيه، عن جدّه.\nوأخرجه النّسائيّ وابن ماجة من طريق أخرى، عن عثمان البتّي، فقال: عن عبد الحميد بن سلمة، عن أبيه، عن جدّه، ومنهم من أرسله.\nوقال أبو موسى: روى من غير طريق نحو هذا، ولم يسمّ البنت.",
+      "english": "He placed the girl between them and then said, “Call her.” They called her, and she inclined toward her mother. The Messenger of Allah—may Allah bless him and his family and grant him peace—said, “O Allah, guide her.” She then inclined toward her father, who took her. Her name was Umayra.[1]\n\nAbu Nu'aym transmitted it, and Abu Musa transmitted it through Abu Nu'aym's route. It was also transmitted by al-Daraqutni through another route from 'Abd al-Hamid ibn Ja'far, from his father, from his grandfather.\n\nIt was also transmitted by al-Nasa'i and Ibn Majah through another route from 'Uthman al-Batti, who said: from 'Abd al-Hamid ibn Salama, from his father, from his grandfather. Some of them transmitted it in mursal form.\n\nAbu Musa said: “Something similar to this has been related by another route, but the daughter was not named.”",
+      "arabic_sha256": "d35867de972b94f41d0a9779c83c46ae54d8fdaeb11222006a83b91279f8ab0b",
+      "english_sha256": "6ce31d982af96b7a400dd144cab04c61e7e7663dff982e30a45b1a2f66208df3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عميرة بنت سهيل",
+      "english": "Umayra bint Suhayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة بنت أبي الحكم",
+      "english": "Umayra bint Abi al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الحكم",
+      "english": "Abu al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "رافع بن سنان",
+      "english": "Rafi' ibn Sinan",
+      "kind": "person"
+    },
+    {
+      "arabic": "بكر بن بكار",
+      "english": "Bakr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الحميد بن جعفر",
+      "english": "Abd al-Hamid ibn Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة بنت أبي خيثمة",
+      "english": "Umayra bint Abi Khaythama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عميرة",
+      "english": "Umayra bint Abi al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدّار الدّارقطنيّ",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الحميد بن جعفر",
+      "english": "'Abd al-Hamid ibn Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "النّسائيّ",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان البتّي",
+      "english": "'Uthman al-Batti",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الحميد بن سلمة",
+      "english": "'Abd al-Hamid ibn Salama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

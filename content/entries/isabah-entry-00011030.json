@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011030",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11030,
+  "title": {
+    "english": "Habiba bint Zayd ibn Abu Zuhayr (2).",
+    "arabic_observed": "حبيبة بنت زيد بن أبي زهير «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011030-segment-0001",
+      "volume": 8,
+      "scan_page": 81,
+      "printed_page": 80,
+      "reader_page": 3993,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3993",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0081:ffbb46b33cd0e928",
+      "arabic": "١١٠٣٠- حبيبة بنت زيد بن أبي زهير «٢»\n. في ترجمة والدها.",
+      "english": "11030 — Habiba bint Zayd ibn Abu Zuhayr (2).\n\nIn the entry on her father.",
+      "arabic_sha256": "973f1456cf04df2742779528fdbab318b410f7506b9dc0d632571b5897f9d19c",
+      "english_sha256": "26509111dca045c9e6cf898a5a66734b422166976d1a99518753561e616fa685",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حبيبة بنت زيد بن أبي زهير",
+      "english": "Habiba bint Zayd ibn Abu Zuhayr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

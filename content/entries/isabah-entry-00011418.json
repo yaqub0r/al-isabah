@@ -1,0 +1,115 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011418",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11418,
+  "title": {
+    "english": "Safiyya bint Mahmiya(2)",
+    "arabic_observed": "صفية بنت محمية «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011418-segment-0001",
+      "volume": 8,
+      "scan_page": 217,
+      "printed_page": 216,
+      "reader_page": 4129,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4129",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0217:2806209a8535e29a",
+      "arabic": "١١٤١٨- صفية بنت محمية «٢»\n، بفتح أوله وسكون المهملة وكسر الميم بعدها مثناة تحتانية خفيفة، هي أخت الحارث بن محمية، وعمة عبد اللَّه بن الحارث. وقد تقدما، وتزوّجها الفضل بن العباس بن عبد المطلب. قال ابن الأثير: لها ذكر في الحديث، يعني الّذي أخرجه مسلم من حديث ربيعة بن الحارث بن عبد المطلب لما سأل هو والعباس النبي ﷺ العمالة، فقال لمحمية: وزوج ابنتك من الفضل، لكن لم يسمها.",
+      "english": "11418—Safiyya bint Mahmiya(2)\n\nThe initial letter is vocalized a, the unpointed h is quiescent, the following m is vocalized i, and it is followed by an ungeminated ya. She was the sister of al-Harith ibn Mahmiya and the paternal aunt of Abd Allah ibn al-Harith. Both have appeared previously. al-Fadl ibn al-Abbas ibn Abd al-Muttalib married her. Ibn al-Athir said: “She is mentioned in the hadith”—meaning the hadith transmitted by Muslim from Rabi'a ibn al-Harith ibn Abd al-Muttalib, concerning when he and al-Abbas asked the Prophet, may Allah bless him and grant him peace, for official employment. He said to Mahmiya, “And marry your daughter to al-Fadl”; however, he did not name her.",
+      "arabic_sha256": "72c908b8773e25211655decd95a10a4087ecaae1f2a59fb8f04f6bafdc2f5d94",
+      "english_sha256": "8ad225aaa190dc95207e773e91ba5d14d9cb3e2d2c06f5a71817deaa3b78b59d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "العدوية",
+      "english": "Adi",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت محمية",
+      "english": "Safiyya bint Mahmiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن محمية",
+      "english": "al-Harith ibn Mahmiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن الحارث",
+      "english": "Abd Allah ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفضل بن العباس بن عبد المطلب",
+      "english": "al-Fadl ibn al-Abbas ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ربيعة بن الحارث بن عبد المطلب",
+      "english": "Rabi'a ibn al-Harith ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "العباس",
+      "english": "al-Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمية",
+      "english": "Mahmiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية خادم رسول الله",
+      "english": "Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية غير منسوبة امرأة من الصحابة",
+      "english": "Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية أخرى غير منسوبة",
+      "english": "Safiyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

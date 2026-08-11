@@ -1,0 +1,234 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011173",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11173,
+  "title": {
+    "english": "al-Rubayyi' bint al-Nadr (1)",
+    "arabic_observed": "الرّبيّع بنت النضر «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011173-segment-0001",
+      "volume": 8,
+      "scan_page": 134,
+      "printed_page": 133,
+      "reader_page": 4046,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4046",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0134:d215c2d58511a45e",
+      "arabic": "١١١٧٣- الرّبيّع بنت النضر «١»\nبن ضمضم بن زيد بن حرام الأنصارية، أخت أنس بن النضر، وعمة أنس بن مالك خادم رسول اللَّه ﷺ.\nتقدم نسبها عند ذكره، وهي من بني عدّي بن النجار، وهي والدة حارثة بن سراقة الماضي ذكره أيضا.\nوفيه قولها: أخبرني عن حارثة، فإن يكن في الجنة صبرت واحتسبت، وإن كان غير ذلك اجتهدت في البكاء. فقال لها النبي ﷺ: «إنّه أصاب الفردوس ...» الحديث.\nوفي صحيح البخاريّ، عن أنس- أنّ الربيّع بنت النضر عمته لطمت إنسانا فطلبوا العفو، فأبوا فطلبوا الأرش «٢» فأبوا فقال رسول اللَّه ﷺ: «كتاب اللَّه القصاص» . فقال أنس بن النضر: أيكسر سنّ الرّبيع؟ لا، والّذي بعثك بالحق لا يكسر سنها، فرضوا بالأرش، فقال رسول اللَّه ﷺ: «إنّ من عباد اللَّه من لو أقسم على اللَّه لأبرّه، منهم أنس بن النّضر» «٣» .\n(١) الثقات ٣/ ١٣٢، أعلام النساء ١/ ٣٨٠، تجريد أسماء الصحابة ٢/ ٢٦٧، تقريب التهذيب ٢/ ٥٩٨، تهذيب التهذيب ١٢/ ٤١٨، تلقيح فهوم أهل الأثر ٣٢٣.\n(٢) الأرش من الجراحات: ليس له قدر معلوم، وقيل: هو دية الجراحات. اللسان ١/ ٦٠.\n(٣) أخرجه مسلم ٣/ ١٣٠٢ كتاب القسامة باب ٥ إثبات القصاص في الأسنان وما في معناها حديث ٢٤- ١٦٧٥ وأحمد في المسند ٣/ ١٢٨، ١٦٧، ٥٨٤، والبيهقي في السنن الكبرى ٨/ ٢٥، ٦٤، والبغوي في شرح السنة ١/ ١٤٧، والمتقي الهندي في كنز العمال ٥٩٣٢، ٥٩٥٢.",
+      "english": "11173—al-Rubayyi' bint al-Nadr (1)\n\nibn Damdam ibn Zayd ibn Haram, al-Ansariyya, sister of Anas ibn al-Nadr and paternal aunt of Anas ibn Malik, the servant of the Messenger of Allah, may Allah bless him and grant him peace.\n\nHer lineage was given previously when he was mentioned. She belonged to Banu 'Adi ibn al-Najjar and was the mother of Haritha ibn Suraqa, who was also mentioned previously.\n\nIn that account, she said: “Tell me about Haritha. If he is in Paradise, I shall be patient and seek the reward; but if it is otherwise, I shall exert myself in weeping.” The Prophet, may Allah bless him and grant him peace, said to her: “He attained al-Firdaws…” to the end of the hadith.\n\nIn Sahih al-Bukhari, on the authority of Anas, it is related that al-Rubayyi' bint al-Nadr, his paternal aunt, slapped a person. A pardon was sought, but refused; the arsh (2) was then offered, but refused. The Messenger of Allah, may Allah bless him and grant him peace, said: “Allah's Book prescribes retaliation.” Anas ibn al-Nadr said: “Is the tooth of al-Rubayyi' to be broken? No, by Him who sent you with the truth, her tooth shall not be broken.” They then consented to the arsh. The Messenger of Allah, may Allah bless him and grant him peace, said: “Indeed, among Allah's servants are those who, if they were to adjure Allah, He would fulfill their adjuration; Anas ibn al-Nadr is among them.” (3)\n\n(1) al-Thiqat 3/132; A'lam al-Nisa' 1/380; al-Tajrid 2/267; Taqrib al-Tahdhib 2/598; Tahdhib al-Tahdhib 12/418; Talqih Fuhum Ahl al-Athar 323.\n\n(2) Arsh, in cases of wounds, is compensation for which there is no known fixed amount. It is also said to be the blood money for wounds. al-Lisan 1/60.\n\n(3) Muslim recorded it at 3/1302, the Book of Qasama, chapter 5, “Establishing Retaliation for Teeth and Comparable Injuries,” hadith no. 24 (1675); Musnad Ahmad 3/128, 167, 584; al-Bayhaqi in al-Sunan al-Kubra 8/25, 64; al-Baghawi in Sharh al-Sunna 1/147; and al-Muttaqi al-Hindi in Kanz al-'Ummal, nos. 5932 and 5952.",
+      "arabic_sha256": "a762579c574f6ba4a14321ce62c7aeee79341e637026233abf38922d071a676a",
+      "english_sha256": "0c5c5932cb4cf0b58bfc1e31073728641d4db067e528d177215dfc8c4957ba5c",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011173-segment-0002",
+      "volume": 8,
+      "scan_page": 135,
+      "printed_page": 134,
+      "reader_page": 4047,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4047",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0135:36514fc8d8613200",
+      "arabic": "وأما ما وقع في صحيح مسلم من وجه آخر عن أنس- أنّ أخت الربيّع جرحت إنسانا، فذكره، وفيه: فقالت أمّ الربيع: يا رسول اللَّه، أيقتص من فلانة؟ فتلك قصة أخرى إن كان الراويّ حفظ، وإلّا فهو وهم من بعض رواته، ويستفاد إن كان محفوظا أنّ لوالدة الربيع صحبة، ولأنس عنها رواية في صحيح مسلم في قصة قتل أخيها أنس بن النضر لما استشهد بأحد. قال أنس: فقالت أخته الربيّع عمتي بنت النضر: ما عرفت إلا أختي ببنانه، وهذا صريح من روايته عن عمته. وقد أخلّ صاحب الأطراف فلم يترجم للربيع بنت النضر، وهو عند البخاري من وجه آخر عن أنس بلفظ: ما عرفته إلا أخته.",
+      "english": "As for the version appearing in Sahih Muslim through another route from Anas—stating that the sister of al-Rubayyi' wounded someone—it goes on to recount the report, in which Umm al-Rubayyi' said, “O Messenger of Allah, is retaliation to be exacted from so-and-so?” This is a different incident, if the transmitter retained it accurately; otherwise, it is an error on the part of one of its transmitters. If it is soundly preserved, it may be inferred that the mother of al-Rubayyi' had Companion status. Anas also narrates from al-Rubayyi' in Sahih Muslim in the account of the killing of her brother, Anas ibn al-Nadr, when he was martyred at Uhud. Anas said: “His sister, al-Rubayyi'—my paternal aunt, daughter of al-Nadr—said, ‘I recognized my brother only by his fingertips.’” This explicitly shows that he narrated from his paternal aunt. The author of al-Atraf failed to give al-Rubayyi' bint al-Nadr a biographical entry. The report occurs in Sahih al-Bukhari through another route from Anas, with the wording: “Only his sister recognized him.”",
+      "arabic_sha256": "76772813fc14fbd37f60c9823b2d4c78ec24079b3e6487d105ec05b93353280f",
+      "english_sha256": "b28a0850cbad7d45b76e0f9b36405abc157aa9c78d7e3af606ba4d4702a18cf7",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس بن النضر",
+      "english": "Anas ibn al-Nadr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس بن مالك",
+      "english": "Anas ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عدّي بن النجار",
+      "english": "Banu 'Adi ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "حارثة بن سراقة",
+      "english": "Haritha ibn Suraqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجنة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفردوس",
+      "english": "al-Firdaws",
+      "kind": "place"
+    },
+    {
+      "arabic": "صحيح البخاري",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "اللسان",
+      "english": "al-Lisan",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب القسامة",
+      "english": "Book of Qasama",
+      "kind": "work"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن الكبرى",
+      "english": "al-Sunan al-Kubra",
+      "kind": "work"
+    },
+    {
+      "arabic": "البغوي",
+      "english": "al-Baghawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "شرح السنة",
+      "english": "Sharh al-Sunna",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-'Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "صحيح مسلم",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "أنس",
+      "english": "Anas ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "الربيّع بنت النضر",
+      "english": "al-Rubayyi' bint al-Nadr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الربيع",
+      "english": "Umm al-Rubayyi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "الأطراف",
+      "english": "al-Atraf",
+      "kind": "work"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

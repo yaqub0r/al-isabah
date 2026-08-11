@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010858",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10858,
+  "title": {
+    "english": "Umayma bint Abi Sufyan",
+    "arabic_observed": "أميمة بنت أبي سفيان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010858-segment-0001",
+      "volume": 8,
+      "scan_page": 33,
+      "printed_page": 32,
+      "reader_page": 3945,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3945",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0033:4fd52b895dd47e6e",
+      "arabic": "١٠٨٥٨- أميمة بنت أبي سفيان\nبن حرب بن أمية. زوج صفوان بن أمية. يأتي ذكرها في عاتكة بنت الوليد بن المغيرة.",
+      "english": "10858 — Umayma bint Abi Sufyan\n\nibn Harb ibn Umayya, the wife of Safwan ibn Umayya. She will be mentioned under Atika bint al-Walid ibn al-Mughira.",
+      "arabic_sha256": "56cc8ab0e770af884b8d5a577809a24fe58c5c7b96cf2991a418c6449790638c",
+      "english_sha256": "8e7779ad47e6e72654dc7215bba5ff2655824645ad261d986a1f8a81ef86eb7c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "صفوان بن أمية",
+      "english": "Safwan ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاتكة بنت الوليد بن المغيرة",
+      "english": "Atika bint al-Walid ibn al-Mughira",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

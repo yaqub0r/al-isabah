@@ -1,0 +1,167 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011616",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11616,
+  "title": {
+    "english": "Fatima bint al-Yaman al-Absiyya:",
+    "arabic_observed": "فاطمة بنت اليمان العبسية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011616-segment-0001",
+      "volume": 8,
+      "scan_page": 279,
+      "printed_page": 278,
+      "reader_page": 4191,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4191",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0279:f41f149b1d52c49c",
+      "arabic": "١١٦١٦- فاطمة بنت اليمان العبسية:\nأخت حذيفة «٤» .\n(١) أسد الغابة ت (٧١٩٧)، الاستيعاب ت (٣٥١٤) .\n(٢) سقط في أ.\n(٣) في أ: وبايعت قال: وهي ...\n(٤) أسد الغابة ت (٧١٩٨)، الاستيعاب ت (٣٥١٥)، الثقات ٣/ ٣٣٦، أعلام النساء ٤/ ١٥١، تقريب التهذيب ٢/ ٦١٠، تهذيب التهذيب ١٢/ ٤٤٥.",
+      "english": "11616—Fatima bint al-Yaman al-Absiyya:\n\nThe sister of Hudhayfa [4].\n\n(1) Usd al-Ghaba, entry 7197; al-Isti'ab, entry 3514.\n\n(2) “[Makhzumiyya]” is omitted in manuscript A.\n\n(3) In manuscript A: “and she pledged allegiance. He said: And she …”\n\n(4) Usd al-Ghaba, entry 7198; al-Isti'ab, entry 3515; al-Thiqat 3/336; A'lam al-Nisa 4/151; Taqrib al-Tahdhib 2/610; Tahdhib al-Tahdhib 12/445.",
+      "arabic_sha256": "f8f611c4589378b47758b0ad1d902550149779c553a3484c2ada073b02887c25",
+      "english_sha256": "ed59985fd77b9fe19e2110c50578d30f35bb5d693f77c8838aca26a13a90934b",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011616-segment-0002",
+      "volume": 8,
+      "scan_page": 280,
+      "printed_page": 279,
+      "reader_page": 4192,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4192",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0280:c4201e5a192e04a8",
+      "arabic": "تقدم نسبها في ترجمة حذيفة.\nروت عن النبي ﵌ أنها دخلت عليه تعوده في نسوة، فإذا سقاء معلق يقطر ماؤه عليه من شدة ما يجد من حر الحمى، وفيه: «إنّ أشدّ النّاس بلاء الأنبياء ثمّ الّذين يلونهم» .\nروى عنها ابن أخيها أبو عبيدة بن حذيفة، أخرج حديثها النسائيّ، وابن سعد بسند قوي، ورويناه بعلو في المعرفة لابن مندة، وفي جزء ابن مسعود بن الفرات، وقال ابن سعد: أسلمت وبايعت، وقال منصور عن ربعي بن خراش: قلت لمجاهد: حدثني ربعي عن امرأة، عن أخت حذيفة، وكانت له أخوات أدركن النبي ﵌: فقال مجاهد: قد أدركتهن ... الحديث في دم التحلي بالذهب.",
+      "english": "Her lineage was given above in the entry on Hudhayfa.\n\nShe related from the Prophet, may Allah bless him and grant him peace, that she entered upon him with a group of women to visit him during his illness. There was a waterskin hanging there, with its water dripping upon him because of the intense heat he felt from the fever. The report includes: “Those most severely afflicted among the people are the prophets, then those who follow them.”\n\nHer nephew Abu 'Ubayda ibn Hudhayfa related from her. Her hadith was recorded by al-Nasa'i and Ibn Sa'd with a strong chain. We also related it with a high chain of transmission in al-Ma'rifa by Ibn Manda and in the hadith fascicle of Ibn Mas'ud ibn al-Furat. Ibn Sa'd said: “She embraced Islam and gave the pledge of allegiance.” Mansur related from Rib'i ibn Khirash: “I said to Mujahid, ‘Rib'i related to me from a woman, from a sister of Hudhayfa—and Hudhayfa had sisters who lived to see the Prophet, may Allah bless him and grant him peace.’ Mujahid replied, ‘I did indeed meet them …’” This is the hadith concerning [the condemnation of] adorning oneself with gold.",
+      "arabic_sha256": "63dba1b9f3127c7477e9c3805aeab7d5a9f47d27ae3313f521ee0d22d2cfcc08",
+      "english_sha256": "fc2b75a35db312c3d9ceed8239898195c0c7418417975c9a7514d49b957ff82a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "فاطمة بنت اليمان العبسية",
+      "english": "Fatima bint al-Yaman al-Absiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "حذيفة",
+      "english": "Hudhayfa ibn al-Yaman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "أخت حذيفة",
+      "english": "Fatima bint al-Yaman al-'Absiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "حذيفة",
+      "english": "Hudhayfa",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عبيدة بن حذيفة",
+      "english": "Abu 'Ubayda ibn Hudhayfa",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "المعرفة",
+      "english": "al-Ma'rifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "جزء ابن مسعود بن الفرات",
+      "english": "Hadith Fascicle of Ibn Mas'ud ibn al-Furat",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن مسعود بن الفرات",
+      "english": "Ibn Mas'ud ibn al-Furat",
+      "kind": "person"
+    },
+    {
+      "arabic": "منصور",
+      "english": "Mansur",
+      "kind": "person"
+    },
+    {
+      "arabic": "ربعي بن خراش",
+      "english": "Rib'i ibn Khirash",
+      "kind": "person"
+    },
+    {
+      "arabic": "مجاهد",
+      "english": "Mujahid",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source_reading",
+      "arabic_span": "دم التحلي بالذهب",
+      "explanation": "The canonical text supplied reads دم, “blood,” but the context requires the sense expected from ذم, “condemnation.” The Urdu witness independently supports that intended sense but cannot establish the exact Arabic letters. The English therefore retains the cautiously bracketed rendering “[the condemnation of].”",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0280:c4201e5a192e04a8"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

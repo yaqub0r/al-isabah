@@ -1,0 +1,139 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011480",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11480,
+  "title": {
+    "english": "Aziza bint Abi Tajra'a al-Abdariyya",
+    "arabic_observed": "عزيزة بنت أبي تجراة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011480-segment-0001",
+      "volume": 8,
+      "scan_page": 240,
+      "printed_page": 239,
+      "reader_page": 4152,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4152",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0240:4ea98228eacce38b",
+      "arabic": "١١٤٨٠- عزيزة بنت أبي تجراة\nالعبدرية، أخت برة.\nذكرها البلاذريّ، وأخرج عن ابن سعد والوليد بن صالح جميعا عن الواقديّ، عن «٣»\n(١) أسد الغابة ت (٧١٠٩)، الاستيعاب ت (٣٤٨٠) .\n(٢) أسد الغابة ت (٧١٠٦)، الاستيعاب ت (٣٤٨٢)، أعلام النساء ج ٢/ ٢٦٩، تجريد أسماء الصحابة ج ٢/ ٢٨٧.\n(٣) في أ: عن سلمة بن بخت عن عميرة.",
+      "english": "11480 — Aziza bint Abi Tajra'a al-Abdariyya\n\nThe sister of Barra.\n\nal-Baladhuri mentioned her and transmitted from Ibn Sa'd and al-Walid ibn Salih, both from al-Waqidi, from—(3)\n\n(1) Usd al-Ghaba, entry 7109; al-Isti'ab, entry 3480.\n\n(2) Usd al-Ghaba, entry 7106; al-Isti'ab, entry 3482; A'lam al-Nisa', vol. 2, p. 269; al-Tajrid, vol. 2, p. 287.\n\n(3) In manuscript A: “from Salama ibn Bakht, from Umayra.”",
+      "arabic_sha256": "d236b937168fbf8964cc5f885fc57cc6f1401e86908789db6d1c69343a3f348a",
+      "english_sha256": "d30b363c5af4469170bc48c3b4a457b9ebed49f04b7190fb4608c2ed454e3a46",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011480-segment-0002",
+      "volume": 8,
+      "scan_page": 241,
+      "printed_page": 240,
+      "reader_page": 4153,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4153",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0241:113d0f7890ed0c15",
+      "arabic": "عميرة بنت عبد اللَّه بن كعب، عن «١» عزيزة بنت أبي تجراة، قالت: كانت قريش لا تنكر صلاة الضحى، وكان المسلمون قبل أن تفرض الصلوات الخمس يصلّون الضحى والعصر، وكان النبي ﵌ وأصحابه إذا صلوا آخر النهار تفرّقوا في الشعاب فصلوها فرادى.",
+      "english": "Umayra bint Abd Allah ibn Kab, from(1) Aziza bint Abi Tajra, who said: Quraysh did not regard the Duha prayer as objectionable. Before the five prayers were made obligatory, the Muslims used to perform the midmorning and afternoon prayers. When the Prophet—may Allah bless him and grant him peace—and his Companions prayed toward the end of the day, they would disperse among the mountain passes and pray it individually.",
+      "arabic_sha256": "1647d260621d801851a99867ee81a211aebedd8bda4462b1f3c7c911a42078b6",
+      "english_sha256": "d6e9c1dee4fea8ea729e14674dc15f5664b0b0d488547968d8ccf150c3be37a0",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عزيزة بنت أبي تجراة العبدريّة",
+      "english": "Aziza bint Abi Tajra'a al-Abdariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "برة",
+      "english": "Barra",
+      "kind": "person"
+    },
+    {
+      "arabic": "البلاذري",
+      "english": "al-Baladhuri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوليد بن صالح",
+      "english": "al-Walid ibn Salih",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "سلمة بن بخت",
+      "english": "Salama ibn Bakht",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة",
+      "english": "Umayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة بنت عبد اللَّه بن كعب",
+      "english": "Umayra bint Abd Allah ibn Kab",
+      "kind": "person"
+    },
+    {
+      "arabic": "عزيزة بنت أبي تجراة",
+      "english": "Aziza bint Abi Tajra",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

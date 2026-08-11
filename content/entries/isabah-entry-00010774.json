@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010774",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10774,
+  "title": {
+    "english": "Amina bint Mihsan",
+    "arabic_observed": "آمنة بنت محصن"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010774-segment-0001",
+      "volume": 8,
+      "scan_page": 6,
+      "printed_page": 5,
+      "reader_page": 3918,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3918",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0006:f373c7735745e8e2",
+      "arabic": "١٠٧٧٤- آمنة بنت محصن\nذكر السهيليّ أنه اسم أم قيس بنت محصن، أخت عكاشة بن محصن الأسدي.",
+      "english": "10774—Amina bint Mihsan\n\nAl-Suhayli mentioned that this was the personal name of Umm Qays bint Mihsan, the sister of 'Ukasha ibn Mihsan al-Asadi.",
+      "arabic_sha256": "b0aac80c9e73d0501724d10b826f8fe1f0576e14153d00e4ef5f7d5b1ef90ce0",
+      "english_sha256": "32760d8452317b343e4ce2fdda2f70512d1ac5bc76b192f3b1b03dc4eb83157a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "آمنة بنت محصن",
+      "english": "Amina bint Mihsan",
+      "kind": "person"
+    },
+    {
+      "arabic": "السهيلي",
+      "english": "al-Suhayli",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم قيس بنت محصن",
+      "english": "Umm Qays bint Mihsan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عكاشة بن محصن الأسدي",
+      "english": "'Ukasha ibn Mihsan al-Asadi",
+      "kind": "person"
+    },
+    {
+      "arabic": "آمنة",
+      "english": "Amina",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

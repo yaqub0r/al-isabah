@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011800",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11800,
+  "title": {
+    "english": "Na'ila bint al-Rabi' ibn Qays ibn 'Amir ibn 'Ubada ibn al-Abjar",
+    "arabic_observed": "نائلة بنت الربيع بن قيس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011800-segment-0001",
+      "volume": 8,
+      "scan_page": 332,
+      "printed_page": 331,
+      "reader_page": 4244,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4244",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0332:360e00215fcfb92d",
+      "arabic": "١١٨٠٠- نائلة بنت الربيع بن قيس\nبن عامر بن عبادة بن الأبجر، وهو خدرة بن عوف بن الحارث بن الخزرج الأنصاريّة، أخت عبد اللَّه بنت الربيع البدريّ.\nذكرها ابن سعد، وقال: أمها فاطمة بنت عمرو بن عطيّة، من بني مازن بن النّجّار، وتزوجها أوس بن خالد بن قرط بن قيس بن وهب، من بني مالك بن النّجّار، فأسلمت وبايعت.",
+      "english": "11800 — Na'ila bint al-Rabi' ibn Qays ibn 'Amir ibn 'Ubada ibn al-Abjar\n\nAl-Abjar was Khadra ibn 'Awf ibn al-Harith ibn al-Khazraj. She was an Ansari woman and the sister of 'Abd Allah ibn al-Rabi', who participated at Badr. [The canonical Arabic has بنت (bint); the Urdu witness supports بن (ibn).]\n\nIbn Sa'd mentioned her and said: Her mother was Fatima bint 'Amr ibn 'Atiyya, of Banu Mazin ibn al-Najjar. Aws ibn Khalid ibn Qurt ibn Qays ibn Wahb, of Banu Malik ibn al-Najjar, married her. She embraced Islam and pledged allegiance.",
+      "arabic_sha256": "6a41c486e2fcd0112f1759447f71d47d8bb74f121735f6a1e80fe6378051136a",
+      "english_sha256": "f09bcb72f1910150cd777fc96310cca779aed56676415547d115c680b8f643d8",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "نائلة بنت الربيع بن قيس بن عامر بن عبادة بن الأبجر",
+      "english": "Na'ila bint al-Rabi' ibn Qays ibn 'Amir ibn 'Ubada ibn al-Abjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأبجر، وهو خدرة بن عوف بن الحارث بن الخزرج",
+      "english": "Khadra ibn 'Awf ibn al-Harith ibn al-Khazraj al-Abjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بنت الربيع البدريّ",
+      "english": "'Abd Allah ibn al-Rabi' al-Badri",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت عمرو بن عطيّة",
+      "english": "Fatima bint 'Amr ibn 'Atiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني مازن بن النّجّار",
+      "english": "Banu Mazin ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أوس بن خالد بن قرط بن قيس بن وهب",
+      "english": "Aws ibn Khalid ibn Qurt ibn Qays ibn Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني مالك بن النّجّار",
+      "english": "Banu Malik ibn al-Najjar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

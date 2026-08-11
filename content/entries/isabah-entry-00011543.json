@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011543",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11543,
+  "title": {
+    "english": "Amira bint Qays ibn Amr ibn Ubayd ibn Malik ibn Adi ibn al-Harith² ibn Sulayt ibn Qays, the Ansari woman. Ibn Habib mentioned her among the women who pledged allegiance. Ibn Sa'd said: “Muhammad ibn Umar stated that she embraced Islam and pledged allegiance.” I saw her name in the authoritative copy with a fatha on its initial 'ayn.",
+    "arabic_observed": "عميرة بنت قيس بن عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011543-segment-0001",
+      "volume": 8,
+      "scan_page": 252,
+      "printed_page": 251,
+      "reader_page": 4164,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4164",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0252:003c313ae415e2f3",
+      "arabic": "١١٥٤٣- عميرة بنت قيس بن عمرو\nبن عبيد بن مالك بن عديّ بن الحارث «٢» بن سليط بن قيس الأنصاريّة. ذكرها ابن حبيب في المبايعات، وقال ابن سعد: ذكر محمّد بن عمر أنها أسلمت وبايعت، ورأيتها في النّسخة المعتمدة بفتح أوله.",
+      "english": "11543—Amira bint Qays ibn Amr ibn Ubayd ibn Malik ibn Adi ibn al-Harith² ibn Sulayt ibn Qays, the Ansari woman. Ibn Habib mentioned her among the women who pledged allegiance. Ibn Sa'd said: “Muhammad ibn Umar stated that she embraced Islam and pledged allegiance.” I saw her name in the authoritative copy with a fatha on its initial 'ayn.",
+      "arabic_sha256": "3d3b0bf5c388e5fa3c18e9f8cd06e3f4adddb5aaf7a273bab5e80715eabc366a",
+      "english_sha256": "f285a79c87a3757a4b494a0757ee8df473a431da2c25ca5e6e96750357f301ae",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمر",
+      "english": "Muhammad ibn Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

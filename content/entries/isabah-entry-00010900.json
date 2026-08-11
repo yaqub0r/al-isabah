@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010900",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10900,
+  "title": {
+    "english": "Asma bint Zayd",
+    "arabic_observed": "أسماء بنت زيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010900-segment-0001",
+      "volume": 8,
+      "scan_page": 42,
+      "printed_page": 41,
+      "reader_page": 3954,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3954",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0042:fb18798548014952",
+      "arabic": "١٠٩٠٠- أسماء بنت زيد\nبن الخطاب «١» العدوية.\nقال ابن مندة: لها رؤية، روى حديثها محمد بن إسحاق، عن محمد بن يحيى بن حبان، عن عبد اللَّه بن عمر عنها.\nقلت: وليس فيه ما يدل على ما ادعاه من الرؤية، فإنّ\nالحديث أن أسماء بنت زيد حدثت عبد اللَّه بن عمر، عن عبد اللَّه بن حنظلة- أنّ النبي ﷺ أمر بالوضوء لكل صلاة، فشقّ عليه فأمر بالسواك ... الحديث.\nأخرجه أبو داود. نعم يدلّ على أنها من أهل هذا القسم أنّ والدها استشهد باليمامة بعد النبيّ ﷺ بقليل، وكانت دواعي الصحابة متوفرة على إحضار أولادهم إذا ولدوا ليبرك عليهم النبي ﷺ.",
+      "english": "10900—Asma bint Zayd\nibn al-Khattab,¹ the Adawite.\n\nIbn Manda said: “She saw the Prophet. Her report was transmitted by Muhammad ibn Ishaq, from Muhammad ibn Yahya ibn Hibban, from Abd Allah ibn Umar, from her.”\n\nI say: It contains nothing indicating the sighting he claimed. The report is that Asma bint Zayd related to Abd Allah ibn Umar, on the authority of Abd Allah ibn Hanzala, that the Prophet, may Allah bless him and grant him peace, was commanded to perform ritual ablution for every prayer. This became burdensome for him, so he was commanded to use the tooth-stick … to the end of the report.\n\nAbu Dawud transmitted it. It does, however, indicate that she belongs among the people of this section, because her father was martyred at al-Yamama shortly after the Prophet, may Allah bless him and grant him peace, and the Companions had every incentive to bring their children, whenever they were born, so that the Prophet, may Allah bless him and grant him peace, might bless them.",
+      "arabic_sha256": "5dd9d830fe8034c497ab63ec0e21c50b34f7a425db222dfe1a2590a80ed19840",
+      "english_sha256": "6eb39645418b2c8fda4a3ff6cd5bff0f6ab19267115317a965eaa2e7f676f621",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي ﷺ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "العدوية",
+      "english": "Banu Adi",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن يحيى بن حبان",
+      "english": "Muhammad ibn Yahya ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عمر",
+      "english": "Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن حنظلة",
+      "english": "Abd Allah ibn Hanzala",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "اليمامة",
+      "english": "al-Yamama",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

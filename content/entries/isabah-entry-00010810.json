@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010810",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10810,
+  "title": {
+    "english": "Asma bint Qurt ibn Khansa ibn Sinan al-Ansariyya",
+    "arabic_observed": "أسماء بنت قرط"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010810-segment-0001",
+      "volume": 8,
+      "scan_page": 17,
+      "printed_page": 16,
+      "reader_page": 3929,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3929",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0017:379f2ddf42333b71",
+      "arabic": "١٠٨١٠- أسماء بنت قرط\nبن خنساء بن سنان الأنصارية، زوج الفضل بن النعمان، ذكرها ابن سعد في المبايعات.",
+      "english": "10810—Asma bint Qurt ibn Khansa ibn Sinan al-Ansariyya\n\nThe wife of al-Fadl ibn al-Numan. Ibn Sad mentioned her among the women who gave the pledge of allegiance.",
+      "arabic_sha256": "26cc9c52fba59e969825b5a50fef8bf21dffe580cab7b5523355e120f90057ea",
+      "english_sha256": "a8aab310a55cd287d5a06291a6911919545f36c407bb10e5cf640ffdaddc57a3",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت قرط بن خنساء بن سنان الأنصارية",
+      "english": "Asma bint Qurt ibn Khansa ibn Sinan al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفضل بن النعمان",
+      "english": "al-Fadl ibn al-Numan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

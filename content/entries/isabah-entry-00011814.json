@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011814",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11814,
+  "title": {
+    "english": "Nasibah bint Niyar",
+    "arabic_observed": "نسيبة بنت نيار"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011814-segment-0001",
+      "volume": 8,
+      "scan_page": 336,
+      "printed_page": 335,
+      "reader_page": 4248,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4248",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0336:5668b6390c509ad2",
+      "arabic": "١١٨١٤- نسيبة بنت نيار\nبن الحارث الأنصاريّة «١» من بني جحجبي. ذكرها ابن حبيب في المبايعات، كذا وأوردها ابن الأثير بعد أم عمارة، ومقتضاه أن نونها مفتوحة، وقد تقدّمت فيمن اسمها مصغّر آنفا.",
+      "english": "11814—Nasibah bint Niyar\nibn al-Harith, the Ansari woman, [1] of Banu Jahjaba. Ibn Habib mentioned her among the women who pledged allegiance, in this form. Ibn al-Athir listed her after Umm Umara, which implies that the nun in her name has an a-vowel; she has already appeared just above among those whose name is in the diminutive form.",
+      "arabic_sha256": "bb93824a09652f01b6097595ecaac94ba78c1607d019b45a102f1dba675a21c5",
+      "english_sha256": "6cee9958f420ae100f6deb1a276f6977781e192a30b7a6bc24bffca53a6f9f7d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بني جحجبي",
+      "english": "Banu Jahjaba",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمارة",
+      "english": "Umm Umara",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

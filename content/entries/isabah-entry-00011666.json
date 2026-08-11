@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011666",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11666,
+  "title": {
+    "english": "Kabsha bint Thabit",
+    "arabic_observed": "كبشة بنت ثابت"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011666-segment-0001",
+      "volume": 8,
+      "scan_page": 294,
+      "printed_page": 293,
+      "reader_page": 4206,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4206",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0294:d8f3777ebd93ed59",
+      "arabic": "١١٦٦٦- كبشة بنت ثابت\nبن عتيك بن النعمان بن عمرو بن عتيك بن عمرو بن مبذول، تكني أم سعيد.\nذكرها ابن سعد في المبايعات، وقال: أمها معاذة بنت أنس بن قيس بن عبيد، وتزوجها يزيد بن أبي اليسر كعب بن عمرو، فولدت له سعيدا وعبد الرحمن وأم كثير.",
+      "english": "11666 — Kabsha bint Thabit\n\nibn Atik ibn al-Nu'man ibn Amr ibn Atik ibn Amr ibn Mabdhul. Her kunya was Umm Sa'id.\n\nIbn Sa'd included her among the women who pledged allegiance and said: Her mother was Mu'adha bint Anas ibn Qays ibn Ubayd. Yazid, son of Abu al-Yusr Ka'b ibn Amr, married her, and she bore him Sa'id, Abd al-Rahman, and Umm Kathir.",
+      "arabic_sha256": "42b822f296e73056a5a50dddc91869e0a7007c49edac75a360217867ce9d8e2b",
+      "english_sha256": "a919a100e3450bdda1117cd55435d735585fe4b766301b37efe45aa63b7a7db3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعيد",
+      "english": "Kabsha bint Thabit ibn Atik ibn al-Nu'man ibn Amr ibn Atik ibn Amr ibn Mabdhul",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاذة بنت أنس بن قيس بن عبيد",
+      "english": "Mu'adha bint Anas ibn Qays ibn Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن أبي اليسر كعب بن عمرو",
+      "english": "Yazid ibn Abi al-Yusr Ka'b ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي اليسر كعب بن عمرو",
+      "english": "Abu al-Yusr Ka'b ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيدا",
+      "english": "Sa'id ibn Yazid ibn Abi al-Yusr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن",
+      "english": "Abd al-Rahman ibn Yazid ibn Abi al-Yusr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كثير",
+      "english": "Umm Kathir bint Yazid ibn Abi al-Yusr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

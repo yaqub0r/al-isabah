@@ -1,0 +1,164 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010887",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10887,
+  "title": {
+    "english": "Anisa bint Sa'ida,",
+    "arabic_observed": "أنيسة بنت ساعدة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010887-segment-0001",
+      "volume": 8,
+      "scan_page": 39,
+      "printed_page": 38,
+      "reader_page": 3951,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3951",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0039:257d47e9f650d81a",
+      "arabic": "١٠٨٨٧- أنيسة بنت ساعدة ،\nمن بني عمرو بن عوف «٤» .\nبايعت النبي ﷺ، قاله ابن حبيب، واستدركها ابن الأثير. وقال الذهبيّ: هي أخت\n(١) الثقات ٣/ ٢٤، أعلام النساء ١/ ٨١، تجريد أسماء الصحابة ٢/ ٢٤٩، تقريب التهذيب ٢/ ٥٩٠، الكاشف ٣/ ٦٥، تهذيب التهذيب ١٢/ ٤٠٣، خلاصة تهذيب الكمال ٣/ ٣٧٥، تهذيب الكمال ٣/ ١٦٧٩، الاستبصار ١٣٤، تلقيح فهوم أهل الأثر ٣٧٤، بقي بن مخلد ٤٣٢.\n(٢) أسد الغابة ت ٦٧٥١.\n(٣) أسد الغابة ت ٦٧٥٢.\n(٤) أسد الغابة ت ٦٧٥٣.",
+      "english": "10887—Anisa bint Sa'ida,\n\nof Banu Amr ibn Awf.[4]\n\nShe pledged allegiance to the Prophet, may Allah bless him and grant him peace. Ibn Habib stated this, and Ibn al-Athir supplied her as an addition. Al-Dhahabi said: “She is the sister of—”\n\n[1] al-Thiqat 3/24; A'lam al-Nisa 1/81; al-Tajrid 2/249; Taqrib al-Tahdhib 2/590; al-Kashif 3/65; Tahdhib al-Tahdhib 12/403; Khulasat Tahdhib al-Kamal 3/375; Tahdhib al-Kamal 3/1679; al-Istibsar 134; Talqih Fuhum Ahl al-Athar 374; Baqi ibn Makhlad 432.\n\n[2] Usd al-Ghaba, entry 6751.\n\n[3] Usd al-Ghaba, entry 6752.\n\n[4] Usd al-Ghaba, entry 6753.",
+      "arabic_sha256": "e1beb101c9c20fe1b8386c0e08e4e65d9de7f23193f6810bd62c0afb418a3747",
+      "english_sha256": "a231787407925a9a4b879222929d95db068a9841557b729a76065b6969507991",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00010887-segment-0002",
+      "volume": 8,
+      "scan_page": 40,
+      "printed_page": 39,
+      "reader_page": 3952,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3952",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0040:fb896d23dab8c7de",
+      "arabic": "عويم بن ساعدة، وهؤلاء النسوة اللاتي استدركهن ابن الأثير عن ابن حبيب ذكرهن ابن سعد في الطّبقات، ومنها أخذ ابن حبيب، فكأن ابن الأثير ما اطلع على طبقات ابن سعد.\nقلت: وهو كما قال: فقد أخل من الطبقات بالرجال ناس كثير، فمن اللَّه عليّ بإلحاقهم، وألحق الذهبي من النساء كثيرا كما قاله في آخر مختصره.",
+      "english": "[She is] the sister of Uwaym ibn Sa'ida. These women whom Ibn al-Athir added on the authority of Ibn Habib were mentioned by Ibn Sa'd in al-Tabaqat, from which Ibn Habib took them. It is therefore as though Ibn al-Athir had not seen Ibn Sa'd's al-Tabaqat.\n\nI say: It is as he said, for many people omitted men found in al-Tabaqat, and Allah favored me by enabling me to add them. Al-Dhahabi likewise added many women, as he stated at the end of his abridgment.",
+      "arabic_sha256": "a7c7314fa65102f11330aadfd2cdb8a63bbd222a346c4243e4238b22484b1222",
+      "english_sha256": "35903c398d7ff1b326f38bb6e456fb99941f1d892665faa1b70bc98c7c7757c0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنيسة بنت ساعدة",
+      "english": "Anisa bint Sa'ida",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو عمرو بن عوف",
+      "english": "Banu Amr ibn Awf",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "عويم بن ساعدة",
+      "english": "Uwaym ibn Sa'ida",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبقات",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

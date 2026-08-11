@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011355",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11355,
+  "title": {
+    "english": "Suhayma bint Umayr",
+    "arabic_observed": "سهيمة بنت عمير"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011355-segment-0001",
+      "volume": 8,
+      "scan_page": 195,
+      "printed_page": 194,
+      "reader_page": 4107,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4107",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0195:0a149c0a43c2cf13",
+      "arabic": "١١٣٥٥- سهيمة بنت عمير\nالمزنية «٢»، امرأة ركانة بن عبد يزيد المطلبي.\nوقع ذكرها\nفي مسند الشّافعي، حدثنا عمي محمد بن علي، عن عبد اللَّه بن السائب، عن نافع بن عجير بن عبد يزيد- أن ركانة بن عبد يزيد طلق امرأته سهيمة البتة، ثم أتى النبي ﷺ فقال: إني طلّقت امرأتي سهيمة البتة، واللَّه ما أردت إلا واحدة، فقال: «واللَّه ما أردت إلّا واحدة»؟ فقال ركانة: واللَّه ما أردت إلا واحدة. فردّها النبيّ ﷺ وطلقها الثانية في زمن عمر والثالثة في زمن عثمان،\nوأخرجه ابن مندة بعلو عن الشافعيّ.",
+      "english": "11355 — Suhayma bint Umayr\n\nal-Muzaniyya,[2] the wife of Rukana ibn Abd Yazid al-Muttalibi.\n\nShe is mentioned in the Musnad of al-Shafi'i: “My paternal uncle Muhammad ibn Ali related to us, from Abdullah ibn al-Sa'ib, from Nafi ibn Ujayr ibn Abd Yazid, that Rukana ibn Abd Yazid divorced his wife Suhayma with an absolute pronouncement. He then came to the Prophet—may Allah bless him and grant him peace—and said, ‘I divorced my wife Suhayma with an absolute pronouncement, but, by Allah, I intended only one divorce.’ He said, ‘By Allah, did you intend only one?’ Rukana replied, ‘By Allah, I intended only one.’ The Prophet—may Allah bless him and grant him peace—restored her to him. He divorced her a second time during the time of Umar, and a third time during the time of Uthman.”\n\nIbn Manda also transmitted it from al-Shafi'i through a higher chain.",
+      "arabic_sha256": "33d6d23b42d66abd0c8e483c1af059c3567b8f1b083fc3fed0025e13f5185dd8",
+      "english_sha256": "a2aa596727c4969d46e926cc4453d96345c6e6e7fb096ec8636bcaeae8419e4e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ركانة بن عبد يزيد المطلبي",
+      "english": "Rukana ibn Abd Yazid al-Muttalibi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشافعي",
+      "english": "al-Shafi'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن علي",
+      "english": "Muhammad ibn Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن السائب",
+      "english": "Abdullah ibn al-Sa'ib",
+      "kind": "person"
+    },
+    {
+      "arabic": "نافع بن عجير بن عبد يزيد",
+      "english": "Nafi ibn Ujayr ibn Abd Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهيمة",
+      "english": "Suhayma",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

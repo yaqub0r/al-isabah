@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011767",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11767,
+  "title": {
+    "english": "Malika bint Sahl ibn Zayd ibn 'Amr ibn 'Amir ibn Jusham al-Ansariyya:",
+    "arabic_observed": "مليكة بنت سهل بن زيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011767-segment-0001",
+      "volume": 8,
+      "scan_page": 319,
+      "printed_page": 318,
+      "reader_page": 4231,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4231",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0319:fbba915439251974",
+      "arabic": "١١٧٦٧- مليكة بنت سهل بن زيد\nبن عمرو بن عامر بن جشم الأنصاريّة، امرأة أبي الهيثم بن التيّهان.\nذكرها ابن سعد، وقال: أسلمت وبايعت في رواية: محمد «٤» بن عمر.\n(١) أسد الغابة ت (٧٢٩٢)، أعلام النساء ٥/ ٦١، تجريد أسماء الصحابة ٢/ ٣٠٥.\n(٢) أسد الغابة ت (٧٢٩٤) .\n(٣) أسد الغابة ت (٧٢٩٥) .\n(٤) في أ: محمد بن عمرو.",
+      "english": "11767—Malika bint Sahl ibn Zayd ibn 'Amr ibn 'Amir ibn Jusham al-Ansariyya:\n\nShe was the wife of Abu al-Haytham ibn al-Tayyihan.\n\nIbn Sa'd mentioned her and said, “She embraced Islam and pledged allegiance,” in the transmission of Muhammad ibn 'Umar.⁴\n\n(1) Usd al-Ghaba, entry 7292; A'lam al-Nisa', 5/61; al-Tajrid, 2/305.\n\n(2) Usd al-Ghaba, entry 7294.\n\n(3) Usd al-Ghaba, entry 7295.\n\n(4) In A: “Muhammad ibn 'Amr.”",
+      "arabic_sha256": "a5e42d9b6ed9739453870443ad131186c870d5789e1390c159ee9c524580422a",
+      "english_sha256": "c45d1e1b26cb77683b1ad24ac092419aeac12e3607521eb194854876d41b2a8a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصار",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "مليكة بنت سهل بن زيد بن عمرو بن عامر بن جشم الأنصاريّة",
+      "english": "Malika bint Sahl ibn Zayd ibn 'Amr ibn 'Amir ibn Jusham al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الهيثم بن التيّهان",
+      "english": "Abu al-Haytham ibn al-Tayyihan",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمر",
+      "english": "Muhammad ibn 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمرو",
+      "english": "Muhammad ibn 'Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

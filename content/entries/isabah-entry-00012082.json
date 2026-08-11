@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012082",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12082,
+  "title": {
+    "english": "Umm Samura:²",
+    "arabic_observed": "أم سمرة «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012082-segment-0001",
+      "volume": 8,
+      "scan_page": 412,
+      "printed_page": 411,
+      "reader_page": 4324,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4324",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0412:b868f66989c7606d",
+      "arabic": "١٢٠٨٢- أم سمرة «٢»\n: لها ذكر في ترجمة سميحة في أسماء الرّجال.",
+      "english": "12082—Umm Samura:²\n\nShe is mentioned in the entry for Samiha in the section on men's names.",
+      "arabic_sha256": "4aa6793d2fe3ca6d42bf04fac113046497fd5869934ff100a6afe29e7bdfcdee",
+      "english_sha256": "20fb673b15c23af82e916b3e0bd675b571aba87dc742c17b44723993da196108",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم سمرة",
+      "english": "Umm Samura",
+      "kind": "person"
+    },
+    {
+      "arabic": "سميحة",
+      "english": "Samiha",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

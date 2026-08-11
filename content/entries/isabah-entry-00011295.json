@@ -1,0 +1,110 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011295",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11295,
+  "title": {
+    "english": "Sa'da bint Amr",
+    "arabic_observed": "سعدى بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011295-segment-0001",
+      "volume": 8,
+      "scan_page": 177,
+      "printed_page": 176,
+      "reader_page": 4089,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4089",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0177:02b1fefeda1a5eac",
+      "arabic": "١١٢٩٥- سعدى بنت عمرو\nالمرية «١»، زوج طلحة بنت عبيد اللَّه. كذا قال أبو عمر، لكن قال ابن مندة: سعدى بنت عوف بن خارجة بن سنان بن أبي حارثة، وهذا أولى.\nروت عن النبي ﷺ، وعن زوجها، وعمر روى عنها ابنها يحيى، وابن ابنها طلحة بن يحيى، ومحمد بن عمران الطّلحي.\nأخرج حديثها أبو يعلى، من طريق إسماعيل بن أبي خالد، عن الشّعبيّ، عن يحيى ابن طلحة، عن أمه سعدى المرية، قال: مرّ عمر بطلحة بعد وفاة النبي ﷺ وهو مكتئب، فقال: ما لك؟ أأساءتك امرأة ابنِ عمك؟ قال: لا، ولكني سمعت رسول اللَّه ﷺ يقول: «إنّي لأعلم كلمة لا يقولها عبد عند موته إلّا كانت نورا في صحيفته، وإنّ جسده وروحه ليجدان لها روحا عند الموت» «٢» .\nقال عمر: أنا أعلمها، هي التي أراد تعليمها عمه، ولو علم شيئا أنجى له منها لأمره.\nوقد خالف ابن حبّان فذكرها في «ثقات التّابعين»، ومن يسمع من عمر بعد وفاة النبي ﷺ بأيام، وهي زوج طلحة، فهي صحابية لا محالة.",
+      "english": "11295 — Sa'da bint Amr\n\nal-Murriyya (1), the wife of Talha ibn Ubayd Allah [the printed text reads bint]. This is what Abu Umar said. Ibn Manda, however, said: Sa'da bint Awf ibn Kharija ibn Sinan ibn Abi Haritha. This is preferable.\n\nShe narrated from the Prophet—may Allah bless him and grant him peace—from her husband, and from Umar. Her son Yahya, her grandson Talha ibn Yahya, and Muhammad ibn Imran al-Talhi narrated from her.\n\nAbu Ya'la transmitted her hadith by way of Isma'il ibn Abi Khalid, from al-Sha'bi, from Yahya ibn Talha, from his mother Sa'da al-Murriyya, who said: Umar passed by Talha after the death of the Prophet—may Allah bless him and grant him peace—when he was dejected. He asked, “What is wrong with you? Has your paternal cousin's wife caused you distress?” He replied, “No, but I heard the Messenger of Allah—may Allah bless him and grant him peace—say: ‘Indeed, I know a word that no servant says at the time of his death but that it is a light in his record, and his body and soul find relief through it at death.’” (2)\n\nUmar said: “I know it. It is the word that he wished to teach his uncle. Had he known anything more likely to save him than it, he would have commanded him to say it.”\n\nIbn Hibban, however, differed and included her among the trustworthy members of the Followers. Yet a woman who heard from Umar only days after the death of the Prophet—may Allah bless him and grant him peace—and who was Talha's wife is unquestionably a Companion.",
+      "arabic_sha256": "dccf36d0eb963781e7e447e4cd93d56de4c7e85011533a0632aee6ea137ce516",
+      "english_sha256": "20d9c65f91fbaca18a4f575d70bbbb52fca6a4bbce1e710a4ffa06301e41b1be",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "محمد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "طلحة بنت عبيد اللَّه",
+      "english": "Talha ibn Ubayd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعدى بنت عوف بن خارجة بن سنان بن أبي حارثة",
+      "english": "Sa'da bint Awf ibn Kharija ibn Sinan ibn Abi Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى ابن طلحة",
+      "english": "Yahya ibn Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "طلحة بن يحيى",
+      "english": "Talha ibn Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمران الطلحي",
+      "english": "Muhammad ibn Imran al-Talhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو يعلى",
+      "english": "Abu Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسماعيل بن أبي خالد",
+      "english": "Isma'il ibn Abi Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشعبي",
+      "english": "al-Sha'bi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

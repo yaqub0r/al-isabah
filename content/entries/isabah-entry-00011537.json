@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011537",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11537,
+  "title": {
+    "english": "Umayra bint Zuhayr ibn Rafi' ibn Adi, the Ansari woman, of Banu Jusham²",
+    "arabic_observed": "عميرة بنت ظهير"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011537-segment-0001",
+      "volume": 8,
+      "scan_page": 251,
+      "printed_page": 250,
+      "reader_page": 4163,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4163",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0251:24e88e42f49eddd8",
+      "arabic": "١١٥٣٧- عميرة بنت ظهير\nبن رافع بن عديّ الأنصاريّة، من بني جشم «٢» .\nتقدّم نسبها في ترجمة أبيها، ذكرها ابن سعد وابن حبيب في المبايعات، وقال ابن سعد: أمّها فاطمة بنت بشر بن عديّ زوج مربع بن قيظيّ.",
+      "english": "11537 — Umayra bint Zuhayr ibn Rafi' ibn Adi, the Ansari woman, of Banu Jusham²\n\nHer lineage was given previously in the entry on her father. Ibn Sa'd and Ibn Habib mentioned her among the women who gave the pledge of allegiance. Ibn Sa'd said: Her mother was Fatima bint Bishr ibn Adi, the wife of Murabbi' ibn Qayzi.",
+      "arabic_sha256": "ee30b05f89f3a5d0ba108a3b45a23a0162f97dddd164a7c0d876f8c6adc629ba",
+      "english_sha256": "1074d22f46047803e9fe15a360765c1994ba9949a4eb471f87a851193a36117d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة بنت ظهير بن رافع بن عديّ",
+      "english": "Umayra bint Zuhayr ibn Rafi' ibn Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو جشم",
+      "english": "Banu Jusham",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت بشر بن عديّ",
+      "english": "Fatima bint Bishr ibn Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "مربع بن قيظيّ",
+      "english": "Murabbi' ibn Qayzi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

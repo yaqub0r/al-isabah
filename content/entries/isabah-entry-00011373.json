@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011373",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11373,
+  "title": {
+    "english": "Salma",
+    "arabic_observed": "سلمى ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011373-segment-0001",
+      "volume": 8,
+      "scan_page": 200,
+      "printed_page": 199,
+      "reader_page": 4112,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4112",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0200:f95182c4c4f61235",
+      "arabic": "١١٣٧٣- سلمى ،\nغير منسوبة.\nروى عنها ابن ابنها عبيد اللَّه بن علي. قال ابن مندة: روى إسحاق عن فائد بن عبد الرحمن مولى عبيد الله بن علي مولاه، عن جدته سلمى، قالت: أتانا رسول اللَّه ﷺ فصنعنا له حريرة ... الحديث.\nوتعقبه أبو نعيم بأنها هي امرأة أبي رافع، وقد تقدمت، وساق الحديث موصولا عن عبيد اللَّه بن علي بن أبي رافع عن جدته أنها أخبرته، فذكره، وهو كما قال.",
+      "english": "11373—Salma\n\nNo lineage given.\n\nHer grandson Ubayd Allah ibn Ali narrated from her. ibn Manda said: Ishaq narrated from Fa'id ibn Abd al-Rahman, the client of Ubayd Allah ibn Ali, from his patron, from the latter's grandmother Salma, who said: “The Messenger of Allah (may Allah bless him and grant him peace) came to us, and we prepared harira for him …” the hadith.\n\nAbu Nu'aym criticized this on the ground that she was the wife of Abu Rafi', who has already been discussed. He adduced the hadith with a continuous chain from Ubayd Allah ibn Ali ibn Abi Rafi', from his grandmother, who informed him; Abu Nu'aym then related the hadith. It is as he said.",
+      "arabic_sha256": "81c6a306882b34c6202a69fe3a4b3d2d10cd5c8bcf75b7f5582db00123164532",
+      "english_sha256": "b0a2918bb1977e47c6022537ad7d5873a8f610b2a4e1fdb71945ab6ecb6b6f7a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عبيد",
+      "english": "Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى",
+      "english": "Salma",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد اللَّه بن علي بن أبي رافع",
+      "english": "Ubayd Allah ibn Ali ibn Abi Rafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق",
+      "english": "Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "فائد بن عبد الرحمن",
+      "english": "Fa'id ibn Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو رافع",
+      "english": "Abu Rafi'",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011166",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11166,
+  "title": {
+    "english": "al-Rabab bint al-Nu'man ibn Imri' al-Qays ibn Abd al-Ashhal al-Ansariyya (3), of the Abd al-Ashhal clan, the mother of Mu'adh ibn Zurara al-Zafari.",
+    "arabic_observed": "الرباب بنت النعمان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011166-segment-0001",
+      "volume": 8,
+      "scan_page": 132,
+      "printed_page": 131,
+      "reader_page": 4044,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4044",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0132:5ed4b7dc6b1909fb",
+      "arabic": "١١١٦٦- الرباب بنت النعمان\nبن امرئ القيس بن عبد الأشهل الأنصارية «٣» الأشهلية، والدة معاذ بن زرارة الظفري.\nذكرها ابن حبيب أيضا، وقال ابن سعد: هي عمة سعد بن معاذ، وكان تزوجها زرارة بن عمرو بن عدي الأوسي، فولدت له معاذا، وخلف عليها المعرور بن صخر، فولدت له الرباب، وأسلمت الرباب وبايعت.",
+      "english": "11166 — al-Rabab bint al-Nu'man ibn Imri' al-Qays ibn Abd al-Ashhal al-Ansariyya (3), of the Abd al-Ashhal clan, the mother of Mu'adh ibn Zurara al-Zafari.\n\nIbn Habib also mentioned her. Ibn Sa'd said: She was the paternal aunt of Sa'd ibn Mu'adh. Zurara ibn Amr ibn Adi al-Awsi married her, and she bore him Mu'adh. After him, al-Ma'rur ibn Sakhr married her, and she bore him al-Rabab. al-Rabab embraced Islam and pledged allegiance.",
+      "arabic_sha256": "7a6d340d0c51ce07a311bc61df94f9f580c7e7b07d46a66c799edbb6e0d5246e",
+      "english_sha256": "eac8479ee5e60b003baf0507491e13bc27f17aaba3cf5feaa52c54e404d1b79f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد",
+      "english": "Sa'd ibn al-Yaman",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرباب بنت النعمان بن امرئ القيس بن عبد الأشهل الأنصارية الأشهلية",
+      "english": "al-Rabab bint al-Nu'man ibn Imri' al-Qays ibn Abd al-Ashhal al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاذ بن زرارة الظفري",
+      "english": "Mu'adh ibn Zurara al-Zafari",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن معاذ",
+      "english": "Sa'd ibn Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "زرارة بن عمرو بن عدي الأوسي",
+      "english": "Zurara ibn Amr ibn Adi al-Awsi",
+      "kind": "person"
+    },
+    {
+      "arabic": "المعرور بن صخر",
+      "english": "al-Ma'rur ibn Sakhr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرباب",
+      "english": "al-Rabab bint al-Ma'rur",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرباب، غير منسوبة",
+      "english": "al-Rabab",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو",
+      "english": "Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأشهلية",
+      "english": "Banu Abd al-Ashhal",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الظفري",
+      "english": "Banu Zafar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأوسي",
+      "english": "al-Aws",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

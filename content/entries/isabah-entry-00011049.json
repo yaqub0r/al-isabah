@@ -1,0 +1,134 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011049",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11049,
+  "title": {
+    "english": "Hassana al-Muzaniyya,⁵",
+    "arabic_observed": "حسانة المزنية «٥»،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011049-segment-0001",
+      "volume": 8,
+      "scan_page": 85,
+      "printed_page": 84,
+      "reader_page": 3997,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3997",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0085:f06f6b3846d86122",
+      "arabic": "١١٠٤٩- حسانة المزنية «٥»،\nكان اسمها جثامة،\nأسند قصتها أبو عمر من طريق صالح بن رستم، عن ابن أبي مليكة، عن عائشة، قالت: جاءت عجوز إلى النبي ﷺ فقال\n(١) أسد الغابة ت ٦٨٤٥، الاستيعاب ت ٣٣٣٩.\n(٢) أسد الغابة ت ٦٨٤٦، الاستيعاب ت ٣٣٤٠.\n(٣) أسد الغابة ت ٦٨٤٧.\n(٤) أسد الغابة ت ٦٨٤٨، الاستيعاب ت ٣٣٤١.\n(٥) أسد الغابة ت ٦٨٤٩، الاستيعاب ت ٣٣٤٢.",
+      "english": "11049 — Hassana al-Muzaniyya,⁵\n\nHer name had been Jathama.\n\nAbu Umar transmitted her story with an isnad through Salih ibn Rustum, from Ibn Abi Mulayka, from Aisha, who said: “An old woman came to the Prophet (may Allah bless him and grant him peace), and he said—”\n\n¹ Usd al-Ghaba, entry 6845; al-Isti'ab, entry 3339.\n² Usd al-Ghaba, entry 6846; al-Isti'ab, entry 3340.\n³ Usd al-Ghaba, entry 6847.\n⁴ Usd al-Ghaba, entry 6848; al-Isti'ab, entry 3341.\n⁵ Usd al-Ghaba, entry 6849; al-Isti'ab, entry 3342.",
+      "arabic_sha256": "361445d2f9776241452420f7f2ce9273b7739e7183fd3dbe1c98547793a03364",
+      "english_sha256": "3a51703500689a9e6e060c179b6acd28f0e112c0106a40e6b2889eb75c9cf1a5",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011049-segment-0002",
+      "volume": 8,
+      "scan_page": 86,
+      "printed_page": 85,
+      "reader_page": 3998,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3998",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0086:2c11aa9db10e830f",
+      "arabic": "لها: «من أنت»؟ فقالت: أنا جثامة المزنية. قال: «كيف حالكم؟ كيف أنتم بعدنا»؟ قالت:\nبخير، بأبي أنت وأمي يا رسول اللَّه! فلما خرجت قلت: يا رسول اللَّه، تقبل على هذه العجوز هذا الإقبال؟ فقال: «إنّها كانت تأتينا أيّام خديجة، وإنّ حسن العهد من الإيمان» «١» .\nقال أبو عمر: هذا أصحّ من رواية من روى ذلك في ترجمة الحولاء بنت تويت.\nقلت: سيأتي بيان ذلك في الحولاء غير منسوبة.",
+      "english": "He said to her, “Who are you?” She replied, “I am Jaththama al-Muzaniyya.” He said, “How are you all? How have you been since we left?” She replied, “Well—may my father and mother be your ransom, O Messenger of Allah!” When she departed, I said, “O Messenger of Allah, do you show this old woman such attention?” He replied, “She used to visit us in the days of Khadijah, and faithful observance of old ties is part of faith.” (1)\n\nAbu Umar said: This is sounder than the narration of those who related it in the biography of al-Hawla bint Tuwayt.\n\nI say: An explanation of this will appear under al-Hawla, with no nisba given.",
+      "arabic_sha256": "ab322583f2935734a5fab9dabb2dbc81d25b68f9ee3f1a29dd7e384285700518",
+      "english_sha256": "75442909f0944384668351a660d408d14159edeba500b2e5c0c96f264677892d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "حسانة المزنية",
+      "english": "Hassana al-Muzaniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "جثامة",
+      "english": "Jathama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "صالح بن رستم",
+      "english": "Salih ibn Rustum",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي مليكة",
+      "english": "Ibn Abi Mulayka",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "جثامة المزنية",
+      "english": "Jaththama al-Muzaniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحولاء بنت تويت",
+      "english": "al-Hawla bint Tuwayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحولاء",
+      "english": "al-Hawla",
+      "kind": "person"
+    },
+    {
+      "arabic": "جثّامة",
+      "english": "Jaththama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

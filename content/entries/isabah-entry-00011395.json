@@ -1,0 +1,112 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011395",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11395,
+  "title": {
+    "english": "Shahida",
+    "arabic_observed": "شهيدة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011395-segment-0001",
+      "volume": 8,
+      "scan_page": 208,
+      "printed_page": 207,
+      "reader_page": 4120,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4120",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0208:6c4b2990b5b78fb8",
+      "arabic": "١١٣٩٥- شهيدة ،\nأم ورقة الأنصارية «٥» .\nذكرها ابن مندة في «الأسماء الأعلام»، وهو وهم، وإنما هو وصف، وحديثها صريح في ذلك، وسيأتي في الكنى فيه\nقول عمر لما قتلها غلامها الّذي دبّرته: صدق رسول اللَّه ﷺ كان يقول: «انطلقوا بنا نزور الشّهيدة» .\n(١) أسد الغابة ت (٧٠٤١) .\n(٢) في أ: السين المهملة.\n(٣) أسد الغابة: ت (٧٠٤٦)، الاستيعاب: ت (٣٤٤٦) .\n(٤) أسد الغابة ت (٧٠٤٨) .\n(٥) أسد الغابة ت (٧٠٥٦)، تجريد أسماء الصحابة ٢/ ٢٨١.",
+      "english": "11395 — Shahida\n\nUmm Waraqa al-Ansariyya (5).\n\nIbn Manda listed her among “Proper Names,” but this is an error: it is only a description. Her hadith is explicit about this. It will appear under the kunyas, including Umar's statement when she was killed by the slave whom she had arranged to be manumitted after her death: “The Messenger of Allah—may Allah bless him and grant him peace—spoke the truth. He used to say, ‘Come with us to visit the martyr.’”\n\n(1) Usd al-Ghaba, entry (7041).\n\n(2) In manuscript A: “the unpointed sin.”\n\n(3) Usd al-Ghaba, entry (7046); al-Isti'ab, entry (3446).\n\n(4) Usd al-Ghaba, entry (7048).\n\n(5) Usd al-Ghaba, entry (7056); al-Tajrid, 2/281.",
+      "arabic_sha256": "5a88095054c21b38d886b37463c69553fa0a79b5d30ec1fcaf5750f5d3001a60",
+      "english_sha256": "25a6d6ddc9226fbb5c330ab66218a67112bc2954b674fa954bc88d5f4bb0a4fe",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011395-segment-0002",
+      "volume": 8,
+      "scan_page": 209,
+      "printed_page": 208,
+      "reader_page": 4121,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4121",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0209:22ac144d448c10f6",
+      "arabic": "حرف الصاد المهملة\nالقسم الأول",
+      "english": "The Letter Sad, without a Dot\n\nSection One",
+      "arabic_sha256": "9bf4603d73dcb5cb8c613f416b5f3d300e4bd568b27fb7befb3eab179e1a8322",
+      "english_sha256": "fdc36218cac6277d3eb7636c48c8c51fe89735c10286473c848b7c4cfc76aa79",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصارية",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "شهيدة",
+      "english": "Shahida",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم ورقة الأنصارية",
+      "english": "Umm Waraqa al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأسماء الأعلام",
+      "english": "Proper Names",
+      "kind": "other"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "شخبرة / سخبرة",
+      "explanation": "The canonical text and supplied witnesses are unvocalized. Shakhbara and Sakhbara are retained provisionally, but their precise vowel pattern cannot be established from the supplied evidence.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0208:6c4b2990b5b78fb8"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

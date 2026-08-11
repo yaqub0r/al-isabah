@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011978",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11978,
+  "title": {
+    "english": "Umm al-Hakam bint Abd al-Rahman ibn Mas'ud ibn Tha'laba ibn Asira ibn 'Asira ibn Atiyya ibn Judara al-Ansariyya; she is also called Umm Hakim.",
+    "arabic_observed": "أم الحكم بنت عبد الرحمن"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011978-segment-0001",
+      "volume": 8,
+      "scan_page": 379,
+      "printed_page": 378,
+      "reader_page": 4291,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4291",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0379:161f9027f835d652",
+      "arabic": "١١٩٧٨- أم الحكم بنت عبد الرحمن\nبن مسعود بن ثعلبة بن أسيرة بن عسيرة بن عطية بن جدارة الأنصاريّة، ويقال أم حكيم.\nذكرها ابن حبيب في المبايعات. وقال ابن سعد: تزوجها أبو مسعود عقبة «٤» بن عمرو البدريّ، وهي ممن أسلم وبايع النبي ﵌.",
+      "english": "11978—Umm al-Hakam bint Abd al-Rahman ibn Mas'ud ibn Tha'laba ibn Asira ibn 'Asira ibn Atiyya ibn Judara al-Ansariyya; she is also called Umm Hakim.\n\nIbn Habib mentioned her among the women who pledged allegiance. Ibn Sa'd said: Abu Mas'ud Uqba (4) ibn Amr al-Badri married her. She was among the women who accepted Islam and pledged allegiance to the Prophet—may Allah bless him and grant him peace.",
+      "arabic_sha256": "43db02c7dd040abb4d56e5d899368f13e7a99feae8d52a343855353eb35667d5",
+      "english_sha256": "d66ded39b82b09c2ed79ee37335fba9652d34965011c5864d828852730d486c7",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الحكم بنت عبد الرحمن بن مسعود بن ثعلبة بن أسيرة بن عسيرة بن عطية بن جدارة الأنصارية",
+      "english": "Umm al-Hakam bint Abd al-Rahman ibn Mas'ud ibn Tha'laba ibn Asira ibn 'Asira ibn Atiyya ibn Judara al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم",
+      "english": "Umm Hakim bint Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

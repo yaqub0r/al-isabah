@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011909",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11909,
+  "title": {
+    "english": "Umm Burda bint al-Mundhir [2]",
+    "arabic_observed": "أم بردة بنت المنذر «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011909-segment-0001",
+      "volume": 8,
+      "scan_page": 364,
+      "printed_page": 363,
+      "reader_page": 4276,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4276",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0364:6e0f5cf398860a3a",
+      "arabic": "١١٩٠٩- أم بردة بنت المنذر «٢»\nبن زيد بن لبيد «٣» بن عامر بن عدي بن النّجّار الأنصاريّة النّجاريّة.\nمشهورة بكنيتها. وتقدم في الخاء المعجمة من الأسماء أن اسمها خولة، قال ابن سعد: إنها زينب بنت سفيان بن قيس بن زعوراء، من عدي بن النّجّار، تزوّجها البراء بن أوس بن الجعد بن عوف بن مبذول، وهي التي أرضعت إبراهيم ابن النّبيّ ﵌، دفعه إليها لما وضعته مارية، فلم تزل ترضعه حتى مات عنها. وقال أبو موسى:\nالمشهور أن التي أرضعته أم سيف، ولعلهما جميعا أرضعتاه.",
+      "english": "11909—Umm Burda bint al-Mundhir [2]\n\nibn Zayd ibn Labid [3] ibn Amir ibn Adi ibn al-Najjar, al-Ansariyya al-Najjariyya.\n\nShe is well known by her kunyah. It was stated previously, under the dotted letter kha among the names, that her name was Khawla. Ibn Sa'd said: She was Zaynab bint Sufyan ibn Qays ibn Za'wura, of Adi ibn al-Najjar. Al-Bara ibn Aws ibn al-Ja'd ibn Awf ibn Mabdhul married her. She was the woman who nursed Ibrahim, the son of the Prophet—may Allah bless him and grant him peace. He entrusted him to her when Mariya gave birth to him, and she continued nursing him until he died while in her care. Abu Musa said: The well-known account is that the woman who nursed him was Umm Sayf; perhaps both of them nursed him.",
+      "arabic_sha256": "b48aafe27b134872132a31f2be4b4ec4bdca592bae1eca3d41c604c1b2e9d1e5",
+      "english_sha256": "46e98a3bd5d92678c27d0b69057eb87610340ff16e767791886649d114521e20",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت سفيان بن قيس بن زعوراء",
+      "english": "Zaynab bint Sufyan ibn Qays ibn Za'wura",
+      "kind": "person"
+    },
+    {
+      "arabic": "عدي بن النجار",
+      "english": "Adi ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "البراء بن أوس بن الجعد بن عوف بن مبذول",
+      "english": "al-Bara ibn Aws ibn al-Ja'd ibn Awf ibn Mabdhul",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم",
+      "english": "Ibrahim",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "مارية",
+      "english": "Mariya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سيف",
+      "english": "Umm Sayf",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

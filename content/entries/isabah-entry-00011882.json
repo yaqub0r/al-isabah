@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011882",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11882,
+  "title": {
+    "english": "Wasna bint al-Salt al-Sulamiyya",
+    "arabic_observed": "وسناء بنت الصّلت السلمية"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011882-segment-0001",
+      "volume": 8,
+      "scan_page": 353,
+      "printed_page": 352,
+      "reader_page": 4265,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4265",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0353:e6c1cc9510087de4",
+      "arabic": "١١٨٨٢- وسناء بنت الصّلت السلمية\nذكر ابن ماكولا أن النّبي ﵌ تزوج بها فماتت قبل الدخول، كذا في «التّجريد»، وقد ذكرها ابن أبي خيثمة (وابن أبي عبدة) «١»، وسمّي جدّها الصّلت.\nوقال عبد القاهر بن السّريّ: اسمها سنا- يعني بغير واو. وقال قتادة: اسمها أسماء، وقد تقدم جميع ذلك.",
+      "english": "11882—Wasna bint al-Salt al-Sulamiyya\n\nIbn Makula mentioned that the Prophet, may Allah bless him and grant him peace, married her, but she died before the marriage was consummated. Thus it appears in al-Tajrid. Ibn Abi Khaythama (and Ibn Abi Abda) [1] also mentioned her, and her grandfather is named al-Salt.\n\nAbd al-Qahir ibn al-Sari said: Her name was Sana—that is, without a waw. Qatada said: Her name was Asma. All of this has already been mentioned.",
+      "arabic_sha256": "bad310364ef1f0c9127053521625152a0fd36464d56818dd890fbccfd95b19c7",
+      "english_sha256": "4f50b32554d1aada3510f3cdd9663116e5e550ac1d5598c0550f980cf2f9609f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "وسناء بنت الصلت السلمية",
+      "english": "Wasna bint al-Salt al-Sulamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماكولا",
+      "english": "Ibn Makula",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن أبي خيثمة",
+      "english": "Ibn Abi Khaythama",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عبدة",
+      "english": "Ibn Abi Abda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد القاهر بن السري",
+      "english": "Abd al-Qahir ibn al-Sari",
+      "kind": "person"
+    },
+    {
+      "arabic": "سنا",
+      "english": "Sana bint al-Salt al-Sulamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتادة",
+      "english": "Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء",
+      "english": "Asma bint al-Salt al-Sulamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

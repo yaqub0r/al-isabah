@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011915",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11915,
+  "title": {
+    "english": "Umm Bilal:",
+    "arabic_observed": "أم بلال:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011915-segment-0001",
+      "volume": 8,
+      "scan_page": 366,
+      "printed_page": 365,
+      "reader_page": 4278,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4278",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0366:49c89291ce515a7e",
+      "arabic": "١١٩١٥- أم بلال:\nامرأة بلال «١» .\nذكرها أبو موسى في «الذّليل» ونقل عن المستغفريّ أن البخاريّ ذكرها فيمن روى عن النّبيّ ﵌ من خزاعة.",
+      "english": "11915 — Umm Bilal:\n\nThe wife of Bilal.(1)\n\nAbu Musa mentioned her in al-Dhayl and transmitted from al-Mustaghfiri that al-Bukhari included her among those of Khuza'a who narrated from the Prophet, may Allah bless him and grant him peace.",
+      "arabic_sha256": "15297709e6a14009c97da011959f5e3ea47601a61f8dbf7eec55d3e38ea43991",
+      "english_sha256": "e6f5100c87660bcf7a693d1ffb0af231b55b06811268865ea9a2c2375d98902d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم بلال",
+      "english": "Umm Bilal",
+      "kind": "person"
+    },
+    {
+      "arabic": "بلال",
+      "english": "Bilal",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذّليل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستغفريّ",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاريّ",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "خزاعة",
+      "english": "Khuza'a",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النّبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

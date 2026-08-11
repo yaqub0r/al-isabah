@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011271",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11271,
+  "title": {
+    "english": "Zaynab bint Abi Hazim,",
+    "arabic_observed": "زينب بنت أبي حازم ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011271-segment-0001",
+      "volume": 8,
+      "scan_page": 171,
+      "printed_page": 170,
+      "reader_page": 4083,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4083",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0171:f4e1211b60a58c19",
+      "arabic": "١١٢٧١- زينب بنت أبي حازم ،\nأخت قيس بن أبي حازم. ذكرها ابن الفرضيّ.\nالقسم الرابع",
+      "english": "11271 — Zaynab bint Abi Hazim,\nsister of Qays ibn Abi Hazim. Ibn al-Faradi mentioned her.\n\nTHE FOURTH SECTION",
+      "arabic_sha256": "fd9fb8d62c11044a3926be7c37b9d0eeb1ff6257bf5c59cc843dd2bd6148fdc5",
+      "english_sha256": "5be29659b9ddab93a2ced7064c7b86597bc6de73487d3c4261590eb7e94d7684",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زينب بنت أبي حازم",
+      "english": "Zaynab bint Abi Hazim",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس بن أبي حازم",
+      "english": "Qays ibn Abi Hazim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الفرضيّ",
+      "english": "Ibn al-Faradi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

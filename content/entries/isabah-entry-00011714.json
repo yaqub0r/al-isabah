@@ -1,0 +1,254 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011714",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11714,
+  "title": {
+    "english": "Layla bint al-Khatim",
+    "arabic_observed": "ليلى بنت الخطيم"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011714-segment-0001",
+      "volume": 8,
+      "scan_page": 304,
+      "printed_page": 303,
+      "reader_page": 4216,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4216",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0304:bac77a870c945fa2",
+      "arabic": "١١٧١٤- ليلى بنت الخطيم\nبن عديّ «٣» بن عمرو بن سواد بن ظفر الأنصاريّة الأوسيّة ثم الظفريّة.\n(١) أسد الغابة ت (٧٢٦١)، الاستيعاب ت (٣٥٣٤)، الثقات ٣/ ٣٦٢، أعلام النساء ٤/ ٣٠٢- تجريد أسماء الصحابة ٢/ ٣٠٢ خلاصة تهذيب الكمال ٣/ ٤٠٧.\n(٢) الاستيعاب ت (٣٥٣٥) .\n(٣) أسد الغابة ت (٧٢٦٣) - أعلام النساء ٢/ ١٠١- تجريد أسماء الصحابة ج ٢/ ٣٠١- تلقيح فهوم أهل الأثر ٢٧٢٢٦.",
+      "english": "11714—Layla bint al-Khatim\n\nibn Adi³ ibn Amr ibn Sawad ibn Zafar, an Ansari woman of the Aws, specifically of Banu Zafar.\n\n(1) Usd al-Ghaba, entry 7261; al-Isti'ab, entry 3534; al-Thiqat, 3/362; A'lam al-Nisa', 4/302; al-Tajrid, 2/302; Khulasat Tahdhib al-Kamal, 3/407.\n\n(2) al-Isti'ab, entry 3535.\n\n(3) Usd al-Ghaba, entry 7263; A'lam al-Nisa', 2/101; al-Tajrid, vol. 2, p. 301; Talqih Fuhum Ahl al-Athar, pp. 27, 226.",
+      "arabic_sha256": "66fa3ba6334f4b0ea9adc99a40a0c2a63edd5458aa4a9978f2cefbacda7e7953",
+      "english_sha256": "066cbefcd762651286903d0fa517bd23c9ff1cff6e864c6a3c7d72765d234dc7",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011714-segment-0002",
+      "volume": 8,
+      "scan_page": 305,
+      "printed_page": 304,
+      "reader_page": 4217,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4217",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0305:9d518fa01cfc30aa",
+      "arabic": "استدركها أبو عليّ الجيّانيّ على الاستيعاب، وقال:\nذكرها ابن أبي خيثمة، وقال: أقبلت على النبيّ ﵌ فقالت: أنا ليلى بنت الخطيم، جئتك أعرض نفسي عليك، فتزوّجني. قال: «قد فعلت»، ورجعت إلى قومها، فقالوا: بئس ما صنعت؟\nأنت امرأة غيري، وهو صاحب نساء، ارجعي، فاستقيليه، فرجعت فقالت: أقلني، فقال:\n«قد فعلت» .\nقلت: ذكر ذلك ابن سعد عن ابن عبّاس بسند فيه الكلبيّ، فذكروا أتمّ منه، وأوله:\nأقبلت ليلى بنت الخطيم إلى النبيّ ﵌ وهو مولّ ظهره الشّمس فضربت على منكبه، فقال: من هذا أكلة الأسد، وكان كثيرا ما يقولها، وفي آخره: فقال: «قد أقلتك»، قال: وتزوجها مسعود بن أوس بن سواد بن ظفر، فولدت له، فبينا هي في حائط من حيطان المدينة تغتسل إذ وثب عليها ذئب فأكل بعضها فأدركت فماتت.\nثم أسند عن الواقديّ، عن محمد بن صالح بن دينار، عن عاصم بن عمر بن قتادة، قال: كانت ليلى بنت الخطيم وهبت نفسها للنّبيّ ﵌ فقبلها، وكانت تركب بعولتها ركوبا منكرا، وكانت سيّئة الخلق ... فذكر نحو القصّة دون ما في آخرها، وقال في روايته: فقالت: إنك نبيّ اللَّه، وقد أحلّ اللَّه لك النساء، وأنا امرأة طويلة اللّسان لا صبر لي على الضّرائر واستقالته.\nومن طريق ابن أبي عون أنّ ليلى وهبت نفسها للنّبيّ ﵌ ووهبن نساء أنفسهن، فلم يسمع أنّ النبيّ ﵌ قبل منهن أحدا، قال: وأمّها مشرفة الدّار بنت هيشة بنت الحارث.\nوأخرج ابن سعد عن الواقديّ، حسبته عن عاصم بن عمر بن قتادة، قال: أوّل من بايع النبيّ ﵌ أم سعد بن معاذ، وهي كبشة بنت أبي رافع بن عبيد، ومن بني ظفر ليلى بنت الخطيم، ومن بني عمرو بن عوف ليلى ومريم وسهيمة بنات أبي سفيان اللّيثي، يقال له أبو البنات ... الحديث.\nوذكر ابن سعد أيضا أنّ مسعود بن أوس تزوّجها في الجاهليّة، فولدت له عمرة وعميرة، وكان يقال لها أكلة الأسد، وكانت أول امرأة بايعت النبيّ ﵌، ومعها ابنتاها وابنتان لابنتها، ووهبت نفسها له ثم استقالة بنو ظفر فأقالها.",
+      "english": "Abu Ali al-Jayyani included her in his supplement to al-Isti'ab, saying:\n\nIbn Abi Khaythama mentioned her and said: She approached the Prophet, may Allah bless him and grant him peace, and said, “I am Layla bint al-Khatim. I have come to offer myself to you, so marry me.” He said, “I have done so.” She returned to her people, and they said, “What you have done is wretched! You are a jealous woman, while he has wives. Go back and ask him to release you.” She returned and said, “Release me.” He said, “I have done so.”\n\nI say: Ibn Sa'd related this from Ibn Abbas through a chain containing al-Kalbi, and they gave a fuller account than this. Its beginning is: Layla bint al-Khatim approached the Prophet, may Allah bless him and grant him peace, while he had his back to the sun, and struck him on the shoulder. He said, “Who is this? The Lion's Meal?” He often used this expression. At its end it says: He said, “I have released you.” He said: Mas'ud ibn Aws ibn Sawad ibn Zafar married her, and she bore him children. While she was bathing in one of the walled gardens of Medina, a wolf sprang upon her and ate part of her. They reached her, but she died.\n\nHe then transmitted with his chain from al-Waqidi, from Muhammad ibn Salih ibn Dinar, from Asim ibn Umar ibn Qatada, who said: Layla bint al-Khatim offered herself to the Prophet, may Allah bless him and grant him peace, and he accepted her. She used to behave reprehensibly toward her husbands, and she was ill-tempered … He then related approximately the same story, but without what appears at its end. In his version he said: She said, “You are the Prophet of Allah, and Allah has made women lawful to you. But I am a sharp-tongued woman and have no patience with co-wives,” and she asked him to release her.\n\nThrough Ibn Abi Awn, it is related that Layla offered herself to the Prophet, may Allah bless him and grant him peace, and other women also offered themselves, but no report is known that the Prophet, may Allah bless him and grant him peace, accepted any of them. He said: Her mother was Mushrifat al-Dar bint Haysha bint al-Harith.\n\nIbn Sa'd transmitted from al-Waqidi—I think it was from Asim ibn Umar ibn Qatada—who said: The first woman to pledge allegiance to the Prophet, may Allah bless him and grant him peace, was the mother of Sa'd ibn Mu'adh, namely Kabsha bint Abi Rafi ibn Ubayd; from Banu Zafar, Layla bint al-Khatim; and from Banu Amr ibn Awf, Layla, Maryam, and Suhayma, the daughters of Abu Sufyan al-Laythi, who was called Abu al-Banat … the hadith.\n\nIbn Sa'd also mentioned that Mas'ud ibn Aws married her during the pre-Islamic period, and she bore him Amra and Umayra. She was called “the Lion's Meal.” She was the first woman to pledge allegiance to the Prophet, may Allah bless him and grant him peace, and with her were her two daughters and two daughters of her daughter. She offered herself to him; then Banu Zafar asked him to release her, and he released her.",
+      "arabic_sha256": "0ce3f68d31da330ca0e5a7548e923db9eaf11e3f7e8a51de5955a276e32f5193",
+      "english_sha256": "3ad3eacba082c09bccdb901c690557789a44524cc2e626dc49aa8c44a3b2da10",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصاريّة",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأوسيّة",
+      "english": "Aws",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الظفريّة",
+      "english": "Banu Zafar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عليّ الجيّانيّ",
+      "english": "Abu Ali al-Jayyani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي خيثمة",
+      "english": "Ibn Abi Khaythama",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ليلى بنت الخطيم",
+      "english": "Layla bint al-Khatim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبّاس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكلبيّ",
+      "english": "al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أكلة الأسد",
+      "english": "the Lion's Meal",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسعود بن أوس بن سواد بن ظفر",
+      "english": "Mas'ud ibn Aws ibn Sawad ibn Zafar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن صالح بن دينار",
+      "english": "Muhammad ibn Salih ibn Dinar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاصم بن عمر بن قتادة",
+      "english": "Asim ibn Umar ibn Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عون",
+      "english": "Ibn Abi Awn",
+      "kind": "person"
+    },
+    {
+      "arabic": "مشرفة الدّار بنت هيشة بنت الحارث",
+      "english": "Mushrifat al-Dar bint Haysha bint al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن معاذ",
+      "english": "Sa'd ibn Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "كبشة بنت أبي رافع بن عبيد",
+      "english": "Kabsha bint Abi Rafi ibn Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو ظفر",
+      "english": "Banu Zafar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بنو عمرو بن عوف",
+      "english": "Banu Amr ibn Awf",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ليلى",
+      "english": "Layla bint Abi Sufyan al-Laythi",
+      "kind": "person"
+    },
+    {
+      "arabic": "مريم",
+      "english": "Maryam bint Abi Sufyan al-Laythi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهيمة",
+      "english": "Suhayma bint Abi Sufyan al-Laythi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سفيان اللّيثي",
+      "english": "Abu Sufyan al-Laythi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو البنات",
+      "english": "Abu al-Banat",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة",
+      "english": "Amra bint Mas'ud ibn Aws",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة",
+      "english": "Umayra bint Mas'ud ibn Aws",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "idiomatic nuance",
+      "arabic_span": "كانت تركب بعولتها ركوبا منكرا",
+      "explanation": "The broad final rendering preserves the habitual and condemnatory force, but the supplied evidence does not conclusively establish the precise idiomatic nuance of تركب.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0305:9d518fa01cfc30aa"
+    },
+    {
+      "category": "name vocalization",
+      "arabic_span": "مشرفة الدّار بنت هيشة بنت الحارث",
+      "explanation": "The consonantal Arabic and supplied witnesses do not conclusively establish the vocalization of مشرفة الدار or هيشة. “Mushrifat al-Dar bint Haysha bint al-Harith” is therefore provisional.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0305:9d518fa01cfc30aa"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

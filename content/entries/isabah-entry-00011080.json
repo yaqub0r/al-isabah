@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011080",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11080,
+  "title": {
+    "english": "Hamna bint Abi Salama.",
+    "arabic_observed": "حمنة بنت أبي سلمة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011080-segment-0001",
+      "volume": 8,
+      "scan_page": 97,
+      "printed_page": 96,
+      "reader_page": 4009,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4009",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0097:fef400f01af3cf16",
+      "arabic": "١١٠٨٠- حمنة بنت أبي سلمة\nقيل هي المذكورة\nفي حديث أم حبيبة حين عرضت على النبي ﷺ أن يتزوج أختها، ففي الحديث: «إنّك تريد بنت أبي سلمة»،\nقرأته في شرح البخاري للشيخ برهان الدين الحلبي الّذي لخصه من شرح شيخنا ابن الملقن، وعزا ذلك لأبي موسى، والّذي في ذيل أبي موسى حمنة بنت أبي سفيان لا بنت أبي سلمة، والصحيح مع ذلك غيره كما أوضحته في فتح الباري.",
+      "english": "11080. Hamna bint Abi Salama.\n\nIt has been said that she is the woman mentioned in the hadith of Umm Habiba, when she proposed to the Prophet—may Allah bless him and grant him peace—that he marry her sister. The hadith states: “Indeed, you want the daughter of Abu Salama.”\n\nI read this in the commentary on al-Bukhari by Shaykh Burhan al-Din al-Halabi, which he abridged from the commentary of our shaykh Ibn al-Mulaqqin, and he attributed it to Abu Musa. What appears in Abu Musa's al-Dhayl, however, is Hamna bint Abi Sufyan, not bint Abi Salama. Even so, the correct identification is someone else, as I have explained in Fath al-Bari.",
+      "arabic_sha256": "0b887078e9f72023ab29c2a0813b4f795f648bac3cd36c72432ffef8d91c6b9c",
+      "english_sha256": "fae2c3f7332740b0b846d9eaee116c0951e2c6e03008e004d7ec6226c68f50de",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "حمنة بنت أبي سلمة",
+      "english": "Hamna bint Abi Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سلمة",
+      "english": "Abu Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "برهان الدين الحلبي",
+      "english": "Burhan al-Din al-Halabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الملقن",
+      "english": "Ibn al-Mulaqqin",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمنة بنت أبي سفيان",
+      "english": "Hamna bint Abi Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "فتح الباري",
+      "english": "Fath al-Bari",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

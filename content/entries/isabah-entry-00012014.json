@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012014",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12014,
+  "title": {
+    "english": "Umm Dharra¹:",
+    "arabic_observed": "أم ذرّة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012014-segment-0001",
+      "volume": 8,
+      "scan_page": 389,
+      "printed_page": 388,
+      "reader_page": 4301,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4301",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0389:8ce4f866914419a9",
+      "arabic": "١٢٠١٤- أم ذرّة «١»\n: مذكورة في الصّحابيات، حديثها\nعند محمد بن المنكدر- أنها سمعت النبي ﵌ يقول: «أنا وكافل اليتيم [يوم القيامة] «٢» كهاتين» «٣» .\nكذا في نسخ الاستيعاب.\nحرف الراء\nالقسم الأول",
+      "english": "12014—Umm Dharra¹:\n\nShe is mentioned among the female Companions. Her hadith is related through Muhammad ibn al-Munkadir: she heard the Prophet, may Allah bless him and grant him peace, say, “I and one who cares for an orphan [on the Day of Resurrection]² will be like these two.”³\n\nThus it appears in the copies of al-Isti'ab.\n\nTHE LETTER RA\n\nFIRST SECTION",
+      "arabic_sha256": "567ea6c2fe0af51667050fd626e0a4b3ec32b6c3c571f35520dcde69e3e2aa73",
+      "english_sha256": "12ae87321ab64a0d04f62e1cc484000833e965606c69e5163838ede1f8e01029",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم ذرّ",
+      "english": "Umm Dharr",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم ذرّة",
+      "english": "Umm Dharra",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن المنكدر",
+      "english": "Muhammad ibn al-Munkadir",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

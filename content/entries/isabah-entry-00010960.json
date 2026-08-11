@@ -1,0 +1,104 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010960",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10960,
+  "title": {
+    "english": "Tamima bint Abi Sufyan ibn Qays al-Ashhaliyya",
+    "arabic_observed": "تميمة بنت أبي سفيان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010960-segment-0001",
+      "volume": 8,
+      "scan_page": 58,
+      "printed_page": 57,
+      "reader_page": 3970,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3970",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0058:aa2b06b94678dc20",
+      "arabic": "١٠٩٦٠- تميمة بنت أبي سفيان\nبن قيس الأشهلية «٥» ذكرها ابن سعد، وابن حبيب\n(١) في أسألتني الطلاق لأطلقن.\n(٢) أسد الغابة ت ٦٧٨٧، الاستيعاب ت ٣٣٠٨.\n(٣) الثقات ٣/ ٤٢ أعلام النساء ١/ ١٤٩، تجريد أسماء الصحابة ٢/ ٢٥٣.\n(٤) في أ: تملك.\n(٥) أسد الغابة ت ٦٧٨٩.",
+      "english": "10960—Tamima bint Abi Sufyan ibn Qays al-Ashhaliyya\n\nIbn Sa'd and Ibn Habib mentioned her.\n\n(1) In A: “If you ask me for divorce, I will certainly divorce you.”\n\n(2) Usd al-Ghaba, entry 6787; al-Isti'ab, entry 3308.\n\n(3) al-Thiqat, 3/42; A'lam al-Nisa, 1/149; al-Tajrid, 2/253.\n\n(4) In A: “Tamluk.”\n\n(5) Usd al-Ghaba, entry 6789.",
+      "arabic_sha256": "e5c306b3a08db372e9d4921d3a4f46f1f220ad19c75d096f3da1f8035a7c1fd5",
+      "english_sha256": "e0e29096c86bc29425a27d48bd458f193804d1744c396522e4a7222870d3f0e5",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010960-segment-0002",
+      "volume": 8,
+      "scan_page": 59,
+      "printed_page": 58,
+      "reader_page": 3971,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3971",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0059:5365a6d5f8d33d8b",
+      "arabic": "فيمن بايع النبي ﷺ من النساء، وسيأتي لها ذكر في ترجمة ليلى بنت الخطيم.",
+      "english": "among the women who pledged allegiance to the Prophet, may Allah bless him and grant him peace. She will be mentioned in the entry on Layla bint al-Khatim.",
+      "arabic_sha256": "25beeb95f527603daa5a681628ccc9b265de4a792253174bc39590440f0fb776",
+      "english_sha256": "c9c03b6d9211b7f6f2f56ed5da15cf9bc82f5f8eb675535fd4f59cc4724a6916",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "تميمة بنت أبي سفيان بن قيس الأشهلية",
+      "english": "Tamima bint Abi Sufyan ibn Qays al-Ashhaliyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تملك",
+      "english": "Tamluk",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليلى بنت الخطيم",
+      "english": "Layla bint al-Khatim",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

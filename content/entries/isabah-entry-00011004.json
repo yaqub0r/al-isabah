@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011004",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11004,
+  "title": {
+    "english": "Jumaymah bint Sayfi",
+    "arabic_observed": "جميمة بن صيفي"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011004-segment-0001",
+      "volume": 8,
+      "scan_page": 73,
+      "printed_page": 72,
+      "reader_page": 3985,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3985",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0073:67a9c22cb9e5312c",
+      "arabic": "١١٠٠٤- جميمة بن صيفي\nبن صخر بن خنساء الأنصارية «٢» . ذكرها ابن حبيب فيمن بايعن النبي ﷺ، واستدركها أبو علي الغساني على ابن عبد البر.",
+      "english": "11004—Jumaymah bint Sayfi\n\nibn Sakhr ibn Khansa, the Ansari woman.[2] Ibn Habib mentioned her among the women who pledged allegiance to the Prophet—peace and blessings be upon him—and Abu Ali al-Ghassani added her in a supplement to Ibn Abd al-Barr.",
+      "arabic_sha256": "465e8a01a5ee5b83c0b856942dbe66cd58af5badc9cfbe360994cab7116b21a8",
+      "english_sha256": "ace66ca7fd34a98f23887dc344e3a379f6470caae7884513bd59a29932282bc3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصارية",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو علي الغساني",
+      "english": "Abu Ali al-Ghassani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبد البر",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

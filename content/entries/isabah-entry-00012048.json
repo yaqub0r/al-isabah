@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012048",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12048,
+  "title": {
+    "english": "Umm Sa'd al-Ansariyya¹",
+    "arabic_observed": "أم سعد الأنصاريّة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012048-segment-0001",
+      "volume": 8,
+      "scan_page": 401,
+      "printed_page": 400,
+      "reader_page": 4313,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4313",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0401:3546ec9bcc5e2706",
+      "arabic": "١٢٠٤٨- أم سعد الأنصاريّة «١»\n: هي والدة سعد بن معاذ.\nذكرها أبو عمر. تقدم في حرف الكاف أن اسمها كبشة، وتقدّم لها ذكر في ترجمة ليلى بنت الخطيم الأوسيّة.",
+      "english": "12048 — Umm Sa'd al-Ansariyya¹\n\nShe was the mother of Sa'd ibn Mu'adh.\n\nAbu Umar mentioned her. It was stated previously, under the letter kaf, that her name was Kabsha; she was also mentioned previously in the biographical notice of Layla bint al-Khatim al-Awsiyya.",
+      "arabic_sha256": "d3d63db841f54bf45f6153c4753c3ee876d8c59003d08d8149d44179a8e2fcc4",
+      "english_sha256": "dd2c9cf46ce53e097376585a91a967fcd8f752888b281ca3efd29ba706065951",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم سعد الأنصاريّة",
+      "english": "Umm Sa'd al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن معاذ",
+      "english": "Sa'd ibn Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "كبشة",
+      "english": "Kabsha",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليلى بنت الخطيم الأوسيّة",
+      "english": "Layla bint al-Khatim al-Awsiyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012206",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12206,
+  "title": {
+    "english": "Umm al-Fadl bint al-Abbas ibn Abd al-Muttalib al-Hashimiyya. (2)",
+    "arabic_observed": "أم الفضل"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012206-segment-0001",
+      "volume": 8,
+      "scan_page": 452,
+      "printed_page": 451,
+      "reader_page": 4364,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4364",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0452:d98ee86554194ea0",
+      "arabic": "١٢٢٠٦- أم الفضل\nبنت العباس بن عبد المطلب الهاشمية «٢» .\nذكر المستغفريّ عن البخاريّ- أنه ذكرها فيمن روى عن النبي ﵌ من نساء بني هاشم. وجوّز أبو موسى أن تكون هي أم الفضل زوج العباس الماضية.\nالقسم الثاني والثالث\nخاليان.\nالقسم الرابع",
+      "english": "12206 — Umm al-Fadl bint al-Abbas ibn Abd al-Muttalib al-Hashimiyya. (2)\n\nAl-Mustaghfiri reported from al-Bukhari that he mentioned her among the women of Banu Hashim who narrated from the Prophet (may Allah bless him and grant him peace). Abu Musa considered it possible that she was the previously discussed Umm al-Fadl, the wife of al-Abbas.\n\nTHE SECOND AND THIRD SECTIONS\n\nBoth are empty.\n\nTHE FOURTH SECTION",
+      "arabic_sha256": "f70f62f27175eaa1e58d606adad849de9f76eb073fb58077b6c1442ba81d9706",
+      "english_sha256": "28f85cca9ad8f4abb6fb10a5dd240c4021f95b2ebd8a7305d922fd4cc3012048",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم الفضل",
+      "english": "Umm al-Fadl",
+      "kind": "person"
+    },
+    {
+      "arabic": "العباس بن عبد المطلب",
+      "english": "al-Abbas ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم الفضل بنت العباس بن عبد المطلب الهاشمية",
+      "english": "Umm al-Fadl bint al-Abbas ibn Abd al-Muttalib al-Hashimiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني هاشم",
+      "english": "Banu Hashim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

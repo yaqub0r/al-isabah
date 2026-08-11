@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010906",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10906,
+  "title": {
+    "english": "Amina bint Qays ibn Abd Allah (2), a woman of Banu Asad ibn Khuzayma",
+    "arabic_observed": "آمنة بنت قيس بن عبد اللَّه «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010906-segment-0001",
+      "volume": 8,
+      "scan_page": 43,
+      "printed_page": 42,
+      "reader_page": 3955,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3955",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0043:ed928aba822b3abd",
+      "arabic": "١٠٩٠٦- آمنة بنت قيس بن عبد اللَّه «٢»\n، امرأة من بني أسد بن خزيمة.\nكانت هي وأبوها بالحبشة مع أم حبيبة، ذكرها المستغفريّ عن ابن إسحاق، واستدركها أبو موسى. قال ابن الأثير: أظنها آمنة بنت رقيش، براء غير منقوطة أوله وشين معجمة، وقد تقدمت. وقد ذكر أبو موسى الترجمتين، وعزاهما لابن إسحاق ظنّا منه أنهما اثنتان.\nقلت: وهو كما ظن ابن الأثير.\n(١) أسد الغابة ت ٦٧٦٠، الاستيعاب ت ٦٣٢٩١.\n(٢) أسد الغابة ت ٦٧٩٦.",
+      "english": "10906—Amina bint Qays ibn Abd Allah (2), a woman of Banu Asad ibn Khuzayma\n\nShe and her father were in Abyssinia with Umm Habiba. Al-Mustaghfiri mentioned her on the authority of Ibn Ishaq, and Abu Musa added her as an overlooked entry. Ibn al-Athir said: “I think that she is Amina bint Ruqaysh—with an undotted ra as its first letter and a dotted shin—who has already appeared. Abu Musa included both entries and attributed both to Ibn Ishaq, supposing them to be two different women.”\n\nI say: It is as Ibn al-Athir supposed.\n\n(1) Usd al-Ghaba, entry 6760; al-Isti'ab, entry 63291.\n\n(2) Usd al-Ghaba, entry 6796.",
+      "arabic_sha256": "321f44ba5c537bc886376a3e951678f0d46fc4eeb46c4a30a974ebaf593d5bff",
+      "english_sha256": "3f4a602c46463f2a31404d3017de954a52d9c26f423781d1c41d962d2daf0a80",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "آمنة بنت قيس بن عبد اللَّه",
+      "english": "Amina bint Qays ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني أسد بن خزيمة",
+      "english": "Banu Asad ibn Khuzayma",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفريّ",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "آمنة بنت رقيش",
+      "english": "Amina bint Ruqaysh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

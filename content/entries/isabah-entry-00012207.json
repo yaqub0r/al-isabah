@@ -1,0 +1,179 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012207",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12207,
+  "title": {
+    "english": "Umm Farwa:",
+    "arabic_observed": "أم فروة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012207-segment-0001",
+      "volume": 8,
+      "scan_page": 452,
+      "printed_page": 451,
+      "reader_page": 4364,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4364",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0452:d98ee86554194ea0",
+      "arabic": "١٢٢٠٧- أم فروة:\nظئر النبي ﵌ «٣» .\nذكرها المستغفريّ،\nوأخرج من طريق إسحاق بن أبي إسرائيل، عن مؤمل بن إسماعيل، عن سفيان- هو الثوري، عن أبي إسحاق، عن أم فروة، عن النبي ﵌، قالت: قال لي النبي ﵌: «إذا أويت إلى فراشك فاقرئي:\nقل يا أيّها الكافرون، فإنّها براءة من الشّرك» .\nقال أبو موسى: اختلف في راوي هذا الحديث، فقيل: فروة وقيل: أبو فروة، وقيل: نوفل. وهذا- يعني أم فروة- أغرب الأقوال.\n(١) أسد الغابة ت (٧٥٦٧)، الاستيعاب ت (٣٦٥٥)، أعلام النساء ٤/ ١٧٠، تجريد أسماء الصحابة ٢/ ٣٣١- تلقيح فهوم أهل الأثر ٣٦٧- الجرح والتعديل ٩/ ٤٦٥.\n(٢) أسد الغابة ت (٧٥٦٨) .\n(٣) أسد الغابة ت (٧٥٦٣) .",
+      "english": "12207 — Umm Farwa:\n\nThe foster-parent of the Prophet (may Allah bless him and grant him peace). (3)\n\nAl-Mustaghfiri mentioned her.\n\nHe transmitted, by way of Ishaq ibn Abi Isra'il, from Mu'ammal ibn Isma'il, from Sufyan—that is, al-Thawri—from Abu Ishaq, from Umm Farwa, from the Prophet (may Allah bless him and grant him peace). She said: The Prophet (may Allah bless him and grant him peace) said to me, “When you retire to your bed, recite: ‘Say: O disbelievers!’ For it is a disavowal of polytheism.”\n\nAbu Musa said: There was disagreement concerning the transmitter of this hadith. It was said: Farwa; it was also said: Abu Farwa; and it was also said: Nawfal. This—that is, Umm Farwa—is the strangest of the opinions.\n\n(1) Usd al-Ghaba, entry 7567; al-Isti'ab, entry 3655; A'lam al-Nisa', 4/170; al-Tajrid, 2/331—Talqih Fuhum Ahl al-Athar, p. 367—al-Jarh wa-l-Ta'dil, 9/465.\n\n(2) Usd al-Ghaba, entry 7568.\n\n(3) Usd al-Ghaba, entry 7563.",
+      "arabic_sha256": "6732e943caf54b3b8ac32a3b77bbe26f048e0be3d9c3f6279346e0ee346d2f78",
+      "english_sha256": "1d4c8136d9c2bb5273a539856f46f412247a3784e84385b970c2b72f415f5e56",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012207-segment-0002",
+      "volume": 8,
+      "scan_page": 453,
+      "printed_page": 452,
+      "reader_page": 4365,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4365",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0453:fdd20a9830df78ae",
+      "arabic": "قلت: بل عن غلط محض، وإنما هو أبو فروة، وكأن بعض رواته لما رأى عن أبي فروة ظئر النبي ﵌ ظنه خطأ، والصواب أم فروة، فرواه على ما ظن، فأخطأ هو، واسم الظئر لا يختص بالمرأة المرضعة، بل يطلق على زوجها أيضا.\nوقد أخرجه أصحاب السّنن الثلاثة من طرق، عن أبي إسحاق، عن فروة بن نوفل، عن أبيه، ومنهم من لم يقل عن أبيه، ومنهم من قال: عن أبي إسحاق، عن أبي فروة.\nوالصواب عن فروة عن أبيه، وهكذا أخرجه أبو داود، والنسائي، من رواية زهير بن معاوية، والترمذي، والنسائي أيضا من رواية إسرائيل، كلاهما عن أبي إسحاق مجودا، وفيه على أبي إسحاق اختلاف. وهذا هو المعتمد.\nحرف القاف\nالقسم الأول",
+      "english": "I say: Rather, this arose from sheer error. It is in fact Abu Furwa. It is as though, when one of its transmitters saw, “from Abu Furwa, the zi'r of the Prophet, may Allah bless him and grant him peace,” he thought it was an error and that the correct reading was Umm Furwa. He therefore transmitted it according to what he supposed, but it was he who erred. The designation zi'r is not restricted to the woman who suckles a child; it is also applied to her husband.\n\nThe compilers of the three Sunan transmitted it through several routes from Abu Ishaq, from Furwa ibn Nawfal, from his father. Some of them did not say, “from his father,” while others said: from Abu Ishaq, from Abu Furwa.\n\nThe correct version is from Furwa, from his father. This is how Abu Dawud and al-Nasa'i transmitted it through Zuhayr ibn Mu'awiya, and al-Tirmidhi and al-Nasa'i also through Isra'il, both of them transmitting it from Abu Ishaq in a carefully established form. There is disagreement regarding its transmission from Abu Ishaq. This is the version to be relied upon.\n\nLETTER QAF\n\nSECTION ONE",
+      "arabic_sha256": "04c8325f7acca75f693b6487a666c378f17d565005d599ca0f7fefcee02fbb6e",
+      "english_sha256": "583fc0df6a6e049998fdcbbfe53a0c48f1a8a1f09710321d834e7e8303d94172",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم فروة",
+      "english": "Umm Farwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق بن أبي إسرائيل",
+      "english": "Ishaq ibn Abi Isra'il",
+      "kind": "person"
+    },
+    {
+      "arabic": "مؤمل بن إسماعيل",
+      "english": "Mu'ammal ibn Isma'il",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو إسحاق",
+      "english": "Abu Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "فروة",
+      "english": "Farwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو فروة",
+      "english": "Abu Farwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "نوفل",
+      "english": "Nawfal",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "الجرح والتعديل",
+      "english": "al-Jarh wa-l-Ta'dil",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو فروة",
+      "english": "Abu Furwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "فروة بن نوفل",
+      "english": "Furwa ibn Nawfal",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "زهير بن معاوية",
+      "english": "Zuhayr ibn Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسرائيل",
+      "english": "Isra'il",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Mu'awiya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

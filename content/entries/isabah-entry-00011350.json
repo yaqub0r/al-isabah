@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011350",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11350,
+  "title": {
+    "english": "Sunayna (2),",
+    "arabic_observed": "سنينة «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011350-segment-0001",
+      "volume": 8,
+      "scan_page": 193,
+      "printed_page": 192,
+      "reader_page": 4105,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4105",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0193:2252cc322c1708c7",
+      "arabic": "١١٣٥٠- سنينة «٢»\n، بنونين مصغرة، بنت مخنف بن زيد النّكرية، بالنون المضمومة وقيل بفتح الموحدة. قال ابن ماكولا: لها صحبة وحديث. روت عنها حبة بنت الشماخ.\nوقد تقدم ما رواه ابن شاهين وابن السّكن في ترجمة مخنف، وأن اسمها سنا، وسماها ابن شاهين في سياق آخر سنينة كالذي هاهنا، فأخرج من طريق عبد الرحمن بن عمرو بن جبلة، قال: حدثتنا حبة بنت شماخ النكرية، قالت: حدثتني امرأة منا يقال لها سنينة بنت مخنف بن زيد النكرية، قالت: لما تسارع إلى الإسلام ... إلخ.",
+      "english": "11350—Sunayna (2),\n\nwith two n's, in the diminutive form, daughter of Mikhnaf ibn Zayd al-Nukariyya—the nisba with a damma on the nun; according to another reading, it is al-Bakariyya, with a fatha on the ba. Ibn Makula said: “She was a Companion, and a hadith is related from her.” Habbah bint al-Shammakh narrated from her.\n\nWhat Ibn Shahin and Ibn al-Sakan related in the biography of Mikhnaf has already appeared, including that her name was Sana. In another context, Ibn Shahin named her Sunayna, as here. He transmitted by way of Abd al-Rahman ibn Amr ibn Jabala, who said: Habbah bint Shammakh al-Nukariyya narrated to us; she said: A woman from among us called Sunayna bint Mikhnaf ibn Zayd al-Nukariyya narrated to me; she said: “When people hastened to Islam …,” and so on.",
+      "arabic_sha256": "062e1498f79d05e797d43ce3e75f3e3a05fa9b6e627f38084939d365e82a184b",
+      "english_sha256": "e75e708ad56ed6391b58a34254680fa47af1e82a03e60518bcf22569294e1190",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سنينة بنت مخنف بن زيد النكرية",
+      "english": "Sunayna bint Mikhnaf ibn Zayd al-Nukariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "سنا",
+      "english": "Sana bint Mikhnaf ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "مخنف",
+      "english": "Mikhnaf ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماكولا",
+      "english": "Ibn Makula",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن شاهين",
+      "english": "Ibn Shahin",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عمرو بن جبلة",
+      "english": "Abd al-Rahman ibn Amr ibn Jabala",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

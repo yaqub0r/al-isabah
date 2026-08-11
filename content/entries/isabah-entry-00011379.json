@@ -1,0 +1,450 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011379",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11379,
+  "title": {
+    "english": "al-Shifa' bint Abd Allah ibn Abd Shams ibn Khalaf ibn Shaddad³ ibn Abd Allah ibn Qurt ibn Razah ibn Adi ibn Ka'b, the Qurashi woman of Banu Adi",
+    "arabic_observed": "الشفاء بنت عبد اللَّه"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011379-segment-0001",
+      "volume": 8,
+      "scan_page": 202,
+      "printed_page": 201,
+      "reader_page": 4114,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4114",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0202:08580381ecab9254",
+      "arabic": "١١٣٧٩- الشفاء بنت عبد اللَّه\nبن عبد شمس بن خلف بن شداد «٣» بن عبد اللَّه بن قرط بن رزاح بن عدي بن كعب القرشية العدوية. وقيل خالد بدل خلف، وقيل صدّاد بدل شداد، وقيل ضرار، والدة سليمان بن أبي حثمة. قيل: اسمها ليلى، قاله أحمد بن صالح المصري. وقال أبو عمر: قال ابن سعد: أمّها فاطمة بنت وهب بن عمرو بن عائذ بن عمران المخزومية، وأسلمت الشفاء قبل الهجرة، وهي من المهاجرات الأول. وبايعت النبيّ ﷺ، وكانت من عقلاء النساء وفضلائهن، وكان رسول اللَّه ﷺ يزورها ويقيل عندها في بيتها، وكانت قد اتخذت له فراشا وإزارا ينام فيه، فلم يزل ذلك عند ولدها حتى أخذه منه مروان بن الحكم،\nوقال لها رسول اللَّه ﷺ: «علّمي حفصة رقية النّملة كما علّمتها الكتابة» «٤» .\n(١) أسد الغابة ت (٧٠٤٤) .\n(٢) في أ: الشعيثاء.\n(٣) أسد الغابة: ت (٧٠٤٥)، الاستيعاب: ت (٣٤٤٥)، أعلام النساء ٢/ ٣٠٠، تجريد أسماء الصحابة ٢/ ٢٨١، تقريب التهذيب ٢/ ٦٠٢، تهذيب التهذيب ١٢/ ٤٢٨، الكاشف ٣/ ٤٧٤، تهذيب الكمال ٣/ ١٦٨٦، المنمق ٣٧٢، أزمنة التاريخ الإسلامي ٩٨٧- خلاصة تهذيب الكمال ٣/ ٣٨٤، تلقيح فهوم أهل الأثر ٣٦٩، بقي بن مخلد ١٧٣.\n(٤) أخرجه الحاكم في المستدرك ٤/ ٤١٤. وقال صحيح الإسناد ولم يخرجاه ووافقه الذهبي وأورده المتقي الهندي في كنز العمال حديث رقم ٢٨٣٦٨، ٣٤٣٨١.",
+      "english": "11379—al-Shifa' bint Abd Allah ibn Abd Shams ibn Khalaf ibn Shaddad³ ibn Abd Allah ibn Qurt ibn Razah ibn Adi ibn Ka'b, the Qurashi woman of Banu Adi\n\nKhalid is also given instead of Khalaf; in place of Shaddad, Saddad—or, according to another view, Dirar—is given. She was the mother of Sulayman ibn Abi Hathma. It is said that her name was Layla; Ahmad ibn Salih al-Misri stated this.\n\nAbu Umar said that Ibn Sa'd stated: Her mother was Fatima bint Wahb ibn Amr ibn A'idh ibn Imran al-Makhzumiyya. al-Shifa' embraced Islam before the Hijra and was among the earliest female Emigrants. She pledged allegiance to the Prophet (may Allah bless him and grant him peace). She was among the most intelligent and virtuous of women. The Messenger of Allah (may Allah bless him and grant him peace) used to visit her and take his midday rest in her house. She had prepared for him a mattress and a waist-wrapper in which he would sleep. These remained with her descendants until Marwan ibn al-Hakam took them from her descendants.\n\nThe Messenger of Allah (may Allah bless him and grant him peace) said to her: “Teach Hafsa the incantation against al-namla, just as you taught her writing.”⁴\n\n¹ Usd al-Ghaba, entry 7044.\n\n² In manuscript A: al-Shu'aytha'.\n\n³ Usd al-Ghaba, entry 7045; al-Isti'ab, entry 3445; A'lam al-Nisa', 2/300; al-Tajrid, 2/281; Taqrib al-Tahdhib, 2/602; Tahdhib al-Tahdhib, 12/428; al-Kashif, 3/474; Tahdhib al-Kamal, 3/1686; al-Munammaq, 372; Azminat al-Tarikh al-Islami, 987; Khulasat Tahdhib al-Kamal, 3/384; Talqih Fuhum Ahl al-Athar, 369; Baqi ibn Makhlad, 173.\n\n⁴ al-Hakim transmitted it in al-Mustadrak, 4/414, and said: “Its chain of transmission is sound, though the two of them did not transmit it.” al-Dhahabi concurred with him. al-Muttaqi al-Hindi included it in Kanz al-Ummal, hadith nos. 28368 and 34381.",
+      "arabic_sha256": "43acfbe44192d9072c9d9d37e3ff9f76dbf0c64ec9dfb0776d397fd42cdba496",
+      "english_sha256": "5653e7d118d8bf67b6383abcb5acad81ae5ff844bc7a37982ce49f8436eeb1ba",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011379-segment-0002",
+      "volume": 8,
+      "scan_page": 203,
+      "printed_page": 202,
+      "reader_page": 4115,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4115",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0203:4e6662d418ad6f66",
+      "arabic": "وأقطعها رسول اللَّه ﷺ دارها عند الحكاكين بالمدينة، فنزلتها مع ابنها سليمان، وكان عمر يقدمها في الرأي ويرعاها ويفضلها، وربما ولّاها شيئا من أمر السوق.\nروى عنها حفيداها: أبو بكر، وعثمان، ابنا سليمان بن أبي حثمة. انتهى كلامه.\nروى عنها أيضا ابنها سليمان، وأبو سلمة بن عبد الرحمن، وحفصة أم المؤمنين، ومولاها أبو إسحاق.\nوفي المسند، من طريق المسعوديّ، عن عبد الملك بن عمير، عن رجل من آل أبي حثمة، عن الشفاء بنت عبد اللَّه، وكانت من المهاجرات- أنّ رسول اللَّه ﷺ سئل عن أفضل الأعمال فقال: «إيمان باللَّه، وجهاد في سبيله، وحجّ مبرور» .\nوأخرج ابن مندة حديث رقية النملة من طريق الثوري، عن ابن المنكدر، عن أبي بكر بن سليمان بن أبي حثمة، عن حفصة- أن امرأة من قريش يقال لها الشفاء كانت ترقى من النملة، فقال النبي ﷺ: «علّميها حفصة» .\nوذكر الاختلاف في وصله وإرساله على الثوري.\nوأخرجه ابن مندة وأبو نعيم مطولا من طريق عثمان بن عمر بن عثمان بن سليمان بن أبي حثمة، عن أبيه عثمان، عن الشفاء- أنها كانت ترقي في الجاهلية، وأنها لما هاجرت إلى النبي ﷺ وكانت قد بايعته بمكة قبل أن يخرج فقدمت عليه، فقالت: يا رسول اللَّه، إني قد كنت أرقى برقي في الجاهلية، فقد أردت أن أعرضها عليك. قال: «فاعرضيها» . قالت:\nفعرضتها عليه، وكانت ترقى من النملة، فقال: ارقي بها وعلّميها حفصة. إلى هنا رواية ابن مندة، وزاد أبو نعيم: باسم اللَّه صلو صلب خير يعود من أفواهها ولا يضرّ أحدا، اكشف الباس ربّ النّاس. قال: ترقي بها على عود كركم «١» سبع مرّات وتضعه مكانا نظيفا، ثم تدلكه على حجر بخلّ خمر مصفّى، ثمّ تطليه على النّملة» .\nوأخرجه أبو نعيم عن الطّبرانيّ من طريق صالح بن كيسان، عن أبي بكر بن سليمان ابن أبي حثمة- أن الشّفاء بنت عبد اللَّه قالت: دخل عليّ رسول اللَّه ﷺ وأنا قاعدة عند حفصة، فقال: «ما عليك أن تعلّمي هذه رقية النّملة كما علّمتها الكتابة» .\nوأخرج ابن أبي عاصم، وأبو نعيم، من طريقه بسنده عن الزهري، عن أبي سلمة، عن الشفاء بنت عبد اللَّه: أتيت النبي ﷺ أسأله، فجعل يعتذر إليّ وأنا ألومه، فحضرت الصلاة، فخرجت فدخلت على ابنتي وهي تحت شرحبيل بن حسنة، فوجدت شرحبيل في البيت،\n(١) الكركم. نبت وهو شبيه بالورس، والكركم تسميه العرب الزعفران. اللسان ٥/ ٣٨٦٠.",
+      "english": "The Messenger of Allah granted her her house at al-Hakkakin in Medina, and she took up residence there with her son Sulayman. Umar gave precedence to her opinion, respected her, and favored her; he would sometimes place her in charge of some matter concerning the market.\n\nHer two grandsons, Abu Bakr and Uthman, the sons of Sulayman ibn Abi Hathma, narrated from her. His words end here.\n\nAlso narrating from her were her son Sulayman, Abu Salama ibn Abd al-Rahman, Hafsa, Mother of the Believers, and her client Abu Ishaq.\n\nIn Musnad Ahmad, by way of al-Mas'udi, from Abd al-Malik ibn Umayr, from a man of the family of Abu Hathma, from al-Shifa bint Abd Allah—who was one of the Emigrant women—it is related that the Messenger of Allah was asked about the best deeds. He replied: “Faith in Allah, jihad in His path, and an accepted pilgrimage.”\n\nIbn Mandah transmitted the hadith concerning the incantation for al-namla by way of al-Thawri, from Ibn al-Munkadir, from Abu Bakr ibn Sulayman ibn Abi Hathma, from Hafsa: A woman of Quraysh called al-Shifa used to perform an incantation against al-namla, so the Prophet said, “Teach it to Hafsa.”\n\nHe mentioned the disagreement concerning whether it was transmitted from al-Thawri with a connected chain or as a mursal report.\n\nIbn Mandah and Abu Nu'aym transmitted it at length by way of Uthman ibn Umar ibn Uthman ibn Sulayman ibn Abi Hathma, from his father Uthman, from al-Shifa: She used to perform incantations during the Age of Ignorance. When she emigrated to the Prophet—having pledged allegiance to him in Mecca before he departed—she came to him and said, “O Messenger of Allah, I used to perform incantations during the Age of Ignorance, and I wanted to present them to you.” He said, “Then present them.” She said, “So I presented them to him.” She used to perform an incantation against al-namla, and he said, “Use it as an incantation, and teach it to Hafsa.” Ibn Mandah's version ends here. Abu Nu'aym added: “In the name of Allah: [s-l-w s-l-b; two obscure words]. Good returns from their mouths and harms no one. Remove the affliction, Lord of mankind.” He said: “She performs this incantation seven times over a piece of turmeric,(1) places it in a clean place, then rubs it on a stone with filtered wine vinegar, and afterward applies it to al-namla.”\n\nAbu Nu'aym also transmitted it from al-Tabarani, by way of Salih ibn Kaysan, from Abu Bakr ibn Sulayman ibn Abi Hathma, that al-Shifa bint Abd Allah said: “The Messenger of Allah entered upon me while I was sitting with Hafsa, and he said, ‘Why do you not teach her the incantation for al-namla, just as you taught her writing?’”\n\nIbn Abi Asim and Abu Nu'aym—through Ibn Abi Asim, with his chain—from al-Zuhri, from Abu Salama, from al-Shifa bint Abd Allah, transmitted: “I came to the Prophet to make a request of him. He began offering excuses to me while I reproached him. Then the time for prayer arrived, so I went out and entered upon my daughter, who was married to Shurahbil ibn Hasana, and I found Shurahbil in the house—”\n\n(1) Turmeric is a plant resembling wars. The Arabs call turmeric saffron. al-Lisan, 5/3860.",
+      "arabic_sha256": "4e6662d418ad6f66ef64ee90b3dfe5c9f5ceec2cb6f068cf5258e10487d441ee",
+      "english_sha256": "091180a446f4a40b7a5ff235977c7030b137936077543f5d4d88687789e4f59d",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011379-segment-0003",
+      "volume": 8,
+      "scan_page": 204,
+      "printed_page": 203,
+      "reader_page": 4116,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4116",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0204:cf869f69d7d0f295",
+      "arabic": "فجعلت أقول: قد حضرت الصلاة وأنت في البيت؟ وجعلت ألومه، فقال: يا خالتي، لا تلوميني، فإنه كان لنا ثوب فاستعاره رسول اللَّه ﷺ. فقلت: بأبي وأمي! إني كنت ألومه، وهذه حاله ولا أشعر. قال شرحبيل: وما كان إلا درعا رقعناه. وفي سنده عبد الوهاب بن الضحاك، وهو واه، ولها ذكر في ترجمة عاتكة بنت أسيد بن أبي العيص.",
+      "english": "Then I began saying, “The prayer time has arrived, and you are in the house?” I continued reproaching him, but he said, “Maternal aunt, do not reproach me. We had a garment, and the Messenger of Allah, may Allah bless him and grant him peace, borrowed it.” I said, “May my father and mother be his ransom! I had been reproaching him while this was his situation, without my knowing it.” Shurahbil said, “It was only a shift that we had patched.” In its chain of transmission is Abd al-Wahhab ibn al-Dahhak, who is weak. She is also mentioned in the entry on Atika bint Asid ibn Abi al-Is.",
+      "arabic_sha256": "9ce358deea83bb4bd363e68d54a04674d7b4d89821941c509cc624709e075193",
+      "english_sha256": "61d6ac9986abb3542e4d3f55df5736da52e99bc1e126a8e8cd4e710389f6ca28",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشعيثاء",
+      "english": "al-Shu'aytha'",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشفاء بنت عبد اللَّه",
+      "english": "al-Shifa' bint Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "خلف",
+      "english": "Khalaf ibn Shaddad",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد",
+      "english": "Khalid ibn Shaddad",
+      "kind": "person"
+    },
+    {
+      "arabic": "شداد",
+      "english": "Shaddad ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "صدّاد",
+      "english": "Saddad ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ضرار",
+      "english": "Dirar ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان بن أبي حثمة",
+      "english": "Sulayman ibn Abi Hathma",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليلى",
+      "english": "Layla",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد بن صالح المصري",
+      "english": "Ahmad ibn Salih al-Misri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت وهب بن عمرو بن عائذ بن عمران المخزومية",
+      "english": "Fatima bint Wahb ibn Amr ibn A'idh ibn Imran al-Makhzumiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "مروان بن الحكم",
+      "english": "Marwan ibn al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفصة",
+      "english": "Hafsa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "العدوية",
+      "english": "Banu Adi",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "المخزومية",
+      "english": "Banu Makhzum",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "المنمق",
+      "english": "al-Munammaq",
+      "kind": "work"
+    },
+    {
+      "arabic": "أزمنة التاريخ الإسلامي",
+      "english": "Azminat al-Tarikh al-Islami",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهجرة",
+      "english": "Hijra",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الحكاكين",
+      "english": "al-Hakkakin",
+      "kind": "place"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر بن سليمان بن أبي حثمة",
+      "english": "Abu Bakr ibn Sulayman ibn Abi Hathma",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن سليمان بن أبي حثمة",
+      "english": "Uthman ibn Sulayman ibn Abi Hathma",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سلمة بن عبد الرحمن",
+      "english": "Abu Salama ibn Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفصة أم المؤمنين",
+      "english": "Hafsa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو إسحاق",
+      "english": "Abu Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "المسعوديّ",
+      "english": "al-Mas'udi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الملك بن عمير",
+      "english": "Abd al-Malik ibn Umayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "آل أبي حثمة",
+      "english": "Al Abi Hathma",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الشفاء بنت عبد اللَّه",
+      "english": "al-Shifa bint Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثوري",
+      "english": "al-Thawri",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن المنكدر",
+      "english": "Ibn al-Munkadir",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن عمر بن عثمان بن سليمان بن أبي حثمة",
+      "english": "Uthman ibn Umar ibn Uthman ibn Sulayman ibn Abi Hathma",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبيه عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "صالح بن كيسان",
+      "english": "Salih ibn Kaysan",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "شرحبيل بن حسنة",
+      "english": "Shurahbil ibn Hasana",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللسان",
+      "english": "al-Lisan",
+      "kind": "work"
+    },
+    {
+      "arabic": "شرحبيل",
+      "english": "Shurahbil",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الوهاب بن الضحاك",
+      "english": "Abd al-Wahhab ibn al-Dahhak",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاتكة بنت أسيد بن أبي العيص",
+      "english": "Atika bint Asid ibn Abi al-Is",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاتكة",
+      "english": "Atika",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "place_name",
+      "arabic_span": "الحكاكين",
+      "explanation": "The consonantal form and its function as a Medinan locality are corroborated, but its exact vocalization and precise identification remain uncertain. The conventional rendering al-Hakkakin has therefore been retained.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0203:4e6662d418ad6f66"
+    },
+    {
+      "category": "isnad_genealogy",
+      "arabic_span": "عثمان بن عمر بن عثمان بن سليمان بن أبي حثمة، عن أبيه عثمان",
+      "explanation": "The printed genealogy makes Umar the narrator's father, whereas the following phrase calls his father Uthman. The collateral report has a different, shorter chain and cannot justify emending the authoritative al-Isabah text, so the internal inconsistency is preserved literally.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0203:4e6662d418ad6f66"
+    },
+    {
+      "category": "obscure_text",
+      "arabic_span": "صلو صلب",
+      "explanation": "Neither the intended meaning nor the vocalization of these two words can be safely determined. A collateral version supports their consonantal core but diverges substantially in the surrounding formula. They are therefore represented consonantally and explicitly marked as obscure.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0203:4e6662d418ad6f66"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

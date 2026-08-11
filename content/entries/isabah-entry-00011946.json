@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011946",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11946,
+  "title": {
+    "english": "Umm al-Harith bint Thabit ibn al-Jadh', the Ansari woman. (1)",
+    "arabic_observed": "أم الحارث بنت ثابت"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011946-segment-0001",
+      "volume": 8,
+      "scan_page": 372,
+      "printed_page": 371,
+      "reader_page": 4284,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4284",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0372:8a9a0ef6b271463f",
+      "arabic": "١١٩٤٦- أم الحارث بنت ثابت\nبن الجذع الأنصاريّة «١» .\nذكرها ابن حبيب في المبايعات، وكذا قال ابن سعد، وزاد: ويقال إنها أم إياس، قال: تزوّجها مرداس بن مروان بن الجذع، وأمها أمامة بنت عثمان بن خلدة الزرقيّة.",
+      "english": "11946 — Umm al-Harith bint Thabit ibn al-Jadh', the Ansari woman. (1)\n\nIbn Habib mentioned her among the women who pledged allegiance, and Ibn Sa'd said the same, adding: “She is also said to have been Umm Iyas.” He said: Mirdas ibn Marwan ibn al-Jadh' married her. Her mother was Umama bint Uthman ibn Khalda, the Zuraqi woman.",
+      "arabic_sha256": "5ac822c4e339442f0f44f8ffa35aaa5ac306772287ebafd16567b5db3c50fc55",
+      "english_sha256": "3640b23e1b6b4b5b3279e69973c7be5dcfe0f03be840296825393d8761f1c4bc",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم الحارث بنت ثابت بن الجذع",
+      "english": "Umm al-Harith bint Thabit ibn al-Jadh'",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصاريّة",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم إياس",
+      "english": "Umm Iyas",
+      "kind": "person"
+    },
+    {
+      "arabic": "مرداس بن مروان بن الجذع",
+      "english": "Mirdas ibn Marwan ibn al-Jadh'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة بنت عثمان بن خلدة",
+      "english": "Umama bint Uthman ibn Khalda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزرقيّة",
+      "english": "Banu Zurayq",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الحارث",
+      "english": "al-Harith ibn Amr ibn Ghaziyya ibn Amr ibn Tha'laba",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

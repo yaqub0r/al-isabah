@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010797",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10797,
+  "title": {
+    "english": "Asma bint Anas",
+    "arabic_observed": "أسماء بنت أنس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010797-segment-0001",
+      "volume": 8,
+      "scan_page": 11,
+      "printed_page": 10,
+      "reader_page": 3923,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3923",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0011:55c54a283604bf8c",
+      "arabic": "١٠٧٩٧- أسماء بنت أنس\nبن مدرك الخثعمية، زوج خالد بن الوليد، وأم أولاده:\nالمهاجر، وعبد اللَّه، وعبد الرحمن.\nوقد تقدم ذكر ذلك في ترجمة والدها أنس بن مدرك.\n(١) في أ: شرح.\n(٢) في أ: من قولهم.",
+      "english": "10797 — Asma bint Anas\n\nibn Mudrik, the Khath'ami woman, wife of Khalid ibn al-Walid and mother of his children:\n\nal-Muhajir, Abd Allah, and Abd al-Rahman.\n\nThis has already been mentioned in the entry on her father, Anas ibn Mudrik.\n\n(1) In A: “Sharh.”\n\n(2) In A: “from their saying.”",
+      "arabic_sha256": "4c8a0fbde5e16dd53c0138cd4950ab94f143014368f56391f373c423b8996409",
+      "english_sha256": "c19e30ec1d389034de54ef1ac10347fae71c93f5457b9b908e2b0319629d2aa9",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الخثعمية",
+      "english": "Khath'am",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "خالد بن الوليد",
+      "english": "Khalid ibn al-Walid",
+      "kind": "person"
+    },
+    {
+      "arabic": "المهاجر",
+      "english": "al-Muhajir",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن",
+      "english": "Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس بن مدرك",
+      "english": "Anas ibn Mudrik",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

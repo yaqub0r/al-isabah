@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010833",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10833,
+  "title": {
+    "english": "Umama bint Qurayba ibn Ajlan ibn Ghanm ibn Amir ibn Bayada, the Ansari woman of Banu Bayada",
+    "arabic_observed": "أمامة بنت قريبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010833-segment-0001",
+      "volume": 8,
+      "scan_page": 27,
+      "printed_page": 26,
+      "reader_page": 3939,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3939",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0027:2304d49de3177790",
+      "arabic": "١٠٨٣٣- أمامة بنت قريبة\nبن عجلان بن غنم بن عامر بن بياضة الأنصارية البياضية.\n[ذكرها ابن الأثير، وقال: استدرك علي أبي عمر.",
+      "english": "10833—Umama bint Qurayba ibn Ajlan ibn Ghanm ibn Amir ibn Bayada, the Ansari woman of Banu Bayada\n\n[ibn al-Athir mentioned her and said: “She was added as a supplement to Abu Umar.”",
+      "arabic_sha256": "cbf4a4c28eba01eb5a0cb3bc5eb392bc16ca69fbaff2d20cce4b3d685001f485",
+      "english_sha256": "e90b00c7509d2d185d4b16e10edad396f390a0347c20c99d3d83a8eb5eed325b",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "البياضية",
+      "english": "Banu Bayada",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أمامة بنت قريبة بن عجلان بن غنم بن عامر بن بياضة",
+      "english": "Umama bint Qurayba ibn Ajlan ibn Ghanm ibn Amir ibn Bayada",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

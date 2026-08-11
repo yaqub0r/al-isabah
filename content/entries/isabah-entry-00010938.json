@@ -1,0 +1,192 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010938",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10938,
+  "title": {
+    "english": "Busrah bint Ghazwan",
+    "arabic_observed": "بسرة بنت غزوان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010938-segment-0001",
+      "volume": 8,
+      "scan_page": 52,
+      "printed_page": 51,
+      "reader_page": 3964,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3964",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0052:e992a00a68b50b54",
+      "arabic": "١٠٩٣٨- بسرة بنت غزوان\nالتي كان أبو هريرة أجيرها ثم تزوجها. وما رأيت أحدا ذكرها، كذا في التجريد.\n(١) أسد الغابة ت ٦٧٧٨.\n(٢) الثقات ٣/ ٣٧، أعلام النساء ١/ ١١٠، تجريد أسماء الصحابة ٢/ ٢٥١، تقريب التهذيب ٢/ ٥٩١، تهذيب التهذيب ١٢/ ٤٠٤، الكاشف ٣/ ٤٦٦، تهذيب الكمال ٣/ ١٦٧٩، خلاصة تهذيب تهذيب الكمال ٣/ ٣٧٦، تلقيح فهوم أهل الأثر ٣٢٠، ٣٦٩، بقي بن مخلد تصحيفات المحدثين ٥٨٣. تبصير المنتبه ٤/ ١٤٩٣، در السحابة ٧٥٧، إسعاف المبطإ ٢٢٤. تراجم الأحبار ١/ ١٥٧، الإكمال ٧/ ٤٢٦، المؤتلف والمختلف ١٣٤.",
+      "english": "10938 — Busrah bint Ghazwan\n\nShe was the woman whose hired servant Abu Hurayrah had been and whom he subsequently married. I have not seen anyone mention her—thus it appears in al-Tajrid.\n\n(1) Usd al-Ghaba, entry 6778.\n\n(2) al-Thiqat 3/37; A'lam al-Nisa' 1/110; al-Tajrid 2/251; Taqrib al-Tahdhib 2/591; Tahdhib al-Tahdhib 12/404; al-Kashif 3/466; Tahdhib al-Kamal 3/1679; Khulasat Tahdhib Tahdhib al-Kamal 3/376; Talqih Fuhum Ahl al-Athar, 320, 369; Baqi ibn Makhlad, Tashifat al-Muhaddithin, 583; Tabsir al-Muntabih 4/1493; Durr al-Sahabah, 757; Is'af al-Mubatta', 224; Tarajim al-Ahbar 1/157; al-Ikmal 7/426; al-Mu'talif wa-l-Mukhtalif, 134.",
+      "arabic_sha256": "e9f2d8eacc43fcd792f7a46f7621670d918c85164e58f73a98e17ef0d623aa57",
+      "english_sha256": "087643dbd7f4c81418596f7ba71069d5f4077c2ca82d0cd98232ffc1957b3718",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00010938-segment-0002",
+      "volume": 8,
+      "scan_page": 53,
+      "printed_page": 52,
+      "reader_page": 3965,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3965",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0053:89f56c72ae8a0c23",
+      "arabic": "قلت: هي أخت عتبة بن غزوان المازني الصحابي المشهور، أمير البصرة. وقصة أبي هريرة معها صحيحة، وكانت قد استأجرته في العهد النبوي، ثم تزوجها بعد ذلك لما كان مروان يستخلفه في إمرة المدينة.",
+      "english": "I said: She was the sister of Utba ibn Ghazwan al-Mazini, the well-known Companion and governor of Basra. The account of Abu Hurayra with her is authentic. She had hired him during the Prophetic era; later, he married her when Marwan used to appoint him as his deputy to govern Medina.",
+      "arabic_sha256": "dd5f527c494315a8c8bd76de9c65b05d21e1109b2082a8c9f58f9c0b532320ee",
+      "english_sha256": "644ec655dbd20a1ef09683709f7ecc063f71d4d5defc4d49645459d4bdcb1292",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "بسرة بنت غزوان",
+      "english": "Busrah bint Ghazwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو هريرة",
+      "english": "Abu Hurayrah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب تهذيب الكمال",
+      "english": "Khulasat Tahdhib Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "تصحيفات المحدثين",
+      "english": "Tashifat al-Muhaddithin",
+      "kind": "work"
+    },
+    {
+      "arabic": "تبصير المنتبه",
+      "english": "Tabsir al-Muntabih",
+      "kind": "work"
+    },
+    {
+      "arabic": "در السحابة",
+      "english": "Durr al-Sahabah",
+      "kind": "work"
+    },
+    {
+      "arabic": "إسعاف المبطإ",
+      "english": "Is'af al-Mubatta'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تراجم الأحبار",
+      "english": "Tarajim al-Ahbar",
+      "kind": "work"
+    },
+    {
+      "arabic": "الإكمال",
+      "english": "al-Ikmal",
+      "kind": "work"
+    },
+    {
+      "arabic": "المؤتلف والمختلف",
+      "english": "al-Mu'talif wa-l-Mukhtalif",
+      "kind": "work"
+    },
+    {
+      "arabic": "عتبة بن غزوان المازني",
+      "english": "Utba ibn Ghazwan al-Mazini",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو هريرة",
+      "english": "Abu Hurayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "مروان",
+      "english": "Marwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "البصرة",
+      "english": "Basra",
+      "kind": "place"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "bibliography",
+      "arabic_span": "بقي بن مخلد تصحيفات المحدثين ٥٨٣",
+      "explanation": "The canonical sequence lacks punctuation sufficient to determine whether Baqi ibn Makhlad and Tashifat al-Muhaddithin are associated as one citation or are separate bibliographical items. The candidate's provisional association has been retained.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0052:e992a00a68b50b54"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

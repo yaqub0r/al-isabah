@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011399",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11399,
+  "title": {
+    "english": "al-Sa'ba bint Rafi",
+    "arabic_observed": "الصعبة بنت رافع"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011399-segment-0001",
+      "volume": 8,
+      "scan_page": 209,
+      "printed_page": 208,
+      "reader_page": 4121,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4121",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0209:22ac144d448c10f6",
+      "arabic": "١١٣٩٩- الصعبة بنت رافع\nبن امرئ القيس الأنصارية الأشهلية. تقدم ذكرها في حواء.",
+      "english": "11399—al-Sa'ba bint Rafi\n\nibn Imri al-Qays, the Ansari woman, al-Ashhaliyya. She was mentioned previously in the entry on Hawwa.",
+      "arabic_sha256": "9e4d5ff08a4cb7f9be84bf21fbad688c54a373c64eee6d3e2bb77fd7989fa204",
+      "english_sha256": "97c436579502aae19d05d7da8bd4eef601279b615caa6f6a22f977287c42af4e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حواء",
+      "english": "Hawwa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

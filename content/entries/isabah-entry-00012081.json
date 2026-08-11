@@ -1,0 +1,68 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012081",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12081,
+  "title": {
+    "english": "Umm Simak bint Fudala ibn Adi al-Ansariyya, sister of Anas ibn Fudala.",
+    "arabic_observed": "أم سماك"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012081-segment-0001",
+      "volume": 8,
+      "scan_page": 412,
+      "printed_page": 411,
+      "reader_page": 4324,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4324",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0412:b868f66989c7606d",
+      "arabic": "١٢٠٨١- أم سماك\nبنت فضالة بن عديّ الأنصاريّة، أخت أنس بن فضالة.\nذكرها ابن سعد في المبايعات، وقال: أمها سودة بن سويد بن حرام بن الهيثم بن وهب.",
+      "english": "12081—Umm Simak bint Fudala ibn Adi al-Ansariyya, sister of Anas ibn Fudala.\n\nIbn Sa'd mentioned her among the women who pledged allegiance and said: Her mother was Sawda ibn Suwayd ibn Haram ibn al-Haytham ibn Wahb.",
+      "arabic_sha256": "d503a73a3236a977a61ded57e6f1c61f8fcda85e878aa1ef077f8502fb032a27",
+      "english_sha256": "4b9ab569f16772fc4f2b64f712827607aa3b24671f3c49afd02f08e05f689775",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم سماك بنت فضالة بن عدي الأنصارية",
+      "english": "Umm Simak bint Fudala ibn Adi al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس بن فضالة",
+      "english": "Anas ibn Fudala",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سودة بن سويد بن حرام بن الهيثم بن وهب",
+      "english": "Sawda ibn Suwayd ibn Haram ibn al-Haytham ibn Wahb",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "genealogy",
+      "arabic_span": "سودة بن سويد بن حرام بن الهيثم بن وهب",
+      "explanation": "The canonical Arabic prints ibn even though Sawda is identified as the subject's mother. The Urdu translation regularizes it to bint, but no independent Arabic manuscript supplied here establishes an emendation; the final text therefore preserves ibn.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0412:b868f66989c7606d"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

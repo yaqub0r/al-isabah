@@ -1,0 +1,154 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012200",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12200,
+  "title": {
+    "english": "Umm Ghaylan al-Dawsiyya:",
+    "arabic_observed": "أم غيلان الدوسيّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012200-segment-0001",
+      "volume": 8,
+      "scan_page": 448,
+      "printed_page": 447,
+      "reader_page": 4360,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4360",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0448:4ef1b5ece5a6549e",
+      "arabic": "١٢٢٠٠- أم غيلان الدوسيّة:\nلها ذكر في الجاهلية، وأدركت الإسلام، ولقيت عمر بن الخطاب. ذكر قصتها ابن الكلبيّ، والواقديّ، والزّبير بن بكّار. وكانت دوس من حلفاء المطير، فقتل هشام بن المغيرة، وهو من الأحلاف، أبا أزيهر الدوسيّ، وكان حليف أبي سفيان بن حرب، فثار الشرّ بين الفريقين، وأرادوا الطلب بدم أبي أزيهر الدوسيّ، فمنعهم أبو سفيان، وذلك بعد الهجرة خشية أن يشمت بهم المسلمون، فلما جاء الإسلام طل دم أزيهر، فاتفق أن ناسا من قريش خرجوا إلى أرض دوس فأحس بهم قوم دوس، فأرادوا قتلهم بأبي أزيهر، فأجارتهم امرأة من دوس كانت تمشط النساء يقال لها أم غيلان، فأمضوا إجارتها.\nفلما قدم «٣» عمر جاءته، فقالت له: إن لي عندك: أجرت أخاك- يعني ضرار بن الخطاب الفهري- وكان فيمن أجارت، فقال لها عمر: ليس هو أخي، نعم هو أخي في الإسلام، فأكرمها.\nوذكر أبو عبيدة هذه القصة، لكنه قال أم جميل.\n(١) أسد الغابة ت (٧٥٦١)، الاستيعاب ت (٣٦٥٢)، تجريد أسماء الصحابة ٢/ ٣٣١.\n(٢) أسد الغابة ت (٧٥٦٢) .\n(٣) في أ: قام.",
+      "english": "12200. Umm Ghaylan al-Dawsiyya:\n\nShe is mentioned in connection with the pre-Islamic period. She lived to see Islam and met Umar ibn al-Khattab. Ibn al-Kalbi, al-Waqidi, and al-Zubayr ibn Bakkar related her story. Daws were among the allies of al-Mutir. Hisham ibn al-Mughira, who belonged to al-Ahlaf, killed Abu Uzayhir al-Dawsi, an ally of Abu Sufyan ibn Harb. Evil then flared up between the two parties, and they sought to exact blood vengeance for Abu Uzayhir al-Dawsi. Abu Sufyan restrained them—this was after the Hijra—fearing that the Muslims would gloat over their misfortune. When Islam came, the blood of Uzayhir went unavenged. It then happened that some people of Quraysh traveled to the territory of Daws. Some members of Daws became aware of them and intended to kill them in vengeance for Abu Uzayhir. A woman of Daws who combed women's hair, called Umm Ghaylan, granted them protection, and they honored her grant of protection.\n\nWhen Umar arrived,[3] she came to him and said, “I have a claim upon you: I granted protection to your brother”—meaning Dirar ibn al-Khattab al-Fihri, who had been among those to whom she had granted protection. Umar said to her, “He is not my brother. Yes, he is my brother in Islam,” and he treated her with honor.\n\nAbu Ubayda also related this story, but he called her Umm Jamil.\n\n(1) Usd al-Ghaba, entry 7561; al-Isti'ab, entry 3652; al-Tajrid, 2/331.\n\n(2) Usd al-Ghaba, entry 7562.\n\n(3) In manuscript A: “stood up.”",
+      "arabic_sha256": "773366e4a4af8039ceb455f1117b598d2f8ebdf681096dc2e9c9a8f8d135cd4d",
+      "english_sha256": "0efcf7dac06219770b973e8f0f40a75d43f4f21cead9852f7ed7ebb5330fa622",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012200-segment-0002",
+      "volume": 8,
+      "scan_page": 449,
+      "printed_page": 448,
+      "reader_page": 4361,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4361",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0449:e6e4550fdc626044",
+      "arabic": "القسم الرابع\nخال.\nحرف الفاء\nالقسم الأول",
+      "english": "Fourth Section\n\nEmpty.\n\nThe Letter Fa\n\nFirst Section",
+      "arabic_sha256": "6403da7428e3d6db8b1ca3b14ca113f1c3cc99502d120b869fa24238adef985f",
+      "english_sha256": "304faa238422d9e9f61c063fad61ad62110b0306da5837b91bdb278771776d0a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم غيلان الدوسيّة",
+      "english": "Umm Ghaylan al-Dawsiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الإسلام",
+      "english": "Islam",
+      "kind": "other"
+    },
+    {
+      "arabic": "عمر بن الخطاب",
+      "english": "Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الكلبيّ",
+      "english": "Ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّبير بن بكّار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "دوس",
+      "english": "Daws",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "المطير",
+      "english": "al-Mutir",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "هشام بن المغيرة",
+      "english": "Hisham ibn al-Mughira",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأحلاف",
+      "english": "al-Ahlaf",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو أزيهر الدوسيّ",
+      "english": "Abu Uzayhir al-Dawsi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سفيان بن حرب",
+      "english": "Abu Sufyan ibn Harb",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهجرة",
+      "english": "Hijra",
+      "kind": "other"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ضرار بن الخطاب الفهري",
+      "english": "Dirar ibn al-Khattab al-Fihri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عبيدة",
+      "english": "Abu Ubayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جميل",
+      "english": "Umm Jamil",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

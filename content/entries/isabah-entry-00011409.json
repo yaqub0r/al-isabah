@@ -1,0 +1,109 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011409",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11409,
+  "title": {
+    "english": "Safiyya bint al-Zubayr ibn 'Abd al-Muttalib ibn Hashim al-Hashimiyya",
+    "arabic_observed": "صفية بنت الزبير"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011409-segment-0001",
+      "volume": 8,
+      "scan_page": 213,
+      "printed_page": 212,
+      "reader_page": 4125,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4125",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0213:a31d45b4aa609c45",
+      "arabic": "١١٤٠٩- صفية بنت الزبير\nبن عبد المطلب بن هاشم الهاشمية.\n(١) أسد الغابة ت (٧٠٦٤)، الاستيعاب: ت (٣٤٥٣) .\n(٢) في أ: الآخرة.",
+      "english": "11409 — Safiyya bint al-Zubayr ibn 'Abd al-Muttalib ibn Hashim al-Hashimiyya\n\n(1) Usd al-Ghaba, entry 7064; al-Isti'ab, entry 3453.\n\n(2) In manuscript A: al-Akhira (“The Hereafter”).",
+      "arabic_sha256": "e5e9f7724cb803c6c4be24784a6fbbdbd3b19710ded4d73d2fece2e0b041476f",
+      "english_sha256": "876b5a5c83cdee4cea7ba8d56968467eb417c9cf4ad63f81c09a8b1c9775bf53",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011409-segment-0002",
+      "volume": 8,
+      "scan_page": 214,
+      "printed_page": 213,
+      "reader_page": 4126,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4126",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0214:bf12244ee40e6e1b",
+      "arabic": "ذكرها ابن سعد فيمن أطعم رسول اللَّه ﷺ من تمر خيبر من بني هاشم، فكان لها أربعون وسقا، وقال: أمّها عاتكة بنت أبي وهب المخزومية، فهي شقيقة ضباعة.",
+      "english": "Ibn Sa'd mentioned her among those of Banu Hashim to whom the Messenger of Allah ﷺ gave an allotment from the dates of Khaybar; she received forty wasqs. He said: Her mother was 'Atika bint Abi Wahb al-Makhzumiyya, so she was the full sister of Duba'a.",
+      "arabic_sha256": "0452d308a56b3b65e68af9ac6a43c0dd0d38a36e51bb585c8868201278f12c9c",
+      "english_sha256": "94ebc6a3426f9d8655e7fcd69af904df5425a5107728c52c0c715ab8f6c36a8c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "صفية",
+      "english": "Safiyya bint Huyayy",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت الزبير بن عبد المطلب بن هاشم الهاشمية",
+      "english": "Safiyya bint al-Zubayr ibn 'Abd al-Muttalib ibn Hashim al-Hashimiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الآخرة",
+      "english": "al-Akhira",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو هاشم",
+      "english": "Banu Hashim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    },
+    {
+      "arabic": "عاتكة بنت أبي وهب المخزومية",
+      "english": "'Atika bint Abi Wahb al-Makhzumiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ضباعة",
+      "english": "Duba'a",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

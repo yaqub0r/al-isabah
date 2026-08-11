@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011253",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11253,
+  "title": {
+    "english": "Zaynab bint Kulthum al-Himyariyya",
+    "arabic_observed": "زينب بنت كلثوم الحميرية"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011253-segment-0001",
+      "volume": 8,
+      "scan_page": 163,
+      "printed_page": 162,
+      "reader_page": 4075,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4075",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0163:e40af4ae4170ccd3",
+      "arabic": "١١٢٥٣- زينب بنت كلثوم الحميرية\nذكرت في ترجمة عكاف، وقيل: كريمة. وستأتي.",
+      "english": "11253—Zaynab bint Kulthum al-Himyariyya\n\nShe was mentioned in the entry on Ukaf. It is also said that her name was Karima. She will appear later.",
+      "arabic_sha256": "88bfc5f3808674da30e1a5b49e13f22791127094ca0affa5c84a2551aeb34e8d",
+      "english_sha256": "ee587be4812c01c1e857f9fe2317ad673fb2c7292e39f6e7f314603a01308db7",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زينب بنت كلثوم الحميرية",
+      "english": "Zaynab bint Kulthum al-Himyariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحميرية",
+      "english": "Himyar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عكاف",
+      "english": "Ukaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "كريمة",
+      "english": "Karima",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

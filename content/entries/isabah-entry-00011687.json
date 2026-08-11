@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011687",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11687,
+  "title": {
+    "english": "Kalba bint Yathribi",
+    "arabic_observed": "كلبة بنت يثربي:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011687-segment-0001",
+      "volume": 8,
+      "scan_page": 298,
+      "printed_page": 297,
+      "reader_page": 4210,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4210",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0298:f8ea76f8e004b883",
+      "arabic": "١١٦٨٧- كلبة بنت يثربي:\nلها صحبة، كذا في التجريد بلا زيادة، وأنا أظنها التي بعدها، ثم وجدت ذلك صريحا في كلام «٣» إبراهيم الحربي، وسمى أباها كما سماها غيره.",
+      "english": "11687 — Kalba bint Yathribi\n\nShe was a Companion. This is how it appears in al-Tajrid, without anything further. I think that she is the woman in the following entry. I then found this stated explicitly in the words [3] of Ibrahim al-Harbi, who named her father, just as another authority named her.",
+      "arabic_sha256": "7910272edf56a395c0c58c7709fccf6ac757b5a5f2c01cb1347a5ecef022aad4",
+      "english_sha256": "8bd1c9866a6cbab427852424bacd04b68c382da2bad78fc0cefc77ad209729a5",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "كلبة بنت يثربي",
+      "english": "Kalba bint Yathribi",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "إبراهيم الحربي",
+      "english": "Ibrahim al-Harbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

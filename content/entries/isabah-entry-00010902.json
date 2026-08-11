@@ -1,0 +1,109 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010902",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10902,
+  "title": {
+    "english": "Amat Allah bint Hamza ibn Abd al-Muttalib,",
+    "arabic_observed": "أمة اللَّه بنت حمزة بن عبد المطلب ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010902-segment-0001",
+      "volume": 8,
+      "scan_page": 42,
+      "printed_page": 41,
+      "reader_page": 3954,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3954",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0042:fb18798548014952",
+      "arabic": "١٠٩٠٢- أمة اللَّه بنت حمزة بن عبد المطلب ،\nتكنى أم الفضل.\nقيل: هي أمامة الماضية. وقيل أختها، فإن كانت غيرها فلعلها ماتت صغيرة، فإنّي لم أجد لها ذكرا في كتاب النسب، فذكرتها في هذا القسم.\n(١) أعلام النساء ١/ ٤٣، تجريد أسماء الصحابة ج ٢/ ٢٤٤، تقريب التهذيب ٢/ ٥٨٩، تهذيب التهذيب ٢/ ٣٩٧، الكاشف ٣/ ٤٦٤، تهذيب الكمال ٣/ ١٦٧٨، خلاصة تهذيب الكمال ٣/ ٣٧٤.\n(٢) أعلام النساء ١/ ٦٥، تجريد أسماء الصحابة ٢/ ٢٤٦.",
+      "english": "10902—Amat Allah bint Hamza ibn Abd al-Muttalib,\n\nHer teknonym was Umm al-Fadl.\n\nIt is said that she was the previously mentioned Umama, and it is said that she was her sister. If she was someone else, perhaps she died young, for I found no mention of her in the book of genealogy; I have therefore mentioned her in this section.\n\n(1) A'lam al-Nisa', 1/43; al-Tajrid, vol. 2, p. 244; Taqrib al-Tahdhib, 2/589; Tahdhib al-Tahdhib, 2/397; al-Kashif, 3/464; Tahdhib al-Kamal, 3/1678; Khulasat Tahdhib al-Kamal, 3/374.\n\n(2) A'lam al-Nisa', 1/65; al-Tajrid, 2/246.",
+      "arabic_sha256": "5179edbc1441be06dcf74f3a3855245248ea2b0869d136b20c6d30b3da14ad75",
+      "english_sha256": "6256cf61bd77cbdf5bf7639220fca13afca47e8334763ed798fbf6931c145952",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010902-segment-0002",
+      "volume": 8,
+      "scan_page": 43,
+      "printed_page": 42,
+      "reader_page": 3955,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3955",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0043:ed928aba822b3abd",
+      "arabic": "القسم الثالث",
+      "english": "Section Three",
+      "arabic_sha256": "06c66c9e9d2d79590dc35fb98cd598649b4ba5b741d4551e483ee02b7874302e",
+      "english_sha256": "2b97c7e6398cd9a43fff25b6a356329e01c631cfc705b5a79960ea5ca04fec29",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "التّجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أمة اللَّه بنت حمزة بن عبد المطلب",
+      "english": "Amat Allah bint Hamza ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الفضل",
+      "english": "Umm al-Fadl",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة",
+      "english": "Umama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

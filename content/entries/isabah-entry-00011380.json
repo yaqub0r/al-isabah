@@ -1,0 +1,133 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011380",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11380,
+  "title": {
+    "english": "al-Shifa bint Awf",
+    "arabic_observed": "الشفاء بنت عوف"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011380-segment-0001",
+      "volume": 8,
+      "scan_page": 204,
+      "printed_page": 203,
+      "reader_page": 4116,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4116",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0204:cf869f69d7d0f295",
+      "arabic": "١١٣٨٠- الشفاء بنت عوف\nبن عبد بن الحارث بن زهرة «١» .\nقال الزّبير: هي أم عبد الرحمن بن عوف، وقد هاجرت مع أختها لأمها الضيزية بنت أبي قيس بن مناف. قال أبو عمر: فعلى هذا عبد عوف جدّ عبد الرحمن لأبيه، وعوف جده لأمه أخوان، وهما ابنا عبد الرحمن بن الحارث بن زهرة، فكأن أباه عوفا سمي باسم عمه.\nفانظره.\nقال ابن الأثير: قد ذكر ابن أبي عاصم في ترجمة عبد الرحمن بن عوف أن أمّه العنقاء، ويقال لها الشفاء بنت عوف بن عبد الحارث بن زهرة، فعلى هذا هي بنت عم أبيه.\nوقد تقدم في أروى بنت كريز النقل عن ابن عباس- أنّ أم عبد الرحمن بن عوف أسلمت.\nوقال ابن سعد: أم الشفاء بنت عوف سلمى بنت عامر بن بياضة بن سبيع الخزاعي، وكانت الشفاء من المهاجرات، قال: وجاءت فيها سنّة العتاقة عن الميت، فإنّها ماتت في حياة النبي ﷺ،\nفقال عبد الرحمن: يا رسول اللَّه، أعتق عن أمي؟ قال: «نعم. فأعتق عنها» .",
+      "english": "11380 — al-Shifa bint Awf\n\nibn Abd ibn al-Harith ibn Zuhra. (1)\n\nal-Zubayr said: She was the mother of Abd al-Rahman ibn Awf, and she emigrated with her maternal half-sister, al-Dayziyya bint Abi Qays ibn Manaf. Abu Umar said: On this account, Abd Awf, Abd al-Rahman's paternal grandfather, and Awf, his maternal grandfather, were brothers, both being sons of Abd al-Rahman ibn al-Harith ibn Zuhra. It is therefore as though his father, Awf, was named after his uncle. Consider this.\n\nIbn al-Athir said: Ibn Abi Asim mentioned in the entry on Abd al-Rahman ibn Awf that his mother was al-Anqa, also called al-Shifa bint Awf ibn Abd al-Harith ibn Zuhra. On this account, she was the daughter of his father's paternal uncle.\n\nThe report from Ibn Abbas that the mother of Abd al-Rahman ibn Awf accepted Islam has already appeared in the entry on Arwa bint Kurayz.\n\nIbn Sa'd said: The mother of al-Shifa bint Awf was Salma bint Amir ibn Bayada ibn Subay al-Khuza'i, and al-Shifa was among the female emigrants. He said: A precedent concerning manumission on behalf of the deceased arose in her case, for she died during the lifetime of the Prophet, may Allah bless him and grant him peace. Abd al-Rahman said, “O Messenger of Allah, should I manumit a slave on my mother's behalf?” He replied, “Yes.” So he manumitted one on her behalf.",
+      "arabic_sha256": "ccbbfba173082453339ece942dcf3326cf9b14bd6a7be23e26177909edf1a37d",
+      "english_sha256": "8ab41ed875d743e743da89b7a63d1e27af0023cce2f1be96f458ae78a091c3ff",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عوف",
+      "english": "Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "الضيزية بنت أبي قيس بن مناف",
+      "english": "al-Dayziyya bint Abi Qays ibn Manaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد عوف",
+      "english": "Abd Awf ibn Abd al-Rahman ibn al-Harith ibn Zuhra",
+      "kind": "person"
+    },
+    {
+      "arabic": "عوف",
+      "english": "Awf ibn Abd al-Rahman ibn al-Harith ibn Zuhra",
+      "kind": "person"
+    },
+    {
+      "arabic": "عوف",
+      "english": "Awf ibn Abd Awf ibn Abd al-Rahman ibn al-Harith ibn Zuhra",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن الحارث بن زهرة",
+      "english": "Abd al-Rahman ibn al-Harith ibn Zuhra",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "العنقاء",
+      "english": "al-Anqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشفاء بنت عوف بن عبد الحارث بن زهرة",
+      "english": "al-Shifa bint Awf ibn Abd al-Harith ibn Zuhra",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أروى بنت كريز",
+      "english": "Arwa bint Kurayz",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى بنت عامر بن بياضة بن سبيع الخزاعي",
+      "english": "Salma bint Amir ibn Bayada ibn Subay al-Khuza'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشفاء بنت عوف",
+      "english": "al-Shifa bint Awf",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "الضيزية",
+      "explanation": "The supplied witnesses confirm the consonantal spelling and identity but provide no decisive vocalization. The provisional form al-Dayziyya has therefore been retained.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0204:cf869f69d7d0f295"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

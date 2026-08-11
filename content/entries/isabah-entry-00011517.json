@@ -1,0 +1,119 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011517",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11517,
+  "title": {
+    "english": "Amra bint Mu'awiya al-Kindiyya (2):",
+    "arabic_observed": "عمرة بنت معاوية الكنديّة «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011517-segment-0001",
+      "volume": 8,
+      "scan_page": 247,
+      "printed_page": 246,
+      "reader_page": 4159,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4159",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0247:89271ce00ac4811d",
+      "arabic": "١١٥١٧- عمرة بنت معاوية الكنديّة «٢»\n: ذكرها أبو نعيم فيمن تزوّج النّبيّ ﵌، ولم يدخل بها. وأخرج\n(١) أسد الغابة ت (٧١٣٤) .\n(٢) أسد الغابة ت (٧١٣٥) .",
+      "english": "11517—Amra bint Mu'awiya al-Kindiyya (2):\nAbu Nu'aym mentioned her among those whom the Prophet, may Allah bless him and grant him peace, married but with whom he did not consummate the marriage. And he transmitted—\n\n(1) Usd al-Ghaba, entry 7134.\n\n(2) Usd al-Ghaba, entry 7135.",
+      "arabic_sha256": "e40e53962bef71dec17a4448dbb9bfcc5181a04953e185f13523d502c29e7162",
+      "english_sha256": "7ef4fa3eb16982cd86af424410923146ccce2d239250d238fbd70226330cbb8a",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011517-segment-0002",
+      "volume": 8,
+      "scan_page": 248,
+      "printed_page": 247,
+      "reader_page": 4160,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4160",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0248:3d2d89bab4de13b0",
+      "arabic": "من طريق محمد بن إسحاق، عن حكيم بن حكيم، عن محمد بن علي بن الحسين، عن أبيه، قال: وتزوج رسول اللَّه ﵌ عمرة بنت معاوية من كندة.\nوأخرج من طريق مجالد عن الشّعبيّ- أنّ النبيّ ﵌ تزوّج امرأة من كندة، فجيء بها بعد ما مات النبيّ ﵌.",
+      "english": "Through the route of Muhammad ibn Ishaq, from Hakim ibn Hakim, from Muhammad ibn Ali ibn al-Husayn, from his father, who said: “The Messenger of Allah, may Allah bless him and grant him peace, married Amra bint Muawiya of Kinda.”\n\nHe also transmitted through Mujalid, from al-Sha'bi, that the Prophet, may Allah bless him and grant him peace, married a woman of Kinda, but she was brought after the Prophet, may Allah bless him and grant him peace, had died.",
+      "arabic_sha256": "f740a8a8c8ea81436f20f9a3db7edf34bad504174ae5943c6f6ca2f1a6c3e8af",
+      "english_sha256": "ed3d00a2ee7ba8ab76a254f1b97645213cf75aff7a7420cf58b6d88e7062af69",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمرة بنت معاوية الكندية",
+      "english": "Amra bint Mu'awiya al-Kindiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "حكيم بن حكيم",
+      "english": "Hakim ibn Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن علي بن الحسين",
+      "english": "Muhammad ibn Ali ibn al-Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة بنت معاوية",
+      "english": "Amra bint Muawiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "كندة",
+      "english": "Kinda",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "مجالد",
+      "english": "Mujalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشّعبيّ",
+      "english": "al-Sha'bi",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

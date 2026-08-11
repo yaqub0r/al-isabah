@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011512",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11512,
+  "title": {
+    "english": "Amra bint Mas'ud ibn Qays",
+    "arabic_observed": "عمرة بنت مسعود بن قيس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011512-segment-0001",
+      "volume": 8,
+      "scan_page": 247,
+      "printed_page": 246,
+      "reader_page": 4159,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4159",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0247:89271ce00ac4811d",
+      "arabic": "١١٥١٢- عمرة بنت مسعود بن قيس\nبن عمرو بن زيد مناة بن عديّ «١» بن عمرو بن مالك بن النّجّار، والدة سعد بن عبادة.\nماتت في حياة النّبيّ ﵌ سنة خمس. قال ابن سعد: ماتت والنبيّ ﵌ في غزوة دومة الجندل في شهر ربيع الأول، فلما جاء النبيّ ﵌ المدينة أتى قبرها فصلّى عليها.\nقلت: وثبت أنها لما ماتت سأل ولدها النّبيّ ﵌ عن الصّدقة عنها.",
+      "english": "11512—Amra bint Mas'ud ibn Qays\nibn Amr ibn Zayd Manat ibn Adi (1) ibn Amr ibn Malik ibn al-Najjar, the mother of Sa'd ibn Ubada.\n\nShe died during the lifetime of the Prophet, may Allah bless him and grant him peace, in the year 5. Ibn Sa'd said: She died while the Prophet, may Allah bless him and grant him peace, was on the expedition to Dumat al-Jandal, in the month of Rabi al-Awwal. When the Prophet, may Allah bless him and grant him peace, returned to Medina, he went to her grave and performed the funeral prayer over her.\n\nI say: It is reliably established that, when she died, her son asked the Prophet, may Allah bless him and grant him peace, about giving charity on her behalf.",
+      "arabic_sha256": "e4fc6953da270e7e6f920ba76483837e1d953d5ffed414380db68011dd7b1f59",
+      "english_sha256": "e8c8ba71d4029c1c0b4d1bfc04ea2c369d0a1fe69cd1ed80cc7bc0c0fbd8bf79",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن عبادة",
+      "english": "Sa'd ibn Ubada",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "دومة الجندل",
+      "english": "Dumat al-Jandal",
+      "kind": "place"
+    },
+    {
+      "arabic": "ربيع الأول",
+      "english": "Rabi al-Awwal",
+      "kind": "other"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

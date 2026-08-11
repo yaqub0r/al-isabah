@@ -1,0 +1,249 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012085",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12085,
+  "title": {
+    "english": "Umm Sunbula al-Aslamiyya.²",
+    "arabic_observed": "أم سنبلة الأسلمية «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012085-segment-0001",
+      "volume": 8,
+      "scan_page": 413,
+      "printed_page": 412,
+      "reader_page": 4325,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4325",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0413:392da5276c647637",
+      "arabic": "١٢٠٨٥- أم سنبلة الأسلمية «٢»\n. قال ابن مندة: روت عنها عائشة. وقال ابن السكن: حديثها في أهل المدينة، ثم\n(١) أسد الغابة ت (٧٤٨٤) .\n(٢) أسد الغابة ت (٧٤٨٥)، الاستيعاب ت (٣٦٢٤)، الثقات ٣/ ٤٦٤. أعلام النساء ٢/ ٢٦٥. تجريد أسماء الصحابة ٢/ ٣٢٣، تلقيح فهوم أهل الأثر ٣٨٧ بقي بن مخلد ٩٨٣.",
+      "english": "12085—Umm Sunbula al-Aslamiyya.²\n\nIbn Manda said: “Aisha narrated from her.” Ibn al-Sakan said: “Her hadith is among the traditions of the people of Medina.” Then—\n\n¹ Usd al-Ghaba, entry 7484.\n\n² Usd al-Ghaba, entry 7485; al-Isti'ab, entry 3624; al-Thiqat, 3/464; A'lam al-Nisa', 2/265; al-Tajrid, 2/323; Talqih Fuhum Ahl al-Athar, 387; Baqi ibn Makhlad, 983.",
+      "arabic_sha256": "7f219c08ea14b2d684fa0dd1dec1d02e8f36eec6fb95556974eb88efb7eb679b",
+      "english_sha256": "97a1b1955b9c2190f2ebdc7ff714d392e639738b39f9615e3ce304bae5ae8543",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012085-segment-0002",
+      "volume": 8,
+      "scan_page": 414,
+      "printed_page": 413,
+      "reader_page": 4326,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4326",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0414:99ba2f38e48aae72",
+      "arabic": "أخرج من رواية أبي أويس، عن عبد الرّحمن بن حرملة، عن عبد اللَّه بن نيار الأسلميّ، عن عروة- سمعت عائشة تقول: أهدت أم سنبلة الأسلميّة لرسول اللَّه ﵌ لبنا، فدخلت عليه فلم تجده، فقلت لها: إن رسول اللَّه ﵌ قد نهى أن نأكل ما تهديه الأعراب، فدخل رسول اللَّه ﵌ وأبو بكر، فقال: «يا أمّ سنبلة، ما هذا معك؟» قالت: لبن أهديته إليك. قال: «اسكبي يا أمّ سنبلة»، فناولته رسول اللَّه ﵌ فشرب، فقالت عائشة: يا رسول اللَّه، قد كنت حدثتنا أنك نهيت عن طعام الأعراب. فقال: «يا عائشة، ليسوا بأعراب، هم أهل باديتنا، ونحن أهل حاضرتهم، إذا دعوناهم أجابوا فليسوا بأعراب» «١» .\nوأخرجه ابن مندة، من رواية سليمان بن بلال، عن عبد الرّحمن، وقال في روايته:\nقال: «اسكبي وناولي أبا بكر» . ثم قال: «اسكبي وناولي عائشة» . ثم قال: «اسكبي وناولينيه» . فشرب،\nوقال: رواه محمد بن إسحاق، عن صالح بن كيسان، عن عروة، عن عائشة بمعناه.\nقلت: ووصل أبو نعيم رواية ابن إسحاق، من طريق محمد بن سلمة الحرّاني، عنه.\nوأخرجه ابن سعد عن عبد اللَّه بن جعفر، عن عبد الرّحمن بن حرملة مطوّلا. وأخرجه أحمد، من طريق الفضل بن فضالة، عن يحيى بن أيّوب المصري، عن عبد الرحمن بن حرملة بطوله.\nوأخرج النّسائيّ في كتاب «الكنى»، والطّبرانيّ، وأبو عروبة، من طريق عمرو بن قيظي، عن سليمان بن محمد، وزرعة بن حصين بن سياه، عن أم سنبلة، حدّثتهم أنها أتت رسول اللَّه ﵌ بهدية، فأبى أزواجه أن يأخذنها، فجاء رسول اللَّه ﵌، فقال: «خذوها، فإن أمّ سنبلة من أهل باديتنا، ونحن أهل حاضرتها» . زاد الطّبرانيّ: وأعطاها وادي كذا وكذا [...] فاشتراه عبد اللَّه منهم فأعطاهم ذودا.\nقال عمرو بن قيظي: فرأيت بعضها. وأخرجه ابن مندة من هذا الوجه مختصرا، قالت: أتيت النّبيّ ﵌ بهدية لبن فقبلها «٢» .",
+      "english": "He then transmitted, by way of the narration of Abu Uways, from 'Abd al-Rahman ibn Harmala, from 'Abd Allah ibn Niyar al-Aslami, from 'Urwa, who said: I heard Aisha say: Umm Sunbula al-Aslamiya presented the Messenger of Allah (may Allah bless him and grant him peace) with some milk. She entered to see him but did not find him, so I said to her, “The Messenger of Allah (may Allah bless him and grant him peace) has forbidden us to eat what the Bedouins give as gifts.” The Messenger of Allah (may Allah bless him and grant him peace) then entered with Abu Bakr and said, “Umm Sunbula, what is this you have with you?” She replied, “Milk that I have brought you as a gift.” He said, “Pour some, Umm Sunbula.” She handed it to the Messenger of Allah (may Allah bless him and grant him peace), and he drank. Aisha said, “Messenger of Allah, you had told us that you forbade the food of the Bedouins.” He replied, “Aisha, they are not Bedouins. They are our desert folk, and we are their townsfolk. When we call upon them, they respond to us, so they are not Bedouins.” (1)\n\nIbn Manda also transmitted it by way of Sulayman ibn Bilal, from 'Abd al-Rahman. In his version it reads: He said, “Pour some and hand it to Abu Bakr.” Then he said, “Pour some and hand it to Aisha.” Then he said, “Pour some and hand it to me.” He then drank.\n\nHe said: Muhammad ibn Ishaq narrated it from Salih ibn Kaysan, from 'Urwa, from Aisha, with the same meaning.\n\nI say: Abu Nu'aym supplied the connected chain for Ibn Ishaq's narration, by way of Muhammad ibn Salama al-Harrani, from him.\n\nIbn Sa'd transmitted it at length from 'Abd Allah ibn Ja'far, from 'Abd al-Rahman ibn Harmala. Ahmad also transmitted it in full by way of al-Fadl ibn Fadala, from Yahya ibn Ayyub al-Misri, from 'Abd al-Rahman ibn Harmala.\n\nal-Nasa'i, in Kitab al-Kuna, as well as al-Tabarani and Abu 'Aruba, transmitted it by way of 'Amr ibn Qayzi, from Sulayman ibn Muhammad and Zur'a ibn Husayn ibn Siyah, from Umm Sunbula, who told them that she came to the Messenger of Allah (may Allah bless him and grant him peace) with a gift, but his wives refused to accept it. The Messenger of Allah (may Allah bless him and grant him peace) then came and said, “Take it, for Umm Sunbula is one of our desert folk, and we are her townsfolk.” al-Tabarani added: He granted her a valley of such-and-such [...] Then 'Abd Allah bought it from them and gave them a small herd of camels.\n\n'Amr ibn Qayzi said: I saw part of it. Ibn Manda transmitted it by this same route in abbreviated form: She said, “I brought the Prophet (may Allah bless him and grant him peace) a gift of milk, and he accepted it.” (2)",
+      "arabic_sha256": "3de0d3418aee77ea969565769f13a0f25af18777498a3fb7e3482b1d3f5adc7a",
+      "english_sha256": "386d95f1d14460df8a118212d875f15fd3815af68ebdd4c54c06e18d9dacd8f7",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سنبلة الأسلمية",
+      "english": "Umm Sunbula al-Aslamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أويس",
+      "english": "Abu Uways",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن حرملة",
+      "english": "'Abd al-Rahman ibn Harmala",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن نيار الأسلمي",
+      "english": "'Abd Allah ibn Niyar al-Aslami",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "'Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سنبلة الأسلمية",
+      "english": "Umm Sunbula al-Aslamiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان بن بلال",
+      "english": "Sulayman ibn Bilal",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "صالح بن كيسان",
+      "english": "Salih ibn Kaysan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن سلمة الحراني",
+      "english": "Muhammad ibn Salama al-Harrani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن جعفر",
+      "english": "'Abd Allah ibn Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفضل بن فضالة",
+      "english": "al-Fadl ibn Fadala",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن أيوب المصري",
+      "english": "Yahya ibn Ayyub al-Misri",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الكنى",
+      "english": "Kitab al-Kuna",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عروبة",
+      "english": "Abu 'Aruba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن قيظي",
+      "english": "'Amr ibn Qayzi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان بن محمد",
+      "english": "Sulayman ibn Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "زرعة بن حصين بن سياه",
+      "english": "Zur'a ibn Husayn ibn Siyah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله",
+      "english": "'Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010907",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10907,
+  "title": {
+    "english": "Asma bint al-Salt [1].",
+    "arabic_observed": "أسماء بنت الصلت «١» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010907-segment-0001",
+      "volume": 8,
+      "scan_page": 44,
+      "printed_page": 43,
+      "reader_page": 3956,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3956",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0044:c3f95d25d7387978",
+      "arabic": "١٠٩٠٧- أسماء بنت الصلت «١» .\nانفرد قتادة بتسميتها، وإنما هي سنا بنت أسماء، كما ستأتي في السين المهملة.",
+      "english": "10907 — Asma bint al-Salt [1].\n\nQatada alone gave her this name. She is in fact Sana bint Asma, as will appear under the unpointed letter sin.",
+      "arabic_sha256": "1ab9f73df5685f28d3f5df4d3321750a029bb1cd36603283427b7f60f8142eca",
+      "english_sha256": "d080469cbfbf517fec49de1a52743bc63410c3ad41dd0aae5a4f4a2895464f64",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أسماء بنت الصلت",
+      "english": "Asma bint al-Salt",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتادة",
+      "english": "Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "سنا بنت أسماء",
+      "english": "Sana bint Asma",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء",
+      "english": "Asma bint Yazid ibn al-Sakan al-Ansariyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011502",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11502,
+  "title": {
+    "english": "Amra bint Rawaha al-Ansariyya (4):",
+    "arabic_observed": "عمرة بنت رواحة الأنصاريّة «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011502-segment-0001",
+      "volume": 8,
+      "scan_page": 245,
+      "printed_page": 244,
+      "reader_page": 4157,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4157",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0245:9cdb6fca7392041a",
+      "arabic": "١١٥٠٢- عمرة بنت رواحة الأنصاريّة «٤»\n: تقدم نسبها في ترجمة أخيها عبد اللَّه بن رواحة، هي امرأة بشير بن سعد والد النعمان، وهي التي سألت بشيرا أن يخص ابنها منه بعطيّة دون إخوته، فردّ النبيّ ﵌ ذلك، والحديث في الصّحيحين، وهي التي شبّب بها قيس بن الخطيم في قصيدته التي يقول فيها:\nوعمرة من سروات النّساء ... تنفخ بالمسك أردانها «٥» .\n[المتقارب] ويقال: إنّ قيس بن الخطيم تزوّجها، فلما تغزل حسّان في عمرة أخت قيس تغزّل قيس في هذه، ويقال: بل اسم أخت قيس ليلى وهو أصوب، ويقال: التي تغزّل فيها حسّان عمرة بنت الصّامت بن خالد بن عطيّة، وكان طلّقها ثم أتبعها نفسه، ذكره الزّبير بن بكّار، عن عمه مصعب. وفي مسند الطيالسي عن شعبة، عن محمد بن النعمان، عن طلحة اليامي، عن\n(١) أسد الغابة ت (٧١٢٤)، الاستيعاب ت (٣٤٨٧)، الثقات ٣/ ٣٢٤، أعلام النساء ٣/ ٣٤٩، تجريد أسماء الصحابة ٢/ ٢/ ٢٨٩.\n(٢) أسد الغابة ت (٧١٢٥) .\n(٣) سقط في أ.\n(٤) أسد الغابة ت (٧١٢٦)، الثقات ج ٣/ ٣٢٤، أعلام النساء ج ٣/ ٣٥٢، الاستيعاب ت (٣٤٨٨)، تجريد أسماء الصحابة ج ٢/ ٢٨٩، الاستبصار ١١٢، ١١٣٢، تراجم الأحبار ٣/ ٢١٥.\n(٥) البيت لقيس بن الخطيم كما في ديوان ص ٦٩ سروات: جمع سراة، وسراة جمع سريّ، وهو الشريف. ومنه حديث الأنصار: «افترق ملؤهم وقتلت سرواتهم»: أي أشرافهم أردان: قال أبو الفرج «والأردان: ما يلي الذراعين جميعا والإبطين من الكمين.",
+      "english": "11502 — Amra bint Rawaha al-Ansariyya (4):\n\nHer lineage was given previously in the entry on her brother, Abd Allah ibn Rawaha. She was the wife of Bashir ibn Sa'd, the father of al-Nu'man. She was the woman who asked Bashir to single out her son by him for a gift, to the exclusion of his brothers, but the Prophet—may Allah bless him and grant him peace—rejected this. The hadith is found in al-Sahihayn.\n\nShe was also the woman about whom Qays ibn al-Khatim wrote amorous verse in his ode, in which he says:\n\n    Amra is among the noble women;\n    her sleeves breathe forth musk. (5)\n\n[al-Mutaqarib]\n\nIt is said that Qays ibn al-Khatim married her. When Hassan wrote amorous verse about Amra, the sister of Qays, Qays wrote amorous verse about this Amra. It is also said that the sister of Qays was instead named Layla, and this is more correct. It is further said that the woman about whom Hassan wrote amorous verse was Amra bint al-Samit ibn Khalid ibn Atiyya. He had divorced her and then yearned for her. Al-Zubayr ibn Bakkar mentioned this on the authority of his paternal uncle Mus'ab.\n\nIn Musnad al-Tayalisi, from Shu'ba, from Muhammad ibn al-Nu'man, from Talha al-Yami, from—\n\n(1) Usd al-Ghaba, entry 7124; al-Isti'ab, entry 3487; al-Thiqat, 3/324; A'lam al-Nisa, 3/349; al-Tajrid, 2/2/289.\n\n(2) Usd al-Ghaba, entry 7125.\n\n(3) Omitted in manuscript A.\n\n(4) Usd al-Ghaba, entry 7126; al-Thiqat, vol. 3, p. 324; A'lam al-Nisa, vol. 3, p. 352; al-Isti'ab, entry 3488; al-Tajrid, vol. 2, p. 289; al-Istibsar, 112, 1132; Tarajim al-Ahbar, 3/215.\n\n(5) The verse is by Qays ibn al-Khatim, as found in his Diwan, p. 69. Sarawat is the plural of sarat, and sarat is the plural of sari, meaning a noble person. From this comes the hadith concerning the Ansar: “Their leading men became divided, and their nobles were killed”; that is, their men of high rank. Ardan: Abu al-Faraj said, “The ardan are the parts of the two sleeves adjoining both forearms and armpits.”",
+      "arabic_sha256": "a16bf458e6e8aae74780c6ca525185e578f725bf780ff879bb2179d8f8a1ee4b",
+      "english_sha256": "057b7c50ce9d42ee43cda7d80a48d2e2b76e3d18926d4192576cb1dfc4bed7c7",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011502-segment-0002",
+      "volume": 8,
+      "scan_page": 246,
+      "printed_page": 245,
+      "reader_page": 4158,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4158",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0246:22e2ad2466062f85",
+      "arabic": "امرأة من عبد القيس، عن أخت عبد اللَّه بن رواحة، قالت: وجب الخروج على كل ذات نطاق.",
+      "english": "A woman of Abd al-Qays, on the authority of the sister of Abd Allah ibn Rawaha, who said: “Going out is obligatory for every woman who wears a waistband.”",
+      "arabic_sha256": "e6528f6d03f6e011aa6d8e7b72959d5ba6b2f08496939440a22f29c9da0ba6a3",
+      "english_sha256": "ea0bc70aa2655f138c55edf86659be8bb50ea83d5b0ea3ce4ca6c03af1758978",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة بنت رواحة الأنصارية",
+      "english": "Amra bint Rawaha al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن رواحة",
+      "english": "Abd Allah ibn Rawaha",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشير بن سعد",
+      "english": "Bashir ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "النعمان",
+      "english": "al-Nu'man ibn Bashir",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس بن الخطيم",
+      "english": "Qays ibn al-Khatim",
+      "kind": "person"
+    },
+    {
+      "arabic": "حسان",
+      "english": "Hassan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة أخت قيس",
+      "english": "Amra bint al-Khatim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليلى",
+      "english": "Layla bint al-Khatim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة بنت الصامت بن خالد بن عطية",
+      "english": "Amra bint al-Samit ibn Khalid ibn Atiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "مصعب",
+      "english": "Mus'ab",
+      "kind": "person"
+    },
+    {
+      "arabic": "شعبة",
+      "english": "Shu'ba",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن النعمان",
+      "english": "Muhammad ibn al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "طلحة اليامي",
+      "english": "Talha al-Yami",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الفرج",
+      "english": "Abu al-Faraj",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الصحيحين",
+      "english": "al-Sahihayn",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسند الطيالسي",
+      "english": "Musnad al-Tayalisi",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "تراجم الأحبار",
+      "english": "Tarajim al-Ahbar",
+      "kind": "work"
+    },
+    {
+      "arabic": "ديوان",
+      "english": "Diwan Qays ibn al-Khatim",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد القيس",
+      "english": "Abd al-Qays",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "bibliographic citation",
+      "arabic_span": "الاستبصار ١١٢، ١١٣٢",
+      "explanation": "The canonical text clearly prints both locators, so they have been preserved as “al-Istibsar, 112, 1132.” The supplied witnesses do not establish whether 1132 is correct, a second locator, or a typographical or formatting error.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0245:9cdb6fca7392041a"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

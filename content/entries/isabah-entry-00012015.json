@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012015",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12015,
+  "title": {
+    "english": "Umm Rafi bint Aslam:",
+    "arabic_observed": "أم رافع بنت أسلم:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012015-segment-0001",
+      "volume": 8,
+      "scan_page": 389,
+      "printed_page": 388,
+      "reader_page": 4301,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4301",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0389:8ce4f866914419a9",
+      "arabic": "١٢٠١٥- أم رافع بنت أسلم:\nذكرها ابن سعد، وابن حبيب في المبايعات.",
+      "english": "12015—Umm Rafi bint Aslam:\n\nIbn Sa'd and Ibn Habib mentioned her among the women who gave the pledge of allegiance.",
+      "arabic_sha256": "26d9d14dad6ad1770de114dd96ae59a773ed3c1ef4502c364997d5b67067c680",
+      "english_sha256": "d719d76d44d20b58eabb78dfb0040854f5426774fcb35a6e07e822f74e74b894",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم رافع بنت أسلم",
+      "english": "Umm Rafi bint Aslam",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم رافع",
+      "english": "Umm Rafi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

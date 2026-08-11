@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011985",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11985,
+  "title": {
+    "english": "Umm Hakim bint Haram (1)",
+    "arabic_observed": "أم حكيم بنت حرام «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011985-segment-0001",
+      "volume": 8,
+      "scan_page": 381,
+      "printed_page": 380,
+      "reader_page": 4293,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4293",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0381:2ca7d437535517da",
+      "arabic": "١١٩٨٥- أم حكيم بنت حرام «١»\n: ذكر ابن حبيب أنها أسرت يوم بدر، ثم أسلمت وبايعت.\nقلت: كذا ذكر ابن الأثير. وقد تصحفت لفظة بنت من ابن، وهي والدة حكيم بن حرام الصحابي المشهور، [وسيأتي ذكر] «٢» قصتها في المبهمات إن شاء اللَّه تعالى.",
+      "english": "11985—Umm Hakim bint Haram (1)\n\nIbn Habib mentioned that she was taken captive on the day of Badr, then accepted Islam and pledged allegiance.\n\nI say: Ibn al-Athir mentioned it thus. The word “bint” is a scribal corruption of “ibn”; she was the mother of the well-known Companion Hakim ibn Haram. Her story [will be mentioned later] (2) in the section on unidentified persons, Allah Most High willing.",
+      "arabic_sha256": "b7cdd74829d8c21cc76379628ad44a9ba25a799870f1d423dfec3d98af2a7eee",
+      "english_sha256": "c7bf754cec1181f16e24134ad8180d898e19d5d5f714ba579b61425d7c4c7f50",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم حكيم بنت حرام",
+      "english": "Umm Hakim bint Haram",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "حكيم بن حرام",
+      "english": "Hakim ibn Haram",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم",
+      "english": "Umm Hakim",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

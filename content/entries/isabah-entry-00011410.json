@@ -1,0 +1,170 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011410",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11410,
+  "title": {
+    "english": "Safiyya bint Shayba [1]",
+    "arabic_observed": "صفية بنت شيبة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011410-segment-0001",
+      "volume": 8,
+      "scan_page": 214,
+      "printed_page": 213,
+      "reader_page": 4126,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4126",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0214:bf12244ee40e6e1b",
+      "arabic": "١١٤١٠- صفية بنت شيبة «١»\nبن عثمان العبدرية.\nتقدم نسبها في ترجمة والدها، مختلف في صحبتها، وأبعد من قال لا رؤية لها، فقد ثبت حديثها في صحيح البخاري تعليقا، قال: قال أبان بن صالح بن الحسن بن مسلم، عن صفية بنت شيبة، قالت: سمعت النبيّ ﷺ. وأخرج ابن مندة من طريق محمد بن جعفر بن الزبير، عن عبيد اللَّه بن عبد اللَّه بن أبي ثور، عن صفية بنت شيبة، قالت: واللَّه لكأنّي انظر إلى رسول اللَّه ﷺ حين دخل الكعبة «٢» ... الحديث.\nوروت أيضا عن عائشة، وأم حبيبة، وأم سلمة- أزواج النبيّ ﷺ، وعن أسماء بنت أبي بكر، وأم عثمان بنت سفيان، وعن أم ولد لشيبة وغيرهم. روى عنها ابنها منصور بن صفية، وهو ابن عبد الرحمن الحجبي، وابن أخيها عبد الحميد بن جبير بن شيبة، والحسن بن مسلم، وقتادة، والمغيرة بن حكيم، وعبيد اللَّه بن عبد اللَّه بن أبي ثور، وميمون بن مهران، وآخرون.\nوقال ابن معين: أدركها ابن جريج ولم يسمع منها. وذكرها ابن حبّان في ثقات التابعين.",
+      "english": "11410—Safiyya bint Shayba [1]\n\nibn 'Uthman, al-'Abdariyya.\n\nHer lineage was given above in the biography of her father. There is disagreement about her status as a Companion. Most far-fetched is the assertion that she never saw him, for her report is established in Sahih al-Bukhari in suspended form. It states: Aban ibn Salih ibn al-Hasan ibn Muslim, from Safiyya bint Shayba, who said: “I heard the Prophet ﷺ.” Ibn Manda transmitted, through Muhammad ibn Ja'far ibn al-Zubayr, from 'Ubayd Allah ibn 'Abd Allah ibn Abi Thawr, from Safiyya bint Shayba, who said: “By Allah, it is as though I can see the Messenger of Allah ﷺ when he entered the Ka'ba [2]…”—the rest of the hadith.\n\nShe also related from Aisha, Umm Habiba, and Umm Salama—the wives of the Prophet ﷺ—and from Asma' bint Abi Bakr, Umm 'Uthman bint Sufyan, a slave-mother belonging to Shayba, and others. Those who related from her included her son Mansur ibn Safiyya—who was the son of 'Abd al-Rahman al-Hajabi—her nephew 'Abd al-Hamid ibn Jubayr ibn Shayba, al-Hasan ibn Muslim, Qatada, al-Mughira ibn Hakim, 'Ubayd Allah ibn 'Abd Allah ibn Abi Thawr, Maymun ibn Mihran, and others.\n\nIbn Ma'in said: “Ibn Jurayj lived during her lifetime but did not hear from her.” Ibn Hibban included her among the trustworthy Successors.",
+      "arabic_sha256": "809fe1a06369760dea22cea86564ea825fe68040891a634584abd2143dcfe594",
+      "english_sha256": "996426b22fdffb46c81f7064d054d0fec334150a09d2310578ff9c105ac2c006",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه / النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "صحيح البخاري",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبان بن صالح بن الحسن بن مسلم",
+      "english": "Aban ibn Salih ibn al-Hasan ibn Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن جعفر بن الزبير",
+      "english": "Muhammad ibn Ja'far ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد اللَّه بن عبد اللَّه بن أبي ثور",
+      "english": "'Ubayd Allah ibn 'Abd Allah ibn Abi Thawr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكعبة",
+      "english": "Ka'ba",
+      "kind": "place"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت أبي بكر",
+      "english": "Asma' bint Abi Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عثمان بنت سفيان",
+      "english": "Umm 'Uthman bint Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "شيبة",
+      "english": "Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "منصور بن صفية",
+      "english": "Mansur ibn Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن الحجبي",
+      "english": "'Abd al-Rahman al-Hajabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الحميد بن جبير بن شيبة",
+      "english": "'Abd al-Hamid ibn Jubayr ibn Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن مسلم",
+      "english": "al-Hasan ibn Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتادة",
+      "english": "Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "المغيرة بن حكيم",
+      "english": "al-Mughira ibn Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمون بن مهران",
+      "english": "Maymun ibn Mihran",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن معين",
+      "english": "Ibn Ma'in",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن جريج",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

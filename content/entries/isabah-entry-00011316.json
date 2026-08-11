@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011316",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11316,
+  "title": {
+    "english": "Salma bint Hamza",
+    "arabic_observed": "سلمى بنت حمزة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011316-segment-0001",
+      "volume": 8,
+      "scan_page": 184,
+      "printed_page": 183,
+      "reader_page": 4096,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4096",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0184:daa6e730df95d410",
+      "arabic": "١١٣١٦- سلمى بنت حمزة\nبن عبد المطلب «٥» .\nروى حديثها تمام عن قتادة عنها- أن مولاها مات وترك ابنته، فورث النبي ﷺ ابنته النصف، وورث يعلى النصف وهو ابن سلمى، كذا أخرجه أحمد في المسند، وكذا رواه جرير بن حازم، عن عبد اللَّه بن شداد، قال: كانت بنت حمزة أعتقت غلاما على عهد النبي ﷺ، فمات وترك ما لا فورث النبي ﷺ بنت الميت النصف، وبنت حمزة النصف. وسيأتي لذلك ذكر في ترجمة سلمى بنت عميس قريبا.",
+      "english": "11316—Salma bint Hamza\n\nIbn Abd al-Muttalib. [5]\n\nTammam related her hadith from Qatada, from her: her client died and left his daughter, so the Prophet, may Allah bless him and grant him peace, awarded his daughter one half as inheritance and awarded Ya'la one half; he was Salma's son. This is how Ahmad transmitted it in Musnad Ahmad. Jarir ibn Hazim likewise related it from Abd Allah ibn Shaddad, who said: “The daughter of Hamza emancipated a slave during the lifetime of the Prophet, may Allah bless him and grant him peace. He died and left property, so the Prophet, may Allah bless him and grant him peace, awarded the deceased man's daughter one half as inheritance and the daughter of Hamza one half.” This will be mentioned again shortly in the entry on Salma bint Umays.",
+      "arabic_sha256": "863eea89ae40260612e057313000ace4c90b9b6a7e3738811f2c0770616f5c55",
+      "english_sha256": "0c3f835ba0f110740678b959a655fcdaf2067ec1cf67df013661378940465765",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "تمام",
+      "english": "Tammam",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتادة",
+      "english": "Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "يعلى",
+      "english": "Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "جرير بن حازم",
+      "english": "Jarir ibn Hazim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن شداد",
+      "english": "Abd Allah ibn Shaddad",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى بنت عميس",
+      "english": "Salma bint Umays",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

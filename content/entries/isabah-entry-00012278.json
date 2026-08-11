@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012278",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12278,
+  "title": {
+    "english": "Umm al-Muhajir al-Rumiyya:",
+    "arabic_observed": "أم المهاجر الروميّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012278-segment-0001",
+      "volume": 8,
+      "scan_page": 483,
+      "printed_page": 482,
+      "reader_page": 4395,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4395",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0483:b57cabe1299fcb39",
+      "arabic": "١٢٢٧٨- أم المهاجر الروميّة:\nأسلمت في زمان عثمان. قال البخاريّ في «الأدب المفرد»: حدّثنا موسى، حدّثنا عبد الواحد، قال: حدثتنا عجوز نوبية جدة علي بن غراب، حدّثتني أم المهاجر، قالت: سبيت وجواري من الروم، فعرض علينا عثمان الإسلام فلم يسلم غيري وغير أخرى، فقال:\nاخفضوهما وطهروهما، فكنت أخدم عثمان.",
+      "english": "12278 - Umm al-Muhajir al-Rumiyya:\n\nShe embraced Islam during the time of 'Uthman. Al-Bukhari said in al-Adab al-Mufrad: Musa related to us: 'Abd al-Wahid related to us, saying: An elderly Nubian woman, the grandmother of 'Ali ibn Ghurab, related to us: Umm al-Muhajir related to me, saying: “Some slave girls and I were taken captive from among the Byzantines. 'Uthman presented Islam to us, but none embraced Islam except me and one other woman. He said: ‘Circumcise them and purify them.’ Thereafter, I served 'Uthman.”",
+      "arabic_sha256": "f0917f0d5b61fccd9a50a571551f5dcdd873c5df2f9aa00f30781c82e7244e34",
+      "english_sha256": "66f695e2cc7d1235d84c18d4ab536292bde8b5d22f1510bbbc722bd8a8208248",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم المهاجر الروميّة",
+      "english": "Umm al-Muhajir al-Rumiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "'Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأدب المفرد",
+      "english": "al-Adab al-Mufrad",
+      "kind": "work"
+    },
+    {
+      "arabic": "موسى",
+      "english": "Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الواحد",
+      "english": "'Abd al-Wahid",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن غراب",
+      "english": "'Ali ibn Ghurab",
+      "kind": "person"
+    },
+    {
+      "arabic": "الروم",
+      "english": "Byzantines",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

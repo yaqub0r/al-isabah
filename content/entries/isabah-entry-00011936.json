@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011936",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11936,
+  "title": {
+    "english": "Umm Jamil bint al-Khattab:",
+    "arabic_observed": "أم جميل بنت الخطاب:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011936-segment-0001",
+      "volume": 8,
+      "scan_page": 369,
+      "printed_page": 368,
+      "reader_page": 4281,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4281",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0369:d66636798a2bba3b",
+      "arabic": "١١٩٣٦- أم جميل بنت الخطاب:\nالقرشيّة العدويّة «٨»، زوج سعد بن زيد أحد العشرة، وهي أم ولده عبد الرحمن الأكبر، ذكرها الزّبير، وقيل هي فاطمة التي تقدّمت في حرف الفاء.",
+      "english": "11936—Umm Jamil bint al-Khattab:\n\nThe Qurashi woman of Banu Adi,⁸ wife of Sa'd ibn Zayd, one of the Ten. She was the mother of his son Abd al-Rahman the Elder. Al-Zubayr mentioned her. It is also said that she was Fatima, who was previously discussed under the letter fa'.",
+      "arabic_sha256": "3bf27b6e9210b60df39315673cfbf83569ce36d6094918868d6a42fd1f528604",
+      "english_sha256": "c3da834932beef662dfd1037e1bd6019cced3495da5ee544cd50a07dc8fc4420",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم جميل بنت الخطاب",
+      "english": "Umm Jamil bint al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرشيّة",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "العدويّة",
+      "english": "Banu Adi",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سعد بن زيد",
+      "english": "Sa'd ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "العشرة",
+      "english": "the Ten",
+      "kind": "other"
+    },
+    {
+      "arabic": "عبد الرحمن الأكبر",
+      "english": "Abd al-Rahman the Elder",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima bint al-Khattab",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

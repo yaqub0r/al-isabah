@@ -1,0 +1,204 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012148",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12148,
+  "title": {
+    "english": "Umm 'Abd Allah:",
+    "arabic_observed": "أم عبد اللَّه:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012148-segment-0001",
+      "volume": 8,
+      "scan_page": 430,
+      "printed_page": 429,
+      "reader_page": 4342,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4342",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0430:96428fab8f77ded7",
+      "arabic": "١٢١٤٨- أم عبد اللَّه:\nامرأة بسر المازني «٤» .\nقال يزيد بن حمير: سمعت عبد اللَّه بن بسر يقول: أتانا رسول اللَّه ﵌، فألقت أمّي له قطيفة فجلس عليها، فأتته بتمر فجعل يأكل ... الحديث.\nوفيه أنه دعا لهم، فقال: «اللَّهمّ بارك لهم وارزقهم واغفر لهم وارحمهم» . قال عبد\n(١) أخرجه الحاكم في المستدرك ٣/ ٥٢٧، ٤/ ٦٠ وأورده ابن حجر في المطالب العالية حديث رقم ٤٤٩٣ والهيثمي في الزوائد ٧/ ٢٤٢- ٢٤٣ عن عبد اللَّه بن عمرو بن العاص وقال في الصحيح بعض أوله ورواه الطبراني من رواية عبد الملك بن قدامة الجمحيّ عن عمرو بن شعيب وعبد الملك وثقه ابن معين وضعفه أبو حاتم وغيره والمتقي الهندي في كنز العمال حديث رقم ٣١٦٩٦.\n(٢) أسد الغابة ت (٧٥١٧)، تجريد أسماء الصحابة ٢/ ٣٢٧.\n(٣) أخرجه البيهقي في السنن الكبرى ٣/ ٨٤ وأورده الزيلعي في نصب الراية ٢/ ١٩٧ والمتقي الهندي في كنز العمال حديث رقم ٢٠١١٧.\n(٤) الاستيعاب ت (٣٦٣٧) .",
+      "english": "12148—Umm 'Abd Allah:\n\nThe wife of Busr al-Mazini.⁴\n\nYazid ibn Humayr said: I heard 'Abd Allah ibn Busr say, “The Messenger of Allah (may Allah bless him and grant him peace) came to us, and my mother laid down a plush cloth for him, upon which he sat. She then brought him dates, and he began to eat …” the hadith.\n\nIt also relates that he supplicated for them, saying: “O Allah, bless them, provide for them, forgive them, and have mercy upon them.” 'Abd—\n\n(1) al-Hakim reported it in al-Mustadrak, 3/527 and 4/60; Ibn Hajar cited it in al-Matalib al-'Aliya, hadith no. 4493; al-Haythami cited it in al-Zawa'id, 7/242–243, from 'Abd Allah ibn 'Amr ibn al-'As and said, “Part of its beginning is in al-Sahih”; al-Tabarani narrated it by way of 'Abd al-Malik ibn Qudama al-Jumahi, from 'Amr ibn Shu'ayb. 'Abd al-Malik was declared trustworthy by Ibn Ma'in and weak by Abu Hatim and others; and al-Muttaqi al-Hindi cited it in Kanz al-'Ummal, hadith no. 31696.\n\n(2) Usd al-Ghaba, entry no. 7517; al-Tajrid, 2/327.\n\n(3) al-Bayhaqi reported it in al-Sunan al-Kubra, 3/84; al-Zayla'i cited it in Nasb al-Raya, 2/197; and al-Muttaqi al-Hindi cited it in Kanz al-'Ummal, hadith no. 20117.\n\n(4) al-Isti'ab, entry no. 3637.",
+      "arabic_sha256": "9dadbb3caeeab8268091170bab8b6ae9efdb6c8a9475de7c0fb8be62d14b274e",
+      "english_sha256": "f6aed3dccc4f871ab94d2f8d87d945c9e15fb1fd351f2ab70f18f4e630b7d925",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012148-segment-0002",
+      "volume": 8,
+      "scan_page": 431,
+      "printed_page": 430,
+      "reader_page": 4343,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4343",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0431:8da598428f73287b",
+      "arabic": "اللَّه: فما زلت أتعرّف بركة تلك الدعوة.\nأخرجه مسلم، وأصحاب السّنن، ووقع لنا بعلو في مسند أبي داود الطّيالسيّ.",
+      "english": "…Abd Allah said: “Ever since then, I have continued to perceive the blessing of that supplication.”\n\nMuslim and the compilers of the Sunan collections transmitted it, and it reached us through a high chain of transmission in the Musnad of Abu Dawud al-Tayalisi.",
+      "arabic_sha256": "c3ed00a0788d7dbcd045265ba77ac5ae75ca8834cc5c277326ee70a8a6e0c571",
+      "english_sha256": "9a3ee8525874ca2d354e65871bdfe941e9dce2ff438922cd3e6129dd0558587e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عبد الملك بن قدامة الجمحي",
+      "english": "'Abd al-Malik ibn Qudama al-Jumahi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن شعيب",
+      "english": "'Amr ibn Shu'ayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو",
+      "english": "'Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبد الله",
+      "english": "Umm 'Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "بسر المازني",
+      "english": "Busr al-Mazini",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن حمير",
+      "english": "Yazid ibn Humayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن بسر",
+      "english": "'Abd Allah ibn Busr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن حجر",
+      "english": "Ibn Hajar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المطالب العالية",
+      "english": "al-Matalib al-'Aliya",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "al-Sahih",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن معين",
+      "english": "Ibn Ma'in",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو حاتم",
+      "english": "Abu Hatim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-'Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن الكبرى",
+      "english": "al-Sunan al-Kubra",
+      "kind": "work"
+    },
+    {
+      "arabic": "الزيلعي",
+      "english": "al-Zayla'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "نصب الراية",
+      "english": "Nasb al-Raya",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود الطيالسي",
+      "english": "Abu Dawud al-Tayalisi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله",
+      "english": "Abd Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

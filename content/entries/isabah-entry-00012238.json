@@ -1,0 +1,198 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012238",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12238,
+  "title": {
+    "english": "Umm Kulthum",
+    "arabic_observed": "أم كلثوم"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012238-segment-0001",
+      "volume": 8,
+      "scan_page": 467,
+      "printed_page": 466,
+      "reader_page": 4379,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4379",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0467:83ad4c8718c1bc2b",
+      "arabic": "١٢٢٣٨- أم كلثوم\nبنت العباس بن عبد المطلب الهاشميّة «١» .\nقال ابن مندة: أدركت النبيّ ﷺ،\nثم أخرج من طريق الدّراوردي، عن محمد بن إبراهيم التّيمي، عن أم كلثوم بنت العبّاس، قالت: قال رسول اللَّه ﷺ: «إذا اقشعرّ جلد العبد من خشية اللَّه تحاتّت عنه خطاياه ...» «٢» الحديث.\nهذه رواية سمويه، عن ضرار بن صرد عنه. وأخرجه الطّبراني، عن الحسين بن جعفر، عن ضرار بهذا السند، عن أم كلثوم بنت العبّاس، عن العبّاس، وهو الصّواب.\nقال أبو نعيم: سقط العبّاس من مسند ابن مندة.\nقلت: وكذلك أخرجه ثابت في «الدّلائل»، من طريق اللّيث بن سعد، عن عبيد اللَّه بن أبي جعفر، عن أم كلثوم بنت العبّاس عن أبيها.\nتنبيه: ذكر ابن الأثير في ترجمة التي قبل هذه أنّ أمها بنت محمية بن جزء الزّبيدي، وأنها كانت زوج الحسن بن علي، فولدت له محمدا وجعفرا، ثم فارقها، فتزوّجها أبو موسى الأشعريّ، فولدت له موسى، ثم مات عنها فتزوّجها عمران بن طلحة، ثم فارقها فرجعت إلى دار أبي موسى فماتت بها، ودفنت بظاهر الكوفة.\nقلت: وهذا كله إنما هو لأم كلثوم بنت الفضل بن العبّاس بن عبد المطّلب، وقصّة تزويج الفضل بنت محمية ثابتة في صحيح مسلم، وقصّة تزويج أبي موسى أمّ كلثوم بنت الفضل بن العباس ثابتة في طبقات ابن سعد.",
+      "english": "12238—Umm Kulthum\n\nbint al-Abbas ibn Abd al-Muttalib, al-Hashimiyya.¹\n\nIbn Manda said: She lived to see the Prophet, peace and blessings of Allah be upon him.\n\nHe then transmitted through al-Darawardi, from Muhammad ibn Ibrahim al-Taymi, from Umm Kulthum bint al-Abbas, who said: The Messenger of Allah, peace and blessings of Allah be upon him, said: “When a servant’s skin shivers from fear of Allah, his sins fall away from him...”²—the hadith.\n\nThis is Samawayh's narration, from Dirar ibn Surad, from al-Darawardi. Al-Tabarani transmitted it from al-Husayn ibn Ja'far, from Dirar, with this chain: from Umm Kulthum bint al-Abbas, from al-Abbas—and this is the correct version.\n\nAbu Nu'aym said: Al-Abbas was omitted from Ibn Manda's musnad version.\n\nI say: Thabit likewise transmitted it in al-Dala'il, through al-Layth ibn Sa'd, from Ubayd Allah ibn Abi Ja'far, from Umm Kulthum bint al-Abbas, from her father.\n\nNote: In the biography of the preceding woman, Ibn al-Athir stated that her mother was the daughter of Mahmiya ibn Jaz' al-Zabidi, and that she was the wife of al-Hasan ibn Ali and bore him Muhammad and Ja'far. He then separated from her, and Abu Musa al-Ash'ari married her; she bore him Musa. He then died, leaving her a widow, and Imran ibn Talha married her. He subsequently separated from her, whereupon she returned to Abu Musa's house, died there, and was buried outside Kufa.\n\nI say: All of this pertains only to Umm Kulthum bint al-Fadl ibn al-Abbas ibn Abd al-Muttalib. The account of al-Fadl's marriage to the daughter of Mahmiya is established in Sahih Muslim, and the account of Abu Musa's marriage to Umm Kulthum bint al-Fadl ibn al-Abbas is established in Ibn Sa'd's al-Tabaqat.",
+      "arabic_sha256": "4d5d2e60fbf6dc91687d6db9617a6d941e7127be7f05fa90747977c4ad902bf1",
+      "english_sha256": "fbab2ad1eeded86c1d14bf5f0b93eb59bb0fd2b1942ca8b13ba986766443d7f2",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم",
+      "english": "Umm Kulthum bint Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "العباس بن عبد المطلب",
+      "english": "al-Abbas ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدراوردي",
+      "english": "al-Darawardi",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إبراهيم التيمي",
+      "english": "Muhammad ibn Ibrahim al-Taymi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سمويه",
+      "english": "Samawayh",
+      "kind": "person"
+    },
+    {
+      "arabic": "ضرار بن صرد",
+      "english": "Dirar ibn Surad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسين بن جعفر",
+      "english": "al-Husayn ibn Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت",
+      "english": "Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "الليث بن سعد",
+      "english": "al-Layth ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد الله بن أبي جعفر",
+      "english": "Ubayd Allah ibn Abi Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمية بن جزء الزبيدي",
+      "english": "Mahmiya ibn Jaz' al-Zabidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن علي",
+      "english": "al-Hasan ibn Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "جعفر",
+      "english": "Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى الأشعري",
+      "english": "Abu Musa al-Ash'ari",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى",
+      "english": "Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمران بن طلحة",
+      "english": "Imran ibn Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم بنت الفضل بن العباس بن عبد المطلب",
+      "english": "Umm Kulthum bint al-Fadl ibn al-Abbas ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفضل",
+      "english": "al-Fadl ibn al-Abbas ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكوفة",
+      "english": "Kufa",
+      "kind": "place"
+    },
+    {
+      "arabic": "الدلائل",
+      "english": "al-Dala'il",
+      "kind": "work"
+    },
+    {
+      "arabic": "صحيح مسلم",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "سمويه",
+      "explanation": "The witnesses confirm the narrator's identity and the consonantal spelling, but do not establish the precise vocalization. “Samawayh” is therefore retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0467:83ad4c8718c1bc2b"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

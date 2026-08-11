@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011802",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11802,
+  "title": {
+    "english": "Na'ila bint Salama ibn Waqsh",
+    "arabic_observed": "نائلة بنت سلامة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011802-segment-0001",
+      "volume": 8,
+      "scan_page": 332,
+      "printed_page": 331,
+      "reader_page": 4244,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4244",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0332:360e00215fcfb92d",
+      "arabic": "١١٨٠٢- نائلة بنت سلامة\nبن وقش، أخت سلمة بن سلامة الماضي ذكره، وأخت أم عمرو بنت سلامة.\nذكرها ابن سعد، وقال: أسلمت وبايعت، قال: وأمها أم عمرو بنت عتيك بن عمرو الجشمية، قال: وكانت تزوجت عبد اللَّه بن سمّال- بفتح أوله وتشديد الميم ثم لام، ابن عمرو بن غزيّة ثم تزوّجت قيس بن كعب بن القين السّلمي- بفتح السين، فولدت له سهل بن قيس الّذي استشهد بأحد.",
+      "english": "11802 — Na'ila bint Salama ibn Waqsh\n\nShe was the sister of Salama ibn Salama, who was mentioned previously, and the sister of Umm 'Amr bint Salama.\n\nIbn Sa'd mentioned her and said: She embraced Islam and pledged allegiance. He said: Her mother was Umm 'Amr bint 'Atik ibn 'Amr al-Jushamiyya. He said: She had married 'Abd Allah ibn Sammal—with the first letter vowelled a, a doubled mim, followed by lam—ibn 'Amr ibn Ghaziyya. She then married Qays ibn Ka'b ibn al-Qayn al-Salami—with the sin vowelled a—and bore him Sahl ibn Qays, who was martyred at Uhud.",
+      "arabic_sha256": "e1f67837030c4062283fde4809766671ce6f076e485550deb738465fd360ec5f",
+      "english_sha256": "a212ff2686feb4eccef7d597900fb5a45fdf5aa17dc16abbc18f2b90b54d3051",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "نائلة بنت سلامة بن وقش",
+      "english": "Na'ila bint Salama ibn Waqsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمة بن سلامة",
+      "english": "Salama ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو بنت سلامة",
+      "english": "Umm 'Amr bint Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو بنت عتيك بن عمرو الجشمية",
+      "english": "Umm 'Amr bint 'Atik ibn 'Amr al-Jushamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس بن كعب بن القين السّلمي",
+      "english": "Qays ibn Ka'b ibn al-Qayn al-Salami",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهل بن قيس",
+      "english": "Sahl ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

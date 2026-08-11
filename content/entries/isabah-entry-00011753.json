@@ -1,0 +1,105 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011753",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11753,
+  "title": {
+    "english": "Maryam al-Maghaliyya (1):",
+    "arabic_observed": "مريم المغالية «١»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011753-segment-0001",
+      "volume": 8,
+      "scan_page": 317,
+      "printed_page": 316,
+      "reader_page": 4229,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4229",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0317:6a6b44529b9a0a52",
+      "arabic": "١١٧٥٣- مريم المغالية «١»:\nمن بني مغالة، بفتح الميم والمعجمة الخفيفة: بطن من الأنصار.\nكانت زوج ثابت بن قيس بن شمّاس، روى حديثها يونس بن بكير في المغازي، والحسن بن سفيان، من طريقه، عن ابن إسحاق، عن قتادة بن الوليد، عن عبادة بن الصّامت، عن الرّبيع بنت معوّذ- أنها اختلعت من زوجها، فأمرها عثمان أن تستبرئ رحمها بحيضة واحدة، قالت الرّبيع: وإنما أخذ عثمان ذلك عن قول رسول اللَّه ﵌ لمريم المغالية حين افتدت من زوجها.",
+      "english": "11753—Maryam al-Maghaliyya (1):\n\nShe was of Banu Maghala—with an open mim and an ungeminated dotted letter [ghayn]—a clan of the Ansar.\n\nShe was the wife of Thabit ibn Qays ibn Shammas. Her report was related by Yunus ibn Bukayr in al-Maghazi, and by al-Hasan ibn Sufyan through him, from Ibn Ishaq, from Qatada ibn al-Walid, from Ubadah ibn al-Samit, from al-Rubayyi' bint Mu'awwidh: she obtained a khul' divorce from her husband, and Uthman ordered her to ascertain that her womb was free of pregnancy by observing a single menstrual period. Al-Rubayyi' said: “Uthman derived that only from the statement of the Messenger of Allah—may Allah bless him and grant him peace—to Maryam al-Maghaliyya when she ransomed herself from her husband.”",
+      "arabic_sha256": "1b3e956da7c1fdcba2cd647bcee5d2ae2f051493bcc3212ee3b6cb74108caa45",
+      "english_sha256": "0fbdbb7c657ba69d88a60ad02560912c63ebf75cb36c62f32125fd9b4d0b44f3",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مريم المغالية",
+      "english": "Maryam al-Maghaliyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني مغالة",
+      "english": "Banu Maghala",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ثابت بن قيس بن شمّاس",
+      "english": "Thabit ibn Qays ibn Shammas",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن بكير",
+      "english": "Yunus ibn Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "المغازي",
+      "english": "al-Maghazi",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحسن بن سفيان",
+      "english": "al-Hasan ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتادة بن الوليد",
+      "english": "Qatada ibn al-Walid",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبادة بن الصّامت",
+      "english": "Ubadah ibn al-Samit",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرّبيع بنت معوّذ",
+      "english": "al-Rubayyi' bint Mu'awwidh",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

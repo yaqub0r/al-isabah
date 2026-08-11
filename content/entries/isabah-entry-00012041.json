@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012041",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12041,
+  "title": {
+    "english": "Umm Salim al-Ashja'iyya:",
+    "arabic_observed": "أم سالم الأشجعيّة «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012041-segment-0001",
+      "volume": 8,
+      "scan_page": 399,
+      "printed_page": 398,
+      "reader_page": 4311,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4311",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0399:97ae5762f77afadd",
+      "arabic": "١٢٠٤١- أم سالم الأشجعيّة «٢»\n: روى حديثها ابن أبي عاصم من طريق حبيب بن أبي ثابت، عن رجل عنها- أنّ رسول اللَّه ﵌ [....] «٣» إلى أن قال: «ما أحسنها إن لم تكن ميتة ...\nالحديث «٤» .",
+      "english": "12041—Umm Salim al-Ashja'iyya:\n\nIbn Abi Asim transmitted her hadith by way of Habib ibn Abi Thabit, from a man, from her: that the Messenger of Allah—may Allah bless him and grant him peace—[lacuna] ... until he said: “How fine it is, provided it is not [made from] carrion hide ...” The hadith.",
+      "arabic_sha256": "1e6685287389ed9a42dd3e1d7ad2a5daa2d5d0db7e9ef9175cb6bd16dc9d0275",
+      "english_sha256": "e80d42212fd5528e66499d00e86976678923b3e52f8d38dc537c3cedfa17bae9",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم سالم الأشجعيّة",
+      "english": "Umm Salim al-Ashja'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيب بن أبي ثابت",
+      "english": "Habib ibn Abi Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سالم",
+      "english": "Umm Salim",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

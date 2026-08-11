@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010844",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10844,
+  "title": {
+    "english": "Ama bint Nu'aym al-Nahham,",
+    "arabic_observed": "أمة بنت نعيم النحام ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010844-segment-0001",
+      "volume": 8,
+      "scan_page": 30,
+      "printed_page": 29,
+      "reader_page": 3942,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3942",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0030:72c0de50d3109001",
+      "arabic": "١٠٨٤٤- أمة بنت نعيم النحام ،\nهي المرأة التي خطبها ابن عمر إلى نعيم، فزوجها من النعمان بن نضلة، وكان في حجره. سماها الزبير في كتاب النسب.",
+      "english": "10844—Ama bint Nu'aym al-Nahham,\n\nShe is the woman whose hand Ibn 'Umar sought from Nu'aym, but he married her to al-Nu'man ibn Nadla, who was under his guardianship. Al-Zubayr gave her name in Kitab al-Nasab.",
+      "arabic_sha256": "32c955d599ce9d3380632e7e6f6d3fef0c9bf2fa19aea8c50a25cfe5e7c692ec",
+      "english_sha256": "4d62ac8e3a5f1c1778bfdca4d309a3633d26c72380cd0df0ad6b529d9b262452",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أمة بنت نعيم النحام",
+      "english": "Ama bint Nu'aym al-Nahham",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عمر",
+      "english": "Ibn 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "نعيم",
+      "english": "Nu'aym al-Nahham",
+      "kind": "person"
+    },
+    {
+      "arabic": "النعمان بن نضلة",
+      "english": "al-Nu'man ibn Nadla",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب النسب",
+      "english": "Kitab al-Nasab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

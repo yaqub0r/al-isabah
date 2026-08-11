@@ -1,0 +1,263 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011581",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11581,
+  "title": {
+    "english": "al-Fari'a bint Abu al-Salt:",
+    "arabic_observed": "الفارعة بنت أبي الصّلت:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011581-segment-0001",
+      "volume": 8,
+      "scan_page": 260,
+      "printed_page": 259,
+      "reader_page": 4172,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4172",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0260:bc3844fc30bddd42",
+      "arabic": "١١٥٨١- الفارعة بنت أبي الصّلت:\nأخت أميّة بن أبي الصّلت «٤» الشّاعر المشهور.\nقال أبو عمر: قدمت على النبيّ ﵌ بعد فتح الطائف، وكانت ذات لبّ وعفاف وجمال، وكان يعجب بها، وقال لها يوما: هل تحفظين من شعر أخيك شيئا؟ فأخبرته خبره وما رأت منه، وقصّت قصّته في شقّ جوفه وإخراج قلبه وردّه مكانه وهو نائم.\nوأنشدته شعره الّذي أوله:\nباتت همومي تسري طوارقها ... أكفّ عيني والدّمع سابقها\n(١) في أ: عدي. (٢) أسد الغابة ت (٧١٦٩) . (٣) أسد الغابة ت (٧١٧٠) . (٤) أسد الغابة ت (٧١٧١)، الاستيعاب ت (٣٤٩٧)، أعلام النساء ٤/ ١٩، تجريد أسماء الصحابة ٢/ ٢٩٣.",
+      "english": "11581—al-Fari'a bint Abu al-Salt:\n\nThe sister of Umayya ibn Abu al-Salt (4), the famous poet.\n\nAbu Umar said: She came to the Prophet—may Allah bless him and grant him peace—after the conquest of al-Ta'if. She possessed intelligence, chastity, and beauty, and he admired her. One day he said to her, “Do you remember any of your brother's poetry?” She told him her brother's story and what she had seen of him, and related the account of his abdomen being split open, his heart being removed and then restored to its place while he was asleep.\n\nShe recited to him his poem whose opening is:\n\nMy cares spent the night, their nocturnal visitations passing through …\nI restrain my eye, but the tears outstrip it.\n\n(1) In manuscript A: Adi.\n(2) Usd al-Ghaba, entry (7169).\n(3) Usd al-Ghaba, entry (7170).\n(4) Usd al-Ghaba, entry (7171); al-Isti'ab, entry (3497); A'lam al-Nisa', 4/19; al-Tajrid, 2/293.",
+      "arabic_sha256": "4b656a6434a72946f0ebebe7586602d5ceed249543ff6109aea09fb83315753f",
+      "english_sha256": "ffefddf3e29d96838125fd572737106fcd1716eee29e8cfb112eb41805c7a9e1",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011581-segment-0002",
+      "volume": 8,
+      "scan_page": 261,
+      "printed_page": 260,
+      "reader_page": 4173,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4173",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0261:891b0b37203690a7",
+      "arabic": "ما رغّب النّفس في الحياة وإن ... تحيا قليلا فالموت لا حقها «١»\n[المنسرح] نحو ثلاثة عشر بيتا، يقول فيها:\nيوشك من فرّ من منيّته ... يوما على غرّة يوافقها\nمن لم يمت عبطة يمت هرما ... للموت كأس والمرء ذائقها «٢»\n[المنسرح] وأنه قال عنده المعاينة:\nكلّ عيش وإن تطاول يوما ... صائر مرّة إلى أن يزولا\nليتني كنت قبل ما قد بدا لي ... في قلال الجبال أرعى الوعولا «٣» .\n[الخفيف] فقال لها رسول اللَّه ﵌: «كان مثل أخيك كمثل الّذي آتَيْناهُ آياتِنا فَانْسَلَخَ مِنْها ...» [الأعراف: ١٧٥] الآية.\nقال أبو عمر: اختصرته واقتصرت منه على النكت، ثم ساق سنده إلى وثيمة بن موسى، عن سلمة بن الفضل، عن ابن إسحاق، عن ابن شهاب، عن سعيد بن المسيّب، قال: قدمت الفارِعة، قال ... فذكره بتمامه.\nقلت: وأخرج القصّة أبو نعيم من طريق ثعلب، عن ابن الأعرابيّ، قال: قال ابن إسحاق بهذا السّند نحوه، وأخرجها ابن أبي عاصم، وابن مندة، من طريق إبراهيم بن محمد بن يحيى السّجزيّ، عن أبيه، عن ابن إسحاق، عن الزّهري، عن عبيد اللَّه بن عبد اللَّه، عن ابن عبّاس- أنّ فارعة بنت أبي الصّلت الثّقفي جاءت إلى النّبي ﵌ فسألها عن قصّة أبيها وأخيها، فقالت: قدم أخي من سفر، فأتانا فنام على سريري، فأقبل طائران فسقط أحدهما على صدره فشقّ ما بين صدره إلى ستهه، قال: فذكر قصّة موته بطولها.\nقلت: وفي السّند إلى ابن إسحاق ضعف. وأخرج القصّة الفاكهيّ في كتاب مكّة، من طريق الكلبيّ، عن أبي صالح، عن ابن عبّاس مطوّلة. وقد نقلها الثّعلبيّ في تفسيره، وفيها\n(١) ينظر البيتان في الاستيعاب ترجمة رقم (٣٤٩٧)، أسد الغابة ترجمة رقم (٧١٧١) .\n(٢) ينظر البيتان في أسد الغابة ترجمة (٧١٧١)، والاستيعاب ترجمة رقم (٣٤٩٧) .\n(٣) ينظر البيتان في أسد الغابة ترجمة رقم (٧١٧١)، الاستيعاب ترجمة رقم (٣٤٩٧)، خزانة الأدب ١/ ١٢١.",
+      "english": "What made the soul desire life, though\nit lives only a little while? Death shall overtake it.¹\n\n[al-Munsarih]\n\nSome thirteen verses, among which he says:\n\nSoon shall one who flees his appointed death,\none day, unawares, encounter it.\n\nWhoever does not die suddenly in the bloom of health will die of old age;\ndeath has a cup, and every man shall taste it.²\n\n[al-Munsarih]\n\nAnd when death confronted him, he said:\n\nEvery life, though one day it be prolonged,\nis destined at last to pass away.\n\nWould that, before what has now appeared to me,\nI had been on the mountain peaks, tending the ibexes.³\n\n[al-Khafif]\n\nThe Messenger of Allah, may Allah bless him and grant him peace, said to her: “The likeness of your brother was that of the one to whom We gave Our signs, but he stripped himself of them ...” [al-A'raf: 175], to the end of the verse.\n\nAbu Umar said: “I have abridged it and confined myself to its salient points.” He then gave his chain of transmission as far as Wathima ibn Musa, from Salama ibn al-Fadl, from Ibn Ishaq, from Ibn Shihab, from Sa'id ibn al-Musayyib, who said: “al-Fari'a came ...” He then related it in full.\n\nI say: Abu Nu'aym also transmitted the account by way of Tha'lab, from Ibn al-A'rabi, who said: “Ibn Ishaq related something similar through this chain.” Ibn Abi Asim and Ibn Manda also transmitted it by way of Ibrahim ibn Muhammad ibn Yahya al-Sijzi, from his father, from Ibn Ishaq, from al-Zuhri, from Ubayd Allah ibn Abd Allah, from Ibn Abbas: Fari'a bint Abi al-Salt al-Thaqafi came to the Prophet, may Allah bless him and grant him peace, and he asked her about the story of her father and her brother. She said: “My brother returned from a journey, came to us, and slept upon my bed. Two birds approached, and one of them alighted upon his chest and split him open from his chest down to his anus.” He said: Then he related the story of his death at length.\n\nI say: The chain to Ibn Ishaq contains weakness. al-Fakihi transmitted the account at length in the Book of Mecca, by way of al-Kalbi, from Abu Salih, from Ibn Abbas. al-Tha'labi also cited it in his Tafsir, and in it—\n\n¹ See the two verses in al-Isti'ab, biography no. 3497, and Usd al-Ghaba, biography no. 7171.\n\n² See the two verses in Usd al-Ghaba, biography no. 7171, and al-Isti'ab, biography no. 3497.\n\n³ See the two verses in Usd al-Ghaba, biography no. 7171; al-Isti'ab, biography no. 3497; and Khizanat al-Adab, 1/121.",
+      "arabic_sha256": "891b0b37203690a7192fd61bda94b57fa50828012d91ddf61d826bad9430e4c0",
+      "english_sha256": "2cd92d083452ee7230c29a54e88ff83eb8964fd61c0b8c79c0564bec6fa9b44d",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011581-segment-0003",
+      "volume": 8,
+      "scan_page": 262,
+      "printed_page": 261,
+      "reader_page": 4174,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4174",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0262:2e0630b1ec6b1b50",
+      "arabic": "أنها أنشدت النبيّ ﵌ عدة قصائد من شعره يصرّح فيها بالإيمان والبعث، منها قوله من قصيدة:\nيوقف النّاس للحساب جميعا ... فشقيّ معذّب وسعيد\n[الخفيف] ومنها من قصيدة:\nلك الحمد والنّعماء والفضل ربّنا ... ولا شيء أعلى منك جدّا وأمجد\nمليك على عرش السّماء مهيمن ... لعزّته تعنو الوجوه وتسجد\n[الطويل] ومنها من قصيدة:\nيوم نأتي الرّحمن وهو رحيم ... إنّه كان وعده مأتيّا\nإن أؤاخذ بما اجترمت فإنّي ... سوف ألقى من العذاب قويّا\nربّ إن تعف فالمعافاة ظنّي ... أو تعاقب فلم تعاقب بريّا\n[الخفيف]\nفقال لها النّبيّ ﵌: «آمن شعره وكفر قلبه»، فنزلت: وَاتْلُ عَلَيْهِمْ نَبَأَ الَّذِي آتَيْناهُ آياتِنا فَانْسَلَخَ مِنْها ... [الأعراف: ١٧٥] الآية.",
+      "english": "She recited to the Prophet—may Allah bless him and grant him peace—a number of his poems in which he explicitly affirmed faith and resurrection. Among them are his words from an ode:\n\nAll the people shall be made to stand for the Reckoning—\none wretched and tormented, another blessed.\n\n[al-Khafif meter]\n\nAnd among them are his words from an ode:\n\nTo You belong praise, beneficence, and bounty, our Lord;\nnone is higher than You in majesty or more glorious.\nA King, presiding over the Throne of heaven;\nbefore His might faces bow and prostrate themselves.\n\n[al-Tawil meter]\n\nAnd among them are his words from an ode:\n\nOn the day we come to the All-Merciful—and He is merciful—\nHis promise shall indeed be fulfilled.\nIf I am taken to account for what I have committed,\nI shall encounter a mighty punishment.\nMy Lord, if You pardon, pardon is what I expect;\nor if You punish, You will not have punished an innocent man.\n\n[al-Khafif meter]\n\nThe Prophet—may Allah bless him and grant him peace—said to her: “His poetry believed, but his heart disbelieved.” Then there was revealed: “And recite to them the account of the one to whom We gave Our signs, but he cast them off…” [al-A'raf: 175], to the end of the verse.",
+      "arabic_sha256": "bcc1072d9da7f7aa1ce678adf3d154b34db1777b706a20dc78e182df301889bd",
+      "english_sha256": "30458d4e76bfd1042ab76c90ca0b201fc5d98a6964130b8f89548b5e019b33a5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الفارعة بنت أبي الصّلت",
+      "english": "al-Fari'a bint Abu al-Salt",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميّة بن أبي الصّلت",
+      "english": "Umayya ibn Abu al-Salt",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطائف",
+      "english": "al-Ta'if",
+      "kind": "place"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "المنسرح",
+      "english": "al-Munsarih",
+      "kind": "other"
+    },
+    {
+      "arabic": "الخفيف",
+      "english": "al-Khafif",
+      "kind": "other"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأعراف",
+      "english": "al-A'raf",
+      "kind": "work"
+    },
+    {
+      "arabic": "وثيمة بن موسى",
+      "english": "Wathima ibn Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمة بن الفضل",
+      "english": "Salama ibn al-Fadl",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن شهاب",
+      "english": "Ibn Shihab",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن المسيّب",
+      "english": "Sa'id ibn al-Musayyib",
+      "kind": "person"
+    },
+    {
+      "arabic": "فارعة بنت أبي الصلت الثّقفي",
+      "english": "Fari'a bint Abi al-Salt al-Thaqafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثعلب",
+      "english": "Tha'lab",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأعرابيّ",
+      "english": "Ibn al-A'rabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن محمد بن يحيى السّجزيّ",
+      "english": "Ibrahim ibn Muhammad ibn Yahya al-Sijzi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد اللَّه بن عبد اللَّه",
+      "english": "Ubayd Allah ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبّاس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفاكهيّ",
+      "english": "al-Fakihi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب مكّة",
+      "english": "Book of Mecca",
+      "kind": "work"
+    },
+    {
+      "arabic": "مكّة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "الكلبيّ",
+      "english": "al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو صالح",
+      "english": "Abu Salih",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثّعلبيّ",
+      "english": "al-Tha'labi",
+      "kind": "person"
+    },
+    {
+      "arabic": "خزانة الأدب",
+      "english": "Khizanat al-Adab",
+      "kind": "work"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطويل",
+      "english": "al-Tawil",
+      "kind": "other"
+    },
+    {
+      "arabic": "الرّحمن",
+      "english": "the All-Merciful",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

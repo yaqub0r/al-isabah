@@ -1,0 +1,120 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011312",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11312,
+  "title": {
+    "english": "Salama bint Ma'qil (2)",
+    "arabic_observed": "سلامة بنت معقل «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011312-segment-0001",
+      "volume": 8,
+      "scan_page": 183,
+      "printed_page": 182,
+      "reader_page": 4095,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4095",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0183:62e987168cded9ff",
+      "arabic": "١١٣١٢- سلامة بنت معقل «٢»\nالخزاعية بالولاء، وقيل القيسية «٣»، وقيل إنها أنصارية.\nروى حديثها محمّد بن إسحاق، عن خطاب بن صالح، عن أمه، حدثتني «٤» سلامة بنت معقل امرأة من خارجة قيس بن غيلان، قالت: قدم بي عمي في الجاهلية، فباعني من الحباب بن عمر ... الحديث المتقدم في ترجمة الحباب بن عمرو- في الحاء المهملة.\nقلت: وفي تاريخ البخاري نقل الخلاف في ضبط والدها، هو بالعين المهملة والقاف، أو بالمعجمة والفاء الثقيلة؟ ذكره يعقوب بن إبراهيم بن سعد عن أبيه عن ابن إسحاق بالغين المعجمة، وعن محمد بن سلمة ويونس بن بكير بالعين المهملة.\nواسم خارجة الّذي نسبت إليه هذه المرأة عوف بن بكر بن يشكر بن عدنان بن الحارث ابن عمرو بن قيس بن غيلان، وأم خارجة هي التي يضرب بها المثل، فيقال: أسرع من نكاح أمّ خارجة، تزوجت نيّفا وأربعين رجلا، وولدت في عامّة قبائل العرب، وكانت تكثر الاختلاع من الرجال، ثم لا تلبث أن تتزوج، حتى كان يقال إنّ الرجل إذا أتاها قال لها:\nخطب فتقول نكح، فيدخل بها.",
+      "english": "11312 — Salama bint Ma'qil (2)\n\nShe was affiliated with Khuza'a through clientage. It was also said that she was Qaysi (3), and it was said that she was Ansari.\n\nMuhammad ibn Ishaq narrated her hadith from Khattab ibn Salih, from his mother, who said: Salama bint Ma'qil, a woman of Kharija Qays ibn Ghaylan, related to me (4), saying: “My paternal uncle brought me during the Age of Ignorance and sold me to al-Hubab ibn 'Umar...” This is the hadith previously given in the biography of al-Hubab ibn 'Amr, under the unpointed letter ha.\n\nI say: In al-Bukhari's History, the disagreement over the form of her father's name is reported: is it written with an unpointed 'ayn and qaf (Ma'qil), or with a dotted ghayn and doubled fa (Mughaffal)? Ya'qub ibn Ibrahim ibn Sa'd reported it from his father, from Ibn Ishaq, with the dotted ghayn, while it was reported from Muhammad ibn Salama and Yunus ibn Bukayr with the unpointed 'ayn.\n\nThe name of the Kharija to whom this woman was ascribed was 'Awf ibn Bakr ibn Yashkur ibn 'Adnan ibn al-Harith ibn 'Amr ibn Qays ibn Ghaylan. Umm Kharija was the woman about whom the proverb was coined: “Faster than the marriage of Umm Kharija.” She married forty-odd men and bore children among most of the Arab tribes. She frequently obtained khul' divorces from men and then would not remain long before marrying again, so much so that it was said that when a man came to her, he would say to her, “A proposal!” She would reply, “Marriage!” and he would consummate the marriage with her.",
+      "arabic_sha256": "45b6a5fa4752246ed5bf8382907f72b01a6a36284ad457863c121ae058706e5b",
+      "english_sha256": "a640e4e05955cf8dfb5d46d02a7bfeb22dd0a9009ed753e40ede6bc07be4fb56",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلامة بنت معقل",
+      "english": "Salama bint Ma'qil",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخزاعية",
+      "english": "Khuza'a",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "القيسية",
+      "english": "Qays",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "خطاب بن صالح",
+      "english": "Khattab ibn Salih",
+      "kind": "person"
+    },
+    {
+      "arabic": "خارجة قيس بن غيلان",
+      "english": "Kharija Qays ibn Ghaylan",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الحباب بن عمر",
+      "english": "al-Hubab ibn 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحباب بن عمرو",
+      "english": "al-Hubab ibn 'Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "تاريخ البخاري",
+      "english": "al-Bukhari's History",
+      "kind": "work"
+    },
+    {
+      "arabic": "يعقوب بن إبراهيم بن سعد",
+      "english": "Ya'qub ibn Ibrahim ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن سلمة",
+      "english": "Muhammad ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن بكير",
+      "english": "Yunus ibn Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عوف بن بكر بن يشكر بن عدنان بن الحارث بن عمرو بن قيس بن غيلان",
+      "english": "'Awf ibn Bakr ibn Yashkur ibn 'Adnan ibn al-Harith ibn 'Amr ibn Qays ibn Ghaylan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم خارجة",
+      "english": "Umm Kharija",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011546",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11546,
+  "title": {
+    "english": "Umayra bint Muhammad ibn Salama, the Ansari woman:",
+    "arabic_observed": "عميرة بنت محمد بن سلمة الأنصاريّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011546-segment-0001",
+      "volume": 8,
+      "scan_page": 252,
+      "printed_page": 251,
+      "reader_page": 4164,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4164",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0252:003c313ae415e2f3",
+      "arabic": "١١٥٤٦- عميرة بنت محمد بن سلمة الأنصاريّة:\nتقدّم ذكرها في ترجمة والدها، حكى القرطبيّ في التفسير أنه نزل فيها: الرِّجالُ قَوَّامُونَ عَلَى النِّساءِ [سورة النساء آية ٣٤] إلى قوله: عَلِيًّا كَبِيرًا [سورة النساء آية ٣٤]، ثم وجدته\nفي تفسير الثّعلبي، من طريق ابن الكلبيّ، قال: لطم سعد بن الربيع زوجته عميرة فشكته إلى رسول اللَّه ﵌ فقال «القصاص»\nفنزلت.\nوقد ذكرت في سبب النزول قولين آخرين فيما نزلت الآية فيهما والكلبي واه.",
+      "english": "11546—Umayra bint Muhammad ibn Salama, the Ansari woman:\n\nShe was mentioned previously in the entry on her father. al-Qurtubi related in his Tafsir that the following was revealed concerning her: “Men are in charge of women” [Surat al-Nisa, verse 34], as far as His words: “Most High, Great” [Surat al-Nisa, verse 34]. I then found this in al-Tha'labi's Tafsir, through Ibn al-Kalbi, who said: Sa'd ibn al-Rabi slapped his wife Umayra, and she complained about him to the Messenger of Allah, may Allah bless him and grant him peace. He said, “Retaliation.” Then the verse was revealed.\n\nRegarding the occasion of revelation, I have mentioned two other views concerning the two cases in connection with which the verse was revealed; al-Kalbi is weak.",
+      "arabic_sha256": "eefe5fc6e1c094ddb88ba57bc74e7de625cd27f27e9724614b5607e4174f3107",
+      "english_sha256": "35ec9ac0449b13aebfb126fc7bf12a1f8d55ae0588a574aa687af706b8fff857",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عميرة بنت محمد بن سلمة",
+      "english": "Umayra bint Muhammad ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرطبي",
+      "english": "al-Qurtubi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سورة النساء",
+      "english": "Surat al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثعلبي",
+      "english": "al-Tha'labi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الكلبي",
+      "english": "Ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن الربيع",
+      "english": "Sa'd ibn al-Rabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

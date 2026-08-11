@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011580",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11580,
+  "title": {
+    "english": "Fari'a bint Abu Sufyan",
+    "arabic_observed": "فارعة بنت أبي سفيان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011580-segment-0001",
+      "volume": 8,
+      "scan_page": 260,
+      "printed_page": 259,
+      "reader_page": 4172,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4172",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0260:bc3844fc30bddd42",
+      "arabic": "١١٥٨٠- فارعة بنت أبي سفيان\nبن حرب بن أميّة الأمويّة «٣» .\nذكرها المستغفريّ، وأخرج من طريق يونس بن بكير، عن ابن إسحاق، قال: كان أوّل من خرج إلى الحبشة مهاجرا عبد اللَّه بن جحش حليف بني عبد شمس، احتمل بأهله وأخيه، وهو أبو أحمد، وكانت عنده الفارعة بنت أبي سفيان بن حرب.",
+      "english": "11580—Fari'a bint Abu Sufyan\n\nibn Harb ibn Umayya, the Umayyad woman. (3)\n\nAl-Mustaghfiri mentioned her and transmitted through Yunus ibn Bukayr, from Ibn Ishaq, who said: The first to depart for Abyssinia as an emigrant was Abdullah ibn Jahsh, an ally of Banu Abd Shams. He took his family and his brother with him; his brother was Abu Ahmad, and Fari'a bint Abu Sufyan ibn Harb was married to him.",
+      "arabic_sha256": "e02f1437dddb7105277ac0d9a27b087d42facef784fe33d205dc71c55a3d529f",
+      "english_sha256": "bed2d19e0c3ed936885295e37764f2199403a8fc2c10bd0734ef2ed82243ed36",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "المستغفريّ",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن بكير",
+      "english": "Yunus ibn Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "عبد اللَّه بن جحش",
+      "english": "Abdullah ibn Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عبد شمس",
+      "english": "Banu Abd Shams",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو أحمد",
+      "english": "Abu Ahmad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

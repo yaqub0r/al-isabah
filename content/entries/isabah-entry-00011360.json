@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011360",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11360,
+  "title": {
+    "english": "Suwada,",
+    "arabic_observed": "سوادة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011360-segment-0001",
+      "volume": 8,
+      "scan_page": 196,
+      "printed_page": 195,
+      "reader_page": 4108,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4108",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0196:afff052c117be696",
+      "arabic": "١١٣٦٠- سوادة ،\nويقال سودة بنت مسرح «٢»، بكسر الميم وسكون السين المهملة وفتح الراء، وقيل بالشين المعجمة والتشديد، الكندية. وحديثها في وقت وضع فاطمة الزهراء الحسن بن علي.\nوصله ابن مندة من طريق عروة بن فيروز عنها، قالت: كنت فيمن شهد فاطمة حين ضربها المخاض، فجاء النبيّ ﷺ، فقال: «كيف هي»؟ قلت: إنها لتجهد. قال: إذا وضعت فلا تحدّثي شيئا» . قالت: فوضعت ابنا فسررته ووضعته في خرقة صفراء، فقال:\n«ائتيني به» . فلفقته في خرقة بيضاء فتفل في فيه، وسقاه من ريقه، ودعا عليّا فقال: «ما سمّيته»؟ فقال: جعفر. فقال: «لا، ولكنّه الحسن» .\nوأعادها أبو عمر في سودة، فقال:\nروى عنها حديث واحد بإسناد مجهول أنها كانت قابلة لفاطمة حين وضعت الحسن.",
+      "english": "11360 — Suwada,\nalso said to be Sawda bint Misrah (2)—with a kasra on the mim, an undotted sin bearing sukun, and a fatha on the ra; it is also said with a dotted shin and gemination—al-Kindiyya. Her hadith concerns the time when Fatima al-Zahra gave birth to al-Hasan ibn Ali.\n\nIbn Manda narrated it with a connected chain by way of Urwa ibn Fayruz, from her. She said: “I was among those present with Fatima when labor pains seized her. The Prophet, may Allah bless him and grant him peace, came and asked, ‘How is she?’ I replied, ‘She is indeed laboring hard.’ He said, ‘When she gives birth, do not say anything.’” She said: “She then gave birth to a son, so I cut his umbilical cord and placed him in a yellow cloth. He said, ‘Bring him to me.’ I then wrapped him in a white cloth. He lightly spat into his mouth, gave him some of his saliva to swallow, and summoned Ali. He asked, ‘What have you named him?’ Ali replied, ‘Ja'far.’ He said, ‘No; rather, he is al-Hasan.’”\n\nAbu Umar listed her again under Sawda, saying:\n“One hadith was narrated from her, with an unknown chain of transmission, stating that she was Fatima's midwife when Fatima gave birth to al-Hasan.”",
+      "arabic_sha256": "663b10acf828a7c06e67afebc69c2da4c11e7cd1b67529c6be86beb7134f0ac6",
+      "english_sha256": "57bca543c415f015408231ca3d76cbd29067531e79a7f10da3bcbbc60c242c78",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سوادة",
+      "english": "Suwada bint Asim ibn Khalid ibn Shaddad ibn Abd Allah ibn Qurt ibn Razah ibn Adi ibn Ka'b al-Qurashiyya al-Adawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "سوادة",
+      "english": "Suwada bint Misrah al-Kindiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة الزهراء",
+      "english": "Fatima al-Zahra",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن علي",
+      "english": "al-Hasan ibn Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة بن فيروز",
+      "english": "Urwa ibn Fayruz",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "جعفر",
+      "english": "Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكندية",
+      "english": "Kinda",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

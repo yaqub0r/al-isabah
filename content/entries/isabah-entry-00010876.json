@@ -1,0 +1,115 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010876",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10876,
+  "title": {
+    "english": "Umayma",
+    "arabic_observed": "أميمة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010876-segment-0001",
+      "volume": 8,
+      "scan_page": 37,
+      "printed_page": 36,
+      "reader_page": 3949,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3949",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0037:2bad6320dec2302f",
+      "arabic": "١٠٨٧٦- أميمة ،\nوالدة أبي هريرة، ويقال اسمها ميمونة.\nذكرها أبو موسى، من طريق يحيى بن العلاء، عن أيوب، عن ابن سيرين، عن أبي هريرة- أن عمر بن الخطاب دعاه ليستعمله فأبى أن يعمل له، فقال: أتكره العمل وقد طلبه من كان خيرا منك؟ قال: من ذاك؟ قال: يوسف بن يعقوب. قال: يوسف نبي ابن نبي، وأنا أبو هريرة بن أميمة: فذكر القصة.\nوأخرج الحاكم في تفسير يوسف من مستدركه من طريق ... عن ... ورويناه في الجزء التاسع من فوائد أبي يعلى بن الصابوني من تجزئة عشرة من طريق ...",
+      "english": "10876 — Umayma\n\nThe mother of Abu Hurayra; it is also said that her name was Maymuna.\n\nAbu Musa mentioned her by way of Yahya ibn al-Ala, from Ayyub, from Ibn Sirin, from Abu Hurayra: Umar ibn al-Khattab summoned him in order to appoint him to office, but he refused to serve him. Umar said, “Do you dislike public office when one better than you sought it?” He asked, “Who was that?” Umar replied, “Yusuf ibn Yaqub.” He said, “Yusuf was a prophet, the son of a prophet, whereas I am Abu Hurayra ibn Umayma.” He then related the story.\n\nal-Hakim included it in the commentary on Surat Yusuf in his Mustadrak, by way of ... from ... We also transmitted it in the ninth part of the Fawa'id of Abu Ya'la ibn al-Sabuni, in its division into ten parts, by way of ...",
+      "arabic_sha256": "c78398331d3de2abb235ee210a7c4e3c3861f8a3868cbc887a03332c4d37f665",
+      "english_sha256": "cf48d1c9510dd28c8a066df0dac725d9228e162bdc320eeea6cf364f8402f890",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أميمة، مولاة رسول اللَّه ﷺ",
+      "english": "Umayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة، مولاة عبد اللَّه بن أبيّ ابن سلول",
+      "english": "Umayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة، والدة أبي هريرة، ويقال اسمها ميمونة",
+      "english": "Umayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو هريرة",
+      "english": "Abu Hurayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن العلاء",
+      "english": "Yahya ibn al-Ala",
+      "kind": "person"
+    },
+    {
+      "arabic": "أيوب",
+      "english": "Ayyub",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سيرين",
+      "english": "Ibn Sirin",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن الخطاب",
+      "english": "Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "يوسف بن يعقوب",
+      "english": "Yusuf ibn Yaqub",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "يوسف",
+      "english": "Surat Yusuf",
+      "kind": "work"
+    },
+    {
+      "arabic": "مستدركه",
+      "english": "Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "فوائد أبي يعلى بن الصابوني",
+      "english": "Fawa'id of Abu Ya'la ibn al-Sabuni",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو يعلى بن الصابوني",
+      "english": "Abu Ya'la ibn al-Sabuni",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

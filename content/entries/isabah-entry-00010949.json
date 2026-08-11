@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010949",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10949,
+  "title": {
+    "english": "Bahiya bint Abd Allah al-Bakriyya [1]",
+    "arabic_observed": "بهية بنت عبد اللَّه البكرية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010949-segment-0001",
+      "volume": 8,
+      "scan_page": 55,
+      "printed_page": 54,
+      "reader_page": 3967,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3967",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0055:d70e71744b7598a8",
+      "arabic": "١٠٩٤٩- بهية بنت عبد اللَّه البكرية «١»\n، من بكر بن وائل.\nوفدت مع أبيها إلى النبي ﷺ، قالت: فبايع الرجال وصافحهم، وبايع النساء ولم يصافحهن، قالت: فنظر إليّ فدعاني ومسح برأسي، ودعا لي ولوالدي، فولد لها ستون ولدا: أربعون رجلا، وعشرون امرأة، هكذا ذكر أبو عمر بغير إسناد.\nوقد أسنده الباورديّ من طريق عبد الرحمن بن عمرو بن جبلة أحد المتروكين، عن حبة بنت شماخ: حدثتني بهية بنت عبد اللَّه البكرية، قالت: وفدت مع أبي ... فذكره وزاد في آخره: واستشهد منهم عشرون، وأخرجه ابن مندة عن الباوردي.",
+      "english": "10949 — Bahiya bint Abd Allah al-Bakriyya [1]\n\nShe was of Bakr ibn Wa'il.\n\nShe came in a delegation with her father to the Prophet, may Allah bless him and grant him peace. She said: “He received the men’s pledge of allegiance and shook their hands, and he received the women’s pledge but did not shake their hands. He then looked at me, summoned me, passed his hand over my head, and supplicated for me and for my father.” She bore sixty children: forty men and twenty women. This is how Abu Umar related it, without an isnad.\n\nAl-Bawardi transmitted it with an isnad through Abd al-Rahman ibn Amr ibn Jabala—one of the abandoned transmitters—from Habba bint Shammakh: “Bahiya bint Abd Allah al-Bakriyya related to me, saying: ‘I came in a delegation with my father…’” He then related the report, adding at its end: “Twenty of them were martyred.” Ibn Manda also transmitted it from al-Bawardi.",
+      "arabic_sha256": "b13cb350db9141f30e2926f1776483ecdf8d98501e8bb39ee2f88c9bc4f45109",
+      "english_sha256": "f86ec0cb823584ffd8b3fa5d33131e75ad305202bb1609bb3b89eb3a4a2b2d31",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بهية بنت عبد اللَّه البكرية",
+      "english": "Bahiya bint Abd Allah al-Bakriyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بكر بن وائل",
+      "english": "Bakr ibn Wa'il",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "al-Nabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الباوردي",
+      "english": "al-Bawardi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عمرو بن جبلة",
+      "english": "Abd al-Rahman ibn Amr ibn Jabala",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبة بنت شماخ",
+      "english": "Habba bint Shammakh",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

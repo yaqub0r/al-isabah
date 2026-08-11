@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012060",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12060,
+  "title": {
+    "english": "Umm Sa'id",
+    "arabic_observed": "أم سعيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012060-segment-0001",
+      "volume": 8,
+      "scan_page": 404,
+      "printed_page": 403,
+      "reader_page": 4316,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4316",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0404:a8d9cc4290690880",
+      "arabic": "١٢٠٦٠- أم سعيد\nبنت عبد اللَّه بن أبيّ. في أم سعد تقدّمت.",
+      "english": "12060—Umm Sa'id\n\nbint Abd Allah ibn Ubayy. See above under Umm Sa'd.",
+      "arabic_sha256": "8eec35cb7219cee5a3f34a6dc17a1d2e08625159e27d2182fe4e5b02e6959e44",
+      "english_sha256": "b1fcaabe6f9b5050ab43e7481481aabb083ce397f75bfe52454f334d8a2c45ee",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "سعيد",
+      "english": "Sa'id ibn al-Musayyib ibn Hazn",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعيد",
+      "english": "Umm Sa'id",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

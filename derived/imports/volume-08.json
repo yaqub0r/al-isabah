@@ -1,0 +1,20 @@
+{
+  "schema": "al-isabah.volume-import-report.v1",
+  "volume": 8,
+  "input_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f",
+  "source_pages": 491,
+  "entry_first": 10759,
+  "entry_last": 12308,
+  "entries": 1550,
+  "segments": 1948,
+  "unresolved_items": 281,
+  "needs_attention_entries": 208,
+  "volume_preludes": [
+    {
+      "scan_page": 4,
+      "arabic": "بسم الله الرحمن الرحيم\n\nكتاب النساء\nعلى الترتيب السابق في الرجال\n\nحرف الألف\n\nالقسم الأول",
+      "english": "In the name of Allah, the Most Merciful, the Especially Merciful\n\nTHE BOOK OF WOMEN\nArranged according to the preceding order used for the men\n\nTHE LETTER ALIF\n\nTHE FIRST SECTION"
+    }
+  ],
+  "pass": true
+}

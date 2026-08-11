@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011215",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11215,
+  "title": {
+    "english": "Rayhana,",
+    "arabic_observed": "ريحانة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011215-segment-0001",
+      "volume": 8,
+      "scan_page": 150,
+      "printed_page": 149,
+      "reader_page": 4062,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4062",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0150:c3dab5c17262d97b",
+      "arabic": "١١٢١٥- ريحانة ،\nأخرى. لها إدراك.\nروى عنها عامر بن عبد اللَّه بن الزبير، قال سعيد بن منصور: حدثنا عبد العزيز بن محمد- هو الدراوَرْديّ، عن محمد بن عجلان، عن عامر بن عبد اللَّه بن الزبير، عن ريحانة، قالت: جئت عمر، فقلت: أألج؟ فقال لي: إذا جئت فقولي السلام عليكم، فإن قالوا: وعليكم السلام فقولي: أأدخل؟.\nالقسم الرابع",
+      "english": "11215 — Rayhana,\n\nanother woman of that name. She lived into the Islamic period.\n\nAmir ibn Abd Allah ibn al-Zubayr related from her. Sa'id ibn Mansur said: Abd al-Aziz ibn Muhammad—that is, al-Darawardi—related to us, from Muhammad ibn Ajlan, from Amir ibn Abd Allah ibn al-Zubayr, from Rayhana, who said: I came to Umar and said, “May I enter?” He told me, “When you come, say, ‘Peace be upon you.’ If they say, ‘And upon you be peace,’ then say, ‘May I enter?’”\n\nSECTION FOUR",
+      "arabic_sha256": "8e8800163488db87f8c30dfbe6dcb9e317c69a7ba04b7238bef5e7769c16db4f",
+      "english_sha256": "ee770775a3af222f4fbe687502e3fa6279dc88c775fc6a47844be921f560c1db",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ريحانة",
+      "english": "Rayhana bint Ma'dikarib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ريحانة",
+      "english": "Rayhana",
+      "kind": "person"
+    },
+    {
+      "arabic": "عامر بن عبد الله بن الزبير",
+      "english": "Amir ibn Abd Allah ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن منصور",
+      "english": "Sa'id ibn Mansur",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد العزيز بن محمد",
+      "english": "Abd al-Aziz ibn Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدراوردي",
+      "english": "al-Darawardi",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عجلان",
+      "english": "Muhammad ibn Ajlan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

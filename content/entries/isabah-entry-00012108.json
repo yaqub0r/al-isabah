@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012108",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12108,
+  "title": {
+    "english": "Umm Shubath¹",
+    "arabic_observed": "أم شباث «١»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012108-segment-0001",
+      "volume": 8,
+      "scan_page": 422,
+      "printed_page": 421,
+      "reader_page": 4334,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4334",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0422:c2cc127ce12d3577",
+      "arabic": "١٢١٠٨- أم شباث «١»:\nوهي أم منيع.\nذكرت في ترجمة ابنها شباث.\nأوردها أبو موسى، ومثلها لا يستدرك، لأنها وإن كانت والدة شباث لكن لها كنية معروفة غيره.\nولو كان كل من يكون له ولد يكنى به لكانت أم المؤمنين أم سلمة مثلا تكنى أم عمر، وأم زينب، وأم «٢» ذرّة، وكان يلزمه أن يستدركها في المواضع كلها، وليس كذلك، وإنما يذكر في الكنى ما يكنى به صاحب الترجمة رجلا كان أو امرأة.\nحرف الصاد المهملة\nالقسم الأول",
+      "english": "12108—Umm Shubath¹\n\nShe is Umm Mani'.\n\nShe was mentioned in the entry on her son Shubath.\n\nAbu Musa included her, but someone like her should not be added as a supplementary entry, for although she was Shubath's mother, she was known by a different kunya.\n\nIf everyone who had a child were given a kunya after that child, the Mother of the Believers Umm Salama, for example, would be given the kunyahs Umm Umar, Umm Zaynab, and Umm Dharra.² He would then have been obliged to add her as a supplementary entry in all those places. But that is not the case. Under the kunyahs, one mentions only the kunya by which the subject of the entry was known, whether a man or a woman.\n\nTHE UNPOINTED LETTER SAD\n\nSECTION ONE",
+      "arabic_sha256": "c299bb889d4ebb924049787a2bbbf3104d8393b0b15b8b3862757ca5e5ead82b",
+      "english_sha256": "b28d40394779bcbfcae5fa185fe1954e6ec96671b8c62682f34e24099c624fef",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم شباث",
+      "english": "Umm Shubath",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم منيع",
+      "english": "Umm Mani'",
+      "kind": "person"
+    },
+    {
+      "arabic": "شباث",
+      "english": "Shubath",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم المؤمنين أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمر",
+      "english": "Umm Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم زينب",
+      "english": "Umm Zaynab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم ذرّة",
+      "english": "Umm Dharra",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

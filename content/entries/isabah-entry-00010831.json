@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010831",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10831,
+  "title": {
+    "english": "Umama bint Isam ibn Amir, the Ansari woman of Banu Bayada",
+    "arabic_observed": "أمامة بنت عصام"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010831-segment-0001",
+      "volume": 8,
+      "scan_page": 27,
+      "printed_page": 26,
+      "reader_page": 3939,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3939",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0027:2304d49de3177790",
+      "arabic": "١٠٨٣١- أمامة بنت عصام\nبن عامر الأنصارية البياضية. قال ابن سعد: أسلمت وبايعت.",
+      "english": "10831—Umama bint Isam ibn Amir, the Ansari woman of Banu Bayada\n\nibn Sa'd said: She accepted Islam and gave the pledge of allegiance.",
+      "arabic_sha256": "85d83509de218dd87b28f69ea6cf08f727ea89fff044730781fb3de36d1f101a",
+      "english_sha256": "885d8a0b971534b166e7ea429fd21d2849254c1fff22c631b99d6ecea22ea692",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أمامة بنت عصام بن عامر",
+      "english": "Umama bint Isam ibn Amir",
+      "kind": "person"
+    },
+    {
+      "arabic": "البياضية",
+      "english": "Banu Bayada",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

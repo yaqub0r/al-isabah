@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012036",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12036,
+  "title": {
+    "english": "Umm Zayd bint Qays ibn al-Nu'man ibn Sinan al-Ansariyya",
+    "arabic_observed": "أم زيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012036-segment-0001",
+      "volume": 8,
+      "scan_page": 398,
+      "printed_page": 397,
+      "reader_page": 4310,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4310",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0398:da3d53c4bd2962ed",
+      "arabic": "١٢٠٣٦- أم زيد\nبنت قيس بن النعمان بن سنان الأنصاريّة. ذكرها ابن سعد في المبايعات، وقال: أمها أدام بنت القين بن كعب بن سواد، تزوّجها خالد بن عديّ بن عمرو بن عدي بن سنان بن نابي.",
+      "english": "12036—Umm Zayd bint Qays ibn al-Nu'man ibn Sinan al-Ansariyya\n\nIbn Sa'd mentioned her among the women who pledged allegiance and said: Her mother was Idam bint al-Qayn ibn Ka'b ibn Sawad. Khalid ibn 'Adi ibn 'Amr ibn 'Adi ibn Sinan ibn Nabi married her.",
+      "arabic_sha256": "c093f9d8d4a71645017ee4abb0b60586023f3be154e669cbcdff273bc470d074",
+      "english_sha256": "2210a6087ffb8f5de86a2ceb3d381914a2e0795be1242b3604326e92119fbbe0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زيد",
+      "english": "Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم زيد بنت قيس بن النعمان بن سنان الأنصارية",
+      "english": "Umm Zayd bint Qays ibn al-Nu'man ibn Sinan al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أدام بنت القين بن كعب بن سواد",
+      "english": "Idam bint al-Qayn ibn Ka'b ibn Sawad",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد بن عدي بن عمرو بن عدي بن سنان بن نابي",
+      "english": "Khalid ibn 'Adi ibn 'Amr ibn 'Adi ibn Sinan ibn Nabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم زيد",
+      "english": "Umm Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011582",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11582,
+  "title": {
+    "english": "Fari'a bint 'Abd al-Rahman al-Khath'amiyya¹",
+    "arabic_observed": "فارعة بنت عبد الرحمن الخثعمية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011582-segment-0001",
+      "volume": 8,
+      "scan_page": 262,
+      "printed_page": 261,
+      "reader_page": 4174,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4174",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0262:2e0630b1ec6b1b50",
+      "arabic": "١١٥٨٢- فارعة بنت عبد الرحمن الخثعمية «١»\n. لها ذكر في الصّحابة، روى عنها السّري بن عبد الرّحمن، كذا في الاستيعاب.",
+      "english": "11582—Fari'a bint 'Abd al-Rahman al-Khath'amiyya¹\n\nShe is mentioned among the Companions. al-Sari ibn 'Abd al-Rahman related from her. Thus it appears in al-Isti'ab.",
+      "arabic_sha256": "b6e10d2bde6109ce8d96733eef4d65643672ca52cb1209df965c8bed0abe71bd",
+      "english_sha256": "2684ec1566fa8b87685c0f740163df898679b96ee1ffa054c94f02149cd1dfd5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الرّحمن",
+      "english": "the All-Merciful",
+      "kind": "other"
+    },
+    {
+      "arabic": "فارعة بنت عبد الرحمن الخثعمية",
+      "english": "Fari'a bint 'Abd al-Rahman al-Khath'amiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "السّري بن عبد الرحمن",
+      "english": "al-Sari ibn 'Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "scan_page": { "type": "integer", "minimum": 1 },
+    "english_text": { "type": "string", "minLength": 1 },
+    "names": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "arabic": { "type": "string", "minLength": 1 },
+          "english": { "type": "string", "minLength": 1 },
+          "kind": { "type": "string", "enum": ["person", "place", "tribe", "work", "other"] }
+        },
+        "required": ["arabic", "english", "kind"],
+        "additionalProperties": false
+      }
+    },
+    "entry_numbers": {
+      "type": "array",
+      "items": { "type": "integer", "minimum": 1 }
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": { "type": "string", "enum": ["source_text", "name", "grammar", "reference", "continuation", "other"] },
+          "arabic_span": { "type": "string" },
+          "explanation": { "type": "string", "minLength": 1 },
+          "witness_check_recommended": { "type": "boolean" }
+        },
+        "required": ["category", "arabic_span", "explanation", "witness_check_recommended"],
+        "additionalProperties": false
+      }
+    },
+    "fidelity": {
+      "type": "object",
+      "properties": {
+        "all_source_content_translated": { "type": "boolean" },
+        "headings_preserved": { "type": "boolean" },
+        "entry_numbers_preserved": { "type": "boolean" },
+        "footnotes_preserved": { "type": "boolean" },
+        "continuation_state": { "type": "string", "enum": ["self_contained", "continues_from_previous", "continues_to_next", "continues_both"] }
+      },
+      "required": ["all_source_content_translated", "headings_preserved", "entry_numbers_preserved", "footnotes_preserved", "continuation_state"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["scan_page", "english_text", "names", "entry_numbers", "uncertainties", "fidelity"],
+  "additionalProperties": false
+}

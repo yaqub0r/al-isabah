@@ -1,0 +1,152 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011662",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11662,
+  "title": {
+    "english": "Qurayba bint al-Harith al-'Atwariyya (2)",
+    "arabic_observed": "قريبة بنت الحارث العتوارية «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011662-segment-0001",
+      "volume": 8,
+      "scan_page": 293,
+      "printed_page": 292,
+      "reader_page": 4205,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4205",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0293:604699d88aa941ad",
+      "arabic": "١١٦٦٢- قريبة بنت الحارث العتوارية «٢»\n: أخرج حديثها ابن مندة من طريق حفص بن عمر، عن بكار بن عبد العزيز، عن موسى بن عبيدة، حدثنا يزيد بن عبد الرحمن، عن أمه حجة بنت قرط «٣»، عن أمها عقيلة بنت عبيد بن الحارث، قال: جئت أنا وأمي قريبة بنت الحارث العتوارية، كذا عنده،\n(١) في أ: معدي الكندية.\n(٢) أسد الغابة ت (٧٢٢٣) .\n(٣) في أ: بنت قريط.",
+      "english": "11662 — Qurayba bint al-Harith al-'Atwariyya (2)\n\nIbn Manda transmitted her hadith through Hafs ibn Umar, from Bakkar ibn Abd al-Aziz, from Musa ibn Ubayda, who said: Yazid ibn Abd al-Rahman narrated to us, from his mother Hujja bint Qurt (3), from her mother Aqila bint Ubayd ibn al-Harith, who said: “My mother, Qurayba bint al-Harith al-'Atwariyya, and I came”—thus it appears in his version—\n\n(1) In A: “Ma'di al-Kindiyya.”\n\n(2) Usd al-Ghaba, entry 7223.\n\n(3) In A: “bint Qurayt.”",
+      "arabic_sha256": "2c1914298bc8e7383a57e18dade616d72d66853b2f80fe00104ce8ad9458c0e4",
+      "english_sha256": "60503c4c9313e1b0544b4be581f519739a37897708bcf49dc2523c5d7e7d513d",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011662-segment-0002",
+      "volume": 8,
+      "scan_page": 294,
+      "printed_page": 293,
+      "reader_page": 4206,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4206",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0294:d8f3777ebd93ed59",
+      "arabic": "والصواب قريرة براء بدل الموحدة، كما تقدم في عقيلة في حرف العين.\nقال أبو نعيم: ترجم ابن مندة قريبة وساق الحديث، فقال في روايته: قريرة، وكذا ساقه الطّبرانيّ وغيره.\nقلت: هو الصواب.\nحرف الكاف\nالقسم الأول",
+      "english": "The correct form is Qurayra, with ra in place of the single-dotted ba, as was previously stated under Uqayla in the letter Ayn.\n\nAbu Nu'aym said: Ibn Manda gave the heading as Qariba and cited the hadith, but in his narration he said Qurayra. al-Tabarani and others likewise transmitted it in that form.\n\nI say: That is the correct form.\n\nLETTER KAF\n\nSECTION ONE",
+      "arabic_sha256": "420b5f64d7c32705241256750fb4793e669bbca41ff94a82bae930e1fc60852d",
+      "english_sha256": "f86198f464e8b5fb95d2bdd1af6b02b5b768f5490890df66a3b11a5184c5bd53",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الكندية",
+      "english": "Kinda",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريبة بنت الحارث العتوارية",
+      "english": "Qurayba bint al-Harith al-'Atwariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفص بن عمر",
+      "english": "Hafs ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "بكار بن عبد العزيز",
+      "english": "Bakkar ibn Abd al-Aziz",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن عبيدة",
+      "english": "Musa ibn Ubayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن عبد الرحمن",
+      "english": "Yazid ibn Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجة بنت قرط",
+      "english": "Hujja bint Qurt",
+      "kind": "person"
+    },
+    {
+      "arabic": "عقيلة بنت عبيد بن الحارث",
+      "english": "Aqila bint Ubayd ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "معدي الكندية",
+      "english": "Ma'di al-Kindiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "بنت قريط",
+      "english": "Hujja bint Qurayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريرة",
+      "english": "Qurayra bint al-Harith al-Atwariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريبة",
+      "english": "Qurayra bint al-Harith al-Atwariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عقيلة",
+      "english": "Uqayla bint Ubayd ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطّبرانيّ",
+      "english": "al-Tabarani",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "حجة بنت قرط؛ وفي أ: بنت قريط",
+      "explanation": "The canonical unvocalized form is rendered provisionally as Hujja bint Qurt. Manuscript A gives Qurayt, while the collateral Usd al-Ghaba chain gives Qurayz; the supplied evidence does not securely establish the name's vocalization or a single patronymic form.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0293:604699d88aa941ad"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

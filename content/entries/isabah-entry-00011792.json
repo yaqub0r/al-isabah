@@ -1,0 +1,39 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011792",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11792,
+  "title": {
+    "english": "Maryam bint Iyas",
+    "arabic_observed": "مريم بنت إياس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011792-segment-0001",
+      "volume": 8,
+      "scan_page": 330,
+      "printed_page": 329,
+      "reader_page": 4242,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4242",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0330:e18c1c91893cad39",
+      "arabic": "١١٧٩٢- مريم بنت إياس\nبن البكير الليثية.\nلها رؤية. تقدمت في القسم الأوّل.\nالقسم الثالث",
+      "english": "11792—Maryam bint Iyas\nibn al-Bukayr al-Laythiyya.\n\nShe saw the Prophet. She was mentioned above in Section One.\n\nSECTION THREE",
+      "arabic_sha256": "f01b4bc261cd82d9d2708ee7a9e91eec9033ea8bd59d77b56d27fce9ade2d2df",
+      "english_sha256": "cbbea61cda4e4b53fb137b78deb592eb4c9f4cdc45aa1ddd09220242adb7f83c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011095",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11095,
+  "title": {
+    "english": "Kharqa (2)",
+    "arabic_observed": "خرقاء «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011095-segment-0001",
+      "volume": 8,
+      "scan_page": 105,
+      "printed_page": 104,
+      "reader_page": 4017,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4017",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0105:5cd85408b4aa9b5e",
+      "arabic": "١١٠٩٥- خرقاء «٢»\n: المرأة السوداء التي كانت تقمّ المسجد النبوي.\nلها ذكر من رواية حماد بن زيد، عن ثابت، عن أنس. هكذا أوردها ابن مندة، وتبعه أبو نعيم.",
+      "english": "11095—Kharqa (2)\n\nThe black woman who used to clean the Prophet's Mosque.\n\nShe is mentioned in a report transmitted by Hammad ibn Zayd, from Thabit, from Anas. This is how Ibn Manda listed her, and Abu Nu'aym followed him.",
+      "arabic_sha256": "7e7b24d1169ca3d92e924c92d89ca52b76b8411bcd1c5752b9081f598e102b28",
+      "english_sha256": "4e657206e709d070915ad80e8cf8ada001706266fb770a5a37a1143eb8c87d76",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خرقاء",
+      "english": "Kharqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسجد النبوي",
+      "english": "Prophet's Mosque",
+      "kind": "place"
+    },
+    {
+      "arabic": "حماد بن زيد",
+      "english": "Hammad ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت",
+      "english": "Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس",
+      "english": "Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

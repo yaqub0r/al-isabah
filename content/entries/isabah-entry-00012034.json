@@ -1,0 +1,89 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012034",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12034,
+  "title": {
+    "english": "Umm Zayd bint al-Sakan⁵",
+    "arabic_observed": "أم زيد بنت السّكن «٥»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012034-segment-0001",
+      "volume": 8,
+      "scan_page": 397,
+      "printed_page": 396,
+      "reader_page": 4309,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4309",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0397:1fb4e005242ff4b0",
+      "arabic": "١٢٠٣٤- أم زيد بنت السّكن «٥»\nبن عتبة بن عمرو بن خديج بن عامر بن جشم الأنصاريّة ثم الجشميّة، ذكرها ابن سعد، وابن حبيب في المبايعات. وقال ابن سعد:\n(١) أسد الغابة ت (٧٤٥٢) .\n(٢) سقط من أ.\n(٣) بقي بن مخلد ٥٤٥، أسد الغابة ت (٧٤٥٣) .\n(٤) أسد الغابة ت (٧٤٥٤) .\n(٥) أسد الغابة ت (٧٤٥٥) .",
+      "english": "12034—Umm Zayd bint al-Sakan⁵\n\nibn Utba ibn Amr ibn Khudayj ibn Amir ibn Jusham, the Ansari woman, specifically of Jusham. Ibn Sa'd and Ibn Habib mentioned her among the women who pledged allegiance. Ibn Sa'd said:\n\n¹ Usd al-Ghaba, entry 7452.\n\n² Omitted from manuscript A.\n\n³ Baqi ibn Makhlad, no. 545; Usd al-Ghaba, entry 7453.\n\n⁴ Usd al-Ghaba, entry 7454.\n\n⁵ Usd al-Ghaba, entry 7455.",
+      "arabic_sha256": "dccfafa175db31aec4e3979c99dd6569cdf9e5b19e9b9fb61ee36bcd4b930c76",
+      "english_sha256": "2648a696bb4710f11f28e5c8cef6779f1cbf7c150d1d09b3fe4fd6c088a90808",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012034-segment-0002",
+      "volume": 8,
+      "scan_page": 398,
+      "printed_page": 397,
+      "reader_page": 4310,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4310",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0398:da3d53c4bd2962ed",
+      "arabic": "تزوجها سراقة بن كعب بن عبد العزى بن غزيّة، فولدت له زيدا، وأسلمت وبايعت.",
+      "english": "Suraqa ibn Ka'b ibn 'Abd al-'Uzza ibn Ghaziyya married her, and she bore him Zayd. She embraced Islam and pledged allegiance.",
+      "arabic_sha256": "bf7ac75a02af04bbc67c7a81e2333cba048d305c0651693cfaa6e9f089b4332e",
+      "english_sha256": "2c32ec7af26ae6c7be612f72365e8e85768d47bb2b02d152a0bc6ee35515783b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "جشم",
+      "english": "Jusham",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "سراقة بن كعب بن عبد العزى بن غزيّة",
+      "english": "Suraqa ibn Ka'b ibn 'Abd al-'Uzza ibn Ghaziyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد",
+      "english": "Zayd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

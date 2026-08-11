@@ -1,0 +1,104 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011945",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11945,
+  "title": {
+    "english": "Umm Jundab al-Azdiyya. (2)",
+    "arabic_observed": "أم جندب الأزديّة «٢» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011945-segment-0001",
+      "volume": 8,
+      "scan_page": 371,
+      "printed_page": 370,
+      "reader_page": 4283,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4283",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0371:a9bd57645d099a96",
+      "arabic": "١١٩٤٥- أم جندب الأزديّة «٢» .\n(١) أسد الغابة ت (٧٣٩٨) .\n(٢) أسد الغابة ت (٧٣٩٧)، الاستيعاب ت (٣٥٨٧) .",
+      "english": "11945—Umm Jundab al-Azdiyya. (2)\n\n(1) Usd al-Ghaba, entry 7398.\n\n(2) Usd al-Ghaba, entry 7397; al-Isti'ab, entry 3587.",
+      "arabic_sha256": "a479ca6c1b55af76bb747ed8e01e1d5d540d9961b429cce8e6251b1f78911982",
+      "english_sha256": "ae996dce923da3e68bae4ca31b9c358a75d7bfaec2bf4042a8f40756641f5fc0",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011945-segment-0002",
+      "volume": 8,
+      "scan_page": 372,
+      "printed_page": 371,
+      "reader_page": 4284,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4284",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0372:8a9a0ef6b271463f",
+      "arabic": "تقدّمت في والدة سليمان، وأن أبا نعيم غاير بينهما، والصّواب أنهما واحدة، وبه جزم أبو عمر.\nحرف الحاء المهملة\nالقسم الأول",
+      "english": "She was discussed above under the mother of Sulayman. Abu Nu'aym treated the two as different women, but the correct view is that they are one and the same; Abu Umar stated this categorically.\n\nTHE UNPOINTED LETTER HA\n\nSECTION ONE",
+      "arabic_sha256": "67380a358785b306977cb112b5e78b33c6c009555b19fffa8a73bd200803ad32",
+      "english_sha256": "1e039ab0f34322324ae67c6aea838ae0653fe22bc83537f43cf080bb6a444e70",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم جندب",
+      "english": "Umm Jundab al-Azdiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "جندب",
+      "english": "Jundab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جندب والدة سليمان",
+      "english": "Umm Jundab al-Azdiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جندب الأزديّة",
+      "english": "Umm Jundab al-Azdiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جندب والدة أبي ذرّ",
+      "english": "Umm Jundab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "سليمان",
+      "english": "Sulayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

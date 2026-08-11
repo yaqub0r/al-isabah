@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011876",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11876,
+  "title": {
+    "english": "Hind bint Ziyad:",
+    "arabic_observed": "هند بنت زياد:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011876-segment-0001",
+      "volume": 8,
+      "scan_page": 351,
+      "printed_page": 350,
+      "reader_page": 4263,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4263",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0351:c9348d2f07f14bbf",
+      "arabic": "١١٨٧٦- هند بنت زياد:\nزوج سهل بن سعد. تقدّمت في الأول.\nالقسم الثالث",
+      "english": "11876—Hind bint Ziyad:\n\nThe wife of Sahl ibn Sad. She appeared previously in the First Section.\n\nThird Section",
+      "arabic_sha256": "e8c56bf32eddce665bb2804d5ab2efb171eed73a4ff0e6a29b7418aceccbacf5",
+      "english_sha256": "821d91918e1f857c13a8601b9f23a5590733915b9cd56d379652995766bfe769",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "هند",
+      "english": "Hind",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند بنت زياد",
+      "english": "Hind bint Ziyad",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهل بن سعد",
+      "english": "Sahl ibn Sad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

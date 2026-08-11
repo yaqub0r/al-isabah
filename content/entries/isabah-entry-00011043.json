@@ -1,0 +1,94 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011043",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11043,
+  "title": {
+    "english": "Habiba bint Mulayl [5]",
+    "arabic_observed": "حبيبة بنت مليل «٥»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011043-segment-0001",
+      "volume": 8,
+      "scan_page": 84,
+      "printed_page": 83,
+      "reader_page": 3996,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3996",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0084:085dc29367a2b72c",
+      "arabic": "١١٠٤٣- حبيبة بنت مليل «٥»\n، بلامين مصغرا، ابن وبرة بن خالد بن العجلان، من بني عوف بن الحارث بن الخزرج الأنصارية.\n(١) أسد الغابة ت ٦٨٣٩.\n(٢) أسد الغابة ت ٦٨٤٠.\n(٣) أسد الغابة ت ٦٨٤١.\n(٤) أسد الغابة ت ٦٨٤٢.\n(٥) أسد الغابة ت ٦٨٤٣.",
+      "english": "11043—Habiba bint Mulayl [5]\n—with two lams, in the diminutive form—ibn Wabara ibn Khalid ibn al-Ajlan, an Ansari woman of the Banu Awf ibn al-Harith ibn al-Khazraj.\n\n[1] Usd al-Ghaba, entry 6839.\n[2] Usd al-Ghaba, entry 6840.\n[3] Usd al-Ghaba, entry 6841.\n[4] Usd al-Ghaba, entry 6842.\n[5] Usd al-Ghaba, entry 6843.",
+      "arabic_sha256": "8c3e97d94451853f7b07ab9471f0d665e377c1444a4057931ec0cf38f5353e0d",
+      "english_sha256": "795cf047f857fff5cf885c9b3f2405191298e4c6f93245e392b4d4e5fb89bd41",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011043-segment-0002",
+      "volume": 8,
+      "scan_page": 85,
+      "printed_page": 84,
+      "reader_page": 3997,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3997",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0085:f06f6b3846d86122",
+      "arabic": "بايعت النبيّ ﷺ، وتزوجها فروة بن عمرو بن ورقة بن عبيد بن عامر بن بياضة، فولدت له عبد الرحمن بن فروة. أسنده ابن مندة عن ابن سعد أيضا.",
+      "english": "She pledged allegiance to the Prophet (may Allah bless him and grant him peace). Farwa ibn Amr ibn Waraqa ibn Ubayd ibn Amir ibn Bayada married her, and she bore him Abd al-Rahman ibn Farwa. Ibn Manda also transmitted this with an isnad from Ibn Sa'd.",
+      "arabic_sha256": "6e3d5290501582a0701be2706522cac3dcca1bf4f9877e011fb8eda6b8595622",
+      "english_sha256": "719303182cb4cf88c263e93f480e8f96bee25f220eb0cdede01a32256025fd8a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عليّا",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو عوف بن الحارث بن الخزرج",
+      "english": "Banu Awf ibn al-Harith ibn al-Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "فروة بن عمرو بن ورقة بن عبيد بن عامر بن بياضة",
+      "english": "Farwa ibn Amr ibn Waraqa ibn Ubayd ibn Amir ibn Bayada",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن فروة",
+      "english": "Abd al-Rahman ibn Farwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

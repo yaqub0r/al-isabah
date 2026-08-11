@@ -1,0 +1,143 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011896",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11896,
+  "title": {
+    "english": "Umm Anas, wife of Abu Anas (2)",
+    "arabic_observed": "أم أنس زوج أبي أنس «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011896-segment-0001",
+      "volume": 8,
+      "scan_page": 358,
+      "printed_page": 357,
+      "reader_page": 4270,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4270",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0358:1ed72c77eac0f3b1",
+      "arabic": "١١٨٩٦- أم أنس زوج أبي أنس «٢»\n: ووالدة عمران بن أبي أنس.\nأخرج الطّبرانيّ من طريق محمد بن إسماعيل الأنصاريّ، عن موسى بن عمران بن أبي أنس، عن جدّته أم أنس- أنها قالت: أتيت رسول اللَّه ﵌ فقلت:\nجعلك اللَّه في الرفيق الأعلى من الجنّة وأنا معك. قال: «أقيمي الصّلاة، فإنّها أفضل الجهاد، واهجري المعاصي فإنّها أفضل الهجرة، واذكري اللَّه كثيرا، فإنّه أحبّ الأعمال إلى اللَّه» «٣» .\nوأخرجه الطّبرانيّ أيضا من طريق إسحاق بن إبراهيم بن نسطاس، حدّثني مربع، عن أم أنس- أنها قالت: يا رسول اللَّه، أوصني، فقال: «اهجريّ المعاصي، فإنّها أفضل الهجرة ...» الحديث.\nوفيه: «اذكري اللَّه كثيرا، فإنّك لا تأتين اللَّه بشيء أحبّ إليه من كثرة ذكر اللَّه» «٤» .\nقال أبو موسى: أورد الطّبرانيّ الأول ترجمة مستقلة، وأورد الثّاني في ترجمة أم سليم والدة أنس بن مالك، وكأن هذه ثالثة، كذا قال.\nوليس بظاهر، بل الظّاهر أنهما واحدة غير أم سليم. وقد أفردها أبو عمر عن أم سليم، ولكنه قال: جدّة يونس بن عثمان، وكذا قال البخاريّ في التّاريخ يونس بن عمران بن أبي أنس، عن جدّته، فذكر الحديث باللفظ الأول.",
+      "english": "11896—Umm Anas, wife of Abu Anas (2)\n\nShe was also the mother of Imran ibn Abi Anas.\n\nal-Tabarani transmitted, through Muhammad ibn Isma'il al-Ansari, from Musa ibn Imran ibn Abi Anas, from his grandmother Umm Anas, that she said: I came to the Messenger of Allah, may Allah bless him and grant him peace, and said, “May Allah place you in the Highest Company in Paradise, and me with you.” He said: “Perform the prayer, for it is the best jihad; forsake acts of disobedience, for that is the best emigration; and remember Allah often, for it is the most beloved of deeds to Allah.” (3)\n\nal-Tabarani also transmitted it through Ishaq ibn Ibrahim ibn Nastas: Murabba' related to me, from Umm Anas, that she said: “O Messenger of Allah, advise me.” He said: “Forsake acts of disobedience, for that is the best emigration…”—the hadith.\n\nIt also contains: “Remember Allah often, for you will bring nothing to Allah more beloved to Him than abundant remembrance of Allah.” (4)\n\nAbu Musa said: “al-Tabarani set out the first in a separate biographical entry and set out the second in the entry for Umm Sulaym, the mother of Anas ibn Malik. It is as though this were a third woman.” That is what he said.\n\nThat is not apparent. Rather, it appears that the two are one and the same woman, distinct from Umm Sulaym. Abu Umar also treated her separately from Umm Sulaym, but he said: “The grandmother of Yunus ibn Uthman.” Likewise, al-Bukhari said in al-Tarikh: “Yunus ibn Imran ibn Abi Anas, from his grandmother,” and cited the hadith in the wording of the first report.",
+      "arabic_sha256": "eb47a4120be3fc8bd5a3b4baa234e41d67e8b6bcace3f0c3280eaa50947397b4",
+      "english_sha256": "21ccd02abe6f795ce8018e320bc7c82bcb66140a772ad97fc0cb86c701faee8d",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم أنس زوج أبي أنس",
+      "english": "Umm Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أنس",
+      "english": "Abu Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمران بن أبي أنس",
+      "english": "Imran ibn Abi Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إسماعيل الأنصاري",
+      "english": "Muhammad ibn Isma'il al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن عمران بن أبي أنس",
+      "english": "Musa ibn Imran ibn Abi Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجنة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "إسحاق بن إبراهيم بن نسطاس",
+      "english": "Ishaq ibn Ibrahim ibn Nastas",
+      "kind": "person"
+    },
+    {
+      "arabic": "مربع",
+      "english": "Murabba'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سليم",
+      "english": "Umm Sulaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس بن مالك",
+      "english": "Anas ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن عثمان",
+      "english": "Yunus ibn Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "التاريخ",
+      "english": "al-Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "يونس بن عمران بن أبي أنس",
+      "english": "Yunus ibn Imran ibn Abi Anas",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "مربع",
+      "explanation": "The consonantal text does not determine the vowels. The supplied parallel also lacks vocalization, so Murabba' is retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0358:1ed72c77eac0f3b1"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

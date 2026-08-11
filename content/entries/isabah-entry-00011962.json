@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011962",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11962,
+  "title": {
+    "english": "Umm Habib bint al-Awwam ibn Khuwaylid:",
+    "arabic_observed": "أم حبيب بنت العوام"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011962-segment-0001",
+      "volume": 8,
+      "scan_page": 374,
+      "printed_page": 373,
+      "reader_page": 4286,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4286",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0374:53e4c1d40f514866",
+      "arabic": "١١٩٦٢- أم حبيب بنت العوام\nبن خويلد القرشية الأسدية، أخت الزبير.\nذكرها الزّبير بن بكّار، وقال. كانت زوج خالد بن حزام أخي حكيم بن حزام، فولدت له أم الحسن، ومات خالد بن حزام راجعا من هجرة الحبشة الأولى إلى مكة كما تقدم في ترجمته.",
+      "english": "11962—Umm Habib bint al-Awwam ibn Khuwaylid:\nThe Qurashi woman of Banu Asad and sister of al-Zubayr.\n\nAl-Zubayr ibn Bakkar mentioned her and said: She was the wife of Khalid ibn Hizam, the brother of Hakim ibn Hizam, and bore him Umm al-Hasan. Khalid ibn Hizam died while returning to Mecca from the first migration to Abyssinia, as was previously stated in his biographical notice.",
+      "arabic_sha256": "e0f3b7cb15ad94cbb9160f1668297c2daf1afb6dbc49c1e275d6f1e6f4d63024",
+      "english_sha256": "879cf252841c0a906691f6efef012a8e5c326248ae1729d31467ac11bf7ef405",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "أم حبيب بنت العوام بن خويلد",
+      "english": "Umm Habib bint al-Awwam ibn Khuwaylid",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأسدية",
+      "english": "Banu Asad",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد بن حزام",
+      "english": "Khalid ibn Hizam",
+      "kind": "person"
+    },
+    {
+      "arabic": "حكيم بن حزام",
+      "english": "Hakim ibn Hizam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الحسن",
+      "english": "Umm al-Hasan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "أم حبيب مولاة أم عطية",
+      "english": "Umm Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

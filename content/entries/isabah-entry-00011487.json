@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011487",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11487,
+  "title": {
+    "english": "'Aqrab bint Salama ibn Waqsh¹",
+    "arabic_observed": "عقرب بنت سلامة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011487-segment-0001",
+      "volume": 8,
+      "scan_page": 242,
+      "printed_page": 241,
+      "reader_page": 4154,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4154",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0242:4f57ec91d828e113",
+      "arabic": "١١٤٨٧- عقرب بنت سلامة\nبن وقش «١»، ذكرها ابن سعد في المبايعات، وقال:\nأمها سهيمة بنت عبد اللَّه الواقفية، وتزوجت رافع بن يزيد الأشهليّ، فولدت له أسيدا.",
+      "english": "11487 — 'Aqrab bint Salama ibn Waqsh¹\n\nIbn Sa'd mentioned her among the women who pledged allegiance and said:\n\nHer mother was Suhayma bint 'Abd Allah al-Waqifiyya. She married Rafi' ibn Yazid al-Ashhali and bore him Usayd.",
+      "arabic_sha256": "238b62cfecac1e5847f7453688858d11fcb48b7592b587373f23c07b6f5c40f9",
+      "english_sha256": "a788584e9e55399c9e0c25ffb8d52fc5c53ddde6bc3b35ce879f48a4d9794f88",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عقرب بنت سلامة بن وقش",
+      "english": "'Aqrab bint Salama ibn Waqsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهيمة بنت عبد اللَّه الواقفية",
+      "english": "Suhayma bint 'Abd Allah al-Waqifiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "رافع بن يزيد الأشهلي",
+      "english": "Rafi' ibn Yazid al-Ashhali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسيد",
+      "english": "Usayd ibn Rafi' ibn Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "رافع",
+      "english": "Rafi' ibn Yazid ibn Kurz",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

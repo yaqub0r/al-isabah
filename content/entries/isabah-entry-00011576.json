@@ -1,0 +1,115 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011576",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11576,
+  "title": {
+    "english": "Fakhita bint al-Walid ibn al-Mughira al-Makhzumiyya (4)",
+    "arabic_observed": "فاختة بنت الوليد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011576-segment-0001",
+      "volume": 8,
+      "scan_page": 258,
+      "printed_page": 257,
+      "reader_page": 4170,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4170",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0258:5194b9842196d8a0",
+      "arabic": "١١٥٧٦- فاختة بنت الوليد\nبن المغيرة المخزوميّة «٤»، أخت خالد بن الوليد.\nتقدم نسبها في ترجمته، وكانت زوج صفوان بن أمية. أسلمت يوم الفتح، وبايعت.\n[قال أبو عمر: أسلمت] «٥» قبل إسلام زوجها بشهر، قاله داود بن الحصين. وقال ابن مندة:\nلها ذكر، وليس لها حديث.\nوأخرج أبو نعيم، من طريق إبراهيم بن سعد، عن ابن إسحاق، عن عبد العزيز بن عبد الرّحمن الإمامي، عن الزّهري، قال: كانت فاختة بنت الوليد عند صفوان بن أمية، وأم حكيم بنت الحارث عند عكرمة، فأسلمتا يوم الفتح.",
+      "english": "11576—Fakhita bint al-Walid ibn al-Mughira al-Makhzumiyya (4)\n\nThe sister of Khalid ibn al-Walid.\n\nHer lineage was given previously in his entry, and she was the wife of Safwan ibn Umayya. She embraced Islam on the Day of the Conquest and gave the pledge of allegiance.\n\n[Abu Umar said: She embraced Islam] (5) one month before her husband embraced Islam, according to Dawud ibn al-Husayn. Ibn Manda said: “She is mentioned, but no hadith is related by her.”\n\nAbu Nu'aym transmitted, through Ibrahim ibn Sa'd, from Ibn Ishaq, from Abd al-Aziz ibn Abd al-Rahman al-Imami, from al-Zuhri, who said: “Fakhita bint al-Walid was married to Safwan ibn Umayya, and Umm Hakim bint al-Harith was married to Ikrima. The two women embraced Islam on the Day of the Conquest.”",
+      "arabic_sha256": "726115c6d0e726add2a2687b64aa62de31447cc4fe0a3d6161ebc21af5945604",
+      "english_sha256": "258ed6c9ccf5420625b16d6746d3ba3a7672482675d82929c87a1362a4186742",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاختة بنت الوليد بن المغيرة المخزومية",
+      "english": "Fakhita bint al-Walid ibn al-Mughira al-Makhzumiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد بن الوليد",
+      "english": "Khalid ibn al-Walid",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفوان بن أمية",
+      "english": "Safwan ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "داود بن الحصين",
+      "english": "Dawud ibn al-Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن سعد",
+      "english": "Ibrahim ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد العزيز بن عبد الرحمن الإمامي",
+      "english": "Abd al-Aziz ibn Abd al-Rahman al-Imami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم بنت الحارث",
+      "english": "Umm Hakim bint al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "عكرمة",
+      "english": "Ikrima",
+      "kind": "person"
+    },
+    {
+      "arabic": "المخزوميّة",
+      "english": "Banu Makhzum",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

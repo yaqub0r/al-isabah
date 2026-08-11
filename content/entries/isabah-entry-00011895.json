@@ -1,0 +1,144 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011895",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11895,
+  "title": {
+    "english": "Umm Anas bint al-Bara'⁶ ibn Ma'rur",
+    "arabic_observed": "أم أنس بنت البراء «٦»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011895-segment-0001",
+      "volume": 8,
+      "scan_page": 357,
+      "printed_page": 356,
+      "reader_page": 4269,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4269",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0357:3baf653154db3ecb",
+      "arabic": "١١٨٩٥- أم أنس بنت البراء «٦»\nابن معرور.\nروى حديثها عبد اللَّه بن أبي نجيح، عن مجاهد، عنها، قالت: سمعت رسول اللَّه ﵌ يقول: «ألا أنبّئكم بخير النّاس؟» قلنا: بلى. قال: «رجل- وأشار\n(١) أسد الغابة ت (٧٣٦٣)، تجريد أسماء الصحابة ٢/ ٣١٢. الثقات ٣/ ٤٥٩، الاستيعاب ت (٣٥٧٦) .\n(٢) أعرس الرجل فهو معرس إذا دخل بامرأته عند بنائها النهاية ٣/ ٢٠٦.\n(٣) هو إناء من صفر أو حجارة كالإجّانة وقد يتوضأ منه. النهاية ١/ ١٩٩.\n(٤) أسد الغابة ت (٧٣٦٦)، الاستيعاب ت (٣٥٧٧)، تجريد أسماء الصحابة ٢/ ٣١٢، تلقيح فهوم أهل الأثر ٣٨٧، بقي بن مخلد ٩٩٩.\n(٥) في هـ- عتبة.\n(٦) أعلام النساء ١/ ١١٢، تجريد أسماء الصحابة ٢/ ٣١٢، أسد الغابة ت (٧٣٦٧) .",
+      "english": "11895 — Umm Anas bint al-Bara'⁶ ibn Ma'rur\n\n'Abd Allah ibn Abi Najih narrated her hadith from Mujahid, from her. She said: I heard the Messenger of Allah, may Allah bless him and grant him peace, say: “Shall I not inform you of the best of people?” We said, “Yes indeed.” He said: “A man”—and he gestured—\n\n(1) Usd al-Ghaba, entry 7363; al-Tajrid 2/312; al-Thiqat 3/459; al-Isti'ab, entry 3576.\n\n(2) A man is said to have a'rasa, and thus to be a mu'ris, when he goes in to his wife at the consummation of the marriage. al-Nihaya 3/206.\n\n(3) It is a vessel made of brass or stone, like a large basin, and it may be used for ablution. al-Nihaya 1/199.\n\n(4) Usd al-Ghaba, entry 7366; al-Isti'ab, entry 3577; al-Tajrid 2/312; Talqih Fuhum Ahl al-Athar, 387; Baqi ibn Makhlad, 999.\n\n(5) In manuscript H: 'Utba.\n\n(6) A'lam al-Nisa' 1/112; al-Tajrid 2/312; Usd al-Ghaba, entry 7367.",
+      "arabic_sha256": "db5abdd68952f5df6ccc120717632328852334574a385328d3a6ed6d638d4ed0",
+      "english_sha256": "1782d23d470c76cd639a6a4dc7e67e24312aff1ea6204972b5e87f80b7abf67f",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011895-segment-0002",
+      "volume": 8,
+      "scan_page": 358,
+      "printed_page": 357,
+      "reader_page": 4270,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4270",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0358:1ed72c77eac0f3b1",
+      "arabic": "بيده إلى المغرب- أخذ بعنان فرسه في سبيل اللَّه»، ثمّ ذكر الّذي يليه في غنيمة يقيم الصّلاة، ويؤتي الزّكاة، قد اعتزل شرور النّاس»» .\nأخرجه ابن مندة، من طريق جرير بن حازم، عن ابن إسحاق، عن ابن أبي نجيح،\nوخالفه محمد بن سلمة عن ابن إسحاق، فقال: عن أم بشر، ذكره أبو نعيم.",
+      "english": "“…a man”—and he pointed with his hand toward the west—“who has taken hold of his horse's reins in the path of Allah.” Then he mentioned the one next after him: “A man with a small flock, who performs the prayer and gives zakat, having withdrawn from the evils of people.”\n\nIbn Mandah transmitted it through Jarir ibn Hazim, from Ibn Ishaq, from Ibn Abi Najih. Muhammad ibn Salama differed with him in transmitting it from Ibn Ishaq, saying: “From Umm Bishr.” Abu Nu'aym mentioned this.",
+      "arabic_sha256": "63284abf7442c1c1668ca5b5469390316996512a5d0f1d402fa4b7b9af2288c1",
+      "english_sha256": "ad9239a8759aa15f453b21447276063d8c5279d57f22094554112678040a58c9",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عبد اللَّه بن أبي نجيح",
+      "english": "'Abd Allah ibn Abi Najih",
+      "kind": "person"
+    },
+    {
+      "arabic": "مجاهد",
+      "english": "Mujahid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عتبة",
+      "english": "'Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "جرير بن حازم",
+      "english": "Jarir ibn Hazim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي نجيح",
+      "english": "Ibn Abi Najih",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن سلمة",
+      "english": "Muhammad ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

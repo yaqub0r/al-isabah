@@ -1,0 +1,204 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011588",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11588,
+  "title": {
+    "english": "FATIMA BINT ASAD IBN HASHIM¹",
+    "arabic_observed": "فاطمة بنت أسد بن هاشم «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011588-segment-0001",
+      "volume": 8,
+      "scan_page": 269,
+      "printed_page": 268,
+      "reader_page": 4181,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4181",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0269:eba22a100055146e",
+      "arabic": "١١٥٨٨- فاطمة بنت أسد بن هاشم «١»\nبن عبد مناف الهاشمية، والد علي وإخوته.\n(١) أسد الغابة ت (٧١٧٦)، الاستيعاب ت (٣٥٠٠)، أعلام النساء ج ٣/ ٣٣، الثقات ج ٣/ ٣٣٦، تجريد أسماء الصحابة ج ٢/ ٢٩٣، تلقيح فهوم أهل الأثر ٣١٧، مقاتل الطالبيين ٧، ٨، ٩، ١٠، ٢٤.",
+      "english": "11588 — FATIMA BINT ASAD IBN HASHIM¹\n\nibn Abd Manaf, the Hashimite woman, mother of Ali and his brothers.\n\n[Editorial note: The supplied text has the masculine walid (“father”), a mechanical error for walidah (“mother”); the corresponding entries in Usd al-Ghaba and al-Isti'ab confirm the relationship.]\n\n¹ Usd al-Ghaba, entry 7176; al-Isti'ab, entry 3500; A'lam al-Nisa, vol. 3, p. 33; al-Thiqat, vol. 3, p. 336; al-Tajrid, vol. 2, p. 293; Talqih Fuhum Ahl al-Athar, p. 317; Maqatil al-Talibiyyin, pp. 7, 8, 9, 10, 24.",
+      "arabic_sha256": "2a1a26a507432f81412f1fa4cc4789acdd9e8d0e21e33467660b2336b1273f88",
+      "english_sha256": "d0cad806522048c65434b51ea97616502c197c04afb1da2a08006f0fc74dd6a5",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011588-segment-0002",
+      "volume": 8,
+      "scan_page": 270,
+      "printed_page": 269,
+      "reader_page": 4182,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4182",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0270:3aebcf01eb66b3db",
+      "arabic": "قيل: إنها توفّيت قبل الهجرة. والصحيح أنها هاجرت وماتت بالمدينة، وبه جزم الشعبي، قال: أسلمت وهاجرت وتوفيت بالمدينة.\nوأخرج ابن أبي عاصم، من طريق عبد اللَّه بن محمد بن عمر بن علي بن أبي طالب، عن أبيه- أن النبيّ ﵌ كفّن فاطمة بنت أسد في قميصه، وقال: لم نلق بعد أبي طالب أبرّ بي منها.\nوقال الأعمش، عن عمرو بن مرة، عن أبي البختري عن علي: قلت لأمي: اكفي فاطمة سقاية الماء والذهاب في الحاجة، وتكفيك الطحن والعجن.\nوقال الزّبير بن بكّار: هي أوّل هاشمية ولدت خليفة، ثم بعدها فاطمة الزهراء، وسيأتي لها ذكر في فاطمة بنت حمزة يدلّ على أنها ماتت بالمدينة.\nقال ابن سعد: كانت امرأة صالحة، وكان النبي ﵌ يزورها ويقيل في بيتها.",
+      "english": "It is said that she died before the Hijra. The correct view, however, is that she emigrated and died in Medina. al-Sha'bi stated this categorically, saying: “She embraced Islam, emigrated, and died in Medina.”\n\nIbn Abi 'Asim transmitted, through 'Abd Allah ibn Muhammad ibn 'Umar ibn 'Ali ibn Abi Talib, from his father, that the Prophet (may Allah bless him and grant him peace) shrouded Fatima bint Asad in his own shirt and said: “After Abu Talib, we have encountered no one more devoted in kindness to me than she was.”\n\nal-A'mash reported from 'Amr ibn Murra, from Abu al-Bakhtari, from 'Ali: “I said to my mother: ‘Relieve Fatima of drawing water and going out on errands, and she will relieve you of grinding and kneading.’”\n\nal-Zubayr ibn Bakkar said: “She was the first Hashimite woman to give birth to a caliph; after her came Fatima al-Zahra.” A mention of her will appear in the entry on Fatima bint Hamza that indicates that she died in Medina.\n\nIbn Sa'd said: “She was a righteous woman. The Prophet (may Allah bless him and grant him peace) used to visit her and take his midday rest in her house.”",
+      "arabic_sha256": "4a558ae396193b8360cb0c0bc523580e83fe263996394cf6dae1f074928aaebd",
+      "english_sha256": "5292b7e1550acfd52e61ce914e075a3d5d7e3fb5e3a24918d82b81ca0ba80150",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "علي",
+      "english": "Ali ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima bint Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد بن هاشم",
+      "english": "Asad ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد مناف",
+      "english": "Abd Manaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهاشمية",
+      "english": "Banu Hashim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "مقاتل الطالبيين",
+      "english": "Maqatil al-Talibiyyin",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهجرة",
+      "english": "Hijra",
+      "kind": "other"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "الشعبي",
+      "english": "al-Sha'bi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi 'Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن محمد بن عمر بن علي بن أبي طالب",
+      "english": "'Abd Allah ibn Muhammad ibn 'Umar ibn 'Ali ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت أسد",
+      "english": "Fatima bint Asad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو طالب",
+      "english": "Abu Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأعمش",
+      "english": "al-A'mash",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن مرة",
+      "english": "'Amr ibn Murra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو البختري",
+      "english": "Abu al-Bakhtari",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "'Ali ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "هاشمية",
+      "english": "Banu Hashim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "فاطمة الزهراء",
+      "english": "Fatima al-Zahra",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت حمزة",
+      "english": "Fatima bint Hamza",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

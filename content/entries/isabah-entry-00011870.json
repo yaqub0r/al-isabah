@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011870",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11870,
+  "title": {
+    "english": "Hind bint al-Walid ibn Utba",
+    "arabic_observed": "هند بنت الوليد بن عتبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011870-segment-0001",
+      "volume": 8,
+      "scan_page": 350,
+      "printed_page": 349,
+      "reader_page": 4262,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4262",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0350:56b402dc24293c55",
+      "arabic": "١١٨٧٠- هند بنت الوليد بن عتبة\nبن ربيعة بن عبد شمس «١» .\nيقال: تزوّجها سالم مولى عمّها أبي حذيفة، ووقع ذلك في سنن أبي داود، ومن طريق يونس، عن الزّهري: حدّثني عروة، عن عائشة وأم سلمة- أن أبا حذيفة تبنّى سالما، وأنكحه ابنة أخيه هند بنت الوليد بن عتبة. الحديث لقدامة بن مظعون، وللمهاجر بن أبي أميّة.",
+      "english": "11870—Hind bint al-Walid ibn Utba\nibn Rabi'a ibn Abd Shams.¹\n\nIt is said that Salim, the client of her paternal uncle Abu Hudhayfa, married her. This is recorded in Sunan Abi Dawud, through Yunus, from al-Zuhri, who said: “Urwa related to me, from Aisha and Umm Salama, that Abu Hudhayfa adopted Salim and gave him his brother's daughter, Hind bint al-Walid ibn Utba, in marriage”—and the hadith continues. She was also married to Qudama ibn Maz'un and al-Muhajir ibn Abi Umayya.",
+      "arabic_sha256": "ca5fac13a0298cf9b8a8dfc8416bf3339bae42f55d1e13bc5bfe43e3c5c75832",
+      "english_sha256": "1604474852c89d5aa241a1ac173bf1c14289e7850d57cdcf07b868d06a02e4ad",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سالم",
+      "english": "Salim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو حذيفة",
+      "english": "Abu Hudhayfa",
+      "kind": "person"
+    },
+    {
+      "arabic": "سنن أبي داود",
+      "english": "Sunan Abi Dawud",
+      "kind": "work"
+    },
+    {
+      "arabic": "يونس",
+      "english": "Yunus",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "قدامة بن مظعون",
+      "english": "Qudama ibn Maz'un",
+      "kind": "person"
+    },
+    {
+      "arabic": "المهاجر بن أبي أمية",
+      "english": "al-Muhajir ibn Abi Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند",
+      "english": "Hind al-Khawlaniyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

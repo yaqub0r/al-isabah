@@ -1,0 +1,164 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011084",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11084,
+  "title": {
+    "english": "Khalida bint Anas al-Ansariyya[3]",
+    "arabic_observed": "خالدة بنت أنس الأنصارية «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011084-segment-0001",
+      "volume": 8,
+      "scan_page": 98,
+      "printed_page": 97,
+      "reader_page": 4010,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4010",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0098:685ba1908556c487",
+      "arabic": "١١٠٨٤- خالدة بنت أنس الأنصارية «٣»\nالساعدية، أم بني حزم، حديثها في الرقية، قاله أبو عمر.\n(١) الثقات ٣/ ١١٦، أعلام النساء ١/ ٢٦٦، السمط الثمين ٨. تجريد أسماء الصحابة ٢/ ٢٦١.\n(٢) أخرجه ابن سعد في الطبقات ٨/ ١٨١ وأورده السيوطي في الدر المنثور ٢/ ١٥.\n(٣) أعلام النساء ١/ ٢٦١، بقي بن مخلد ٩٩٣.",
+      "english": "11084. Khalida bint Anas al-Ansariyya[3]\n\nShe was of Banu Sa'ida and was the mother of the Banu Hazm. Her hadith concerns a healing incantation, according to Abu Umar.\n\n[1] al-Thiqat, 3/116; A'lam al-Nisa', 1/266; al-Simt al-Thamin, 8; al-Tajrid, 2/261.\n\n[2] Transmitted by Ibn Sa'd in al-Tabaqat, 8/181, and cited by al-Suyuti in al-Durr al-Manthur, 2/15.\n\n[3] A'lam al-Nisa', 1/261; Baqi ibn Makhlad, 993.",
+      "arabic_sha256": "be852cd7c5c094b5408e0cd26243f245fad05570453105001b6ea23df444c7ed",
+      "english_sha256": "478518f3cf36f0c77ce95fab45b618ef05d493ea314d1642a0da89a6b58e729a",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011084-segment-0002",
+      "volume": 8,
+      "scan_page": 99,
+      "printed_page": 98,
+      "reader_page": 4011,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4011",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0099:b2d9662e59813bc9",
+      "arabic": "قلت: أخرج حديثها ابن أبي شيبة، عن ابن إدريس، عن محمد بن عمارة، عن أبي بكر بن محمد- يعني ابن عمرو بن حزم- أن خالدة بنت أنس أم بني حزم الساعدية جاءت إلى النبي ﷺ، فعرضت عليه الرقي، فأمرها بها.\nوأخرجه ابن ماجة عن أبي بكر، والطّبرانيّ وابن مندة من طريقه.",
+      "english": "I said: Ibn Abi Shayba transmitted her hadith from Ibn Idris, from Muhammad ibn Umara, from Abu Bakr ibn Muhammad—meaning Ibn Amr ibn Hazm—that Khalida bint Anas, the mother of Banu Hazm, of the Banu Sa'ida, came to the Prophet—may Allah bless him and grant him peace—and presented the incantations to him, whereupon he instructed her to use them.\n\nIbn Majah also transmitted it from Abu Bakr, while al-Tabarani and Ibn Manda transmitted it through his route.",
+      "arabic_sha256": "5c82e36f9c0ef1e5fecbd6fdb20dd84ec5269886aed45da1970b46769146ac89",
+      "english_sha256": "fd6907f39b824293b752085df08a5c228fb31ab38970a64adc5ada3b4566a6ee",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خالدة بنت أنس الأنصارية",
+      "english": "Khalida bint Anas al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الساعدية",
+      "english": "Banu Sa'ida",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني حزم",
+      "english": "Banu Hazm",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "السمط الثمين",
+      "english": "al-Simt al-Thamin",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبقات",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "السيوطي",
+      "english": "al-Suyuti",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدر المنثور",
+      "english": "al-Durr al-Manthur",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي شيبة",
+      "english": "Ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إدريس",
+      "english": "Ibn Idris",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمارة",
+      "english": "Muhammad ibn Umara",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالدة بنت أنس",
+      "english": "Khalida bint Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011452",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11452,
+  "title": {
+    "english": "Atika bint Zayd",
+    "arabic_observed": "عاتكة بنت زيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011452-segment-0001",
+      "volume": 8,
+      "scan_page": 228,
+      "printed_page": 227,
+      "reader_page": 4140,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4140",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0228:b2214ac9c9a4cb4b",
+      "arabic": "١١٤٥٢- عاتكة بنت زيد\nبن عمرو بن نفيل العدويّة «٢»، أخت سعيد بن زيد، أحد العشرة.\nتقدم نسبها في ترجمة والدها. وأمها أم كريز بنت عبد اللَّه بن عمار بن مالك الحضرميّة.\nأخرج أبو نعيم من حديث عائشة أنّ عاتكة كانت زوج عبد اللَّه بن أبي بكر الصّديق.\nوقال أبو عمر: كانت من المهاجرات، تزوجها عبد اللَّه بن أبي بكر الصّديق، وكانت حسناء جميلة فأولع بها، وشغلته عن مغازيه، فأمره أبوه بطلاقها فقال:\nيقولون طلّقها وخيّم مكانها ... مقيما تمنّي النّفس أحلام نائم\nوإنّ فراقي أهل بيت جمعتهم ... على كثرة منّي لإحدى العظائم «٣»\n[الطويل] ثم عزم عليه أبوه حتى طلقها، فتبعتها نفسه، فسمعه أبوه يوما يقول:\nولم أر مثلي طلّق اليوم مثلها ... ولا مثلها من غير جرم تطلّق «٤»\n[الطويل] فرقّ له أبوه، وأذن له فارتجعها ثم لما كان حصار الطّائف أصابه سهم، فكان فيه هلاكه، فمات بالمدينة، فرثته بأبيات منها:\n(١) أسد الغابة ت (٧٠٨٦)، الاستيعاب ت (٣٤٧٠) .\n(٢) أسد الغابة ت (٧٠٨٧)، الاستيعاب ت (٣٤٧١)، الثقات ٢/ ٣٢٤، أعلام النساء ٣/ ٢٠١، الدر المنثور. ٣٢٠، تجريد أسماء الصحابة ٢/ ٢٨٥، التاريخ الصغير ١/ ٣٧.\n(٣) تنظر الأبيات في أسد الغابة ترجمة رقم (٧٠٨٧)، الاستيعاب ترجمة رقم (٣٤٧١) .\n(٤) ينظر البيت في أسد الغابة ترجمة رقم (٧٠٨٧)، الاستيعاب ترجمة رقم (٣٤٧١) .",
+      "english": "11452. Atika bint Zayd\n\nibn Amr ibn Nufayl al-Adawiyya,(2) the sister of Said ibn Zayd, one of the Ten.\n\nHer lineage was given above in the entry on her father. Her mother was Umm Kurayz bint Abdullah ibn Ammar ibn Malik al-Hadramiyya.\n\nAbu Nuaym transmitted, from the hadith of Aisha, that Atika was the wife of Abdullah ibn Abi Bakr al-Siddiq.\n\nAbu Umar said: “She was one of the women Emigrants. Abdullah ibn Abi Bakr al-Siddiq married her. She was lovely and beautiful, and he became passionately attached to her, so that she distracted him from his military campaigns. His father ordered him to divorce her, and he said:\n\nThey say, ‘Divorce her,’ and settle there in her place,\nremaining there, beguiling the soul with a sleeper’s dreams.\n\nMy parting from the members of a household whom I brought together,\ndespite the many [I have], is surely one of the gravest calamities.(3)\n\n[al-Tawil meter]\n\nThen his father pressed him until he divorced her, but his heart continued to follow her. One day his father heard him saying:\n\nNever have I seen one like me divorce today one like her,\nnor one like her divorced without any offense.(4)\n\n[al-Tawil meter]\n\nHis father took pity on him and permitted him to take her back. Then, during the siege of al-Taif, an arrow struck him and proved fatal. He died in Medina, and she elegized him in verses, among them:\n\n(1) Usd al-Ghaba, entry 7086; al-Isti'ab, entry 3470.\n\n(2) Usd al-Ghaba, entry 7087; al-Isti'ab, entry 3471; al-Thiqat, 2/324; A'lam al-Nisa', 3/201; al-Durr al-Manthur, p. 320; al-Tajrid, 2/285; al-Tarikh al-Saghir, 1/37.\n\n(3) See the verses in Usd al-Ghaba, entry 7087, and al-Isti'ab, entry 3471.\n\n(4) See the verse in Usd al-Ghaba, entry 7087, and al-Isti'ab, entry 3471.",
+      "arabic_sha256": "ef74f14688f7ba9a8eb8c247250dbc28aab1ddc900ea1e8f7dea2a23752d0ac4",
+      "english_sha256": "4ea2810b1e234e579f204f305700848ff1e6e8d6224db183528e3af2046e5e59",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011452-segment-0002",
+      "volume": 8,
+      "scan_page": 229,
+      "printed_page": 228,
+      "reader_page": 4141,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4141",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0229:e914e4d6e4696346",
+      "arabic": "فآليت لا تنفكّ عيني حزينة ... عليك ولا ينفكّ جلدي أغبرا «١»\n[الطويل] ثم تزوّجها زيد بن الخطّاب على ما قيل، فاستشهد باليمامة، ثم تزوجها عمر فجرت لها قصة مع عليّ في تذكيرها بقولها: فآليت لا تنفكّ عيني حزينة ثم استشهد عمر فرثته بالأبيات المشهورة.\nوأخرج ابن سعد بسند حسن، عن يحيى بن عبد الرّحمن بن حاطب: كانت عاتكة تحبّ عبد اللَّه بن أبي بكر، فجعل لها طائفة من ماله على ألا تتزوج بعده، ومات، فأرسل عمر إلى عاتكة أن قد حرّمت ما أحلّ اللَّه لك، فردّي إلى أهله المال الّذي أخذته، ففعلت، فخطبها عمر فنكحها. ويقال: إن ما أحلّ اللَّه لك، فردّي إلى أهله المال الّذي أخذته، ففعلت، فخطبها عمر فنكحها. ويقال: إن عليّا خطبها، فقالت: إني لأضنّ بك من القتل. ويقال:\nإن عبد اللَّه بن الزّبير صالحها على ميراثها من الزبير بثمانين ألفا.\nوذكر أبو عمر في «التّمهيد» أنّ عمر لما خطبها شرطت عليه ألّا يضربها ولا يمنعها من الحقّ ولا من الصّلاة في المسجد النبويّ، ثم شرطت ذلك على الزّبير فتحيّل عليها أن كمن لها لما خرجت إلى صلاة العشاء، فلما مرّت به ضرب على عجيزتها، فلما رجعت قالت:\nإنا للَّه! فسد النّاس! فلم تخرج بعد.\nقلت: أخرج ابن مندة، من طريق أبي الزّناد، عن موسى بن عقبة، عن سالم- أن عاتكة بنت زيد كانت تحت عمر، فكانت تكثر الاختلاف إلى المسجد النبويّ، وكان عمر يكره ذلك، فقيل لها في ذلك، فقالت: ما كنت بتاركته إلا أن يمنعني، فكأنه كره أن يمنعها. فتزوّجها رجل بعد عمر فكان يمنعها. قلت لسالم: من هو؟ قال: الزّبير بن العوّام.",
+      "english": "“I swore that my eye would never cease to be sorrowful\nover you, nor would my skin ever cease to be dust-covered.” (1)\n\n[al-Tawil meter]\n\nThen, reportedly, Zayd ibn al-Khattab married her, and he was martyred at al-Yamama. Umar then married her, and there was an incident involving her and Ali in which he reminded her of her words, “I swore that my eye would never cease to be sorrowful.” Umar was then martyred, and she elegized him in the well-known verses.\n\nIbn Sa'd related, with a hasan chain of transmission, from Yahya ibn Abd al-Rahman ibn Hatib: Atika loved Abdullah ibn Abi Bakr, and he assigned her a portion of his property on condition that she not marry after him. He died, and Umar sent word to Atika: “You have forbidden what Allah has made lawful for you. Return to his family the property you took.” She did so; Umar then proposed to her and married her. [Textual note: The present Arabic text next contains the defective repetition, “It is said that what Allah has made lawful for you—return to his family the property you took. She did so; Umar then proposed to her and married her.” Two alternative editions omit these words as an accidental duplication; they are set apart here rather than incorporated into the continuous account.] It is also said that Ali proposed to her, but she said, “I am too protective of you to see you killed.” It is said that Abdullah ibn al-Zubayr reached a settlement with her concerning her inheritance from al-Zubayr for eighty thousand.\n\nAbu Umar mentioned in al-Tamhid that when Umar proposed to her, she stipulated that he must not strike her, prevent her from what was rightfully hers, or prevent her from praying in the Prophet's Mosque. She later imposed the same conditions upon al-Zubayr. He resorted to a stratagem against her: he lay in wait for her when she went out for the night prayer, and when she passed him, he struck her on the buttocks. When she returned, she said, “Indeed, we belong to Allah! People have become corrupt!” She did not go out thereafter.\n\nI say: Ibn Mandah related, through Abu al-Zinad, from Musa ibn Uqba, from Salim, that Atika bint Zayd was married to Umar and frequently went to the Prophet's Mosque. Umar disliked this, and she was spoken to about it. She said, “I would not give it up unless he forbade me.” It was as though he disliked forbidding her. After Umar, another man married her and would prevent her from going. I asked Salim, “Who was he?” He replied, “al-Zubayr ibn al-Awwam.”",
+      "arabic_sha256": "076fed2989d94eb55743298300adc46c16084475fade77ce62d98509bc3a1f8a",
+      "english_sha256": "c0ea8c21c02e8d77cc846013df568a7abad83183d6daeeddec909e29160de01f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "سعيد بن زيد",
+      "english": "Said ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كريز بنت عبد اللَّه بن عمار بن مالك الحضرميّة",
+      "english": "Umm Kurayz bint Abdullah ibn Ammar ibn Malik al-Hadramiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nuaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن أبي بكر الصّديق",
+      "english": "Abdullah ibn Abi Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطائف",
+      "english": "al-Taif",
+      "kind": "place"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "الطويل",
+      "english": "al-Tawil",
+      "kind": "other"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدر المنثور",
+      "english": "al-Durr al-Manthur",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "التاريخ الصغير",
+      "english": "al-Tarikh al-Saghir",
+      "kind": "work"
+    },
+    {
+      "arabic": "زيد بن الخطّاب",
+      "english": "Zayd ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "اليمامة",
+      "english": "al-Yamama",
+      "kind": "place"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن عبد الرّحمن بن حاطب",
+      "english": "Yahya ibn Abd al-Rahman ibn Hatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاتكة بنت زيد",
+      "english": "Atika bint Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن أبي بكر",
+      "english": "Abdullah ibn Abi Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن الزّبير",
+      "english": "Abdullah ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّبير بن العوّام",
+      "english": "al-Zubayr ibn al-Awwam",
+      "kind": "person"
+    },
+    {
+      "arabic": "التّمهيد",
+      "english": "al-Tamhid",
+      "kind": "work"
+    },
+    {
+      "arabic": "المسجد النبويّ",
+      "english": "Prophet's Mosque",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الزّناد",
+      "english": "Abu al-Zinad",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن عقبة",
+      "english": "Musa ibn Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "سالم",
+      "english": "Salim",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "poetic_ellipsis",
+      "arabic_span": "على كثرة منّي",
+      "explanation": "The canonical reading “كثرة مني” is clear at the word level, but the referent after “the many” is unstated. The supplied Urdu page ends before the verse, while the collateral works disagree. The translation therefore preserves the ellipsis with brackets rather than supplying a specific referent.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0228:b2214ac9c9a4cb4b"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011296",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11296,
+  "title": {
+    "english": "Sa'da bint Kurz ibn Rabi'a ibn Abd Shams al-'Abshamiyya",
+    "arabic_observed": "سعدى بنت كرز"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011296-segment-0001",
+      "volume": 8,
+      "scan_page": 177,
+      "printed_page": 176,
+      "reader_page": 4089,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4089",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0177:02b1fefeda1a5eac",
+      "arabic": "١١٢٩٦- سعدى بنت كرز\nبن ربيعة بن عبد شمس العبشمية، خالة عثمان بن عفان أمير المؤمنين.\nذكر أبو سعد النّيسابوريّ في كتاب «شرف المصطفى»، من طريق محمد بن عبد اللَّه ابن عمرو بن عثمان، وهو الملقب بالديباج، عن أبيه، عن جده، قال: كان إسلام عثمان أنه قال: كنت بفناء الكعبة إذ أتينا فقيل لنا: إن محمدا قد أنكح عتبة بن أبي لهب رقية ابنته،\n(١) أسد الغابة ت (٦٩٩١)، الاستيعاب ت (٣٤٢٤) .\n(٢) أخرجه أحمد في المسند ١/ ٢٨، ٦٣، وابن حبان في صحيحه حديث رقم ٢ وابن ماجة في السنن ٢/ ١٢٤٧ كتاب الأدب باب ٥٤ فضل لا إله إلا اللَّه حديث رقم ٣٧٩٥، وأبو يعلى في المعجم برقم ٣١٦، ٦٤٢ ح ٢/ ١٤- ١٥، والحاكم في المستدرك ١/ ٧٢، ٣٥١ والهيثمي في الزوائد ١/ ١٨، وكنز العمال حديث رقم ١٤١٧.",
+      "english": "11296 — Sa'da bint Kurz ibn Rabi'a ibn Abd Shams al-'Abshamiyya\n\nThe maternal aunt of Uthman ibn Affan, Commander of the Faithful.\n\nAbu Sa'd al-Naysaburi mentioned her in the book Sharaf al-Mustafa, by way of Muhammad ibn Abd Allah ibn Amr ibn Uthman, who bore the byname al-Dibaj, from his father, from his grandfather, who said: Uthman related the story of his conversion to Islam as follows: “I was in the courtyard of the Ka'ba when we were approached and told, ‘Muhammad has given his daughter Ruqayya in marriage to Utba ibn Abi Lahab,’\n\n(1) Usd al-Ghaba, entry 6991; al-Isti'ab, entry 3424.\n\n(2) Ahmad transmitted it in Musnad Ahmad, 1/28, 63; Ibn Hibban in his Sahih, hadith no. 2; Ibn Maja in al-Sunan, 2/1247, Book of Etiquette, chapter 54, “The Merit of ‘There is no deity but Allah,’” hadith no. 3795; Abu Ya'la in al-Mu'jam, no. 316; and in Musnad Abi Ya'la, 2/14–15, hadith no. 642; al-Hakim in al-Mustadrak, 1/72, 351; al-Haythami in al-Zawa'id, 1/18; and Kanz al-'Ummal, hadith no. 1417.",
+      "arabic_sha256": "939b1eedcf1389544de37ac54db110c4e08244bcb87c16185e12de84f34b452d",
+      "english_sha256": "6a65388877b90ed27d9d60193c4ae09990bb4f3727d7f2d8dfadf59340149fa8",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011296-segment-0002",
+      "volume": 8,
+      "scan_page": 178,
+      "printed_page": 177,
+      "reader_page": 4090,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4090",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0178:1f77f75ac3de28cc",
+      "arabic": "وكانت ذات جمال بارع، وكان عثمان مشتهرا بالنساء، وكان وضيئا حسنا جميلا أبيض مشربا صفرة جعد الشعر له جمّة أسفل من أذنيه، جذل الساقين، طويل الذراعين، أقنى بيّن القنا، قال عثمان: فلما سمعت ذلك دخلتني حسرة ألّا أكون سبقت إليها، فلم ألبث أن انصرفت إلى منزلي، فأصبت خالتي قاعدة مع أهلي، قال: وأمّه أروى بنت كريز، وأمها البيضاء بنت عبد المطلب، وخالته التي أصابها عند أهله سعدى بنت كرز، وكانت قد طرقت وتكهنت لقومها، قال: فلما رأتني قالت:\nأبشر وحيّيت ثلاثا وترا ... ثمّ ثلاثا وثلاثا أخرى\nثمّ بأخرى كي تتمّ عشرا ... لقيت خيرا ووقيت شرّا\nنكحت واللَّه حصانا زهرا ... وأنت بكر ولقيت بكرا\n[الرجز] قال: فعجبت من قولها، وقلت: يا خالة ما تقولين؟ فقالت:\nعثمان يا عثمان يا عثمان ... لك الجمال ولك الشّأن\nهذا نبيّ معه البرهان ... أرسله بحقّه الدّيّان\nوجاءه التّنزيل والفرقان ... فاتبعه لا تغيا بك الأوثان\n[الرجز]\nفقالت: إن محمد بن عبد اللَّه رسول اللَّه جاء إليه جبرئيل يدعوه إلى اللَّه، مصباحه مصباح، وقوله صلاح، ودينه فلاح، وأمره نجاح، لقرنه نطاح، ذلّت له البطاح، ما ينفع الصياح، لو وقع الرماح، وسلت الصفاح، ومدّت الرماح.\nثم انصرفت، ووقع كلامها في قلبي، وبقيت مفكّرا فيه، وكان لي مجلس من أبي بكر الصديق، فأتيته بعد يوم الاثنين، فأصبته في مجلسه، ولا أحد عنده، فجلست إليه، فرآني متفكرا، فسألني عن أمري- وكان رجلا رقيقا، فأخبرته بما سمعت من خالتي، فقال لي:\nويحك يا عثمان! واللَّه إنك لرجل حازم ما يخفى عليك الحقّ من الباطل، هذه الأوثان التي يعبدها قومك أليست حجارة صمّا لا تسمع ولا تبصر، ولا تضر ولا تنفع؟ قلت: بلى، واللَّه، إنها لكذلك. قال: واللَّه لقد صدقتك خالتك، هذا محمد بن عبد اللَّه قد بعثه اللَّه برسالته إلى جميع خلقه، فهل لك أن تأتيه وتسمع معه؟ فقلت: نعم، فو اللَّه ما كان بأسرع من أن مرّ رسول اللَّه ﷺ، ومعه علي بن أبي طالب يحمل ثوبا لرسول اللَّه ﷺ، فلما رآه أبو بكر قام إليه فسارّه في أذنه، فجاء رسول اللَّه ﷺ فقعد ثم أقبل عليّ فقال: «يا عثمان، أجب اللَّه إلى جنّته، فإنّي رسول اللَّه إليك وإلى جميع خلقه»،\nقال: فو اللَّه ما تمالكت حين سمعت",
+      "english": "She possessed surpassing beauty, and Uthman was known for his interest in women. He was radiant, handsome, and beautiful, with a fair complexion tinged with yellow; his hair was curly, with locks falling below his ears. He was stout of calf, long-armed, and aquiline-nosed, with a distinctly pronounced bridge. Uthman said: “When I heard that, I was filled with regret that I had not preceded him in marrying her. It was not long before I returned home, where I found my maternal aunt sitting with my family.” The narrator added that Uthman's mother was Arwa bint Kurayz, and her mother was al-Bayda bint Abd al-Muttalib. The maternal aunt whom he found with his family was Sa'da bint Karz, who had practiced divination by casting pebbles and had acted as a soothsayer for her people. He said: “When she saw me, she said:\n\n‘Rejoice, and may you be greeted thrice—an odd count;\nThen thrice, and yet another three;\nThen one more, so that ten is complete.\nYou have encountered good and been protected from evil.\nBy Allah, you shall marry a radiant, chaste woman;\nYou are a virgin, and you have encountered a virgin.’\n\n[Rajaz]\n\n“I was amazed at her words and said, ‘Maternal aunt, what are you saying?’ She replied:\n\n‘Uthman, O Uthman, O Uthman!\nYours are beauty and high standing.\nThis is a Prophet, accompanied by the proof;\nThe Judge has sent him with His truth.\nRevelation and the Criterion have come to him;\nSo follow him—let not the idols ensnare you.’\n\n[Rajaz]\n\n“She then said: ‘Muhammad ibn Abd Allah is the Messenger of Allah. Jibril has come to him, calling him to Allah. His lamp is a lamp; his speech is righteousness; his religion is success; his cause is triumph. For his adversary there is a clash. The lowlands have been humbled before him. Shouting will be of no avail if the spears strike, the blades are drawn, and the spears are leveled.’\n\n“She then departed. Her words entered my heart, and I remained pondering them. I used to sit with Abu Bakr al-Siddiq, so I went to him after Monday and found him sitting alone. I sat down beside him. He saw that I was deep in thought and asked me what was troubling me—for he was a gentle man. I told him what I had heard from my maternal aunt. He said to me: ‘Woe to you, Uthman! By Allah, you are a discerning man; you can distinguish truth from falsehood. These idols worshipped by your people—are they not deaf stones that neither hear nor see, and that can neither harm nor benefit?’ I said: ‘Yes, by Allah, that is indeed what they are.’ He said: ‘By Allah, your maternal aunt has spoken truthfully to you. This Muhammad ibn Abd Allah has been sent by Allah with His message to all His creation. Would you care to go to him and hear what he has to say?’ I replied: ‘Yes.’ By Allah, it was scarcely any time at all before the Messenger of Allah (may Allah bless him and grant him peace) passed by, accompanied by Ali ibn Abi Talib, who was carrying a garment for the Messenger of Allah (may Allah bless him and grant him peace). When Abu Bakr saw him, he rose, went over to him, and whispered in his ear. The Messenger of Allah came and sat down. Then he turned toward me and said: ‘O Uthman, answer Allah's call to His Garden, for I am the Messenger of Allah to you and to all His creation.’”\n\nHe said: “By Allah, I could not restrain myself when I heard—”",
+      "arabic_sha256": "1f77f75ac3de28ccbfd22226edd89577db24dcc8a0ded39af8e6a27096cffbb8",
+      "english_sha256": "f786fa727fb91b6780a818726a3d6b363f25600f9708b8f76f7a0ad698a2d9b3",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011296-segment-0003",
+      "volume": 8,
+      "scan_page": 179,
+      "printed_page": 178,
+      "reader_page": 4091,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4091",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0179:032b8c150c6cee95",
+      "arabic": "قوله أن أسلمت وشهدت أن لا إله إلا اللَّه وحده لا شريك له، وأن محمدا عبده ورسوله، ثم لم ألبث أن تزوّجت رقية، وكان يقال: أحسن زوجين رآهما إنسان: رقية وزوجها عثمان.\nوفي إسلام عثمان تقول خالته سعدى:\nهدى اللَّه عثمان الصّفيّ بقوله ... فأرشده واللَّه يهدي إلى الحقّ\nفتابع بالرّأي السديد محمّدا ... وكان ابن أروى لا يصدّ عن الحقّ\nوأنكحه المبعوث إحدى بناته ... فكان كبدر مازج الشّمس في الأفق\nفداؤك يا ابن الهاشميين مهجتي ... فأنت أمين اللَّه أرسلت في الخلق\n[الطويل]",
+      "english": "…his words, but immediately embraced Islam and testified that there is no god but Allah alone, without partner, and that Muhammad is His servant and Messenger. Before long, I married Ruqayya. It used to be said: “The finest married couple anyone ever saw were Ruqayya and her husband Uthman.”\n\nConcerning Uthman's acceptance of Islam, his maternal aunt Sa'da says:\n\nAllah guided Uthman, the chosen one, through his words;\nHe directed him aright—and Allah guides to the truth.\nWith sound judgment he therefore followed Muhammad;\nThe son of Arwa was not one to turn away from the truth.\nThe one sent forth gave him one of his daughters in marriage;\nHe was like a full moon mingling with the sun upon the horizon.\nMay my very soul be your ransom, O son of the Hashimites!\nYou are Allah's trusted one, sent among creation.\n\n[al-Tawil meter]",
+      "arabic_sha256": "95d5c30da54b8774c0425175b282b1d92c25bfd0b5bf2b55ef34f2681eec3e06",
+      "english_sha256": "5dbdaa46abe833e7260b1f3a09c381eab4adaf2791fdd4c0f5062cbd0cf7f56c",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "محمد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو يعلى",
+      "english": "Abu Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعدى بنت كرز بن ربيعة بن عبد شمس العبشمية",
+      "english": "Sa'da bint Kurz ibn Rabi'a ibn Abd Shams al-'Abshamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن عفان",
+      "english": "Uthman ibn Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سعد النيسابوري",
+      "english": "Abu Sa'd al-Naysaburi",
+      "kind": "person"
+    },
+    {
+      "arabic": "شرف المصطفى",
+      "english": "Sharaf al-Mustafa",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكعبة",
+      "english": "Ka'ba",
+      "kind": "place"
+    },
+    {
+      "arabic": "رقية ابنته",
+      "english": "Ruqayya bint Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عتبة بن أبي لهب",
+      "english": "Utba ibn Abi Lahab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "صحيحه",
+      "english": "Sahih Ibn Hibban",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Maja",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan Ibn Maja",
+      "kind": "work"
+    },
+    {
+      "arabic": "كتاب الأدب",
+      "english": "Book of Etiquette",
+      "kind": "work"
+    },
+    {
+      "arabic": "فضل لا إله إلا اللَّه",
+      "english": "The Merit of There Is No Deity but Allah",
+      "kind": "work"
+    },
+    {
+      "arabic": "المعجم",
+      "english": "al-Mu'jam",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو يعلى ... ٦٤٢ ح ٢/ ١٤-١٥",
+      "english": "Musnad Abi Ya'la",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-'Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman ibn Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أروى بنت كريز",
+      "english": "Arwa bint Kurayz",
+      "kind": "person"
+    },
+    {
+      "arabic": "البيضاء بنت عبد المطلب",
+      "english": "al-Bayda bint Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعدى بنت كرز",
+      "english": "Sa'da bint Karz",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عبد الله",
+      "english": "Muhammad ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "جبرئيل",
+      "english": "Jibril",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر الصديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن أبي طالب",
+      "english": "Ali ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الفرقان",
+      "english": "al-Furqan",
+      "kind": "work"
+    },
+    {
+      "arabic": "رقية",
+      "english": "Ruqayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعدى",
+      "english": "Sa'da",
+      "kind": "person"
+    },
+    {
+      "arabic": "أروى",
+      "english": "Arwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهاشميين",
+      "english": "Hashimites",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الطويل",
+      "english": "al-Tawil",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "referent_identity",
+      "arabic_span": "امرأة ابن عمك",
+      "explanation": "The phrase literally identifies “your paternal cousin's wife,” but the current source context does not name either referent. The literal relationship is therefore preserved without identifying them.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0177:02b1fefeda1a5eac"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

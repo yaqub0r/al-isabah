@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010962",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10962,
+  "title": {
+    "english": "Tahna'a,",
+    "arabic_observed": "تهنأة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010962-segment-0001",
+      "volume": 8,
+      "scan_page": 59,
+      "printed_page": 58,
+      "reader_page": 3971,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3971",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0059:5365a6d5f8d33d8b",
+      "arabic": "١٠٩٦٢- تهنأة ،\nبهمزة مفتوحة بعد النون، بنت كليب الحضرمية. تقدم ذكرها في ترجمة ولدها كليب بن أسد.",
+      "english": "10962—Tahna'a,\n\nwith a hamza bearing fatha after the nun, bint Kulayb al-Hadramiyya. She was previously mentioned in the entry on her son, Kulayb ibn Asad.",
+      "arabic_sha256": "a0938cc34578653652abf4feb4ac37970931a0a6e92cda08d76d5c813705941c",
+      "english_sha256": "4eba62e4dbc150f3982a8dd9125e1b56ca34582e9b21c4de7f6f041ce8298417",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "كليب بن أسد",
+      "english": "Kulayb ibn Asad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

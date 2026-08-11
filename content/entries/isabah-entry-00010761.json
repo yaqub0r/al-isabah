@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010761",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10761,
+  "title": {
+    "english": "Amina bint al-Arqam (2).",
+    "arabic_observed": "آمنة بنت الأرقم (٢)."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010761-segment-0001",
+      "volume": 8,
+      "scan_page": 4,
+      "printed_page": 3,
+      "reader_page": 3916,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3916",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0004:0a8a599d4636fa27",
+      "arabic": "١٠٧٦١- آمنة بنت الأرقم (٢).\nروى أبو السائب المخزومي عن جدته آمنة بنت الأرقم - أن النبي ﷺ أقطعها بئرا ببطن العقيق؛ فكانت تسمى بئر آمنة، وبرك لها فيها؛ وكانت من المهاجرات، ذكرها ابن الدباغ مستدركا على الاستيعاب.",
+      "english": "10761—Amina bint al-Arqam (2).\nAbu al-Sa'ib al-Makhzumi narrated from his grandmother, Amina bint al-Arqam, that the Prophet—may Allah bless him and grant him peace—granted her a well in the interior of al-Aqiq. It was therefore called the Well of Amina, and he invoked blessing for her in it. She was one of the Emigrant women. Ibn al-Dabbagh mentioned her as a supplementary addition to al-Isti'ab.",
+      "arabic_sha256": "fc88dd1e591b73b7e69d03c3bceaf43b8d044bd5aa071c3b6aab4380def849a1",
+      "english_sha256": "309e9ab81e019441e7125bd1447ee6fe2debe1b93c71df11ff8032338c01c9b0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو السائب المخزومي",
+      "english": "Abu al-Sa'ib al-Makhzumi",
+      "kind": "person"
+    },
+    {
+      "arabic": "آمنة بنت الأرقم",
+      "english": "Amina bint al-Arqam",
+      "kind": "person"
+    },
+    {
+      "arabic": "العقيق",
+      "english": "al-Aqiq",
+      "kind": "place"
+    },
+    {
+      "arabic": "بئر آمنة",
+      "english": "Well of Amina",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن الدباغ",
+      "english": "Ibn al-Dabbagh",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

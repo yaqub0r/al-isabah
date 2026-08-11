@@ -1,0 +1,139 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011014",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11014,
+  "title": {
+    "english": "Jasra bint Dajaja [1]",
+    "arabic_observed": "جسرة بنت دجاجة «١»،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011014-segment-0001",
+      "volume": 8,
+      "scan_page": 76,
+      "printed_page": 75,
+      "reader_page": 3988,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3988",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0076:39c33390b55995bc",
+      "arabic": "١١٠١٤- جسرة بنت دجاجة «١»،\nتابعية معروفة.\nروت عن أبي ذر، وعلي، وعائشة، وأم سلمة. وهي معدودة في أهل الكوفة.\nروى عنها قدامة بن عبد اللَّه العامري، وأفلت بن خليفة، وممدوح الهذلي. قال العجليّ: ثقة ... وورد ما يدلّ على أن لها إدراكا، فأخرج ابن مندة من طريق عثام بن علي، عن قدامة، عن جسرة، قالت: أتانا آت يوم وفاة النبي ﷺ فأشرف على الجبل،\n(١) أسد الغابة ت ٦٨٠٥.",
+      "english": "11014—Jasra bint Dajaja [1]\n\nA well-known woman of the generation following the Companions.\n\nShe narrated from Abu Dharr, Ali, Aisha, and Umm Salama. She is counted among the people of Kufa.\n\nQudama ibn Abd Allah al-Amiri, Aflat ibn Khalifa, and Mamduh al-Hudhali narrated from her. al-Ijli said: “Trustworthy” … There is also a report suggesting that she lived during the Prophet's lifetime. Ibn Manda related through Aththam ibn Ali, from Qudama, from Jasra, who said: “On the day the Prophet (may Allah bless him and grant him peace) died, someone came to us and looked down from the mountain,”\n\n[1] Usd al-Ghaba, entry 6805.",
+      "arabic_sha256": "c7e78acc10e784e86ecbcccab393a0f1197c96e2459a5207e4b8cf38f1627d0e",
+      "english_sha256": "d00516cc203e6cb1c8b20d0f1044672c7c86269af3440b35d2f20dbffa40413b",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011014-segment-0002",
+      "volume": 8,
+      "scan_page": 77,
+      "printed_page": 76,
+      "reader_page": 3989,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3989",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0077:6465e954ef428694",
+      "arabic": "فقال: يا أهل الوادي، انحرف الدين- ثلاث مرات، [مات] نبيكم الّذي تزعمون، فإذا هو شيطان، فحسبنا فوجدناه مات ذلك اليوم.\nوذكرها ابن مندة في الصّحابة، ولم يذكر سوى هذا الأثر.\nوأخرجه عن أبي عليّ بن السّكن بسنده إلى عثّام، وهو بمهملة ومثلثة ثقيلة، وليس صريحا في إدراكها، لاحتمال أن تكون أرادت بقولها: أتانا آت من قومها، وتكون نقلت عنهم، ولم تدرك هي ذلك، ولم يذكرها ابن السكن في الصحابة، وحديثها عن الصحابة في السن لأبي داود والنسائي وغيرهما.",
+      "english": "He said, “O people of the valley, the religion has turned aside”—three times—“your Prophet, so you claim, [has died].” Then behold, he was a devil. We made our reckoning and found that the Prophet had died that very day.\n\nIbn Manda included her among the Companions and mentioned nothing but this report.\n\nHe also transmitted it from Abu Ali ibn al-Sakan, through his chain to Aththam—whose name is written with an undotted ayn and a doubled tha. This does not explicitly show that she was alive at the time, because when she said, “Someone came to us,” she may have used “us” to refer to members of her tribe and may have transmitted the account from them, without herself having lived through the event. Ibn al-Sakan did not include her among the Companions. Her transmissions from the Companions are found in the Sunan works of Abu Dawud and al-Nasa'i, among others.",
+      "arabic_sha256": "e6699b1ab4d34f09b878e1fad5dee60953b8f79523dcd6ee06f3736a2d39dcac",
+      "english_sha256": "e523fc52e78025161028d47ef53cf9f9a8d37d32d6d43f253a13a3376161094e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "جسرة بنت دجاجة",
+      "english": "Jasra bint Dajaja",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو ذر",
+      "english": "Abu Dharr",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكوفة",
+      "english": "Kufa",
+      "kind": "place"
+    },
+    {
+      "arabic": "قدامة بن عبد اللَّه العامري",
+      "english": "Qudama ibn Abd Allah al-Amiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أفلت بن خليفة",
+      "english": "Aflat ibn Khalifa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ممدوح الهذلي",
+      "english": "Mamduh al-Hudhali",
+      "kind": "person"
+    },
+    {
+      "arabic": "العجلي",
+      "english": "al-Ijli",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثام بن علي",
+      "english": "Aththam ibn Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو علي بن السكن",
+      "english": "Abu Ali ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثام",
+      "english": "Aththam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

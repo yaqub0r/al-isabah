@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011516",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11516,
+  "title": {
+    "english": "Amra bint Mas'ud",
+    "arabic_observed": "عمرة بنت مسعود"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011516-segment-0001",
+      "volume": 8,
+      "scan_page": 247,
+      "printed_page": 246,
+      "reader_page": 4159,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4159",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0247:89271ce00ac4811d",
+      "arabic": "١١٥١٦- عمرة بنت مسعود\nبن قيس الخامسة- شقيقة اللتين قبلها [٣٣٢]، وهي والدة قيس بن عمرو، من بني النّجّار.",
+      "english": "11516—Amra bint Mas'ud\nibn Qays, the fifth—the full sister of the two preceding women [332]. She was the mother of Qays ibn Amr, of Banu al-Najjar.",
+      "arabic_sha256": "1d36fa567881a75c43da2374455d45b0b0d41ec40f051e6eed45bff24f7b0afa",
+      "english_sha256": "a880e8b7a4e04edc1f5d385703c1f5cb047ea851fa28d23749f0241b02a296eb",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "قيس بن عمرو",
+      "english": "Qays ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني النجار",
+      "english": "Banu al-Najjar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

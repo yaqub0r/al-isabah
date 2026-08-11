@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012080",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12080,
+  "title": {
+    "english": "Umm Simak bint Sahl:",
+    "arabic_observed": "أم سماك بنت سهل:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012080-segment-0001",
+      "volume": 8,
+      "scan_page": 412,
+      "printed_page": 411,
+      "reader_page": 4324,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4324",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0412:b868f66989c7606d",
+      "arabic": "١٢٠٨٠- أم سماك بنت سهل:\nفي ترجمة أمها أمامة بنت سماك.",
+      "english": "12080—Umm Simak bint Sahl:\n\nShe is treated in the entry for her mother, Umama bint Simak.",
+      "arabic_sha256": "bfa0abe10c74a41961c733eb5461331742a70d1a3b3cb466bc689048c9ff13c6",
+      "english_sha256": "36fc19b9d3b71d08d5aaf91e9308ac3e5c94174f4c0d402cabe2df4727b3b461",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم سماك بنت سهل",
+      "english": "Umm Simak bint Sahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة بنت سماك",
+      "english": "Umama bint Simak",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

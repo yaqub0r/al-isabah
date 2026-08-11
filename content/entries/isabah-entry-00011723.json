@@ -1,0 +1,108 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011723",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11723,
+  "title": {
+    "english": "Layla bint 'Abd Allah al-'Adawiyya (6): She is al-Shifa'. Her biography appeared previously. Al-Mustaghfiri, citing Ibn Hibban, gave this as her name.",
+    "arabic_observed": "ليلى بنت عبد اللَّه العدويّة «٦»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011723-segment-0001",
+      "volume": 8,
+      "scan_page": 306,
+      "printed_page": 305,
+      "reader_page": 4218,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4218",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0306:047fab026cbe7652",
+      "arabic": "١١٧٢٣- ليلى بنت عبد اللَّه العدويّة «٦»\n: هي الشّفاء. تقدّمت، سماها المستغفريّ عن ابن حبّان.\n(١) أسد الغابة ت (٧٢٦٤) .\n(٢) أسد الغابة ت (٧٢٦٥) .\n(٣) أسد الغابة ت (٧٢٦٧) .\n(٤) أسد الغابة ت (٧٢٦٨) .\n(٥) أسد الغابة ت (٧٢٧٠) .\n(٦) أسد الغابة ت (٧٢٧١)، الثقات ٣/ ٣٦١- أعلام النساء ٢/ ٣٠٠- الكاشف ٣/ ٤٧٤- تجريد أسماء الصحابة ٢/ ٢٨١، ٣٠٣- تهذيب الكمال ٣/ ١٦٨٦- تقريب التهذيب ٢/ ٦٠٢- تهذيب التهذيب ١٢/ ٤٢٨.",
+      "english": "11723—Layla bint 'Abd Allah al-'Adawiyya (6): She is al-Shifa'. Her biography appeared previously. Al-Mustaghfiri, citing Ibn Hibban, gave this as her name.\n\n(1) Usd al-Ghaba, entry (7264).\n\n(2) Usd al-Ghaba, entry (7265).\n\n(3) Usd al-Ghaba, entry (7267).\n\n(4) Usd al-Ghaba, entry (7268).\n\n(5) Usd al-Ghaba, entry (7270).\n\n(6) Usd al-Ghaba, entry (7271); al-Thiqat, 3/361; A'lam al-Nisa', 2/300; al-Kashif, 3/474; al-Tajrid, 2/281, 303; Tahdhib al-Kamal, 3/1686; Taqrib al-Tahdhib, 2/602; Tahdhib al-Tahdhib, 12/428.",
+      "arabic_sha256": "b9f17b5c5ce93199a0491d206b2311441c0937ce94aa3931ada74dc2be24dc25",
+      "english_sha256": "ac6ae8eef3e27841f2c877be992b5e86ed3309e65a368ab57c9c8dceecd90614",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "ليلى بنت عبد الله العدوية",
+      "english": "Layla bint 'Abd Allah al-'Adawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشفاء",
+      "english": "al-Shifa'",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name-vocalization",
+      "arabic_span": "طناة بن معيص",
+      "explanation": "The consonantal spelling is secure, but neither the canonical Arabic nor the matching Urdu witness is vocalized, and the collateral Arabic evidence supplies no exact vocalized occurrence. “Tanat ibn Mu'ayyis” is therefore retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0306:047fab026cbe7652"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

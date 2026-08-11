@@ -1,0 +1,83 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011185",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11185,
+  "title": {
+    "english": "Ruqayya bint Zayd ibn Haritha al-Kalbi; Zayd was the client of the Messenger of Allah (may Allah bless him and grant him peace), and she was the sister of Ama.",
+    "arabic_observed": "رقيّة بنت زيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011185-segment-0001",
+      "volume": 8,
+      "scan_page": 138,
+      "printed_page": 137,
+      "reader_page": 4050,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4050",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0138:305d0523d61b144e",
+      "arabic": "١١١٨٥- رقيّة بنت زيد\nبن حارثة الكلبي، مولى رسول اللَّه ﷺ وأخت أمة.\nذكرها البلاذريّ. وتقدم ذكرها في ترجمة زيد، وأن أمها أم كلثوم بنت عتبة. وذكر ابن سعد من مسند خالد بن نمير، قال: لما أصيب زيد بن حارثة أتاهم النبيّ ﷺ فخمشت بنت زيد في وجهه، فبكى حتى انتحب.",
+      "english": "11185—Ruqayya bint Zayd ibn Haritha al-Kalbi; Zayd was the client of the Messenger of Allah (may Allah bless him and grant him peace), and she was the sister of Ama.\n\nal-Baladhuri mentioned her. She was mentioned previously in the entry on Zayd, together with the fact that her mother was Umm Kulthum bint 'Utba. Ibn Sa'd also cited from the musnad of Khalid ibn Numayr, who said: “When Zayd ibn Haritha was slain, the Prophet (may Allah bless him and grant him peace) came to them. Zayd's daughter scratched his face, and he wept until he sobbed aloud.”",
+      "arabic_sha256": "d66dd70e3743e2fbe1479e550e78c1dd3034fc9adb8f53a979b0831d91bb9abe",
+      "english_sha256": "72d2f0a233531f7701112737d87632992429bfa9148e5705956f77a462f28415",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "رقيّة بنت زيد بن حارثة الكلبي",
+      "english": "Ruqayya bint Zayd ibn Haritha al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن حارثة",
+      "english": "Zayd ibn Haritha al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمة",
+      "english": "Ama",
+      "kind": "person"
+    },
+    {
+      "arabic": "البلاذري",
+      "english": "al-Baladhuri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم بنت عتبة",
+      "english": "Umm Kulthum bint 'Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد بن نمير",
+      "english": "Khalid ibn Numayr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_reading",
+      "arabic_span": "أمة",
+      "explanation": "The authoritative Arabic reads أمة, retained here as “Ama,” while the Urdu witness reads “Usama.” The collateral Arabic evidence does not concern this entry, so the vocalization and identity cannot safely be corrected beyond the canonical wording.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0138:305d0523d61b144e"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

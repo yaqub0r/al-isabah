@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011017",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11017,
+  "title": {
+    "english": "Jamila bint al-Musaffah.[1]",
+    "arabic_observed": "جميلة بنت المصفح «١» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011017-segment-0001",
+      "volume": 8,
+      "scan_page": 77,
+      "printed_page": 76,
+      "reader_page": 3989,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3989",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0077:6465e954ef428694",
+      "arabic": "١١٠١٧- جميلة بنت المصفح «١» .\nأدركت النبيّ ﷺ. روى عنها فضيل بن مرزوق، ذكرها أبو عمر.\nقلت: حكى غيره في اسم أبيها المصبح- بالموحدة عوض الفاء، ولم أر لها رواية عن صحابي، وإنما أخرج النسائي في مسند علي حديثا، ولها حديث آخر عن حاطب عن أبي ذر، ولم أقف على ما يدل على إدراكها.",
+      "english": "11017. Jamila bint al-Musaffah.[1]\n\nShe lived during the Prophet's lifetime (may Allah bless him and grant him peace). Fudayl ibn Marzuq narrated from her. Abu Umar mentioned her.\n\nI say: Another authority gives her father's name as al-Musbih—with a single-dotted ba in place of the fa. I have not found any narration of hers from a Companion. A hadith of hers was included by al-Nasa'i in the Musnad of Ali, and she has another hadith from Hatib, from Abu Dharr. I have found nothing establishing that she lived during the Prophet's lifetime.",
+      "arabic_sha256": "71e9096d6b7a5712b8874d2914c426239bcf601c2e7d0dadcced6b355ef80f25",
+      "english_sha256": "5b46a5e85c18df9d39857a560ecd8daca643b10fb05df046e5ce0d3bc92d87bd",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة بنت المصفح",
+      "english": "Jamila bint al-Musaffah",
+      "kind": "person"
+    },
+    {
+      "arabic": "فضيل بن مرزوق",
+      "english": "Fudayl ibn Marzuq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المصبح",
+      "english": "Jamila bint al-Musbih",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند علي",
+      "english": "Musnad Ali",
+      "kind": "work"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "حاطب",
+      "english": "Hatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي ذر",
+      "english": "Abu Dharr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

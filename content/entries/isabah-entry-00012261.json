@@ -1,0 +1,105 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012261",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12261,
+  "title": {
+    "english": "Umm Mu'adh al-Ansariyya:",
+    "arabic_observed": "أم معاذ الأنصارية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012261-segment-0001",
+      "volume": 8,
+      "scan_page": 476,
+      "printed_page": 475,
+      "reader_page": 4388,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4388",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0476:c4df7ad071bdd1f9",
+      "arabic": "١٢٢٦١- أم معاذ الأنصارية:\nقال ابن مندة روى حديثها محمد بن إسحاق، عن عبد اللَّه بن عبد اللَّه بن الحارث، عن سالم أبي النضر، قال: دخل رسول اللَّه ﷺ على بعض أصحابه وهو يموت، فقالت امرأة من الأنصار يقال لها أم معاذ: هنيئا لك الجنة أبا السائب ... الحديث.\nوفيه إرسال. انتهى.\nوهذه القصة معروفة لأم العلاء، كما تقدم، وهي موصولة في الصحيح من حديثها، وأبو السائب هو عثمان بن مظعون، ولعل القائلة تعددت أو كانت لها كنيتان.",
+      "english": "12261- Umm Mu'adh al-Ansariyya:\n\nIbn Manda said: Muhammad ibn Ishaq narrated her hadith from 'Abd Allah ibn 'Abd Allah ibn al-Harith, from Salim Abu al-Nadr, who said: The Messenger of Allah, may Allah bless him and grant him peace, entered upon one of his Companions while he was dying. A woman of the Ansar called Umm Mu'adh said: “May Paradise be a joy to you, Abu al-Sa'ib...” - the remainder of the hadith.\n\nIt is mursal. End quote.\n\nThis story is well known as the report of Umm al-'Ala', as stated previously, and it has a connected chain in al-Sahih through her hadith. Abu al-Sa'ib is 'Uthman ibn Maz'un. Perhaps more than one woman made the statement, or perhaps she had two kunyahs.",
+      "arabic_sha256": "0f013462264514d6b4f58a4787ee0abf76774bd3f34759a07ffdc44b64407997",
+      "english_sha256": "5d9d07ed7ed4fd9aef8814af2b3d4acc9ed4d76d8d6d7990bad2bc02bb90c34e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم معاذ الأنصارية",
+      "english": "Umm Mu'adh al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم العلاء",
+      "english": "Umm al-'Ala'",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "al-Sahih",
+      "kind": "work"
+    },
+    {
+      "arabic": "معاذ",
+      "english": "Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عبد اللَّه بن الحارث",
+      "english": "'Abd Allah ibn 'Abd Allah ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "سالم أبو النضر",
+      "english": "Salim Abu al-Nadr",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو السائب",
+      "english": "Abu al-Sa'ib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن مظعون",
+      "english": "'Uthman ibn Maz'un",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

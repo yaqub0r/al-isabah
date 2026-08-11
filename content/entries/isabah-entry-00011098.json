@@ -1,0 +1,107 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011098",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11098,
+  "title": {
+    "english": "Khirniq,",
+    "arabic_observed": "خرنيق ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011098-segment-0001",
+      "volume": 8,
+      "scan_page": 106,
+      "printed_page": 105,
+      "reader_page": 4018,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4018",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0106:423e4959712f3fd1",
+      "arabic": "١١٠٩٨- خرنيق ،\nبكسر الخاء المعجمة وسكون الراء وكسر النون بعدها مثناة تحتانية\n(١) في أالرافعي.",
+      "english": "11098—Khirniq,\n\nwith the dotted kha bearing an i-vowel, the ra quiescent, and the nun bearing an i-vowel, followed by the letter with two dots beneath it—\n\n(1) In manuscript A: al-Rafi'i.",
+      "arabic_sha256": "9091d79120722d64631b9327e906812e62468bdb54e2e983d04facc08dd8461c",
+      "english_sha256": "61007e338c1c8dcba4dcd5b58d0bb4c3e20212c77c5c5534481e01c181d68c60",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011098-segment-0002",
+      "volume": 8,
+      "scan_page": 107,
+      "printed_page": 106,
+      "reader_page": 4019,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4019",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0107:0ca239c6d68dcc2e",
+      "arabic": "ثم قاف: بنت الحصين الخزاعية أخت عمران «١» .\nأسلمت وبايعت، وروت، قاله ابن سعد. وأسند في ترجمة جويرية بنت الحارث عنها عن عمران بن حصين، قال: افتدى يوم المريسيع نساء بني المصطلق، وكانوا يتعاقلون «٢» في الجاهلية.",
+      "english": "then a qaf: daughter of al-Husayn; she was of Khuza'a and the sister of 'Imran.[1]\n\nShe embraced Islam, pledged allegiance, and transmitted reports, according to Ibn Sa'd. In the biography of Juwayriya bint al-Harith, he gave an isnad from her, from 'Imran ibn Husayn, who said: “On the day of al-Muraysi', he ransomed the women of Banu al-Mustaliq; in the pre-Islamic period, the Banu al-Mustaliq used to share liability for blood money.”[2]",
+      "arabic_sha256": "d50fe2fd5b45102f8f7bf52bd4c597e83e1e2560b0ce6b24b9d017667d79fb00",
+      "english_sha256": "49f0b6dccbbed97e1115b3481ba7dffec23c52f6044cb98e695c212824688c56",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خرنيق",
+      "english": "Khirniq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرافعي",
+      "english": "al-Rafi'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحصين",
+      "english": "al-Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخزاعية",
+      "english": "Khuza'a",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عمران بن حصين",
+      "english": "'Imran ibn Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "جويرية بنت الحارث",
+      "english": "Juwayriya bint al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "المريسيع",
+      "english": "al-Muraysi'",
+      "kind": "place"
+    },
+    {
+      "arabic": "بنو المصطلق",
+      "english": "Banu al-Mustaliq",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "ambiguous_referent",
+      "arabic_span": "افتدى يوم المريسيع نساء بني المصطلق",
+      "explanation": "The canonical Arabic leaves the masculine singular subject of “ransomed” unstated. The English therefore retains “he” without identifying him; the secondary witness does not establish whether the referent was the Prophet, 'Imran, or another man.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0107:0ca239c6d68dcc2e"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

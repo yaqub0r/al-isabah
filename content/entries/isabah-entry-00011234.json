@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011234",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11234,
+  "title": {
+    "english": "Zaynab bint Hanzala",
+    "arabic_observed": "زينب بنت حنظلة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011234-segment-0001",
+      "volume": 8,
+      "scan_page": 157,
+      "printed_page": 156,
+      "reader_page": 4069,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4069",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0157:3610833272143fd7",
+      "arabic": "١١٢٣٤- زينب بنت حنظلة\nبن قسامة «٣» بن قيس بن عبيد بن طريف بن مالك بن جدعان بن ذهل بن رومان بن جندب بن خارجة بن سعد بن فطرة بن طي.\nقال أبو عمر: كانت قدمت هي وأبوها وعمتها الجرباء بنت قسامة على رسول اللَّه ﷺ، فتزوج زينب أسامة بن زيد، ثم طلقها، فلما حلّت قال رسول اللَّه ﷺ: «من يتزوّج زينب بنت حنظلة وأنا صهره» .\nقلت: ذكر ذلك الزّبير بن بكّار في كتاب «النّسب»، وفي طريف بن مالك يقول امرؤ القيس الشاعر المشهور وقد نزل به:\nلعمري لنعم المرء يعشو لضوئه ... طريف بن مال ليلة الرّيح والخصر\n[الطويل]",
+      "english": "11234—Zaynab bint Hanzala\nibn Qasama (3) ibn Qays ibn Ubayd ibn Tarif ibn Malik ibn Jud'an ibn Dhuhl ibn Ruman ibn Jundub ibn Kharija ibn Sa'd ibn Fitra ibn Tayy.\n\nAbu Umar said: She, her father, and her paternal aunt al-Jarba bint Qasama came to the Messenger of Allah, may Allah bless him and grant him peace. Usama ibn Zayd married Zaynab and then divorced her. When her waiting period had ended, the Messenger of Allah, may Allah bless him and grant him peace, said: “Who will marry Zaynab bint Hanzala, with me as his relative by marriage?”\n\nI say: al-Zubayr ibn Bakkar mentioned this in Kitab al-Nasab. It was concerning Tarif ibn Malik that Imru' al-Qays, the famous poet, said when he stayed with him:\n\nBy my life, excellent indeed is the man toward whose light one makes one's way—\nTarif ibn Mal, on a night of wind and bitter cold.\n\n[al-Tawil]",
+      "arabic_sha256": "c167fe15610895699b4e4b0c00f1ef70d4405411400acd02e0bc7580788ff69a",
+      "english_sha256": "9d7a58aa1d87e623d019c146063712f0288934a0648e04913c2754737115afe3",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجرباء بنت قسامة",
+      "english": "al-Jarba bint Qasama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسامة بن زيد",
+      "english": "Usama ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب النسب",
+      "english": "Kitab al-Nasab",
+      "kind": "work"
+    },
+    {
+      "arabic": "طريف بن مالك",
+      "english": "Tarif ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "امرؤ القيس",
+      "english": "Imru' al-Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "طريف بن مال",
+      "english": "Tarif ibn Malik",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

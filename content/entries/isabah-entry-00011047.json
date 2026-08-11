@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011047",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11047,
+  "title": {
+    "english": "Harmala,",
+    "arabic_observed": "حرملة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011047-segment-0001",
+      "volume": 8,
+      "scan_page": 85,
+      "printed_page": 84,
+      "reader_page": 3997,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3997",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0085:f06f6b3846d86122",
+      "arabic": "١١٠٤٧- حرملة ،\nبغير تصغير، بنت عبيد بن ثعلبة بن سواد بن غنم الأنصارية «٣»، من بني مالك بن الخزرج.\nذكرها ابن حبيب فيمن بايع، وقال الطبراني، في المعجم الكبير نحو ذلك.",
+      "english": "11047 — Harmala,\n\nwithout the diminutive form, bint Ubayd ibn Tha'laba ibn Sawad ibn Ghanm al-Ansariyya,³ of Banu Malik ibn al-Khazraj.\n\nIbn Habib mentioned her among those who pledged allegiance, and al-Tabarani said approximately the same in al-Mu'jam al-Kabir.",
+      "arabic_sha256": "6d08cfc9f14a01516791adbfff08b255d88291d3dff4b330f4a021b7be753a5f",
+      "english_sha256": "af0f0520b71de9578f242b7a8bbac61dcda2da2905ec5925eff7e537fd6c43e3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حرملة",
+      "english": "Harmala bint Jahm ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني مالك بن الخزرج",
+      "english": "Banu Malik ibn al-Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "المعجم الكبير",
+      "english": "al-Mu'jam al-Kabir",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

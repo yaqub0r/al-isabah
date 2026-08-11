@@ -1,0 +1,373 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011270",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11270,
+  "title": {
+    "english": "Zaynab bint Jaber",
+    "arabic_observed": "زينب بنت جابر"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011270-segment-0001",
+      "volume": 8,
+      "scan_page": 168,
+      "printed_page": 167,
+      "reader_page": 4080,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4080",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0168:a6071ac49f0eb142",
+      "arabic": "١١٢٧٠- زينب بنت جابر\nالأحمسية؟ «١» .\nذكرها أبو موسى في «الذّيل»، وقال: كانت في زمان النبي ﷺ، وحديثها عن أبي بكر الصديق.\nروى عنها عبد اللَّه بن جابر الأحمسي، وهي عمته، كذا قال أبو عبد اللَّه- يعني ابن مندة في التاريخ، وقيل هي بنت المهاجر بن جابر، ويشبه أن تكون بنت نبيط بن جابر امرأة أنس بن مالك، لأنها من أحمس فيما قيل. انتهى كلامه.\nوتعقبه ابن الأثير بأن ابن مندة ذكرها في «المعرفة»، فقال: زينب بنت جابر الأحمسية. وروى لها حديث محمد بن عمارة، عن زينب بنت نبيط بن جابر، فليس لاستدراكه وجه.\nقلت: بل له وجه وجيه، وذلك أن الجزم بأن زينب بنت جابر الأحمسية هي زينب بنت نبيط بن جابر ليس بجيد، والّذي يظهر أنهما اثنتان، أما زينب بنت جابر الأحمسية التي روت عن أبي بكر الصديق فهي من المخضرمات، وليست لها رواية مرفوعة. وأما زينب بنت نبيط بن جابر فهي من المبايعات، وليست أحمسية، بل أنصارية خزرجية، تقدم ذكر أبيها في حرف النون.\n(١) أسد الغابة ت ٦٩٥٤.",
+      "english": "11270—Zaynab bint Jaber\n\nal-Ahmasiyya?¹\n\nAbu Musa mentioned her in al-Dhayl and said: She lived in the time of the Prophet, may Allah bless him and grant him peace, and her report is from Abu Bakr al-Siddiq.\n\nAbd Allah ibn Jaber al-Ahmasi narrated from her, and she was his paternal aunt. This is what Abu Abd Allah—meaning Ibn Manda—said in al-Tarikh. It has also been said that she was the daughter of al-Muhajir ibn Jaber. She would seem to be the daughter of Nabit ibn Jaber, the wife of Anas ibn Malik, because she was said to belong to Ahmas. Here end his words.\n\nIbn al-Athir objected to this on the grounds that Ibn Manda had mentioned her in al-Ma'rifa, saying, “Zaynab bint Jaber al-Ahmasiyya,” and had transmitted for her the report of Muhammad ibn Umara from Zaynab bint Nabit ibn Jaber; thus, there was no basis for his supplementary notice.\n\nI say: Rather, it has a strong basis. Decisively asserting that Zaynab bint Jaber al-Ahmasiyya is Zaynab bint Nabit ibn Jaber is unsound. What appears correct is that they were two women. As for Zaynab bint Jaber al-Ahmasiyya, who narrated from Abu Bakr al-Siddiq, she was one of the mukhadram women, and she transmitted no report traced back to the Prophet. As for Zaynab bint Nabit ibn Jaber, she was one of the women who pledged allegiance. She was not Ahmasi, but rather an Ansari woman of the Khazraj. Her father was mentioned previously under the letter nun.\n\n¹ Usd al-Ghaba, entry 6954.",
+      "arabic_sha256": "68a1bc120e48899d2e850309da3a73bed973d233137efc27f633c1d6e021e689",
+      "english_sha256": "8e1849b16075504f07ac6d04d17509782bf832fd186c1c3fa16f939a9361d455",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011270-segment-0002",
+      "volume": 8,
+      "scan_page": 169,
+      "printed_page": 168,
+      "reader_page": 4081,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4081",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0169:695296970af46ba2",
+      "arabic": "وتزوج أنس بن مالك زينب بنت أسعد بن زرارة، فولدت له زينب هذه، فما أتى الوهم إلا من وصف ابن مندة لها بأنها أحمسية.\nوقد نسبها ابن سعد، فقال في طبقات التّابعيّات اللاتي روين عن أزواج النبي ﷺ ونحوهن: زينب بنت نبيط بن جابر بن مالك بن عدي بن زيد بن مناة بن ثعلبة بن عمرو بن مالك بن النجار، زوج أنس بن مالك، ثم ساق الخبر عن عبد اللَّه بن إدريس بسنده الآتي.\nوقد ذكرها بعضهم في الصحابة، فقال أبو عليّ بن السّكن. زينب بنت نبيط بن جابر الأنصارية امرأة أنس بن مالك روى عنها حديث مرسل، ويقال: إنها أدركت زمان رسول اللَّه ﷺ، ولم تحفظ عنه شيئا. انتهى.\nوحديثها الّذي رواه عنها محمد بن عمارة يدل على أنها ولدت بعد النبي ﷺ، فإن أمها كانت تحت حجر النبي ﷺ أوصى بها وبإخوتها، أبوهم أبو أمامة أسعد بن زرارة.\nوقد ساق ذلك ابن السّكن من طريق أبي كريب، عن عبد اللَّه بن إدريس، عن محمد بن عمارة، عن زينب بنت نبيط بن جابر امرأة أنس بن مالك، قالت: أوصى أبو أمامة أسعد بن زرارة بأمي وخالتي إلى رسول اللَّه ﷺ، فقدم عليه حلي من ذهب ولؤلؤ يقال له الرّعاث، فحلاهن رسول اللَّه ﷺ ذلك الرعاث، قالت زينب: فأدركت بعض ذلك الحلي عند أهلي.\nقلت: وقد ذكرها أبو عمر فاختصر كلام ابن السّكن فأجحف جدا، فقال: زينب بنت نبيط بن جابر الأنصارية مدنية. روى عنها حديث واحد، وقيل: إنه مرسل، وفيه نظر.\nانتهى.\nوأخرج ابن مندة الحديث من وجه آخر، عن ابن إدريس مختصرا، ولفظه: أوصى أبو أمامة بأمي وخالتي إلى رسول اللَّه ﷺ، فأتاه حلي من ذهب ولؤلؤ يقال له الرعاث، قالت:\nفخلاني من الرعاث، كذا أورده، وهو وهم: والصواب ما تقدم، وهو فحلاهنّ.\nوأورده ابن مندة أيضا من طريق عبد اللَّه بن جعفر، عن محمد بن عمارة، فقال: عن زينب بنت نبيط، عن أمها، قالت: كنت أنا وأختان لي في حجر رسول اللَّه ﷺ فكان يحلّينا من الذهب والفضة. انتهى.\nوهذا يبين قول ابن السّكن: إن الرواية التي ذكرها مرسلة. وإنّ الحديث عنها إنما هو عن أمها، وبه يصحّ اللفظ الّذي أورده ابن مندة، وينتفي عنه الوهم، وهو قولها: فحلّاني، فكأنه سقط من روايتها قولها: قالت أمي: فخلاني.",
+      "english": "Anas ibn Malik married Zaynab bint As'ad ibn Zurara, and she bore him this Zaynab. Thus, the error arose solely from Ibn Manda's description of her as Ahmasiyya.\n\nIbn Sa'd gave her lineage, saying in the section of al-Tabaqat concerning the female Followers who transmitted from the wives of the Prophet—may Allah bless him and grant him peace—and women of their kind: “Zaynab bint Nubayt ibn Jabir ibn Malik ibn 'Adi ibn Zayd ibn Manat ibn Tha'laba ibn 'Amr ibn Malik ibn al-Najjar, the wife of Anas ibn Malik.” He then related the report from 'Abd Allah ibn Idris through the chain that will follow.\n\nSome scholars listed her among the Companions. Abu 'Ali ibn al-Sakan said: “Zaynab bint Nubayt ibn Jabir al-Ansariyya, the wife of Anas ibn Malik. A mursal report was transmitted from her. It is said that she lived during the time of the Messenger of Allah—may Allah bless him and grant him peace—but retained nothing from him.” End quote.\n\nThe report transmitted from her by Muhammad ibn 'Umara indicates that she was born after the Prophet's lifetime, for her mother had been under the guardianship of the Prophet—may Allah bless him and grant him peace—and their father, Abu Umama As'ad ibn Zurara, had entrusted her and her siblings to him.\n\nIbn al-Sakan related this through Abu Kurayb, from 'Abd Allah ibn Idris, from Muhammad ibn 'Umara, from Zaynab bint Nubayt ibn Jabir, the wife of Anas ibn Malik. She said: “Abu Umama As'ad ibn Zurara entrusted my mother and my maternal aunt to the Messenger of Allah—may Allah bless him and grant him peace. Some jewelry of gold and pearls, called al-ri'ath, was brought to him, and the Messenger of Allah—may Allah bless him and grant him peace—adorned them with that al-ri'ath.” Zaynab said: “I lived to see some of that jewelry among my family.”\n\nI say: Abu 'Umar also mentioned her, but he abridged Ibn al-Sakan's words so severely as to render them deficient. He said: “Zaynab bint Nubayt ibn Jabir al-Ansariyya, a Medinese woman. One report was transmitted from her, and it has been said that it is mursal. This requires examination.” End quote.\n\nIbn Manda transmitted the report by another route from Ibn Idris, in an abridged form. Its wording is: “Abu Umama entrusted my mother and my maternal aunt to the Messenger of Allah—may Allah bless him and grant him peace. Some jewelry of gold and pearls called al-ri'ath was brought to him.” She said: “Then he adorned me with al-ri'ath.” This is how he cited it, but it is an error. The correct reading is the one given above: “He adorned them.”\n\nIbn Manda also cited it through 'Abd Allah ibn Ja'far, from Muhammad ibn 'Umara, who said: “From Zaynab bint Nubayt, from her mother, who said: ‘Two of my sisters and I were under the guardianship of the Messenger of Allah—may Allah bless him and grant him peace—and he used to adorn us with gold and silver.’” End quote.\n\nThis explains Ibn al-Sakan's statement that the narration he mentioned is mursal, and shows that the report transmitted from her is in fact only from her mother. It also validates the wording cited by Ibn Manda and removes the supposed error from it—namely, her words, “Then he adorned me.” It is as though the words “My mother said” dropped out of her narration, so that it originally read: “My mother said: ‘Then he adorned me.’”",
+      "arabic_sha256": "695296970af46ba207a4e6cf3f7f7ebc51811fb5fbbf84e25aae9888fcc914c8",
+      "english_sha256": "f89db318aeecc3d0bada7798cb3219eedb5769febd090aa1545bbc0dc33e522d",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011270-segment-0003",
+      "volume": 8,
+      "scan_page": 170,
+      "printed_page": 169,
+      "reader_page": 4082,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4082",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0170:1d0d9c0fa68f73d2",
+      "arabic": "وقال أبو نعيم، بعد أن أخرجه من طريق يحيى الحماني، عن عبد اللَّه بن إدريس، نحو رواية أبي كريب: رواه أبو بكر بن أبي شيبة عن أبي إدريس مثله. ورواه محمد بن عمرو بن علقمة، عن محمد بن عمارة، عن زينب بنت نبيط، قالت: حدثتني أمي وخالتي أن النبي ﷺ حلاهن رعاثا من ذهب، وأمها حبيبة وخالتها كبشة وأبوهما أبوهما أبو أمامة أسعد بن زرارة، وأمهما الفريعة، فقد تحرر من هذا كله أن قول ابن مندة: إن زينب بنت نبيط أحمسية وهم، بل هي أنصارية، وإنها لا صحبة لها، ولا رؤية، وإنما تروي عن أمها، وأن قول أبي موسى في الأحمسية: ويشبه أن تكون هي بنت نبيط بن جابر خطأ، وسببه جزم ابن مندة بأنها أحمسية.\nوسأذكر بقية ترجمة زينب بنت نبيط في القسم الرابع إن شاء اللَّه تعالى.\nوأما الأحمسية فحديثها عند البخاريّ، من طريق قيس بن أبي حازم، قال: دخل أبو بكر على امرأة من أحمس يقال لها زينب، فرآها لا تتكلم ... فذكرها مختصرة، ولم يسم أباها.\nوأورد الخطيب من طريق كريم بن الحارث، عن سلمى بنت جابر الأحمسية، قالت: استشهد زوجي، فأتيت ابن مسعود، فذكرت لها معه قصة؟ فقالوا له: ما رأيناك فعلت بامرأة ما فعلت بهذه؟ فقال: إني سمعت رسول اللَّه ﷺ يقول: «إنّ أوّل أمتي لحوقا بي امرأة من أحمس» .\nانتهى.\nفما أدري هل هي هذه اختلف في اسمها أو أخرى؟\nوترجم لها ابن سعد زينب بنت المهاجر الأحمسية، وأورد لها عن أبي أسامة، عن مجالد، عن عبد اللَّه بن جابر الأحمسي، عن عمته زينب بنت المهاجر، قالت: خرجت حاجة ومعي امرأة فضربت علي فسطاطا، ونذرت ألا أتكلم، فجاء رجل فوقف على باب الخيمة، فقال: السلام عليكم، فردّت عليه صاحبتي، فقال: ما شأن صاحبتك لم ترد علي؟\nقالت: إنها مصمتة، إنها نذرت ألا تتكلم. فقال: تكلّمي، إنما هذا من فعل الجاهلية.\nفقالت: فقلت: من أنت يرحمك اللَّه؟ قال: امرؤ من المهاجرين. فقلت: من أي المهاجرين؟ قال: من قريش. قلت: من أي قريش؟ قال: إنك لسئول، أنا أبو بكر. قلت:\nيا خليفة رسول اللَّه، إنا كنا حديثي عهد بجاهلية لا يأمن بعضنا بعضا، وقد جاء اللَّه من الأمر بما ترى، فحتى متى يدوم؟ قال: ما صلحت أئمتكم. قلت: ومن الأئمة؟ قال: أليس في قومك أشراف يطاعون؟ قلت: بلى. قال: أولئك الأئمة.",
+      "english": "Abu Nu'aym said, after citing it by way of Yahya al-Himmani, from 'Abd Allah ibn Idris, in wording similar to Abu Kurayb's narration: “Abu Bakr ibn Abi Shayba narrated the like of it from Abu Idris. Muhammad ibn 'Amr ibn 'Alqama also narrated it from Muhammad ibn 'Umara, from Zaynab bint Nabit, who said: ‘My mother and my maternal aunt told me that the Prophet—may Allah bless him and grant him peace—adorned them with gold earrings.’ Her mother was Habiba, her maternal aunt was Kabsha, their father—their father—was Abu Umama As'ad ibn Zurara, and their mother was al-Furay'a.” From all of this, it is established that Ibn Manda's statement that Zaynab bint Nabit was Ahmasi is an error. Rather, she was Ansari; she had no status as a Companion and did not see the Prophet, but narrated only from her mother. Abu Musa's statement about the Ahmasi woman, “She appears to be the daughter of Nabit ibn Jabir,” is likewise erroneous; it arose from Ibn Manda's categorical assertion that she was Ahmasi.\n\nI shall mention the remainder of the biographical notice of Zaynab bint Nabit in the fourth section, if Allah Most High wills.\n\nAs for the Ahmasi woman, her hadith is recorded by al-Bukhari, by way of Qays ibn Abi Hazim, who said: “Abu Bakr entered upon a woman from Ahmas called Zaynab and saw that she was not speaking ...” Al-Bukhari mentioned her only briefly and did not name her father.\n\nAl-Khatib cited, by way of Karim ibn al-Harith, from Salma bint Jabir al-Ahmasiyya, who said: “My husband was martyred, so I went to Ibn Mas'ud and told him my story [?]. They said to him, ‘We have never seen you do with any woman what you did with this one.’ He replied, ‘I heard the Messenger of Allah—may Allah bless him and grant him peace—say: “The first of my community to join me will be a woman from Ahmas.”’”\n\nEnd.\n\nI do not know whether she is this same woman, with disagreement over her name, or another woman.\n\nIbn Sa'd gave her a biographical notice under the name Zaynab bint al-Muhajir al-Ahmasiyya, and cited concerning her, from Abu Usama, from Mujalid, from 'Abd Allah ibn Jabir al-Ahmasi, from his paternal aunt Zaynab bint al-Muhajir, who said: “I set out to perform the Hajj, accompanied by a woman. She pitched a tent for me, and I vowed not to speak. A man came and stood at the entrance of the tent. He said, ‘Peace be upon you,’ and my companion returned his greeting. He asked, ‘What is the matter with your companion, that she did not return my greeting?’\n\n“She replied, ‘She is observing silence; she has vowed not to speak.’ He said, ‘Speak, for this is merely a practice of the Age of Ignorance.’\n\n“She continued: ‘I then asked, “Who are you—may Allah have mercy on you?” He replied, “A man from among the Emigrants.” I asked, “From which of the Emigrants?” He replied, “From Quraysh.” I asked, “From which part of Quraysh?” He said, “You are certainly inquisitive! I am Abu Bakr.” I said, “O caliph of the Messenger of Allah, we were but recently in the Age of Ignorance, when none of us felt safe from another. Allah has now brought about the state of affairs that you see; how long, then, will it endure?” He replied, “So long as your leaders remain upright.” I asked, “And who are the leaders?” He replied, “Are there not among your people nobles who are obeyed?” I said, “Yes.” He said, “Those are the leaders.”’”",
+      "arabic_sha256": "1d0d9c0fa68f73d244fbffafc0e181ecbe4525104dfe7f881f3b4b2d67660cb3",
+      "english_sha256": "5920c2bafae4851e0f491d595dbf75625b9b5629a43a5b21fe98af19456ad089",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عليا",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمدا",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت جابر الأحمسية",
+      "english": "Zaynab bint Jaber al-Ahmasiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو بكر الصديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن جابر الأحمسي",
+      "english": "Abd Allah ibn Jaber al-Ahmasi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عبد اللَّه",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "التاريخ",
+      "english": "al-Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "المهاجر بن جابر",
+      "english": "al-Muhajir ibn Jaber",
+      "kind": "person"
+    },
+    {
+      "arabic": "نبيط بن جابر",
+      "english": "Nabit ibn Jaber",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس بن مالك",
+      "english": "Anas ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمس",
+      "english": "Ahmas",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "المعرفة",
+      "english": "al-Ma'rifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "محمد بن عمارة",
+      "english": "Muhammad ibn Umara",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت نبيط بن جابر",
+      "english": "Zaynab bint Nabit ibn Jaber",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الخزرج",
+      "english": "Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "زينب بنت أسعد بن زرارة",
+      "english": "Zaynab bint As'ad ibn Zurara",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "طبقات التّابعيّات",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "زينب بنت نبيط بن جابر بن مالك بن عدي بن زيد بن مناة بن ثعلبة بن عمرو بن مالك بن النجار",
+      "english": "Zaynab bint Nubayt ibn Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن إدريس",
+      "english": "'Abd Allah ibn Idris",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عليّ بن السّكن",
+      "english": "Abu 'Ali ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمارة",
+      "english": "Muhammad ibn 'Umara",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أمامة أسعد بن زرارة",
+      "english": "Abu Umama As'ad ibn Zurara",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو كريب",
+      "english": "Abu Kurayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن جعفر",
+      "english": "'Abd Allah ibn Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرعاث",
+      "english": "al-ri'ath",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى الحماني",
+      "english": "Yahya al-Himmani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر بن أبي شيبة",
+      "english": "Abu Bakr ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو إدريس",
+      "english": "Abu Idris",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمرو بن علقمة",
+      "english": "Muhammad ibn 'Amr ibn 'Alqama",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت نبيط",
+      "english": "Zaynab bint Nabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "حبيبة",
+      "english": "Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "كبشة",
+      "english": "Kabsha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفريعة",
+      "english": "al-Furay'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "نبيط بن جابر",
+      "english": "Nabit ibn Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس بن أبي حازم",
+      "english": "Qays ibn Abi Hazim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخطيب",
+      "english": "al-Khatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "كريم بن الحارث",
+      "english": "Karim ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى بنت جابر الأحمسية",
+      "english": "Salma bint Jabir al-Ahmasiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مسعود",
+      "english": "Ibn Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت المهاجر الأحمسية",
+      "english": "Zaynab bint al-Muhajir al-Ahmasiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أسامة",
+      "english": "Abu Usama",
+      "kind": "person"
+    },
+    {
+      "arabic": "مجالد",
+      "english": "Mujalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن جابر الأحمسي",
+      "english": "'Abd Allah ibn Jabir al-Ahmasi",
+      "kind": "person"
+    },
+    {
+      "arabic": "المهاجرين",
+      "english": "Emigrants",
+      "kind": "other"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "isnad_text",
+      "arabic_span": "رواه أبو بكر بن أبي شيبة عن أبي إدريس مثله",
+      "explanation": "The canonical Arabic and Urdu witness both read “Abu Idris,” so that reading is retained. Its contrast with the immediately preceding 'Abd Allah ibn Idris may nevertheless reflect an inherited textual error for ابن إدريس; the supplied evidence cannot determine this without an independent Arabic witness.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0170:1d0d9c0fa68f73d2"
+    },
+    {
+      "category": "source_uncertainty",
+      "arabic_span": "فذكرت لها معه قصة؟",
+      "explanation": "The context and Urdu witness support the woman saying that she told Ibn Mas'ud her story, but the pronoun sequence لها معه is grammatically irregular and its exact original wording cannot be recovered from the supplied evidence. The final translation therefore preserves an explicit uncertainty marker.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0170:1d0d9c0fa68f73d2"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

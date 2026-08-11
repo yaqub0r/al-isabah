@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011240",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11240,
+  "title": {
+    "english": "Zaynab bint Abi Sufyan",
+    "arabic_observed": "زينب بنت أبي سفيان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011240-segment-0001",
+      "volume": 8,
+      "scan_page": 160,
+      "printed_page": 159,
+      "reader_page": 4072,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4072",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0160:c0690ff86c23bf03",
+      "arabic": "١١٢٤٠- زينب بنت أبي سفيان\nصخر بن حرب بن أمية الأموية «١»، أخت أم المؤمنين أم حبيبة، كانت زوج عروة بن مسعود الثقفي.\nقال ابن مندة: روى عنها علقمة بن عبد اللَّه، ثم ساق من طريق النضر بن محمد المروزي، عن أبي إسحاق سليمان الشيبانيّ، عن محمد بن عبيد اللَّه الثّقفي، عن عروة بن مسعود الثقفي- أنه أسلم وعنده نسوة منهن أربع من قريش، فأمره النبيّ ﷺ أن يختار منهن أربعا، وكان من الأربع اللاتي اختار زينب بنت أبي سفيان القرشية.\nوأخرجه أبو نعيم، من طريق ورقاء، عن سليمان، ولفظه: قال: أسلمت وتحتي عشر نسوة أربع من قريش إحداهن بنت أبي سفيان ... الحديث.\nقال: رواه يحيى بن العلاء، عن الشيبانيّ مثله، ولم يسمها أيضا.",
+      "english": "11240—Zaynab bint Abi Sufyan\n\nSakhr ibn Harb ibn Umayya, the Umayyad woman [1], sister of the Mother of the Believers Umm Habiba. She was the wife of Urwa ibn Masud al-Thaqafi.\n\nIbn Manda said: Alqama ibn Abdullah transmitted from her. He then cited, through al-Nadr ibn Muhammad al-Marwazi, from Abu Ishaq Sulayman al-Shaybani, from Muhammad ibn Ubayd Allah al-Thaqafi, from Urwa ibn Masud al-Thaqafi, that he embraced Islam while he had a number of wives, four of whom were from Quraysh. The Prophet—may Allah bless him and grant him peace—ordered him to choose four of them. Among the four whom he chose was Zaynab bint Abi Sufyan al-Qurashiyya.\n\nAbu Nuaym also related it through Warqa, from Sulayman, with the wording: He said, “I embraced Islam while I had ten wives, four of them from Quraysh, one of whom was the daughter of Abu Sufyan...” to the end of the hadith.\n\nHe said: Yahya ibn al-Ala transmitted it from al-Shaybani in the same manner, but he likewise did not name her.",
+      "arabic_sha256": "fcdbdec4385cbdab20f9444294223cbbecba8e3c1cc911762ef748dc9c344eea",
+      "english_sha256": "1e49c473ebf1411ddd8ab29be80626494809b6e84b9ece8ed490828577adb241",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زينب بنت أبي سفيان القرشية",
+      "english": "Zaynab bint Abi Sufyan al-Qurashiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة بن مسعود الثقفي",
+      "english": "Urwa ibn Masud al-Thaqafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "علقمة بن عبد اللَّه",
+      "english": "Alqama ibn Abdullah",
+      "kind": "person"
+    },
+    {
+      "arabic": "النضر بن محمد المروزي",
+      "english": "al-Nadr ibn Muhammad al-Marwazi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو إسحاق سليمان الشيبانيّ",
+      "english": "Abu Ishaq Sulayman al-Shaybani",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عبيد اللَّه الثّقفي",
+      "english": "Muhammad ibn Ubayd Allah al-Thaqafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nuaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "ورقاء",
+      "english": "Warqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن العلاء",
+      "english": "Yahya ibn al-Ala",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

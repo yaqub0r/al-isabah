@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011808",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11808,
+  "title": {
+    "english": "Nusaybah:",
+    "arabic_observed": "نسيبة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011808-segment-0001",
+      "volume": 8,
+      "scan_page": 334,
+      "printed_page": 333,
+      "reader_page": 4246,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4246",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0334:c12f4a85744d6795",
+      "arabic": "١١٨٠٨- نسيبة:\nبنت ثابت بن عمير «٢» . ذكرها ابن الجوزي في التنقيح.",
+      "english": "11808 - Nusaybah:\n\nDaughter of Thabit ibn 'Umayr.[2] Ibn al-Jawzi mentioned her in al-Tanqih.",
+      "arabic_sha256": "fb0cf64099d03939ab07e3fdbcda8fc7189ff30b23072188a6b298631db73b61",
+      "english_sha256": "a34fa8b0f3798cc05870b0dc82df69d2f31f6fafde28827b6d92961a81b42500",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن الجوزي",
+      "english": "Ibn al-Jawzi",
+      "kind": "person"
+    },
+    {
+      "arabic": "التنقيح",
+      "english": "al-Tanqih",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

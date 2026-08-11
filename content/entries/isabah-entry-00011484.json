@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011484",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11484,
+  "title": {
+    "english": "Afra bint al-Sakan",
+    "arabic_observed": "عفراء بنت السكن"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011484-segment-0001",
+      "volume": 8,
+      "scan_page": 241,
+      "printed_page": 240,
+      "reader_page": 4153,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4153",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0241:113d0f7890ed0c15",
+      "arabic": "١١٤٨٤- عفراء بنت السكن\nبن رافع بن معاوية بن عبيد بن الأبجر، من بني الخزرج، هي أم سعد بن زرارة. ذكرها ابن حبيب في المبايعات.",
+      "english": "11484—Afra bint al-Sakan\n\nibn Rafi ibn Muawiya ibn Ubayd ibn al-Abjar, of Banu al-Khazraj. She was the mother of Sad ibn Zurara. Ibn Habib mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "72cfaf330ecdd8830921f86ea76fa1867b42fdf377a194270d296b57307ccf44",
+      "english_sha256": "751fbec0dfe661973facf2a5d92b0c9cb4e2fdaac43edd122fcb29d532f0d7a6",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو الخزرج",
+      "english": "Banu al-Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سعد بن زرارة",
+      "english": "Sad ibn Zurara",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

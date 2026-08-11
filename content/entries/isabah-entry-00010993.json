@@ -1,0 +1,224 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010993",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10993,
+  "title": {
+    "english": "Jamila bint Sinan",
+    "arabic_observed": "جميلة بنت سنان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010993-segment-0001",
+      "volume": 8,
+      "scan_page": 70,
+      "printed_page": 69,
+      "reader_page": 3982,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3982",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0070:715e8391ef9c3d9a",
+      "arabic": "١٠٩٩٣- جميلة بنت سنان\nبن ثعلبة بن عامر بن مجدعة بن جشم بن حارثة الأنصارية «٤» .\nذكرها ابن حبيب فيمن بايعن النبيّ ﷺ. وقال ابن سعد: أمها خولة بنت المنذر بن\n(١) أخرجه البخاري في صحيحه ٢/ ١٣٠، ٨/ ٦. ومسلم في الصحيح ١/ ٤٤ كتاب الإيمان الإيمان باب (٤) بيان الإيمان الّذي يدخل به الجنة ... حديث رقم ١٥/ ١٤، والترمذي في السنن ٥/ ١٣ كتاب الإيمان باب (٨) ما جاء في حرمه الصلاة حديث رقم ٢٦١٦ وقال أبو عيسى الترمذي هذا حديث حسن صحيح والنسائي في السنن ١/ ٢٣٤ كتاب الصلاة ١٠ ثواب من أقام الصلاة حديث رقم ٤٦٨. وابن ماجة في السنن ٢/ ١٣١٤ كتاب الفتن باب (١٢) كف اللسان في الفتنة حديث رقم ٣٩٧٣، وأحمد في المسند ٣/ ٤٧٢، ٤/ ٧٦، والطبراني في الكبير ٤/ ١٦٦، ١٦٥ والحاكم في المستدرك ١/ ٥١، الهيثمي في الزوائد ١/ ٤٣، ٤٨، ١٠/ ٢٠ والمتقي الهندي في كنز العمال حديث رقم ٤٣٦٢٩، ٤٢٦٣١.\n(٢) أسد الغابة ت ٦٨١٨.\n(٣) أعلام النساء ١/ ١٧٥.\n(٤) أسد الغابة ت ٦٨٢٠.",
+      "english": "10993 — Jamila bint Sinan\n\nibn Tha'laba ibn Amir ibn Mujadda'a ibn Jusham ibn Haritha, the Ansari woman.⁴\n\nIbn Habib mentioned her among the women who pledged allegiance to the Prophet (may Allah bless him and grant him peace). Ibn Sa'd said: Her mother was Khawla bint al-Mundhir ibn—\n\n¹ al-Bukhari transmitted it in Sahih al-Bukhari, 2/130 and 8/6; Muslim in Sahih Muslim, 1/44, Book of Faith, Faith, chapter (4), “Clarification of the Faith by Which One Enters Paradise …,” hadith no. 15/14; al-Tirmidhi in Sunan al-Tirmidhi, 5/13, Book of Faith, chapter (8), “What Has Been Related Concerning the Sanctity of Prayer,” hadith no. 2616. Abu Isa al-Tirmidhi said: “This is a hasan sahih hadith.” Also al-Nasa'i in Sunan al-Nasa'i, 1/234, Book of Prayer, 10, “The Reward of One Who Establishes the Prayer,” hadith no. 468; Ibn Majah in Sunan Ibn Majah, 2/1314, Book of Tribulations, chapter (12), “Restraining the Tongue during Tribulation,” hadith no. 3973; Musnad Ahmad, 3/472 and 4/76; al-Tabarani in al-Kabir, 4/166, 165; al-Hakim in al-Mustadrak, 1/51; al-Haythami in al-Zawa'id, 1/43, 48, and 10/20; and al-Muttaqi al-Hindi in Kanz al-Ummal, hadith nos. 43629 and 42631.\n\n² Usd al-Ghaba, entry no. 6818.\n\n³ A'lam al-Nisa, 1/175.\n\n⁴ Usd al-Ghaba, entry no. 6820.",
+      "arabic_sha256": "5e0a975587f40d3bc404a494b857ad49c0dddc62206c4d98adf4d3beeb9f192a",
+      "english_sha256": "56d9e42de6039bb0460d5e39d1d8a17015299d6ddc81cd7b71e16464a90368f4",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010993-segment-0002",
+      "volume": 8,
+      "scan_page": 71,
+      "printed_page": 70,
+      "reader_page": 3983,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3983",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0071:65d1a2f0a4e3a6cf",
+      "arabic": "عمرو بن حزام الأنصارية الخزرجية، أسلمت وبايعت، وهي أم ثابت بن عبيد السهام بن سليم الأنصاري، من بني خارجة.",
+      "english": "Her mother was Khawla bint al-Mundhir ibn Amr ibn Hazam, an Ansari woman of the Khazraj. Jamila embraced Islam and pledged allegiance, and she was the mother of Thabit ibn 'Ubayd al-Sahham ibn Sulaym al-Ansari, of Banu Kharija.",
+      "arabic_sha256": "97e8351d98866b2043b6063337e02c4b6c56d522d6b032c760599dbf725e4c90",
+      "english_sha256": "2320b0b261e9526b1ac9fbdb2130c30a27bcca652b6fe511a63b19a0ae37efd9",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت المنذر",
+      "english": "Khawla bint al-Mundhir",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجنة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عيسى الترمذي",
+      "english": "Abu Isa al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري في صحيحه",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسلم في الصحيح",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "الترمذي في السنن",
+      "english": "Sunan al-Tirmidhi",
+      "kind": "work"
+    },
+    {
+      "arabic": "النسائي في السنن",
+      "english": "Sunan al-Nasa'i",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن ماجة في السنن",
+      "english": "Sunan Ibn Majah",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد في المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "خولة بنت المنذر بن عمرو بن حزام",
+      "english": "Khawla bint al-Mundhir ibn Amr ibn Hazam",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الخزرج",
+      "english": "Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ثابت بن عبيد السهام بن سليم الأنصاري",
+      "english": "Thabit ibn 'Ubayd al-Sahham ibn Sulaym al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو خارجة",
+      "english": "Banu Kharija",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

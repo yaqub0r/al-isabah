@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011865",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11865,
+  "title": {
+    "english": "Hind bint Mahmud ibn Salama",
+    "arabic_observed": "هند بنت محمود بن سلمة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011865-segment-0001",
+      "volume": 8,
+      "scan_page": 349,
+      "printed_page": 348,
+      "reader_page": 4261,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4261",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0349:4bda574326c611c7",
+      "arabic": "١١٨٦٥- هند بنت محمود بن سلمة\nبن خالد بن عدي الأنصاريّة «٢» .\nذكرها ابن سعد وابن حبيب في المبايعات، [وقال ابن سعد] «٣»: وأمها الشموس بنت عمرو بن حرام بن ثعلبة السلمية، وتزوّجها عمرو بن سعد بن معاذ الأشهليّ.",
+      "english": "11865—Hind bint Mahmud ibn Salama\nibn Khalid ibn Adi al-Ansariyya (2).\n\nIbn Sa'd and Ibn Habib mentioned her among the women who pledged allegiance. [Ibn Sa'd said] (3): “Her mother was al-Shamus bint Amr ibn Haram ibn Tha'laba al-Sulamiyya, and Amr ibn Sa'd ibn Mu'adh al-Ashhali married her.”",
+      "arabic_sha256": "0f50a327a717c696c35f79ceb4e8ff346673e0b49e3c9698d3df3aac14b5f3f3",
+      "english_sha256": "5870bc90be66d82c8cd508b8e09fc91ffced348c4e0373e267d6a85461b5a48f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خالد",
+      "english": "Khalid ibn Uqba ibn Abi Mu'ayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشموس بنت عمرو بن حرام بن ثعلبة السلمية",
+      "english": "al-Shamus bint Amr ibn Haram ibn Tha'laba al-Sulamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن سعد بن معاذ الأشهليّ",
+      "english": "Amr ibn Sa'd ibn Mu'adh al-Ashhali",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

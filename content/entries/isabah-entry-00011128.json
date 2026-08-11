@@ -1,0 +1,105 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011128",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11128,
+  "title": {
+    "english": "Khawla bint 'Uqba",
+    "arabic_observed": "خولة بنت عقبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011128-segment-0001",
+      "volume": 8,
+      "scan_page": 120,
+      "printed_page": 119,
+      "reader_page": 4032,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4032",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0120:43c7c927a85c7db9",
+      "arabic": "١١١٢٨- خولة بنت عقبة\nبن رافع الأشهلية، أخت أم الحكم وأم سعد، وهما عمتا محمود بن لبيد، أسلمت وبايعت، ذكرها ابن سعد، وقال: أمها سلمى بنت عمرو الساعدية، قال: وتزوجها الحارث بن الصمة الأنصاري النّجاري، فولدت له سعدا، ثم خلف عليها عبد اللَّه بن قتادة، فولدت له عمرا.",
+      "english": "11128—Khawla bint 'Uqba\n\nibn Rafi', of the Ashhal. She was the sister of Umm al-Hakam and Umm Sa'd, who were the paternal aunts of Mahmud ibn Labid. She embraced Islam and pledged allegiance. Ibn Sa'd mentioned her and said: Her mother was Salma bint 'Amr al-Sa'idiyya. He said: Al-Harith ibn al-Simma, the Ansari of the Najjar, married her, and she bore him Sa'd. Thereafter, 'Abd Allah ibn Qatada married her, and she bore him 'Amr.",
+      "arabic_sha256": "54cf493d8367a5002e2a36ccd43c7dbf545d3d394265535f81e63524826a4a52",
+      "english_sha256": "965bc1e92937be55d2c062f2981713dc11f70f13c54788c5d7821e416deea7fe",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأشهلية",
+      "english": "al-Ashhal",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم الحكم",
+      "english": "Umm al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعد",
+      "english": "Umm Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمود بن لبيد",
+      "english": "Mahmud ibn Labid",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى بنت عمرو الساعدية",
+      "english": "Salma bint 'Amr al-Sa'idiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الساعدية",
+      "english": "Banu Sa'ida",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الحارث بن الصمة",
+      "english": "al-Harith ibn al-Simma",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصاري",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سعدا",
+      "english": "Sa'd ibn al-Harith ibn al-Simma",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن قتادة",
+      "english": "'Abd Allah ibn Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرا",
+      "english": "'Amr ibn 'Abd Allah ibn Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

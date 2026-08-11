@@ -1,0 +1,150 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011910",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11910,
+  "title": {
+    "english": "Umm Burda al-Ansariyya al-Maziniyya",
+    "arabic_observed": "أم بردة الأنصاريّة المازنيّة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011910-segment-0001",
+      "volume": 8,
+      "scan_page": 364,
+      "printed_page": 363,
+      "reader_page": 4276,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4276",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0364:6e0f5cf398860a3a",
+      "arabic": "١١٩١٠- أم بردة الأنصاريّة المازنيّة\nذكرها «٤» الزّبير في «أخبار المدينة»، عن محمد بن الحسن، عن علي «٥» بن موسى بن عروبة، عن يعقوب بن محمد بن أبي «٦» صعصعة أن النّبيّ ﵌ صلّى في بني مازن في بيت أم بردة.\n(١) أسد الغابة ت (٧٣٧٤)، الاستيعاب ت (٣٥٨١)، الثقات ٣/ ٤٦٢ أعلام النساء ١/ ١٠١، تجريد أسماء الصحابة ٢/ ٣١٣ تلقيح فهوم أهل الأثر ٣٧٣ بقي بن مخلد ٣٠٧، تقريب التهذيب ٢/ ٦١٩، الكاشف ٣/ ٤٨٥ تهذيب التهذيب ١٢/ ٤٦٠، تهذيب الكمال ٣/ ١٧٠٠، بقي بن مخلد ٣٠٧، خلاصة تهذيب الكمال ١/ ١٢٦، الاستبصار ٢٥٢، حلية الأولياء ٢/ ٧٢.\n(٢) أسد الغابة ت (٧٣٧٥) .\n(٣) في أ: لبيد بن حراس بن عامر.\n(٤) في أ: ذكر الزبير.\n(٥) في أ: عن محمد بن موسى.\n(٦) سقط في ط.",
+      "english": "11910—Umm Burda al-Ansariyya al-Maziniyya\n\nAl-Zubayr mentioned her [4] in Akhbar al-Medina, transmitting from Muhammad ibn al-Hasan, from Ali [5] ibn Musa ibn Aruba, from Ya'qub ibn Muhammad ibn Abi [6] Sa'sa'a, that the Prophet—may Allah bless him and grant him peace—prayed among Banu Mazin in the house of Umm Burda.\n\n[1] Usd al-Ghaba, entry 7374; al-Isti'ab, entry 3581; al-Thiqat, 3/462; A'lam al-Nisa, 1/101; al-Tajrid, 2/313; Talqih Fuhum Ahl al-Athar, 373; Baqi ibn Makhlad, 307; Taqrib al-Tahdhib, 2/619; al-Kashif, 3/485; Tahdhib al-Tahdhib, 12/460; Tahdhib al-Kamal, 3/1700; Baqi ibn Makhlad, 307; Khulasat Tahdhib al-Kamal, 1/126; al-Istibsar, 252; Hilyat al-Awliya, 2/72.\n\n[2] Usd al-Ghaba, entry 7375.\n\n[3] In manuscript A: “Labid ibn Hiras ibn Amir.”\n\n[4] In manuscript A: “Al-Zubayr mentioned.”\n\n[5] In manuscript A: “from Muhammad ibn Musa.”\n\n[6] Omitted in manuscript T.",
+      "arabic_sha256": "55905a1c37799a5af51ff8abc392dcf2c1de56e9720e6b452a19a73fa9ea83b1",
+      "english_sha256": "2c0d354390be1ae708083c8be9c7358359da4addf8de591b568c262f3598f805",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم بردة الأنصارية المازنية",
+      "english": "Umm Burda al-Ansariyya al-Maziniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أخبار المدينة",
+      "english": "Akhbar al-Medina",
+      "kind": "work"
+    },
+    {
+      "arabic": "محمد بن الحسن",
+      "english": "Muhammad ibn al-Hasan",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو مازن",
+      "english": "Banu Mazin",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "حلية الأولياء",
+      "english": "Hilyat al-Awliya",
+      "kind": "work"
+    },
+    {
+      "arabic": "لبيد بن حراس بن عامر",
+      "english": "Labid ibn Hiras ibn Amir",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن موسى",
+      "english": "Muhammad ibn Musa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

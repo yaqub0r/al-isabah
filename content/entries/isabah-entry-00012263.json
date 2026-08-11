@@ -1,0 +1,366 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012263",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12263,
+  "title": {
+    "english": "Umm Ma'bad al-Khuza'iyya (2):",
+    "arabic_observed": "أم معبد الخزاعية «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012263-segment-0001",
+      "volume": 8,
+      "scan_page": 476,
+      "printed_page": 475,
+      "reader_page": 4388,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4388",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0476:c4df7ad071bdd1f9",
+      "arabic": "١٢٢٦٣- أم معبد الخزاعية «٢»\n: التي نزل عليها النبي ﵌ لما هاجر، مشهورة بكنيتها، واسمها عاتكة بنت خالد.\nتقدم نسبها في ترجمة أخيها خنيس بن خالد في حرف الخاء المعجمة، وهو أحد من روى قصة نزول النبي ﵌ عليها لما هاجر إلى المدينة، وتقدمت الإشارة إلى ذلك في ترجمته.\nوأخرجه أبو عمر عن عبد الوارث بن سفيان أنه أملاه عليه، قال: حدثنا قاسم بن أصبغ، حدثنا عبد اللَّه بن محمد بن عيسى بن حكيم بن أيوب بن إسماعيل بن محمد بن سليمان بن ثابت بن يسار الخزاعي بقديد، على باب حانوته، حدثني أبو هشام محمد بن\n(١) أسد الغابة ت (٧٦٠٣) .\n(٢) أسد الغابة ت (٧٦٠٥)، الاستيعاب ت (٣٦٧٧) .",
+      "english": "12263- Umm Ma'bad al-Khuza'iyya (2):\n\nShe was the woman with whom the Prophet, may Allah bless him and grant him peace, stayed when he emigrated. She is famous by her kunyah, and her name was 'Atika bint Khalid.\n\nHer lineage was given previously in the biography of her brother Khunays ibn Khalid, under the dotted letter kha. He is one of those who narrated the story of the Prophet's staying with her when he emigrated to Medina; this was referred to previously in his biography.\n\nAbu 'Umar transmitted it from 'Abd al-Warith ibn Sufyan, who dictated it to him. He said: Qasim ibn Asbagh related to us: 'Abd Allah ibn Muhammad ibn 'Isa ibn Hakim ibn Ayyub ibn Isma'il ibn Muhammad ibn Sulayman ibn Thabit ibn Yasar al-Khuza'i related to us at Qudayd, at the door of his shop: Abu Hisham Muhammad ibn...\n\n(1) Usd al-Ghaba, entry 7603.\n\n(2) Usd al-Ghaba, entry 7605; al-Isti'ab, entry 3677.",
+      "arabic_sha256": "7d8a0473bbbbd4bf6a7db63e3f45229a47c7b3259d4019b1bc069b9e71e69d46",
+      "english_sha256": "2056795ccba1e0b9b89b479c7cdb126271cba3671946cfbb3832c0e84190aae5",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012263-segment-0002",
+      "volume": 8,
+      "scan_page": 477,
+      "printed_page": 476,
+      "reader_page": 4389,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4389",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0477:827e3a92b2301c96",
+      "arabic": "سليمان بن الحكم، عن جدي أيوب بن الحكم، عن حزام بن هشام، عن أبيه خنيس بن خالد، صاحب رسول اللَّه ﵌ أن رسول اللَّه ﵌ حين خرج من مكة مهاجرا إلى المدينة هو وأبو بكر ومولى أبي بكر [وهو]، عامر بن عامر بن فهيرة، ودليلهما عبد اللَّه بن أريقط مروا على خيمة أم معبد الخزاعية، وكانت امرأة برزة جلدة تسقي وتطعم بفناء الكعبة، فسألوها لحما، وتمرا ليشتروه، فلم يصيبوا عندها شيئا، وكان القوم مرملين «١»، وفي كسر «٢» الخيمة شاة، فقال رسول اللَّه ﵌: «يا أم معبد، هل بها من لبن»؟ قالت: هي أجهد من ذلك. فقال: «أتأذنين لي أن أحلبها» «٣»؟ قالت: نعم، إن رأيت بها حلبا، فمسح بيده ضرعها، وسمى اللَّه، ودعا لها في شاتها، فدرت واجترت، فدعا بإناء فحلب فيه حتى علاه البهاء «٤»، ثم سقاها حتى رويت، ثم سقى أصحابه حتى رووا، وشرب آخرهم، ثم حلب فيه ثانيا، ثم غادره عندها وبايعها، وارتحلوا عنها ... فذكر الحديث بطوله.\nوأخرجه ابن السّكن، من حديث أم معبد نفسها، أورده من طريق ابن الأشعث حفص بن يحيى التيمي، حدثنا حزام بن هشام عن خنيس، قال: سمعت أبي يحدث عن أم معبد بنت خالد- وهي عمته- أن النبي ﵌ نزل عندها هو وأبو بكر ردفان مخرجه إلى المدينة حين خرج، فأرسلت إليه شاة فرأى فيها بصرة من لبن، فقربها فنظر إلى ضرعها، فقال: واللَّه إن بهذه الشاة للبنا، قال: وهي جالسة تسدّ سقيفتها، فقالت:\nاردد الشاة. فقال: لا، ولكن ابعثي شاة ليس فيها لبن. قال: فبعثت إليه بعناق جذعة فقبلها، فقال: إني أنا رأيت الشاة وإنها لتأدمنا، وتأدم صرمنا.\nثم أخرجه من طريق أبي النّضر- هو هاشم بن القاسم، عن حزام بن هشام، سمعت أبي يحدث عن أم معبد- أن النبي ﵌ نزل عليها، فأرسلت إليه شاة تهديها له، فأبى أن يقبلها، فثقل ذلك عليها، فقالوا: إنما ردها لأنه رأى بها لبنا، فأرسلت إليه بجذعة، فأخذها.\nوذكر الواقديّ في قصة أم معبد قصة الشاة التي مسح النبي ﵌\n(١) أي نفد زادهم، وأصله من الرّمل كأنّهم لصقوا بالرّمل كما قيل للفقير: التّرب. النهاية ٢/ ٢٦٥.\n(٢) أي جانبها. النهاية ٤/ ١٧٢.\n(٣) أخرجه الطبراني في الكبير ٧/ ١٢٤، وابن عساكر في التاريخ ١/ ٣٢٦ وأورده الهيثمي في الزوائد ٨/ ٢٨١ عن محمد بن سليط عن أبيه عن جده بزيادة في أوله قال الهيثمي، رواه الطبراني وفيه عبد العزيز ابن يحيى ونسبه البخاري وغيره إلى الكذب وقال الحاكم صدوق فالعجب منه وفيه مجاهيل أيضا.\n(٤) أراد بهاء اللّبن وهو بيص رغوته. اللسان ١/ ٣٨٠.",
+      "english": "Sulayman ibn al-Hakam, from my grandfather Ayyub ibn al-Hakam, from Hizam ibn Hisham, from his father Khunays ibn Khalid, a Companion of the Messenger of Allah (may Allah bless him and grant him peace), that when the Messenger of Allah (may Allah bless him and grant him peace) departed from Mecca, emigrating to Medina, he, Abu Bakr, Abu Bakr's client [who was] Amir ibn Amir ibn Fuhayra, and their guide, Abdullah ibn Urayqit, passed by the tent of Umm Ma'bad al-Khuza'iyya. She was an independent, hardy woman who gave people drink and food in the open precinct of the Ka'ba. They asked her for meat and dates to purchase, but found nothing with her. The party had exhausted their provisions.[1] At the side[2] of the tent was a ewe. The Messenger of Allah (may Allah bless him and grant him peace) said, “Umm Ma'bad, does she have any milk?” She replied, “She is too exhausted for that.” He said, “Will you permit me to milk her?”[3] She replied, “Yes, if you find any milk in her.” He stroked her udder with his hand, pronounced the name of Allah, and prayed for Umm Ma'bad concerning her ewe. The ewe's milk flowed, and she chewed her cud. He called for a vessel and milked into it until the foam rose over it.[4] He then gave Umm Ma'bad drink until she was satisfied, then gave his Companions drink until they were satisfied, and he drank after all of them. He then milked into it a second time, left it with her, took her pledge of allegiance, and they departed from her.… He then related the hadith in full.\n\nIbn al-Sakan also transmitted it as a hadith of Umm Ma'bad herself. He cited it through Ibn al-Ash'ath (Hafs ibn Yahya al-Taymi), who said: Hizam ibn Hisham related to us, from Khunays, who said: I heard my father narrating from Umm Ma'bad bint Khalid—who was my father's paternal aunt—that the Prophet (may Allah bless him and grant him peace) stopped with her, he and Abu Bakr riding double, at the time of his departure for Medina. She sent him a ewe, and he noticed in her a slight trace of milk. He brought her near and looked at her udder, then said, “By Allah, this ewe certainly has milk.” He said: While she was seated repairing her lean-to, she said, “Send the ewe back.” He replied, “No, but send me a ewe that has no milk.” He said: She sent him a yearling she-goat; the Prophet accepted it and said, “I myself saw the ewe, and she indeed provides relish for us and provides relish for our encampment.”\n\nHe then transmitted it through Abu al-Nadr, namely Hashim ibn al-Qasim, from Hizam ibn Hisham: I heard my father narrating from Umm Ma'bad that the Prophet (may Allah bless him and grant him peace) stopped with her. She sent him a ewe as a gift, but he refused to accept it. This weighed heavily upon her. They told her, “He returned it only because he saw that it had milk.” She then sent him a yearling ewe, and he accepted it.\n\nIn the account of Umm Ma'bad, al-Waqidi mentioned the story of the ewe that the Prophet (may Allah bless him and grant him peace) stroked—\n\n[1] That is, their provisions had run out. The word originally derives from “sand,” as though they had become stuck to the sand, just as a poor person is called al-tarib, “the dust-bound one.” al-Nihaya, 2/265.\n\n[2] That is, its side. al-Nihaya, 4/172.\n\n[3] al-Tabarani transmitted it in al-Kabir, 7/124, and Ibn 'Asakir in al-Tarikh, 1/326. al-Haythami cited it in al-Zawa'id, 8/281, from Muhammad ibn Sulayt, from his father, from his grandfather, with an addition at its beginning. al-Haythami said: “al-Tabarani transmitted it, and its chain contains Abd al-Aziz ibn Yahya, whom al-Bukhari and others accused of lying, while al-Hakim called him truthful—which is astonishing of him. It also contains unidentified narrators.”\n\n[4] He meant the radiance of the milk, namely the gleam of its foam. al-Lisan, 1/380.",
+      "arabic_sha256": "827e3a92b2301c967c14049ee9ec0c27d43cf3730adaab3e72e99306d78693cc",
+      "english_sha256": "f83a3b923b2649088b8f230c8078c7d6a6d0c1a9ec2cb6a9dc27844fb92f4fc7",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012263-segment-0003",
+      "volume": 8,
+      "scan_page": 478,
+      "printed_page": 477,
+      "reader_page": 4390,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4390",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0478:212e528550967186",
+      "arabic": "ضرعها، وذكر أنها عاشت إلى عام الرمادة، قالت: فكنا نحلبها صبوحا وغبوقا وما في الأرض لبن قليل ولا كثير.\nوأخرجه ابن سعد، عن الواقديّ عن حزام بن هشام بنحوه، وزاد: وكانت أم معبد يومئذ مسلمة.\nوقال الواقديّ: قال غيره: قدمت بعد ذلك وأسلمت وبايعت.\nوأخرج أيضا عن الواقديّ، عن إبراهيم بن نافع، عن ابن أبي نجيح، عن عبد اللَّه مولى أسماء بنت أبي بكر، ثم ذكر طريقين آخرين، قالوا: ما شعرت قريش أين توجّه النبي ﵌ حتى سمعوا صوتا بأعلى مكة تتبعه العبيد والصبيان، ولا يرون شخصه يقول:\nجزى اللَّه ربّ النّاس خير جزائه ... رفيقين قالا خيمتي أمّ معبد\nليهن بني كعب مكان فتاتهم ... ومقعدها للمسلمين بمرصد «١»\n[الطويل] الأبيات.\nوذكر عمر بن شبّة في كتاب مكة، من طريق عبد العزيز بن عمران- أنها أتت أم معبد بنت الأشعر، وذكر لها قصة مع سراقة بن جعشم.",
+      "english": "[…] its udder, and he related that it lived until the Year of the Ashes. She said: “We used to milk it morning and evening, when there was no milk in the land, little or much.”\n\nIbn Sa'd also transmitted it from al-Waqidi, from Hizam ibn Hisham, similarly, adding: “Umm Ma'bad was a Muslim at that time.”\n\nal-Waqidi said: Someone else said: “She came later, embraced Islam, and pledged allegiance.”\n\nHe also transmitted from al-Waqidi, from Ibrahim ibn Nafi', from Ibn Abi Najih, from 'Abd Allah, the client of Asma' bint Abi Bakr; he then mentioned two other chains. They said: Quraysh did not know which direction the Prophet—may Allah bless him and grant him peace—had taken until they heard a voice in upper Mecca, followed by enslaved persons and boys, although they could not see its speaker, saying:\n\nMay Allah, the Lord of mankind, grant His best reward\nTo two companions who rested at Umm Ma'bad's tent.\n\nMay Banu Ka'b rejoice in the station of their maiden,\nAnd in her sitting-place, a lookout for the Muslims.¹\n\n[al-Tawil meter] And the remaining verses.\n\n'Umar ibn Shabba mentioned in Kitab Makka, through 'Abd al-'Aziz ibn 'Imran, that she came to Umm Ma'bad bint al-Ash'ar; and he related concerning her an episode involving Suraqa ibn Ju'shum.",
+      "arabic_sha256": "c5d17986e8459f9b12f60b5187383a1611e591cbc59e446bba643b0b21e0747e",
+      "english_sha256": "78bf9c48751abacc6acdebd1da2eef97e20a0f87557771b7255008e3b689857f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أيوب",
+      "english": "Ayyub",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم معبد الخزاعية",
+      "english": "Umm Ma'bad al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاتكة بنت خالد",
+      "english": "'Atika bint Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "خنيس بن خالد",
+      "english": "Khunays ibn Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الوارث بن سفيان",
+      "english": "'Abd al-Warith ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "قاسم بن أصبغ",
+      "english": "Qasim ibn Asbagh",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن محمد بن عيسى بن حكيم بن أيوب بن إسماعيل بن محمد بن سليمان بن ثابت بن يسار الخزاعي",
+      "english": "'Abd Allah ibn Muhammad ibn 'Isa ibn Hakim ibn Ayyub ibn Isma'il ibn Muhammad ibn Sulayman ibn Thabit ibn Yasar al-Khuza'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "قديد",
+      "english": "Qudayd",
+      "kind": "place"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "سليمان بن الحكم",
+      "english": "Sulayman ibn al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أيوب بن الحكم",
+      "english": "Ayyub ibn al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "حزام بن هشام",
+      "english": "Hizam ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله / النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عامر بن عامر بن فهيرة",
+      "english": "Amir ibn Amir ibn Fuhayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن أريقط",
+      "english": "Abdullah ibn Urayqit",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد الخزاعية",
+      "english": "Umm Ma'bad bint Khalid al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد بنت خالد",
+      "english": "Umm Ma'bad bint Khalid al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكعبة",
+      "english": "Ka'ba",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأشعث حفص بن يحيى التيمي",
+      "english": "Ibn al-Ash'ath Hafs ibn Yahya al-Taymi",
+      "kind": "person"
+    },
+    {
+      "arabic": "هاشم بن القاسم",
+      "english": "Abu al-Nadr Hashim ibn al-Qasim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن عساكر",
+      "english": "Ibn 'Asakir",
+      "kind": "person"
+    },
+    {
+      "arabic": "التاريخ",
+      "english": "al-Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "محمد بن سليط",
+      "english": "Muhammad ibn Sulayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد العزيز بن يحيى",
+      "english": "Abd al-Aziz ibn Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللسان",
+      "english": "al-Lisan",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عام الرمادة",
+      "english": "Year of the Ashes",
+      "kind": "other"
+    },
+    {
+      "arabic": "إبراهيم بن نافع",
+      "english": "Ibrahim ibn Nafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي نجيح",
+      "english": "Ibn Abi Najih",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله",
+      "english": "'Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت أبي بكر",
+      "english": "Asma' bint Abi Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو كعب",
+      "english": "Banu Ka'b",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الطويل",
+      "english": "al-Tawil",
+      "kind": "other"
+    },
+    {
+      "arabic": "عمر بن شبة",
+      "english": "'Umar ibn Shabba",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب مكة",
+      "english": "Kitab Makka",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد العزيز بن عمران",
+      "english": "'Abd al-'Aziz ibn 'Imran",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد بنت الأشعر",
+      "english": "Umm Ma'bad bint al-Ash'ar",
+      "kind": "person"
+    },
+    {
+      "arabic": "سراقة بن جعشم",
+      "english": "Suraqa ibn Ju'shum",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن هشام",
+      "english": "Ibn Hisham",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "referent",
+      "arabic_span": "أنها أتت أم معبد بنت الأشعر",
+      "explanation": "The feminine subject of “she came” is implicit. Neither the canonical wording nor the supplied witnesses securely identifies her, so the translation preserves the pronoun without assigning an identity.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0478:212e528550967186"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

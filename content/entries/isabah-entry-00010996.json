@@ -1,0 +1,214 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010996",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10996,
+  "title": {
+    "english": "Jamila bint Abd Allah",
+    "arabic_observed": "جميلة بنت عبد اللَّه"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010996-segment-0001",
+      "volume": 8,
+      "scan_page": 71,
+      "printed_page": 70,
+      "reader_page": 3983,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3983",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0071:65d1a2f0a4e3a6cf",
+      "arabic": "١٠٩٩٦- جميلة بنت عبد اللَّه\nبن أبيّ ابن سلول «٢» .\nذكر ابن سعد أن حنظلة بن أبي عامر تزوجها، فقتل عنها يوم أحد، ثم تزوجها ثابت بن قيس فمات عنها، ثم خلف عليها مالك بن الدخشم، ثم خلف عليها خبيب بن إساف، كذا ذكر ابن مندة، وقوله في ثابت بن قيس: مات عنها وهم لم يقله ابن سعد، فإنّ ثابت بن قيس استشهد باليمامة، وخبيب بن إساف الّذي قال: إنه خلف عليها بعده عاش إلى خلافة عمر كما تقدم في ترجمته، فهذا متدافع، وقد راجعت طبقات ابن سعد فقال ما ملخصه: تزوجها حنظلة بن الراهب فقتل عنها يوم أحد، وهو غسيل الملائكة، فولدت له عبد اللَّه بن حنظلة، ثم تزوجها ثابت بن قيس بن شماس فولدت له محمدا، ثم خلف عليها مالك بن الدخشم، ثم خلف عليها خبيب بن إساف، ثم قال: أسلمت جميلة وبايعت، وهي أخت عبد اللَّه بن عبد اللَّه لأبويه، وقتل ابناها عبد اللَّه ومحمد يوم الحرّة. انتهى.\nوقد تشاغل ابن الأثير بالطعن فيما نقله ابن مندة، فقال: ذكر في ترجمة جميلة بنت أبيّ أنها اختلعت من ثابت بن قيس، وقال في هذه: إنها كانت زوجة حنظلة ولم يقله في التي قبلها، وقال: إن ثابتا مات عنها. فكأنه ظنهما اثنتين حيث رأى تلك جميلة بنت أبيّ،\n(١) أسد الغابة ت ٦٨١٤.\n(٢) أسد الغابة ت ٦٨٢١، الاستيعاب ت ٣٣٢٢.",
+      "english": "10996—Jamila bint Abd Allah\nibn Ubayy ibn Salul (2).\n\nIbn Sa'd mentioned that Hanzala ibn Abi Amir married her and was killed, leaving her widowed, on the day of Uhud. Thabit ibn Qays then married her and died, leaving her widowed. Malik ibn al-Dukhshum then married her, followed by Khubayb ibn Isaf. This is how Ibn Manda related it. His statement concerning Thabit ibn Qays—“he died, leaving her widowed”—is an error; Ibn Sa'd did not say it. Thabit ibn Qays was martyred at al-Yamama, while Khubayb ibn Isaf, whom he said married her afterward, lived until the caliphate of Umar, as stated earlier in his biography. The account is therefore internally contradictory.\n\nI consulted Ibn Sa'd's al-Tabaqat and found that its account, in substance, is as follows: Hanzala ibn al-Rahib married her and was killed, leaving her widowed, on the day of Uhud; he was the one washed by the angels. She bore him Abd Allah ibn Hanzala. Thabit ibn Qays ibn Shammas then married her, and she bore him Muhammad. Malik ibn al-Dukhshum then married her, followed by Khubayb ibn Isaf. He then said: Jamila embraced Islam and pledged allegiance. She was the full sister of Abd Allah ibn Abd Allah, and her two sons, Abd Allah and Muhammad, were killed on the day of al-Harra. End.\n\nIbn al-Athir busied himself criticizing what Ibn Manda had transmitted, saying: “In the biography of Jamila bint Ubayy, he mentioned that she obtained a khul' divorce from Thabit ibn Qays; in this biography, he said that she had been Hanzala's wife, though he had not said so in the preceding one, and he said that Thabit died, leaving her widowed. It is therefore as though he supposed them to be two women when he saw that the former was Jamila bint Ubayy,\n\n(1) Usd al-Ghaba, entry 6814.\n\n(2) Usd al-Ghaba, entry 6821; al-Isti'ab, entry 3322.",
+      "arabic_sha256": "706e5803bfe504cbd04c058fa03a2c9cecd6fbd6f973cb477a9f6fb094efd7bb",
+      "english_sha256": "22507d1d9d5229d6d1b4b3fd983abf4ea355456f06d36fcdedac0dc5206911b8",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010996-segment-0002",
+      "volume": 8,
+      "scan_page": 72,
+      "printed_page": 71,
+      "reader_page": 3984,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3984",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0072:7ef2a8b4975b2fe7",
+      "arabic": "وهذه جميلة بنت عبد اللَّه بن أبيّ، والأول هو الصحيح، والثاني وهم، وليس بشيء، ولو نظر فيهما لعلم أنهما واحدة وسبقه إلى زعم أنهما واحدة أبو نعيم، فقال: خالف الجماعة فأفردها عن المختلعة واهما فيها. وقال ابن الأثير: الحقّ مع أبي نعيم. انتهى.\nوقد أغفل ما وقع لابن مندة من الوهم الّذي نبهت عليه، وهو وارد، عليه، وادّعى أنه وهم في جعلهما اثنتين، وليس كما ظن هو وأبو نعيم، بل الصواب أنهما اثنتان، وأنّ ثابت بن قيس تزوج عمتها، فاختلعت منه، ثم تزوج هذه ففارقها، ولم يقل أحد في الكبرى إنها تزوجت حنظلة ولا مالكا ولا حبيبا، وقد أفرد ابن سعد هذه والتي جزمنا بأنها وهم والحق معه، ولو عكس ابن الأثير فاستدلّ على أنهما واحدة، وأنّ من قال جميلة بنت أبي نسبها إلى جدها لكان متّجها. واللَّه يهدي من يشاء.",
+      "english": "And this is Jamila bint Abd Allah ibn Ubayy. The first form is correct, while the second is an error and is of no account. Had he examined the two entries, he would have known that they concerned one woman. Abu Nu'aym had already advanced the claim that they were one, saying: “He disagreed with the group and, mistakenly, gave her an entry separate from the woman who obtained a khul'.” Ibn al-Athir said: “Abu Nu'aym is correct.” End.\n\nHe overlooked the error into which Ibn Manda had fallen, which I pointed out, and it is a valid objection against him. Instead, he claimed that the error consisted in treating them as two women. But it is not as he and Abu Nu'aym supposed. Rather, the correct view is that they were two women: Thabit ibn Qays married her paternal aunt, who obtained a khul' from him; he then married this woman and separated from her. No one said of the elder woman that she married Hanzala, Malik, or Habib. Ibn Sa'd gave separate entries to this woman and to the one that we stated categorically was an error; and the truth is with him. Had Ibn al-Athir instead argued that they were one woman, on the ground that whoever called her Jamila bint Ubayy had attributed her to her grandfather, that would have been tenable. Allah guides whomever He wills.",
+      "arabic_sha256": "5ea898bc5042090c8dae893df057685507cf394ce4d09527d6a29c42025b08d9",
+      "english_sha256": "dfe0080a29223c9d126077a67da53af7a5c14dfad0dcd744bb819a3f898569a9",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad ibn al-Rabi' ibn Suraqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "حنظلة بن أبي عامر",
+      "english": "Hanzala ibn Abi Amir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "ثابت بن قيس بن شماس",
+      "english": "Thabit ibn Qays ibn Shammas",
+      "kind": "person"
+    },
+    {
+      "arabic": "مالك بن الدخشم",
+      "english": "Malik ibn al-Dukhshum",
+      "kind": "person"
+    },
+    {
+      "arabic": "خبيب بن إساف",
+      "english": "Khubayb ibn Isaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "اليمامة",
+      "english": "al-Yamama",
+      "kind": "place"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "حنظلة بن الراهب",
+      "english": "Hanzala ibn al-Rahib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن حنظلة",
+      "english": "Abd Allah ibn Hanzala",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad ibn Thabit ibn Qays ibn Shammas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحرّة",
+      "english": "al-Harra",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة بنت أبي",
+      "english": "Jamila bint Ubayy",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "جميلة بنت عبد اللَّه بن أبيّ",
+      "english": "Jamila bint Abd Allah ibn Ubayy",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة بنت أبيّ",
+      "english": "Jamila bint Ubayy",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت بن قيس",
+      "english": "Thabit ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "حنظلة",
+      "english": "Hanzala",
+      "kind": "person"
+    },
+    {
+      "arabic": "مالك",
+      "english": "Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيب",
+      "english": "Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "جميلة بنت عبد اللَّه",
+      "english": "Jamila bint Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة",
+      "english": "Jamila",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source_text_syntax",
+      "arabic_span": "وقد أفرد ابن سعد هذه والتي جزمنا بأنها وهم والحق معه",
+      "explanation": "The canonical wording can be rendered literally, but the referent of “the one” and its logical relationship to “the truth is with him” remain uncertain. The supplied witnesses either omit the clause or reproduce the same wording, so no safe emendation is possible.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0072:7ef2a8b4975b2fe7"
+    },
+    {
+      "category": "identity_variant",
+      "arabic_span": "ولا حبيبا",
+      "explanation": "The canonical text clearly reads Habib, which is therefore retained. The preceding account and al-Isti'ab instead name Khubayb ibn Isaf, while Usd al-Ghaba has Habib ibn Yasaf; the supplied evidence cannot establish whether these are textual variants of one identity or distinct references.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0072:7ef2a8b4975b2fe7"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

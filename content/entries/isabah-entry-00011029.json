@@ -1,0 +1,108 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011029",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11029,
+  "title": {
+    "english": "Habiba bint Kharija",
+    "arabic_observed": "حبيبة بنت خارجة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011029-segment-0001",
+      "volume": 8,
+      "scan_page": 81,
+      "printed_page": 80,
+      "reader_page": 3993,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3993",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0081:ffbb46b33cd0e928",
+      "arabic": "١١٠٢٩- حبيبة بنت خارجة\nبن زيد «١»، أو بنت زيد بن خارجة الخزرجية، زوج أبي بكر الصديق، ووالدة أم كلثوم ابنته التي مات أبو بكر وهي حامل بها، فقال ذو بطن بنت خارجة ما أظنها إلا أنثى، فكان كذلك.\nوفي قصة الوفاة النبويّة، من رواية عروة، عن عائشة: استأذن أبو بكر لما رأى من النبي ﷺ أن يأتي بيت خارجة، فأذن له. وقال ابن سعد: حبيبة بنت خارجة بن زيد بن أبي زهير بن مالك بن امرئ القيس بن مالك الأغر، أمهما هزيلة بنت عتبة بن عمرو بن خديج بن عامر بن جشم. أسلمت وبايعت، قال: وخلف على حبيبة بعد أبي بكر إساف بن عتبة بن عمرو.",
+      "english": "11029 — Habiba bint Kharija\n\nibn Zayd (1), or bint Zayd ibn Kharija, of the Khazraj. She was the wife of Abu Bakr al-Siddiq and the mother of his daughter Umm Kulthum. Abu Bakr died while she was pregnant with her, and he said, “As for the child in the womb of Kharija’s daughter, I think it can only be a girl.” And so it was.\n\nIn the account of the Prophet’s death, in the report of Urwa from Aisha: when Abu Bakr saw the Prophet’s condition—may Allah bless him and grant him peace—he asked permission to go to Kharija’s house, and the Prophet gave him permission.\n\nIbn Sa'd said: Habiba bint Kharija ibn Zayd ibn Abu Zuhayr ibn Malik ibn Imri al-Qays ibn Malik al-Agharr; the mother of the two of them was Huzayla bint Utba ibn Amr ibn Khudayj ibn Amir ibn Jusham. She accepted Islam and gave the pledge of allegiance. He said: After Abu Bakr, Isaf ibn Utba ibn Amr married Habiba.",
+      "arabic_sha256": "215d3da4e0028009174ffa1f4500a1712e098e600578cdb3624ee3e266388515",
+      "english_sha256": "376138e1e75a9bf6f1933e97cc0eb720df70b2c95e2387b34c1cceeece72b9c4",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حبيبة بنت خارجة بن زيد",
+      "english": "Habiba bint Kharija ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخزرجية",
+      "english": "Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو بكر الصديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم",
+      "english": "Umm Kulthum bint Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "خارجة",
+      "english": "Kharija",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة بنت خارجة بن زيد بن أبي زهير بن مالك بن امرئ القيس بن مالك الأغر",
+      "english": "Habiba bint Kharija ibn Zayd ibn Abu Zuhayr ibn Malik ibn Imri al-Qays ibn Malik al-Agharr",
+      "kind": "person"
+    },
+    {
+      "arabic": "هزيلة بنت عتبة بن عمرو بن خديج بن عامر بن جشم",
+      "english": "Huzayla bint Utba ibn Amr ibn Khudayj ibn Amir ibn Jusham",
+      "kind": "person"
+    },
+    {
+      "arabic": "إساف بن عتبة بن عمرو",
+      "english": "Isaf ibn Utba ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "pronoun_antecedent",
+      "arabic_span": "أمهما",
+      "explanation": "The dual pronoun means “the mother of the two of them,” but neither the current page nor the supplied witnesses securely identifies the two antecedents. The translation therefore preserves the dual literally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0081:ffbb46b33cd0e928"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011900",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11900,
+  "title": {
+    "english": "Umm Iyas bint Anas",
+    "arabic_observed": "أم إياس بنت أنس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011900-segment-0001",
+      "volume": 8,
+      "scan_page": 359,
+      "printed_page": 358,
+      "reader_page": 4271,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4271",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0359:6351033704f285eb",
+      "arabic": "١١٩٠٠- أم إياس بنت أنس\nبن رافع بن امرئ القيس بن زيد بن عبد الأشهل الأنصاريّة الأشهليّة، أمّها أم شريك بنت خالد بن خنيس، بمعجمة ونون مصغّرا، ابن لوذان بن عبد ودّ بن زيد بن ثعلبة بن الخزرج بن ساعدة.\nقال ابن سعد: أسلمت وبايعت، وكانت زوج أبي سعد بن طلحة، من بني عبد الدّار.",
+      "english": "11900—Umm Iyas bint Anas\n\nibn Rafi ibn Imru' al-Qays ibn Zayd ibn Abd al-Ashhal, the Ansari woman of the Ashhal clan. Her mother was Umm Sharik bint Khalid ibn Khunays—the latter name being in the diminutive form, with kha and nun—ibn Lawdhan ibn Abd Wudd ibn Zayd ibn Tha'laba ibn al-Khazraj ibn Sa'ida.\n\nIbn Sa'd said: She embraced Islam and pledged allegiance. She was the wife of Abu Sa'd ibn Talha, of Banu Abd al-Dar.",
+      "arabic_sha256": "64b3ee1ad278050f85339462f1f28f9dbfd865184e9fc74b7d9995fc3cdac4ac",
+      "english_sha256": "c8b42e0ad47c4d3912018bb5fc5c9177490756ecff5165188ee466466f802922",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سعد بن طلحة",
+      "english": "Abu Sa'd ibn Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو عبد الدار",
+      "english": "Banu Abd al-Dar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "لوذان",
+      "explanation": "The canonical text and Urdu witness preserve the consonantal form only. “Lawdhan” is retained provisionally, but its precise vowel pattern cannot be established from the supplied evidence.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0359:6351033704f285eb"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

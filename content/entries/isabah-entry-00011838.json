@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011838",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11838,
+  "title": {
+    "english": "Huzayla bint Sa'id ibn Suhayl ibn Malik ibn Ka'b ibn Abd al-Ashhal ibn Haritha ibn Dinar ibn al-Najjar, the Ansari woman",
+    "arabic_observed": "هزيلة بنت سعيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011838-segment-0001",
+      "volume": 8,
+      "scan_page": 341,
+      "printed_page": 340,
+      "reader_page": 4253,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4253",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0341:8bab6ecadd2a4180",
+      "arabic": "١١٨٣٨- هزيلة بنت سعيد\nبن سهيل بن مالك بن كعب بن عبد الأشهل «١» بن حارثة بن دينار بن النّجّار الأنصاريّة. ذكرها ابن سعد، وابن حبيب في المبايعات، وقال ابن سعد: أمها شباث بنت خديج بن أوس بن القراقر بن الضحيان، حليف بني حرام.",
+      "english": "11838 — Huzayla bint Sa'id ibn Suhayl ibn Malik ibn Ka'b ibn Abd al-Ashhal ibn Haritha ibn Dinar ibn al-Najjar, the Ansari woman\n\nIbn Sa'd and Ibn Habib mentioned her among the women who pledged allegiance. Ibn Sa'd said: Her mother was Shabath bint Khudayj ibn Aws ibn al-Qaraqar ibn al-Dahyan, al-Dahyan being an ally of Banu Haram.",
+      "arabic_sha256": "2ca79273a4b8193242df810e6ca9f20960dce00d24784ea7e94fc75235738912",
+      "english_sha256": "2d94ef9f2074630e41f7a8cd6f0bba47ec0df4bb30baf5c463674328665d20fb",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مالك",
+      "english": "Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "هزيلة بنت سعيد بن سهيل بن مالك بن كعب بن عبد الأشهل بن حارثة بن دينار بن النجار",
+      "english": "Huzayla bint Sa'id ibn Suhayl ibn Malik ibn Ka'b ibn Abd al-Ashhal ibn Haritha ibn Dinar ibn al-Najjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "شباث بنت خديج بن أوس بن القراقر بن الضحيان",
+      "english": "Shabath bint Khudayj ibn Aws ibn al-Qaraqar ibn al-Dahyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني حرام",
+      "english": "Banu Haram",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأنصاريّة",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

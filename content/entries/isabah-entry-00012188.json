@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012188",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12188,
+  "title": {
+    "english": "Umm Amr bint Amr",
+    "arabic_observed": "أم عمرو بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012188-segment-0001",
+      "volume": 8,
+      "scan_page": 445,
+      "printed_page": 444,
+      "reader_page": 4357,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4357",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0445:3ffaff7672c6c364",
+      "arabic": "١٢١٨٨- أم عمرو بنت عمرو\nبن حرام الأنصاريّة الخزرجيّة، ذكرها ابن سعد في المبايعات، وقال: تزوّجها أبو اليسر بن كعب.",
+      "english": "12188—Umm Amr bint Amr\n\nibn Haram, the Ansari woman of the Khazraj. Ibn Sa'd mentioned her among the women who pledged allegiance and said: Abu al-Yusr ibn Ka'b married her.",
+      "arabic_sha256": "7606d5c3d8132a9710ad102c177d517bc6758473dedc8de96904a94f9fd109b6",
+      "english_sha256": "debec71335a56fcd8634dd6db7df21a640096456f842b8feb5760324b1c2028a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخزرج",
+      "english": "Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو اليسر بن كعب",
+      "english": "Abu al-Yusr ibn Ka'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو زوج حريث بن عمرو بن عثمان المخزومي",
+      "english": "Umm Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو زوج سليم الزرقي",
+      "english": "Umm Amr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

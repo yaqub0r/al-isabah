@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012211",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12211,
+  "title": {
+    "english": "Umm Qays bint Ubayd ibn Ziyad ibn Thalaba ibn Khansa ibn Mabdhul, of Banu Mazin ibn al-Najjar.",
+    "arabic_observed": "أم قيس بنت عبيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012211-segment-0001",
+      "volume": 8,
+      "scan_page": 454,
+      "printed_page": 453,
+      "reader_page": 4366,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4366",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0454:ed54e7c92e72373b",
+      "arabic": "١٢٢١١- أم قيس بنت عبيد\nبن زياد بن ثعلبة بن خنساء بن مبذول، من بني مازن بن النجار.\nذكرها ابن سعد، فقال: أمها أم عبد اللَّه بنت شبيل بن الحارث بن عوف، تزوجها أبو سليط بن أبي حارثة، فولدت له سليطا وفاطمة، قال: وأسلمت أم قيس، وشهدت خيبر وغيرها.",
+      "english": "12211—Umm Qays bint Ubayd ibn Ziyad ibn Thalaba ibn Khansa ibn Mabdhul, of Banu Mazin ibn al-Najjar.\n\nIbn Sa'd mentioned her and said: Her mother was Umm Abd Allah bint Shubayl ibn al-Harith ibn Awf. Abu Sulayt ibn Abi Haritha married her, and she bore him Sulayt and Fatima. He said: Umm Qays embraced Islam and was present at Khaybar and elsewhere.",
+      "arabic_sha256": "76da6fd849d4580abbaf5cb7e4567058f09f247605db8c1b05273552b0dbb4f6",
+      "english_sha256": "91ed34d6ec32e4a286dd8cbaa6b74284c9fff03d1530316bd2719b29af5bc66d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله تعالى",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم قيس بنت عبيد بن زياد بن ثعلبة بن خنساء بن مبذول",
+      "english": "Umm Qays bint Ubayd ibn Ziyad ibn Thalaba ibn Khansa ibn Mabdhul",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو مازن بن النجار",
+      "english": "Banu Mazin ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبد الله بنت شبيل بن الحارث بن عوف",
+      "english": "Umm Abd Allah bint Shubayl ibn al-Harith ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سليط بن أبي حارثة",
+      "english": "Abu Sulayt ibn Abi Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليط",
+      "english": "Sulayt ibn Abi Sulayt ibn Abi Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima bint Abi Sulayt ibn Abi Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

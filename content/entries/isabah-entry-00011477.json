@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011477",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11477,
+  "title": {
+    "english": "Azza bint Abi Sufyan ibn Harb al-Umawiyya (1)",
+    "arabic_observed": "عزة بنت أبي سفيان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011477-segment-0001",
+      "volume": 8,
+      "scan_page": 240,
+      "printed_page": 239,
+      "reader_page": 4152,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4152",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0240:4ea98228eacce38b",
+      "arabic": "١١٤٧٧- عزة بنت أبي سفيان\nبن حرب الأموية «١»، أخت أم حبيبة زوج النبي صلّى اللَّه تعالى عليه وسلّم.\nثبت أنها هي التي عرضتها على النبي ﷺ أن يتزوّجها، فقال: «إنّها لا تحلّ لي» .\nقالت: فإنا نتحدث أنك تريد أن تنكح بنت أبي سلمة. قال: «إنّها لو لم تكن ربيبتي في حجري ما حلّت لي، إنّها ابنة أخي من الرّضاعة فلا تعرضن عليّ بناتكنّ ولا أخواتكنّ» .\nوقعت تسميتها عزة في رواية الليث عن يزيد بن أبي حبيب، عن الزهري، عن زينب بنت أبي سلمة، عن أم حبيبة عند مسلم والنسائي.\nوقد تقدم ذكر من سماها درة في حرف الدال، ولعل أحد الاسمين كان لقبا لها.\nوالمحفوظ درة اسم بنت أبي سلمة وقعت تسميتها في الصحيح أيضا.",
+      "english": "11477 — Azza bint Abi Sufyan ibn Harb al-Umawiyya (1)\n\nThe sister of Umm Habiba, wife of the Prophet—may Allah Most High bless him and grant him peace.\n\nIt is established that she was the woman Umm Habiba offered to the Prophet—may Allah bless him and grant him peace—in marriage. He said: “She is not lawful for me.”\n\nUmm Habiba said: “We are told that you intend to marry the daughter of Abu Salama.” He said: “Even if she were not my stepdaughter under my care, she would not be lawful for me. She is the daughter of my foster brother. So do not offer me your daughters or your sisters.”\n\nShe is named Azza in the report of al-Layth from Yazid ibn Abi Habib, from al-Zuhri, from Zaynab bint Abi Salama, from Umm Habiba, in Muslim and al-Nasa'i.\n\nThose who named her Durra were mentioned earlier, under the letter dal. Perhaps one of the two names was a sobriquet of hers.\n\nThe reliably preserved reading is that Durra was the name of Abu Salama's daughter; she is also explicitly named in al-Sahih.",
+      "arabic_sha256": "4702c6e7a0ec3ee0273ab1d8d0a6b28aaab0dfac1391f7b32b6c631dc27e75b5",
+      "english_sha256": "3abefa06e51dc797b2016cbac3e8805a5ad59e6393de95b105aac86aae70fd7d",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عزة بنت أبي سفيان بن حرب الأموية",
+      "english": "Azza bint Abi Sufyan ibn Harb al-Umawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سلمة",
+      "english": "Abu Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "درة",
+      "english": "Azza bint Abi Sufyan ibn Harb al-Umawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الليث",
+      "english": "al-Layth",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن أبي حبيب",
+      "english": "Yazid ibn Abi Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت أبي سلمة",
+      "english": "Zaynab bint Abi Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "al-Sahih",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

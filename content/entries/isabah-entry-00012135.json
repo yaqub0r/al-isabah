@@ -1,0 +1,259 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012135",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12135,
+  "title": {
+    "english": "Umm Abd Allah bint Aws al-Ansariyya⁴:",
+    "arabic_observed": "أم عبد اللَّه"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012135-segment-0001",
+      "volume": 8,
+      "scan_page": 428,
+      "printed_page": 427,
+      "reader_page": 4340,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4340",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0428:e0ff5ef0ec0efac7",
+      "arabic": "١٢١٣٥- أم عبد اللَّه\nبنت أوس الأنصاريّة «٤»، أخت شداد بن أوس الأنصاريّة.\nتقدم نسبها في ترجمته. قال أبو عمر: شامية، روى عنها ضمرة بن حبيب.\nقلت: لها حديث\nأخرجه أحمد في «الزّهد»، والطّبرانيّ، وابن مندة، والمعافى بن عمران في تاريخ الموصل، اللفظ له، من طرق عن ضمرة بنت حبيب عن أم عبد اللَّه أخت\n(١) أخرجه ابن سعد في الطبقات الكبرى ٨/ ٢٣٤.\n(٢) أسد الغابة ت (٧٥١٢) .\n(٣) أخرجه أبو داود في السنن ١/ ٤٦٣ كتاب الصلاة باب استحباب الترتيل في القراءة حديث رقم ١٤٦٧ وأخرجه البيهقي في دلائل النبوة ٥/ ٧٠ عن عبد اللَّه بن مغفل وعزاه أبي البخاري في كتاب التوحيد باب ذكر النبي وروايته عن ربه وفي كتاب التفسير، وأخرجه مسلم في كتاب الصلاة باب ذكر قراءة النبي سورة، الفتح يوم فتح مكة.\n(٤) الثقات ٣/ ٤٦٣، أعلام النساء ٣/ ٥٣٤، تجريد أسماء الصحابة ٢/ ٣٢٦، الاستبصار ٥٤، تلقيح فهوم أهل الأثر ٣٧٨.",
+      "english": "12135—Umm Abd Allah bint Aws al-Ansariyya⁴:\n\nShe was the Ansari sister of Shaddad ibn Aws.\n\nHer lineage was given previously in his biographical entry. Abu Umar said: “She was Syrian; Damra ibn Habib narrated from her.”\n\nI say: She has a hadith related by Ahmad in al-Zuhd, al-Tabarani, Ibn Manda, and al-Mu'afa ibn Imran in the History of Mosul—the wording is his—through several routes from Damra ibn Habib [the printed Arabic has “Damra bint Habib”], from Umm Abd Allah, the sister of—\n\n(1) Related by Ibn Sa'd in al-Tabaqat, 8/234.\n\n(2) Usd al-Ghaba, entry 7512.\n\n(3) [Editorial note: This footnote appears to be misplaced in the Arabic edition. Its citations concern the Prophet’s recitation of Surat al-Fath on the day of the conquest of Mecca, rather than the preceding report from Abu al-Tufayl; its intended location cannot be determined.] Related by Abu Dawud in al-Sunan, 1/463, Book of Prayer, chapter on the desirability of measured recitation, hadith no. 1467. Al-Bayhaqi also related it in Dala'il al-Nubuwwa, 5/70, from Abd Allah ibn Mughaffal, and attributed it to al-Bukhari [conjecturally reading ila al-Bukhari for the problematic printed abi al-Bukhari] in the Book of Divine Unity, chapter on mention of the Prophet and his narration from his Lord, and in the Book of Exegesis. Muslim also related it in the Book of Prayer, chapter on the Prophet’s recitation of Surat al-Fath on the day of the conquest of Mecca.\n\n(4) Al-Thiqat, 3/463; A'lam al-Nisa, 3/534; al-Tajrid, 2/326; al-Istibsar, p. 54; Talqih Fuhum Ahl al-Athar, p. 378.",
+      "arabic_sha256": "0cae7f2ff783854a60e816d41d97081e57a78d682a107feeab14fd502bf3b85b",
+      "english_sha256": "38e00198d403be93c7e9534ec60bce3d0cfe6241cef7dd32789bc7024699c8c6",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012135-segment-0002",
+      "volume": 8,
+      "scan_page": 429,
+      "printed_page": 428,
+      "reader_page": 4341,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4341",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0429:c656a103def0737c",
+      "arabic": "شدّاد بن أوس- أنها بعثت للنبيّ ﵌ بقدح لبن عند فطره وهو صائم، وذلك في طول النهار وشدّة الحر، فردّ إليها رسولها أنّي لك هذا اللّبن؟ فقالت: من شاة لي، فردّ إليها رسولها: أنّى كانت لك هذه الشّاة؟ فقالت: اشتريتها من مال، فأخذه منها.\nفلما كان الغد أتته أمّ عبد اللَّه، فقالت: يا رسول اللَّه، بعثت إليك باللّبن مرثية لك من شدّة الحرّ وطول النّهار، فرددت الرسول فيه! فقال: «بذلك أمرت الرّسل ألّا تأكل إلّا طيّبا ولا تعمل إلّا صالحا» .",
+      "english": "Shaddad ibn Aws—that she sent the Prophet (may Allah bless him and grant him peace) a cup of milk when he was breaking his fast after fasting, during a time of long days and intense heat. He sent her messenger back to ask, “From where did you get this milk?” She replied, “From a ewe of mine.” He sent her messenger back again to ask, “From where did you get this ewe?” She replied, “I bought it with some property.” He then accepted the milk from her.\n\nThe following day, Umm Abd Allah came to him and said, “O Messenger of Allah, I sent you the milk out of compassion for you because of the intense heat and the length of the day, but you kept sending the messenger back concerning it!” He said, “This is what the messengers were commanded: to eat only what is wholesome and to do only what is righteous.”",
+      "arabic_sha256": "659a52171973582a11099058390839292330acca1b20a6b50998d6cd88358f5d",
+      "english_sha256": "d85c07fc4b4f5140da64377e472f88d51e43421fb1617320ba7e3ccac2e18c3f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "أم عبد الله بنت أوس الأنصارية",
+      "english": "Umm Abd Allah bint Aws al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبد الله",
+      "english": "Umm Abd Allah bint Aws al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "شداد بن أوس",
+      "english": "Shaddad ibn Aws",
+      "kind": "person"
+    },
+    {
+      "arabic": "شامية",
+      "english": "Syria",
+      "kind": "place"
+    },
+    {
+      "arabic": "ضمرة بن حبيب",
+      "english": "Damra ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ضمرة بنت حبيب",
+      "english": "Damra ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهد",
+      "english": "al-Zuhd",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "المعافى بن عمران",
+      "english": "al-Mu'afa ibn Imran",
+      "kind": "person"
+    },
+    {
+      "arabic": "تاريخ الموصل",
+      "english": "History of Mosul",
+      "kind": "work"
+    },
+    {
+      "arabic": "الموصل",
+      "english": "Mosul",
+      "kind": "place"
+    },
+    {
+      "arabic": "الطبقات الكبرى",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "al-Sunan",
+      "kind": "work"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "دلائل النبوة",
+      "english": "Dala'il al-Nubuwwa",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد الله بن مغفل",
+      "english": "Abd Allah ibn Mughaffal",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب التوحيد",
+      "english": "Book of Divine Unity",
+      "kind": "work"
+    },
+    {
+      "arabic": "كتاب التفسير",
+      "english": "Book of Exegesis",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الصلاة",
+      "english": "Book of Prayer",
+      "kind": "work"
+    },
+    {
+      "arabic": "سورة الفتح",
+      "english": "Surat al-Fath",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "شدّاد بن أوس",
+      "english": "Shaddad ibn Aws",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "textual_crux",
+      "arabic_span": "وعزاه أبي البخاري",
+      "explanation": "The printed wording is grammatically problematic. The final text transparently adopts the plausible conjecture وعزاه إلى البخاري, but the Urdu witness does not establish the intended original wording.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0428:e0ff5ef0ec0efac7"
+    },
+    {
+      "category": "footnote_placement",
+      "arabic_span": "(٣) أخرجه أبو داود في السنن ... يوم فتح مكة",
+      "explanation": "Footnote 3 plainly concerns reports about reciting Surat al-Fath rather than Abu al-Tufayl’s description, but the evidence does not establish where the note originally belonged. It has therefore been retained at its canonical location with an editorial warning.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0428:e0ff5ef0ec0efac7"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

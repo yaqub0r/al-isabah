@@ -1,0 +1,159 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012181",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12181,
+  "title": {
+    "english": "Umm Ali bint Khalid ibn Taym ibn Bayada ibn Khifaf (5) ibn Sa'id ibn Murra ibn Malik ibn al-Aws, the Ansari woman of al-Aws.",
+    "arabic_observed": "أم علي بنت خالد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012181-segment-0001",
+      "volume": 8,
+      "scan_page": 441,
+      "printed_page": 440,
+      "reader_page": 4353,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4353",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0441:39dffdff00963eac",
+      "arabic": "١٢١٨١- أم علي بنت خالد\nبن تيم بن بياضة بن خفاف «٥» بن سعيد بن مرة بن مالك بن الأوس الأنصاريّة الأوسيّة.\nذكرها ابن الأثير عن ابن الدّبّاغ مستدركا على من تقدّمه، وقال: نزل الأذان في بيتها،\n(١) أسد الغابة ت (٧٥٤٨)، تجريد أسماء الصحابة ٢/ ٣٢٩، الكاشف ٣/ ٤٩٠ تهذيب الكمال ٣/ ١٧٠٥، خلاصة تذهيب ٣/ ٤٠١.\n(٢) في أيونس بن يوسف.\n(٣) هو ما يلقيه النار من وسخ الحديد إذا أذيب. النهاية ٢/ ٥.\n(٤) أورده المتقي الهندي في كنز العمال حديث قم ٦٧٥٨ ولفظه عن فاطمة الخزاعية اصبري فإنّها تذهب خبث ابن آدم كما يذهب الكير خبث الحديد يعني الحمى وعزاه للطبراني في الكبير.\n(٥) أسد الغابة ت (٧٥٤٩) .",
+      "english": "12181—Umm Ali bint Khalid ibn Taym ibn Bayada ibn Khifaf (5) ibn Sa'id ibn Murra ibn Malik ibn al-Aws, the Ansari woman of al-Aws.\n\nIbn al-Athir mentioned her on the authority of Ibn al-Dabbagh, supplying an omission by those who preceded him, and said: The call to prayer was revealed in her house,\n\n(1) Usd al-Ghaba, entry 7548; al-Tajrid 2/329; al-Kashif 3/490; Tahdhib al-Kamal 3/1705; Khulasat Tadhhib 3/401.\n\n(2) In A: “Yunus ibn Yusuf.”\n\n(3) It is the dirt from the iron that fire casts off when the iron is melted. al-Nihaya 2/5.\n\n(4) al-Muttaqi al-Hindi included it in Kanz al-Ummal, hadith no. 6758, with the following wording, from Fatima al-Khuza'iyya: “Be patient, for it removes the impurity of the son of Adam just as the bellows remove the dross of iron”—meaning fever. He attributed it to al-Tabarani in al-Kabir.\n\n(5) Usd al-Ghaba, entry 7549.",
+      "arabic_sha256": "5955edea7bfbd680193d11dd4ab6b8b202b60577a5ef7dbed93deb69f064f82f",
+      "english_sha256": "69a09afd1179bb7e23b3d6450ae3b9b633b440cb9676e247e76058d06885656c",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012181-segment-0002",
+      "volume": 8,
+      "scan_page": 442,
+      "printed_page": 441,
+      "reader_page": 4354,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4354",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0442:32a61f42836ea73f",
+      "arabic": "قاله ابن الكلبيّ. وقال العدويّ: لم أر أهل الحجاز يعرفون هذا.\nقلت: وهو في آخر نسب الأنصار من تذكرة ابن الكلبيّ، لكن لم يصرح بأنّ لها صحبة.",
+      "english": "Ibn al-Kalbi said this. al-Adawi said: “I have not seen the people of the Hijaz recognize this.”\n\nI say: It occurs at the end of the genealogy of the Ansar in Tadhkirat Ibn al-Kalbi, but he did not explicitly state that she had companionship with the Prophet.",
+      "arabic_sha256": "ee75798dcbcb2302085073895b08929af037cdaa8976fa027315b6c8aa86f526",
+      "english_sha256": "3d682e2d1a257976cf7fb3e366e2c892a5a3371cea60be08c9e7da6e0d1d8cd2",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأوس",
+      "english": "al-Aws",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الدّبّاغ",
+      "english": "Ibn al-Dabbagh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب",
+      "english": "Khulasat Tadhhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "يونس بن يوسف",
+      "english": "Yunus ibn Yusuf",
+      "kind": "person"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "فاطمة الخزاعية",
+      "english": "Fatima al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "آدم",
+      "english": "Adam",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن الكلبي",
+      "english": "Ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "العدوي",
+      "english": "al-Adawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحجاز",
+      "english": "Hijaz",
+      "kind": "place"
+    },
+    {
+      "arabic": "تذكرة ابن الكلبي",
+      "english": "Tadhkirat Ibn al-Kalbi",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

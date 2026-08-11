@@ -1,0 +1,120 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012084",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12084,
+  "title": {
+    "english": "Umm Sinan al-Ansariyya.¹",
+    "arabic_observed": "أم سنان الأنصارية «١» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012084-segment-0001",
+      "volume": 8,
+      "scan_page": 413,
+      "printed_page": 412,
+      "reader_page": 4325,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4325",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0413:392da5276c647637",
+      "arabic": "١٢٠٨٤- أم سنان الأنصارية «١» .\nخلطها ابن مندة بالأسلمية، فاستدركها أبو موسى،\nوأخرج من طريق حبيب المعلم عن عطاء عن ابن عباس- أن النبي ﵌ لما رجع من حجة الوداع لقي امرأة من الأنصار يقال لها أم سنان، فقال: عمرة في رمضان تعدل حجة أو حجة معي.\nوأخرجه ابن مندة، من طريق صدقة بن عبد اللَّه، عن ابن جريج، عن عطاء، عن ابن عباس أن النبيّ ﵌ قال لامرأة من الأنصار: ما منعك أن تحجّي معنا؟\nالحديث.\nقال ابن جريج: وسمعت داود بن أبي عاصم يحدث عن عطاء، عن أبي بكر بن عبد الرحمن بهذا، وسمى المرأة أم سنان.",
+      "english": "12084—Umm Sinan al-Ansariyya.¹\n\nIbn Manda conflated her with the Aslamiyya, so Abu Musa added her as an omitted entry.\n\nHe related through Habib al-Muallim, from Ata, from Ibn Abbas, that when the Prophet—may Allah bless him and grant him peace—returned from the Farewell Pilgrimage, he met a woman of the Ansar called Umm Sinan and said: “An umra in Ramadan is equivalent to a Hajj—or to a Hajj with me.”\n\nIbn Manda also related it through Sadaqa ibn Abd Allah, from Ibn Jurayj, from Ata, from Ibn Abbas, that the Prophet—may Allah bless him and grant him peace—said to a woman of the Ansar: “What prevented you from performing Hajj with us?” The hadith.\n\nIbn Jurayj said: “I also heard Dawud ibn Abi Asim narrating this from Ata, from Abu Bakr ibn Abd al-Rahman,” and he named the woman as Umm Sinan.",
+      "arabic_sha256": "22dee9fa38310ec51c2d7ef6bc63ce672720614284b8d058cc263ead6d3fc632",
+      "english_sha256": "a71d7b58397bb50a0e0beae38886c6c15c80b7c0faffc5ad68001e0657e082fd",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم سنان",
+      "english": "Umm Sinan al-Aslamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سنان الأنصارية",
+      "english": "Umm Sinan al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيب المعلم",
+      "english": "Habib al-Muallim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاء",
+      "english": "Ata",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجة الوداع",
+      "english": "Farewell Pilgrimage",
+      "kind": "other"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "رمضان",
+      "english": "Ramadan",
+      "kind": "other"
+    },
+    {
+      "arabic": "صدقة بن عبد اللَّه",
+      "english": "Sadaqa ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن جريج",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "داود بن أبي عاصم",
+      "english": "Dawud ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر بن عبد الرحمن",
+      "english": "Abu Bakr ibn Abd al-Rahman",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

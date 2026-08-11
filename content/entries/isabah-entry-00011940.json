@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011940",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11940,
+  "title": {
+    "english": "Umm Jundab:",
+    "arabic_observed": "أم جندب:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011940-segment-0001",
+      "volume": 8,
+      "scan_page": 370,
+      "printed_page": 369,
+      "reader_page": 4282,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4282",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0370:56fa4e301fceadfb",
+      "arabic": "١١٩٤٠- أم جندب:\nوالدة أبي ذرّ «٣» .\nوقع في قصّة إسلام أبي ذرّ الغفاريّ، عن مسلم، من طريق حميد بن هلال، عن عبد اللَّه بن الصّامت، عن أبي ذرّ، قال: فلما أسلمت أتيت أخي وأمي، فقالا: لا رغبة لنا عن دينك، فأسلمت أمي وأخي ... الحديث.",
+      "english": "11940—Umm Jundab:\nThe mother of Abu Dharr.³\n\nIn Muslim's account of the conversion of Abu Dharr al-Ghifari, through Humayd ibn Hilal, from Abd Allah ibn al-Samit, from Abu Dharr, he said: “When I had embraced Islam, I went to my brother and my mother. They said, ‘We have no wish to turn away from your religion.’ My mother and my brother then embraced Islam…”—the hadith.",
+      "arabic_sha256": "e7900db4854844d3031cd6656fbf14caecbe592cb6d13ac83e115dab80a175d2",
+      "english_sha256": "c378cdb52a0323684059a944c933519738011df77baa4f5a6026322ed33c5035",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم جندب",
+      "english": "Umm Jundab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو ذر الغفاري",
+      "english": "Abu Dharr al-Ghifari",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "حميد بن هلال",
+      "english": "Humayd ibn Hilal",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن الصامت",
+      "english": "Abd Allah ibn al-Samit",
+      "kind": "person"
+    },
+    {
+      "arabic": "الغفاري",
+      "english": "Ghifar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

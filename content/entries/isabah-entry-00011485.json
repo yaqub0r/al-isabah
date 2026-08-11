@@ -1,0 +1,155 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011485",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11485,
+  "title": {
+    "english": "Afra bint Ubayd",
+    "arabic_observed": "عفراء بنت عبيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011485-segment-0001",
+      "volume": 8,
+      "scan_page": 241,
+      "printed_page": 240,
+      "reader_page": 4153,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4153",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0241:113d0f7890ed0c15",
+      "arabic": "١١٤٨٥- عفراء بنت عبيد\nبن ثعلبة بن سواد بن غنم «٣»، ويقال ثعلبة بن عبيد بن ثعلبة بن غنم بن مالك بن النجار.\nذكرها ابن حبيب في المبايعات، وهي والدة معاذ، ومعوذ، وعوف بني الحارث، يقال لكل منهم ابن عفراء.\nوقال ابن سعد: أمها الرعاة بنت عدي بن معاذ، تزوّجها الحارث بن رفاعة بن الحارث بن سواد، فولدت له.\nقال ابن الكلبيّ: قتل معاذ ومعوذ، فجاءت أمّهما إلى النبيّ ﵌ فقالت: يا رسول اللَّه، هذا سرّ بني عوف بن الحارث. فقال: «لا» .\nقال ابن الأثير: لم يوافق ابن الكلبي على قوله: إن معاذا قتل ببدر.\nقلت: وعفراء هذه لها خصيصة لا توجد لغيرها، وهي أنها تزوّجت بعد الحارث البكير بن يا ليل الليثي، فولدت له أربعة: إياسا، وعاقلا، وخالدا، وعامرا، وكلّهم شهدوا بدرا، وكذلك إخوتهم لأمهم بنو الحارث، فانتظم من هذا أنها امرأة صحابية لها سبعة أولاد شهدوا كلهم بدرا مع النبي ﵌.\n(١) في أ: ابن عزيزة.\n(٢) أسد الغابة ت (٧١١٠) .\n(٣) أسد الغابة ت (٧١١٢) .",
+      "english": "11485—Afra bint Ubayd\n\nibn Thalaba ibn Sawad ibn Ghanm;(3) it is also said: Thalaba ibn Ubayd ibn Thalaba ibn Ghanm ibn Malik ibn al-Najjar.\n\nIbn Habib mentioned her among the women who pledged allegiance. She was the mother of Muadh, Muawwidh, and Awf, the sons of al-Harith; each of them was called Ibn Afra.\n\nIbn Sad said: Her mother was al-Ru'at bint Adi ibn Muadh. Al-Harith ibn Rifaa ibn al-Harith ibn Sawad married her, and she bore him children.\n\nIbn al-Kalbi said: Muadh and Muawwidh were killed, whereupon their mother came to the Prophet—may Allah bless him and grant him peace—and said, “O Messenger of Allah, this is the choicest of my sons: Awf ibn al-Harith.” He said, “No.”\n\nIbn al-Athir said: Ibn al-Kalbi was not corroborated in his statement that Muadh was killed at Badr.\n\nI say: This Afra possessed a distinction found in no other woman: after al-Harith, she married al-Bukayr ibn Yalil al-Laythi and bore him four sons—Iyas, Aqil, Khalid, and Amir—all of whom witnessed Badr. Their maternal brothers, the sons of al-Harith, did so as well. It thus follows that she was a woman Companion who had seven sons, all of whom witnessed Badr with the Prophet—may Allah bless him and grant him peace.\n\n(1) In A: “ibn Aziza.”\n\n(2) Usd al-Ghaba, entry (7110).\n\n(3) Usd al-Ghaba, entry (7112).",
+      "arabic_sha256": "3e10410d5818272736118203372f5a68e664c3db6d99d3e8e8872092168cbaac",
+      "english_sha256": "6758d4a9468116f74783631bf9e9f5aecca500c87fef732f72988532b37658ef",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن الكلبي",
+      "english": "Ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عفراء بنت عبيد",
+      "english": "Afra bint Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاذ",
+      "english": "Muadh ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "معوذ",
+      "english": "Muawwidh ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "عوف",
+      "english": "Awf ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرعاة بنت عدي بن معاذ",
+      "english": "al-Ru'at bint Adi ibn Muadh",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن رفاعة بن الحارث بن سواد",
+      "english": "al-Harith ibn Rifaa ibn al-Harith ibn Sawad",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "البكير بن يا ليل الليثي",
+      "english": "al-Bukayr ibn Yalil al-Laythi",
+      "kind": "person"
+    },
+    {
+      "arabic": "إياس",
+      "english": "Iyas ibn al-Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاقل",
+      "english": "Aqil ibn al-Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد",
+      "english": "Khalid ibn al-Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عامر",
+      "english": "Amir ibn al-Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "الرعاة",
+      "explanation": "The consonantal form is clear, but neither the canonical text nor the Urdu witness supplies vowels sufficient to establish its precise pronunciation. The final text provisionally uses al-Ru'at.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0241:113d0f7890ed0c15"
+    },
+    {
+      "category": "source-text anomaly",
+      "arabic_span": "هذا سرّ بني عوف بن الحارث",
+      "explanation": "The canonical text has سرّ (“choicest”), although the reply “No” is contextually difficult and Usd al-Ghaba instead has شر (“worst”). Because the canonical al-Isabah is authoritative, the final text preserves “choicest” and does not import the collateral reading.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0241:113d0f7890ed0c15"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

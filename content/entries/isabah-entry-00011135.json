@@ -1,0 +1,135 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011135",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11135,
+  "title": {
+    "english": "Khawla bint al-Mundhir ibn Zayd ibn Labid ibn Khirash³ ibn 'Amir ibn Ghanm ibn 'Adi ibn al-Najjar",
+    "arabic_observed": "خولة بنت المنذر:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011135-segment-0001",
+      "volume": 8,
+      "scan_page": 121,
+      "printed_page": 120,
+      "reader_page": 4033,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4033",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0121:451efd762885e440",
+      "arabic": "١١١٣٥- خولة بنت المنذر:\nبن زيد بن لبيد بن خراش «٣» بن عامر بن غنم بن عدي ابن النجار، مرضعة إبراهيم بن النبيّ ﷺ. أم بردة مشهورة بكنيتها. ذكرها العدوي.\n(١) أورده العجلوني في كشف الخفاء ٢/ ٥١٤، وقال في الكبير للطبراني والبيهقي في شعب الإيمان عن خولة بنت قيس أنها جعلت للنبيّ ﷺ حريرة فقد منها إليه فوضع يده فيها فوجد حرها فقبضها وقال يا خولة لا نصبر على حر ولا على برد وفي لفظ أحمد بسند جيد فأحرقت أصابعه. والمتقي الهندي في كنز العمال حديث رقم ٤٤١٣٩.\n(٢) أسد الغابة: ت ٦٨٩٦.\n(٣) الاستيعاب: ت ٣٣٧١.",
+      "english": "11135—Khawla bint al-Mundhir ibn Zayd ibn Labid ibn Khirash³ ibn 'Amir ibn Ghanm ibn 'Adi ibn al-Najjar\n\nShe was the wet nurse of Ibrahim, the son of the Prophet, may Allah bless him and grant him peace. Her kunya was Umm Burda, and she was well known by it. al-'Adawi mentioned her.\n\n¹ al-'Ajluni cited it in Kashf al-Khafa, 2/514, and said: “In al-Kabir by al-Tabarani and Shu'ab al-Iman by al-Bayhaqi, from Khawla bint Qays, [it is related] that she made harira for the Prophet, may Allah bless him and grant him peace, and [presented it] to him. He placed his hand in it, found it hot, withdrew it, and said, ‘O Khawla, we cannot endure heat, nor cold.’ In Ahmad's wording, with a good chain of transmission: ‘It burned his fingers.’” It was also cited by al-Muttaqi al-Hindi in Kanz al-'Ummal, hadith no. 44139.\n\n² Usd al-Ghaba, entry 6896.\n\n³ al-Isti'ab, entry 3371.",
+      "arabic_sha256": "a6b0aa38826d8d7850cc5d20f3192ea4f13bff512d3682c05e3a7ef5272f01d0",
+      "english_sha256": "f0feb4eec963bef7688caeb5f6657ad533acf5c8980af1b77034948cfe476ffc",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "خولة بنت قيس",
+      "english": "Khawla bint Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم",
+      "english": "Ibrahim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم بردة",
+      "english": "Umm Burda",
+      "kind": "person"
+    },
+    {
+      "arabic": "العدوي",
+      "english": "al-'Adawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "العجلوني",
+      "english": "al-'Ajluni",
+      "kind": "person"
+    },
+    {
+      "arabic": "كشف الخفاء",
+      "english": "Kashf al-Khafa",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "شعب الإيمان",
+      "english": "Shu'ab al-Iman",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-'Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "damaged_source_text",
+      "arabic_span": "فقد منها إليه",
+      "explanation": "The footnote wording is defective. The Urdu witness supports the meaning “and [presented it] to him” from the intact main report, but does not establish the footnote's exact original Arabic; the supplementation therefore remains bracketed.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0121:451efd762885e440"
+    },
+    {
+      "category": "name_vocalization",
+      "arabic_span": "خراش",
+      "explanation": "The canonical spelling is clear, but its vocalization is not supplied. The collateral works' خداش is a divergent consonantal reading and cannot override al-Isabah; “Khirash” is retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0121:451efd762885e440"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

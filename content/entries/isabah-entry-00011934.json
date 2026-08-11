@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011934",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11934,
+  "title": {
+    "english": "Umm Jamil bint al-Hubab⁴ ibn al-Mundhir ibn al-Jamuh⁵ ibn Zayd ibn Haram, the Khazraji woman",
+    "arabic_observed": "أم جميل بنت الحباب «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011934-segment-0001",
+      "volume": 8,
+      "scan_page": 369,
+      "printed_page": 368,
+      "reader_page": 4281,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4281",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0369:d66636798a2bba3b",
+      "arabic": "١١٩٣٤- أم جميل بنت الحباب «٤»\nبن المنذر بن الجموح «٥» بن زيد بن حرام الخزرجيّة.\nذكرها ابن سعد فيمن بايع النّبيّ ﵌، وقال: تزوّجها المنذر ابن عمرو الخزرجيّ نقيب بني ساعدة، قال: وأمها زينب بنت صيفي بن صخر بن خنساء الأسلميّة.",
+      "english": "11934—Umm Jamil bint al-Hubab⁴ ibn al-Mundhir ibn al-Jamuh⁵ ibn Zayd ibn Haram, the Khazraji woman\n\nIbn Sa'd mentioned her among those who gave the pledge of allegiance to the Prophet—may Allah bless him and grant him peace—and said: “Al-Mundhir ibn Amr al-Khazraji, the representative of Banu Sa'ida, married her.” He said: “Her mother was Zaynab bint Sayfi ibn Sakhr ibn Khansa al-Aslamiyya.”",
+      "arabic_sha256": "26b57e6ab1b93b60e1b32584d336e22da0c985830a2c2377515e8874a70a5eb1",
+      "english_sha256": "44267b20dccfb63bd6c48d40f243984fbe079ce49b8d5d3aa7d064c0746fcf91",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخزرجيّة",
+      "english": "Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النّبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المنذر ابن عمرو الخزرجيّ",
+      "english": "al-Mundhir ibn Amr al-Khazraji",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني ساعدة",
+      "english": "Banu Sa'ida",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "زينب بنت صيفي بن صخر بن خنساء الأسلميّة",
+      "english": "Zaynab bint Sayfi ibn Sakhr ibn Khansa al-Aslamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأسلميّة",
+      "english": "Aslam",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011669",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11669,
+  "title": {
+    "english": "Kabsha bint Rafi'",
+    "arabic_observed": "كبشة بنت رافع"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011669-segment-0001",
+      "volume": 8,
+      "scan_page": 295,
+      "printed_page": 294,
+      "reader_page": 4207,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4207",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0295:59abeeb62025d9d2",
+      "arabic": "١١٦٦٩- كبشة بنت رافع\nبن عبيد بن ثعلبة بن الأبجر «٢»، وهو خدرة، الأنصارية الخدرية، والدة سعد بن معاذ- عاشت حتى مات وندبته بقولها:\nويل أمّ سعد سعدا ... صرامة وجدّا\n[الرجز]\nذكر ذلك ابن إسحاق في قصة موت سعد، قال: فذكروا أن النبي ﵌ قال: «كلّ نادبة تكذب إلّا نادبة سعد» .",
+      "english": "11669—Kabsha bint Rafi'\n\nibn 'Ubayd ibn Tha'laba ibn al-Abjar (2)—al-Abjar being Khudra—the Ansari woman of Banu Khudra and mother of Sa'd ibn Mu'adh. She lived until he died and lamented him, saying:\n\nWoe to Sa'd's mother for Sa'd—\na man of firmness and earnest resolve!\n\n[rajaz meter]\n\nIbn Ishaq mentioned this in the account of Sa'd's death. He said: They related that the Prophet, may Allah bless him and grant him peace, said: “Every woman who delivers a lament speaks falsely, except the woman who lamented Sa'd.”",
+      "arabic_sha256": "8518e99e0a2e518936fdebe4333b2094b5e848efddb2df1ceeacb671949b1f73",
+      "english_sha256": "fa4805f7a38d9b0f4e8f40b210fe04d16d35978b72091c0b75a43a95bbccc1b7",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "كبشة",
+      "english": "Kabsha bint Thabit ibn al-Mundhir ibn Haram",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثعلبة",
+      "english": "Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخدرية",
+      "english": "Banu Khudra",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سعد بن معاذ",
+      "english": "Sa'd ibn Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

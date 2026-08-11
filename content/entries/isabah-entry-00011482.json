@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011482",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11482,
+  "title": {
+    "english": "Isma bint Hibban",
+    "arabic_observed": "عصمة بنت حبان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011482-segment-0001",
+      "volume": 8,
+      "scan_page": 241,
+      "printed_page": 240,
+      "reader_page": 4153,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4153",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0241:113d0f7890ed0c15",
+      "arabic": "١١٤٨٢- عصمة بنت حبان\nبن صخر بن خنساء الأنصارية، من بني حزام «٢» .\nذكرها ابن حبيب في المبايعات.",
+      "english": "11482—Isma bint Hibban\n\nibn Sakhr ibn Khansa al-Ansariyya, of Banu Hizam.(2)\n\nIbn Habib mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "804a36e92d2e6527df24d3eb90f8131ba99ba493fcb3d2c60886195563d34d50",
+      "english_sha256": "d2fe9fc512bd478aca568bf28f5a6353472f5f2f990dc015b8cc9337f57e4481",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بنو حزام",
+      "english": "Banu Hizam",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

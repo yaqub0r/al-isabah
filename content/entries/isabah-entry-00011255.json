@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011255",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11255,
+  "title": {
+    "english": "Zaynab bint Mus'ab ibn 'Umayr al-'Abdariyya (1)",
+    "arabic_observed": "زينب بنت مصعب بن عمير العبدرية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011255-segment-0001",
+      "volume": 8,
+      "scan_page": 164,
+      "printed_page": 163,
+      "reader_page": 4076,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4076",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0164:daa560d50bf22a86",
+      "arabic": "١١٢٥٥- زينب بنت مصعب بن عمير العبدرية «١»\n. تقدم نسبها عند والدها. ذكرها ابن الأثير، فقال: استشهد أبوها بأحد، فيكون لها صحبة، وهو استنباط صحيح، فإنّها عاشت بعد النبي ﷺ دهرا.\nوذكر الزّبير بن بكّار أن أباها لم يعقب إلا منها، وأمها حمنة بنت جحش، تزوجها طلحة بعد مصعب، وتزوج زينب عبد اللَّه بن عبد اللَّه بن أبي أمية المخزومي ابن أخي أم سلمة، فولدت له.",
+      "english": "11255 — Zaynab bint Mus'ab ibn 'Umayr al-'Abdariyya (1)\n\nHer lineage was given above in the entry on her father. Ibn al-Athir mentioned her and said: “Her father was martyred at Uhud, so she must have been a Companion.” This is a sound inference, for she lived for a long time after the Prophet—may Allah bless him and grant him peace.\n\nAl-Zubayr ibn Bakkar stated that her father left no descendants except through her. Her mother was Hamna bint Jahsh, whom Talha married after Mus'ab. Zaynab married 'Abd Allah ibn 'Abd Allah ibn Abi Umayya al-Makhzumi, the son of Umm Salama's brother, and had children by him.",
+      "arabic_sha256": "5ed0bf9ba427c3606de4a142b51feb49d17b04beeb4d8cfdcfd0c55c9259f45d",
+      "english_sha256": "9e15ae0474be93ffec5d7e9b9cd09fd049196ee16d1772ac05864753b35a6e01",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت مصعب بن عمير العبدريّة",
+      "english": "Zaynab bint Mus'ab ibn 'Umayr al-'Abdariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "مصعب بن عمير",
+      "english": "Mus'ab ibn 'Umayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمنة بنت جحش",
+      "english": "Hamna bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "طلحة",
+      "english": "Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن عبد الله بن أبي أمية المخزومي",
+      "english": "'Abd Allah ibn 'Abd Allah ibn Abi Umayya al-Makhzumi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

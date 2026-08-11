@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011412",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11412,
+  "title": {
+    "english": "Safiyya bint 'Ubayda ibn al-Harith ibn al-Muttalib ibn 'Abd Manaf, al-Muttalibiyya.",
+    "arabic_observed": "صفية بنت عبيدة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011412-segment-0001",
+      "volume": 8,
+      "scan_page": 216,
+      "printed_page": 215,
+      "reader_page": 4128,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4128",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0216:797d7d8d80bfb917",
+      "arabic": "١١٤١٢- صفية بنت عبيدة\nبن الحارث بن المطلب بن عبد مناف المطلبية.\nذكرها ابن سعد في ترجمة والدها، وكانت وفاتها في سنة اثنتين من الهجرة.",
+      "english": "11412—Safiyya bint 'Ubayda ibn al-Harith ibn al-Muttalib ibn 'Abd Manaf, al-Muttalibiyya.\n\nIbn Sa'd mentioned her in the biographical notice of her father. She died in the second year of the Hijra.",
+      "arabic_sha256": "7adaf03cc6956aaad0964220185782b65fbc38518ac5fd7b4974db9438060380",
+      "english_sha256": "0136fa1a53cbdaaaf8a2a0f9d05fb6df2926889ee8e08cb4f1e0c62873cf3851",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهجرة",
+      "english": "Hijra",
+      "kind": "other"
+    },
+    {
+      "arabic": "عبيدا",
+      "english": "'Ubayd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

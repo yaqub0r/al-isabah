@@ -1,0 +1,115 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010890",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10890,
+  "title": {
+    "english": "Unaysa bint Adi, the Ansari woman,²",
+    "arabic_observed": "أنيسة بنت عدي الأنصارية «٢»،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010890-segment-0001",
+      "volume": 8,
+      "scan_page": 40,
+      "printed_page": 39,
+      "reader_page": 3952,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3952",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0040:fb896d23dab8c7de",
+      "arabic": "١٠٨٩٠- أنيسة بنت عدي الأنصارية «٢»،\nامرأة من بلى، لها حلف في الأنصار.\nقاله أبو عمر، قال: ولها صحبة.\nروى عنها سعيد بن عثمان البلوي، وهي جدته، وهي والدة عبد اللَّه بن سلمة العجلاني، المقتول بأحد.\nوقال ابن مندة: أنيسة بنت عدي الأنصارية استأذنت النبي ﷺ في نقل ابنها عبد اللَّه بن سلمة البدري حين قتل بأحد. روى حديثها عيسى بن يونس، عن سعيد بن عثمان، عن جدته أنيسة.\nقلت:\nوأسند حديثها أبو بكر بن أبي عاصم، وأبو زرعة الرّازيّ، وأبو عليّ بن السّكن، وغيرهم، من رواية عيسى بن يونس، ولفظه: أنها جاءت إلى النبي ﷺ، فقالت: يا رسول اللَّه، إن عبد اللَّه بن سلمة، وكان بدريا قتل يوم أحد، فأحببت أن أنقله إلي، فآنس بقربة، فأذن لها رسول اللَّه ﷺ في نقله، فعدلته بالمجذر ابن زياد على ناضح لها في عباءة، فمرت بهما، فنظر النبي ﷺ فقال: سوّى بينهما عملهما. وكان المجذر خفيف اللحم، وكان عبد اللَّه جسيما ثقيلا.",
+      "english": "10890—Unaysa bint Adi, the Ansari woman,²\n\na woman of Bali who had a pact of alliance among the Ansar.\n\nAbu Umar said this, adding: She had companionship with the Prophet.\n\nSa'id ibn Uthman al-Balawi narrated from her. She was his grandmother and the mother of Abd Allah ibn Salama al-Ajlani, who was killed at Uhud.\n\nIbn Manda said: Unaysa bint Adi, the Ansari woman, sought the Prophet's—may Allah bless him and grant him peace—permission to transport her son Abd Allah ibn Salama, who had participated at Badr, when he was killed at Uhud. Isa ibn Yunus narrated her hadith from Sa'id ibn Uthman, from his grandmother Unaysa.\n\nI say:\n\nAbu Bakr ibn Abu Asim, Abu Zur'a al-Razi, Abu Ali ibn al-Sakan, and others transmitted her hadith with an isnad through Isa ibn Yunus. Its wording is: She came to the Prophet—may Allah bless him and grant him peace—and said, “O Messenger of Allah, Abd Allah ibn Salama, who had participated at Badr, was killed on the day of Uhud. I wished to transport him back to me so that I might take comfort in having him nearby.” The Messenger of Allah—may Allah bless him and grant him peace—gave her permission to transport him. She placed him as a counterweight to al-Mujadhdhar ibn Ziyad on a water-carrying camel of hers, in a cloak, and passed by with them. The Prophet—may Allah bless him and grant him peace—looked at them and said, “Their deeds have made them equal.” Al-Mujadhdhar had little flesh on him, whereas Abd Allah was large-bodied and heavy.",
+      "arabic_sha256": "26ec7cd4802d5a589beff2b5455324686f30a9ba3a2a5ae3b1786ee25104ea51",
+      "english_sha256": "14dba07b374261ccbd7ccc49c4c62e2c8c61f5f122249c20b8e6cf55fd38217f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أنيسة بنت عدي الأنصارية",
+      "english": "Unaysa bint Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "بلى",
+      "english": "Bali",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن عثمان البلوي",
+      "english": "Sa'id ibn Uthman al-Balawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن سلمة العجلاني",
+      "english": "Abd Allah ibn Salama al-Ajlani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "عيسى بن يونس",
+      "english": "Isa ibn Yunus",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر بن أبي عاصم",
+      "english": "Abu Bakr ibn Abu Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو زرعة الرازي",
+      "english": "Abu Zur'a al-Razi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو علي بن السكن",
+      "english": "Abu Ali ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "المجذر ابن زياد",
+      "english": "al-Mujadhdhar ibn Ziyad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

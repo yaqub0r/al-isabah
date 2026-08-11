@@ -1,0 +1,108 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012291",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12291,
+  "title": {
+    "english": "Umm al-Hudhayl[1]",
+    "arabic_observed": "أم الهذيل «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012291-segment-0001",
+      "volume": 8,
+      "scan_page": 488,
+      "printed_page": 487,
+      "reader_page": 4400,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4400",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0488:d4ef17ea9cc7916a",
+      "arabic": "١٢٢٩١- أم الهذيل «١»\n: غير منسوبة.\nذكرها أبو نعيم، وتبعه أبو موسى بحديث ضعيف\nمن رواية الحسن بن أبي جعفر، عن ليث بن أبي سليم، عن سليم الفقيمي، عن أبي، عن أم الهذيل- أنّ رسول اللَّه ﵌ دخل أرضا فرأى راعيا متجرّدا، فقال: «يا فلان، انظر ما كان من ضيعة فأفرغ منه واستوف أجرك، وألحق بأهلك»، فقال: يا رسول اللَّه، أم أحسن الولاية والقيام على الضيعة! فقال: «بلى، ولكن لا حاجة لنا فيمن إذا خلا لم يستح من اللَّه ﷿» .\nقال الذّهبيّ: حديث مرسل ضعيف الإسناد.\nقلت: أما ضعف سنده فواضح، لأن ليثا ضعيف، والحسن متروك، ومسلم وأبوه مجهولان، ومع أن في شيخ أبي نعيم وشيخ شيخه مقالا. وأما الإرسال فإن كانت أم الهذيل هي حفصة بنت سيرين فيحتمل، لكن كلامه ليس واضحا في إرادة ذلك، وإن كانت غيرها فكان ينبغي له التنبيه عليه.",
+      "english": "12291 — Umm al-Hudhayl[1]\n\nHer lineage is not given.\n\nAbu Nu'aym mentioned her, and Abu Musa followed him, citing a weak hadith transmitted by al-Hasan ibn Abi Ja'far, from Layth ibn Abi Sulaym, from Sulaym al-Fuqaymi, from his father, from Umm al-Hudhayl: The Messenger of Allah, may Allah bless him and grant him peace, entered an estate and saw a shepherd unclothed. He said, “So-and-so, attend to whatever work remains on the estate, finish it, collect your wages in full, and return to your family.” The man said, “O Messenger of Allah, have I not managed and tended the estate well?” He replied, “Yes, but we have no need of anyone who, when alone, feels no shame before Allah, Mighty and Majestic.”\n\nal-Dhahabi said: “It is a mursal hadith with a weak chain of transmission.”\n\nI say: As for the weakness of its chain, that is evident, because Layth is weak, al-Hasan is abandoned, and Muslim and his father are unknown. Moreover, Abu Nu'aym's shaykh and his shaykh's shaykh are subject to criticism. As for its being mursal, if Umm al-Hudhayl is Hafsa bint Sirin, that is possible; but his wording does not clearly indicate that he intended her. If she is someone else, he ought to have called attention to that fact.",
+      "arabic_sha256": "8464b95f6f145e7baf4d7606842a19d95bee678afe55cc5cc1edfbdee24b6a49",
+      "english_sha256": "90f173bd1968483d34e95bf0b08085afaf2059ec00a3f7ecf3fbb40312f21fb9",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم الهذيل",
+      "english": "Umm al-Hudhayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن أبي جعفر",
+      "english": "al-Hasan ibn Abi Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليث بن أبي سليم",
+      "english": "Layth ibn Abi Sulaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليم الفقيمي",
+      "english": "Sulaym al-Fuqaymi",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفصة بنت سيرين",
+      "english": "Hafsa bint Sirin",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim ibn al-Hajjaj",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "textual_reading",
+      "arabic_span": "ومسلم وأبوه مجهولان",
+      "explanation": "The canonical Arabic and Urdu witness both read “Muslim and his father,” so that wording is retained. Muslim does not occur in the preceding isnad, however, and the evidence cannot determine whether the name is an authorial or scribal error for Sulaym.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0488:d4ef17ea9cc7916a"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

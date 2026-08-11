@@ -1,0 +1,130 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012117",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12117,
+  "title": {
+    "english": "Umm Tariq",
+    "arabic_observed": "أم طارق:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012117-segment-0001",
+      "volume": 8,
+      "scan_page": 424,
+      "printed_page": 423,
+      "reader_page": 4336,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4336",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0424:e87149484b923332",
+      "arabic": "١٢١١٧- أم طارق:\nمولاة سعد بن عبادة الأنصاريّ، سيّد الخزرج «٣» .\nلها حديث\nأورده أحمد، وابن سعد، وأبو بكر بن أبي شيبة، والحسن بن سفيان، وابن أبي عاصم، والحسن المروزيّ، في زيادات البرّ والصّلة، من طريق الأعمش، عن جعفر بن عبد الرّحمن، عن أم طارق مولاة سعد: أتانا رسول اللَّه ﵌، فاستأذن مرارا فلم نردّ، فرجع «٤» . وفي رواية: فسكت سعد ثلاثا، فانصرف النبيّ ﷺ، فأرسلني سعد إليه: إنا لم يمنعنا أن نأذن لك إلا أنا أردنا أن تزيدنا.\nوفي لفظ- فقال سعد: ائتي رسول اللَّه ﷺ، فاقرئي ﵇، وأخبريه أنا سكتنا عنه رجاء أن يزيدنا-[يعني] من السّلام. قالت: فأنا عنده إذ استأذن عليه شيء، فقال: «من هذا؟» قالت: أنا أم ملدم ... الحديث-\nيزيد بعض على بعض.\nوأخرجه ابن أبي الدّنيا في المرض والكفارات من هذا الوجه.",
+      "english": "12117 — Umm Tariq\n\nThe client of Sa'd ibn Ubada al-Ansari, the chief of the Khazraj.(3)\n\nA hadith is related from her.\n\nAhmad, Ibn Sa'd, Abu Bakr ibn Abi Shayba, al-Hasan ibn Sufyan, Ibn Abi Asim, and al-Hasan al-Marwazi, in Ziyadat al-Birr wa-al-Sila, transmitted it by way of al-A'mash, from Ja'far ibn Abd al-Rahman, from Umm Tariq, the client of Sa'd: “The Messenger of Allah (may Allah bless him and grant him peace) came to us and repeatedly requested permission to enter, but we did not respond, so he went back.”(4) In one version: “Sa'd remained silent three times, so the Prophet (may Allah bless him and grant him peace) departed. Sa'd then sent me to him, saying, ‘Nothing prevented us from admitting you except that we wanted you to give us more.’”\n\nIn another wording: “Sa'd said, ‘Go to the Messenger of Allah (may Allah bless him and grant him peace), convey greetings of peace to him, and tell him that we remained silent toward him in the hope that he would give us more—[meaning] of the greeting of peace.’ She said: ‘While I was with him, something requested permission to enter upon him. He said, “Who is this?” It replied, “I am Umm Mildam.”’” … the remainder of the hadith.\n\nThe various versions contain additions to one another.\n\nIbn Abi al-Dunya also transmitted it in al-Marad wa-al-Kaffarat by this route.",
+      "arabic_sha256": "64d1bc1b64b6b4452305a3e9a90769a5619689178544a946555a1a1d12b9dc49",
+      "english_sha256": "408746f7ab70548a0826a413a3b257587f76cdc87d11a5bebf18839fa0968bbb",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم طارق مولاة سعد بن عبادة",
+      "english": "Umm Tariq",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن عبادة الأنصاري",
+      "english": "Sa'd ibn Ubada al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخزرج",
+      "english": "Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر بن أبي شيبة",
+      "english": "Abu Bakr ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن سفيان",
+      "english": "al-Hasan ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن المروزي",
+      "english": "al-Hasan al-Marwazi",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيادات البر والصلة",
+      "english": "Ziyadat al-Birr wa-al-Sila",
+      "kind": "work"
+    },
+    {
+      "arabic": "الأعمش",
+      "english": "al-A'mash",
+      "kind": "person"
+    },
+    {
+      "arabic": "جعفر بن عبد الرحمن",
+      "english": "Ja'far ibn Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم ملدم",
+      "english": "Umm Mildam",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن أبي الدنيا",
+      "english": "Ibn Abi al-Dunya",
+      "kind": "person"
+    },
+    {
+      "arabic": "المرض والكفارات",
+      "english": "al-Marad wa-al-Kaffarat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم طارق",
+      "english": "Umm Tariq",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

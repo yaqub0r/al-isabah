@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011719",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11719,
+  "title": {
+    "english": "Layla bint Simak ibn Thabit ibn Sufyan ibn 'Adi ibn 'Amr ibn Imri' al-Qays ibn Malik al-Agharr.",
+    "arabic_observed": "ليلى بنت سماك بن ثابت"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011719-segment-0001",
+      "volume": 8,
+      "scan_page": 306,
+      "printed_page": 305,
+      "reader_page": 4218,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4218",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0306:047fab026cbe7652",
+      "arabic": "١١٧١٩- ليلى بنت سماك بن ثابت\nبن سفيان بن عديّ بن عمرو بن امرئ القيس ابن مالك الأغر.\nذكر ابن سعد عن الواقديّ أنه قال: أسلمت وبايعت، قال: ولم يذكرها غيره.\nقلت: ستأتي في ترجمة أم ثابت بنت قيس بن شماس أخت قيس- أنها ولدت من ثابت بن سفيان ولده سماكا، فعلى هذا تكون ليلى وأبوها سماك وأمّه وأم ثابت ثلاثة من الصّحابة في نسق.",
+      "english": "11719—Layla bint Simak ibn Thabit ibn Sufyan ibn 'Adi ibn 'Amr ibn Imri' al-Qays ibn Malik al-Agharr.\n\nIbn Sa'd related from al-Waqidi that he said: “She embraced Islam and gave the pledge of allegiance.” He said: “No one other than him mentioned her.”\n\nI say: It will be stated in the biography of Umm Thabit bint Qays ibn Shammas, the sister of Qays, that she bore Simak, his son, to Thabit ibn Sufyan. Accordingly, Layla, her father Simak, and his mother Umm Thabit constitute three Companions in succession.",
+      "arabic_sha256": "e2de224e19b2d30d739b517b7e96f00b4c51fad1111dde85eec272fb94f39361",
+      "english_sha256": "22937487b5b27b3b26eeb12fb9e3a48fdeb0181c4f9da2ef7636bb11dcaeb6f4",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ليلى بنت سماك بن ثابت بن سفيان بن عدي بن عمرو بن امرئ القيس ابن مالك الأغر",
+      "english": "Layla bint Simak ibn Thabit ibn Sufyan ibn 'Adi ibn 'Amr ibn Imri' al-Qays ibn Malik al-Agharr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم ثابت بنت قيس بن شماس",
+      "english": "Umm Thabit bint Qays ibn Shammas",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس",
+      "english": "Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت بن سفيان",
+      "english": "Thabit ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "سماك",
+      "english": "Simak ibn Thabit ibn Sufyan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

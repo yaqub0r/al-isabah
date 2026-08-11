@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011738",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11738,
+  "title": {
+    "english": "Layla bint Habis al-Tamimiyya:",
+    "arabic_observed": "ليلى بنت حابس التميميّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011738-segment-0001",
+      "volume": 8,
+      "scan_page": 311,
+      "printed_page": 310,
+      "reader_page": 4223,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4223",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0311:1a8db88cf780aa48",
+      "arabic": "١١٧٣٨- ليلى بنت حابس التميميّة:\nأخت الأقرع بن حابس الصّحابيّ المشهور، هي:\nأم غالب بن صعصعة بن معاوية، والد الفرزدق الشاعر المشهور.\nلها إدراك، وقد ذكرها الفرزدق في مرثية أبيه حيث يقول:\nأبى الصّبر أن لا أرى البدر طالعا ... ولا الشّمس إلّا أذكرتني بغالب\nشبيهين كانا لابن ليلى ومن يكن ... شبيه ابن ليلى يلج ضوء الكواكب\n[الطويل]\nالقسم الرابع",
+      "english": "11738 — Layla bint Habis al-Tamimiyya:\n\nShe was the sister of the well-known Companion al-Aqra' ibn Habis. She was the mother of Ghalib ibn Sa'sa'a ibn Mu'awiya, the father of the celebrated poet al-Farazdaq.\n\nShe lived into the Islamic period. al-Farazdaq mentioned her in his elegy for his father, in which he says:\n\nPatience will not let me see the full moon rising,\nNor the sun, without being reminded of Ghalib.\n\nTwo likenesses they were of Layla's son; and whoever is\nThe like of Layla's son enters the radiance of the stars.\n\n[al-Tawil]\n\nSECTION FOUR",
+      "arabic_sha256": "1906c8f483012d98c9c3991ff09b5fce76ffc7e28641bea65fcb0e838a78f90f",
+      "english_sha256": "a6981ccd6d3837e97e7a1f1d15e739fe6c9915eed69aaacce94b7ea0aaa97409",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ليلى بنت حابس التميميّة",
+      "english": "Layla bint Habis al-Tamimiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "التميميّة",
+      "english": "Tamim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأقرع بن حابس",
+      "english": "al-Aqra' ibn Habis",
+      "kind": "person"
+    },
+    {
+      "arabic": "غالب بن صعصعة بن معاوية",
+      "english": "Ghalib ibn Sa'sa'a ibn Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفرزدق",
+      "english": "al-Farazdaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطويل",
+      "english": "al-Tawil",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

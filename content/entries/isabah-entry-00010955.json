@@ -1,0 +1,94 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010955",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10955,
+  "title": {
+    "english": "Badila bint Muslim,⁴",
+    "arabic_observed": "بديلة بنت مسلم «٤»،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010955-segment-0001",
+      "volume": 8,
+      "scan_page": 56,
+      "printed_page": 55,
+      "reader_page": 3968,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3968",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0056:6ddbd915a60776ee",
+      "arabic": "١٠٩٥٥- بديلة بنت مسلم «٤»،\nوقيل أسلم.\nروى جعفر بن محمود بن محمد بن سلمة، عن بديلة جدته أم أبيه. قالت: جاءنا\n(١) سقط في أ.\n(٢) أسد الغابة ت ٦٧٦٣.\n(٣) أسد الغابة ت ٦٧٦٤، الاستيعاب ت ٣٢٩٣.\n(٤) أسد الغابة ت ٦٧٦٦، الاستيعاب ت ٣٢٩٥.",
+      "english": "10955. Badila bint Muslim,⁴\n\nthough it is also said: Aslam.\n\nJa'far ibn Mahmud ibn Muhammad ibn Salama related from Badila, his grandmother, his father's mother. She said: “There came to us\n\n¹ Omitted in A.\n² Usd al-Ghaba, entry 6763.\n³ Usd al-Ghaba, entry 6764; al-Isti'ab, entry 3293.\n⁴ Usd al-Ghaba, entry 6766; al-Isti'ab, entry 3295.",
+      "arabic_sha256": "cc8c600f8457be7802801dbc02d1c1f0c7cf951b67cc90dc3178529802415e02",
+      "english_sha256": "a8c1a93e52538495f6a2868ab9656d833a701682e62264a909dafb205b285fed",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010955-segment-0002",
+      "volume": 8,
+      "scan_page": 57,
+      "printed_page": 56,
+      "reader_page": 3969,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3969",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0057:1cf13157d1003baf",
+      "arabic": "عباد بن بشر، فقال: إن القبلة قد حولت. ذكره الواقدي. هكذا أوردها ابن مندة. وقد حرّف اسمها، وستأتي في تويلة، بمثناة وواو، وقيل أول اسمها نون.",
+      "english": "Abbad ibn Bishr, and he said, “The direction of prayer has been changed.” Al-Waqidi mentioned it. This is how Ibn Manda presented her. He distorted her name; she will appear under Tuwayla, with a two-dotted ta and a waw, though it is also said that the first letter of her name is nun.",
+      "arabic_sha256": "825325acb63a77a0e3cc38a60706d68187855a42d65108ef374177832815aca0",
+      "english_sha256": "8c2336ed1b23708c425cf50533db95d2f9573d22beea5e882c090269c5d5945a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بديلة بنت مسلم",
+      "english": "Badila bint Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "جعفر بن محمود بن محمد بن سلمة",
+      "english": "Ja'far ibn Mahmud ibn Muhammad ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "عباد بن بشر",
+      "english": "Abbad ibn Bishr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "تويلة",
+      "english": "Tuwayla",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

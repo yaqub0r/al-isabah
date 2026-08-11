@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012262",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12262,
+  "title": {
+    "english": "Umm Mu'adh bint 'Abd Allah ibn 'Amr ibn Hizam al-Ansari, the sister of Jabir ibn 'Abd Allah.",
+    "arabic_observed": "أم معاذ بنت عبد اللَّه"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012262-segment-0001",
+      "volume": 8,
+      "scan_page": 476,
+      "printed_page": 475,
+      "reader_page": 4388,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4388",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0476:c4df7ad071bdd1f9",
+      "arabic": "١٢٢٦٢- أم معاذ بنت عبد اللَّه\nبن عمرو بن حزام الأنصاري، أخت جابر بن عبد اللَّه.\nذكرها ابن سعد عن الواقديّ أنها أسلمت وبايعت.",
+      "english": "12262- Umm Mu'adh bint 'Abd Allah ibn 'Amr ibn Hizam al-Ansari, the sister of Jabir ibn 'Abd Allah.\n\nIbn Sa'd mentioned her on the authority of al-Waqidi, stating that she embraced Islam and gave the pledge.",
+      "arabic_sha256": "f32cb38dd9015a73c2279ed67b707f8294e65948e808b550e727d1455ce33519",
+      "english_sha256": "baa56ae6f79d948d6fde531143dc734fbdf5d26ee40b500c6150327eda5f3e89",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاذ",
+      "english": "Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم معاذ بنت عبد اللَّه بن عمرو بن حزام الأنصاري",
+      "english": "Umm Mu'adh bint 'Abd Allah ibn 'Amr ibn Hizam al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر بن عبد اللَّه",
+      "english": "Jabir ibn 'Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011777",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11777,
+  "title": {
+    "english": "Mulayka al-Hilaliyya:",
+    "arabic_observed": "مليكة الهلاليّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011777-segment-0001",
+      "volume": 8,
+      "scan_page": 322,
+      "printed_page": 321,
+      "reader_page": 4234,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4234",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0322:4ff0546c2e40fb4f",
+      "arabic": "١١٧٧٧- مليكة الهلاليّة:\nامرأة عبد اللَّه بن أبي حدرد. ذكرها مسلم في الأفراد، وكذا في التجريد.",
+      "english": "11777—Mulayka al-Hilaliyya:\n\nThe wife of Abd Allah ibn Abi Hadrad. Muslim mentioned her in al-Afrad, and likewise in al-Tajrid.",
+      "arabic_sha256": "6e3faabc5f3681b51078fe1fb04a6971f7b183832688d939c06737da46c60eb3",
+      "english_sha256": "129320934aeb28dbb9a7a5baaa885e61d6d2c8719a2a3c7105ff42ceb8088a04",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مليكة",
+      "english": "Mulayka",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "مليكة الهلاليّة",
+      "english": "Mulayka al-Hilaliyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن أبي حدرد",
+      "english": "Abd Allah ibn Abi Hadrad",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأفراد",
+      "english": "al-Afrad",
+      "kind": "work"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

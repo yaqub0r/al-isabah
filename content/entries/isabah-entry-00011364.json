@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011364",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11364,
+  "title": {
+    "english": "Sawda bint Abi Hubaysh al-Juhaniyya [1]",
+    "arabic_observed": "سودة بنت أبي حبيش الجهنية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011364-segment-0001",
+      "volume": 8,
+      "scan_page": 198,
+      "printed_page": 197,
+      "reader_page": 4110,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4110",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0198:b35f216a15931d36",
+      "arabic": "١١٣٦٤- سودة بنت أبي حبيش الجهنية «١»\n. قال ابن سعد: لها ولأبيها صحبة وهجرة، وأسلمت هي وبايعت بعد الهجرة، ثم أسند عنها عن أم صبية الجهنية قصة لها مع عمر.",
+      "english": "11364 — Sawda bint Abi Hubaysh al-Juhaniyya [1]\n\nIbn Sa'd said: Both she and her father had the distinction of Companionship and emigration. She accepted Islam and gave the pledge of allegiance after the emigration. He then transmitted, with an isnad, through her from Umm Subayya al-Juhaniyya, an account of Umm Subayya with Umar.",
+      "arabic_sha256": "65384875eea8db8de2c57f8e4a44d67e8b26d11747434b161464bad9d94981f6",
+      "english_sha256": "c9ec26cc8081e6c75f4c7483fea4bd14221472e06af85091d4269ffc708509c6",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سودة بنت أبي حبيش الجهنية",
+      "english": "Sawda bint Abi Hubaysh al-Juhaniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم صبية الجهنية",
+      "english": "Umm Subayya al-Juhaniyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

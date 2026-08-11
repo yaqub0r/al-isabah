@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010986",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10986,
+  "title": {
+    "english": "Jumayl (4)",
+    "arabic_observed": "جميل «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010986-segment-0001",
+      "volume": 8,
+      "scan_page": 66,
+      "printed_page": 65,
+      "reader_page": 3978,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3978",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0066:d8f9a799c69539c9",
+      "arabic": "١٠٩٨٦- جميل «٤»\n، بالتصغير: في التي قبلها.\n(١) أسد الغابة ت ٦٨١١.\n(٢) أورده المتقي الهندي في كنزل العمال حديث رقم ١٨٣٢٠ ولفظه كان يأمر بدفن سبعة أشياء الشعر والظفر والدم ... وعزاه للحكيم الترمذي عن عائشة.\n(٣) أسد الغابة ت ٦٨١٢.\n(٤) الاستيعاب ت ٣٣٢١.",
+      "english": "10986 — Jumayl (4)\n\nIn the diminutive form; see the preceding entry.\n\n(1) Usd al-Ghaba, entry 6811.\n\n(2) Al-Muttaqi al-Hindi cited it in Kanz al-'Ummal, hadith no. 18320, with the wording: “He used to order seven things to be buried: hair, nails, blood…” He attributed it to al-Hakim al-Tirmidhi, from Aisha.\n\n(3) Usd al-Ghaba, entry 6812.\n\n(4) al-Isti'ab, entry 3321.",
+      "arabic_sha256": "619b0f7876c04be3b3747e3d65e4ca5d98fb6543ddde0f816ac53eb4448e687d",
+      "english_sha256": "907ed6ea7365fc0a2bb4004cf43314c3380c14072e33369e42e634eafa8797ea",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "جميل",
+      "english": "Jamil bint Yasar al-Muzaniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميل",
+      "english": "Jumayl bint Yasar al-Muzaniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنزل العمال",
+      "english": "Kanz al-'Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحكيم الترمذي",
+      "english": "al-Hakim al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

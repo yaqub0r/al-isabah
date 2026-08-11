@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011683",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11683,
+  "title": {
+    "english": "Kuhayla",
+    "arabic_observed": "كحيلة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011683-segment-0001",
+      "volume": 8,
+      "scan_page": 297,
+      "printed_page": 296,
+      "reader_page": 4209,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4209",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0297:6a96b80e7cf7315e",
+      "arabic": "١١٦٨٣- كحيلة:\nلها ذكر في حديث لأبي أمامة في المعجم الكبير للطبرانيّ.",
+      "english": "11683 — Kuhayla\n\nShe is mentioned in a hadith of Abu Umama in al-Tabarani's al-Mu'jam al-Kabir.",
+      "arabic_sha256": "1e849e13046cbc46fa661de906e3cfaffc165fe98a8471a07348c8e1679a9182",
+      "english_sha256": "05384c4fcee09c3228e7f1f52f2793fb0b36bf84d0c6ee30aba05405ef0553dd",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "كحيلة",
+      "english": "Kuhayla",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أمامة",
+      "english": "Abu Umama",
+      "kind": "person"
+    },
+    {
+      "arabic": "المعجم الكبير",
+      "english": "al-Mu'jam al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبرانيّ",
+      "english": "al-Tabarani",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

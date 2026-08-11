@@ -1,0 +1,78 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011550",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11550,
+  "title": {
+    "english": "Umayra bint Mu'awwidh",
+    "arabic_observed": "عميرة بنت معوّذ"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011550-segment-0001",
+      "volume": 8,
+      "scan_page": 253,
+      "printed_page": 252,
+      "reader_page": 4165,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4165",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0253:93ab0a11e5b3efbd",
+      "arabic": "١١٥٥٠- عميرة بنت معوّذ\nبن عفراء أخت الربيع.\nذكرها ابن سعد في المبايعات. تقدم نسبها وتسمية أبيها في ترجمة الرّبيع. قال ابن سعد: تزوجها أبو حسن بن عبد عمرو المازنيّ، فولدت له عمارة وعمرا وسرية.",
+      "english": "11550—Umayra bint Mu'awwidh\n\nibn 'Afra, the sister of al-Rubayyi'.\n\nIbn Sa'd mentioned her among the women who pledged allegiance. Her lineage and the naming of her father were given previously in the entry on al-Rubayyi'. Ibn Sa'd said: Abu Hasan ibn 'Abd 'Amr al-Mazini married her, and she bore him 'Umara, 'Amr, and Sariyya.",
+      "arabic_sha256": "4592256b03c264ca3059b42cf8f5b3b4de4528404bf22c9672433738d22896f9",
+      "english_sha256": "057701c0a8ca000a3bb2e0893c92daa9690ed573d023df733466218552b4adbd",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الربيع",
+      "english": "al-Rubayyi' bint Mu'awwidh ibn 'Afra",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو حسن بن عبد عمرو المازنيّ",
+      "english": "Abu Hasan ibn 'Abd 'Amr al-Mazini",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمارة",
+      "english": "'Umara",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو",
+      "english": "'Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "سرية",
+      "english": "Sariyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "سرية",
+      "explanation": "The canonical Arabic and Urdu witness are unvocalized and establish only the consonantal spelling. “Sariyya” is retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0253:93ab0a11e5b3efbd"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

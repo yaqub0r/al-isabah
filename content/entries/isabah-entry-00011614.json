@@ -1,0 +1,130 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011614",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11614,
+  "title": {
+    "english": "Fatima bint al-Walid",
+    "arabic_observed": "فاطمة بنت الوليد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011614-segment-0001",
+      "volume": 8,
+      "scan_page": 279,
+      "printed_page": 278,
+      "reader_page": 4191,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4191",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0279:f41f149b1d52c49c",
+      "arabic": "١١٦١٤- فاطمة بنت الوليد\nبن المغيرة بن عبد اللَّه بن عمرو بن مخزوم «١» القرشية [المخزوميّة] «٢» أخت خالد بن الوليد.\nقال ابن سعد: أمها حنتمة، بمهملة مفتوحة ونون ساكنة ثم مثناة من فوق مفتوحة، بنت عبد اللَّه بن عمرو بن كعب الكنانيّة. أسلمت يوم الفتح، وبايعت «٣»، وهي زوج الحارث بن هشام، وهي والدة عبد الرحمن وأم حكيم ابني الحارث. قال أبو عمر: ويقال:\nإن عمر تزوجها بعد الحارث، وفيه نظر.\nقلت: وترجم لها ابن مندة: فاطمة بنت الوليد القرشية، وأورد لها حديث الإزار، وقد أ\nخرجه العقيليّ من طريق عبد السلام بن حرب، عن إسحاق بن عبد اللَّه بن أبي فروة، عن إبراهيم بن العباس بن الحارث، عن أبي بكر بن الحارث، عن فاطمة بنت الوليد أم أبي بكر- أنها كانت بالشام تلبس الجباب من ثياب الخز، ثم تأتزر، فقيل لها: ما يغنيك عن هذا الإزار، فقالت: سمعت رسول اللَّه ﵌ يأمر بالإزار.\nقال ابن الأثير:\nقوله أم أبي بكر، يعني ابن عبد الرحمن بن الحارث بن هشام فهي أمّ أبيه، وهي جدة أبي بكر. وهو كما قال، فقد قال ابن عساكر: فاطمة بنت الوليد بن المغيرة أخت خالد لها صحبة، وخرجت مع زوجها الحارث إلى الشام، واستشارها خالد أخوها في بعض أمره.\nروت عن النبي ﵌ حديثا واحدا رواه عنها ابن ابنها أبو بكر بن عبد الرحمن، فذكر حديث الإزار.",
+      "english": "11614—Fatima bint al-Walid\n\nibn al-Mughira ibn Abd Allah ibn Amr ibn Makhzum [1], the Qurashiyya [Makhzumiyya] [2], sister of Khalid ibn al-Walid.\n\nIbn Sa'd said: Her mother was Hantama—the first letter being an undotted, open ha, followed by a vowelless nun and then an open ta with two dots above—bint Abd Allah ibn Amr ibn Ka'b al-Kinaniyya. She embraced Islam on the day of the Conquest and pledged allegiance [3]. She was the wife of al-Harith ibn Hisham and the mother of Abd al-Rahman and Umm Hakim, the two children of al-Harith. Abu Umar said: “It is also said that Umar married her after al-Harith.” This is open to question.\n\nI say: Ibn Manda also gave her a biographical entry as “Fatima bint al-Walid al-Qurashiyya” and cited on her authority the hadith concerning the izar. Al-Uqayli transmitted it through Abd al-Salam ibn Harb, from Ishaq ibn Abd Allah ibn Abi Farwa, from Ibrahim ibn al-Abbas ibn al-Harith, from Abu Bakr ibn al-Harith, from Fatima bint al-Walid, the mother of Abu Bakr: while in Syria she used to wear outer robes made of khazz and then put on an izar. She was asked, “Why do you need this izar?” She replied, “I heard the Messenger of Allah (may Allah bless him and grant him peace) command the wearing of the izar.”\n\nIbn al-Athir said:\n\n“The expression ‘mother of Abu Bakr’ means Abu Bakr ibn Abd al-Rahman ibn al-Harith ibn Hisham. She was his father's mother and thus Abu Bakr's grandmother.” It is as he said, for Ibn Asakir said: “Fatima bint al-Walid ibn al-Mughira, Khalid's sister, had companionship with the Prophet. She departed for Syria with her husband, al-Harith, and her brother Khalid consulted her concerning one of his affairs.\n\n“She related a single hadith from the Prophet (may Allah bless him and grant him peace), which was narrated from her by her son's son, Abu Bakr ibn Abd al-Rahman.” He then mentioned the hadith concerning the izar.",
+      "arabic_sha256": "6c084c883e3a99784c575f6139f4006893b0b48e4b4749e20b905caf0f072152",
+      "english_sha256": "1bfb3a3975d0fd70ce1bf9bf40b24fb6570ac5c64221f5dee56e8fd18f04f175",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن هشام",
+      "english": "al-Harith ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد بن الوليد",
+      "english": "Khalid ibn al-Walid",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن",
+      "english": "Abd al-Rahman ibn al-Harith ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم",
+      "english": "Umm Hakim bint al-Harith ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "العقيلي",
+      "english": "al-Uqayli",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد السلام بن حرب",
+      "english": "Abd al-Salam ibn Harb",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق بن عبد اللَّه بن أبي فروة",
+      "english": "Ishaq ibn Abd Allah ibn Abi Farwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن العباس بن الحارث",
+      "english": "Ibrahim ibn al-Abbas ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر بن الحارث",
+      "english": "Abu Bakr ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشام",
+      "english": "Syria",
+      "kind": "place"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر بن عبد الرحمن بن الحارث بن هشام",
+      "english": "Abu Bakr ibn Abd al-Rahman ibn al-Harith ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عساكر",
+      "english": "Ibn Asakir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

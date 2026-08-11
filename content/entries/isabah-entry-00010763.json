@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010763",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10763,
+  "title": {
+    "english": "Amina bint Abi al-Hakam,",
+    "arabic_observed": "آمنة بنت أبي الحكم ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010763-segment-0001",
+      "volume": 8,
+      "scan_page": 5,
+      "printed_page": 4,
+      "reader_page": 3917,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3917",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0005:f37adfaaa723fce4",
+      "arabic": "١٠٧٦٣- آمنة بنت أبي الحكم ،\nأو بنت الحكم الغفارية. تأتي في القسم الأخير.",
+      "english": "10763—Amina bint Abi al-Hakam,\nor bint al-Hakam al-Ghifariyya. She will appear in the last section.",
+      "arabic_sha256": "bc3dfb44e54b6a6815c40433b9728e716c3e68875ff116f63a65f8082ed323e4",
+      "english_sha256": "90d92ac55dd868734afdb4dd09ce2fa2779632b829a1e608959a5618c6ef9937",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "آمنة بنت أبي الحكم",
+      "english": "Amina bint Abi al-Hakam",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

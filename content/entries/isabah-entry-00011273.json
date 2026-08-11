@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011273",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11273,
+  "title": {
+    "english": "Zaynab bint Nubayt",
+    "arabic_observed": "زينب بنت نبيط"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011273-segment-0001",
+      "volume": 8,
+      "scan_page": 171,
+      "printed_page": 170,
+      "reader_page": 4083,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4083",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0171:f4e1211b60a58c19",
+      "arabic": "١١٢٧٣- زينب بنت نبيط\nبن جابر الأنصارية «١» .\nتقدم ذكر من خلطها بزينب بنت جابر الأحمسية، وأنه وهم، وأنّ ابن سعد ذكرها في المبايعات، وأن ابن حبّان ذكرها في ثقات التابعين، وهو الصواب، ولها رواية عن أمها بنت أسعد بن زرارة، وعن زوجها أنس بن مالك، وعن جابر بن عبد اللَّه، وضباعة بنت الزبير بن عبد المطلب وغيرهم. روى عنها حميد الطويل وكثير بن زيد الأسلمي، ومحمد بن عمارة بن عمرو بن حزم، وعبد اللَّه بن تمام، وغيرهم.\nحرف السين المهملة\nالقسم الأول",
+      "english": "11273 — Zaynab bint Nubayt\nibn Jabir al-Ansariyya.[1]\n\nMention was made above of those who confused her with Zaynab bint Jabir al-Ahmasiyya, and that this was an error; that Ibn Sa'd included her among the women who gave the pledge of allegiance; and that Ibn Hibban included her among the trustworthy Followers, which is correct. She transmitted from her mother, the daughter of As'ad ibn Zurara; from her husband, Anas ibn Malik; and from Jabir ibn Abdullah, Duba'a bint al-Zubayr ibn Abd al-Muttalib, and others. Humayd al-Tawil, Kathir ibn Zayd al-Aslami, Muhammad ibn Umara ibn Amr ibn Hazm, Abdullah ibn Tammam, and others transmitted from her.\n\nTHE UNDOTTED LETTER SIN\n\nTHE FIRST SECTION",
+      "arabic_sha256": "f1380e97447a57083b7b93d054504c5d9e589a335612f1f89d8602bc7d5948f8",
+      "english_sha256": "757b83b655f6478b29a95173f297b6810ef61d7ca3b28a6f824c5fba053c0def",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زينب بنت جابر الأحمسية",
+      "english": "Zaynab bint Jabir al-Ahmasiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبّان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسعد بن زرارة",
+      "english": "As'ad ibn Zurara",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس بن مالك",
+      "english": "Anas ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر بن عبد اللَّه",
+      "english": "Jabir ibn Abdullah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ضباعة بنت الزبير بن عبد المطلب",
+      "english": "Duba'a bint al-Zubayr ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "حميد الطويل",
+      "english": "Humayd al-Tawil",
+      "kind": "person"
+    },
+    {
+      "arabic": "كثير بن زيد الأسلمي",
+      "english": "Kathir ibn Zayd al-Aslami",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمارة بن عمرو بن حزم",
+      "english": "Muhammad ibn Umara ibn Amr ibn Hazm",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن تمام",
+      "english": "Abdullah ibn Tammam",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

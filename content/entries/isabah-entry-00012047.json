@@ -1,0 +1,139 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012047",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12047,
+  "title": {
+    "english": "Umm Sabra:[5]",
+    "arabic_observed": "أم سبرة «٥»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012047-segment-0001",
+      "volume": 8,
+      "scan_page": 400,
+      "printed_page": 399,
+      "reader_page": 4312,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4312",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0400:e6789e9a089d2669",
+      "arabic": "١٢٠٤٧- أم سبرة «٥»\n: ذكرها أبو موسى في «الذّيل» عن المستغفريّ،\nوساق من طرق\n(١) أي ترتعدين من البرد النهاية ٢/ ٣٠٥.\n(٢) أخرجه مسلم في البر والصلة (٥٣) والبيهقي ٣/ ٣٧٧.\n(٣) أسد الغابة ت (٧٤٦٢)، الاستيعاب ت (٣٦١٢) .\n(٤) الثقات ٢٦٢٣، تجريد أسماء الصحابة ٢/ ٣٢١.\n(٥) تجريد أسماء الصحابة ٢/ ٣٢١، أسد الغابة ت (٧٤٦٣) .",
+      "english": "12047—Umm Sabra:[5]\n\nAbu Musa mentioned her in al-Dhayl on the authority of al-Mustaghfiri, and cited her report through transmission routes from—\n\n[1] That is, “you are trembling from the cold.” al-Nihaya, 2/305.\n\n[2] Transmitted by Muslim in al-Birr wa-al-Sila (53), and by al-Bayhaqi, 3/377.\n\n[3] Usd al-Ghaba, entry 7462; al-Isti'ab, entry 3612.\n\n[4] al-Thiqat, 3/262; al-Tajrid, 2/321.\n\n[5] al-Tajrid, 2/321; Usd al-Ghaba, entry 7463.",
+      "arabic_sha256": "1ad2ce1e478e7fb8d459472ca2f1b115ca96d58b9a17be7968457716ad8a6a74",
+      "english_sha256": "48cdc1ddc67c986c48293349b00f32901a5c56baf810c27c64924c3ba2d2ec0a",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012047-segment-0002",
+      "volume": 8,
+      "scan_page": 401,
+      "printed_page": 400,
+      "reader_page": 4313,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4313",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0401:3546ec9bcc5e2706",
+      "arabic": "رشدين بن سعد، عن أبي بكر الأنصاريّ، عن سيرة عن أمّه- أنها سمعت رسول اللَّه ﵌ يقول: «لا صلاة لمن لا وضوء له، ولا وضوء لمن لم يذكر اللَّه ...»\nالحديث.\nوقال: في إسناد حديثها نظر.",
+      "english": "Rishdin ibn Sa'd, from Abu Bakr al-Ansari, from Sira, from his mother, who heard the Messenger of Allah, may Allah bless him and grant him peace, say: “There is no prayer for one who has no ablution, and no ablution for one who did not mention Allah…”—the hadith.\n\nHe said: There is some question concerning the chain of transmission of her hadith.",
+      "arabic_sha256": "d0ac540366d4225c8f63e98961b8ede98acf827b3b0593ff1496a66d7e7dcff3",
+      "english_sha256": "5ece0052a0203455d0e4030d697dcfa20e95338a893b2ad2f5ae530aa7b04a9d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم سبرة",
+      "english": "Umm Sabra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "البر والصلة",
+      "english": "al-Birr wa-al-Sila",
+      "kind": "work"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "رشدين بن سعد",
+      "english": "Rishdin ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر الأنصاريّ",
+      "english": "Abu Bakr al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "سيرة",
+      "english": "Sira",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

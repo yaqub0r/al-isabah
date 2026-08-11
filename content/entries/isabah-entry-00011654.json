@@ -1,0 +1,88 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011654",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11654,
+  "title": {
+    "english": "Qasra bint Ru'as al-Kindiyya:(4)",
+    "arabic_observed": "قسرة بنت رؤاس الكنديّة «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011654-segment-0001",
+      "volume": 8,
+      "scan_page": 288,
+      "printed_page": 287,
+      "reader_page": 4200,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4200",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0288:331e52b93aa21505",
+      "arabic": "١١٦٥٤- قسرة بنت رؤاس الكنديّة «٤»\n: ذكرها أبو نعيم، وأخرج لها من طريق عبد الرحمن بن عمرو بن جبلة، أحد المتروكين، قال: حدّثتنا ميسرة بنت حبشي الطائية، عن قتيلة بنت عبد اللَّه، عن قسرة الكندية، قالت: قال رسول اللَّه ﷺ: «أيا قسرة، اذكري اللَّه عند الخطيئة يذكرك عند المغفرة، وأطيعي زوجك يكفك شرّ الدّنيا والآخرة، وبرّي والديك يكثر خير بيتك» .\nقال أبو عمر: بكسر القاف وسكون المهملة، وقال غيره بالشين المعجمة، وقيل بفتح القاف مع إهمال السين.",
+      "english": "11654—Qasra bint Ru'as al-Kindiyya:(4)\n\nAbu Nu'aym mentioned her and related a report of hers through Abd al-Rahman ibn Amr ibn Jabala—one of the rejected transmitters—who said: Maysara bint Habashi al-Ta'iyya related to us, from Qutayla bint Abd Allah, from Qasra al-Kindiyya, who said: The Messenger of Allah, may Allah bless him and grant him peace, said, “O Qasra, remember Allah when you sin, and He will remember you when granting forgiveness. Obey your husband, and he will protect you from the evil of this world and the Hereafter. Be dutiful to your parents, and the goodness of your household will increase.”\n\nAbu Umar said: It is with a kasra on the qaf and a sukun on the undotted sin. Others said that it is with the dotted shin. It is also said to have a fatha on the qaf together with an undotted sin.",
+      "arabic_sha256": "0c063a75418a630bfca8ff2466b784b15f9e6a27b774062f7cffd190382f34b4",
+      "english_sha256": "513a9736a27ae7f8e6547d926c4e1a252e51dbf1ee7b154e687f70ec62f09807",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "قسرة بنت رؤاس الكنديّة",
+      "english": "Qasra bint Ru'as al-Kindiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عمرو بن جبلة",
+      "english": "Abd al-Rahman ibn Amr ibn Jabala",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميسرة بنت حبشي الطائية",
+      "english": "Maysara bint Habashi al-Ta'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتيلة بنت عبد اللَّه",
+      "english": "Qutayla bint Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "قسرة بنت رؤاس الكنديّة",
+      "explanation": "The consonantal heading does not determine the initial vowel. The entry reports a reading with kasra on the qaf, another with dotted shin, and another with fatha on the qaf and undotted sin; the supplied collateral witnesses are likewise unvocalized. “Qasra” is therefore retained provisionally from the candidate and corresponds to one explicitly reported reading.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0288:331e52b93aa21505"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

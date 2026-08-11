@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010920",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10920,
+  "title": {
+    "english": "al-Barsa':",
+    "arabic_observed": "البرصاء:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010920-segment-0001",
+      "volume": 8,
+      "scan_page": 48,
+      "printed_page": 47,
+      "reader_page": 3960,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3960",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0048:d6a0e7f867c714bd",
+      "arabic": "١٠٩٢٠- البرصاء:\nوالدة شبيب بن البرصاء، هي التي خطبها النبيّ ﷺ من أبيها، فقال: إن بها بياضا ولم يكن بها، فرجع فوجدها برصت. اسمها أمامة. وقيل قرصافة.",
+      "english": "10920 — al-Barsa':\n\nThe mother of Shabib ibn al-Barsa'. She is the woman whose hand the Prophet, may Allah bless him and grant him peace, asked of her father in marriage. Her father said, “She has a white discoloration,” though she had none. He then returned and found that she had developed leprosy. Her name was Umama. It is also said: Qursafa.",
+      "arabic_sha256": "1478ec5fa9e72aef3bd4cc288a8166de11e1203c4c36aecc33b589d2d79730b3",
+      "english_sha256": "1eddbc62b9dc389e39cce71d97935e6252c50b86aa68c1828f31f54b06ddd048",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "البرصاء",
+      "english": "al-Barsa'",
+      "kind": "person"
+    },
+    {
+      "arabic": "شبيب بن البرصاء",
+      "english": "Shabib ibn al-Barsa'",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أمامة",
+      "english": "Umama",
+      "kind": "person"
+    },
+    {
+      "arabic": "قرصافة",
+      "english": "Qursafa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

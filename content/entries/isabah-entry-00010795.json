@@ -1,0 +1,113 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010795",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10795,
+  "title": {
+    "english": "Azdah bint al-Harith",
+    "arabic_observed": "أزده بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010795-segment-0001",
+      "volume": 8,
+      "scan_page": 11,
+      "printed_page": 10,
+      "reader_page": 3923,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3923",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0011:55c54a283604bf8c",
+      "arabic": "١٠٧٩٥- أزده بنت الحارث\nبن كلدة الثقفية، زوج عتبة بن غزوان أمير البصرة، وكانت صحبته لما قدم البصرة ومصرها، وبسببها قدم البصرة إخوتها من أمها: أبو بكرة، ونافع، وزياد بن عبيد الّذي صار بعد ذلك يقال له زياد بن أبي سفيان، وأمّ الجميع سميّة مولاة الحارث بن كلدة.\nذكر ذلك البلاذريّ، وقد قدمنا أنه لم يبق في حجة الوداع أحد من قريش وثقيف إلا أسلم وشهدها.",
+      "english": "10795 — Azdah bint al-Harith\n\nibn Kalada, the Thaqafi woman, wife of Utba ibn Ghazwan, governor of Basra. She accompanied him when he came to Basra and founded it. Because of her, her maternal brothers came to Basra: Abu Bakra, Nafi', and Ziyad ibn Ubayd, who afterward came to be called Ziyad ibn Abi Sufyan. The mother of them all was Sumayya, a client of al-Harith ibn Kalada.\n\nAl-Baladhuri mentioned this. We have already stated that, at the Farewell Pilgrimage, no one from Quraysh or Thaqif remained without having embraced Islam and attended it.",
+      "arabic_sha256": "2f13256ab909fdb7d8a4a22b4128809803d9f9f5afdf24191bcca689d8ffb91e",
+      "english_sha256": "96490c7d042d312af306d6d97ce004c211cb9495a5c96712df0d3196bb9adc86",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الثقفية",
+      "english": "Thaqif",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عتبة بن غزوان",
+      "english": "Utba ibn Ghazwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "البصرة",
+      "english": "Basra",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو بكرة",
+      "english": "Abu Bakra",
+      "kind": "person"
+    },
+    {
+      "arabic": "نافع",
+      "english": "Nafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "زياد بن عبيد",
+      "english": "Ziyad ibn Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "زياد بن أبي سفيان",
+      "english": "Ziyad ibn Abi Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "سميّة",
+      "english": "Sumayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن كلدة",
+      "english": "al-Harith ibn Kalada",
+      "kind": "person"
+    },
+    {
+      "arabic": "البلاذريّ",
+      "english": "al-Baladhuri",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ثقيف",
+      "english": "Thaqif",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "حجة الوداع",
+      "english": "Farewell Pilgrimage",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "أزده",
+      "explanation": "The supplied evidence confirms the consonantal spelling but not its exact vocalization. “Azdah” is therefore retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0011:55c54a283604bf8c"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

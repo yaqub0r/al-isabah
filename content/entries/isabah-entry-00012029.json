@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012029",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12029,
+  "title": {
+    "english": "Umm al-Zubayr ibn Abd al-Muttalib ibn Hashim, the Hashimite woman.",
+    "arabic_observed": "أم الزّبير"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012029-segment-0001",
+      "volume": 8,
+      "scan_page": 395,
+      "printed_page": 394,
+      "reader_page": 4307,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4307",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0395:be97efa5232bc5f9",
+      "arabic": "١٢٠٢٩- أم الزّبير\nبن عبد المطّلب بن هاشم الهاشميّة.\nذكر ابن سعد أنها شقيقة ضباعة، وأن النّبيّ ﵌ أطعمها من خيبر أربعين وسقا.",
+      "english": "12029—Umm al-Zubayr ibn Abd al-Muttalib ibn Hashim, the Hashimite woman.\n\nIbn Sa'd mentioned that she was the full sister of Duba'a, and that the Prophet (may Allah bless him and grant him peace) allotted her forty wasqs from Khaybar.",
+      "arabic_sha256": "49f5df1460710987b45a7fb8c9389f2535ef67d8ec88ba6436deb60e3eb6e8d8",
+      "english_sha256": "af0faf0768f9acca095f8a8c7a9b15eb3876128d90b81bcc339c3033991b1cfb",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الزبير بن عبد المطلب بن هاشم",
+      "english": "Umm al-Zubayr ibn Abd al-Muttalib ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ضباعة",
+      "english": "Duba'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

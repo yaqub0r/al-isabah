@@ -1,0 +1,115 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011856",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11856,
+  "title": {
+    "english": "Hind bint Simak ibn 'Atik ibn Imru' al-Qays ibn Zayd ibn 'Abd al-Ashhal²,",
+    "arabic_observed": "هند بنت سماك"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011856-segment-0001",
+      "volume": 8,
+      "scan_page": 346,
+      "printed_page": 345,
+      "reader_page": 4258,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4258",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0346:e87dd40f714ce507",
+      "arabic": "١١٨٥٦- هند بنت سماك\nبن عتيك بن امرئ القيس بن زيد بن عبد الأشهل»\nالأنصاريّة، عمة أسيد بن حضير.\nقال ابن حبيب: هي زوج سعد بن معاذ، والدة عمر، وعبد اللَّه. وقال العدويّ: هي والدة الحارث بن أوس بن معاذ، وكانت من المبايعات. وقال ابن سعد: أمها أم جندب بنت رفاعة أم زنبر بن زيد بن مالك الأوسيّة، وهند عمة أسيد بن حضير بن سماك، وكانت أولا عند أوس بن معاذ، فولدت له الحارث بن أسلم. وشهد بدرا، ثم خلف عليها أخوه سعد بن معاذ، فولد له عبد اللَّه، وعمر، وأسلمت وبايعت.",
+      "english": "11856—Hind bint Simak ibn 'Atik ibn Imru' al-Qays ibn Zayd ibn 'Abd al-Ashhal²,\n\nan Ansari woman and the paternal aunt of Usayd ibn Hudayr.\n\nIbn Habib said: “She was the wife of Sa'd ibn Mu'adh and the mother of 'Umar and 'Abd Allah.” al-'Adawi said: “She was the mother of al-Harith ibn Aws ibn Mu'adh, and she was among the women who pledged allegiance.” Ibn Sa'd said: “Her mother was Umm Jundab bint Rifa'a, the mother of Zanbar ibn Zayd ibn Malik, an Aws woman. Hind was the paternal aunt of Usayd ibn Hudayr ibn Simak. She was first married to Aws ibn Mu'adh and bore him al-Harith ibn Aslam. He attended Badr. Then his brother Sa'd ibn Mu'adh married her after him, and she bore him 'Abd Allah and 'Umar. She embraced Islam and pledged allegiance.”",
+      "arabic_sha256": "f2dd84dd2ce34845da3547af2bef984bb92ca6e1938208f32fa9d273d84ef64e",
+      "english_sha256": "f487fe681d7b186fcd6c3e24905068737b6451c4d20d9aa748e95511a505a337",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند بنت سماك بن عتيك بن امرئ القيس بن زيد بن عبد الأشهل",
+      "english": "Hind bint Simak ibn 'Atik ibn Imru' al-Qays ibn Zayd ibn 'Abd al-Ashhal",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسيد بن حضير بن سماك",
+      "english": "Usayd ibn Hudayr ibn Simak",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن معاذ",
+      "english": "Sa'd ibn Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "'Umar ibn Sa'd ibn Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "العدوي",
+      "english": "al-'Adawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن أوس بن معاذ",
+      "english": "al-Harith ibn Aws ibn Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جندب بنت رفاعة",
+      "english": "Umm Jundab bint Rifa'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "زنبر بن زيد بن مالك",
+      "english": "Zanbar ibn Zayd ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأوس",
+      "english": "Aws",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أوس بن معاذ",
+      "english": "Aws ibn Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن أسلم",
+      "english": "al-Harith ibn Aslam",
+      "kind": "person"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

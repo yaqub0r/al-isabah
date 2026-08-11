@@ -79,6 +79,29 @@ class FirstLightInventoryTests(unittest.TestCase):
                     source_state="clean",
                 )
 
+    def test_ignores_generated_python_caches(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "pipeline" / "__pycache__").mkdir(parents=True)
+            (root / "pipeline" / "runner.py").write_text("pass\n", encoding="utf-8")
+            (root / "pipeline" / "__pycache__" / "runner.pyc").write_bytes(b"compiled")
+            scope = root / "scope.json"
+            scope.write_text(json.dumps({
+                "schema": MODULE.SCOPE_SCHEMA,
+                "includes": [{"path": "pipeline", "kind": "tree", "role": "code"}],
+            }), encoding="utf-8")
+            inventory = MODULE.build_inventory(
+                source_root=root,
+                scope_path=scope,
+                source_repository="owner/repo",
+                source_revision="abc123",
+                source_state="dirty",
+            )
+            self.assertEqual(
+                [record["path"] for record in inventory["files"]],
+                ["pipeline/runner.py"],
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

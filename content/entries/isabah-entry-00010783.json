@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010783",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10783,
+  "title": {
+    "english": "Idam bint Qurt",
+    "arabic_observed": "إدام بنت قرط"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010783-segment-0001",
+      "volume": 8,
+      "scan_page": 7,
+      "printed_page": 6,
+      "reader_page": 3919,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3919",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0007:16f979fa3c96671e",
+      "arabic": "١٠٧٨٣- إدام بنت قرط\nبن خنساء الأنصارية. من المبايعات. ذكرها ابن سعد.",
+      "english": "10783 — Idam bint Qurt\nibn Khansa' al-Ansariyya. She was among the women who pledged allegiance. Ibn Sa'd mentioned her.",
+      "arabic_sha256": "6270b2e7d18edb892be6bdddc6053d509be7d859dc1fde9a3a76e55050949d81",
+      "english_sha256": "242ecfaf23ecc289bb4b8d0dc29654081a7ccec367f4b73c3eb41733e3f613ee",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

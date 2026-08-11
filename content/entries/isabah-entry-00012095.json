@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012095",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12095,
+  "title": {
+    "english": "Umm Shabib [2]",
+    "arabic_observed": "أم شبيب «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012095-segment-0001",
+      "volume": 8,
+      "scan_page": 416,
+      "printed_page": 415,
+      "reader_page": 4328,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4328",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0416:f7659d7718f758b0",
+      "arabic": "١٢٠٩٥- أم شبيب «٢»\n: امرأة الضّحاك بن سفيان الكلابيّ.\nعرض الضّحاك أختها على النّبيّ ﵌ فيما ذكره الزّهريّ من طريق حجاج بن أبي منيع، عن جدّته عنه- أن الضّحّاك بن سفيان قال: يا رسول اللَّه، هل لك في أخت أم شبيب، وأم شبيب امرأة الضّحاك. ذكرها ابن مندة، وكان عامل النّبيّ ﵌.",
+      "english": "12095—Umm Shabib [2]\n\nThe wife of al-Dahhak ibn Sufyan al-Kilabi.\n\nAl-Dahhak offered her sister in marriage to the Prophet—may Allah bless him and grant him peace—in the account cited by al-Zuhri through Hajjaj ibn Abi Mani', from his grandmother, from him: al-Dahhak ibn Sufyan said, “O Messenger of Allah, would you be interested in the sister of Umm Shabib?” Umm Shabib was al-Dahhak's wife. Ibn Manda mentioned her. Al-Dahhak was an official of the Prophet—may Allah bless him and grant him peace.",
+      "arabic_sha256": "7770799e9b37d91fc7a38b965aee3f9ceed7957f99dce33e475b017f5eea3aed",
+      "english_sha256": "d54873759828c035b9960b41a3b373fbcdadc5143e9bf65e0fab13612673e015",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم شبيب",
+      "english": "Umm Shabib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الضحاك بن سفيان الكلابي",
+      "english": "al-Dahhak ibn Sufyan al-Kilabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجاج بن أبي منيع",
+      "english": "Hajjaj ibn Abi Mani'",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

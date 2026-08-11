@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011356",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11356,
+  "title": {
+    "english": "Suhayma bint Umayr",
+    "arabic_observed": "سهيمة بنت عمير"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011356-segment-0001",
+      "volume": 8,
+      "scan_page": 195,
+      "printed_page": 194,
+      "reader_page": 4107,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4107",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0195:0a149c0a43c2cf13",
+      "arabic": "١١٣٥٦- سهيمة بنت عمير\nالأنصارية، عمة عبد اللَّه بن الحارث بن عمير، أو عمرو أو عويمر.\nذكر ابن مندة من طريق عبد اللَّه بن الحارث: لقد كان من رسول اللَّه ﷺ في عمتي سهيمة بنت عمير قضاء ما قضى به في امرأة من المسلمين قبلها. وتقدم مزيد لذلك في عبد اللَّه بن الحارث.",
+      "english": "11356 — Suhayma bint Umayr\n\nAn Ansari woman, the paternal aunt of Abdullah ibn al-Harith ibn Umayr—or Amr, or Uwaymir.\n\nIbn Manda cited through Abdullah ibn al-Harith: “The Messenger of Allah—may Allah bless him and grant him peace—did indeed issue concerning my paternal aunt Suhayma bint Umayr the same judgment that he had issued concerning a Muslim woman before her.” Further details concerning this have already appeared in the entry on Abdullah ibn al-Harith.",
+      "arabic_sha256": "a544f7e7e575a9015c72cc8e78fe7c237d947964d5d58452e2de2e295c0bdc7d",
+      "english_sha256": "bb9b6105bc7154637c05b94ebfa4faad73ee42a76e4013360e2fb68b9d6336df",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن الحارث بن عمير",
+      "english": "Abdullah ibn al-Harith ibn Umayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهيمة",
+      "english": "Suhayma",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

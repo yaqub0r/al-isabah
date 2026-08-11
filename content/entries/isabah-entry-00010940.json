@@ -1,0 +1,68 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010940",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10940,
+  "title": {
+    "english": "Bashira,",
+    "arabic_observed": "بشيرة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010940-segment-0001",
+      "volume": 8,
+      "scan_page": 53,
+      "printed_page": 52,
+      "reader_page": 3965,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3965",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0053:89f56c72ae8a0c23",
+      "arabic": "١٠٩٤٠- بشيرة\nبمعجمة بوزن عظيمة، بنت الحارث بن عبد رزاح «١» بن ظفر الأنصارية الظفرية.\nذكرها ابن حبيب فيمن بايعن رسول اللَّه ﷺ.",
+      "english": "10940—Bashira,\n\nwith shin, on the pattern of Azima, bint al-Harith ibn Abd Razah(1) ibn Zafar, the Ansari woman of the Banu Zafar.\n\nIbn Habib mentioned her among the women who pledged allegiance to the Messenger of Allah, may Allah bless him and grant him peace.",
+      "arabic_sha256": "674847d8486d45652cee06180616fae45bd676bf88326c5d251638bcafba685c",
+      "english_sha256": "3e141bc0d85405c9e6ecc9711b8543b7d7bea890a1ebc7f00ba8f9b45e65f476",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بنو ظفر",
+      "english": "Banu Zafar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "عبد رزاح",
+      "explanation": "The canonical text and both supplied witnesses preserve the consonantal spelling but provide no short vowels. Abd Razah is retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0053:89f56c72ae8a0c23"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

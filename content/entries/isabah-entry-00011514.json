@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011514",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11514,
+  "title": {
+    "english": "Amra bint Mas'ud ibn Qays al-Ansariyya:",
+    "arabic_observed": "عمرة بنت مسعود بن قيس الأنصاريّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011514-segment-0001",
+      "volume": 8,
+      "scan_page": 247,
+      "printed_page": 246,
+      "reader_page": 4159,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4159",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0247:89271ce00ac4811d",
+      "arabic": "١١٥١٤- عمرة بنت مسعود بن قيس الأنصاريّة:\nأخت اللتين قبلها.\nقال ابن سعد: كن خمس أخوات اسم كل منهن عمرة، أسلمن وبايعن، وهذه هي الثّالثة، أمّها عميرة بنت عمرو بن حرام بن زيد مناة، تزوّجها ثابت بن المنذر بن حرام، والد حسّان وإخوته، فولدت له أبا شيخ بن ثابت، واسمه أبي، وقد شهد بدرا، أسلمت وبايعت.",
+      "english": "11514—Amra bint Mas'ud ibn Qays al-Ansariyya:\nThe sister of the two preceding women.\n\nIbn Sa'd said: They were five sisters, each of whom was named Amra; they embraced Islam and pledged allegiance. This one was the third. Her mother was Umayra bint Amr ibn Haram ibn Zayd Manat. Thabit ibn al-Mundhir ibn Haram, the father of Hassan and his brothers, married her, and she bore him Abu Shaykh ibn Thabit, whose name was Ubayy. He was present at Badr. She embraced Islam and pledged allegiance.",
+      "arabic_sha256": "044d99636e353904da1f237ea68612a7be1c725b58c7e113f609206b9165df3f",
+      "english_sha256": "e3ae25057cf838b11be6a3dcf988b7b02eae10afd71d19b621260bdd525803c9",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة بنت مسعود بن قيس الأنصارية",
+      "english": "Amra bint Mas'ud ibn Qays al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة بنت عمرو بن حرام بن زيد مناة",
+      "english": "Umayra bint Amr ibn Haram ibn Zayd Manat",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت بن المنذر بن حرام",
+      "english": "Thabit ibn al-Mundhir ibn Haram",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبا شيخ بن ثابت، واسمه أبي",
+      "english": "Abu Shaykh Ubayy ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

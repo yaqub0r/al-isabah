@@ -1,0 +1,110 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011469",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11469,
+  "title": {
+    "english": "Aisha bint Mu'awiya",
+    "arabic_observed": "عائشة بنت معاوية"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011469-segment-0001",
+      "volume": 8,
+      "scan_page": 238,
+      "printed_page": 237,
+      "reader_page": 4150,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4150",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0238:d20a14a7e592fbb8",
+      "arabic": "١١٤٦٩- عائشة بنت معاوية\nبن المغيرة بن أبي العاص بن أمية والدة عبد الملك بن مروان.\nقتل أبوها يوم أحد كافرا، وأمها فاطمة بنت عامر الجمحيّ.\nقال ابن إسحاق: لما توجه النبيّ ﵌ بمن معه بعد وقعة أحد إلى حمراء الأسد خشية من رجوع أبي سفيان ومن معه إليهم وجد هناك أبا عزة الجمحيّ ومعاوية بن المغيرة المذكور، فأمر عاصم بن ثابت بقتل أبي عزة، واستأمن عثمان بن عفان لمعاوية، فشرط ألا يوجد بعد ثلاث، فبعث النبي ﵌ بعد ذلك زيد بن حارثة، وعمار بن ياسر، فقال: لهما ستجدانه بمكان كذا قتيلا.\nقلت: فأدركت عائشة هذه من حياة النبي ﵌ نحو سبع سنين.\nوقد تقدم أنه لم يبق بمكة في حجة الوداع أحد من قريش إلا أسلم وشهدها.",
+      "english": "11469 — Aisha bint Mu'awiya\n\nibn al-Mughira ibn Abi al-'As ibn Umayya, the mother of Abd al-Malik ibn Marwan.\n\nHer father was killed as an unbeliever on the day of Uhud, and her mother was Fatima bint Amir al-Jumahi.\n\nIbn Ishaq said: When the Prophet—may Allah bless him and grant him peace—and those with him set out after the battle of Uhud for Hamra' al-Asad, for fear that Abu Sufyan and those with him might turn back against them, he found Abu 'Azza al-Jumahi and the aforementioned Mu'awiya ibn al-Mughira there. He ordered Asim ibn Thabit to kill Abu 'Azza. Uthman ibn Affan sought a guarantee of safety for Mu'awiya, and the Prophet stipulated that he must not be found after three days. Thereafter, the Prophet—may Allah bless him and grant him peace—sent Zayd ibn Haritha and Ammar ibn Yasir, saying to them, “You will find him at such-and-such a place, slain.”\n\nI say: This Aisha therefore lived for approximately seven years during the lifetime of the Prophet—may Allah bless him and grant him peace.\n\nIt has already been stated that, at the time of the Farewell Pilgrimage, no one from Quraysh remained in Mecca without having embraced Islam and attended it.",
+      "arabic_sha256": "29e239360812002ecb4e5d2a5f71dabbc890e864138bc586f562972fcf817623",
+      "english_sha256": "6e4a14425a9d48acddf1ac9fca20fd254c867f8163d7be0f24f81866a2842b66",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عبد الملك بن مروان",
+      "english": "Abd al-Malik ibn Marwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت عامر الجمحي",
+      "english": "Fatima bint Amir al-Jumahi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "حمراء الأسد",
+      "english": "Hamra' al-Asad",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو سفيان",
+      "english": "Abu Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عزة الجمحي",
+      "english": "Abu 'Azza al-Jumahi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاصم بن ثابت",
+      "english": "Asim ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن عفان",
+      "english": "Uthman ibn Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن حارثة",
+      "english": "Zayd ibn Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمار بن ياسر",
+      "english": "Ammar ibn Yasir",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "حجة الوداع",
+      "english": "Farewell Pilgrimage",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012248",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12248,
+  "title": {
+    "english": "Umm Mihjan:²",
+    "arabic_observed": "أم محجن «٢»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012248-segment-0001",
+      "volume": 8,
+      "scan_page": 473,
+      "printed_page": 472,
+      "reader_page": 4385,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4385",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0473:b9f6c84fc251ec4d",
+      "arabic": "١٢٢٤٨- أم محجن «٢»:\nالتي كانت تقم المسجد. تقدمت في محجنة.",
+      "english": "12248—Umm Mihjan:²\n\nThe woman who used to sweep the mosque. She was mentioned previously under Mihjana.",
+      "arabic_sha256": "3a3f4b1e946753b281174a44d92a8b7f2c030b7d16e4d20c4bc358987caaa64b",
+      "english_sha256": "c19016e2d1698d79097edbeae7387f8fed94c51e6ec0d2be7acc4379cd00c35a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم محجن",
+      "english": "Umm Mihjan",
+      "kind": "person"
+    },
+    {
+      "arabic": "محجنة",
+      "english": "Umm Mihjan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

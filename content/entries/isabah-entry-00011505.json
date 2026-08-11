@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011505",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11505,
+  "title": {
+    "english": "Amra bint al-Sa'di",
+    "arabic_observed": "عمرة بنت السعدي"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011505-segment-0001",
+      "volume": 8,
+      "scan_page": 246,
+      "printed_page": 245,
+      "reader_page": 4158,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4158",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0246:22e2ad2466062f85",
+      "arabic": "١١٥٠٥- عمرة بنت السعدي\nبن وقدان بن عبد شمس العامريّة «٢» .\nتقدم نسبها في ترجمة أخيها عبد اللَّه بن السعديّ، ذكرها ابن إسحاق فيمن هاجر إلى أرض الحبشة، فقال: ومالك بن قيس بن ربيعة ومعه امرأته عمرة بنت السّعديّ، وقيل اسمها عميرة.",
+      "english": "11505—Amra bint al-Sa'di\nibn Waqdan ibn Abd Shams al-Amiriyya.²\nHer lineage was given above in the biography of her brother Abd Allah ibn al-Sa'di. Ibn Ishaq included her among those who emigrated to the land of Abyssinia, saying: “Malik ibn Qays ibn Rabi'a, accompanied by his wife Amra bint al-Sa'di.” It is also said that her name was Umayra.",
+      "arabic_sha256": "a0487fb5046016251ecd77f42a46ec5c2092112a8bd429ed6b2e743585946871",
+      "english_sha256": "9029314a787c28c0841a64817ed9a02426b19f73dda22fb60fafa564da720b97",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عميرة",
+      "english": "Umayra bint Sa'd ibn Malik ibn Khalid al-Sa'idi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن السعدي",
+      "english": "Abd Allah ibn al-Sa'di",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أرض الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "مالك بن قيس بن ربيعة",
+      "english": "Malik ibn Qays ibn Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة",
+      "english": "Umayra bint al-Sa'di ibn Waqdan ibn Abd Shams al-Amiriyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

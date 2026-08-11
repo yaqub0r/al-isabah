@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011597",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11597,
+  "title": {
+    "english": "Fatima bint Sharik ibn Sahma':",
+    "arabic_observed": "فاطمة بنت شريك بن سحماء:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011597-segment-0001",
+      "volume": 8,
+      "scan_page": 273,
+      "printed_page": 272,
+      "reader_page": 4185,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4185",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0273:d377e72fdb7386de",
+      "arabic": "١١٥٩٧- فاطمة بنت شريك بن سحماء:\nلها ذكر في ترجمة والدها.",
+      "english": "11597—Fatima bint Sharik ibn Sahma':\n\nShe is mentioned in the biography of her father.",
+      "arabic_sha256": "191e01c3b862651231ebf87ead283e7a2440cb55cc2c30ccee92e4c46783ab9e",
+      "english_sha256": "7bdcd8b33a4af1a495bdaf6ac8467f388740ffc84d050280a8c7ccd374ee26a1",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "فاطمة بنت شريك بن سحماء",
+      "english": "Fatima bint Sharik ibn Sahma'",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

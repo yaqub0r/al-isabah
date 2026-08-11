@@ -1,0 +1,104 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011523",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11523,
+  "title": {
+    "english": "Amra bint Ya'ar.(8)",
+    "arabic_observed": "عمرة بنت يعار «٨» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011523-segment-0001",
+      "volume": 8,
+      "scan_page": 248,
+      "printed_page": 247,
+      "reader_page": 4160,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4160",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0248:3d2d89bab4de13b0",
+      "arabic": "١١٥٢٣- عمرة بنت يعار «٨» .\n(١) في أ: عمرو بن فراس.\n(٢) أسد الغابة ت (٧١٣٦) .\n(٣) أسد الغابة ت (٧١٣٧) .\n(٤) سقط في أ.\n(٥) أسد الغابة ت (٧١٢٢)، الاستيعاب ت (٣٤٩٠) .\n(٦) أسد الغابة ت (٧١٣٨) .\n(٧) أسد الغابة ت (٧١٤٠)، الاستيعاب ت (٣٤٩١)، الثقات ج ٣/ ٣٢٤، أعلام النساء ج ٣/ ٣٦٢، تجريد أسماء الصحابة ج ٢/ ٢٩٠.\n(٨) أسد الغابة ت (٧١٤٠)، الاستيعاب ت (٣٤٩١) .",
+      "english": "11523—Amra bint Ya'ar.(8)\n\n(1) In A: “Amr ibn Firas.”\n\n(2) Usd al-Ghaba, entry 7136.\n\n(3) Usd al-Ghaba, entry 7137.\n\n(4) Omitted in A.\n\n(5) Usd al-Ghaba, entry 7122; al-Isti'ab, entry 3490.\n\n(6) Usd al-Ghaba, entry 7138.\n\n(7) Usd al-Ghaba, entry 7140; al-Isti'ab, entry 3491; al-Thiqat, 3/324; A'lam al-Nisa, 3/362; al-Tajrid, 2/290.\n\n(8) Usd al-Ghaba, entry 7140; al-Isti'ab, entry 3491.",
+      "arabic_sha256": "d2e05b139d4fa85fe2b5dc3f3423548adb1ee48ead32d3cecda85c17d3fac785",
+      "english_sha256": "e185cef572110cebf13966e2d980e5e2285e65e3259ce52daf4e8196508f1bef",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011523-segment-0002",
+      "volume": 8,
+      "scan_page": 249,
+      "printed_page": 248,
+      "reader_page": 4161,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4161",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0249:fb364e33a3806aca",
+      "arabic": "يقال هي التي أعتقت سالما مولى أبي حذيفة، والمشهور أنّ اسمها ثبيتة، بمثلثة ثم بموحدة ثم مثناة مصغّرا.",
+      "english": "It is said that she was the woman who emancipated Salim, the client of Abu Hudhayfa. The well-known view is that her name was Thubayta—spelled with a three-dotted letter, then a single-dotted letter, then a two-dotted letter, in the diminutive form.",
+      "arabic_sha256": "ff1b2d08aaefe0789fef3865e20ffae75af96a60d990f66be8ee152f360704ff",
+      "english_sha256": "033587beccbf183622c689bf8e59ade7b0d518f14c9e78bf9b927bcb315e5ccb",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمرة بنت يعار",
+      "english": "Amra bint Ya'ar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن فراس",
+      "english": "Amr ibn Firas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "سالم",
+      "english": "Salim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو حذيفة",
+      "english": "Abu Hudhayfa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثبيتة",
+      "english": "Thubayta",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

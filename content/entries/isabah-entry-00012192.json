@@ -1,0 +1,105 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012192",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12192,
+  "title": {
+    "english": "Umm Amr:",
+    "arabic_observed": "أم عمرو:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012192-segment-0001",
+      "volume": 8,
+      "scan_page": 445,
+      "printed_page": 444,
+      "reader_page": 4357,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4357",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0445:3ffaff7672c6c364",
+      "arabic": "١٢١٩٢- أم عمرو:\nزوج سليم الزرقيّ «٣» .\nروى حديثها [يزيد بن الهاد، عن عبد اللَّه بن أبي سلمة، عن عمرو بن سليم الزّرقيّ] «٤» عن أمه- أنها سمعت عليّا ينادي وهم بمنى مع رسول اللَّه ﵌: إنّها أيّام أكل وشرب وبعال» .\n(١) أسد الغابة ت (٧٥٥٧) .\n(٢) أسد الغابة ت (٧٥٥٣) .\n(٣) تجريد أسماء الصحابة ٢/ ٣٣٠، أسد الغابة ت (٧٥٥٦)، الاستبصار ١٨٣.\n(٤) سقط من أ.",
+      "english": "12192—Umm Amr:\n\nThe wife of Sulaym al-Zuraqi.[3]\n\nHer report was narrated by [Yazid ibn al-Had, from Abd Allah ibn Abi Salama, from Amr ibn Sulaym al-Zuraqi],[4] from his mother, who had heard Ali calling out while they were at Mina with the Messenger of Allah—may Allah bless him and grant him peace: “These are days of eating, drinking, and marital relations.”\n\n[1] Usd al-Ghaba, entry 7557.\n\n[2] Usd al-Ghaba, entry 7553.\n\n[3] al-Tajrid, 2/330; Usd al-Ghaba, entry 7556; al-Istibsar, p. 183.\n\n[4] Omitted from manuscript A.",
+      "arabic_sha256": "0d32027fb3b330ad9fee07d11dfe5e0cfc127c7c311597860500d9ec95f33d2d",
+      "english_sha256": "260689757abea9efffd2705b0ebbeaa5307c3c61f8741c482ddbc0b1f7a93e60",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو زوج حريث بن عمرو بن عثمان المخزومي",
+      "english": "Umm Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ / رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو زوج سليم الزرقي",
+      "english": "Umm Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليم الزرقي",
+      "english": "Sulaym al-Zuraqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن الهاد",
+      "english": "Yazid ibn al-Had",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن أبي سلمة",
+      "english": "Abd Allah ibn Abi Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن سليم الزرقي",
+      "english": "Amr ibn Sulaym al-Zuraqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "منى",
+      "english": "Mina",
+      "kind": "place"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

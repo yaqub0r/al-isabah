@@ -1,0 +1,159 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011585",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11585,
+  "title": {
+    "english": "Fari'a al-Jinniyya",
+    "arabic_observed": "فارعة الجنّية"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011585-segment-0001",
+      "volume": 8,
+      "scan_page": 262,
+      "printed_page": 261,
+      "reader_page": 4174,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4174",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0262:2e0630b1ec6b1b50",
+      "arabic": "١١٥٨٥- فارعة الجنّية\nذكرها حمزة بن يوسف الجرجانيّ في «تاريخ جرجان»، قال: أخبرنا أبو أحمد بن عديّ، حدّثنا عبد المؤمن بن أحمد، حدّثنا جعفر بن الحكم، حدثنا لهيعة بن عبد اللَّه بن لهيعة، [عن أبيه] «٣»\nعن أبي الزّبير عن جابر- أن امرأة من الجنّ كانت تأتي النبيّ صلّى اللَّه\n(١) أسد الغابة ت (٧١٧٢)، الاستيعاب ت (٣٤٩٨) .\n(٢) أسد الغابة ت (٧١٧٤) .\n(٣) سقط في أ.",
+      "english": "11585—Fari'a al-Jinniyya\n\nHamza ibn Yusuf al-Jurjani mentioned her in Tarikh Jurjan. He said: Abu Ahmad ibn 'Adi informed us: 'Abd al-Mu'min ibn Ahmad related to us: Ja'far ibn al-Hakam related to us: Luhay'a ibn 'Abd Allah ibn Luhay'a related to us, [from his father],³ from Abu al-Zubayr, from Jabir, that a woman of the jinn used to come to the Prophet—may Allah bless…\n\n¹ Usd al-Ghaba, entry 7172; al-Isti'ab, entry 3498.\n² Usd al-Ghaba, entry 7174.\n³ Omitted in A.",
+      "arabic_sha256": "b739c366776b4d0847a675033992e5f253a6af440f6df3f88eebd0b2caaeb726",
+      "english_sha256": "0bb101f5eb1de30961f2ca92f29988451fc1dbbbd9b7be50e98d5fbf58180a8e",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011585-segment-0002",
+      "volume": 8,
+      "scan_page": 263,
+      "printed_page": 262,
+      "reader_page": 4175,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4175",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0263:9979e597d3cbada4",
+      "arabic": "عليه وآله وسلّم في نساء من قومها، فأبطأت عليه مرّة ثم جاءت فقال: «ما أبطأك؟» قالت:\nموت ميّت لنا بأرض الهند، فذهبت في تعزيته، فرأيت إبليس في طريقي قائما يصلّي على صخرة، فقلت: «ما حملك على أن أضللت آدم؟ قال: دعي عنك هذا. قلت: تصلي وأنت أنت! قال: نعم يا فارعة بنت العبد الصّالح، إني لأرجو من ربي إذا أبر قسمه أن يغفر لي.\nوفي سنده من لا يعرف. وأورده ابن الجوزي في الموضوعات.",
+      "english": "…upon him and his family be blessings and peace—among women from her people. Once she was late in coming to him, and then she came. He asked, “What delayed you?” She replied, “One of our people died in the land of India. I went to offer condolences for him, and on my way I saw Iblis standing and praying upon a rock. I said, ‘What induced you to lead Adam astray?’ He said, ‘Leave this matter alone.’ I said, ‘You pray, being who you are!’ He said, ‘Yes, O Fari'a, daughter of the righteous servant. I hope that my Lord, when He fulfills His oath, will forgive me.’”\n\nIts chain of transmission contains an unknown narrator. Ibn al-Jawzi included it in al-Mawdu'at.",
+      "arabic_sha256": "de23b630807ddb00c5162268b443714148e508b9df63db7e1ea9a1901c4b56ff",
+      "english_sha256": "d9b5d02d8dda1806cf8227c0afc5859365c795050b85ad84093f6597f12508a2",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "فارعة الجنّية",
+      "english": "Fari'a al-Jinniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمزة بن يوسف الجرجانيّ",
+      "english": "Hamza ibn Yusuf al-Jurjani",
+      "kind": "person"
+    },
+    {
+      "arabic": "جرجان",
+      "english": "Jurjan",
+      "kind": "place"
+    },
+    {
+      "arabic": "تاريخ جرجان",
+      "english": "Tarikh Jurjan",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو أحمد بن عديّ",
+      "english": "Abu Ahmad ibn 'Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد المؤمن بن أحمد",
+      "english": "'Abd al-Mu'min ibn Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "جعفر بن الحكم",
+      "english": "Ja'far ibn al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "لهيعة بن عبد اللَّه بن لهيعة",
+      "english": "Luhay'a ibn 'Abd Allah ibn Luhay'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن لهيعة",
+      "english": "'Abd Allah ibn Luhay'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الزّبير",
+      "english": "Abu al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر",
+      "english": "Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "فارعة",
+      "english": "Fari'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبليس",
+      "english": "Iblis",
+      "kind": "other"
+    },
+    {
+      "arabic": "آدم",
+      "english": "Adam",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهند",
+      "english": "India",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن الجوزي",
+      "english": "Ibn al-Jawzi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الموضوعات",
+      "english": "al-Mawdu'at",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

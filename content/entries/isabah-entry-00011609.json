@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011609",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11609,
+  "title": {
+    "english": "Fatima bint Qays [1]",
+    "arabic_observed": "فاطمة بنت قيس «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011609-segment-0001",
+      "volume": 8,
+      "scan_page": 278,
+      "printed_page": 277,
+      "reader_page": 4190,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4190",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0278:4f540644354a08bc",
+      "arabic": "١١٦٠٩- فاطمة بنت قيس «١»\n: قيل هي بنت أبي جبيش، وإن اسم أبي حبيش قيس.",
+      "english": "11609—Fatima bint Qays [1]\n\nIt is said that she was the daughter of Abu Jubaysh, and that Abu Hubaysh's personal name was Qays.",
+      "arabic_sha256": "530252b49a70c5103b449a2b6bbf41ac435c72d1198a586859b006b55c6c4cc4",
+      "english_sha256": "12b3405d4982b54d2a7ff7933a5c82529ae5789eefbf3b24aff2ff009a9bd5eb",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "فاطمة بنت قيس",
+      "english": "Fatima bint Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي جبيش",
+      "english": "Abu Jubaysh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي حبيش",
+      "english": "Abu Hubaysh",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس",
+      "english": "Qays",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

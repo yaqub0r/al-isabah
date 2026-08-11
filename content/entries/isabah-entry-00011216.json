@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011216",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11216,
+  "title": {
+    "english": "Rumaytha bint Hakim.¹",
+    "arabic_observed": "رميثة بنت حكيم «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011216-segment-0001",
+      "volume": 8,
+      "scan_page": 150,
+      "printed_page": 149,
+      "reader_page": 4062,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4062",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0150:c3dab5c17262d97b",
+      "arabic": "١١٢١٦- رميثة بنت حكيم «١»\n. بايعت وأرسلت حديثا، فذكرها بعضهم في الصحابة، وذكرها أبو موسى في الذيل، وقال: روى الليث بن سعد، عن يزيد بن أبي حبيب حديثا لها عن رسول اللَّه ﷺ، وهو مرسل، إنما هي تابعية تروي عن عائشة.\nحرف الزاي المنقوطة\nالقسم الأول",
+      "english": "11216 — Rumaytha bint Hakim.¹\n\nShe pledged allegiance and transmitted a report in mursal form, so some included her among the Companions. Abu Musa mentioned her in al-Dhayl and said: “Al-Layth ibn Sa'd related, from Yazid ibn Abi Habib, a report of hers from the Messenger of Allah, may Allah bless him and grant him peace. It is mursal; she was only a Successor who related from Aisha.”\n\nTHE DOTTED LETTER ZAY\n\nSECTION ONE",
+      "arabic_sha256": "2a1d9970e575d90e2a961ef8100de09c5b73e07e5bf794ce4e56ec323a2e13a5",
+      "english_sha256": "195dc40e9fdaa052e69ac831dfb9e82107056449d202efb6bb8c3b6baca4f0b2",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رميثة بنت حكيم",
+      "english": "Rumaytha bint Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "الليث بن سعد",
+      "english": "al-Layth ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن أبي حبيب",
+      "english": "Yazid ibn Abi Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

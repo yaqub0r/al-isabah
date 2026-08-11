@@ -1,0 +1,188 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010937",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10937,
+  "title": {
+    "english": "Busrah bint Safwan",
+    "arabic_observed": "بسرة بنت صفوان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010937-segment-0001",
+      "volume": 8,
+      "scan_page": 52,
+      "printed_page": 51,
+      "reader_page": 3964,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3964",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0052:e992a00a68b50b54",
+      "arabic": "١٠٩٣٧- بسرة بنت صفوان\nبن نوفل بن أسد بن عبد العزى بن قصي القرشية الأسدية «٢» بنت أخي ورقة بن نوفل، وقيل بنت صفوان بن أمية بن محرث، من بني مالك بن كنانة.\nقال ابن الأثير: الأول أصح، وأمها سالمة بنت أمية بن حارثة بن الأوقص السلمية وكانت أخت عقبة بن أبي معيط لأمه، وكانت بسرة زوج المغيرة بن أبي العاص، فولدت له عائشة، فتزوجها مروان بن الحكم، فولدت له عبد الملك، كذا قال ... وهو غلط. فإن أم عبد الملك بنت معاوية أخي المغيرة، قاله الزبير بن بكار، وهو أعرف بنسب قومه.\nروت بسرة عن النبيّ ﷺ. روى عنها مروان بن الحكم، وعروة بن الزبير، وسعيد بن المسيب، وأم كلثوم بنت عقبة، ومحمد بن عبد الرحمن.\nقال الشّافعيّ: لها سابقة قديمة وهجرة. وقال ابن حبان: كانت من المهاجرات. وقال مصعب: كانت من المبايعات. وأخرج إسحاق في مسندة، من طريق عمرو بن شعيب، قال: كنت عند سعيد بن المسيب، فقال: إن بسرة بنت صفوان، وهي إحدى خالاتي، فذكر الحديث في مس الذكر. وذكر ابن الكلبي أنها كانت ماشطة تقيّن النساء بمكة.",
+      "english": "10937 — Busrah bint Safwan\n\nibn Nawfal ibn Asad ibn 'Abd al-'Uzza ibn Qusayy, the Qurashi woman of Banu Asad,² and the daughter of Waraqah ibn Nawfal's brother. It is also said that she was the daughter of Safwan ibn Umayyah ibn Muhrith, of Banu Malik ibn Kinanah.\n\nIbn al-Athir said: “The first is more correct.” Her mother was Salimah bint Umayyah ibn Harithah ibn al-Awqas, of Banu Sulaym, who was the maternal sister of 'Uqbah ibn Abi Mu'ayt. Busrah was the wife of al-Mughirah ibn Abi al-'As and bore him Aisha. Marwan ibn al-Hakam then married Aisha, and she bore him 'Abd al-Malik. This is what Ibn al-Athir said ... but it is an error. For the mother of 'Abd al-Malik was the daughter of Mu'awiyah, al-Mughirah's brother. This was stated by al-Zubayr ibn Bakkar, who was more knowledgeable about the genealogy of his own people.\n\nBusrah transmitted from the Prophet, may Allah bless him and grant him peace. Marwan ibn al-Hakam, 'Urwah ibn al-Zubayr, Sa'id ibn al-Musayyib, Umm Kulthum bint 'Uqbah, and Muhammad ibn 'Abd al-Rahman transmitted from her.\n\nAl-Shafi'i said: “She possessed early precedence and had undertaken the Emigration.” Ibn Hibban said: “She was one of the female Emigrants.” Mus'ab said: “She was one of the women who pledged allegiance.” Ishaq related in his Musnad, through the route of 'Amr ibn Shu'ayb, who said: “I was with Sa'id ibn al-Musayyib, and he said: ‘Busrah bint Safwan was one of my maternal aunts,’” and he then related the hadith concerning touching the penis. Ibn al-Kalbi mentioned that she was a hairdresser who adorned the women of Mecca.",
+      "arabic_sha256": "1c2d6475f3052b2575faf53bd2bc046923ecf04c58281a784d3b11fc84517939",
+      "english_sha256": "55322e4384c604cea0d84903eb176f0fbc7f4cf21bbdd1aa37a402c437be6c95",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأسدية",
+      "english": "Banu Asad ibn 'Abd al-'Uzza",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ورقة بن نوفل",
+      "english": "Waraqah ibn Nawfal",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني مالك بن كنانة",
+      "english": "Banu Malik ibn Kinanah",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سالمة بنت أمية بن حارثة بن الأوقص",
+      "english": "Salimah bint Umayyah ibn Harithah ibn al-Awqas",
+      "kind": "person"
+    },
+    {
+      "arabic": "السلمية",
+      "english": "Banu Sulaym",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عقبة بن أبي معيط",
+      "english": "'Uqbah ibn Abi Mu'ayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "المغيرة بن أبي العاص",
+      "english": "al-Mughirah ibn Abi al-'As",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "مروان بن الحكم",
+      "english": "Marwan ibn al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الملك",
+      "english": "'Abd al-Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Mu'awiyah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة بن الزبير",
+      "english": "'Urwah ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن المسيب",
+      "english": "Sa'id ibn al-Musayyib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم بنت عقبة",
+      "english": "Umm Kulthum bint 'Uqbah",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عبد الرحمن",
+      "english": "Muhammad ibn 'Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشافعيّ",
+      "english": "al-Shafi'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "مصعب",
+      "english": "Mus'ab",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق",
+      "english": "Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن شعيب",
+      "english": "'Amr ibn Shu'ayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الكلبي",
+      "english": "Ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "محرث",
+      "explanation": "The supplied witnesses reproduce the same unvocalized consonantal form and do not securely establish Muhrith; that reading is retained provisionally.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0052:e992a00a68b50b54"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

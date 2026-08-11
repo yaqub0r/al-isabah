@@ -1,0 +1,192 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012269",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12269,
+  "title": {
+    "english": "Umm Ma'qal al-Asadiyya:[7]",
+    "arabic_observed": "أم معقل الأسدية «٧»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012269-segment-0001",
+      "volume": 8,
+      "scan_page": 479,
+      "printed_page": 478,
+      "reader_page": 4391,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4391",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0479:f0ec8b9772680ce2",
+      "arabic": "١٢٢٦٩- أم معقل الأسدية «٧»\n:\n(١) الثقات ٣/ ٤٦١، أعلام النساء ٥/ ٦٣، وتجريد أسماء الصحابة ٢/ ٣٣٥، أسد الغابة ت (٧٦٠٧)، الاستيعاب ت (٣٦٧٥) .\n(٢) أخرجه أحمد في المسند ٢/ ٥٢٦ عن أبي هريرة.\n(٣) أسد الغابة ت (٧٦٠٨) .\n(٤) في أ: وفردها عن الخزاعية.\n(٥) سقط من أ.\n(٦) أم معتب.\n(٧) أعلام النساء ٥/ ٦٤، تجريد أسماء الصحابة ٢/ ٣٣٦- تقريب التهذيب ٢/ ٦٢٥- تهذيب التهذيب ١٢/ ٤٨٠ الكاشف ٣/ ٣٩٢- تهذيب الكمال ٣/ ١٧٠٦- الاستبصار ٣٥٨- خلاصة تذهيب ٣/ ٤٠٣ تلقيح فهوم أهل الأثر ٣٧٠، أسد الغابة ت (٧٦٠٩)، الاستيعاب ت (٣٦٧٨) .",
+      "english": "12269—Umm Ma'qal al-Asadiyya:[7]\n\n[1] al-Thiqat 3/461; A'lam al-Nisa 5/63; al-Tajrid 2/335; Usd al-Ghaba, entry (7607); al-Isti'ab, entry (3675).\n\n[2] Ahmad transmitted it in Musnad Ahmad 2/526, from Abu Hurayra.\n\n[3] Usd al-Ghaba, entry (7608).\n\n[4] In manuscript A: “and he separated her from the Khuza'i woman.”\n\n[5] Omitted from manuscript A.\n\n[6] Umm Mu'attib.\n\n[7] A'lam al-Nisa 5/64; al-Tajrid 2/336; Taqrib al-Tahdhib 2/625; Tahdhib al-Tahdhib 12/480; al-Kashif 3/392; Tahdhib al-Kamal 3/1706; al-Istibsar 358; Khulasat Tadhhib 3/403; Talqih Fuhum Ahl al-Athar 370; Usd al-Ghaba, entry (7609); al-Isti'ab, entry (3678).",
+      "arabic_sha256": "f954199dd75bf24b2252b7c9f310b05ae8356554666d398bcaf24f76118c5158",
+      "english_sha256": "02f70783b46e1fe4125e09daa3735a353839daa787d56adc689fee6ebab16c19",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012269-segment-0002",
+      "volume": 8,
+      "scan_page": 480,
+      "printed_page": 479,
+      "reader_page": 4392,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4392",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0480:dbe37cc9243b808c",
+      "arabic": "زوج أبي معقل، ويقال: إنها أشجعية. ويقال أنصارية.\nروى حديثها أصحاب السنن الثلاثة.\nوقد تقدم بيان ذلك مفصلا في ترجمة زوجها في كنى الرجال، وذكر الاختلاف في سند حديثها:\n«عمرة في رمضان تعدل حجّة» .\nويقال: إنها المرادة بما وقع\nفي حديث ابن عباس في الصحيح- أن النبي ﵌ قال لامرأة من الأنصار: «ما منعك أن تحجّي معنا»؟ قالت: كان لنا ناضح فركبه أبو فلان وابنة لزوجها وابنها. قال: «فإذا كان من رمضان اعتمري، فإن عمرة في رمضان تعدل حجّة» «١» .\nولكن ثبت في مسلم أنها أم سنان، فإما أن يكون اختلف في كنيتها، وإما أن تكون القصة تعددت، وهو الأشبه.",
+      "english": "The wife of Abu Ma'qil. It is also said that she was of Ashja', and it is said that she was an Ansari woman.\n\nThe authors of the three Sunan collections transmitted her hadith.\n\nA detailed explanation of this has already appeared in the biography of her husband among the men's kunyas, together with mention of the disagreement concerning the chain of transmission of her hadith:\n\n“An 'umra in Ramadan is equivalent to a pilgrimage.”\n\nIt is also said that she is the woman intended in the report of Ibn 'Abbas in the Sahih: the Prophet—may Allah bless him and grant him peace—said to a woman of the Ansar, “What prevented you from performing the pilgrimage with us?” She replied, “We had a water-carrying camel, which Abu So-and-so and his son—her husband and her son—rode.” He said, “When Ramadan comes, perform an 'umra, for an 'umra in Ramadan is equivalent to a pilgrimage.” (1)\n\nIt is established in Muslim, however, that she was Umm Sinan. Thus, either there was disagreement over her kunya, or the incident occurred more than once; the latter is more likely.",
+      "arabic_sha256": "37e085302997d1c8bb5a11527969ee6819efba68d91934191678ba2fc54ddbe8",
+      "english_sha256": "c638d8fb3f01f958dadc4f964b23f03a715d182f4b92e7e2b7f2a24bd730303c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخزاعية",
+      "english": "Umm Ma'bad al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معتب",
+      "english": "Umm Mu'attib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معقل الأسدية",
+      "english": "Umm Ma'qal al-Asadiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي هريرة",
+      "english": "Abu Hurayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب",
+      "english": "Khulasat Tadhhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبي معقل",
+      "english": "Abu Ma'qil",
+      "kind": "person"
+    },
+    {
+      "arabic": "أشجعية",
+      "english": "Ashja'",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn 'Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو فلان",
+      "english": "Abu So-and-so",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سنان",
+      "english": "Umm Sinan",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "editorial_note",
+      "arabic_span": "(٦) أم معتب.",
+      "explanation": "The note unambiguously reads “Umm Mu'attib,” which has been preserved. The supplied witnesses do not establish whether it represents a variant heading, a correction, or a separate cross-reference.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0479:f0ec8b9772680ce2"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

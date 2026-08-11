@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011297",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11297,
+  "title": {
+    "english": "Sa'da,(1)",
+    "arabic_observed": "سعدى»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011297-segment-0001",
+      "volume": 8,
+      "scan_page": 179,
+      "printed_page": 178,
+      "reader_page": 4091,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4091",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0179:032b8c150c6cee95",
+      "arabic": "١١٢٩٧- سعدى»\n، غير منسوبة.\nذكرها ابن مندة، فقال:\nروى حديثها عبد الواحد بن زياد، عن أبي بكر بن عبد اللَّه، عن جدته سعدى، أو أسماء- أنّ النبيّ ﷺ دخل على ضباعة فقال: «حجّي واشترطي أن تحلّي حيث حبست» «٢» .\nووصله الطّبرانيّ من طريق عبد الواحد به.",
+      "english": "11297—Sa'da,(1)\n\nHer lineage is not given.\n\nIbn Manda mentioned her and said:\n\nAbd al-Wahid ibn Ziyad transmitted her report from Abu Bakr ibn Abd Allah, from his grandmother Sa'da—or Asma—that the Prophet, may Allah bless him and grant him peace, entered upon Duba'a and said: “Perform Hajj, and stipulate that you may leave the state of ihram wherever you are prevented.”(2)\n\nAl-Tabarani transmitted it with a connected chain through Abd al-Wahid, as above.",
+      "arabic_sha256": "7f2af319cddd1c1760fac00c25230ef6519b4682646999131cb15781780468cc",
+      "english_sha256": "cce207dc0b0ffbf2c0b8966ebf4a9b3a6a8f6ed255db03322e2b0a7fff2d2fb2",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "سعدى",
+      "english": "Sa'da",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الواحد بن زياد",
+      "english": "Abd al-Wahid ibn Ziyad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر بن عبد اللَّه",
+      "english": "Abu Bakr ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء",
+      "english": "Asma",
+      "kind": "person"
+    },
+    {
+      "arabic": "ضباعة",
+      "english": "Duba'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

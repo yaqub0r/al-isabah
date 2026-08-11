@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011544",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11544,
+  "title": {
+    "english": "Umayra bint Qays ibn Abi Ka'b, the Ansari woman, of Banu Sawad³. Ibn Habib mentioned her among the women who pledged allegiance. She was the sister of Sahl ibn Qays, who was killed as a martyr at Uhud.",
+    "arabic_observed": "عميرة بنت قيس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011544-segment-0001",
+      "volume": 8,
+      "scan_page": 252,
+      "printed_page": 251,
+      "reader_page": 4164,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4164",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0252:003c313ae415e2f3",
+      "arabic": "١١٥٤٤- عميرة بنت قيس\nبن أبي كعب الأنصاريّة، من بني سواد «٣» . ذكرها ابن حبيب في المبايعات، وهي أخت سهل بن قيس المقتول بأحد شهيدا.",
+      "english": "11544—Umayra bint Qays ibn Abi Ka'b, the Ansari woman, of Banu Sawad³. Ibn Habib mentioned her among the women who pledged allegiance. She was the sister of Sahl ibn Qays, who was killed as a martyr at Uhud.",
+      "arabic_sha256": "8ef5e2b947c5fcad6168a1c2b9bfdf4dfafc9d911dd6b2f304b7326d7809f539",
+      "english_sha256": "896d03237b8b8803c24bca6a214b53d86d30cd76d25017ae87070d58a8fa2357",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة بنت قيس بن أبي كعب",
+      "english": "Umayra bint Qays ibn Abi Ka'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني سواد",
+      "english": "Banu Sawad",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سهل بن قيس",
+      "english": "Sahl ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

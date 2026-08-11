@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011535",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11535,
+  "title": {
+    "english": "Umayra bint Sahl ibn Rafi'¹",
+    "arabic_observed": "عميرة بنت سهل بن رافع «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011535-segment-0001",
+      "volume": 8,
+      "scan_page": 251,
+      "printed_page": 250,
+      "reader_page": 4163,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4163",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0251:24e88e42f49eddd8",
+      "arabic": "١١٥٣٥- عميرة بنت سهل بن رافع «١»\n: صاحب الصاعين الّذي لمزه المنافقون. قال ابن مندة: أدركت النبيّ ﵌.\nقال أبو عمر: كان سهل قد خرج بابنته عميرة وبصاع من تمر، فقال: يا رسول اللَّه، إن لي إليك حاجة. قال: «وما هي؟» قال:\nتدعو اللَّه لي ولا بنتي. وتمسح رأسها، فإنه ليس لي ولد غيرها، قالت: عميرة: فوضع كفه عليّ، فأقسم باللَّه لكان برد كفّ رسول اللَّه ﵌ على كبدي بعد.\nقلت: أخرجه ابن مندة، من طريق عيسى بن يونس، عن سعيد بن عثمان البلويّ، عن جدّته عميرة بنت سهل حدّثتها أنّ أباها خرج بزكاته صاعين من تمر، وبابنته عميرة حتى أتى النبيّ ﵌ فصبّ الصّاعين، فذكر بقية الحديث مثله.",
+      "english": "11535 — Umayra bint Sahl ibn Rafi'¹\n\nHer father was the man of the two sa's, whom the hypocrites disparaged. Ibn Manda said: “She lived to see the Prophet, may Allah bless him and grant him peace.”\n\nAbu Umar said: Sahl had set out with his daughter Umayra and a sa' of dates. He said, “O Messenger of Allah, I have a request of you.” He asked, “What is it?” He replied, “That you supplicate to Allah for me and for my daughter, and stroke her head, for I have no child other than her.” Umayra said: “He placed his palm upon me. I swear by Allah, it is as though the coolness of the palm of the Messenger of Allah, may Allah bless him and grant him peace, is still upon my liver.”\n\nI say: Ibn Manda transmitted it by way of Isa ibn Yunus, from Sa'id ibn Uthman al-Balawi, from his grandmother Umayra bint Sahl, who told him that her father set out with his zakat—two sa's of dates—and with his daughter Umayra, until he came to the Prophet, may Allah bless him and grant him peace. He poured out the two sa's, and the remainder of the hadith was then related in the same terms.",
+      "arabic_sha256": "4b207f9f814a75852d093e2b9d7965e5bc3f1ca4b7a89607865106ecfe4280d9",
+      "english_sha256": "30d00b16607fd28c27a9d5315d5aecdd98512373f38f7a61c4ff7f6dd0c23b5b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عميرة بنت سهل بن رافع",
+      "english": "Umayra bint Sahl ibn Rafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهل بن رافع",
+      "english": "Sahl ibn Rafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عيسى بن يونس",
+      "english": "Isa ibn Yunus",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن عثمان البلويّ",
+      "english": "Sa'id ibn Uthman al-Balawi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

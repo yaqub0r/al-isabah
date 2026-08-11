@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010915",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10915,
+  "title": {
+    "english": "Buthayna bint al-Nu'man ibn Khalaf ibn Amr ibn Umayya ibn Bayada, the Ansari woman of Banu Bayada.",
+    "arabic_observed": "بثينة بنت النعمان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010915-segment-0001",
+      "volume": 8,
+      "scan_page": 47,
+      "printed_page": 46,
+      "reader_page": 3959,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3959",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0047:45b7170304b9be78",
+      "arabic": "١٠٩١٥- بثينة بنت النعمان\nبن خلف بن عمرو بن أمية بن بياضة الأنصارية، من بني بياضة.\nذكرها ابن سعد في «المبايعات»، فقال: أسلمت وبايعت، وتزوجها محمد بن عمرو ابن حزم بعد ذلك، وأمّها حبيبة بنت قيس.",
+      "english": "10915—Buthayna bint al-Nu'man ibn Khalaf ibn Amr ibn Umayya ibn Bayada, the Ansari woman of Banu Bayada.\n\nIbn Sa'd mentioned her among “the women who gave the pledge,” saying: “She accepted Islam and gave the pledge. Muhammad ibn Amr ibn Hazm subsequently married her. Her mother was Habiba bint Qays.”",
+      "arabic_sha256": "2904e7931323a614244673ccf3245d9eaddff0c468a8294b7cc29ad70e8fa13c",
+      "english_sha256": "2467c76b873777df07452dc488f762b47777ad624d5fe48c381d4a29217171aa",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بثينة بنت النعمان بن خلف بن عمرو بن أمية بن بياضة",
+      "english": "Buthayna bint al-Nu'man ibn Khalaf ibn Amr ibn Umayya ibn Bayada",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني بياضة",
+      "english": "Banu Bayada",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمرو بن حزم",
+      "english": "Muhammad ibn Amr ibn Hazm",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة بنت قيس",
+      "english": "Habiba bint Qays",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

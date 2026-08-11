@@ -1,0 +1,120 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011376",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11376,
+  "title": {
+    "english": "Shurfat al-Dar bint al-Harith ibn Qays ibn Haysha, the Ansari woman of Banu Mu'awiya [4]",
+    "arabic_observed": "شرفة الدار بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011376-segment-0001",
+      "volume": 8,
+      "scan_page": 201,
+      "printed_page": 200,
+      "reader_page": 4113,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4113",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0201:c7a4dbbc6edd6f93",
+      "arabic": "١١٣٧٦- شرفة الدار بنت الحارث\nبن قيس بن هيشة الأنصارية من بني معاوية «٤» .\nذكرها ابن حبيب في المبايعات.\n(١) أخرجه مسلم ٤/ ١٨٣٥ كتاب الفضائل باب (٣٧) توفيره ﷺ وترك إكثار سؤاله عما لا ضرورة إليه ... حديث رقم ١٤٠/ ٢٣٦٢، وأخرجه مسلم أيضا ٤/ ٢٠١٠ كتاب البر والصلة والآداب باب (٢٥) من لعن النبي ﷺ أو سبه أو دعا عليه ... حديث رقم ٩٥/ ٢٦٠٣، أحمد في المسند ١/ ٤٢٠، ٦/ ١٠٧ وأبو نعيم في الحلية ٧/ ٢٠٨، وكنز العمال حديث رقم ٣٢١٧٦.\n(٢) أسد الغابة: ت (٧٠٤٢)، الاستيعاب: ت (٣٤٤٤) .\n(٣) في أ: سعة.\n(٤) أسد الغابة: ت (٧٠٤٣) .",
+      "english": "11376. Shurfat al-Dar bint al-Harith ibn Qays ibn Haysha, the Ansari woman of Banu Mu'awiya [4]\n\nIbn Habib mentioned her among the women who pledged allegiance.\n\n[1] Muslim transmitted it, 4/1835, The Book of Virtues, chapter (37), “Showing him (may Allah bless him and grant him peace) due honor and refraining from asking him too many questions about matters for which there is no necessity ...,” hadith no. 140/2362. Muslim also transmitted it, 4/2010, The Book of Righteousness, Maintaining Ties, and Manners, chapter (25), “Regarding one whom the Prophet (may Allah bless him and grant him peace) cursed, reviled, or against whom he supplicated ...,” hadith no. 95/2603; Musnad Ahmad, 1/420 and 6/107; Abu Nu'aym in al-Hilya, 7/208; and Kanz al-Ummal, hadith no. 32176.\n\n[2] Usd al-Ghaba, entry 7042; al-Isti'ab, entry 3444.\n\n[3] In manuscript A: “ample room” (sa'a).\n\n[4] Usd al-Ghaba, entry 7043.",
+      "arabic_sha256": "d6e91cf6f0dfa8252ec8566b2b27e1a9f64b95d2e3e26c202f7bce6432c58c41",
+      "english_sha256": "b5dbba73acc50ad468bac18c67f1f025356064bfe892a5e4d84e51e0b68b5653",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "شرفة الدار بنت الحارث بن قيس بن هيشة",
+      "english": "Shurfat al-Dar bint al-Harith ibn Qays ibn Haysha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني معاوية",
+      "english": "Banu Mu'awiya",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحلية",
+      "english": "al-Hilya",
+      "kind": "work"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "شرفة الدار",
+      "explanation": "All supplied witnesses confirm the consonantal spelling but provide no decisive vowel marks. Shurfat al-Dar is therefore provisional.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0201:c7a4dbbc6edd6f93"
+    },
+    {
+      "category": "name vocalization",
+      "arabic_span": "هيشة",
+      "explanation": "The witnesses agree on the unvocalized spelling هيشة but do not establish its precise pronunciation. Haysha is retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0201:c7a4dbbc6edd6f93"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011950",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11950,
+  "title": {
+    "english": "Umm al-Harith bint Malik ibn Khansa' ibn Sinan al-Ansariyya.¹",
+    "arabic_observed": "أم الحارث بنت مالك"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011950-segment-0001",
+      "volume": 8,
+      "scan_page": 373,
+      "printed_page": 372,
+      "reader_page": 4285,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4285",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0373:8358d8799676c9a7",
+      "arabic": "١١٩٥٠- أم الحارث بنت مالك\nبن خنساء بن سنان الأنصاريّة «١» .\nذكرها ابن حبيب في المبايعات، وكذلك ابن سعد، وزاد: تزوّجها ثابت بن صخر بن أمية، وهي أخت الطفيل بن مالك، شقيقته، أمها أسماء بنت القين بن كعب بن سواد.",
+      "english": "11950—Umm al-Harith bint Malik ibn Khansa' ibn Sinan al-Ansariyya.¹\n\nIbn Habib mentioned her among the women who pledged allegiance, as did Ibn Sa'd, who added: Thabit ibn Sakhr ibn Umayya married her. She was the full sister of al-Tufayl ibn Malik, and her mother was Asma bint al-Qayn ibn Ka'b ibn Sawad.",
+      "arabic_sha256": "7540fce0547a70359acaf27290ed78b6f995e3dc8dd0af41f5eef3ef2dd7b97d",
+      "english_sha256": "13b6937b981d447d37231f9bdf27356dcef12f352052d7750ffbc79e8a3ce838",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم الحارث بنت مالك بن خنساء بن سنان الأنصارية",
+      "english": "Umm al-Harith bint Malik ibn Khansa' ibn Sinan al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت بن صخر بن أمية",
+      "english": "Thabit ibn Sakhr ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطفيل بن مالك",
+      "english": "al-Tufayl ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت القين بن كعب بن سواد",
+      "english": "Asma bint al-Qayn ibn Ka'b ibn Sawad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الحارث",
+      "english": "Umm al-Harith",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

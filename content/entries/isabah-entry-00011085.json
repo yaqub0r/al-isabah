@@ -1,0 +1,115 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011085",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11085,
+  "title": {
+    "english": "Khalida,",
+    "arabic_observed": "خالدة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011085-segment-0001",
+      "volume": 8,
+      "scan_page": 99,
+      "printed_page": 98,
+      "reader_page": 4011,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4011",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0099:b2d9662e59813bc9",
+      "arabic": "١١٠٨٥- خالدة ،\nأو خلدة بنت الحارث «١»، عمة عبد اللَّه بن سلام.\nذكر محمّد بن إسحاق في قصة عن عبد اللَّه بن سلام [أنها أسلمت وحسن إسلامها] «٢»، أوردها الإمام إسماعيل بن محمد في تفسير قوله تعالى: وَلَئِنْ أَتَيْتَ الَّذِينَ أُوتُوا الْكِتابَ بِكُلِّ آيَةٍ ما تَبِعُوا قِبْلَتَكَ [البقرة: ١٤٥]- ذكر ذلك أبو موسى.\nقلت: وهو قصور منه، فقد استدركها أبو علي الغسّاني، فقال: ذكر ابن هشام عن ابن إسحاق أنها أسلمت بإسلام عبد اللَّه بن سلام، ثم راجعت السيرة مختصر ابن هشام ففيها عن ابن إسحاق: حدثني بعض أهل عبد اللَّه بن سلام عن إسلامه حين أسلم، وذكره ابن إسحاق في الكبرى، عن عبد اللَّه بن أبي حزم، عن يحيى بن عبد اللَّه، عن رجل من آل عبد اللَّه بن سلام، قال: كان من حديث عبد اللَّه حين أسلم قال: لما سمعت رسول اللَّه ﷺ وعرفت صفته واسمه وزمانه الّذي كنا نتوكفه، فلما قدم المدينة أخبر رجل بقدومه وأنا على رأس نخلة لي فكبّرت، فقالت لي عمتي خالدة بنت الحارث، وهي جالسة تحتي: واللَّه لو كنت سمعت بقدوم موسى بن عمران ما زدت. فقلت لها: أي عمة، هو واللَّه أخو موسى، بعث به. فقالت: أي ابن أخي، أهو النبي الّذي كنا نخبر أنه يبعث في نفس الساعة؟ قال: نعم.\nقالت: فذاك إذا.\nقال: فأسلمت، ورجعت إلى أهل بيتي فأسلموا.\nوفي آخر الحديث: وأسلمت عمتي خالدة بنت الحارث.",
+      "english": "11085—Khalida,\n\nor Khulda bint al-Harith (1), the paternal aunt of Abd Allah ibn Salam.\n\nMuhammad ibn Ishaq mentioned, in a narrative concerning Abd Allah ibn Salam, [that she embraced Islam and practiced Islam well] (2). Imam Isma'il ibn Muhammad cited it in his commentary on the saying of the Exalted: “Even if you brought those who were given the Book every sign, they would not follow your direction of prayer” [al-Baqara 2:145]. Abu Musa mentioned this.\n\nI said: This was a shortcoming on his part, for Abu Ali al-Ghassani had already added her as a supplementary entry. He said: Ibn Hisham related from Ibn Ishaq that she embraced Islam when Abd Allah ibn Salam embraced Islam. I then consulted the Sira, Ibn Hisham's abridgment, and it contains, from Ibn Ishaq: One of Abd Allah ibn Salam's family related to me the account of his embracing Islam when he did so. Ibn Ishaq mentioned it in the larger work, from Abd Allah ibn Abi Hazm, from Yahya ibn Abd Allah, from a man of the family of Abd Allah ibn Salam, who said: Part of the account of Abd Allah when he embraced Islam was that he said: “When I heard of the Messenger of Allah—may Allah bless him and grant him peace—and recognized his description, his name, and the time at which we had been expecting him, then, when he arrived in Medina, a man informed me of his arrival while I was at the top of a date palm belonging to me, and I exclaimed, ‘Allah is Most Great!’ My paternal aunt, Khalida bint al-Harith, who was sitting below me, said to me: ‘By Allah, had you heard of the arrival of Musa ibn Imran, you could not have done more.’ I said to her: ‘O aunt, by Allah, he is the brother of Musa; he was sent as a prophet.’ She said: ‘O son of my brother, is he the prophet whom we used to be told would be sent at this very time?’ He said: ‘Yes.’ She said: ‘Then that is he.’”\n\nHe said: “So I embraced Islam, and I returned to the members of my household, and they embraced Islam.”\n\nAt the end of the hadith it states: “My paternal aunt Khalida bint al-Harith embraced Islam.”",
+      "arabic_sha256": "4c04727ac1c6ae1aa5b8ab3fcd0358592c1c71932203f460b8717f2f4e42e828",
+      "english_sha256": "2ecae3ef5c6a1250568b7c570006acadfe5af23134ad28f21fec2b03a0b07b74",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "خالدة بنت الحارث",
+      "english": "Khalida bint al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "خلدة بنت الحارث",
+      "english": "Khulda bint al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن سلام",
+      "english": "Abd Allah ibn Salam",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسماعيل بن محمد",
+      "english": "Isma'il ibn Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "البقرة",
+      "english": "al-Baqara",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو علي الغساني",
+      "english": "Abu Ali al-Ghassani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن هشام",
+      "english": "Ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "السيرة",
+      "english": "al-Sira",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد الله بن أبي حزم",
+      "english": "Abd Allah ibn Abi Hazm",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن عبد الله",
+      "english": "Yahya ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "موسى بن عمران",
+      "english": "Musa ibn Imran",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

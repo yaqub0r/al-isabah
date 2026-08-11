@@ -1,0 +1,114 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011852",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11852,
+  "title": {
+    "english": "Hind bint Rabi'a ibn al-Harith ibn Abd al-Muttalib [1]",
+    "arabic_observed": "هند بنت ربيعة بن الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011852-segment-0001",
+      "volume": 8,
+      "scan_page": 345,
+      "printed_page": 344,
+      "reader_page": 4257,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4257",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0345:60204e47c123d848",
+      "arabic": "١١٨٥٢- هند بنت ربيعة بن الحارث\nبن عبد المطّلب «١»، زوج حبان بن واسع.\nقاله أبو عمر: قال: ولما مات في خلافة عثمان كانت له امرأة أخرى أنصاريّة طلّقها وهي ترضع، فمات فمرت بها سنة ولم تحض فاختصمتا إلى عثمان، فقضى بأنها ترثه مع هند، فلامته هند، فقال: عمل ابن عمك، يعني عليّا، هو أشار بهذا.\n(١) أسد الغابة ت (٧٣٤٧)، الاستيعاب ت (٣٥٦٦) .",
+      "english": "11852 — Hind bint Rabi'a ibn al-Harith ibn Abd al-Muttalib [1]\n\nThe wife of Hibban ibn Wasi'.\n\nAbu Umar stated this. He said: When he died during the caliphate of Uthman, he had another wife, an Ansari woman, whom he had divorced while she was breastfeeding; he then died, and a year passed over her without her menstruating. The two women brought their dispute before Uthman, and he ruled that she was to inherit from him together with Hind. Hind reproached him, but he said, “It was the action of your cousin”—meaning Ali; he was the one who advised this.\n\n[1] Usd al-Ghaba, entry 7347; al-Isti'ab, entry 3566.",
+      "arabic_sha256": "0a969460798d4a678b4abd1ab378ad04c1bf71ee16746a899e9c2d52fd0c3ef6",
+      "english_sha256": "bd8dd39836551fad682379c17d26a47cd98410a0d758c600aa62f233ba3cdd26",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011852-segment-0002",
+      "volume": 8,
+      "scan_page": 346,
+      "printed_page": 345,
+      "reader_page": 4258,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4258",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0346:e87dd40f714ce507",
+      "arabic": "قلت: وهذه القصّة ذكرها الزّبير بن بكّار في الموفقيات.",
+      "english": "I say: al-Zubayr ibn Bakkar mentioned this story in al-Muwaffaqiyyat.",
+      "arabic_sha256": "094b4a3301246778619d66b503f928603593edf0aed509e0ea3e3c1eae1b75cc",
+      "english_sha256": "47b9decd498d3dbf3a335b7b0365afc339aa15151820344a48dfed702afad4ee",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند بنت ربيعة بن الحارث بن عبد المطلب",
+      "english": "Hind bint Rabi'a ibn al-Harith ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبان بن واسع",
+      "english": "Hibban ibn Wasi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansari",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند",
+      "english": "Hind bint Rabi'a ibn al-Harith ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الموفقيات",
+      "english": "al-Muwaffaqiyyat",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

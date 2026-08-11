@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011513",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11513,
+  "title": {
+    "english": "Amra bint Mas'ud the Younger:",
+    "arabic_observed": "عمرة بنت مسعود الصّغرى:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011513-segment-0001",
+      "volume": 8,
+      "scan_page": 247,
+      "printed_page": 246,
+      "reader_page": 4159,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4159",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0247:89271ce00ac4811d",
+      "arabic": "١١٥١٣- عمرة بنت مسعود الصّغرى:\nخالة سعد بن عبادة.\nكانت زوج أوس بن زيد بن أصرم بن زيد بن ثعلبة بن غنم، فولدت له أبا محمد، واسمه مسعود بن أوس، ثم تزوّجها سهل بن ثعلبة بن الحارث بن زيد، فولدت له عمرا، ورغيبة، أسلمت وبايعت.",
+      "english": "11513—Amra bint Mas'ud the Younger:\nThe maternal aunt of Sa'd ibn Ubada.\n\nShe was the wife of Aws ibn Zayd ibn Asram ibn Zayd ibn Thalaba ibn Ghanm, and she bore him Abu Muhammad, whose name was Mas'ud ibn Aws. Sahl ibn Thalaba ibn al-Harith ibn Zayd then married her, and she bore him Amr and Rughayba. She embraced Islam and pledged allegiance.",
+      "arabic_sha256": "deda1376e0703a5c58afbc5472d6ce93178614cc80d4743e774ff4b450b71092",
+      "english_sha256": "9d3a4291030077efc912df1faee9081cfb5d7d40c216fff7717341be97d6d8f0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سعد بن عبادة",
+      "english": "Sa'd ibn Ubada",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة بنت مسعود الصغرى",
+      "english": "Amra bint Mas'ud the Younger",
+      "kind": "person"
+    },
+    {
+      "arabic": "أوس بن زيد بن أصرم بن زيد بن ثعلبة بن غنم",
+      "english": "Aws ibn Zayd ibn Asram ibn Zayd ibn Thalaba ibn Ghanm",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبا محمد، واسمه مسعود بن أوس",
+      "english": "Abu Muhammad Mas'ud ibn Aws",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهل بن ثعلبة بن الحارث بن زيد",
+      "english": "Sahl ibn Thalaba ibn al-Harith ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرا",
+      "english": "Amr ibn Sahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "رغيبة",
+      "english": "Rughayba bint Sahl",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

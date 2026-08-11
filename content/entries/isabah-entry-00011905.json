@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011905",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11905,
+  "title": {
+    "english": "Umm Ayyub bint Qays ibn Sad ibn Amr ibn Imru al-Qays ibn Malik al-Agharr.",
+    "arabic_observed": "أم أيوب بنت قيس بن سعد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011905-segment-0001",
+      "volume": 8,
+      "scan_page": 363,
+      "printed_page": 362,
+      "reader_page": 4275,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4275",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0363:0fb0128a4e9a2cf8",
+      "arabic": "١١٩٠٥- أم أيوب بنت قيس بن سعد\nبن عمرو بن امرئ القيس بن مالك الأغرّ.\nذكرها الواقديّ، وقال: أسلمت وبايعت، قال ابن سعد: ولم يذكرها غيره.",
+      "english": "11905—Umm Ayyub bint Qays ibn Sad ibn Amr ibn Imru al-Qays ibn Malik al-Agharr.\n\nal-Waqidi mentioned her and said: “She embraced Islam and gave the pledge of allegiance.” Ibn Sad said: “No one other than him mentioned her.”",
+      "arabic_sha256": "4511f2090b81ae953d9eb24b407be2128282f57c19a9ca8c5f7b2892e9f6e27f",
+      "english_sha256": "b2a555d45647a8f162767894de4d4eb8e8f5ff39e406610ad075591b80d2467e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم أيوب بنت قيس بن سعد بن عمرو بن امرئ القيس بن مالك الأغر",
+      "english": "Umm Ayyub bint Qays ibn Sad ibn Amr ibn Imru al-Qays ibn Malik al-Agharr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

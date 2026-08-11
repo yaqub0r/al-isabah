@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010867",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10867,
+  "title": {
+    "english": "Umayma bint Amr",
+    "arabic_observed": "أميمة بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010867-segment-0001",
+      "volume": 8,
+      "scan_page": 35,
+      "printed_page": 34,
+      "reader_page": 3947,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3947",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0035:f93ed50f5abcc3d8",
+      "arabic": "١٠٨٦٧- أميمة بنت عمرو\nبن سهل بن معبد بن مخرمة الأنصارية الأشهلية «١» . قال ابن سعد: أسلمت وبايعت في رواية الواقدي.",
+      "english": "10867—Umayma bint Amr\n\nibn Sahl ibn Ma'bad ibn Makhrama al-Ansariyya al-Ashhaliyya.¹ Ibn Sa'd said: She embraced Islam and pledged allegiance, according to al-Waqidi's account.",
+      "arabic_sha256": "c2f37653a0ab476e4e2ad2b4d1a9c9d73cda9c3968a9e8ee96d120e320b8a444",
+      "english_sha256": "70cfaf2dc31fdebbacb02ba2e0b4919ec5dfe3062f091cb5bea789fc6e69cac5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

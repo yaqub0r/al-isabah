@@ -1,0 +1,53 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011089",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11089,
+  "title": {
+    "english": "Khudama bint Jundal (1)",
+    "arabic_observed": "خدامة بنت جندل «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011089-segment-0001",
+      "volume": 8,
+      "scan_page": 100,
+      "printed_page": 99,
+      "reader_page": 4012,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4012",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0100:b5fe86f8a8ec1ea9",
+      "arabic": "١١٠٨٩- خدامة بنت جندل «١»\n، تقدمت الإشارة إليها في حرف الجيم «٢» .",
+      "english": "11089—Khudama bint Jundal (1)\n\nShe was referred to previously under the letter jim. (2)",
+      "arabic_sha256": "dff49b0be8716b3a670a244e2442f68e9400132efb6788fa5774d3428e931c72",
+      "english_sha256": "ae37a03bb9b315c55cd63d3b7dadcc420457295e751768f0214dca2c966b8606",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خدامة بنت جندل",
+      "english": "Khudama bint Jundal",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "خدامة",
+      "explanation": "Neither the canonical text nor the supplied Urdu and Usd al-Ghaba witnesses vowel the name. “Khudama” is therefore retained provisionally, but its exact vocalization cannot be established from the supplied evidence.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0100:b5fe86f8a8ec1ea9"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

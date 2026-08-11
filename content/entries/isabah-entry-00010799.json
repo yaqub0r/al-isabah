@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010799",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10799,
+  "title": {
+    "english": "Asma bint al-Harith (2)",
+    "arabic_observed": "أسماء بنت الحارث «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010799-segment-0001",
+      "volume": 8,
+      "scan_page": 12,
+      "printed_page": 11,
+      "reader_page": 3924,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3924",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0012:2b5e1b1f25e43347",
+      "arabic": "١٠٧٩٩- أسماء بنت الحارث «٢»\n: امرأة خطاب بن الحارث الجمحيّ.\nذكرها ابن إسحاق فيمن أسلم من أهل مكة، فقال لما ذكرهم: وخطاب وامرأته أسماء بنت الحارث، ذكر ذلك أبو نعيم، من طريق إبراهيم بن يوسف، عن زياد البكائي، عنه.",
+      "english": "10799 — Asma bint al-Harith (2)\n\nThe wife of Khattab ibn al-Harith al-Jumahi.\n\nibn Ishaq mentioned her among the people of Mecca who embraced Islam. When mentioning them, he said: “And Khattab and his wife, Asma bint al-Harith.” Abu Nu'aym mentioned this through Ibrahim ibn Yusuf, from Ziyad al-Bakka'i, from ibn Ishaq.",
+      "arabic_sha256": "2fd7a38f9e0cb149dc21da6809f03c5f313f4644a28aba95ec73f39b3e0a413c",
+      "english_sha256": "c0cbb90e70fce27afc16aca8f0750f67bfcec73c79292d77f0d92f90dc443383",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أسماء بنت الحارث",
+      "english": "Asma bint al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "خطاب بن الحارث الجمحي",
+      "english": "Khattab ibn al-Harith al-Jumahi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن يوسف",
+      "english": "Ibrahim ibn Yusuf",
+      "kind": "person"
+    },
+    {
+      "arabic": "زياد البكائي",
+      "english": "Ziyad al-Bakka'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "الجمحي",
+      "english": "Jumah",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

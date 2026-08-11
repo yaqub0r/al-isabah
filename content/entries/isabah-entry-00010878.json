@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010878",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10878,
+  "title": {
+    "english": "Umayya:",
+    "arabic_observed": "أمية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010878-segment-0001",
+      "volume": 8,
+      "scan_page": 38,
+      "printed_page": 37,
+      "reader_page": 3950,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3950",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0038:0055ac798faa54ad",
+      "arabic": "١٠٨٧٨- أمية:\nويقال اسمها همية، بالهاء بدل الهمزة، بنت أبي سفيان بن حرب الأموية، زوج حويطب بن عبد العزى، وصفوان بن أمية.\nذكرها ابن سعد، وقال: أمها صفية بنت أبي العاص بن أمية. قال: وذكر السهيليّ أن أمية غير أمينة. وأن الأولى ولدت لعروة بن مسعود، ويقال اسمها ميمونة، وولدت لصفوان ابنه عبد الرحمن.",
+      "english": "10878—Umayya:\nHer name is also said to have been Humayya—with ha in place of the hamza—daughter of Abu Sufyan ibn Harb al-Umawiyya and wife of Huwaytib ibn 'Abd al-'Uzza and Safwan ibn Umayya.\n\nIbn Sa'd mentioned her and said that her mother was Safiyya bint Abi al-'As ibn Umayya. He also said that al-Suhayli mentioned that Umayya was distinct from Amina; that the former—whose name is also said to have been Maymuna—bore children to 'Urwa ibn Mas'ud; and that she bore Safwan his son 'Abd al-Rahman.",
+      "arabic_sha256": "02055a9f1517fb516ebe3803f6b70540e911d64d06e880c539e5d6ab13a5e4f2",
+      "english_sha256": "c392bca0697772656137090416a3c5a8e7319afda0caf54707a97836e44dc8ea",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "همية",
+      "english": "Humayya bint Abi Sufyan ibn Harb al-Umawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "حويطب بن عبد العزى",
+      "english": "Huwaytib ibn 'Abd al-'Uzza",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفوان بن أمية",
+      "english": "Safwan ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت أبي العاص بن أمية",
+      "english": "Safiyya bint Abi al-'As ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "السهيلي",
+      "english": "al-Suhayli",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمونة",
+      "english": "Maymuna bint Abi Sufyan ibn Harb al-Umawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة بن مسعود",
+      "english": "'Urwa ibn Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن",
+      "english": "'Abd al-Rahman ibn Safwan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

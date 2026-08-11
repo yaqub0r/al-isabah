@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011341",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11341,
+  "title": {
+    "english": "Sumayka bint Jabir ibn Sakhr ibn Umayya ibn Khansa ibn Ubayd ibn 'Adi ibn Ghanm al-Ansariyya, one of the women who pledged allegiance",
+    "arabic_observed": "سميكة بنت جابر"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011341-segment-0001",
+      "volume": 8,
+      "scan_page": 190,
+      "printed_page": 189,
+      "reader_page": 4102,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4102",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0190:32466e2658464c43",
+      "arabic": "١١٣٤١- سميكة بنت جابر\nبن صخر بن أمية بن خنساء بن عبيد بن عدي بن غنم الأنصارية، من المبايعات.\nقاله ابن سعد عن الواقديّ: قال: وأمها أم الحارث بنت مالك بن خنساء بن سنان، تزوجها النعمان بن جبير بن أمية.",
+      "english": "11341—Sumayka bint Jabir ibn Sakhr ibn Umayya ibn Khansa ibn Ubayd ibn 'Adi ibn Ghanm al-Ansariyya, one of the women who pledged allegiance\n\nIbn Sa'd related this from al-Waqidi, who said: Her mother was Umm al-Harith bint Malik ibn Khansa ibn Sinan, and al-Nu'man ibn Jubayr ibn Umayya married her.",
+      "arabic_sha256": "c964a7bd7ee4d36c8b0b96c14338ae38a49182832c20dc5cecc8c4de624f9559",
+      "english_sha256": "478307ac9fdb8f47895c188198440c91d7fd7d3ff2800390a2e8629f48b032a3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "النعمان",
+      "english": "al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "سميكة بنت جابر بن صخر بن أمية بن خنساء بن عبيد بن عدي بن غنم الأنصارية",
+      "english": "Sumayka bint Jabir ibn Sakhr ibn Umayya ibn Khansa ibn Ubayd ibn 'Adi ibn Ghanm al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الحارث بنت مالك بن خنساء بن سنان",
+      "english": "Umm al-Harith bint Malik ibn Khansa ibn Sinan",
+      "kind": "person"
+    },
+    {
+      "arabic": "النعمان بن جبير بن أمية",
+      "english": "al-Nu'man ibn Jubayr ibn Umayya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

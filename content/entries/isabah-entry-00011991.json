@@ -1,0 +1,119 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011991",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11991,
+  "title": {
+    "english": "Umm Hakim bint al-Nadr:",
+    "arabic_observed": "أم حكيم بنت النضر:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011991-segment-0001",
+      "volume": 8,
+      "scan_page": 382,
+      "printed_page": 381,
+      "reader_page": 4294,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4294",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0382:af85e6a8587fda16",
+      "arabic": "١١٩٩١- أم حكيم بنت النضر:\nأخت الربيع [بنت] النضر بن ضمضم بن زيد بن حرام الأنصارية، أمها هند بنت زيد بن سواد بن مالك بن غنم بن مالك بن النجار.\n(١) أسد الغابة ت (٧٤٢٥)، الاستيعاب ت (٣٦٠٠) .\n(٢) في أ: وتزوجت هي المطلب.\n(٣) في أ: هشام.",
+      "english": "11991—Umm Hakim bint al-Nadr:\n\nShe was the sister of al-Rubayyi' [bint] al-Nadr ibn Damdam ibn Zayd ibn Haram and was an Ansari woman. Her mother was Hind bint Zayd ibn Sawad ibn Malik ibn Ghanm ibn Malik ibn al-Najjar.\n\n(1) Usd al-Ghaba, entry 7425; al-Isti'ab, entry 3600.\n\n(2) In A: “and she herself married al-Muttalib.”\n\n(3) In A: “Hisham.”",
+      "arabic_sha256": "0a6649edba19cebb25d01b095a6ea0eb74d620c4034845de3c850af046b5fb5d",
+      "english_sha256": "11838450b80d629832dd6c98fd75c4af4f3e5dfdba90493dec0ad1865b9d86f5",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011991-segment-0002",
+      "volume": 8,
+      "scan_page": 383,
+      "printed_page": 382,
+      "reader_page": 4295,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4295",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0383:49ddc67558122243",
+      "arabic": "قال ابن سعد: تزوجها ثعلبة بن وهب بن عديّ بن مالك، فولدت له أبا حكيم، وعبد الرحمن، وأم حكيم سهلة.",
+      "english": "Ibn Sa'd said: Tha'laba ibn Wahb ibn Adi ibn Malik married her, and she bore him Abu Hakim, Abd al-Rahman, and Umm Hakim Sahla.",
+      "arabic_sha256": "2fa26a97373e71be932f821f696e2065b911ff8ec189ebe5f19702d69317e29a",
+      "english_sha256": "7480c19644b5824eab1d1165e556edf2feb9bd76c31ac2b786b3787ed899a441",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم حكيم بنت النضر",
+      "english": "Umm Hakim bint al-Nadr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الربيع [بنت] النضر بن ضمضم بن زيد بن حرام",
+      "english": "al-Rubayyi' bint al-Nadr ibn Damdam ibn Zayd ibn Haram",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "هند بنت زيد بن سواد بن مالك بن غنم بن مالك بن النجار",
+      "english": "Hind bint Zayd ibn Sawad ibn Malik ibn Ghanm ibn Malik ibn al-Najjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "هشام",
+      "english": "Hisham ibn al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثعلبة بن وهب بن عديّ بن مالك",
+      "english": "Tha'laba ibn Wahb ibn Adi ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو حكيم",
+      "english": "Abu Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن",
+      "english": "Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم سهلة",
+      "english": "Umm Hakim Sahla",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم",
+      "english": "Umm Hakim bint Wada'",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

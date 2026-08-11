@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011207",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11207,
+  "title": {
+    "english": "Rayta bint Abi Rahm",
+    "arabic_observed": "ريطة بنت أبي رهم"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011207-segment-0001",
+      "volume": 8,
+      "scan_page": 148,
+      "printed_page": 147,
+      "reader_page": 4060,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4060",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0148:1dc47bd00d591896",
+      "arabic": "١١٢٠٧- ريطة بنت أبي رهم\nالقرشية التيمية. يقال هو اسم أم مسطح.",
+      "english": "11207—Rayta bint Abi Rahm\n\nThe Qurashi woman of Taym. It is said that this was the name of Umm Mistah.",
+      "arabic_sha256": "44f706f175709cd1ced5deff69b6cd54cf3de470c5311f1759aef0510cc858fa",
+      "english_sha256": "e1d9856bddb4f47643560d8df42a3e4693d950f7ee7bdcfc30dc6168e149bd18",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ريطة بنت أبي رهم",
+      "english": "Rayta bint Abi Rahm",
+      "kind": "person"
+    },
+    {
+      "arabic": "تيم",
+      "english": "Taym",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم مسطح",
+      "english": "Umm Mistah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

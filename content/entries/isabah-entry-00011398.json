@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011398",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11398,
+  "title": {
+    "english": "al-Sa'ba bint al-Hadrami¹",
+    "arabic_observed": "الصّعبة بنت الحضرميّ «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011398-segment-0001",
+      "volume": 8,
+      "scan_page": 209,
+      "printed_page": 208,
+      "reader_page": 4121,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4121",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0209:22ac144d448c10f6",
+      "arabic": "١١٣٩٨- الصّعبة بنت الحضرميّ «١»\n، أخت العلاء بن الحضرميّ.\nتقدم نسبها في العلاء، وهي والدة طلحة بن عبيد اللَّه أحد العشرة.\nقال الواقديّ: توفيت على عهد رسول اللَّه ﷺ وأخبرني بعض آل طلحة أنها أسلمت.\nوأخرجه البخاريّ في «التّاريخ الصّغير» من طريق محمد بن يعقوب، عن عبد اللَّه بن رافع، عن أمه، قالت: خرجت الصعبة بنت الحضرميّ، فسمعتها تقول لابنها طلحة: إن عثمان قد اشتدّ حصره، فلو كلمته حتى تردعه.\nقلت: وهذا أولى من قول الواقدي. وعكس ابن الأثير كعادته في تقديم أقوال أهل السير أو النسب على أصحاب الأسانيد الجياد.",
+      "english": "11398—al-Sa'ba bint al-Hadrami¹\n\nThe sister of al-Ala ibn al-Hadrami.\n\nHer lineage was given previously in the entry on al-Ala. She was the mother of Talha ibn Ubayd Allah, one of the Ten.\n\nal-Waqidi said: “She died during the lifetime of the Messenger of Allah—may Allah bless him and grant him peace—and one of Talha's family informed me that she embraced Islam.”\n\nal-Bukhari included it in al-Tarikh al-Saghir, through Muhammad ibn Ya'qub, from Abd Allah ibn Rafi, from his mother, who said: “al-Sa'ba bint al-Hadrami came out, and I heard her say to her son Talha: ‘The siege of Uthman has become severe. If only you would speak to him so as to dissuade him.’”\n\nI say: This is more deserving of acceptance than al-Waqidi's statement. Ibn al-Athir reversed the matter, as was his custom, by giving precedence to the statements of historians or genealogists over those who possessed sound chains of transmission.",
+      "arabic_sha256": "1ef747c69dbabf21c9d1fa2c13b9e4211ba4f7d66884fd8ed10067ee066c0046",
+      "english_sha256": "7c0fcd678fa304f48c6aafaa5b3de08c87e40befc0f2a26fa2c43ce9ebeb8f80",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عبيد",
+      "english": "Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصعبة بنت الحضرمي",
+      "english": "al-Sa'ba bint al-Hadrami",
+      "kind": "person"
+    },
+    {
+      "arabic": "العلاء بن الحضرمي",
+      "english": "al-Ala ibn al-Hadrami",
+      "kind": "person"
+    },
+    {
+      "arabic": "طلحة بن عبيد اللَّه",
+      "english": "Talha ibn Ubayd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "التاريخ الصغير",
+      "english": "al-Tarikh al-Saghir",
+      "kind": "work"
+    },
+    {
+      "arabic": "محمد بن يعقوب",
+      "english": "Muhammad ibn Ya'qub",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن رافع",
+      "english": "Abd Allah ibn Rafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011829",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11829,
+  "title": {
+    "english": "Nuba:",
+    "arabic_observed": "نوبة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011829-segment-0001",
+      "volume": 8,
+      "scan_page": 338,
+      "printed_page": 337,
+      "reader_page": 4250,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4250",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0338:886a095e5bfe533b",
+      "arabic": "١١٨٢٩- نوبة:\nخادم النبيّ ﵌ «٤»، أوردها أبو موسى في النّساء، ونسب ذلك لعبد الغني بن سعيد في المبهمات.\nذكرت في حديث زائدة، عن عاصم، عن أبي وائل، عن مسروق، عن عائشة، قالت:\n(١) أسد الغابة ت (٧٣٢٧) .\n(٢) في أ: في نسب الأنصار.\n(٣) أسد الغابة ت (٧٣٢٩)، الاستيعاب ت (٣٥٦٠)، أعلام النساء ٥/ ١٩٥، تجريد أسماء الصحابة ٢/ ٣٠٨ الاستبصار ٤٦.\n(٤) أسد الغابة ت (٧٣٣٠) .",
+      "english": "11829—Nuba:\nA servant of the Prophet—may Allah bless him and grant him peace.[4] Abu Musa included her among the women and attributed this to Abd al-Ghani ibn Sa'id in al-Mubhamat.\nShe was mentioned in a hadith transmitted by Za'ida, from Asim, from Abu Wa'il, from Masruq, from Aisha, who said:\n\n[1] Usd al-Ghaba, biography no. 7327.\n[2] In manuscript A: “in Nasab al-Ansar.”\n[3] Usd al-Ghaba, biography no. 7329; al-Isti'ab, biography no. 3560; A'lam al-Nisa', 5/195; al-Tajrid, 2/308; al-Istibsar, p. 46.\n[4] Usd al-Ghaba, biography no. 7330.",
+      "arabic_sha256": "3869c7e311f1d2b85075f795b4f1fd388d380de9b448964eb18bac0d7cfa4683",
+      "english_sha256": "d4c8062d0ff5b9e4b4284f2a69869ab99b74172907507ec26c78c99b34cd96f2",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011829-segment-0002",
+      "volume": 8,
+      "scan_page": 339,
+      "printed_page": 338,
+      "reader_page": 4251,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4251",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0339:94acd764432c5177",
+      "arabic": "مرض النبيّ ﵌ فاشتدّ مرضه فوجد من نفسه خفّة فخرج بين بريرة ونوبة «١» .\nقلت: وهذا ليس بصريح في أنها امرأة، وقد وقعت في كتاب الرّدة لسيف بن عمر على ما يدلّ أنه رجل، فأخرج عن مسلمة بن نبيط، عن نعيم بن أبي هند، عن شقيق بن سلمة، عن عائشة، قالت: خرج رسول اللَّه ﵌، وقد دخل أبو بكر في الصّلاة، فأخذ عبدا يقال له نوبة وبريرة يهاديانه بينهما، فذكر الحديث.\nولكن أخرجه يعقوب بن سفيان في تاريخه، من طريق معتمر بن سليمان، عن نعيم ابن أبي هند بهذا السّند، فقال: فجاءت نوبة وبريرة فاحتملتاه ... الحديث ...\nأخرجه أبو موسى أيضا من طريقه، وهو ظاهر في أنها امرأة، إذ لو كان رجلا لقال فاحتملاه.",
+      "english": "The Prophet—may Allah bless him and grant him peace—fell ill, and his illness grew severe. Then he felt some relief and came out between Barira and Nuba.(1)\n\nI say: This is not explicit that she was a woman. In Sayf ibn Umar's Kitab al-Ridda, however, it occurs in a form indicating that he was a man. He narrated from Maslama ibn Nubayt, from Nu'aym ibn Abi Hind, from Shaqiq ibn Salama, from Aisha, who said: “The Messenger of Allah—may Allah bless him and grant him peace—came out when Abu Bakr had entered into the prayer. He took with him a slave called Nuba, and Nuba and Barira supported him between them.” Then he related the hadith.\n\nYa'qub ibn Sufyan, however, narrated it in his history through Mu'tamir ibn Sulayman, from Nu'aym ibn Abi Hind, with this chain of transmission, wording it: “Then Nuba and Barira came and carried him…”—the hadith…\n\nAbu Musa also narrated it through his route. It is apparent from this that Nuba was a woman, since, had Nuba been a man, he would have used the masculine dual form, “the two of them carried him.”",
+      "arabic_sha256": "9a77dc4ee222f68ba075a9ba6a566bbf02e3b0b731706c46ae48bd41fdffb2e3",
+      "english_sha256": "140e23e4b452c825f64ef6d2bbcd96e95fbe133cd5b0cd0f4b7c45b3b03d320d",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "نوبة",
+      "english": "Nuba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الغني بن سعيد",
+      "english": "Abd al-Ghani ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "المبهمات",
+      "english": "al-Mubhamat",
+      "kind": "work"
+    },
+    {
+      "arabic": "زائدة",
+      "english": "Za'ida",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاصم",
+      "english": "Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو وائل",
+      "english": "Abu Wa'il",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسروق",
+      "english": "Masruq",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "نسب الأنصار",
+      "english": "Nasab al-Ansar",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بريرة",
+      "english": "Barira",
+      "kind": "person"
+    },
+    {
+      "arabic": "سيف بن عمر",
+      "english": "Sayf ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الرّدة",
+      "english": "Kitab al-Ridda",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسلمة بن نبيط",
+      "english": "Maslama ibn Nubayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "نعيم بن أبي هند",
+      "english": "Nu'aym ibn Abi Hind",
+      "kind": "person"
+    },
+    {
+      "arabic": "شقيق بن سلمة",
+      "english": "Shaqiq ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "يعقوب بن سفيان",
+      "english": "Ya'qub ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "معتمر بن سليمان",
+      "english": "Mu'tamir ibn Sulayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "نهية، لهية",
+      "explanation": "The canonical Arabic, Urdu witness, and collateral Arabic entry preserve the consonantal spellings but do not supply vowels. Nuhayya and the variant Luhayya are therefore retained provisionally; their precise vocalization cannot be established from the supplied evidence.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0338:886a095e5bfe533b"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

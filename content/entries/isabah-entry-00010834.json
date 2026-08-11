@@ -1,0 +1,89 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010834",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10834,
+  "title": {
+    "english": "Umama bint Muharrith ibn Zayd ibn Tha'laba ibn Ubayd ibn Adi ibn Ghanm ibn Ka'b ibn Salima.]¹",
+    "arabic_observed": "أمامة بنت محرّث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010834-segment-0001",
+      "volume": 8,
+      "scan_page": 27,
+      "printed_page": 26,
+      "reader_page": 3939,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3939",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0027:2304d49de3177790",
+      "arabic": "١٠٨٣٤- أمامة بنت محرّث\nبن زيد بن ثعلبة بن عبيد بن عدي بن غنم بن كعب بن سلمة] «١» .\n(١) سقط في أ.",
+      "english": "10834—Umama bint Muharrith ibn Zayd ibn Tha'laba ibn Ubayd ibn Adi ibn Ghanm ibn Ka'b ibn Salima.]¹\n\n¹ The bracketed passage is omitted from manuscript A.",
+      "arabic_sha256": "41f9339a664f7f76f1b19d6029aba2c24086a22e0ac4478758e72f3a98064e6c",
+      "english_sha256": "0626f98621c0a0b718fe57c98ca605fda116b7b72035ce14ad1e7db2dd984c2d",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00010834-segment-0002",
+      "volume": 8,
+      "scan_page": 28,
+      "printed_page": 27,
+      "reader_page": 3940,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3940",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0028:9f9c9401b3f90f85",
+      "arabic": "ذكرها ابن سعد، وقال: أمها سلمى بنت أبي الدحداحة بن تميم. تزوجها الربيع بن طفيل بن مالك بن خنساء، ثم خلف عليها الضحاك بن حارثة بن زيد بن ثعلبة بن عبيد، من بني سلمة، قال: وأسلمت أمامة وبايعت.",
+      "english": "Ibn Sa'd mentioned her and said: Her mother was Salma bint Abi al-Dahdaha ibn Tamim. al-Rabi ibn Tufayl ibn Malik ibn Khansa married her; then, after him, al-Dahhak ibn Haritha ibn Zayd ibn Tha'laba ibn Ubayd, of Banu Salima, married her. He said: Umama embraced Islam and gave the pledge of allegiance.",
+      "arabic_sha256": "2c2e8346157294a4801e3ae97df2834d707436aaa273b0a88f5716da0b6a1273",
+      "english_sha256": "f4f52305976a45304895427f331c211be070dd11afe80fc5f9cefaf6e2b86cd8",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أمامة بنت محرّث بن زيد بن ثعلبة بن عبيد بن عدي بن غنم بن كعب بن سلمة",
+      "english": "Umama bint Muharrith ibn Zayd ibn Tha'laba ibn Ubayd ibn Adi ibn Ghanm ibn Ka'b ibn Salima",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى بنت أبي الدحداحة بن تميم",
+      "english": "Salma bint Abi al-Dahdaha ibn Tamim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الربيع بن طفيل بن مالك بن خنساء",
+      "english": "al-Rabi ibn Tufayl ibn Malik ibn Khansa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الضحاك بن حارثة بن زيد بن ثعلبة بن عبيد",
+      "english": "al-Dahhak ibn Haritha ibn Zayd ibn Tha'laba ibn Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو سلمة",
+      "english": "Banu Salima",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أمامة",
+      "english": "Umama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

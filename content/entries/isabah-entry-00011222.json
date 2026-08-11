@@ -1,0 +1,209 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011222",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11222,
+  "title": {
+    "english": "Zinnira,",
+    "arabic_observed": "زنّيرة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011222-segment-0001",
+      "volume": 8,
+      "scan_page": 151,
+      "printed_page": 150,
+      "reader_page": 4063,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4063",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0151:cbd565a185cc49c0",
+      "arabic": "١١٢٢٢- زنّيرة ،\nبكسر أولها وتشديد النون المكسورة بعدها تحتانية مثناة ساكنة الروميّة «٣» .\nووقع في الاستيعاب: زنبرة، بنون وموحدة، وزن عنبرة. وتعقبه ابن فتحون. وحكى عن مغازي الأموي بزاي ونون مصغرة.\nكانت من السابقات إلى الإسلام، وممن يعذّب في اللَّه، وكان أبو جهل يعذبها، وهي\n(١) أسد الغابة ت ٦٩٤٦.\n(٢) أسد الغابة ت ٦٩٤٧.\n(٣) أسد الغابة ت ٦٩٤٨، الاستيعاب ت ٣٤٠٠.",
+      "english": "11222—Zinnira,\n\nwith the first letter bearing kasra, followed by a doubled nun bearing kasra, then a quiescent two-dotted ya: the Roman woman.³\n\nIn al-Isti'ab it appears as “Zanbara,” with a nun and a ba, on the pattern of “'Anbara.” Ibn Fathun criticized this. He also related from al-Umawi's Maghazi a form with zay and nun, in the diminutive.\n\nShe was among the earliest to embrace Islam and among those who were tortured for Allah's sake. Abu Jahl used to torture her, and she was—\n\n¹ Usd al-Ghaba, no. 6946.\n² Usd al-Ghaba, no. 6947.\n³ Usd al-Ghaba, no. 6948; al-Isti'ab, no. 3400.",
+      "arabic_sha256": "041e79cfeb481080d4362901e7fecdfae96a9f94b84efbb18a9306293b1ad50c",
+      "english_sha256": "17d2b623b76da925bacefef44e5f3729e40e53996673eae1498ecdaed3a04f84",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011222-segment-0002",
+      "volume": 8,
+      "scan_page": 152,
+      "printed_page": 151,
+      "reader_page": 4064,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4064",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0152:a912a474f8297b7f",
+      "arabic": "مذكورة في السبعة الذين اشتراهم أبو بكر الصديق وأنقذهم من التعذيب، وقد ذكروا في ترجمة أم عيسى.\nوأخرج الواقديّ من حديث حسان بن ثابت، قال: حججت والنبيّ ﷺ يدعو الناس إلى الإسلام، وأصحابه يعذّبون، فوقفت على عمرو يعذّب جارية بني عمرو بن المؤمل، ثم يثب على زنيرة فيفعل بها ذلك.\nوأخرج الفاكهيّ، عن محمد بن عبد اللَّه بن يزيد المقري، وابن مندة من وجه آخر، عن ابن المقري، عن ابن عيينة، عن سعد بن إبراهيم، قال: كانت زنّيرة رومية فأسلمت فذهب بصرها، فقال المشركون: أعمتها اللات والعزى، فقالت: إني كفرت باللات والعزى، فردّ اللَّه إليها بصرها.\nوأخرج محمّد بن عثمان بن أبي شيبة، في تاريخه، من رواية زياد البكائي، عن حميد، عن أنس، قال: قالت لي أم هانئ بنت أبي طالب أعتق أبو بكر زنّيرة فأصيب بصرها حين أعتقها، فقالت قريش: ما أذهب بصرها إلا اللات والعزى، فقالت: كذبوا وبيت اللَّه ما يغني اللات والعزى، ولا ينفعان، فردّ اللَّه إليها بصرها.\nذكر من اسمها زينب",
+      "english": "She is mentioned among the seven whom Abu Bakr al-Siddiq purchased and rescued from torture; they were mentioned in the biographical notice of Umm Isa.\n\nAl-Waqidi transmitted from Hassan ibn Thabit, who said: “I performed the pilgrimage while the Prophet—may Allah bless him and grant him peace—was calling the people to Islam and his Companions were being tortured. I came upon Amr torturing a slave woman of Banu Amr ibn al-Mu'ammil; then he would set upon Zinnira and do the same to her.”\n\nAl-Fakihi transmitted from Muhammad ibn Abd Allah ibn Yazid al-Muqri, while Ibn Manda transmitted by another route from Ibn al-Muqri, from Ibn Uyayna, from Sa'd ibn Ibrahim, who said: “Zinnira was a Byzantine woman. She embraced Islam and lost her sight. The polytheists said, ‘Al-Lat and al-Uzza have blinded her.’ She said, ‘I have rejected al-Lat and al-Uzza.’ Allah then restored her sight.”\n\nMuhammad ibn Uthman ibn Abi Shayba transmitted in his History, through the report of Ziyad al-Bakka'i, from Humayd, from Anas, who said: “Umm Hani bint Abi Talib said to me: ‘Abu Bakr emancipated Zinnira, and she lost her sight when he emancipated her. Quraysh said, “Only al-Lat and al-Uzza caused her to lose her sight.” She said, “They lie! By the House of Allah, al-Lat and al-Uzza avail nothing and confer no benefit.” Allah then restored her sight.’”\n\nAccount of Those Named Zaynab",
+      "arabic_sha256": "1211689f1fcff560bd18ff1b443c674296018e7febeb8065073c8fe85c84ccde",
+      "english_sha256": "e9b7b4b9c097ca0e07d795f3a335e67e162d1424a214f69b8ca5ee089ac2f725",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "زنبرة",
+      "english": "Zanbara",
+      "kind": "person"
+    },
+    {
+      "arabic": "عنبرة",
+      "english": "'Anbara",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن فتحون",
+      "english": "Ibn Fathun",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأموي",
+      "english": "al-Umawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "مغازي الأموي",
+      "english": "al-Umawi's Maghazi",
+      "kind": "work"
+    },
+    {
+      "arabic": "الإسلام",
+      "english": "Islam",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو جهل",
+      "english": "Abu Jahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو بكر الصديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عيسى",
+      "english": "Umm Isa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "حسان بن ثابت",
+      "english": "Hassan ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو",
+      "english": "Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو عمرو بن المؤمل",
+      "english": "Banu Amr ibn al-Mu'ammil",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "زنيرة",
+      "english": "Zinnira",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفاكهي",
+      "english": "al-Fakihi",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عبد الله بن يزيد المقري",
+      "english": "Muhammad ibn Abd Allah ibn Yazid al-Muqri",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عيينة",
+      "english": "Ibn Uyayna",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن إبراهيم",
+      "english": "Sa'd ibn Ibrahim",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللات",
+      "english": "al-Lat",
+      "kind": "other"
+    },
+    {
+      "arabic": "العزى",
+      "english": "al-Uzza",
+      "kind": "other"
+    },
+    {
+      "arabic": "محمد بن عثمان بن أبي شيبة",
+      "english": "Muhammad ibn Uthman ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "زياد البكائي",
+      "english": "Ziyad al-Bakka'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "حميد",
+      "english": "Humayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس",
+      "english": "Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هانئ بنت أبي طالب",
+      "english": "Umm Hani bint Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بيت الله",
+      "english": "House of Allah",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

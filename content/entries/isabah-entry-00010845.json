@@ -1,0 +1,110 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010845",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10845,
+  "title": {
+    "english": "Ama al-Farisiyya.¹",
+    "arabic_observed": "أمة الفارسية «١» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010845-segment-0001",
+      "volume": 8,
+      "scan_page": 30,
+      "printed_page": 29,
+      "reader_page": 3942,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3942",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0030:72c0de50d3109001",
+      "arabic": "١٠٨٤٥- أمة الفارسية «١» .\nأخرج ابن مندة في «تاريخ أصبهان»، من طريق المبارك بن سعيد الثوري، عن عبيد المكتب، قال: قال سلمان الفارسيّ: لما قدمت المدينة رأيت أصبهانيّة كانت أسلمت قبلي، فسألتها عن رسول اللَّه ﷺ، فهي التي دلّتني عليه. قال أبو موسى: رواه عبد اللَّه بن عبد العزيز، عن أبي الطفيل، عن سلمان نحوه. وقال: مكة- بدل المدينة، ولم يسمّ المرأة، والأولى أولى. وروى عن أبي الطفيل أيضا، فقال: المدينة.",
+      "english": "10845—Ama al-Farisiyya.¹\n\nIbn Manda related in Tarikh Isbahan, by way of al-Mubarak ibn Sa'id al-Thawri, from 'Ubayd al-Mukattib, who said: Salman al-Farisi said, “When I came to Medina, I saw a woman from Isfahan who had embraced Islam before me. I asked her about the Messenger of Allah, may Allah bless him and grant him peace, and it was she who directed me to him.” Abu Musa said: “'Abd Allah ibn 'Abd al-'Aziz narrated it from Abu al-Tufayl, from Salman, with similar wording; but he said ‘Mecca’ in place of ‘Medina’ and did not name the woman. The former version is preferable.” It was also narrated from Abu al-Tufayl, who said: “Medina.”",
+      "arabic_sha256": "3d66b7553f7933dfcfdb81b4a014fe948579c0ea7755551d434bf5ade0d916b6",
+      "english_sha256": "38b5e889f75974bcbaa48f23d87d81c492cd9b9190c760ff0011f3419451f2c1",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عبد اللَّه",
+      "english": "'Abd Allah ibn Sa'd ibn Abi Sarh",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "أمة الفارسية",
+      "english": "Ama al-Farisiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "تاريخ أصبهان",
+      "english": "Tarikh Isbahan",
+      "kind": "work"
+    },
+    {
+      "arabic": "المبارك بن سعيد الثوري",
+      "english": "al-Mubarak ibn Sa'id al-Thawri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد المكتب",
+      "english": "'Ubayd al-Mukattib",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمان الفارسي",
+      "english": "Salman al-Farisi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أصبهان",
+      "english": "Isfahan",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عبد العزيز",
+      "english": "'Abd Allah ibn 'Abd al-'Aziz",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الطفيل",
+      "english": "Abu al-Tufayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "'Abd Allah ibn Sahl ibn Hunayf",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

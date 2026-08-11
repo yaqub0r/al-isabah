@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011233",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11233,
+  "title": {
+    "english": "Zaynab bint Humayd",
+    "arabic_observed": "زينب بنت حميد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011233-segment-0001",
+      "volume": 8,
+      "scan_page": 157,
+      "printed_page": 156,
+      "reader_page": 4069,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4069",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0157:3610833272143fd7",
+      "arabic": "١١٢٣٣- زينب بنت حميد\nبن زهير بن الحارث بن أسد بن عبد العزى بن قصي «٢»، والدة عبد اللَّه بن هشام.\nثبت ذكرها في الصّحيح، وفي مسند أحمد وغيره، من طريق سعيد بن أيوب، عن أبي عقيل زهرة بن معبد، عن جده عبد اللَّه بن هشام، وكان قد أدرك النبي ﷺ وذهبت به أمه إلى النبي ﷺ وهو صغير فمسح رأسه ودعا له.\nووقع عند ابن مندة أنها جدة عبد اللَّه بن هشام، وتعقبه ابن الأثير، وقال: هي أم عبد اللَّه بن هشام ...",
+      "english": "11233—Zaynab bint Humayd\nibn Zuhayr ibn al-Harith ibn Asad ibn Abd al-Uzza ibn Qusayy (2), the mother of Abd Allah ibn Hisham.\n\nHer mention is established in al-Sahih, in Musnad Ahmad, and elsewhere, through Sa'id ibn Ayyub, from Abu Aqil Zuhra ibn Ma'bad, from his grandfather Abd Allah ibn Hisham, who had lived to see the Prophet, may Allah bless him and grant him peace. His mother took him to the Prophet, may Allah bless him and grant him peace, when he was a small child, and he stroked his head and supplicated for him.\n\nIbn Mandah stated that she was the grandmother of Abd Allah ibn Hisham. Ibn al-Athir criticized this and said: She was the mother of Abd Allah ibn Hisham …",
+      "arabic_sha256": "0ecb8d07ad8d016d83c93656428ecdd067150a6e3f284bd7bc6bc72a365d496a",
+      "english_sha256": "7042328b8b9c8ab44b07cf8760bec947f3aad8b772d8034318e8334d680fdeec",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سعيد",
+      "english": "Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن هشام",
+      "english": "Abd Allah ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "al-Sahih",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسند أحمد",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "سعيد بن أيوب",
+      "english": "Sa'id ibn Ayyub",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عقيل زهرة بن معبد",
+      "english": "Abu Aqil Zuhra ibn Ma'bad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

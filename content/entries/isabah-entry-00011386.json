@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011386",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11386,
+  "title": {
+    "english": "al-Shumus bint Malik⁴.",
+    "arabic_observed": "الشموس بنت مالك «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011386-segment-0001",
+      "volume": 8,
+      "scan_page": 205,
+      "printed_page": 204,
+      "reader_page": 4117,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4117",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0205:e57ffc92c53c7e24",
+      "arabic": "١١٣٨٦- الشموس بنت مالك «٤»\n. تقدمت مع أختها شقيقة قريبا. ذكرها ابن حبيب وابن سعد في المبايعات. وقال ابن سعد: هي شقيقة.",
+      "english": "11386—al-Shumus bint Malik⁴.\nShe was mentioned shortly before together with her sister Shaqiqa. Ibn Habib and Ibn Sa'd mentioned her among the women who pledged allegiance. Ibn Sa'd said: “She was Shaqiqa's full sister.”",
+      "arabic_sha256": "10bf5c958cc0419ab8390a7964603ec03e35d4525e489866921661b3c8bf1c33",
+      "english_sha256": "970ebb0f5bd1c8236eebed1ddd298f4565cbbb188eb7a2a5d397693aefc1541b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشموس بنت مالك",
+      "english": "al-Shumus bint Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

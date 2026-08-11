@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011454",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11454,
+  "title": {
+    "english": "Atika bint Abi al-Salt al-Thaqafiyya:",
+    "arabic_observed": "عاتكة بنت أبي الصّلت الثقفية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011454-segment-0001",
+      "volume": 8,
+      "scan_page": 229,
+      "printed_page": 228,
+      "reader_page": 4141,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4141",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0229:e914e4d6e4696346",
+      "arabic": "١١٤٥٤- عاتكة بنت أبي الصّلت الثقفية:\nأخت أميّة.\nذكرها السّهيلي في مبهمات القرآن في أواخر تفسير سورة الأعراف.\n(١) ينظر البيت في أسد الغابة ترجمة رقم (٧٠٨٧)، الاستيعاب ترجمة رقم (٣٤٧١) .",
+      "english": "11454 - Atika bint Abi al-Salt al-Thaqafiyya:\n\nThe sister of Umayya.\n\nal-Suhayli mentioned her in Mubhamat al-Qur'an, toward the end of his commentary on Surat al-A'raf.\n\n(1) See the verse in Usd al-Ghaba, biography no. 7087, and al-Isti'ab, biography no. 3471.",
+      "arabic_sha256": "99c6df3353f49945bbb2b41504803563f5cc4981eb724d527a8c3c542a7e3b8d",
+      "english_sha256": "fd378c88aa0e55bb9281456926fd067a1a2dbb8a40b8812a55cfc70207d206ab",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عاتكة بنت أبي الصّلت الثقفية",
+      "english": "Atika bint Abi al-Salt al-Thaqafiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "السّهيلي",
+      "english": "al-Suhayli",
+      "kind": "person"
+    },
+    {
+      "arabic": "مبهمات القرآن",
+      "english": "Mubhamat al-Qur'an",
+      "kind": "work"
+    },
+    {
+      "arabic": "سورة الأعراف",
+      "english": "Surat al-A'raf",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

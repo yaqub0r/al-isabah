@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011230",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11230,
+  "title": {
+    "english": "Zaynab bint al-Harith ibn Amir ibn Nawfal, the Qurashi woman, sister of Uqba ibn al-Harith, the well-known Companion",
+    "arabic_observed": "زينب بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011230-segment-0001",
+      "volume": 8,
+      "scan_page": 156,
+      "printed_page": 155,
+      "reader_page": 4068,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4068",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0156:c7dcf2b3af36eb61",
+      "arabic": "١١٢٣٠- زينب بنت الحارث\nبن عامر بن نوفل القرشية، أخت عقبة بن الحارث الصحابي المشهور.\nوقع في «الأطراف» أنها التي استعار منها خبيب بن عدي الموسى لما كان في أسر قريش. والقصة عند البخاري بلفظ: فاستعار من بنت الحارث.\n(١) أسد الغابة: ت ٦٩٥٥.",
+      "english": "11230—Zaynab bint al-Harith ibn Amir ibn Nawfal, the Qurashi woman, sister of Uqba ibn al-Harith, the well-known Companion\n\nIt is stated in al-Atraf that she was the woman from whom Khubayb ibn Adi borrowed the razor while he was a prisoner of Quraysh. The account in al-Bukhari is worded: “He borrowed it from the daughter of al-Harith.”\n\n(1) Usd al-Ghaba: entry no. 6955.",
+      "arabic_sha256": "30efb82a9f5cfe77088c0bb1a7504181d74c9ad74acf3d8b39592afd34c91fbe",
+      "english_sha256": "4302e2e81a34cd6089dcabfd079403162db4bacbf32a0cd3b9a390fb24834362",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زينب بنت الحارث بن عامر بن نوفل",
+      "english": "Zaynab bint al-Harith ibn Amir ibn Nawfal",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عقبة بن الحارث",
+      "english": "Uqba ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأطراف",
+      "english": "al-Atraf",
+      "kind": "work"
+    },
+    {
+      "arabic": "خبيب بن عدي",
+      "english": "Khubayb ibn Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012279",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12279,
+  "title": {
+    "english": "Umm Musa al-Lakhmiyya:",
+    "arabic_observed": "أم موسى اللّخمية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012279-segment-0001",
+      "volume": 8,
+      "scan_page": 483,
+      "printed_page": 482,
+      "reader_page": 4395,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4395",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0483:b57cabe1299fcb39",
+      "arabic": "١٢٢٧٩- أم موسى اللّخمية:\nزوج نصير اللّخمي، والد موسى بن نصير الأمير المشهور الّذي افتتح الأندلس. لها إدراك.\nذكر الرّشاطيّ أنها شهدت مع زوجها اليرموك، فقتلت حينئذ علجا، وأخذت سلبه، وكان عبد العزيز بن مروان يستحكيها ذلك فتصفه له، وتقول: بينما نحن في جماعة من النّساء إذ جال الرجال جولة، فأبصرت علجا يجر رجلا من المسلمين، فأخذت «١» عمود الفسطاط ثم دنوت منه فشدخت به رأسه، وأقبلت أسلبه، فأعانني الرجل على أخذه.\nالقسم الرابع",
+      "english": "12279 - Umm Musa al-Lakhmiyya:\n\nThe wife of Nusayr al-Lakhmi, the father of Musa ibn Nusayr, the famous commander who conquered al-Andalus. She lived early enough to have reached the Prophet's time.\n\nAl-Rushati mentioned that she attended the Battle of al-Yarmuk with her husband. On that occasion, she killed a non-Arab enemy soldier and took his spoils. 'Abd al-'Aziz ibn Marwan used to ask her to recount the incident, and she would describe it to him, saying: “While we were among a group of women, the men suddenly fell back. I saw a non-Arab enemy soldier dragging a Muslim man. I seized(1) a tent pole, approached him, and smashed his head with it. I then set about stripping him, and the man helped me take his spoils.”\n\nSECTION FOUR",
+      "arabic_sha256": "a4450a9c3ae1c564e76d5556b74a952824c75fd8617483a39f8e6d9ae08fbe33",
+      "english_sha256": "9994d094dcaa919e782d091109451ab30b7441d87fb5edb1a8db5d0b7e9a7cf4",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "موسى",
+      "english": "Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم موسى اللخمية",
+      "english": "Umm Musa al-Lakhmiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "نصير اللخمي",
+      "english": "Nusayr al-Lakhmi",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن نصير",
+      "english": "Musa ibn Nusayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأندلس",
+      "english": "al-Andalus",
+      "kind": "place"
+    },
+    {
+      "arabic": "الرشاطي",
+      "english": "al-Rushati",
+      "kind": "person"
+    },
+    {
+      "arabic": "اليرموك",
+      "english": "Battle of al-Yarmuk",
+      "kind": "other"
+    },
+    {
+      "arabic": "عبد العزيز بن مروان",
+      "english": "'Abd al-'Aziz ibn Marwan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

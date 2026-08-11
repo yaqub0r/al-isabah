@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011948",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11948,
+  "title": {
+    "english": "Umm al-Harith bint al-Harith ibn Urwa ibn Abd Razah ibn Zafar, the Ansari woman.",
+    "arabic_observed": "أم الحارث بنت الحارث بن عروة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011948-segment-0001",
+      "volume": 8,
+      "scan_page": 372,
+      "printed_page": 371,
+      "reader_page": 4284,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4284",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0372:8a9a0ef6b271463f",
+      "arabic": "١١٩٤٨- أم الحارث بنت الحارث بن عروة\nبن عبد رزاح بن ظفر الأنصاريّة.\nذكرها ابن سعد في المبايعات، وقال: أمها سهلة بنت امرئ القيس بن ذؤيب بن عامر.",
+      "english": "11948 — Umm al-Harith bint al-Harith ibn Urwa ibn Abd Razah ibn Zafar, the Ansari woman.\n\nIbn Sa'd mentioned her among the women who pledged allegiance. He said: Her mother was Sahla bint Imru' al-Qays ibn Dhu'ayb ibn Amir.",
+      "arabic_sha256": "5135f88e48b47a853eeda447744aaa63f4b2149ab243a1641e3d0c056dd48ac8",
+      "english_sha256": "7caadac007ffdd7a3895da048558e30d20ae75f6a7e1718f00da6d1afc6f2778",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصاريّة",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث",
+      "english": "al-Harith ibn Amr ibn Ghaziyya ibn Amr ibn Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الحارث بنت الحارث بن عروة بن عبد رزاح بن ظفر",
+      "english": "Umm al-Harith bint al-Harith ibn Urwa ibn Abd Razah ibn Zafar",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهلة بنت امرئ القيس بن ذؤيب بن عامر",
+      "english": "Sahla bint Imru' al-Qays ibn Dhu'ayb ibn Amir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

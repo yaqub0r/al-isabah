@@ -1,0 +1,239 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012183",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12183,
+  "title": {
+    "english": "Umm 'Umara al-Ansariyya [1]:",
+    "arabic_observed": "أم عمارة الأنصاريّة «١»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012183-segment-0001",
+      "volume": 8,
+      "scan_page": 443,
+      "printed_page": 442,
+      "reader_page": 4355,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4355",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0443:c888f63b748866ab",
+      "arabic": "١٢١٨٣- أم عمارة الأنصاريّة «١»:\nأفردها ابن مندة عن التي قبلها، وأورد من طريق سليمان بن كثير، عن حصين بن عبد الرّحمن، عن عكرمة، عن أم عمارة الأنصاريّة- أنها أتت رسول اللَّه ﵌، فقالت: ما أرى كل شيء إلا للرّجال! ما أرى النّساء يذكرن في شيء، فنزلت: إِنَّ الْمُسْلِمِينَ وَالْمُسْلِماتِ وَالْمُؤْمِنِينَ وَالْمُؤْمِناتِ [سورة الأحزاب آية ٣٥] .\nقلت: وهذا الحديث ذكره أبو عمر في ترجمة التي قبلها. فقال: روى عكرمة ...\nفذكره، ثم قال: زعم بعضهم أن أمّ عمارة التي روى عنها عكرمة هي غير الأولى، وهي الأولى عندي. انتهى.\nوتبعه «صاحب الأطراف»، فأورد في ترجمة الأولى ما أخرجه التّرمذيّ من هذا الوجه بهذا الإسناد، وقال: حسن غريب. وإنما نعرف هذا الحديث من هذا الوجه كذا قال.\n(١) تجريد أسماء الصحابة ٢/ ٣٣٠، تقريب التهذيب ٢/ ٦٢٣، تهذيب التهذيب ١٢/ ٤٧٤، الكاشف ٣/ ٤٩٠، تهذيب الكمال ٣/ ١٧٠٤، أزمنة التاريخ الإسلامي ٩٩٣، خلاصة تذهيب ٣/ ١٠٨، تلقيح فهوم أهل الأثر ٣٧٨، تبصير المنتبه ٤/ ١٤١٥. أسد الغابة ت (٧٥٥٠)، الاستيعاب ت (٣٦٤٩) .",
+      "english": "12183—Umm 'Umara al-Ansariyya [1]:\n\nIbn Manda gave her a separate entry from the preceding woman and cited, through Sulayman ibn Kathir, from Husayn ibn 'Abd al-Rahman, from 'Ikrima, from Umm 'Umara al-Ansariyya, that she came to the Messenger of Allah (may Allah bless him and grant him peace) and said, “I see that everything is for men alone! I do not see women mentioned in anything.” Then there was revealed: “Indeed, the Muslim men and the Muslim women, the believing men and the believing women” [Surat al-Ahzab, verse 35].\n\nI say: Abu 'Umar mentioned this hadith in the biographical notice of the preceding woman. He wrote, “'Ikrima narrated ...,” and related the hadith. He then said, “Some have claimed that the Umm 'Umara from whom 'Ikrima narrated is someone other than the first woman, but in my view she is the first.” End quote.\n\nThe author of al-Atraf followed him, including under the biographical notice of the first woman what al-Tirmidhi transmitted through this route with this chain of transmission. Al-Tirmidhi said, “Hasan gharib. We know this hadith only through this route.” That is what he said.\n\n[1] al-Tajrid, 2/330; Taqrib al-Tahdhib, 2/623; Tahdhib al-Tahdhib, 12/474; al-Kashif, 3/490; Tahdhib al-Kamal, 3/1704; Azminat al-Tarikh al-Islami, p. 993; Khulasat Tadhhib, 3/108; Talqih Fuhum Ahl al-Athar, p. 378; Tabsir al-Muntabih, 4/1415; Usd al-Ghaba, biographical entry 7550; al-Isti'ab, biographical entry 3649.",
+      "arabic_sha256": "ecda40c035ef482cf0d1fdbeb9b056327a62fe4035496196a45c4236f53ba981",
+      "english_sha256": "8940bcb9af09b24d43d2a3d9f7a3ce2b4deb8febada29c25f7f120e3232d98e6",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012183-segment-0002",
+      "volume": 8,
+      "scan_page": 444,
+      "printed_page": 443,
+      "reader_page": 4356,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4356",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0444:817ba28711ef8983",
+      "arabic": "وقد ورد نحوه من حديث أم سلمة، أخرجه النّسائيّ من طريق محمد بن عمرو، عن أبي سلمة، عن أم سلمة. وله طرق أخرى عن أم سلمة، عند ابن مردويه.\nوقد خالف سليمان بن كثير في مسندة رواية أبي عوانة عن حصين، فقال فيه: عن عكرمة، عن ابن عبّاس، قال: أتت امرأة من الأنصار النبيّ ﵌، نعم، تابع سليمان بن جرير «١» عن حصين، أخرجه ابن مردويه، وهشيم، عن حصين.\nذكره ابن مندة، فكأن رواية أبي عوانة شاذة، كأنه جرى على العادة لكثرة رواية عكرمة عن ابن عبّاس. وقد رواه قابوس بن أبي ظبيان، عن أبيه، عن ابن عبّاس، قال: قلت لنساء النّبيّ ﵌ ... فذكر نحوه.",
+      "english": "Similar wording has also been transmitted from Umm Salama; al-Nasa'i related it through Muhammad ibn Amr, from Abu Salama, from Umm Salama. Ibn Mardawayh also records other routes from Umm Salama.\n\nAbu Awana's narration from Husayn differed from Sulayman ibn Kathir's in its musnad chain, for it read: from Ikrima, from Ibn Abbas, who said: “A woman of the Ansar came to the Prophet, may Allah bless him and grant him peace...” True, Sulayman ibn Jarir also transmitted this form from Husayn; Ibn Mardawayh transmitted it. Hushaym likewise narrated it from Husayn, as Ibn Manda mentioned. Thus Abu Awana's narration appears anomalous, as though he had followed the usual pattern owing to the frequency with which Ikrima narrated from Ibn Abbas. Qabus ibn Abi Zabyan also narrated it from his father, from Ibn Abbas, who said: “I said to the wives of the Prophet, may Allah bless him and grant him peace...” and he mentioned something similar.",
+      "arabic_sha256": "bbc1a3ed7ff4664133a6052101e370b47e20205b8f3c70a11fe33ccb941dd088",
+      "english_sha256": "7fadd0289dcefbc838d3826bfe437a06aa575245559d3978d835ce7fbacb1806",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم عمارة",
+      "english": "Umm 'Umara",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمارة الأنصاريّة",
+      "english": "Umm 'Umara al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان بن كثير",
+      "english": "Sulayman ibn Kathir",
+      "kind": "person"
+    },
+    {
+      "arabic": "حصين بن عبد الرّحمن",
+      "english": "Husayn ibn 'Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "عكرمة",
+      "english": "'Ikrima",
+      "kind": "person"
+    },
+    {
+      "arabic": "سورة الأحزاب",
+      "english": "Surat al-Ahzab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأطراف",
+      "english": "al-Atraf",
+      "kind": "work"
+    },
+    {
+      "arabic": "التّرمذيّ",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أزمنة التاريخ الإسلامي",
+      "english": "Azminat al-Tarikh al-Islami",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب",
+      "english": "Khulasat Tadhhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "تبصير المنتبه",
+      "english": "Tabsir al-Muntabih",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "النّسائيّ",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمرو",
+      "english": "Muhammad ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سلمة",
+      "english": "Abu Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مردويه",
+      "english": "Ibn Mardawayh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عوانة",
+      "english": "Abu Awana",
+      "kind": "person"
+    },
+    {
+      "arabic": "حصين",
+      "english": "Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "عكرمة",
+      "english": "Ikrima",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبّاس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سليمان بن جرير",
+      "english": "Sulayman ibn Jarir",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشيم",
+      "english": "Hushaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "قابوس بن أبي ظبيان",
+      "english": "Qabus ibn Abi Zabyan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

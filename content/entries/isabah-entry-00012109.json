@@ -1,0 +1,63 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012109",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12109,
+  "title": {
+    "english": "Umm Subayh³",
+    "arabic_observed": "أم صبيح «٣»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012109-segment-0001",
+      "volume": 8,
+      "scan_page": 422,
+      "printed_page": 421,
+      "reader_page": 4334,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4334",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0422:c2cc127ce12d3577",
+      "arabic": "١٢١٠٩- أم صبيح «٣»:\nهي عنبة. وقد تقدّمت في عنقودة.",
+      "english": "12109—Umm Subayh³\n\nShe is Anaba. She has already appeared under Unquda.",
+      "arabic_sha256": "090a5bdc9b2dd33419fda25234fc2d5b4113faf2656d1cc98cbf803b354f2a30",
+      "english_sha256": "d8c05196d40a098902436758b97019c0cb3242fff74dd715821ed27ec57dd2ad",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم صبيح",
+      "english": "Umm Subayh",
+      "kind": "person"
+    },
+    {
+      "arabic": "عنبة",
+      "english": "Anaba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عنقودة",
+      "english": "Unquda",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "عنبة",
+      "explanation": "The supplied witnesses confirm the consonants but provide no vowel marks. They therefore cannot securely distinguish among possible vocalizations; “Anaba” is retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0422:c2cc127ce12d3577"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

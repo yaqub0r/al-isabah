@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011100",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11100,
+  "title": {
+    "english": "Khuzayma[3] bint Jahm",
+    "arabic_observed": "خزيمة «٣» بنت جهم"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011100-segment-0001",
+      "volume": 8,
+      "scan_page": 107,
+      "printed_page": 106,
+      "reader_page": 4019,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4019",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0107:0ca239c6d68dcc2e",
+      "arabic": "١١١٠٠\n- خزيمة «٣» بنت جهم\nبن قيس العبدرية «٤» .\nهاجرت مع أبيها وأمّها خولة بنت الأسود أم حرملة إلى أرض الحبشة، قاله أبو عمر.",
+      "english": "11100 — Khuzayma[3] bint Jahm\n\nibn Qays al-'Abdariyya.[4]\n\nShe emigrated with her father and her mother, Khawla bint al-Aswad, Umm Harmala, to the land of Abyssinia, according to Abu 'Umar.",
+      "arabic_sha256": "5657d8d023f1888ff89232f5236124f8b3e2a93bf09f989ff7502247616d96a5",
+      "english_sha256": "b50075321856da98d584267a0a497ae4571fe8cbcbd47c037c456a3a9b9d72e8",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خولة بنت الأسود أم حرملة",
+      "english": "Khawla bint al-Aswad Umm Harmala",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أرض الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

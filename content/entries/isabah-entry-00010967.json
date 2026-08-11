@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010967",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10967,
+  "title": {
+    "english": "Thubayta bint al-Nu'man",
+    "arabic_observed": "ثبيتة بنت النعمان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010967-segment-0001",
+      "volume": 8,
+      "scan_page": 60,
+      "printed_page": 59,
+      "reader_page": 3972,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3972",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0060:55bb090c7496d275",
+      "arabic": "١٠٩٦٧- ثبيتة بنت النعمان\nبن عمرو بن خلدة بن عمرو بن أمية بن عامر بن بياضة الأنصارية البياضية. قال ابن سعد: أسلمت وبايعت، ولها ولأبيها ولجدها صحبة.",
+      "english": "10967—Thubayta bint al-Nu'man\nibn 'Amr ibn Khalda ibn 'Amr ibn Umayya ibn 'Amir ibn Bayada, the Ansari woman of Banu Bayada. Ibn Sa'd said: She embraced Islam and pledged allegiance, and she, her father, and her grandfather were Companions.",
+      "arabic_sha256": "2601ad79c278b03ea3f82f451b795b9692980a4662925fd2fd2ee31cda4dabdf",
+      "english_sha256": "f7c79fadbb9707755a200bd99ba814c605520b6f2e86abfa1e1c872e2d2ede81",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني بياضة",
+      "english": "Banu Bayada",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

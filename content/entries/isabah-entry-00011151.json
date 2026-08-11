@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011151",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11151,
+  "title": {
+    "english": "Dijaja bint Asma¹",
+    "arabic_observed": "دجاجة بنت أسماء «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011151-segment-0001",
+      "volume": 8,
+      "scan_page": 127,
+      "printed_page": 126,
+      "reader_page": 4039,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4039",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0127:99be53fc5d48a677",
+      "arabic": "١١١٥١- دجاجة بنت أسماء «١»\n، والدة عبد اللَّه بن عامر بن كرز.\nذكر عمر بن شبّة أنّ النبي ﷺ وجد عند عمير خمس نسوة فطلّق منهن دجاجة بنت أسماء، فخلف عليها عامر بن كرز، فولدت له عبد اللَّه بن عامر.",
+      "english": "11151—Dijaja bint Asma¹\n\nMother of 'Abd Allah ibn 'Amir ibn Kurz.\n\n'Umar ibn Shabba related that the Prophet, may Allah bless him and grant him peace, found that 'Umayr had five wives, whereupon Dijaja bint Asma was divorced from among them. 'Amir ibn Kurz then married her, and she bore him 'Abd Allah ibn 'Amir.",
+      "arabic_sha256": "42c2e4b65cf740d401207a5fd1d88934949eacb91d5c648b973287a135b91772",
+      "english_sha256": "0e2bf5d9205954c407a0a25e0e5c8f3c0ed18e678edd000085808c8997ebab0d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "دجاجة بنت أسماء",
+      "english": "Dijaja bint Asma",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن عامر بن كرز",
+      "english": "'Abd Allah ibn 'Amir ibn Kurz",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن شبة",
+      "english": "'Umar ibn Shabba",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمير",
+      "english": "'Umayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عامر بن كرز",
+      "english": "'Amir ibn Kurz",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

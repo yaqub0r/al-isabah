@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011793",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11793,
+  "title": {
+    "english": "Marjana:",
+    "arabic_observed": "مرجانة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011793-segment-0001",
+      "volume": 8,
+      "scan_page": 330,
+      "printed_page": 329,
+      "reader_page": 4242,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4242",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0330:e18c1c91893cad39",
+      "arabic": "١١٧٩٣- مرجانة:\nمولاة عمر، في المعرفة.",
+      "english": "11793—Marjana:\n\nA freedwoman of Umar, mentioned in al-Ma'rifa.",
+      "arabic_sha256": "0a8450204fed82c476fc92dfe921ae7834a2dbb28105a2e0064ea8de16591f3c",
+      "english_sha256": "385e3b547ad8561c26cfbcab3170dbc4cd7f5ad31040fa932805c37ab7a8bacf",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مرجانة",
+      "english": "Marjana",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المعرفة",
+      "english": "al-Ma'rifa",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

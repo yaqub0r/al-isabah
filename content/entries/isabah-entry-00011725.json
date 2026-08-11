@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011725",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11725,
+  "title": {
+    "english": "Layla bint Qanif al-Thaqafiyya¹",
+    "arabic_observed": "ليلى بنت قانف الثقفيّة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011725-segment-0001",
+      "volume": 8,
+      "scan_page": 307,
+      "printed_page": 306,
+      "reader_page": 4219,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4219",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0307:5169809ff0ecaa36",
+      "arabic": "١١٧٢٥- ليلى بنت قانف الثقفيّة «١»\n: أخرج حديثها أحمد، وأبو داود، من طريق محمد بن إسحاق، عن نوح بن حكيم الثقفيّ، عن رجل من ولد عروة بن مسعود يقال له داود ولدته أم حبيب بنت أبي سفيان، عن ليلى بنت قانف، بقاف ثم فاء، ذكر أنها قالت: كنت ممّن شهد غسل أم كلثوم بنت النّبيّ ﵌، فأول ما أعطاني من كفنها الحقو «٢» ثم الدّرع ثم الخمار ثم الملحفة، ثم أدرجت في الآخر إدراجا ... الحديث.\nقلت: وداود المذكور هو ابن عاصم بن عروة بن مسعود.",
+      "english": "11725 — Layla bint Qanif al-Thaqafiyya¹\n\nAhmad and Abu Dawud transmitted her hadith through Muhammad ibn Ishaq, from Nuh ibn Hakim al-Thaqafi, from a man descended from Urwa ibn Masud named Dawud, whose mother was Umm Habib bint Abi Sufyan, from Layla bint Qanif—with a qaf and then a fa. It is reported that she said: “I was among those who attended the washing of Umm Kulthum, daughter of the Prophet—may Allah bless him and grant him peace. The first item of her shroud that he gave me was the haqw,² then the shift, then the head-covering, then the outer wrap; then finally she was wrapped up …” The rest of the hadith.\n\nI say: The aforementioned Dawud is Dawud ibn Asim ibn Urwa ibn Masud.",
+      "arabic_sha256": "0b648de9af254481b5661b46cbfdd8c6549ee204ef74a277547b9d92bef057aa",
+      "english_sha256": "919d1218a1056aa336b7747a4342b7e3ab09efd9d20668226bb86831e8234b2a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ليلى بنت قانف الثقفيّة",
+      "english": "Layla bint Qanif al-Thaqafiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "نوح بن حكيم الثقفيّ",
+      "english": "Nuh ibn Hakim al-Thaqafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة بن مسعود",
+      "english": "Urwa ibn Masud",
+      "kind": "person"
+    },
+    {
+      "arabic": "داود",
+      "english": "Dawud ibn Asim ibn Urwa ibn Masud",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيب بنت أبي سفيان",
+      "english": "Umm Habib bint Abi Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم بنت النّبيّ",
+      "english": "Umm Kulthum",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011886",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11886,
+  "title": {
+    "english": "Yusayra:",
+    "arabic_observed": "يسيرة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011886-segment-0001",
+      "volume": 8,
+      "scan_page": 353,
+      "printed_page": 352,
+      "reader_page": 4265,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4265",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0353:e6c1cc9510087de4",
+      "arabic": "١١٨٨٦- يسيرة:\nبمهملة مصغّرة «٢»، بنت مليكة، بالتّصغير، ابن زيد بن خالد بن العجلان الأنصاريّة من بني عوف بن الخزرج، ذكرها ابن حبيب في المبايعات.",
+      "english": "11886—Yusayra:\n\nWith an unpointed sin, in the diminutive form [2], daughter of Mulayka—also in the diminutive—ibn Zayd ibn Khalid ibn al-Ajlan, al-Ansariyya, of Banu Awf ibn al-Khazraj. Ibn Habib mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "7d05cec63dad165b03fda3694bb7ee70ba7ae8a01584d43e436954c96503594d",
+      "english_sha256": "78b5c2f160cd6c0db06a3673717d1c7ba4fdeb8113466275b29d1a937e4c515b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بني عوف بن الخزرج",
+      "english": "Banu Awf ibn al-Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

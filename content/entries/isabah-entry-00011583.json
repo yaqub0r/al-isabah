@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011583",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11583,
+  "title": {
+    "english": "Fari'a bint 'Utba",
+    "arabic_observed": "فارعة بنت عتبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011583-segment-0001",
+      "volume": 8,
+      "scan_page": 262,
+      "printed_page": 261,
+      "reader_page": 4174,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4174",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0262:2e0630b1ec6b1b50",
+      "arabic": "١١٥٨٣- فارعة بنت عتبة\nبن عبد شمس العبشمية، أخت هند وخالة معاوية، كانت زوج حبيب بن عمرو بن حممة الدّوسيّ. ذكرها البلاذريّ.",
+      "english": "11583—Fari'a bint 'Utba\n\nibn 'Abd Shams, al-'Abshamiyya, the sister of Hind and maternal aunt of Mu'awiya. She was the wife of Habib ibn 'Amr ibn Humama al-Dawsi. al-Baladhuri mentioned her.",
+      "arabic_sha256": "5cc1a01d025f6241be69921a02a34cec5a8e7bf803c8484796782c5553415f43",
+      "english_sha256": "4b663539d779b87bd5f1be8b6347db24725ee2922dd4b21575179e79f02e8669",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "هند",
+      "english": "Hind",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيب بن عمرو بن حممة الدّوسيّ",
+      "english": "Habib ibn 'Amr ibn Humama al-Dawsi",
+      "kind": "person"
+    },
+    {
+      "arabic": "البلاذريّ",
+      "english": "al-Baladhuri",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

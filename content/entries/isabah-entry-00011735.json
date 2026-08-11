@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011735",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11735,
+  "title": {
+    "english": "Lina:",
+    "arabic_observed": "لينة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011735-segment-0001",
+      "volume": 8,
+      "scan_page": 309,
+      "printed_page": 308,
+      "reader_page": 4221,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4221",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0309:0ba619c4fb4f3e1c",
+      "arabic": "١١٧٣٥- لينة:\nحديثها في جزء بن ديزيل الصغير.",
+      "english": "11735—Lina:\n\nHer hadith is in Ibn Dizil's Lesser Juz'.",
+      "arabic_sha256": "ec520f452b1df8f0e2f0e63d197e92d386751584fc6b46725b7c3efb99dc1fd1",
+      "english_sha256": "b90439197f7a80b0a5ace9919359dd05010c3b8170d0fc5eb5cac13863bed418",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "لينة",
+      "english": "Lina",
+      "kind": "person"
+    },
+    {
+      "arabic": "بن ديزيل",
+      "english": "Ibn Dizil",
+      "kind": "person"
+    },
+    {
+      "arabic": "جزء بن ديزيل الصغير",
+      "english": "Ibn Dizil's Lesser Juz'",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

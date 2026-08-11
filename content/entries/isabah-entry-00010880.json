@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010880",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10880,
+  "title": {
+    "english": "Umayya bint Abi al-Salt al-Ghifariyya",
+    "arabic_observed": "أمية بنت أبي الصلت الغفارية"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010880-segment-0001",
+      "volume": 8,
+      "scan_page": 38,
+      "printed_page": 37,
+      "reader_page": 3950,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3950",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0038:0055ac798faa54ad",
+      "arabic": "١٠٨٨٠- أمية بنت أبي الصلت الغفارية\nتأتي في القسم الأخير في ترجمة أمامة بنت أبي الحكم.",
+      "english": "10880—Umayya bint Abi al-Salt al-Ghifariyya\n\nShe will appear in the final section, in the entry on Umama bint Abi al-Hakam.",
+      "arabic_sha256": "fb6939ca3dbcf67974355e0cc26f58703a100c94b272ef2f27f095a61abfc044",
+      "english_sha256": "e33e96043fb03aa9ae49e8b53df6cc3643093ddbe068a7fddf55752f05945fd9",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أمية بنت أبي الصلت الغفارية",
+      "english": "Umayya bint Abi al-Salt al-Ghifariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة بنت أبي الحكم",
+      "english": "Umama bint Abi al-Hakam",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

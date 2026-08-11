@@ -1,0 +1,83 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010978",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10978,
+  "title": {
+    "english": "Ja'da bint Ubayd",
+    "arabic_observed": "جعدة بنت عبيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010978-segment-0001",
+      "volume": 8,
+      "scan_page": 64,
+      "printed_page": 63,
+      "reader_page": 3976,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3976",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0064:04908af676ed7379",
+      "arabic": "١٠٩٧٨- جعدة بنت عبيد\nبن ثعلبة بن سواد بن غنم بن حارثة الأنصارية «٣» .\nبايعت النبيّ ﷺ، قاله ابن حبيب، واستدركها ابن الأثير.\nقلت: وقد ذكرها ابن سعد، فقال أمها الرعاة بنت عدي بن سواد، ثم تزوجها النعمان بن نفيع فولدت له حارثة الصحابي المشهور، ثم خلف عليها الحباب بن الأرقم، [فولدت] له الحارث، وأسلمت جعدة وبايعت.",
+      "english": "10978—Ja'da bint Ubayd\nibn Tha'laba ibn Sawad ibn Ghanm ibn Haritha, the Ansari woman (3).\nShe pledged allegiance to the Prophet, may Allah bless him and grant him peace. Ibn Habib stated this, and Ibn al-Athir supplied her as an omission.\nI say: Ibn Sa'd also mentioned her, saying: Her mother was al-Ru'ah bint Adi ibn Sawad. She then married al-Nu'man ibn Nufay' and bore him Haritha, the well-known Companion. Thereafter, al-Hubab ibn al-Arqam succeeded him as her husband, and [she bore] him al-Harith. Ja'da embraced Islam and pledged allegiance.",
+      "arabic_sha256": "0303e187b4ce28ca6cf301fb20bd96021d98f3dd81401914908d3781bda9fc2c",
+      "english_sha256": "7d5bc44b8101d19e7d624eaa6e9a7f140a2b47300b80e33daf75fb6db6714762",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرعاة بنت عدي بن سواد",
+      "english": "al-Ru'ah bint Adi ibn Sawad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النعمان بن نفيع",
+      "english": "al-Nu'man ibn Nufay'",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحباب بن الأرقم",
+      "english": "al-Hubab ibn al-Arqam",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "الرعاة",
+      "explanation": "The unvocalized canonical spelling does not conclusively establish the initial short vowel of this personal name. The final text provisionally uses al-Ru'ah, the morphologically expected reading, but none of the supplied Urdu or collateral Arabic witnesses attests the name's vocalization directly.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0064:04908af676ed7379"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

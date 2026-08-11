@@ -1,0 +1,269 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012273",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12273,
+  "title": {
+    "english": "Umm al-Mundhir bint Qays² ibn 'Amr [ibn 'Ubayd] ibn 'Amir ibn Ghanm ibn 'Adi ibn al-Najjar, the Ansari woman of Banu al-Najjar.³",
+    "arabic_observed": "أم المنذر بنت قيس «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012273-segment-0001",
+      "volume": 8,
+      "scan_page": 481,
+      "printed_page": 480,
+      "reader_page": 4393,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4393",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0481:564bbdd8f60f6676",
+      "arabic": "١٢٢٧٣- أم المنذر بنت قيس «٢»\nبن عمرو [بن عبيد] بن عامر بن غنم بن عدي بن النّجّار الأنصاريّة النّجّارية «٣» .\nقال الطّبرانيّ: اسمها سلمى بنت قيس، أخت سليط بن قيس، من بني مازن بن النّجّار.\n(١) أسد الغابة ت (٧٦١١) .\n(٢) سقط في أ.\n(٣) أسد الغابة ت (٧٦١٢)، الاستيعاب ت (٣٦٨٠)، الثقات ٣/ ٤٦١، ٤٦٥، أعلام النساء ٥/ ١١١- تجريد أسماء الصحابة ٢/ ٣٣٦- تقريب التهذيب ٢/ ٦٢٥- تهذيب التهذيب ١٢/ ٤٨١- الكاشف ٣/ ٤٩٢- تهذيب الكمال ٣/ ١٧٠٦- الاستبصار ٦١- خلاصة تذهيب ٣/ ٤٠٤- تلقيح فهوم أهل الأثر ٣٧٠.",
+      "english": "12273—Umm al-Mundhir bint Qays² ibn 'Amr [ibn 'Ubayd] ibn 'Amir ibn Ghanm ibn 'Adi ibn al-Najjar, the Ansari woman of Banu al-Najjar.³\n\nAl-Tabarani said: “Her name was Salma bint Qays, the sister of Sulayt ibn Qays, of Banu Mazin ibn al-Najjar.”\n\n¹ Usd al-Ghaba, entry 7611.\n\n² Omitted in manuscript A.\n\n³ Usd al-Ghaba, entry 7612; al-Isti'ab, entry 3680; al-Thiqat, 3/461, 465; A'lam al-Nisa', 5/111; al-Tajrid, 2/336; Taqrib al-Tahdhib, 2/625; Tahdhib al-Tahdhib, 12/481; al-Kashif, 3/492; Tahdhib al-Kamal, 3/1706; al-Istibsar, p. 61; Khulasat Tadhhib, 3/404; Talqih Fuhum Ahl al-Athar, p. 370.",
+      "arabic_sha256": "224b4f7b1e349d67665705ceb917d47583b8577e9f612aee1b8cc20550e546de",
+      "english_sha256": "64a525a3603f4b4160b3b6105173f34c33d9d5a20a1c304664727756cf24c863",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012273-segment-0002",
+      "volume": 8,
+      "scan_page": 482,
+      "printed_page": 481,
+      "reader_page": 4394,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4394",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0482:d894001a077d765b",
+      "arabic": "وعندي أنها غيرها، فحديث سلمى بنت قيس تقدم في المبايعة،\nوحديث أم المنذر أخرجه أبو داود والتّرمذي وابن سعد وابن ماجة، من طريق فليح بن سليمان، عن أيّوب بن عبد الرحمن بن عبد اللَّه بن أبي صعصعة، عن يعقوب بن أبي يعقوب عن أم المنذر بنت الأنصاريّة، قالت: دخل عليّ رسول اللَّه ﵌ ومعه عليّ وعليّ ناقة ولها ذوال معلقة، فطفق رسول اللَّه ﵌ [يأكل فقال] «١»: «مه يا عليّ، إنّك ناقة»، حتى كفّ عليّ، قالت: وصنعت له شعيرا وسلفا فجئت به، فقال رسول اللَّه ﵌: «يا عليّ، من هذا فأصب، فإنّه أوفق لك» .\nلفظ أبي داود. قال التّرمذيّ: حسن غريب، لا نعرفه إلا من حديث فليح. وتعقّب بأنه جاء من طريق ابن أبي فديك عن محمد بن أبي يحيى الأسلميّ، عن أبيه عن يعقوب نحوه.\nقلت: وفليح بن سليمان الأسلمي، وكنيته أبو يحيى وابن محمد: من رجال البخاري، وابن أبي فديك من أقرانه، فلعله حمله عنه، ولم يفصح باسم ابنه لصغره.\nقال محمّد بن إسحاق: فالتبس بمحمد بن أبي يحيى والد إبراهيم شيخ الشّافعي، وليس هو به، بل رجع الخبر إلى فليح، كما قال الترمذي. قال ابن سعد: أمها رغبة بنت زرارة بن عبيد بن عدس النّجاريّة. تزوّجها قيس بن صعصعة بن وهب.",
+      "english": "In my view, she is a different woman, for the hadith of Salma bint Qays was given earlier in the section on the pledge of allegiance.\n\nThe hadith of Umm al-Mundhir was reported by Abu Dawud, al-Tirmidhi, Ibn Sa'd, Ibn Majah, through Fulayh ibn Sulayman, from Ayyub ibn Abd al-Rahman ibn Abd Allah ibn Abi Sa'sa'a, from Ya'qub ibn Abi Ya'qub, from Umm al-Mundhir bint Qays al-Ansariyya. She said: “The Messenger of Allah, may Allah bless him and grant him peace, entered upon me accompanied by Ali. Ali was convalescing, and we had clusters of dates hanging. The Messenger of Allah, may Allah bless him and grant him peace, began [to eat and said],¹ ‘Stop, Ali; you are convalescing,’ until Ali refrained.” She said: “I prepared barley and chard for him and brought it. The Messenger of Allah, may Allah bless him and grant him peace, said: ‘Ali, eat from this, for it is more suitable for you.’”\n\nThis is Abu Dawud's wording. al-Tirmidhi said: “Hasan gharib; we know it only from the hadith of Fulayh.” This was challenged on the ground that a similar report came through Ibn Abi Fudayk, from Muhammad ibn Abi Yahya al-Aslami, from his father, from Ya'qub.\n\nI say: Fulayh ibn Sulayman was al-Aslami, and his kunyah was Abu Yahya; his son Muhammad was among al-Bukhari's transmitters. Ibn Abi Fudayk was one of his peers, so perhaps he received it from him and did not explicitly state his son's name because of his young age. Muhammad ibn Ishaq said: Thus he was confused with Muhammad ibn Abi Yahya, the father of Ibrahim, who was al-Shafi'i's teacher. But he is not that man; rather, the report goes back to Fulayh, as al-Tirmidhi said. Ibn Sa'd said: “Her mother was Raghba bint Zurara ibn Ubayd ibn Adas al-Najjariyya. Qays ibn Sa'sa'a ibn Wahb married Raghba.”",
+      "arabic_sha256": "1c628015e6d51135cc696e855bdbe5314f287e5dad0a92739be87c83fbe73422",
+      "english_sha256": "25119040223413866dd21cdf1e9d75f933cd63ba3e183219bda3be9ffa80f80a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بنو النجار",
+      "english": "Banu al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الطبرانيّ",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى بنت قيس",
+      "english": "Salma bint Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليط بن قيس",
+      "english": "Sulayt ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني مازن بن النّجّار",
+      "english": "Banu Mazin ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب",
+      "english": "Khulasat Tadhhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم المنذر بنت قيس",
+      "english": "Umm al-Mundhir bint Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "فليح بن سليمان الأسلمي",
+      "english": "Fulayh ibn Sulayman al-Aslami",
+      "kind": "person"
+    },
+    {
+      "arabic": "أيوب بن عبد الرحمن بن عبد الله بن أبي صعصعة",
+      "english": "Ayyub ibn Abd al-Rahman ibn Abd Allah ibn Abi Sa'sa'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "يعقوب بن أبي يعقوب",
+      "english": "Ya'qub ibn Abi Ya'qub",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي فديك",
+      "english": "Ibn Abi Fudayk",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن أبي يحيى الأسلمي",
+      "english": "Muhammad ibn Fulayh ibn Sulayman al-Aslami",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو يحيى",
+      "english": "Fulayh ibn Sulayman al-Aslami",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن أبي يحيى والد إبراهيم",
+      "english": "Muhammad ibn Abi Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم",
+      "english": "Ibrahim ibn Muhammad ibn Abi Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشافعي",
+      "english": "al-Shafi'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "رغبة بنت زرارة بن عبيد بن عدس النجارية",
+      "english": "Raghba bint Zurara ibn Ubayd ibn Adas al-Najjariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس بن صعصعة بن وهب",
+      "english": "Qays ibn Sa'sa'a ibn Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأسلمي",
+      "english": "Aslam",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

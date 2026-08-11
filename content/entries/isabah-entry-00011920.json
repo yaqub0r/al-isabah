@@ -1,0 +1,83 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011920",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11920,
+  "title": {
+    "english": "Umm Thabit bint Tha'laba (1)",
+    "arabic_observed": "أم ثابت بنت ثعلبة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011920-segment-0001",
+      "volume": 8,
+      "scan_page": 367,
+      "printed_page": 366,
+      "reader_page": 4279,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4279",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0367:8ad674b3a8eee04d",
+      "arabic": "١١٩٢٠- أم ثابت بنت ثعلبة «١»\n: (بن عمرو بن محصن) «٢» .\nذكرها ابن سعد في المبايعات، وقال ابن سعد، بعد أن ساق نسبها إلى بني عامر بن مالك بن النّجّار [أمّها كبشة بنت مالك بن قيس من بني مازن بن النّجّار] «٣»، تزوّجها العلاء بن عمرو بن الربيع، من بني غنم بن النجار، وأسلمت أم بايع ثابت وبايعت.",
+      "english": "11920—Umm Thabit bint Tha'laba (1)\n\n(ibn Amr ibn Mihsan). (2)\n\nIbn Sa'd mentioned her among the women who pledged allegiance. After tracing her lineage to Banu Amir ibn Malik ibn al-Najjar, Ibn Sa'd said: [Her mother was Kabsha bint Malik ibn Qays, of Banu Mazin ibn al-Najjar]. (3) Al-Ala ibn Amr ibn al-Rabi, of Banu Ghanm ibn al-Najjar, married her. Umm Thabit embraced Islam and pledged allegiance.",
+      "arabic_sha256": "0a49db572267a08df307c48a0aebe9427085199c46e1ab4b443a42fc7ccf9519",
+      "english_sha256": "40d3f65cb08703b0c7f993d7eb770a6d858a3ed6024409d23d6bb23f2f79ec03",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عامر بن مالك بن النجار",
+      "english": "Banu Amir ibn Malik ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "كبشة بنت مالك بن قيس",
+      "english": "Kabsha bint Malik ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني مازن بن النجار",
+      "english": "Banu Mazin ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "العلاء بن عمرو بن الربيع",
+      "english": "al-Ala ibn Amr ibn al-Rabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني غنم بن النجار",
+      "english": "Banu Ghanm ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ثابت",
+      "english": "Thabit ibn Qays ibn Shammas",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source_text",
+      "arabic_span": "وأسلمت أم بايع ثابت وبايعت",
+      "explanation": "The displayed Arabic contains an apparently displaced or duplicated بايع. The Urdu witness and the parallel formula in entry 11922 support the rendered sense, “Umm Thabit embraced Islam and pledged allegiance,” but no supplied alternative Arabic manuscript establishes the precise corrected Arabic wording.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0367:8ad674b3a8eee04d"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

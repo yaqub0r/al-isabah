@@ -1,0 +1,185 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011499",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11499,
+  "title": {
+    "english": "'Amra bint Haram:",
+    "arabic_observed": "عمرة بنت حرام:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011499-segment-0001",
+      "volume": 8,
+      "scan_page": 244,
+      "printed_page": 243,
+      "reader_page": 4156,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4156",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0244:348f5494feef74c2",
+      "arabic": "١١٤٩٩- عمرة بنت حرام:\nبفتحتين، وقيل بنت حزم، بسكون الزاي، الأنصارية، زوج سعد بن الربيع.\nذكرت في حديث جابر،\nأخرجه ابن أبي عاصم والطّبرانيّ وغيره من طريق يحيى بن أيوب، عن محمد بن ثابت البناني عن محمد بن المنكدر، عن جابر، عن عمرة بنت حزم- أنها جعلت النبيّ ﵌ في صور «٤» نخل كنسته ورشته، وذبحت له شاة فأكل منها، وتوضأ، وصلى الظهر، ثم قدمت له من لحمها فأكل وصلى العصر ولم يتوضأ،\nفوقع عند الطبراني بنت حرام، وعند غيره: بنت حزم، وبه جزم أبو عمر، فذكره مختصرا.\n(١) سقط من ط.\n(٢) أسد الغابة ت (٧١٢٣)، الاستيعاب ت (٣٤٨٦)، الثقات ٣/ ٣٢٤، أسد الغابة ٧/ ٢٠٠، أعلام النساء ٣/ ٣٤٨، الاستيعاب ٤/ ١٨٨٧، تجريد أسماء الصحابة ٢/ ٢٨٩.\n(٣) أخرجه البخاري في التاريخ الكبير ١/ ١٩٠، وعبد الرزاق في المصنف حديث رقم ٦٩٦٢ وابن عساكر في التاريخ ٤/ ٤١٩، وأورده ابن حجر في الفتح ١١/ ٢٤٦ والحسين من إتحاف السادة المتقين ٦/ ١٢.\n(٤) الصّور: الجماعة من النخل، ولا واحد له من لفظه، ويجمع على صيران. النهاية ٣/ ٥٩.",
+      "english": "11499—'Amra bint Haram:\nWith both vowels pronounced fatha. She is also said to have been bint Hazm—with the z pronounced without a vowel—the Ansari woman and wife of Sa'd ibn al-Rabi'.\n\nShe was mentioned in the hadith of Jabir. Ibn Abi 'Asim, al-Tabarani, and others transmitted it through Yahya ibn Ayyub, from Muhammad ibn Thabit al-Bunani, from Muhammad ibn al-Munkadir, from Jabir, from 'Amra bint Hazm: she accommodated the Prophet—may Allah bless him and grant him peace—in a group of palm trees⁴ that she had swept and sprinkled with water. She slaughtered a sheep for him, and he ate some of it, performed ablution, and prayed the noon prayer. She then brought him some of its meat; he ate and prayed the afternoon prayer without performing ablution.\n\nIn al-Tabarani's version her name appears as bint Haram, while in the versions of others it is bint Hazm. Abu 'Umar stated the latter categorically and mentioned the report in abridged form.\n\n(1) Omitted from manuscript T.\n\n(2) Usd al-Ghaba, entry 7123; al-Isti'ab, entry 3486; al-Thiqat, 3/324; Usd al-Ghaba, 7/200; A'lam al-Nisa', 3/348; al-Isti'ab, 4/1887; al-Tajrid, 2/289.\n\n(3) Transmitted by al-Bukhari in al-Tarikh al-Kabir, 1/190; 'Abd al-Razzaq in al-Musannaf, hadith no. 6962; and Ibn 'Asakir in al-Tarikh, 4/419. Ibn Hajar cited it in al-Fath, 11/246, and al-Husayni cited it in Ithaf al-Sada al-Muttaqin, 6/12.\n\n(4) Al-sur means a group of palm trees. It has no singular formed from the same word, and its plural is siran. Al-Nihaya, 3/59.",
+      "arabic_sha256": "b9b95eb86623bd48b3b1a61d86b14df24e5e71ffac4b59a9fe9bd4cc214c453b",
+      "english_sha256": "ea3fcd7fad3d01dc7116079237701bd11afeb17294e5e2b21b13255c8d5d85f1",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi 'Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عمرة بنت حرام",
+      "english": "'Amra bint Haram",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة بنت حزم",
+      "english": "'Amra bint Hazm",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن الربيع",
+      "english": "Sa'd ibn al-Rabi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر",
+      "english": "Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن أيوب",
+      "english": "Yahya ibn Ayyub",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن ثابت البناني",
+      "english": "Muhammad ibn Thabit al-Bunani",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن المنكدر",
+      "english": "Muhammad ibn al-Munkadir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "التاريخ الكبير",
+      "english": "al-Tarikh al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد الرزاق",
+      "english": "'Abd al-Razzaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "المصنف",
+      "english": "al-Musannaf",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن عساكر",
+      "english": "Ibn 'Asakir",
+      "kind": "person"
+    },
+    {
+      "arabic": "التاريخ",
+      "english": "al-Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن حجر",
+      "english": "Ibn Hajar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفتح",
+      "english": "al-Fath",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحسين",
+      "english": "al-Husayni",
+      "kind": "person"
+    },
+    {
+      "arabic": "إتحاف السادة المتقين",
+      "english": "Ithaf al-Sada al-Muttaqin",
+      "kind": "work"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

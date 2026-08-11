@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "firstlight.source-bundle.v1",
+  "title": "FirstLight source bundle",
+  "type": "object",
+  "required": [
+    "schema",
+    "issue",
+    "work_id",
+    "title",
+    "authority",
+    "canonical_edition",
+    "workflow",
+    "artifacts",
+    "quality",
+    "next_actions"
+  ],
+  "properties": {
+    "schema": { "const": "firstlight.source-bundle.v1" },
+    "issue": { "type": "integer", "minimum": 1 },
+    "work_id": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "authority": {
+      "type": "object",
+      "required": ["canonical_language", "english_authority"],
+      "properties": {
+        "canonical_language": { "type": "string", "minLength": 2 },
+        "english_authority": { "const": "operator-reviewed structured English; presentations are generated derivatives" },
+        "rule": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "canonical_edition": {
+      "type": "object",
+      "required": ["edition_id", "publisher", "publication_year", "volume_count", "extent"],
+      "properties": {
+        "edition_id": { "type": "string", "minLength": 1 },
+        "publisher": { "type": "string", "minLength": 1 },
+        "publication_year": { "type": ["integer", "string"] },
+        "publication_year_hijri": { "type": ["integer", "string", "null"] },
+        "edition_statement": { "type": ["string", "null"] },
+        "investigators": { "type": "array", "items": { "type": "string" } },
+        "publication_place": { "type": ["string", "null"] },
+        "volume_count": { "type": "integer", "minimum": 1 },
+        "extent": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "workflow": {
+      "type": "object",
+      "required": ["edition_lock", "source_text_alignment", "english_draft", "english_presentation", "english_approval"],
+      "properties": {
+        "edition_lock": { "$ref": "#/$defs/workflowState" },
+        "source_text_alignment": { "$ref": "#/$defs/workflowState" },
+        "english_draft": { "$ref": "#/$defs/workflowState" },
+        "english_presentation": { "$ref": "#/$defs/workflowState" },
+        "english_approval": { "$ref": "#/$defs/workflowState" }
+      },
+      "additionalProperties": false
+    },
+    "artifacts": {
+      "type": "array",
+      "minItems": 4,
+      "items": { "$ref": "#/$defs/artifact" }
+    },
+    "quality": {
+      "type": "object",
+      "required": ["facsimile", "source_text", "translation", "structure", "human_review"],
+      "properties": {
+        "facsimile": { "type": "object" },
+        "source_text": { "type": "object" },
+        "translation": { "type": "object" },
+        "structure": { "type": "object" },
+        "human_review": { "type": "object" }
+      },
+      "additionalProperties": false
+    },
+    "next_actions": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    }
+  },
+  "$defs": {
+    "workflowState": {
+      "type": "object",
+      "required": ["state", "evidence"],
+      "properties": {
+        "state": {
+          "enum": ["blocked", "pending", "in_progress", "complete", "review_required", "approved"]
+        },
+        "evidence": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "artifact": {
+      "type": "object",
+      "required": [
+        "artifact_id",
+        "role",
+        "language",
+        "format",
+        "edition_relationship",
+        "state"
+      ],
+      "properties": {
+        "artifact_id": { "type": "string", "minLength": 1 },
+        "role": {
+          "enum": [
+            "canonical_facsimile",
+            "canonical_source_text",
+            "fallback_facsimile",
+            "fallback_source_text",
+            "translation_witness",
+            "textual_witness",
+            "structured_english",
+            "english_presentation",
+            "alignment_evidence",
+            "quality_evidence"
+          ]
+        },
+        "language": { "type": "string", "minLength": 2 },
+        "format": { "type": "string", "minLength": 1 },
+        "edition_relationship": {
+          "enum": ["exact_canonical", "derived_from_canonical", "different_edition", "different_work", "same_work_unknown_edition"]
+        },
+        "state": {
+          "enum": ["verified_local", "verified_remote", "draft", "pending", "reference_only", "rejected"]
+        },
+        "source_platform": { "type": ["string", "null"] },
+        "source_url": { "type": ["string", "null"], "format": "uri" },
+        "local_path": {
+          "oneOf": [
+            { "type": "string" },
+            { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+            { "type": "null" }
+          ]
+        },
+        "sha256": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" },
+        "byte_size": { "type": ["integer", "null"], "minimum": 0 },
+        "page_count": { "type": ["integer", "null"], "minimum": 1 },
+        "provider_ids": { "type": "object" },
+        "derived_from": { "type": "array", "items": { "type": "string" } },
+        "coverage": { "type": ["string", "null"] },
+        "verification": { "type": "object" },
+        "notes": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011417",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11417,
+  "title": {
+    "english": "Safiyya bint Amr",
+    "arabic_observed": "صفية بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011417-segment-0001",
+      "volume": 8,
+      "scan_page": 217,
+      "printed_page": 216,
+      "reader_page": 4129,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4129",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0217:2806209a8535e29a",
+      "arabic": "١١٤١٧- صفية بنت عمرو\nبن عبد ودّ العامرية.\nقتل أبوها يوم الخندق، وقصة قتاله مع علي مشهورة، وكانت هي زوج سهل بن عمر، فولدت له ولده عمرو بن سهل، فقالوا: أنجبت، ثم ولدت له أنس بن سهل، فقالوا:\nأجمعت. ذكر ذلك هشام بن الكلبي عن أبي عوانة.",
+      "english": "11417—Safiyya bint Amr\n\nibn Abd Wudd, al-Amiriyya.\n\nHer father was killed on the Day of the Trench, and the account of his combat with Ali is well known. She was the wife of Sahl ibn Umar and bore him his son Amr ibn Sahl, whereupon they said, “She has borne a noble child.” She then bore him Anas ibn Sahl, whereupon they said, “She has combined nobility and honor.” Hisham ibn al-Kalbi related this from Abu Awana.",
+      "arabic_sha256": "e2105fb294779a1862311dcbaf03d19ea87f419496229d7ddc5c3fb377a80af6",
+      "english_sha256": "87c3fa4c6663b18f9742c46bc7e4a694b1b30d9c9ad12bc07a53b4b8d5adf6e9",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "العامرية",
+      "english": "al-Amiriyya",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الخندق",
+      "english": "the Trench",
+      "kind": "other"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهل بن عمر",
+      "english": "Sahl ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن سهل",
+      "english": "Amr ibn Sahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس بن سهل",
+      "english": "Anas ibn Sahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن الكلبي",
+      "english": "Hisham ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عوانة",
+      "english": "Abu Awana",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية خادم رسول الله",
+      "english": "Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية غير منسوبة امرأة من الصحابة",
+      "english": "Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية أخرى غير منسوبة",
+      "english": "Safiyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

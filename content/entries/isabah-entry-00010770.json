@@ -1,0 +1,119 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010770",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10770,
+  "title": {
+    "english": "Amina bint Affan",
+    "arabic_observed": "آمنة بنت عفان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010770-segment-0001",
+      "volume": 8,
+      "scan_page": 5,
+      "printed_page": 4,
+      "reader_page": 3917,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3917",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0005:f37adfaaa723fce4",
+      "arabic": "١٠٧٧٠- آمنة بنت عفان\nبن أبي العاص بن أمية بن عبد شمس الأموية «٤»، أخت أمير المؤمنين عثمان.\nقال أبو موسى: أسلمت يوم الفتح، وكانت عند سعد حليف بني مخزوم، وكانت من النسوة اللاتي بايعن رسول اللَّه ﷺ مع هند امرأة أبي سفيان على ألا يشركن باللَّه شيئا ولا يسرقن ولا يزنين. ذكر ذلك ابن إسحاق في المغازي.\n(١) أسد الغابة: ت ٦٦٩١.\n(٢) أسد الغابة: ت ٦٦٩٣.\n(٣) أسد الغابة: ت ٦٦٩٤.\n(٤) أسد الغابة: ت ٦٦٩٥.",
+      "english": "10770—Amina bint Affan\nibn Abi al-As ibn Umayya ibn Abd Shams al-Umawiyya,⁴ sister of the Commander of the Believers Uthman.\nAbu Musa said: “She embraced Islam on the Day of the Conquest. She was married to Sa'd, the confederate of Banu Makhzum, and was among the women who pledged allegiance to the Messenger of Allah—may Allah bless him and grant him peace—together with Hind, the wife of Abu Sufyan, undertaking not to associate anything with Allah, steal, or commit fornication.” Ibn Ishaq mentioned this in al-Maghazi.\n\n¹ Usd al-Ghaba: entry 6691.\n² Usd al-Ghaba: entry 6693.\n³ Usd al-Ghaba: entry 6694.\n⁴ Usd al-Ghaba: entry 6695.",
+      "arabic_sha256": "9d52389adddf0e94b2022d07133618493b81165ef24a9d2088b7837df4054dfa",
+      "english_sha256": "84f91b7c50406afcf55335ce9811c917bdbb569eb2a6ec5c6f98f92e33e75d1c",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010770-segment-0002",
+      "volume": 8,
+      "scan_page": 6,
+      "printed_page": 5,
+      "reader_page": 3918,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3918",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0006:f373c7735745e8e2",
+      "arabic": "وذكر ابن الكلبيّ أنها كانت في الجاهلية ماشطة، وأنها تزوجت الحكم بن كيسان مولى بني مخزوم.\nوتقدم لذلك طريق في ترجمة الحكم بن كيسان، وهو أقوى من قول أبي موسى:\nكانت عند سعد.",
+      "english": "Ibn al-Kalbi also mentioned that in the pre-Islamic period she was a hairdresser and that she married al-Hakam ibn Kaysan, the client of Banu Makhzum. A chain of transmission for this has already been given in the entry on al-Hakam ibn Kaysan, and it is stronger than Abu Musa's statement: “She was married to Sa'd.”",
+      "arabic_sha256": "43e4962234b89888f3bffa54fbdbc0a2abe560e9ef891d9a46abf10ebbecddc2",
+      "english_sha256": "e5b8311ffb1e7cba43f43a183bb78e90069c8a53a2263ac4223033c003b47146",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سفيان",
+      "english": "Abu Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد",
+      "english": "Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو مخزوم",
+      "english": "Banu Makhzum",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "هند",
+      "english": "Hind",
+      "kind": "person"
+    },
+    {
+      "arabic": "المغازي",
+      "english": "al-Maghazi",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن الكلبي",
+      "english": "Ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحكم بن كيسان",
+      "english": "al-Hakam ibn Kaysan",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني مخزوم",
+      "english": "Banu Makhzum",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010893",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10893,
+  "title": {
+    "english": "Anisa bint Amr ibn Anama [2]",
+    "arabic_observed": "أنيسة بنت عمرو بن عنمة «٢»،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010893-segment-0001",
+      "volume": 8,
+      "scan_page": 41,
+      "printed_page": 40,
+      "reader_page": 3953,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3953",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0041:e4605fe0c8a3cf89",
+      "arabic": "١٠٨٩٣- أنيسة بنت عمرو بن عنمة «٢»،\nبفتح المهملة والنون، هي أخت ثعلبة بن عمرو شقيقته، أمهما جهير بنت القين بن كعب، من بني سلمة الأنصارية، من بني سواد.\nلها صحبة، وبايعت النبي ﷺ، قاله ابن حبيب. واستدركها ابن الأثير.",
+      "english": "10893—Anisa bint Amr ibn Anama [2]\n\n—with a fatha on the unpointed consonant and on the nun. She was the full sister of Thalaba ibn Amr. Their mother was Juhayr bint al-Qayn ibn Kab, an Ansari woman of Banu Salima, from Banu Sawad.\n\nShe was a Companion and pledged allegiance to the Prophet (may Allah bless him and grant him peace), according to Ibn Habib. Ibn al-Athir added her as an omitted entry.",
+      "arabic_sha256": "6fe02d281a948ab9c1d1588d7ac0016b79c0f7d96acf4c04f0a12e41bda0a674",
+      "english_sha256": "088fe40f05a7cd64755683c6e8849d762e61da29c5538f6464a942f5c3153671",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي ﷺ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنيسة بنت عمرو بن عنمة",
+      "english": "Anisa bint Amr ibn Anama",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثعلبة بن عمرو",
+      "english": "Thalaba ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "جهير بنت القين بن كعب",
+      "english": "Juhayr bint al-Qayn ibn Kab",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني سلمة",
+      "english": "Banu Salima",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني سواد",
+      "english": "Banu Sawad",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

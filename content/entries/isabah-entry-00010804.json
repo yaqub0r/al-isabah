@@ -1,0 +1,331 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010804",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10804,
+  "title": {
+    "english": "Asma bint Abdullah (2) ibn Uthman al-Taymiyya, mother of Abdullah ibn al-Zubayr ibn al-Awwam—",
+    "arabic_observed": "أسماء بنت عبد اللَّه «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010804-segment-0001",
+      "volume": 8,
+      "scan_page": 13,
+      "printed_page": 12,
+      "reader_page": 3925,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3925",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0013:ecc36648d856b02e",
+      "arabic": "١٠٨٠٤- أسماء بنت عبد اللَّه «٢»\nبن عثمان التيمية، والدة عبد اللَّه بن الزبير بن العوم\n(١) أسد الغابة: ت ٦٧٠٩، الاستيعاب: ت ٣٢٧٢.\n(٢) سقط في أ.",
+      "english": "10804 — Asma bint Abdullah (2) ibn Uthman al-Taymiyya, mother of Abdullah ibn al-Zubayr ibn al-Awwam—\n\n(1) Usd al-Ghaba: entry 6709; al-Isti'ab: entry 3272.\n\n(2) Omitted in manuscript A.",
+      "arabic_sha256": "4898b3fa1a1e97105aba50df4b224292939f8f2f3a2c12a3d7621a0a376b0dbc",
+      "english_sha256": "c4e982e8f0d4219c84237ae2e50c0a7f2fa7f8cb14599049a2f1a18abefa2002",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00010804-segment-0002",
+      "volume": 8,
+      "scan_page": 14,
+      "printed_page": 13,
+      "reader_page": 3926,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3926",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0014:0aa188f879a39df2",
+      "arabic": "التيمية، وهي بنت أبي بكر الصديق، وأمّها قتلة أو قتيلة بنت عبد العزى، قرشية، من بني عامر بن لؤيّ.\nأسلمت قديما بمكة. قال ابن إسحاق بعد سبعة عشر نفسا، وتزوجها الزبير بن العوام، وهاجرت وهي حامل منه بولده عبد اللَّه، فوضعته بقباء، وعاشت إلى أن ولي ابنها الخلافة ثم إلى أن قتل، وماتت بعده بقليل، وكانت تلقّب ذات النطاقين. قال أبو عمر:\nسماها رسول اللَّه ﷺ، لأنها هيّأت له لما أراد الهجرة سفرة، فاحتاجت إلى ما تشدّها به، فشقّت خمارها نصفين فشدّت بنصفه السّفرة، واتخذت النصف الآخر منطقا. قال: كذا ذكر ابن إسحاق وغيره.\nقلت: وأصل القصة في صحيح مسلم دون التصريح برفع ذلك إلى النبيّ ﷺ.\nوقد أسند ذلك أبو عمر من طريق أبي نوفل بن أبي عقرب، وأنها قالت للحجاج: كان لي نطاق أغطّي به طعام رسول اللَّه ﷺ من النمل ونطاق لا بدّ للنساء منه.\nوقال ابن سعد: أخبرنا أبو أسامة، عن هشام بن عروة، عن أبيه، وفاطمة بنت المنذر، عن أسماء: قالت: صنعت سفرة للنبيّ ﷺ في بيت أبي بكر حين أراد أن يهاجر إلى المدينة، فلم نجد لسفرته ولا لسقائه ما نربطهما به، فقلت لأبي بكر: ما أجد إلا نطاقي.\nقال: شقيه باثنين، فاربطي بواحد منهما السقاء وبالآخر السّفرة. وسنده صحيح.\nوبهذا السند عن عروة عن أسماء، قالت: تزوّجني: الزبير وما له في الأرض مال ولا مملوك ولا شيء غير فرسه. قالت: فكنت أعلف فرسه وأكفيه مؤنته وأسوسه، وأدقّ النوى لناضحه، وكنت أنقل النوى من أرض الزبير ... الحديث، وفيه: حتى أرسل إلى أبو بكر بعد ذلك خادما فكفتني سياسة الفرس.\nقال:\nوقال الزّبير بن بكّار في هذه القصة: قال لها رسول اللَّه ﷺ: «أبدلك اللَّه بنطاقك هذا نطاقين في، الجنّة» «١»،\nفقيل لها ذات النطاقين.\nروت أسماء عن النبي ﷺ عدة أحاديث، وهي في الصحيحين، والسنن.\nروى عنه ابناها: عبد اللَّه، وعروة وأحفادها: عباد بن عبد اللَّه، وعبد اللَّه بن عروة، وفاطمة بنت المنذر بن الزبير، وعباد بن حمزة بن عبد اللَّه بن الزبير، ومولاها عبد اللَّه بن كيسان، وابن عباس، وصفية بنت شيبة، وابن أبي مليكة، ووهب بن كيسان، وغيرهم.\n(١) أخرج أحمد في المسند ٦/ ٣٤٦ عن أسماء قالت لذلك سميت ذات النطاقين والبخاري في صحيحه ٧/ ١٩٣، ١٩٤ كتاب المناقب باب الهجرة.",
+      "english": "al-Taymiyya. She was the daughter of Abu Bakr al-Siddiq. Her mother was Qutla, or Qutayla, bint Abd al-Uzza, a Qurashi woman of Banu Amir ibn Lu'ayy.\n\nShe embraced Islam early in Mecca—according to Ibn Ishaq, after seventeen persons had done so. al-Zubayr ibn al-Awwam married her, and she emigrated while pregnant by him with his son Abd Allah. She gave birth to him at Quba. She lived until her son assumed the caliphate and then until he was killed, and she died shortly afterward. She was known by the epithet Dhat al-Nitaqayn, “Possessor of the Two Waist-Belts.” Abu Umar said:\n\nThe Messenger of Allah, may Allah bless him and grant him peace, gave her this name because, when he intended to emigrate, she prepared travel provisions for him and needed something with which to fasten them. She tore her head-covering into two halves, fastened the provisions with one half, and made the other half into a waist-belt. He said: This is how Ibn Ishaq and others related it.\n\nI say: The basis of the story is in Sahih Muslim, but without explicitly attributing the naming to the Prophet, may Allah bless him and grant him peace.\n\nAbu Umar transmitted that attribution with an isnad through Abu Nawfal ibn Abi Aqrab: she said to al-Hajjaj, “I had one waist-belt with which I covered the food of the Messenger of Allah, may Allah bless him and grant him peace, to protect it from ants, and another waist-belt that women cannot do without.”\n\nIbn Sa'd said: Abu Usama informed us, from Hisham ibn Urwa, from his father and Fatima bint al-Mundhir, from Asma, who said: “I prepared travel provisions for the Prophet, may Allah bless him and grant him peace, in Abu Bakr's house when he intended to emigrate to Medina. We could find nothing with which to tie either his provisions or his water-skin, so I said to Abu Bakr, ‘I can find nothing except my waist-belt.’ He said, ‘Tear it into two; tie the water-skin with one part and the provisions with the other.’” Its isnad is sound.\n\nWith this same isnad, from Urwa, from Asma, she said: “al-Zubayr married me when he possessed no wealth, slave, or anything else on earth apart from his horse. I used to feed his horse, provide for its upkeep, and tend it. I would crush date-stones for his water-camel, and I used to carry the date-stones from al-Zubayr's land…” The hadith continues, and includes: “Then, after that, Abu Bakr sent me a servant, who relieved me of tending the horse.”\n\nHe said: al-Zubayr ibn Bakkar said concerning this story that the Messenger of Allah, may Allah bless him and grant him peace, said to her: “May Allah replace this waist-belt of yours with two waist-belts in Paradise.”(1) She was therefore called Dhat al-Nitaqayn, “Possessor of the Two Waist-Belts.”\n\nAsma related several hadiths from the Prophet, may Allah bless him and grant him peace. They are found in the two Sahih collections and the Sunan collections.\n\nThose who narrated from her included her two sons, Abd Allah and Urwa; her grandchildren Abbad ibn Abd Allah, Abd Allah ibn Urwa, Fatima bint al-Mundhir ibn al-Zubayr, and Abbad ibn Hamza ibn Abd Allah ibn al-Zubayr; her client Abd Allah ibn Kaysan; Ibn Abbas; Safiyya bint Shayba; Ibn Abi Mulayka; Wahb ibn Kaysan; and others.\n\n(1) Ahmad transmitted in Musnad Ahmad, 6/346, from Asma, who said: “For that reason I was called Dhat al-Nitaqayn.” al-Bukhari also transmitted it in his Sahih, 7/193–194, in the Book of Virtues, chapter on the Emigration.",
+      "arabic_sha256": "0aa188f879a39df2d16ea3c50656bec87204127710579ab047be8c635c30a7d5",
+      "english_sha256": "dc4e00eac270cbd8509c5e33cfb320ae2ddb7484dc3d5429ab226ea7802ec554",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010804-segment-0003",
+      "volume": 8,
+      "scan_page": 15,
+      "printed_page": 14,
+      "reader_page": 3927,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3927",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0015:d3ed91151e1a853d",
+      "arabic": "وأخرج ابن السّكن، من طريق أبي المحياة يحيى بن يعلى التيمي، عن أبيه، قال: دخلت مكة بعد أن قتل ابن الزبير، فرأيته مصلوبا، ورأيت أمه أسماء عجوزا طوالة مكفوفة، فدخلت حتى وقفت على الحجاج، فقالت: أما آن لهذا الراكب أن ينزل. قال: المنافق؟\nقالت: لا واللَّه، ما كان منافقا، وقد كان صوّاما قوّاما. قال: اذهبي فإنك عجوز قد خرفت.\nفقالت: لا، واللَّه ما خرفت، سمعت رسول اللَّه ﷺ يقول: «يخرج في ثقيف كذّاب ومبير» .\nفأما الكذّاب فقد رأيناه، وأما المبير «١» فأنت هو. فقال الحجاج: منه المنافقون.\nوأخرج ابن سعد بسند حسن عن ابن أبي مليكة: كانت تصدّع فتضع يدها على رأسها، وتقول: بذنبي، وما يغفر اللَّه أكثر.\nوقال هشام بن عروة عن أبيه: بلغت أسماء مائة سنة لم يسقط لها سنّ، ولم ينكر لها عقل.\nوقال أبو نعيم الأصبهانيّ: ولدت قبل الهجرة بسبع وعشرين سنة، وعاشت إلى أوائل سنة أربع وعشرين. قيل: عاشت بعد ابنها عشرين يوما، وقيل غير ذلك.",
+      "english": "Ibn al-Sakan related, through Abu al-Muhayyah Yahya ibn Ya'la al-Taymi, from his father, who said: I entered Mecca after Ibn al-Zubayr had been killed. I saw him crucified, and I saw his mother, Asma, an elderly, tall, blind woman. She went in and stood before al-Hajjaj, then said, “Is it not yet time for this rider to dismount?” He said, “The hypocrite?” She said, “No, by Allah! He was not a hypocrite; he fasted frequently and stood frequently in prayer.” He said, “Go away, for you are an old woman who has become senile.” She replied, “No, by Allah, I have not become senile. I heard the Messenger of Allah, may Allah bless him and grant him peace, say: ‘Among Thaqif there will emerge a liar and a destroyer.’ As for the liar, we have seen him; as for the destroyer,[1] you are he.” Al-Hajjaj said, “The hypocrites are from him.” [The Arabic wording is obscure and has been retained literally.]\n\nIbn Sa'd related, with a hasan chain, from Ibn Abi Mulayka: She used to suffer from headaches, so she would place her hand on her head and say, “This is because of my sin, while what Allah forgives is far more.”\n\nHisham ibn 'Urwa reported from his father: Asma reached one hundred years of age without losing a tooth, and her intellect did not deteriorate.\n\nAbu Nu'aym al-Isfahani said: She was born twenty-seven years before the Hijra and lived until the early part of 73 AH. [Editorial note: the printed al-Isabah reads “24”; Abu Nu'aym's cited source, Ma'rifat al-Sahaba 6/3253, reads “73.”] It is said that she lived twenty days after her son; other views are also reported.",
+      "arabic_sha256": "fc3f5d1d9f0b395254594446ea5a13485b54161425e22f1ffc7a32070980e341",
+      "english_sha256": "e2e12a84588fda6097080bbda38b12e61308d2da4306bf2f1dd56ac666433022",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد اللَّه بن الزبير بن العوم",
+      "english": "Abdullah ibn al-Zubayr ibn al-Awwam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "التيمية",
+      "english": "al-Taymiyya",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو بكر الصديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتيلة بنت عبد العزى",
+      "english": "Qutayla bint Abd al-Uzza",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو عامر بن لؤي",
+      "english": "Banu Amir ibn Lu'ayy",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن العوام",
+      "english": "al-Zubayr ibn al-Awwam",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن الزبير",
+      "english": "Abd Allah ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "قباء",
+      "english": "Quba",
+      "kind": "place"
+    },
+    {
+      "arabic": "ذات النطاقين",
+      "english": "Dhat al-Nitaqayn",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "صحيح مسلم",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نوفل بن أبي عقرب",
+      "english": "Abu Nawfal ibn Abi Aqrab",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحجاج",
+      "english": "al-Hajjaj",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أسامة",
+      "english": "Abu Usama",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن عروة",
+      "english": "Hisham ibn Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "Urwa ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت المنذر بن الزبير",
+      "english": "Fatima bint al-Mundhir ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجنة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "عباد بن حمزة بن عبد الله بن الزبير",
+      "english": "Abbad ibn Hamza ibn Abd Allah ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن كيسان",
+      "english": "Abd Allah ibn Kaysan",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت شيبة",
+      "english": "Safiyya bint Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي مليكة",
+      "english": "Ibn Abi Mulayka",
+      "kind": "person"
+    },
+    {
+      "arabic": "وهب بن كيسان",
+      "english": "Wahb ibn Kaysan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيحه",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو المحياة يحيى بن يعلى التيمي",
+      "english": "Abu al-Muhayyah Yahya ibn Ya'la al-Taymi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الزبير",
+      "english": "Abd Allah ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء",
+      "english": "Asma bint Abi Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثقيف",
+      "english": "Thaqif",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "هشام بن عروة",
+      "english": "Hisham ibn 'Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم الأصبهاني",
+      "english": "Abu Nu'aym al-Isfahani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهجرة",
+      "english": "Hijra",
+      "kind": "other"
+    },
+    {
+      "arabic": "الإصابة",
+      "english": "al-Isabah",
+      "kind": "work"
+    },
+    {
+      "arabic": "معرفة الصحابة",
+      "english": "Ma'rifat al-Sahaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "سعد",
+      "english": "Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "obscure_wording",
+      "arabic_span": "فقال الحجاج: منه المنافقون",
+      "explanation": "The syntax and intended referent are obscure. No supplied witness preserves or clarifies the sentence, so it has been retained literally without conjectural emendation.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0015:d3ed91151e1a853d"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

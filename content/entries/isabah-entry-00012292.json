@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012292",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12292,
+  "title": {
+    "english": "Umm Abi Hurayra",
+    "arabic_observed": "أم أبي هريرة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012292-segment-0001",
+      "volume": 8,
+      "scan_page": 488,
+      "printed_page": 487,
+      "reader_page": 4400,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4400",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0488:d4ef17ea9cc7916a",
+      "arabic": "١٢٢٩٢- أم أبي هريرة:\nواسمها أمينة «٢» . تقدّمت.",
+      "english": "12292 — Umm Abi Hurayra\n\nHer name was Amina.[2] She was mentioned earlier.",
+      "arabic_sha256": "c5fdfc3f7befce3c3d4fa98a9b877c878f86672f938ca306e95d0dbc7149937a",
+      "english_sha256": "22d882922eb790d543fe82b3a00a18e228ca10826c46a224b59d167be9470229",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم أبي هريرة",
+      "english": "Umm Abi Hurayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمينة",
+      "english": "Amina Umm Abi Hurayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي هريرة",
+      "english": "Abu Hurayra",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

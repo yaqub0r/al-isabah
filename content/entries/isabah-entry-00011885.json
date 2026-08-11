@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011885",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11885,
+  "title": {
+    "english": "Wasla bint Wail",
+    "arabic_observed": "وصلة بنت وائل"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011885-segment-0001",
+      "volume": 8,
+      "scan_page": 353,
+      "printed_page": 352,
+      "reader_page": 4265,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4265",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0353:e6c1cc9510087de4",
+      "arabic": "١١٨٨٥- وصلة بنت وائل\nذكرها ابن بشكوال.\nقلت: وهو تصحيف، وإنما هي فاضلة. وقد تقدم ذكرها في حرف الفاء.\nحرف الياء آخر الحروف",
+      "english": "11885—Wasla bint Wail\n\nIbn Bashkuwal mentioned her.\n\nI say: This is a scribal corruption; she is actually Fadila. She has already been mentioned under the letter fa.\n\nTHE LETTER YA, THE LAST OF THE LETTERS",
+      "arabic_sha256": "468990ac6aa8a24c2c8fc8c67494ff100047c05cf04248f3627dac6d5cf92054",
+      "english_sha256": "29d03c0e3fde84175b066a61e68e4fe0fb9135676f5bd0951d20c1ff6a7a680e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "وصلة بنت وائل",
+      "english": "Wasla bint Wail",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن بشكوال",
+      "english": "Ibn Bashkuwal",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاضلة",
+      "english": "Fadila bint Wail",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

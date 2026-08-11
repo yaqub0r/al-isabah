@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011139",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11139,
+  "title": {
+    "english": "Khawla,",
+    "arabic_observed": "خولة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011139-segment-0001",
+      "volume": 8,
+      "scan_page": 123,
+      "printed_page": 122,
+      "reader_page": 4035,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4035",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0123:39414799091303d0",
+      "arabic": "١١١٣٩- خولة ،\nخادم رسول اللَّه ﷺ «٣» .\nقال أبو عمر: روى حديثها حفص بن سعيد عن أبيه عنها في تفسير: وَالضُّحى وليس إسناد حديثها مما يحتجّ به.\nقلت: أخرجه أبو بكر بن أبي شيبة، والطّبرانيّ،\nمن طريق أبي نعيم، عن حفصة، ولفظه: عن أمها، وكانت خادم رسول اللَّه ﷺ أن جروا دخل البيت، فدخل تحت السرير، ومكث النبيّ ﷺ ثلاثا لا ينزل عليه الوحي، فقال: «يا خولة، ما حدث في بيت رسول اللَّه؟\nجبريل لا يأتيني؟» فقلت: واللَّه ما علمت، فأخذ برده فلبسه، وخرج، فقلت: لو هيأت البيت فكنسته؟ فإذا بجرو ميت، فأخذته فألقيته، فجاء رسول اللَّه ﷺ ترعد لحيته، وكان إذا أتاه الوحي أخذته الرعدة، فقال: «يا خولة، دثّريني، فأنزل اللَّه تعالى: وَالضُّحى وَاللَّيْلِ إِذا سَجى ... [الضحى ١، ٢] السورة.",
+      "english": "11139 - Khawla,\n\nattendant of the Messenger of Allah, may Allah bless him and grant him peace.³\n\nAbu Umar said: “Her hadith concerning the interpretation of ‘By the morning brightness’ was narrated by Hafs ibn Sa'id, from his father, from her. The chain of her hadith is not one that may be adduced as proof.”\n\nI say: Abu Bakr ibn Abi Shayba and al-Tabarani transmitted it by way of Abu Nu'aym, from Hafsa, with the following wording: From her mother, who was an attendant of the Messenger of Allah, may Allah bless him and grant him peace, that a puppy entered the house and went beneath the bed. For three days no revelation descended upon the Prophet, may Allah bless him and grant him peace. He said, “O Khawla, what has happened in the house of the Messenger of Allah? Why does Gabriel not come to me?” I said, “By Allah, I did not know.” He took his mantle, put it on, and went out. I said, “What if I put the house in order and swept it?” Then there was a dead puppy. I picked it up and threw it out. The Messenger of Allah, may Allah bless him and grant him peace, came, his beard trembling—for whenever revelation came to him, trembling seized him—and said, “O Khawla, wrap me up.” Then Allah Most High revealed the surah: “By the morning brightness, and by the night when it grows still ...” [al-Duha 1–2].",
+      "arabic_sha256": "c1129da9063ffce8e85fe6f4c514696aab5d944dc0d5fbd296572b13c74888cc",
+      "english_sha256": "ffab16c4a021b1ea4b8b37d75d56e9988a997819843eeafe24562fed19606353",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه تعالى",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفص بن سعيد",
+      "english": "Hafs ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر بن أبي شيبة",
+      "english": "Abu Bakr ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبرانيّ",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفصة",
+      "english": "Hafsa",
+      "kind": "person"
+    },
+    {
+      "arabic": "جبريل",
+      "english": "Gabriel",
+      "kind": "other"
+    },
+    {
+      "arabic": "الضحى",
+      "english": "al-Duha",
+      "kind": "work"
+    },
+    {
+      "arabic": "خولة",
+      "english": "Khawla",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

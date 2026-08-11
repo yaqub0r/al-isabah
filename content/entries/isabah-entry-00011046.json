@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011046",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11046,
+  "title": {
+    "english": "Huraymila bint Abd",
+    "arabic_observed": "حريملة بنت عبد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011046-segment-0001",
+      "volume": 8,
+      "scan_page": 85,
+      "printed_page": 84,
+      "reader_page": 3997,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3997",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0085:f06f6b3846d86122",
+      "arabic": "١١٠٤٦- حريملة بنت عبد\nبن الأسود «٢» بن جذيمة بن قيس بن بياضة بن سبيع الخزاعية، ماتت بأرض الحبشة، كذا ذكرها الطبري، وأوردها ابن عبد البر. وقال ابن سعد:\nحرملة بغير تصغير، أسلمت قديما، وهاجرت إلى الحبشة مع زوجها جهم بن قيس، فولدت له عبد اللَّه وعمرا وحرملة، فكانت تكنى أم حرملة، فهلكت هناك.",
+      "english": "11046 — Huraymila bint Abd\n\nIbn al-Aswad² ibn Judhayma ibn Qays ibn Bayada ibn Subay al-Khuza'iyya. She died in the land of Abyssinia. This is how al-Tabari mentioned her, and Ibn Abd al-Barr included her. Ibn Sa'd, however, said:\n\n“Harmala,” without the diminutive form. She embraced Islam early and emigrated to Abyssinia with her husband, Jahm ibn Qays. She bore him Abd Allah, Amr, and Harmala, and thus had the teknonym Umm Harmala. She died there.",
+      "arabic_sha256": "fdbce5daf35c27ec8e0ec70399ca3db0c69815b17a40c6112310ff780093a5ee",
+      "english_sha256": "b3011cf69a69373d217924353b0ff48fa0da5bed1fdaf8a604411a22f2726d2e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أرض الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "الطبري",
+      "english": "al-Tabari",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبد البر",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "حرملة بغير تصغير",
+      "english": "Harmala bint Abd ibn al-Aswad ibn Judhayma ibn Qays ibn Bayada ibn Subay al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "جهم بن قيس",
+      "english": "Jahm ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah ibn Jahm ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرا",
+      "english": "Amr ibn Jahm ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "حرملة",
+      "english": "Harmala bint Jahm ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حرملة",
+      "english": "Umm Harmala",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

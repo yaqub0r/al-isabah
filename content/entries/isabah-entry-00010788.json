@@ -1,0 +1,108 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010788",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10788,
+  "title": {
+    "english": "Arwa bint al-Harith ibn Abd al-Muttalib al-Hashimiyya,",
+    "arabic_observed": "أروى بنت الحارث بن عبد المطلب الهاشمية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010788-segment-0001",
+      "volume": 8,
+      "scan_page": 8,
+      "printed_page": 7,
+      "reader_page": 3920,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3920",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0008:d390cb59fff2b09a",
+      "arabic": "١٠٧٨٨- أروى بنت الحارث بن عبد المطلب الهاشمية ،\nوالدة المطلب بن أبي وداعة السهمي.\nذكرها ابن سعد في «الصّحابيّات» في باب بنات عم النبي ﷺ، وقال أمها غزية بنت قيس بن طريف، من بني الحارث بن فهر بن مالك، قال: وولدت لأبي وداعة: المطلب، وأبا سفيان، وأم جميل، وأم حكيم، والربعة.",
+      "english": "10788—Arwa bint al-Harith ibn Abd al-Muttalib al-Hashimiyya,\n\nmother of al-Muttalib ibn Abi Wada'a al-Sahmi.\n\nIbn Sa'd mentioned her in al-Sahabiyyat, in the chapter on the daughters of the Prophet's paternal uncles (may Allah bless him and grant him peace). He said, “Her mother was Ghaziyya bint Qays ibn Turayf, of Banu al-Harith ibn Fihr ibn Malik.” He said, “She bore Abu Wada'a the following children: al-Muttalib, Abu Sufyan, Umm Jamil, Umm Hakim, and al-Rab'a.”",
+      "arabic_sha256": "56054ea55cd336463db5cb8241967d60dee13fd2848b79afd75ecc65c2833d59",
+      "english_sha256": "8a6ce61286514f1c96af71e109b5b11e7eae6ba129642ece9d6b8f6b96e6ad04",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أروى بنت الحارث بن عبد المطلب الهاشمية",
+      "english": "Arwa bint al-Harith ibn Abd al-Muttalib al-Hashimiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "المطلب بن أبي وداعة السهمي",
+      "english": "al-Muttalib ibn Abi Wada'a al-Sahmi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصّحابيّات",
+      "english": "al-Sahabiyyat",
+      "kind": "work"
+    },
+    {
+      "arabic": "غزية بنت قيس بن طريف",
+      "english": "Ghaziyya bint Qays ibn Turayf",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني الحارث بن فهر بن مالك",
+      "english": "Banu al-Harith ibn Fihr ibn Malik",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو وداعة",
+      "english": "Abu Wada'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سفيان",
+      "english": "Abu Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جميل",
+      "english": "Umm Jamil",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم",
+      "english": "Umm Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الربعة",
+      "english": "al-Rab'a",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "الربعة",
+      "explanation": "The Arabic and Urdu witness are both unvocalized, and the supplied collateral passages do not contain this child-list. The exact vocalization therefore remains uncertain; al-Rab'a is retained provisionally as a consonant-preserving transliteration.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0008:d390cb59fff2b09a"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

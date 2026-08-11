@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010853",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10853,
+  "title": {
+    "english": "Umayma bint Abi al-Khiyar",
+    "arabic_observed": "أميمة بنت أبي الخيار ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010853-segment-0001",
+      "volume": 8,
+      "scan_page": 31,
+      "printed_page": 30,
+      "reader_page": 3943,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3943",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0031:39f9e796adf302b7",
+      "arabic": "١٠٨٥٣- أميمة بنت أبي الخيار ،\nزوج مطيع بن الأسود العدوي. ذكرها في التجريد.\n(١) أسد الغابة: ت ٦٧٣٦.\n(٢) أخرجه أبو داود في السنن ٢/ ٥٥١ عن يزيد بن نعيم بن هزال عن أبيه بزيادة في أوله وآخره ولفظه هل جامعتها كتاب الحدود باب رجم ماعز بن مالك حديث رقم ٤٤١٩ وأحمد في المسند ٥/ ٢١٧.\n(٣) أسد الغابة ت ٦٧٣٧، الاستيعاب ت ٣٢٨٥.\n(٤) في أآمنة.",
+      "english": "10853 — Umayma bint Abi al-Khiyar\n\nThe wife of Muti' ibn al-Aswad al-Adawi. She is mentioned in al-Tajrid.\n\n[1] Usd al-Ghaba, entry 6736.\n\n[2] Abu Dawud transmitted it in al-Sunan, 2/551, from Yazid ibn Nu'aym ibn Hazzal, from his father, with an addition at its beginning and end. Its wording is: “Did you have intercourse with her?” Book of Prescribed Punishments, chapter “The Stoning of Ma'iz ibn Malik,” hadith no. 4419. Ahmad also transmitted it in Musnad Ahmad, 5/217.\n\n[3] Usd al-Ghaba, entry 6737; al-Isti'ab, entry 3285.\n\n[4] In manuscript A: “Amina” (آمنة).",
+      "arabic_sha256": "6ffe51e866a26d43e8774835f2f3ea8b564d7f295d9f5dd41299d2a8a033c01d",
+      "english_sha256": "5792149250a8f25367dd33acfd56ad78a833e3d28efd53be6b13cd9576529470",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "آمنة",
+      "english": "Amina bint Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة بنت أبي الخيار",
+      "english": "Umayma bint Abi al-Khiyar",
+      "kind": "person"
+    },
+    {
+      "arabic": "مطيع بن الأسود العدوي",
+      "english": "Muti' ibn al-Aswad al-Adawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "al-Sunan",
+      "kind": "work"
+    },
+    {
+      "arabic": "يزيد بن نعيم بن هزال",
+      "english": "Yazid ibn Nu'aym ibn Hazzal",
+      "kind": "person"
+    },
+    {
+      "arabic": "ماعز بن مالك",
+      "english": "Ma'iz ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

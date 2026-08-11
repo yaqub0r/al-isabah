@@ -1,0 +1,159 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010923",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10923,
+  "title": {
+    "english": "Baraka bint Yasar,[3]",
+    "arabic_observed": "بركة بنت يسار «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010923-segment-0001",
+      "volume": 8,
+      "scan_page": 48,
+      "printed_page": 47,
+      "reader_page": 3960,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3960",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0048:d6a0e7f867c714bd",
+      "arabic": "١٠٩٢٣- بركة بنت يسار «٣»\n، مولاة أبي سفيان بن حرب.\nهاجرت إلى الحبشة مع زوجها قيس بن عبد اللَّه الأسدي ذكر ذلك ابن هشام، عن ابن\n(١) الاستيعاب ت ٣٢٩٨.\n(٢) أسد الغابة: ت ٦٧٧٠.\n(٣) الثقات ٣/ ٣٨، تجريد أسماء الصحابة ٢/ ٢٥١.",
+      "english": "10923 — Baraka bint Yasar,[3]\n\na client of Abu Sufyan ibn Harb.\n\nShe migrated to Abyssinia with her husband, Qays ibn Abd Allah al-Asadi. Ibn Hisham mentioned this on the authority of Ibn—\n\n[1] al-Isti'ab, entry 3298.\n\n[2] Usd al-Ghaba, entry 6770.\n\n[3] al-Thiqat, 3/38; al-Tajrid, 2/251.",
+      "arabic_sha256": "e05368c9e121f8b75892b55a4573d0e17f977a3a00ea38a2ce228b2346e813f7",
+      "english_sha256": "1246ee0f3519b4f186f2d6be04eda08465a0857c898369a07191955e31997a6c",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010923-segment-0002",
+      "volume": 8,
+      "scan_page": 49,
+      "printed_page": 48,
+      "reader_page": 3961,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3961",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0049:960dd5cda8447117",
+      "arabic": "إسحاق فيمن هاجر إلى الحبشة، وكذلك ابن سعد. وقد تقدم ذلك في ترجمة قيس بن عبد اللَّه.\nوجوّز بعض المغاربة أنها بركة الحبشية المذكورة قبل هذه، وليس كما ظنّ، فإنّ بركة بنت يسار من حلفاء بني عبد الدار، وهي أخت أبي تجراة، وأصلهم من كندة وليست حبشية، وإن اشتركتا في كونهما في أرض الحبشة مع المهاجرين.",
+      "english": "Ibn Ishaq mentioned her among those who emigrated to Abyssinia, as did Ibn Sa'd. This has already been mentioned in the entry on Qays ibn Abd Allah.\n\nOne of the Maghribis considered it possible that she was Baraka al-Habashiyya, mentioned immediately before her, but it is not as he supposed. Baraka bint Yasar was among the allies of Banu Abd al-Dar. She was the sister of Abu Tajra'a, and they were originally from Kinda; she was not Abyssinian, although both women were in the land of Abyssinia with the emigrants.",
+      "arabic_sha256": "44a35a4872b47c1c49d6eb41e5a589f8aa2b6e85fdc2bb9cc9a9730b21f324a5",
+      "english_sha256": "8d8ab441292e3a25f159001af1ced13971bda34a53d34fb2cffd65195cc55039",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "بركة",
+      "english": "Baraka Umm Ayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أرض الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "بركة بنت يسار",
+      "english": "Baraka bint Yasar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سفيان بن حرب",
+      "english": "Abu Sufyan ibn Harb",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس بن عبد اللَّه الأسدي",
+      "english": "Qays ibn Abd Allah al-Asadi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن هشام",
+      "english": "Ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس بن عبد اللَّه",
+      "english": "Qays ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "بركة الحبشية",
+      "english": "Baraka al-Habashiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عبد الدار",
+      "english": "Banu Abd al-Dar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبي تجراة",
+      "english": "Abu Tajra'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "كندة",
+      "english": "Kinda",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "يسار",
+      "english": "Yasar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah ibn Abd Allah ibn Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

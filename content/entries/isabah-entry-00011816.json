@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011816",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11816,
+  "title": {
+    "english": "Nasikah:",
+    "arabic_observed": "نسيكة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011816-segment-0001",
+      "volume": 8,
+      "scan_page": 336,
+      "printed_page": 335,
+      "reader_page": 4248,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4248",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0336:5668b6390c509ad2",
+      "arabic": "١١٨١٦- نسيكة:\nوالدة عمرو بن الجلاس «٢» .\nروت عنها حبيبة بنت سمعان، أخرج حديثها الطّبرانيّ، من طريق إبراهيم بن إسماعيل بن أبي حبيبة، عن حبيبة بنت سمعان، عن نسيكة بنت عمرو بن الجلاس، قالت: إني لعند عائشة وقد ذبحت شاة لها، فدخل رسول اللَّه ﵌ وفي يده عصية فألقاها ثم هوى إلى المسجد فصلّى فيه ركعتين، ثم هوى إلى فراشه فانبطح عليها، ثم قال: «هل من غذاء؟» فأتيناه بصحفة فيها خبز شعير وفيها كسرة وقطعة من الكرش، وفيها الذّراع، فأخذت عائشة قطعة من الكرش فإنّها تنهشها إذ قلت: لقد ذبحنا شاة اليوم فما أمسكنا منها إلا هذا، فقال: «لا، بل أمسكت كلّها إلّا هذا» .",
+      "english": "11816—Nasikah:\nThe mother of Amr ibn al-Jallas. [2]\n\nHabibah bint Sim'an narrated from her. Al-Tabarani transmitted her hadith through Ibrahim ibn Isma'il ibn Abi Habibah, from Habibah bint Sim'an, from Nasikah bint Amr ibn al-Jallas, who said: “I was with Aisha after a sheep had been slaughtered for her. The Messenger of Allah, may Allah bless him and grant him peace, entered carrying a small staff in his hand. He cast it down, then made for the mosque and prayed two units of prayer there. He then made for his bed and lay prone upon it. He then said, ‘Is there any food?’ We brought him a dish containing barley bread, a broken piece of bread, a piece of tripe, and the foreleg. Aisha took a piece of the tripe and was gnawing it when I said, ‘We slaughtered a sheep today, but we kept nothing of it except this.’ He said, ‘No; rather, you kept all of it except this.’”",
+      "arabic_sha256": "999588d508cfe2d2c6c51e63d04d6b264a0448fe88fb1447f69add7d9451f689",
+      "english_sha256": "ee49e3a6754276206b9a87b933b2c78d555742365a2805c0a93ea4664df7707f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "نسيكة",
+      "english": "Nasikah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن الجلاس",
+      "english": "Amr ibn al-Jallas",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة بنت سمعان",
+      "english": "Habibah bint Sim'an",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن إسماعيل بن أبي حبيبة",
+      "english": "Ibrahim ibn Isma'il ibn Abi Habibah",
+      "kind": "person"
+    },
+    {
+      "arabic": "نسيكة بنت عمرو بن الجلاس",
+      "english": "Nasikah bint Amr ibn al-Jallas",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011568",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11568,
+  "title": {
+    "english": "Ghaniyya bint Abi Ihab:",
+    "arabic_observed": "غنيّة بنت أبي إهاب:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011568-segment-0001",
+      "volume": 8,
+      "scan_page": 257,
+      "printed_page": 256,
+      "reader_page": 4169,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4169",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0257:65dbf35993e88518",
+      "arabic": "١١٥٦٨- غنيّة بنت أبي إهاب:\nهي أم يحيى التي تزوجها عقبة بن الحارث النوفلي فقالت له جارية سوداء: قد أرضعتكما. تأتي في الكنى.\nالقسم الثاني، والثالث، والرابع\nلم يذكر فيها أحد.\nحرف الفاء\nالقسم الأول",
+      "english": "11568—Ghaniyya bint Abi Ihab:\n\nShe is Umm Yahya, whom Uqba ibn al-Harith al-Nawfali married. A black slave-girl said to him, “I nursed both of you.” She will appear among the entries arranged by kunyahs.\n\nTHE SECOND, THIRD, AND FOURTH SECTIONS\n\nNo one is mentioned in them.\n\nTHE LETTER FA\n\nTHE FIRST SECTION",
+      "arabic_sha256": "cde036e0960794c89d6429b765ad7f325dd81ae6c5e31dfc0ddd4c84eb0d9172",
+      "english_sha256": "4f8ad6157179fbb04e65c7b24ba9a3f57bb07768cb64bf910e314f12ee2071fb",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "غنيّة بنت أبي إهاب",
+      "english": "Ghaniyya bint Abi Ihab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم يحيى",
+      "english": "Umm Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عقبة بن الحارث النوفلي",
+      "english": "Uqba ibn al-Harith al-Nawfali",
+      "kind": "person"
+    },
+    {
+      "arabic": "النوفلي",
+      "english": "Banu Nawfal",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

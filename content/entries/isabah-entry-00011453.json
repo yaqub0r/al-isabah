@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011453",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11453,
+  "title": {
+    "english": "Atika bint Abi Sufyan ibn al-Harith ibn Abd al-Muttalib, the Hashimite.",
+    "arabic_observed": "عاتكة بنت أبي سفيان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011453-segment-0001",
+      "volume": 8,
+      "scan_page": 229,
+      "printed_page": 228,
+      "reader_page": 4141,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4141",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0229:e914e4d6e4696346",
+      "arabic": "١١٤٥٣- عاتكة بنت أبي سفيان\nبن الحارث بن عبد المطلب الهاشميّة.\nكانت زوج معتّب بن أبي لهب، فولدت له خالدة، فتزوّجها عبد اللَّه بن الحارث بن نوفل بن الحارث بن عبد المطّلب الملقب بببّة- ذكرها الزّبير بن بكّار.\nوذكر ابن سعد في ترجمة أم عمرو بنت المقوّم بن عبد المطّلب- أنّ أبا سفيان بن الحارث تزوّجها، فولدت له عاتكة.",
+      "english": "11453 - Atika bint Abi Sufyan ibn al-Harith ibn Abd al-Muttalib, the Hashimite.\n\nShe was the wife of Mu'attib ibn Abi Lahab and bore him Khalida. Abdullah ibn al-Harith ibn Nawfal ibn al-Harith ibn Abd al-Muttalib, who was nicknamed Babbah, then married her. al-Zubayr ibn Bakkar mentioned her.\n\nIn the biography of Umm Amr bint al-Muqawwim ibn Abd al-Muttalib, Ibn Sa'd mentioned that Abu Sufyan ibn al-Harith married her and that she bore him Atika.",
+      "arabic_sha256": "fa57b760e6a301337136dd3d4cb9862fb3c305b8ca4e9aeaa6255e7ef987d639",
+      "english_sha256": "2c199e735718177141c3ebcdc324a5ddbbb004d90d6b2c893cc7973a07935832",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عاتكة بنت أبي سفيان بن الحارث بن عبد المطلب",
+      "english": "Atika bint Abi Sufyan ibn al-Harith ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "معتّب بن أبي لهب",
+      "english": "Mu'attib ibn Abi Lahab",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالدة",
+      "english": "Khalida",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن الحارث بن نوفل بن الحارث بن عبد المطّلب",
+      "english": "Abdullah ibn al-Harith ibn Nawfal ibn al-Harith ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ببّة",
+      "english": "Babbah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّبير بن بكّار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو بنت المقوّم بن عبد المطّلب",
+      "english": "Umm Amr bint al-Muqawwim ibn Abd al-Muttalib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

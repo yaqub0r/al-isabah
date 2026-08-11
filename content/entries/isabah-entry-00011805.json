@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011805",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11805,
+  "title": {
+    "english": "Nubayta:",
+    "arabic_observed": "نبيتة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011805-segment-0001",
+      "volume": 8,
+      "scan_page": 333,
+      "printed_page": 332,
+      "reader_page": 4245,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4245",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0333:2b4ab5f62b1040b9",
+      "arabic": "١١٨٠٥- نبيتة:\nبموحدة بعد النون ومثناة، بالتّصغير. تقدمت في ثبيتة بالمثلثة.",
+      "english": "11805—Nubayta:\n\nWith a ba—the single-dotted letter—after the nun, and a ta—the two-dotted letter—in diminutive form. She was mentioned previously under Thubayta, with a tha—the three-dotted letter.",
+      "arabic_sha256": "ca7cd17e55ff523a8b43d84c7777622a787ce7d472c8f4a6724c9492e1d998fc",
+      "english_sha256": "1729079c48a35161bacbb864e2c60815de74af41da1af8a5f946f0d5e39f99a3",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "نبيتة",
+      "english": "Nubayta",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثبيتة",
+      "english": "Thubayta",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

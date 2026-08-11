@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010997",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10997,
+  "title": {
+    "english": "Jamila bint Abd Allah ibn Hanzala al-Ansariyya[1]",
+    "arabic_observed": "جميلة بنت عبد اللَّه"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010997-segment-0001",
+      "volume": 8,
+      "scan_page": 72,
+      "printed_page": 71,
+      "reader_page": 3984,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3984",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0072:7ef2a8b4975b2fe7",
+      "arabic": "١٠٩٩٧- جميلة بنت عبد اللَّه\nبن حنظلة الأنصارية «١»، من بني الحبلي. ذكرها ابن حبيب فيمن بايعن النبي ﷺ.",
+      "english": "10997 — Jamila bint Abd Allah ibn Hanzala al-Ansariyya[1]\n\nShe was of Banu al-Hubla. Ibn Habib mentioned her among the women who pledged allegiance to the Prophet (may Allah bless him and grant him peace).",
+      "arabic_sha256": "6f9d9a049a25d132935c085f376cc0fc1d4cbba8023bbd92a793d59b94ec9bf5",
+      "english_sha256": "9159dc506867bc56563d468b239efdb95863ba7b9166d169304bc868945bbd2f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حنظلة",
+      "english": "Hanzala",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيب",
+      "english": "Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "جميلة بنت عبد اللَّه بن حنظلة الأنصارية",
+      "english": "Jamila bint Abd Allah ibn Hanzala al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني الحبلي",
+      "english": "Banu al-Hubla",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة بنت عبد اللَّه",
+      "english": "Jamila bint Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة",
+      "english": "Jamila",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011195",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11195,
+  "title": {
+    "english": "Ramla bint al-Waqi'a³ ibn Haram ibn Ghifar ibn Mulayl⁴—the latter being a diminutive written with two lams.",
+    "arabic_observed": "رملة بنت الوقيعة «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011195-segment-0001",
+      "volume": 8,
+      "scan_page": 144,
+      "printed_page": 143,
+      "reader_page": 4056,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4056",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0144:58b1f1b0508ffb94",
+      "arabic": "١١١٩٥- رملة بنت الوقيعة «٣»\nبن حرام بن غفار بن مليل «٤» - بلامين مصغر.\nقال خليفة «٥» بن خيّاط: هي أم أبي ذر الغفاريّ، سماها غير واحد، وثبت ذكرها في\n(١) أسد الغابة: ت ٦٩٣٤.\n(٢) أسد الغابة: ت ٦٩٣٥، الاستيعاب: ت ٣٣٩٢.\n(٣) في أ: الربيعة.\n(٤) أسد الغابة: ت ٦٩٣٦.\n(٥) في أ: خليفة.",
+      "english": "11195—Ramla bint al-Waqi'a³ ibn Haram ibn Ghifar ibn Mulayl⁴—the latter being a diminutive written with two lams.\n\nKhalifa⁵ ibn Khayyat said: “She was the mother of Abu Dharr al-Ghifari.” More than one authority named her, and mention of her is firmly established in—\n\n¹ Usd al-Ghaba, entry 6934.\n\n² Usd al-Ghaba, entry 6935; al-Isti'ab, entry 3392.\n\n³ In manuscript A: “al-Rabi'a.”\n\n⁴ Usd al-Ghaba, entry 6936.\n\n⁵ In manuscript A: “Khalifa.”",
+      "arabic_sha256": "e2d809c68d4cfc98e88aa60aa9c0db2b4bc87845b51cf544d5178767f3c60bf1",
+      "english_sha256": "cdd76880bc1399b06e007ef973a835f284928abb3727a4d6f979d30c27b03e14",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011195-segment-0002",
+      "volume": 8,
+      "scan_page": 145,
+      "printed_page": 144,
+      "reader_page": 4057,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4057",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0145:4202cd84d3358069",
+      "arabic": "قصة إسلام أبي ذر، ولم تسمّ فيه. وقيل: إنها أم عمرو بن عبسة السلمي أيضا.",
+      "english": "[Continuation of entry 11195]\n\nthe account of Abu Dharr's conversion to Islam, though she is not named in it. It is also said that she was the mother of Amr ibn Abasa al-Sulami as well.",
+      "arabic_sha256": "26875036c16302de8fa8732165f6e36f8e832be936f04db05a5d82d6b2ce7fa9",
+      "english_sha256": "64f5cb2f46b4ad88b54d1675d1d1ae153a369871ffb6a0fd7a549685ecff4941",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "غفار",
+      "english": "Ghifar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو ذر الغفاري",
+      "english": "Abu Dharr al-Ghifari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو ذر",
+      "english": "Abu Dharr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن عبسة السلمي",
+      "english": "Amr ibn Abasa al-Sulami",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

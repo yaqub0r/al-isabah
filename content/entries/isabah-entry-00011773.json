@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011773",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11773,
+  "title": {
+    "english": "Mulayka bint Ka'b al-Kinaniyya:",
+    "arabic_observed": "مليكة بنت كعب الكنانيّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011773-segment-0001",
+      "volume": 8,
+      "scan_page": 321,
+      "printed_page": 320,
+      "reader_page": 4233,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4233",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0321:52231aa80310bf96",
+      "arabic": "١١٧٧٣- مليكة بنت كعب الكنانيّة:\nذكر الواقديّ، عن أبي معشر- أنّ النّبيّ ﵌ تزوّج بها وكانت تذكر بجمال بارع، فدخلت عليها عائشة، فقالت لها: أما تستحين أن تنكحي قاتل أبيك، وكان أبوها قتل يوم فتح مكّة قتله خالد بن الوليد، قال: فاستعاذت من النبيّ ﵌ فطلّقها، فجاء قومها يسألونه أن يراجعها، واعتذروا عنها بالصغر وضعف الرأي، وأنها خدعت، فأبى، فاستأذنوه أن يزوّجوها قريبا لها من بني عذرة فأذن لهم.\nومن طريق عطاء بن يزيد الجندعيّ: تزوّج رسول اللَّه ﵌ مليكة بنت كعب في شهر رمضان، ودخل عليها، وماتت عنده، قال الواقديّ: أصحابنا ينكرون هذا، وأنه لم يتزوّج كنانية قطّ.",
+      "english": "11773—Mulayka bint Ka'b al-Kinaniyya:\n\nAl-Waqidi related, from Abu Ma'shar, that the Prophet—may Allah bless him and grant him peace—married her. She was renowned for surpassing beauty. Aisha came in to her and said, “Are you not ashamed to marry the man who killed your father?” Her father had been killed on the day of the Conquest of Mecca; Khalid ibn al-Walid had killed him. She then sought refuge from the Prophet—may Allah bless him and grant him peace—so he divorced her. Her people came asking him to take her back, pleading that she was young and of weak judgment and that she had been deceived, but he refused. They then asked his permission to give her in marriage to a relative of hers from Banu Udhra, and he gave them permission.\n\nThrough Ata ibn Yazid al-Junda'i: The Messenger of Allah—may Allah bless him and grant him peace—married Mulayka bint Ka'b in the month of Ramadan, consummated the marriage with her, and she died while married to him. Al-Waqidi said, “Our authorities reject this, maintaining that he never married a woman of Kinana.”",
+      "arabic_sha256": "3a592cba3720d9a00c062a78be3f612372f20036481a19252c6feb9a4b4ae310",
+      "english_sha256": "20bf2b3d01ee0c4453605a8b32719b5dca9569d3b139052a3720ec872ba4fd7a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مليكة بنت كعب الكنانيّة",
+      "english": "Mulayka bint Ka'b al-Kinaniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو معشر",
+      "english": "Abu Ma'shar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكّة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "خالد بن الوليد",
+      "english": "Khalid ibn al-Walid",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو عذرة",
+      "english": "Banu Udhra",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عطاء بن يزيد الجندعيّ",
+      "english": "Ata ibn Yazid al-Junda'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنانة",
+      "english": "Kinana",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "مليكة",
+      "english": "Mulayka",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد",
+      "english": "Zayd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

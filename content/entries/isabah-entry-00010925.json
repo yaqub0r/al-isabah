@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010925",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10925,
+  "title": {
+    "english": "Barrah bint al-Harith al-Hilaliyya",
+    "arabic_observed": "برّة بنت الحارث الهلالية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010925-segment-0001",
+      "volume": 8,
+      "scan_page": 49,
+      "printed_page": 48,
+      "reader_page": 3961,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3961",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0049:960dd5cda8447117",
+      "arabic": "١٠٩٢٥- برّة بنت الحارث الهلالية ،\nهي ميمونة أم المؤمنين- كان اسمها أولا برّة، فغيّره النبيّ ﷺ لما تزوّجها. رواه ابن أبي خيثمة بأسانيد جياد.",
+      "english": "10925 — Barrah bint al-Harith al-Hilaliyya\n\nShe is Maymuna, Mother of the Believers. Her name was originally Barrah, but the Prophet—may Allah bless him and grant him peace—changed it when he married her. Ibn Abi Khaythama related this through sound chains of transmission.",
+      "arabic_sha256": "cead856b6459ed727fd48df79b19637e4ad783505f88d6324f53c3224da2cbc4",
+      "english_sha256": "006196770932ca3b42b95e39592ce96fb6a8cfe0100d19cbf752008f6ab7cb19",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "برّة بنت الحارث الهلالية",
+      "english": "Barrah bint al-Harith al-Hilaliyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمونة أم المؤمنين",
+      "english": "Maymuna bint al-Harith al-Hilaliyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي خيثمة",
+      "english": "Ibn Abi Khaythama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

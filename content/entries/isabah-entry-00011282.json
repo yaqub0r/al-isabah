@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011282",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11282,
+  "title": {
+    "english": "Sabi'a al-Qurashiyya [1]",
+    "arabic_observed": "سبيعة القرشية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011282-segment-0001",
+      "volume": 8,
+      "scan_page": 174,
+      "printed_page": 173,
+      "reader_page": 4086,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4086",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0174:2b7a365ec3693914",
+      "arabic": "١١٢٨٢- سبيعة القرشية «١»\n. ذكرها ابن مندة،\nوأخرج من طريق عمر بن قيس المكيّ، عن عطاء، عن عبيد بن عمر: قال: حدثتني عائشة قالت: سمعت سبيعة القرشية قالت: يا رسول اللَّه، إني زنيت فأقم عليّ حدّ اللَّه. قال: «اذهبي حتّى تضعي ما في بطنك»، فلما وضعت أتته، ولو تركت ما سأل عنها، فقال: «اذهبي فأرضعيه حتّى تفطميه»، فلما فطمته أتته فقالت: من لهذا الصبي؟\nفقال رجل من الأنصار: أنا، فقال: «اذهبوا بها فارجموها» .\nقلت: سنده ضعيف، وأخلق بها إن ثبت خبرها أن تكون هي التي قبلها.",
+      "english": "11282—Sabi'a al-Qurashiyya [1]\n\nIbn Manda mentioned her and transmitted, through Umar ibn Qays al-Makki, from Ata, from Ubayd ibn Umar, who said: Aisha related to me, saying: I heard Sabi'a al-Qurashiyya say: “O Messenger of Allah, I have committed unlawful sexual intercourse, so carry out Allah's prescribed punishment upon me.” He said: “Go until you deliver what is in your womb.” When she had delivered, she came to him; had she left the matter there, he would not have asked about her. He said: “Go and nurse him until you wean him.” When she had weaned him, she came to him and said: “Who will take responsibility for this boy?” A man of the Ansar said: “I will.” The Prophet then said: “Take her away and stone her.”\n\nI say: Its chain of transmission is weak. If her account is established, it is most likely that she is the woman in the preceding entry.",
+      "arabic_sha256": "98e1973f1ea6ba60417ca136e187110e1a1639c0432815fc8ff5aa6cc7159d09",
+      "english_sha256": "e541840d7b22abb428a93d8fb465bc86a52145b344f72ae87229d523ad594b6d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عمر",
+      "english": "Ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "سبيعة القرشية",
+      "english": "Sabi'a al-Qurashiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن قيس المكي",
+      "english": "Umar ibn Qays al-Makki",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاء",
+      "english": "Ata",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد بن عمر",
+      "english": "Ubayd ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

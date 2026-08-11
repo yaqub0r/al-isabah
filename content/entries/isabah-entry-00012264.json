@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012264",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12264,
+  "title": {
+    "english": "Umm Ma'bad bint 'Abd Allah ibn 'Umar ibn Haram al-Ansariyya",
+    "arabic_observed": "أم معبد بنت عبد اللَّه"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012264-segment-0001",
+      "volume": 8,
+      "scan_page": 478,
+      "printed_page": 477,
+      "reader_page": 4390,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4390",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0478:212e528550967186",
+      "arabic": "١٢٢٦٤- أم معبد بنت عبد اللَّه\nبن عمر بن حرام الأنصارية.\nأخت جابر بن عبد اللَّه. ذكرها الواقدي.",
+      "english": "12264—Umm Ma'bad bint 'Abd Allah ibn 'Umar ibn Haram al-Ansariyya\n\nThe sister of Jabir ibn 'Abd Allah. al-Waqidi mentioned her.",
+      "arabic_sha256": "d1dc5a78c0e2399f13f5f80c6a17eac0ddd3673efcfb4e60a98315074ad7dced",
+      "english_sha256": "61d4f70be188ff6d0916a391c2e958ea110ca4349cff01741a32144b549c3713",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله",
+      "english": "'Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم معبد بنت عبد الله بن عمر بن حرام الأنصارية",
+      "english": "Umm Ma'bad bint 'Abd Allah ibn 'Umar ibn Haram al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر بن عبد الله",
+      "english": "Jabir ibn 'Abd Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

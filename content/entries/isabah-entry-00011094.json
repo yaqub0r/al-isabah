@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011094",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11094,
+  "title": {
+    "english": "Khadijah bint Ubayda ibn al-Harith ibn Abd al-Muttalib, al-Muttalibiyya",
+    "arabic_observed": "خديجة بنت عبيدة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011094-segment-0001",
+      "volume": 8,
+      "scan_page": 105,
+      "printed_page": 104,
+      "reader_page": 4017,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4017",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0105:5cd85408b4aa9b5e",
+      "arabic": "١١٠٩٤- خديجة بنت عبيدة\nبن الحارث بن عبد المطلب المطلبية.\nذكرها ابن سعد في ترجمة والدها، واستشهد أبوها قرب بدر، فعاش قليلا، ومات وهو راجع إلى المدينة بالصفراء.",
+      "english": "11094—Khadijah bint Ubayda ibn al-Harith ibn Abd al-Muttalib, al-Muttalibiyya\n\nIbn Sa'd mentioned her in the biography of her father. Her father was mortally wounded near Badr, survived for a short while, and then died at al-Safra while returning to Medina.",
+      "arabic_sha256": "155092f4edc975c01f19dba8a3655d54953dd6a0299adb66c0ef3ff4b71ac33b",
+      "english_sha256": "3d2d46e1f6a1425fdb35136548a4ae226cf1a99ad8902dd6abe5eeee9273ca50",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيدة بن الحارث بن عبد المطلب",
+      "english": "Ubayda ibn al-Harith ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "الصفراء",
+      "english": "al-Safra",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

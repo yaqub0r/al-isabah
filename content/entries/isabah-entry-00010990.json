@@ -1,0 +1,134 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010990",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10990,
+  "title": {
+    "english": "Jamila bint Abi Jahl ibn Hisham ibn al-Mughira al-Makhzumiyya[2]",
+    "arabic_observed": "جميلة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010990-segment-0001",
+      "volume": 8,
+      "scan_page": 69,
+      "printed_page": 68,
+      "reader_page": 3981,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3981",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0069:c325acd43448be8b",
+      "arabic": "١٠٩٩٠- جميلة\nبنت أبي جهل بن هشام بن المغيرة المخزومية «٢» .\nروت عن النبيّ ﷺ. روى عنها زوجها،\nأخرج حديثها ابن مندة من طريق سماك بن حرب، عن عبد اللَّه بن عميرة، عن زوج بنت أبي جهل، عن بنت أبي جهل، واسمها جميلة، قالت: مرّ بنا النبيّ ﷺ فاستسقى فسقيته، وقال: «خير أمّتي قرني ثمّ الّذين يلونهم» .\nوأخرجه ابن أبي عاصم من هذا الوجه، وزاد: فقمت إلى كوز فسقيته، وسأله رجل\n(١) أخرجه أحمد في المسند ٢/ ١٨ والدارميّ في الاستئذان ٢/ ٢٩٥.\n(٢) أعلام النساء ١/ ١٧٤، تجريد أسماء الصحابة ٢/ ٢٥٥/ ٢٥٦.",
+      "english": "10990—Jamila bint Abi Jahl ibn Hisham ibn al-Mughira al-Makhzumiyya[2]\n\nShe related from the Prophet—may Allah bless him and grant him peace. Her husband related from her.\n\nIbn Manda transmitted her hadith through Simak ibn Harb, from Abd Allah ibn Umayra, from the husband of the daughter of Abu Jahl, from the daughter of Abu Jahl—whose name was Jamila—who said: The Prophet—may Allah bless him and grant him peace—passed by us and asked for water, so I gave him a drink. He said, “The best of my community is my generation, then those who come after them.”\n\nIbn Abi Asim transmitted it by this same route and added: “I rose, went to a pitcher, and gave him a drink.” A man asked him—\n\n(1) Transmitted by Ahmad in Musnad Ahmad, 2/18, and by al-Darimi in al-Isti'dhan, 2/295.\n\n(2) A'lam al-Nisa', 1/174; al-Tajrid, 2/255/256.",
+      "arabic_sha256": "8f7a99b719b30d90a0b09515816ecb17f7064e670ce4c0686a26e363d9d51d2a",
+      "english_sha256": "0b17198102651e9711427a6f8fad445e97a593cd1ab7e7c680f6c2238356e660",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010990-segment-0002",
+      "volume": 8,
+      "scan_page": 70,
+      "printed_page": 69,
+      "reader_page": 3982,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3982",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0070:715e8391ef9c3d9a",
+      "arabic": "عليه ثوبان أصفران، فقال: تبعد اللَّه لا تشرك به شيئا، وتقيم الصلاة، وتؤتي الزكاة، وتصل الرحم «١» .\nوقيل: إنها التي خطبها عليّ، والمحفوظ أنها جويرية.",
+      "english": "who was wearing two yellow garments. He said: “Worship Allah, associating nothing with Him; establish the prayer, pay zakat, and maintain ties of kinship.”¹\n\nIt is also said that she was the woman to whom Ali proposed marriage, but the reliably preserved account is that it was Juwayriyya.",
+      "arabic_sha256": "9c797438f5de385b9c86533851420713b1f067c773e33a75429ee6a204fe9de8",
+      "english_sha256": "e0d70d81afec92d0c462e3eb6ab6cc68c6e895e5e7f9d498c25227e0444d2564",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "جميلة",
+      "english": "Jamila",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة بنت أبي جهل بن هشام بن المغيرة المخزومية",
+      "english": "Jamila bint Abi Jahl ibn Hisham ibn al-Mughira al-Makhzumiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "سماك بن حرب",
+      "english": "Simak ibn Harb",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عميرة",
+      "english": "Abd Allah ibn Umayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدارميّ",
+      "english": "al-Darimi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستئذان",
+      "english": "al-Isti'dhan",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "جويرية",
+      "english": "Juwayriyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

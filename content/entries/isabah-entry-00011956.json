@@ -1,0 +1,68 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011956",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11956,
+  "title": {
+    "english": "Umm Hibban, with a kasra on the ha, bint 'Amir ibn Nabi, the sister of 'Uqba.⁴",
+    "arabic_observed": "أم حبّان:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011956-segment-0001",
+      "volume": 8,
+      "scan_page": 373,
+      "printed_page": 372,
+      "reader_page": 4285,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4285",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0373:8358d8799676c9a7",
+      "arabic": "١١٩٥٦- أم حبّان:\nبالكسر، بنت عامر بن نابي، أخت عقبة «٤» .\nتقدّم نسبها مع أخيها ذكرها ابن سعد في المبايعات، وقال: أمها فكيهة بنت السّكن بن زيد السلميّة، تزوجها حرام بن محيّصة، وقال: إنها التي استفتى لها أخوها عقبة بن عامر عن المنذر، وليس كذلك، لأن عقبة الّذي استفتى هو ابن عامر الجهنيّ، وهذا الأنصاريّ لا رواية له، وإنما اشتبه على من زعم ذلك باتفاق الاسم واسم الأب.",
+      "english": "11956—Umm Hibban, with a kasra on the ha, bint 'Amir ibn Nabi, the sister of 'Uqba.⁴\n\nHer lineage was given previously together with that of her brother. Ibn Sa'd mentioned her among the women who pledged allegiance and said: Her mother was Fukayha bint al-Sakan ibn Zayd al-Sulamiyya. Haram ibn Muhayyisa married her. He also said that she was the woman on whose behalf her brother, 'Uqba ibn 'Amir, sought a legal opinion concerning al-Mundhir. This is not so, because the 'Uqba who sought that legal opinion was Ibn 'Amir al-Juhani, whereas this man was an Ansari from whom no reports are transmitted. Whoever made that claim was confused by the agreement between the two men's names and their fathers' names.",
+      "arabic_sha256": "3b6a89d63e2f63c59819bab039aa3ae55167c9764731d12bc245b590e741fd1e",
+      "english_sha256": "98930ea6ca5ef92af8e71f7c81760cca6dfcd34c540bf71ef696b94f286ad2c7",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "فكيهة بنت السكن بن زيد السلمية",
+      "english": "Fukayha bint al-Sakan ibn Zayd al-Sulamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "حرام بن محيصة",
+      "english": "Haram ibn Muhayyisa",
+      "kind": "person"
+    },
+    {
+      "arabic": "المنذر",
+      "english": "al-Mundhir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source_uncertainty",
+      "arabic_span": "استفتى لها أخوها عقبة بن عامر عن المنذر",
+      "explanation": "The canonical Arabic literally reads “concerning al-Mundhir,” and the final translation follows it. The Urdu witness instead conveys “concerning the vow,” strongly suggesting that النذر may have been intended, but no supplied Arabic witness corroborates that reading.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0373:8358d8799676c9a7"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

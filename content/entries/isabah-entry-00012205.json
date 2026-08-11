@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012205",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12205,
+  "title": {
+    "english": "Umm al-Fadl bint Hamza ibn Abd al-Muttalib ibn Hashim. (1)",
+    "arabic_observed": "أم الفضل بنت حمزة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012205-segment-0001",
+      "volume": 8,
+      "scan_page": 452,
+      "printed_page": 451,
+      "reader_page": 4364,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4364",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0452:d98ee86554194ea0",
+      "arabic": "١٢٢٠٥- أم الفضل بنت حمزة\nبن عبد المطلب بن هاشم «١» . قال أبو عمر: روى عنها عبد اللَّه بن شداد أنها قالت: توفي مولى لنا وترك ابنة وأختا، فأتيا رسول اللَّه ﵌، فأعطى الابنة النصف، وأعطى الأخت النصف، كذا قال.\nوقد أورد الحديث ابن مندة من طريقين: عن حارثة بن يزيد الجعفي- أحد الضعفاء، عن الحكم بن عيينة، عن عبد اللَّه بن شداد، عن أم الفضل بنت حمزة: قالت: مات مولى لها أعتقته وترك ابنته، وأن النبي ﵌ قسم ميراثه بين أم الفضل وابنته نصفين.",
+      "english": "12205 — Umm al-Fadl bint Hamza ibn Abd al-Muttalib ibn Hashim. (1)\n\nAbu Umar said: Abd Allah ibn Shaddad narrated from her that she said, “A freedman of ours died and left a daughter and a sister. The two came to the Messenger of Allah (may Allah bless him and grant him peace), and he gave the daughter one half and the sister one half.” That is what he said.\n\nIbn Manda cited the hadith through two routes: from Haritha ibn Yazid al-Ju'fi—one of the weak narrators—from al-Hakam ibn Uyayna, from Abd Allah ibn Shaddad, from Umm al-Fadl bint Hamza, who said: A freedman of hers whom she had manumitted died and left his daughter, and the Prophet (may Allah bless him and grant him peace) divided his estate equally between Umm al-Fadl and his daughter.",
+      "arabic_sha256": "1e6ba6fe9d659f634dbeee3fc20ca0f2caa9182bd88e71116f1b7f1fdeae8f40",
+      "english_sha256": "541d1e3ef91e902bfe991cac9254d30cc8b369bc84a07ce8b79daf1c423839a2",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم الفضل",
+      "english": "Umm al-Fadl",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الفضل بنت حمزة بن عبد المطلب بن هاشم",
+      "english": "Umm al-Fadl bint Hamza ibn Abd al-Muttalib ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن شداد",
+      "english": "Abd Allah ibn Shaddad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "حارثة بن يزيد الجعفي",
+      "english": "Haritha ibn Yazid al-Ju'fi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحكم بن عيينة",
+      "english": "al-Hakam ibn Uyayna",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

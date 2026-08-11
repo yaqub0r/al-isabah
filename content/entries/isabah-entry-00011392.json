@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011392",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11392,
+  "title": {
+    "english": "al-Shifa bint Abd al-Rahman",
+    "arabic_observed": "الشفاء بنت عبد الرحمن"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011392-segment-0001",
+      "volume": 8,
+      "scan_page": 208,
+      "printed_page": 207,
+      "reader_page": 4120,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4120",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0208:6c4b2990b5b78fb8",
+      "arabic": "١١٣٩٢- الشفاء بنت عبد الرحمن\nالأنصارية «٣»، مدنية.\nروى عنها أبو سلمة بن عبد الرّحمن، ذكرها أبو عمر مختصرا، وذكرها ابن مندة كذلك، لكن لم يقل أنصارية ولا مدنية، وزاد: أراها الأولى، يعني الشفاء بنت عبد اللَّه بن سليمان بن أبي حثمة، وهو كما ظنّ. والحديث المشار إليه هو الّذي ذكره في ترجمة الشفاء بنت عبد اللَّه، من طريق الزهري عن أبي سلمة بن عبد الرحمن عنها في قصة شرحبيل بن حسنة، كأن بعض الرواة غلط في اسم أبيها، فقال عبد الرحمن، ووهم من نسبها أنصارية.",
+      "english": "11392 — al-Shifa bint Abd al-Rahman\n\nThe Ansari woman (3), a resident of Medina.\n\nAbu Salama ibn Abd al-Rahman transmitted from her. Abu Umar mentioned her briefly, and Ibn Manda did likewise, though he did not call her an Ansari or a resident of Medina. He added: “I believe her to be the former one,” meaning al-Shifa bint Abd Allah ibn Sulayman ibn Abi Hathma. It is as he thought. The report to which he referred is the one he cited in the biography of al-Shifa bint Abd Allah, through al-Zuhri, from Abu Salama ibn Abd al-Rahman, from her, concerning the story of Shurahbil ibn Hasana. It appears that one of the transmitters erred regarding her father's name and called him Abd al-Rahman, while whoever ascribed her to the Ansar was mistaken.",
+      "arabic_sha256": "cf5ca50406d63ce58e86edac1395acad48c05176c3df1b74d863f3af1cdfdec6",
+      "english_sha256": "a0c1eff58bcccffb94e10b0589ea21d90fad4f3cf3f2f860b7bfd7a468eade5e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الشفاء بنت عبد الرحمن",
+      "english": "al-Shifa bint Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "مدنية",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو سلمة بن عبد الرحمن",
+      "english": "Abu Salama ibn Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشفاء بنت عبد اللَّه بن سليمان بن أبي حثمة",
+      "english": "al-Shifa bint Abd Allah ibn Sulayman ibn Abi Hathma",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "شرحبيل بن حسنة",
+      "english": "Shurahbil ibn Hasana",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011848",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11848,
+  "title": {
+    "english": "Hind bint al-Harith ibn Abd al-Muttalib ibn Hashim",
+    "arabic_observed": "هند بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011848-segment-0001",
+      "volume": 8,
+      "scan_page": 343,
+      "printed_page": 342,
+      "reader_page": 4255,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4255",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0343:17a67b3274f51657",
+      "arabic": "١١٨٤٨- هند بنت الحارث\nبن عبد المطّلب بن هاشم، بنت عم النّبي ﵌، وأنشد لها محمد بن سعد في الوفاة النبويّة مرثية.",
+      "english": "11848—Hind bint al-Harith ibn Abd al-Muttalib ibn Hashim\n\nA paternal cousin of the Prophet—may Allah bless him and grant him peace. Muhammad ibn Sa'd quoted an elegy of hers on the Prophet's death.",
+      "arabic_sha256": "fd5a4b25906af0a5c9b6d27c9ca459618ac339cb73825df872f52b5c08769e09",
+      "english_sha256": "d627c6d131d37a6a661257837f73c5cc78283111d8adba8cbddb86b38d9681ea",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Muhammad ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند بنت الحارث بن عبد المطلب بن هاشم",
+      "english": "Hind bint al-Harith ibn Abd al-Muttalib ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن سعد",
+      "english": "Muhammad ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

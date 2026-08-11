@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010765",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10765,
+  "title": {
+    "english": "Amina bint Abi al-Khiyar,",
+    "arabic_observed": "آمنة بنت أبي الخيار ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010765-segment-0001",
+      "volume": 8,
+      "scan_page": 5,
+      "printed_page": 4,
+      "reader_page": 3917,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3917",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0005:f37adfaaa723fce4",
+      "arabic": "١٠٧٦٥- آمنة بنت أبي الخيار ،\nزوج مطيع بن الأسود، وهي والدة عبد اللَّه بن مطيع، وقيل هي أميمة، بميمين مصغرة.",
+      "english": "10765—Amina bint Abi al-Khiyar,\nthe wife of Muti' ibn al-Aswad. She was the mother of Abdullah ibn Muti'. It is also said that she was Umayma—the diminutive form, spelled with two m's.",
+      "arabic_sha256": "dbc036c59ae96b331484697904016413a6e112972979da144e1473f72d92320d",
+      "english_sha256": "b8cd2d6a03dd1751521f37859f5e0cf2f69fa83de6c561d13449b6af6a76c012",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "آمنة بنت أبي الخيار",
+      "english": "Amina bint Abi al-Khiyar",
+      "kind": "person"
+    },
+    {
+      "arabic": "مطيع بن الأسود",
+      "english": "Muti' ibn al-Aswad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن مطيع",
+      "english": "Abdullah ibn Muti'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة",
+      "english": "Umayma bint Abi al-Khiyar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة",
+      "english": "Umayma bint Abi Sufyan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

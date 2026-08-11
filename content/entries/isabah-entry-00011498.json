@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011498",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11498,
+  "title": {
+    "english": "'Amra bint Haritha",
+    "arabic_observed": "عمرة بنت حارثة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011498-segment-0001",
+      "volume": 8,
+      "scan_page": 244,
+      "printed_page": 243,
+      "reader_page": 4156,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4156",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0244:348f5494feef74c2",
+      "arabic": "١١٤٩٨- عمرة بنت حارثة\nبن النعمان الأنصارية، من بني مالك بن النجار.\nقال ابن سعد: تزوجها قيس بن عمرو بن سهل بن ثعلبة، من بني عمرو بن عوف، وأسلمت وبايعت.",
+      "english": "11498—'Amra bint Haritha\nibn al-Nu'man, the Ansari woman of Banu Malik ibn al-Najjar.\n\nIbn Sa'd said: Qays ibn 'Amr ibn Sahl ibn Tha'laba, of Banu 'Amr ibn 'Awf, married her. She embraced Islam and gave the pledge of allegiance.",
+      "arabic_sha256": "9191e58c86c795bdab754c9053ea56132947af659b9e6cca45b9ae5985ad2699",
+      "english_sha256": "98a6b5daf6ff3742706654cf93021f3355832cadf1d9053f16917efc1a289c1f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني مالك بن النجار",
+      "english": "Banu Malik ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "قيس بن عمرو بن سهل بن ثعلبة",
+      "english": "Qays ibn 'Amr ibn Sahl ibn Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عمرو بن عوف",
+      "english": "Banu 'Amr ibn 'Awf",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010977",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10977,
+  "title": {
+    "english": "Ja'da bint Ubayd",
+    "arabic_observed": "جعدة بنت عبيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010977-segment-0001",
+      "volume": 8,
+      "scan_page": 64,
+      "printed_page": 63,
+      "reader_page": 3976,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3976",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0064:04908af676ed7379",
+      "arabic": "١٠٩٧٧- جعدة بنت عبيد\nبن ثعلبة بن غنم بن مالك بن النجار الأنصارية «٢» .\nاستدركها أبو عليّ الجيانيّ على أبي عمر، فنقل عن العدويّ في نسب الأنصار- أن النبي ﷺ كان يأتي إلى منزلها ويأكل عندها، قال: وهي أم حارثة بن النعمان وأخيه الحارث بن الحباب بن الأرقم، وأخوها عمرو بن عبيد بن ثعلبة له صحبة.",
+      "english": "10977—Ja'da bint Ubayd\nibn Tha'laba ibn Ghanm ibn Malik ibn al-Najjar, the Ansari woman (2).\nAbu Ali al-Jayyani supplied her as an omission from Abu Umar's work. He quoted al-Adawi in Nasab al-Ansar as stating that the Prophet, may Allah bless him and grant him peace, used to come to her home and eat there. He said: She was the mother of Haritha ibn al-Nu'man and of his brother al-Harith ibn al-Hubab ibn al-Arqam. Her brother Amr ibn Ubayd ibn Tha'laba was a Companion.",
+      "arabic_sha256": "d36c2885d0f6bd8b58af7e81a0e208af63c9e2e305a73de3ed7f3609bc75260b",
+      "english_sha256": "969b0eb8e4760645ff6e043c0301fed0619f9ad9740968377fa29f54b981ccc8",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو عليّ الجيانيّ",
+      "english": "Abu Ali al-Jayyani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "العدويّ",
+      "english": "al-Adawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "نسب الأنصار",
+      "english": "Nasab al-Ansar",
+      "kind": "work"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "حارثة بن النعمان",
+      "english": "Haritha ibn al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن الحباب بن الأرقم",
+      "english": "al-Harith ibn al-Hubab ibn al-Arqam",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن عبيد بن ثعلبة",
+      "english": "Amr ibn Ubayd ibn Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحباب بن الأرقم",
+      "english": "al-Hubab ibn al-Arqam",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

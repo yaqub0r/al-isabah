@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011779",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11779,
+  "title": {
+    "english": "Mandus bint Ubada",
+    "arabic_observed": "مندوس بنت عبادة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011779-segment-0001",
+      "volume": 8,
+      "scan_page": 322,
+      "printed_page": 321,
+      "reader_page": 4234,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4234",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0322:4ff0546c2e40fb4f",
+      "arabic": "١١٧٧٩- مندوس بنت عبادة\nبن دليم بن حارثة «٣» بن أبي خزيمة الأنصاريّة الخزرجيّة. أخت سيد الخزرج سعد بن عبادة. ذكرها ابن حبيب في المبايعات.",
+      "english": "11779—Mandus bint Ubada\nibn Dulaym ibn Haritha[3] ibn Abi Khuzayma, the Ansari woman of the Khazraj. She was the sister of the chief of the Khazraj, Sa'd ibn Ubada. Ibn Habib mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "6d6686e0ac39ea03fcbfbb547bd459f3f13057375ea38785365246d21f47ebee",
+      "english_sha256": "234248596d2d87c3cf167e4c8adec02af4628457d72366864830aab354661a3a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصاريّة",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الخزرج",
+      "english": "al-Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن عبادة",
+      "english": "Sa'd ibn Ubada",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

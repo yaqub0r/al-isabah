@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011894",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11894,
+  "title": {
+    "english": "Umm Anas al-Ansariyya⁴",
+    "arabic_observed": "أم أنس الأنصاريّة «٤»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011894-segment-0001",
+      "volume": 8,
+      "scan_page": 357,
+      "printed_page": 356,
+      "reader_page": 4269,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4269",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0357:3baf653154db3ecb",
+      "arabic": "١١٨٩٤- أم أنس الأنصاريّة «٤»:\nوليس أنس بن مالك.\nأخرج الطّبرانيّ من طريق عنبسة «٥» بن عبد الرّحمن أحد الضّعفاء، عن محمد بن زاذان، عن أم سعد- امرأة زيد بن ثابت، عن أم أنس، قالت: قلت يا رسول اللَّه إن عيني تغلبني عن عشاء الآخرة. قال: «أعجليها يا أمّ أنس إذا اللّيل [...] كلّ واد فقد [...]\nإذا حلّ وقت الصّلاة فصلّي ولا إثم عليك» .",
+      "english": "11894 — Umm Anas al-Ansariyya⁴\n\nShe is not the mother of Anas ibn Malik.\n\nal-Tabarani transmitted, by way of 'Anbasa⁵ ibn 'Abd al-Rahman—one of the weak transmitters—from Muhammad ibn Zadhan, from Umm Sa'd, the wife of Zayd ibn Thabit, from Umm Anas, who said: I said, “O Messenger of Allah, my eyes overcome me and cause me to miss the latter evening prayer.” He said: “Perform it early, O Umm Anas. When night [has spread through] every valley, [the time for prayer has arrived]; pray, and there is no sin upon you.”",
+      "arabic_sha256": "09b2632c348f534637510d1c0f8611722cca505d8da5b97dd19de39e92540d2e",
+      "english_sha256": "d44c6e54b1e35dd17be741566d2b93ed9cfe4664d05428d24b4a961dd90f1526",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم أنس الأنصاريّة",
+      "english": "Umm Anas al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس بن مالك",
+      "english": "Anas ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطّبرانيّ",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن زاذان",
+      "english": "Muhammad ibn Zadhan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعد",
+      "english": "Umm Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن ثابت",
+      "english": "Zayd ibn Thabit",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

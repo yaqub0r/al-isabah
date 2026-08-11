@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011913",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11913,
+  "title": {
+    "english": "Umm Bishr:",
+    "arabic_observed": "أم بشر:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011913-segment-0001",
+      "volume": 8,
+      "scan_page": 365,
+      "printed_page": 364,
+      "reader_page": 4277,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4277",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0365:3bb0df53e85f4dcb",
+      "arabic": "١١٩١٣- أم بشر:\nزوج البراء بن معرور. مضت في خليدة.",
+      "english": "11913—Umm Bishr:\n\nThe wife of al-Bara ibn Ma'rur. She was discussed above under Khulayda.",
+      "arabic_sha256": "cc9203e3980e2a5df1aafc2ab786b75213534f8e90171082873d08415472d3c0",
+      "english_sha256": "dca67efa6fd8a3cef01dc515f612ce0cbe202d0e4c5e36cd2679caf6dc93bdd5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "البراء بن معرور",
+      "english": "al-Bara ibn Ma'rur",
+      "kind": "person"
+    },
+    {
+      "arabic": "خليدة",
+      "english": "Khulayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم بشر زوج البراء بن معرور",
+      "english": "Khulayda",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -3,11 +3,11 @@
   "source_repository": "yaqub0r/firstlight",
   "source_revision": "2689ff40",
   "source_worktree_state": "dirty",
-  "scope_sha256": "59a64f1f045044d26ada6690ca4277732e541f29e777eb30dc049b9ecaf69973",
-  "inventory_sha256": "8ea9b589941dd35224faaf49ecd0cc18e87dfa9e154ae6f43d06cc92971c0a1c",
+  "scope_sha256": "3b6d53acbd85cfc8e7bd11826c30fe2df128bcdcf43d40590f60f395074cfef5",
+  "inventory_sha256": "15e5e7fc96f46d99db8e344bc57239d1e5205c71e588b7db11e9e21edba91c58",
   "summary": {
-    "file_count": 167,
-    "byte_size": 478653164,
+    "file_count": 168,
+    "byte_size": 478657987,
     "by_role": {
       "candidate_acquisition_pipeline": {
         "file_count": 2,
@@ -15,11 +15,15 @@
       },
       "candidate_translation_pipeline": {
         "file_count": 54,
-        "byte_size": 566539
+        "byte_size": 566374
+      },
+      "canonical_schema": {
+        "file_count": 1,
+        "byte_size": 5364
       },
       "firstlight_downstream_integration": {
         "file_count": 5,
-        "byte_size": 443784
+        "byte_size": 443408
       },
       "immutable_source_and_witness_evidence": {
         "file_count": 50,
@@ -353,6 +357,12 @@
       "role": "firstlight_downstream_integration",
       "byte_size": 155275,
       "sha256": "542057aa642ca357ad7d6de5528e13595966a0e8fa52c67067366e040a1e90cc"
+    },
+    {
+      "path": "docs/narrative/sources/schemas/source-bundle-v1.schema.json",
+      "role": "canonical_schema",
+      "byte_size": 5364,
+      "sha256": "8eb004ab3e8e776889e45ec919c4748eafa8a5df10cd83908b1ffeeaae7798fb"
     },
     {
       "path": "docs/narrative/sources/selected-editions-v1.json",
@@ -693,8 +703,8 @@
     {
       "path": "firstlight-research/scripts/translation/README.md",
       "role": "candidate_translation_pipeline",
-      "byte_size": 15491,
-      "sha256": "aa739b66331cf137ba7e69224d2cb444c336aede2c52bf82875ec605229c7786"
+      "byte_size": 15326,
+      "sha256": "00fc07363eddc4ba8a34aace669b18fdbf0c3dc4cbef685a7ef0dc190c7d146e"
     },
     {
       "path": "firstlight-research/scripts/translation/align_usul_volume.py",
@@ -1017,8 +1027,8 @@
     {
       "path": "game/web/interface-v2/app.js",
       "role": "firstlight_downstream_integration",
-      "byte_size": 268507,
-      "sha256": "724121bb2e86d38fedd8e532e2df83ba351732e4824b91638d351beaaf0125d0"
+      "byte_size": 268131,
+      "sha256": "e51aeac763854284f2eb26ff95569cd4710b81674fcd92d2c68f5aee6e293984"
     },
     {
       "path": "game/web/tests/interface-v2-source-review.test.mjs",

@@ -1,0 +1,242 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011031",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11031,
+  "title": {
+    "english": "Habiba bint Abu Sufyan (3).",
+    "arabic_observed": "حبيبة بنت أبي سفيان «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011031-segment-0001",
+      "volume": 8,
+      "scan_page": 81,
+      "printed_page": 80,
+      "reader_page": 3993,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3993",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0081:ffbb46b33cd0e928",
+      "arabic": "١١٠٣١- حبيبة بنت أبي سفيان «٣»\n. قال أبو عمر، قاله أبان بن صمعة، سمع محمد بن سيرين يقول: حدثتني حبيبة بنت أبي سفيان- أنها سمعت رسول اللَّه ﷺ يقول فيمن مات له ثلاثة من الولد. لم يرو عنها غير محمد بن سيرين، ولا تعرف لأبي سفيان ابنة يقال لها حبيبة. والّذي أظنّ أنها حبيبة بنت أم حبيبة بنت أبي سفيان التي روى حديثها الزهريّ، عن عروة، عن زينب بنت أبي سلمة، عنها عن ابنها، عن زينب بنت جحش في ردم يأجوج ومأجوج، وأبوها عبيد اللَّه بن جحش مات بأرض الحبشة.\nوذكرها موسى بن عقبة فيمن هاجر إلى الحبشة، قال: وتنصر أبوها هناك. انتهى.\nوليس كما ظن، بل هذه حبيبة بنت أبي سفيان أخرى كانت تخدم عائشة- وليس أبوها\n(١) الثقات ٣/ ١٠٠، تجريد أسماء الصحابة ٢/ ٢٥٧.\n(٢) أسد الغابة ت ٦٨٣٥.\n(٣) أسد الغابة ت ٦٨٣٦، الاستيعاب ت ٣٣٣٥.",
+      "english": "11031 — Habiba bint Abu Sufyan (3).\n\nAbu Umar said: Aban ibn Sam'a gave her name thus. He heard Muhammad ibn Sirin say: “Habiba bint Abu Sufyan related to me that she heard the Messenger of Allah—may Allah bless him and grant him peace—speak concerning one whose three children had died.” No one other than Muhammad ibn Sirin transmitted from her, and no daughter of Abu Sufyan named Habiba is known.\n\nWhat I think is that she was Habiba bint Umm Habiba bint Abu Sufyan, whose hadith al-Zuhri transmitted from Urwa, from Zaynab bint Abu Salama, from her, from her son, from Zaynab bint Jahsh, concerning the barrier of Gog and Magog. Her father, Ubayd Allah ibn Jahsh, died in the land of Abyssinia.\n\nMusa ibn Uqba mentioned her among those who emigrated to Abyssinia, saying: Her father converted to Christianity there. End quote.\n\nIt is not as he supposed. Rather, this was another Habiba bint Abu Sufyan who used to serve Aisha—and her father was not—\n\n(1) al-Thiqat 3/100; al-Tajrid 2/257.\n\n(2) Usd al-Ghaba, entry 6835.\n\n(3) Usd al-Ghaba, entry 6836; al-Isti'ab, entry 3335.",
+      "arabic_sha256": "afae7b2493f39d0f798fcfa4aeb116f96e76363091f84dce03018304487250d5",
+      "english_sha256": "06cc6b885e7c52c3314d5fae37a769d167c7ac379fad359f580073611e2f4d50",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011031-segment-0002",
+      "volume": 8,
+      "scan_page": 82,
+      "printed_page": 81,
+      "reader_page": 3994,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3994",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0082:c4acf2c80d13d83c",
+      "arabic": "أبا سفيان هو ابن حرب والد أم حبيبة أم المؤمنين، بل هو أبو سفيان آخر لا يعرف نسبه.\nوقد أخرج حديثها ابن مندة بعلو، من طريق النضر بن شميل، عن أبان بن صمعة:\nسمعت ابن سيرين يقول: حدثتني حبيبة أنها كانت في بيت عائشة قاعدة، فدخل رسول اللَّه ﷺ، فقال: «ما من مسلمين يموت لهما ثلاثة أطفال إلّا أدخلهما اللَّه الجنّة» «١» . وقال: رواه الأنصاري وغيره.\nوأخرجه الحسن بن سفيان في مسندة: من طريق سهل بن يوسف، عن أبان مطولا.\nوقال في آخره: «ألا قيل: ادخلوا الجنّة، فيقولون: حتّى يدخلها أبوانا، فيقال في الثّالثة أو الرّابعة: ادخلوا أنتم وآباؤكم»: قال: فقالت لي عائشة: أسمعت؟ قلت: نعم. قالت:\nفاحفظي إذا.",
+      "english": "Her father was not Abu Sufyan ibn Harb, the father of Umm Habiba, Mother of the Believers; rather, he was another Abu Sufyan whose lineage is unknown.\n\nIbn Manda transmitted her hadith through a high chain of transmission, by way of al-Nadr ibn Shumayl, from Aban ibn Sam'a:\n\n“I heard Ibn Sirin say: Habiba related to me that she was sitting in Aisha's house when the Messenger of Allah, may Allah bless him and grant him peace, entered and said: ‘There are no two Muslims whose three young children die but that Allah will admit them both into Paradise.’”¹\n\nHe said: “al-Ansari and others narrated it.”\n\nal-Hasan ibn Sufyan also transmitted it at length in his Musnad, by way of Sahl ibn Yusuf, from Aban. At its end he said: “Indeed, they will be told, ‘Enter Paradise.’ They will say, ‘Not until our parents enter it.’ Then, on the third or fourth occasion, they will be told, ‘Enter, you and your parents.’” He said: “Aisha said to me, ‘Did you hear?’ I said, ‘Yes.’ She said, ‘Then remember it.’”",
+      "arabic_sha256": "b825b93d35ff549444a32189bc9b236c32bd2699212c5dd452fd002edc85e42f",
+      "english_sha256": "6f83dbe4c3a6fbb3238d4e5398e18cdd0810a8529e8da95b40efc8d0e9471520",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حبيبة بنت أم حبيبة",
+      "english": "Habiba bint Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة بنت أبي سفيان",
+      "english": "Umm Habiba bint Abu Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة بنت أبي سفيان",
+      "english": "Habiba bint Abu Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبان بن صمعة",
+      "english": "Aban ibn Sam'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن سيرين",
+      "english": "Muhammad ibn Sirin",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة بنت أم حبيبة بنت أبي سفيان",
+      "english": "Habiba bint Umm Habiba bint Abu Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهريّ",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت أبي سلمة",
+      "english": "Zaynab bint Abu Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت جحش",
+      "english": "Zaynab bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "يأجوج",
+      "english": "Gog",
+      "kind": "other"
+    },
+    {
+      "arabic": "مأجوج",
+      "english": "Magog",
+      "kind": "other"
+    },
+    {
+      "arabic": "عبيد اللَّه بن جحش",
+      "english": "Ubayd Allah ibn Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "موسى بن عقبة",
+      "english": "Musa ibn Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبا سفيان",
+      "english": "Abu Sufyan ibn Harb",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سفيان آخر",
+      "english": "Abu Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "النضر بن شميل",
+      "english": "al-Nadr ibn Shumayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سيرين",
+      "english": "Ibn Sirin",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة",
+      "english": "Habiba bint Abi Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجنّة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "الأنصاري",
+      "english": "al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن سفيان",
+      "english": "al-Hasan ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهل بن يوسف",
+      "english": "Sahl ibn Yusuf",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "textual_witness_discrepancy",
+      "arabic_span": "عنها عن ابنها",
+      "explanation": "The canonical al-Isabah text explicitly reads “from her, from her son,” whereas the collateral passages in Usd al-Ghaba and al-Isti'ab read “from her mother.” Because those works are not manuscripts of al-Isabah and the canonical Arabic is authoritative, the final translation retains “her son”; whether the canonical wording reflects textual corruption cannot be settled from the supplied evidence.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0081:ffbb46b33cd0e928"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

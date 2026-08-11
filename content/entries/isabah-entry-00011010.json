@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011010",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11010,
+  "title": {
+    "english": "Juwairiya bint al-Mujallal,",
+    "arabic_observed": "جويرية بنت المجلل ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011010-segment-0001",
+      "volume": 8,
+      "scan_page": 75,
+      "printed_page": 74,
+      "reader_page": 3987,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3987",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0075:de20eb9f511ed418",
+      "arabic": "١١٠١٠- جويرية بنت المجلل ،\nامرأة حاطب بن الحارث الجمحيّ «١» . تكنى أم جميل، وهي مشهورة بكنيتها. واختلف في اسمها، قاله أبو عمر.\nالقسم الثاني",
+      "english": "11010- Juwairiya bint al-Mujallal,\n\nthe wife of Hatib ibn al-Harith al-Jumahi. (1) Her kunya was Umm Jamil, and she is well known by that kunya. There is disagreement concerning her name, according to Abu Umar.\n\nSECTION TWO",
+      "arabic_sha256": "a98ceda151d5c35e91c4c52fcbd776caa13a2a6063edeb22c0f284fd49c95a17",
+      "english_sha256": "9ba325ea1b4e426e03d9b99b0c905e99e9e85e53815a00c5d5a7be3f2d4763ef",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "جويرية",
+      "english": "Juwairiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "جويرية بنت المجلل",
+      "english": "Juwairiya bint al-Mujallal",
+      "kind": "person"
+    },
+    {
+      "arabic": "حاطب بن الحارث الجمحيّ",
+      "english": "Hatib ibn al-Harith al-Jumahi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جميل",
+      "english": "Umm Jamil",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011393",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11393,
+  "title": {
+    "english": "Shuqayra al-Asadiyya (4)",
+    "arabic_observed": "شقيرة الأسدية «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011393-segment-0001",
+      "volume": 8,
+      "scan_page": 208,
+      "printed_page": 207,
+      "reader_page": 4120,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4120",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0208:6c4b2990b5b78fb8",
+      "arabic": "١١٣٩٣- شقيرة الأسدية «٤»\nحبشية.\nذكرها ابن مندة، فقال حبشية، وساق الخبر الماضي في سعيرة بالمهملتين، وهو الصواب، أشار إلى ذلك أبو نعيم، وقد سماها المستغفري فيما حكاه أبو موسى عنه في ترجمة أم زفر شكيرة، بالكاف بدل القاف، وصوب أنها بالقاف.",
+      "english": "11393 — Shuqayra al-Asadiyya (4)\n\nAn Abyssinian woman.\n\nIbn Manda mentioned her, calling her an Abyssinian, and related the report given previously under Sa'ira—with both letters unpointed—which is correct. Abu Nu'aym indicated this. Al-Mustaghfiri, according to what Abu Musa related from him in the biography of Umm Zafar, named her Shukayra, with kaf in place of qaf; the form with qaf was deemed correct.",
+      "arabic_sha256": "5f010396aebcb04d12d4500d287b6100596bccfbd241eaba99e84fabab99026e",
+      "english_sha256": "1e34039fc8c339307ad2fe63497e8459447fb44c8c805c8fce06755faa856e0d",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "شقيرة الأسدية",
+      "english": "Shuqayra al-Asadiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبشية",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "سعيرة",
+      "english": "Sa'ira",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم زفر",
+      "english": "Umm Zafar",
+      "kind": "person"
+    },
+    {
+      "arabic": "شكيرة",
+      "english": "Shukayra",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "شقيرة",
+      "explanation": "The consonantal spelling is secure, but neither the canonical text nor the supplied witnesses establishes the precise vocalization. Shuqayra is retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0208:6c4b2990b5b78fb8"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

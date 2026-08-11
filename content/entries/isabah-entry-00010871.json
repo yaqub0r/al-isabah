@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010871",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10871,
+  "title": {
+    "english": "Umayma bint al-Nu'man ibn al-Harith, the Kindite woman.¹",
+    "arabic_observed": "أميمة بنت النعمان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010871-segment-0001",
+      "volume": 8,
+      "scan_page": 36,
+      "printed_page": 35,
+      "reader_page": 3948,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3948",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0036:c4a2b286be23a713",
+      "arabic": "١٠٨٧١- أميمة بنت النعمان\nبن الحارث الكندية «١» . تقدم ذكرها فيمن اسمها أسماء.",
+      "english": "10871—Umayma bint al-Nu'man ibn al-Harith, the Kindite woman.¹\n\nShe was mentioned earlier among those named Asma.",
+      "arabic_sha256": "8d45b04a6191a8c8b7b6b0b00c773c6d9008003fba42a2e75674a055bae40866",
+      "english_sha256": "92d11b37f40d8609394c832a246a1901962ddf756a6dfe5cb58fec13a845fa31",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أميمة بنت النعمان بن الحارث الكندية",
+      "english": "Umayma bint al-Nu'man ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكندية",
+      "english": "Kinda",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

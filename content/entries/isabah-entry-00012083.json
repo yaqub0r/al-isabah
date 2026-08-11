@@ -1,0 +1,224 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012083",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12083,
+  "title": {
+    "english": "Umm Sinan al-Aslamiyya.³",
+    "arabic_observed": "أم سنان الأسلمية «٣» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012083-segment-0001",
+      "volume": 8,
+      "scan_page": 412,
+      "printed_page": 411,
+      "reader_page": 4324,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4324",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0412:b868f66989c7606d",
+      "arabic": "١٢٠٨٣- أم سنان الأسلمية «٣» .\nذكرها مطيّن في الصّحابة،\nوأخرج من طريق محمد بن عمر بن صالح، عن أبي سنان يزيد بن حريث، عن ثبيتة، بمثلثة وموحدة ثم مثناة مصغّرة، بنت حنظلة، عن أمها أم سنان الأسلميّة من المبايعات، قالت: جئت النبيّ ﵌ فقلت: يا رسول اللَّه، إني جئتك وما جئت حتى ألجأت من الحاجة. فقال: «لو استعففت لكان خيرا لك» «٤» .\nوقال أبو عمر: أم سنان الأسلمية قالت: أتيت رسول اللَّه ﵌ فبايعته على الإسلام، فنظر إلى يدي، فقال: «ما على إحداكنّ أن تغيّر أظفارها» .\nقالت:\n(١) سقط في أ.\n(٢) أسد الغابة ت (٧٤٨٢) .\n(٣) أسد الغابة ت (٧٤٨٣)، الاستيعاب ت (٣٦٢٣)، الثقات ٣/ ٤٦٤ أعلام النساء ٢/ ٢٦٢، تجريد أسماء الصحابة ٢/ ٣٢٣، تلقيح فهوم أهل الأثر ٣٨٧ الإكمال ٤/ ٤٤٣.\n(٤) انظر المجمع ٣/ ٩٣.",
+      "english": "12083—Umm Sinan al-Aslamiyya.³\n\nMutayyan mentioned her among the Companions and transmitted, by way of Muhammad ibn Umar ibn Salih, from Abu Sinan Yazid ibn Hurayth, from Thubayta—spelled with tha, then ba, then ta, in the diminutive—bint Hanzala, from her mother, Umm Sinan al-Aslamiyya, one of the women who pledged allegiance. She said: I came to the Prophet—may Allah bless him and grant him peace—and said, “O Messenger of Allah, I have come to you, but I did not come until I was driven by need.” He said, “Had you refrained from asking, it would have been better for you.”⁴\n\nAbu Umar said: Umm Sinan al-Aslamiyya said, “I came to the Messenger of Allah—may Allah bless him and grant him peace—and pledged allegiance to him in Islam. He looked at my hands and said, ‘What would it hurt any one of you to dye her fingernails?’” She said:\n\n¹ Omitted from A.\n\n² Usd al-Ghaba, entry 7482.\n\n³ Usd al-Ghaba, entry 7483; al-Isti'ab, entry 3623; al-Thiqat, 3/464; A'lam al-Nisa', 2/262; al-Tajrid, 2/323; Talqih Fuhum Ahl al-Athar, p. 387; al-Ikmal, 4/443.\n\n⁴ See al-Majma', 3/93.",
+      "arabic_sha256": "b22bbfed87e400c590cd73faee965d734653be2544f147ff20799b34851289c5",
+      "english_sha256": "1bd75cd5ecced341eb5029763dfb691da826c8e60ea14ceec2ee32b309e5a37b",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012083-segment-0002",
+      "volume": 8,
+      "scan_page": 413,
+      "printed_page": 412,
+      "reader_page": 4325,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4325",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0413:392da5276c647637",
+      "arabic": "وكنا نخرج مع رسول اللَّه ﵌، إلى الجمعة والعيدين. روت عنها ثبيتة بنت حنظلة.\nقلت: والحديث الّذي أخرجه الخطيب في المؤتلف من طريق يحيى بن العلاء القاضي عن صالح بن حريث بن يزيد عن [...] سمعت ثبيتة به أخرجه ابن سعد عن الواقديّ، عن عمر بن صالح الحوطي، عن حريث بن يزيد الأسلميّ، عن ثبيتة بنت حنظلة، عن أمها أم سنان. وأخرج أيضا في ترجمة صفية بنت حيي، من طريق ثبيتة بنت حنظلة، عن أمها، عن أم سنان الأسلمية، قالت: كنت فيمن حضر عرس صفية فمشطناها وعطرناها، وكانت من أضوإ ما يكون من النساء، فأعرس بها رسول اللَّه ﵌، فسألناها، فذكرت أنه سر بها، ولم ينم تلك الليلة، لم يزل يتحدث معها وأصبح فأولم عليها.\nوعن الواقديّ عن عبد اللَّه بن أبي يحيى، عن ثبيتة، عن أمها، قالت: لما أراد النبي ﵌ الخروج إلى خيبر قلت: يا رسول اللَّه أخرج معك، أخرز السقاء، وأداوي الجرحى ... الحديث، وفيه: فإن لك صواحب قد أذنت لهنّ من قومك ومن غيرهم. قال: فكوني مع أم سلمة.",
+      "english": "“And we used to go out with the Messenger of Allah—may Allah bless him and grant him peace—for the Friday prayer and the two Eid prayers.” Thubayta bint Hanzala narrated from her.\n\nI say: The hadith that al-Khatib related in al-Mu'talif, through Yahya ibn al-'Ala al-Qadi, from Salih ibn Hurayth ibn Yazid, from [...]—“I heard Thubayta concerning it”—was related by Ibn Sa'd from al-Waqidi, from Umar ibn Salih al-Hawti, from Hurayth ibn Yazid al-Aslami, from Thubayta bint Hanzala, from her mother, Umm Sinan. He also related, in the biography of Safiyya bint Huyayy, through Thubayta bint Hanzala, from her mother, from Umm Sinan al-Aslamiyya, who said: “I was among those who attended Safiyya's wedding celebration. We combed her hair and perfumed her, and she was among the most radiant of women. The Messenger of Allah—may Allah bless him and grant him peace—then spent the bridal night with her. We asked her, and she mentioned that he had been delighted with her and had not slept that night; he continued talking with her. In the morning, he gave a wedding feast for her.”\n\nAnd from al-Waqidi, from Abd Allah ibn Abi Yahya, from Thubayta, from her mother, who said: “When the Prophet—may Allah bless him and grant him peace—intended to depart for Khaybar, I said, ‘O Messenger of Allah, let me go out with you. I will stitch the waterskin and treat the wounded ...’” The hadith continues, and it contains: “‘You have female companions to whom I have already given permission, from among your people and from others.’ He said, ‘Then be with Umm Salama.’”",
+      "arabic_sha256": "d03bf12590adc228dff5d43c2adbf268a2db598f59d190bdd58c4c09f1405a20",
+      "english_sha256": "6d6e1b0629c392ccb0926fed3d32205355e68f83d54874f49da225973f2a9aae",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم سنان الأسلمية",
+      "english": "Umm Sinan al-Aslamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "مطيّن",
+      "english": "Mutayyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمر بن صالح",
+      "english": "Muhammad ibn Umar ibn Salih",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سنان يزيد بن حريث",
+      "english": "Abu Sinan Yazid ibn Hurayth",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "الإكمال",
+      "english": "al-Ikmal",
+      "kind": "work"
+    },
+    {
+      "arabic": "المجمع",
+      "english": "al-Majma'",
+      "kind": "work"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ثبيتة بنت حنظلة",
+      "english": "Thubayta bint Hanzala",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخطيب",
+      "english": "al-Khatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "المؤتلف",
+      "english": "al-Mu'talif",
+      "kind": "work"
+    },
+    {
+      "arabic": "يحيى بن العلاء القاضي",
+      "english": "Yahya ibn al-'Ala al-Qadi",
+      "kind": "person"
+    },
+    {
+      "arabic": "صالح بن حريث بن يزيد",
+      "english": "Salih ibn Hurayth ibn Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن صالح الحوطي",
+      "english": "Umar ibn Salih al-Hawti",
+      "kind": "person"
+    },
+    {
+      "arabic": "حريث بن يزيد الأسلميّ",
+      "english": "Hurayth ibn Yazid al-Aslami",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سنان",
+      "english": "Umm Sinan al-Aslamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت حيي",
+      "english": "Safiyya bint Huyayy",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن أبي يحيى",
+      "english": "Abd Allah ibn Abi Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "أبو محصن",
+      "explanation": "The supplied witnesses are unvocalized and do not establish the exact pronunciation of محصن. The final text retains the candidate's plausible form “Abu Mihsan.”",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0412:b868f66989c7606d"
+    },
+    {
+      "category": "isnad_lacuna",
+      "arabic_span": "عن [...] سمعت ثبيتة به",
+      "explanation": "The canonical Arabic explicitly lacks the transmitter following “from,” and the supplied witnesses neither restore that name nor determine the exact grammatical relationship of “I heard Thubayta concerning it.” The final translation therefore preserves the lacuna and uses a deliberately conservative rendering.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0413:392da5276c647637"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

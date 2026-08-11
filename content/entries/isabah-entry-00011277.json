@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011277",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11277,
+  "title": {
+    "english": "Saba bint Sufyan,",
+    "arabic_observed": "سبا بنت سفيان ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011277-segment-0001",
+      "volume": 8,
+      "scan_page": 172,
+      "printed_page": 171,
+      "reader_page": 4084,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4084",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0172:f9f5684df58e159c",
+      "arabic": "١١٢٧٧- سبا بنت سفيان ،\nويقال بنت الصّلت الكلابية. تأتي في سنا بالنون.",
+      "english": "11277—Saba bint Sufyan,\nand she is also said to be Saba bint al-Salt al-Kilabiyya. She will appear under Sana, with the letter nun.",
+      "arabic_sha256": "29bf3121590ca76c83d0d8bb8dc1c25666ac121bedcc60dd4abcf8774d151589",
+      "english_sha256": "3df5edc97d4cf18f53df825b1565b65aedc7d8f247aa5086d9f8c53534d302eb",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سبا بنت سفيان",
+      "english": "Saba bint Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنت الصلت الكلابية",
+      "english": "Saba bint al-Salt al-Kilabiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكلابية",
+      "english": "al-Kilabiyya",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سنا",
+      "english": "Sana",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

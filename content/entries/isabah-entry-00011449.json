@@ -1,0 +1,73 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011449",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11449,
+  "title": {
+    "english": "Atika bint Abi Uzayhir ibn Anis ibn al-Hamq ibn Malik al-Dawsi.",
+    "arabic_observed": "عاتكة بنت أبي أزيهر بن أنيس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011449-segment-0001",
+      "volume": 8,
+      "scan_page": 227,
+      "printed_page": 226,
+      "reader_page": 4139,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4139",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0227:52856abc68939619",
+      "arabic": "١١٤٤٩- عاتكة بنت أبي أزيهر بن أنيس\nبن الحمق بن مالك الدّوسيّ.\nقتل أبوها ببدر كافرا، ثم تزوّجها أبو سفيان بن حرب، فهي والدة ولديه: محمّد، وعنبسة.",
+      "english": "11449—Atika bint Abi Uzayhir ibn Anis ibn al-Hamq ibn Malik al-Dawsi.\n\nHer father was killed at Badr as an unbeliever. Abu Sufyan ibn Harb then married her, and she was the mother of his two sons, Muhammad and Anbasa.",
+      "arabic_sha256": "d47e7ef97fae5ad3c77764b101e0a86464e204076fe3003fda075c5f86a38ca4",
+      "english_sha256": "a72e819bd856174572b5e7cac9113ae3a37c6ed8dbe9f12b8ed8c902b657ffc2",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عاتكة بنت أبي أزيهر بن أنيس بن الحمق بن مالك الدّوسيّ",
+      "english": "Atika bint Abi Uzayhir ibn Anis ibn al-Hamq ibn Malik al-Dawsi",
+      "kind": "person"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو سفيان بن حرب",
+      "english": "Abu Sufyan ibn Harb",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمّد",
+      "english": "Muhammad ibn Abi Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عنبسة",
+      "english": "Anbasa ibn Abi Sufyan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "الحمق",
+      "explanation": "The canonical consonants and the Urdu witness agree, but neither supplies vowels. The final text therefore retains the consonantally conservative form al-Hamq.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0227:52856abc68939619"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

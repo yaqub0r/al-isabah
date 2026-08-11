@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011919",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11919,
+  "title": {
+    "english": "Umm Thabit bint Thabit ibn Sinan",
+    "arabic_observed": "أم ثابت بنت ثابت بن سنان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011919-segment-0001",
+      "volume": 8,
+      "scan_page": 367,
+      "printed_page": 366,
+      "reader_page": 4279,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4279",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0367:8ad674b3a8eee04d",
+      "arabic": "١١٩١٩- أم ثابت بنت ثابت بن سنان\nذكرها ابن سعد في المبايعات، وقال: ذكرها محمد بن عمر.",
+      "english": "11919—Umm Thabit bint Thabit ibn Sinan\n\nIbn Sa'd mentioned her among the women who pledged allegiance, saying: Muhammad ibn Umar mentioned her.",
+      "arabic_sha256": "1b301dcb8a839a92ca2511b13ab514e09acbb60312821f319236a0798ab2f493",
+      "english_sha256": "b38f5fc49c4099e19d79d6600833f9c11bf27cf7fc7ddba8bfb605eeb40e9c10",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم ثابت بنت ثابت بن سنان",
+      "english": "Umm Thabit bint Thabit ibn Sinan",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمر",
+      "english": "Muhammad ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت",
+      "english": "Thabit ibn Qays ibn Shammas",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

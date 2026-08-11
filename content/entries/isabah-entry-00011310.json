@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011310",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11310,
+  "title": {
+    "english": "Salama bint Sa'id ibn al-Shahid (1)",
+    "arabic_observed": "سلامة بنت سعيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011310-segment-0001",
+      "volume": 8,
+      "scan_page": 183,
+      "printed_page": 182,
+      "reader_page": 4095,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4095",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0183:62e987168cded9ff",
+      "arabic": "١١٣١٠- سلامة بنت سعيد\nبن الشهيد «١»، من بني عمرو بن عوف. ذكرها ابن حبان في المبايعات.",
+      "english": "11310 — Salama bint Sa'id ibn al-Shahid (1)\n\nShe was of Banu 'Amr ibn 'Awf. Ibn Hibban mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "f0a6ca674179281b1a4d048ca2cf35713677a13e45b9fcc8ba506c97b333c0a3",
+      "english_sha256": "d77ac76c3676b682a7e5ea6517551b0a7568d82f368840cab3ade7b744eee3ff",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سلامة بنت سعيد بن الشهيد",
+      "english": "Salama bint Sa'id ibn al-Shahid",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عمرو بن عوف",
+      "english": "Banu 'Amr ibn 'Awf",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

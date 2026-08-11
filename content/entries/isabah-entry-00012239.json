@@ -1,0 +1,294 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012239",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12239,
+  "title": {
+    "english": "Umm Kulthum",
+    "arabic_observed": "أم كلثوم"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012239-segment-0001",
+      "volume": 8,
+      "scan_page": 467,
+      "printed_page": 466,
+      "reader_page": 4379,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4379",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0467:83ad4c8718c1bc2b",
+      "arabic": "١٢٢٣٩- أم كلثوم\nبنت أبي بكر الصّديق التيميّة «٣» .\n(١) تجريد أسماء الصحابة ٢/ ٣٣٣، مجمع ١٠/ ٣١٠، أسد الغابة ت (٧٥٨٤) .\n(٢) قال الهيثمي في الزوائد ١٠/ ٣١٣ رواه البزار وفيه أم كلثوم بنت العباس ولم أعرفها وبقية رجاله ثقات وأورده المتقي الهندي في كنز العمال حديث رقم ٥٨٧٩ وعزاه إلى الطبراني في الكبير عن العباس وأبو بكر الخطيب في تاريخ بغداد ٤/ ٥٦، والحسيني في إتحاف السادة المتقين ٦/ ٢١٤.\n(٣) المحبر ٥٤ و١٠١ والسير والمغازي ٢٣٠- وسيرة ابن هاشم ١/ ٣٢٥- والمعارف ١٧٤- وأنساب الأشراف ١/ ٢٤٤- والعقد الفريد ٦/ ٣٦٥ و٦/ ٩٠ والمعرفة والتاريخ ١/ ٢١٤ و٣٦١- وتهذيب الأسماء واللغات ٢/ ٣٦٥- والكامل في التاريخ ٢/ ٥٣٧- وسير أعلام النبلاء ٣/ ٥٠٠- ٥٠٢- والتذكرة الحمدونية ١/ ١٤٤ و٢/ ٤٢. تاريخ الإسلام ١/ ١٣٦، أسد الغابة ت (٧٥٨٠) .",
+      "english": "12239—Umm Kulthum\n\nbint Abi Bakr al-Siddiq, al-Taymiyya.³\n\n¹ al-Tajrid Asma' al-Sahaba, 2/333; Majma', 10/310; Usd al-Ghaba, biography no. 7584.\n\n² Al-Haythami said in al-Zawa'id, 10/313: “It was related by al-Bazzar. Its chain contains Umm Kulthum bint al-Abbas, whom I do not know; the remainder of its transmitters are trustworthy.” Al-Muttaqi al-Hindi included it in Kanz al-Ummal, hadith no. 5879, and attributed it to al-Tabarani in al-Kabir, from al-Abbas. It was also included by Abu Bakr al-Khatib in Tarikh Baghdad, 4/56, and by al-Husayni in Ithaf al-Sada al-Muttaqin, 6/214.\n\n³ Al-Muhabbar, 54 and 101; al-Siyar wa-l-Maghazi, 230; Sirat Ibn Hisham, 1/325; al-Ma'arif, 174; Ansab al-Ashraf, 1/244; al-Iqd al-Farid, 6/365 and 6/90; al-Ma'rifa wa-l-Tarikh, 1/214 and 361; Tahdhib al-Asma' wa-l-Lughat, 2/365; al-Kamil fi al-Tarikh, 2/537; Siyar A'lam al-Nubala', 3/500–502; al-Tadhkira al-Hamduniyya, 1/144 and 2/42; Tarikh al-Islam, 1/136; Usd al-Ghaba, biography no. 7580.",
+      "arabic_sha256": "712eba45e6336b5b4cc29342a0c5d3303718487c88dd2447776418b55b715f94",
+      "english_sha256": "3fc3ffa0de226e501a38d08a6c0f94e7f2ca32cf8710b7047ac8627af77d52a3",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012239-segment-0002",
+      "volume": 8,
+      "scan_page": 468,
+      "printed_page": 467,
+      "reader_page": 4380,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4380",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0468:6873621a0a045281",
+      "arabic": "تابعية، مات أبوها وهي حمل، فوضعت بعد وفاة أبيها، وقصّتها بذلك صحيحة في الموطأ وغيره، أرسلت حديثها، فذكرها بسببه ابن السكن وابن مندة في الصّحابة.\nوأخرج من طريق إبراهيم بن طهمان، عن يحيى بن سعيد، عن حميد بن نافع، عن أم كلثوم بنت أبي بكر- أنّ النّبيّ ﵌ نهى عن ضرب النّساء ...\nالحديث.\nثم قال: رواه الليث عن يحيى نحوه. ورواه الثّوري عن يحيى بن حميد، فقال: عن زينب بنت أبي سلمة.\nقلت: أخرج الحسن بن سفيان حدث الليث بلفظ آخر بدون القصّة.\nقلت: ولأم كلثوم بنت أبي بكر رواية أخرى عن عائشة في صحيح مسلم، روى عنها جابر بن عبد اللَّه الأنصاريّ الصّحابي، وأمّها حبيبة بنت خارجة وضعتها بعد موت أبي بكر.\nوروى عنها أيضا جبر بن حبيب، وطلحة بن يحيى، والمغيرة بن حكيم، وغيرهم.\nحرف اللام\n[القسم الأول]",
+      "english": "She was a woman of the generation of the Successors. Her father died while she was still unborn, and she was delivered after his death. Her account concerning this is soundly established in al-Muwatta and other works. She transmitted her hadith in mursal form, and for that reason Ibn al-Sakan and Ibn Manda included her among the Companions.\n\nIbn Manda transmitted through the route of Ibrahim ibn Tahman, from Yahya ibn Sa'id, from Humayd ibn Nafi', from Umm Kulthum bint Abi Bakr, that the Prophet (peace and blessings be upon him) forbade the beating of women ... [to the end of] the hadith.\n\nHe then said: “Al-Layth narrated something similar from Yahya. Al-Thawri narrated it from Yahya ibn Humayd, but said: ‘From Zaynab bint Abi Salama.’”\n\nI say: Al-Hasan ibn Sufyan transmitted al-Layth's hadith with different wording, without the story.\n\nI say: Umm Kulthum bint Abi Bakr also has another narration from Aisha in Sahih Muslim. Jabir ibn Abd Allah al-Ansari, the Companion, narrated from her. Her mother was Habiba bint Kharija, who gave birth to her after Abu Bakr's death.\n\nJabr ibn Habib, Talha ibn Yahya, al-Mughira ibn Hakim, and others also narrated from her.\n\nTHE LETTER LAM\n\n[SECTION ONE]",
+      "arabic_sha256": "06b9fd2551f8e8cb5687a58f03d584df0064a157c5701e102422d215f682f974",
+      "english_sha256": "aa1c785b9958bc96911198738c2162c4cf82c0cb5b6cd223da5cb4b860192a27",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم كلثوم",
+      "english": "Umm Kulthum bint Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "البزار",
+      "english": "al-Bazzar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر الخطيب",
+      "english": "Abu Bakr al-Khatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسيني",
+      "english": "al-Husayni",
+      "kind": "person"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid Asma' al-Sahaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "مجمع",
+      "english": "Majma'",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ بغداد",
+      "english": "Tarikh Baghdad",
+      "kind": "work"
+    },
+    {
+      "arabic": "إتحاف السادة المتقين",
+      "english": "Ithaf al-Sada al-Muttaqin",
+      "kind": "work"
+    },
+    {
+      "arabic": "المحبر",
+      "english": "Al-Muhabbar",
+      "kind": "work"
+    },
+    {
+      "arabic": "السير والمغازي",
+      "english": "al-Siyar wa-l-Maghazi",
+      "kind": "work"
+    },
+    {
+      "arabic": "سيرة ابن هشام",
+      "english": "Sirat Ibn Hisham",
+      "kind": "work"
+    },
+    {
+      "arabic": "المعارف",
+      "english": "al-Ma'arif",
+      "kind": "work"
+    },
+    {
+      "arabic": "أنساب الأشراف",
+      "english": "Ansab al-Ashraf",
+      "kind": "work"
+    },
+    {
+      "arabic": "العقد الفريد",
+      "english": "al-Iqd al-Farid",
+      "kind": "work"
+    },
+    {
+      "arabic": "المعرفة والتاريخ",
+      "english": "al-Ma'rifa wa-l-Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الأسماء واللغات",
+      "english": "Tahdhib al-Asma' wa-l-Lughat",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكامل في التاريخ",
+      "english": "al-Kamil fi al-Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "سير أعلام النبلاء",
+      "english": "Siyar A'lam al-Nubala'",
+      "kind": "work"
+    },
+    {
+      "arabic": "التذكرة الحمدونية",
+      "english": "al-Tadhkira al-Hamduniyya",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ الإسلام",
+      "english": "Tarikh al-Islam",
+      "kind": "work"
+    },
+    {
+      "arabic": "الموطأ",
+      "english": "al-Muwatta",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن طهمان",
+      "english": "Ibrahim ibn Tahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن سعيد",
+      "english": "Yahya ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "حميد بن نافع",
+      "english": "Humayd ibn Nafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم بنت أبي بكر",
+      "english": "Umm Kulthum bint Abi Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الليث",
+      "english": "al-Layth",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثّوري",
+      "english": "al-Thawri",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن حميد",
+      "english": "Yahya ibn Humayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت أبي سلمة",
+      "english": "Zaynab bint Abi Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن سفيان",
+      "english": "al-Hasan ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيح مسلم",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "جابر بن عبد اللَّه الأنصاريّ",
+      "english": "Jabir ibn Abd Allah al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة بنت خارجة",
+      "english": "Habiba bint Kharija",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "جبر بن حبيب",
+      "english": "Jabr ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "طلحة بن يحيى",
+      "english": "Talha ibn Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "المغيرة بن حكيم",
+      "english": "al-Mughira ibn Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

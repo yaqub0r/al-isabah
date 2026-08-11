@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011268",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11268,
+  "title": {
+    "english": "Zaynab bint Umar",
+    "arabic_observed": "زينب بنت عمر"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011268-segment-0001",
+      "volume": 8,
+      "scan_page": 168,
+      "printed_page": 167,
+      "reader_page": 4080,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4080",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0168:a6071ac49f0eb142",
+      "arabic": "١١٢٦٨- زينب بنت عمر\nبن الخطاب القرشية.\nقال الزّبير بن بكّار في كتاب «النّسب»: أمها فكيهة، أم ولد، وهي أخت عبد الرحمن ابن عمر الأصغر والد المختار.\nالقسم الثالث",
+      "english": "11268—Zaynab bint Umar\n\nibn al-Khattab, the Qurashi woman.\n\nAl-Zubayr ibn Bakkar said in Kitab al-Nasab: Her mother was Fukayha, an umm walad, and she was the sister of Abd al-Rahman ibn Umar the Younger, the father of al-Mukhtar.\n\nSECTION THREE",
+      "arabic_sha256": "c935653cceee8b93458c8aed537c310c2899956b50842704ee11383d30cf75d5",
+      "english_sha256": "fda807945a643fa6ad6ff0ffbfa808c400b7f4791520d3aa362965d78763ad1f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب «النسب»",
+      "english": "Kitab al-Nasab",
+      "kind": "work"
+    },
+    {
+      "arabic": "فكيهة",
+      "english": "Fukayha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن ابن عمر الأصغر",
+      "english": "Abd al-Rahman ibn Umar the Younger",
+      "kind": "person"
+    },
+    {
+      "arabic": "المختار",
+      "english": "al-Mukhtar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن",
+      "english": "Abd al-Rahman",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

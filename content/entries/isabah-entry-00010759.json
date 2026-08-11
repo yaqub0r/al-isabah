@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010759",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10759,
+  "title": {
+    "english": "Asiya bint al-Harith al-Sa'diyya, the Prophet's sister through nursing—may Allah bless him and grant him peace.",
+    "arabic_observed": "آسية بنت الحارث السعدية، أخت النبي ﷺ من الرضاعة."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010759-segment-0001",
+      "volume": 8,
+      "scan_page": 4,
+      "printed_page": 3,
+      "reader_page": 3916,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3916",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0004:0a8a599d4636fa27",
+      "arabic": "١٠٧٥٩- آسية بنت الحارث السعدية، أخت النبي ﷺ من الرضاعة.\nذكرها أبو سعد النيسابوري في «شرف المصطفى».",
+      "english": "10759—Asiya bint al-Harith al-Sa'diyya, the Prophet's sister through nursing—may Allah bless him and grant him peace.\nAbu Sa'd al-Naysaburi mentioned her in Sharaf al-Mustafa.",
+      "arabic_sha256": "e7a217b50ada446d73b1b8767976109656f6f610a71c72230a64965eae27868d",
+      "english_sha256": "1708a5d05fc6b850c1dfa1cd3c4302194298abb19562bf4fc2e61b55edbf3c25",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "آسية بنت الحارث السعدية",
+      "english": "Asiya bint al-Harith al-Sa'diyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سعد النيسابوري",
+      "english": "Abu Sa'd al-Naysaburi",
+      "kind": "person"
+    },
+    {
+      "arabic": "شرف المصطفى",
+      "english": "Sharaf al-Mustafa",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010998",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10998,
+  "title": {
+    "english": "Jamila bint Abd al-Uzza[2] ibn Qatan al-Khuza'iyya, of Banu al-Mustaliq",
+    "arabic_observed": "جميلة بنت عبد العزى «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010998-segment-0001",
+      "volume": 8,
+      "scan_page": 72,
+      "printed_page": 71,
+      "reader_page": 3984,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3984",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0072:7ef2a8b4975b2fe7",
+      "arabic": "١٠٩٩٨- جميلة بنت عبد العزى «٢»\nبن قطن الخزاعية، من بني المصطلق.\nكانت من المبايعات، وهي زوج عبد الرحمن بن العوام أخي الزبير، أم بنيه، لا يعرف لها رواية، قاله أبو عمر.\nقلت: كذا سماها ابن الأثير بعد بنت عبد اللَّه ... وعمر، فاقتضى أنها عنده بوزن عظيمة، وليس كذلك، وإنما هي جمينة بالتصغير، وقبل الهاء نون، كذا هي في نسخة من الاستيعاب مجوّدة، وكذا في كتاب النسب للزبير بن بكار في نسخة معتمدة، وفي أخرى بالحاء المهملة.",
+      "english": "10998 — Jamila bint Abd al-Uzza[2] ibn Qatan al-Khuza'iyya, of Banu al-Mustaliq\n\nShe was among the women who pledged allegiance. She was the wife of Abd al-Rahman ibn al-Awwam, the brother of al-Zubayr, and the mother of his sons. No narration is known from her. So said Abu Umar.\n\nI say: This is how Ibn al-Athir named her, placing her after Jamila bint Abd Allah and before Jamila bint Umar. This implies that, in his view, her name followed the pattern of azima. But that is not so. Rather, her name is Jumayna, in the diminutive form, with a nun before the ha. This is how it is carefully written in one copy of al-Isti'ab, and likewise in a reliable copy of Kitab al-Nasab by al-Zubayr ibn Bakkar; in another copy, it is written with the unpointed ha.",
+      "arabic_sha256": "0705a2383ee608911020ace4d038f785667db19dcb6bbd05d6e371fdbbffe08b",
+      "english_sha256": "f50c08b60694b2ec441b7881d1bbae88c6dc391b0e47076f397ade4ac6b440f5",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "بني المصطلق",
+      "english": "Banu al-Mustaliq",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عبد الرحمن بن العوام",
+      "english": "Abd al-Rahman ibn al-Awwam",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة بنت عبد اللَّه",
+      "english": "Jamila bint Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة بنت عمر",
+      "english": "Jamila bint Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "جمينة",
+      "english": "Jumayna bint Abd al-Uzza ibn Qatan al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "كتاب النسب",
+      "english": "Kitab al-Nasab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة",
+      "english": "Jamila",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

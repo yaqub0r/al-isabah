@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012051",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12051,
+  "title": {
+    "english": "Umm Sa'd, also called Umm Sa'id, bint Abd Allah ibn Abi Malik al-Khazrajiyya,",
+    "arabic_observed": "أم سعد: ويقال أم سعيد، بنت عبد اللَّه بن أبي مالك الخزرجيّة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012051-segment-0001",
+      "volume": 8,
+      "scan_page": 402,
+      "printed_page": 401,
+      "reader_page": 4314,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4314",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0402:c5de95020b160d19",
+      "arabic": "١٢٠٥١- أم سعد: ويقال أم سعيد، بنت عبد اللَّه بن أبي مالك الخزرجيّة ،\nأخت عبد اللَّه وجميلة، وأبوها هو عبد اللَّه بن أبي ابن سلول.\nذكرها ابن سعد في المبايعات، وقال: أمها لبني بنت عبادة بن نضلة الخزرجيّة، تزوّجها جبير بن ثابت بن الضّحاك بن ثعلبة الخزرجيّ.",
+      "english": "12051—Umm Sa'd, also called Umm Sa'id, bint Abd Allah ibn Abi Malik al-Khazrajiyya,\n\nsister of Abd Allah and Jamila. Her father was Abd Allah ibn Ubayy ibn Salul.\n\nIbn Sa'd mentioned her among the women who pledged allegiance and said: Her mother was Lubna bint Ubada ibn Nadla al-Khazrajiyya. Jubayr ibn Thabit ibn al-Dahhak ibn Tha'laba al-Khazraji married her.",
+      "arabic_sha256": "3f968dcf256c79c293addc03637ea24a2ca6831dd4a67710af74b7562e13f751",
+      "english_sha256": "a5755ef7025755fcd47bf9df2ef1a03594f2e7c6e9a9a0223ed743d9499de795",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد",
+      "english": "Sa'd ibn Zayd ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة",
+      "english": "Jamila",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن أبي بن سلول",
+      "english": "Abd Allah ibn Ubayy ibn Salul",
+      "kind": "person"
+    },
+    {
+      "arabic": "لبني بنت عبادة بن نضلة الخزرجيّة",
+      "english": "Lubna bint Ubada ibn Nadla al-Khazrajiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "جبير بن ثابت بن الضّحاك بن ثعلبة الخزرجيّ",
+      "english": "Jubayr ibn Thabit ibn al-Dahhak ibn Tha'laba al-Khazraji",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

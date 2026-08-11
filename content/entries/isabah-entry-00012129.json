@@ -1,0 +1,219 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012129",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12129,
+  "title": {
+    "english": "Umm Amir bint Yazid ibn al-Sakan al-Ansariyya al-Ashhaliyya.",
+    "arabic_observed": "أم عامر"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012129-segment-0001",
+      "volume": 8,
+      "scan_page": 426,
+      "printed_page": 425,
+      "reader_page": 4338,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4338",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0426:6633b99d43784c8a",
+      "arabic": "١٢١٢٩- أم عامر\nبنت يزيد بن السّكن الأنصاريّة الأشهليّة.\n(١) الاستيعاب ت (٣٦٣٣) .\n(٢) أسد الغابة ت (٧٥١٠)، الثقات ٣/ ٤٦٥، تجريد أسماء الصحابة ٢/ ٣٢٦.\n(٣) أسد الغابة ت (٧٥١١)، الاستيعاب ت (٣٦٣٤)، أعلام النساء ٣/ ٢٢٤.\n(٤) أورده ابن حجر في المطالب العالية حديث رقم ٩٩٧ وعزاه لعبد بن حميد عن أم إسحاق والهيثمي في الزوائد ٣/ ١٦٠ وقال أخرجه أحمد والطبراني وفيه أم حكيم ولم أجد لها ترجمة ولم يحكم عليه البوصيري بشيء قال وله شاهد من حديث أبي هريرة.",
+      "english": "12129 — Umm Amir bint Yazid ibn al-Sakan al-Ansariyya al-Ashhaliyya.\n\n(1) al-Isti'ab, entry 3633.\n\n(2) Usd al-Ghaba, entry 7510; al-Thiqat, 3/465; al-Tajrid, 2/326.\n\n(3) Usd al-Ghaba, entry 7511; al-Isti'ab, entry 3634; A'lam al-Nisa, 3/224.\n\n(4) Ibn Hajar cited it in al-Matalib al-'Aliya, hadith no. 997, and attributed it to Abd ibn Humayd, from Umm Ishaq. Al-Haythami cited it in al-Zawa'id, 3/160, and said: “Ahmad and al-Tabarani transmitted it.” Its chain contains Umm Hakim, for whom I found no biographical entry. Al-Busiri passed no judgment upon it. He said: “It has corroboration from the hadith of Abu Hurayra.”",
+      "arabic_sha256": "342a277a76856910a595e3950d941ea0849d8d252e28cd38f0055dc453487de9",
+      "english_sha256": "fe109025778582ccec36930eda525ed1d8d05e6ce0cbbdd3acbef1698ff86a63",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012129-segment-0002",
+      "volume": 8,
+      "scan_page": 427,
+      "printed_page": 426,
+      "reader_page": 4339,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4339",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0427:373a0bc706a21e1f",
+      "arabic": "ذكرها أبو عمر، فقال: إن صحّ فهي أسماء بنت يزيد أو أختها.\nقلت: هي أختها، سماها ابن السّكن فكيهة، وقد تقدّمت في الأسماء، وكانت من المبايعات. وقد تقدّم لها ذكر في جميلة بنت ثابت بن أبي الأقلح. وتقدّم ذكر حواء بنت يزيد بن السّكن أيضا، ووردت تكنيتها\nفي حديث أخرجه أحمد، وعمر بن شبّة من رواية عبد الرّحمن بن عبد اللَّه الأشهليّ، عنها- أنها أتت النبيّ ﵌ بعرق فتعرقه وهو في مسجد بني فلان، ثم قام إلى الصّلاة فصلّى ولم يتوضّأ.\nأخرجه ابن سعد من هذا الوجه، فقال: عن عبد الرّحمن بن ثابت بن الصّامت الأنصاريّ، عن أمّ عامر بنت يزيد بن السّكن، وكانت من المبايعات، فذكره. وقال في رواية: وهو في مسجد بني عبد الأشهل.\nوأخرج عن خالد بن مخلد، عن ابن أبي حبيبة، عن عبد الرّحمن بن ثابت، قال: أتت أمّ عامر بنت يزيد بن السّكن، وكانت من المبايعات للنبيّ ﷺ بعرق فتعرقه ثم صلّى ولم يتوضأ.",
+      "english": "Abu Umar mentioned her and said: “If the report is sound, she is Asma bint Yazid or her sister.”\n\nI say: She is her sister. Ibn al-Sakan named her Fukayha, and she has already been mentioned among those listed by name. She was one of the women who pledged allegiance. She was also mentioned previously in the entry on Jamila bint Thabit ibn Abi al-Aqlah. Hawwa bint Yazid ibn al-Sakan has likewise been mentioned previously. Her kunya occurs in a hadith transmitted by Ahmad and Umar ibn Shabba, through the narration of Abd al-Rahman ibn Abd Allah al-Ashhali, from her: she brought the Prophet, may Allah bless him and grant him peace, a meat-covered bone, and he gnawed the meat from it while he was in the mosque of Banu So-and-so. He then rose for prayer and prayed without performing ablution.\n\nIbn Sa'd transmitted it through this route, saying: From Abd al-Rahman ibn Thabit ibn al-Samit al-Ansari, from Umm Amir bint Yazid ibn al-Sakan, who was one of the women who pledged allegiance—and he related the report. In one version he said: “He was in the mosque of Banu Abd al-Ashhal.”\n\nHe also transmitted from Khalid ibn Mukhlad, from Ibn Abi Habiba, from Abd al-Rahman ibn Thabit, who said: Umm Amir bint Yazid ibn al-Sakan, who was one of the women who pledged allegiance, brought the Prophet, may Allah bless him and grant him peace, a meat-covered bone. He gnawed the meat from it and then prayed without performing ablution.",
+      "arabic_sha256": "70db13891e5eb2b5bd6d542bbafba45d5ff34ddf37b00e50fa54bbe52e12f7be",
+      "english_sha256": "779a71699d33d6f11db0b171b1c682c33db946caaa88eb4b8382a07c2ad9fb07",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "التّجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "يزيد",
+      "english": "Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عامر بنت يزيد بن السّكن الأنصاريّة الأشهليّة",
+      "english": "Umm Amir bint Yazid ibn al-Sakan al-Ansariyya al-Ashhaliyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن حجر",
+      "english": "Ibn Hajar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المطالب العالية",
+      "english": "al-Matalib al-'Aliya",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد بن حميد",
+      "english": "Abd ibn Humayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم إسحاق",
+      "english": "Umm Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم",
+      "english": "Umm Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "البوصيري",
+      "english": "al-Busiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو هريرة",
+      "english": "Abu Hurayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "فكيهة",
+      "english": "Fukayha bint Yazid ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة بنت ثابت بن أبي الأقلح",
+      "english": "Jamila bint Thabit ibn Abi al-Aqlah",
+      "kind": "person"
+    },
+    {
+      "arabic": "حواء بنت يزيد بن السكن",
+      "english": "Hawwa bint Yazid ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن شبة",
+      "english": "Umar ibn Shabba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عبد الله الأشهلي",
+      "english": "Abd al-Rahman ibn Abd Allah al-Ashhali",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو فلان",
+      "english": "Banu So-and-so",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن ثابت بن الصامت الأنصاري",
+      "english": "Abd al-Rahman ibn Thabit ibn al-Samit al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عامر بنت يزيد بن السكن",
+      "english": "Umm Amir bint Yazid ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو عبد الأشهل",
+      "english": "Banu Abd al-Ashhal",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "خالد بن مخلد",
+      "english": "Khalid ibn Mukhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي حبيبة",
+      "english": "Ibn Abi Habiba",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

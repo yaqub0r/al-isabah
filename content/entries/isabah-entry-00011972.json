@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011972",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11972,
+  "title": {
+    "english": "Umm Harmala bint Abd al-Aswad",
+    "arabic_observed": "أم حرملة بنت عبد الأسود"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011972-segment-0001",
+      "volume": 8,
+      "scan_page": 377,
+      "printed_page": 376,
+      "reader_page": 4289,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4289",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0377:83c49d733aa6f1b4",
+      "arabic": "١١٩٧٢- أم حرملة بنت عبد الأسود\nبن خزيمة «١» بن أقيش بن عامر بن بياضة الخزاعية. تقدمت في خالد.",
+      "english": "11972—Umm Harmala bint Abd al-Aswad\nibn Khuzayma ibn Aqish ibn Amir ibn Bayada al-Khuza'iyya. She was discussed above under Khalid.",
+      "arabic_sha256": "662c063e75c7e45cbd1ba9981a913af1aa19f22507037f9453e3f48aec324df8",
+      "english_sha256": "bc5b3892d90c8570d84442a250cc658bb91e78b1a7eab4bb9c0583aefa3f8fce",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خالد",
+      "english": "Khalid",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

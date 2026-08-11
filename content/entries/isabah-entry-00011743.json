@@ -1,0 +1,133 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011743",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11743,
+  "title": {
+    "english": "Mariya:",
+    "arabic_observed": "مارية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011743-segment-0001",
+      "volume": 8,
+      "scan_page": 313,
+      "printed_page": 312,
+      "reader_page": 4225,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4225",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0313:9fe9e29e0d8ef67e",
+      "arabic": "١١٧٤٣- مارية:\nخادم النّبيّ ﵌ «١» .\nقال أبو عمر: لها حديث واحد من حديث أهل الكوفة رواه أبو بكر بن عياش، عن المثنى بن صالح، عن جدّته مارية، قالت: صافحت رسول اللَّه ﵌، فلم أر كفّا ألين من كفّه. قال أبو عمر في التي قبلها: لا أدري أهي هذه أم لا؟\nقلت: وأخذ ذلك من كلام ابن السّكن برمّته. وقال ابن السّكن: مارية مولاة النبيّ ﵌ روي عنها حديث مخرج عن أهل الكوفة لا أعلم رواه غير ابن عباس، ثم ساقه من طريقين عنه، ثم قال: روى عن مارية حديث آخر مخرجه عن البصريّين، ولست أدري أهي التي روى حديثها أبو بكر أو غيرها؟ ثم ساق من طريق يعلى بن أسد، عن محمد بن حمران، عن عبد اللَّه بن حبيب، عن أم سليمان، عن أمها، عن جدّتها مارية، قالت: تطأطأت للنبيّ ﵌ حتى صعد حائطا ليلة فر من المشركين.\nوقال أبو نعيم: أفردها ابن مندة وهما عندي واحدة.\nقلت: وصله ابن مندة من وجهين، عن أبي بكر بن عياش: أحدهما كما قال أبو عمر عن المثنى بن صالح، عن جدّته، والآخر عن أبي بكر، قال: حدّثنا واللَّه محمد بن المثنى بن صالح عن جدّته. واللَّه أعلم. قال أبو عمر: المثنى بن صالح هو ابن مهران مولى عمرو بن حريث، كذا قال.",
+      "english": "11743 — Mariya:\n\nA servant of the Prophet, may Allah bless him and grant him peace.[1]\n\nAbu 'Umar said: She has one hadith, transmitted among the people of Kufa. Abu Bakr ibn 'Ayyash narrated it from al-Muthanna ibn Salih, from his grandmother Mariya, who said: “I shook hands with the Messenger of Allah, may Allah bless him and grant him peace, and I never saw a palm softer than his palm.” Concerning the preceding woman, Abu 'Umar said: “I do not know whether she is this same woman or not.”\n\nI say: He took all of that in its entirety from the words of Ibn al-Sakan. Ibn al-Sakan said: “Mariya, a female client of the Prophet, may Allah bless him and grant him peace: a hadith transmitted from her has come down through the people of Kufa. I do not know of anyone other than Ibn 'Abbas who narrated it.” He then cited it by two routes from him. He next said: “Another hadith was narrated from Mariya, its transmission coming through the Basrans. I do not know whether she is the woman whose hadith Abu Bakr narrated or someone else.” He then cited it by way of Ya'la ibn Asad, from Muhammad ibn Hamran, from 'Abd Allah ibn Habib, from Umm Sulayman, from her mother, from her grandmother Mariya, who said: “I stooped down for the Prophet, may Allah bless him and grant him peace, until he climbed a wall on the night he fled from the polytheists.”\n\nAbu Nu'aym said: “Ibn Manda treated her separately, but in my view the two are one woman.”\n\nI say: Ibn Manda transmitted it with a connected chain by two routes from Abu Bakr ibn 'Ayyash. One is as Abu 'Umar stated, from al-Muthanna ibn Salih, from his grandmother. In the other, Abu Bakr said: “By Allah, Muhammad ibn al-Muthanna ibn Salih narrated to us from his grandmother.” And Allah knows best. Abu 'Umar said: “Al-Muthanna ibn Salih ibn Mihran was a client of 'Amr ibn Hurayth.” That is what he said.",
+      "arabic_sha256": "f1b48676172340de262063c0a13e8169ecc24467b6ac4e51d7f813e4a9ca3116",
+      "english_sha256": "31dcb4d04022b689fd6532ce6964782b1328fa950ba7c57b96ba9465bbc0cd9d",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "يعلى بن أسد",
+      "english": "Ya'la ibn Asad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن حبيب",
+      "english": "'Abd Allah ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سليمان",
+      "english": "Umm Sulayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "مارية",
+      "english": "Mariya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر بن عياش",
+      "english": "Abu Bakr ibn 'Ayyash",
+      "kind": "person"
+    },
+    {
+      "arabic": "المثنى بن صالح بن مهران",
+      "english": "al-Muthanna ibn Salih ibn Mihran",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn 'Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن حمران",
+      "english": "Muhammad ibn Hamran",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن المثنى بن صالح",
+      "english": "Muhammad ibn al-Muthanna ibn Salih",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن حريث",
+      "english": "'Amr ibn Hurayth",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكوفة",
+      "english": "Kufa",
+      "kind": "place"
+    },
+    {
+      "arabic": "البصريين",
+      "english": "Basrans",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "textual reading",
+      "arabic_span": "لا أعلم رواه غير ابن عباس",
+      "explanation": "The canonical text clearly reads Ibn 'Abbas and has therefore been translated as printed. The surrounding discussion and Usd al-Ghaba make Ibn 'Ayyash contextually plausible, but no supplied witness preserves this exact clause, so an emendation is not justified.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0313:9fe9e29e0d8ef67e"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

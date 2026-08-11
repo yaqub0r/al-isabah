@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011622",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11622,
+  "title": {
+    "english": "Furay'a bint Khalid ibn Khunays ibn Lawdhan al-Ansariyya:",
+    "arabic_observed": "فريعة بنت خالد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011622-segment-0001",
+      "volume": 8,
+      "scan_page": 280,
+      "printed_page": 279,
+      "reader_page": 4192,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4192",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0280:c4201e5a192e04a8",
+      "arabic": "١١٦٢٢- فريعة بنت خالد\nبن خنيس بن لوذان الأنصاريّة، والدة حسّان بن ثابت، وإليها كان ينسب فيقال: قال ابن الفريعة، ونسب هو نفسه إليها في قوله:\nأمسى الجلابيب قد عزّوا وقد كبروا ... وابن الفريعة أضحى بيضة البلد\n[البسيط] وذكرها ابن سعد في المبايعات، وقيل اسم والدها عمرو.",
+      "english": "11622—Furay'a bint Khalid ibn Khunays ibn Lawdhan al-Ansariyya:\n\nShe was the mother of Hassan ibn Thabit. He was ascribed to her, so it would be said, “Ibn al-Furay'a said.” He also ascribed himself to her in his verse:\n\nThe outsiders have become mighty and risen in stature,\nwhile Ibn al-Furay'a has been left alone and unprotected.\n\n[al-Basit meter]\n\nIbn Sa'd mentioned her among those who gave the pledge of allegiance. It is also said that her father's name was 'Amr.",
+      "arabic_sha256": "5043f274a607711cdfd5a5a9a4b4f58734f36852e27e14fdc14d5105540fbbe4",
+      "english_sha256": "a2cf5b1634f3b009dc6ead4331b2ae467b726f20724b3ac5802311966dd81fb5",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفريعة",
+      "english": "Furay'a bint Malik ibn Sinan al-Khudriyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "فريعة بنت خالد بن خنيس بن لوذان الأنصارية",
+      "english": "Furay'a bint Khalid ibn Khunays ibn Lawdhan al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "حسان بن ثابت",
+      "english": "Hassan ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الفريعة",
+      "english": "Ibn al-Furay'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "البسيط",
+      "english": "al-Basit",
+      "kind": "other"
+    },
+    {
+      "arabic": "عمرو",
+      "english": "'Amr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

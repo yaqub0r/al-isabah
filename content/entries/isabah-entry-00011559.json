@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011559",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11559,
+  "title": {
+    "english": "Amra bint Duraid ibn al-Simma:",
+    "arabic_observed": "عمرة بنت دريد بن الصّمّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011559-segment-0001",
+      "volume": 8,
+      "scan_page": 255,
+      "printed_page": 254,
+      "reader_page": 4167,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4167",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0255:45e9e7d78ac67bbf",
+      "arabic": "١١٥٥٩- عمرة بنت دريد بن الصّمّة:\nقالت ترثي أباها، وكان ربيعة بن رفيع المعروف بابن الدغنّة قتله:\nجزى عنّا الإله بني سليم ... بما فعلوا وأعقبهم عقاق\nوأسقانا إذا قدنا إليهم ... دماء خيارهم عند التّلاقي\n[الوافر]\nالقسم الرابع",
+      "english": "11559—Amra bint Duraid ibn al-Simma:\n\nShe said in elegy for her father; Rabi'a ibn Rafi', known as Ibn al-Dughunna, had killed him:\n\nMay God requite Banu Sulaym on our behalf\nfor what they did, and bring filial impiety upon them;\n\nAnd may He give us to drink, when we march against them,\nthe blood of the best among them at the encounter.\n\n[al-Wafir meter]\n\nTHE FOURTH SECTION",
+      "arabic_sha256": "7b60a0c7c7fc0679ade0dbb6c2f5c902ab5ac91555fa5585ed2def0ea41485ed",
+      "english_sha256": "2c1126616389d4ecc8f03067e3b053658a45e2397486af09bc6fca897afea12f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمرة بنت دريد بن الصمة",
+      "english": "Amra bint Duraid ibn al-Simma",
+      "kind": "person"
+    },
+    {
+      "arabic": "ربيعة بن رفيع",
+      "english": "Rabi'a ibn Rafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الدغنة",
+      "english": "Ibn al-Dughunna",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو سليم",
+      "english": "Banu Sulaym",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الإله",
+      "english": "God",
+      "kind": "other"
+    },
+    {
+      "arabic": "الوافر",
+      "english": "al-Wafir",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

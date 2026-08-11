@@ -1,0 +1,199 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011984",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11984,
+  "title": {
+    "english": "Umm Hakim bint al-Harith ibn Hisham ibn al-Mughira al-Makhzumiyya (2)",
+    "arabic_observed": "أم حكيم بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011984-segment-0001",
+      "volume": 8,
+      "scan_page": 380,
+      "printed_page": 379,
+      "reader_page": 4292,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4292",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0380:abc125e25290fccd",
+      "arabic": "١١٩٨٤- أم حكيم بنت الحارث\nبن هشام بن المغيرة المخزومية «٢» زوج عكرمة بن أبي جهل.\nقال أبو عمر: حضرت يوم أحد وهي كافرة ثم أسلمت في الفتح، وكان زوجها فرّ إلى اليمن فتوجهت إليه بإذن من النبي ﵌، فحضر معها، وأسلم ثم خرجت معه إلى غزو الروم، فاستشهد فتزوّجها خالد بن سعيد بن العاص، فلما كانت وقعة مرج الصفر أراد خالد أن يدخل بها، فقالت: لو تأخرت حتى يهزم اللَّه هذه الجموع! فقال:\nإن نفسي تحدثني أني أقتل، قالت: فدونك، فأعرس بها عند القنطرة فعرفت بها بعد ذلك، فقيل لها قنطرة أم حكيم، ثم أصبح فأولم عليها، فما فرغوا من الطعام حتى وافتهم الروم، ووقع القتال، فاستشهد خالد، وشدت أم حكيم عليها ثيابها، وتبدّت وإن عليها أثر الخلوق. فاقتتلوا على النهر، فقالت «٣» أم حكيم يومئذ [فقتلت] «٤» بعمود الفسطاط الّذي أعرس بها خالد فيه سبعة من الروم.\n(١) أسد الغابة ت (٧٤٢٠)، تجريد أسماء الصحابة ٢/ ٣١٧.\n(٢) أسد الغابة ت (٧٤٢١)، الاستيعاب ت (٣٥٩٨) .\n(٣) في أ: فقتلت أم حكيم يومئذ.\n(٤) سقط في أ.",
+      "english": "11984 — Umm Hakim bint al-Harith ibn Hisham ibn al-Mughira al-Makhzumiyya (2)\n\nShe was the wife of 'Ikrima ibn Abi Jahl.\n\nAbu 'Umar said: She was present at Uhud while an unbeliever, then embraced Islam at the Conquest. Her husband had fled to Yemen, so she went to him with the permission of the Prophet, may Allah bless him and grant him peace. He returned with her and embraced Islam. She then went out with him on a campaign against the Byzantines, and he was martyred. Khalid ibn Sa'id ibn al-'As subsequently married her. When the battle of Marj al-Suffar occurred, Khalid wished to consummate the marriage with her. She said, “If only you would wait until Allah defeats these forces!” He replied, “My soul tells me that I shall be killed.” She said, “Then go ahead.”\n\nHe consummated the marriage with her at the bridge, which afterward became known through her and was called the Bridge of Umm Hakim. When morning came, he gave a wedding feast for her. They had not finished eating when the Byzantines came upon them and fighting broke out. Khalid was martyred. Umm Hakim girded her garments tightly around herself and came forth, though traces of khaluq perfume were still upon her. They fought at the river. Umm Hakim fought (3) that day and [killed] (4) seven Byzantines with the pole of the tent in which Khalid had consummated his marriage with her.\n\n(1) Usd al-Ghaba, entry 7420; al-Tajrid, 2/317.\n\n(2) Usd al-Ghaba, entry 7421; al-Isti'ab, entry 3598.\n\n(3) The printed text reads “then she said”; in manuscript A: “Umm Hakim killed that day.”\n\n(4) Omitted in manuscript A.",
+      "arabic_sha256": "34aad5ce68cb788b5201de1b9ec278f286fd172a8976beee37758ec5694411df",
+      "english_sha256": "8113c479aac0ef11df68a720ed6473b2cd92a617cb3607ba3773529ba982b7dc",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011984-segment-0002",
+      "volume": 8,
+      "scan_page": 381,
+      "printed_page": 380,
+      "reader_page": 4293,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4293",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0381:2ca7d437535517da",
+      "arabic": "وأخرج ابن مندة من طريق السجزيّ، عن ابن إسحاق، عن ابن شهاب، عن عروة، قال: كانت أم حكيم بنت الحارث عند عكرمة، وكانت فاختة بنت الوليد بن المغيرة عند صفوان بن أمية، فأسلمتا جميعا، واستأمنت أم حكيم بنت الحارث لعكرمة، فأمنه النبي ﵌.\nوذكر موسى بن عقبة في مغازيه، عن الزهري- أم حكيم بنت الحارث بن هشام أسلمت يوم الفتح، واستأذنت النبي ﵌ بطلب زوجها عكرمة، فأذن لها وأمنه.",
+      "english": "Ibn Manda related through al-Sijzi, from Ibn Ishaq, from Ibn Shihab, from Urwa, who said: Umm Hakim bint al-Harith was married to Ikrima, and Fakhita bint al-Walid ibn al-Mughira was married to Safwan ibn Umayya. Both women accepted Islam, and Umm Hakim bint al-Harith sought safe-conduct for Ikrima, so the Prophet, may Allah bless him and grant him peace, granted him safety.\n\nMusa ibn Uqba mentioned in his Maghazi, on the authority of al-Zuhri: Umm Hakim bint al-Harith ibn Hisham accepted Islam on the day of the Conquest. She asked the Prophet, may Allah bless him and grant him peace, for permission to seek her husband Ikrima; he gave her permission and granted him safety.",
+      "arabic_sha256": "9d1e93ea48074407bf814d3c303736ffcd72b16d7b422a0af7829d6bfed5c19b",
+      "english_sha256": "5e727431f5a05c54d3c492f593b821c47dbdb03f5656ef69b2fe4bddad4c5fdb",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عمر",
+      "english": "'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم بنت الحارث بن هشام بن المغيرة المخزومية",
+      "english": "Umm Hakim bint al-Harith ibn Hisham ibn al-Mughira al-Makhzumiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عكرمة بن أبي جهل",
+      "english": "'Ikrima ibn Abi Jahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "اليمن",
+      "english": "Yemen",
+      "kind": "place"
+    },
+    {
+      "arabic": "الروم",
+      "english": "Byzantines",
+      "kind": "other"
+    },
+    {
+      "arabic": "خالد بن سعيد بن العاص",
+      "english": "Khalid ibn Sa'id ibn al-'As",
+      "kind": "person"
+    },
+    {
+      "arabic": "مرج الصفر",
+      "english": "Marj al-Suffar",
+      "kind": "place"
+    },
+    {
+      "arabic": "قنطرة أم حكيم",
+      "english": "Bridge of Umm Hakim",
+      "kind": "place"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "السجزي",
+      "english": "al-Sijzi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن شهاب",
+      "english": "Ibn Shihab",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم بنت الحارث",
+      "english": "Umm Hakim bint al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "عكرمة",
+      "english": "Ikrima",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاختة بنت الوليد بن المغيرة",
+      "english": "Fakhita bint al-Walid ibn al-Mughira",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفوان بن أمية",
+      "english": "Safwan ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن عقبة",
+      "english": "Musa ibn Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "مغازيه",
+      "english": "Maghazi Musa ibn Uqba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم بنت الحارث بن هشام",
+      "english": "Umm Hakim bint al-Harith ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم",
+      "english": "Umm Hakim",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

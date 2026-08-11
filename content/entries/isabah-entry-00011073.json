@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011073",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11073,
+  "title": {
+    "english": "al-Hawla the Perfumer [2]",
+    "arabic_observed": "الحولاء العطارة «٢» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011073-segment-0001",
+      "volume": 8,
+      "scan_page": 95,
+      "printed_page": 94,
+      "reader_page": 4007,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4007",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0095:1749274e3ab1cd52",
+      "arabic": "١١٠٧٣- الحولاء العطارة «٢» .\nاستدركها أبو موسى،\nوأخرج من طريق أبي الشيخ بسنده إلى زياد الثقفي، عن أنس ابن مالك، قال: كان بالمدينة امرأة عطارة تسمّى الحولاء بنت تويت، فجاءت حتى دخلت على عائشة، فقالت: يا أم المؤمنين، إنّي لأتطيّب كل ليلة وأتزيّن كأني عروس أزفّ، فأجيء حتى أدخل في لحاف زوجي أبتغي بذلك مرضاة ربي، فيحوّل وجهه عني، فأستقبله فيعرض عني، ولا أراه إلا قد أبغضني. فقالت لها عائشة: لا تبرحي حتى يجيء رسول اللَّه ﷺ، فلما جاء قال: «إنّي لأجد ريح الحولاء، فهل أتتكم؟ وهل ابتعتم منها شيئا»؟ قالت عائشة: لا، ولكن جاءت تشكو زوجها. فقال لها: «ما لك يا حولاء»؟ فذكرت له ما ذكرت لعائشة. فقال: «اذهبي أيّتها المرأة فاسمعي وأطيعي لزوجك» . قالت: يا رسول اللَّه، فما لي من الأجر؟ فذكر الحديث في حق الزوج على المرأة والمرأة على الزوج وما لها في الحمل والولادة والفطام بطوله.\nقلت: وسند هذا الحديث واه جدا. وقد ذكره البزار، وقال: زياد الثقفي راويه بصري متروك الحديث.",
+      "english": "11073—al-Hawla the Perfumer [2]\n\nAbu Musa included her as a supplementary entry.\n\nHe transmitted, by way of Abu al-Shaykh, with his chain as far as Ziyad al-Thaqafi, from Anas ibn Malik, who said: There was a woman in Medina who sold perfume, named al-Hawla bint Tuwayt. She came and entered upon Aisha, saying, “O Mother of the Believers, every night I perfume and adorn myself as though I were a bride being conducted to her husband. Then I come and enter beneath my husband’s covering, seeking thereby the pleasure of my Lord, but he turns his face away from me. I face him, but he turns away from me, and I can only think that he has come to hate me.” Aisha told her, “Do not leave until the Messenger of Allah—may Allah bless him and grant him peace—comes.” When he came, he said, “I can smell the fragrance of al-Hawla. Has she come to you? Have you bought anything from her?” Aisha said, “No, but she came to complain about her husband.” He said to her, “What is the matter with you, O Hawla?” She related to him what she had related to Aisha. He said, “Go, woman, and hear and obey your husband.” She asked, “O Messenger of Allah, what reward will I receive?” He then related at length the hadith concerning the husband’s rights over the wife, the wife’s rights over the husband, and the reward due to her for pregnancy, childbirth, and weaning.\n\nI say: The chain of this hadith is exceedingly weak. Al-Bazzar mentioned it and said: “Ziyad al-Thaqafi, its transmitter, was a Basran whose hadith was abandoned.”",
+      "arabic_sha256": "2f240f2ef1c1d3c142d04fc3e0b3b2f5f244f7cbf1d0c091f2440f4263f5e1a4",
+      "english_sha256": "5811cfdc164279a67a2082f8d2ccb699a886fce2e49132dc746830ce0f89c9a3",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحولاء بنت تويت",
+      "english": "al-Hawla bint Tuwayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الحولاء العطارة",
+      "english": "al-Hawla the Perfumer",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الشيخ",
+      "english": "Abu al-Shaykh",
+      "kind": "person"
+    },
+    {
+      "arabic": "زياد الثقفي",
+      "english": "Ziyad al-Thaqafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس بن مالك",
+      "english": "Anas ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "البزار",
+      "english": "al-Bazzar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحولاء",
+      "english": "al-Hawla",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

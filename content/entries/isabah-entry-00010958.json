@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010958",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10958,
+  "title": {
+    "english": "Tumadir bint 'Amr ibn al-Tharid al-Sulamiyya",
+    "arabic_observed": "تماضر بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010958-segment-0001",
+      "volume": 8,
+      "scan_page": 58,
+      "printed_page": 57,
+      "reader_page": 3970,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3970",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0058:aa2b06b94678dc20",
+      "arabic": "١٠٩٥٨- تماضر بنت عمرو\nبن الثريد السلمية «٢» . هي الخنساء الشاعرة. تأتي في حرف الخاء المعجمة.",
+      "english": "10958—Tumadir bint 'Amr ibn al-Tharid al-Sulamiyya\n\nShe is al-Khansa, the poet. She will appear under the dotted letter kha.",
+      "arabic_sha256": "8c7018edddc7e710055be9d7e7069aa71e4b2352b5a2c9f4293ea9a6eb56898b",
+      "english_sha256": "26ce8721d0bb2084015c690e9df306b4f76ff587e08e9e5c1d86614d293cde8c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "تماضر بنت عمرو بن الثريد السلمية",
+      "english": "Tumadir bint 'Amr ibn al-Tharid al-Sulamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخنساء",
+      "english": "al-Khansa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

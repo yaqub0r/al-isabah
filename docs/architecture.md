@@ -32,9 +32,10 @@ Evidence records are append-only. A correction creates a new record that cites
 the superseded record. Canonical Arabic bytes are never normalized in place.
 Every localized artifact has a SHA-256 digest and edition/witness identity.
 
-Large source binaries may use Git LFS initially. They are excluded from normal
-web deployment builds. A future object store may serve binaries, but the
-repository retains hash-bound acquisition metadata sufficient to verify them.
+Large source binaries and bulky generated evidence use the content-addressed
+object-store contract in ADR 0002. They are excluded from Git and normal web
+deployment builds. The repository retains hash-bound acquisition metadata
+sufficient to hydrate and verify exactly the evidence used for a decision.
 
 ### 2. Canonical editorial dataset
 

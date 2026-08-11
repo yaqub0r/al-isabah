@@ -1,0 +1,164 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012265",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12265,
+  "title": {
+    "english": "Umm Ma'bad:",
+    "arabic_observed": "أم معبد:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012265-segment-0001",
+      "volume": 8,
+      "scan_page": 478,
+      "printed_page": 477,
+      "reader_page": 4390,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4390",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0478:212e528550967186",
+      "arabic": "١٢٢٦٥- أم معبد:\nمولاة قرظة بن كعب الأنصارية «٢» .\nقال ابن مندة: في صحبتها خلاف،\nوأورد من طريق موسى بن محمد الأنصاري، عن يحيى بن الحارث التيمي، عن أم معبد، مولى قرظة، قالت: كنت أسقي ناسا من أصحاب رسول اللَّه ﵌، منهم معاذ بن جبل نبيذ الذرة، فقيل لها: فأين ما يذكر من المزفت؟ فقالت: إن المحرّم لما أحل اللَّه كالمستحل لما حرم اللَّه. أما الدباء فهو القرع، وأما الحنتم فحناتم «٣» بأرض العجم، وأما النّقير فأصول النخل، فهذا الّذي نهى عنه رسول\n(١) ينظر البيتان في الاستيعاب ترجمة رقم (٣٦٧٧) والشعر في ديوان حسان بن ثابت ص ٨٦، سيرة ابن هشام ٢/ ١٠١.\n(٢) أسد الغابة ت (٧٦٠٦) .\n(٣) الحنتم: جرار مدهونة خضر كانت تحمل الخمر فيها إلى المدينة ثم اتسع فيها فقيل للخزف كلّه حنتم. النهاية ١/ ٤٤٨.",
+      "english": "12265—Umm Ma'bad:\n\nThe Ansari client of Quraza ibn Ka'b.²\n\nIbn Manda said: There is disagreement over whether she was a Companion.\n\nHe cited, through Musa ibn Muhammad al-Ansari, from Yahya ibn al-Harith al-Taymi, from Umm Ma'bad, the client of Quraza, who said: “I used to give millet nabidh to some of the Companions of the Messenger of Allah—may Allah bless him and grant him peace—including Mu'adh ibn Jabal.” She was asked: “Then what of what is related concerning pitch-coated vessels?” She replied: “One who declares unlawful what Allah has made lawful is like one who declares lawful what Allah has made unlawful. As for gourds, they are pumpkins; as for hantam, they are jars found in the land of the Persians;³ and as for hollowed palm trunks, they are the bases of palm trees. It is this that was forbidden by the Messenger of—\n\n¹ See the two verses in al-Isti'ab, biography no. 3677. The poem is in the Diwan of Hassan ibn Thabit, p. 86, and Sirat Ibn Hisham, 2/101.\n\n² Usd al-Ghaba, entry no. 7606.\n\n³ Hantam: green, coated earthenware jars in which wine used to be transported to Medina. The term was later extended in meaning, and all earthenware came to be called hantam. al-Nihaya, 1/448.",
+      "arabic_sha256": "7725e27c031da159291df4246d9aac2927b6168c3120af276b8b993d5ed7e7e3",
+      "english_sha256": "3351c58c778086008e13ba44694960cf1a8a69e8bf9917d24175e6aa9d26b3fb",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012265-segment-0002",
+      "volume": 8,
+      "scan_page": 479,
+      "printed_page": 478,
+      "reader_page": 4391,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4391",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0479:f0ec8b9772680ce2",
+      "arabic": "اللَّه ﵌،\nوتردد ابن السكن: هل هي أم معبد التي روت في الدعاء- وستأتي قريبا؟ أو غيرها.",
+      "english": "of Allah, may Allah bless him and grant him peace,\n\nIbn al-Sakan hesitated as to whether she was the Umm Ma'bad who narrated the supplication—she will appear shortly—or someone else.",
+      "arabic_sha256": "3896d5a4793acc8c9e2cae287ebf53880a225115f4e2b2140869166d49bf826b",
+      "english_sha256": "46e1ef57198d3547da5a4bd98f18ea1f0424300aca3d38efd509788659efaae2",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "قرظة بن كعب",
+      "english": "Quraza ibn Ka'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن محمد الأنصاري",
+      "english": "Musa ibn Muhammad al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن الحارث التيمي",
+      "english": "Yahya ibn al-Harith al-Taymi",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاذ بن جبل",
+      "english": "Mu'adh ibn Jabal",
+      "kind": "person"
+    },
+    {
+      "arabic": "العجم",
+      "english": "Persians",
+      "kind": "other"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "ديوان حسان بن ثابت",
+      "english": "Diwan of Hassan ibn Thabit",
+      "kind": "work"
+    },
+    {
+      "arabic": "حسان بن ثابت",
+      "english": "Hassan ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "سيرة ابن هشام",
+      "english": "Sirat Ibn Hisham",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن هشام",
+      "english": "Ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد مولاة قرظة",
+      "english": "Umm Ma'bad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد زوج كعب بن مالك",
+      "english": "Umm Ma'bad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد غير منسوبة",
+      "english": "Umm Ma'bad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد",
+      "english": "Umm Ma'bad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

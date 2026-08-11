@@ -1,0 +1,104 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011155",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11155,
+  "title": {
+    "english": "Da'd bint 'Amir",
+    "arabic_observed": "دعد بنت عامر ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011155-segment-0001",
+      "volume": 8,
+      "scan_page": 129,
+      "printed_page": 128,
+      "reader_page": 4041,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4041",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0129:8db13b7363ef85f9",
+      "arabic": "١١١٥٥- دعد بنت عامر ،\nوقيل بنت عبيد بن دهمان، وهي أم رومان، والدة عائشة.\nتأتي في «الكنى» .\nالقسم الثاني خال، وكذا القسم الثالث\n(١) أخرجه ابن عدي في الكامل ٧/ ٢٧١٧ والذهبي في ميزان الاعتدال حديث رقم ٩٧٢٦.\n(٢) أخرجه أحمد ٦/ ٤٣٢، وانظر المجمع ٧/ ٢٦٣.",
+      "english": "11155—Da'd bint 'Amir\n\nIt is also said that she was Da'd bint 'Ubayd ibn Dahman. She was Umm Ruman, the mother of Aisha.\n\nShe will appear under “Kunyas.”\n\nTHE SECOND SECTION IS EMPTY, AS IS THE THIRD\n\n[1] Reported by Ibn 'Adi in al-Kamil, 7/2717, and by al-Dhahabi in Mizan al-I'tidal, hadith no. 9726.\n\n[2] Reported by Ahmad, 6/432; see also al-Majma', 7/263.",
+      "arabic_sha256": "c59dface6526954e41a19cec218791da7847537bf9775a23ba03ada35cb99775",
+      "english_sha256": "2b3931529bb388f9645dea1df04ddfc55b05b1ffd2329d6cc5d81483c4493d21",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011155-segment-0002",
+      "volume": 8,
+      "scan_page": 130,
+      "printed_page": 129,
+      "reader_page": 4042,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4042",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0130:344bc7521497372a",
+      "arabic": "القسم الرابع",
+      "english": "SECTION FOUR",
+      "arabic_sha256": "0b186da367d0cac1b2f8f8349004cc083e7a88764112cc9bfddf266313e587f8",
+      "english_sha256": "b6179fda7f390cbc0b4953e4a59c97bc60676488062dc133ae8042ee889eb6cf",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن عديّ",
+      "english": "Ibn 'Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكامل",
+      "english": "al-Kamil",
+      "kind": "work"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "دعد بنت عامر",
+      "english": "Da'd bint 'Amir",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنت عبيد بن دهمان",
+      "english": "Da'd bint 'Ubayd ibn Dahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم رومان",
+      "english": "Umm Ruman",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميزان الاعتدال",
+      "english": "Mizan al-I'tidal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المجمع",
+      "english": "al-Majma'",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

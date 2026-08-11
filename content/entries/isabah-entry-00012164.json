@@ -1,0 +1,149 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012164",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12164,
+  "title": {
+    "english": "Umm 'Uthman bint Khuthaym,",
+    "arabic_observed": "أم عثمان بنت خثيم:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012164-segment-0001",
+      "volume": 8,
+      "scan_page": 435,
+      "printed_page": 434,
+      "reader_page": 4347,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4347",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0435:68b332c74d74bc6f",
+      "arabic": "١٢١٦٤- أم عثمان بنت خثيم:\nالخزاعيّة» .\nذكرها المستغفريّ،\nوأخرج من طريق الحسين بن الحسن المروزي، عن وهب بن جرير، عن أبيه: سمعت قيس بن سعد يحدث عن عطاء، عن أم عثمان بنت خيثم الخزاعية- أنها سألت النّبيّ ﵌ عن العقيقة، فقال: «عن الغلام شاتان مكافئتان، وعن الجارية شاة» «٤» .\n(١) أسد الغابة ت (٧٥٣٢) .\n(٢) أسد الغابة ت (٧٥٣٤) .\n(٣) أسد الغابة ت (٧٥٣٥)، تجريد أسماء الصحابة ٢/ ٣٢٨.\n(٤) أخرجه النسائي في السنن ٧/ ١٦٥ عن أم كرز كتاب العقيقة باب العقيقة عن الغلام (٢) حديث رقم ٤٢١٥ والطبراني في الكبير ١١/ ١٥٠، والمتقي الهندي في كنز العمال حديث رقم ٤٥٢٨٧، ٤٥٢٩٩.",
+      "english": "12164 — Umm 'Uthman bint Khuthaym,\n\nthe Khuza'i woman.[3]\n\nal-Mustaghfiri mentioned her and transmitted, by way of al-Husayn ibn al-Hasan al-Marwazi, from Wahb ibn Jarir, from his father: I heard Qays ibn Sa'd narrating from 'Ata', from Umm 'Uthman bint Khaytham, the Khuza'i woman, that she asked the Prophet—may Allah bless him and grant him peace—about the 'aqiqa. He said: “For a boy, two equivalent sheep, and for a girl, one sheep.”[4]\n\n[1] Usd al-Ghaba, entry 7532.\n\n[2] Usd al-Ghaba, entry 7534.\n\n[3] Usd al-Ghaba, entry 7535; al-Tajrid, 2/328.\n\n[4] al-Nasa'i transmitted it in al-Sunan, 7/165, from Umm Kurz, in the Book of the 'Aqiqa, chapter “The 'Aqiqa for a Boy” (2), hadith no. 4215; al-Tabarani in al-Mu'jam al-Kabir, 11/150; and al-Muttaqi al-Hindi in Kanz al-'Ummal, hadith nos. 45287 and 45299.",
+      "arabic_sha256": "d9941266e40646fb355419143fa926b44d16c9c66d43109e0960891ed8df0ab2",
+      "english_sha256": "beda9ba672f6693e643b8f9db48f2f9c535c9bf4b43e42917c6f0fb7bd18e9a2",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012164-segment-0002",
+      "volume": 8,
+      "scan_page": 436,
+      "printed_page": 435,
+      "reader_page": 4348,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4348",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0436:1bbcac580ca9ef55",
+      "arabic": "قال أبو موسى- بعد تخريجه: هذا الحديث يعرف بأم كرز.\nقلت: وهي خزاعيّة أيضا. وسيأتي ذكرها ومن أخرج حديثها.",
+      "english": "Abu Musa said, after transmitting it: “This hadith is known as the hadith of Umm Kurz.”\n\nI say: She too was of Khuza'a. Her entry, and those who transmitted her hadith, will appear below.",
+      "arabic_sha256": "1ca6a79dfbb27855c72f4371130298c234474284d4521af83ab4794126646f71",
+      "english_sha256": "b6867d2efdd7b3dd939539548acd5a2d74a06e68db9a2979d9dc2a13b8a027f6",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم عثمان بنت خثيم",
+      "english": "Umm 'Uthman bint Khuthaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخزاعيّة",
+      "english": "Khuza'a",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "المستغفريّ",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسين بن الحسن المروزي",
+      "english": "al-Husayn ibn al-Hasan al-Marwazi",
+      "kind": "person"
+    },
+    {
+      "arabic": "وهب بن جرير",
+      "english": "Wahb ibn Jarir",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس بن سعد",
+      "english": "Qays ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاء",
+      "english": "'Ata'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عثمان بنت خيثم",
+      "english": "Umm 'Uthman bint Khaytham",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "al-Sunan",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم كرز",
+      "english": "Umm Kurz",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Mu'jam al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-'Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "خزاعيّة",
+      "english": "Khuza'a",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

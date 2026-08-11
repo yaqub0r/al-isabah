@@ -1,0 +1,143 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010943",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10943,
+  "title": {
+    "english": "al-Baghum,(2)",
+    "arabic_observed": "البغوم «٢»،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010943-segment-0001",
+      "volume": 8,
+      "scan_page": 53,
+      "printed_page": 52,
+      "reader_page": 3965,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3965",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0053:89f56c72ae8a0c23",
+      "arabic": "١٠٩٤٣- البغوم «٢»،\nبفتح أوله وضم المعجمة، بنت المعذّل، واسمه خالد بن عمرو بن سفيان بن الحارث بن زبان بن عبد ياليل الكنانية، من بني الحارث بن عبد مناة بن كنانة، امرأة صفوان بن أمية بن خلف الجمحيّ، وهي أم أولاده: عبد اللَّه الأصغر، وصفوان، وعمرو. أسلمت يوم الفتح، قاله الواقدي، واستدركها ابن الأثير على أبي علي الجياني.\nقلت: أسند الواقديّ ذلك من طريق موسى بن عقبة، عن أبي حبيب مولى الزبير عن ابن الزبير، قال: أسلمت البغوم بنت المعذّل الكنانية امرأة صفوان بن أمية، وهرب صفوان حتى أتى السفينة، فذكر قصة خوفه ثم إسلامه بعد وقعة حنين.\nوقال ابن سعد: أسلمت وبايعت في حجة الوداع. وقيل أسلمت يوم الفتح، ثم أسند ذلك عن الواقدي.",
+      "english": "10943—al-Baghum,(2)\n\nwith the first letter bearing fatha and the ghayn bearing damma, bint al-Mu'adhdhal—whose name was Khalid ibn Amr ibn Sufyan ibn al-Harith ibn Zabban ibn Abd Yalil—the Kinani woman, of the Banu al-Harith ibn Abd Manat ibn Kinana. She was the wife of Safwan ibn Umayya ibn Khalaf al-Jumahi and the mother of his children: Abd Allah the Younger, Safwan, and Amr. She embraced Islam on the Day of the Conquest, according to al-Waqidi. Ibn al-Athir added her as a supplement to Abu Ali al-Jayyani.\n\nI said: Al-Waqidi transmitted that with a chain of transmission by way of Musa ibn Uqba, from Abu Habib, the client of al-Zubayr, from Ibn al-Zubayr, who said: “Al-Baghum bint al-Mu'adhdhal al-Kinaniyya, the wife of Safwan ibn Umayya, embraced Islam. Safwan fled until he reached the ship.” He then related the account of Safwan's fear and his subsequent acceptance of Islam after the Battle of Hunayn.\n\nIbn Sa'd said: “She embraced Islam and pledged allegiance during the Farewell Pilgrimage.” It is also said that she embraced Islam on the Day of the Conquest; he then transmitted that with a chain from al-Waqidi.",
+      "arabic_sha256": "0fad9a6bf4cc5c18c9d51ea5069ff1317c16d64a3b5d65151b0ede1a6bd839b6",
+      "english_sha256": "4f2b838845aea222454f8eb018e8b5903c96f478c4b25ffafa6a720e1158848e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "البغوم بنت المعذّل الكنانية",
+      "english": "al-Baghum bint al-Mu'adhdhal al-Kinaniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد بن عمرو بن سفيان بن الحارث بن زبان بن عبد ياليل",
+      "english": "Khalid ibn Amr ibn Sufyan ibn al-Harith ibn Zabban ibn Abd Yalil",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني الحارث بن عبد مناة بن كنانة",
+      "english": "Banu al-Harith ibn Abd Manat ibn Kinana",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "صفوان بن أمية بن خلف الجمحي",
+      "english": "Safwan ibn Umayya ibn Khalaf al-Jumahi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه الأصغر",
+      "english": "Abd Allah the Younger",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفوان",
+      "english": "Safwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو",
+      "english": "Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "يوم الفتح",
+      "english": "Day of the Conquest",
+      "kind": "other"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو علي الجياني",
+      "english": "Abu Ali al-Jayyani",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن عقبة",
+      "english": "Musa ibn Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو حبيب",
+      "english": "Abu Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الزبير",
+      "english": "Ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "وقعة حنين",
+      "english": "Battle of Hunayn",
+      "kind": "other"
+    },
+    {
+      "arabic": "حجة الوداع",
+      "english": "Farewell Pilgrimage",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "زبان",
+      "explanation": "The available evidence does not establish the vocalization or whether the b is doubled. Zabban is retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0053:89f56c72ae8a0c23"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

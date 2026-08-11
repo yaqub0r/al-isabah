@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011464",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11464,
+  "title": {
+    "english": "Aisha bint Abu Sufyan",
+    "arabic_observed": "عائشة بنت أبي سفيان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011464-segment-0001",
+      "volume": 8,
+      "scan_page": 237,
+      "printed_page": 236,
+      "reader_page": 4149,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4149",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0237:b884cdae99928e6f",
+      "arabic": "١١٤٦٤- عائشة بنت أبي سفيان\nبن الحارث بن زيد الأنصارية «١»، من بني عبد الأشهل.\nذكرها ابن حبيب في المبايعات.",
+      "english": "11464—Aisha bint Abu Sufyan\nibn al-Harith ibn Zayd al-Ansariyya,[1] of Banu Abd al-Ashhal.\nIbn Habib mentioned her among the women who gave the pledge.",
+      "arabic_sha256": "172c308786300ffd96402bfb6a31b6260dd691370d562824917e1ca6fdb13761",
+      "english_sha256": "2e784440fffc717303d2ced9d883fb2c14ad31f820ccac40c6abf8ed2b86c2f3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بنو عبد الأشهل",
+      "english": "Banu Abd al-Ashhal",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

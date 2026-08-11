@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012257",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12257,
+  "title": {
+    "english": "Umm al-Musayyib al-Ansariyya (5):",
+    "arabic_observed": "أم المسيّب الأنصارية «٥»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012257-segment-0001",
+      "volume": 8,
+      "scan_page": 475,
+      "printed_page": 474,
+      "reader_page": 4387,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4387",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0475:11ef9a2168013d2a",
+      "arabic": "١٢٢٥٧- أم المسيّب الأنصارية «٥»\n: روى حديثها جابر في الحمى والنهي عن سبها. تقدم ذكرها في أم السائب.",
+      "english": "12257 — Umm al-Musayyib al-Ansariyya (5):\n\nJabir narrated her hadith concerning fever and the prohibition against reviling it. She was previously mentioned under Umm al-Sa'ib.",
+      "arabic_sha256": "efb2c8a41b32551a421d3c2ccd6be3157a1fb2cba2342c0f88d1dc251326daea",
+      "english_sha256": "5fe2ffd743c28d3d6e4579eaa664e115927404bc3940c1f35f3166275d7a1ff1",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم المسيب الأنصارية",
+      "english": "Umm al-Musayyib al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر",
+      "english": "Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم السائب",
+      "english": "Umm al-Sa'ib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

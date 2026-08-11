@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010929",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10929,
+  "title": {
+    "english": "Barra bint Amir",
+    "arabic_observed": "برّة بنت عامر"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010929-segment-0001",
+      "volume": 8,
+      "scan_page": 50,
+      "printed_page": 49,
+      "reader_page": 3962,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3962",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0050:12c822ca7d9d3ce6",
+      "arabic": "١٠٩٢٩- برّة بنت عامر\nبن الحارث بن السّباق بن عبد الدار بن قصيّ القرشية العبدرية.\nقال أبو عمر: كانت تحت أبي إسرائيل، من بني الحارث، الّذي جاء في قصته الحديث في النذر، فولدت له إسرائيل، فقتل يوم الجمل، وكانت برّة بنت عامر من المهاجرات.",
+      "english": "10929—Barra bint Amir\nibn al-Harith ibn al-Sibaq ibn Abd al-Dar ibn Qusayy, a woman of Quraysh from Banu Abd al-Dar.\n\nAbu Umar said: She was married to Abu Isra'il, of Banu al-Harith, the man whose story occurs in the hadith concerning a vow. She bore him Isra'il, who was killed on the Day of the Camel. Barra bint Amir was one of the women who emigrated.",
+      "arabic_sha256": "b5b443b099edd1c99aefd4035c561b41754a40c8e03788d42f58f454fa3312a3",
+      "english_sha256": "f135cac8f21c9f16fa083ad6143de5d868fa01ff6326c49dd3eb19ab8aac84e1",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "العبدرية",
+      "english": "Banu Abd al-Dar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو إسرائيل",
+      "english": "Abu Isra'il",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني الحارث",
+      "english": "Banu al-Harith",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "إسرائيل",
+      "english": "Isra'il",
+      "kind": "person"
+    },
+    {
+      "arabic": "يوم الجمل",
+      "english": "Day of the Camel",
+      "kind": "other"
+    },
+    {
+      "arabic": "برة",
+      "english": "Barra",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

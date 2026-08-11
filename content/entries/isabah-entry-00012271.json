@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012271",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12271,
+  "title": {
+    "english": "Umm al-Mughira bint Nawfal ibn al-Harith ibn 'Abd al-Muttalib, the Hashimite woman.¹",
+    "arabic_observed": "أم المغيرة بنت نوفل"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012271-segment-0001",
+      "volume": 8,
+      "scan_page": 481,
+      "printed_page": 480,
+      "reader_page": 4393,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4393",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0481:564bbdd8f60f6676",
+      "arabic": "١٢٢٧١- أم المغيرة بنت نوفل\nبن الحارث بن عبد المطّلب الهاشميّة «١» .\nتقدّم ذكرها في ترجمة أبي البراد مولى تميم الدّاري في الكنى، وأنّ النبيّ ﵌ زوجها لتميم بإذن والدها، ووقع في التجريد تبعا لأصله: أم المغيرة بن نوفل، وعزاه لأبي موسى، وهو تصحيف، والصّواب بنت نوفل كما ذكرت، وكذا هو في ذيل أبي موسى.",
+      "english": "12271—Umm al-Mughira bint Nawfal ibn al-Harith ibn 'Abd al-Muttalib, the Hashimite woman.¹\n\nShe was previously mentioned in the entry on Abu al-Barrad, the client of Tamim al-Dari, among the kunyas of men: the Prophet—may Allah bless him and grant him peace—gave her in marriage to Tamim with her father's permission. In al-Tajrid, following its source, it appears as “Umm al-Mughira ibn Nawfal,” and the entry is attributed to Abu Musa. This is a scribal corruption; the correct reading is “bint Nawfal,” as I have stated, and so it also appears in Abu Musa's al-Dhayl.",
+      "arabic_sha256": "2ede65ec70cc46f2e0ca55f7680fe2a669766cdeda546477d55703b190de7e68",
+      "english_sha256": "04a4d4db7178b2e2a90660a88f8d0047b9d07b11e6627eab9852340df818588b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم المغيرة بنت نوفل بن الحارث بن عبد المطّلب",
+      "english": "Umm al-Mughira bint Nawfal ibn al-Harith ibn 'Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو البراد",
+      "english": "Abu al-Barrad",
+      "kind": "person"
+    },
+    {
+      "arabic": "تميم الداري",
+      "english": "Tamim al-Dari",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم المغيرة بن نوفل",
+      "english": "Umm al-Mughira ibn Nawfal",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ذيل أبي موسى",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهاشميّة",
+      "english": "Banu Hashim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

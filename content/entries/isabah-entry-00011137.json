@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011137",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11137,
+  "title": {
+    "english": "Khawla bint Yasar (2)",
+    "arabic_observed": "خولة بنت يسار «٢» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011137-segment-0001",
+      "volume": 8,
+      "scan_page": 122,
+      "printed_page": 121,
+      "reader_page": 4034,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4034",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0122:11763e3024b485cc",
+      "arabic": "١١١٣٧- خولة بنت يسار «٢» .\nلها ذكر في حديث أبي هريرة.\nأخرجه ابن وهب، عن ابن لهيعة، عن يزيد بن أبي حبيب، عن عيسى بن طلحة، عن أبي هريرة- أن خولة بنت يسار قالت: يا رسول اللَّه، إن أثر الدم لا يخرج من ثوبي، فقال: «لا يضرّك» .\nذكره ابن مندة، ووصله أبو نعيم. وسيأتي لها ذكر في التي بعدها.",
+      "english": "11137—Khawla bint Yasar (2)\n\nShe is mentioned in a hadith of Abu Hurayra.\n\nThis was transmitted by ibn Wahb, from ibn Lahi'a, from Yazid ibn Abi Habib, from Isa ibn Talha, from Abu Hurayra: Khawla bint Yasar said, “O Messenger of Allah, the trace of blood does not come out of my garment.” He replied, “It will not harm you.”\n\nIt was mentioned by ibn Manda, and Abu Nu'aym transmitted it with a connected chain. She will also be mentioned in the entry that follows.",
+      "arabic_sha256": "c75ec04e1c6c56a867e5927acb983afeeae8f545b05dcaa62cf351c0a82740b3",
+      "english_sha256": "687fe49e52ec614ed79f80bd72456bfaa430786a8b6a684a378ea77cfb6c060a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خولة بنت يسار",
+      "english": "Khawla bint Yasar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو هريرة",
+      "english": "Abu Hurayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن وهب",
+      "english": "ibn Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن لهيعة",
+      "english": "ibn Lahi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن أبي حبيب",
+      "english": "Yazid ibn Abi Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عيسى بن طلحة",
+      "english": "Isa ibn Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

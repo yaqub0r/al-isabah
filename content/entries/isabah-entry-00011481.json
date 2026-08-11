@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011481",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11481,
+  "title": {
+    "english": "Asma bint al-Harith al-Hilaliyya:",
+    "arabic_observed": "عصماء بنت الحارث الهلالية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011481-segment-0001",
+      "volume": 8,
+      "scan_page": 241,
+      "printed_page": 240,
+      "reader_page": 4153,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4153",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0241:113d0f7890ed0c15",
+      "arabic": "١١٤٨١- عصماء بنت الحارث الهلالية:\nهي أم خالد بن الوليد، ويقال لها لبابة الصغرى.\nذكر ذلك ابن الكلبيّ، وستأتي في اللام إن شاء اللَّه تعالى.",
+      "english": "11481—Asma bint al-Harith al-Hilaliyya:\n\nShe was the mother of Khalid ibn al-Walid, and she was also called Lubaba al-Sughra.\n\nIbn al-Kalbi mentioned this. She will appear under the letter lam, Allah Most High willing.",
+      "arabic_sha256": "2bc6258bee69a5c27e5c9572a6b7007e5a92f4708b1a57330fafe3a84a33bd5f",
+      "english_sha256": "c4398df47b2762064d541938535771fa0ec5d78f7e9e4ce3c5ce6139118ba0da",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عصماء بنت الحارث الهلالية",
+      "english": "Asma bint al-Harith al-Hilaliyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد بن الوليد",
+      "english": "Khalid ibn al-Walid",
+      "kind": "person"
+    },
+    {
+      "arabic": "لبابة الصغرى",
+      "english": "Lubaba al-Sughra",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الكلبي",
+      "english": "Ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد",
+      "english": "Khalid ibn al-Bukayr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

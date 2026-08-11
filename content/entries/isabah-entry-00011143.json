@@ -1,0 +1,274 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011143",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11143,
+  "title": {
+    "english": "Khayra bint Abi Hadrad,",
+    "arabic_observed": "خيرة بنت أبي حدرد ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011143-segment-0001",
+      "volume": 8,
+      "scan_page": 124,
+      "printed_page": 123,
+      "reader_page": 4036,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4036",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0124:be7e73d2da8c3ecc",
+      "arabic": "١١١٤٣- خيرة بنت أبي حدرد ،\nأم الدرداء الكبرى «٤» .\nسماها أحمد بن حنبل، ويحيى بن معين فيما رواه ابن أبي خيثمة عنهما وقالا: اسم أبي حدرد عبد. وقال أم الدرداء الصغرى اسمها هجيمة، وقال غيرها جهيمة. وقال أبو عمر: كانت أمّ الدرداء الكبرى من فضلى النساء وعقلائهن، وذات الرأي فيهن مع العبادة والنسك، توفيت قبل أبي الدرداء. وذلك بالشام في خلافة عثمان، وكانت حفظت عن النبي ﷺ، وعن زوجها.\nروى عنها جماعة من التابعين، منهم ميمون بن مهران، وصفوان بن عبد اللَّه، وزيد بن أسلم، قال: وأم الدرداء الصغرى لا أعلم لها خبرا يدلّ على صحبة ولا رؤية، ومن خبرها أنّ معاوية خطبها بعد أبي الدرداء، فأبت أن تتزوّجه.\nقلت: وروى ذلك أبو الزاهرية، عن جبير بن نفير، عن أم الدرداء أنها قالت لأبي الدرداء: إنك خطبتني إلى أبي في الدنيا فأنكحوني، وإني أخطبك إلى نفسك في الآخرة، قال: فلا تنكحي بعدي، فخطبها معاوية فأخبرته بالذي كان، فقال لها: عليك بالصيام، ولها ترجمة حافلة في تاريخ ابن عساكر. والّذي ذكر أبو عمر أنهم رووا عن أم الدرداء الكبرى وهم، إنما هم من الرواة عن الصغرى إلا ميمون بن مهران، فإنه أدركها، وروى عنها، وبذلك جزم المزي وغيره.\n(١) غير متعتع- بفتح التاء- أي من غير أن يصيبه أذى يقلقه ويزعجه- اللسان/ ١/ ٤٣٤.\n(٢) النون: الحوت والجمع أنوان ونينان. اللسان ٦/ ٤٥٨٦.\n(٣) في أ: خويلة.\n(٤) الثقات ٣/ ١١٦، أعلام النساء ١/ ٣٣٧، تجريد أسماء الصحابة ٢/ ٢٦٦، أزمنة التاريخ الإسلامي ٩٧٤.",
+      "english": "11143 — Khayra bint Abi Hadrad,\n\nthe elder Umm al-Darda.⁴\n\nAhmad ibn Hanbal and Yahya ibn Ma'in gave this as her name, according to what Ibn Abi Khaythama related from the two of them. They also said that Abu Hadrad's name was 'Abd. They said that the younger Umm al-Darda was named Hujayma, while others said Juhayma. Abu 'Umar said: The elder Umm al-Darda was among the most virtuous and intelligent of women and among those possessed of sound judgment, in addition to her worship and ascetic devotion. She died before Abu al-Darda, in al-Sham during the caliphate of 'Uthman. She had preserved reports from the Prophet, may Allah bless him and grant him peace, and from her husband.\n\nA group of the Successors narrated from her, among them Maymun ibn Mihran, Safwan ibn 'Abd Allah, and Zayd ibn Aslam. He said: As for the younger Umm al-Darda, I know of no report concerning her that indicates that she was a Companion or had seen the Prophet. Among the reports about her is that Mu'awiya sought her hand after Abu al-Darda, but she refused to marry him.\n\nI say: Abu al-Zahiriya related this from Jubayr ibn Nufayr, from Umm al-Darda, who said to Abu al-Darda: “You sought my hand from my father in this world, and they married me to you. Now I seek your hand from you yourself for the Hereafter.” He said: “Then do not marry after me.” Mu'awiya subsequently sought her hand, and she informed him of what had occurred. He said to her: “You should fast.” She has an extensive biographical notice in the History of Ibn 'Asakir. Abu 'Umar's statement that those persons narrated from the elder Umm al-Darda is an error. They are, in fact, among the narrators from the younger Umm al-Darda, with the exception of Maymun ibn Mihran, who lived long enough to meet the elder and narrated from her. Al-Mizzi and others stated this categorically.\n\n¹ “Without being troubled” (ghayr mutata'ta')—with the letter ta bearing a fatha—means without suffering harm that causes him anxiety and distress. al-Lisan, 1/434.\n\n² Nun means “a fish”; its plurals are anwan and ninan. al-Lisan, 6/4586.\n\n³ In manuscript A: Khuwayla.\n\n⁴ al-Thiqat, 3/116; A'lam al-Nisa', 1/337; al-Tajrid, 2/266; Azminat al-Tarikh al-Islami, 974.",
+      "arabic_sha256": "17a600a3a4f065226a379ac22480e40364caccd4e64d79e1a072d5fa54db3901",
+      "english_sha256": "e930569f0c09cc925a8eb1442f1798f66aa672b962973f36795af74db1e30fe3",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011143-segment-0002",
+      "volume": 8,
+      "scan_page": 125,
+      "printed_page": 124,
+      "reader_page": 4037,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4037",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0125:99ed85a30764fea4",
+      "arabic": "وقال ابن مندة: خيرة أم الدرداء، وقيل اسمها هجيمة. وتعقّبه ابن الأثير. وقال علي بن المديني: كان لأبي الدرداء امرأتان كلتاهما يقال لهما أم الدرداء: إحداهما رأت النبيّ ﷺ، وهي خيرة بنت أبي حدرد، والثانية تزوّجها بعد وفاة النبيّ ﷺ، وهي هجيمة الوصابية.\nقال أبو مسهر: هما واحدة، ووهم في ذلك. وقال ابن ماكولا: أم الدرداء الكبرى لها صحبة، وماتت قبل أبي الدرداء، والصغرى هي التي خطبها معاوية.\nوأورد ابن مندة لأم الدّرداء حديثا مرفوعا، من طريق شريك، عن خلف بن حوشب، عن ميمون بن مهران، قال: قلت: لأم الدرداء: سمعت من النبي ﷺ شيئا؟ قالت: نعم، دخلت عليه وهو جالس في المسجد فسمعته يقول: ما يوضع في الميزان أثقل من خلق حسن «١» .\nوأخرج الطّبرانيّ من طريق زبّان بن فائد، عن سهل بن معاذ بن أنس، عن أبيه- أنه سمع أم الدرداء تقول: خرجت من الحمام فلقيني رسول اللَّه ﷺ فقال: «من أين أقبلت يا أمّ الدّرداء؟» قلت: من الحمام. قال: «ما منكنّ امرأة تضع ثيابها في غير بيت إحدى أمهاتها أو زوج إلّا كانت هاتكة كلّ ستر بينها وبين اللَّه ...» «٢»\nوسنده ضعيف جدا.",
+      "english": "Ibn Manda said: “Khayra was Umm al-Darda; and it is said that her name was Hujayma.” Ibn al-Athir criticized him for this. Ali ibn al-Madini said: “Abu al-Darda had two wives, both of whom were called Umm al-Darda. One of them saw the Prophet (may Allah bless him and grant him peace); she was Khayra bint Abi Hadrad. The second he married after the death of the Prophet (may Allah bless him and grant him peace); she was Hujayma al-Wasabiyya.”\n\nAbu Mushir said that the two were one and the same woman, but he was mistaken in this. Ibn Makula said: “The elder Umm al-Darda was a Companion and died before Abu al-Darda. The younger was the one to whom Mu'awiya proposed marriage.”\n\nIbn Manda cited for Umm al-Darda a hadith traced back to the Prophet, through Sharik, from Khalaf ibn Hawshab, from Maimun ibn Mihran, who said: I asked Umm al-Darda, “Did you hear anything from the Prophet (may Allah bless him and grant him peace)?” She replied: “Yes. I entered upon him while he was sitting in the mosque, and I heard him say: ‘Nothing placed in the Scale is heavier than good character.’” (1)\n\nAl-Tabarani transmitted, through Zabban ibn Fa'id, from Sahl ibn Mu'adh ibn Anas, from his father, that he heard Umm al-Darda say: “I came out of the bathhouse, and the Messenger of Allah (may Allah bless him and grant him peace) met me and said, ‘Where have you come from, Umm al-Darda?’ I replied, ‘From the bathhouse.’ He said, ‘There is no woman among you who removes her clothing anywhere other than the house of one of her mothers or her husband without tearing away every veil between herself and Allah …’” (2)\n\nIts chain of transmission is extremely weak.",
+      "arabic_sha256": "0de87bac5dff2673105dacd16e5238c36df420f153992244ce2541d98c2b8667",
+      "english_sha256": "76a35547feb1eb4fe95459ff6450df16f901db4b974f95bfd998a3465317c04f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "خويلة",
+      "english": "Khuwayla bint al-Aswad",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيرة بنت أبي حدرد",
+      "english": "Khayra bint Abi Hadrad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الدرداء الكبرى",
+      "english": "Umm al-Darda al-Kubra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد بن حنبل",
+      "english": "Ahmad ibn Hanbal",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن معين",
+      "english": "Yahya ibn Ma'in",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي خيثمة",
+      "english": "Ibn Abi Khaythama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو حدرد",
+      "english": "Abu Hadrad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد",
+      "english": "'Abd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الدرداء الصغرى",
+      "english": "Umm al-Darda al-Sughra",
+      "kind": "person"
+    },
+    {
+      "arabic": "هجيمة",
+      "english": "Hujayma Umm al-Darda al-Sughra",
+      "kind": "person"
+    },
+    {
+      "arabic": "جهيمة",
+      "english": "Juhayma Umm al-Darda al-Sughra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الدرداء",
+      "english": "Abu al-Darda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشام",
+      "english": "al-Sham",
+      "kind": "place"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "'Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمون بن مهران",
+      "english": "Maymun ibn Mihran",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفوان بن عبد الله",
+      "english": "Safwan ibn 'Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن أسلم",
+      "english": "Zayd ibn Aslam",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الزاهرية",
+      "english": "Abu al-Zahiriya",
+      "kind": "person"
+    },
+    {
+      "arabic": "جبير بن نفير",
+      "english": "Jubayr ibn Nufayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "تاريخ ابن عساكر",
+      "english": "History of Ibn 'Asakir",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن عساكر",
+      "english": "Ibn 'Asakir",
+      "kind": "person"
+    },
+    {
+      "arabic": "المزي",
+      "english": "al-Mizzi",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللسان",
+      "english": "al-Lisan",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أزمنة التاريخ الإسلامي",
+      "english": "Azminat al-Tarikh al-Islami",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الدرداء الكبرى",
+      "english": "Umm al-Darda the Elder",
+      "kind": "person"
+    },
+    {
+      "arabic": "هجيمة الوصابية",
+      "english": "Hujayma al-Wasabiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن المديني",
+      "english": "Ali ibn al-Madini",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو مسهر",
+      "english": "Abu Mushir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماكولا",
+      "english": "Ibn Makula",
+      "kind": "person"
+    },
+    {
+      "arabic": "شريك",
+      "english": "Sharik",
+      "kind": "person"
+    },
+    {
+      "arabic": "خلف بن حوشب",
+      "english": "Khalaf ibn Hawshab",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمون بن مهران",
+      "english": "Maimun ibn Mihran",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "زبّان بن فائد",
+      "english": "Zabban ibn Fa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهل بن معاذ بن أنس",
+      "english": "Sahl ibn Mu'adh ibn Anas",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011275",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11275,
+  "title": {
+    "english": "Sariya al-Jumahiyya",
+    "arabic_observed": "سارية الجمحية"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011275-segment-0001",
+      "volume": 8,
+      "scan_page": 171,
+      "printed_page": 170,
+      "reader_page": 4083,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4083",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0171:f4e1211b60a58c19",
+      "arabic": "١١٢٧٥- سارية الجمحية\nذكرها الدّيلميّ في «الفردوس»: ثلاثة لقيتهم: المهيمص، والجعدر، والكاهن.\nقلت: ولم يخرجه ولده، ولا وقفت له على إسناد.\n(١) أسد الغابة ت ٦٩٧٦، الاستيعاب: ت ٣٤١٢.\n(٢) الاستيعاب: ت (٣٤١٦) .",
+      "english": "11275 — Sariya al-Jumahiyya\n\nal-Daylami mentioned her in al-Firdaws: “Three whom I met: al-Muhaymis, al-Ja'dar, and the soothsayer.”\n\nI say: His son did not transmit it, nor have I found an isnad for it.\n\n[1] Usd al-Ghaba, entry 6976; al-Isti'ab, entry 3412.\n\n[2] al-Isti'ab, entry 3416.",
+      "arabic_sha256": "df55b07fc4c95390a22f2b14b2ff65e0d52a86adc64214d7044649ead767a1e7",
+      "english_sha256": "4fd0cbaf984b86db482f523fa94cfaf70c86bc7d3a442055085ef5152b3b5cf6",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سارية الجمحية",
+      "english": "Sariya al-Jumahiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدّيلميّ",
+      "english": "al-Daylami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفردوس",
+      "english": "al-Firdaws",
+      "kind": "work"
+    },
+    {
+      "arabic": "المهيمص",
+      "english": "al-Muhaymis",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجعدر",
+      "english": "al-Ja'dar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكاهن",
+      "english": "the soothsayer",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "المهيمص، والجعدر",
+      "explanation": "No supplied vocalized witness establishes the exact readings. The provisional forms “al-Muhaymis” and “al-Ja'dar” have therefore been retained.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0171:f4e1211b60a58c19"
+    },
+    {
+      "category": "quotation context",
+      "arabic_span": "ثلاثة لقيتهم: المهيمص، والجعدر، والكاهن",
+      "explanation": "The Arabic does not identify the quotation's speaker or explain its precise narrative relationship to Sariya al-Jumahiyya. No unsupported identification has been added.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0171:f4e1211b60a58c19"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

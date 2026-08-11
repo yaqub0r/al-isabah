@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011078",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11078,
+  "title": {
+    "english": "Hubshiyya,",
+    "arabic_observed": "حبشية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011078-segment-0001",
+      "volume": 8,
+      "scan_page": 97,
+      "printed_page": 96,
+      "reader_page": 4009,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4009",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0097:fef400f01af3cf16",
+      "arabic": "١١٠٧٨- حبشية ،\nبالضم وسكون الموحدة بعدها معجمة ثم تحتانية ثم مثناة ثقيلة، الخزاعية العدوية «١»، عدي خزاعة. زوج سفيان بن يعمر بن حبيب البياضي، من مهاجرة الحبشة.\nأخرجها ابن مندة هكذا، من رواية ابن لهيعة، عن أبي الأسود، عن عروة، قال أبو نعيم: كذا ذكر، وهو تصحيف، وإنما هي حسنة، بفتح المهملتين ثم نون، كما ذكر ابن إسحاق وغيره على الصواب. وكذا قوله البياضي غلط، وإنما هو الجمحيّ.\nقلت: وهو كما قال أبو نعيم.",
+      "english": "11078. Hubshiyya,\n\nwith damma on the ha and sukun on the ba, followed by shin, then ya, and then a doubled ya; al-Khuza'iyya al-'Adawiyya (1), from 'Adi of Khuza'a. She was the wife of Sufyan ibn Ya'mur ibn Habib al-Bayadi and one of the emigrants to Abyssinia.\n\nIbn Manda included her in this form, through a report of Ibn Lahi'a, from Abu al-Aswad, from 'Urwa. Abu Nu'aym said: “This is how he mentioned her, but it is a scribal corruption. She is in fact Hasana, with fatha on the two undotted letters, followed by nun, as Ibn Ishaq and others correctly stated. Likewise, his use of ‘al-Bayadi’ is an error; the correct form is ‘al-Jumahi.’”\n\nI say: It is as Abu Nu'aym said.",
+      "arabic_sha256": "9f88a61b8c5454eca00ff0d75743036a0a3f5c71bc841bf5d0c0a36c271b932d",
+      "english_sha256": "6ae801e70c47213ba430a2b53894e9af3edf339f296911cbe282311f7bfcb042",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حسنة",
+      "english": "Hasana al-Khuza'iyya al-'Adawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عدي خزاعة",
+      "english": "'Adi of Khuza'a",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "خزاعة",
+      "english": "Khuza'a",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سفيان بن يعمر بن حبيب البياضي",
+      "english": "Sufyan ibn Ya'mur ibn Habib al-Bayadi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجمحي",
+      "english": "Sufyan ibn Ya'mur ibn Habib al-Jumahi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن لهيعة",
+      "english": "Ibn Lahi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الأسود",
+      "english": "Abu al-Aswad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "'Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

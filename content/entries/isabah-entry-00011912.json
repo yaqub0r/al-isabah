@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011912",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11912,
+  "title": {
+    "english": "Umm Bishr bint 'Amr",
+    "arabic_observed": "أم بشر بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011912-segment-0001",
+      "volume": 8,
+      "scan_page": 365,
+      "printed_page": 364,
+      "reader_page": 4277,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4277",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0365:3bb0df53e85f4dcb",
+      "arabic": "١١٩١٢- أم بشر بنت عمرو\nبنت عنمة بن عدي بن سنان بن نابي بن عمرو بن سواد بن غنم بن كعب بن سلمة.\nذكرها ابن سعد في المبايعات، وقال: أمّها أم زيد بنت خديج بن سنان بن نابي، تزوّجها عبد الرحمن بن خراش بن الصمّة بن حرام، ثم خلف عليها عبد اللَّه بن بشير بن بشر بن أميّة «٤» .",
+      "english": "11912—Umm Bishr bint 'Amr\n\nbint 'Anama ibn 'Adi ibn Sinan ibn Nabi ibn 'Amr ibn Sawad ibn Ghanm ibn Ka'b ibn Salama.\n\nIbn Sa'd mentioned her among the women who pledged allegiance and said: “Her mother was Umm Zayd bint Khudayj ibn Sinan ibn Nabi. 'Abd al-Rahman ibn Khirash ibn al-Simma ibn Haram married her; after him, 'Abd Allah ibn Bashir ibn Bishr ibn Umayya married her.”⁴",
+      "arabic_sha256": "df26f71ecde30edc932e1a00d52083e10d6cbf40de7955da39194a58af132414",
+      "english_sha256": "76949d99eb22a9ff058627249d99b4a0cebcf53a1a84c76af384291a337dd8ff",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم زيد بنت خديج بن سنان بن نابي",
+      "english": "Umm Zayd bint Khudayj ibn Sinan ibn Nabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن خراش بن الصمة بن حرام",
+      "english": "'Abd al-Rahman ibn Khirash ibn al-Simma ibn Haram",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن بشير بن بشر بن أمية",
+      "english": "'Abd Allah ibn Bashir ibn Bishr ibn Umayya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

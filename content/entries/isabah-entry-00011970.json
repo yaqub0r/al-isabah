@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011970",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11970,
+  "title": {
+    "english": "Umm al-Hajjaj:",
+    "arabic_observed": "أم الحجاج:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011970-segment-0001",
+      "volume": 8,
+      "scan_page": 376,
+      "printed_page": 375,
+      "reader_page": 4288,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4288",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0376:cf997514466e4dfb",
+      "arabic": "١١٩٧٠- أم الحجاج:\nسرية أمامة «٢» . ذكر الذهبي أن لها في مسند بقي حديثا.",
+      "english": "11970—Umm al-Hajjaj:\n\nThe slave-concubine of Umama.(2) Al-Dhahabi stated that she has one hadith in the Musnad of Baqi.",
+      "arabic_sha256": "372311f6070b2b0ab1725346d625f5ab0bc6e147a1b85b20fb18a15fd4842ec4",
+      "english_sha256": "6e313f8e4479bf741c53d4844232fe9cf19a10840bc09315f8759d81d1044dc8",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم الحجاج",
+      "english": "Umm al-Hajjaj",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة",
+      "english": "Umama",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند بقي",
+      "english": "Musnad Baqi ibn Makhlad",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

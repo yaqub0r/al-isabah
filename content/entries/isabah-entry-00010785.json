@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010785",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10785,
+  "title": {
+    "english": "Arnab bint 'Afif ibn Abi al-'As",
+    "arabic_observed": "أرنب بنت عفيف بن أبي العاص"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010785-segment-0001",
+      "volume": 8,
+      "scan_page": 7,
+      "printed_page": 6,
+      "reader_page": 3919,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3919",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0007:16f979fa3c96671e",
+      "arabic": "١٠٧٨٥- أرنب بنت عفيف بن أبي العاص\nبن عبد شمس، أمها النابغة والدة عمرو بن العاص، فكأن عمرا أخوها لأمها. ذكرها الزبير بن بكار ثم الطبري.",
+      "english": "10785 — Arnab bint 'Afif ibn Abi al-'As\nibn 'Abd Shams. Her mother was al-Nabigha, the mother of 'Amr ibn al-'As; thus 'Amr was apparently her maternal brother. al-Zubayr ibn Bakkar mentioned her, and then al-Tabari.",
+      "arabic_sha256": "c86249d3f0cb8ba9bb7388605e355fe8d7246146a2f20cd0a29aac3c296fe4de",
+      "english_sha256": "96a11bac65e826611b60178b7f8be2bfc5a9b5b1ad0a9bf0cd691b4a46ddd29f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النابغة",
+      "english": "al-Nabigha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن العاص",
+      "english": "'Amr ibn al-'As",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبري",
+      "english": "al-Tabari",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

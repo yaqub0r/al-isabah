@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "scan_page": { "type": "integer", "minimum": 1 },
+    "decision": { "type": "string", "enum": ["accept", "revised", "unresolved"] },
+    "final_english_text": { "type": "string", "minLength": 1 },
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": { "type": "string", "minLength": 1 },
+          "original": { "type": "string" },
+          "replacement": { "type": "string" },
+          "rationale": { "type": "string", "minLength": 1 },
+          "evidence": { "type": "string", "minLength": 1 }
+        },
+        "required": ["category", "original", "replacement", "rationale", "evidence"],
+        "additionalProperties": false
+      }
+    },
+    "names": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "arabic": { "type": "string", "minLength": 1 },
+          "english": { "type": "string", "minLength": 1 },
+          "kind": { "type": "string", "enum": ["person", "place", "tribe", "work", "other"] }
+        },
+        "required": ["arabic", "english", "kind"],
+        "additionalProperties": false
+      }
+    },
+    "entry_numbers": { "type": "array", "items": { "type": "integer", "minimum": 1 } },
+    "unresolved": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": { "type": "string", "minLength": 1 },
+          "arabic_span": { "type": "string" },
+          "explanation": { "type": "string", "minLength": 1 },
+          "human_review_priority": { "type": "string", "enum": ["critical", "high", "normal"] }
+        },
+        "required": ["category", "arabic_span", "explanation", "human_review_priority"],
+        "additionalProperties": false
+      }
+    },
+    "fidelity": {
+      "type": "object",
+      "properties": {
+        "all_source_content_translated": { "type": "boolean" },
+        "no_unsupported_additions": { "type": "boolean" },
+        "headings_preserved": { "type": "boolean" },
+        "entry_numbers_preserved": { "type": "boolean" },
+        "isnads_preserved": { "type": "boolean" },
+        "footnotes_preserved": { "type": "boolean" },
+        "continuation_correct": { "type": "boolean" }
+      },
+      "required": [
+        "all_source_content_translated", "no_unsupported_additions", "headings_preserved",
+        "entry_numbers_preserved", "isnads_preserved", "footnotes_preserved", "continuation_correct"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "scan_page", "decision", "final_english_text", "changes", "names",
+    "entry_numbers", "unresolved", "fidelity"
+  ],
+  "additionalProperties": false
+}

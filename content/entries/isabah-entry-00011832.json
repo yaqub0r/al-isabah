@@ -1,0 +1,202 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011832",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11832,
+  "title": {
+    "english": "HALA BINT KHUWAYLID",
+    "arabic_observed": "هالة بنت خويلد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011832-segment-0001",
+      "volume": 8,
+      "scan_page": 339,
+      "printed_page": 338,
+      "reader_page": 4251,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4251",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0339:94acd764432c5177",
+      "arabic": "١١٨٣٢- هالة بنت خويلد\nبن أسد بن عبد العزى القرشيّة «٣» الأسديّة، أخت خديجة\n(١) أخرجه البيهقي في السنن الكبرى ٣/ ٧٨ عن أبي موسى قال مرض رسول اللَّه ﷺ فقال مروا أبا بكر يصلي بالناس ... الحديث وعزاه للبخاريّ في الصحيح عن إسحاق بن نصر عن حسين الجعفري ومسلم في الصحيح عن أبي بكر بن أبي شيبة.\n(٢) تجريد أسماء الصحابة ٢/ ٣٠٩، الاستبصار ٢٥٣، الاستيعاب ت (٣٥٦١)، أسد الغابة ت (٧٣٣١) .\n(٣) أعلام النساء ٥/ ٢٠٢، أسد الغابة ت (٧٣٣٢) .",
+      "english": "11832—HALA BINT KHUWAYLID\n\nibn Asad ibn Abd al-'Uzza, the Qurashi woman(3) of Banu Asad, sister of Khadijah,\n\n(1) Al-Bayhaqi narrated it in al-Sunan al-Kubra, 3/78, from Abu Musa, who said: “The Messenger of Allah—may Allah bless him and grant him peace—fell ill and said, ‘Order Abu Bakr to lead the people in prayer…’”—the hadith. He attributed it to al-Bukhari in his Sahih, from Ishaq ibn Nasr, from Husayn al-Ja'fari, and to Muslim in his Sahih, from Abu Bakr ibn Abi Shayba.\n\n(2) al-Tajrid, 2/309; al-Istibsar, 253; al-Isti'ab, entry 3561; Usd al-Ghaba, entry 7331.\n\n(3) A'lam al-Nisa, 5/202; Usd al-Ghaba, entry 7332.",
+      "arabic_sha256": "0f2dbe58511e74a7fa540938cff79672ea8eb95701d4770901cdb4121716a5f7",
+      "english_sha256": "8bd118b4e59fd26bbec400a5038bf9db8936899c747aa2b033626466ecdcd569",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011832-segment-0002",
+      "volume": 8,
+      "scan_page": 340,
+      "printed_page": 339,
+      "reader_page": 4252,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4252",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0340:76f574b186e15650",
+      "arabic": "زوج النبيّ ﵌، ووالدة أبي العاص بن الربيع.\nقال ابن مندة:\nروت عنها عائشة حرفا في حديث، كذا اختصر، وكأنه أشار إلى ما أخرجه البخاريّ في الصّحيح من طريق علي بن مسهر، عن هشام بن عروة، عن أبيه، عن عائشة، قالت: استأذنت هالة بنت خويلد أخت خديجة على رسول اللَّه ﵌، فعرف استئذان خديجة فارتاع لذلك، وقال: اللَّهمّ هالة فغرت! فقلت: ما تذكر من عجوز من عجائز قريش ... الحديث «١» ...\nوأخرجه أبو نعيم من هذا الوجه، وأصل الحديث في الصّحيحين من غير ذلك هالة.",
+      "english": "wife of the Prophet—may Allah bless him and grant him peace—and mother of Abu al-As ibn al-Rabi.\n\nIbn Mandah said:\n\nAisha narrated from her a phrase in a hadith. This is how he abridged it. It is as though he was referring to what al-Bukhari transmitted in the Sahih through Ali ibn Mushir, from Hisham ibn Urwa, from his father, from Aisha, who said: “Hala bint Khuwaylid, Khadijah's sister, sought permission to enter upon the Messenger of Allah—may Allah bless him and grant him peace. He recognized Khadijah's manner of seeking permission and was startled by it, saying, ‘O Allah—it is Hala!’ I became jealous and said, ‘Why do you remember an old woman from among the old women of Quraysh...?’”—the hadith.(1)\n\nAbu Nu'aym also transmitted it through this chain. The basis of the hadith is in the two Sahihs, but without [mention of] Hala.",
+      "arabic_sha256": "c1b8fc48cea772f199be8bed080618edc05eaa1f938b5462cac7f35c754f6c90",
+      "english_sha256": "7c6df28f9b4f74320260f9bb5d2f201467cdb67816efbffbc6a000ee09a869b2",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرشيّة",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأسديّة",
+      "english": "Banu Asad",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن الكبرى",
+      "english": "al-Sunan al-Kubra",
+      "kind": "work"
+    },
+    {
+      "arabic": "البخاريّ",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "إسحاق بن نصر",
+      "english": "Ishaq ibn Nasr",
+      "kind": "person"
+    },
+    {
+      "arabic": "حسين الجعفري",
+      "english": "Husayn al-Ja'fari",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو بكر بن أبي شيبة",
+      "english": "Abu Bakr ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبي العاص بن الربيع",
+      "english": "Abu al-As ibn al-Rabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصّحيح",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "علي بن مسهر",
+      "english": "Ali ibn Mushir",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن عروة",
+      "english": "Hisham ibn Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "هالة بنت خويلد",
+      "english": "Hala bint Khuwaylid",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "identity",
+      "arabic_span": "أخرجه أبو موسى أيضا ... عن أبي موسى قال",
+      "explanation": "The main text and footnote each name an Abu Musa without an identifying nisba. The supplied witnesses do not safely establish whether these are the same person or different people, so both occurrences remain unexpanded.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0339:94acd764432c5177"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

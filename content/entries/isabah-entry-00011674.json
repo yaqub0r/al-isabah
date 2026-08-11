@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011674",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11674,
+  "title": {
+    "english": "Kabsha bint Malik",
+    "arabic_observed": "كبشة بنت مالك"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011674-segment-0001",
+      "volume": 8,
+      "scan_page": 296,
+      "printed_page": 295,
+      "reader_page": 4208,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4208",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0296:89bf502948ecdf75",
+      "arabic": "١١٦٧٤- كبشة بنت مالك\nبن سنان، أخت أبي سعد «٣»، هي الفريعة. تقدمت.",
+      "english": "11674—Kabsha bint Malik\nibn Sinan, sister of Abu Sa'd;³ she is al-Furay'a. She was discussed above.",
+      "arabic_sha256": "b96d0d3636f7443714149fc5f346d779b1e17c803eead3c81103744cfdc25645",
+      "english_sha256": "57f0cf3dd28b1ed34ffb3fc740455a0db63cb08d29a880d736b20bfdd34b6b08",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو سعد",
+      "english": "Abu Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفريعة",
+      "english": "al-Furay'a bint Malik ibn Sinan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

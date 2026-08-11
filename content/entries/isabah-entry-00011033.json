@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011033",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11033,
+  "title": {
+    "english": "Habiba bint Sahl.¹",
+    "arabic_observed": "حبيبة بنت سهل «١» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011033-segment-0001",
+      "volume": 8,
+      "scan_page": 83,
+      "printed_page": 82,
+      "reader_page": 3995,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3995",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0083:0bc386c4bae48ad5",
+      "arabic": "١١٠٣٣- حبيبة بنت سهل «١» .\nروى أبان بن صمعة، عن محمد بن سيرين- أن حبيبة بنت سهل حدثته، فذكر ما تقدم في الترجمة التي قبلها. وجوّز ابن سعد أن تكون أخرى.",
+      "english": "11033—Habiba bint Sahl.¹\n\nAban ibn Sam'a narrated from Muhammad ibn Sirin that Habiba bint Sahl related it to him, and he then mentioned what was given above in the preceding entry. Ibn Sa'd considered it possible that she was another woman.",
+      "arabic_sha256": "32418edb445fcb6d0e6179123468deb20aa4a1536d8a7ac831d3b18929bfe3e3",
+      "english_sha256": "eec1a270a054def4cf5907fbc7b129ae4cdd2e99e94e1158b384b7956bef98f6",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة بنت سهل",
+      "english": "Habiba bint Sahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبان بن صمعة",
+      "english": "Aban ibn Sam'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن سيرين",
+      "english": "Muhammad ibn Sirin",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011592",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11592,
+  "title": {
+    "english": "Fatima bint Abi",
+    "arabic_observed": "فاطمة بنت أبي"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011592-segment-0001",
+      "volume": 8,
+      "scan_page": 271,
+      "printed_page": 270,
+      "reader_page": 4183,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4183",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0271:dd5ecaeb6c9be423",
+      "arabic": "١١٥٩٢- فاطمة بنت أبي\nحبيش بن المطلب بن أسد بن عبد العزى «٢» بن قصيّ القرشية الأسدية.\nثبت ذكرها في الصّحيحين من طريق هشام بن عروة، عن أبيه، عن عائشة، قالت: جاءت فاطمة بنت أبي حبيش إلى النبي ﵌، فقالت: يا رسول اللَّه، «إنّي امرأة أستحاض فلا أطهر أفأدع الصّلاة»؟ قال: «لا»، «إنّما ذلك عرق، وليست الحيضة ...» الحديث.\nورواه المنذر بن المغيرة، عن عروة- أن فاطمة بنت أبي حبيش، وفي لفظ عن فاطمة، وفي لفظ: حدثتني فاطمة، حديثه أخرجه أبو داود والنسائي. والأول هو المشهور.",
+      "english": "11592—Fatima bint Abi\n\nHubaysh ibn al-Muttalib ibn Asad ibn Abd al-Uzza[2] ibn Qusayy, the Qurashi woman of Asad.\n\nShe is established as having been mentioned in the two Sahihs, through Hisham ibn Urwa, from his father, from Aisha, who said: Fatima bint Abi Hubaysh came to the Prophet (may Allah bless him and grant him peace) and said, “O Messenger of Allah, I am a woman who suffers from persistent non-menstrual bleeding and therefore never becomes pure. Should I stop praying?” He said, “No. That is only a vein, and it is not menstruation…”—to the end of the hadith.\n\nAl-Mundhir ibn al-Mughira also narrated it from Urwa: that Fatima bint Abi Hubaysh; in one wording, “from Fatima,” and in another wording, “Fatima related to me.” Abu Dawud and al-Nasa'i transmitted this hadith. The former is the well-known version.",
+      "arabic_sha256": "cc8c356ca8623007a7fb5ba893db8f0811e55074ab291297a9f43e000c99ece2",
+      "english_sha256": "96e77496e8d2efc198e2926d40cd1d0147a96f9eed1578e97fdd8f543032f1cb",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأسدية",
+      "english": "Asad",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الصّحيحين",
+      "english": "Two Sahihs",
+      "kind": "work"
+    },
+    {
+      "arabic": "هشام بن عروة",
+      "english": "Hisham ibn Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "المنذر بن المغيرة",
+      "english": "al-Mundhir ibn al-Mughira",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

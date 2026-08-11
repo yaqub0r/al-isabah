@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011846",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11846,
+  "title": {
+    "english": "Hind bint Aws ibn Adi ibn Umayya",
+    "arabic_observed": "هند بنت أوس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011846-segment-0001",
+      "volume": 8,
+      "scan_page": 343,
+      "printed_page": 342,
+      "reader_page": 4255,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4255",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0343:17a67b3274f51657",
+      "arabic": "١١٨٤٦- هند بنت أوس\nبن عدي بن أمية الأنصاريّة، من خطمة. ذكرها ابن حبيب أيضا.",
+      "english": "11846—Hind bint Aws ibn Adi ibn Umayya\n\nThe Ansari woman from Khatma. Ibn Habib also mentioned her.",
+      "arabic_sha256": "213f29ca07f93ffa0bfcd304f3c00a028e832a9819d7c4d2ae3223eddee3ef93",
+      "english_sha256": "ad7242ac8838b994631385e662d3191a42c1f1280d4c51f65903dcac7eecdab7",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند بنت أوس بن عدي بن أمية",
+      "english": "Hind bint Aws ibn Adi ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "خطمة",
+      "english": "Banu Khatma",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

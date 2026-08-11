@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011859",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11859,
+  "title": {
+    "english": "Hind bint Abi Talib¹",
+    "arabic_observed": "هند بنت أبي طالب «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011859-segment-0001",
+      "volume": 8,
+      "scan_page": 347,
+      "printed_page": 346,
+      "reader_page": 4259,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4259",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0347:5e0ef5b2d164309b",
+      "arabic": "١١٨٥٩- هند بنت أبي طالب «١»\nبن عبد المطّلب، يقال: إنه اسم أم هانئ، وهي مشهورة بكنيتها. وقيل: اسمها عاتكة، والمشهور فاختة، قاله ابن إسحاق في رواية يونس بن بكير وغيره عنه في قصة فتح مكّة. وأما هبيرة بن أبي هبيرة بن أبي وهب المخزومي- وكان زوج أم هانئ فإنه تزوج بنجران مشركا، وقال، لما بلغه إسلام أم هانئ:\nأشاقتك هند أم أتاك سؤالها ... كذاك النّوى أسبابها وانفتالها\nوقد أرّقت في رأس حصن ممرّد ... بنجران يسري بعد يوم خيالها\n[الطويل]",
+      "english": "11859—Hind bint Abi Talib¹\n\nibn Abd al-Muttalib. It is said that this was the name of Umm Hani, who is well known by her kunyah. It is also said that her name was Atika, but the well-known view is Fakhita. Ibn Ishaq stated this, in the transmission of Yunus ibn Bukayr and others from him, in the account of the Conquest of Mecca.\n\nAs for Hubayra ibn Abi Hubayra ibn Abi Wahb al-Makhzumi—who was Umm Hani’s husband—he married in Najran while still a polytheist. When news of Umm Hani’s conversion to Islam reached him, he said:\n\nHas Hind stirred your longing, or has her inquiry reached you?\nSuch are separation’s causes and its twists and turns.\n\nAnd I lay sleepless atop a towering fortress\nin Najran, as her phantom journeyed by night after day.\n\n[al-Tawil meter]",
+      "arabic_sha256": "9d6eb99faba60c8009cb1e752618fd1438993e112e6c921d31a989e4ca24558c",
+      "english_sha256": "f3628b96b1da7e75a650fe20e8a1f7a395ca43a60b0b35e6bee57d498c258776",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم هانئ",
+      "english": "Umm Hani",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاتكة",
+      "english": "Atika bint Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاختة",
+      "english": "Fakhita bint Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن بكير",
+      "english": "Yunus ibn Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكّة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "هبيرة بن أبي هبيرة بن أبي وهب المخزومي",
+      "english": "Hubayra ibn Abi Hubayra ibn Abi Wahb al-Makhzumi",
+      "kind": "person"
+    },
+    {
+      "arabic": "المخزومي",
+      "english": "al-Makhzumi",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "نجران",
+      "english": "Najran",
+      "kind": "place"
+    },
+    {
+      "arabic": "الطويل",
+      "english": "al-Tawil",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

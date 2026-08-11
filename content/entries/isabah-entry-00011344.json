@@ -1,0 +1,174 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011344",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11344,
+  "title": {
+    "english": "Sana, (2)",
+    "arabic_observed": "سنا «٢»،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011344-segment-0001",
+      "volume": 8,
+      "scan_page": 191,
+      "printed_page": 190,
+      "reader_page": 4103,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4103",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0191:6b558c7ddbf5d7e3",
+      "arabic": "١١٣٤٤- سنا «٢»،\nبفتح أوله وتخفيف النون، بنت أسماء بن الصلت السلمية.\n(١) أخرجه ابن سعد في الطبقات الكبرى ٨/ ١٩٣.\n(٢) أسد الغابة: ت (٧٠٢٢)، الاستيعاب: ت (٣٤٣٥) .",
+      "english": "11344—Sana, (2)\n\nwith an a-vowel on its first letter and an ungeminated nun, bint Asma ibn al-Salt al-Sulamiyya.\n\n(1) Transmitted by Ibn Sa'd in al-Tabaqat, 8/193.\n\n(2) Usd al-Ghaba, entry 7022; al-Isti'ab, entry 3435.",
+      "arabic_sha256": "a745952566015d18b082078cfe11932489de4e9f07ca2954f2b5cedbd7916b34",
+      "english_sha256": "286ee28f39bcb6a09006e6acfdf9033bb68fa49b436e8d21b99a3ebed99dffd2",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011344-segment-0002",
+      "volume": 8,
+      "scan_page": 192,
+      "printed_page": 191,
+      "reader_page": 4104,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4104",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0192:8c6d93645271e4cb",
+      "arabic": "ذكر أبو عبيدة معمر بن المثنّى أنها ممن تزوجها رسول اللَّه ﷺ فماتت قبل أن يدخل بها. وروى ذلك عن حفص بن النضر، وعبد القاهر بن السري السلميين، وقال: هي عمة عبد اللَّه بن حازم، بمعجمتين، ابن أسماء بن الصلت أمير خراسان.\nقلت: ذكر ابن أبي خيثمة، عن أبي عبيدة بن عبد القاهر: سماها سنا كالذي هاهنا، وأن غيره سماها وسنا بزيادة واو في أولها، وتقدم في الألف أنّ قتادة سماها أسماء بنت الصلت، وكذا قال أحمد بن صالح المصري.\nوقال ابن إسحاق: سنا بنت أسماء. وقال غيره: وسنا حكى ذلك أبو عمر، قال: ولا يثبت من ذلك شيء من حيث الإسناد إلا أن قول ابن إسحاق أرجح.\nوقال ابن سعد: سنا، ويقال سبا- بالموحدة وبالنون، ونسبها ابن حبيب إلى جدها، فساق نسبها إلى بني سليم، فقال: سنا بنت الصلت بن حبيب بن حازم بن هلال بن حرام بن سماك بن عفيف بن امرئ القيس بن بهثة بن سليم. وذكر أن أسماء أخوها لا أبوها، وذكر أنها ماتت قبل أن يدخل النبيّ ﷺ بها.\nوحكى الرّشاطيّ عن بعضهم أن سبب موتها أنه لما بلغها بأنّ النبي ﷺ تزوّجها سرّت بذلك حتى ماتت من الفرح.",
+      "english": "Abu Ubayda Ma'mar ibn al-Muthanna mentioned that she was among the women whom the Messenger of Allah, may Allah bless him and grant him peace, married, but that she died before he consummated the marriage with her. He transmitted this from Hafs ibn al-Nadr and Abd al-Qahir ibn al-Sari, both of Sulaym. He said: She was the paternal aunt of Abd Allah ibn Khazim—with dotted kha and zay—ibn Asma ibn al-Salt, the governor of Khurasan.\n\nI say: Ibn Abi Khaythama related from Abu Ubayda ibn Abd al-Qahir that he called her Sana, as here, and that someone else called her Wasana, adding a waw at the beginning. It was stated earlier, under the letter alif, that Qatada called her Asma bint al-Salt; Ahmad ibn Salih al-Misri said the same.\n\nIbn Ishaq said: Sana bint Asma. Someone else said: Wasana. Abu Umar related this and said: None of this is established in terms of its isnad, though Ibn Ishaq's statement is more likely.\n\nIbn Sa'd said: Sana, with nun; she is also called Saba, with the single-dotted ba. Ibn Habib attributed her to her grandfather and traced her lineage to Banu Sulaym, saying: Sana bint al-Salt ibn Habib ibn Hazim ibn Hilal ibn Haram ibn Simak ibn Afif ibn Imru al-Qays ibn Bahtha ibn Sulaym. He stated that Asma was her brother, not her father, and that she died before the Prophet, may Allah bless him and grant him peace, consummated the marriage with her.\n\nAl-Rushati related from one of them that the cause of her death was that, when news reached her that the Prophet, may Allah bless him and grant him peace, had married her, she was so delighted by it that she died of joy.",
+      "arabic_sha256": "62aca86878fef0550df410644497ec59c23ddb027e793b9596e23b97909e6f36",
+      "english_sha256": "3dc81db61c743e64c0edb23a951b5754d53a8daf2469559d6104b41c38eebd75",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بن الصلت",
+      "english": "Asma ibn al-Salt",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبقات الكبرى",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عبيدة معمر بن المثنى",
+      "english": "Abu Ubayda Ma'mar ibn al-Muthanna",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفص بن النضر",
+      "english": "Hafs ibn al-Nadr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد القاهر بن السري",
+      "english": "Abd al-Qahir ibn al-Sari",
+      "kind": "person"
+    },
+    {
+      "arabic": "خراسان",
+      "english": "Khurasan",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن أبي خيثمة",
+      "english": "Ibn Abi Khaythama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عبيدة بن عبد القاهر",
+      "english": "Abu Ubayda ibn Abd al-Qahir",
+      "kind": "person"
+    },
+    {
+      "arabic": "سنا بنت أسماء",
+      "english": "Sana bint Asma",
+      "kind": "person"
+    },
+    {
+      "arabic": "وسنا",
+      "english": "Wasana",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتادة",
+      "english": "Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت الصلت",
+      "english": "Asma bint al-Salt",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد بن صالح المصري",
+      "english": "Ahmad ibn Salih al-Misri",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "سبا",
+      "english": "Saba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "سنا بنت الصلت بن حبيب بن حازم بن هلال بن حرام بن سماك بن عفيف بن امرئ القيس بن بهثة بن سليم",
+      "english": "Sana bint al-Salt ibn Habib ibn Hazim ibn Hilal ibn Haram ibn Simak ibn Afif ibn Imru al-Qays ibn Bahtha ibn Sulaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني سليم",
+      "english": "Banu Sulaym",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسماء",
+      "english": "Asma ibn al-Salt",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرشاطي",
+      "english": "al-Rushati",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012152",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12152,
+  "title": {
+    "english": "Umm Abd Allah:",
+    "arabic_observed": "أم عبد اللَّه:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012152-segment-0001",
+      "volume": 8,
+      "scan_page": 431,
+      "printed_page": 430,
+      "reader_page": 4343,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4343",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0431:8da598428f73287b",
+      "arabic": "١٢١٥٢- أم عبد اللَّه:\nامرأة نعيم بن النحّام «٥» .\n(١) الثقات ٣/ ٤٥٩، تجريد أسماء الصحابة ٢/ ٣٢٧، أسد الغابة ت (٧٥١٨) .\n(٢) أسد الغابة ت (٧٥٢١)، الاستيعاب ت (٣٦٣٦)، الثقات ٣/ ٤٦٥ أعلام النساء ٣/ ٢٣٤، تجريد أسماء الصحابة ٢/ ٣٢٧، تقريب التهذيب ٢/ ٦٢٢ تهذيب التهذيب ١٢/ ٤٧٣، الكاشف ٣/ ٤٨٩، تهذيب الكمال ٣/ ١٧٠٤، خلاصة تذهيب ٣/ ٤٠١.\n(٣) حلق: من حلق شعره عند المصيبة إذا حلت به، وقيل: أراد به التي تحلق وجهها للزينة، النهاية ١/ ٤٢٧ وسلق: أي رفع صوته عند المصيبة وقيل: هو أن تصك المرأة وجهها وتمرشه، والأول أصح. النهاية ٢/ ٣٩١.\n(٤) أسد الغابة ت (٧٥١٤) الثقات ٣/ ٤٦٢، تجريد أسماء الصحابة ٢/ ٣٢٦.\n(٥) أسد الغابة ت (٧٥٢٣) .",
+      "english": "12152 — Umm Abd Allah:\n\nThe wife of Nu'aym ibn al-Nahham. (5)\n\n(1) al-Thiqat, 3/459; al-Tajrid, 2/327; Usd al-Ghaba, entry 7518.\n\n(2) Usd al-Ghaba, entry 7521; al-Isti'ab, entry 3636; al-Thiqat, 3/465; A'lam al-Nisa', 3/234; al-Tajrid, 2/327; Taqrib al-Tahdhib, 2/622; Tahdhib al-Tahdhib, 12/473; al-Kashif, 3/489; Tahdhib al-Kamal, 3/1704; Khulasat Tadhhib, 3/401.\n\n(3) Halq refers to one who shaves his hair when a calamity befalls him. It is also said that what is meant is a woman who shaves her face for adornment. al-Nihaya, 1/427. Salaq means raising one’s voice when calamity strikes. It is also said that it is when a woman strikes and scratches her face; the first interpretation is more correct. al-Nihaya, 2/391.\n\n(4) Usd al-Ghaba, entry 7514; al-Thiqat, 3/462; al-Tajrid, 2/326.\n\n(5) Usd al-Ghaba, entry 7523.",
+      "arabic_sha256": "31b5aa7ff05aea787560ca17fd0b67fad4243bb0794ff839c7b7abefcf98262f",
+      "english_sha256": "81ca1e59943ddc8ca0369857c3b7eef3de917b0758bad22890a292c51cf0fe75",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012152-segment-0002",
+      "volume": 8,
+      "scan_page": 432,
+      "printed_page": 431,
+      "reader_page": 4344,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4344",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0432:1f560dd36de26119",
+      "arabic": "ذكرها ابن مندة، وأخرج من طريق الضّحاك بن عثمان، عن يحيى بن عروة بن الزّبير، عن أمّه، عن عبد اللَّه بن عمر- أنه أتى عمر بن الخطاب فقال: إني قد خطبت بنت نعيم بن النّحّام، وأريد أن تمشي معي فتكلمه لي. فقال عمر: إني أعلم بنعيم منك، إن عنده ابن أخ له يتيما ولم يكن ليتركه، فقال: إن أمّها قد خطبت إليّ. قال عمر: فإن كنت فاعلا فاذهب معك بعمك زيد بن الخطّاب. قال: فذهبا إليه فكلمه، قال: فكأنّما كان نعيم يسمع كلام عمر، فقال: مرحبا بك وأهلا، وذكر من منزلته وشرفه، ثم قال: إن عندي ابن أخ لي يتيما، ولم أكن لأصل لحوم الناس وأترك لحمي. قال: فقالت أمّها من ناحية البيت: واللَّه لا يكون هذا حتى يقضي به علينا رسول اللَّه ﵌، أتحبس أيّم «١» بني عدي على ابن أخيك سفيه، أو قالت: ضعيف.\nثم خرجت حتى أتت رسول اللَّه ﵌، فأخبرته الخبر، فدعا نعيما، فقصّ عليه كما قال لعبد اللَّه بن عمر، فقال لنعيم: «صل رحمك، وأرض أيّمك وأمّها، فإنّ لهما من أمرهما نصيبا» .\nقلت: وقد ذكر الزّبير بن بكّار هذه القصّة مختصرة، ولم يذكر قصّة أم عبد اللَّه ولا كلامها ولا الحديث المرفوع، وقال فيه: فقال عمر لنعيم: خطب إليك ابن أخيك فرددته، فقال: إن لي ابن أخ مضعوفا لا يزوّجه الرّجال، فإذا تركت لحمي منها فمن يذبّ عنه؟",
+      "english": "Ibn Manda mentioned her and transmitted, by way of al-Dahhak ibn Uthman, from Yahya ibn Urwa ibn al-Zubayr, from his mother, from Abdullah ibn Umar, that he came to Umar ibn al-Khattab and said, “I have proposed marriage to the daughter of Nuaym ibn al-Nahham, and I want you to come with me and speak to him on my behalf.” Umar said, “I know Nuaym better than you do. He has an orphaned nephew, and he would never pass him over.” He replied, “Her mother has offered her to me in marriage.” Umar said, “If you are determined to do it, then have your paternal uncle Zayd ibn al-Khattab go with you.” So the two of them went to him, and Zayd spoke to him. It was as though Nuaym had heard Umar’s words. He said, “Welcome and greetings to you,” and spoke of his standing and honor. Then he said, “I could not join myself to the flesh of others while abandoning my own flesh.” Her mother then said from one side of the house, “By Allah, this shall not happen until the Messenger of Allah, may Allah bless him and grant him peace, decides the matter for us! Would you hold back an unmarried woman¹ of Banu Adi for your foolish nephew—or, she said, your weak nephew?”\n\nShe then went out and came to the Messenger of Allah, may Allah bless him and grant him peace, and informed him of what had happened. He summoned Nuaym, who related to him the same thing he had said to Abdullah ibn Umar. He said to Nuaym, “Maintain your ties of kinship, and act to the satisfaction of the unmarried woman in your charge and her mother, for they both have a share in their own affair.”\n\nI say: al-Zubayr ibn Bakkar mentioned this story in an abridged form, but he did not mention the story of Umm Abdullah, her words, or the hadith attributed to the Prophet. In his version it reads: Umar said to Nuaym, “Your nephew asked you for her hand, but you turned him down.” He replied, “I have a weak nephew whom men will not marry into their families. If I withhold her from my own flesh, who will defend him?”",
+      "arabic_sha256": "3f048fe80f44c1022e4fea3dc0fbee0e8047bce2633999c9e076300caa6e3f08",
+      "english_sha256": "e176271dc1cd8ba6b79b2fc53bc39cdf391759e14ecdbb099182ca6067d3e6f4",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم عبد الله، امرأة من بني زهرة",
+      "english": "Umm Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله",
+      "english": "Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبد الله، امرأة نعيم بن النحام",
+      "english": "Umm Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "نعيم بن النحام",
+      "english": "Nu'aym ibn al-Nahham",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب",
+      "english": "Khulasat Tadhhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الضحاك بن عثمان",
+      "english": "al-Dahhak ibn Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن عروة بن الزبير",
+      "english": "Yahya ibn Urwa ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عمر",
+      "english": "Abdullah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن الخطاب",
+      "english": "Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "نعيم بن النحام",
+      "english": "Nuaym ibn al-Nahham",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن الخطاب",
+      "english": "Zayd ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "بني عدي",
+      "english": "Banu Adi",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم عبد اللَّه",
+      "english": "Umm Abdullah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "referent ambiguity",
+      "arabic_span": "فقال عمر لنعيم: خطب إليك ابن أخيك فرددته",
+      "explanation": "The canonical wording explicitly says “your nephew,” but this conflicts with the fuller narrative, in which Abdullah ibn Umar is the suitor and Nuaym’s orphaned nephew is a different prospective match. The collateral account and supplied Urdu pages do not establish which nephew the abridged wording intends, so the literal reference has been preserved without identifying him.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0432:1f560dd36de26119"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

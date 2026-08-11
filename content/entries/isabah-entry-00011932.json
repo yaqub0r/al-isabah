@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011932",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11932,
+  "title": {
+    "english": "Umm Jamil bint Aws al-Mar'iyya¹",
+    "arabic_observed": "أم جميل بنت أوس المرئية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011932-segment-0001",
+      "volume": 8,
+      "scan_page": 369,
+      "printed_page": 368,
+      "reader_page": 4281,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4281",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0369:d66636798a2bba3b",
+      "arabic": "١١٩٣٢- أم جميل بنت أوس المرئية «١»\n: بفتح الميم والراء ثم همزة ثم تشديد، من بني امرئ القيس.\nكذا ذكرها أبو موسى [والمستغفريّ] «٢»، قال: تقدم ذكرها في ترجمة والدها.\nقلت: وتقدم أن أبا علي الغسّاني ذكر في ذيل الاستيعاب أنّ اسمها جميلة.",
+      "english": "11932—Umm Jamil bint Aws al-Mar'iyya¹\n\nThe nisba is vocalized with a fatha on the m and the r, followed by a hamza and then a doubled letter. She was of Banu Imri' al-Qays.\n\nThis is how Abu Musa [and al-Mustaghfiri]² mentioned her. He said: “She was previously mentioned in the entry on her father.”\n\nI say: It was stated above that Abu Ali al-Ghassani mentioned in his al-Dhayl to al-Isti'ab that her name was Jamila.",
+      "arabic_sha256": "96a874fac2aa39789772f75fb4dc7052d2d9f07b6d0a5a20ae01034f8d2d0a25",
+      "english_sha256": "5e767df1f580f8cc2b118d201502862b0929d83261b6834bf3abc76b216007eb",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم جميل بنت أوس المرئية",
+      "english": "Umm Jamil bint Aws al-Mar'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني امرئ القيس",
+      "english": "Banu Imri' al-Qays",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفريّ",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو علي الغسّاني",
+      "english": "Abu Ali al-Ghassani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ذيل الاستيعاب",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "جميلة",
+      "english": "Jamila bint Aws al-Mar'iyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

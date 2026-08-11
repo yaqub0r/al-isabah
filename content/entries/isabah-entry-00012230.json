@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012230",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12230,
+  "title": {
+    "english": "Umm Kulthum bint Utba",
+    "arabic_observed": "أم كلثوم بنت عتبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012230-segment-0001",
+      "volume": 8,
+      "scan_page": 463,
+      "printed_page": 462,
+      "reader_page": 4375,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4375",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0463:9d20999ab2780a15",
+      "arabic": "١٢٢٣٠- أم كلثوم بنت عتبة\nبن ربيعة «٢» بن عبد شمس العبشميّة، خالة معاوية بن أبي سفيان: كانت عند عبد الرّحمن بن عوف، فولدت له سالما الأكبر، مات قبل الإسلام.\nذكرها ابن سعد.",
+      "english": "12230—Umm Kulthum bint Utba\nibn Rabi'a (2) ibn Abd Shams, of Banu Abd Shams, the maternal aunt of Muawiya ibn Abi Sufyan. She was married to Abd al-Rahman ibn Awf and bore him Salim the Elder, who died before Islam.\n\nIbn Sa'd mentioned her.",
+      "arabic_sha256": "5ef834ae3a8b0a23534924236aead631ff5733e32e8cd7e13e9665f50d8e6966",
+      "english_sha256": "5f7fc33b433e82f67e104995683a3697001c424067b7f12f4154c255b6c3fd89",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "العبشميّة",
+      "english": "Banu Abd Shams",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "معاوية بن أبي سفيان",
+      "english": "Muawiya ibn Abi Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرّحمن بن عوف",
+      "english": "Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "سالم الأكبر",
+      "english": "Salim the Elder",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

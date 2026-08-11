@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011199",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11199,
+  "title": {
+    "english": "al-Rumaysa,",
+    "arabic_observed": "الرميصاء ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011199-segment-0001",
+      "volume": 8,
+      "scan_page": 146,
+      "printed_page": 145,
+      "reader_page": 4058,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4058",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0146:fa9112975377feed",
+      "arabic": "١١١٩٩- الرميصاء ،\nأخرى «١» .\nقال أحمد في مسندة: حدثنا هشيم، حدثنا يحيى بن أبي إسحاق، عن سليمان بن يسار، عن عبيد اللَّه بن العباس، قال: جاءت الرميصاء أو الغميصاء إلى رسول اللَّه ﷺ تشكو زوجها، وتزعم أنه لا يصل إليها، فما كان إلا يسير حتى جاء زوجها، فزعم أنها كاذبة، ولكنها تريد أن ترجع إلى زوجها الأول، فقال لها رسول اللَّه ﷺ: «ليس لك ذلك، حتّى تذوقي عسيلة رجل آخر غيره» .",
+      "english": "11199—al-Rumaysa,\nanother woman.¹\n\nAhmad said in Musnad Ahmad: Hushaym narrated to us: Yahya ibn Abi Ishaq narrated to us, from Sulayman ibn Yasar, from Ubayd Allah ibn al-Abbas, who said: al-Rumaysa—or al-Ghumaysa—came to the Messenger of Allah (may Allah bless him and grant him peace), complaining about her husband and alleging that he was unable to have intercourse with her. Only a short while passed before her husband came and alleged that she was lying, and that she merely wanted to return to her first husband. The Messenger of Allah (may Allah bless him and grant him peace) said to her: “You may not do that until you taste the little honey of another man besides him.”",
+      "arabic_sha256": "bdb75c877ae808b4ae100cf281787136ce07fc81985d8b2d4e33df0e33d48c8e",
+      "english_sha256": "79137b8326cecf5f1f33b409e015a0154f3b1e0002b7fcd8bbb70ca9a77d48ee",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الرميصاء",
+      "english": "al-Rumaysa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسندة",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "هشيم",
+      "english": "Hushaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن أبي إسحاق",
+      "english": "Yahya ibn Abi Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان بن يسار",
+      "english": "Sulayman ibn Yasar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد اللَّه بن العباس",
+      "english": "Ubayd Allah ibn al-Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الغميصاء",
+      "english": "al-Ghumaysa",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

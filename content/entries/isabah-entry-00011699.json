@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011699",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11699,
+  "title": {
+    "english": "Lubaba bint al-Harith",
+    "arabic_observed": "لبابة بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011699-segment-0001",
+      "volume": 8,
+      "scan_page": 300,
+      "printed_page": 299,
+      "reader_page": 4212,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4212",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0300:9fb33e799d5616d0",
+      "arabic": "١١٦٩٩- لبابة بنت الحارث\nبن حزن بن بجير بن الهزم بن رويبة «٢» بن عبد اللَّه بن هلال بن عامر بن صعصعة الهلالية، أم الفضل زوج العباس بن عبد المطلب، ووالدة أولاده: الفضل، وعبد اللَّه، وغيرهما، وهي لبابة الكبرى، مشهورة بكنيتها، ومعروفة باسمها. وستأتي في الكنى. وأمها خولة بنت عوف القرشية.",
+      "english": "11699. Lubaba bint al-Harith\n\nibn Hazn ibn Bujayr ibn al-Hazm ibn Ruwayba[2] ibn Abd Allah ibn Hilal ibn Amir ibn Sa'sa'a al-Hilaliyya. She was Umm al-Fadl, the wife of al-Abbas ibn Abd al-Muttalib and the mother of his children al-Fadl, Abd Allah, and others. She was Lubaba the Elder, famous by her kunyah and known by her personal name. She will appear in the section on kunyahs. Her mother was Khawla bint Awf al-Qurashiyya.",
+      "arabic_sha256": "8194737c473fd378df4cd31cc92625205130229a1dbd1e2d543702d507f24956",
+      "english_sha256": "859e7b04d05cdee634fb664c6c65ae80d82427e3e2511b45f457c2707a10d5a2",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم الفضل",
+      "english": "Umm al-Fadl",
+      "kind": "person"
+    },
+    {
+      "arabic": "العباس بن عبد المطلب",
+      "english": "al-Abbas ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفضل",
+      "english": "al-Fadl ibn al-Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "لبابة الكبرى",
+      "english": "Lubaba the Elder",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت عوف القرشية",
+      "english": "Khawla bint Awf al-Qurashiyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012107",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12107,
+  "title": {
+    "english": "Umm Shurahbil:",
+    "arabic_observed": "أم شرحبيل:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012107-segment-0001",
+      "volume": 8,
+      "scan_page": 421,
+      "printed_page": 420,
+      "reader_page": 4333,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4333",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0421:706983acd6db7d04",
+      "arabic": "١٢١٠٧- أم شرحبيل:\nزوج ذي الكلاع.\nلها ذكر في ترجمة زوجها من تاريخ دمشق يدل على أن لها إدراكا.\n(١) أسد الغابة ت (٧٤٩٨)، الاستيعاب ت (٣٦٢٧) .",
+      "english": "12107—Umm Shurahbil:\n\nWife of Dhu al-Kala'.\n\nShe is mentioned in the biographical notice of her husband in Tarikh Dimashq in a manner indicating that she lived into the Islamic period.\n\n(1) Usd al-Ghaba, entry (7498); al-Isti'ab, entry (3627).",
+      "arabic_sha256": "b6fdd1f4e5886821016025865434a4cf2c2d952205d62ed6da54cccd9da6be13",
+      "english_sha256": "022f94be1517c340b7fa123e181edbbd2cbd19540183479e442945c1900d0612",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012107-segment-0002",
+      "volume": 8,
+      "scan_page": 422,
+      "printed_page": 421,
+      "reader_page": 4334,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4334",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0422:c2cc127ce12d3577",
+      "arabic": "القسم الرابع",
+      "english": "SECTION FOUR",
+      "arabic_sha256": "0b186da367d0cac1b2f8f8349004cc083e7a88764112cc9bfddf266313e587f8",
+      "english_sha256": "b6179fda7f390cbc0b4953e4a59c97bc60676488062dc133ae8042ee889eb6cf",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم شرحبيل",
+      "english": "Umm Shurahbil",
+      "kind": "person"
+    },
+    {
+      "arabic": "ذي الكلاع",
+      "english": "Dhu al-Kala'",
+      "kind": "person"
+    },
+    {
+      "arabic": "تاريخ دمشق",
+      "english": "Tarikh Dimashq",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011707",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11707,
+  "title": {
+    "english": "Labisa bint Amr al-Ansariyya[2]:",
+    "arabic_observed": "لبيسة بنت عمرو الأنصارية «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011707-segment-0001",
+      "volume": 8,
+      "scan_page": 303,
+      "printed_page": 302,
+      "reader_page": 4215,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4215",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0303:93e173b6aa8ba109",
+      "arabic": "١١٧٠٧- لبيسة بنت عمرو الأنصارية «٢»\n: أم عمارة، ذكرها الطبراني في حرف اللام، وبه جزم ابن نقطة، والمشهور أنها بالنون بدل اللام، وهي مشهورة بكنيتها، وستأتي.\nويقال، إنها لبيسة غير نسيبة، وأنها بنت حرب. واللَّه أعلم.",
+      "english": "11707—Labisa bint Amr al-Ansariyya[2]:\n\nUmm Umara. Al-Tabarani mentioned her under the letter lam, and Ibn Nuqta stated this decisively. The well-known form, however, has nun in place of lam: Nusayba. She is well known by her kunyah and will appear later.\n\nIt is also said that she was Labisa, distinct from Nusayba, and that she was the daughter of Harb. Allah knows best.",
+      "arabic_sha256": "9de81b29d49401365e7fa1ca56530ebe82c4b1b6a835a6f53867ac48c0bb8ed9",
+      "english_sha256": "da149f3cb86b7f77032dad4105291894e38efcdc82740847fd3131cc496444cf",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "لبيسة بنت عمرو الأنصارية",
+      "english": "Labisa bint Amr al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمارة",
+      "english": "Umm Umara",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن نقطة",
+      "english": "Ibn Nuqta",
+      "kind": "person"
+    },
+    {
+      "arabic": "نسيبة",
+      "english": "Nusayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

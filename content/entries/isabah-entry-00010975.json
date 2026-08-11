@@ -1,0 +1,159 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010975",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10975,
+  "title": {
+    "english": "Judama bint Wahb al-Asadiyya,³",
+    "arabic_observed": "جدامة بنت وهب الأسدية «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010975-segment-0001",
+      "volume": 8,
+      "scan_page": 63,
+      "printed_page": 62,
+      "reader_page": 3975,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3975",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0063:f6be2baa3fc1083a",
+      "arabic": "١٠٩٧٥- جدامة بنت وهب الأسدية «٣»\n، ويقال بالخاء المعجمة.\nروى عن النبيّ ﷺ في رضاع الحامل. روت عنها أمّ المؤمنين عائشة.\nأخرج حديثها في الموطأ، ولفظه: عن جدامة الأسدية، أنها سمعت النبيّ ﷺ يقول: «لقد هممت أن أنهى عن الغيلة ...» الحديث.\n(١) الثقات ٣/ ٦٧، تجريد أسماء الصحابة ٢/ ٢٥٤، خلاصة تهذيب الكمال ٣/ ٣٧٧.\n(٢) أسد الغابة ت ٦٨٠٢.\n(٣) الثقات ٣/ ٦٧، أعلام النساء ١/ ١٥٧، تجريد أسماء الصحابة ٢/ ٢٥٤، تقريب التهذيب ٢/ ٩٣، بقي ابن مخلد ٥٥٠، تهذيب التهذيب ١٢/ ٤٠٥، الكاشف ٣/ ٤٦٦، تهذيب الكمال ٣/ ١٦٧٩ تلقيح فهوم أهل الأثر ٣٧٦.",
+      "english": "10975—Judama bint Wahb al-Asadiyya,³\n\nalso said with the dotted kha: Khudama.\n\nShe narrated from the Prophet (may Allah bless him and grant him peace) concerning breastfeeding during pregnancy. The Mother of the Believers Aisha narrated from her.\n\nHer hadith was included in al-Muwatta, with the following wording: “From Judama al-Asadiyya, who heard the Prophet (may Allah bless him and grant him peace) say: ‘I had indeed intended to prohibit nursing during pregnancy ...’” —the hadith.\n\n(1) al-Thiqat 3/67; al-Tajrid 2/254; Khulasat Tahdhib al-Kamal 3/377.\n\n(2) Usd al-Ghaba, entry 6802.\n\n(3) al-Thiqat 3/67; A'lam al-Nisa 1/157; al-Tajrid 2/254; Taqrib al-Tahdhib 2/93; Baqi ibn Makhlad, no. 550; Tahdhib al-Tahdhib 12/405; al-Kashif 3/466; Tahdhib al-Kamal 3/1679; Talqih Fuhum Ahl al-Athar, p. 376.",
+      "arabic_sha256": "95b471db060ef55dc2ea257158dc71744d9ee12d28ad949e19bb26cb1cd4aea2",
+      "english_sha256": "535fdabf1ccab86f651ed6f9be7430294065ace8314e589c68195846581533da",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010975-segment-0002",
+      "volume": 8,
+      "scan_page": 64,
+      "printed_page": 63,
+      "reader_page": 3976,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3976",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0064:04908af676ed7379",
+      "arabic": "وفي بعض طرقه عند مسلم، عن جدامة بنت وهب، أخت عكاشة بن وهب، قالت:\nحضرت عند النبي ﷺ في أناس، وهو يقول ... فذكر الحديث. وفيه: «ذكر العزل، وأنّه الوأد الخفيّ» .\nوأورده ابن مندة بلفظ الموطأ في جدامة بنت جندل.",
+      "english": "And in some of its chains in Muslim, it is narrated from Judama bint Wahb, the sister of Ukkasha ibn Wahb, who said:\n“I was with the Prophet, may Allah bless him and grant him peace, among some people while he was saying ...” She then related the hadith. It includes: “Mention of coitus interruptus and that it is hidden infanticide.”\nIbn Manda included it, with the wording of al-Muwatta, under Judama bint Jandal.",
+      "arabic_sha256": "52e7e1454f0feadeb8f3b2a0bac62bf2d189b2e67b0b2abac5b5d70e37813ea8",
+      "english_sha256": "a384578f6fba40abc444d7889ac112ba45fbdc9ef1ca65ff9f9256bc711f0be3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "جدامة بنت وهب الأسدية",
+      "english": "Judama bint Wahb al-Asadiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "خدامة بنت وهب الأسدية",
+      "english": "Judama bint Wahb al-Asadiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الموطأ",
+      "english": "al-Muwatta",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي ابن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "جدامة بنت وهب",
+      "english": "Judama bint Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "عكاشة بن وهب",
+      "english": "Ukkasha ibn Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "جدامة بنت جندل",
+      "english": "Judama bint Jandal",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

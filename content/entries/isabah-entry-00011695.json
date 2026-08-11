@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011695",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11695,
+  "title": {
+    "english": "Kabisha bint Hakim al-Thaqafiyya⁴:",
+    "arabic_observed": "كبيشة بنت حكيم الثقفية «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011695-segment-0001",
+      "volume": 8,
+      "scan_page": 299,
+      "printed_page": 298,
+      "reader_page": 4211,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4211",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0299:e028f5de042dddb1",
+      "arabic": "١١٦٩٥- كبيشة بنت حكيم الثقفية «٤»\n: جدة أم الحكم بنت يحيى بن عقبة.\nروت أم الحكم عنها أنها رأت النبي ﵌، ذكرها هكذا ابن مندة، ونقله أبو نعيم، فقال: لم يزد عليه- يعني لم يسق حديثها.\nالقسم الثالث",
+      "english": "11695—Kabisha bint Hakim al-Thaqafiyya⁴:\nThe grandmother of Umm al-Hakam bint Yahya ibn Uqba.\n\nUmm al-Hakam transmitted from her that she had seen the Prophet, may Allah bless him and grant him peace. Ibn Manda mentioned her in this manner. Abu Nu'aym quoted him and said, “He added nothing to it”—meaning that he did not relate her hadith.\n\nSECTION THREE",
+      "arabic_sha256": "46498bf6316600cc844020eb435755a78bbb3b90f1c318d5c0e989b14f001a22",
+      "english_sha256": "e45abd8d77025379da856481d4a87f6eafb6954459cff42697f980aef32852b5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "كبيشة بنت حكيم الثقفية",
+      "english": "Kabisha bint Hakim al-Thaqafiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الحكم بنت يحيى بن عقبة",
+      "english": "Umm al-Hakam bint Yahya ibn Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

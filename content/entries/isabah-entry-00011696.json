@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011696",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11696,
+  "title": {
+    "english": "Kabsha bint Makshuh al-Muradiyya:",
+    "arabic_observed": "كبشة بنت مكشوح المرادية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011696-segment-0001",
+      "volume": 8,
+      "scan_page": 299,
+      "printed_page": 298,
+      "reader_page": 4211,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4211",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0299:e028f5de042dddb1",
+      "arabic": "١١٦٩٦- كبشة بنت مكشوح المرادية:\nأخت قيس الفارس المشهور.\nذكرها ابن شاهين في ترجمة أبان بن سعيد بن العاص، وأنها كانت موصوفة بالجمال، فزوّجها أخوها قيس بن أبان لما ولي إمرة اليمن في خلافة أبي بكر الصديق. أورد ذلك من طريق سليمان الأنباري، عن النعمان بن بزرج في خبر طويل.\nالقسم الرابع",
+      "english": "11696—Kabsha bint Makshuh al-Muradiyya:\nThe sister of Qays, the famous horseman.\n\nIbn Shahin mentioned her in the biographical entry on Aban ibn Sa'id ibn al-As, stating that she was renowned for her beauty. Her brother Qays married her to Aban when Aban assumed the governorship of Yemen during the caliphate of Abu Bakr al-Siddiq. He cited this through Sulayman al-Anbari, from al-Nu'man ibn Buzurj, as part of a lengthy report.\n\nSECTION FOUR",
+      "arabic_sha256": "9420af57be9b81fe1b88e6299f82f5887f34c98d5767f5b1864b6918dba2ff39",
+      "english_sha256": "1187438d1f7b9aa0fb80e0d640da75862e93b9cdcc6c183ce846cb1ea59f729d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "كبشة بنت مكشوح المرادية",
+      "english": "Kabsha bint Makshuh al-Muradiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس",
+      "english": "Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن شاهين",
+      "english": "Ibn Shahin",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبان بن سعيد بن العاص",
+      "english": "Aban ibn Sa'id ibn al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "اليمن",
+      "english": "Yemen",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو بكر الصديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان الأنباري",
+      "english": "Sulayman al-Anbari",
+      "kind": "person"
+    },
+    {
+      "arabic": "النعمان بن بزرج",
+      "english": "al-Nu'man ibn Buzurj",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

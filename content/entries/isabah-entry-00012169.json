@@ -1,0 +1,110 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012169",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12169,
+  "title": {
+    "english": "Umm 'Isma al-'Awsiyya [2]",
+    "arabic_observed": "أم عصمة العوصية «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012169-segment-0001",
+      "volume": 8,
+      "scan_page": 437,
+      "printed_page": 436,
+      "reader_page": 4349,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4349",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0437:a5a5a73800a82aa8",
+      "arabic": "١٢١٦٩- أم عصمة العوصية «٢»\n: ذكرها الطّبرانيّ،\nوأخرج من طريق أبي مهدي سعيد بن سنان، عن أم الشّعثاء، عن أم عصمة العوصية- امرأة ابن قيس، قالت: قال رسول اللَّه ﷺ: «ما من مسلم يعمل ذنبا إلّا وقف الملك الموكّل بإحصاء ذنوبه ثلاث ساعات، فإن استغفر من ذنبه ذلك في شيء من تلك الثّلاث ساعات لم يرفعه عليه يوم القيامة» «٣» .\nوأخرجه الحاكم في «المستدرك» من هذا الوجه، وقال: صحيح الإسناد.\nوأخرجه ابن مندة من هذا الوجه، وقال: هكذا قال- يعني سعيد بن سنان، قال:\nوقال غيره: عن أم عصمة.\nقلت: وهو خطأ، والعوصيّة- بمهملتين- نسبة إلى بني عوص، بفتح أوله وسكون ثانيه، ابن عوف بن عذرة.",
+      "english": "12169—Umm 'Isma al-'Awsiyya [2]\n\nAl-Tabarani mentioned her and transmitted, by way of Abu Mahdi Sa'id ibn Sinan, from Umm al-Sha'tha, from Umm 'Isma al-'Awsiyya—the wife of Ibn Qays—who said: The Messenger of Allah, may Allah bless him and grant him peace, said, “No Muslim commits a sin without the angel charged with recording his sins pausing for three hours. If he seeks forgiveness for that sin at any time during those three hours, the angel will not present it against him on the Day of Resurrection.” [3]\n\nAl-Hakim transmitted it in al-Mustadrak through this chain and said, “Its chain of transmission is sound.”\n\nIbn Manda also transmitted it through this chain and said, “This is how he stated it”—meaning Sa'id ibn Sinan. He said, “Others said: from Umm 'Isma.”\n\nI say: This is an error. Al-'Awsiyya—with two undotted letters—is a nisba referring to Banu 'Aws, with its first letter bearing an a-vowel and its second unvocalized: 'Aws ibn 'Awf ibn 'Udhra.",
+      "arabic_sha256": "c3e1d40e4122524b9ed11e4c41e8c11e2b8b1c6dd790df4f831b396bf3d1abf9",
+      "english_sha256": "ef33d79d4e52a97f930988ea4e87c9caca8f1ff25fb5a69b6ca8f5bfd3c03087",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عصمة العوصية",
+      "english": "Umm 'Isma al-'Awsiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو مهدي سعيد بن سنان",
+      "english": "Abu Mahdi Sa'id ibn Sinan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الشعثاء",
+      "english": "Umm al-Sha'tha",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن قيس",
+      "english": "Ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "بنو عوص",
+      "english": "Banu 'Aws",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عوص بن عوف بن عذرة",
+      "english": "'Aws ibn 'Awf ibn 'Udhra",
+      "kind": "person"
+    },
+    {
+      "arabic": "عوف",
+      "english": "'Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "عذرة",
+      "english": "'Udhra",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

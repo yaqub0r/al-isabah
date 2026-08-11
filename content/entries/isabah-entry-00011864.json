@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011864",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11864,
+  "title": {
+    "english": "Hind bint Amr",
+    "arabic_observed": "هند بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011864-segment-0001",
+      "volume": 8,
+      "scan_page": 349,
+      "printed_page": 348,
+      "reader_page": 4261,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4261",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0349:4bda574326c611c7",
+      "arabic": "١١٨٦٤- هند بنت عمرو\nبن حزام الأنصاريّة «١» .\nعمة جابر بن عبد اللَّه الصّحابي المشهور.\nتقدم نسبها في ترجمة والدها. قال ابن مندة: روى حديثها الواقديّ، عن أيّوب بن النعمان، عن أبيه، عنها.\nقلت: ورويناه في أمالي المحاملي من طريقه.",
+      "english": "11864—Hind bint Amr\nibn Hizam al-Ansariyya (1).\n\nShe was the paternal aunt of Jabir ibn Abd Allah, the well-known Companion.\n\nHer lineage was given previously in the biography of her father. Ibn Manda said: “Her report was transmitted by al-Waqidi, from Ayyub ibn al-Nu'man, from his father, from her.”\n\nI say: We have also transmitted it in the Amali of al-Mahamili by way of him.",
+      "arabic_sha256": "3164caf3732047c46aad610e531cad34fe5c2906aead1e02e1534bd2449e8f51",
+      "english_sha256": "421449e84cceec90a210a41a7e9ea76f737bf7d069eb636b8fe447fc97d5b0f4",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "جابر بن عبد اللَّه",
+      "english": "Jabir ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أيّوب بن النعمان",
+      "english": "Ayyub ibn al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمالي المحاملي",
+      "english": "Amali of al-Mahamili",
+      "kind": "work"
+    },
+    {
+      "arabic": "المحاملي",
+      "english": "al-Mahamili",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011716",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11716,
+  "title": {
+    "english": "Layla bint Rib'i ibn 'Amir ibn Khalida al-Ansariyya (1), of Banu Bayada.",
+    "arabic_observed": "ليلى بنت ربعي بن عامر"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011716-segment-0001",
+      "volume": 8,
+      "scan_page": 306,
+      "printed_page": 305,
+      "reader_page": 4218,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4218",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0306:047fab026cbe7652",
+      "arabic": "١١٧١٦- ليلى بنت ربعي بن عامر\nبن خالدة الأنصاريّة «١»، من بني بياضة. ذكرها ابن حبيب في المبايعات.",
+      "english": "11716—Layla bint Rib'i ibn 'Amir ibn Khalida al-Ansariyya (1), of Banu Bayada.\n\nIbn Habib mentioned her among the women who gave the pledge of allegiance.",
+      "arabic_sha256": "fe76856cf3a362cb113e3f71daf77b9fc0076dc709539c37b09efb5097e91795",
+      "english_sha256": "9c94bdb6493cab410f936a35e6a393e7abd863ce4789157576b01ca37c21e172",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ليلى بنت ربعي بن عامر بن خالدة الأنصارية",
+      "english": "Layla bint Rib'i ibn 'Amir ibn Khalida al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو بياضة",
+      "english": "Banu Bayada",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

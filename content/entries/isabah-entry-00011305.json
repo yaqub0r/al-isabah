@@ -1,0 +1,119 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011305",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11305,
+  "title": {
+    "english": "Sukayna [4]",
+    "arabic_observed": "سكينة «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011305-segment-0001",
+      "volume": 8,
+      "scan_page": 181,
+      "printed_page": 180,
+      "reader_page": 4093,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4093",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0181:dc70dfa0e18df5df",
+      "arabic": "١١٣٠٥- سكينة «٤»\n، غير منسوبة.\nروى عنها مولاها أبو صالح، قال ابن مندة: روى حديثها سليمان بن عبد الرحمن عن\n(١) أسد الغابة ت (٦٩٩٦) .\n(٢) أسد الغابة ت (٦٩٩٧) أعلام النساء ٢/ ٢٢٥، تجريد أسماء الصحابة ٢/ ٢٧٦.\n(٣) أسد الغابة: ت (٦٩٩٨) .\n(٤) أخرجه البخاري ٤/ ٣٩، وأحمد ٦/ ٦٧، ٧١، ١٦٦ والبيهقي ٤/ ٣٢٦.",
+      "english": "11305 — Sukayna [4]\n\nHer lineage is not given.\n\nHer client Abu Salih transmitted from her. Ibn Manda said: Sulayman ibn Abd al-Rahman transmitted her hadith from—\n\n[1] Usd al-Ghaba, biography no. 6996.\n\n[2] Usd al-Ghaba, biography no. 6997; A'lam al-Nisa', 2/225; al-Tajrid, 2/276.\n\n[3] Reported by al-Bukhari, 4/39; Ahmad, 6/67, 71, 166; and al-Bayhaqi, 4/326.\n\n[4] Usd al-Ghaba, biography no. 6998.",
+      "arabic_sha256": "f8a205c148f0534a347a4bfdc4862ad3c5edab3f4ff63c6d7eb8543350ef4abe",
+      "english_sha256": "fb4e2add4db0e882088d63265075912328b415b61c21e14699a607ca246c849b",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011305-segment-0002",
+      "volume": 8,
+      "scan_page": 182,
+      "printed_page": 181,
+      "reader_page": 4094,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4094",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0182:3dd89ad41d329bb3",
+      "arabic": "الحكم بن يعلى، عن كامل أبيّ العلاء، عن أبي صالح. ووصل أبو نعيم هذا السند ولم يسق المتن أيضا.",
+      "english": "al-Hakam ibn Ya'la, from Kamil Abu al-'Ala', from Abu Salih. Abu Nu'aym also gave this chain as connected, but likewise did not relate the text.",
+      "arabic_sha256": "03b871e899f2c76f3683b60b392298a416f6fba68478d9df38d489a6b307d876",
+      "english_sha256": "8c393dd817e73920c59bf41cc738f92dc9e25aa952918805ec50a6be9dcad9d6",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سكينة",
+      "english": "Sukayna",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو صالح",
+      "english": "Abu Salih",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان بن عبد الرحمن",
+      "english": "Sulayman ibn Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحكم بن يعلى",
+      "english": "al-Hakam ibn Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "كامل أبيّ العلاء",
+      "english": "Kamil Abu al-'Ala'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

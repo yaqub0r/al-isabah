@@ -1,0 +1,88 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010984",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10984,
+  "title": {
+    "english": "Jamra bint al-Nu'man al-'Adawiyya (1)",
+    "arabic_observed": "جمرة بنت النعمان العدوية «١» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010984-segment-0001",
+      "volume": 8,
+      "scan_page": 66,
+      "printed_page": 65,
+      "reader_page": 3978,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3978",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0066:d8f9a799c69539c9",
+      "arabic": "١٠٩٨٤- جمرة بنت النعمان العدوية «١» .\nحديثها عند الواقديّ، عن شعيب بن ميمون المخزومي، عن أبي مرابة البلوي، عن جمرة بنت النعمان، وكانت لها صحبة، قالت: أمر رسول اللَّه ﷺ أن يدفن الشعر والدم «٢» .\nأخرجه أبو نعيم بسند واه، واستدركه أبو موسى.",
+      "english": "10984 — Jamra bint al-Nu'man al-'Adawiyya (1)\n\nHer hadith is related by al-Waqidi, from Shu'ayb ibn Maymun al-Makhzumi, from Abu Muraba al-Balawi, from Jamra bint al-Nu'man—who was a Companion—who said: “The Messenger of Allah ﷺ ordered that hair and blood be buried.” (2)\n\nAbu Nu'aym transmitted it with a weak chain of transmission, and Abu Musa added her as a supplementary entry.",
+      "arabic_sha256": "bc0f9a0bc55daee1aa98c616808e4ac8d9974b9d4d7d99eb3018a37a0d64dded",
+      "english_sha256": "29592a08672f750e934bc734e48afb1c10d7d50c5562f16ec4b39b79c2b0da3e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "جمرة بنت النعمان العدوية",
+      "english": "Jamra bint al-Nu'man al-'Adawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "شعيب بن ميمون المخزومي",
+      "english": "Shu'ayb ibn Maymun al-Makhzumi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي مرابة البلوي",
+      "english": "Abu Muraba al-Balawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "أبي مرابة البلوي",
+      "explanation": "The undiacritized Arabic does not securely determine the vocalization of مرابة. The supplied Urdu pages and collateral Arabic extracts do not contain the complete isnad, so “Abu Muraba al-Balawi” is retained provisionally.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0066:d8f9a799c69539c9"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

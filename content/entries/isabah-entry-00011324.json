@@ -1,0 +1,254 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011324",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11324,
+  "title": {
+    "english": "Salma bint Qays²",
+    "arabic_observed": "سلمى بنت قيس «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011324-segment-0001",
+      "volume": 8,
+      "scan_page": 186,
+      "printed_page": 185,
+      "reader_page": 4098,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4098",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0186:e4148bc4ba250269",
+      "arabic": "١١٣٢٤- سلمى بنت قيس «٢»\nبن عمرو بن عبيد بن مالك بن عدي بن عامر بن غنم ابن عدي بن النجار الأنصارية النجارية، تكنى أم المنذر، وهي بكنيتها أشهر.\nوهي أخت سليط بن قيس.\nوأخرج ابن إسحاق في المغازي: حدثني سليط بن أيوب بن الحكم، عن أبيه، عن جدته سلمى بنت قيس أم المنذر، إحدى خالات النبي ﷺ، وقد صلّت معه إلى القبلتين، قالت: بايعت النبيّ ﷺ فيمن بايعه من النساء عَلى أَنْ لا يُشْرِكْنَ بِاللَّهِ شَيْئًا [الممتحنة:\n١٢] الحديث، وفيه: ولا نغش أزواجنا، فبايعناه، فلما انصرفنا قلت لامرأة ممن معي:\nارجعي فاسأليه ما غش أزواجنا؟ فسألته فقال: «تأخذ ماله فتحابي به غيره» .\n(١) أخرجه البخاري في صحيحه ٣/ ٢٤٢، ٥/ ١٨٠ وأخرجه أبو داود في السنن ١/ ٦٩٤ كتاب الطلاق باب من أحق بالولد حديث رقم ٢٢٨٠ والترمذي في السنن ٤/ ٢٧٧ كتاب البر والصلة باب ٦ ما جاء في بر الخالة حديث رقم ١٩٠٤ وقال أبو عيسى الترمذي هذا حديث صحيح والطبراني في الكبير ١٧/ ٢٤٣، والهيثمي في الزوائد ٤/ ٣٢٦ وأبو بكر الخطيب في تاريخ بغداد ٤/ ١٤٠.\n(٢) الثقات ٣/ ١٨٤- أعلام النساء ٢/ ٢٥١، تجريد أسماء الصحابة ٢/ ٢٧٨، الاستبصار ٤٤، تعجيل المنفعة ٥٥٧، أسد الغابة: ت (٧٠١٣)، الاستيعاب: ت (٣٤٢٩) .",
+      "english": "11324—Salma bint Qays²\nibn Amr ibn Ubayd ibn Malik ibn Adi ibn Amir ibn Ghanm ibn Adi ibn al-Najjar, an Ansari woman of the Najjar clan. Her kunyah was Umm al-Mundhir, and she is better known by that kunyah.\n\nShe was the sister of Sulayt ibn Qays.\n\nIbn Ishaq transmitted in al-Maghazi: Sulayt ibn Ayyub ibn al-Hakam related to me, from his father, from his grandmother Salma bint Qays, Umm al-Mundhir, one of the maternal aunts of the Prophet, may Allah bless him and grant him peace. She had prayed with him toward both qiblahs. She said: “I pledged allegiance to the Prophet, may Allah bless him and grant him peace, among the women who pledged allegiance to him, on the condition ‘that they not associate anything with Allah’ [al-Mumtahana: 12]”—and she continued the hadith. It includes: “And that we not deceive our husbands.” We therefore pledged allegiance to him. When we departed, I said to one of the women with me: “Go back and ask him what deceiving our husbands means.” She asked him, and he replied: “That a woman takes his property and uses it to favor someone else.”\n\n¹ Al-Bukhari transmitted it in his Sahih, 3/242 and 5/180; Abu Dawud transmitted it in al-Sunan, 1/694, Book of Divorce, chapter “Who Has the Greater Right to the Child?”, hadith no. 2280; and al-Tirmidhi in al-Sunan, 4/277, Book of Righteousness and Maintaining Ties, chapter 6, “What Has Been Related Concerning Kind Treatment of the Maternal Aunt,” hadith no. 1904. Abu Isa al-Tirmidhi said: “This is a sahih hadith.” Also: al-Tabarani in al-Kabir, 17/243; al-Haythami in al-Zawa'id, 4/326; and Abu Bakr al-Khatib in Tarikh Baghdad, 4/140.\n\n² Al-Thiqat, 3/184; A'lam al-Nisa', 2/251; al-Tajrid, 2/278; al-Istibsar, p. 44; Ta'jil al-Manfa'a, p. 557; Usd al-Ghaba, entry 7013; al-Isti'ab, entry 3429.",
+      "arabic_sha256": "65bb8d255075968e2693eb59b18fb787185416dace50909527d530a557cf2649",
+      "english_sha256": "7384cfa8f74263dd4f34a278fce128958852d354e6fc13cb76545a7836b3eb90",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011324-segment-0002",
+      "volume": 8,
+      "scan_page": 187,
+      "printed_page": 186,
+      "reader_page": 4099,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4099",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0187:4faeefa7de874ae2",
+      "arabic": "وأخرج ابن سعد عن يعلى ومحمد ابني عبيد، عن ابن إسحاق، عن رجل من الأنصار، عن أمه سلمى بنت قيس ... وفي آخره: فقال: أي تحابين- أو تهادين- بما له غيره.\nوأخرجه ابن مندة بعلوّ، من طريق يونس بن بكير، عن ابن إسحاق، وأبو نعيم من وجه آخر، عن ابن إسحاق.\nوأخرج ابن مندة في ترجمتها من طريق أيوب بن الحكم عن جدته سلمى حديثا هو وهم، فإن سلمى جدة أيوب هي أمّ رافع امرأة أبي رافع. وستأتي.",
+      "english": "Ibn Sa'd also transmitted from Ya'la and Muhammad, the two sons of 'Ubayd, from Ibn Ishaq, from a man of the Ansar, from his mother, Salma bint Qays ... At its end it says: He said, “That is, that you show favor—or give gifts—to someone else using his wealth.”\n\nIbn Manda transmitted it with a shorter chain, by way of Yunus ibn Bukayr, from Ibn Ishaq; and Abu Nu'aym transmitted it by another route from Ibn Ishaq.\n\nIn her biographical entry, Ibn Manda transmitted, by way of Ayyub ibn al-Hakam from his grandmother Salma, a report that is erroneous, for the Salma who was Ayyub's grandmother was Umm Rafi', the wife of Abu Rafi'. She will be mentioned later.",
+      "arabic_sha256": "0426392ce0e7c36a942be05f6a3da7e309066f151503a6717a2b514f7ce4effc",
+      "english_sha256": "beeef8b3d5ef4164679e02cfaf5de4e907ea7b824d5d5566391556cfdc31e738",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم المنذر",
+      "english": "Umm al-Mundhir",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليط بن قيس",
+      "english": "Sulayt ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "المغازي",
+      "english": "al-Maghazi",
+      "kind": "work"
+    },
+    {
+      "arabic": "سليط بن أيوب بن الحكم",
+      "english": "Sulayt ibn Ayyub ibn al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أيوب بن الحكم",
+      "english": "Ayyub ibn al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Prophet Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الممتحنة",
+      "english": "al-Mumtahana",
+      "kind": "work"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النجارية",
+      "english": "Banu al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيحه",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan Abi Dawud",
+      "kind": "work"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan al-Tirmidhi",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عيسى الترمذي",
+      "english": "Abu Isa al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو بكر الخطيب",
+      "english": "Abu Bakr al-Khatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "تاريخ بغداد",
+      "english": "Tarikh Baghdad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "تعجيل المنفعة",
+      "english": "Ta'jil al-Manfa'a",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سلمى بنت قيس",
+      "english": "Salma bint Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن بكير",
+      "english": "Yunus ibn Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم رافع",
+      "english": "Umm Rafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو رافع",
+      "english": "Abu Rafi'",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

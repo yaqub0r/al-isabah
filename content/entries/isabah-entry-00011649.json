@@ -1,0 +1,125 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011649",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11649,
+  "title": {
+    "english": "Qariba—with an a-vowel on the first letter; it is also said in the diminutive, Qurayba—bint Abu Umayya ibn al-Mughira al-Makhzumiyya (2), the sister of Umm Salama.",
+    "arabic_observed": "قريبة: بفتح أوله، ويقال بالتصغير، بنت أبي أميّة بن المغيرة المخزوميّة «٢»، أخت أم سلمة."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011649-segment-0001",
+      "volume": 8,
+      "scan_page": 287,
+      "printed_page": 286,
+      "reader_page": 4199,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4199",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0287:f0d7af8c542e48ab",
+      "arabic": "١١٦٤٩- قريبة: بفتح أوله، ويقال بالتصغير، بنت أبي أميّة بن المغيرة المخزوميّة «٢»، أخت أم سلمة.\nتقدم نسبها في ترجمة أخيها عبد اللَّه.\nقالت أم سلمة: لما وضعت زينب جاءني رسول اللَّه ﵌ فخطبني، فذكرت قصّة تزويجها ودخوله عليها واشتغالها برضاع زينب، حتى جاء يوما فلم يرها، فقال: أين زينب؟ فقالت قريبة ووافقها عبدها:\nأخذها عمار بن ياسر، فقال النّبيّ ﵌: «أنا آتيكم اللّيلة» . فدخل على أم سلمة.\nوقال البلاذريّ. تزوّجها معاوية بن أبي سفيان لما أسلم. وقال ابن سعد: هي قريبة الصّغرى، أمّها عاتكة بنت عتبة بن ربيعة، قال: وتزوّجها عبد الرّحمن بن أبي بكر فولدت له عبد اللَّه، وأم حكيم، وحفصة، ثم ساق بسند صحيح إلى ابن أبي مليكة، قال: تزوّج عبد الرحمن قريبة أخت أم سلمة، وكان في خلفه شدة، فقالت له يوما: أما واللَّه لقد حذّرتك.\nقال: فأمرك بيدك. قالت: لا أختار على ابن الصّديق أحدا، فأقام عليها.\nقلت: وكانت موصوفة بالجمال، فقد وقع عند عمر بن شبة في كتاب مكّة، عن يعقوب بن القاسم الطّلحيّ، عن يحيى بن عبد اللَّه بن أبي الحارث الزّمعيّ، قال: لما فتحت مكة قال النبيّ ﵌ لسعد بن عبادة لما قال: ما رأينا من نساء قريش ما كان يذكر من جمالهن: هل رأيت بنات أبي أميّة بن المغيرة؟ هل رأيت قريبة؟ الحديث.",
+      "english": "11649—Qariba—with an a-vowel on the first letter; it is also said in the diminutive, Qurayba—bint Abu Umayya ibn al-Mughira al-Makhzumiyya (2), the sister of Umm Salama.\n\nHer lineage was given previously in the entry on her brother Abd Allah.\n\nUmm Salama said: “When I gave birth to Zaynab, the Messenger of Allah—may Allah bless him and grant him peace—came to me and proposed marriage to me.” She then related the account of their marriage, his consummation of the marriage with her, and how she was occupied with nursing Zaynab, until one day he came and did not see her. He asked, “Where is Zaynab?” Qariba said—and her slave concurred with her—“Ammar ibn Yasir has taken her.” The Prophet—may Allah bless him and grant him peace—then said, “I shall come to you tonight,” and he went in to Umm Salama.\n\nAl-Baladhuri said: “Muawiya ibn Abu Sufyan married her when he embraced Islam.” Ibn Sa'd said: “She was Qariba the Younger. Her mother was Atika bint Utba ibn Rabia.” He said: “Abd al-Rahman ibn Abu Bakr married her, and she bore him Abd Allah, Umm Hakim, and Hafsa.” He then related, through a sound chain of transmission, from Ibn Abu Mulayka, who said: “Abd al-Rahman married Qariba, the sister of Umm Salama. There was severity in his disposition. One day she said to him, ‘By Allah, I was indeed warned about you.’ He replied, ‘Then your affair is in your own hands.’ She said, ‘I would not choose anyone over the son of al-Siddiq,’ and so he remained married to her.”\n\nI say: She was described as beautiful. In Umar ibn Shabba's Book of Mecca, it is related from Yaqub ibn al-Qasim al-Talhi, from Yahya ibn Abd Allah ibn Abu al-Harith al-Zam'i, who said: When Mecca was conquered, the Prophet—may Allah bless him and grant him peace—said to Sa'd ibn Ubada, after Sa'd had said, “We have not seen among the women of Quraysh the beauty that used to be attributed to them”: “Have you seen the daughters of Abu Umayya ibn al-Mughira? Have you seen Qariba?”—and the rest of the report.",
+      "arabic_sha256": "282dc15597b20ab664bf44cc006476217c521ac2316d396ba1490de1ab6dc873",
+      "english_sha256": "1d66088601852eeb8fdba727fb8eb82ef9d9c1e4c086dbc056e69e9987c901c4",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمار بن ياسر",
+      "english": "Ammar ibn Yasir",
+      "kind": "person"
+    },
+    {
+      "arabic": "البلاذري",
+      "english": "al-Baladhuri",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية بن أبي سفيان",
+      "english": "Muawiya ibn Abu Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاتكة بنت عتبة بن ربيعة",
+      "english": "Atika bint Utba ibn Rabia",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن أبي بكر",
+      "english": "Abd al-Rahman ibn Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي مليكة",
+      "english": "Ibn Abu Mulayka",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن شبة",
+      "english": "Umar ibn Shabba",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب مكة",
+      "english": "Book of Mecca",
+      "kind": "work"
+    },
+    {
+      "arabic": "يعقوب بن القاسم الطلحي",
+      "english": "Yaqub ibn al-Qasim al-Talhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن عبد الله بن أبي الحارث الزمعي",
+      "english": "Yahya ibn Abd Allah ibn Abu al-Harith al-Zam'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "سعد بن عبادة",
+      "english": "Sa'd ibn Ubada",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو أمية بن المغيرة",
+      "english": "Abu Umayya ibn al-Mughira",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

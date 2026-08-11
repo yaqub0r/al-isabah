@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010863",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10863,
+  "title": {
+    "english": "Umayma bint 'Abd al-Muttalib",
+    "arabic_observed": "أميمة بنت عبد المطلب ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010863-segment-0001",
+      "volume": 8,
+      "scan_page": 34,
+      "printed_page": 33,
+      "reader_page": 3946,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3946",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0034:68350d931ff8e07d",
+      "arabic": "١٠٨٦٣- أميمة بنت عبد المطلب ،\nهي بنت ربيعة بن الحارث بن عبد المطلب، نسبت لجدها الأعلى. تقدمت.",
+      "english": "10863—Umayma bint 'Abd al-Muttalib\n\nShe is the daughter of Rabi'a ibn al-Harith ibn 'Abd al-Muttalib and was attributed to her more remote ancestor. She was mentioned previously.",
+      "arabic_sha256": "7b126e703143edcbb9d472c12210c6b9fae450516fc8fead5fc045f271dd7388",
+      "english_sha256": "1f784309196e99ce968f5ff0fb9c1d03fd9d1ab78b7207174d79857427cf6257",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أميمة",
+      "english": "Umayma bint Subayh",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

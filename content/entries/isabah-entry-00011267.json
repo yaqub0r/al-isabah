@@ -1,0 +1,124 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011267",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11267,
+  "title": {
+    "english": "Zaynab bint Ali ibn Abi Talib ibn Abd al-Muttalib al-Hashimiyya (3)",
+    "arabic_observed": "زينب بنت علي"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011267-segment-0001",
+      "volume": 8,
+      "scan_page": 167,
+      "printed_page": 166,
+      "reader_page": 4079,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4079",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0167:281b962cb294b34a",
+      "arabic": "١١٢٦٧- زينب بنت علي\nبن أبي طالب بن عبد المطلب الهاشمية «٣»، سبطة رسول اللَّه ﷺ. أمها فاطمة الزهراء.\nقال ابن الأثير: إنها ولدت في حياة النبي ﷺ، وكانت عاقلة لبيبة جزلة، زوّجها أبوها ابن أخيه عبد اللَّه بن جعفر، فولدت له أولادا، وكانت مع أخيها لما قتل، فحملت إلى\n(١) أسد الغابة ت ٦٩٥٦، الاستيعاب: ت ٣٤٠٢.\n(٢) أسد الغابة ت ٦٩٦٣.\n(٣) أسد الغابة ت ٦٩٦٩.",
+      "english": "11267—Zaynab bint Ali ibn Abi Talib ibn Abd al-Muttalib al-Hashimiyya (3)\n\nShe was a granddaughter of the Messenger of Allah—may Allah bless him and grant him peace. Her mother was Fatima al-Zahra.\n\nIbn al-Athir said that she was born during the lifetime of the Prophet—may Allah bless him and grant him peace—and was intelligent, discerning, and eloquent. Her father married her to his brother's son, Abdullah ibn Ja'far, and she bore him children. She was with her brother when he was killed, and she was taken to—\n\n(1) Usd al-Ghaba, entry 6956; al-Isti'ab, entry 3402.\n\n(2) Usd al-Ghaba, entry 6963.\n\n(3) Usd al-Ghaba, entry 6969.",
+      "arabic_sha256": "732307b19872b07feea5b3e328d28a8913a0e16b4c89051bdf6d463d69c6e37d",
+      "english_sha256": "9efb6a868447ef7cbebdd0f879cde87c7bf215290adcc6913f42d84942f3bd4c",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011267-segment-0002",
+      "volume": 8,
+      "scan_page": 168,
+      "printed_page": 167,
+      "reader_page": 4080,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4080",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0168:a6071ac49f0eb142",
+      "arabic": "دمشق، وحضرت عند يزيد بن معاوية، وكلامها ليزيد بن معاوية حين طلب الشامي أختها فاطمة مشهور يدلّ على عقل وقوة جنان.",
+      "english": "…Damascus, and she appeared before Yazid ibn Mu'awiya. Her words to Yazid ibn Mu'awiya, when the Syrian asked for her sister Fatima, are famous and demonstrate intelligence and stoutness of heart.",
+      "arabic_sha256": "fde885b04d8b8fc8d4a2eb9bd9f7a5dc5730c018c6096f25d9c819097b8fb146",
+      "english_sha256": "7c2255f2259739483aeb616820e5fb0166dbc93ab0c5ef7b8f245d0fdba206b2",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زينب",
+      "english": "Rabiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت علي بن أبي طالب بن عبد المطلب الهاشمية",
+      "english": "Zaynab bint Ali ibn Abi Talib ibn Abd al-Muttalib al-Hashimiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن أبي طالب",
+      "english": "Ali ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة الزهراء",
+      "english": "Fatima al-Zahra",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن جعفر",
+      "english": "Abdullah ibn Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "دمشق",
+      "english": "Damascus",
+      "kind": "place"
+    },
+    {
+      "arabic": "يزيد بن معاوية",
+      "english": "Yazid ibn Mu'awiya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

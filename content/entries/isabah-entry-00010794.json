@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010794",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10794,
+  "title": {
+    "english": "Arwa bint al-Muqawwim",
+    "arabic_observed": "أروى بنت المقوّم"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010794-segment-0001",
+      "volume": 8,
+      "scan_page": 11,
+      "printed_page": 10,
+      "reader_page": 3923,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3923",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0011:55c54a283604bf8c",
+      "arabic": "١٠٧٩٤- أروى بنت المقوّم\nبن عبد المطلب الهاشمية، ابنة عم رسول اللَّه ﷺ.\nكانت زوج ابن عمها أبي سفيان بن الحارث.\nذكرها الزّبير، وذكر أنها ولدت بنات.\nوقال ابن سعد: تزوجها أبو مسروح «١» الحارث بن يعمر بن حبان بن عمير، من بني سعد بن بكر بن هوازن، وكان حليف العباس بن عبد المطلب، فولدت له عبد اللَّه بن أبي مسروح.",
+      "english": "10794 — Arwa bint al-Muqawwim\n\nibn Abd al-Muttalib, the Hashimi woman and a paternal cousin of the Messenger of Allah, may Allah bless him and grant him peace.\n\nShe was the wife of her paternal cousin Abu Sufyan ibn al-Harith.\n\nAl-Zubayr mentioned her and stated that she bore daughters.\n\nIbn Sa'd said: Abu Masruh (1), al-Harith ibn Ya'mur ibn Habban ibn Umayr, of Banu Sa'd ibn Bakr ibn Hawazin, married her. He was a confederate of al-Abbas ibn Abd al-Muttalib, and she bore him Abd Allah ibn Abi Masruh.",
+      "arabic_sha256": "1796903fa6fc14d2266b73a70b8971cde9d72d79d796bc3f1993f866843d0d53",
+      "english_sha256": "a265659f1fb252f3468d6e7c37659746a634686d76e73f0cc9d4d885a69b7273",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الهاشمية",
+      "english": "Banu Hashim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو سفيان بن الحارث",
+      "english": "Abu Sufyan ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني سعد بن بكر بن هوازن",
+      "english": "Banu Sa'd ibn Bakr ibn Hawazin",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "العباس بن عبد المطلب",
+      "english": "al-Abbas ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن أبي مسروح",
+      "english": "Abd Allah ibn Abi Masruh",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

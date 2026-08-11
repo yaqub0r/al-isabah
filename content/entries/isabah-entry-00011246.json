@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011246",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11246,
+  "title": {
+    "english": "Zaynab bint Abd Allah¹",
+    "arabic_observed": "زينب بنت عبد اللَّه «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011246-segment-0001",
+      "volume": 8,
+      "scan_page": 162,
+      "printed_page": 161,
+      "reader_page": 4074,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4074",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0162:0fbbc6c299d8b776",
+      "arabic": "١١٢٤٦- زينب بنت عبد اللَّه «١»\nبن أبي ابن سلول، كانت زوج ثابت بن قيس بن شماس، فاختلعت منه.\nكذا وقع في «السّنن» للدّارقطنيّ. وقد تقدم في حرف الجيم أن اسمها جميلة.",
+      "english": "11246—Zaynab bint Abd Allah¹\n\nibn Ubayy ibn Salul. She was the wife of Thabit ibn Qays ibn Shammas, and she obtained a khul divorce from him.\n\nThis is how it appears in al-Daraqutni's al-Sunan. It has already been stated under the letter jim that her name was Jamila.",
+      "arabic_sha256": "04816b42cd81ce75462ab878038fc032ee132ecc161a29769038cac21f3344e8",
+      "english_sha256": "38da760ff6f0518e6782a19f11d2edf05a7af148b9edb561c1bf9551e3085c54",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "بنت عبد",
+      "english": "Zaynab bint Abd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت بن قيس بن شماس",
+      "english": "Thabit ibn Qays ibn Shammas",
+      "kind": "person"
+    },
+    {
+      "arabic": "السّنن",
+      "english": "al-Sunan",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدارقطني",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة",
+      "english": "Jamila",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت عبد اللَّه",
+      "english": "Zaynab bint Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah ibn Hakim ibn Hizam",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

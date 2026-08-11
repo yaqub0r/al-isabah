@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011311",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11311,
+  "title": {
+    "english": "Salama bint Mas'ud ibn Ka'b ibn 'Amir ibn 'Adi ibn Majda'a ibn Haritha",
+    "arabic_observed": "سلامة بنت مسعود"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011311-segment-0001",
+      "volume": 8,
+      "scan_page": 183,
+      "printed_page": 182,
+      "reader_page": 4095,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4095",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0183:62e987168cded9ff",
+      "arabic": "١١٣١١- سلامة بنت مسعود\nبن كعب بن عامر بن عدي بن مجدعة بن حارثة، أخت حويصة ومحيصة.\nذكرها ابن سعد في المبايعات، وقال: أمها أدام بنت الجموح، تزوجها مرثدة بن غنم بن مالك بن جويرية بن حارثة.",
+      "english": "11311 — Salama bint Mas'ud ibn Ka'b ibn 'Amir ibn 'Adi ibn Majda'a ibn Haritha\n\nShe was the sister of Huwayyisa and Muhayyisa.\n\nIbn Sa'd mentioned her among the women who pledged allegiance and said: Her mother was Adam bint al-Jamuh. Marthada ibn Ghanm ibn Malik ibn Juwayriya ibn Haritha married her.",
+      "arabic_sha256": "3896c78b2ca80c6ab4e9644b5dc8393540fc1056989ead7b162a2961c8722ca7",
+      "english_sha256": "63ff24210285631050c4d34dbabb5509029b1b7f94c27a393c24016c89e00e69",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سلامة بنت مسعود بن كعب بن عامر بن عدي بن مجدعة بن حارثة",
+      "english": "Salama bint Mas'ud ibn Ka'b ibn 'Amir ibn 'Adi ibn Majda'a ibn Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "حويصة",
+      "english": "Huwayyisa",
+      "kind": "person"
+    },
+    {
+      "arabic": "محيصة",
+      "english": "Muhayisa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أدام بنت الجموح",
+      "english": "Adam bint al-Jamuh",
+      "kind": "person"
+    },
+    {
+      "arabic": "مرثدة بن غنم بن مالك بن جويرية بن حارثة",
+      "english": "Marthada ibn Ghanm ibn Malik ibn Juwayriya ibn Haritha",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

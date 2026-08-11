@@ -1,0 +1,110 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011061",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11061,
+  "title": {
+    "english": "Hamna bint Abi Sufyan",
+    "arabic_observed": "حمنة بنت أبي سفيان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011061-segment-0001",
+      "volume": 8,
+      "scan_page": 90,
+      "printed_page": 89,
+      "reader_page": 4002,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4002",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0090:d2b7f6cc4d4ff2a9",
+      "arabic": "١١٠٦١- حمنة بنت أبي سفيان\nبن حرب بن أمية «١» .\nسماها ابن عائشة فيما\nأخرجه الطّبرانيّ من طريقه عن حماد، عن هشام، عن أبيه، عن زينب بنت أبي سلمة، عن أم حبيبة- أنها قالت: يا رسول اللَّه، هل لك في حمنة بنت أبي سفيان؟ قال: «أصنع ماذا»؟ «٢» قالت: تنكحها. قال: «لا تحلّ لي ...» الحديث.\nواستدركها أبو موسى، وقال: رواها غير واحد عن هشام فلم يسمّوها، ومنهم من سماها درة. واللَّه أعلم.",
+      "english": "11061—Hamna bint Abi Sufyan\nibn Harb ibn Umayya.(1)\n\nIbn Aisha gave her this name in the report transmitted by al-Tabarani through him, from Hammad, from Hisham, from his father, from Zaynab bint Abi Salama, from Umm Habiba, who said: “O Messenger of Allah, would you be interested in Hamna bint Abi Sufyan?” He said: “What should I do?”(2) She said: “Marry her.” He said: “She is not lawful for me …” to the end of the hadith.\n\nAbu Musa added her as an omitted entry and said: More than one narrator transmitted it from Hisham without naming her, while some named her Durra. Allah knows best.",
+      "arabic_sha256": "a4831edd26d92af5c1a3f92a70ee942b6855cfca1d0d38793cf629c724553781",
+      "english_sha256": "64e52aad3305864a78799ea5240b010c7e2f600580256042d9e39670e3cff099",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حبيبة",
+      "english": "Habiba bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيب",
+      "english": "Umm Habib bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عائشة",
+      "english": "Ibn Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطّبرانيّ",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "حماد",
+      "english": "Hammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام",
+      "english": "Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت أبي سلمة",
+      "english": "Zaynab bint Abi Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "درة",
+      "english": "Durra",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

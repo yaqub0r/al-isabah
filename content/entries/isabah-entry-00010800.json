@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010800",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10800,
+  "title": {
+    "english": "Asma bint Sa'id",
+    "arabic_observed": "أسماء بنت سعيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010800-segment-0001",
+      "volume": 8,
+      "scan_page": 12,
+      "printed_page": 11,
+      "reader_page": 3924,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3924",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0012:2b5e1b1f25e43347",
+      "arabic": "١٠٨٠٠- أسماء بنت سعيد\nبن زيد بن عمرو بن نفيل القرشية العدوية.\nلها ولأبيها صحبة.\nوأخرج حديثها الدار الدّارقطنيّ في العلل، من رواية حفص بن غياث، عن أبي حرملة، عن أبي، فقال: عن رباح بن عبد الرحمن، حدثتني جدتي أنها سمعت رسول اللَّه ﷺ يقول: «لا صلاة لمن لا وضوء له ...» الحديث.\nوأخرجه البيهقيّ، وقال: جدته أسماء بنت سعيد بن زيد.",
+      "english": "10800 — Asma bint Sa'id\n\nibn Zayd ibn Amr ibn Nufayl, the Qurashi woman of the Adi clan.\n\nShe and her father were Companions.\n\nal-Daraqutni transmitted her hadith in al-'Ilal, through Hafs ibn Ghiyath, from Abu Harmala, from Abu Thifal, from Ribah ibn Abd al-Rahman, who said: “My grandmother related to me that she heard the Messenger of Allah (may Allah bless him and grant him peace) say: ‘There is no prayer for one who has no ablution ...’” —to the end of the hadith.\n\n[Editorial note: The canonical text reads al-dar al-Daraqutni, with al-dar duplicated, and later reads “from Abi, and he said: from Ribah.” The chain has been emended transparently to “from Abu Thifal, from Ribah” on the evidence of al-Daraqutni's parallel transmission in al-'Ilal.]\n\nal-Bayhaqi also transmitted it and said: “His grandmother was Asma bint Sa'id ibn Zayd.”",
+      "arabic_sha256": "f31f66fbea62ef601fdeefd66b87d5876fedfe2c0b1a726aa4a371e0f062acc5",
+      "english_sha256": "a2036547d41816c9e2d784b6b668fa2b414b6df9e492a58ab7b92ecbb33a0ab2",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الدارقطني",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفص بن غياث",
+      "english": "Hafs ibn Ghiyath",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو حرملة",
+      "english": "Abu Harmala",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو ثفال",
+      "english": "Abu Thifal",
+      "kind": "person"
+    },
+    {
+      "arabic": "رباح بن عبد الرحمن",
+      "english": "Ribah ibn Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "العدوية",
+      "english": "Adi",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "العلل",
+      "english": "al-'Ilal",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

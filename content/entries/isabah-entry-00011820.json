@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011820",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11820,
+  "title": {
+    "english": "Nafisa bint Umayya:",
+    "arabic_observed": "نفيسة بنت أمية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011820-segment-0001",
+      "volume": 8,
+      "scan_page": 337,
+      "printed_page": 336,
+      "reader_page": 4249,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4249",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0337:e71cb7c477091877",
+      "arabic": "١١٨٢٠- نفيسة بنت أمية:\nأخت يعلى «٤» ..\nتقدّم نسبها في ترجمة أخيها. قال أبو عمر: لها صحبة ورواية. وقال ابن سعد: أمها منية بنت جابر بن وهب، أسلمت نفيسة بنت منية، وهي التي مشت بين خديجة والنبيّ ﵌ حتى تزوجها.",
+      "english": "11820 — Nafisa bint Umayya:\n\nThe sister of Ya'la.⁴\n\nHer lineage was given previously in the entry on her brother. Abu Umar said: “She was a Companion and transmitted reports.” Ibn Sa'd said: “Her mother was Munya bint Jabir ibn Wahb. Nafisa bint Munya embraced Islam, and it was she who acted as intermediary between Khadijah and the Prophet, may Allah bless him and grant him peace, until he married her.”",
+      "arabic_sha256": "4b9221e6e19158a1950f9a7e51eeaf02c342511c3bc08771c23807d567122322",
+      "english_sha256": "d7435cfb27603e821dfe4821c49ac1a1b08c16e4410ed1641e068f7092fb649e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "نفيسة بنت أمية",
+      "english": "Nafisa bint Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "يعلى",
+      "english": "Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "منية بنت جابر بن وهب",
+      "english": "Munya bint Jabir ibn Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "نفيسة بنت منية",
+      "english": "Nafisa bint Munya",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "نفيسة",
+      "english": "Nafisa bint Tha'laba",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

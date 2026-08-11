@@ -1,0 +1,79 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010898",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10898,
+  "title": {
+    "english": "Anisa bint Hilal",
+    "arabic_observed": "أنيسة بنت هلال"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010898-segment-0001",
+      "volume": 8,
+      "scan_page": 41,
+      "printed_page": 40,
+      "reader_page": 3953,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3953",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0041:e4605fe0c8a3cf89",
+      "arabic": "١٠٨٩٨- أنيسة بنت هلال\nبن المعلى بن لوذان الأنصارية «٥»، من بني بياضة.\n(١) أسد الغابة: ت ٦٧٥٦.\n(٢) أسد الغابة: ت ٦٧٥٧.\n(٣) أسد الغابة: ت ٦٧٤٨.\n(٤) أسد الغابة: ت ٦٧٥٩.\n(٥) أسد الغابة: ت ٦٧٦١.",
+      "english": "10898—Anisa bint Hilal\n\nibn al-Mualla ibn Lawdhan, the Ansari woman [5] of Banu Bayada.\n\n[1] Usd al-Ghaba, entry no. 6756.\n[2] Usd al-Ghaba, entry no. 6757.\n[3] Usd al-Ghaba, entry no. 6748.\n[4] Usd al-Ghaba, entry no. 6759.\n[5] Usd al-Ghaba, entry no. 6761.",
+      "arabic_sha256": "44c7fd04bdeb08b35a67dcec2803b7f96dbbaed952be5ecc9b5d93410a1f40cb",
+      "english_sha256": "0312f4ccd4e19325477cb73d79aa91846e9156a4a346bb12d4569b3d11e27db4",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010898-segment-0002",
+      "volume": 8,
+      "scan_page": 42,
+      "printed_page": 41,
+      "reader_page": 3954,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3954",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0042:fb18798548014952",
+      "arabic": "بايعت النبي ﷺ، قاله ابن حبيب. واستدركها ابن الأثير.\nالقسم الثاني",
+      "english": "She pledged allegiance to the Prophet, may Allah bless him and grant him peace. Ibn Habib stated this. Ibn al-Athir added her as an omission.\n\nSECTION TWO",
+      "arabic_sha256": "907c9fc3878b8f75aafd1085b7fb6547c331b7a4137f6f6fb422a6b897e149f3",
+      "english_sha256": "d653d2f4b0fd3536b0be6e33a136a50544c50b306beb87db125bb8c37e67da3d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بني بياضة",
+      "english": "Banu Bayada",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

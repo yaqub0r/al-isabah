@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012056",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12056,
+  "title": {
+    "english": "Umm Sa'd bint Thabit",
+    "arabic_observed": "أم سعد بنت ثابت"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012056-segment-0001",
+      "volume": 8,
+      "scan_page": 404,
+      "printed_page": 403,
+      "reader_page": 4316,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4316",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0404:a8d9cc4290690880",
+      "arabic": "١٢٠٥٦- أم سعد بنت ثابت\nبن عتيك، اسمها كبشة. تقدمت.",
+      "english": "12056—Umm Sa'd bint Thabit\n\nibn Atik; her name was Kabsha. See above.",
+      "arabic_sha256": "6180949aaa8e6b14c23cc0c638d7a41bcf949c7a6a68e53e0f7caa3b9d267767",
+      "english_sha256": "ec1644d276a0ff4b03ca3d77cc33950399078b876729326bcc62e8a5e3a00025",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "كبشة",
+      "english": "Kabsha bint Thabit ibn Atik",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

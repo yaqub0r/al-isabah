@@ -1,0 +1,109 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011638",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11638,
+  "title": {
+    "english": "Fatima bint al-Walid ibn Abd Shams",
+    "arabic_observed": "فاطمة بنت الوليد بن عبد شمس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011638-segment-0001",
+      "volume": 8,
+      "scan_page": 283,
+      "printed_page": 282,
+      "reader_page": 4195,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4195",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0283:bb967d6a78c7d53b",
+      "arabic": "١١٦٣٨- فاطمة بنت الوليد بن عبد شمس\nبن الوليد بن المغيرة بن عبد اللَّه بن عمر بن مخزوم.\nمات أبوها شهيدا باليمامة، وأمّها أم حكيم بنت أبي جهل، وتزوّجها عثمان بن عفّان فولدت له سعيدا والوليد.\n(١) في أ: يزيد.\n(٢) أسد الغابة ت (٧٢١١) .\n(٣) أسد الغابة ت (٧٢١٢) .\n(٤) أسد الغابة ت (٧٢١٣) .\n(٥) أسد الغابة ت (٧٢١٤)، الثقات ٣/ ٣١٧، تجريد أسماء الصحابة ٢/ ٢٩٧.",
+      "english": "11638—Fatima bint al-Walid ibn Abd Shams\n\nibn al-Walid ibn al-Mughira ibn Abd Allah ibn Umar ibn Makhzum.\n\nHer father died as a martyr at al-Yamama. Her mother was Umm Hakim bint Abi Jahl. Uthman ibn Affan married her, and she bore him Sa'id and al-Walid.\n\n[1] In manuscript A: “Yazid.”\n[2] Usd al-Ghaba, entry 7211.\n[3] Usd al-Ghaba, entry 7212.\n[4] Usd al-Ghaba, entry 7213.\n[5] Usd al-Ghaba, entry 7214; al-Thiqat, 3/317; al-Tajrid, 2/297.",
+      "arabic_sha256": "1bc747788d10b5d6f05b4047f5a2dd0430567f363f5bd4815e1ebf01fde79a20",
+      "english_sha256": "ab8990d38f7cdbaa6f79848bde5bc977107de9715897c76198e13d429e5ff1bb",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011638-segment-0002",
+      "volume": 8,
+      "scan_page": 284,
+      "printed_page": 283,
+      "reader_page": 4196,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4196",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0284:5eef448d5fad577f",
+      "arabic": "ذكرها الزّبير بن بكّار.\nالقسم الثالث\nخال.\nالقسم الرابع",
+      "english": "al-Zubayr ibn Bakkar mentioned her.\n\nSection Three\n\nVacant.\n\nSection Four",
+      "arabic_sha256": "beea40fa13304784c0544ec7046443d13a065befd4ea09bf4cb2cdc4e5d33306",
+      "english_sha256": "984f271c9b9bba693a1db8b4fccfa59f09303b74483226862d0ad4259a4be417",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima al-Zahra",
+      "kind": "person"
+    },
+    {
+      "arabic": "اليمامة",
+      "english": "al-Yamama",
+      "kind": "place"
+    },
+    {
+      "arabic": "أم حكيم بنت أبي جهل",
+      "english": "Umm Hakim bint Abi Jahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن عفان",
+      "english": "Uthman ibn Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد",
+      "english": "Sa'id ibn Uthman ibn Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوليد",
+      "english": "al-Walid ibn Uthman ibn Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد",
+      "english": "Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الزّبير بن بكّار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

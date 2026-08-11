@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010895",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10895,
+  "title": {
+    "english": "Anisa bint Anama",
+    "arabic_observed": "أنيسة بنت عنمة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010895-segment-0001",
+      "volume": 8,
+      "scan_page": 41,
+      "printed_page": 40,
+      "reader_page": 3953,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3953",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0041:e4605fe0c8a3cf89",
+      "arabic": "١٠٨٩٥- أنيسة بنت عنمة ،\nكالذي قبلها، ابن عدي بن سنان بن نابي بن عمرو بن سواد.\nذكرها ابن سعد، وقال: تزوجها عبد اللَّه بن عمرو بن حزام.\nوأخرج من طريق شريك عن الأسود بن قيس، عن نبيح العنزي، عن جابر بن عبد اللَّه، قال: أصيب أبي وخالي يوم أحد، فجاءت أمي بهما، وقد عرضتهما على ناقة فنادى منادي رسول اللَّه ﷺ: ادفنوا القتلى في مصارعهم، فردا.\nوأخرجه التّرمذيّ، من طريق شعبة، عن الأسود عنه، فقال: جاءت عمتي. ويحتمل إن كان محفوظا أن تكون كل منهما شاركت في ذلك.",
+      "english": "10895—Anisa bint Anama\n\n—the latter name being as in the preceding entry—ibn Adi ibn Sinan ibn Nabi ibn Amr ibn Sawad.\n\nIbn Sad mentioned her and said: Abdullah ibn Amr ibn Hizam married her.\n\nHe transmitted by way of Sharik, from al-Aswad ibn Qays, from Nubayh al-Anazi, from Jabir ibn Abdullah, who said: “My father and my maternal uncle were slain on the day of Uhud. My mother brought them, having laid them crosswise upon a she-camel. Then the herald of the Messenger of Allah (may Allah bless him and grant him peace) called out: ‘Bury the slain where they fell.’ They were therefore taken back.”\n\nAl-Tirmidhi also transmitted it by way of Shuba, from al-Aswad, from him, but his version says: “My paternal aunt came.” If this wording is reliably preserved, it is possible that both women took part in doing this.",
+      "arabic_sha256": "d6f5eda73ad06124862f41d015f8a00f4e7c0497214cef7ed51307e9a20fe599",
+      "english_sha256": "6d0c1dc2ac1e7a28640f9639db2c179566a2f565357a39791e13e30c7d5063b6",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عمرو بن حزام",
+      "english": "Abdullah ibn Amr ibn Hizam",
+      "kind": "person"
+    },
+    {
+      "arabic": "شريك",
+      "english": "Sharik",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأسود بن قيس",
+      "english": "al-Aswad ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "نبيح العنزي",
+      "english": "Nubayh al-Anazi",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر بن عبد اللَّه",
+      "english": "Jabir ibn Abdullah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "شعبة",
+      "english": "Shuba",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

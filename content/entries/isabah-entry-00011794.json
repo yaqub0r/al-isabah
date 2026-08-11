@@ -1,0 +1,140 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011794",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11794,
+  "title": {
+    "english": "Mulayka bint Kharija ibn Sinan",
+    "arabic_observed": "مليكة بنت خارجة بن سنان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011794-segment-0001",
+      "volume": 8,
+      "scan_page": 330,
+      "printed_page": 329,
+      "reader_page": 4242,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4242",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0330:e18c1c91893cad39",
+      "arabic": "١١٧٩٤- مليكة بنت خارجة بن سنان\nبن أبي حارثة بن مرة بن عوف.\nذكرها المستغفريّ من طريق محمد بن ثور، عن ابن جريج، عن عكرمة، قال: فرّق الإسلام بين مليكة بنت خارجة بن سنان، كانت تحت زبّان فخلف عليها ولده منظور، وذكرها أبو موسى في الذيل.\nقلت: وذكر عمر بن شبّة في «كتاب المدينة»: عن أبي غسان المدني، قال: دخلت في المسجد النّبوي- يعني لمّا زاد فيه عثمان دار عبد الرحمن بن عوف، وهي التي يقال لها دار مليكة، لأن عبد الرّحمن بن عوف أنزلها مليكة بنت خارجة بن سنان بن أبي حارثة حين قدمت المدينة في خلافة أبي بكر الصّديق، وكانت تحت زبان بن سيار. فهلك عنها، فخلف عليها ابنه منظور، فأقدمها أبو بكر المدينة ففرق بينهما، وقال: من ينزل هذه المرأة؟ فقال عبد الرّحمن بن عوف: أنا، فأنزلها في هذه الدّار، فنسبت إليها.\nوقد حكيت في ترجمة منظور في القسم الأول من حرف الميم من الرّجال عن عمر بن شبّة أن هذه القصّة إنما وقعت في خلافة عمر، لكن يحتمل أنها قدمت مرّتين، وإنما لم أر من ذكر قدومها في العهد النبويّ، بخلاف منظور، فقد ذكرت في ترجمته ما يشعر بذلك.\n(١) قال الأزهري: هي حكاية وقع السّياط، وقيل: حكاية وقع الأقدام عند السعي يريد أقبل الناس إليه يسعون ولأقدامهم طبطبة أي صوت، ويحتمل أن يكون أراد بها الدرّة نفسها فسماها طبطبية، لأنها إذا ضرب بها حكت صوت طب طب، وهي منصوبة على التحذير. النهاية ٣/ ١١٢.",
+      "english": "11794—Mulayka bint Kharija ibn Sinan\nibn Abi Haritha ibn Murra ibn Awf.\n\nShe was mentioned by al-Mustaghfiri through Muhammad ibn Thawr, from Ibn Jurayj, from Ikrima, who said: “Islam separated Mulayka bint Kharija ibn Sinan from Manzur. She had been married to Zabban, and his son Manzur married her after him.” Abu Musa also mentioned her in al-Dhayl.\n\nI say: Umar ibn Shabba also related in Kitab al-Madina, from Abu Ghassan al-Madani, who said: “The house of Abd al-Rahman ibn Awf was incorporated into the Prophet's Mosque—that is, when Uthman added it to the mosque—and it is the house called the House of Mulayka. This is because Abd al-Rahman ibn Awf lodged Mulayka bint Kharija ibn Sinan ibn Abi Haritha there when she came to Medina during the caliphate of Abu Bakr al-Siddiq. She had been married to Zabban ibn Sayyar. He died, leaving her a widow, and his son Manzur married her after him. Abu Bakr had her brought to Medina and separated the two of them. He asked, ‘Who will lodge this woman?’ Abd al-Rahman ibn Awf said, ‘I will.’ He therefore lodged her in this house, and it came to be named after her.”\n\nIn Manzur's biographical entry, in Section One under the letter mim in the section on men, I related from Umar ibn Shabba that this incident actually occurred during the caliphate of Umar. It is possible, however, that she came twice. I have not seen anyone mention her arrival during the Prophetic era, unlike Manzur; in his biographical entry I cited material suggesting that he arrived then.\n\n[1] al-Azhari said: “It is an imitation of the sound of whips striking.” It was also said: “It is an imitation of the sound of feet while running,” meaning that the people came toward him at a run and their feet made a tabtaba—that is, a sound. The term may instead refer to the switch itself, which was called tabtabiyya because, when one struck with it, it imitated the sound “tab, tab.” It is in the accusative as a warning. See al-Nihaya, 3/112.",
+      "arabic_sha256": "4e424a07218ae6ffc80fd17a4b800f077d54547e9900dc54f9a0ef9142537698",
+      "english_sha256": "e6abdbad2bd587d1bffdd08e9b3f61c20a93948ea38a3963e11c7532e412db5b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن ثور",
+      "english": "Muhammad ibn Thawr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن جريج",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "عكرمة",
+      "english": "Ikrima",
+      "kind": "person"
+    },
+    {
+      "arabic": "زبان بن سيار",
+      "english": "Zabban ibn Sayyar",
+      "kind": "person"
+    },
+    {
+      "arabic": "منظور",
+      "english": "Manzur ibn Zabban",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "عمر بن شبّة",
+      "english": "Umar ibn Shabba",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب المدينة",
+      "english": "Kitab al-Madina",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو غسان المدني",
+      "english": "Abu Ghassan al-Madani",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسجد النّبوي",
+      "english": "Prophet's Mosque",
+      "kind": "place"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عوف",
+      "english": "Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "دار مليكة",
+      "english": "House of Mulayka",
+      "kind": "place"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو بكر الصديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأزهري",
+      "english": "al-Azhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

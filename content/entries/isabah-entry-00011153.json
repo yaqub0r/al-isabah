@@ -1,0 +1,124 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011153",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11153,
+  "title": {
+    "english": "Durra bint Abi Salama",
+    "arabic_observed": "درّة بنت أبي سلمة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011153-segment-0001",
+      "volume": 8,
+      "scan_page": 127,
+      "printed_page": 126,
+      "reader_page": 4039,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4039",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0127:99be53fc5d48a677",
+      "arabic": "١١١٥٣- درّة بنت أبي سلمة\nبن عبد الأسد بن عبد اللَّه بن عمرو بن مخزوم المخزومية «٣» .\nهي التي قالت لها أمّ حبيبة في القصة التي قبل هذه. إنا قد تحدثنا أنك ناكح درة بنت\n(١) الاستيعاب: ت ٣٣٧٨.\n(٢) أسد الغابة: ت ٦٩٠٣.\n(٣) أسد الغابة: ت ٦٩٠٤، الاستيعاب: ت ٣٣٧٩.",
+      "english": "11153—Durra bint Abi Salama\n\nIbn 'Abd al-Asad ibn 'Abd Allah ibn 'Amr ibn Makhzum, the Makhzumite.³\n\nShe is the one about whom Umm Habiba said in the preceding account: “We have been saying that you are going to marry Durra, daughter of—”\n\n(1) al-Isti'ab, entry 3378.\n\n(2) Usd al-Ghaba, entry 6903.\n\n(3) Usd al-Ghaba, entry 6904; al-Isti'ab, entry 3379.",
+      "arabic_sha256": "c03193241fedde622283055cb98eaee93993e349e3ae968c39ddeb43637357f4",
+      "english_sha256": "5ff3101f501ef43f828471af7bce880b256ba2a6c26de519a73069a4f32a02d6",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011153-segment-0002",
+      "volume": 8,
+      "scan_page": 128,
+      "printed_page": 127,
+      "reader_page": 4040,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4040",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0128:cbb134a5369b8f9f",
+      "arabic": "أبي سلمة.\nفقال: «إنّها لو لم تكن ربيبتي في حجري ما حلّت لي، لأنّها ابنة أخي من الرّضاعة» «١» .\nوردت تسميتها في بعض طرق الحديث المذكور عند البخاري، من طريق الليث، عن يزيد بن أبي حبيب، عن عراك بن مالك، عن زينب بنت أبي سلمة- أن أم حبيبة قالت: يا رسول اللَّه، إنّا قد تحدثنا أنك ناكح درّة بنت أبي سلمة ... الحديث.\nوذكرها الزّبير بن بكّار في كتاب «النّسب» في أولاد أبي سلمة بن عبد الأسد.",
+      "english": "Abu Salama.\n\nHe said, “Even if she were not my stepdaughter under my care, she would not be lawful for me, because she is the daughter of my brother through suckling.” [1]\n\nHer name is given in some versions of the aforementioned hadith in al-Bukhari, through al-Layth, from Yazid ibn Abu Habib, from Irak ibn Malik, from Zaynab bint Abu Salama—that Umm Habiba said, “O Messenger of Allah, we have been saying among ourselves that you are going to marry Durra bint Abu Salama ...” to the end of the hadith.\n\nAl-Zubayr ibn Bakkar also mentioned her in the Book of Genealogy among the children of Abu Salama ibn Abd al-Asad.",
+      "arabic_sha256": "5319c072bf77f912b9910ce0b6d13d17b4cbc45dfa97bf36bb14ac2835745544",
+      "english_sha256": "1fa13f8ebc2138cc6124455a6000acda379a0f3f006d703ce80003e2dd635b95",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "المخزومية",
+      "english": "Banu Makhzum",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبي سلمة بن عبد الأسد",
+      "english": "Abu Salama ibn Abd al-Asad",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "الليث",
+      "english": "al-Layth",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن أبي حبيب",
+      "english": "Yazid ibn Abu Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عراك بن مالك",
+      "english": "Irak ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت أبي سلمة",
+      "english": "Zaynab bint Abu Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "درّة بنت أبي سلمة",
+      "english": "Durra bint Abu Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّبير بن بكّار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب النّسب",
+      "english": "Book of Genealogy",
+      "kind": "work"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

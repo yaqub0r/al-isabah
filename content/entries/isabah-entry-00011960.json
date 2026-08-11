@@ -1,0 +1,135 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011960",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11960,
+  "title": {
+    "english": "Umm Habib:",
+    "arabic_observed": "أم حبيب:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011960-segment-0001",
+      "volume": 8,
+      "scan_page": 374,
+      "printed_page": 373,
+      "reader_page": 4286,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4286",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0374:53e4c1d40f514866",
+      "arabic": "١١٩٦٠- أم حبيب:\nأو أم حبيبة، بنت العباس بن عبد المطلب»\n، والأول أشهر.\nقال أبو عمر: أمها أم الفضل، فهي شقيقة الفضل، وعبد اللَّه، مذكورة\nفي حديث أم الفضل أن رسول اللَّه ﵌ قال: «لو بلغت أمّ حبيبة بنت العبّاس وأنا حيّ لتزوّجتها»،\nوتزوّجها الأسود بن سنان بن عبد الأسد المخزوميّ.\nقال ابن الأثير: ذكرها ابن إسحاق،\nفي رواية يونس بن بكير عنه، عن الحسين بن عبد اللَّه بن عبيد بن العباس، عن عكرمة، عن ابن عبّاس، قال: نظر رسول اللَّه صلى اللَّه تعالى عليه وآله وسلم إلى أم حبيب بنت العبّاس تدبّ بين يديه، فقال: «لئن بلغت هذه وأنا حيّ لتزوّجتها» .\nفقبض قبل أن تبلغ، فتزوّجها الأسود، فولدت له لبابة سمّتها باسم أمّها.\nقلت: وهذا يقتضي أن يكون لها رؤية، فتكون من أهل القسم الثاني، لكن ذكرها ابن سعد في الصحابيات، وذكر أنها ولدت للأسود ابنة أخرى اسمها زرقاء، قال: وولدها يسكنون مكّة.",
+      "english": "11960—Umm Habib:\nOr Umm Habiba, daughter of al-Abbas ibn Abd al-Muttalib.[1] The former is more common.\n\nAbu Umar said: Her mother was Umm al-Fadl, so she was the full sister of al-Fadl and Abd Allah. She is mentioned in the hadith of Umm al-Fadl in which the Messenger of Allah, may Allah bless him and grant him peace, said: “If Umm Habiba bint al-Abbas reaches maturity while I am alive, I shall marry her.” Al-Aswad ibn Sinan ibn Abd al-Asad al-Makhzumi married her.\n\nIbn al-Athir said: Ibn Ishaq mentioned her, in the recension transmitted from him by Yunus ibn Bukayr, from al-Husayn ibn Abd Allah ibn Ubayd ibn al-Abbas, from Ikrima, from Ibn Abbas, who said: The Messenger of Allah, may Allah Most High bless him and his family and grant them peace, saw Umm Habib bint al-Abbas toddling before him and said: “If this girl reaches maturity while I am alive, I shall marry her.”\n\nHe died before she reached maturity, and al-Aswad married her. She bore him Lubaba, whom she named after her own mother.\n\nI say: This entails that she saw him, and thus that she belongs among the people of the second section. Ibn Sa'd, however, listed her among the female Companions and mentioned that she bore al-Aswad another daughter named Zarqa. He said: Her descendants reside in Mecca.",
+      "arabic_sha256": "b7209e2e5debed0a0d48237760237d6431ec4d4bfc5bbe57041e9584ee0a65d7",
+      "english_sha256": "b87b463dc33f357208b3c0f9b18a8302fcc43c1d54b25819405862196870a1a4",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "العباس بن عبد المطلب",
+      "english": "al-Abbas ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الفضل",
+      "english": "Umm al-Fadl",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفضل",
+      "english": "al-Fadl",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله",
+      "english": "Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الأسود بن سنان بن عبد الأسد المخزومي",
+      "english": "al-Aswad ibn Sinan ibn Abd al-Asad al-Makhzumi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن بكير",
+      "english": "Yunus ibn Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسين بن عبد الله بن عبيد بن العباس",
+      "english": "al-Husayn ibn Abd Allah ibn Ubayd ibn al-Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "عكرمة",
+      "english": "Ikrima",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "لبابة",
+      "english": "Lubaba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "زرقاء",
+      "english": "Zarqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "أم حبيب مولاة أم عطية",
+      "english": "Umm Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

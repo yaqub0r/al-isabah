@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011045",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11045,
+  "title": {
+    "english": "Hudhafa bint al-Harith al-Sa'diyya¹",
+    "arabic_observed": "حذافة بنت الحارث السعدية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011045-segment-0001",
+      "volume": 8,
+      "scan_page": 85,
+      "printed_page": 84,
+      "reader_page": 3997,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3997",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0085:f06f6b3846d86122",
+      "arabic": "١١٠٤٥- حذافة بنت الحارث السعدية «١»\n، أخت النبي ﷺ من الرضاع، هي التي يقال لها الشيماء. تأتي في الشين المعجمة، وقيل: اسمها جدامة، بالجيم والميم، كما تقدم.",
+      "english": "11045 — Hudhafa bint al-Harith al-Sa'diyya¹\n\nThe Prophet's foster-sister through suckling; she is the one called al-Shayma. She will appear under the letter shin with a dot. It is also said that her name was Judama—with jim and mim—as stated above.",
+      "arabic_sha256": "0e05e48b15108c2454c6902464cffed93f8a80c43dc1e01b57a1bb8fb8530d57",
+      "english_sha256": "40439ea6dcf6e0296ed5e0b7d4a0946fb248478ebbaeee6314a515b9aa0f3cf1",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "حذافة بنت الحارث السعدية",
+      "english": "Hudhafa bint al-Harith al-Sa'diyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشيماء",
+      "english": "al-Shayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "جدامة",
+      "english": "Judama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

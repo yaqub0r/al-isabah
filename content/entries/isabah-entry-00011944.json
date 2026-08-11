@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011944",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11944,
+  "title": {
+    "english": "Umm Jamil al-Dawsiyya:",
+    "arabic_observed": "أم جميل الدوسيّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011944-segment-0001",
+      "volume": 8,
+      "scan_page": 371,
+      "printed_page": 370,
+      "reader_page": 4283,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4283",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0371:a9bd57645d099a96",
+      "arabic": "١١٩٤٤- أم جميل الدوسيّة:\nالتي أجارت ضرار بن الخطّاب وغيره لما أرادت دوس أن تقتلهم بأبي أزيهر.\nذكرها أبو عبيدة، وقال غيره: هي أم غيلان الدّوسيّة، وهو المشهور، وستأتي في حرف الغين المعجمة.\nالقسم الرابع",
+      "english": "11944—Umm Jamil al-Dawsiyya:\n\nShe was the woman who granted protection to Dirar ibn al-Khattab and others when Daws sought to kill them in retaliation for Abu Uzayhir.\n\nAbu 'Ubayda mentioned her. Someone else said: “She is Umm Ghaylan al-Dawsiyya.” This is the well-known view, and she will appear under the dotted letter ghayn.\n\nThe Fourth Section",
+      "arabic_sha256": "d1036813fb766fc07a270392ee5af81a1e5fe0a8e6d04e1701eb75c3e5b8a9ea",
+      "english_sha256": "1cd7aecc724bfe1d1aba0f8be0af984b4e04120e89c161e0b65f0237b7d96f01",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم جميل الدوسيّة",
+      "english": "Umm Jamil al-Dawsiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ضرار بن الخطّاب",
+      "english": "Dirar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "دوس",
+      "english": "Daws",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو أزيهر",
+      "english": "Abu Uzayhir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عبيدة",
+      "english": "Abu 'Ubayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم غيلان الدّوسيّة",
+      "english": "Umm Ghaylan al-Dawsiyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011142",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11142,
+  "title": {
+    "english": "Khayra bint Abi Umayya ibn al-Harith ibn Malik ibn Ka'b ibn al-Nahhat",
+    "arabic_observed": "خيرة بنت أبي أمية"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011142-segment-0001",
+      "volume": 8,
+      "scan_page": 124,
+      "printed_page": 123,
+      "reader_page": 4036,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4036",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0124:be7e73d2da8c3ecc",
+      "arabic": "١١١٤٢- خيرة بنت أبي أمية\nبن الحارث بن مالك بن كعب بن النحاط الأنصارية، من بني غنم بن السلم، زوج مكنف بن محيصة بن مسعود الأنصاري. قال ابن سعد: أسلمت وبايعت.",
+      "english": "11142 — Khayra bint Abi Umayya ibn al-Harith ibn Malik ibn Ka'b ibn al-Nahhat\n\nAn Ansari woman of the Banu Ghanm ibn al-Salm, and the wife of Miknaf ibn Muhayyisa ibn Mas'ud al-Ansari. Ibn Sa'd said: She embraced Islam and pledged allegiance.",
+      "arabic_sha256": "8a2226ef7f0c47279ca8366c7e7ef2678407c03618e1241ab41818f9db1079ed",
+      "english_sha256": "43b16d2bfb26aa38c98fb63712ae61da3d8b465026eb7319803ccb976809134b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خيرة بنت أبي أمية بن الحارث بن مالك بن كعب بن النحاط",
+      "english": "Khayra bint Abi Umayya ibn al-Harith ibn Malik ibn Ka'b ibn al-Nahhat",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو غنم بن السلم",
+      "english": "Banu Ghanm ibn al-Salm",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "مكنف بن محيصة بن مسعود الأنصاري",
+      "english": "Miknaf ibn Muhayyisa ibn Mas'ud al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

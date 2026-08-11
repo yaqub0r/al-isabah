@@ -1,0 +1,157 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011742",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11742,
+  "title": {
+    "english": "Mariya¹:",
+    "arabic_observed": "مارية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011742-segment-0001",
+      "volume": 8,
+      "scan_page": 312,
+      "printed_page": 311,
+      "reader_page": 4224,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4224",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0312:d1c4dff5488c7898",
+      "arabic": "١١٧٤٢- مارية «١»\n: خادم النبيّ ﵌.\nقال أبو عمر: تكنى أم الرباب، حديثها عند أهل البصرة أنها تطأطأت للنبيّ صلّى اللَّه\n(١) أسد الغابة: ت (٧٢٧٨)، الاستيعاب ت (٣٥٤٢)، أعلام النساء ٥/ ١١، السمط الثمين ١٦٢، تجريد أسماء الصحابة ٢/ ٣٠٣، حلية الأولياء ٢/ ٧٠، تلقيح فهوم أهل الأثر ٣٧٧.",
+      "english": "11742—Mariya¹:\n\nA servant of the Prophet—may Allah bless him and his family and grant them peace.\n\nAbu 'Umar said: “Her kunyah was Umm al-Rabab. Her report is preserved among the people of Basra: she stooped down for the Prophet—may Allah bless…”\n\n¹ Usd al-Ghaba, entry 7278; al-Isti'ab, entry 3542; A'lam al-Nisa, 5/11; al-Simt al-Thamin, 162; al-Tajrid, 2/303; Hilyat al-Awliya', 2/70; Talqih Fuhum Ahl al-Athar, 377.",
+      "arabic_sha256": "fa9dd80f285ff6ab23d97d7b49854be2abeb83a240fa4b68ba9fc12ed20526a7",
+      "english_sha256": "2f19325fdf25c0ad1aec6f7f5def3170e566c0a86e3fed1230eb1e7b4599b9f8",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011742-segment-0002",
+      "volume": 8,
+      "scan_page": 313,
+      "printed_page": 312,
+      "reader_page": 4225,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4225",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0313:9fe9e29e0d8ef67e",
+      "arabic": "عليه وآله وسلّم حين صعد حائطا ليلة فرّ من المشركين.\nقلت: أخرجه ابن مندة من طريق يعلى بن أسد، عن عبد اللَّه بن حبيب، عن أم سليمان، عن أمها، عن جدّتها مارية، قالت: تطأطأت للنبيّ ﵌ ...\nفذكره.\nوترجم لها مارية جارية النبيّ ﷺ.\nقلت: وسيأتي قريبا أنّ اسم أمّها مرضية، وأنها صحابية، وأما أمّ سليمان فما عرفت اسمها.",
+      "english": "…upon him and his family and grant them peace—when he climbed a wall on the night he fled from the polytheists.\n\nI say: Ibn Manda transmitted it by way of Ya'la ibn Asad, from 'Abd Allah ibn Habib, from Umm Sulayman, from her mother, from her grandmother Mariya, who said: “I stooped down for the Prophet, may Allah bless him and grant him peace ...” He then related the report.\n\nHe gave her the biographical heading “Mariya, the bondwoman of the Prophet, may Allah bless him and grant him peace.”\n\nI say: It will be mentioned shortly that Umm Sulayman's mother was named Mardiyya and was a female Companion. As for Umm Sulayman, I have not ascertained her name.",
+      "arabic_sha256": "0316fe9b85b5e82b2ed68da45f900eebf10b4b812caa97995855eab0b791eb71",
+      "english_sha256": "1f6316c512694d2abed379fc81aaa5eb3f8412f7a5b18299a980305972648795",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مارية",
+      "english": "Mariya",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الرباب",
+      "english": "Umm al-Rabab",
+      "kind": "person"
+    },
+    {
+      "arabic": "البصرة",
+      "english": "Basra",
+      "kind": "place"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "السمط الثمين",
+      "english": "al-Simt al-Thamin",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "حلية الأولياء",
+      "english": "Hilyat al-Awliya'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "يعلى بن أسد",
+      "english": "Ya'la ibn Asad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن حبيب",
+      "english": "'Abd Allah ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سليمان",
+      "english": "Umm Sulayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "مرضية",
+      "english": "Mardiyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source_uncertainty",
+      "arabic_span": "كانت مارية ممن حفر كورة الصفا",
+      "explanation": "The transmitted wording is geographically and grammatically unstable. The Urdu witness does not establish the intended localities, and the supplied collateral Arabic entries omit this sentence; therefore Hafar and al-Safa remain provisional readings.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0312:d1c4dff5488c7898"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012243",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12243,
+  "title": {
+    "english": "Umm Malik al-Ansariyya",
+    "arabic_observed": "أم مالك الأنصاريّة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012243-segment-0001",
+      "volume": 8,
+      "scan_page": 470,
+      "printed_page": 469,
+      "reader_page": 4382,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4382",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0470:1f93df38ec7dc1df",
+      "arabic": "١٢٢٤٣- أم مالك الأنصاريّة\nأخرج مسلم في صحيحه، من طريق معقل، عن أبي الزّبير، عن جابر- أن أم مالك الأنصاريّة كانت تهدي النبيّ ﵌ في عكة لها سمنا، فيأتيها بنوها فيسألون السّمن وليس عندهم شيء، فتعمد إلى الّذي كانت تهدي فيه إلى النبيّ ﵌ فتجد فيه سمنا، فما زال يقيم لها أدم بنيها حتى عصرتها، فذكرت ذلك للنّبيّ ﵌، فقال: «لو تركتيها ما زال قائما» .\nقال في «الذّيل على الاستيعاب»: لا أدري أهي التي ذكرها أبو عمر أو غيرها؟\nقلت: وكلام ابن مندة ظاهر في أنها واحدة، فإنه قال: روى عنها جابر، وعبد الرّحمن بن سابط، وعياض بن عبد اللَّه بن أبي سرح،\nثم أخرج من طريق عمرو بن مرّة، عن عبد الرّحمن بن سابط، عن أم مالك الأنصاريّة، قالت: أتيت رسول اللَّه ﷺ ولحياي يرعدان من الحمّى، فقال: «ما لك يا أمّ مالك»؟ قالت: أم ملدم «١» ! فعل اللَّه بها وفعل! فقال: «لا تسبّيها، فإنّ اللَّه يحطّ بها عن العبد الذّنوب كما يتحات ورق الشّجر» .",
+      "english": "12243—Umm Malik al-Ansariyya\n\nMuslim transmitted in his Sahih, through Ma'qil, from Abu al-Zubayr, from Jabir, that Umm Malik al-Ansariyya used to give the Prophet (may Allah bless him and grant him peace) ghee in a small leather vessel of hers. Her sons would come to her and ask her for ghee when they had nothing, so she would turn to the vessel in which she used to give it to the Prophet (may Allah bless him and grant him peace) and find ghee in it. It continued to provide her with a condiment for her sons until she squeezed the vessel dry. She mentioned this to the Prophet (may Allah bless him and grant him peace), who said, “Had you left it alone, it would have continued to be there.”\n\nHe said in al-Dhayl 'ala al-Isti'ab: “I do not know whether she is the woman whom Abu Umar mentioned or someone else.”\n\nI say: Ibn Manda's words clearly indicate that she was one and the same woman, for he said: “Jabir, Abd al-Rahman ibn Sabit, and Iyad ibn Abd Allah ibn Abi Sarh narrated from her.”\n\nHe then transmitted, through Amr ibn Murra, from Abd al-Rahman ibn Sabit, from Umm Malik al-Ansariyya, who said: “I came to the Messenger of Allah (may Allah bless him and grant him peace) while both my jaws were trembling from fever. He said, ‘What is wrong with you, Umm Malik?’ She replied, ‘Umm Mildam (1)! May Allah do this and that to her!’ He said, ‘Do not revile her, for through her Allah causes sins to fall away from a servant just as the leaves of a tree fall away.’”",
+      "arabic_sha256": "173372f319537c4f125cfd705b2f77da18ad32389aa179d73c4af87b3c8e1a4b",
+      "english_sha256": "5863dd0b85863f58806de5fc017477cca0c25b8e51fcc09f62c19e2d79842e0b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم مالك الأنصارية",
+      "english": "Umm Malik al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيحه",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "معقل",
+      "english": "Ma'qil",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الزبير",
+      "english": "Abu al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر",
+      "english": "Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن سابط",
+      "english": "Abd al-Rahman ibn Sabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "عياض بن عبد الله بن أبي سرح",
+      "english": "Iyad ibn Abd Allah ibn Abi Sarh",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن مرة",
+      "english": "Amr ibn Murra",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم ملدم",
+      "english": "Umm Mildam",
+      "kind": "other"
+    },
+    {
+      "arabic": "مالك",
+      "english": "Malik",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

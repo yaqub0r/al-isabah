@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011549",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11549,
+  "title": {
+    "english": "Umayra bint Mu'adh al-Ansariyya:",
+    "arabic_observed": "عميرة بنت معاذ الأنصاريّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011549-segment-0001",
+      "volume": 8,
+      "scan_page": 253,
+      "printed_page": 252,
+      "reader_page": 4165,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4165",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0253:93ab0a11e5b3efbd",
+      "arabic": "١١٥٤٩- عميرة بنت معاذ الأنصاريّة:\nزوج روح بن ثابت كاتب النبيّ ﵌. ذكرها [...] .",
+      "english": "11549—Umayra bint Mu'adh al-Ansariyya:\n\nThe wife of Rawh ibn Thabit, the Prophet's scribe—may Allah bless him and grant him peace. She has been mentioned previously.",
+      "arabic_sha256": "1e92157647667d656eddc3002ec16fe88838408a31f4eefe82925abc4fc43423",
+      "english_sha256": "7caed559262e3542ac8514a3adfe1f5c2e7dfeb7d41604a5cbdf8e0615a6fbc2",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عميرة بنت معاذ الأنصاريّة",
+      "english": "Umayra bint Mu'adh al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "روح بن ثابت",
+      "english": "Rawh ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "سرية",
+      "english": "Sariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاذ",
+      "english": "Mu'adh",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

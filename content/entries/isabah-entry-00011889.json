@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011889",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11889,
+  "title": {
+    "english": "Umm Azhar al-A'ishiyya.",
+    "arabic_observed": "أم أزهر العائشية «٣» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011889-segment-0001",
+      "volume": 8,
+      "scan_page": 355,
+      "printed_page": 354,
+      "reader_page": 4267,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4267",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0355:96464c315376e6a0",
+      "arabic": "١١٨٨٩- أم أزهر العائشية «٣» .\nقال أبو عمر: روي عنها حديث مخرجه عن النّساء فيه نظر، ثم ساقه من طريق أبي زرعة الرّازي، حدّثنا محمد بن مرزوق، حدّثتني أنيسة بنت منقذ العائشية، قالت: حدّثتني زينب بنت الزّبرقان العائشية، عن أم الأزهر، امرأة منهم- أنّ أباها ذهب بها إلى النبيّ ﵌، فمسح يده عليها وبرك عليها، فكانت امرأة صالحة.\nوأخرجه مطيّن، عن محمد بن مرزوق، والباوردي، عن مطين، وابن مندة، عن الباوردي.",
+      "english": "11889—Umm Azhar al-A'ishiyya.\n\nAbu Umar said: A hadith has been narrated from her, but its transmission through the women is open to question. He then cited it by way of Abu Zur'a al-Razi: Muhammad ibn Marzuq related to us; Anisa bint Munqidh al-A'ishiyya related to me, saying: Zaynab bint al-Zibriqan al-A'ishiyya related to me, from Umm al-Azhar, a woman from among them, that her father took her to the Prophet—may Allah bless him and grant him peace—who passed his hand over her and invoked blessing upon her; thereafter she was a righteous woman.\n\nMutayyan also transmitted it from Muhammad ibn Marzuq; al-Bawardi from Mutayyan; and Ibn Manda from al-Bawardi.",
+      "arabic_sha256": "d4c0e28fa3d90e776489bec5b2e974b3818dd87bdd293db4c0e3e1ef5058eeb4",
+      "english_sha256": "f3ea3ccd69a9c2038619f523a70c60930c7a07c49ecb5c71ff85dc8c7db216de",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم أزهر العائشية",
+      "english": "Umm Azhar al-A'ishiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو زرعة الرازي",
+      "english": "Abu Zur'a al-Razi",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن مرزوق",
+      "english": "Muhammad ibn Marzuq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنيسة بنت منقذ العائشية",
+      "english": "Anisa bint Munqidh al-A'ishiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت الزبرقان العائشية",
+      "english": "Zaynab bint al-Zibriqan al-A'ishiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الأزهر",
+      "english": "Umm Azhar al-A'ishiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "مطيّن",
+      "english": "Mutayyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الباوردي",
+      "english": "al-Bawardi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

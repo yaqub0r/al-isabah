@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010836",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10836,
+  "title": {
+    "english": "Umama,",
+    "arabic_observed": "أمامة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010836-segment-0001",
+      "volume": 8,
+      "scan_page": 28,
+      "printed_page": 27,
+      "reader_page": 3940,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3940",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0028:9f9c9401b3f90f85",
+      "arabic": "١٠٨٣٦- أمامة ،\nغير منسوبة.\nحديثها في أواخر سنن سعيد بن منصور، ولها ذكر في ترجمة أبي جندل من كتاب الكنى.",
+      "english": "10836—Umama,\n\nwithout a lineage given.\n\nHer hadith occurs near the end of the Sunan of Sa'id ibn Mansur, and she is mentioned in the entry on Abu Jandal in the Book of Kunyas.",
+      "arabic_sha256": "40ab44f7922dc85d3503a9e31b82cdffc8b5c2ef9c4ae05122f26fdc1195948e",
+      "english_sha256": "0994bfd87cc8e6b3c7fa6433bd294bcf3ec1acb519a0ecadb9b87401f9966501",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أمامة",
+      "english": "Umama",
+      "kind": "person"
+    },
+    {
+      "arabic": "سنن سعيد بن منصور",
+      "english": "Sunan Sa'id ibn Mansur",
+      "kind": "work"
+    },
+    {
+      "arabic": "سعيد بن منصور",
+      "english": "Sa'id ibn Mansur",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو جندل",
+      "english": "Abu Jandal",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الكنى",
+      "english": "Book of Kunyas",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011261",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11261,
+  "title": {
+    "english": "Zaynab al-Tamimiyya¹",
+    "arabic_observed": "زينب التميمية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011261-segment-0001",
+      "volume": 8,
+      "scan_page": 166,
+      "printed_page": 165,
+      "reader_page": 4078,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4078",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0166:1e5302aa4bea9fe7",
+      "arabic": "١١٢٦١- زينب التميمية «١»\n. حديثها عن النبي ﷺ أنه كره أن يفضل الذكور على البنات في العطية، ذكرها أبو عمر مختصرا.",
+      "english": "11261 — Zaynab al-Tamimiyya¹\n\nHer hadith from the Prophet (may Allah bless him and grant him peace) states that he disliked giving sons preference over daughters when giving a gift. Abu Umar mentioned her briefly.",
+      "arabic_sha256": "7b5542d72f67ad45944d43844a54c6e569f1eabb0a9f1220e95a84320287703e",
+      "english_sha256": "1286ef145faaefbb465465d693fbf21d2415f06e8db274388dabdfaedd30856a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "زينب التميمية",
+      "english": "Zaynab al-Tamimiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

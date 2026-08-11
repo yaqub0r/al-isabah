@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011201",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11201,
+  "title": {
+    "english": "Rawda,",
+    "arabic_observed": "روضة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011201-segment-0001",
+      "volume": 8,
+      "scan_page": 146,
+      "printed_page": 145,
+      "reader_page": 4058,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4058",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0146:fa9112975377feed",
+      "arabic": "١١٢٠١- روضة ،\nأخرى: كانت مولاة رسول اللَّه ﷺ. ذكرها محمد بن هارون الرّوياني في مسندة، من طريق سفيان الثوري، عن رجل، عن كريب، عن ابن عباس، قال:\nكان للنّبيّ ﷺ جارية اسمها روضة ... فذكر حديثا طويلا.\nوذكرها ابن سعد والبلاذريّ في موالي النبي ﷺ.",
+      "english": "11201—Rawda,\nanother woman: she was a female client of the Messenger of Allah (may Allah bless him and grant him peace). Muhammad ibn Harun al-Ruyani mentioned her in his Musnad, by way of Sufyan al-Thawri, from a man, from Kurayb, from Ibn Abbas, who said:\n\nThe Prophet (may Allah bless him and grant him peace) had a slave-girl named Rawda … He then related a lengthy hadith.\n\nIbn Sa'd and al-Baladhuri also mentioned her among the clients of the Prophet (may Allah bless him and grant him peace).",
+      "arabic_sha256": "822bc1e724a8ea3272451110cd8c5f9b464d7d491a524f5318040369859f01c8",
+      "english_sha256": "7e2742cc8f87abe1af8eecbbe48a1f19f88c44460d4f0cec37e1ab4a65e18b1d",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مسندة",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "روضة",
+      "english": "Rawda",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن هارون الرّوياني",
+      "english": "Muhammad ibn Harun al-Ruyani",
+      "kind": "person"
+    },
+    {
+      "arabic": "سفيان الثوري",
+      "english": "Sufyan al-Thawri",
+      "kind": "person"
+    },
+    {
+      "arabic": "كريب",
+      "english": "Kurayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "البلاذريّ",
+      "english": "al-Baladhuri",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

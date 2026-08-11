@@ -1,0 +1,119 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011317",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11317,
+  "title": {
+    "english": "Salma bint Hafsa,",
+    "arabic_observed": "سلمى بنت حفصة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011317-segment-0001",
+      "volume": 8,
+      "scan_page": 184,
+      "printed_page": 183,
+      "reader_page": 4096,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4096",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0184:daa6e730df95d410",
+      "arabic": "١١٣١٧- سلمى بنت حفصة ،\nزوج المثنى بن حارثة الشيبانيّ الفارس المشهور في فتوح العراق.\nتزوجها سعد بن أبي وقّاص بعد موت المثنى، وشهدت معه القتال في القادسية\n(١) أسد الغابة ت (٧٠٠٢)، الاستيعاب: ت (٣٤٢٧)، أعلام النساء ٢/ ٢٢٨، تجريد أسماء الصحابة ٢/ ٢٧٧.\n(٢) في أ: الواسية.\n(٣) انظر المجمع ٩/ ٢٦٤.\n(٤) في أ: بأنها سلامة بنت الحر.\n(٥) أسد الغابة: ت (٧٠٠٦) .",
+      "english": "11317—Salma bint Hafsa,\n\nwife of al-Muthanna ibn Haritha al-Shaybani, the celebrated horseman in the conquests of Iraq.\n\nSa'd ibn Abi Waqqas married her after al-Muthanna's death, and she witnessed the fighting at al-Qadisiyya alongside him—\n\n[1] Usd al-Ghaba, entry (7002); al-Isti'ab, entry (3427); A'lam al-Nisa', 2/228; al-Tajrid, 2/277.\n\n[2] In A: “al-Wasiya.”\n\n[3] See al-Majma', 9/264.\n\n[4] In A: “that she was Salama bint al-Hurr.”\n\n[5] Usd al-Ghaba, entry (7006).",
+      "arabic_sha256": "f40c7f19238d07265f6a7635bc08dd8ba567964632d673e270d0104a05747c32",
+      "english_sha256": "c8288ded6bf2e971b786fa052338d0e5a1e8e2903be341ecb1b320bad7930018",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011317-segment-0002",
+      "volume": 8,
+      "scan_page": 185,
+      "printed_page": 184,
+      "reader_page": 4097,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4097",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0185:5f22dcc716a75836",
+      "arabic": "وغيرها، فاتفق أنه طلع بجسده طلوع منعه من الركوب، فاشتدّ القتال يوما فأشرفت سلمى من القصر، فقالت: وا مثناه! ولا مثنى اليوم للخيل! فلطمها سعد، وقال: أين المثنى؟\nفقالت: أغيرة وجبنا! فقال سعد: ما يعذرني أحد إذا لم تعذريني وأنت ترين ما بي.\nوقد تقدم لها ذكر في ترجمة أبي محجن الثقفي لما أطلقته، ثم عاد بعد أن هزم الفرس، ووفى لها بما عاهدها عليه من رجوعه إلى قيده. وزوجها صحابي كما تقدم في ترجمته، ويحتمل ألا تكون هاجرت معه. فذكر احتمالا، وسأعيدها في القسم الثالث.",
+      "english": "and other battles. It so happened that an eruption broke out on his body, preventing him from riding. One day the fighting became fierce, and Salma looked out from the palace and said, “Alas for al-Muthanna! Today the cavalry has no al-Muthanna!” Sa'd slapped her and said, “Where is al-Muthanna?”\n\nShe said, “Out of jealousy and cowardice?” Sa'd replied, “No one will excuse me if you do not excuse me, when you can see my condition.”\n\nShe has already been mentioned in the biography of Abu Mihjan al-Thaqafi, when she released him. Then, after he had routed the Persians, he returned and fulfilled the promise he had made to her to return to his fetters. Her husband was a Companion, as stated above in his biography, and it is possible that she did not emigrate with him. Thus, her inclusion is based on a possibility, and I shall repeat her in the Third Section.",
+      "arabic_sha256": "c2b772cbe24a83cdfd187099529ad839e21dcdc28d005bb4ee59d80b214451f2",
+      "english_sha256": "2f487ce1b3c3bc920493dea3c21570c80f74e5356636eaa69907697281a57428",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سلامة بنت الحر",
+      "english": "Salama bint al-Hurr",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى بنت حفصة",
+      "english": "Salma bint Hafsa",
+      "kind": "person"
+    },
+    {
+      "arabic": "المثنى بن حارثة الشيباني",
+      "english": "al-Muthanna ibn Haritha al-Shaybani",
+      "kind": "person"
+    },
+    {
+      "arabic": "العراق",
+      "english": "Iraq",
+      "kind": "place"
+    },
+    {
+      "arabic": "سعد بن أبي وقاص",
+      "english": "Sa'd ibn Abi Waqqas",
+      "kind": "person"
+    },
+    {
+      "arabic": "القادسية",
+      "english": "al-Qadisiyya",
+      "kind": "place"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "المجمع",
+      "english": "al-Majma'",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو محجن الثقفي",
+      "english": "Abu Mihjan al-Thaqafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفرس",
+      "english": "Persians",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

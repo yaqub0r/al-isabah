@@ -1,0 +1,218 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011025",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11025,
+  "title": {
+    "english": "Habiba bint Abi Tajra'a,",
+    "arabic_observed": "حبيبة بنت أبي تجراة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011025-segment-0001",
+      "volume": 8,
+      "scan_page": 80,
+      "printed_page": 79,
+      "reader_page": 3992,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3992",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0080:3c3192bef1033fa3",
+      "arabic": "١١٠٢٥- حبيبة بنت أبي تجراة\nالعبدرية ثم الشيبية «١» .\nروى حديثها الشّافعيّ عن عبد اللَّه بن المؤمل، وابن سعد، عن معاذ بن هانئ، ومحمد بن سنجر، عن أبي نعيم وابن أبي خيثمة، عن شريح بن النعمان، كلّهم عن ابن المؤمل، عن عمر بن عبد الرحمن بن محيصن، عن عطاء بن أبي رباح، حدثتني صفية بنت شيبة، عن امرأة يقال لها حبيبة بنت أبي تجراة، قالت: دخلنا دار أبي حسين في نسوة من قريش والنبيّ ﷺ يطوف بالبيت، حتى أن ثوبه ليدور وهو يقول لأصحابه: اسعوا فإن اللَّه كتب عليكم السعي. لفظ معاذ.\nوأخرجه الطّحاويّ، من طريق معاذ، وقد وقع لنا بعلو في المعرفة لابن مندة من طريقه.\nقال أبو عمر: قيل اسمها حبيبة بفتح أوله، وقيل بالتصغير. وقال غيره: تجراة ضبطها الدار الدّارقطنيّ بفتح المثناة من فوق، ثم قال أبو عمر: اختلف في صحابيتها بهذا الحديث على صفية بنت شيبة، وقد ذكرت ذلك في التمهيد.\nقلت: وقد تقدم من وجه آخر عن صفية عن برة، وقيل عن تملك، وقيل عن أم ولد لشيبة، وقيل عن صفية بلا واسطة. وقد استوعب أبو نعيم بيان طرقه، ومنها من طريق جسرة بنت محمد بن سباع، عن حبيبة بنت أبي تجراة كذلك. وأخرجه النسائي، وابن ماجة، من طريق بدليل بن ميسرة، عن مغيرة بن حكيم، عن صفية بنت شيبة، عن امرأة. وفي رواية ابن ماجة عن أم ولد لشيبة. وقد تقدم سند حديث تملك في المثناة.",
+      "english": "11025—Habiba bint Abi Tajra'a,\n\nal-Abdariyya, then al-Shaybiyya.¹\n\nHer hadith was transmitted by al-Shafi'i, from Abd Allah ibn al-Mu'ammal; by Ibn Sa'd, from Mu'adh ibn Hani; by Muhammad ibn Sinjar, from Abu Nu'aym; and by Ibn Abi Khaythama, from Shurayh ibn al-Nu'man—all of them from Ibn al-Mu'ammal, from Umar ibn Abd al-Rahman ibn Muhaysin, from Ata ibn Abi Rabah, who said: Safiyya bint Shayba related to me, from a woman called Habiba bint Abi Tajra'a, who said: “We entered the house of Abu Husayn with a group of women of Quraysh while the Prophet—may Allah bless him and grant him peace—was circumambulating the House, until even his garment was going around, while he was saying to his Companions: ‘Perform the sa'y, for Allah has prescribed the sa'y for you.’” This is Mu'adh's wording.\n\nal-Tahawi also transmitted it through Mu'adh. It has reached us through that route with a shorter chain in Ibn Manda's al-Ma'rifa.\n\nAbu Umar said: “It is said that her name was Habiba, with a fatha on the initial letter, and it is said in the diminutive, Hubayba.” Another authority said: “al-Daraqutni vocalized Tajra'a with a fatha on the letter ta.” Abu Umar then said: “There was disagreement in the transmission from Safiyya bint Shayba concerning the female Companion in this hadith. I have discussed that in al-Tamhid.”\n\nI say: It has already appeared through another route from Safiyya, from Barra; and it is also said, from Tamluk; or from a slave-mother belonging to Shayba; or from Safiyya without an intermediary. Abu Nu'aym gave a comprehensive account of its routes. Among them is a route through Jasra bint Muhammad ibn Siba', from Habiba bint Abi Tajra'a, in the same manner. al-Nasa'i and Ibn Majah transmitted it through Budayl ibn Maysara, from Mughira ibn Hakim, from Safiyya bint Shayba, from a woman. In Ibn Majah's version, it is from a slave-mother belonging to Shayba. The isnad of Tamluk's hadith has already appeared in the section of the two-dotted letter ta.",
+      "arabic_sha256": "4fea2a05aa99cd0f62401589f6376181df60942b96db0fefa89eeed70a3be99d",
+      "english_sha256": "6effc542c2a17554a144c7dfa9dc92f8deda769a734d1fc6e6f55f48966e822f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حبيبة بنت أبي تجراة",
+      "english": "Habiba bint Abi Tajra'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "العبدرية",
+      "english": "al-Abdariyya",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الشيبية",
+      "english": "al-Shaybiyya",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الشافعي",
+      "english": "al-Shafi'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن المؤمل",
+      "english": "Abd Allah ibn al-Mu'ammal",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاذ بن هانئ",
+      "english": "Mu'adh ibn Hani",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن سنجر",
+      "english": "Muhammad ibn Sinjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي خيثمة",
+      "english": "Ibn Abi Khaythama",
+      "kind": "person"
+    },
+    {
+      "arabic": "شريح بن النعمان",
+      "english": "Shurayh ibn al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن عبد الرحمن بن محيصن",
+      "english": "Umar ibn Abd al-Rahman ibn Muhaysin",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاء بن أبي رباح",
+      "english": "Ata ibn Abi Rabah",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت شيبة",
+      "english": "Safiyya bint Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي حسين",
+      "english": "Abu Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "البيت",
+      "english": "the House",
+      "kind": "place"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الطحاوي",
+      "english": "al-Tahawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "المعرفة",
+      "english": "al-Ma'rifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدارقطني",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "التمهيد",
+      "english": "al-Tamhid",
+      "kind": "work"
+    },
+    {
+      "arabic": "برة",
+      "english": "Barra",
+      "kind": "person"
+    },
+    {
+      "arabic": "تملك",
+      "english": "Tamluk",
+      "kind": "person"
+    },
+    {
+      "arabic": "شيبة",
+      "english": "Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "جسرة بنت محمد بن سباع",
+      "english": "Jasra bint Muhammad ibn Siba'",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "بديل بن ميسرة",
+      "english": "Budayl ibn Maysara",
+      "kind": "person"
+    },
+    {
+      "arabic": "مغيرة بن حكيم",
+      "english": "Mughira ibn Hakim",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "تملك",
+      "explanation": "Neither the canonical unvocalized spelling nor the supplied Urdu and collateral Arabic witnesses determines this name's pronunciation. “Tamluk” is therefore retained provisionally for continuity, but its vocalization is not secure.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0080:3c3192bef1033fa3"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

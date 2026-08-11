@@ -1,0 +1,134 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011096",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11096,
+  "title": {
+    "english": "Kharqa (3)",
+    "arabic_observed": "خرقاء «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011096-segment-0001",
+      "volume": 8,
+      "scan_page": 105,
+      "printed_page": 104,
+      "reader_page": 4017,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4017",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0105:5cd85408b4aa9b5e",
+      "arabic": "١١٠٩٦- خرقاء «٣»\n: روى عنها أبو السفر سعيد بن يحمد.\nذكرها ابن السّكن، وليس في حديثها ما يدلّ على صحبتها ولا على رؤيتها، قاله أبو عمر.\nقلت: لفظ ابن السّكن: الخرقاء، روى عنها أبو السفر، لم يثبت من رواية أهل\n(١) في أأبي بكر الصديق ﵁.\n(٢) أسد الغابة ت ٦٨٧٥.\n(٣) الثقات ٣/ ١١٧، تجريد أسماء الصحابة ٢/ ٦٢.",
+      "english": "11096—Kharqa (3)\n\nAbu al-Safar Sa'id ibn Yahmad narrated from her.\n\nIbn al-Sakan mentioned her. There is nothing in her hadith to indicate that she was a Companion or that she saw the Prophet, as Abu Umar said.\n\nI say: Ibn al-Sakan's wording is: “al-Kharqa: Abu al-Safar narrated from her. It has not been established through the transmission of the people of—”\n\n(1) In manuscript A: “Abu Bakr al-Siddiq, may Allah be pleased with him.”\n\n(2) Usd al-Ghaba, entry 6875.\n\n(3) al-Thiqat, 3/117; al-Tajrid, 2/62.",
+      "arabic_sha256": "dea772e3f59e6d40c16fe1236e23d9e365c9cacc030df8b8a4dfc7eddd4d4443",
+      "english_sha256": "810a4b6330a962bfada1cb9b7969ecda82f36fca84fb665bf75c67d5c8045559",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011096-segment-0002",
+      "volume": 8,
+      "scan_page": 106,
+      "printed_page": 105,
+      "reader_page": 4018,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4018",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0106:423e4959712f3fd1",
+      "arabic": "الكوفة،\nثم ساقه من طريق علي بن مجاهد، عن حجاج بن أرطاة، عن أبي السفر، عن الخرقاء، قال: وكانت امرأة حبشية تلقط النوى، وتميط الأذى، عن مسجد رسول اللَّه ﷺ، فقال النبي ﷺ: «لها كفلان من الأجر» .\nثم قال: لا أعلم من رواه غير حجاج، وهذا مشعر بأنها التي قبلها.",
+      "english": "al-Kufa; then he cited it by way of Ali ibn Mujahid, from Hajjaj ibn Artah, from Abu al-Safar, from al-Kharqa. He said: She was an Abyssinian woman who used to gather up date-stones and remove harmful things from the mosque of the Messenger of Allah, peace and blessings be upon him. The Prophet, peace and blessings be upon him, said: “She shall have two shares of reward.”\n\nHe then said: I know of no one other than Hajjaj who narrated it. This suggests that she is the woman in the preceding entry.",
+      "arabic_sha256": "8a4340c0d5600ae2491bd32249088b4b12a17d6848dd23f181be7bafd5a88c4c",
+      "english_sha256": "4bb2efa154bfc2f80cffad72908685d2de3ad08ed2ed6814b1955e8a23b295a5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو بكر الصديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "خرقاء",
+      "english": "Kharqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو السفر سعيد بن يحمد",
+      "english": "Abu al-Safar Sa'id ibn Yahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن السّكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكوفة",
+      "english": "al-Kufa",
+      "kind": "place"
+    },
+    {
+      "arabic": "علي بن مجاهد",
+      "english": "Ali ibn Mujahid",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجاج بن أرطاة",
+      "english": "Hajjaj ibn Artah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو السفر",
+      "english": "Abu al-Safar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخرقاء",
+      "english": "al-Kharqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012173",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12173,
+  "title": {
+    "english": "Umm Afif:",
+    "arabic_observed": "أم عفيف:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012173-segment-0001",
+      "volume": 8,
+      "scan_page": 439,
+      "printed_page": 438,
+      "reader_page": 4351,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4351",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0439:b37a7630f034f6ea",
+      "arabic": "١٢١٧٣- أم عفيف:\nويقال أم غطيف، بنت مسروح الهذليّة «٣»، زوج حمل بن مالك الهذلي. تقدم ذكرها في مليكة.",
+      "english": "12173—Umm Afif:\n\nShe is also called Umm Ghatif. She was the daughter of Masruh, a woman of Hudhayl,[3] and the wife of Haml ibn Malik al-Hudhali. She was mentioned previously under Mulayka.",
+      "arabic_sha256": "3b99c97304a8a8156b7c368eb5893a9fef7d02846d48ad4f7c0756d942a9a931",
+      "english_sha256": "b784301457ac6b5430c3232e151af137a58a7a0640fa3a3d214956e5e45a3c8a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مسروح",
+      "english": "Masruh",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهذلية",
+      "english": "Hudhayl",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "حمل بن مالك الهذلي",
+      "english": "Haml ibn Malik al-Hudhali",
+      "kind": "person"
+    },
+    {
+      "arabic": "مليكة",
+      "english": "Mulayka",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011054",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11054,
+  "title": {
+    "english": "Hafsa, [1]",
+    "arabic_observed": "حفصة ، «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011054-segment-0001",
+      "volume": 8,
+      "scan_page": 88,
+      "printed_page": 87,
+      "reader_page": 4000,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4000",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0088:79ce22d0b4609671",
+      "arabic": "١١٠٥٤- حفصة ، «١»\nأو حقة، بقاف، بنت عمرو. قال أبو عمر: كانت قد صلت، إلى القبلتين. روى عنها أبو مجلز أنها كانت تلبس المعصفر في الإحرام.\nقلت: أسنده ابن مندة، من طريق شريك، عن عاصم، عن أبي مجلز، عن حقة بنت عمرو، وكانت قد أدركت النبي ﷺ، وصلّت معه إلى القبلتين، وكانت إذا أرادت أن تحرم قربت منها فلبست من ثيابها ما شاءت وفيها المعصفر.",
+      "english": "11054—Hafsa, [1]\nor Huqqa—with a qaf—bint Amr. Abu Umar said: She had prayed facing both qiblas. Abu Mijlaz narrated from her that she used to wear safflower-dyed clothing while in ihram.\n\nI say: Ibn Manda provided the isnad for this by way of Sharik, from Asim, from Abu Mijlaz, from Huqqa bint Amr. She had lived to see the Prophet—may Allah bless him and grant him peace—and had prayed with him facing both qiblas. Whenever she wished to enter ihram and drew near [to the miqat], she would put on whichever of her garments she wished, including safflower-dyed clothing.",
+      "arabic_sha256": "c2f441acb26574dca387400022d6430c1a294cc03d8cbe4453ef3bbf82d75872",
+      "english_sha256": "b2eb3887f3bd66a33af73353abc05d614face072370d8c805d4d88c030fd382b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حفصة",
+      "english": "Hafsa bint Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "حقة بنت عمرو",
+      "english": "Huqqa bint Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو مجلز",
+      "english": "Abu Mijlaz",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "شريك",
+      "english": "Sharik",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاصم",
+      "english": "Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

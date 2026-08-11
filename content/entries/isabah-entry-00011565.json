@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011565",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11565,
+  "title": {
+    "english": "Ghufayla:",
+    "arabic_observed": "غفيلة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011565-segment-0001",
+      "volume": 8,
+      "scan_page": 256,
+      "printed_page": 255,
+      "reader_page": 4168,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4168",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0256:7c798b969c700c6b",
+      "arabic": "١١٥٦٥- غفيلة:\nمثلها، لكن بلام بدل الرّاء «٣» . تقدّمت في العين المهملة.",
+      "english": "11565—Ghufayla:\n\nLike the preceding name, but with a lam in place of the ra (3). She was mentioned previously under the unpointed letter 'ayn.",
+      "arabic_sha256": "d60842c7d83a26e31e1b58c61779671e6c9f42172e5c7dfb30a9649db74fe5dd",
+      "english_sha256": "3557933c46cd284476ae00480b92534e3a3c712c7521a0387bd363b3b9d1ce1f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "غفيلة",
+      "english": "Ghufayla",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

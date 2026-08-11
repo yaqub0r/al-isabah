@@ -1,0 +1,110 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011781",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11781,
+  "title": {
+    "english": "Mandus bint Qutba",
+    "arabic_observed": "مندوس بنت قطبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011781-segment-0001",
+      "volume": 8,
+      "scan_page": 322,
+      "printed_page": 321,
+      "reader_page": 4234,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4234",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0322:4ff0546c2e40fb4f",
+      "arabic": "١١٧٨١- مندوس بنت قطبة\nبن عمرو بن مسعود بن عبد الأشهل بن حارثة بن دينار بن النجار.\nقال ابن سعد في المبايعات: اسم أمها عميرة بنت قرط بن خنساء بن سنان، تزوّجها عمارة بن الحباب بن سعد بن قيس بن عمرو بن زيد مناة، ثم ولدت له أبا عمرو، ثم خلف عليها عبد اللَّه بن كعب بن زيد بن قيس بن مالك بن كعب بن عبد الأشهل، فولدت له أم عتبة، وأم سعد، ثم خلف عليها عبد اللَّه بن أبي سليط بن عمرو بن قيس، فولدت له مروان.\n(١) أسد الغابة ت (٧٢٩٧) .\n(٢) أسد الغابة ت (٧٣٠١) .\n(٣) أسد الغابة ت (٧٣٠٢) .\n(٤) أسد الغابة ت (٧٣٠٣) .\n(٥) في أ: فقالت: يا رسول اللَّه، النار النار.\n(٦) وهو على فرض ثبوته شاذ إذ لا يصح من النبيّ- ﷺ أن يمدح الإسفار ويذم الواجب أو المندوب وأيضا يمكن حمله على ما يجب على المرأة في الحج.",
+      "english": "11781—Mandus bint Qutba\nibn Amr ibn Mas'ud ibn Abd al-Ashhal ibn Haritha ibn Dinar ibn al-Najjar.\n\nIbn Sa'd said in the section on the women who pledged allegiance: Her mother's name was Umayra bint Qurt ibn Khansa ibn Sinan. Umara ibn al-Hubab ibn Sa'd ibn Qays ibn Amr ibn Zayd Manat married her, and she bore him Abu Amr. Abd Allah ibn Ka'b ibn Zayd ibn Qays ibn Malik ibn Ka'b ibn Abd al-Ashhal subsequently married her, and she bore him Umm Utba and Umm Sa'd. Abd Allah ibn Abi Sulayt ibn Amr ibn Qays subsequently married her, and she bore him Marwan.\n\n[1] Usd al-Ghaba, entry 7297.\n\n[2] Usd al-Ghaba, entry 7301.\n\n[3] Usd al-Ghaba, entry 7302.\n\n[4] Usd al-Ghaba, entry 7303.\n\n[5] In manuscript A: “She said, ‘O Messenger of Allah, the Fire, the Fire!’”\n\n[6] Assuming that it is established, it is anomalous, since it cannot authentically be attributed to the Prophet—may Allah bless him and grant him peace—that he praised uncovering the face and censured an obligatory or recommended practice. It may also be understood as referring to what is incumbent upon a woman during Hajj.",
+      "arabic_sha256": "664ef35f27c1f0c226e9a83f092d7f5e85337eeef629f4cc1044b5541bbb5533",
+      "english_sha256": "dcbd05f45293c598e526e1d60e1cbcbf8ddeef18f285dbe38f2137611bebc586",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النّبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة بنت قرط بن خنساء بن سنان",
+      "english": "Umayra bint Qurt ibn Khansa ibn Sinan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمارة بن الحباب بن سعد بن قيس بن عمرو بن زيد مناة",
+      "english": "Umara ibn al-Hubab ibn Sa'd ibn Qays ibn Amr ibn Zayd Manat",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبا عمرو",
+      "english": "Abu Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن كعب بن زيد بن قيس بن مالك بن كعب بن عبد الأشهل",
+      "english": "Abd Allah ibn Ka'b ibn Zayd ibn Qays ibn Malik ibn Ka'b ibn Abd al-Ashhal",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عتبة",
+      "english": "Umm Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعد",
+      "english": "Umm Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن أبي سليط بن عمرو بن قيس",
+      "english": "Abd Allah ibn Abi Sulayt ibn Amr ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "مروان",
+      "english": "Marwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحج",
+      "english": "Hajj",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

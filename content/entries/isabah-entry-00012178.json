@@ -1,0 +1,239 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012178",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12178,
+  "title": {
+    "english": "Umm al-Ala al-Ansariyya (1):",
+    "arabic_observed": "أم العلاء الأنصاريّة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012178-segment-0001",
+      "volume": 8,
+      "scan_page": 440,
+      "printed_page": 439,
+      "reader_page": 4352,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4352",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0440:562380b7b4b52481",
+      "arabic": "١٢١٧٨- أم العلاء الأنصاريّة «١»\n: قال أبو عمر: هي من المبايعات، حديثها عند أهل المدينة.\nقلت: ونسبها غيره، فقال: بنت الحارث بن ثابت بن حارثة بن ثعلبة بن الجلاس بن أمية بن خدرة «٢» بن عوف بن الحارث بن الخزرج. يقال إنها والدة خارجة بن زيد بن ثابت الرّاوي حديثها الشّيخان،\nمن رواية الزّهري، عن خارجة بن زيد بن ثابت، عن أم العلاء الأنصاريّة، قالت: طاولنا عثمان بن مظعون السكنى لما افترقت الأنصار، فذكر الحديث في قتل عثمان بن مظعون، وفيه أنها رأت لعثمان عينا جارية، فذكرت ذلك للنّبيّ ﷺ، فقال:\nذلك عمله.\nوفي الحديث قولها: شهادتي عليك أبا السّائب، لقد أكرمك اللَّه.\nوفي رواية إبراهيم بن سعد عن الزّهري- أن أمّ العلاء، وهي امرأة من نسائهم، قد كانت بايعت النبيّ ﷺ، وكذا في نسخة إسحاق بن يحيى الكلبي، عن الزّهري، عند ابن السّكن.\nقلت: وقد جاء الحديث من طريق يزيد بن أبي حبيب، عن سالم أبي النّضر، عن خارجة بن زيد بن ثابت، عن أمه- أن عثمان بن مظعون لما قبض قالت أم حارثة: طبت أبا السّائب ... الحديث.\nأخرجه أحمد والطّبرانيّ، وهذا ظاهر في أن أم العلاء هي والدة خارجة المذكور، فلا\n(١) أسد الغابة ت (٧٥٤٧)، الاستيعاب ت (٣٦٤٨)، الثقات ٣/ ٤٦١ بقي بن مخلد ٢٨٠، أعلام النساء ج ٣/ ٣٢٧ تجريد أسماء الصحابة ح ٢/ ٣٢٩، تقريب التهذيب ٢/ ٦٢٣، تهذيب التهذيب ١٢/ ٤٧٤، ٤٧٤، ٤٧٥، الكاشف ٣/ ٤٩٠ تهذيب الكمال ٣/ ١٧٠٥.\n(٢) في أ: أمية بن حدارة.",
+      "english": "12178—Umm al-Ala al-Ansariyya (1):\n\nAbu Umar said: “She was among the women who gave the pledge of allegiance. Her hadith is transmitted by the people of Medina.”\n\nI say: Someone else gave her lineage, saying: She was the daughter of al-Harith ibn Thabit ibn Haritha ibn Tha'laba ibn al-Jallas ibn Umayya ibn Khudra (2) ibn Awf ibn al-Harith ibn al-Khazraj. It is said that she was the mother of Kharija ibn Zayd ibn Thabit. The Two Shaykhs narrated her hadith through al-Zuhri, from Kharija ibn Zayd ibn Thabit, from Umm al-Ala al-Ansariyya, who said: “We vied to have Uthman ibn Mazun lodge with us when the Ansar separated.” The hadith concerning the killing of Uthman ibn Mazun was then related. It included that she saw a flowing spring for Uthman. She mentioned this to the Prophet—may Allah bless him and grant him peace—who said:\n\n“That was his deed.”\n\nThe hadith also includes her statement: “My testimony concerning you, O Abu al-Sa'ib, is that Allah has indeed honored you.”\n\nIn Ibrahim ibn Sa'd's narration from al-Zuhri, Umm al-Ala—who was one of their women—had given the pledge of allegiance to the Prophet—may Allah bless him and grant him peace. The same appears in the copy of Ishaq ibn Yahya al-Kalbi from al-Zuhri, as cited by Ibn al-Sakan.\n\nI say: The hadith has also come through Yazid ibn Abi Habib, from Salim Abu al-Nadr, from Kharija ibn Zayd ibn Thabit, from his mother: When Uthman ibn Mazun died, Umm Haritha said: “You have fared well, O Abu al-Sa'ib…”—the hadith.\n\nAhmad and al-Tabarani related it. This plainly shows that Umm al-Ala was the mother of the aforementioned Kharija, so it does not—\n\n(1) Usd al-Ghaba, entry 7547; al-Isti'ab, entry 3648; al-Thiqat, 3/461; Baqi ibn Makhlad, 280; A'lam al-Nisa', vol. 3, p. 327; al-Tajrid, vol. 2, p. 329; Taqrib al-Tahdhib, vol. 2, p. 623; Tahdhib al-Tahdhib, 12/474, 474, 475; al-Kashif, 3/490; Tahdhib al-Kamal, 3/1705.\n\n(2) In manuscript A: “Umayya ibn Hadara.”",
+      "arabic_sha256": "20d3bb40d960e69eae83eeed0981483fa71f7d78ca05b0c9334b0b3fc623cab1",
+      "english_sha256": "73f98c8c642c1e99986d8070c5b35748c089b3d6bb2885d23829e3692d7b2d54",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012178-segment-0002",
+      "volume": 8,
+      "scan_page": 441,
+      "printed_page": 440,
+      "reader_page": 4353,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4353",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0441:39dffdff00963eac",
+      "arabic": "يلزم من كونه أبهمها في رواية الزّهري أن تكون أخرى، فقد يبهم الإنسان نفسه فضلا عن أمه.",
+      "english": "…does not follow from his having left her unnamed in al-Zuhri's narration that she must be another woman, for a person may leave even himself unnamed, let alone his mother.",
+      "arabic_sha256": "8a4178735c427a51eefad49a14e0350251ee2cc7f77ed5e9bfdf7005f32ed392",
+      "english_sha256": "c195e48e809c5148561dfb3b47fbedec1ee40baa44a3041e536ee9b7dc93319e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم العلاء الأنصارية",
+      "english": "Umm al-Ala al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "أمية بن خدرة",
+      "english": "Umayya ibn Khudra",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخزرج",
+      "english": "al-Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "خارجة بن زيد بن ثابت",
+      "english": "Kharija ibn Zayd ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشيخان",
+      "english": "the Two Shaykhs",
+      "kind": "other"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن مظعون",
+      "english": "Uthman ibn Mazun",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو السائب",
+      "english": "Abu al-Sa'ib",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن سعد",
+      "english": "Ibrahim ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق بن يحيى الكلبي",
+      "english": "Ishaq ibn Yahya al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن أبي حبيب",
+      "english": "Yazid ibn Abi Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "سالم أبو النضر",
+      "english": "Salim Abu al-Nadr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حارثة",
+      "english": "Umm Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أمية بن حدارة",
+      "english": "Umayya ibn Hadara",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "canonical-text anomaly",
+      "arabic_span": "قتل عثمان بن مظعون",
+      "explanation": "The canonical text unmistakably says “the killing of Uthman ibn Mazun,” which the translation preserves. The collateral Arabic report describes illness and death, while the Urdu witness has “martyrdom”; without another al-Isabah manuscript, it cannot be determined whether قتل is authorial or a textual corruption.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0440:562380b7b4b52481"
+    },
+    {
+      "category": "canonical-text anomaly",
+      "arabic_span": "طاولنا عثمان بن مظعون السكنى لما افترقت الأنصار",
+      "explanation": "The canonical construction is anomalous. The collateral Usd al-Ghaba account instead says that Uthman fell to their lot when the Ansar drew lots, but that wording cannot replace the authoritative al-Isabah text. The translation therefore retains the apparent senses “vied” and “separated.”",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0440:562380b7b4b52481"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

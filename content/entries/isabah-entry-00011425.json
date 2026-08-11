@@ -1,0 +1,392 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011425",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11425,
+  "title": {
+    "english": "Safiyya bint Abi Ubayd",
+    "arabic_observed": "صفية بنت أبي عبيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011425-segment-0001",
+      "volume": 8,
+      "scan_page": 219,
+      "printed_page": 218,
+      "reader_page": 4131,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4131",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0219:b0b36c7336b09695",
+      "arabic": "١١٤٢٥- صفية بنت أبي عبيد\nالثقفية «١»، زوج عبد اللَّه بن عمر بن الخطاب.\nتقدم نسبها في ترجمة والدها.\nذكرها أبو عمر، فقال: لها رواية، روى عنها مولى ابن عمر، كذا قال، وظاهر قوله:\nلها رواية- أنها عن النبيّ ﷺ، وهذا بخلاف ما ذكر ابن سعد، فإنه أوردها فيمن لم يرو عن النبي ﷺ. وروت عن أزواجه، وكذا قال ابن سعد. أمّها عليلة بنت أسيد بن أبي العاص أخت عتّاب أمير مكة. وقال ابن مندة: أدركت النبيّ ﷺ. وروت عن عائشة وحفصة، ولا يصح لها سماع عن النبي ﷺ. وقال الدار الدّارقطنيّ: لم تدرك النبيّ ﷺ، قاله عقب حديث أورده في كتاب الوتر من السنن، من طريق عبد اللَّه بن نافع مولى ابن عمر، عن أمه، عن أم سلمة\n(١) أسد الغابة ت (٧٠٦٨)، الاستيعاب: ت (٣٤٥٦)، تهذيب الكمال ٣/ ١٦٨٧، الكاشف ٣/ ٤٢٩، الوافي بالوفيات ١٦/ ٣٢٧، تهذيب التهذيب ١٢/ ٤٣٠، تقريب التهذيب ٢/ ٦٠٣، أعلام النساء لكحالة ٢/ ٣٤٧، رجال مسلم ٢/ ٤٢٣، طبقات ابن سعد ٨/ ٤٧٢، تاريخ الثقات للعجلي ٥٢٠، المغازي للواقدي ٢٧١، أنساب الأشراف ١/ ٣٢٥، المعارف ٤٠١، الثقات لابن حبان ٤/ ٣٨٦، الجمع بين رجال الصحيحين ٢/ ٦٠٩، تاريخ الإسلام ٣/ ٩١.",
+      "english": "11425 — Safiyya bint Abi Ubayd\n\nal-Thaqafiyya.¹ She was the wife of Abd Allah ibn Umar ibn al-Khattab.\n\nHer lineage was given previously in the entry on her father.\n\nAbu Umar mentioned her and said: “She has transmitted reports; a client of Ibn Umar transmitted from her.” That is what he said. The apparent sense of his statement, “She has transmitted reports,” is that they were from the Prophet (may Allah bless him and grant him peace). This differs from what Ibn Sa'd stated, for he included her among those who did not transmit from the Prophet (may Allah bless him and grant him peace). She transmitted from his wives, and Ibn Sa'd likewise stated this. Her mother was Ulayla bint Asid ibn Abi al-As, the sister of Attab, the governor of Mecca. Ibn Manda said: She lived to see the Prophet (may Allah bless him and grant him peace). She transmitted from Aisha and Hafsa, but no direct hearing from the Prophet (may Allah bless him and grant him peace) is soundly established for her. al-Daraqutni said: “She did not encounter the Prophet (may Allah bless him and grant him peace).” He said this immediately after a hadith that he cited in the Book of Witr in al-Sunan, by way of Abd Allah ibn Nafi, the client of Ibn Umar, from his mother, from Umm Salama—\n\n(1) Usd al-Ghaba, entry 7068; al-Isti'ab, entry 3456; Tahdhib al-Kamal 3/1687; al-Kashif 3/429; al-Wafi bi'l-Wafayat 16/327; Tahdhib al-Tahdhib 12/430; Taqrib al-Tahdhib 2/603; A'lam al-Nisa by Kahhala 2/347; Rijal Muslim 2/423; Ibn Sa'd's al-Tabaqat 8/472; Tarikh al-Thiqat by al-Ijli, 520; al-Maghazi by al-Waqidi, 271; Ansab al-Ashraf 1/325; al-Ma'arif, 401; al-Thiqat by Ibn Hibban 4/386; al-Jam' bayn Rijal al-Sahihayn 2/609; Tarikh al-Islam 3/91.",
+      "arabic_sha256": "7aa5486e593c36b8c06664f2a8b27938ff790e37675ad45388fa610bb641bbe0",
+      "english_sha256": "5c339a0ceb7d9088b7035777ebe7a57fd978d8ebf3953d4462d9c9f009dd857b",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011425-segment-0002",
+      "volume": 8,
+      "scan_page": 220,
+      "printed_page": 219,
+      "reader_page": 4132,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4132",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0220:d04623c4276621ab",
+      "arabic": "- مرفوعا في قضاء الوتر. وفي رواية: عن عبد اللَّه بن نافع، عن أبيه، عن صفية بنت أبي عبيد فذكره، وزاد: ولا يصح لنافع سماع من أم سلمة، وفي السند ثلاثة من الضعفاء على الولاء.\nوذكر الواقديّ عن موسى بن ضمرة بن سعيد عن أبيه- أنها تزوجت عبد اللَّه بن عمر في خلافة عمر، فهذا يقرب قول من قال: إنها ولدت في عهد النبي ﷺ، فيحمل قول من نفي الإدراك على إدراك السماع، فكأنها لم تميز إلا بعد الوفاة النبويّة.\nوقد حدّثت عن عمر، وحفصة، وعائشة، وأم سلمة.\nروى عنها سالم ابن زوجها، ونافع مولاه، وعبد اللَّه بن دينار، وموسى بن عقبة.\nوذكرها العجليّ وابن حبّان في الثقات.\nوأخرج ابن سعد عن خالد بن مخلد، عن عبد اللَّه العمري، عن نافع، عن ابن عمر، أصدق عني عمر صفيّة أربعمائة، وزدت أنا سرّا منه مائتي درهم.\nوبسند صحيح عنها أنها سمعت عمر يقرأ في صلاة الفجر سورة الكهف.\nقال ابن سعد: ولدت لابن عمر واقدا وأبا بكر وأبا عبيدة وعبد اللَّه، وعمر، وحفصة، وسودة. ثم أخرج بسند جيد عن نافع قال: كانت صفية قد أسنّت فكانت تطوف على راحلة.\nوفي الصحيحين أن ابن عمر رجع من حجة الوداع، فقيل له: إن صفية في السياق، فأسرع السير وجمع جمع التأخير ... الحديث. وهذا معناه وكان ذلك في إمارة ابن الزبير.\nالقسم الثالث",
+      "english": "—as a marfu' report concerning making up the witr prayer. In one version: from Abd Allah ibn Nafi, from his father, from Safiyya bint Abu Ubayd; then he related it. He added: “It is not soundly established that Nafi heard from Umm Salama,” and in the chain are three weak transmitters in succession.\n\nal-Waqidi related from Musa ibn Damra ibn Sa'id, from his father, that she married Abd Allah ibn Umar during the caliphate of Umar. This lends support to the statement of those who said that she was born during the lifetime of the Prophet—may Allah bless him and grant him peace. The statement of those who denied that she reached his lifetime is therefore to be understood as denying that she reached an age at which she could hear from him: it is as though she did not attain discernment until after the Prophet’s death.\n\nShe transmitted from Umar, Hafsa, Aisha, and Umm Salama.\n\nThose who transmitted from her include Salim, her husband’s son; Nafi, the mawla of her husband; Abd Allah ibn Dinar; and Musa ibn Uqba.\n\nal-Ijli and Ibn Hibban included her among the trustworthy transmitters.\n\nIbn Sa'd reported from Khalid ibn Makhlad, from Abd Allah al-Umari, from Nafi, from Ibn Umar: “Umar assigned Safiyya a bridal gift of four hundred on my behalf, and I added two hundred dirhams to it without his knowledge.”\n\nIt is also related from her through a sound chain that she heard Umar recite Surat al-Kahf during the dawn prayer.\n\nIbn Sa'd said: She bore Ibn Umar Waqid, Abu Bakr, Abu Ubayda, Abd Allah, Umar, Hafsa, and Sawda. He then reported through a good chain from Nafi, who said: “Safiyya had grown elderly and would perform the circumambulation while mounted on a riding animal.”\n\nIt is stated in the two Sahihs that Ibn Umar returned from the Farewell Pilgrimage and was told, “Safiyya is in the throes of death.” He therefore hastened his journey and combined the prayers by delaying the earlier one … the hadith. This is its meaning. That occurred during the rule of Ibn al-Zubayr.\n\nTHE THIRD SECTION",
+      "arabic_sha256": "2543d55e31c010e3fd4f02cc3b261afb153d7c3c28895a90b1b0f322911e92a6",
+      "english_sha256": "ac50d6c7274233ce34620e202af14fd8b4775874173825c11e62c7489ba20272",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت أبي عبيد",
+      "english": "Safiyya bint Abi Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثقفية",
+      "english": "al-Thaqafiyya",
+      "kind": "other"
+    },
+    {
+      "arabic": "عبد اللَّه بن عمر بن الخطاب",
+      "english": "Abd Allah ibn Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليلة بنت أسيد بن أبي العاص",
+      "english": "Ulayla bint Asid ibn Abi al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "عتّاب",
+      "english": "Attab",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "حفصة",
+      "english": "Hafsa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدارقطنيّ",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الوتر",
+      "english": "Book of Witr",
+      "kind": "work"
+    },
+    {
+      "arabic": "السنن",
+      "english": "al-Sunan",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد اللَّه بن نافع",
+      "english": "Abd Allah ibn Nafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "الوافي بالوفيات",
+      "english": "al-Wafi bi'l-Wafayat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "كحالة",
+      "english": "Kahhala",
+      "kind": "person"
+    },
+    {
+      "arabic": "رجال مسلم",
+      "english": "Rijal Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ الثقات",
+      "english": "Tarikh al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "العجلي",
+      "english": "al-Ijli",
+      "kind": "person"
+    },
+    {
+      "arabic": "المغازي",
+      "english": "al-Maghazi",
+      "kind": "work"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنساب الأشراف",
+      "english": "Ansab al-Ashraf",
+      "kind": "work"
+    },
+    {
+      "arabic": "المعارف",
+      "english": "al-Ma'arif",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجمع بين رجال الصحيحين",
+      "english": "al-Jam' bayn Rijal al-Sahihayn",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ الإسلام",
+      "english": "Tarikh al-Islam",
+      "kind": "work"
+    },
+    {
+      "arabic": "نافع",
+      "english": "Nafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت أبي عبيد",
+      "english": "Safiyya bint Abu Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن ضمرة بن سعيد",
+      "english": "Musa ibn Damra ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبيه",
+      "english": "Damra ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عمر",
+      "english": "Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "سالم ابن زوجها",
+      "english": "Salim ibn Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن دينار",
+      "english": "Abd Allah ibn Dinar",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن عقبة",
+      "english": "Musa ibn Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "العجليّ",
+      "english": "al-Ijli",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبّان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد بن مخلد",
+      "english": "Khalid ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه العمري",
+      "english": "Abd Allah al-Umari",
+      "kind": "person"
+    },
+    {
+      "arabic": "سورة الكهف",
+      "english": "Surat al-Kahf",
+      "kind": "work"
+    },
+    {
+      "arabic": "واقدا",
+      "english": "Waqid ibn Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبا بكر",
+      "english": "Abu Bakr ibn Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبا عبيدة",
+      "english": "Abu Ubayda ibn Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah ibn Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar ibn Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفصة",
+      "english": "Hafsa bint Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "سودة",
+      "english": "Sawda bint Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيحين",
+      "english": "The Two Sahihs",
+      "kind": "work"
+    },
+    {
+      "arabic": "حجة الوداع",
+      "english": "Farewell Pilgrimage",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن الزبير",
+      "english": "Ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفيّة",
+      "english": "Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية",
+      "english": "Safiyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "عليلة",
+      "explanation": "The consonantal spelling and the unvocalized Urdu witness do not safely determine the name's precise vocalization. “Ulayla” is retained provisionally from the candidate translation.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0219:b0b36c7336b09695"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

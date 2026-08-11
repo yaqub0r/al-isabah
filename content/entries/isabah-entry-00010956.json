@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010956",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10956,
+  "title": {
+    "english": "Baraka, daughter of the Prophet—may Allah bless him and grant him peace:",
+    "arabic_observed": "بركة بنت النبي ﷺ:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010956-segment-0001",
+      "volume": 8,
+      "scan_page": 57,
+      "printed_page": 56,
+      "reader_page": 3969,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3969",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0057:1cf13157d1003baf",
+      "arabic": "١٠٩٥٦- بركة بنت النبي ﷺ:\nتقدمت في القسم الثاني، ثم ظهر لي أنه غلط، نشأ عن تحريف، وذلك أن بركة مولاة النبي ﷺ كانت تربّي من أولادها خديجة، فلما ولدت القاسم خدمته بركة، فكأنه كان في الّذي نقل منه هذا المصنف كذلك، فتحرّفت عليه الكلمة حتى ظنها شقيقته بركة. فاللَّه أعلم.\nحرف التاء المثناة\nالقسم الأول",
+      "english": "10956—Baraka, daughter of the Prophet—may Allah bless him and grant him peace:\n\nShe was previously included in the second section. It then became apparent to me that this was an error arising from a textual corruption. Baraka, the freedwoman of the Prophet—may Allah bless him and grant him peace—used to care for Khadijah's children. When Khadijah gave birth to al-Qasim, Baraka attended to him. Apparently, it stood thus in the source from which this compiler copied, but the wording became corrupted for him until he thought that Baraka was al-Qasim's full sister. Allah knows best.\n\nTHE LETTER TA WITH TWO DOTS\n\nTHE FIRST SECTION",
+      "arabic_sha256": "88ce4307e76b622e9af0695132837939a3bf9247f04594471db6eebfaaf03854",
+      "english_sha256": "54d4b2817115ddd7d69c53d2ed6daa7c242b3cb0ee8f84e96065899fccba6bf1",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بركة بنت النبي ﷺ",
+      "english": "Baraka bint Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "بركة",
+      "english": "Baraka",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "القاسم",
+      "english": "al-Qasim",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

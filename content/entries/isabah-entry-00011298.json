@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011298",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11298,
+  "title": {
+    "english": "Sa'ida bint Bishr ibn Ubayd, the Ansari woman.",
+    "arabic_observed": "سعيدة بنت بشر"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011298-segment-0001",
+      "volume": 8,
+      "scan_page": 179,
+      "printed_page": 178,
+      "reader_page": 4091,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4091",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0179:032b8c150c6cee95",
+      "arabic": "١١٢٩٨- سعيدة بنت بشر\nبن عبيد الأنصارية، ذكرها ابن سعد في المبايعات.",
+      "english": "11298—Sa'ida bint Bishr ibn Ubayd, the Ansari woman.\n\nIbn Sa'd included her among the women who pledged allegiance.",
+      "arabic_sha256": "2b47907e257ab4910bc42705bda4a6746f49bc4b1ffba57716b71efda1f3c520",
+      "english_sha256": "e404c7bf0f759d05e5f70f604771823e428339e34f8e6fb11dfff86b24713f3b",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سعيدة بنت بشر بن عبيد",
+      "english": "Sa'ida bint Bishr ibn Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

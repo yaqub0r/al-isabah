@@ -1,0 +1,150 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011661",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11661,
+  "title": {
+    "english": "Qayla bint Qays ibn Ma'dikarib (1)",
+    "arabic_observed": "قيلة بنت قيس بن معديكرب «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011661-segment-0001",
+      "volume": 8,
+      "scan_page": 293,
+      "printed_page": 292,
+      "reader_page": 4205,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4205",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0293:604699d88aa941ad",
+      "arabic": "١١٦٦١- قيلة بنت قيس بن معديكرب «١»\nالكندية، أخت الأشعث بن قيس.\nقاله أبو عمر. ويقال قيلة: تزوّجها رسول اللَّه ﵌ سنة عشر، ومات ولم تك قدمت عليه ولا رآها ولا دخل بها. وقيل: كان تزويجه إياها قبل وفاته بشهرين، وقيل تزوجها في مرض موته، وقيل: أوصى أن تخيّر، فإن شاءت ضرب عليها الحجاب وتحرم على المؤمنين، وإن شاءت فلتنكح من شاءت، فاختارت النكاح، فتزوجها عكرمة بحضرموت، فبلغ أبا بكر، فقال: لقد هممت أن أحرق عليهما بيتهما، فقال له عمر: ما هي من أمهات المؤمنين، ولا دخل بها، ولا ضرب عليها الحجاب.\nوقال بعضهم: مات قبل خروجها من اليمن فحلف عليها عكرمة، وقيل: إنها ارتدّت فاحتج عمر على أبي بكر بأنها ليست من أزواج النبي ﵌ بارتدادها، فقال: ولم تلد لعكرمة. والاختلاف فيها كثير جدا. انتهى كلام ابن عبد البرّ.\nوأخرج أبو نعيم من طريق إسحاق بن حبيب الشهيدي، عن عبد الأعلى، عن داود بن أبي هند، عن عكرمة، عن ابن عباس- أن النبي صلى اللَّه تعالى عليه وسلم تزوّج قيلة أخت الأشعث، ومات قبل أن بخيرها، وهذا موصول قويّ الإسناد أيضا.\nوأخرجه أيضا من طريق عبد الوهاب الثقفي، عن داود، عن الشعبي مرسلا، ولفظه [...] قتيلة بنت الأشعث، ومات فتزوّجها عكرمة فشقّ على أبي بكر، فذكر كلام عمر المتقدم، وفي آخره: فاطمأنّ أبو بكر وسكن.\nالقسم الرابع",
+      "english": "11661 — Qayla bint Qays ibn Ma'dikarib (1)\n\nThe Kindite, sister of al-Ash'ath ibn Qays.\n\nAbu Umar stated this. It is said that the Messenger of Allah, may Allah bless him and grant him peace, married Qayla in the year ten. He died before she had come to him, and he had neither seen her nor consummated the marriage with her. It was also said that he married her two months before his death; that he married her during his final illness; and that he directed in his will that she be given a choice: if she wished, the veil of seclusion would be imposed upon her and she would become forbidden in marriage to the believers; and if she wished, she could marry whomever she wished. She chose marriage, and Ikrima married her in Hadramawt. When Abu Bakr learned of this, he said, “I was on the point of burning their house down over them.” Umar said to him, “She is not one of the Mothers of the Believers. He neither consummated the marriage with her nor imposed the veil of seclusion upon her.”\n\nSome said that he died before she left Yemen, whereupon Ikrima married her after him. It was also said that she apostatized, and Umar argued to Abu Bakr, on the basis of her apostasy, that she was not one of the Prophet's wives. And he said: “Nor did she bear Ikrima any child.” There is a very great deal of disagreement concerning her. Here ends the statement of Ibn Abd al-Barr.\n\nAbu Nu'aym transmitted through Ishaq ibn Habib al-Shahidi, from Abd al-A'la, from Dawud ibn Abi Hind, from Ikrima, from Ibn Abbas, that the Prophet, may Allah Most High bless him and grant him peace, married Qayla, the sister of al-Ash'ath, and died before giving her the choice. This too is connected, with a strong chain of transmission.\n\nHe also transmitted it through Abd al-Wahhab al-Thaqafi, from Dawud, from al-Sha'bi, as a mursal report. Its wording was: “He contracted marriage with Qutayla bint al-Ash'ath, then died; Ikrima then married her, which distressed Abu Bakr.” He then cited Umar's preceding words. At its end it says: “Abu Bakr became reassured and calm.”\n\nSection Four",
+      "arabic_sha256": "954fe25094981d10ddd10c6c5015f6af5b53e76e191a527a1bae511afc1b582b",
+      "english_sha256": "db3f04c5089498c9ba155c5e06d31a470d6b2c86eccdbe404d5d6d6e936bf977",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "قيلة بنت قيس بن معديكرب",
+      "english": "Qayla bint Qays ibn Ma'dikarib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكندية",
+      "english": "Kinda",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأشعث بن قيس",
+      "english": "al-Ash'ath ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عكرمة",
+      "english": "Ikrima",
+      "kind": "person"
+    },
+    {
+      "arabic": "حضرموت",
+      "english": "Hadramawt",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمهات المؤمنين",
+      "english": "Mothers of the Believers",
+      "kind": "other"
+    },
+    {
+      "arabic": "اليمن",
+      "english": "Yemen",
+      "kind": "place"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبد البر",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق بن حبيب الشهيدي",
+      "english": "Ishaq ibn Habib al-Shahidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الأعلى",
+      "english": "Abd al-A'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "داود بن أبي هند",
+      "english": "Dawud ibn Abi Hind",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الوهاب الثقفي",
+      "english": "Abd al-Wahhab al-Thaqafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشعبي",
+      "english": "al-Sha'bi",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتيلة بنت الأشعث",
+      "english": "Qutayla bint al-Ash'ath",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

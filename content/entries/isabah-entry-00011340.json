@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011340",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11340,
+  "title": {
+    "english": "Samira al-Qurashiyya (4)",
+    "arabic_observed": "سميرة القرشية «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011340-segment-0001",
+      "volume": 8,
+      "scan_page": 190,
+      "printed_page": 189,
+      "reader_page": 4102,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4102",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0190:32466e2658464c43",
+      "arabic": "١١٣٤٠- سميرة القرشية «٤»\n. جرى لها ذكر في الفتوح لما فتحت همدان سنة إحدى وعشرين، ازدحموا على ثنية فمروا على جبل مشرف، فقال رجل من قريش كأنه من سميرة، وهي امرأة من المهاجرين كان لها سن مشرفة على أسنانها فشبه الجبل بسن سميرة.",
+      "english": "11340—Samira al-Qurashiyya (4)\n\nShe was mentioned in the accounts of the conquests concerning the conquest of Hamadhan in the year twenty-one. The people crowded together at a mountain pass and passed by a prominent mountain, whereupon a man of Quraysh said, “It is as though it were [a tooth] of Samira.” She was a woman of the Emigrants who had a tooth protruding beyond her other teeth, so he likened the mountain to Samira's tooth.",
+      "arabic_sha256": "a72951d9806809780cb8eac793f2254524e73c2b35aaf7af9d92a59cd6bc2f81",
+      "english_sha256": "d2a618a85ee68b23ceeda80ea0e02ba665dc8f6df457b63cc396543dd58c174f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سميرة القرشية",
+      "english": "Samira al-Qurashiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "همدان",
+      "english": "Hamadhan",
+      "kind": "place"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "المهاجرين",
+      "english": "the Emigrants",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

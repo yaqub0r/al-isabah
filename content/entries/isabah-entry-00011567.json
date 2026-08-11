@@ -1,0 +1,199 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011567",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11567,
+  "title": {
+    "english": "al-Ghumaysa:",
+    "arabic_observed": "الغميصاء:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011567-segment-0001",
+      "volume": 8,
+      "scan_page": 256,
+      "printed_page": 255,
+      "reader_page": 4168,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4168",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0256:7c798b969c700c6b",
+      "arabic": "١١٥٦٧- الغميصاء:\nأو الرّميصاء «٧»، زوج عمرو بن حزم.\nأخرج أبو نعيم من طريق حماد بن سلمة، عن هشام بن عروة، عن أبيه، عن عائشة- أن عمرو بن حزم طلّق الغميصاء. فنكحها رجل فطلّقها قبل أن يمسّها، فأتت رسول اللَّه ﷺ.\nتسأله أن ترجع إلى زوجها الأول، فقال: «حتّى يذوق الآخر من عسيلتها» ... الحديث.\n(١) أسد الغابة ت (٧١٥٩) .\n(٢) أسد الغابة ت (٧١٦٠) .\n(٣) أسد الغابة ت (٧١٦١) .\n(٤) أسد الغابة ت (٧١٦٣) .\n(٥) الخشفة بالسكون: الحس والحركة، وقيل: هو الصوت والخشفة بالتحريك: الحركة، وقيل: هما بمعنى وكذلك الخشف النهاية ٢/ ٣٤.\n(٦) أخرجه أبو بكر الخطيب في تاريخ بغداد ١٤/ ٧٨ والهيثمي في الزوائد ٩/ ٦٢ وقال رواه أحمد والطبراني بنحوه باختصار وفيهما مطرح بن زياد وعلي بن يزيد الألهاني وكلاهما مجمع على ضعفه وابن سعد في الطبقات الكبرى ٨/ ٣١٦ عن أنس بن مالك.\n(٧) أسد الغابة ت (٧١٦٢) .",
+      "english": "11567—al-Ghumaysa:\n\nOr al-Rumaysa (7), the wife of Amr ibn Hazm.\n\nAbu Nu'aym transmitted through Hammad ibn Salama, from Hisham ibn Urwa, from his father, from Aisha, that Amr ibn Hazm divorced al-Ghumaysa. A man then married her but divorced her before touching her. She came to the Messenger of Allah, may Allah bless him and grant him peace, asking him whether she might return to her first husband. He said: “Until the latter tastes some of her honey.” ... the hadith.\n\n(1) Usd al-Ghaba, entry 7159.\n\n(2) Usd al-Ghaba, entry 7160.\n\n(3) Usd al-Ghaba, entry 7161.\n\n(4) Usd al-Ghaba, entry 7163.\n\n(5) al-khashfa, with the middle consonant unvowelled, means sensation and movement; it is also said to mean sound. al-khashafa, with the middle consonant vowelled, means movement. It is also said that the two have the same meaning, as does al-khashf. al-Nihaya, 2/34.\n\n(6) Abu Bakr al-Khatib transmitted it in Tarikh Baghdad, 14/78, and al-Haythami in al-Zawa'id, 9/62. He said: “Ahmad and al-Tabarani related a similar report in an abridged form. In both are Matrah ibn Ziyad and Ali ibn Yazid al-Alhani, both of whom are unanimously regarded as weak.” Ibn Sa'd also transmitted it in al-Tabaqat, 8/316, from Anas ibn Malik.\n\n(7) Usd al-Ghaba, entry 7162.",
+      "arabic_sha256": "bf38d646a66c53806fc4fd88dcc2901f73fc8c702f31b6b817abe7db1c73942a",
+      "english_sha256": "9a63e69ba96c5ef31845c07b7e80fe7cfcf6c12e778ef39c51c7e8ac991ade97",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011567-segment-0002",
+      "volume": 8,
+      "scan_page": 257,
+      "printed_page": 256,
+      "reader_page": 4169,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4169",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0257:65dbf35993e88518",
+      "arabic": "قال أبو موسى: هي غير أم سليم. وقد روى ابن عبّاس الحديث، فقال: الغميصاء أو الرميصاء ولم يسمّ زوجها.\nوأورد ابن مندة الحديث في ترجمة أم سليم. قال ابن الأثير: والصّواب مع أبي موسى، قلت: تقدّم حديث ابن عبّاس في حرف الرّاء.",
+      "english": "Abu Musa said: She is other than Umm Sulaym. Ibn Abbas narrated the hadith and said, “al-Ghumaysa or al-Rumaysa,” without naming her husband.\n\nIbn Manda included the hadith in the biography of Umm Sulaym. Ibn al-Athir said: “The correct view is Abu Musa's.” I say: The hadith of Ibn Abbas has already appeared under the letter ra.",
+      "arabic_sha256": "a0922420d8c208e8edbf185311934800ef091c04b65f69a5263f06abfe0d409e",
+      "english_sha256": "6e05e5b66c9aa10c6de8ca7cea7ae1efae6f8518c66ec5051e11dfbac3076478",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أنس بن مالك",
+      "english": "Anas ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الغميصاء",
+      "english": "al-Ghumaysa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرّميصاء",
+      "english": "al-Rumaysa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن حزم",
+      "english": "Amr ibn Hazm",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "حماد بن سلمة",
+      "english": "Hammad ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن عروة",
+      "english": "Hisham ibn Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو بكر الخطيب",
+      "english": "Abu Bakr al-Khatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "تاريخ بغداد",
+      "english": "Tarikh Baghdad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "مطرح بن زياد",
+      "english": "Matrah ibn Ziyad",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن يزيد الألهاني",
+      "english": "Ali ibn Yazid al-Alhani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبقات الكبرى",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سليم",
+      "english": "Umm Sulaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرميصاء",
+      "english": "al-Rumaysa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

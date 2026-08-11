@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011426",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11426,
+  "title": {
+    "english": "al-Sahba' bint Rabi'a ibn Buhayr ibn Abd ibn Alqama ibn al-Harith ibn Utba al-Tha'labiyya",
+    "arabic_observed": "الصهباء بنت ربيعة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011426-segment-0001",
+      "volume": 8,
+      "scan_page": 220,
+      "printed_page": 219,
+      "reader_page": 4132,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4132",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0220:d04623c4276621ab",
+      "arabic": "١١٤٢٦- الصهباء بنت ربيعة\nبن بحير بن عبد بن علقمة بن الحارث بن عتبة الثعلبية، تكنى أم حبيب.\nلها إدراك، وكانت ممن سبى بعين التمر، فأرسل بها خالد بن الوليد إلى أبي بكر الصديق مع بقية السبي، فصارت إلى علي، فأولدها عمر الأكبر ورقية.\nالقسم الرابع",
+      "english": "11426. al-Sahba' bint Rabi'a ibn Buhayr ibn Abd ibn Alqama ibn al-Harith ibn Utba al-Tha'labiyya\n\nHer kunyah was Umm Habib.\n\nShe lived during the Prophet’s time. She was among those taken captive at 'Ayn al-Tamr, and Khalid ibn al-Walid sent her to Abu Bakr al-Siddiq with the remaining captives. She then came into Ali’s possession and bore him Umar al-Akbar and Ruqayya.\n\nTHE FOURTH SECTION",
+      "arabic_sha256": "55486821f17a2ead9868a2eebd69dfae2b5dd00feb10733e5ed6bb0d569e59cf",
+      "english_sha256": "c4a2750685a30c687b8bf97cb3a0f3e71338e645f409fd0b85cc94c7453f3ac9",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمر",
+      "english": "Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar ibn Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصهباء بنت ربيعة بن بحير بن عبد بن علقمة بن الحارث بن عتبة الثعلبية",
+      "english": "al-Sahba' bint Rabi'a ibn Buhayr ibn Abd ibn Alqama ibn al-Harith ibn Utba al-Tha'labiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيب",
+      "english": "Umm Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عين التمر",
+      "english": "'Ayn al-Tamr",
+      "kind": "place"
+    },
+    {
+      "arabic": "خالد بن الوليد",
+      "english": "Khalid ibn al-Walid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر الصديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر الأكبر",
+      "english": "Umar al-Akbar",
+      "kind": "person"
+    },
+    {
+      "arabic": "رقية",
+      "english": "Ruqayya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

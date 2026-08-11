@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012042",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12042,
+  "title": {
+    "english": "Umm Salim, mother of Salim, the client of Abu Hudhayfa:",
+    "arabic_observed": "أم سالم:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012042-segment-0001",
+      "volume": 8,
+      "scan_page": 399,
+      "printed_page": 398,
+      "reader_page": 4311,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4311",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0399:97ae5762f77afadd",
+      "arabic": "١٢٠٤٢- أم سالم:\nمولى أبي حذيفة.\nتقدم لها ذكر في ترجمة ولدها في حرف السين المهملة من أسماء الرّجال، وأخرج ابن سعد بسند صحيح عن عبد اللَّه بن شداد، قال: أعطى عمر أم سالم ميراث ولدها لما استشهد باليمامة.",
+      "english": "12042—Umm Salim, mother of Salim, the client of Abu Hudhayfa:\n\nMention of her has already appeared in the biography of her son, under the unpointed letter sin among the names of men. Ibn Sa'd transmitted with a sound chain from Abd Allah ibn Shaddad, who said: “Umar gave Umm Salim the inheritance from her son when he was martyred at al-Yamama.”",
+      "arabic_sha256": "bdecfa63de803a11a461d032e6c97bd0e856e282571ee234491a507ed1c1e4d0",
+      "english_sha256": "999c83e758750748b69293bf08006f29f028273bbfa7753e0b340cf8e0e8d912",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم سالم",
+      "english": "Umm Salim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو حذيفة",
+      "english": "Abu Hudhayfa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن شداد",
+      "english": "Abd Allah ibn Shaddad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "اليمامة",
+      "english": "al-Yamama",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

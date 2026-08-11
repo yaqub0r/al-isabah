@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011058",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11058,
+  "title": {
+    "english": "Hamama.¹",
+    "arabic_observed": "حمامة «١»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011058-segment-0001",
+      "volume": 8,
+      "scan_page": 89,
+      "printed_page": 88,
+      "reader_page": 4001,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4001",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0089:2055a24fd86ae353",
+      "arabic": "١١٠٥٨- حمامة «١»:\nذكرها أبو عمر فيمن كان يعذّب في اللَّه، فاشتراها أبو بكر، فأعتقها ولم يفرد لها ترجمة في الاستيعاب، واستدركها ابن الدباغ.\nقلت: واستدركها أيضا أبو عليّ الغسّانيّ، وقال: إنها أم بلال المؤذن، وإن أبا عمر ذكرها في كتاب الدرر في المغازي والسير.",
+      "english": "11058—Hamama.¹\n\nAbu 'Umar mentioned her among those who were tortured for Allah's sake. Abu Bakr purchased and emancipated her. Abu 'Umar did not give her a separate biographical entry in al-Isti'ab, and Ibn al-Dabbagh supplied the omission.\n\nI say: Abu 'Ali al-Ghassani also supplied the omission. He said that she was the mother of Bilal the muezzin and that Abu 'Umar mentioned her in his book al-Durar fi al-Maghazi wa-al-Siyar.",
+      "arabic_sha256": "932a41415ba3588f958000041dc136d4a1e9d16fc91fe9f52023e8d5a46fc50e",
+      "english_sha256": "e9326135c6f249f51bc02ee6342ea1820f008503940d14d91908eb63337c169c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "حمامة",
+      "english": "Hamama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن الدباغ",
+      "english": "Ibn al-Dabbagh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عليّ الغسّانيّ",
+      "english": "Abu 'Ali al-Ghassani",
+      "kind": "person"
+    },
+    {
+      "arabic": "بلال المؤذن",
+      "english": "Bilal the muezzin",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدرر في المغازي والسير",
+      "english": "al-Durar fi al-Maghazi wa-al-Siyar",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

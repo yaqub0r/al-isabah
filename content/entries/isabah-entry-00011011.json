@@ -1,0 +1,87 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011011",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11011,
+  "title": {
+    "english": "Jumanah bint al-Hasan ibn Habba",
+    "arabic_observed": "جمانة بنت الحسن بن حبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011011-segment-0001",
+      "volume": 8,
+      "scan_page": 75,
+      "printed_page": 74,
+      "reader_page": 3987,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3987",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0075:de20eb9f511ed418",
+      "arabic": "١١٠١١- جمانة بنت الحسن بن حبة\n(١) أسد الغابة ت ٦٨٣٠، الاستيعاب ت ٣٣٣٠.",
+      "english": "11011- Jumanah bint al-Hasan ibn Habba\n\n(1) Usd al-Ghaba, entry 6830; al-Isti'ab, entry 3330.",
+      "arabic_sha256": "9b476a3301cafc33d68430f0cc4b2e65e7512210954039dd5cf799f34f57d1c0",
+      "english_sha256": "a1f7a15a6913320c74138e7bd28954b776f83bc554400c00132ed03433b79f5e",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011011-segment-0002",
+      "volume": 8,
+      "scan_page": 76,
+      "printed_page": 75,
+      "reader_page": 3988,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3988",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0076:39c33390b55995bc",
+      "arabic": "ولدت في العهد النبوي، وتزوجها حذيفة بن اليمان، ذكرها ابن سعد فيمن لم يرو عن النبي ﷺ.",
+      "english": "She was born during the Prophetic period, and Hudhayfa ibn al-Yaman married her. Ibn Sa'd mentioned her among those who did not narrate from the Prophet (may Allah bless him and grant him peace).",
+      "arabic_sha256": "8f77ab08e39b8b4145501f95dac3454b753c9665ad79b672d175db705e48cab8",
+      "english_sha256": "79ff090c0480807eba7d7fcd3d91b45c24e71474b0ec0e9159284dc90ac25c91",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "جمانة بنت الحسن بن حبة",
+      "english": "Jumanah bint al-Hasan ibn Habba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "حذيفة بن اليمان",
+      "english": "Hudhayfa ibn al-Yaman",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "حبة",
+      "explanation": "The supplied Arabic and Urdu forms do not distinguish Habba, Hibba, or Hubba, and the collateral entries concern other people. The provisional form Habba has therefore been retained.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0075:de20eb9f511ed418"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

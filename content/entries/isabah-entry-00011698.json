@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011698",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11698,
+  "title": {
+    "english": "Lubaba bint Aslam",
+    "arabic_observed": "لبابة بنت أسلم"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011698-segment-0001",
+      "volume": 8,
+      "scan_page": 300,
+      "printed_page": 299,
+      "reader_page": 4212,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4212",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0300:9fb33e799d5616d0",
+      "arabic": "١١٦٩٨- لبابة بنت أسلم\nبن حريش بن عدي بن مجدعة بن حارثة.\nذكرها ابن سعد في المبايعات، وقال: هي أخت سلمة «١» شقيقته، وتزوّجها زيد بن سعد بن زيد الأشهلي.",
+      "english": "11698. Lubaba bint Aslam\n\nibn Harish ibn Adi ibn Mujadda'a ibn Haritha.\n\nIbn Sa'd mentioned her among the women who pledged allegiance. He said: She was the full sister of Salama,[1] and Zayd ibn Sa'd ibn Zayd al-Ashhali married her.",
+      "arabic_sha256": "3981431fdadb2b0428f85fe34e4158734c4939f42089f36ab594202cda48504b",
+      "english_sha256": "8b5cfa06f2971cfb9be3241ad3e6f9d8863274725607d1eb1ced6301ab97c8a6",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن سعد بن زيد الأشهلي",
+      "english": "Zayd ibn Sa'd ibn Zayd al-Ashhali",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

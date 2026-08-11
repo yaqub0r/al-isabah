@@ -1,0 +1,381 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011813",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11813,
+  "title": {
+    "english": "Nasibah:[6]",
+    "arabic_observed": "نسيبة «٦»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011813-segment-0001",
+      "volume": 8,
+      "scan_page": 334,
+      "printed_page": 333,
+      "reader_page": 4246,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4246",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0334:c12f4a85744d6795",
+      "arabic": "١١٨١٣- نسيبة «٦»\n: بفتح النّون أيضا، بنت كعب بن عمرو بن عوف بن عمرو بن\n(١) أسد الغابة ت (٧٣١٧)، بقي بن مخلد ٩٩٠، تفسير الطبري ٤/ ٤٢٤٠.\n(٢) في أ: ثابت بن عصير.\n(٣) مسند أحمد ٦/ ٤٠٧، التاريخ لابن معين ٧٤٢، الجرح والتعديل ٩/ ٤٦٥، الاستبصار ٣٥٥، تهذيب الكمال ١٦٩٨، تاريخ الإسلام ٣/ ١٠١، تهذيب التهذيب ١٢/ ٤٥٥، خلاصة تذهيب الكمال ٤٩٦، أسد الغابة ت (٧٣١٨)، الاستيعاب ت (٣٥٥٧) .\n(٤) في أ: وأسلمت نسيبة وبايعت.\n(٥) هذه العبارة مكررة في أ، هـ.\n(٦) أسد الغابة ت (٧٣١٩)، الاستيعاب ت (٣٥٥٨)، ٧/ ٢٨٠ مسند أحمد ٦/ ٤٣٩، طبقات ابن سعد ٨/ ٤١٢، طبقات خليفة ٣٣٩، الاستبصار ٨٢، تهذيب الكمال ١٧٠٣، تهذيب التهذيب ١٢/ ٧٤، خلاصة تذهيب الكمال ٤٩٩.",
+      "english": "11813 - Nasibah:[6]\n\nAlso with a fatha on the nun; daughter of Ka'b ibn 'Amr ibn 'Awf ibn 'Amr ibn ...\n\n[1] Usd al-Ghaba, entry 7317; Baqi ibn Makhlad, no. 990; Tafsir al-Tabari, 4/4240.\n\n[2] In manuscript A: “Thabit ibn 'Asir.”\n\n[3] Musnad Ahmad, 6/407; al-Tarikh of Ibn Ma'in, no. 742; al-Jarh wa-l-Ta'dil, 9/465; al-Istibsar, p. 355; Tahdhib al-Kamal, no. 1698; Tarikh al-Islam, 3/101; Tahdhib al-Tahdhib, 12/455; Khulasat Tadhhib al-Kamal, p. 496; Usd al-Ghaba, entry 7318; al-Isti'ab, entry 3557.\n\n[4] In manuscript A: “Nusaybah embraced Islam and pledged allegiance.”\n\n[5] This phrase is repeated in manuscripts A and H.\n\n[6] Usd al-Ghaba, entry 7319; al-Isti'ab, entry 3558, 7/280; Musnad Ahmad, 6/439; al-Tabaqat of Ibn Sa'd, 8/412; al-Tabaqat of Khalifah, p. 339; al-Istibsar, p. 82; Tahdhib al-Kamal, no. 1703; Tahdhib al-Tahdhib, 12/74; Khulasat Tadhhib al-Kamal, p. 499.",
+      "arabic_sha256": "42929a18e5ba4a6cc720a4402609e00b123626162370b21828b132b42f109b40",
+      "english_sha256": "02ec44ab95d8130fbb2f38ae45b51015e3b3563a043414d1621e98718b4ee9eb",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011813-segment-0002",
+      "volume": 8,
+      "scan_page": 335,
+      "printed_page": 334,
+      "reader_page": 4247,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4247",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0335:a0b9696329d81a02",
+      "arabic": "مبذول بن عمرو بن غنم بن مازن بن النّجّار الأنصاريّة، أم عمارة، مشهورة بكنيتها واسمها معا.\nقال ابن إسحاق في رواية يونس بن بكير وغيره عنه في بيعة العقبة الثانية: وكان من بني الخزرج اثنان وستون رجلا وامرأتان، فيزعمون أن امرأتين بايعتا النبيّ ﵌، وكان لا يصافح النّساء «١»، إنما كان يأخذ عليهنّ، فإذا أقررن قال: «اذهبن»،\nوالمرأتان هما من بني مازن بن النجار: نسيبة وأختها ابنتا كعب، فساق النسب، قال: وكان معها زوجها زيد بن عاصم، وابناها منه: حبيب الّذي قتله مسيلمة بعد، وعبد اللَّه، وهو راوي حديث الوضوء.\nوذكر الواقديّ أنه لما بلغها قتل ابنها حبيب عاهدت اللَّه أن تموت دون مسيلمة أو تقتل، فشهدت اليمامة مع خالد بن الوليد ومعها ابنها عبد اللَّه، فقتل مسيلمة وقطعت يدها في الحرب.\nوقال أبو عمر: شهدت أحدا مع زوجها زيد بن عاصم.\nقلت: ذكر ابن هشام في زياداته من طريق أم سعد بنت سعد بن الرّبيع، قال: دخلت على أم عمارة فقلت: يا خالة، أخبريني، فقالت: خرجت- يعني يوم أحد- ومعي سقاء وفيه ماء، فانتهينا إلى رسول اللَّه ﷺ وهو في أصحابه، والدولة والريح للمسلمين، فلما انهزم المسلمون انحزت إلى رسول اللَّه ﷺ، فكنت أباشر القتال وأذبّ عنهم بالسّيف، وأرمي عن القوس حتى خلصت الجراح إليّ، فرأيت على عاتقها جرحا أجوف له غور، فقلت: من أصابك بهذا؟ قالت: ابن قميئة.\nقال أبو عمر: وشهدت بيعة الرّضوان، ثم شهدت اليمامة، فقاتلت حتى قطعت يدها وجرحت اثنا عشر جرحا،\nوروت عن النّبيّ ﵌: «الصّائم إذا أكل عنده صلّت عليه الملائكة» «٢» .\nقلت: روى عنها ابنها عباد بن تميم، ومولاتها ليلى، وعكرمة، والحارث بن كعب،\n(١) أخرجه أحمد في المسند ٢/ ٢١٣، وابن سعد في الطبقات ١/ ٨ وأبو بكر الخطيب في تاريخ بغداد ٥/ ٢١٦ وأورده ابن حجر في المطالب العالية حديث رقم ١٥٢٥ وعزاه لأبي يعلى، وأورده الهيثمي في الزوائد ٨/ ٢٦٩ عن عبد اللَّه بن عمرو وقال رواه أحمد وإسناده حسن وعن أسماء بنت يزيد وقال رواه أحمد والطبراني وإسناده حسن. وأورده المتقي الهندي في كنز العمال حديث رقم ١٨٥٠٠ وعزاه لأحمد في المسند عبد اللَّه بن عمرو.\n(٢) أخرجه أحمد في المسند ٦/ ٣٦٥.",
+      "english": "Mabdhul ibn Amr ibn Ghanm ibn Mazin ibn al-Najjar, the Ansari woman, Umm Umara, was well known by both her kunya and her name.\n\nIbn Ishaq said, in the transmission of Yunus ibn Bukayr and others from him, concerning the Second Pledge of al-Aqaba: There were sixty-two men and two women from Banu al-Khazraj. They maintain that two women pledged allegiance to the Prophet—may Allah bless him and grant him peace. He did not shake hands with women.[1] He would only take their pledge, and when they assented, he would say, “Go.”\n\nThe two women were from Banu Mazin ibn al-Najjar: Nasiba and her sister, the two daughters of Ka'b. He then set forth the genealogy and said: Her husband, Zayd ibn Asim, was with her, as were her two sons by him: Habib, whom Musaylima later killed, and Abd Allah, who transmitted the hadith concerning ablution.\n\nAl-Waqidi related that, when news of the killing of her son Habib reached her, she covenanted with Allah that she would either die in the attempt to reach Musaylima or kill him. She therefore attended the Battle of al-Yamama with Khalid ibn al-Walid, accompanied by her son Abd Allah. Musaylima was killed, and her hand was severed in the fighting.\n\nAbu Umar said: She attended Uhud with her husband, Zayd ibn Asim.\n\nI say: Ibn Hisham mentioned in his additions, through Umm Sa'd bint Sa'd ibn al-Rabi', who said: “I entered upon Umm Umara and said, ‘Maternal aunt, tell me.’ She said, ‘I went out—that is, on the day of Uhud—with a waterskin containing water. We reached the Messenger of Allah—may Allah bless him and grant him peace—while he was among his Companions, and the upper hand and momentum belonged to the Muslims. When the Muslims were routed, I drew close to the Messenger of Allah—may Allah bless him and grant him peace. I engaged directly in the fighting, defended them with the sword, and shot with the bow, until wounds reached me.’” I saw on her shoulder a deep, hollow wound, and I asked, “Who struck you with this?” She replied, “Ibn Qami'a.”\n\nAbu Umar said: She attended the Pledge of al-Ridwan and then attended al-Yamama, where she fought until her hand was severed and she sustained twelve wounds.\n\nShe related from the Prophet—may Allah bless him and grant him peace—his saying: “When food is eaten in the presence of a fasting person, the angels invoke blessings upon him.”[2]\n\nI say: Her son Abbad ibn Tamim, her client Layla, Ikrima, and al-Harith ibn Ka'b transmitted from her,\n\n[1] Ahmad included it in Musnad Ahmad, 2/213; Ibn Sa'd in al-Tabaqat, 1/8; and Abu Bakr al-Khatib in Tarikh Baghdad, 5/216. Ibn Hajar included it in al-Matalib al-Aliya, hadith no. 1525, and attributed it to Abu Ya'la. Al-Haythami included it in al-Zawa'id, 8/269, from Abd Allah ibn Amr, and said, “Ahmad transmitted it, and its isnad is hasan”; and from Asma bint Yazid, saying, “Ahmad and al-Tabarani transmitted it, and its isnad is hasan.” Al-Muttaqi al-Hindi included it in Kanz al-Ummal, hadith no. 18500, citing Musnad Ahmad on the authority of Abd Allah ibn Amr.\n\n[2] Ahmad included it in Musnad Ahmad, 6/365.",
+      "arabic_sha256": "a0b9696329d81a0200d6372d759f71d2952dd909f79cc321cd5e0d093a9ef08f",
+      "english_sha256": "d45737c4062cfb0c65f3d0ed4a53591fd475938adb66ca714fe6c8761ff75f97",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011813-segment-0003",
+      "volume": 8,
+      "scan_page": 336,
+      "printed_page": 335,
+      "reader_page": 4248,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4248",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0336:5668b6390c509ad2",
+      "arabic": "وأم سعد بن الربيع، وحديثها في السنن الأربعة.",
+      "english": "and Umm Sa'd bint Sa'd ibn al-Rabi'. Her hadith is in the four Sunan collections.",
+      "arabic_sha256": "ec526430ebeba6f5ca2c774ee06e987d471966ca6003bcc341fe9b17ef0cda76",
+      "english_sha256": "9113c320f7380a3cdca40fd02dd5ffcd7974535c5efa3541aff1de8a476bd33a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Muhammad ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "تفسير الطبري",
+      "english": "Tafsir al-Tabari",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسند أحمد",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "التاريخ لابن معين",
+      "english": "al-Tarikh of Ibn Ma'in",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن معين",
+      "english": "Ibn Ma'in",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجرح والتعديل",
+      "english": "al-Jarh wa-l-Ta'dil",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ الإسلام",
+      "english": "Tarikh al-Islam",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب الكمال",
+      "english": "Khulasat Tadhhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat of Ibn Sa'd",
+      "kind": "work"
+    },
+    {
+      "arabic": "طبقات خليفة",
+      "english": "al-Tabaqat of Khalifah",
+      "kind": "work"
+    },
+    {
+      "arabic": "مبذول بن عمرو بن غنم بن مازن بن النجار",
+      "english": "Mabdhul ibn Amr ibn Ghanm ibn Mazin ibn al-Najjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمارة",
+      "english": "Umm Umara",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن بكير",
+      "english": "Yunus ibn Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "بيعة العقبة الثانية",
+      "english": "Second Pledge of al-Aqaba",
+      "kind": "other"
+    },
+    {
+      "arabic": "بني الخزرج",
+      "english": "Banu al-Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "بني مازن بن النجار",
+      "english": "Banu Mazin ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "زيد بن عاصم",
+      "english": "Zayd ibn Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيب",
+      "english": "Habib ibn Zayd ibn Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسيلمة",
+      "english": "Musaylima",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah ibn Zayd ibn Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "اليمامة",
+      "english": "al-Yamama",
+      "kind": "place"
+    },
+    {
+      "arabic": "خالد بن الوليد",
+      "english": "Khalid ibn al-Walid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن هشام",
+      "english": "Ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعد بنت سعد بن الربيع",
+      "english": "Umm Sa'd bint Sa'd ibn al-Rabi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن قميئة",
+      "english": "Ibn Qami'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "بيعة الرضوان",
+      "english": "Pledge of al-Ridwan",
+      "kind": "other"
+    },
+    {
+      "arabic": "عباد بن تميم",
+      "english": "Abbad ibn Tamim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليلى",
+      "english": "Layla",
+      "kind": "person"
+    },
+    {
+      "arabic": "عكرمة",
+      "english": "Ikrima",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن كعب",
+      "english": "al-Harith ibn Ka'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبقات",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو بكر الخطيب",
+      "english": "Abu Bakr al-Khatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "تاريخ بغداد",
+      "english": "Tarikh Baghdad",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن حجر",
+      "english": "Ibn Hajar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المطالب العالية",
+      "english": "al-Matalib al-Aliya",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو يعلى",
+      "english": "Abu Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد اللَّه بن عمرو",
+      "english": "Abd Allah ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت يزيد",
+      "english": "Asma bint Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم سعد بن الربيع",
+      "english": "Umm Sa'd bint Sa'd ibn al-Rabi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن الأربعة",
+      "english": "Four Sunan Collections",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "citation_attachment",
+      "arabic_span": "الاستيعاب ت (٣٥٥٨)، ٧/ ٢٨٠ مسند أحمد ٦/ ٤٣٩",
+      "explanation": "The supplied witnesses do not establish conclusively whether 7/280 belongs to the al-Isti'ab citation or to an omitted or adjacent reference. The final text provisionally attaches it to al-Isti'ab, the most plausible reading, while preserving the canonical sequence.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0334:c12f4a85744d6795"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011558",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11558,
+  "title": {
+    "english": "Aysa bint al-Harith al-Ansariyya:",
+    "arabic_observed": "عيساء بنت الحارث الأنصاريّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011558-segment-0001",
+      "volume": 8,
+      "scan_page": 254,
+      "printed_page": 253,
+      "reader_page": 4166,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4166",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0254:0ae9fcdd446119c9",
+      "arabic": "١١٥٥٨- عيساء بنت الحارث الأنصاريّة:\nزوج أنس بن فضالة.\nذكرها ابن سعد، كذا ذكرها في «التّجريد» بعد عويمرة، فكأنّها بالمثناة التحتانية بعد العين، وهي بالمد. واللَّه أعلم.\n(١) سقط في أ.\n(٢) أسد الغابة ت (٧١٥٦) .",
+      "english": "11558—Aysa bint al-Harith al-Ansariyya:\n\nThe wife of Anas ibn Fadala.\n\nIbn Sa'd mentioned her. This is how she is listed in al-Tajrid after Uwaymira, so it appears that her name is spelled with a ya after the ayn and with final alif and hamza. Allah knows best.\n\n[1] Omitted in manuscript A.\n\n[2] Usd al-Ghaba, entry 7156.",
+      "arabic_sha256": "ff96a8b8fc0c1a0a6ae3aff34e67ba6bbad2a593a69d5659a4dc33b0b1e8331a",
+      "english_sha256": "4d61d19816f7e1c27c2beaad282d1e345090f709646208f639bb048aacfa894d",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011558-segment-0002",
+      "volume": 8,
+      "scan_page": 255,
+      "printed_page": 254,
+      "reader_page": 4167,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4167",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0255:45e9e7d78ac67bbf",
+      "arabic": "القسم الثاني\nخال لكن يمكن أن يذكر فيه:\nعائشة بنت سعد. وعائشة بنت شيبة. وعائشة بنت معاوية. وعبيدة بنت صعصعة بن ناجية التميمية عمة الفرزدق، وهي أم حزرة زوج الزّبرقان بن بدر، لها ذكر في ترجمة الحطيئة في كتاب أبي الفرج، وأنها هي التي أمر الزبرقان الحطيئة أن ينزل عندها إلى أن يرجع من سفره، فقصرت به، فكان ذلك سبب هجاء الحطيئة الزبرقان بن بدر.\nالقسم الثالث",
+      "english": "THE SECOND SECTION\n\nIt is empty, but the following may be mentioned in it:\n\nAisha bint Sa'd; Aisha bint Shayba; Aisha bint Mu'awiya; and Ubayda bint Sa'sa'a ibn Najiya al-Tamimiyya, the paternal aunt of al-Farazdaq. She was the mother of Hazra, the wife of al-Zibriqan ibn Badr. She is mentioned in the biography of al-Hutay'a in Abu al-Faraj's book: she was the one with whom al-Zibriqan instructed al-Hutay'a to lodge until he returned from his journey. She fell short in her treatment of him, and that was the cause of al-Hutay'a's lampooning of al-Zibriqan ibn Badr.\n\nTHE THIRD SECTION",
+      "arabic_sha256": "d8b3e9c3713e75b553c3a471097c77b775140c15bbdfb193b7bf59886b1639e9",
+      "english_sha256": "dffa36a404462f5914496e7c7e894a3c8b9d38ae1d9e870d7e96b812f85daab9",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "عيساء بنت الحارث الأنصاريّة",
+      "english": "Aysa bint al-Harith al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس بن فضالة",
+      "english": "Anas ibn Fadala",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "عائشة بنت سعد",
+      "english": "Aisha bint Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة بنت شيبة",
+      "english": "Aisha bint Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة بنت معاوية",
+      "english": "Aisha bint Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيدة بنت صعصعة بن ناجية التميمية",
+      "english": "Ubayda bint Sa'sa'a ibn Najiya al-Tamimiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفرزدق",
+      "english": "al-Farazdaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "حزرة",
+      "english": "Hazra",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبرقان بن بدر",
+      "english": "al-Zibriqan ibn Badr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحطيئة",
+      "english": "al-Hutay'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الفرج",
+      "english": "Abu al-Faraj",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "عيساء",
+      "explanation": "The canonical spelling and Ibn Hajar’s note establish a ya after the ayn and a final extended spelling with alif and hamza, but the unvocalized Arabic and supplied witnesses do not conclusively establish the internal vowels. “Aysa” is therefore retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0254:0ae9fcdd446119c9"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011973",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11973,
+  "title": {
+    "english": "Umm al-Hasan bint Khalid",
+    "arabic_observed": "أم الحسن بنت خالد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011973-segment-0001",
+      "volume": 8,
+      "scan_page": 377,
+      "printed_page": 376,
+      "reader_page": 4289,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4289",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0377:83c49d733aa6f1b4",
+      "arabic": "١١٩٧٣- أم الحسن بنت خالد\nبن حرام بن خويلد بن أسد بن عبد العزى بن قصيّ.\nتقدم ذكرها مع أمها أم حبيب بنت العوام بن خويلد بن أسد، ومقتضى موت والدها قبل أن تدخل الحبشة أن تكون هي التي ولدت بمكة أو بالطريق، فيكون لها عند الوفاة النبويّة أكثر من عشر سنين.",
+      "english": "11973—Umm al-Hasan bint Khalid\nibn Haram ibn Khuwaylid ibn Asad ibn Abd al-Uzza ibn Qusayy.\n\nShe was mentioned above together with her mother, Umm Habib bint al-Awwam ibn Khuwaylid ibn Asad. The fact that her father died before the arrival in Abyssinia implies that she was the one born in Mecca or along the way; she would therefore have been more than ten years old at the Prophet's death.",
+      "arabic_sha256": "ab4bf378ff8f01024dd574746204aef0cad940a282a346ac2f518cf128f05394",
+      "english_sha256": "afbff5199fe262a8a134191f2a9d2088de4ba5fff0ba0c46b2813719892672b0",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خالد",
+      "english": "Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيب بنت العوام بن خويلد بن أسد",
+      "english": "Umm Habib bint al-Awwam ibn Khuwaylid ibn Asad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "implicit pronoun referent",
+      "arabic_span": "قبل أن تدخل الحبشة",
+      "explanation": "The feminine subject of “entered Abyssinia” is unexpressed and could refer either to Umm al-Hasan or to her mother, Umm Habib. Neither the Urdu witness nor the collateral context safely identifies it, so the final English preserves the ambiguity with “before the arrival in Abyssinia.”",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0377:83c49d733aa6f1b4"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

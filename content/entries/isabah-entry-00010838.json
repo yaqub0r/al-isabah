@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010838",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10838,
+  "title": {
+    "english": "Amat Allah bint Abd Shams",
+    "arabic_observed": "أمة اللَّه بنت عبد شمس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010838-segment-0001",
+      "volume": 8,
+      "scan_page": 28,
+      "printed_page": 27,
+      "reader_page": 3940,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3940",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0028:9f9c9401b3f90f85",
+      "arabic": "١٠٨٣٨- أمة اللَّه بنت عبد شمس\nبن عبد ياليل الليثية، والدة عبد اللَّه بن هشام بن زهرة القرشي التيمي.\nذكر خليفة بن خيّاط أنها ذهبت بابنها وهو صغير إلى النبي ﷺ ليبايعه. وأصل القصة عند الحاكم في المستدرك، لكن في صحيح البخاري أنّ اسمها زينب بنت حميد.",
+      "english": "10838—Amat Allah bint Abd Shams\n\nibn Abd Yalil al-Laythiyya, the mother of Abd Allah ibn Hisham ibn Zuhra al-Qurashi al-Taymi.\n\nKhalifa ibn Khayyat mentioned that she took her son, while he was young, to the Prophet, may Allah bless him and grant him peace, so that the boy might pledge allegiance to him. The original account is in al-Hakim's al-Mustadrak, but in Sahih al-Bukhari her name is Zaynab bint Humayd.",
+      "arabic_sha256": "eac06aaf08773736b978ab82950517c4fc595f20ba5b57b83218b1211ac4507d",
+      "english_sha256": "e3da58c2f89dbc50763af85cea622308f875176875c7186be7f3f7305678b9df",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن هشام",
+      "english": "Ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عبد اللَّه بن هشام بن زهرة القرشي التيمي",
+      "english": "Abd Allah ibn Hisham ibn Zuhra al-Qurashi al-Taymi",
+      "kind": "person"
+    },
+    {
+      "arabic": "خليفة بن خيّاط",
+      "english": "Khalifa ibn Khayyat",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "صحيح البخاري",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "زينب بنت حميد",
+      "english": "Zaynab bint Humayd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

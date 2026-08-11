@@ -1,0 +1,117 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011435",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11435,
+  "title": {
+    "english": "Duba'a bint al-Harith al-Ansariyya(4):",
+    "arabic_observed": "ضباعة بنت الحارث الأنصارية «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011435-segment-0001",
+      "volume": 8,
+      "scan_page": 224,
+      "printed_page": 223,
+      "reader_page": 4136,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4136",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0224:d68f9a3007255024",
+      "arabic": "١١٤٣٥- ضباعة بنت الحارث الأنصارية «٤»\n: أخت أم عطيّة.\n(١) في أضعيفة.\n(٢) في أالضرية.\n(٣) الاستيعاب ت (٣٤٦٦) .\n(٤) أسد الغابة ت (٧٠٧٥)، الاستيعاب ت (٣٤٦٣)، أعلام النساء ج ٢/ ٣٥٣، الدر المنثور ٢٧٥، تجريد أسماء الصحابة ٢/ ٢٨٣.",
+      "english": "11435—Duba'a bint al-Harith al-Ansariyya(4):\n\nThe sister of Umm 'Atiyya.\n\n(1) In manuscript A: Da'ifa.\n\n(2) In manuscript A: الضرية.\n\n(3) al-Isti'ab, entry 3466.\n\n(4) Usd al-Ghaba, entry 7075; al-Isti'ab, entry 3463; A'lam al-Nisa', vol. 2, p. 353; al-Durr al-Manthur, p. 275; al-Tajrid, vol. 2, p. 283.",
+      "arabic_sha256": "dcd29f1ad7b9603818af4d93ad3e27063af3f8295c53f1446577a62883ca9018",
+      "english_sha256": "dcc3bd9b2fd8ded9b24bdddf96d36fc0b64d74a88c60ffb7736413c2fcde66e0",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011435-segment-0002",
+      "volume": 8,
+      "scan_page": 225,
+      "printed_page": 224,
+      "reader_page": 4137,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4137",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0225:a5959950db0cf411",
+      "arabic": "ذكرها أبو عمر بالحديث الّذي قدمت ذكره في الأول في ترجمة ضباعة بنت الزبير.",
+      "english": "Abu Umar mentioned her on the basis of the hadith that I cited earlier in the first section, in the entry on Duba'a bint al-Zubayr.",
+      "arabic_sha256": "782c29473caffbede2f9ec43a86dcd90325cf994e3c0e6e8aedadcf9b7ac853a",
+      "english_sha256": "dee1c7924033522ad4cc61039a4c0292834f8abcf7684d55050fd5ee87b12a46",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ضباعة",
+      "english": "Duba'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "النساء",
+      "english": "al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "ضباعة بنت الحارث الأنصارية",
+      "english": "Duba'a bint al-Harith al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عطية",
+      "english": "Umm 'Atiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدر المنثور",
+      "english": "al-Durr al-Manthur",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ضباعة بنت الزبير",
+      "english": "Duba'a bint al-Zubayr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "variant_vocalization",
+      "arabic_span": "الضرية",
+      "explanation": "The consonantal spelling of the manuscript-A variant is clear, but neither the Urdu witness nor the collateral Arabic evidence safely establishes its vowels. “al-Dariyya” remains only a provisional searchable transliteration; the final text therefore preserves the Arabic spelling.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0224:d68f9a3007255024"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

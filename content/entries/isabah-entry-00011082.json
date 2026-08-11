@@ -1,0 +1,107 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011082",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11082,
+  "title": {
+    "english": "Hawwa al-Ansariyya,",
+    "arabic_observed": "حواء ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011082-segment-0001",
+      "volume": 8,
+      "scan_page": 97,
+      "printed_page": 96,
+      "reader_page": 4009,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4009",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0097:fef400f01af3cf16",
+      "arabic": "١١٠٨٢- حواء ،\nجدة عمرو بن معاذ الأنصارية.\nفرق ابن سعد بينها وبين حواء أم بجيد، وهما واحدة،\nفأخرج من طريق حفص بن ميسرة، عن زيد بن أسلم، عن عمرو بن معاذ، عن جدته حواء: سمعت رسول اللَّه ﷺ يقول: «ردّوا السّائل ولو بظلف محرق» .\n(١) أسد الغابة ت ٦٨٣١.",
+      "english": "11082. Hawwa al-Ansariyya,\n\nthe grandmother of 'Amr ibn Mu'adh.\n\nIbn Sa'd distinguished her from Hawwa Umm Bujayd, though the two are one and the same woman.\n\nHe transmitted through Hafs ibn Maysara, from Zayd ibn Aslam, from 'Amr ibn Mu'adh, from his grandmother Hawwa, who said: I heard the Messenger of Allah—may Allah bless him and grant him peace—say: “Give to the beggar, even if only a burnt hoof.”\n\n(1) Usd al-Ghaba, entry 6831.",
+      "arabic_sha256": "19f7cf1d21a52975d565bc678155397d043108af45117438bff0651b35d0270a",
+      "english_sha256": "0a84db448a889e96532348525cd373e1ccf6f6d3bf26dc4158e539fde2445a1c",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011082-segment-0002",
+      "volume": 8,
+      "scan_page": 98,
+      "printed_page": 97,
+      "reader_page": 4010,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4010",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0098:685ba1908556c487",
+      "arabic": "وقد تقدم في حواء أم بجيد، من طريق مالك، عن زيد، لكن خالف في لفظ المتن.\nفاللَّه أعلم.\nحرف الخاء المعجمة\nالقسم الأول",
+      "english": "This has already been cited under Hawwa Umm Bujayd, by way of Malik, from Zayd, though that version differs in the wording of the text.\n\nAllah knows best.\n\nTHE DOTTED LETTER KHA'\n\nSECTION ONE",
+      "arabic_sha256": "2d800786990be02b3f7be1350277ccf8cbb5f52e220d6d46f9e91e507a8dd796",
+      "english_sha256": "3e0ddbb5c54a01d36da3aebada9759fd4d36e0a3258d9a251e96fc2d6d38c29e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "حواء الأنصارية",
+      "english": "Hawwa al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن معاذ",
+      "english": "'Amr ibn Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "حواء أم بجيد",
+      "english": "Hawwa Umm Bujayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفص بن ميسرة",
+      "english": "Hafs ibn Maysara",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن أسلم",
+      "english": "Zayd ibn Aslam",
+      "kind": "person"
+    },
+    {
+      "arabic": "مالك",
+      "english": "Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد",
+      "english": "Zayd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "حليسة الأنصارية ... وإنما هي بالخاء المعجمة",
+      "explanation": "The canonical text establishes the consonantal heading حليسة and explicitly says that the correct form begins with kha, but neither it nor the supplied witness determines the name's precise vowels. Halisa is therefore retained provisionally for the printed heading; the corrected kha-form also remains unvocalized.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0097:fef400f01af3cf16"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

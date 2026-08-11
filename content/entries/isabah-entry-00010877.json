@@ -1,0 +1,154 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010877",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10877,
+  "title": {
+    "english": "Amina",
+    "arabic_observed": "أمينة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010877-segment-0001",
+      "volume": 8,
+      "scan_page": 37,
+      "printed_page": 36,
+      "reader_page": 3949,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3949",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0037:2bad6320dec2302f",
+      "arabic": "١٠٨٧٧- أمينة ،\nبنون بدل الميم، ويقال همينة، بهاء بدل الهمزة، بنت خلف بن\n(١) الثقات ٣/ ٢٥، أعلام النساء ١/ ٧٧، تجريد أسماء الصحابة ٢/ ٢٤٧ بقي بن مخلد ٥٥٤.\n(٢) أخرجه عبد الرزاق في المصنف (٢٠١٢٢) وأحمد ٤/ ٣٦٥ والبيهقي ٧/ ٣٠٤ وانظر المجمع ٤/ ٢١٧ والتلخيص للمصنف ٢/ ١٤٨ والترغيب للمنذري ١/ ٣٨١ والكنز (٤٣٨٤٦) .",
+      "english": "10877 — Amina\n\nWith a nun in place of the mim; she is also called Humayna, with a ha in place of the hamza: daughter of Khalaf ibn—\n\n¹ al-Thiqat, 3/25; A'lam al-Nisa', 1/77; al-Tajrid, 2/247; Baqi ibn Makhlad, no. 554.\n\n² Reported by Abd al-Razzaq in al-Musannaf (20122), Musnad Ahmad, 4/365, and al-Bayhaqi, 7/304. See also al-Majma', 4/217; the author's al-Talkhis, 2/148; al-Targhib by al-Mundhiri, 1/381; and al-Kanz (43846).",
+      "arabic_sha256": "0fbc79b8649662f1c749e5afd6c011b02d15fd25af7ddf55220a0da3738c308f",
+      "english_sha256": "97b170d9568a2fd7db6a16ce53324575f2260c8312d6040463e3207434a5248f",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010877-segment-0002",
+      "volume": 8,
+      "scan_page": 38,
+      "printed_page": 37,
+      "reader_page": 3950,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3950",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0038:0055ac798faa54ad",
+      "arabic": "أسعد بن عامر بن بياضة بن سبيع الخزاعية، عمة طلحة بن عبد اللَّه بن خلف المعروف بطلحة الطلحات.\nذكرها ابن إسحاق فيمن هاجر إلى الحبشة من المسلمين مع زوجها خالد بن سعيد بن العاص، فولدت له هناك سعيدا وأم خالد، واسمها أمة، بغير إضافة.",
+      "english": "[Continuation of entry 10877]\nAs'ad ibn 'Amir ibn Bayada ibn Subay' al-Khuza'iyya, the paternal aunt of Talha ibn 'Abd Allah ibn Khalaf, known as Talha al-Talahat.\n\nIbn Ishaq mentioned her among the Muslims who emigrated to Abyssinia together with her husband, Khalid ibn Sa'id ibn al-'As. There she bore him Sa'id and Umm Khalid, whose name was Ama, without an annexed element.",
+      "arabic_sha256": "d3a40f1ebac1c9268db3f19d9100cd02b5ad85a0f9502df6f35a108362d74ef5",
+      "english_sha256": "a2cbdeea0a89e3adca5eb99172b7ca59e9bba088223c994a94bc27aa21887e4e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرزاق",
+      "english": "Abd al-Razzaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "المصنف",
+      "english": "al-Musannaf",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "المجمع",
+      "english": "al-Majma'",
+      "kind": "work"
+    },
+    {
+      "arabic": "التلخيص",
+      "english": "al-Talkhis",
+      "kind": "work"
+    },
+    {
+      "arabic": "الترغيب",
+      "english": "al-Targhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "المنذري",
+      "english": "al-Mundhiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكنز",
+      "english": "al-Kanz",
+      "kind": "work"
+    },
+    {
+      "arabic": "طلحة بن عبد الله بن خلف المعروف بطلحة الطلحات",
+      "english": "Talha al-Talahat",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "خالد بن سعيد بن العاص",
+      "english": "Khalid ibn Sa'id ibn al-'As",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد",
+      "english": "Sa'id ibn Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم خالد، واسمها أمة",
+      "english": "Ama bint Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

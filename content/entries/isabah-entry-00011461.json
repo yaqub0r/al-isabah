@@ -1,0 +1,968 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011461",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11461,
+  "title": {
+    "english": "Aisha bint Abi Bakr al-Siddiq²",
+    "arabic_observed": "عائشة بنت أبي بكر الصّديق «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011461-segment-0001",
+      "volume": 8,
+      "scan_page": 232,
+      "printed_page": 231,
+      "reader_page": 4144,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4144",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0232:80d98c6d68a893c2",
+      "arabic": "١١٤٦١- عائشة بنت أبي بكر الصّديق «٢»\n. تقدم نسبها في ترجمة والدها عبد اللَّه بن عثمان رضي اللَّه تعالى عنهم. وأمها أم رومان بنت عامر بن عويمر الكنانية، ولدت بعد المبعث بأربع سنين أو خمس، فقد ثبت في\n(١) أسد الغابة ت (٧٠٩٢)، الاستيعاب ت (٣٤٧٥) .\n(٢) أسد الغابة ت (٧٠٩٣)، الاستيعاب ت (٣٤٧٦)، مسند أحمد ٦/ ٢٩، طبقات ابن سعد ٨/ ٥٨، التاريخ لابن معين ٧٣، طبقات خليفة ٣٣٣، تاريخ خليفة ٢٢٥، المعارف ١٣٤، تاريخ الفسوي ٣/ ٢٦٨، المستدرك ٤/ ٤- ١٤، حلية الأولياء ٢/ ٤٣، جامع الأصول ٩/ ١٣٢، تهذيب الكمال ١٦٨٨، تاريخ الإسلام ٢/ ٢٩٤، البداية والنهاية ٨/ ٩١، مجمع الزوائد ٩/ ٢٢٥، تهذيب التهذيب ١٢/ ٤٣٣، خلاصة تذهيب الكمال ٤٩٣، كنز العمال ١٣/ ٦٩٣، شذرات الذهب ١/ ٩.",
+      "english": "11461 — Aisha bint Abi Bakr al-Siddiq²\n\nHer lineage has already been given in the entry on her father, Abdullah ibn Uthman—may Allah Most High be pleased with them. Her mother was Umm Ruman bint Amir ibn Uwaymir al-Kinaniyya. She was born four or five years after the beginning of the prophetic mission, for it is established in—\n\n(1) Usd al-Ghaba, entry 7092; al-Isti'ab, entry 3475.\n\n(2) Usd al-Ghaba, entry 7093; al-Isti'ab, entry 3476; Musnad Ahmad, 6/29; al-Tabaqat of Ibn Sad, 8/58; al-Tarikh by Ibn Main, p. 73; al-Tabaqat of Khalifa, p. 333; Tarikh Khalifa, p. 225; al-Maarif, p. 134; Tarikh al-Fasawi, 3/268; al-Mustadrak, 4/4–14; Hilyat al-Awliya, 2/43; Jami al-Usul, 9/132; Tahdhib al-Kamal, p. 1688; Tarikh al-Islam, 2/294; al-Bidaya wa-l-Nihaya, 8/91; Majma al-Zawaid, 9/225; Tahdhib al-Tahdhib, 12/433; Khulasat Tadhhib al-Kamal, p. 493; Kanz al-Ummal, 13/693; Shadharat al-Dhahab, 1/9.",
+      "arabic_sha256": "9c40de86a5e66b00b5f3b65184f31318f9af32a819400c50e835d0ba9e197085",
+      "english_sha256": "55df2883b8211d27aef33d06052bac57c35550b9de235195f629560718e9a48f",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011461-segment-0002",
+      "volume": 8,
+      "scan_page": 233,
+      "printed_page": 232,
+      "reader_page": 4145,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4145",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0233:696870099c6263ac",
+      "arabic": "الصّحيح أنّ النبي ﵌ تزوجها وهي بنت ست، وقيل سبع، ويجمع بأنها كانت أكملت السّادسة ودخلت في السّابعة، ودخل بها وهي بنت تسع، وكان دخوله بها في شوال في السنة الأولى كما أخرجه ابن سعد عن الواقديّ، عن أبي الرّجال، عن أبيه، عن أمه «١» عمرة عنها، قالت: أعرس بي على رأس ثمانية أشهر. وقيل في السّنة الثّانية من الهجرة. وقال الزّبير بن بكّار: تزوجها بعد موت خديجة، قبل الهجرة «٢» بثلاث سنين. قال أبو عمر: كانت تذكر لجبير بن مطعم وتسمّى له.\nقلت: أخرجه ابن سعد من حديث ابن عباس بسند فيه الكلبيّ، وأخرجه أيضا عن ابن نمير عن الأجلح عن ابن أبي مليكة، قال: قال أبو بكر: كنت أعطيتها مطعما لابنه جبير، فدعني حتى أسألها منهم فاستلبثها. وفي الصحيح، من رواية أبي معاوية، عن الأعمش، عن إبراهيم، عن الأسود، قالت: تزوّجني رسول اللَّه ﵌ وأنا بنت ست سنين، وبني بي وأنا بنت تسع، وقبض وأنا بنت ثمان عشرة سنة.\nوأخرج ابن أبي عاصم، من طريق يحيى القطان، عن محمد بن عمرو، عن يحيى بن عبد الرحمن بن حاطب، عن عائشة، قالت: لما توفيت خديجة قالت خولة بنت حكيم بن الأوقص امرأة عثمان بن مظعون، وذلك بمكة: أي رسول اللَّه، ألا تزوج؟ قال:\n«من»؟ قالت: «إن شئت بكرا وإن شئت ثيّبا» . قال: «فمن البكر»؟ قالت: بنت أحب خلق اللَّه إليك: عائشة بنت أبي بكر. قال: «ومن الثيّب»؟ قالت: سودة بنت زمعة، آمنت بك واتبعتك. قال: «فاذهبي فاذكريهما عليّ»، فجاءت فدخلت بيت أبي بكر، فوجدت أم رومان، فقالت: ما أدخل اللَّه عليكم من الخير والبركة! قالت: وما ذاك؟ قالت: أرسلني رسول اللَّه ﵌ أخطب عليه عائشة: قالت: وددت، انتظري أبا بكر.\nفجاء أبو بكر فذكرت له، فقال: وهل تصلح له وهي بنت أخيه؟ فرجعت، فذكرت ذلك للنّبيّ ﵌. قال: قولي له: «أنت أخي في الإسلام وابنتك تحلّ لي» .\nفجاء فأنكحه، وهي يومئذ بنت ست سنين، ثم ذكر قصّة سودة.\nوفي «الصّحيح» أيضا لم ينكح بكرا غيرها، وهو متفق عليه بين أهل النقل، وكانت تكنى أم عبد اللَّه، فقيل: إنها ولدت من النبي ﵌ ولدا فمات طفلا، ولم يثبت هذا. وقيل كناها بابن أختها عبد اللَّه بن الزبير، وهذا الثاني ورد عنها من طرق منها عند ابن سعد، عن يزيد بن هارون، عن حماد، عن هشام بن عروة، عن عباد بن حمزة، عن\n(١) في أ: وعن.\n(٢) سقط في ط.",
+      "english": "al-Sahih that the Prophet—may Allah bless him and grant him peace—married her when she was six years old; it is also said that she was seven. The two reports may be reconciled on the basis that she had completed her sixth year and entered her seventh. He consummated the marriage with her when she was nine years old. His consummation with her took place in Shawwal of the first year, as Ibn Sa'd transmitted from al-Waqidi, from Abu al-Rijal, from his father, from his mother,[1] Amra, from her. She said: “He consummated his marriage with me when eight months had elapsed.” It is also said that this occurred in the second year of the Hijra. Al-Zubayr ibn Bakkar said: He married her after the death of Khadijah, three years before the Hijra.[2] Abu Umar said: She had been mentioned as a prospective wife for Jubayr ibn Mut'im and designated for him.\n\nI say: Ibn Sa'd transmitted this from a hadith of Ibn Abbas through a chain containing al-Kalbi. He also transmitted it from Ibn Numayr, from al-Ajlah, from Ibn Abi Mulayka, who said: Abu Bakr said, “I had promised her to Mut'im for his son Jubayr, so give me time until I ask them to release her.” He then asked her [Khawla] to wait. In al-Sahih, through the transmission of Abu Mu'awiya, from al-A'mash, from Ibrahim, from al-Aswad, she said: “The Messenger of Allah—may Allah bless him and grant him peace—married me when I was six years old, consummated the marriage with me when I was nine, and died when I was eighteen years old.”\n\nIbn Abi Asim transmitted, by way of Yahya al-Qattan, from Muhammad ibn Amr, from Yahya ibn Abd al-Rahman ibn Hatib, from Aisha, who said: When Khadijah died, Khawla bint Hakim ibn al-Awqas, the wife of Uthman ibn Maz'un, said—and this was in Mecca—“O Messenger of Allah, will you not marry?” He said, “Whom?” She said, “If you wish, a virgin, and if you wish, a previously married woman.” He said, “Who is the virgin?” She said, “The daughter of the one dearest to you among Allah's creation: Aisha bint Abi Bakr.” He said, “And who is the previously married woman?” She said, “Sawda bint Zam'a; she has believed in you and followed you.” He said, “Go and mention both of them on my behalf.”\n\nShe went and entered Abu Bakr's house, where she found Umm Ruman. She said, “What goodness and blessing Allah has brought upon you!” Umm Ruman asked, “What is that?” She replied, “The Messenger of Allah—may Allah bless him and grant him peace—has sent me to seek Aisha's hand on his behalf.” She said, “I would like that; wait for Abu Bakr.”\n\nAbu Bakr came, and she mentioned it to him. He said, “Can she be lawful for him when she is his brother's daughter?” She returned and mentioned that to the Prophet—may Allah bless him and grant him peace. He said, “Tell him: ‘You are my brother in Islam, and your daughter is lawful for me.’”\n\nHe then came and gave her to him in marriage. At that time she was six years old. He then related the story of Sawda.\n\nIt is also reported in al-Sahih that he married no virgin other than her. This is agreed upon among the transmitters. Her kunyah was Umm Abdullah. It has been said that she bore the Prophet—may Allah bless him and grant him peace—a child who died young, but this has not been established. It has also been said that he gave her this kunyah on account of her sister's son, Abdullah ibn al-Zubayr. This second account is reported from her through several routes, including that of Ibn Sa'd, from Yazid ibn Harun, from Hammad, from Hisham ibn Urwa, from Abbad ibn Hamza, from—\n\n[1] In manuscript A: “and from.”\n\n[2] Omitted in manuscript T.",
+      "arabic_sha256": "696870099c6263ac71c90dc3ba9052feddeecc37ed6d885ed0e69202703dff2c",
+      "english_sha256": "0c93980cdd6ab7be074e19ea3f3bd681e0e78b6f46709633ccf89e4e0d941b4a",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011461-segment-0003",
+      "volume": 8,
+      "scan_page": 234,
+      "printed_page": 233,
+      "reader_page": 4146,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4146",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0234:34e0434c76dc10d0",
+      "arabic": "عائشة. قال الشعبي: كان مسروق إذا حدّث عن عائشة قال: حدثتني الصادقة ابنة الصّديق حبيبة حبيب اللَّه.\nوقال أبو الضّحى، عن مسروق: رأيت مشيخة أصحاب رسول اللَّه ﵌ الأكابر يسألونها عن الفرائض. وقال عطاء بن أبي رباح: كانت عائشة أفقه الناس، وأعلم الناس، وأحسن الناس رأيا في العامة.\nوقال هشام بن عروة، عن أبيه: ما رأيت أحدا أعلم بفقه ولا بطب ولا بشعر من عائشة. وقال أبو بردة بن أبي موسى، عن أبيه: ما أشكل علينا أمر فسألنا عنه عائشة إلا وجدنا عندها فيه علما. وقال الزهري: لو جمع علم عائشة إلى علم جميع أمهات المؤمنين وعلم جميع النساء لكان علم عائشة أفضل. وأسند الزبير بن بكار عن أبي الزناد، قال: ما رأيت أحدا أروى لشعر من عروة، فقيل له: ما أرواك! فقال: ما روايتي في رواية عائشة؟ ما كان ينزل بها شيء إلا أنشدت فيه شعرا.\nوفي الصّحيح عن أبي موسى الأشعريّ- مرفوعا: «فضل عائشة على النّساء كفضل الثّريد على سائر الطّعام» «١» .\nوفي الصّحيح، من طريق حماد، عن هشام بن عروة، عن أبيه: كان النّاس يتحرّون بهداياهم يوم عائشة. قالت: فاجتمع صواحبي إلى أم سلمة ... فذكر الحديث، وفيه: فقال في الثالثة: «لا تؤذوني في عائشة، فإنّه واللَّه ما نزل عليّ الوحي وأنا في لحاف امرأة منكنّ غيرها» «٢» .\nوأخرج التّرمذيّ من طريق الثّوريّ، عن أبي إسحاق، عن عمرو بن غالب- أن رجلا نال من عائشة عند عمار بن ياسر، فقال: اعزب مقبوحا، أتؤذي محبوبة رسول اللَّه ﵌.\nوأخرجه ابن سعد من وجه آخر عن، أبي إسحاق، عن حميد بن عريب نحوه، وقال:\n(١) أخرجه البخاري في الصحيح ٤/ ٢٠٠، ٥/ ٣٦، ٧/ ٩٧، ٩٨ ومسلم في الصحيح ٤/ ١٨٩٥ عن أنس كتاب فضائل الصحابة باب (١٣) فضل عائشة ﵂ حديث رقم (٨٩/ ٢٤٤٦) والترمذي في السنن ٥/ ٦٦٤ كتاب المناقب باب ٦٣ فضل عائشة ﵂ حديث رقم ٣٨٨٧ قال أبو عيسى الترمذي حديث حسن والنسائي في السنن ٧/ ٦٨ كتاب عشرة النساء باب (٣) حب الرجل بعض نسائه أكثر من بعض حديث رقم ٣٩٤٨، وأحمد في المسند ٣/ ٢٦٤، ٦/ ١٥٩، والدارميّ في السنن ٢/ ١٠٦، الحاكم في المستدرك ٣/ ٥٨٧ والطبراني في الكبير ١٩/ ٢٨ وأبو نعيم في الحلية ٩/ ٢٥، والهيثمي من الزوائد ٩/ ٢٤٦، وأورده المتقي الهندي في كنز العمال حديث رقم ٣٤٣٨٦.\n(٢) أورده الحسيني في إتحاف السادة المتقين ٥/ ٣٥٤.",
+      "english": "Aisha. al-Sha'bi said: Whenever Masruq related a report from Aisha, he would say, “The truthful woman, daughter of al-Siddiq, the beloved of the beloved of Allah, related to me.”\n\nAbu al-Duha reported from Masruq: “I saw the eminent senior Companions of the Messenger of Allah, may Allah bless him and grant him peace, asking her about the prescribed shares of inheritance.” Ata ibn Abi Rabah said: “Aisha was the most learned of people in jurisprudence, the most knowledgeable of people, and the soundest of people in judgment concerning public affairs.”\n\nHisham ibn Urwa reported from his father: “I never saw anyone more knowledgeable in jurisprudence, medicine, or poetry than Aisha.” Abu Burda ibn Abi Musa reported from his father: “Whenever a matter was difficult for us and we asked Aisha about it, we found that she possessed knowledge concerning it.” al-Zuhri said: “If Aisha's knowledge were combined with the knowledge of all the Mothers of the Believers and the knowledge of all women, Aisha's knowledge would be superior.” al-Zubayr ibn Bakkar transmitted with his chain from Abu al-Zinad, who said: “I never saw anyone who transmitted more poetry than Urwa.” It was said to him, “How abundantly you transmit poetry!” He replied, “What is my transmission compared with Aisha's transmission? Nothing ever happened to her without her reciting poetry concerning it.”\n\nIn the Sahih, Abu Musa al-Ashari reported in a hadith traced to the Prophet: “Aisha's superiority over women is like the superiority of tharid over all other foods.”¹\n\nIn the Sahih, through Hammad, from Hisham ibn Urwa, from his father: “The people used to time their gifts for Aisha's day.” She said: “My co-wives gathered together and went to Umm Salama …” He then related the hadith, in which it says: “The third time, he said, ‘Do not hurt me concerning Aisha, for, by Allah, revelation never descended upon me while I was beneath the coverlet of any woman among you other than her.’”²\n\nal-Tirmidhi transmitted through al-Thawri, from Abu Ishaq, from Amr ibn Ghalib, that a man spoke disparagingly of Aisha in the presence of Ammar ibn Yasir. Ammar said: “Go away, disgraced! Would you hurt the beloved of the Messenger of Allah, may Allah bless him and grant him peace?”\n\nIbn Sa'd transmitted it by another route from Abu Ishaq, from Humayd ibn Arib, with similar wording, and he said:\n\n¹ al-Bukhari transmitted it in the Sahih, 4/200, 5/36, 7/97–98; Muslim in the Sahih, 4/1895, from Anas, Book of the Virtues of the Companions, chapter 13, “The Virtue of Aisha, may Allah be pleased with her,” hadith no. 89/2446; al-Tirmidhi in the Sunan, 5/664, Book of Virtues, chapter 63, “The Virtue of Aisha, may Allah be pleased with her,” hadith no. 3887. Abu Isa al-Tirmidhi said: “A fair hadith.” Also al-Nasa'i in the Sunan, 7/68, Book of the Treatment of Women, chapter 3, “A Man Loving Some of His Wives More Than Others,” hadith no. 3948; Ahmad in Musnad Ahmad, 3/264 and 6/159; al-Darimi in the Sunan, 2/106; al-Hakim in al-Mustadrak, 3/587; al-Tabarani in al-Kabir, 19/28; Abu Nu'aym in al-Hilya, 9/25; al-Haythami in al-Zawa'id, 9/246; and al-Muttaqi al-Hindi included it in Kanz al-Ummal, hadith no. 34386.\n\n² al-Husayni included it in Ithaf al-Sada al-Muttaqin, 5/354.",
+      "arabic_sha256": "34e0434c76dc10d0ef67e89d947263eaed6476dbaabd8cad361f089d8d487f1d",
+      "english_sha256": "eaad4dadc79a027a5439b8c61bcbcb68eb4339a1f890ac829d6981bc747770cd",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011461-segment-0004",
+      "volume": 8,
+      "scan_page": 235,
+      "printed_page": 234,
+      "reader_page": 4147,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4147",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0235:2c8e9e60caf67b96",
+      "arabic": "مقبوحا منبوحا، وزاد أنها لزوجته في الجنة.\nوعن مرسل مسلم البطين قال: قال رسول اللَّه ﵌: «عائشة زوجتي في الجنّة» «١» .\nومن طريق أبي محمد مولى الغفاريين أن عائشة قالت: يا رسول اللَّه، من أزواجك في الجنة؟ قال: «أنت منهنّ» .\nومن طريق أبي إسحاق عن سفيان بن سعد، قال: زاد عمر عائشة على أزواج النبي ﵌ ألفين وقال: «إنّها حبيبة رسول اللَّه ﵌» .\nوفي صحيح البخاري من طريق ابن عون، عن القاسم بن محمد- أن عائشة اشتكت فجاء ابن عباس فقال: يا أم المؤمنين، تقدميني على فرط صدق ... الحديث.\nوقال ابن سعد: أخبرنا هشام- هو ابن عبد الملك الطيالسي، حدثنا أبو عوانة، عن عبد الملك بن عمير، عن عائشة، قالت: أعطيت خلالا ما أعطيتها امرأة: ملكني رسول اللَّه ﵌ وأنا بنت سبع، وأتاه الملك بصورتي في كفه لينظر إليها، وبني بي لتسع، ورأيت جبرائيل، وكنت أحبّ نسائه إليه، ومرضته فقبض ولم يشهده غيري- والملائكة.\nوأورد من وجه آخر فيه عيسى بن ميمون وهو واه، قالت عائشة: فضلت بعشر ...\nفذكرت مجيء جبريل بصورتها، قالت: ولم ينكح بكرا غيري ولا امرأة أبواها مهاجران غيري، وأنزل اللَّه براءتي من السماء، وكان ينزل عليه الوحي وهو معي، وكنت أغتسل أنا وهو من إناء واحد، وكان يصلّى وأنا معترضة بين يديه، وقبض بين سحري وبحري في بيتي وفي ليلتي، ودفن في بيتي.\nوأخرج ابن سعد من طريق أم درة، قالت: أتيت عائشة بمائة ألف ففرقتها وهي يومئذ صائمة، فقلت لها: أما استطعت فيما أنفقت أن تشتري بدرهم لحما تفطرين عليه؟ فقالت:\nلو كنت أذكرتني لفعلت.\nروت عائشة عن النبي ﵌ الكثير الطيب، وروت أيضا عن أبيها، وعن عمر، وفاطمة، وسعد بن أبي وقاص، وأسيد بن حضير، وجذامة بنت وهب، وحمزة بنت عمرو.\n(١) أخرجه البخاري في صحيحه ٥/ ٦، ٢٠٩ ومسلم في الصحيح ٤/ ١٨٩٤ كتاب فضائل الصحابة باب فضل عائشة ﵂ (١٣) حديث رقم (٩١/ ٢٤٤٧) وابن أبي شيبة في المصنف ١٢/ ١٢٨، الدارميّ في السنن ١/ ١٦٧ والطبراني في الكبير ٦/ ٣٧٠، وأحمد في المسند ٤/ ٢٠٣ وابن سعد في الطبقات الكبرى ٨/ ٤٥، والسيوطي في الدر المنثور ٥/ ٣٧.",
+      "english": "“Disgraced and barked at.” He added that she is indeed his wife in Paradise.\n\nIn a mursal report from Muslim al-Batin, he said: The Messenger of Allah, may Allah bless him and grant him peace, said: “Aisha is my wife in Paradise.” [1]\n\nThrough Abu Muhammad, the client of the Ghifaris, Aisha said: “O Messenger of Allah, who among your wives will be in Paradise?” He replied: “You are one of them.”\n\nThrough Abu Ishaq, from Sufyan ibn Sa'd, who said: Umar gave Aisha two thousand more than he gave the other wives of the Prophet, may Allah bless him and grant him peace, and said: “She is the beloved of the Messenger of Allah, may Allah bless him and grant him peace.”\n\nIn Sahih al-Bukhari, through Ibn Awn, from al-Qasim ibn Muhammad, it is related that Aisha became ill. Ibn Abbas came and said: “O Mother of the Believers, you will precede me to a true forerunner…” The rest of the hadith follows.\n\nIbn Sa'd said: Hisham—namely, Ibn Abd al-Malik al-Tayalisi—informed us: Abu Awana related to us, from Abd al-Malik ibn Umayr, from Aisha, who said: “I was granted qualities that no other woman was granted: the Messenger of Allah, may Allah bless him and grant him peace, married me when I was seven; the angel came to him with my likeness in his palm for him to look at; he consummated the marriage with me when I was nine; I saw Gabriel; I was the one of his wives whom he loved most; and I nursed him during his illness. Then he was taken in death, and none but me and the angels witnessed it.”\n\nHe also cited another route containing Isa ibn Maymun, who is very weak. Aisha said: “I was favored in ten respects…” She then mentioned Gabriel's coming with her likeness. She said: “He married no virgin other than me, and no woman other than me whose parents were both Emigrants. Allah sent down my exoneration from heaven. Revelation would descend upon him while he was with me. He and I used to bathe from a single vessel. He would pray while I lay crosswise before him. He was taken in death between my chest and throat [reading نحري, ‘my throat,’ for the printed بحري], in my house and during my allotted night, and he was buried in my house.”\n\nIbn Sa'd related through Umm Durrah, who said: “I brought Aisha one hundred thousand, and she distributed it while she was fasting that day. I said to her, ‘Could you not, from what you spent, have bought a dirham's worth of meat with which to break your fast?’ She replied: ‘Had you reminded me, I would have done so.’”\n\nAisha transmitted a great abundance of excellent reports from the Prophet, may Allah bless him and grant him peace. She also transmitted from her father, Umar, Fatima, Sa'd ibn Abi Waqqas, Usayd ibn Hudayr, Judhama bint Wahb, and Hamza bint Amr.\n\n[1] Al-Bukhari recorded it in Sahih al-Bukhari, 5/6, 209; Muslim in Sahih Muslim, 4/1894, Book of the Virtues of the Companions, chapter (13), “The Merit of Aisha,” may Allah be pleased with her, hadith no. (91/2447); Ibn Abi Shayba in al-Musannaf, 12/128; al-Darimi in Sunan al-Darimi, 1/167; al-Tabarani in al-Kabir, 6/370; Musnad Ahmad, 4/203; Ibn Sa'd in al-Tabaqat, 8/45; and al-Suyuti in al-Durr al-Manthur, 5/37.",
+      "arabic_sha256": "2c8e9e60caf67b96f572d3219ce04a3b4cc5f556788c327f6e79f92c64731044",
+      "english_sha256": "dfed6b5889b4a9767d29f613a68ec4a9a23b0461394bb91725b156eef66542bc",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011461-segment-0005",
+      "volume": 8,
+      "scan_page": 236,
+      "printed_page": 235,
+      "reader_page": 4148,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4148",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0236:7648c33cbdb74026",
+      "arabic": "وروى عنها من الصحابة: عمر، وابنه عبد اللَّه، وأبو هريرة، وأبو موسى، وزيد بن خالد، وابن عباس، وربيعة بن عمرو الجرشي، والسائب بن يزيد، وصفية بنت شيبة، وعبد اللَّه بن عامر بن ربيعة، وعبد اللَّه بن الحارث بن نوفل، وغيرهم.\nومن آل بيتها: أختها أم كلثوم، وأخوها من الرضاعة عوف بن الحارث، وابن أخيها القاسم، وعبد اللَّه بن محمد بن أبي بكر، وبنت أخيها الآخر حفصة، وأسماء بنت عبد الرحمن بن أبي بكر، وحفيده عبد اللَّه بن أبي عتيق محمد بن عبد الرحمن، وابنا أختها: عبد اللَّه، وعروة ابنا الزبير بن العوام من أسماء بنت أبي بكر، وحفيدا أسماء عباد، وحبيب، ولدا عبد اللَّه بن الزبير، وحفيد عبد اللَّه عباد بن حمزة بن عبد اللَّه بن الزبير، وبنت أختها عائشة بنت طلحة من أم كلثوم بنت أبي بكر، ومواليها: أبو عمر، وذكوان، وأبو يونس، وابن فروخ.\nومن كبار التابعين: سعيد بن المسيب، وعمرو بن ميمون، وعلقمة بن قيس، ومسروق، وعبد اللَّه بن حكيم، والأسود بن يزيد، وأبو سلمة بن عبد الرحمن، وأبو وائل، وآخرون كثيرون.\nماتت سنة ثمان وخمسين في ليلة الثلاثاء لسبع عشرة خلت من رمضان عند الأكثر وقيل سنة سبع، ذكره علي بن المدينيّ، عن ابن عيينة، عن هشام بن عروة، ودفنت بالبقيع.",
+      "english": "Those among the Companions who narrated from her were: Umar; his son Abd Allah; Abu Hurayra; Abu Musa; Zayd ibn Khalid; Ibn Abbas; Rabi'a ibn Amr al-Jurashi; al-Sa'ib ibn Yazid; Safiyya bint Shayba; Abd Allah ibn Amir ibn Rabi'a; Abd Allah ibn al-Harith ibn Nawfal; and others.\n\nAmong members of her family who narrated from her were: her sister Umm Kulthum; her foster-brother Awf ibn al-Harith; her nephew al-Qasim; Abd Allah ibn Muhammad ibn Abi Bakr; Hafsa, the daughter of her other brother; Asma bint Abd al-Rahman ibn Abi Bakr; Abd al-Rahman's grandson Abd Allah ibn Abi Atiq—Abu Atiq being Muhammad ibn Abd al-Rahman; her sister's two sons, Abd Allah and Urwa, sons of al-Zubayr ibn al-Awwam by Asma bint Abi Bakr; Asma's two grandsons, Abbad and Habib, sons of Abd Allah ibn al-Zubayr; the grandson of Abd Allah ibn al-Zubayr, Abbad ibn Hamza ibn Abd Allah ibn al-Zubayr; and her sister's daughter Aisha bint Talha, by Umm Kulthum bint Abi Bakr. Among her mawlas who narrated from her were Abu Umar, Dhakwan, Abu Yunus, and Ibn Farrukh.\n\nAmong the senior Successors who narrated from her were: Sa'id ibn al-Musayyib; Amr ibn Maymun; Alqama ibn Qays; Masruq; Abd Allah ibn Hakim; al-Aswad ibn Yazid; Abu Salama ibn Abd al-Rahman; Abu Wa'il; and many others.\n\nShe died in the year 58, on Tuesday night, when seventeen nights of Ramadan had elapsed, according to most authorities. It is also said that she died in the year 57; this was related by Ali ibn al-Madini, from Ibn Uyayna, from Hisham ibn Urwa. She was buried in al-Baqi.",
+      "arabic_sha256": "a8f42f716e740ceeb411fcb79fd9224793b5d32d8497ad7c9c62714380e95d1b",
+      "english_sha256": "df2785403250b41d3ea4dd7c38549d8a2d2faf0a8eab623eceb3b3be25a059f2",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عائشة بنت أبي بكر الصديق",
+      "english": "Aisha bint Abi Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن عثمان",
+      "english": "Abdullah ibn Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم رومان بنت عامر بن عويمر الكنانية",
+      "english": "Umm Ruman bint Amir ibn Uwaymir al-Kinaniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسند أحمد",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat of Ibn Sad",
+      "kind": "work"
+    },
+    {
+      "arabic": "التاريخ لابن معين",
+      "english": "al-Tarikh by Ibn Main",
+      "kind": "work"
+    },
+    {
+      "arabic": "طبقات خليفة",
+      "english": "al-Tabaqat of Khalifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ خليفة",
+      "english": "Tarikh Khalifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "المعارف",
+      "english": "al-Maarif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ الفسوي",
+      "english": "Tarikh al-Fasawi",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "حلية الأولياء",
+      "english": "Hilyat al-Awliya",
+      "kind": "work"
+    },
+    {
+      "arabic": "جامع الأصول",
+      "english": "Jami al-Usul",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ الإسلام",
+      "english": "Tarikh al-Islam",
+      "kind": "work"
+    },
+    {
+      "arabic": "البداية والنهاية",
+      "english": "al-Bidaya wa-l-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "مجمع الزوائد",
+      "english": "Majma al-Zawaid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب الكمال",
+      "english": "Khulasat Tadhhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "شذرات الذهب",
+      "english": "Shadharat al-Dhahab",
+      "kind": "work"
+    },
+    {
+      "arabic": "النبي / رسول الله",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "al-Sahih",
+      "kind": "work"
+    },
+    {
+      "arabic": "شوال",
+      "english": "Shawwal",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الرجال",
+      "english": "Abu al-Rijal",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة",
+      "english": "Amra",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهجرة",
+      "english": "Hijra",
+      "kind": "other"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "جبير بن مطعم / جبير",
+      "english": "Jubayr ibn Mut'im",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكلبي",
+      "english": "al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن نمير",
+      "english": "Ibn Numayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأجلح",
+      "english": "al-Ajlah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي مليكة",
+      "english": "Ibn Abi Mulayka",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "مطعم",
+      "english": "Mut'im",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو معاوية",
+      "english": "Abu Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأعمش",
+      "english": "al-A'mash",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم",
+      "english": "Ibrahim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأسود",
+      "english": "al-Aswad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى القطان",
+      "english": "Yahya al-Qattan",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمرو",
+      "english": "Muhammad ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن عبد الرحمن بن حاطب",
+      "english": "Yahya ibn Abd al-Rahman ibn Hatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت حكيم بن الأوقص",
+      "english": "Khawla bint Hakim ibn al-Awqas",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن مظعون",
+      "english": "Uthman ibn Maz'un",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "سودة بنت زمعة / سودة",
+      "english": "Sawda bint Zam'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم رومان",
+      "english": "Umm Ruman",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن الزبير",
+      "english": "Abdullah ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن هارون",
+      "english": "Yazid ibn Harun",
+      "kind": "person"
+    },
+    {
+      "arabic": "حماد",
+      "english": "Hammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن عروة",
+      "english": "Hisham ibn Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عباد بن حمزة",
+      "english": "Abbad ibn Hamza",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشعبي",
+      "english": "al-Sha'bi",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسروق",
+      "english": "Masruq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصديق",
+      "english": "al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الضحى",
+      "english": "Abu al-Duha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاء بن أبي رباح",
+      "english": "Ata ibn Abi Rabah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بردة بن أبي موسى",
+      "english": "Abu Burda ibn Abi Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى الأشعري",
+      "english": "Abu Musa al-Ashari",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمهات المؤمنين",
+      "english": "Mothers of the Believers",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو الزناد",
+      "english": "Abu al-Zinad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عيسى الترمذي",
+      "english": "Abu Isa al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثوري",
+      "english": "al-Thawri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو إسحاق",
+      "english": "Abu Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن غالب",
+      "english": "Amr ibn Ghalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمار بن ياسر",
+      "english": "Ammar ibn Yasir",
+      "kind": "person"
+    },
+    {
+      "arabic": "حميد بن عريب",
+      "english": "Humayd ibn Arib",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس",
+      "english": "Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدارمي",
+      "english": "al-Darimi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسيني",
+      "english": "al-Husayni",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري في الصحيح",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسلم في الصحيح",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "الترمذي في السنن",
+      "english": "Sunan al-Tirmidhi",
+      "kind": "work"
+    },
+    {
+      "arabic": "النسائي في السنن",
+      "english": "Sunan al-Nasa'i",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد في المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحلية",
+      "english": "al-Hilya",
+      "kind": "work"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "إتحاف السادة المتقين",
+      "english": "Ithaf al-Sada al-Muttaqin",
+      "kind": "work"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجنة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "مسلم البطين",
+      "english": "Muslim al-Batin",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو محمد",
+      "english": "Abu Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الغفاريين",
+      "english": "Ghifaris",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سفيان بن سعد",
+      "english": "Sufyan ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عون",
+      "english": "Ibn Awn",
+      "kind": "person"
+    },
+    {
+      "arabic": "القاسم بن محمد",
+      "english": "al-Qasim ibn Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عوانة",
+      "english": "Abu Awana",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الملك بن عمير",
+      "english": "Abd al-Malik ibn Umayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "جبرائيل",
+      "english": "Gabriel",
+      "kind": "person"
+    },
+    {
+      "arabic": "جبريل",
+      "english": "Gabriel",
+      "kind": "person"
+    },
+    {
+      "arabic": "عيسى بن ميمون",
+      "english": "Isa ibn Maymun",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم درة",
+      "english": "Umm Durrah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبيها",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن أبي وقاص",
+      "english": "Sa'd ibn Abi Waqqas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسيد بن حضير",
+      "english": "Usayd ibn Hudayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "جذامة بنت وهب",
+      "english": "Judhama bint Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمزة بنت عمرو",
+      "english": "Hamza bint Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي شيبة",
+      "english": "Ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "السيوطي",
+      "english": "al-Suyuti",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيح البخاري",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "المصنف",
+      "english": "al-Musannaf",
+      "kind": "work"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan al-Darimi",
+      "kind": "work"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبقات الكبرى",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدر المنثور",
+      "english": "al-Durr al-Manthur",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو هريرة",
+      "english": "Abu Hurayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن خالد",
+      "english": "Zayd ibn Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "ربيعة بن عمرو الجرشي",
+      "english": "Rabi'a ibn Amr al-Jurashi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السائب بن يزيد",
+      "english": "al-Sa'ib ibn Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت شيبة",
+      "english": "Safiyya bint Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عامر بن ربيعة",
+      "english": "Abd Allah ibn Amir ibn Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن الحارث بن نوفل",
+      "english": "Abd Allah ibn al-Harith ibn Nawfal",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم بنت أبي بكر",
+      "english": "Umm Kulthum bint Abi Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عوف بن الحارث",
+      "english": "Awf ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "القاسم",
+      "english": "al-Qasim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن محمد بن أبي بكر",
+      "english": "Abd Allah ibn Muhammad ibn Abi Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفصة",
+      "english": "Hafsa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت عبد الرحمن بن أبي بكر",
+      "english": "Asma bint Abd al-Rahman ibn Abi Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن أبي بكر",
+      "english": "Abd al-Rahman ibn Abi Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن أبي عتيق",
+      "english": "Abd Allah ibn Abi Atiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن الزبير بن العوام",
+      "english": "Abd Allah ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن العوام",
+      "english": "al-Zubayr ibn al-Awwam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت أبي بكر",
+      "english": "Asma bint Abi Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عباد بن حمزة بن عبد اللَّه بن الزبير",
+      "english": "Abbad ibn Hamza ibn Abd Allah ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة بنت طلحة",
+      "english": "Aisha bint Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "ذكوان",
+      "english": "Dhakwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو يونس",
+      "english": "Abu Yunus",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن فروخ",
+      "english": "Ibn Farrukh",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن المسيب",
+      "english": "Sa'id ibn al-Musayyib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن ميمون",
+      "english": "Amr ibn Maymun",
+      "kind": "person"
+    },
+    {
+      "arabic": "علقمة بن قيس",
+      "english": "Alqama ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن حكيم",
+      "english": "Abd Allah ibn Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأسود بن يزيد",
+      "english": "al-Aswad ibn Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سلمة بن عبد الرحمن",
+      "english": "Abu Salama ibn Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو وائل",
+      "english": "Abu Wa'il",
+      "kind": "person"
+    },
+    {
+      "arabic": "رمضان",
+      "english": "Ramadan",
+      "kind": "other"
+    },
+    {
+      "arabic": "علي بن المديني",
+      "english": "Ali ibn al-Madini",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عيينة",
+      "english": "Ibn Uyayna",
+      "kind": "person"
+    },
+    {
+      "arabic": "البقيع",
+      "english": "al-Baqi",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source_reading",
+      "arabic_span": "تقدميني على فرط صدق",
+      "explanation": "The canonical text includes an object pronoun, yielding “you will precede me.” The supplied witnesses do not determine whether this is intentional or a corruption of تقدمين, “you will go ahead.” The final translation therefore retains the canonical wording.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0235:2c8e9e60caf67b96"
+    },
+    {
+      "category": "source_emendation",
+      "arabic_span": "بين سحري وبحري",
+      "explanation": "The printed بحري is incoherent in context. The final text transparently reads نحري on the strength of Urdu witness scan 285 and supplemental evidence ID isabah-v8-scan235-bukhari-english-anatomical-reading, but no supplied direct Arabic al-Isabah witness establishes the exact letters.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0235:2c8e9e60caf67b96"
+    },
+    {
+      "category": "footnote_correspondence",
+      "arabic_span": "أخرجه البخاري في صحيحه ... والسيوطي في الدر المنثور",
+      "explanation": "The bibliographical note is translated exactly as printed, but the supplied evidence does not establish whether every citation documents the immediately preceding mursal wording or only related reports concerning Aisha.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0235:2c8e9e60caf67b96"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

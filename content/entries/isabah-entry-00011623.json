@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011623",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11623,
+  "title": {
+    "english": "Furay'a bint Zurara³:",
+    "arabic_observed": "فريعة بنت زرارة «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011623-segment-0001",
+      "volume": 8,
+      "scan_page": 280,
+      "printed_page": 279,
+      "reader_page": 4192,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4192",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0280:c4201e5a192e04a8",
+      "arabic": "١١٦٢٣- فريعة بنت زرارة «٣»\n: تقدمت في رفاعة.\n(١) أسد الغابة ت (٧٢٠١) .\n(٢) أسد الغابة ت (٧٢٠١) .\n(٣) أسد الغابة ت (٧٢٠٢) .",
+      "english": "11623—Furay'a bint Zurara³:\n\nShe was mentioned above under Rifa'a.\n\n¹ Usd al-Ghaba, entry 7201.\n² Usd al-Ghaba, entry 7201.\n³ Usd al-Ghaba, entry 7202.",
+      "arabic_sha256": "766b48ebcfefc7345e8695a9ed93a06c43b5796dfa4c184cf443d6498169fd6d",
+      "english_sha256": "348c43d8aeba8638a480a1ad6fb93e52d9e7616044352feccafa7e8f1f10218a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رفاعة",
+      "english": "Rifa'a bint Abi Umama al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "فريعة بنت زرارة",
+      "english": "Furay'a bint Zurara",
+      "kind": "person"
+    },
+    {
+      "arabic": "رفاعة",
+      "english": "Rifa'a bint Zurara",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

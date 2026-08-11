@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011208",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11208,
+  "title": {
+    "english": "Rayta bint Sufyan",
+    "arabic_observed": "ريطة بنت سفيان ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011208-segment-0001",
+      "volume": 8,
+      "scan_page": 148,
+      "printed_page": 147,
+      "reader_page": 4060,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4060",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0148:1dc47bd00d591896",
+      "arabic": "١١٢٠٨- ريطة بنت سفيان ،\nزوج قدامة بن مظعون. تقدمت في رائطة.",
+      "english": "11208—Rayta bint Sufyan\n\nThe wife of Qudama ibn Maz'un. She was discussed previously under Ra'ita.",
+      "arabic_sha256": "6fcf526011a17ae6ce93c9bbc374356ff17fdbf07615aecd4064dbde178c5a4b",
+      "english_sha256": "bd81a4a618dd8a995dbb90d576b5f0c40aa4cd8f0b59334996086f57bed7f9a1",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رائطة",
+      "english": "Ra'ita bint al-Harith al-Taymiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "رائطة",
+      "english": "Ra'ita bint Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "ريطة بنت سفيان",
+      "english": "Rayta bint Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "قدامة بن مظعون",
+      "english": "Qudama ibn Maz'un",
+      "kind": "person"
+    },
+    {
+      "arabic": "رائطة",
+      "english": "Ra'ita bint Sufyan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012122",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12122,
+  "title": {
+    "english": "Umm Talq:",
+    "arabic_observed": "أم طلق:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012122-segment-0001",
+      "volume": 8,
+      "scan_page": 425,
+      "printed_page": 424,
+      "reader_page": 4337,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4337",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0425:538f1d143e4219b5",
+      "arabic": "١٢١٢٢- أم طلق:\nلها إدراك، أخرج ابن سعد عنها، قالت: كتب عمر إلى عماله ألّا تطيلوا بناءكم فإنّ شرّ أيامكم يوم تطيلون «٥» بناءكم.\n(١) أسد الغابة ت (٧٥٠٦)، الاستيعاب ت (٣٦٣١)، أعلام النساء ٢/ ٣٦٩ تجريد أسماء الصحابة ٢/ ٣٢٦، تلقيح فهوم أهل الأثر ٣٨٧، بقي بن مخلد ١٠٠٨، تعجيل المنفعة ٥/ ٥٦٢.\n(٢) أخرجه مسلم ٢/ ١١٢٢ كتاب الطلاق باب ٨ انقضاء عدة المتوفى عنها زوجها وغيرها بوضع الحمل حديث ٥٦، ٥٧ والنسائي في السنن ٦/ ١٩٠ باب ٥٦ عدة الحامل المتوفى عنها زوجها حديث رقم ٣٥٠٦، ٣٥٠٧، ٣٥٠٨ وابن ماجة ١/ ٦٥٤ كتاب الطلاق باب ٧ باب الحامل المتوفى عنها زوجها حديث رقم ٢٠٢٩، وأحمد في المسند ٦/ ٣٧٥.\n(٣) أسد الغابة ت (٧٥٠٧)، الاستيعاب ت (٣٦٣٢) .\n(٤) سقط في أ.\n(٥) في أ: تطيلوا.",
+      "english": "12122 - Umm Talq:\n\nShe was alive during the Prophet's lifetime. Ibn Sa'd transmitted from her that she said: “'Umar wrote to his officials: ‘Do not make your buildings tall, for the worst of your days is the day on which you make your buildings tall.⁵’”\n\n¹ Usd al-Ghaba, entry 7506; al-Isti'ab, entry 3631; A'lam al-Nisa', 2/369; al-Tajrid, 2/326; Talqih Fuhum Ahl al-Athar, 387; Baqi ibn Makhlad, 1008; Ta'jil al-Manfa'a, 5/562.\n\n² Muslim, 2/1122, Book of Divorce, chapter 8, “The Expiration of the Waiting Period of a Woman Whose Husband Has Died, and of Others, upon Delivery,” hadiths 56 and 57; Sunan al-Nasa'i, 6/190, chapter 56, “The Waiting Period of a Pregnant Woman Whose Husband Has Died,” hadith nos. 3506, 3507, and 3508; Ibn Majah, 1/654, Book of Divorce, chapter 7, “The Pregnant Woman Whose Husband Has Died,” hadith no. 2029; and Musnad Ahmad, 6/375.\n\n³ Usd al-Ghaba, entry 7507; al-Isti'ab, entry 3632.\n\n⁴ Omitted in manuscript A.\n\n⁵ In manuscript A: تطيلوا.",
+      "arabic_sha256": "53fe035d54df8de3cc60a8ba448c6cc6384d9edfdd52dd5742b3f77c376b4c96",
+      "english_sha256": "5857bee244f0dbc85be60f30bb78a47b64ea76f6bc21d9b85406e86fdbb0d001",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012122-segment-0002",
+      "volume": 8,
+      "scan_page": 426,
+      "printed_page": 425,
+      "reader_page": 4338,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4338",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0426:6633b99d43784c8a",
+      "arabic": "حرف العين المهملة\nالقسم الأول",
+      "english": "THE UNPOINTED LETTER 'AYN\n\nSECTION ONE",
+      "arabic_sha256": "8e852a29c1cac964d5c72920956533ceeff9246a7ff90c48a252ab9f3f060231",
+      "english_sha256": "1b43894ad254b8d3c0288d1d29fb3c9149bc6db5c20b95a2c4899bb83878feea",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم طلق",
+      "english": "Umm Talq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "تعجيل المنفعة",
+      "english": "Ta'jil al-Manfa'a",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي في السنن",
+      "english": "Sunan al-Nasa'i",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد في المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011250",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11250,
+  "title": {
+    "english": "Zaynab bint Qays ibn Shammas, the Ansari woman.¹",
+    "arabic_observed": "زينب بنت قيس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011250-segment-0001",
+      "volume": 8,
+      "scan_page": 163,
+      "printed_page": 162,
+      "reader_page": 4075,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4075",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0163:e40af4ae4170ccd3",
+      "arabic": "١١٢٥٠- زينب بنت قيس\nبن شماس الأنصارية «١» .\nمضى نسبها في ترجمة أخيها ثابت بن قيس بن الخطيم.\nقال ابن سعد: أسلمت وبايعت، وأمها خولة بنت عمرو بن قيس الخزرجية، وتزوجت خبيب بن يساف، فولدت له أنيسة.",
+      "english": "11250—Zaynab bint Qays ibn Shammas, the Ansari woman.¹\n\nHer lineage has already appeared in the entry on her brother, Thabit ibn Qays ibn al-Khatim.\n\nIbn Sa'd said: She embraced Islam and pledged allegiance. Her mother was Khawla bint Amr ibn Qays, of the Khazraj. She married Khubayb ibn Yasaf and bore him Anisa.",
+      "arabic_sha256": "cfc95483e71b51365722fb455b27ec07d4afa9e26c88f82038d426eb4fa5ff16",
+      "english_sha256": "de6eafb87b6131248ef17750008f80b7835e15606f309f5abb13d24e823fd712",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ثابت بن قيس بن الخطيم",
+      "english": "Thabit ibn Qays ibn al-Khatim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت عمرو بن قيس الخزرجية",
+      "english": "Khawla bint Amr ibn Qays al-Khazrajiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخزرجية",
+      "english": "Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "خبيب بن يساف",
+      "english": "Khubayb ibn Yasaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنيسة",
+      "english": "Anisa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

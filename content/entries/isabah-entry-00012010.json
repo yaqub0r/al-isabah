@@ -1,0 +1,163 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012010",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12010,
+  "title": {
+    "english": "Umm al-Khayr bint Sakhr [3]",
+    "arabic_observed": "أم الخير بنت صخر «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012010-segment-0001",
+      "volume": 8,
+      "scan_page": 387,
+      "printed_page": 386,
+      "reader_page": 4299,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4299",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0387:fcea5e14ed084782",
+      "arabic": "١٢٠١٠- أم الخير بنت صخر «٣»\nبن عامر بن كعب بن سعد بن تيم بن مرة. وقيل:\nبنت صخر بن عمرو بن عامر القرشية التميمية، والدة أبي بكر الصديق.\nأسلمت قديما.\nأخرج ابن عاصم، والطّبرانيّ بسند بين، عن ابن عبّاس، قال: أسلمت أمّ أبي بكر، وأم عثمان «٤»، وأم الزّبير، وأم عبد الرّحمن بن عوف، وأم عمار بن ياسر.\nوأخرج بسند مسلسل بالطّلحيين إلى محمد بن عمران بن طلحة، عن القاسم بن محمد، عن عائشة، قالت: لما أسلم أبو بكر قام خطيبا فدعا إلى رسول اللَّه ورسوله، فثار المشركون فضربوه ... الحديث. وفيه قوله للنبيّ ﵌: يا رسول اللَّه، هذه أمي، فادع لها، وادعها إلى الإسلام، فدعا لها ودعاها، فأسلمت في قصّة طويلة، فيها: أنه سأل عن رسول اللَّه ﷺ بعد أن فاق من غشيته، فقالت له أمّه: لا تدري. فقال:\nسلي أم جميل بنت الخطاب، فذهبت إليها فسألتها فحضرت معها، فقال: لا عين عليك من أمي، فأخبرته أنه في دار الأرقم. وأخرج الطّبرانيّ من طريق الهيثم بن عديّ، قال: أم أبي بكر الصّديق أم الخير بنت صخر، ولما هلك أبو بكر ورثه أبواه، وماتت أمّ الخير قبل أبي قحافة، وكانا قد أسلما.\nحرف الدال المهملة\nالقسم الأول",
+      "english": "12010—Umm al-Khayr bint Sakhr [3]\n\nibn Amir ibn Ka'b ibn Sa'd ibn Taym ibn Murra. It is also said:\n\nShe was the daughter of Sakhr ibn Amr ibn Amir, the Qurashi Tamimi woman and mother of Abu Bakr al-Siddiq.\n\nShe embraced Islam at an early date.\n\nIbn Asim and al-Tabarani narrated, through a clear isnad, from Ibn Abbas, who said: “The mother of Abu Bakr, the mother of Uthman [4], the mother of al-Zubayr, the mother of Abd al-Rahman ibn Awf, and the mother of Ammar ibn Yasir embraced Islam.”\n\nAnother report was transmitted through an isnad consisting successively of members of Talha's family, as far as Muhammad ibn Imran ibn Talha, from al-Qasim ibn Muhammad, from Aisha. She said: “When Abu Bakr embraced Islam, he rose to deliver an address and called people to Allah and His Messenger. The polytheists rose against him and beat him ...”—to the end of the hadith. It includes his words to the Prophet (may Allah bless him and grant him peace): “O Messenger of Allah, this is my mother. Supplicate for her and invite her to Islam.” He supplicated for her and invited her, and she embraced Islam. This occurs in a long account which relates that, after he recovered from his faint, he asked about the Messenger of Allah (may Allah bless him and grant him peace). His mother said to him, “You do not know.” He said, “Ask Umm Jamil bint al-Khattab.” She went to her and asked her, and Umm Jamil came with her. He said, “You have nothing to fear from my mother.” She then told him that the Messenger of Allah was in the house of al-Arqam.\n\nThrough al-Haytham ibn Adi, al-Tabarani also narrated: “The mother of Abu Bakr al-Siddiq was Umm al-Khayr bint Sakhr. When Abu Bakr died, his two parents inherited from him. Umm al-Khayr died before Abu Quhafa, and both had embraced Islam.”\n\nTHE UNDOTTED LETTER DAL\n\nSECTION ONE",
+      "arabic_sha256": "f2d1719d94ac58857770c98951b6f7e09999365cb4da1ab6bb8b27a1e179e0f4",
+      "english_sha256": "88adced1f9d52bff5a2b4cdf000f61bfe0db07a11eccbfee278d42bbce1a10de",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم الخير بنت صخر بن عامر بن كعب بن سعد بن تيم بن مرة",
+      "english": "Umm al-Khayr bint Sakhr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الخير",
+      "english": "Umm al-Khayr bint Sakhr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم أبي بكر",
+      "english": "Umm al-Khayr bint Sakhr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم أبي بكر الصديق",
+      "english": "Umm al-Khayr bint Sakhr",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "التميمية",
+      "english": "Tamim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبي بكر الصديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عاصم",
+      "english": "Ibn Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عثمان",
+      "english": "Umm Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمار بن ياسر",
+      "english": "Umm Ammar ibn Yasir",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمران بن طلحة",
+      "english": "Muhammad ibn Imran ibn Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "القاسم بن محمد",
+      "english": "al-Qasim ibn Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جميل بنت الخطاب",
+      "english": "Umm Jamil bint al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "دار الأرقم",
+      "english": "House of al-Arqam",
+      "kind": "place"
+    },
+    {
+      "arabic": "الهيثم بن عدي",
+      "english": "al-Haytham ibn Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو قحافة",
+      "english": "Abu Quhafa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source-text uncertainty",
+      "arabic_span": "فقالت له أمّه: لا تدري",
+      "explanation": "The canonical wording literally has the mother say, “You do not know,” using a masculine-singular address. Context strongly suggests لا أدري, “I do not know,” but no supplied witness confirms that emendation. The final text therefore preserves the canonical literal reading.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0387:fcea5e14ed084782"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

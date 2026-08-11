@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011066",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11066,
+  "title": {
+    "english": "Humayna bint Abd al-Uzza,",
+    "arabic_observed": "حمينة بنت عبد العزّى ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011066-segment-0001",
+      "volume": 8,
+      "scan_page": 91,
+      "printed_page": 90,
+      "reader_page": 4003,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4003",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0091:d880b30f1b3c0a23",
+      "arabic": "١١٠٦٦- حمينة بنت عبد العزّى ،\nوقيل بالجيم، وقيل باللام- بدل النون مع الجيم- تقدمت.",
+      "english": "11066—Humayna bint Abd al-Uzza,\n\nIt is also said as Jumayna, with jim, and as Jumayla, with lam in place of the nun together with jim. She has appeared previously.",
+      "arabic_sha256": "428aa403917f9fe91a1a01d0a1cbd6764f3e8e1156ad4be7ced36b4a7c9a807c",
+      "english_sha256": "8c56f47468a0f25c472b9613dff612a822c84b5e727f58f4c67a10fff46db812",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حمينة بنت عبد العزى",
+      "english": "Humayna bint Abd al-Uzza",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

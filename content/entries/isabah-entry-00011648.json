@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011648",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11648,
+  "title": {
+    "english": "Qurrat al-Ayn bint Ubada",
+    "arabic_observed": "قرة العين بنت عبادة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011648-segment-0001",
+      "volume": 8,
+      "scan_page": 287,
+      "printed_page": 286,
+      "reader_page": 4199,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4199",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0287:f0d7af8c542e48ab",
+      "arabic": "١١٦٤٨- قرة العين بنت عبادة\nبن نضلة «١» بن مالك بن العجلان الأنصاريّة، من بني عوف بن الخزرج، والدة عبادة بن الصامت. ذكرها ابن الأثير.",
+      "english": "11648—Qurrat al-Ayn bint Ubada\nibn Nadla (1) ibn Malik ibn al-Ajlan, the Ansari woman of Banu Awf ibn al-Khazraj and the mother of Ubada ibn al-Samit. Ibn al-Athir mentioned her.",
+      "arabic_sha256": "30db74b23b0059c380607c641db2cf19ebbd8f1c9f57b0337602513e96834ddf",
+      "english_sha256": "6a8f521c22f19eede6f50eed1074d907c047ca60d4986ff2e5bd244af0f3a535",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بنو عوف بن الخزرج",
+      "english": "Banu Awf ibn al-Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عبادة بن الصامت",
+      "english": "Ubada ibn al-Samit",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011990",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11990,
+  "title": {
+    "english": "Umm Hakim bint Uqba ibn Abi Mu'ayt",
+    "arabic_observed": "أم حكيم بنت عقبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011990-segment-0001",
+      "volume": 8,
+      "scan_page": 382,
+      "printed_page": 381,
+      "reader_page": 4294,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4294",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0382:af85e6a8587fda16",
+      "arabic": "١١٩٩٠- أم حكيم بنت عقبة\nبن أبي معيط.\nقتل أبوها يوم بدر، وأسلمت أمها أروى يوم الفتح، وتزوجت من المطلب «٢» بن أبي البحتري بن هاشم «٣» بن المطلب الأسدي، فولدت له أمة اللَّه بنت المطلب، ذكر كل ذلك الزبير، ومقتضى ذلك أن تكون من الصحابة.",
+      "english": "11990—Umm Hakim bint Uqba ibn Abi Mu'ayt\n\nHer father was killed on the day of Badr, and her mother, Arwa, embraced Islam on the day of the Conquest. She married al-Muttalib(2) ibn Abi al-Bakhtari ibn Hashim(3) ibn al-Muttalib al-Asadi and bore him Amat Allah bint al-Muttalib. Al-Zubayr mentioned all of this, and its implication is that she was among the Companions.",
+      "arabic_sha256": "42d9add9ee856757791ecc01dbb7124f07fd0a42d98ad892e253a72a9a813b41",
+      "english_sha256": "aa0a568430d7d2c463f42f0fd03e24e61b792a23e4fa0d61f0b3184dbd4ab94b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "هاشم",
+      "english": "Hashim ibn Uqba ibn Abi Waqqas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم بنت عقبة بن أبي معيط",
+      "english": "Umm Hakim bint Uqba ibn Abi Mu'ayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "أروى",
+      "english": "Arwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفتح",
+      "english": "Conquest",
+      "kind": "other"
+    },
+    {
+      "arabic": "أمة اللَّه بنت المطلب",
+      "english": "Amat Allah bint al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

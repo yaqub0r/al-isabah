@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010947",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10947,
+  "title": {
+    "english": "Buhaysa al-Fazariyya: (3)",
+    "arabic_observed": "بهيسة الفزارية «٣»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010947-segment-0001",
+      "volume": 8,
+      "scan_page": 54,
+      "printed_page": 53,
+      "reader_page": 3966,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3966",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0054:5311063d7fb7053e",
+      "arabic": "١٠٩٤٧- بهيسة الفزارية «٣»:\nقال ابن حبان: لها صحبة، وقد تقدم بيان الاختلاف في الحديث الّذي روته في الكنى في ترجمة والدها، وهو أبو بهيسة، ولا قول ابن حبان بأن لها صحبة لما كان في الخبر ما يدلّ على صحبتها، لأنّ سياق ابن مندة أنّ أباها استأذن. وسياق أبي داود والنسائي عن أبيها أنه استأذن، وهو المعتمد.",
+      "english": "10947—Buhaysa al-Fazariyya: (3)\n\nIbn Hibban said: “She was a Companion.” The disagreement concerning the hadith she narrated was explained previously in the section on kunyas, in the biographical entry for her father, Abu Buhaysa. Were it not for Ibn Hibban's statement that she was a Companion, there would be nothing in the report to indicate her Companionship, because Ibn Manda's wording says that her father sought permission, while the wording of Abu Dawud and al-Nasa'i, from her father, likewise says that he sought permission; and this is the version relied upon.",
+      "arabic_sha256": "d54d546256bd4ca747285fc9c83f3b8d205bcf18d76981f715fe41758d3d5985",
+      "english_sha256": "3d54d21ee8841df0eb3ec6d2bbe53f49d9b2178d538bfa48deb40637f8232501",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بهيسة الفزارية",
+      "english": "Buhaysa al-Fazariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بهيسة",
+      "english": "Abu Buhaysa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

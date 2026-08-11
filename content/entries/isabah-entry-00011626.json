@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011626",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11626,
+  "title": {
+    "english": "Furay'a bint Qays al-Ansariyya:",
+    "arabic_observed": "فريعة بنت قيس الأنصاريّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011626-segment-0001",
+      "volume": 8,
+      "scan_page": 281,
+      "printed_page": 280,
+      "reader_page": 4193,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4193",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0281:80592b72a369a987",
+      "arabic": "١١٦٢٦- فريعة بنت قيس الأنصاريّة:\nمن بني جحجبى «٢»، ذكرها ابن إسحاق فيمن بايع النّبيّ ﵌.",
+      "english": "11626—Furay'a bint Qays al-Ansariyya:\nOf Banu Jahjaba.(2) Ibn Ishaq mentioned her among those who pledged allegiance to the Prophet—may Allah bless him and grant him peace.",
+      "arabic_sha256": "03079d39b4d112ad4e966b25e10eaf3650d2ca90d52cb9b562f375f96a337f76",
+      "english_sha256": "7199fba0f18df0e762784ee5598cf178b8a2056a5fb6e7207b923750ba74cb25",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "فريعة بنت قيس الأنصاريّة",
+      "english": "Furay'a bint Qays al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني جحجبى",
+      "english": "Banu Jahjaba",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

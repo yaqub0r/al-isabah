@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011584",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11584,
+  "title": {
+    "english": "Fari'a bint Malik",
+    "arabic_observed": "فارعة بنت مالك"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011584-segment-0001",
+      "volume": 8,
+      "scan_page": 262,
+      "printed_page": 261,
+      "reader_page": 4174,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4174",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0262:2e0630b1ec6b1b50",
+      "arabic": "١١٥٨٤- فارعة بنت مالك\nبن سنان الخدرية «٢» تأتي في الفريعة.",
+      "english": "11584—Fari'a bint Malik\n\nibn Sinan al-Khudriyya.² She will appear under al-Furay'a.",
+      "arabic_sha256": "4f4af2d8c1c03ee4f7cf518e1944c4e6b0ee507cf1972fd2f11553e9875dc12c",
+      "english_sha256": "8a795d6773be850bddf930f66b443d772e3013fdcf9e823b3ea392a31f80dd75",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الفريعة",
+      "english": "al-Furay'a bint Malik ibn Sinan al-Khudriyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

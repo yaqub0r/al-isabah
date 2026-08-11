@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011605",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11605,
+  "title": {
+    "english": "Fatima bint Alqama",
+    "arabic_observed": "فاطمة بنت علقمة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011605-segment-0001",
+      "volume": 8,
+      "scan_page": 277,
+      "printed_page": 276,
+      "reader_page": 4189,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4189",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0277:1180e1120e6b769b",
+      "arabic": "١١٦٠٥- فاطمة بنت علقمة\nبن عبد اللَّه بن أبي قيس، أم قهطم العامرية، هاجرت مع زوجها سليط بن عمرو إلى الحبشة، فولدت له سليط بن سليط، كذا سماها، وكناها ابن سعد، قال: وأمها عاتكة بنت أسعد بن عامر بن بياضة الخزاعية، وقال: [كانت قديما بمكة] «١»، وبايعت. وتقدم في ترجمة والدها أنها أم معظم، فذلك كنيتها.",
+      "english": "11605—Fatima bint Alqama\n\nibn Abd Allah ibn Abi Qays, Umm Qahtam al-Amiriyya. She emigrated with her husband, Sulayt ibn Amr, to Abyssinia, and bore him Sulayt ibn Sulayt. Ibn Sa'd gave her this name and this kunya. He said: “Her mother was Atika bint As'ad ibn Amir ibn Bayada al-Khuza'iyya.” He also said: “[She had been in Mecca from early times]”(1), and she pledged allegiance. It was stated above, in the biography of her father, that she was Umm Mu'azzam; that, then, was her kunya.",
+      "arabic_sha256": "55d7be2f663d7994b274efab438b4307a4a2fafd51012874d172308199f98ccb",
+      "english_sha256": "bfa97efe86082fc6755368010ce0a27e202818d8076b384e7f0be395a19081cd",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم قهطم",
+      "english": "Umm Qahtam",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليط بن عمرو",
+      "english": "Sulayt ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "سليط بن سليط",
+      "english": "Sulayt ibn Sulayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاتكة بنت أسعد بن عامر بن بياضة الخزاعية",
+      "english": "Atika bint As'ad ibn Amir ibn Bayada al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "أم معظم",
+      "english": "Umm Mu'azzam",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

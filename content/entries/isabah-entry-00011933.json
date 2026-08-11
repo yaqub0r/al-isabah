@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011933",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11933,
+  "title": {
+    "english": "Umm Jamil bint al-Jallas ibn Suwayd ibn al-Samit³ ibn Khalid ibn Atiyya, the Ansari woman of Banu Abd al-Ashhal",
+    "arabic_observed": "أم جميل بنت الجلاس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011933-segment-0001",
+      "volume": 8,
+      "scan_page": 369,
+      "printed_page": 368,
+      "reader_page": 4281,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4281",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0369:d66636798a2bba3b",
+      "arabic": "١١٩٣٣- أم جميل بنت الجلاس\nبن سويد بن الصّامت «٣» بن خالد بن عطيّة الأنصاريّة، من بني عبد الأشهل.\nقال ابن سعد: أسلمت وبايعت، وتزوّجها سالم بن عتبة بن سالم بن سلمة بن أميّة بن زيد.",
+      "english": "11933—Umm Jamil bint al-Jallas ibn Suwayd ibn al-Samit³ ibn Khalid ibn Atiyya, the Ansari woman of Banu Abd al-Ashhal\n\nIbn Sa'd said: “She embraced Islam and gave the pledge of allegiance. Salim ibn Utba ibn Salim ibn Salama ibn Umayya ibn Zayd married her.”",
+      "arabic_sha256": "f9d444c40fc85202ecb3651d8207ba3a231f2a319d536ef632e00f7f7ee2ff25",
+      "english_sha256": "5500c4696e58e1e8ec3f46d3ca4358ac2f8dd6bcbf0bcd8345eb556b9b5cceeb",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصاريّة",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني عبد الأشهل",
+      "english": "Banu Abd al-Ashhal",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سالم بن عتبة بن سالم بن سلمة بن أميّة بن زيد",
+      "english": "Salim ibn Utba ibn Salim ibn Salama ibn Umayya ibn Zayd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

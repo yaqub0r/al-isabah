@@ -1,0 +1,138 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010884",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10884,
+  "title": {
+    "english": "Anisa bint Khubayb,[1]",
+    "arabic_observed": "أنيسة بنت خبيب «١»،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010884-segment-0001",
+      "volume": 8,
+      "scan_page": 39,
+      "printed_page": 38,
+      "reader_page": 3951,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3951",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0039:257d47e9f650d81a",
+      "arabic": "١٠٨٨٤- أنيسة بنت خبيب «١»،\nبمعجمة وموحدتين مصغرا، ابن يساف بن عتبة بن عمرو بن خديج بن عامر بن جشم بن الحارث بن الخزرج الأنصارية.\nروت عن النبي ﷺ: روى عنها ابن أخيها خبيب بن عبد الرحمن بن خبيب بن يساف.\nقال ابن سعد: أسلمت وبايعت النبي ﷺ، وحجت معه. وقال ابن حبّان: لها صحبة. وقال ابن السكن وأبو عمر: تعد في أهل البصرة.\nقلت:\nحديثها عند أحمد، والنسائي، وابن خزيمة، ووقع لنا بعلو في مسند الطيالسي، وهو: كان بلال وابن أم مكتوم يؤذنان للنّبيّ ﷺ ... الحديث.\nوفي بعض طرقه: «إذا أذن ابن أمّ مكتوم فكلوا واشربوا، وإذا أذّن بلال فلا تأكلوا ولا تشربوا»، فإن كانت المرأة منا ليبقى من سحورها عندها شيء فتقول لبلال: أمهل حتى أفرغ من سحوري.\nوأخرج ابن سعد بسند صحيح، عن خبيب بن عبد الرحمن، عن عمته أنيسة، قالت:\nكن جواري الحي ينتهين بغنمهنّ إلى أبي بكر الصديق فيقول لهن: أتحبين أن أحلب لكم حلب ابن عفراء؟.\nووقع في «تهذيب الكمال»: يقال لها صحبة، وقد ذكرها في الصحابة عامة من صنف فيهم.",
+      "english": "10884—Anisa bint Khubayb,[1]\n\nKhubayb is spelled with a dotted kha and two ba's and is in the diminutive form. He was the son of Yasaf ibn Utba ibn Amr ibn Khadij ibn Amir ibn Jusham ibn al-Harith ibn al-Khazraj. She was an Ansari woman.\n\nShe narrated from the Prophet, may Allah bless him and grant him peace. Her brother's son, Khubayb ibn Abd al-Rahman ibn Khubayb ibn Yasaf, narrated from her.\n\nIbn Sa'd said: “She embraced Islam, pledged allegiance to the Prophet, may Allah bless him and grant him peace, and performed the pilgrimage with him.” Ibn Hibban said: “She was a Companion.” Ibn al-Sakan and Abu Umar said: “She is counted among the people of Basra.”\n\nI say:\n\nHer hadith is recorded by Ahmad, al-Nasa'i, and Ibn Khuzayma, and it reached us through a high chain of transmission in Musnad al-Tayalisi. It is: “Bilal and Ibn Umm Maktum used to give the call to prayer for the Prophet, may Allah bless him and grant him peace…”—the hadith.\n\nSome of its transmission routes have: “When Ibn Umm Maktum gives the call to prayer, eat and drink; but when Bilal gives the call to prayer, do not eat or drink.” If a woman among us still had something of her pre-dawn meal left, she would say to Bilal, “Wait until I finish my pre-dawn meal.”\n\nIbn Sa'd also related, with a sound chain, from Khubayb ibn Abd al-Rahman, from his paternal aunt Anisa, who said:\n\n“The girls of the clan would come with their sheep to Abu Bakr al-Siddiq, and he would say to them, ‘Would you like me to milk for you the way Ibn Afra does?’”\n\nIt appears in Tahdhib al-Kamal: “It is said that she was a Companion.” Everyone who compiled a work on the Companions mentioned her among them.",
+      "arabic_sha256": "d75c7339b8f4c04810ec9426a5d5ad0146658c8867cf1cbebf09e47f3227b77b",
+      "english_sha256": "a9b88409f035ba55906d9e1c629c3aa29415044f8afe3f68fba1babceb8406cb",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "خبيب بن عبد الرحمن بن خبيب بن يساف",
+      "english": "Khubayb ibn Abd al-Rahman ibn Khubayb ibn Yasaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "البصرة",
+      "english": "Basra",
+      "kind": "place"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن خزيمة",
+      "english": "Ibn Khuzayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند الطيالسي",
+      "english": "Musnad al-Tayalisi",
+      "kind": "work"
+    },
+    {
+      "arabic": "بلال",
+      "english": "Bilal",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أم مكتوم",
+      "english": "Ibn Umm Maktum",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر الصديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عفراء",
+      "english": "Ibn Afra",
+      "kind": "person"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "allusion",
+      "arabic_span": "حلب ابن عفراء",
+      "explanation": "The literal comparison is clear enough to translate, but the precise referent and any special idiomatic implication of “Ibn Afra's milking” cannot be established from the supplied witnesses. The final text therefore preserves the comparison without explanatory expansion.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0039:257d47e9f650d81a"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010835",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10835,
+  "title": {
+    "english": "Umama al-Muridiyya",
+    "arabic_observed": "أمامة المريدية"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010835-segment-0001",
+      "volume": 8,
+      "scan_page": 28,
+      "printed_page": 27,
+      "reader_page": 3940,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3940",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0028:9f9c9401b3f90f85",
+      "arabic": "١٠٨٣٥- أمامة المريدية\nذكر لها ابن هشام في زيادات السيرة النبويّة شعرا في قصة قتل أبي عفك، بفتح المهملة والفاء الخفيفة المنافق، وكان قد أظهر نفاقه،\nفقال رسول اللَّه ﷺ: «ومن لي بهذا الخبيث»؟\nفخرج سالم بن عمير أحد بني عمرو بن عوف فقتله، فقالت أمامة المريدية في ذلك:\nتكذّب دين اللَّه والمرء أحمدا ... لعمر الّذي أمناك أن بئس ما يمني\nحباك حنيف آخر الدّهر طعنة ... أبا عفك خذها على كبر السّنّ\n[الطويل] واستدركها ابن فتحون.",
+      "english": "10835—Umama al-Muridiyya\n\nIbn Hisham, in his additions to the Prophetic Biography, cited poetry by her concerning the killing of Abu 'Afak—with an a-vowel on the undotted ayn and an ungeminated fa—the hypocrite. He had openly manifested his hypocrisy, so the Messenger of Allah, may Allah bless him and grant him peace, said: “Who will deal with this vile man for me?”\n\nSalim ibn Umayr, one of Banu Amr ibn Awf, went out and killed him. Umama al-Muridiyya said concerning that:\n\nYou declare the religion of Allah and the man Ahmad false;\nBy the life of Him who brought you forth, evil indeed is what He ordains.\nA Hanif dealt you a thrust to last till the end of time—\nO Abu 'Afak, take it in your old age!\n\n[al-Tawil meter]\n\nIbn Fathun added her as an omitted entry.",
+      "arabic_sha256": "12f521c220b15a63dac0259e3207d92c7108eef935b756ba6cb8a1e18d725d21",
+      "english_sha256": "934b4b9824a3b70775a9fad1538b78e9345b3d14d932904063d8d0ec785a88da",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أمامة المريدية",
+      "english": "Umama al-Muridiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن هشام",
+      "english": "Ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "السيرة النبويّة",
+      "english": "Prophetic Biography",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عفك",
+      "english": "Abu 'Afak",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "سالم بن عمير",
+      "english": "Salim ibn Umayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو عمرو بن عوف",
+      "english": "Banu Amr ibn Awf",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطويل",
+      "english": "al-Tawil",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن فتحون",
+      "english": "Ibn Fathun",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة",
+      "english": "Umama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011319",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11319,
+  "title": {
+    "english": "Salma bint Abi Rahm",
+    "arabic_observed": "سلمى بنت أبي رهم"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011319-segment-0001",
+      "volume": 8,
+      "scan_page": 185,
+      "printed_page": 184,
+      "reader_page": 4097,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4097",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0185:5f22dcc716a75836",
+      "arabic": "١١٣١٩- سلمى بنت أبي رهم\nالقرشية التيمية، يقال هو اسم أم مسطح. تأتي في الكنى.",
+      "english": "11319—Salma bint Abi Rahm\n\nThe Qurashi Taymi woman. It is said that this was the name of Umm Mistah. She will appear among the kunyahs.",
+      "arabic_sha256": "ee65fdfe860eef9e02d9b680b9d0b76a4b052a45047ebd8a33e2bdab44ca618b",
+      "english_sha256": "63adb926d30da6684332d26705b95da94e9a333b7cee94d226fe6022b73d1140",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم مسطح",
+      "english": "Umm Mistah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011326",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11326,
+  "title": {
+    "english": "Salma bint Muhriz ibn 'Amir al-Ansariyya¹",
+    "arabic_observed": "سلمى بنت محرز"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011326-segment-0001",
+      "volume": 8,
+      "scan_page": 187,
+      "printed_page": 186,
+      "reader_page": 4099,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4099",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0187:4faeefa7de874ae2",
+      "arabic": "١١٣٢٦- سلمى بنت محرز\nبن عامر الأنصارية «١»، من بني عدي بن النجار.\nذكرها ابن حبيب فيمن بايع النبي ﷺ.",
+      "english": "11326- Salma bint Muhriz ibn 'Amir al-Ansariyya¹\n\nShe was of Banu 'Adi ibn al-Najjar.\n\nIbn Habib mentioned her among those who pledged allegiance to the Prophet—may Allah bless him and grant him peace.",
+      "arabic_sha256": "03008913a5cab03c453ced6a0d750e69bb9192fc0a45e728aee8c4322fb66872",
+      "english_sha256": "1eaa995ff7f445bb363e873e0d94d36bccdf1da17ade807f54cbac775e5dae6e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سلمى بنت محرز بن عامر الأنصارية",
+      "english": "Salma bint Muhriz ibn 'Amir al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو عدي بن النجار",
+      "english": "Banu 'Adi ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

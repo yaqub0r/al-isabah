@@ -1,0 +1,200 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010814",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10814,
+  "title": {
+    "english": "Asma bint Marthad¹",
+    "arabic_observed": "أسماء بنت مرثد «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010814-segment-0001",
+      "volume": 8,
+      "scan_page": 19,
+      "printed_page": 18,
+      "reader_page": 3931,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3931",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0019:beee8b7888e4c257",
+      "arabic": "١٠٨١٤- أسماء بنت مرثد «١»\n، من بني حارثة.\nذكرها أبو عمر، وقال: لا يصح حديثها. انفرد به حرام بن عثمان، وهو ضعيف عند جميعهم، ووصله إسماعيل بن إسحاق القاضي في أحكامه، من طريق الدّراوردي،\nوابن مندة، من طريق إبراهيم بن طهمان كلاهما عن حرام بن عثمان، عن عبد الرحمن ومحمد ابني جابر، وأبي عتيق بن عبد اللَّه، عن جابر بن عبد اللَّه: جاءت أسماء بنت مرثد أخت بني حارثة إلى رسول اللَّه ﷺ، فقالت: يا رسول اللَّه، إنّي تحدث لي حيضة أمكث ثلاثا أو أربعا بعد أن أطهر، ثم ترجع، فتحرم عليّ الصلاة، فقال: «إذا رأيت ذلك فامكثي ثلاثا ثمّ تطهّري وصلّي» «٢» .\nقلت: وذكر ابن سعد في الطبقات أسماء بنت مرثدة، بزيادة هاء، ابن جبير بن مالك بن حويرثة بن خارجة، وقال أمها سلامة بنت مسعود، وقال: تزوجها الضحاك بن خليفة، فولدت له ثابتا، وأبا بكر، وأبا حسن، وعمر، وثبيتة، وبكرة، وحمادة وصفيّة، وتزوج محمد بن سلمة ثبيتة، قال: وأسلمت أسماء وبايعت.\nقلت: يظهر إلي أنها التي ذكرت في حديث جابر، ويحتمل أن تكون غيرها.\n(١) أسد الغابة: ت ٦٧١٥، الاستيعاب: ت ٣٢٧٦.\n(٢) قال ابن معين الحديث عن حرام حرام، وقال الشافعيّ الرواية عن حرام حرام، وقال ابن حبان: كان غاليا في التشيع يقلب الأسانيد ويرفع المراسيل الميزان ١/ ٤٦٨.",
+      "english": "10814—Asma bint Marthad¹\n\nOf Banu Haritha.\n\nAbu Umar mentioned her and said: “Her hadith is not sound. Haram ibn Uthman alone transmitted it, and all of them regarded him as weak.” Ismail ibn Ishaq al-Qadi transmitted it with a connected chain in his Ahkam by way of al-Darawardi, and Ibn Manda transmitted it by way of Ibrahim ibn Tahman, both of them transmitting from Haram ibn Uthman, from Abd al-Rahman and Muhammad, the two sons of Jabir, and Abu Atiq ibn Abd Allah, from Jabir ibn Abd Allah: Asma bint Marthad, a woman of Banu Haritha, came to the Messenger of Allah (may Allah bless him and grant him peace) and said, “O Messenger of Allah, I experience a menstrual period: after I become pure, I remain so for three or four days, and then it returns, making prayer forbidden to me.” He said, “When you see that, wait three days, then purify yourself and pray.”²\n\nI say: In al-Tabaqat, Ibn Sa'd mentioned Asma bint Marthada—with an added ha—ibn Jubayr ibn Malik ibn Huwayritha ibn Kharija. He said that her mother was Salama bint Mas'ud. He also said that al-Dahhak ibn Khalifa married her, and she bore him Thabit, Abu Bakr, Abu Hasan, Umar, Thubayta, Bakra, Hamada, and Safiyya. Muhammad ibn Salama married Thubayta. He said: “Asma accepted Islam and pledged allegiance.”\n\nI say: It appears to me that she is the woman mentioned in the hadith of Jabir, though it is possible that she was someone else.\n\n(1) Usd al-Ghaba, entry 6715; al-Isti'ab, entry 3276.\n\n(2) Ibn Ma'in said, “Hadith from Haram is haram.” al-Shafi'i said, “Narration from Haram is haram.” Ibn Hibban said: “He was an extremist in Shiism who inverted isnads and elevated mursal reports.” al-Mizan, 1/468.",
+      "arabic_sha256": "674a2ebaa5f9fe557dc8654d1032954c5e13e9f43093cf3784c6a33b969e9f26",
+      "english_sha256": "d94355705ed33f04e24b162fb27e6f508fa60260abb222fc8e04f3ff5f5e273e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول الله ﷺ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت مرثد",
+      "english": "Asma bint Marthad",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو حارثة",
+      "english": "Banu Haritha",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "حرام بن عثمان",
+      "english": "Haram ibn Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسماعيل بن إسحاق القاضي",
+      "english": "Ismail ibn Ishaq al-Qadi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحكامه",
+      "english": "Ahkam",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدراوردي",
+      "english": "al-Darawardi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن طهمان",
+      "english": "Ibrahim ibn Tahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عتيق بن عبد الله",
+      "english": "Abu Atiq ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر بن عبد الله",
+      "english": "Jabir ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبقات",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "سلامة بنت مسعود",
+      "english": "Salama bint Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "الضحاك بن خليفة",
+      "english": "al-Dahhak ibn Khalifa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت",
+      "english": "Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو حسن",
+      "english": "Abu Hasan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثبيتة",
+      "english": "Thubayta",
+      "kind": "person"
+    },
+    {
+      "arabic": "بكرة",
+      "english": "Bakra",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمادة",
+      "english": "Hamada",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية",
+      "english": "Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن سلمة",
+      "english": "Muhammad ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن معين",
+      "english": "Ibn Ma'in",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشافعي",
+      "english": "al-Shafi'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "الميزان",
+      "english": "al-Mizan",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

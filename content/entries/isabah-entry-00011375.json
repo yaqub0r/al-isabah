@@ -1,0 +1,143 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011375",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11375,
+  "title": {
+    "english": "Sharaf, sister of Dihya ibn Khalifa al-Kalbi [2]",
+    "arabic_observed": "شراف أخت دحية بن خليفة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011375-segment-0001",
+      "volume": 8,
+      "scan_page": 201,
+      "printed_page": 200,
+      "reader_page": 4113,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4113",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0201:c7a4dbbc6edd6f93",
+      "arabic": "١١٣٧٥- شراف أخت دحية بن خليفة\nالكلبي «٢» .\nأخرج الطّبرانيّ، وأبو نعيم عنه، من طريق جابر الجعفي، عن ابن أبي مليكة، قال: خطب رسول اللَّه ﷺ امرأة من بني كلب، فبعث عائشة تنظر إليها فذهبت ثم رجعت، فقالت: ما رأيت طائلا. فقال لها رسول اللَّه ﷺ: «أقد رأيت خالا عندها اقشعرّت كلّ شعرة منك»؟ فقالت: ما دونك سر «٣» .\nأورده أبو موسى في «الذّيل» في ترجمة شراف، وقال: قيل إنّ رسول اللَّه ﷺ تزوّجها ولم يدخل بها، وبذلك جزم ابن عبد البر.\nقلت: وقد ورد التصريح بذكرها عند ابن سعد، عن هشام بن الكلبي، عن شرقي بن القطامي، قال: لما هلكت خولة بنت الهذيل تزوّج رسول اللَّه ﷺ شراف بنت خليفة أخت دحية، ولم يدخل بها، ثم أخرج أثر عائشة المذكور عن محمد بن عمر، عن الثوري، عن جابر الجعفي، به.",
+      "english": "11375. Sharaf, sister of Dihya ibn Khalifa al-Kalbi [2]\n\nAl-Tabarani transmitted, and Abu Nu'aym transmitted from al-Tabarani, by way of Jabir al-Ju'fi, from Ibn Abi Mulayka, who said: The Messenger of Allah (may Allah bless him and grant him peace) proposed marriage to a woman of Banu Kalb and sent Aisha to look at her. She went and then returned, saying, “I saw nothing of consequence.” The Messenger of Allah (may Allah bless him and grant him peace) said to her, “Did you indeed see a mole on her at which every hair on you bristled?” She replied, “No secret is hidden from you.” [3]\n\nAbu Musa included her in al-Dhayl, in the biographical notice of Sharaf, and said: It is said that the Messenger of Allah (may Allah bless him and grant him peace) married her but did not consummate the marriage with her. Ibn Abd al-Barr stated this categorically.\n\nI say: She is explicitly mentioned in the report given by Ibn Sa'd, from Hisham ibn al-Kalbi, from Sharqi ibn al-Qutami, who said: When Khawla bint al-Hudhayl died, the Messenger of Allah (may Allah bless him and grant him peace) married Sharaf bint Khalifa, the sister of Dihya, but did not consummate the marriage with her. He then transmitted the aforementioned report of Aisha from Muhammad ibn Umar, from al-Thawri, from Jabir al-Ju'fi, with the same report.",
+      "arabic_sha256": "092759184c1bc489e61c1c21e5fffc129107c292225c0e40e374580f80b1b3f1",
+      "english_sha256": "f123bd0d94373b931f3559900907896a206af5c2dc3f734a250462f9656328fb",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "شراف بنت خليفة",
+      "english": "Sharaf bint Khalifa",
+      "kind": "person"
+    },
+    {
+      "arabic": "دحية بن خليفة الكلبي",
+      "english": "Dihya ibn Khalifa al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطّبرانيّ",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر الجعفي",
+      "english": "Jabir al-Ju'fi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي مليكة",
+      "english": "Ibn Abi Mulayka",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني كلب",
+      "english": "Banu Kalb",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبد البر",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن الكلبي",
+      "english": "Hisham ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "شرقي بن القطامي",
+      "english": "Sharqi ibn al-Qutami",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت الهذيل",
+      "english": "Khawla bint al-Hudhayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمر",
+      "english": "Muhammad ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثوري",
+      "english": "al-Thawri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذّيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "شراف",
+      "explanation": "The canonical text and supplied Urdu and collateral Arabic witnesses are unvocalized. Sharaf is retained provisionally, but the exact historical vocalization cannot be established from the supplied evidence.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0201:c7a4dbbc6edd6f93"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

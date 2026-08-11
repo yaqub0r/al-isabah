@@ -1,0 +1,83 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010802",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10802,
+  "title": {
+    "english": "Asma bint Sumayy",
+    "arabic_observed": "أسماء بنت سميّ"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010802-segment-0001",
+      "volume": 8,
+      "scan_page": 13,
+      "printed_page": 12,
+      "reader_page": 3925,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3925",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0013:ecc36648d856b02e",
+      "arabic": "١٠٨٠٢- أسماء بنت سميّ\nذكرها مسدّد في مسندة، وقال: حدثنا يحيى القطان، عن أبي مسكين: سمعت أبا محلم يقول: قال رسول اللَّه ﷺ: «خيّرت أسماء بنت سميّ أيّ أزواجك تختارين»؟ قالت:\nأختار فلانا المتوفى عنها، وكان أحسنهم خلقا، وقد كان قتل عنها اثنان.\nهذا مرسل حسن الإسناد، فيضمّ هذا الخبر إلى ذكر من حدّث عن النبيّ ﷺ من الصحابة. والمشهور أن ذلك من خصائص تميم الداريّ، وقد وقع مثله لجماعة غيره.",
+      "english": "10802 — Asma bint Sumayy\n\nMusaddad mentioned her in his Musnad and said: Yahya al-Qattan related to us, from Abu Miskin, who said: I heard Abu Mihlam say: The Messenger of Allah, may Allah bless him and grant him peace, said, “Asma bint Sumayy was given the choice: ‘Which of your husbands do you choose?’” She replied, “I choose so-and-so, who died leaving me a widow, for he was the best of them in character.” Two had been killed while married to her.\n\nThis is a mursal report with a hasan chain of transmission. This report should therefore be added to the notices of those Companions who narrated from the Prophet, may Allah bless him and grant him peace. The well-known view is that this was one of the distinctive privileges of Tamim al-Dari, although something similar occurred to a number of others besides him.",
+      "arabic_sha256": "0a1b5e0f8bea1689c9c248b008057e39c9e232dd2836296fc6a4fbece52d1ef0",
+      "english_sha256": "a4951796aeb9b38a7b92e8da042cf2bcb1617c018e1c95b1f695e734aeea8d48",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "مسدّد",
+      "english": "Musaddad",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى القطان",
+      "english": "Yahya al-Qattan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو مسكين",
+      "english": "Abu Miskin",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو محلم",
+      "english": "Abu Mihlam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت سميّ",
+      "english": "Asma bint Sumayy",
+      "kind": "person"
+    },
+    {
+      "arabic": "تميم الداريّ",
+      "english": "Tamim al-Dari",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization_and_identity",
+      "arabic_span": "أبا محلم",
+      "explanation": "The consonantal reading Abu M-h-l-m is supported by the canonical Arabic and Urdu witness, but neither determines its precise vocalization. “Abu Mihlam” is retained provisionally. An exact parallel attributed to Musaddad instead names Abu Mijlaz, but collateral evidence is insufficient to replace the canonical reading.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0013:ecc36648d856b02e"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

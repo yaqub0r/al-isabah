@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010820",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10820,
+  "title": {
+    "english": "Umama bint Bishr",
+    "arabic_observed": "أمامة بنت بشر"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010820-segment-0001",
+      "volume": 8,
+      "scan_page": 23,
+      "printed_page": 22,
+      "reader_page": 3935,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3935",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0023:246082fad1c8a476",
+      "arabic": "١٠٨٢٠- أمامة بنت بشر\nبن وقش «٣» الأنصارية، أخت عباد بن بشر» .\nأسلمت وبايعت، قاله ابن سعد عن الواقدي، قال: وأمها فاطمة بنت بشر بن عدي الخزرجية، وزوجها محمود بن مسلمة، ويقال: إنها والدة علي بن أسد بن عبيدة بن سعيد.",
+      "english": "10820 — Umama bint Bishr\n\nibn Waqsh [3], al-Ansariyya, the sister of 'Abbad ibn Bishr. [4]\n\nShe embraced Islam and pledged allegiance, according to Ibn Sa'd on the authority of al-Waqidi. He said: Her mother was Fatima bint Bishr ibn 'Adi al-Khazrajiyya, and her husband was Mahmud ibn Maslama. It is also said that she was the mother of 'Ali ibn Asad ibn 'Ubayda ibn Sa'id.",
+      "arabic_sha256": "63ac5078d2d5494e130a1f9b758682759b72a7346e721f60c5ced44be683ec8f",
+      "english_sha256": "fcef1b19b8b2f7ede6c8d2079e6c64fff49742e5d846a6214b062a68c3d806d6",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عباد بن بشر",
+      "english": "'Abbad ibn Bishr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت بشر بن عدي الخزرجية",
+      "english": "Fatima bint Bishr ibn 'Adi al-Khazrajiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمود بن مسلمة",
+      "english": "Mahmud ibn Maslama",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن أسد بن عبيدة بن سعيد",
+      "english": "'Ali ibn Asad ibn 'Ubayda ibn Sa'id",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

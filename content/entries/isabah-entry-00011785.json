@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011785",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11785,
+  "title": {
+    "english": "Maimuna:",
+    "arabic_observed": "ميمونة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011785-segment-0001",
+      "volume": 8,
+      "scan_page": 328,
+      "printed_page": 327,
+      "reader_page": 4240,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4240",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0328:d15deffd16b2a0ef",
+      "arabic": "١١٧٨٥- ميمونة:\nخادم النّبي ﵌ «٢»، تقدمت في التي قبلها.",
+      "english": "11785 — Maimuna:\n\nA servant of the Prophet—may Allah bless him and grant him peace.(2) She was discussed under the preceding entry.",
+      "arabic_sha256": "8b1dcef5feefb6f8410f9b5717f9e62a1e7fb55def24cb34285eceb15112a85a",
+      "english_sha256": "c227867cc112493c86ed6fa43d3e60bce2f51900e4a00288a2f46fc865a6fbd4",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ميمونة",
+      "english": "Maimuna",
+      "kind": "person"
+    },
+    {
+      "arabic": "النّبي",
+      "english": "the Prophet",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

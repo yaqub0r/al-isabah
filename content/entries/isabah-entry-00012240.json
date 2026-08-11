@@ -1,0 +1,197 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012240",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12240,
+  "title": {
+    "english": "Umm Layla:",
+    "arabic_observed": "أم ليلى:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012240-segment-0001",
+      "volume": 8,
+      "scan_page": 468,
+      "printed_page": 467,
+      "reader_page": 4380,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4380",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0468:6873621a0a045281",
+      "arabic": "١٢٢٤٠- أم ليلى:\nبنت رواحة الأنصاريّة «١» .\nامرأة أبي ليلى، ووالدة عبد الرّحمن بن أبي ليلى. قال أبو عمر: كانت من المبايعات، وحديثها عند أهل بيتها من الكوفيين.\nقلت:\nأخرجه ابن مندة، من طريق محمد بن عمران بن محمد بن أبي ليلى، عن عمّته حمادة بنت محمد بن أبي ليلى، عن جدّتها أم ليلى، قالت: بايعنا رسول اللَّه ﵌، فكان فيما أخذ علينا أن نختضب الغمس «٢» ونمتشط بالعسل، ولا نقحل أيدينا من خضاب «٣» .\nوبإسناده: «لا تتشبّهن بالرّجال» .\nومن طريق حازم بن محمد الغفاريّ، عن أمه حمادة بنت محمد بن عبد الرّحمن بن\n(١) أسد الغابة ت (٧٥٨٧)، الاستيعاب ت (٣٦٦٥)، الثقات ٣/ ٤٦٥. أعلام النساء ٤/ ٣٠٠- تجريد أسماء الصحابة ٢/ ٣٣٣- الاستبصار ٣٥٧- تلقيح فهوم أهل الأثر ٣٧٩- بقي بن مخلد ٣٥٩.\n(٢) اختضبت المرأة غمسا: غمست يديها خضابا مستويا من غير تصوير. اللسان ٥/ ٣٢٩٧.\n(٣) أورده الهيثمي في الزوائد ٥/ ١٧٤ وقال رواه الطبراني في الأوسط والكبير بإسناد واحد على مرتين وفي إسناده من لم أعرفه بايعنا رسول اللَّه وأن رسول اللَّه دعا له ومسح صدره.",
+      "english": "12240—Umm Layla:\n\nbint Rawaha al-Ansariyya.¹\n\nShe was the wife of Abu Layla and the mother of Abd al-Rahman ibn Abi Layla. Abu Umar said: “She was among the women who pledged allegiance, and her hadith is preserved among her Kufan household.”\n\nI say:\n\nIbn Manda transmitted it through the route of Muhammad ibn Imran ibn Muhammad ibn Abi Layla, from his paternal aunt Hammada bint Muhammad ibn Abi Layla, from her grandmother Umm Layla, who said: “We pledged allegiance to the Messenger of Allah (peace and blessings be upon him). Among the obligations he imposed upon us were that we dye our hands by immersion², comb our hair with honey, and not leave our hands bare of dye.³”\n\nWith the same isnad: “Do not imitate men.”\n\nAnd through the route of Hazim ibn Muhammad al-Ghifari, from his mother Hammada bint Muhammad ibn Abd al-Rahman ibn\n\n¹ Usd al-Ghaba, entry (7587); al-Isti'ab, entry (3665); al-Thiqat 3/465; A'lam al-Nisa' 4/300; al-Tajrid 2/333; al-Istibsar 357; Talqih Fuhum Ahl al-Athar 379; Baqi ibn Makhlad 359.\n\n² “A woman dyed her hands by immersion” means that she immersed her hands in dye evenly, without making designs. Al-Lisan 5/3297.\n\n³ Al-Haythami included it in al-Zawa'id 5/174 and said: “Al-Tabarani narrated it in al-Awsat and al-Kabir with a single isnad, on two occasions, and in its isnad is someone whom I did not recognize.” [The note as printed then appends the disconnected phrases “We pledged allegiance to the Messenger of Allah” and “that the Messenger of Allah supplicated for him and wiped his chest.”]",
+      "arabic_sha256": "91002e4fba19f8c972f01274718e300d6e816e0a6532a9b8815b2a246c633223",
+      "english_sha256": "96659184873a2f9a219a03b94f06afa4624c3b3d08683bc5475d06e54f0b0442",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012240-segment-0002",
+      "volume": 8,
+      "scan_page": 469,
+      "printed_page": 468,
+      "reader_page": 4381,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4381",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0469:1695442206316095",
+      "arabic": "أبي ليلى، وكانت أكبر ولد محمد: سمعت عمتي تقول: أدركت أم ليلى وهي تخضب يديها ورجليها بحمية وتقول: على هذا بايعنا رسول اللَّه ﵌ ... الحديث.\nوأخرج الطّبرانيّ الحديث الأول في الأوسط، وقال: لا يروى عن أم ليلى إلا بهذا الإسناد. تفرد به محمد بن عمران.\nقلت: ويرد عليه الحديث الّذي خرجه ابن مندة كما ترى.\nالقسم الثاني والثالث وكذا الرابع\nخالية.\nحرف الميم\nالقسم الأول",
+      "english": "Abi Layla—and she was the eldest of Muhammad's children: “I heard my paternal aunt say: I lived to see Umm Layla dyeing her hands and feet with zeal and saying, ‘Upon this we pledged allegiance to the Messenger of Allah (may Allah bless him and grant him peace) …’” to the end of the hadith.\n\nal-Tabarani transmitted the first hadith in al-Awsat and said: “It is not narrated from Umm Layla except through this chain of transmission. Muhammad ibn Imran alone transmitted it.”\n\nI say: This is contradicted by the hadith transmitted by Ibn Manda, as you can see.\n\nTHE SECOND AND THIRD SECTIONS, AND LIKEWISE THE FOURTH\n\nAre empty.\n\nTHE LETTER MIM\n\nTHE FIRST SECTION",
+      "arabic_sha256": "9f9fedcc16418cc967efdefda706503c4322d54bd4c91e2de8dbbc563154166f",
+      "english_sha256": "b3ebfebe143a2604baa7f726a0ae6af09b9eb90e93a67079850725c2f1c96112",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي ليلى",
+      "english": "Abu Layla",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرّحمن بن أبي ليلى",
+      "english": "Abd al-Rahman ibn Abi Layla",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكوفيين",
+      "english": "Kufa",
+      "kind": "place"
+    },
+    {
+      "arabic": "محمد بن عمران بن محمد بن أبي ليلى",
+      "english": "Muhammad ibn Imran ibn Muhammad ibn Abi Layla",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمادة بنت محمد بن أبي ليلى",
+      "english": "Hammada bint Muhammad ibn Abi Layla",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "حازم بن محمد الغفاريّ",
+      "english": "Hazim ibn Muhammad al-Ghifari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللسان",
+      "english": "al-Lisan",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأوسط",
+      "english": "al-Awsat",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم ليلى",
+      "english": "Umm Layla",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأوس",
+      "english": "Aws",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "footnote_textual_discontinuity",
+      "arabic_span": "بايعنا رسول اللَّه وأن رسول اللَّه دعا له ومسح صدره",
+      "explanation": "The evidence establishes that these words are not part of al-Haythami's quoted evaluation, but it does not establish where the two appended report fragments originally belonged. They are therefore preserved without a new attribution.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0468:6873621a0a045281"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

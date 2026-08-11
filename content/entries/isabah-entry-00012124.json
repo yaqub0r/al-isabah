@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012124",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12124,
+  "title": {
+    "english": "Umm Amir bint Sa'id ibn al-Sakan (1),",
+    "arabic_observed": "أم عامر بنت سعيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012124-segment-0001",
+      "volume": 8,
+      "scan_page": 426,
+      "printed_page": 425,
+      "reader_page": 4338,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4338",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0426:6633b99d43784c8a",
+      "arabic": "١٢١٢٤- أم عامر بنت سعيد\nبن السّكن «١»، بنت عم أسماء بنت يزيد بن السّكن الأشهليّة. ذكرها ابن مندة، وذكر لها حديث العرق الآتي قريبا، ولكن ليس فيه نسبها، إنما فيه عن أم عامر حسب.",
+      "english": "12124 — Umm Amir bint Sa'id ibn al-Sakan (1),\n\nthe paternal cousin of Asma bint Yazid ibn al-Sakan al-Ashhaliyya. Ibn Manda mentioned her and attributed to her the hadith concerning the meat-bearing bone that will appear shortly. Her lineage, however, is not given in that report; it says only, “from Umm Amir.”",
+      "arabic_sha256": "27b9651880158c308f77235266cdd9a823c007cebce214acb12239752f5bc94e",
+      "english_sha256": "2989d2fb63cf7d9fa3aee7fcedd44937589b28918eed555520827abed50a7be6",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم عامر بنت سعيد بن السّكن",
+      "english": "Umm Amir bint Sa'id ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت يزيد بن السّكن الأشهليّة",
+      "english": "Asma bint Yazid ibn al-Sakan al-Ashhaliyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد",
+      "english": "Yazid",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

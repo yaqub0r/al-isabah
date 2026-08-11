@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011251",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11251,
+  "title": {
+    "english": "Zaynab bint Qays² ibn Makhrama³ ibn Abd Manaf, the Qurashi woman of the Muttalib clan.",
+    "arabic_observed": "زينب بنت قيس «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011251-segment-0001",
+      "volume": 8,
+      "scan_page": 163,
+      "printed_page": 162,
+      "reader_page": 4075,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4075",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0163:e40af4ae4170ccd3",
+      "arabic": "١١٢٥١- زينب بنت قيس «٢»\nبن مخرمة «٣» بن عبد مناف القرشية المطلبية.\nأخرج الطّبرانيّ، وابن مندة، من طريق إسماعيل بن عبد الرحمن السّديّ، عن أبيه، قال: كاتبتني زينب بنت قيس بن مخرمة بعشرة آلاف، فتركت لي ألفا، وكانت زينب قد صلت القبلتين مع رسول اللَّه ﷺ.",
+      "english": "11251—Zaynab bint Qays² ibn Makhrama³ ibn Abd Manaf, the Qurashi woman of the Muttalib clan.\n\nAl-Tabarani and Ibn Manda transmitted, by way of Ismail ibn Abd al-Rahman al-Suddi, from his father, who said: “Zaynab bint Qays ibn Makhrama entered into a manumission contract with me for ten thousand, and she remitted one thousand for me. Zaynab had prayed toward both qiblas with the Messenger of Allah, may Allah bless him and grant him peace.”",
+      "arabic_sha256": "6637c73f3f4693bdac7b399269cb8613e0e4d06e5d8ed0dba8ff98411d435df0",
+      "english_sha256": "875715700505201452010fcc02d31a76de7e234503ad6143bf9640fd99c82955",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "المطلبية",
+      "english": "Banu al-Muttalib",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسماعيل بن عبد الرحمن السدي",
+      "english": "Ismail ibn Abd al-Rahman al-Suddi",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

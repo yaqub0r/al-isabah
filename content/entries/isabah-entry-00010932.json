@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010932",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10932,
+  "title": {
+    "english": "Burayda bint Bishr ibn al-Harith",
+    "arabic_observed": "بريدة بنت بشر بن الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010932-segment-0001",
+      "volume": 8,
+      "scan_page": 50,
+      "printed_page": 49,
+      "reader_page": 3962,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3962",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0050:12c822ca7d9d3ce6",
+      "arabic": "١٠٩٣٢- بريدة بنت بشر بن الحارث\nبن عمرو بن حارثة «٢»: كانت عند عباد بن سهل بن إساف، فولدت له إبراهيم بن عباد. ذكرها محمد بن حبيب فيمن بايع النبيّ ﷺ.\n(١) الاستيعاب ت ٣٣٠٠.\n(٢) أسد الغابة: ت ٦٧٧٦.",
+      "english": "10932—Burayda bint Bishr ibn al-Harith\nibn Amr ibn Haritha:(2) She was married to Abbad ibn Sahl ibn Isaf and bore him Ibrahim ibn Abbad. Muhammad ibn Habib mentioned her among the women who pledged allegiance to the Prophet, may Allah bless him and grant him peace.\n\n(1) al-Isti'ab, biography no. 3300.\n\n(2) Usd al-Ghaba, biography no. 6776.",
+      "arabic_sha256": "f7f3bb26999ff90a3b70425af89e2bea0382e2894f4d8b2fd656f56bde7119b7",
+      "english_sha256": "35f42ce1d53fa5fc1273a5d3a497ecb709a51c4479ff64803f733dfa22e94525",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "محمد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "إبراهيم",
+      "english": "Ibrahim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "عباد بن سهل بن إساف",
+      "english": "Abbad ibn Sahl ibn Isaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن عباد",
+      "english": "Ibrahim ibn Abbad",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن حبيب",
+      "english": "Muhammad ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

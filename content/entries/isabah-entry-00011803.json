@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011803",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11803,
+  "title": {
+    "english": "Na'ila bint 'Ubayd ibn al-Hurr ibn 'Amr ibn al-Ja'd ibn Mabdhul",
+    "arabic_observed": "نائلة بنت عبيد بن الحرّ"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011803-segment-0001",
+      "volume": 8,
+      "scan_page": 332,
+      "printed_page": 331,
+      "reader_page": 4244,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4244",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0332:360e00215fcfb92d",
+      "arabic": "١١٨٠٣- نائلة بنت عبيد بن الحرّ\nبن عمرو بن الجعد بن مبذول، من بني مازن بن النّجّار الأنصاريّة، من بني ساعدة.\nذكرها ابن حبيب في المبايعات، وقال: أمها رغيبة بنت أوس بن خالد بن الجعد، وتزوّجها معمر بن حزم بن زيد بن لوذان، فولدت له عبد الرّحمن.",
+      "english": "11803 — Na'ila bint 'Ubayd ibn al-Hurr ibn 'Amr ibn al-Ja'd ibn Mabdhul\n\nAn Ansari woman of Banu Mazin ibn al-Najjar, of Banu Sa'ida.\n\nIbn Habib mentioned her among the women who pledged allegiance and said: Her mother was Raghiba bint Aws ibn Khalid ibn al-Ja'd. Ma'mar ibn Hazm ibn Zayd ibn Lawdhan married her, and she bore him 'Abd al-Rahman.",
+      "arabic_sha256": "aedacdf0dd7af1c1ead845a70e2191897e425d2157b7736da0b4641b7327e045",
+      "english_sha256": "ed34440f3eca004d2f79ab693ddaa4d5e112a290ff3f8251b177d2eaeac79c5c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بني مازن بن النّجّار",
+      "english": "Banu Mazin ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني ساعدة",
+      "english": "Banu Sa'ida",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "نائلة بنت عبيد بن الحرّ بن عمرو بن الجعد بن مبذول",
+      "english": "Na'ila bint 'Ubayd ibn al-Hurr ibn 'Amr ibn al-Ja'd ibn Mabdhul",
+      "kind": "person"
+    },
+    {
+      "arabic": "رغيبة بنت أوس بن خالد بن الجعد",
+      "english": "Raghiba bint Aws ibn Khalid ibn al-Ja'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "معمر بن حزم بن زيد بن لوذان",
+      "english": "Ma'mar ibn Hazm ibn Zayd ibn Lawdhan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرّحمن",
+      "english": "'Abd al-Rahman",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

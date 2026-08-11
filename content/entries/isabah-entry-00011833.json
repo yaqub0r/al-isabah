@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011833",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11833,
+  "title": {
+    "english": "Hala bint Awf al-Zuhriyya:",
+    "arabic_observed": "هالة بنت عوف الزّهريّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011833-segment-0001",
+      "volume": 8,
+      "scan_page": 340,
+      "printed_page": 339,
+      "reader_page": 4252,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4252",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0340:76f574b186e15650",
+      "arabic": "١١٨٣٣- هالة بنت عوف الزّهريّة:\nتقدم نسبها مع أخيها عبد الرحمن بن عوف، أحد العشرة.\nروى الدّار الدّارقطنيّ من طريق حنظلة بن أبي سفيان الجمحيّ، عن أمه، قالت: رأيت أخت عبد الرحمن بن عوف تحت بلال، وسمّاها الإمام الرّافعي في شرح الوجيز في كتاب الكفاءة منه: هالة.",
+      "english": "11833—Hala bint Awf al-Zuhriyya:\n\nHer lineage has already been given with that of her brother, Abd al-Rahman ibn Awf, one of the Ten.\n\nAl-Daraqutni narrated, through Hanzala ibn Abi Sufyan al-Jumahi, from his mother, who said: “I saw Abd al-Rahman ibn Awf's sister married to Bilal.” Imam al-Rafi'i named her Hala in his commentary on al-Wajiz, in its Book of Suitability in Marriage.",
+      "arabic_sha256": "5e7787eb664928133aaeb937a6697cb350be9602186cbe9128da3b88f51e9a31",
+      "english_sha256": "c97d791d48280109fe0736d0b37f66fa4d726a1e41e0f2d70b1c63ba060a02dd",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "هالة بنت عوف الزّهريّة",
+      "english": "Hala bint Awf al-Zuhriyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عوف",
+      "english": "Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدّارقطنيّ",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "حنظلة بن أبي سفيان الجمحيّ",
+      "english": "Hanzala ibn Abi Sufyan al-Jumahi",
+      "kind": "person"
+    },
+    {
+      "arabic": "بلال",
+      "english": "Bilal",
+      "kind": "person"
+    },
+    {
+      "arabic": "الإمام الرّافعي",
+      "english": "al-Rafi'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوجيز",
+      "english": "al-Wajiz",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

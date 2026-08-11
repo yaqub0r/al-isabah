@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010807",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10807,
+  "title": {
+    "english": "Asma bint 'Amr ibn 'Adi ibn Nabi[2] ibn Sawad ibn Ghanm ibn Ka'b ibn Salima",
+    "arabic_observed": "أسماء بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010807-segment-0001",
+      "volume": 8,
+      "scan_page": 15,
+      "printed_page": 14,
+      "reader_page": 3927,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3927",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0015:d3ed91151e1a853d",
+      "arabic": "١٠٨٠٧- أسماء بنت عمرو\nبن عدي بن نابي «٢» بن سواد بن غنم بن كعب بن سلمة الأنصارية السلمية، أم معاذ بن جبل. وكنيتها أم منيع.\nذكر ابن إسحاق بسند صحيح عن كعب بن مالك- أنها كانت مع من شهد العقبة مع السبعين هي ونسيبة بنت كعب. وقال في التجريد: وقيل هي أسماء بنت عدي بن عمرو.",
+      "english": "10807—Asma bint 'Amr ibn 'Adi ibn Nabi[2] ibn Sawad ibn Ghanm ibn Ka'b ibn Salima\n\nShe was of the Ansar and Banu Salima, and was the mother of Mu'adh ibn Jabal. Her kunya was Umm Mani'.\n\nIbn Ishaq mentioned, with a sound chain from Ka'b ibn Malik, that she and Nusayba bint Ka'b were among the seventy who witnessed al-'Aqaba. The author of al-Tajrid said: It is also said that she was Asma bint 'Adi ibn 'Amr.",
+      "arabic_sha256": "154e17c096fb2b378e588e3398eb3ee96a27a0143eb019a54d9a6c7ebd1edf3c",
+      "english_sha256": "5b678359cca12f5aa1fd5f48508c75fda97066c5b90221c7d9bad056ac780eff",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أسماء",
+      "english": "Asma bint Abi Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت عدي بن عمرو",
+      "english": "Asma bint 'Amr ibn 'Adi ibn Nabi ibn Sawad ibn Ghanm ibn Ka'b ibn Salima",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "السلمية",
+      "english": "Banu Salima",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "معاذ بن جبل",
+      "english": "Mu'adh ibn Jabal",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم منيع",
+      "english": "Umm Mani'",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "كعب بن مالك",
+      "english": "Ka'b ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "نسيبة بنت كعب",
+      "english": "Nusayba bint Ka'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "العقبة",
+      "english": "al-'Aqaba",
+      "kind": "place"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

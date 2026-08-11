@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012302",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12302,
+  "title": {
+    "english": "Umm Yahya bint Abi Ihab (1)",
+    "arabic_observed": "أم يحيى بنت أبي إهاب «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012302-segment-0001",
+      "volume": 8,
+      "scan_page": 492,
+      "printed_page": 491,
+      "reader_page": 4404,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4404",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0492:36b2b0210aeb1722",
+      "arabic": "١٢٣٠٢- أم يحيى بنت أبي إهاب «١»\n: ثبت ذكرها\nفي صحيح البخاريّ في حديث عقبة بن الحارث النوفلي- أنه تزوّج أم يحيى بنت أبي إهاب، فجاءت أمة سوداء، فقالت: قد أرضعتكما، فأتى النبيّ ﵌، فذكر ذلك له، فقال: «كيف وقد قيل» .",
+      "english": "12302—Umm Yahya bint Abi Ihab (1)\n\nHer mention is established in Sahih al-Bukhari, in the hadith of Uqba ibn al-Harith al-Nawfali: he married Umm Yahya bint Abi Ihab, whereupon a black slave woman came and said, “I nursed both of you.” He went to the Prophet—may Allah bless him and grant him peace—and related that to him. He said, “How can you remain together, now that it has been said?”",
+      "arabic_sha256": "2383ab103bf5615fb4ec0448917e78a9d3bd12e4a1b9c56ec76c1307794c5651",
+      "english_sha256": "d6e6bb497f44be752c4e60e0111ae20d6881bb7013a968de67eb42e659f759e8",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "صحيح البخاري",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "يحيى",
+      "english": "Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم يحيى بنت أبي إهاب",
+      "english": "Umm Yahya bint Abi Ihab",
+      "kind": "person"
+    },
+    {
+      "arabic": "عقبة بن الحارث النوفلي",
+      "english": "Uqba ibn al-Harith al-Nawfali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم يحيى",
+      "english": "Umm Yahya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

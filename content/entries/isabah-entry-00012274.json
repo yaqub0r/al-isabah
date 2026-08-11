@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012274",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12274,
+  "title": {
+    "english": "Umm Manzur",
+    "arabic_observed": "أم منظور"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012274-segment-0001",
+      "volume": 8,
+      "scan_page": 482,
+      "printed_page": 481,
+      "reader_page": 4394,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4394",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0482:d894001a077d765b",
+      "arabic": "١٢٢٧٤- أم منظور\nبنت محمد بن سلمة الأنصاريّة «٢» .\nتقدّم نسبها في ترجمة والدها. ذكرها ابن الأثير، وقال: بايعت رسول اللَّه ﵌، قاله ابن حبيب.",
+      "english": "12274—Umm Manzur\n\nbint Muhammad ibn Salama al-Ansariyya.²\n\nHer lineage was given earlier in the entry on her father. Ibn al-Athir mentioned her and said: “She pledged allegiance to the Messenger of Allah, may Allah bless him and grant him peace.” Ibn Habib stated this.",
+      "arabic_sha256": "3e7db53bd89e7d194899aea93ecde6c21dc5a955f6aacb09da3738c854d433e1",
+      "english_sha256": "5cc5b687cd4845a5c7311c4a9ddb918f76f24480e88e7400485491d66e45cadb",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول الله",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "محمد بن سلمة",
+      "english": "Muhammad ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

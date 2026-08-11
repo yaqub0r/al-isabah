@@ -1,0 +1,175 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011911",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11911,
+  "title": {
+    "english": "Umm Bishr:",
+    "arabic_observed": "أم بشر:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011911-segment-0001",
+      "volume": 8,
+      "scan_page": 365,
+      "printed_page": 364,
+      "reader_page": 4277,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4277",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0365:3bb0df53e85f4dcb",
+      "arabic": "١١٩١١- أم بشر:\nبنت البراء بن معرور «١» .\nتقدم نسبها في ترجمة والدها، وفي ترجمة أخيها بشر.\nقيل: اسمها خليدة، وقيل السّلاف. والّذي ظهر لي بعد البحث أن خليدة والدة بشر بن البراء [\nروى الزّهري، عن عبد الرّحمن بن عبد اللَّه بن كعب بن مالك، عن أبيه، قال: لما حضرت كعبا الوفاة أتته أم بشر بنت البراء] «٢» بن معرور، قالت: يا أبا عبد الرحمن إن لقيت أبي فاقرأه مني السّلام، فقال: لعمر اللَّه، يا أم بشر، لنحن أشغل من ذلك.\nفقالت: أما سمعت رسول اللَّه ﵌ يقول: «إنّ أرواح المؤمنين نسمة تسرح في الجنّة حيث تشاء «٣»، وإنّ نسمة الفاجر في سجّين؟ قال: بلى. قالت: هو ذاك.\nأخرجه ابن مندة من رواية الحارث بن فضيل، عن الزّهري، عنه، قال: رواه يونس والزّبيدي، عن الزّهري، فقال أبو مبشر.\nوقال أبو نعيم: اختلف أصحاب ابن إسحاق عن الزّهريّ عنه، فمنهم من قال أم بشر، ومنهم من قال أم مبشر،\nثم أخرج مسند الحسن بن سفيان بسنده إلى عليّ بن أبي الوليد، عن عبد اللَّه بن يزيد، عن أم بشر بنت البراء بن معرور، قالت: كان رسول اللَّه ﵌ في بيتي في نفر من أصحابه يأكل من طعام صنعته لهم، فسأله عن الأرواح، فذكرها بذكر منع القوم من الطّعام، ثم قال بعده: «أرواح المؤمنين في طيور خضر يأكلون من الجنّة ويشربون ويتعارفون ...» الحديث.",
+      "english": "11911—Umm Bishr:\n\nbint al-Bara ibn Ma'rur.¹\n\nHer lineage was given above in the entry on her father and in the entry on her brother Bishr.\n\nIt is said that her name was Khulayda, and it is also said that it was al-Sulaf. What became apparent to me after investigation is that Khulayda was the mother of Bishr ibn al-Bara.\n\nal-Zuhri related, from 'Abd al-Rahman ibn 'Abd Allah ibn Ka'b ibn Malik, from his father, who said: When death drew near to Ka'b, Umm Bishr bint al-Bara ibn Ma'rur came to him² and said, “O Abu 'Abd al-Rahman, if you meet my father, convey my greetings of peace to him.” He replied, “By the life of Allah, O Umm Bishr, we shall be too occupied for that.”\n\nShe said, “Have you not heard the Messenger of Allah, may Allah bless him and grant him peace, say, ‘The souls of the believers are a spirit roaming freely in Paradise wherever it wishes,³ while the spirit of the wicked person is in Sijjin’?” He said, “Yes.” She said, “That is it.”\n\nIbn Manda transmitted it through the narration of al-Harith ibn Fudayl, from al-Zuhri, from him. He said: “Yunus and al-Zubaydi related it from al-Zuhri, but said Abu Mubashshir.”\n\nAbu Nu'aym said: “The companions of Ibn Ishaq differed in their transmission from al-Zuhri, from him: some said Umm Bishr, and others said Umm Mubashshir.”\n\nHe then transmitted from the Musnad of al-Hasan ibn Sufyan, through its chain to 'Ali ibn Abi al-Walid, from 'Abd Allah ibn Yazid, from Umm Bishr bint al-Bara ibn Ma'rur, who said: “The Messenger of Allah, may Allah bless him and grant him peace, was in my house with a group of his Companions, eating some food that I had prepared for them. He was asked about the souls, and he spoke about them in words that kept the people from the food. He then said afterward: ‘The souls of the believers are in green birds; they eat from Paradise, drink, and recognize one another …’” to the end of the hadith.",
+      "arabic_sha256": "9895115787b9492ca6d73a4a55162aeffc884e65cc2ee92f6d5829f6de878efb",
+      "english_sha256": "0240303c8189d95ede4e1b649e68fae6958adb4498040061d0e1bc42db40e77c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم بشر بنت البراء بن معرور",
+      "english": "Umm Bishr bint al-Bara ibn Ma'rur",
+      "kind": "person"
+    },
+    {
+      "arabic": "البراء بن معرور",
+      "english": "al-Bara ibn Ma'rur",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشر بن البراء",
+      "english": "Bishr ibn al-Bara",
+      "kind": "person"
+    },
+    {
+      "arabic": "خليدة",
+      "english": "Khulayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "السلاف",
+      "english": "al-Sulaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عبد الله بن كعب بن مالك",
+      "english": "'Abd al-Rahman ibn 'Abd Allah ibn Ka'b ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن كعب بن مالك",
+      "english": "'Abd Allah ibn Ka'b ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "كعب بن مالك",
+      "english": "Ka'b ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عبد الرحمن",
+      "english": "Abu 'Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجنة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "سجين",
+      "english": "Sijjin",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن فضيل",
+      "english": "al-Harith ibn Fudayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس",
+      "english": "Yunus",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبيدي",
+      "english": "al-Zubaydi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو مبشر",
+      "english": "Abu Mubashshir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم مبشر",
+      "english": "Umm Mubashshir",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن سفيان",
+      "english": "al-Hasan ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند الحسن بن سفيان",
+      "english": "Musnad of al-Hasan ibn Sufyan",
+      "kind": "work"
+    },
+    {
+      "arabic": "علي بن أبي الوليد",
+      "english": "'Ali ibn Abi al-Walid",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن يزيد",
+      "english": "'Abd Allah ibn Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم بشر زوج البراء بن معرور",
+      "english": "Khulayda",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

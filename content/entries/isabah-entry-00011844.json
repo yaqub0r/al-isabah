@@ -1,0 +1,129 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011844",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11844,
+  "title": {
+    "english": "Hind bint Usayd",
+    "arabic_observed": "هند بنت أسيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011844-segment-0001",
+      "volume": 8,
+      "scan_page": 342,
+      "printed_page": 341,
+      "reader_page": 4254,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4254",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0342:530f841f48a5cef3",
+      "arabic": "١١٨٤٤- هند بنت أسيد\nبالتصغير، ابن حضير الأنصاريّة «٤» .\n(١) أسد الغابة ت (٧٣٤١)، الثقات ٣/ ٤٣٩- أعلام النساء ٥/ ٢٢١- الاستبصار ٢١٦- تجريد أسماء الصحابة ٢/ ٣٠٩.\n(٢) تنظر الأبيات في أسد الغابة ترجمة رقم (٧٣٤١) .\n(٣) تنظر الأبيات في أسد الغابة ترجمة رقم (٧٣٤١) .\n(٤) أعلام النساء ٥/ ٢٢١، الاستبصار ٢١٦، تجريد أسماء الصحابة ٢/ ٣٠٩، حاشية الإكمال ٢/ ٤٨٢، أسد الغابة ت (٧٣٤٢)، الاستيعاب ت (٥٦٦٤) .",
+      "english": "11844 — Hind bint Usayd\n\nUsayd is in the diminutive form. Her father was Usayd ibn Hudayr, and she was an Ansari woman.(4)\n\n(1) Usd al-Ghaba, entry no. 7341; al-Thiqat, 3/439; A'lam al-Nisa, 5/221; al-Istibsar, p. 216; al-Tajrid, 2/309.\n\n(2) See the verses in Usd al-Ghaba, entry no. 7341.\n\n(3) See the verses in Usd al-Ghaba, entry no. 7341.\n\n(4) A'lam al-Nisa, 5/221; al-Istibsar, p. 216; al-Tajrid, 2/309; Hashiyat al-Ikmal, 2/482; Usd al-Ghaba, entry no. 7342; al-Isti'ab, entry no. 5664.",
+      "arabic_sha256": "08e3acac196ebc2b6a6b46bd8506ac3fc104ede886a26398ab02c67d39b7973e",
+      "english_sha256": "f2a8f38d90adeaf1d66cffbaf467748aaf1d459e14880f016592348afd62d4fb",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011844-segment-0002",
+      "volume": 8,
+      "scan_page": 343,
+      "printed_page": 342,
+      "reader_page": 4255,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4255",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0343:17a67b3274f51657",
+      "arabic": "تقدّم نسبها مع والدها. قال ابن مندة: لها ذكر في حديث محمد بن عبد الرّحمن بن سعد بن زرارة. وقال أبو عمر: روى أبو الرجال عنها عن النّبي ﵌ أنه كان يخطب بالقرآن، قالت: وما تعلّمت سورة «ق» إلا من كثرة ما كنت أسمعه يخطب بها على المنبر.",
+      "english": "Her lineage was given above with that of her father. Ibn Mandah said: She is mentioned in the hadith of Muhammad ibn Abd al-Rahman ibn Sa'd ibn Zurara. Abu Umar said: Abu al-Rijal narrated from her, from the Prophet—may Allah bless him and grant him peace—that he would use the Qur'an in his sermons. She said, “I learned Surat Qaf only because I so often heard him use it in sermons from the pulpit.”",
+      "arabic_sha256": "9d8020b9d5de099f86b4ccf7e722cf985c05ad163a3526246c3c111b32f06b4d",
+      "english_sha256": "fe520e64563d11f33038d64f0776d621feb54203d09531784229bccec867a361",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أسيد بن حضير",
+      "english": "Usayd ibn Hudayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصاريّة",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "حاشية الإكمال",
+      "english": "Hashiyat al-Ikmal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عبد الرحمن بن سعد بن زرارة",
+      "english": "Muhammad ibn Abd al-Rahman ibn Sa'd ibn Zurara",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الرجال",
+      "english": "Abu al-Rijal",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرآن",
+      "english": "Qur'an",
+      "kind": "work"
+    },
+    {
+      "arabic": "سورة ق",
+      "english": "Surat Qaf",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

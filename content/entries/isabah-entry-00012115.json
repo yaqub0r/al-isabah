@@ -1,0 +1,194 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012115",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12115,
+  "title": {
+    "english": "Umm al-Dahhak bint Masud, the Ansari woman of the Banu Haritha.⁴",
+    "arabic_observed": "أم الضّحاك"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012115-segment-0001",
+      "volume": 8,
+      "scan_page": 423,
+      "printed_page": 422,
+      "reader_page": 4335,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4335",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0423:24440e7a4bef8914",
+      "arabic": "١٢١١٥- أم الضّحاك\nبنت مسعود الأنصاريّة الحارثيّة «٤» .\nقال أبو عمر: ذكر الواقديّ عن محمد بن عبد الرّحمن المدني، عن عبد اللَّه بن سهل الأنصاري، ثم النّجاري، عن سهل بن أبي حثمة، عن أم الضّحاك- أنا شهدت خيبر مع رسول اللَّه ﵌، فأسهم لها سهم رجل.\nقلت: ذكر ابن سعد في «الطّبقات» عن الواقديّ أنها أسلمت وبايعت، وشهدت خيبر.\nقال ابن سعد: لم أجد لها ذكرا في نسب الأنصار.\nقلت: قد ذكر عمر بن شبّة أنها أخت محيّصة وحويصة، فقرأت في كتاب أخبار المدينة له بسند له عن يزيد بن عياض بن جعدة- أحد الضعفاء- أنه بلغه من شأن خيبر، فذكر القصّة، وفيها: أنه قسم لامرأتين حضرتا القتال، وهما أم الضّحاك بنت مسعود أخت حويّصة ومحيّصة، وأخت حذيفة بن اليمان، أعطى كلّا منهما مثل سهم رجل.\nوأورد ابن أبي عاصم في الوحدان، من طريق عبد الرحمن الإمامي، عن الزهري، عن\n(١) في أ: الصهباء.\n(٢) أسد الغابة ت (٧٤٩٩) .\n(٣) بقي بن مخلد ١٠٠٥.\n(٤) أسد الغابة ت (٧٥٠٢)، الاستيعاب ت (٣٦٢٩) .",
+      "english": "12115 — Umm al-Dahhak bint Masud, the Ansari woman of the Banu Haritha.⁴\n\nAbu Umar said: “Al-Waqidi related from Muhammad ibn Abd al-Rahman al-Madani, from Abd Allah ibn Sahl al-Ansari, then al-Najjari, from Sahl ibn Abi Hathma, from Umm al-Dahhak, who reported that she was present at Khaybar with the Messenger of Allah—may Allah bless him and grant him peace—and that he allotted her a man’s share.”\n\nI say: Ibn Sad stated in al-Tabaqat, on the authority of al-Waqidi, that she embraced Islam, pledged allegiance, and was present at Khaybar.\n\nIbn Sad said: “I found no mention of her in the genealogies of the Ansar.”\n\nI say: Umar ibn Shabba mentioned that she was the sister of Muhayyisa and Huwayyisa. I read in his Kitab Akhbar al-Madina, through an isnad of his from Yazid ibn Iyad ibn Jada—one of the weak transmitters—that word reached him concerning the affair of Khaybar. He then related the story, which includes the following: he allotted shares to two women who had been present at the fighting. They were Umm al-Dahhak bint Masud, the sister of Huwayyisa and Muhayyisa, and the sister of Hudhayfa ibn al-Yaman; he gave each of them the equivalent of a man’s share.\n\nIbn Abi Asim included in al-Wuhdan, by way of Abd al-Rahman al-Imami, from al-Zuhri, from—\n\n(1) In manuscript A: “al-Sahba'.”\n\n(2) Usd al-Ghaba, entry 7499.\n\n(3) Baqi ibn Makhlad, 1005.\n\n(4) Usd al-Ghaba, entry 7502; al-Isti'ab, entry 3629.",
+      "arabic_sha256": "1f9dda2a9b49b73170cf074d4545339c8a7bffdbaa8d99842056260854a06fa0",
+      "english_sha256": "442377f92b064339f23eafba4e50927e6ac1b460d5b94f2c94fff91923c477c4",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012115-segment-0002",
+      "volume": 8,
+      "scan_page": 424,
+      "printed_page": 423,
+      "reader_page": 4336,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4336",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0424:e87149484b923332",
+      "arabic": "حزام بن محيصة، عن أم الضّحاك بنت مسعود الحارثية، قالت: قال رسول اللَّه ﵌: «لا تحقّرنّ جارة لجارتها ولو فرسن «١» شاة» .",
+      "english": "Hizam ibn Muhayyisa, from Umm al-Dahhak bint Mas'ud al-Harithiyya, who said: The Messenger of Allah (may Allah bless him and grant him peace) said, “Let no female neighbor disdain [giving a gift] to her female neighbor, even if it is the farsan of a sheep.”(1)",
+      "arabic_sha256": "cacbf0892177dc65eafb661a6a5854e8c60f2c8c57ff133568ec465af65c2e9a",
+      "english_sha256": "c3cc9d58c06167adfb3d4a2bf8b2274116fc50d75669cca032106516386754fd",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الصهباء",
+      "english": "Umm al-Sahba'",
+      "kind": "person"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الضحاك بنت مسعود",
+      "english": "Umm al-Dahhak bint Masud",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو حارثة",
+      "english": "Banu Haritha",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عبد الرحمن المدني",
+      "english": "Muhammad ibn Abd al-Rahman al-Madani",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهل بن أبي حثمة",
+      "english": "Sahl ibn Abi Hathma",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبقات",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عمر بن شبّة",
+      "english": "Umar ibn Shabba",
+      "kind": "person"
+    },
+    {
+      "arabic": "محيصة",
+      "english": "Muhayyisa",
+      "kind": "person"
+    },
+    {
+      "arabic": "حويصة",
+      "english": "Huwayyisa",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب أخبار المدينة",
+      "english": "Kitab Akhbar al-Madina",
+      "kind": "work"
+    },
+    {
+      "arabic": "يزيد بن عياض بن جعدة",
+      "english": "Yazid ibn Iyad ibn Jada",
+      "kind": "person"
+    },
+    {
+      "arabic": "حذيفة بن اليمان",
+      "english": "Hudhayfa ibn al-Yaman",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوحدان",
+      "english": "al-Wuhdan",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد الرحمن الإمامي",
+      "english": "Abd al-Rahman al-Imami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "حزام بن محيصة",
+      "english": "Hizam ibn Muhayyisa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الضحاك بنت مسعود الحارثية",
+      "english": "Umm al-Dahhak bint Mas'ud al-Harithiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

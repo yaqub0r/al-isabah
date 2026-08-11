@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012071",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12071,
+  "title": {
+    "english": "Umm Sulayt [1]",
+    "arabic_observed": "أم سليط «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012071-segment-0001",
+      "volume": 8,
+      "scan_page": 409,
+      "printed_page": 408,
+      "reader_page": 4321,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4321",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0409:7479f4ab93253906",
+      "arabic": "١٢٠٧١- أم سليط «١»\n: قال أبو عمر: من المبايعات، حضرت مع النّبيّ ﵌ يوم أحد، قال عمر بن الخطاب: كانت ممن يزفر لنا القرب «٢» يوم أحد.\nقلت: ثبت ذكرها في صحيح البخاريّ، عن عمر، كناها عمر بابنها سليط بن أبي سليط بن أبي حارثة، وهي أم قيس بنت عبيد. ذكر ذلك ابن سعد كما سيأتي في حرف القاف، ثم ذكر غيره أنها تزوّجت بعد أبي سليط مالك بن سنان والد أبي سعيد الخدريّ، فولدت أبا سعيد، فهو أخو سليط بن أبي سليط لأمّه.",
+      "english": "12071 — Umm Sulayt [1]\n\nAbu Umar said: She was among the women who pledged allegiance. She was present with the Prophet (peace and blessings be upon him) on the day of Uhud. Umar ibn al-Khattab said: “She was among those who carried the waterskins for us [2] on the day of Uhud.”\n\nI say: Her mention is established in Sahih al-Bukhari, on the authority of Umar. Umar referred to her by the kunya derived from her son, Sulayt ibn Abi Sulayt ibn Abi Haritha. She was Umm Qays bint Ubayd. Ibn Sa'd mentioned this, as will come under the letter qaf. Someone else then mentioned that, after Abu Sulayt, she married Malik ibn Sinan, the father of Abu Sa'id al-Khudri, and bore Abu Sa'id. He was therefore the maternal half-brother of Sulayt ibn Abi Sulayt.",
+      "arabic_sha256": "b3a69defce30f1bdda580c4797f5879cc25eb0131fd7e641cabea2d9e7a8d3fe",
+      "english_sha256": "e27eb4c8092ad2b6f8c3e32b45094924d898ac5910eb28c997f78ddfbcda014e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم سليط",
+      "english": "Umm Sulayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "عمر بن الخطاب",
+      "english": "Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيح البخاري",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "سليط بن أبي سليط بن أبي حارثة",
+      "english": "Sulayt ibn Abi Sulayt ibn Abi Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم قيس بنت عبيد",
+      "english": "Umm Qays bint Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سليط",
+      "english": "Abu Sulayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "مالك بن سنان",
+      "english": "Malik ibn Sinan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سعيد الخدري",
+      "english": "Abu Sa'id al-Khudri",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

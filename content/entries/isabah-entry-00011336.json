@@ -1,0 +1,184 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011336",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11336,
+  "title": {
+    "english": "Salma (6),",
+    "arabic_observed": "سلمى «٦»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011336-segment-0001",
+      "volume": 8,
+      "scan_page": 189,
+      "printed_page": 188,
+      "reader_page": 4101,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4101",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0189:6769ea1e4d04ada4",
+      "arabic": "١١٣٣٦- سلمى «٦»\nمولاة صفية.\n(١) أسد الغابة ت (٧٠١٥) .\n(٢) أسد الغابة ت (٧٠٠٦) .\n(٣) تجريد أسماء الصحابة ٢/ ٢٧٨، خلاصة تهذيب الكمال ٣/ ٣٨٣، بقي بن مخلد ٩٨٤.\n(٤) أسد الغابة ت (٧٠٠٨)، الاستيعاب: ت (٣٤٣٠) .\n(٥) أخرجه ابن سعد في الطبقات الكبرى ٨/ ٧٢ وأورده المتقي الهندي في كنز العمال حديث رقم ٣٤٣٨٩ وعزاه للحاكم في المستدرك عن محمد بن يحيى بن حبان مرسلا.\n(٦) الثقات ٣/ ١٨٤، أعلام النساء ٢/ ٢٥٤، تقريب التهذيب ٢/ ٦٠١، تهذيب التهذيب ١٢/ ٤٢٥، تهذيب الكمال ٣/ ١٦٨٥.",
+      "english": "11336—Salma (6),\n\nthe client of Safiyya.\n\n(1) Usd al-Ghaba, entry 7015.\n(2) Usd al-Ghaba, entry 7006.\n(3) al-Tajrid, 2/278; Khulasat Tahdhib al-Kamal, 3/383; Baqi ibn Makhlad, no. 984.\n(4) Usd al-Ghaba, entry 7008; al-Isti'ab, entry 3430.\n(5) Ibn Sa'd included it in al-Tabaqat, 8/72. Al-Muttaqi al-Hindi cited it in Kanz al-'Ummal, hadith no. 34389, and attributed it to al-Hakim in al-Mustadrak, from Muhammad ibn Yahya ibn Habban as a mursal report.\n(6) al-Thiqat, 3/184; A'lam al-Nisa', 2/254; Taqrib al-Tahdhib, 2/601; Tahdhib al-Tahdhib, 12/425; Tahdhib al-Kamal, 3/1685.",
+      "arabic_sha256": "548f69d6796f3520c6aed7bd3b7ab076aa0af7209d21bee5cb4dfe684da5215f",
+      "english_sha256": "4117e9371f89b0ce7a7f382dd66c7ace9cc4073825426562ceb7ad03cac2f29e",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011336-segment-0002",
+      "volume": 8,
+      "scan_page": 190,
+      "printed_page": 189,
+      "reader_page": 4102,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4102",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0190:32466e2658464c43",
+      "arabic": "ذكر الواقديّ أنها كانت قابلة خديجة عند ولادتها أولادها من النبيّ ﷺ.",
+      "english": "al-Waqidi mentioned that she was Khadijah's midwife when Khadijah gave birth to her children by the Prophet, may Allah bless him and grant him peace.",
+      "arabic_sha256": "13b25afa2efd5f9eeb36a9ba42b1192f6edec44651d3ffaec238dfbf8cc0163d",
+      "english_sha256": "2d642135d1e815fe7b13acc30443d8adaa8b08cc947c5059ef0f16b7d784ebaf",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سلمى، غير منسوبة، مولاة حكيم بن أمية بن الأوقص السلمي",
+      "english": "Salma",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى، غير منسوبة",
+      "english": "Salma",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى، خادم رسول الله",
+      "english": "Salma",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "محمد بن يحيى بن حبان",
+      "english": "Muhammad ibn Yahya ibn Habban",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى، مولاة صفية",
+      "english": "Salma",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية",
+      "english": "Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبقات الكبرى",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-'Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

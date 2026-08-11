@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012195",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12195,
+  "title": {
+    "english": "Umm Isa bint al-Jazzar [1]:",
+    "arabic_observed": "أم عيسى بنت الجزار «١»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012195-segment-0001",
+      "volume": 8,
+      "scan_page": 447,
+      "printed_page": 446,
+      "reader_page": 4359,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4359",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0447:abc39d97bc25c9ac",
+      "arabic": "١٢١٩٥- أم عيسى بنت الجزار «١»:\nبجيم وزاي منقوطة ثم راء، العصرية.\nلها صحبة ورواية من طريق عبد الرحمن بن جبلة، عن أم فروة بنت مزاحم العصرية، عن أمّها أم عيسى بنت الجزار، عن النبي ﵌، قاله ابن ماكولا.\nفصل\nذكر بعض من صنف في الصحابة جماعة نسوة في الكنى من غير أن يراد أن تلك الكنية موضوعة على تلك المرأة، بل إذا ورد في خبر عنها أو عن غيرها أن لها ابنا اسمه فلان، فيذكرونها بلفظ أم فلان، ومن حق ما هذا سبيله أن يقال والده فلان، ولا يقال أم فلان، إلا إذا ورد أنها كنيت به، وقد كنيت أسماءهن تبعا لهم، لكن مع التنبيه على ذلك في كل ترجمة منه، فمن وضح أن لها اسما نبهت عليه، ومن ورد أن لها كنية تختص بها أعدتها في قسم الغلط. واللَّه المستعان.\nالقسم الثاني والقسم الثالث\nخاليان.\nالقسم الرابع",
+      "english": "12195—Umm Isa bint al-Jazzar [1]:\n\nWith jim, a dotted zay, then ra; al-'Asariyya.\n\nShe was a Companion, and a report from her is transmitted by way of Abd al-Rahman ibn Jabala, from Umm Farwa bint Muzahim al-'Asariyya, from her mother, Umm Isa bint al-Jazzar, from the Prophet—may Allah bless him and grant him peace—as stated by Ibn Makula.\n\nChapter\n\nSome of those who compiled works on the Companions listed a number of women under kunyas, without intending thereby that the given kunya was actually applied to that woman. Rather, if a report concerning her or someone else stated that she had a son named So-and-so, they would mention her as “Umm So-and-so.” Properly, in such a case, one should say “the mother of So-and-so,” not “Umm So-and-so,” unless it is reported that she was given that kunya. I have likewise entered their names under kunyas, following those authors, but have called attention to this in each woman’s entry. Whenever it was clear that she had a personal name, I pointed it out; and whenever it was reported that she had a kunya particular to her, I repeated her in the section on errors. Allah is the One whose aid is sought.\n\nTHE SECOND AND THIRD SECTIONS\n\nThey are empty.\n\nTHE FOURTH SECTION",
+      "arabic_sha256": "17485615b645e3659f4828d70736a19eaf3a81fd51be5c435fdc4abe8df957b8",
+      "english_sha256": "5132b0586d49547eea3e3e3e6012a42ec6782eaa0dc654a628ce76d16834e91c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عبد الرحمن بن جبلة",
+      "english": "Abd al-Rahman ibn Jabala",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم فروة بنت مزاحم العصرية",
+      "english": "Umm Farwa bint Muzahim al-'Asariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماكولا",
+      "english": "Ibn Makula",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

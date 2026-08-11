@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011975",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11975,
+  "title": {
+    "english": "Umm Hufayz:",
+    "arabic_observed": "أم حفيظ:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011975-segment-0001",
+      "volume": 8,
+      "scan_page": 378,
+      "printed_page": 377,
+      "reader_page": 4290,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4290",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0378:37c06e0586709ca4",
+      "arabic": "١١٩٧٥- أم حفيظ:\nبفاء مصغرة، بنت الحارث الهلالية «٣»، أخت أم الفضل والدة ابن عباس. اسمها هزيلة، بزاي مصغرة. تقدم ذكرها وحديثها في حرف الهاء من الأسماء، وهي التي أهدت الضّباب لرسول اللَّه ﵌.",
+      "english": "11975 — Umm Hufayz:\n\nWith fa', in the diminutive form; daughter of al-Harith, of Banu Hilal,[3] and sister of Umm al-Fadl, the mother of Ibn Abbas. Her name was Huzayla, with zay, in the diminutive form. Her mention and her hadith appeared previously under the letter ha' in the section on names. She was the one who presented the dabb lizards to the Messenger of Allah.",
+      "arabic_sha256": "d4447e74aeaafa91d0113a3b0b79760f59397e61d5c7befaf00d07309a973178",
+      "english_sha256": "92c6bb52a9c64aed02520e6dfa570c5351d145e54755b13062a8626d9cf8da86",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الحارث",
+      "english": "al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهلالية",
+      "english": "Banu Hilal",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم الفضل",
+      "english": "Umm al-Fadl",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "هزيلة",
+      "english": "Huzayla",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

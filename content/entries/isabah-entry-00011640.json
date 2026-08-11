@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011640",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11640,
+  "title": {
+    "english": "Furay'a, mother of Ibrahim ibn Nubayt:",
+    "arabic_observed": "فريعة أم إبراهيم بن نبيط:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011640-segment-0001",
+      "volume": 8,
+      "scan_page": 284,
+      "printed_page": 283,
+      "reader_page": 4196,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4196",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0284:5eef448d5fad577f",
+      "arabic": "١١٦٤٠- فريعة أم إبراهيم بن نبيط:\nلها صحبة، ذكرها ابن الأمين في ذيله على الاستيعاب، كذا في التّجريد، واستدراكها وهم، فإن أبا عمر ذكر في الفارعة بنت أبي أمامة أسعد بن زرارة أن النّبيّ ﵌ زوّجها نبيط بن جابر، وقد ذكرت في الفارعة رواية من سمّاها الفريعة، والإيراد في هذا على الذّهبي أشدّ منه على ابن الأمين. وباللَّه التوفيق.\nحرف القاف\nالقسم الأول",
+      "english": "11640—Furay'a, mother of Ibrahim ibn Nubayt:\n\nShe had Companionship. Ibn al-Amin mentioned her in his al-Dhayl to al-Isti'ab; so it is stated in al-Tajrid. Including her as a supplementary entry is an error, for Abu 'Umar stated, in the entry on al-Fari'a bint Abi Umama As'ad ibn Zurara, that the Prophet (may Allah bless him and grant him peace) married her to Nubayt ibn Jabir. Under al-Fari'a, I have already cited the report of the person who called her al-Furay'a. The criticism on this point falls more heavily on al-Dhahabi than on Ibn al-Amin. And success is through Allah.\n\nThe Letter Qaf\n\nSection One",
+      "arabic_sha256": "fbbe90f1d16d538cd9a31099780717d9a5551104a9e58a991547a9c39d027451",
+      "english_sha256": "4d8eb5cd26438063636caaaea0daea2bb66fde52aca556f991997f052533e200",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الذّهبيّ",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "فريعة أم إبراهيم بن نبيط",
+      "english": "Furay'a Umm Ibrahim ibn Nubayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن نبيط",
+      "english": "Ibrahim ibn Nubayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأمين",
+      "english": "Ibn al-Amin",
+      "kind": "person"
+    },
+    {
+      "arabic": "ذيله",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "التّجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفارعة بنت أبي أمامة أسعد بن زرارة",
+      "english": "al-Fari'a bint Abi Umama As'ad ibn Zurara",
+      "kind": "person"
+    },
+    {
+      "arabic": "نبيط بن جابر",
+      "english": "Nubayt ibn Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفريعة",
+      "english": "al-Furay'a bint Abi Umama As'ad ibn Zurara",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010959",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10959,
+  "title": {
+    "english": "Tumadir al-'Abdariyya al-Shaybiyya",
+    "arabic_observed": "تماضر «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010959-segment-0001",
+      "volume": 8,
+      "scan_page": 58,
+      "printed_page": 57,
+      "reader_page": 3970,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3970",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0058:aa2b06b94678dc20",
+      "arabic": "١٠٩٥٩- تماضر «٣»\nالعبدرية الشيبية»\n: من بني شيبة بن عثمان. تعدّ في أهل مكة.\nروت عنها صفية بنت شيبة حديث السعي، قاله أبو عمر.\nوأخرج حديثها ابن أبي عاصم، والعقيليّ، وابن مندة، من طريق المثنى بن عمرو.\nروت أن النبي ﷺ كان يسعى بين الصفاء والمروة، وهو يقول: «يا أيّها النّاس، إنّ اللَّه كتب عليكم السّعي فاسعوا» . قال ابن مندة: رواه عطاء عن صفية عن حبيبة.\nقلت: وستأتي في حبيبة بنت أبي تجراة إن شاء اللَّه تعالى.",
+      "english": "10959—Tumadir al-'Abdariyya al-Shaybiyya\n\nShe was of Banu Shayba ibn 'Uthman. She is counted among the people of Mecca.\n\nSafiyya bint Shayba narrated from her the hadith concerning sa'y, according to Abu 'Umar.\n\nIbn Abi 'Asim, al-'Uqayli, and Ibn Manda transmitted her hadith through al-Muthanna ibn 'Amr.\n\nShe narrated that the Prophet—may Allah bless him and grant him peace—used to perform sa'y between al-Safa and al-Marwa while saying, “O people, indeed Allah has prescribed sa'y for you, so perform sa'y.” Ibn Manda said: 'Ata narrated it from Safiyya, from Habiba.\n\nI say: She will appear under Habiba bint Abi Tajra'a, if Allah Most High wills.",
+      "arabic_sha256": "4cdc2b7eb20d653f7521880477a3a0559a4c0f253ba8dd1f642d08b6feb3e1bc",
+      "english_sha256": "11255d7c3df6bc1b936b10fe0aae5db18e213a94b601eed9c6a5f8ad364a3fa1",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "'Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "تماضر العبدرية الشيبية",
+      "english": "Tumadir al-'Abdariyya al-Shaybiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني شيبة بن عثمان",
+      "english": "Banu Shayba ibn 'Uthman",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "صفية بنت شيبة",
+      "english": "Safiyya bint Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi 'Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "العقيلي",
+      "english": "al-'Uqayli",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "المثنى بن عمرو",
+      "english": "al-Muthanna ibn 'Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصفا",
+      "english": "al-Safa",
+      "kind": "place"
+    },
+    {
+      "arabic": "المروة",
+      "english": "al-Marwa",
+      "kind": "place"
+    },
+    {
+      "arabic": "عطاء",
+      "english": "'Ata",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة بنت أبي تجراة",
+      "english": "Habiba bint Abi Tajra'a",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

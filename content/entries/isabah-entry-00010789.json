@@ -1,0 +1,129 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010789",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10789,
+  "title": {
+    "english": "Arwa bint Rabi'a ibn al-Harith",
+    "arabic_observed": "أروى بنت ربيعة بن الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010789-segment-0001",
+      "volume": 8,
+      "scan_page": 8,
+      "printed_page": 7,
+      "reader_page": 3920,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3920",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0008:d390cb59fff2b09a",
+      "arabic": "١٠٧٨٩- أروى بنت ربيعة بن الحارث\nبن عبد المطلب الهاشمي «٢» .\nذكرها الدّار الدّارقطنيّ في كتاب «الإخوة»، وقال: تزوجها حبان بن منقذ الأنصاري، فولدت له ولدا، ويقال: بل اسمها هند. انتهى.\nوقال ابن مندة: أروى حديثها عطاف بن خالد، عن أمه، عن أمها، وهي أروي.\n(١) أعلام النساء ١/ ١٨، تجريد أسماء الصحابة ٢/ ٢٤٣.\n(٢) أسد الغابة: ت ٦٦٩٧.",
+      "english": "10789—Arwa bint Rabi'a ibn al-Harith\n\nibn Abd al-Muttalib al-Hashimiyya.²\n\nAl-Daraqutni mentioned her in Kitab al-Ikhwa and said, “Habban ibn Munqidh al-Ansari married her, and she bore him a child. It is also said: rather, her name was Hind.” End quote.\n\nIbn Manda said, “Arwa: her report was transmitted by Attaf ibn Khalid, from his mother, from her mother, who was Arwa.”\n\n(1) A'lam al-Nisa', 1/18; al-Tajrid, 2/243.\n\n(2) Usd al-Ghaba: entry 6697.",
+      "arabic_sha256": "29807ccdb2e6134e685e2ddd1e34c9a007123817552e00bd3ad27322a68b3b5b",
+      "english_sha256": "0cfd623485f1ae088d87145709a4fd71f9ea070bbbe815288b18ac0f953f41b5",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00010789-segment-0002",
+      "volume": 8,
+      "scan_page": 9,
+      "printed_page": 8,
+      "reader_page": 3921,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3921",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0009:77f38b370f1dae66",
+      "arabic": "وقال عبد القدّوس بن إبراهيم: عن عطاف، عن أمه، عن أمها أثيمة جدة عطاف أنها أتت النبي ﷺ وهي صبية.",
+      "english": "And Abd al-Quddus ibn Ibrahim reported from Attaf, from his mother, from her mother Athima, the grandmother of Attaf, that she came to the Prophet, may Allah bless him and grant him peace, when she was a young girl.",
+      "arabic_sha256": "9164e50a28f5a0a3089a89f668b4c0c9b6a489639cfae402d6064ce26a50ccef",
+      "english_sha256": "9bbab52f084f076cf6e2ed0c46c09ec3bc5b81cda67ea78735dce5422099b122",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "التّجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدارقطنيّ",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الإخوة",
+      "english": "Kitab al-Ikhwa",
+      "kind": "work"
+    },
+    {
+      "arabic": "حبان بن منقذ الأنصاري",
+      "english": "Habban ibn Munqidh al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند",
+      "english": "Hind bint Rabi'a ibn al-Harith ibn Abd al-Muttalib al-Hashimiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاف بن خالد",
+      "english": "Attaf ibn Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد القدّوس بن إبراهيم",
+      "english": "Abd al-Quddus ibn Ibrahim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاف",
+      "english": "Attaf ibn Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أثيمة",
+      "english": "Athima",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011289",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11289,
+  "title": {
+    "english": "Sadus bint Khalid",
+    "arabic_observed": "سدوس بنت خالد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011289-segment-0001",
+      "volume": 8,
+      "scan_page": 175,
+      "printed_page": 174,
+      "reader_page": 4087,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4087",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0175:b2f9fbda8782eeaa",
+      "arabic": "١١٢٨٩- سدوس بنت خالد\nتأتي في سندوس.",
+      "english": "11289—Sadus bint Khalid\n\nShe will be mentioned under Sundus.",
+      "arabic_sha256": "c8a4440f8262d1d87f379225a67f478bdc0a2ae19870751565ddfbc63e3df426",
+      "english_sha256": "d756649d66d13d4ee386d6a088c9dc60bf94ce39cdca3612ec717b5454062392",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سدوس بنت خالد",
+      "english": "Sadus bint Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "سندوس",
+      "english": "Sundus",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

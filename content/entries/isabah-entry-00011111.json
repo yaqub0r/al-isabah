@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011111",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11111,
+  "title": {
+    "english": "Khansa bint Ri'ab",
+    "arabic_observed": "خنساء بنت رئاب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011111-segment-0001",
+      "volume": 8,
+      "scan_page": 110,
+      "printed_page": 109,
+      "reader_page": 4022,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4022",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0110:17634dd5329e5c57",
+      "arabic": "١١١١١- خنساء بنت رئاب\nبن النعمان بن سنان بن عبيد بن عدي بن كعب بن سلمة، عمة جابر بن عبد اللَّه بن رئاب، كانت من المبايعات.\nذكرها ابن سعد، وقال: أمها إدام بنت حرام بن ربيعة بن عدي بن غنم بن كعب بن سلمة، تزوّجها عامر بن عدي بن سنان بن نابي بن عمرو بن سواد، ثم النعمان بن خنساء بن سنان بن عبيد.",
+      "english": "11111—Khansa bint Ri'ab\n\nibn al-Nu'man ibn Sinan ibn 'Ubayd ibn 'Adi ibn Ka'b ibn Salima, the paternal aunt of Jabir ibn 'Abd Allah ibn Ri'ab. She was among the women who gave the pledge of allegiance.\n\nIbn Sa'd mentioned her and said: Her mother was Idam bint Haram ibn Rabi'a ibn 'Adi ibn Ghanm ibn Ka'b ibn Salima. 'Amir ibn 'Adi ibn Sinan ibn Nabi ibn 'Amr ibn Sawad married her, and then al-Nu'man ibn Khansa ibn Sinan ibn 'Ubayd married her.",
+      "arabic_sha256": "58ee01d398e3052e89a6e762b730cd22e2665adcc7a654c2e428c3d9915f29e6",
+      "english_sha256": "ba471f5169ef99586e288b1d12eb8d6b64c2ab3c00a11b972cec257ac5cb07b3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "جابر بن عبد اللَّه بن رئاب",
+      "english": "Jabir ibn 'Abd Allah ibn Ri'ab",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "إدام بنت حرام بن ربيعة بن عدي بن غنم بن كعب بن سلمة",
+      "english": "Idam bint Haram ibn Rabi'a ibn 'Adi ibn Ghanm ibn Ka'b ibn Salima",
+      "kind": "person"
+    },
+    {
+      "arabic": "عامر بن عدي بن سنان بن نابي بن عمرو بن سواد",
+      "english": "'Amir ibn 'Adi ibn Sinan ibn Nabi ibn 'Amr ibn Sawad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النعمان بن خنساء بن سنان بن عبيد",
+      "english": "al-Nu'man ibn Khansa ibn Sinan ibn 'Ubayd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

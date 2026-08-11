@@ -1,0 +1,115 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011371",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11371,
+  "title": {
+    "english": "Sumayya, the slave woman of al-Harith ibn Kalada",
+    "arabic_observed": "سميّة، مولاة الحارث بن كلدة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011371-segment-0001",
+      "volume": 8,
+      "scan_page": 200,
+      "printed_page": 199,
+      "reader_page": 4112,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4112",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0200:f95182c4c4f61235",
+      "arabic": "١١٣٧١- سميّة، مولاة الحارث بن كلدة ،\nوكان يطؤها بملك اليمين، فولدت له نافعا ثم نفيعا، فانتفى منه، لكونه رآه أسود، ثم وهبها لزوجته صفية بنت أبي عبيد بن أسيد بن أبي علاج الثقفية، فزوجتها عبدا لها روميّا يقال له عبيد، فولدت له زيادا فأعتقته صفية. ذكر ذلك البلاذري عن عوانة أنّ الكواء اليشكري سبى سمية من الروم، ثم وهبها للحارث بن كلدة، فذكره، فلها إدراك، ولم يرد ما يدل على أنها رأت النبي ﷺ في حالة إسلامها، لكن يمكن أن تدخل في عموم قولهم: إنه لم يبق في حجة الوداع أحد من قريش وثقيف إلا أسلم وشهدها.\nالقسم الرابع",
+      "english": "11371—Sumayya, the slave woman of al-Harith ibn Kalada\n\nHe used to have intercourse with her by right of ownership, and she bore him Nafi' and then Nufay'. He disavowed Nufay' because he saw that he was black. He then gave her to his wife, Safiyya bint Abi Ubayd ibn Usayd ibn Abi Ilaj al-Thaqafiyya, who married her to a Roman slave of hers named Ubayd. She bore him Ziyad, whom Safiyya then manumitted. al-Baladhuri related this from Awana: al-Kawwa' al-Yashkuri had captured Sumayya from among the Byzantines and then given her to al-Harith ibn Kalada; he then recounted the foregoing. She therefore lived into the Prophet's time. Nothing has been transmitted to indicate that she saw the Prophet (may Allah bless him and grant him peace) while she was a Muslim. It is possible, however, that she falls within the general purport of their statement that, at the Farewell Pilgrimage, no one from Quraysh or Thaqif remained without embracing Islam and attending it.\n\nTHE FOURTH SECTION",
+      "arabic_sha256": "f92ef4acfec5b70dc5f1185227dfd4f9ea044f29372c368a2fa4ea3f8c7b6d3d",
+      "english_sha256": "752217e94946318041e6ad227012fddd3d7cdd442092e3a5300f4eeb2e6fb560",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "سميّة",
+      "english": "Sumayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن كلدة",
+      "english": "al-Harith ibn Kalada",
+      "kind": "person"
+    },
+    {
+      "arabic": "نافع",
+      "english": "Nafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "نفيع",
+      "english": "Nufay'",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت أبي عبيد بن أسيد بن أبي علاج الثقفية",
+      "english": "Safiyya bint Abi Ubayd ibn Usayd ibn Abi Ilaj al-Thaqafiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد",
+      "english": "Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "زياد",
+      "english": "Ziyad",
+      "kind": "person"
+    },
+    {
+      "arabic": "البلاذري",
+      "english": "al-Baladhuri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عوانة",
+      "english": "Awana",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكواء اليشكري",
+      "english": "al-Kawwa' al-Yashkuri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الروم",
+      "english": "Byzantines",
+      "kind": "other"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ثقيف",
+      "english": "Thaqif",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "حجة الوداع",
+      "english": "Farewell Pilgrimage",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011560",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11560,
+  "title": {
+    "english": "Aisha bint Ajara¹:",
+    "arabic_observed": "عائشة بنت عجرة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011560-segment-0001",
+      "volume": 8,
+      "scan_page": 255,
+      "printed_page": 254,
+      "reader_page": 4167,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4167",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0255:45e9e7d78ac67bbf",
+      "arabic": "١١٥٦٠- عائشة بنت عجرة «١»\n:\nحرف الغين المعجمة\nالقسم الأول",
+      "english": "11560—Aisha bint Ajara¹:\n\nTHE DOTTED LETTER GHAYN\n\nTHE FIRST SECTION",
+      "arabic_sha256": "2c189f0f2453f1e0a65ca69c757169938e580f48e25cd2351451755411020641",
+      "english_sha256": "97c5329c78d5a51d50a18bb289e6951dc31a61264f75e6d7b762162f69fc6bbc",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عائشة بنت عجرة",
+      "english": "Aisha bint Ajara",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

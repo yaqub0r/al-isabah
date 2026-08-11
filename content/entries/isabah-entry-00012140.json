@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012140",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12140,
+  "title": {
+    "english": "Umm Abd Allah bint Sawad",
+    "arabic_observed": "أم عبد اللَّه بنت سواد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012140-segment-0001",
+      "volume": 8,
+      "scan_page": 429,
+      "printed_page": 428,
+      "reader_page": 4341,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4341",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0429:c656a103def0737c",
+      "arabic": "١٢١٤٠- أم عبد اللَّه بنت سواد\nبن رزن، بفتح الرّاء وسكون الزّاي ثم نون، ابن زيد بن ثعلبة بن عبيد بن عدي بن غنم بن كعب بن سلمة الأنصاريّة.\nذكرها ابن سعد في المبايعات، وقال: أمها أمّ الحارث بنت النّعمان بن خنساء، تزوجها أبو محمد بن معاذ بن أنس.",
+      "english": "12140—Umm Abd Allah bint Sawad\n\nibn Razn—the ra is vowelled with a fatha, the zay is unvowelled, and it is followed by a nun—ibn Zayd ibn Tha'laba ibn Ubayd ibn Adi ibn Ghanm ibn Ka'b ibn Salama, the Ansari woman.\n\nIbn Sa'd mentioned her among the women who gave the pledge of allegiance and said: Her mother was Umm al-Harith bint al-Nu'man ibn Khansa. Abu Muhammad ibn Mu'adh ibn Anas married her.",
+      "arabic_sha256": "4f6c4648b41cdef023bdbc558e61dc9f12c7e4edffda6c0cda107186ad31d10a",
+      "english_sha256": "6900b697c86747f44294f3b3927691b4f2970ff7e623b54124a65d44184c2029",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبيّ / رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمّ الحارث بنت النّعمان بن خنساء",
+      "english": "Umm al-Harith bint al-Nu'man ibn Khansa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو محمد بن معاذ بن أنس",
+      "english": "Abu Muhammad ibn Mu'adh ibn Anas",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

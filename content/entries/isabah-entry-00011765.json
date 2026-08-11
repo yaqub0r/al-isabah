@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011765",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11765,
+  "title": {
+    "english": "Malika bint Kharija ibn Sinan:",
+    "arabic_observed": "مليكة بنت خارجة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011765-segment-0001",
+      "volume": 8,
+      "scan_page": 319,
+      "printed_page": 318,
+      "reader_page": 4231,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4231",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0319:fbba915439251974",
+      "arabic": "١١٧٦٥- مليكة بنت خارجة\nبن سنان. تأتي في القسم الثّالث «٣» .",
+      "english": "11765—Malika bint Kharija ibn Sinan:\n\nShe will appear in the third section.³",
+      "arabic_sha256": "69806383d8dd4669d5f4b26414646008c70466aff89f9c8e24b884ded4dcbacf",
+      "english_sha256": "6e65e23307ca9c2b726a58cea4983791760e9cb72c194bedccfe20daa9e477e6",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مليكة بنت خارجة بن سنان",
+      "english": "Malika bint Kharija ibn Sinan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

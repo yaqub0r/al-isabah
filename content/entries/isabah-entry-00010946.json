@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010946",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10946,
+  "title": {
+    "english": "Buhaysa bint Amir",
+    "arabic_observed": "بهيسة بنت عامر"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010946-segment-0001",
+      "volume": 8,
+      "scan_page": 54,
+      "printed_page": 53,
+      "reader_page": 3966,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3966",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0054:5311063d7fb7053e",
+      "arabic": "١٠٩٤٦- بهيسة بنت عامر\nبن خالدة بن عامر بن مخلد الأنصارية الزرقية «٢» ذكرها ابن سعد في المبايعات.",
+      "english": "10946—Buhaysa bint Amir\n\nibn Khalida ibn Amir ibn Mukhallad, the Ansari woman of Banu Zurayq. (2) Ibn Sa'd mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "8dd1e47b9306ed785a0380552b2e9d774ab505023f9992b93bd851d66aa73913",
+      "english_sha256": "a4515d0fe5a091c4a368d3cf2860581f9f39c7e004473c4e3cbadda1657b30c7",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الزرقية",
+      "english": "Banu Zurayq",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011819",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11819,
+  "title": {
+    "english": "Nu'ma bint Ja'far ibn Abi Talib.²",
+    "arabic_observed": "نعمى بنت جعفر"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011819-segment-0001",
+      "volume": 8,
+      "scan_page": 337,
+      "printed_page": 336,
+      "reader_page": 4249,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4249",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0337:e71cb7c477091877",
+      "arabic": "١١٨١٩- نعمى بنت جعفر\nبن أبي طالب «٢» . قال ابن مندة: لها ذكر، وليست لها رواية.\nقلت:\nأسنده الطّبرانيّ من طريق عبد الوهاب بن عطاء، عن ابن جريج، عن عطاء، عن أسماء بنت عميس- أن النبيّ ﵌ قال لنعمى بنت جعفر بن أبي طالب: «ما لي أرى أجساد بني جعفر أنضاء؟ أبهم حاجة؟» «٣» قالت: لا، ولكنهم تسرع إليهم العين أفأرقيهم؟ قالت: فعرضت عليه كلاما لا بأس به، فقال: «ارقيهم» .\nقال ابن الأثير: هذا الخبر معروف لأسماء، ولا أعرف هذه في أولاد جعفر.\nقلت: أخشى أن يكون في الخبر تصحيف، والصّواب قال لها في بيت جعفر [...] .\nإلخ. ويريد هذا [...] أخرج من طريق [...] عن إسماعيل بن عميس [...] . قالت.",
+      "english": "11819 — Nu'ma bint Ja'far ibn Abi Talib.²\n\nIbn Manda said: “She is mentioned, but no report is transmitted from her.”\n\nI say:\n\nal-Tabarani transmitted it with a chain of transmission by way of Abd al-Wahhab ibn Ata, from Ibn Jurayj, from Ata, from Asma bint Umays: the Prophet, may Allah bless him and grant him peace, said to Nu'ma bint Ja'far ibn Abi Talib, “Why do I see the bodies of Ja'far's children so emaciated? Are they in need of something?”³ She said, “No, but the evil eye quickly afflicts them. May I perform a protective incantation over them?” She said: “I presented to him some words in which there was nothing objectionable, and he said, ‘Perform the incantation over them.’”\n\nIbn al-Athir said: “This report is well known as a report of Asma, and I do not know this woman among the children of Ja'far.”\n\nI say: I fear that the report contains a scribal corruption, and that the correct wording is: “He said to her in the house of Ja'far […]” and so forth. By this he means […] transmitted through […] from Isma'il ibn Umays […]. She said.",
+      "arabic_sha256": "8893e1737f1f522f1485052b97ab5899f64bb8a4c7f716bbdb38a6ee9636ddd2",
+      "english_sha256": "48df794704ba8556fa69d045bd61725785cbc31c7d8dcf51facf56ceae8dbd75",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "نعمى بنت جعفر بن أبي طالب",
+      "english": "Nu'ma bint Ja'far ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الوهاب بن عطاء",
+      "english": "Abd al-Wahhab ibn Ata",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن جريج",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاء",
+      "english": "Ata",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت عميس",
+      "english": "Asma bint Umays",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "جعفر",
+      "english": "Ja'far ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسماعيل بن عميس",
+      "english": "Isma'il ibn Umays",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "speaker attribution",
+      "arabic_span": "قالت: لا، ولكنهم تسرع إليهم العين أفأرقيهم؟ قالت: فعرضت عليه كلاما",
+      "explanation": "The feminine speaker is not securely identifiable as Nu'ma or Asma from the canonical syntax. The translation therefore preserves the source's neutral “She” without supplying an identity.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0337:e71cb7c477091877"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

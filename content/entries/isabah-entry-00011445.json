@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011445",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11445,
+  "title": {
+    "english": "Zabya bint al-Bara' ibn Ma'rur,² the wife of Abu Qatada al-Ansari.",
+    "arabic_observed": "ظبية بنت البراء"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011445-segment-0001",
+      "volume": 8,
+      "scan_page": 226,
+      "printed_page": 225,
+      "reader_page": 4138,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4138",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0226:d285a2065eaa927a",
+      "arabic": "١١٤٤٥- ظبية بنت البراء\nبن معرور «٢»، امرأة أبي قتادة الأنصاريّ.\nروى حديثها مصعب بن ثابت بن عبد اللَّه بن أبي قتادة عن جدّه، عن أبي قتادة- أنّ النبيّ ﵌ قال لظبية بنت البراء بن معرور امرأة أبي قتادة: ليس عليكنّ جمعة ولا جهاد. فقالت: علّمني يا رسول اللَّه تسبيح الجهاد. فقال: «قولي سبحان اللَّه، ولا إله إلّا اللَّه، واللَّه أكبر، وللَّه الحمد» «٣» .",
+      "english": "11445—Zabya bint al-Bara' ibn Ma'rur,² the wife of Abu Qatada al-Ansari.\n\nHer hadith was transmitted by Mus'ab ibn Thabit ibn Abdullah ibn Abu Qatada, from his grandfather, from Abu Qatada: the Prophet—may Allah bless him and grant him peace—said to Zabya bint al-Bara' ibn Ma'rur, the wife of Abu Qatada: “Neither Friday prayer nor jihad is incumbent upon you women.” She said: “Teach me, O Messenger of Allah, the glorification of jihad.” He said: “Say: Glory be to Allah; there is no deity but Allah; Allah is greatest; and praise belongs to Allah.”³",
+      "arabic_sha256": "94521672198d40125ed2e971deccea25fdcfe55e8f6765c5a062e79aa1163237",
+      "english_sha256": "0bf79f4aa35e5b87dceda6d32e2feaa682092e7deeddae7178890279ef945879",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ظبية بنت البراء بن معرور",
+      "english": "Zabya bint al-Bara' ibn Ma'rur",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو قتادة الأنصاري",
+      "english": "Abu Qatada al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "مصعب بن ثابت بن عبد الله بن أبي قتادة",
+      "english": "Mus'ab ibn Thabit ibn Abdullah ibn Abu Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

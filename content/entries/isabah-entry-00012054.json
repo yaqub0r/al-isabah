@@ -1,0 +1,184 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012054",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12054,
+  "title": {
+    "english": "Umm Sa'd[4]:",
+    "arabic_observed": "أم سعد «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012054-segment-0001",
+      "volume": 8,
+      "scan_page": 403,
+      "printed_page": 402,
+      "reader_page": 4315,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4315",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0403:a01cb66255fb593f",
+      "arabic": "١٢٠٥٤- أم سعد «٤»\n: ويقال أم سعيد، بنت مرة بن عمرو الفهريّة، ويقال الجمحيّة.\nذكرها أبو عمر فقال: بنت عمر، ويقال عمير، الجمحيّة. روى عنها في كافل اليتيم.\nواختلف على صفوان في إسناده.\nقلت: وقد تقدّم بيان الاختلاف في الحديث في حرف الميم من الرّجال في مرة بن عمرو، وللَّه الحمد.\nومن جملة الاختلاف فيه\nما أخرجه ابن مندة من طريق محمد بن عمر، عن صفوان، عن أم سعد بنت عمرو الجمحيّة، قالت: سمعت رسول اللَّه ﵌ يقول: «من تكفّل يتيما له أو لغيره من النّاس كنت أنا وهو في الجنّة كهاتين» .\nولولا اتحاد المخرج، وأنّ مدار الحديث على صفوان بن سليم، لجوّزت أن تكون أم سعيد بنت مرة النهرية غير أم سعيد بنت عمرو أو عمير الجمحيّة، وقد أشرت إلى هذا في ترجمة مرة بن عمرو في أسماء الرّجال.\nوقد سمّى ابن السّكن أم سعيد بنت عمرو الجمحيّة أسيرة، وأورد حديثها من طريق أبي أسامة، عن محمد بن عمر، وعن صفوان بن سليم، عن أم سعيد أسيرة بنت عمرو الجمحية، قالت: قال رسول اللَّه ﵌ ... فذكره. ثم قال: ويقال عن أم سعد بنت مرة عن أبيها، وفيه اختلاف كثير. انتهى.\n(١) في أ: جيش.\n(٢) في أ: حصن بن خالد.\n(٣) أسد الغابة ت (٧٤٧٠) .\n(٤) الثقات ٣/ ٤٦٤، تجريد أسماء الصحابة ٢/ ٣٢٢، تقريب التهذيب ٢/ ٦٢٢، تهذيب التهذيب ١٢/ ٤٣١، تهذيب الكمال ٣/ ١٧٠٤، ذيل الكاشف ٢١٦٨.",
+      "english": "12054 — Umm Sa'd[4]:\n\nShe is also called Umm Sa'id, bint Murra ibn 'Amr al-Fihriyya, and she is also said to have been al-Jumahiyya.\n\nAbu 'Umar mentioned her and said: “She was bint 'Umar—or, it is said, bint 'Umayr—al-Jumahiyya.” A report was narrated from her concerning the caretaker of an orphan.\n\nIts chain of transmission was variously reported at the point of Safwan.\n\nI say: The disagreement concerning the hadith has already been explained under the letter mim in the men's section, in the entry on Murra ibn 'Amr. To Allah belongs all praise.\n\nAmong the forms of disagreement concerning it is what Ibn Manda transmitted by way of Muhammad ibn 'Umar, from Safwan, from Umm Sa'd bint 'Amr al-Jumahiyya, who said: I heard the Messenger of Allah—may Allah bless him and grant him peace—say: “Whoever undertakes the care of an orphan, whether his own or that of another person, I and he will be in Paradise like these two.”\n\nWere it not for the common point of origin, and for the fact that the hadith turns on Safwan ibn Sulaym, I would have considered it possible that Umm Sa'id bint Murra al-Nahriyya was someone other than Umm Sa'id bint 'Amr—or 'Umayr—al-Jumahiyya. I indicated this in the entry on Murra ibn 'Amr among the names of the men.\n\nIbn al-Sakan gave Umm Sa'id bint 'Amr al-Jumahiyya the name Asira and cited her hadith by way of Abu Usama, from Muhammad ibn 'Umar, from Safwan ibn Sulaym, from Umm Sa'id Asira bint 'Amr al-Jumahiyya, who said: The Messenger of Allah—may Allah bless him and grant him peace—said … and he related the hadith. He then said: “It is also narrated from Umm Sa'd bint Murra, from her father, and there is much disagreement concerning it.” End quote.\n\n[1] In manuscript A: “Jaysh.”\n\n[2] In manuscript A: “Hisn ibn Khalid.”\n\n[3] Usd al-Ghaba, entry 7470.\n\n[4] al-Thiqat, 3/464; al-Tajrid, 2/322; Taqrib al-Tahdhib, 2/622; Tahdhib al-Tahdhib, 12/431; Tahdhib al-Kamal, 3/1704; al-Dhayl, 2168.",
+      "arabic_sha256": "4f7d4b7b7a6f88efd65467491cf68892c2a31bb7b5460a723209497fb13cc3be",
+      "english_sha256": "8aac66dfcbcf968be148f52981762a0a12e949940906f6a32d43e4a2b3eb94f5",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012054-segment-0002",
+      "volume": 8,
+      "scan_page": 404,
+      "printed_page": 403,
+      "reader_page": 4316,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4316",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0404:a8d9cc4290690880",
+      "arabic": "وأخشى أن تكون أسيرة تحرفت من أنيسة المذكورة في مرة بنت عمرو. وباللَّه التوفيق.",
+      "english": "I fear that Asira may be a corruption of Anisa, who was mentioned under Murra bint Amr. And Allah grants success.",
+      "arabic_sha256": "c9df383a57250acf1a216a90951491f23df2cfe4c9d810c431996ea91a8ce630",
+      "english_sha256": "6979849333b797ad6543e024fcc04e51ee5e41b5916781a53d3082e94387e69a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفوان بن سليم",
+      "english": "Safwan ibn Sulaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "مرة بن عمرو",
+      "english": "Murra ibn 'Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمر",
+      "english": "Muhammad ibn 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعد بنت عمرو الجمحية",
+      "english": "Umm Sa'd bint 'Amr al-Jumahiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجنة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "أم سعيد بنت مرة النهرية",
+      "english": "Umm Sa'id bint Murra al-Nahriyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعيد بنت عمرو الجمحية",
+      "english": "Umm Sa'id bint 'Amr al-Jumahiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعيد أسيرة بنت عمرو الجمحية",
+      "english": "Umm Sa'id Asira bint 'Amr al-Jumahiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أسامة",
+      "english": "Abu Usama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعد بنت مرة",
+      "english": "Umm Sa'd bint Murra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "ذيل الكاشف",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسيرة",
+      "english": "Asira",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنيسة",
+      "english": "Anisa",
+      "kind": "person"
+    },
+    {
+      "arabic": "مرة بنت عمرو",
+      "english": "Murra bint Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

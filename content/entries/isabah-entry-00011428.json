@@ -1,0 +1,79 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011428",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11428,
+  "title": {
+    "english": "Safiyya,",
+    "arabic_observed": "صفية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011428-segment-0001",
+      "volume": 8,
+      "scan_page": 220,
+      "printed_page": 219,
+      "reader_page": 4132,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4132",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0220:d04623c4276621ab",
+      "arabic": "١١٤٢٨- صفية ،\nغير منسوبة.",
+      "english": "11428. Safiyya,\n\nwhose lineage is not given.",
+      "arabic_sha256": "b51b7344cdc1d279a9b2bd8d8df543b30d7870ed73df7d973b4d114539841d82",
+      "english_sha256": "d8ccd7945516f382ceaa5a07c00a0d16f1ddf9c38ac38e9bfc6eae6bc4df3df7",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011428-segment-0002",
+      "volume": 8,
+      "scan_page": 221,
+      "printed_page": 220,
+      "reader_page": 4133,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4133",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0221:a0395b55c2f900ae",
+      "arabic": "روى عنها مسلم بن صفوان، تقدمتا في\nالقسم الأول ، وذكرنا قول من قال في كل منهما إنها صفية بنت حيي، فأما التي روى عنها مسلم بن صفوان فيغلب على الظنّ أنها صفية بنت حيي، وأما الأخرى فعلى الاحتمال، واللَّه أعلم.\nحرف الضاد المعجمة\nالقسم الأول",
+      "english": "Muslim ibn Safwan narrated from her. Both were mentioned previously in the First Section, where we cited the opinion of those who said of each of them that she was Safiyya bint Huyayy. As for the one from whom Muslim ibn Safwan narrated, it is most probable that she was Safiyya bint Huyayy; as for the other, it remains a possibility. Allah knows best.\n\nTHE LETTER DAD WITH A DOT\n\nFIRST SECTION",
+      "arabic_sha256": "2ef1e4147de438e5f6f63ec0936359b96f3a6fd613be2475e1d3386353b08adb",
+      "english_sha256": "850d1ee6a82229d48f22d33ccaa1dbd301e3bd57c52ccb80b3931fd27bdd5c65",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "صفيّة",
+      "english": "Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية",
+      "english": "Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم بن صفوان",
+      "english": "Muslim ibn Safwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت حيي",
+      "english": "Safiyya bint Huyayy",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

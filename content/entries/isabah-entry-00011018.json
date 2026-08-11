@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011018",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11018,
+  "title": {
+    "english": "Jamila bint Abd al-Uzza",
+    "arabic_observed": "جميلة بنت عبد العزى"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011018-segment-0001",
+      "volume": 8,
+      "scan_page": 77,
+      "printed_page": 76,
+      "reader_page": 3989,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3989",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0077:6465e954ef428694",
+      "arabic": "١١٠١٨- جميلة بنت عبد العزى\nتقدم التنبيه عليها في القسم الأول.",
+      "english": "11018. Jamila bint Abd al-Uzza\n\nAttention was drawn to her previously in Section One.",
+      "arabic_sha256": "059ba400cf54f34409890f9b61bc2310e4b14cad6b05ef80808548dbf9c304b5",
+      "english_sha256": "e5ab71c656d8af120af79131e87866dd137d67b5099f5a7888eb248ba2602fef",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة بنت عبد العزى",
+      "english": "Jamila bint Abd al-Uzza",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011712",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11712,
+  "title": {
+    "english": "Layla bint Abi Hathma¹",
+    "arabic_observed": "ليلى بنت أبي حثمة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011712-segment-0001",
+      "volume": 8,
+      "scan_page": 304,
+      "printed_page": 303,
+      "reader_page": 4216,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4216",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0304:bac77a870c945fa2",
+      "arabic": "١١٧١٢- ليلى بنت أبي حثمة «١»\nبن حذيفة بن غانم بن عامر بن عبد اللَّه بن عبيد بن ابن عويج بن كعب بن لؤيّ القرشيّة العدويّة، أخت سليمان، وكانت زوج عامر بن ربيعة العنبريّ فولدت له عبد اللَّه. وقال ابن سعد: أسلمت قديما، وبايعت وكانت من المهاجرات الأوّل، هاجرت الهجرتين إلى الحبشة، ثم إلى المدينة، يقال: إنها أول ظعينة دخلت المدينة في الهجرة، ويقال أم سلمة.\nوذكر ابن إسحاق في رواية يونس بن بكير وغيره، عنه، عن عبد الرّحمن بن الحارث، عن عبد العزيز بن عبد اللَّه بن عامر بن ربيعة، عن أمه ليلى، قالت: كان عمر بن الخطّاب من أشدّ النّاس علينا في إسلامنا، فلما تهيّأنا للخروج إلى أرض الحبشة جاءني عمر وأنا على بعيري، فقال: إلى أين أمّ عبد اللَّه؟ فقلت: آذيتمونا في ديننا، فنذهب في أرض اللَّه. قال:\nصحبكم اللَّه، ثم ذهب فجاءني زوجي عامر بن ربيعة فقال لما أخبرته خبرهم: ترجين أن يسلم. فذكر القصّة.\nوروى اللّيث بن سعد، عن محمد بن عجلان- أن رجلا من موالي عبد اللَّه بن عامر حدّثه عن عبد اللَّه بن عامر، قال: دعتني أمي يوما ورسول اللَّه ﵌ قاعد في بيتنا، فقالت: هاك، تعال أعطيك شيئا. فقال لها رسول اللَّه ﵌:\n«ماذا أردت أن تعطيه؟» فقالت: أعطيه: تمرا. فقال: «أما إنّك لو لم تعطيه شيئا كتبت عليك كذبة» .\nرواه السّراج، عن قتيبة عنه، وتابع اللّيث حيوة بن شريح، ويحيى بن أيّوب، وحاتم بن إسماعيل، وعن يحيى بن أيوب مولى زياد، وهو عند ابن مندة من طريقه.",
+      "english": "11712—Layla bint Abi Hathma¹\n\nibn Hudhayfa ibn Ghanim ibn Amir ibn Abd Allah ibn Ubayd ibn Ibn Uwayj ibn Ka'b ibn Lu'ayy, a Qurashi woman of Banu Adi and the sister of Sulayman. She was the wife of Amir ibn Rabi'a al-Anbari and bore him Abd Allah. Ibn Sa'd said: She embraced Islam early and gave the pledge of allegiance. She was among the earliest women emigrants and made both emigrations, first to Abyssinia and then to Medina. It is said that she was the first woman traveling in a howdah to enter Medina during the Emigration; it is also said that it was Umm Salama.\n\nIbn Ishaq mentioned, in the transmission of Yunus ibn Bukayr and others from him, from Abd al-Rahman ibn al-Harith, from Abd al-Aziz ibn Abd Allah ibn Amir ibn Rabi'a, from his mother Layla, who said: “Umar ibn al-Khattab was among the people who treated us most harshly because of our Islam. When we had prepared to depart for the land of Abyssinia, Umar came to me while I was upon my camel and said, ‘Where are you going, Umm Abd Allah?’ I replied, ‘You have harmed us on account of our religion, so we are going away into Allah's land.’ He said, ‘May Allah accompany you.’ Then he departed. My husband, Amir ibn Rabi'a, came, and when I told him what had happened, he said, ‘Do you hope that he will embrace Islam?’” He then related the story.\n\nal-Layth ibn Sa'd transmitted from Muhammad ibn Ajlan that a man from among the clients of Abd Allah ibn Amir reported to him on the authority of Abd Allah ibn Amir, who said: “My mother called me one day while the Messenger of Allah—may Allah bless him and grant him peace—was sitting in our house. She said, ‘Here! Come, and I will give you something.’ The Messenger of Allah—may Allah bless him and grant him peace—asked her, ‘What did you intend to give him?’ She replied, ‘I will give him some dates.’ He said, ‘Indeed, had you not given him anything, a lie would have been recorded against you.’”\n\nal-Siraj related it from Qutayba, from al-Layth. Haywa ibn Shurayh, Yahya ibn Ayyub, and Hatim ibn Isma'il corroborated al-Layth. According to Yahya ibn Ayyub, the client was Ziyad; Ibn Manda has it through Yahya ibn Ayyub's route.",
+      "arabic_sha256": "b05cd258be64de5f570c631263ed49596106631ae3a019714ac4762ec8d9000f",
+      "english_sha256": "1cad847daf50a040cbade0dfb75c8c618073775ce7b475c55fb82039b2ecd5a4",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سليمان",
+      "english": "Sulayman ibn Abi Hathma",
+      "kind": "person"
+    },
+    {
+      "arabic": "عامر بن ربيعة العنبريّ",
+      "english": "Amir ibn Rabi'a al-Anbari",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عامر",
+      "english": "Abd Allah ibn Amir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن بكير",
+      "english": "Yunus ibn Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرّحمن بن الحارث",
+      "english": "Abd al-Rahman ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد العزيز بن عبد اللَّه بن عامر بن ربيعة",
+      "english": "Abd al-Aziz ibn Abd Allah ibn Amir ibn Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن الخطّاب",
+      "english": "Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمّ عبد اللَّه",
+      "english": "Umm Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "اللّيث بن سعد",
+      "english": "al-Layth ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عجلان",
+      "english": "Muhammad ibn Ajlan",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "السّراج",
+      "english": "al-Siraj",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتيبة",
+      "english": "Qutayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "حيوة بن شريح",
+      "english": "Haywa ibn Shurayh",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن أيّوب",
+      "english": "Yahya ibn Ayyub",
+      "kind": "person"
+    },
+    {
+      "arabic": "حاتم بن إسماعيل",
+      "english": "Hatim ibn Isma'il",
+      "kind": "person"
+    },
+    {
+      "arabic": "زياد",
+      "english": "Ziyad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أرض الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "القرشيّة",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "العدويّة",
+      "english": "Banu Adi",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "textual_genealogy",
+      "arabic_span": "بن عبيد بن ابن عويج",
+      "explanation": "The duplicated ibn is anomalous, and the collateral works omit it, but the canonical al-Isabah text explicitly prints it. It has therefore been preserved without emendation.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0304:bac77a870c945fa2"
+    },
+    {
+      "category": "isnad_genealogy",
+      "arabic_span": "عن عبد العزيز بن عبد اللَّه بن عامر بن ربيعة، عن أمه ليلى",
+      "explanation": "The literal chain makes Layla the mother of Abd al-Aziz, whereas the biographical context identifies her as the mother of Abd Allah ibn Amir. The collateral parallel reproduces the same chain and does not resolve the genealogical inconsistency.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0304:bac77a870c945fa2"
+    },
+    {
+      "category": "pronoun_reference",
+      "arabic_span": "لما أخبرته خبرهم",
+      "explanation": "The plural pronoun in خبرهم has no clear antecedent. The neutral rendering “when I told him what had happened” preserves the immediate sense; the collateral wording about Umar's gentleness was not imported into the canonical text.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0304:bac77a870c945fa2"
+    },
+    {
+      "category": "uncorroborated_nisba",
+      "arabic_span": "العنبريّ",
+      "explanation": "The canonical text clearly reads al-Anbari, so it has been retained. The supplied collateral entries omit the nisba and therefore neither confirm nor contradict it.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0304:bac77a870c945fa2"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

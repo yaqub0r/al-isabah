@@ -1,0 +1,179 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011217",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11217,
+  "title": {
+    "english": "Za'ida,",
+    "arabic_observed": "زائدة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011217-segment-0001",
+      "volume": 8,
+      "scan_page": 150,
+      "printed_page": 149,
+      "reader_page": 4062,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4062",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0150:c3dab5c17262d97b",
+      "arabic": "١١٢١٧- زائدة ،\nمولاة عمر بن الخطاب «٢» .\nوقع ذكرها في كتاب «شرف المصطفى» لأبي سعد النّيسابوريّ، وأورد حديثها أبو\n(١) أسد الغابة ت ٦٩٣٧.\n(٢) أسد الغابة ت ٦٩٤٥.",
+      "english": "11217 — Za'ida,\n\nthe freedwoman of Umar ibn al-Khattab.²\n\nShe is mentioned in the book Sharaf al-Mustafa by Abu Sa'd al-Naysaburi, and her report was cited by Abu—\n\n(1) Usd al-Ghaba, entry 6937.\n(2) Usd al-Ghaba, entry 6945.",
+      "arabic_sha256": "3eab6ece249583a7726ffbf5cd185e3767f781c7c2bba0d495efa2c37c585be3",
+      "english_sha256": "5d29ad50f9be36e9edbc0608432c8aab4f93ca28396163bc536aa406f4641dc6",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011217-segment-0002",
+      "volume": 8,
+      "scan_page": 151,
+      "printed_page": 150,
+      "reader_page": 4063,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4063",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0151:cbd565a185cc49c0",
+      "arabic": "موسى في «الذّيل»، فسماها زيدة، وكذا أوردها [المستغفري فأخرجا من طريق الفضل بن يزيد بن الفضل، عن بشر بن بكر، عن] الأوزاعي، عن واصل، زاد في رواية المستغفري مولى أبي عتبة، عن أبي نجيح، وأيضا في رواية المستغفري أمّ يحيى، قالت، قالت عائشة: كنت قاعدة عند النبيّ ﷺ إذا أقبلت زيدة جارية عمر بن الخطاب، وكانت من المجتهدات في العبادة، وكان النبي ﷺ [جالسا]، فقالت: كنت عجنت لأهلي، فخرجت لأحتطب فإذا برجل لقيّ الثياب، طيب الريح، كأن وجهه دارة القمر على فرس أغرّ محجل، فقال: هل أنت مبلغة عني ما أقول؟ قلت: نعم إن شاء اللَّه. قال: إذا لقيت محمدا فقولي له: إن الخضر يقرئك السلام، ويقول لك: ما فرحت بمبعث نبي ما فرحت بمبعثك، لأنّ اللَّه أعطاك الأمة المرحومة، والدعوة المقبولة، وأعطاك نهرا في الجنة ... الحديث.\nووقع في رواية أبي سعد أنّ اسمها زائدة، وأن الّذي لقيها رضوان خازن الجنة. قال أبو موسى: واصل مولى أبي عتبة لا سماع له عن أم يحيى. وقال الذهبي في الذيل: أظنه موضوعا.\nقلت: وهو كما ظن.",
+      "english": "Abu Musa included her hadith in al-Dhayl and named her Zayda. Likewise, [al-Mustaghfiri included it, and the two of them transmitted it by way of al-Fadl ibn Yazid ibn al-Fadl, from Bishr ibn Bakr, from] al-Awza'i, from Wasil—the al-Mustaghfiri recension adds, “the client of Abu 'Utba”—from Abu Najih; the al-Mustaghfiri recension additionally includes Umm Yahya, who said: Aisha said: “I was sitting with the Prophet, may Allah bless him and grant him peace, when Zayda, the slave-girl of Umar ibn al-Khattab, approached. She was one of those who strove assiduously in worship. The Prophet, may Allah bless him and grant him peace, was [sitting]. She said: ‘I had kneaded dough for my family, then went out to gather firewood, when suddenly I encountered a man in spotless clothing and of pleasant fragrance, whose face was like the disk of the moon, mounted upon a horse with a white blaze and white-marked legs. He said: “Will you convey what I say on my behalf?” I replied: “Yes, if Allah wills.” He said: “When you meet Muhammad, say to him: Al-Khidr sends you greetings of peace and says to you: I have never rejoiced over the sending of any prophet as I have rejoiced over your being sent, because Allah has granted you the community shown mercy, the supplication that is accepted, and a river in Paradise…”’”—to the end of the hadith.\n\nIn Abu Sa'd's recension, her name is given as Za'ida, and the one who met her was Ridwan, the keeper of Paradise. Abu Musa said: “Wasil, the client of Abu 'Utba, did not hear from Umm Yahya.” Al-Dhahabi said in al-Dhayl: “I think it is fabricated.”\n\nI say: It is as he thought.",
+      "arabic_sha256": "af7062f6b1ce65bf12e6b2319c9869464a64b1131bce0a10c13d3b9b54f6c73f",
+      "english_sha256": "0c359c85f9d3a5efeb176c2e41d4289fd470ba401460b7beaffef083b949a774",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمر",
+      "english": "Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "زائدة",
+      "english": "Za'ida",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن الخطاب",
+      "english": "Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "شرف المصطفى",
+      "english": "Sharaf al-Mustafa",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو سعد النيسابوري",
+      "english": "Abu Sa'd al-Naysaburi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذّيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "زيدة",
+      "english": "Zayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفضل بن يزيد بن الفضل",
+      "english": "al-Fadl ibn Yazid ibn al-Fadl",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشر بن بكر",
+      "english": "Bishr ibn Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأوزاعي",
+      "english": "al-Awza'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "واصل",
+      "english": "Wasil",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عتبة",
+      "english": "Abu 'Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نجيح",
+      "english": "Abu Najih",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم يحيى",
+      "english": "Umm Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخضر",
+      "english": "al-Khidr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الجنة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو سعد",
+      "english": "Abu Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "رضوان",
+      "english": "Ridwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010784",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10784,
+  "title": {
+    "english": "Arda bint al-Harith ibn Kalada al-Thaqafiyya:",
+    "arabic_observed": "أردة بنت الحارث بن كلدة الثقفي:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010784-segment-0001",
+      "volume": 8,
+      "scan_page": 7,
+      "printed_page": 6,
+      "reader_page": 3919,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3919",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0007:16f979fa3c96671e",
+      "arabic": "١٠٧٨٤- أردة بنت الحارث بن كلدة الثقفي:\nزوج عتبة بن غزوان.\nذكرها البلاذريّ وغيره، وقالوا: إنها كانت مع عتبة بالبصرة، وهو أمير عليها ومن أجلها قدم أبو بكرة وأخويه من أمه: نافع، وزياد.",
+      "english": "10784 — Arda bint al-Harith ibn Kalada al-Thaqafiyya:\n\nwife of 'Utba ibn Ghazwan.\n\nal-Baladhuri and others mentioned her. They said that she was with 'Utba in Basra while he was its governor, and it was because of her that Abu Bakra and his two maternal brothers, Nafi' and Ziyad, came there.",
+      "arabic_sha256": "080e56702bc3cdb71f830d050f697869655c2a0bf0cdd94514efdf6b46d6e375",
+      "english_sha256": "7ffa78dfc5fcb4b921d3acab2c43dd8956f46026d6952522f7eb159d00afe383",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أردة بنت الحارث بن كلدة الثقفي",
+      "english": "Arda bint al-Harith ibn Kalada al-Thaqafiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عتبة بن غزوان",
+      "english": "'Utba ibn Ghazwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "البلاذري",
+      "english": "al-Baladhuri",
+      "kind": "person"
+    },
+    {
+      "arabic": "البصرة",
+      "english": "Basra",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو بكرة",
+      "english": "Abu Bakra",
+      "kind": "person"
+    },
+    {
+      "arabic": "نافع",
+      "english": "Nafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "زياد",
+      "english": "Ziyad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

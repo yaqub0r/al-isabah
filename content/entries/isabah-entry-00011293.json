@@ -1,0 +1,142 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011293",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11293,
+  "title": {
+    "english": "Su'ad (4) bint Salama ibn Zuhayr ibn Tha'laba ibn 'Ubayd ibn 'Adi ibn Ghanm ibn (5) Ka'b ibn Salama al-Ansariyya.",
+    "arabic_observed": "سعاد «٤» بنت سلمة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011293-segment-0001",
+      "volume": 8,
+      "scan_page": 176,
+      "printed_page": 175,
+      "reader_page": 4088,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4088",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0176:a45db5a9903559b3",
+      "arabic": "١١٢٩٣\n- سعاد «٤» بنت سلمة\nبن زهير بن ثعلبة بن عبيد بن عديّ بن غنم بن «٥» كعب ابن سلمة الأنصارية.\n(١) أسد الغابة ت (٦٩٨٧)، الاستيعاب ت (٣٤٢٢)، الثقات ٣/ ١٨٥، أعلام النساء ٢/ ١٨١، تجريد أسماء الصحابة ٢/ ٢٧٥، تقريب التهذيب ٢/ ٦٠١، تهذيب التهذيب ١٢/ ٤٢٤، الكاشف ٣/ ٤٧٢ تهذيب الكمال ٣/ ٦٨٥، خلاصة تذهيب الكمال ٣/ ٣٨٤، بقي بن مخلد ٩٨٠.\n(٢) في أ: سعدى.\n(٣) أسد الغابة: ت (٦٩٨٨) .\n(٤) في أ: سعدى.\n(٥) أسد الغابة ت (٦٩٨٩) .",
+      "english": "11293 — Su'ad (4) bint Salama ibn Zuhayr ibn Tha'laba ibn 'Ubayd ibn 'Adi ibn Ghanm ibn (5) Ka'b ibn Salama al-Ansariyya.\n\n(1) Usd al-Ghaba, entry 6987; al-Isti'ab, entry 3422; al-Thiqat, 3/185; A'lam al-Nisa', 2/181; al-Tajrid, 2/275; Taqrib al-Tahdhib, 2/601; Tahdhib al-Tahdhib, 12/424; al-Kashif, 3/472; Tahdhib al-Kamal, 3/685; Khulasat Tadhhib al-Kamal, 3/384; Baqi ibn Makhlad, no. 980.\n\n(2) In manuscript A: Sa'da.\n\n(3) Usd al-Ghaba, entry 6988.\n\n(4) In manuscript A: Sa'da.\n\n(5) Usd al-Ghaba, entry 6989.",
+      "arabic_sha256": "362129ce21909909b75413d535f82c49f795933f9ca65553398ad3781390dbed",
+      "english_sha256": "656e3515f08d3522be4f2d0dffcd43cc5b4ba35d1f7cdf05301e1cd1efa99089",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011293-segment-0002",
+      "volume": 8,
+      "scan_page": 177,
+      "printed_page": 176,
+      "reader_page": 4089,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4089",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0177:02b1fefeda1a5eac",
+      "arabic": "ذكرها ابن سعد في المبايعات، وقال: هي التي سألت النبيّ ﷺ أن يبايعها لما في بطنها، وكانت حاملا،\nفقال لها النبي ﷺ: «أنت حرّة من الحرائر» .\nقال: وأمها أم قيس بنت حرام بن لوذان، وتزوجها حسنة بن صخر بن أمية بن خنساء بن عبيد.",
+      "english": "Ibn Sa'd mentioned her among the women who pledged allegiance and said: She was the one who asked the Prophet—may Allah bless him and grant him peace—to accept her pledge on behalf of what was in her womb, and she was pregnant. The Prophet—may Allah bless him and grant him peace—said to her: “You are a freeborn woman among freeborn women.”\n\nHe said: Her mother was Umm Qays bint Haram ibn Lawdhan, and Hasana ibn Sakhr ibn Umayya ibn Khansa ibn Ubayd married her.",
+      "arabic_sha256": "25cae121217eccd702b7f47b78b0c0e4ee9cea608293c21ba671bdbd5f600756",
+      "english_sha256": "341195fbf8eb96d6df3e135a0d8098229af954e376d5dcb601057955e2e0fb38",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سلمة",
+      "english": "Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب الكمال",
+      "english": "Khulasat Tadhhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم قيس بنت حرام بن لوذان",
+      "english": "Umm Qays bint Haram ibn Lawdhan",
+      "kind": "person"
+    },
+    {
+      "arabic": "حسنة بن صخر بن أمية بن خنساء بن عبيد",
+      "english": "Hasana ibn Sakhr ibn Umayya ibn Khansa ibn Ubayd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "حسنة بن صخر",
+      "explanation": "The consonantal text does not establish the vowels of حسنة, and the supplied Urdu and collateral evidence does not resolve them. “Hasana” is retained provisionally.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0177:02b1fefeda1a5eac"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

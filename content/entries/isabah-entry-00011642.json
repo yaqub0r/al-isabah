@@ -1,0 +1,199 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011642",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11642,
+  "title": {
+    "english": "Qatla:",
+    "arabic_observed": "قتلة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011642-segment-0001",
+      "volume": 8,
+      "scan_page": 284,
+      "printed_page": 283,
+      "reader_page": 4196,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4196",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0284:5eef448d5fad577f",
+      "arabic": "١١٦٤٢- قتلة:\nبفتح أوله وسكون المثناة الفوقانية، وقيل بالتّصغير، بنت عبد\n(١) أسد الغابة ت (٧١٩٩)، تجريد أسماء الصحابة ٢/ ٢٩٦.\n(٢) أخرجه الترمذي ٥/ ٤٤٢ في كتاب الدعوات باب ٢٢ ما جاء فيمن يقرأ القرآن عند المنام حديث رقم ٣٤٠٣ وقال صحيح وأورده المتقي الهندي في كنز العمال حديث رقم ٤١٢٩٨ وعزاه إلى الترمذي وابن حبان والحاكم في المستدرك والبيهقي في شعب الإيمان، وأورده الحسيني في كتاب اتحاف السادة المتقين ٥/ ١٣٣.",
+      "english": "11642—Qatla:\n\nThe first letter has a fatha and the two-dotted ta has a sukun; it is also said in the diminutive, Qutayla. She was the daughter of 'Abd—\n\n[1] Usd al-Ghaba, entry 7199; al-Tajrid, 2/296.\n\n[2] al-Tirmidhi transmitted it, 5/442, in the Book of Supplications, chapter 22, “What Has Been Related Concerning One Who Recites the Quran at Bedtime,” hadith no. 3403, and declared it sound. al-Muttaqi al-Hindi included it in Kanz al-'Ummal, hadith no. 41298, and attributed it to al-Tirmidhi, Ibn Hibban, al-Hakim in al-Mustadrak, and al-Bayhaqi in Shu'ab al-Iman. al-Husayni included it in Ithaf al-Sada al-Muttaqin, 5/133.",
+      "arabic_sha256": "65caac02e13f7f6d092b23c22fbf99e60237a165e0afc0f33c64fb005fe05833",
+      "english_sha256": "7ddd69a83e1a76cc1297d2d391ec41f6316ee4eeed8ada03e24a6781c41afbf4",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011642-segment-0002",
+      "volume": 8,
+      "scan_page": 285,
+      "printed_page": 284,
+      "reader_page": 4197,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4197",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0285:3353d568d4038ffc",
+      "arabic": "العزّى بن سعد بن نصر بن مالك بن حسل بن عامر بن لؤيّ القرشيّة العامريّة، والدة أسماء بنت أبي بكر، وشقيقها عبد اللَّه.\nكذا نسبها الزّبير وغيره.\nوقال أبو موسى في الذّيل: قتيلة بنت سعد بن عامر بن لؤيّ: كذا اختصر النسب وحذف منه جماعة، ثم قال: أوردها المستغفريّ في الصّحابيات، وقال، تأخر إسلامها، وسماها الحاكم أبو أحمد في الكنى. وحديثها عن هشام بن عروة، عن أبيه، عن أسماء بنت أبي بكر الصديق، قالت: قدمت على أمي وهي مشركة في عهد قريش ومدتهم، فاستأذنت رسول اللَّه ﵌ أنّ أصلها ... الحديث.\nوهو في الصّحيح، وفي بعض طرقه، «وهي راغبة»، قال أبو موسى: ليس في شيء من الروايات ذكر إسلامها، وقولها «راغبة» ليست تريد في الإسلام، بل في الصّلة، ولو كانت مسلمة لما احتاجت أسماء أن تستأذن في صلتها إلا أن تكون أسلمت بعد ذلك.\nقلت: إن كانت عاشت إلى الفتح فالظّاهر أنها أسلمت.",
+      "english": "al-Uzza ibn Sa'd ibn Nasr ibn Malik ibn Hisl ibn Amir ibn Lu'ayy, the Qurashi, the Amiri; the mother of Asma bint Abi Bakr and her full brother Abd Allah.\n\nThis is how al-Zubayr and others gave her lineage.\n\nAbu Musa said in al-Dhayl: “Qutayla bint Sa'd ibn Amir ibn Lu'ayy”—thus he abbreviated the lineage and omitted several persons from it. He then said: “al-Mustaghfiri included her among the female Companions and said that her acceptance of Islam came late. al-Hakim Abu Ahmad named her in al-Kuna. Her report is transmitted from Hisham ibn Urwa, from his father, from Asma bint Abi Bakr al-Siddiq, who said: ‘My mother came to me while she was a polytheist, during Quraysh's covenant and the term of their truce. I therefore sought the Messenger of Allah's permission—may Allah bless him and grant him peace—to maintain ties with her …’” to the end of the hadith.\n\nIt is in the Sahih. In some of its routes it reads, “while she was desirous.” Abu Musa said: “None of the narrations mentions her acceptance of Islam. By saying ‘desirous,’ she did not mean desirous of Islam, but rather desirous of maintaining ties. Had she been a Muslim, Asma would not have needed to seek permission to maintain ties with her—unless she accepted Islam afterward.”\n\nI say: If she lived until the Conquest, it is most likely that she accepted Islam.",
+      "arabic_sha256": "7b87ed6bf731ed8c9c0c6a1b3d709c74b39b2249a89ec23c52f7b073ea00dd62",
+      "english_sha256": "89753de13650499aaaf8e2f41d8ab284786d2fa388eaeecd801826d997aebddd",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "التّجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "قتلة",
+      "english": "Qatla",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتيلة",
+      "english": "Qutayla",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الدعوات",
+      "english": "Book of Supplications",
+      "kind": "work"
+    },
+    {
+      "arabic": "القرآن",
+      "english": "Quran",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-'Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "شعب الإيمان",
+      "english": "Shu'ab al-Iman",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحسيني",
+      "english": "al-Husayni",
+      "kind": "person"
+    },
+    {
+      "arabic": "إتحاف السادة المتقين",
+      "english": "Ithaf al-Sada al-Muttaqin",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسماء بنت أبي بكر الصديق",
+      "english": "Asma bint Abi Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah ibn Abi Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "قتيلة بنت سعد بن عامر بن لؤيّ",
+      "english": "Qutayla bint Sa'd ibn Amir ibn Lu'ayy",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفريّ",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحاكم أبو أحمد",
+      "english": "al-Hakim Abu Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكنى",
+      "english": "al-Kuna",
+      "kind": "work"
+    },
+    {
+      "arabic": "هشام بن عروة",
+      "english": "Hisham ibn Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "العامريّة",
+      "english": "Banu Amir ibn Lu'ayy",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

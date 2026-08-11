@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011028",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11028,
+  "title": {
+    "english": "Habiba bint al-Husayn",
+    "arabic_observed": "حبيبة بنت الحصين"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011028-segment-0001",
+      "volume": 8,
+      "scan_page": 81,
+      "printed_page": 80,
+      "reader_page": 3993,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3993",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0081:ffbb46b33cd0e928",
+      "arabic": "١١٠٢٨- حبيبة بنت الحصين\nبن عبد اللَّه بن أنس بن أمية بن زيد بن دارم، زوج السائب بن أبي السائب.\nذكرها الزّبير بن بكّار، وهي والدة عبد اللَّه بن السائب بن أبي السائب، ولعبد اللَّه ولأبويه صحبة.",
+      "english": "11028 — Habiba bint al-Husayn\n\nibn Abd Allah ibn Anas ibn Umayya ibn Zayd ibn Darim, wife of al-Sa'ib ibn Abu al-Sa'ib.\n\nal-Zubayr ibn Bakkar mentioned her. She was the mother of Abd Allah ibn al-Sa'ib ibn Abu al-Sa'ib. Abd Allah and both his parents were Companions.",
+      "arabic_sha256": "cd71f874d1a099bd64605cf7939e66604e4e0fd5dd58de5ea9388af527d02d20",
+      "english_sha256": "ae54351c9a3e90f3d132afa88d467d2028ec3d510dca9b2ab8af25781105c144",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "السائب بن أبي السائب",
+      "english": "al-Sa'ib ibn Abu al-Sa'ib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّبير بن بكّار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن السائب بن أبي السائب",
+      "english": "Abd Allah ibn al-Sa'ib ibn Abu al-Sa'ib",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012057",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12057,
+  "title": {
+    "english": "Umm Sa'id",
+    "arabic_observed": "أم سعيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012057-segment-0001",
+      "volume": 8,
+      "scan_page": 404,
+      "printed_page": 403,
+      "reader_page": 4316,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4316",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0404:a8d9cc4290690880",
+      "arabic": "١٢٠٥٧- أم سعيد\nبنت أبي جهل بن هشام المخزوميّة. وقع ذكرها في قصّته في مسند عبد اللَّه بن عمرو بن العاص، من مسند أحمد. ومن المعجم الكبير للطّبراني، وهي من طريق رجل من هذيل، قال: رأيت عبد اللَّه بن عمرو ... فذكر قصّة، فرأى أم سعيد بنت أبي جهل متقلّدة قوسا وهي تمشي مشية الرجال، فذكر الحديث في ذم من تشبّه بالرّجال من النّساء، ورجاله ثقات إلا الهذلي، فإنه لم يسم.",
+      "english": "12057—Umm Sa'id\n\nbint Abu Jahl ibn Hisham, the Makhzumi woman. She is mentioned in an account in the musnad of Abd Allah ibn Amr ibn al-As in Musnad Ahmad, and in al-Tabarani's al-Mu'jam al-Kabir. It is transmitted by way of a man from Hudhayl, who said: “I saw Abd Allah ibn Amr...” He then related an account in the course of which he saw Umm Sa'id bint Abu Jahl with a bow slung over her shoulder, walking as men walk. He then related the hadith condemning women who imitate men. Its transmitters are trustworthy except for the Hudhali man, who was not named.",
+      "arabic_sha256": "0db1b818f2ecec504dc90cb5e1670fe2d87eb32e56c9e0657cae02f14495c59c",
+      "english_sha256": "4f1909d52bfc2f2f9456a45cca346df0e97f233376139e01e3f44e2c305f28e1",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "المخزوميّة",
+      "english": "Makhzum",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عبد اللَّه بن عمرو بن العاص",
+      "english": "Abd Allah ibn Amr ibn al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند عبد اللَّه بن عمرو بن العاص",
+      "english": "Musnad Abd Allah ibn Amr ibn al-As",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسند أحمد",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "المعجم الكبير",
+      "english": "al-Mu'jam al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطّبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "هذيل",
+      "english": "Hudhayl",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سعيد",
+      "english": "Sa'id ibn al-Musayyib ibn Hazn",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعيد",
+      "english": "Umm Sa'id",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

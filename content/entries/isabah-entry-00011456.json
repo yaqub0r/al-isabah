@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011456",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11456,
+  "title": {
+    "english": "Atika bint Awf:",
+    "arabic_observed": "عاتكة بنت عوف:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011456-segment-0001",
+      "volume": 8,
+      "scan_page": 231,
+      "printed_page": 230,
+      "reader_page": 4143,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4143",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0231:97b0c3ca1779eb87",
+      "arabic": "١١٤٥٦- عاتكة بنت عوف:\nأخت عبد الرّحمن «١»، أحد العشرة.\nتقدم نسبها في ترجمة أخيها «٢» . قال ابن سعد: أختها الشّفاء بنت عوف بن عبد الحارث بن زهرة. تزوجها مخرمة بن نوفل، فولدت له المسور وصفوان الأكبر، والصّلت الأكبر، وأم صفوان.\nوأسلمت عاتكة بنت عوف وأختها الشفاء بنت عوف، وبايعتا رسول اللَّه ﵌. قال أبو عمر: كانت هي وأختها الشفاء من المهاجرات: كذا قال. وتقدم بيانها في حرف الشّين المعجمة.",
+      "english": "11456 — Atika bint Awf:\n\nThe sister of Abd al-Rahman, one of the Ten. (1)\n\nHer lineage was given earlier in the entry on her brother. (2) Ibn Sa'd said: Her sister was al-Shifa bint Awf ibn Abd al-Harith ibn Zuhra. Makhrama ibn Nawfal married her, and she bore him al-Miswar, Safwan the Elder, al-Salt the Elder, and Umm Safwan.\n\nAtika bint Awf and her sister al-Shifa bint Awf embraced Islam and pledged allegiance to the Messenger of Allah, may Allah bless him and grant him peace. Abu Umar said: She and her sister al-Shifa were among the Emigrant women—so he said. The discussion of al-Shifa has already appeared under the dotted letter shin.",
+      "arabic_sha256": "a989edb73d0fedc9cce0f473d9a94aa1bd54f4d4bbde89a9a3b9eb38ac211041",
+      "english_sha256": "9329c38f2dc237c3b5a943377110ab23d5641529e4d78dc92e0e943af5f69e6a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عاتكة بنت عوف",
+      "english": "Atika bint Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرّحمن",
+      "english": "Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشّفاء بنت عوف بن عبد الحارث بن زهرة",
+      "english": "al-Shifa bint Awf ibn Abd al-Harith ibn Zuhra",
+      "kind": "person"
+    },
+    {
+      "arabic": "مخرمة بن نوفل",
+      "english": "Makhrama ibn Nawfal",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسور",
+      "english": "al-Miswar",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفوان الأكبر",
+      "english": "Safwan the Elder",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصّلت الأكبر",
+      "english": "al-Salt the Elder",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم صفوان",
+      "english": "Umm Safwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

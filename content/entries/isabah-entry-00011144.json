@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011144",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11144,
+  "title": {
+    "english": "Khayra bint Qays al-Fihriyya",
+    "arabic_observed": "خيرة بنت قيس الفهرية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011144-segment-0001",
+      "volume": 8,
+      "scan_page": 125,
+      "printed_page": 124,
+      "reader_page": 4037,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4037",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0125:99ed85a30764fea4",
+      "arabic": "١١١٤٤- خيرة بنت قيس الفهرية ،\nأخت فاطمة، زوج سعيد بن زيد بن عمرو بن نفيل، أحد العشرة.\nلها حديث في مسند الشاميين للطبراني.",
+      "english": "11144 — Khayra bint Qays al-Fihriyya\n\nThe sister of Fatima and wife of Sa'id ibn Zayd ibn Amr ibn Nufayl, one of the Ten.\n\nShe has a hadith in al-Tabarani's Musnad al-Shamiyyin.",
+      "arabic_sha256": "971658249f0f49b4f7942f9442590e2a269d88c7e06ba0fb992c7b54942bddc5",
+      "english_sha256": "475c523bef17a2e51870abb813178b63b73edfc7b2bae8462ec088215a71e33d",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيرة بنت قيس الفهرية",
+      "english": "Khayra bint Qays al-Fihriyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن زيد بن عمرو بن نفيل",
+      "english": "Sa'id ibn Zayd ibn Amr ibn Nufayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند الشاميين",
+      "english": "Musnad al-Shamiyyin",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

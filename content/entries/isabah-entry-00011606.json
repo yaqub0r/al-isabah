@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011606",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11606,
+  "title": {
+    "english": "Fatima bint Amr",
+    "arabic_observed": "فاطمة بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011606-segment-0001",
+      "volume": 8,
+      "scan_page": 277,
+      "printed_page": 276,
+      "reader_page": 4189,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4189",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0277:1180e1120e6b769b",
+      "arabic": "١١٦٠٦- فاطمة بنت عمرو\nبن حزام الأنصارية، عمة جابر «٢» .\nتقدم نسبها مع أخيها عمرو بن حزام، ثبت ذكرها في الحديث الصحيح من رواية شعبة، عن ابن المنكدر، عن جابر، قال: لما قتل أبي جعلت أكشف التراب عن وجهه والقوم ينهونني، فجعلت عمتي فاطمة بنت عمرو تبكيه ... الحديث، وهذا لفظ رواية الطيالسي عن شعبة.",
+      "english": "11606—Fatima bint Amr\n\nibn Hizam al-Ansariyya, the paternal aunt of Jabir.(2)\n\nHer lineage was given above together with that of her brother, Amr ibn Hizam. Her mention is established in the authentic hadith transmitted by Shu'ba, from Ibn al-Munkadir, from Jabir, who said: “When my father was killed, I began brushing the dust away from his face while the people were trying to stop me. My paternal aunt, Fatima bint Amr, began weeping for him…” to the end of the hadith. This is the wording of al-Tayalisi's narration from Shu'ba.",
+      "arabic_sha256": "29df8bd538e2818708b84bd76a5e7806cf0ed9ba1a56aeb7678e0be42d01ac23",
+      "english_sha256": "5b21ce011119ed341d61daef470bdffc33a6146965ffb0421faedad3b089ea15",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "جابر",
+      "english": "Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن حزام",
+      "english": "Amr ibn Hizam",
+      "kind": "person"
+    },
+    {
+      "arabic": "شعبة",
+      "english": "Shu'ba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن المنكدر",
+      "english": "Ibn al-Munkadir",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطيالسي",
+      "english": "al-Tayalisi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "al-Sahih",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

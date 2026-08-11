@@ -1,0 +1,134 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012220",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12220,
+  "title": {
+    "english": "Umm Kathir bint Yazid (3) al-Ansariyya (4):",
+    "arabic_observed": "أم كثير بنت يزيد «٣» الأنصارية «٤»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012220-segment-0001",
+      "volume": 8,
+      "scan_page": 456,
+      "printed_page": 455,
+      "reader_page": 4368,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4368",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0456:4efa6e098e2ddf37",
+      "arabic": "١٢٢٢٠\n- أم كثير بنت يزيد «٣» الأنصارية «٤»:\nذكرها أبو نعيم،\nوأخرج من طريق أحمد بن سهيل الوراق، عن إسحاق بن قيس عن\n(١) أسد الغابة ت (٧٥٦٩) .\n(٢) أسد الغابة ت (٧٥٧٤)، أعلام النساء ٤/ ٢٣٣، بقي بن مخلد ٩٧٠- تجريد أسماء الصحابة ٢/ ٣٣٢- تلقيح فهوم أهل الأثر ٣٨٧، تبصير المنتبه ٣/ ١١٨٣- الإكمال ٧/ ١٥٧، الاستيعاب ت (٣٦٥٧) .\n(٣) في أ: أم كثير بنت زيد.\n(٤) أسد الغابة ت (٧٥٧٥)، تجريد أسماء الصحابة ٢/ ٣٣٢.",
+      "english": "12220 - Umm Kathir bint Yazid (3) al-Ansariyya (4):\n\nAbu Nu'aym mentioned her and transmitted, by way of Ahmad ibn Suhayl al-Warraq, from Ishaq ibn Qays, from—\n\n(1) Usd al-Ghaba, entry 7569.\n\n(2) Usd al-Ghaba, entry 7574; A'lam al-Nisa', 4/233; Baqi ibn Makhlad, 970; al-Tajrid, 2/332; Talqih Fuhum Ahl al-Athar, 387; Tabsir al-Muntabih, 3/1183; al-Ikmal, 7/157; al-Isti'ab, entry 3657.\n\n(3) In manuscript A: “Umm Kathir bint Zayd.”\n\n(4) Usd al-Ghaba, entry 7575; al-Tajrid, 2/332.",
+      "arabic_sha256": "1f9fe271336f1cdd8eaf26c1759b99b2efa67a57e497c8a40c79c824f6b3e9a5",
+      "english_sha256": "b8167ea6f5f18a268c4e61b6cfcd84e400a411a441ef3d70d797fc5fc1a954a0",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012220-segment-0002",
+      "volume": 8,
+      "scan_page": 457,
+      "printed_page": 456,
+      "reader_page": 4369,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4369",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0457:434516e6eba7deab",
+      "arabic": "أبي الصباح، عن أم كثير بنت يزيد الأنصارية، قالت: دخلت أنا وأختي على النبي ﵌، فقلت له: إن أختي تريد أن تسألك عن شيء، وهي تستحي، قال:\n«فلتسأل، فإنّ طلب العلم فريضة» . قال: فقلت له، أو قالت له أختي: إن لي ابنا يلعب بالحمام. قال: «أما إنّه لعبة المنافقين» .",
+      "english": "from Abu al-Sabah, from Umm Kathir bint Yazid al-Ansariyyah, who said: “My sister and I entered upon the Prophet, may Allah bless him and grant him peace, and I said to him, ‘My sister wishes to ask you about something, but she is shy.’ He said: ‘Let her ask, for seeking knowledge is an obligation.’ He said: ‘Then I said to him—or my sister said to him—“I have a son who plays with pigeons.”’ He said: ‘Indeed, it is the pastime of the hypocrites.’”",
+      "arabic_sha256": "39509ceb60eb10e3d2e81148091a2c1769f699b1037a44cbea5e8d680d572262",
+      "english_sha256": "3a3e4f96944bae9be68618ba090f2502a341f5f1b0f769dda9c9e346ada30f2a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد بن سهيل الوراق",
+      "english": "Ahmad ibn Suhayl al-Warraq",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق بن قيس",
+      "english": "Ishaq ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "تبصير المنتبه",
+      "english": "Tabsir al-Muntabih",
+      "kind": "work"
+    },
+    {
+      "arabic": "الإكمال",
+      "english": "al-Ikmal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم كثير بنت زيد",
+      "english": "Umm Kathir bint Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي الصباح",
+      "english": "Abu al-Sabah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كثير بنت يزيد الأنصارية",
+      "english": "Umm Kathir bint Yazid al-Ansariyyah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

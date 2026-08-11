@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010933",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10933,
+  "title": {
+    "english": "Barira, a freedwoman of the Messenger of Allah, may Allah bless him and grant him peace",
+    "arabic_observed": "بريرة، مولاة رسول اللَّه ﷺ"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010933-segment-0001",
+      "volume": 8,
+      "scan_page": 51,
+      "printed_page": 50,
+      "reader_page": 3963,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3963",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0051:7387003ca04454f1",
+      "arabic": "١٠٩٣٣- بريرة، مولاة رسول اللَّه ﷺ\nقال ابن أبي شيبة: حدثنا وكيع، عن المنذر بن ثعلبة، عن عبد اللَّه بن بريرة، قال:\nكان رسول اللَّه ﷺ إذا استيقظ من الليل دعا جارية له يقال لها بريرة بالسواك «١» . ويحتمل أن تكون هي التي بعدها، ونسبت إلى ولاء رسول اللَّه ﷺ مجازا.",
+      "english": "10933—Barira, a freedwoman of the Messenger of Allah, may Allah bless him and grant him peace\n\nIbn Abi Shayba said: Waki' related to us, from al-Mundhir ibn Tha'laba, from 'Abd Allah ibn Barira, who said: When the Messenger of Allah, may Allah bless him and grant him peace, awoke during the night, he would summon a slave-girl of his named Barira to bring the tooth-stick.[1] It is possible that she was the woman in the following entry and that her clientage was figuratively ascribed to the Messenger of Allah, may Allah bless him and grant him peace.",
+      "arabic_sha256": "dd9b4b22253ab4df74db87a67b0a593a13c337269545a19f953aeb7280455ed9",
+      "english_sha256": "1571219b4fc16ea236adafab0a0b1dbaa085d9ceaae7f053da05aa87d719b6b2",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بريرة، مولاة رسول اللَّه",
+      "english": "Barira freedwoman of the Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن أبي شيبة",
+      "english": "Ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "وكيع",
+      "english": "Waki'",
+      "kind": "person"
+    },
+    {
+      "arabic": "المنذر بن ثعلبة",
+      "english": "al-Mundhir ibn Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن بريرة",
+      "english": "'Abd Allah ibn Barira",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

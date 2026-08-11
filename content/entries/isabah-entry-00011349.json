@@ -1,0 +1,69 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011349",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11349,
+  "title": {
+    "english": "Saniyya bint al-Harith",
+    "arabic_observed": "سنية بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011349-segment-0001",
+      "volume": 8,
+      "scan_page": 192,
+      "printed_page": 191,
+      "reader_page": 4104,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4104",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0192:8c6d93645271e4cb",
+      "arabic": "١١٣٤٩- سنية بنت الحارث\n(١) أسد الغابة ت (٧٠٢٣) .",
+      "english": "11349 — Saniyya bint al-Harith\n\n[1] Usd al-Ghaba, entry 7023.",
+      "arabic_sha256": "bb0c3c19f38c3f364a39f6a606b8c6a1d614cd7bb89a0ea9c3b921ab6776ab65",
+      "english_sha256": "9e7ade4d254ede47f751e87addb6dc60c8912ff3d3610572249e2d4d5e6ebe39",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011349-segment-0002",
+      "volume": 8,
+      "scan_page": 193,
+      "printed_page": 192,
+      "reader_page": 4105,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4105",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0193:2252cc322c1708c7",
+      "arabic": "روى عن ابن عباس «١» أنها كانت ممّن هاجر في الهدنة، فامتحنت، فقالت: ما جئت إلا رغبة في الإسلام.",
+      "english": "It was narrated from Ibn Abbas (1) that she was among those who emigrated during the truce. She was tested, and she said, “I came only out of a desire for Islam.”",
+      "arabic_sha256": "2fb3295af3e113f3dff20f238b666ec9c1278e4c95cbe5bfc7ce55d4284d8d0b",
+      "english_sha256": "3a4fbf29823c5ead46191559b138bc8b16ebe322faf3e7c54b7ca932855e5db5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سنية بنت الحارث",
+      "english": "Saniyya bint al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

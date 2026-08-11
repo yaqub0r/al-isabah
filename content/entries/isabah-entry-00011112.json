@@ -1,0 +1,359 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011112",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11112,
+  "title": {
+    "english": "Khansa bint 'Amr",
+    "arabic_observed": "خنساء بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011112-segment-0001",
+      "volume": 8,
+      "scan_page": 110,
+      "printed_page": 109,
+      "reader_page": 4022,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4022",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0110:17634dd5329e5c57",
+      "arabic": "١١١١٢- خنساء بنت عمرو\nبن الشّريد «١» بن ثعلبة بن عصية بن خفاف بن امرئ القيس بن بهثة بن سليم السلمية الشاعرة المشهورة، اسمها تماضر، بمثناة فوقانية أوله وضاد معجمة- وفي ذلك يقول دريد بن الصمة حين رآها تهنأ إبلا لها ثم تجردت واغتسلت فأعجبته فخطبها، فأبت فقال فيها:\nحيّوا تماضر واربعوا صحبي ... وقفوا فإنّ وقوفكم حسبي\nما إن رأيت ولا سمعت به ... كاليوم طالي أينق جرب\nمبتذّلا تبدو محاسنه ... يضع الهناء مواضع النّقب\nأخناس قد هام الفؤاد بكم ... واعتاده داء من الحبّ «٢»\n[الكامل]\n(١) أسد الغابة ت ٦٨٨٣، الاستيعاب ت ٣٣٦٣.\n(٢) ينظر البيت الأول في ديوان دريد بن الصمة وهو في ديوانه ص ٤٣. وبعده:\nأخناس قد هام الفؤادكم ... وأصابه تبل من الحبّ\nومناسبة هذه الأبيات كما قال صاحب الأغاني ١٠/ ٢١، ٢٢، مرّ دريد ابن الصمة بالخنساء بنت عمرو ابن الشريد وهي تهنأ بعيرا لها، وقد تبذلت حتى فرغت منه، ثمّ نضّت عنها ثيابها فاغتسلت ودريد بن الصمة يراها وهي لا تشعر به فأعجبته، فانصرف إلى رحلها وأنشأ يقول ... ويروى البيت الأول في الوحشيات: ٢٥: «حيّوا أمامة وانظروا» والّذي عليه جميع المصادر (تماضر) وهو ما يتناسب. أربعوا: الإرباع الاطمئنان والإقامة في المكان. وينظر الأعلام ٢/ ٣٩٩.",
+      "english": "11112—Khansa bint 'Amr\n\nibn al-Sharid (1) ibn Tha'laba ibn 'Usayya ibn Khifaf ibn Imru' al-Qays ibn Bahtha ibn Sulaym, the Sulami woman and famous poet. Her name was Tumadir—with an initial ta bearing two dots above and a dotted dad. In connection with this, Duraid ibn al-Simma saw her applying ointment to some camels of hers, after which she stripped and bathed. He was taken with her and proposed marriage to her, but she refused, so he said of her:\n\nGreet Tumadir, and stay awhile, my companions;\nstop, for your stopping is enough for me.\n\nNever have I seen or heard tell of anyone\nlike one daubing mangy she-camels today—\n\ndressed for work, with beauty showing,\nplacing ointment wherever the sores lie.\n\nO Khunas, the heart has become enamored of you,\nand a sickness born of love has beset it. (2)\n\n[al-Kamil meter]\n\n(1) Usd al-Ghaba, entry 6883; al-Isti'ab, entry 3363.\n\n(2) See the first verse in the Diwan of Duraid ibn al-Simma; it is in his Diwan, p. 43. It is followed by:\n\nO Khunas, the heart has become enamored [of you],\nand wasting love-sickness has afflicted it.\n\nThe occasion of these verses, as the author of al-Aghani, 10/21–22, states, was that Duraid ibn al-Simma passed by Khansa bint 'Amr ibn al-Sharid while she was applying ointment to a camel of hers. She was dressed for work until she had finished with it; then she took off her clothes and bathed. Duraid ibn al-Simma was watching her without her being aware of him. He admired her, went to her camp, and began to recite… The first verse is also transmitted in al-Wahshiyyat, p. 25, as: “Greet Umama and look.” The reading found in all the sources is “Tumadir,” and that is the reading that fits. “Stay awhile” (arbi'u): al-irba' means settling at ease and remaining in a place. See also al-A'lam, 2/399.",
+      "arabic_sha256": "458855d35e5722e0fee047583b362531ed12cf53b3de749f2aae158977becf9b",
+      "english_sha256": "6fdc0f092aeaa2419bf4de8bfd121298767582ea5e970ae88cd14bbe88c246e8",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011112-segment-0002",
+      "volume": 8,
+      "scan_page": 111,
+      "printed_page": 110,
+      "reader_page": 4023,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4023",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0111:33ff888baffedead",
+      "arabic": "فبلغتها خطبته، فقالت: لا أدع بني عمي الطوال مثل عوالي الرماح، وأتزوّج شيخا، فلما بلغه ذلك قال من أبيات:\nوقاك اللَّه يا ابنة آل عمرو ... من الفتيان أمثالي ونفسي\nوقالت إنّه شيخ كبير ... وهل خبّرتها أنّي ابن أمس\n[وقد علم المراضع في جمادى ... إذا استعجلن عن حزّ بنهس]\n[الوافر] إلى أن قال:\nوأنّي لا أبيت بغير نحر ... وأبدأ بالأرامل حين أمسى\nوأنّي لا يهرّ الكلب ضيفي ... ولا جاري يبيت خبيث نفس\nفأجابته بأبيات.\nقال أبو عمر: قدمت على النبي ﷺ مع قومها من بني سليم، فأسلمت معهم، فذكروا أنّ رسول اللَّه ﷺ كان يستنشدها ويعجبه شعرها، وكانت تنشده، وهو يقول: «هيه يا خناس»، ويومئ بيده.\nقالوا: وكانت الخنساء تقول في أول أمرها البيتين أو الثلاثة حتى قتل أخوها شقيقها معاوية بن عمرو، وقتل أخوها لأبيها صخر، وكان أحبهما إليها، لأنه كان حليما جوادا محبوبا في العشيرة، كان غزا بني أسد فطعنه أبو ثور الأسدي طعنة مرض منها حولا، ثم مات، فلما قتل أخواها أكثرت من الشعر، فمن قولها في صخر:\nأعينيّ جودا ولا تجمدا ... ألا تبكيان لصخر النّدى\nألا تبكيان الجريء الجميل ... ألّا تبكيان الفتى السّيّدا\nطويل النّجاد عظيم الرّماد ... ساد عشيرته أمردا «١»\n[المتقارب] ومن قولها فيه:\nوإنّ صخرا لمولانا وسيّدنا ... وإنّ صخرا إذا نشتو لنحّار\n(١) البيت للخنساء ترثي أخاها صخرا كما في ديوانها ص ٣٥ وبعده:\nألا تبكيان الجريء الجميل ... ألا تبكيان الفتى السّيّدا\nطويل النّجاد رفيع العماد ... ساد عشيرته أمردا\nتنظر الأبيات في أسد الغابة ترجمة رقم (٦٨٨٣)، والاستيعاب ترجمة رقم (٣٣٦٣) .",
+      "english": "His proposal reached her, and she said, “I will not leave my tall paternal cousins, who are like the upper shafts of spears, and marry an old man.” When this reached him, he said, in some verses:\n\nMay Allah protect you, O daughter of the house of Amr,\nfrom young men like me—and from me myself!\n\nShe said, “He is an aged shaykh”;\nbut did you tell her that I am a son of yesterday?\n\n[The nursing women knew, in Jumada,\nwhen, in their haste, they gnawed flesh from the bone rather than cut it.]\n\n[al-Wafir]\n\nHe continued until he said:\n\nI never pass a night without slaughtering,\nand when evening comes, the widows come first.\n\nMy dog does not growl at my guest,\nnor does my neighbor pass the night with a troubled heart.\n\nShe answered him with verses.\n\nAbu Umar said: She came to the Prophet—may Allah bless him and grant him peace—with her people from Banu Sulaym, and she embraced Islam together with them. They related that the Messenger of Allah—may Allah bless him and grant him peace—would ask her to recite poetry to him, and that her poetry pleased him. She would recite to him while he said, “Go on, O Khunas,” and gestured with his hand.\n\nThey said: At first, al-Khansa would compose only two or three verses. Then her full brother, Muawiya ibn Amr, was killed, and her paternal half-brother Sakhr was killed. Sakhr was the one she loved more, because he was forbearing, generous, and beloved within the clan. He had raided Banu Asad, and Abu Thawr al-Asadi dealt him a thrust that left him ill for a year; then he died. When her two brothers were killed, she composed poetry abundantly. Among what she said about Sakhr was:\n\nO my two eyes, pour forth and do not dry up!\nWill you not weep for Sakhr, the man of generosity?\n\nWill you not weep for the bold and handsome one?\nWill you not weep for the lordly young man?\n\nLong of sword-belt, great of ashes,\nhe became lord of his clan while still beardless.¹\n\n[al-Mutaqarib]\n\nAmong what she said about him was:\n\nIndeed, Sakhr is surely our patron and our chief;\nand indeed, when winter comes, Sakhr is a great slaughterer of camels.\n\n¹ The verse is by al-Khansa, lamenting her brother Sakhr, as in her Diwan, p. 35. It is followed by:\n\nWill you not weep for the bold and handsome one?\nWill you not weep for the lordly young man?\n\nLong of sword-belt, lofty of pillar,\nhe became lord of his clan while still beardless.\n\nThe verses may be consulted in Usd al-Ghaba, biography no. 6883, and al-Isti'ab, biography no. 3363.",
+      "arabic_sha256": "33ff888baffedead7453a4888d74c794ab544521641543a24dfdbe77b04c6947",
+      "english_sha256": "5d47530f6cfb4646695eb5bc9c935f5adb544b3f46cf6d145456b6e4f4142757",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011112-segment-0003",
+      "volume": 8,
+      "scan_page": 112,
+      "printed_page": 111,
+      "reader_page": 4024,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4024",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0112:e79de332244eac82",
+      "arabic": "أشمّ أبلج يأتمّ الهداة به ... كأنّه علم في رأسه نار «١»\n[البسيط] قال: وأجمع أهل العلم بالشعر أنه لم تكن امرأة قبلها ولا بعدها أشعر منها.\nوذكر الزّبير بن بكّار، عن محمد بن الحسن المخزومي، وهو المعروف بابن زبالة، أحد المتروكين، عن عبد الرحمن بن عبد اللَّه، عن أبيه، عن أبي وجزة، عن أبيه، قال:\nحضرت الخنساء بنت عمرو السلمية حرب القادسية ومعها بنوها أربعة رجال، فذكر موعظتها لهم وتحريضهم على القتال، وعدم الفرار، وفيها: إنكم أسلمتم طائعين، وهاجرتم مختارين، وإنكم لبنو أب واحد وأم واحدة، ما هجنت آباءكم، ولا فضحت أخوالكم، فلما أصبحوا باشروا القتال واحدا بعد واحد حتى قتلوا، وكل منهم أنشد قبل أن يستشهد رجزا، فأنشد الأول:\nيا إخوتي إنّ العجوز النّاصحه ... قد نصحتنا إذ دعتنا البارحه\nبمقالة ذات بيان واضحه ... وإنّما تلقون عند الصّائحه\nمن آل ساسان كلابا نابحة\n[الرجز] وأنشد الثاني:\nإنّ العجوز ذات حزم وجلد ... قد أمرتنا بالسداد والرّشد\nنصيحة منها وبرّا بالولد ... فباكروا الحرب حماة في العدد\n[الرجز] وأنشد الثالث:\nواللَّه لا نعصي العجوز حرفا ... نصحا وبرّا صادقا ولطفا\nفبادروا الحرب الضّروس زحفا ... حتّى تلفّوا آل كسرى لفّا\n[الرجز] وأنشد الرابع:\nلست لخنساء ولا للأخرم ... ولا لعمرو ذي السّناء الأقدم\n(١) البيت للخنساء وهو في ديوانها ص ٤٠ وبعده:\nوإنّ صخرا لمقدام إذا ركبوا ... وإن صخرا إذا جاعوا لعقّار",
+      "english": "High-nosed and bright-browed, whom the guides follow as their leader—\nAs though he were a mountain with a fire upon its summit.¹\n\n[al-Basit meter]\n\nHe said: The scholars of poetry unanimously agreed that there was no woman, either before or after her, who was a greater poet than she.\n\nal-Zubayr ibn Bakkar related, on the authority of Muhammad ibn al-Hasan al-Makhzumi—known as Ibn Zabala, one of the abandoned transmitters—on the authority of Abd al-Rahman ibn Abd Allah, from his father, from Abu Wajza, from his father, who said:\n\nal-Khansa bint Amr al-Sulamiyya attended the Battle of al-Qadisiyya, and with her were her sons, four men. He then related her admonition to them and her urging them to fight and not to flee. It included: “You embraced Islam willingly and emigrated by choice. You are indeed the sons of one father and one mother. I did not dishonor your fathers, nor did I bring disgrace upon your maternal uncles.” When morning came, they engaged in the fighting one after another until they were killed. Each of them recited rajaz verse before being martyred. The first recited:\n\nO my brothers, the sincere old counselor\nCounseled us when she summoned us last night,\nWith words whose meaning was lucid and clear.\nAt the battle cry, you will encounter only\nBarking dogs from the House of Sasan.\n\n[al-Rajaz meter]\n\nThe second recited:\n\nThe old woman, possessed of resolve and endurance,\nHas commanded us to pursue the sound and righteous course,\nAs counsel from her and kindness toward her children.\nSo meet the war at daybreak, defenders amid the host.\n\n[al-Rajaz meter]\n\nThe third recited:\n\nBy Allah, we shall not disobey the old woman in a single word;\nHer counsel was sincere and true, given with devotion and kindness.\nSo advance at once upon the grinding war in marching ranks,\nUntil you envelop the House of Kisra completely.\n\n[al-Rajaz meter]\n\nThe fourth recited:\n\nI am no son of al-Khansa, nor of al-Akhram,\nNor of Amr, possessor of glory from ancient times—\n\n¹ The verse is by al-Khansa and appears in her Diwan, p. 40. It is followed by:\n\nIndeed, Sakhr was one who boldly advanced when they mounted,\nAnd indeed, when they went hungry, Sakhr would slaughter camels.",
+      "arabic_sha256": "e79de332244eac8275e73da30aa0bb1ce446d27bb01d52f3e812ce33cb228772",
+      "english_sha256": "ac718a862b2211ea4acbd75ed38aecbefc65920e41e7253fab93745b44589089",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011112-segment-0004",
+      "volume": 8,
+      "scan_page": 113,
+      "printed_page": 112,
+      "reader_page": 4025,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4025",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0113:75b3d3f243bb3a78",
+      "arabic": "إن لم أرد في الجيش جيش الأعجم ... ماض على الهول خضمّ حضرمي «١» .\n[الرجز] وكل من الأسانيد أطول من هذا، قال: فبلغها الخبر، فقالت: الحمد للَّه الّذي شرفني بقتلهم، وأرجو من ربي أن يجمعني بهم في مستقرّ رحمته.\nقالوا: وكان عمر بن الخطاب يعطي الخنساء أرزاق أولادها الأربعة حتى قبض.\nقلت: ومن شعرها في أخيها:\nألا يا صخر لا أنساك حتّى ... أفارق مهجتي ويشقّ رمسي\nيذكّرني طلوع الشّمس صخرا ... وأبكيه لكلّ غروب شمس\nولولا كثرة الباكين حولي ... على إخوانهم لقتلت نفسي\n[الوافر] ومن شعرها فيه:\nألا يا صخر إن أبكيت عيني ... فقد أضحكتني دهرا طويلا\nذكرتك في نساء معولات ... وكنت أحقّ من أبدى العويلا\nدفعت بك الجليل وأنت حيّ ... ومن ذا يدفع الخطب الجليلا\nإذا قبح البكاء على قتيل ... رأيت بكاءك الحسن الجميلا «٢»\n[الوافر] ويقال إنها دخلت على عائشة وعليها صدار من شعر، فقالت لها: يا خنساء، هذا نهي رسول اللَّه ﷺ عنه، فقالت: ما علمت، ولكن هذا له قصة، زوّجني أبي رجلا مبذّرا فأذهب ماله، فأتيت إلى صخر فقسم ماله شطرين، فأعطاني شطرا خيارا، ثم فعل زوجي ذلك مرة أخرى، فقسم أخي ماله شطرين فأعطاني خبرهما، فقالت له امرأته: أما ترضي أن تعطيها النصف حتى تعطيها الخيار، فقال:\nواللَّه لا أمنحها شرارها ... وهي الّتي أرحض عني عارها\nولو هلكت خرّقت خمارها ... واتّخذت من شعر صدارها\n[الرجز]\n(١) تنظر الأبيات في الاستيعاب ترجمة رقم (٣٣٦٣) .\n(٢) تنظر الأبيات في الديوان ص ٨٢، وهذا الشعر قالته الخنساء تبكي أخاها معاوية لمّا قتله بنو مرّة، وزعم أبو عبيدة أنها قالت هذا الشعر في أخيها صخر لما دفن بأرض بني سليم عند جبل عسيب وهو من غرر مراثيها.",
+      "english": "If I do not advance with the army against the army of the non-Arabs—\npressing on in the face of terror, a noble, bountiful Hadrami.¹\n[Rajaz]\n\nEvery one of the chains of transmission is longer than this. He said: When the news reached her, she said, “Praise be to Allah, who has honored me through their being slain. I hope that my Lord will unite me with them in the abode of His mercy.”\n\nThey said: Umar ibn al-Khattab continued to give al-Khansa the stipends of her four sons until he died.\n\nI say: Among her poetry about her brother is:\n\nO Sakhr, I shall not forget you until\nmy soul and I part and my grave is cleft open.\n\nThe rising sun reminds me of Sakhr,\nand at every sunset I weep for him.\n\nWere it not for the multitude of weepers around me,\nmourning their brothers, I would have killed myself.\n[Wafir]\n\nAmong her poetry about him is:\n\nO Sakhr, though you have made my eye weep,\nyou made me laugh for a long age.\n\nI remembered you among wailing women,\nand I had the greatest right of any to voice the wail.\n\nThrough you I repelled grave calamity while you were alive;\nand who can repel the grave catastrophe?\n\nThough weeping over a slain man be deemed ugly,\nI regard weeping for you as fair and beautiful.²\n[Wafir]\n\nIt is said that she entered upon Aisha wearing a bodice made of hair. Aisha said to her, “O al-Khansa, the Messenger of Allah—may Allah bless him and grant him peace—forbade this.” She replied, “I did not know, but there is a story behind it. My father married me to a spendthrift man, and he squandered his wealth. I went to Sakhr, and he divided his wealth into two halves and gave me the choicer half. Then my husband did the same thing once again, so my brother divided his wealth into two halves and gave me the better of the two.” His wife said to him, “Are you not content with giving her half, that you must also give her the choicer portion?” He said:\n\nBy Allah, I will not give her its worst,\nfor she is the one whose shame I wash away from me.\n\nIf I should perish, she would rend her veil\nand make herself a bodice of hair.\n[Rajaz]\n\n[Textual note: The printed Arabic has khabarahuma, “their report”; the context and the Urdu witness support khayrahuma, “the better of the two.”]\n\n(1) See the verses in al-Isti'ab, entry no. 3363.\n\n(2) See the verses in the Diwan, p. 82. al-Khansa composed this poem while mourning her brother Muawiya when Banu Murra killed him. Abu Ubayda claimed that she composed it about her brother Sakhr when he was buried in the territory of Banu Sulaym, near Mount 'Asib. It is one of the choicest of her elegies.",
+      "arabic_sha256": "75b3d3f243bb3a782b5c5b689ed79f1fca498aef6370df66d48b1aa94c3e7dbc",
+      "english_sha256": "b1c82d3cb9659d7f350348d5f2c1eb60f0ae57350d41187c196f5eddb656e996",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "تماضر",
+      "english": "Tumadir",
+      "kind": "person"
+    },
+    {
+      "arabic": "دريد بن الصمة",
+      "english": "Duraid ibn al-Simma",
+      "kind": "person"
+    },
+    {
+      "arabic": "خناس",
+      "english": "Khunas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "ديوان دريد بن الصمة",
+      "english": "Diwan of Duraid ibn al-Simma",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكامل",
+      "english": "al-Kamil",
+      "kind": "other"
+    },
+    {
+      "arabic": "الأغاني",
+      "english": "al-Aghani",
+      "kind": "work"
+    },
+    {
+      "arabic": "الوحشيات",
+      "english": "al-Wahshiyyat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أمامة",
+      "english": "Umama",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأعلام",
+      "english": "al-A'lam",
+      "kind": "work"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "آل عمرو",
+      "english": "House of Amr",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "جمادى",
+      "english": "Jumada",
+      "kind": "other"
+    },
+    {
+      "arabic": "الوافر",
+      "english": "al-Wafir",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو سليم",
+      "english": "Banu Sulaym",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الخنساء",
+      "english": "al-Khansa",
+      "kind": "person"
+    },
+    {
+      "arabic": "خناس",
+      "english": "al-Khansa",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية بن عمرو",
+      "english": "Muawiya ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "صخر",
+      "english": "Sakhr",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو أسد",
+      "english": "Banu Asad",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو ثور الأسدي",
+      "english": "Abu Thawr al-Asadi",
+      "kind": "person"
+    },
+    {
+      "arabic": "المتقارب",
+      "english": "al-Mutaqarib",
+      "kind": "other"
+    },
+    {
+      "arabic": "ديوانها",
+      "english": "Diwan of al-Khansa",
+      "kind": "work"
+    },
+    {
+      "arabic": "البسيط",
+      "english": "al-Basit",
+      "kind": "other"
+    },
+    {
+      "arabic": "الزّبير بن بكّار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن الحسن المخزومي",
+      "english": "Muhammad ibn al-Hasan al-Makhzumi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن زبالة",
+      "english": "Ibn Zabala",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عبد اللَّه",
+      "english": "Abd al-Rahman ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو وجزة",
+      "english": "Abu Wajza",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخنساء بنت عمرو السلمية",
+      "english": "al-Khansa bint Amr al-Sulamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "القادسية",
+      "english": "al-Qadisiyya",
+      "kind": "place"
+    },
+    {
+      "arabic": "الرجز",
+      "english": "al-Rajaz",
+      "kind": "other"
+    },
+    {
+      "arabic": "آل ساسان",
+      "english": "House of Sasan",
+      "kind": "other"
+    },
+    {
+      "arabic": "آل كسرى",
+      "english": "House of Kisra",
+      "kind": "other"
+    },
+    {
+      "arabic": "الخنساء",
+      "english": "al-Khansa bint Amr al-Sulamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأخرم",
+      "english": "al-Akhram",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو",
+      "english": "Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ديوانها",
+      "english": "Diwan al-Khansa",
+      "kind": "work"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عمر بن الخطاب",
+      "english": "Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الديوان",
+      "english": "Diwan",
+      "kind": "work"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Muawiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو مرة",
+      "english": "Banu Murra",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عبيدة",
+      "english": "Abu Ubayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "جبل عسيب",
+      "english": "Mount 'Asib",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "textual_corruption",
+      "arabic_span": "أخناس قد هام الفؤادكم ... وأصابه تبل من الحبّ",
+      "explanation": "The printed الفؤادكم is grammatically defective and is probably missing the preposition ب, as in the parallel main-text verse الفؤاد بكم. None of the supplied witnesses contains the cited Diwan line, so the emendation cannot be independently verified. The translation therefore marks “[of you]” as supplied.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0110:17634dd5329e5c57"
+    },
+    {
+      "category": "poetry_syntax",
+      "arabic_span": "مبتذلا تبدو محاسنه",
+      "explanation": "The masculine participle مبتذلا most naturally attaches to the preceding طالي, while the narrative identifies Khansa as the person described. The supplied witness paraphrases the scene but omits the verse. The gender-neutral translation preserves the sense without deciding the precise grammatical attachment.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0110:17634dd5329e5c57"
+    },
+    {
+      "category": "source_text",
+      "arabic_span": "فأعطاني خبرهما",
+      "explanation": "The canonical printed word خبرهما literally means “their report” and is incoherent here. The context, Urdu witness, and a parallel al-Isabah text support خيرهما, “the better of the two,” which the translation adopts transparently; the precise origin of the printed reading cannot be established from the supplied evidence.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0113:75b3d3f243bb3a78"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

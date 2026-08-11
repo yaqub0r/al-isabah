@@ -1,0 +1,124 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011918",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11918,
+  "title": {
+    "english": "Umm al-Banin bint Uyayna",
+    "arabic_observed": "أم البنين بنت عيينة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011918-segment-0001",
+      "volume": 8,
+      "scan_page": 366,
+      "printed_page": 365,
+      "reader_page": 4278,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4278",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0366:49c89291ce515a7e",
+      "arabic": "١١٩١٨- أم البنين بنت عيينة\nبن حصن الفزاريّ.\n(١) أسد الغابة ت (٧٣٧٧) .\n(٢) في أ: الأسلمية.\n(٣) أسد الغابة ت (٧٣٧٨)، الثقات ٣/ ٤٦٠ أعلام النساء ١/ ١١٨، تجريد أسماء الصحابة ٢/ ٣١٣، تقريب التهذيب ٢/ ١١٩ تهذيب التهذيب ١٢/ ٤٦٠، الكاشف ٣/ ٤٨٥، تهذيب الكمال ٣/ ١٧٠٠، خلاصة تهذيب الكمال ٣/ ٩٦، بقي بن مخلد ١٠٠٠.\n(٤) أسد الغابة ت (٧٣٧٩) .",
+      "english": "11918 — Umm al-Banin bint Uyayna\n\nibn Hisn al-Fazari.\n\n(1) Usd al-Ghaba, entry (7377).\n\n(2) In A: “al-Aslamiyya.”\n\n(3) Usd al-Ghaba, entry (7378); al-Thiqat, 3/460; A'lam al-Nisa', 1/118; al-Tajrid, 2/313; Taqrib al-Tahdhib, 2/119; Tahdhib al-Tahdhib, 12/460; al-Kashif, 3/485; Tahdhib al-Kamal, 3/1700; Khulasat Tahdhib al-Kamal, 3/96; Baqi ibn Makhlad, 1000.\n\n(4) Usd al-Ghaba, entry (7379).",
+      "arabic_sha256": "673e4103bf61b0bc966169f2415235dbacf15c3559973299c04b1fa22e207b1b",
+      "english_sha256": "80146cf459410330ebf072c57c6b029a6665befd1af6b8b1e584d408f38e2805",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011918-segment-0002",
+      "volume": 8,
+      "scan_page": 367,
+      "printed_page": 366,
+      "reader_page": 4279,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4279",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0367:8ad674b3a8eee04d",
+      "arabic": "لوالدها صحبة، ولها إدراك، وتزوجها عثمان، وله معها قصّة في طبقات ابن سعد.\nحرف التاء المثناة\nخال.\nحرف الثاء المثلثة",
+      "english": "Her father was a Companion, and she was alive during the Prophet's lifetime. Uthman married her, and an account concerning the two of them appears in Ibn Sa'd's al-Tabaqat.\n\nTHE LETTER TA' (WITH TWO DOTS)\n\nEmpty.\n\nTHE LETTER THA' (WITH THREE DOTS)",
+      "arabic_sha256": "d76aa6b9014eb3b61fa98588e41cb0d9599f1873c5eab3ba4104fbd341ac36d0",
+      "english_sha256": "856b5128a681ff6c8125dae2a744cf5eed5fb55941efb4025e02ae42067004db",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أسلم",
+      "english": "Aslam",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011850",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11850,
+  "title": {
+    "english": "Hind bint al-Husayn ibn al-Muttalib",
+    "arabic_observed": "هند بنت الحصين بن المطّلب:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011850-segment-0001",
+      "volume": 8,
+      "scan_page": 345,
+      "printed_page": 344,
+      "reader_page": 4257,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4257",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0345:60204e47c123d848",
+      "arabic": "١١٨٥٠- هند بنت الحصين بن المطّلب:\nذكرها ابن سعد، وتقدم ذكرها في ترجمة أختها خديجة.",
+      "english": "11850 — Hind bint al-Husayn ibn al-Muttalib\n\nIbn Sa'd mentioned her. She was previously mentioned in the biographical entry on her sister Khadijah.",
+      "arabic_sha256": "fb34efd43818739a51130c3fa7195be2ca21cffb998190c7b1d30d28848178c7",
+      "english_sha256": "a080c70424fffa97aac03cb61393f1e3320eda9d30c60430596cb016d8e6b034",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "هند بنت الحصين بن المطلب",
+      "english": "Hind bint al-Husayn ibn al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند",
+      "english": "Hind bint Rabi'a ibn al-Harith ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

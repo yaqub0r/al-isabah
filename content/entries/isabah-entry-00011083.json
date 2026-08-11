@@ -1,0 +1,145 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011083",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11083,
+  "title": {
+    "english": "Khalida bint al-Aswad",
+    "arabic_observed": "خالدة بنت الأسود"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011083-segment-0001",
+      "volume": 8,
+      "scan_page": 98,
+      "printed_page": 97,
+      "reader_page": 4010,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4010",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0098:685ba1908556c487",
+      "arabic": "١١٠٨٣- خالدة بنت الأسود\nبن عبد يغوث بن وهب بن عبد مناف «١» بن زهرة القرشية الزهرية. قال ابن حبيب: كانت امرأة صالحة من المهاجرات.\nووقع ذكرها في حديث عائشة- أنّ رسول اللَّه ﷺ دخل عليها فرأى عندها امرأة، فقال: «من هذه؟» قالت:\nإحدى خالاتك خالدة بنت الأسود ... الحديث. رويناه في جزء ابن نجيب، من طريق جبارة بن المغلس، عن ابن المبارك، عن معمر، عن الزهري، عن عبيد اللَّه بن عبد اللَّه بن عتبة، عنها موصولا.\nوجبارة ضعيف، وتابعه معاوية بن حفص عن ابن المبارك، لكن قال:\nعن عبيد اللَّه، عن أم خالد بنت الأسود، أخرجه ابن أبي عاصم، فإن كان محفوظا فلعلها كانت كنيتها وخالدة اسمها.\nأخرجه المستغفري، من طريق أبي عمير الجرمي، عن معمر، عن الزهري، عن عبيد اللَّه مرسلا، قال: دخل النبي ﷺ منزله، فرأى عند عائشة امرأة، فقال: «من هذه المرأة يا عائشة؟» قالت: هذه إحدى خالاتك. فقال: «إنّ خالاتي بهذه البلدة لغرائب» . فقالت: هذه خالدة بنت الأسود بن عبد يغوث، فقال: «سبحان اللَّه الّذي يخرج الحيّ من الميّت» «٢» . فرآها مثقلة.\nقال أبو موسى: رواه عبد الرّازق، عن معمر، عن الزهري مرسلا، وقال: رأى امرأة حسنة الهيئة، وقال، كانت مؤمنة، وكان أبوها كافرا، ولم يذكر اسمها ولا كنيتها. وهذا أصح طرقه.\nقلت: وأخرجه الواقديّ عن معمر بطوله مرسلا، وعن موسى بن محمد بن إبراهيم عن أبيه، عن أبي سلمة، عن عائشة موصولا، قاله مثله.",
+      "english": "11083. Khalida bint al-Aswad\n\nibn Abd Yaghuth ibn Wahb ibn Abd Manaf ibn Zuhra. She belonged to Quraysh, to Banu Zuhra. Ibn Habib said: She was a righteous woman among the Emigrants.\n\nShe was mentioned in a hadith of Aisha: the Messenger of Allah ﷺ came in to her and saw a woman with her. He asked, “Who is this?” She replied, “One of your maternal aunts, Khalida bint al-Aswad …”—the hadith. We transmitted it in the Juz' of Ibn Nujayb, by way of Jubara ibn al-Mughallis, from Ibn al-Mubarak, from Ma'mar, from al-Zuhri, from Ubayd Allah ibn Abd Allah ibn Utba, from her, with a connected chain.\n\nJubara is weak. Mu'awiya ibn Hafs followed him in narrating it from Ibn al-Mubarak, but said: from Ubayd Allah, from Umm Khalid bint al-Aswad. Ibn Abi Asim transmitted it. If this version is preserved, perhaps Umm Khalid was her kunya and Khalida her name.\n\nAl-Mustaghfiri transmitted it by way of Abu Umayr al-Jarmi, from Ma'mar, from al-Zuhri, from Ubayd Allah, as a mursal report. He said: The Prophet ﷺ entered his home and saw a woman with Aisha. He asked, “Who is this woman, Aisha?” She replied, “This is one of your maternal aunts.” He said, “My maternal aunts in this town are surely strangers.” She replied, “This is Khalida bint al-Aswad ibn Abd Yaghuth.” He said, “Glory be to Allah, who brings forth the living from the dead.”[2] He saw that she was weighed down.\n\nAbu Musa said: Abd al-Razzaq transmitted it from Ma'mar, from al-Zuhri, as a mursal report, and said: He saw a woman of fine appearance. He also said: She was a believer, while her father was an unbeliever. He did not mention her name or her kunya. This is the soundest of its routes.\n\nI say: al-Waqidi also transmitted it from Ma'mar at full length as a mursal report, and from Musa ibn Muhammad ibn Ibrahim, from his father, from Abu Salama, from Aisha, with a connected chain, relating the same account.",
+      "arabic_sha256": "7ff8f285dab338ab2888eb05efe6bbcf37aa50dfd4ce0a497883d492938ed1ab",
+      "english_sha256": "1bb768bfdeaf9619e8e171ed3a42a25a7df1e61aa9a7d03aad6ade19aad35365",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الزهرية",
+      "english": "Banu Zuhra",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن نجيب",
+      "english": "Ibn Nujayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "جزء ابن نجيب",
+      "english": "Juz' Ibn Nujayb",
+      "kind": "work"
+    },
+    {
+      "arabic": "جبارة بن المغلس",
+      "english": "Jubara ibn al-Mughallis",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن المبارك",
+      "english": "Ibn al-Mubarak",
+      "kind": "person"
+    },
+    {
+      "arabic": "معمر",
+      "english": "Ma'mar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد اللَّه بن عبد اللَّه بن عتبة",
+      "english": "Ubayd Allah ibn Abd Allah ibn Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية بن حفص",
+      "english": "Mu'awiya ibn Hafs",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم خالد بنت الأسود",
+      "english": "Umm Khalid bint al-Aswad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمير الجرمي",
+      "english": "Abu Umayr al-Jarmi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرزاق",
+      "english": "Abd al-Razzaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن محمد بن إبراهيم",
+      "english": "Musa ibn Muhammad ibn Ibrahim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سلمة",
+      "english": "Abu Salama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

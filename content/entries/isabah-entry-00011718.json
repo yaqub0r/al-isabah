@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011718",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11718,
+  "title": {
+    "english": "Layla bint Abi Sufyan ibn al-Harith ibn Qays ibn Zayd ibn Umayya, al-Ansariyya (3), al-Ashhaliyya.",
+    "arabic_observed": "ليلى بنت أبي سفيان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011718-segment-0001",
+      "volume": 8,
+      "scan_page": 306,
+      "printed_page": 305,
+      "reader_page": 4218,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4218",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0306:047fab026cbe7652",
+      "arabic": "١١٧١٨- ليلى بنت أبي سفيان\nبن الحارث بن قيس بن زيد بن أمية الأنصاريّة «٣» الأشهليّة.\nذكرها ابن حبيب في المبايعات. وقد تقدّم لها ذكر في ترجمة ليلى بنت الخطيم قريبا.",
+      "english": "11718—Layla bint Abi Sufyan ibn al-Harith ibn Qays ibn Zayd ibn Umayya, al-Ansariyya (3), al-Ashhaliyya.\n\nIbn Habib mentioned her among the women who gave the pledge of allegiance. She was mentioned a short while ago in the biography of Layla bint al-Khatim.",
+      "arabic_sha256": "8a75dd283b4e748a4f923772065f8bcb8d3d57948bf930f2800bf238a709f573",
+      "english_sha256": "f8601a4405fbdcdd196e4f4c70289ad79c1486a8f70c273041b5e629bf7f7374",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليلى بنت الخطيم",
+      "english": "Layla bint al-Khatim",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس",
+      "english": "Qays",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

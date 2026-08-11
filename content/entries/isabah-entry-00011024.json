@@ -1,0 +1,160 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011024",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11024,
+  "title": {
+    "english": "Habiba bint Abi Umama As'ad ibn Zurara.²",
+    "arabic_observed": "حبيبة بنت أبي أمامة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011024-segment-0001",
+      "volume": 8,
+      "scan_page": 79,
+      "printed_page": 78,
+      "reader_page": 3991,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3991",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0079:69b3beba92911587",
+      "arabic": "١١٠٢٤- حبيبة بنت أبي أمامة\nأسعد بن زرارة «٢» .\nتقدم نسبها في الألف. هي زوجة سهل بن حنيف، والدة أبي أمامة أسعد. قال إبراهيم بن محمد بن أبي يحيى، عن محمد بن عمارة: حدثتني أمي حبيبة وخالتي كبشة أختا فريعة بنت أبي أمامة أسعد بن زرارة ... فذكر حديثا.\nوروى عبد اللَّه بن إدريس الدّوري، عن محمد بن عمارة، عن زينب بنت نبيط امرأة أنس بن مالك، قال: أوصى أبو أمامة أسعد بن زرارة بأمي وخالتي إلى رسول اللَّه ﷺ، فقدم عليه حلي من ذهب ولؤلؤ يقال له الرّعاث، فحلاهنّ رسول اللَّه ﷺ من ذلك الرعاث، قالت زينب: فأدركت بعض ذلك الحلي عند أهلي.\nوأخرجه ابن السّكن من رواية ابن إدريس. وقال ابن سعد: أسلمت حبيبة وبايعت، وتزوّجها سهل بن حنيف، فولدت له. أبا أمامة أسعد، فسماها رسول اللَّه ﷺ باسم أبيها، وكناها بكنيته، وأمها عميرة بنت سهل بن ثعلبة بن الحارث.\n(١) في أحبيبة.\n(٢) أسد الغابة ت ٦٨٣٢، الاستيعاب ت ٣٣٣١.",
+      "english": "11024—Habiba bint Abi Umama As'ad ibn Zurara.²\n\nHer lineage was given previously under the letter alif. She was the wife of Sahl ibn Hunayf and the mother of Abu Umama As'ad. Ibrahim ibn Muhammad ibn Abi Yahya reported from Muhammad ibn 'Imara: “My mother Habiba and my maternal aunt Kabsha—the two sisters of Furay'a bint Abi Umama As'ad ibn Zurara—narrated to me ...” He then mentioned a hadith.\n\n'Abd Allah ibn Idris al-Dawri narrated from Muhammad ibn 'Imara, from Zaynab bint Nubayt, the wife of Anas ibn Malik, who said: “Abu Umama As'ad ibn Zurara entrusted my mother and my maternal aunt to the Messenger of Allah (may Allah bless him and grant him peace). Then some jewelry of gold and pearls, called al-ri'ath, was brought to him, and the Messenger of Allah (may Allah bless him and grant him peace) adorned them with that al-ri'ath.” Zaynab said: “I lived to see some of that jewelry in my family's possession.”\n\nIbn al-Sakan also transmitted it through the narration of Ibn Idris. Ibn Sa'd said: Habiba accepted Islam and pledged allegiance. Sahl ibn Hunayf married her, and she bore him Abu Umama As'ad. The Messenger of Allah (may Allah bless him and grant him peace) named her son after her father and gave him her father's kunya. Her mother was 'Umayra bint Sahl ibn Tha'laba ibn al-Harith.\n\n(1) In A: “Habiba.”\n\n(2) Usd al-Ghaba, entry 6832; al-Isti'ab, entry 3331.",
+      "arabic_sha256": "95f5ec3498713981ac27d531137a56d7b7ed014b98b263317347731dfc7b2c16",
+      "english_sha256": "06fc482e4fdcc643fedef878ac7b15ef5ed0da7f353faec69ee1c0ec2664b3c3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة",
+      "english": "Habta Umm Sa'd ibn 'Umayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة بنت أبي أمامة أسعد بن زرارة",
+      "english": "Habiba bint Abi Umama As'ad ibn Zurara",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أمامة أسعد بن زرارة",
+      "english": "Abu Umama As'ad ibn Zurara",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهل بن حنيف",
+      "english": "Sahl ibn Hunayf",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أمامة أسعد",
+      "english": "Abu Umama As'ad ibn Sahl ibn Hunayf",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن محمد بن أبي يحيى",
+      "english": "Ibrahim ibn Muhammad ibn Abi Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمارة",
+      "english": "Muhammad ibn 'Imara",
+      "kind": "person"
+    },
+    {
+      "arabic": "كبشة",
+      "english": "Kabsha",
+      "kind": "person"
+    },
+    {
+      "arabic": "فريعة بنت أبي أمامة أسعد بن زرارة",
+      "english": "Furay'a bint Abi Umama As'ad ibn Zurara",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن إدريس الدّوري",
+      "english": "'Abd Allah ibn Idris al-Dawri",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت نبيط",
+      "english": "Zaynab bint Nubayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس بن مالك",
+      "english": "Anas ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرّعاث",
+      "english": "al-ri'ath",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن السّكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إدريس",
+      "english": "'Abd Allah ibn Idris al-Dawri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة بنت سهل بن ثعلبة بن الحارث",
+      "english": "'Umayra bint Sahl ibn Tha'laba ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source_text_form",
+      "arabic_span": "فسماها رسول اللَّه ﷺ باسم أبيها، وكناها بكنيته",
+      "explanation": "The intended masculine referent is established by the immediate genealogy and exact collateral parallels, so the translation follows that sense. Because Usd al-Ghaba and al-Isti'ab are independent works rather than al-Isabah manuscripts, they do not determine whether this edition's feminine forms are a typographical error or an al-Isabah textual variant.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0079:69b3beba92911587"
+    },
+    {
+      "category": "apparatus_siglum",
+      "arabic_span": "(١) في أ: حبيبة",
+      "explanation": "The supplied evidence does not establish what the edition's siglum A denotes. The translation therefore preserves it unexpanded.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0079:69b3beba92911587"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

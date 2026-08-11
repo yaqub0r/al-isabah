@@ -1,0 +1,279 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011060",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11060,
+  "title": {
+    "english": "Hamna bint Jahsh al-Asadiyya,",
+    "arabic_observed": "حمنة بنت جحش الأسدية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011060-segment-0001",
+      "volume": 8,
+      "scan_page": 89,
+      "printed_page": 88,
+      "reader_page": 4001,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4001",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0089:2055a24fd86ae353",
+      "arabic": "١١٠٦٠- حمنة بنت جحش الأسدية ،\nأخت أم المؤمنين زينب وإخوتها «٢» .\nتقدم نسبها في عبد اللَّه بن جحش، وكانت زوج مصعب بن عمير، فقتل عنها يوم أحد، فتزوجها طلحة بن عبيد اللَّه فولدت له محمدا وعمران. وأمهما وأم أختها زينب أميمة بنت عبد المطلب. قال أبو عمر: كانت من المبايعات، وشهدت أحدا، فكانت تسقي العطشى، وتحمل الجرحى، وتداويهم، وكانت تستحاض، كما أخرجه أبو داود والترمذي،\n(١) أسد الغابة ت ٦٨٥٦، الاستيعاب ت ٣٣٤٨.\n(٢) الثقات ٣/ ٩٩، أعلام النساء ١/ ٢٥١، تجريد أسماء الصحابة ٢/ ٢٥٧، تقريب التهذيب ٢/ ٥٩٥، تهذيب التهذيب ١٢/ ٤١١، الكاشف ٣/ ٤٦٨، تهذيب الكمال ٣/ ١٦٨١، الإكمال ٢/ ٥١٤.",
+      "english": "11060—Hamna bint Jahsh al-Asadiyya,\nthe sister of Zaynab, Mother of the Believers, and of Zaynab's brothers.²\n\nHer lineage was given previously under 'Abd Allah ibn Jahsh. She was the wife of Mus'ab ibn 'Umayr, who was killed at Uhud, leaving her a widow. Talha ibn 'Ubayd Allah then married her, and she bore him Muhammad and 'Imran. Her mother, who was also the mother of her sister Zaynab, was Umayma bint 'Abd al-Muttalib. Abu 'Umar said: She was among the women who pledged allegiance, and she was present at Uhud, where she gave water to the thirsty, carried the wounded, and treated them. She suffered from non-menstrual bleeding, as transmitted by Abu Dawud and al-Tirmidhi,\n\n¹ Usd al-Ghaba, entry 6856; al-Isti'ab, entry 3348.\n\n² al-Thiqat, 3/99; A'lam al-Nisa', 1/251; al-Tajrid, 2/257; Taqrib al-Tahdhib, 2/595; Tahdhib al-Tahdhib, 12/411; al-Kashif, 3/468; Tahdhib al-Kamal, 3/1681; al-Ikmal, 2/514.",
+      "arabic_sha256": "c2bddacf7722ea554ff4440a464fe0087e509b34a652826d60fb6541245c7ca4",
+      "english_sha256": "1eee39763f6c2cdbb1a85cc98994d1189ddca27c7637c9912ccf9db8c5ebb9c7",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011060-segment-0002",
+      "volume": 8,
+      "scan_page": 90,
+      "printed_page": 89,
+      "reader_page": 4002,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4002",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0090:d2b7f6cc4d4ff2a9",
+      "arabic": "من طريق عبد اللَّه بن محمد بن عقيل، عن إبراهيم بن محمد طلحة، عن عمه عمران بن طلحة، عن أمه حمنة بنت جحش، فذكر حديث الاستحاضة.\nوروى عاصم الأحول، عن عكرمة، عن حمنة أنها استحيضت، وخالفه أبو إسحاق الشيبانيّ، وأبو بشر، عن عكرمة، قال: كانت أم حبيبة تستحاض، فجمع بعضهم الاختلاف بأنّ كلّا منهما كانت تستحاض، وكانت حبيبة أم حبيبة أو أم حبيب تحت عبد الرحمن بن عوف. وقد قيل: إن زينب أيضا كانت من المستحيضات، حتى قيل: إنّ بنات جحش كلهن كنّ ابتلين بذلك. وأنكر الواقدي أن تكون حمنة استحيضت أصلا، والعلم عند اللَّه تعالى.\nوقال ابن سعد: أطعمها رسول اللَّه ﷺ من خيبر ثلاثين وسقا، وهي والدة محمد بن طلحة المعروف بالسجّاد.",
+      "english": "Through the route of Abd Allah ibn Muhammad ibn Aqil, from Ibrahim ibn Muhammad ibn Talha, from his paternal uncle Imran ibn Talha, from his mother Hamna bint Jahsh; he then related the hadith concerning non-menstrual bleeding.\n\nAsim al-Ahwal narrated from Ikrima, from Hamna, that she suffered non-menstrual bleeding. Abu Ishaq al-Shaybani and Abu Bishr differed with him, narrating from Ikrima that he said: Umm Habiba used to suffer non-menstrual bleeding. Some reconciled the discrepancy by holding that both of them suffered from it. Habiba—[called] Umm Habiba or Umm Habib—was married to Abd al-Rahman ibn Awf. It has also been said that Zaynab was among those who suffered non-menstrual bleeding, to the point that it was said that all the daughters of Jahsh were afflicted by it. al-Waqidi denied that Hamna had ever suffered non-menstrual bleeding at all. Knowledge rests with Allah Most High.\n\nIbn Sa'd said: The Messenger of Allah ﷺ allotted her thirty wasqs from Khaybar. She was the mother of Muhammad ibn Talha, who was known as al-Sajjad.",
+      "arabic_sha256": "c604303061f4026fd9913236dad817769bb8a447b37e9fd365e24916d029884b",
+      "english_sha256": "7343e606360a34f86fc3930a6616e18af30d07937a37b9f294fc8bfae23f0709",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "التّجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "حمنة بنت جحش الأسدية",
+      "english": "Hamna bint Jahsh al-Asadiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن جحش",
+      "english": "'Abd Allah ibn Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "مصعب بن عمير",
+      "english": "Mus'ab ibn 'Umayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "طلحة بن عبيد اللَّه",
+      "english": "Talha ibn 'Ubayd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمدا",
+      "english": "Muhammad ibn Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمران",
+      "english": "'Imran ibn Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة بنت عبد المطلب",
+      "english": "Umayma bint 'Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الإكمال",
+      "english": "al-Ikmal",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد اللَّه بن محمد بن عقيل",
+      "english": "Abd Allah ibn Muhammad ibn Aqil",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن محمد طلحة",
+      "english": "Ibrahim ibn Muhammad ibn Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمران بن طلحة",
+      "english": "Imran ibn Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمنة بنت جحش",
+      "english": "Hamna bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاصم الأحول",
+      "english": "Asim al-Ahwal",
+      "kind": "person"
+    },
+    {
+      "arabic": "عكرمة",
+      "english": "Ikrima",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو إسحاق الشيبانيّ",
+      "english": "Abu Ishaq al-Shaybani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بشر",
+      "english": "Abu Bishr",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة",
+      "english": "Habiba bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيب",
+      "english": "Umm Habib bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عوف",
+      "english": "Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    },
+    {
+      "arabic": "محمد بن طلحة",
+      "english": "Muhammad ibn Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "السجّاد",
+      "english": "al-Sajjad",
+      "kind": "person"
+    },
+    {
+      "arabic": "حماد",
+      "english": "Hammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar ibn al-Humam",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

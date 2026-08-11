@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011717",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11717,
+  "title": {
+    "english": "Layla bint Ri'ab ibn Hunayf al-Ansariyya (2), of Banu 'Awf ibn al-Khazraj.",
+    "arabic_observed": "ليلى بنت رئاب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011717-segment-0001",
+      "volume": 8,
+      "scan_page": 306,
+      "printed_page": 305,
+      "reader_page": 4218,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4218",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0306:047fab026cbe7652",
+      "arabic": "١١٧١٧- ليلى بنت رئاب\nبن حنيف الأنصاريّة «٢»، من بني عوف بن الخزرج.\nذكرها ابن حبيب أيضا، وكانت زوج عتبان بن مالك.",
+      "english": "11717—Layla bint Ri'ab ibn Hunayf al-Ansariyya (2), of Banu 'Awf ibn al-Khazraj.\n\nIbn Habib also mentioned her. She was the wife of 'Itban ibn Malik.",
+      "arabic_sha256": "8f98bab563150c166f0beb1de68cd2de140ad140c72525dcf87822f799057adc",
+      "english_sha256": "e788446ae9e4c9cebcdf03b8dfee448eeb3ffde89411812ebbc9f5fa08b08bd4",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليلى بنت رئاب بن حنيف الأنصارية",
+      "english": "Layla bint Ri'ab ibn Hunayf al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو عوف بن الخزرج",
+      "english": "Banu 'Awf ibn al-Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عتبان بن مالك",
+      "english": "'Itban ibn Malik",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

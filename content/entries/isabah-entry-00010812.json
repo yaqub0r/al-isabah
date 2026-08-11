@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010812",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10812,
+  "title": {
+    "english": "Asma bint Muhriz ibn Amir ibn Malik ibn Adi ibn Amir ibn Ghanm ibn Adi ibn al-Najjar",
+    "arabic_observed": "أسماء بنت محرز"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010812-segment-0001",
+      "volume": 8,
+      "scan_page": 17,
+      "printed_page": 16,
+      "reader_page": 3929,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3929",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0017:379f2ddf42333b71",
+      "arabic": "١٠٨١٢- أسماء بنت محرز\nبن عامر بن مالك بن عديّ بن عامر بن غنم بن عدي بن النجار. ذكرها ابن سعد، وقال: أمها أم سهل بنت أبي خارجة، تزوّجها أبو بشير بن عبيد، فولدت له بشيرا والجعد. ذكرها ابن ماكولا من التجريد.",
+      "english": "10812—Asma bint Muhriz ibn Amir ibn Malik ibn Adi ibn Amir ibn Ghanm ibn Adi ibn al-Najjar\n\nIbn Sad mentioned her and said: Her mother was Umm Sahl bint Abi Kharija. Abu Bashir ibn Ubayd married her, and she bore him Bashir and al-Jad. Ibn Makula mentioned her. This notice is from al-Tajrid.",
+      "arabic_sha256": "7b90eab0d39624ca00a95facce88f7ae346afe9ca2b014708dd1e30fd71b0e30",
+      "english_sha256": "878f31e436d4ac97bf94a4003a530ba8a3d41659d60e7717c655019e96b0bbe0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت محرز بن عامر بن مالك بن عديّ بن عامر بن غنم بن عدي بن النجار",
+      "english": "Asma bint Muhriz ibn Amir ibn Malik ibn Adi ibn Amir ibn Ghanm ibn Adi ibn al-Najjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سهل بنت أبي خارجة",
+      "english": "Umm Sahl bint Abi Kharija",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بشير بن عبيد",
+      "english": "Abu Bashir ibn Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشير",
+      "english": "Bashir",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجعد",
+      "english": "al-Jad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماكولا",
+      "english": "Ibn Makula",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012039",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12039,
+  "title": {
+    "english": "Umm Zaynab al-Tamimiyya",
+    "arabic_observed": "أم زينب التميمية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012039-segment-0001",
+      "volume": 8,
+      "scan_page": 398,
+      "printed_page": 397,
+      "reader_page": 4310,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4310",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0398:da3d53c4bd2962ed",
+      "arabic": "١٢٠٣٩- أم زينب التميمية:\nثم العنبريّة، ذكرها ابن مندة مع من تكنى بأم زينب، بنون مفتوحة قبلها مثناة تحتانية ساكنة، وكذا ضبطها العسكري كما تقدّم في ترجمة ولدها زينب بن ثعلبة. وقال: إن المحدثين يقولونها بموحدتين مصغّرة.\nقلت: وهو المعتمد. وقد تقدم في ترجمة ذؤيب في الذّال المعجمة من أسماء الرّجال، وفيه\nأن النبيّ ﷺ قال لولدها زينب بن ثعلبة: «بارك اللَّه فيك يا غلام، وبارك لأمّك فيك» .\nوقال الذّهبيّ في «التّجريد»: دعاها النبيّ ﵌ في حديث منكر، ذكره ابن مندة، وليس كما قال، بل سنده حسن.\n(١) أسد الغابة ت (٧٤٥٦) .\n(٢) أسد الغابة ت (٧٤٥٧) .",
+      "english": "12039—Umm Zaynab al-Tamimiyya\n\nThen al-'Anbariyya. Ibn Manda mentioned her among those bearing the kunyah Umm Zaynab, with an n bearing fatha, preceded by a quiescent y. Al-'Askari vocalized it likewise, as previously stated in the entry for her son, whose name is written Zaynab ibn Tha'laba. He said: “The hadith scholars pronounce it with two b's and in the diminutive: Zubayb.”\n\nI say: That is the authoritative reading. This was previously mentioned in the entry on Dhu'ayb, under the dotted letter dhal among the names of men. It states there that the Prophet—may Allah bless him and grant him peace—said to her son Zubayb ibn Tha'laba: “May Allah bless you, young man, and bless your mother through you.”\n\nAl-Dhahabi said in al-Tajrid: “The Prophet—may Allah bless him and grant him peace—summoned her in a munkar hadith mentioned by Ibn Manda.” It is not as he said; rather, its chain of transmission is hasan.\n\n(1) Usd al-Ghaba, entry 7456.\n\n(2) Usd al-Ghaba, entry 7457.",
+      "arabic_sha256": "5751ae5177aca12fc660c0a9131dd8cea2eea7f72420916b9c2f2097846cf0ab",
+      "english_sha256": "1f3d7d4e9f7b65730398e898c9c93b3f12280783b82169af381dee5ae65a2358",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012039-segment-0002",
+      "volume": 8,
+      "scan_page": 399,
+      "printed_page": 398,
+      "reader_page": 4311,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4311",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0399:97ae5762f77afadd",
+      "arabic": "حرف السين المهملة\nالقسم الأول",
+      "english": "The Unpointed Letter Sin\n\nThe First Section",
+      "arabic_sha256": "f829c8ba4dd83c76bfa06e02993ab1e13dd7b6cb8bb27fe7096430d88f1d1131",
+      "english_sha256": "8e007412cc8399db513d86c47fb210c9fa4f7b7d95c32058eabd118d11d3c289",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "العسكري",
+      "english": "al-'Askari",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بن ثعلبة",
+      "english": "Zubayb ibn Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ذؤيب",
+      "english": "Dhu'ayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

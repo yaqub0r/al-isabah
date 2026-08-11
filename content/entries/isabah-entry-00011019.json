@@ -1,0 +1,276 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011019",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11019,
+  "title": {
+    "english": "Juwayriya bint al-Harith ibn Abd al-Muttalib ibn Hashim",
+    "arabic_observed": "جويرية بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011019-segment-0001",
+      "volume": 8,
+      "scan_page": 77,
+      "printed_page": 76,
+      "reader_page": 3989,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3989",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0077:6465e954ef428694",
+      "arabic": "١١٠١٩- جويرية بنت الحارث\nبن عبد المطلب بن هاشم.\n(١) أعلام النساء ١/ ١٧٨.",
+      "english": "11019. Juwayriya bint al-Harith ibn Abd al-Muttalib ibn Hashim\n\n[1] A'lam al-Nisa, 1/178.",
+      "arabic_sha256": "fc6c0430fce87a00fa4187ab1fe82d655f7401d463fc3bc6c2fcc1abfc808cf2",
+      "english_sha256": "0f8b275cafcc388b3b6d740f5410bd2030229d96582e0bdbdcb31ff5bf06cc9a",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011019-segment-0002",
+      "volume": 8,
+      "scan_page": 78,
+      "printed_page": 77,
+      "reader_page": 3990,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3990",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0078:b0053691dbeda791",
+      "arabic": "قال الذّهبيّ في آخر حرف الجيم من النساء: جويرية التي قال لها النبيّ ﷺ: «لقد قلت بعدك أربع كلمات ...» «١» الحديث\nأخرجه مسلم. قال ابن حبان في الأنواع: هي ابنة عمة النبي ﷺ، كذا قال، وإنما هي أم المؤمنين ... وقد رواه ابن عباس عنها.\nقلت: قد ذكرته في ترجمة أم المؤمنين جويرية بنت الحارث من سياق الترمذي.\nولفظ مسلم، من طريق سفيان- هو ابن عيينة، عن محمد بن عبد الرحمن مولى آل طلحة، عن كريب، عن ابن عباس، عن جويرية- أن النبي ﷺ خرج من عندها بكرة....\nالحديث.\nوفي رواية مسعر، عن محمد بن عبد الرحمن، عن أبي رشدين، وهو كريب- مثله، لكن قال: مرّ بها رسول اللَّه ﷺ حين صلى الغداة أو بعد ما صلّى، وكذا هو عند ابن ماجة، من طريق مسعر. وعند الترمذي، والنسائي، من طريق شعبة، عن محمد بن عبد الرحمن بمثل سفيان. وفيه: عن ابن عباس، عن جويرية بنت الحارث- أنّ النبيّ ﷺ مرّ عليها وهي تسبّح.\nوفي مسند الحسن بن سفيان، عن قتيبة، عن سفيان بن عيينة بسند مسلم، عن ابن عباس، قال: قالت جويرية بنت الحارث: خرج النبيّ ﷺ وأنا في مصلّاي، فرجع حين تعالى النهار ... الحديث.\nقال أبو نعيم في مستخرجه بعد أن أخرجه: كان في أوله قصة فتركتها.\nقلت: وقد ذكرها أبو عوانة في صحيحه، عن شعيب بن عمرو، عن سفيان، فساق بسنده إلى ابن عباس، قال: خرج علينا رسول اللَّه ﷺ من عند جويرية، وكان اسمها برة، فحوّله جويرية، وكره أن يقال: خرج من عند برة، فخرج وهي في مصلّاها، فذكر الحديث، فيستفاد من هذه الزيادة أنها جويرية بنت الحارث الخزاعية، زوج النبيّ ﷺ، لأنّ مسلما قد أخرج هذه القطعة من الحديث من رواية سفيان بن عيينة بهذا السند إلى ابن عباس. وكذلك أخرجه محمد بن سعد في ترجمة جويرية أم المؤمنين، عن سفيان بن عيينة.\nوأخرجه أيضا من طريق سفيان الثوري، عن محمد بن عبد الرحمن مثل سياق ابن عيينة، فقال في أوله: كان اسم جويرية برة، فسماها رسول اللَّه ﷺ جويرية، قال: فصلّى الفجر،\n(١) أخرجه مسلم في الصحيح ٤/ ٢٠٩٠ عن ابن عباس عن جويرية كتاب الذكر والدعاء والتوبة والاستغفار (٤٨) باب التسبيح أول النهار وعند النوم (١٩) حديث رقم (٧٩/ ٢٧٢٦) وأحمد في المسند ١/ ٢٥٨، وابن سعد في الطبقات ٨/ ٨٥ والبغوي في شرح السنة ٥/ ٢٠٥، وأورده المتقي الهندي في كنز العمال حديث رقم ٣٧١٩.",
+      "english": "al-Dhahabi said at the end of the letter jim in the section on women: Juwayriyya, to whom the Prophet (may Allah bless him and grant him peace) said, “Since leaving you, I have said four phrases ...”[1]—the hadith.\n\nMuslim transmitted it. Ibn Hibban said in al-Anwa': “She was the daughter of the Prophet's paternal aunt (may Allah bless him and grant him peace).” That is what he said, but in fact she was the Mother of the Believers ... Ibn Abbas narrated it from her.\n\nI say: I have already mentioned it in the biographical notice of the Mother of the Believers Juwayriyya bint al-Harith, following al-Tirmidhi's wording.\n\nMuslim's wording, through Sufyan—that is, Ibn Uyayna—from Muhammad ibn Abd al-Rahman, the client of the family of Talha, from Kurayb, from Ibn Abbas, from Juwayriyya, states that the Prophet (may Allah bless him and grant him peace) left her early in the morning ... The hadith.\n\nIn Mis'ar's version, from Muhammad ibn Abd al-Rahman, from Abu Rushdayn—who is Kurayb—it is the same, except that he said: “The Messenger of Allah (may Allah bless him and grant him peace) passed by her when he prayed the dawn prayer, or after he had prayed.” It is likewise in Ibn Majah through Mis'ar. In al-Tirmidhi and al-Nasa'i, through Shu'ba from Muhammad ibn Abd al-Rahman, it is like Sufyan's version. It contains: from Ibn Abbas, from Juwayriyya bint al-Harith—that the Prophet (may Allah bless him and grant him peace) passed by her while she was glorifying Allah.\n\nIn the Musnad of al-Hasan ibn Sufyan, from Qutayba, from Sufyan ibn Uyayna, with Muslim's chain, Ibn Abbas said: “Juwayriyya bint al-Harith said: ‘The Prophet (may Allah bless him and grant him peace) went out while I was at my place of prayer, and he returned when the day had risen high ...’” The hadith.\n\nAfter transmitting it in his Mustakhraj, Abu Nu'aym said: “At its beginning there was a story, but I omitted it.”\n\nI say: Abu Awana included it in his Sahih, from Shu'ayb ibn Amr, from Sufyan, and carried the chain through to Ibn Abbas, who said: “The Messenger of Allah (may Allah bless him and grant him peace) came out to us from Juwayriyya's presence. Her name had been Barrah, but he changed it to Juwayriyya, for he disliked that it should be said, ‘He came out from Barrah's presence.’ He went out while she was at her place of prayer”—and he then related the hadith. From this addition it can be inferred that she was Juwayriyya bint al-Harith al-Khuza'iyya, the wife of the Prophet (may Allah bless him and grant him peace), because Muslim transmitted this portion of the hadith from Sufyan ibn Uyayna, with this chain through to Ibn Abbas. Muhammad ibn Sa'd likewise transmitted it in the biographical notice of Juwayriyya, the Mother of the Believers, from Sufyan ibn Uyayna.\n\nHe also transmitted it through Sufyan al-Thawri, from Muhammad ibn Abd al-Rahman, in wording like Ibn Uyayna's account. At its beginning he said: “Juwayriyya's name had been Barrah, but the Messenger of Allah (may Allah bless him and grant him peace) named her Juwayriyya.” He said: “Then he prayed the dawn prayer,\n\n[1] Transmitted by Muslim in Sahih Muslim, 4/2090, from Ibn Abbas, from Juwayriyya, in the Book of Remembrance, Supplication, Repentance, and Seeking Forgiveness (48), chapter on glorifying Allah at the beginning of the day and when going to sleep (19), hadith no. (79/2726); Ahmad in Musnad Ahmad, 1/258; Ibn Sa'd in al-Tabaqat, 8/85; al-Baghawi in Sharh al-Sunna, 5/205; and cited by al-Muttaqi al-Hindi in Kanz al-Ummal, hadith no. 3719.",
+      "arabic_sha256": "b0053691dbeda791597d5957ededf972ca856fab862a28f24c328567f09c948d",
+      "english_sha256": "7b8c6da5f84b092ff4fd3bf90330ef13e39d61ee933ddab4fa46fe2bb618d892",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011019-segment-0003",
+      "volume": 8,
+      "scan_page": 79,
+      "printed_page": 78,
+      "reader_page": 3991,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3991",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0079:69b3beba92911587",
+      "arabic": "ثم خرج من عندها حتى ارتفع الضحى، ثم جاء وهي في مصلّاها ... الحديث.\nفعرف من هذا أنها أم المؤمنين. وباللَّه التوفيق.\nحرف الحاء المهملة\nالقسم الأول",
+      "english": "Then he left her; when the forenoon had risen high, he returned, and she was in her place of prayer ... the hadith.\n\nIt is therefore clear from this that she was a Mother of the Believers. And Allah is the giver of success.\n\nTHE UNPOINTED LETTER HA\n\nSECTION ONE",
+      "arabic_sha256": "89091d95b3f1cc75d0b145778d4b1e1971b5db9e2fc1f8794183b2285a6ca931",
+      "english_sha256": "1227d05aebc4866dd02a6b3accd5a924491f847cb96b47fa7aeecfd93acf9e48",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "جويرية بنت الحارث بن عبد المطلب بن هاشم",
+      "english": "Juwayriya bint al-Harith ibn Abd al-Muttalib ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "جويرية بنت الحارث الخزاعية",
+      "english": "Juwayriyya bint al-Harith al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنواع",
+      "english": "al-Anwa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سفيان بن عيينة",
+      "english": "Sufyan ibn Uyayna",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عبد الرحمن",
+      "english": "Muhammad ibn Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "طلحة",
+      "english": "Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "كريب",
+      "english": "Kurayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسعر",
+      "english": "Mis'ar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو رشدين",
+      "english": "Abu Rushdayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "شعبة",
+      "english": "Shu'ba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن سفيان",
+      "english": "al-Hasan ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند الحسن بن سفيان",
+      "english": "Musnad al-Hasan ibn Sufyan",
+      "kind": "work"
+    },
+    {
+      "arabic": "قتيبة",
+      "english": "Qutayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "مستخرجه",
+      "english": "Mustakhraj Abu Nu'aym",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عوانة",
+      "english": "Abu Awana",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيحه",
+      "english": "Sahih Abu Awana",
+      "kind": "work"
+    },
+    {
+      "arabic": "شعيب بن عمرو",
+      "english": "Shu'ayb ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "برة",
+      "english": "Barrah",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن سعد",
+      "english": "Muhammad ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سفيان الثوري",
+      "english": "Sufyan al-Thawri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبقات",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "البغوي",
+      "english": "al-Baghawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "شرح السنة",
+      "english": "Sharh al-Sunna",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم المؤمنين",
+      "english": "Juwayriya bint al-Harith",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "المصفح؛ المصبح",
+      "explanation": "The consonantal spellings and the substitution of ba for fa are clear, but the supplied evidence does not establish the vowels. The forms al-Musaffah and al-Musbih are retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0077:6465e954ef428694"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010882",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10882,
+  "title": {
+    "english": "Unaysa bint Tha'laba ibn Zayd ibn Qays al-Ansariyya al-Khazrajiyya²",
+    "arabic_observed": "أنيسة بنت ثعلبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010882-segment-0001",
+      "volume": 8,
+      "scan_page": 38,
+      "printed_page": 37,
+      "reader_page": 3950,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3950",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0038:0055ac798faa54ad",
+      "arabic": "١٠٨٨٢- أنيسة بنت ثعلبة\nبن زيد بن قيس الأنصارية الخزرجية «٢» من بني الحارث ابن الخزرج. قال ابن حبيب: لها صحبة، واستدركها ابن الأثير.",
+      "english": "10882—Unaysa bint Tha'laba ibn Zayd ibn Qays al-Ansariyya al-Khazrajiyya²\n\nShe was of the Banu al-Harith ibn al-Khazraj. Ibn Habib said that she was a Companion. Ibn al-Athir included her as a supplementary entry.",
+      "arabic_sha256": "4e0c05011a213e434a07867309e83035ca661c60eae19fc84e32eeacedfd2ca2",
+      "english_sha256": "9ddec0a7851163b4fad6ec50ddd912c23c2197d783803815437cbb67ab7e12b1",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أنيسة بنت ثعلبة بن زيد بن قيس الأنصارية الخزرجية",
+      "english": "Unaysa bint Tha'laba ibn Zayd ibn Qays al-Ansariyya al-Khazrajiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو الحارث ابن الخزرج",
+      "english": "Banu al-Harith ibn al-Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

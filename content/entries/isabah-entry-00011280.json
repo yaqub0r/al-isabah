@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011280",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11280,
+  "title": {
+    "english": "Subay'a bint Abi Lahab (2)",
+    "arabic_observed": "سبيعة بنت أبي لهب «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011280-segment-0001",
+      "volume": 8,
+      "scan_page": 173,
+      "printed_page": 172,
+      "reader_page": 4085,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4085",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0173:8fc64c7545811e85",
+      "arabic": "١١٢٨٠- سبيعة بنت أبي لهب «٢»\n. تقدم ذكرها في درة في حرف الدال.",
+      "english": "11280—Subay'a bint Abi Lahab (2)\n\nShe was mentioned previously under Durra, in the letter dal.",
+      "arabic_sha256": "d78307cb81a3c6985247842d620cb92e30c5d058dfe32fdd8032de6d42e3bbbc",
+      "english_sha256": "9e696e3c28a0f7c18d3b2de59d3ff0d8df6d9d1440ae16e50c2322c55aa849ef",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سبيعة بنت أبي لهب",
+      "english": "Subay'a bint Abi Lahab",
+      "kind": "person"
+    },
+    {
+      "arabic": "درة",
+      "english": "Durra",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010860",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10860,
+  "title": {
+    "english": "Umayma bint Subayh,",
+    "arabic_observed": "أميمة بنت صبيح ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010860-segment-0001",
+      "volume": 8,
+      "scan_page": 33,
+      "printed_page": 32,
+      "reader_page": 3945,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3945",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0033:4fd52b895dd47e6e",
+      "arabic": "١٠٨٦٠- أميمة بنت صبيح ،\nأو صفيح، بموحدة أو فاء مصغرا، ابن الحارث، والدة أبي هريرة. اختلف في اسمها، فجاء عن أبي هريرة أنه ابن أميمة. وترجم الطبراني في النساء ميمونة بنت صبيح أم أبي هريرة، وساق قصة إسلامها، لكن لم تقع مسماة في روايته. وأما [أبوها، فقال أبو محمد بن قتيبة: كان سعيد بن صبيح خال أبي هريرة من أشد الناس. وأما] تسميتها أميمة فرويناه في جزء إسحاق بن إبراهيم بن شاذان. وأخرجه أبو موسى في الذيل، من طريقه، قال: أخبرنا سعد بن الصلت، حدثنا يحيى بن العلاء، عن أيوب، عن محمد بن سيرين، عن أبي هريرة- أن عمر بن الخطاب دعاه ليستعمله فأبى أن يعمل له، فقال: أتكره العمل وقد طلبه من كان خيرا منك! قال: من؟ قال: يوسف بن\n(١) أسد الغابة: ت ٦٧٤٠.\n(٢) الثقات ٣/ ٢٥، تجريد أسماء الصحابة ٢/ ٢٤٨.\n(٣) أسد الغابة: ت ٦٧٤١.",
+      "english": "10860 — Umayma bint Subayh,\n\nor Sufayh—with either the letter ba or the letter fa, in the diminutive form—ibn al-Harith, the mother of Abu Hurayra. There is disagreement over her name. It is reported from Abu Hurayra that he was the son of Umayma. In the section on women, al-Tabarani gave the heading “Maymuna bint Subayh, mother of Abu Hurayra,” and related the account of her acceptance of Islam, although she was not named in his narration. As for [her father, Abu Muhammad ibn Qutayba said: “Sa'id ibn Subayh, the maternal uncle of Abu Hurayra, was among the strongest of men.” As for] her being named Umayma, we have related it in the Juz of Ishaq ibn Ibrahim ibn Shadhan. Abu Musa also transmitted it in al-Dhayl through his route. He said: Sa'd ibn al-Salt informed us; Yahya ibn al-Ala narrated to us, from Ayyub, from Muhammad ibn Sirin, from Abu Hurayra, that Umar ibn al-Khattab summoned him in order to appoint him to office, but he refused to work for him. Umar said: “Do you dislike office when someone better than you sought it?” He asked: “Who?” Umar replied: “Yusuf ibn—”\n\n(1) Usd al-Ghaba, entry 6740.\n\n(2) al-Thiqat, 3/25; al-Tajrid, 2/248.\n\n(3) Usd al-Ghaba, entry 6741.",
+      "arabic_sha256": "9c8b4ce92f8e9b2844d03f98e257f79cfa355fbd3bcde3ef44c3dcad1b290890",
+      "english_sha256": "95115d0b255ae483c83bd9ed2945a62eb13666cb9be72ecaaf2031298428a231",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010860-segment-0002",
+      "volume": 8,
+      "scan_page": 34,
+      "printed_page": 33,
+      "reader_page": 3946,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3946",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0034:68350d931ff8e07d",
+      "arabic": "يعقوب ﵉. فقال أبو هريرة: يوسف نبيّ ابن نبي، وأنا أبو هريرة بن أميمة، أخشى ثلاثا واثنين. فقال عمر: ألا قلت خمسا؟ قال: أخشى أن أقول بغير علم، أو أقضي بغير حق، وأن يضرب ظهري، ويشتم عرضي، وينزع مالي.\nقلت: سنده ضعيف جدا، ولكن أخرجه عبد الرزاق، عن معمر، عن أيوب، فقوي، وكان عمر استعمل أبا هريرة على البحرين.\nوأما قصة إسلام أم أبي هريرة\nفأخرجها أحمد في مسندة، عن عبد الرحمن هو ابن مهدي، عن عكرمة بن عمار، حدثني أبو كثير، حدثني أبو هريرة. قال: ما خلق اللَّه مؤمنا يسمع بي ولا يراني إلا أحبني، قال: وما علمك بذلك يا أبا هريرة؟ قال: إن أمي كانت مشركة، وإني كنت أدعوها إلى الإسلام، فتأبى عليّ فدعوتها يوما، ح، وأخرج مسلم، من طريق يونس بن محمد، عن عكرمة بن عمار، عن أبي كثير يزيد بن عبد الرحمن، حدثني أبو هريرة قال: كنت أدعو أمّي إلى الإسلام وهي مشركة فدعوتها يوما، فأسمعتني في رسول اللَّه ﷺ ما أكره، فأتيت رسول اللَّه ﷺ وأنا أبكي، فقلت: يا رسول اللَّه، إني كنت أدعو أمي إلى الإسلام فتأبى عليّ، وإنّي دعوتها اليوم فأسمعتني فيك ما أكره، فادع اللَّه أن يهدي أمّ أبي هريرة. فقال: «اللَّهمّ اهد أمّ أبي هريرة» . فخرجت مستبشرا بدعوة رسول اللَّه ﷺ، فلما جئت قصدت إلى الباب، فإذا هو مجاف، فسمعت أمّي حس قدمي، فقالت: مكانك يا أبا هريرة: وسمعت حصحصة الماء، قال: ولبست درعها وأعجلت عن خمارها، ففتحت الباب، وقالت: يا أبا هريرة، أشهد أن لا إله إلا اللَّه، وأشهد أن محمدا رسول اللَّه. قال:\nفرجعت إلى رسول اللَّه ﷺ فأخبرته، فحمد اللَّه، وقال خيرا.\nوقد مضى شيء من هذا في ترجمة أبي هريرة.",
+      "english": "Ya'qub, peace be upon him. Abu Hurayra said, “Yusuf is a prophet, the son of a prophet, while I am Abu Hurayra ibn Umayma. I fear three and two.” 'Umar said, “Why did you not say five?” He replied, “I fear speaking without knowledge or judging without right, and that my back may be beaten, my honor reviled, and my property taken away.”\n\nI say: Its chain of transmission is extremely weak. However, 'Abd al-Razzaq transmitted it from Ma'mar, from Ayyub, thereby giving it strength. 'Umar had appointed Abu Hurayra governor over Bahrain.\n\nAs for the account of the conversion of Abu Hurayra's mother:\n\nAhmad transmitted it in Musnad Ahmad from 'Abd al-Rahman—he is ibn Mahdi—from 'Ikrima ibn 'Ammar, who said: “Abu Kathir narrated to me from Abu Hurayra.” Abu Hurayra said: “Allah has created no believer who hears of me without seeing me but that he loves me.” It was said, “How do you know that, Abu Hurayra?” He replied: “My mother was a polytheist, and I used to call her to Islam, but she would refuse me. One day I called her.” [H: change of chain]\n\nMuslim also transmitted it by way of Yunus ibn Muhammad, from 'Ikrima ibn 'Ammar, from Abu Kathir Yazid ibn 'Abd al-Rahman, who said: “Abu Hurayra narrated to me.” Abu Hurayra said: “I used to call my mother to Islam while she was a polytheist. One day I called her, and she said something to me about the Messenger of Allah, may Allah bless him and grant him peace, that I detested. I went to the Messenger of Allah, may Allah bless him and grant him peace, weeping, and said, ‘O Messenger of Allah, I have been calling my mother to Islam, but she refuses me. Today I called her, and she said something to me about you that I detest. So pray to Allah to guide Abu Hurayra's mother.’ He said, ‘O Allah, guide Abu Hurayra's mother.’ I departed rejoicing in the supplication of the Messenger of Allah, may Allah bless him and grant him peace. When I arrived and went to the door, I found it closed. My mother heard the sound of my footsteps and said, ‘Stay where you are, Abu Hurayra!’ I heard the sound of water moving. She put on her shift but, in her haste, did not put on her head-covering. She then opened the door and said, ‘O Abu Hurayra, I bear witness that there is no god but Allah, and I bear witness that Muhammad is the Messenger of Allah.’” He said: “I returned to the Messenger of Allah, may Allah bless him and grant him peace, and informed him. He praised Allah and spoke good words.”\n\nSomething of this has already appeared in the biography of Abu Hurayra.",
+      "arabic_sha256": "8e4d0fc0bc5d6e900ac59554c458a542c455741e9f2b75df0eed6317e53092eb",
+      "english_sha256": "7d40675f79f882698ae256fbeeb924a42dd9070334e1de919bb1d9bc8a09aed1",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو هريرة",
+      "english": "Abu Hurayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمونة بنت صبيح",
+      "english": "Maymuna bint Subayh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو محمد بن قتيبة",
+      "english": "Abu Muhammad ibn Qutayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن صبيح",
+      "english": "Sa'id ibn Subayh",
+      "kind": "person"
+    },
+    {
+      "arabic": "جزء إسحاق بن إبراهيم بن شاذان",
+      "english": "Juz of Ishaq ibn Ibrahim ibn Shadhan",
+      "kind": "work"
+    },
+    {
+      "arabic": "إسحاق بن إبراهيم بن شاذان",
+      "english": "Ishaq ibn Ibrahim ibn Shadhan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "سعد بن الصلت",
+      "english": "Sa'd ibn al-Salt",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن العلاء",
+      "english": "Yahya ibn al-Ala",
+      "kind": "person"
+    },
+    {
+      "arabic": "أيوب",
+      "english": "Ayyub",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن سيرين",
+      "english": "Muhammad ibn Sirin",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن الخطاب",
+      "english": "Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "يوسف",
+      "english": "Yusuf",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "يعقوب",
+      "english": "Ya'qub",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة",
+      "english": "Umayma bint Subayh",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "'Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرزاق",
+      "english": "'Abd al-Razzaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "معمر",
+      "english": "Ma'mar",
+      "kind": "person"
+    },
+    {
+      "arabic": "البحرين",
+      "english": "Bahrain",
+      "kind": "place"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسنده",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد الرحمن هو ابن مهدي",
+      "english": "'Abd al-Rahman ibn Mahdi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عكرمة بن عمار",
+      "english": "'Ikrima ibn 'Ammar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو كثير يزيد بن عبد الرحمن",
+      "english": "Abu Kathir Yazid ibn 'Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن محمد",
+      "english": "Yunus ibn Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

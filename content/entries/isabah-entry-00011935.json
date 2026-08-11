@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011935",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11935,
+  "title": {
+    "english": "Umm Jamil⁶ bint Abi Akhzam⁷ ibn Atik ibn al-Nu'man, the Ansari woman of Banu Malik",
+    "arabic_observed": "أم جميل «٦» بنت أبي أخزم «٧»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011935-segment-0001",
+      "volume": 8,
+      "scan_page": 369,
+      "printed_page": 368,
+      "reader_page": 4281,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4281",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0369:d66636798a2bba3b",
+      "arabic": "١١٩٣٥\n- أم جميل «٦» بنت أبي أخزم «٧»\nبن عتيك بن النّعمان الأنصاريّة، من بني مالك.",
+      "english": "11935—Umm Jamil⁶ bint Abi Akhzam⁷ ibn Atik ibn al-Nu'man, the Ansari woman of Banu Malik",
+      "arabic_sha256": "faa81edc450c4e92b09092b35bd6aa496e6ebbaf3b36e06649314631ae1a8953",
+      "english_sha256": "466441d9abbccb82bb6ba5ca918d378eabd092ecb2cb29cb250f76761a853554",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصاريّة",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني مالك",
+      "english": "Banu Malik",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

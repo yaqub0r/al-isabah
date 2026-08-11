@@ -1,0 +1,115 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010992",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10992,
+  "title": {
+    "english": "Jamila bint Sa'd",
+    "arabic_observed": "جميلة بنت سعد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010992-segment-0001",
+      "volume": 8,
+      "scan_page": 70,
+      "printed_page": 69,
+      "reader_page": 3982,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3982",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0070:715e8391ef9c3d9a",
+      "arabic": "١٠٩٩٢- جميلة بنت سعد\nبن الربيع الأنصاري الليثي «٣» .\nاستشهد بأحد. تقدم نسبها، لها صحبة.\nروت عن أبيها. روى عنها ثابت بن عبيد الأنصاري- أنّ أباها وعمها قتلا يوم أحد، فدفنا في قبر واحد، قاله أبو عمر، قال: وتزوج جميلة هذه زيد بن ثابت، قاله ابن سعد، وزاد: ولدت له خارجة، ويحيى، وإسماعيل، وسليمان، وكانت تكنى أم سعد.\nوأخرج ابن مندة، من طريق مسعر، عن ثابت بن عبيد، قال: دخلت على بنت سعد بن الربيع- يعني جميلة، وهي امرأة زيد بن ثابت، فقرّبت إلي رطبا وتمرا، فقلت لها:\nأرى هذا ورثته عن أبيك! فقالت: وما ورثت من أبي شيئا. قتل أبي قبل أن تنزل الفرائض.\nوقال ابن سعد: لم يكن سعد ولدها، وقتل أبوها، وهي حمل، ثم أسند عن الواقدي عن أبي الزناد أن أباها استشهد وهي حمل.",
+      "english": "10992 — Jamila bint Sa'd\n\nibn al-Rabi' al-Ansari al-Laythi.³\n\nHer father was martyred at Uhud. Her lineage has been given previously. She was a Companion.\n\nShe narrated from her father. Thabit ibn Ubayd al-Ansari narrated from her that her father and her paternal uncle were killed on the day of Uhud and buried in a single grave. Abu Umar said this, and he said: “Zayd ibn Thabit married this Jamila.” Ibn Sa'd said this and added: “She bore him Kharija, Yahya, Isma'il, and Sulayman, and her kunyah was Umm Sa'd.”\n\nIbn Mandah transmitted, by way of Mis'ar, from Thabit ibn Ubayd, who said: “I entered upon the daughter of Sa'd ibn al-Rabi'—that is, Jamila, the wife of Zayd ibn Thabit—and she set before me fresh dates and dried dates. I said to her, ‘I see that you inherited this from your father!’ She replied, ‘But I inherited nothing from my father. My father was killed before the prescribed inheritance shares were revealed.’”\n\nIbn Sa'd said: “Sa'd was not her child, and her father was killed while she was still in the womb.” He then transmitted with his isnad from al-Waqidi, from Abu al-Zinad, that her father was martyred while she was still in the womb.",
+      "arabic_sha256": "0fdf61c4969e563a51a2fc3d0cac19cde83f4badc1962929cf38b9d837c74509",
+      "english_sha256": "d8712f900a8b64da1b4fc5a3642c91d940a508fcbb3728f5ff7d36ccbc96e9f5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سعد بن الربيع",
+      "english": "Sa'd ibn al-Rabi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت بن عبيد الأنصاري",
+      "english": "Thabit ibn Ubayd al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن ثابت",
+      "english": "Zayd ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "خارجة",
+      "english": "Kharija",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى",
+      "english": "Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسماعيل",
+      "english": "Isma'il",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان",
+      "english": "Sulayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعد",
+      "english": "Umm Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسعر",
+      "english": "Mis'ar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الزناد",
+      "english": "Abu al-Zinad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

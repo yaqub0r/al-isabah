@@ -1,0 +1,107 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011443",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11443,
+  "title": {
+    "english": "Tufya:",
+    "arabic_observed": "طفية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011443-segment-0001",
+      "volume": 8,
+      "scan_page": 225,
+      "printed_page": 224,
+      "reader_page": 4137,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4137",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0225:a5959950db0cf411",
+      "arabic": "١١٤٤٣- طفية:\nبمهملة وفاء ساكنة، بنت وهب أم أبي موسى الأشعريّ «٤» . ذكرها\n(١) أسد الغابة ت (٧٠٧٨) .\n(٢) أسد الغابة ت (٧٠٧٩) .\n(٣) أسد الغابة ت (٧٠٨٢)، الاستيعاب ت (٣٤٦٧) .\n(٤) أسد الغابة ت (٧٠٨١) .",
+      "english": "11443 — Tufya:\n\nWith an unpointed ta and a vowelless fa; she was the daughter of Wahb and the mother of Abu Musa al-Ash'ari. (4) She was mentioned by—\n\n(1) Usd al-Ghaba, entry 7078.\n\n(2) Usd al-Ghaba, entry 7079.\n\n(3) Usd al-Ghaba, entry 7082; al-Isti'ab, entry 3467.\n\n(4) Usd al-Ghaba, entry 7081.",
+      "arabic_sha256": "541985cb4a600ac0d60d5e767623bfeedd96c83beeb1f87a818032b49eb9bbb6",
+      "english_sha256": "e98883338d36391b70b964623d3dfd9706f583e5f26471e9e1e9cbc797889946",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011443-segment-0002",
+      "volume": 8,
+      "scan_page": 226,
+      "printed_page": 225,
+      "reader_page": 4138,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4138",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0226:d285a2065eaa927a",
+      "arabic": "الطّبرانيّ، وقال: أسلمت وماتت بالمدينة. وذكر المستغفريّ عن ابن قتيبة أنه قال: أسلمت وهاجرت، والّذي ذكره هشام بن الكلبيّ، وأبو أحمد العسكريّ- أنها ظبية، بمعجمة ثم موحدة، كما ستأتي قريبا.",
+      "english": "al-Tabarani, who said: “She embraced Islam and died in Medina.” Al-Mustaghfiri related from Ibn Qutayba that he said: “She embraced Islam and emigrated.” Hisham ibn al-Kalbi and Abu Ahmad al-'Askari, however, stated that her name was Zabya—with the dotted za followed by the single-dotted ba—as will appear shortly.",
+      "arabic_sha256": "6de75908c1ee8a565c3187fec433c2a667601b1182cb630b9b2f64928e6a24a1",
+      "english_sha256": "c088d27641c11d4d9ef511380c8ba2ec246e7a6c3a232617b179839aef35a5a6",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبي موسى الأشعري",
+      "english": "Abu Musa al-Ash'ari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن قتيبة",
+      "english": "Ibn Qutayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن الكلبي",
+      "english": "Hisham ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أحمد العسكري",
+      "english": "Abu Ahmad al-'Askari",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "طفية",
+      "explanation": "The canonical text establishes that the fa is vowelless but does not mark the initial vowel. The relevant collateral Arabic is likewise unvocalized, and the supplied Urdu page ends before this entry. “Tufya” is therefore retained provisionally, but Tafya or another initial vocalization cannot be excluded safely.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0225:a5959950db0cf411"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

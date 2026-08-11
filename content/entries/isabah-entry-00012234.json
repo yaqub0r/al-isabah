@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012234",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12234,
+  "title": {
+    "english": "Umm Kulthum bint Amr",
+    "arabic_observed": "أم كلثوم بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012234-segment-0001",
+      "volume": 8,
+      "scan_page": 465,
+      "printed_page": 464,
+      "reader_page": 4377,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4377",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0465:001b6f3c46297f7f",
+      "arabic": "١٢٢٣٤- أم كلثوم بنت عمرو\nبن جرول الخزاعية، كانت زوج عمر بن الخطاب، وهي والدة عبيد اللَّه بن عمر- بالتّصغير- وقع ذكرها في البخاريّ غير مسمّاة وأن عمر طلقها لما نزلت: وَلا تُمْسِكُوا بِعِصَمِ الْكَوافِرِ [الممتحنة: ١٠]، وسماها الطبراني، وقال:\nتزوجها بعد عمر أبو جهم بن حذافة.",
+      "english": "12234—Umm Kulthum bint Amr\n\nibn Jarwal al-Khuza'iyya. She was the wife of Umar ibn al-Khattab and the mother of Ubayd Allah ibn Umar—with “Ubayd” in the diminutive. She is mentioned without being named in al-Bukhari, in the report that Umar divorced her when the following was revealed: “Do not retain marital bonds with unbelieving women” [al-Mumtahana: 10]. Al-Tabarani gave her name and said:\n\nAfter Umar, Abu Jahm ibn Hudhafa married her.",
+      "arabic_sha256": "2329f8d15b8d7f709b3167217e3e7ad4e1c649027388a941294f0ac51e8ed353",
+      "english_sha256": "46a26c0caf64fa4d15b34a1144ba7bcab02f36692f2eea1b31a10588a6da9c49",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم كلثوم",
+      "english": "Umm Kulthum",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن الخطاب",
+      "english": "Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد اللَّه بن عمر",
+      "english": "Ubayd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاريّ",
+      "english": "al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "الممتحنة",
+      "english": "al-Mumtahana",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو جهم بن حذافة",
+      "english": "Abu Jahm ibn Hudhafa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

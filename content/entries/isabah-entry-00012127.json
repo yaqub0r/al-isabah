@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012127",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12127,
+  "title": {
+    "english": "Umm Amir bint Abi Quhafa:",
+    "arabic_observed": "أم عامر بنت أبي قحافة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012127-segment-0001",
+      "volume": 8,
+      "scan_page": 426,
+      "printed_page": 425,
+      "reader_page": 4338,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4338",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0426:6633b99d43784c8a",
+      "arabic": "١٢١٢٧- أم عامر بنت أبي قحافة:\nأخت أبي بكر الصّديق، وهي شقيقة أم فروة الآتية قريبا. ذكرها ابن سعد، فقال: تزوّجها عامر بن أبي وقاص، فولدت له بنتها ضعيفة.",
+      "english": "12127 — Umm Amir bint Abi Quhafa:\n\nShe was the sister of Abu Bakr al-Siddiq and the full sister of Umm Farwa, who will appear shortly. Ibn Sa'd mentioned her, saying: “Amir ibn Abi Waqqas married her, and she bore him a daughter, Da'ifa.”",
+      "arabic_sha256": "e8a7b7b4869d8dc773831b6511a11f3efbf918d1950744218f4f15dcafeba9a4",
+      "english_sha256": "29569d1cbee0260adccf37a390b664450e3382f96954f7df145f282f15f0461a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عامر بنت أبي قحافة",
+      "english": "Umm Amir bint Abi Quhafa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر الصّديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم فروة",
+      "english": "Umm Farwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عامر بن أبي وقاص",
+      "english": "Amir ibn Abi Waqqas",
+      "kind": "person"
+    },
+    {
+      "arabic": "ضعيفة",
+      "english": "Da'ifa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

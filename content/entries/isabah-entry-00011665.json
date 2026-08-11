@@ -1,0 +1,68 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011665",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11665,
+  "title": {
+    "english": "Kabsha bint Thabit",
+    "arabic_observed": "كبشة بنت ثابت"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011665-segment-0001",
+      "volume": 8,
+      "scan_page": 294,
+      "printed_page": 293,
+      "reader_page": 4206,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4206",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0294:d8f3777ebd93ed59",
+      "arabic": "١١٦٦٥- كبشة بنت ثابت\nبن حارثة بن الجلاس، بضم الجيم مخففة، الأنصارية «٣» . من بني خدارة، ذكرها ابن حبيب في المبايعات، وقال ابن سعد: اسم أمها سلامة.",
+      "english": "11665 — Kabsha bint Thabit\n\nibn Haritha ibn al-Julas—the jim bearing damma and not doubled—the Ansari woman.[3] She was of Banu Khudara. Ibn Habib included her among the women who pledged allegiance, and Ibn Sa'd said: Her mother's name was Salama.",
+      "arabic_sha256": "6c0851cd28065e7334ae330cbb09fe9c0f3af01c32512be1e5d6ef370977eeba",
+      "english_sha256": "f93b1a157e14b61d26fb6ce8711aa6124393e1507a0f3cf3206eecd937b4fef8",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني خدارة",
+      "english": "Banu Khudara",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلامة",
+      "english": "Salama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "خدارة",
+      "explanation": "The canonical text and both supplied witnesses establish the consonants Kh-d-a-r-a but do not vocalize the initial consonant. “Khudara” is retained provisionally; “Khadara” cannot be excluded from the supplied evidence.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0294:d8f3777ebd93ed59"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

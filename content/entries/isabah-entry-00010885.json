@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010885",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10885,
+  "title": {
+    "english": "Anisa bint Rafi' ibn al-Mu'alla ibn Lawdhan, an Ansari woman[2] of Banu Bayada.",
+    "arabic_observed": "أنيسة بنت رافع"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010885-segment-0001",
+      "volume": 8,
+      "scan_page": 39,
+      "printed_page": 38,
+      "reader_page": 3951,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3951",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0039:257d47e9f650d81a",
+      "arabic": "١٠٨٨٥- أنيسة بنت رافع\nبن المعلى بن لوذان الأنصارية «٢» من بني بياضة.\nبايعت النبي ﷺ، قاله ابن حبيب، واستدركها ابن الأثير.",
+      "english": "10885—Anisa bint Rafi' ibn al-Mu'alla ibn Lawdhan, an Ansari woman[2] of Banu Bayada.\n\nShe pledged allegiance to the Prophet, may Allah bless him and grant him peace. Ibn Habib stated this, and Ibn al-Athir supplied her as an addition.",
+      "arabic_sha256": "8017d7329a18eb00a8966b514c104881b173d0e38906b5d103853fafbb5dbba0",
+      "english_sha256": "144156089b17e1b1cbcbcc33deb926f1abaa1da3c93e488aa0cf99d9b57463e9",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أنيسة بنت رافع بن المعلى بن لوذان",
+      "english": "Anisa bint Rafi' ibn al-Mu'alla ibn Lawdhan",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو بياضة",
+      "english": "Banu Bayada",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

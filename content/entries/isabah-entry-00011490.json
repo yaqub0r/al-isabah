@@ -1,0 +1,120 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011490",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11490,
+  "title": {
+    "english": "Ukna:",
+    "arabic_observed": "عكناء:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011490-segment-0001",
+      "volume": 8,
+      "scan_page": 243,
+      "printed_page": 242,
+      "reader_page": 4155,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4155",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0243:1e8ea87983cbdbf4",
+      "arabic": "١١٤٩٠- عكناء:\nبنون أو مثلثة، بنت أبي صفرة الأسدية «١»، أخت المهلب.\nقال ابن مندة: أخبرنا محمد بن محمد بن يعقوب، حدثنا ابن صاعد، حدثنا محمد بن يحيى الأزديّ، حدثنا هشام بن سفيان، حدثنا عبيد اللَّه، بن عبد اللَّه «٢»، عن أبي الشعثاء، قال، قالت عكناء أو عكثاء بنت أبي صفرة أخت المهلب: إن رسول اللَّه ﷺ أمر بصوم عاشوراء «٣» يوم العاشر.\nسألته عن أبي الشعثاء، فقال: هو شيخ مجهول، وليس هو جابر بن زيد.\nقلت: وأبو الشعثاء هذا أغفله أبو أحمد الحاكم في الكنى، وذكر ابن حبان في الثقات هشام بن سفيان، فقال في الطبقة الرابعة: هشام بن سفيان المروزي يروي عن عبيد اللَّه بن عبد اللَّه العتكيّ، عن أبي بريدة، ولم يذكر روايته عن أبي الشعثاء، ولا عرج على ذكر أبي الشعثاء في كنى التابعين.",
+      "english": "11490—Ukna:\n\nWith nun, or with tha: Uktha bint Abi Sufra al-Asadiyya,[1] the sister of al-Muhallab.\n\nIbn Manda said: Muhammad ibn Muhammad ibn Yaqub informed us: Ibn Sa'id related to us: Muhammad ibn Yahya al-Azdi related to us: Hisham ibn Sufyan related to us: Ubayd Allah ibn Abd Allah[2] related to us, from Abu al-Sha'tha, who said: Ukna—or Uktha—bint Abi Sufra, the sister of al-Muhallab, said: “The Messenger of Allah (may Allah bless him and grant him peace) commanded that Ashura,[3] the tenth day, be fasted.”\n\nI asked him about Abu al-Sha'tha, and he said: “He is an unknown shaykh and is not Jabir ibn Zayd.”\n\nI say: Abu Ahmad al-Hakim overlooked this Abu al-Sha'tha in al-Kuna. Ibn Hibban mentioned Hisham ibn Sufyan in al-Thiqat, saying in the fourth generation: “Hisham ibn Sufyan al-Marwazi transmits from Ubayd Allah ibn Abd Allah al-Ataki, from Abu Burayda.” He did not mention his transmission from Abu al-Sha'tha, nor did he address Abu al-Sha'tha among the kunyahs of the Successors.",
+      "arabic_sha256": "115fe4d766f82e8a5f9fbef5c83881279716533270e4362e3fe6e9804ee5a0d5",
+      "english_sha256": "e07a645083a7ba62c0e62af7e09859fd845273f0472fc4113a19f6ee90236014",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "المهلب",
+      "english": "al-Muhallab",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن محمد بن يعقوب",
+      "english": "Muhammad ibn Muhammad ibn Yaqub",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن صاعد",
+      "english": "Ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن يحيى الأزدي",
+      "english": "Muhammad ibn Yahya al-Azdi",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن سفيان المروزي",
+      "english": "Hisham ibn Sufyan al-Marwazi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد اللَّه بن عبد اللَّه العتكي",
+      "english": "Ubayd Allah ibn Abd Allah al-Ataki",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الشعثاء",
+      "english": "Abu al-Sha'tha",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر بن زيد",
+      "english": "Jabir ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أحمد الحاكم",
+      "english": "Abu Ahmad al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بريدة",
+      "english": "Abu Burayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاشوراء",
+      "english": "Ashura",
+      "kind": "other"
+    },
+    {
+      "arabic": "الكنى",
+      "english": "al-Kuna",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

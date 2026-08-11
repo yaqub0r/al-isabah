@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012299",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12299,
+  "title": {
+    "english": "Umm al-Walid",
+    "arabic_observed": "أم الوليد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012299-segment-0001",
+      "volume": 8,
+      "scan_page": 491,
+      "printed_page": 490,
+      "reader_page": 4403,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4403",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0491:7dbc49a508947579",
+      "arabic": "١٢٢٩٩- أم الوليد\nبنت عمر بن الخطّاب «٢» .\nذكرها الدّار الدّارقطنيّ في «الإخوة»، وقال: روى حديثها الطّرائفيّ، وفيها نظر.\nقلت: حديثها أنها قالت:\nاطلع رسول اللَّه ﵌ ذات عشية، فقال: «أيّها النّاس، ألا تستحون» ! قالوا: ممّ ذاك يا رسول اللَّه؟ قال: «تجمعون ما لا تأكلون، وتبنون ما لا تعمرون، وتؤمّلون ما لا تدركون» «٣» .\nأخرجه الطّبرانيّ من رواية عثمان بن عبد الرّحمن الطّرائفي، عن الوازع بن نافع، عن سالم بن عبد اللَّه بن عمر عنها.\nوقال ابن مندة: رواه سعيد بن عبد الحميد بن جعفر بن علي بن ثابت عن الوازع ابن نافع نحوه.\nقلت: والطّريقان ضعيفان.",
+      "english": "12299—Umm al-Walid\n\nBint Umar ibn al-Khattab.²\n\nal-Daraqutni mentioned her in al-Ikhwa and said: “al-Tara'ifi narrated her hadith, but there is cause for scrutiny concerning her.”\n\nI say: Her hadith is that she said:\n\nThe Messenger of Allah, may Allah bless him and grant him peace, came out one evening and said: “O people, will you not feel ashamed?” They said, “Of what, O Messenger of Allah?” He said: “You gather what you do not eat, build what you do not inhabit, and hope for what you do not attain.”³\n\nal-Tabarani transmitted it through the narration of Uthman ibn Abd al-Rahman al-Tara'ifi, from al-Wazi' ibn Nafi', from Salim ibn Abd Allah ibn Umar, from her.\n\nIbn Manda said: “Sa'id ibn Abd al-Hamid ibn Ja'far ibn Ali ibn Thabit narrated something similar from al-Wazi' ibn Nafi'.”\n\nI say: Both chains are weak.",
+      "arabic_sha256": "f31940eccbca894a46b3c4f127b36342ccfb457530bff8ea4073a477e1b7d5cf",
+      "english_sha256": "331558a8e8fe99c1e5e34906dc38a1838723af90b98155c9a6a5a17c68c552ec",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الوليد",
+      "english": "al-Walid",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدّارقطنيّ",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "الإخوة",
+      "english": "al-Ikhwa",
+      "kind": "work"
+    },
+    {
+      "arabic": "عثمان بن عبد الرّحمن الطّرائفي",
+      "english": "Uthman ibn Abd al-Rahman al-Tara'ifi",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الطّبرانيّ",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوازع بن نافع",
+      "english": "al-Wazi' ibn Nafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "سالم بن عبد اللَّه بن عمر",
+      "english": "Salim ibn Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن عبد الحميد بن جعفر بن علي بن ثابت",
+      "english": "Sa'id ibn Abd al-Hamid ibn Ja'far ibn Ali ibn Thabit",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

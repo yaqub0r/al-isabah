@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011574",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11574,
+  "title": {
+    "english": "Fakhita bint Amr al-Zuhriyya (1)",
+    "arabic_observed": "فاختة بنت عمرو الزهرية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011574-segment-0001",
+      "volume": 8,
+      "scan_page": 258,
+      "printed_page": 257,
+      "reader_page": 4170,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4170",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0258:5194b9842196d8a0",
+      "arabic": "١١٥٧٤- فاختة بنت عمرو الزهرية «١»\n: خالة النبيّ ﵌.\nأخرج الطّبرانيّ، من طريق عبد الرّحمن بن عثمان الوقّاصي، عن ابن المنكدر، عن جابر: سمعت رسول اللَّه ﵌ يقول: «وهبت خالتي فاختة بنت عمرو غلاما، وأمرتها ألّا تجعله جازرا ولا صائغا، ولا حجّاما» «٢» .\nوالوقاصيّ ضعيف.",
+      "english": "11574—Fakhita bint Amr al-Zuhriyya (1)\n\nThe maternal aunt of the Prophet, may Allah bless him and grant him peace.\n\nal-Tabarani transmitted, through Abd al-Rahman ibn Uthman al-Waqqasi, from Ibn al-Munkadir, from Jabir: I heard the Messenger of Allah, may Allah bless him and grant him peace, say: “I gave my maternal aunt Fakhita bint Amr a slave boy and instructed her not to make him a butcher, a goldsmith, or a cupper.” (2)\n\nal-Waqqasi is weak.",
+      "arabic_sha256": "bf4dcc44cf06fe892faa8bb16331dbdf47a9a5feb62ed788657aba0dd76cff75",
+      "english_sha256": "4476ac62be4d80c60404a7416ff4c9449f80d714be4b44cd0f0d1e6dc2d04a8f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "فاختة بنت عمرو الزهرية",
+      "english": "Fakhita bint Amr al-Zuhriyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عثمان الوقاصي",
+      "english": "Abd al-Rahman ibn Uthman al-Waqqasi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن المنكدر",
+      "english": "Ibn al-Munkadir",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر",
+      "english": "Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهرية",
+      "english": "Banu Zuhra",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

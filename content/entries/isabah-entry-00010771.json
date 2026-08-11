@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010771",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10771,
+  "title": {
+    "english": "Amina bint 'Amr ibn Harb ibn Umayya",
+    "arabic_observed": "آمنة بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010771-segment-0001",
+      "volume": 8,
+      "scan_page": 6,
+      "printed_page": 5,
+      "reader_page": 3918,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3918",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0006:f373c7735745e8e2",
+      "arabic": "١٠٧٧١- آمنة بنت عمرو\nبن حرب بن أمية الأموية، بنت عم معاوية. وتزوجها أبو حذيفة بن عتبة، فولدت له عاصما. ذكره ابن سعد.",
+      "english": "10771—Amina bint 'Amr ibn Harb ibn Umayya\n\nShe was of the Umayyads and was a paternal cousin of Mu'awiya. Abu Hudhayfa ibn 'Utba married her, and she bore him 'Asim. Ibn Sa'd mentioned this.",
+      "arabic_sha256": "a7f121d8f8d5e1a686ce846cdf5340085d9ea96860089bc969e7f16bd41599ba",
+      "english_sha256": "f7f1adb4ec11cc47e8ea896c3da1bee983d1625f64b55d804b2e4260e9a2acb6",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سعد",
+      "english": "Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "آمنة بنت عمرو بن حرب بن أمية",
+      "english": "Amina bint 'Amr ibn Harb ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأموية",
+      "english": "Umayyads",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو حذيفة بن عتبة",
+      "english": "Abu Hudhayfa ibn 'Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاصم",
+      "english": "'Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "آمنة",
+      "english": "Amina",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

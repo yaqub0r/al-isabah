@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011530",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11530,
+  "title": {
+    "english": "Umayra bint Abi Khaythama:",
+    "arabic_observed": "عميرة بنت أبي خيثمة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011530-segment-0001",
+      "volume": 8,
+      "scan_page": 250,
+      "printed_page": 249,
+      "reader_page": 4162,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4162",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0250:84c4c7edb08cc2ea",
+      "arabic": "١١٥٣٠- عميرة بنت أبي خيثمة:\nتأتي في عبد اللَّه بن سماعة، وهي أخت أميمة بنت أبي خيثمة الماضية في حرف الهمزة.\nقال ابن سعد: أسلمت وبايعت، وتزوجها يزيد بن أسيد بن ساعدة وهو ابن عمها، ثم خلف عليها يزيد بن يربوع بن زيد الظفريّ.",
+      "english": "11530—Umayra bint Abi Khaythama:\n\nShe will appear under 'Abd Allah ibn Sama'a. She was the sister of Umayma bint Abi Khaythama, previously mentioned under the letter hamza.\n\nIbn Sa'd said: “She embraced Islam and pledged allegiance. Yazid ibn Usayd ibn Sa'ida, her paternal cousin, married her; then Yazid ibn Yarbu' ibn Zayd al-Zafari married her after him.”",
+      "arabic_sha256": "f2f55d37044d302d72be41a1783afb387de37ead25c8ac3a2bb914305ffcf38e",
+      "english_sha256": "172f0f267e46080696b498d4558e2063eaa77163e7c4bfe21f4a031d08820fae",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عميرة",
+      "english": "Umayra bint Abi al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة بنت أبي خيثمة",
+      "english": "Umayra bint Abi Khaythama",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن سماعة",
+      "english": "'Abd Allah ibn Sama'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة بنت أبي خيثمة",
+      "english": "Umayma bint Abi Khaythama",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن أسيد بن ساعدة",
+      "english": "Yazid ibn Usayd ibn Sa'ida",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن يربوع بن زيد الظفريّ",
+      "english": "Yazid ibn Yarbu' ibn Zayd al-Zafari",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011891",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11891,
+  "title": {
+    "english": "Umm al-Aswad:",
+    "arabic_observed": "أم الأسود:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011891-segment-0001",
+      "volume": 8,
+      "scan_page": 356,
+      "printed_page": 355,
+      "reader_page": 4268,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4268",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0356:c46459b8fafe19f0",
+      "arabic": "١١٨٩١- أم الأسود:\nأخرج ابن أبي شيبة، عن ابن عباس، قال: ماتت شاة لأم الأسود زوج النّبيّ ﵌.. الحديث، وفيه: «ألا انتفعتم بمسكها» «٣» !\nوهو في البخاري في كتاب الأيمان والنّذور، عن ابن عبّاس، عن سودة زوج النّبيّ ﵌ نحوه باختصار.\n(١) أخرجه أحمد في المسند ٦/ ٣٦٧ عن أم إسحاق بلفظه وأورده الزيلعي في نصب الراية ٢/ ٤٤٦ والهيثمي في الزوائد ٣/ ١٦٠ عن أم إسحاق بلفظه وقال رواه أحمد والطبراني في الكبير وفيه أم حكيم ولم أجد لها ترجمة.\n(٢) أخرجه أحمد في المسند ٢/ ٢٩٢، ٣٢٣، ٦/ ٣٦٧.\n(٣) المسك- بسكون السين: الجلد النهاية ٤/ ٣٣١.",
+      "english": "11891—Umm al-Aswad:\n\nIbn Abi Shayba transmitted from Ibn Abbas, who said: “A sheep belonging to Umm al-Aswad, the wife of the Prophet (may Allah bless him and grant him peace), died…” The hadith includes: “Why did you not make use of its hide?”³\n\nIt is in al-Bukhari, in the Book of Oaths and Vows, from Ibn Abbas, from Sawda, the wife of the Prophet (may Allah bless him and grant him peace), with similar wording in an abridged form.\n\n¹ Ahmad transmitted it in Musnad Ahmad, 6/367, from Umm Ishaq with this wording. al-Zayla'i cited it in Nasb al-Raya, 2/446, and al-Haythami in al-Zawa'id, 3/160, from Umm Ishaq with this wording. He said: “Ahmad and al-Tabarani transmitted it in al-Kabir. Its chain contains Umm Hakim, for whom I have found no biographical notice.”\n\n² Ahmad transmitted it in Musnad Ahmad, 2/292, 323; 6/367.\n\n³ al-mask—with the letter sin vowelless—means “the hide.” al-Nihaya, 4/331.",
+      "arabic_sha256": "1521bb71135a97f3b4d1bb5c20113ac0a261106732b4aa81633b8b6455f1ec3c",
+      "english_sha256": "c430e0546c882b47760deb6fa9849c55bd5f7869f2653fb8a62662ec9426ece8",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011891-segment-0002",
+      "volume": 8,
+      "scan_page": 357,
+      "printed_page": 356,
+      "reader_page": 4269,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4269",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0357:3baf653154db3ecb",
+      "arabic": "وسودة بنت زمعة تقدّمت، ولا يعرف في أزواج النّبيّ ﵌ أم الأسود، فيحمل على أنها كنية سودة.",
+      "english": "Sawdah bint Zam'a was mentioned previously. No woman known as Umm al-Aswad is found among the wives of the Prophet, may Allah bless him and grant him peace; it is therefore understood to be the kunyah of Sawdah.",
+      "arabic_sha256": "26ddd595e914f4785db342a8324b3f5049b8c26600cf04241a55cc183d51b5fc",
+      "english_sha256": "da60f53004c1348ec6002d8fb67b095829bc8759b0aef7f3262c09da23690d95",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "إسحاق",
+      "english": "Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم إسحاق",
+      "english": "Umm Ishaq al-Ghanawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "النّبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الأسود",
+      "english": "Umm al-Aswad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي شيبة",
+      "english": "Ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "كتاب الأيمان والنّذور",
+      "english": "Book of Oaths and Vows",
+      "kind": "work"
+    },
+    {
+      "arabic": "سودة",
+      "english": "Sawda bint Zam'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الزيلعي",
+      "english": "al-Zayla'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "نصب الراية",
+      "english": "Nasb al-Raya",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم حكيم",
+      "english": "Umm Hakim bint Dinar",
+      "kind": "person"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "سودة بنت زمعة",
+      "english": "Sawdah bint Zam'a",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

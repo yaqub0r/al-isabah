@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011212",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11212,
+  "title": {
+    "english": "Rayta bint Munabbih ibn al-Hajjaj al-Sahmiyya, mother of Abd Allah ibn Amr ibn al-As [2]",
+    "arabic_observed": "ريطة بنت منبه"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011212-segment-0001",
+      "volume": 8,
+      "scan_page": 149,
+      "printed_page": 148,
+      "reader_page": 4061,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4061",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0149:7660ae87a4da8f5b",
+      "arabic": "١١٢١٢- ريطة بنت منبه\nبن الحجاج السهمية، والدة عبد اللَّه بن عمرو بن العاص «٢» .\nأسلمت وبايعت، لها ذكر، وليست لها رواية، قاله ابن مندة.\nوذكر ابن سعد من طريق أبي حبيبة مولى الزبير بسند فيه الواقدي- أنها أسلمت يوم الفتح، وبايعت، ونسبه لعبد اللَّه بن الزبير.\nالقسم الثاني",
+      "english": "11212—Rayta bint Munabbih ibn al-Hajjaj al-Sahmiyya, mother of Abd Allah ibn Amr ibn al-As [2]\n\nShe embraced Islam and gave the pledge of allegiance. She is mentioned, but no narration is transmitted from her. Ibn Manda stated this.\n\nIbn Sa'd also mentioned, through Abu Habiba, the client of al-Zubayr, with a chain containing al-Waqidi, that she embraced Islam on the Day of the Conquest and gave the pledge of allegiance. He attributed this report to Abd Allah ibn al-Zubayr.\n\nSECTION TWO",
+      "arabic_sha256": "f8328df1d12f4de326e9a514471956200315dca24328479c31f8647d08577200",
+      "english_sha256": "c2657544ac33ce4ee8d21382999dfcc7e72013d926da85837ce2038682617158",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ريطة بنت منبه بن الحجاج السهمية",
+      "english": "Rayta bint Munabbih ibn al-Hajjaj al-Sahmiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عمرو بن العاص",
+      "english": "Abd Allah ibn Amr ibn al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو حبيبة",
+      "english": "Abu Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "يوم الفتح",
+      "english": "Day of the Conquest",
+      "kind": "other"
+    },
+    {
+      "arabic": "عبد اللَّه بن الزبير",
+      "english": "Abd Allah ibn al-Zubayr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

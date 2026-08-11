@@ -1,0 +1,347 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011600",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11600,
+  "title": {
+    "english": "Fatima bint al-Dahhak",
+    "arabic_observed": "فاطمة بنت الضحاك"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011600-segment-0001",
+      "volume": 8,
+      "scan_page": 273,
+      "printed_page": 272,
+      "reader_page": 4185,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4185",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0273:d377e72fdb7386de",
+      "arabic": "١١٦٠٠- فاطمة بنت الضحاك\nبن سفيان الكلابية «٦» .\nذكرها أبو عمر، فقال: قال ابن إسحاق: تزوّجها رسول اللَّه ﵌ بعد وفاة ابنته زينب، وخيّرها حين أنزلت آية التخيير، فاختارت فاختارت الدنيا، ففارقها،\n(١) أسد الغابة ت (٧١٨٤) .\n(٢) أسد الغابة ت (٧١٨٥) .\n(٣) في أ: ينادي أن أدوا.\n(٤) أسد الغابة ت (٧١٨٦)، الاستيعاب ت (٣٥٠٦) .\n(٥) في أ: رقبة بن محرم.\n(٦) أسد الغابة ت (٧١٨٧)، الاستيعاب ت (٣٥٠٧) .",
+      "english": "11600—Fatima bint al-Dahhak\n\nibn Sufyan al-Kilabiyya(6).\n\nAbu Umar mentioned her and said: Ibn Ishaq said: The Messenger of Allah, may Allah bless him and grant him peace, married her after the death of his daughter Zaynab. He gave her the choice when the Verse of Choice was revealed, and she chose—she chose this world—so he parted from her,\n\n(1) Usd al-Ghaba, entry no. 7184.\n\n(2) Usd al-Ghaba, entry no. 7185.\n\n(3) In manuscript A, the wording is: “the herald calls out, ‘Hand over ...’”\n\n(4) Usd al-Ghaba, entry no. 7186; al-Isti'ab, entry no. 3506.\n\n(5) In manuscript A: “Raqaba ibn Muharram.”\n\n(6) Usd al-Ghaba, entry no. 7187; al-Isti'ab, entry no. 3507.",
+      "arabic_sha256": "7db5f61dac37c1e52139afd51c3b6a18f5046c9534d9236ab1ccc39ad453cbfd",
+      "english_sha256": "5f9f78fd304c7c89c0ee150e147e557b930884ad1dd51ad2cbadc508b568333f",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011600-segment-0002",
+      "volume": 8,
+      "scan_page": 274,
+      "printed_page": 273,
+      "reader_page": 4186,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4186",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0274:853501ed7c06c1ef",
+      "arabic": "فكانت بعد ذلك تلتقط البعر وتقول: أنا الشّقيّة، اخترت الدنيا.\nقال أبو عمر: هذا عندنا غير صحيح، لأن ابن شهاب يروي عن أبي سلمة وعروة عن عائشة- أن رسول اللَّه ﵌ حين خيّر أزواجه بدأ بها، فاختارت اللَّه ورسوله، قال: وتتابع أزواج رسول اللَّه ﵌ كلهن على ذلك.\nوقال قتادة، وعكرمة: كان عنده حين خيرهن تسع نسوة، وهن اللاتي توفّي عنهن، وكذا قال جماعة: إن التي كانت تقول أنا الشقية هي التي استعاذت، واختلف في المستعيذة اختلافا كثيرا، ولا يصحّ فيها شيء،\nوقد قيل: إن الضحاك بن سفيان عرض عليه ابنته فاطمة، وقال: إنها لم تصدع قط، فقال: «لا حاجة لي بها»،\nوقد قيل: إنه تزوّجها سنة ثمان. انتهى كلام ابن عبد البرّ.\nويحتاج كلامه إلى شرح، وعليه في بعضه مؤاخذات: أما حديث ابن شهاب بما ذكر فهو في الصحيح.\n[لكن آخره: وأبي سائر ... وأما قول قتادة فأخرجه ... وأما قول عكرمة فأخرجه ... وأما قوله: وهن اللاتي توفّي عنهن، ففيه نظر، لأن آية التخيير كانت ...\nوتزوج بعد ذلك ...] «١» .\nوأما الّذي قال: إن التي كانت تقول أنا الشقية هي المستعيذة فهو قول حكاه الواقديّ، عن ابن مناح، قال: استعاذت من رسول اللَّه ﵌، وهذا لا يبطل قول ابن إسحاق إن الكلابية اختارت، وكانت تقول: أنا الشقية، لأنّ الجمع ممكن.\nوأما قوله: اختلف في المستعيذة اختلافا كثيرا فهو حقّ، فقال ابن سعد: اختلف علينا في الكلابية، اختلف علينا في اسمها، فقيل فاطمة بنت الضحاك بن سفيان، وقيل عمرة بنت يزيد بن عبيد، وقيل سنا بنت سفيان بن عوف، ثم قيل هي واحدة اختلف في اسمها، وقيل ثلاث، ثم أسند عن الواقديّ عن ابن أخي الزهري، عن الزهري، قال: هي فاطمة بنت الضحاك دخل عليها فاستعاذت منه، فطلّقها فكانت تلقط البعر، وتقول: أنا الشقية.\nوأسنده بالسند المذكور، عن الزهري، عن عروة، عن عائشة، قالت: تزوّج رسول اللَّه صلّى اللَّه عليه وعلى وآله وسلّم الكلابية، فلما دخلت عليه فدنا منها قالت: أعوذ باللَّه منك.\nفقال: «لقد عذت بعظيم، الحقي بأهلك» .\nومن طريق عبد الواحد بن أبي عون، عن أم منّاح- بتشديد النون وبالمهملة- قالت:\n(١) ما بين المعقوفين هكذا في الأصل، وكذا في هامش هـ.",
+      "english": "After that, she would pick up dung pellets and say, “I am the wretched one; I chose this world.”\n\nAbu Umar said: In our view, this is not sound, because Ibn Shihab relates from Abu Salama and Urwa, from Aisha, that when the Messenger of Allah—may Allah bless him and grant him peace—gave his wives the choice, he began with her, and she chose Allah and His Messenger. He said: All the wives of the Messenger of Allah—may Allah bless him and grant him peace—then followed one another in doing the same.\n\nQatada and Ikrima said: When he gave them the choice, he had nine women, and they were those whom he left as widows at his death. A group likewise said that the woman who used to say, “I am the wretched one,” was the woman who sought refuge from him. There is extensive disagreement concerning the woman who sought refuge, and nothing concerning her is sound.\n\nIt has also been said that al-Dahhak ibn Sufyan offered him his daughter Fatima and said, “She has never suffered a headache.” He replied, “I have no need of her.”\n\nIt has also been said that he married her in the year eight. Here ends the statement of Ibn Abd al-Barr.\n\nHis statement requires explanation, and some parts of it are open to objection. As for the report of Ibn Shihab as he cited it, it is in the Sahih.\n\n[But its ending is: “And my father was setting out ...” As for Qatada's statement, it was related by ... As for Ikrima's statement, it was related by ... As for his statement, “They were those whom he left as widows at his death,” this requires scrutiny, because the verse giving the choice was ...\nAnd he married after that ...] (1)\n\nAs for the assertion that the woman who used to say, “I am the wretched one,” was the woman who sought refuge, it is a statement related by al-Waqidi from Ibn Manah, who said: “She sought refuge from the Messenger of Allah—may Allah bless him and grant him peace.” This does not invalidate Ibn Ishaq's statement that the Kilabiyya chose and used to say, “I am the wretched one,” because the two accounts can be reconciled.\n\nAs for his statement that there was extensive disagreement concerning the woman who sought refuge, that is true. Ibn Sa'd said: “The accounts we received differed concerning the Kilabiyya; the accounts we received differed concerning her name. It was said that she was Fatima bint al-Dahhak ibn Sufyan; it was said that she was Amra bint Yazid ibn Ubayd; and it was said that she was Sana bint Sufyan ibn Awf. It was then said that she was one woman concerning whose name there was disagreement, and it was also said that they were three women.”\n\nHe then transmitted from al-Waqidi, from al-Zuhri's nephew, from al-Zuhri, who said: “She was Fatima bint al-Dahhak. He went in to her, and she sought refuge from him, so he divorced her. She would pick up dung pellets and say, ‘I am the wretched one.’”\n\nThrough the aforementioned chain, he also transmitted it from al-Zuhri, from Urwa, from Aisha, who said: “The Messenger of Allah—may Allah bless him and his family and grant him peace—married the Kilabiyya. When he went in to her and drew near to her, she said, ‘I seek refuge in Allah from you.’\n\n“He said, ‘You have indeed sought refuge in One who is mighty. Return to your family.’”\n\nAnd by way of Abd al-Wahid ibn Abi Awn, from Umm Mannah—with the nun doubled and with an unpointed ha—who said:\n\n(1) What is between square brackets appears thus in the original, and likewise in the margin of H.",
+      "arabic_sha256": "853501ed7c06c1ef29632c4399c7d35860e0a9a6952b3e2d3d63ab560d42b0f9",
+      "english_sha256": "efdf07a314cd1c609b72a5dc8e9ac8698922cbd37b32d944e6e706b77a7ce485",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011600-segment-0003",
+      "volume": 8,
+      "scan_page": 275,
+      "printed_page": 274,
+      "reader_page": 4187,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4187",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0275:33d3106da0174c85",
+      "arabic": "كانت التي استعاذت قد ولهت وذهب عقلها، وكانت تقول: إذا استأذنت على أمهات المؤمنين: أنا الشقية، وتقول: إنّما خدعت.\nومن طريق عمرو بن شعيب، عن أبيه، عن جده: كان دخل بها، ولكنه لما خير نساءه اختارت قومها، ففارقها، فكانت تلقط البعر، وتقول: أنا الشقية.\nوقيل: إن المستعيذة سنا بنت النعمان بن أبي الجون، أسنده ابن سعد عن الواقديّ، عن محمد بن يعقوب بن عتبة، عن عبد الواحد بن أبي عون. وقيل أسماء بنت النعمان بن أبي الجون، أسنده عن الواقدي، عن عمرو بن صالح، عن سعيد بن عبد الرحمن بن أبزى، عن هشام بن الكلبي، عن أبيه، عن أبي صالح، عن ابن عباس. ومن طريق أبي أسيد الساعدي كالقصة التي في الصحيح، وفي آخرها: فكانت تقول: أدعوني الشقية.\nومن وجه آخر، عن أبي أسيد- أن المستعيذة توفيت في خلافة عثمان.\nوأما قوله: ولا يصح منها شيء فعجيب، فقد ثبتت قصتها في الصحيح من حديث أبي أسيد الساعدي، إلا أن كان مراده بنفي الصحة الجزم بالكلابية دون غيرها، فهو ممكن على بعده.\nوأما قوله: إن الضحاك بن سفيان، عرض عليه ابنته، وقال: إنها لم تصدع- فأخرجه في الصحيح.\nوأما قوله: وقد قيل إنه تزوجها سنة ثمان، فالظاهر أن الضمير لصاحبة الترجمة، ومقتضاه أنه تقدم قول يخالفه، ولم يتقدم إلا قوله في أول الترجمة إنه تزوجها بعد وفاة ابنته زينب.\nوقد أسند ابن سعد، عن الواقديّ، عن إبراهيم بن وثيمة، عن أبي وجزة، قال: تزوّج النبي ﵌ الكلابية في ذي العقدة سنة ثمان منصرفة من الجعرانة، وعن إسماعيل بن مصعب، عن شيخ من رهطها- أنها توفيت سنة ستين.",
+      "english": "The woman who sought refuge [from him] had become distraught and lost her reason. Whenever she sought permission to enter upon the Mothers of the Believers, she would say, “I am the wretched woman,” and she would say, “I was merely deceived.”\n\nThrough 'Amr ibn Shu'ayb, from his father, from his grandfather: He had consummated the marriage with her, but when he gave his wives the choice, she chose her own people. He therefore separated from her. She used to gather dung and say, “I am the wretched woman.”\n\nIt is also said that the woman who sought refuge was Sana bint al-Nu'man ibn Abi al-Jawn. Ibn Sa'd transmitted this with a chain from al-Waqidi, from Muhammad ibn Ya'qub ibn 'Utba, from 'Abd al-Wahid ibn Abi 'Awn. It is also said that she was Asma bint al-Nu'man ibn Abi al-Jawn. He transmitted this with a chain from al-Waqidi, from 'Amr ibn Salih, from Sa'id ibn 'Abd al-Rahman ibn Abza, from Hisham ibn al-Kalbi, from his father, from Abu Salih, from Ibn 'Abbas. There is also a route through Abu Usayd al-Sa'idi containing the same story as that in the Sahih, at the end of which she would say, “Call me the wretched woman.”\n\nAccording to another route from Abu Usayd, the woman who sought refuge died during the caliphate of 'Uthman.\n\nAs for his statement, “Nothing concerning her is sound,” it is astonishing, for her story is established in the Sahih in the hadith of Abu Usayd al-Sa'idi. Unless, by denying its soundness, he meant that she cannot be identified definitively as the woman of Kilab rather than someone else; that is possible, though far-fetched.\n\nAs for his statement that al-Dahhak ibn Sufyan offered his daughter to him and said, “She has never suffered a headache,” it is related in the Sahih.\n\nAs for his statement, “It has been said that he married her in the year eight,” the apparent meaning is that the pronoun refers to the subject of this biographical entry. This would imply that a contrary opinion had previously been mentioned, yet nothing preceded it except his statement at the beginning of the entry that he married her after the death of his daughter Zaynab.\n\nIbn Sa'd transmitted with a chain from al-Waqidi, from Ibrahim ibn Wathima, from Abu Wajza, who said: “The Prophet—may Allah bless him and grant him peace—married the woman of Kilab in Dhu al-Qa'da of the year eight, upon his return from al-Ji'rana.” And he transmitted from Isma'il ibn Mus'ab, from an elder of her clan, that she died in the year sixty.",
+      "arabic_sha256": "68270cfdb567f9e946e207c8e94e54fa732b5afb33416f141a7f8ecc1b28ba30",
+      "english_sha256": "b582e7d50c578ca82a4f377d9f309f0b8706d8a87fd27d5df21c49a4711d0c0e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي، رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab",
+      "kind": "person"
+    },
+    {
+      "arabic": "آية التخيير",
+      "english": "Verse of Choice",
+      "kind": "other"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبد البرّ",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن شهاب",
+      "english": "Ibn Shihab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سلمة",
+      "english": "Abu Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "قتادة",
+      "english": "Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "عكرمة",
+      "english": "Ikrima",
+      "kind": "person"
+    },
+    {
+      "arabic": "الضحاك بن سفيان",
+      "english": "al-Dahhak ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت الضحاك بن سفيان",
+      "english": "Fatima bint al-Dahhak ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكلابية",
+      "english": "al-Kilabiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مناح",
+      "english": "Ibn Manah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة بنت يزيد بن عبيد",
+      "english": "Amra bint Yazid ibn Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سنا بنت سفيان بن عوف",
+      "english": "Sana bint Sufyan ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الواحد بن أبي عون",
+      "english": "Abd al-Wahid ibn Abi Awn",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم منّاح",
+      "english": "Umm Mannah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمهات المؤمنين",
+      "english": "Mothers of the Believers",
+      "kind": "other"
+    },
+    {
+      "arabic": "عمرو بن شعيب",
+      "english": "'Amr ibn Shu'ayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "سنا بنت النعمان بن أبي الجون",
+      "english": "Sana bint al-Nu'man ibn Abi al-Jawn",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن يعقوب بن عتبة",
+      "english": "Muhammad ibn Ya'qub ibn 'Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الواحد بن أبي عون",
+      "english": "'Abd al-Wahid ibn Abi 'Awn",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت النعمان بن أبي الجون",
+      "english": "Asma bint al-Nu'man ibn Abi al-Jawn",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن صالح",
+      "english": "'Amr ibn Salih",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن عبد الرحمن بن أبزى",
+      "english": "Sa'id ibn 'Abd al-Rahman ibn Abza",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن الكلبي",
+      "english": "Hisham ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو صالح",
+      "english": "Abu Salih",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn 'Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أسيد الساعدي",
+      "english": "Abu Usayd al-Sa'idi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "Sahih",
+      "kind": "work"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "'Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكلابية",
+      "english": "Kilab",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "إبراهيم بن وثيمة",
+      "english": "Ibrahim ibn Wathima",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو وجزة",
+      "english": "Abu Wajza",
+      "kind": "person"
+    },
+    {
+      "arabic": "ذي العقدة",
+      "english": "Dhu al-Qa'da",
+      "kind": "other"
+    },
+    {
+      "arabic": "الجعرانة",
+      "english": "al-Ji'rana",
+      "kind": "place"
+    },
+    {
+      "arabic": "إسماعيل بن مصعب",
+      "english": "Isma'il ibn Mus'ab",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "بن أمية بن محرث بن حمل بن شق بن رقبة بن مخدج",
+      "explanation": "The canonical text is unvocalized, and the collateral Usd al-Ghaba passage confirms most of the consonantal forms but omits Haml and supplies no vowel marks. The provisional forms Muhrith, Haml, Shiqq, Raqaba, and Mukhdaj are therefore retained, but their exact vocalization cannot be established securely from the supplied evidence.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0273:d377e72fdb7386de"
+    },
+    {
+      "category": "name vocalization",
+      "arabic_span": "ابن مناح",
+      "explanation": "The supplied Arabic and Urdu witness do not establish the precise vocalization of مناح in this name. “Ibn Manah” is retained as a conservative ASCII rendering and is not conflated with Umm Mannah, whose doubled nun is explicitly specified.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0274:853501ed7c06c1ef"
+    },
+    {
+      "category": "source lacuna",
+      "arabic_span": "[لكن آخره: وأبي سائر ... وأما قول قتادة فأخرجه ... وأما قول عكرمة فأخرجه ... وأما قوله: وهن اللاتي توفّي عنهن، ففيه نظر، لأن آية التخيير كانت ... وتزوج بعد ذلك ...]",
+      "explanation": "The bracketed passage is already lacunose in the canonical source, as its footnote confirms. The unavailable wording represented by the ellipses cannot safely be reconstructed and has therefore been preserved as omitted.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0274:853501ed7c06c1ef"
+    },
+    {
+      "category": "name_vocalization",
+      "arabic_span": "إبراهيم بن وثيمة",
+      "explanation": "The canonical text and the supplied Urdu witness both leave وثيمة unvocalized, while the collateral Arabic results do not establish this narrator's pronunciation. “Wathima” is retained provisionally as the most plausible reading.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0275:33d3106da0174c85"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

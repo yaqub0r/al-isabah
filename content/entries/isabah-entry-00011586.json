@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011586",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11586,
+  "title": {
+    "english": "Fadila, wife of 'Abd Allah ibn Unays (1)",
+    "arabic_observed": "فاضلة، امرأة عبد اللَّه بن أنيس «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011586-segment-0001",
+      "volume": 8,
+      "scan_page": 263,
+      "printed_page": 262,
+      "reader_page": 4175,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4175",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0263:9979e597d3cbada4",
+      "arabic": "١١٥٨٦- فاضلة، امرأة عبد اللَّه بن أنيس «١»\n: مختلف في اسمها.\nتقدّم ذكرها، كذا عند ابن مندة. وقال أبو عمر: فاضلة الأنصاريّة زوج عبد اللَّه بن أنيس الجهنيّ، حديثها عند أهل المدينة، قالت: خطبنا النبيّ ﵌ فحثنا على الصّدقة.\nقلت: أخرجه الحسن بن سفيان في مسندة، من طريق موسى بن عبيدة الرّبذي أحد الضّعفاء، عن أخيه محمد بن عبيدة، عن أخيه عبد اللَّه بن عبيدة، عن يحيى بن عبد اللَّه بن كعب بن مالك، عن أمّه، وهي بنت عبد اللَّه بن أنيس الجهنيّ، عن أمها فاضلة الأنصارية، قالت: خطبنا رسول اللَّه ﵌ فحثّ على الصّدقة، فبعثت إليه بحلي لي، وقلت: هو صدقة للَّه ﷿، فردّه، وقال: إني لا أقبل صدقة من امرأة إلا بإذن زوجها، فبعثت إليه به مع زوجي، فقال: هو لها يا رسول اللَّه ورثته من أبيها، فقبله.",
+      "english": "11586—Fadila, wife of 'Abd Allah ibn Unays (1)\n\nThere is disagreement concerning her name.\n\nShe was mentioned previously; thus it is given by Ibn Mandah. Abu 'Umar said: Fadila al-Ansariyya, wife of 'Abd Allah ibn Unays al-Juhani. Her hadith is known among the people of Medina. She said, “The Prophet—may Allah bless him and grant him peace—addressed us and urged us to give charity.”\n\nI say: al-Hasan ibn Sufyan transmitted it in his Musnad by way of Musa ibn 'Ubayda al-Rabadhi, one of the weak transmitters, from his brother Muhammad ibn 'Ubayda, from his brother 'Abd Allah ibn 'Ubayda, from Yahya ibn 'Abd Allah ibn Ka'b ibn Malik, from his mother—who was a daughter of 'Abd Allah ibn Unays al-Juhani—from her mother, Fadila al-Ansariyya, who said: “The Messenger of Allah—may Allah bless him and grant him peace—addressed us and urged the giving of charity. I therefore sent him some jewelry of mine and said, ‘It is charity for Allah, Mighty and Majestic.’ He returned it and said, ‘I do not accept charity from a woman except with her husband's permission.’ I then sent it to him with my husband, who said, ‘It belongs to her, O Messenger of Allah; she inherited it from her father.’ He then accepted it.”",
+      "arabic_sha256": "5155148c3a0ad976df87dc600d0ddada33657a5a8626c5ce8b8f80d52166f6af",
+      "english_sha256": "8ffaa67ff7e3deafac3263fc68c022ffb29a5ca5e603f2cce27781ed1b20156b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "فاضلة الأنصارية",
+      "english": "Fadila al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن أنيس الجهنيّ",
+      "english": "'Abd Allah ibn Unays al-Juhani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "الحسن بن سفيان",
+      "english": "al-Hasan ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن عبيدة الرّبذي",
+      "english": "Musa ibn 'Ubayda al-Rabadhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عبيدة",
+      "english": "Muhammad ibn 'Ubayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عبيدة",
+      "english": "'Abd Allah ibn 'Ubayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن عبد اللَّه بن كعب بن مالك",
+      "english": "Yahya ibn 'Abd Allah ibn Ka'b ibn Malik",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

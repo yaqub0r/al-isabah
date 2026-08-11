@@ -1,0 +1,249 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012110",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12110,
+  "title": {
+    "english": "Umm Subayya al-Juhaniyya⁴",
+    "arabic_observed": "أم صبيّة الجهنيّة «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012110-segment-0001",
+      "volume": 8,
+      "scan_page": 422,
+      "printed_page": 421,
+      "reader_page": 4334,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4334",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0422:c2cc127ce12d3577",
+      "arabic": "١٢١١٠- أم صبيّة الجهنيّة «٤»\n: قال أبو عمر: حديثها عند أهل المدينة، وهي جدّة خارجة بن الحارث بن رافع بن مكيث، روى حديثها أبو النعمان سالم بن سرج، وهو ابن خربوذ، وأخوه نافع عنها، وهو في «الأدب المفرد» للبخاريّ، و«السّنن» لأبي داود، وابن ماجة.\nوأخرج حديثهما أحمد، وابن أبي شيبة، وغيرهما، وهو أنها قالت: اختلفت يدي ويد رسول اللَّه ﵌ في إناء واحد في الوضوء «٥»، ووقع لنا بعلو في المعرفة لابن مندة، ووقع عند ابن سعد وغيره: عن خولة بنت قيس أم صبيّة.\n(١) أسد الغابة ت (٧٤٨٩) .\n(٢) في أ: أم درة.\n(٣) أسد الغابة ت (٧٥٠٠) .\n(٤) أسد الغابة ت (٧٥٠١)، الاستيعاب ت (٣٦٢٨)، أعلام النساء ٢/ ٣٢٢ تجريد أسماء الصحابة ٢/ ٣٢٥، تقريب التهذيب ٢/ ٦٢٢، تهذيب التهذيب ١٢/ ٤٧٢ الكاشف ٣/ ٤٨٩، تهذيب الكمال ٣/ ١٧٠٤، خلاصة تهذيب الكمال ٣/ ٤٠١، بقي بن مخلد ٣٥٨، الجرح والتعديل ٩/ ٤٦٥، تلقيح فهوم أهل الأثر ٣٧٣، المشتبه ٤١٢ التاريخ لابن معين ٢/ ١٥١، حاشية الإكمال ٥/ ١٩٠ تبصير المنتبه ٣/ ٨٣٨.\n(٥) أخرجه أبو داود ١/ ٦٨ في كتاب الطهارة باب الوضوء بفضل وضوء المرأة حديث ٧٨.",
+      "english": "12110—Umm Subayya al-Juhaniyya⁴\n\nAbu Umar said: Her hadith is transmitted among the people of Medina. She was the grandmother of Kharija ibn al-Harith ibn Rafi' ibn Makith. Abu al-Nu'man Salim ibn Sarj—who is Ibn Kharbudh—and his brother Nafi' narrated her hadith from her. It is found in al-Bukhari's al-Adab al-Mufrad and in the Sunan of Abu Dawud and Ibn Majah.\n\nAhmad, Ibn Abi Shayba, and others also related their hadith. The report is that she said: “My hand and the hand of the Messenger of Allah, may Allah bless him and grant him peace, went back and forth in a single vessel during ablution.”⁵ It came down to us through a high chain in Ibn Manda's al-Ma'rifa. In Ibn Sa'd and others, it occurs as: “From Khawla bint Qays, Umm Subayya.”\n\n¹ Usd al-Ghaba, entry 7489.\n\n² In manuscript A: “Umm Durra.”\n\n³ Usd al-Ghaba, entry 7500.\n\n⁴ Usd al-Ghaba, entry 7501; al-Isti'ab, entry 3628; A'lam al-Nisa', 2/322; al-Tajrid, 2/325; Taqrib al-Tahdhib, 2/622; Tahdhib al-Tahdhib, 12/472; al-Kashif, 3/489; Tahdhib al-Kamal, 3/1704; Khulasat Tahdhib al-Kamal, 3/401; Baqi ibn Makhlad, 358; al-Jarh wa-al-Ta'dil, 9/465; Talqih Fuhum Ahl al-Athar, 373; al-Mushtabih, 412; al-Tarikh by Ibn Ma'in, 2/151; Hashiyat al-Ikmal, 5/190; Tabsir al-Muntabih, 3/838.\n\n⁵ Recorded by Abu Dawud, 1/68, in the Book of Purification, chapter “Performing Ablution with Water Left Over from a Woman's Ablution,” hadith 78.",
+      "arabic_sha256": "de7d36c1bc02ea9984177a38f80143e6c6fa886698545eef90bf5502b6ae811e",
+      "english_sha256": "99bd62838627c199fad160ffdc8ea3c0770acdf42ed136a1ee0e52e6b06f6a0f",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012110-segment-0002",
+      "volume": 8,
+      "scan_page": 423,
+      "printed_page": 422,
+      "reader_page": 4335,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4335",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0423:24440e7a4bef8914",
+      "arabic": "وسبق ذكرها في خولة بنت قيس التي تقدّمت.",
+      "english": "Her mention has already occurred under Khawla bint Qays, who appeared above.",
+      "arabic_sha256": "7ce53ffb09ea92d0cfe6dc2f441211d407b4e767c810188a55003c8377ab1749",
+      "english_sha256": "8b8e26db2d506aea136c53c68554130e3ac9c043397cce857c9402a0b127b73e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم درة",
+      "english": "Umm Durra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم صبيّة الجهنيّة",
+      "english": "Umm Subayya al-Juhaniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجهنيّة",
+      "english": "Juhayna",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "خارجة بن الحارث بن رافع بن مكيث",
+      "english": "Kharija ibn al-Harith ibn Rafi' ibn Makith",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو النعمان سالم بن سرج",
+      "english": "Abu al-Nu'man Salim ibn Sarj",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن خربوذ",
+      "english": "Ibn Kharbudh",
+      "kind": "person"
+    },
+    {
+      "arabic": "نافع",
+      "english": "Nafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأدب المفرد",
+      "english": "al-Adab al-Mufrad",
+      "kind": "work"
+    },
+    {
+      "arabic": "البخاريّ",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي شيبة",
+      "english": "Ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "المعرفة",
+      "english": "al-Ma'rifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت قيس أم صبيّة",
+      "english": "Khawla bint Qays Umm Subayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجرح والتعديل",
+      "english": "al-Jarh wa-al-Ta'dil",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "المشتبه",
+      "english": "al-Mushtabih",
+      "kind": "work"
+    },
+    {
+      "arabic": "التاريخ",
+      "english": "al-Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن معين",
+      "english": "Ibn Ma'in",
+      "kind": "person"
+    },
+    {
+      "arabic": "حاشية الإكمال",
+      "english": "Hashiyat al-Ikmal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تبصير المنتبه",
+      "english": "Tabsir al-Muntabih",
+      "kind": "work"
+    },
+    {
+      "arabic": "خولة بنت قيس",
+      "english": "Khawla bint Qays",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

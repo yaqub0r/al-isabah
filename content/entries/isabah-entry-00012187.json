@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012187",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12187,
+  "title": {
+    "english": "Umm Amr",
+    "arabic_observed": "أم عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012187-segment-0001",
+      "volume": 8,
+      "scan_page": 445,
+      "printed_page": 444,
+      "reader_page": 4357,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4357",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0445:3ffaff7672c6c364",
+      "arabic": "١٢١٨٧- أم عمرو\nبنت عمرو بن حديدة بن عمرو بن سواد بن غنم.\nذكرها ابن سعد في المبايعات، وقال: تزوّجها قطبة بن عامر بن حديدة، وهي أخت سلمان بن عمرو بن حديدة شقيقته.",
+      "english": "12187—Umm Amr\n\nbint Amr ibn Hudayda ibn Amr ibn Sawad ibn Ghanm.\n\nIbn Sa'd mentioned her among the women who pledged allegiance and said: Qutba ibn Amir ibn Hudayda married her. She was the full sister of Salman ibn Amr ibn Hudayda.",
+      "arabic_sha256": "18818057189d2ce878428b5c942d2cf4f679653749152624a84456adbd1605b9",
+      "english_sha256": "9c57df3a62a554810994d4a37ae76c5c536a9cb318b1289e2b5771fac442ca6c",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "قطبة بن عامر بن حديدة",
+      "english": "Qutba ibn Amir ibn Hudayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمان بن عمرو بن حديدة",
+      "english": "Salman ibn Amr ibn Hudayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو زوج حريث بن عمرو بن عثمان المخزومي",
+      "english": "Umm Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو زوج سليم الزرقي",
+      "english": "Umm Amr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

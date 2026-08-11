@@ -1,0 +1,354 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011119",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11119,
+  "title": {
+    "english": "Khawla bint Hakim",
+    "arabic_observed": "خولة بنت حكيم"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011119-segment-0001",
+      "volume": 8,
+      "scan_page": 117,
+      "printed_page": 116,
+      "reader_page": 4029,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4029",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0117:99dfe69985c3f0ba",
+      "arabic": "١١١١٩- خولة بنت حكيم\nبن أمية «١» بن حارثة بن الأوقص بن مرة بن هلال ابن فالج بن ذكوان بن ثعلبة بن بهثة «٢» بن سليم السلمية، امرأة عثمان بن مظعون.\nيقال: كنيتها أم شريك، ويقال لها خويلة بالتصغير، قاله أبو عمر. قال: وكانت صالحة فاضلة، روت عن النبي ﷺ. روى عنها سعد بن أبي وقاص، وسعيد بن المسيب، وبشر بن سعيد، وعروة، وأرسل عنها عمر بن عبد العزيز، فأخرج الحميدي في مسندة عن عمر بن عبد العزيز، زعمت المرأة الصالحة خولة بنت حكيم امرأة عثمان بن مظعون ...\nفذكر حديثا.\nوأخرج السّراج في تاريخه من طريق حجاج بن أرطاة عن الربيع بن مالك عن خولة بنت حكيم امرأة عثمان بن مظعون.\nوقال هشام بن عروة عن أبيه: كنت خولة بنت حكيم من اللاتي وهبن أنفسهنّ للنّبيّ ﷺ، علّقه البخاري، ووصله أبو نعيم من طريق أبي سعيد مولى بني هشام، عن أبيه، عن عائشة.\nوأخرجه الطّبرانيّ من طريق يعقوب، عن محمد، عن هشام، عن أبيه، عن خولة بنت حكيم- أنها كانت من اللاتي وهبن أنفسهن لرسول اللَّه ﷺ.\nقال أبو عمر: هي التي قالت لرسول اللَّه ﷺ: يا رسول اللَّه، إن فتح اللَّه عليك الطائف\n(١) الثقات ٣/ ١١٥، أعلام النساء ١/ ٣٢٨، ٣٢٦، ٤٤٢، تجريد أسماء الصحابة ٢/ ٢٦٤ تقريب التهذيب ٢/ ٩٦ تهذيب التهذيب ١٢/ ٤١٥، تهذيب الكمال ٣/ ١٦٨٢، تلقيح فهوم أهل الأثر ٢٧، ١٨، خلاصة تهذيب الكمال ٣/ ٣٨٠، بقي بن مخلد ١٤٧.\n(٢) في أبهيثة.",
+      "english": "11119—Khawla bint Hakim\nibn Umayya [1] ibn Haritha ibn al-Awqas ibn Murra ibn Hilal ibn Falij ibn Dhakwan ibn Tha'laba ibn Bahtha [2] ibn Sulaym, al-Sulamiyya, the wife of Uthman ibn Maz'un.\n\nIt is said that her kunya was Umm Sharik. She was also called Khuwayla, using the diminutive, according to Abu Umar. He said: She was righteous and virtuous, and she narrated from the Prophet (may Allah bless him and grant him peace). Sa'd ibn Abi Waqqas, Sa'id ibn al-Musayyib, Bishr ibn Sa'id, and Urwa narrated from her. Umar ibn Abd al-Aziz also reported from her in mursal form. Al-Humaydi included in his Musnad, from Umar ibn Abd al-Aziz: “The righteous woman Khawla bint Hakim, the wife of Uthman ibn Maz'un, stated …”\n\nHe then related a hadith.\n\nAl-Sarraj also transmitted a report in his Tarikh by way of Hajjaj ibn Arta'a, from al-Rabi' ibn Malik, from Khawla bint Hakim, the wife of Uthman ibn Maz'un.\n\nHisham ibn Urwa reported from his father: Khawla bint Hakim was one of the women who offered themselves in marriage to the Prophet (may Allah bless him and grant him peace). Al-Bukhari cited it in suspended form, and Abu Nu'aym supplied a connected chain by way of Abu Sa'id, the client of Banu Hisham, from his father, from Aisha.\n\nAl-Tabarani also transmitted it by way of Ya'qub, from Muhammad, from Hisham, from his father, from Khawla bint Hakim: she was one of the women who offered themselves in marriage to the Messenger of Allah (may Allah bless him and grant him peace).\n\nAbu Umar said: She is the one who said to the Messenger of Allah (may Allah bless him and grant him peace), “O Messenger of Allah, if Allah grants you the conquest of al-Ta'if—”\n\n(1) al-Thiqat 3/115; A'lam al-Nisa' 1/328, 326, 442; al-Tajrid 2/264; Taqrib al-Tahdhib 2/96; Tahdhib al-Tahdhib 12/415; Tahdhib al-Kamal 3/1682; Talqih Fuhum Ahl al-Athar 27, 18; Khulasat Tahdhib al-Kamal 3/380; Baqi ibn Makhlad 147.\n\n(2) In manuscript A: “Buhaytha.”",
+      "arabic_sha256": "713def8467ee675b318547071419616f99e891bacb6be9ba92673e9fcee3b130",
+      "english_sha256": "94bb2b8a0201de03ec78626b3550dd2412990fd2be39d952608dfbd2d05f4f41",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011119-segment-0002",
+      "volume": 8,
+      "scan_page": 118,
+      "printed_page": 117,
+      "reader_page": 4030,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4030",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0118:9bee385d262c6f90",
+      "arabic": "فأعطني حلي بادية بنت غيلان أبي سلامة أو حلي الفارعة بنت عقيل، وكانت من أحلى نساء ثقيف، فقال: «وإن كان لم يؤذن لي في ثقيف يا خويلة» . فذكرت ذلك لعمر، فقال: يا رسول اللَّه، أما أذن لك في ثقيف؟ قال: «لا» .\nوأخرج ابن مندة، من طريق الزهري: كانت عائشة تحدث أن خولة بنت حكيم زوج عثمان بن مظعون دخلت عليها وهي بذة الهيئة، فقالت: إن عثمان لا يريد النساء ...\nالحديث. هذه رواية أبي اليمان عن شعيب، ووصله غيره عن الزهري، عن عروة، عن عائشة، ولا يثبت، ولكن\nأخرجه أحمد من طريق ابن إسحاق، عن هشام بن عروة، عن أبيه، عن عائشة، قالت: دخلت على خويلة بنت حكيم بن أمية بن حارثة بن الأوقص السلمية، فقال النبيّ ﷺ: «ما أبذ هيئة خويلة!» «١»\nفقلت: امرأة لا زوج [لها، تصوم النهار وتقوم الليل، فهي طمرور «٢» لا زوج لها.] الحديث. في إنكاره على عثمان.\nولخولة امرأة عثمان بن مظعون ذكر في ترجمة قدامة بن مظعون وقال هشام بن الكلبي: كانت ممن وهبت نفسها للنبيّ ﷺ، وكان عثمان بن مظعون مات عنها.",
+      "english": "“Then give me the jewelry of Badiya bint Ghaylan Abu Salama, or the jewelry of al-Fari'a bint 'Aqil”—and she was among the most beautiful women of Thaqif. He said, “What if I have not been granted permission concerning Thaqif, O Khuwayla?” She mentioned that to 'Umar, who said, “O Messenger of Allah, have you not been granted permission concerning Thaqif?” He said, “No.”\n\nIbn Mandah transmitted, through al-Zuhri: Aisha used to relate that Khawla bint Hakim, the wife of 'Uthman ibn Maz'un, came in to her while shabby in appearance. She said, “'Uthman has no desire for women…”—the hadith. This is the narration of Abu al-Yaman from Shu'ayb. Another narrator connected it from al-Zuhri, from 'Urwa, from Aisha, but it is not established. Ahmad, however, transmitted it through Ibn Ishaq, from Hisham ibn 'Urwa, from his father, from Aisha, who said: “I called on Khuwayla bint Hakim ibn Umayya ibn Haritha ibn al-Awqas al-Sulamiyya, and the Prophet—may Allah bless him and grant him peace—said, ‘How shabby Khuwayla’s appearance is!’” (1)\n\nI said, “A woman who has no husband [—she fasts by day and stands in prayer by night, so she is a destitute woman with no husband.]” The hadith concerns his reproach of 'Uthman.\n\nKhawla, the wife of 'Uthman ibn Maz'un, is also mentioned in the biography of Qudama ibn Maz'un. Hisham ibn al-Kalbi said: She was among those women who offered themselves to the Prophet—may Allah bless him and grant him peace—and 'Uthman ibn Maz'un had died, leaving her a widow.",
+      "arabic_sha256": "14b521b48ccfa762eedf8b201525a659ac8199c8016b47e5bace972e56b106d8",
+      "english_sha256": "f47f0b67390637f24dec8c702d2ac71f87e718fd7525b1962bda6060b669b0b3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "خولة بنت حكيم",
+      "english": "Khawla bint Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليم السلمية",
+      "english": "Banu Sulaym",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عثمان بن مظعون",
+      "english": "Uthman ibn Maz'un",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم شريك",
+      "english": "Umm Sharik",
+      "kind": "person"
+    },
+    {
+      "arabic": "خويلة",
+      "english": "Khuwayla bint Hakim ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن أبي وقاص",
+      "english": "Sa'd ibn Abi Waqqas",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن المسيب",
+      "english": "Sa'id ibn al-Musayyib",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشر بن سعيد",
+      "english": "Bishr ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن عبد العزيز",
+      "english": "Umar ibn Abd al-Aziz",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحميدي",
+      "english": "al-Humaydi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السراج",
+      "english": "al-Sarraj",
+      "kind": "person"
+    },
+    {
+      "arabic": "تاريخه",
+      "english": "Tarikh al-Sarraj",
+      "kind": "work"
+    },
+    {
+      "arabic": "حجاج بن أرطاة",
+      "english": "Hajjaj ibn Arta'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "الربيع بن مالك",
+      "english": "al-Rabi' ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن عروة",
+      "english": "Hisham ibn Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سعيد",
+      "english": "Abu Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني هشام",
+      "english": "Banu Hisham",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "يعقوب",
+      "english": "Ya'qub",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطائف",
+      "english": "al-Ta'if",
+      "kind": "place"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "بهيثة",
+      "english": "Buhaytha ibn Sulaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "بادية بنت غيلان أبي سلامة",
+      "english": "Badiya bint Ghaylan Abu Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفارعة بنت عقيل",
+      "english": "al-Fari'a bint 'Aqil",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثقيف",
+      "english": "Thaqif",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "خويلة",
+      "english": "Khuwayla bint Hakim ibn Umayya ibn Haritha ibn al-Awqas al-Sulamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت حكيم",
+      "english": "Khawla bint Hakim ibn Umayya ibn Haritha ibn al-Awqas al-Sulamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن مظعون",
+      "english": "'Uthman ibn Maz'un",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو اليمان",
+      "english": "Abu al-Yaman",
+      "kind": "person"
+    },
+    {
+      "arabic": "شعيب",
+      "english": "Shu'ayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "'Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن عروة",
+      "english": "Hisham ibn 'Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "خويلة بنت حكيم بن أمية بن حارثة بن الأوقص السلمية",
+      "english": "Khuwayla bint Hakim ibn Umayya ibn Haritha ibn al-Awqas al-Sulamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "قدامة بن مظعون",
+      "english": "Qudama ibn Maz'un",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن الكلبي",
+      "english": "Hisham ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت حكيم",
+      "english": "Khawla bint Hakim al-Ansariyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "textual_reading",
+      "arabic_span": "كنت خولة بنت حكيم من اللاتي وهبن أنفسهن للنبي",
+      "explanation": "The printed Arabic has kunt, which is grammatically defective here. The context, the subsequent fully connected version, the Urdu witness, and Usd al-Ghaba securely support the intended third-person sense “Khawla bint Hakim was,” but no Arabic manuscript witness establishes whether the underlying form was kanat or whether this is a typographical error.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0117:99dfe69985c3f0ba"
+    },
+    {
+      "category": "genealogical relationship",
+      "arabic_span": "بادية بنت غيلان أبي سلامة",
+      "explanation": "The canonical sequence and supplied witnesses do not establish whether Abu Salama is an additional designation associated with Ghaylan or bears some other grammatical or genealogical relationship. The English preserves the sequence and does not insert ibn or other explanatory wording.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0118:9bee385d262c6f90"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

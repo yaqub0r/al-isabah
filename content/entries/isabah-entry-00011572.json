@@ -1,0 +1,129 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011572",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11572,
+  "title": {
+    "english": "Fakhita bint Abi Talib",
+    "arabic_observed": "فاختة بنت أبي طالب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011572-segment-0001",
+      "volume": 8,
+      "scan_page": 257,
+      "printed_page": 256,
+      "reader_page": 4169,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4169",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0257:65dbf35993e88518",
+      "arabic": "١١٥٧٢- فاختة بنت أبي طالب\nبن عبد المطّلب بن هاشم الهاشميّة»\n، أم هانئ،\n(١) في أ: راشد.\n(٢) أسد الغابة ت (٧١٦٢) .\n(٣) في أ: الآخرة.\n(٤) سقط في أ.\n(٥) أسد الغابة ت (٧١٦٥)، الاستيعاب ت (٣٤٩٤)، الاستبصار ٣٥٩، تهذيب الكمال ١٦٩٠، تاريخ الإسلام ٢/ ٣٣٢ تهذيب التهذيب ١٢/ ٤٨١، خلاصة تذهيب الكمال ٥٠٠، طبقات ابن سعد ٨/ ٤٧، طبقات خليفة ٣٣٠ المعارف ٣٦ و١٢٠، الجرح والتعديل ٩/ ٤٦٧.",
+      "english": "11572—Fakhita bint Abi Talib\n\nibn Abd al-Muttalib ibn Hashim, the Hashimi woman, (5) Umm Hani,\n\n(1) In manuscript A: “Rashid.”\n\n(2) Usd al-Ghaba, entry 7164.\n\n(3) In manuscript A: “al-Akhira.”\n\n(4) Omitted in manuscript A.\n\n(5) Usd al-Ghaba, entry 7165; al-Isti'ab, entry 3494; al-Istibsar, p. 359; Tahdhib al-Kamal, no. 1690; Tarikh al-Islam, 2/332; Tahdhib al-Tahdhib, 12/481; Khulasat Tadhhib al-Kamal, p. 500; al-Tabaqat of Ibn Sa'd, 8/47; al-Tabaqat of Khalifa, p. 330; al-Ma'arif, pp. 36 and 120; al-Jarh wa-l-Ta'dil, 9/467.",
+      "arabic_sha256": "e88f24452d0260aa0b08d7dea8db17257d2ba0906f23c144aae3d56b43f9657a",
+      "english_sha256": "24c8972e8c5f5464a4a47a27bfb6e018808a7df11fb8bff635d6c3520a952b31",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011572-segment-0002",
+      "volume": 8,
+      "scan_page": 258,
+      "printed_page": 257,
+      "reader_page": 4170,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4170",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0258:5194b9842196d8a0",
+      "arabic": "أخت علي، وهي بكنيتها أشهر. وقيل اسمها هند. والأول أشهر.",
+      "english": "She was the sister of Ali, and she is better known by her kunya. It is also said that her name was Hind. The former is better known.",
+      "arabic_sha256": "d0efb1719009aa4d85b4dcfcd7ff0b760b68b0a592daacec4e7e3d3fadbc9afb",
+      "english_sha256": "f33fcc0efdaceb611e3ed1cd29bbb22da70c0cda5459aa3b3b16b75c4b241382",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الهاشميّة",
+      "english": "Banu Hashim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم هانئ",
+      "english": "Umm Hani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ الإسلام",
+      "english": "Tarikh al-Islam",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب الكمال",
+      "english": "Khulasat Tadhhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat of Ibn Sa'd",
+      "kind": "work"
+    },
+    {
+      "arabic": "طبقات خليفة",
+      "english": "al-Tabaqat of Khalifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "المعارف",
+      "english": "al-Ma'arif",
+      "kind": "work"
+    },
+    {
+      "arabic": "الجرح والتعديل",
+      "english": "al-Jarh wa-l-Ta'dil",
+      "kind": "work"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند",
+      "english": "Hind",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

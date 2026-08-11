@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010889",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10889,
+  "title": {
+    "english": "Unaysa bint Abd Allah",
+    "arabic_observed": "أنيسة بنت عبد اللَّه"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010889-segment-0001",
+      "volume": 8,
+      "scan_page": 40,
+      "printed_page": 39,
+      "reader_page": 3952,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3952",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0040:fb896d23dab8c7de",
+      "arabic": "١٠٨٨٩- أنيسة بنت عبد اللَّه\nبن عمرو الأنصارية البياضية. ذكرها ابن سعد، واستدركها الذّهبيّ.",
+      "english": "10889—Unaysa bint Abd Allah\n\nibn Amr, the Ansari woman of Banu Bayada. Ibn Sa'd mentioned her, and al-Dhahabi added her.",
+      "arabic_sha256": "3607608a4a3a750ee6f923d9c0fc96a2241be3c1d7a032533e0d6dd7eb452070",
+      "english_sha256": "415fe615d79bd56d83b4ad4542e321361e86bd9782e978ffed060b30dbcb3807",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "البياضية",
+      "english": "Banu Bayada",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

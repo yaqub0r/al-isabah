@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011397",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11397,
+  "title": {
+    "english": "al-Sa'ba bint Jabal",
+    "arabic_observed": "الصّعبة بنت جبل"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011397-segment-0001",
+      "volume": 8,
+      "scan_page": 209,
+      "printed_page": 208,
+      "reader_page": 4121,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4121",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0209:22ac144d448c10f6",
+      "arabic": "١١٣٩٧- الصّعبة بنت جبل\nبن عمرو بن أوس، أخت معاذ.\nتقدم نسبها مع أخيها معاذ. وذكرها ابن سعد في المبايعات، وقال: تزوجها ثعلبة بن عبيد بن ثعلبة، فولدت له عبيدا.",
+      "english": "11397—al-Sa'ba bint Jabal\n\nibn Amr ibn Aws, the sister of Mu'adh.\n\nHer lineage was given previously together with that of her brother Mu'adh. Ibn Sa'd mentioned her among the women who gave the pledge of allegiance and said: Tha'laba ibn Ubayd ibn Tha'laba married her, and she bore him Ubayd.",
+      "arabic_sha256": "30f0081327fd1979b16ebcb997eab4d831f553dd9ad4b73321bfe50f0e22a01c",
+      "english_sha256": "bf38b8c5fec30bce6ca52782ca9ac4341aacfb4a9113550501e24018e291a92b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "معاذ",
+      "english": "Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثعلبة بن عبيد بن ثعلبة",
+      "english": "Tha'laba ibn Ubayd ibn Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد",
+      "english": "Ubayd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012150",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12150,
+  "title": {
+    "english": "Umm Abd Allah:",
+    "arabic_observed": "أم عبد اللَّه:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012150-segment-0001",
+      "volume": 8,
+      "scan_page": 431,
+      "printed_page": 430,
+      "reader_page": 4343,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4343",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0431:8da598428f73287b",
+      "arabic": "١٢١٥٠- أم عبد اللَّه:\nامرأة أبي موسى الأشعريّ «٢» .\nأخرج حديثها في المسند، من طريق إبراهيم، عن سهم بن منحاب، عن قرثع- أنه سمع أبا موسى الأشعريّ وصاحت امرأته، فقال لها: أما علمت ما قال رسول اللَّه ﵌؟\nقالت: بلى، ثم سكتت فقيل لها: أي شيء قال رسول اللَّه ﵌؟ قالت:\nإن رسول اللَّه ﵌ لعن من حلق أو خرق أو سلق «٣» .\nورواه عنها أيضا عياض الأشعريّ، عند مسلم، ورواه عنها أيضا يزيد بن أوس، وعبد الرحمن بن أبي ليلى، وآخرون. وقال موسى بن هارون فيما أخرجه دعلج في فوائده عنه، عن عبد اللَّه بن برّاد الأشعريّ، قال: اسم أبي بردة عامر، وأمّه أم عبد اللَّه بنت دومى، هاجرت مع أبي موسى، وقال غيره: بنت أبي دومى.",
+      "english": "12150 — Umm Abd Allah:\n\nThe wife of Abu Musa al-Ash'ari. (2)\n\nHer hadith was transmitted in the Musnad through Ibrahim, from Sahm ibn Minhab, from Qirtha', who heard Abu Musa al-Ash'ari when his wife cried out. He said to her, “Did you not know what the Messenger of Allah—may Allah bless him and grant him peace—said?”\n\nShe replied, “Yes,” and then fell silent. She was asked, “What did the Messenger of Allah—may Allah bless him and grant him peace—say?” She replied:\n\n“The Messenger of Allah—may Allah bless him and grant him peace—cursed whoever shaves, rends, or raises the voice in lamentation.” (3)\n\nIyad al-Ash'ari also related it from her, as recorded by Muslim. Yazid ibn Aws, Abd al-Rahman ibn Abi Layla, and others likewise related it from her. Musa ibn Harun said, in what Da'laj transmitted from him in his Fawa'id, from Abd Allah ibn Barrad al-Ash'ari: “Abu Burda’s name was Amir, and his mother was Umm Abd Allah bint Duma. She emigrated together with Abu Musa.” Someone else said: “She was the daughter of Abu Duma.”",
+      "arabic_sha256": "5a6be6a47526f83e153a62623d0f5364754a7721794f30c834c8cbc1250a5681",
+      "english_sha256": "e5ab8818855af4d133a3ac987b3b59a5a6e64b5301f9eba5ec91e7e2e5120000",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبد الله، امرأة من بني زهرة",
+      "english": "Umm Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبد الله بنت دومى",
+      "english": "Umm Abd Allah bint Duma",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى الأشعري",
+      "english": "Abu Musa al-Ash'ari",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "al-Musnad",
+      "kind": "work"
+    },
+    {
+      "arabic": "إبراهيم",
+      "english": "Ibrahim",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهم بن منحاب",
+      "english": "Sahm ibn Minhab",
+      "kind": "person"
+    },
+    {
+      "arabic": "قرثع",
+      "english": "Qirtha'",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عياض الأشعري",
+      "english": "Iyad al-Ash'ari",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن أوس",
+      "english": "Yazid ibn Aws",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن أبي ليلى",
+      "english": "Abd al-Rahman ibn Abi Layla",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن هارون",
+      "english": "Musa ibn Harun",
+      "kind": "person"
+    },
+    {
+      "arabic": "دعلج",
+      "english": "Da'laj",
+      "kind": "person"
+    },
+    {
+      "arabic": "فوائده",
+      "english": "Fawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد الله بن برّاد الأشعري",
+      "english": "Abd Allah ibn Barrad al-Ash'ari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بردة",
+      "english": "Abu Burda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عامر",
+      "english": "Amir",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنت أبي دومى",
+      "english": "Umm Abd Allah bint Abi Duma",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله",
+      "english": "Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبد الله، امرأة نعيم بن النحام",
+      "english": "Umm Abd Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012072",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12072,
+  "title": {
+    "english": "Umm Sulaym bint Hakim [3]",
+    "arabic_observed": "أم سليم بنت حكيم «٣»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012072-segment-0001",
+      "volume": 8,
+      "scan_page": 409,
+      "printed_page": 408,
+      "reader_page": 4321,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4321",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0409:7479f4ab93253906",
+      "arabic": "١٢٠٧٢- أم سليم بنت حكيم «٣»:\nتأتي في أم سليمان.",
+      "english": "12072 — Umm Sulaym bint Hakim [3]\n\nShe will appear under Umm Sulayman.",
+      "arabic_sha256": "c4e5fb67e2162c6d147ba79d4e16d3e6994e31adcf192a8f5b5a36e5678882f3",
+      "english_sha256": "4e724f6282f80817667c950c09301a4765a3e164f5f998d46f5c1ec04164ff52",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم سليم بنت حكيم",
+      "english": "Umm Sulaym bint Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سليمان",
+      "english": "Umm Sulayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليم",
+      "english": "Sulaym",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

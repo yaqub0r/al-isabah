@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011367",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11367,
+  "title": {
+    "english": "Sajah bint al-Harith",
+    "arabic_observed": "سجاح بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011367-segment-0001",
+      "volume": 8,
+      "scan_page": 199,
+      "printed_page": 198,
+      "reader_page": 4111,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4111",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0199:a5b33fc3497429e6",
+      "arabic": "١١٣٦٧- سجاح بنت الحارث\nالتميمية التي ادّعت النبوة في الردّة، وتبعها قوم ثم صالحت مسيلمة وتزوجته ثم بعد قتله عادت إلى الإسلام فأسلمت، وعاشت إلى خلافة معاوية.\nذكر ذلك صاحب التّاريخ المظفري.",
+      "english": "11367 — Sajah bint al-Harith\n\nThe Tamimite woman who claimed prophethood during the Ridda. A group followed her; she then made peace with Musaylima and married him. After he was killed, she returned to Islam and became Muslim, and she lived into the caliphate of Muawiya.\n\nThis was mentioned by the author of al-Tarikh al-Muzaffari.",
+      "arabic_sha256": "b5669d76cc15a95725f400823ac10d5a16e25359597adb05c3158d48b01573e4",
+      "english_sha256": "69ba30137b76a01385cf4eef1f61d8d135b74980016ea5d5050836e7261aa5d8",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مسيلمة",
+      "english": "Musaylima",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Muawiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "التميمية",
+      "english": "Tamim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الردّة",
+      "english": "Ridda",
+      "kind": "other"
+    },
+    {
+      "arabic": "التاريخ المظفري",
+      "english": "al-Tarikh al-Muzaffari",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

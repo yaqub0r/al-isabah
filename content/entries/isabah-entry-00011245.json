@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011245",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11245,
+  "title": {
+    "english": "Zaynab bint Amir,",
+    "arabic_observed": "زينب بنت عامر ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011245-segment-0001",
+      "volume": 8,
+      "scan_page": 162,
+      "printed_page": 161,
+      "reader_page": 4074,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4074",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0162:0fbbc6c299d8b776",
+      "arabic": "١١٢٤٥- زينب بنت عامر ،\nوقيل بنت عبد، الكنانية، هي أم رومان- تأتي في الكنى.",
+      "english": "11245—Zaynab bint Amir,\n\nalso said to be bint Abd, the Kinani woman. She is Umm Ruman; her entry will come in the section on kunyahs.",
+      "arabic_sha256": "7f2a0dfc7b84d53e94d8c769d9bda71e42c986ea3f928bb16df3d45d96cbd353",
+      "english_sha256": "f4adb6376f910b7e7a7f35742c2ddca3026bb80bd79b1fbb6e172a11d8a5272b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زينب بنت عامر",
+      "english": "Zaynab bint Amir",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنت عبد",
+      "english": "Zaynab bint Abd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكنانية",
+      "english": "Kinana",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم رومان",
+      "english": "Umm Ruman",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

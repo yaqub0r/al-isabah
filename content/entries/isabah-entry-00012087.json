@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012087",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12087,
+  "title": {
+    "english": "Umm Sahl bint Rumi ibn Waqsh.",
+    "arabic_observed": "أم سهل بنت رومي"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012087-segment-0001",
+      "volume": 8,
+      "scan_page": 415,
+      "printed_page": 414,
+      "reader_page": 4327,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4327",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0415:80d9332d2a04c870",
+      "arabic": "١٢٠٨٧- أم سهل بنت رومي\nبن وقش.\nذكر الواقديّ أنها أسلمت وبايعت، قاله ابن سعد، قال: هي شقيقة أم حنظلة الماضي ذكرها، وكانت أم سهل زوج سلمان بن سلامة، فولدت له.",
+      "english": "12087—Umm Sahl bint Rumi ibn Waqsh.\n\nAl-Waqidi mentioned that she embraced Islam and pledged allegiance. Ibn Sa'd reported this and said: She was the full sister of Umm Hanzala, who was mentioned previously. Umm Sahl was the wife of Salman ibn Salama, and she bore him children.",
+      "arabic_sha256": "928ffe25b28ebab313daae4723884a94a702b128e0f6fe6112602d127d827827",
+      "english_sha256": "cf4969be98d7aa2edf9879a3d9c46aaf685ec58a0666309a11f949e5f3ccdcaf",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سهل بنت رومي بن وقش",
+      "english": "Umm Sahl bint Rumi ibn Waqsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حنظلة",
+      "english": "Umm Hanzala bint Rumi ibn Waqsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمان بن سلامة",
+      "english": "Salman ibn Salama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012185",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12185,
+  "title": {
+    "english": "Umm Amr bint Sufyan ibn Abd al-Asad al-Makhzumiyya",
+    "arabic_observed": "أم عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012185-segment-0001",
+      "volume": 8,
+      "scan_page": 444,
+      "printed_page": 443,
+      "reader_page": 4356,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4356",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0444:817ba28711ef8983",
+      "arabic": "١٢١٨٥- أم عمرو\nبنت سفيان بن عبد الأسد المخزوميّة.\nذكرها ابن سعد، فقال: أمها بنت عبد العزّى بن أبي قيس، من بني عامر بن لؤيّ، وكان حويطب بن عبد العزّى خالها. وذكرها هشام بن الكلبي في كتاب المثالب، فقال:\nخرجت من الليل في حجة الوداع، فوقفت بركب نزول، فأخذت عيبة لهم فأخذها القوم فأوثقوها فأتوا بها النّبيّ ﵌، فذكر قصّة قطع يدها، وقال في آخره:\nوهي أخت عبد اللَّه بن سفيان، وأنشد:\nيا ربّ بنت لابن سلمى جعدة ... سرّاقة لحقائب الرّكبان\nباتت تحوش ثيابهم بيمينها ... حتّى أقرّت غير ذات بنان\n[الكامل]",
+      "english": "12185- Umm Amr bint Sufyan ibn Abd al-Asad al-Makhzumiyya\n\nIbn Sa'd mentioned her and said: Her mother was a daughter of Abd al-Uzza ibn Abi Qays, of Banu Amir ibn Lu'ayy, and Huwaytib ibn Abd al-Uzza was her maternal uncle. Hisham ibn al-Kalbi mentioned her in Kitab al-Mathalib, saying:\n\nDuring the night of the Farewell Pilgrimage, she went out and stopped beside a caravan that had made camp. She took a traveling case belonging to them, but the people seized her, bound her, and brought her to the Prophet, may Allah bless him and grant him peace. Ibn al-Kalbi then related the account of her hand being cut off and said at its conclusion:\n\nShe was the sister of Abd Allah ibn Sufyan. He recited:\n\nMany a curly-haired daughter of Ibn Salma—\na thief of the travelers' bags—\nspent the night gathering their garments with her right hand,\nuntil she confessed, bereft of fingers.\n\n[al-Kamil meter]",
+      "arabic_sha256": "2e15f6c58097cade62e40aff1ea129c25c1af1012cb0f778b1f07768db023319",
+      "english_sha256": "bfb3829f35d9b7e19c846bc530f1650aef47228b3109d07112a99a477347c393",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو بنت سفيان بن عبد الأسد المخزوميّة",
+      "english": "Umm Amr bint Sufyan ibn Abd al-Asad al-Makhzumiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد العزّى بن أبي قيس",
+      "english": "Abd al-Uzza ibn Abi Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عامر بن لؤيّ",
+      "english": "Banu Amir ibn Lu'ayy",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "حويطب بن عبد العزّى",
+      "english": "Huwaytib ibn Abd al-Uzza",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن الكلبي",
+      "english": "Hisham ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب المثالب",
+      "english": "Kitab al-Mathalib",
+      "kind": "work"
+    },
+    {
+      "arabic": "حجة الوداع",
+      "english": "Farewell Pilgrimage",
+      "kind": "other"
+    },
+    {
+      "arabic": "عبد اللَّه بن سفيان",
+      "english": "Abd Allah ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سلمى",
+      "english": "Ibn Salma",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكامل",
+      "english": "al-Kamil",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

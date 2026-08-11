@@ -1,0 +1,189 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011323",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11323,
+  "title": {
+    "english": "Salma bint 'Umays",
+    "arabic_observed": "سلمى بنت عميس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011323-segment-0001",
+      "volume": 8,
+      "scan_page": 185,
+      "printed_page": 184,
+      "reader_page": 4097,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4097",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0185:5f22dcc716a75836",
+      "arabic": "١١٣٢٣- سلمى بنت عميس\nالخثعمية، أخت أسماء «٥» .\nتقدم نسبها في ترجمة أختها، وهي إحدى الأخوات اللاتي قال فيهن النبي ﷺ:\n(١) أسد الغابة ت (٧٠٠٧) .\n(٢) أسد الغابة ت (٧٠٠٩) .\n(٣) أسد الغابة ت (٧٠١٠) .\n(٤) أسد الغابة ت (٧٠١١) .\n(٥) مقاتل الطالبيين ٢٠٩، تجريد أسماء الصحابة ٢/ ٢٧٨، أسد الغابة ت (٧٠١٢)، الاستيعاب: ت (٣٤٢٨) .",
+      "english": "11323—Salma bint 'Umays\n\nThe Khath'ami woman, sister of Asma'(5). Her lineage was given above in the biography of her sister. She was one of the sisters concerning whom the Prophet, may Allah bless him and grant him peace, said:\n\n(1) Usd al-Ghaba, biography no. 7007.\n\n(2) Usd al-Ghaba, biography no. 7009.\n\n(3) Usd al-Ghaba, biography no. 7010.\n\n(4) Usd al-Ghaba, biography no. 7011.\n\n(5) Maqatil al-Talibiyyin, p. 209; al-Tajrid, 2/278; Usd al-Ghaba, biography no. 7012; al-Isti'ab, biography no. 3428.",
+      "arabic_sha256": "b297fa2e7ec334c200f47e6056ff3378ac1f17760e5c4f3857d1e9271145ac2c",
+      "english_sha256": "56c15e5c7bdbd485cf93cfe91f78f7363dc0ce6c2a6bf4d4cf4f29d690a46b66",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011323-segment-0002",
+      "volume": 8,
+      "scan_page": 186,
+      "printed_page": 185,
+      "reader_page": 4098,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4098",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0186:e4148bc4ba250269",
+      "arabic": "الأخوات مؤمنات، قاله ابن عبد البر. وقال: كانت تحت حمزة، فولدت له أمة اللَّه بنت حمزة، ثم خلف عليها بعد قتل حمزة قتل شداد بن الهاد الليثي فولدت له عبد اللَّه وعبد الرحمن، قال: وقد قيل إن التي كانت تحت حمزة أسماء بنت عميس، فخلف عليها شداد. والأصح الأول.\nقلت: وأخرج ابن مندة، من طريق عبد اللَّه بن المبارك، عن جرير بن حازم، عن محمد بن عبد اللَّه بن أبي يعقوب وأبي فزارة جميعا، عن عبد اللَّه بن شداد، قال: كانت بنت حمزة أختي من أمي، وكانت أمنا سلمى بنت عميس.\nوفي الصّحيحين من حديث البراء في قصة بنت حمزة: لما اختصم فيها عليّ وجعفر وزيد بن حارثة، فقال جعفر: أنا أحقّ بها وخالتي تحتي.\nوقال ابن سعد: زوجها حمزة، وكانت أسلمت قديما مع أختها أسماء، فولدت لحمزة ابنته عمارة، وهي التي اختصم فيها عليّ وجعفر وزيد بن حارثة، ثم بانت سلمى من حمزة، فتزوجها شداد، فولدت له عبد اللَّه، فقضى بها النبي ﷺ لجعفر، وقال: «الخالة بمنزلة الأمّ» «١» .\nوكانت أسماء تحت جعفر، فتعيّن أن أمها سلمى، وقد بالغ ابن الأثير في الرد على من زعم أن أسماء كانت تحت حمزة.",
+      "english": "“The sisters are believers,” as mentioned by Ibn Abd al-Barr. He also said: She was married to Hamza and bore him Amat Allah bint Hamza. Then, after Hamza was killed, Shaddad ibn al-Had al-Laythi married her, and she bore him Abd Allah and Abd al-Rahman. He said: It has also been said that the woman married to Hamza was Asma bint Umays, whom Shaddad then married after him; but the first account is more correct.\n\nI say: Ibn Manda transmitted, by way of Abd Allah ibn al-Mubarak, from Jarir ibn Hazim, from Muhammad ibn Abd Allah ibn Abi Yaqub and Abu Fazara, both from Abd Allah ibn Shaddad, who said: “Hamza’s daughter was my maternal half-sister, and our mother was Salma bint Umays.”\n\nIn the two Sahih collections, in the hadith of al-Bara concerning the story of Hamza’s daughter, when Ali, Jafar, and Zayd ibn Haritha disputed over her, Jafar said: “I have the greater right to her, for her maternal aunt is married to me.”\n\nIbn Sa'd said: Hamza married her. She had embraced Islam early, together with her sister Asma, and she bore Hamza his daughter Umara—the girl over whom Ali, Jafar, and Zayd ibn Haritha disputed. Salma then separated from Hamza, and Shaddad married her, whereupon she bore him Abd Allah. The Prophet, may Allah bless him and grant him peace, awarded the girl to Jafar and said: “The maternal aunt has the status of the mother.”¹\n\nAsma was married to Jafar, so it necessarily follows that the girl’s mother was Salma. Ibn al-Athir went to great lengths in refuting those who claimed that Asma had been married to Hamza.",
+      "arabic_sha256": "2f0f3100153a81dc546c3377975e3ee43320e453aded7efdf32ea8cabe46a483",
+      "english_sha256": "57632f92c32d15efb3c1b09b0612f0aedeeec5b5f6e44a2817ceba952a0b688c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي ﷺ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء",
+      "english": "Asma' bint 'Umays",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "مقاتل الطالبيين",
+      "english": "Maqatil al-Talibiyyin",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن عبد البر",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمزة",
+      "english": "Hamza",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمة الله بنت حمزة",
+      "english": "Amat Allah bint Hamza",
+      "kind": "person"
+    },
+    {
+      "arabic": "شداد بن الهاد الليثي",
+      "english": "Shaddad ibn al-Had al-Laythi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن شداد",
+      "english": "Abd Allah ibn Shaddad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن",
+      "english": "Abd al-Rahman ibn Shaddad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت عميس",
+      "english": "Asma bint Umays",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن المبارك",
+      "english": "Abd Allah ibn al-Mubarak",
+      "kind": "person"
+    },
+    {
+      "arabic": "جرير بن حازم",
+      "english": "Jarir ibn Hazim",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عبد الله بن أبي يعقوب",
+      "english": "Muhammad ibn Abd Allah ibn Abi Yaqub",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو فزارة",
+      "english": "Abu Fazara",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى بنت عميس",
+      "english": "Salma bint Umays",
+      "kind": "person"
+    },
+    {
+      "arabic": "البراء",
+      "english": "al-Bara",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "جعفر",
+      "english": "Jafar",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن حارثة",
+      "english": "Zayd ibn Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Prophet Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

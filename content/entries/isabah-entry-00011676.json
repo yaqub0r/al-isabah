@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011676",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11676,
+  "title": {
+    "english": "Kabsha bint Ma'dikarib:",
+    "arabic_observed": "كبشة بنت معديكرب:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011676-segment-0001",
+      "volume": 8,
+      "scan_page": 296,
+      "printed_page": 295,
+      "reader_page": 4208,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4208",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0296:89bf502948ecdf75",
+      "arabic": "١١٦٧٦- كبشة بنت معديكرب:\nعمة الأشعث بن قيس «٤»، وهي والدة معاوية بن حديج الصحابي المعروف.\nروى قصتها الدّارقطنيّ، من طريق ولدها معاوية- أنه قال: قدمت على رسول اللَّه ﵌، ومعي أمي كبشة بنت معديكرب عمة الأشعث، فقالت: يا رسول اللَّه، إني آليت أن أطوف بالبيت حبوا، فقال: طوفي على رجليك سبعين: سبعا عن يديك، وسبعا عن رجليك.\nوسنده ضعيف، استدركها ابن الدباغ وغيره على الاستيعاب.",
+      "english": "11676—Kabsha bint Ma'dikarib:\n\nThe paternal aunt of al-Ash'ath ibn Qays,⁴ and the mother of Mu'awiya ibn Hudayj, the well-known Companion.\n\nAl-Daraqutni related her account through her son Mu'awiya, who said: “I came to the Messenger of Allah, may Allah bless him and grant him peace, accompanied by my mother, Kabsha bint Ma'dikarib, the paternal aunt of al-Ash'ath. She said, ‘O Messenger of Allah, I have sworn that I will circumambulate the House crawling.’ He said, ‘Circumambulate on your feet for two sets of seven circuits: seven on behalf of your hands and seven on behalf of your feet.’”\n\nIts chain of transmission is weak. Ibn al-Dabbagh and others added her as an omission from al-Isti'ab.",
+      "arabic_sha256": "dc8b374387de011f18a4cab918a20726a24089f8f08b0d81b5cd09d9baed299b",
+      "english_sha256": "9c303108d909c93ce93890edd598df6fa4215c0d4250a523abd66f4ae0fcf4b0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "كبشة بنت معديكرب",
+      "english": "Kabsha bint Ma'dikarib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأشعث بن قيس",
+      "english": "al-Ash'ath ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية بن حديج",
+      "english": "Mu'awiya ibn Hudayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدارقطني",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "البيت",
+      "english": "the House",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن الدباغ",
+      "english": "Ibn al-Dabbagh",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

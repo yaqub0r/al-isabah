@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012061",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12061,
+  "title": {
+    "english": "Umm Sa'id bint Murra:",
+    "arabic_observed": "أم سعيد بنت مرة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012061-segment-0001",
+      "volume": 8,
+      "scan_page": 404,
+      "printed_page": 403,
+      "reader_page": 4316,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4316",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0404:a8d9cc4290690880",
+      "arabic": "١٢٠٦١- أم سعيد بنت مرة:\nتقدمت في أم سعد.",
+      "english": "12061—Umm Sa'id bint Murra:\n\nSee above under Umm Sa'd.",
+      "arabic_sha256": "edce64b8a10343e535fcccd5b36a1417e12794707db01bef9fd7ae90a73ddf8f",
+      "english_sha256": "f8ecce2f02daf66daf357a4940006b51a4f7aeecc8763537abd15a599d774f25",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سعيد",
+      "english": "Sa'id ibn al-Musayyib ibn Hazn",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعيد بنت مرة",
+      "english": "Umm Sa'id bint Murra ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعيد",
+      "english": "Umm Sa'id",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

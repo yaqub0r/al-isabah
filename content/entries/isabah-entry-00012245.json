@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012245",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12245,
+  "title": {
+    "english": "Umm Malik:",
+    "arabic_observed": "أم مالك:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012245-segment-0001",
+      "volume": 8,
+      "scan_page": 471,
+      "printed_page": 470,
+      "reader_page": 4383,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4383",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0471:989864a482d7e25a",
+      "arabic": "١٢٢٤٥- أم مالك:\nامرأة شجاع بن الحارث السدوسيّ. تقدم ذكرها في ترجمة شجاع.",
+      "english": "12245—Umm Malik:\n\nThe wife of Shuja' ibn al-Harith al-Sadusi. She was mentioned earlier in the entry on Shuja'.",
+      "arabic_sha256": "db1554d50b3667cbee9d62d56d900b0738f5dbd402bda0dcb60bafb3ee52446c",
+      "english_sha256": "c4dbed4ef3fc60fc3b1b0ba48162a1f707b07154c7938622da9c0390e18d3565",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم مالك",
+      "english": "Umm Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "شجاع بن الحارث السدوسي",
+      "english": "Shuja' ibn al-Harith al-Sadusi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

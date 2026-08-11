@@ -1,0 +1,125 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012101",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12101,
+  "title": {
+    "english": "Umm Sharik al-Ansariyya:",
+    "arabic_observed": "أم شريك الأنصاريّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012101-segment-0001",
+      "volume": 8,
+      "scan_page": 417,
+      "printed_page": 416,
+      "reader_page": 4329,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4329",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0417:cf7c36481269e6ae",
+      "arabic": "١٢١٠١- أم شريك الأنصاريّة:\nقيل: هي بنت أنس الماضية، وقيل هي بنت خالد المذكورة قبلها، وقيل هي غيرهما، وقيل هي أم شريك بنت أبي العكر بن سمي، وذكرها ابن أبي خيثمة من طريق قتادة، قال: وتزوّج النّبيّ ﷺ أم شريك الأنصاريّة النّجّارية، وقال:\nإني أحبّ أن أتزوّج في الأنصار، ثم قال: إني أكره غيرة الأنصار، فلم يدخل بها.\nقلت: ولها ذكر في حديث صحيح عند مسلم، من رواية فاطمة بنت قيس في قصّة، الجساسة في حديث تميم الدّاري، قال فيه: وأم شريك امرأة غنيّة من الأنصار عظمية النفقة في سبيل اللَّه ﷿ ينزل عليها الضّيفان.\nولها حديث آخر\nأخرجه ابن ماجة، من طريق شهر بن حوشب، حدّثتني أم شريك الأنصاريّة، قالت: أمرنا رسول اللَّه ﵌ أن نقرأ على الجنازة بفاتحة الكتاب،\nويقال: إنها التي أمرت فاطمة بنت قيس أن تعتدّ عندها، ثم قيل لها اعتدّي عند ابن أم مكتوم.",
+      "english": "12101—Umm Sharik al-Ansariyya:\n\nIt is said that she is the daughter of Anas mentioned above; it is also said that she is the daughter of Khalid mentioned immediately before her; that she is someone other than either of them; and that she is Umm Sharik bint Abi al-Ikr ibn Sumayy. Ibn Abi Khaythama mentioned her by way of Qatada, who said: The Prophet, may Allah bless him and grant him peace, married Umm Sharik al-Ansariyya al-Najjariyya and said, “I would like to marry among the Ansar.” Then he said, “I dislike the jealousy of the Ansar,” and so he did not consummate the marriage with her.\n\nI say: She is mentioned in an authentic hadith recorded by Muslim, in the narration of Fatima bint Qays concerning the story of al-Jassasa in the hadith of Tamim al-Dari. It says: “Umm Sharik is a wealthy woman of the Ansar, one who spends greatly in the path of Allah, Mighty and Majestic; guests stay with her.”\n\nShe has another hadith, transmitted by Ibn Majah by way of Shahr ibn Hawshab: Umm Sharik al-Ansariyya related to me, saying, “The Messenger of Allah, may Allah bless him and grant him peace, commanded us to recite the Opening of the Book in the funeral prayer.”\n\nIt is also said that she was the woman with whom Fatima bint Qays was instructed to observe her waiting period; then Fatima was told, “Observe your waiting period with Ibn Umm Maktum.”",
+      "arabic_sha256": "e3a95f681900e7843a6a3a6f4e2534b5bd813755de84b4f713532b481ff1f3b5",
+      "english_sha256": "8897cf56666d5e71609228b2b20bfe08d289a2f6663c3c4204dc361274510fe7",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم شريك الأنصاريّة",
+      "english": "Umm Sharik al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم شريك بنت أبي العكر بن سمي",
+      "english": "Umm Sharik bint Abi al-Ikr ibn Sumayy",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي خيثمة",
+      "english": "Ibn Abi Khaythama",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتادة",
+      "english": "Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "النّبيّ ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم شريك الأنصاريّة النّجّارية",
+      "english": "Umm Sharik al-Ansariyya al-Najjariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "النّجّارية",
+      "english": "Banu al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت قيس",
+      "english": "Fatima bint Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجساسة",
+      "english": "al-Jassasa",
+      "kind": "other"
+    },
+    {
+      "arabic": "تميم الدّاري",
+      "english": "Tamim al-Dari",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "شهر بن حوشب",
+      "english": "Shahr ibn Hawshab",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاتحة الكتاب",
+      "english": "Opening of the Book",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن أم مكتوم",
+      "english": "Ibn Umm Maktum",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

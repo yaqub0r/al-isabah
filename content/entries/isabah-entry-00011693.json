@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011693",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11693,
+  "title": {
+    "english": "Kuwaysa¹:",
+    "arabic_observed": "كويسة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011693-segment-0001",
+      "volume": 8,
+      "scan_page": 299,
+      "printed_page": 298,
+      "reader_page": 4211,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4211",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0299:e028f5de042dddb1",
+      "arabic": "١١٦٩٣- كويسة «١»\n: [يتيمة] «٢» كانت في حجر النبي ﵌، قاله كليب بن عيسى عن زجلة عنها، كذا في التّجريد، وقد أجحف في الاختصار، وزجلة، بضم الزاي المنقوطة وسكون الجيم بعدها لام: امرأة من أهل الشام روت عن أم الدرداء وغيرها، وأخرج الخطيب في المؤتلف، من طريق الهيثم بن خارجة، عن كليب بن عيسى بن أبي حجر الثقفي، سمعت زجلة مولاة معاوية تقول: أدركت يتامى [كنّ] «٣» في حجر النبي ﵌ إحداهن تسمى كويسة، فذكرت قصة إن النساء لا يتبعن الجنازة إلا إن كانت امرأة نفساء أو مبطونة فتخرج امرأة [مما بها] إلى المصلى، فإذا وضعت الجنازة وضعت يدها تنظر هل خرج منها شيء، وهم ينظرونها حتى إذا تورات قالوا للإمام: كبر.",
+      "english": "11693—Kuwaysa¹:\n[An orphan girl]² who was in the care of the Prophet, may Allah bless him and grant him peace. This was stated by Kulayb ibn Isa, on the authority of Zajla, concerning her. This is how it appears in al-Tajrid, which has abridged the report excessively. Zajla—with a damma on the dotted zay, then an unvowelled jim, followed by a lam—was a woman of al-Sham who transmitted from Umm al-Darda and others. Al-Khatib narrated in al-Mu'talif, through al-Haytham ibn Kharija, from Kulayb ibn Isa ibn Abi Hajar al-Thaqafi: “I heard Zajla, the freedwoman of Muawiya, say: ‘I lived to see orphan girls who [were]³ in the care of the Prophet, may Allah bless him and grant him peace. One of them was named Kuwaysa.’” She then related an account stating that women would not follow a funeral procession unless the deceased was a woman in childbed or afflicted with an abdominal ailment. In that case, a woman would go out [because of what afflicted the deceased] to the prayer ground. When the bier was set down, the woman would place her hand to see whether anything had issued from the deceased, while the others waited for her. Once she had withdrawn from sight, they would say to the imam, “Pronounce the takbir.”",
+      "arabic_sha256": "82d42ee0713ee7f30f58cc477fc20e2f9d9fd49a40b8e7fb3f574ddb1fe06a08",
+      "english_sha256": "172a96611c268fd7cc14a797a153a9d4f5b11ecafb63bae12201289a514fa3b5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "كويسة",
+      "english": "Kuwaysa",
+      "kind": "person"
+    },
+    {
+      "arabic": "كليب بن عيسى بن أبي حجر الثقفي",
+      "english": "Kulayb ibn Isa ibn Abi Hajar al-Thaqafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "زجلة",
+      "english": "Zajla",
+      "kind": "person"
+    },
+    {
+      "arabic": "أهل الشام",
+      "english": "al-Sham",
+      "kind": "place"
+    },
+    {
+      "arabic": "أم الدرداء",
+      "english": "Umm al-Darda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخطيب",
+      "english": "al-Khatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "المؤتلف",
+      "english": "al-Mu'talif",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثم بن خارجة",
+      "english": "al-Haytham ibn Kharija",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Muawiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

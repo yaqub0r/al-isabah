@@ -1,0 +1,93 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010851",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10851,
+  "title": {
+    "english": "Umayma bint Khalaf ibn As'ad ibn Amir ibn Subay' al-Khuza'iyya[3]",
+    "arabic_observed": "أميمة بنت خلف «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010851-segment-0001",
+      "volume": 8,
+      "scan_page": 31,
+      "printed_page": 30,
+      "reader_page": 3943,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3943",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0031:39f9e796adf302b7",
+      "arabic": "١٠٨٥١- أميمة بنت خلف «٣»\nبن أسعد بن عامر بن سبيع الخزاعية، عمة طلحة الطلحات الجواد المشهور.\nكانت زوج خالد بن سعيد بن العاص، فأسلمت قديما وهاجرت معه إلى الحبشة.\nويقال: اسمها أمينة «٤»، بالنون بدل الميم، ويقال همينة بالهاء بدل الألف، فولدت له أم خالد بنت خالد فسماها آمنة، واشتهرت بكنيتها.",
+      "english": "10851 — Umayma bint Khalaf ibn As'ad ibn Amir ibn Subay' al-Khuza'iyya[3]\n\nShe was the paternal aunt of Talha al-Talahat, the renowned generous man.\n\nShe was the wife of Khalid ibn Sa'id ibn al-As. She embraced Islam at an early date and emigrated with him to Abyssinia.\n\nHer name is also said to have been Amina,[4] with a nun in place of the second mim; and it is also said to have been Humayna, with a ha in place of the alif. She bore him Umm Khalid bint Khalid, whom he named Amina, and she became known by her kunya.",
+      "arabic_sha256": "6d413a013e624dc0c9d7048829c6e70fdad975f1439e202ac5dad8afa64ffc92",
+      "english_sha256": "c8429d46bd835c13f084348ac63ca92adddddf1bbbc639cc81573911af543ce3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أميمة بنت خلف بن أسعد بن عامر بن سبيع الخزاعية",
+      "english": "Umayma bint Khalaf ibn As'ad ibn Amir ibn Subay' al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخزاعية",
+      "english": "Khuza'a",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "طلحة الطلحات",
+      "english": "Talha al-Talahat",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد بن سعيد بن العاص",
+      "english": "Khalid ibn Sa'id ibn al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "أمينة",
+      "english": "Amina bint Khalaf ibn As'ad ibn Amir ibn Subay' al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "همينة",
+      "english": "Humayna bint Khalaf ibn As'ad ibn Amir ibn Subay' al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم خالد بنت خالد",
+      "english": "Umm Khalid bint Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "آمنة",
+      "english": "Amina bint Khalid",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "همينة",
+      "explanation": "The canonical Arabic and the supplied Urdu and Usd al-Ghaba witnesses establish the consonants but do not decisively establish the vowels. Humayna has therefore been retained provisionally; al-Isti'ab supplies a different consonantal variant, هميمة, rather than resolving the vocalization.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0031:39f9e796adf302b7"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

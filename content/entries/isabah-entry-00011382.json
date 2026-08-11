@@ -1,0 +1,88 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011382",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11382,
+  "title": {
+    "english": "Shaqiqa bint Malik",
+    "arabic_observed": "شقيقة بنت مالك"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011382-segment-0001",
+      "volume": 8,
+      "scan_page": 204,
+      "printed_page": 203,
+      "reader_page": 4116,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4116",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0204:cf869f69d7d0f295",
+      "arabic": "١١٣٨٢- شقيقة بنت مالك\nبن قيس بن محرث «٣» بن الحارث بن ثعلبة، من بني مازن بن النجار، أخت الشموس. ذكرها ابن حبيب في المبايعات كذلك، ولم يصب صاحب التّجريد حيث قال إنها مجهولة، فقد ذكرها أيضا ابن سعد فقال: أمها سهيمة بنت عويمر المازني، وتزوجها الحارث بن سراقة بن الحارث بن عدي، فولدت له عبد اللَّه وأم عبيد، قال: وأسلمت شقيقة وبايعت.",
+      "english": "11382 — Shaqiqa bint Malik\n\nibn Qays ibn Muhrith (3) ibn al-Harith ibn Tha'laba, of Banu Mazin ibn al-Najjar, and the sister of al-Shumus. Ibn Habib mentioned her in this form among the women who pledged allegiance. The author of al-Tajrid was incorrect when he said that she was unknown, for Ibn Sa'd also mentioned her, saying: Her mother was Suhayma bint Uwaymir al-Mazini. al-Harith ibn Suraqa ibn al-Harith ibn Adi married her, and she bore him Abd Allah and Umm Ubayd. He said: Shaqiqa accepted Islam and pledged allegiance.",
+      "arabic_sha256": "5a4f6fb7b54efedfb50d536e858a6b9d46488caead6feb4a2e68332d9bd85367",
+      "english_sha256": "27c897b0456363d6e6195f2be0b675ca8f2545750704c00b04302d10685cb7e3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو مازن بن النجار",
+      "english": "Banu Mazin ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الشموس",
+      "english": "al-Shumus",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "سهيمة بنت عويمر المازني",
+      "english": "Suhayma bint Uwaymir al-Mazini",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن سراقة بن الحارث بن عدي",
+      "english": "al-Harith ibn Suraqa ibn al-Harith ibn Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبيد",
+      "english": "Umm Ubayd bint al-Harith ibn Suraqa ibn al-Harith ibn Adi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "محرث",
+      "explanation": "The supplied witnesses preserve the same unvocalized spelling but do not determine its exact pronunciation. The provisional form Muhrith has therefore been retained.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0204:cf869f69d7d0f295"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

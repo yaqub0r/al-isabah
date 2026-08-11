@@ -1,0 +1,115 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011159",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11159,
+  "title": {
+    "english": "Rabita bint al-Harith² ibn Jubayla ibn 'Amir ibn Ka'b ibn Sa'd ibn Taym ibn Murra al-Qurashiyya al-Taymiyya, wife of al-Harith ibn Khalid ibn Sakhr ibn 'Amir ibn Ka'b ibn Sa'd ibn Taym ibn Murra.",
+    "arabic_observed": "رابطة بنت الحارث «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011159-segment-0001",
+      "volume": 8,
+      "scan_page": 131,
+      "printed_page": 130,
+      "reader_page": 4043,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4043",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0131:46c29236c3b64007",
+      "arabic": "١١١٥٩- رابطة بنت الحارث «٢»\nبن جبيلة بن عامر بن كعب بن سعد بن تيم بن مرة القرشية التيمية، زوج الحارث بن خالد بن صخر بن عامر بن كعب بن سعد بن تيم بن مرة.\nذكرها ابن إسحاق فيمن هاجر إلى أرض الحبشة، وقيل اسمها ربطة بغير ألف، وبه جزم ابن سعد وأبو عمر وقال: أمها زينب بنت عبد اللَّه بن ساعدة الخزاعية، وهي أخت صبيحة بنت الحارث، وأسلمت قديما بمكة وبايعت وهاجرت إلى الحبشة، فولدت له هناك موسى وعائشة، فمات موسى بالحبشة، وهلكت ربطة في الطريق وهي راجعة.",
+      "english": "11159 — Rabita bint al-Harith² ibn Jubayla ibn 'Amir ibn Ka'b ibn Sa'd ibn Taym ibn Murra al-Qurashiyya al-Taymiyya, wife of al-Harith ibn Khalid ibn Sakhr ibn 'Amir ibn Ka'b ibn Sa'd ibn Taym ibn Murra.\n\nIbn Ishaq mentioned her among those who emigrated to the land of Abyssinia. It is also said that her name was Rabta, without an alif; Ibn Sa'd and Abu Umar stated this categorically. Abu Umar said: Her mother was Zaynab bint Abd Allah ibn Sa'ida al-Khuza'iyya, and she was the sister of Subayha bint al-Harith. She embraced Islam early in Mecca, pledged allegiance, and emigrated to Abyssinia. There she bore him Musa and Aisha. Musa died in Abyssinia, and Rabta died on the road while returning.",
+      "arabic_sha256": "99f952ec596bd6d776c689fd1b14cf9d135f51e4a5ec8e32ca6a296dc78b2945",
+      "english_sha256": "78d1885f79254a41807027ae5195afdc0e925981eb48476664ceedf5c3753b91",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "التيمية",
+      "english": "Banu Taym",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الحارث بن خالد بن صخر بن عامر بن كعب بن سعد بن تيم بن مرة",
+      "english": "al-Harith ibn Khalid ibn Sakhr ibn 'Amir ibn Ka'b ibn Sa'd ibn Taym ibn Murra",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أرض الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "ربطة",
+      "english": "Rabta bint al-Harith ibn Jubayla ibn 'Amir ibn Ka'b ibn Sa'd ibn Taym ibn Murra",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت عبد الله بن ساعدة الخزاعية",
+      "english": "Zaynab bint Abd Allah ibn Sa'ida al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخزاعية",
+      "english": "Khuza'a",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "صبيحة بنت الحارث",
+      "english": "Subayha bint al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "موسى",
+      "english": "Musa ibn al-Harith ibn Khalid ibn Sakhr ibn 'Amir ibn Ka'b ibn Sa'd ibn Taym ibn Murra",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha bint al-Harith ibn Khalid ibn Sakhr ibn 'Amir ibn Ka'b ibn Sa'd ibn Taym ibn Murra",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

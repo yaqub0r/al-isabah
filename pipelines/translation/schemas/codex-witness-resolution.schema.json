@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "scan_page": { "type": "integer", "minimum": 1 },
+    "overall_status": { "type": "string", "enum": ["resolved", "partially_resolved", "unresolved"] },
+    "summary": { "type": "string", "minLength": 1 },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "concern_id": { "type": "string", "minLength": 1 },
+          "conclusion": { "type": "string", "enum": ["supports_current", "supports_revision", "inconclusive"] },
+          "witness_pages": { "type": "array", "items": { "type": "integer", "minimum": 1 } },
+          "explanation": { "type": "string", "minLength": 1 },
+          "recommended_english": { "type": "string" },
+          "witness_reliability": { "type": "string", "enum": ["high", "medium", "low"] }
+        },
+        "required": [
+          "concern_id", "conclusion", "witness_pages", "explanation",
+          "recommended_english", "witness_reliability"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "remaining_unresolved": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+  },
+  "required": ["scan_page", "overall_status", "summary", "findings", "remaining_unresolved"],
+  "additionalProperties": false
+}

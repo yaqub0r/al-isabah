@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011867",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11867,
+  "title": {
+    "english": "Hind bint Munabbih ibn al-Hajjaj al-Sahmiyya:",
+    "arabic_observed": "هند بنت منبه بن الحجاج السّهميّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011867-segment-0001",
+      "volume": 8,
+      "scan_page": 349,
+      "printed_page": 348,
+      "reader_page": 4261,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4261",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0349:4bda574326c611c7",
+      "arabic": "١١٨٦٧- هند بنت منبه بن الحجاج السّهميّة:\nوالدة عبد اللَّه بن عمرو «٤»، هي من مسلمة الفتح، ذكرها الواقديّ، واستدركها ابن الدّبّاغ عن أبي علي الجياني.",
+      "english": "11867—Hind bint Munabbih ibn al-Hajjaj al-Sahmiyya:\n\nShe was the mother of Abd Allah ibn Amr (4). She was among those who embraced Islam at the Conquest. Al-Waqidi mentioned her, and Ibn al-Dabbagh included her among the supplementary entries on the authority of Abu Ali al-Jayyani.",
+      "arabic_sha256": "cbed13f2bff359d0b81c1027a90bb9cf878b7079087ae229475aa17c25dcbfcb",
+      "english_sha256": "60462c340ebc0bca5ba85eb95bb5c00fa5e6d8ab2a892ad56f880ce41e10abb1",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند بنت منبه بن الحجاج السّهميّة",
+      "english": "Hind bint Munabbih ibn al-Hajjaj al-Sahmiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عمرو",
+      "english": "Abd Allah ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الدّبّاغ",
+      "english": "Ibn al-Dabbagh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو علي الجياني",
+      "english": "Abu Ali al-Jayyani",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

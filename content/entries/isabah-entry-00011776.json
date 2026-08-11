@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011776",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11776,
+  "title": {
+    "english": "Mulayka:",
+    "arabic_observed": "مليكة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011776-segment-0001",
+      "volume": 8,
+      "scan_page": 322,
+      "printed_page": 321,
+      "reader_page": 4234,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4234",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0322:4ff0546c2e40fb4f",
+      "arabic": "١١٧٧٦- مليكة:\nوالدة السّائب بن الأقرع «١» .\nتقدم خبرها في حرف السّين من الرجال في القسم الأول\nأنها كانت تبيع العطر فقال لها النّبيّ ﵌: «ألك حاجة؟» قالت: تدعو لابني ... الحديث.",
+      "english": "11776—Mulayka:\n\nThe mother of al-Sa'ib ibn al-Aqra.[1]\n\nHer report appeared previously under the letter sin, among the men in the First Section: she used to sell perfume, and the Prophet, may Allah bless him and grant him peace, said to her, “Do you have any need?” She replied, “That you supplicate for my son ...” the hadith.",
+      "arabic_sha256": "aef5c1ca940e4658e5f79952a6e9dc0d13f15d4a5b3c7c526dc35db41bb8dcde",
+      "english_sha256": "d249a5e1901cd15400c24596eb3f68f848de8e760925f412b3a91285a73b7805",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مليكة",
+      "english": "Mulayka",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "السّائب بن الأقرع",
+      "english": "al-Sa'ib ibn al-Aqra",
+      "kind": "person"
+    },
+    {
+      "arabic": "النّبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011764",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11764,
+  "title": {
+    "english": "Malika bint Kharija ibn Zayd ibn Abi Zuhayr al-Ansariyya:²",
+    "arabic_observed": "مليكة بنت خارجة بن زيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011764-segment-0001",
+      "volume": 8,
+      "scan_page": 319,
+      "printed_page": 318,
+      "reader_page": 4231,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4231",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0319:fbba915439251974",
+      "arabic": "١١٧٦٤- مليكة بنت خارجة بن زيد\nبن أبي زهير الأنصاريّة «٢» . تقدّمت في حبيبة.",
+      "english": "11764—Malika bint Kharija ibn Zayd ibn Abi Zuhayr al-Ansariyya:²\n\nShe was previously discussed under Habiba.",
+      "arabic_sha256": "60cb51fd33c6eea6f628d8ebc08382446c80ca19c17aa35932e83b60eaeb9a0a",
+      "english_sha256": "7a95803d368d26e8c6f4306fc19880f7ff127be6ca1d3bdf7b541d301309c35f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصار",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "مليكة بنت خارجة بن زيد بن أبي زهير الأنصاريّة",
+      "english": "Malika bint Kharija ibn Zayd ibn Abi Zuhayr al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة",
+      "english": "Habiba",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

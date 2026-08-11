@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011503",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11503,
+  "title": {
+    "english": "Amra bint Sa'd ibn Amr",
+    "arabic_observed": "عمرة بنت سعد بن عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011503-segment-0001",
+      "volume": 8,
+      "scan_page": 246,
+      "printed_page": 245,
+      "reader_page": 4158,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4158",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0246:22e2ad2466062f85",
+      "arabic": "١١٥٠٣- عمرة بنت سعد بن عمرو\nبن زيد مناة بن عديّ بن عمرو بن مالك بن النّجّار. وقيل بنت سعد بن قيس.\nقال أبو موسى: هي والدة سعد بن عبادة، وقال غيره: هي بنت مسعود، وستأتي.",
+      "english": "11503—Amra bint Sa'd ibn Amr\nibn Zayd Manat ibn Adi ibn Amr ibn Malik ibn al-Najjar. It is also said: bint Sa'd ibn Qays.\nAbu Musa said: She was the mother of Sa'd ibn Ubada. Others said: She was bint Mas'ud; she will be mentioned below.",
+      "arabic_sha256": "01466ef0f9d75441a3a729b00cb7a092b3c7e51e0316adbb5adb070e7a7d2c7c",
+      "english_sha256": "2f058d40b82e79ab664b874509fd4b4febfcc151d1de7e01434efc6a1b986975",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن عبادة",
+      "english": "Sa'd ibn Ubada",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسعود",
+      "english": "Mas'ud ibn Qays",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

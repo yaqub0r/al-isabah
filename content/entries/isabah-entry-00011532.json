@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011532",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11532,
+  "title": {
+    "english": "Umayra bint Sa'd",
+    "arabic_observed": "عميرة بنت سعد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011532-segment-0001",
+      "volume": 8,
+      "scan_page": 250,
+      "printed_page": 249,
+      "reader_page": 4162,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4162",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0250:84c4c7edb08cc2ea",
+      "arabic": "١١٥٣٢- عميرة بنت سعد\nبن مالك الساعدية، أخت سهل بن سعد، وهي والدة رفاعة بن مبشر بن أبيرق الظّفريّ. ذكرها في التجريد.",
+      "english": "11532—Umayra bint Sa'd\n\nibn Malik al-Sa'idiya, the sister of Sahl ibn Sa'd. She was the mother of Rifa'a ibn Mubashshir ibn Ubayriq al-Zafari. She is mentioned in al-Tajrid.",
+      "arabic_sha256": "42a8c52ab0e7558766944bf4a6620786b41e1bc33d782e87ac349812c60d1da6",
+      "english_sha256": "2ad76c0575cd6cac0cad71f60b80582e338afb796e7675ed232a6329eb4b268f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عميرة",
+      "english": "Umayra bint Abi al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهل بن سعد",
+      "english": "Sahl ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "رفاعة بن مبشر بن أبيرق الظفريّ",
+      "english": "Rifa'a ibn Mubashshir ibn Ubayriq al-Zafari",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,433 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011008",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11008,
+  "title": {
+    "english": "Juwayriyyah bint al-Harith[7]",
+    "arabic_observed": "جويرية بنت الحارث «٧»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011008-segment-0001",
+      "volume": 8,
+      "scan_page": 73,
+      "printed_page": 72,
+      "reader_page": 3985,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3985",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0073:67a9c22cb9e5312c",
+      "arabic": "١١٠٠٨- جويرية بنت الحارث «٧»\nبن أبي ضرار بن حبيب بن جذيمة، وهو\n(١) أسد الغابة ت ٦٨٢٥.\n(٢) الثقات ٣/ ٦٧، أعلام النساء ١/ ١٨٥، تجريد أسماء الصحابة ٢/ ٢٥٦، تقريب التهذيب ٢/ ٥٩٣، تهذيب التهذيب ١٢/ ٤٠٦، تهذيب الكمال ٣/ ١٦٨٠، خلاصة تهذيب الكمال ٣/ ٣٧٧.\n(٣) أسد الغابة ت ٣٣٢٧.\n(٤) في أالصامت.\n(٥) أسد الغابة ت ٦٨٢٧، الاستيعاب ت ٣٣٢٨.\n(٦) تجريد أسماء الصحابة ٢/ ٢٥٥، ٢٥٦، الثقات ٣/ ٦٦.\n(٧) الثقات ٣/ ٦٦، أعلام النساء ١/ ١٩٠، السمط الثمين ١٣٤، تقريب التهذيب ٢/ ٥٩٣، تجريد أسماء الصحابة ٢/ ٢٥٦، تهذيب التهذيب ١٢/ ٤٠٧، أزمنة التاريخ الإسلامي ٩٦٩، الكاشف ٣/ ٤٦٧، تهذيب الكمال ٣/ ١٦٨٠، الاستبصار ١٢١، خلاصة تذهيب الكمال ٣/ ١٧، تلقيح فهوم أهل الأثر ٢٢/ ٢٧٠، بقي بن مخلد ٢٥٤.",
+      "english": "11008—Juwayriyyah bint al-Harith[7]\n\nibn Abi Dirar ibn Habib ibn Judhaymah—and he is\n\n[1] Usd al-Ghaba, entry 6825.\n\n[2] al-Thiqat, 3/67; A'lam al-Nisa, 1/185; al-Tajrid, 2/256; Taqrib al-Tahdhib, 2/593; Tahdhib al-Tahdhib, 12/406; Tahdhib al-Kamal, 3/1680; Khulasat Tahdhib al-Kamal, 3/377.\n\n[3] Usd al-Ghaba, entry 3327.\n\n[4] The note apparently reads: “In A: al-Samit.”\n\n[5] Usd al-Ghaba, entry 6827; al-Isti'ab, entry 3328.\n\n[6] al-Tajrid, 2/255, 256; al-Thiqat, 3/66.\n\n[7] al-Thiqat, 3/66; A'lam al-Nisa, 1/190; al-Simt al-Thamin, 134; Taqrib al-Tahdhib, 2/593; al-Tajrid, 2/256; Tahdhib al-Tahdhib, 12/407; Azminat al-Tarikh al-Islami, 969; al-Kashif, 3/467; Tahdhib al-Kamal, 3/1680; al-Istibsar, 121; Khulasat Tadhhib al-Kamal, 3/17; Talqih Fuhum Ahl al-Athar, 22/270; Baqi ibn Makhlad, 254.",
+      "arabic_sha256": "4f87d329bed16bf1a4c26fac37caaffe7be941b2b4e1b91a37ed83a2ebda0fed",
+      "english_sha256": "d9b1852acb60be21b269be15d029cbeaf7d8b41b056a3bd9a342bb348a2bf90a",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011008-segment-0002",
+      "volume": 8,
+      "scan_page": 74,
+      "printed_page": 73,
+      "reader_page": 3986,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3986",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0074:222c1f6a84298adf",
+      "arabic": "المصطلق، ابن عمرو بن ربيعة بن حارثة بن عمرو الخزاعية المصطلقية.\nلما غزا النبيّ ﷺ بني المصطلق غزوة المريسيع في سنة خمس أو ست، وسباهم وقعت جويرية، وكانت تحت مسافع بن صفوان المصطلقي، في سهم ثابت بن قيس.\nقال ابن إسحاق: حدثني محمد بن جعفر بن الزبير، عن عمه عروة بن الزبير، عن خالته عائشة، قالت: لما قسم رسول اللَّه ﷺ سبايا بني المصطلق وقعت جويرية في السهم لثابت بن قيس بن شماس، أو لابن عم له، فكاتبته على نفسها، وكانت امرأة حلوة ملاحة لا يراها أحد إلا أخذت بنفسه، فأتت رسول اللَّه ﷺ تستعينه في كتابتها، قالت عائشة: فو اللَّه ما هي إلا أن رأيتها فكرهتها، وقلت: يرى منها ما قد رأيت. فلما دخلت على رسول اللَّه ﷺ قالت: يا رسول اللَّه، أنا جويرية بنت الحارث سيد قومه، وقد أصابني من البلايا ما لم يخف عليك، وقد كاتبت على نفسي، فأعنّي على كتابتي. فقال: «أو خير من ذلك؟ أؤدّي عنك كتابتك وأتزوّجك؟» فقالت: نعم. ففعل ذلك.\nفبلغ الناس أنه قد تزوّجها، فقالوا: أصهار رسول اللَّه ﷺ، فأرسلوا ما كان في أيديهم من بني المصطلق، فلقد أعتق اللَّه بها مائة أهل بيت من بني المصطلق، فما أعلم امرأة أعظم بركة منها على قومها.\nوأخرج ابن سعد عن الواقديّ بسند له عن عائشة نحوه، لكن سمى زوجها صفوان بن مالك.\nومن طريق شعبة، عن محمد بن عبد الرحمن مولى آل طلحة، عن كريب، عن ابن عباس، قال: كان اسم جريرية برة، فسماها رسول اللَّه ﷺ جويرية «١» .\nوأخرج التّرمذيّ، من طريق شعبة بهذا الإسناد إلى ابن عباس، عن جويرية بنت الحارث- أنّ النبي ﷺ مرّ عليها وهي في مسجدها. ثم مرّ عليها قريبا من نصف النهار، فقال: «ما زلت على ذلك!» قالت: نعم. قال: «ألا أعلّمك كلمات تقولينهنّ؟ سبحان اللَّه عدد خلقه ...» «٢» الحديث.\n(١) أخرجه أحمد في المسند ١/ ٣٢٦، ٣٥٣.\n(٢) أخرجه أبو نعيم في الحلية ٧/ ١٦٢. وأورده المتقي الهندي في كنز العمال حديث رقم ٣٤٢٠، ٣٤٢٩ وعزاه لأبي داود وأحمد في المسند عن أسماء بنت عميس.",
+      "english": "al-Mustaliq, ibn Amr ibn Rabi'a ibn Haritha ibn Amr, the Khuza'i woman of Banu al-Mustaliq.\n\nWhen the Prophet—may Allah bless him and grant him peace—campaigned against Banu al-Mustaliq in the expedition of al-Muraysi', in the year five or six, and took them captive, Juwayriya—who had been married to Musafi' ibn Safwan al-Mustaliqi—fell to the share of Thabit ibn Qays.\n\nIbn Ishaq said: Muhammad ibn Ja'far ibn al-Zubayr related to me, from his paternal uncle 'Urwa ibn al-Zubayr, from his maternal aunt Aisha, who said: When the Messenger of Allah—may Allah bless him and grant him peace—divided the captives of Banu al-Mustaliq, Juwayriya fell to the share of Thabit ibn Qays ibn Shammas, or to that of one of his paternal cousins. She entered into a contract with him to purchase her own freedom. She was a sweet and beautiful woman whom no one saw without being captivated by her. She came to the Messenger of Allah—may Allah bless him and grant him peace—to seek his help with her manumission contract. Aisha said: By Allah, no sooner did I see her than I disliked her, and I said, “He will see in her what I have seen.” When she entered upon the Messenger of Allah—may Allah bless him and grant him peace—she said, “O Messenger of Allah, I am Juwayriya, daughter of al-Harith, the chief of his people. Such afflictions have befallen me as are not hidden from you. I have entered into a contract to purchase my freedom, so help me fulfill my contract.” He said, “Or would you like something better than that? Shall I discharge your manumission contract for you and marry you?” She said, “Yes.” So he did that.\n\nWhen the people learned that he had married her, they said, “They are the in-laws of the Messenger of Allah—may Allah bless him and grant him peace,” and they released those of Banu al-Mustaliq who were in their possession. Through her, Allah set free one hundred households of Banu al-Mustaliq. I know of no woman who brought a greater blessing upon her people than she did.\n\nIbn Sa'd transmitted from al-Waqidi, through a chain of his from Aisha, a similar account, except that he named her husband Safwan ibn Malik.\n\nHe also transmitted through Shu'ba, from Muhammad ibn 'Abd al-Rahman, the client of the family of Talha, from Kurayb, from Ibn 'Abbas, who said: Juwayriya's name had been Barra, and the Messenger of Allah—may Allah bless him and grant him peace—named her Juwayriya. (1)\n\nal-Tirmidhi transmitted, by way of Shu'ba with this chain to Ibn 'Abbas, from Juwayriya bint al-Harith, that the Prophet—may Allah bless him and grant him peace—passed by her while she was in her place of prayer. He then passed by her again near midday and said, “Have you remained as you were?” She replied, “Yes.” He said, “Shall I not teach you words to say? Glory be to Allah, by the number of His creation…” (2) The hadith.\n\n(1) Ahmad transmitted it in Musnad Ahmad, 1/326, 353.\n\n(2) Abu Nu'aym transmitted it in al-Hilya, 7/162. al-Muttaqi al-Hindi included it in Kanz al-'Ummal, hadith nos. 3420 and 3429, and attributed it to Abu Dawud and to Ahmad in Musnad Ahmad, from Asma' bint 'Umays.",
+      "arabic_sha256": "222c1f6a84298adfaa5e8fc375c5d6c355e78ccd113b9842dbbab161296815d6",
+      "english_sha256": "fcfd2e0874318810a4b9d538e986fa35b36ff229851e8750c1b3483736d70948",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011008-segment-0003",
+      "volume": 8,
+      "scan_page": 75,
+      "printed_page": 74,
+      "reader_page": 3987,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3987",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0075:de20eb9f511ed418",
+      "arabic": "ووقع لنا بعلو في المعرفة لابن مندة، وسنده صحيح.\nومن مرسل أبي قلابة قال: سبى النبيّ ﷺ جويرية- يعني وتزوّجها، فجاءها أبوها، فقال: إن بنتي لا يسبي مثلها، فخلّ سبيلها. فقال: «أرأيت إن خيّرتها أليس قد أحسنت؟» قال: بلى، فأتاها أبوها فذكر لها ذلك، فقالت: اخترت اللَّه ورسوله.\nوسنده صحيح.\nوروت جويرية عن النبي ﷺ أحاديث. روى عنها ابن عباس، وجابر، وابن عمر، وعبيد بن السباق، والطفيل ابن أخيها، وغيرهم.\nوذكر ابن إسحاق أنّ زوجها الأول كان يقال له ابن ذي الشقر. وسماه الواقدي مسافع بن صفوان بن ذي الشّقر بن أبي السرح. وقتل يوم المريسيع.\nوفي صحيح البخاريّ، عن جويرية أن النبي ﷺ دخل عليها يوم جمعة وهي صائمة، فقال: «أصمت أمس؟ قالت: لا، قال: «فتصومين غدا؟» قالت: لا. قال: «فأفطري» .\nوعند مسلم من طريق الزّهريّ، عن عبيد بن السباق، عن جويرية بنت الحارث، قالت: دخلت علي رسول اللَّه ﷺ فقال: «هل من طعام؟» الحديث.\nوفي صحيح مسلم كان اسمها برة، فسماها النبي ﷺ جويرية، كره أن يقال خرج من عند برة.\nقيل: ماتت سنة خمسين من الهجرة، وقيل: بقيت إلى ربيع الأول سنة ست وخمسين، قاله الواقدي، قال: وصلى عليها مروان. وقيل: عاشت خمسا وستين سنة.",
+      "english": "This report also reached us through a high chain in Ibn Mandah's al-Ma'rifa, and its chain is sound.\n\nIn a mursal report, Abu Qilaba said: The Prophet (may Allah bless him and grant him peace) took Juwairiya captive—meaning that he also married her. Her father then came to her and said, “Someone like my daughter should not be taken captive, so release her.” The Prophet replied, “What do you think? If I give her the choice, will I not have treated her well?” Her father answered, “Yes.” Her father then went to her and mentioned that to her, and she said, “I have chosen Allah and His Messenger.”\n\nIts chain is sound.\n\nJuwairiya narrated hadiths from the Prophet (may Allah bless him and grant him peace). Those who narrated from her included Ibn Abbas, Jabir, Ibn Umar, Ubayd ibn al-Sabbaq, al-Tufayl, her brother's son, and others.\n\nIbn Ishaq mentioned that her first husband was said to be called Ibn Dhi al-Shaqr. Al-Waqidi gave his name as Musafi ibn Safwan ibn Dhi al-Shaqr ibn Abi al-Sarh. He was killed on the day of al-Muraysi.\n\nIn Sahih al-Bukhari, Juwairiya related that the Prophet (may Allah bless him and grant him peace) entered upon her on a Friday while she was fasting. He asked, “Did you fast yesterday?” She said, “No.” He asked, “Will you fast tomorrow?” She said, “No.” He said, “Then break your fast.”\n\nMuslim also records, through al-Zuhri, from Ubayd ibn al-Sabbaq, from Juwairiya bint al-Harith, who said: The Messenger of Allah (may Allah bless him and grant him peace) entered upon me and said, “Is there any food?”—the hadith.\n\nIn Sahih Muslim, her name was Barra, and the Prophet (may Allah bless him and grant him peace) renamed her Juwairiya because he disliked it being said, “He left Barra's presence.”\n\nIt is said that she died in the year 50 AH. It is also said that she lived until Rabi al-Awwal of the year 56 AH; al-Waqidi said this and added that Marwan performed the funeral prayer over her. It is also said that she lived for sixty-five years.",
+      "arabic_sha256": "5d8646a5842d7b216d026821d478e13d255cd26723844118c4789835ea206592",
+      "english_sha256": "56cf10f835cf0815c7bd886e48c816ec3de22b3e9bfb093c98f2fbda891fca2d",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصامت",
+      "english": "Bashir ibn al-Samit",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "السمط الثمين",
+      "english": "al-Simt al-Thamin",
+      "kind": "work"
+    },
+    {
+      "arabic": "أزمنة التاريخ الإسلامي",
+      "english": "Azminat al-Tarikh al-Islami",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب الكمال",
+      "english": "Khulasat Tadhhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "work"
+    },
+    {
+      "arabic": "المصطلق",
+      "english": "al-Mustaliq",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن ربيعة بن حارثة بن عمرو",
+      "english": "Amr ibn Rabi'a ibn Haritha ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخزاعية",
+      "english": "Khuza'i",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني المصطلق",
+      "english": "Banu al-Mustaliq",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النبيّ ﷺ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "المريسيع",
+      "english": "al-Muraysi'",
+      "kind": "place"
+    },
+    {
+      "arabic": "جويرية بنت الحارث",
+      "english": "Juwayriya bint al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسافع بن صفوان المصطلقي",
+      "english": "Musafi' ibn Safwan al-Mustaliqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت بن قيس بن شماس",
+      "english": "Thabit ibn Qays ibn Shammas",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن جعفر بن الزبير",
+      "english": "Muhammad ibn Ja'far ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة بن الزبير",
+      "english": "'Urwa ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث",
+      "english": "al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفوان بن مالك",
+      "english": "Safwan ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "شعبة",
+      "english": "Shu'ba",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عبد الرحمن",
+      "english": "Muhammad ibn 'Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "طلحة",
+      "english": "Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "كريب",
+      "english": "Kurayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn 'Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "برة",
+      "english": "Barra",
+      "kind": "person"
+    },
+    {
+      "arabic": "التّرمذيّ",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحلية",
+      "english": "al-Hilya",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-'Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت عميس",
+      "english": "Asma' bint 'Umays",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "المعرفة",
+      "english": "al-Ma'rifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبي قلابة",
+      "english": "Abu Qilaba",
+      "kind": "person"
+    },
+    {
+      "arabic": "جويرية بنت الحارث",
+      "english": "Juwairiya bint al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر",
+      "english": "Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عمر",
+      "english": "Ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد بن السباق",
+      "english": "Ubayd ibn al-Sabbaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطفيل",
+      "english": "al-Tufayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسافع بن صفوان بن ذي الشّقر بن أبي السرح",
+      "english": "Musafi ibn Safwan ibn Dhi al-Shaqr ibn Abi al-Sarh",
+      "kind": "person"
+    },
+    {
+      "arabic": "المريسيع",
+      "english": "al-Muraysi",
+      "kind": "place"
+    },
+    {
+      "arabic": "صحيح البخاريّ",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّهريّ",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيح مسلم",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "مروان",
+      "english": "Marwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "جويرية",
+      "english": "Juwairiya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "footnote_segmentation",
+      "arabic_span": "في أالصامت",
+      "explanation": "The conventional reading “In A: al-Samit” is probable, but the printed text lacks a separator and the supplied witnesses do not confirm it.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0073:67a9c22cb9e5312c"
+    },
+    {
+      "category": "name vocalization",
+      "arabic_span": "الشقر",
+      "explanation": "Neither the unvocalized canonical Arabic nor the Urdu witness distinguishes Shaqr, Shiqr, or Shuqr. The provisional form al-Shaqr has therefore been retained.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0075:de20eb9f511ed418"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

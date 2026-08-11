@@ -1,0 +1,139 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012052",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12052,
+  "title": {
+    "english": "Umm Sa'd bint Uqba",
+    "arabic_observed": "أم سعد بنت عقبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012052-segment-0001",
+      "volume": 8,
+      "scan_page": 402,
+      "printed_page": 401,
+      "reader_page": 4314,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4314",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0402:c5de95020b160d19",
+      "arabic": "١٢٠٥٢- أم سعد بنت عقبة\nبن رافع بن امرئ القيس بن يزيد بن عبد الأشهل الأشهليّة.\n(١) أسد الغابة ت (٧٤٦٧)، الثقات ٣/ ٤٦١، تجريد أسماء الصحابة ٢/ ٣٥١ تقريب التهذيب ٢/ ٦٢١، تهذيب التهذيب ١٢/ ٤٧٠، الكاشف ٣/ ٤٨٩. تهذيب الكمال ٣/ ١٧٠٤، خلاصة تهذيب الكمال ٣/ ٤٠٠ در السحابة ٧٧٢.",
+      "english": "12052—Umm Sa'd bint Uqba\n\nibn Rafi' ibn Imru' al-Qays ibn Yazid ibn Abd al-Ashhal al-Ashhaliyya.\n\n(1) Usd al-Ghaba, entry 7467; al-Thiqat 3/461; al-Tajrid 2/351; Taqrib al-Tahdhib 2/621; Tahdhib al-Tahdhib 12/470; al-Kashif 3/489; Tahdhib al-Kamal 3/1704; Khulasat Tahdhib al-Kamal 3/400; Durr al-Sahaba, 772.",
+      "arabic_sha256": "96c2d55bacb69b3cbfb28a78c747b081db5f691b7082c4af4b4a94995127f201",
+      "english_sha256": "1cf8d276652652bdee1d2d10f85699f75c73a9c094a051cbfd7d7ae1e78046c3",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012052-segment-0002",
+      "volume": 8,
+      "scan_page": 403,
+      "printed_page": 402,
+      "reader_page": 4315,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4315",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0403:a01cb66255fb593f",
+      "arabic": "ذكرها ابن سعد في المبايعات، وقال: أمها سلمى بنت عمرو بن خنيس»\nالسّاعدية، وهي عمة محمود بن لبيد، خلف عليها قيس بن مخرمة بن المطّلب القرشيّ بعد أختها ودّة، فولدت له.",
+      "english": "Ibn Sa'd mentioned her among the women who pledged allegiance and said: Her mother was Salma bint 'Amr ibn Khunays[1] al-Sa'idiyya. Umm Sa'd was the paternal aunt of Mahmud ibn Labid. Qays ibn Makhrama ibn al-Muttalib al-Qurashi married her after her sister Wadda, and she bore him children.",
+      "arabic_sha256": "ed34febd06a516ac5107d7134eae0430f8fc62021acc837ecb96da536f13f846",
+      "english_sha256": "9066d5291789f4ee6a3d1c9698be0fd9faa4c020bf5cbcd6472eb6120ff8a76b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سعد",
+      "english": "Sa'd ibn Zayd ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "در السحابة",
+      "english": "Durr al-Sahaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمود بن لبيد",
+      "english": "Mahmud ibn Labid",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس بن مخرمة بن المطلب القرشي",
+      "english": "Qays ibn Makhrama ibn al-Muttalib al-Qurashi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ودّة",
+      "english": "Wadda",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "textual-variant",
+      "arabic_span": "وَالَّذِينَ عَقَدَتْ أَيْمانُكُمْ ... لا، ولكن: وَالَّذِينَ عَقَدَتْ أَيْمَانُكُمْ",
+      "explanation": "The canonical Arabic prints the same Quranic reading before and after “No, rather,” although the wording presupposes a distinction. None of the supplied witnesses establishes the intended second reading, so both printed readings have been translated identically.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0402:c5de95020b160d19"
+    },
+    {
+      "category": "genealogy",
+      "arabic_span": "بنت عبد اللَّه بن أبي مالك ... وأبوها هو عبد اللَّه بن أبي ابن سلول",
+      "explanation": "The entry first calls her the daughter of Abd Allah ibn Abi Malik and then identifies her father as Abd Allah ibn Ubayy ibn Salul. The supplied witnesses do not establish how these formulations are to be reconciled, so both have been preserved.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0402:c5de95020b160d19"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

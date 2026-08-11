@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012249",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12249,
+  "title": {
+    "english": "Umm Muhammad al-Ansariyya:³",
+    "arabic_observed": "أم محمد الأنصارية «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012249-segment-0001",
+      "volume": 8,
+      "scan_page": 473,
+      "printed_page": 472,
+      "reader_page": 4385,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4385",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0473:b9f6c84fc251ec4d",
+      "arabic": "١٢٢٤٩- أم محمد الأنصارية «٣»\n: جاء عنها حديث\nأخرجه أبو موسى، من طريق حفص بن أبي داود، وهو حفص بن سليمان القارئ أحد الضعفاء في الحديث عن عمر بن ذر، عن عبيد اللَّه بن أبي الحبحاب، عن أم محمد الأنصارية، قالت: سمعت رسول اللَّه ﵌ يقول: «من قال عند مطعمه ومشربه: بسم اللَّه خير الأسماء، بسم اللَّه ربّ الأرض والسّماء، بسم اللَّه الّذي لا يضر مع اسمه شيء لم يضره ما أكل وشرب» «٤» .",
+      "english": "12249—Umm Muhammad al-Ansariyya:³\n\nA hadith is related from her.\n\nAbu Musa transmitted it by way of Hafs ibn Abi Dawud—he is Hafs ibn Sulayman, the Qur'an reciter, one of those deemed weak in hadith—from Umar ibn Dharr, from Ubayd Allah ibn Abi al-Habhab, from Umm Muhammad al-Ansariyya, who said: I heard the Messenger of Allah, may Allah bless him and grant him peace, say: “Whoever says over his food and drink, ‘In the name of Allah, the best of names; in the name of Allah, Lord of the earth and heaven; in the name of Allah, with whose name nothing can cause harm,’ will not be harmed by what he eats or drinks.”⁴",
+      "arabic_sha256": "92eeec81ca378eb0c3402c988fc3ebe0d776c4b791a3d7b87a683dbe4a4d24fc",
+      "english_sha256": "ba2dd1892a49bb99c1e115c8e0887c5e52ad542376764be26faf9a7994e4cfcb",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم محمد الأنصارية",
+      "english": "Umm Muhammad al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفص بن أبي داود",
+      "english": "Hafs ibn Sulayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفص بن سليمان القارئ",
+      "english": "Hafs ibn Sulayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن ذر",
+      "english": "Umar ibn Dharr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد اللَّه بن أبي الحبحاب",
+      "english": "Ubayd Allah ibn Abi al-Habhab",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

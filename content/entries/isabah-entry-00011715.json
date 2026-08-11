@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011715",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11715,
+  "title": {
+    "english": "Layla bint Rafi ibn Amr:",
+    "arabic_observed": "ليلى بنت رافع بن عمرو:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011715-segment-0001",
+      "volume": 8,
+      "scan_page": 305,
+      "printed_page": 304,
+      "reader_page": 4217,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4217",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0305:9d518fa01cfc30aa",
+      "arabic": "١١٧١٥- ليلى بنت رافع بن عمرو:\nالأنصاريّة، والدة أبي عبس بن حرب.\nذكرها ابن سعد في المبايعات، وقال: أمّها أمّ البراء بنت سلمة بن عرفطة.",
+      "english": "11715. Layla bint Rafi ibn Amr:\n\nAn Ansari woman and the mother of Abu Abs ibn Harb.\n\nIbn Sa'd mentioned her among the women who pledged allegiance and said: Her mother was Umm al-Bara bint Salama ibn Arfata.",
+      "arabic_sha256": "7190a2ecab378927a99038b65010189358fb152e50a0d4802f56d7c75aadeff4",
+      "english_sha256": "83ecaa67c99aea1453bbcf504ae45197a2daf25d3298c3cdd1ae6a6fdf5b76fb",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليلى",
+      "english": "Layla bint Abi Sufyan al-Laythi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليلى بنت رافع بن عمرو",
+      "english": "Layla bint Rafi ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عبس بن حرب",
+      "english": "Abu Abs ibn Harb",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمّ البراء بنت سلمة بن عرفطة",
+      "english": "Umm al-Bara bint Salama ibn Arfata",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

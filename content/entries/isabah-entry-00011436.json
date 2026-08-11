@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011436",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11436,
+  "title": {
+    "english": "al-Dahhak bint Mas'ud:",
+    "arabic_observed": "الضّحاك بنت مسعود:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011436-segment-0001",
+      "volume": 8,
+      "scan_page": 225,
+      "printed_page": 224,
+      "reader_page": 4137,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4137",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0225:a5959950db0cf411",
+      "arabic": "١١٤٣٦- الضّحاك بنت مسعود:\nأخت حويصة «١» .\nذكرها ابن مندة فوهم، وتعقبه أبو نعيم بأنها أم الضّحاك كما ستأتي على الصّواب في الكنى.\nحرف الطاء المهملة\nالقسم الأول",
+      "english": "11436 — al-Dahhak bint Mas'ud:\n\nThe sister of Huwaysa. (1)\n\nIbn Manda mentioned her, but he erred. Abu Nu'aym corrected him, explaining that she is Umm al-Dahhak, as she will appear correctly under the kunyahs.\n\nTHE LETTER UNPOINTED TA\n\nSECTION ONE",
+      "arabic_sha256": "984ae4f05f5d1dc0af9bef729fbf9be3b8990d8808ff246e7baadf1895f1611a",
+      "english_sha256": "cca246b82457c48938517dacb15625fdf773a6c542f12fbb0f8ce1d49cc69d63",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الضّحاك بنت مسعود",
+      "english": "al-Dahhak bint Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "حويصة",
+      "english": "Huwaysa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الضّحاك",
+      "english": "Umm al-Dahhak",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

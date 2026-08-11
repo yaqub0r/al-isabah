@@ -1,0 +1,98 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011306",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11306,
+  "title": {
+    "english": "Sulaf al-Ansariyya,",
+    "arabic_observed": "سلاف الأنصارية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011306-segment-0001",
+      "volume": 8,
+      "scan_page": 182,
+      "printed_page": 181,
+      "reader_page": 4094,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4094",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0182:3dd89ad41d329bb3",
+      "arabic": "١١٣٠٦- سلاف الأنصارية ،\nوالدة البراء بن معرور.\nلها ذكر في أخبار المدينة للزبير بن بكار، من روايته، عن محمد بن الحسن المخزومي، عن عبد العزيز بن محمد، عن يحيى بن عبد اللَّه بن أبي قتادة، عن مشيخته- أن النبيّ ﷺ كان يأتي السلاف أمّ البراء بن معرور في المسجد الّذي يقال له مسجد الحرمة دبر الفريضة وصلّى فيه مرارا.",
+      "english": "11306 — Sulaf al-Ansariyya,\n\nmother of al-Bara' ibn Ma'rur.\n\nShe is mentioned in Akhbar al-Madina by al-Zubayr ibn Bakkar, in his narration from Muhammad ibn al-Hasan al-Makhzumi, from 'Abd al-'Aziz ibn Muhammad, from Yahya ibn 'Abd Allah ibn Abi Qatada, from his shaykhs: The Prophet, may Allah bless him and grant him peace, used to visit Sulaf, the mother of al-Bara' ibn Ma'rur, in the mosque called the Mosque of al-Hurma, after the obligatory prayer, and he prayed there several times.",
+      "arabic_sha256": "9da70ad06a2ff2408953393df9583cf15cc948e7984e169a15ec4d2d9284208d",
+      "english_sha256": "a7bc317d077c1f8d1937632f4abd69621da62c786c3ac8494b52cb8e0529576f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سلاف الأنصارية",
+      "english": "Sulaf al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "البراء بن معرور",
+      "english": "al-Bara' ibn Ma'rur",
+      "kind": "person"
+    },
+    {
+      "arabic": "أخبار المدينة",
+      "english": "Akhbar al-Madina",
+      "kind": "work"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن الحسن المخزومي",
+      "english": "Muhammad ibn al-Hasan al-Makhzumi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد العزيز بن محمد",
+      "english": "'Abd al-'Aziz ibn Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن عبد اللَّه بن أبي قتادة",
+      "english": "Yahya ibn 'Abd Allah ibn Abi Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "مسجد الحرمة",
+      "english": "Mosque of al-Hurma",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "vocalization",
+      "arabic_span": "مسجد الحرمة",
+      "explanation": "The canonical text and the supplied Urdu witness are unvocalized and therefore do not conclusively establish the precise vocalization of الحرمة. “Mosque of al-Hurma” has been retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0182:3dd89ad41d329bb3"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

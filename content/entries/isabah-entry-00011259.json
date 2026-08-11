@@ -1,0 +1,219 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011259",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11259,
+  "title": {
+    "english": "Zaynab bint al-Asadiyya⁴",
+    "arabic_observed": "زينب بنت الأسدية «٤» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011259-segment-0001",
+      "volume": 8,
+      "scan_page": 165,
+      "printed_page": 164,
+      "reader_page": 4077,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4077",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0165:620781664ee07575",
+      "arabic": "١١٢٥٩- زينب بنت الأسدية «٤» .\nمكية،\nحديثها عند مجاهد عنها أنها أتت رسول اللَّه ﷺ، فقالت: إن أبي مات وترك جارية، فولدت له غلاما، وإنا كنا نتهمها. فقال: ائتوني به، فأتوه به، فنظر إليه، فقال: أما الميراث فله، وأما أنت فاحتجبي منه «٥» .\nهكذا ذكرها أبو\n(١) أخرجه مسلم في الصحيح ٢/ ٦٩٤ كتاب الزكاة باب (١٤) فضل النفقة والصدقة على الأقربين ... حديث رقم ٤٥/ ١٠٠٠ وأخرجه ابن خزيمة في صحيحه حديث رقم ٢٤٦٣ وأحمد في المسند ١/ ٣٧٦، ٤٢٣، ٣/ ٥٠٢ والمتقي الهندي في كنز العمال حديث رقم ٤٥٠٨١.\n(٢) أورده المتقي الهندي في كنز العمال حديث رقم ٢٠٨٧٦ وعزاه إلى ابن حبان عن زينب بنت الثقفية.\n(٣) تجريد أسماء الصحابة ٢/ ٢٧١، تلقيح فهوم أهل الأثر ٣٧٠.\n(٤) أعلام النساء ٢/ ٥٤، تجريد أسماء الصحابة ١/ ٢٧١.\n(٥) أخرجه الحاكم في المستدرك ٤/ ٩٦، ٩٧ وقال صحيح الإسناد ولم يخرجاه ووافقه الذهبي بقوله صحيح، وأحمد في المسند ٤/ ٥، والبيهقي في السنن الكبرى ٦/ ٨٧، والدار الدّارقطنيّ في السنن ٤/ ٢٤٠ وكنز العمال ٣٣٩٤، ٣٠٧١٣.",
+      "english": "11259—Zaynab bint al-Asadiyya⁴\n\nA Meccan woman.\n\nHer hadith is transmitted by Mujahid from her: She came to the Messenger of Allah—may Allah bless him and grant him peace—and said, “My father died and left a slave woman. She bore him a boy, and we used to suspect her.” He said, “Bring him to me.” They brought him, and he looked at him. He then said, “As for the inheritance, it is his; as for you, veil yourself from him.”⁵\n\nThis is how Abu—\n\n¹ Muslim transmitted it in al-Sahih, 2/694, Book of Zakat, chapter (14), “The Merit of Spending and Giving Charity to Near Relatives …,” hadith no. 45/1000. It was also transmitted by Ibn Khuzayma in his Sahih, hadith no. 2463; by Ahmad in Musnad Ahmad, 1/376, 423 and 3/502; and by al-Muttaqi al-Hindi in Kanz al-'Ummal, hadith no. 45081.\n\n² Al-Muttaqi al-Hindi cited it in Kanz al-'Ummal, hadith no. 20876, and attributed it to Ibn Hibban, from Zaynab bint al-Thaqafiyya.\n\n³ al-Tajrid, 2/271; Talqih Fuhum Ahl al-Athar, 370.\n\n⁴ A'lam al-Nisa', 2/54; al-Tajrid, 1/271.\n\n⁵ Al-Hakim transmitted it in al-Mustadrak, 4/96, 97, and said, “Its chain of transmission is sound, though neither of the two Sahih compilers transmitted it.” Al-Dhahabi concurred, saying, “Sound.” It was also transmitted by Ahmad in Musnad Ahmad, 4/5; al-Bayhaqi in al-Sunan al-Kubra, 6/87; al-Daraqutni in his Sunan, 4/240; and Kanz al-'Ummal, nos. 3394 and 30713.",
+      "arabic_sha256": "6d7fc9ae215803aa0fa9da89e7ab141a5509f8f4f7538790dfc45df49cf0389e",
+      "english_sha256": "71e81c25a3defb3bc7f1e7a14bf12f059eb652c0f6de9be4ff1ea1ef518259d1",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011259-segment-0002",
+      "volume": 8,
+      "scan_page": 166,
+      "printed_page": 165,
+      "reader_page": 4078,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4078",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0166:1e5302aa4bea9fe7",
+      "arabic": "عمر بغير مستند، وقد أسنده الطبراني من طريق عنبسة بن سعيد، عن زكريا بن خالد، عن أبي الزبير، عن مجاهد، عن زينب الأسدية- أنها قالت: أتيت رسول اللَّه ﷺ، فقلت: يا رسول اللَّه، إن أبي مات ... الحديث.",
+      "english": "This is how Abu Umar mentioned her, without a supporting chain of transmission. However, al-Tabarani supplied an isnad for it by way of Anbasa ibn Sa'id, from Zakariyya ibn Khalid, from Abu al-Zubayr, from Mujahid, from Zaynab al-Asadiyya, who said: I came to the Messenger of Allah (may Allah bless him and grant him peace) and said, “O Messenger of Allah, my father died ...”—the hadith.",
+      "arabic_sha256": "2c32e2b6ba21be911d13026b5b0d7ea275674288962f816c45b1998e0a7353ee",
+      "english_sha256": "68a98f51c60c86d3189b89e33008cb919165dc734309c63b3335180204064862",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "زينب بنت الأسدية",
+      "english": "Zaynab bint al-Asadiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكية",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "مجاهد",
+      "english": "Mujahid",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن خزيمة",
+      "english": "Ibn Khuzayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيحه",
+      "english": "Sahih Ibn Khuzayma",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-'Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت الثقفية",
+      "english": "Zaynab bint al-Thaqafiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن الكبرى",
+      "english": "al-Sunan al-Kubra",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدارقطني",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan al-Daraqutni",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "عنبسة بن سعيد",
+      "english": "Anbasa ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "زكريا بن خالد",
+      "english": "Zakariyya ibn Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الزبير",
+      "english": "Abu al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب الأسدية",
+      "english": "Zaynab al-Asadiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

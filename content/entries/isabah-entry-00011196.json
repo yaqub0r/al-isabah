@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011196",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11196,
+  "title": {
+    "english": "Rumaitha¹",
+    "arabic_observed": "رميثة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011196-segment-0001",
+      "volume": 8,
+      "scan_page": 145,
+      "printed_page": 144,
+      "reader_page": 4057,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4057",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0145:4202cd84d3358069",
+      "arabic": "١١١٩٦- رميثة «١»\n، بمثلثة مصغرة، بنت عمرو بن هاشم بن المطلب بن عبد مناف.\nقال ابن سعد: أسلمت وبايعت. وقال البخاري: روى عنها القعقاع بن حكيم. وقال أبو عمر: هي جدة عاصم بن قتادة، روى عنها.\nقلت: كذا قال، والّذي يظهر لي أنها غيرها، وجدة عاصم هي التي بعدها، وأما هي فلها حديث في ترجمة محمد بن محمد التمار من المعجم الأوسط.",
+      "english": "11196 — Rumaitha¹\n\nWith the three-dotted letter tha, in the diminutive form; daughter of Amr ibn Hashim ibn al-Muttalib ibn Abd Manaf.\n\nIbn Sa'd said: “She embraced Islam and gave the pledge of allegiance.” al-Bukhari said: “al-Qa'qa' ibn Hakim transmitted from her.” Abu Umar said: “She was the grandmother of Asim ibn Qatada, who transmitted from her.”\n\nI say: This is what he said, but it appears to me that she was someone else. Asim's grandmother is the woman in the following entry. As for this woman, she has a hadith in the biographical entry of Muhammad ibn Muhammad al-Tammar in al-Mu'jam al-Awsat.",
+      "arabic_sha256": "a4baf0ed27ff05c776cc871efa9de51895b0455744c88d747852a60aed9bdcde",
+      "english_sha256": "d1a0b13d820dce6dbfeb68ec2409e036444d0c845aa00ed16be6de1882498fc6",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رميثة",
+      "english": "Rumaitha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن هاشم بن المطلب بن عبد مناف",
+      "english": "Amr ibn Hashim ibn al-Muttalib ibn Abd Manaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "القعقاع بن حكيم",
+      "english": "al-Qa'qa' ibn Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاصم بن قتادة",
+      "english": "Asim ibn Umar ibn Qatada al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن محمد التمار",
+      "english": "Muhammad ibn Muhammad al-Tammar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المعجم الأوسط",
+      "english": "al-Mu'jam al-Awsat",
+      "kind": "work"
+    },
+    {
+      "arabic": "حماد",
+      "english": "Hammad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

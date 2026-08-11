@@ -1,0 +1,299 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011223",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11223,
+  "title": {
+    "english": "Zaynab, the Qurashi Hashimite, daughter of the master of the children of Adam, Muhammad ibn Abd Allah ibn Abd al-Muttalib.(1)",
+    "arabic_observed": "زينب بنت سيد ولد آدم»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011223-segment-0001",
+      "volume": 8,
+      "scan_page": 152,
+      "printed_page": 151,
+      "reader_page": 4064,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4064",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0152:a912a474f8297b7f",
+      "arabic": "١١٢٢٣- زينب بنت سيد ولد آدم»\nمحمد بن عبد اللَّه بن عبد المطلب القرشية الهاشمية.\nهي أكبر بناته، وأول من تزوج منهنّ ولدت قيل البعثة بمدة. قيل إنها عشر سنين، واختلف: هل القاسم قبلها أو بعدها؟ وتزوّجها ابن خالتها أبو العاص بن الربيع العبشمي، وأمّه هالة بنت خويلد.\nأخرج ابن سعد بسند صحيح عن الشعبي، قال: هاجرت زينب مع أبيها، وأبي زوجها أبو العاص أن يسلم، فلم يفرق النبيّ ﷺ بينهما، وعن الواقدي بسند له عن عباد بن عبد اللَّه بن الزبير، عن عائشة- أن أبا العاص شهد مع المشركين بدرا فأسر، فقدم أخوه عمرو في فدائه، وأرسلت معه زينب قلادة من جزع كانت خديجة أدخلتها بها على أبي العاص، فلما رآها رسول اللَّه ﷺ عرفها ورقّ لها، وذكر خديجة فترحّم عليها وكلّم الناس فأطلقوه وردّ\n(١) طبقات ابن سعد ٨/ ٣٠، نسب قريش ٢٢، تاريخ خلفة ٩٢، التاريخ الصغير ١/ ٧، تهذيب الأسماء واللغات ٢/ ٣٤٤، العبر ١/ ١٠، مجمع الزوائد ٩/ ٢١٢، العقد الثمين ٨/ ٢٢٢، المعارف ٧٢ و١٢٧، تاريخ الفسوي ٣/ ٢٧٠، المستدرك ٤/ ٤٢.",
+      "english": "11223—Zaynab, the Qurashi Hashimite, daughter of the master of the children of Adam, Muhammad ibn Abd Allah ibn Abd al-Muttalib.(1)\n\nShe was the eldest of his daughters and the first of them to marry. She was born some time before the prophetic mission; it is said that the interval was ten years. There is disagreement over whether al-Qasim was born before or after her. The son of her maternal aunt, Abu al-As ibn al-Rabi al-Abshami, married her; his mother was Hala bint Khuwaylid.\n\nIbn Sa'd transmitted with a sound chain of transmission from al-Sha'bi, who said: “Zaynab emigrated with her father, but her husband Abu al-As refused to embrace Islam. The Prophet—may Allah bless him and grant him peace—did not separate them.” Al-Waqidi transmitted, through a chain of his, from Abbad ibn Abd Allah ibn al-Zubayr, from Aisha, that Abu al-As was present with the polytheists at Badr and was taken prisoner. His brother Amr then came to ransom him, and Zaynab sent with him an agate necklace that Khadijah had put on her when she sent her in as a bride to Abu al-As. When the Messenger of Allah—may Allah bless him and grant him peace—saw it, he recognized it and was moved by it. He remembered Khadijah and prayed that Allah have mercy upon her, then spoke to the people; they released him and returned—\n\n(1) al-Tabaqat, 8/30; Nasab Quraysh, 22; Tarikh Khalifa, 92; al-Tarikh al-Saghir, 1/7; Tahdhib al-Asma wa-l-Lughat, 2/344; al-Ibar, 1/10; Majma' al-Zawa'id, 9/212; al-Iqd al-Thamin, 8/222; al-Ma'arif, 72 and 127; Tarikh al-Fasawi, 3/270; al-Mustadrak, 4/42.",
+      "arabic_sha256": "0ea41ad59debf3035fa4492ecff5634d8c4ac2c36ece90033f951c8a2798e3d8",
+      "english_sha256": "c183311d09bcc5766723dcdf1071b2ec91c3532b507e2a9da3ac237f0e2f240a",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011223-segment-0002",
+      "volume": 8,
+      "scan_page": 153,
+      "printed_page": 152,
+      "reader_page": 4065,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4065",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0153:39b727548f7a0d16",
+      "arabic": "عليها القلادة، وأخذ على أبي العاص أن يخلي سبيلها، ففعل.\nقال الواقديّ: هذا أثبت عندنا، ويتأيّد هذا بما ذكر\nابن إسحاق عن يزيد بن رومان، قال: صلّى النبيّ ﷺ الصبح، فنادت زينب: إني أجرت أبا العاص بن الربيع، فقال بعد أن انصرف: «هل سمعتم ما سمعت؟» قالوا: نعم. قال: «والّذي نفس محمّد بيده ما علمت شيئا ممّا كان حتّى سمعت، وإنّه يجير على المسلمين أدناهم» .\nوذكر الواقديّ من طريق محمد بن إبراهيم التيمي، قال: خرج أبو العاص في عير لقريش، فبعث النبيّ ﷺ زيد بن حارثة في سبعين ومائة راكب فلقوا العير بناحية العيص في جمادى الأولى سنة ست، فأخذوا ما فيها، وأسروا ناسا منهم أبو العاص، فدخل على زينب فأجارته، فذكر نحو هذه القصة، وزاد: وقد أجرنا من أجارت، فسألته زينب أن يردّ عليه ما أخذ عنه، ففعل، وأمرها ألّا يقربها.\nومضى أبو العاص إلى مكة فأدّى الحقوق لأهلها، ورجع فأسلم في المحرم سنة سبع، فرد عليه زينب بالنكاح الأول.\nومن طريق عبد اللَّه بن أبي بكر بن حزم- أنّ زينب توفيت في أول سنة ثمان من الهجرة.\nوأخرج مسلم في الصحيح، من طريق أبي معاوية، عن عاصم الأحول، عن حفصة بنت سيرين، عن أم عطية، قالت: لما ماتت زينب بنت رسول اللَّه ﷺ قال: «اغسلنها وترا ثلاثا أو خمسا، واجعلن في الآخرة كافورا ...» «١» الحديث.\nوهو في الصّحيحين، من طريق أخرى بدون تسمية زينب، وسيأتي في أم كلثوم- أنّ أم عطية حضرت غسلها أيضا، وكانت زينب ولدت من أبي العاص عليّا، مات وقد ناهز الاحتلام، ومات في حياته، وأمامة عاشت حتى تزوجها عليّ بعد فاطمة.\nوقد تقدم ذكرها في الهمزة، وقد مضى لها ذكر في ترجمة زوجها أبي العاص بن الربيع، وكانت وفاته بعدها بقليل.",
+      "english": "He returned the necklace to her and exacted from Abu al-As a pledge that he would let her go; and he did so.\n\nAl-Waqidi said: “This account is the more firmly established one in our view.” It is supported by what Ibn Ishaq related from Yazid ibn Ruman, who said: The Prophet—may Allah bless him and grant him peace—performed the dawn prayer, whereupon Zaynab called out, “I have granted protection to Abu al-As ibn al-Rabi.” After he had finished, he said, “Did you hear what I heard?” They said, “Yes.” He said, “By Him in whose hand is Muhammad's soul, I knew nothing of what had happened until I heard it. Even the least of the Muslims may grant protection binding upon them all.”\n\nAl-Waqidi related by way of Muhammad ibn Ibrahim al-Taymi, who said: Abu al-As set out with a caravan belonging to Quraysh. The Prophet—may Allah bless him and grant him peace—sent Zayd ibn Haritha with one hundred and seventy riders, and they encountered the caravan in the vicinity of al-Is in Jumada al-Ula of the sixth year. They seized what it carried and took several people captive, among them Abu al-As. He went to Zaynab, and she granted him protection. The report then recounts approximately this same account, adding: “We have granted protection to the one to whom she granted protection.” Zaynab asked him to return to Abu al-As what had been taken from him, and he did so. He instructed her that Abu al-As was not to approach her.\n\nAbu al-As then proceeded to Mecca, discharged the claims owed to its people, and returned. He embraced Islam in Muharram of the seventh year, and Zaynab was restored to him under their original marriage contract.\n\nBy way of Abdullah ibn Abi Bakr ibn Hazm, it is related that Zaynab died at the beginning of the eighth year after the Hijra.\n\nMuslim transmitted in the Sahih, by way of Abu Muawiya, from Asim al-Ahwal, from Hafsa bint Sirin, from Umm Atiyya, who said: When Zaynab, daughter of the Messenger of Allah—may Allah bless him and grant him peace—died, he said, “Wash her an odd number of times—three or five—and put camphor in the final washing…” [1] The remainder of the hadith.\n\nIt is in the two Sahih collections through another route, without Zaynab being named. It will be mentioned under Umm Kulthum that Umm Atiyya was also present when she was washed. Zaynab bore Abu al-As a son, Ali, who died when he had nearly reached puberty; he died during the Prophet's lifetime. She also bore Umama, who lived until Ali married her after Fatima.\n\nUmama has already been mentioned under the letter hamza. Zaynab has also previously been mentioned in the biographical entry on her husband, Abu al-As ibn al-Rabi, whose death occurred shortly after hers.",
+      "arabic_sha256": "dabe0a31f57c8697c845d311321dab2afa3536a969ecdbad147fbfa71bd51a05",
+      "english_sha256": "cb93285303eaaf2b64f4264d060ceca88b964c9392b618e07fc7fc0c1741bf9a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عبد الله بن عبد المطلب",
+      "english": "Muhammad ibn Abd Allah ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عمرو",
+      "english": "Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "آدم",
+      "english": "Adam",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهاشمية",
+      "english": "Banu Hashim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "القاسم",
+      "english": "al-Qasim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو العاص بن الربيع العبشمي",
+      "english": "Abu al-As ibn al-Rabi al-Abshami",
+      "kind": "person"
+    },
+    {
+      "arabic": "هالة بنت خويلد",
+      "english": "Hala bint Khuwaylid",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشعبي",
+      "english": "al-Sha'bi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عباد بن عبد الله بن الزبير",
+      "english": "Abbad ibn Abd Allah ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "نسب قريش",
+      "english": "Nasab Quraysh",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ خلفة",
+      "english": "Tarikh Khalifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "التاريخ الصغير",
+      "english": "al-Tarikh al-Saghir",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الأسماء واللغات",
+      "english": "Tahdhib al-Asma wa-l-Lughat",
+      "kind": "work"
+    },
+    {
+      "arabic": "العبر",
+      "english": "al-Ibar",
+      "kind": "work"
+    },
+    {
+      "arabic": "مجمع الزوائد",
+      "english": "Majma' al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "العقد الثمين",
+      "english": "al-Iqd al-Thamin",
+      "kind": "work"
+    },
+    {
+      "arabic": "المعارف",
+      "english": "al-Ma'arif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ الفسوي",
+      "english": "Tarikh al-Fasawi",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو العاص بن الربيع",
+      "english": "Abu al-As ibn al-Rabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن رومان",
+      "english": "Yazid ibn Ruman",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمّد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت رسول اللَّه",
+      "english": "Zaynab bint Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إبراهيم التيمي",
+      "english": "Muhammad ibn Ibrahim al-Taymi",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن حارثة",
+      "english": "Zayd ibn Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "العيص",
+      "english": "al-Is",
+      "kind": "place"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "عبد اللَّه بن أبي بكر بن حزم",
+      "english": "Abdullah ibn Abi Bakr ibn Hazm",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو معاوية",
+      "english": "Abu Muawiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاصم الأحول",
+      "english": "Asim al-Ahwal",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفصة بنت سيرين",
+      "english": "Hafsa bint Sirin",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عطية",
+      "english": "Umm Atiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم",
+      "english": "Umm Kulthum",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّا",
+      "english": "Ali ibn Abi al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة",
+      "english": "Umama bint Abi al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abdullah ibn Zuhayr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

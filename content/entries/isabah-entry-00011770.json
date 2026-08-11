@@ -1,0 +1,110 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011770",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11770,
+  "title": {
+    "english": "Mulayka",
+    "arabic_observed": "مليكة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011770-segment-0001",
+      "volume": 8,
+      "scan_page": 320,
+      "printed_page": 319,
+      "reader_page": 4232,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4232",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0320:221d87fbd8f64ec0",
+      "arabic": "١١٧٧٠- مليكة\nبنت عمرو الأنصاريّة «٢»، من بني زيد اللّات بن سعد.\nذكرها أبو عمر فقال: حديثها عند زهير بن معاوية، عن امرأة من أهله، عنها، أنّ رسول اللَّه ﵌ قال في البقرة: «ألبانها شفاء، وسمنها دواء، ولحمها داء» «٣» .\nقلت: أخرجه أبو داود في المراسيل، ووصله ابن مندة، ووقع لنا عنه بعلوّ.\nوأخرج في ترجمتها أيضا ما أخرجه ابن أبي عاصم في الوحدان، من طريق ابن وهب، قال: كتب إليّ حمزة بن عبد الواحد بن محمد بن عمرو بن حلحل: عن محمد بن عمر- أنّ مليكة أخبرته أنها سمعت رسول اللَّه ﵌ يقول: «إذا سمعتم بقوم قد خسف بهم فقد أظلّت السّاعة» .\nوهو بعلو عند ابن مندة أيضا، ولم ينسب مليكة في هذا الخبر الثّاني، فيحتمل أن تكون أخرى.",
+      "english": "11770—Mulayka\nbint Amr, the Ansari [2], of the Banu Zayd al-Lat ibn Sa'd.\n\nAbu Umar mentioned her and said: Her hadith is transmitted by Zuhayr ibn Mu'awiya, from a woman of his family, from her, that the Messenger of Allah—may Allah bless him and grant him peace—said concerning the cow: “Its milk is healing, its clarified butter is medicine, and its meat is disease.” [3]\n\nI say: Abu Dawud included it in al-Marasil, and Ibn Manda transmitted it with a connected chain. It has also reached us from him through a short chain.\n\nIn her biographical entry, he also included what Ibn Abi Asim included in al-Wuhdan, by way of Ibn Wahb, who said: Hamza ibn Abd al-Wahid ibn Muhammad ibn Amr ibn Halhal wrote to me, transmitting from Muhammad ibn Umar, that Mulayka informed him that she heard the Messenger of Allah—may Allah bless him and grant him peace—say: “When you hear that a people have been swallowed by the earth, the Hour has drawn near.”\n\nIt is also transmitted through a short chain by Ibn Manda. He did not give Mulayka's lineage in this second report, so it is possible that she was another woman.",
+      "arabic_sha256": "481a0d8d5212fb74a95bba79897c632f7ba24cc9fd35ebf8bf40936a4f56dedc",
+      "english_sha256": "4b0cc8e8ade8fd659534a6f2434f8eda2b49d441d92ddc24d8ca9f3c8eb93f22",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني زيد اللّات بن سعد",
+      "english": "Banu Zayd al-Lat ibn Sa'd",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "زهير بن معاوية",
+      "english": "Zuhayr ibn Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "المراسيل",
+      "english": "al-Marasil",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوحدان",
+      "english": "al-Wuhdan",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن وهب",
+      "english": "Ibn Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمزة بن عبد الواحد بن محمد بن عمرو بن حلحل",
+      "english": "Hamza ibn Abd al-Wahid ibn Muhammad ibn Amr ibn Halhal",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمر",
+      "english": "Muhammad ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "مليكة",
+      "english": "Mulayka",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

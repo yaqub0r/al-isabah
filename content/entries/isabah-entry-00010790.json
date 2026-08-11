@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010790",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10790,
+  "title": {
+    "english": "Arwa bint Abi al-As¹",
+    "arabic_observed": "أروى بنت أبي العاص «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010790-segment-0001",
+      "volume": 8,
+      "scan_page": 9,
+      "printed_page": 8,
+      "reader_page": 3921,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3921",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0009:77f38b370f1dae66",
+      "arabic": "١٠٧٩٠- أروى بنت أبي العاص «١»\nبن أمية بن عبد شمس الأموية، أخت الحكم والد مروان وهي عمة عثمان بن عفان.\nذكرها المستغفريّ، وساق بسنده، من طريق سلمة بن الفضل، عن محمد بن إسحاق أنه ذكرها في النسوة اللاتي بايعن رسول اللَّه ﷺ يوم الفتح.",
+      "english": "10790—Arwa bint Abi al-As¹\n\nIbn Umayya ibn Abd Shams, the Umayyad. She was the sister of al-Hakam, the father of Marwan, and the paternal aunt of Uthman ibn Affan.\n\nAl-Mustaghfiri mentioned her and cited through his chain of transmission, by way of Salama ibn al-Fadl, from Muhammad ibn Ishaq, that he mentioned her among the women who pledged allegiance to the Messenger of Allah, may Allah bless him and grant him peace, on the Day of the Conquest.",
+      "arabic_sha256": "c407eff807d4ecc060a867df9691216f6cf41a9a172e6d3044c69f2029c29229",
+      "english_sha256": "4c238d343c21d3e2bb72ad8e9f406244c70d815ccb2f4da130410df6a302e8b9",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحكم",
+      "english": "al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "مروان",
+      "english": "Marwan ibn al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن عفان",
+      "english": "Uthman ibn Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفريّ",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمة بن الفضل",
+      "english": "Salama ibn al-Fadl",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "يوم الفتح",
+      "english": "Day of the Conquest",
+      "kind": "other"
+    },
+    {
+      "arabic": "أروى",
+      "english": "Arwa bint Kalada ibn Abd Manaf ibn Abd al-Dar ibn Qusay",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

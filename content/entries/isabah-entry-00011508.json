@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011508",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11508,
+  "title": {
+    "english": "Amra bint Marthad⁵",
+    "arabic_observed": "عمرة بنت مرثد «٥»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011508-segment-0001",
+      "volume": 8,
+      "scan_page": 246,
+      "printed_page": 245,
+      "reader_page": 4158,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4158",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0246:22e2ad2466062f85",
+      "arabic": "١١٥٠٨- عمرة بنت مرثد «٥»\n: أخت أسماء. ذكرها ابن حبيب في المبايعات.",
+      "english": "11508—Amra bint Marthad⁵\nThe sister of Asma. Ibn Habib included her among the women who pledged allegiance.",
+      "arabic_sha256": "c039f36163796954d5c786f5c2aecc1859997f8b684a03e64f79ae9f644e57bd",
+      "english_sha256": "188bdff7544fd169ff3c1e15f0b5721fed2048f9f85e3888289f358d9866b3fa",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة بنت مرثد",
+      "english": "Amra bint Marthad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء",
+      "english": "Asma",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

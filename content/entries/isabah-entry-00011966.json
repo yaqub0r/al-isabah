@@ -1,0 +1,189 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011966",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11966,
+  "title": {
+    "english": "Umm Habiba:",
+    "arabic_observed": "أم حبيبة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011966-segment-0001",
+      "volume": 8,
+      "scan_page": 374,
+      "printed_page": 373,
+      "reader_page": 4286,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4286",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0374:53e4c1d40f514866",
+      "arabic": "١١٩٦٦- أم حبيبة:\nبزيادة هاء في آخرها، بنت جحش «٣»، أخت زينب زوج النبي ﵌.\n(١) أسد الغابة ت (٧٤٠٦)، تجريد أسماء الصحابة ٢/ ٣١٦.\n(٢) أسد الغابة ت (٧٤٠٧)، الثقات ٣/ ٤٦٢ تجريد أسماء الصحابة ٢/ ٣١٦، تهذيب الكمال ٣/ ١٧٠٠، تلقيح فهوم أهل الأثر ٣٧٢.\n(٣) أسد الغابة ت (٧٤٠٨)، الاستيعاب ت (٣٥٩١) .",
+      "english": "11966—Umm Habiba:\nWith an additional h at the end of the name; daughter of Jahsh,[3] and sister of Zaynab, the wife of the Prophet, may Allah bless him and grant him peace.\n\n(1) Usd al-Ghaba, entry 7406; al-Tajrid, 2/316.\n\n(2) Usd al-Ghaba, entry 7407; al-Thiqat, 3/462; al-Tajrid, 2/316; Tahdhib al-Kamal, 3/1700; Talqih Fuhum Ahl al-Athar, p. 372.\n\n(3) Usd al-Ghaba, entry 7408; al-Isti'ab, entry 3591.",
+      "arabic_sha256": "f0f6b0dd350dd24e75de8c9f7ade88ccab3a76eaf9f9a89bc1e910cfde1cbb90",
+      "english_sha256": "e3ed17cf0b56caf8aa6e199ca2f41c15cad5e3076946f2b604844a490b232def",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011966-segment-0002",
+      "volume": 8,
+      "scan_page": 375,
+      "printed_page": 374,
+      "reader_page": 4287,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4287",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0375:f924b920fb188374",
+      "arabic": "كانت تحت عبد الرحمن بن عوف فاستحيضت، فأخرج مسلم من طريق عمرو بن الحارث، عن الزهري، عن عروة، عن عائشة- أن أم حبيبة بنت جحش ختنة رسول اللَّه ﵌ وتحت عبد الرحمن بن عوف- أنها استحيضت سبع سنين، فاستفتت رسول اللَّه ﵌، فقال ... الحديث.\nورواه معمر، عن الزّهريّ، فقال: أم حبيب بغير هاء. وقال يحيى بن أبي كثير، عن أبي سلمة، عن أم حبيبة. وقال ابن قتيبة، عن الزهري: إن أم حبيب أو أم حبيبة- على الشك.\nوقال محمد بن إسحاق، عن الزهري، عن عروة، عن أم حبيبة بنت جحش- أنها استحيضت، فسألت رسول اللَّه ﵌، فأمرها بالغسل عند كل صلاة، فإن كانت لتخرج من المركن «١» وقد غلبت حمرة الدم على الماء «٢» فتصلي.\nوقد تقدمت رواية ابن أبي ذؤيب في الأسماء في حبيبة.",
+      "english": "She was married to Abd al-Rahman ibn Awf and suffered prolonged non-menstrual bleeding. Muslim transmitted through Amr ibn al-Harith, from al-Zuhri, from Urwa, from Aisha, that Umm Habiba bint Jahsh—the sister-in-law of the Messenger of Allah, may Allah bless him and grant him peace, and the wife of Abd al-Rahman ibn Awf—suffered prolonged non-menstrual bleeding for seven years. She sought a ruling from the Messenger of Allah, may Allah bless him and grant him peace, and he said … the hadith.\n\nMa'mar also related it from al-Zuhri, but said “Umm Habib,” without the final h. Yahya ibn Abi Kathir related it from Abu Salama, from Umm Habiba. Ibn Qutayba related from al-Zuhri: “Umm Habib or Umm Habiba”—expressing doubt.\n\nMuhammad ibn Ishaq related from al-Zuhri, from Urwa, from Umm Habiba bint Jahsh, that she suffered prolonged non-menstrual bleeding and asked the Messenger of Allah, may Allah bless him and grant him peace, about it. He instructed her to perform the ritual bath before every prayer. She would indeed emerge from the washbasin,(1) when the redness of the blood had overwhelmed the water, and then pray.(2)\n\nThe narration of Ibn Abi Dhi'b has already appeared in the section on names, under Habiba.",
+      "arabic_sha256": "70654e22fbd7cdc5aa11f549c3f863bd8762f8f532261125c463c4c9e7c5b70e",
+      "english_sha256": "fa4027d339b1fe3df3a3928b1d437fb3f987c963ad0b9539c9e11b58c23296ca",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم حبيب مولاة أم عطية",
+      "english": "Umm Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد الرحمن بن عوف",
+      "english": "Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن الحارث",
+      "english": "Amr ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة بنت جحش",
+      "english": "Umm Habiba bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "معمر",
+      "english": "Ma'mar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيب",
+      "english": "Umm Habib bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن أبي كثير",
+      "english": "Yahya ibn Abi Kathir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سلمة",
+      "english": "Abu Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن قتيبة",
+      "english": "Ibn Qutayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي ذؤيب",
+      "english": "Ibn Abi Dhi'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة",
+      "english": "Habiba bint Jahsh",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "firstlight.source-alignment-report.v1",
+  "generated_at": "2026-08-06T05:46:37Z",
+  "work_id": "ibn_hajar_isabah_v1",
+  "volume": 8,
+  "scan_page_range": [
+    4,
+    494
+  ],
+  "reader_page_range": [
+    3916,
+    4406
+  ],
+  "page_count": 491,
+  "canonical_usul_pages": 490,
+  "canonical_facsimile_transcription_pages": [
+    4
+  ],
+  "canonical_facsimile_correction_pages": [
+    6,
+    35,
+    84,
+    161,
+    287,
+    366,
+    369,
+    404
+  ],
+  "fallback_pages": [],
+  "heading_pages_checked": 431,
+  "heading_mismatches": [],
+  "entry_sequence_audit": {
+    "expected_first": 10759,
+    "expected_last": 12308,
+    "expected_count": 1550,
+    "observed_count": 1550,
+    "observed_first": 10759,
+    "observed_last": 12308,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "duplicates": [],
+    "reversal_count": 0,
+    "reversals": [],
+    "out_of_range_count": 0,
+    "out_of_range": [],
+    "pass": true
+  },
+  "mapping": "reader_page = scan_page + 3912",
+  "output": "firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.usul-aligned-source.jsonl",
+  "output_sha256": "f7f5cd87489283249750778aec2a666300d731fc982f571380f5aad3e915c0ed",
+  "pass": true
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011706",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11706,
+  "title": {
+    "english": "Lubaysa bint 'Amr ibn Haram al-Ansariyya (2)",
+    "arabic_observed": "لبيسة بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011706-segment-0001",
+      "volume": 8,
+      "scan_page": 302,
+      "printed_page": 301,
+      "reader_page": 4214,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4214",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0302:adc267fe23e1d097",
+      "arabic": "١١٧٠٦- لبيسة بنت عمرو\nبن حرام الأنصارية «٢»، ذكرها ابن حبيب في المبايعات، وقال: أمها أم قراد بنت موهبة بن عدي بن مجدعة بن حازم، تزوجها أبو ثابت بن عبد بن\n(١) أسد الغابة ت (٧٢٥٥) .\n(٢) أسد الغابة ت (٧٢٥٧) .",
+      "english": "11706—Lubaysa bint 'Amr ibn Haram al-Ansariyya (2)\n\nIbn Habib mentioned her among the women who pledged allegiance. He said that her mother was Umm Qurad bint Mawhiba ibn 'Adi ibn Mujadda'a ibn Hazim. She was married to Abu Thabit ibn 'Abd ibn—\n\n(1) Usd al-Ghaba, entry 7255.\n\n(2) Usd al-Ghaba, entry 7257.",
+      "arabic_sha256": "d0e4786b7c21e0943061d99e7e3c818c81dbc5b695fc4dd3711c43d7f01353c3",
+      "english_sha256": "d49bd211951ff7c2c16b5c08647555ff16ef021c263914d17c67c5bdbbc009da",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011706-segment-0002",
+      "volume": 8,
+      "scan_page": 303,
+      "printed_page": 302,
+      "reader_page": 4215,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4215",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0303:93e173b6aa8ba109",
+      "arabic": "عبد عمرو»\nبن قيظي، ثم تزوجها قيس بن قيس بن لوذان.",
+      "english": "Abd Amr[1] ibn Qayzi; then Qays ibn Qays ibn Lawdhan married her.",
+      "arabic_sha256": "38e86b9aa898be5b5fa74ff0a0daed260722da229d4e2791ca59c541b4de7aea",
+      "english_sha256": "a918b1d209b1f8158747df0ec020edf82311ddb2d35fb285a131dd23f097b295",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "لبيسة بنت عمرو بن حرام الأنصارية",
+      "english": "Lubaysa bint 'Amr ibn Haram al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم قراد بنت موهبة بن عدي بن مجدعة بن حازم",
+      "english": "Umm Qurad bint Mawhiba ibn 'Adi ibn Mujadda'a ibn Hazim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو ثابت بن عبد بن",
+      "english": "Abu Thabit ibn 'Abd ibn 'Abd 'Amr ibn Qayzi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "قيس بن قيس بن لوذان",
+      "english": "Qays ibn Qays ibn Lawdhan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

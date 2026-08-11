@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011641",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11641,
+  "title": {
+    "english": "Qubaysa bint Sayfi ibn Sakhr ibn Khansa', wife of Bishr ibn al-Bara' ibn Ma'rur.",
+    "arabic_observed": "قبيسة بنت صيفي"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011641-segment-0001",
+      "volume": 8,
+      "scan_page": 284,
+      "printed_page": 283,
+      "reader_page": 4196,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4196",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0284:5eef448d5fad577f",
+      "arabic": "١١٦٤١- قبيسة بنت صيفي\nبن صخر بن خنساء، زوج بشر بن البراء بن معرور.\nذكرها هكذا في التّجريد، وقد تقدم في الزّاي زينب بنت صيفي، ولعلها أختها.",
+      "english": "11641—Qubaysa bint Sayfi ibn Sakhr ibn Khansa', wife of Bishr ibn al-Bara' ibn Ma'rur.\n\nShe is mentioned in this form in al-Tajrid. Zaynab bint Sayfi has already appeared under the letter Zay, and perhaps Qubaysa was her sister.",
+      "arabic_sha256": "a7d87d25fa0fcdcb8f5665c16b9d920b1ddb51e08c1b3c4dc44fbbb32754c181",
+      "english_sha256": "519c253d053b135eb8bb8b99fe20bd105859f5d234aaf7f92351b2281e3788d4",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "التّجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "قبيسة بنت صيفي بن صخر بن خنساء",
+      "english": "Qubaysa bint Sayfi ibn Sakhr ibn Khansa'",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشر بن البراء بن معرور",
+      "english": "Bishr ibn al-Bara' ibn Ma'rur",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت صيفي",
+      "english": "Zaynab bint Sayfi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

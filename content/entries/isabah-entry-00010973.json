@@ -1,0 +1,110 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010973",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10973,
+  "title": {
+    "english": "Judama",
+    "arabic_observed": "جدامة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010973-segment-0001",
+      "volume": 8,
+      "scan_page": 63,
+      "printed_page": 62,
+      "reader_page": 3975,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3975",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0063:f6be2baa3fc1083a",
+      "arabic": "١٠٩٧٣- جدامة ،\nبنت جندل «١» .\nذكرها ابن إسحاق فيمن هاجر من نساء بني غنم بن دودان بن أسد بن خزيمة من أهل مكة حلفاء بني عبد شمس. وذكر الطبري في الذيل أنها هي بنت وهب الآتي ذكرها، فإن المجدمين هم العرب، قالوا: هي بنت وهب. وقال ابن سعد: أسلمت قديما بمكة، وبايعت، وهاجرت إلى المدينة، وكانت تحت أنيس بن قتادة [الأنصاري الأوسي، وهو بدري، استشهد بأحد. وتبعه ابن عبد البر. وقيل: التي كانت تحت أنيس بن قتادة] خنساء بنت خدام، ولا مانع أن يكونا جميعا زوجتيه.",
+      "english": "10973—Judama\n\nbint Jundal.¹\n\nIbn Ishaq mentioned her among the women of Banu Ghanm ibn Dudan ibn Asad ibn Khuzayma who emigrated, being residents of Mecca and confederates of Banu Abd Shams. Al-Tabari mentioned in al-Dhayl that she was the same as bint Wahb, whose entry follows, for it was the hadith scholars who said of her, “She is bint Wahb.” Ibn Sa'd said: She embraced Islam early in Mecca, pledged allegiance, and emigrated to Medina. She was married to Unays ibn Qatada [the Ansari of Aws, who participated at Badr and was martyred at Uhud. Ibn Abd al-Barr followed Ibn Sa'd in this. Another report identifies the woman married to Unays ibn Qatada as follows:] Khansa bint Khidam. There is nothing to preclude both women from having been his wives.",
+      "arabic_sha256": "b0c6c7c0532998e3482a6c1c55308171a3b6c4811458b16aae590e2df35ad13d",
+      "english_sha256": "60a1432c2a8c11b2984f36b275419f34657c718f1ba75a37e0defa31487be175",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني غنم بن دودان بن أسد بن خزيمة",
+      "english": "Banu Ghanm ibn Dudan ibn Asad ibn Khuzayma",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "بني عبد شمس",
+      "english": "Banu Abd Shams",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الطبري",
+      "english": "al-Tabari",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "أنيس بن قتادة",
+      "english": "Unays ibn Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأوسي",
+      "english": "Aws",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن عبد البر",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "خنساء بنت خدام",
+      "english": "Khansa bint Khidam",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

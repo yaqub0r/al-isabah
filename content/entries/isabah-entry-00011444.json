@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011444",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11444,
+  "title": {
+    "english": "Tu'ayma bint Jarr.¹",
+    "arabic_observed": "طعيمة بنت جر «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011444-segment-0001",
+      "volume": 8,
+      "scan_page": 226,
+      "printed_page": 225,
+      "reader_page": 4138,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4138",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0226:d285a2065eaa927a",
+      "arabic": "١١٤٤٤- طعيمة بنت جر «١»\n. استدركها في «التّجريد»، وهي التي تقدمت في طعيمة بالتصغير بنت جريج، فسقط بعض اسم والدها.\nحرف الظاء المشالة\nالقسم الأول",
+      "english": "11444—Tu'ayma bint Jarr.¹\n\nThe author of al-Tajrid supplied her as an omitted entry. She is the same woman previously mentioned as Tu'ayma—the diminutive form—bint Jurayj; part of her father’s name was dropped.\n\nTHE LETTER ZA WITH THE UPRIGHT STROKE\n\nSECTION ONE",
+      "arabic_sha256": "641d3084cccf0a8432f15ec01687fa4624d70881fbac0d7afd3a6571ff0976e1",
+      "english_sha256": "ce7a43e045a6b4e2b71c727f1437c85f5873e8e7e6af9d67681802d9f90f71fe",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "طعيمة بنت جر",
+      "english": "Tu'ayma bint Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "firstlight.translation-volume-plan.v1",
+  "issue": 971,
+  "work_id": "ibn_hajar_isabah_v1",
+  "volume": 8,
+  "source_language": "ar",
+  "target_language": "en",
+  "authority": "unapproved_machine_research_translation",
+  "prompt_version": "isabah-ar-en-faithful-v2-complete-apparatus",
+  "pdf_scan_pages": 537,
+  "substantive_scan_page_range": [4, 494],
+  "substantive_pages": 491,
+  "index_scan_page_range": [495, 537],
+  "index_policy": "Preserve as source metadata; do not translate page-reference lists.",
+  "waves": [
+    {"wave": 1, "scan_page_range": [4, 53], "pages": 50, "state": "draft_complete_unreviewed"},
+    {"wave": 2, "scan_page_range": [54, 103], "pages": 50, "state": "draft_complete_unreviewed", "contains": ["Khadijah bint Khuwaylid main entry"]},
+    {"wave": 3, "scan_page_range": [104, 153], "pages": 50, "state": "draft_complete_unreviewed", "contains": ["Khadijah bint Khuwaylid main entry continuation"]},
+    {"wave": 4, "scan_page_range": [154, 203], "pages": 50, "state": "draft_complete_unreviewed"},
+    {"wave": 5, "scan_page_range": [204, 253], "pages": 50, "state": "draft_complete_unreviewed"},
+    {"wave": 6, "scan_page_range": [254, 303], "pages": 50, "state": "draft_complete_unreviewed"},
+    {"wave": 7, "scan_page_range": [304, 353], "pages": 50, "state": "draft_complete_unreviewed"},
+    {"wave": 8, "scan_page_range": [354, 403], "pages": 50, "state": "draft_complete_unreviewed"},
+    {"wave": 9, "scan_page_range": [404, 453], "pages": 50, "state": "draft_complete_unreviewed"},
+    {"wave": 10, "scan_page_range": [454, 494], "pages": 41, "state": "draft_complete_unreviewed"}
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011692",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11692,
+  "title": {
+    "english": "Kanud",
+    "arabic_observed": "كنود:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011692-segment-0001",
+      "volume": 8,
+      "scan_page": 298,
+      "printed_page": 297,
+      "reader_page": 4210,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4210",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0298:f8ea76f8e004b883",
+      "arabic": "١١٦٩٢- كنود:\nأم سارة. تقدمت في سارة.\n(١) أسد الغابة ت (٧٢٤٨)، الثقات ٣/ ٣٥٨- تجريد أسماء الصحابة ٢/ ٣٠٠.\n(٢) أسد الغابة ت (٧٢٤٩)، الاستيعاب ت (٣٥٣١)، الثقات ٣/ ٣٥٨، أعلام النساء ٤/ ٢٤٥- تجريد أسماء الصحابة ٢/ ٣٠٠.\n(٣) في أ: كليم.\n(٤) أسد الغابة ت (٧٢٥٠)، تجريد أسماء الصحابة ٢/ ٣٠١.\n(٥) في أ: زينب بنت ثعلبة.\n(٦) في أ: دعتني أخي كليبة.\n(٧) الزّربيّة: الطنفسة، وقيل: البساط ذو الخمل وتكسر زايها وتفتح وتضم، وجمعها زرابيّ. النهاية ٢/ ٣٠٠.\n(٨) أسد الغابة ت (٧٢٥١)، تجريد أسماء الصحابة ٢/ ٣٠١.",
+      "english": "11692 — Kanud\n\nUmm Sara. She was previously mentioned under Sara.\n\n[1] Usd al-Ghaba, entry 7248; al-Thiqat, 3/358; al-Tajrid, 2/300.\n\n[2] Usd al-Ghaba, entry 7249; al-Isti'ab, entry 3531; al-Thiqat, 3/358; A'lam al-Nisa, 4/245; al-Tajrid, 2/300.\n\n[3] In manuscript A: “Kulaym.”\n\n[4] Usd al-Ghaba, entry 7250; al-Tajrid, 2/301.\n\n[5] In manuscript A: “Zaynab bint Tha'laba.”\n\n[6] In manuscript A: “My brother Kulayba summoned me.”\n\n[7] A zarbiyya is a rug; it is also said to be a carpet with pile. Its initial zay may be pronounced with kasra, fatha, or damma, and its plural is zarabi. Al-Nihaya, 2/300.\n\n[8] Usd al-Ghaba, entry 7251; al-Tajrid, 2/301.",
+      "arabic_sha256": "9642c0d4c7c058f19236cab8bc7d9c6a603ad0dc36b9a533b4b33ab82ee6c5cb",
+      "english_sha256": "964f547ea7a253ee9226dc9c345fa31a00a74c75948be02a0b50b931bb5a4b9e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "كليم",
+      "english": "Kulaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء",
+      "english": "Asma",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنود",
+      "english": "Kanud",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سارة",
+      "english": "Umm Sara",
+      "kind": "person"
+    },
+    {
+      "arabic": "سارة",
+      "english": "Sara",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "زينب بنت ثعلبة",
+      "english": "Zaynab bint Tha'laba",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "manuscript variant",
+      "arabic_span": "في أ: كليم",
+      "explanation": "The supplied evidence does not establish where “Kulaym” is intended to be substituted or what relationship it has to the surrounding wording. The note is therefore translated diplomatically without conjectural expansion.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0298:f8ea76f8e004b883"
+    },
+    {
+      "category": "manuscript variant",
+      "arabic_span": "دعتني أخي كليبة",
+      "explanation": "The manuscript-A wording is grammatically irregular: the feminine verb does not agree naturally with “my brother,” and the witnesses do not establish a secure correction. It has been translated literally and retained as an unresolved variant.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0298:f8ea76f8e004b883"
+    },
+    {
+      "category": "textual identification",
+      "arabic_span": "زينب بن ثعلبة / زينب بنت ثعلبة",
+      "explanation": "The canonical text twice reads Zaynab, with manuscript A varying only ibn to bint. The Urdu and Usd al-Ghaba collateral identify the person as Zubayb ibn Tha'laba, but those witnesses are not manuscripts of al-Isabah. The canonical readings have therefore been retained rather than emended.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0298:f8ea76f8e004b883"
+    },
+    {
+      "category": "textual wording",
+      "arabic_span": "دعتني أم كليبة بنت برثن العنبرية",
+      "explanation": "The printed text yields “Umm Kulayba … summoned me,” whereas the collateral report supports “My mother, Kulayba … summoned me.” Because the collateral is not an al-Isabah manuscript and the printed wording remains translatable, the canonical reading has been retained.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0298:f8ea76f8e004b883"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

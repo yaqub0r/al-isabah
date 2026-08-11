@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011637",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11637,
+  "title": {
+    "english": "Fakiha bint Yasar:[5]",
+    "arabic_observed": "فكيهة بنت يسار «٥»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011637-segment-0001",
+      "volume": 8,
+      "scan_page": 283,
+      "printed_page": 282,
+      "reader_page": 4195,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4195",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0283:bb967d6a78c7d53b",
+      "arabic": "١١٦٣٧- فكيهة بنت يسار «٥»\n: امرأة خطّاب بن الحارث الجمحيّ.\nذكرها ابن إسحاق فيمن أسلم قديما من المهاجرات. وأخرج ذلك محمد بن عثمان بن أبي شيبة في تاريخه، وأبو نعيم من طريقه، من رواية زياد الكبائيّ، عن ابن إسحاق، وقال ابن سعد: أسلمت قديما بمكة وبايعت وهاجرت الهجرتين.\nالقسم الثاني",
+      "english": "11637—Fakiha bint Yasar:[5]\n\nThe wife of Khattab ibn al-Harith al-Jumahi.\n\nIbn Ishaq mentioned her among the female Emigrants who embraced Islam at an early date. Muhammad ibn Uthman ibn Abi Shayba recorded this in his History, and Abu Nu'aym transmitted it by way of him, from the narration of Ziyad al-Kaba'i, from Ibn Ishaq. Ibn Sa'd said, “She embraced Islam at an early date in Mecca, pledged allegiance, and made both emigrations.”\n\nSECTION TWO",
+      "arabic_sha256": "16a2e52131a77c871b0c0d537784c6b7f5d90328cab0c28e72abd4e2778ec3f3",
+      "english_sha256": "dcb0ec4768bcea02dc6371cd2988badcf16cd4af4b167c1701a2d9543f97bbf7",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "فكيهة بنت يسار",
+      "english": "Fakiha bint Yasar",
+      "kind": "person"
+    },
+    {
+      "arabic": "خطاب بن الحارث الجمحي",
+      "english": "Khattab ibn al-Harith al-Jumahi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عثمان بن أبي شيبة",
+      "english": "Muhammad ibn Uthman ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "زياد الكبائي",
+      "english": "Ziyad al-Kaba'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "تاريخه",
+      "english": "History",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

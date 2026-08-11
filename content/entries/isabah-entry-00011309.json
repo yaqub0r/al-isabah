@@ -1,0 +1,200 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011309",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11309,
+  "title": {
+    "english": "Salama bint al-Hurr",
+    "arabic_observed": "سلامة بنت الحر"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011309-segment-0001",
+      "volume": 8,
+      "scan_page": 182,
+      "printed_page": 181,
+      "reader_page": 4094,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4094",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0182:3dd89ad41d329bb3",
+      "arabic": "١١٣٠٩- سلامة بنت الحر\nالفزارية «١»، وقيل الأزدية، وقيل الجعفية.\nأخرج حديثها ابن سعد وابن أبي عاصم، من طريق أم غراب مولاة لبني فزارة عن مولاة لهم يقال لها عقيلة، عن سلامة بنت الحر، أخت خرشة بن الحر، قالت: سمعت رسول اللَّه ﷺ يقول: «يأتي على النّاس زمان يقومون ساعة لا يجدون إماما يصلّي بهم» .\nوذكرها أبو عمر، فقال: وحديثها عند نساء أهل الكوفة منه هذا، ومنه «يكون في ثقيف كذّاب ومبير.» «٢»\nومنه حديث أم داود الراسبية، قالت: سمعت سلامة بنت الحر أخت خرشة بن الحر تقول ... فذكر الحديث الآتي في سلامة الضبية، وإذا كانت أخت خرشة تبين أنها فزارية.\n(١) الثقات ٣/ ١٨٤، تجريد أسماء الصحابة ٢/ ٢٧٦، تقريب التهذيب ٢/ ٦٠١، تهذيب التهذيب ١٢/ ٤٢٧، الكاشف ٢/ ٤٧٣، تهذيب الكمال ٣/ ١٦٨٦، خلاصة تهذيب الكمال ٣/ ٣٨٣، أسد الغابة: ت (٧٠٠٠)، الاستيعاب: ت (٣٤٢٥) .\n(٢) أخرجه البخاري في التاريخ الكبير ٣/ ١٩١ وأورده المتقي الهندي في كنز العمال حديث رقم ٣٨٣٨٩ وعزاه لنعيم بن حماد عن أسماء بنت أبي بكر.",
+      "english": "11309 — Salama bint al-Hurr\n\nal-Fazariyya (1); she is also said to have been al-Azdiyya, and also said to have been al-Ju'fiyya.\n\nIbn Sa'd and Ibn Abi 'Asim transmitted her hadith through Umm Ghurab, a client woman of Banu Fazara, from a female client of theirs called 'Aqila, from Salama bint al-Hurr, the sister of Kharasha ibn al-Hurr. She said: I heard the Messenger of Allah, may Allah bless him and grant him peace, say: “A time will come upon the people when they will stand for an hour without finding an imam to lead them in prayer.”\n\nAbu 'Umar mentioned her and said: Her hadith is preserved among the women of Kufa. Part of it is this report, and another part is: “Among Thaqif there will be a liar and a destroyer.” (2)\n\nAnother part is the hadith of Umm Dawud al-Rasibiyya, who said: I heard Salama bint al-Hurr, the sister of Kharasha ibn al-Hurr, say … He then cited the hadith that will appear under Salama al-Dabiyya. If she was Kharasha's sister, it becomes clear that she was Fazari.\n\n(1) al-Thiqat, 3/184; al-Tajrid, 2/276; Taqrib al-Tahdhib, 2/601; Tahdhib al-Tahdhib, 12/427; al-Kashif, 2/473; Tahdhib al-Kamal, 3/1686; Khulasat Tahdhib al-Kamal, 3/383; Usd al-Ghaba, entry 7000; al-Isti'ab, entry 3425.\n\n(2) al-Bukhari transmitted it in al-Tarikh al-Kabir, 3/191. al-Muttaqi al-Hindi included it in Kanz al-'Ummal, hadith no. 38389, and attributed it to Nu'aym ibn Hammad, from Asma' bint Abi Bakr.",
+      "arabic_sha256": "ec101dc2fd49a32a91a751ca944af1f8c9515cb5142212a76e0b29823659ddbc",
+      "english_sha256": "a0bce5791814057b22145f92e09441cb10d1a04be5f21aef871f8ebb269f20f2",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "سلامة بنت الحر",
+      "english": "Salama bint al-Hurr",
+      "kind": "person"
+    },
+    {
+      "arabic": "فزارة",
+      "english": "Fazara",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأزدية",
+      "english": "Azd",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الجعفية",
+      "english": "Ju'fa",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi 'Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم غراب",
+      "english": "Umm Ghurab",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني فزارة",
+      "english": "Banu Fazara",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عقيلة",
+      "english": "'Aqila",
+      "kind": "person"
+    },
+    {
+      "arabic": "خرشة بن الحر",
+      "english": "Kharasha ibn al-Hurr",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكوفة",
+      "english": "Kufa",
+      "kind": "place"
+    },
+    {
+      "arabic": "ثقيف",
+      "english": "Thaqif",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم داود الراسبية",
+      "english": "Umm Dawud al-Rasibiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلامة الضبية",
+      "english": "Salama al-Dabiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "التاريخ الكبير",
+      "english": "al-Tarikh al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-'Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "نعيم بن حماد",
+      "english": "Nu'aym ibn Hammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت أبي بكر",
+      "english": "Asma' bint Abi Bakr",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

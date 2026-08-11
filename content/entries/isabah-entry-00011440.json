@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011440",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11440,
+  "title": {
+    "english": "Tayba, mother of Abu Musa al-Ash'ari:",
+    "arabic_observed": "طيبة أم أبي موسى الأشعري:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011440-segment-0001",
+      "volume": 8,
+      "scan_page": 225,
+      "printed_page": 224,
+      "reader_page": 4137,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4137",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0225:a5959950db0cf411",
+      "arabic": "١١٤٤٠- طيبة أم أبي موسى الأشعري:\nتأتي في الظاء المعجمة.",
+      "english": "11440 — Tayba, mother of Abu Musa al-Ash'ari:\n\nShe will appear under the dotted za.",
+      "arabic_sha256": "ecea64031e112e69e25e626433e6b0bedc39465f8d7388b813793619c14be4a5",
+      "english_sha256": "fbb51eb7c94fe885bd6b23a1b31008df1f64ea5dc4a4e3d17916b8f64fa804ef",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "طيبة أم أبي موسى الأشعري",
+      "english": "Tayba Umm Abu Musa al-Ash'ari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي موسى الأشعري",
+      "english": "Abu Musa al-Ash'ari",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

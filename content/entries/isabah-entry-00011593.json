@@ -1,0 +1,164 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011593",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11593,
+  "title": {
+    "english": "Fatima bint Hamza",
+    "arabic_observed": "فاطمة بنت حمزة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011593-segment-0001",
+      "volume": 8,
+      "scan_page": 271,
+      "printed_page": 270,
+      "reader_page": 4183,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4183",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0271:dd5ecaeb6c9be423",
+      "arabic": "١١٥٩٣- فاطمة بنت حمزة\nبن عبد المطلب «٣» بن هاشم الهاشمية، أمّها سلمى بنت عميس.\nقال ابن السّكن: تكنى أم الفضل. وقال الدار الدّارقطنيّ في كتاب الإخوة: يقال لها أم أبيها. زوجها النبيّ ﵌ سلمة بن أبي سلمة بن عبد الأسد.\nوأخرج ابن أبي عاصم، من طريق أبي فاختة، عن جعدة بن هبيرة، عن علي، قال: أهدي إلى رسول اللَّه\n(١) أسد الغابة ت (٧١٧٨)، الاستيعاب ت (٣٥٠٢) .\n(٢) أسد الغابة ت (٧١٧٩)، الاستيعاب ت (٣٥٠٣)، بقي بن مخلد ٤٣٠.\n(٣) أسد الغابة ت (٧١٨٠) .",
+      "english": "11593—Fatima bint Hamza\n\nibn Abd al-Muttalib[3] ibn Hashim, the Hashimite woman. Her mother was Salma bint Umays.\n\nIbn al-Sakan said: Her kunya was Umm al-Fadl. Al-Daraqutni said in the Book of Siblings: She was called Umm Abiha. The Prophet (may Allah bless him and grant him peace) married her to Salama ibn Abi Salama ibn Abd al-Asad.\n\nIbn Abi Asim transmitted, by way of Abu Fakhita, from Ja'da ibn Hubayra, from Ali, who said: There was presented to the Messenger of Allah—\n\n[1] Usd al-Ghaba, biography no. 7178; al-Isti'ab, biography no. 3502.\n\n[2] Usd al-Ghaba, biography no. 7179; al-Isti'ab, biography no. 3503; Baqi ibn Makhlad, 430.\n\n[3] Usd al-Ghaba, biography no. 7180.",
+      "arabic_sha256": "64b1d16d7db989083bc4e81444e9b3ee8415636a9dcb4ebde30bd98befe699d3",
+      "english_sha256": "6253ab35deea92699f79c1b32eedcba31d44f4e4688dd487a8df392187e2011b",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011593-segment-0002",
+      "volume": 8,
+      "scan_page": 272,
+      "printed_page": 271,
+      "reader_page": 4184,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4184",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0272:42e7366c47899a52",
+      "arabic": "﵌ حلة إستبرق، فقال: «اجعلها خمرا بين الفواطم» «١»، فشققتها أربعة أخمرة: خمارا لفاطمة بنت رسول اللَّه ﵌، وخمارا لفاطمة بنت أسد، وخمارا لفاطمة بنت حمزة، ولم يذكر الرابعة.\nقلت: ولعلها امرأة عقيل الآتية قريبا.",
+      "english": "…may Allah bless him and grant him peace—with a robe of heavy brocade. He said, “Make it into head-coverings for the Fatimas.”[1] So I tore it into four head-coverings: one for Fatima, daughter of the Messenger of Allah—may Allah bless him and grant him peace—one for Fatima bint Asad, and one for Fatima bint Hamza. He did not mention the fourth.\n\nI say: Perhaps she was Aqil's wife, whose entry will appear shortly.",
+      "arabic_sha256": "27b8bae02b22738c978508f91cc130687251034de93fd7615ffb0a0746dc0b2e",
+      "english_sha256": "95890f3faf47c366e3e45ceca5e945758ed1db13a84cf53ffcd8a447a72f348c",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأسدية",
+      "english": "Asad",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الهاشمية",
+      "english": "Banu Hashim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "سلمى بنت عميس",
+      "english": "Salma bint Umays",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن السّكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الفضل",
+      "english": "Umm al-Fadl",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدارقطنيّ",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الإخوة",
+      "english": "Book of Siblings",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم أبيها",
+      "english": "Umm Abiha",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمة بن أبي سلمة بن عبد الأسد",
+      "english": "Salama ibn Abi Salama ibn Abd al-Asad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو فاختة",
+      "english": "Abu Fakhita",
+      "kind": "person"
+    },
+    {
+      "arabic": "جعدة بن هبيرة",
+      "english": "Ja'da ibn Hubayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "فاطمة بنت رسول اللَّه",
+      "english": "Fatima bint Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت أسد",
+      "english": "Fatima bint Asad",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت حمزة",
+      "english": "Fatima bint Hamza",
+      "kind": "person"
+    },
+    {
+      "arabic": "عقيل",
+      "english": "Aqil",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمزة",
+      "english": "Hamza",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

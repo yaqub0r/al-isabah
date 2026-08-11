@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012062",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12062,
+  "title": {
+    "english": "Umm Sa'id:",
+    "arabic_observed": "أم سعيد:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012062-segment-0001",
+      "volume": 8,
+      "scan_page": 404,
+      "printed_page": 403,
+      "reader_page": 4316,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4316",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0404:a8d9cc4290690880",
+      "arabic": "١٢٠٦٢- أم سعيد:\nوالدة سعيد بن زيد بن عمرو بن نفيل- يكتب من [....] .\nباب الكافور في كتاب الجنائز للبيهقيّ في السّنن الكبير.",
+      "english": "12062—Umm Sa'id:\n\nthe mother of Sa'id ibn Zayd ibn Amr ibn Nufayl—to be copied from [....]. The “Chapter on Camphor” in the Book of Funerals in al-Bayhaqi's al-Sunan al-Kabir.",
+      "arabic_sha256": "64ec8fef68193c79d0482feca0c2e5b5fd2757446215cf9b3e24e582087a1d9f",
+      "english_sha256": "77c44bf19f7b669b9c5f7a6e9807decc6fa82555cf706ccbed2b4dc07ace645a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سعيد",
+      "english": "Sa'id ibn al-Musayyib ibn Hazn",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سعيد",
+      "english": "Umm Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن زيد بن عمرو بن نفيل",
+      "english": "Sa'id ibn Zayd ibn Amr ibn Nufayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "باب الكافور",
+      "english": "Chapter on Camphor",
+      "kind": "work"
+    },
+    {
+      "arabic": "كتاب الجنائز",
+      "english": "Book of Funerals",
+      "kind": "work"
+    },
+    {
+      "arabic": "البيهقيّ",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السّنن الكبير",
+      "english": "al-Sunan al-Kabir",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011140",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11140,
+  "title": {
+    "english": "Khawla,⁴",
+    "arabic_observed": "خولة «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011140-segment-0001",
+      "volume": 8,
+      "scan_page": 123,
+      "printed_page": 122,
+      "reader_page": 4035,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4035",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0123:39414799091303d0",
+      "arabic": "١١١٤٠- خولة «٤»\n، غير منسوبة.\nأفردها الطّبرانيّ. وقال أبو نعيم: أظنها امرأة حمزة.\nأخرج ابن أبي عاصم، والحسن ابن سفيان، والطّبرانيّ، من طريق بقيّة، عن سليمان بن عبد الرحمن بن أبي الجون، عن أبي\n(١) أخرجه البيهقي في السنن الكبرى ٢/ ١٠٢، ١٠٣.\n(٢) أخرجه أبو داود في السنن ٢/ ٤٩٤ عن أخت لحذيفة كتاب الخاتم باب ما جاء في الذهب للنساء حديث رقم ٤٢٣٧ والنسائي في السنن ٨/ ١٥٦، ١٥٧ عن أخت لحذيفة كتاب الزينة باب الكراهية للنساء في إظهار الحلي والذهب (٣٩) حديث رقم ٥١٣٧، ٥١٣٨ وأحمد في المسند ٥/ ٣٩٨، ٦/ ٣٥٧ والدارميّ في السنن ٣/ ٢٧٩، والبيهقي في السنن الكبرى ٤/ ١٤١.\n(٣) أعلام النساء ١/ ٣٢٩، تجريد أسماء الصحابة ٢/ ٢٦٤.\n(٤) أسد الغابة (٦٩٠٠) .",
+      "english": "11140 - Khawla,⁴\n\nwith no lineage given.\n\nAl-Tabarani gave her a separate entry. Abu Nu'aym said: “I think she was Hamza's wife.”\n\nIbn Abi 'Asim, al-Hasan ibn Sufyan, and al-Tabarani transmitted it by way of Baqiyya, from Sulayman ibn Abd al-Rahman ibn Abi al-Jawn, from Abu ...\n\n¹ Transmitted by al-Bayhaqi in al-Sunan al-Kubra, 2/102–103.\n\n² Transmitted by Abu Dawud in Sunan Abi Dawud, 2/494, from a sister of Hudhayfa, Book of the Seal-Ring, chapter “What Has Been Related Concerning Gold for Women,” hadith no. 4237; by al-Nasa'i in Sunan al-Nasa'i, 8/156–157, from a sister of Hudhayfa, Book of Adornment, chapter “The Dislike of Women Displaying Jewelry and Gold” (39), hadith nos. 5137–5138; in Musnad Ahmad, 5/398 and 6/357; by al-Darimi in Sunan al-Darimi, 3/279; and by al-Bayhaqi in al-Sunan al-Kubra, 4/141.\n\n³ A'lam al-Nisa, 1/329; al-Tajrid, 2/264.\n\n⁴ Usd al-Ghaba, no. 6900.",
+      "arabic_sha256": "1df7f51f20c8b966aa64fb4824118ae775b622ce036b4aa2bdea2284e0036018",
+      "english_sha256": "e890f8aadf698cbce476656c2eac4d99cf30d1fb86fa5079a07480de75c28fcc",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011140-segment-0002",
+      "volume": 8,
+      "scan_page": 124,
+      "printed_page": 123,
+      "reader_page": 4036,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4036",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0124:be7e73d2da8c3ecc",
+      "arabic": "سعيد بن العاص، عن معاوية بن إسحاق، عن خولة، قالت: قال رسول اللَّه ﷺ: «ما يقدّس اللَّه أمّة لا يأخذ ضعيفها من قويها حقّه غير متعتع «١» . ومن انصرف عن غريمه وهو راض عنه صلّت عليه دوابّ الأرض ونون البحار «٢»، ومن انصرف عن غريمه وهو ساخط كتب عليه كلّ يوم وليلة وجمعة وشهر وسنة ظلم» .",
+      "english": "Abu Sa'id ibn al-'As, from Mu'awiya ibn Ishaq, from Khawla, who said: The Messenger of Allah, may Allah bless him and grant him peace, said: “Allah does not sanctify a community in which a weak person does not obtain his right from a strong person without being troubled.¹ Whoever departs from his creditor while the latter is pleased with him, the beasts of the earth and the fish of the seas invoke blessings upon him;² and whoever departs from his creditor while the latter is angry with him has an act of injustice recorded against him for every day and night, week, month, and year.”",
+      "arabic_sha256": "1705b9fad405451eeca5bc641d20f7aea3440abc47f3c6b672f3ec74d5365eb2",
+      "english_sha256": "f4643817e773e6bff3632014fe938649d4a5949bbf880d81729547684d8e4327",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "حذيفة",
+      "english": "Hudhayfa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبرانيّ",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة",
+      "english": "Khawla",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمزة",
+      "english": "Hamza",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi 'Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن ابن سفيان",
+      "english": "al-Hasan ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "بقيّة",
+      "english": "Baqiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان بن عبد الرحمن بن أبي الجون",
+      "english": "Sulayman ibn Abd al-Rahman ibn Abi al-Jawn",
+      "kind": "person"
+    },
+    {
+      "arabic": "البيهقي",
+      "english": "al-Bayhaqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن الكبرى",
+      "english": "al-Sunan al-Kubra",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan Abi Dawud",
+      "kind": "work"
+    },
+    {
+      "arabic": "كتاب الخاتم",
+      "english": "Book of the Seal-Ring",
+      "kind": "work"
+    },
+    {
+      "arabic": "باب ما جاء في الذهب للنساء",
+      "english": "What Has Been Related Concerning Gold for Women",
+      "kind": "work"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan al-Nasa'i",
+      "kind": "work"
+    },
+    {
+      "arabic": "كتاب الزينة",
+      "english": "Book of Adornment",
+      "kind": "work"
+    },
+    {
+      "arabic": "باب الكراهية للنساء في إظهار الحلي والذهب",
+      "english": "The Dislike of Women Displaying Jewelry and Gold",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدارميّ",
+      "english": "al-Darimi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan al-Darimi",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو سعيد بن العاص",
+      "english": "Abu Sa'id ibn al-'As",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية بن إسحاق",
+      "english": "Mu'awiya ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Mu'awiya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

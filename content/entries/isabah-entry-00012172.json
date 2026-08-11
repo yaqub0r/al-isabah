@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012172",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12172,
+  "title": {
+    "english": "Umm Atiyya:",
+    "arabic_observed": "أم عطيّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012172-segment-0001",
+      "volume": 8,
+      "scan_page": 439,
+      "printed_page": 438,
+      "reader_page": 4351,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4351",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0439:b37a7630f034f6ea",
+      "arabic": "١٢١٧٢- أم عطيّة:\nالأنصاريّة الخافضة «١» .\nأفردها ابن مندة، والمستغفريّ، عن الأولى. وجوّز أبو موسى أنها هي التي قبلها.\nوأخرج من طريق الوليد بن صالح، عن عبد اللَّه بن عمرو الرقي، عن عبد الملك بن عمير، عن عطية القيظي، قالت: كانت بالمدينة امرأة خافضة تخفض النّساء، فقال لها النبيّ ﵌: «أشمّي ولا تحفي «٢»، فإنّه أسرى للوجه، وأحظى عند الزّوج» .\nقال أبو موسى: يروى هذا المتن بغير هذا الإسناد.",
+      "english": "12172—Umm Atiyya:\n\nThe Ansari circumciser.[1]\n\nIbn Mandah and al-Mustaghfiri entered her separately from the former woman. Abu Musa considered it possible that she was the woman immediately preceding her.\n\nHe transmitted by way of al-Walid ibn Salih, from Abd Allah ibn Amr al-Raqqi, from Abd al-Malik ibn Umayr, from Atiyya al-Qurazi, who said: “There was in Medina a woman who circumcised women. The Prophet—may Allah bless him and grant him peace—said to her: ‘Make only a slight cut and do not remove it entirely,[2] for that is more radiant for the face and more pleasing to the husband.’”\n\nAbu Musa said: “This text is narrated with an isnad other than this one.”",
+      "arabic_sha256": "93daefff2eab338db015f5f0431ce04523f0ac70fa12c16634aa8dc85dd42086",
+      "english_sha256": "78efe8adcb231a7a45a719fdbe1837dc484c0097bef6009ebd06dad4801bbc51",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم عطية",
+      "english": "Umm Atiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوليد بن صالح",
+      "english": "al-Walid ibn Salih",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن عمرو الرقي",
+      "english": "Abd Allah ibn Amr al-Raqqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الملك بن عمير",
+      "english": "Abd al-Malik ibn Umayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطية القيظي",
+      "english": "Atiyya al-Qurazi",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

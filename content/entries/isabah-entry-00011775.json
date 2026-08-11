@@ -1,0 +1,159 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011775",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11775,
+  "title": {
+    "english": "Mulayka al-Ansariyya²:",
+    "arabic_observed": "مليكة الأنصاريّة «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011775-segment-0001",
+      "volume": 8,
+      "scan_page": 321,
+      "printed_page": 320,
+      "reader_page": 4233,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4233",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0321:52231aa80310bf96",
+      "arabic": "١١٧٧٥- مليكة الأنصاريّة «٢»\n: جرى ذكرها في الصّحيحين من رواية مالك عن إسحاق بن عبد اللَّه بن أبي طلحة، عن أنس- أنّ جدته مليكة دعت رسول اللَّه ﷺ إلى طعام صنعته ... الحديث.\nوفيه صلاة النّبيّ ﵌ في بيتهم، قال أنس: فقمت أنا واليتيم من ورائه والعجوز من ورائنا. واختلف في الضّمير في قوله: جدّته، فقيل لأنس، وقيل لإسحاق. وجزم أبو عمر بالثّاني، وقوّاه ابن الأثير، فإن أنسا لم يكن في خالاته من قبل أبيه ولا أمه من تسمّى مليكة.\nقلت: والنّفي الّذي ذكره مردود، فقد ذكر العدويّ في نسب الأنصار أنّ اسم والدة أم سليم مليكة. ولفظه سليم بن ملحان وإخوته: زيد، وحرام، وعباد، وأم سليم، وأم حرام، بنو ملحان، وأمّهم مليكة بنت مالك بن عدي بن زيد مناة بن عدي بن عمرو بن مالك بن النّجّار، وظهر بذلك أنّ الضّمير في قوله: «جدّته» لأنس، وهي جدّته أم أمّه،\n(١) أسد الغابة ت (٧٢٩٧) .\n(٢) الاستيعاب ت (٣٥٤٨) .",
+      "english": "11775—Mulayka al-Ansariyya²:\n\nShe is mentioned in the two Sahih collections, in Malik's narration from Ishaq ibn Abd Allah ibn Abi Talha, from Anas: his grandmother Mulayka invited the Messenger of Allah—may Allah bless him and grant him peace—to a meal that she had prepared … the hadith.\n\nIt includes the Prophet's—may Allah bless him and grant him peace—prayer in their house. Anas said, “The orphan boy and I stood behind him, and the old woman stood behind us.” There is disagreement concerning the antecedent of the pronoun in the phrase “his grandmother.” It has been said to refer to Anas, and it has also been said to refer to Ishaq. Abu Umar asserted the latter categorically, and Ibn al-Athir strengthened that view, on the grounds that among Anas's maternal aunts, whether on his father's or his mother's side, there was no one named Mulayka.\n\nI say: The negation he mentioned is refuted. In his genealogy of the Ansar, al-Adawi stated that the name of Umm Sulaym's mother was Mulayka. His wording is: “Sulaym ibn Milhan and his siblings—Zayd, Haram, Abbad, Umm Sulaym, and Umm Haram—were the children of Milhan. Their mother was Mulayka bint Malik ibn Adi ibn Zayd Manat ibn Adi ibn Amr ibn Malik ibn al-Najjar.” It thereby becomes clear that the pronoun in the phrase “his grandmother” refers to Anas, and that she was his maternal grandmother,\n\n¹ Usd al-Ghaba, entry 7297.\n² al-Isti'ab, entry 3548.",
+      "arabic_sha256": "b8603f9d52d7be32fd24f3de60bada62d781f77a076bac0e07454c9806a735fd",
+      "english_sha256": "dbff1c97c5e6199c01bcbefa810e44b5e0e529b6b5541d9814741ee70063f7f3",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011775-segment-0002",
+      "volume": 8,
+      "scan_page": 322,
+      "printed_page": 321,
+      "reader_page": 4234,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4234",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0322:4ff0546c2e40fb4f",
+      "arabic": "وبطل قول من جعل الضّمير لإسحاق، وبنى عليه أنّ اسم أم سليم مليكة. واللَّه الموفق.",
+      "english": "This also invalidates the view of those who took the pronoun to refer to Ishaq and, on that basis, held that Umm Sulaym's name was Mulayka. Allah is the grantor of success.",
+      "arabic_sha256": "9a9f3b3c042366de82533be4e59c76ed43096087b88eb8e336c7c578a719a4c5",
+      "english_sha256": "a5e1fe5b7b6f8643a739fa3f14b772d4590b4cd9e524be7f19351ddda123014b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مليكة",
+      "english": "Mulayka",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصّحيحين",
+      "english": "the two Sahih collections",
+      "kind": "work"
+    },
+    {
+      "arabic": "مالك",
+      "english": "Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق بن عبد اللَّه بن أبي طلحة",
+      "english": "Ishaq ibn Abd Allah ibn Abi Talha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس",
+      "english": "Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "العدويّ",
+      "english": "al-Adawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم سليم",
+      "english": "Umm Sulaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليم بن ملحان",
+      "english": "Sulaym ibn Milhan",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد",
+      "english": "Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "حرام",
+      "english": "Haram",
+      "kind": "person"
+    },
+    {
+      "arabic": "عباد",
+      "english": "Abbad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حرام",
+      "english": "Umm Haram",
+      "kind": "person"
+    },
+    {
+      "arabic": "ملحان",
+      "english": "Milhan",
+      "kind": "person"
+    },
+    {
+      "arabic": "مليكة بنت مالك بن عدي بن زيد مناة بن عدي بن عمرو بن مالك بن النّجّار",
+      "english": "Mulayka bint Malik ibn Adi ibn Zayd Manat ibn Adi ibn Amr ibn Malik ibn al-Najjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "إسحاق",
+      "english": "Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

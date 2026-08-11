@@ -1,0 +1,135 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011843",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11843,
+  "title": {
+    "english": "Hind bint Athatha",
+    "arabic_observed": "هند بنت أثاثة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011843-segment-0001",
+      "volume": 8,
+      "scan_page": 342,
+      "printed_page": 341,
+      "reader_page": 4254,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4254",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0342:530f841f48a5cef3",
+      "arabic": "١١٨٤٣- هند بنت أثاثة\nبن عباد بن المطّلب بن عبد مناف القرشيّة المطلبيّة «١»، أخت مسطح.\nذكرها ابن إسحاق فيمن أسلم بمكّة، وقال في وقعة أحد: لما قالت هند بنت عتبة تفتخر بقتل حمزة وغيره ممن أصيب من المسلمين: إنها علت على صخرة مشرفة فنادت بأعلى صوتها:\nنحن جزيناكم بيوم بدر ... والحرب بعد الحرب ذات سعر\nما كان عن عتبة لي من صبر ... أبي وعمّي وشقيق بكري\nشفيت وحشيّ غليل صدري ... شفيت نفسي وقضيت نذري «٢»\n[الرجز] قال: فأجابتها هند بنت أثاثة بن المطلب:\nخزيت في بدر وغير بدر ... يا بنت وقّاع عظيم الكفر\nصبّحك اللَّه غداة الفجر ... بالهاشميّين الطّوال الزّهر\nبكلّ قطّاع حسام يفري ... حمزة ليثي وعليّ صقري «٣»\n[الرجز] وأنشد لها ابن إسحاق مرثية في النّبيّ ﵌.\nوقال ابن سعد: أطعمها النبيّ ﵌ بخيبر مع أخيها مسطح ثلاثين وسقا، واغتربت عند أبي جندب، فولدت له ابنته ريطة.",
+      "english": "11843 — Hind bint Athatha\n\nibn Abbad ibn al-Muttalib ibn Abd Manaf, the Qurashi al-Muttalibi woman,(1) and the sister of Mistah.\n\nIbn Ishaq included her among those who embraced Islam in Mecca. In his account of the Battle of Uhud, he said: When Hind bint Utba, boasting of the killing of Hamza and others among the Muslims who had been struck down, climbed atop an overlooking rock, she called out at the top of her voice:\n\nWe repaid you for the day of Badr;\nwar after war blazes fiercely.\nI could have no patience over Utba—\nmy father, my paternal uncle, and my firstborn's full brother.\nYou have quenched, Wahshi, the burning thirst within my breast;\nI have healed my soul and fulfilled my vow.(2)\n\n[rajaz meter]\n\nHe said: Hind bint Athatha ibn al-Muttalib answered her:\n\nMay you be disgraced at Badr and beyond Badr,\nO daughter of one steeped in grievous unbelief!\nMay Allah assail you in the early dawn\nwith the tall, radiant Hashimites,\neach bearing a keen-edged sword that cleaves:\nHamza is my lion, and Ali my falcon.(3)\n\n[rajaz meter]\n\nIbn Ishaq also recited a lament by her for the Prophet—may Allah bless him and grant him peace.\n\nIbn Sa'd said: At Khaybar, the Prophet—may Allah bless him and grant him peace—gave her, together with her brother Mistah, an allotment of thirty wasqs. She married outside her clan, to Abu Jundab, and bore him a daughter, Rayta.",
+      "arabic_sha256": "eb1a9ce32f2c47ceb7be5dab9495c9f2f491d1873eb8c6ea23eaedb410070c67",
+      "english_sha256": "33a2f5ee274006256e8694ce3754f82694f555bc03062c123c6e260f5c2ac486",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مسطح",
+      "english": "Mistah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند بنت عتبة",
+      "english": "Hind bint Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمزة",
+      "english": "Hamza",
+      "kind": "person"
+    },
+    {
+      "arabic": "عتبة",
+      "english": "Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "وحشيّ",
+      "english": "Wahshi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو جندب",
+      "english": "Abu Jundab",
+      "kind": "person"
+    },
+    {
+      "arabic": "ريطة",
+      "english": "Rayta",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "مكّة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    },
+    {
+      "arabic": "القرشيّة",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "المطلبيّة",
+      "english": "Banu al-Muttalib",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الهاشميّين",
+      "english": "Banu Hashim",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

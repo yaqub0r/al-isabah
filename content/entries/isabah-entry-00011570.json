@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011570",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11570,
+  "title": {
+    "english": "Fakhita bint Kharija",
+    "arabic_observed": "فاختة بنت خارجة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011570-segment-0001",
+      "volume": 8,
+      "scan_page": 257,
+      "printed_page": 256,
+      "reader_page": 4169,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4169",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0257:65dbf35993e88518",
+      "arabic": "١١٥٧٠- فاختة بنت خارجة\nبن زيد بن أبي زهير الأنصارية، زوج أبي بكر الصّديق، سمّاها الدّار الدّارقطنيّ في كتاب الإخوة «٣»، وأنها المراد بقول أبي بكر لعائشة عند موته: ذو بطن ابنة خارجة، وقيل اسمها حبيبة.",
+      "english": "11570—Fakhita bint Kharija\n\nibn Zayd ibn Abi Zuhayr, the Ansari woman and wife of Abu Bakr al-Siddiq. In Kitab al-Ikhwa, al-Daraqutni gave this as her name and stated that she was the woman meant by Abu Bakr's words to Aisha as he was dying: “the one in the womb of Kharija's daughter.” It is also said that her name was Habiba.",
+      "arabic_sha256": "f8f7dfc663f6c218d4edfe5baee08bc3c6d00125d61949e8c421ff801ea93dcb",
+      "english_sha256": "aad880eb11c46f78d344f2141aff5f359e58dff88c74aa49eb740d90fb1e7455",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصارية",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو بكر الصّديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدّارقطنيّ",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الإخوة",
+      "english": "Kitab al-Ikhwa",
+      "kind": "work"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة",
+      "english": "Habiba",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

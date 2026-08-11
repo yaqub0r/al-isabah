@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012303",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12303,
+  "title": {
+    "english": "Umm Yahya bint Ya'la ibn Umayya al-Tamimiyya (2)",
+    "arabic_observed": "أم يحيى"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012303-segment-0001",
+      "volume": 8,
+      "scan_page": 492,
+      "printed_page": 491,
+      "reader_page": 4404,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4404",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0492:36b2b0210aeb1722",
+      "arabic": "١٢٣٠٣- أم يحيى\nبنت يعلى بن أمية التميميّة «٢» .\nذكرها القاضي أبو أحمد العسّال في «تاريخه»، فقال: أتيت النبيّ ﵌ يوم فتح مكّة، قال سعد بن الصّلت، وخالفه غيره. ذكر ذلك أبو نعيم، وقال أبو موسى: قد ذكرها ابن مندة في تاريخه، وقال: أدركت النبيّ ﵌.",
+      "english": "12303—Umm Yahya bint Ya'la ibn Umayya al-Tamimiyya (2)\n\nAl-Qadi Abu Ahmad al-Assal mentioned her in his History, saying: “I came to the Prophet—may Allah bless him and grant him peace—on the day of the conquest of Mecca.” Sa'd ibn al-Salt related it thus, but others differed from him. Abu Nu'aym mentioned that, and Abu Musa said: “Ibn Manda mentioned her in his History and said: ‘She lived to meet the Prophet—may Allah bless him and grant him peace.’”",
+      "arabic_sha256": "baae689a3d51e80ed80fe68b26525ea47b89b1589cc4f28927831037738db485",
+      "english_sha256": "f3468eb81a4a40d488a06396f13ee2455a15b3855abe6620a3bd189a0b9831fc",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "يحيى",
+      "english": "Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم يحيى بنت يعلى بن أمية التميمية",
+      "english": "Umm Yahya bint Ya'la ibn Umayya al-Tamimiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "القاضي أبو أحمد العسال",
+      "english": "Al-Qadi Abu Ahmad al-Assal",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن الصلت",
+      "english": "Sa'd ibn al-Salt",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "أم يحيى",
+      "english": "Umm Yahya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

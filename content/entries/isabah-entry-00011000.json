@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011000",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11000,
+  "title": {
+    "english": "Jamila bint Amr ibn Hisham ibn al-Mughira",
+    "arabic_observed": "جميلة بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011000-segment-0001",
+      "volume": 8,
+      "scan_page": 72,
+      "printed_page": 71,
+      "reader_page": 3984,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3984",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0072:7ef2a8b4975b2fe7",
+      "arabic": "١١٠٠٠- جميلة بنت عمرو\nبن هشام بن المغيرة، هي بنت أبي جهل. تقدمت.",
+      "english": "11000 — Jamila bint Amr ibn Hisham ibn al-Mughira\n\nShe is the daughter of Abu Jahl. She was mentioned previously.",
+      "arabic_sha256": "25dc50cb2175c0fb5feb371c52cf8c61b331dcf0f7bd775e7e51219fa544ba55",
+      "english_sha256": "8418561ed5372345b2ca1ceb5bedda67a26f68da148ea57e59a7ddcfaa20bb7e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "جميلة بنت عمر",
+      "english": "Jamila bint Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة بنت عمرو بن هشام بن المغيرة",
+      "english": "Jamila bint Amr ibn Hisham ibn al-Mughira",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو جهل",
+      "english": "Abu Jahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة",
+      "english": "Jamila",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

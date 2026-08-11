@@ -1,0 +1,135 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011378",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11378,
+  "title": {
+    "english": "al-Sha'tha'²",
+    "arabic_observed": "الشّعثاء «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011378-segment-0001",
+      "volume": 8,
+      "scan_page": 202,
+      "printed_page": 201,
+      "reader_page": 4114,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4114",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0202:08580381ecab9254",
+      "arabic": "١١٣٧٨- الشّعثاء «٢»\n، امرأة حسان بن ثابت التي كان يشبّب بها في غزل قصائده، قيل هي بنت سالم الأسلمية، حكى السهيليّ أنها كانت زوجة له وولدت له بنتا يقال لها فراس، وقيل هي بنت سلام بن مشكم أحد رؤساء اليهود بالمدينة الّذي قال أبو سفيان بن حرب، وقد نزل عليه في قدمة قدمها:\nسقاني فروّاني كميتا مدامة ... على ظمأ منّي غلام ابن مشكم\n[الطويل] وقال الرّشاطيّ في أنساب الخزرج: أم فراس بنت حسان بن ثابت أمّها شعثاء بنت هلال الخزاعية، وكذا قال ابن الأعرابي في نوادره إنّ شعثاء خزاعية.",
+      "english": "11378—al-Sha'tha'²\n\nThe wife of Hassan ibn Thabit, whom he used to celebrate in the amatory passages of his odes. It is said that she was al-Sha'tha' bint Salim al-Aslamiyya. al-Suhayli related that she was his wife and bore him a daughter called Firas. It is also said that she was al-Sha'tha' bint Sallam ibn Mishkam, one of the Jewish leaders in Medina, concerning whom Abu Sufyan ibn Harb said, having stayed with him on a journey he made:\n\nA servant of Ibn Mishkam gave me deep-red aged wine to drink,\n    And fully quenched the thirst I felt.\n\n[al-Tawil meter]\n\nal-Rushati said in Ansab al-Khazraj: “Umm Firas bint Hassan ibn Thabit—her mother was Sha'tha' bint Hilal al-Khuza'iyya.” Ibn al-A'rabi likewise said in his Nawadir that Sha'tha' was of Khuza'a.",
+      "arabic_sha256": "172adb5a78dbdf4e2f8669b6d4e298586d06b7054f6cdfd63498d4571abf0b5d",
+      "english_sha256": "33aea6189336a97530bf2b4fe759e1566905bc9de9f9b5011a22788131eb721f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الشّعثاء",
+      "english": "al-Sha'tha'",
+      "kind": "person"
+    },
+    {
+      "arabic": "حسان بن ثابت",
+      "english": "Hassan ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنت سالم الأسلمية",
+      "english": "al-Sha'tha' bint Salim al-Aslamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "السهيليّ",
+      "english": "al-Suhayli",
+      "kind": "person"
+    },
+    {
+      "arabic": "فراس",
+      "english": "Firas",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنت سلام بن مشكم",
+      "english": "al-Sha'tha' bint Sallam ibn Mishkam",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلام بن مشكم",
+      "english": "Sallam ibn Mishkam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سفيان بن حرب",
+      "english": "Abu Sufyan ibn Harb",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرّشاطيّ",
+      "english": "al-Rushati",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم فراس بنت حسان بن ثابت",
+      "english": "Umm Firas bint Hassan ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "شعثاء بنت هلال الخزاعية",
+      "english": "Sha'tha' bint Hilal al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأعرابي",
+      "english": "Ibn al-A'rabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "الأسلمية",
+      "english": "Aslam",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الخزرج",
+      "english": "Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الخزاعية / خزاعة",
+      "english": "Khuza'a",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أنساب الخزرج",
+      "english": "Ansab al-Khazraj",
+      "kind": "work"
+    },
+    {
+      "arabic": "نوادره",
+      "english": "Nawadir Ibn al-A'rabi",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطويل",
+      "english": "al-Tawil",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -2,6 +2,7 @@ node_modules/
 .astro/
 dist/
 .runtime/
+artifact-cache/
 *.log
 __pycache__/
 *.pyc

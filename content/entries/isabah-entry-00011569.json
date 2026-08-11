@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011569",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11569,
+  "title": {
+    "english": "Fakhita bint al-Aswad",
+    "arabic_observed": "فاختة بنت الأسود"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011569-segment-0001",
+      "volume": 8,
+      "scan_page": 257,
+      "printed_page": 256,
+      "reader_page": 4169,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4169",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0257:65dbf35993e88518",
+      "arabic": "١١٥٦٩- فاختة بنت الأسود\nبن المطّلب بن أسد «١» بن عبد العزّى القرشيّة الأسديّة «٢» . كانت تحت صفوان بن أميّة بن خلف الجمحيّ، خلف عليها بعد أبيه، ففرّق الإسلام بينهما.\nأخرجه المستغفريّ، من طريق محمد بن ثور، عن ابن جريح، قال: فرّق الإسلام بين أربع وبين أبناء بعولتهنّ، فذكرها.",
+      "english": "11569—Fakhita bint al-Aswad\n\nibn al-Muttalib ibn Asad (1) ibn Abd al-Uzza, the Qurashi woman of Banu Asad. (2) She was married to Safwan ibn Umayya ibn Khalaf al-Jumahi, who had taken her as his wife after his father; Islam separated them.\n\nIt was reported by al-Mustaghfiri through Muhammad ibn Thawr, from Ibn Jurayj, who said: “Islam separated four women from the sons of their husbands,” and he mentioned her among them.",
+      "arabic_sha256": "e6d06c36a6ab5af22498bf3740ce93903f450de92af6d80f1129b3df50cde8f7",
+      "english_sha256": "6b5dc7f89d54085bda8d4d5893796cea722fe541d5051922c4a9763e68f5f09c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "القرشيّة",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأسديّة",
+      "english": "Banu Asad",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "صفوان بن أميّة بن خلف الجمحيّ",
+      "english": "Safwan ibn Umayya ibn Khalaf al-Jumahi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجمحيّ",
+      "english": "Banu Jumah",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "المستغفريّ",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن ثور",
+      "english": "Muhammad ibn Thawr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن جريح",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://al-isabah.example/schemas/artifact-manifest.v1.schema.json",
+  "title": "Al-Isabah artifact manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "work_id", "generated_from", "artifacts"],
+  "properties": {
+    "schema": {"const": "al-isabah.artifact-manifest.v1"},
+    "work_id": {"type": "string", "minLength": 1},
+    "generated_from": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "revision", "inventory_sha256"],
+      "properties": {
+        "repository": {"type": "string", "minLength": 1},
+        "revision": {"type": "string", "minLength": 1},
+        "inventory_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "artifact_id", "role", "language", "format", "volume",
+          "byte_size", "sha256", "object_key", "rights", "origin"
+        ],
+        "properties": {
+          "artifact_id": {"type": "string", "minLength": 1},
+          "role": {"type": "string", "minLength": 1},
+          "language": {"type": "string", "minLength": 1},
+          "format": {"type": "string", "minLength": 1},
+          "volume": {"type": ["integer", "null"], "minimum": 1},
+          "byte_size": {"type": "integer", "minimum": 0},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "object_key": {"type": "string", "pattern": "^sha256/[0-9a-f]{2}/[0-9a-f]{64}$"},
+          "rights": {"enum": ["private", "redistributable", "unknown"]},
+          "origin": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["repository_path"],
+            "properties": {
+              "repository_path": {"type": "string", "minLength": 1},
+              "source_url": {"type": ["string", "null"]}
+            }
+          },
+          "derived_from": {
+            "type": "array",
+            "items": {"type": "string", "minLength": 1},
+            "uniqueItems": true
+          }
+        }
+      }
+    }
+  }
+}
+

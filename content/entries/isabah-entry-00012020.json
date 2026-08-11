@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012020",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12020,
+  "title": {
+    "english": "Umm Rab'ah:",
+    "arabic_observed": "أم ربعة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012020-segment-0001",
+      "volume": 8,
+      "scan_page": 390,
+      "printed_page": 389,
+      "reader_page": 4302,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4302",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0390:0dc771c586ab0770",
+      "arabic": "١٢٠٢٠- أم ربعة:\nبنت خدام.\nروى حديثها ابن الأعرابيّ، عن عباس الدّوري عن أحمد، عن «١» يونس، عن أبي بكر بن عياش، عن يعقوب بن عطاء، قال: زوّج خدام ابنته أم ربعة وهي كارهة، فذكرت ذلك للنبيّ ﵌، فنزعها من زوجها أبي لبابة. قال أبو موسى: الّذي في سائر الروايات أنها خنساء بنت خدام، ولعل هذه كنيتها.",
+      "english": "12020—Umm Rab'ah:\nbint Khidam.\n\nIbn al-A'rabi transmitted her report from 'Abbas al-Duri, from Ahmad, from Yunus,[1] from Abu Bakr ibn 'Ayyash, from Ya'qub ibn 'Ata', who said: Khidam gave his daughter Umm Rab'ah in marriage while she was unwilling. She mentioned this to the Prophet (may Allah bless him and grant him peace), and he removed her from her husband, Abu Lubaba. Abu Musa said: What appears in all the other transmissions is that she was Khansa' bint Khidam; perhaps this was her kunya.",
+      "arabic_sha256": "9db185a195ea184f6bdf94a1d2a119da8d058cb129ebf156901565cf5810ef98",
+      "english_sha256": "f0d48cf149dafdb1af51a9661046a41acd1c24d1009c12919f9df515fead06ca",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن الأعرابي",
+      "english": "Ibn al-A'rabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عباس الدّوري",
+      "english": "'Abbas al-Duri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس",
+      "english": "Yunus",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر بن عياش",
+      "english": "Abu Bakr ibn 'Ayyash",
+      "kind": "person"
+    },
+    {
+      "arabic": "يعقوب بن عطاء",
+      "english": "Ya'qub ibn 'Ata'",
+      "kind": "person"
+    },
+    {
+      "arabic": "خدام",
+      "english": "Khidam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو لبابة",
+      "english": "Abu Lubaba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "خنساء بنت خدام",
+      "english": "Khansa' bint Khidam",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

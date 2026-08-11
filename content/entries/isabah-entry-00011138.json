@@ -1,0 +1,189 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011138",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11138,
+  "title": {
+    "english": "Khawla bint al-Yaman,",
+    "arabic_observed": "خولة بنت اليمان ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011138-segment-0001",
+      "volume": 8,
+      "scan_page": 122,
+      "printed_page": 121,
+      "reader_page": 4034,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4034",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0122:11763e3024b485cc",
+      "arabic": "١١١٣٨- خولة بنت اليمان ،\nأخت حذيفة «٣» .\nروى أبو سلمة بن عبد الرحمن، عنها، قالت: سمعت النبيّ ﷺ يقول: «لا خير في جماعة النّساء إلّا عند ميّت، فإنّهنّ إذا اجتمعن قلن وقلن ...» الحديث.\nذكرها أبو عمر مختصرة، وأسنده ابن مندة، من طريق الصلت بن مسعود، عن علي بن ثابت، عن الوازع بن نافع، عن أبي سلمة، فذكره سواء.\nوأخرج ابن مندة أيضا، من طريق ابن حفص، عن علي بن ثابت، عن الوازع بن نافع، عن أبي سلمة بن عبد الرحمن، عن خولة بنت يسار، قالت: أتيت النبي ﷺ، فقلت:\nإني امرأة أحيض، وليس عندي غير ثوب واحد، فلا أدري كيف أصنع يا رسول اللَّه ﷺ؟ قال:\n(١) أسد الغابة: ت ٦٨٩٧، الاستيعاب: ت ٣٣٧٥.\n(٢) أعلام النساء ١/ ٣٢٩.\n(٣) الثقات ٣/ ١١٧، أعلام النساء ١/ ٣٣٠، الاستبصار ٢٣٥، تجريد أسماء الصحابة ٢/ ٢٦٥.",
+      "english": "11138—Khawla bint al-Yaman,\n\nthe sister of Hudhayfa (3).\n\nAbu Salama ibn Abd al-Rahman related from her that she said: I heard the Prophet, may Allah bless him and grant him peace, say, “There is no good in women gathering together except in the presence of a deceased person, for when they gather, they say this and that…”—the remainder of the hadith.\n\nAbu Umar mentioned her briefly, and ibn Manda furnished its chain through al-Salt ibn Mas'ud, from Ali ibn Thabit, from al-Wazi' ibn Nafi', from Abu Salama, relating it in the same wording.\n\nIt was also transmitted by ibn Manda through ibn Hafs, from Ali ibn Thabit, from al-Wazi' ibn Nafi', from Abu Salama ibn Abd al-Rahman, from Khawla bint Yasar, who said: I came to the Prophet, may Allah bless him and grant him peace, and said, “I am a woman who menstruates, and I possess only one garment, so I do not know what I should do, O Messenger of Allah, may Allah bless him and grant him peace.” He said:\n\n(1) Usd al-Ghaba: entry 6897; al-Isti'ab: entry 3375.\n\n(2) A'lam al-Nisa' 1/329.\n\n(3) al-Thiqat 3/117; A'lam al-Nisa' 1/330; al-Istibsar, p. 235; al-Tajrid 2/265.",
+      "arabic_sha256": "0319464c779c47d5e852f4367b8e3804b98842a93edc3b362996869d4a82d68c",
+      "english_sha256": "018e80745d14284bb18647fe2f4dd73bdec0942f98adddde421a090db4095e4b",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011138-segment-0002",
+      "volume": 8,
+      "scan_page": 123,
+      "printed_page": 122,
+      "reader_page": 4035,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4035",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0123:39414799091303d0",
+      "arabic": "«إذا تطهّرت فاغسلي ثوبك ثمّ صلّي عليه» . قلت: يا رسول اللَّه، إني أرى أثر الدم فيه.\nفقال: «اغسليه ولا يضرّك أثره» «١» .\nقال أبو عمر: أخشى أن تكون هي خولة بنت اليمان، لأن إسناد حديثهما واحد.\nقلت: لا يلزم من كون الإسناد إليهما واحدا مع اختلاف المتن أن تكونا واحدة، فقد ذكر ابن مندة أنّ امرأة ربعي بن حراش روت عن خولة بنت اليمان، ووصله أبو مسلم الكجي، وأبو نعيم، من طريقه، من رواية أبي عوانة، عن منصور، عن ربعي، عن امرأته، عن أخت حذيفة، قالت: قام فينا رسول اللَّه ﷺ فقال: يا معشر النّساء، أما لكنّ في الفضّة ما تحلين به «٢» ... الحديث- في الزجر عن التحلي بالذهب.",
+      "english": "“When you have purified yourself, wash your garment and then pray in it.” I said, “O Messenger of Allah, I can see a trace of blood on it.” He said, “Wash it, and its trace will not harm you.”¹\n\nAbu Umar said: “I fear that she may be Khawla bint al-Yaman, because both reports have the same chain of transmission.”\n\nI say: The fact that the chain of transmission to the two women is the same, while the text differs, does not entail that they are one and the same. Ibn Manda mentioned that the wife of Rib'i ibn Hirash narrated from Khawla bint al-Yaman. Abu Muslim al-Kajji gave it a connected chain, as did Abu Nu'aym by way of him, in a report of Abu 'Awana, from Mansur, from Rib'i, from his wife, from the sister of Hudhayfa, who said: The Messenger of Allah, may Allah bless him and grant him peace, stood among us and said, “O company of women, do you not have silver with which to adorn yourselves?”² ... the remainder of the hadith, warning against adorning oneself with gold.",
+      "arabic_sha256": "13690c9531c391f03c75f4d85d4cd80b9a06147846c96916d0f2661cbf660c76",
+      "english_sha256": "e324a6517ec43e250d8e54ac9a6d69b09fca0c785a8b493663da9cde4a21270d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبيّ ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت يسار",
+      "english": "Khawla bint Yasar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت اليمان",
+      "english": "Khawla bint al-Yaman",
+      "kind": "person"
+    },
+    {
+      "arabic": "حذيفة",
+      "english": "Hudhayfa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سلمة بن عبد الرحمن",
+      "english": "Abu Salama ibn Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصلت بن مسعود",
+      "english": "al-Salt ibn Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن ثابت",
+      "english": "Ali ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوازع بن نافع",
+      "english": "al-Wazi' ibn Nafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حفص",
+      "english": "ibn Hafs",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه تعالى",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ربعي بن حراش",
+      "english": "Rib'i ibn Hirash",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو مسلم الكجي",
+      "english": "Abu Muslim al-Kajji",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عوانة",
+      "english": "Abu 'Awana",
+      "kind": "person"
+    },
+    {
+      "arabic": "منصور",
+      "english": "Mansur",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة",
+      "english": "Khawla",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

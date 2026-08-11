@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011038",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11038,
+  "title": {
+    "english": "Habiba bint Abd Allah",
+    "arabic_observed": "حبيبة بنت عبد اللَّه"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011038-segment-0001",
+      "volume": 8,
+      "scan_page": 84,
+      "printed_page": 83,
+      "reader_page": 3996,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3996",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0084:085dc29367a2b72c",
+      "arabic": "١١٠٣٨- حبيبة بنت عبد اللَّه\nبن حجير الأسدية بنت أم المؤمنين أم حبيبة بنت أبي سفيان.\nتقدمت الإشارة إليها في حبيبة بنت أم حبيبة، قاله ابن إسحاق، وموسى بن عقبة.\nهاجرت مع أمها إلى الحبشة، ورجعت معها إلى المدينة، وحكى ابن إسحاق قولا أنّها ولدت بأرض الحبشة.",
+      "english": "11038—Habiba bint Abd Allah\nibn Hujayr al-Asadiyya, daughter of the Mother of the Believers Umm Habiba bint Abi Sufyan.\n\nReference to her was made earlier under Habiba bint Umm Habiba. Ibn Ishaq and Musa ibn Uqba stated this.\n\nShe emigrated with her mother to Abyssinia and returned with her to Medina. Ibn Ishaq also related an opinion that she was born in the land of Abyssinia.",
+      "arabic_sha256": "a70544cdec1f4c0e79ac0de372280fb4d35625f56ec22e0f288ece1887a4a929",
+      "english_sha256": "56b7801ac144c90297770a5a331268c4205471656f5a53ffc5b8f44e6c1ce101",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم حبيبة بنت أبي سفيان",
+      "english": "Umm Habiba bint Abi Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة بنت أم حبيبة",
+      "english": "Habiba bint Abd Allah ibn Hujayr al-Asadiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن عقبة",
+      "english": "Musa ibn Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011629",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11629,
+  "title": {
+    "english": "Furay'a bint Mu'awwidh ibn Afra' al-Ansariyya:",
+    "arabic_observed": "فريعة بنت معوّذ بن عفراء الأنصاريّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011629-segment-0001",
+      "volume": 8,
+      "scan_page": 281,
+      "printed_page": 280,
+      "reader_page": 4193,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4193",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0281:80592b72a369a987",
+      "arabic": "١١٦٢٩- فريعة بنت معوّذ بن عفراء الأنصاريّة:\nأخت الربيع «٥» .\n(١) أسد الغابة ت (٧٢٠٣) .\n(٢) أسد الغابة ت (٧٢٠٣) .\n(٣) أسد الغابة ت (٧٢٠٥) .\n(٤) أسد الغابة ت (٧٢٠٦)، الاستيعاب ت (٣٥١٧)، الثقات ٣/ ٣٣٧، أعلام النساء ٤/ ١٦٩- تجريد أسماء الصحابة ٢/ ٢٩٦، ٢٩٣. الكاشف ٣/ ٤٧٨ تقريب التهذيب ج ٢/ ٦١٠، تهذيب التهذيب ١٢/ ٤٤٥، تهذيب الكمال ٣/ ١٦٩٣، الاستبصار ١٢٨، ١٣٣، خلاصة تهذيب الكمال ٣/ ٣٩٠، تلقيح فهوم أهل الأثر ٣٧٠ بقي بن مخلد ٢٢٥، الفوائد العوالي ٧١، ٨١، التبصرة والتذكرة ٢/ ٥٠٣، مؤتلف الدار الدّارقطنيّ ١٩٣٤.\n(٥) أسد الغابة ت (٧٢٠٧)، الاستيعاب ت (٣٥١٨) .",
+      "english": "11629—Furay'a bint Mu'awwidh ibn Afra' al-Ansariyya:\nSister of al-Rubayyi'.(5)\n\n(1) Usd al-Ghaba, entry (7203).\n(2) Usd al-Ghaba, entry (7203).\n(3) Usd al-Ghaba, entry (7205).\n(4) Usd al-Ghaba, entry (7206); al-Isti'ab, entry (3517); al-Thiqat 3/337; A'lam al-Nisa' 4/169; al-Tajrid 2/296, 293; al-Kashif 3/478; Taqrib al-Tahdhib, vol. 2/610; Tahdhib al-Tahdhib 12/445; Tahdhib al-Kamal 3/1693; al-Istibsar 128, 133; Khulasat Tahdhib al-Kamal 3/390; Talqih Fuhum Ahl al-Athar 370; Baqi ibn Makhlad 225; al-Fawa'id al-Awali 71, 81; al-Tabsira wa-l-Tadhkira 2/503; Mu'talif al-Dar, al-Daraqutni, 1934.\n(5) Usd al-Ghaba, entry (7207); al-Isti'ab, entry (3518).",
+      "arabic_sha256": "d8be763f397bba772feb3298a21e6d061eda65ad2b019a23436bbe1e660ba361",
+      "english_sha256": "7ccfca393a90b8450caf8c65b66baaa5bf5804fd7e17173aaaccabd8b8a3dea2",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011629-segment-0002",
+      "volume": 8,
+      "scan_page": 282,
+      "printed_page": 281,
+      "reader_page": 4194,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4194",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0282:ec4557337e6f53e6",
+      "arabic": "تقدم نسبها في أبيها. قال أبو عمر: لها صحبة، حديثها في الرّخصة في الغناء وضرب الدّفّ في العرس من حديث أهل البصرة. وقال ابن مندة: روى حديثها خالد بن دينار عن أمه عنها- أنها دخلت على النبيّ ﵌.",
+      "english": "Her lineage has already been given in the entry on her father. Abu Umar said: “She was a Companion. Her hadith concerning permission for singing and beating the frame-drum at a wedding is transmitted by the people of Basra.” Ibn Manda said: “Khalid ibn Dinar transmitted her hadith from his mother, from her: that she entered upon the Prophet (may Allah bless him and grant him peace).”",
+      "arabic_sha256": "e36eadfdcc7d1fec7f3ea6f57f309237b28b21fc91676e81ee49b1bde4388147",
+      "english_sha256": "8484067758df87aae8445f711b2cea817950f5e5d870650916c234ed3934bbae",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "فريعة بنت معوّذ بن عفراء الأنصاريّة",
+      "english": "Furay'a bint Mu'awwidh ibn Afra' al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الربيع",
+      "english": "al-Rubayyi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفوائد العوالي",
+      "english": "al-Fawa'id al-Awali",
+      "kind": "work"
+    },
+    {
+      "arabic": "التبصرة والتذكرة",
+      "english": "al-Tabsira wa-l-Tadhkira",
+      "kind": "work"
+    },
+    {
+      "arabic": "مؤتلف الدار",
+      "english": "Mu'talif al-Dar",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدّارقطنيّ",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "البصرة",
+      "english": "Basra",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد بن دينار",
+      "english": "Khalid ibn Dinar",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "bibliographic_uncertainty",
+      "arabic_span": "مؤتلف الدار الدّارقطنيّ",
+      "explanation": "The canonical footnote's wording remains bibliographically irregular. It has been transliterated without silently replacing it with a conjectured title.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0281:80592b72a369a987"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

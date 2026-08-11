@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011677",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11677,
+  "title": {
+    "english": "Kabsha bint Ma'n",
+    "arabic_observed": "كبشة بنت معن"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011677-segment-0001",
+      "volume": 8,
+      "scan_page": 296,
+      "printed_page": 295,
+      "reader_page": 4208,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4208",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0296:89bf502948ecdf75",
+      "arabic": "١١٦٧٧- كبشة بنت معن\nبن عاصم الأنصارية، كانت زوج أبي قيس بن الأسلت، ويقال لها كبيشة.\nقال ابن جريج- عن عكرمة: نزلت فيها: لا يَحِلُّ لَكُمْ أَنْ تَرِثُوا النِّساءَ كَرْهًا [النساء: ١٩]، أخرجه أبو موسى، عن المستغفري، ثم من طريق أبي ثور، عن ابن جريج، وذكرته في الأنساب من عدّة طرق.",
+      "english": "11677—Kabsha bint Ma'n\nibn Asim, the Ansari woman. She was the wife of Abu Qays ibn al-Aslat, and she is also called Kubaysha.\n\nIbn Jurayj related from Ikrima: “Concerning her was revealed: ‘It is not lawful for you to inherit women against their will’ [al-Nisa 4:19].” Abu Musa transmitted it from al-Mustaghfiri, and then through Abu Thawr from Ibn Jurayj. I have mentioned it in al-Ansab through several chains.",
+      "arabic_sha256": "e81ec753b5fb9a978a0b74987b8909298f6a565b18c26219c603828981f57349",
+      "english_sha256": "5944be7339d8152dd5373efadc601ebbfdc6c76b96393d736048bdd944ae92d9",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "كبيشة",
+      "english": "Kubaysha bint Malik ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي قيس بن الأسلت",
+      "english": "Abu Qays ibn al-Aslat",
+      "kind": "person"
+    },
+    {
+      "arabic": "كبيشة",
+      "english": "Kubaysha bint Ma'n ibn Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن جريج",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "عكرمة",
+      "english": "Ikrima",
+      "kind": "person"
+    },
+    {
+      "arabic": "النساء",
+      "english": "al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو ثور",
+      "english": "Abu Thawr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنساب",
+      "english": "al-Ansab",
+      "kind": "work"
+    },
+    {
+      "arabic": "كبيشة",
+      "english": "Kubaysha bint Waqid ibn Amr ibn Amir ibn Zayd Manat",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

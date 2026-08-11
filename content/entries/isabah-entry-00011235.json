@@ -1,0 +1,104 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011235",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11235,
+  "title": {
+    "english": "Zaynab bint Khabbab",
+    "arabic_observed": "زينب بنت خبّاب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011235-segment-0001",
+      "volume": 8,
+      "scan_page": 157,
+      "printed_page": 156,
+      "reader_page": 4069,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4069",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0157:3610833272143fd7",
+      "arabic": "١١٢٣٥- زينب بنت خبّاب\nبن الأرت التميمية «٤» .\n(١) أسد الغابة ت ٦٩٥٧.\n(٢) أسد الغابة ت ٦٩٥٨، الاستيعاب: ت ٣٤٠٣.\n(٣) أسد الغابة ت ٦٩٥٩، الاستيعاب: ت ٣٤٠٤.\n(٤) أسد الغابة ت ٦٩٦٠، تجريد أسماء الصحابة ٢/ ٢٧٢.",
+      "english": "11235—Zaynab bint Khabbab\nibn al-Aratt, the Tamimi woman. (4)\n\n(1) Usd al-Ghaba, entry 6957.\n(2) Usd al-Ghaba, entry 6958; al-Isti'ab, entry 3403.\n(3) Usd al-Ghaba, entry 6959; al-Isti'ab, entry 3404.\n(4) Usd al-Ghaba, entry 6960; al-Tajrid, 2/272.",
+      "arabic_sha256": "8c4a11d2ae1737ea968c45a531f738dc15d482c928ae21049005000e59831587",
+      "english_sha256": "b3593ae21eae725c681b3895be8b9f49e00f5204f69d1c8b4ca8deb96610b1fc",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011235-segment-0002",
+      "volume": 8,
+      "scan_page": 158,
+      "printed_page": 157,
+      "reader_page": 4070,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4070",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0158:97853adc48e24aa3",
+      "arabic": "تقدم نسبها في ترجمة والدها، في الخاء المعجمة، ذكرها المستغفري، فقال: سماها البخاري فيمن روى عن النبيّ ﷺ، وأسند من طريق الأعمش، عن أبي إسحاق وهو السبيعي، عن عبد الرحمن القابسي، عن [زينب بنت] «١» خباب، قالت: خرج خباب في سرية، فكان النبيّ ﷺ يتعاهدنا حتى يحلب عنزا لنا في جفنة لنا.",
+      "english": "Her lineage was given above in the entry on her father, in the section for the dotted letter kha. al-Mustaghfiri mentioned her and said: “al-Bukhari named her among those who narrated from the Prophet (peace and blessings be upon him).” He transmitted through al-A'mash, from Abu Ishaq—namely, al-Sabi'i—from Abd al-Rahman al-Qabisi, from [Zaynab bint] (1) Khabbab, who said: “Khabbab went out with a military detachment, and the Prophet (peace and blessings be upon him) would regularly look after us, even milking a she-goat of ours into a large bowl of ours.”",
+      "arabic_sha256": "f50e6c747914ec93db0fff8ced415ecdbdf35722cea08563f9005c60e1354497",
+      "english_sha256": "bc15639317c119a5d9f5bf22c850e901ef628b341c4f9f8e372fc96fab0f9964",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "التميمية",
+      "english": "Tamim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأعمش",
+      "english": "al-A'mash",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن القابسي",
+      "english": "Abd al-Rahman al-Qabisi",
+      "kind": "person"
+    },
+    {
+      "arabic": "خباب",
+      "english": "Khabbab",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

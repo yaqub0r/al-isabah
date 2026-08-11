@@ -1,0 +1,154 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011804",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11804,
+  "title": {
+    "english": "Nab'a the Abyssinian",
+    "arabic_observed": "نبعة الحبشية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011804-segment-0001",
+      "volume": 8,
+      "scan_page": 332,
+      "printed_page": 331,
+      "reader_page": 4244,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4244",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0332:360e00215fcfb92d",
+      "arabic": "١١٨٠٤- نبعة الحبشية:\nجارية أم هانئ «٣» .\n(١) أسد الغابة ت (٧٣٠٦)، الاستيعاب ت (٣٥٥٤) .\n(٢) أسد الغابة ت (٧٣١٣) .\n(٣) أسد الغابة ت (٧٣١٥) .",
+      "english": "11804 — Nab'a the Abyssinian\n\nThe bondwoman of Umm Hani'. [3]\n\n[1] Usd al-Ghaba, entry 7306; al-Isti'ab, entry 3554.\n\n[2] Usd al-Ghaba, entry 7313.\n\n[3] Usd al-Ghaba, entry 7315.",
+      "arabic_sha256": "0c63e192ea1f9adede5b1a77e1c85b94248d8d49a4315a51b9d70828479261c8",
+      "english_sha256": "000767d991a8f7fa494093c59a79952c8a09bd729f951f4abe094236e9ed8950",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011804-segment-0002",
+      "volume": 8,
+      "scan_page": 333,
+      "printed_page": 332,
+      "reader_page": 4245,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4245",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0333:2b4ab5f62b1040b9",
+      "arabic": "ذكرها أبو موسى في «الذّيل»، وذكر من طريق الكلبيّ، عن أبي صالح مولى أم هانئ بنت أبي طالب في مسرى رسول اللَّه ﵌ أنها كانت تقول: ما أسري به إلا وهو في بيتي نائم عندي تلك الليلة، فصلّى العشاء الآخرة، ثم نام ونمنا، فلما كان الصّبح انتبهنا لنصلي الصّبح فصلّينا معه، قال: «يا أمّ هانئ، لقد صلّيت العشاء الآخرة كما رأيت ثمّ جئت بيت المقدس فصلّيت فيه، ثمّ صلّيت صلاة الغداة معكم» «١» ثم قام ليخرج، فأخذت بطرف ردائه فتكشفت عن بطنه، وكأنه قبطية مطويّة، فقلت له: يا نبي اللَّه، لا تحدّث الناس بهذا فيكذّبوك، ويؤذوك، قال: «واللَّه لأحدّثنّهم» . قال: فقلت لجارية حبشية يقال لها نبعة: ويحك! اتّبعي رسول اللَّه ﵌، فاسمعي ما يقول للناس، وما يقولون له. فلما خرج إلى الناس فأخبرهم تعجّبوا، وقالوا: ما آية ذلك يا محمد؟ فذكر الحديث.\nقلت:\nوأخرجه أبو يعلى، من طريق يحيى بن أبي عمرو الشّيبانيّ، عن أبي صالح مولى أم هانئ، عن أم هانئ، قالت: دخل عليّ رسول اللَّه ﵌ بغلس وأنا على فراشي، فقال: «شعرت أنّي نمت اللّيلة في المسجد الحرام، فأتاني جبرئيل ...»\nفذكر حديث الإسراء إلى بيت المقدس، قال: فقلت لجاريتي نبعة: اتّبعيه فانظري ماذا يقول؟ وماذا يقال له؟ قالت: فلما رجعت نبعة أخبرتني أنه انتهى إلى نفر من قريش ...\nالحديث.\nوفيه وصفه لبيت المقدس، وقول أبي بكر الصّديق: صدقت. قالت: فسمعت رسول اللَّه ﵌ يقول يومئذ: «يا أبا بكر، إنّ اللَّه قد سمّاك الصّدّيق «٢»» .\nقلت: وهذا أصحّ من رواية الكلبيّ، فإنّ في روايته من المنكر أنه صلّى العشاء الآخرة والصبح معهم، وإنما فرضت الصّلاة ليلة المعراج، وكذا نومه الليلة في بيت أم هانئ، وإنما نام في المسجد.",
+      "english": "Abu Musa mentioned her in “al-Dhayl,” and related, by way of al-Kalbi, from Abu Salih, the client of Umm Hani bint Abi Talib, in the account of the Night Journey of the Messenger of Allah, may Allah bless him and grant him peace, that she used to say: “He was not taken on the Night Journey except while he was in my house, sleeping there with me that night. He performed the late-evening prayer, then slept, and we slept. When morning came, we awoke to perform the dawn prayer and prayed it with him. He said, ‘O Umm Hani, I performed the late-evening prayer, as you saw, then went to Bayt al-Maqdis and prayed there, and then performed the morning prayer with you.’” (1) He then rose to leave, and I took hold of the edge of his cloak, whereupon his abdomen became exposed; it was as though it were a folded Coptic cloth. I said to him, “O Prophet of Allah, do not tell the people about this, lest they declare you a liar and harm you.” He said, “By Allah, I shall certainly tell them.” She said: So I said to an Abyssinian slave-girl called Nab'a, “Woe to you! Follow the Messenger of Allah, may Allah bless him and grant him peace, and listen to what he says to the people and what they say to him.” When he went out to the people and informed them, they were astonished and said, “What is the proof of that, O Muhammad?” He then related the hadith.\n\nI say:\n\nAbu Ya'la also transmitted it by way of Yahya ibn Abi Amr al-Shaybani, from Abu Salih, the client of Umm Hani, from Umm Hani, who said: “The Messenger of Allah, may Allah bless him and grant him peace, came in to me in the darkness before dawn while I was upon my bedding. He said, ‘Did you know that I slept last night in the Sacred Mosque, and Gabriel came to me …?’”\n\nHe then related the hadith of the Night Journey to Bayt al-Maqdis. The report continues: “So I said to my slave-girl Nab'a, ‘Follow him and see what he says and what is said to him.’” She said: “When Nab'a returned, she informed me that he had come to a group of Quraysh …”\n\nThe hadith.\n\nIt includes his description of Bayt al-Maqdis and Abu Bakr al-Siddiq's saying, “You have spoken the truth.” She said: “I heard the Messenger of Allah, may Allah bless him and grant him peace, say that day, ‘O Abu Bakr, Allah has named you al-Siddiq.’” (2)\n\nI say: This is sounder than al-Kalbi's account, for among the objectionable elements in his account is that he performed the late-evening and dawn prayers with them. The prayer was only made obligatory on the Night of the Ascension. The same applies to his sleeping that night in Umm Hani's house; rather, he slept in the mosque.",
+      "arabic_sha256": "fdb595b58d48f3690bf9c300d0df74c17a12fc8724530064645e7901b8fd9629",
+      "english_sha256": "8d361884163bd9ef9a8d0bfa87683cf5ca2d5d163cad3cf18f54e3f62fb091bb",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "نبعة الحبشية",
+      "english": "Nab'a the Abyssinian",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هانئ",
+      "english": "Umm Hani'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذّيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكلبيّ",
+      "english": "al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو صالح مولى أم هانئ",
+      "english": "Abu Salih",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هانئ بنت أبي طالب",
+      "english": "Umm Hani bint Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "بيت المقدس",
+      "english": "Bayt al-Maqdis",
+      "kind": "place"
+    },
+    {
+      "arabic": "نبعة",
+      "english": "Nab'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو يعلى",
+      "english": "Abu Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن أبي عمرو الشّيبانيّ",
+      "english": "Yahya ibn Abi Amr al-Shaybani",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسجد الحرام",
+      "english": "Sacred Mosque",
+      "kind": "place"
+    },
+    {
+      "arabic": "جبرئيل",
+      "english": "Gabriel",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو بكر الصّديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

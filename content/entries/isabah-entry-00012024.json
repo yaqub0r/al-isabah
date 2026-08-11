@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012024",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12024,
+  "title": {
+    "english": "Umm Razin bint Sawad:",
+    "arabic_observed": "أم رزن بنت سواد:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012024-segment-0001",
+      "volume": 8,
+      "scan_page": 391,
+      "printed_page": 390,
+      "reader_page": 4303,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4303",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0391:43cb6c90c52f8399",
+      "arabic": "١٢٠٢٤- أم رزن بنت سواد:\nبن رزن بن زيد بن ثعلبة بن عبيد بن عدي بن غنم بن كعب بن سلمة الأنصاريّة. ذكرها ابن سعد في المبايعات، وقال: أمها أم الحارث بنت النّعمان بن خنساء بن سنان، تزوجها يزيد بن الضّحاك بن حارثة بن زيد بن ثعلبة.",
+      "english": "12024 — Umm Razin bint Sawad:\n\nShe was the daughter of Sawad ibn Razin ibn Zayd ibn Tha'laba ibn 'Ubayd ibn 'Adi ibn Ghanm ibn Ka'b ibn Salama, an Ansari woman. Ibn Sa'd mentioned her among the women who pledged allegiance and said: Her mother was Umm al-Harith bint al-Nu'man ibn Khansa ibn Sinan. Yazid ibn al-Dahhak ibn Haritha ibn Zayd ibn Tha'laba married her.",
+      "arabic_sha256": "f2548d15562ce73b9e07079e379998ef1df524ee365ddb80087517fe526403c4",
+      "english_sha256": "84542a9d7219c748e621baaf5e862fbfeba09327cfa5bf24ae506cf9713bf0af",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الحارث بنت النعمان بن خنساء بن سنان",
+      "english": "Umm al-Harith bint al-Nu'man ibn Khansa ibn Sinan",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن الضحاك بن حارثة بن زيد بن ثعلبة",
+      "english": "Yazid ibn al-Dahhak ibn Haritha ibn Zayd ibn Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

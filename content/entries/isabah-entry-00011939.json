@@ -1,0 +1,113 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011939",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11939,
+  "title": {
+    "english": "Umm Jamil bint al-Mujallal²",
+    "arabic_observed": "أم جميل بنت المجلل «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011939-segment-0001",
+      "volume": 8,
+      "scan_page": 370,
+      "printed_page": 369,
+      "reader_page": 4282,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4282",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0370:56fa4e301fceadfb",
+      "arabic": "١١٩٣٩- أم جميل بنت المجلل «٢»\n: بجيم ولامين، بن عبد، أو عبيد، بن أبي قيس القرشيّة العامريّة، من بني عامر بن لؤيّ، كانت من السّابقات.\nقال ابن سعد: أمها أم حبيب بنت العاص، أخت أبي أحيحة. أسلمت أم جميل بمكّة وبايعت وهاجرت إلى الحبشة الهجرة الثانية هي وزوجها حاطب بن الحارث، قال: وكان معها ابناهما: محمد، والحارث، وتقدم ذكرها في ترجمة ولدها محمد بن حاطب.\nوأخرجه أحمد من طريق عبد الرّحمن بن عثمان بن إبراهيم بن محمد بن حاطب، عن أمه أم جميل بنت المجلل، قالت: أقبلت بك من أرض الحبشة حتى إذا كنت من المدينة على ليلة أو ليلتين طبخت لك طبيخا ففني الحطب فذهبت أطلب فتثاقلت القدر فانكفأت على ذراعك ... الحديث.",
+      "english": "11939—Umm Jamil bint al-Mujallal²\n—with a jim and two lams—ibn Abd, or Ubayd, ibn Abi Qays, the Qurashi Amiriyya, of Banu Amir ibn Lu'ayy. She was one of the earliest converts.\n\nIbn Sa'd said: Her mother was Umm Habib bint al-As, the sister of Abu Uhayha. Umm Jamil embraced Islam in Mecca, gave the pledge of allegiance, and made the second emigration to Abyssinia together with her husband, Hatib ibn al-Harith. He said: Their two sons, Muhammad and al-Harith, were with her. She was mentioned previously in the biographical entry on her son Muhammad ibn Hatib.\n\nAhmad transmitted it through Abd al-Rahman ibn Uthman ibn Ibrahim ibn Muhammad ibn Hatib, from his mother, Umm Jamil bint al-Mujallal, who said: “I set out with you from the land of Abyssinia. When I was one or two nights' journey from Medina, I cooked some food for you. The firewood ran out, so I went to look for some. The pot became too heavy and overturned onto your forearm…”—the hadith.",
+      "arabic_sha256": "b843b22345c46950957e5f3f3ad8e4bb7b7612f834e5b3ee942b77f2fe33c5cf",
+      "english_sha256": "dcf70a335c773dd0b4c54d6013ed591db676fc10a37fd94a4042d0b5d2eae30a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جميل بنت المجلل",
+      "english": "Umm Jamil bint al-Mujallal",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو عامر بن لؤي",
+      "english": "Banu Amir ibn Lu'ayy",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم حبيب بنت العاص",
+      "english": "Umm Habib bint al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أحيحة",
+      "english": "Abu Uhayha",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "حاطب بن الحارث",
+      "english": "Hatib ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن حاطب",
+      "english": "Muhammad ibn Hatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث",
+      "english": "al-Harith ibn Hatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عثمان بن إبراهيم بن محمد بن حاطب",
+      "english": "Abd al-Rahman ibn Uthman ibn Ibrahim ibn Muhammad ibn Hatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "المجلل",
+      "explanation": "The canonical text specifies a jim and two lams but does not supply the vowels. The Urdu and collateral Arabic witnesses are likewise unvocalized, so the conventional form “al-Mujallal” is retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0370:56fa4e301fceadfb"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

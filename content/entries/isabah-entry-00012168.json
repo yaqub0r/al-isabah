@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012168",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12168,
+  "title": {
+    "english": "Umm 'Ajrad al-Khuza'iyya [1]",
+    "arabic_observed": "أم عجرد الخزاعيّة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012168-segment-0001",
+      "volume": 8,
+      "scan_page": 437,
+      "printed_page": 436,
+      "reader_page": 4349,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4349",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0437:a5a5a73800a82aa8",
+      "arabic": "١٢١٦٨- أم عجرد الخزاعيّة «١»\n. قال أبو عمر: حديثها عند المثنى بن الصّباح، وهو ضعيف جدّا،\nعن عمرو بن شعيب، عن أبيه، عن جدّه: سمعت أم عجرد الخزاعية تسأل رسول اللَّه ﵌، فقالت: يا رسول اللَّه، أمر كنّا نفعله في الجاهليّة، ألا نفعله في الإسلام؟ قال: «وما هو؟» قالت: العقيقة. قال: «فافعلوا، عن الغلام شاتان مكافئتان، وعن الجارية شاة» .\nمثل حديث أم كرز.",
+      "english": "12168—Umm 'Ajrad al-Khuza'iyya [1]\n\nAbu 'Umar said: Her hadith is transmitted by al-Muthanna ibn al-Sabbah—who is very weak—from 'Amr ibn Shu'ayb, from his father, from his grandfather: “I heard Umm 'Ajrad al-Khuza'iyya ask the Messenger of Allah, may Allah bless him and grant him peace. She said, ‘O Messenger of Allah, there is something we used to do in the Age of Ignorance; should we not do it in Islam?’ He asked, ‘What is it?’ She replied, ‘The aqiqa.’ He said, ‘Then do it: for a boy, two matching sheep, and for a girl, one sheep.’”\n\nThis is similar to the hadith of Umm Kurz.",
+      "arabic_sha256": "c140e6b38cfab342ad01167cc0abbb15172a9417cafdb560d4c5cb32bb9ae25a",
+      "english_sha256": "90cae27181b92d9ee4bad5bbf12bc2fd019dd27d52049b23616d77b792de9665",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم عجرد الخزاعية",
+      "english": "Umm 'Ajrad al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المثنى بن الصباح",
+      "english": "al-Muthanna ibn al-Sabbah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن شعيب",
+      "english": "'Amr ibn Shu'ayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كرز",
+      "english": "Umm Kurz",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

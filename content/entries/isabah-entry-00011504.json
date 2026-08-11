@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011504",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11504,
+  "title": {
+    "english": "Amra bint Sa'd",
+    "arabic_observed": "عمرة بنت سعد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011504-segment-0001",
+      "volume": 8,
+      "scan_page": 246,
+      "printed_page": 245,
+      "reader_page": 4158,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4158",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0246:22e2ad2466062f85",
+      "arabic": "١١٥٠٤- عمرة بنت سعد\nبن مالك بن خالد السّاعديّ «١»، أخت سهل بن سعد.\nتأتي في عميرة، بالتّصغير.",
+      "english": "11504—Amra bint Sa'd\nibn Malik ibn Khalid al-Sa'idi,¹ sister of Sahl ibn Sa'd.\nShe will appear under Umayra, in the diminutive form.",
+      "arabic_sha256": "de53fa4bd8f07b6aebda3f1bcdf6b297acaaa0a9b67f70c846fa77f590cb6e05",
+      "english_sha256": "868c3b5f1cf2aa9d286618b2ffca20898703c8a39019e1d9771e7b1f90281d7e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سهل بن سعد",
+      "english": "Sahl ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة",
+      "english": "Umayra bint Sa'd ibn Malik ibn Khalid al-Sa'idi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة",
+      "english": "Umayra bint al-Sa'di ibn Waqdan ibn Abd Shams al-Amiriyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

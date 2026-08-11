@@ -1,0 +1,169 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011249",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11249,
+  "title": {
+    "english": "Zaynab bint al-Awwam",
+    "arabic_observed": "زينب بنت العوام"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011249-segment-0001",
+      "volume": 8,
+      "scan_page": 162,
+      "printed_page": 161,
+      "reader_page": 4074,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4074",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0162:0fbbc6c299d8b776",
+      "arabic": "١١٢٤٩- زينب بنت العوام\nبن خويلد بن أسد القرشية الأسدية «٤»، أخت الزبير بن العوام.\nقال الزّبير بن بكّار: هي أم خالد ويحيى وشيبة وعبد اللَّه وفاختة بني حكيم بن حرام.\nأسلمت وبقيت إلى أن قتل ابنها عبد اللَّه بن حكيم بن حرام يوم الجمل فرثته، وذكرت أخاها بأبيات منها:\n(١) أعلام النساء ٢/ ٧٥.\n(٢) الاستيعاب: ت ٣٤٠٨.\n(٣) الثقات ٣/ ١٤٥،: أعلام النساء ٢/ ٦٧، تجريد أسماء الصحابة ٢/ ٢٧٣.\n(٤) أسد الغابة: ت ٦٩٧٠.",
+      "english": "11249—Zaynab bint al-Awwam\n\nibn Khuwaylid ibn Asad, the Qurashi woman of Banu Asad,⁴ and the sister of al-Zubayr ibn al-Awwam.\n\nal-Zubayr ibn Bakkar said: “She was the mother of Khalid, Yahya, Shayba, Abd Allah, and Fakhita, the children of Hakim ibn Hizam.”\n\nShe embraced Islam and remained alive until her son Abd Allah ibn Hakim ibn Hizam was killed on the Day of the Camel. She elegized him and mentioned her brother in verses, among which are:\n\n¹ A'lam al-Nisa, 2/75.\n² al-Isti'ab, entry 3408.\n³ al-Thiqat, 3/145; A'lam al-Nisa, 2/67; al-Tajrid, 2/273.\n⁴ Usd al-Ghaba, entry 6970.",
+      "arabic_sha256": "fe1897fe5216a220416161a6046376165f641c5bebfada06fd9c02d70cdc131c",
+      "english_sha256": "39431f451e9ecbca697406e1188cb7df4ea8fe8d62d716509078d22cb57c2771",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011249-segment-0002",
+      "volume": 8,
+      "scan_page": 163,
+      "printed_page": 162,
+      "reader_page": 4075,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4075",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0163:e40af4ae4170ccd3",
+      "arabic": "قتلتم حواريّ النّبيّ وصهره ... وصاحبه فاستبشروا بجحيم\nوقد هدّني قتل ابن عفان قبله ... وجادت عليه عبرتي بسجوم\nأعينيّ جودا بالدّموع وأفرغا ... على رجل طلق اليدين كريم\nوقد كان عبد اللَّه يدعى بحارث ... وذي خلّة منّا وحمل يتيم\nفكيف بنا أم كيف بالدّين بعد ما ... أصيب ابن أروى وابن أمّ حكيم\n[الطويل]",
+      "english": "You killed the Prophet's devoted disciple, his kinsman by marriage,\nand his Companion—so rejoice in Hellfire.\nBefore him, the killing of Ibn Affan had broken me,\nand my tears poured forth over him in torrents.\nO my two eyes, give freely of your tears and pour them forth\nover an open-handed, noble man.\nAbd Allah would indeed be called upon for a cultivator,\nfor one of us in need, and to bear an orphan's burden.\nThen what will become of us—or what of the religion—after\nIbn Arwa and Ibn Umm Hakim were struck down?\n[al-Tawil]",
+      "arabic_sha256": "8fe5488e94e0e287694033472684cb63922a15c665e41ce89f394fe1f0b6f597",
+      "english_sha256": "f5d762c05954b63d066bb223a31609da77c9b58a59f301c2a27666101fa1b589",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأسدية",
+      "english": "Banu Asad",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الزبير بن العوام",
+      "english": "al-Zubayr ibn al-Awwam",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكّار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد",
+      "english": "Khalid ibn Hakim ibn Hizam",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى",
+      "english": "Yahya ibn Hakim ibn Hizam",
+      "kind": "person"
+    },
+    {
+      "arabic": "شيبة",
+      "english": "Shayba ibn Hakim ibn Hizam",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah ibn Hakim ibn Hizam",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاختة",
+      "english": "Fakhita bint Hakim ibn Hizam",
+      "kind": "person"
+    },
+    {
+      "arabic": "حكيم بن حرام",
+      "english": "Hakim ibn Hizam",
+      "kind": "person"
+    },
+    {
+      "arabic": "يوم الجمل",
+      "english": "Day of the Camel",
+      "kind": "other"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عفان",
+      "english": "Ibn Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أروى",
+      "english": "Ibn Arwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أم حكيم",
+      "english": "Ibn Umm Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطويل",
+      "english": "al-Tawil",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

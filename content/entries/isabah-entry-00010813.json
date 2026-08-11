@@ -1,0 +1,398 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010813",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10813,
+  "title": {
+    "english": "Asma bint Mukharriba [1]",
+    "arabic_observed": "أسماء بنت مخرّبة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010813-segment-0001",
+      "volume": 8,
+      "scan_page": 17,
+      "printed_page": 16,
+      "reader_page": 3929,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3929",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0017:379f2ddf42333b71",
+      "arabic": "١٠٨١٣- أسماء بنت مخرّبة «١»\n. تقدم نسبها في أسماء بنت سلامة بن مخربة.\nذكر البلاذريّ، عن أبي عبيدة معمر بن المثنى: قدم هشام بن المغيرة نجران، فرأى أسماء بنت مخرّبة، ويقال بنت عمرو بن مخرّبة بن جندل بن أبي أبير بن نهشل بن دارم، فأعجبته فتزوّجها وحملها إلى مكة، فولدت له أبا جهل، والحارث، ثم مات فتزوّجها عبد اللَّه بن أبي ربيعة بن المغيرة، فولدت له عياشا، فكان أخا أبي جهل والحارث لأمهما.\n(١) أسد الغابة: ت ٦٧١٤.",
+      "english": "10813—Asma bint Mukharriba [1]\n\nHer lineage was given earlier under Asma bint Salama ibn Mukharriba.\n\nAl-Baladhuri related from Abu Ubayda Mamar ibn al-Muthanna: Hisham ibn al-Mughira came to Najran and saw Asma bint Mukharriba—also said to have been the daughter of Amr ibn Mukharriba ibn Jandal ibn Abi Ubayr ibn Nahshal ibn Darim. She pleased him, so he married her and took her to Mecca. She bore him Abu Jahl and al-Harith. He then died, and Abd Allah ibn Abi Rabia ibn al-Mughira married her. She bore him Ayyash, who was thus the maternal brother of Abu Jahl and al-Harith.\n\n[1] Usd al-Ghaba: entry 6714.",
+      "arabic_sha256": "dd386d65ce1a4b425d576fd6891f6dc5e2be76c5adb1af3ec0d10cb492364206",
+      "english_sha256": "1d28cb5761a406ef896bf76c0e4e321339c0e393c093cef49f2940ddd9a5aaf0",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010813-segment-0002",
+      "volume": 8,
+      "scan_page": 18,
+      "printed_page": 17,
+      "reader_page": 3930,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3930",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0018:9a3965e33905d73a",
+      "arabic": "وقال ابن سعد: ولدت له أيضا عبد اللَّه وأم حجير. قاله البلاذري، وقال محمد بن سعد: إنها ماتت كافرة قبل أن يهاجر ابنها عياش إلى المدينة، ويقال: إنها أسلمت، وأدركت خلافة عمر، وذلك أثبت، ثم ساق من طريق الواقدي، عن عبد الحميد بن جعفر، عن أبي عبيدة بن محمد بن عمار، عن الرّبيّع بنت معوّذ، قالت: دخلت في نسوة من الأنصار على أسماء بنت مخرّبة أم أبي جهل في خلافة عمر بن الخطاب، وكان ابنها عياش بن عبد اللَّه بن أبي ربيعة يبعث إليها من اليمن بعطر، فكانت تبيعه إلى الأعطية، فقالت لي: أنت بنت قاتل سيده؟ قلت: لا، ولكنني بنت قاتل عبده. قالت: حرام علي أن أبيعك من عطري شيئا. قلت: وحرام عليّ أن أشتري منه شيئا، فما وجدت لعطرتنا غير عطرك.\nوفي لفظ: فو اللَّه ما هو بطيّب عرف، وو اللَّه ما بي ما شممت عطرا كان أطيب منه، ولكني غضبت، فقلت: وهي القائلة لما طافت عريانة:\nأليوم يبدو بعضه أو كلّه ... وما بدا منه فلا أحلّه\nكم من لبيب عاقل يضلّه ... وناظر ينظر ما أعلّه\n[الرجز] ويقال فيها نزلت: خُذُوا زِينَتَكُمْ عِنْدَ كُلِّ مَسْجِدٍ [الأعراف: ٣١] . وفي صحيح مسلم ...\nوقال أبو عمر في ترجمة بنت أخيها أسماء بنت سلامة: هي أم عبد اللَّه بن عيّاش بن أبي ربيعة، وأم عياش اسمها أيضا أسماء بنت مخرّبة، وهي أم [أبي جهل]، والحارث بن هشام، وهي عمة أسماء بنت مخرّبة، وهي أم الجلاس والدة عياش، وعبد اللَّه ابني أبي ربيعة.\nروى عنها عبد اللَّه بن عياش، والرّبيع بنت معوّذ، ثم\nساق من طريق إسحاق بن محمد القروي، عن عبد الرحمن بن أبي الزناد، عن عبد الرحمن بن الحارث، عن أخيه عبد اللَّه بن الحارث عن عبد اللَّه بن عياش بن أبي ربيعة، قالت: دخل النبيّ ﷺ بعض بيوت بني أبي ربيعة إمّا لعيادة مريض أو لغير ذلك، فقالت أسماء التميمية، وكانت تكنى أم الجلاس، وهي أم عياش بن أبي ربيعة: يا رسول اللَّه، ألا توصيني. فقال النبيّ ﷺ: «يا أمّ الجلاس، ائتي إلى أخيك ما تحبّين أن يأتي إليك، وأحبّي لأخيك [ما تحبّين] أن يحبّك» «١» . ثم أتى\n(١) أورده السيوطي في الجامع الكبير ٢/ ٥٣١ والمتقي الهندي في كنزل العمال حديث رقم ٣٧٤٥٨ وعزاه لابن مندة وابن عساكر.",
+      "english": "Ibn Sa'd said: She also bore him 'Abd Allah and Umm Hujayr. al-Baladhuri said this. Muhammad ibn Sa'd said that she died an unbeliever before her son 'Ayyash emigrated to Medina. It is also said that she embraced Islam and lived into the caliphate of 'Umar; that is the better-established account. He then transmitted, by way of al-Waqidi, from 'Abd al-Hamid ibn Ja'far, from Abu 'Ubayda ibn Muhammad ibn 'Ammar, from al-Rubayyi' bint Mu'awwidh, who said:\n\n“I entered, with a group of Ansari women, upon Asma bint Makhraba, the mother of Abu Jahl, during the caliphate of 'Umar ibn al-Khattab. Her son 'Ayyash ibn 'Abd Allah ibn Abi Rabi'a used to send her perfume from Yemen, and she would sell it on credit until the stipends were paid. She said to me, ‘Are you the daughter of the man who killed his master?’ I replied, ‘No, but I am the daughter of the man who killed his slave.’ She said, ‘It is forbidden for me to sell you any of my perfume.’ I replied, ‘And it is forbidden for me to buy any of it; I have never found a perfume more foul-smelling than yours.’”\n\nIn another wording: “By Allah, its fragrance is not pleasant.” By Allah, there was nothing wrong with it; I had never smelled a perfume more pleasant than it. I was merely angry, and so I said that.\n\nShe is the woman who said while circumambulating naked:\n\nToday some of it—or all of it—appears;\nWhatever appears of it, I do not make lawful.\nHow many an intelligent, sensible man it leads astray,\nAnd how many a gazer looks upon what has afflicted him.\n\n[rajaz]\n\nIt is said that concerning her the following was revealed: “Take your adornment at every place of prayer” [al-A'raf 7:31]. And in Sahih Muslim …\n\nIn the notice on her brother's daughter, Asma bint Salama, Abu 'Umar said: “She was the mother of 'Abd Allah ibn 'Ayyash ibn Abi Rabi'a. The mother of 'Ayyash was also named Asma bint Makhraba; she was the mother of [Abu Jahl] and al-Harith ibn Hisham. She was the paternal aunt of Asma bint Makhraba, who was Umm al-Julas, the mother of 'Ayyash and 'Abd Allah, the two sons of Abi Rabi'a.”\n\n'Abd Allah ibn 'Ayyash and al-Rubayyi' bint Mu'awwidh narrated from her. He then transmitted by way of Ishaq ibn Muhammad al-Qarawi, from 'Abd al-Rahman ibn Abi al-Zinad, from 'Abd al-Rahman ibn al-Harith, from his brother 'Abd Allah ibn al-Harith, from 'Abd Allah ibn 'Ayyash ibn Abi Rabi'a, who related that she said:\n\n“The Prophet, may Allah bless him and grant him peace, entered one of the houses of Banu Abi Rabi'a, either to visit a sick person or for some other reason. Asma al-Tamimiyya—whose kunyah was Umm al-Julas and who was the mother of 'Ayyash ibn Abi Rabi'a—said, ‘O Messenger of Allah, will you not give me counsel?’ The Prophet, may Allah bless him and grant him peace, said: ‘O Umm al-Julas, treat your brother as you would like him to treat you, and love for your brother [what you would like] him to love for you.’”(1) Then there was brought—\n\n(1) al-Suyuti included it in al-Jami' al-Kabir, 2/531, and al-Muttaqi al-Hindi in Kanz al-'Ummal, hadith no. 37458, attributing it to Ibn Manda and Ibn 'Asakir.",
+      "arabic_sha256": "9a3965e33905d73a81fc3244ab364e34e1174508eeef500359298948371756e9",
+      "english_sha256": "a9f0f8ca95fb130dd8c8009084516f90aeb52114441bf612fa088d95e60d498d",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010813-segment-0003",
+      "volume": 8,
+      "scan_page": 19,
+      "printed_page": 18,
+      "reader_page": 3931,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3931",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0019:beee8b7888e4c257",
+      "arabic": "رسول اللَّه ﷺ بصبي من ولد عياش، وكانت أم الجلاس ذكرت لرسول اللَّه ﷺ مرضا بالصبي أو علّة، فجعل النبيّ ﷺ يرقي الصبي ويتفل عليه، وجعل الصبي يتفل على النبي ﷺ كما يتفل النبيّ ﷺ، فجعل بعض أهل البيت ينهى الصبي، فنهاهم النبي ﷺ.\nقلت: وبيان الخلط أنه جمع بين قصتي الربيع بنت معوّذ وعبد اللَّه بن عياش، وقصة الربيع إنما وقعت لها مع أسماء بنت مخرّبة هذه، وهي المختلف في صحبتها، وقصة عبد اللَّه بن عياش هي التي تضمّنها هذا الحديث، وهي والدته المتفق على صحبتها.\nوقد فرّق الزّبير بن بكّار بين المرأتين، فقال لما ذكر الحارث بن هشام وأخوه لأبيه وأمّه عمرو وهو أبو جهل، وأمهما أسماء بنت مخرّبة، وأخواهما لأمهما عبد اللَّه بن عبد اللَّه بن أبي ربيعة، وعياش بن عبد اللَّه بن أبي ربيعة، وذكر قصة هجرته ويمين أمه وعوده إلى مكة، وقال لما ذكر عبد اللَّه بن عياش بن أبي ربيعة وأمه أسماء بنت سلامة بن مخرّبة.\nقلت: والقصة التي أشار إليها ذكرها ابن إسحاق.",
+      "english": "A young boy from among Ayyash's descendants was then brought to the Messenger of Allah (may Allah bless him and grant him peace). Umm al-Julas had mentioned to the Messenger of Allah (may Allah bless him and grant him peace) an illness or ailment affecting the boy. The Prophet (may Allah bless him and grant him peace) began performing ruqya for the boy and spitting lightly on him. The boy began spitting on the Prophet (may Allah bless him and grant him peace), just as the Prophet (may Allah bless him and grant him peace) was spitting on him. Some members of the household began telling the boy not to do so, but the Prophet (may Allah bless him and grant him peace) forbade them from stopping him.\n\nI say: The evidence of the conflation is that he combined the two accounts, that of al-Rubayyi' bint Mu'awwidh and that of Abd Allah ibn Ayyash. The incident of al-Rubayyi' occurred only with this Asma bint Mukharriba, whose status as a Companion is disputed. The account of Abd Allah ibn Ayyash, however, is the one contained in this hadith, and the woman in it is his mother, whose status as a Companion is agreed upon.\n\nal-Zubayr ibn Bakkar distinguished between the two women. When he mentioned al-Harith ibn Hisham and his brother by the same father and mother, Amr, who was Abu Jahl, he said that their mother was Asma bint Mukharriba and that their two maternal half-brothers were Abd Allah ibn Abd Allah ibn Abi Rabi'a and Ayyash ibn Abd Allah ibn Abi Rabi'a. He also mentioned the account of Ayyash's emigration, his mother's oath, and his return to Mecca. When he mentioned Abd Allah ibn Ayyash ibn Abi Rabi'a, he said that his mother was Asma bint Salama ibn Mukharriba.\n\nI say: The account to which he alluded was related by Ibn Ishaq.",
+      "arabic_sha256": "6ebde6c3a48ae6920d999966ffde073a504afbd0ed1a13de613c31bd00447cdb",
+      "english_sha256": "6a3f0a660a00148654fa6c7ba213355afe102bfcc62edf8fac2a8842806c3237",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت مخرّبة",
+      "english": "Asma bint Mukharriba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت سلامة بن مخربة",
+      "english": "Asma bint Salama ibn Mukharriba",
+      "kind": "person"
+    },
+    {
+      "arabic": "البلاذريّ",
+      "english": "al-Baladhuri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عبيدة معمر بن المثنى",
+      "english": "Abu Ubayda Mamar ibn al-Muthanna",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن المغيرة",
+      "english": "Hisham ibn al-Mughira",
+      "kind": "person"
+    },
+    {
+      "arabic": "نجران",
+      "english": "Najran",
+      "kind": "place"
+    },
+    {
+      "arabic": "عمرو بن مخرّبة بن جندل بن أبي أبير بن نهشل بن دارم",
+      "english": "Amr ibn Mukharriba ibn Jandal ibn Abi Ubayr ibn Nahshal ibn Darim",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو جهل",
+      "english": "Abu Jahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث",
+      "english": "al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن أبي ربيعة بن المغيرة",
+      "english": "Abd Allah ibn Abi Rabia ibn al-Mughira",
+      "kind": "person"
+    },
+    {
+      "arabic": "عياش",
+      "english": "Ayyash",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Muhammad ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن سعد",
+      "english": "Muhammad ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "'Abd Allah ibn 'Abd Allah ibn Abi Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حجير",
+      "english": "Umm Hujayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "البلاذري",
+      "english": "al-Baladhuri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عياش",
+      "english": "'Ayyash ibn 'Abd Allah ibn Abi Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "عياش بن عبد اللَّه بن أبي ربيعة",
+      "english": "'Ayyash ibn 'Abd Allah ibn Abi Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "عمر",
+      "english": "'Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن الخطاب",
+      "english": "'Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الحميد بن جعفر",
+      "english": "'Abd al-Hamid ibn Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عبيدة بن محمد بن عمار",
+      "english": "Abu 'Ubayda ibn Muhammad ibn 'Ammar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرّبيع بنت معوّذ",
+      "english": "al-Rubayyi' bint Mu'awwidh",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسماء بنت مخرّبة",
+      "english": "Asma bint Makhraba",
+      "kind": "person"
+    },
+    {
+      "arabic": "اليمن",
+      "english": "Yemen",
+      "kind": "place"
+    },
+    {
+      "arabic": "الأعراف",
+      "english": "al-A'raf",
+      "kind": "work"
+    },
+    {
+      "arabic": "صحيح مسلم",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت سلامة",
+      "english": "Asma bint Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عيّاش بن أبي ربيعة",
+      "english": "'Abd Allah ibn 'Ayyash ibn Abi Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن هشام",
+      "english": "al-Harith ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الجلاس",
+      "english": "Umm al-Julas",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي ربيعة",
+      "english": "Abu Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق بن محمد القروي",
+      "english": "Ishaq ibn Muhammad al-Qarawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن أبي الزناد",
+      "english": "'Abd al-Rahman ibn Abi al-Zinad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن الحارث",
+      "english": "'Abd al-Rahman ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن الحارث",
+      "english": "'Abd Allah ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني أبي ربيعة",
+      "english": "Banu Abi Rabi'a",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسماء التميمية",
+      "english": "Asma al-Tamimiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "السيوطي",
+      "english": "al-Suyuti",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجامع الكبير",
+      "english": "al-Jami' al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنزل العمال",
+      "english": "Kanz al-'Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عساكر",
+      "english": "Ibn 'Asakir",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله ﷺ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "عياش",
+      "english": "Ayyash ibn Abd Allah ibn Abi Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "الربيع بنت معوذ",
+      "english": "al-Rubayyi' bint Mu'awwidh",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن عياش",
+      "english": "Abd Allah ibn Ayyash ibn Abi Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت مخربة",
+      "english": "Asma bint Mukharriba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو",
+      "english": "Amr ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن عبد الله بن أبي ربيعة",
+      "english": "Abd Allah ibn Abd Allah ibn Abi Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "عياش بن عبد الله بن أبي ربيعة",
+      "english": "Ayyash ibn Abd Allah ibn Abi Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن عياش بن أبي ربيعة",
+      "english": "Abd Allah ibn Ayyash ibn Abi Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

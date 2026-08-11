@@ -1,0 +1,254 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011192",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11192,
+  "title": {
+    "english": "Ramla bint Shayba ibn Rabi'a ibn Abd Shams al-Abshamiyya.(1)",
+    "arabic_observed": "رملة بنت شيبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011192-segment-0001",
+      "volume": 8,
+      "scan_page": 143,
+      "printed_page": 142,
+      "reader_page": 4055,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4055",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0143:cdb30876b9a6bd18",
+      "arabic": "١١١٩٢- رملة بنت شيبة\nبن ربيعة بن عبد شمس العبشمية «١» .\nقتل أبوها يوم بدر كافرا، ذكرها أبو عمر، فقال: كانت من المهاجرات، هاجرت مع زوجها عثمان بن عفان، وفي ذلك تقول لها بنت عمها هند بنت عتبة:\nلحي الرّحمن صابئة بوجّ ... ومكّة عند أطراف الحجون\nتدين لمعشر قتلوا أباها ... أقتل أبيك جاءك باليقين «٢»؟\n[الوافر]\n(١) الثقات ٣/ ١٣١، تجريد أسماء الصحابة ٢/ ٢٦٩.\n(٢) ينظر البيتان في الاستيعاب ترجمة رقم (٣٣٩١)، وأسد الغابة ترجمة رقم (٦٩٣٣)، والبيتان في كتاب نسب قريش لمصعب الزبيري: ١٠٥، ١٥٦.",
+      "english": "11192—Ramla bint Shayba ibn Rabi'a ibn Abd Shams al-Abshamiyya.(1)\n\nHer father was killed at Badr while an unbeliever. Abu Umar mentioned her and said: “She was one of the women who emigrated. She emigrated with her husband, Uthman ibn Affan.” Concerning this, her paternal cousin Hind bint Utba said to her:\n\nMay al-Rahman curse an apostate woman at Wajj,\nand in Mecca by the outskirts of al-Hajun.\nShe follows the religion of a people who killed her father—\ndid the killing of your father bring you certainty?(2)\n\n[al-Wafir]\n\n(1) al-Thiqat, 3/131; al-Tajrid, 2/269.\n\n(2) See the two verses in al-Isti'ab, biography no. 3391, and Usd al-Ghaba, biography no. 6933. The two verses also appear in Kitab Nasab Quraysh by Mus'ab al-Zubayri, pp. 105 and 156.",
+      "arabic_sha256": "dd236f7904fa4be5f1cbdbddaa2793e15e9d613bc8a223a46b20571edd0eca41",
+      "english_sha256": "a451adcbed9120b95d1f47f6718cfe490ca2b58af991ef8cc8ad4ada9b55c1f0",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011192-segment-0002",
+      "volume": 8,
+      "scan_page": 144,
+      "printed_page": 143,
+      "reader_page": 4056,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4056",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0144:58b1f1b0508ffb94",
+      "arabic": "قال أبو عمر: في قول ابن الأثير: هاجرت مع زوجها عثمان إنما هاجر بزوجته رقية بنت رسول اللَّه ﷺ. قال: ولو لم يقل هاجرت مع زوجها عثمان لأمكن أن يقال هاجرت فتزوجها عثمان بعد ذلك.\nقلت: أظن قوله: هاجرت مع زوجها عثمان، أي إلى المدينة لا إلى الحبشة، فلعل عثمان تزوجها في عمرة القضية، وهاجرت معه حينئذ، فأما قبل ذلك إلى الحبشة ثم إلى المدينة في أول الهجرة فلم تكن له زوجة إلا رقية، فكأنه تزوجها بعد رقية أو بعد أم كلثوم.\nويحتمل أن يكون الصواب أن زوجها عثمان غير ابن عفان، ولعله عثمان بن أبي العاص الثقفي بقرينة قولها بوج، ووج هي الطائف، وعثمان بن أبي العاص من أهل الطائف، بخلاف ابن عفان.\nثم رأيت في طبقات ابن سعد: تزوّجها عثمان بن عفان، فولدت له عائشة، وأم أبان، وأم عمرو. وقال أبو الزناد مولاها: أسلمت وبايعت، وأنشد الزبير من قول هند يعيب عليها إسلامها ويعيرها بقتل أبيها يوم بدر ... فذكر البيتين، قال: وأمها أم شريك بنت وقدان بن عبد شمس بن عبد ود من بني عامر بن لؤيّ، وكذا قال ابن سعد: لكن قال أم شريك.",
+      "english": "Ibn al-Athir said, regarding Abu Umar's statement, “She emigrated with her husband Uthman”: “Uthman emigrated only with his wife Ruqayya, daughter of the Messenger of Allah, may Allah bless him and grant him peace.” He said: “Had he not said, ‘She emigrated with her husband Uthman,’ it would have been possible to say that she emigrated and Uthman married her afterward.”\n\nI say: I think that his statement, “She emigrated with her husband Uthman,” means to Medina, not to Abyssinia. Perhaps Uthman married her during the Fulfilled Umra, and she emigrated with him at that time. Before then, however—when he emigrated to Abyssinia and subsequently to Medina at the beginning of the Hijra—he had no wife other than Ruqayya. It would thus appear that he married her after Ruqayya or after Umm Kulthum.\n\nIt is also possible that the correct account is that the Uthman who was her husband was someone other than Ibn Affan—perhaps Uthman ibn Abi al-As al-Thaqafi—as indicated by the occurrence of Wajj in the verse. Wajj is al-Ta'if, and Uthman ibn Abi al-As was one of the people of al-Ta'if, unlike Ibn Affan.\n\nThen I found in Ibn Sa'd's al-Tabaqat: “Uthman ibn Affan married her, and she bore him Aisha, Umm Aban, and Umm Amr.” Abu al-Zinad, her client, said: “She embraced Islam and pledged allegiance.” Al-Zubayr quoted verses by Hind faulting her for embracing Islam and taunting her over the killing of her father on the day of Badr ... He cited the two verses and said: “Her mother was Umm Sharak bint Waqdan ibn Abd Shams ibn Abd Wudd, of the Banu Amir ibn Lu'ayy.” Ibn Sa'd gave the same genealogy, but called her Umm Sharik.",
+      "arabic_sha256": "57491df90100acfb5e9df5d3b411bb7b505fe06978ee57eb9adc4c7ecd5f358b",
+      "english_sha256": "1dc3d6186275f308de94396323372620a41378387a37c6985fa542d4e950e4ba",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عتبة",
+      "english": "Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "رملة بنت شيبة بن ربيعة بن عبد شمس العبشمية",
+      "english": "Ramla bint Shayba ibn Rabi'a ibn Abd Shams al-Abshamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن عفان",
+      "english": "Uthman ibn Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند بنت عتبة",
+      "english": "Hind bint Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الرحمن",
+      "english": "al-Rahman",
+      "kind": "other"
+    },
+    {
+      "arabic": "وج",
+      "english": "Wajj",
+      "kind": "place"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "الحجون",
+      "english": "al-Hajun",
+      "kind": "place"
+    },
+    {
+      "arabic": "الوافر",
+      "english": "al-Wafir",
+      "kind": "other"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "كتاب نسب قريش",
+      "english": "Kitab Nasab Quraysh",
+      "kind": "work"
+    },
+    {
+      "arabic": "مصعب الزبيري",
+      "english": "Mus'ab al-Zubayri",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "رقية بنت رسول اللَّه",
+      "english": "Ruqayya bint Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "عمرة القضية",
+      "english": "Fulfilled Umra",
+      "kind": "other"
+    },
+    {
+      "arabic": "الهجرة",
+      "english": "Hijra",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم كلثوم",
+      "english": "Umm Kulthum",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن أبي العاص الثقفي",
+      "english": "Uthman ibn Abi al-As al-Thaqafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطائف",
+      "english": "al-Ta'if",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha bint Uthman ibn Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم أبان",
+      "english": "Umm Aban bint Uthman ibn Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو",
+      "english": "Umm Amr bint Uthman ibn Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الزناد",
+      "english": "Abu al-Zinad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند",
+      "english": "Hind bint Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم شراك بنت وقدان بن عبد شمس بن عبد ود",
+      "english": "Umm Sharak bint Waqdan ibn Abd Shams ibn Abd Wudd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم شريك بنت وقدان بن عبد شمس بن عبد ود",
+      "english": "Umm Sharik bint Waqdan ibn Abd Shams ibn Abd Wudd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عامر بن لؤيّ",
+      "english": "Banu Amir ibn Lu'ayy",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

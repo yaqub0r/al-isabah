@@ -1,0 +1,139 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011286",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11286,
+  "title": {
+    "english": "Sukhayla,",
+    "arabic_observed": "سخيلة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011286-segment-0001",
+      "volume": 8,
+      "scan_page": 174,
+      "printed_page": 173,
+      "reader_page": 4086,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4086",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0174:2b7a365ec3693914",
+      "arabic": "١١٢٨٦- سخيلة ،\nبخاء معجمة مصغر، بنت عبيدة بن الحارث، زوج عمرو بن أمية الضّمري.\n(١) أسد الغابة ت (٦٩٨١) .\n(٢) أسد الغابة ت (٦٩٨٣)، الاستيعاب ت (٣٤١٩) .",
+      "english": "11286—Sukhayla,\n\nwith a dotted kha, in the diminutive form, daughter of Ubayda ibn al-Harith and wife of Amr ibn Umayya al-Damri.\n\n(1) Usd al-Ghaba, entry 6981.\n\n(2) Usd al-Ghaba, entry 6983; al-Isti'ab, entry 3419.",
+      "arabic_sha256": "3c0093ddaf8bec79a583d302015d1e943d67a5f82d11c2750211582ca3848a3c",
+      "english_sha256": "dc053f3aff201e94a167c41501c64666790b1cecd69486cad1cbc37db8964a49",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011286-segment-0002",
+      "volume": 8,
+      "scan_page": 175,
+      "printed_page": 174,
+      "reader_page": 4087,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4087",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0175:b2f9fbda8782eeaa",
+      "arabic": "استدركها ابن الدّبّاغ على أبي عمر، فأخرج من مسند علي بن عبد العزيز، عن القعنبي، عن حاتم بن إسماعيل، عن يعقوب بن عمرو، عن الزّبرقان بن عبد اللَّه، عن أبيه، عن عمرو بن أمية، قال: مرّ على عثمان أبو عبد الرحمن بن عوف بمرط فاستغلاه، فاشتراه عمرو بن أمية، فقال له عثمان أبو عبد الرحمن: ما فعل المرط؟ قال: تصدّقت به على سخيلة بنت عبيدة. فقال: أو كل ما فعلت إلى أهلك صدقة؟ فقال عمرو: سمعت رسول اللَّه ﷺ يقول ذلك. فذكر ما قال عمرو لرسول اللَّه ﷺ. فقال: صدق وذكرها ابن سعد في ترجمة والدها، وكانت وفاته في سنة اثنتين من الهجرة.",
+      "english": "Ibn al-Dabbagh added her as a supplement to Abu Umar, transmitting from the Musnad of Ali ibn Abd al-Aziz, from al-Qa'nabi, from Hatim ibn Isma'il, from Ya'qub ibn Amr, from al-Zabraqan ibn Abd Allah, from his father, from Amr ibn Umayya, who said: A cloak was brought before Uthman or Abd al-Rahman ibn Awf, and he considered it too expensive, so Amr ibn Umayya bought it. Uthman or Abd al-Rahman then asked him, “What became of the cloak?” He replied, “I gave it as charity to Sukhayla bint Ubayda.” He asked, “Is everything you do for your family charity?” Amr said, “I heard the Messenger of Allah (may Allah bless him and grant him peace) say that.” He then related what Amr had said to the Messenger of Allah (may Allah bless him and grant him peace), and he said, “He spoke the truth.” Ibn Sa'd also mentioned her in the biography of her father, who died in the second year of the Hijra.",
+      "arabic_sha256": "4b154b64a8999cfc2cafdd376ba04484c1519f25e20f67971ab9b49243a23006",
+      "english_sha256": "ae21d8066bcc6bc682ab34556329f6385fc01cc1be566e65ec33b0ae8661575f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن أمية الضمري",
+      "english": "Amr ibn Umayya al-Damri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن الدّبّاغ",
+      "english": "Ibn al-Dabbagh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند علي بن عبد العزيز",
+      "english": "Musnad Ali ibn Abd al-Aziz",
+      "kind": "work"
+    },
+    {
+      "arabic": "علي بن عبد العزيز",
+      "english": "Ali ibn Abd al-Aziz",
+      "kind": "person"
+    },
+    {
+      "arabic": "القعنبي",
+      "english": "al-Qa'nabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "حاتم بن إسماعيل",
+      "english": "Hatim ibn Isma'il",
+      "kind": "person"
+    },
+    {
+      "arabic": "يعقوب بن عمرو",
+      "english": "Ya'qub ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّبرقان بن عبد اللَّه",
+      "english": "al-Zabraqan ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن أمية",
+      "english": "Amr ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عوف",
+      "english": "Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "سخيلة بنت عبيدة",
+      "english": "Sukhayla bint Ubayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

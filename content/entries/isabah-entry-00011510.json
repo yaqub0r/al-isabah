@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011510",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11510,
+  "title": {
+    "english": "Amra bint Mas'ud",
+    "arabic_observed": "عمرة بنت مسعود"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011510-segment-0001",
+      "volume": 8,
+      "scan_page": 246,
+      "printed_page": 245,
+      "reader_page": 4158,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4158",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0246:22e2ad2466062f85",
+      "arabic": "١١٥١٠- عمرة بنت مسعود\nبن الحارث «٨» بن رفاعة الأنصاريّة، من بني النّجّار، ذكرها ابن حبيب في المبايعات.",
+      "english": "11510—Amra bint Mas'ud\nibn al-Harith⁸ ibn Rifa'a al-Ansariyya, of Banu al-Najjar. Ibn Habib included her among the women who pledged allegiance.",
+      "arabic_sha256": "bf9cfad70832c29494a350fc4b813d0c95a64c7d1238b116515c676f5d08f735",
+      "english_sha256": "c59161b3040527309e4bec217ed8c8505e55efecf54d6c926f0c9972244ded42",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمرة بنت مسعود",
+      "english": "Amra bint Mas'ud ibn Qays ibn Amr ibn Zayd Manat ibn Adi ibn Amr ibn Malik ibn al-Najjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسعود",
+      "english": "Mas'ud ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو النجار",
+      "english": "Banu al-Najjar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

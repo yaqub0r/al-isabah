@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011062",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11062,
+  "title": {
+    "english": "Humayda,",
+    "arabic_observed": "حميدة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011062-segment-0001",
+      "volume": 8,
+      "scan_page": 90,
+      "printed_page": 89,
+      "reader_page": 4002,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4002",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0090:d2b7f6cc4d4ff2a9",
+      "arabic": "١١٠٦٢- حميدة ،\nبالتصغير، مولاة أسماء بنت أبي بكر «٣»، وهي والدة أشعب الطامع.\nقيل: كانت تدخل بيوت أزواج النبي ﷺ تحرّش بينهنّ، فأمر النبيّ ﷺ بتعزيرها، وقيل: دعا عليها، فماتت، وهذا لا يصح، لأن أشعب ولد بعد النبي ﷺ بمدة، فلعلّها أصابها بدعائه مرض اتصل بها إلى أن ماتت بعده بمدة.",
+      "english": "11062—Humayda,\n\nin the diminutive form, the female client of Asma bint Abi Bakr,(3) and the mother of Ash'ab the Greedy.\n\nIt is said that she used to enter the houses of the wives of the Prophet ﷺ and stir up discord among them, so the Prophet ﷺ ordered that she receive discretionary punishment. It is also said that he prayed against her and she died. This is not sound, because Ash'ab was born some time after the Prophet ﷺ. Perhaps, as a result of his supplication, she was afflicted by an illness that remained with her until she died some time after him.",
+      "arabic_sha256": "e7ede8891c9f4ba440c68ae6047c1b02559461d81f9ad220d5cd75a3961e713d",
+      "english_sha256": "86b9c3b06b2d4754c02fb24719e7c8beefe2ba90c893510279ef4f733c027b8e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حميدة",
+      "english": "Humayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت أبي بكر",
+      "english": "Asma bint Abi Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أشعب",
+      "english": "Ash'ab",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Prophet",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

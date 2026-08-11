@@ -1,0 +1,104 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011186",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11186,
+  "title": {
+    "english": "Ruqayya bint Ka'b al-Aslamiyya (4)",
+    "arabic_observed": "رقيّة بنت كعب الأسلمية»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011186-segment-0001",
+      "volume": 8,
+      "scan_page": 138,
+      "printed_page": 137,
+      "reader_page": 4050,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4050",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0138:305d0523d61b144e",
+      "arabic": "١١١٨٦- رقيّة بنت كعب الأسلمية»\n(١) بقي بن مخلد ١٠١٢.\n(٢) أورده الهيثمي في الزوائد ٦/ ٣٨ عن رقيقة قالت لما جاء النبيّ ﷺ يبتغي النصر بالطائف ... الحديث. قال الهيثمي رواه الطبراني وفيه من لم أعرفه.\n(٣) أسد الغابة: ت ٦٩٢٨.\n(٤) أسد الغابة: ت ٦٩٣٠.",
+      "english": "11186—Ruqayya bint Ka'b al-Aslamiyya (4)\n\n(1) Baqi ibn Makhlad, 1012.\n\n(2) al-Haythami cited it in al-Zawa'id, 6/38, from Ruqayqa, who said: “When the Prophet (may Allah bless him and grant him peace) came seeking support in al-Ta'if…”—the hadith. al-Haythami said: al-Tabarani narrated it, and among its transmitters is someone whom I do not know.\n\n(3) Usd al-Ghaba: entry 6928.\n\n(4) Usd al-Ghaba: entry 6930.",
+      "arabic_sha256": "8a437cc18f26283e925386d6121dadcac69cee67786b148b17e0a28fe1f2dd8e",
+      "english_sha256": "7f674abfcf95e6bc8b24f21fc627cf01ef59a6a03115571e175c993fce790060",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011186-segment-0002",
+      "volume": 8,
+      "scan_page": 139,
+      "printed_page": 138,
+      "reader_page": 4051,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4051",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0139:acb74c2ead90cd43",
+      "arabic": "روى سفيان بن حمزة عن أشياخه عنها. قيل: لها صحبة، ذكرها أبو نصر بن ماكولا.",
+      "english": "Sufyan ibn Hamza transmitted from his shaykhs, from her. It was said that she was a Companion; Abu Nasr ibn Makula mentioned her.",
+      "arabic_sha256": "596b954798c7b50e19fb4b026a454522afd4a7541fb2ef75b3b41624ed60a394",
+      "english_sha256": "a2a1d70c3635e2b732e6b647489e47a7e5cf13c3d6e2dcf63de1d47733c2d313",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رقيقة",
+      "english": "Ruqayqa bint Abi Sayfi ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطائف",
+      "english": "al-Ta'if",
+      "kind": "place"
+    },
+    {
+      "arabic": "رقيّة بنت كعب الأسلمية",
+      "english": "Ruqayya bint Ka'b al-Aslamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "سفيان بن حمزة",
+      "english": "Sufyan ibn Hamza",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نصر بن ماكولا",
+      "english": "Abu Nasr ibn Makula",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

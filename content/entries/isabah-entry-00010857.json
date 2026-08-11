@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010857",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10857,
+  "title": {
+    "english": "Umayma bint Sufyan",
+    "arabic_observed": "أميمة بنت سفيان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010857-segment-0001",
+      "volume": 8,
+      "scan_page": 33,
+      "printed_page": 32,
+      "reader_page": 3945,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3945",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0033:4fd52b895dd47e6e",
+      "arabic": "١٠٨٥٧- أميمة بنت سفيان\nبن وهب بن الأشيم «٢»، من بني الحارث بن عبد مناة بن كنانة الكنانية، زوج أبي سفيان بن حرب.\nأسلمت بعد الفتح وبايعت. ذكر ذلك ابن سعد، وقال: إنها أم عبد اللَّه. قال: ويقال كان إسلامها بعد الفتح.",
+      "english": "10857 — Umayma bint Sufyan\n\nibn Wahb ibn al-Ashyam, (2) a Kinani woman from Banu al-Harith ibn Abd Manat ibn Kinana and the wife of Abu Sufyan ibn Harb.\n\nShe embraced Islam after the Conquest and gave the pledge of allegiance. Ibn Sa'd mentioned this and said that she was the mother of Abd Allah. He said: “It is also said that she embraced Islam after the Conquest.”",
+      "arabic_sha256": "2b438c4e7b06d259ca93c3388ba62354e2b983436ee9ebfaf5a242a61285dbfd",
+      "english_sha256": "ecc482a79f5f62ac9302b76d6f0621c82e8c1e41862229bd8f17a6c49bf1f06e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بني الحارث بن عبد مناة بن كنانة",
+      "english": "Banu al-Harith ibn Abd Manat ibn Kinana",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو سفيان بن حرب",
+      "english": "Abu Sufyan ibn Harb",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

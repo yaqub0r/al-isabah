@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011396",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11396,
+  "title": {
+    "english": "Sakhra bint Abi Jahl",
+    "arabic_observed": "صخرة بنت أبي جهل ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011396-segment-0001",
+      "volume": 8,
+      "scan_page": 209,
+      "printed_page": 208,
+      "reader_page": 4121,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4121",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0209:22ac144d448c10f6",
+      "arabic": "١١٣٩٦- صخرة بنت أبي جهل ،\nواسمه عمرو بن هشام بن المغيرة المخزومي، تزوّجها أبو سعيد بن الحارث بن هشام، فولدت له، وتزوجها خالد بن العاص بن هشام فولدت له أمّ الحارث بنت خالد.\nذكرها الزّبير بن بكّار، وذكر لها الفاكهيّ في كتاب مكة قصة، وهي من أهل هذا القسم، لأنّ أباها قتل يوم بدر، فكانت هي ممن حضر يوم الفتح وهي مميزة، ثم حجّة الوداع، وعاشت بعد النبي ﷺ إلى أن تزوجت وولدت.",
+      "english": "11396—Sakhra bint Abi Jahl\n\nHis name was Amr ibn Hisham ibn al-Mughira al-Makhzumi. Abu Sa'id ibn al-Harith ibn Hisham married her, and she bore him children. Khalid ibn al-As ibn Hisham also married her, and she bore him Umm al-Harith bint Khalid.\n\nal-Zubayr ibn Bakkar mentioned her, and al-Fakihi related a story concerning her in The Book of Mecca. She belongs to this section because her father was killed on the day of Badr, so she was among those present on the day of the Conquest while already of an age of discernment, and then at the Farewell Pilgrimage. She lived after the Prophet—may Allah bless him and grant him peace—long enough to marry and bear children.",
+      "arabic_sha256": "b69530ab63363511feeb94fa84035584d91f3598ab0b07ecb6278b6063fe3ca2",
+      "english_sha256": "cffb1c6b7c00392074a6021747b0aab92e25f18ffc986f94205c36a635241556",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "صخرة بنت أبي جهل",
+      "english": "Sakhra bint Abi Jahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن هشام بن المغيرة المخزومي",
+      "english": "Amr ibn Hisham ibn al-Mughira al-Makhzumi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سعيد بن الحارث بن هشام",
+      "english": "Abu Sa'id ibn al-Harith ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد بن العاص بن هشام",
+      "english": "Khalid ibn al-As ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الحارث بنت خالد",
+      "english": "Umm al-Harith bint Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفاكهي",
+      "english": "al-Fakihi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب مكة",
+      "english": "The Book of Mecca",
+      "kind": "work"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "يوم الفتح",
+      "english": "the Conquest",
+      "kind": "other"
+    },
+    {
+      "arabic": "حجة الوداع",
+      "english": "the Farewell Pilgrimage",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

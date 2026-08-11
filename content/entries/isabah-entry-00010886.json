@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010886",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10886,
+  "title": {
+    "english": "Anisa bint Rihm—also said to be Ruqaym—an Ansari woman[3] of Banu Khatma.",
+    "arabic_observed": "أنيسة بنت"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010886-segment-0001",
+      "volume": 8,
+      "scan_page": 39,
+      "printed_page": 38,
+      "reader_page": 3951,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3951",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0039:257d47e9f650d81a",
+      "arabic": "١٠٨٨٦- أنيسة بنت\nرهم، ويقال رقيم الأنصارية «٣»، من بني خطمة.",
+      "english": "10886—Anisa bint Rihm—also said to be Ruqaym—an Ansari woman[3] of Banu Khatma.",
+      "arabic_sha256": "b660c4518f23b396494b42127dd48921171cc8e8984b990361ad8f92dff17e88",
+      "english_sha256": "245e20fd7fe146407d498f26ef9f2e001e382ec87e672389d745b32a39605e1e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أنيسة بنت رهم",
+      "english": "Anisa bint Rihm",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو خطمة",
+      "english": "Banu Khatma",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

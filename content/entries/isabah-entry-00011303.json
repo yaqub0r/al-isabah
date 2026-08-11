@@ -1,0 +1,125 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011303",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11303,
+  "title": {
+    "english": "Saffana bint Hatim al-Ta'i [1]",
+    "arabic_observed": "سفّانة بنت حاتم الطائي «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011303-segment-0001",
+      "volume": 8,
+      "scan_page": 181,
+      "printed_page": 180,
+      "reader_page": 4093,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4093",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0181:dc70dfa0e18df5df",
+      "arabic": "١١٣٠٣- سفّانة بنت حاتم الطائي «١»\n. تقدم نسبها في ترجمة أخيها عدي بن حاتم،\nذكرها محمّد بن إسحاق في «المغازي»، قال: أصابت خيل رسول اللَّه ﷺ ابنة حاتم في سبايا طي، فقدمت بها على رسول اللَّه ﷺ فجعلت في حظيرة بباب المسجد، فمرّ بها رسول اللَّه ﷺ، فقامت إليه- وكانت امرأة جزلة، فقالت: يا رسول اللَّه، هلك الوالد، وغاب الوافد. فقال: «ومن وافدك»؟ قالت: عدي بن حاتم. قال: «الفارّ من اللَّه ورسوله» ! ومضى حتى مرّ ثلاثا، قالت: فأشار إليّ رجل من خلفه أن قومي فكلميه. قالت: يا رسول اللَّه، هلك الوالد، وغاب الوافد، فامنن عليّ منّ اللَّه عليك. قال: «قد فعلت»، فلا تعجلي حتى تجدي ثقة يبلّغك بلادك، تم آذنيني. فسألت عن الرجل الّذي أشار إلي فقيل علي بن أبي طالب.\nوقدم ركب من بليّ، فأتيت رسول اللَّه ﷺ، فقلت: قدم رهط من قومي. قالت:\nوكساني رسول اللَّه ﷺ وحملني وأعطاني نفقة، فخرجت حتى قدمت على أخي، فقال: «ما ترين في هذا الرّجل»؟ فقلت: أرى أن نلحق به.\nقال ابن الأثير: كذا رواه يونس، ولم يسم سفّانة، وسماها غيره. ورواه عبد العزيز بن أبي روّاد بنحوه، وزاد: وكانت أسلمت وحسن إسلامها.\nأخرجه أبو نعيم من طريقه، وأخرج قصّتها الطبراني، وسماها، وأوردها الخرائطي في مكارم الأخلاق من حديث علي بن أبي طالب ﵁، وسياقه أتم، وفي سنده من لا يعرف.",
+      "english": "11303 — Saffana bint Hatim al-Ta'i [1]\n\nHer lineage was given previously in the entry on her brother, Adi ibn Hatim.\n\nMuhammad ibn Ishaq mentioned her in al-Maghazi. He said: The cavalry of the Messenger of Allah, may Allah bless him and grant him peace, captured the daughter of Hatim among the captives of Tayy and brought her before the Messenger of Allah, may Allah bless him and grant him peace. She was placed in an enclosure at the door of the mosque. The Messenger of Allah, may Allah bless him and grant him peace, passed by her, and she rose to address him—she was a resolute, intelligent woman—and said, “O Messenger of Allah, the father has perished, and the delegate is absent.” He asked, “Who is your delegate?” She replied, “Adi ibn Hatim.” He said, “The one who fled from Allah and His Messenger!” He went on, until he had passed by three times. She said: A man behind him gestured to me to rise and speak to him. She said: “O Messenger of Allah, the father has perished, and the delegate is absent, so bestow your favor upon me, as Allah has bestowed His favor upon you.” He said, “I have done so. But do not hasten until you find a trustworthy person who can convey you to your country; then inform me.” I asked about the man who had gestured to me, and was told that he was Ali ibn Abi Talib.\n\nA caravan from Baliy arrived, so I went to the Messenger of Allah, may Allah bless him and grant him peace, and said, “A group from my people has arrived.” She said: The Messenger of Allah, may Allah bless him and grant him peace, clothed me, provided me with a mount, and gave me traveling expenses. I departed until I reached my brother. He asked, “What do you think of this man?” I replied, “I think we should join him.”\n\nIbn al-Athir said: This is how Yunus transmitted it, without naming Saffana, whereas another named her. Abd al-Aziz ibn Abi Rawwad transmitted a similar account and added: She had embraced Islam, and her adherence to Islam was excellent.\n\nAbu Nu'aym reported it through his chain. Al-Tabarani also reported her story and named her. Al-Khara'iti included it in Makarim al-Akhlaq from the hadith of Ali ibn Abi Talib, may Allah be pleased with him. Its account is more complete, but its chain contains an unidentified transmitter.",
+      "arabic_sha256": "a5167db6b571592b32d1ba2aee8e7b772efcf647edf1eddce08fe16ebc65f8bf",
+      "english_sha256": "dafccc0cf4a851725a6b7064a57aa8f5eedad0f091335102d051659fda400454",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سفّانة بنت حاتم الطائي",
+      "english": "Saffana bint Hatim al-Ta'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "حاتم",
+      "english": "Hatim al-Ta'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "عدي بن حاتم",
+      "english": "Adi ibn Hatim",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمّد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "المغازي",
+      "english": "al-Maghazi",
+      "kind": "work"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "طي",
+      "english": "Tayy",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "علي بن أبي طالب",
+      "english": "Ali ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "بليّ",
+      "english": "Baliy",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس",
+      "english": "Yunus",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد العزيز بن أبي روّاد",
+      "english": "Abd al-Aziz ibn Abi Rawwad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخرائطي",
+      "english": "al-Khara'iti",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكارم الأخلاق",
+      "english": "Makarim al-Akhlaq",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

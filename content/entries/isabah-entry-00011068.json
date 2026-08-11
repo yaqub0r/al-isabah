@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011068",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11068,
+  "title": {
+    "english": "Hawwa bint Rafi'",
+    "arabic_observed": "حوّاء بنت رافع"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011068-segment-0001",
+      "volume": 8,
+      "scan_page": 91,
+      "printed_page": 90,
+      "reader_page": 4003,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4003",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0091:d880b30f1b3c0a23",
+      "arabic": "١١٠٦٨- حوّاء بنت رافع\nبن امرئ القيس الأشهلية «٢» .\nذكرها ابن مندة، ونقل عن محمد بن سعد أنه ذكرها في المبايعات.\nقلت: وابن سعد ذكرها عن الواقديّ، وقال: لم نجد في نسب الأنصار لرافع إلا بنتا واحدة، وهي الصعبة، وأمها خزيمة بنت عدي النجارية، وهي أخت أبي الحيسر.",
+      "english": "11068—Hawwa bint Rafi'\n\nibn Imri' al-Qays al-Ashhaliyya.[2]\n\nIbn Manda mentioned her and transmitted from Muhammad ibn Sa'd that he had mentioned her among the women who pledged allegiance.\n\nI say: Ibn Sa'd mentioned her on the authority of al-Waqidi and said: “In the genealogy of the Ansar, we found only one daughter of Rafi', namely al-Sa'ba. Her mother was Khuzayma bint Adi al-Najjariyya, and she was the sister of Abu al-Haysar.”",
+      "arabic_sha256": "3b34ea3d1db6e7b663c89d7ab498fbfe4e9f51e6b265006fa6ea2bb0270e1ea3",
+      "english_sha256": "9346c2f0988abe5ac9ac65275bd777027edb46d1802eae020d9eb86d677eae28",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "محمد بن سعد",
+      "english": "Muhammad ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الصعبة",
+      "english": "al-Sa'ba bint Rafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "خزيمة بنت عدي النجارية",
+      "english": "Khuzayma bint Adi al-Najjariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الحيسر",
+      "english": "Abu al-Haysar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011074",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11074,
+  "title": {
+    "english": "al-Hawla",
+    "arabic_observed": "الحولاء ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011074-segment-0001",
+      "volume": 8,
+      "scan_page": 95,
+      "printed_page": 94,
+      "reader_page": 4007,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4007",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0095:1749274e3ab1cd52",
+      "arabic": "١١٠٧٤- الحولاء ،\nأخرى، لم تنسب.\nأخرج أبو عمر من طريق الكديمي، عن أبي عاصم، عن صالح بن رستم، عن ابن أبي مليكة، عن عائشة، قالت: استأذنت الحولاء على رسول اللَّه ﷺ، فأذن لها، وأقبل عليها، فقال: «كيف أنت؟» فقلت: أتقبل على هذه هذا الإقبال؟ قال: «إنّها كانت تأتينا زمن خديجة، وإنّ حسن العهد من الإيمان» .\nقال أبو عمر- بعد أن أورده في ترجمة الحولاء بنت تويت: هكذا رواه الكديمي.\nوالصواب أن هذه القصة لحسانة المدينة كما تقدم.\n(١) في أفقال.\n(٢) أسد الغابة ت ٦٨٦٧.",
+      "english": "11074—al-Hawla\n\nAnother woman of that name, whose lineage is not given.\n\nAbu 'Umar related through al-Kudaymi, from Abu 'Asim, from Salih ibn Rustum, from Ibn Abi Mulayka, from Aisha, who said: Al-Hawla sought permission to enter upon the Messenger of Allah—may Allah bless him and grant him peace—and he gave her permission and received her with marked attention. I said, “Do you show this woman such attention?” He replied, “She used to visit us in the time of Khadijah, and loyalty to old bonds is part of faith.”\n\nAfter citing it in the biography of al-Hawla bint Tuwayt, Abu 'Umar said: “This is how al-Kudaymi transmitted it. The correct view is that this story concerns Hassana of Medina, as stated above.”\n\n[1] Manuscript A reads: “then he said.”\n\n[2] Usd al-Ghaba, entry no. 6867.",
+      "arabic_sha256": "5b5bce0df5de5cf3d6934f6455040b2371ed12846ac3e65aaf82af25307acb83",
+      "english_sha256": "8cfd8af958cdcb4240ddf42f772a15da01a0586f01b462c3f8fc3fbbf4c98f2e",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011074-segment-0002",
+      "volume": 8,
+      "scan_page": 96,
+      "printed_page": 95,
+      "reader_page": 4008,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4008",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0096:b59aecbc198f371f",
+      "arabic": "قلت: لا يمتنع احتمال التعدد، كما لا يمتنع احتمال أن تكون حسانة اسمها والحولاء وصفها أو لقبها، وقد اعترف أبو عمر بأنّ الكديمي لم يقل بنت تويت، وإذا كان كذلك فلم يصب من أورد هذه القصة في ترجمة الحولاء بنت تويت، ثم اعترض، وإنما هي أخرى إن ثبت السند. والعلم عند اللَّه تعالى.",
+      "english": "I said: The possibility of there being more than one woman cannot be ruled out, just as it is possible that Hassana was her name and al-Hawla was a description or sobriquet of hers. Abu Umar himself acknowledged that al-Kudaymi did not say “bint Tuwayt.” Since that is so, whoever placed this story in the biography of al-Hawla bint Tuwayt and then objected did not get it right. Rather, she is another woman, if the chain of transmission is established. Knowledge rests with Allah Most High.",
+      "arabic_sha256": "df02058328be3efd1935196d8d404914b3f66a7f111d23a635a80543330d789c",
+      "english_sha256": "3c4eecfba6c7891a596b444d67db4a639e1aea771217a41d641efef2c9cba2f1",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحولاء بنت تويت",
+      "english": "al-Hawla bint Tuwayt",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "الحولاء",
+      "english": "al-Hawla",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكديمي",
+      "english": "al-Kudaymi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عاصم",
+      "english": "Abu 'Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "صالح بن رستم",
+      "english": "Salih ibn Rustum",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي مليكة",
+      "english": "Ibn Abi Mulayka",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "حسانة المدينة",
+      "english": "Hassana of Medina",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "حسانة",
+      "english": "Hassana",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه تعالى",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

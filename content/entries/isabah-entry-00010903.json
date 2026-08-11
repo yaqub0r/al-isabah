@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010903",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10903,
+  "title": {
+    "english": "Umama bint al-Ashajj al-Abdi",
+    "arabic_observed": "أمامة بنت الأشج العبديّ ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010903-segment-0001",
+      "volume": 8,
+      "scan_page": 43,
+      "printed_page": 42,
+      "reader_page": 3955,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3955",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0043:ed928aba822b3abd",
+      "arabic": "١٠٩٠٣- أمامة بنت الأشج العبديّ ،\nكانت زوج ابن أخيه عمرو بن عبد قيس، فلما جاء عمرو من عند النبي ﷺ مسلما أسلمت امرأته، وقد تقدم بيان ذلك في ترجمة صحار بن العباس.",
+      "english": "10903—Umama bint al-Ashajj al-Abdi\n\nShe was the wife of his nephew, Amr ibn Abd Qays. When Amr returned from the Prophet ﷺ as a Muslim, his wife embraced Islam. The details of this have already appeared in the entry on Suhar ibn al-Abbas.",
+      "arabic_sha256": "791aad480063f232d4d3318f98eb5e03323f4ab460a37a89a90104902fb2f6f3",
+      "english_sha256": "3722c6a23a982f8972c744aad57af9744ef84b12e1cec8b2c79ee5bc798e0725",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أمامة بنت الأشج العبديّ",
+      "english": "Umama bint al-Ashajj al-Abdi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن عبد قيس",
+      "english": "Amr ibn Abd Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحار بن العباس",
+      "english": "Suhar ibn al-Abbas",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

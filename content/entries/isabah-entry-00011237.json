@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011237",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11237,
+  "title": {
+    "english": "Zaynab bint Khunas (1)",
+    "arabic_observed": "زينب بنت خناس «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011237-segment-0001",
+      "volume": 8,
+      "scan_page": 159,
+      "printed_page": 158,
+      "reader_page": 4071,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4071",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0159:f252c3d00282df58",
+      "arabic": "١١٢٣٧- زينب بنت خناس «١»\n، بضم المعجمة وتخفيف النون ثم مهملة.\nذكره ابن إسحاق فيمن أعطى النبيّ ﷺ لأصحابه من سبي هوازن، وأنه أعطاها لعثمان، فلما أمر النبيّ ﷺ بردّ السبي ردّها عثمان إلى أهلها، فرجعت إلى زوجها.\nقال ابن إسحاق: فحدثني أبو وجزة أن ابن عمها وهو زوجها قدم بها المدينة في أيام عمر، فلقيها عثمان، فلما رأى زوجها قال لها: ويحك! هذا كان أحب إليك مني! قالت:\nنعم، زوجي وابن عمي.",
+      "english": "11237 — Zaynab bint Khunas (1)\n\nThe name has a damma on the dotted kha, an ungeminated nun, and then the undotted sin.\n\nIbn Ishaq mentioned her among the captives of Hawazin whom the Prophet, may Allah bless him and grant him peace, gave to his Companions. He gave her to Uthman. When the Prophet, may Allah bless him and grant him peace, ordered that the captives be returned, Uthman returned her to her family, and she went back to her husband.\n\nIbn Ishaq said: Abu Wajza related to me that her paternal cousin, who was her husband, brought her to Medina during the days of Umar. Uthman encountered her, and when he saw her husband he said to her, “Woe to you! Was this man dearer to you than I was?” She replied, “Yes—he is my husband and my paternal cousin.”",
+      "arabic_sha256": "005f4c6835e6901ec296b3be82a074cf25ef6c418c3c1a817abff89e9f731398",
+      "english_sha256": "094ebeeb8675bb53dbe3e5b996c4f305281cf981ad0dae74338cdfe124abcdb0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "زينب بنت خناس",
+      "english": "Zaynab bint Khunas",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "هوازن",
+      "english": "Hawazin",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو وجزة",
+      "english": "Abu Wajza",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

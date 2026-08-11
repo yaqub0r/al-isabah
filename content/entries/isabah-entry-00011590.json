@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011590",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11590,
+  "title": {
+    "english": "Fatima bint Junayd",
+    "arabic_observed": "فاطمة بنت جنيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011590-segment-0001",
+      "volume": 8,
+      "scan_page": 271,
+      "printed_page": 270,
+      "reader_page": 4183,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4183",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0271:dd5ecaeb6c9be423",
+      "arabic": "١١٥٩٠- فاطمة بنت جنيد\nبن عمرو بن عبد شمس بن عمرو، زوج العباس بن عبد المطلب، ووالدة الحارث ولده. ذكرها الزبير بن بكار.",
+      "english": "11590—Fatima bint Junayd\n\nibn Amr ibn Abd Shams ibn Amr, the wife of al-Abbas ibn Abd al-Muttalib and the mother of his son al-Harith. Al-Zubayr ibn Bakkar mentioned her.",
+      "arabic_sha256": "44191093a797e116ac7bb998d968a3c7538dd27b2f6e1d348ff054fe461df91c",
+      "english_sha256": "e36eb27f503d419637033af6e2a78897859f9d30f69930e0fcd300cd099af250",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "العباس بن عبد المطلب",
+      "english": "al-Abbas ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث ولده",
+      "english": "al-Harith ibn al-Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

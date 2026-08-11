@@ -1,0 +1,184 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011034",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11034,
+  "title": {
+    "english": "Habiba bint Shariq,",
+    "arabic_observed": "حبيبة بنت شريق ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011034-segment-0001",
+      "volume": 8,
+      "scan_page": 83,
+      "printed_page": 82,
+      "reader_page": 3995,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3995",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0083:0bc386c4bae48ad5",
+      "arabic": "١١٠٣٤- حبيبة بنت شريق ،\nبفتح المعجمة، وقيل بنت أبي شريق الأنصارية «٢»، وقيل الهذلية هي جدة عيسى بن مسعود بن الحكم، وروى هو عنها، قال ابن عبد البرّ.\nوقال ابن مندة: روت عن بديل بن ورقاء، روى حديثها صالح بن كيسان، عن عيسى بن مسعود، عن جدته حبيبة. ثم ساقه من طريق سعيد بن سلمة، عن صالح، عن عيسى الزرقيّ، عن جدته- أنها كانت مع أمها بنت العجفاء في أيام الحج بمنى، فجاءهم بديل بن ورقاء على راحلة رسول اللَّه ﷺ فنادى: إن رسول اللَّه ﷺ قال: «من كان صائما فليفطر، فإنّها أيّام أكل وشرب» .\nوأخرج النّسائيّ حديثها من جهة مسعود بن الحكم عن أمه، ولم يسمّها، ولكن [عنده] عن علي بن أبي طالب لا عن بديل، فيحتمل التعدد.\nوذكرها ابن حبّان في «ثقات التّابعين»، وستأتي في الكنى، ويقال اسمها أسماء كما\n(١) أسد الغابة: ت ٦٨٣٧، الاستيعاب ت ٣٣٣٦.\n(٢) أسد الغابة: ت ٦٨٣٨، الاستيعاب ت ٣٣٣٧.",
+      "english": "11034—Habiba bint Shariq,\n\nwith a fatha on the shin. She is also said to have been Habiba bint Abi Shariq al-Ansariyya,² and she is also said to have been al-Hudhaliyya. She was the grandmother of Isa ibn Mas'ud ibn al-Hakam, and he narrated from her, according to Ibn Abd al-Barr.\n\nIbn Manda said: She narrated from Budayl ibn Warqa. Her hadith was narrated by Salih ibn Kaysan, from Isa ibn Mas'ud, from his grandmother Habiba. He then cited it through Sa'id ibn Salama, from Salih, from Isa al-Zuraqi, from his grandmother—that she was with her mother, the daughter of al-Ajfa, at Mina during the days of the pilgrimage. Budayl ibn Warqa came to them mounted on the Messenger of Allah's riding beast and proclaimed: “The Messenger of Allah, may Allah bless him and grant him peace, said: ‘Whoever is fasting should break his fast, for these are days of eating and drinking.’”\n\nal-Nasa'i transmitted her hadith through Mas'ud ibn al-Hakam, from his mother, without naming her. But [in his version] it is from Ali ibn Abi Talib, not from Budayl; it is therefore possible that there were two different women.\n\nIbn Hibban mentioned her among the “Trustworthy Successors.” She will appear later in the section on kunyas. It is also said that her name was Asma, as...\n\n¹ Usd al-Ghaba, entry 6837; al-Isti'ab, entry 3336.\n\n² Usd al-Ghaba, entry 6838; al-Isti'ab, entry 3337.",
+      "arabic_sha256": "5e9c0f5a2af921fa1fea22d7e01707a2332a927fb7a116ee5ff9fc16b4cf3069",
+      "english_sha256": "e8718618414e1490c5d5a528c18b5bfe7556122e7c5da2e4fbcb8e4962d377ea",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011034-segment-0002",
+      "volume": 8,
+      "scan_page": 84,
+      "printed_page": 83,
+      "reader_page": 3996,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3996",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0084:085dc29367a2b72c",
+      "arabic": "تقدم، وقد وقع مثل ذلك لعمرو بن سليم، عن أمه- أنها رأت عليّا ينادي بذلك، فهذه قرينة تقوّي التعدد.",
+      "english": "As stated above. A similar report is transmitted by Amr ibn Sulaym, from his mother: she saw Ali calling this out. This is an indication that strengthens the view that there were multiple women involved.",
+      "arabic_sha256": "263cd772520cb8964002cbae913f71513494156c3fcfd0066cc940649ef7937e",
+      "english_sha256": "649447b6d9051e2889a5ba0c4c0a9820dc9d6d397e335e8c5e3ac577958671b2",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصاري",
+      "english": "al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "حبيبة بنت شريق",
+      "english": "Habiba bint Shariq",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة بنت أبي شريق الأنصارية",
+      "english": "Habiba bint Abi Shariq al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهذلية",
+      "english": "Habiba bint Shariq al-Hudhaliyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عيسى بن مسعود بن الحكم",
+      "english": "Isa ibn Mas'ud ibn al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبد البر",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "بديل بن ورقاء",
+      "english": "Budayl ibn Warqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "صالح بن كيسان",
+      "english": "Salih ibn Kaysan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عيسى بن مسعود",
+      "english": "Isa ibn Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن سلمة",
+      "english": "Sa'id ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "عيسى الزرقي",
+      "english": "Isa al-Zuraqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "العجفاء",
+      "english": "al-Ajfa",
+      "kind": "person"
+    },
+    {
+      "arabic": "منى",
+      "english": "Mina",
+      "kind": "place"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "the Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسعود بن الحكم",
+      "english": "Mas'ud ibn al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن أبي طالب",
+      "english": "Ali ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثقات التابعين",
+      "english": "Trustworthy Successors",
+      "kind": "other"
+    },
+    {
+      "arabic": "أسماء",
+      "english": "Asma",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "عمرو بن سليم",
+      "english": "Amr ibn Sulaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّا",
+      "english": "Ali",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

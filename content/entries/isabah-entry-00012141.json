@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012141",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12141,
+  "title": {
+    "english": "Umm Abd Allah",
+    "arabic_observed": "أم عبد اللَّه"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012141-segment-0001",
+      "volume": 8,
+      "scan_page": 429,
+      "printed_page": 428,
+      "reader_page": 4341,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4341",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0429:c656a103def0737c",
+      "arabic": "١٢١٤١- أم عبد اللَّه\nبنت عازب الأنصاريّة.\nتقدّم نسبها في ترجمة أخيها البراء ووالدها. ذكرها ابن سعد في المبايعات، وقال:\nهي شقيقة البراء، أمهما أم حبيبة بنت أم حبيبة بن الحباب النّجاريّة. ويقال: إنها أم خالد بنت ثابت بن سنان بن عبيد بن الأبجر، أسلمت وبايعت.",
+      "english": "12141—Umm Abd Allah\n\nbint Azib, the Ansari woman.\n\nHer lineage has been given previously in the notices on her brother al-Bara and her father. Ibn Sa'd mentioned her among the women who gave the pledge of allegiance and said: She was al-Bara's full sister. Their mother was Umm Habiba bint Umm Habiba ibn al-Hubab, the Najjari woman. It is also said that their mother was Umm Khalid bint Thabit ibn Sinan ibn Ubayd ibn al-Abjar. Umm Abd Allah embraced Islam and gave the pledge of allegiance.",
+      "arabic_sha256": "521cd3f124935d5bb851b60ff5387645d253714fad8aaef1d71f78dcb3fee04a",
+      "english_sha256": "2cfb982928ebd660d914fff4be9e22ec838f2300d69b6e4f53143d1e13c966bc",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "البراء",
+      "english": "al-Bara ibn Azib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة بنت أم حبيبة بن الحباب النّجاريّة",
+      "english": "Umm Habiba bint Umm Habiba ibn al-Hubab al-Najjariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم خالد بنت ثابت بن سنان بن عبيد بن الأبجر",
+      "english": "Umm Khalid bint Thabit ibn Sinan ibn Ubayd ibn al-Abjar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

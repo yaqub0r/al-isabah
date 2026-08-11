@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010981",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10981,
+  "title": {
+    "english": "Jamra bint al-Harith ibn Ghawf",
+    "arabic_observed": "جمرة بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010981-segment-0001",
+      "volume": 8,
+      "scan_page": 65,
+      "printed_page": 64,
+      "reader_page": 3977,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3977",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0065:73a9e31b1c64c35b",
+      "arabic": "١٠٩٨١- جمرة بنت الحارث\nبن غوف: هي البرصاء. تقدمت.",
+      "english": "10981—Jamra bint al-Harith ibn Ghawf\n\nShe is al-Barsa. She was mentioned previously.",
+      "arabic_sha256": "2fc7613a66664a28e463b2895d4b1287064f343b2283fe966a56bd49cebd2dce",
+      "english_sha256": "2f00912efe2da3dce6c3232045d3c45c3ff90d21f5001892f1b6b7a0fdb902e7",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "جمرة بنت الحارث بن غوف",
+      "english": "Jamra bint al-Harith ibn Ghawf",
+      "kind": "person"
+    },
+    {
+      "arabic": "البرصاء",
+      "english": "al-Barsa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

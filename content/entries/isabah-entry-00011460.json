@@ -1,0 +1,115 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011460",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11460,
+  "title": {
+    "english": "al-Aliya bint Zabyan",
+    "arabic_observed": "العالية بنت ظبيان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011460-segment-0001",
+      "volume": 8,
+      "scan_page": 232,
+      "printed_page": 231,
+      "reader_page": 4144,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4144",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0232:80d98c6d68a893c2",
+      "arabic": "١١٤٦٠- العالية بنت ظبيان\nبن عمرو بن عوف بن عبد بن أبي بكر «١» بن كلاب الكلابيّة.\nتزوّجها رسول اللَّه ﵌، وكانت عنده ما شاء اللَّه، ثم طلّقها، كذا قاله أبو عمر، فمقتضاه أن تكون ممّن دخل بهن.\nوقال ابن مندة لما ذكر الأزواج: وطلق العالية بنت ظبيان، وبلغنا أنها تزوّجت قبل أن يحرّم اللَّه النّساء، فنكحت ابن عم لها من قومها، وولدت فيهم.\nقلت: وهذا أخرجه عبد الرّزّاق في تفسيره، عن معمر، عن الزهري- أن العالية بنت ظبيان التي طلقها وتزوّجت وكان يقال لها أم المساكين، فتزوّجت قبل أن يحرم على الناس نكاح أزواج النّبيّ ﵌.\nوأخرجه أبو نعيم، من طريق الليث، عن عقيل، عن الزّهري نحوه دون قوله: وكان يقال لها أم المساكين.\nومن طريق معمر، عن يحيى بن أبي كثير قال: نكح رسول اللَّه ﵌ امرأة من بني ربيعة يقال لها العالية بنت ظبيان وطلّقها حين أدخلت عليه.",
+      "english": "11460 — al-Aliya bint Zabyan\n\nibn Amr ibn Awf ibn Abd ibn Abi Bakr¹ ibn Kilab, al-Kilabiyya.\n\nThe Messenger of Allah—may Allah bless him and grant him peace—married her, and she remained with him as long as Allah willed; then he divorced her. This is how Abu Umar related it, which implies that she was among those with whom he consummated marriage.\n\nIbn Manda, when mentioning the wives, said: “He divorced al-Aliya bint Zabyan. We have been informed that she married before Allah prohibited [marriage to] the women; she married a paternal cousin from her own people and bore children among them.”\n\nI say: Abd al-Razzaq transmitted this in his Tafsir, from Mamar, from al-Zuhri: al-Aliya bint Zabyan, whom he divorced, remarried, and she was called Umm al-Masakin. She married before people were forbidden to marry the wives of the Prophet—may Allah bless him and grant him peace.\n\nAbu Nuaym also transmitted it by way of al-Layth, from Uqayl, from al-Zuhri, similarly, but without the statement, “She was called Umm al-Masakin.”\n\nAnd by way of Mamar, from Yahya ibn Abi Kathir, who said: “The Messenger of Allah—may Allah bless him and grant him peace—married a woman of Banu Rabia called al-Aliya bint Zabyan, and divorced her when she was brought in to him.”",
+      "arabic_sha256": "ef725227ed7d4934b135b856cebc564304bbe58444815cc2520ecf55a8a9495b",
+      "english_sha256": "dcb9d628536dc3a2ac30c6fe06fa043258b3f9bb80695677d5185d690bffa4d6",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عبد الرزاق",
+      "english": "Abd al-Razzaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "تفسيره",
+      "english": "Tafsir Abd al-Razzaq",
+      "kind": "work"
+    },
+    {
+      "arabic": "معمر",
+      "english": "Mamar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم المساكين",
+      "english": "Umm al-Masakin",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nuaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "الليث",
+      "english": "al-Layth",
+      "kind": "person"
+    },
+    {
+      "arabic": "عقيل",
+      "english": "Uqayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن أبي كثير",
+      "english": "Yahya ibn Abi Kathir",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني ربيعة",
+      "english": "Banu Rabia",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

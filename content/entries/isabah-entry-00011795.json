@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011795",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11795,
+  "title": {
+    "english": "Mulayka:",
+    "arabic_observed": "مليكة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011795-segment-0001",
+      "volume": 8,
+      "scan_page": 331,
+      "printed_page": 330,
+      "reader_page": 4243,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4243",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0331:1ac8849640fb7197",
+      "arabic": "١١٧٩٥- مليكة:\nوالدة الحطيئة الشاعر، لها ذكر في ترجمته يدلّ على أنها عاشت إلى العهد النبويّ.",
+      "english": "11795 — Mulayka:\n\nMother of the poet al-Hutay'a. She is mentioned in his biographical notice in a way indicating that she lived into the Prophetic era.",
+      "arabic_sha256": "c9a060bcf3fe3bb41419b78bfab496486cef28d25c9d62c7aa91bb558a865583",
+      "english_sha256": "e1461d6afd30724e60b38733375699a302d60e7f7da77471a5fdb6a38c88efb4",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مليكة",
+      "english": "Mulayka",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحطيئة",
+      "english": "al-Hutay'a",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

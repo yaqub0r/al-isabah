@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012209",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12209,
+  "title": {
+    "english": "Umm Qurra:",
+    "arabic_observed": "أم قرة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012209-segment-0001",
+      "volume": 8,
+      "scan_page": 454,
+      "printed_page": 453,
+      "reader_page": 4366,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4366",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0454:ed54e7c92e72373b",
+      "arabic": "١٢٢٠٩- أم قرة:\nامرأة دعموص «١» .\nقال ابن مندة: لها ذكر، وتقدم حديثها.",
+      "english": "12209—Umm Qurra:\n\nThe wife of Da'mus.(1)\n\nIbn Mandah said: She is mentioned, and her hadith has appeared above.",
+      "arabic_sha256": "dc1733b5f77094cee860d956db293d8f5d1a473195ae849339f4d1974f7c418e",
+      "english_sha256": "eab1d2c2b93d016087be0d574fe7fabdc897dc1f542481cf1aa4040d80ee2a4f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم قرة",
+      "english": "Umm Qurra",
+      "kind": "person"
+    },
+    {
+      "arabic": "دعموص",
+      "english": "Da'mus",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

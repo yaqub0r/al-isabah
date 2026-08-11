@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011926",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11926,
+  "title": {
+    "english": "Umm Thabit bint Mas'ud",
+    "arabic_observed": "أم ثابت بنت مسعود"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011926-segment-0001",
+      "volume": 8,
+      "scan_page": 368,
+      "printed_page": 367,
+      "reader_page": 4280,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4280",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0368:8e680841dd9b1c66",
+      "arabic": "١١٩٢٦- أم ثابت بنت مسعود\nبن سعد بن قيس بن خلدة الأنصاريّة الزرقيّة «١» .\nذكرها ابن حبيب في المبايعات، وذكرها ابن سعد، وقال: هي أخت أم سعد لأبيها وأمها.",
+      "english": "11926—Umm Thabit bint Mas'ud\nibn Sa'd ibn Qays ibn Khalda, the Ansari woman of the Banu Zurayq.¹\nIbn Habib mentioned her among the women who gave the pledge of allegiance. Ibn Sa'd also mentioned her and said: “She is the full sister of Umm Sa'd, through both her father and her mother.”",
+      "arabic_sha256": "f93b84817052a7adef6553021e198c7ff8eef0af19cd455256d500e71d4441c6",
+      "english_sha256": "43f9ecfd4bcbcdb47bfa45863108e5205dce6d6b1a4af37f879bcc8709b83a2b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصاريّة",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الزرقيّة",
+      "english": "Banu Zurayq",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم سعد",
+      "english": "Umm Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

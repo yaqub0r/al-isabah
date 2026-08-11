@@ -1,0 +1,264 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012244",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12244,
+  "title": {
+    "english": "Umm Malik al-Bahziyya (2):",
+    "arabic_observed": "أم مالك البهزية «٢»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012244-segment-0001",
+      "volume": 8,
+      "scan_page": 470,
+      "printed_page": 469,
+      "reader_page": 4382,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4382",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0470:1f93df38ec7dc1df",
+      "arabic": "١٢٢٤٤- أم مالك البهزية «٢»:\nقال أبو عمر: روى عنها طاوس نحو حديث مجاهد عن أم مبشر.\nقلت:\nوساقه التّرمذيّ، من طريق محمد بن جحادة، عن رجل، عن طاوس، عن أم مالك البهزية، قالت: ذكر رسول اللَّه ﵌ فتنة فقربها، فقلت: يا رسول اللَّه، من خير الناس فيها؟ قال: «رجل في ماشية يؤدّي حقّها، ويعبد ربّه، ورجل آخذ برأس فرسه يخيف العدوّ ويخيفونه» «٣» .\nقال الترمذيّ: غريب «٤» من هذا الوجه، ورواه ليث بن أبي سليم، عن طاوس، عن مالك.\n(١) أم ملدم: كنية الحمّى. النهاية ٤/ ٢٤٦.\n(٢) أسد الغابة ت (٧٥٨٩) الاستيعاب ت (٣٦٦٨)، أعلام النساء ٥/ ١٢، تجريد أسماء الصحابة ٢/ ٣٣٤- تقريب التهذيب ٢/ ٦٢٤- تهذيب التهذيب ١٢/ ٤٧٩- الكاشف ٣/ ٤٩٢- تهذيب الكمال ٣/ ١٧٠٦- خلاصة تذهيب ٣/ ٤٠٣- بقي بن مخلد ٩٧١- تلقيح فهوم أهل الأثر ٣٨٧.\n(٣) أورده الهيثمي في الزوائد ٥/ ٢٨٢ عن أبي هريرة وقال رواه أحمد وأبو معشر نجيح ضعيف وأبو معشر مولى أبي هريرة لم أعرفه.\n(٤) في أ: من هذا الوجه.",
+      "english": "12244—Umm Malik al-Bahziyya (2):\n\nAbu Umar said: “Tawus narrated from her a report similar to Mujahid's hadith from Umm Mubashshir.”\n\nI say:\n\nal-Tirmidhi related it through Muhammad ibn Juhada, from a man, from Tawus, from Umm Malik al-Bahziyya, who said: “The Messenger of Allah (may Allah bless him and grant him peace) mentioned a tribulation and said that it was near. I asked, ‘O Messenger of Allah, who will be the best of people during it?’ He replied, ‘A man with livestock who discharges what is due from it and worships his Lord, and a man holding his horse by the head, frightening the enemy while they frighten him.’” (3)\n\nal-Tirmidhi said: “It is uncommon (gharib) (4) through this route.” Layth ibn Abi Sulaym narrated it from Tawus, from Malik.\n\n(1) Umm Mildam is a kunya for fever. al-Nihaya, 4/246.\n\n(2) Usd al-Ghaba, entry 7589; al-Isti'ab, entry 3668; A'lam al-Nisa', 5/12; al-Tajrid, 2/334; Taqrib al-Tahdhib, 2/624; Tahdhib al-Tahdhib, 12/479; al-Kashif, 3/492; Tahdhib al-Kamal, 3/1706; Khulasat Tadhhib, 3/403; Baqi ibn Makhlad, 971; Talqih Fuhum Ahl al-Athar, 387.\n\n(3) al-Haythami cited it in al-Zawa'id, 5/282, from Abu Hurayra and said: “Ahmad narrated it. Abu Ma'shar Najih is weak, and I did not recognize Abu Ma'shar, the client of Abu Hurayra.”\n\n(4) In A: “through this route.”",
+      "arabic_sha256": "6400d35a8f5b83a83225ec14ba0b95b481523c1b03f3ba26f5b70d22741111c3",
+      "english_sha256": "dc1196edd564b96c2c2305d796cc4f25c882e275aa194912747daac7d0ff6df1",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012244-segment-0002",
+      "volume": 8,
+      "scan_page": 471,
+      "printed_page": 470,
+      "reader_page": 4383,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4383",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0471:989864a482d7e25a",
+      "arabic": "قلت: ورواية ليث أخرجه الطّبرانيّ، من طريق عبد الواحد بن زياد عنه، وأخرج ابن مندة نحوه، وقال: رواه جرير في آخرين عن ليث، قال: ورواه محمد بن جحادة عن رجل يقال: إنه ليث، قال: وروى النعمان بن المنذر، عن مكحول، عن أم مالك.\nقلت:\nورواية النّعمان هذه في مسند الشاميين للطبراني، وقال فيها: عن أم مالك البهزية، قالت: سألت رسول اللَّه ﵌: من أعظم الناس أجرا؟ قال:\n«رجل آخذ برأس فرسه يأتي العدوّ يخيفهم ويخيفونه» .",
+      "english": "I said: As for Layth's version, al-Tabarani transmitted it by way of Abd al-Wahid ibn Ziyad, from Layth. Ibn Manda transmitted something similar and said: “Jarir, among others, narrated it from Layth.” He said: “Muhammad ibn Juhada narrated it from a man said to be Layth.” He said: “Al-Nu'man ibn al-Mundhir narrated from Makhul, from Umm Malik.”\n\nI said:\nThis version of al-Nu'man is in al-Tabarani's Musnad al-Shamiyyin. In it he narrated from Umm Malik al-Bahziyya, who said: I asked the Messenger of Allah, may Allah bless him and grant him peace, “Who among the people receives the greatest reward?” He replied:\n“A man holding his horse by the head, who goes to the enemy, frightening them while they frighten him.”",
+      "arabic_sha256": "37cc464efe164d1295e47a28917d9b3516e11c655dd42c1395f9df3b071619f0",
+      "english_sha256": "d5b607abe799fdc59e67b992e04e7231a04848d885efe566d647b3bce36a0ceb",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم ملدم",
+      "english": "Umm Mildam",
+      "kind": "other"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم مالك البهزية",
+      "english": "Umm Malik al-Bahziyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "طاوس",
+      "english": "Tawus",
+      "kind": "person"
+    },
+    {
+      "arabic": "مجاهد",
+      "english": "Mujahid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم مبشر",
+      "english": "Umm Mubashshir",
+      "kind": "person"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن جحادة",
+      "english": "Muhammad ibn Juhada",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليث بن أبي سليم",
+      "english": "Layth ibn Abi Sulaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "مالك",
+      "english": "Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب",
+      "english": "Khulasat Tadhhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو هريرة",
+      "english": "Abu Hurayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو معشر نجيح",
+      "english": "Abu Ma'shar Najih",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو معشر مولى أبي هريرة",
+      "english": "Abu Ma'shar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليث",
+      "english": "Layth",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الواحد بن زياد",
+      "english": "Abd al-Wahid ibn Ziyad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "جرير",
+      "english": "Jarir",
+      "kind": "person"
+    },
+    {
+      "arabic": "النعمان بن المنذر",
+      "english": "al-Nu'man ibn al-Mundhir",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكحول",
+      "english": "Makhul",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند الشاميين",
+      "english": "Musnad al-Shamiyyin",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم مالك",
+      "english": "Umm Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

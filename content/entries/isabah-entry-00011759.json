@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011759",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11759,
+  "title": {
+    "english": "Mu'adha, wife of Shuja' ibn al-Harith al-Sadusi:",
+    "arabic_observed": "معاذة: زوج شجاع بن الحارث السّدوسي"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011759-segment-0001",
+      "volume": 8,
+      "scan_page": 317,
+      "printed_page": 316,
+      "reader_page": 4229,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4229",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0317:6a6b44529b9a0a52",
+      "arabic": "١١٧٥٩- معاذة: زوج شجاع بن الحارث السّدوسي\nتقدم ذكرها في شجاع.",
+      "english": "11759—Mu'adha, wife of Shuja' ibn al-Harith al-Sadusi:\n\nShe was previously mentioned under Shuja'.",
+      "arabic_sha256": "57651c7b9dee53d7d42b2b349ae18bac549287f5a75c283868c8b092491957a0",
+      "english_sha256": "cd232e068fe6adf5851047eb34140759f7e39c61912963c18259f4376dde8604",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "معاذة",
+      "english": "Mu'adha",
+      "kind": "person"
+    },
+    {
+      "arabic": "شجاع بن الحارث السّدوسي",
+      "english": "Shuja' ibn al-Harith al-Sadusi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

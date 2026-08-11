@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011866",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11866,
+  "title": {
+    "english": "Hind bint al-Muqawwim ibn Abd al-Muttalib",
+    "arabic_observed": "هند بنت المقوّم بن عبد المطلب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011866-segment-0001",
+      "volume": 8,
+      "scan_page": 349,
+      "printed_page": 348,
+      "reader_page": 4261,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4261",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0349:4bda574326c611c7",
+      "arabic": "١١٨٦٦- هند بنت المقوّم بن عبد المطلب\nبن هاشم.\nذكرها ابن سعد، وأنّ أبا عمرة الأنصاريّ تزوّجها، فولدت له عبد الرّحمن، وعبد اللَّه، وقال: أمها قلابة بنت عمرو بن جعونة السّهميّة.",
+      "english": "11866—Hind bint al-Muqawwim ibn Abd al-Muttalib\nibn Hashim.\n\nIbn Sa'd mentioned her and stated that Abu Amra al-Ansari married her and that she bore him Abd al-Rahman and Abd Allah. He said: “Her mother was Qulaba bint Amr ibn Ja'una al-Sahmiyya.”",
+      "arabic_sha256": "01017f36fc95f4c46b7dd997e69cbaa74ccca3b9ac80491cc219806aca9e7671",
+      "english_sha256": "959867bbb4ae2b565c7203d714dd53cf5ed55def9eff6ec9d3cf45b61955a87f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمرة الأنصاريّ",
+      "english": "Abu Amra al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرّحمن",
+      "english": "Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "قلابة بنت عمرو بن جعونة السّهميّة",
+      "english": "Qulaba bint Amr ibn Ja'una al-Sahmiyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "proper-name vocalization",
+      "arabic_span": "قلابة",
+      "explanation": "The final text provisionally retains “Qulaba.” The canonical Arabic and the supplied Urdu and Arabic witnesses preserve only the consonantal spelling and do not determine whether the first vowel is u or i.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0349:4bda574326c611c7"
+    },
+    {
+      "category": "proper-name vocalization",
+      "arabic_span": "جعونة",
+      "explanation": "The final text provisionally retains “Ja'una.” The unvocalized witnesses do not safely distinguish Ja'una from Ja'wana or another possible vocalization.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0349:4bda574326c611c7"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

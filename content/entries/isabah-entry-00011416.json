@@ -1,0 +1,120 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011416",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11416,
+  "title": {
+    "english": "Safiyya bint Umar(1)",
+    "arabic_observed": "صفية بنت عمر «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011416-segment-0001",
+      "volume": 8,
+      "scan_page": 217,
+      "printed_page": 216,
+      "reader_page": 4129,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4129",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0217:2806209a8535e29a",
+      "arabic": "١١٤١٦- صفية بنت عمر «١»\nبن الخطاب القرشية العدوية.\nذكرها الطّبرانيّ، وتبعه أبو نعيم، ثم أبو موسى، وأخرج من طريق محمد بن سهل الأسدي، عن شريك، عن عبد الكريم، عن عكرمة، عن ابن عباس- أن صفية بنت عمر بن الخطاب كانت مع النبي ﷺ يوم خيبر.",
+      "english": "11416—Safiyya bint Umar(1)\n\nibn al-Khattab, the Qurashi of the clan of Adi.\n\nal-Tabarani mentioned her, followed by Abu Nu'aym and then Abu Musa. He transmitted, through Muhammad ibn Sahl al-Asadi, from Sharik, from Abd al-Karim, from Ikrima, from Ibn Abbas, that Safiyya bint Umar ibn al-Khattab was with the Prophet, may Allah bless him and grant him peace, on the Day of Khaybar.",
+      "arabic_sha256": "5bf7a635d090cd0e56df64edebc792d67c53a7157bd28200db41a357f86f12ff",
+      "english_sha256": "3d5597037cacd25743557bd9e9bf4ea80c3895920034baf9774b8e4ff353a56f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "صفية بنت عمر بن الخطاب",
+      "english": "Safiyya bint Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرشية",
+      "english": "Qurashi",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "العدوية",
+      "english": "Adi",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن سهل الأسدي",
+      "english": "Muhammad ibn Sahl al-Asadi",
+      "kind": "person"
+    },
+    {
+      "arabic": "شريك",
+      "english": "Sharik",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الكريم",
+      "english": "Abd al-Karim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عكرمة",
+      "english": "Ikrima",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    },
+    {
+      "arabic": "صفية خادم رسول الله",
+      "english": "Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية غير منسوبة امرأة من الصحابة",
+      "english": "Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية أخرى غير منسوبة",
+      "english": "Safiyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

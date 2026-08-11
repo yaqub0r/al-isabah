@@ -1,0 +1,324 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011182",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11182,
+  "title": {
+    "english": "Ruqayqa[2]",
+    "arabic_observed": "رقيقة «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011182-segment-0001",
+      "volume": 8,
+      "scan_page": 137,
+      "printed_page": 136,
+      "reader_page": 4049,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4049",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0137:6e154a17bda63513",
+      "arabic": "١١١٨٢- رقيقة «٢»\n، بقافين مصغرة، بنت أبي صيفي بن هاشم بن عبد المطلب بن هاشم الهاشمية، بنت عم العباس وإخوته من بني عبد المطلب، وهي والدة مخرمة بن نوفل، والد المسور.\nذكرها الطّبرانيّ والمستغفريّ في الصحابة. وقال أبو عمر: وما أراها أدركت. وعمدة من ذكرها ما أخرجوه من طريق حميد بن منهب، عن عروة بن مضرس، عن مخرمة بن نوفل، عن أمه رقيقة، قال: وكانت لدة عبد المطلب بن هاشم، قالت: تتابعت على قريش سنون أمحلت الضرع وأدقّت العظم ... الحديث بطوله في استسقاء عبد المطلب لقريش ومعه رسول اللَّه ﷺ وهو غلام قد أيفع، وفيه أنهم سقوا، وإن شيوخ قريش كعبد اللَّه بن جدعان وحرب بن أمية قالوا لعبد المطلب لما سقوا على يديه: هنيئا لك أبا البطحاء، وفيه شعر رقيقة المذكورة أوله:\nبشيبة الحمد أسقى اللَّه بلدتنا ... وقد فقدنا الحيا واجلوّذ المطر\n[البسيط]\n(١) أخرجه مسلم في الصحيح ٣/ ١٣٨٩ عن عائشة قالت أصيب سعد يوم الخندق رماه رجل من قريش يقال له ابن العرقة رماه في الأكحل فضرب عليه رسول اللَّه ت خيمة في المسجد يعوده من قريب. كتاب الجهاد والسير باب (٢١) . إخراج اليهود والنصارى من جزيرة العرب حديث رقم (٦٥/ ١٧٦٩) وقد كانت خيمة رفيدة في المسجد والترمذي في السنن ٣/ ١٢٢ كتاب السير باب (٢٩) ما جاء في التنزيل على الحكم حديث رقم ١٥٨٢، والنسائي ٢/ ٤٥، كتاب المساجد باب (١٨) ضرب الخباء في المساجد حديث رقم ٧١٠.\n(٢) الثقات ٣/ ١٣٤، أعلام النساء ١/ ٣٩٣، تجريد أسماء الصحابة ٢/ ٢٦٨، والمنمق ١٦٦، ١٦٩، ١٧٠.",
+      "english": "11182 - Ruqayqa[2]\n\nHer name is in the diminutive form and contains two qafs. She was Ruqayqa bint Abu Sayfi ibn Hashim ibn 'Abd al-Muttalib ibn Hashim, of Banu Hashim; she was a paternal cousin of al-'Abbas and his brothers, the sons of 'Abd al-Muttalib. She was the mother of Makhrama ibn Nawfal, the father of al-Miswar.\n\nal-Tabarani and al-Mustaghfiri mentioned her among the Companions. Abu 'Umar said, “I do not think she lived to see [the Prophet's mission].” The chief basis of those who mentioned her is what they transmitted by way of Humayd ibn Manhab, from 'Urwa ibn Mudarris, from Makhrama ibn Nawfal, from his mother Ruqayqa. He said: She was an age-mate of 'Abd al-Muttalib ibn Hashim. She said: “Successive years befell Quraysh that left the udders barren and wore the bones thin ...” The hadith continues at length, concerning 'Abd al-Muttalib's prayer for rain on behalf of Quraysh, with the Messenger of Allah, may Allah bless him and grant him peace, accompanying him as a boy who had reached adolescence. It states that they were given rain, and that the elders of Quraysh—such as 'Abd Allah ibn Jud'an and Harb ibn Umayya—said to 'Abd al-Muttalib when they received rain at his hands, “May it bring you joy, O Abu al-Batha.” It also contains poetry by the aforementioned Ruqayqa, beginning:\n\nThrough Shaybat al-Hamd, Allah gave our town rain,\nWhen rain had failed us and its absence had dragged on.\n\n[Basit meter]\n\n[1] Muslim transmitted it in al-Sahih, 3/1389, from Aisha, who said: “Sa'd was wounded on the Day of the Trench. A man of Quraysh called Ibn al-'Ariqa shot him in the medial arm vein, so the Messenger of Allah pitched a tent over him in the mosque in order to visit him nearby.” Book of Jihad and Expeditions, chapter (21), “The Expulsion of the Jews and Christians from the Arabian Peninsula,” hadith no. (65/1769). Rufayda's tent was in the mosque. Also al-Tirmidhi in al-Sunan, 3/122, Book of Military Expeditions, chapter (29), “What Has Been Related Concerning Submission to Arbitration,” hadith no. 1582; and al-Nasa'i, 2/45, Book of Mosques, chapter (18), “Pitching Tents in Mosques,” hadith no. 710.\n\n[2] al-Thiqat, 3/134; A'lam al-Nisa', 1/393; al-Tajrid, 2/268; and al-Munammaq, 166, 169, 170.",
+      "arabic_sha256": "caf751e79fcba87c1163933592c0a21f8d55f4edc33b65e1f04b45343b50f088",
+      "english_sha256": "406fcb250923c28f2b14c4e1ee03d992cb3086f283d2b44069c349330ee87336",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011182-segment-0002",
+      "volume": 8,
+      "scan_page": 138,
+      "printed_page": 137,
+      "reader_page": 4050,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4050",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0138:305d0523d61b144e",
+      "arabic": "قال أبو موسى- بعد إيراده: هذا حديث حسن. قال: وقد ذكرها ابن سعد في المسلمات المهاجرات، وقال: أمّها هالة بنت كلدة بن عبد الدار، ثم أخرج عن الواقدي عن عبد اللَّه بن جعفر، عن أم بكر بنت المسور، عن أبيها، عن مخرمة بن نوفل عن أمه رقيقة، قالت: لكأنّي انظر إلى عمي شيبة- تعني عبد المطلب بن عبد مناف، فكنت أول من سبق إليه، فالتزمته وخبرت به أهلنا، وهي أسنّ يومئذ من عبد المطلب، وقد أدركت رسول اللَّه ﷺ وأسلمت، وكانت أشدّ الناس على ولدها مخرمة- يعني لكونه لم يسلم. وبهذا السند.\nعن أمها- أنّ رقيقة وهي أم مخرمة بن نوفل حدثت رسول اللَّه ﷺ، فقالت: إن قريشا قد اجتمعت تريد بياتك الليلة. قال المسور: فتحوّل رسول اللَّه ﷺ عن فراشه وبات عليه عليّ.",
+      "english": "Abu Musa said, after citing it: “This is a hasan hadith.” He said: Ibn Sa'd mentioned her among the Muslim emigrant women and said: Her mother was Hala bint Kalada ibn 'Abd al-Dar. Ibn Sa'd then transmitted from al-Waqidi, from 'Abd Allah ibn Ja'far, from Umm Bakr bint al-Miswar, from her father, from Makhrama ibn Nawfal, from his mother Ruqayqa, who said: “It is as though I can see my paternal uncle Shayba”—meaning 'Abd al-Muttalib ibn 'Abd Manaf—“and I was the first to reach him. I embraced him and informed our family of him.” She was older than 'Abd al-Muttalib at that time. She lived to see the Messenger of Allah (may Allah bless him and grant him peace), embraced Islam, and was harder on her son Makhrama than anyone else—that is, because he had not embraced Islam. Through this same chain, it is related from her mother that Ruqayqa, the mother of Makhrama ibn Nawfal, informed the Messenger of Allah (may Allah bless him and grant him peace), saying: “Quraysh has assembled and intends to attack you by night tonight.” al-Miswar said: The Messenger of Allah (may Allah bless him and grant him peace) then left his bed, and 'Ali spent the night on it.",
+      "arabic_sha256": "6d74bff76fb5d98e86da2f63184e7f39a9d6915093cd8c51c52a30515f486ba4",
+      "english_sha256": "06996692e9d10bf5959c26fad3fe1a677ea75c9e0cdb2c63732f74df7172854a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سعد",
+      "english": "Sa'd ibn Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخندق",
+      "english": "Trench",
+      "kind": "place"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "رفيدة",
+      "english": "Rufayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "رقيقة",
+      "english": "Ruqayqa bint Abu Sayfi ibn Hashim ibn 'Abd al-Muttalib ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي صيفي",
+      "english": "Abu Sayfi",
+      "kind": "person"
+    },
+    {
+      "arabic": "هاشم بن عبد المطلب بن هاشم",
+      "english": "Hashim ibn 'Abd al-Muttalib ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهاشمية",
+      "english": "Banu Hashim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "العباس",
+      "english": "al-'Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "مخرمة بن نوفل",
+      "english": "Makhrama ibn Nawfal",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسور",
+      "english": "al-Miswar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "حميد بن منهب",
+      "english": "Humayd ibn Manhab",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة بن مضرس",
+      "english": "'Urwa ibn Mudarris",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد المطلب بن هاشم",
+      "english": "'Abd al-Muttalib ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد المطلب",
+      "english": "'Abd al-Muttalib ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عبد اللَّه بن جدعان",
+      "english": "'Abd Allah ibn Jud'an",
+      "kind": "person"
+    },
+    {
+      "arabic": "حرب بن أمية",
+      "english": "Harb ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو البطحاء",
+      "english": "Abu al-Batha",
+      "kind": "person"
+    },
+    {
+      "arabic": "شيبة الحمد",
+      "english": "Shaybat al-Hamd",
+      "kind": "person"
+    },
+    {
+      "arabic": "البسيط",
+      "english": "Basit",
+      "kind": "other"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "al-Sahih",
+      "kind": "work"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن العرقة",
+      "english": "Ibn al-'Ariqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الجهاد والسير",
+      "english": "Book of Jihad and Expeditions",
+      "kind": "work"
+    },
+    {
+      "arabic": "إخراج اليهود والنصارى من جزيرة العرب",
+      "english": "The Expulsion of the Jews and Christians from the Arabian Peninsula",
+      "kind": "work"
+    },
+    {
+      "arabic": "جزيرة العرب",
+      "english": "Arabian Peninsula",
+      "kind": "place"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "al-Sunan",
+      "kind": "work"
+    },
+    {
+      "arabic": "كتاب السير",
+      "english": "Book of Military Expeditions",
+      "kind": "work"
+    },
+    {
+      "arabic": "ما جاء في التنزيل على الحكم",
+      "english": "What Has Been Related Concerning Submission to Arbitration",
+      "kind": "work"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب المساجد",
+      "english": "Book of Mosques",
+      "kind": "work"
+    },
+    {
+      "arabic": "ضرب الخباء في المساجد",
+      "english": "Pitching Tents in Mosques",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "المنمق",
+      "english": "al-Munammaq",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "هالة بنت كلدة بن عبد الدار",
+      "english": "Hala bint Kalada ibn 'Abd al-Dar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن جعفر",
+      "english": "'Abd Allah ibn Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم بكر بنت المسور",
+      "english": "Umm Bakr bint al-Miswar",
+      "kind": "person"
+    },
+    {
+      "arabic": "رقيقة",
+      "english": "Ruqayqa bint Abi Sayfi ibn Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "شيبة",
+      "english": "Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد المطلب بن عبد مناف",
+      "english": "'Abd al-Muttalib ibn 'Abd Manaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "'Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمة",
+      "english": "Ama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010988",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10988,
+  "title": {
+    "english": "Jamila bint Aws al-Mar'iyya (1).",
+    "arabic_observed": "جميلة بنت أوس المرية «١» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010988-segment-0001",
+      "volume": 8,
+      "scan_page": 68,
+      "printed_page": 67,
+      "reader_page": 3980,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3980",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0068:ecbef9f4ecef77f1",
+      "arabic": "١٠٩٨٨- جميلة بنت أوس المرية «١» .\nلها حديث، ولأبيها صحبة- من التجريد.\nقلت: ذكرها أبو عليّ الغسّانيّ في ذيله على «الاستيعاب»، وقال: ذكر حديثها في ترجمة أوس والدها، وكان ذكره من عند ابن قانع، وابن قانع صحّف نسب أوس، فقاله بالزاي والنون، وإنما هو بالراء بلا إعجام ثم بالهمزة كما تقدم بيانه في أوس. وتقدم الحديث من روايتها، لكن فيه عن أم جميل، وكأنها كنيتها واسمها جميلة، وستأتي في الكنى.",
+      "english": "10988—Jamila bint Aws al-Mar'iyya (1).\n\nShe has a hadith, and her father was a Companion—from al-Tajrid.\n\nI say: Abu Ali al-Ghassani mentioned her in his supplement to al-Isti'ab and said: “Her hadith was mentioned in the biographical entry for her father, Aws, whose entry had been supplied by Ibn Qani.” Ibn Qani miscopied the nisba of Aws, writing it with the letters zay and nun, whereas it is correctly written with an undotted ra followed by a hamza, as was explained previously under Aws. The hadith from her narration has already appeared, but there it reads, “from Umm Jamil.” It appears that this was her kunya and that her name was Jamila. She will appear under the kunyas.",
+      "arabic_sha256": "4d503ef463e41e43df719d37dec0fc878d56e5f029322bebd83df9919a533cd9",
+      "english_sha256": "4300fec7bdf790abba1fae87b1f6fb76c32ef8e9f1ed5f4b7d18c5493b04789a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم جميل",
+      "english": "Jamila bint Ubayy ibn Salul",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة بنت أوس المرية",
+      "english": "Jamila bint Aws al-Mar'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عليّ الغسّانيّ",
+      "english": "Abu Ali al-Ghassani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أوس",
+      "english": "Aws",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن قانع",
+      "english": "Ibn Qani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جميل",
+      "english": "Jamila bint Aws al-Mar'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

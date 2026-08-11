@@ -1,0 +1,150 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010874",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10874,
+  "title": {
+    "english": "Umayma¹",
+    "arabic_observed": "أميمة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010874-segment-0001",
+      "volume": 8,
+      "scan_page": 37,
+      "printed_page": 36,
+      "reader_page": 3949,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3949",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0037:2bad6320dec2302f",
+      "arabic": "١٠٨٧٤- أميمة «١»\n، مولاة رسول اللَّه ﷺ. قال أبو عمر: خدمت رسول اللَّه ﷺ، وحديثها عند أهل الشام.\nقلت: أخرجه محمّد بن نصر في كتاب تعظيم قدر الصلاة، وأبو علي بن السكن، والحسن بن سفيان في مسندة، وغيرهم،\nوأشار إليه الترمذي في كتاب السير، وهو من طريق أبي فروة يزيد بن يسار الرهاوي، حدثني أبو يحيى الكلاعي- هو سليم بن عامر- عن جبير بن نفير، عن أميمة مولاة النبي ﷺ أنها كانت توضئ رسول اللَّه ﷺ، فأفرغ على يديه الماء إذ دخل عليه رجل فقال: يا رسول اللَّه، إني أريد اللحوق بأهلي، فأوصني، فقال: «لا تشرك باللَّه وإن قطّعت أو حرّقت ...» «٢» الحديث بتمامه.\nقال ابن السّكن: رواه سعيد بن عبد العزيز، عن مكحول، عن أم أيمن نحوه، ثم أسنده تاما في ترجمة أم أيمن، وقال ... هو مرسل، لأن مكحولا لم يدرك أم أيمن.\nقلت: وهو عندنا بعلو في مسند عبد بن حميد.",
+      "english": "10874 — Umayma¹\n\nFreedwoman of the Messenger of Allah, may Allah bless him and grant him peace. Abu Umar said: She served the Messenger of Allah, may Allah bless him and grant him peace, and her hadith is transmitted among the people of Syria.\n\nI say: Muhammad ibn Nasr included it in the Book of Magnifying the Esteem of Prayer, as did Abu Ali ibn al-Sakan, al-Hasan ibn Sufyan in his Musnad, and others. al-Tirmidhi also referred to it in the Book of Military Expeditions. It comes by way of Abu Farwa Yazid ibn Yasar al-Rahawi, who said: Abu Yahya al-Kala'i—he is Sulaym ibn Amir—related to me, from Jubayr ibn Nufayr, from Umayma, the freedwoman of the Prophet, may Allah bless him and grant him peace, that she used to assist the Messenger of Allah, may Allah bless him and grant him peace, in performing ablution. He poured water over his hands when a man entered upon him and said, “O Messenger of Allah, I wish to rejoin my family, so give me counsel.” He said: “Do not associate anything with Allah, even if you are cut to pieces or burned ...”² The hadith in full.\n\nIbn al-Sakan said: Sa'id ibn Abd al-Aziz narrated something similar from Makhul, from Umm Ayman. He then transmitted it with a complete chain in the entry on Umm Ayman and said: “... It is mursal, because Makhul did not meet Umm Ayman.”\n\nI say: We possess it through a high chain of transmission in the Musnad of Abd ibn Humayd.",
+      "arabic_sha256": "7e8ec78767fb954e9a26723a113142aa32acf595ad2e4493b8fde17cb11136ed",
+      "english_sha256": "e29d9a4fbc78b63846c01149026dc24e81441b2ad6d23901b2b121adf772300d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أميمة، مولاة رسول اللَّه ﷺ",
+      "english": "Umayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشام",
+      "english": "Syria",
+      "kind": "place"
+    },
+    {
+      "arabic": "محمّد بن نصر",
+      "english": "Muhammad ibn Nasr",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب تعظيم قدر الصلاة",
+      "english": "Book of Magnifying the Esteem of Prayer",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو علي بن السكن",
+      "english": "Abu Ali ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن سفيان",
+      "english": "al-Hasan ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب السير",
+      "english": "Book of Military Expeditions",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو فروة يزيد بن يسار الرهاوي",
+      "english": "Abu Farwa Yazid ibn Yasar al-Rahawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو يحيى الكلاعي",
+      "english": "Abu Yahya al-Kala'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليم بن عامر",
+      "english": "Sulaym ibn Amir",
+      "kind": "person"
+    },
+    {
+      "arabic": "جبير بن نفير",
+      "english": "Jubayr ibn Nufayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن عبد العزيز",
+      "english": "Sa'id ibn Abd al-Aziz",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكحول",
+      "english": "Makhul",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم أيمن",
+      "english": "Umm Ayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند عبد بن حميد",
+      "english": "Musnad of Abd ibn Humayd",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد بن حميد",
+      "english": "Abd ibn Humayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة، مولاة عبد اللَّه بن أبيّ ابن سلول",
+      "english": "Umayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة، والدة أبي هريرة، ويقال اسمها ميمونة",
+      "english": "Umayma",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

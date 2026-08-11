@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012285",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12285,
+  "title": {
+    "english": "Umm al-Nu'man bint Rawaha",
+    "arabic_observed": "أم النعمان بنت رواحة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012285-segment-0001",
+      "volume": 8,
+      "scan_page": 485,
+      "printed_page": 484,
+      "reader_page": 4397,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4397",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0485:f8f6f862d41faae4",
+      "arabic": "١٢٢٨٥- أم النعمان بنت رواحة:\nهي عمرة.\nوردت بكنيتها في صحيح أبو عوانة في الحديث الّذي أخرجه مسلم باسمها.",
+      "english": "12285—Umm al-Nu'man bint Rawaha\n\nShe is 'Amra.\n\nShe appears by her kunyah in Sahih Abi 'Awana, in the hadith that Muslim transmitted under her personal name.",
+      "arabic_sha256": "7cdb01f177965ee326c11c5f47c166cc7a21072f86aeb592552fb288d2c6a99f",
+      "english_sha256": "e0a8943c150a7cc109364fe854da6a23d8b5d5a4464d099abf41eea5f22af3bc",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم النعمان بنت رواحة",
+      "english": "Umm al-Nu'man bint Rawaha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة",
+      "english": "'Amra bint Rawaha",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيح أبو عوانة",
+      "english": "Sahih Abi 'Awana",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "'Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

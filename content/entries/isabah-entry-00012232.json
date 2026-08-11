@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012232",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12232,
+  "title": {
+    "english": "Umm Kulthum:",
+    "arabic_observed": "أم كلثوم:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012232-segment-0001",
+      "volume": 8,
+      "scan_page": 465,
+      "printed_page": 464,
+      "reader_page": 4377,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4377",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0465:001b6f3c46297f7f",
+      "arabic": "١٢٢٣٢- أم كلثوم:\nغير منسوبة. تقدمت في بنت أبي سلمة.",
+      "english": "12232—Umm Kulthum:\n\nHer lineage is not given. She was discussed above under Umm Kulthum bint Abi Salama.",
+      "arabic_sha256": "0a658b6f168ac45bb5568f6671aad4bf76931f676f0959926f2affb95e7b0d6d",
+      "english_sha256": "c0a329551a71f92936119500ba4d5c868fd13f6ac4309b3b9f48c6df149ccbfa",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم كلثوم بنت أبي سلمة",
+      "english": "Umm Kulthum bint Abi Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم",
+      "english": "Umm Kulthum",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

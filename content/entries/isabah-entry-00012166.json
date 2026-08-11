@@ -1,0 +1,180 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012166",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12166,
+  "title": {
+    "english": "Umm Uthman bint Sufyan (1):",
+    "arabic_observed": "أم عثمان بنت سفيان «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012166-segment-0001",
+      "volume": 8,
+      "scan_page": 436,
+      "printed_page": 435,
+      "reader_page": 4348,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4348",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0436:1bbcac580ca9ef55",
+      "arabic": "١٢١٦٦- أم عثمان بنت سفيان «١»\n: والدة بني شيبة الأكابر.\nوكانت من المبايعات، قاله أبو عمر، قال: وروى عبد اللَّه بن مسافع عن أمها عنها.\nانتهى.\nوقال ابن مندة: أم بني شيبة، بايعت النبيّ ﵌، ثم أخرج هو، والطّبراني، وأحمد،\nمن طريق هشام بن أبي عبد اللَّه، عن بديل بن ميسرة، عن صفيّة بنت شيبة، عن أم ولد شيبة، قالت: رأيت رسول اللَّه ﵌ يسعى بين الصّفا والمروة ويقول: «لا يقطع الأبطح إلّا شدّا» «٢» .\nوذكره أبو نعيم، ثم قال: رواه حماد بن زيد عن بديل، عن مغيرة بن حكيم، عن صفيّة، عن امرأة منهم، ولم يسمها.\nوأخرج أبو نعيم من مسند الحسن بن سفيان، ثم من رواية ابن المبارك، عن عمر بن عبد الرحمن، عن منصور بن صفية، عن أمّه، عن أم عثمان بنت سفيان، وهي أمّ بني شيبة الأكبر، وقد بايعت النبيّ ﵌: دعا شيبة ففتح البيت، فدخل، فلما خرج قال له: غطّ سقفه، فإنه لا يكون في البيت شيء يلهي المصلّي.",
+      "english": "12166—Umm Uthman bint Sufyan (1):\n\nThe mother of the elder Banu Shayba.\n\nShe was among the women who pledged allegiance, according to Abu Umar. He said: “Abd Allah ibn Musafi' narrated from her mother, from her.” End quote.\n\nIbn Manda said: “The mother of the Banu Shayba; she pledged allegiance to the Prophet, peace and blessings be upon him.” He, al-Tabarani, and Ahmad then transmitted, by way of Hisham ibn Abi Abd Allah, from Budayl ibn Maysara, from Safiyya bint Shayba, from Umm Walad Shayba, who said: “I saw the Messenger of Allah, peace and blessings be upon him, performing the sa'y between al-Safa and al-Marwa and saying, ‘Al-Abtah is to be crossed only at a vigorous pace.’” (2)\n\nAbu Nu'aym mentioned it and then said: “Hammad ibn Zayd narrated it from Budayl, from Mughira ibn Hakim, from Safiyya, from a woman of their people,” without naming her.\n\nAbu Nu'aym transmitted from the Musnad of al-Hasan ibn Sufyan, and then through the narration of Ibn al-Mubarak, from Umar ibn Abd al-Rahman, from Mansur ibn Safiyya, from his mother, from Umm Uthman bint Sufyan—she being the mother of the elder Banu Shayba, who had pledged allegiance to the Prophet, peace and blessings be upon him—that the Prophet summoned Shayba, who opened the House. The Prophet entered it, and when he emerged, he said to Shayba: “Cover its ceiling, for there should be nothing in the House that distracts a person at prayer.”",
+      "arabic_sha256": "28de5ec6d020cdfdfc470918cff2c7a3766190e6d3f58db7a71ac8f66fe87d69",
+      "english_sha256": "2b4c3dd8a3c418e30fbcebc35d3b54c5dd210788abaad1c0ae4c73ab559f36ea",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم عثمان بنت سفيان",
+      "english": "Umm Uthman bint Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني شيبة",
+      "english": "Banu Shayba",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن مسافع",
+      "english": "Abd Allah ibn Musafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطّبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن أبي عبد اللَّه",
+      "english": "Hisham ibn Abi Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "بديل بن ميسرة",
+      "english": "Budayl ibn Maysara",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفيّة بنت شيبة",
+      "english": "Safiyya bint Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم ولد شيبة",
+      "english": "Umm Walad Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الصّفا",
+      "english": "al-Safa",
+      "kind": "place"
+    },
+    {
+      "arabic": "المروة",
+      "english": "al-Marwa",
+      "kind": "place"
+    },
+    {
+      "arabic": "الأبطح",
+      "english": "al-Abtah",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "حماد بن زيد",
+      "english": "Hammad ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "مغيرة بن حكيم",
+      "english": "Mughira ibn Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن سفيان",
+      "english": "al-Hasan ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند الحسن بن سفيان",
+      "english": "Musnad of al-Hasan ibn Sufyan",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن المبارك",
+      "english": "Ibn al-Mubarak",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن عبد الرحمن",
+      "english": "Umar ibn Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "منصور بن صفية",
+      "english": "Mansur ibn Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "شيبة",
+      "english": "Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "البيت",
+      "english": "the House",
+      "kind": "place"
+    },
+    {
+      "arabic": "باب السعي بين الصفا والمروة",
+      "english": "The Sa'y between al-Safa and al-Marwa",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

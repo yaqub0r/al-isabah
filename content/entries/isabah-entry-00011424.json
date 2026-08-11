@@ -1,0 +1,269 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011424",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11424,
+  "title": {
+    "english": "al-Sumayta (3),",
+    "arabic_observed": "الصّميتة «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011424-segment-0001",
+      "volume": 8,
+      "scan_page": 218,
+      "printed_page": 217,
+      "reader_page": 4130,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4130",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0218:9411294e16fb1be7",
+      "arabic": "١١٤٢٤- الصّميتة «٣»\n، بالتصغير، الليثية، ويقال الدارية.\n(١) أخرجه الترمذي في السنن ٤/ ٤١٥ عن صفية الحديث بلفظه كتاب الفتن (٣٤) باب ما جاء في الخسف (٢١) حديث رقم ٢١٨٤ قال أبو عيسى هذا حديث حسن صحيح وابن ماجة في السنن ٢/ ١٣٥١ كتاب الفتن (٣٦) باب جيش البيداء (٣٠) حديث رقم ٤٠٦٤، وأحمد في المسند ٦/ ٣٣٦، ٣٣٧، وأورده السيوطي في الدر المنثور ٥/ ٢٤١، والمتقي الهندي، في كنز العمال حديث رقم ٣٤٦٨٧.\n(٢) أسد الغابة ت (٧٠٧٣)، الاستيعاب: ت (٣٤٦١)، الثقات ٣/ ١٩٧، أعلام النساء ٢/ ٣٥٢، تجريد أسماء الصحابة ٢/ ٢٨٣، تقريب التهذيب ٢/ ٦٠٣، تهذيب التهذيب ١٢/ ٤٣١، الكاشف ٣/ ٤٧٥، تهذيب الكمال ٣/ ١٦٨٨، خلاصة تهذيب الكمال ٣/ ٣٨٦، تلقيح فهوم أهل الأثر ٣٧٤، بقي بن مخلد ٤٢٩.\n(٣) أسد الغابة ت (٧٠٧٤)، الاستيعاب: ت (٣٤٦٢) .",
+      "english": "11424—al-Sumayta (3),\n\nin the diminutive form; al-Laythiyya, also said to be al-Dariyya.\n\n(1) Al-Tirmidhi related it in Sunan al-Tirmidhi, 4/415, from Safiyya, with this wording, in the Book of Tribulations (34), chapter “What Has Been Related Concerning Being Swallowed by the Earth” (21), hadith no. 2184. Abu Isa said: “This is a hasan sahih hadith.” Ibn Maja also related it in Sunan Ibn Maja, 2/1351, Book of Tribulations (36), chapter “The Army of al-Bayda” (30), hadith no. 4064. Ahmad related it in Musnad Ahmad, 6/336, 337; al-Suyuti cited it in al-Durr al-Manthur, 5/241; and al-Muttaqi al-Hindi in Kanz al-Ummal, hadith no. 34687.\n\n(2) Usd al-Ghaba, entry 7073; al-Isti'ab, entry 3461; al-Thiqat, 3/197; A'lam al-Nisa', 2/352; al-Tajrid, 2/283; Taqrib al-Tahdhib, 2/603; Tahdhib al-Tahdhib, 12/431; al-Kashif, 3/475; Tahdhib al-Kamal, 3/1688; Khulasat Tahdhib al-Kamal, 3/386; Talqih Fuhum Ahl al-Athar, p. 374; Baqi ibn Makhlad, p. 429.\n\n(3) Usd al-Ghaba, entry 7074; al-Isti'ab, entry 3462.",
+      "arabic_sha256": "100bccca378e0bb5a85ba4ea9ddcc6cb3393f6d50b84b47ba950ef1f270bd46d",
+      "english_sha256": "6f233947bb505de05165738229f8637617974c8b15b0b3fe06fbac72e0fa73c9",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011424-segment-0002",
+      "volume": 8,
+      "scan_page": 219,
+      "printed_page": 218,
+      "reader_page": 4131,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4131",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0219:b0b36c7336b09695",
+      "arabic": "روى حديثها النّسائيّ، وابن أبي عاصم، من طريق عقيل، عن الزهري، عن عبيد اللَّه، عن عبد اللَّه بن عتبة، عن صميتة وكانت في حجر رسول اللَّه ﷺ، قالت: سمعت رسول اللَّه ﷺ يقول: «من استطاع منكم أن يموت بالمدينة فليمت، فإنّه من يموت بها أشفع له يوم القيامة وأشهد له» . قال ابن مندة: رواه صالح عن أبي الأخضر، عن الزهري، فقال: كانت يتيمة في حجر عائشة.\nقلت: ولا منافاة بين الروايتين، فمن تكون في حجر عائشة في حياة النبي ﷺ تكون في حجر النبيّ ﷺ، على أنّ صالح بن أبي الأخضر ضعيف. وقد رواه يونس، عن الزهري، عن عبيد اللَّه، عن صميتة- امرأة من بني ليث يحدّث أنها سمعت ... فذكره.\nوزاد فيه: قال الزّهريّ: ثم لقيت عبيد اللَّه بن عبد اللَّه بن عمر، فسألته عن حديثها فحدثنيه عن الصّميتة. هذه رواية ابن وهب عن يونس، وهي موافقة لرواية عقيل، ورواه عتبة عن يونس، فأدخل صفية بنت أبي عبيد بن عبيد اللَّه والصّميتة. ورواه ابن أبي ذئب عن الزهري: فقال: عن عبيد اللَّه عن امرأة يتيمة عن صفية بنت أبي عبيد، عن النبي ﷺ.\nالقسم الثاني",
+      "english": "al-Nasa'i and Ibn Abi Asim transmitted her hadith by way of Uqayl, from al-Zuhri, from Ubayd Allah, from Abd Allah ibn Utba, from Sumayta—who was in the care of the Messenger of Allah (may Allah bless him and grant him peace). She said: I heard the Messenger of Allah (may Allah bless him and grant him peace) say: “Whoever among you is able to die in Medina, let him die there, for whoever dies there, I shall intercede for him on the Day of Resurrection and bear witness on his behalf.” Ibn Manda said: Salih transmitted it from Abu al-Akhdar, from al-Zuhri, and said: She was an orphan in the care of Aisha.\n\nI say: There is no incompatibility between the two versions, for anyone who was in Aisha's care during the lifetime of the Prophet (may Allah bless him and grant him peace) would also be in the care of the Prophet (may Allah bless him and grant him peace). Moreover, Salih ibn Abi al-Akhdar is weak. Yunus transmitted it from al-Zuhri, from Ubayd Allah, from Sumayta—a woman of Banu Layth—with the report that she heard … and he cited the hadith.\n\nHe added to it: al-Zuhri said: Then I met Ubayd Allah ibn Abd Allah ibn Umar and asked him about her hadith, so he related it to me from Sumayta. This is Ibn Wahb's recension from Yunus, and it agrees with Uqayl's recension. Utba transmitted it from Yunus and inserted Safiyya bint Abi Ubayd between Ubayd Allah and Sumayta. Ibn Abi Dhi'b transmitted it from al-Zuhri, saying: from Ubayd Allah, from an orphan woman, from Safiyya bint Abi Ubayd, from the Prophet (may Allah bless him and grant him peace).\n\nSECTION TWO",
+      "arabic_sha256": "f3e8b5e4044ee60e0ffd8727fe141c8fe2335be586a079d333ae3d0ccf129f92",
+      "english_sha256": "20cc5f0fed874480eb1d78652bfbce1f195e54316131ccc6f81a98da12593565",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "صفية",
+      "english": "Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "البيداء",
+      "english": "al-Bayda",
+      "kind": "place"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan al-Tirmidhi",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عيسى",
+      "english": "Abu Isa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Maja",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan Ibn Maja",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "السيوطي",
+      "english": "al-Suyuti",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدر المنثور",
+      "english": "al-Durr al-Manthur",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النّسائيّ",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عقيل",
+      "english": "Uqayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد اللَّه بن عبد اللَّه بن عمر",
+      "english": "Ubayd Allah ibn Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عتبة",
+      "english": "Abd Allah ibn Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصّميتة",
+      "english": "Sumayta",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "صالح بن أبي الأخضر",
+      "english": "Salih ibn Abi al-Akhdar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الأخضر",
+      "english": "Abu al-Akhdar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس",
+      "english": "Yunus",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو ليث",
+      "english": "Banu Layth",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن وهب",
+      "english": "Ibn Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "عتبة",
+      "english": "Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت أبي عبيد",
+      "english": "Safiyya bint Abi Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي ذئب",
+      "english": "Ibn Abi Dhi'b",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

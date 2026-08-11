@@ -1,0 +1,224 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010957",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10957,
+  "title": {
+    "english": "Tamadur bint al-Asbagh",
+    "arabic_observed": "تماضر بنت الأصبغ"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010957-segment-0001",
+      "volume": 8,
+      "scan_page": 57,
+      "printed_page": 56,
+      "reader_page": 3969,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3969",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0057:1cf13157d1003baf",
+      "arabic": "١٠٩٥٧- تماضر بنت الأصبغ\nبن عمرو بن ثعلبة الكلبية. تقدم نسبها في ترجمة والدها في حرف الألف من القسم الثالث، وقيل هي تماضر بنت زبان بن الأصبغ.\nوذكر ابن سعد عن الواقديّ: حدثنا عبد اللَّه بن جعفر، عن أبي عون، عن صالح بن إبراهيم بن عبد الرحمن بن عوف- أن النبي ﷺ بعث عبد الرحمن بن عوف إلى بني كلب، فقال: «إن استجابوا لك فتزوّج ابنة ملكهم- أو سيّدهم» . فلما قدم عبد الرحمن دعاهم إلى الإسلام، فاستجابوا وأقام من أقام منهم على إعطاء الجزية، فتزوج عبد الرحمن بن عوف تماضر بنت الأصبغ بن عمرو ملكهم، ثم قدم بها المدينة، وهي أم أبي سلمة [بن عبد الرحمن بن عوف.\nوأخرج ابن سعد عن حماد بن زيد، عن أيوب، عن سعد بن إبراهيم،\nقال: أم أبي سلمة] «١» بن عبد الرحمن تماضر بنت الأصبغ. ومن طريق عمر بن أبي سلمة بن عبد الرحمن، عن أبيه، عن جدته تماضر بنت زبان الأصبغ أنها حين طلقها الزبير- يعني بعد موت عبد الرحمن بن عوف، وكان أقام عندها سبعا، ثم لم يلبث أن طلقها، فكانت تقول للنساء: إذا تزوجت إحداكن فلا يغرنك السبع بعد ما صنع بي «٢» الزبير.\nقال محمّد بن عمر: هي أول كلبية نكحها قرشي، ولم تلد لعبد الرحمن غير أبي سلمة.\n(١) سقط في أ.\n(٢) في أصنع بي ابن الزبير.",
+      "english": "10957—Tamadur bint al-Asbagh\n\nibn Amr ibn Tha'laba al-Kalbiyya. Her lineage was given previously in the biography of her father, under the letter alif in the third section. It is also said that she was Tamadur bint Zaban ibn al-Asbagh.\n\nIbn Sa'd related from al-Waqidi: Abdullah ibn Ja'far reported to us, from Abu Awn, from Salih ibn Ibrahim ibn Abd al-Rahman ibn Awf, that the Prophet—may Allah bless him and grant him peace—sent Abd al-Rahman ibn Awf to the Banu Kalb and said, “If they respond favorably to you, then marry the daughter of their king—or their chief.” When Abd al-Rahman arrived, he called them to Islam. They responded favorably, while those among them who remained as they were agreed to pay the jizya. Abd al-Rahman ibn Awf then married Tamadur bint al-Asbagh ibn Amr, whose father was their king, and afterward brought her to Medina. She was the mother of Abu Salama [ibn Abd al-Rahman ibn Awf.\n\nIbn Sa'd also transmitted from Hammad ibn Zayd, from Ayyub, from Sa'd ibn Ibrahim, who said: The mother of Abu Salama]¹ ibn Abd al-Rahman was Tamadur bint al-Asbagh. And through Umar ibn Abi Salama ibn Abd al-Rahman, from his father, from his grandmother Tamadur bint Zaban ibn al-Asbagh: when al-Zubayr divorced her—that is, after the death of Abd al-Rahman ibn Awf—he had remained with her for seven nights, but it was not long before he divorced her. She used to say to women, “When any one of you marries, let not the seven nights deceive her, after what al-Zubayr did to me.”²\n\nMuhammad ibn Umar said: She was the first woman of Kalb whom a Qurashi married, and she bore Abd al-Rahman no child other than Abu Salama.\n\n¹ Omitted in manuscript A.\n\n² In manuscript A: “what Ibn al-Zubayr did to me.”",
+      "arabic_sha256": "4bc361d71aa456b047b6590fc9d07a4babaabf5173dbe8aa24433ebb013fbcad",
+      "english_sha256": "b6340fd2d984c3773be66c73f26c76e2d740c191b22d35aaaa158258408d84c2",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010957-segment-0002",
+      "volume": 8,
+      "scan_page": 58,
+      "printed_page": 57,
+      "reader_page": 3970,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3970",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0058:aa2b06b94678dc20",
+      "arabic": "وقال محمّد بن سعد: أخبرنا يزيد بن هارون، أخبرنا إبراهيم بن سعد، عن أبيه، عن جده، قال: كان في تماضر سوء خلق، وكانت على تطليقتين، فلما مرض عبد الرحمن جرى بينه وبينها شيء، فقال لها: واللَّه لئن سألتني «١» لأطلقنك. فقالت: واللَّه لأسألنك.\nفقال: إما لا فأعلميني إذا حضت وطهرت. فلما حاضت وطهرت أرسلت إليه تعلمه، قال:\nفمرّ رسولها ببعض أهله، فقال: أين تذهب؟ قال: أرسلتني تماضر إلى عبد الرحمن أعلمه أنها قد حاضت ثم طهرت. قال: ارجع إليها فقل لها: لا تفعلي، فو اللَّه ما كان ليرد قسمه.\nفقالت: أنا واللَّه لا أردّ قسمي. قال: فأعلمه فطلقها.\nوعن ابن نمير، عن محمد بن إسحاق، عن سعد بن إبراهيم، عن أبيه، عن أم كلثوم جدته، قالت: لما طلق عبد الرحمن امرأته الكلبية تماضر متعها بجارية سوداء.\nوعن محمد بن مصعب، عن الأوزاعي، عن الزهري، عن طلحة بن عبد اللَّه- أن عثمان ورث تماضر بنت الأصبغ من عبد الرحمن وكان طلقها في مرضه تطليقة، وكانت آخر طلاقها.\nومن طريق أيوب عن نافع، وسعد بن إبراهيم- أنه طلقها ثلاثا، فورثها عثمان منه بعد انقضاء العدة.",
+      "english": "And Muhammad ibn Sa'd said: Yazid ibn Harun informed us; Ibrahim ibn Sa'd informed us, from his father, from his grandfather, who said: Tumadir had a bad temper, and two divorce pronouncements had already been made against her. When 'Abd al-Rahman fell ill, something occurred between them, and he said to her, “By Allah, if you ask me, I will certainly divorce you.” She said, “By Allah, I will certainly ask you.”\n\nHe said, “If you insist, then inform me when you have menstruated and become pure.” When she had menstruated and become pure, she sent someone to notify him. He said: Her messenger passed by one of his family, who asked, “Where are you going?” He replied, “Tumadir has sent me to 'Abd al-Rahman to inform him that she has menstruated and then become pure.” He said, “Go back to her and tell her not to do it, for, by Allah, he would never break his oath.”\n\nShe said, “By Allah, I will not break my oath.” He said: So the messenger informed him, and he divorced her.\n\nAnd from Ibn Numayr, from Muhammad ibn Ishaq, from Sa'd ibn Ibrahim, from his father, from his grandmother Umm Kulthum, who said: When 'Abd al-Rahman divorced his Kalbi wife Tumadir, he gave her a black slave-girl as a parting provision.\n\nAnd from Muhammad ibn Mus'ab, from al-Awza'i, from al-Zuhri, from Talha ibn 'Abd Allah: 'Uthman granted Tumadir bint al-Asbagh inheritance from 'Abd al-Rahman. He had divorced her once during his illness, and it was the final divorce pronouncement against her.\n\nThrough Ayyub, from Nafi' and Sa'd ibn Ibrahim: He divorced her three times, and 'Uthman granted her inheritance from him after the expiration of the waiting period.",
+      "arabic_sha256": "b4c792282b63b34d424a84a035f265eebbce931cea659d56f420b84039d96654",
+      "english_sha256": "b0c766359fa583c5b17e831754cbea00330d03e21e261b9fc7ffd205b308ce0c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "تماضر بنت زبان بن الأصبغ",
+      "english": "Tamadur bint Zaban ibn al-Asbagh",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن جعفر",
+      "english": "Abdullah ibn Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عون",
+      "english": "Abu Awn",
+      "kind": "person"
+    },
+    {
+      "arabic": "صالح بن إبراهيم بن عبد الرحمن بن عوف",
+      "english": "Salih ibn Ibrahim ibn Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عوف",
+      "english": "Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني كلب",
+      "english": "Banu Kalb",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأصبغ بن عمرو",
+      "english": "al-Asbagh ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "حماد بن زيد",
+      "english": "Hammad ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أيوب",
+      "english": "Ayyub",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن إبراهيم",
+      "english": "Sa'd ibn Ibrahim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن أبي سلمة بن عبد الرحمن",
+      "english": "Umar ibn Abi Salama ibn Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمّد بن عمر",
+      "english": "Muhammad ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "قرشي",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن الزبير",
+      "english": "Ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمّد بن سعد",
+      "english": "Muhammad ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن هارون",
+      "english": "Yazid ibn Harun",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن سعد",
+      "english": "Ibrahim ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "تماضر بنت الأصبغ",
+      "english": "Tumadir bint al-Asbagh",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن",
+      "english": "'Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن نمير",
+      "english": "Ibn Numayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم",
+      "english": "Umm Kulthum",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن مصعب",
+      "english": "Muhammad ibn Mus'ab",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأوزاعي",
+      "english": "al-Awza'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "طلحة بن عبد اللَّه",
+      "english": "Talha ibn 'Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "'Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "نافع",
+      "english": "Nafi'",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

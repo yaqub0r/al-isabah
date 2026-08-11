@@ -1,0 +1,105 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010849",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10849,
+  "title": {
+    "english": "Umayma bint al-Harith[1]",
+    "arabic_observed": "أميمة بنت الحارث «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010849-segment-0001",
+      "volume": 8,
+      "scan_page": 31,
+      "printed_page": 30,
+      "reader_page": 3943,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3943",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0031:39f9e796adf302b7",
+      "arabic": "١٠٨٤٩- أميمة بنت الحارث «١»\n: امرأة عبد الرحمن بن الزبير، طلقها ثلاثا، فتزوجها رفاعة ثم طلقها رفاعة، فقالت: يا رسول اللَّه، إن رفاعة طلقني أفأتزوّج عبد الرحمن؟ قال:\n«هل جامعك» «٢»، قالت: ما معه إلا مثل هدبة الثوب، فقال النبيّ ﷺ: «لا، حتى تذوقي عسيلته ويذوق عسيلتك» .\nأخرجه ابن مندة، من طريق محمد بن مروان السدي، عن الكلبي، عن أبي صالح، عن ابن عباس.\nقلت: ومحمد بن مروان كذبوه، وشيخه اعترف بالكذب، وأصل القصة في الصحيحين بغير هذا السياق، ولم يسمّ المرأة فيهما. وسيأتي أن اسمها سهيمة. وقيل غير ذلك.",
+      "english": "10849 — Umayma bint al-Harith[1]\n\nThe wife of Abd al-Rahman ibn al-Zubayr. He divorced her three times, after which Rifa'a married her; then Rifa'a divorced her. She said, “O Messenger of Allah, Rifa'a has divorced me. May I marry Abd al-Rahman?” He asked, “Did he have intercourse with you?”[2] She replied, “He has nothing but something like the fringe of a garment.” The Prophet, peace and blessings be upon him, said, “No, not until you taste his sweetness and he tastes your sweetness.”\n\nIbn Manda transmitted it by way of Muhammad ibn Marwan al-Suddi, from al-Kalbi, from Abu Salih, from Ibn Abbas.\n\nI say: Muhammad ibn Marwan was declared a liar, and his teacher admitted to lying. The basic story is found in the two Sahih collections in a different form, and the woman is not named in either of them. It will be stated below that her name was Suhayma. Other views have also been stated.",
+      "arabic_sha256": "81c37a7722579c8ab3537bd12c600d00feef2f0eecdb3bd343daf66de87231a1",
+      "english_sha256": "e0ba2987424e1c56c73d76d4b14fb796c62d21e495277c75d5c528d928896cd9",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أميمة بنت الحارث",
+      "english": "Umayma bint al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن الزبير",
+      "english": "Abd al-Rahman ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "رفاعة",
+      "english": "Rifa'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن مروان السدي",
+      "english": "Muhammad ibn Marwan al-Suddi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكلبي",
+      "english": "al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو صالح",
+      "english": "Abu Salih",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيحين",
+      "english": "the two Sahih collections",
+      "kind": "work"
+    },
+    {
+      "arabic": "سهيمة",
+      "english": "Suhayma",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

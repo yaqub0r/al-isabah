@@ -1,0 +1,133 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012202",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12202,
+  "title": {
+    "english": "Umm Farwa al-Ansariyya (1)",
+    "arabic_observed": "أم فروة الأنصارية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012202-segment-0001",
+      "volume": 8,
+      "scan_page": 450,
+      "printed_page": 449,
+      "reader_page": 4362,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4362",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0450:2d724618d9bd932e",
+      "arabic": "١٢٢٠٢- أم فروة الأنصارية «١»\n: عمة قاسم بن غنام، بالمعجمة والنون الثقيلة. وقال ابن سعد: أخرج حديثها أبو داود، والترمذي «٢»، من طريق عبد اللَّه العمري المكبر الضعيف، عن القاسم عن بعض أمهاته، عن أم فروة، هذه رواية لأبي داود، وله في رواية أخرى عن عمة له يقال لها أم فروة. وفي رواية الترمذي: عن عمته أم فروة، وكانت بايعت النبي ﷺ قال الترمذي: لا يروي إلا من حديث العمري، واضطربوا في هذا الحديث.\nانتهى.\nوقد وقع في مسند أحمد، عن القاسم، عن عماته، عن أم فروة، قالت: سئل رسول اللَّه ﷺ أيّ العمل أفضل؟ قال: «الصّلاة لأوّل وقتها» .\nوأخرجه ابن السّكن، من طريق عبيد اللَّه بن عمر بالتصغير، الثقة، عن القاسم، فقال:\nعن بعض أهله، عن أم فروة، وكانت ممن بايع النبيّ ﵌ تحت الشجرة، قالت: سألت ... فذكره.\nقال ابن السّكن: اختلف عنهما في الإسناد. انتهى.\nوهذا يرد على إطلاق الترمذي، وقد أخرجه الدار الدّارقطنيّ، والحاكم من طريق عبيد اللَّه المصغر أيضا، وقال في القاسم: عن جدته الدنيا عن جدته أم فروة. وكلام ابن السكن يوهم تفرد العمريين به، عن القاسم. ويرد عليه رواية ابن أبي فديك عن الضحاك بن عثمان، عن القاسم، لكن قال: عن امرأة من المبايعات، ولم يسمّها. أخرجه الطبرانيّ.",
+      "english": "12202—Umm Farwa al-Ansariyya (1)\n\nThe paternal aunt of Qasim ibn Ghannam—the latter name being spelled with a dotted ghayn and a doubled nun. Ibn Sa'd said: Abu Dawud and al-Tirmidhi (2) transmitted her hadith through Abd Allah al-Umari—the one whose name is in the non-diminutive form, and who was weak—from al-Qasim, from one of his female ancestors, from Umm Farwa. This is one of Abu Dawud's versions. In another version of his, it reads: “from a paternal aunt of his called Umm Farwa.” In al-Tirmidhi's version it reads: “from his paternal aunt Umm Farwa,” and she had pledged allegiance to the Prophet—may Allah bless him and grant him peace. Al-Tirmidhi said: “It is transmitted only through al-Umari, and the transmissions of this hadith are inconsistent.”\n\nEnd.\n\nIn Musnad Ahmad it occurs from al-Qasim, from his paternal aunts, from Umm Farwa, who said: The Messenger of Allah—may Allah bless him and grant him peace—was asked, “Which deed is best?” He replied: “Prayer at the beginning of its appointed time.”\n\nIbn al-Sakan transmitted it through Ubayd Allah ibn Umar—the one whose name is in the diminutive form, and who was trustworthy—from al-Qasim, wording it:\n\n“From one of his family, from Umm Farwa, who was among those who pledged allegiance to the Prophet—may Allah bless him and grant him peace—beneath the tree. She said: ‘I asked…’” He then related the hadith.\n\nIbn al-Sakan said: “The isnad was transmitted in differing forms from the two of them.” End.\n\nThis refutes al-Tirmidhi's unqualified statement. Al-Daraqutni and al-Hakim also transmitted it through Ubayd Allah, in the diminutive form, and gave the chain from al-Qasim as: “from his nearer grandmother, from his grandmother Umm Farwa.” Ibn al-Sakan's words suggest that the two al-Umaris alone transmitted it from al-Qasim. This is refuted by the transmission of Ibn Abi Fudayk from al-Dahhak ibn Uthman, from al-Qasim; however, he said, “from a woman who was among those who pledged allegiance,” without naming her. Al-Tabarani transmitted it.",
+      "arabic_sha256": "2204de433ea04bb424649ef74dac5af3a3f1c732be14668b228bb48e3ff5959d",
+      "english_sha256": "d1501605a4e8165dec02dafa136deae31f056a981a9252fcadb99432bc06064c",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم فروة الأنصارية",
+      "english": "Umm Farwa al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "قاسم بن غنام",
+      "english": "Qasim ibn Ghannam",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله العمري",
+      "english": "Abd Allah al-Umari",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "مسند أحمد",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد الله بن عمر",
+      "english": "Ubayd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدارقطني",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي فديك",
+      "english": "Ibn Abi Fudayk",
+      "kind": "person"
+    },
+    {
+      "arabic": "الضحاك بن عثمان",
+      "english": "al-Dahhak ibn Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "attribution",
+      "arabic_span": "وقال ابن سعد: أخرج حديثها أبو داود، والترمذي",
+      "explanation": "The printed attribution to Ibn Sa'd is chronologically anomalous because the dates supplied in footnote 2 place his death before those of Abu Dawud and al-Tirmidhi. No supplied witness establishes a different reading, so the canonical wording has been translated without silent emendation.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0450:2d724618d9bd932e"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

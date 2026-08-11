@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011734",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11734,
+  "title": {
+    "english": "Layla:",
+    "arabic_observed": "ليلى:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011734-segment-0001",
+      "volume": 8,
+      "scan_page": 309,
+      "printed_page": 308,
+      "reader_page": 4221,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4221",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0309:0ba619c4fb4f3e1c",
+      "arabic": "١١٧٣٤- ليلى:\nروى عنها حبيب بن زيد، خرج حديثها أبو يعلى- من التّجريد.",
+      "english": "11734—Layla:\n\nHabib ibn Zayd narrated from her. Abu Ya'la transmitted her hadith—from al-Tajrid.",
+      "arabic_sha256": "3d619e661b26f714ece67358ff29049d86715e96fedf29aef01f9849f18d57ba",
+      "english_sha256": "411434a52bbfe21fdeef1d6eafa9252ba749bc090818100cec17e25b9e1874f3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حبيب بن زيد",
+      "english": "Habib ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو يعلى",
+      "english": "Abu Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "ليلى",
+      "english": "Layla",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

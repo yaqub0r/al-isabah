@@ -1,0 +1,234 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011667",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11667,
+  "title": {
+    "english": "Kabsha bint Thabit",
+    "arabic_observed": "كبشة بنت ثابت"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011667-segment-0001",
+      "volume": 8,
+      "scan_page": 294,
+      "printed_page": 293,
+      "reader_page": 4206,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4206",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0294:d8f3777ebd93ed59",
+      "arabic": "١١٦٦٧- كبشة بنت ثابت\nبن المنذر بن حرام، أخت حسان لأبيه «٤»، من بني مالك بن النّجّار.\n(١) أسد الغابة ت (٧٢٣٢) .\n(٢) أسد الغابة ت (٧٢٢٦) .\n(٣) أسد الغابة ت (٧٢٢٧) .\n(٤) الثقات ٣/ ٣٥٧، أعلام النساء ٤/ ٢٣٢، تجريد أسماء الصحابة ٢/ ٢٩٩، تقريب التهذيب ٢/ ٦١٢- تهذيب التهذيب ١٢/ ٤٤٧، الكاشف ٣/ ٤٨٠، تهذيب الكمال ٣/ ١٦٩٦، الاستبصار ٣٥٦، خلاصة تهذيب الكمال ٣/ ٣٩١.",
+      "english": "11667 — Kabsha bint Thabit\n\nibn al-Mundhir ibn Haram, Hassan's paternal half-sister,[4] of Banu Malik ibn al-Najjar.\n\n[1] Usd al-Ghaba, entry 7232.\n\n[2] Usd al-Ghaba, entry 7226.\n\n[3] Usd al-Ghaba, entry 7227.\n\n[4] al-Thiqat 3/357; A'lam al-Nisa' 4/232; al-Tajrid 2/299; Taqrib al-Tahdhib 2/612; Tahdhib al-Tahdhib 12/447; al-Kashif 3/480; Tahdhib al-Kamal 3/1696; al-Istibsar 356; Khulasat Tahdhib al-Kamal 3/391.",
+      "arabic_sha256": "c14a2373a10e6270100dbade49b08826e734aef65de97df160d960cebe6ec706",
+      "english_sha256": "0dd00cb2e5521fa97c37382137b46d7e4fe1b178539ec9fafd8ce6dd164cfb38",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011667-segment-0002",
+      "volume": 8,
+      "scan_page": 295,
+      "printed_page": 294,
+      "reader_page": 4207,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4207",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0295:59abeeb62025d9d2",
+      "arabic": "وأخرج حديثها التّرمذيّ، وأبو يعلى، من طريق يزيد بن يزيد بن جابر، عن عبد الرحمن بن أبي عمرة، عن جدته كبشة، قالت: دخل عليّ رسول اللَّه ﵌ فشرب من في قربة معلقة قائما، فقمت إلى فمها فقطعته،\nكذا في خبرها ليس فيه ذكر أبيها ولا نسب، ونسبها أبو عروبة كما ذكرت،\nورواه عبد العزيز بن الحصين، عن يزيد، عن عبد الرحمن، فقال: عن جدته البرصاء، أن النبي ﵌ شرب وهو قائم.\nأخرجه ابن مندة وكأنه لقيها. ورواه ابن وهب، عن ابن لهيعة، عن يزيد، فقال عن جدته كلثم. وستأتي. وقال ابن سعد: أمها سخطى بنت حارثة بن لوذان، تزوّجها عمرو بن محصن بن عمرو بن عتيك، فولدت له ثعلبة، وأبا عمرو، وأبا حبيبة، ثم تزوجها الحارث بن ثعلبة فولدت له أم ثابت رملة، ثم تزوجها حارثة بن النعمان.",
+      "english": "al-Tirmidhi and Abu Ya'la transmitted her hadith by way of Yazid ibn Yazid ibn Jabir, from 'Abd al-Rahman ibn Abi 'Amra, from his grandmother Kabsha, who said: “The Messenger of Allah, may Allah bless him and grant him peace, entered upon me and drank while standing from the mouth of a hanging waterskin. I then went to its mouth and cut it off.”\n\nThis is how it appears in her report: it contains no mention of her father or lineage. Abu 'Aruba supplied her lineage as I have mentioned.\n\n'Abd al-'Aziz ibn al-Husayn also related it from Yazid, from 'Abd al-Rahman, but said: “From his grandmother al-Barsa': the Prophet, may Allah bless him and grant him peace, drank while standing.” Ibn Manda transmitted it; apparently, 'Abd al-Rahman had met her. Ibn Wahb related it from Ibn Lahi'a, from Yazid, with the wording: “From his grandmother Kulthum.” She will appear later. Ibn Sa'd said: Her mother was Sukhta bint Haritha ibn Lawdhan. 'Amr ibn Mihsan ibn 'Amr ibn 'Atik married her, and she bore him Tha'laba, Abu 'Amr, and Abu Habiba. al-Harith ibn Tha'laba then married her, and she bore him Umm Thabit Ramla. Haritha ibn al-Nu'man then married her.",
+      "arabic_sha256": "c60e8a991898a4498f502829e66b4b660187f494c31e15e93d4560a098293674",
+      "english_sha256": "b9a6d98448657f3d92519216f56222b3c1cd5d6d7aec967eba3f35222bcb6db8",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حسان",
+      "english": "Hassan ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني مالك بن النّجّار",
+      "english": "Banu Malik ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "التّرمذيّ",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو يعلى",
+      "english": "Abu Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن يزيد بن جابر",
+      "english": "Yazid ibn Yazid ibn Jabir",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن أبي عمرة",
+      "english": "'Abd al-Rahman ibn Abi 'Amra",
+      "kind": "person"
+    },
+    {
+      "arabic": "كبشة",
+      "english": "Kabsha bint Thabit ibn al-Mundhir ibn Haram",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عروبة",
+      "english": "Abu 'Aruba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد العزيز بن الحصين",
+      "english": "'Abd al-'Aziz ibn al-Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "البرصاء",
+      "english": "al-Barsa'",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن وهب",
+      "english": "Ibn Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن لهيعة",
+      "english": "Ibn Lahi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "كلثم",
+      "english": "Kulthum",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سخطى بنت حارثة بن لوذان",
+      "english": "Sukhta bint Haritha ibn Lawdhan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن محصن بن عمرو بن عتيك",
+      "english": "'Amr ibn Mihsan ibn 'Amr ibn 'Atik",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثعلبة",
+      "english": "Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمرو",
+      "english": "Abu 'Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو حبيبة",
+      "english": "Abu Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن ثعلبة",
+      "english": "al-Harith ibn Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم ثابت رملة",
+      "english": "Umm Thabit Ramla",
+      "kind": "person"
+    },
+    {
+      "arabic": "حارثة بن النعمان",
+      "english": "Haritha ibn al-Nu'man",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

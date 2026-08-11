@@ -1,0 +1,132 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011450",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11450,
+  "title": {
+    "english": "Atika bint Usayd ibn Abi al-'Is (1) ibn Umayya al-Umawiyya, the sister of Attab ibn Usayd, governor of Mecca.",
+    "arabic_observed": "عاتكة بنت أسيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011450-segment-0001",
+      "volume": 8,
+      "scan_page": 227,
+      "printed_page": 226,
+      "reader_page": 4139,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4139",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0227:52856abc68939619",
+      "arabic": "١١٤٥٠- عاتكة بنت أسيد\nبن أبي العيص «١» بن أمية الأمويّة، أخت عتاب بن أسيد أمير مكّة.\nقال ابن إسحاق: أسلمت يوم الفتح، وقال أبو عمر: لها صحبة، ولا أعلمها روت شيئا. وذكر الزّبير بن بكّار في كتاب «النّسب» عن محمد بن سلام، قال: أرسل عمر بن\n(١) أسد الغابة ت (٧٠٨٥)، الاستيعاب ت (٣٤٦٩) .",
+      "english": "11450—Atika bint Usayd ibn Abi al-'Is (1) ibn Umayya al-Umawiyya, the sister of Attab ibn Usayd, governor of Mecca.\n\nIbn Ishaq said: “She embraced Islam on the Day of the Conquest.” Abu Umar said: “She was a Companion, and I do not know that she narrated anything.” Al-Zubayr ibn Bakkar mentioned in Kitab al-Nasab, on the authority of Muhammad ibn Sallam, who said: Word was sent by Umar ibn...\n\n(1) Usd al-Ghaba, entry 7085; al-Isti'ab, entry 3469.",
+      "arabic_sha256": "8ae8fac83666148b3b0a6d4939f8bd01e7519f0fcc7fcb35dbc8a8f9b5af68ca",
+      "english_sha256": "74f4fb6a9b9616ddfc98830cbf5bfa9692102c33d5083e243920a851cc4badda",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011450-segment-0002",
+      "volume": 8,
+      "scan_page": 228,
+      "printed_page": 227,
+      "reader_page": 4140,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4140",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0228:b2214ac9c9a4cb4b",
+      "arabic": "الخطّاب إلى الشفاء بنت عبد اللَّه العدويّة أن اغدي عليّ، قالت: فغدوت عليه، فوجدت عاتكة بنت أسيد بن أبي العيص ببابه، فدخلنا فتحدّثنا ساعة، فدعا بنمط فأعطاها إياه، ودعا بنمط دونه فأعطانيه، قالت: فقالت: يا عمر، أنا قبلها إسلاما، وأنا بنت عمّك دونها، وأرسلت إليّ وأتت من قبل نفسها! قال: ما كنت رفعت ذلك إلا لك، فلما اجتمعتما تذكّرت أنها أقرب إلى رسول اللَّه ﵌ منك.",
+      "english": "…ibn al-Khattab sent word to al-Shifa bint Abdullah al-Adawiyya: “Come to me in the morning.” She said: “I went to him in the morning and found Atika bint Usayd ibn Abi al-Is at his door. We entered and conversed for a while. He then called for a patterned cloth and gave it to her, and called for a lesser patterned cloth and gave it to me.” She said: “So she said, ‘O Umar, I embraced Islam before she did; I am your paternal cousin, unlike her; and you sent for me, whereas she came of her own accord!’ He replied: ‘I had set that aside only for you, but when the two of you came together, I remembered that she is more closely related to the Messenger of Allah—may Allah bless him and grant him peace—than you are.’",
+      "arabic_sha256": "4ffccbeb8d344f68d97d8de2b350ea30728594d325ac028ad3369813ce4afbc9",
+      "english_sha256": "68c3da8e8a37401d1d099aef9f07ba7ec76fbe183c3b46377022a7b67363138d",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عتاب بن أسيد",
+      "english": "Attab ibn Usayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكّة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "يوم الفتح",
+      "english": "Day of the Conquest",
+      "kind": "other"
+    },
+    {
+      "arabic": "الزّبير بن بكّار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب النّسب",
+      "english": "Kitab al-Nasab",
+      "kind": "work"
+    },
+    {
+      "arabic": "محمد بن سلام",
+      "english": "Muhammad ibn Sallam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الشفاء بنت عبد اللَّه العدويّة",
+      "english": "al-Shifa bint Abdullah al-Adawiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاتكة بنت أسيد بن أبي العيص",
+      "english": "Atika bint Usayd ibn Abi al-Is",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "referent",
+      "arabic_span": "فذكر مثل القصّة ... فذكر القصّة بطولها",
+      "explanation": "The agent of each masculine singular verb is not explicitly identified. The final translation preserves this ambiguity with passive constructions.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0227:52856abc68939619"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

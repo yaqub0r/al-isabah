@@ -1,0 +1,139 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012176",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12176,
+  "title": {
+    "english": "Umm Aqil:[6]",
+    "arabic_observed": "أم عقيل «٦»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012176-segment-0001",
+      "volume": 8,
+      "scan_page": 439,
+      "printed_page": 438,
+      "reader_page": 4351,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4351",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0439:b37a7630f034f6ea",
+      "arabic": "١٢١٧٦- أم عقيل «٦»:\nروى حديثها إسحاق بن عبد اللَّه بن أبي فروة- أحد الضّعفاء، عن عقيل، عن أمه أم عقيل، قالت: أتيت رسول اللَّه ﵌ فقلت: إن أبا\n(١) أسد الغابة ت (٧٥٤١) .\n(٢) شبه القطع اليسير بإشمام الرائحة، أي اقطعي بعض النواة ولا تستأصليها. النهاية ٢/ ٥٠٣.\n(٣) أسد الغابة ت (٧٥٤٤) .\n(٤) أسد الغابة ت (٧٥٤٥)، الاستيعاب ت (٣٦٤٧) .\n(٥) في أ: أم عفة.\n(٦) تجريد أسماء الصحابة ٢/ ٣٢٩، أسد الغابة ت (٧٥٤٦) .",
+      "english": "12176—Umm Aqil:[6]\n\nHer report was narrated by Ishaq ibn Abd Allah ibn Abi Farwa—one of the weak transmitters—from Aqil, from his mother, Umm Aqil, who said: “I came to the Messenger of Allah—may Allah bless him and grant him peace—and said: ‘Indeed, Abu...\n\n[1] Usd al-Ghaba, entry 7541.\n\n[2] He likened a slight cut to smelling a scent; that is, cut part of the protuberance and do not remove it entirely. al-Nihaya, 2/503.\n\n[3] Usd al-Ghaba, entry 7544.\n\n[4] Usd al-Ghaba, entry 7545; al-Isti'ab, entry 3647.\n\n[5] In manuscript A: “Umm Affa.”\n\n[6] al-Tajrid, 2/329; Usd al-Ghaba, entry 7546.",
+      "arabic_sha256": "3228cf456dc0e52a4433a54725b083175583b4d995d818f1e8ac6ec423c8d2b9",
+      "english_sha256": "406762c1e1cf61a0e22329ca71d2c7777ceed115dad8569115f34ce2825e89cf",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012176-segment-0002",
+      "volume": 8,
+      "scan_page": 440,
+      "printed_page": 439,
+      "reader_page": 4352,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4352",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0440:562380b7b4b52481",
+      "arabic": "عقيل مات، وأوصى بهذا الجمل في سبيل اللَّه، وإنه أعجف، فقال: «يا أمّ عقيل، اعتمري، فإن عمرة في رمضان تعدل حجّة» .\nأخرجه ابن مندة من طريق الفضل بن دكين، عن عبد السّلام بن حرب، عن إسحاق.\nوقال أبو نعيم: الصّواب أم معقل، كذا قال. وأقره ابن الأثير، وفيه نظر، لاختلاف مخرج الحديثين والقصّتين، وأن الفتيا في ذكر البعير والعمرة.",
+      "english": "Aqil died and bequeathed this camel in the cause of Allah, and it is emaciated.” He said: “O Umm Aqil, perform umra, for an umra in Ramadan is equivalent to a hajj.”\n\nIbn Mandah related it through al-Fadl ibn Dukayn, from Abd al-Salam ibn Harb, from Ishaq.\n\nAbu Nu'aym said: “The correct reading is Umm Ma'qil.” That is what he said, and Ibn al-Athir concurred with him. But this is open to question, because the transmission routes of the two hadiths and the two accounts differ, and because the legal response concerns mention of the camel and the umra.",
+      "arabic_sha256": "be9f139246e48b5045588b30c035f30344acd7374cc2a99c8901a5069a77d451",
+      "english_sha256": "dec0811221a733c1d76f47ce5a15a207af9eebadb2fc1766c4bdebb03e8264e7",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول الله",
+      "english": "the Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم عقيل",
+      "english": "Umm Aqil",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق بن عبد الله بن أبي فروة",
+      "english": "Ishaq ibn Abd Allah ibn Abi Farwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عقيل",
+      "english": "Aqil",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عفة",
+      "english": "Umm Affa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "رمضان",
+      "english": "Ramadan",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفضل بن دكين",
+      "english": "al-Fadl ibn Dukayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد السلام بن حرب",
+      "english": "Abd al-Salam ibn Harb",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معقل",
+      "english": "Umm Ma'qil",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

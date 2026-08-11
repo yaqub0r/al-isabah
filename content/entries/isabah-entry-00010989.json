@@ -1,0 +1,344 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010989",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10989,
+  "title": {
+    "english": "Jamila bint Thabit ibn Abi (2) al-Aflah,",
+    "arabic_observed": "جميلة بنت ثابت"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010989-segment-0001",
+      "volume": 8,
+      "scan_page": 68,
+      "printed_page": 67,
+      "reader_page": 3980,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3980",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0068:ecbef9f4ecef77f1",
+      "arabic": "١٠٩٨٩- جميلة بنت ثابت\nبن أبي «٢» الأفلح، أخت عاصم، زوج عمر. تكنى أم عاصم، كان اسمها عاصية فسمّاها رسول اللَّه ﷺ جميلة.\nقاله أبو عمر: قال تزوجها عمر سنة سبع، فولدت له عاصم بن عمر، ثم طلقها فتزوّجها يزيد بن حارثة، فولدت له عبد الرحمن بن يزيد، فهو أخو عاصم بن عمر لأمه، وهي التي أتى فيها الحديث في الموطأ وغيره- أنّ عمر ركب إلى قباء فوجد ابنه عاصما يلعب.\nوقد تقدم ذلك في ترجمة عاصم في القسم الثاني من حرف العين،\nوأسند ابن مندة من طريق هشام بن حسان، عن واصل بن أبي شيبة، قال: كان اسم امرأة عمر عاصية، فأسلمت فأتت عمر، فقالت: قد كرهت اسمي، فسمّني، فقال: أنت جميلة، فغضبت، وقالت: ما وجدت اسما تسميني به إلا اسم أمة، فأتت النبيّ ﷺ فقالت: يا رسول اللَّه، إني كرهت اسمي، فقال: «أنت جميلة» . فغضبت- يعني وذكرت قول عمر، فقال: «أما علمت أنّ اللَّه عند لسان عمر وقلبه» .\n(١) الاستيعاب ت ٣٣٢٣.\n(٢) الثقات ٣/ ٦٧، الدر المنثور ١٢٦، تجريد أسماء الصحابة ٢/ ٢٥٥٠، الاستبصار ٢٨٧.",
+      "english": "10989—Jamila bint Thabit ibn Abi (2) al-Aflah,\n\nthe sister of Asim and wife of Umar. Her kunya was Umm Asim. Her name had been Asiya, but the Messenger of Allah (may Allah bless him and grant him peace) named her Jamila.\n\nAbu Umar stated this. He said: Umar married her in the year seven, and she bore him Asim ibn Umar. He then divorced her, whereupon Yazid ibn Haritha married her, and she bore him Abd al-Rahman ibn Yazid. He was therefore the maternal brother of Asim ibn Umar. She is the woman concerning whom the report occurs in al-Muwatta and elsewhere: Umar rode to Quba and found his son Asim playing.\n\nThis has already been given in the biography of Asim, in the second section under the letter ayn.\n\nIbn Manda transmitted with an isnad through Hisham ibn Hassan, from Wasil ibn Abi Shayba, who said: “The name of Umar's wife was Asiya. She accepted Islam and came to Umar, saying, ‘I dislike my name, so give me another name.’ He said, ‘You are Jamila.’ She became angry and said, ‘Could you find no name to give me except the name of a slave woman?’ She then came to the Messenger of Allah (may Allah bless him and grant him peace) and said, ‘O Messenger of Allah, I dislike my name.’ He said, ‘You are Jamila.’ She became angry—that is, she mentioned Umar's words—so he said, ‘Did you not know that Allah is with Umar's tongue and heart?’”\n\n(1) al-Isti'ab, entry 3323.\n\n(2) al-Thiqat 3/67; al-Durr al-Manthur, 126; al-Tajrid 2/2550; al-Istibsar, 287.",
+      "arabic_sha256": "a0757a7fecb7364ad12b577f5e9d68c0c105676669d919c1f7b27c80287488f3",
+      "english_sha256": "570469b9dcdda8b4a78da25ab3b1369bc7f188f72e2a02a14ccb30996f12b3b4",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010989-segment-0002",
+      "volume": 8,
+      "scan_page": 69,
+      "printed_page": 68,
+      "reader_page": 3981,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3981",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0069:c325acd43448be8b",
+      "arabic": "ثم\nساق من طريق حجاج بن منهال، عن حماد بن سلمة، عن عبيد اللَّه بن عمر، عن نافع، عن ابن عمر- أنّ رسول اللَّه ﷺ غيّر اسم عاصية، فقال: «أنت جميلة» .\nقلت: وأخرجه ابن أبي شيبة، عن بشر بن السري، عن حماد، ولفظه: أن أمة لعمر كان يقال لها عاصية، فسماها رسول اللَّه ﷺ جميلة.\nوأخرجه ابن أبي عمر، عن بشر بن السري بسند آخر، فقال: عن حماد، عن ثابت، عن أنس- أراه أنّ أمة لعمر كان لها اسم من أسماء العجم، فسمّاها عمر جميلة، فأتت النبيّ ﷺ فقال: «أنت جميلة» «١» فقال لها عمر: خذيها على رغم أنفك.\nوقال ابن سعد في باب ما بايع النبي ﷺ من النساء أول كتاب طبقات النساء: أخبرنا محمد بن عمر، حدثني ابن أبي حبيبة، عن عاصم بن عمر، عن قتادة، قال: أول من بايع النبي ﷺ أمّ سعد بن معاذ، وهي كبشة بنت رافع بن عبيد، وأم عامر بنت يزيد بن السكن، ومن بني ظفر ليلى بنت الخطيم، ومن بني عمرو بن عوف ليلى ومريم وتميمة بنات أبي سفيان الّذي يقال له أبو البنات، وقتل بأحد، والشموس بنت أبي عامر الراهب، وابنتها جميلة بنت ثابت بن أبي الأقلح، وظبية بنت النعمان بن ثابت بن أبي الأقلح.\nقلت: لعله سقط منه شيء قبل قوله: فأتت، وهو: ثم سألته امرأته أن يغيّر اسمها، فسماها جميلة، وغضبت، كما في رواية واصل المبدوء بها، فبذلك ينتظم الكلام، ويعرف سبب غضبها من تسميتها جميلة، ويستفاد منه صحابية أخرى وهي أمة عمر.\nوأخرج ابن سعد بسند فيه الواقدي من حديث جابر عن عمر، قال: قلت: يا رسول اللَّه، قد صكت جميلة بنت ثابت صكة ألصقت خدّها بالأرض، لأنها سألتني ما لا أقدر عليه.",
+      "english": "Then he cited, through Hajjaj ibn Minhal, from Hammad ibn Salama, from Ubayd Allah ibn Umar, from Nafi', from Ibn Umar, that the Messenger of Allah—may Allah bless him and grant him peace—changed the name Asiya and said, “You are Jamila.”\n\nI say: Ibn Abi Shayba also transmitted it from Bishr ibn al-Sari, from Hammad. His wording is: A bondwoman belonging to Umar was called Asiya, so the Messenger of Allah—may Allah bless him and grant him peace—named her Jamila.\n\nIbn Abi Umar also transmitted it from Bishr ibn al-Sari by another chain, saying: From Hammad, from Thabit, from Anas—I think [he said]—that a bondwoman belonging to Umar had one of the names of the non-Arabs. Umar named her Jamila, so she went to the Prophet—may Allah bless him and grant him peace—and he said, “You are Jamila.”[1] Umar then said to her, “Take it, in spite of yourself.”\n\nIn the chapter on the women from whom the Prophet—may Allah bless him and grant him peace—took the pledge, at the beginning of the Book of the Classes of Women, Ibn Sa'd said: Muhammad ibn Umar informed us: Ibn Abi Habiba related to me, from Asim ibn Umar, from Qatada, who said: The first women to pledge allegiance to the Prophet—may Allah bless him and grant him peace—were Umm Sa'd ibn Mu'adh, namely Kabsha bint Rafi' ibn Ubayd; Umm Amir bint Yazid ibn al-Sakan; from Banu Zafar, Layla bint al-Khatim; from Banu Amr ibn Awf, Layla, Maryam, and Tamima, the daughters of Abu Sufyan, who was called Abu al-Banat and was killed at Uhud; al-Shamus bint Abi Amir al-Rahib; her daughter Jamila bint Thabit ibn Abi al-Aqlah; and Zabya bint al-Nu'man ibn Thabit ibn Abi al-Aqlah.\n\nI say: Perhaps something has fallen out before the words “so she went,” namely: “Then his wife asked him to change her name, so he named her Jamila, and she became angry,” as in the report of Wasil with which the discussion began. In this way the account becomes coherent, the reason for her anger at being named Jamila becomes known, and another female Companion is identified: Umar's bondwoman.\n\nIbn Sa'd transmitted, with a chain containing al-Waqidi, from the hadith of Jabir, from Umar, who said: I said, “O Messenger of Allah, Jamila bint Thabit was given a slap that pressed her cheek to the ground, because she asked me for something beyond my ability.”",
+      "arabic_sha256": "40fa3c8858630bd643574aef35d222ee75a5e516cbda70e5905ca2063dffda6c",
+      "english_sha256": "3dc70dc3ac0e6ca352979ebce1f24d2d2f48383a07c8e3dc6126e8528d32487f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت",
+      "english": "Thabit ibn Qays ibn Shammas",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "عاصم",
+      "english": "Asim ibn Thabit ibn Abi al-Aflah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عاصم",
+      "english": "Umm Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاصية",
+      "english": "Asiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عاصم بن عمر",
+      "english": "Asim ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن حارثة",
+      "english": "Yazid ibn Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن يزيد",
+      "english": "Abd al-Rahman ibn Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "الموطأ",
+      "english": "al-Muwatta",
+      "kind": "work"
+    },
+    {
+      "arabic": "قباء",
+      "english": "Quba",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن حسان",
+      "english": "Hisham ibn Hassan",
+      "kind": "person"
+    },
+    {
+      "arabic": "واصل بن أبي شيبة",
+      "english": "Wasil ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الإسلام",
+      "english": "Islam",
+      "kind": "other"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدر المنثور",
+      "english": "al-Durr al-Manthur",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "حجاج بن منهال",
+      "english": "Hajjaj ibn Minhal",
+      "kind": "person"
+    },
+    {
+      "arabic": "حماد بن سلمة",
+      "english": "Hammad ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد اللَّه بن عمر",
+      "english": "Ubayd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "نافع",
+      "english": "Nafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عمر",
+      "english": "Ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة",
+      "english": "Jamila",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي شيبة",
+      "english": "Ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشر بن السري",
+      "english": "Bishr ibn al-Sari",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عمر",
+      "english": "Ibn Abi Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت",
+      "english": "Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس",
+      "english": "Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "طبقات النساء",
+      "english": "Book of the Classes of Women",
+      "kind": "work"
+    },
+    {
+      "arabic": "محمد بن عمر",
+      "english": "Muhammad ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي حبيبة",
+      "english": "Ibn Abi Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتادة",
+      "english": "Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمّ سعد بن معاذ",
+      "english": "Umm Sa'd ibn Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "كبشة بنت رافع بن عبيد",
+      "english": "Kabsha bint Rafi' ibn Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عامر بنت يزيد بن السكن",
+      "english": "Umm Amir bint Yazid ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني ظفر",
+      "english": "Banu Zafar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ليلى بنت الخطيم",
+      "english": "Layla bint al-Khatim",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عمرو بن عوف",
+      "english": "Banu Amr ibn Awf",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ليلى",
+      "english": "Layla bint Abi Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "مريم",
+      "english": "Maryam bint Abi Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "تميمة",
+      "english": "Tamima bint Abi Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي سفيان",
+      "english": "Abu Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو البنات",
+      "english": "Abu al-Banat",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "الشموس بنت أبي عامر الراهب",
+      "english": "al-Shamus bint Abi Amir al-Rahib",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة بنت ثابت بن أبي الأقلح",
+      "english": "Jamila bint Thabit ibn Abi al-Aqlah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ظبية بنت النعمان بن ثابت بن أبي الأقلح",
+      "english": "Zabya bint al-Nu'man ibn Thabit ibn Abi al-Aqlah",
+      "kind": "person"
+    },
+    {
+      "arabic": "واصل",
+      "english": "Wasil",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "جابر",
+      "english": "Jabir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

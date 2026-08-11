@@ -1,0 +1,249 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012228",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12228,
+  "title": {
+    "english": "Umm Kulthum bint Abi Salama² ibn Abd al-Asad [ibn Abd al-Uzza]³ al-Makhzumiyya",
+    "arabic_observed": "أم كلثوم"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012228-segment-0001",
+      "volume": 8,
+      "scan_page": 462,
+      "printed_page": 461,
+      "reader_page": 4374,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4374",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0462:0fcb250426b0aa45",
+      "arabic": "١٢٢٢٨- أم كلثوم\nبنت أبي سلمة «٢» بن عبد الأسد [بن عبد العزّى] «٣» المخزوميّة، ربيبة رسول اللَّه ﵌.\n(١) أخرجه البخاري في التاريخ الكبير ٢/ ٣٠٨ وأبو بكر الخطيب في تاريخ بغداد ١٢/ ٣٠٨ وأبو بكر الخطيب في تاريخ بغداد ١٢/ ٣٦٤ وأورده الهيثمي في الزوائد ٩/ ٨٦ عن ابن عباس عن النبي ﷺ قال إن اللَّه ﷿ أوحى إليّ أن أزوج كريمتي من عثمان ... وقال رواه الطبراني في الصغير والأوسط إن اللَّه ﷿ أوحى إليّ أن أزوج كريمتي من عثمان ... وقال رواه الطبراني في الصغير والأوسط وفيه عمير بن عمران الحنفي وهو ضعيف. وأورده المتقي الهندي في كنز العمال حديث رقم ٣٢٨٠٠، ٣٢٨١٢ وعزاه للطبراني في الكبير عن أم عياش وابن مندة والخطيب وابن عساكر عن عنبسة عن أم عياش وكانت أمة لرقية بنت رسول اللَّه ﷺ.\n(٢) أعلام النساء ٤/ ٢٥١، الاستيعاب ت (٣٦٦٢) .\n(٣) سقط من أ.",
+      "english": "12228 — Umm Kulthum bint Abi Salama² ibn Abd al-Asad [ibn Abd al-Uzza]³ al-Makhzumiyya\n\nShe was the stepdaughter of the Messenger of Allah, may Allah bless him and grant him peace.\n\n¹ Al-Bukhari transmitted it in al-Tarikh al-Kabir, 2/308, and Abu Bakr al-Khatib in Tarikh Baghdad, 12/308; Abu Bakr al-Khatib also transmitted it in Tarikh Baghdad, 12/364. Al-Haythami cited it in al-Zawa'id, 9/86, from Ibn Abbas, from the Prophet, may Allah bless him and grant him peace, who said: “Allah, mighty and majestic, revealed to me that I should marry my noble daughter to Uthman …” He said: “Al-Tabarani related it in al-Saghir and al-Awsat: ‘Allah, mighty and majestic, revealed to me that I should marry my noble daughter to Uthman …’” He said: “Al-Tabarani related it in al-Saghir and al-Awsat; its chain contains Umayr ibn Imran al-Hanafi, who is weak.” Al-Muttaqi al-Hindi cited it in Kanz al-Ummal, hadith nos. 32800 and 32812, and attributed it to al-Tabarani in al-Kabir, from Umm Ayyash, and to Ibn Manda, al-Khatib, and Ibn Asakir, from Anbasa, from Umm Ayyash, who was a slave woman belonging to Ruqayya, daughter of the Messenger of Allah, may Allah bless him and grant him peace.\n\n² A'lam al-Nisa', 4/251; al-Isti'ab, entry 3662.\n\n³ Omitted from manuscript A.",
+      "arabic_sha256": "a8f9d0e87afb13a9d16f5bdf017e384d7a42f4e78dc7e3b55c5c8c2d94f8d53c",
+      "english_sha256": "2431983569d14559e9faced044abc5c86d6e5aa70208ab24a60ed7d6a9756c45",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012228-segment-0002",
+      "volume": 8,
+      "scan_page": 463,
+      "printed_page": 462,
+      "reader_page": 4375,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4375",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0463:9d20999ab2780a15",
+      "arabic": "روت عن أم سلمة زوج النبيّ ﵌. روت عنها أم موسى بن عقبة. قال أبو عمر: حديثها عند موسى بن عقبة، عن أمّه، عن أم كلثوم بنت أبي سلمة.\nقلت:\nأخرجه ابن أبي عاصم في الوحدان. حدثنا الصّلت بن مسعود، حدّثنا مسلم ابن خالد، عن موسى بن عقبة، عن أمه، عن أم كلثوم بنت أبي سلمة، قالت: لما تزوّج النبيّ ﵌ أم سلمة قال لها: «إنّي قد أهديت إلى النّجاشي هدية ولا أراها إلّا سترجع إلينا، إنّ النّجاشيّ قد مات فيما أرى، فإن رجعت فهي لك» . وكان أهدى إليه حلة وأواقي من مسك. قالت: فكان كما قال، فرجعت الهديّة، فبعث إلى كل امرأة من نسائه أوقية من مسك، وأعطى أم سلمة الحلة.\nورواه مسدّد عن مسلم بن خالد، لكن لم ينسبها.\nأخرجه ابن مندة من طريقه، فقال:\nأم كلثوم، غير منسوبة، ورواه هشام بن عمار، عن مسلم بن خالد، فقال في روايته: عن أمّه، عن أم كلثوم، عن أم سلمة. وأخرجه ابن حبّان في صحيحه، من طريقه، وهو المحفوظ، وفي سياقه ما يدل على المراد بقوله: هي لك هي الحلّة لا الهديّة، وبذلك يجاب من استشكل قوله: فهي لك، ثم قسم المسك بين النّساء.",
+      "english": "She narrated from Umm Salama, the wife of the Prophet, peace and blessings be upon him. The mother of Musa ibn Uqba narrated from her. Abu Umar said: Her hadith is related by Musa ibn Uqba, from his mother, from Umm Kulthum bint Abi Salama.\n\nI say:\n\nIbn Abi Asim transmitted it in al-Wuhdan: al-Salt ibn Masud related to us: Muslim ibn Khalid related to us, from Musa ibn Uqba, from his mother, from Umm Kulthum bint Abi Salama, who said: When the Prophet, peace and blessings be upon him, married Umm Salama, he said to her, “I have sent a gift to the Negus, and I think it will surely be returned to us. The Negus has died, as I understand it; so if it is returned, it is yours.” He had sent him a robe and several uqiyyas of musk. She said: It happened just as he had said, and the gift was returned. He sent an uqiyya of musk to each of his wives and gave Umm Salama the robe.\n\nMusaddad also related it from Muslim ibn Khalid, but he did not state her lineage. Ibn Manda transmitted it through Musaddad's route and said: “Umm Kulthum, her lineage not given.” Hisham ibn Ammar related it from Muslim ibn Khalid, but his version says: “from his mother, from Umm Kulthum, from Umm Salama.” Ibn Hibban transmitted it in his Sahih through Hisham's route, and this is the established version. Its wording indicates that what was meant by his statement, “It is yours,” was the robe, not the gift as a whole. This also answers the objection of anyone who found difficulty in his saying, “It is yours,” and then distributing the musk among the women.",
+      "arabic_sha256": "724d0c350ce3daf5a907eccf621155da4c5aff68ae281c07d5d64440ba24f582",
+      "english_sha256": "a153fdf9c94feb44c08a5f59cbf549f57df622578f908c5d08b8380117c776be",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "رقية",
+      "english": "Ruqayya bint Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عياش",
+      "english": "Umm Ayyash",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "المخزوميّة",
+      "english": "Banu Makhzum",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "Al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "التاريخ الكبير",
+      "english": "al-Tarikh al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو بكر الخطيب",
+      "english": "Abu Bakr al-Khatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "تاريخ بغداد",
+      "english": "Tarikh Baghdad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "Al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "Al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصغير",
+      "english": "al-Saghir",
+      "kind": "work"
+    },
+    {
+      "arabic": "الأوسط",
+      "english": "al-Awsat",
+      "kind": "work"
+    },
+    {
+      "arabic": "عمير بن عمران الحنفي",
+      "english": "Umayr ibn Imran al-Hanafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "Al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن عساكر",
+      "english": "Ibn Asakir",
+      "kind": "person"
+    },
+    {
+      "arabic": "عنبسة",
+      "english": "Anbasa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم موسى بن عقبة",
+      "english": "mother of Musa ibn Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن عقبة",
+      "english": "Musa ibn Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم بنت أبي سلمة",
+      "english": "Umm Kulthum bint Abi Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوحدان",
+      "english": "al-Wuhdan",
+      "kind": "work"
+    },
+    {
+      "arabic": "الصّلت بن مسعود",
+      "english": "al-Salt ibn Masud",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم بن خالد",
+      "english": "Muslim ibn Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "النجاشي",
+      "english": "the Negus",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسدّد",
+      "english": "Musaddad",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن عمار",
+      "english": "Hisham ibn Ammar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبّان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيحه",
+      "english": "Sahih Ibn Hibban",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

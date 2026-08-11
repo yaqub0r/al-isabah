@@ -1,0 +1,593 @@
+{
+  "schema": "firstlight.source-bundle.v1",
+  "issue": 971,
+  "work_id": "ibn_hajar_isabah_v1",
+  "title": "al-Isabah fi Tamyiz al-Sahabah",
+  "authority": {
+    "canonical_language": "ar",
+    "english_authority": "operator-reviewed structured English; presentations are generated derivatives",
+    "rule": "The locked Arabic edition decides the text. Urdu and other languages are documented witnesses for ambiguity, never silent replacements."
+  },
+  "canonical_edition": {
+    "edition_id": "ibn_hajar_isabah_dar_al_kutub_1995",
+    "publisher": "Dar al-Kutub al-Ilmiyyah",
+    "publication_year": 1995,
+    "publication_year_hijri": 1415,
+    "edition_statement": "First edition",
+    "investigators": [
+      "Adil Ahmad Abd al-Mawjud",
+      "Ali Muhammad Muawwad"
+    ],
+    "publication_place": "Beirut",
+    "volume_count": 8,
+    "extent": "Complete eight-volume work; 4,742 pages in the combined Usul facsimile"
+  },
+  "workflow": {
+    "edition_lock": {
+      "state": "complete",
+      "evidence": "Usul version 4CPCkl83K7 and the Archive acquisition match publisher, investigators, date, and eight-volume extent."
+    },
+    "source_text_alignment": {
+      "state": "complete",
+      "evidence": "All 491 substantive Volume 8 scan pages are aligned: 490 canonical Usul reader pages and one canonical facsimile transcription; eight exact facsimile corrections are provenance-recorded; heading comparison passed with zero mismatches; all 1,550 entries are continuous from 10759 through 12308."
+    },
+    "english_draft": {
+      "state": "complete",
+      "evidence": "All 491 substantive pages completed blind Codex translation, independent criticism, required Urdu and collateral Arabic witness checks, adjudication, and deterministic QA."
+    },
+    "english_presentation": {
+      "state": "complete",
+      "evidence": "The bilingual Volume 8 presentation was regenerated from the machine-validated structured English and exposes all unresolved items."
+    },
+    "english_approval": {
+      "state": "review_required",
+      "evidence": "Autonomous checks are exhausted for Volume 8; zero units are operator-approved and 281 explicitly unresolved items are queued for human judgment."
+    }
+  },
+  "artifacts": [
+    {
+      "artifact_id": "isabah-usul-4CPCkl83K7-facsimile",
+      "role": "canonical_facsimile",
+      "language": "ar",
+      "format": "application/pdf",
+      "edition_relationship": "exact_canonical",
+      "state": "verified_local",
+      "source_platform": "Usul",
+      "source_url": "https://assets.usul.ai/pdfs/4CPCkl83K7.pdf",
+      "local_path": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/usul_canonical_facsimile_v1.pdf",
+      "sha256": "4ef2895578497d5ef2224f662a76efc4a0d4d17943cf1abbdaca68370b204843",
+      "byte_size": 87560277,
+      "page_count": 4742,
+      "provider_ids": {
+        "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+        "book_slug": "isaba-fi-tamyiz",
+        "version_id": "4CPCkl83K7",
+        "source_id": "9767"
+      },
+      "coverage": "complete_work",
+      "verification": {
+        "pdf_parsed": true,
+        "encrypted": false,
+        "representative_pages_rendered": [
+          1,
+          2372,
+          4742
+        ],
+        "visual_result": "pass"
+      },
+      "notes": "Preferred because Usul pairs this exact edition with its reader text."
+    },
+    {
+      "artifact_id": "isabah-usul-4CPCkl83K7-text",
+      "role": "canonical_source_text",
+      "language": "ar",
+      "format": "text/html; page-addressable reader text",
+      "edition_relationship": "exact_canonical",
+      "state": "verified_remote",
+      "source_platform": "Usul",
+      "source_url": "https://usul.ai/t/isaba-fi-tamyiz/2",
+      "local_path": null,
+      "sha256": null,
+      "byte_size": null,
+      "page_count": 4406,
+      "provider_ids": {
+        "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+        "book_slug": "isaba-fi-tamyiz",
+        "version_id": "4CPCkl83K7"
+      },
+      "coverage": "provider reports complete work; local capture pending",
+      "verification": {
+        "probe_reader_page": 2,
+        "clean_blocks": 16,
+        "arabic_characters": 1101,
+        "mojibake_signatures": 0,
+        "capture_completeness_probe": "pass",
+        "reader_plan": {
+          "first_chunk": 1,
+          "last_chunk": 4406,
+          "heading_count": 13854,
+          "last_heading_page_index": 4404,
+          "terminal_evidence": "Reader 4405 contains the final indexed entry; reader 4406 contains the colophon and completion text; readers 4407-4410 return 404.",
+          "facsimile_page_equivalence": false
+        }
+      },
+      "notes": "A clean probe proves the extraction route, not full-work localization or page alignment."
+    },
+    {
+      "artifact_id": "isabah-volume-08-aligned-arabic",
+      "role": "alignment_evidence",
+      "language": "ar",
+      "format": "application/x-ndjson",
+      "edition_relationship": "exact_canonical",
+      "state": "verified_local",
+      "source_platform": "Usul + FirstLight facsimile repair",
+      "source_url": "https://usul.ai/t/isaba-fi-tamyiz/3916",
+      "local_path": "firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.usul-aligned-source.jsonl",
+      "sha256": "f7f5cd87489283249750778aec2a666300d731fc982f571380f5aad3e915c0ed",
+      "byte_size": 1870254,
+      "page_count": 491,
+      "provider_ids": {
+        "first_reader_page": 3916,
+        "last_reader_page": 4406
+      },
+      "derived_from": [
+        "isabah-usul-4CPCkl83K7-facsimile",
+        "isabah-usul-4CPCkl83K7-text"
+      ],
+      "coverage": "volume 8 substantive scan pages 4-494",
+      "verification": {
+        "alignment_report": "firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.usul-alignment-report.json",
+        "canonical_usul_reader_pages": 490,
+        "canonical_facsimile_transcription_pages": [
+          4
+        ],
+        "canonical_facsimile_correction_pages": [
+          6,
+          35,
+          84,
+          161,
+          287,
+          366,
+          369,
+          404
+        ],
+        "heading_mismatches": [],
+        "entry_sequence_audit": {
+          "expected_first": 10759,
+          "expected_last": 12308,
+          "expected_count": 1550,
+          "observed_count": 1550,
+          "observed_first": 10759,
+          "observed_last": 12308,
+          "gap_count": 0,
+          "gaps": [],
+          "duplicate_count": 0,
+          "duplicates": [],
+          "reversal_count": 0,
+          "reversals": [],
+          "out_of_range_count": 0,
+          "out_of_range": [],
+          "pass": true
+        },
+        "pass": true
+      },
+      "notes": "Every substantive Volume 8 page is aligned to the locked facsimile; one unavailable Usul reader chunk was transcribed and eight exact OCR defects were repaired from the canonical scans. Entry headings are continuous from 10759 through 12308."
+    },
+    {
+      "artifact_id": "isabah-archive-eight-volume-facsimile",
+      "role": "fallback_facsimile",
+      "language": "ar",
+      "format": "application/pdf; eight files",
+      "edition_relationship": "exact_canonical",
+      "state": "verified_local",
+      "source_platform": "Internet Archive",
+      "source_url": "https://archive.org/details/al-isabah-fi-tamiz-al-sahaba-al-ibn-hajar-ashqalani-jild-1",
+      "local_path": [
+        "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_01.pdf",
+        "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_02.pdf",
+        "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_03.pdf",
+        "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_04.pdf",
+        "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_05.pdf",
+        "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_06.pdf",
+        "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_07.pdf",
+        "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_08.pdf"
+      ],
+      "sha256": null,
+      "byte_size": 97940633,
+      "page_count": null,
+      "provider_ids": {
+        "archive_identifier": "al-isabah-fi-tamiz-al-sahaba-al-ibn-hajar-ashqalani-jild-1"
+      },
+      "coverage": "complete_work",
+      "verification": {
+        "component_hashes": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/edition-lock.json"
+      },
+      "notes": "Independent, easier-to-browse recovery and comparison acquisition."
+    },
+    {
+      "artifact_id": "isabah-archive-ocr",
+      "role": "fallback_source_text",
+      "language": "ar",
+      "format": "text/plain; eight files",
+      "edition_relationship": "derived_from_canonical",
+      "state": "reference_only",
+      "source_platform": "Internet Archive",
+      "source_url": "https://archive.org/details/al-isabah-fi-tamiz-al-sahaba-al-ibn-hajar-ashqalani-jild-1",
+      "local_path": [
+        "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_01.ocr.txt",
+        "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_02.ocr.txt",
+        "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_03.ocr.txt",
+        "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_04.ocr.txt",
+        "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_05.ocr.txt",
+        "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_06.ocr.txt",
+        "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_07.ocr.txt",
+        "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_08.ocr.txt"
+      ],
+      "sha256": null,
+      "byte_size": null,
+      "page_count": null,
+      "provider_ids": {},
+      "derived_from": [
+        "isabah-archive-eight-volume-facsimile"
+      ],
+      "coverage": "complete_work",
+      "verification": {
+        "operator_approval": "not_approved",
+        "known_problem": "search text includes substantial encoding/OCR damage"
+      },
+      "notes": "Useful for fallback search and historical provenance, not the preferred canonical text layer."
+    },
+    {
+      "artifact_id": "isabah-urdu-eight-volume-witness",
+      "role": "translation_witness",
+      "language": "ur",
+      "format": "application/pdf + OCR + JSONL",
+      "edition_relationship": "different_edition",
+      "state": "verified_local",
+      "source_platform": "Internet Archive",
+      "source_url": "https://archive.org/details/al-asabah-fi-tamyeeze-al-sahaba-1",
+      "local_path": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/urdu_witness_v1",
+      "sha256": null,
+      "byte_size": null,
+      "page_count": 4163,
+      "provider_ids": {},
+      "coverage": "complete_work",
+      "verification": {
+        "low_confidence_word_rate": 0.5358,
+        "raw_bulk_translation_allowed": false
+      },
+      "notes": "Use for passage-specific ambiguity resolution. Names and isnads require image-aware checking."
+    },
+    {
+      "artifact_id": "isabah-volume-08-structured-english",
+      "role": "structured_english",
+      "language": "en",
+      "format": "application/x-ndjson",
+      "edition_relationship": "derived_from_canonical",
+      "state": "verified_local",
+      "source_platform": "FirstLight",
+      "source_url": null,
+      "local_path": "firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+      "sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f",
+      "byte_size": 14444214,
+      "page_count": 491,
+      "provider_ids": {},
+      "derived_from": [
+        "isabah-volume-08-aligned-arabic",
+        "isabah-urdu-eight-volume-witness",
+        "isabah-usul-usd-al-ghaba-collateral",
+        "isabah-usul-istiab-collateral",
+        "isabah-usul-dar-hajr-alternative-edition",
+        "isabah-usul-dar-jil-alternative-edition",
+        "isabah-volume-08-supplemental-witness-evidence"
+      ],
+      "coverage": "volume 8 substantive scan pages 4-494",
+      "verification": {
+        "substantive_units": 491,
+        "translated_units": 491,
+        "critic_units": 491,
+        "approved_units": 0,
+        "unresolved_items": 281,
+        "structured_name_mentions": 19408,
+        "english_words": 239907,
+        "machine_readiness_report": "firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.machine-readiness.json",
+        "machine_readiness_pass": true
+      },
+      "notes": "Codex blind translation, independent fidelity criticism, selective image-aware Urdu checks, concern-local collateral Arabic checks in Usd al-Ghaba and al-Isti'ab, exact-version checks in the Dar Hajr and Dar al-Jil al-Isabah editions, hash-bound outside evidence, full xhigh adjudication, and deterministic validation are complete. Human review has not begun."
+    },
+    {
+      "artifact_id": "isabah-volume-08-english-review-presentation",
+      "role": "english_presentation",
+      "language": "en",
+      "format": "text/html",
+      "edition_relationship": "derived_from_canonical",
+      "state": "verified_local",
+      "source_platform": "FirstLight",
+      "source_url": null,
+      "local_path": "firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.review.html",
+      "sha256": "2356f4bb6b3b8b4b552845374de720f6f90ea9a604960e6f6c38b9eb16da805c",
+      "byte_size": 13073896,
+      "page_count": 491,
+      "provider_ids": {},
+      "derived_from": [
+        "isabah-volume-08-structured-english"
+      ],
+      "coverage": "volume 8 substantive scan pages 4-494",
+      "verification": {
+        "generator": "firstlight-research/scripts/translation/render_english_review.py",
+        "source_structured_english_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f",
+        "operator_approval": "not_approved"
+      },
+      "notes": "Generated bilingual reading/review surface with names and explicit unresolved items; edit JSONL and regenerate."
+    },
+    {
+      "artifact_id": "isabah-usul-usd-al-ghaba-collateral",
+      "role": "textual_witness",
+      "language": "ar",
+      "format": "Usul public machine-readable text + PDF facsimile",
+      "edition_relationship": "different_work",
+      "state": "verified_remote",
+      "source_platform": "Usul",
+      "source_url": "https://usul.ai/t/asad-al-ghaba-fi-marifat-al-sahaba",
+      "local_path": null,
+      "sha256": null,
+      "byte_size": null,
+      "page_count": null,
+      "provider_ids": {
+        "book_id": "e5j6lo7201j98j5cnn750wc6",
+        "version_id": "pRzuFotC79",
+        "source_and_version": "turath:1110",
+        "facsimile_url": "https://assets.usul.ai/pdfs/pRzuFotC79.pdf"
+      },
+      "derived_from": [],
+      "coverage": "Complete independent companion dictionary; exact subject-heading queries used only for flagged Volume 8 uncertainties",
+      "verification": {
+        "retrieval": "Usul public keyword-search API",
+        "query_policy": "concern-local exact biography heading",
+        "canonical_override_allowed": false
+      },
+      "notes": "Collateral Arabic witness for shared names and reports; this is not an edition or manuscript of al-Isabah."
+    },
+    {
+      "artifact_id": "isabah-usul-istiab-collateral",
+      "role": "textual_witness",
+      "language": "ar",
+      "format": "Usul public machine-readable text + PDF facsimile",
+      "edition_relationship": "different_work",
+      "state": "verified_remote",
+      "source_platform": "Usul",
+      "source_url": "https://usul.ai/t/isticab-fi-macrifat-ashab",
+      "local_path": null,
+      "sha256": null,
+      "byte_size": null,
+      "page_count": null,
+      "provider_ids": {
+        "book_id": "0463IbnCabdBarr.IsticabFiMacrifatAshab",
+        "version_id": "zDYIs6bLxz",
+        "source_and_version": "turath:12288",
+        "facsimile_url": "https://assets.usul.ai/pdfs/zDYIs6bLxz.pdf"
+      },
+      "derived_from": [],
+      "coverage": "Complete independent companion dictionary; exact subject-heading queries used only for flagged Volume 8 uncertainties",
+      "verification": {
+        "retrieval": "Usul public keyword-search API",
+        "query_policy": "concern-local exact biography heading",
+        "canonical_override_allowed": false
+      },
+      "notes": "Collateral Arabic witness for shared names and reports; provider errors and absent entries remain explicit inconclusive evidence."
+    },
+    {
+      "artifact_id": "isabah-usul-dar-hajr-alternative-edition",
+      "role": "textual_witness",
+      "language": "ar",
+      "format": "Usul OpenITI machine-readable text",
+      "edition_relationship": "different_edition",
+      "state": "verified_remote",
+      "source_platform": "Usul",
+      "source_url": "https://usul.ai/t/isaba-fi-tamyiz",
+      "local_path": null,
+      "sha256": null,
+      "byte_size": null,
+      "page_count": null,
+      "provider_ids": {
+        "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+        "version_id": "-aZ_8_5c6S",
+        "source_and_version": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.ShamAY0034568-ara3"
+      },
+      "derived_from": [],
+      "coverage": "Independent Dar Hajr / Markaz Hajr edition of al-Isabah; queried only for damaged, contradictory, or explicitly uncertain canonical passages",
+      "verification": {
+        "retrieval": "Usul exact-version keyword search",
+        "query_policy": "concern-local active biography heading",
+        "canonical_override_allowed": false,
+        "transparent_citation_required": true
+      },
+      "notes": "Alternative edition of the same work. Agreement may support a cited emendation but never a silent replacement of the locked Dar al-Kutub al-Ilmiyyah text."
+    },
+    {
+      "artifact_id": "isabah-usul-dar-jil-alternative-edition",
+      "role": "textual_witness",
+      "language": "ar",
+      "format": "Usul OpenITI machine-readable text",
+      "edition_relationship": "different_edition",
+      "state": "verified_remote",
+      "source_platform": "Usul",
+      "source_url": "https://usul.ai/t/isaba-fi-tamyiz",
+      "local_path": null,
+      "sha256": null,
+      "byte_size": null,
+      "page_count": null,
+      "provider_ids": {
+        "book_id": "0852IbnHajarCasqalani.IsabaFiTamyiz",
+        "version_id": "xAOjIqxYuv",
+        "source_and_version": "openiti:0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1"
+      },
+      "derived_from": [],
+      "coverage": "Independent Ali Muhammad al-Bajawi / Dar al-Jil edition of al-Isabah; queried only for damaged, contradictory, or explicitly uncertain canonical passages",
+      "verification": {
+        "retrieval": "Usul exact-version keyword search",
+        "query_policy": "concern-local active biography heading",
+        "canonical_override_allowed": false,
+        "transparent_citation_required": true
+      },
+      "notes": "Second alternative edition of the same work, retained independently so agreement between editions is visible and auditable."
+    },
+    {
+      "artifact_id": "isabah-volume-08-supplemental-witness-evidence",
+      "role": "quality_evidence",
+      "language": "mul",
+      "format": "application/x-ndjson",
+      "edition_relationship": "derived_from_canonical",
+      "state": "verified_local",
+      "source_platform": "FirstLight + cited public source witnesses",
+      "source_url": null,
+      "local_path": "firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.supplemental-witness-evidence.jsonl",
+      "sha256": "b796f088c79aa4cb235f21d9e9d09dfdcc139105ef446fba0e101d4ba9dac6ff",
+      "byte_size": 11188,
+      "page_count": null,
+      "provider_ids": {},
+      "derived_from": [
+        "isabah-volume-08-aligned-arabic"
+      ],
+      "coverage": "Hash-bound external evidence for flagged Volume 8 scans 12, 15, 229, 235, 269",
+      "verification": {
+        "schema": "firstlight.supplemental-witness-evidence.v1",
+        "evidence_count": 9,
+        "scan_pages": [
+          12,
+          15,
+          229,
+          235,
+          269
+        ],
+        "excerpt_hashes_verified": true,
+        "concern_links_present": true,
+        "canonical_override_allowed": false
+      },
+      "notes": "Alternative editions and parallel transmissions are concern-scoped, inspectable inputs. Their kind determines evidentiary weight; none silently replaces canonical al-Isabah Arabic."
+    },
+    {
+      "artifact_id": "isabah-volume-08-name-review",
+      "role": "quality_evidence",
+      "language": "en",
+      "format": "application/json",
+      "edition_relationship": "derived_from_canonical",
+      "state": "verified_local",
+      "source_platform": "FirstLight",
+      "source_url": null,
+      "local_path": "docs/narrative/names/reviews/ibn_hajar_isabah_v1.name-review.v1.json",
+      "sha256": "9002236845632d554bd687cfdb145e672ca0433a3454dd358086718daf5a8e17",
+      "byte_size": 31687962,
+      "page_count": 491,
+      "provider_ids": {},
+      "derived_from": [
+        "isabah-volume-08-structured-english"
+      ],
+      "coverage": "Volume 8 machine-extracted name candidates and exact English mentions",
+      "verification": {
+        "candidate_count": 7172,
+        "mention_count": 27859,
+        "operator_reviewed_candidates": 0,
+        "source_structured_english_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+      },
+      "notes": "Durable JSON review authority generated from validated English name mappings; machine candidates remain unapproved and ELIXR is a rebuildable projection."
+    }
+  ],
+  "quality": {
+    "facsimile": {
+      "state": "pass",
+      "usul_pages": 4742,
+      "sha256_verified": true,
+      "representative_visual_pages": [
+        1,
+        2372,
+        4742
+      ]
+    },
+    "source_text": {
+      "state": "pass_volume_08",
+      "usul_probe": "pass",
+      "reader_chunks_planned": 4406,
+      "reader_terminal_boundary_verified": true,
+      "full_capture": "4398_of_4406_reader_chunks; eight provider URLs returned 404",
+      "facsimile_alignment": "pass_volume_08_491_of_491",
+      "cer": null,
+      "name_error_rate": null,
+      "volume_08_heading_mismatches": 0
+    },
+    "translation": {
+      "state": "ready_for_human_review_volume_08",
+      "volume_8_substantive_coverage": 1.0,
+      "approved_units": 0,
+      "blind_translation_pages": 491,
+      "independent_critic_pages": 491,
+      "critic_issues": 1506,
+      "adjudication_pages": 491,
+      "witness_pages": 463,
+      "witness_method": "image-aware Urdu, exact-heading Usul searches in Usd al-Ghaba and al-Isti'ab, and concern-scoped hash-bound edition/parallel evidence",
+      "collateral_arabic_witnesses": 2,
+      "supplemental_witness_evidence": 9,
+      "collateral_retrieval": {
+        "resolution_pages": 463,
+        "collateral_records": 1426,
+        "query_attempts": 1132,
+        "unique_queries": 633,
+        "retrieval_hits": 1403,
+        "retrieval_no_matches": 23,
+        "retrieval_errors": 0,
+        "retrieval_unavailable": 0,
+        "retrieval_incomplete": 0,
+        "works": [
+          "ibn_abd_al_barr_istiab_v1",
+          "ibn_al_athir_usd_al_ghaba_v1",
+          "ibn_hajar_isabah_dar_hajr_v1",
+          "ibn_hajar_isabah_dar_jil_v1"
+        ],
+        "supplemental_records": 9,
+        "supplemental_kinds": [
+          "alternative_edition",
+          "parallel_transmission",
+          "translation_witness"
+        ],
+        "supplemental_scans": [
+          12,
+          15,
+          229,
+          235,
+          269
+        ]
+      },
+      "unresolved_items": 281,
+      "deterministic_validation": "pass"
+    },
+    "structure": {
+      "state": "pass_volume_08",
+      "page_boundaries_preserved": true,
+      "entry_number_validation": "pass",
+      "footnote_label_validation": "pass",
+      "printed_page_fields_present": true,
+      "name_consistency_reported": true,
+      "name_review_json": "ready_for_operator_review"
+    },
+    "human_review": {
+      "state": "ready_not_started",
+      "approved_units": 0,
+      "explicit_unresolved_items": 281,
+      "required_focus": [
+        "explicit unresolved passages",
+        "names and stable identities",
+        "isnads",
+        "entry numbering",
+        "negation and dates",
+        "quoted evidence",
+        "editorial apparatus"
+      ]
+    }
+  },
+  "next_actions": [
+    "Open the generated bilingual Volume 8 presentation for final human review.",
+    "Resolve the explicitly queued uncertainties and write decisions back to structured JSONL.",
+    "Review and merge machine-extracted name candidates in the durable JSON authority.",
+    "Repeat the proven alignment and translation workflow for Volumes 1-7."
+  ]
+}

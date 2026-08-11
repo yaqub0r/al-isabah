@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011601",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11601,
+  "title": {
+    "english": "Fatima bint Abi Talib¹:",
+    "arabic_observed": "فاطمة بنت أبي طالب «١»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011601-segment-0001",
+      "volume": 8,
+      "scan_page": 275,
+      "printed_page": 274,
+      "reader_page": 4187,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4187",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0275:33d3106da0174c85",
+      "arabic": "١١٦٠١- فاطمة بنت أبي طالب «١»:\nقيل: هي أم هانئ. وستأتي في الكنى- ذكرها أبو نعيم.",
+      "english": "11601—Fatima bint Abi Talib¹:\n\nIt is said that she was Umm Hani. She will appear in the section on kunyas. Abu Nu'aym mentioned her.",
+      "arabic_sha256": "2d956c752442689275df9f49d73f84ca35b38e6b6525bd710c33c2b7a8192cc2",
+      "english_sha256": "36eef39d8be91a4e8fc85c9364aa572dd17f813903b86e53cfd6a9d9a664d96c",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "فاطمة بنت أبي طالب",
+      "english": "Fatima bint Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هانئ",
+      "english": "Umm Hani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

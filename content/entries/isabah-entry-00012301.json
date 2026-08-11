@@ -1,0 +1,134 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012301",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12301,
+  "title": {
+    "english": "Umm Yahya:",
+    "arabic_observed": "أم يحيى:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012301-segment-0001",
+      "volume": 8,
+      "scan_page": 491,
+      "printed_page": 490,
+      "reader_page": 4403,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4403",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0491:7dbc49a508947579",
+      "arabic": "١٢٣٠١- أم يحيى:\nامرأة أسيد بن حضير «٥» .\nقال ابن مندة: لها ذكر في حديث قراءة أسيد بن حضير «٦» . وليس لها رواية.\n(١) بياض في أ.\n(٢) الاستبصار ٣٥٩، أعلام النساء ٥/ ٢٩٠- تجريد أسماء الصحابة ٢/ ٣٣٨، أسد الغابة ت (٧٦٢٧) .\n(٣) أورده الحسيني في إتحاف السادة المتقين ٩/ ٣٢٨.\n(٤) أسد الغابة ت (٧٦٢٨) .\n(٥) أسد الغابة ت (٧٦٢٩)، تجريد أسماء الصحابة ٢/ ٣٣٨.\n(٦) أسد الغابة ت (٧٦٢٩)، تجريد أسماء الصحابة ٢/ ٣٣٨.",
+      "english": "12301—Umm Yahya:\n\nThe wife of Usayd ibn Hudayr.⁵\n\nIbn Manda said: “She is mentioned in the hadith concerning the recitation of Usayd ibn Hudayr.⁶ She has no narration of her own.”\n\n¹ There is a blank in manuscript A.\n\n² al-Istibsar, 359; A'lam al-Nisa, 5/290; al-Tajrid, 2/338; Usd al-Ghaba, entry 7627.\n\n³ al-Husayni cited it in Ithaf al-Sada al-Muttaqin, 9/328.\n\n⁴ Usd al-Ghaba, entry 7628.\n\n⁵ Usd al-Ghaba, entry 7629; al-Tajrid, 2/338.\n\n⁶ Usd al-Ghaba, entry 7629; al-Tajrid, 2/338.",
+      "arabic_sha256": "a2589f3e69cd67de75c814d5cefeb04eeed28e789892c734b2b64f031a85a2b9",
+      "english_sha256": "9689efe426cd960f7a22d89f976104fafa61d37d4d99d4078e1ec51a25c98a44",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012301-segment-0002",
+      "volume": 8,
+      "scan_page": 492,
+      "printed_page": 491,
+      "reader_page": 4404,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4404",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0492:36b2b0210aeb1722",
+      "arabic": "قلت: يعني قراءة سورة الكهف باللّيل، فنزلت كالقناديل من النور، وأصل القصّة في البخاري بغير ذكر والدة يحيى، وذكرت في بعض طرق الحديث.\nوقد أخرج ابن أبي شيبة من طريق محمد بن عمر، عن أبي سلمة، عن عائشة، قالت:\nقدمنا من حج أو عمرة فتلقونا فنعوا بها أسيد بن حضير امرأته فتقنّع وجعل يبكي.",
+      "english": "I said: He means his recitation of Surat al-Kahf at night, whereupon lights like lamps descended. The basis of the story is in Sahih al-Bukhari, without mention of Yahya's mother, though she is mentioned in some versions of the hadith.\n\nIbn Abi Shayba transmitted, through Muhammad ibn Umar, from Abu Salama, from Aisha, who said:\n\n“We returned from a Hajj or an Umra, and they met us and informed Usayd ibn Hudayr of the death of his wife. He covered his face and began to weep.”",
+      "arabic_sha256": "4a44f6749f231647b0c5d8dc2bc9946c84781b34512b4be6e8c58b28fde89560",
+      "english_sha256": "0683e92c54ace777e8ad8a1884e4445f32331c15ed61ac6da012032b38295e36",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم يحيى",
+      "english": "Umm Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسيد بن حضير",
+      "english": "Usayd ibn Hudayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحسيني",
+      "english": "al-Husayni",
+      "kind": "person"
+    },
+    {
+      "arabic": "إتحاف السادة المتقين",
+      "english": "Ithaf al-Sada al-Muttaqin",
+      "kind": "work"
+    },
+    {
+      "arabic": "سورة الكهف",
+      "english": "Surat al-Kahf",
+      "kind": "work"
+    },
+    {
+      "arabic": "صحيح البخاري",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "يحيى",
+      "english": "Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي شيبة",
+      "english": "Ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمر",
+      "english": "Muhammad ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبي سلمة",
+      "english": "Abu Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

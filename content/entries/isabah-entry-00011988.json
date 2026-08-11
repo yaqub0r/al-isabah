@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011988",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11988,
+  "title": {
+    "english": "Umm Hakim bint Abd al-Rahman ibn Mas'ud",
+    "arabic_observed": "أم حكيم بنت عبد الرحمن"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011988-segment-0001",
+      "volume": 8,
+      "scan_page": 382,
+      "printed_page": 381,
+      "reader_page": 4294,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4294",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0382:af85e6a8587fda16",
+      "arabic": "١١٩٨٨- أم حكيم بنت عبد الرحمن\nبن مسعود. مضت في أم الحكم.",
+      "english": "11988—Umm Hakim bint Abd al-Rahman ibn Mas'ud\n\nShe was discussed previously under Umm al-Hakam.",
+      "arabic_sha256": "f679ead3adf0cd69e7ce754812af92ec4e7646f85b9cd2ce47fa9a05c87b1221",
+      "english_sha256": "6fa0be97316de7a54f5dad46add4910baa0e449bc2174b35aa419a69e082d27c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم حكيم بنت عبد الرحمن بن مسعود",
+      "english": "Umm Hakim bint Abd al-Rahman ibn Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الحكم",
+      "english": "Umm al-Hakam",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

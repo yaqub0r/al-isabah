@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010792",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10792,
+  "title": {
+    "english": "Arwa bint Umays",
+    "arabic_observed": "أروى بنت عميس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010792-segment-0001",
+      "volume": 8,
+      "scan_page": 10,
+      "printed_page": 9,
+      "reader_page": 3922,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3922",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0010:3b6d798359005da6",
+      "arabic": "١٠٧٩٢- أروى بنت عميس\nذكرها ابن الأثير في آخر ترجمة أروى بنت كريز.",
+      "english": "10792—Arwa bint Umays\n\nIbn al-Athir mentioned her at the end of the biography of Arwa bint Kurayz.",
+      "arabic_sha256": "4a40c4fb45e4fbe280f035bec493995c981f48fbf93379beb69e6c3099add21e",
+      "english_sha256": "43170861d24dec2a60b71bc9a91d1753ccdcf0e719a8c476a30ea16e3ccc6435",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أروى",
+      "english": "Arwa bint Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أروى بنت عميس",
+      "english": "Arwa bint Umays",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011408",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11408,
+  "title": {
+    "english": "Safiyya bint al-Khattab",
+    "arabic_observed": "صفية بنت الخطاب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011408-segment-0001",
+      "volume": 8,
+      "scan_page": 213,
+      "printed_page": 212,
+      "reader_page": 4125,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4125",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0213:a31d45b4aa609c45",
+      "arabic": "١١٤٠٨- صفية بنت الخطاب\nأخت «١» عمر.\nتقدم نسبها في ترجمة عمر، ذكرها الدّار الدّارقطنيّ في كتاب «الإخوة» «٢» وقال: تزوّجها سفيان بن عبد الأسد، فولدت له الأسود.\nوقد تقدم في قدامة بن مظعون أنه تزوّجها، واستدركها أبو علي الغساني، وقال:\nذكرها أبو عمر في قدامة ولم يفردها.",
+      "english": "11408 — Safiyya bint al-Khattab\n\nThe sister(1) of 'Umar.\n\nHer lineage was given previously in the entry on 'Umar. Al-Daraqutni [the Arabic reads al-Dar al-Daraqutni] mentioned her in the Book of Siblings(2) and said: Sufyan ibn 'Abd al-Asad married her, and she bore him al-Aswad.\n\nIt was stated previously, in the entry on Qudama ibn Maz'un, that he married her. Abu 'Ali al-Ghassani included her as a supplementary entry and said: “Abu 'Umar mentioned her under Qudama but did not give her a separate entry.”",
+      "arabic_sha256": "7da605c3230c355cf974b99a031b507809e9777196c1e9f4248d5fa1d295a854",
+      "english_sha256": "32a3e403f06946f57246cc5fa52d52eac2255f14f854c1fd38374bdddf6e89ba",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "صفية",
+      "english": "Safiyya bint Huyayy",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت الخطاب",
+      "english": "Safiyya bint al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "'Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدّار الدّارقطنيّ",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب «الإخوة»",
+      "english": "Book of Siblings",
+      "kind": "work"
+    },
+    {
+      "arabic": "سفيان بن عبد الأسد",
+      "english": "Sufyan ibn 'Abd al-Asad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأسود",
+      "english": "al-Aswad",
+      "kind": "person"
+    },
+    {
+      "arabic": "قدامة بن مظعون",
+      "english": "Qudama ibn Maz'un",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو علي الغساني",
+      "english": "Abu 'Ali al-Ghassani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source_uncertainty",
+      "arabic_span": "ذكرها الدّار الدّارقطنيّ",
+      "explanation": "The canonical Arabic contains the unexplained duplication al-Dar al-Daraqutni. Neither the supplied Urdu pages nor the collateral entries reproduce this clause, so they cannot establish whether the first al-Dar is a printing or copying error. The final translation normalizes the identifiable authority as al-Daraqutni while explicitly recording the canonical reading.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0213:a31d45b4aa609c45"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

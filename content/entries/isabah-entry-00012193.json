@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012193",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12193,
+  "title": {
+    "english": "Umm 'Umays:",
+    "arabic_observed": "أم عميس:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012193-segment-0001",
+      "volume": 8,
+      "scan_page": 446,
+      "printed_page": 445,
+      "reader_page": 4358,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4358",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0446:ddf15040c94423ea",
+      "arabic": "١٢١٩٣- أم عميس:\nبنت مسلمة الأنصاريّة «١»، أخت محمد بن سلمة، وعمّة أم عمرو المذكور قبلها.\nكانت امرأة رافع بن خديج، ويقال: إنها نزلت فيها: وَإِنِ امْرَأَةٌ خافَتْ مِنْ بَعْلِها نُشُوزًا أَوْ إِعْراضًا [سورة النساء آية ١٢٨] . وذكرها ابن حبيب في المبايعات. وقد تقدّمت أم عبيس فلا أدري أهي واحدة تصحّفت أم اثنتان؟",
+      "english": "12193—Umm 'Umays:\n\nBint Maslama al-Ansariyya,[1] the sister of Muhammad ibn Salama and the paternal aunt of Umm 'Amr mentioned previously.\n\nShe was the wife of Rafi' ibn Khadij. It is said that the following was revealed concerning her: “If a woman fears ill-treatment or aversion from her husband” [Surat al-Nisa, verse 128]. Ibn Habib mentioned her among the women who gave the pledge of allegiance. Umm 'Ubays has already been mentioned, and I do not know whether they are one woman whose name was miscopied, or two women.",
+      "arabic_sha256": "e0d8dccb51c4c71f6adca4b39a4da53b18ddfb297a20b00a3da30df819d08e9f",
+      "english_sha256": "5bbc74d9b05cd6a51c0c4b22700d693e76294092c7dd409bae968712d55c2a84",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "محمد بن سلمة",
+      "english": "Muhammad ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو",
+      "english": "Umm 'Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "رافع بن خديج",
+      "english": "Rafi' ibn Khadij",
+      "kind": "person"
+    },
+    {
+      "arabic": "سورة النساء",
+      "english": "Surat al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبيس",
+      "english": "Umm 'Ubays",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

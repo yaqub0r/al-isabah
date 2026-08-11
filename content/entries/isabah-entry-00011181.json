@@ -1,0 +1,159 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011181",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11181,
+  "title": {
+    "english": "Rufayda al-Ansariyya",
+    "arabic_observed": "رفيدة الأنصارية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011181-segment-0001",
+      "volume": 8,
+      "scan_page": 136,
+      "printed_page": 135,
+      "reader_page": 4048,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4048",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0136:5ec110bb6554d5eb",
+      "arabic": "١١١٨١- رفيدة الأنصارية ،\nأو الأسلمية «٤» .\n(١) أسد الغابة ت ٦٩٢٣، تجريد أسماء الصحابة ٢/ ٢٦٨.\n(٢) أسد الغابة ت ٦٩٢٢.\n(٣) أسد الغابة ت ٦٩٢٤.\n(٤) أسد الغابة ت ٦٩٢٥، الاستيعاب: ت ٣٣٨٦.",
+      "english": "11181—Rufayda al-Ansariyya\n\nor al-Aslamiyya.⁴\n\n¹ Usd al-Ghaba, entry 6923; al-Tajrid, 2/268.\n² Usd al-Ghaba, entry 6922.\n³ Usd al-Ghaba, entry 6924.\n⁴ Usd al-Ghaba, entry 6925; al-Isti'ab, entry 3386.",
+      "arabic_sha256": "cf11ebcc32c58131c6e3dafce1dadb7a06cede501fcdb5fdc3d729d52cd1d5a5",
+      "english_sha256": "070d4f33d1bf4c38c55439b80d27843c32a9f51869dc021d251215c2b7ffc877",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011181-segment-0002",
+      "volume": 8,
+      "scan_page": 137,
+      "printed_page": 136,
+      "reader_page": 4049,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4049",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0137:6e154a17bda63513",
+      "arabic": "ذكرها ابن إسحاق في قصة سعد بن معاذ لما أصابه بالخندق، فقال رسول اللَّه ﷺ:\nاجعلوه في خيمة رفيدة التي في المسجد حتى أعوده من قريب «١»،\nوكانت امرأة تداوي الجرحى، وتحتسب بنفسها على خدمة من كانت به ضيعة من المسلمين.\nوقال البخاريّ في «الأدب المفرد»: حدثنا أبو نعيم، حدثنا ابن الغسيل، عن عاصم بن عمر بن قتادة، عن محمود بن لبيد، قال: ولما أصيب أكحل سعد يوم الخندق فقيل: حوّلوه عند امرأة يقال لها رفيدة، وكانت تداوي الجرحى، وكان رسول اللَّه ﷺ إذا مرّ به يقول:\n«كيف أمسيت؟» وإذا أصبح قال: «كيف أصبحت؟» فيخبره.\nوأورده في التاريخ بقصة وفاة سعد، وسنده صحيح، وأورده المستغفري من طريق البخاري وأبو موسى من طريق المستغفري.",
+      "english": "Ibn Ishaq mentioned her in the account of Sa'd ibn Mu'adh when he was wounded at the Trench. The Messenger of Allah, may Allah bless him and grant him peace, said:\n\n“Place him in Rufayda's tent in the mosque, so that I may visit him nearby.”[1]\n\nShe was a woman who treated the wounded and devoted herself, seeking divine reward, to serving those Muslims who had no one to care for them.\n\nal-Bukhari said in al-Adab al-Mufrad: Abu Nu'aym related to us: Ibn al-Ghasil related to us, from 'Asim ibn 'Umar ibn Qatada, from Mahmud ibn Labid, who said: When the medial arm vein of Sa'd was struck on the Day of the Trench, it was said, “Move him to a woman called Rufayda,” for she used to treat the wounded. Whenever the Messenger of Allah, may Allah bless him and grant him peace, passed by him in the evening, he would say, “How have you passed the evening?” and, in the morning, he would say, “How have you passed the morning?” Sa'd would then inform him.\n\nHe also included it in al-Tarikh in the account of Sa'd's death. Its chain of transmission is sound. al-Mustaghfiri included it by way of al-Bukhari, and Abu Musa by way of al-Mustaghfiri.",
+      "arabic_sha256": "4e8e7053f9afa1f0496cf0db2019e261e5c37f86e6bce4805ab1b89592350c58",
+      "english_sha256": "194c0aecfef4199cfe890c383f266390708271edd625f491e13d4d872340b4cc",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رفيدة الأنصارية",
+      "english": "Rufayda al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد بن معاذ",
+      "english": "Sa'd ibn Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعد",
+      "english": "Sa'd ibn Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخندق",
+      "english": "Trench",
+      "kind": "place"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "رفيدة",
+      "english": "Rufayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأدب المفرد",
+      "english": "al-Adab al-Mufrad",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الغسيل",
+      "english": "Ibn al-Ghasil",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاصم بن عمر بن قتادة",
+      "english": "'Asim ibn 'Umar ibn Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمود بن لبيد",
+      "english": "Mahmud ibn Labid",
+      "kind": "person"
+    },
+    {
+      "arabic": "التاريخ",
+      "english": "al-Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

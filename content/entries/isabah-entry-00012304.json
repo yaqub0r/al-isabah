@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012304",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12304,
+  "title": {
+    "english": "Umm Yahya",
+    "arabic_observed": "أم يحيى:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012304-segment-0001",
+      "volume": 8,
+      "scan_page": 492,
+      "printed_page": 491,
+      "reader_page": 4404,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4404",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0492:36b2b0210aeb1722",
+      "arabic": "١٢٣٠٤- أم يحيى:\nفي المبهمات، حديثها عند\nيحيى بن الحصين عن أمه، ويقال عن جدته، قالت: سمعت رسول اللَّه ﵌ يقول: «اسمعوا وأطيعوا وإن أمّر عليكم عبد ...» الحديث.",
+      "english": "12304—Umm Yahya\n\nAmong the unidentified women. Her hadith is related by Yahya ibn al-Husayn, from his mother—or, it is said, from his grandmother—who said: “I heard the Messenger of Allah—may Allah bless him and grant him peace—say: ‘Hear and obey, even if a slave is appointed to command you …’” to the end of the hadith.",
+      "arabic_sha256": "8aa9d7c59e77f608a0646e6590ff365ce3b7169018e028c17a3f18484e050d38",
+      "english_sha256": "5891670bc5f051e3e76524a8ac1db79ba6dc45d62b9458b244e3a7f553603b29",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "يحيى",
+      "english": "Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم يحيى",
+      "english": "Umm Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن الحصين",
+      "english": "Yahya ibn al-Husayn",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

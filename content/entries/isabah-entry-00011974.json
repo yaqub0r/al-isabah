@@ -1,0 +1,244 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011974",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11974,
+  "title": {
+    "english": "Umm al-Husayn al-Ahmasiyya:",
+    "arabic_observed": "أم الحصين الأحمسية «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011974-segment-0001",
+      "volume": 8,
+      "scan_page": 377,
+      "printed_page": 376,
+      "reader_page": 4289,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4289",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0377:83c49d733aa6f1b4",
+      "arabic": "١١٩٧٤- أم الحصين الأحمسية «٢»\n: ثبت حديثها في صحيح مسلم، من طريق زيد بن أبي أنيسة، عن يحيى بن الحصين، عن جدته أم الحصين، قالت: حججت مع النبي ﵌ حجة الوداع.\n(١) أسد الغابة ت (٧٤١٢)، الاستيعاب ت (٣٥٩٤) .\n(٢) أسد الغابة ت (٧٤١٤)، الاستيعاب ت (٣٥٩٥)، أعلام النساء ١/ ٢٢٣، تجريد أسماء الصحابة ٢/ ٣١٧، تقريب التهذيب ٢/ ٦٢٠ تهذيب التهذيب ١٢/ ٤٦٣، الكاشف ٣/ ٤٨٧، تهذيب الكمال ٣/ ١٧٠١، بقي بن مخلد ٢٢٢ خلاصة تهذيب الكمال ٣/ ٣٩٨، تلقيح فهوم أهل الأثر ٣٧٠.",
+      "english": "11974—Umm al-Husayn al-Ahmasiyya:\n\nHer hadith is established in Sahih Muslim through Zayd ibn Abi Unaysa, from Yahya ibn al-Husayn, from his grandmother Umm al-Husayn, who said: “I performed the Farewell Pilgrimage with the Prophet, may Allah bless him and grant him peace.”\n\n(1) Usd al-Ghaba, entry 7412; al-Isti'ab, entry 3594.\n\n(2) Usd al-Ghaba, entry 7414; al-Isti'ab, entry 3595; A'lam al-Nisa, 1/223; al-Tajrid, 2/317; Taqrib al-Tahdhib, 2/620; Tahdhib al-Tahdhib, 12/463; al-Kashif, 3/487; Tahdhib al-Kamal, 3/1701; Baqi ibn Makhlad, 222; Khulasat Tahdhib al-Kamal, 3/398; Talqih Fuhum Ahl al-Athar, 370.",
+      "arabic_sha256": "bd048c1bbeb0b18c111df086fdc0f6d5d4599ccf6553762a52bff73fdde94eb7",
+      "english_sha256": "090333a37845b1c76214ec1f7ee583978a43245843cce5e7cc9dd9e3f8a5434b",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011974-segment-0002",
+      "volume": 8,
+      "scan_page": 378,
+      "printed_page": 377,
+      "reader_page": 4290,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4290",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0378:37c06e0586709ca4",
+      "arabic": "فرأيت أسامة وبلالا أحدهما آخذ بخطام ناقة النبي ﵌، والآخر رافع ثوبه يستره من الحر حتى رمى جمرة العقبة «١» . قال أبو عمر: روى عنها يحيى بن الحصين، والعيزار بن حريث، وسمى أباها إسحاق، ولم أرها لغيره،\nورواية العيزار بن حريث عنها عند ابن مندة، من طريق أبي نعيم، عن يونس بن أبي إسحاق، عن العيزار بن حريث، قال: سمعت الأحمسية- يعني أم الحصين- تقول: رأيت على رسول اللَّه ﵌ بردا قد التحف به من تحت إبطه يقول: «يا أيّها النّاس، اتقوا اللَّه وإن أمّر عليكم عبد حبشيّ فاسمعوا له وأطيعوا ما أقام فيكم كتاب اللَّه تعالى» «٢» .\nوأخرجه من طرق عن أبي إسحاق، عن يحيى بن الحصين، عن جدته مطولا ومختصرا، ورواه إسرائيل عن جده أبي إسحاق، عن العيزار بن حريث، عن أم الحصين، وعن أبي إسحاق عن يحيى بن الحصين، عن جدته. ورواه أبو نعيم في المعرفة، ووقع لنا بعلو في فوائد أبي بكر بن أبي الهيثم.",
+      "english": "Then I saw Usama and Bilal: one of them was holding the halter of the Prophet’s she-camel, while the other was raising his garment to shield the Prophet from the heat, until the Prophet stoned Jamrat al-Aqaba.[1]\n\nAbu Umar said: Yahya ibn al-Husayn and al-'Ayzar ibn Hurayth narrated from her. He named her father Ishaq, and I have not seen her mentioned by anyone other than him.\n\nThe narration of al-'Ayzar ibn Hurayth from her was recorded by Ibn Mandah, through Abu Nu'aym, from Yunus ibn Abi Ishaq, from al-'Ayzar ibn Hurayth, who said: I heard the Ahmasi woman—that is, Umm al-Husayn—say: I saw the Messenger of Allah wearing a mantle that he had wrapped around himself beneath his armpit, saying: “O people, fear Allah. Even if an Abyssinian slave is appointed over you, listen to him and obey him so long as he upholds among you the Book of Allah Most High.”[2]\n\nIbn Mandah also related it through several routes from Abu Ishaq, from Yahya ibn al-Husayn, from his grandmother, both at length and in abbreviated form. Isra'il narrated it from his grandfather Abu Ishaq, from al-'Ayzar ibn Hurayth, from Umm al-Husayn; and also from Abu Ishaq, from Yahya ibn al-Husayn, from his grandmother. Abu Nu'aym narrated it in al-Ma'rifa, and it reached us through a high chain in the Fawa'id of Abu Bakr ibn Abi al-Haytham.",
+      "arabic_sha256": "936cb78891c83cd7205bfbff1490d0d81e3f137cacb0510ccc776abec767dfe7",
+      "english_sha256": "5640d919397c39b5517846baeb0fc762fdab6a4195b491523e6e359d21b7fe00",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الحصين الأحمسية",
+      "english": "Umm al-Husayn al-Ahmasiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيح مسلم",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "زيد بن أبي أنيسة",
+      "english": "Zayd ibn Abi Unaysa",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن الحصين",
+      "english": "Yahya ibn al-Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجة الوداع",
+      "english": "Farewell Pilgrimage",
+      "kind": "other"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسامة",
+      "english": "Usama",
+      "kind": "person"
+    },
+    {
+      "arabic": "بلال",
+      "english": "Bilal",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "other"
+    },
+    {
+      "arabic": "جمرة العقبة",
+      "english": "Jamrat al-Aqaba",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "العيزار بن حريث",
+      "english": "al-'Ayzar ibn Hurayth",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق",
+      "english": "Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن أبي إسحاق",
+      "english": "Yunus ibn Abi Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأحمسية",
+      "english": "Ahmas",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم الحصين",
+      "english": "Umm al-Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "حبشي",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "كتاب اللَّه",
+      "english": "Book of Allah",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو إسحاق",
+      "english": "Abu Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسرائيل",
+      "english": "Isra'il",
+      "kind": "person"
+    },
+    {
+      "arabic": "المعرفة",
+      "english": "al-Ma'rifa",
+      "kind": "work"
+    },
+    {
+      "arabic": "فوائد أبي بكر بن أبي الهيثم",
+      "english": "Fawa'id Abi Bakr ibn Abi al-Haytham",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو بكر بن أبي الهيثم",
+      "english": "Abu Bakr ibn Abi al-Haytham",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

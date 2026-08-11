@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011739",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11739,
+  "title": {
+    "english": "Layla bint Hakim:",
+    "arabic_observed": "ليلى بنت حكيم:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011739-segment-0001",
+      "volume": 8,
+      "scan_page": 311,
+      "printed_page": 310,
+      "reader_page": 4223,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4223",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0311:1a8db88cf780aa48",
+      "arabic": "١١٧٣٩- ليلى بنت حكيم:\nتقدم كلام ابن الأثير أنه جوّز أنها بنت الخطيم فصحفت، والّذي يظهر أنها هي. واللَّه أعلم.\nحرف الميم\nالقسم الأول",
+      "english": "11739 — Layla bint Hakim:\n\nIt was stated above in Ibn al-Athir's discussion that he considered it possible that she was Layla bint al-Khatim and that the name had been miscopied. What appears correct is that she is indeed that same woman. Allah knows best.\n\nTHE LETTER MIM\n\nSECTION ONE",
+      "arabic_sha256": "fdf70d0141ac4a6f69139cfeacf21e500b1c7073c497d7f8b0bac8b19b4c821d",
+      "english_sha256": "873d0087846bcb469a882753396b2a4638172c3ce24a2210715e2a764838c610",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ليلى بنت حكيم",
+      "english": "Layla bint Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنت الخطيم",
+      "english": "Layla bint al-Khatim",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

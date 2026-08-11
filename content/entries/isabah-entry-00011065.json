@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011065",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11065,
+  "title": {
+    "english": "Humayna,",
+    "arabic_observed": "حمينة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011065-segment-0001",
+      "volume": 8,
+      "scan_page": 91,
+      "printed_page": 90,
+      "reader_page": 4003,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4003",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0091:d880b30f1b3c0a23",
+      "arabic": "١١٠٦٥- حمينة ،\nبنون بدل الميم، بنت أبي طلحة بن عبد العزّى «١» بن عثمان بن عبد الدار. كانت زوج خلف بن أسد بن عاصم بن بياضة الخزاعي، فمات، فخلف عليها ولده الأسود بن خلف، ففرق الإسلام بينهما، كذا أخرجه المستغفري، من طريق محمد بن ثور، عن ابن جريج، عن عكرمة لما نزل قوله تعالى، وَلا تَنْكِحُوا ما نَكَحَ آباؤُكُمْ مِنَ النِّساءِ إِلَّا ما قَدْ سَلَفَ [النساء: ٢٢]، ففرق الإسلام بين أربع نسوة وبين أبناء بعولتهن، منهن حمينة هذه، واستدركها أبو موسى.",
+      "english": "11065—Humayna,\n\nwith a nun in place of the mim, daughter of Abu Talha ibn Abd al-Uzza[1] ibn Uthman ibn Abd al-Dar. She was the wife of Khalaf ibn Asad ibn Asim ibn Bayada al-Khuza'i. He died, and his son al-Aswad ibn Khalaf subsequently married her, but Islam separated them. This is how al-Mustaghfiri transmitted it, through Muhammad ibn Thawr, from Ibn Jurayj, from Ikrima: When the saying of Allah Most High was revealed, “And do not marry those women whom your fathers married, except what has already occurred” [al-Nisa: 22], Islam separated four women from their husbands' sons; among them was this Humayna. Abu Musa added her as an omitted entry.",
+      "arabic_sha256": "1d830188927e1135d181402913088aeeefca6033ab76a4fdd809c2360aebdb42",
+      "english_sha256": "62e2147610a58ab1bd6801e16c185a9827793c78f7dc0d13de0cc8cf3f29eda7",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خلف بن أسد بن عاصم بن بياضة الخزاعي",
+      "english": "Khalaf ibn Asad ibn Asim ibn Bayada al-Khuza'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأسود بن خلف",
+      "english": "al-Aswad ibn Khalaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن ثور",
+      "english": "Muhammad ibn Thawr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن جريج",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "عكرمة",
+      "english": "Ikrima",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله تعالى",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الإسلام",
+      "english": "Islam",
+      "kind": "other"
+    },
+    {
+      "arabic": "النساء",
+      "english": "al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011721",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11721,
+  "title": {
+    "english": "Layla bint Tanat ibn Mu'ayyis, al-Ansariyya.",
+    "arabic_observed": "ليلى بنت طناة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011721-segment-0001",
+      "volume": 8,
+      "scan_page": 306,
+      "printed_page": 305,
+      "reader_page": 4218,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4218",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0306:047fab026cbe7652",
+      "arabic": "١١٧٢١- ليلى بنت طناة\nبن معيص الأنصاريّة.\nذكرها ابن سعد، كذا في التّجريد، وقال: أخشى أن تكون ليلى بنت الإطنابة المذكورة أول من اسمها ليلى.",
+      "english": "11721—Layla bint Tanat ibn Mu'ayyis, al-Ansariyya.\n\nIbn Sa'd mentioned her; that is how it appears in al-Tajrid. It says: “I fear that she may be Layla bint al-Itnaba, mentioned at the beginning of the entries for those named Layla.”",
+      "arabic_sha256": "8767d9256892fc95375aeddcbf4496c99eec69305e2ea1e38231b8ac7df9b748",
+      "english_sha256": "dca4e46e12bf30439f822f5e11f1377a9242b50b089db90020186a0d64d42de1",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "ليلى بنت الإطنابة",
+      "english": "Layla bint al-Itnaba",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

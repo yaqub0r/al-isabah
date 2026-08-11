@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012088",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12088,
+  "title": {
+    "english": "Umm Sahl bint Sahl ibn Atik; she is also said to have been Umm Thabit bint Sahl ibn Atik ibn al-Nu'man ibn Amr ibn Mabdhul ibn Malik ibn al-Najjar.",
+    "arabic_observed": "أم سهل بنت سهل"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012088-segment-0001",
+      "volume": 8,
+      "scan_page": 415,
+      "printed_page": 414,
+      "reader_page": 4327,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4327",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0415:80d9332d2a04c870",
+      "arabic": "١٢٠٨٨- أم سهل بنت سهل\nبن عتيك، ويقال أم ثابت بنت سهل بن عتيك بن النّعمان بن عمرو بن مبذول بن مالك بن النّجار.\nذكرها ابن سعد في المبايعات، وقال: أمها أميمة بنت عقبة بن عمرو، تزوّجها سنان بن الحارث بن علقمة، ثم عبد اللَّه بن زيد بن عاصم.",
+      "english": "12088—Umm Sahl bint Sahl ibn Atik; she is also said to have been Umm Thabit bint Sahl ibn Atik ibn al-Nu'man ibn Amr ibn Mabdhul ibn Malik ibn al-Najjar.\n\nIbn Sa'd mentioned her among the women who pledged allegiance and said: Her mother was Umayma bint Uqba ibn Amr. Sinan ibn al-Harith ibn Alqama married her, and then Abd Allah ibn Zayd ibn Asim.",
+      "arabic_sha256": "5c63cf6eb9c14cb40e31ced72661229ce73b5d45dd3a9e786bee3ed521c775af",
+      "english_sha256": "39210d85b95eb3d66e9a1981547eeb4e1687f2752a70a22afdeb996575a04985",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سهل بنت سهل بن عتيك",
+      "english": "Umm Sahl bint Sahl ibn Atik",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم ثابت بنت سهل بن عتيك بن النعمان بن عمرو بن مبذول بن مالك بن النجار",
+      "english": "Umm Thabit bint Sahl ibn Atik ibn al-Nu'man ibn Amr ibn Mabdhul ibn Malik ibn al-Najjar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة بنت عقبة بن عمرو",
+      "english": "Umayma bint Uqba ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "سنان بن الحارث بن علقمة",
+      "english": "Sinan ibn al-Harith ibn Alqama",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن زيد بن عاصم",
+      "english": "Abd Allah ibn Zayd ibn Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم ثابت",
+      "english": "Umm Thabit bint Mas'ud ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

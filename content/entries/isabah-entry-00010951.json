@@ -1,0 +1,113 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010951",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10951,
+  "title": {
+    "english": "Baraka bint al-Nabi, may Allah bless him and grant him peace",
+    "arabic_observed": "بركة بنت النبي ﷺ:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010951-segment-0001",
+      "volume": 8,
+      "scan_page": 55,
+      "printed_page": 54,
+      "reader_page": 3967,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3967",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0055:d70e71744b7598a8",
+      "arabic": "١٠٩٥١- بركة بنت النبي ﷺ:\nذكرها بعض من جمع رجال العمدة للحافظ عبد الغني، فأورد في أول الكتاب شيئا من الترجمة النبويّة، ثم قال: فولدت له خديجة: القاسم، ثم بركة، ثم زينب، ثم رقية، ثم فاطمة، ثم أم كلثوم، ثم قال: وذكر مثله ابن سعد، لكنه لم يذكر بركة. وهذا الّذي ذكره لم ينسبه لأحد، ولا هو مذكور عند أحد من المشهورين في كتبهم المشهورة. وباللَّه التوفيق.\nويحتمل أن يذكر فيه بهية البكرية وبهية الفزارية.\nالقسم الثالث\nخال. ويحتمل أن يذكر فيه.",
+      "english": "10951 — Baraka bint al-Nabi, may Allah bless him and grant him peace\n\nShe was mentioned by someone who compiled the biographies of the transmitters of al-Umda by al-Hafiz Abd al-Ghani. At the beginning of the book, he included some material from the Prophet’s biography and then said: “Khadijah bore him al-Qasim, then Baraka, then Zaynab, then Ruqayya, then Fatima, and then Umm Kulthum.” He then said, “Ibn Sa'd mentioned the same,” although Ibn Sa'd did not mention Baraka. He did not attribute what he stated to anyone, nor is it mentioned by any of the well-known authorities in their well-known books. Success is through Allah.\n\nIt is possible that Bahiya al-Bakriyya and Bahiya al-Fazariyya should be mentioned in this section.\n\nSECTION THREE\n\nVacant. It is possible that [the following woman] should be mentioned in it:",
+      "arabic_sha256": "bfd43851c0b3a44879afba1c0f64c72719afc6f13c1dd718af643745cc2fd9bb",
+      "english_sha256": "da9906196f678ffb9de69c7c8ea70e37a4e9c46f5913590dd380ecc35fe2c660",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي ﷺ",
+      "english": "al-Nabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "بركة بنت النبي ﷺ",
+      "english": "Baraka bint al-Nabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "العمدة",
+      "english": "al-Umda",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحافظ عبد الغني",
+      "english": "al-Hafiz Abd al-Ghani",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "القاسم",
+      "english": "al-Qasim ibn al-Nabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab bint al-Nabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "رقية",
+      "english": "Ruqayya bint al-Nabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima bint al-Nabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم",
+      "english": "Umm Kulthum bint al-Nabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بهية الفزارية",
+      "english": "Bahiya al-Fazariyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_identity",
+      "arabic_span": "بهية الفزارية",
+      "explanation": "The current canonical page spells this Bahiya al-Fazariyya, whereas the preceding context has entry 10947 as بهيسة الفزارية. The passage likely cross-references that entry, but the supplied evidence cannot safely determine whether this is a spelling variant, a textual error, or a separately intended form. The final text preserves the current page’s spelling and does not merge the labels.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0055:d70e71744b7598a8"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

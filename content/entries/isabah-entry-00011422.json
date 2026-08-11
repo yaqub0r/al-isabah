@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011422",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11422,
+  "title": {
+    "english": "Safiyya,",
+    "arabic_observed": "صفية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011422-segment-0001",
+      "volume": 8,
+      "scan_page": 218,
+      "printed_page": 217,
+      "reader_page": 4130,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4130",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0218:9411294e16fb1be7",
+      "arabic": "١١٤٢٢- صفية ،\nغير منسوبة.\nأخرج أبو منصور الدّيلميّ\nفي مسند «الفردوس»، من طريق الحسن بن أبي جعفر، عن محمد بن عبد الرحمن، عن صفية، عن النبيّ ﷺ، قال: «ماء زمزم شفاء من كلّ داء» .\nالحسن فيه ضعف، وشيخه ما عرفته، ولا أدري أسمع من صفية أم لا؟",
+      "english": "11422—Safiyya,\n\nwith no lineage given.\n\nAbu Mansur al-Daylami related in Musnad al-Firdaws, by way of al-Hasan ibn Abi Ja'far, from Muhammad ibn Abd al-Rahman, from Safiyya, from the Prophet, may Allah bless him and grant him peace, who said: “Zamzam water is a cure for every illness.”\n\nThere is weakness in al-Hasan. I do not know who his shaykh was, nor whether that shaykh heard from Safiyya or not.",
+      "arabic_sha256": "6bd0f24b3e0eb969553fcf33d800dffeefc3ca021eb20cf9f82210e3340bf093",
+      "english_sha256": "8f96a34485f4fb080707a47ab5ed10a5db53ef2e611aa2b76ffc7702ecf18e9d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "صفية",
+      "english": "Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو منصور الديلمي",
+      "english": "Abu Mansur al-Daylami",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند الفردوس",
+      "english": "Musnad al-Firdaws",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحسن بن أبي جعفر",
+      "english": "al-Hasan ibn Abi Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عبد الرحمن",
+      "english": "Muhammad ibn Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "زمزم",
+      "english": "Zamzam",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

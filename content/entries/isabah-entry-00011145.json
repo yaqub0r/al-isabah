@@ -1,0 +1,222 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011145",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11145,
+  "title": {
+    "english": "Khayra:",
+    "arabic_observed": "خيرة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011145-segment-0001",
+      "volume": 8,
+      "scan_page": 125,
+      "printed_page": 124,
+      "reader_page": 4037,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4037",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0125:99ed85a30764fea4",
+      "arabic": "١١١٤٥- خيرة:\nامرأة «٣» كعب بن مالك الأنصارية «٤»، شاعر النبي ﷺ، ويقال بالحاء غير معجمة\nوحديثها عند الليث من رواية ابن وهب عنه بإسناد ضعيف لا تقوم به حجّة- أنّ\n(١) أخرجه أبو نعيم في الحلية ١٠/ ١١٠ وأورده العجلوني في كشف الخفاء ٢/ ٢٧٨، ٤٢٢، وقال رواه الطبراني عن أبي الدرداء وهو عند أبي داود والترمذي بلفظ ما من شيء من الميزان أثقل من حسن الخلق أخرجه الترمذي في السنن ٤/ ٣١٩ عن أبي الدرداء ... الحديث كتاب البر والصلة باب ما جاء في حسن الخلق (٦٢) حديث رقم ٢٠٠٣ وقال أبو عيسى هذا حديث غريب من هذا الوجه. وأخرجه أبو داود في السنن ٢/ ٦٦٨ كتاب الأدب باب في حسن الخلق حديث رقم ٤٧٩٩.\n(٢) أخرجه البغدادي في موضع أوهام الجمع والتفريق ١/ ٣٦٩.\n(٣) في أ: بنت.\n(٤) أعلام النساء ١/ ٣٣٨، تجريد أسماء الصحابة ٢/ ٢٦٦، تقريب التهذيب ٢/ ٥٩٦، تهذيب التهذيب ١٢/ ٤١٦، الكاشف ٣/ ٤٦٩، تهذيب الكمال ٣/ ١٦٨٢، تلقيح فهوم أهل الأثر ٣٨٠، بقي بن مخلد ٩٨٦.",
+      "english": "11145 — Khayra:\n\nThe Ansari woman (4), wife (3) of Ka'b ibn Malik, the poet of the Prophet (may Allah bless him and grant him peace). Her name is also said with an undotted ha—that is, Hayra.\n\nHer hadith is found with al-Layth, in Ibn Wahb's narration from him, with a weak chain of transmission that cannot establish a proof—that\n\n(1) Abu Nu'aym transmitted it in al-Hilya, 10/110, and al-Ajluni cited it in Kashf al-Khafa, 2/278, 422. He said: “Al-Tabarani related it from Abu al-Darda.” It is also found in Abu Dawud and al-Tirmidhi with the wording: “Nothing in the Scale is heavier than good character.” Al-Tirmidhi transmitted it in al-Sunan, 4/319, from Abu al-Darda … the hadith; Book of Righteousness and Maintaining Ties, chapter “What Has Been Related concerning Good Character” (62), hadith no. 2003. Abu Isa said: “This hadith is uncommon through this route.” Abu Dawud also transmitted it in al-Sunan, 2/668, Book of Conduct, chapter “Concerning Good Character,” hadith no. 4799.\n\n(2) Al-Baghdadi transmitted it in Mawdi' Awham al-Jam' wa-l-Tafriq, 1/369.\n\n(3) In manuscript A: “daughter.”\n\n(4) A'lam al-Nisa, 1/338; al-Tajrid, 2/266; Taqrib al-Tahdhib, 2/596; Tahdhib al-Tahdhib, 12/416; al-Kashif, 3/469; Tahdhib al-Kamal, 3/1682; Talqih Fuhum Ahl al-Athar, 380; Baqi ibn Makhlad, 986.",
+      "arabic_sha256": "d0216b540ced5effb08378e25ede9151c70af8a849bd0e82be50268c02891544",
+      "english_sha256": "d4cb2f9eb262caf2fdc83561af60f28b8cacf310005019194ca70b72de909cb4",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011145-segment-0002",
+      "volume": 8,
+      "scan_page": 126,
+      "printed_page": 125,
+      "reader_page": 4038,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4038",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0126:a6a9e6ceddb77e24",
+      "arabic": "رسول اللَّه ﷺ قال: «لا يجوز لامرأة في مالها أمر إلّا بإذن زوجها» .\nقاله أبو عمر هكذا.\nوقد وصله ابن ماجة وابن مندة من هذا الوجه عن الليث، عن رجل من ولد كعب بن مالك يقال له عبد اللَّه بن يحيى عن أبيه، عن جدّه- أن جدّته خيرة امرأة كعب بن مالك أتت رسول اللَّه ﷺ، فقالت: إني تصدقت بهذا الحلي ... فذكر الحديث. وفيه: «فهل استأذنت كعبا؟» فقالت: نعم. قال ابن مندة: ورواه يحيى بن عبد اللَّه بن كعب، عن أمه بنت عبد اللَّه بن أنس، عن أمها فاضلة الأنصارية.\nوستأتي.\nالقسم الثاني",
+      "english": "The Messenger of Allah, may Allah bless him and grant him peace, said: “A woman may not take any action concerning her property except with her husband's permission.”\n\nAbu Umar gave it in this form.\n\nIbn Majah and Ibn Manda also transmitted it with a connected chain by this route, from al-Layth, from a man descended from Ka'b ibn Malik named Abdullah ibn Yahya, from his father, from his grandfather, that his grandmother Khayra, the wife of Ka'b ibn Malik, came to the Messenger of Allah, may Allah bless him and grant him peace, and said: “I have given this jewelry in charity…” He then related the hadith. It includes: “Did you obtain Ka'b's permission?” She replied, “Yes.” Ibn Manda said: Yahya ibn Abdullah ibn Ka'b also related it from his mother, the daughter of Abdullah ibn Anas, from her mother, Fadila al-Ansariyya.\n\nShe will appear later.\n\nSECTION TWO",
+      "arabic_sha256": "bddeb0f3b1d1b85d36ee628094bcb6922f0f8f14e15de5d14334d76f6e34c259",
+      "english_sha256": "c70aa791a7b19de32f278c6bb7af618b69c06eb12bbf711975c6de51e9f12aea",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو الدرداء",
+      "english": "Abu al-Darda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "كعب بن مالك",
+      "english": "Ka'b ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "الليث",
+      "english": "al-Layth",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن وهب",
+      "english": "Ibn Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحلية",
+      "english": "al-Hilya",
+      "kind": "work"
+    },
+    {
+      "arabic": "العجلوني",
+      "english": "al-Ajluni",
+      "kind": "person"
+    },
+    {
+      "arabic": "كشف الخفاء",
+      "english": "Kashf al-Khafa",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عيسى",
+      "english": "Abu Isa",
+      "kind": "person"
+    },
+    {
+      "arabic": "البغدادي",
+      "english": "al-Baghdadi",
+      "kind": "person"
+    },
+    {
+      "arabic": "موضع أوهام الجمع والتفريق",
+      "english": "Mawdi' Awham al-Jam' wa-l-Tafriq",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن يحيى",
+      "english": "Abdullah ibn Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيرة",
+      "english": "Khayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن عبد اللَّه بن كعب",
+      "english": "Yahya ibn Abdullah ibn Ka'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن أنس",
+      "english": "Abdullah ibn Anas",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاضلة الأنصارية",
+      "english": "Fadila al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "bibliographical source reading",
+      "arabic_span": "موضع أوهام الجمع والتفريق",
+      "explanation": "The canonical text reads Mawdi', which governs the translation, but the supplied witnesses do not establish whether this is a printing error for the conventionally known title Muwaddih Awham al-Jam' wa-l-Tafriq.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0125:99ed85a30764fea4"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

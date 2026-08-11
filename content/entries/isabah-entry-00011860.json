@@ -1,0 +1,249 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011860",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11860,
+  "title": {
+    "english": "Hind bint Utba",
+    "arabic_observed": "هند بنت عتبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011860-segment-0001",
+      "volume": 8,
+      "scan_page": 347,
+      "printed_page": 346,
+      "reader_page": 4259,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4259",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0347:5e0ef5b2d164309b",
+      "arabic": "١١٨٦٠- هند بنت عتبة\nبن ربيعة «٢» بن عبد شمس بن عبد مناف القرشيّة «٣»، والدة معاوية بن أبي سفيان.\nأخبارها قبل الإسلام مشهورة. وشهدت أحدا، وفعلت ما فعلت بحمزة، ثم كانت تؤلّب على المسلمين إلى أن جاء اللَّه بالفتح فأسلم زوجها ثم أسلمت هي يوم الفتح، وقصّتهما- في قولها عند بيعة النساء: وأن لا يسرقن ولا يزنين، فقالت: وهل تزني الحرّة؟\nوعند قوله: وَلا يَقْتُلْنَ أَوْلادَهُنَّ: وقد ربيناهم صغارا وقتلتهم كبارا مشهورة.\nومن طرقه ما أخرجه ابن سعد بسند صحيح مرسل عن الشّعبي، وعن ميمون بن مهران، ففي رواية الشّعبي: وَلا يَزْنِينَ- قالت هند: وهل تزني الحرّة؟ وَلَا تَقْتُلْنَ أَوْلَادَكُنَّ- قالت: أنت قتلتهم.\nوفي رواية نحوه، لكن قالت: وهل تركت لنا ولدا يوم بدر، وسؤالها عن أخذها من مال زوجها بغير إذنه ما يكفيها، وهل عليها فيه من حرج- مخرج\nفي الصّحيحين، وفيه:\n«خذي من ماله بالمعروف ما يكفيك وولدك» . وهو من رواية هشام بن عروة، عن أبيه، عن عائشة.\n(١) أسد الغابة ت (٧٣٤٩)، الاستيعاب ت (٣٥٦٧)، الثقات ٣/ ٤٤٠، أعلام النساء ٥/ ٢٠٣، تجريد أسماء الصحابة ٢/ ٣١٠، الكاشف ٣/ ٤٩٢.\n(٢) أسد الغابة ت (٧٣٥٠)، الثقات ٣/ ٤٣٩- أعلام النساء ٥/ ٢٣٩- تجريد أسماء الصحابة ٢/ ٣١٠- أعلام النساء ٥/ ٢٣٩- تجريد أسماء الصحابة ٢/ ٣١٠- أزمنة التاريخ الإسلامي ١٠٠٨- تلقيح فهوم أهل الأثر ٣١٩- وله در السحابة ٨٢٤- الاستيعاب ت (٣٥٦٨) .\n(٣) في أ: القرشية العبشمية.",
+      "english": "11860—Hind bint Utba\n\nibn Rabi'a² ibn Abd Shams ibn Abd Manaf, the Qurashi woman,³ mother of Mu'awiya ibn Abi Sufyan.\n\nThe accounts concerning her before Islam are well known. She was present at Uhud and did what she did to Hamza. She then continued inciting people against the Muslims until Allah brought about the Conquest. Her husband embraced Islam, and she subsequently embraced Islam on the day of the Conquest. Their story is well known, including what she said during the women’s pledge when they were charged “not to steal and not to commit fornication.” She said, “Does a free woman commit fornication?”\n\nAnd at His words, “and they shall not kill their children,” she said, “We raised them when they were small, and you killed them when they were grown.”\n\nAmong the routes by which this is transmitted is what Ibn Sa'd related with a sound but mursal chain from al-Sha'bi, and from Maymun ibn Mihran. In al-Sha'bi’s narration, at “and they shall not commit fornication,” Hind said, “Does a free woman commit fornication?” At “and do not kill your children,” she said, “You killed them.”\n\nThe other narration is similar, except that she said, “Did you leave us any child on the day of Badr?”\n\nThe report of her asking whether she could take from her husband’s property, without his permission, enough to suffice her, and whether she would incur any blame for doing so, is recorded in the two Sahih collections. It contains:\n\n“Take from his property, according to what is customary, enough to suffice you and your child.”\n\nIt is transmitted by Hisham ibn Urwa, from his father, from Aisha.\n\n(1) Usd al-Ghaba, entry 7349; al-Isti'ab, entry 3567; al-Thiqat 3/440; A'lam al-Nisa' 5/203; al-Tajrid 2/310; al-Kashif 3/492.\n\n(2) Usd al-Ghaba, entry 7350; al-Thiqat 3/439; A'lam al-Nisa' 5/239; al-Tajrid 2/310; A'lam al-Nisa' 5/239; al-Tajrid 2/310; Azminat al-Tarikh al-Islami, 1008; Talqih Fuhum Ahl al-Athar, 319; Durr al-Sahaba, 824; al-Isti'ab, entry 3568.\n\n(3) In manuscript A: “the Qurashi al-Abshamiyya woman.”",
+      "arabic_sha256": "bd4a537b29a347838a8ecd845fa8e4d2248c76eb7e09942fbf03413101e67b78",
+      "english_sha256": "ba528fef8cbbb7df87a93bcc4902533a89271c8d83b97cae0235704a1b28b350",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011860-segment-0002",
+      "volume": 8,
+      "scan_page": 348,
+      "printed_page": 347,
+      "reader_page": 4260,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4260",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0348:914e979f1fb50734",
+      "arabic": "وشذّ عبد اللَّه بن محمّد بن عروة، فقال: عن هشام، عن أبيه، عن هند، أخرجه ابن مندة، وأوله: قالت هند: إني أريد أن أبايع محمدا، قال: قد رأيتك تكفرين. قالت: أي واللَّه، واللَّه ما رأيت اللَّه تعالى عبد حقّ عبادته في هذا المسجد قبل الليلة، واللَّه إن باتوا إلا مصلّين قياما وركوعا وسجودا. قال: فإنك قد فعلت ما فعلت، فاذهبي برجل من قومك معك، فذهبت إلى عمر، فذهب معها فاستأذن لها، فدخلت وهي متنقبة، فذكر قصّة البيعة، وفيه ما قدمته، وفيه: فقالت: إن أبا سفيان رجل بخيل، ولا يعطيني، ما يكفيني إلا ما أخذت منه من غير علمه.. الحديث.\nوفيه، عن مرسل الشّعبي المذكور: قالت هند: قد كنت أفنيت من مال أبي سفيان.\nفقال أبو سفيان: ما أخذت من مالي فهو حلال.\nوقال ابن سعد: قال الواقديّ: لما أسلمت هند جعلت تضرب صنما لها في بيتها بالقدوم حتى فلذته فلذة فلذة، وتقول: كنّا معك في غرور.\nقال أبو عمر: ماتت في خلافة عمر بعد أبي بكر بقليل في اليوم الّذي مات فيه أبو قحافة، كذا قال.\nوقد ذكر صاحب «الأمثال» ما يدلّ على أنها بقيت إلى خلافة عثمان، بل بعد ذلك، لأنّ أبا سفيان مات في خلافة عثمان بلا خلاف، وقال هذا: قال رجل لمعاوية زوجني هندا، قال: إنها قعدت عن الولد، ولا حاجة إلى الزّواج. قال: فولّني ناحية كذا، فأنشد معاوية:\nطلب الأبيض العقوق فلمّا ... أعجزته أراد بيض الأنوق\n[الخفيف] يعني أنه طلب ما لا يصل إليه، فلما عجز عنه طلب أبعد منه. ثم رأيت في طبقات ابن سعد الجزم بأنها ماتت في خلافة عثمان.",
+      "english": "Abd Allah ibn Muhammad ibn Urwa gave an anomalous version, saying, “From Hisham, from his father, from Hind.” Ibn Manda transmitted it. It begins: Hind said, “I wish to pledge allegiance to Muhammad.” He said, “I have seen you disbelieving.” She said, “Yes, by Allah! By Allah, before tonight I had never seen Allah Most High worshipped in this mosque as He truly ought to be worshipped. By Allah, they spent the night doing nothing but praying—standing, bowing, and prostrating.” He said, “You have done what you have done. Go and take a man from your people with you.” She went to Umar, who went with her and sought permission for her to enter. She entered veiled. The report then recounts the story of the pledge, including what I cited above. It also contains: She said, “Abu Sufyan is a miserly man and does not give me enough; I obtain what suffices me only by taking from him without his knowledge…” to the end of the hadith.\n\nThe aforementioned mursal report of al-Sha'bi also contains: Hind said, “I had already used up some of Abu Sufyan's property.”\n\nAbu Sufyan said, “Whatever you have taken from my property is lawful for you.”\n\nIbn Sa'd said: Al-Waqidi said, “When Hind embraced Islam, she began striking an idol she kept in her house with an adze until she broke it apart, fragment by fragment, saying, ‘We were deluded while we were with you.’”\n\nAbu Umar said: She died during the caliphate of Umar, shortly after Abu Bakr's death, on the same day that Abu Quhafa died. Thus he stated.\n\nThe author of al-Amthal mentioned evidence indicating that she remained alive until the caliphate of Uthman—indeed, even beyond it—because Abu Sufyan died during Uthman's caliphate, without dispute. He gave this account: A man said to Muawiya, “Give me Hind in marriage.” Muawiya replied, “She has ceased bearing children, and there is no need for marriage.” The man said, “Then appoint me over such-and-such a district.” Muawiya recited:\n\nHe sought the “pregnant white male”; when it proved beyond him,\nhe desired the eggs of the anuq.\n\n[al-Khafif]\n\nHe meant that the man sought something he could not attain and, when unable to obtain it, sought something even more remote. I then found in Ibn Sa'd's al-Tabaqat the categorical statement that she died during the caliphate of Uthman.",
+      "arabic_sha256": "e81dfe9b0e30ff7cf67d7c48e5d128c1098093926a2f4dea2f8bf27d5fd527ca",
+      "english_sha256": "574ee5e53f4c8645520768118643d1724bed4cc7ae6839335ebb05a39a2ea2c0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرشيّة",
+      "english": "Qurashi",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "معاوية بن أبي سفيان",
+      "english": "Mu'awiya ibn Abi Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "حمزة",
+      "english": "Hamza",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الشّعبي",
+      "english": "al-Sha'bi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمون بن مهران",
+      "english": "Maymun ibn Mihran",
+      "kind": "person"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "هشام بن عروة",
+      "english": "Hisham ibn Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "أزمنة التاريخ الإسلامي",
+      "english": "Azminat al-Tarikh al-Islami",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "در السحابة",
+      "english": "Durr al-Sahaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "العبشمية",
+      "english": "al-Abshamiyya",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عبد اللَّه بن محمّد بن عروة",
+      "english": "Abd Allah ibn Muhammad ibn Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام",
+      "english": "Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند",
+      "english": "Hind bint Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمّد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه تعالى",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سفيان",
+      "english": "Abu Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو قحافة",
+      "english": "Abu Quhafa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأمثال",
+      "english": "al-Amthal",
+      "kind": "work"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Muawiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخفيف",
+      "english": "al-Khafif",
+      "kind": "other"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

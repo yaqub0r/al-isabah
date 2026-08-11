@@ -1,0 +1,125 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012267",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12267,
+  "title": {
+    "english": "Umm Ma'bad:",
+    "arabic_observed": "أم معبد:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012267-segment-0001",
+      "volume": 8,
+      "scan_page": 479,
+      "printed_page": 478,
+      "reader_page": 4391,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4391",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0479:f0ec8b9772680ce2",
+      "arabic": "١٢٢٦٧- أم معبد:\nغير منسوبة، وقيل إنها أنصارية» .\nعبد الرحمن بن زياد بن أنعم، عن مولى لأم معبد، عن أم معبد- أن النبي ﵌ كان يدعو ويقول: «اللَّهمّ طهر قلبي من النّفاق، وعملي من الرّياء، ولساني من الكذب، وعيني من الخيانة، فإنّك تعلم خائنة الأعين وما تخفي الصّدور» .\nأخرجه أبو نعيم، وأفردها عن الخزاعية «٤»، وتبعه أبو موسى.\nوأما ابن السّكن فذكر الحديث في ترجمة الخزاعية في الأسماء في عاتكة، فقال:\nروي عن مولى لأم معبد [عن أم معبد] «٥» حديث في الدعاء فذكره، ثم قال في الكنى: أم معبد الأنصارية، وليست صاحبة الخيمتين- يعني الخزاعية، ثم ساق الحديث عن شيخ آخر بالسند والمتن بعينه، ثم قال: لم أجد لأم معبد هذه حديثا غير هذا.\nوفي إسناده نظر، وهو كما قال، فإنه من رواية فرج بن فضالة عن ابن أنعم، وهما ضعيفان، ثم قال: وقد روى عن ابن الحارث عن أم معبد مولاة قرظة حديثا في الظروف، ولست أدري هي هذه أم غيرها؟ فتناقض في ذلك مع جلالته في الحفظ وإتقانه.",
+      "english": "12267—Umm Ma'bad:\nHer lineage is not given, and it is said that she was an Ansari woman.[3]\n\nAbd al-Rahman ibn Ziyad ibn An'um narrated from a client of Umm Ma'bad, from Umm Ma'bad, that the Prophet, may Allah bless him and grant him peace, used to supplicate, saying: “O Allah, purify my heart of hypocrisy, my deeds of ostentation, my tongue of lying, and my eye of treachery. You indeed know the treachery of the eyes and what the breasts conceal.”\n\nAbu Nu'aym transmitted it and listed her separately from the Khuza'i woman,[4] and Abu Musa followed him.\n\nAs for Ibn al-Sakan, he mentioned the hadith in the biography of the Khuza'i woman in the section on personal names, under Atika. He said: “A hadith concerning supplication was narrated from a client of Umm Ma'bad [from Umm Ma'bad].”[5] He then cited it. Thereafter, in the section on kunyas, he said: “Umm Ma'bad the Ansari woman; she is not the lady of the two tents”—meaning the Khuza'i woman. He then transmitted the hadith through another shaykh with precisely the same chain of transmission and text, after which he said: “I have found no hadith of this Umm Ma'bad other than this one.”\n\nThere is cause for scrutiny in its chain of transmission. The matter is as he said, for it is narrated by Faraj ibn Fadala from Ibn An'um, and both are weak. He then said: “A hadith concerning vessels has also been narrated from Ibn al-Harith, from Umm Ma'bad, the client of Quraza, but I do not know whether she is this woman or someone else.” Thus he contradicted himself in this matter, despite his eminence in memorization and precision.",
+      "arabic_sha256": "daae62ff9042d4e2b693adaafa06897287776177eb5a079e536591de77c7db9d",
+      "english_sha256": "e132116e12ac92edd219c69843206e49812bf41f81364b677c2582166c2ee8ad",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد مولاة قرظة",
+      "english": "Umm Ma'bad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد زوج كعب بن مالك",
+      "english": "Umm Ma'bad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد غير منسوبة",
+      "english": "Umm Ma'bad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن زياد بن أنعم",
+      "english": "Abd al-Rahman ibn Ziyad ibn An'um",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخزاعية",
+      "english": "Umm Ma'bad al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاتكة",
+      "english": "Atika",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد الأنصارية",
+      "english": "Umm Ma'bad al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "فرج بن فضالة",
+      "english": "Faraj ibn Fadala",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أنعم",
+      "english": "Abd al-Rahman ibn Ziyad ibn An'um",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الحارث",
+      "english": "Yahya ibn al-Harith al-Taymi",
+      "kind": "person"
+    },
+    {
+      "arabic": "قرظة",
+      "english": "Quraza ibn Ka'b al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم معبد",
+      "english": "Umm Ma'bad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

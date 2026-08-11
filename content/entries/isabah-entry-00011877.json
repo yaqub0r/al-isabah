@@ -1,0 +1,164 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011877",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11877,
+  "title": {
+    "english": "Hind al-Khawlaniyya",
+    "arabic_observed": "هند الخولانيّة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011877-segment-0001",
+      "volume": 8,
+      "scan_page": 351,
+      "printed_page": 350,
+      "reader_page": 4263,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4263",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0351:c9348d2f07f14bbf",
+      "arabic": "١١٨٧٧- هند الخولانيّة\nلها إدراك. قال ابن مندة: سماها سعيد بن عبد الملك، عن الأوزاعيّ، عن عمير بن هانئ، عن هند الخولانية- امرأة بلال، قالت: كان بلال إذا أوى إلى فراشه قال: اللَّهمّ اغفر زلاتي، وتقبل حسناتي، واعذرني في علّاتي. ثم ساقه بسند إلى سعيد بن عبد الملك، قال: ولها حديث مسند رواه الجريريّ، عن أبي الورد، عن امرأة من بني عامر، عنها.\nقلت: ووصله أبو نعيم، ولكنها لم تسمّ فيه، وهو\nفي مسند يعقوب بن شيبة بسند حسن إلى أبي سعيد الجريريّ، ولفظه: عن أبي الورد، حدّثتني امرأة من بني عامر، عن امرأة بلال أنّ النبيّ ﵌ أتاها فسلم، فقال: أثمّ بلال؟ فقالت: لا.\nفقال: لعلك غضبى على بلال؟ فقالت: إنّه يجيئني كثيرا فيقول: قال رسول اللَّه ﵌. فقال:\n«ما حدّثك بلال عني فقد صدقك، بلال لا يكذب، لا تغضبي بلالا، فلا يقبل منك عمل ما غضب عليك بلال» «١» .\nقال ابن الأثير: هذا عندي فيه نظر، فإن بلالا إنما تزوّج في خولان بعد ما أقام في الشّام، وليس في الحديث أنها من خولان، ولعلها غير الخولانية.\n(١) أورده المتقي الهندي في كنز العمال حديث رقم ٣٣١٧٣ وعزاه لابن عساكر عن امرأة بلال.",
+      "english": "11877—Hind al-Khawlaniyya\n\nShe lived during the Prophet's lifetime. Ibn Manda said: Said ibn Abd al-Malik named her in a transmission from al-Awzai, from Umayr ibn Hani, from Hind al-Khawlaniyya, the wife of Bilal. She said: When Bilal retired to his bed, he would say, “O Allah, forgive my slips, accept my good deeds, and excuse me for my infirmities.” Ibn Manda then cited it with a chain of transmission to Said ibn Abd al-Malik. He said: She also has a hadith transmitted with an isnad by al-Jariri, from Abu al-Ward, from a woman of Banu Amir, from her.\n\nI say: Abu Nuaym supplied its connected chain, but she was not named in it. It is also in the Musnad of Yaqub ibn Shayba, with a good (hasan) chain to Abu Said al-Jariri. Its wording is: From Abu al-Ward: “A woman of Banu Amir related to me, from Bilal's wife, that the Prophet, may Allah bless him and grant him peace, came to her and offered greetings. He asked, ‘Is Bilal there?’ She replied, ‘No.’\n\n“He said, ‘Perhaps you are angry with Bilal?’ She replied, ‘He often comes to me and says, “The Messenger of Allah, may Allah bless him and grant him peace, said...”’ He then said: ‘Whatever Bilal relates to you from me, he has told you the truth. Bilal does not lie. Do not anger Bilal, for no deed of yours will be accepted so long as Bilal is angry with you.’” (1)\n\nIbn al-Athir said: In my view, this is open to question, for Bilal married among Khawlan only after he had settled in Syria, and the hadith does not state that she was from Khawlan. Perhaps she was someone other than al-Khawlaniyya.\n\n(1) Al-Muttaqi al-Hindi included it in Kanz al-Ummal, hadith no. 33173, and attributed it to Ibn Asakir, on the authority of Bilal's wife.",
+      "arabic_sha256": "4c00bda642a599b956e133b1d92b28552baf71daaeb0d7a057e6207674436f41",
+      "english_sha256": "23fefe57e00cd55aaabb74d549b1c0e015df650cb5888a4c55e84994de347daf",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011877-segment-0002",
+      "volume": 8,
+      "scan_page": 352,
+      "printed_page": 351,
+      "reader_page": 4264,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4264",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0352:f2194a056d0a2fdd",
+      "arabic": "قلت: هذا محتمل، وعلى هذا فتذكر امرأة بلال صاحبة الحديث المرفوع في المبهمات.",
+      "english": "I say: This is possible. On that basis, Bilal's wife, the woman associated with the Prophetic report, should be mentioned among the unnamed women.",
+      "arabic_sha256": "bb13b99f76b971e7b77c53e64637e53450b486fbbfb6067d5c8e2a0a329512c2",
+      "english_sha256": "96d1b7e3e2ccc0c6c58597c89a405fed98d39273c5092cd23455b42b27369b6f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "هند",
+      "english": "Hind",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند الخولانيّة",
+      "english": "Hind al-Khawlaniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن عبد الملك",
+      "english": "Said ibn Abd al-Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأوزاعيّ",
+      "english": "al-Awzai",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمير بن هانئ",
+      "english": "Umayr ibn Hani",
+      "kind": "person"
+    },
+    {
+      "arabic": "بلال",
+      "english": "Bilal",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سعيد الجريريّ",
+      "english": "Abu Said al-Jariri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الورد",
+      "english": "Abu al-Ward",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو عامر",
+      "english": "Banu Amir",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nuaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند يعقوب بن شيبة",
+      "english": "Musnad of Yaqub ibn Shayba",
+      "kind": "work"
+    },
+    {
+      "arabic": "يعقوب بن شيبة",
+      "english": "Yaqub ibn Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولان",
+      "english": "Khawlan",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الشّام",
+      "english": "Syria",
+      "kind": "place"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن عساكر",
+      "english": "Ibn Asakir",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010970",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10970,
+  "title": {
+    "english": "Thuwayba:",
+    "arabic_observed": "ثوبية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010970-segment-0001",
+      "volume": 8,
+      "scan_page": 61,
+      "printed_page": 60,
+      "reader_page": 3973,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3973",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0061:373ee1cd8b9788bf",
+      "arabic": "١٠٩٧٠- ثوبية:\nالتي أرضعت النبي ﷺ «٢»، وهي مولاة أبي لهب.\nذكرها ابن مندة، وقال: اختلف في إسلامها. وقال أبو نعيم: لا أعلم أحدا أثبت إسلامها انتهى.\nوفي باب من أرضع النبي ﷺ من طبقات ابن سعد ما يدل على أنها لم تسلم، ولكن لا يدفع قول ابن مندة بهذا.\nوأخرج ابن سعد من طريق برة بنت أبي تجراة أن أوّل من أرضع رسول اللَّه ﷺ ثويبة بلبن ابن لها يقال له مسروح أياما قبل أن تقدم حليمة، وأرضعت قبله حمزة، وبعده أبا سلمة بن عبد الأسد.\nوقال ابن أسعد: أخبرنا الواقديّ عن غير واحد من أهل العلم، قالوا: كانت ثويبة [مرضعة] رسول اللَّه ﷺ يصلها وهو بمكة، وكانت خديجة تكرمها، وهي على ملك أبي لهب، وسألته أن يبيعها لها فامتنع، فلما هاجر رسول اللَّه ﷺ أعتقها أبو لهب، وكان رسول اللَّه ﷺ يبعث إليها بصلة وبكسوة حتى جاء الخبر أنها ماتت سنة سبع مرجعه من خيبر، ومات ابنها مسروح قبلها.\n(١) أسد الغابة ت ٦٧٩٧، الاستيعاب ت ٣٣١٢.\n(٢) أسد الغابة ت ٦٧٩٨.",
+      "english": "10970—Thuwayba:\n\nThe woman who nursed the Prophet—may Allah bless him and grant him peace—(2), and who was the bondwoman of Abu Lahab.\n\nIbn Manda mentioned her and said: “There is disagreement as to whether she embraced Islam.” Abu Nu'aym said: “I do not know anyone who established that she embraced Islam.” End of quotation.\n\nIn the chapter on those who nursed the Prophet—may Allah bless him and grant him peace—in al-Tabaqat by Ibn Sa'd, there is evidence indicating that she did not embrace Islam. Yet this does not rebut Ibn Manda's statement.\n\nIbn Sa'd related through Barra bint Abi Tajra'a that the first woman to nurse the Messenger of Allah—may Allah bless him and grant him peace—was Thuwayba, with the milk of a son of hers called Masruh, for several days before Halima arrived. Before him she had nursed Hamza, and after him Abu Salama ibn 'Abd al-Asad.\n\nIbn As'ad said: “Al-Waqidi informed us, on the authority of more than one of the people of knowledge. They said: ‘Thuwayba, [the wet nurse] of the Messenger of Allah—may Allah bless him and grant him peace—used to receive gifts from him while he was in Mecca, and Khadijah used to honor her while she was still the property of Abu Lahab. Khadijah asked Abu Lahab to sell Thuwayba to her, but he refused. When the Messenger of Allah—may Allah bless him and grant him peace—emigrated, Abu Lahab manumitted her. The Messenger of Allah—may Allah bless him and grant him peace—continued sending her gifts and clothing until news came, upon his return from Khaybar, that she had died in the year seven. Her son Masruh died before her.’”\n\n(1) Usd al-Ghaba, entry 6797; al-Isti'ab, entry 3312.\n\n(2) Usd al-Ghaba, entry 6798.",
+      "arabic_sha256": "0ba8670d9866336a60dbc241b171299998b2c48fa24d4a4edf6a9a195f9b3829",
+      "english_sha256": "0ae5572ced863cb07df77e8b300d04b58b5a3c8308796e6267114c2ced48edad",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010970-segment-0002",
+      "volume": 8,
+      "scan_page": 62,
+      "printed_page": 61,
+      "reader_page": 3974,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3974",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0062:2567b1195e0dc4bc",
+      "arabic": "قلت: ولم أقف في شيء من الطرف على إسلام ابنها مسروح، وهو محتمل.\nالقسم الثاني",
+      "english": "I said: I have not come across, in any of the reports, any statement that her son Masruh accepted Islam, though it remains possible.\n\nSECTION TWO",
+      "arabic_sha256": "739f828e00489c8f3832a92542d3bbbb795d78eef374e3e155470a8efd2708c3",
+      "english_sha256": "74a85b05f51d0c5a79b10710c66c1dde50219b0dc6885804af3dd16a64590fa8",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ثوبية",
+      "english": "Thuwayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو لهب",
+      "english": "Abu Lahab",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "برة بنت أبي تجراة",
+      "english": "Barra bint Abi Tajra'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "the Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسروح",
+      "english": "Masruh",
+      "kind": "person"
+    },
+    {
+      "arabic": "حليمة",
+      "english": "Halima",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمزة",
+      "english": "Hamza",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سلمة بن عبد الأسد",
+      "english": "Abu Salama ibn 'Abd al-Asad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أسعد",
+      "english": "Ibn As'ad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "اللَّه تعالى",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

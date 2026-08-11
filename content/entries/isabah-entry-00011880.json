@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011880",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11880,
+  "title": {
+    "english": "Hind bint al-Harith al-Firasiyya",
+    "arabic_observed": "هند بنت الحارث الفراسيّة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011880-segment-0001",
+      "volume": 8,
+      "scan_page": 352,
+      "printed_page": 351,
+      "reader_page": 4264,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4264",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0352:f2194a056d0a2fdd",
+      "arabic": "١١٨٨٠- هند بنت الحارث الفراسيّة\nوقع في كتاب «الصّلاة» من صحيح البخاري عند ذكر اختلاف أصحاب الزّهري عليه في حديثه عنها عن أم سلمة- أن في بعض طرقه: رواه يحيى بن سعيد الأنصاريّ، عن ابن شهاب، عن امرأة من قريش، عن النّبيّ ﵌ بدون ذكر أم سلمة، وهذه الرواية في هند بنت الحارث، ولعل من نسبها قرشية تصحّفت عليه من الفراسية، أو أنها نسبت لقريش، لكونها من بني كنانة، لأن بني فراس بطن من كنانة.\nحرف الواو\nالقسم الأول",
+      "english": "11880—Hind bint al-Harith al-Firasiyya\n\nIn the “Book of Prayer” in Sahih al-Bukhari, in the discussion of the differences among al-Zuhri's students in transmitting his hadith from her, from Umm Salama, one of its routes reads: Yahya ibn Sa'id al-Ansari transmitted it from Ibn Shihab, from a woman of Quraysh, from the Prophet—may Allah bless him and grant him peace—without mentioning Umm Salama. This version concerns Hind bint al-Harith. Perhaps al-Firasiyya was misread as al-Qurashiyya by whoever described her as Qurashi; or she may have been affiliated with Quraysh because she belonged to Banu Kinana, for Banu Firas is a subdivision of Banu Kinana.\n\nTHE LETTER WAW\n\nTHE FIRST SECTION",
+      "arabic_sha256": "77aeb769603f763244920ca0e141208f42ef4bcc57779d96ed163bac66459791",
+      "english_sha256": "6dac35c29d3ab3af7e4a5b035b2285db7c7ad33542abcddb9e44c3ab08a8bc73",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "هند بنت الحارث الفراسية",
+      "english": "Hind bint al-Harith al-Firasiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الصلاة",
+      "english": "Book of Prayer",
+      "kind": "work"
+    },
+    {
+      "arabic": "صحيح البخاري",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن سعيد الأنصاري",
+      "english": "Yahya ibn Sa'id al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن شهاب",
+      "english": "Ibn Shihab",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريش",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني كنانة",
+      "english": "Banu Kinana",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني فراس",
+      "english": "Banu Firas",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

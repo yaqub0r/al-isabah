@@ -1,0 +1,98 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012190",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12190,
+  "title": {
+    "english": "Umm Amr bint al-Muqawwim",
+    "arabic_observed": "أم عمرو بنت المقوّم"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012190-segment-0001",
+      "volume": 8,
+      "scan_page": 445,
+      "printed_page": 444,
+      "reader_page": 4357,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4357",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0445:3ffaff7672c6c364",
+      "arabic": "١٢١٩٠- أم عمرو بنت المقوّم\nبن عبد المطّلب الهاشميّة، أمها فلانة بنت عمرو بن جعونة، وكانت قد تزوّجها مسعود بن معتب الثقفيّ، فولدت له عبد اللَّه بن مسعود، ثم تزوّجها أبو سفيان بن الحارث بن عبد المطّلب فولدت له عاتكة. ذكر ذلك ابن سعد.",
+      "english": "12190—Umm Amr bint al-Muqawwim\n\nibn Abd al-Muttalib, the Hashimite woman. Her mother was an unnamed daughter of Amr ibn Ja'una. Mas'ud ibn Mu'attib al-Thaqafi had married her, and she bore him Abd Allah ibn Mas'ud. Abu Sufyan ibn al-Harith ibn Abd al-Muttalib then married her, and she bore him Atika. Ibn Sa'd mentioned this.",
+      "arabic_sha256": "bffcb7ea602fd52e221628fb343cd345e70f3a2264aeb619b49e0fa20b40311b",
+      "english_sha256": "9cd0beb36276f9030d898cd715a445fdfa3ae13985cd1019ea0c738c1ccf3f80",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "فلانة بنت عمرو بن جعونة",
+      "english": "bint Amr ibn Ja'una",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسعود بن معتب الثقفي",
+      "english": "Mas'ud ibn Mu'attib al-Thaqafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن مسعود",
+      "english": "Abd Allah ibn Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سفيان بن الحارث بن عبد المطلب",
+      "english": "Abu Sufyan ibn al-Harith ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاتكة",
+      "english": "Atika",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو زوج حريث بن عمرو بن عثمان المخزومي",
+      "english": "Umm Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو زوج سليم الزرقي",
+      "english": "Umm Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "جعونة",
+      "explanation": "The consonantal spelling is confirmed, but neither the canonical Arabic nor the Urdu witness supplies vowels sufficient to establish the exact vocalization. The candidate form Ja'una is therefore retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0445:3ffaff7672c6c364"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

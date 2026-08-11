@@ -1,0 +1,376 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012204",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12204,
+  "title": {
+    "english": "Umm al-Fadl (3)",
+    "arabic_observed": "أم الفضل «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012204-segment-0001",
+      "volume": 8,
+      "scan_page": 450,
+      "printed_page": 449,
+      "reader_page": 4362,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4362",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0450:2d724618d9bd932e",
+      "arabic": "١٢٢٠٤- أم الفضل «٣»\n: امرأة العباس بن عبد المطلب، اسمها لبابة بنت الحارث الهلالية، وهي لبابة الكبرى.\n(١) الثقات ٣/ ٤٦٣، أعلام النساء ٤/ ١٦٠، تجريد أسماء الصحابة ٢/ ٣٣١ تقريب التهذيب ٢/ ٦٢٣، تهذيب التهذيب ١٢/ ٤٧٦، الكاشف ٣/ ٤٩١، تهذيب الكلام ٣/ ١٧٥، خلاصة تذهيب ٣/ ٤٠٢، حلية الأولياء ٢/ ٧٣، تلقيح فهوم أهل الأثر ٣٨٧، أسد الغابة ت (٧٥٦٤) .\n(٢) كذا بالأصول، ط. ولعل في هذا المقام تحرير فقد توفى ابن سعد سنة ٢٣٠ هـ، وتوفي أبو داود سنة ٢٧٥ هـ والترمذي ٢٧٩ هـ. انظر ترجمة ابن سعد في وفيات الأعيان ٤/ ٣٥١، تهذيب التهذيب ٩/ ١٨٢، تهذيب الكمال ٦/ ٦٠٠، الوافي بالوفيات ٣/ ٨٨. وانظر ترجمة أبي داود في تاريخ بغداد ٩/ ٥٥- ٥٩، وفيات الأعيان ٢/ ٤٠٤- ٤٠٥، تذكرة الحفاظ ٢/ ٥٩١- ٥٩٣، تهذيب التهذيب ٤/ ١٦٩- ١٧٣.\n(٣) أسد الغابة ت (٧٥٦٦)، الاستيعاب ت (٣٦٥٤)، أعلام النساء ٤/ ١٧٠، ٢٧٢، تجريد أسماء الصحابة ٢/ ٣٣١- تقريب التهذيب ٢/ ٦٢٣- تهذيب التهذيب ١٢/ ٤٧٦، تهذيب الكمال ٣/ ١٧٠٥- الجرح والتعديل ٩/ ٤٦٥- تلقيح فهوم أهل الأثر ٣٢١- بقي بن مخلد ٩٦.",
+      "english": "12204—Umm al-Fadl (3)\n\nThe wife of al-Abbas ibn Abd al-Muttalib. Her name was Lubaba bint al-Harith al-Hilaliyya, and she was Lubaba the Elder.\n\n(1) Al-Thiqat, 3/463; A'lam al-Nisa', 4/160; al-Tajrid, 2/331; Taqrib al-Tahdhib, 2/623; Tahdhib al-Tahdhib, 12/476; al-Kashif, 3/491; Tahdhib al-Kalam, 3/175; Khulasat Tadhhib, 3/402; Hilyat al-Awliya', 2/73; Talqih Fuhum Ahl al-Athar, 387; Usd al-Ghaba, entry 7564.\n\n(2) Thus in the manuscript sources and the printed edition. Perhaps this passage requires verification, for Ibn Sa'd died in 230 AH, Abu Dawud died in 275 AH, and al-Tirmidhi in 279 AH. See the biography of Ibn Sa'd in Wafayat al-A'yan, 4/351; Tahdhib al-Tahdhib, 9/182; Tahdhib al-Kamal, 6/600; and al-Wafi bi-l-Wafayat, 3/88. See the biography of Abu Dawud in Tarikh Baghdad, 9/55–59; Wafayat al-A'yan, 2/404–405; Tadhkirat al-Huffaz, 2/591–593; and Tahdhib al-Tahdhib, 4/169–173.\n\n(3) Usd al-Ghaba, entry 7566; al-Isti'ab, entry 3654; A'lam al-Nisa', 4/170, 272; al-Tajrid, 2/331; Taqrib al-Tahdhib, 2/623; Tahdhib al-Tahdhib, 12/476; Tahdhib al-Kamal, 3/1705; al-Jarh wa-l-Ta'dil, 9/465; Talqih Fuhum Ahl al-Athar, 321; Baqi ibn Makhlad, 96.",
+      "arabic_sha256": "2a513fe9a563dbd7d4d4c478c763dc4d14450bbee62e7b7d26bbc1e0b0972827",
+      "english_sha256": "1638c435f33f16bfb39c88309391168455c91bdbd03ecfe993ae61571dc314a7",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012204-segment-0002",
+      "volume": 8,
+      "scan_page": 451,
+      "printed_page": 450,
+      "reader_page": 4363,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4363",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0451:d7c472917a76286c",
+      "arabic": "تقدم نسبها في لبابة الصغرى أختها، أسلمت قبل الهجرة فيما قيل، وقيل بعدها.\nوقال ابن سعد: أم الفضل أول امرأة آمنت بعد خديجة، وروت عن النبي ﵌. روى عنها ابناها: عبد اللَّه، وتمام، وعمير بن الحارث مولاها، وكريب مولى ابنها، وعبد اللَّه بن عباس، وعبد اللَّه بن الحارث بن نوفل، وآخرون.\nوأخرج الزّبير بن بكّار وغيره من طريق إبراهيم بن عقبة، عن كريب، عن ابن عباس، عن النبي ﷺ: «الأخوات الأربع مؤمنات: أمّ الفضل، وميمونة، وأسماء وسلمى انتهى.\nفأما ميمونة فهي أم المؤمنين، وهي شقيقة أم الفضل، وأما أسماء وسلمى فأختاهما من أبيهما، وهما بنتا عميس الخثعمية.\nوذكره الواقديّ بسند عن كريب: ذكرت ميمونة وأم الفضل وإخوتها لبابة، وهي بكر، وعزة، وأسماء، وسلمى، فقال رسول اللَّه ﵌: «إنّ الأخوات المؤمنات» «١» .\nوأخرج ابن سعد بسند جيد، عن سماك بن حرب، أن أم الفضل قالت: يا رسول اللَّه، رأيت أن عضوا من أعضائك في بيتي. قال: «تلد فاطمة غلاما وترضعينه بلبن قثم»، فولدت حسينا، فأخذته، فبينا هو يقبّله إذ بال عليه فقصرته فبكى. فقال: «آذيتني في ابني»، ثم دعا بماء فحدره، حدرا.\nومن طريق قابوس بن المخارق نحوه، وفيه: فأرضعته حتى تحرك، فجاءت به النبي ﵌، فأجلسه في حجره فبال فضربته بين كتفيه، فقال: «أوجعت ابني رحمك اللَّه ...» الحديث.\nوكان يقال لوالدة أم الفضل العجوز الحرشية أكرم الناس أصهارا: ميمونة زوج النبي ﵌، والعباس تزوج أختها شقيقتها لبابة، وحمزة تزوج أختها سلمى، وجعفر بن أبي طالب تزوج شقيقتها أسماء، ثم تزوجها بعده أبو بكر الصديق، ثم تزوجها بعده علي. قال أبو عمر: كانت من المنجبات، وكان النبي ﵌ يزورها.\nوفي «الصحيح» أن الناس شكوا في صيام النبي ﵌ يوم عرفة،\n(١) أخرجه ابن سعد في الطبقات الكبرى ٨/ ٢٠٣.",
+      "english": "Her lineage was given previously under Lubaba al-Sughra, her sister. It is said that she embraced Islam before the Hijra, and it is also said that she did so afterward.\n\nIbn Sa'd said: Umm al-Fadl was the first woman to believe after Khadijah, and she narrated from the Prophet, may Allah bless him and grant him peace. Those who narrated from her were her two sons, Abd Allah and Tammam; Umayr ibn al-Harith, her client; Kurayb, the client of her son; Abd Allah ibn Abbas; Abd Allah ibn al-Harith ibn Nawfal; and others.\n\nAl-Zubayr ibn Bakkar and others transmitted through Ibrahim ibn Uqba, from Kurayb, from Ibn Abbas, from the Prophet, may Allah bless him and grant him peace: “The four sisters are believers: Umm al-Fadl, Maymuna, Asma, and Salma.” End.\n\nAs for Maymuna, she was a Mother of the Believers and the full sister of Umm al-Fadl. As for Asma and Salma, they were their paternal half-sisters, the two daughters of 'Umays, both of the Khath'am tribe.\n\nAl-Waqidi mentioned it with a chain from Kurayb: Maymuna, Umm al-Fadl, and their sisters—Lubaba, who was a virgin, 'Azza, Asma, and Salma—were mentioned, whereupon the Messenger of Allah, may Allah bless him and grant him peace, said: “Indeed, they are the believing sisters.” (1)\n\nIbn Sa'd transmitted with a good chain from Simak ibn Harb that Umm al-Fadl said: “O Messenger of Allah, I saw that one of your limbs was in my house.” He said: “Fatima will give birth to a boy, and you will nurse him with Qutham's milk.” She gave birth to Husayn, and I took him. While the Prophet was kissing him, the child urinated on him, so I pinched him, and he cried. He said: “You have hurt me on account of my son.” Then he called for water and poured it down in a stream.\n\nA similar report was transmitted through Qabus ibn al-Mukhariq. It says that she nursed him until he began to move about, then brought him to the Prophet, may Allah bless him and grant him peace, who seated him in his lap. He urinated, so she struck him between the shoulders. He said: “You have hurt my son; may Allah have mercy on you …” to the end of the hadith.\n\nIt used to be said of Umm al-Fadl's mother, the elderly al-Harashiyya woman, that she had the most distinguished sons-in-law: Maymuna was the wife of the Prophet, may Allah bless him and grant him peace; al-Abbas married her full sister Lubaba; Hamza married her sister Salma; and Ja'far ibn Abi Talib married her full sister Asma. After Ja'far, Abu Bakr al-Siddiq married her, and after Abu Bakr, Ali married her. Abu Umar said: She was among the women who bore distinguished children, and the Prophet, may Allah bless him and grant him peace, used to visit her.\n\nIt is reported in al-Sahih that the people were uncertain whether the Prophet, may Allah bless him and grant him peace, was fasting on the Day of Arafat,\n\n(1) Transmitted by Ibn Sa'd in al-Tabaqat, 8/203.",
+      "arabic_sha256": "d7c472917a76286c9621a2c66dfbabccd08165b4745c4ee99812b566196499d9",
+      "english_sha256": "e2ab27cf7cfe6dc1159dc83d88e3d17ae93527e0239f25777514ce6e0530595f",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012204-segment-0003",
+      "volume": 8,
+      "scan_page": 452,
+      "printed_page": 451,
+      "reader_page": 4364,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4364",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0452:d98ee86554194ea0",
+      "arabic": "فأرسلت إليه أم الفضل بقدح لبن فشرب وهو بالموقف، فعرفوا أنه لم يكن صائما.\nوقال ابن حبّان: ماتت في خلافة عثمان قبل زوجها العباس.",
+      "english": "Then Umm al-Fadl sent him a cup of milk, and he drank it while he was at the place of standing; thus they knew that he was not fasting.\n\nIbn Hibban said: She died during the caliphate of Uthman, before her husband al-Abbas.",
+      "arabic_sha256": "c5cd8b005b5adeed3eccdd5cef073d74e904945faca566b10677518de42d881d",
+      "english_sha256": "719030e91c391b349b88923b284dc8dcf10ef84cd2691148cbb4663126aefe14",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم الفضل",
+      "english": "Umm al-Fadl",
+      "kind": "person"
+    },
+    {
+      "arabic": "العباس بن عبد المطلب",
+      "english": "al-Abbas ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "لبابة بنت الحارث الهلالية",
+      "english": "Lubaba bint al-Harith al-Hilaliyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "لبابة الكبرى",
+      "english": "Lubaba the Elder",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكلام",
+      "english": "Tahdhib al-Kalam",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب",
+      "english": "Khulasat Tadhhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "حلية الأولياء",
+      "english": "Hilyat al-Awliya'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "وفيات الأعيان",
+      "english": "Wafayat al-A'yan",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الوافي بالوفيات",
+      "english": "al-Wafi bi-l-Wafayat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ بغداد",
+      "english": "Tarikh Baghdad",
+      "kind": "work"
+    },
+    {
+      "arabic": "تذكرة الحفاظ",
+      "english": "Tadhkirat al-Huffaz",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الجرح والتعديل",
+      "english": "al-Jarh wa-l-Ta'dil",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "لبابة الصغرى",
+      "english": "Lubaba al-Sughra",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عباس",
+      "english": "Abd Allah ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "تمام",
+      "english": "Tammam",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمير بن الحارث",
+      "english": "Umayr ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "كريب",
+      "english": "Kurayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن الحارث بن نوفل",
+      "english": "Abd Allah ibn al-Harith ibn Nawfal",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن عقبة",
+      "english": "Ibrahim ibn Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمونة",
+      "english": "Maymuna",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء",
+      "english": "Asma",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى",
+      "english": "Salma",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميس",
+      "english": "'Umays",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخثعمية",
+      "english": "Khath'am",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عزة",
+      "english": "'Azza",
+      "kind": "person"
+    },
+    {
+      "arabic": "سماك بن حرب",
+      "english": "Simak ibn Harb",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة",
+      "english": "Fatima",
+      "kind": "person"
+    },
+    {
+      "arabic": "قثم",
+      "english": "Qutham",
+      "kind": "person"
+    },
+    {
+      "arabic": "حسين",
+      "english": "Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "قابوس بن المخارق",
+      "english": "Qabus ibn al-Mukhariq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحرشية",
+      "english": "al-Harashiyya",
+      "kind": "other"
+    },
+    {
+      "arabic": "العباس",
+      "english": "al-Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمزة",
+      "english": "Hamza",
+      "kind": "person"
+    },
+    {
+      "arabic": "جعفر بن أبي طالب",
+      "english": "Ja'far ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر الصديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "al-Sahih",
+      "kind": "work"
+    },
+    {
+      "arabic": "عرفة",
+      "english": "Arafat",
+      "kind": "place"
+    },
+    {
+      "arabic": "الطبقات الكبرى",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "bibliography",
+      "arabic_span": "تهذيب الكلام",
+      "explanation": "This may be a printing error for another bibliographical title, but no supplied evidence authorizes an emendation. It is therefore retained diplomatically as “Tahdhib al-Kalam.”",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0450:2d724618d9bd932e"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

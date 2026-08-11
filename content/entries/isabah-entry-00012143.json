@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012143",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12143,
+  "title": {
+    "english": "Umm Abd Allah",
+    "arabic_observed": "أم عبد اللَّه"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012143-segment-0001",
+      "volume": 8,
+      "scan_page": 429,
+      "printed_page": 428,
+      "reader_page": 4341,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4341",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0429:c656a103def0737c",
+      "arabic": "١٢١٤٣- أم عبد اللَّه\nبنت معاذ بن جبل.\nتقدّم نسبها مع أبيها. قال ابن سعد: أسلمت وبايعت، وأمها أم عمرو بنت خلاد.\nوتزوّجها عبد اللَّه بن عامر بن مروان.",
+      "english": "12143—Umm Abd Allah\n\nbint Mu'adh ibn Jabal.\n\nHer lineage has been given previously together with that of her father. Ibn Sa'd said: She embraced Islam and gave the pledge of allegiance. Her mother was Umm Amr bint Khallad. Abd Allah ibn Amir ibn Marwan married her.",
+      "arabic_sha256": "34d0a39b001d91f4b9195969241e93345d868148424375a9e414a3bb8a52d913",
+      "english_sha256": "f40b87a4b7224964dfab670752c8e95b8aaf411d5d8e06ec7b102724a7870408",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو بنت خلاد",
+      "english": "Umm Amr bint Khallad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عامر بن مروان",
+      "english": "Abd Allah ibn Amir ibn Marwan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

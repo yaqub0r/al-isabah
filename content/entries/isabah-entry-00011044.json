@@ -1,0 +1,103 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011044",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11044,
+  "title": {
+    "english": "Habiba bint Nubayh",
+    "arabic_observed": "حبيبة بنت نبيه"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011044-segment-0001",
+      "volume": 8,
+      "scan_page": 85,
+      "printed_page": 84,
+      "reader_page": 3997,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3997",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0085:f06f6b3846d86122",
+      "arabic": "١١٠٤٤- حبيبة بنت نبيه\nبن الحجاج السهمية، زوج المطلب بن أبي وداعة، والدة حبيبة بنت المطلب.\nوتزوجت حبيبة عبد الرحمن بن نوفل بن الحارث بن عبد المطلب، وهو أخو عبد اللَّه الّذي يقال له ببة أمير البصرة، وقتل نبيه والد حبيبة كافرا في عهد النبيّ ﷺ، ذكر ذلك كله الزّبير بن بكّار.",
+      "english": "11044 — Habiba bint Nubayh\n\nIbn al-Hajjaj al-Sahmiyya, the wife of al-Muttalib ibn Abi Wada'a and the mother of Habiba bint al-Muttalib.\n\nHabiba married Abd al-Rahman ibn Nawfal ibn al-Harith ibn Abd al-Muttalib. He was the brother of Abd Allah, who was called Babba, the governor of Basra. Nubayh, Habiba's father, was killed as an unbeliever during the lifetime of the Prophet (may Allah bless him and grant him peace). All of this was mentioned by al-Zubayr ibn Bakkar.",
+      "arabic_sha256": "afe1bea1fbb811dfbe5b0470eabba76e2585e94109b2eb2dcb63fe10957504b0",
+      "english_sha256": "d0b00f66394f94cac344cace51133d2255634903c149813222a065437e370294",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "المطلب بن أبي وداعة",
+      "english": "al-Muttalib ibn Abi Wada'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة بنت المطلب",
+      "english": "Habiba bint al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة",
+      "english": "Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن نوفل بن الحارث بن عبد المطلب",
+      "english": "Abd al-Rahman ibn Nawfal ibn al-Harith ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ببة",
+      "english": "Babba",
+      "kind": "person"
+    },
+    {
+      "arabic": "البصرة",
+      "english": "Basra",
+      "kind": "place"
+    },
+    {
+      "arabic": "نبيه والد حبيبة",
+      "english": "Nubayh ibn al-Hajjaj",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah ibn Jahm ibn Qays",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "referent ambiguity",
+      "arabic_span": "وتزوجت حبيبة عبد الرحمن بن نوفل بن الحارث بن عبد المطلب",
+      "explanation": "The bare name Habiba may denote either Habiba bint al-Muttalib, the nearest antecedent, or the headword woman Habiba bint Nubayh. The supplied collateral witnesses do not contain this entry. The English therefore preserves the canonical text's unexpanded wording without choosing between them.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0085:f06f6b3846d86122"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

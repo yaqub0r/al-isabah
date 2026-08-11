@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012004",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12004,
+  "title": {
+    "english": "Umm Khalid bint Khalid",
+    "arabic_observed": "أم خالد بنت خالد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012004-segment-0001",
+      "volume": 8,
+      "scan_page": 386,
+      "printed_page": 385,
+      "reader_page": 4298,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4298",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0386:e1ff388273593787",
+      "arabic": "١٢٠٠٤- أم خالد بنت خالد\nبن سعيد بن العاص بن أمية بن عبد شمس القرشية الأموية «٢» . وهي مشهورة بكنيتها، واسمها أمة. لها ولأبويها صحبة، وكانا ممن هاجر إلى الحبشة، وقدما بها وهي صغيرة، وقصتها عند البخاري، من طريق خالد بن سعيد بن عمرو بن سعيد بن العاص، عن أمه أم خالد، قال: أتيت رسول اللَّه ﵌ مع أبي وعليّ قميص أصفر، فقال رسول اللَّه ﵌ [...] .\nوقد تقدم ذكرها في أمة في حرف الألف.",
+      "english": "12004—Umm Khalid bint Khalid\n\nibn Sa'id ibn al-As ibn Umayya ibn Abd Shams, the Qurashi woman of the Umayyad clan.(2) She is well known by her kunya, and her name was Ama. She and both her parents were Companions. Her parents were among those who emigrated to Abyssinia, and they came with her while she was still young. Her story is in al-Bukhari, through Khalid ibn Sa'id ibn Amr ibn Sa'id ibn al-As, from his mother, Umm Khalid, who said: “I came to the Messenger of Allah (may Allah bless him and grant him peace) with my father, and I was wearing a yellow shirt. The Messenger of Allah (may Allah bless him and grant him peace) said […]”\n\nShe was mentioned previously under Ama, in the letter alif.",
+      "arabic_sha256": "7b540f8a089ff8ebd869d3be00061c3229e64174d8b2af36dc6310daf9c24d44",
+      "english_sha256": "4423b5c7882bd933a415d0e9836d1444afd7ffa37cac7db48e32aeb29e73d256",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أمة",
+      "english": "Ama bint Khalid ibn Sa'id ibn al-As ibn Umayya ibn Abd Shams",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد بن سعيد بن عمرو بن سعيد بن العاص",
+      "english": "Khalid ibn Sa'id ibn Amr ibn Sa'id ibn al-As",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

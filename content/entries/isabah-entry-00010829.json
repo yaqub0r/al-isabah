@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010829",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10829,
+  "title": {
+    "english": "Umama bint Abd al-Muttalib",
+    "arabic_observed": "أمامة بنت عبد المطلب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010829-segment-0001",
+      "volume": 8,
+      "scan_page": 27,
+      "printed_page": 26,
+      "reader_page": 3939,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3939",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0027:2304d49de3177790",
+      "arabic": "١٠٨٢٩- أمامة بنت عبد المطلب\nلها ذكر في حديث ضعيف، كذا في «التّجريد»، وهي أميمة الآتي ذكرها، نسبت إلى جد أبيها، وهي بنت ربيعة بن الحارث بن عبد المطلب.\nوقال ابن فتحون: ذكر أبو عمر في ترجمة عباد بن شيبان إسلام أمامة بنت عبد المطلب.\nقلت: لفظ ابن عبد البر: قال عباد بن شيبان: خطبت إلى النبي ﷺ أمامة بنت عبد المطلب فأنكحني، ولم يشهد. وسبقه إلى ذلك البغوي، فأخرج هذا الخبر من حديث عباد بن شيبان. قال ابن فتحون: لم يذكرها أبو عمر، فلو صح الخبر لكان إهماله إياها من العجب العجيب.",
+      "english": "10829—Umama bint Abd al-Muttalib\n\nShe is mentioned in a weak hadith; so it appears in al-Tajrid. She is Umayma, whose entry will follow. Her lineage was attributed to her father's grandfather, for she was the daughter of Rabi'a ibn al-Harith ibn Abd al-Muttalib.\n\nibn Fathun said: Abu Umar, in the entry on Abbad ibn Shayban, mentioned the acceptance of Islam by Umama bint Abd al-Muttalib.\n\nI say: The wording of ibn Abd al-Barr is: “Abbad ibn Shayban said: I asked the Prophet, may Allah bless him and grant him peace, for Umama bint Abd al-Muttalib in marriage, and he married her to me without calling witnesses.” al-Baghawi preceded him in this, transmitting this report as a hadith of Abbad ibn Shayban. ibn Fathun said: “Abu Umar did not give her an entry. If the report is sound, his omission of her would be exceedingly astonishing.”",
+      "arabic_sha256": "3af2bbe22ede79398cadd8773fe40468c9fa98ef12d45a4b79aaf3cd8c227d25",
+      "english_sha256": "042188e7f16fe9e837dd7545543718c70e0220f3e25ccbff2f2ba5ca21a57101",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة بنت عبد المطلب",
+      "english": "Umama bint Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن فتحون",
+      "english": "ibn Fathun",
+      "kind": "person"
+    },
+    {
+      "arabic": "عباد بن شيبان",
+      "english": "Abbad ibn Shayban",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبد البر",
+      "english": "ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "البغوي",
+      "english": "al-Baghawi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

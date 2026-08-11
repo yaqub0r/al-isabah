@@ -1,0 +1,187 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012063",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12063,
+  "title": {
+    "english": "Umm Sufyan bint al-Dahhak (1)",
+    "arabic_observed": "أم سفيان بنت الضّحاك «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012063-segment-0001",
+      "volume": 8,
+      "scan_page": 404,
+      "printed_page": 403,
+      "reader_page": 4316,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4316",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0404:a8d9cc4290690880",
+      "arabic": "١٢٠٦٣- أم سفيان بنت الضّحاك «١»\n: قال ابن مندة: ذكرت في الصّحابة، ولا يثبت.\nروى حديثها حماد بن سلمة، عن يعلى بن عطاء، عن موسى بن عبد الرّحمن. وذكرت عن عائشة أنّ النّبيّ ﵌ صلّى بهم صلاة الكسوف، فاستعاذ من عذاب القبر «٢» .\n(١) أسد الغابة ت (٧٤٧١) .\n(٢) الثقات ٣/ ٤٦٤، تجريد أسماء الصحابة ٢/ ٣٢٢. أورده ابن عبد البر في التمهيد ٣/ ٣١٠.",
+      "english": "12063—Umm Sufyan bint al-Dahhak (1)\n\nIbn Manda said: “She was mentioned among the Companions, but this is not established.”\n\nHer hadith was transmitted by Hammad ibn Salama, from Ya'la ibn Ata, from Musa ibn Abd al-Rahman. She related from Aisha that the Prophet, may Allah bless him and grant him peace, led them in the eclipse prayer and sought refuge from the punishment of the grave. (2)\n\n(1) Usd al-Ghaba, entry 7471.\n\n(2) al-Thiqat, 3/464; al-Tajrid, 2/322. Ibn Abd al-Barr included it in al-Tamhid, 3/310.",
+      "arabic_sha256": "bbd82f0168c284ce17b6c08ae608ecb9e014d3c527de75c18bb0af7c741c06ef",
+      "english_sha256": "1f08bd5b02625852f71d7aed47063e3f79c3a74869e190e48093f325cad3b8c0",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012063-segment-0002",
+      "volume": 8,
+      "scan_page": 405,
+      "printed_page": 404,
+      "reader_page": 4317,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4317",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0405:8114a535f9efedf1",
+      "arabic": "قلت:\nقد أورده عبد اللَّه بن أحمد من زيادات المسند عن هدبة بن خالد، عن حماد.\nولفظه: عن موسى بن عبد الرحمن، عن أم سفيان: أنّ يهودية كانت تدخل على عائشة فتتحدث فإذا قامت قالت: أعاذك اللَّه من عذاب القبر، فلما جاء رسول اللَّه ﵌ بذلك فقال: كذبت، إنّما ذلك لأهل الكتاب، فكسفت الشمس، فقال: أعوذ باللَّه من عذاب القبر ...» الحديث «١» .\nوهكذا أخرجه الطّبرانيّ، عن عبد اللَّه بن أحمد، وابن أبي عاصم، عن هدبة.",
+      "english": "I say:\n\nAbd Allah ibn Ahmad included it among the additions to Musnad Ahmad, transmitting it from Hudba ibn Khalid, from Hammad.\n\nIts wording is: Musa ibn Abd al-Rahman related from Umm Sufyan that a Jewish woman used to visit Aisha and converse with her. Whenever she rose to leave, she would say, “May Allah protect you from the punishment of the grave.” When the Messenger of Allah, may Allah bless him and grant him peace, came, [Aisha informed him] of that, and he said, “She lied. That applies only to the People of the Book.” Then the sun was eclipsed, and he said, “I seek refuge in Allah from the punishment of the grave…”—to the end of the hadith.¹\n\nal-Tabarani likewise transmitted it from Abd Allah ibn Ahmad, while ibn Abi Asim transmitted it from Hudba.",
+      "arabic_sha256": "8b28968cddab1974e3347c8a25c5b1200483a24062459a0bc06bcc34ea3376fb",
+      "english_sha256": "613b8fdd758cbd3c41c3a41a7e12303848eb211cbc82ae07d140da39487b30e9",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عبد الرّحمن",
+      "english": "Abd al-Rahman ibn al-Musayyib ibn Hazn",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سفيان بنت الضّحاك",
+      "english": "Umm Sufyan bint al-Dahhak",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "حماد بن سلمة",
+      "english": "Hammad ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "يعلى بن عطاء",
+      "english": "Ya'la ibn Ata",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن عبد الرّحمن",
+      "english": "Musa ibn Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "النّبيّ",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن عبد البر",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "التمهيد",
+      "english": "al-Tamhid",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد الله بن أحمد",
+      "english": "Abd Allah ibn Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "هدبة بن خالد",
+      "english": "Hudba ibn Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "حماد",
+      "english": "Hammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن عبد الرحمن",
+      "english": "Musa ibn Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سفيان",
+      "english": "Umm Sufyan bint al-Dahhak",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أهل الكتاب",
+      "english": "People of the Book",
+      "kind": "other"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "ibn Abi Asim",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source_lacuna",
+      "arabic_span": "والدة سعيد بن زيد بن عمرو بن نفيل- يكتب من [....] . باب الكافور في كتاب الجنائز للبيهقيّ في السّنن الكبير.",
+      "explanation": "The missing words after يكتب من cannot be recovered from the supplied evidence. Urdu scan 464 confirms that the original itself contained a blank and supports keeping the Bayhaqi reference within the same entry, but it does not conclusively establish the fragment's precise grammatical connection to the copying instruction.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0404:a8d9cc4290690880"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

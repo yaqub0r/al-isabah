@@ -1,0 +1,58 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011322",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11322,
+  "title": {
+    "english": "Salma bint 'Amr",
+    "arabic_observed": "سلمى بنت عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011322-segment-0001",
+      "volume": 8,
+      "scan_page": 185,
+      "printed_page": 184,
+      "reader_page": 4097,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4097",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0185:5f22dcc716a75836",
+      "arabic": "١١٣٢٢- سلمى بنت عمرو\nبن حبيش بن لوذان بن عبد ود «٤»، أخت المنذر بن عبد الأنصاري الساعدي. استدركها ابن الأثير ولم ينسبها لأحد من المخرجين.",
+      "english": "11322—Salma bint 'Amr\n\nibn Hubaysh ibn Lawdhan ibn 'Abd Wudd(4), sister of al-Mundhir ibn 'Abd, the Ansari Sa'idi. Ibn al-Athir added her as an omitted entry, but did not attribute her to any of the compilers.",
+      "arabic_sha256": "408e10f295c3f64617feba0d941d7004ed2f6a716b56ae12ac84fce2e814abc3",
+      "english_sha256": "b684a611a6fe35100558186f4ed3d68caafb035d169037a7befc4ef10bb4db1d",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "المنذر بن عبد الأنصاري الساعدي",
+      "english": "al-Mundhir ibn 'Abd al-Ansari al-Sa'idi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "حبيش",
+      "explanation": "The consonantal form is authoritative, but its short vowels are not marked. The Urdu witness confirms only ح-ب-ي-ش, while the collateral Usd al-Ghaba entry reads the different consonantal form خنيس and therefore cannot resolve the vocalization. “Hubaysh” is retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0185:5f22dcc716a75836"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

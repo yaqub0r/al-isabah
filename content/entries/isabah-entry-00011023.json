@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011023",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11023,
+  "title": {
+    "english": "Habba,",
+    "arabic_observed": "حبّة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011023-segment-0001",
+      "volume": 8,
+      "scan_page": 79,
+      "printed_page": 78,
+      "reader_page": 3991,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3991",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0079:69b3beba92911587",
+      "arabic": "١١٠٢٣- حبّة ،\nبفتح أولها وزن برة، بنت عمرو بن حصن الأنصارية. ذكرها ابن سعد في المبايعات.",
+      "english": "11023—Habba,\n\nwith a fatha on its first letter, on the pattern of Burra; daughter of 'Amr ibn Hisn, the Ansari woman. Ibn Sa'd mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "496883323b1458f65f03bdc594ce0c778f76fe7489dd25a75d27484ab8f5c8d0",
+      "english_sha256": "1f7ec1c62c6f88ddf1c71e62bf3df15a0b54d9e376b10c4dd2e80d663707e827",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "برة",
+      "english": "Burra",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

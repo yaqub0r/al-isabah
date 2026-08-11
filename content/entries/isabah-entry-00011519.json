@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011519",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11519,
+  "title": {
+    "english": "Amra bint Yazid al-Kilabiyya.(3)",
+    "arabic_observed": "عمرة بنت يزيد الكلابيّة «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011519-segment-0001",
+      "volume": 8,
+      "scan_page": 248,
+      "printed_page": 247,
+      "reader_page": 4160,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4160",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0248:3d2d89bab4de13b0",
+      "arabic": "١١٥١٩- عمرة بنت يزيد الكلابيّة «٣»\n. ذكرها ابن إسحاق في رواية يونس بن بكير فيمن تزوّج النبيّ ﵌، وتزوّج عمرة بنت يزيد إحدى نساء بني أبي بكر بن كلاب ثم من بني الوحيد، وكانت تزوّجت الفضل بن العباس بن عبد المطّلب فطلّقها، ثم طلّقها رسول اللَّه ﵌ [قبل أن يدخل بها] «٤» وقيل في نسبها عمرة بنت يزيد بن عبيد بن أوس بن كلاب.",
+      "english": "11519—Amra bint Yazid al-Kilabiyya.(3)\n\nIbn Ishaq mentioned her, in the recension of Yunus ibn Bukayr, among the women whom the Prophet, may Allah bless him and grant him peace, married. He married Amra bint Yazid, one of the women of Banu Abi Bakr ibn Kilab, specifically of Banu al-Wahid. She had previously married al-Fadl ibn al-Abbas ibn Abd al-Muttalib, but he divorced her. The Messenger of Allah, may Allah bless him and grant him peace, then divorced her [before consummating the marriage with her].(4) Her lineage is also given as Amra bint Yazid ibn Ubayd ibn Aws ibn Kilab.",
+      "arabic_sha256": "3dcfd8818d849e9586018be6b89ddffeea5e4df6281f4f0c2988c1ba8597055b",
+      "english_sha256": "f633a9203a0e3d6286bee450935686c8234d2437d558a13c905bb446987fabab",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة بنت يزيد الكلابيّة",
+      "english": "Amra bint Yazid al-Kilabiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن بكير",
+      "english": "Yunus ibn Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني أبي بكر بن كلاب",
+      "english": "Banu Abi Bakr ibn Kilab",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني الوحيد",
+      "english": "Banu al-Wahid",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الفضل بن العباس بن عبد المطّلب",
+      "english": "al-Fadl ibn al-Abbas ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرة بنت يزيد بن عبيد بن أوس بن كلاب",
+      "english": "Amra bint Yazid ibn Ubayd ibn Aws ibn Kilab",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

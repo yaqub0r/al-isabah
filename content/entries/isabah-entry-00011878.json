@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011878",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11878,
+  "title": {
+    "english": "Hunayda bint Sa'sa'a ibn Najiya al-Tamimiyya al-Mujashi'iyya",
+    "arabic_observed": "هنيدة بنت صعصعة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011878-segment-0001",
+      "volume": 8,
+      "scan_page": 352,
+      "printed_page": 351,
+      "reader_page": 4264,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4264",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0352:f2194a056d0a2fdd",
+      "arabic": "١١٨٧٨- هنيدة بنت صعصعة\nبن ناجية التميميّة المجاشعيّة، أخت غالب والد الفرزدق، وهي زوج الزبرقان بن بدر.\nلها إدراك، ولها ذكر في قصّة الحطيئة مع الزّبرقان بن بدر في خلافة أبي بكر، وكانت تدعى ذات الخمار «١» .\nوذكر أبو عبيدة أنها كانت تقول: من جاء بأربعة يحلّ لها أن تضع عندهم خمارها بمثل أربعتي: أبي صعصعة، وأخي غالب، وزوجي الزّبرقان، وخالي الأقرع بن حابس.\nالقسم الرابع",
+      "english": "11878—Hunayda bint Sa'sa'a ibn Najiya al-Tamimiyya al-Mujashi'iyya\n\nShe was the sister of Ghalib, the father of al-Farazdaq, and the wife of al-Zibriqan ibn Badr.\n\nShe lived during the Prophet's time and is mentioned in the account of al-Hutay'a and al-Zibriqan ibn Badr during the caliphate of Abu Bakr. She was known as Dhat al-Khimar, “the Woman of the Veil.”[1]\n\nAbu 'Ubayda mentioned that she used to say: “Who can produce four men comparable to my four, before whom she may lawfully remove her veil: my father Sa'sa'a, my brother Ghalib, my husband al-Zibriqan, and my maternal uncle al-Aqra' ibn Habis?”\n\nTHE FOURTH SECTION",
+      "arabic_sha256": "40436e809a187c84368414f4506ea1450b6389819eecbd492d32ab4192150c5e",
+      "english_sha256": "f222df20910db43b13cea2f47db3cbfb62d36e7c12d4c264de1a52de65fbc851",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "هنيدة بنت صعصعة بن ناجية التميمية المجاشعية",
+      "english": "Hunayda bint Sa'sa'a ibn Najiya al-Tamimiyya al-Mujashi'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "غالب",
+      "english": "Ghalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفرزدق",
+      "english": "al-Farazdaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبرقان بن بدر",
+      "english": "al-Zibriqan ibn Badr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحطيئة",
+      "english": "al-Hutay'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ذات الخمار",
+      "english": "Dhat al-Khimar",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عبيدة",
+      "english": "Abu 'Ubayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "صعصعة",
+      "english": "Sa'sa'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأقرع بن حابس",
+      "english": "al-Aqra' ibn Habis",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

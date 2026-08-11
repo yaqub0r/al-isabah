@@ -1,0 +1,135 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011026",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11026,
+  "title": {
+    "english": "Habiba bint Jahsh.²",
+    "arabic_observed": "حبيبة بنت جحش «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011026-segment-0001",
+      "volume": 8,
+      "scan_page": 80,
+      "printed_page": 79,
+      "reader_page": 3992,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3992",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0080:3c3192bef1033fa3",
+      "arabic": "١١٠٢٦- حبيبة بنت جحش «٢»\n. ذكرها ابن سعد، وقال: هي أم حبيب. وهي شقيقة زينب أيضا، وهي المستحاضة، قال بعض المحدثين: يقلب اسمها فيقول أم حبيبة. ثم أخرج من طريق ابن أبي ذئب، عن الزّهريّ، عن عروة، عن عائشة- أن أم حبيبة بنت جحش استحيضت سبع سنين، وكانت تحت عبد الرحمن بن عوف. قال الواقدي كذا ... وذكرها ابن عبد البر، وقال: قاله قوم، وأن كنيتها أم حبيب، يعني بلا هاء، قال: والأشهر أنها أم حبيبة، كذا قال. واستدركها في الكنى.\n(١) الثقات ٣/ ١٠٠، تجريد أسماء الصحابة ٢/ ٢٥٧، تلقيح فهوم أهل الأثر ٣٧٩، بقي بن مخلد ١٠١٣، تعجيل المنفعة ٥٥٥.\n(٢) أسد الغابة ت ٦٨٣٤، الاستيعاب ت ٣٣٣٣.",
+      "english": "11026—Habiba bint Jahsh.²\n\nIbn Sa'd mentioned her and said: “She is Umm Habib.” She was also a full sister of Zaynab, and she was the woman who suffered nonmenstrual bleeding. Some hadith scholars transpose her name and say, “Umm Habiba.” He then transmitted, through Ibn Abi Dhi'b, from al-Zuhri, from Urwa, from Aisha, that Umm Habiba bint Jahsh suffered nonmenstrual bleeding for seven years and was married to Abd al-Rahman ibn Awf. al-Waqidi gave it in this form ... Ibn Abd al-Barr also mentioned her and said: “A group said this and held that her kunyah was Umm Habib”—that is, without the final h. He said: “The better-known form is Umm Habiba.” That is what he said. He also included her as a supplementary entry in the section on kunyahs.\n\n¹ al-Thiqat, 3/100; al-Tajrid, 2/257; Talqih Fuhum Ahl al-Athar, 379; Baqi ibn Makhlad, 1013; Ta'jil al-Manfa'a, 555.\n\n² Usd al-Ghaba, entry 6834; al-Isti'ab, entry 3333.",
+      "arabic_sha256": "2c20cb333f2c0e4cba99f39ff2f5bbed89a50183635f7681199f38bdecdd7a5b",
+      "english_sha256": "cda7b13a421ac062b64831e5b3bd025425cbabfd72ba0f6c079b0c0878a75a19",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة بنت جحش",
+      "english": "Habiba bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيب",
+      "english": "Umm Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي ذئب",
+      "english": "Ibn Abi Dhi'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عوف",
+      "english": "Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبد البر",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "work"
+    },
+    {
+      "arabic": "تعجيل المنفعة",
+      "english": "Ta'jil al-Manfa'a",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

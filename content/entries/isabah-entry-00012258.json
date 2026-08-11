@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012258",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12258,
+  "title": {
+    "english": "Umm Muta' al-Aslamiyya (6):",
+    "arabic_observed": "أم مطاع الأسلمية «٦»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012258-segment-0001",
+      "volume": 8,
+      "scan_page": 475,
+      "printed_page": 474,
+      "reader_page": 4387,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4387",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0475:11ef9a2168013d2a",
+      "arabic": "١٢٢٥٨- أم مطاع الأسلمية «٦»\n: قال أبو عمر: مدنية، حديثها عند عطاء بن أبي مروان، عن أبيه، عنها، قال: وروى عنها أنها شهدت خيبر مع رسول اللَّه ﵌ فأسهم لها كسهم رجل، وفي ذلك نظر، وشهودها خيبر صحيح. انتهى.\nولم يزد ابن مندة على قوله أم مطاع. روى حديثها عطاء بن أبي مروان، عن أبيه.",
+      "english": "12258 — Umm Muta' al-Aslamiyya (6):\n\nAbu Umar said: “She was from Medina. Her hadith is transmitted by 'Ata ibn Abi Marwan, from his father, from her.” He said: “It was also narrated from her that she attended Khaybar with the Messenger of Allah (may Allah bless him and grant him peace), and he allotted her a share like that of a man. That is open to question, but her attendance at Khaybar is sound.” End quote.\n\nIbn Manda added nothing beyond saying: “Umm Muta'. 'Ata ibn Abi Marwan narrated her hadith from his father.”",
+      "arabic_sha256": "86443169a71fbd36e339514e22463b293304fff412d750697daa4e8b66320afa",
+      "english_sha256": "1066883dc345a71cc7fc2b2f7f3c127894e886075699fae118a5a50dab8ac903",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم مطاع الأسلمية",
+      "english": "Umm Muta' al-Aslamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "مدنية",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "عطاء بن أبي مروان",
+      "english": "'Ata ibn Abi Marwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

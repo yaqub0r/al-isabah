@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010856",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10856,
+  "title": {
+    "english": "Umayma bint Ruqayqa",
+    "arabic_observed": "أميمة بنت رقيقة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010856-segment-0001",
+      "volume": 8,
+      "scan_page": 33,
+      "printed_page": 32,
+      "reader_page": 3945,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3945",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0033:4fd52b895dd47e6e",
+      "arabic": "١٠٨٥٦- أميمة بنت رقيقة\nبنت أبي صيفي بن هاشم بن عبد مناف «١»، وهي أخت مخرمة بن نوفل لأمه، وأمهما رقيقة صاحبة الرؤيا في استسقاء عبد المطلب.\nفرّق أبو نعيم- تبعا للطبرانيّ- بينهما وبين التي قبلها، وأخرج في ترجمة هذه حديث ابن جريج عن حكيمة بنت أميمة عن أمها أميمة بنت رقيقة، قالت: كان للنّبيّ ﷺ قدح من عيدان يبول فيه، قال: واسم والد حكيمة حكيم، ولم يرو عن حكيمة إلا ابن جريج.\nقلت: سيأتي قريبا أن والد هذه أنصاري، وهو مما يؤيد قول من فرق بينهما، وأما ابن السكن فجعلهما واحدة.",
+      "english": "10856 — Umayma bint Ruqayqa\n\nRuqayqa was the daughter of Abu Sayfi ibn Hashim ibn Abd Manaf. (1) Umayma was the maternal sister of Makhrama ibn Nawfal; their mother was Ruqayqa, the woman who had the dream concerning Abd al-Muttalib's prayer for rain.\n\nAbu Nu'aym—following al-Tabarani—distinguished her from the preceding woman. In her entry, he transmitted the hadith of Ibn Jurayj, from Hukayma bint Umayma, from her mother, Umayma bint Ruqayqa, who said: “The Prophet, may Allah bless him and grant him peace, had a wooden vessel in which he would urinate.” He said: “Hukayma's father was named Hakim, and no one narrated from Hukayma except Ibn Jurayj.”\n\nI say: It will shortly be mentioned that Hukayma's father was an Ansari, which supports the view of those who distinguished the two women. Ibn al-Sakan, however, regarded them as one woman.",
+      "arabic_sha256": "4d24621d9b9f7b357c514ad38ea4fa130ec9184c8b6b00ccafa8d92b1ecd3838",
+      "english_sha256": "ed89f40c49c35c7b45b4e109079638913b5a4a6e3630abcfac19055a88209e43",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رقيقة",
+      "english": "Ruqayqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "مخرمة بن نوفل",
+      "english": "Makhrama ibn Nawfal",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد المطلب",
+      "english": "Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن جريج",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "حكيمة بنت أميمة",
+      "english": "Hukayma bint Umayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "حكيم",
+      "english": "Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن السكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

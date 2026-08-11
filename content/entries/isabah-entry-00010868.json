@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010868",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10868,
+  "title": {
+    "english": "Umayma bint Qays",
+    "arabic_observed": "أميمة بنت قيس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010868-segment-0001",
+      "volume": 8,
+      "scan_page": 35,
+      "printed_page": 34,
+      "reader_page": 3947,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3947",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0035:f93ed50f5abcc3d8",
+      "arabic": "١٠٨٦٨- أميمة بنت قيس\nبن أبي الصلت الغفارية «٢» .\nذكرها ابن سعد، وقال: أسلمت وبايعت بعد الهجرة، وشهدت مع النبي ﷺ خيبر، وذكرها حديثها في الحيض، وسأذكر ما وقع من الاختلاف فيها في القسم الرابع.",
+      "english": "10868—Umayma bint Qays\n\nibn Abu al-Salt al-Ghifariyya.²\n\nIbn Sa'd mentioned her and said: She embraced Islam and pledged allegiance after the Hijra, and she was present with the Prophet—may Allah bless him and grant him peace—at Khaybar. He also mentioned her hadith concerning menstruation. I shall relate the disagreement concerning her in the fourth section.",
+      "arabic_sha256": "a6f16a20f37dfdadd37711d798431c99f6517500e35115b4d3eed20a17f4d703",
+      "english_sha256": "ccceaea408c4d420ea974e13476f607c049730b457ab5a4b441928765f5f2105",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    },
+    {
+      "arabic": "الهجرة",
+      "english": "Hijra",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

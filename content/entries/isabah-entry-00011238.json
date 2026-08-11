@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011238",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11238,
+  "title": {
+    "english": "Zaynab bint Abi Rafi' (2)",
+    "arabic_observed": "زينب بنت أبي رافع «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011238-segment-0001",
+      "volume": 8,
+      "scan_page": 159,
+      "printed_page": 158,
+      "reader_page": 4071,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4071",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0159:f252c3d00282df58",
+      "arabic": "١١٢٣٨- زينب بنت أبي رافع «٢»\n، مولى رسول اللَّه ﷺ.\nقالت: رأيت فاطمة بنت رسول اللَّه ﷺ أتت بابنيها إلى النبي ﷺ في شكواه التي توفي فيها. فقلت: يا رسول اللَّه، هذان ابناك فورّثهما. فقال: «أمّا حسن فإنّ له هيبتي وسؤددي، وأمّا حسين فإنّ له جودي وجرأتي» «٣» .\nأخرجه ابن مندة، من رواية إبراهيم بن حمزة الزبيري، عن إبراهيم بن حسن بن علي الرافعي، عن أبيه، عن جدته زينب.\nوإبراهيم ضعيف.\nوأخرجه أبو نعيم، من طريق يعقوب بن حميد، عن إبراهيم الرافعي، وقال في رواية:\nحدثتني بنت أبي رافع عن فاطمة بنت رسول اللَّه ﷺ أنها أتت، قال: وهذا هو الصواب.\nقلت: الزّبيريّ أحفظ من ابن حميد، وإن كانت زينب أدركت فاطمة حتى سمعت منها فقد أدركت النبي ﷺ، لأن فاطمة لم تبق بعده إلا قليلا.",
+      "english": "11238 — Zaynab bint Abi Rafi' (2)\n\nHer father was a client of the Messenger of Allah, may Allah bless him and grant him peace.\n\nShe said: “I saw Fatima, daughter of the Messenger of Allah, may Allah bless him and grant him peace, bring her two sons to the Prophet, may Allah bless him and grant him peace, during the illness from which he died. I said, ‘O Messenger of Allah, these are your two sons, so make them your heirs.’ He said, ‘As for Hasan, he possesses my dignity and my nobility; as for Husayn, he possesses my generosity and my boldness.’” (3)\n\nIbn Manda transmitted it through the narration of Ibrahim ibn Hamza al-Zubayri, from Ibrahim ibn Hasan ibn Ali al-Rafi'i, from his father, from his grandmother Zaynab.\n\nIbrahim is weak.\n\nAbu Nu'aym transmitted it by way of Ya'qub ibn Humayd, from Ibrahim al-Rafi'i. In one version he said: “The daughter of Abu Rafi' related to me, from Fatima, daughter of the Messenger of Allah, may Allah bless him and grant him peace, that she came…” He said: “This is the correct version.”\n\nI said: Al-Zubayri had a more reliable memory than Ibn Humayd. If Zaynab lived long enough to meet Fatima and hear from her, then she lived long enough to meet the Prophet, may Allah bless him and grant him peace, because Fatima survived him for only a short time.",
+      "arabic_sha256": "81dbbdd406565091356d6ace6d332217b5d9940cbfd597960d71b24ad90e501c",
+      "english_sha256": "d2b34f2517cac2f2243975339557318db90780d7944cd68a9558625cedccda29",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "زينب بنت أبي رافع / زينب / بنت أبي رافع",
+      "english": "Zaynab bint Abi Rafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو رافع",
+      "english": "Abu Rafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت رسول اللَّه ﷺ",
+      "english": "Fatima bint Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "حسن",
+      "english": "Hasan",
+      "kind": "person"
+    },
+    {
+      "arabic": "حسين",
+      "english": "Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن حمزة الزبيري / الزبيري",
+      "english": "Ibrahim ibn Hamza al-Zubayri",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن حسن بن علي الرافعي / إبراهيم الرافعي / إبراهيم",
+      "english": "Ibrahim ibn Hasan ibn Ali al-Rafi'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "يعقوب بن حميد / ابن حميد",
+      "english": "Ya'qub ibn Humayd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

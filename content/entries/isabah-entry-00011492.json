@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011492",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11492,
+  "title": {
+    "english": "Umara bint Hubasha",
+    "arabic_observed": "عمارة بنت حباشة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011492-segment-0001",
+      "volume": 8,
+      "scan_page": 243,
+      "printed_page": 242,
+      "reader_page": 4155,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4155",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0243:1e8ea87983cbdbf4",
+      "arabic": "١١٤٩٢- عمارة بنت حباشة\nبن جبير. ذكرها ابن سعد في المبايعات.",
+      "english": "11492—Umara bint Hubasha\n\nibn Jubayr. Ibn Sa'd mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "0662d77c9ed97e8cc68cc56ed81c38ef20de70c340a98e25efd5d44ef6caa0d5",
+      "english_sha256": "45c16e914994bca0c73a285a6f60b518f57434e7e798fd656fdd488fb6bf201b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "جبير",
+      "english": "Jubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012138",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12138,
+  "title": {
+    "english": "Umm Abd Allah bint Abu Duma:",
+    "arabic_observed": "أم عبد اللَّه بنت أبي دومى:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012138-segment-0001",
+      "volume": 8,
+      "scan_page": 429,
+      "printed_page": 428,
+      "reader_page": 4341,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4341",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0429:c656a103def0737c",
+      "arabic": "١٢١٣٨- أم عبد اللَّه بنت أبي دومى:\nامرأة أبي موسى. بعد هذه.",
+      "english": "12138—Umm Abd Allah bint Abu Duma:\n\nThe wife of Abu Musa. She appears after this entry.",
+      "arabic_sha256": "3ce3aa21f6f21032c9c770129d311299f82cd1f0fbe3031aaec7e7b9429f1a13",
+      "english_sha256": "19d2c36f155cf455e8ad83014d7d65ba8e4bef4ff61f5b77af9cdb24b305a365",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم عبد اللَّه بنت أبي دومى",
+      "english": "Umm Abd Allah bint Abu Duma",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

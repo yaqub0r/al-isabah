@@ -1,0 +1,426 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011191",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11191,
+  "title": {
+    "english": "Ramlah bint Abi Sufyan",
+    "arabic_observed": "رملة بنت أبي سفيان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011191-segment-0001",
+      "volume": 8,
+      "scan_page": 141,
+      "printed_page": 140,
+      "reader_page": 4053,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4053",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0141:10ca4d77a9520638",
+      "arabic": "١١١٩١- رملة بنت أبي سفيان\nبن صخر بن حرب بن أمية بن عبد شمس الأموية «٢»، زوج النبي ﷺ، تكنى أم حبيبة، وهي بها أشهر من اسمها، وقيل: بل اسمها هند، ورملة أصحّ، أمها صفية بنت أبي العاص بن أمية.\nولدت قبل البعثة بسبعة عشر عاما، تزوّجها حليفهم عبيد اللَّه، بالتصغير، ابن جحش ابن رئاب بن يعمر الأسدي، من بني أسد بن خزيمة، فأسلما، ثم هاجرا إلى الحبشة، فولدت له حبيبة فبها كانت تكنى. وقيل: إنما ولدتها بمكة وهاجرت وهي حامل بها إلى الحبشة.\nوقيل: ولدتها بالحبشة وتزوج حبيبة داود بن عروة بن مسعود، ولما تنصر زوجها عبيد اللَّه بن جحش، وارتد عن الإسلام فارقها.\nفأخرج ابن سعد من طريق إسماعيل بن عمرو بن سعيد الأموي، قال: قالت أم حبيبة:\nرأيت في المنام كأنّ زوجي عبيد اللَّه بن جحش بأسوإ صورة، ففزعت فأصبحت فإذا به قد تنصر، فأخبرته بالمنام فلم يحفل به وأكبّ على الخمر حتى مات. فأتاني آت في نومي، فقال: يا أمير المؤمنين، ففزعت فما هو إلا أن انقضت عدتي، فما شعرت إلا برسول النجاشي يستأذن، فإذا هي جارية له يقال لها أبرهة، فقالت: إن الملك يقول لك: وكلي من\n(١) أسد الغابة ت ٦٩٣١.\n(٢) الثقات ٣/ ١٣١، أعلام النساء ١/ ٣٩٧، الكاشف ٣/ ٧١، تنوير قلوب المسلمين ٦٨، ١٤٦، السمط الثمين ١١١.",
+      "english": "11191—Ramlah bint Abi Sufyan\n\nibn Sakhr ibn Harb ibn Umayya ibn Abd Shams, the Umayyad woman, (2) wife of the Prophet—may Allah bless him and grant him peace. Her kunya was Umm Habiba, by which she was better known than by her personal name. Some say instead that her name was Hind, but Ramlah is the sounder view. Her mother was Safiyya bint Abi al-As ibn Umayya.\n\nShe was born seventeen years before the beginning of the prophetic mission. She married their confederate, Ubayd Allah—in the diminutive form—ibn Jahsh ibn Ri'ab ibn Ya'mar al-Asadi, of Banu Asad ibn Khuzayma. They embraced Islam and then migrated to Abyssinia. She bore him Habiba, after whom she took her kunya. It is said that she bore her in Mecca before migrating to Abyssinia. Another report says that she left Mecca for Abyssinia while pregnant with her and bore her there; Habiba married Dawud ibn Urwa ibn Mas'ud. When her husband, Ubayd Allah ibn Jahsh, became a Christian and apostatized from Islam, he separated from her.\n\nIbn Sa'd related through Isma'il ibn Amr ibn Sa'id al-Umawi that Umm Habiba said:\n\n“I saw in a dream that my husband, Ubayd Allah ibn Jahsh, was in the worst form. I became frightened, and when morning came, I found that he had become a Christian. I told him about the dream, but he paid it no heed and gave himself over to wine until he died. Then someone came to me in my sleep and said, ‘O Mother of the Believers!’ I was startled. No sooner had my waiting period ended than I found the Negus's messenger asking permission to enter. It was a slave girl of his called Abraha. She said, ‘The king says to you: Appoint someone who—’”\n\n(1) Usd al-Ghaba, entry 6931.\n\n(2) al-Thiqat, 3/131; A'lam al-Nisa', 1/397; al-Kashif, 3/71; Tanwir Qulub al-Muslimin, 68, 146; al-Simt al-Thamin, 111.",
+      "arabic_sha256": "d1e43905fa165d315e5b2ef23c8665e9ec51d66ab67827059d15d156314744a5",
+      "english_sha256": "2e32fd1f5a1748385a02d4e3c2709c7bd56b719d9542646150677bbb912caf5f",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011191-segment-0002",
+      "volume": 8,
+      "scan_page": 142,
+      "printed_page": 141,
+      "reader_page": 4054,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4054",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0142:4d673445d58cb21c",
+      "arabic": "يزوجك. فأرسلت إلى خالد بن سعيد بن العاص بن أمية فوكلته، فأعطيت أبرهة سوارين من فضة، فلما كان العشي أمر النجاشي جعفر بن أبي طالب فحمد اللَّه وأثنى عليه وتشهد، ثم قال: أما بعد فإن رسول اللَّه ﷺ كتب إليّ أن أزوجه أم حبيبة فأجبت، وقد أصدقتها عنه أربعمائة دينار، ثم سكب الدنانير، فخطب خالد، فقال: قد أجبت إلى ما دعا إليه رسول اللَّه ﷺ وزوجته أم حبيبة، وقبض الدنانير، وعمل لهم النجاشي طعاما، فأكلوا.\nقالت أم حبيبة: فلما وصل إليّ المال أعطيت أبرهة منه خمسين دينارا، قالت: فردّتها علي، وقالت: إن الملك عزم علي بذلك، وردّت على ما كنت أعطيتها أولا، ثم جاءتني من الغد بعود وورس وعنبر وزباد «١» كثير، فقدمت به معي على رسول اللَّه ﷺ.\nوروى ابن سعد أن ذلك كان سنة سبع، وقيل كان سنة ست، والأول أشهر.\nومن طريق الزهري أنّ الرسول إلى النجاشي بعث بها مع شرحبيل بن حسنة. ومن طريق أخرى أن الرسول إلى النجاشي بذلك كان عمرو بن أمية الضمريّ.\nوحكى ابن عبد البرّ أن الّذي عقد لرسول اللَّه ﷺ عليها عثمان بن عفان. ومن طريق عبد الواحد بن أبي عون، قال: لما بلغ أبا سفيان أن النبي ﷺ نكح ابنته قال: هو الفحل لا يقدع أنفه «٢» .\nوذكر الزّبير بن بكّار بسند له عن إسماعيل بن عمرو بن أمية، عن أم حبيبة نحو ما تقدم، وقيل نزلت في ذلك: عَسَى اللَّهُ أَنْ يَجْعَلَ بَيْنَكُمْ وَبَيْنَ الَّذِينَ عادَيْتُمْ مِنْهُمْ مَوَدَّةً [الممتحنة: ٧]، وهذا بعيد، فإن ثبت فيكون العقد عليها كان قبل الهجرة إلى المدينة، أو يكون عثمان جدده بعد أن قدمت المدينة، وعلى ذلك يحمل قول من قال: إن النبيّ ﷺ إنما تزوجها بعد أن قدمت المدينة، روى ذلك عن قتادة، قال: وعمل لهم عثمان وليمة لحم، وكذا حكى عن عقيل، عن الزهري، وفيما ذكر عن قتادة ردّ على دعوى ابن حزم الإجماع على أن النبي ﷺ إنما تزوّج أم حبيبة وهي بالحبشة، وقد تبعه على ذلك جماعة آخرهم أبو الحسن بن الأثير في أسد الغابة، فقال: لا اختلاف بين أهل السير في ذلك، إلا ما وقع عند مسلم أن أبا سفيان لما أسلم طلب منه رسول اللَّه ﷺ أن يزوّجه إياها، فأجابه إلى ذلك.\nوهو وهم من بعض الرواة، وفي جزمه بكونه وهما نظر، فقد أجاب بعض الأئمة باحتمال أن\n(١) الزّباد: بنت معروف، قال ابن سيده: والزبّاد والزّبدى والزّباد كله نبات سهلي له ورق عراض وقد ينبت في الجلد، يأكله الناس، وهو طيّب. اللسان ٣/ ١٨٠٣.\n(٢) أصل القدع: الكف والمنع يقال: قدعت الفحل وهو أن يكون غير كريم، فإذا أراد ركوب الناقة الكريمة ضرب أنفه بالرمح أو غيره حتى يرتدع وينكف، ويروى بالراء. النهاية ٤/ ٢٤.",
+      "english": "to marry you.” So I sent for Khalid ibn Sa'id ibn al-'As ibn Umayya and appointed him as my representative, and I gave Abraha two silver bracelets. When evening came, the Negus instructed Ja'far ibn Abi Talib, who praised and extolled Allah and recited the testimony of faith. He then said: “To proceed: the Messenger of Allah, may Allah bless him and grant him peace, has written to me asking me to marry Umm Habiba to him. I have consented, and on his behalf I have assigned her a marriage gift of four hundred dinars.” He then poured out the dinars. Khalid delivered the marriage address and said: “I have accepted what the Messenger of Allah, may Allah bless him and grant him peace, has called for, and I have married Umm Habiba to him.” He took possession of the dinars, and the Negus prepared food for them, which they ate.\n\nUmm Habiba said: “When the money reached me, I gave Abraha fifty dinars from it. She returned them to me and said, ‘The king has strictly charged me concerning that.’ She also returned to me what I had given her at first. Then, the next day, she brought me a large quantity of aloeswood, wars, ambergris, and civet. I brought it with me when I came to the Messenger of Allah, may Allah bless him and grant him peace.”\n\nIbn Sa'd related that this took place in the year seven. It is also said that it was in the year six, but the former is better known.\n\nThrough al-Zuhri, it is related that the envoy to the Negus sent her with Shurahbil ibn Hasana. By another route, the envoy to the Negus concerning this matter is said to have been 'Amr ibn Umayya al-Damri.\n\nIbn 'Abd al-Barr reported that the one who concluded her marriage contract with the Messenger of Allah, may Allah bless him and grant him peace, was 'Uthman ibn 'Affan. Through 'Abd al-Wahid ibn Abi 'Awn, it is related that when Abu Sufyan learned that the Prophet, may Allah bless him and grant him peace, had married his daughter, he said: “He is the stallion whose nose is not struck.”\n\nAl-Zubayr ibn Bakkar mentioned, with a chain of transmission of his own, from Isma'il ibn 'Amr ibn Umayya, from Umm Habiba, a report similar to the foregoing. It is also said that the following was revealed concerning this: “It may be that Allah will establish affection between you and those of them toward whom you have shown enmity” [al-Mumtahana: 7]. This is unlikely. If it is established, then her marriage contract would have taken place before the migration to Medina, or 'Uthman would have renewed it after she arrived in Medina. On this basis may be understood the statement of those who said that the Prophet, may Allah bless him and grant him peace, married her only after she arrived in Medina. This was related from Qatada, who said: “And 'Uthman prepared for them a wedding feast of meat.” The same was reported from 'Uqayl, from al-Zuhri.\n\nWhat has been related from Qatada refutes Ibn Hazm's claim of consensus that the Prophet, may Allah bless him and grant him peace, married Umm Habiba only while she was in Abyssinia. A group of others followed him in this, the last of them being Abu al-Hasan ibn al-Athir in Usd al-Ghaba, where he said: “There is no disagreement among the scholars of the prophetic biography concerning that, apart from Muslim's report that when Abu Sufyan embraced Islam, the Messenger of Allah, may Allah bless him and grant him peace, asked him to give her to him in marriage, and he agreed to do so.”\n\nThis is an error on the part of one of the transmitters. Yet his categorical assertion that it is an error is open to question, for some of the leading scholars responded that it was possible that—\n\n(1) al-zabad: a well-known plant. Ibn Sidah said: “al-zabbad, al-zubda, and al-zabad are all names for a lowland plant with broad leaves. It may also grow on hard ground. People eat it, and it is wholesome.” al-Lisan, 3/1803.\n\n(2) The basic meaning of qad' is restraining and preventing. It is said, “I warded off the stallion,” when the stallion is not of noble stock and, upon attempting to mount a noble she-camel, is struck on the nose with a spear or something else until it is deterred and draws back. The expression is also transmitted with the letter ra'. al-Nihaya, 4/24.",
+      "arabic_sha256": "4d673445d58cb21cd4782e1d940c3bf85aa31c3eadddaf2ea91d4e9dd36978f9",
+      "english_sha256": "2c342eb74cccac193f83ba249753fd4eb63a8dea47ebe176037e01d6d18306e2",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011191-segment-0003",
+      "volume": 8,
+      "scan_page": 143,
+      "printed_page": 142,
+      "reader_page": 4055,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4055",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0143:cdb30876b9a6bd18",
+      "arabic": "يكون أبو سفيان أراد تجديد العقد، نعم، لا خلاف أنه ﷺ دخل على أم حبيبة قبل إسلام أبي سفيان.\nوقال ابن سعد: أخبرنا محمد بن عمر، حدثنا محمد بن عبد اللَّه، عن الزهري، قال:\nقدم أبو سفيان المدينة، فأراد أن يزيد في الهدنة، فدخل على ابنته أم حبيبة، فلما ذهب ليجلس على فراش رسول اللَّه ﷺ طوته دونه، فقال: يا بنية، أرغبت بهذا الفراش عني أم بي عنه؟ قالت: بل هو فراش رسول اللَّه ﷺ، وأنت امرؤ نجس مشرك، فقال: لقد أصابك بعدي شرّ.\nأخبرنا محمّد بن عمر، أخبرنا عبد اللَّه بن جعفر، عن عبد الواحد بن أبي عون، قال:\nلما بلغ أبا سفيان بن حرب نكاح النبي ﷺ ابنته قال: ذلك الفحل لا يقدع أنفه.\nروت أم حبيبة عن النبي ﷺ أحاديث. وعن زينب بنت جحش أم المؤمنين.\nروت عنها بنتها حبيبة، وأخواها: معاوية، وعتبة، وابن أخيها عبد اللَّه بن عتبة بن أبي سفيان، وأبو سفيان بن سعيد بن المغيرة بن الأخنس الثقفي، وهو ابن أختها، ومولياها:\nسالم بن سوال، وأبو الجراح، وصفية بنت شيبة، وزينب بنت أم سلمة، وعروة بن الزبير، وأبو صالح السمان، وآخرون.\nوأخرج ابن سعد، من طريق عوف بن الحارث، عن عائشة، قالت: دعتني أم حبيبة عند موتها، فقالت: قد كان يكون بيننا ما يكون بين الضرائر، فتحللينني من ذلك فحللتها، واستغفرت لها، فقالت لي: سررتني سرّك اللَّه، وأرسلت إلى أم سلمة بمثل ذلك، وماتت بالمدينة سنة أربع وأربعين، جزم بذلك ابن سعد، وأبو عبيد. وقال ابن حبان، وابن قانع:\nسنة اثنتين. وقال ابن أبي خيثمة: سنة تسع وخمسين، وهو بعيد. واللَّه أعلم.",
+      "english": "It may be that Abu Sufyan intended to renew the marriage contract. Indeed, there is no disagreement that the Prophet—may Allah bless him and grant him peace—consummated his marriage with Umm Habiba before Abu Sufyan embraced Islam.\n\nIbn Sa'd said: Muhammad ibn Umar informed us: Muhammad ibn Abd Allah narrated to us, from al-Zuhri, who said:\n\nAbu Sufyan came to Medina seeking to extend the truce. He entered upon his daughter Umm Habiba. When he went to sit on the bedding of the Messenger of Allah—may Allah bless him and grant him peace—she folded it away from him. He said, “My daughter, did you deem this bedding too good for me, or me too good for it?” She replied, “Rather, it is the bedding of the Messenger of Allah—may Allah bless him and grant him peace—and you are an impure polytheist.” He said, “Evil has indeed befallen you since you left me.”\n\nMuhammad ibn Umar informed us: Abd Allah ibn Ja'far informed us, from Abd al-Wahid ibn Abi Awn, who said:\n\nWhen Abu Sufyan ibn Harb learned that the Prophet—may Allah bless him and grant him peace—had married his daughter, he said, “That is a stallion whose nose is not struck to drive him away.”\n\nUmm Habiba transmitted hadiths from the Prophet—may Allah bless him and grant him peace—and from Zaynab bint Jahsh, Mother of the Believers.\n\nThose who transmitted from her included her daughter Habiba; her two brothers, Mu'awiya and Utba; her nephew Abd Allah ibn Utba ibn Abi Sufyan; Abu Sufyan ibn Sa'id ibn al-Mughira ibn al-Akhnas al-Thaqafi, who was her sister's son; her two clients, Salim ibn Sawal and Abu al-Jarrah; Safiyya bint Shayba; Zaynab bint Umm Salama; Urwa ibn al-Zubayr; Abu Salih al-Samman; and others.\n\nIbn Sa'd related, through Awf ibn al-Harith, from Aisha, who said: “Umm Habiba summoned me as she was dying and said, ‘Between us there used to occur what occurs between co-wives, so absolve me of that.’ I absolved her and asked forgiveness for her. She said to me, ‘You have made me happy; may Allah make you happy.’ She sent the same message to Umm Salama.” She died in Medina in the year forty-four. Ibn Sa'd and Abu Ubayd stated this categorically. Ibn Hibban and Ibn Qani' said: in the year forty-two. Ibn Abi Khaythama said: in the year fifty-nine, but that is unlikely. Allah knows best.",
+      "arabic_sha256": "937d77dfbf15019ec4f97e5e2015e00ecc713e9b26de449597906bceb5bee0b2",
+      "english_sha256": "e9100851bb54c4daf9a943c303b8510e5143a75cd0408c806a421dec74566fd9",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأموية",
+      "english": "Banu Umayya",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند",
+      "english": "Hind",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت أبي العاص بن أمية",
+      "english": "Safiyya bint Abi al-As ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو أسد بن خزيمة",
+      "english": "Banu Asad ibn Khuzayma",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "حبيبة",
+      "english": "Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "داود بن عروة بن مسعود",
+      "english": "Dawud ibn Urwa ibn Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسماعيل بن عمرو بن سعيد الأموي",
+      "english": "Isma'il ibn Amr ibn Sa'id al-Umawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم المؤمنين",
+      "english": "Mother of the Believers",
+      "kind": "other"
+    },
+    {
+      "arabic": "النجاشي",
+      "english": "the Negus",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبرهة",
+      "english": "Abraha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تنوير قلوب المسلمين",
+      "english": "Tanwir Qulub al-Muslimin",
+      "kind": "work"
+    },
+    {
+      "arabic": "السمط الثمين",
+      "english": "al-Simt al-Thamin",
+      "kind": "work"
+    },
+    {
+      "arabic": "خالد بن سعيد بن العاص بن أمية",
+      "english": "Khalid ibn Sa'id ibn al-'As ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "النجاشي",
+      "english": "Negus",
+      "kind": "person"
+    },
+    {
+      "arabic": "جعفر بن أبي طالب",
+      "english": "Ja'far ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "شرحبيل بن حسنة",
+      "english": "Shurahbil ibn Hasana",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن أمية الضمري",
+      "english": "'Amr ibn Umayya al-Damri",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبد البر",
+      "english": "Ibn 'Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن عفان",
+      "english": "'Uthman ibn 'Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الواحد بن أبي عون",
+      "english": "'Abd al-Wahid ibn Abi 'Awn",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سفيان",
+      "english": "Abu Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسماعيل بن عمرو بن أمية",
+      "english": "Isma'il ibn 'Amr ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الممتحنة",
+      "english": "al-Mumtahana",
+      "kind": "work"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "قتادة",
+      "english": "Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "عقيل",
+      "english": "'Uqayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حزم",
+      "english": "Ibn Hazm",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الحسن بن الأثير",
+      "english": "Abu al-Hasan ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سيده",
+      "english": "Ibn Sidah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللسان",
+      "english": "al-Lisan",
+      "kind": "work"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو سفيان بن حرب",
+      "english": "Abu Sufyan ibn Harb",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ / رسول اللَّه ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عمر",
+      "english": "Muhammad ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن عبد اللَّه",
+      "english": "Muhammad ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن جعفر",
+      "english": "Abd Allah ibn Ja'far",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الواحد بن أبي عون",
+      "english": "Abd al-Wahid ibn Abi Awn",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت جحش",
+      "english": "Zaynab bint Jahsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عتبة",
+      "english": "Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عتبة بن أبي سفيان",
+      "english": "Abd Allah ibn Utba ibn Abi Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سفيان بن سعيد بن المغيرة بن الأخنس الثقفي",
+      "english": "Abu Sufyan ibn Sa'id ibn al-Mughira ibn al-Akhnas al-Thaqafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سالم بن سوال",
+      "english": "Salim ibn Sawal",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الجراح",
+      "english": "Abu al-Jarrah",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت شيبة",
+      "english": "Safiyya bint Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت أم سلمة",
+      "english": "Zaynab bint Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة بن الزبير",
+      "english": "Urwa ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو صالح السمان",
+      "english": "Abu Salih al-Samman",
+      "kind": "person"
+    },
+    {
+      "arabic": "عوف بن الحارث",
+      "english": "Awf ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عبيد",
+      "english": "Abu Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن قانع",
+      "english": "Ibn Qani'",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي خيثمة",
+      "english": "Ibn Abi Khaythama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "سالم بن سوال",
+      "explanation": "The printed consonantal form سوال is unvocalized. The Urdu witness confirms the same spelling but supplies no vowels, and the collateral searches do not identify this transmitter. “Salim ibn Sawal” is therefore retained conservatively, but its exact vocalization remains unverified.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0143:cdb30876b9a6bd18"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011782",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11782,
+  "title": {
+    "english": "Mawhiba:",
+    "arabic_observed": "موهبة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011782-segment-0001",
+      "volume": 8,
+      "scan_page": 323,
+      "printed_page": 322,
+      "reader_page": 4235,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4235",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0323:486da78c7c7272c2",
+      "arabic": "١١٧٨٢- موهبة:\nمولاة النّبيّ ﵌.\nوقع ذكرها في حديث أبي نضرة الغفاريّ في قصّة إسلامه، ووقع الحديث في الجزء الرابع من حديث إسماعيل الصّفار،\nمن طريق ابن لهيعة، عن موسى بن وردان، عن أبي نضرة الغفاريّ ... فذكر الحديث، وفيه: فدعا موهبة بعيرا منها فحلبها فسقاني، فكأني لم أشرب شيئا، ثم دعا بأخرى إلى أن قال: فغضبت موهبة، وأبغضتني، وفيه: «الكافر يأكل في سبعة أمعاء» .",
+      "english": "11782—Mawhiba:\n\nA female client of the Prophet (may Allah bless him and grant him peace).\n\nShe is mentioned in the hadith of Abu Nadra al-Ghifari concerning the story of his acceptance of Islam. The hadith occurs in the fourth part of the Hadith of Isma'il al-Saffar, by way of ibn Lahi'a, from Musa ibn Wardan, from Abu Nadra al-Ghifari ... He related the hadith, in which it says: “Then he had Mawhiba bring one of the she-camels; he milked it and gave me to drink, yet it was as though I had drunk nothing. Then he called for another,” until he said: “Mawhiba became angry and detested me.” It also contains: “The unbeliever eats with seven intestines.”",
+      "arabic_sha256": "b2e5657b0fb6b70f1b627e04dffd290b4d44138ad6b1aa75ac98beba18b40773",
+      "english_sha256": "4c0c10f16ed1da9b3fb34916ece529c8f87655ba89d7e20d5a239483153893c3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "موهبة",
+      "english": "Mawhiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نضرة الغفاريّ",
+      "english": "Abu Nadra al-Ghifari",
+      "kind": "person"
+    },
+    {
+      "arabic": "حديث إسماعيل الصّفار",
+      "english": "Hadith of Isma'il al-Saffar",
+      "kind": "work"
+    },
+    {
+      "arabic": "إسماعيل الصّفار",
+      "english": "Isma'il al-Saffar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن لهيعة",
+      "english": "ibn Lahi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن وردان",
+      "english": "Musa ibn Wardan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

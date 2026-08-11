@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010839",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10839,
+  "title": {
+    "english": "Ama bint Abi al-Hakam,",
+    "arabic_observed": "أمة بنت أبي الحكم ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010839-segment-0001",
+      "volume": 8,
+      "scan_page": 28,
+      "printed_page": 27,
+      "reader_page": 3940,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3940",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0028:9f9c9401b3f90f85",
+      "arabic": "١٠٨٣٩- أمة بنت أبي الحكم ،\nأو بنت الحكم «٢»، تأتي في القسم الأخير.\n(١) أسد الغابة: ت ٦٧٢٥.\n(٢) تقريب التهذيب ٢/ ٥٩٠، تجريد أسماء الصحابة ٢/ ١٤٧، تهذيب التهذيب ١٢/ ٤٠١، الكاشف ٣/ ٤٦٥، تهذيب الكمال ٣/ ١٦٧٨.",
+      "english": "10839—Ama bint Abi al-Hakam,\n\nor bint al-Hakam.² She will appear in the final section.\n\n¹ Usd al-Ghaba: entry 6725.\n\n² Taqrib al-Tahdhib 2/590; al-Tajrid 2/147; Tahdhib al-Tahdhib 12/401; al-Kashif 3/465; Tahdhib al-Kamal 3/1678.",
+      "arabic_sha256": "62f172ab6f2a70f98760e022979fe63575a9bc9da0261ae9c60a2f3f4a1b61a6",
+      "english_sha256": "bf580f544dbf7034db7053cd2cf9216661f0c0536470c44ae7e2c3010f4765e5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أمة بنت أبي الحكم",
+      "english": "Ama bint Abi al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010911",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10911,
+  "title": {
+    "english": "Umama bint Abi al-Hakam al-Ghifariyya,",
+    "arabic_observed": "أمامة بنت أبي الحكم الغفارية"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010911-segment-0001",
+      "volume": 8,
+      "scan_page": 44,
+      "printed_page": 43,
+      "reader_page": 3956,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3956",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0044:c3f95d25d7387978",
+      "arabic": "١٠٩١١- أمامة بنت أبي الحكم الغفارية\nويقال آمنة. روى عنها ابنها حكيم، كذا في التّجريد، ولم أر في أصوله إلا أمة بنت أبي الحكم، كذا في أسد الغابة، نقلا عن ابن عبد البر، وأبي موسى، فأما أبو عمر فإنه قال:\nأمة بنت أبي الحكم الغفارية، ويقال أمية. روى عنها ابنها سليمان بن سحيم حديثها عن النبي ﷺ في القدر.\nوأما أبو موسى فقال: عن المستغفري مثل ما في الترجمة، لكن لم يقل: ويقال أمية.\nوزاد: قال الخطيب: أمية بنت أبي الصلت، يعني بضم الهمزة وبالياء مصغرا، قال: وقال أبو عبد اللَّه، يعني ابن مندة في التاريخ: آمنة بنت أبي الصلت، يعني بالمد والنون، وكذا قال\n(١) أسد الغابة: ت ٦٧١٠، الاستيعاب ت ٣٢٧٣.\n(٢) أسد الغابة ت ٦٧١٧، الاستيعاب ت ٣٢٧٨.\n(٣) الثقات ٣/ ٢٣، أعلام النساء ١/ ٥٣، الدر المنثور ٣٦، الكاشف ٣/ ١٦٤ تجريد أسماء الصحابة ٢/ ٢٤٥، تقريب التهذيب ٢/ ١٩، تهذيب التهذيب ٢/ ٣٩٩، أزمنة التاريخ الإسلامي ٩٦٣، تهذيب الكمال ٣/ ١٦٧٨، حلية الأولياء ٢/ ٧٦، خلاصة تذهيب تهذيب الكمال ٣/ ٣٧٥، بقي بن مخلد ٤٢.\n(٤) أسد الغابة ت ٦٧٢١، الاستيعاب ت ٣٢٨٠.",
+      "english": "10911 — Umama bint Abi al-Hakam al-Ghifariyya,\n\nalso said to be Amina. Her son Hakim transmitted from her. So it appears in al-Tajrid, but in its source texts I have seen only Ama bint Abi al-Hakam. The same appears in Usd al-Ghaba, transmitted from Ibn Abd al-Barr and Abu Musa. As for Abu Umar, he said:\n\n“Ama bint Abi al-Hakam al-Ghifariyya, also said to be Umayya. Her son Sulayman ibn Suhaym transmitted from her a report that she related from the Prophet—may Allah bless him and grant him peace—concerning divine decree.”\n\nAs for Abu Musa, he transmitted from al-Mustaghfiri the same as what appears in the heading, but did not say, “also said to be Umayya.”\n\nHe added: “Al-Khatib said: ‘Umayya bint Abi al-Salt’”—meaning with a damma on the initial hamza and with a ya, in the diminutive form. He said: “Abu Abd Allah”—meaning Ibn Manda, in al-Tarikh—“said: ‘Amina bint Abi al-Salt’”—meaning with a long initial vowel and a nun. The same was also said by—\n\n[1] Usd al-Ghaba, entry 6710; al-Isti'ab, entry 3273.\n\n[2] Usd al-Ghaba, entry 6717; al-Isti'ab, entry 3278.\n\n[3] al-Thiqat 3/23; A'lam al-Nisa' 1/53; al-Durr al-Manthur 36; al-Kashif 3/164; al-Tajrid 2/245; Taqrib al-Tahdhib 2/19; Tahdhib al-Tahdhib 2/399; Azminat al-Tarikh al-Islami 963; Tahdhib al-Kamal 3/1678; Hilyat al-Awliya' 2/76; Khulasat Tadhhib Tahdhib al-Kamal 3/375; Baqi ibn Makhlad 42.\n\n[4] Usd al-Ghaba, entry 6721; al-Isti'ab, entry 3280.",
+      "arabic_sha256": "d65b56c07e92f756adbdf9f15fe7aa6615e3eb6b2bf4d7aba07b54f1b4d27516",
+      "english_sha256": "001f2c27092c1ce965686349fa57a8c1cf39683554d7d15713d315051dfea671",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010911-segment-0002",
+      "volume": 8,
+      "scan_page": 45,
+      "printed_page": 44,
+      "reader_page": 3957,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3957",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0045:f8691340f1d96bd8",
+      "arabic": "عبد الغني، يعني في المشتبه، قال: وخالفهم الطبراني وغيره، فجعلوها فيمن لم يسمّ، ثم\nساق الحديث من رواية الطبراني، عن حجاج بن عمران السدومي، عن يحيى بن خلف، عن عبد الأعلى، عن محمد بن إسحاق، عن سليمان بن سحيم، عن أمه بنت أبي الحكم الغفارية: سمعت رسول اللَّه ﷺ يقول: «إنّ الرّجل ليدنو من الجنّة حتّى ما يكون بينه وبينها إلّا ذراع فيتباعد عنها أبعد من صنعاء» «١» .\nقلت: وهذا الحديث هو الّذي أشار إليه أبو عمر أنه في القدر، ولكن تبين من كلام أبي موسى أن أبا عمر حرّف لفظ أمّه، فقرأه أمة، بفتحتين مخففا، يظنّه اسما، وإنما هو صفة، وهو بضم أوله وتشديد الميم، قال سليمان قال: حدثتني أمّي، ثم نسبها إلى أبيها ولم يسمّها، وسيأتي عن الواقدي- أنها أم علي.\nواقتضى كلام أبي موسى أنّ بنت أبي الحكم وبنت أبي الصلت واحدة، وقد ظهر من رواية غير عبد الأعلى أنّ في قوله: سمعت رسول اللَّه ﷺ وهما، وأنه سقطت من السند الصحابية بعد بنت أبي الحكم.\nوقد تيقّظ أبو موسى لذلك، فذكر أنّ أبا داود أخرج من طريق ابن إسحاق، عن سليمان بن سحيم، عن أمة بنت أبي الصلت، عن امرأة من غفار- حديثا آخر. وهذه المرأة الغفارية ذكر السّهيليّ أنّ اسمها ليلى، وأنها امرأة أبي ذرّ الغفاريّ، وسيأتي في حرف اللام أنّ أبا عمر ترجم لليلى الغفارية.\nوذكر السّهيليّ أيضا عن أبي الوليد أنّ اسم أبي الصلت الحكم، وكأنّ بعض الرواة قلب، فقال: بنت أبي الحكم، وهو الصلت.\nقلت: فعلى هذا النسب للرواية عن ليلى الغفارية لها صحبة سواء كان اسمها أمة أو أمية أو أمامة أو آمنة، وسواء كان أبوها الحكم أو الصلت أو أبا الحكم أو أبا الصلت. فكأن بعض الرواة وهم في إسقاط الصحابية، فصار: سمعت رسول اللَّه ﷺ منسوبا للتابعية غلطا، وإنما قلت ذلك، لأنّ مخرج الحديث واحدة.\nوقد ذكرت أميمة بنت قيس بن أبي الصلت وحديثها في قصة أخرى، وإن كان في سنده سليمان بن سحيم، وذكرت أيضا أمية بنت أبي قيس وحديثها في قصة أخرى، وليس في السند مع ذلك سليمان بن سحيم، فاحتمال التعدّد في هاتين قريب، بخلاف من تقدم ذكرها. والعلم عند اللَّه تعالى.\n(١) أخرجه أحمد في المسند ٤/ ٦٤، ٥/ ٣٧٧. قال الهيثمي في الزوائد ١٠/ ٣٠٠ رواه أحمد ورجاله رجال الصحيح.",
+      "english": "Abd al-Ghani—meaning in al-Mushtabih—said: “Al-Tabarani and others disagreed with them and placed her among those who were not named.” He then cited the hadith through al-Tabarani's transmission, from Hajjaj ibn Imran al-Sadumi, from Yahya ibn Khalaf, from Abd al-A'la, from Muhammad ibn Ishaq, from Sulayman ibn Suhaym, from his mother, the daughter of Abu al-Hakam al-Ghifariyya: “I heard the Messenger of Allah, may Allah bless him and grant him peace, say: ‘A man may indeed draw so near to Paradise that only a cubit remains between him and it, and then he moves away from it farther than Sanaa.’” (1)\n\nI say: This is the hadith to which Abu Umar alluded as being about divine decree. It is clear from Abu Musa's words, however, that Abu Umar altered the word ummihi (“his mother”), reading it as Amah—with two short a-vowels and without gemination—and supposing it to be a personal name. It is actually a descriptive designation, with its first letter bearing a u-vowel and the mim doubled. Sulayman said, “My mother related to me”; he then traced her lineage to her father without naming her. It will be related from al-Waqidi that she was Umm Ali.\n\nAbu Musa's words imply that the daughter of Abu al-Hakam and the daughter of Abu al-Salt were one and the same. It has become evident from a transmission other than that of Abd al-A'la that the words “I heard the Messenger of Allah, may Allah bless him and grant him peace” contain an error, and that the female Companion following the daughter of Abu al-Hakam was omitted from the chain of transmission.\n\nAbu Musa was alert to this, and mentioned that Abu Dawud transmitted, by way of Ibn Ishaq, from Sulayman ibn Suhaym, from Amah bint Abu al-Salt, from a woman of Ghifar, another hadith. Al-Suhayli stated that this Ghifari woman was named Layla and that she was the wife of Abu Dharr al-Ghifari. It will be related under the letter lam that Abu Umar gave Layla al-Ghifariyya a biographical entry.\n\nAl-Suhayli also related from Abu al-Walid that the name of Abu al-Salt was al-Hakam. It appears that one of the transmitters inverted it and said “the daughter of Abu al-Hakam,” whereas he was al-Salt.\n\nI say: On this basis, the report is transmitted from Layla al-Ghifariyya, who was a Companion, whether her name was Amah, Umayya, Umama, or Amina, and whether her father was al-Hakam, al-Salt, Abu al-Hakam, or Abu al-Salt. It appears that one of the transmitters erred by omitting the female Companion, so that “I heard the Messenger of Allah, may Allah bless him and grant him peace” was mistakenly attributed to the Successor woman. I say this only because the source of the hadith is one and the same.\n\nI have mentioned Umayma bint Qays ibn Abu al-Salt and her hadith concerning another incident, even though Sulayman ibn Suhaym occurs in its chain of transmission. I have also mentioned Umayya bint Abu Qays and her hadith concerning another incident, although Sulayman ibn Suhaym does not occur in that chain. The possibility that these latter two were distinct individuals is therefore plausible, unlike the woman mentioned previously. Knowledge rests with Allah Most High.\n\n(1) Ahmad transmitted it in Musnad Ahmad, 4/64 and 5/377. Al-Haythami said in al-Zawa'id, 10/300: “Ahmad transmitted it, and its transmitters are transmitters of the Sahih.”",
+      "arabic_sha256": "f8691340f1d96bd884a4a78aecce714eaa65dd1898f8d3129c83a9da5f13bde1",
+      "english_sha256": "0a316b2b4974d1e6216e00ba4bc146c912f4f842f547ad73b03da9254851ae03",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أسماء",
+      "english": "Asma bint Yazid ibn al-Sakan al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة بنت أبي الحكم الغفارية",
+      "english": "Umama bint Abi al-Hakam al-Ghifariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "آمنة",
+      "english": "Amina bint Abi al-Hakam al-Ghifariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "حكيم",
+      "english": "Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أمة بنت أبي الحكم",
+      "english": "Ama bint Abi al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن عبد البر",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمية",
+      "english": "Umayya bint Abi al-Hakam al-Ghifariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان بن سحيم",
+      "english": "Sulayman ibn Suhaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "الخطيب",
+      "english": "al-Khatib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمية بنت أبي الصلت",
+      "english": "Umayya bint Abi al-Salt",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عبد اللَّه",
+      "english": "Abu Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "التاريخ",
+      "english": "al-Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "آمنة بنت أبي الصلت",
+      "english": "Amina bint Abi al-Salt",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدر المنثور",
+      "english": "al-Durr al-Manthur",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "أزمنة التاريخ الإسلامي",
+      "english": "Azminat al-Tarikh al-Islami",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "حلية الأولياء",
+      "english": "Hilyat al-Awliya'",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب تهذيب الكمال",
+      "english": "Khulasat Tadhhib Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الغني",
+      "english": "Abd al-Ghani",
+      "kind": "person"
+    },
+    {
+      "arabic": "المشتبه",
+      "english": "al-Mushtabih",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجاج بن عمران السدومي",
+      "english": "Hajjaj ibn Imran al-Sadumi",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن خلف",
+      "english": "Yahya ibn Khalaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الأعلى",
+      "english": "Abd al-A'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنت أبي الحكم الغفارية",
+      "english": "bint Abu al-Hakam al-Ghifariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الجنة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "صنعاء",
+      "english": "Sanaa",
+      "kind": "place"
+    },
+    {
+      "arabic": "أمة",
+      "english": "Amah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم علي",
+      "english": "Umm Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنت أبي الصلت",
+      "english": "bint Abu al-Salt",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو داود",
+      "english": "Abu Dawud",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمة بنت أبي الصلت",
+      "english": "Amah bint Abu al-Salt",
+      "kind": "person"
+    },
+    {
+      "arabic": "غفار",
+      "english": "Ghifar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "السهيلي",
+      "english": "al-Suhayli",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليلى الغفارية",
+      "english": "Layla al-Ghifariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو ذر الغفاري",
+      "english": "Abu Dharr al-Ghifari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الوليد",
+      "english": "Abu al-Walid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الصلت",
+      "english": "Abu al-Salt",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحكم",
+      "english": "al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصلت",
+      "english": "al-Salt",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمية",
+      "english": "Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة",
+      "english": "Umama",
+      "kind": "person"
+    },
+    {
+      "arabic": "آمنة",
+      "english": "Amina",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الحكم",
+      "english": "Abu al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة بنت قيس بن أبي الصلت",
+      "english": "Umayma bint Qays ibn Abu al-Salt",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمية بنت أبي قيس",
+      "english": "Umayya bint Abu Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "the Sahih",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

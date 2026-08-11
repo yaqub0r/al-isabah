@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011780",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11780,
+  "title": {
+    "english": "Mandus bint Amr ibn Khunays[4]",
+    "arabic_observed": "مندوس بنت عمرو بن خنيس «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011780-segment-0001",
+      "volume": 8,
+      "scan_page": 322,
+      "printed_page": 321,
+      "reader_page": 4234,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4234",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0322:4ff0546c2e40fb4f",
+      "arabic": "١١٧٨٠- مندوس بنت عمرو بن خنيس «٤»\nبن لوذان بن عبد ودّ الأنصاريّة، أخت المنذر بن عمرو، وأم سلمة بن مخلد- ذكرت في المبايعات،\nوذكر ابن الأثير أنّ بنتها «٥» قريبة روت عنها أنها أتت النبيّ ﵌، فقالت: يا رسول اللَّه، النار، فقال: «ما فحواك»، فأخبرته بأمرها وهي منتقبة، فقال: «يا أمة اللَّه، اسفري، فإنّ الإسفار من الإسلام، وإنّ النّقاب من الفجور» «٦» .\nونسبه إلى ابن مندة، وأبي نعيم، ولم أره في واحد منهما.",
+      "english": "11780—Mandus bint Amr ibn Khunays[4]\nibn Lawdhan ibn Abd Wudd, the Ansari woman, sister of al-Mundhir ibn Amr and mother of Salama ibn Mukhallad. She was mentioned among the women who pledged allegiance.\n\nIbn al-Athir stated that her daughter Qariba transmitted from her that she came to the Prophet, may Allah bless him and grant him peace, and said, “O Messenger of Allah, the Fire!”[5] He asked, “What do you mean by that?” She told him about her situation while wearing a face-veil. He said, “O female servant of Allah, uncover your face, for uncovering the face is of Islam, while the face-veil is of immorality.”[6]\n\nHe attributed it to Ibn Manda and Abu Nu'aym, but I did not find it in either of their works.",
+      "arabic_sha256": "37d41ea4c7c49d1b2ae15eb656e8cefcc48b766392e5ea0bad2a284e8c85261b",
+      "english_sha256": "ec7b9ea9acc7f6605efdfd2bc6d7e458ca80801e52107058e422bbada4b02790",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النّبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصاريّة",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "المنذر بن عمرو",
+      "english": "al-Mundhir ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمة بن مخلد",
+      "english": "Salama ibn Mukhallad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "قريبة",
+      "english": "Qariba",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الإسلام",
+      "english": "Islam",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

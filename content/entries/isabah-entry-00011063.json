@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011063",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11063,
+  "title": {
+    "english": "Humayma,",
+    "arabic_observed": "حميمة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011063-segment-0001",
+      "volume": 8,
+      "scan_page": 90,
+      "printed_page": 89,
+      "reader_page": 4002,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4002",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0090:d2b7f6cc4d4ff2a9",
+      "arabic": "١١٠٦٣- حميمة ،\nبالتصغير أيضا وبدل الدال ميم، بنت صيفي بن صخر «٤»، من بني كعب بن سلمة، زوج البراء بن معرور.\nذكرها ابن سعد في المبايعات.",
+      "english": "11063—Humayma,\n\nalso in the diminutive form, with a mim in place of the dal, daughter of Sayfi ibn Sakhr,(4) of the Banu Ka'b ibn Salama, and wife of al-Bara ibn Ma'rur.\n\nIbn Sa'd mentioned her among the women who gave the pledge of allegiance.",
+      "arabic_sha256": "709c38ef5ff04fb15b561735e4779fce07ee9c15014b5371e2b1d7ff255f2959",
+      "english_sha256": "57295a1f53401fe6e79d173328b650c0826a5d3148dabfe584b7af90979e06b5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني كعب بن سلمة",
+      "english": "Banu Ka'b ibn Salama",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "البراء بن معرور",
+      "english": "al-Bara ibn Ma'rur",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

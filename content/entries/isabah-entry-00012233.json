@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012233",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12233,
+  "title": {
+    "english": "Umm Kulthum:",
+    "arabic_observed": "أم كلثوم:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012233-segment-0001",
+      "volume": 8,
+      "scan_page": 465,
+      "printed_page": 464,
+      "reader_page": 4377,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4377",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0465:001b6f3c46297f7f",
+      "arabic": "١٢٢٣٣- أم كلثوم:\nغير منسوبة- لعلها بعض من تقدّم ممن يكنى أمّ كلثوم.\nوتقدّم ذكرها في حديث شهاب بن مالك في حرف الشّين المعجمة من أسماء الرّجال.",
+      "english": "12233—Umm Kulthum:\n\nHer lineage is not given—perhaps she is one of those previously mentioned who had the kunya Umm Kulthum.\n\nShe was mentioned above in the hadith of Shihab ibn Malik, under the dotted letter shin in the section on men’s names.",
+      "arabic_sha256": "a5cb3421d766394395ba4b7a344693d660c116776ea0d666550e2cf36a28982a",
+      "english_sha256": "75d7f980b9e9553d6d520e5488e67b394d8ff032194f34a838f5091ce55a2ae5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم كلثوم",
+      "english": "Umm Kulthum",
+      "kind": "person"
+    },
+    {
+      "arabic": "شهاب بن مالك",
+      "english": "Shihab ibn Malik",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

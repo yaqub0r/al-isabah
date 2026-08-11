@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010811",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10811,
+  "title": {
+    "english": "Asma bint Kab",
+    "arabic_observed": "أسماء بنت كعب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010811-segment-0001",
+      "volume": 8,
+      "scan_page": 17,
+      "printed_page": 16,
+      "reader_page": 3929,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3929",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0017:379f2ddf42333b71",
+      "arabic": "١٠٨١١- أسماء بنت كعب\nفي أسماء بنت النعمان.",
+      "english": "10811—Asma bint Kab\n\nSee Asma bint al-Numan.",
+      "arabic_sha256": "7b7fd5198b9406f982f2e028f1d3759809a7b353ac0b38d479eb287f83ee6e00",
+      "english_sha256": "4e92c39c475ab1edd867070ed2d73c2ea2bebf9b7aa16b9b87d1adba521e6baf",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أسماء بنت كعب",
+      "english": "Asma bint Kab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت النعمان",
+      "english": "Asma bint al-Numan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

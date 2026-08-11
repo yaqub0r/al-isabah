@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011124",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11124,
+  "title": {
+    "english": "Khawla bint al-Samit [2]",
+    "arabic_observed": "خولة بنت الصامت «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011124-segment-0001",
+      "volume": 8,
+      "scan_page": 119,
+      "printed_page": 118,
+      "reader_page": 4031,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4031",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0119:c2f10e4443c25805",
+      "arabic": "١١١٢٤- خولة بنت الصامت «٢»\n. تقدمت في خولة بنت ثعلبة كذلك.",
+      "english": "11124—Khawla bint al-Samit [2]\n\nShe was mentioned above under Khawla bint Tha'laba as well.",
+      "arabic_sha256": "f18d450e7b9b6e5cdeb15d7980a9743f4d361709c5d53eed1748a1add5d6b250",
+      "english_sha256": "fb2676cee68955f40af87955b6187a6663872e25927fe2df43a92ccb6ba4c546",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خولة",
+      "english": "Khawla bint Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت ثعلبة",
+      "english": "Khawla bint Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت الصامت",
+      "english": "Khawla bint al-Samit",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

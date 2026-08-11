@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012307",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12307,
+  "title": {
+    "english": "Umm Yusuf:",
+    "arabic_observed": "أم يوسف:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012307-segment-0001",
+      "volume": 8,
+      "scan_page": 493,
+      "printed_page": 492,
+      "reader_page": 4405,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4405",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0493:a3fd6f2eee902ab3",
+      "arabic": "١٢٣٠٧- أم يوسف:\nالتي شربت بول النبيّ ﵌، تقدّم ذكرها في بركة في الباء الموحدة من أسماء النساء.\nالقسم الثاني والثالث\nخاليان.\nالقسم الرابع",
+      "english": "12307—Umm Yusuf:\n\nShe is the woman who drank the urine of the Prophet, may Allah bless him and grant him peace. She was mentioned previously under Baraka, in the letter ba with one dot, among the names of women.\n\nTHE SECOND AND THIRD SECTIONS\n\nare empty.\n\nTHE FOURTH SECTION",
+      "arabic_sha256": "7283c5f45073da24ac837b28ad8d776c1a436db9cc8d07062e39204cabfbdb06",
+      "english_sha256": "ca82841595b64d464e5e258b9fa8f3ba8ae744f5ba2e42c86a7fca4fc08205e9",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم يوسف",
+      "english": "Umm Yusuf",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "بركة",
+      "english": "Baraka",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

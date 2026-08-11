@@ -1,0 +1,135 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011448",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11448,
+  "title": {
+    "english": "Zamya' bint Ashras al-Tamimiyya:",
+    "arabic_observed": "ظمياء بنت أشرس التميمية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011448-segment-0001",
+      "volume": 8,
+      "scan_page": 227,
+      "printed_page": 226,
+      "reader_page": 4139,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4139",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0227:52856abc68939619",
+      "arabic": "١١٤٤٨- ظمياء بنت أشرس التميمية:\nمن بني بهدلة بن عوف بن سعد بن زيد مناة بن تميم.\nصحابية وقع ذكرها في حديث طويل أخرجه الفاكهيّ في كتاب مكّة، قال: حدّثني محمد بن إسماعيل بن أبي رزين، حدّثنا حجاج بن محمد، عن حفص بن عبد الرحمن الأموي، قال: زعموا أن النبيّ ﵌ لما نزل المدينة وأسلموا جعلوا يأتونه من مياههم ومنازلهم، فبعث بنو سعد بن زيد مناة بن تميم امرأة من بني بهدلة بن عوف يقال لها ظمياء بنت أشرس في ماء بالدّور، وكانت عبد القيس قد ادّعته في الجاهليّة حتى كان بينهم قتال، وبعثت عبد القيس وافدا لهم أحد بني الحارث، فسار حتى نزل ماء بالجرف، فوجد عليه امرأة قد قطع بها وهي وافدة بني سعد، فسألها العبديّ: ما بالها؟ فقالت: أردت هذا النبيّ النازل يثرب، فقطع بي دونه، فتذمّم الرّجل منها وقال: إن معنا فضلا، فحمل حملها ولم يسألها عما جاءت به حتى دفعا إلى رسول اللَّه ﵌، فتقدمت المرأة فقالت: يا رسول اللَّه، بعثني إليك بنو بهدلة بن عوف، فذكر مثل القصّة التي وقعت لأبي الحارث بن حسّان مع المرأة، وقالت: إن تمكّن عبد القيس من الدّور تهلك مضر، فقال العبديّ: أعوذ باللَّه أن أكون كوافد عاد، فذكر القصّة بطولها.\nالقسم الثاني والقسم الثالث والقسم الرابع\nلم يذكر فيها أحد.\nحرف العين المهملة\nالقسم الأول",
+      "english": "11448—Zamya' bint Ashras al-Tamimiyya:\n\nShe was of Banu Bahdala ibn Awf ibn Sa'd ibn Zayd Manat ibn Tamim.\n\nShe was a female Companion. She is mentioned in a long report recorded by al-Fakihi in Kitab Makka. He said: Muhammad ibn Isma'il ibn Abi Razin narrated to me: Hajjaj ibn Muhammad narrated to us, from Hafs ibn Abd al-Rahman al-Umawi, who said: They related that when the Prophet (may Allah bless him and grant him peace) settled in Medina and they embraced Islam, they began coming to him from their watering places and settlements. Banu Sa'd ibn Zayd Manat ibn Tamim sent a woman of Banu Bahdala ibn Awf, called Zamya' bint Ashras, concerning a watering place at al-Dur. Abd al-Qays had claimed it during the Age of Ignorance, until fighting occurred between them. Abd al-Qays also sent one of Banu al-Harith as their delegate. He traveled until he stopped at a watering place in al-Jurf, where he found a woman stranded beside it; she was the delegate of Banu Sa'd. The man of Abd al-Qays asked her what was the matter with her. She said, “I set out for this Prophet who is staying in Yathrib, but my journey was cut short before I reached him.” The man felt honor-bound toward her and said, “We have spare capacity.” He therefore carried her load, without asking what she had come for, until the two of them came before the Messenger of Allah (may Allah bless him and grant him peace). The woman stepped forward and said, “O Messenger of Allah, Banu Bahdala ibn Awf have sent me to you.” Then mention was made of a story like that which befell Abu al-Harith ibn Hassan with the woman. She said, “If Abd al-Qays gains control of al-Dur, Mudar will perish.” The man of Abd al-Qays said, “I seek refuge in Allah from being like the delegate of 'Ad.” Then the story was related at length.\n\nSECTION TWO, SECTION THREE, AND SECTION FOUR\n\nNo one is mentioned in them.\n\nTHE UNDOTTED LETTER 'AYN\n\nSECTION ONE",
+      "arabic_sha256": "12ba82cac336aa85fd7da81080e5c073453a98dde2639054590f6d237be1f562",
+      "english_sha256": "4b51f1f390f36f129987c0868289f571a87fa3c2c10f75acbab1cb22422fd935",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ظمياء بنت أشرس التميمية",
+      "english": "Zamya' bint Ashras al-Tamimiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني بهدلة بن عوف بن سعد بن زيد مناة بن تميم",
+      "english": "Banu Bahdala ibn Awf ibn Sa'd ibn Zayd Manat ibn Tamim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الفاكهي",
+      "english": "al-Fakihi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب مكّة",
+      "english": "Kitab Makka",
+      "kind": "work"
+    },
+    {
+      "arabic": "محمد بن إسماعيل بن أبي رزين",
+      "english": "Muhammad ibn Isma'il ibn Abi Razin",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجاج بن محمد",
+      "english": "Hajjaj ibn Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفص بن عبد الرحمن الأموي",
+      "english": "Hafs ibn Abd al-Rahman al-Umawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "بنو سعد بن زيد مناة بن تميم",
+      "english": "Banu Sa'd ibn Zayd Manat ibn Tamim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الدّور",
+      "english": "al-Dur",
+      "kind": "place"
+    },
+    {
+      "arabic": "عبد القيس",
+      "english": "Abd al-Qays",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني الحارث",
+      "english": "Banu al-Harith",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الجرف",
+      "english": "al-Jurf",
+      "kind": "place"
+    },
+    {
+      "arabic": "يثرب",
+      "english": "Yathrib",
+      "kind": "place"
+    },
+    {
+      "arabic": "الجاهليّة",
+      "english": "Age of Ignorance",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو الحارث بن حسّان",
+      "english": "Abu al-Harith ibn Hassan",
+      "kind": "person"
+    },
+    {
+      "arabic": "مضر",
+      "english": "Mudar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عاد",
+      "english": "'Ad",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "مكّة",
+      "english": "Mecca",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

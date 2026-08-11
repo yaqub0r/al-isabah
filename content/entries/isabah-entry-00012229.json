@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012229",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12229,
+  "title": {
+    "english": "Umm Kulthum bint Suhayl",
+    "arabic_observed": "أم كلثوم بنت سهيل"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012229-segment-0001",
+      "volume": 8,
+      "scan_page": 463,
+      "printed_page": 462,
+      "reader_page": 4375,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4375",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0463:9d20999ab2780a15",
+      "arabic": "١٢٢٢٩- أم كلثوم بنت سهيل\nبن عمرو القرشيّة العامريّة «١»، أخت أبي جندل.\nذكرها ابن إسحاق فيمن هاجر إلى الحبشة مع زوجها أبي سبرة بن أبي رهم. وقال ابن سعد: أمها فاختة بنت عامر بن نوفل بن عبد مناف. أسلمت بمكّة قديما، وبايعت وهاجرت إلى الحبشة الثّانية، وولدت لأبي سبرة محمدا، وعبد اللَّه.",
+      "english": "12229—Umm Kulthum bint Suhayl\nibn Amr, the Qurashi, of Banu Amir (1), sister of Abu Jandal.\n\nIbn Ishaq mentioned her among those who migrated to Abyssinia with her husband, Abu Sabra ibn Abi Ruhm. Ibn Sa'd said: Her mother was Fakhita bint Amir ibn Nawfal ibn Abd Manaf. She embraced Islam in Mecca at an early date, pledged allegiance, and took part in the second migration to Abyssinia. She had Muhammad and Abd Allah by Abu Sabra.",
+      "arabic_sha256": "df4a3715c8b17886bcd52e4555cc7406b20558f1776039bb4f190f3d9583be83",
+      "english_sha256": "247af670a3d81b82144190248e7ba5303093b71dfcdb40ede2b0911b87f928ba",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "القرشيّة",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "العامريّة",
+      "english": "Banu Amir",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو جندل",
+      "english": "Abu Jandal",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو سبرة بن أبي رهم",
+      "english": "Abu Sabra ibn Abi Ruhm",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاختة بنت عامر بن نوفل بن عبد مناف",
+      "english": "Fakhita bint Amir ibn Nawfal ibn Abd Manaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكّة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011607",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11607,
+  "title": {
+    "english": "Fatima bint Amr ibn Hazm:(3)",
+    "arabic_observed": "فاطمة بنت عمرو بن حزم «٣»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011607-segment-0001",
+      "volume": 8,
+      "scan_page": 277,
+      "printed_page": 276,
+      "reader_page": 4189,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4189",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0277:1180e1120e6b769b",
+      "arabic": "١١٦٠٧- فاطمة بنت عمرو بن حزم «٣»:\nذكرها أبو موسى في «الذّيل»، ونقل عن المستغفريّ أنه قال: لها صحبة. وجوز أبو موسى أنها التي قبلها.",
+      "english": "11607—Fatima bint Amr ibn Hazm:(3)\n\nAbu Musa mentioned her in al-Dhayl and related that al-Mustaghfiri said: “She was a Companion.” Abu Musa considered it possible that she was the woman immediately preceding her.",
+      "arabic_sha256": "df1bbba31ee8e6cc6f08f81bf59f25c33f39a5ea0724feb12d532ac632025f5a",
+      "english_sha256": "9127572c339d4b101a2ec4f226175b512a4c01021117b11301550c180e466129",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "فاطمة بنت عمرو بن حزم",
+      "english": "Fatima bint Amr ibn Hazm",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

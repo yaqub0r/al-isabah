@@ -1,0 +1,93 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011394",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11394,
+  "title": {
+    "english": "Shumayya",
+    "arabic_observed": "شمية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011394-segment-0001",
+      "volume": 8,
+      "scan_page": 208,
+      "printed_page": 207,
+      "reader_page": 4120,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4120",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0208:6c4b2990b5b78fb8",
+      "arabic": "١١٣٩٤- شمية ،\nجاء عنها خبر مرسل. روى حماد، عن ثابت عنها، عن النبي ﷺ حديثا. ورواه مرة أخرى، فأدخل بينها وبين النبيّ ﷺ عائشة. أخرجه أحمد في مسندة، وحكى الوجهين عن عفان، عن حماد في مسند عائشة.",
+      "english": "11394 — Shumayya\n\nA mursal report is transmitted from her. Hammad transmitted from Thabit, from her, a hadith from the Prophet—may Allah bless him and grant him peace. On another occasion he transmitted it with Aisha inserted between her and the Prophet—may Allah bless him and grant him peace. Ahmad included it in Musnad Ahmad and related both versions from Affan, from Hammad, in the Musnad of Aisha.",
+      "arabic_sha256": "318e8de16d970299f6926307bdf0cb95d20d6078a851b7ddd9b161f9eb996b2f",
+      "english_sha256": "9ce4cd36bf129c986629eb8840e691b97bb7edec8c20a48e1e2f87c51e834864",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "شمية",
+      "english": "Shumayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "حماد",
+      "english": "Hammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت",
+      "english": "Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسنده",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "عفان",
+      "english": "Affan",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند عائشة",
+      "english": "Musnad of Aisha",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "شمية",
+      "explanation": "The supplied sources give no vowel marks for this name. Shumayya is retained provisionally, but its precise vocalization remains unverified.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0208:6c4b2990b5b78fb8"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

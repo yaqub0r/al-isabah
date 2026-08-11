@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011475",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11475,
+  "title": {
+    "english": "Azza bint al-Harith al-Hilaliyya:[4]",
+    "arabic_observed": "عزة بنت الحارث الهلالية «٤»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011475-segment-0001",
+      "volume": 8,
+      "scan_page": 239,
+      "printed_page": 238,
+      "reader_page": 4151,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4151",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0239:9ddcf80dcb6b8d99",
+      "arabic": "١١٤٧٥- عزة بنت الحارث الهلالية «٤»:\nأخت ميمونة.\nذكرها أبو عمر مختصرا، وقال: لم أر من ذكرها في الصحابة.\nقلت: بل ذكرها ابن سعد في الغرائب من النساء الصحابيات مع أخواتها لأمها، وزعم أنها أخت ميمونة أم المؤمنين، وأنها تزوّجت عبد اللَّه بن مالك بن الهزم، فولدت له زيادا، وعبد الرحمن، وبرزة، فولدت برزة الأصم والد يزيد، وقيل: هي والدة يزيد بن الأصم. قال: وقيل إنّ برزة أخت عزة لأمها، قال: ويقال إن عزة كانت عند رجل من بني كلاب فولدت فيهم.",
+      "english": "11475—Azza bint al-Harith al-Hilaliyya:[4]\n\nThe sister of Maymuna.\n\nAbu Umar mentioned her briefly and said: “I have not seen anyone mention her among the Companions.”\n\nI say: On the contrary, Ibn Sa'd mentioned her among the unusual cases of female Companions, together with her maternal half-sisters. He asserted that she was the sister of Maymuna, the Mother of the Believers, and that she married Abd Allah ibn Malik ibn al-Hazm and bore him Ziyad, Abd al-Rahman, and Barza. Barza then bore al-Asamm, the father of Yazid; and it is said instead that she [Barza] was the mother of Yazid ibn al-Asamm. He said: “It is also said that Barza was Azza's maternal half-sister.” He said: “It is said that Azza was married to a man of the Banu Kilab and bore children among them.”",
+      "arabic_sha256": "97056f82fc2451664b99d8cecb84ac5dd1916d43b04aff3f1ccac82f8e0060b2",
+      "english_sha256": "d2a1f9865a2eb76fc725ed69ad145f7a7378fe55640a5507ab1866fce6c923dd",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عزة بنت الحارث الهلالية",
+      "english": "Azza bint al-Harith al-Hilaliyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمونة أم المؤمنين",
+      "english": "Maymuna",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن مالك بن الهزم",
+      "english": "Abd Allah ibn Malik ibn al-Hazm",
+      "kind": "person"
+    },
+    {
+      "arabic": "زياد",
+      "english": "Ziyad",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن",
+      "english": "Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "برزة",
+      "english": "Barza",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأصم",
+      "english": "al-Asamm",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن الأصم",
+      "english": "Yazid ibn al-Asamm",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني كلاب",
+      "english": "Banu Kilab",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

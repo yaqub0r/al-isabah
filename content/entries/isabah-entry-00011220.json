@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011220",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11220,
+  "title": {
+    "english": "Zughayba",
+    "arabic_observed": "زغيبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011220-segment-0001",
+      "volume": 8,
+      "scan_page": 151,
+      "printed_page": 150,
+      "reader_page": 4063,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4063",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0151:cbd565a185cc49c0",
+      "arabic": "١١٢٢٠- زغيبة\nتقدمت أيضا في الراء.",
+      "english": "11220—Zughayba\n\nShe too was previously mentioned under the letter ra.",
+      "arabic_sha256": "ff18c275e9fe148425396fe847a94d52b76ad64b346d88a90bab445fe1650c32",
+      "english_sha256": "c93941b52b25fb2f74d81880b0c29eafee25757971c51340dce7be6ca5da74ac",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زغيبة",
+      "english": "Zughayba",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

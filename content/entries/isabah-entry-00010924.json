@@ -1,0 +1,155 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010924",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10924,
+  "title": {
+    "english": "Barrah bint Abi Tajra'a ibn Abi Fukayha (1),",
+    "arabic_observed": "برّة بنت أبي تجراة بن أبي فكيهة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010924-segment-0001",
+      "volume": 8,
+      "scan_page": 49,
+      "printed_page": 48,
+      "reader_page": 3961,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3961",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0049:960dd5cda8447117",
+      "arabic": "١٠٩٢٤- برّة بنت أبي تجراة بن أبي فكيهة «١»\n، واسمه يسار.\nقال ابن سعد: يقولون إنهم من الأزد، ثم حالفوا بني عبد الدار. وقال ابن سعد: كان أبوها يسار يكنى أبا فكيهة. وسيأتي ذكر فكيهة، وقيل: كانوا فيما ذكر الزبير بن بكار من كندة حالفوا بني عبد الدار بمكة، وروت عن النبي ﷺ. روت عنها صفية بنت شيبة في السعي.\nروت عنها عميرة بنت عبد اللَّه بن كعب بن مالك في قصة إرضاع ثويبة رسول اللَّه ﷺ، وفيه قصة طليب بن عمير في نصرة النبي ﷺ، وسبق في ترجمة أروى بنت عبد المطلب.\nأخرجه الواقديّ، وأخرج أيضا من طريق صفية بنت شيبة عنها غيره. واختلف في صفية على حديث السعي، فرواه عن برّة، أخرجه ابن مندة وغيره، ورواه عطاء بن أبي رباح، عن صفية، عن حبيبة. وستأتي في حرف الحاء.",
+      "english": "10924 — Barrah bint Abi Tajra'a ibn Abi Fukayha (1),\nwhose name was Yasar.\n\nIbn Sa'd said, “They say that they were from al-Azd; then they allied themselves with Banu Abd al-Dar.” Ibn Sa'd also said, “Her father was Yasar and had the kunya Abu Fukayha.” Fukayha will be mentioned later. It was also said, according to what al-Zubayr ibn Bakkar mentioned, that they were from Kinda and allied themselves with Banu Abd al-Dar in Mecca. She narrated from the Prophet—may Allah bless him and grant him peace. Safiyya bint Shayba narrated from her concerning the sa'y.\n\nUmayra bint Abd Allah ibn Ka'b ibn Malik narrated from her in the account of Thuwayba's nursing of the Messenger of Allah—may Allah bless him and grant him peace. It also contains the account of Tulayb ibn Umayr's support of the Prophet—may Allah bless him and grant him peace—and this was given earlier in the entry on Arwa bint Abd al-Muttalib.\n\nal-Waqidi transmitted it. He also transmitted a different report through Safiyya bint Shayba from her. There was disagreement regarding Safiyya concerning the hadith of the sa'y: one version had her narrate it from Barrah; Ibn Manda and others transmitted this. Ata ibn Abi Rabah narrated it from Safiyya, from Habiba. She will appear under the letter ha.",
+      "arabic_sha256": "1f468e267d3d0af8d4a0fe5194e36ead2a15e02b6b3acd7f0515c4ee2cdd203e",
+      "english_sha256": "0217aa50d6afbdaad7f7b1750ff592fa413f5fbd7b297f8ca9fc42ac19d663b1",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عبد الدار",
+      "english": "Banu Abd al-Dar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبي تجراة",
+      "english": "Abu Tajra'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "كندة",
+      "english": "Kinda",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "برّة بنت أبي تجراة بن أبي فكيهة",
+      "english": "Barrah bint Abi Tajra'a ibn Abi Fukayha",
+      "kind": "person"
+    },
+    {
+      "arabic": "يسار",
+      "english": "Yasar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأزد",
+      "english": "al-Azd",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبي فكيهة",
+      "english": "Abu Fukayha",
+      "kind": "person"
+    },
+    {
+      "arabic": "فكيهة",
+      "english": "Fukayha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية بنت شيبة",
+      "english": "Safiyya bint Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عميرة بنت عبد اللَّه بن كعب بن مالك",
+      "english": "Umayra bint Abd Allah ibn Ka'b ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثويبة",
+      "english": "Thuwayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "طليب بن عمير",
+      "english": "Tulayb ibn Umayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أروى بنت عبد المطلب",
+      "english": "Arwa bint Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاء بن أبي رباح",
+      "english": "Ata ibn Abi Rabah",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيبة",
+      "english": "Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah ibn Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية",
+      "english": "Safiyya bint Abd Allah ibn Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

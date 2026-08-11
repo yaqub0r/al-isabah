@@ -1,0 +1,154 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011747",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11747,
+  "title": {
+    "english": "Muhayyah bint Khalid ibn Sinan al-Absi.(3)",
+    "arabic_observed": "محيّاة بنت خالد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011747-segment-0001",
+      "volume": 8,
+      "scan_page": 315,
+      "printed_page": 314,
+      "reader_page": 4227,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4227",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0315:e14f3cde41dd50b1",
+      "arabic": "١١٧٤٧- محيّاة بنت خالد\nبن سنان العبسيّ «٣» .\nذكرها أبو موسى في «الذّيل»،\nوساق من طريق محمد بن عمر الرّازي الحافظ، عن عمرو بن إسحاق بن العلاء، عن إبراهيم بن العلاء، حدّثنا أبو محمد القرشيّ الهاشميّ، عن هشام بن عروة، عن ابن عمارة، عن أبيه عمارة بن حزن بن شيطان بقصّة خالد بن سنان، قال: فلما بعث اللَّه محمدا أتته محياة بنت خالد فانتسبت له، فبسط لها رداءه وأجلسها عليه. وقال: «ابنة أخي نبيّ ضيّعه قومه» .\nووردت تسميتها أيضا فيما ذكره ابن الكلبيّ، قال: قال أبي: وأخبرني ابن أبي عمارة قال: أتانا خالد بن سنان فقال: يا معشر بني عبس، إنّ اللَّه أمرني بإطفاء هذه النار. قال أبي: فكان أبي هو الّذي ذهب معه، فذكر القصّة مطوّلة.\nوفي آخر الحديث قال هشام بن محمّد: فقدمت المحياة بنت خالد بن سنان على النبيّ\n(١) أسد الغابة ت (٧٢٨١) .\n(٢) أخرجه البخاري ٣/ ١١٧، ١٢٤٧، ومسلم ٢/ ٦٥٨ (٦٩/ ٩٥٤) .\n(٣) أسد الغابة ت (٧٢٨٢) .",
+      "english": "11747 — Muhayyah bint Khalid ibn Sinan al-Absi.(3)\n\nAbu Musa mentioned her in al-Dhayl.\n\nHe cited, through Muhammad ibn Umar al-Razi, the hadith master, from Amr ibn Ishaq ibn al-Ala, from Ibrahim ibn al-Ala: Abu Muhammad al-Qurashi al-Hashimi related to us, from Hisham ibn Urwah, from Ibn Umarah, from his father, Umarah ibn Hazn ibn Shaytan, the story of Khalid ibn Sinan. He said: When Allah sent Muhammad, Muhayyah bint Khalid came to him and declared her lineage to him. He spread out his cloak for her and seated her upon it. He said, “The daughter of my brother—a prophet whom his people neglected.”\n\nHer name also occurs in what Ibn al-Kalbi mentioned. He said: My father said, “And Ibn Abi Umarah informed me, saying: Khalid ibn Sinan came to us and said, ‘O assembly of Banu Abs, Allah has commanded me to extinguish this fire.’” My father said, “My father was the one who went with him.” He then related the story at length.\n\nAt the end of the hadith, Hisham ibn Muhammad said: Then Muhayyah bint Khalid ibn Sinan came to the Prophet—\n\n(1) Usd al-Ghaba, T (7281).\n\n(2) Reported by al-Bukhari, 3/117, 1247, and Muslim, 2/658 (69/954).\n\n(3) Usd al-Ghaba, T (7282).",
+      "arabic_sha256": "bc527df16a8b5a1e8f3db1754ddfa6fbf8dfe03f4727cef61d6828291de86350",
+      "english_sha256": "0db9f7ce8b0575b8b1257be18531acf50ec3fcbb9868484d82131194c3d03cdc",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011747-segment-0002",
+      "volume": 8,
+      "scan_page": 316,
+      "printed_page": 315,
+      "reader_page": 4228,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4228",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0316:5e34d4a799a7d77d",
+      "arabic": "﵌. فقال: «مرحبا بابنة أخي، نبيّ ضيّعه قومه» .\nوقد ذكرت في ترجمة خالد بن سنان لقصّته في طفئ النار طرقا كثيرة.",
+      "english": "May Allah bless him and grant him peace. He said, “Welcome to the daughter of my brother, a prophet whom his people neglected.”\n\nIn the biographical entry on Khalid ibn Sinan, I have already mentioned many transmission routes for his story concerning the extinguishing of the fire.",
+      "arabic_sha256": "c983c901e33c9051c5923376ffeec4bbd8c2f39b25ca1363628b86e124d358b5",
+      "english_sha256": "094af70313ba8376a7f06db6f6c25fb7057054bd69e90e699912c9c2594b0ab3",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "محيّاة بنت خالد بن سنان العبسيّ",
+      "english": "Muhayyah bint Khalid ibn Sinan al-Absi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "محمد بن عمر الرازي",
+      "english": "Muhammad ibn Umar al-Razi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن إسحاق بن العلاء",
+      "english": "Amr ibn Ishaq ibn al-Ala",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن العلاء",
+      "english": "Ibrahim ibn al-Ala",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو محمد القرشي الهاشمي",
+      "english": "Abu Muhammad al-Qurashi al-Hashimi",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن عروة",
+      "english": "Hisham ibn Urwah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عمارة",
+      "english": "Ibn Umarah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمارة بن حزن بن شيطان",
+      "english": "Umarah ibn Hazn ibn Shaytan",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد بن سنان",
+      "english": "Khalid ibn Sinan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الكلبي",
+      "english": "Ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عمارة",
+      "english": "Ibn Abi Umarah",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عبس",
+      "english": "Banu Abs",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "هشام بن محمد",
+      "english": "Hisham ibn Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

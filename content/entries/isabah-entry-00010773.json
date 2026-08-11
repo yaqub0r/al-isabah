@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010773",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10773,
+  "title": {
+    "english": "Amina bint Qurt ibn Khansa ibn Sinan",
+    "arabic_observed": "آمنة بنت قرط"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010773-segment-0001",
+      "volume": 8,
+      "scan_page": 6,
+      "printed_page": 5,
+      "reader_page": 3918,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3918",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0006:f373c7735745e8e2",
+      "arabic": "١٠٧٧٣- آمنة بنت قرط\nبن خنساء بن سنان الأنصارية.\nيأتي نسبها في ترجمة أختها أمامة.\nقال ابن سعد: أمهما مارية بنت القين بن كعب بن سواد، وتزوج آمنة هذه أوس بن المعلى بن لوذان، فولدت له أبا سعيد، فأسلمت آمنة، وبايعت.",
+      "english": "10773—Amina bint Qurt ibn Khansa ibn Sinan\n\nShe was of the Ansar. Her lineage will be given in the entry on her sister Umama.\n\nIbn Sa'd said: “Their mother was Mariya bint al-Qayn ibn Ka'b ibn Sawad. Aws ibn al-Mu'alla ibn Lawdhan married this Amina, and she bore him Abu Sa'id. Amina embraced Islam and pledged allegiance.”",
+      "arabic_sha256": "7f9e7a04180a0aa18bc6f97b6e8e1943d4640b93cadc2e4622d01074f709b595",
+      "english_sha256": "bf07c2c2fbc87034046fbc9410ec0dce66994126709b49bb77a6ba00b6d58410",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سعد",
+      "english": "Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "آمنة بنت قرط بن خنساء بن سنان",
+      "english": "Amina bint Qurt ibn Khansa ibn Sinan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أمامة",
+      "english": "Umama",
+      "kind": "person"
+    },
+    {
+      "arabic": "مارية بنت القين بن كعب بن سواد",
+      "english": "Mariya bint al-Qayn ibn Ka'b ibn Sawad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أوس بن المعلى بن لوذان",
+      "english": "Aws ibn al-Mu'alla ibn Lawdhan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سعيد",
+      "english": "Abu Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمة",
+      "english": "Ama",
+      "kind": "person"
+    },
+    {
+      "arabic": "آمنة",
+      "english": "Amina",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

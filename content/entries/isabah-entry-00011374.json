@@ -1,0 +1,99 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011374",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11374,
+  "title": {
+    "english": "Sawda, the wife of Abu al-Tufayl",
+    "arabic_observed": "سودة، امرأة أبي الطّفيل «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011374-segment-0001",
+      "volume": 8,
+      "scan_page": 200,
+      "printed_page": 199,
+      "reader_page": 4112,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4112",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0200:f95182c4c4f61235",
+      "arabic": "١١٣٧٤- سودة، امرأة أبي الطّفيل «٣»\n. تابعية أرسلت حديثا، فذكره أبو نعيم في الصحابة،\nفأورد من طريق عبد اللَّه بن عثمان\n(١) في أ: وتتطهر.\n(٢) أسد الغابة: ت (٧٠٠١) .\n(٣) أسد الغابة: ت (٧٠٣٧)، تجريد أسماء الصحابة ٢/ ٢٨٠.",
+      "english": "11374—Sawda, the wife of Abu al-Tufayl\n\nShe was a woman of the Successor generation who transmitted a hadith in mursal form, but Abu Nu'aym mentioned her among the Companions. He cited it through the route of Abd Allah ibn Uthman—\n\n(1) In manuscript A: “and she would purify herself.”\n\n(2) Usd al-Ghaba: entry 7001.\n\n(3) Usd al-Ghaba: entry 7037; al-Tajrid, 2/280.",
+      "arabic_sha256": "544d31f221ade67b64063e34823750782305c4a574eff71d7f67f8e9b143749b",
+      "english_sha256": "c6c918c1f5291757b1d70c9b18f97d76bed06e937e893d1596d3f1e08d9625c9",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011374-segment-0002",
+      "volume": 8,
+      "scan_page": 201,
+      "printed_page": 200,
+      "reader_page": 4113,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4113",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0201:c7a4dbbc6edd6f93",
+      "arabic": "ابن خيثم قال: دخلت على أبي الطّفيل فوجدته طيّب النفس، فقلت: لأغتنمنّ ذلك منه، فقلت: يا أبا الطفيل، النفر الّذي لعنهم رسول اللَّه ﷺ من هم؟ فهمّ أن يخبرني بهم، فقالت امرأته سودة: أما بلغك أنّ رسول اللَّه ﷺ قال: «إنّما أنا بشر فمن دعوت عليه بدعوة فاجعلها له زكاة ورحمة» «١» .\nحرف الشين المعجمة\nالقسم الأول",
+      "english": "ibn Khaytham, who said: I entered upon Abu al-Tufayl and found him in good spirits. I said to myself, “I shall take advantage of this,” and I asked, “O Abu al-Tufayl, who were those people whom the Messenger of Allah (may Allah bless him and grant him peace) cursed?” He was about to tell me who they were when his wife, Sawda, said, “Has it not reached you that the Messenger of Allah (may Allah bless him and grant him peace) said, ‘I am only a human being; so if I make a supplication against anyone, make it a purification and a mercy for him’?” [1]\n\nTHE DOTTED LETTER SHIN\n\nSECTION ONE",
+      "arabic_sha256": "1ea099d9fc9c2dbce3a28ac5e58702691d32c751e7010e6178cdaa226701351d",
+      "english_sha256": "7fabef672999975a454523a01124383110f51e6a8cff79c5972b93834b8adb60",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "سودة",
+      "english": "Sawda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الطفيل",
+      "english": "Abu al-Tufayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عثمان",
+      "english": "Abd Allah ibn Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو الطّفيل",
+      "english": "Abu al-Tufayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

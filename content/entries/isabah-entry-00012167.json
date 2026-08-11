@@ -1,0 +1,242 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012167",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12167,
+  "title": {
+    "english": "Umm Uthman al-Thaqafiyya:",
+    "arabic_observed": "أم عثمان الثقفيّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012167-segment-0001",
+      "volume": 8,
+      "scan_page": 436,
+      "printed_page": 435,
+      "reader_page": 4348,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4348",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0436:1bbcac580ca9ef55",
+      "arabic": "١٢١٦٧- أم عثمان الثقفيّة:\nوالدة عثمان بن أبي العاص الصّحابي المشهور «٣» .\nروى حديثها عبد اللَّه بن عثمان بن أبي سليمان، عن عثمان بن أبي العاص، أنها\n(١) تجريد أسماء الصحابة ٢/ ٣٢٨، بقي بن مخلد ٩٧٦، أعلام النساء ٣/ ٢٥١، تقريب التهذيب ٢/ ٦٢٢. الكاشف ٣/ ٤٩٠ تهذيب الكمال ٣/ ١٧٠٤، خلاصة تذهيب ٣/ ٤٠١، تلقيح فهوم أهل الأثر ٣٨٧، أسد الغابة ت (٧٥٣٦)، الاستيعاب ت (٣٦٤٢) .\n(٢) أخرجه ابن ماجة في السنن ٢/ ٩٩٥ عن أم ولد شيبة بلفظة كتاب المناسك (٢٥) باب السعي بين الصفا والمروة (٤٣) حديث رقم ٢٩٨٧، وأحمد في المسند ٦/ ٤٠٤، ٤٠٥ وابن أبي شيبة في المصنف ٤/ ٦٩ وأورده الهيثمي في الزوائد ٣/ ٢٥١ عن أم ولد شيبة بلفظه وقال رواه الطبراني في الكبير ورجاله رجال الصحيح وأورده المتقي الهندي في كنز العمال حديث رقم ١٢٠٤٤.\n(٣) أسد الغابة ت (٣٥٣٧)، الاستيعاب ت (٣٦٤٣) .",
+      "english": "12167—Umm Uthman al-Thaqafiyya:\n\nThe mother of Uthman ibn Abi al-As, the well-known Companion. (3)\n\nAbd Allah ibn Uthman ibn Abi Sulayman narrated her hadith from Uthman ibn Abi al-As, that she—\n\n(1) al-Tajrid, 2/328; Baqi ibn Makhlad, no. 976; A'lam al-Nisa', 3/251; Taqrib al-Tahdhib, 2/622; al-Kashif, 3/490; Tahdhib al-Kamal, 3/1704; Khulasat Tadhhib, 3/401; Talqih Fuhum Ahl al-Athar, p. 387; Usd al-Ghaba, entry 7536; al-Isti'ab, entry 3642.\n\n(2) Ibn Majah transmitted it in al-Sunan, 2/995, from Umm Walad Shayba, with that wording, in the Book of Rites (25), chapter “The Sa'y between al-Safa and al-Marwa” (43), hadith no. 2987; Musnad Ahmad, 6/404–405; and Ibn Abi Shayba in al-Musannaf, 4/69. Al-Haythami included it in al-Zawa'id, 3/251, from Umm Walad Shayba, with its wording, and said: “Al-Tabarani narrated it in al-Kabir, and its transmitters are the transmitters of the Sahih.” Al-Muttaqi al-Hindi included it in Kanz al-Ummal, hadith no. 12044.\n\n(3) Usd al-Ghaba, entry 3537; al-Isti'ab, entry 3643.",
+      "arabic_sha256": "6ef55984979e362f3c496c6a5bc6b7bccafcf9b4416b6f80976edf594a30ba8c",
+      "english_sha256": "160d6a5be405f7e6d0038672d756c7f37cdc6b9affe8b18bdb700e320bdc91b8",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012167-segment-0002",
+      "volume": 8,
+      "scan_page": 437,
+      "printed_page": 436,
+      "reader_page": 4349,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4349",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0437:a5a5a73800a82aa8",
+      "arabic": "شهدت آمنة لما ولدت النّبيّ ﵌ في قصّة طويلة أوردها ابن مندة.",
+      "english": "She was present with Amina when she gave birth to the Prophet, may Allah bless him and grant him peace, in a lengthy account related by Ibn Manda.",
+      "arabic_sha256": "eeac700734a2c41e45a28d907f647ba3d0f5d9b577ea5577965f1d75980b8382",
+      "english_sha256": "bce2439d844c396edd927fe8597ccb4480d072e60a3f40f93e78e2f51b28d15a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "التّجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطّبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم ولد شيبة",
+      "english": "Umm Walad Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الصّفا",
+      "english": "al-Safa",
+      "kind": "place"
+    },
+    {
+      "arabic": "المروة",
+      "english": "al-Marwa",
+      "kind": "place"
+    },
+    {
+      "arabic": "شيبة",
+      "english": "Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عثمان الثقفيّة",
+      "english": "Umm Uthman al-Thaqafiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن أبي العاص",
+      "english": "Uthman ibn Abi al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عثمان بن أبي سليمان",
+      "english": "Abd Allah ibn Uthman ibn Abi Sulayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب",
+      "english": "Khulasat Tadhhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "al-Sunan",
+      "kind": "work"
+    },
+    {
+      "arabic": "كتاب المناسك",
+      "english": "Book of Rites",
+      "kind": "work"
+    },
+    {
+      "arabic": "باب السعي بين الصفا والمروة",
+      "english": "The Sa'y between al-Safa and al-Marwa",
+      "kind": "work"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن أبي شيبة",
+      "english": "Ibn Abi Shayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "المصنف",
+      "english": "al-Musannaf",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "the Sahih",
+      "kind": "work"
+    },
+    {
+      "arabic": "المتقي الهندي",
+      "english": "al-Muttaqi al-Hindi",
+      "kind": "person"
+    },
+    {
+      "arabic": "كنز العمال",
+      "english": "Kanz al-Ummal",
+      "kind": "work"
+    },
+    {
+      "arabic": "آمنة",
+      "english": "Amina",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "printed_reading",
+      "arabic_span": "بلفظة",
+      "explanation": "The canonical edition prints بلفظة. The probable contextual sense is “with that wording,” but it may be a typographical form of بلفظه. The Urdu witness abbreviates the citation and therefore cannot decide the reading.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0436:1bbcac580ca9ef55"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

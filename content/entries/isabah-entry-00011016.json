@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011016",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11016,
+  "title": {
+    "english": "Jariya bint Amr ibn al-Mu'ammil",
+    "arabic_observed": "جارية بنت عمرو بن المؤمل"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011016-segment-0001",
+      "volume": 8,
+      "scan_page": 77,
+      "printed_page": 76,
+      "reader_page": 3989,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3989",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0077:6465e954ef428694",
+      "arabic": "١١٠١٦- جارية بنت عمرو بن المؤمل\nكانت ممن يعذّب في اللَّه فاشتراها أبو بكر.\nذكرها ابن سعد بعد أميمة بنت رقيقة، وقيل بريرة، مولاة عائشة، فقال: وليست هي بنت عمرو، إنما كانت أمّة لآل عمرو، فلعله كان فيه جارية بيت، بفتح الموحدة وسكون التحتانية، وهذا اللفظ يطلق على آل الرجل وعلى زوجته، فالمراد هاهنا الأول. والمعروف فيها جارية بني عمرو بن المؤمل، أو جارية بن عمرو بن المؤمل. وقد ظنها بعضهم رجلا، وصحّف، فقال: حارثة- بالمهملة والمثلثة. وباللَّه التوفيق.",
+      "english": "11016. Jariya bint Amr ibn al-Mu'ammil\n\nShe was among those who were tortured for the sake of Allah, and Abu Bakr purchased her.\n\nIbn Sa'd mentioned her after Umayma bint Ruqayqa. It has also been said that she was Barira, the freedwoman of Aisha. He said: “She is not the daughter of Amr; rather, she was a slave woman belonging to the family of Amr.” Perhaps the text read jariyat bayt (“a household's slave woman”)—with an open ba and a quiescent ya. The word bayt can be applied both to a man's family and to his wife; the former is intended here. The well-known designation for her is “the slave woman of the Banu Amr ibn al-Mu'ammil,” or “Jariya ibn Amr ibn al-Mu'ammil.” Some people thought she was a man and made a scribal misreading, calling her “Haritha”—with an undotted ha and a three-dotted tha. And Allah grants success.",
+      "arabic_sha256": "a15eb3179fad4f7cdbaf70b8a0764c9f010149ff0cbbd838cde62b25ed508e34",
+      "english_sha256": "81100d39d5f0afb9aa97040c6b496ffd141a50890d9877e4ff1c2cc52211034f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "جارية بنت عمرو بن المؤمل",
+      "english": "Jariya bint Amr ibn al-Mu'ammil",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة بنت رقيقة",
+      "english": "Umayma bint Ruqayqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "بريرة",
+      "english": "Barira",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عمرو بن المؤمل",
+      "english": "Banu Amr ibn al-Mu'ammil",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "جارية بن عمرو بن المؤمل",
+      "english": "Jariya ibn Amr ibn al-Mu'ammil",
+      "kind": "person"
+    },
+    {
+      "arabic": "حارثة",
+      "english": "Haritha",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011120",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11120,
+  "title": {
+    "english": "Khawla bint Hakim al-Ansariyya (3)",
+    "arabic_observed": "خولة بنت حكيم الأنصارية «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011120-segment-0001",
+      "volume": 8,
+      "scan_page": 118,
+      "printed_page": 117,
+      "reader_page": 4030,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4030",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0118:9bee385d262c6f90",
+      "arabic": "١١١٢٠- خولة بنت حكيم الأنصارية «٣»\n. فرّق الطّبرانيّ بينها وبين التي قبلها،\nفأخرج من طريق شعبة عن عطاء الخراساني، عن سعيد بن المسيّب، عن خولة بنت حكيم، قالت: سألت النبي ﷺ، فقلت: يا رسول اللَّه، المرأة ترى في المنام ما يرى الرجل؟ قال: «إذا رأت ذلك فلتغتسل» .\nقلت: قد وقع في بعض الأخبار أنّ أم عطية كانت تسمى خولة، وهو فيما\nأخرجه أبو نعيم، من طريق عباد بن العوام، عن حجاج بن أرطاة، حدثني الربيع بن مالك، عن أم عطية، وكانت تسمى خولة، قالت: سمعت رسول اللَّه ﷺ يقول: «من نزل منزلا فقال:\nأعوذ بكلمات اللَّه التّامّة ...» «٤» الحديث.\nوأم عطية إن كانت الأنصارية، فالمشهور أنّ اسمها نسيبة، بنون ومهملة وموحدة مصغر. ويحتمل أن يكون لها اسمان، أو أحدهما لقب، لكن هذا المتن ثبت من هذا\n(١) أخرجه أحمد في المسند ٦/ ٢٦٨ عن عائشة.\n(٢) الطّمرور: الّذي لا يملك شيئا لغة في الطّملول اللسان ٤/ ٢٧٠٣.\n(٣) تجريد أسماء الصحابة ٢/ ٢٦٤، خلاصة تذهب تهذيب الكمال ٣/ ٣٨٠.\n(٤) أخرجه العقيلي في الضعفاء ٢/ ٥٠ وأورده الهيثمي في الزوائد ١٠/ ١٣٦ عن عبد الرحمن بن عابس ... الحديث بلفظه قال الهيثمي رواه الطبراني ورجاله رجال الصحيح.",
+      "english": "11120 — Khawla bint Hakim al-Ansariyya (3)\n\nal-Tabarani distinguished her from the preceding woman. He transmitted through Shu'ba, from 'Ata' al-Khurasani, from Sa'id ibn al-Musayyib, from Khawla bint Hakim, who said: “I asked the Prophet—may Allah bless him and grant him peace—saying, ‘O Messenger of Allah, what if a woman sees in a dream what a man sees?’ He said, ‘If she sees that, let her perform the full ritual bath.’”\n\nI say: It occurs in some reports that Umm 'Atiyya was named Khawla. This is in what Abu Nu'aym transmitted through 'Abbad ibn al-'Awwam, from Hajjaj ibn Artat, who said: al-Rabi' ibn Malik related to me, from Umm 'Atiyya—who was named Khawla—who said: “I heard the Messenger of Allah—may Allah bless him and grant him peace—say: ‘Whoever stops at a place and says: I seek refuge in the perfect words of Allah…’” (4)—the hadith.\n\nIf Umm 'Atiyya was the Ansari woman, the well-known view is that her name was Nusayba—with an initial nun, an unpointed sin, and a single-dotted ba, in the diminutive form. It is possible that she had two names, or that one of them was a sobriquet. But this text has been established through this—\n\n(1) Ahmad transmitted it in Musnad Ahmad, 6/268, from Aisha.\n\n(2) al-tamrur means one who possesses nothing; it is a linguistic variant of al-tamlul. al-Lisan, 4/2703.\n\n(3) al-Tajrid, 2/264; Khulasat Tadhhib Tahdhib al-Kamal, 3/380.\n\n(4) al-'Uqayli transmitted it in al-Du'afa', 2/50. al-Haythami cited it in al-Zawa'id, 10/136, from 'Abd al-Rahman ibn 'Abis … the hadith in the same wording. al-Haythami said: “al-Tabarani transmitted it, and its transmitters are transmitters of the Sahih.”",
+      "arabic_sha256": "aea856efc4fc95e690cec13c222d1d0ca54f2de05202e40a88181b61f09ebbee",
+      "english_sha256": "b30d427c8a20abff519c8a07dc3fbed13792fcf7dc686ea958cbfe10d5beda2c",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011120-segment-0002",
+      "volume": 8,
+      "scan_page": 119,
+      "printed_page": 118,
+      "reader_page": 4031,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4031",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0119:c2f10e4443c25805",
+      "arabic": "الوجه. أخرجه أحمد، وفيه: عن خولة امرأة عثمان، يعني ابن مظعون، فظهر بهذا أن خولة امرأة عثمان كانت تكنى أم عطية، وليست أنصارية، بل هي سلمية كما تقدم، فالأنصارية غيرها.",
+      "english": "route. Ahmad transmitted it, and it contains: “from Khawla, the wife of Uthman”—meaning Ibn Maz'un. It thus became clear that Khawla, Uthman's wife, had the kunya Umm Atiyya and was not an Ansari woman; rather, she was Sulami, as stated above. Thus the Ansari woman was someone else.",
+      "arabic_sha256": "e49b69a3f945422da492e398e2115450cb920d1872baa60f4d9a13bc5260377b",
+      "english_sha256": "4147d7b36b4f121567bf13577f2708c9f081995f2551cf69dbe080b9f9335c72",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت حكيم",
+      "english": "Khawla bint Hakim ibn Umayya ibn Haritha ibn al-Awqas al-Sulamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت حكيم الأنصارية",
+      "english": "Khawla bint Hakim al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت حكيم",
+      "english": "Khawla bint Hakim al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "شعبة",
+      "english": "Shu'ba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاء الخراساني",
+      "english": "'Ata' al-Khurasani",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن المسيب",
+      "english": "Sa'id ibn al-Musayyib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عطية",
+      "english": "Umm 'Atiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "عباد بن العوام",
+      "english": "'Abbad ibn al-'Awwam",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجاج بن أرطاة",
+      "english": "Hajjaj ibn Artat",
+      "kind": "person"
+    },
+    {
+      "arabic": "الربيع بن مالك",
+      "english": "al-Rabi' ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "نسيبة",
+      "english": "Nusayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "العقيلي",
+      "english": "al-'Uqayli",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن عابس",
+      "english": "'Abd al-Rahman ibn 'Abis",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "اللسان",
+      "english": "al-Lisan",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهب تهذيب الكمال",
+      "english": "Khulasat Tadhhib Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "الضعفاء",
+      "english": "al-Du'afa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "خولة",
+      "english": "Khawla bint Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عطية",
+      "english": "Umm Atiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمية",
+      "english": "Sulami",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

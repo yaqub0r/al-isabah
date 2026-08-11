@@ -1,0 +1,179 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012153",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12153,
+  "title": {
+    "english": "Umm Abd al-Hamid:",
+    "arabic_observed": "أم عبد الحميد:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012153-segment-0001",
+      "volume": 8,
+      "scan_page": 432,
+      "printed_page": 431,
+      "reader_page": 4344,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4344",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0432:1f560dd36de26119",
+      "arabic": "١٢١٥٣- أم عبد الحميد:\nامرأة رافع بن خديج «٢» .\nذكرها الباورديّ في الصّحابة،\nوأخرج من طريق عمرو بن مرزوق، عن يحيى بن عبد الحميد بن رافع بن خديج، عن جدته امرأة رافع بن خديج، قالت: أصيب رافع يوم أحد بسهم في سرّته، فأتى النبيّ ﵌ فقال: «انزع السّهم»، فقال: «إن شئت نزعت السّهم والقطيفة، وإن شئت نزعت السّهم وتركت القطيفة وشهدت لك يوم القيامة أنّك شهيد» . فقال: «انزع السّهم، واترك القطيفة، واشهد لي يوم القيامة أنّي شهيد» .\nقال: ففعل ذلك به، فعاش حياة رسول اللَّه ﵌ وأبي بكر وعمر وعثمان، فلما كان زمن معاوية أو بعده انتقض جرحه فهلك «٣» .\nوأخرجه ابن مندة، عن الباورديّ هكذا. وأخرج الطّبرانيّ من طريق أبي الوليد\n(١) الأيم في الأصل التي لا زوج لها، بكرا كانت أو ثيبا، مطلقة كانت أو متوفى عنها. النهاية ١/ ٨٥.\n(٢) أسد الغابة ت (٧٥٢٤) .\n(٣) أخرجه أحمد في المسند ٦/ ٦ والحاكم في المستدرك ٣/ ٥٦ وذكره ابن حجر في المطالب (١٨٦٧) ٢/ ١٣٦.",
+      "english": "12153—Umm Abd al-Hamid:\n\nThe wife of Rafi ibn Khadij.²\n\nal-Bawardi mentioned her among the Companions and transmitted, by way of Amr ibn Marzuq, from Yahya ibn Abd al-Hamid ibn Rafi ibn Khadij, from his grandmother, the wife of Rafi ibn Khadij, who said: “Rafi was struck in his navel by an arrow on the day of Uhud. He came to the Prophet, may Allah bless him and grant him peace, and said, ‘Remove the arrow.’ He said, ‘If you wish, I shall remove both the arrow shaft and the arrowhead; and if you wish, I shall remove the shaft but leave the arrowhead, and I shall testify for you on the Day of Resurrection that you are a martyr.’ He said, ‘Remove the shaft, leave the arrowhead, and testify for me on the Day of Resurrection that I am a martyr.’”\n\nHe did so for him, and Rafi lived throughout the lifetimes of the Messenger of Allah, may Allah bless him and grant him peace, Abu Bakr, Umar, and Uthman. Then, in Muawiya’s time, or afterward, his wound reopened and he died.³\n\nIbn Manda transmitted it from al-Bawardi in this form. al-Tabarani also transmitted it by way of Abu al-Walid—\n\n¹ The word ayyim originally denotes a woman who has no husband, whether a virgin or previously married, and whether divorced or widowed. al-Nihaya, 1/85.\n\n² Usd al-Ghaba, entry 7524.\n\n³ It was recorded by Ahmad in Musnad Ahmad, 6/6, and by al-Hakim in al-Mustadrak, 3/56; Ibn Hajar also mentioned it in al-Matalib, no. 1867, 2/136.",
+      "arabic_sha256": "9e3907489eb54af8c000984d594961a4a9a804ffa2cc6ab37e5f56fa253112fd",
+      "english_sha256": "b0f3caf44d5c7a7eeb2ad1b67dc18f7cd01589115b182bf9b855be1b228675cd",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012153-segment-0002",
+      "volume": 8,
+      "scan_page": 433,
+      "printed_page": 432,
+      "reader_page": 4345,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4345",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0433:ab8b952361d246b1",
+      "arabic": "الطّيالسي في آخرين، عن عبد الحميد بنحوه، وقال في آخره: فعاش حتى كان في خلافة معاوية انتقض به الجرح، فمات بعد العصر.",
+      "english": "al-Tayalisi, among others, from Abd al-Hamid, with a similar report. At its end it says: “He lived until, during the caliphate of Mu'awiya, the wound reopened, and he died after the afternoon prayer.”",
+      "arabic_sha256": "0220f29a3a68cd9fbe3f1538d8a08cc9cc041c238941669a50d48ef666d6a7d6",
+      "english_sha256": "85b0957df93d9b288ae4e2095e8636ad16db10a46c73dcfd2874226243593118",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم عبد الحميد",
+      "english": "Umm Abd al-Hamid",
+      "kind": "person"
+    },
+    {
+      "arabic": "رافع بن خديج",
+      "english": "Rafi ibn Khadij",
+      "kind": "person"
+    },
+    {
+      "arabic": "الباوردي",
+      "english": "al-Bawardi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن مرزوق",
+      "english": "Amr ibn Marzuq",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن عبد الحميد بن رافع بن خديج",
+      "english": "Yahya ibn Abd al-Hamid ibn Rafi ibn Khadij",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو بكر",
+      "english": "Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Muawiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الوليد",
+      "english": "Abu al-Walid",
+      "kind": "person"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن حجر",
+      "english": "Ibn Hajar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المطالب",
+      "english": "al-Matalib",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد الحميد",
+      "english": "Abd al-Hamid",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Mu'awiya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010991",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10991,
+  "title": {
+    "english": "Jamila bint Zayd,",
+    "arabic_observed": "جميلة بنت زيد ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010991-segment-0001",
+      "volume": 8,
+      "scan_page": 70,
+      "printed_page": 69,
+      "reader_page": 3982,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3982",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0070:715e8391ef9c3d9a",
+      "arabic": "١٠٩٩١- جميلة بنت زيد ،\nأخت علبة بن زيد بن صيفي بن عمرو بن جشم بن حارثة الأنصارية» .\nبايعت النبي ﷺ.",
+      "english": "10991 — Jamila bint Zayd,\n\nsister of Ulba ibn Zayd ibn Sayfi ibn Amr ibn Jusham ibn Haritha, the Ansari woman.²\n\nShe pledged allegiance to the Prophet (may Allah bless him and grant him peace).",
+      "arabic_sha256": "2d425b8579719d2b08cbf9288b84c36feb67fb2949c6d6bf7286bd1eee931b79",
+      "english_sha256": "9f5f0838ef7650353476e6785d4e8c74d147991cdd6c7386876d0e61992f4e91",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة بنت زيد",
+      "english": "Jamila bint Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "علبة بن زيد بن صيفي بن عمرو بن جشم بن حارثة",
+      "english": "Ulba ibn Zayd ibn Sayfi ibn Amr ibn Jusham ibn Haritha",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011369",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11369,
+  "title": {
+    "english": "Salma bint Jabir",
+    "arabic_observed": "سلمى بنت جابر"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011369-segment-0001",
+      "volume": 8,
+      "scan_page": 200,
+      "printed_page": 199,
+      "reader_page": 4112,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4112",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0200:f95182c4c4f61235",
+      "arabic": "١١٣٦٩- سلمى بنت جابر\nالأحمسية. تقدمت في زينب.",
+      "english": "11369—Salma bint Jabir\n\nThe Ahmasi woman. She was previously discussed under Zaynab.",
+      "arabic_sha256": "19415583958b1792ba1690bbddef0c7f54e3c9431f4e66c23e91d91cc905d27b",
+      "english_sha256": "e4ca8b74ef6d1fe3add977f9d38d3bf087bee3f2db8a670268a11e3a25a4b632",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زينب",
+      "english": "Zaynab",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى",
+      "english": "Salma",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

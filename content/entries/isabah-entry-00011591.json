@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011591",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11591,
+  "title": {
+    "english": "Fatima bint al-Harith",
+    "arabic_observed": "فاطمة بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011591-segment-0001",
+      "volume": 8,
+      "scan_page": 271,
+      "printed_page": 270,
+      "reader_page": 4183,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4183",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0271:dd5ecaeb6c9be423",
+      "arabic": "١١٥٩١- فاطمة بنت الحارث\nبن خالد بن صخر بن عامر بن كعب «١» بن سعد بن تيم بن مرة القرشية التيمية. تقدم ذكرها في ترجمة أمها رائطة.",
+      "english": "11591—Fatima bint al-Harith\n\nibn Khalid ibn Sakhr ibn Amir ibn Ka'b[1] ibn Sa'd ibn Taym ibn Murra, the Qurashi woman of Taym. She was previously mentioned in the biography of her mother, Ra'ita.",
+      "arabic_sha256": "9530587cb202edc55fd7d47214fa67d812c1da9135938ba28de87aa4bffd38f1",
+      "english_sha256": "b44e96cd9039e63e4c84df7b6d25fa56cf62660184bb57abc96f977425883212",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "القرشية",
+      "english": "Quraysh",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "التيمية",
+      "english": "Taym",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "رائطة",
+      "english": "Ra'ita",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي",
+      "english": "Ali",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

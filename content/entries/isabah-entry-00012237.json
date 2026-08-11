@@ -1,0 +1,406 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012237",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12237,
+  "title": {
+    "english": "Umm Kulthum bint Ali",
+    "arabic_observed": "أم كلثوم بنت عليّ"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012237-segment-0001",
+      "volume": 8,
+      "scan_page": 465,
+      "printed_page": 464,
+      "reader_page": 4377,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4377",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0465:001b6f3c46297f7f",
+      "arabic": "١٢٢٣٧- أم كلثوم بنت عليّ\nبن أبي طالب «٢» الهاشميّة، أمّها فاطمة بنت النبيّ ﵌. ولدت في عهد النّبي ﵌. قال أبو عمر: ولدت قبل وفاة النّبي ﵌.\nوقال ابن أبي عمر المقدسي: حدّثني سفيان، عن\n(١) في أ: فيحرر.\n(٢) نسب قريش ٣٤٩- والمحبر ٥٣ و١٠١- والتاريخ الصغير ٥٥- والطبقات الكبرى ٨/ ٤٦٣- والسير والمغازي ٢٤٧- ٢٥٠- والمعارف ١٤٣ و١٨٥- تاريخ اليعقوبي ٢/ ١٤٩- وربيع الأبرار ٤/ ٣٠٣- العقد الفريد ٤/ ٣٦٥- المعرفة والتاريخ ١/ ٢١٤/ ٣٦١- تهذيب الأسماء واللغات ٢/ ٣٦٥- الكامل في التاريخ ٢/ ٥٣٧ وسير أعلام النبلاء ٣/ ٥٠٠- ٥٠٢- تاريخ الإسلام ١/ ١٣٧، أسد الغابة ت (٧٥٨٦)، الاستيعاب ت (٣٦٦٤) .",
+      "english": "12237—Umm Kulthum bint Ali\n\nibn Abi Talib,[2] the Hashimiyya. Her mother was Fatima, daughter of the Prophet, may Allah bless him and grant him peace. She was born during the lifetime of the Prophet, may Allah bless him and grant him peace. Abu Umar said: “She was born before the death of the Prophet, may Allah bless him and grant him peace.”\n\nIbn Abi Umar al-Maqdisi said: Sufyan related to me, from—\n\n[1] Manuscript A has fa-yuharrar: “so it should be verified.”\n\n[2] Nasab Quraysh, 349; al-Muhabbar, 53 and 101; al-Tarikh al-Saghir, 55; al-Tabaqat, 8/463; al-Siyar wa-l-Maghazi, 247–250; al-Ma'arif, 143 and 185; Tarikh al-Ya'qubi, 2/149; Rabi' al-Abrar, 4/303; al-Iqd al-Farid, 4/365; al-Ma'rifa wa-l-Tarikh, 1/214/361; Tahdhib al-Asma' wa-l-Lughat, 2/365; al-Kamil fi al-Tarikh, 2/537; Siyar A'lam al-Nubala', 3/500–502; Tarikh al-Islam, 1/137; Usd al-Ghaba, entry 7586; al-Isti'ab, entry 3664.",
+      "arabic_sha256": "e8868afcbc47b451d794bf0e181a80ea0407264a6498840c762ff5120eb5e652",
+      "english_sha256": "1af3926f81bc31130ea2eeb6101c13d7dfe411f5bbfe302ad2964244a041e63e",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012237-segment-0002",
+      "volume": 8,
+      "scan_page": 466,
+      "printed_page": 465,
+      "reader_page": 4378,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4378",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0466:0c9f16d9e66e4adc",
+      "arabic": "عمرو «١»، عن محمّد بن عليّ- أن عمر خطب إلى عليّ ابنته أم كلثوم، فذكر له صغرها، فقيل له: إنه ردك فعاوده، فقال له عليّ: أبعث بها إليك، فإن رضيت فهي امرأتك، فأرسل بها إليه، فكشف عن ساقها، فقالت: مه! لولا أنك أمير المؤمنين للطمت عينيك.\nوقال ابن وهب، عن عبد الرّحمن بن زيد بن أسلم، عن أبيه، عن جدّه: تزوّج عمر أم كلثوم على مهر أربعين ألفا. وقال الزّبير: ولدت لعمر ابنيه: زيدا، ورقية، وماتت أم كلثوم وولدها في يوم واحد، أصيب زيد في حرب كانت بين بني عديّ، فخرج ليصلح بينهم فشجّه رجل وهو لا يعرفه في الظلمة، فعاش أياما، وكانت أمه مريضة فماتا في يوم واحد.\nوذكر أبو بشر الدّولابيّ في الذّرية الطّاهرة، من طريق أبي إسحاق، عن الحسن بن الحسن بن عليّ، قال: لما تأيّمت أم كلثوم بنت عليّ عن عمر، فدخل عليها أخواها الحسن والحسين، فقالا لها: إن أردت أن تصيبي بنفسك مالا عظيما لتصيبنّ، فدخل علي فحمد اللَّه وأثنى عليه وقال: أي بنية، إن اللَّه قد جعل أمرك بيدك، فإن أحببت أن تجعليه بيدي.\nفقالت: يا أبت، إني امرأة أرغب فيما ترغب فيه النساء، وأحبّ أن أصيب من الدّنيا. فقال:\nهذا من عمل هذين، ثم قام يقول: واللَّه لا أكلّم واحدا منهما أو تفعلين! فأخذا شأنها وسألاها ففعلت، فتزوّجها عوف بن جعفر بن أبي طالب.\nوذكرها الدّار الدّارقطنيّ في كتاب الإخوة أنّ عوفا مات عنها فتزوّجها أخوه محمد، ثم مات عنها فتزوّجها أخوه عبد اللَّه بن جعفر، فماتت عنده.\nوذكر ابن سعد نحوه، وقال في آخره: فكانت تقول: إني لأستحيي من أسماء بنت عميس، مات ولداها عندي، فأتخوّف على الثّالث. قال: فهلكت عنده، ولم تلد لأحد منهم.\nوذكر ابن سعد عن أنس بن عياض، عن جعفر بن محمّد، عن أبيه- أن عمر خطب أم كلثوم إلى عليّ، فقال: إنما حبست بناتي على بني جعفر، فقال: زوّجنيها، فو اللَّه ما على ظهر الأرض رجل يرصد من كرامتها ما أرصد. قال: قد فعلت، فجاء عمر إلى المهاجرين فقال: رفئوني فرفئوه «٢»، فقالوا: بمن تزوّجت؟ قال: بنت عليّ. إن النّبيّ ﵌ قال: «كلّ نسب وسبب سيقطع يوم القيامة إلّا نسبي وسببي «٣»، وكنت قد صاهرت فأحببت هذا أيضا» .\n(١) في أ: عمير.\n(٢) الرّفاء: الالتئام والاتفاق والبركة والنماء. النهاية ٢/ ٢٤٠.\n(٣) أخرجه الحاكم ٣/ ١٤٢ وابن سعد ٨/ ٣٤٠ وانظر المجمع ١٠/ ١٧ والكنز (٣١٩١٥) (٣٧٥٨٧) .",
+      "english": "Amr,[1] from Muhammad ibn Ali, who reported that Umar asked Ali for the hand of his daughter Umm Kulthum. Ali mentioned her young age to him. Umar was told, “He has turned you down, so approach him again.” Ali said to him, “I will send her to you; if you are pleased with her, she is your wife.” He sent her to him, and Umar uncovered her lower leg. She said, “Enough! Were it not that you are the Commander of the Faithful, I would have struck you in the eyes.”\n\nIbn Wahb related from Abd al-Rahman ibn Zayd ibn Aslam, from his father, from his grandfather: Umar married Umm Kulthum for a dower of forty thousand. al-Zubayr said: She bore Umar two children, Zayd and Ruqayya. Umm Kulthum and her son died on the same day. Zayd was injured in fighting that occurred among the Banu Adi. He went out to reconcile them, and a man who did not recognize him in the darkness gashed his head. He lived for several days, while his mother was ill, and they both died on the same day.\n\nAbu Bishr al-Dulabi mentioned in al-Dhurriyya al-Tahira, by way of Abu Ishaq, from al-Hasan ibn al-Hasan ibn Ali, who said: When Umm Kulthum bint Ali was left widowed after Umar's death, her two brothers, al-Hasan and al-Husayn, came to her and said, “If you wish to secure great wealth for yourself, you surely can.” Ali then entered, praised Allah and extolled Him, and said, “My dear daughter, Allah has placed your affair in your own hands; if you wish, you may place it in mine.”\n\nShe said, “Father, I am a woman; I desire what women desire, and I would like to obtain a share of this world.” He said, “This is the doing of those two.” He then rose, saying, “By Allah, I shall not speak to either of them until you do so!” They then took the matter in hand and entreated her, and she did so. Awf ibn Ja'far ibn Abi Talib then married her.\n\nal-Daraqutni—the printed Arabic has the wording “al-dar al-Daraqutni”—mentioned her in Kitab al-Ikhwa, stating that Awf died leaving her a widow, so his brother Muhammad married her. He in turn died leaving her a widow, so his brother Abd Allah ibn Ja'far married her, and she died while married to him.\n\nIbn Sa'd mentioned something similar and said at its conclusion: She used to say, “I truly feel shy before Asma bint Umays: two of her sons have died while married to me, and I fear for the third.” He said: She died while married to him, and she bore none of them any children.\n\nIbn Sa'd also related from Anas ibn Iyad, from Ja'far ibn Muhammad, from his father, that Umar asked Ali for the hand of Umm Kulthum. Ali said, “I have reserved my daughters for the sons of Ja'far.” Umar said, “Marry her to me, for, by Allah, there is no man on the face of the earth who looks forward to the honor to be gained through her as I do.” Ali said, “I have done so.” Umar then went to the Emigrants and said, “Congratulate me,” and they congratulated him.[2] They asked, “Whom have you married?” He replied, “Ali's daughter. The Prophet, may Allah bless him and grant him peace, said: ‘Every lineage and every marital tie will be severed on the Day of Resurrection except my lineage and my marital tie.’[3] I had already established a relationship by marriage, and I wished for this as well.”\n\n[1] In manuscript A: “Umayr.”\n\n[2] al-rifa' means harmony, concord, blessing, and increase. al-Nihaya, 2/240.\n\n[3] Reported by al-Hakim, 3/142, and Ibn Sa'd, 8/340; see al-Majma', 10/17, and al-Kanz (31915), (37587).",
+      "arabic_sha256": "0c9f16d9e66e4adcd70aee142f774635f07c2bfa310db9c65e8ef897dc69d4d4",
+      "english_sha256": "b6009c8b5437be5b8f33a8d67b4a840eb8801f7910c4a0c71428dfef97544059",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012237-segment-0003",
+      "volume": 8,
+      "scan_page": 467,
+      "printed_page": 466,
+      "reader_page": 4379,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4379",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0467:83ad4c8718c1bc2b",
+      "arabic": "ومن طريق عطاء الخراساني- أنّ عمر أمهرها أربعين ألفا. وأخرج بسند صحيح أن ابن عمر صلّى على أم كلثوم وابنها زيد، فجعله مما يليه، وكبّر أربعا. وساق بسند آخر أن سعيد بن العاص هو الّذي صلّى عليهما.",
+      "english": "And through the route of Ata al-Khurasani, it is related that Umar gave her a dower of forty thousand. He also transmitted with a sound chain of transmission that Ibn Umar performed the funeral prayer over Umm Kulthum and her son Zayd, placing him on the side nearest to himself, and pronounced four takbirs. He related through another chain that Sa'id ibn al-As was the one who performed the funeral prayer over them.",
+      "arabic_sha256": "62c1f7ab68f156b4c404ec62f7dcace0aff71a9713141ab05721255c1721abfa",
+      "english_sha256": "39bc120a51b583429f5f289617e5ba1c4beae4c5a2f14b66758cfc5493974eee",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم كلثوم",
+      "english": "Umm Kulthum",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت النبيّ",
+      "english": "Fatima bint Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عمر المقدسي",
+      "english": "Ibn Abi Umar al-Maqdisi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سفيان",
+      "english": "Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "نسب قريش",
+      "english": "Nasab Quraysh",
+      "kind": "work"
+    },
+    {
+      "arabic": "المحبر",
+      "english": "al-Muhabbar",
+      "kind": "work"
+    },
+    {
+      "arabic": "التاريخ الصغير",
+      "english": "al-Tarikh al-Saghir",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبقات الكبرى",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "السير والمغازي",
+      "english": "al-Siyar wa-l-Maghazi",
+      "kind": "work"
+    },
+    {
+      "arabic": "المعارف",
+      "english": "al-Ma'arif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ اليعقوبي",
+      "english": "Tarikh al-Ya'qubi",
+      "kind": "work"
+    },
+    {
+      "arabic": "ربيع الأبرار",
+      "english": "Rabi' al-Abrar",
+      "kind": "work"
+    },
+    {
+      "arabic": "العقد الفريد",
+      "english": "al-Iqd al-Farid",
+      "kind": "work"
+    },
+    {
+      "arabic": "المعرفة والتاريخ",
+      "english": "al-Ma'rifa wa-l-Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الأسماء واللغات",
+      "english": "Tahdhib al-Asma' wa-l-Lughat",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكامل في التاريخ",
+      "english": "al-Kamil fi al-Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "سير أعلام النبلاء",
+      "english": "Siyar A'lam al-Nubala'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ الإسلام",
+      "english": "Tarikh al-Islam",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "عمرو",
+      "english": "Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمير",
+      "english": "Umayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمّد بن عليّ",
+      "english": "Muhammad ibn Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم بنت عليّ",
+      "english": "Umm Kulthum bint Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمير المؤمنين",
+      "english": "Commander of the Faithful",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن وهب",
+      "english": "Ibn Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرّحمن بن زيد بن أسلم",
+      "english": "Abd al-Rahman ibn Zayd ibn Aslam",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن أسلم",
+      "english": "Zayd ibn Aslam",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسلم",
+      "english": "Aslam",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزّبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد",
+      "english": "Zayd ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "رقية",
+      "english": "Ruqayya bint Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عديّ",
+      "english": "Banu Adi",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو بشر الدّولابيّ",
+      "english": "Abu Bishr al-Dulabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذّرية الطّاهرة",
+      "english": "al-Dhurriyya al-Tahira",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو إسحاق",
+      "english": "Abu Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن الحسن بن عليّ",
+      "english": "al-Hasan ibn al-Hasan ibn Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن",
+      "english": "al-Hasan ibn Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسين",
+      "english": "al-Husayn ibn Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عوف بن جعفر بن أبي طالب",
+      "english": "Awf ibn Ja'far ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "جعفر بن أبي طالب",
+      "english": "Ja'far ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدّارقطنيّ",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الإخوة",
+      "english": "Kitab al-Ikhwa",
+      "kind": "work"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad ibn Ja'far ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن جعفر",
+      "english": "Abd Allah ibn Ja'far ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت عميس",
+      "english": "Asma bint Umays",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس بن عياض",
+      "english": "Anas ibn Iyad",
+      "kind": "person"
+    },
+    {
+      "arabic": "جعفر بن محمّد",
+      "english": "Ja'far ibn Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني جعفر",
+      "english": "Banu Ja'far",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "المهاجرين",
+      "english": "the Emigrants",
+      "kind": "other"
+    },
+    {
+      "arabic": "النّبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المجمع",
+      "english": "al-Majma'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكنز",
+      "english": "al-Kanz",
+      "kind": "work"
+    },
+    {
+      "arabic": "عطاء الخراساني",
+      "english": "Ata al-Khurasani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عمر",
+      "english": "Ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كلثوم",
+      "english": "Umm Kulthum bint Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد",
+      "english": "Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن العاص",
+      "english": "Sa'id ibn al-As",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "textual anomaly",
+      "arabic_span": "الدّار الدّارقطنيّ",
+      "explanation": "The printed canonical Arabic contains al-dar immediately before al-Daraqutni. The supplied Urdu and collateral witnesses do not contain the sentence, so it cannot be determined whether this is a simple typographical duplication or another corruption. The English therefore identifies al-Daraqutni while explicitly recording the printed wording.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0466:0c9f16d9e66e4adc"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

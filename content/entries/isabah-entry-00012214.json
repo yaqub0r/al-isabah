@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012214",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12214,
+  "title": {
+    "english": "Umm Qays:",
+    "arabic_observed": "أم قيس:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012214-segment-0001",
+      "volume": 8,
+      "scan_page": 455,
+      "printed_page": 454,
+      "reader_page": 4367,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4367",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0455:7e05e71311e1b1ab",
+      "arabic": "١٢٢١٤- أم قيس:\nويقال أم هانئ الأنصارية.\nذكرها العقيليّ،\nوأخرج من طريق ابن لهيعة، عن أبي الأسود، عن درة بنت معاذ- أنها أخبرته عن أم قيس الأنصارية- أنها أتت النبي ﵌، فقالت:\nأنتزاور إذا متنا؟ قال: «يكون النّسم طائرا يعلق بالجنّة، حتّى إذا كان يوم القيامة دخلت كلّ نفس في جثتها» .\nوأخرجه ابن أبي خيثمة، من طريق ابن لهيعة، فقال: أم هانئ. وستأتي.",
+      "english": "12214. Umm Qays:\n\nShe is also called Umm Hani' al-Ansariyya.\n\nAl-'Uqayli mentioned her and transmitted, by way of Ibn Lahi'a, from Abu al-Aswad, from Durra bint Mu'adh—that she informed him, on the authority of Umm Qays al-Ansariyya—that she came to the Prophet, may Allah bless him and grant him peace, and asked:\n\n“Will we visit one another after we die?” He replied: “The souls will be birds feeding in Paradise until the Day of Resurrection comes, when every soul will enter its body.”\n\nIbn Abi Khaythama also transmitted it by way of Ibn Lahi'a, but he said: “Umm Hani'.” She will be mentioned later.",
+      "arabic_sha256": "b57bf68e2b7236b91667542e22710b2a6c6618ca90bbe1b8ae402658c427c41b",
+      "english_sha256": "22cfc807f4055bd219dce1630b5d1bf71b0adb8668f7592b6765dff7545215e8",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم قيس الأنصارية",
+      "english": "Umm Qays al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هانئ الأنصارية",
+      "english": "Umm Hani' al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "العقيلي",
+      "english": "al-'Uqayli",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن لهيعة",
+      "english": "Ibn Lahi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الأسود",
+      "english": "Abu al-Aswad",
+      "kind": "person"
+    },
+    {
+      "arabic": "درة بنت معاذ",
+      "english": "Durra bint Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجنة",
+      "english": "Paradise",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن أبي خيثمة",
+      "english": "Ibn Abi Khaythama",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم قيس",
+      "english": "Umm Qays",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

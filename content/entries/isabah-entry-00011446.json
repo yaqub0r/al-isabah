@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011446",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11446,
+  "title": {
+    "english": "Zabya bint al-Nu'man ibn Thabit ibn Abu al-Aflah.",
+    "arabic_observed": "ظبية بنت النعمان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011446-segment-0001",
+      "volume": 8,
+      "scan_page": 226,
+      "printed_page": 225,
+      "reader_page": 4138,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4138",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0226:d285a2065eaa927a",
+      "arabic": "١١٤٤٦- ظبية بنت النعمان\nبن ثابت بن أبي الأفلح.\nتقدم ذكرها في عمتها جميلة بنت ثابت.",
+      "english": "11446—Zabya bint al-Nu'man ibn Thabit ibn Abu al-Aflah.\n\nShe was previously mentioned in the entry on her paternal aunt, Jamila bint Thabit.",
+      "arabic_sha256": "a8619ff56d47d3ed1e85a3f4ba138f3ded276bac3bfa56b26dcd4c75a3f7a914",
+      "english_sha256": "d1ddfa75d61b7e954f96182e010348cbe336a05f5fbb2a17bd8ac5f2841e17b7",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ظبية بنت النعمان بن ثابت بن أبي الأفلح",
+      "english": "Zabya bint al-Nu'man ibn Thabit ibn Abu al-Aflah",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة بنت ثابت",
+      "english": "Jamila bint Thabit",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

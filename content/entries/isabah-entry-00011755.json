@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011755",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11755,
+  "title": {
+    "english": "Miska:",
+    "arabic_observed": "مسكة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011755-segment-0001",
+      "volume": 8,
+      "scan_page": 317,
+      "printed_page": 316,
+      "reader_page": 4229,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4229",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0317:6a6b44529b9a0a52",
+      "arabic": "١١٧٥٥- مسكة:\nويقال مسيكة «٣» - بالتّصغير، جارية عبد اللَّه بن أبيّ ابن سلول، تأتي في معاذة رقيقتها.",
+      "english": "11755—Miska:\n\nShe is also called Musayka (3)—in the diminutive—a slave-girl of Abd Allah ibn Ubayy ibn Salul. She will appear under Mu'adha, her fellow slave-girl.",
+      "arabic_sha256": "fcdb9dab3a4ee8730bf61edf2d8234691175b8f5c966cadc9ce2dbbcd05a9725",
+      "english_sha256": "c8e8effd1d9962602adf742deb03ce2f4c3c0200b5539c3704e91118190c6056",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مسكة",
+      "english": "Miska",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسيكة",
+      "english": "Musayka",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن أبيّ ابن سلول",
+      "english": "Abd Allah ibn Ubayy ibn Salul",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاذة",
+      "english": "Mu'adha",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

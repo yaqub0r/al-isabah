@@ -1,0 +1,149 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010864",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10864,
+  "title": {
+    "english": "Umayma bint 'Abd al-Muttalib ibn Hashim²",
+    "arabic_observed": "أميمة بنت عبد المطلب بن هاشم «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010864-segment-0001",
+      "volume": 8,
+      "scan_page": 34,
+      "printed_page": 33,
+      "reader_page": 3946,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3946",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0034:68350d931ff8e07d",
+      "arabic": "١٠٨٦٤- أميمة بنت عبد المطلب بن هاشم «٢»\nبن عبد مناف الهاشمية، عمة رسول اللَّه ﷺ.\n(١) في أأميمة خيثمة.\n(٢) المعارف ١١٨، ١١٩، ١٢٨، طبقات ابن سعد ٨/ ٤٥- ٤٦.",
+      "english": "10864—Umayma bint 'Abd al-Muttalib ibn Hashim²\n\nibn 'Abd Manaf, of Banu Hashim, the paternal aunt of the Messenger of Allah, may Allah bless him and grant him peace.\n\n¹ In A: “Umayma Khaythama.”\n\n² al-Ma'arif, 118, 119, 128; al-Tabaqat of ibn Sa'd, 8/45–46.",
+      "arabic_sha256": "ac609e67460ee3324bd518db2fa8723b8950b8f12d9a0129716dca1d78edd423",
+      "english_sha256": "0bd556f598455c2af20fa6ded2eaf4fb577f0cdd5917e004b830422cd5103954",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010864-segment-0002",
+      "volume": 8,
+      "scan_page": 35,
+      "printed_page": 34,
+      "reader_page": 3947,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3947",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0035:f93ed50f5abcc3d8",
+      "arabic": "اختلف في إسلامها، فنفاه محمد بن إسحاق، ولم يذكرها غير محمد بن سعد، فقال في باب عمومة النبيّ ﷺ، من طبقات النساء: أمها فاطمة بنت عمرو بن عائذ بن عمران بن محزوم، وتزوجها في الجاهلية حجير بن رئاب الأسدي حليف حرب بن أمية، فولدت له عبد اللَّه، وعبيد اللَّه، وأبا أحمد، وزينب، وحمنة، وأطعم رسول اللَّه ﷺ أميمة بنت عبد المطلب أربعين وسقا من تمر خيبر.\nقلت: فعلى هذا كانت لما تزوج النبي ﷺ ابنتها زينب موجودة.",
+      "english": "Her acceptance of Islam is disputed. Muhammad ibn Ishaq denied it, and no one other than Muhammad ibn Sa'd mentioned her. In the chapter on the paternal aunts of the Prophet—may Allah bless him and grant him peace—in the women's section of al-Tabaqat, he said: Her mother was Fatima bint Amr ibn A'idh ibn Imran ibn Makhzum. In the pre-Islamic period, Hujayr ibn Ri'ab al-Asadi, an ally of Harb ibn Umayya, married her, and she bore him Abd Allah, Ubayd Allah, Abu Ahmad, Zaynab, and Hamna. The Messenger of Allah—may Allah bless him and grant him peace—allotted Umayma bint Abd al-Muttalib forty wasqs of dates from Khaybar.\n\nI say: Accordingly, she was still alive when the Prophet—may Allah bless him and grant him peace—married her daughter Zaynab.",
+      "arabic_sha256": "0f7f8126168954d5d941eb3fcad04a1b7617db69e8c3f3f4ba4093ccf9b2fbc3",
+      "english_sha256": "8f2ae849e042d60282fe9eaef6a93c30dfc2e2d100db7728cd43285058afe3b7",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أميمة",
+      "english": "Umayma bint Subayh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة خيثمة",
+      "english": "Umayma Khaythama",
+      "kind": "person"
+    },
+    {
+      "arabic": "الهاشمية",
+      "english": "Banu Hashim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "المعارف",
+      "english": "al-Ma'arif",
+      "kind": "work"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن سعد",
+      "english": "Muhammad ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "طبقات النساء",
+      "english": "al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "فاطمة بنت عمرو بن عائذ بن عمران بن مخزوم",
+      "english": "Fatima bint Amr ibn A'idh ibn Imran ibn Makhzum",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجير بن رئاب الأسدي",
+      "english": "Hujayr ibn Ri'ab al-Asadi",
+      "kind": "person"
+    },
+    {
+      "arabic": "حرب بن أمية",
+      "english": "Harb ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah ibn Hujayr ibn Ri'ab",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد اللَّه",
+      "english": "Ubayd Allah ibn Hujayr ibn Ri'ab",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب",
+      "english": "Zaynab bint Hujayr ibn Ri'ab",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمنة",
+      "english": "Hamna bint Hujayr ibn Ri'ab",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة بنت عبد المطلب",
+      "english": "Umayma bint Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

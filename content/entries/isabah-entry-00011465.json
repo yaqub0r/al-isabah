@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011465",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11465,
+  "title": {
+    "english": "Aisha bint Shayba",
+    "arabic_observed": "عائشة بنت شيبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011465-segment-0001",
+      "volume": 8,
+      "scan_page": 237,
+      "printed_page": 236,
+      "reader_page": 4149,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4149",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0237:b884cdae99928e6f",
+      "arabic": "١١٤٦٥- عائشة بنت شيبة\nبن ربيعة بن عبد شمس.\nقتل أبوها ببدر، ولها ذكر، وهي مولاة أبي الزناد الفقيه المدنيّ.",
+      "english": "11465—Aisha bint Shayba\nibn Rabi'a ibn Abd Shams.\nHer father was killed at Badr. She is mentioned, and she was a female client of Abu al-Zinad, the Medinan jurist.",
+      "arabic_sha256": "e51ecc7fb295b276ed686625bffd74fa772e86c49c6f5ecdaf563249e9d2ad7e",
+      "english_sha256": "95c2a4d92a263535584f8bf29a9fe6fd1fa5d02b59201dd792dfad80490ad83a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "أبو الزناد",
+      "english": "Abu al-Zinad",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

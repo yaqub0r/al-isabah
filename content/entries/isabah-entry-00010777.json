@@ -1,0 +1,104 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010777",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10777,
+  "title": {
+    "english": "Abraha the Abyssinian:",
+    "arabic_observed": "أبرهة الحبشية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010777-segment-0001",
+      "volume": 8,
+      "scan_page": 6,
+      "printed_page": 5,
+      "reader_page": 3918,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3918",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0006:f373c7735745e8e2",
+      "arabic": "١٠٧٧٧- أبرهة الحبشية:\nمن خدم النجاشي.\nكانت عند أم حبيبة لما زوجها النجاشي للنّبيّ ﷺ.",
+      "english": "10777—Abraha the Abyssinian:\n\nOne of the attendants of the Negus. She was with Umm Habiba when the Negus gave Umm Habiba in marriage to the Prophet, may Allah bless him and grant him peace.",
+      "arabic_sha256": "1f1f03215066ea2f9922cbe24a293ffaa92a5ef916948897dd76303d1a5aef5e",
+      "english_sha256": "f0f5a6b0043e0440117d8ef682da17a6378961a5d81bf676166c1f2286f81c16",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010777-segment-0002",
+      "volume": 8,
+      "scan_page": 7,
+      "printed_page": 6,
+      "reader_page": 3919,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3919",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0007:16f979fa3c96671e",
+      "arabic": "ذكرها الواقديّ، وأورد ابن سعد قصتها في ترجمة أم حبيبة، عن عبد اللَّه بن عمرو بن زهير، عن إسماعيل بن عمرو بن سعيد، عن أم حبيبة.",
+      "english": "al-Waqidi mentioned her, and Ibn Sa'd related her story in the biography of Umm Habiba, on the authority of 'Abd Allah ibn 'Amr ibn Zuhayr, from Isma'il ibn 'Amr ibn Sa'id, from Umm Habiba.",
+      "arabic_sha256": "44222b7953e425de138d0243e66ed96d89fd2bfbc80adba03bf8615825c8596e",
+      "english_sha256": "e1eecbd1f47b3cac04aef39962c57b3d7e865e547349105f6bdd018205b3f527",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبرهة الحبشية",
+      "english": "Abraha the Abyssinian",
+      "kind": "person"
+    },
+    {
+      "arabic": "النجاشي",
+      "english": "the Negus",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن عمرو بن زهير",
+      "english": "'Abd Allah ibn 'Amr ibn Zuhayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسماعيل بن عمرو بن سعيد",
+      "english": "Isma'il ibn 'Amr ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

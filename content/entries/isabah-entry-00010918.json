@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010918",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10918,
+  "title": {
+    "english": "Barza bint Mas'ud",
+    "arabic_observed": "برزة بنت مسعود"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010918-segment-0001",
+      "volume": 8,
+      "scan_page": 47,
+      "printed_page": 46,
+      "reader_page": 3959,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3959",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0047:45b7170304b9be78",
+      "arabic": "١٠٩١٨- برزة بنت مسعود\nبن عمرو بن عمير الثقفي»\n، امرأة صفوان بن أمية.\nأسلمت معه، وهي أمّ ابنه عبد اللَّه بن صفوان، وكان عند صفوان لما أسلم ست نسوة. وسيأتي بيان ذلك في عاتكة بنت الوليد.",
+      "english": "10918—Barza bint Mas'ud\n\nibn Amr ibn Umayr al-Thaqafi,³ wife of Safwan ibn Umayya.\n\nShe accepted Islam together with him. She was the mother of his son Abd Allah ibn Safwan. Safwan had six wives when he accepted Islam. An explanation of this will come in the entry on Atika bint al-Walid.",
+      "arabic_sha256": "e091e9c5195d87247ab7bf195b15f1fd49434bca2afeed6ee4a17da3da7048b3",
+      "english_sha256": "f3445f3bdd842164c135619d9ad9c37dca79615c631e1625801015169a3f252c",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "صفوان بن أمية",
+      "english": "Safwan ibn Umayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن صفوان",
+      "english": "Abd Allah ibn Safwan",
+      "kind": "person"
+    },
+    {
+      "arabic": "عاتكة بنت الوليد",
+      "english": "Atika bint al-Walid",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

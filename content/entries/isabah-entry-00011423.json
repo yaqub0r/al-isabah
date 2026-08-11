@@ -1,0 +1,120 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011423",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11423,
+  "title": {
+    "english": "al-Samma' bint Busr (2)",
+    "arabic_observed": "الصماء بنت بسر «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011423-segment-0001",
+      "volume": 8,
+      "scan_page": 218,
+      "printed_page": 217,
+      "reader_page": 4130,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4130",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0218:9411294e16fb1be7",
+      "arabic": "١١٤٢٣- الصماء بنت بسر «٢»\nالمازنية.\nلها ولأبويها وأخيها عبد اللَّه بن بسر صحبة.\nروت عن النبي ﷺ في النهي عن صوم يوم السبت، وقيل هي عمّة عبد اللَّه، وقيل خالته، فأخرج ابن مندة من طريق الوليد بن مسلم وغيره، عن ثور بن يزيد، عن خالد بن معدان، عن عبد اللَّه بن بسر، عن أخته الصماء.\nوأخرجه بعلو عن أبي عاصم عن ثور، من طريق معاوية بن صالح، عن أبي عبد اللَّه ابن بسر، عن أبيه عن عمته الصماء، ومن طريق فضيل بن فضالة، عن عبد اللَّه بن بسر، عن خالته الصماء. وأخرج حديثها أصحاب السنن من طريق ثور. وأكثر النسائي من تخريج طرقه، وبيان اختلاف رواته، ورجّح دحيم الأول، قال أبو زرعة الدمشقيّ: قال لي دحيم:\nأهل بيت أربعة صحبوا النبيّ ﷺ: بسر، وابناه: عبد اللَّه وعطية، وأختهما الصماء.",
+      "english": "11423—al-Samma' bint Busr (2)\n\nal-Maziniyya.\n\nShe, her parents, and her brother Abdallah ibn Busr were all Companions.\n\nShe narrated from the Prophet, may Allah bless him and grant him peace, concerning the prohibition against fasting on Saturday. It is also said that she was Abdallah’s paternal aunt, and it is said that she was his maternal aunt. Ibn Manda related it by way of al-Walid ibn Muslim and others, from Thawr ibn Yazid, from Khalid ibn Ma'dan, from Abdallah ibn Busr, from his sister al-Samma'.\n\nHe also related it through a higher chain from Abu Asim, from Thawr; by way of Mu'awiya ibn Salih, from Abu Abdallah ibn Busr, from his father, from his paternal aunt al-Samma'; and by way of Fudayl ibn Fadala, from Abdallah ibn Busr, from his maternal aunt al-Samma'. The compilers of the Sunan works related her hadith by way of Thawr. Al-Nasa'i included many of its routes and set out the differences among its transmitters, while Duhaym preferred the first version. Abu Zur'a al-Dimashqi said: Duhaym said to me: “Four members of one household accompanied the Prophet, may Allah bless him and grant him peace: Busr; his two sons, Abdallah and Atiyya; and their sister al-Samma'.”",
+      "arabic_sha256": "1759eb9b099a09621e90eeff3790459863cb7776b225acdb198cb52efb22204d",
+      "english_sha256": "01dd54629725adbcb2efa9218a2685be1a85a4ba1580568c69f3c25815f7e681",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن بسر",
+      "english": "Abdallah ibn Busr",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوليد بن مسلم",
+      "english": "al-Walid ibn Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثور بن يزيد",
+      "english": "Thawr ibn Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد بن معدان",
+      "english": "Khalid ibn Ma'dan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عاصم",
+      "english": "Abu Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية بن صالح",
+      "english": "Mu'awiya ibn Salih",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عبد الله ابن بسر",
+      "english": "Abu Abdallah ibn Busr",
+      "kind": "person"
+    },
+    {
+      "arabic": "فضيل بن فضالة",
+      "english": "Fudayl ibn Fadala",
+      "kind": "person"
+    },
+    {
+      "arabic": "النسائي",
+      "english": "al-Nasa'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "دحيم",
+      "english": "Duhaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو زرعة الدمشقي",
+      "english": "Abu Zur'a al-Dimashqi",
+      "kind": "person"
+    },
+    {
+      "arabic": "بسر",
+      "english": "Busr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطية",
+      "english": "Atiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan al-Tirmidhi",
+      "kind": "work"
+    },
+    {
+      "arabic": "السنن",
+      "english": "Sunan Ibn Maja",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

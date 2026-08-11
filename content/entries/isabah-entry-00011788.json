@@ -1,0 +1,115 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011788",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11788,
+  "title": {
+    "english": "Maimuna bint Abd Allah:",
+    "arabic_observed": "ميمونة بنت عبد اللَّه:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011788-segment-0001",
+      "volume": 8,
+      "scan_page": 328,
+      "printed_page": 327,
+      "reader_page": 4240,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4240",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0328:d15deffd16b2a0ef",
+      "arabic": "١١٧٨٨- ميمونة بنت عبد اللَّه:\nمن بني مريد «٥»، براء مصغّرة: بطن من بليّ، يقال لهم الجعادرة، وكانوا حلفاء بني أمية بن زيد من الأنصار.\nذكرها [ابن إسحاق] «٦» وابن سعد، وذكر إسلامها. وقال ابن هشام: هي التي أجابت كعب بن الأشرف بمراثيه التي رثى فيها قتلى بدر من المشركين من قولها:\nتحنّن هذا العبد كلّ تحنّن ... يبكّي على القتلى وليس بناصب\nبكت عين من يبكي لبدر وأهله ... وعلّت بمثليه لؤيّ بن غالب\nفليت الّذين ضرّجوا بدمائهم ... يرى ما بهم من كان بين الأخاشب\n[الطويل] قال ابن هشام: وأكثر أهل العلم بالشّعر ينكرها لها.",
+      "english": "11788 — Maimuna bint Abd Allah:\n\nShe was of Banu Murayd,(5) with ra', in the diminutive form. They were a branch of Bali known as al-Ja'adira and were confederates of Banu Umayya ibn Zayd of the Ansar.\n\n[Ibn Ishaq](6) and Ibn Sa'd mentioned her, and Ibn Ishaq also mentioned her acceptance of Islam. Ibn Hisham said: She was the one who replied to Ka'b ibn al-Ashraf concerning his elegies in which he lamented the polytheists slain at Badr, saying:\n\nThis slave has shown the utmost tender grief,\nweeping over the slain and never growing weary.\n\nMay the eye of whoever weeps for Badr and its people weep,\nand may Lu'ayy ibn Ghalib be afflicted with twice the like.\n\nIf only the one who was between al-Akhashib could see\nwhat has befallen those drenched in their own blood.\n\n[The tawil meter]\n\nIbn Hisham said: Most authorities on poetry deny its attribution to her.",
+      "arabic_sha256": "20dc1f21272fcd85eb3f4991d0de6d329d66ab4f0de8818dc8a2452a665d77b2",
+      "english_sha256": "8aa5559ba06de5b8e95105a8860657f431e185cab8406829221b3d9d4507d39c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ميمونة",
+      "english": "Maimuna",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمونة بنت عبد اللَّه",
+      "english": "Maimuna bint Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني مريد",
+      "english": "Banu Murayd",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بليّ",
+      "english": "Bali",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الجعادرة",
+      "english": "al-Ja'adira",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني أمية بن زيد",
+      "english": "Banu Umayya ibn Zayd",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن هشام",
+      "english": "Ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "كعب بن الأشرف",
+      "english": "Ka'b ibn al-Ashraf",
+      "kind": "person"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "لؤيّ بن غالب",
+      "english": "Lu'ayy ibn Ghalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأخاشب",
+      "english": "al-Akhashib",
+      "kind": "place"
+    },
+    {
+      "arabic": "الطويل",
+      "english": "tawil",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

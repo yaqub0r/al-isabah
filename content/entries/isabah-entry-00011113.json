@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011113",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11113,
+  "title": {
+    "english": "Khawla bint al-Aswad al-Khuza'iyya [1]",
+    "arabic_observed": "خولة بنت الأسود الخزاعية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011113-segment-0001",
+      "volume": 8,
+      "scan_page": 114,
+      "printed_page": 113,
+      "reader_page": 4026,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4026",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0114:f7c92753c9b2ac08",
+      "arabic": "١١١١٣- خولة بنت الأسود الخزاعية «١»\n. تأتي في أم حرملة في الكنى إن شاء اللَّه تعالى.",
+      "english": "11113 — Khawla bint al-Aswad al-Khuza'iyya [1]\n\nShe will appear under Umm Harmala in the section on kunyahs, Allah Most High willing.",
+      "arabic_sha256": "77c896c9d235576d2bf0908174f12547516a846bb1cd037836105fda4922b3ae",
+      "english_sha256": "01fe73a81a3986155dc5e59555b83a6c62ca988a173dc2068991409422203a9a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خولة بنت الأسود الخزاعية",
+      "english": "Khawla bint al-Aswad al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حرملة",
+      "english": "Umm Harmala",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

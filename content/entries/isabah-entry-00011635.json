@@ -1,0 +1,45 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011635",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11635,
+  "title": {
+    "english": "Fakiha bint al-Muttalib",
+    "arabic_observed": "فكيهة بنت المطّلب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011635-segment-0001",
+      "volume": 8,
+      "scan_page": 283,
+      "printed_page": 282,
+      "reader_page": 4195,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4195",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0283:bb967d6a78c7d53b",
+      "arabic": "١١٦٣٥- فكيهة بنت المطّلب\nبن خلدة بن مخلد الأنصاريّة «٤»، من بني زريق.",
+      "english": "11635—Fakiha bint al-Muttalib\n\nibn Khalda ibn Makhlad al-Ansariyya,[4] of Banu Zurayq.",
+      "arabic_sha256": "aa55f854c1eb32110d87d31f93b042cf7bf64cfdf1a2c90f8f6d3dcf14b74d41",
+      "english_sha256": "18e13b2f9558ef52e445b197e832341b377bbc622d8ac5f2c70f202924a12c74",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بني زريق",
+      "english": "Banu Zurayq",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

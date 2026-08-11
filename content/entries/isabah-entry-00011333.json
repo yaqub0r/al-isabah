@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011333",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11333,
+  "title": {
+    "english": "Salma (2),",
+    "arabic_observed": "سلمى «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011333-segment-0001",
+      "volume": 8,
+      "scan_page": 189,
+      "printed_page": 188,
+      "reader_page": 4101,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4101",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0189:6769ea1e4d04ada4",
+      "arabic": "١١٣٣٣- سلمى «٢»\n، غير منسوبة، مولاة حكيم بن أمية بن الأوقص السلمي.\nذكر هشام بن الكلبيّ في كتاب «المثالب» أن سلمة بن أمية بن خلف استمتع منها، فولدت له، ثم جحده، فبلغ ذلك عمر فنهى عن المتعة.",
+      "english": "11333—Salma (2),\n\nwithout further attribution, the client of Hakim ibn Umayya ibn al-Awqas al-Sulami.\n\nHisham ibn al-Kalbi stated in the book al-Mathalib that Salama ibn Umayya ibn Khalaf contracted a temporary marriage with her, and she bore him a child. He then refused to acknowledge the child. This reached 'Umar, so he prohibited temporary marriage.",
+      "arabic_sha256": "c19332a29efff34d3590b28ba4755bbcba2b40adc74e3112d8c22948728eb3c6",
+      "english_sha256": "266e8529f2999a5417c62643fd9a9115e26375883d5a6a52561f15d713864083",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سلمى، غير منسوبة، مولاة حكيم بن أمية بن الأوقص السلمي",
+      "english": "Salma",
+      "kind": "person"
+    },
+    {
+      "arabic": "حكيم بن أمية بن الأوقص السلمي",
+      "english": "Hakim ibn Umayya ibn al-Awqas al-Sulami",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن الكلبي",
+      "english": "Hisham ibn al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "المثالب",
+      "english": "al-Mathalib",
+      "kind": "work"
+    },
+    {
+      "arabic": "سلمة بن أمية بن خلف",
+      "english": "Salama ibn Umayya ibn Khalaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى، غير منسوبة",
+      "english": "Salma",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى، خادم رسول الله",
+      "english": "Salma",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى، مولاة صفية",
+      "english": "Salma",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

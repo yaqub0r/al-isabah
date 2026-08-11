@@ -1,0 +1,109 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012186",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12186,
+  "title": {
+    "english": "Umm Amr bint Salama ibn Waqsh ibn Zaghaba ibn Za'ura ibn Abd al-Ashhal(4), al-Ansariyya al-Ashhaliyya.",
+    "arabic_observed": "أم عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012186-segment-0001",
+      "volume": 8,
+      "scan_page": 444,
+      "printed_page": 443,
+      "reader_page": 4356,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4356",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0444:817ba28711ef8983",
+      "arabic": "١٢١٨٦- أم عمرو\nبنت سلامة بن وقش بن زغبة بن زعوراء بن عبد الأشهل «٤» الأنصاريّة الأشهليّة.\n(١) في أ: تابع سليمان جرير.\n(٢) أسد الغابة ت (٧٥٥٢)، تجريد أسماء الصحابة ٢/ ٣٣٠.\n(٣) البعال: النكاح وملاعبة الرجل أهله. النهاية ١/ ١٤١.\n(٤) أسد الغابة ت (٧٥٥٥) .",
+      "english": "12186- Umm Amr bint Salama ibn Waqsh ibn Zaghaba ibn Za'ura ibn Abd al-Ashhal(4), al-Ansariyya al-Ashhaliyya.\n\n(1) In A: “Sulayman Jarir corroborated [it].”\n\n(2) Usd al-Ghaba, entry 7552; al-Tajrid, 2/330.\n\n(3) Bi'al means sexual intercourse and a man's dalliance with his wife. al-Nihaya, 1/141.\n\n(4) Usd al-Ghaba, entry 7555.",
+      "arabic_sha256": "7aa637aa37c7dc1e21d88baed1d26098872cec67eaadd705740e3d075f38907e",
+      "english_sha256": "625c3ac5c309f2a95fa4fb9c177446798b16220f641cede15489458879309785",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012186-segment-0002",
+      "volume": 8,
+      "scan_page": 445,
+      "printed_page": 444,
+      "reader_page": 4357,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4357",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0445:3ffaff7672c6c364",
+      "arabic": "ذكرها ابن سعد في المبايعات، وقال: أمها سلمى بنت سلمة بن خالد، وهي أخت سلمة بن سلامة بن وقش، شهدت العقبة وبدرا، تزوّجت محمد بن سلمة، فولدت له.",
+      "english": "Ibn Sa'd mentioned her among the women who pledged allegiance and said: Her mother was Salma bint Salama ibn Khalid. She was the sister of Salama ibn Salama ibn Waqsh. She was present at al-Aqaba and Badr. She married Muhammad ibn Salama and bore him children.",
+      "arabic_sha256": "f353e30c85a33cf4ca7eaa08b976072017e3b6f301fef46bf27d748e7b8fd5d0",
+      "english_sha256": "b11c22e107f593993c1d07b69bd89ecb41714fc1eb6981175b740660bf1c0a09",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمى بنت سلمة بن خالد",
+      "english": "Salma bint Salama ibn Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "سلمة بن سلامة بن وقش",
+      "english": "Salama ibn Salama ibn Waqsh",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن سلمة",
+      "english": "Muhammad ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "العقبة",
+      "english": "al-Aqaba",
+      "kind": "place"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

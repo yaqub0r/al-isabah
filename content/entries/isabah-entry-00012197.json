@@ -1,0 +1,109 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012197",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12197,
+  "title": {
+    "english": "Umm Abd Allah bint Umar ibn al-Khattab [3].",
+    "arabic_observed": "أم عبد اللَّه بنت عمر"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012197-segment-0001",
+      "volume": 8,
+      "scan_page": 447,
+      "printed_page": 446,
+      "reader_page": 4359,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4359",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0447:abc39d97bc25c9ac",
+      "arabic": "١٢١٩٧- أم عبد اللَّه بنت عمر\nبن الخطاب «٣» .\nاستدركها أبو موسى، وليست تكنى أم عبد اللَّه، وإن كان ولدها اسمه عبد اللَّه، بل هي معروفة باسمها ونسبها. وهي زينب بنت مظعون الجمحية، أخت عثمان وقدامة ابني مظعون، وقد تقدمت في الأسماء على الصواب.\n(١) أسد الغابة ت (٧٥٦٠)، تقريب التهذيب ٢/ ٦٢٣- الإكمال ٢/ ١٨١. تهذيب التهذيب ١٢/ ٤٧٥- تهذيب الكمال ٣/ ١٧٠٥- أعلام النساء ٣/ ٣٨١.\n(٢) أسد الغابة ت (٧٥١٩) .\n(٣) أسد الغابة ت (٧٥٢٠) .",
+      "english": "12197—Umm Abd Allah bint Umar ibn al-Khattab [3].\n\nAbu Musa added her as a supplementary entry, but her kunya was not Umm Abd Allah, even though her son was named Abd Allah. Rather, she is known by her personal name and lineage: she is Zaynab bint Maz'un al-Jumahiyya, the sister of Uthman and Qudama, the two sons of Maz'un. She has already appeared, correctly, among the personal names.\n\n[1] Usd al-Ghaba, entry (7560); Taqrib al-Tahdhib, 2/623; al-Ikmal, 2/181; Tahdhib al-Tahdhib, 12/475; Tahdhib al-Kamal, 3/1705; A'lam al-Nisa, 3/381.\n\n[2] Usd al-Ghaba, entry (7519).\n\n[3] Usd al-Ghaba, entry (7520).",
+      "arabic_sha256": "2195869b06c62744f373ed3a61f6f8a3cfb409e5a8f48348f0298371d1b465c2",
+      "english_sha256": "bf6240a279db122e19ceae1ee06b1400fe6136a08563a163f445f05138424af7",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012197-segment-0002",
+      "volume": 8,
+      "scan_page": 448,
+      "printed_page": 447,
+      "reader_page": 4360,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4360",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0448:4ef1b5ece5a6549e",
+      "arabic": "حرف الغين المعجمة\nالقسم الأول",
+      "english": "THE LETTER GHAYN WITH A DOT\n\nSECTION ONE",
+      "arabic_sha256": "a1bf1584f10fff6057fa461e74e0088024b4fbfa035edd581056fb12fcaf7f4c",
+      "english_sha256": "a30407dd0e6abcac694e4aac983fd37e5aa696a701bc39f300da94e1dbcdd465",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبد اللَّه بنت عمر بن الخطاب",
+      "english": "Umm Abd Allah bint Umar ibn al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت مظعون الجمحية",
+      "english": "Zaynab bint Maz'un al-Jumahiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الإكمال",
+      "english": "al-Ikmal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

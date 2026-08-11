@@ -1,0 +1,279 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011257",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11257,
+  "title": {
+    "english": "Zaynab bint Mu'awiya (3)",
+    "arabic_observed": "زينب بنت معاوية»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011257-segment-0001",
+      "volume": 8,
+      "scan_page": 164,
+      "printed_page": 163,
+      "reader_page": 4076,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4076",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0164:daa560d50bf22a86",
+      "arabic": "١١٢٥٧- زينب بنت معاوية»\n، وقيل بنت أبي «٤» معاوية، وبهذا الأخير جزم أبو عمر\n(١) أسد الغابة ت ٦٩٧٣.\n(٢) أسد الغابة ت ٦٩٧٤، الاستيعاب: ت ٣٤١١.\n(٣) الثقات ٣/ ١٤٥، أعلام النساء ٢/ ١١٥، تجريد أسماء الصحابة ٢/ ٢٧٤، تقريب التهذيب ٢/ ٦٠٠، تهذيب التهذيب ١٢/ ٤٢٢، الكاشف ٣/ ٤٧٢، تهذيب الكمال ٣/ ١٦٨٤، تراجم الأحبار ١/ ٤٦٩، ٤٧٠، بقي بن مخلد ٢٢٤.\n(٤) في أ: وقيل بنت عبد اللَّه بن معاوية.",
+      "english": "11257 — Zaynab bint Mu'awiya (3)\n\nShe is also said to have been Zaynab bint Abi Mu'awiya; Abu 'Umar stated this latter form definitively.\n\n(1) Usd al-Ghaba, entry 6973.\n\n(2) Usd al-Ghaba, entry 6974; al-Isti'ab, entry 3411.\n\n(3) al-Thiqat 3/145; A'lam al-Nisa' 2/115; al-Tajrid 2/274; Taqrib al-Tahdhib 2/600; Tahdhib al-Tahdhib 12/422; al-Kashif 3/472; Tahdhib al-Kamal 3/1684; Tarajim al-Ahbar 1/469, 470; Baqi ibn Makhlad, 224.\n\n(4) In manuscript A: “She is also said to have been the daughter of 'Abd Allah ibn Mu'awiya.”",
+      "arabic_sha256": "43edca2db90a85e547cabde6aa3f7d9f73828e27961e02e89f4ce51c2ef484ee",
+      "english_sha256": "c6d2121ef406e7943f3cc2d677dee90dc7aa3e77d6bbb7d0e6e211fc03fd57a6",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011257-segment-0002",
+      "volume": 8,
+      "scan_page": 165,
+      "printed_page": 164,
+      "reader_page": 4077,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4077",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0165:620781664ee07575",
+      "arabic": "ثم نسبها ابن معاوية بن عتاب بالأسعد بن عامرة بن حطيط بن جشم بن ثقيف، وهي ابنة أبي معاوية الثقفية.\nروت عن النبي ﷺ، وعن زوجها ابن مسعود، وعن عمر.\nروى عنها ابنها أبو عبيدة بن عبد اللَّه بن مسعود، وابن أخيها، ولم يسمّ عمرو بن الحارث بن أبي ضرار وبشر بن سعيد، وعبيد بن السباق، وغيرهم. فرق غير واحد بينها وبين رائطة المقدم ذكرها، أخرج حديثها في الصحيحين،\nواللفظ لمسلم من طريق الأعمش، عن شقيق بن سلمة، عن عمرو بن الحارث، عن زينب امرأة عبد اللَّه، قالت: قال رسول اللَّه ﷺ: «تصدّقن يا معشر النّساء ولو من حليّكنّ» «١» . قالت: فانطلقت، فإذا امرأة من الأنصار حاجتها كحاجتي، وكان رسول اللَّه ﷺ قد ألقيت عليه المهابة، فخرج علينا بلال، فقلنا: أين رسول اللَّه ﷺ؟ فأخبره أن امرأتين بالباب تسألانك: أتجزي الصدقة عنهما على أزواجهما وأيتام في حجورهما؟ ولا تخبره من نحن؟ فدخل بلال فسأله، فقال: «من هما؟» قال: امرأة من الأنصار وزينب. قال: أي الزيانب؟ قال: امرأة عبد اللَّه. فقال: «لهما أجران، أجر القرابة وأجر الصّدقة» .\nوقال أبو عمر: روى علقمة عن عبد اللَّه- أن زينب الأنصارية امرأة أبي مسعود وزينب الثقفية امرأة ابن مسعود أتتا رسول اللَّه ﷺ تسألانه النفقة على أزواجهما ... الحديث.\nوقال بشر بن سعيد: أخبرتني زينب الثقفية امرأة عبد اللَّه بن مسعود أن رسول اللَّه ﷺ قال لها: «إذا خرجت إلى العشاء الآخرة فلا تمسّي طيبا» «٢» . أخرجه ابن سعد.",
+      "english": "He then gave her lineage as Zaynab bint 'Abd Allah ibn Mu'awiya ibn 'Attab ibn al-As'ad ibn 'Amira ibn Hutayt ibn Jusham ibn Thaqif. She was the daughter of Abu Mu'awiya and was of Thaqif.\n\nShe narrated from the Prophet—may Allah bless him and grant him peace—from her husband Ibn Mas'ud, and from 'Umar.\n\nThose who narrated from her included her son Abu 'Ubayda ibn 'Abd Allah ibn Mas'ud; her nephew, whom 'Amr ibn al-Harith ibn Abu Dirar did not name; Bishr ibn Sa'id; 'Ubayd ibn al-Sabbaq; and others. More than one scholar distinguished her from Ra'ita, who was mentioned previously. Her hadith was recorded in both Sahih collections. The wording given here is that of Muslim, through al-A'mash, from Shaqiq ibn Salama, from 'Amr ibn al-Harith, from Zaynab, the wife of 'Abd Allah, who said: The Messenger of Allah—may Allah bless him and grant him peace—said, “Give charity, O women, even from your jewelry.”¹ She said: So I went, and there was a woman of the Ansar whose need was like mine. The Messenger of Allah—may Allah bless him and grant him peace—was held in awe. Bilal came out to us, and we said, “Where is the Messenger of Allah—may Allah bless him and grant him peace? Tell him that two women are at the door asking you whether charity given by them to their husbands and to orphans in their care will count for them. Do not tell him who we are.” Bilal went in and asked him. He said, “Who are they?” He replied, “A woman of the Ansar and Zaynab.” He asked, “Which of the Zaynabs?” He replied, “The wife of 'Abd Allah.” He then said, “They shall have two rewards: the reward for kinship and the reward for charity.”\n\nAbu 'Umar said: 'Alqama narrated from 'Abd Allah that Zaynab al-Ansariyya, the wife of Abu Mas'ud, and Zaynab al-Thaqafiyya, the wife of Ibn Mas'ud, came to the Messenger of Allah—may Allah bless him and grant him peace—asking him about spending on their husbands … the hadith.\n\nBishr ibn Sa'id said: Zaynab al-Thaqafiyya, the wife of 'Abd Allah ibn Mas'ud, informed me that the Messenger of Allah—may Allah bless him and grant him peace—said to her, “When you go out to the late evening prayer, do not apply any perfume.”² Ibn Sa'd transmitted it.",
+      "arabic_sha256": "f202ed95afc45af5f023ca11b1c5882721aa226066b7d89927572fa7c11d67a3",
+      "english_sha256": "06222d6dec6b687f2b976a51fc9e2146916ca178f8207cb0df78d8fa38c65d90",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت معاوية",
+      "english": "Zaynab bint Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت أبي معاوية",
+      "english": "Zaynab bint Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت عبد الله بن معاوية",
+      "english": "Zaynab bint Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تراجم الأحبار",
+      "english": "Tarajim al-Ahbar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت عبد اللَّه بن معاوية بن عتاب بن الأسعد بن عامرة بن حطيط بن جشم بن ثقيف",
+      "english": "Zaynab bint 'Abd Allah ibn Mu'awiya ibn 'Attab ibn al-As'ad ibn 'Amira ibn Hutayt ibn Jusham ibn Thaqif",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابنة أبي معاوية الثقفية",
+      "english": "Zaynab bint Abu Mu'awiya al-Thaqafiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو معاوية",
+      "english": "Abu Mu'awiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثقيف",
+      "english": "Thaqif",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النبي ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن مسعود",
+      "english": "'Abd Allah ibn Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن مسعود",
+      "english": "'Abd Allah ibn Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "'Abd Allah ibn Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عبيدة بن عبد اللَّه بن مسعود",
+      "english": "Abu 'Ubayda ibn 'Abd Allah ibn Mas'ud",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن الحارث بن أبي ضرار",
+      "english": "'Amr ibn al-Harith ibn Abu Dirar",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشر بن سعيد",
+      "english": "Bishr ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد بن السباق",
+      "english": "'Ubayd ibn al-Sabbaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "رائطة",
+      "english": "Ra'ita",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأعمش",
+      "english": "al-A'mash",
+      "kind": "person"
+    },
+    {
+      "arabic": "شقيق بن سلمة",
+      "english": "Shaqiq ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب امرأة عبد اللَّه",
+      "english": "Zaynab bint 'Abd Allah ibn Mu'awiya ibn 'Attab ibn al-As'ad ibn 'Amira ibn Hutayt ibn Jusham ibn Thaqif",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بلال",
+      "english": "Bilal",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Ibn 'Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "علقمة",
+      "english": "'Alqama",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب الأنصارية امرأة أبي مسعود",
+      "english": "Zaynab bint al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب الثقفية امرأة ابن مسعود",
+      "english": "Zaynab bint 'Abd Allah ibn Mu'awiya ibn 'Attab ibn al-As'ad ibn 'Amira ibn Hutayt ibn Jusham ibn Thaqif",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيحين",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "الصحيحين",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

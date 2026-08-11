@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011842",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11842,
+  "title": {
+    "english": "Hind bint Abi Khalaf al-Jumahiyya:",
+    "arabic_observed": "هند بنت أبي خلف الجمحيّة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011842-segment-0001",
+      "volume": 8,
+      "scan_page": 342,
+      "printed_page": 341,
+      "reader_page": 4254,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4254",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0342:530f841f48a5cef3",
+      "arabic": "١١٨٤٢- هند بنت أبي خلف الجمحيّة:\nزوج مسعود بن أمية بن خلف، ووالدة ابنه عامر. ذكرها الزّبير بن بكّار.",
+      "english": "11842 — Hind bint Abi Khalaf al-Jumahiyya:\n\nThe wife of Mas'ud ibn Umayya ibn Khalaf and the mother of his son Amir. Al-Zubayr ibn Bakkar mentioned her.",
+      "arabic_sha256": "8e0704a492e09d9c236c862961f21bc04704af5dd8dc8ea3c7bca71250c58a3a",
+      "english_sha256": "0426bb3f503e8a671459fa6c5cb1480f1ec320c116e11c72560f7bf98c6c46c0",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمية",
+      "english": "Umayya bint Khalaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند بنت أبي خلف الجمحيّة",
+      "english": "Hind bint Abi Khalaf al-Jumahiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسعود بن أمية بن خلف",
+      "english": "Mas'ud ibn Umayya ibn Khalaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمية بن خلف",
+      "english": "Umayya ibn Khalaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "عامر",
+      "english": "Amir ibn Mas'ud ibn Umayya ibn Khalaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكّار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجمحيّة",
+      "english": "Banu Jumah",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

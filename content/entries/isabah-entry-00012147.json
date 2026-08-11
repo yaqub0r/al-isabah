@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012147",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12147,
+  "title": {
+    "english": "Umm 'Abd Allah:",
+    "arabic_observed": "أم عبد اللَّه:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012147-segment-0001",
+      "volume": 8,
+      "scan_page": 430,
+      "printed_page": 429,
+      "reader_page": 4342,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4342",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0430:96428fab8f77ded7",
+      "arabic": "١٢١٤٧- أم عبد اللَّه:\nالدوسيّة «٢» .\nذكرها ابن أبي عاصم في الوحدان،\nوأخرج من طريق معاوية بن يحيى- أحد الضّعفاء، عن معاوية بن سعيد التّجيبي، عن الزّهري، عن أم عبد اللَّه الدّوسية، وقد أدركت النبيّ ﵌، قال: «الجمعة واجبة في كلّ قرية وإن لم يكن فيها إلّا أربعة» «٣» .",
+      "english": "12147—Umm 'Abd Allah:\n\nal-Dawsiyya.²\n\nIbn Abi 'Asim mentioned her in al-Wuhdan and reported, by way of Mu'awiya ibn Yahya—one of the weak transmitters—from Mu'awiya ibn Sa'id al-Tujibi, from al-Zuhri, from Umm 'Abd Allah al-Dawsiyya, who had lived to see the Prophet (may Allah bless him and grant him peace), that he said: “The Friday prayer is obligatory in every village, even if there are only four people in it.”³",
+      "arabic_sha256": "b34aa1f863ec45ef1f47af8c1ced71555c94e4beeb6a0423186406d648db3b82",
+      "english_sha256": "1fa6bfdbb0274d1cd0a713b675a2a73707b385aa12a6b2a2237364a408bae92b",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم عبد الله الدوسية",
+      "english": "Umm 'Abd Allah al-Dawsiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi 'Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوحدان",
+      "english": "al-Wuhdan",
+      "kind": "work"
+    },
+    {
+      "arabic": "معاوية بن يحيى",
+      "english": "Mu'awiya ibn Yahya",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية بن سعيد التجيبي",
+      "english": "Mu'awiya ibn Sa'id al-Tujibi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبد الله",
+      "english": "Umm 'Abd Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

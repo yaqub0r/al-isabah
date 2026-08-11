@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012008",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12008,
+  "title": {
+    "english": "Umm Khallad al-Ansariyya [1]:",
+    "arabic_observed": "أم خلاد الأنصارية «١»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012008-segment-0001",
+      "volume": 8,
+      "scan_page": 387,
+      "printed_page": 386,
+      "reader_page": 4299,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4299",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0387:fcea5e14ed084782",
+      "arabic": "١٢٠٠٨- أم خلاد الأنصارية «١»:\nسألت عن أبيها لما قتل، استدركها ابن الأثير.",
+      "english": "12008—Umm Khallad al-Ansariyya [1]:\n\nShe asked about her father when he was killed. Ibn al-Athir added her as an omitted entry.",
+      "arabic_sha256": "dd8af577e3fcb3df321fee8ba85559e949c4f49f7063f82efae1069ac6548d5c",
+      "english_sha256": "336d9e8988fc8295d450a6857ae4cfb8f223939bbe26fd2b48558330dae058ff",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم خلاد الأنصارية",
+      "english": "Umm Khallad al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

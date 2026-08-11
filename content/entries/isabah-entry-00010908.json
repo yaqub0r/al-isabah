@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010908",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10908,
+  "title": {
+    "english": "Asma,",
+    "arabic_observed": "أسماء ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010908-segment-0001",
+      "volume": 8,
+      "scan_page": 44,
+      "printed_page": 43,
+      "reader_page": 3956,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3956",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0044:c3f95d25d7387978",
+      "arabic": "١٠٩٠٨- أسماء ،\nمغنية عائشة «٢» . هي أسماء بنت يزيد بن السكن.\nأفردها أبو موسى، وقد أخرج أحمد من وجه آخر عن أسماء بنت يزيد أنها هي.",
+      "english": "10908 — Asma,\n\nAisha’s singer [2]. She is Asma bint Yazid ibn al-Sakan.\n\nAbu Musa gave her a separate entry, although Ahmad transmitted through another route from Asma bint Yazid that she herself was the woman in question.",
+      "arabic_sha256": "501988c0268e3ace394443492218ae9f3c3949757b22e802a4a8d77bb5d0ceb2",
+      "english_sha256": "737450ddfd003e16332830365114cab10e257c86b69ae952fd5783265e931ad4",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أسماء",
+      "english": "Asma bint Yazid ibn al-Sakan al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسماء بنت يزيد بن السكن",
+      "english": "Asma bint Yazid ibn al-Sakan al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

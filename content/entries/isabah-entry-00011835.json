@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011835",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11835,
+  "title": {
+    "english": "Hurayra bint Zam'a:",
+    "arabic_observed": "هريرة بنت زمعة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011835-segment-0001",
+      "volume": 8,
+      "scan_page": 340,
+      "printed_page": 339,
+      "reader_page": 4252,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4252",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0340:76f574b186e15650",
+      "arabic": "١١٨٣٥- هريرة بنت زمعة:\nالقرشيّة الأسديّة، أخت أم المؤمنين سودة «٢» .\nتقدم نسبها في ترجمة أختها. ذكرها الطّبري في الصّحابة.\nوقال المستغفريّ: لها صحبة، وقد تقدّم في ترجمة معبد بن وهب العبديّ أنه تزوّجها.",
+      "english": "11835—Hurayra bint Zam'a:\n\nA Qurashi Asadi woman, sister of Sawda, the Mother of the Believers.(2)\n\nHer lineage has already been given in the entry on her sister. Al-Tabari mentioned her among the Companions.\n\nAl-Mustaghfiri said: “She was a Companion.” It has already been stated in the entry on Ma'bad ibn Wahb al-Abdi that he married her.",
+      "arabic_sha256": "963b292a9efe1506129177300e4d375b3aab809de5f5547ade1706b97636240f",
+      "english_sha256": "b69148eb4c0abe649d8806aa15877353b5427d94b2c42f7fa2d695c524fc8e38",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "هريرة بنت زمعة",
+      "english": "Hurayra bint Zam'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "سودة",
+      "english": "Sawda",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطّبري",
+      "english": "al-Tabari",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفريّ",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "معبد بن وهب العبديّ",
+      "english": "Ma'bad ibn Wahb al-Abdi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

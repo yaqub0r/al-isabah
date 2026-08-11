@@ -1,0 +1,78 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010935",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10935,
+  "title": {
+    "english": "Buray'ah bint Abi Harithah",
+    "arabic_observed": "بريعة بنت أبي حارثة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010935-segment-0001",
+      "volume": 8,
+      "scan_page": 52,
+      "printed_page": 51,
+      "reader_page": 3964,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3964",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0052:e992a00a68b50b54",
+      "arabic": "١٠٩٣٥- بريعة بنت أبي حارثة\nبن أوس بن الدخيش الأنصارية «١» . من بني عوف بن الخزرج.\nذكرها ابن حبيب فيمن بايعن رسول اللَّه ﷺ. استدركها ابن الأثير.",
+      "english": "10935 — Buray'ah bint Abi Harithah\nibn Aws ibn al-Dukhaysh, the Ansari woman,¹ of Banu 'Awf ibn al-Khazraj.\n\nIbn Habib mentioned her among the women who pledged allegiance to the Messenger of Allah, may Allah bless him and grant him peace. Ibn al-Athir supplied her as an omitted entry.",
+      "arabic_sha256": "66a615932439a427934e11b1d3106be313e969ee4142165e5a2f6a53a5425965",
+      "english_sha256": "e1e8b1bddd330ac27b7e687de0afb7f75ba0e6d21e25b5376b52a6fdee0a8760",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصارية",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني عوف بن الخزرج",
+      "english": "Banu 'Awf ibn al-Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "بريعة",
+      "explanation": "The unvocalized Arabic and the supplied Urdu and Arabic witnesses do not conclusively establish the vowels. Buray'ah has been retained provisionally in both entries.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0052:e992a00a68b50b54"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

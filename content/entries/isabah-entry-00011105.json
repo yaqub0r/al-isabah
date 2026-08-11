@@ -1,0 +1,94 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011105",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11105,
+  "title": {
+    "english": "Khulayda bint Qa'nab",
+    "arabic_observed": "خليدة بنت قعنب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011105-segment-0001",
+      "volume": 8,
+      "scan_page": 107,
+      "printed_page": 106,
+      "reader_page": 4019,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4019",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0107:0ca239c6d68dcc2e",
+      "arabic": "١١١٠٥- خليدة بنت قعنب\nالضبّية «٧» .\nذكرها ابن أبي عاصم، وأخرج من طريق حميد بن حماد بن أبي الحوراء، عن ثعلب\n(١) أعلام النساء ١/ ٢٩٦.\n(٢) في أتعاقلوا.\n(٣) في أخرمة.\n(٤) أسد الغابة ت ٦٨٧٦، الاستيعاب ت ٣٣٦٠.\n(٥) أسد الغابة ت ٦٨٧٧.\n(٦) أسد الغابة ت ٦٨٧٨.\n(٧) تجريد أسماء الصحابة ٢/ ٦٢.",
+      "english": "11105 — Khulayda bint Qa'nab\n\nal-Dabbiyya.[7]\n\nIbn Abi 'Asim mentioned her and transmitted, by way of Humayd ibn Hammad ibn Abi al-Hawra', from Tha'lab—\n\n[1] A'lam al-Nisa', 1/296.\n\n[2] In manuscript A: “they shared liability for blood money” (ta'aqalu).\n\n[3] In manuscript A: “Kharma.”\n\n[4] Usd al-Ghaba, entry 6876; al-Isti'ab, entry 3360.\n\n[5] Usd al-Ghaba, entry 6877.\n\n[6] Usd al-Ghaba, entry 6878.\n\n[7] al-Tajrid, 2/62.",
+      "arabic_sha256": "8405da05bd306ee1fd59b7e7a13db5b8e8b4f6037633d2742ea813e73a9e6f63",
+      "english_sha256": "83d960195f579f57f300675a8bb33ab68c5991d59fb9505f173e5885bc869873",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011105-segment-0002",
+      "volume": 8,
+      "scan_page": 108,
+      "printed_page": 107,
+      "reader_page": 4020,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4020",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0108:65680e5dda584248",
+      "arabic": "بنت الرباب، عن خالتها خليدة بنت قعنب- أنها كانت في النسوة اللاتي أتين رسول اللَّه ﷺ يبايعنه، فأتته امرأة في يدها سوار من ذهب، فأبى أن يبايعها، فخرجت من الزحام، فرمت بالسوار، ثم جاءت إلى النبيّ ﷺ فبايعها، قالت: فخرجت فطلبت السوار فإذا هو قد ذهب به.",
+      "english": "bint al-Rabab, from her maternal aunt Khulayda bint Qa'nab, who was among the women who came to the Messenger of Allah, may Allah bless him and grant him peace, to pledge allegiance to him. A woman came to him with a gold bracelet on her wrist, but he refused to accept her pledge. She withdrew from the crowd and threw away the bracelet; then she came to the Prophet, may Allah bless him and grant him peace, and he accepted her pledge. She said: “I went out and searched for the bracelet, but found that it had already been taken away.”",
+      "arabic_sha256": "5ca6a010bdef8c037eb41839456aa47ac41543741baa2ccf952bcc0b63628c66",
+      "english_sha256": "771dbe410537e9f5816ba3258a6f40e21464d50f975fb2c29ae987d515de3e4f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خرمة",
+      "english": "Kharma bint Jahm ibn Qays al-'Abdariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي عاصم",
+      "english": "Ibn Abi 'Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "حميد بن حماد بن أبي الحوراء",
+      "english": "Humayd ibn Hammad ibn Abi al-Hawra'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "خليدة بنت قعنب",
+      "english": "Khulayda bint Qa'nab",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

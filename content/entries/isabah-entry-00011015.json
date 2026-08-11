@@ -1,0 +1,68 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011015",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11015,
+  "title": {
+    "english": "Jamra, wife of Uyayna ibn Hisn al-Fazari",
+    "arabic_observed": "جمرة، امرأة عيينة بن حصن الفزاري"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011015-segment-0001",
+      "volume": 8,
+      "scan_page": 77,
+      "printed_page": 76,
+      "reader_page": 3989,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3989",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0077:6465e954ef428694",
+      "arabic": "١١٠١٥- جمرة، امرأة عيينة بن حصن الفزاري\nمذكورة في خبر قيس بن أبي حازم المرسل في قصة عيينة في أواخر ... كذا من آخر سعيد بن منصور ...\nالقسم الرابع",
+      "english": "11015. Jamra, wife of Uyayna ibn Hisn al-Fazari\n\nShe is mentioned in the mursal report of Qays ibn Abi Hazim, in the account of Uyayna, toward the end of ... Thus [it appears] from the end of Sa'id ibn Mansur ...\n\nSection Four",
+      "arabic_sha256": "6d6a93dde0a4e972671c5353e97c803f46cfd25c15b6e2d3cd606a03c558b6eb",
+      "english_sha256": "9d5bfa61305d80ad6d8b5f12bb29e0b7165b249e3cc49ca14f8ef761a9eb8d7e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "جمرة",
+      "english": "Jamra",
+      "kind": "person"
+    },
+    {
+      "arabic": "عيينة بن حصن الفزاري",
+      "english": "Uyayna ibn Hisn al-Fazari",
+      "kind": "person"
+    },
+    {
+      "arabic": "قيس بن أبي حازم",
+      "english": "Qays ibn Abi Hazim",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن منصور",
+      "english": "Sa'id ibn Mansur",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "source lacuna",
+      "arabic_span": "في أواخر ... كذا من آخر سعيد بن منصور ...",
+      "explanation": "The exact words represented by the Arabic ellipses cannot be recovered safely. The Urdu witness supports a general reference to the end of the final part of Sa'id ibn Mansur's work, but it cannot establish the lost canonical wording; the ellipses have therefore been preserved.",
+      "human_review_priority": "high",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0077:6465e954ef428694"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

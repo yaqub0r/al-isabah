@@ -1,0 +1,144 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011644",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11644,
+  "title": {
+    "english": "Qutayla bint al-Irbad:",
+    "arabic_observed": "قتيلة بنت العرباض:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011644-segment-0001",
+      "volume": 8,
+      "scan_page": 285,
+      "printed_page": 284,
+      "reader_page": 4197,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4197",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0285:3353d568d4038ffc",
+      "arabic": "١١٦٤٤- قتيلة بنت العرباض:\nمن بني مالك بن حسل «٤» .\n(١) أسد الغابة ت (٧٢١٦)، الاستيعاب ت (٣٥١٩)، الثقات ٣/ ٣٤٩، أعلام النساء ٤/ ١٩٠، تجريد أسماء الصحابة ٢/ ٢٩٧، تقريب التهذيب ٢/ ٦١١، تهذيب التهذيب ٢/ ٤٤٥، الكاشف ٣/ ٤٧٩، تهذيب الكمال ٣/ ١٦٩٤، خلاصة تهذيب الكمال ٣/ ٣٩٠، بقي بن مخلد ٩٩٦.\n(٢) أخرجه ابن عدي في الكمال ٥/ ١٩٨٧.\n(٣) في أ: أن يقولوا: ورب الكعبة ما شاء اللَّه.\n(٤) أسد الغابة ت (٧٢١٧) .",
+      "english": "11644—Qutayla bint al-Irbad:\n\nOf Banu Malik ibn Hisl.[4]\n\n[1] Usd al-Ghaba, entry 7216; al-Isti'ab, entry 3519; al-Thiqat, 3/349; A'lam al-Nisa', 4/190; al-Tajrid, 2/297; Taqrib al-Tahdhib, 2/611; Tahdhib al-Tahdhib, 2/445; al-Kashif, 3/479; Tahdhib al-Kamal, 3/1694; Khulasat Tahdhib al-Kamal, 3/390; Baqi ibn Makhlad, 996.\n\n[2] Ibn Adi transmitted it in al-Kamal, 5/1987.\n\n[3] In manuscript A: “to say: ‘By the Lord of the Ka'ba; whatever Allah wills.’”\n\n[4] Usd al-Ghaba, entry 7217.",
+      "arabic_sha256": "94d9d23fa05d3c481aeafd407222262e089b13e69fd03b2b136d211a3f06f704",
+      "english_sha256": "465b0a579f7791c64daa530899592d68c6c556550015b14f5a225215bbafa8d0",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011644-segment-0002",
+      "volume": 8,
+      "scan_page": 286,
+      "printed_page": 285,
+      "reader_page": 4198,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4198",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0286:43b7354f722c8b98",
+      "arabic": "لها ذكر أخرجها ابن مندة مختصرا، وتبعه أبو نعيم.",
+      "english": "She is mentioned; Ibn Manda included her briefly, and Abu Nu'aym followed him.",
+      "arabic_sha256": "d3017ac0f9320b87d1777a3e678b6218b938100107193c356dadfeab2a92886f",
+      "english_sha256": "12c675547cb0ead527e93b440ac3894e6c2e74f32d7d8e96a05f853b8b4b1daa",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الكعبة",
+      "english": "Ka'ba",
+      "kind": "place"
+    },
+    {
+      "arabic": "قتيلة بنت العرباض",
+      "english": "Qutayla bint al-Irbad",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني مالك بن حسل",
+      "english": "Banu Malik ibn Hisl",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عدي",
+      "english": "Ibn Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكمال",
+      "english": "al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

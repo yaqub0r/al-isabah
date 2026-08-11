@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010926",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10926,
+  "title": {
+    "english": "Barrah bint al-Harith al-Mustaliqiyya",
+    "arabic_observed": "برة بنت الحارث المصطلقية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010926-segment-0001",
+      "volume": 8,
+      "scan_page": 49,
+      "printed_page": 48,
+      "reader_page": 3961,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3961",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0049:960dd5cda8447117",
+      "arabic": "١٠٩٢٦- برة بنت الحارث المصطلقية ،\nهي جويرية أم المؤمنين. كان اسمها أوّلا برة فغيّره النبيّ ﷺ لما تزوجها. جاء ذلك عن ابن عباس، وقتادة. وأخرجه مسلم من طريق أخرى.",
+      "english": "10926 — Barrah bint al-Harith al-Mustaliqiyya\n\nShe is Juwayriya, Mother of the Believers. Her name was originally Barrah, but the Prophet—may Allah bless him and grant him peace—changed it when he married her. This is reported from Ibn Abbas and Qatada. Muslim transmitted it by another route.",
+      "arabic_sha256": "309e4931d30523fbdcf1a9118fcf95c621601ad1bf2680f81c4f60c37ac9dbc9",
+      "english_sha256": "8c2d89e3f86a312b4b4e92dff03cdf01b4e9a68004a4faec2282887326802088",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "برة بنت الحارث المصطلقية",
+      "english": "Barrah bint al-Harith al-Mustaliqiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "جويرية أم المؤمنين",
+      "english": "Juwayriya bint al-Harith al-Mustaliqiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عباس",
+      "english": "Ibn Abbas",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتادة",
+      "english": "Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

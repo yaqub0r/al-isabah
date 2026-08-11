@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011507",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11507,
+  "title": {
+    "english": "Amra bint Qays",
+    "arabic_observed": "عمرة بنت قيس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011507-segment-0001",
+      "volume": 8,
+      "scan_page": 246,
+      "printed_page": 245,
+      "reader_page": 4158,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4158",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0246:22e2ad2466062f85",
+      "arabic": "١١٥٠٧- عمرة بنت قيس\nبن عمرو الأنصاريّة «٤» .\nذكرها ابن حبيب في المبايعات، وهي والدة أبي شيخ بن ثابت أخي حسان، كذا قال ابن حبيب، وخالفه ابن سعد، فقال: اسم والدها مسعود كما سيأتي.",
+      "english": "11507—Amra bint Qays\nibn Amr al-Ansariyya.⁴\nIbn Habib included her among the women who pledged allegiance. She was the mother of Abu Shaykh ibn Thabit, the brother of Hassan—so Ibn Habib said. Ibn Sa'd disagreed with him, saying that her father's name was Mas'ud, as will be mentioned below.",
+      "arabic_sha256": "8a534f9ac581b3dd27dfa3659833ef2463d2cdbbfa08f5dab0bb94bb2b24f001",
+      "english_sha256": "74a27f438b3e2c86d6ff7548283c80a8b947c90818e251105280335f30dddc77",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو شيخ بن ثابت",
+      "english": "Abu Shaykh ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "حسان",
+      "english": "Hassan ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسعود",
+      "english": "Mas'ud ibn Qays",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

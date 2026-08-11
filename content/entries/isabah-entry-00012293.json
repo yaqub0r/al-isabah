@@ -1,0 +1,262 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012293",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12293,
+  "title": {
+    "english": "Umm Hisham bint Haritha ibn al-Nu'man al-Ansariyya[3]",
+    "arabic_observed": "أم هشام"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012293-segment-0001",
+      "volume": 8,
+      "scan_page": 488,
+      "printed_page": 487,
+      "reader_page": 4400,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4400",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0488:d4ef17ea9cc7916a",
+      "arabic": "١٢٢٩٣- أم هشام\nبنت حارثة بن النعمان الأنصاريّة «٣» .\nتقدّم نسبها في والدها. وقال أبو عمر: أم هاشم، وقيل أم هشام.\nقال أحمد بن زهير: سمعت أبي يقول عن أم هشام بنت حارثة: بايعت بيعة الرضوان، وأخرج مسلم من طريق حبيب بن عبد الرحمن، عن عبد اللَّه بن محمد بن معن، عن أبيه حارثة، قالت: كان تنّورنا وتنّور رسول اللَّه ﵌ واحدا»\n، وما حفظت\n(١) تقريب التهذيب ٢/ ٦٢٥، تجريد أسماء الصحابة ٢/ ٣٣٧، تهذيب التهذيب ١٢/ ٤٨١، الكاشف ٣/ ٤٦٧، تهذيب الكمال ٣/ ١٧٠٦، أسد الغابة ت (٧٦٢١) .\n(٢) أسد الغابة ت (٧٦٢٢) .\n(٣) أسد الغابة ت (٧٦٢٣)، ٤٠٣- الثقات ٣/ ٤٦٥- أعلام النساء ٥/ ٢٠١، ٢١١- تجريد أسماء الصحابة ٢/ ٣٣٧- الكاشف ٣/ ٤٩٢- تهذيب التهذيب ١٢/ ٤٨١- تهذيب الكمال ٣/ ١٧٠٦- الاستبصار ٦١- خلاصة تذهيب ٣/ ٤٠٤- تلقيح فهوم أهل الأثر ٣٧٠.\n(٤) أخرجه أحمد في المسند ٦/ ٤٣٥.",
+      "english": "12293 — Umm Hisham bint Haritha ibn al-Nu'man al-Ansariyya[3]\n\nHer lineage was given earlier in the entry on her father. Abu Umar said: “Umm Hashim”; it is also said “Umm Hisham.”\n\nAhmad ibn Zuhayr said: I heard my father say concerning Umm Hisham bint Haritha: “She pledged allegiance at the Pledge of al-Ridwan.” Muslim transmitted, through Habib ibn Abd al-Rahman, from Abd Allah ibn Muhammad ibn Ma'n, from the daughter of Haritha ibn al-Nu'man. She said: “Our oven and the oven of the Messenger of Allah, may Allah bless him and grant him peace, were one and the same, and I did not memorize…”\n\n[1] Taqrib al-Tahdhib, 2/625; al-Tajrid, 2/337; Tahdhib al-Tahdhib, 12/481; al-Kashif, 3/467; Tahdhib al-Kamal, 3/1706; Usd al-Ghaba, entry 7621.\n\n[2] Usd al-Ghaba, entry 7622.\n\n[3] Usd al-Ghaba, entry 7623, 403; al-Thiqat, 3/465; A'lam al-Nisa', 5/201, 211; al-Tajrid, 2/337; al-Kashif, 3/492; Tahdhib al-Tahdhib, 12/481; Tahdhib al-Kamal, 3/1706; al-Istibsar, 61; Khulasat Tadhhib, 3/404; Talqih Fuhum Ahl al-Athar, 370.\n\n[4] Transmitted by Ahmad in Musnad Ahmad, 6/435.",
+      "arabic_sha256": "50e069c68293d839a27c08415d8045ac812861f3f517dd4fe624ca42b1427ae6",
+      "english_sha256": "c99b3362dcacad90ffaaebfcf6d0e72dc155bb7f0275f52a98e349aabb5f6700",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012293-segment-0002",
+      "volume": 8,
+      "scan_page": 489,
+      "printed_page": 488,
+      "reader_page": 4401,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4401",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0489:11550dfff0eb14c4",
+      "arabic": "ق وَالْقُرْآنِ الْمَجِيدِ إلا من في رسول اللَّه ﵌ ... الحديث «١» .\nوأخرجه أيضا أصحاب السّنن من أوجه أخرى، عن ابن هشام «٢» بنت حارثة بن النّعمان، ومنهم من اقتصر على القصّة الثانية.\nوقد تقدّم في أم هاشم ما وقع لابن عبد البرّ فيها، وقال ابن سعد: أم هشام بنت حارثة من بني مالك بن النّجّار، وأمها أم خالد بن يعيش بن قيس بن زيد مناة، تزوّجها عمارة بن الحبحاب بن سعد بن قيس، أسلمت وبايعت، وساق حديث التّنور عن الواقدي بسند له إليها، وساقه مطوّلا من طريق ابن إسحاق بسنده إلى يحيى بن عبد اللَّه عنها بطوله.",
+      "english": "“Qaf. By the Glorious Qur'an”—only from the mouth of the Messenger of Allah, may Allah bless him and grant him peace ... the hadith.[1]\n\nThe compilers of the Sunan also transmitted it through other routes from Umm Hisham bint Haritha ibn al-Nu'man.[2] Some of them confined themselves to the second account.\n\nWhat occurred in Ibn 'Abd al-Barr's account of her has already been discussed under Umm Hashim. Ibn Sa'd said: “Umm Hisham bint Haritha belonged to Banu Malik ibn al-Najjar. Her mother was Umm Khalid bint Ya'ish ibn Qays ibn Zayd Manat. 'Umara ibn al-Habhab ibn Sa'd ibn Qays married her. She embraced Islam and gave the pledge of allegiance.” He related the hadith of the oven from al-Waqidi, through an isnad of his leading to her, and related it at length through Ibn Ishaq, with his isnad to Yahya ibn 'Abd Allah, from her, in its entirety.",
+      "arabic_sha256": "492140b2d2030a44eecc9a63ac787eac11bd335909a814a14ce32035c35a3966",
+      "english_sha256": "56802ac004606ecfd8dac8f24cb3ae7da8379a3092cb5c8ae136cd814a12e22c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هشام بنت حارثة بن النعمان الأنصارية",
+      "english": "Umm Hisham bint Haritha ibn al-Nu'man al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هاشم",
+      "english": "Umm Hashim bint Haritha ibn al-Nu'man al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "حارثة بن النعمان",
+      "english": "Haritha ibn al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحمد بن زهير",
+      "english": "Ahmad ibn Zuhayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "بيعة الرضوان",
+      "english": "Pledge of al-Ridwan",
+      "kind": "other"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim ibn al-Hajjaj",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبيب بن عبد الرحمن",
+      "english": "Habib ibn Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن محمد بن معن",
+      "english": "Abd Allah ibn Muhammad ibn Ma'n",
+      "kind": "person"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تذهيب",
+      "english": "Khulasat Tadhhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad ibn Hanbal",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسند",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "الْقُرْآنِ الْمَجِيدِ",
+      "english": "Qur'an",
+      "kind": "work"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "السّنن",
+      "english": "al-Sunan",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن هشام",
+      "english": "Ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هشام بنت حارثة بن النّعمان",
+      "english": "Umm Hisham bint Haritha ibn al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هشام",
+      "english": "Umm Hisham bint Haritha ibn al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هاشم",
+      "english": "Umm Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبد البرّ",
+      "english": "Ibn 'Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني مالك بن النّجّار",
+      "english": "Banu Malik ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم خالد بنت يعيش بن قيس بن زيد مناة",
+      "english": "Umm Khalid bint Ya'ish ibn Qays ibn Zayd Manat",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمارة بن الحبحاب بن سعد بن قيس",
+      "english": "'Umara ibn al-Habhab ibn Sa'd ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن عبد اللَّه",
+      "english": "Yahya ibn 'Abd Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "footnote_callout",
+      "arabic_span": "(٤) أخرجه أحمد في المسند ٦/٤٣٥.",
+      "explanation": "The note clearly pertains to the Umm Hisham report, but no [4] callout appears in the supplied Arabic body and the evidence does not establish its original position. The note is therefore retained without an invented callout.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0488:d4ef17ea9cc7916a"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

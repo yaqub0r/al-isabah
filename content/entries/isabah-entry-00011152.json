@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011152",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11152,
+  "title": {
+    "english": "Durra bint Abi Sufyan",
+    "arabic_observed": "درّة بنت أبي سفيان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011152-segment-0001",
+      "volume": 8,
+      "scan_page": 127,
+      "printed_page": 126,
+      "reader_page": 4039,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4039",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0127:99be53fc5d48a677",
+      "arabic": "١١١٥٢- درّة بنت أبي سفيان\nصخر بن حرب بن أمية بن عبد شمس بن عبد مناف الأموية «٢»، أخت أم حبيبة التي قالت عنها للنّبيّ ﷺ: انكح أختي بنت أبي سفيان.\nوردت تسميتها في بعض طريق الحديث المذكور عند أبي موسى. وأخرج من طريق عبد الجبار بن العلاء، عن سفيان، عن هشام بن عروة، عن زينب بنت أبي سلمة، قالت:\nقالت أم حبيبة للنّبيّ ﷺ: هل لك في درّة بنت أبي سفيان؟ الحديث. وقيل اسمها عزة. قال أبو عمر: هو الأشهر. وقيل اسمها حمنة، كما تقدم.",
+      "english": "11152—Durra bint Abi Sufyan\n\nSakhr ibn Harb ibn Umayya ibn 'Abd Shams ibn 'Abd Manaf, the Umayyad.² She was the sister of Umm Habiba, who said to the Prophet, may Allah bless him and grant him peace, concerning her: “Marry my sister, the daughter of Abu Sufyan.”\n\nHer name is given in one of the transmission routes of the aforementioned hadith cited by Abu Musa. He transmitted by way of 'Abd al-Jabbar ibn al-'Ala, from Sufyan, from Hisham ibn 'Urwa, from Zaynab bint Abi Salama, who said:\n\nUmm Habiba said to the Prophet, may Allah bless him and grant him peace: “Would you be interested in Durra bint Abi Sufyan?”—and she related the hadith. It is also said that her name was 'Azza. Abu 'Umar said: “That is the better-known name.” It is also said that her name was Hamna, as stated previously.",
+      "arabic_sha256": "a398809c41dfcff13e2c29ad72dc830bc17474c7d412f3386758c8366c0e538f",
+      "english_sha256": "7c0ac69b2668a75c9e88d8c5c9e4cda9a7b6f8a895d8a00ddf7a2cdcca6339e5",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأموية",
+      "english": "Banu Umayya",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الجبار بن العلاء",
+      "english": "'Abd al-Jabbar ibn al-'Ala",
+      "kind": "person"
+    },
+    {
+      "arabic": "سفيان",
+      "english": "Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن عروة",
+      "english": "Hisham ibn 'Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت أبي سلمة",
+      "english": "Zaynab bint Abi Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "عزة",
+      "english": "'Azza bint Abi Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمنة",
+      "english": "Hamna bint Abi Sufyan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

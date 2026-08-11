@@ -1,0 +1,108 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012151",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12151,
+  "title": {
+    "english": "Umm Abd Allah:",
+    "arabic_observed": "أم عبد اللَّه:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012151-segment-0001",
+      "volume": 8,
+      "scan_page": 431,
+      "printed_page": 430,
+      "reader_page": 4343,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4343",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0431:8da598428f73287b",
+      "arabic": "١٢١٥١- أم عبد اللَّه:\nوالدة عبد اللَّه بن أنيس الجهنيّة «٤»، زوج كعب بن مالك الأنصاريّ.\nروى ابن وهب، عن عمرو بن الحارث، عن يحيى بن سعيد، عن عبد اللَّه عن أمه، وكانت تحت كعب بن مالك- أنّ رسول اللَّه ﵌ خرج على كعب بن مالك وهو ينشد في مسجد رسول اللَّه ﵌، فلما رآه كأنه انقبض، فقال: أنشدنا، فأنشد ... الحديث، أخرجه ابن مندة.",
+      "english": "12151 — Umm Abd Allah:\n\nThe mother of Abd Allah ibn Unays; she was of Juhayna and was the wife of Ka'b ibn Malik al-Ansari. (4)\n\nIbn Wahb related from Amr ibn al-Harith, from Yahya ibn Sa'id, from Abd Allah, from his mother—who was married to Ka'b ibn Malik—that the Messenger of Allah—may Allah bless him and grant him peace—came upon Ka'b ibn Malik while he was reciting poetry in the mosque of the Messenger of Allah—may Allah bless him and grant him peace. When Ka'b saw him, he seemed to draw back. The Messenger of Allah said, “Recite to us.” So he recited … the hadith. Ibn Manda transmitted it.",
+      "arabic_sha256": "d8039d7fcfa4d05e241edadbbd9a5f2a5cd3dcc6797970596c693bbc0cb723f2",
+      "english_sha256": "24dcc6bffa51a545495a6b05c63c8b114de438b9664f408465012ca654b5ea62",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم عبد الله، امرأة من بني زهرة",
+      "english": "Umm Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن أنيس",
+      "english": "Abd Allah ibn Unays",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجهنيّة",
+      "english": "Juhayna",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "كعب بن مالك الأنصاري",
+      "english": "Ka'b ibn Malik al-Ansari",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن وهب",
+      "english": "Ibn Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن الحارث",
+      "english": "Amr ibn al-Harith",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن سعيد",
+      "english": "Yahya ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله",
+      "english": "Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبد الله، امرأة نعيم بن النحام",
+      "english": "Umm Abd Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "identity",
+      "arabic_span": "عن عبد اللَّه عن أمه",
+      "explanation": "The isnad names this transmitter only as Abd Allah. The supplied witnesses do not establish whether he is Abd Allah ibn Unays or someone else, so the translation preserves the bare name without expansion.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0431:8da598428f73287b"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

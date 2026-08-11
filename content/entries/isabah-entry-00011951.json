@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011951",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11951,
+  "title": {
+    "english": "Umm al-Harith bint al-Nu'man ibn Khansa'.",
+    "arabic_observed": "أم الحارث بنت النّعمان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011951-segment-0001",
+      "volume": 8,
+      "scan_page": 373,
+      "printed_page": 372,
+      "reader_page": 4285,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4285",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0373:8358d8799676c9a7",
+      "arabic": "١١٩٥١- أم الحارث بنت النّعمان\nبن خنساء، ذكرها ابن سعد في المبايعات.",
+      "english": "11951—Umm al-Harith bint al-Nu'man ibn Khansa'.\n\nIbn Sa'd mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "5b8fee2072807f81a55ac01e48f88608d34671b57379ab676cc78bcdcda1b5f2",
+      "english_sha256": "043071b95f78217012aa2d428a6f97df38b3c260003a4ebd904b7cd2cd605da0",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الحارث بنت النعمان بن خنساء",
+      "english": "Umm al-Harith bint al-Nu'man ibn Khansa'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الحارث",
+      "english": "Umm al-Harith",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011664",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11664,
+  "title": {
+    "english": "Kabsha bint Aws",
+    "arabic_observed": "كبشة بنت أوس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011664-segment-0001",
+      "volume": 8,
+      "scan_page": 294,
+      "printed_page": 293,
+      "reader_page": 4206,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4206",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0294:d8f3777ebd93ed59",
+      "arabic": "١١٦٦٤- كبشة بنت أوس\nبن شريق الأنصارية، من بني خطمة «٢»، وهي أم خزيمة بن ثابت. ذكرها ابن حبيب في المبايعات.",
+      "english": "11664 — Kabsha bint Aws\n\nibn Shariq, the Ansari woman of Banu Khatma.[2] She was the mother of Khuzayma ibn Thabit. Ibn Habib included her among the women who pledged allegiance.",
+      "arabic_sha256": "840bfd9cb0daed05c43f65fd2d341cdd5d976aa28fcb7603744db973d306a11e",
+      "english_sha256": "cca57b28220c94f4cb2de5bdf686e1108a3d5365adb85c5c4cd5fb81e53ab359",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "بني خطمة",
+      "english": "Banu Khatma",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "خزيمة بن ثابت",
+      "english": "Khuzayma ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011839",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11839,
+  "title": {
+    "english": "Huzayla bint Utba ibn Amr ibn Khudayj ibn Amir ibn Jusham ibn al-Harith ibn al-Khazraj, the Ansari woman",
+    "arabic_observed": "هزيلة بنت عتبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011839-segment-0001",
+      "volume": 8,
+      "scan_page": 341,
+      "printed_page": 340,
+      "reader_page": 4253,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4253",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0341:8bab6ecadd2a4180",
+      "arabic": "١١٨٣٩- هزيلة بنت عتبة\nبن عمرو بن خديج بن عامر بن جشم بن الحارث «٢» بن الخزرج الأنصاريّة. هي والدة زيد بن خارجة الّذي تكلم بعد الموت في زمن عثمان. قال ابن سعد: أسلمت وبايعت.",
+      "english": "11839 — Huzayla bint Utba ibn Amr ibn Khudayj ibn Amir ibn Jusham ibn al-Harith ibn al-Khazraj, the Ansari woman\n\nShe was the mother of Zayd ibn Kharija, who spoke after death during the time of Uthman. Ibn Sa'd said: She embraced Islam and pledged allegiance.",
+      "arabic_sha256": "95cac511302808bff7baafd77cedca131786ca1fa9584eb4b179925453ff473d",
+      "english_sha256": "3fab21c9ead7b10d6d52bc8012c89c5f43b7b0bada7475616d7268816db8dbb5",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "هزيلة بنت عتبة بن عمرو بن خديج بن عامر بن جشم بن الحارث بن الخزرج",
+      "english": "Huzayla bint Utba ibn Amr ibn Khudayj ibn Amir ibn Jusham ibn al-Harith ibn al-Khazraj",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن خارجة",
+      "english": "Zayd ibn Kharija",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان",
+      "english": "Uthman",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصاريّة",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011599",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11599,
+  "title": {
+    "english": "Fatima bint Safwan",
+    "arabic_observed": "فاطمة بنت صفوان"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011599-segment-0001",
+      "volume": 8,
+      "scan_page": 273,
+      "printed_page": 272,
+      "reader_page": 4185,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4185",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0273:d377e72fdb7386de",
+      "arabic": "١١٥٩٩- فاطمة بنت صفوان\nبن أمية بن محرث بن حمل بن شق «٤» بن رقبة بن مخدج «٥» الكنانية، امرأة عمرو بن أبي أحيحة سعيد بن العاص.\nذكرها ابن إسحاق في تسمية من هاجر من بني أمية إلى الحبشة، فقال: وعمرو بن سعيد ومعه امرأته فاطمة بنت صفوان الكنانية، وماتت بها، ونسبها ابن سعد وقال: أسلمت بمكة قديما.",
+      "english": "11599—Fatima bint Safwan\n\nibn Umayya ibn Muhrith ibn Haml ibn Shiqq(4) ibn Raqaba ibn Mukhdaj(5) al-Kinaniyya, wife of Amr, son of Abu Uhayha Sa'id ibn al-As.\n\nIbn Ishaq mentioned her when naming those of Banu Umayya who emigrated to Abyssinia. He said: “Amr ibn Sa'id, accompanied by his wife Fatima bint Safwan al-Kinaniyya.” She died there. Ibn Sa'd gave her lineage and said: “She embraced Islam early in Mecca.”",
+      "arabic_sha256": "bac42353d5242e752a8afbf9f37bfecfedeeada0b3aedce9b555352a8a50cd29",
+      "english_sha256": "cd5b6e9765f74ba1fad2071cb371ac66e3cf8ae7fd6723cfa770cd741ef1c9c2",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن أبي أحيحة سعيد بن العاص",
+      "english": "Amr ibn Sa'id ibn al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو أحيحة سعيد بن العاص",
+      "english": "Abu Uhayha Sa'id ibn al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو أمية",
+      "english": "Banu Umayya",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

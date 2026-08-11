@@ -1,0 +1,127 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011841",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11841,
+  "title": {
+    "english": "Humayna bint Khalaf ibn As'ad ibn Amir ibn Bayada ibn Rabi', the Khuza'i woman",
+    "arabic_observed": "همينة بنت خلف «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011841-segment-0001",
+      "volume": 8,
+      "scan_page": 341,
+      "printed_page": 340,
+      "reader_page": 4253,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4253",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0341:8bab6ecadd2a4180",
+      "arabic": "١١٨٤١- همينة بنت خلف «٤»\nبن أسعد بن عامر بن بياضة بن ربيع الخزاعيّة.\nقال ابن سعد: أسلمت قديما وهاجرت إلى الحبشة مع زوجها خالد بن سعيد،\n(١) أسد الغابة ت (٧٣٣٧) .\n(٢) أسد الغابة ت (٧٣٣٨) .\n(٣) أسد الغابة ت (٧٣٣٩) .\n(٤) أسد الغابة ت (٧٣٤٠)، الثقات ٣/ ٤٤٠- تجريد أسماء الصحابة ٢/ ٣٠٩.",
+      "english": "11841 — Humayna bint Khalaf ibn As'ad ibn Amir ibn Bayada ibn Rabi', the Khuza'i woman\n\nIbn Sa'd said: She embraced Islam at an early date and migrated to Abyssinia with her husband, Khalid ibn Sa'id,\n\n(1) Usd al-Ghaba, entry 7337.\n\n(2) Usd al-Ghaba, entry 7338.\n\n(3) Usd al-Ghaba, entry 7339.\n\n(4) Usd al-Ghaba, entry 7340; al-Thiqat, 3/440; al-Tajrid, 2/309.",
+      "arabic_sha256": "fcb2e26c5cce9a73e16a3bdd60586828e95c71c2d5f65b753d9ccb2690e1a32b",
+      "english_sha256": "8b801f3d5df4ace2dd96b58a89fb9ae60ffb3c3d3f9264bfeda5607b49af1a54",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00011841-segment-0002",
+      "volume": 8,
+      "scan_page": 342,
+      "printed_page": 341,
+      "reader_page": 4254,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4254",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0342:530f841f48a5cef3",
+      "arabic": "فولدت له هناك سعيدا وأمة، فتزوج الزّبير بعد ذلك أمة. انتهى. وقد تقدّمت في أمية بالهمزة بدل الهاء.",
+      "english": "She bore him there Sa'id and Ama; al-Zubayr later married Ama. End quote. She has already been mentioned under Umayya, with an initial hamza in place of the ha.",
+      "arabic_sha256": "d44a00c800d3156fe4f95b632c9d844eacf391578caf4504bfe8d1e965f510f3",
+      "english_sha256": "0febfca6e25e71b72620f8375f923a449158b7d510ab3fcd8a79646e582edfe3",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "همينة بنت خلف بن أسعد بن عامر بن بياضة بن ربيع",
+      "english": "Humayna bint Khalaf ibn As'ad ibn Amir ibn Bayada ibn Rabi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "خالد بن سعيد",
+      "english": "Khalid ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "الخزاعيّة",
+      "english": "Khuza'a",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "سعيد",
+      "english": "Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمة",
+      "english": "Ama",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمية",
+      "english": "Umayya bint Khalaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "حمزة",
+      "english": "Hamza",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "أمة",
+      "explanation": "The canonical text and the Urdu witness both give the name without vowel marks, so they do not securely establish its vocalization. Ama is retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0342:530f841f48a5cef3"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

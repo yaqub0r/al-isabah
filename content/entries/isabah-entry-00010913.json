@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010913",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10913,
+  "title": {
+    "english": "Anisa bint Ka'b",
+    "arabic_observed": "أنيسة بنت كعب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010913-segment-0001",
+      "volume": 8,
+      "scan_page": 46,
+      "printed_page": 45,
+      "reader_page": 3958,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3958",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0046:fff2741a526376cd",
+      "arabic": "١٠٩١٣- أنيسة بنت كعب\nأم عمارة، قالت: ما لنا لا نذكر بخير؟ فأنزل «١» اللَّه تعالى: إِنَّ الْمُسْلِمِينَ وَالْمُسْلِماتِ ... الآية [الأحزاب: ٢٥]، هكذا أسماءها أبو الوفاء البغدادي في التفسير، عن مقاتل، وهو وهم، وإنما هي نسيبة، أولها نون وموحدة مصغرة، قاله أبو موسى:\nقلت: والحديث مشهور لأم عمارة.\nحرف الباء الموحدة\nالقسم الأول",
+      "english": "10913—Anisa bint Ka'b\n\nUmm 'Umara, who said, “Why are we not mentioned favorably?” Allah Most High then revealed: “Indeed, the Muslim men and the Muslim women…” to the end of the verse [al-Ahzab 35].¹ Abu al-Wafa al-Baghdadi mentioned her thus in his Tafsir, transmitting from Muqatil, but this is an error. Rather, she is Nusayba: the name begins with nun, contains a single-dotted ba, and is in the diminutive form. This was stated by Abu Musa.\n\nI say: This hadith is well known as a report of Umm 'Umara.\n\nTHE LETTER BA WITH ONE DOT\n\nSECTION ONE",
+      "arabic_sha256": "446e5d8479aa4d7fc4127bb0a2c8f2266c4ba7e9bad81ee300ea279290b5873c",
+      "english_sha256": "41d8948647320feaaf49774dedd451d8f451984dbed526bb6a11f2fcf053f09f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أنيسة بنت كعب",
+      "english": "Anisa bint Ka'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمارة",
+      "english": "Umm 'Umara",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الأحزاب",
+      "english": "al-Ahzab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو الوفاء البغدادي",
+      "english": "Abu al-Wafa al-Baghdadi",
+      "kind": "person"
+    },
+    {
+      "arabic": "التفسير",
+      "english": "Tafsir",
+      "kind": "work"
+    },
+    {
+      "arabic": "مقاتل",
+      "english": "Muqatil",
+      "kind": "person"
+    },
+    {
+      "arabic": "نسيبة",
+      "english": "Nusayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011818",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11818,
+  "title": {
+    "english": "Nu'm:",
+    "arabic_observed": "نعم:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011818-segment-0001",
+      "volume": 8,
+      "scan_page": 336,
+      "printed_page": 335,
+      "reader_page": 4248,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4248",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0336:5668b6390c509ad2",
+      "arabic": "١١٨١٨- نعم:\nبضم النون، بنت حسّان، امرأة شماس بن عثمان المخزوميّ «٤» .\nأنشد لها ابن إسحاق أبياتا ترثي زوجها لما استشهد بأحد:\n(١) أسد الغابة ت (٧٣٢٠) .\n(٢) أسد الغابة ت (٧٣٢١)، الثقات ٣/ ٤٢٤، أعلام النساء ٥/ ١٧٥، تجريد أسماء الصحابة ٢/ ٣٠٨.\n(٣) أسد الغابة ت (٧٣٢٢) .\n(٤) أسد الغابة ت (٧٣٢٣) .",
+      "english": "11818—Nu'm:\nWith the nun bearing a damma; daughter of Hassan and wife of Shammas ibn Uthman al-Makhzumi. [4]\n\nIbn Ishaq cited verses of hers in which she lamented her husband when he was martyred at Uhud:\n\n[1] Usd al-Ghaba, entry no. 7320.\n\n[2] Usd al-Ghaba, entry no. 7321; al-Thiqat, 3/424; A'lam al-Nisa, 5/175; al-Tajrid, 2/308.\n\n[3] Usd al-Ghaba, entry no. 7322.\n\n[4] Usd al-Ghaba, entry no. 7323.",
+      "arabic_sha256": "6677dc51bed2aca84c36a6fa1145b55ac84a1881ba3e6843ada00841e357a3ec",
+      "english_sha256": "a56f6aff9720663f1fba6a107cc259fa51b24eac19611b7661f16e9255226ab1",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011818-segment-0002",
+      "volume": 8,
+      "scan_page": 337,
+      "printed_page": 336,
+      "reader_page": 4249,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4249",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0337:e71cb7c477091877",
+      "arabic": "يا عين جودي بدمع غير إبساس ... على كريم من الفتيان لبّاس\nصعب البديهة ميمون نقيبته ... حمّال ألوية ركّاب أفراس\nأقول لمّا خلت منه مجالسه ... لا يبعد اللَّه منّا قرب شمّاس «١» .\n[البسيط] استدركها ابن الدّباغ عن أبي علي الغسّاني.",
+      "english": "O eye, pour forth unstinting tears\nfor a noble youth, ever clad in battle gear;\nformidable when taken unawares, blessed in disposition,\na bearer of standards, a rider of horses.\nI say, when his gathering places were left empty without him:\n“May Allah not make Shammas's nearness distant from us.”¹\n[al-Basit]\n\nIbn al-Dabbagh added her, on the authority of Abu Ali al-Ghassani.",
+      "arabic_sha256": "adacb9ea92311476166117b1019151dc4fc8366398736a6ef7a2f61839782431",
+      "english_sha256": "fa3ac176aa33e1a782c95d42f0534174311aaae54ed38fe7eef49311c15ab574",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "شماس بن عثمان المخزومي",
+      "english": "Shammas ibn Uthman al-Makhzumi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن إسحاق",
+      "english": "Ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "شمّاس",
+      "english": "Shammas",
+      "kind": "person"
+    },
+    {
+      "arabic": "البسيط",
+      "english": "al-Basit",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن الدباغ",
+      "english": "Ibn al-Dabbagh",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو علي الغساني",
+      "english": "Abu Ali al-Ghassani",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

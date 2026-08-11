@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011969",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11969,
+  "title": {
+    "english": "Umm Habiba:",
+    "arabic_observed": "أم حبيبة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011969-segment-0001",
+      "volume": 8,
+      "scan_page": 376,
+      "printed_page": 375,
+      "reader_page": 4288,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4288",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0376:cf997514466e4dfb",
+      "arabic": "١١٩٦٩- أم حبيبة:\nمولاة أم عطية «١» .\nقالت: كنت في النسوة اللاتي أهدين بعض بنات النبي ﵌، فقال: «اصببن إذا صببتنّ على رأسها ثلاثا في الغسل من الجنابة» .\nأخرجه أحمد والطّبرانيّ، من طريق شريك. عن عبد الملك بن أبي سليمان عنها، فوقع عند أحمد أم حبيبة، وعند الطبراني أم حبيب.",
+      "english": "11969—Umm Habiba:\n\nA freedwoman of Umm Atiyya.(1)\n\nShe said: I was among the women who escorted one of the daughters of the Prophet, may Allah bless him and grant him peace, as a bride. He said: “When you pour water over her head during the bath for major ritual impurity, pour it three times.”\n\nAhmad and al-Tabarani transmitted it by way of Sharik, from Abd al-Malik ibn Abi Sulayman, from her. In Ahmad's version the name appears as Umm Habiba, while in al-Tabarani's it appears as Umm Habib.",
+      "arabic_sha256": "c2d2440d5710ad1bf40efad108f3cdc08633acf5a464914458012c54a4a3e340",
+      "english_sha256": "36c116fc09cee90af2492979e2a117c7890f984217a5552caea8a7d4d420df62",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم حبيبة",
+      "english": "Umm Habiba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عطية",
+      "english": "Umm Atiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "شريك",
+      "english": "Sharik",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الملك بن أبي سليمان",
+      "english": "Abd al-Malik ibn Abi Sulayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيب",
+      "english": "Umm Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "مالك",
+      "english": "Malik",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

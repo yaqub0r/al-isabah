@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012009",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12009,
+  "title": {
+    "english": "Umm Khunas:",
+    "arabic_observed": "أم خناس:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012009-segment-0001",
+      "volume": 8,
+      "scan_page": 387,
+      "printed_page": 386,
+      "reader_page": 4299,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4299",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0387:fcea5e14ed084782",
+      "arabic": "١٢٠٠٩- أم خناس:\nبضم أوله وتخفيف النون «٢» . قال ابن ماكولا: هي امرأة مسعود، لها صحبة.",
+      "english": "12009—Umm Khunas:\n\nThe first letter bears a damma, and the nun is ungeminated [2]. Ibn Makula said: “She was the wife of Mas'ud and was a Companion.”",
+      "arabic_sha256": "057770d1984994aa6c35513a7d119fef5255ba9c689d4346f98bd47125c145c0",
+      "english_sha256": "aff5fba3c709ac19459c4852c2ac42a606f0c186367335362832892bd164f5da",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم خناس",
+      "english": "Umm Khunas",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماكولا",
+      "english": "Ibn Makula",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسعود",
+      "english": "Mas'ud",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011520",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11520,
+  "title": {
+    "english": "Amra bint Yazid",
+    "arabic_observed": "عمرة بنت يزيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011520-segment-0001",
+      "volume": 8,
+      "scan_page": 248,
+      "printed_page": 247,
+      "reader_page": 4160,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4160",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0248:3d2d89bab4de13b0",
+      "arabic": "١١٥٢٠- عمرة بنت يزيد\nبن الجون «٥» .\nيقال: تزوّجها رسول اللَّه ﵌ فبلغه أنّ بها برصا فطلّقها ولم يدخل بها.\nوقيل: إنها استعاذت منه، فقال: «لقد عذت بمعاذ»، فطلّقها، ثم أمر أسامة بن زيد فمتّعها بثلاثة أثواب. رواه هشام بن عروة عن أبيه عن عائشة.",
+      "english": "11520—Amra bint Yazid\nibn al-Jawn.(5)\n\nIt is said that the Messenger of Allah, may Allah bless him and grant him peace, married her, but when he learned that she had baras, he divorced her without consummating the marriage.\n\nIt is also said that she sought refuge from him, whereupon he said, “You have indeed sought refuge with One who grants refuge.” He then divorced her and instructed Usama ibn Zayd to give her a parting gift of three garments. Hisham ibn Urwa related this from his father, from Aisha.",
+      "arabic_sha256": "a9d01323c5ebf7a5130806ac387142148ce3d8f364e7aade573cd264305746fb",
+      "english_sha256": "9019c9bd2a8b7ae0af8adc793205a087d50027e94afcfe42b9fe9a3ab5dc023b",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسامة بن زيد",
+      "english": "Usama ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام بن عروة",
+      "english": "Hisham ibn Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

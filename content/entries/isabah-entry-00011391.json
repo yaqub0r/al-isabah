@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011391",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11391,
+  "title": {
+    "english": "Shakhbara (1)",
+    "arabic_observed": "شخبرة «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011391-segment-0001",
+      "volume": 8,
+      "scan_page": 208,
+      "printed_page": 207,
+      "reader_page": 4120,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4120",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0208:6c4b2990b5b78fb8",
+      "arabic": "١١٣٩١- شخبرة «١»\nمن بني تميم بن أسد.\nذكرها المستغفريّ، واستدركها أبو موسى، وهو تصحيف. وقد تقدمت في سخبرة في السين «٢» على الصواب.",
+      "english": "11391 — Shakhbara (1)\n\nOf Banu Tamim ibn Asad.\n\nAl-Mustaghfiri mentioned her, and Abu Musa added her as an omitted entry. This is a scribal corruption. She has already appeared correctly under Sakhbara, under the letter sin (2).",
+      "arabic_sha256": "ad12ab6d6e9c46f08eb5ae8c020d17aa12ace02b95086bb6df1867ea2a786c58",
+      "english_sha256": "f18dcb49144c1dc6fa94b36583ad1ed6aa55e43befeb796baf05ea98c92ea749",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "شخبرة",
+      "english": "Shakhbara",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني تميم بن أسد",
+      "english": "Banu Tamim ibn Asad",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "سخبرة",
+      "english": "Sakhbara",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

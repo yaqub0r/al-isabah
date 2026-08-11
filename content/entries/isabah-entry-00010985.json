@@ -1,0 +1,130 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010985",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10985,
+  "title": {
+    "english": "Juml,",
+    "arabic_observed": "جمل ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010985-segment-0001",
+      "volume": 8,
+      "scan_page": 66,
+      "printed_page": 65,
+      "reader_page": 3978,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3978",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0066:d8f9a799c69539c9",
+      "arabic": "١٠٩٨٥- جمل ،\nبضم أوله وسكون الميم، وقيل بصيغة التصغير، بنت يسار المزنية «٣»، أخت معقل بن يسار- يقال هي التي عضلها أخوها لما طلقها زوجها، ثم أراد أن يعيدها فمنعه.\nأخرج حديثها البخاريّ، من طريق إبراهيم بن طهمان، عن يونس بن عبيد، عن الحسن، قال في هذه الآية: حدثني معقل بن يسار أنها نزلت فيه، قال: كنت زوّجت أختا لي من رجل، فطلقها، حتى إذا انقضت عدّتها جاء يخطبها، فقلت له: زوّجتك وأكرمتك وأفرشتك، فطلقتها ثم جئت تخطبها؟ لا واللَّه لا تعود إليها أبدا، قال: وكان رجلا لا بأس به، وكانت المرأة لا تكره أن ترجع إليه، فأنزل اللَّه هذه الآية: فَلا تَعْضُلُوهُنَّ أَنْ يَنْكِحْنَ أَزْواجَهُنَّ [البقرة ٢٣٢] فقلت: الآن أفعل يا رسول اللَّه. فزوّجها إياه، ولم يقع تسميتها في الصحيح.\nوأخرج الطّبريّ من طريق ابن جريج أن اسمها جميلة، وقال الكلبي: اسمها جميل، وضبطها ابن ماكولا بالتصغير. وقال الثعلبي: اسمها جميلة، ويقال اسمها ليلى.",
+      "english": "10985 — Juml,\n\nwith a damma on its first letter and the mim unvocalized; it is also said in the diminutive form, Jumayl, bint Yasar al-Muzaniyya (3), sister of Ma'qil ibn Yasar. It is said that she was the woman whom her brother prevented from remarrying her husband when, after divorcing her, he wished to take her back.\n\nAl-Bukhari transmitted her hadith by way of Ibrahim ibn Tahman, from Yunus ibn 'Ubayd, from al-Hasan, who said concerning this verse: “Ma'qil ibn Yasar told me that it was revealed concerning him. He said: ‘I had married a sister of mine to a man, but he divorced her. Then, when her waiting period had expired, he came to propose to her. I said to him, “I gave her to you in marriage, honored you, and made her your wife, but you divorced her; then you came to propose to her! No, by Allah, you will never return to her.”’ He said: ‘The man was unobjectionable, and the woman did not dislike returning to him. Then Allah revealed this verse: “Do not prevent them from marrying their husbands” [al-Baqara 2:232]. I said, “Now I shall do so, O Messenger of Allah.”’ He then married her to him.” Her name is not given in the Sahih.\n\nAl-Tabari transmitted by way of Ibn Jurayj that her name was Jamila. Al-Kalbi said that her name was Jamil, and Ibn Makula vocalized it in the diminutive form. Al-Tha'labi said: “Her name was Jamila, and it is also said that her name was Layla.”",
+      "arabic_sha256": "c496013bb7d905f393a0fde069f2e41ed3ecd797a21b09d60a004dddf37c7654",
+      "english_sha256": "f0e4103504e0ecf2ac531fbf4d6565253137ea605a42f917ced4abd5d6c7f273",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "معقل بن يسار",
+      "english": "Ma'qil ibn Yasar",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "إبراهيم بن طهمان",
+      "english": "Ibrahim ibn Tahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن عبيد",
+      "english": "Yunus ibn 'Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن",
+      "english": "al-Hasan",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "البقرة",
+      "english": "al-Baqara",
+      "kind": "work"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "Sahih al-Bukhari",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبري",
+      "english": "al-Tabari",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن جريج",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميلة",
+      "english": "Jamila bint Yasar al-Muzaniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكلبي",
+      "english": "al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميل",
+      "english": "Jamil bint Yasar al-Muzaniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماكولا",
+      "english": "Ibn Makula",
+      "kind": "person"
+    },
+    {
+      "arabic": "الثعلبي",
+      "english": "al-Tha'labi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ليلى",
+      "english": "Layla bint Yasar al-Muzaniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميل",
+      "english": "Jumayl bint Yasar al-Muzaniyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

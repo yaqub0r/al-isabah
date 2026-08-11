@@ -1,0 +1,140 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011351",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11351,
+  "title": {
+    "english": "Sahla bint Sa'd al-Sa'idiyya (3),",
+    "arabic_observed": "سهلة بنت سعد الساعدية «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011351-segment-0001",
+      "volume": 8,
+      "scan_page": 193,
+      "printed_page": 192,
+      "reader_page": 4105,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4105",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0193:2252cc322c1708c7",
+      "arabic": "١١٣٥١- سهلة بنت سعد الساعدية «٣»\n، أخت سهل الصحابي المشهور.\nذكرها ابن مندة،\nوأخرج من طريق ابن لهيعة، عن عبد اللَّه بن هبيرة، عن سهلة بنت سعد الساعدية، أنها قالت: يا رسول اللَّه، المرأة تصنع لزوجها الشيء يعطفه عليها، فقال:\n«متاع في الدّنيا ولا خلاق لها في الآخرة» .\nتفرد منصور بن عمار به، وأيضا عن ابن لهيعة سهلة بنت سهل ذكرها الطّبرانيّ،\nوأخرج من طريق ابن لهيعة عن عبد اللَّه بن هبيرة، عن سهلة بنت سهل أنها قالت: يا رسول اللَّه، أتغتسل إحدانا إذا احتلمت؟ قال: «نعم، إذا أرأت الماء» .\nورواه من طريق عبد الملك بن يحيى بن بكير، عن أبيه، عن ابن لهيعة. وأخرجه المستغفري من طريق محمد بن معاوية النيسابورىّ، عن ابن لهيعة، فذكره، وزاد فيه: قلت: يا رسول اللَّه، برح الخفاء،\nولكنه قال سهلة بن «٤» سهيل- بالتصغير. وجوّز أبو موسى أنها سهلة بنت سهيل بن عمرو الآتي ذكرها. وهو بعيد، لأنها لا رواية لها. قال ابن الأثير: الأقرب أنها سهلة بنت سعد، ويكون الراويّ أخطأ في قوله بنت سهل، والصواب أخت سهل، لأن السند في الحديثين واحد.\nقلت: وهو محتمل، واحتمال التعدد ليس ببعيد من جهة قوله: تفرد به عمار، فيكون تفرد بالتسمية.\n(١) في أ: إسحاق.\n(٢) أسد الغابة: ت (٧٠٢٤) .\n(٣) أسد الغابة: ت (٧٠٢٥) .\n(٤) تجريد أسماء الصحابة ٢/ ٢٧٩.",
+      "english": "11351—Sahla bint Sa'd al-Sa'idiyya (3),\n\nthe sister of Sahl, the well-known Companion.\n\nIbn Manda mentioned her and transmitted by way of Ibn Lahi'a, from Abd Allah ibn Hubayra, from Sahla bint Sa'd al-Sa'idiyya, that she said: “O Messenger of Allah, a woman makes something for her husband that makes him incline toward her.” He replied: “An enjoyment in this world, but she has no share in the Hereafter.”\n\nMansur ibn Ammar alone transmitted this report. Al-Tabarani also mentioned Sahla bint Sahl and transmitted by way of Ibn Lahi'a, from Abd Allah ibn Hubayra, from Sahla bint Sahl, that she said: “O Messenger of Allah, should one of us perform the full ritual bath when she has a wet dream?” He replied: “Yes, if she sees the fluid.”\n\nHe also narrated it by way of Abd al-Malik ibn Yahya ibn Bukayr, from his father, from Ibn Lahi'a. Al-Mustaghfiri transmitted it by way of Muhammad ibn Mu'awiya al-Naysaburi, from Ibn Lahi'a, and cited the report, adding: “I said, ‘O Messenger of Allah, what was concealed has come to light.’” However, he called her “Sahla ibn Suhayl” (4), with Suhayl in the diminutive form. Abu Musa allowed that she might be Sahla bint Suhayl ibn Amr, whose entry will be mentioned later. This is unlikely, because she has no transmitted reports. Ibn al-Athir said: “It is more likely that she was Sahla bint Sa'd and that the narrator erred in saying ‘daughter of Sahl’; the correct wording is ‘sister of Sahl,’ because the chain of transmission in the two hadiths is the same.”\n\nI say: This is possible. The possibility that they were two different women is also not unlikely, in view of the statement, “Ammar alone transmitted it”; thus, he may have been alone in naming her.\n\n(1) In manuscript A: “Ishaq.”\n\n(2) Usd al-Ghaba: entry 7024.\n\n(3) Usd al-Ghaba: entry 7025.\n\n(4) al-Tajrid, 2/279.",
+      "arabic_sha256": "8a16d95a03c051db2148e55afd9c8f7ab3e4c5858935b8bf14234502b45935ad",
+      "english_sha256": "917be4b56645804a94ecd484c82bd7c9f778d907d1aae62f2043b9db95dd180c",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سهلة بنت سعد الساعدية",
+      "english": "Sahla bint Sa'd al-Sa'idiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهل",
+      "english": "Sahl ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن لهيعة",
+      "english": "Ibn Lahi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه بن هبيرة",
+      "english": "Abd Allah ibn Hubayra",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "منصور بن عمار",
+      "english": "Mansur ibn Ammar",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهلة بنت سهل",
+      "english": "Sahla bint Sahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الملك بن يحيى بن بكير",
+      "english": "Abd al-Malik ibn Yahya ibn Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن بكير",
+      "english": "Yahya ibn Bukayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستغفري",
+      "english": "al-Mustaghfiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن معاوية النيسابوري",
+      "english": "Muhammad ibn Mu'awiya al-Naysaburi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهلة بن سهيل",
+      "english": "Sahla ibn Suhayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهلة بنت سهيل بن عمرو",
+      "english": "Sahla bint Suhayl ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

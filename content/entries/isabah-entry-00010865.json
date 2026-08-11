@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010865",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10865,
+  "title": {
+    "english": "Umayma bint Adi ibn Qays",
+    "arabic_observed": "أميمة بنت عدي بن قيس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010865-segment-0001",
+      "volume": 8,
+      "scan_page": 35,
+      "printed_page": 34,
+      "reader_page": 3947,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3947",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0035:f93ed50f5abcc3d8",
+      "arabic": "١٠٨٦٥- أميمة بنت عدي بن قيس\nبن حذافة السهمية، والدة أبي عتيق محمد بن عبد الرحمن بن أبي بكر الصديق.\nقال الزّبير بن بكّار: تزوجها عبد الرحمن بن أبي بكر في حياة النبي ﷺ وهو قضية قول موسى بن عقبة- إن أبا عتيق محمد بن عبد الرحمن بن أبي بكر له رواية، وعدّهم أربعة في نسق ذكروا في الصحابة، ورأوا النبي ﷺ، وهم محمد بن عبد الرحمن بن أبي بكر بن أبي قحافة، فقد تقدم بيان ذلك في ترجمة أبي عتيق في المحمدين من أسماء الرجال.",
+      "english": "10865—Umayma bint Adi ibn Qays\n\nibn Hudhafa al-Sahmiyya, mother of Abu Atiq Muhammad ibn Abd al-Rahman ibn Abu Bakr al-Siddiq.\n\nAl-Zubayr ibn Bakkar said: Abd al-Rahman ibn Abu Bakr married her during the lifetime of the Prophet—may Allah bless him and grant him peace. This follows from Musa ibn Uqba's statement that Abu Atiq Muhammad ibn Abd al-Rahman ibn Abu Bakr has a narration. He counted all four in succession among those mentioned as Companions who saw the Prophet—may Allah bless him and grant him peace: Muhammad ibn Abd al-Rahman ibn Abu Bakr ibn Abu Quhafa. This has already been explained in the entry on Abu Atiq among the men named Muhammad.",
+      "arabic_sha256": "d698283062cfbb6121666b4aba87125e48d3fbdd7d44b580281e2583af621704",
+      "english_sha256": "7d535a908ec64f964bf9d9252044a95c4e6184096943cf5d5ca0515736f886ea",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو عتيق محمد بن عبد الرحمن بن أبي بكر الصديق",
+      "english": "Abu Atiq Muhammad ibn Abd al-Rahman ibn Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن أبي بكر",
+      "english": "Abd al-Rahman ibn Abu Bakr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر الصديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن عقبة",
+      "english": "Musa ibn Uqba",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو قحافة",
+      "english": "Abu Quhafa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

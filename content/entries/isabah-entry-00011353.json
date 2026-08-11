@@ -1,0 +1,169 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011353",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11353,
+  "title": {
+    "english": "Sahla bint Asim ibn Adi, the Ansari woman (2)",
+    "arabic_observed": "سهلة بنت عاصم بن عدي الأنصارية «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011353-segment-0001",
+      "volume": 8,
+      "scan_page": 194,
+      "printed_page": 193,
+      "reader_page": 4106,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4106",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0194:d15c424806ef5208",
+      "arabic": "١١٣٥٣- سهلة بنت عاصم بن عدي الأنصارية «٢»\n. تقدم نسبها عند ذكر والدها.\nقال أبو عمر: تزوجها عبد الرحمن بن عوف، ويروى عن النبي ﷺ أنه أسهم لها يوم خيبر.\n(١) الثقات ٣/ ١٨٤، أعلام النساء ٢/ ٢٦٥، بقي بن مخلد ٤٠، تجريد أسماء الصحابة ٢/ ٢٧٩، الاستبصار ٢٩٥، تلقيح فهوم أهل الأثر ٣٧٦، أسد الغابة: ت (٧٠٢٧)، الاستيعاب: ت (٣٤٣٦) .\n(٢) الثقات ٣/ ١٨٤، أعلام النساء ٢/ ٢٦٦، تجريد أسماء الصحابة ٢/ ٢٧٩، الاستبصار ٢٩٩، أسد الغابة: ت (٧٠٢٨)، الاستيعاب: ت (٣٤٣٧) .",
+      "english": "11353 — Sahla bint Asim ibn Adi, the Ansari woman (2)\n\nHer lineage was given above when her father was mentioned.\n\nAbu Umar said: Abd al-Rahman ibn Awf married her, and it is related from the Prophet—may Allah bless him and grant him peace—that he allotted her a share on the day of Khaybar.\n\n(1) al-Thiqat, 3/184; A'lam al-Nisa, 2/265; Baqi ibn Makhlad, 40; al-Tajrid, 2/279; al-Istibsar, 295; Talqih Fuhum Ahl al-Athar, 376; Usd al-Ghaba, entry (7027); al-Isti'ab, entry (3436).\n\n(2) al-Thiqat, 3/184; A'lam al-Nisa, 2/266; al-Tajrid, 2/279; al-Istibsar, 299; Usd al-Ghaba, entry (7028); al-Isti'ab, entry (3437).",
+      "arabic_sha256": "73ed6808f1aaaeaa9548932a318bb90aeebcb972b9ca1f4bd2d074e549250b69",
+      "english_sha256": "c441d2ff67655928cd0152675f33f27d2035147b5c819add495228514dc9d599",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011353-segment-0002",
+      "volume": 8,
+      "scan_page": 195,
+      "printed_page": 194,
+      "reader_page": 4107,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4107",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0195:0a149c0a43c2cf13",
+      "arabic": "قلت:\nوصله ابن مندة، من طريق عبد العزيز بن عمران، عن سعيد بن زياد، عن حفص بن عمر بن عبد الرحمن بن عوف، عن جدته سهلة بنت عاصم، قالت: ولدت يوم خبير فسماني رسول اللَّه ﷺ سهلة. وقال: «سهّل اللَّه أمركم» . فضرب لي بسهم، وتزوّجني عبد الرحمن بن عوف يوم ولدت،\nوهو عند الواقدي أيضا.",
+      "english": "I say:\n\nIbn Manda transmitted it with a connected chain by way of Abd al-Aziz ibn Imran, from Sa'id ibn Ziyad, from Hafs ibn Umar ibn Abd al-Rahman ibn Awf, from his grandmother Sahlah bint Asim, who said: “I was born on the day of Khaybar, and the Messenger of Allah—may Allah bless him and grant him peace—named me Sahlah. He said, ‘May Allah make matters easy for you all.’ He then allotted me a share, and Abd al-Rahman ibn Awf married me on the day I was born.”\n\nAl-Waqidi also reports it.",
+      "arabic_sha256": "fc66039e2e87cf720b2461732a15c4798b2399c1a3cde2a7548c3cfa87d945b5",
+      "english_sha256": "54ce9af3bbc122adafd9154b1b88ddb37ecdef6e163f110bf37dfec5cf0630ea",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عبد الرحمن بن عوف",
+      "english": "Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "سهلة بنت عاصم بن عدي",
+      "english": "Sahla bint Asim ibn Adi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "خيبر",
+      "english": "Khaybar",
+      "kind": "place"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستبصار",
+      "english": "al-Istibsar",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد العزيز بن عمران",
+      "english": "Abd al-Aziz ibn Imran",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد بن زياد",
+      "english": "Sa'id ibn Ziyad",
+      "kind": "person"
+    },
+    {
+      "arabic": "حفص بن عمر بن عبد الرحمن بن عوف",
+      "english": "Hafs ibn Umar ibn Abd al-Rahman ibn Awf",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهلة بنت عاصم",
+      "english": "Sahlah bint Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "خبير",
+      "english": "Khaybar",
+      "kind": "place"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

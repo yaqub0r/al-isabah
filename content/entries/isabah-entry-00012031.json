@@ -1,0 +1,135 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012031",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12031,
+  "title": {
+    "english": "Umm Zufar:",
+    "arabic_observed": "أم زفر:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012031-segment-0001",
+      "volume": 8,
+      "scan_page": 397,
+      "printed_page": 396,
+      "reader_page": 4309,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4309",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0397:1fb4e005242ff4b0",
+      "arabic": "١٢٠٣١- أم زفر:\nماشطة خديجة «١» .\nذكر عبد الغنيّ بن سعيد في «المبهمات» أنها المرأة التي قال النبيّ ﵌ فيها: «إنّها كانت تغشانا في زمن خديجة»\n[فروى من طريق الزّبير بن بكار، عن سليمان بن عبد اللَّه بن سليم، أخبرني شيخ من أهل مكّة، قال: هي أم زفر ماشطة خديجة- يعني العجوز التي قال النبيّ ﵌ «إنّها كانت تغشانا في زمن خديجة] «٢» .\nقلت: ومضى في جثّامة من أسماء النّساء،\nمن طريق أبي عاصم، عن أبي عامر الخزر عن ابن أبي مليكة، عن عائشة- ما يقتضي أنه كان اسمها جثامة المزنية، فغيّره النبيّ ﵌، فقال: «بل أنت حضانة» وفي رواية «حسانة»،\nفكونها مزنية واسمها حضانة يقوي أنها غير الحبشيّة، وإن اتفقا في الكنية، وكلام أبي عمر ثم أبي موسى يقتضي أنها واحدة، لكن أبو موسى في ترجمة أم زفر قال: إنه محتمل. وما أبو عمر فأورد ما يتعلّق بها مع خديجة وما يتعلق بالصّرع في ترجمة واحدة. والعلم عند اللَّه تعالى.",
+      "english": "12031—Umm Zufar:\n\nKhadijah's hairdresser.¹\n\nAbd al-Ghani ibn Sa'id stated in al-Mubhamat that she was the woman of whom the Prophet (may Allah bless him and grant him peace) said, “She used to visit us in the time of Khadijah.”\n\n[He narrated by way of al-Zubayr ibn Bakkar, from Sulayman ibn Abd Allah ibn Sulaym: An elder from among the people of Mecca informed me, saying: She was Umm Zufar, Khadijah's hairdresser—meaning the elderly woman of whom the Prophet (may Allah bless him and grant him peace) said, “She used to visit us in the time of Khadijah.”]²\n\nI say: Earlier, under Juthama among the women's names, there appeared—by way of Abu Asim, from Abu Amir al-Khazar, from Ibn Abi Mulayka, from Aisha—a report indicating that her name had been Juthama al-Muzaniyya, but the Prophet (may Allah bless him and grant him peace) changed it, saying, “Rather, you are Hadana”; and in another narration, “Hassana.”\n\nThus, the fact that she was of Muzayna and that her name was Hadana strengthens the view that she was a different woman from the Abyssinian woman, even though the two shared the same kunya. The words of Abu Umar and then Abu Musa imply that they were one and the same woman. Abu Musa, however, said in the entry on Umm Zufar that this was possible. As for Abu Umar, he included the material concerning her association with Khadijah and the material concerning epilepsy in a single entry. Knowledge is with Allah Most High.",
+      "arabic_sha256": "48093ac53ca972c9909b2265296566901ad57ff5f985d75518529d88e607c2f0",
+      "english_sha256": "2222d40cdb0f21d573b99de5d41ad66991a5e83e8d3cfb053d9ad9958754d407",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم زفر",
+      "english": "Umm Zufar",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الغني بن سعيد",
+      "english": "Abd al-Ghani ibn Sa'id",
+      "kind": "person"
+    },
+    {
+      "arabic": "المبهمات",
+      "english": "al-Mubhamat",
+      "kind": "work"
+    },
+    {
+      "arabic": "الزبير بن بكار",
+      "english": "al-Zubayr ibn Bakkar",
+      "kind": "person"
+    },
+    {
+      "arabic": "سليمان بن عبد الله بن سليم",
+      "english": "Sulayman ibn Abd Allah ibn Sulaym",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "جثامة المزنية",
+      "english": "Juthama al-Muzaniyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عاصم",
+      "english": "Abu Asim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عامر الخزر",
+      "english": "Abu Amir al-Khazar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي مليكة",
+      "english": "Ibn Abi Mulayka",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "حضانة",
+      "english": "Hadana",
+      "kind": "person"
+    },
+    {
+      "arabic": "حسانة",
+      "english": "Hassana",
+      "kind": "person"
+    },
+    {
+      "arabic": "مزنية",
+      "english": "Muzayna",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

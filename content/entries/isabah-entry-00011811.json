@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011811",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11811,
+  "title": {
+    "english": "Nusaybah:",
+    "arabic_observed": "نسبية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011811-segment-0001",
+      "volume": 8,
+      "scan_page": 334,
+      "printed_page": 333,
+      "reader_page": 4246,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4246",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0334:c12f4a85744d6795",
+      "arabic": "١١٨١١- نسبية:\nبالتصغير، وقيل بفتح النّون، بنت سمّاك بن النعمان بن قيس بن عمرو بن أمية بن زيد بن مالك بن عوف بن عمرو بن عوف بن أوس الأنصاريّة الأوسيّة، أمها قسامة بنت عبد اللَّه بن أمية بن عبيد بن عمرو بن زيد.\nتزوجها عثمان بن طلحة العبدريّ في الجاهليّة، فولدت له، ثم خلف عليها بجاد بن عثمان بن عامر بن مجمع قريبها، وأسلمت نسيبة وبايعت، قاله ابن سعد.",
+      "english": "11811 - Nusaybah:\n\n[The Arabic headword is spelled نسبية, while the body reads نسيبة; the latter reading is followed here.] In the diminutive form; it is also said as Nasibah, with a fatha on the nun. She was the daughter of Sammak ibn al-Nu'man ibn Qays ibn 'Amr ibn Umayya ibn Zayd ibn Malik ibn 'Awf ibn 'Amr ibn 'Awf ibn Aws, the Ansari woman of the Aws. Her mother was Qasama bint 'Abd Allah ibn Umayya ibn 'Ubayd ibn 'Amr ibn Zayd.\n\n'Uthman ibn Talha al-'Abdari married her during the pre-Islamic period, and she bore him children. After him, her kinsman Bijad ibn 'Uthman ibn 'Amir ibn Mujamma' married her. Nusaybah embraced Islam and pledged allegiance. Ibn Sa'd stated this.",
+      "arabic_sha256": "259bfaa65bde2aebf18e6a47e13d3d5c84e0974fc920208c7e0b1f3d7d9f2d48",
+      "english_sha256": "540d1ac6d5c120cbc108e312d4c8af23110f901a2f2ac76ab0106f1d04a22522",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Muhammad ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "قسامة بنت عبد اللَّه بن أمية بن عبيد بن عمرو بن زيد",
+      "english": "Qasama bint 'Abd Allah ibn Umayya ibn 'Ubayd ibn 'Amr ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن طلحة العبدريّ",
+      "english": "'Uthman ibn Talha al-'Abdari",
+      "kind": "person"
+    },
+    {
+      "arabic": "بجاد بن عثمان بن عامر بن مجمع",
+      "english": "Bijad ibn 'Uthman ibn 'Amir ibn Mujamma'",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأوس",
+      "english": "Aws",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

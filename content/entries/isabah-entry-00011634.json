@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011634",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11634,
+  "title": {
+    "english": "Fakiha bint Ubayd ibn Dulaym al-Ansariyya,[3]",
+    "arabic_observed": "فكيهة بنت عبيد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011634-segment-0001",
+      "volume": 8,
+      "scan_page": 283,
+      "printed_page": 282,
+      "reader_page": 4195,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4195",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0283:bb967d6a78c7d53b",
+      "arabic": "١١٦٣٤- فكيهة بنت عبيد\nبن دليم الأنصاريّة «٣»، من بني دليم، وهي والدة قيس بن سعد بن عبادة ربيب عم والدها.\nذكرها ابن حبيب في المبايعات.",
+      "english": "11634—Fakiha bint Ubayd ibn Dulaym al-Ansariyya,[3]\n\nof Banu Dulaym. She was the mother of Qays ibn Sa'd ibn Ubada, who was raised in the care of her father's paternal uncle.\n\nIbn Habib mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "616c9e108f22ef5f62029e3cf3647809202952b8ae63b7c8dd22794df3a97724",
+      "english_sha256": "b24d8b165f79692b279c1af9c0e24f61ed5f392015387dff575c6c1b574805ca",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "فكيهة بنت عبيد بن دليم الأنصارية",
+      "english": "Fakiha bint Ubayd ibn Dulaym al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني دليم",
+      "english": "Banu Dulaym",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "قيس بن سعد بن عبادة",
+      "english": "Qays ibn Sa'd ibn Ubada",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

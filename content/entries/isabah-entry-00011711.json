@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011711",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11711,
+  "title": {
+    "english": "Layla bint Thabit ibn al-Mundhir ibn Amr",
+    "arabic_observed": "ليلى بنت ثابت بن المنذر بن عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011711-segment-0001",
+      "volume": 8,
+      "scan_page": 303,
+      "printed_page": 302,
+      "reader_page": 4215,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4215",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0303:93e173b6aa8ba109",
+      "arabic": "١١٧١١- ليلى بنت ثابت بن المنذر بن عمرو\nبن حرام «٥»، أخت حسان. ذكرها ابن حبيب أيضا.\n(١) في أ: ثابت بن عدي بن عمرو.\n(٢) أسد الغابة ت (٧٢٥٦) .\n(٣) أسد الغابة ت (٧٢٥٨) .\n(٤) أسد الغابة ت (٧٢٥٩) .\n(٥) أسد الغابة ت (٧٢٦٠) .",
+      "english": "11711—Layla bint Thabit ibn al-Mundhir ibn Amr\n\nibn Haram,[5] the sister of Hassan. Ibn Habib also mentioned her.\n\n[1] In manuscript A: Thabit ibn Adi ibn Amr.\n\n[2] Usd al-Ghaba, entry 7256.\n\n[3] Usd al-Ghaba, entry 7258.\n\n[4] Usd al-Ghaba, entry 7259.\n\n[5] Usd al-Ghaba, entry 7260.",
+      "arabic_sha256": "0e5eae696b220496d7b4728d45374b94fa9504b75afab630dd3051d2b6896e53",
+      "english_sha256": "7a7d2cbe98a6b5b8da3be306f1ac1b911f5dee6bf0da4bfb60707cc1b8a4a954",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "حسان",
+      "english": "Hassan",
+      "kind": "person"
+    },
+    {
+      "arabic": "ثابت بن عدي بن عمرو",
+      "english": "Thabit ibn Adi ibn Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010897",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10897,
+  "title": {
+    "english": "Anisa bint Mu'adh",
+    "arabic_observed": "أنيسة بنت معاذ"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010897-segment-0001",
+      "volume": 8,
+      "scan_page": 41,
+      "printed_page": 40,
+      "reader_page": 3953,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3953",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0041:e4605fe0c8a3cf89",
+      "arabic": "١٠٨٩٧- أنيسة بنت معاذ\nبن ماعص بن قيس بن خلدة «٤» بن مخلد الأنصارية الزرقية أخت أبي عبادة.\nذكرها ابن حبيب. واستدركها ابن الأثير.",
+      "english": "10897—Anisa bint Mu'adh\n\nibn Ma'is ibn Qays ibn Khalda [4] ibn Mukhallad, the Ansari woman of Banu Zurayq and sister of Abu Ubada.\n\nIbn Habib mentioned her. Ibn al-Athir added her as an omitted entry.",
+      "arabic_sha256": "a782cafa48e99461f7db9d1bc862e542c2654f4cf509ebd7161fde83e13b3d75",
+      "english_sha256": "106f9b4753f9dc53b66292e9d30cddd5973d7e5749fd05f0af43d407914d2808",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزرقية",
+      "english": "Banu Zurayq",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عبادة",
+      "english": "Abu Ubada",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

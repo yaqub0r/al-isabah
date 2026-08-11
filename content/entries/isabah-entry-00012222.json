@@ -1,0 +1,112 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012222",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12222,
+  "title": {
+    "english": "Umm al-Karam al-Sulamiyya.¹",
+    "arabic_observed": "أم الكرام السلمية «١» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012222-segment-0001",
+      "volume": 8,
+      "scan_page": 458,
+      "printed_page": 457,
+      "reader_page": 4370,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4370",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0458:9ac997f20686b535",
+      "arabic": "١٢٢٢٢- أم الكرام السلمية «١» .\n(١) أسد الغابة ت (٧٥٧٧)، الاستيعاب ت (٣٦٥٨)، أعلام النساء ٤/ ٢٣٨، تجريد أسماء الصحابة ٢/ ٣٣٢.",
+      "english": "12222—Umm al-Karam al-Sulamiyya.¹\n\n¹ Usd al-Ghaba, entry 7577; al-Isti'ab, entry 3658; A'lam al-Nisa' 4/238; al-Tajrid 2/332.",
+      "arabic_sha256": "be9ee57c7dd8d1489ec8fdd2a49fbade8e1dddd6e1365c7f0832ce892e187e3a",
+      "english_sha256": "544098198fcf35322c35f2026169159eafbf2e21737e3b30bda5706cf1b33a72",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012222-segment-0002",
+      "volume": 8,
+      "scan_page": 459,
+      "printed_page": 458,
+      "reader_page": 4371,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4371",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0459:eb1f862e4c77cdde",
+      "arabic": "قال أبو عمر: روت عن النبيّ ﵌ في كراهية التّحلّي بالذّهب للنّساء.\nروى عنها الحكم بن حجل، ليس إسناد حديثها بالقويّ.",
+      "english": "Abu Umar said: She narrated from the Prophet—may Allah bless him and grant him peace—regarding the disapproval of women adorning themselves with gold.\n\nAl-Hakam ibn Hajal narrated from her. The isnad of her hadith is not strong.",
+      "arabic_sha256": "46fa4bdab562f5059999e988cdda2625908e3005056bc9322e1c98aac1bc60c3",
+      "english_sha256": "975e96dce4f1ed1c9940f6862ef5f677984c76411477a9ad4ac772625257f53e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النساء",
+      "english": "al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "أم الكرام السلمية",
+      "english": "Umm al-Karam al-Sulamiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الحكم بن حجل",
+      "english": "al-Hakam ibn Hajal",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "أم كحلة",
+      "explanation": "The source fixes the medial undotted ha as quiescent and followed by lam but does not explicitly state the initial kaf's vowel. “Umm Kuhla” is used provisionally in the final text, but “Umm Kahla” cannot be excluded securely from the supplied evidence.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0458:9ac997f20686b535"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

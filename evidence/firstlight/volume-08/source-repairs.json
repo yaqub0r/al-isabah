@@ -1,0 +1,205 @@
+{
+  "schema": "firstlight.canonical-source-repairs.v2",
+  "issue": 971,
+  "work_id": "ibn_hajar_isabah_v1",
+  "volume": 8,
+  "repairs": [
+    {
+      "scan_page": 4,
+      "printed_page": 3,
+      "reader_page": 3916,
+      "reason": "The first Volume 8 reader chunk returns HTTP 404; Archive OCR is materially damaged.",
+      "arabic_text": "بسم الله الرحمن الرحيم\n\nكتاب النساء\nعلى الترتيب السابق في الرجال\n\nحرف الألف\n\nالقسم الأول\n\n١٠٧٥٩- آسية بنت الحارث السعدية، أخت النبي ﷺ من الرضاعة.\nذكرها أبو سعد النيسابوري في «شرف المصطفى».\n\n١٠٧٦٠- آسية بنت الفرج الجرهمية (١).\nذكرها ابن منده، وأورد من طريق أيوب بن محمد الوزان، عن يعلى بن الأشدق؛ قال: جاءت آسية بنت الفرج، امرأة من جرهم، وكان مسكنها الحجون بمكة - النبي ﷺ، فقالت: يا رسول الله، إني قد أخطأت على نفسي، وزنيت فطهرني؛ فقال: «هل ولدت؟» قالت: لا. قال: «فما بقي عليك من ولادتك؟» فأخبرته بنحو شهر؛ فقال: «لست بمطهرك حتى تلدي»، قال: فولدت؛ فأتته فأخبرته ... فذكر الحديث بطوله، كذا في الأصل، ولم يخرجه ابن منده.\n\n١٠٧٦١- آمنة بنت الأرقم (٢).\nروى أبو السائب المخزومي عن جدته آمنة بنت الأرقم - أن النبي ﷺ أقطعها بئرا ببطن العقيق؛ فكانت تسمى بئر آمنة، وبرك لها فيها؛ وكانت من المهاجرات، ذكرها ابن الدباغ مستدركا على الاستيعاب.\n\n١٠٧٦٢- آمنة بنت حرملة، والدة الوليد بن الوليد بن المغيرة، ويقال اسمها عاتكة.\nذكر في ترجمة ولدها ما يدل على أن لها صحبة.\n\n(١) أسد الغابة: ت ٦٦٨٩.\n(٢) أسد الغابة: ت ٦٦٩٠.",
+      "provenance": {
+        "method": "facsimile_visual_transcription",
+        "facsimile": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_08.pdf",
+        "scan_page": 4,
+        "render_dpi": 200,
+        "transcriber": "codex",
+        "state": "machine_collated_pending_final_translation_audit"
+      }
+    },
+    {
+      "scan_page": 6,
+      "printed_page": 5,
+      "reader_page": 3918,
+      "reason": "Usul drops one digit from the visibly printed biography number 10777.",
+      "text_replacements": [
+        {"old": "١٠٧٧- أبرهة الحبشية:", "new": "١٠٧٧٧- أبرهة الحبشية:", "expected_count": 1}
+      ],
+      "heading_titles": [
+        "١٠٧٧١- آمنة بنت عمرو", "١٠٧٧٢- آمنة بنت غفار.", "١٠٧٧٣- آمنة بنت قرط",
+        "١٠٧٧٤- آمنة بنت محصن.", "١٠٧٧٥- آمنة بنت نعيم النحام.", "١٠٧٧٦- آمنة،",
+        "١٠٧٧٧- أبرهة الحبشية:"
+      ],
+      "provenance": {
+        "method": "facsimile_visual_collation",
+        "facsimile": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_08.pdf",
+        "scan_page": 6,
+        "render_dpi": 250,
+        "collator": "codex",
+        "state": "machine_collated_pending_final_translation_audit"
+      }
+    },
+    {
+      "scan_page": 35,
+      "printed_page": 34,
+      "reader_page": 3947,
+      "reason": "Usul duplicates the visibly single 10869 heading and repeats the preceding entry's closing paragraph.",
+      "text_replacements": [
+        {
+          "old": "١٠٨٦٩- أميمة بنت قيس بن عبد اللَّه الأسدية\nذكرها حديثها في الحيض، وسأذكر ما وقع من الاختلاف فيها في القسم الرابع.\n",
+          "new": "",
+          "expected_count": 1
+        }
+      ],
+      "heading_titles": [
+        "١٠٨٦٥- أميمة بنت عدي بن قيس", "١٠٨٦٦- أميمة بنت عقبة", "١٠٨٦٧- أميمة بنت عمرو",
+        "١٠٨٦٨- أميمة بنت قيس", "١٠٨٦٩- أميمة بنت قيس بن عبد الله الأسدية.",
+        "١٠٨٧٠- أميمة بنت النجار الأنصارية"
+      ],
+      "provenance": {
+        "method": "facsimile_visual_collation",
+        "facsimile": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_08.pdf",
+        "scan_page": 35,
+        "render_dpi": 250,
+        "collator": "codex",
+        "state": "machine_collated_pending_final_translation_audit"
+      }
+    },
+    {
+      "scan_page": 84,
+      "printed_page": 83,
+      "reader_page": 3996,
+      "reason": "Usul drops the zero from the visibly printed biography number 11035.",
+      "text_replacements": [
+        {"old": "١١٣٥- حبيبة بنت شريك", "new": "١١٠٣٥- حبيبة بنت شريك", "expected_count": 1}
+      ],
+      "heading_titles": [
+        "١١٠٣٥- حبيبة بنت شريك", "١١٠٣٦- حبيبة بنت الضحاك بن سفيان.",
+        "١١٠٣٧- حبيبة بنت أبي عامر الراهب،", "١١٠٣٨- حبيبة بنت عبد الله",
+        "١١٠٣٩- حبيبة بنت عمرو بن حصن", "١١٠٤٠- حبيبة بنت قيس",
+        "١١٠٤١- حبيبة بنت مسعود بن خالد", "١١٠٤٢- حبيبة بنت معتب", "١١٠٤٣- حبيبة بنت مليل"
+      ],
+      "provenance": {
+        "method": "facsimile_visual_collation",
+        "facsimile": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_08.pdf",
+        "scan_page": 84,
+        "render_dpi": 250,
+        "collator": "codex",
+        "state": "machine_collated_pending_final_translation_audit"
+      }
+    },
+    {
+      "scan_page": 161,
+      "printed_page": 160,
+      "reader_page": 4073,
+      "reason": "Usul duplicates 11244 where the facsimile visibly prints 11243 for Zaynab bint Sahl.",
+      "text_replacements": [
+        {"old": "١١٢٤٤- زينب بنت سهل", "new": "١١٢٤٣- زينب بنت سهل", "expected_count": 1}
+      ],
+      "heading_titles": [
+        "١١٢٤٢- زينب بنت سويد", "١١٢٤٣- زينب بنت سهل", "١١٢٤٤- زينب بنت صيفي"
+      ],
+      "provenance": {
+        "method": "facsimile_visual_collation",
+        "facsimile": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_08.pdf",
+        "scan_page": 161,
+        "render_dpi": 250,
+        "collator": "codex",
+        "state": "machine_collated_pending_final_translation_audit"
+      }
+    },
+    {
+      "scan_page": 287,
+      "printed_page": 286,
+      "reader_page": 4199,
+      "reason": "Usul merges entries 11648 and 11649 and omits the visibly printed 11649 heading and intervening lineage text.",
+      "text_replacements": [
+        {
+          "old": "١١٦٤٨- قرة العين بنت عبادة\nبن نضلة «١» بن مالك بن العجلان الأنصاريّة، من بني المخزوميّة «٢»، أخت أم سلمة.\nتقدم نسبها في ترجمة أخيها عبد اللَّه.",
+          "new": "١١٦٤٨- قرة العين بنت عبادة\nبن نضلة «١» بن مالك بن العجلان الأنصاريّة، من بني عوف بن الخزرج، والدة عبادة بن الصامت. ذكرها ابن الأثير.\n١١٦٤٩- قريبة: بفتح أوله، ويقال بالتصغير، بنت أبي أميّة بن المغيرة المخزوميّة «٢»، أخت أم سلمة.\nتقدم نسبها في ترجمة أخيها عبد اللَّه.",
+          "expected_count": 1
+        }
+      ],
+      "heading_titles": [
+        "١١٦٤٧- قرصافة بنت الحارث بن عوف:", "١١٦٤٨- قرة العين بنت عبادة",
+        "١١٦٤٩- قريبة: بفتح أوله، ويقال بالتصغير، بنت أبي أمية بن المغيرة المخزومية، أخت أم سلمة.",
+        "١١٦٥٠- قريبة بن زيد:"
+      ],
+      "provenance": {
+        "method": "facsimile_visual_collation",
+        "facsimile": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_08.pdf",
+        "scan_page": 287,
+        "render_dpi": 250,
+        "collator": "codex",
+        "state": "machine_collated_pending_final_translation_audit"
+      }
+    },
+    {
+      "scan_page": 366,
+      "printed_page": 365,
+      "reader_page": 4278,
+      "reason": "Usul omits the visibly printed 11916 heading before the second Umm Bilal entry.",
+      "text_replacements": [
+        {"old": "\nبنت هلال السلمية «٢» .", "new": "\n١١٩١٦- أم بلال:\nبنت هلال السلمية «٢» .", "expected_count": 1}
+      ],
+      "heading_titles": [
+        "١١٩١٥- أم بلال:", "١١٩١٦- أم بلال:", "القسم الثاني", "القسم الثالث",
+        "١١٩١٧- أم بيان بنت زيد", "١١٩١٨- أم البنين بنت عيينة"
+      ],
+      "provenance": {
+        "method": "facsimile_visual_collation",
+        "facsimile": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_08.pdf",
+        "scan_page": 366,
+        "render_dpi": 250,
+        "collator": "codex",
+        "state": "machine_collated_pending_final_translation_audit"
+      }
+    },
+    {
+      "scan_page": 369,
+      "printed_page": 368,
+      "reader_page": 4281,
+      "reason": "Usul adds an extra leading digit to the visibly printed biography number 11936; heading metadata also loses 11935.",
+      "text_replacements": [
+        {"old": "١١١٩٣٦- أم جميل بنت الخطاب:", "new": "١١٩٣٦- أم جميل بنت الخطاب:", "expected_count": 1}
+      ],
+      "heading_titles": [
+        "١١٩٣٢- أم جميل بنت أوس المرئية", "١١٩٣٣- أم جميل بنت الجلاس",
+        "١١٩٣٤- أم جميل بنت الحباب", "١١٩٣٥- أم جميل بنت أبي أخزم",
+        "١١٩٣٦- أم جميل بنت الخطاب:", "١١٩٣٧- أم جميل بنت عبد الله"
+      ],
+      "provenance": {
+        "method": "facsimile_visual_collation",
+        "facsimile": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_08.pdf",
+        "scan_page": 369,
+        "render_dpi": 250,
+        "collator": "codex",
+        "state": "machine_collated_pending_final_translation_audit"
+      }
+    },
+    {
+      "scan_page": 404,
+      "printed_page": 403,
+      "reader_page": 4316,
+      "reason": "Usul duplicates 12059 where the facsimile visibly prints 12058 for Umm Sa'id bint Sahl.",
+      "text_replacements": [
+        {"old": "١٢٠٥٩- أم سعيد بنت سهل:", "new": "١٢٠٥٨- أم سعيد بنت سهل:", "expected_count": 1}
+      ],
+      "heading_titles": [
+        "١٢٠٥٥- أم سعد", "١٢٠٥٦- أم سعد بنت ثابت", "١٢٠٥٧- أم سعيد",
+        "١٢٠٥٨- أم سعيد بنت سهل:", "١٢٠٥٩- أم سعيد", "١٢٠٦٠- أم سعيد",
+        "١٢٠٦١- أم سعيد بنت مرة:", "١٢٠٦٢- أم سعيد:", "١٢٠٦٣- أم سفيان بنت الضحاك"
+      ],
+      "provenance": {
+        "method": "facsimile_visual_collation",
+        "facsimile": "docs/narrative/sources/T1_primaries/ibn_hajar_isabah_v1/volume_08.pdf",
+        "scan_page": 404,
+        "render_dpi": 250,
+        "collator": "codex",
+        "state": "machine_collated_pending_final_translation_audit"
+      }
+    }
+  ]
+}

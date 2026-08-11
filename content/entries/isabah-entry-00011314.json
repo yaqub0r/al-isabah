@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011314",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11314,
+  "title": {
+    "english": "Salama al-Dabbiyya [1]",
+    "arabic_observed": "سلامة الضبية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011314-segment-0001",
+      "volume": 8,
+      "scan_page": 184,
+      "printed_page": 183,
+      "reader_page": 4096,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4096",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0184:daa6e730df95d410",
+      "arabic": "١١٣١٤- سلامة الضبية «١»\n. روت عنها أم داود الراسبية، «٢» حديثها عند عبد اللَّه بن داود المزني، هكذا عند أبي عمر.\nقلت:\nوأخرج ابن مندة سلامة الضبية، وساق من طريق عبد اللَّه بن داود، ولفظه: مرّ بي رسول اللَّه ﷺ في بدء الإسلام، وأنا أرعى غنما لأهلي، فقال لي: «يا سلامة: بم تشهدين» «٣»؟ قلت: أشهد أن لا إله إلا اللَّه، ثم أشهد أنّ محمدا رسول اللَّه، فتبسم واللَّه ضاحكا.\nوجزم أبو نعيم بأنها «٤» بنت الحرّ، وأن بني ضبة من بني فزارة.",
+      "english": "11314—Salama al-Dabbiyya [1]\n\nUmm Dawud al-Rasibiyya related from her. [2] Her hadith is found with Abd Allah ibn Dawud al-Muzani; this is how it appears in Abu Umar.\n\nI say:\n\nIbn Manda also included Salama al-Dabbiyya and transmitted, by way of Abd Allah ibn Dawud, the following wording: “The Messenger of Allah, may Allah bless him and grant him peace, passed by me at the beginning of Islam while I was tending sheep for my family. He said to me, ‘O Salama, to what do you testify?’ [3] I said, ‘I testify that there is no deity but Allah, and then I testify that Muhammad is the Messenger of Allah.’ By Allah, he smiled and laughed.”\n\nAbu Nu'aym stated categorically that she was the daughter of al-Hurr, [4] and that Banu Dabba were from Banu Fazara.",
+      "arabic_sha256": "b31b62a34826042142fb30a6e71f349cd14a8589b9b9104fa15a382d7c193c92",
+      "english_sha256": "15bb1fbcbc322710461ac29201aaf88454c9f89828f9673c25c3c0fe3e66c633",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سلامة الضبية",
+      "english": "Salama al-Dabbiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم داود الراسبية",
+      "english": "Umm Dawud al-Rasibiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن داود المزني",
+      "english": "Abd Allah ibn Dawud al-Muzani",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو ضبة",
+      "english": "Banu Dabba",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بنو فزارة",
+      "english": "Banu Fazara",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011992",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11992,
+  "title": {
+    "english": "Umm Hakim bint Wada':",
+    "arabic_observed": "أم حكيم بنت وداع:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011992-segment-0001",
+      "volume": 8,
+      "scan_page": 383,
+      "printed_page": 382,
+      "reader_page": 4295,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4295",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0383:49ddc67558122243",
+      "arabic": "١١٩٩٢- أم حكيم بنت وداع:\nويقال بنت وادع الخزاعية» .\nقال أبو نعيم: كانت من المهاجرات.\nوقال أبو عمر: سمعت النبي ﵌ يقول: «عجّلوا الإفطار وأخّروا السّحور» «٢» .\nروت عنها صفية بنت جرير.\nقلت: وصله أبو يعلى،\nوأخرجه ابن مندة، من طرق عن أبي سلمة موسى بن إسماعيل، عن حبابة بنت عجلان، عن أمها أم حفص، عن صفية، وساق بهذا الإسناد أحاديث أربعة أخر، منها: قالت قلت: للنّبيّ ﵌: رد اللطف؟\nفقال: «ما أقبحه! لو أهدي إليّ كراع لقبلته، ولو دعيت إليه لأجبته» «٣» .\nومنها ما أخرجه ابن ماجة بهذا الإسناد، دعاء الوالد يفضي إلى الحجاب «٤» .\nوأخرج ابن سعد عن موسى بهذا الإسناد حديث: ما جزاء الغني من الفقير؟ قال: النصيحة والدعاء.\nوقال: روت أم حكيم أحاديث بهذا الإسناد.",
+      "english": "11992—Umm Hakim bint Wada':\n\nShe is also said to be Umm Hakim bint Wadi' al-Khuza'iyya.[1]\n\nAbu Nu'aym said: She was one of the female Emigrants.\n\nAbu Umar said: She said, “I heard the Prophet (may Allah bless him and grant him peace) say: ‘Hasten the breaking of the fast and delay the pre-dawn meal.’”[2]\n\nSafiyya bint Jarir narrated from her.\n\nI say: Abu Ya'la supplied its continuous chain, and Ibn Manda transmitted it through several routes from Abu Salama Musa ibn Isma'il, from Hababa bint Ajlan, from her mother Umm Hafs, from Safiyya. Through this isnad he related four other hadiths, among them her report: She said, “I said to the Prophet (may Allah bless him and grant him peace): ‘Should a gift be turned away?’ He replied: ‘How ugly that is! If a sheep’s trotter were given to me as a gift, I would accept it, and if I were invited to it, I would answer the invitation.’”[3]\n\nAnother is the report transmitted by Ibn Majah through this isnad: “A father’s supplication reaches the Veil.”[4]\n\nIbn Sa'd transmitted from Musa through this isnad the hadith: “What recompense is due to the wealthy from the poor?” He replied: “Sincere counsel and supplication.”\n\nHe said: Umm Hakim narrated several hadiths through this isnad.",
+      "arabic_sha256": "0a0785e0f997c3eb1919ce2204baf89acc97080af93f99e5cda7cf393d4ca1f3",
+      "english_sha256": "a0e95d5a56a37342d5afd86467069cadc7370bdf90d330faefc524e32b8edf3d",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم بنت وداع",
+      "english": "Umm Hakim bint Wada'",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم بنت وادع الخزاعية",
+      "english": "Umm Hakim bint Wadi' al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "صفية بنت جرير",
+      "english": "Safiyya bint Jarir",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية",
+      "english": "Safiyya bint Jarir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو يعلى",
+      "english": "Abu Ya'la",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى",
+      "english": "Abu Salama Musa ibn Isma'il al-Tabudhaki",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبابة بنت عجلان",
+      "english": "Hababa bint Ajlan",
+      "kind": "person"
+    },
+    {
+      "arabic": "حبابة",
+      "english": "Hababa bint Ajlan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حفص",
+      "english": "Umm Hafs",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن ماجة",
+      "english": "Ibn Majah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حكيم",
+      "english": "Umm Hakim bint Wada'",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "وداع",
+      "explanation": "The spelling is secure, but the unvocalized evidence cannot distinguish Wada' from Wadda'. The established provisional rendering Wada' has therefore been retained.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0383:49ddc67558122243"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

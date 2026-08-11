@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011346",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11346,
+  "title": {
+    "english": "Sana bint Mikhnaf",
+    "arabic_observed": "سنا بنت مخنف"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011346-segment-0001",
+      "volume": 8,
+      "scan_page": 192,
+      "printed_page": 191,
+      "reader_page": 4104,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4104",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0192:8c6d93645271e4cb",
+      "arabic": "١١٣٤٦- سنا بنت مخنف\nتأتي في سنينة- بالتصغير.",
+      "english": "11346 — Sana bint Mikhnaf\n\nShe will appear under Sunayna—the diminutive form.",
+      "arabic_sha256": "419f253e5cfbdd20cf143a6486130121e7b1bd1c2bc8cc9b593324600ec2dfa1",
+      "english_sha256": "65733e88a1a5c7d560b393100378bdb1dfe664268c6c28e0b9da15b99316e2fa",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سنا بنت مخنف",
+      "english": "Sana bint Mikhnaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "سنينة",
+      "english": "Sunayna bint Mikhnaf",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

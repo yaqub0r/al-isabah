@@ -1,0 +1,125 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010922",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10922,
+  "title": {
+    "english": "Baraka al-Habashiyya:[2]",
+    "arabic_observed": "بركة الحبشية «٢»:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010922-segment-0001",
+      "volume": 8,
+      "scan_page": 48,
+      "printed_page": 47,
+      "reader_page": 3960,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3960",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0048:d6a0e7f867c714bd",
+      "arabic": "١٠٩٢٢- بركة الحبشية «٢»:\nكانت مع أم حبيبة بنت أبي سفيان تخدمها هناك، ثم قدمت معها، وهي التي شربت بول النبي ﷺ فيما جاء في حديث أميمة بنت رقيقة، وخلطها أبو عمر بأم أيمن،\nفأخرج في ترجمتها من طريق بن جريج: أخبرتني حكيمة بنت أميمة، عن أمها أميمة بنت رقيقة- أنّ النبيّ ﷺ كان يبول في قدح من عيدان ويوضع تحت السرير، فجاء ليلة فإذا القدح ليس فيه شيء، فقال لا مرأة يقال لها بركة كانت تخدم أمّ حبيبة جاءت معها من أرض الحبشة: «البول الّذي كان في هذا القدح ما فعل»؟ قالت: شربته يا رسول اللَّه.\nوقال عبد الرّزّاق في مصنفة، عن ابن جريج: أخبرت أنّ النبي ﷺ كان يبول في قدح من عيدان يوضع تحت سريره، فجاء فأراده فإذا القدح ليس فيه شيء، فقال لامرأة كان يقال لها بركة كانت خادمة لأم حبيبة جاءت معها من أرض الحبشة: «أين البول»؟\nقال أبو عمر: أظن بركة هذه هي أم أيمن. انتهى.\nوحمله على ذلك ما ذكر هو في صدر بركة أم أيمن، أنها هاجرت الهجرتين إلى أرض الحبشة والمدينة.\nوفي كون أم أيمن هاجرت إلى أرض الحبشة نظر، فإنّها كانت تخدم النبي ﷺ، وزوّجها مولاه زيد بن حارثة، وزيد لم يهاجر إلى الحبشة، ولا أحد ممن كان يخدم النبي ﷺ إذا ذاك، فظهر أنّ هذه الحبشية غير أم أيمن، وإن وافقتها في الاسم.\nوسيأتي في ترجمة أم أيمن ما ذكره ابن السّكن- أنّ كلّا منهما كانت تكنى أم أيمن، وتسمّى بركة، ويتأيد ذلك بأن قصة البول وردت من طريق أخرى مرويّة لأم أيمن كما سأذكره في ترجمتها إن شاء اللَّه تعالى.",
+      "english": "10922 — Baraka al-Habashiyya:[2]\n\nShe was with Umm Habiba bint Abu Sufyan in Abyssinia, serving her there; then she came with her. She is the woman who drank the Prophet's urine, may Allah bless him and grant him peace, according to what is related in the hadith of Umayma bint Ruqayqa. Abu Umar conflated her with Umm Ayman and consequently cited in her entry, through Ibn Jurayj: Hukayma bint Umayma informed me, from her mother, Umayma bint Ruqayqa, that the Prophet, may Allah bless him and grant him peace, used to urinate into a wooden cup that was placed beneath the bed. One night he came and found that there was nothing in the cup. He said to a woman called Baraka, who used to serve Umm Habiba and had come with her from the land of Abyssinia: “What happened to the urine that was in this cup?” She said, “I drank it, O Messenger of Allah.”\n\nAbd al-Razzaq said in his Musannaf, from Ibn Jurayj: I was informed that the Prophet, may Allah bless him and grant him peace, used to urinate into a wooden cup placed beneath his bed. He then came for it and found that there was nothing in the cup. He said to a woman called Baraka, who had been a servant of Umm Habiba and had come with her from the land of Abyssinia: “Where is the urine?”\n\nAbu Umar said: “I think that this Baraka is Umm Ayman.” End of quotation.\n\nWhat led him to that was what he himself had mentioned at the beginning of the entry on Baraka Umm Ayman: that she made the two migrations, to the land of Abyssinia and to Medina.\n\nThere is reason to question whether Umm Ayman migrated to the land of Abyssinia. She used to serve the Prophet, may Allah bless him and grant him peace, and he gave her in marriage to his client Zayd ibn Haritha. Zayd did not migrate to Abyssinia, nor did any of those who were serving the Prophet, may Allah bless him and grant him peace, at that time. It is therefore evident that this Abyssinian woman was someone other than Umm Ayman, even though they shared the same name.\n\nIn the entry on Umm Ayman there will appear Ibn al-Sakan's statement that each of the two women bore the kunyah Umm Ayman and was named Baraka. This is further supported by the fact that the account of the urine was transmitted by another route on the authority of Umm Ayman, as I shall mention in her entry, if Allah Most High wills.",
+      "arabic_sha256": "4245c5ba2b2af802c4d51781c337ff6ffd0f25b23eb5109c06a1cb695b288aed",
+      "english_sha256": "e3b00e548fe880506fca71324f1045d5d835ee0718fb41189e77d9487a18227d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبيّ",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "بركة",
+      "english": "Baraka Umm Ayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "بركة الحبشية",
+      "english": "Baraka al-Habashiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم حبيبة بنت أبي سفيان",
+      "english": "Umm Habiba bint Abu Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أرض الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "أميمة بنت رقيقة",
+      "english": "Umayma bint Ruqayqa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن جريج",
+      "english": "Ibn Jurayj",
+      "kind": "person"
+    },
+    {
+      "arabic": "حكيمة بنت أميمة",
+      "english": "Hukayma bint Umayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرّزّاق",
+      "english": "Abd al-Razzaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "مصنفة",
+      "english": "Musannaf",
+      "kind": "work"
+    },
+    {
+      "arabic": "بركة أم أيمن",
+      "english": "Baraka Umm Ayman",
+      "kind": "person"
+    },
+    {
+      "arabic": "المدينة",
+      "english": "Medina",
+      "kind": "place"
+    },
+    {
+      "arabic": "زيد بن حارثة",
+      "english": "Zayd ibn Haritha",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن السّكن",
+      "english": "Ibn al-Sakan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

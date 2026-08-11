@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011670",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11670,
+  "title": {
+    "english": "Kabsha bint 'Abd 'Amr",
+    "arabic_observed": "كبشة بنت عبد عمرو"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011670-segment-0001",
+      "volume": 8,
+      "scan_page": 295,
+      "printed_page": 294,
+      "reader_page": 4207,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4207",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0295:59abeeb62025d9d2",
+      "arabic": "١١٦٧٠- كبشة بنت عبد عمرو\nبن عبيد بن قميئة بن عامر «٣» بن الخزرج الأنصارية، من بني ساعدة.\nذكرها ابن حبيب في المبايعات.",
+      "english": "11670—Kabsha bint 'Abd 'Amr\n\nibn 'Ubayd ibn Qumay'a ibn 'Amir (3) ibn al-Khazraj, the Ansari woman of Banu Sa'ida.\n\nIbn Habib mentioned her among the women who pledged allegiance.",
+      "arabic_sha256": "9d830065bb00184ad25b7f69283bfc4243e6e7f405c873b152a763da508a5e39",
+      "english_sha256": "5df235d5f0a705f7002e8807e669214ab63664545b9a4363ef07df67298c75bf",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "كبشة",
+      "english": "Kabsha bint Thabit ibn al-Mundhir ibn Haram",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني ساعدة",
+      "english": "Banu Sa'ida",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

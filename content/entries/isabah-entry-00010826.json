@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010826",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10826,
+  "title": {
+    "english": "Umama bint Simak",
+    "arabic_observed": "أمامة بنت سماك"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010826-segment-0001",
+      "volume": 8,
+      "scan_page": 25,
+      "printed_page": 24,
+      "reader_page": 3937,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3937",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0025:844818361ccf1b32",
+      "arabic": "١٠٨٢٦- أمامة بنت سماك\nبن عتيك الأوسية الأشهلية «١»، والدة الحارث بن أوس بن معاذ.\nاستدركها ابن الأثير عن ابن حبيب. وقال ابن سعد: إنّ أم الحارث هي أختها هند بنت سماك، وأما أمامة فكانت زوج شريك بن أنس بن رافع بن امرئ القيس، فولدت له عبد اللَّه، وأم صخر، وأم سليمان، وحبيبة. قال: وأسلمت وبايعت.",
+      "english": "10826—Umama bint Simak\nibn Atik, of the Aws and the Banu Abd al-Ashhal,(1) the mother of al-Harith ibn Aws ibn Mu'adh.\n\nIbn al-Athir included her as an omitted entry on the authority of Ibn Habib. Ibn Sa'd said that al-Harith's mother was her sister, Hind bint Simak. As for Umama, she was the wife of Sharik ibn Anas ibn Rafi ibn Imru al-Qays, and she bore him Abd Allah, Umm Sakhr, Umm Sulayman, and Habiba. He said: She embraced Islam and pledged allegiance.",
+      "arabic_sha256": "e35b562412d635489d5b105c681d3c83737ad0ae5fcc618124fd26ee80a130a2",
+      "english_sha256": "c4d2ff6e813abcea4aa0d855ca7ed370d91186f9c42ab4c0d016abb694c47dd0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الحارث بن أوس بن معاذ",
+      "english": "al-Harith ibn Aws ibn Mu'adh",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند بنت سماك",
+      "english": "Hind bint Simak",
+      "kind": "person"
+    },
+    {
+      "arabic": "شريك بن أنس بن رافع بن امرئ القيس",
+      "english": "Sharik ibn Anas ibn Rafi ibn Imru al-Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأوس",
+      "english": "Aws",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بنو عبد الأشهل / الأشهلية",
+      "english": "Banu Abd al-Ashhal",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

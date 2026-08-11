@@ -1,0 +1,110 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012224",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12224,
+  "title": {
+    "english": "Umm Ka'b al-Ansariyya. (2)",
+    "arabic_observed": "أم كعب الأنصاريّة «٢» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012224-segment-0001",
+      "volume": 8,
+      "scan_page": 460,
+      "printed_page": 459,
+      "reader_page": 4372,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4372",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0460:673dbef84177adf9",
+      "arabic": "١٢٢٢٤- أم كعب الأنصاريّة «٢» .\nنسبها أبو نعيم. ثبت ذكرها في صحيح مسلم من رواية عبد اللَّه بن بريدة، عن سمرة بن جندب، قال: صلّيت خلف النّبيّ ﵌ على أم كعب، ماتت وهي نفساء، فقام رسول اللَّه ﵌ للصّلاة عليها. وأصل الحديث عند البخاري.",
+      "english": "12224—Umm Ka'b al-Ansariyya. (2)\n\nAbu Nu'aym gave her lineage. Her mention is established in Sahih Muslim through the transmission of Abd Allah ibn Burayda, from Samura ibn Jundab, who said: “I performed the funeral prayer behind the Prophet—may Allah bless him and grant him peace—over Umm Ka'b. She had died while in the postpartum state, and the Messenger of Allah—may Allah bless him and grant him peace—stood to perform the prayer over her.” The basis of the hadith is also found in al-Bukhari.",
+      "arabic_sha256": "f74f102bb287bf4439739d4e14001f46cdd5175d3466fda93a8a1f31c8fdb4c0",
+      "english_sha256": "db75712cb9d94c832205512939192d357e0ff9c065aa6ff58d48b3dcb564a57b",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كعب الأنصاريّة",
+      "english": "Umm Ka'b al-Ansariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "صحيح مسلم",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    },
+    {
+      "arabic": "عبد اللَّه بن بريدة",
+      "english": "Abd Allah ibn Burayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "سمرة بن جندب",
+      "english": "Samura ibn Jundab",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم كعب",
+      "english": "Umm Ka'b",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "كعب",
+      "english": "Ka'b ibn 'Ujra",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصحيح",
+      "english": "Sahih Muslim",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

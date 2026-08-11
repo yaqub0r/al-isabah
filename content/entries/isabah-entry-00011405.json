@@ -1,0 +1,140 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011405",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11405,
+  "title": {
+    "english": "Safiyya bint al-Harith",
+    "arabic_observed": "صفية بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011405-segment-0001",
+      "volume": 8,
+      "scan_page": 210,
+      "printed_page": 209,
+      "reader_page": 4122,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4122",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0210:cef0daed91286189",
+      "arabic": "١١٤٠٥- صفية بنت الحارث\nبن طلحة بن أبي طلحة العبدرية.\nقتل أبوها يوم بدر «٧» كافرا، وتزوجت هي بعد ذلك عبد اللَّه بن خلف الخزاعي، فولدت له طلحة بن عبد اللَّه المعروف بطلحة الطّلحات وأخته رملة.\nذكرها الزّبير، ومقتضى ذلك أن يكون لها صحبة، لأنّ أهل مكة شهدوا حجة الوداع، ولم يبق بمكة حينئذ أحد إلا من كان مسلما، ولصفية هذه رواية عن عائشة في السنن، وكانت نزلت عليها [في] قصر بني خلف في وقعة الجمل. روى عنها محمد بن سيرين وغيره.\n(١) أسد الغابة ت (٧٠٦٠)، الاستيعاب: ت (٣٤٥١)، أعلام النساء ٢/ ٣٣١، تجريد أسماء الصحابة ٢/ ٢٨٢.\n(٢) في أ: صبيح.\n(٣) أسد الغابة ت (٧٠٦١) .\n(٤) في أ: قسامة.\n(٥) أسد الغابة ت (٧٠٦١) .\n(٦) أسد الغابة ت (٧٠٦٢) .\n(٧) في أ: أحد.",
+      "english": "11405 — Safiyya bint al-Harith\n\nibn Talha ibn Abi Talha, al-Abdariyya.\n\nHer father was killed at Badr⁷ as an unbeliever. She later married Abd Allah ibn Khalaf al-Khuza'i and bore him Talha ibn Abd Allah, known as Talhat al-Talahat, and his sister Ramla.\n\nShe was mentioned by al-Zubayr. This implies that she was a Companion, because the people of Mecca attended the Farewell Pilgrimage, and at that time no one remained in Mecca who was not a Muslim. This Safiyya has a report from Aisha in al-Sunan. Aisha had stayed with her [in] the residence of the Banu Khalaf during the Battle of the Camel. Muhammad ibn Sirin and others narrated from her.\n\n(1) Usd al-Ghaba, entry 7060; al-Isti'ab, entry 3451; A'lam al-Nisa, 2/331; al-Tajrid, 2/282.\n\n(2) In manuscript A: Subayh.\n\n(3) Usd al-Ghaba, entry 7061.\n\n(4) In manuscript A: Qasama.\n\n(5) Usd al-Ghaba, entry 7061.\n\n(6) Usd al-Ghaba, entry 7062.\n\n(7) In manuscript A: Uhud.",
+      "arabic_sha256": "a9d479ab50232081496a0fed9c91bbe5c3da2ea2d2bd6893452205f4183ca774",
+      "english_sha256": "060cfdbaf8a939913cf09049ecf5919d0c2cd5e74ee9e8debfa8ec5e3418612a",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "صبيح",
+      "english": "Safiyya bint Subayh",
+      "kind": "person"
+    },
+    {
+      "arabic": "قسامة",
+      "english": "Safiyya bint Qasama",
+      "kind": "person"
+    },
+    {
+      "arabic": "بدر",
+      "english": "Badr",
+      "kind": "place"
+    },
+    {
+      "arabic": "أحد",
+      "english": "Uhud",
+      "kind": "place"
+    },
+    {
+      "arabic": "عبد الله بن خلف الخزاعي",
+      "english": "Abd Allah ibn Khalaf al-Khuza'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "طلحة بن عبد الله",
+      "english": "Talha ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "طلحة الطلحات",
+      "english": "Talhat al-Talahat",
+      "kind": "person"
+    },
+    {
+      "arabic": "رملة",
+      "english": "Ramla",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير",
+      "english": "al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "حجة الوداع",
+      "english": "Farewell Pilgrimage",
+      "kind": "other"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "السنن",
+      "english": "al-Sunan",
+      "kind": "work"
+    },
+    {
+      "arabic": "بنو خلف",
+      "english": "Banu Khalaf",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "وقعة الجمل",
+      "english": "Battle of the Camel",
+      "kind": "other"
+    },
+    {
+      "arabic": "محمد بن سيرين",
+      "english": "Muhammad ibn Sirin",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

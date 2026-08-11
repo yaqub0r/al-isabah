@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011479",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11479,
+  "title": {
+    "english": "Azza al-Ashja'iyya (2)",
+    "arabic_observed": "عزة الأشجعية «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011479-segment-0001",
+      "volume": 8,
+      "scan_page": 240,
+      "printed_page": 239,
+      "reader_page": 4152,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4152",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0240:4ea98228eacce38b",
+      "arabic": "١١٤٧٩- عزة الأشجعية «٢»\n: مولاة أبي حازم التي أعتقته.\nقال أبو عمر: حديثها عند أشعث بن سوار، عن منصور، عن أبي حازم الأشجعي، عن مولاته عزة، قالت: سمعت رسول اللَّه ﵌ يقول: «ويلكنّ من الأحمرين: الذّهب، والزّعفران» .",
+      "english": "11479 — Azza al-Ashja'iyya (2)\n\nThe patroness of Abu Hazim, whom she emancipated.\n\nAbu Umar said: “Her hadith is transmitted by Ash'ath ibn Sawwar, from Mansur, from Abu Hazim al-Ashja'i, from his patroness Azza, who said: ‘I heard the Messenger of Allah—may Allah bless him and grant him peace—say: “Woe to you women on account of the two red things: gold and saffron.”’”",
+      "arabic_sha256": "f7a22e56f5115a4dc1c8e5df9d83a37a95b42585e1727e1ffa6b4e41ae2f9cd0",
+      "english_sha256": "36d09c6d7c147d5306fa79304f424aac9c9d6e66b30f5eabf8bc58a6dd5d222e",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "رسول اللَّه / النبي",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "عزة الأشجعية",
+      "english": "Azza al-Ashja'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو حازم الأشجعي",
+      "english": "Abu Hazim al-Ashja'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "أشعث بن سوار",
+      "english": "Ash'ath ibn Sawwar",
+      "kind": "person"
+    },
+    {
+      "arabic": "منصور",
+      "english": "Mansur",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

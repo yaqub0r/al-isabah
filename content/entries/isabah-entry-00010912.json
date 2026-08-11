@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010912",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10912,
+  "title": {
+    "english": "Umayma bint Khalaf al-Khuza'iyya",
+    "arabic_observed": "أميمة بنت خلف الخزاعية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010912-segment-0001",
+      "volume": 8,
+      "scan_page": 46,
+      "printed_page": 45,
+      "reader_page": 3958,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3958",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0046:fff2741a526376cd",
+      "arabic": "١٠٩١٢- أميمة بنت خلف الخزاعية ،\nعمة طلحة بن عبد اللَّه بن خلف المعروف بطلحة الطلحات.\nذكرها أبو عمر فيمن اسمها أميمة فصحّف، وكذا ذكرها ابن مندة، لكن قال: أميمة بنت خالد، فصحّف اسم أبيها أيضا. والصواب أمينة- بنون بدل الميم الثانية، وقيل فيها همينة بهاء بدل الهمزة. وقد مضت على الصواب: أميمة بنت خالد الخزاعية.\nكذا سمى ابن مندة أباها. قال ابن الأثير: وهم فيه، والصواب خلف كما تقدم.",
+      "english": "10912—Umayma bint Khalaf al-Khuza'iyya\n\nThe paternal aunt of Talha ibn 'Abd Allah ibn Khalaf, known as Talha al-Talahat.\n\nAbu 'Umar included her among those named Umayma, thereby misreading the name. Ibn Manda likewise mentioned her, but said, “Umayma bint Khalid,” thereby also misreading her father's name. The correct form is Amina—with a nun in place of the second mim. She is also said to have been called Humayna, with ha in place of the hamza. She has already appeared, correctly, as Amina bint Khalaf al-Khuza'iyya.\n\nIbn Manda named her father Khalid. Ibn al-Athir said: “He erred in this; the correct form is Khalaf, as stated previously.”",
+      "arabic_sha256": "4cdd51cd5ae7748e58612a460a85a289aef0c1f43239c69587d8cb9b3df50ee4",
+      "english_sha256": "6177be98c15c17d3f9d9c76c1227fab2a5a25253c965edac0c2b222789413e03",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أميمة بنت خلف الخزاعية",
+      "english": "Umayma bint Khalaf al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "طلحة بن عبد اللَّه بن خلف",
+      "english": "Talha ibn 'Abd Allah ibn Khalaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "طلحة الطلحات",
+      "english": "Talha al-Talahat",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu 'Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة بنت خالد",
+      "english": "Umayma bint Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمينة",
+      "english": "Amina bint Khalaf al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "همينة",
+      "english": "Humayna bint Khalaf al-Khuza'iyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012007",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12007,
+  "title": {
+    "english": "Umm Khuzayma:",
+    "arabic_observed": "أم خزيمة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012007-segment-0001",
+      "volume": 8,
+      "scan_page": 386,
+      "printed_page": 385,
+      "reader_page": 4298,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4298",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0386:e1ff388273593787",
+      "arabic": "١٢٠٠٧- أم خزيمة:\nزوج جهم بن قيس.\n(١) أسد الغابة ت (٣٤٣٠)، تجريد أسماء الصحابة ٢/ ٣١٨، بقي بن مخلد ١٠٠١.\n(٢) طبقات ابن سعد ٨/ ٢٣٤، طبقات خليفة ت ٣٢٤٤، المحبر ٤١٠، الجرح والتعديل ٩/ ٤٦٢، تهذيب الكمال ١٦٧٧، تاريخ الإسلام ٣/ ٢١٩، تذهيب التهذيب ٢٥٦١٤، العقد الثمين ٨/ ١٨٤، تهذيب التهذيب ١٢/ ٤٠٠، أسد الغابة ت (٧٤٣١)، الاستيعاب ت (٣٦٠٣) .\n(٣) أسد الغابة ت (٧٤٣٢) .",
+      "english": "12007—Umm Khuzayma:\n\nThe wife of Jahm ibn Qays.\n\n(1) Usd al-Ghaba, entry 3430; al-Tajrid, 2/318; Baqi ibn Makhlad, 1001.\n\n(2) Ibn Sa'd, al-Tabaqat, 8/234; Khalifa, al-Tabaqat, entry 3244; al-Muhabbar, 410; al-Jarh wa-l-Ta'dil, 9/462; Tahdhib al-Kamal, 1677; Tarikh al-Islam, 3/219; Tadhhib al-Tahdhib, 25614; al-Iqd al-Thamin, 8/184; Tahdhib al-Tahdhib, 12/400; Usd al-Ghaba, entry 7431; al-Isti'ab, entry 3603.\n\n(3) Usd al-Ghaba, entry 7432.",
+      "arabic_sha256": "329838a4c77611d8869bf964accbdf9b07aad50b88f5cce5d32883f9e544d744",
+      "english_sha256": "c53fdbcfb3319307998edabbbcf35dcf66c0e4edca427043aa807be9ba37abd2",
+      "machine_state": "machine_validated_unresolved"
+    },
+    {
+      "id": "isabah-entry-00012007-segment-0002",
+      "volume": 8,
+      "scan_page": 387,
+      "printed_page": 386,
+      "reader_page": 4299,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4299",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0387:fcea5e14ed084782",
+      "arabic": "الإصابة في تمييز الصحابة، ج ٨، ص: ٣٨٦\nهاجرت معه إلى الحبشة، فماتت بها. ذكرها البلاذريّ.",
+      "english": "al-Isabah, vol. 8, p. 386\n\nShe emigrated with him to Abyssinia and died there. It was mentioned by al-Baladhuri.",
+      "arabic_sha256": "044726409db7a62daa78cafd236d70a5fb7821b3b9a727e43c5ad8cd366ae507",
+      "english_sha256": "cdbebd27a5f2f03736612e51efb8c70f8c2320dc1fbd162d2b3d5bf41e77af8c",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم خزيمة",
+      "english": "Umm Khuzayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "جهم بن قيس",
+      "english": "Jahm ibn Qays",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "طبقات ابن سعد",
+      "english": "Ibn Sa'd's al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "خليفة",
+      "english": "Khalifa",
+      "kind": "person"
+    },
+    {
+      "arabic": "طبقات خليفة",
+      "english": "Khalifa's al-Tabaqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "المحبر",
+      "english": "al-Muhabbar",
+      "kind": "work"
+    },
+    {
+      "arabic": "الجرح والتعديل",
+      "english": "al-Jarh wa-l-Ta'dil",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "تاريخ الإسلام",
+      "english": "Tarikh al-Islam",
+      "kind": "work"
+    },
+    {
+      "arabic": "تذهيب التهذيب",
+      "english": "Tadhhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "العقد الثمين",
+      "english": "al-Iqd al-Thamin",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الإصابة في تمييز الصحابة",
+      "english": "al-Isabah",
+      "kind": "work"
+    },
+    {
+      "arabic": "الحبشة",
+      "english": "Abyssinia",
+      "kind": "place"
+    },
+    {
+      "arabic": "البلاذري",
+      "english": "al-Baladhuri",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "citation_locator",
+      "arabic_span": "تذهيب التهذيب ٢٥٦١٤",
+      "explanation": "The supplied evidence does not establish whether ٢٥٦١٤ is a single locator or a compressed volume/page or entry reference. It is therefore preserved exactly as “25614” without inserting unsupported punctuation.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0386:e1ff388273593787"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

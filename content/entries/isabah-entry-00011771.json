@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011771",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11771,
+  "title": {
+    "english": "Mulayka bint Amr ibn Sahl, the Ansari [4]:",
+    "arabic_observed": "مليكة بنت عمرو بن سهل الأنصاريّة «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011771-segment-0001",
+      "volume": 8,
+      "scan_page": 320,
+      "printed_page": 319,
+      "reader_page": 4232,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4232",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0320:221d87fbd8f64ec0",
+      "arabic": "١١٧٧١- مليكة بنت عمرو بن سهل الأنصاريّة «٤»\n: من بني عبد الأشهل.\nذكرها ابن حبيب في المبايعات، وكانت زوج أبي الهيثم بن التيهان.",
+      "english": "11771—Mulayka bint Amr ibn Sahl, the Ansari [4]:\n\nOf the Banu Abd al-Ashhal.\n\nIbn Habib mentioned her among the women who pledged allegiance. She was the wife of Abu al-Haytham ibn al-Tayyihan.",
+      "arabic_sha256": "0811dadb03afd32b6b5af0b771f597d1b602f776f0339c98c3526f354aa02185",
+      "english_sha256": "792e2057a6d71b4f016164d7f6089572affc1905428bd3d2734ce6f6d8b5631b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "مليكة بنت عمرو",
+      "english": "Mulayka bint Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "مليكة",
+      "english": "Mulayka",
+      "kind": "person"
+    },
+    {
+      "arabic": "مليكة بنت عمرو بن سهل",
+      "english": "Mulayka bint Amr ibn Sahl",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني عبد الأشهل",
+      "english": "Banu Abd al-Ashhal",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الهيثم بن التيهان",
+      "english": "Abu al-Haytham ibn al-Tayyihan",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

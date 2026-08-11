@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011688",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11688,
+  "title": {
+    "english": "Kulthum",
+    "arabic_observed": "كلثم:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011688-segment-0001",
+      "volume": 8,
+      "scan_page": 298,
+      "printed_page": 297,
+      "reader_page": 4210,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4210",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0298:f8ea76f8e004b883",
+      "arabic": "١١٦٨٨- كلثم:\nويقال كليبة بالتصغير «٤» بنت برثن، بضم الموحدة ثم المثلثة بينهما راء وآخرها نون، من بني العنبر بن تميم، هي والدة زينب بن ثعلبة-\nأخرج الطبرانيّ في «الكبير»، من طريق زينب «٥» بن ثعلبة، قال: دعتني أم «٦» كليبة بنت برثن العنبرية، فقالت:\nيا ابني، إن هذا أخذ زربيتي «٧» التي كنت ألبس، فلقيت الرجل فأتيت به النبي ﵌، فقلت: يا رسول اللَّه، إن هذا زربية أمي فقال: ردها عليه.\nذكرها أبو نعيم، وهذا مختصر من حديث طويل، قال أبو نعيم: ويقال اسمها كليم.",
+      "english": "11688 — Kulthum\n\nShe is also called Kulayba, in the diminutive form; [4] she was the daughter of Burthun—the ba has damma, followed by tha, with ra between them, and the final letter is nun—and was from Banu al-Anbar ibn Tamim. She was the mother of Zaynab ibn Tha'laba.\n\nAl-Tabarani transmitted in al-Kabir, through Zaynab [5] ibn Tha'laba, who said: Umm [6] Kulayba bint Burthun al-Anbariyya summoned me and said:\n\n“My son, this man has taken my zarbiyya [7], which I used to wear.”\n\nI met the man and brought him to the Prophet, may Allah bless him and grant him peace, and said, “O Messenger of Allah, this is my mother's zarbiyya.” He said, “Return it to him.”\n\nAbu Nu'aym mentioned her. This is an abridgment of a long hadith. Abu Nu'aym said: Her name is also said to have been Kulaym.",
+      "arabic_sha256": "69819802f31bace3187a0f3005ab6da31aab66f71562d9cea15f2cb8ac7b0d1c",
+      "english_sha256": "f8887df6bde56c947a77bf6f95088527404d079d18498ff14c7e3c859cbdd8bd",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "كليبة بنت برثن",
+      "english": "Kulayba bint Burthun",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني العنبر بن تميم",
+      "english": "Banu al-Anbar ibn Tamim",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "زينب بن ثعلبة",
+      "english": "Zaynab ibn Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "كليم",
+      "english": "Kulaym",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011996",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11996,
+  "title": {
+    "english": "Umm Habib bint al-Abbas",
+    "arabic_observed": "أم حبيب بنت العباس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011996-segment-0001",
+      "volume": 8,
+      "scan_page": 384,
+      "printed_page": 383,
+      "reader_page": 4296,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4296",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0384:5bc7a1bb39774778",
+      "arabic": "١١٩٩٦- أم حبيب بنت العباس\nبن عبد المطلب. تقدم التنبيه عليها في الأول.",
+      "english": "11996—Umm Habib bint al-Abbas\nibn Abd al-Muttalib. Notice concerning her was given previously in Section One.",
+      "arabic_sha256": "325af7945a138b46e6ead400433c6d08844289e235949c9687a3ad0f8440f2c5",
+      "english_sha256": "d30000ff62291c4488e6a20ef76cfdfd4ed6b8ed00da589c0c13acf701d4c6fd",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

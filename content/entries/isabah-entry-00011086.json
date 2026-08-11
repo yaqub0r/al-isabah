@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011086",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11086,
+  "title": {
+    "english": "Khalida bint Abd al-Uzza,",
+    "arabic_observed": "خالدة بنت عبد العزى ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011086-segment-0001",
+      "volume": 8,
+      "scan_page": 99,
+      "printed_page": 98,
+      "reader_page": 4011,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4011",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0099:b2d9662e59813bc9",
+      "arabic": "١١٠٨٦- خالدة بنت عبد العزى ،\nعم النبي ﷺ أبي لهب.\nتزوجها عثمان بن أبي العاص الثقفي، فولدت له، قاله ابن سعد.\nقلت: وذكرها الدّار الدّارقطنيّ في كتاب «الإخوة» «٣» وقال: لا رؤية لها.\n(١) أسد الغابة ت ٦٨٧٢، الاستيعاب ت ٣٣٥٨.\n(٢) سقط في أ.\n(٣) في أالآخرة.",
+      "english": "11086—Khalida bint Abd al-Uzza,\n\nthe daughter of the Prophet's paternal uncle—may Allah bless him and grant him peace—Abu Lahab.\n\nUthman ibn Abi al-As al-Thaqafi married her, and she bore children to him. Ibn Sa'd stated this.\n\nI said: Al-Daraqutni also mentioned her in the book al-Ikhwa (Siblings) (3) and said: “She did not see [the Prophet].”\n\n(1) Usd al-Ghaba, entry 6872; al-Isti'ab, entry 3358.\n\n(2) Omitted in manuscript A.\n\n(3) In manuscript A: al-Akhira (“the Hereafter”).",
+      "arabic_sha256": "53b684b71144a407f02ca07c0b7b5519c937eea6080079ee9733884886e9481d",
+      "english_sha256": "d4a51c5c836c912caca8e3f0b31ae00dc168c0781e757eb96c6b22a54ef73d72",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "خالدة بنت عبد العزى",
+      "english": "Khalida bint Abd al-Uzza",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد العزى",
+      "english": "Abd al-Uzza",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو لهب",
+      "english": "Abu Lahab",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن أبي العاص الثقفي",
+      "english": "Uthman ibn Abi al-As al-Thaqafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدارقطني",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الإخوة",
+      "english": "al-Ikhwa",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الآخرة",
+      "english": "al-Akhira",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

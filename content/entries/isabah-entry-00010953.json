@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010953",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10953,
+  "title": {
+    "english": "Buthayna bint al-Dahhak,²",
+    "arabic_observed": "بثينة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010953-segment-0001",
+      "volume": 8,
+      "scan_page": 56,
+      "printed_page": 55,
+      "reader_page": 3968,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3968",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0056:6ddbd915a60776ee",
+      "arabic": "١٠٩٥٣- بثينة ،\nبمثلثة ونون مصغرا، بنت الضحاك «٢» .\nأوردها أبو نعيم في الموحدة، وتعقبه أبو موسى أن الأكثر ذكروها بمثلثة أولها كما سيأتي. وقال ابن الأثير- تبعا لأبي موسى: ليس في الحديث ذكر لصحبتها.\nقلت: لكن جزم أبو عمر بأن لها رؤية كما سيأتي بيانه في المثلثة.",
+      "english": "10953. Buthayna bint al-Dahhak,²\n\nwith an initial tha and a nun, in the diminutive form.\n\nAbu Nu'aym included her under the single-dotted letter ba. Abu Musa objected that most authorities recorded her with the three-dotted letter tha as her initial, as will follow. Ibn al-Athir, following Abu Musa, said: “The hadith contains no mention that she was a Companion.”\n\nI say: Abu Umar, however, stated categorically that she saw the Prophet, as will be explained under the three-dotted letter tha.",
+      "arabic_sha256": "35ab16805a54b983257125bf43ee43d76001d286229a8ca16ee7e843e289c165",
+      "english_sha256": "7fa488cea807cc864ae9459b6471f3c8d9adfe3570c782cdf8e77449c83b51b4",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "بثينة بنت الضحاك",
+      "english": "Buthayna bint al-Dahhak",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن الأثير",
+      "english": "Ibn al-Athir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010848",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10848,
+  "title": {
+    "english": "Umayma bint Bashir",
+    "arabic_observed": "أميمة بنت بشير"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010848-segment-0001",
+      "volume": 8,
+      "scan_page": 30,
+      "printed_page": 29,
+      "reader_page": 3942,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3942",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0030:72c0de50d3109001",
+      "arabic": "١٠٨٤٨- أميمة بنت بشير\nبن سعد الأنصارية، ثم الخزرجية «٣»، أخت النعمان بن بشير لأبويه.\n(١) أسد الغابة: ت ٦٧٣٣.\n(٢) أسد الغابة: ت ٦٧٣٤.\n(٣) أسد الغابة: ت ٦٧٣٥.",
+      "english": "10848—Umayma bint Bashir\n\nibn Sa'd, the Ansari and then Khazraji woman,³ and the full sister of al-Nu'man ibn Bashir.\n\n¹ Usd al-Ghaba, entry 6733.\n\n² Usd al-Ghaba, entry 6734.\n\n³ Usd al-Ghaba, entry 6735.",
+      "arabic_sha256": "a6e095fe22149a6ebc1aabf20de2671c4628dc06f9834be9a3f8705597e61887",
+      "english_sha256": "2423486ffff0c542a45be03982b6fbcc1e6f48539ab1636ec51179e869bd3200",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00010848-segment-0002",
+      "volume": 8,
+      "scan_page": 31,
+      "printed_page": 30,
+      "reader_page": 3943,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3943",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0031:39f9e796adf302b7",
+      "arabic": "ذكرها ابن سعد، وقال: أسلمت وبايعت، ويقال لها أبية- بموحدة وتشديد.",
+      "english": "Ibn Sa'd mentioned her and said: “She embraced Islam and gave the pledge of allegiance.” She is also said to have been called Ubayya—with a ba and gemination.",
+      "arabic_sha256": "c48046a0d65d153e8320b960ec467c274a50d1366ef2dc35f70d416b8e3b3561",
+      "english_sha256": "779b53f2d1c3218ca65d03c1e078dc2f70b5060e81008802e8d0b541ac612faa",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصار",
+      "english": "al-Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الخزرجية",
+      "english": "Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النعمان بن بشير",
+      "english": "al-Nu'man ibn Bashir",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبية",
+      "english": "Ubayya bint Bashir",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

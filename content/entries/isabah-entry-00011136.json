@@ -1,0 +1,123 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011136",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11136,
+  "title": {
+    "english": "Khawla bint al-Hudhayl",
+    "arabic_observed": "خولة بنت الهذيل"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011136-segment-0001",
+      "volume": 8,
+      "scan_page": 122,
+      "printed_page": 121,
+      "reader_page": 4034,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4034",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0122:11763e3024b485cc",
+      "arabic": "١١١٣٦- خولة بنت الهذيل\nبن قبيصة بن هبيرة بن الحارث «١» بن حبيب بن حرفة، بضم المهملة وسكون الراء بعدها فاء، ابن ثعلبة بن بكر بن حبيب بن عمرو بن غنم بن تغلب التغلبية.\nيقال: تزوّجها النبيّ ﷺ. فماتت في الطريق قبل أن تصل إليه. قاله أبو عمر عن الجرجانيّ النّسّابة.\nقلت: وقد ذكرها المفضل بن غسان الغلّابي في تاريخه، عن علي بن صالح، عن علي بن مجاهد، قال: وتزوج النبي ﷺ خولة بنت الهذيل، وأمّها خرنق بنت خليفة أخت دحية الكلبي، فحملت إليه من الشام، فماتت في الطريق، فنكح خالتها شراف أخت دحية بن خليفة، فحملت إليه فماتت في الطريق أيضا.\nوقد مضى مثل ذلك في ترجمة خرنق قريبا عن ابن سعد.",
+      "english": "11136—Khawla bint al-Hudhayl\n\nibn Qubaysa ibn Hubayra ibn al-Harith (1) ibn Habib ibn Hurfa—the latter with an unpointed ha bearing a damma, then a vowelless ra, followed by a fa—ibn Tha'laba ibn Bakr ibn Habib ibn Amr ibn Ghanm ibn Taghlib, al-Taghlibiyya.\n\nIt is said that the Prophet, may Allah bless him and grant him peace, married her, but she died on the journey before reaching him. Abu Umar related this on the authority of al-Jurjani the genealogist.\n\nI say: al-Mufaddal ibn Ghassan al-Ghallabi also mentioned her in his History, on the authority of Ali ibn Salih, from Ali ibn Mujahid, who said: “The Prophet, may Allah bless him and grant him peace, married Khawla bint al-Hudhayl. Her mother was Khirniq bint Khalifa, the sister of Dihya al-Kalbi. She was conveyed to him from Syria, but died on the journey. He then married her maternal aunt Shuraf, the sister of Dihya ibn Khalifa. She too was conveyed to him, but died on the journey.”\n\nA similar report from ibn Sa'd appeared recently in the entry on Khirniq.",
+      "arabic_sha256": "743d607f2255df20e42fdb9d52a11df54e51684b387f9c62fd20f8f50d2746cd",
+      "english_sha256": "161106855c7037d87765a01dd061392c833fc77dce08f95feae563ba200dace9",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "خولة بنت الهذيل",
+      "english": "Khawla bint al-Hudhayl",
+      "kind": "person"
+    },
+    {
+      "arabic": "تغلب",
+      "english": "Taghlib",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "التغلبية",
+      "english": "Taghlib",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النبيّ ﷺ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجرجانيّ النّسّابة",
+      "english": "al-Jurjani",
+      "kind": "person"
+    },
+    {
+      "arabic": "المفضل بن غسان الغلّابي",
+      "english": "al-Mufaddal ibn Ghassan al-Ghallabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن صالح",
+      "english": "Ali ibn Salih",
+      "kind": "person"
+    },
+    {
+      "arabic": "علي بن مجاهد",
+      "english": "Ali ibn Mujahid",
+      "kind": "person"
+    },
+    {
+      "arabic": "خرنق بنت خليفة",
+      "english": "Khirniq bint Khalifa",
+      "kind": "person"
+    },
+    {
+      "arabic": "دحية الكلبي",
+      "english": "Dihya ibn Khalifa al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "شراف",
+      "english": "Shuraf",
+      "kind": "person"
+    },
+    {
+      "arabic": "دحية بن خليفة",
+      "english": "Dihya ibn Khalifa al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشام",
+      "english": "Syria",
+      "kind": "place"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "شراف",
+      "explanation": "The supplied witnesses preserve only the unvocalized spelling and cannot distinguish Shuraf, Sharaf, or Shiraf. Later references also conflict, giving [Sharaf](https://islamqa.info/ar/answers/562198), [Shiraf](https://www.islamweb.net/ar/library/content/1080/3435/), and [Shuraf](https://sahaba.rasoolona.com/Sahaby/15309/). The candidate form Shuraf is therefore retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0122:11763e3024b485cc"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

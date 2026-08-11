@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011824",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11824,
+  "title": {
+    "english": "Nuhayya:",
+    "arabic_observed": "نهية:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011824-segment-0001",
+      "volume": 8,
+      "scan_page": 338,
+      "printed_page": 337,
+      "reader_page": 4250,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4250",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0338:886a095e5bfe533b",
+      "arabic": "١١٨٢٤- نهية:\nأم ولد عمر. تقدمت في لهية في حرف اللّام.",
+      "english": "11824—Nuhayya:\nUmar's umm walad. She was mentioned previously under Luhayya, in the letter lam.",
+      "arabic_sha256": "d822c900c4f570e2a3e6bb419b60960d5d7e8db9a79aa2fe8e25133c08439969",
+      "english_sha256": "476177f8f91340c00c87e9904b72766f2e2e8262423f6b045dbcb34852525a92",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "نهية",
+      "english": "Nuhayya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "لهية",
+      "english": "Luhayya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012295",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12295,
+  "title": {
+    "english": "Umm Hilal[3] bint Bilal.[4]",
+    "arabic_observed": "أم هلال «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012295-segment-0001",
+      "volume": 8,
+      "scan_page": 489,
+      "printed_page": 488,
+      "reader_page": 4401,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4401",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0489:11550dfff0eb14c4",
+      "arabic": "١٢٢٩٥- أم هلال «٣»\nبنت بلال «٤» .\nذكرها ابن مندة، وعزاها لمسلم، وعابه أبو نعيم، ثم قال: الصّواب أم بلال بنت هلال.\nحرف الواو\nالقسم الأول",
+      "english": "12295—Umm Hilal[3] bint Bilal.[4]\n\nIbn Manda mentioned her and attributed the notice to Muslim. Abu Nu'aym faulted him for this, then said: “The correct form is Umm Bilal bint Hilal.”\n\nTHE LETTER WAW\n\nTHE FIRST SECTION",
+      "arabic_sha256": "1659811a7728c1cb12c11ac011d8f2c162e978ba9ee7c696ec7794a243661105",
+      "english_sha256": "e782ca826c4ac9c1b0b208deb5d7d45a01568795796be4d5d0814e9452812590",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسلم",
+      "english": "Muslim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم بلال بنت هلال",
+      "english": "Umm Bilal bint Hilal",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

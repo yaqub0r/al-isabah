@@ -1,0 +1,159 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011214",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11214,
+  "title": {
+    "english": "Rayhana bint Ma'dikarib al-Zubaydiyya",
+    "arabic_observed": "ريحانة بنت معدي كرب الزبيدية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011214-segment-0001",
+      "volume": 8,
+      "scan_page": 149,
+      "printed_page": 148,
+      "reader_page": 4061,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4061",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0149:7660ae87a4da8f5b",
+      "arabic": "١١٢١٤- ريحانة بنت معدي كرب الزبيدية ،\nأخت عمرو بن معديكرب الفارس المشهور.\nلها إدراك، وكان أخوها يتغزل فيها، وهي المرادة بقوله في أول قصيدته المشهورة:\n(١) أسد الغابة: ت ٦٩٤٣، الاستيعاب: ت ٣٣٩٩.\n(٢) الثقات ٣/ ١٣٢، أعلام النساء ١/ ٤١٣، أسد الغابة: ت ٦٩٤٤.",
+      "english": "11214—Rayhana bint Ma'dikarib al-Zubaydiyya\n\nShe was the sister of Amr ibn Ma'dikarib, the famous warrior.\n\nShe lived into the Islamic period. Her brother used to compose love poetry about her, and she is the one intended by his words at the beginning of his famous ode:\n\n[1] Usd al-Ghaba: entry 6943; al-Isti'ab: entry 3399.\n\n[2] al-Thiqat, 3/132; A'lam al-Nisa', 1/413; Usd al-Ghaba: entry 6944.",
+      "arabic_sha256": "43abd5b685d850e2411901cf41324e7efe4981b33c2834234e758482680653e5",
+      "english_sha256": "e0f1e9ef1a866bab8e4b9026e634c0f699d6b5be27c7d6b139c79b6242f16436",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011214-segment-0002",
+      "volume": 8,
+      "scan_page": 150,
+      "printed_page": 149,
+      "reader_page": 4062,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4062",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0150:c3dab5c17262d97b",
+      "arabic": "أمن ريحانة الدّاعي السّميع ... يورّقني وأصحابي هجوع\n[الوافر] وقيل: بل كان يتغزل بأم دريد بن الصمة، وهي ريحانة امرأة أخرى سباها الصمة الجشمي في الجاهلية، وكان لها ذكر، فولدت له دريد بن الصمة الفارس المشهور، وماتت في الجاهلية، وقتل ولدها دريد يوم حنين على المشهور. وأما ريحانة أخت عمرو فإنّها سبيت في الردة ففداها خالد بن سعيد بن العاصي، وردّها إلى أخيها عمرو، فأهدى له الصمصامة، فلهذا صارت في بني أمية. ذكر ذلك أبو الفرج الأصبهاني.",
+      "english": "Is it the loud-voiced caller concerning Rayhana\nwho keeps me awake while my companions sleep?\n\n[al-Wafir]\n\nIt is also said that he was instead composing love poetry about the mother of Duraid ibn al-Simma. She was another woman named Rayhana, whom al-Simma al-Jushami had taken captive during the Age of Ignorance. She had a story: she bore him Duraid ibn al-Simma, the famous horseman, and she died during the Age of Ignorance. Her son Duraid was killed on the day of Hunayn, according to the well-known account. As for Rayhana, the sister of Amr, she was taken captive during the Ridda, so Khalid ibn Sa'id ibn al-As ransomed her and returned her to her brother Amr. Amr then presented him with al-Samsama; this is why it came into the possession of the Banu Umayya. Abu al-Faraj al-Isfahani mentioned this.",
+      "arabic_sha256": "4216bdf961dc13d39bb88af25f1494a42e5a734c069354719c227574bd2bb0bc",
+      "english_sha256": "caf6b5acf1ada0ce1d8382348e6142b59f94ab7ccbdfb6515c0151b7fdee1116",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ريحانة بنت معدي كرب الزبيدية",
+      "english": "Rayhana bint Ma'dikarib al-Zubaydiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن معديكرب",
+      "english": "Amr ibn Ma'dikarib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "الوافر",
+      "english": "al-Wafir",
+      "kind": "other"
+    },
+    {
+      "arabic": "ريحانة",
+      "english": "Rayhana bint Ma'dikarib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم دريد بن الصمة، وهي ريحانة",
+      "english": "Rayhana Umm Duraid ibn al-Simma",
+      "kind": "person"
+    },
+    {
+      "arabic": "دريد بن الصمة",
+      "english": "Duraid ibn al-Simma",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصمة الجشمي",
+      "english": "al-Simma al-Jushami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجاهلية",
+      "english": "Age of Ignorance",
+      "kind": "other"
+    },
+    {
+      "arabic": "حنين",
+      "english": "Hunayn",
+      "kind": "place"
+    },
+    {
+      "arabic": "عمرو",
+      "english": "Amr ibn Ma'dikarib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الردة",
+      "english": "Ridda",
+      "kind": "other"
+    },
+    {
+      "arabic": "خالد بن سعيد بن العاصي",
+      "english": "Khalid ibn Sa'id ibn al-As",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصمصامة",
+      "english": "al-Samsama",
+      "kind": "other"
+    },
+    {
+      "arabic": "بني أمية",
+      "english": "Banu Umayya",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو الفرج الأصبهاني",
+      "english": "Abu al-Faraj al-Isfahani",
+      "kind": "person"
+    },
+    {
+      "arabic": "ريحانة",
+      "english": "Rayhana",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar ibn al-Khattab",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

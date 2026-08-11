@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011180",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11180,
+  "title": {
+    "english": "Rifa'a bint Thabit ibn al-Fakih ibn Tha'laba ibn al-Harith ibn Zayd ibn Tha'laba³",
+    "arabic_observed": "رفاعة بنت ثابت"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011180-segment-0001",
+      "volume": 8,
+      "scan_page": 136,
+      "printed_page": 135,
+      "reader_page": 4048,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4048",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0136:5ec110bb6554d5eb",
+      "arabic": "١١١٨٠- رفاعة بنت ثابت\nبن الفاكه بن ثعلبة بن الحارث بن زيد بن ثعلبة «٣»، من بني خطمة الأنصارية. ذكرها ابن حبيب فيمن بايعن النبي ﷺ، وكذا قال بن سعد.",
+      "english": "11180—Rifa'a bint Thabit ibn al-Fakih ibn Tha'laba ibn al-Harith ibn Zayd ibn Tha'laba³\n\nan Ansari woman of Banu Khatma. Ibn Habib mentioned her among the women who pledged allegiance to the Prophet, may Allah bless him and grant him peace; Ibn Sa'd said the same.",
+      "arabic_sha256": "2e9732d8b9d0512ea1eaeb13b0548e24ae2a07bd6d15e2a8ee508220aa7c29b9",
+      "english_sha256": "7f43e27bf55492720cf680a5f1b4256503841f85418e433ca1cf8d80db804e0a",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "رفاعة بنت ثابت بن الفاكه بن ثعلبة بن الحارث بن زيد بن ثعلبة",
+      "english": "Rifa'a bint Thabit ibn al-Fakih ibn Tha'laba ibn al-Harith ibn Zayd ibn Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو خطمة",
+      "english": "Banu Khatma",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

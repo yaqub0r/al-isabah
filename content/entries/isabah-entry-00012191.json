@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012191",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12191,
+  "title": {
+    "english": "Umm Amr:",
+    "arabic_observed": "أم عمرو:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012191-segment-0001",
+      "volume": 8,
+      "scan_page": 445,
+      "printed_page": 444,
+      "reader_page": 4357,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4357",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0445:3ffaff7672c6c364",
+      "arabic": "١٢١٩١- أم عمرو:\nزوج حريث بن عمرو بن عثمان المخزوميّ «٢» .\nأخرج حديثها من طريق يحيى بن يمان، عن إسماعيل بن أبي خالد، عن عمرو بن حريث، قال: ذهبت بي أمّي إلى النّبيّ ﵌ فمسح على رأسي، ودعا لي بالرّزق.",
+      "english": "12191—Umm Amr:\n\nThe wife of Hurayth ibn Amr ibn Uthman al-Makhzumi.[2]\n\nHer report was transmitted by way of Yahya ibn Yaman, from Isma'il ibn Abi Khalid, from Amr ibn Hurayth, who said: “My mother took me to the Prophet—may Allah bless him and grant him peace—who passed his hand over my head and prayed that I be granted sustenance.”",
+      "arabic_sha256": "0ad43a6495cef902926d0c6420fa15912b1e71a57bbe88c36f0fd46639c1657a",
+      "english_sha256": "90f34961943995d703bcae71aaf9b75a8618cce09cc658613e4bee570172e7b7",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو زوج حريث بن عمرو بن عثمان المخزومي",
+      "english": "Umm Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "حريث بن عمرو بن عثمان المخزومي",
+      "english": "Hurayth ibn Amr ibn Uthman al-Makhzumi",
+      "kind": "person"
+    },
+    {
+      "arabic": "يحيى بن يمان",
+      "english": "Yahya ibn Yaman",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسماعيل بن أبي خالد",
+      "english": "Isma'il ibn Abi Khalid",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن حريث",
+      "english": "Amr ibn Hurayth",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عمرو زوج سليم الزرقي",
+      "english": "Umm Amr",
+      "kind": "person"
+    },
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

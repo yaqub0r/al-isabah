@@ -1,0 +1,104 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011697",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11697,
+  "title": {
+    "english": "Kabsha bint Burthun:",
+    "arabic_observed": "كبشة بنت برثن:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011697-segment-0001",
+      "volume": 8,
+      "scan_page": 299,
+      "printed_page": 298,
+      "reader_page": 4211,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4211",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0299:e028f5de042dddb1",
+      "arabic": "١١٦٩٧- كبشة بنت برثن:\nوقيل يثربي العنبرية- ذكرها أبو عمر في حديث زينب بنت ثعلبة، كذا في التّجريد، وهو تصحيف، وإنما هي كليبة، بالتصغير، كما تقدم قريبا في كلثم.\n(١) أعلام النساء ٤/ ٢٦٩.\n(٢) سقط في أ.\n(٣) سقط في أ.\n(٤) أسد الغابة ت (٧٢٣٧)، الاستيعاب ت (٣٥٢٧) .",
+      "english": "11697—Kabsha bint Burthun:\nIt is also said: [bint] Yathribi, al-Anbariyya. Abu Umar mentioned her in the hadith of Zaynab bint Thalaba. This is what appears in al-Tajrid, but it is a scribal corruption. She is actually Kulayba, in the diminutive form, as was stated shortly above under Kulthum.\n\n(1) A'lam al-Nisa' 4/269.\n(2) Omitted in manuscript A.\n(3) Omitted in manuscript A.\n(4) Usd al-Ghaba, entry 7237; al-Isti'ab, entry 3527.",
+      "arabic_sha256": "8c04c137465224fae11a86ad77040a1e029da67a0a95684c6b3d8e201d3c4a03",
+      "english_sha256": "e07fd3fba0eb1e1f0af56406ba9fcb35c2134693edecf88ed6359b8dd8987fa2",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011697-segment-0002",
+      "volume": 8,
+      "scan_page": 300,
+      "printed_page": 299,
+      "reader_page": 4212,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4212",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0300:9fb33e799d5616d0",
+      "arabic": "حرف اللام\nالقسم الأول",
+      "english": "THE LETTER LAM\n\nFIRST SECTION",
+      "arabic_sha256": "ec138238f1e8b7b511de2f04e978425de9f7d8c9210c3758665e7af09cac4eca",
+      "english_sha256": "8dec435db5f0844bd87d236797cff297d68107089761b9ea11fab14cd016b693",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "التجريد",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "كبشة بنت برثن",
+      "english": "Kabsha bint Burthun",
+      "kind": "person"
+    },
+    {
+      "arabic": "يثربي العنبرية",
+      "english": "Kabsha bint Yathribi al-Anbariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت ثعلبة",
+      "english": "Zaynab bint Thalaba",
+      "kind": "person"
+    },
+    {
+      "arabic": "كليبة",
+      "english": "Kulayba",
+      "kind": "person"
+    },
+    {
+      "arabic": "كلثم",
+      "english": "Kulthum",
+      "kind": "person"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa'",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012174",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12174,
+  "title": {
+    "english": "Umm Afif al-Nahdiyya:[4]",
+    "arabic_observed": "أم عفيف النهديّة «٤»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012174-segment-0001",
+      "volume": 8,
+      "scan_page": 439,
+      "printed_page": 438,
+      "reader_page": 4351,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4351",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0439:b37a7630f034f6ea",
+      "arabic": "١٢١٧٤- أم عفيف النهديّة «٤»\n: قال أبو عمر: روى حديثها أبو عثمان النّهدي في البيعة.\nقلت:\nوأخرجه الطّبرانيّ من طريق الصّلت بن دينار، عن أبي عثمان النّهدي، عن امرأة منهم يقال لها أم عفيف، قالت: بايعنا رسول اللَّه ﵌ حين بايع النّساء، فأخذ علينا ألّا تحدثن الرّجل إلا محرما، وأمرنا أن نقرأ على جنائزنا بفاتحة الكتاب.",
+      "english": "12174—Umm Afif al-Nahdiyya:[4]\n\nAbu Umar said: “Abu Uthman al-Nahdi narrated her report concerning the pledge of allegiance.”\n\nI say:\n\nAl-Tabarani transmitted it by way of al-Salt ibn Dinar, from Abu Uthman al-Nahdi, from a woman among them called Umm Afif, who said: “We pledged allegiance to the Messenger of Allah—may Allah bless him and grant him peace—when he took the women's pledge. He bound us not to converse with a man unless he was a mahram, and he instructed us to recite the Opening of the Book over our dead.”",
+      "arabic_sha256": "19736ae6660a9dd7d917d7110cac3b51157127297a8f5ea697c33d8d6b664b93",
+      "english_sha256": "92ce641bb093b35e67d44730c9b8e2537ceef40ddbc071098ba2c13bdf00ba1e",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم عفيف النهدية",
+      "english": "Umm Afif al-Nahdiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "النهدية",
+      "english": "Nahd",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عثمان النهدي",
+      "english": "Abu Uthman al-Nahdi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الصلت بن دينار",
+      "english": "al-Salt ibn Dinar",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "the Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "فاتحة الكتاب",
+      "english": "Opening of the Book",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

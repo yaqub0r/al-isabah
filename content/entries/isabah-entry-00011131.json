@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011131",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11131,
+  "title": {
+    "english": "Khawla bint Qays",
+    "arabic_observed": "خولة بنت قيس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011131-segment-0001",
+      "volume": 8,
+      "scan_page": 120,
+      "printed_page": 119,
+      "reader_page": 4032,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4032",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0120:43c7c927a85c7db9",
+      "arabic": "١١١٣١- خولة بنت قيس\nبن السكن بن قيس بن زعوراء بن حرام بن جندب بن عامر بن غنم بن عدي بن النجار.\nقال ابن سعد: تزوجها هشام بن عامر بن أمية بن زيد، من بني مالك بن عدي بن النجار، وأسلمت وبايعت، وأمها أم خولة بنت سفيان بن قيس بن زعوراء.",
+      "english": "11131—Khawla bint Qays\n\nibn al-Sakan ibn Qays ibn Za'ura ibn Haram ibn Jundub ibn 'Amir ibn Ghanm ibn 'Adi ibn al-Najjar.\n\nIbn Sa'd said: Hisham ibn 'Amir ibn Umayya ibn Zayd, of the Banu Malik ibn 'Adi ibn al-Najjar, married her. She embraced Islam and pledged allegiance. Her mother was Umm Khawla bint Sufyan ibn Qays ibn Za'ura.",
+      "arabic_sha256": "caef181c7cc30e0afa341e608f1230698573a24e1b6eeef564caceacaf49156d",
+      "english_sha256": "f0ef7688f338b8e5b7298268c5dc981999aba792577a0a702530053d5683ea9b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "النجاري",
+      "english": "al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "هشام بن عامر بن أمية بن زيد",
+      "english": "Hisham ibn 'Amir ibn Umayya ibn Zayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني مالك بن عدي بن النجار",
+      "english": "Banu Malik ibn 'Adi ibn al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم خولة بنت سفيان بن قيس بن زعوراء",
+      "english": "Umm Khawla bint Sufyan ibn Qays ibn Za'ura",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

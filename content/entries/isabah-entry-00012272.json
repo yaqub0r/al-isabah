@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012272",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12272,
+  "title": {
+    "english": "Umm Maktum",
+    "arabic_observed": "أم مكتوم:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012272-segment-0001",
+      "volume": 8,
+      "scan_page": 481,
+      "printed_page": 480,
+      "reader_page": 4393,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4393",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0481:564bbdd8f60f6676",
+      "arabic": "١٢٢٧٢- أم مكتوم:\nلها ذكر في أواخر المجلد الثاني من أخبار مكة للفاكهيّ، وفي رواية عطاء، عن عبد الرّحمن عن فاطمة بنت قيس.",
+      "english": "12272—Umm Maktum\n\nShe is mentioned near the end of the second volume of al-Fakihi's Akhbar Mecca, in 'Ata's narration from 'Abd al-Rahman, from Fatima bint Qays.",
+      "arabic_sha256": "0303c96f73a35a4351a169f2b48786528c05c6fe74cba1c0685166404da4f4cb",
+      "english_sha256": "13d27db094e649ce271ad8bee8de5958622dbf93b9722e9bcde53dfab647fec0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم مكتوم",
+      "english": "Umm Maktum",
+      "kind": "person"
+    },
+    {
+      "arabic": "أخبار مكة",
+      "english": "Akhbar Mecca",
+      "kind": "work"
+    },
+    {
+      "arabic": "مكة",
+      "english": "Mecca",
+      "kind": "place"
+    },
+    {
+      "arabic": "الفاكهيّ",
+      "english": "al-Fakihi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عطاء",
+      "english": "'Ata",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن",
+      "english": "'Abd al-Rahman",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت قيس",
+      "english": "Fatima bint Qays",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

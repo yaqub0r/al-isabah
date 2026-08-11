@@ -1,0 +1,170 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010961",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10961,
+  "title": {
+    "english": "Tamima bint Wahb (1)",
+    "arabic_observed": "تميمة بنت وهب «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010961-segment-0001",
+      "volume": 8,
+      "scan_page": 59,
+      "printed_page": 58,
+      "reader_page": 3971,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3971",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0059:5365a6d5f8d33d8b",
+      "arabic": "١٠٩٦١- تميمة بنت وهب «١»\n، لا أعلم لها غير قصتها مع رفاعة بن سموال حديث العسيلة من رواية مالك في الموطأ، كذا قال ابن عبد البر.\nوقال ابن مندة: تميمة بنت أبي عبيد امرأة رفاعة القرظي، ثم ساق حديثها من طريق سفيان، عن الزهري، عن عروة، عن عائشة- أن امرأة رفاعة القرظي، كانت تحت عبد الرحمن بن الزبير ولم يسمّها، وسماها قتادة، ثم ساق من طريق سعيد ابن أبي عروبة، عن قتادة- أن تميمة بنت أبي عبيد القرظية كانت تحت رفاعة أو رافع القرظي. فطلقها، فذكر القصة.\nوأما رواية مالك التي أشار إليها أبو عمر، فقال: عن المسور بن رفاعة، عن الزبير بن عبد الرحمن بن الزبير- أن رفاعة بن سموال طلق امرأته تميمة بنت وهب ... فذكر الحديث.\nوقد تقدم الكلام عليه في ترجمة رفاعة. وخالف محمد بن إسحاق، فرواه عن هشام ابن عروة، عن أبيه، فقلبه، قال: كانت امرأة من بني قريظة يقال لها تميمة تحت عبد الرحمن بن الزبير فطلقها فتزوجها رفاعة، ثم طلقها، فأرادت أن ترجع إلى عبد الرحمن ...\nالحديث.\nأخرجه أبو نعيم: وقيل اسمها سهيمة، كما ستأتي، وقيل عائشة. وتقدم في رفاعة.",
+      "english": "10961—Tamima bint Wahb (1)\n\nI know of nothing concerning her except her story with Rifa'a ibn Samaw'al—the hadith of the “little honey”—as narrated by Malik in al-Muwatta. So said Ibn Abd al-Barr.\n\nIbn Manda said: Tamima bint Abi Ubayd, the wife of Rifa'a al-Qurazi. He then cited her hadith by way of Sufyan, from al-Zuhri, from Urwa, from Aisha: the wife of Rifa'a al-Qurazi had been married to Abd al-Rahman ibn al-Zubayr. That report did not name her, but Qatada named her. He then cited, by way of Sa'id ibn Abi Aruba, from Qatada, that Tamima bint Abi Ubayd al-Quraziyya had been married to Rifa'a—or Rafi'—al-Qurazi. He divorced her; then the story was recounted.\n\nAs for Malik's narration to which Abu Umar referred, it reads: from al-Miswar ibn Rifa'a, from al-Zubayr ibn Abd al-Rahman ibn al-Zubayr, that Rifa'a ibn Samaw'al divorced his wife, Tamima bint Wahb ... and the hadith was recounted.\n\nThe discussion of this has already appeared in the entry on Rifa'a. Muhammad ibn Ishaq differed, narrating it from Hisham ibn Urwa, from his father, but reversing it. He said: A woman of Banu Qurayza called Tamima was married to Abd al-Rahman ibn al-Zubayr. He divorced her, whereupon Rifa'a married her. Rifa'a then divorced her, and she wished to return to Abd al-Rahman ... the hadith.\n\nAbu Nu'aym transmitted it. It is also said that her name was Suhayma, as will appear, and it is said that her name was Aisha. This has already appeared under Rifa'a.",
+      "arabic_sha256": "60c836ca7b1a2eef360112f438560895bc46e2ecb46fec70fea311dbe51ab53f",
+      "english_sha256": "35633114719c8170ed3b87783e0f665f90bd704c05ff5c251a7760f84d4f5768",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "تميمة بنت وهب",
+      "english": "Tamima bint Wahb",
+      "kind": "person"
+    },
+    {
+      "arabic": "رفاعة بن سموال",
+      "english": "Rifa'a ibn Samaw'al",
+      "kind": "person"
+    },
+    {
+      "arabic": "مالك",
+      "english": "Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "الموطأ",
+      "english": "al-Muwatta",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن عبد البر",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "تميمة بنت أبي عبيد",
+      "english": "Tamima bint Abi Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "رفاعة القرظي",
+      "english": "Rifa'a al-Qurazi",
+      "kind": "person"
+    },
+    {
+      "arabic": "سفيان",
+      "english": "Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزهري",
+      "english": "al-Zuhri",
+      "kind": "person"
+    },
+    {
+      "arabic": "عروة",
+      "english": "Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن بن الزبير",
+      "english": "Abd al-Rahman ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "قتادة",
+      "english": "Qatada",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد ابن أبي عروبة",
+      "english": "Sa'id ibn Abi Aruba",
+      "kind": "person"
+    },
+    {
+      "arabic": "تميمة بنت أبي عبيد القرظية",
+      "english": "Tamima bint Abi Ubayd al-Quraziyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "رافع القرظي",
+      "english": "Rafi' al-Qurazi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المسور بن رفاعة",
+      "english": "al-Miswar ibn Rifa'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزبير بن عبد الرحمن بن الزبير",
+      "english": "al-Zubayr ibn Abd al-Rahman ibn al-Zubayr",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن إسحاق",
+      "english": "Muhammad ibn Ishaq",
+      "kind": "person"
+    },
+    {
+      "arabic": "هشام ابن عروة",
+      "english": "Hisham ibn Urwa",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني قريظة",
+      "english": "Banu Qurayza",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهيمة",
+      "english": "Suhayma",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

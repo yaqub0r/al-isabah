@@ -1,0 +1,89 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011209",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11209,
+  "title": {
+    "english": "Rayta bint Abi Talib",
+    "arabic_observed": "ريطة بنت أبي طالب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011209-segment-0001",
+      "volume": 8,
+      "scan_page": 148,
+      "printed_page": 147,
+      "reader_page": 4060,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4060",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0148:1dc47bd00d591896",
+      "arabic": "١١٢٠٩- ريطة بنت أبي طالب\nبن عبد المطلب، أخت أم هانئ.\n(١) الاستيعاب: ت ٣٣٩٧.",
+      "english": "11209—Rayta bint Abi Talib\n\nRayta bint Abi Talib ibn Abd al-Muttalib, the sister of Umm Hani'.\n\n¹ al-Isti'ab: entry 3397.",
+      "arabic_sha256": "cb241a3760177fc587273900ddd9be669b4040e9c4c4b397e384d521eb807d32",
+      "english_sha256": "de707f1925a4862ce2f052c3e6c60184adccc37a7558c0f8e43710f37c8ebd53",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011209-segment-0002",
+      "volume": 8,
+      "scan_page": 149,
+      "printed_page": 148,
+      "reader_page": 4061,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4061",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0149:7660ae87a4da8f5b",
+      "arabic": "ذكرها ابن سعد في ترجمة أمها فاطمة بنت أسد، ويقال: كانت تكنى أم طالب. وتأتي في الكنى.",
+      "english": "Ibn Sa'd mentioned her in the biography of her mother, Fatima bint Asad. It is also said that her kunya was Umm Talib. She will appear among the entries arranged by kunya.",
+      "arabic_sha256": "4c5705534f68dd43a17d45ec8a70cfdacdadccd41cec571ee238cc8cf873611a",
+      "english_sha256": "4d0b732aeb9d6072594f86304bb38a95778d658c60646c6decdca96c4dfb90d3",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عليّ",
+      "english": "Ali",
+      "kind": "person"
+    },
+    {
+      "arabic": "ريطة بنت أبي طالب بن عبد المطلب",
+      "english": "Rayta bint Abi Talib ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هانئ",
+      "english": "Umm Hani'",
+      "kind": "person"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت أسد",
+      "english": "Fatima bint Asad",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم طالب",
+      "english": "Umm Talib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

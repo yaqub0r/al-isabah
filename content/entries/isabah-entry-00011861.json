@@ -1,0 +1,115 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011861",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11861,
+  "title": {
+    "english": "Hind bint Atiq ibn A'idh ibn Abd Allah ibn Umar ibn Makhzum",
+    "arabic_observed": "هند بنت عتيق بن عائذ"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011861-segment-0001",
+      "volume": 8,
+      "scan_page": 348,
+      "printed_page": 347,
+      "reader_page": 4260,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4260",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0348:914e979f1fb50734",
+      "arabic": "١١٨٦١- هند بنت عتيق بن عائذ\nبن عبد اللَّه بن عمر بن مخزوم، أمّها خديجة زوج النبيّ ﵌.\nذكرها الدّار الدّارقطنيّ في كتاب «الإخوة»، وقال: أسلمت وتزوّجت ولم ترو عنه شيئا.\nوقال ابن سعد في ترجمة خديجة: خلف على خديجة بعد أبي هالة عتيق بن عائذ بن عبد اللَّه بن عمر بن مخزوم، فولدت له جارية يقال لها هند، فتزوجها صيفي بن أميّة بن عائذ بن عبد اللَّه بن عمر بن مخزوم، وهو ابن عمها، فولدت له محمد بن صيفي، فولد محمد يقال لهم بنو الطّاهرة لمكان خديجة.",
+      "english": "11861 - Hind bint Atiq ibn A'idh ibn Abd Allah ibn Umar ibn Makhzum\n\nHer mother was Khadijah, wife of the Prophet, may Allah bless him and grant him peace.\n\nAl-Daraqutni mentioned her in the Book of Siblings and said, “She embraced Islam and married, but she transmitted nothing from him.”\n\nIn his entry on Khadijah, Ibn Sa'd said: After Abu Hala, Atiq ibn A'idh ibn Abd Allah ibn Umar ibn Makhzum married Khadijah. She bore him a girl called Hind. Hind married Sayfi ibn Umayya ibn A'idh ibn Abd Allah ibn Umar ibn Makhzum, her paternal cousin, and bore him Muhammad ibn Sayfi. Muhammad's descendants are called the Banu al-Tahira because of Khadijah.",
+      "arabic_sha256": "082cc975447df62d7763b1e22522db405ed8644502676643f54418c494930a99",
+      "english_sha256": "91dd6c01211f28fec43cf566adb70f2ae176306fc9ac15c8521d907b58599e21",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "هند",
+      "english": "Hind bint Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمّد",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه تعالى",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عمر",
+      "english": "Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند بنت عتيق بن عائذ بن عبد اللَّه بن عمر بن مخزوم",
+      "english": "Hind bint Atiq ibn A'idh ibn Abd Allah ibn Umar ibn Makhzum",
+      "kind": "person"
+    },
+    {
+      "arabic": "خديجة",
+      "english": "Khadijah",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبيّ",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الدّارقطنيّ",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "كتاب الإخوة",
+      "english": "Book of Siblings",
+      "kind": "work"
+    },
+    {
+      "arabic": "أبو هالة",
+      "english": "Abu Hala",
+      "kind": "person"
+    },
+    {
+      "arabic": "عتيق بن عائذ بن عبد اللَّه بن عمر بن مخزوم",
+      "english": "Atiq ibn A'idh ibn Abd Allah ibn Umar ibn Makhzum",
+      "kind": "person"
+    },
+    {
+      "arabic": "صيفي بن أميّة بن عائذ بن عبد اللَّه بن عمر بن مخزوم",
+      "english": "Sayfi ibn Umayya ibn A'idh ibn Abd Allah ibn Umar ibn Makhzum",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمد بن صيفي",
+      "english": "Muhammad ibn Sayfi",
+      "kind": "person"
+    },
+    {
+      "arabic": "بنو الطّاهرة",
+      "english": "Banu al-Tahira",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

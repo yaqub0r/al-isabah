@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012275",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12275,
+  "title": {
+    "english": "Umm Manzur:",
+    "arabic_observed": "أم منظور:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012275-segment-0001",
+      "volume": 8,
+      "scan_page": 482,
+      "printed_page": 481,
+      "reader_page": 4394,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4394",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0482:d894001a077d765b",
+      "arabic": "١٢٢٧٥- أم منظور:\nبنت محمود بن سلمة الأنصارية.\nتقدّم نسبها في والدها، وهي شقيقة هند الماضي ذكرها. وذكرها ابن سعد فيمن بايع النبيّ ﵌، ولم يذكر التي قبلها، وقال: تزوجها لبيد بن عقبة بن رافع، فولدت له محمود بن لبيدة الفقيه، فسمّته باسم أبيها، وولدت له أيضا منظور بن لبيد التي كانت تكنى به، وكان أكبر من محمود.",
+      "english": "12275—Umm Manzur:\n\nbint Mahmud ibn Salama al-Ansariyya.\n\nHer lineage was given earlier in the entry on her father. She was the full sister of Hind, who was mentioned above. Ibn Sa'd included her among those who pledged allegiance to the Prophet, may Allah bless him and grant him peace, but did not mention the preceding woman. He said: “Labid ibn Uqba ibn Rafi' married her, and she bore him Mahmud ibn Labida, the jurist. She named him after her father. She also bore him Manzur ibn Labid, after whom she took her kunyah; he was older than Mahmud.”",
+      "arabic_sha256": "a8f4b1393618f0ca722a362d060e910c42deb89fa97c289595398f6966966316",
+      "english_sha256": "e956c511e8551f390e512930dd60a679ca583a1653ed8063035661487ecd0903",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "النبي",
+      "english": "Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "محمود بن سلمة",
+      "english": "Mahmud ibn Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند",
+      "english": "Hind",
+      "kind": "person"
+    },
+    {
+      "arabic": "لبيد بن عقبة بن رافع",
+      "english": "Labid ibn Uqba ibn Rafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمود بن لبيدة",
+      "english": "Mahmud ibn Labida",
+      "kind": "person"
+    },
+    {
+      "arabic": "منظور بن لبيد",
+      "english": "Manzur ibn Labid",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

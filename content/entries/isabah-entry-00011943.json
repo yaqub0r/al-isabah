@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011943",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11943,
+  "title": {
+    "english": "Umm Jandara:",
+    "arabic_observed": "أم جندرة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011943-segment-0001",
+      "volume": 8,
+      "scan_page": 371,
+      "printed_page": 370,
+      "reader_page": 4283,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4283",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0371:a9bd57645d099a96",
+      "arabic": "١١٩٤٣- أم جندرة:\nوالدة أبي قرصافة جندرة بن حبشيّة، وقع ذكرها عند الطّبرانيّ في مسند والدها.\nالقسم الثاني\nخال.\nالقسم الثالث",
+      "english": "11943—Umm Jandara:\n\nThe mother of Abu Qirsafa, Jandara ibn Habashiyya. She is mentioned by al-Tabarani in the musnad of her father.\n\nThe Second Section\n\nEmpty.\n\nThe Third Section",
+      "arabic_sha256": "f4840dafd5bf35ca231423cfb7613dc89f03e5238dcbc97f1f3792a6bc0db8d7",
+      "english_sha256": "23bc2e8cdfeb7f9a0a9fa2a2abe8c58386a0517feb1050a4d876b7370445f293",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم جندرة",
+      "english": "Umm Jandara",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطّبرانيّ",
+      "english": "al-Tabarani",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

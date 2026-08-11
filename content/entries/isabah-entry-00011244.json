@@ -1,0 +1,84 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011244",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11244,
+  "title": {
+    "english": "Zaynab bint Sayfi",
+    "arabic_observed": "زينب بنت صيفي"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011244-segment-0001",
+      "volume": 8,
+      "scan_page": 161,
+      "printed_page": 160,
+      "reader_page": 4073,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4073",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0161:0cdc3ef05e850773",
+      "arabic": "١١٢٤٤- زينب بنت صيفي\nبن صخر بن خنساء الأنصارية «٣» .\n(١) في أ: الصعب.\n(٢) أسد الغابة ت ٦٩٦٧.\n(٣) أسد الغابة ت ٦٩٦٨.",
+      "english": "11244—Zaynab bint Sayfi\n\nibn Sakhr ibn Khansa, the Ansari woman.(3)\n\n(1) In manuscript A: “al-Sa'b.”\n(2) Usd al-Ghaba, entry 6967.\n(3) Usd al-Ghaba, entry 6968.",
+      "arabic_sha256": "cffdf8b8918bf32b58684183cb1093bfc5b0773c4f5aea5c766296af6bc0a81c",
+      "english_sha256": "96e37ad709bc1355fb4052c34b1221985133b3d5773c591ee3f0174abdf41294",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011244-segment-0002",
+      "volume": 8,
+      "scan_page": 162,
+      "printed_page": 161,
+      "reader_page": 4074,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4074",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0162:0fbbc6c299d8b776",
+      "arabic": "بايعت النبي ﷺ، قاله ابن حبيب.",
+      "english": "She pledged allegiance to the Prophet—may Allah bless him and grant him peace—according to Ibn Habib.",
+      "arabic_sha256": "fccef64f7943e73da3f3aa77d9dc67c2cf8da03f8c5538856c38ae44927654cb",
+      "english_sha256": "2b906cc034df6b83f8dbc4cd81e38b8b40d8b8e77f3a8c813348b369f4e22d87",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الصعب",
+      "english": "Mus'ab",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصار",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011248",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11248,
+  "title": {
+    "english": "Zaynab bint Uthman³",
+    "arabic_observed": "زينب بنت عثمان «٣»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011248-segment-0001",
+      "volume": 8,
+      "scan_page": 162,
+      "printed_page": 161,
+      "reader_page": 4074,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4074",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0162:0fbbc6c299d8b776",
+      "arabic": "١١٢٤٨- زينب بنت عثمان «٣»\nبن مظعون الجمحية.\nقال: ... خطبها ابن عمر في عهد النبي ﷺ، وخطبها المغيرة، فمال عمها قدامة لابن عمر، لأنه ابن أخته زينب بنت مظعون، ومالت أم زينب بنت عثمان للمغيرة في قصة مذكورة.\nقلت: ذكر ذلك ابن سعد عن إسماعيل بن أبي أويس، عن عبد العزيز بن المطلب، عن عمر بن حسين، عن نافع، قال: تزوج ابن عمر زينب بنت عثمان بن مظعون بعد وفاة أبيها زوّجه إياها عمّها قدامة، فأرغبهم المغيرة بن شعبة في الصّداق، فقالت أم الجارية للجارية: لا تجيزي. وأعلمت ذلك رسول اللَّه ﷺ هي وأمها فردّ نكاحها، فنكحها المغيرة بن شعبة.",
+      "english": "11248—Zaynab bint Uthman³\n\nibn Mazun, of Banu Jumah.\n\nHe said: “… Ibn Umar proposed marriage to her during the lifetime of the Prophet—may Allah bless him and grant him peace—and al-Mughira also proposed to her. Her paternal uncle Qudama favored Ibn Umar because he was the son of Qudama's sister, Zaynab bint Mazun, while the mother of Zaynab bint Uthman favored al-Mughira, in a story that is related.”\n\nI say: Ibn Sa'd related this from Ismail ibn Abi Uways, from Abd al-Aziz ibn al-Muttalib, from Umar ibn Husayn, from Nafi, who said: “Ibn Umar married Zaynab bint Uthman ibn Mazun after her father's death; her paternal uncle Qudama gave her to him in marriage. al-Mughira ibn Shuba then made them a more attractive offer of dower. The girl's mother said to the girl, ‘Do not consent to it.’ She and her mother informed the Messenger of Allah—may Allah bless him and grant him peace—of this, so he annulled her marriage. al-Mughira ibn Shuba then married her.”",
+      "arabic_sha256": "5e9015fdb61efca890665d90f10e6da787cc4c6e7ca99c91bff43b15bceb8245",
+      "english_sha256": "dd7cc890fa1707d501ede06ba6f11331539203db587355f6395078e15d32ac9b",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "زينب بنت عثمان بن مظعون",
+      "english": "Zaynab bint Uthman ibn Mazun",
+      "kind": "person"
+    },
+    {
+      "arabic": "الجمحية",
+      "english": "Banu Jumah",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن عمر",
+      "english": "Ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "المغيرة بن شعبة",
+      "english": "al-Mughira ibn Shuba",
+      "kind": "person"
+    },
+    {
+      "arabic": "قدامة",
+      "english": "Qudama",
+      "kind": "person"
+    },
+    {
+      "arabic": "زينب بنت مظعون",
+      "english": "Zaynab bint Mazun",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسماعيل بن أبي أويس",
+      "english": "Ismail ibn Abi Uways",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد العزيز بن المطلب",
+      "english": "Abd al-Aziz ibn al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمر بن حسين",
+      "english": "Umar ibn Husayn",
+      "kind": "person"
+    },
+    {
+      "arabic": "نافع",
+      "english": "Nafi",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول اللَّه",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011013",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11013,
+  "title": {
+    "english": "Juwayriya bint Abi Sufyan ibn Harb",
+    "arabic_observed": "جويرية بنت أبي سفيان بن حرب ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011013-segment-0001",
+      "volume": 8,
+      "scan_page": 76,
+      "printed_page": 75,
+      "reader_page": 3988,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3988",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0076:39c33390b55995bc",
+      "arabic": "١١٠١٣- جويرية بنت أبي سفيان بن حرب ،\nشقيقة معاوية.\nذكرها ابن سعد، وقال: تزوجها السائب بن أبي حبيب الأسدي.\nالقسم الثالث",
+      "english": "11013—Juwayriya bint Abi Sufyan ibn Harb\n\nMuawiya's full sister.\n\nIbn Sa'd mentioned her and said: “al-Sa'ib ibn Abi Habib al-Asadi married her.”\n\nSECTION THREE",
+      "arabic_sha256": "cbff07cadfc4f9716811ddb5e20dd16f1482df5c7b4071b33791aea130952dc4",
+      "english_sha256": "049b11cf652eccdc57abfeef2e283f037202507149085784dfd41f737c0542ef",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "جويرية بنت أبي سفيان بن حرب",
+      "english": "Juwayriya bint Abi Sufyan ibn Harb",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاوية",
+      "english": "Muawiya",
+      "kind": "person"
+    },
+    {
+      "arabic": "السائب بن أبي حبيب الأسدي",
+      "english": "al-Sa'ib ibn Abi Habib al-Asadi",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

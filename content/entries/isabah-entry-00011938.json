@@ -1,0 +1,80 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011938",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11938,
+  "title": {
+    "english": "Umm Jamil bint Qutba",
+    "arabic_observed": "أم جميل بنت قطبة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011938-segment-0001",
+      "volume": 8,
+      "scan_page": 370,
+      "printed_page": 369,
+      "reader_page": 4282,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4282",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0370:56fa4e301fceadfb",
+      "arabic": "١١٩٣٨- أم جميل بنت قطبة\nبن عامر الأنصاريّة «١»، من بني سواد.\nذكرها ابن حبيب في المبايعات، وقال ابن سعد: تزوجها عثمان بن خلدة بن مخلد ابن عامر بن زريق، فولدت له أمامة، ثم تزوجها زيد بن ثابت، ثم تزوجها أنس بن مالك.",
+      "english": "11938—Umm Jamil bint Qutba\nibn Amir, the Ansari woman,¹ of Banu Sawad.\n\nIbn Habib mentioned her among the women who gave the pledge of allegiance. Ibn Sa'd said: Uthman ibn Khalda ibn Makhlad ibn Amir ibn Zurayq married her, and she bore him Umama. Zayd ibn Thabit then married her, followed by Anas ibn Malik.",
+      "arabic_sha256": "d858b7e1e9768459d53590b3b9a3d7b2f4c86115a4de202ba7489ca70b7c2593",
+      "english_sha256": "5b86309acffd34cff73cbaac327cd30d2be17ac59e5acf2b10eb66fd57aac960",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصارية",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بنو سواد",
+      "english": "Banu Sawad",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن حبيب",
+      "english": "Ibn Habib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "عثمان بن خلدة بن مخلد بن عامر بن زريق",
+      "english": "Uthman ibn Khalda ibn Makhlad ibn Amir ibn Zurayq",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمامة",
+      "english": "Umama",
+      "kind": "person"
+    },
+    {
+      "arabic": "زيد بن ثابت",
+      "english": "Zayd ibn Thabit",
+      "kind": "person"
+    },
+    {
+      "arabic": "أنس بن مالك",
+      "english": "Anas ibn Malik",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

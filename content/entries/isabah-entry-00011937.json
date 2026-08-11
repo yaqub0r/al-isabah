@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011937",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11937,
+  "title": {
+    "english": "Umm Jamil bint Abd Allah.⁹",
+    "arabic_observed": "أم جميل بنت عبد اللَّه «٩» ."
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011937-segment-0001",
+      "volume": 8,
+      "scan_page": 369,
+      "printed_page": 368,
+      "reader_page": 4281,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4281",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0369:d66636798a2bba3b",
+      "arabic": "١١٩٣٧- أم جميل بنت عبد اللَّه «٩» .\nذكر البغويّ من طريق موسى بن عبيدة الرّبذي عن أخيه عبد اللَّه، عن أم جميل بنت عبد اللَّه- أن زوجها ضربها، فذكرت ذلك للنّبيّ ﵌ فقال: «هل لك أن تفارقها؟» ففارقها.\n(١) أسد الغابة ت (٧٣٨٧) .\n(٢) سقط من أ.\n(٣) أسد الغابة ت (٧٣٨٨) .\n(٤) أسد الغابة ت (٧٣٨٩) .\n(٥) في أ: المنذر بن الخزرج.\n(٦) أسد الغابة ت (٧٣٩٠) .\n(٧) في أ: أم جميل بنت أبي حزم.\n(٨) أسد الغابة ت (٧٣٩١) .\n(٩) أسد الغابة ت (٧٣٩٢) .",
+      "english": "11937—Umm Jamil bint Abd Allah.⁹\n\nAl-Baghawi related through Musa ibn Ubayda al-Rabadhi, from his brother Abd Allah, from Umm Jamil bint Abd Allah, that her husband struck her. She mentioned this to the Prophet—may Allah bless him and grant him peace—and he said: “Would you like to separate from her?” So he separated from her.\n\n(1) Usd al-Ghaba, entry 7387.\n\n(2) Omitted from manuscript A.\n\n(3) Usd al-Ghaba, entry 7388.\n\n(4) Usd al-Ghaba, entry 7389.\n\n(5) In manuscript A: “al-Mundhir ibn al-Khazraj.”\n\n(6) Usd al-Ghaba, entry 7390.\n\n(7) In manuscript A: “Umm Jamil bint Abi Hazm.”\n\n(8) Usd al-Ghaba, entry 7391.\n\n(9) Usd al-Ghaba, entry 7392.",
+      "arabic_sha256": "fc7bcdf66c98e387644d29eee16abc90f224ca5508cff170c9b3758332542582",
+      "english_sha256": "998ece4da46d036585fca77defe5d1d18717a704831552307485167686570508",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الخزرجيّة",
+      "english": "Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أم جميل بنت أبي حزم",
+      "english": "Umm Jamil bint Abi Hazm ibn Atik ibn al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جميل بنت عبد اللَّه",
+      "english": "Umm Jamil bint Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "البغويّ",
+      "english": "al-Baghawi",
+      "kind": "person"
+    },
+    {
+      "arabic": "موسى بن عبيدة الرّبذي",
+      "english": "Musa ibn Ubayda al-Rabadhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أخيه عبد اللَّه",
+      "english": "Abd Allah ibn Ubayda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

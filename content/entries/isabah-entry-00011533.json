@@ -1,0 +1,63 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011533",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11533,
+  "title": {
+    "english": "Umayra bint Sa'd",
+    "arabic_observed": "عميرة بنت سعد"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011533-segment-0001",
+      "volume": 8,
+      "scan_page": 250,
+      "printed_page": 249,
+      "reader_page": 4162,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4162",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0250:84c4c7edb08cc2ea",
+      "arabic": "١١٥٣٣- عميرة بنت سعد\nبن عامر بن عديّ بن جشم الأنصاريّة «٤» .\nذكرها ابن سعد في المبايعات، وقال: تزوّجها كباثة بن أوس بن قيظيّ بن عمرو بن زيد بن جشم.",
+      "english": "11533—Umayra bint Sa'd\n\nibn 'Amir ibn 'Adi ibn Jusham, an Ansari woman.[4]\n\nIbn Sa'd mentioned her among the women who pledged allegiance and said: “Kabatha ibn Aws ibn Qayzi ibn 'Amr ibn Zayd ibn Jusham married her.”",
+      "arabic_sha256": "f76f8bba0c99e094b94ac1f484117e7f85bab2d51b68e60eeb7f59c6b2b27eeb",
+      "english_sha256": "670ccb9073f8117b6e668a75a5a7974eec7ccf261a0e15e6c1faff29cf9cfa22",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عميرة",
+      "english": "Umayra bint Abi al-Hakam",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "كباثة بن أوس بن قيظيّ بن عمرو بن زيد بن جشم",
+      "english": "Kabatha ibn Aws ibn Qayzi ibn 'Amr ibn Zayd ibn Jusham",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name vocalization",
+      "arabic_span": "كباثة",
+      "explanation": "The consonants are secure, but neither the unvocalized canonical Arabic nor the supplied Urdu and collateral witnesses establish the short vowels. “Kabatha” is therefore retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0250:84c4c7edb08cc2ea"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

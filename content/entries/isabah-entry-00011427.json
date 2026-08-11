@@ -1,0 +1,60 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011427",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11427,
+  "title": {
+    "english": "Safiyya,",
+    "arabic_observed": "صفيّة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011427-segment-0001",
+      "volume": 8,
+      "scan_page": 220,
+      "printed_page": 219,
+      "reader_page": 4132,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4132",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0220:d04623c4276621ab",
+      "arabic": "١١٤٢٧- صفيّة ،\nغير منسوبة. روى عنها إسحاق بن عبد اللَّه.",
+      "english": "11427. Safiyya,\n\nwhose lineage is not given. Ishaq ibn Abd Allah transmitted from her.",
+      "arabic_sha256": "02fb75a05156472102e9c09744d0a338509903a08bf267046c549570f2854f0a",
+      "english_sha256": "08a6a91b607e68d07443ba7cea49426d597fa03f3ede1dcc4dec3e00d7cba825",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah ibn Abd Allah ibn Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفيّة",
+      "english": "Safiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "إسحاق بن عبد اللَّه",
+      "english": "Ishaq ibn Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "صفية",
+      "english": "Safiyya",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

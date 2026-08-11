@@ -1,0 +1,164 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011789",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11789,
+  "title": {
+    "english": "Maimuna bint Abi Usayb:",
+    "arabic_observed": "ميمونة بنت أبي عسيب:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011789-segment-0001",
+      "volume": 8,
+      "scan_page": 328,
+      "printed_page": 327,
+      "reader_page": 4240,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4240",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0328:d15deffd16b2a0ef",
+      "arabic": "١١٧٨٩- ميمونة بنت أبي عسيب:\nويقال بنت عنبسة «٧» .\nجزم بالأول أبو نعيم. وبالثاني أبو عمر، فقال: ميمونة بنت أبي عنبسة مولاة النبيّ ﵌، روت عنه في الدّعاء.\nوقال ابن مندة: ميمونة بنت عنبسة، ويقال بنت أبي عنبسة مولاة النبيّ ﵌.\nروى حديثها مشجع بن مصعب، عن ربيعة بن يزيد، عن منبه، عن ميمونة بنت\n(١) أي ثلاث غرف بيديه، واحدها حثية. النهاية ١/ ٣٣٩.\n(٢) أسد الغابة ت (٧٣٠٧)، الاستيعاب ت (٣٥٥٣) .\n(٣) أسد الغابة ت (٧٣١٢) .\n(٤) أسد الغابة ت (٧٣٠٨) .\n(٥) أسد الغابة ت (٧٣٠٩) .\n(٦) سقط في أ.\n(٧) أسد الغابة ت (٧٣١٠)، تجريد أسماء الصحابة ٢/ ٣٠٧.",
+      "english": "11789 — Maimuna bint Abi Usayb:\n\nShe is also said to have been Maimuna bint Anbasa.(7)\n\nAbu Nu'aym stated the first form categorically, while Abu Umar stated the second categorically, saying: “Maimuna bint Abi Anbasa, a female client of the Prophet—may Allah bless him and grant him peace—narrated from him concerning supplication.”\n\nIbn Manda said: “Maimuna bint Anbasa—or, it is said, bint Abi Anbasa—a female client of the Prophet—may Allah bless him and grant him peace.”\n\nHer hadith was transmitted by Mushajja' ibn Mus'ab, from Rabi'a ibn Yazid, from Munabbih, from Maimuna bint—\n\n(1) That is, three scoops with both hands; the singular is hathya. al-Nihaya, 1/339.\n\n(2) Usd al-Ghaba, entry 7307; al-Isti'ab, entry 3553.\n\n(3) Usd al-Ghaba, entry 7312.\n\n(4) Usd al-Ghaba, entry 7308.\n\n(5) Usd al-Ghaba, entry 7309.\n\n(6) Omitted in manuscript A.\n\n(7) Usd al-Ghaba, entry 7310; al-Tajrid, 2/307.",
+      "arabic_sha256": "8ffab4afd78bbc5a9f1271f046da448709f7d346e3423b90612fb75932e1f0b1",
+      "english_sha256": "5dae7e599e8394c9f8ed1278834fb92e7168547597c055b833e5f222011d27ed",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011789-segment-0002",
+      "volume": 8,
+      "scan_page": 329,
+      "printed_page": 328,
+      "reader_page": 4241,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4241",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0329:e7de33c22b0a1ae1",
+      "arabic": "أبي عنبسة- أنّ امرأة من حريش أتت النبيّ ﵌، فقالت: يا عائشة، أغيثيني بدعوة من رسول اللَّه ﷺ تطمنني، فقال: «ضعي يدك اليمين على فؤادك فامسحيه، وقولي: «اللَّهمّ داوني بدوائك واشفني بشفائك، وأغثني بفضلك عمّن سواك» «١» .\nقال ربيعة: فدعوت به فوجدته جيّدا، ووصله أبو نعيم من هذا الوجه، وقال: ميمونة بنت أبي عسيب.",
+      "english": "Abi Anbasa—that a woman from Harish came to the Prophet, may Allah bless him and grant him peace, and said, “O Aisha, come to my aid with a supplication from the Messenger of Allah, may Allah bless him and grant him peace, that will reassure me.” He said: “Place your right hand over your heart, rub it, and say: ‘O Allah, treat me with Your remedy, heal me with Your healing, and, by Your bounty, grant me relief from everyone other than You.’” (1)\n\nRabi'a said: “I supplicated with it and found it beneficial.” Abu Nu'aym related it with a continuous chain by this route and said: “Maymuna bint Abi Usayb.”",
+      "arabic_sha256": "1e0e6e8809e20dc66ca4593ca9c0d1825f8c630bb91e0429c80be1fe7eb2aaf9",
+      "english_sha256": "dde5040d9cbe0b72cc9313704a984a882a5e87a2a4266820789eaa61d94c361f",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمونة",
+      "english": "Maimuna",
+      "kind": "person"
+    },
+    {
+      "arabic": "النّبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمونة بنت أبي عسيب",
+      "english": "Maimuna bint Abi Usayb",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمونة بنت عنبسة",
+      "english": "Maimuna bint Anbasa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمونة بنت أبي عنبسة",
+      "english": "Maimuna bint Abi Anbasa",
+      "kind": "person"
+    },
+    {
+      "arabic": "مشجع بن مصعب",
+      "english": "Mushajja' ibn Mus'ab",
+      "kind": "person"
+    },
+    {
+      "arabic": "ربيعة بن يزيد",
+      "english": "Rabi'a ibn Yazid",
+      "kind": "person"
+    },
+    {
+      "arabic": "منبه",
+      "english": "Munabbih",
+      "kind": "person"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "حريش",
+      "english": "Harish",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النبي",
+      "english": "the Prophet",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله",
+      "english": "the Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ربيعة",
+      "english": "Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "ميمونة بنت أبي عسيب",
+      "english": "Maymuna bint Abi Usayb",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

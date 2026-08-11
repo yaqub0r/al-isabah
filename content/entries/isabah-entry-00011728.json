@@ -1,0 +1,165 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011728",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11728,
+  "title": {
+    "english": "Layla bint Yasar",
+    "arabic_observed": "ليلى بنت يسار:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011728-segment-0001",
+      "volume": 8,
+      "scan_page": 307,
+      "printed_page": 306,
+      "reader_page": 4219,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4219",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0307:5169809ff0ecaa36",
+      "arabic": "١١٧٢٨- ليلى بنت يسار:\nأحد ما قيل في اسم أخت معقل بن يسار التي نزلت فيها: فَلا تَعْضُلُوهُنَّ أَنْ يَنْكِحْنَ أَزْواجَهُنَّ [سورة البقرة آية ٢٣٢] . سماها السهيليّ في مبهمات القرآن، وتبعه المنذري، والراجح أن اسمها جميل كما تقدم في حرف الجيم.\n(١) أسد الغابة ت (٧٢٧٤)، الاستيعاب ت (٣٥٣٨)، الثقات ٣/ ٣٦١- تجريد أسماء الصحابة ٢/ ٣٠٣- تقريب التهذيب ٢/ ٦١٣- تلقيح فهوم أهل الأثر ٣٨٤- تهذيب التهذيب ١٢/ ٤٥٠- الكاشف ٣/ ٤٨١- تهذيب الكمال ٣/ ١٦٩٧- خلاصة تهذيب الكمال ٣/ ٣٩٢- التاريخ الصغير ١/ ١٩- بقي بن مخلد ١١/ ٩. تعجيل المنفعة ٥٥٩- مؤتلف الدار الدّارقطنيّ ص ١٩٣٢- تبصير المنتبه ٣/ ١١١٩- الطبري ١/ ١٧٥٥.\n(٢) أي الإزار، والأصل في الحقو معقد الإزار، وجمعه أحق وأحقاء ثم سمي به الإزار للمجاورة. النهاية ١/ ٤١٧.\n(٣) أسد الغابة ت (٧٢٧٥) .",
+      "english": "11728 — Layla bint Yasar\n\nThis is one of the names given for the sister of Ma'qil ibn Yasar concerning whom the following was revealed: “Do not prevent them from marrying their husbands” [Surat al-Baqara, verse 232]. al-Suhayli named her thus in Mubhamat al-Qur'an, and al-Mundhiri followed him. The more likely view is that her name was Jamil, as previously stated under the letter jim.\n\n¹ Usd al-Ghaba, entry 7274; al-Isti'ab, entry 3538; al-Thiqat, 3/361; al-Tajrid, 2/303; Taqrib al-Tahdhib, 2/613; Talqih Fuhum Ahl al-Athar, 384; Tahdhib al-Tahdhib, 12/450; al-Kashif, 3/481; Tahdhib al-Kamal, 3/1697; Khulasat Tahdhib al-Kamal, 3/392; al-Tarikh al-Saghir, 1/19; Baqi ibn Makhlad, 11/9; Ta'jil al-Manfa'a, 559; al-Mu'talif wa-l-Mukhtalif, by al-Daraqutni, p. 1932; Tabsir al-Muntabih, 3/1119; al-Tabari, 1/1755.\n\n² That is, the waist-wrapper. The original meaning of haqw is the place where the waist-wrapper is tied. Its plurals are ahuq and ahqa'. The waist-wrapper itself was then called by this name through association. al-Nihaya, 1/417.\n\n³ Usd al-Ghaba, entry 7275.",
+      "arabic_sha256": "4dc813928d0977adb906998effeabb22647a45ad92ebf9fbce0a48545e5fcc23",
+      "english_sha256": "ce8d0d5fe180677881ddb1ee282e9da8590dc77318c350b0df1f67c1a74cf601",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "ليلى بنت يسار",
+      "english": "Layla bint Yasar",
+      "kind": "person"
+    },
+    {
+      "arabic": "معقل بن يسار",
+      "english": "Ma'qil ibn Yasar",
+      "kind": "person"
+    },
+    {
+      "arabic": "سورة البقرة",
+      "english": "Surat al-Baqara",
+      "kind": "work"
+    },
+    {
+      "arabic": "السهيليّ",
+      "english": "al-Suhayli",
+      "kind": "person"
+    },
+    {
+      "arabic": "مبهمات القرآن",
+      "english": "Mubhamat al-Qur'an",
+      "kind": "work"
+    },
+    {
+      "arabic": "المنذري",
+      "english": "al-Mundhiri",
+      "kind": "person"
+    },
+    {
+      "arabic": "جميل",
+      "english": "Jamil bint Yasar",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "خلاصة تهذيب الكمال",
+      "english": "Khulasat Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "التاريخ الصغير",
+      "english": "al-Tarikh al-Saghir",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "تعجيل المنفعة",
+      "english": "Ta'jil al-Manfa'a",
+      "kind": "work"
+    },
+    {
+      "arabic": "مؤتلف الدار",
+      "english": "al-Mu'talif wa-l-Mukhtalif",
+      "kind": "work"
+    },
+    {
+      "arabic": "الدارقطنيّ",
+      "english": "al-Daraqutni",
+      "kind": "person"
+    },
+    {
+      "arabic": "تبصير المنتبه",
+      "english": "Tabsir al-Muntabih",
+      "kind": "work"
+    },
+    {
+      "arabic": "الطبري",
+      "english": "al-Tabari",
+      "kind": "person"
+    },
+    {
+      "arabic": "النهاية",
+      "english": "al-Nihaya",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

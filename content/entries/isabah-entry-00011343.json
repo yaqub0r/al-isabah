@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011343",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11343,
+  "title": {
+    "english": "Sumayya,",
+    "arabic_observed": "سمية ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011343-segment-0001",
+      "volume": 8,
+      "scan_page": 191,
+      "printed_page": 190,
+      "reader_page": 4103,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4103",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0191:6b558c7ddbf5d7e3",
+      "arabic": "١١٣٤٣- سمية ،\nوالدة زياد.\nذكرت في التي قبلها، وكانت مولاة الحارث بن كلدة. وسيأتي ذكرها في القسم الثالث.",
+      "english": "11343—Sumayya,\n\nmother of Ziyad.\n\nShe was mentioned in the preceding entry. She was a female client of al-Harith ibn Kalada. She will be mentioned in the Third Section.",
+      "arabic_sha256": "38afe2d9ef737defe6388f9fb3341f3f251712fce912ce51412494f82b3dedfc",
+      "english_sha256": "38544c5bf3db7606fb0b5428a964ed1658608b66f381ad04a5df0de6c6751159",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الحارث بن كلدة",
+      "english": "al-Harith ibn Kalada",
+      "kind": "person"
+    },
+    {
+      "arabic": "زياد",
+      "english": "Ziyad",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012288",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12288,
+  "title": {
+    "english": "Umm Hashim: She will appear under Umm Hisham. Ibn Abd al-Barr said: “Khubayb ibn Abd al-Rahman ibn Yasaf narrated from her.” Ibn Fathun objected to this on the grounds that Khubayb narrated from her only through an intermediary; it is as he said.",
+    "arabic_observed": "أم هاشم «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012288-segment-0001",
+      "volume": 8,
+      "scan_page": 486,
+      "printed_page": 485,
+      "reader_page": 4398,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4398",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0486:9da92ce31be51176",
+      "arabic": "١٢٢٨٨- أم هاشم «١»\n: تأتي في أم هشام. قال ابن عبد البر: روى عنها خبيب بن عبد الرّحمن بن يساف. وتعقبه ابن فتحون بأن خيبا إنما روى عنها بواسطة، وهو كما قال.",
+      "english": "12288—Umm Hashim: She will appear under Umm Hisham. Ibn Abd al-Barr said: “Khubayb ibn Abd al-Rahman ibn Yasaf narrated from her.” Ibn Fathun objected to this on the grounds that Khubayb narrated from her only through an intermediary; it is as he said.",
+      "arabic_sha256": "40e9cedd9c4186401cc5b645a7655cd73825eca91a4561645c1609060d90ed8f",
+      "english_sha256": "8eccab3e97aaff618409fbd174ccf0b8f40f4e286d18cd33d1bf7730160e4551",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أم هاشم",
+      "english": "Umm Hashim",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم هشام",
+      "english": "Umm Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن عبد البر",
+      "english": "Ibn Abd al-Barr",
+      "kind": "person"
+    },
+    {
+      "arabic": "خبيب بن عبد الرحمن بن يساف",
+      "english": "Khubayb ibn Abd al-Rahman ibn Yasaf",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن فتحون",
+      "english": "Ibn Fathun",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

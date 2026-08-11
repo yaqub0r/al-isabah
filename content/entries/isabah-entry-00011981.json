@@ -1,0 +1,75 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011981",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11981,
+  "title": {
+    "english": "Umm al-Hakam al-Ghifariyya (1)",
+    "arabic_observed": "أم الحكم الغفارية «١»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011981-segment-0001",
+      "volume": 8,
+      "scan_page": 380,
+      "printed_page": 379,
+      "reader_page": 4292,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4292",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0380:abc125e25290fccd",
+      "arabic": "١١٩٨١- أم الحكم الغفارية «١»\n: ذكرها الحسن بن سفيان في مسندة،\nوأورد من طريق أم جعفر بنت النعمان عن أم الحكم الغفارية أنها سئلت هل سمعت النبي ﵌ يذكر الساعة؟ قالت:\nنعم. يقول: «إذا قلّت العرب» .\nوأورده أبو موسى في الذيل من طريقه، وسنده ضعيف.",
+      "english": "11981 — Umm al-Hakam al-Ghifariyya (1)\n\nAl-Hasan ibn Sufyan mentioned her in his Musnad and cited, through Umm Ja'far bint al-Nu'man, from Umm al-Hakam al-Ghifariyya, that she was asked, “Did you hear the Prophet, may Allah bless him and grant him peace, mention the Hour?” She said, “Yes. He said: ‘When the Arabs become few.’”\n\nAbu Musa also cited it in al-Dhayl through the same route. Its chain of transmission is weak.",
+      "arabic_sha256": "303d21b5a80ae49cd100de3d55d27329db71fb1322a54a32664df6d93a48841e",
+      "english_sha256": "35014f9fe559d829e45ed444ee5f39f7bcc9e06916c042e8980fd850ed3b1b19",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "الذيل",
+      "english": "al-Dhayl",
+      "kind": "work"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم الحكم الغفارية",
+      "english": "Umm al-Hakam al-Ghifariyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحسن بن سفيان",
+      "english": "al-Hasan ibn Sufyan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم جعفر بنت النعمان",
+      "english": "Umm Ja'far bint al-Nu'man",
+      "kind": "person"
+    },
+    {
+      "arabic": "العرب",
+      "english": "Arabs",
+      "kind": "tribe"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011037",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11037,
+  "title": {
+    "english": "Habiba bint Abi Amir al-Rahib,",
+    "arabic_observed": "حبيبة بنت أبي عامر الراهب ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011037-segment-0001",
+      "volume": 8,
+      "scan_page": 84,
+      "printed_page": 83,
+      "reader_page": 3996,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3996",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0084:085dc29367a2b72c",
+      "arabic": "١١٠٣٧- حبيبة بنت أبي عامر الراهب ،\nأخت حنظلة غسيل الملائكة. ذكرها ابن سعد في «المبايعات» .",
+      "english": "11037—Habiba bint Abi Amir al-Rahib,\nthe sister of Hanzala, the one washed by the angels. Ibn Sa'd mentioned her among “the Women Who Pledged Allegiance.”",
+      "arabic_sha256": "6c06504278ccf3c853ca43c8eaaf9271039638ad588d1f501bde6d2608bca495",
+      "english_sha256": "258e60c3476a464a1c60f19159bc5c71f169fdb9d78f63a3b91ddfd28ab0b75d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "حبيبة بنت أبي عامر الراهب",
+      "english": "Habiba bint Abi Amir al-Rahib",
+      "kind": "person"
+    },
+    {
+      "arabic": "حنظلة غسيل الملائكة",
+      "english": "Hanzala",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Muhammad ibn Sa'd",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

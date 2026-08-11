@@ -1,0 +1,272 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011132",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11132,
+  "title": {
+    "english": "Khawla bint Qays",
+    "arabic_observed": "خولة بنت قيس"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011132-segment-0001",
+      "volume": 8,
+      "scan_page": 120,
+      "printed_page": 119,
+      "reader_page": 4032,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4032",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0120:43c7c927a85c7db9",
+      "arabic": "١١١٣٢- خولة بنت قيس\nبن قهد، بالقاف «٢»، بن ثعلبة بن غنم بن مالك بن النجار الأنصارية الخزرجية ثم النجارية أم محمد. يقال: هي زوج حمزة بن عبد المطلب، ثم قيل غيرها.\nقال محمود بن لبيد، عن خولة بنت قيس بن قهد، وكانت تحت حمزة بن عبد المطلب: أنها قالت: دخل النبي ﷺ على عمه- يعني حمزة، فصنعت شيئا فأكلوه، فقال النبي ﷺ: «ألا أخبركم بكفّارات الخطايا؟» قالوا: بلى يا رسول اللَّه، قال: «إسباغ الوضوء على المكاره، وكثرة الخطا إلى المساجد، وانتظار الصّلاة بعد الصّلاة» «٣» .\nأخرجه ابن مندة بعلو.\n(١) أسد الغابة ت ٦٨٩٤.\n(٢) الثقات ٣/ ١١٥، أعلام النساء ١/ ٣٢٩، تجريد أسماء الصحابة ٢/ ٢٦٥، الكاشف ٣/ ٤٦٩، تقريب التهذيب ٢/ ٥٩٦، تهذيب التهذيب ١٢/ ٤١٥، تهذيب الكمال ٣/ ٦٨٢، حلية الأولياء ٢/ ٦٤، تلقيح فهوم أهل الأثر ٣٧٠، بقي بن مخلد ٢٢٣، تبصير المنتبه ٣/ ١٠٨٦، الإكمال ٧/ ٧٧ د المؤتلف والمختلف ١٠٤، مؤتلف الدار الدّارقطنيّ ١٨٤٤.\n(٣) أورده الهيثمي في الزوائد ١/ ٢٤١ وقال رواه أحمد والطبراني في الكبير وإسناده محتمل.",
+      "english": "11132—Khawla bint Qays\n\nibn Qahd—with the letter qaf [2]—ibn Tha'laba ibn Ghanm ibn Malik ibn al-Najjar, the Ansari woman of the Khazraj and then of the Najjar, Umm Muhammad. It is said that she was the wife of Hamza ibn 'Abd al-Muttalib; but it was also said that this was another woman.\n\nMahmud ibn Labid reported from Khawla bint Qays ibn Qahd, who was married to Hamza ibn 'Abd al-Muttalib, that she said: The Prophet—may Allah bless him and grant him peace—entered upon his paternal uncle, meaning Hamza. She prepared something, and they ate it. The Prophet—may Allah bless him and grant him peace—said, “Shall I not tell you of the expiations for sins?” They said, “Yes indeed, O Messenger of Allah.” He said, “Performing ablution thoroughly despite hardships, taking many steps to the mosques, and waiting for one prayer after another.” [3]\n\nIbn Manda transmitted it through a high chain of transmission.\n\n(1) Usd al-Ghaba, entry 6894.\n\n(2) al-Thiqat 3/115; A'lam al-Nisa 1/329; al-Tajrid 2/265; al-Kashif 3/469; Taqrib al-Tahdhib 2/596; Tahdhib al-Tahdhib 12/415; Tahdhib al-Kamal 3/682; Hilyat al-Awliya 2/64; Talqih Fuhum Ahl al-Athar 370; Baqi ibn Makhlad 223; Tabsir al-Muntabih 3/1086; al-Ikmal 7/77; al-Mu'talif wa-l-Mukhtalif 104; Mu'talif al-Daraqutni 1844.\n\n(3) al-Haythami included it in al-Zawa'id 1/241 and said: “Ahmad and al-Tabarani narrated it in al-Kabir, and its chain of transmission is potentially acceptable.”",
+      "arabic_sha256": "7c8fda572ca63a6bc49100b4ae43b5cb8f7e640d05aa3803f7bde91823b665c1",
+      "english_sha256": "d93eb15883afbd7ba1946ca069abf86133fcd00ad174d90bcd9e48db896131f5",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00011132-segment-0002",
+      "volume": 8,
+      "scan_page": 121,
+      "printed_page": 120,
+      "reader_page": 4033,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4033",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0121:451efd762885e440",
+      "arabic": "وأخرج أيضا من طريق قيس بن النعمان بن رفاعة: سمعت معاذ بن رفاعة بن رافع، يحدث عن خولة بنت قيس بن قهد، قالت: دخل عليّ رسول اللَّه ﷺ فصنعت له حريرة، فلما قدمتها إليه وضع يده فيها فوجد حرّها فقبضها، ثم قال: «يا خولة لا نصبر على حرّ ولا نصبر على برد» «١» .\nوقال ابن سعد: أمها الفريعة بنت زرارة أخت أسعد بن زرارة، قال: وخلف عليها بعد حمزة بن عبد المطلب حنظلة بن النعمان بن عمرو بن مالك بن عامر بن العجلان.\nوأخرج أبو نعيم، من طريق أبي معشر، عن سعيد المقبري عن عبيد سنوطي، قال: دخلت على خولة بنت قيس التي كانت عند حمزة فتزوّجها النعمان بن عجلان بعد حمزة، فقلت: يا أم محمد، انظري ما تحدثينني، فإن الحديث عن النبيّ ﷺ بغير ثبت شديد، فقالت: بئس ما لي أن أحدثهم عن رسول اللَّه ﷺ بما سمعته وأكذب عليه، سمعته يقول:\n«الدّنيا حلوة خضرة من يأخذ منها ما يحلّ له يبارك له فيه وربّ متخوّض في مال اللَّه ...»\nالحديث.",
+      "english": "He also transmitted, through Qays ibn al-Nu'man ibn Rifa'a: I heard Mu'adh ibn Rifa'a ibn Rafi' relate from Khawla bint Qays ibn Qahd, who said: The Messenger of Allah, may Allah bless him and grant him peace, entered upon me, so I prepared harira for him. When I presented it to him, he placed his hand in it, found it hot, and withdrew it. Then he said: “O Khawla, we cannot endure heat, nor can we endure cold.”¹\n\nIbn Sa'd said: Her mother was al-Furay'a bint Zurara, the sister of As'ad ibn Zurara. He said: After Hamza ibn 'Abd al-Muttalib, Hanzala ibn al-Nu'man ibn 'Amr ibn Malik ibn 'Amir ibn al-'Ajlan married her.\n\nAbu Nu'aym transmitted, through Abu Ma'shar, from Sa'id al-Maqburi, from 'Ubayd Sanuti, who said: I entered upon Khawla bint Qays, who had been married to Hamza and whom al-Nu'man ibn 'Ajlan married after Hamza. I said, “O Umm Muhammad, take care regarding what you relate to me, for relating a hadith from the Prophet, may Allah bless him and grant him peace, without firm verification is a grave matter.” She replied, “What an evil thing it would be for me to relate to them from the Messenger of Allah, may Allah bless him and grant him peace, what I heard, and to lie about him! I heard him say:\n\n‘The world is sweet and verdant. Whoever takes from it what is lawful for him will be blessed in it; and many a person who plunges into Allah's wealth …’”\n\nThe hadith.",
+      "arabic_sha256": "e11b2db7d5e951ae33629637958812a29fe85c4b3c97c829f11b9db8ea4147d6",
+      "english_sha256": "e2381eebc463461ef4b454b3c5ae9757258d73f2d32bd4bc867a93289f4ecf63",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "محمود بن لبيد",
+      "english": "Mahmud ibn Labid",
+      "kind": "person"
+    },
+    {
+      "arabic": "الأنصاري",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "النجاري",
+      "english": "al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "الخزرجية",
+      "english": "Khazraj",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "حمزة بن عبد المطلب",
+      "english": "Hamza ibn 'Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    },
+    {
+      "arabic": "الثقات",
+      "english": "al-Thiqat",
+      "kind": "work"
+    },
+    {
+      "arabic": "أعلام النساء",
+      "english": "A'lam al-Nisa",
+      "kind": "work"
+    },
+    {
+      "arabic": "تجريد أسماء الصحابة",
+      "english": "al-Tajrid",
+      "kind": "work"
+    },
+    {
+      "arabic": "الكاشف",
+      "english": "al-Kashif",
+      "kind": "work"
+    },
+    {
+      "arabic": "تقريب التهذيب",
+      "english": "Taqrib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب التهذيب",
+      "english": "Tahdhib al-Tahdhib",
+      "kind": "work"
+    },
+    {
+      "arabic": "تهذيب الكمال",
+      "english": "Tahdhib al-Kamal",
+      "kind": "work"
+    },
+    {
+      "arabic": "حلية الأولياء",
+      "english": "Hilyat al-Awliya",
+      "kind": "work"
+    },
+    {
+      "arabic": "تلقيح فهوم أهل الأثر",
+      "english": "Talqih Fuhum Ahl al-Athar",
+      "kind": "work"
+    },
+    {
+      "arabic": "بقي بن مخلد",
+      "english": "Baqi ibn Makhlad",
+      "kind": "person"
+    },
+    {
+      "arabic": "تبصير المنتبه",
+      "english": "Tabsir al-Muntabih",
+      "kind": "work"
+    },
+    {
+      "arabic": "الإكمال",
+      "english": "al-Ikmal",
+      "kind": "work"
+    },
+    {
+      "arabic": "المؤتلف والمختلف",
+      "english": "al-Mu'talif wa-l-Mukhtalif",
+      "kind": "work"
+    },
+    {
+      "arabic": "مؤتلف الدار الدارقطني",
+      "english": "Mu'talif al-Daraqutni",
+      "kind": "work"
+    },
+    {
+      "arabic": "الهيثمي",
+      "english": "al-Haythami",
+      "kind": "person"
+    },
+    {
+      "arabic": "الزوائد",
+      "english": "al-Zawa'id",
+      "kind": "work"
+    },
+    {
+      "arabic": "أحمد",
+      "english": "Ahmad",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "الكبير",
+      "english": "al-Kabir",
+      "kind": "work"
+    },
+    {
+      "arabic": "قيس بن النعمان بن رفاعة",
+      "english": "Qays ibn al-Nu'man ibn Rifa'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "معاذ بن رفاعة بن رافع",
+      "english": "Mu'adh ibn Rifa'a ibn Rafi'",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت قيس بن قهد",
+      "english": "Khawla bint Qays ibn Qahd",
+      "kind": "person"
+    },
+    {
+      "arabic": "رسول الله ﷺ",
+      "english": "Messenger of Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الفريعة بنت زرارة",
+      "english": "al-Furay'a bint Zurara",
+      "kind": "person"
+    },
+    {
+      "arabic": "أسعد بن زرارة",
+      "english": "As'ad ibn Zurara",
+      "kind": "person"
+    },
+    {
+      "arabic": "حنظلة بن النعمان بن عمرو بن مالك بن عامر بن العجلان",
+      "english": "Hanzala ibn al-Nu'man ibn 'Amr ibn Malik ibn 'Amir ibn al-'Ajlan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو معشر",
+      "english": "Abu Ma'shar",
+      "kind": "person"
+    },
+    {
+      "arabic": "سعيد المقبري",
+      "english": "Sa'id al-Maqburi",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبيد سنوطي",
+      "english": "'Ubayd Sanuti",
+      "kind": "person"
+    },
+    {
+      "arabic": "النعمان بن عجلان",
+      "english": "al-Nu'man ibn 'Ajlan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم محمد",
+      "english": "Umm Muhammad",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة بنت قيس",
+      "english": "Khawla bint Qays",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "name_vocalization",
+      "arabic_span": "سنوطي",
+      "explanation": "The witnesses confirm only the consonantal spelling. They do not establish the vocalization; “Sanuti” is therefore retained provisionally.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0121:451efd762885e440"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

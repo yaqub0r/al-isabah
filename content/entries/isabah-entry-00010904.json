@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010904",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10904,
+  "title": {
+    "english": "Umama bint al-Hutay'a, the poet's daughter",
+    "arabic_observed": "أمامة بنت الحطيئة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010904-segment-0001",
+      "volume": 8,
+      "scan_page": 43,
+      "printed_page": 42,
+      "reader_page": 3955,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3955",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0043:ed928aba822b3abd",
+      "arabic": "١٠٩٠٤- أمامة بنت الحطيئة\nالشاعر.\nذكر لها محمّد بن سلّام الجمحيّ، عن يونس بن عبيد، قصة تدل على أنها كانت مع أبويها في الجاهلية، وفي ذلك يقول، وقد سرق له بعيره:\nونحن ثلاثة وثلاث ذود ... فقد جار الزّمان على عيالي\n[الوافر]",
+      "english": "10904—Umama bint al-Hutay'a, the poet's daughter\n\nMuhammad ibn Sallam al-Jumahi related, from Yunus ibn Ubayd, a story concerning her which indicates that she was with her parents during the pre-Islamic period. After al-Hutay'a's camel had been stolen, he said concerning this:\n\nWe are three, with three camels ...\nTime has indeed dealt unjustly with my dependents.\n\n[al-Wafir]",
+      "arabic_sha256": "069305c3908722aa9f2bec7e7f9e0d2ba20bcb5b27bf4dce38adc9e2a7bfd9c3",
+      "english_sha256": "1cf557263bb4dece692a89da6f2efea1262ad57d69ae9e5a0552945f43555782",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أمامة بنت الحطيئة",
+      "english": "Umama bint al-Hutay'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحطيئة",
+      "english": "al-Hutay'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "محمّد بن سلّام الجمحيّ",
+      "english": "Muhammad ibn Sallam al-Jumahi",
+      "kind": "person"
+    },
+    {
+      "arabic": "يونس بن عبيد",
+      "english": "Yunus ibn Ubayd",
+      "kind": "person"
+    },
+    {
+      "arabic": "الوافر",
+      "english": "al-Wafir",
+      "kind": "other"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

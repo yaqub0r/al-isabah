@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011556",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11556,
+  "title": {
+    "english": "Uwaysh:",
+    "arabic_observed": "عويش:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011556-segment-0001",
+      "volume": 8,
+      "scan_page": 254,
+      "printed_page": 253,
+      "reader_page": 4166,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4166",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0254:0ae9fcdd446119c9",
+      "arabic": "١١٥٥٦- عويش:\nخاطب بها النّبيّ ﵌ عائشة أم المؤمنين.\nأورده الطّبرانيّ في العشرة من طريق مسلم بن يسار، قال: بلغني أنّ النبيّ ﵌ دخل على عائشة فقال: «يا عويش، ما لي أراك أشرق وجهك ...»\nالحديث.",
+      "english": "11556—Uwaysh:\n\nThe Prophet—may Allah bless him and grant him peace—addressed Aisha, Mother of the Believers, by this name.\n\nAl-Tabarani included it in al-Ishra by way of Muslim ibn Yasar, who said: “It has reached me that the Prophet—may Allah bless him and grant him peace—entered upon Aisha and said, ‘O Uwaysh, how is it that I see your face radiant …’”—and the rest of the hadith.",
+      "arabic_sha256": "d865a0ff9523cc09663ed0bb966c5b6123b87c299cf71075b3860b62f45b526b",
+      "english_sha256": "81d308754ffdfc53b148b3369cce4d3ff6072b42d84e163b4d779cb217773bfb",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "عويش",
+      "english": "Uwaysh",
+      "kind": "person"
+    },
+    {
+      "arabic": "الطبراني",
+      "english": "al-Tabarani",
+      "kind": "person"
+    },
+    {
+      "arabic": "العشرة",
+      "english": "al-Ishra",
+      "kind": "work"
+    },
+    {
+      "arabic": "مسلم بن يسار",
+      "english": "Muslim ibn Yasar",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

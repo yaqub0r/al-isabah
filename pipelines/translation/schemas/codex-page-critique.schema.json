@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "scan_page": { "type": "integer", "minimum": 1 },
+    "verdict": { "type": "string", "enum": ["pass", "revise", "witness_required"] },
+    "summary": { "type": "string", "minLength": 1 },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "enum": [
+              "omission", "addition", "mistranslation", "name", "isnad",
+              "negation", "number", "quotation", "poetry", "footnote",
+              "heading", "continuation", "source_uncertainty", "style"
+            ]
+          },
+          "severity": { "type": "string", "enum": ["critical", "major", "minor"] },
+          "arabic_span": { "type": "string" },
+          "english_span": { "type": "string" },
+          "explanation": { "type": "string", "minLength": 1 },
+          "proposed_fix": { "type": "string", "minLength": 1 },
+          "witness_check_recommended": { "type": "boolean" }
+        },
+        "required": [
+          "category", "severity", "arabic_span", "english_span",
+          "explanation", "proposed_fix", "witness_check_recommended"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "checks": {
+      "type": "object",
+      "properties": {
+        "all_arabic_accounted_for": { "type": "boolean" },
+        "no_unsupported_additions": { "type": "boolean" },
+        "names_consistent": { "type": "boolean" },
+        "isnads_complete": { "type": "boolean" },
+        "numbers_preserved": { "type": "boolean" },
+        "notes_preserved": { "type": "boolean" },
+        "continuation_correct": { "type": "boolean" }
+      },
+      "required": [
+        "all_arabic_accounted_for", "no_unsupported_additions",
+        "names_consistent", "isnads_complete", "numbers_preserved",
+        "notes_preserved", "continuation_correct"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": ["scan_page", "verdict", "summary", "issues", "checks"],
+  "additionalProperties": false
+}

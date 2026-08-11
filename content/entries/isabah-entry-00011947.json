@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011947",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11947,
+  "title": {
+    "english": "Umm al-Harith bint al-Harith ibn Tha'laba, the Ansari woman, of the Banu al-Najjar.",
+    "arabic_observed": "أم الحارث بنت الحارث"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011947-segment-0001",
+      "volume": 8,
+      "scan_page": 372,
+      "printed_page": 371,
+      "reader_page": 4284,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4284",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0372:8a9a0ef6b271463f",
+      "arabic": "١١٩٤٧- أم الحارث بنت الحارث\nبن ثعلبة الأنصاريّة، من بني النّجّار.\nذكرها ابن سعد في المبايعات، وقال: أمها السميراء بنت قيس بن مالك، تقدّمت وتزوّجها عمرو بن غزية بن عمرو بن ثعلبة، فولدت له الحارث، وعبد الرحمن، ثم خلف عليها الحارث بن خزمة، فولدت له سهيمة.",
+      "english": "11947 — Umm al-Harith bint al-Harith ibn Tha'laba, the Ansari woman, of the Banu al-Najjar.\n\nIbn Sa'd mentioned her among the women who pledged allegiance. He said: Her mother was al-Sumayra' bint Qays ibn Malik, who was discussed above. Amr ibn Ghaziyya ibn Amr ibn Tha'laba married her, and she bore him al-Harith and Abd al-Rahman. Al-Harith ibn Khazama then married her after him, and she bore him Suhayma.",
+      "arabic_sha256": "2f6d6ad227c615c3dcb84208029b0623970ccb9c0443c4d23392de504ababc83",
+      "english_sha256": "e43042274459de961c850d328e4c003eb455776767423c9e9c51354a2efdc549",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الأنصاريّة",
+      "english": "Ansar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم الحارث بنت الحارث بن ثعلبة",
+      "english": "Umm al-Harith bint al-Harith ibn Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "بني النّجّار",
+      "english": "Banu al-Najjar",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "السميراء بنت قيس بن مالك",
+      "english": "al-Sumayra' bint Qays ibn Malik",
+      "kind": "person"
+    },
+    {
+      "arabic": "عمرو بن غزية بن عمرو بن ثعلبة",
+      "english": "Amr ibn Ghaziyya ibn Amr ibn Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث",
+      "english": "al-Harith ibn Amr ibn Ghaziyya ibn Amr ibn Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الرحمن",
+      "english": "Abd al-Rahman ibn Amr ibn Ghaziyya ibn Amr ibn Tha'laba",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحارث بن خزمة",
+      "english": "al-Harith ibn Khazama",
+      "kind": "person"
+    },
+    {
+      "arabic": "سهيمة",
+      "english": "Suhayma bint al-Harith ibn Khazama",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

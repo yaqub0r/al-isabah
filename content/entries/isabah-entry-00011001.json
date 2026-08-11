@@ -1,0 +1,100 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011001",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11001,
+  "title": {
+    "english": "Jamila, or Khuwayla, or Khawla",
+    "arabic_observed": "جميلة ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011001-segment-0001",
+      "volume": 8,
+      "scan_page": 72,
+      "printed_page": 71,
+      "reader_page": 3984,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3984",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0072:7ef2a8b4975b2fe7",
+      "arabic": "١١٠٠١- جميلة ،\nأو خويلة، أو خولة، امرأة أوس بن الصامت التي ظاهر منها.\nذكرها ابن مندة، ونسبه أبو نعيم إلى التصحيف، وليس كما زعم، فقد وقع تسميتها كذلك في حديث عائشة من مسند أحمد، لكن المعروف أنها خولة، فلعل جميلة لقب.\nوسيأتي بيان ذلك في حرف الخاء المعجمة إن شاء اللَّه تعالى.\n(١) أسد الغابة ت ٦٨٢٢.\n(٢) أسد الغابة: ت ٦٨٢٣.\n(٣) أسد الغابة ت ٦٨٢٤، الاستيعاب ت ٣٣٢٦.",
+      "english": "11001 — Jamila, or Khuwayla, or Khawla\n\nShe was the wife of Aws ibn al-Samit, who pronounced zihar against her.\n\nIbn Manda mentioned her, and Abu Nu'aym attributed this form of her name to a scribal corruption. It is not as he claimed, for she is named in this way in Aisha's hadith in Musnad Ahmad. The well-known name, however, is Khawla; perhaps Jamila was a byname.\n\nAn explanation of this will come in the section under the dotted letter kha, if Allah Most High wills.\n\n[1] Usd al-Ghaba, entry no. 6822.\n\n[2] Usd al-Ghaba, entry no. 6823.\n\n[3] Usd al-Ghaba, entry no. 6824; al-Isti'ab, entry no. 3326.",
+      "arabic_sha256": "b06ba7ba02754c242985c061f4011ac7453b205a216973f743c9e8571591c4fc",
+      "english_sha256": "6314e70648ddeb173fed3c610ae54398fb99e70c5dc5f279f2f3ffcc22612d5c",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو نعيم",
+      "english": "Abu Nu'aym",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "الاستيعاب",
+      "english": "al-Isti'ab",
+      "kind": "work"
+    },
+    {
+      "arabic": "جميلة",
+      "english": "Jamila",
+      "kind": "person"
+    },
+    {
+      "arabic": "خويلة",
+      "english": "Khuwayla",
+      "kind": "person"
+    },
+    {
+      "arabic": "خولة",
+      "english": "Khawla",
+      "kind": "person"
+    },
+    {
+      "arabic": "أوس بن الصامت",
+      "english": "Aws ibn al-Samit",
+      "kind": "person"
+    },
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "مسند أحمد",
+      "english": "Musnad Ahmad",
+      "kind": "work"
+    },
+    {
+      "arabic": "اللَّه تعالى",
+      "english": "Allah Most High",
+      "kind": "other"
+    },
+    {
+      "arabic": "أسد الغابة",
+      "english": "Usd al-Ghaba",
+      "kind": "work"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

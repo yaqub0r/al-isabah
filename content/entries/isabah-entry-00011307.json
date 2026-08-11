@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011307",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11307,
+  "title": {
+    "english": "Sulafa bint al-Bara'",
+    "arabic_observed": "سلافة بنت البراء"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011307-segment-0001",
+      "volume": 8,
+      "scan_page": 182,
+      "printed_page": 181,
+      "reader_page": 4094,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4094",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0182:3dd89ad41d329bb3",
+      "arabic": "١١٣٠٧- سلافة بنت البراء\nبن معرور الأنصارية، زوج أبي قتادة بن ربعي، قيل هي أم بشر بن البراء.",
+      "english": "11307 — Sulafa bint al-Bara'\n\nibn Ma'rur al-Ansariyya, wife of Abu Qatada ibn Rib'i. It is said that she was the mother of Bishr ibn al-Bara'.",
+      "arabic_sha256": "4b434fd633017ab0bb9029de52acd26f4d39da8d465ce0a23efeb4cd980156bf",
+      "english_sha256": "8aa113e38bc16456e487a3974ed2e463c7b3f8c62be54a2c5abd0b246faca722",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أبو قتادة بن ربعي",
+      "english": "Abu Qatada ibn Rib'i",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشر بن البراء",
+      "english": "Bishr ibn al-Bara'",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

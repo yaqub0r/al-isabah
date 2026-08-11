@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011190",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11190,
+  "title": {
+    "english": "Ramlah bint al-Khattab",
+    "arabic_observed": "رملة بنت الخطاب"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011190-segment-0001",
+      "volume": 8,
+      "scan_page": 141,
+      "printed_page": 140,
+      "reader_page": 4053,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4053",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0141:10ca4d77a9520638",
+      "arabic": "١١١٩٠- رملة بنت الخطاب\nتأتي في فاطمة بنت الخطاب.",
+      "english": "11190—Ramlah bint al-Khattab\n\nShe will be treated under Fatima bint al-Khattab.",
+      "arabic_sha256": "e046fa607b24a3c8a3e46f8294b6b526b49a5eaf6e8b0a9dbfa048cabf188c04",
+      "english_sha256": "f4fc4aa32ef88faa4aea92b62bd385423c2ba632037f4e42d764dbc2f23e58d0",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "رملة بنت الخطاب",
+      "english": "Ramlah bint al-Khattab",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت الخطاب",
+      "english": "Fatima bint al-Khattab",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

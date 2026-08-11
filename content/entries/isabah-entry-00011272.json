@@ -1,0 +1,78 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011272",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11272,
+  "title": {
+    "english": "Zaynab al-Ahmasiyya",
+    "arabic_observed": "زينب الأحمسية"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011272-segment-0001",
+      "volume": 8,
+      "scan_page": 171,
+      "printed_page": 170,
+      "reader_page": 4083,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4083",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0171:f4e1211b60a58c19",
+      "arabic": "١١٢٧٢- زينب الأحمسية\nذكرها أبو سعيد بن الأعرابيّ، وأبو محمّد بن حزم\nفي كتابي حجّة الوداع، من طريقه بسند له عن زينب الأحمسية- أن رسول اللَّه ﷺ قال لها في امرأة حجّت معها مصمتة «قولي لها تتكلّم، فإنّه لا حجّ لمن لا يتكلّم»،\nوقد طعن فيه ابن القطان أن في سنده مجهولين، وفي سياقه غلط.\nوالصواب ما تقدم في القسم قبله أن القصة جرت لزينب مع أبي بكر الصديق، والمخاطبة بينهما باللفظ الّذي تقدم لا ذكر للنّبيّ ﷺ فيه ولا لامرأة أخرى.",
+      "english": "11272 — Zaynab al-Ahmasiyya\n\nAbu Sa'id ibn al-A'rabi and Abu Muhammad ibn Hazm mentioned her in their two books entitled The Farewell Pilgrimage, through his route, with an isnad of his from Zaynab al-Ahmasiyya: the Messenger of Allah, may Allah bless him and grant him peace, said to her concerning a woman who performed the pilgrimage with her while keeping silent: “Tell her to speak, for there is no pilgrimage for one who does not speak.”\n\nIbn al-Qattan criticized it because its isnad contains two unknown transmitters and its wording contains an error.\n\nThe correct account is what was stated above in the preceding section: the incident took place between Zaynab and Abu Bakr al-Siddiq, and the exchange between them used the wording given above; it contains no mention of the Prophet, may Allah bless him and grant him peace, or of another woman.",
+      "arabic_sha256": "0afb9b95c6535f61f70d605d4a1d0ef0fc5e5d1590e474266547c35263575845",
+      "english_sha256": "ca8bfe50e00ee461e6e6b1ddd83f6a8b7a064eeafc47fab9b49770686b8b1a3f",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "زينب الأحمسية",
+      "english": "Zaynab al-Ahmasiyya",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو سعيد بن الأعرابيّ",
+      "english": "Abu Sa'id ibn al-A'rabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو محمّد بن حزم",
+      "english": "Abu Muhammad ibn Hazm",
+      "kind": "person"
+    },
+    {
+      "arabic": "حجّة الوداع",
+      "english": "The Farewell Pilgrimage",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن القطان",
+      "english": "Ibn al-Qattan",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو بكر الصديق",
+      "english": "Abu Bakr al-Siddiq",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [
+    {
+      "category": "pronoun antecedent",
+      "arabic_span": "من طريقه بسند له",
+      "explanation": "The singular pronouns do not unambiguously identify which of the two previously named authors supplied the route and isnad. The English preserves that ambiguity.",
+      "human_review_priority": "normal",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0171:f4e1211b60a58c19"
+    }
+  ],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "needs_attention",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

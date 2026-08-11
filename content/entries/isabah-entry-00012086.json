@@ -1,0 +1,129 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012086",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12086,
+  "title": {
+    "english": "Umm Sahl bint Abi Hathma:",
+    "arabic_observed": "أم سهل بنت أبي حثمة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012086-segment-0001",
+      "volume": 8,
+      "scan_page": 414,
+      "printed_page": 413,
+      "reader_page": 4326,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4326",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0414:99ba2f38e48aae72",
+      "arabic": "١٢٠٨٦- أم سهل بنت أبي حثمة:\nعبد اللَّه بن ساعدة.\n(١) أخرجه الحاكم في المستدرك ٤/ ١٢٨ عن عائشة ... الحديث قال الحاكم صحيح الإسناد ولم يخرجاه ووافقه الذهبي.\n(٢) والحديث عند البخاري في التاريخ ٣/ ٤٠٠.",
+      "english": "12086—Umm Sahl bint Abi Hathma:\n\nAbu Hathma's name was 'Abd Allah ibn Sa'ida.\n\n(1) al-Hakim transmitted it in al-Mustadrak, 4/128, from Aisha ... the hadith. al-Hakim said, “Its chain of transmission is sound, but the two did not transmit it,” and al-Dhahabi agreed with him.\n\n(2) The hadith is found in al-Bukhari's al-Tarikh, 3/400.",
+      "arabic_sha256": "f59a912572db719bdd742e4f18bf6bc8e9698431d53ea9452fdad177c67b4824",
+      "english_sha256": "fb85b08bd64d2255aec4aa24084d7d47983552f73eb2d5a4e0772b13e006277b",
+      "machine_state": "machine_validated_unreviewed"
+    },
+    {
+      "id": "isabah-entry-00012086-segment-0002",
+      "volume": 8,
+      "scan_page": 415,
+      "printed_page": 414,
+      "reader_page": 4327,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4327",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0415:80d9332d2a04c870",
+      "arabic": "ذكرها ابن سعد في المبايعات، وقد تقدّم ذكرها في ترجمة أميمة بنت أبي حثمة أختها وهي شقيقتها. قال ابن سعد: تزوّجها يزيد بن البراء بن عازب بن الحارث بن عديّ بن جشم، فولدت له مخلدا.",
+      "english": "Ibn Sa'd mentioned her among the women who pledged allegiance. She has already been mentioned in the entry on her sister Umayma bint Abi Hathma; she was her full sister. Ibn Sa'd said: Yazid ibn al-Bara ibn Azib ibn al-Harith ibn Adi ibn Jusham married her, and she bore him Makhlad.",
+      "arabic_sha256": "143bfaab1f696dc800c595853b3da8a9db1aa540d4a717248e61268154d49d13",
+      "english_sha256": "7437cc781d052a7bcf8a248a071cfeb1f2b2d5cfe3fdb966370c0a27c33d5972",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "عائشة",
+      "english": "Aisha",
+      "kind": "person"
+    },
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عبد الله",
+      "english": "'Abd Allah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم سهل بنت أبي حثمة",
+      "english": "Umm Sahl bint Abi Hathma",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو حثمة",
+      "english": "Abu Hathma",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد الله بن ساعدة",
+      "english": "'Abd Allah ibn Sa'ida",
+      "kind": "person"
+    },
+    {
+      "arabic": "الحاكم",
+      "english": "al-Hakim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المستدرك",
+      "english": "al-Mustadrak",
+      "kind": "work"
+    },
+    {
+      "arabic": "الذهبي",
+      "english": "al-Dhahabi",
+      "kind": "person"
+    },
+    {
+      "arabic": "البخاري",
+      "english": "al-Bukhari",
+      "kind": "person"
+    },
+    {
+      "arabic": "التاريخ",
+      "english": "al-Tarikh",
+      "kind": "work"
+    },
+    {
+      "arabic": "ابن سعد",
+      "english": "Ibn Sa'd",
+      "kind": "person"
+    },
+    {
+      "arabic": "أميمة بنت أبي حثمة",
+      "english": "Umayma bint Abi Hathma",
+      "kind": "person"
+    },
+    {
+      "arabic": "يزيد بن البراء بن عازب بن الحارث بن عدي بن جشم",
+      "english": "Yazid ibn al-Bara ibn Azib ibn al-Harith ibn Adi ibn Jusham",
+      "kind": "person"
+    },
+    {
+      "arabic": "مخلد",
+      "english": "Makhlad ibn Yazid ibn al-Bara ibn Azib ibn al-Harith ibn Adi ibn Jusham",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

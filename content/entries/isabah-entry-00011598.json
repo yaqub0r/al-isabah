@@ -1,0 +1,85 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011598",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11598,
+  "title": {
+    "english": "Fatima bint Shayba ibn Rabi'a",
+    "arabic_observed": "فاطمة بنت شيبة بن ربيعة"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011598-segment-0001",
+      "volume": 8,
+      "scan_page": 273,
+      "printed_page": 272,
+      "reader_page": 4185,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4185",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0273:d377e72fdb7386de",
+      "arabic": "١١٥٩٨- فاطمة بنت شيبة بن ربيعة\nبن عبد شمس العبشمية «٢» .\nتزوجها عقيل بن أبي طالب، ذكر ابن هشام أنّ عقيلا دخل عليها يوم حنين بعد الوقعة، فقالت له: ماذا غنمت؟ فناولها إبرة، فإذا منادي النبي ﵌: أن أدوا «٣» الخياط والمخيط، فأخذ الإبرة منها فألقاها في المغانم.\nوذكر الواقديّ هذا لفاطمة بنت الوليد بن عتبة، وقيل اسم امرأة عقيل فاطمة بنت عتبة أخت هند، جاء ذلك عن ابن أبي مليكة.",
+      "english": "11598—Fatima bint Shayba ibn Rabi'a\n\nibn Abd Shams al-Abshamiyya(2).\n\nAqil ibn Abi Talib married her. Ibn Hisham mentioned that Aqil entered upon her on the day of Hunayn after the battle. She asked him, “What did you take as spoils?” He handed her a needle. Then suddenly there was the herald of the Prophet, may Allah bless him and grant him peace: “Hand over(3) the thread and the needle.” He took the needle from her and cast it among the spoils.\n\nAl-Waqidi related this concerning Fatima bint al-Walid ibn Utba. It is also said that Aqil's wife was named Fatima bint Utba, the sister of Hind; this was reported from Ibn Abi Mulayka.",
+      "arabic_sha256": "141714cce189b2aa3323be5575c4bf8c06658aa2b762959a2ef0a9765549921f",
+      "english_sha256": "71b2adff6067a6f3e93ac66fadf2da455847f5c67864df516bf2262a9af6d8e9",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "الله",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "عقيل بن أبي طالب",
+      "english": "Aqil ibn Abi Talib",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن هشام",
+      "english": "Ibn Hisham",
+      "kind": "person"
+    },
+    {
+      "arabic": "حنين",
+      "english": "Hunayn",
+      "kind": "place"
+    },
+    {
+      "arabic": "الواقدي",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت الوليد بن عتبة",
+      "english": "Fatima bint al-Walid ibn Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "فاطمة بنت عتبة",
+      "english": "Fatima bint Utba",
+      "kind": "person"
+    },
+    {
+      "arabic": "هند",
+      "english": "Hind",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي مليكة",
+      "english": "Ibn Abi Mulayka",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

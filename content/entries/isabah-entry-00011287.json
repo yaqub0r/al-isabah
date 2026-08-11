@@ -1,0 +1,95 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011287",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11287,
+  "title": {
+    "english": "Sidra, the freedwoman of Duba'a bint al-Zubayr [the Arabic heading reads “Suba'a”]",
+    "arabic_observed": "سدرة، مولاة صباعة بنت الزبير"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011287-segment-0001",
+      "volume": 8,
+      "scan_page": 175,
+      "printed_page": 174,
+      "reader_page": 4087,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4087",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0175:b2f9fbda8782eeaa",
+      "arabic": "١١٢٨٧- سدرة، مولاة صباعة بنت الزبير\nروى أبو الرّبيع بن سالم في «المعجزات»، من طريق كريمة بنت المقداد، عن أمها ضباعة بنت الزبير بن عبد المطلب- أنها أرسلت مولاتها سدرة إلى النبي ﷺ بقعبة صغيرة فيها طعام فوجدته سدرة في بيت أمّ سلمة ... الحديث.\nولها ذكر في مغازي الواقديّ في وفد نجران.",
+      "english": "11287—Sidra, the freedwoman of Duba'a bint al-Zubayr [the Arabic heading reads “Suba'a”]\n\nAbu al-Rabi' ibn Salim narrated in al-Mu'jizat, by way of Karima bint al-Miqdad, from her mother, Duba'a bint al-Zubayr ibn Abd al-Muttalib, that she sent her freedwoman Sidra to the Prophet (may Allah bless him and grant him peace) with a small bowl containing food. Sidra found him in the house of Umm Salama … the hadith.\n\nShe is also mentioned in the Maghazi of al-Waqidi concerning the delegation from Najran.",
+      "arabic_sha256": "16908feb675e97b99a110b6a91f742b98c7bc665876ac991fd7afc8141ef7bb5",
+      "english_sha256": "16cdd32e26e6816afc7dbb65bd24df055fd1b5721dc58080a8442511bf6deb9d",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "سدرة",
+      "english": "Sidra",
+      "kind": "person"
+    },
+    {
+      "arabic": "صباعة بنت الزبير",
+      "english": "Duba'a bint al-Zubayr ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو الرّبيع بن سالم",
+      "english": "Abu al-Rabi' ibn Salim",
+      "kind": "person"
+    },
+    {
+      "arabic": "المعجزات",
+      "english": "al-Mu'jizat",
+      "kind": "work"
+    },
+    {
+      "arabic": "كريمة بنت المقداد",
+      "english": "Karima bint al-Miqdad",
+      "kind": "person"
+    },
+    {
+      "arabic": "ضباعة بنت الزبير بن عبد المطلب",
+      "english": "Duba'a bint al-Zubayr ibn Abd al-Muttalib",
+      "kind": "person"
+    },
+    {
+      "arabic": "أمّ سلمة",
+      "english": "Umm Salama",
+      "kind": "person"
+    },
+    {
+      "arabic": "الواقديّ",
+      "english": "al-Waqidi",
+      "kind": "person"
+    },
+    {
+      "arabic": "مغازي الواقديّ",
+      "english": "Maghazi al-Waqidi",
+      "kind": "work"
+    },
+    {
+      "arabic": "نجران",
+      "english": "Najran",
+      "kind": "place"
+    },
+    {
+      "arabic": "سالم",
+      "english": "Salim",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

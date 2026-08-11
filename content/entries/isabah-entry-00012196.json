@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00012196",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 12196,
+  "title": {
+    "english": "Umm Abd Allah bint Amir ibn Rabi'a [2]:",
+    "arabic_observed": "أم عبد اللَّه بنت عامر بن ربيعة «٢»"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00012196-segment-0001",
+      "volume": 8,
+      "scan_page": 447,
+      "printed_page": 446,
+      "reader_page": 4359,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/4359",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0447:abc39d97bc25c9ac",
+      "arabic": "١٢١٩٦- أم عبد اللَّه بنت عامر بن ربيعة «٢»\n: كذا استدركها أبو موسى، وهي أم عبد اللَّه بنت أبي خيثمة، وقد ذكرها ابن مندة فلا وجه لاستدراكها.",
+      "english": "12196—Umm Abd Allah bint Amir ibn Rabi'a [2]:\n\nThis is how Abu Musa included her as a supplementary entry. She is Umm Abd Allah bint Abi Khaythama, and Ibn Manda already mentioned her; therefore, there was no basis for including her as a supplementary entry.",
+      "arabic_sha256": "09f328583ea9cea08472745333d90309c313cc04173a9fef863c06a458ba331c",
+      "english_sha256": "0375727c0d7c811bdf33035a1e85fad68a0cecaef40acda5b7091b12ba4ae2a6",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "اللَّه",
+      "english": "Allah",
+      "kind": "other"
+    },
+    {
+      "arabic": "أم عبد اللَّه بنت عامر بن ربيعة",
+      "english": "Umm Abd Allah bint Amir ibn Rabi'a",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو موسى",
+      "english": "Abu Musa",
+      "kind": "person"
+    },
+    {
+      "arabic": "أم عبد اللَّه بنت أبي خيثمة",
+      "english": "Umm Abd Allah bint Abi Khaythama",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Manda",
+      "kind": "person"
+    },
+    {
+      "arabic": "عبد اللَّه",
+      "english": "Abd Allah",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

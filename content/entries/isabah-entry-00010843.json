@@ -1,0 +1,50 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00010843",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 10843,
+  "title": {
+    "english": "Ama bint Abi al-Salt,",
+    "arabic_observed": "أمة بنت أبي الصلت ،"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00010843-segment-0001",
+      "volume": 8,
+      "scan_page": 30,
+      "printed_page": 29,
+      "reader_page": 3942,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3942",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0030:72c0de50d3109001",
+      "arabic": "١٠٨٤٣- أمة بنت أبي الصلت ،\nأو ابن أبي الصلت، تأتي في الأخير.",
+      "english": "10843—Ama bint Abi al-Salt,\n\nor ibn Abi al-Salt. She will appear in the final section.",
+      "arabic_sha256": "5d1e94e44bea71f40fb9e848201fba6e8ac138230ed568e570725b2064d99881",
+      "english_sha256": "79eea8777af05d865a67f91011307ee5b5400e4e6fff6921180ab9c2a9d788a1",
+      "machine_state": "machine_validated_unreviewed"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "أمة بنت أبي الصلت",
+      "english": "Ama bint Abi al-Salt",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن أبي الصلت",
+      "english": "Ama ibn Abi al-Salt",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}

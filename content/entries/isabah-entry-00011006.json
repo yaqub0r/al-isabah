@@ -1,0 +1,105 @@
+{
+  "schema": "al-isabah.entry.v1",
+  "id": "isabah-entry-00011006",
+  "work_id": "ibn-hajar-al-isabah",
+  "edition_id": "dar-al-kutub-al-ilmiyyah-1995",
+  "printed_entry_number": 11006,
+  "title": {
+    "english": "Jahdamah:",
+    "arabic_observed": "جهدمة:"
+  },
+  "segments": [
+    {
+      "id": "isabah-entry-00011006-segment-0001",
+      "volume": 8,
+      "scan_page": 73,
+      "printed_page": 72,
+      "reader_page": 3985,
+      "reader_url": "https://usul.ai/t/isaba-fi-tamyiz/3985",
+      "source_unit_id": "ibn_hajar_isabah_v1:arabic:v08:p0073:67a9c22cb9e5312c",
+      "arabic": "١١٠٠٦- جهدمة:\nامرأة بشير بن الخصاصية «٤» السّدوسي الصحابي المشهور «٥» كانت من بني شيبان. روت عن النبي ﷺ حديثين أو ثلاثة، قاله أبو عمر.\nقلت: أسند ابن مندة لها حديثين من طريق أبي عتاب الكلبي، عن إياد بن لقيط عنها.\nقلت: كان اسم بشير رحما، فسماه النبي ﷺ بشيرا، والآخر من هذا الوجه، قالت:\nورأيت رسول اللَّه ﷺ خرج إلى الصلاة وهو ينفض رأسه وجبينه من ردع الحناء.\nوأخرجه التّرمذيّ في «الشّمائل»، ويقال: كان اسمها هذا فغيّره النبيّ ﷺ ت فسماها ليلى. وذكرها ابن حبان في الصحابة، فقال: يقال لها صحبة، ثم ذكرها في ثقات التابعين.",
+      "english": "11006—Jahdamah:\n\nThe wife of Bashir ibn al-Khasasiyyah,[4] the well-known Companion from Banu Sadus.[5] She was of Banu Shayban. She related two or three hadiths from the Prophet—peace and blessings be upon him—according to Abu Umar.\n\nI say: Ibn Mandah furnished isnads for two hadiths of hers through Abu Attab al-Kalbi, from Iyad ibn Laqit, from her.\n\nI say: Bashir's name had been Rahm, but the Prophet—peace and blessings be upon him—named him Bashir. The other hadith, through this same route, is her statement:\n\n“I saw the Messenger of Allah—peace and blessings be upon him—come out for the prayer while shaking the traces of henna from his head and forehead.”\n\nal-Tirmidhi included it in al-Shama'il. It is also said that Jahdamah had been her name, but the Prophet—peace and blessings be upon him—changed it [an unexplained ta' occurs here in the Arabic text] and named her Layla. Ibn Hibban mentioned her among the Companions and said, “She is said to have had Companionship”; he then mentioned her among the trustworthy Followers.",
+      "arabic_sha256": "db79c223f4fece14ffe341cdc55df397ba5762343e8d7f21d3c3d9cebabfee41",
+      "english_sha256": "eb66c85f7df373f9f3a7b94ba5451d254a35039064f936a3f78d4d00cf1963ab",
+      "machine_state": "machine_validated_unresolved"
+    }
+  ],
+  "names": [
+    {
+      "arabic": "جهدمة",
+      "english": "Jahdamah",
+      "kind": "person"
+    },
+    {
+      "arabic": "بشير بن الخصاصية",
+      "english": "Bashir ibn al-Khasasiyyah",
+      "kind": "person"
+    },
+    {
+      "arabic": "السدوسي",
+      "english": "Banu Sadus",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "بني شيبان",
+      "english": "Banu Shayban",
+      "kind": "tribe"
+    },
+    {
+      "arabic": "أبو عمر",
+      "english": "Abu Umar",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن مندة",
+      "english": "Ibn Mandah",
+      "kind": "person"
+    },
+    {
+      "arabic": "أبو عتاب الكلبي",
+      "english": "Abu Attab al-Kalbi",
+      "kind": "person"
+    },
+    {
+      "arabic": "إياد بن لقيط",
+      "english": "Iyad ibn Laqit",
+      "kind": "person"
+    },
+    {
+      "arabic": "رحما",
+      "english": "Rahm",
+      "kind": "person"
+    },
+    {
+      "arabic": "الترمذي",
+      "english": "al-Tirmidhi",
+      "kind": "person"
+    },
+    {
+      "arabic": "الشمائل",
+      "english": "al-Shama'il",
+      "kind": "work"
+    },
+    {
+      "arabic": "ليلى",
+      "english": "Layla",
+      "kind": "person"
+    },
+    {
+      "arabic": "ابن حبان",
+      "english": "Ibn Hibban",
+      "kind": "person"
+    }
+  ],
+  "unresolved": [],
+  "translation": {
+    "state": "translated",
+    "machine_assessment": "passed",
+    "human_review": "unreviewed"
+  },
+  "provenance": {
+    "importer": "al-isabah.volume8-importer.v1",
+    "source_artifact_id": "firstlight:firstlight-research/data/translated/ibn_hajar_isabah/arabic_v1/volume_08.translation-units.jsonl",
+    "source_artifact_sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+  }
+}
