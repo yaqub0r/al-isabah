@@ -15,6 +15,11 @@ requests. Use a closing reference only when all acceptance criteria are met.
   as distinct data layers.
 - Treat machine validation and human scholarly review as separate states.
 - Prefer reversible imports and derived projections over destructive rewrites.
+- Follow `docs/architecture/canonical-publication-repository.md` for the
+  repository's responsibilities and promotion boundary with Sabiqah.
+- Accept only publication-ready content promoted with reviewable provenance and
+  compliance metadata. Keep restricted research witnesses, reconstructive
+  comparison output, and private storage details out of this repository.
 
 ## Architecture
 
