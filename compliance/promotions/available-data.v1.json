@@ -6,6 +6,20 @@
   "source_register": "compliance/source-register.v1.json",
   "status": "blocked",
   "public_release_eligible": false,
+  "working_publication": {
+    "artifact": "sabiqah-public-working-corpus-openiti-5835c18-v1",
+    "corpus_id": "al-isabah-public-openiti-5835c18-v1",
+    "status": "public-working",
+    "canonical_promotion": "blocked",
+    "public_entries": 1506,
+    "quarantined_records": 73,
+    "gates": {
+      "source_authority": "passed",
+      "public_output": "passed",
+      "honorific_preservation": "passed",
+      "canonical_human_review": "incomplete"
+    }
+  },
   "candidate_revisions": [
     {
       "scope": "volume-08",
@@ -33,8 +47,15 @@
   ],
   "reviews": {
     "source_compliance": "blocked",
+    "translation_quality": "blocked",
     "human_scholarly": "incomplete",
     "canonical_repository": "not_submitted_for_promotion"
+  },
+  "translation_quality": {
+    "source_authority": "blocked",
+    "public_output": "blocked",
+    "honorific_preservation": "incomplete",
+    "translation_lineage": "incomplete"
   },
   "blockers": [
     {
@@ -42,21 +63,13 @@
       "summary": "The exact historical acquisition dates for retained DKI/Usul and Urdu witnesses were not captured; preserve that limitation and complete the record where evidence permits."
     },
     {
-      "id": "reusable-arabic-base-required",
-      "summary": "Establish and integrity-bind an independently reusable Arabic base, then reconstruct or validate the public Arabic layer against it."
-    },
-    {
-      "id": "modern-apparatus-removal-required",
-      "summary": "Remove modern DKI introduction, footnotes, critical apparatus, and protected editorial expression from candidate public records."
-    },
-    {
       "id": "english-lineage-review-required",
-      "summary": "Review or independently retranslate English against the approved Arabic base and verify that private comparison witnesses did not supply protected expression."
+      "summary": "Complete human scholarly review of the remediated English against the approved Arabic base before canonical promotion; the public-working compliance gate does not assert canonical translation quality."
     },
     {
       "id": "human-review-required",
       "summary": "Complete human scholarly review and resolve or explicitly carry forward all remaining uncertainties."
     }
   ],
-  "decision": "Preserve the candidate data for remediation and review; do not publish, promote, or serve it as an approved canonical release."
+  "decision": "Serve only the validated Sabiqah public-working corpus with its license, attribution, review state, and quarantine exclusions. Preserve the legacy candidate data privately and do not promote any record as an approved canonical release until the independent repository gates pass."
 }

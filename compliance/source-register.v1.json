@@ -128,41 +128,112 @@
     },
     {
       "id": "openiti-cleaned-arabic-comparison",
-      "kind": "digital-comparison-witness",
-      "title": "OpenITI cleaned al-Isabah text",
-      "classification": "external-reference",
-      "rights_basis": "OpenITI documents removal of modern paratext and distributes its corpus under CC BY-NC-SA 4.0. Sabiqah has not adopted this artifact as its canonical public base.",
+      "kind": "licensed-publication-base",
+      "title": "OpenITI cleaned al-Isabah text, JK000533",
+      "classification": "approved-for-publication",
+      "rights_basis": "OpenITI distributes the pinned transcription under CC BY-NC-SA 4.0 and documents removal of modern paratext. It is approved for Sabiqah's attributed, noncommercial, share-alike public working edition; this does not make it the canonical Al-Isabah edition.",
       "provider_pages": [
-        "https://github.com/OpenITI/RELEASE/tree/master/data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.IsabaFiTamyiz",
+        "https://github.com/OpenITI/0875AH/blob/5835c183b8bbf4ea454d5c1be2b168b669403771/data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.IsabaFiTamyiz/0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1.mARkdown",
         "https://openiti.org/documentation/"
       ],
+      "source_revision": {
+        "repository": "https://github.com/OpenITI/0875AH",
+        "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+        "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.IsabaFiTamyiz/0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1.mARkdown"
+      },
+      "integrity": {
+        "bytes": 9762988,
+        "sha256": "bc9db8134c8278973967c91c00324531833f643fc0fb2c8ebe318c9ed4469eea"
+      },
+      "license": {
+        "spdx": "CC-BY-NC-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
       "allowed_actions": [
-        "external reference",
-        "comparison subject to the provider's license"
+        "attributed noncommercial public display under CC BY-NC-SA 4.0",
+        "machine alignment and translation under the same license conditions",
+        "external reference and comparison subject to the provider's license"
       ],
       "prohibited_public_actions": [
         "claim independent provenance by copying the corpus",
-        "use as a commercial-ready canonical base without separate analysis"
+        "omit attribution, apply incompatible terms, or use outside the noncommercial license scope",
+        "represent machine alignment as canonical scholarly approval"
       ],
-      "review_status": "comparison-only"
+      "review_status": "approved-for-sabiqah-public-working-edition"
     },
     {
       "id": "aco-1905-1907-arabic-candidate",
       "kind": "historical-edition-candidate",
       "title": "1905-1907 Arabic Collections Online edition",
-      "classification": "unresolved",
-      "rights_basis": "The publication date makes this a promising public-domain base candidate, but the exact volumes, scan provenance, completeness, and intended reuse have not yet been verified and bound to hashes.",
+      "classification": "approved-for-publication",
+      "rights_basis": "Arabic Collections Online states that it believes the displayed materials are in the public domain. The four 1905-1907 volumes have been identified and integrity-bound as an independent visual witness; their pagination is not represented as matching the OpenITI edition.",
       "provider_pages": [
-        "https://sites.dlib.nyu.edu/viewer/books/uaena_aco000082/display?lang=ar"
+        "https://sites.dlib.nyu.edu/viewer/books/uaena_aco000081/1",
+        "https://sites.dlib.nyu.edu/viewer/books/uaena_aco000082/1",
+        "https://sites.dlib.nyu.edu/viewer/books/uaena_aco000083/1",
+        "https://sites.dlib.nyu.edu/viewer/books/uaena_aco000084/1",
+        "https://aco.dlib.nyu.edu/about"
       ],
+      "integrity": {
+        "volume_pdf_sha256": [
+          "8cdde053b703d7a6ecf26ffd6faa2242fb1c03747bc90d7b7d86e73cf6ee17c7",
+          "99c6d4609be31cdfebafc5dcf34aa960e922d34c54e79012b7c02b68fe53bd37",
+          "22d6428a2b4a85a31f63d1e824eea5708762b5babf4b099757f6338f5ee1c55d",
+          "662af0f9c2b7697b4ebea6202da6298627db56171ab59acdb51750fb81692423"
+        ]
+      },
       "allowed_actions": [
-        "bibliographic investigation",
-        "candidate base-text evaluation"
+        "public visual reference with source attribution",
+        "bibliographic and source-alignment verification"
       ],
       "prohibited_public_actions": [
-        "treat as the approved canonical base before verification and integrity capture"
+        "claim page identity with the OpenITI source edition",
+        "copy modern third-party metadata or annotations without a separate basis"
       ],
-      "review_status": "verification-required"
+      "review_status": "approved-as-independent-public-domain-witness"
+    },
+    {
+      "id": "sabiqah-public-working-corpus-openiti-5835c18-v1",
+      "kind": "public-working-bilingual-corpus",
+      "title": "Sabiqah Al-Isabah public working corpus v1",
+      "classification": "approved-for-publication",
+      "rights_basis": "Displayed Arabic is deterministically rebuilt from the pinned CC BY-NC-SA 4.0 OpenITI authority. Sabiqah-authored English is retained only after private Arabic, locators, apparatus, editorial notes, and translated honorific forms are excluded. Records that fail a gate are quarantined rather than served.",
+      "license": {
+        "spdx": "CC-BY-NC-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      "integrity": {
+        "corpus_id": "al-isabah-public-openiti-5835c18-v1",
+        "manifest_sha256": "656063e99275e58d1b1a21ee2e3c5cf9f3357b61ca723f5cb7d90e6459a04226",
+        "quarantine_sha256": "4d723de9f4f0527c37d0113f36b5ad6597f6e606163e68e72f197f231ee134a6",
+        "manifest_objects": 1545,
+        "source_inventory": 1579,
+        "public_entries": 1506,
+        "translated_entries": 1495,
+        "arabic_only_entries": 11,
+        "quarantined_records": 73
+      },
+      "depends_on": [
+        "ibn-hajar-underlying-medieval-work",
+        "openiti-cleaned-arabic-comparison"
+      ],
+      "private_comparison_inputs": [
+        "dki-1995-arabic-edition",
+        "usul-shamela-dki-reader-text",
+        "urdu-modern-translation-witness",
+        "volume-08-structured-english"
+      ],
+      "allowed_actions": [
+        "anonymous public reading with attribution and license notice",
+        "public aggregate review status",
+        "authenticated proposals and translation approvals"
+      ],
+      "prohibited_public_actions": [
+        "serve quarantined records or private comparison evidence",
+        "describe unreviewed records as canonical or human-approved",
+        "promote records without the independent repository review gates"
+      ],
+      "review_status": "approved-for-public-working-display-canonical-promotion-blocked"
     },
     {
       "id": "volume-08-aligned-arabic",

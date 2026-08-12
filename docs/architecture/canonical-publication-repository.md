@@ -55,6 +55,9 @@ Sabiqah. Each promotion must identify:
 
 - the content and provenance manifest;
 - the Sabiqah compliance-policy version applied;
+- the Sabiqah translation-quality policy version and passing attestations for
+  source authority, public-output eligibility, Arabic-form honorific
+  preservation, and translation lineage;
 - the source commit or reproducible content hash;
 - completed scholarly and compliance reviews; and
 - unresolved limitations that must remain visible to readers and reviewers.
@@ -62,6 +65,13 @@ Sabiqah. Each promotion must identify:
 Repository validation and maintainer review are independent gates. Promotion
 does not permit Sabiqah or an agent to silently overwrite canonical Arabic,
 translation, provenance, or editorial history.
+
+Sabiqah may expose a separately validated `public-working` corpus before this
+promotion. Such a corpus must use approved public-source expression, carry its
+license and attribution, exclude private evidence, and quarantine failed
+records. Public readability is not an implicit promotion request: this
+repository accepts only the subset that later completes human scholarly review,
+compliance approval, and the manifest gates above.
 
 ## Release and consumption
 

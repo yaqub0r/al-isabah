@@ -31,8 +31,27 @@ WINDOWS_PATH = re.compile(r"(?:[A-Za-z]:\\|C:/Users/)", re.IGNORECASE)
 PRIVATE_KEYS = {"object_key", "local_path", "private_url", "credential", "token"}
 REQUIRED_REVIEWS = {
     "source_compliance",
+    "translation_quality",
     "human_scholarly",
     "canonical_repository",
+}
+REQUIRED_CONTRACTS = {
+    "content-source-compliance": "docs/contracts/content-source-compliance.md",
+    "translation-quality-workflow": "docs/contracts/translation-quality-workflow.md",
+    "canonical-book-promotion": "docs/contracts/canonical-book-promotion.md",
+}
+REQUIRED_TRANSLATION_CONTROLS = {
+    "source_authority",
+    "public_output",
+    "honorific_preservation",
+    "translation_lineage",
+}
+TRANSLATION_CONTROL_STATES = {"blocked", "incomplete", "passed"}
+WORKING_PUBLICATION_GATES = {
+    "source_authority",
+    "public_output",
+    "honorific_preservation",
+    "canonical_human_review",
 }
 
 
@@ -80,12 +99,8 @@ def validate_policy(policy: dict[str, Any]) -> list[str]:
         for item in policy.get("contracts", [])
         if isinstance(item, dict)
     }
-    required = {
-        "content-source-compliance": "docs/contracts/content-source-compliance.md",
-        "canonical-book-promotion": "docs/contracts/canonical-book-promotion.md",
-    }
-    if contracts != required:
-        errors.append("policy: both pinned Sabiqah contracts are required")
+    if contracts != REQUIRED_CONTRACTS:
+        errors.append("policy: all three pinned Sabiqah contracts are required")
     errors.extend(_walk(policy, "policy"))
     return errors
 
@@ -139,6 +154,29 @@ def validate_register(register: dict[str, Any]) -> tuple[list[str], dict[str, di
                 errors.append(f"register: {artifact_id} has unknown dependency {dependency}")
             if dependency == artifact_id:
                 errors.append(f"register: {artifact_id} depends on itself")
+        for comparison in artifact.get("private_comparison_inputs", []):
+            if comparison not in artifacts:
+                errors.append(
+                    f"register: {artifact_id} has unknown private comparison input {comparison}"
+                )
+    public_corpus = artifacts.get("sabiqah-public-working-corpus-openiti-5835c18-v1")
+    if public_corpus:
+        integrity = public_corpus.get("integrity", {})
+        for field in ("manifest_sha256", "quarantine_sha256"):
+            if not re.fullmatch(r"[0-9a-f]{64}", str(integrity.get(field, ""))):
+                errors.append(f"register: public working corpus {field} must be a SHA-256")
+        public_entries = integrity.get("public_entries")
+        quarantined = integrity.get("quarantined_records")
+        source_inventory = integrity.get("source_inventory")
+        if not all(
+            isinstance(value, int) and value >= 0
+            for value in (public_entries, quarantined, source_inventory)
+        ):
+            errors.append("register: public working corpus counts must be non-negative integers")
+        elif public_entries + quarantined != source_inventory:
+            errors.append(
+                "register: public and quarantined working records must equal source inventory"
+            )
     errors.extend(_walk(register, "register"))
     return errors, artifacts
 
@@ -183,6 +221,66 @@ def validate_promotion(
         errors.append("promotion: eligible release cannot retain blockers")
     if not eligible and not blockers:
         errors.append("promotion: blocked release must identify at least one blocker")
+
+    working = promotion.get("working_publication")
+    if not isinstance(working, dict):
+        errors.append("promotion: working_publication must be an object")
+        working = {}
+    working_artifact_id = working.get("artifact")
+    working_artifact = artifacts.get(str(working_artifact_id))
+    if working_artifact is None:
+        errors.append("promotion: working publication artifact is not registered")
+    elif working_artifact.get("classification") != PUBLIC_CLASSIFICATION:
+        errors.append("promotion: working publication artifact is not public-approved")
+    if working.get("status") != "public-working":
+        errors.append("promotion: working publication status must be public-working")
+    if working.get("canonical_promotion") != "blocked":
+        errors.append("promotion: working publication cannot imply canonical promotion")
+    working_gates = working.get("gates")
+    if not isinstance(working_gates, dict) or set(working_gates) != WORKING_PUBLICATION_GATES:
+        errors.append("promotion: working publication must contain exactly the required gates")
+        working_gates = {}
+    for gate in ("source_authority", "public_output", "honorific_preservation"):
+        if working_gates.get(gate) != "passed":
+            errors.append(f"promotion: public working gate {gate} must pass")
+    if working_gates.get("canonical_human_review") not in {"incomplete", "passed"}:
+        errors.append("promotion: canonical_human_review has an invalid state")
+    if working_artifact:
+        integrity = working_artifact.get("integrity", {})
+        if working.get("corpus_id") != integrity.get("corpus_id"):
+            errors.append("promotion: working corpus ID differs from its register")
+        if working.get("public_entries") != integrity.get("public_entries"):
+            errors.append("promotion: working public count differs from its register")
+        if working.get("quarantined_records") != integrity.get("quarantined_records"):
+            errors.append("promotion: working quarantine count differs from its register")
+
+    translation_quality = promotion.get("translation_quality")
+    if not isinstance(translation_quality, dict):
+        errors.append("promotion: translation_quality must be an object")
+        translation_quality = {}
+    elif set(translation_quality) != REQUIRED_TRANSLATION_CONTROLS:
+        errors.append(
+            "promotion: translation_quality must contain exactly the required controls"
+        )
+    for control in REQUIRED_TRANSLATION_CONTROLS:
+        if translation_quality.get(control) not in TRANSLATION_CONTROL_STATES:
+            errors.append(
+                f"promotion: translation_quality.{control} has an invalid state"
+            )
+    if (
+        translation_quality.get("public_output") == "passed"
+        and translation_quality.get("source_authority") != "passed"
+    ):
+        errors.append(
+            "promotion: public_output cannot pass before source_authority passes"
+        )
+    if eligible and any(
+        translation_quality.get(control) != "passed"
+        for control in REQUIRED_TRANSLATION_CONTROLS
+    ):
+        errors.append(
+            "promotion: eligible release requires every translation-quality control to pass"
+        )
 
     direct_dependencies: set[str] = set()
     revisions = promotion.get("candidate_revisions")
