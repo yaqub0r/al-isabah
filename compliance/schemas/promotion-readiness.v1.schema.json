@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sabiqah.org/schemas/al-isabah/promotion-readiness.v1.schema.json",
+  "title": "Al-Isabah promotion readiness v1",
+  "type": "object",
+  "required": [
+    "schema",
+    "manifest_id",
+    "work_id",
+    "policy_binding",
+    "source_register",
+    "status",
+    "public_release_eligible",
+    "candidate_revisions",
+    "reviews",
+    "blockers",
+    "decision"
+  ],
+  "properties": {
+    "schema": { "const": "al-isabah.promotion-readiness.v1" },
+    "status": { "enum": ["blocked", "eligible"] },
+    "public_release_eligible": { "type": "boolean" },
+    "candidate_revisions": {
+      "type": "array",
+      "minItems": 1
+    },
+    "blockers": { "type": "array" }
+  },
+  "additionalProperties": true
+}

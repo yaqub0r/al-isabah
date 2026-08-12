@@ -1,0 +1,282 @@
+{
+  "schema": "al-isabah.source-compliance-register.v1",
+  "work_id": "ibn-hajar-al-isabah",
+  "assessed_at": "2026-08-12",
+  "policy_binding": "compliance/policy-binding.v1.json",
+  "classification_definitions": {
+    "approved-for-publication": "An affirmative public reuse basis has been verified for this exact artifact and intended use.",
+    "external-reference": "Link to the provider's ordinary landing or reader page; do not mirror the artifact.",
+    "private-reference": "Retain in controlled research storage and use only within the recorded comparison scope.",
+    "permission-required": "Do not publish until appropriate permission or a compatible license is documented.",
+    "unresolved": "Provenance or public eligibility is incomplete; promotion fails closed.",
+    "prohibited": "The intended use is known to be incompatible with the applicable terms or project policy."
+  },
+  "artifacts": [
+    {
+      "id": "ibn-hajar-underlying-medieval-work",
+      "kind": "underlying-work",
+      "title": "Ibn Hajar's al-Isabah fi Tamyiz al-Sahabah",
+      "classification": "approved-for-publication",
+      "rights_basis": "The medieval author's underlying work is public domain; this classification does not extend to any modern edition, transcription, translation, annotation, or scan.",
+      "allowed_actions": [
+        "create an independently sourced scholarly edition",
+        "create a new English translation from an approved Arabic base"
+      ],
+      "prohibited_public_actions": [
+        "treat a modern edition or digital transcription as covered by the underlying-work classification"
+      ],
+      "review_status": "approved-for-scope"
+    },
+    {
+      "id": "dki-1995-arabic-edition",
+      "kind": "modern-critical-edition",
+      "title": "Dar al-Kutub al-Ilmiyyah 1995 Arabic edition",
+      "edition": {
+        "publisher": "Dar al-Kutub al-Ilmiyyah",
+        "year": 1995,
+        "editors": [
+          "Adil Ahmad Abd al-Mawjud",
+          "Ali Muhammad Muawwad"
+        ],
+        "volumes": 8
+      },
+      "classification": "private-reference",
+      "rights_basis": "The underlying medieval work is public domain, but the modern introduction, critical apparatus, annotations, and sufficiently original editorial revisions are not approved for redistribution by Sabiqah.",
+      "provider_pages": [
+        "https://usul.ai/t/isaba-fi-tamyiz/19",
+        "https://archive.org/details/al-isabah-fi-tamiz-al-sahaba-al-ibn-hajar-ashqalani-jild-1"
+      ],
+      "integrity": {
+        "combined_usul_facsimile_sha256": "4ef2895578497d5ef2224f662a76efc4a0d4d17943cf1abbdaca68370b204843",
+        "volume_08_archive_pdf_sha256": "5437cc95bdc06fdf0a0d9feee8c592551e216e6e8a73631649fb5133c61ab111"
+      },
+      "acquisition_record": {
+        "retention": "retained-for-controlled-research",
+        "date_status": "historical-acquisition-date-not-recorded",
+        "assessed_at": "2026-08-12"
+      },
+      "allowed_actions": [
+        "controlled research consultation",
+        "bibliographic verification",
+        "comparison against independently reusable witnesses",
+        "external link to provider landing or reader pages"
+      ],
+      "prohibited_public_actions": [
+        "mirror scans or OCR",
+        "publish modern introduction, notes, indexes, or critical apparatus",
+        "represent stripped or reformatted DKI text as an independently reusable edition"
+      ],
+      "review_status": "approved-as-private-reference"
+    },
+    {
+      "id": "usul-shamela-dki-reader-text",
+      "kind": "digital-transcription",
+      "title": "Usul/Shamela reader text for the DKI 1995 edition",
+      "classification": "private-reference",
+      "rights_basis": "Usul's availability and Shamela provenance do not establish Sabiqah's redistribution rights; the reader includes modern editorial material from the DKI edition.",
+      "provider_pages": [
+        "https://usul.ai/t/isaba-fi-tamyiz/19",
+        "https://shamela.ws/book/9767"
+      ],
+      "provider_ids": {
+        "usul_version": "4CPCkl83K7",
+        "shamela_book": "9767"
+      },
+      "acquisition_record": {
+        "retention": "retained-for-controlled-research",
+        "date_status": "historical-acquisition-date-not-recorded",
+        "assessed_at": "2026-08-12"
+      },
+      "allowed_actions": [
+        "controlled textual comparison",
+        "page-level external reference"
+      ],
+      "prohibited_public_actions": [
+        "republish reader text",
+        "use the provider's conduct as a rights basis"
+      ],
+      "review_status": "approved-as-private-reference"
+    },
+    {
+      "id": "urdu-modern-translation-witness",
+      "kind": "modern-translation",
+      "title": "Modern Urdu translation witness",
+      "classification": "private-reference",
+      "rights_basis": "The edition identifies Maktaba Rahmaniya as reserving publication rights, and no compatible reuse license has been verified.",
+      "provider_pages": [
+        "https://archive.org/details/al-asabah-fi-tamyeeze-al-sahaba-1"
+      ],
+      "integrity": {
+        "volume_05_units_sha256": "ab6cecf03758737164a09cda24ed9fb81198fc0df3601bc49f4f233b5c51262e",
+        "volume_06_units_sha256": "34ea158e855510c90cc4477fe650ce4e283b7084ce152e3b7740a3eccf342ad7"
+      },
+      "acquisition_record": {
+        "retention": "retained-for-controlled-research",
+        "date_status": "historical-acquisition-date-not-recorded",
+        "assessed_at": "2026-08-12"
+      },
+      "allowed_actions": [
+        "controlled passage-specific ambiguity comparison",
+        "external link to provider landing page"
+      ],
+      "prohibited_public_actions": [
+        "mirror scans, OCR, or structured units",
+        "use as the public English translation base",
+        "copy protected Urdu expression into public notes or translations"
+      ],
+      "review_status": "approved-as-private-reference"
+    },
+    {
+      "id": "openiti-cleaned-arabic-comparison",
+      "kind": "digital-comparison-witness",
+      "title": "OpenITI cleaned al-Isabah text",
+      "classification": "external-reference",
+      "rights_basis": "OpenITI documents removal of modern paratext and distributes its corpus under CC BY-NC-SA 4.0. Sabiqah has not adopted this artifact as its canonical public base.",
+      "provider_pages": [
+        "https://github.com/OpenITI/RELEASE/tree/master/data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.IsabaFiTamyiz",
+        "https://openiti.org/documentation/"
+      ],
+      "allowed_actions": [
+        "external reference",
+        "comparison subject to the provider's license"
+      ],
+      "prohibited_public_actions": [
+        "claim independent provenance by copying the corpus",
+        "use as a commercial-ready canonical base without separate analysis"
+      ],
+      "review_status": "comparison-only"
+    },
+    {
+      "id": "aco-1905-1907-arabic-candidate",
+      "kind": "historical-edition-candidate",
+      "title": "1905-1907 Arabic Collections Online edition",
+      "classification": "unresolved",
+      "rights_basis": "The publication date makes this a promising public-domain base candidate, but the exact volumes, scan provenance, completeness, and intended reuse have not yet been verified and bound to hashes.",
+      "provider_pages": [
+        "https://sites.dlib.nyu.edu/viewer/books/uaena_aco000082/display?lang=ar"
+      ],
+      "allowed_actions": [
+        "bibliographic investigation",
+        "candidate base-text evaluation"
+      ],
+      "prohibited_public_actions": [
+        "treat as the approved canonical base before verification and integrity capture"
+      ],
+      "review_status": "verification-required"
+    },
+    {
+      "id": "volume-08-aligned-arabic",
+      "kind": "derived-arabic-data",
+      "title": "Volume 8 aligned Arabic source",
+      "classification": "private-reference",
+      "rights_basis": "Derived from the DKI 1995 Usul reader/facsimile and includes editorial apparatus; not independently reconstructed from an approved reusable base.",
+      "integrity": {
+        "sha256": "f7f5cd87489283249750778aec2a666300d731fc982f571380f5aad3e915c0ed"
+      },
+      "depends_on": [
+        "dki-1995-arabic-edition",
+        "usul-shamela-dki-reader-text"
+      ],
+      "allowed_actions": [
+        "controlled remediation",
+        "comparison and provenance audit"
+      ],
+      "prohibited_public_actions": [
+        "publish as canonical Arabic",
+        "promote into a public book release"
+      ],
+      "review_status": "remediation-required"
+    },
+    {
+      "id": "volume-08-structured-english",
+      "kind": "derived-translation-data",
+      "title": "Volume 8 structured English translation",
+      "classification": "unresolved",
+      "rights_basis": "The English was generated from the blocked DKI-derived Arabic and consulted the private Urdu witness. Independent source-boundary review and human scholarly review are incomplete.",
+      "integrity": {
+        "sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+      },
+      "depends_on": [
+        "volume-08-aligned-arabic",
+        "urdu-modern-translation-witness"
+      ],
+      "metrics": {
+        "source_pages": 491,
+        "entries": 1550,
+        "segments": 1948,
+        "unresolved_items": 281,
+        "needs_attention_entries": 208,
+        "operator_approved_units": 0
+      },
+      "allowed_actions": [
+        "private scholarly review",
+        "lineage audit",
+        "independent retranslation or remediation"
+      ],
+      "prohibited_public_actions": [
+        "publish or promote before source-boundary and human review",
+        "describe machine validation as publication approval"
+      ],
+      "review_status": "human-and-compliance-review-required"
+    },
+    {
+      "id": "volume-08-entry-projection",
+      "kind": "candidate-canonical-records",
+      "title": "Volume 8 candidate entry records",
+      "classification": "unresolved",
+      "rights_basis": "The projection embeds the blocked Arabic and unresolved English; structural validity does not establish public eligibility.",
+      "source_revision": {
+        "repository": "https://github.com/yaqub0r/al-isabah",
+        "branch": "codex/issue-1-volume-8-migration",
+        "commit": "20264a5ca018fe2a2890dc070f9c6bd904e3cb84"
+      },
+      "depends_on": [
+        "volume-08-aligned-arabic",
+        "volume-08-structured-english"
+      ],
+      "allowed_actions": [
+        "candidate data validation",
+        "private scholarly review"
+      ],
+      "prohibited_public_actions": [
+        "publish as a canonical release",
+        "serve through Sabiqah as approved content"
+      ],
+      "review_status": "promotion-blocked"
+    },
+    {
+      "id": "khadijah-cohort-candidate",
+      "kind": "candidate-canonical-records",
+      "title": "Khadijah and immediate-associates cohort",
+      "classification": "unresolved",
+      "rights_basis": "The cohort uses the same DKI/Usul Arabic authority, embeds modern apparatus, and has incomplete source-boundary and human review.",
+      "source_revision": {
+        "repository": "https://github.com/yaqub0r/al-isabah",
+        "branch": "codex/issue-4-khadijah-cohort",
+        "commit": "a3b76bfc72cc9d5d8f6d7d26f249f2f32b0ef178"
+      },
+      "depends_on": [
+        "dki-1995-arabic-edition",
+        "usul-shamela-dki-reader-text",
+        "urdu-modern-translation-witness",
+        "volume-08-structured-english"
+      ],
+      "metrics": {
+        "complete_biographies": 15,
+        "contextual_passages": 14,
+        "unresolved_items": 6,
+        "needs_attention_entries": 6
+      },
+      "allowed_actions": [
+        "private scholarly review",
+        "selection and provenance audit",
+        "remediation against an approved base"
+      ],
+      "prohibited_public_actions": [
+        "publish or promote as canonical content",
+        "hydrate private evidence into public infrastructure"
+      ],
+      "review_status": "promotion-blocked"
+    }
+  ]
+}

@@ -20,6 +20,11 @@ requests. Use a closing reference only when all acceptance criteria are met.
 - Accept only publication-ready content promoted with reviewable provenance and
   compliance metadata. Keep restricted research witnesses, reconstructive
   comparison output, and private storage details out of this repository.
+- Before adding or promoting content, update
+  `compliance/source-register.v1.json` and the applicable manifest under
+  `compliance/promotions/`, then run `python -m unittest discover -s tests`.
+  A passing structural check does not override a blocked or unresolved rights
+  classification.
 
 ## Architecture
 
