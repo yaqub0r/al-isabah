@@ -1,0 +1,31 @@
+{
+  "schema": "al-isabah.research-retirement.v1",
+  "recorded_at": "2026-08-12",
+  "decision": "retained-in-sabiqah-private-research",
+  "publication_status": "blocked",
+  "legacy_source": {
+    "repository": "https://github.com/yaqub0r/al-isabah",
+    "commit": "a3b76bfc72cc9d5d8f6d7d26f249f2f32b0ef178",
+    "tree": "335273d71eb79e3db35f036c0c5829f337050148"
+  },
+  "sabiqah_snapshot": {
+    "manifest": "https://github.com/yaqub0r/sabiqah/blob/main/evidence/research-snapshots/al-isabah-a3b76bf.v1.json",
+    "archive_format": "canonical-git-tree-tar-v1",
+    "archive_sha256": "e7d61d3f5c6cced7d40fa7ecc7071844c009644ab59510623f201ee42ababbb4",
+    "archive_bytes": 11980800,
+    "review_corpus_id": "al-isabah-reading-a3b76bf-v3",
+    "review_corpus_manifest_sha256": "07ed8d55130463cbd4391dee61f7cc7e1063b1e3eabcdee894cd65e24e57c386",
+    "review_corpus_files": 1609,
+    "entry_count": 1565,
+    "passage_count": 14
+  },
+  "legacy_pull_requests": [3, 5],
+  "legacy_issues": [1, 4],
+  "firstlight_inventory": {
+    "source_revision": "2689ff40",
+    "inventory_sha256": "8ea9b589941dd35224faaf49ecd0cc18e87dfa9e154ae6f43d06cc92971c0a1c",
+    "files": 167,
+    "bytes": 478653164
+  },
+  "outcome": "Candidate translations and restricted research evidence remain available for authenticated review and remediation in Sabiqah. They were not promoted into canonical publication content."
+}

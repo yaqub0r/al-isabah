@@ -27,7 +27,13 @@ jobs:
         run: python3 -m unittest discover -s tests
 
       - name: Parse workflow schema
-        run: python3 -m json.tool schemas/review-proposal.schema.json > /dev/null
+        run: |
+          python3 -m json.tool schemas/review-proposal.schema.json > /dev/null
+          python3 -m json.tool schemas/canonical-entry.v1.schema.json > /dev/null
+          python3 -m json.tool schemas/identifier-ledger.v1.schema.json > /dev/null
+
+      - name: Validate canonical publication content
+        run: python3 scripts/validate_content.py
 
       - name: Validate compliance records
         run: python3 scripts/validate_compliance.py

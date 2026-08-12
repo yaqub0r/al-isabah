@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REGISTER_PATH = ROOT / "compliance" / "source-register.v1.json"
 PROMOTION_PATH = ROOT / "compliance" / "promotions" / "available-data.v1.json"
 POLICY_PATH = ROOT / "compliance" / "policy-binding.v1.json"
+RETIREMENT_PATH = ROOT / "compliance" / "research-retirement.v1.json"
 
 CLASSIFICATIONS = {
     "approved-for-publication",
@@ -239,15 +240,47 @@ def validate_promotion(
     return errors
 
 
+def validate_retirement(retirement: dict[str, Any]) -> list[str]:
+    errors: list[str] = []
+    if retirement.get("schema") != "al-isabah.research-retirement.v1":
+        errors.append("retirement: unexpected schema")
+    if retirement.get("decision") != "retained-in-sabiqah-private-research":
+        errors.append("retirement: candidate research must be retained in Sabiqah")
+    if retirement.get("publication_status") != "blocked":
+        errors.append("retirement: legacy candidate content must remain blocked")
+    source = retirement.get("legacy_source")
+    if not isinstance(source, dict) or not GIT_SHA.fullmatch(str(source.get("commit", ""))):
+        errors.append("retirement: legacy source commit must be a full Git SHA")
+    elif source.get("repository") != "https://github.com/yaqub0r/al-isabah":
+        errors.append("retirement: legacy source repository is incorrect")
+    snapshot = retirement.get("sabiqah_snapshot")
+    if not isinstance(snapshot, dict):
+        errors.append("retirement: Sabiqah snapshot metadata is required")
+    else:
+        if snapshot.get("archive_format") != "canonical-git-tree-tar-v1":
+            errors.append("retirement: archive format must be canonical-git-tree-tar-v1")
+        for field in ("archive_sha256", "review_corpus_manifest_sha256"):
+            if not re.fullmatch(r"[0-9a-f]{64}", str(snapshot.get(field, ""))):
+                errors.append(f"retirement: {field} must be a SHA-256")
+        for field in ("archive_bytes", "review_corpus_files", "entry_count", "passage_count"):
+            if not isinstance(snapshot.get(field), int) or snapshot[field] < 1:
+                errors.append(f"retirement: {field} must be positive")
+    errors.extend(_walk(retirement, "retirement"))
+    return errors
+
+
 def validate_all(
     policy: dict[str, Any],
     register: dict[str, Any],
     promotion: dict[str, Any],
+    retirement: dict[str, Any] | None = None,
 ) -> list[str]:
     errors = validate_policy(policy)
     register_errors, artifacts = validate_register(register)
     errors.extend(register_errors)
     errors.extend(validate_promotion(promotion, artifacts))
+    if retirement is not None:
+        errors.extend(validate_retirement(retirement))
     return errors
 
 
@@ -256,12 +289,14 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--policy", type=Path, default=POLICY_PATH)
     parser.add_argument("--register", type=Path, default=REGISTER_PATH)
     parser.add_argument("--promotion", type=Path, default=PROMOTION_PATH)
+    parser.add_argument("--retirement", type=Path, default=RETIREMENT_PATH)
     args = parser.parse_args(argv)
 
     policy = load_json(args.policy)
     register = load_json(args.register)
     promotion = load_json(args.promotion)
-    errors = validate_all(policy, register, promotion)
+    retirement = load_json(args.retirement)
+    errors = validate_all(policy, register, promotion, retirement)
     if errors:
         for error in errors:
             print(error, file=sys.stderr)

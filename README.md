@@ -41,3 +41,12 @@ Validate compliance metadata with:
 python -m unittest discover -s tests
 ```
 
+Canonical publication records are validated separately from Sabiqah's private
+research corpus. Run `python scripts/validate_content.py`; it fails closed when
+an entry lacks an active stable identifier, reviewed Arabic and English,
+compliance approval, source hashes, or an explicit promotion manifest.
+
+The legacy Volume 8 and Khadijah development work was retained for authenticated
+review in Sabiqah rather than promoted here. Its non-sensitive integrity and
+retirement record is in `compliance/research-retirement.v1.json`.
+

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/schemas/identifier-ledger.v1.schema.json",
+  "title": "Al-Isabah stable identifier ledger v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "workId", "entries"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "workId": { "const": "ibn-hajar-al-isabah" },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "status", "allocationSource"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^isabah-entry-[0-9]{8}$" },
+          "status": { "enum": ["active", "retired"] },
+          "allocationSource": { "type": "string", "minLength": 1 },
+          "record": { "type": ["string", "null"] },
+          "aliases": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+          "supersededBy": {
+            "type": ["string", "null"],
+            "pattern": "^isabah-entry-[0-9]{8}$"
+          }
+        }
+      }
+    }
+  }
+}

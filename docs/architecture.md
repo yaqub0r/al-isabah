@@ -53,32 +53,26 @@ source or QA artifact used for the decision.
 bundles, and downstream snapshots. Derived artifacts are never edited as the
 source of truth and may be deleted and rebuilt.
 
-## Initial repository shape
+## Repository shape
 
 ```text
-packages/
-  model/                  Book-owned types, schemas, serialization, IDs
 content/
   entries/                Canonical entry JSON
   review-proposals/       Validated, non-canonical review workflow inputs
   identifiers.json        Permanent allocation and retirement ledger
 evidence/
-  manifests/              Hash-bound acquisition and migration manifests
-  firstlight/             Preserved upstream translation/QA records
-pipelines/
-  translation/            Existing validated Python pipeline
-  import/                 Evidence-to-canonical importers
-  export/                 Versioned release builders
-scripts/
+  manifests/              Non-sensitive publication and migration manifests
+compliance/               Source classification and promotion decisions
+scripts/                  Canonical validation and deterministic release tools
 schemas/                  Interchange and workflow JSON Schemas
 docs/
   decisions/
 ```
 
-Validation remains in `packages/model` at first. A separate validation package
-is warranted only when it gains a genuinely independent release or dependency
-boundary. Book exporters publish Sabiqah's smaller reader contract without
-making that client contract the complete editorial model.
+Acquisition, restricted evidence, translation runs, comparison material, and
+pre-publication review corpora live in Sabiqah's governed private workflow.
+Only approved records, their book-specific public provenance, stable IDs, and
+deterministic publication validation enter this repository.
 
 ## Stable identifiers
 
@@ -137,23 +131,13 @@ or editors according to release policy.
 Translator notes, editorial notes, and source text are distinct typed objects.
 Rendering must not make commentary appear to be Ibn Hajar's text.
 
-## Import policy
+## Promotion policy
 
-The completed FirstLight Volume 8 JSONL is preserved byte-for-byte as upstream
-evidence. An importer derives candidate entry records from it and emits a
-report. Importers are deterministic, validate before writing, and refuse to
-overwrite existing canonical records unless an explicit reconciliation command
-names both versions.
-
-Page-level provenance may cover several entries or partial entries. The importer
-therefore records source fragments first, then joins fragments into entry
-candidates. It does not assume one page equals one biography.
-
-The first validation set must include:
-
-1. a normal single-page entry,
-2. an entry spanning a page boundary,
-3. an entry with an unresolved witness or name reading.
+Candidate records remain in Sabiqah until its source-compliance and scholarly
+review gates approve an explicit promotion manifest. This repository validates
+the promoted record independently and refuses canonical content that lacks
+reviewed Arabic and English, an active stable identifier, source hashes, and
+promotion provenance. Import never silently overwrites canonical history.
 
 ## Sabiqah reader and review workflow
 
