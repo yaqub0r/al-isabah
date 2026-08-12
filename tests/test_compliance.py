@@ -19,12 +19,14 @@ class ComplianceTests(unittest.TestCase):
         cls.policy = MODULE.load_json(MODULE.POLICY_PATH)
         cls.register = MODULE.load_json(MODULE.REGISTER_PATH)
         cls.promotion = MODULE.load_json(MODULE.PROMOTION_PATH)
+        cls.retirement = MODULE.load_json(MODULE.RETIREMENT_PATH)
 
     def validate(self, *, policy=None, register=None, promotion=None):
         return MODULE.validate_all(
             copy.deepcopy(policy or self.policy),
             copy.deepcopy(register or self.register),
             copy.deepcopy(promotion or self.promotion),
+            copy.deepcopy(self.retirement),
         )
 
     def test_current_blocked_manifest_is_valid(self):
@@ -96,6 +98,20 @@ class ComplianceTests(unittest.TestCase):
         register["artifacts"].append(copy.deepcopy(register["artifacts"][0]))
         errors = self.validate(register=register)
         self.assertTrue(any("duplicate id" in error for error in errors))
+
+    def test_retirement_record_rejects_public_promotion(self):
+        retirement = copy.deepcopy(self.retirement)
+        retirement["publication_status"] = "eligible"
+        errors = MODULE.validate_retirement(retirement)
+        self.assertIn("retirement: legacy candidate content must remain blocked", errors)
+
+    def test_retirement_record_requires_canonical_archive(self):
+        retirement = copy.deepcopy(self.retirement)
+        retirement["sabiqah_snapshot"]["archive_format"] = "git-archive-tar"
+        errors = MODULE.validate_retirement(retirement)
+        self.assertIn(
+            "retirement: archive format must be canonical-git-tree-tar-v1", errors
+        )
 
 
 if __name__ == "__main__":

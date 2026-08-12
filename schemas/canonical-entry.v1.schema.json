@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/schemas/canonical-entry.v1.schema.json",
+  "title": "Al-Isabah canonical publication entry v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "workId",
+    "printedEntryNumber",
+    "title",
+    "segments",
+    "names",
+    "review",
+    "provenance"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "id": { "type": "string", "pattern": "^isabah-entry-[0-9]{8}$" },
+    "workId": { "const": "ibn-hajar-al-isabah" },
+    "printedEntryNumber": { "type": "integer", "minimum": 1 },
+    "title": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ar", "en"],
+      "properties": {
+        "ar": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 }
+      }
+    },
+    "segments": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "arabic", "english", "sourceSpans"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^isabah-entry-[0-9]{8}-segment-[0-9]{4}$"
+          },
+          "arabic": { "type": "string", "minLength": 1 },
+          "english": { "type": "string", "minLength": 1 },
+          "sourceSpans": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["editionId", "volume", "page", "textSha256"],
+              "properties": {
+                "editionId": { "type": "string", "minLength": 1 },
+                "volume": { "type": "integer", "minimum": 1 },
+                "page": { "type": "integer", "minimum": 1 },
+                "textSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+                "providerPage": { "type": "string", "format": "uri" }
+              }
+            }
+          },
+          "issues": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+        }
+      }
+    },
+    "names": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["arabic", "translation", "compliance"],
+      "properties": {
+        "arabic": { "enum": ["reviewed", "verified", "disputed"] },
+        "translation": { "enum": ["reviewed", "verified", "disputed"] },
+        "compliance": { "const": "approved" }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["promotionManifest", "sourceCommit"],
+      "properties": {
+        "promotionManifest": { "type": "string", "minLength": 1 },
+        "sourceCommit": { "type": "string", "pattern": "^[0-9a-f]{40}$" }
+      }
+    }
+  }
+}
