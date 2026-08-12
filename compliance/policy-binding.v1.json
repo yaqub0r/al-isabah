@@ -1,0 +1,19 @@
+{
+  "schema": "al-isabah.compliance-policy-binding.v1",
+  "authority": {
+    "repository": "https://github.com/yaqub0r/sabiqah",
+    "commit": "348c0c4a5a1bc5943620d6bff61b1d0db836da67"
+  },
+  "contracts": [
+    {
+      "id": "content-source-compliance",
+      "path": "docs/contracts/content-source-compliance.md"
+    },
+    {
+      "id": "canonical-book-promotion",
+      "path": "docs/contracts/canonical-book-promotion.md"
+    }
+  ],
+  "applied_by_issue": "https://github.com/yaqub0r/al-isabah/issues/11",
+  "note": "This binding identifies the operational policy applied to these records; it is not a legal opinion."
+}

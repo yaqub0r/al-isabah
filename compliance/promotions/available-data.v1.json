@@ -1,0 +1,62 @@
+{
+  "schema": "al-isabah.promotion-readiness.v1",
+  "manifest_id": "available-data-2026-08-12",
+  "work_id": "ibn-hajar-al-isabah",
+  "policy_binding": "compliance/policy-binding.v1.json",
+  "source_register": "compliance/source-register.v1.json",
+  "status": "blocked",
+  "public_release_eligible": false,
+  "candidate_revisions": [
+    {
+      "scope": "volume-08",
+      "repository": "https://github.com/yaqub0r/al-isabah",
+      "branch": "codex/issue-1-volume-8-migration",
+      "commit": "20264a5ca018fe2a2890dc070f9c6bd904e3cb84",
+      "dependencies": [
+        "volume-08-entry-projection",
+        "volume-08-aligned-arabic",
+        "volume-08-structured-english"
+      ]
+    },
+    {
+      "scope": "khadijah-immediate",
+      "repository": "https://github.com/yaqub0r/al-isabah",
+      "branch": "codex/issue-4-khadijah-cohort",
+      "commit": "a3b76bfc72cc9d5d8f6d7d26f249f2f32b0ef178",
+      "dependencies": [
+        "khadijah-cohort-candidate",
+        "dki-1995-arabic-edition",
+        "usul-shamela-dki-reader-text",
+        "urdu-modern-translation-witness"
+      ]
+    }
+  ],
+  "reviews": {
+    "source_compliance": "blocked",
+    "human_scholarly": "incomplete",
+    "canonical_repository": "not_submitted_for_promotion"
+  },
+  "blockers": [
+    {
+      "id": "historical-acquisition-record-remediation",
+      "summary": "The exact historical acquisition dates for retained DKI/Usul and Urdu witnesses were not captured; preserve that limitation and complete the record where evidence permits."
+    },
+    {
+      "id": "reusable-arabic-base-required",
+      "summary": "Establish and integrity-bind an independently reusable Arabic base, then reconstruct or validate the public Arabic layer against it."
+    },
+    {
+      "id": "modern-apparatus-removal-required",
+      "summary": "Remove modern DKI introduction, footnotes, critical apparatus, and protected editorial expression from candidate public records."
+    },
+    {
+      "id": "english-lineage-review-required",
+      "summary": "Review or independently retranslate English against the approved Arabic base and verify that private comparison witnesses did not supply protected expression."
+    },
+    {
+      "id": "human-review-required",
+      "summary": "Complete human scholarly review and resolve or explicitly carry forward all remaining uncertainties."
+    }
+  ],
+  "decision": "Preserve the candidate data for remediation and review; do not publish, promote, or serve it as an approved canonical release."
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sabiqah.org/schemas/al-isabah/source-register.v1.schema.json",
+  "title": "Al-Isabah source compliance register v1",
+  "type": "object",
+  "required": [
+    "schema",
+    "work_id",
+    "assessed_at",
+    "policy_binding",
+    "classification_definitions",
+    "artifacts"
+  ],
+  "properties": {
+    "schema": { "const": "al-isabah.source-compliance-register.v1" },
+    "artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "title",
+          "classification",
+          "rights_basis",
+          "allowed_actions",
+          "prohibited_public_actions",
+          "review_status"
+        ],
+        "properties": {
+          "classification": {
+            "enum": [
+              "approved-for-publication",
+              "external-reference",
+              "private-reference",
+              "permission-required",
+              "unresolved",
+              "prohibited"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
