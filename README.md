@@ -20,6 +20,18 @@ See the [canonical publication repository
 model](docs/architecture/canonical-publication-repository.md) for the complete
 responsibility and trust-boundary model.
 
+## Entry structure
+
+The [entry-title structure
+contract](docs/contracts/entry-title-structure.md) defines a title as the
+shortest stable name or heading phrase identifying an entry's subject. Lineage,
+relationships, narration, and biographical prose remain in ordered body blocks;
+Arabic and English titles must cover the same semantic boundary. The versioned
+[title-decision profile](profiles/entry-title-decisions.v1.json) records
+reviewed decisions for entries whose printed heading line does not provide that
+boundary reliably. Reader applications consume this structure and must not
+infer titles from typography or body length.
+
 The [source compliance register](compliance/source-register.v1.json) applies
 Sabiqah's pinned content contracts to the data currently available on the
 Volume 8 and Khadijah development branches. The corresponding [promotion
@@ -39,6 +51,12 @@ Validate compliance metadata with:
 
 ```sh
 python -m unittest discover -s tests
+```
+
+Validate the active title-decision profile directly with:
+
+```sh
+python scripts/validate_entry_titles.py
 ```
 
 Canonical publication records are validated separately from Sabiqah's private
