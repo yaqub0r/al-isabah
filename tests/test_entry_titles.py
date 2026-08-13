@@ -22,7 +22,14 @@ class EntryTitleContractTests(unittest.TestCase):
 
     def test_covers_reported_entries(self) -> None:
         numbers = {item["sourceEntryNumber"] for item in self.profile["decisions"]}
-        self.assertEqual(numbers, {11426, 11427, 11430, 11439, 11441})
+        self.assertEqual(
+            numbers,
+            {
+                11426, 11427, 11430, 11436, 11439, 11441, 11442, 11443,
+                11445, 11446, 11449, 11451, 11454, 11458, 11459, 11473,
+                11474, 11476,
+            },
+        )
 
     def test_positive_reference_matches_the_pinned_source_lineage(self) -> None:
         decision = next(

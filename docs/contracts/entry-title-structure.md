@@ -52,7 +52,7 @@ change that role or its type scale. Lineage and prose use body presentation.
 ## Decisions and evidence
 
 Book-specific boundary decisions live in the versioned
-[`entry-title-decisions.v1.json`](../../profiles/entry-title-decisions.v1.json)
+[`entry-title-decisions.v2.json`](../../profiles/entry-title-decisions.v2.json)
 profile. Each decision records the pinned source authority and the exact title
 realization in both languages. A consumer may use that profile to build a
 working presentation, but it must not silently expand, shorten, or otherwise
@@ -74,3 +74,7 @@ Validation fails closed when:
 Entry 11426 is the positive reference for the title/body hierarchy. The initial
 profile also resolves the observed boundary defects in 11427, 11430, 11439,
 and 11441.
+
+Profile v2 extends the same invariant across the additional title/body scope
+differences identified in Volume 8, pages 1–25. Profile v1 remains immutable as
+the historical decision set.
