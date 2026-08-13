@@ -11,7 +11,7 @@ permission to reproduce, adapt, or redistribute an artifact.
 ## Governing contracts
 
 The policy binding is pinned to Sabiqah merge commit
-`58160d917b2c965f89c6d5d30a814562fe0b2dd6`:
+`780436da5620a66db6a89d65105c953510c1c02f`:
 
 - `content-source-compliance`
 - `translation-quality-workflow`
