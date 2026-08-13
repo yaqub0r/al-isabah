@@ -2,7 +2,7 @@
   "schema": "al-isabah.compliance-policy-binding.v1",
   "authority": {
     "repository": "https://github.com/yaqub0r/sabiqah",
-    "commit": "780436da5620a66db6a89d65105c953510c1c02f"
+    "commit": "d25027ca73ff4a7dc9476e0d768e6361227e2c5b"
   },
   "contracts": [
     {

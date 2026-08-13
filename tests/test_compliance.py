@@ -154,6 +154,34 @@ class ComplianceTests(unittest.TestCase):
             "promotion: working public count differs from its register", errors
         )
 
+    def test_public_working_translation_counts_must_cover_public_entries(self):
+        register = copy.deepcopy(self.register)
+        artifact = next(
+            item
+            for item in register["artifacts"]
+            if item["id"] == "sabiqah-public-working-corpus-openiti-5835c18-v1"
+        )
+        artifact["integrity"]["arabic_only_entries"] -= 1
+        errors = self.validate(register=register)
+        self.assertIn(
+            "register: translated and Arabic-only entries must equal public entries",
+            errors,
+        )
+
+    def test_public_working_quarantine_is_limited_to_contextual_passages(self):
+        register = copy.deepcopy(self.register)
+        artifact = next(
+            item
+            for item in register["artifacts"]
+            if item["id"] == "sabiqah-public-working-corpus-openiti-5835c18-v1"
+        )
+        artifact["integrity"]["excluded_contextual_passages"] -= 1
+        errors = self.validate(register=register)
+        self.assertIn(
+            "register: quarantine must contain only excluded contextual passages",
+            errors,
+        )
+
     def test_public_working_artifact_must_be_public_approved(self):
         register = copy.deepcopy(self.register)
         artifact = next(

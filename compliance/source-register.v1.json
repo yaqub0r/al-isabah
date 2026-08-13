@@ -197,21 +197,22 @@
       "kind": "public-working-bilingual-corpus",
       "title": "Sabiqah Al-Isabah public working corpus v1",
       "classification": "approved-for-publication",
-      "rights_basis": "Displayed Arabic is deterministically rebuilt from the pinned CC BY-NC-SA 4.0 OpenITI authority. Sabiqah-authored English is retained only after private Arabic, locators, apparatus, editorial notes, and translated honorific forms are excluded. Records that fail a gate are quarantined rather than served.",
+      "rights_basis": "Displayed Arabic is deterministically rebuilt from the pinned CC BY-NC-SA 4.0 OpenITI authority. Sabiqah-authored English is retained only when it passes the public-output and Arabic-form honorific gates; otherwise the approved Arabic entry remains public with its English withheld. Non-book contextual passages remain excluded.",
       "license": {
         "spdx": "CC-BY-NC-SA-4.0",
         "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
       },
       "integrity": {
         "corpus_id": "al-isabah-public-openiti-5835c18-v1",
-        "manifest_sha256": "656063e99275e58d1b1a21ee2e3c5cf9f3357b61ca723f5cb7d90e6459a04226",
-        "quarantine_sha256": "4d723de9f4f0527c37d0113f36b5ad6597f6e606163e68e72f197f231ee134a6",
-        "manifest_objects": 1545,
+        "manifest_sha256": "fc5ae6fa659ff331feaccd68d20b6021e20595c1c42a81ffb12c786aef0586e8",
+        "quarantine_sha256": "3225d59dff247c73a6cbb715d122ef4e8fbde7e6603bc492f0454ac0ae6d04d6",
+        "manifest_objects": 1606,
         "source_inventory": 1579,
-        "public_entries": 1506,
-        "translated_entries": 1495,
-        "arabic_only_entries": 11,
-        "quarantined_records": 73
+        "public_entries": 1565,
+        "translated_entries": 1496,
+        "arabic_only_entries": 69,
+        "quarantined_records": 14,
+        "excluded_contextual_passages": 14
       },
       "depends_on": [
         "ibn-hajar-underlying-medieval-work",
@@ -229,7 +230,7 @@
         "authenticated proposals and translation approvals"
       ],
       "prohibited_public_actions": [
-        "serve quarantined records or private comparison evidence",
+        "serve quarantined contextual passages, withheld English, or private comparison evidence",
         "describe unreviewed records as canonical or human-approved",
         "promote records without the independent repository review gates"
       ],

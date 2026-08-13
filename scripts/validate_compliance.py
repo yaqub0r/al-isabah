@@ -168,14 +168,34 @@ def validate_register(register: dict[str, Any]) -> tuple[list[str], dict[str, di
         public_entries = integrity.get("public_entries")
         quarantined = integrity.get("quarantined_records")
         source_inventory = integrity.get("source_inventory")
+        translated_entries = integrity.get("translated_entries")
+        arabic_only_entries = integrity.get("arabic_only_entries")
+        excluded_contextual_passages = integrity.get(
+            "excluded_contextual_passages"
+        )
         if not all(
             isinstance(value, int) and value >= 0
-            for value in (public_entries, quarantined, source_inventory)
+            for value in (
+                public_entries,
+                quarantined,
+                source_inventory,
+                translated_entries,
+                arabic_only_entries,
+                excluded_contextual_passages,
+            )
         ):
             errors.append("register: public working corpus counts must be non-negative integers")
         elif public_entries + quarantined != source_inventory:
             errors.append(
                 "register: public and quarantined working records must equal source inventory"
+            )
+        elif translated_entries + arabic_only_entries != public_entries:
+            errors.append(
+                "register: translated and Arabic-only entries must equal public entries"
+            )
+        elif excluded_contextual_passages != quarantined:
+            errors.append(
+                "register: quarantine must contain only excluded contextual passages"
             )
     errors.extend(_walk(register, "register"))
     return errors, artifacts

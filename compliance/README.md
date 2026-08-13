@@ -11,7 +11,7 @@ permission to reproduce, adapt, or redistribute an artifact.
 ## Governing contracts
 
 The policy binding is pinned to Sabiqah merge commit
-`780436da5620a66db6a89d65105c953510c1c02f`:
+`d25027ca73ff4a7dc9476e0d768e6361227e2c5b`:
 
 - `content-source-compliance`
 - `translation-quality-workflow`
@@ -34,11 +34,13 @@ The binding, contract paths, and integrity reference are recorded in
 ## Current result
 
 Public working display and canonical promotion now have separate decisions.
-Sabiqah may anonymously serve `al-isabah-public-openiti-5835c18-v1` because its
-1,506 included records are rebuilt against the pinned licensed OpenITI authority,
-attributed under CC BY-NC-SA 4.0, stripped of private apparatus and locators,
-and checked for Arabic-form honorific preservation. All 73 failing legacy
-records are named in the corpus quarantine ledger instead of being served.
+Sabiqah may anonymously serve `al-isabah-public-openiti-5835c18-v1` because all
+1,565 legacy book entries are rebuilt against the pinned licensed OpenITI
+authority, attributed under CC BY-NC-SA 4.0, and stripped of private apparatus
+and locators. The 1,496 translations that pass the public-output and Arabic-form
+honorific checks retain English; the other 69 entries remain public in approved
+Arabic while their legacy English is withheld. The 14 FirstLight contextual
+passages are not book entries and remain named in the corpus quarantine ledger.
 
 Canonical promotion into this repository remains blocked. In particular:
 
