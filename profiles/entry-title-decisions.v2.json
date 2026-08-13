@@ -1,0 +1,248 @@
+{
+  "schemaVersion": "1.0.0",
+  "contractId": "al-isabah-entry-title-structure",
+  "workId": "ibn-hajar-al-isabah",
+  "status": "active",
+  "sourceAuthority": {
+    "repository": "https://github.com/OpenITI/0875AH",
+    "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+    "artifact": "0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1.mARkdown",
+    "license": "CC-BY-NC-SA-4.0"
+  },
+  "decisions": [
+    {
+      "sourceEntryNumber": 11426,
+      "role": "positive-reference",
+      "title": {
+        "ar": "ضباعة بنت عامر",
+        "en": "Duba'a bint Amir"
+      },
+      "bodyOpeningKind": "lineage",
+      "bodyOpening": {
+        "ar": "بن قرط بن سلمة بن قشير بن كعب بن بيعة بن عامر بن صعصعة",
+        "en": "ibn Qurt ibn Salama ibn Qushayr ibn Ka'b ibn Bi'a ibn Amir ibn Sa'sa'a"
+      }
+    },
+    {
+      "sourceEntryNumber": 11427,
+      "role": "corrective",
+      "title": {
+        "ar": "ضباعة بنت عمرو",
+        "en": "Duba'a bint 'Amr"
+      },
+      "bodyOpeningKind": "lineage",
+      "bodyOpening": {
+        "ar": "بن محصن بن عمرو بن عتيك الأنصارية من بني النجار",
+        "en": "ibn Mihsan ibn 'Amr ibn 'Atik al-Ansariyya, of Banu al-Najjar"
+      }
+    },
+    {
+      "sourceEntryNumber": 11430,
+      "role": "corrective",
+      "title": {
+        "ar": "الضيزنة بنت أبي قيس",
+        "en": "al-Dayzana bint Abi Qays"
+      },
+      "bodyOpeningKind": "prose",
+      "bodyOpening": {
+        "ar": "أسلمت وهاجرت",
+        "en": "She embraced Islam and emigrated"
+      }
+    },
+    {
+      "sourceEntryNumber": 11439,
+      "role": "typography-reference",
+      "title": {
+        "ar": "طفية",
+        "en": "Tufya"
+      },
+      "bodyOpeningKind": "prose",
+      "bodyOpening": {
+        "ar": "بمهملة وفاء ساكنة",
+        "en": "With an unpointed ta and a vowelless fa"
+      }
+    },
+    {
+      "sourceEntryNumber": 11441,
+      "role": "corrective",
+      "title": {
+        "ar": "ظبية بنت البراء",
+        "en": "Zabya bint al-Bara'"
+      },
+      "bodyOpeningKind": "lineage",
+      "bodyOpening": {
+        "ar": "بن معرور امرأة أبي قتادة الأنصاري",
+        "en": "ibn Ma'rur, the wife of Abu Qatada al-Ansari"
+      }
+    },
+    {
+      "sourceEntryNumber": 11436,
+      "role": "corrective",
+      "title": {
+        "ar": "طيبة",
+        "en": "Tayba"
+      },
+      "bodyOpeningKind": "prose",
+      "bodyOpening": {
+        "ar": "أم أبي موسى الأشعري",
+        "en": "mother of Abu Musa al-Ash'ari"
+      }
+    },
+    {
+      "sourceEntryNumber": 11442,
+      "role": "corrective",
+      "title": {
+        "ar": "ظبية بنت النعمان",
+        "en": "Zabya bint al-Nu'man"
+      },
+      "bodyOpeningKind": "lineage",
+      "bodyOpening": {
+        "ar": "بن ثابت بن أبي",
+        "en": "ibn Thabit ibn Abu al-Aflah"
+      }
+    },
+    {
+      "sourceEntryNumber": 11443,
+      "role": "corrective",
+      "title": {
+        "ar": "ظبية بنت وهب",
+        "en": "Zabya bint Wahb"
+      },
+      "bodyOpeningKind": "prose",
+      "bodyOpening": {
+        "ar": "من بني عك",
+        "en": "of Banu 'Akk"
+      }
+    },
+    {
+      "sourceEntryNumber": 11445,
+      "role": "corrective",
+      "title": {
+        "ar": "عاتكة بنت أبي أزيهر",
+        "en": "Atika bint Abi Uzayhir"
+      },
+      "bodyOpeningKind": "lineage",
+      "bodyOpening": {
+        "ar": "بن أنيس بن الحمق بن مالك",
+        "en": "ibn Anis ibn al-Hamq ibn Malik al-Dawsi"
+      }
+    },
+    {
+      "sourceEntryNumber": 11446,
+      "role": "corrective",
+      "title": {
+        "ar": "عاتكة بنت أسيد",
+        "en": "Atika bint Usayd"
+      },
+      "bodyOpeningKind": "lineage",
+      "bodyOpening": {
+        "ar": "بن أبي العيص بن أمية الأموية أخت عتاب بن أسيد أمير مكة",
+        "en": "ibn Abi al-'Is ibn Umayya al-Umawiyya, the sister of Attab ibn Usayd, governor of Mecca"
+      }
+    },
+    {
+      "sourceEntryNumber": 11449,
+      "role": "corrective",
+      "title": {
+        "ar": "عاتكة بنت أبي سفيان",
+        "en": "Atika bint Abi Sufyan"
+      },
+      "bodyOpeningKind": "lineage",
+      "bodyOpening": {
+        "ar": "بن الحارث بن عبد المطلب الهاشمية",
+        "en": "ibn al-Harith ibn Abd al-Muttalib, the Hashimite"
+      }
+    },
+    {
+      "sourceEntryNumber": 11451,
+      "role": "corrective",
+      "title": {
+        "ar": "عاتكة بنت عبد المطلب",
+        "en": "Atika bint Abd al-Muttalib"
+      },
+      "bodyOpeningKind": "lineage",
+      "bodyOpening": {
+        "ar": "بن هاشم",
+        "en": "ibn Hashim"
+      }
+    },
+    {
+      "sourceEntryNumber": 11454,
+      "role": "corrective",
+      "title": {
+        "ar": "عاتكة بنت الوليد",
+        "en": "Atika bint al-Walid"
+      },
+      "bodyOpeningKind": "lineage",
+      "bodyOpening": {
+        "ar": "بن المغيرة المخزومية أخت",
+        "en": "ibn al-Mughira al-Makhzumiyya"
+      }
+    },
+    {
+      "sourceEntryNumber": 11458,
+      "role": "corrective",
+      "title": {
+        "ar": "عائشة بنت جرير",
+        "en": "Aisha bint Jarir"
+      },
+      "bodyOpeningKind": "lineage",
+      "bodyOpening": {
+        "ar": "بن عمرو بن رزاح الأنصارية من بني سلمة",
+        "en": "ibn Amr ibn Razah al-Ansariyya, of Banu Salama"
+      }
+    },
+    {
+      "sourceEntryNumber": 11459,
+      "role": "corrective",
+      "title": {
+        "ar": "عاشه بنت سعد",
+        "en": "Aisha bint Sa'd"
+      },
+      "bodyOpeningKind": "lineage",
+      "bodyOpening": {
+        "ar": "بن أبي وقاص الزهرية تقدم",
+        "en": "ibn Abi Waqqas al-Zuhriyya"
+      }
+    },
+    {
+      "sourceEntryNumber": 11473,
+      "role": "corrective",
+      "title": {
+        "ar": "عزة بنت أبي سفيان",
+        "en": "Azza bint Abi Sufyan"
+      },
+      "bodyOpeningKind": "lineage",
+      "bodyOpening": {
+        "ar": "بن حرب الأموية",
+        "en": "ibn Harb al-Umawiyya"
+      }
+    },
+    {
+      "sourceEntryNumber": 11474,
+      "role": "corrective",
+      "title": {
+        "ar": "عزة بنت أبي لهب",
+        "en": "Azza bint Abi Lahab"
+      },
+      "bodyOpeningKind": "lineage",
+      "bodyOpening": {
+        "ar": "بن عبد المطلب الهاشمية",
+        "en": "ibn Abd al-Muttalib al-Hashimiyya"
+      }
+    },
+    {
+      "sourceEntryNumber": 11476,
+      "role": "corrective",
+      "title": {
+        "ar": "عزيزة بنت أبي تجراة",
+        "en": "Aziza bint Abi Tajra'a"
+      },
+      "bodyOpeningKind": "prose",
+      "bodyOpening": {
+        "ar": "العبدرية",
+        "en": "al-Abdariyya"
+      }
+    }
+  ]
+}
