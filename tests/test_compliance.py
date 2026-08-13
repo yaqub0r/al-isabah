@@ -39,6 +39,7 @@ class ComplianceTests(unittest.TestCase):
         promotion["blockers"] = []
         promotion["reviews"] = {
             "source_compliance": "approved",
+            "translation_quality": "approved",
             "human_scholarly": "approved",
             "canonical_repository": "approved",
         }
@@ -73,6 +74,125 @@ class ComplianceTests(unittest.TestCase):
         errors = self.validate(register=register, promotion=promotion)
         self.assertIn(
             "promotion: eligible release requires every review to be approved", errors
+        )
+
+    def test_policy_requires_translation_quality_contract(self):
+        policy = copy.deepcopy(self.policy)
+        policy["contracts"] = [
+            contract
+            for contract in policy["contracts"]
+            if contract["id"] != "translation-quality-workflow"
+        ]
+        self.assertIn(
+            "policy: all three pinned Sabiqah contracts are required",
+            self.validate(policy=policy),
+        )
+
+    def test_eligible_claim_requires_translation_quality_controls(self):
+        register = copy.deepcopy(self.register)
+        for artifact in register["artifacts"]:
+            artifact["classification"] = "approved-for-publication"
+        promotion = copy.deepcopy(self.promotion)
+        promotion["status"] = "eligible"
+        promotion["public_release_eligible"] = True
+        promotion["blockers"] = []
+        promotion["reviews"] = {
+            "source_compliance": "approved",
+            "translation_quality": "approved",
+            "human_scholarly": "approved",
+            "canonical_repository": "approved",
+        }
+        errors = self.validate(register=register, promotion=promotion)
+        self.assertIn(
+            "promotion: eligible release requires every translation-quality control to pass",
+            errors,
+        )
+
+    def test_fully_attested_eligible_claim_passes(self):
+        register = copy.deepcopy(self.register)
+        for artifact in register["artifacts"]:
+            artifact["classification"] = "approved-for-publication"
+        promotion = copy.deepcopy(self.promotion)
+        promotion["status"] = "eligible"
+        promotion["public_release_eligible"] = True
+        promotion["blockers"] = []
+        promotion["reviews"] = {
+            "source_compliance": "approved",
+            "translation_quality": "approved",
+            "human_scholarly": "approved",
+            "canonical_repository": "approved",
+        }
+        promotion["translation_quality"] = {
+            control: "passed" for control in MODULE.REQUIRED_TRANSLATION_CONTROLS
+        }
+        self.assertEqual(self.validate(register=register, promotion=promotion), [])
+
+    def test_public_output_cannot_pass_before_source_authority(self):
+        promotion = copy.deepcopy(self.promotion)
+        promotion["translation_quality"]["public_output"] = "passed"
+        errors = self.validate(promotion=promotion)
+        self.assertIn(
+            "promotion: public_output cannot pass before source_authority passes",
+            errors,
+        )
+
+    def test_public_working_display_requires_all_public_gates(self):
+        promotion = copy.deepcopy(self.promotion)
+        promotion["working_publication"]["gates"]["honorific_preservation"] = (
+            "incomplete"
+        )
+        errors = self.validate(promotion=promotion)
+        self.assertIn(
+            "promotion: public working gate honorific_preservation must pass", errors
+        )
+
+    def test_public_working_counts_must_match_registered_artifact(self):
+        promotion = copy.deepcopy(self.promotion)
+        promotion["working_publication"]["public_entries"] += 1
+        errors = self.validate(promotion=promotion)
+        self.assertIn(
+            "promotion: working public count differs from its register", errors
+        )
+
+    def test_public_working_translation_counts_must_cover_public_entries(self):
+        register = copy.deepcopy(self.register)
+        artifact = next(
+            item
+            for item in register["artifacts"]
+            if item["id"] == "sabiqah-public-working-corpus-openiti-5835c18-v1"
+        )
+        artifact["integrity"]["arabic_only_entries"] -= 1
+        errors = self.validate(register=register)
+        self.assertIn(
+            "register: translated and Arabic-only entries must equal public entries",
+            errors,
+        )
+
+    def test_public_working_quarantine_is_limited_to_contextual_passages(self):
+        register = copy.deepcopy(self.register)
+        artifact = next(
+            item
+            for item in register["artifacts"]
+            if item["id"] == "sabiqah-public-working-corpus-openiti-5835c18-v1"
+        )
+        artifact["integrity"]["excluded_contextual_passages"] -= 1
+        errors = self.validate(register=register)
+        self.assertIn(
+            "register: quarantine must contain only excluded contextual passages",
+            errors,
+        )
+
+    def test_public_working_artifact_must_be_public_approved(self):
+        register = copy.deepcopy(self.register)
+        artifact = next(
+            item
+            for item in register["artifacts"]
+            if item["id"] == "sabiqah-public-working-corpus-openiti-5835c18-v1"
+        )
+        artifact["classification"] = "unresolved"
+        errors = self.validate(register=register)
+        self.assertIn(
+            "promotion: working publication artifact is not public-approved", errors
         )
 
     def test_unknown_dependency_fails(self):

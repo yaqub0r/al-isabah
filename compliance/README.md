@@ -11,9 +11,10 @@ permission to reproduce, adapt, or redistribute an artifact.
 ## Governing contracts
 
 The policy binding is pinned to Sabiqah merge commit
-`348c0c4a5a1bc5943620d6bff61b1d0db836da67`:
+`d25027ca73ff4a7dc9476e0d768e6361227e2c5b`:
 
 - `content-source-compliance`
+- `translation-quality-workflow`
 - `canonical-book-promotion`
 
 The binding, contract paths, and integrity reference are recorded in
@@ -32,22 +33,32 @@ The binding, contract paths, and integrity reference are recorded in
 
 ## Current result
 
-Promotion is blocked. In particular:
+Public working display and canonical promotion now have separate decisions.
+Sabiqah may anonymously serve `al-isabah-public-openiti-5835c18-v1` because all
+1,565 legacy book entries are rebuilt against the pinned licensed OpenITI
+authority, attributed under CC BY-NC-SA 4.0, and stripped of private apparatus
+and locators. The 1,496 translations that pass the public-output and Arabic-form
+honorific checks retain English; the other 69 entries remain public in approved
+Arabic while their legacy English is withheld. The 14 FirstLight contextual
+passages are not book entries and remain named in the corpus quarantine ledger.
+
+Canonical promotion into this repository remains blocked. In particular:
 
 - the 1995 DKI Arabic facsimile, reader text, OCR, and aligned transcription are
   private/reference-only research witnesses, not approved public source text;
 - the modern Urdu translation is a private comparison witness, not a public
   translation base;
-- the current English and entry projections depend on that source lineage and
-  have not completed human and compliance review; and
-- the entry projections contain modern editorial apparatus from the 1995
-  edition; and
+- the legacy English and entry projections have not completed human and
+  canonical-repository review;
+- the old projections still contain modern editorial apparatus and are not the
+  public-working corpus;
 - exact historical acquisition dates for retained research witnesses were not
   recorded, so the register states that gap instead of inventing dates.
 
-The data is preserved for remediation and scholarly review. The block does not
-assert that the underlying medieval work is protected, and it does not require
-deleting research evidence. Promotion can be reconsidered after a reusable
-Arabic base is established, protected modern expression is excluded, English
-lineage is independently reviewed, and outstanding scholarly review is
-complete.
+The legacy data is preserved for remediation and scholarly review. The block
+does not assert that the underlying medieval work is protected, and it does not
+require deleting research evidence. The public-working determination permits
+honest reading and review; it does not convert machine-remediated records into
+the canonical scholarly edition. Promotion can be reconsidered after English
+lineage and scholarship are independently reviewed and every applicable
+repository gate passes.

@@ -11,8 +11,10 @@
     "source_register",
     "status",
     "public_release_eligible",
+    "working_publication",
     "candidate_revisions",
     "reviews",
+    "translation_quality",
     "blockers",
     "decision"
   ],
@@ -20,9 +22,70 @@
     "schema": { "const": "al-isabah.promotion-readiness.v1" },
     "status": { "enum": ["blocked", "eligible"] },
     "public_release_eligible": { "type": "boolean" },
+    "working_publication": {
+      "type": "object",
+      "required": [
+        "artifact",
+        "corpus_id",
+        "status",
+        "canonical_promotion",
+        "public_entries",
+        "quarantined_records",
+        "gates"
+      ],
+      "properties": {
+        "artifact": { "type": "string", "minLength": 1 },
+        "corpus_id": { "type": "string", "minLength": 1 },
+        "status": { "const": "public-working" },
+        "canonical_promotion": { "const": "blocked" },
+        "public_entries": { "type": "integer", "minimum": 0 },
+        "quarantined_records": { "type": "integer", "minimum": 0 },
+        "gates": {
+          "type": "object",
+          "required": [
+            "source_authority",
+            "public_output",
+            "honorific_preservation",
+            "canonical_human_review"
+          ],
+          "properties": {
+            "source_authority": { "const": "passed" },
+            "public_output": { "const": "passed" },
+            "honorific_preservation": { "const": "passed" },
+            "canonical_human_review": { "enum": ["incomplete", "passed"] }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
     "candidate_revisions": {
       "type": "array",
       "minItems": 1
+    },
+    "translation_quality": {
+      "type": "object",
+      "required": [
+        "source_authority",
+        "public_output",
+        "honorific_preservation",
+        "translation_lineage"
+      ],
+      "properties": {
+        "source_authority": {
+          "enum": ["blocked", "incomplete", "passed"]
+        },
+        "public_output": {
+          "enum": ["blocked", "incomplete", "passed"]
+        },
+        "honorific_preservation": {
+          "enum": ["blocked", "incomplete", "passed"]
+        },
+        "translation_lineage": {
+          "enum": ["blocked", "incomplete", "passed"]
+        }
+      },
+      "additionalProperties": false
     },
     "blockers": { "type": "array" }
   },
