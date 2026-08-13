@@ -24,6 +24,20 @@ class EntryTitleContractTests(unittest.TestCase):
         numbers = {item["sourceEntryNumber"] for item in self.profile["decisions"]}
         self.assertEqual(numbers, {11426, 11427, 11430, 11439, 11441})
 
+    def test_positive_reference_matches_the_pinned_source_lineage(self) -> None:
+        decision = next(
+            item
+            for item in self.profile["decisions"]
+            if item["sourceEntryNumber"] == 11426
+        )
+        self.assertEqual(
+            decision["bodyOpening"],
+            {
+                "ar": "بن قرط بن سلمة بن قشير بن كعب بن بيعة بن عامر بن صعصعة",
+                "en": "ibn Qurt ibn Salama ibn Qushayr ibn Ka'b ibn Bi'a ibn Amir ibn Sa'sa'a",
+            },
+        )
+
     def test_rejects_duplicate_entry_decision(self) -> None:
         profile = copy.deepcopy(self.profile)
         profile["decisions"].append(copy.deepcopy(profile["decisions"][0]))
