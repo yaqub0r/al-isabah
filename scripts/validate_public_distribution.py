@@ -7,6 +7,7 @@ import argparse
 import hashlib
 import json
 import re
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -14,6 +15,7 @@ from typing import Any
 SHA256 = re.compile(r"^[a-f0-9]{64}$")
 COMMIT = re.compile(r"^[a-f0-9]{40}$")
 IDENTIFIER = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._:-]{2,199}$")
+UTC_TIMESTAMP = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z$")
 
 
 def digest(path: Path) -> str:
@@ -32,6 +34,14 @@ def validate(root: Path) -> list[str]:
         errors.append("manifest: publication status must be public-working")
     if manifest.get("canonicalPromotion") != "blocked":
         errors.append("manifest: canonical promotion must remain blocked")
+    generated_at = manifest.get("generatedAt")
+    if not isinstance(generated_at, str) or not UTC_TIMESTAMP.fullmatch(generated_at):
+        errors.append("manifest: generated timestamp must use UTC Z form")
+    else:
+        try:
+            datetime.fromisoformat(generated_at.replace("Z", "+00:00"))
+        except ValueError:
+            errors.append("manifest: generated timestamp is invalid")
     repository = manifest.get("repository", {})
     if repository.get("url") != "https://github.com/yaqub0r/al-isabah":
         errors.append("manifest: wrong repository authority")
