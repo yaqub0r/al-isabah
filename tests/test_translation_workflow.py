@@ -40,6 +40,49 @@ def assignment_issue(number=25, start=1, end=2):
 def complete_autonomous_stages(packet):
     for entry in packet["entries"]:
         number = entry["sourceOrdinal"]
+        for index, (source, translation) in enumerate(
+            zip(
+                entry["source"]["precedingSegments"],
+                entry["precedingTranslations"],
+            ),
+            start=1,
+        ):
+            heading = source.get("headingArabic")
+            prose = source.get("arabic")
+            translation["blindTranslation"].update(
+                {
+                    "status": "complete",
+                    "runId": f"blind-structure-{number}-{index}",
+                    "model": "codex",
+                    "reasoning": "high",
+                    "headingEnglish": "Translated heading" if heading else None,
+                    "english": "Translated source prose." if prose else None,
+                }
+            )
+            translation["independentCritique"].update(
+                {
+                    "status": "complete",
+                    "runId": f"critique-structure-{number}-{index}",
+                    "model": "codex-independent-pass",
+                    "findings": [],
+                }
+            )
+            translation["witnessResolution"] = {
+                "status": "not_required",
+                "results": [],
+            }
+            translation["adjudication"] = {
+                "status": "complete",
+                "headingEnglish": "Translated heading" if heading else None,
+                "english": "Adjudicated source prose." if prose else None,
+                "decisions": [],
+            }
+            translation["names"] = {
+                "status": "complete",
+                "candidates": [],
+                "mentions": [],
+            }
+            translation["unresolved"] = []
         entry["blindTranslation"].update(
             {
                 "status": "complete",
@@ -134,9 +177,53 @@ class TranslationWorkflowTests(unittest.TestCase):
         )
         self.assertNotEqual(entries[2]["sourceUnitId"], entries[3]["sourceUnitId"])
         self.assertIn("ضباعة بنت عامر", entries[0]["arabic"])
+        first_context = entries[0]["precedingSegments"]
+        self.assertEqual(
+            [segment["kind"] for segment in first_context],
+            ["front_matter", "structural_heading", "structural_heading"],
+        )
+        self.assertEqual(first_context[1]["headingArabic"], "( مقدمة الاختبار )")
+        self.assertIn("هذا تمهيد أصلي", first_context[1]["arabic"])
+        self.assertTrue(
+            all("#META#" not in segment["rawOpeniti"] for segment in first_context)
+        )
+        historical_paratext = entries[1]["precedingSegments"][0]
+        self.assertEqual(historical_paratext["kind"], "interstitial_prose")
+        self.assertIn("قال مؤلفه فرغت", historical_paratext["arabic"])
+        self.assertIn("بسم الله الرحمن الرحيم", historical_paratext["arabic"])
+        self.assertNotIn("PARATEXT", historical_paratext["rawOpeniti"])
         self.assertNotIn("باب الطاء", entries[1]["rawOpeniti"])
-        self.assertIn("باب الطاء", entries[2]["structuralEvents"][0])
+        self.assertEqual(
+            entries[2]["precedingSegments"][0]["headingArabic"],
+            "( باب الطاء )",
+        )
+        self.assertNotIn(
+            "مقدمة حديثة للمحقق",
+            " ".join(
+                segment.get("arabic") or ""
+                for entry in entries
+                for segment in entry["precedingSegments"]
+            ),
+        )
         self.assertEqual(entries[2]["locations"][0], {"volume": 8, "page": 5})
+
+    def test_packet_explicitly_excludes_container_metadata(self):
+        packet = self.packet()
+        exclusions = packet["scope"]["excludedRanges"]
+        self.assertEqual(packet["schemaVersion"], "1.1.0")
+        self.assertEqual(exclusions[0]["kind"], "openiti_metadata")
+        self.assertEqual(exclusions[0]["lineStart"], 1)
+        self.assertEqual(exclusions[0]["lineEnd"], 4)
+        self.assertEqual(exclusions[1]["kind"], "openiti_control")
+        self.assertEqual(exclusions[1]["lineStart"], 15)
+        self.assertEqual(exclusions[1]["lineEnd"], 15)
+        self.assertEqual(exclusions[2]["kind"], "modern_paratext")
+        self.assertEqual(exclusions[2]["lineStart"], 21)
+        self.assertEqual(exclusions[2]["lineEnd"], 22)
+        self.assertEqual(
+            packet["scope"]["precedingMaterialOwnership"],
+            "following_source_unit",
+        )
 
     def test_assignment_overlap_is_rejected(self):
         claims = MODULE.parse_claims([assignment_issue(number=30, start=1, end=3)])
@@ -159,6 +246,133 @@ class TranslationWorkflowTests(unittest.TestCase):
             [11426, 11427],
         )
         self.assertEqual(MODULE.validate_packet(packet), [])
+
+    def test_packet_requires_exact_preceding_segment_coverage(self):
+        packet = self.packet()
+        packet["entries"][0]["precedingTranslations"].pop()
+        self.assertTrue(
+            any(
+                "preceding translations must exactly cover source segments" in error
+                for error in MODULE.validate_packet(packet)
+            )
+        )
+
+    def test_entry_shard_merge_is_atomic_and_source_locked(self):
+        completed = self.packet()
+        complete_autonomous_stages(completed)
+        output_fields = (
+            "sourceOrdinal",
+            "sourceUnitId",
+            "blindTranslation",
+            "independentCritique",
+            "witnessResolution",
+            "adjudication",
+            "names",
+            "unresolved",
+            "humanReview",
+        )
+        outputs = [
+            {field: entry[field] for field in output_fields}
+            for entry in completed["entries"]
+        ]
+        shard = {
+            "schemaVersion": "1.0.0",
+            "packetId": completed["packetId"],
+            "issueNumber": completed["assignment"]["issueNumber"],
+            "startUnit": 1,
+            "endUnit": 2,
+            "entries": outputs,
+        }
+        with tempfile.TemporaryDirectory() as temporary:
+            packet_path = Path(temporary) / "packet.json"
+            shard_path = Path(temporary) / "shard.json"
+            packet_path.write_bytes(MODULE.json_bytes(self.packet()))
+            shard_path.write_bytes(MODULE.json_bytes(shard))
+            self.assertEqual(MODULE.merge_entry_shard(packet_path, shard_path), 2)
+            merged = MODULE.load_json(packet_path)
+            self.assertEqual(
+                merged["entries"][0]["adjudication"]["english"],
+                "Adjudicated English for entry 1.",
+            )
+
+            original = packet_path.read_bytes()
+            shard["entries"][0]["sourceUnitId"] = "wrong-source-unit"
+            shard_path.write_bytes(MODULE.json_bytes(shard))
+            with self.assertRaisesRegex(MODULE.WorkflowError, "sourceUnitId"):
+                MODULE.merge_entry_shard(packet_path, shard_path)
+            self.assertEqual(packet_path.read_bytes(), original)
+
+    def test_entry_shard_rejects_unavailable_witness(self):
+        completed = self.packet()
+        complete_autonomous_stages(completed)
+        output = {
+            field: completed["entries"][0][field]
+            for field in (
+                "sourceOrdinal",
+                "sourceUnitId",
+                "blindTranslation",
+                "independentCritique",
+                "witnessResolution",
+                "adjudication",
+                "names",
+                "unresolved",
+                "humanReview",
+            )
+        }
+        output["independentCritique"]["findings"] = [
+            {"kind": "source-reading", "requiresWitness": True}
+        ]
+        output["witnessResolution"] = {
+            "status": "pending",
+            "results": [{"status": "unavailable"}],
+        }
+        shard = {
+            "schemaVersion": "1.0.0",
+            "packetId": completed["packetId"],
+            "issueNumber": completed["assignment"]["issueNumber"],
+            "startUnit": 1,
+            "endUnit": 1,
+            "entries": [output],
+        }
+        with tempfile.TemporaryDirectory() as temporary:
+            packet_path = Path(temporary) / "packet.json"
+            shard_path = Path(temporary) / "shard.json"
+            packet_path.write_bytes(MODULE.json_bytes(self.packet()))
+            shard_path.write_bytes(MODULE.json_bytes(shard))
+            with self.assertRaisesRegex(MODULE.WorkflowError, "not final"):
+                MODULE.merge_entry_shard(packet_path, shard_path)
+
+    def test_structural_shard_merge_requires_exact_segment_ids(self):
+        completed = self.packet()
+        complete_autonomous_stages(completed)
+        shard = {
+            "schemaVersion": "1.1.0",
+            "packetId": completed["packetId"],
+            "issueNumber": completed["assignment"]["issueNumber"],
+            "sourceOrdinal": 1,
+            "precedingTranslations": completed["entries"][0][
+                "precedingTranslations"
+            ],
+        }
+        with tempfile.TemporaryDirectory() as temporary:
+            packet_path = Path(temporary) / "packet.json"
+            shard_path = Path(temporary) / "structural-shard.json"
+            packet_path.write_bytes(MODULE.json_bytes(self.packet()))
+            shard_path.write_bytes(MODULE.json_bytes(shard))
+            self.assertEqual(MODULE.merge_preceding_shard(packet_path, shard_path), 3)
+            merged = MODULE.load_json(packet_path)
+            self.assertEqual(
+                merged["entries"][0]["precedingTranslations"][0]["adjudication"]
+                ["english"],
+                "Adjudicated source prose.",
+            )
+
+            original = packet_path.read_bytes()
+            shard["precedingTranslations"][0]["segmentId"] = "wrong-segment"
+            shard_path.write_bytes(MODULE.json_bytes(shard))
+            with self.assertRaisesRegex(MODULE.WorkflowError, "exactly"):
+                MODULE.merge_preceding_shard(packet_path, shard_path)
+            self.assertEqual(packet_path.read_bytes(), original)
 
     def test_packet_rejects_stale_policy(self):
         packet = self.packet()
@@ -197,6 +411,19 @@ class TranslationWorkflowTests(unittest.TestCase):
         errors = MODULE.validate_packet(packet, machine_ready=True)
         self.assertTrue(any("requires witness resolution" in error for error in errors))
 
+    def test_machine_ready_requires_every_preceding_segment_translation(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        first = packet["entries"][0]["precedingTranslations"][0]
+        first["adjudication"]["english"] = None
+        errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertTrue(
+            any(
+                "adjudicated substantive prose is untranslated" in error
+                for error in errors
+            )
+        )
+
     def test_render_finalizes_machine_ready_packet_without_human_approval(self):
         packet = self.packet()
         complete_autonomous_stages(packet)
@@ -206,6 +433,13 @@ class TranslationWorkflowTests(unittest.TestCase):
             review_path = MODULE.finalize_packet(packet_path)
             final = MODULE.load_json(packet_path)
             self.assertTrue(review_path.is_file())
+            review = review_path.read_text(encoding="utf-8")
+            self.assertIn("Adjudicated source prose.", review)
+            self.assertIn("هذا تمهيد أصلي", review)
+            self.assertIn("قال مؤلفه فرغت", review)
+            self.assertNotIn("### |PARATEXT|", review)
+            self.assertNotIn("مقدمة حديثة للمحقق", review)
+            self.assertNotIn("#META# 020.BookTITLE", review)
             self.assertEqual(final["machineReadiness"]["status"], "ready")
             self.assertTrue(
                 all(

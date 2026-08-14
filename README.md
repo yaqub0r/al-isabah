@@ -49,6 +49,8 @@ python scripts/translation_workflow.py status
 python scripts/translation_workflow.py locate --entry 11482
 python scripts/translation_workflow.py claim --start-unit <first-unit> --end-unit <last-unit>
 python scripts/translation_workflow.py prepare --issue <issue-number>
+python scripts/translation_workflow.py merge-shard --packet <packet> --shard <entry-shard>
+python scripts/translation_workflow.py merge-structure-shard --packet <packet> --shard <structure-shard>
 ```
 
 The CLI uses GitHub issues to prevent overlapping claims, creates

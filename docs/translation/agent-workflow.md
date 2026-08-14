@@ -108,8 +108,10 @@ python scripts/translation_workflow.py validate \
 
 ## 5. Complete the autonomous stages
 
-Edit only the packet's output fields. Never rewrite `authority`, `policy`,
-`assignment`, or any `source` field.
+For a single-worker range, edit only the packet's output fields. For a
+parallel whole-volume run, workers write disjoint ignored runtime shards and
+the coordinating agent merges them with the commands below. Never rewrite
+`authority`, `policy`, `assignment`, or any `source` field.
 
 For every entry:
 
@@ -136,6 +138,33 @@ A minimal name candidate contains a packet-scoped ID, observed Arabic form,
 proposed English form, aliases, confidence evidence, and review state. A
 mention points to the source unit and exact entry location. These fields stay
 JSON even when an application later projects them into a database.
+
+Parallel biography workers use a schema `1.0.0` shard envelope containing the
+packet ID, issue number, exact starting and ending source ordinals, and only
+the completed output fields for every source unit in that range. The
+coordinator applies a completed shard atomically:
+
+```sh
+python scripts/translation_workflow.py merge-shard \
+  --packet .runtime/translation/packets/issue-0025.json \
+  --shard .runtime/translation/shards/issue-0025-units-000001-000010.json
+```
+
+Structural and front-matter text is owned by the following source unit. A
+schema `1.1.0` structural shard contains one source ordinal and translations
+whose segment IDs exactly match that unit's `source.precedingSegments`:
+
+```sh
+python scripts/translation_workflow.py merge-structure-shard \
+  --packet .runtime/translation/packets/issue-0025.json \
+  --shard .runtime/translation/shards/issue-0025-structure-before-unit-000001.json
+```
+
+Both commands reject wrong or missing ordinals, source-ID drift, stale policy
+hashes, non-final witnesses, reused critique runs, broken name references,
+private fields, and structural coverage gaps before writing. Shards and the
+working packet stay below ignored `.runtime`; only a complete validated
+proposal enters Git.
 
 ## 6. Render and finalize machine readiness
 
@@ -181,9 +210,11 @@ promotion remain later, independently recorded gates.
   them.
 - If the source, policy, or assignment changes, the old packet fails as stale;
   create a new packet and migrate decisions explicitly.
-- Divide work by non-overlapping printed-entry ranges. Topic cohorts may refer
-  to the same source entries for discovery, but they must not create competing
-  translation claims or new stable identities.
+- Divide work by non-overlapping source-ordinal ranges. Printed entry numbers
+  are searchable metadata and cannot be used as shard identity because five
+  printed numbers are duplicated. Topic cohorts may refer to the same source
+  entries for discovery, but they must not create competing translation claims
+  or new stable identities.
 - An interrupted agent leaves its issue open and packet local. Another agent
   takes over only after assignment is transferred on GitHub.
 

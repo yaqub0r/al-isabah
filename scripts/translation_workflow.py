@@ -29,11 +29,14 @@ DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v1.json"
 RUNTIME_ROOT = ROOT / ".runtime" / "translation"
 PROPOSAL_ROOT = ROOT / "content" / "translation-proposals"
 REPOSITORY = "yaqub0r/al-isabah"
-TOOL_VERSION = "1.0.0"
+TOOL_VERSION = "1.1.0"
 
 ASSIGNMENT_START = "<!-- al-isabah-translation-assignment:v1"
 ASSIGNMENT_END = "-->"
 ENTRY_RE = re.compile(r"^###\s+\$+\s+(\d+)\s+(.+?)\s*$")
+STRUCTURE_RE = re.compile(r"^###\s+(\|+)\s*(.*?)\s*$")
+EDITOR_RE = re.compile(r"^###\s+\|EDITOR\|\s*$")
+OPENITI_CONTROL_RE = re.compile(r"^###\s+\|(PARATEXT|APPENDIX)\|\s*$")
 PAGE_RE = re.compile(r"PageV(\d{2})P(\d{3})")
 MILESTONE_RE = re.compile(r"\bms\d+\b")
 SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
@@ -251,12 +254,153 @@ def readable_arabic(number: int, raw_lines: list[str]) -> tuple[str, list[str]]:
     return "\n\n".join(paragraphs), structure
 
 
+def readable_openiti_prose(raw_lines: list[str]) -> str:
+    """Remove OpenITI layout syntax while preserving substantive prose order."""
+    paragraphs: list[str] = []
+    for raw in raw_lines:
+        line = raw.strip()
+        continuation = line.startswith("~~")
+        if continuation:
+            line = line[2:]
+        elif line.startswith("# "):
+            line = line[2:]
+        line = PAGE_RE.sub(" ", line)
+        line = MILESTONE_RE.sub(" ", line)
+        line = re.sub(r"\s*\|\s*", " ", line)
+        line = re.sub(r"\s+", " ", line).strip()
+        if not line:
+            continue
+        if continuation and paragraphs:
+            paragraphs[-1] = f"{paragraphs[-1]} {line}"
+        else:
+            paragraphs.append(line)
+    return "\n\n".join(paragraphs)
+
+
+def preceding_segment(
+    raw_lines: list[str],
+    line_start: int,
+    start_page: tuple[int, int] | None,
+    following_ordinal: int,
+    segment_index: int,
+) -> dict[str, Any] | None:
+    """Create one source-locked unit occurring immediately before an entry.
+
+    OpenITI container metadata and its explicit paratext classes are removed by
+    the caller before this function receives substantive book text.
+    """
+    first = raw_lines[0].strip()
+    structure_match = STRUCTURE_RE.match(first)
+    heading_level: int | None = None
+    heading_arabic: str | None = None
+    kind = "front_matter" if following_ordinal == 1 else "interstitial_prose"
+    body_lines = raw_lines
+    if structure_match:
+        heading_level = len(structure_match.group(1))
+        marker_text = structure_match.group(2).strip()
+        kind = "structural_heading"
+        heading_arabic = marker_text
+        body_lines = raw_lines[1:]
+    arabic = readable_openiti_prose(body_lines)
+    if not heading_arabic and not arabic:
+        return None
+    raw = "\n".join(raw_lines) + "\n"
+    return {
+        "segmentId": (
+            f"openiti-5835c183-before-unit-{following_ordinal:06d}-"
+            f"segment-{segment_index:03d}"
+        ),
+        "kind": kind,
+        "lineStart": line_start,
+        "lineEnd": line_start + len(raw_lines) - 1,
+        "locations": source_locations(raw_lines, start_page),
+        "rawOpeniti": raw,
+        "rawSha256": bytes_sha256(raw.encode("utf-8")),
+        "headingLevel": heading_level,
+        "headingArabic": heading_arabic,
+        "arabic": arabic,
+    }
+
+
+def source_scope_exclusions(path: Path) -> list[dict[str, Any]]:
+    """Record non-book container material excluded before parsing source text."""
+    lines = path.read_text(encoding="utf-8").splitlines()
+    try:
+        end_index = lines.index("#META#Header#End#")
+    except ValueError as exc:
+        raise WorkflowError("source: OpenITI metadata terminator is missing") from exc
+    raw = "\n".join(lines[: end_index + 1]) + "\n"
+    exclusions = [
+        {
+            "kind": "openiti_metadata",
+            "lineStart": 1,
+            "lineEnd": end_index + 1,
+            "rawSha256": bytes_sha256(raw.encode("utf-8")),
+            "reason": "OpenITI container metadata, not authored book text",
+        }
+    ]
+    index = end_index + 1
+    while index < len(lines):
+        if EDITOR_RE.match(lines[index]):
+            range_end = index + 1
+            while range_end < len(lines) and not lines[range_end].startswith("###"):
+                range_end += 1
+            raw = "\n".join(lines[index:range_end]) + "\n"
+            exclusions.append(
+                {
+                    "kind": "modern_paratext",
+                    "lineStart": index + 1,
+                    "lineEnd": range_end,
+                    "rawSha256": bytes_sha256(raw.encode("utf-8")),
+                    "reason": (
+                        "OpenITI EDITOR section; explicitly outside the authored "
+                        "main-text translation scope"
+                    ),
+                }
+            )
+            index = range_end
+            continue
+        control = OPENITI_CONTROL_RE.match(lines[index])
+        if control is None:
+            index += 1
+            continue
+        raw = f"{lines[index]}\n"
+        exclusions.append(
+            {
+                "kind": "openiti_control",
+                "lineStart": index + 1,
+                "lineEnd": index + 1,
+                "rawSha256": bytes_sha256(raw.encode("utf-8")),
+                "reason": (
+                    f"OpenITI {control.group(1)} control marker; the following "
+                    "source text remains in translation scope"
+                ),
+            }
+        )
+        index += 1
+    return exclusions
+
+
 def parse_openiti_entries(path: Path) -> list[dict[str, Any]]:
     lines = path.read_text(encoding="utf-8").splitlines()
     entries: list[dict[str, Any]] = []
     current: dict[str, Any] | None = None
     current_page: tuple[int, int] | None = None
-    pending_structure: list[str] = []
+    pending: dict[str, Any] | None = None
+    pending_segments: list[dict[str, Any]] = []
+    metadata_complete = False
+    skipping_editor = False
+
+    def finish_pending(end_line: int) -> None:
+        nonlocal pending
+        if pending is None:
+            return
+        while pending["rawLines"] and not pending["rawLines"][-1].strip():
+            pending["rawLines"].pop()
+        if pending["rawLines"]:
+            pending["lineEnd"] = end_line
+            pending_segments.append(pending)
+        pending = None
 
     def finish(end_line: int) -> None:
         nonlocal current
@@ -269,6 +413,10 @@ def parse_openiti_entries(path: Path) -> list[dict[str, Any]]:
         heading_match = ENTRY_RE.match(raw_lines[0])
         assert heading_match is not None
         arabic, inline_structure = readable_arabic(number, raw_lines)
+        if inline_structure:
+            raise WorkflowError(
+                f"entry {number}: structural marker was not split from entry source"
+            )
         entries.append({
             "sourceOrdinal": ordinal,
             "sourceEntryNumber": number,
@@ -280,31 +428,76 @@ def parse_openiti_entries(path: Path) -> list[dict[str, Any]]:
             "rawSha256": bytes_sha256(raw.encode("utf-8")),
             "headingArabic": heading_match.group(2).strip(),
             "arabic": arabic,
-            "structuralEvents": [*current["structuralEvents"], *inline_structure],
+            "precedingSegments": current["precedingSegments"],
         })
         current = None
 
     for line_number, line in enumerate(lines, start=1):
+        if not metadata_complete:
+            if line == "#META#Header#End#":
+                metadata_complete = True
+            continue
         for volume, page in PAGE_RE.findall(line):
             current_page = (int(volume), int(page))
+        if skipping_editor and not line.startswith("###"):
+            continue
+        if skipping_editor:
+            skipping_editor = False
+        if EDITOR_RE.match(line):
+            finish(line_number - 1)
+            finish_pending(line_number - 1)
+            skipping_editor = True
+            continue
+        if OPENITI_CONTROL_RE.match(line):
+            finish(line_number - 1)
+            finish_pending(line_number - 1)
+            continue
         match = ENTRY_RE.match(line)
         if match:
             finish(line_number - 1)
+            finish_pending(line_number - 1)
             number = int(match.group(1))
+            ordinal = len(entries) + 1
+            material: list[dict[str, Any]] = []
+            for segment in pending_segments:
+                source_segment = preceding_segment(
+                    segment["rawLines"],
+                    segment["lineStart"],
+                    segment["startPage"],
+                    ordinal,
+                    len(material) + 1,
+                )
+                if source_segment is not None:
+                    material.append(source_segment)
             current = {
                 "number": number,
                 "lineStart": line_number,
                 "startPage": current_page,
                 "rawLines": [line],
-                "structuralEvents": pending_structure,
+                "precedingSegments": material,
             }
-            pending_structure = []
+            pending_segments = []
         elif line.startswith("###"):
             finish(line_number - 1)
-            pending_structure.append(line)
+            finish_pending(line_number - 1)
+            pending = {
+                "lineStart": line_number,
+                "startPage": current_page,
+                "rawLines": [line],
+            }
         elif current is not None:
             current["rawLines"].append(line)
+        elif pending is not None:
+            pending["rawLines"].append(line)
+        elif line.strip():
+            pending = {
+                "lineStart": line_number,
+                "startPage": current_page,
+                "rawLines": [line],
+            }
     finish(len(lines))
+    if not metadata_complete:
+        raise WorkflowError("source: OpenITI metadata terminator is missing")
     if not entries:
         raise WorkflowError("source: no OpenITI entry markers were found")
     return entries
@@ -542,6 +735,39 @@ def policy_snapshot(policy_path: Path) -> dict[str, Any]:
     }
 
 
+def pending_preceding_translation(
+    segment: dict[str, Any], policy_sha256: str
+) -> dict[str, Any]:
+    return {
+        "segmentId": segment["segmentId"],
+        "blindTranslation": {
+            "status": "pending",
+            "runId": None,
+            "model": None,
+            "reasoning": None,
+            "policySha256": policy_sha256,
+            "headingEnglish": None,
+            "english": None,
+        },
+        "independentCritique": {
+            "status": "pending",
+            "runId": None,
+            "model": None,
+            "findings": [],
+        },
+        "witnessResolution": {"status": "pending", "results": []},
+        "adjudication": {
+            "status": "pending",
+            "headingEnglish": None,
+            "english": None,
+            "decisions": [],
+        },
+        "names": {"status": "pending", "candidates": [], "mentions": []},
+        "unresolved": [],
+        "humanReview": {"status": "unreviewed"},
+    }
+
+
 def build_packet(
     issue: dict[str, Any],
     claims: list[dict[str, Any]],
@@ -619,6 +845,12 @@ def build_packet(
                 "sourceUnitId": source_entry["sourceUnitId"],
                 "canonicalEntryId": None,
                 "source": source_entry,
+                "precedingTranslations": [
+                    pending_preceding_translation(
+                        segment, policy["bindingSha256"]
+                    )
+                    for segment in source_entry["precedingSegments"]
+                ],
                 "blindTranslation": {
                     "status": "pending",
                     "runId": None,
@@ -641,7 +873,7 @@ def build_packet(
             }
         )
     return {
-        "schemaVersion": "1.0.0",
+        "schemaVersion": "1.1.0",
         "packetId": f"isabah-translation-issue-{number}",
         "workId": "ibn-hajar-al-isabah",
         "toolVersion": TOOL_VERSION,
@@ -649,6 +881,10 @@ def build_packet(
         "assignment": assignment,
         "authority": source,
         "policy": policy,
+        "scope": {
+            "precedingMaterialOwnership": "following_source_unit",
+            "excludedRanges": source_scope_exclusions(source_path),
+        },
         "entries": entries,
         "reviewPresentation": {"status": "pending", "path": None, "sha256": None},
         "machineReadiness": {
@@ -675,10 +911,363 @@ def private_data_errors(value: Any, location: str = "$") -> list[str]:
     return errors
 
 
+def validate_preceding_translation(
+    translation: dict[str, Any],
+    source: dict[str, Any],
+    current_policy_sha256: str,
+    prefix: str,
+) -> list[str]:
+    errors: list[str] = []
+    blind = translation.get("blindTranslation", {})
+    source_has_heading = bool(source.get("headingArabic"))
+    source_has_body = bool(source.get("arabic"))
+    if blind.get("status") != "complete":
+        errors.append(f"{prefix}: blind translation is incomplete")
+    if source_has_heading and not blind.get("headingEnglish"):
+        errors.append(f"{prefix}: blind structural heading is untranslated")
+    if source_has_body and not blind.get("english"):
+        errors.append(f"{prefix}: blind substantive prose is untranslated")
+    if not all(blind.get(field) for field in ("runId", "model", "reasoning")):
+        errors.append(f"{prefix}: blind translation provenance is incomplete")
+    if blind.get("policySha256") != current_policy_sha256:
+        errors.append(f"{prefix}: blind translation used a stale policy")
+
+    critique = translation.get("independentCritique", {})
+    if critique.get("status") != "complete" or not critique.get("runId"):
+        errors.append(f"{prefix}: independent critique is incomplete")
+    if critique.get("runId") == blind.get("runId"):
+        errors.append(f"{prefix}: critique must use a distinct run")
+    if not isinstance(critique.get("findings"), list):
+        errors.append(f"{prefix}: critique findings must be an array")
+
+    witness = translation.get("witnessResolution", {})
+    findings = critique.get("findings", [])
+    requires_witness = isinstance(findings, list) and any(
+        isinstance(finding, dict) and finding.get("requiresWitness") is True
+        for finding in findings
+    )
+    if witness.get("status") not in {"complete", "not_required"}:
+        errors.append(f"{prefix}: witness resolution is not final")
+    if requires_witness and witness.get("status") != "complete":
+        errors.append(f"{prefix}: material critique requires witness resolution")
+    for result in witness.get("results", []):
+        if not isinstance(result, dict) or result.get("status") not in {
+            "hit",
+            "no_match",
+        }:
+            errors.append(f"{prefix}: witness result must be hit or no_match")
+
+    adjudication = translation.get("adjudication", {})
+    if adjudication.get("status") != "complete":
+        errors.append(f"{prefix}: adjudication is incomplete")
+    if source_has_heading and not adjudication.get("headingEnglish"):
+        errors.append(f"{prefix}: adjudicated structural heading is untranslated")
+    if source_has_body and not adjudication.get("english"):
+        errors.append(f"{prefix}: adjudicated substantive prose is untranslated")
+    if not isinstance(adjudication.get("decisions"), list):
+        errors.append(f"{prefix}: adjudication decisions must be an array")
+
+    names = translation.get("names", {})
+    if names.get("status") != "complete":
+        errors.append(f"{prefix}: name review is incomplete")
+    if not isinstance(names.get("candidates"), list):
+        errors.append(f"{prefix}: name candidates must be an array")
+    if not isinstance(names.get("mentions"), list):
+        errors.append(f"{prefix}: name mentions must be an array")
+    if not isinstance(translation.get("unresolved"), list):
+        errors.append(f"{prefix}: unresolved findings must be an array")
+    if translation.get("humanReview", {}).get("status") != "unreviewed":
+        errors.append(f"{prefix}: machine-ready work must remain human-unreviewed")
+    return errors
+
+
+def validate_entry_shard_output(
+    output: dict[str, Any], current_policy_sha256: str, prefix: str
+) -> list[str]:
+    """Validate one completed biography output before merging a worker shard."""
+    errors: list[str] = []
+    expected = {
+        "sourceOrdinal",
+        "sourceUnitId",
+        "blindTranslation",
+        "independentCritique",
+        "witnessResolution",
+        "adjudication",
+        "names",
+        "unresolved",
+        "humanReview",
+    }
+    if set(output) != expected:
+        errors.append(f"{prefix}: shard output fields are incomplete or unexpected")
+
+    blind = output.get("blindTranslation", {})
+    if blind.get("status") != "complete" or not blind.get("english"):
+        errors.append(f"{prefix}: blind translation is incomplete")
+    if not all(blind.get(field) for field in ("runId", "model", "reasoning")):
+        errors.append(f"{prefix}: blind translation provenance is incomplete")
+    if blind.get("policySha256") != current_policy_sha256:
+        errors.append(f"{prefix}: blind translation used a stale policy")
+
+    critique = output.get("independentCritique", {})
+    if critique.get("status") != "complete" or not critique.get("runId"):
+        errors.append(f"{prefix}: independent critique is incomplete")
+    if critique.get("runId") == blind.get("runId"):
+        errors.append(f"{prefix}: critique must use a distinct run")
+    findings = critique.get("findings")
+    if not isinstance(findings, list):
+        errors.append(f"{prefix}: critique findings must be an array")
+        findings = []
+
+    witness = output.get("witnessResolution", {})
+    results = witness.get("results")
+    requires_witness = any(
+        isinstance(finding, dict) and finding.get("requiresWitness") is True
+        for finding in findings
+    )
+    if witness.get("status") not in {"complete", "not_required"}:
+        errors.append(f"{prefix}: witness resolution is not final")
+    if requires_witness and witness.get("status") != "complete":
+        errors.append(f"{prefix}: material critique requires witness resolution")
+    if not isinstance(results, list):
+        errors.append(f"{prefix}: witness results must be an array")
+    else:
+        for result in results:
+            if not isinstance(result, dict) or result.get("status") not in {
+                "hit",
+                "no_match",
+            }:
+                errors.append(f"{prefix}: witness result must be hit or no_match")
+
+    adjudication = output.get("adjudication", {})
+    if adjudication.get("status") != "complete" or not adjudication.get("english"):
+        errors.append(f"{prefix}: adjudication is incomplete")
+    if not isinstance(adjudication.get("decisions"), list):
+        errors.append(f"{prefix}: adjudication decisions must be an array")
+
+    names = output.get("names", {})
+    candidates = names.get("candidates")
+    mentions = names.get("mentions")
+    if (
+        names.get("status") != "complete"
+        or not isinstance(candidates, list)
+        or not candidates
+    ):
+        errors.append(f"{prefix}: durable name candidates are incomplete")
+        candidates = []
+    candidate_ids: list[str] = []
+    for candidate in candidates:
+        if not isinstance(candidate, dict):
+            errors.append(f"{prefix}: name candidate must be an object")
+            continue
+        required_candidate = {
+            "candidateId",
+            "observedArabic",
+            "proposedEnglish",
+            "aliases",
+            "confidenceEvidence",
+            "reviewState",
+        }
+        if not required_candidate.issubset(candidate):
+            errors.append(f"{prefix}: name candidate provenance is incomplete")
+        candidate_id = candidate.get("candidateId")
+        if not isinstance(candidate_id, str) or not candidate_id:
+            errors.append(f"{prefix}: name candidate ID is required")
+        else:
+            candidate_ids.append(candidate_id)
+        if not isinstance(candidate.get("aliases"), list) or not isinstance(
+            candidate.get("confidenceEvidence"), list
+        ):
+            errors.append(f"{prefix}: name aliases and evidence must be arrays")
+    if len(candidate_ids) != len(set(candidate_ids)):
+        errors.append(f"{prefix}: name candidate IDs must be unique")
+    if not isinstance(mentions, list):
+        errors.append(f"{prefix}: name mentions must be an array")
+    else:
+        mentioned_ids: set[str] = set()
+        for mention in mentions:
+            if not isinstance(mention, dict):
+                errors.append(f"{prefix}: name mention must be an object")
+                continue
+            candidate_id = mention.get("candidateId")
+            mentioned_ids.add(str(candidate_id))
+            if candidate_id not in candidate_ids:
+                errors.append(f"{prefix}: name mention references an unknown candidate")
+            if mention.get("sourceUnitId") != output.get("sourceUnitId"):
+                errors.append(f"{prefix}: name mention references the wrong source unit")
+            if not mention.get("location"):
+                errors.append(f"{prefix}: name mention location is required")
+        if set(candidate_ids) - mentioned_ids:
+            errors.append(f"{prefix}: every name candidate requires a mention")
+
+    if not isinstance(output.get("unresolved"), list):
+        errors.append(f"{prefix}: unresolved findings must be an array")
+    if output.get("humanReview", {}).get("status") != "unreviewed":
+        errors.append(f"{prefix}: machine work must remain human-unreviewed")
+    errors.extend(private_data_errors(output, prefix))
+    return errors
+
+
+def merge_entry_shard(packet_path: Path, shard_path: Path) -> int:
+    """Atomically merge one complete, non-overlapping worker shard."""
+    packet = load_json(packet_path)
+    shard = load_json(shard_path)
+    errors: list[str] = []
+    if packet.get("schemaVersion") != "1.1.0":
+        errors.append("packet: entry shards require packet schema 1.1.0")
+    if shard.get("schemaVersion") != "1.0.0":
+        errors.append("shard: schemaVersion must be 1.0.0")
+    if shard.get("packetId") != packet.get("packetId"):
+        errors.append("shard: packetId does not match the target packet")
+    assignment = packet.get("assignment", {})
+    if shard.get("issueNumber") != assignment.get("issueNumber"):
+        errors.append("shard: issueNumber does not match the target packet")
+    start = shard.get("startUnit")
+    end = shard.get("endUnit")
+    if not isinstance(start, int) or not isinstance(end, int) or end < start:
+        errors.append("shard: source-unit range is invalid")
+        start = 1
+        end = 0
+    if start < assignment.get("startUnit", 1) or end > assignment.get("endUnit", 0):
+        errors.append("shard: source-unit range is outside the assignment")
+    outputs = shard.get("entries")
+    if not isinstance(outputs, list):
+        errors.append("shard: entries must be an array")
+        outputs = []
+    expected_ordinals = list(range(start, end + 1))
+    actual_ordinals = [
+        output.get("sourceOrdinal") if isinstance(output, dict) else None
+        for output in outputs
+    ]
+    if actual_ordinals != expected_ordinals:
+        errors.append("shard: entries must exactly and uniquely cover the declared range")
+
+    packet_entries = {
+        entry.get("sourceOrdinal"): entry
+        for entry in packet.get("entries", [])
+        if isinstance(entry, dict)
+    }
+    pending_updates: list[tuple[dict[str, Any], dict[str, Any]]] = []
+    policy_sha256 = packet.get("policy", {}).get("bindingSha256", "")
+    for output in outputs:
+        if not isinstance(output, dict):
+            errors.append("shard: every entry output must be an object")
+            continue
+        ordinal = output.get("sourceOrdinal")
+        prefix = f"shard source unit {ordinal}"
+        target = packet_entries.get(ordinal)
+        if target is None:
+            errors.append(f"{prefix}: source unit is absent from the packet")
+            continue
+        if output.get("sourceUnitId") != target.get("sourceUnitId"):
+            errors.append(f"{prefix}: sourceUnitId does not match the packet")
+        errors.extend(validate_entry_shard_output(output, policy_sha256, prefix))
+        pending_updates.append((target, output))
+    if errors:
+        raise WorkflowError("\n".join(errors))
+
+    output_fields = {
+        "blindTranslation",
+        "independentCritique",
+        "witnessResolution",
+        "adjudication",
+        "names",
+        "unresolved",
+        "humanReview",
+    }
+    for target, output in pending_updates:
+        for field in output_fields:
+            target[field] = output[field]
+    packet["reviewPresentation"] = {"status": "pending", "path": None, "sha256": None}
+    packet["machineReadiness"]["status"] = "pending"
+    packet["machineReadiness"]["validatedAt"] = None
+    atomic_write(packet_path, json_bytes(packet))
+    return len(pending_updates)
+
+
+def merge_preceding_shard(packet_path: Path, shard_path: Path) -> int:
+    """Atomically merge every structural translation owned by one source unit."""
+    packet = load_json(packet_path)
+    shard = load_json(shard_path)
+    errors: list[str] = []
+    expected_envelope = {
+        "schemaVersion",
+        "packetId",
+        "issueNumber",
+        "sourceOrdinal",
+        "precedingTranslations",
+    }
+    if set(shard) != expected_envelope:
+        errors.append("structural shard: envelope fields are incomplete or unexpected")
+    if packet.get("schemaVersion") != "1.1.0" or shard.get("schemaVersion") != "1.1.0":
+        errors.append("structural shard: packet and shard must use schema 1.1.0")
+    if shard.get("packetId") != packet.get("packetId"):
+        errors.append("structural shard: packetId does not match the target packet")
+    assignment = packet.get("assignment", {})
+    if shard.get("issueNumber") != assignment.get("issueNumber"):
+        errors.append("structural shard: issueNumber does not match the target packet")
+    ordinal = shard.get("sourceOrdinal")
+    if not isinstance(ordinal, int) or not (
+        assignment.get("startUnit", 1) <= ordinal <= assignment.get("endUnit", 0)
+    ):
+        errors.append("structural shard: sourceOrdinal is outside the assignment")
+    target = next(
+        (
+            entry
+            for entry in packet.get("entries", [])
+            if isinstance(entry, dict) and entry.get("sourceOrdinal") == ordinal
+        ),
+        None,
+    )
+    if target is None:
+        errors.append("structural shard: source unit is absent from the packet")
+        sources: list[dict[str, Any]] = []
+    else:
+        sources = target.get("source", {}).get("precedingSegments", [])
+    translations = shard.get("precedingTranslations")
+    if not isinstance(translations, list):
+        errors.append("structural shard: precedingTranslations must be an array")
+        translations = []
+    source_ids = [source.get("segmentId") for source in sources]
+    translation_ids = [
+        translation.get("segmentId") if isinstance(translation, dict) else None
+        for translation in translations
+    ]
+    if (
+        not all(isinstance(item, str) for item in translation_ids)
+        or translation_ids != source_ids
+        or len(set(translation_ids)) != len(translation_ids)
+    ):
+        errors.append(
+            "structural shard: translations must exactly and uniquely cover source segments"
+        )
+    policy_sha256 = packet.get("policy", {}).get("bindingSha256", "")
+    for source, translation in zip(sources, translations):
+        if not isinstance(translation, dict):
+            errors.append("structural shard: every translation must be an object")
+            continue
+        prefix = f"structural shard {source.get('segmentId', '?')}"
+        errors.extend(
+            validate_preceding_translation(
+                translation, source, policy_sha256, prefix
+            )
+        )
+        errors.extend(private_data_errors(translation, prefix))
+    if errors:
+        raise WorkflowError("\n".join(errors))
+
+    assert target is not None
+    target["precedingTranslations"] = translations
+    packet["reviewPresentation"] = {"status": "pending", "path": None, "sha256": None}
+    packet["machineReadiness"]["status"] = "pending"
+    packet["machineReadiness"]["validatedAt"] = None
+    atomic_write(packet_path, json_bytes(packet))
+    return len(translations)
+
+
 def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list[str]:
     errors: list[str] = []
-    if packet.get("schemaVersion") != "1.0.0":
-        errors.append("packet: schemaVersion must be 1.0.0")
+    if packet.get("schemaVersion") != "1.1.0":
+        errors.append("packet: schemaVersion must be 1.1.0")
     if packet.get("workId") != "ibn-hajar-al-isabah":
         errors.append("packet: unexpected workId")
     assignment = packet.get("assignment")
@@ -722,6 +1311,15 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
         errors.append("packet: source manifest is stale")
     if authority.get("sha256") != manifest["download"]["sha256"]:
         errors.append("packet: source authority hash is stale")
+    scope = packet.get("scope", {})
+    if scope.get("precedingMaterialOwnership") != "following_source_unit":
+        errors.append("packet: preceding-material ownership rule is missing")
+    exclusions = scope.get("excludedRanges")
+    if not isinstance(exclusions, list) or not any(
+        isinstance(item, dict) and item.get("kind") == "openiti_metadata"
+        for item in exclusions or []
+    ):
+        errors.append("packet: OpenITI metadata exclusion must be explicit")
 
     for index, entry in enumerate(entries):
         if not isinstance(entry, dict):
@@ -745,6 +1343,69 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
             errors.append(
                 f"{prefix}: Arabic heading, readable source, and locations are required"
             )
+        preceding = source.get("precedingSegments")
+        translations = entry.get("precedingTranslations")
+        if not isinstance(preceding, list) or not isinstance(translations, list):
+            errors.append(f"{prefix}: preceding source and translation arrays are required")
+            preceding = []
+            translations = []
+        source_ids = [
+            segment.get("segmentId")
+            for segment in preceding
+            if isinstance(segment, dict)
+        ]
+        translation_ids = [
+            item.get("segmentId")
+            for item in translations
+            if isinstance(item, dict)
+        ]
+        if len(source_ids) != len(preceding) or len(translation_ids) != len(translations):
+            errors.append(f"{prefix}: preceding segments must be objects with IDs")
+        elif source_ids != translation_ids or len(set(source_ids)) != len(source_ids):
+            errors.append(
+                f"{prefix}: preceding translations must exactly cover source segments"
+            )
+        previous_end = 0
+        for segment_index, segment in enumerate(preceding):
+            if not isinstance(segment, dict):
+                continue
+            segment_prefix = f"{prefix}, preceding segment {segment_index + 1}"
+            segment_raw = segment.get("rawOpeniti")
+            if not isinstance(segment_raw, str) or not segment_raw:
+                errors.append(f"{segment_prefix}: raw OpenITI source is required")
+            elif bytes_sha256(segment_raw.encode("utf-8")) != segment.get("rawSha256"):
+                errors.append(f"{segment_prefix}: source hash does not match raw OpenITI")
+            if not segment.get("headingArabic") and not segment.get("arabic"):
+                errors.append(f"{segment_prefix}: substantive Arabic is required")
+            readable = f"{segment.get('headingArabic') or ''} {segment.get('arabic') or ''}"
+            if "#META#" in readable or "OpenITI" in readable or "PARATEXT" in readable:
+                errors.append(f"{segment_prefix}: container metadata leaked into Arabic")
+            line_start = segment.get("lineStart")
+            line_end = segment.get("lineEnd")
+            if (
+                not isinstance(line_start, int)
+                or not isinstance(line_end, int)
+                or line_start <= previous_end
+                or line_end < line_start
+                or line_end >= source.get("lineStart", 0)
+            ):
+                errors.append(f"{segment_prefix}: source lines are invalid or out of order")
+            else:
+                previous_end = line_end
+        if machine_ready:
+            for segment_source, translation in zip(preceding, translations):
+                if isinstance(segment_source, dict) and isinstance(translation, dict):
+                    segment_prefix = (
+                        f"{prefix}, preceding segment {segment_source.get('segmentId', '?')}"
+                    )
+                    errors.extend(
+                        validate_preceding_translation(
+                            translation,
+                            segment_source,
+                            current_policy["bindingSha256"],
+                            segment_prefix,
+                        )
+                    )
         if not machine_ready:
             continue
 
@@ -821,6 +1482,44 @@ def render_review(packet: dict[str, Any]) -> str:
         "",
     ]
     for entry in packet["entries"]:
+        for segment, translation in zip(
+            entry["source"]["precedingSegments"],
+            entry["precedingTranslations"],
+        ):
+            adjudication = translation["adjudication"]
+            heading_english = adjudication.get("headingEnglish")
+            heading_arabic = segment.get("headingArabic")
+            if heading_english:
+                level = min((segment.get("headingLevel") or 1) + 1, 6)
+                lines.extend([f"{'#' * level} {heading_english}", ""])
+            else:
+                label = (
+                    "Front matter"
+                    if segment["kind"] == "front_matter"
+                    else "Interstitial prose"
+                )
+                lines.extend(
+                    [
+                        f"## {label} before source unit {entry['sourceOrdinal']}",
+                        "",
+                    ]
+                )
+            if adjudication.get("english"):
+                lines.extend([adjudication["english"].strip(), ""])
+            lines.extend(["<div dir=\"rtl\" lang=\"ar\">", ""])
+            if heading_arabic:
+                lines.extend([f"**{heading_arabic}**", ""])
+            if segment.get("arabic"):
+                lines.extend([segment["arabic"].strip(), ""])
+            lines.extend(
+                [
+                    "</div>",
+                    "",
+                    f"- Structural source SHA-256: `{segment['rawSha256']}`",
+                    "- Structural human review: `unreviewed`",
+                    "",
+                ]
+            )
         lines.extend(
             [
                 f"## Source unit {entry['sourceOrdinal']} · "
@@ -1101,6 +1800,18 @@ def command_validate(args: argparse.Namespace) -> int:
     return 0
 
 
+def command_merge_shard(args: argparse.Namespace) -> int:
+    merged = merge_entry_shard(args.packet, args.shard)
+    print(f"Merged {merged} source-unit outputs into {args.packet}")
+    return 0
+
+
+def command_merge_structure_shard(args: argparse.Namespace) -> int:
+    merged = merge_preceding_shard(args.packet, args.shard)
+    print(f"Merged {merged} structural outputs into {args.packet}")
+    return 0
+
+
 def command_render(args: argparse.Namespace) -> int:
     output = finalize_packet(args.packet, args.output)
     print(f"Rendered and finalized {output}")
@@ -1172,6 +1883,21 @@ def parser() -> argparse.ArgumentParser:
     validate.add_argument("--packet", type=Path, required=True)
     validate.add_argument("--machine-ready", action="store_true")
     validate.set_defaults(func=command_validate)
+
+    merge_shard = subparsers.add_parser(
+        "merge-shard", help="validate and atomically merge an entry-worker shard"
+    )
+    merge_shard.add_argument("--packet", type=Path, required=True)
+    merge_shard.add_argument("--shard", type=Path, required=True)
+    merge_shard.set_defaults(func=command_merge_shard)
+
+    merge_structure = subparsers.add_parser(
+        "merge-structure-shard",
+        help="validate and atomically merge one source unit's structural outputs",
+    )
+    merge_structure.add_argument("--packet", type=Path, required=True)
+    merge_structure.add_argument("--shard", type=Path, required=True)
+    merge_structure.set_defaults(func=command_merge_structure_shard)
 
     render = subparsers.add_parser("render", help="render and finalize machine-ready work")
     render.add_argument("--packet", type=Path, required=True)
