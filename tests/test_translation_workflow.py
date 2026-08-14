@@ -374,6 +374,53 @@ class TranslationWorkflowTests(unittest.TestCase):
                 MODULE.merge_preceding_shard(packet_path, shard_path)
             self.assertEqual(packet_path.read_bytes(), original)
 
+    def test_multi_unit_structural_shard_requires_every_owner_in_range(self):
+        completed = self.packet()
+        complete_autonomous_stages(completed)
+        source_units = [
+            {
+                "sourceOrdinal": entry["sourceOrdinal"],
+                "precedingTranslations": entry["precedingTranslations"],
+            }
+            for entry in completed["entries"]
+            if entry["source"]["precedingSegments"]
+        ]
+        shard = {
+            "schemaVersion": "1.1.0",
+            "packetId": completed["packetId"],
+            "issueNumber": completed["assignment"]["issueNumber"],
+            "startUnit": 1,
+            "endUnit": 2,
+            "sourceUnits": source_units,
+        }
+        expected_segments = sum(
+            len(item["precedingTranslations"]) for item in source_units
+        )
+        with tempfile.TemporaryDirectory() as temporary:
+            packet_path = Path(temporary) / "packet.json"
+            shard_path = Path(temporary) / "structural-shard.json"
+            prepared = self.packet()
+            original = MODULE.json_bytes(prepared)
+            packet_path.write_bytes(original)
+            shard_path.write_bytes(MODULE.json_bytes(shard))
+            self.assertEqual(
+                MODULE.merge_preceding_shard(packet_path, shard_path),
+                expected_segments,
+            )
+            merged = MODULE.load_json(packet_path)
+            self.assertEqual(
+                merged["entries"][1]["precedingTranslations"][0]["adjudication"]
+                ["english"],
+                "Adjudicated source prose.",
+            )
+
+            packet_path.write_bytes(original)
+            shard["sourceUnits"].pop()
+            shard_path.write_bytes(MODULE.json_bytes(shard))
+            with self.assertRaisesRegex(MODULE.WorkflowError, "exactly cover"):
+                MODULE.merge_preceding_shard(packet_path, shard_path)
+            self.assertEqual(packet_path.read_bytes(), original)
+
     def test_packet_rejects_stale_policy(self):
         packet = self.packet()
         packet["policy"]["bindingSha256"] = "0" * 64

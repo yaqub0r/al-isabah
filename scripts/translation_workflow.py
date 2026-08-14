@@ -1185,19 +1185,25 @@ def merge_entry_shard(packet_path: Path, shard_path: Path) -> int:
 
 
 def merge_preceding_shard(packet_path: Path, shard_path: Path) -> int:
-    """Atomically merge every structural translation owned by one source unit."""
+    """Atomically merge structural translations for one or more source units."""
     packet = load_json(packet_path)
     shard = load_json(shard_path)
     errors: list[str] = []
-    expected_envelope = {
+    single_envelope = {
         "schemaVersion",
         "packetId",
         "issueNumber",
         "sourceOrdinal",
         "precedingTranslations",
     }
-    if set(shard) != expected_envelope:
-        errors.append("structural shard: envelope fields are incomplete or unexpected")
+    multi_envelope = {
+        "schemaVersion",
+        "packetId",
+        "issueNumber",
+        "startUnit",
+        "endUnit",
+        "sourceUnits",
+    }
     if packet.get("schemaVersion") != "1.1.0" or shard.get("schemaVersion") != "1.1.0":
         errors.append("structural shard: packet and shard must use schema 1.1.0")
     if shard.get("packetId") != packet.get("packetId"):
@@ -1205,63 +1211,114 @@ def merge_preceding_shard(packet_path: Path, shard_path: Path) -> int:
     assignment = packet.get("assignment", {})
     if shard.get("issueNumber") != assignment.get("issueNumber"):
         errors.append("structural shard: issueNumber does not match the target packet")
-    ordinal = shard.get("sourceOrdinal")
-    if not isinstance(ordinal, int) or not (
-        assignment.get("startUnit", 1) <= ordinal <= assignment.get("endUnit", 0)
-    ):
-        errors.append("structural shard: sourceOrdinal is outside the assignment")
-    target = next(
-        (
-            entry
-            for entry in packet.get("entries", [])
-            if isinstance(entry, dict) and entry.get("sourceOrdinal") == ordinal
-        ),
-        None,
-    )
-    if target is None:
-        errors.append("structural shard: source unit is absent from the packet")
-        sources: list[dict[str, Any]] = []
-    else:
-        sources = target.get("source", {}).get("precedingSegments", [])
-    translations = shard.get("precedingTranslations")
-    if not isinstance(translations, list):
-        errors.append("structural shard: precedingTranslations must be an array")
-        translations = []
-    source_ids = [source.get("segmentId") for source in sources]
-    translation_ids = [
-        translation.get("segmentId") if isinstance(translation, dict) else None
-        for translation in translations
-    ]
-    if (
-        not all(isinstance(item, str) for item in translation_ids)
-        or translation_ids != source_ids
-        or len(set(translation_ids)) != len(translation_ids)
-    ):
-        errors.append(
-            "structural shard: translations must exactly and uniquely cover source segments"
-        )
-    policy_sha256 = packet.get("policy", {}).get("bindingSha256", "")
-    for source, translation in zip(sources, translations):
-        if not isinstance(translation, dict):
-            errors.append("structural shard: every translation must be an object")
-            continue
-        prefix = f"structural shard {source.get('segmentId', '?')}"
-        errors.extend(
-            validate_preceding_translation(
-                translation, source, policy_sha256, prefix
+
+    packet_entries = {
+        entry.get("sourceOrdinal"): entry
+        for entry in packet.get("entries", [])
+        if isinstance(entry, dict)
+    }
+    work_items: list[dict[str, Any]] = []
+    if set(shard) == single_envelope:
+        work_items = [
+            {
+                "sourceOrdinal": shard.get("sourceOrdinal"),
+                "precedingTranslations": shard.get("precedingTranslations"),
+            }
+        ]
+    elif set(shard) == multi_envelope:
+        start = shard.get("startUnit")
+        end = shard.get("endUnit")
+        if not isinstance(start, int) or not isinstance(end, int) or end < start:
+            errors.append("structural shard: source-unit range is invalid")
+            start = 1
+            end = 0
+        if (
+            start < assignment.get("startUnit", 1)
+            or end > assignment.get("endUnit", 0)
+        ):
+            errors.append("structural shard: source-unit range is outside the assignment")
+        candidate_items = shard.get("sourceUnits")
+        if not isinstance(candidate_items, list):
+            errors.append("structural shard: sourceUnits must be an array")
+            candidate_items = []
+        work_items = [item for item in candidate_items if isinstance(item, dict)]
+        if len(work_items) != len(candidate_items) or any(
+            set(item) != {"sourceOrdinal", "precedingTranslations"}
+            for item in work_items
+        ):
+            errors.append("structural shard: every sourceUnits item has an invalid shape")
+        expected_ordinals = [
+            ordinal
+            for ordinal in range(start, end + 1)
+            if packet_entries.get(ordinal, {})
+            .get("source", {})
+            .get("precedingSegments")
+        ]
+        actual_ordinals = [item.get("sourceOrdinal") for item in work_items]
+        if actual_ordinals != expected_ordinals:
+            errors.append(
+                "structural shard: sourceUnits must exactly cover every structural "
+                "owner in the declared range"
             )
-        )
-        errors.extend(private_data_errors(translation, prefix))
+    else:
+        errors.append("structural shard: envelope fields are incomplete or unexpected")
+
+    policy_sha256 = packet.get("policy", {}).get("bindingSha256", "")
+    pending_updates: list[tuple[dict[str, Any], list[dict[str, Any]]]] = []
+    merged_segments = 0
+    for item in work_items:
+        ordinal = item.get("sourceOrdinal")
+        prefix = f"structural shard source unit {ordinal}"
+        if not isinstance(ordinal, int) or not (
+            assignment.get("startUnit", 1) <= ordinal <= assignment.get("endUnit", 0)
+        ):
+            errors.append(f"{prefix}: sourceOrdinal is outside the assignment")
+            continue
+        target = packet_entries.get(ordinal)
+        if target is None:
+            errors.append(f"{prefix}: source unit is absent from the packet")
+            continue
+        sources = target.get("source", {}).get("precedingSegments", [])
+        translations = item.get("precedingTranslations")
+        if not isinstance(translations, list):
+            errors.append(f"{prefix}: precedingTranslations must be an array")
+            translations = []
+        source_ids = [source.get("segmentId") for source in sources]
+        translation_ids = [
+            translation.get("segmentId") if isinstance(translation, dict) else None
+            for translation in translations
+        ]
+        if (
+            not all(isinstance(segment_id, str) for segment_id in translation_ids)
+            or translation_ids != source_ids
+            or len(set(translation_ids)) != len(translation_ids)
+        ):
+            errors.append(
+                f"{prefix}: translations must exactly and uniquely cover source segments"
+            )
+        for source, translation in zip(sources, translations):
+            if not isinstance(translation, dict):
+                errors.append(f"{prefix}: every translation must be an object")
+                continue
+            segment_prefix = f"structural shard {source.get('segmentId', '?')}"
+            errors.extend(
+                validate_preceding_translation(
+                    translation, source, policy_sha256, segment_prefix
+                )
+            )
+            errors.extend(private_data_errors(translation, segment_prefix))
+        pending_updates.append((target, translations))
+        merged_segments += len(translations)
     if errors:
         raise WorkflowError("\n".join(errors))
 
-    assert target is not None
-    target["precedingTranslations"] = translations
+    for target, translations in pending_updates:
+        target["precedingTranslations"] = translations
     packet["reviewPresentation"] = {"status": "pending", "path": None, "sha256": None}
     packet["machineReadiness"]["status"] = "pending"
     packet["machineReadiness"]["validatedAt"] = None
     atomic_write(packet_path, json_bytes(packet))
-    return len(translations)
+    return merged_segments
 
 
 def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list[str]:

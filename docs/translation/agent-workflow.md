@@ -151,7 +151,7 @@ python scripts/translation_workflow.py merge-shard \
 ```
 
 Structural and front-matter text is owned by the following source unit. A
-schema `1.1.0` structural shard contains one source ordinal and translations
+schema `1.1.0` structural shard may contain one source ordinal and translations
 whose segment IDs exactly match that unit's `source.precedingSegments`:
 
 ```sh
@@ -159,6 +159,13 @@ python scripts/translation_workflow.py merge-structure-shard \
   --packet .runtime/translation/packets/issue-0025.json \
   --shard .runtime/translation/shards/issue-0025-structure-before-unit-000001.json
 ```
+
+A worker handling a range may instead provide `startUnit`, `endUnit`, and a
+`sourceUnits` array. Each array item contains `sourceOrdinal` and
+`precedingTranslations`. The array must be ordered and must exactly include
+every source unit in the declared range that owns structural material; units
+without structural material are omitted. The same command applies either
+shape atomically.
 
 Both commands reject wrong or missing ordinals, source-ID drift, stale policy
 hashes, non-final witnesses, reused critique runs, broken name references,
