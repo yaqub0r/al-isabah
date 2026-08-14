@@ -18,6 +18,10 @@ For every Arabic-to-English translation task, read these documents in order:
 3. [`entry-title-structure`](entry-title-structure.md) — the bilingual title and
    body boundary that translated entry records must preserve.
 
+After reading the policies, use the
+[agent translation workflow](../translation/agent-workflow.md) for the
+repository-local commands and distributed assignment protocol.
+
 The translation workflow is not complete when English is fluent. It is ready
 for human review only after the applicable autonomous stages are exhausted and
 the evidence package, structured English, durable JSON names, and readable
@@ -32,7 +36,8 @@ bilingual presentation agree by hash.
 - [`canonical-publication-repository.md`](../architecture/canonical-publication-repository.md)
   defines the repository boundary and release responsibilities.
 - [`compliance/policy-binding.v1.json`](../../compliance/policy-binding.v1.json)
-  integrity-pins the local contracts and profile used by validation.
+  integrity-pins the local contracts, translation profile, and pinned-source
+  profile used by validation.
 
 ## Validation
 

@@ -20,6 +20,11 @@
       "id": "entry-title-structure",
       "path": "docs/contracts/entry-title-structure.md",
       "sha256": "4540032c15f622d2811191b13e3fdcbfc031ea0b0d5a1762197d040ad5f6c1a9"
+    },
+    {
+      "id": "translation-source-profile",
+      "path": "profiles/translation-source.v1.json",
+      "sha256": "c3db1e037a9f98ed7c6ada57d076084e5451c5651ed972ea68867ed5ad580ead"
     }
   ],
   "applied_by_issue": "https://github.com/yaqub0r/al-isabah/issues/22",

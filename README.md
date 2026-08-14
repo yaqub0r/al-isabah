@@ -38,6 +38,24 @@ validation, and readable-presentation step. The local compliance validator
 integrity-checks these policy files so a fresh clone cannot silently depend on
 translation rules stored in another repository.
 
+The [agent translation runbook](docs/translation/agent-workflow.md) turns that
+contract into one distributable path that requires no Sabiqah checkout or model
+API key:
+
+```sh
+python scripts/translation_workflow.py doctor
+python scripts/translation_workflow.py hydrate
+python scripts/translation_workflow.py status
+python scripts/translation_workflow.py locate --entry 11482
+python scripts/translation_workflow.py claim --start-unit <first-unit> --end-unit <last-unit>
+python scripts/translation_workflow.py prepare --issue <issue-number>
+```
+
+The CLI uses GitHub issues to prevent overlapping claims, creates
+source-and-policy-bound packets, validates every autonomous stage, and emits a
+human-readable bilingual review artifact while preserving `unreviewed` as the
+human state.
+
 ## Entry structure
 
 The [entry-title structure

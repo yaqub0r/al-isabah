@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "workId": "ibn-hajar-al-isabah",
+  "sourceId": "openiti-jk000533-5835c183",
+  "status": "test-fixture",
+  "sourceRevision": {
+    "repository": "https://github.com/OpenITI/0875AH",
+    "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+    "path": "tests/fixtures/openiti-mini.mARkdown"
+  },
+  "download": {
+    "url": "https://raw.githubusercontent.com/OpenITI/0875AH/5835c183b8bbf4ea454d5c1be2b168b669403771/data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.IsabaFiTamyiz/0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1.mARkdown",
+    "filename": "openiti-mini.mARkdown",
+    "bytes": 672,
+    "sha256": "02ff3416b2f83790db9cb98248a0f8d2b74c2b5672ba1968bb4e5a9e358370ac"
+  },
+  "license": {
+    "spdx": "CC-BY-NC-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Synthetic OpenITI-format test fixture"
+  },
+  "format": {
+    "entryMarker": "^###\\s+\\$+\\s+(?<entryNumber>[0-9]+)\\s+",
+    "pageMarker": "PageV(?<volume>[0-9]{2})P(?<page>[0-9]{3})",
+    "volumes": 1
+  },
+  "inventory": {
+    "sourceUnits": 4,
+    "uniquePrintedEntryNumbers": 3,
+    "duplicatedPrintedEntryNumbers": [11428]
+  },
+  "complianceRecord": "test-fixture"
+}
