@@ -15,14 +15,16 @@
     "policy",
     "scope",
     "entries",
+    "formulaInventory",
+    "postRunRepairAudit",
     "reviewPresentation",
     "machineReadiness"
   ],
   "properties": {
-    "schemaVersion": { "const": "1.1.0" },
+    "schemaVersion": { "const": "1.2.0" },
     "packetId": { "pattern": "^isabah-translation-issue-[0-9]+$" },
     "workId": { "const": "ibn-hajar-al-isabah" },
-    "toolVersion": { "type": "string", "minLength": 1 },
+    "toolVersion": { "const": "1.2.0" },
     "runId": { "pattern": "^translation-run-[0-9a-f]{16}$" },
     "assignment": { "$ref": "#/$defs/assignment" },
     "authority": { "$ref": "#/$defs/authority" },
@@ -33,6 +35,8 @@
       "minItems": 1,
       "items": { "$ref": "#/$defs/entry" }
     },
+    "formulaInventory": { "$ref": "#/$defs/formulaInventory" },
+    "postRunRepairAudit": { "$ref": "#/$defs/postRunRepairAudit" },
     "reviewPresentation": { "$ref": "#/$defs/presentation" },
     "machineReadiness": { "$ref": "#/$defs/readiness" }
   },
@@ -191,7 +195,10 @@
         "witnessResolution": { "$ref": "#/$defs/witness" },
         "adjudication": { "$ref": "#/$defs/adjudication" },
         "names": { "$ref": "#/$defs/names" },
-        "unresolved": { "type": "array" },
+        "unresolved": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/unresolvedItem" }
+        },
         "humanReview": {
           "type": "object",
           "additionalProperties": false,
@@ -313,7 +320,10 @@
         "witnessResolution": { "$ref": "#/$defs/witness" },
         "adjudication": { "$ref": "#/$defs/precedingAdjudication" },
         "names": { "$ref": "#/$defs/names" },
-        "unresolved": { "type": "array" },
+        "unresolved": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/unresolvedItem" }
+        },
         "humanReview": {
           "type": "object",
           "additionalProperties": false,
@@ -374,7 +384,49 @@
       "required": ["status", "results"],
       "properties": {
         "status": { "enum": ["pending", "not_required", "complete"] },
-        "results": { "type": "array" }
+        "results": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/witnessResult" }
+        }
+      }
+    },
+    "witnessResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "query",
+        "witnessRole",
+        "witnessIdentity",
+        "passage",
+        "passageSha256",
+        "location",
+        "evidenceKind",
+        "evidenceSha256",
+        "decision",
+        "retrievedAt"
+      ],
+      "properties": {
+        "status": { "enum": ["hit", "no_match"] },
+        "query": { "type": "string", "minLength": 1 },
+        "witnessRole": {
+          "enum": [
+            "alternative_edition",
+            "translation_witness",
+            "collateral_work",
+            "lexical_reference",
+            "same_authority",
+            "discovery_check"
+          ]
+        },
+        "witnessIdentity": { "type": "string", "minLength": 1 },
+        "passage": { "type": "string", "minLength": 1 },
+        "passageSha256": { "$ref": "#/$defs/sha256" },
+        "location": { "type": "string", "minLength": 1 },
+        "evidenceKind": { "enum": ["passage", "artifact", "search_log"] },
+        "evidenceSha256": { "$ref": "#/$defs/sha256" },
+        "decision": { "type": "string", "minLength": 1 },
+        "retrievedAt": { "type": "string", "minLength": 1 }
       }
     },
     "adjudication": {
@@ -404,8 +456,228 @@
       "required": ["status", "candidates", "mentions"],
       "properties": {
         "status": { "enum": ["pending", "complete"] },
-        "candidates": { "type": "array" },
-        "mentions": { "type": "array" }
+        "candidates": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/nameCandidate" }
+        },
+        "mentions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/nameMention" }
+        }
+      }
+    },
+    "nameCandidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidateId",
+        "observedArabic",
+        "proposedEnglish",
+        "aliases",
+        "confidenceEvidence",
+        "reviewState"
+      ],
+      "properties": {
+        "candidateId": { "type": "string", "minLength": 1 },
+        "observedArabic": { "type": "string", "minLength": 1 },
+        "proposedEnglish": { "type": "string", "minLength": 1 },
+        "observedVariants": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "originCandidateId": { "type": "string", "minLength": 1 },
+        "entityType": { "enum": ["person", "collective"] },
+        "repair": { "type": "object" },
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "confidenceEvidence": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "reviewState": { "enum": ["unreviewed", "needs_attention"] }
+      }
+    },
+    "nameMention": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidateId",
+        "recordId",
+        "location",
+        "mentionId",
+        "originCandidateId",
+        "sourceSpans"
+      ],
+      "properties": {
+        "candidateId": { "type": "string", "minLength": 1 },
+        "recordId": { "type": "string", "minLength": 1 },
+        "location": { "type": "string", "minLength": 1 },
+        "mentionId": { "type": "string", "minLength": 1 },
+        "originCandidateId": { "type": "string", "minLength": 1 },
+        "sourceSpans": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/nameSourceSpan" }
+        }
+      }
+    },
+    "nameSourceSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceField", "start", "end", "sha256"],
+      "properties": {
+        "sourceField": {
+          "enum": ["headingArabic", "arabic", "rawOpeniti"]
+        },
+        "start": { "type": "integer", "minimum": 0 },
+        "end": { "type": "integer", "minimum": 1 },
+        "sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "unresolvedItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "description", "severity", "location", "disposition"],
+      "properties": {
+        "kind": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "severity": {
+          "enum": ["minor", "material", "blocking", "source_reported"]
+        },
+        "location": { "type": "string", "minLength": 1 },
+        "disposition": { "type": "string", "minLength": 1 }
+      }
+    },
+    "formulaInventory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "registryVersion", "occurrences"],
+      "properties": {
+        "status": { "enum": ["pending", "complete"] },
+        "registryVersion": { "const": "1.2.0" },
+        "occurrences": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/formulaOccurrence" }
+        }
+      }
+    },
+    "formulaOccurrence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "formulaId",
+        "recordId",
+        "sourceField",
+        "sourceStart",
+        "sourceEnd",
+        "observedArabic",
+        "semanticClass",
+        "referentScope",
+        "grammaticalAgreement",
+        "expandedArabic",
+        "targetRealization",
+        "accessibleEnglish",
+        "blindStart",
+        "blindEnd",
+        "adjudicatedStart",
+        "adjudicatedEnd"
+      ],
+      "properties": {
+        "formulaId": { "type": "string", "minLength": 1 },
+        "recordId": { "type": "string", "minLength": 1 },
+        "sourceField": { "enum": ["headingArabic", "arabic"] },
+        "sourceStart": { "type": "integer", "minimum": 0 },
+        "sourceEnd": { "type": "integer", "minimum": 1 },
+        "observedArabic": { "type": "string", "minLength": 1 },
+        "semanticClass": { "type": "string", "minLength": 1 },
+        "referentScope": { "type": "string", "minLength": 1 },
+        "grammaticalAgreement": { "type": "string", "minLength": 1 },
+        "expandedArabic": { "type": "string", "minLength": 1 },
+        "targetRealization": { "type": "string", "minLength": 1 },
+        "accessibleEnglish": { "type": "string", "minLength": 1 },
+        "blindStart": { "type": "integer", "minimum": 0 },
+        "blindEnd": { "type": "integer", "minimum": 1 },
+        "adjudicatedStart": { "type": "integer", "minimum": 0 },
+        "adjudicatedEnd": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "postRunRepairAudit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "basePacketSha256",
+        "artifactSha256",
+        "runId",
+        "operations"
+      ],
+      "properties": {
+        "status": { "enum": ["not_required", "complete"] },
+        "basePacketSha256": {
+          "anyOf": [
+            { "$ref": "#/$defs/sha256" },
+            { "type": "null" }
+          ]
+        },
+        "artifactSha256": {
+          "anyOf": [
+            { "$ref": "#/$defs/sha256" },
+            { "type": "null" }
+          ]
+        },
+        "runId": {
+          "anyOf": [
+            { "type": "string", "pattern": "^translation-repair-run-[0-9a-f]{16}$" },
+            { "type": "null" }
+          ]
+        },
+        "operations": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/postRunRepairOperation" }
+        }
+      }
+    },
+    "postRunRepairOperation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repairId",
+        "sourceUnitId",
+        "segmentId",
+        "recordKind",
+        "targetStage",
+        "fieldPath",
+        "oldTextSha256",
+        "newTextSha256",
+        "reasons"
+      ],
+      "properties": {
+        "repairId": { "type": "string", "minLength": 1 },
+        "sourceUnitId": { "type": "string", "minLength": 1 },
+        "segmentId": { "$ref": "#/$defs/nullableString" },
+        "recordKind": { "enum": ["entry", "structural"] },
+        "targetStage": { "enum": ["blind_translation", "adjudication"] },
+        "fieldPath": { "type": "string", "pattern": "^\\$\\.entries\\[" },
+        "oldTextSha256": { "$ref": "#/$defs/sha256" },
+        "newTextSha256": { "$ref": "#/$defs/sha256" },
+        "reasons": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/postRunRepairReason" }
+        }
+      }
+    },
+    "postRunRepairReason": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["code", "explanation"],
+      "properties": {
+        "code": { "type": "string", "minLength": 1 },
+        "explanation": { "type": "string", "minLength": 1 }
       }
     },
     "presentation": {

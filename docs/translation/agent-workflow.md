@@ -125,7 +125,10 @@ For every entry:
 3. **Witness resolution** — set `not_required` only when no critique finding
    requires a witness. Otherwise record the smallest useful classified
    witness checks. Every result ends as `hit` or `no_match`; `unavailable`
-   remains a blocker rather than being converted to `no_match`.
+   remains a blocker rather than being converted to `no_match`. Record the
+   query, classified role, witness identity, exact passage, location, decision,
+   retrieval date, evidence kind, and passage/evidence hashes. A material or
+   blocking unresolved item also requires completed witness evidence.
 4. **Adjudication** — write the complete final candidate and record material
    decisions. Fluent wording must not hide an unresolved reading.
 5. **Names** — mark names complete and store durable JSON candidates and
@@ -134,10 +137,21 @@ For every entry:
 6. **Unresolved inventory** — retain an array even when it is empty.
 7. **Human state** — leave `humanReview.status` as `unreviewed`.
 
-A minimal name candidate contains a packet-scoped ID, observed Arabic form,
-proposed English form, aliases, confidence evidence, and review state. A
-mention points to the source unit and exact entry location. These fields stay
-JSON even when an application later projects them into a database.
+Do not silently rewrite a completed blind or adjudicated run during QA. If a
+deterministic repair is necessary, retain the original run provenance and add
+the packet-level `postRunRepairAudit`: it binds the base packet and repair
+artifact hashes, a distinct repair-run ID, every affected JSON field, the
+old/new text-hash chain, and the reason for the intervention. Machine readiness
+fails if the final field values drift from that audit.
+
+A minimal name candidate contains a packet-scoped ID, one person's observed
+Arabic form, proposed English form, aliases, confidence evidence, and review
+state. A genuine named group may instead be explicitly typed `collective`; do
+not use that escape hatch for an unsplit list of people. A mention points to the
+owning biography or structural segment through
+`recordId` and includes hashed exact spans in `headingArabic` or `arabic`;
+`rawOpeniti` may be supplementary, never the only readable binding. These
+fields stay JSON even when an application later projects them into a database.
 
 Parallel biography workers use a schema `1.0.0` shard envelope containing the
 packet ID, issue number, exact starting and ending source ordinals, and only

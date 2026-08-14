@@ -18,6 +18,7 @@ import subprocess
 import sys
 import tempfile
 import urllib.request
+from urllib.parse import urlparse
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
@@ -26,10 +27,12 @@ from typing import Any, Iterable
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_MANIFEST = ROOT / "profiles" / "translation-source.v1.json"
 DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v1.json"
+DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v1.schema.json"
 RUNTIME_ROOT = ROOT / ".runtime" / "translation"
 PROPOSAL_ROOT = ROOT / "content" / "translation-proposals"
 REPOSITORY = "yaqub0r/al-isabah"
-TOOL_VERSION = "1.1.0"
+TOOL_VERSION = "1.2.0"
+FORMULA_REGISTRY_VERSION = "1.2.0"
 
 ASSIGNMENT_START = "<!-- al-isabah-translation-assignment:v1"
 ASSIGNMENT_END = "-->"
@@ -48,6 +51,273 @@ EXPECTED_POLICY_IDS = {
     "entry-title-structure",
     "translation-source-profile",
 }
+OPENITI_POETRY_MARKER_RE = re.compile(r"(?<!\S)%(?!\S)")
+JSON_PATH_TOKEN_RE = re.compile(r"([A-Za-z][A-Za-z0-9_]*)|\[(\d+)\]")
+PUBLIC_PROCESS_TERMS = (
+    "pinned OpenITI",
+    "pinned wording",
+    "pinned text",
+    "pinned unit",
+)
+UNRESOLVED_SEVERITIES = {"minor", "material", "blocking", "source_reported"}
+WITNESS_ROLES = {
+    "alternative_edition",
+    "translation_witness",
+    "collateral_work",
+    "lexical_reference",
+    "same_authority",
+    "discovery_check",
+}
+
+# Longer forms must precede forms that they contain. The registry is kept in
+# executable form so the packet can persist a per-occurrence semantic audit
+# without relying on an application or database.
+FORMULA_RULES = (
+    {
+        "source": "صلى الله عليه وعليهم صلاة خالدة ، وسلاما مؤبدا [ وسلم تسليما ]",
+        "target": (
+            "May God bless him and them with an everlasting blessing and grant "
+            "them perpetual peace [and fullest peace]."
+        ),
+        "semanticClass": "contextual_prayer_and_peace_invocation",
+        "referentScope": "the Prophet and his Companions",
+        "grammaticalAgreement": "masculine singular and masculine plural",
+        "expandedArabic": (
+            "صلى الله عليه وعليهم صلاة خالدة ، وسلاما مؤبدا [ وسلم تسليما ]"
+        ),
+    },
+    {
+        "source": "صلى الله تعالى عليه وعلى آله وسلم",
+        "target": "﵌",
+        "semanticClass": "prophetic_blessing_with_family",
+        "referentScope": "the Prophet and his family",
+        "grammaticalAgreement": "masculine singular with family inclusion",
+        "expandedArabic": "صلى الله تعالى عليه وعلى آله وسلم",
+    },
+    # The locked source has one transparent OCR substitution in the formula.
+    {
+        "source": "صلى الله علسه وسلم",
+        "target": "ﷺ",
+        "semanticClass": "prophetic_blessing",
+        "referentScope": "the Prophet",
+        "grammaticalAgreement": "masculine singular",
+        "expandedArabic": "صلى الله عليه وسلم",
+    },
+    {
+        "source": "صلى آله عليه وسلم",
+        "target": "ﷺ",
+        "semanticClass": "prophetic_blessing",
+        "referentScope": "the Prophet",
+        "grammaticalAgreement": "masculine singular",
+        "expandedArabic": "صلى الله عليه وسلم",
+    },
+    {
+        "source": "صلى الله عليه وعلى آله وسلم",
+        "target": "﵌",
+        "semanticClass": "prophetic_blessing_with_family",
+        "referentScope": "the Prophet and his family",
+        "grammaticalAgreement": "masculine singular with family inclusion",
+        "expandedArabic": "صلى الله عليه وعلى آله وسلم",
+    },
+    {
+        "source": "صلى الله عليه وآله وسلم",
+        "target": "﵌",
+        "semanticClass": "prophetic_blessing_with_family",
+        "referentScope": "the Prophet and his family",
+        "grammaticalAgreement": "masculine singular with family inclusion",
+        "expandedArabic": "صلى الله عليه وآله وسلم",
+    },
+    {
+        "source": "صلى الله عليه وسلم",
+        "target": "ﷺ",
+        "semanticClass": "prophetic_blessing",
+        "referentScope": "the Prophet",
+        "grammaticalAgreement": "masculine singular",
+        "expandedArabic": "صلى الله عليه وسلم",
+    },
+    {
+        "source": "رضي الله عنهما",
+        "target": "﵄",
+        "semanticClass": "divine_approval",
+        "referentScope": "the two immediately preceding referents",
+        "grammaticalAgreement": "dual",
+        "expandedArabic": "رضي الله عنهما",
+    },
+    {
+        "source": "رضي الله عنهم",
+        "target": "﵃",
+        "semanticClass": "divine_approval",
+        "referentScope": "the immediately preceding group",
+        "grammaticalAgreement": "masculine plural",
+        "expandedArabic": "رضي الله عنهم",
+    },
+    {
+        "source": "رضي الله عنهن",
+        "target": "﵅",
+        "semanticClass": "divine_approval",
+        "referentScope": "the immediately preceding group",
+        "grammaticalAgreement": "feminine plural",
+        "expandedArabic": "رضي الله عنهن",
+    },
+    {
+        "source": "رضي الله عنها",
+        "target": "﵂",
+        "semanticClass": "divine_approval",
+        "referentScope": "the immediately preceding female referent",
+        "grammaticalAgreement": "feminine singular",
+        "expandedArabic": "رضي الله عنها",
+    },
+    {
+        "source": "رضي الله عنه",
+        "target": "﵁",
+        "semanticClass": "divine_approval",
+        "referentScope": "the immediately preceding male referent",
+        "grammaticalAgreement": "masculine singular",
+        "expandedArabic": "رضي الله عنه",
+    },
+    {
+        "source": "رحمهم الله",
+        "target": "﵏",
+        "semanticClass": "mercy_invocation",
+        "referentScope": "the immediately preceding group",
+        "grammaticalAgreement": "plural",
+        "expandedArabic": "رحمهم الله",
+    },
+    {
+        "source": "رحمه الله",
+        "target": "﵀",
+        "semanticClass": "mercy_invocation",
+        "referentScope": "the immediately preceding male referent",
+        "grammaticalAgreement": "masculine singular",
+        "expandedArabic": "رحمه الله",
+    },
+    {
+        "source": "عليهما السلام",
+        "target": "﵉",
+        "semanticClass": "peace_invocation",
+        "referentScope": "the two immediately preceding referents",
+        "grammaticalAgreement": "dual",
+        "expandedArabic": "عليهما السلام",
+    },
+    {
+        "source": "عليهم السلام",
+        "target": "﵈",
+        "semanticClass": "peace_invocation",
+        "referentScope": "the immediately preceding group",
+        "grammaticalAgreement": "plural",
+        "expandedArabic": "عليهم السلام",
+    },
+    {
+        "source": "عليه الصلاة والسلام",
+        "target": "﵊",
+        "semanticClass": "prayer_and_peace_invocation",
+        "referentScope": "the immediately preceding prophetic referent",
+        "grammaticalAgreement": "masculine singular",
+        "expandedArabic": "عليه الصلاة والسلام",
+    },
+    {
+        "source": "عليه السلام",
+        "target": "﵇",
+        "semanticClass": "peace_invocation",
+        "referentScope": "the immediately preceding prophetic referent",
+        "grammaticalAgreement": "masculine singular",
+        "expandedArabic": "عليه السلام",
+    },
+    {
+        "source": "إن شاء الله تعالى",
+        "target": "إن شاء الله تعالى",
+        "semanticClass": "divine_will_qualification",
+        "referentScope": "God",
+        "grammaticalAgreement": "not_applicable",
+        "expandedArabic": "إن شاء الله تعالى",
+    },
+    {
+        "source": "إن شاء الله",
+        "target": "إن شاء الله",
+        "semanticClass": "divine_will_qualification",
+        "referentScope": "God",
+        "grammaticalAgreement": "not_applicable",
+        "expandedArabic": "إن شاء الله",
+    },
+    {
+        "source": "سبحانه وتعالى",
+        "target": "سبحانه وتعالى",
+        "semanticClass": "divine_exaltation",
+        "referentScope": "God",
+        "grammaticalAgreement": "not_applicable",
+        "expandedArabic": "سبحانه وتعالى",
+    },
+    {
+        "source": "تبارك وتعالى",
+        "target": "﵎",
+        "semanticClass": "divine_exaltation",
+        "referentScope": "God",
+        "grammaticalAgreement": "not_applicable",
+        "expandedArabic": "تبارك وتعالى",
+    },
+    {
+        "source": "والله أعلم",
+        "target": "والله أعلم",
+        "semanticClass": "divine_knowledge_qualification",
+        "referentScope": "God",
+        "grammaticalAgreement": "not_applicable",
+        "expandedArabic": "والله أعلم",
+    },
+    {
+        "source": "الله أعلم",
+        "target": "الله أعلم",
+        "semanticClass": "divine_knowledge_qualification",
+        "referentScope": "God",
+        "grammaticalAgreement": "not_applicable",
+        "expandedArabic": "الله أعلم",
+    },
+    {
+        "source": "عز وجل",
+        "target": "﷿",
+        "semanticClass": "divine_exaltation",
+        "referentScope": "God",
+        "grammaticalAgreement": "not_applicable",
+        "expandedArabic": "عز وجل",
+    },
+)
+
+# The compact display value never stands alone as the semantic record. Keep a
+# target-language expansion for accessibility, search, copy, and review. This
+# tuple is intentionally parallel to FORMULA_RULES, whose order is already
+# semantically significant because longer source forms must be matched first.
+FORMULA_ACCESSIBLE_ENGLISH = (
+    "May God bless him and them with an everlasting blessing and grant them perpetual peace [and fullest peace].",
+    "May God bless him and his family and grant them peace.",
+    "May God bless him and grant him peace.",
+    "May God bless him and grant him peace.",
+    "May God bless him and his family and grant them peace.",
+    "May God bless him and his family and grant them peace.",
+    "May God bless him and grant him peace.",
+    "May God be pleased with both of them.",
+    "May God be pleased with them.",
+    "May God be pleased with them.",
+    "May God be pleased with her.",
+    "May God be pleased with him.",
+    "May God have mercy on them.",
+    "May God have mercy on him.",
+    "Peace be upon both of them.",
+    "Peace be upon them.",
+    "May blessings and peace be upon him.",
+    "Peace be upon him.",
+    "God willing, exalted is He.",
+    "God willing.",
+    "Glory be to Him, the Exalted.",
+    "Blessed and exalted is He.",
+    "And God knows best.",
+    "God knows best.",
+    "Mighty and majestic is He.",
+)
+if len(FORMULA_ACCESSIBLE_ENGLISH) != len(FORMULA_RULES):
+    raise RuntimeError("formula accessibility registry is out of sync")
+FORMULA_RULES = tuple(
+    {**rule, "accessibleEnglish": accessible}
+    for rule, accessible in zip(FORMULA_RULES, FORMULA_ACCESSIBLE_ENGLISH)
+)
 
 
 class WorkflowError(ValueError):
@@ -69,6 +339,573 @@ def canonical_text_sha256(path: Path) -> str:
 
 def bytes_sha256(value: bytes) -> str:
     return hashlib.sha256(value).hexdigest()
+
+
+def text_sha256(value: str) -> str:
+    return bytes_sha256(value.encode("utf-8"))
+
+
+def registered_occurrences(text: str, field: str) -> list[dict[str, Any]]:
+    """Return non-overlapping formula occurrences, preferring longer forms."""
+    if field == "target":
+        values = sorted(
+            {
+                str(value)
+                for rule in FORMULA_RULES
+                for value in (rule["target"], rule["expandedArabic"])
+            },
+            key=len,
+            reverse=True,
+        )
+    else:
+        values = sorted({str(rule[field]) for rule in FORMULA_RULES}, key=len, reverse=True)
+    pattern = re.compile("|".join(re.escape(value) for value in values))
+    occurrences: list[dict[str, Any]] = []
+    for match in pattern.finditer(text):
+        value = match.group(0)
+        if field == "target":
+            rule = next(
+                rule
+                for rule in FORMULA_RULES
+                if value in {rule["target"], rule["expandedArabic"]}
+            )
+        else:
+            rule = next(rule for rule in FORMULA_RULES if rule[field] == value)
+        occurrences.append(
+            {
+                "start": match.start(),
+                "end": match.end(),
+                "value": value,
+                "rule": rule,
+            }
+        )
+    return occurrences
+
+
+def formula_inventory(packet: dict[str, Any]) -> tuple[dict[str, Any], list[str]]:
+    """Build the exact per-occurrence semantic formula inventory."""
+    errors: list[str] = []
+    occurrences: list[dict[str, Any]] = []
+
+    def add_record(
+        record_id: str,
+        source_field: str,
+        source_text: str | None,
+        blind_text: str | None,
+        adjudicated_text: str | None,
+    ) -> None:
+        if not source_text:
+            return
+        source_hits = registered_occurrences(source_text, "source")
+        blind_hits = registered_occurrences(blind_text or "", "target")
+        adjudicated_hits = registered_occurrences(adjudicated_text or "", "target")
+        expected_classes = [
+            (
+                hit["rule"]["semanticClass"],
+                hit["rule"]["referentScope"],
+                hit["rule"]["grammaticalAgreement"],
+                hit["rule"]["accessibleEnglish"],
+            )
+            for hit in source_hits
+        ]
+        blind_classes = [
+            (
+                hit["rule"]["semanticClass"],
+                hit["rule"]["referentScope"],
+                hit["rule"]["grammaticalAgreement"],
+                hit["rule"]["accessibleEnglish"],
+            )
+            for hit in blind_hits
+        ]
+        adjudicated_classes = [
+            (
+                hit["rule"]["semanticClass"],
+                hit["rule"]["referentScope"],
+                hit["rule"]["grammaticalAgreement"],
+                hit["rule"]["accessibleEnglish"],
+            )
+            for hit in adjudicated_hits
+        ]
+        if blind_classes != expected_classes:
+            errors.append(
+                f"{record_id}: blind devotional formulas do not match source order "
+                f"({len(blind_classes)} target, {len(expected_classes)} source)"
+            )
+        if adjudicated_classes != expected_classes:
+            errors.append(
+                f"{record_id}: adjudicated devotional formulas do not match source order "
+                f"({len(adjudicated_classes)} target, {len(expected_classes)} source)"
+            )
+        if blind_classes != expected_classes or adjudicated_classes != expected_classes:
+            return
+        for index, (source_hit, blind_hit, adjudicated_hit) in enumerate(
+            zip(source_hits, blind_hits, adjudicated_hits), start=1
+        ):
+            rule = source_hit["rule"]
+            occurrences.append(
+                {
+                    "formulaId": (
+                        f"{record_id}-{source_field}-formula-{index:03d}"
+                    ),
+                    "recordId": record_id,
+                    "sourceField": source_field,
+                    "sourceStart": source_hit["start"],
+                    "sourceEnd": source_hit["end"],
+                    "observedArabic": source_hit["value"],
+                    "semanticClass": rule["semanticClass"],
+                    "referentScope": rule["referentScope"],
+                    "grammaticalAgreement": rule["grammaticalAgreement"],
+                    "expandedArabic": rule["expandedArabic"],
+                    "targetRealization": adjudicated_hit["value"],
+                    "accessibleEnglish": rule["accessibleEnglish"],
+                    "blindStart": blind_hit["start"],
+                    "blindEnd": blind_hit["end"],
+                    "adjudicatedStart": adjudicated_hit["start"],
+                    "adjudicatedEnd": adjudicated_hit["end"],
+                }
+            )
+
+    for entry in packet.get("entries", []):
+        if not isinstance(entry, dict):
+            continue
+        source = entry.get("source", {})
+        for segment, translation in zip(
+            source.get("precedingSegments", []),
+            entry.get("precedingTranslations", []),
+        ):
+            if not isinstance(segment, dict) or not isinstance(translation, dict):
+                continue
+            record_id = str(segment.get("segmentId"))
+            blind = translation.get("blindTranslation", {})
+            adjudication = translation.get("adjudication", {})
+            add_record(
+                record_id,
+                "headingArabic",
+                segment.get("headingArabic"),
+                blind.get("headingEnglish"),
+                adjudication.get("headingEnglish"),
+            )
+            add_record(
+                record_id,
+                "arabic",
+                segment.get("arabic"),
+                blind.get("english"),
+                adjudication.get("english"),
+            )
+        add_record(
+            str(entry.get("sourceUnitId")),
+            "arabic",
+            source.get("arabic"),
+            entry.get("blindTranslation", {}).get("english"),
+            entry.get("adjudication", {}).get("english"),
+        )
+    formula_ids = [item["formulaId"] for item in occurrences]
+    if len(formula_ids) != len(set(formula_ids)):
+        errors.append("formula inventory: formula IDs must be globally unique")
+    return (
+        {
+            "status": "complete",
+            "registryVersion": FORMULA_REGISTRY_VERSION,
+            "occurrences": occurrences,
+        },
+        errors,
+    )
+
+
+def validate_names(
+    names: dict[str, Any],
+    source: dict[str, Any],
+    record_id: str,
+    prefix: str,
+    require_spans: bool,
+) -> list[str]:
+    """Validate one-person candidates and source-exact mention spans."""
+    errors: list[str] = []
+    candidates = names.get("candidates")
+    mentions = names.get("mentions")
+    if names.get("status") != "complete" or not isinstance(candidates, list):
+        return [f"{prefix}: durable name candidates are incomplete"]
+    if not isinstance(mentions, list):
+        return [f"{prefix}: name mentions must be an array"]
+    candidate_by_id: dict[str, dict[str, Any]] = {}
+    source_fields = {
+        "headingArabic": source.get("headingArabic") or "",
+        "arabic": source.get("arabic") or "",
+        "rawOpeniti": source.get("rawOpeniti") or "",
+    }
+    for candidate in candidates:
+        if not isinstance(candidate, dict):
+            errors.append(f"{prefix}: name candidate must be an object")
+            continue
+        candidate_id = candidate.get("candidateId")
+        observed = candidate.get("observedArabic")
+        proposed = candidate.get("proposedEnglish")
+        if not isinstance(candidate_id, str) or not candidate_id:
+            errors.append(f"{prefix}: name candidate ID is required")
+            continue
+        if candidate_id in candidate_by_id:
+            errors.append(f"{prefix}: name candidate IDs must be unique")
+        candidate_by_id[candidate_id] = candidate
+        if not isinstance(observed, str) or not observed:
+            errors.append(f"{prefix}: {candidate_id} has no observed Arabic")
+        elif not any(observed in value for value in source_fields.values()):
+            errors.append(f"{prefix}: {candidate_id} observed Arabic is not source-exact")
+        if isinstance(observed, str) and ("؛" in observed or ";" in observed):
+            errors.append(f"{prefix}: {candidate_id} bundles multiple observed names")
+        if isinstance(observed, str) and any(
+            marker in observed for marker in ("~~", "#META#", "PageV")
+        ):
+            errors.append(f"{prefix}: {candidate_id} observed Arabic leaks OpenITI markup")
+        if not isinstance(proposed, str) or not proposed.strip():
+            errors.append(f"{prefix}: {candidate_id} has no proposed English form")
+        if not isinstance(candidate.get("aliases"), list) or not all(
+            isinstance(alias, str) and alias.strip()
+            for alias in candidate.get("aliases", [])
+        ):
+            errors.append(f"{prefix}: {candidate_id} aliases must be nonempty strings")
+        if not isinstance(candidate.get("confidenceEvidence"), list) or not all(
+            isinstance(item, str) and item.strip()
+            for item in candidate.get("confidenceEvidence", [])
+        ):
+            errors.append(
+                f"{prefix}: {candidate_id} confidence evidence must be strings"
+            )
+        if candidate.get("reviewState") not in {"unreviewed", "needs_attention"}:
+            errors.append(f"{prefix}: {candidate_id} review state is invalid")
+        if "observedVariants" in candidate and (
+            not isinstance(candidate["observedVariants"], list)
+            or not all(
+                isinstance(variant, str) and variant.strip()
+                for variant in candidate["observedVariants"]
+            )
+        ):
+            errors.append(f"{prefix}: {candidate_id} observed variants are invalid")
+        if candidate.get("entityType", "person") not in {"person", "collective"}:
+            errors.append(f"{prefix}: {candidate_id} entity type is invalid")
+    mentioned: set[str] = set()
+    mention_ids: set[str] = set()
+    for mention in mentions:
+        if not isinstance(mention, dict):
+            errors.append(f"{prefix}: name mention must be an object")
+            continue
+        candidate_id = mention.get("candidateId")
+        candidate = candidate_by_id.get(str(candidate_id))
+        if candidate is None:
+            errors.append(f"{prefix}: name mention references an unknown candidate")
+            continue
+        mentioned.add(str(candidate_id))
+        mention_id = mention.get("mentionId")
+        if not isinstance(mention_id, str) or not mention_id:
+            errors.append(f"{prefix}: name mention ID is required")
+        elif mention_id in mention_ids:
+            errors.append(f"{prefix}: name mention IDs must be unique")
+        else:
+            mention_ids.add(mention_id)
+        if not isinstance(mention.get("originCandidateId"), str) or not mention[
+            "originCandidateId"
+        ]:
+            errors.append(f"{prefix}: name mention origin is required")
+        if mention.get("recordId") != record_id:
+            errors.append(f"{prefix}: name mention references the wrong source record")
+        if not mention.get("location"):
+            errors.append(f"{prefix}: name mention location is required")
+        if not require_spans:
+            continue
+        spans = mention.get("sourceSpans")
+        if not isinstance(spans, list) or not spans:
+            errors.append(f"{prefix}: {candidate_id} mention lacks exact source spans")
+            continue
+        if not any(
+            isinstance(span, dict)
+            and span.get("sourceField") in {"headingArabic", "arabic"}
+            for span in spans
+        ):
+            errors.append(
+                f"{prefix}: {candidate_id} has no readable-source mention span"
+            )
+        for span in spans:
+            if not isinstance(span, dict):
+                errors.append(f"{prefix}: {candidate_id} mention span must be an object")
+                continue
+            field = span.get("sourceField")
+            start = span.get("start")
+            end = span.get("end")
+            if field not in source_fields or not isinstance(start, int) or not isinstance(end, int):
+                errors.append(f"{prefix}: {candidate_id} mention span is incomplete")
+                continue
+            text = source_fields[str(field)]
+            if start < 0 or end <= start or end > len(text):
+                errors.append(f"{prefix}: {candidate_id} mention source span is invalid")
+                continue
+            observed_span = text[start:end]
+            if observed_span != candidate.get("observedArabic"):
+                errors.append(
+                    f"{prefix}: {candidate_id} mention span does not match observed Arabic"
+                )
+            if span.get("sha256") != text_sha256(observed_span):
+                errors.append(f"{prefix}: {candidate_id} mention span hash is invalid")
+    missing = set(candidate_by_id) - mentioned
+    if missing:
+        errors.append(f"{prefix}: every name candidate requires a mention")
+    return errors
+
+
+def validate_witness(
+    witness: dict[str, Any], findings: list[Any], prefix: str, strict: bool
+) -> list[str]:
+    errors: list[str] = []
+    results = witness.get("results")
+    requires_witness = any(
+        isinstance(finding, dict) and finding.get("requiresWitness") is True
+        for finding in findings
+    )
+    if witness.get("status") not in {"complete", "not_required"}:
+        errors.append(f"{prefix}: witness resolution is not final")
+    if requires_witness and witness.get("status") != "complete":
+        errors.append(f"{prefix}: material critique requires witness resolution")
+    if not isinstance(results, list):
+        return errors + [f"{prefix}: witness results must be an array"]
+    if witness.get("status") == "complete" and not results:
+        errors.append(f"{prefix}: completed witness resolution requires evidence")
+    if witness.get("status") == "not_required" and results:
+        errors.append(f"{prefix}: not-required witness resolution cannot contain results")
+    canonical = {
+        "status",
+        "query",
+        "witnessRole",
+        "witnessIdentity",
+        "passage",
+        "passageSha256",
+        "location",
+        "evidenceKind",
+        "evidenceSha256",
+        "decision",
+        "retrievedAt",
+    }
+    for index, result in enumerate(results, start=1):
+        result_prefix = f"{prefix}, witness result {index}"
+        if not isinstance(result, dict) or result.get("status") not in {"hit", "no_match"}:
+            errors.append(f"{result_prefix}: status must be hit or no_match")
+            continue
+        if not strict:
+            continue
+        if set(result) != canonical:
+            errors.append(f"{result_prefix}: provenance fields are not canonical")
+            continue
+        for field in ("query", "witnessIdentity", "passage", "location", "decision", "retrievedAt"):
+            if not isinstance(result.get(field), str) or not result[field].strip():
+                errors.append(f"{result_prefix}: {field} is required")
+        if result.get("witnessRole") not in WITNESS_ROLES:
+            errors.append(f"{result_prefix}: witnessRole is unclassified")
+        if result.get("evidenceKind") not in {"passage", "artifact", "search_log"}:
+            errors.append(f"{result_prefix}: evidenceKind is invalid")
+        if not SHA256_RE.fullmatch(str(result.get("passageSha256", ""))):
+            errors.append(f"{result_prefix}: passageSha256 is required")
+        elif isinstance(result.get("passage"), str) and text_sha256(result["passage"]) != result["passageSha256"]:
+            errors.append(f"{result_prefix}: passageSha256 does not match passage")
+        if not SHA256_RE.fullmatch(str(result.get("evidenceSha256", ""))):
+            errors.append(f"{result_prefix}: evidenceSha256 is required")
+        elif (
+            result.get("evidenceKind") == "passage"
+            and result.get("evidenceSha256") != result.get("passageSha256")
+        ):
+            errors.append(
+                f"{result_prefix}: passage evidence hash must match passageSha256"
+            )
+        retrieved_at = result.get("retrievedAt")
+        if isinstance(retrieved_at, str) and retrieved_at.strip():
+            try:
+                datetime.fromisoformat(retrieved_at.replace("Z", "+00:00"))
+            except ValueError:
+                errors.append(f"{result_prefix}: retrievedAt must be an ISO date or time")
+    return errors
+
+
+def validate_unresolved(
+    unresolved: Any, prefix: str, strict: bool
+) -> list[str]:
+    if not isinstance(unresolved, list):
+        return [f"{prefix}: unresolved findings must be an array"]
+    if not strict:
+        return []
+    errors: list[str] = []
+    expected = {"kind", "description", "severity", "location", "disposition"}
+    for index, finding in enumerate(unresolved, start=1):
+        item_prefix = f"{prefix}, unresolved item {index}"
+        if not isinstance(finding, dict) or set(finding) != expected:
+            errors.append(f"{item_prefix}: fields are not canonical")
+            continue
+        for field in ("kind", "description", "location", "disposition"):
+            if not isinstance(finding.get(field), str) or not finding[field].strip():
+                errors.append(f"{item_prefix}: {field} is required")
+        if finding.get("severity") not in UNRESOLVED_SEVERITIES:
+            errors.append(f"{item_prefix}: severity is unclassified")
+    return errors
+
+
+def validate_uncertainty_witness_alignment(
+    unresolved: Any, witness: dict[str, Any], prefix: str
+) -> list[str]:
+    """Material uncertainty cannot bypass the witness gate."""
+    if not isinstance(unresolved, list):
+        return []
+    material = any(
+        isinstance(item, dict) and item.get("severity") in {"material", "blocking"}
+        for item in unresolved
+    )
+    if not material:
+        return []
+    results = witness.get("results")
+    if witness.get("status") != "complete" or not isinstance(results, list) or not results:
+        return [f"{prefix}: material unresolved finding requires completed witness evidence"]
+    return []
+
+
+def validate_public_english(value: str | None, prefix: str) -> list[str]:
+    if not value:
+        return []
+    errors: list[str] = []
+    if OPENITI_POETRY_MARKER_RE.search(value):
+        errors.append(f"{prefix}: raw OpenITI poetry marker leaked into English")
+    for term in PUBLIC_PROCESS_TERMS:
+        if term.lower() in value.lower():
+            errors.append(f"{prefix}: internal process language leaked into English")
+    return errors
+
+
+def validate_schema_instance(
+    value: Any,
+    schema: dict[str, Any],
+    root_schema: dict[str, Any] | None = None,
+    path: str = "$",
+) -> list[str]:
+    """Validate the JSON-Schema subset used by the translation packet.
+
+    The workflow intentionally has no third-party runtime dependency. Keeping
+    this small validator beside the declared schema prevents the CLI from
+    accepting additional properties or shapes that its own schema rejects.
+    """
+    root = root_schema or schema
+    if "$ref" in schema:
+        reference = schema["$ref"]
+        if not isinstance(reference, str) or not reference.startswith("#/"):
+            return [f"{path}: unsupported schema reference {reference!r}"]
+        target: Any = root
+        for token in reference[2:].split("/"):
+            target = target[token.replace("~1", "/").replace("~0", "~")]
+        return validate_schema_instance(value, target, root, path)
+
+    if "anyOf" in schema:
+        alternatives = [
+            validate_schema_instance(value, branch, root, path)
+            for branch in schema["anyOf"]
+        ]
+        if not any(not errors for errors in alternatives):
+            return [f"{path}: value does not match any allowed schema"]
+
+    errors: list[str] = []
+    expected_type = schema.get("type")
+    if expected_type:
+        expected_types = (
+            expected_type if isinstance(expected_type, list) else [expected_type]
+        )
+        matches = any(
+            (
+                kind == "object"
+                and isinstance(value, dict)
+                or kind == "array"
+                and isinstance(value, list)
+                or kind == "string"
+                and isinstance(value, str)
+                or kind == "integer"
+                and isinstance(value, int)
+                and not isinstance(value, bool)
+                or kind == "number"
+                and isinstance(value, (int, float))
+                and not isinstance(value, bool)
+                or kind == "boolean"
+                and isinstance(value, bool)
+                or kind == "null"
+                and value is None
+            )
+            for kind in expected_types
+        )
+        if not matches:
+            return [f"{path}: expected schema type {expected_type!r}"]
+
+    if "const" in schema and value != schema["const"]:
+        errors.append(f"{path}: value must equal {schema['const']!r}")
+    if "enum" in schema and value not in schema["enum"]:
+        errors.append(f"{path}: value is outside the declared enum")
+
+    if isinstance(value, str):
+        if len(value) < schema.get("minLength", 0):
+            errors.append(f"{path}: string is shorter than minLength")
+        pattern = schema.get("pattern")
+        if pattern and re.search(pattern, value) is None:
+            errors.append(f"{path}: string does not match the declared pattern")
+        format_name = schema.get("format")
+        if format_name == "date-time":
+            if not re.fullmatch(
+                r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})",
+                value,
+            ):
+                errors.append(f"{path}: value is not an ISO date-time")
+            else:
+                try:
+                    datetime.fromisoformat(value.replace("Z", "+00:00"))
+                except ValueError:
+                    errors.append(f"{path}: value is not an ISO date-time")
+        elif format_name == "uri":
+            parsed = urlparse(value)
+            if not parsed.scheme or not (
+                parsed.netloc or parsed.scheme.lower() in {"mailto", "urn"}
+            ):
+                errors.append(f"{path}: value is not an absolute URI")
+
+    if isinstance(value, (int, float)) and not isinstance(value, bool):
+        if "minimum" in schema and value < schema["minimum"]:
+            errors.append(f"{path}: number is below the declared minimum")
+
+    if isinstance(value, list):
+        if len(value) < schema.get("minItems", 0):
+            errors.append(f"{path}: array is shorter than minItems")
+        if schema.get("uniqueItems"):
+            encoded = [
+                json.dumps(item, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+                for item in value
+            ]
+            if len(encoded) != len(set(encoded)):
+                errors.append(f"{path}: array items must be unique")
+        item_schema = schema.get("items")
+        if isinstance(item_schema, dict):
+            for index, item in enumerate(value):
+                errors.extend(
+                    validate_schema_instance(item, item_schema, root, f"{path}[{index}]")
+                )
+
+    if isinstance(value, dict):
+        properties = schema.get("properties", {})
+        for required in schema.get("required", []):
+            if required not in value:
+                errors.append(f"{path}: missing required property {required!r}")
+        if schema.get("additionalProperties") is False:
+            for key in value:
+                if key not in properties:
+                    errors.append(f"{path}: unexpected property {key!r}")
+        for key, child_schema in properties.items():
+            if key in value:
+                errors.extend(
+                    validate_schema_instance(
+                        value[key], child_schema, root, f"{path}.{key}"
+                    )
+                )
+    return errors
+
+
+def present_openiti_arabic(value: str) -> str:
+    """Turn OpenITI poetry delimiters into visible line boundaries."""
+    return OPENITI_POETRY_MARKER_RE.sub("<br />\n", value)
 
 
 def json_bytes(value: Any) -> bytes:
@@ -873,7 +1710,7 @@ def build_packet(
             }
         )
     return {
-        "schemaVersion": "1.1.0",
+        "schemaVersion": "1.2.0",
         "packetId": f"isabah-translation-issue-{number}",
         "workId": "ibn-hajar-al-isabah",
         "toolVersion": TOOL_VERSION,
@@ -886,6 +1723,18 @@ def build_packet(
             "excludedRanges": source_scope_exclusions(source_path),
         },
         "entries": entries,
+        "formulaInventory": {
+            "status": "pending",
+            "registryVersion": FORMULA_REGISTRY_VERSION,
+            "occurrences": [],
+        },
+        "postRunRepairAudit": {
+            "status": "not_required",
+            "basePacketSha256": None,
+            "artifactSha256": None,
+            "runId": None,
+            "operations": [],
+        },
         "reviewPresentation": {"status": "pending", "path": None, "sha256": None},
         "machineReadiness": {
             "status": "pending",
@@ -908,6 +1757,114 @@ def private_data_errors(value: Any, location: str = "$") -> list[str]:
             errors.extend(private_data_errors(child, f"{location}[{index}]"))
     elif isinstance(value, str) and WINDOWS_PATH_RE.search(value):
         errors.append(f"{location}: local absolute path is prohibited")
+    return errors
+
+
+def json_path_value(root: object, path: str) -> object:
+    if not path.startswith("$."):
+        raise WorkflowError(f"unsupported repair field path: {path}")
+    current = root
+    tokens = JSON_PATH_TOKEN_RE.findall(path[2:])
+    if not tokens:
+        raise WorkflowError(f"empty repair field path: {path}")
+    for name, index in tokens:
+        token: str | int = name if name else int(index)
+        current = current[token]  # type: ignore[index]
+    return current
+
+
+def normalized_repair_record_kind(value: str) -> str:
+    if value == "biography":
+        return "entry"
+    if value in {"entry", "structural"}:
+        return value
+    raise WorkflowError(f"unsupported repair record kind: {value}")
+
+
+def validate_post_run_repair_audit(packet: dict[str, Any]) -> list[str]:
+    audit = packet.get("postRunRepairAudit", {})
+    status = audit.get("status")
+    operations = audit.get("operations")
+    if status == "not_required":
+        if operations != [] or any(
+            audit.get(field) is not None
+            for field in ("basePacketSha256", "artifactSha256", "runId")
+        ):
+            return ["packet: not-required post-run repair audit must be empty"]
+        return []
+    if status != "complete" or not isinstance(operations, list) or not operations:
+        return ["packet: post-run repair audit is incomplete"]
+    if not all(
+        SHA256_RE.fullmatch(str(audit.get(field, "")))
+        for field in ("basePacketSha256", "artifactSha256")
+    ):
+        return ["packet: post-run repair audit hashes are invalid"]
+    if not re.fullmatch(
+        r"translation-repair-run-[0-9a-f]{16}", str(audit.get("runId", ""))
+    ):
+        return ["packet: post-run repair run ID is invalid"]
+
+    errors: list[str] = []
+    repair_ids: list[str] = []
+    last_hash_by_path: dict[str, str] = {}
+    for index, operation in enumerate(operations):
+        prefix = f"packet post-run repair operation {index + 1}"
+        repair_id = operation.get("repairId")
+        if isinstance(repair_id, str):
+            repair_ids.append(repair_id)
+        path = operation.get("fieldPath")
+        if not isinstance(path, str) or not (
+            ".blindTranslation." in path or ".adjudication." in path
+        ):
+            errors.append(f"{prefix}: target must be blind or adjudicated output")
+            continue
+        path_tokens: list[str | int] = [
+            name if name else int(array_index)
+            for name, array_index in JSON_PATH_TOKEN_RE.findall(path[2:])
+        ]
+        try:
+            entry_index = int(path_tokens[1])
+            entry = packet["entries"][entry_index]
+            if "precedingTranslations" in path_tokens:
+                translation_token = path_tokens.index("precedingTranslations")
+                translation_index = int(path_tokens[translation_token + 1])
+                owner = entry["precedingTranslations"][translation_index]
+                expected_kind = "structural"
+                expected_segment_id = owner["segmentId"]
+            else:
+                expected_kind = "entry"
+                expected_segment_id = None
+            expected_stage = (
+                "blind_translation"
+                if ".blindTranslation." in path
+                else "adjudication"
+            )
+        except (KeyError, IndexError, TypeError, ValueError):
+            errors.append(f"{prefix}: field path owner is invalid")
+            continue
+        if operation.get("sourceUnitId") != entry.get("sourceUnitId"):
+            errors.append(f"{prefix}: source unit metadata does not match field path")
+        if operation.get("recordKind") != expected_kind:
+            errors.append(f"{prefix}: record kind does not match field path")
+        if operation.get("segmentId") != expected_segment_id:
+            errors.append(f"{prefix}: segment metadata does not match field path")
+        if operation.get("targetStage") != expected_stage:
+            errors.append(f"{prefix}: target stage does not match field path")
+        old_hash = operation.get("oldTextSha256")
+        new_hash = operation.get("newTextSha256")
+        if path in last_hash_by_path and old_hash != last_hash_by_path[path]:
+            errors.append(f"{prefix}: repair hash chain is broken")
+        last_hash_by_path[path] = str(new_hash)
+    if len(repair_ids) != len(set(repair_ids)):
+        errors.append("packet: post-run repair IDs must be unique")
+    for path, expected_hash in last_hash_by_path.items():
+        try:
+            current = json_path_value(packet, path)
+        except (KeyError, IndexError, TypeError, WorkflowError):
+            errors.append(f"packet: post-run repair target is missing: {path}")
+            continue
+        if not isinstance(current, str) or text_sha256(current) != expected_hash:
+            errors.append(f"packet: post-run repair target drifted: {path}")
     return errors
 
 
@@ -940,22 +1897,15 @@ def validate_preceding_translation(
     if not isinstance(critique.get("findings"), list):
         errors.append(f"{prefix}: critique findings must be an array")
 
-    witness = translation.get("witnessResolution", {})
     findings = critique.get("findings", [])
-    requires_witness = isinstance(findings, list) and any(
-        isinstance(finding, dict) and finding.get("requiresWitness") is True
-        for finding in findings
+    errors.extend(
+        validate_witness(
+            translation.get("witnessResolution", {}),
+            findings if isinstance(findings, list) else [],
+            prefix,
+            strict=True,
+        )
     )
-    if witness.get("status") not in {"complete", "not_required"}:
-        errors.append(f"{prefix}: witness resolution is not final")
-    if requires_witness and witness.get("status") != "complete":
-        errors.append(f"{prefix}: material critique requires witness resolution")
-    for result in witness.get("results", []):
-        if not isinstance(result, dict) or result.get("status") not in {
-            "hit",
-            "no_match",
-        }:
-            errors.append(f"{prefix}: witness result must be hit or no_match")
 
     adjudication = translation.get("adjudication", {})
     if adjudication.get("status") != "complete":
@@ -966,16 +1916,35 @@ def validate_preceding_translation(
         errors.append(f"{prefix}: adjudicated substantive prose is untranslated")
     if not isinstance(adjudication.get("decisions"), list):
         errors.append(f"{prefix}: adjudication decisions must be an array")
+    errors.extend(
+        validate_public_english(blind.get("headingEnglish"), f"{prefix}, blind heading")
+    )
+    errors.extend(validate_public_english(blind.get("english"), f"{prefix}, blind"))
+    errors.extend(
+        validate_public_english(
+            adjudication.get("headingEnglish"), f"{prefix}, adjudicated heading"
+        )
+    )
+    errors.extend(
+        validate_public_english(adjudication.get("english"), f"{prefix}, adjudicated")
+    )
 
-    names = translation.get("names", {})
-    if names.get("status") != "complete":
-        errors.append(f"{prefix}: name review is incomplete")
-    if not isinstance(names.get("candidates"), list):
-        errors.append(f"{prefix}: name candidates must be an array")
-    if not isinstance(names.get("mentions"), list):
-        errors.append(f"{prefix}: name mentions must be an array")
-    if not isinstance(translation.get("unresolved"), list):
-        errors.append(f"{prefix}: unresolved findings must be an array")
+    errors.extend(
+        validate_names(
+            translation.get("names", {}),
+            source,
+            str(source.get("segmentId")),
+            prefix,
+            require_spans=True,
+        )
+    )
+    unresolved = translation.get("unresolved")
+    errors.extend(validate_unresolved(unresolved, prefix, strict=True))
+    errors.extend(
+        validate_uncertainty_witness_alignment(
+            unresolved, translation.get("witnessResolution", {}), prefix
+        )
+    )
     if translation.get("humanReview", {}).get("status") != "unreviewed":
         errors.append(f"{prefix}: machine-ready work must remain human-unreviewed")
     return errors
@@ -1018,31 +1987,21 @@ def validate_entry_shard_output(
         errors.append(f"{prefix}: critique findings must be an array")
         findings = []
 
-    witness = output.get("witnessResolution", {})
-    results = witness.get("results")
-    requires_witness = any(
-        isinstance(finding, dict) and finding.get("requiresWitness") is True
-        for finding in findings
+    errors.extend(
+        validate_witness(
+            output.get("witnessResolution", {}), findings, prefix, strict=True
+        )
     )
-    if witness.get("status") not in {"complete", "not_required"}:
-        errors.append(f"{prefix}: witness resolution is not final")
-    if requires_witness and witness.get("status") != "complete":
-        errors.append(f"{prefix}: material critique requires witness resolution")
-    if not isinstance(results, list):
-        errors.append(f"{prefix}: witness results must be an array")
-    else:
-        for result in results:
-            if not isinstance(result, dict) or result.get("status") not in {
-                "hit",
-                "no_match",
-            }:
-                errors.append(f"{prefix}: witness result must be hit or no_match")
 
     adjudication = output.get("adjudication", {})
     if adjudication.get("status") != "complete" or not adjudication.get("english"):
         errors.append(f"{prefix}: adjudication is incomplete")
     if not isinstance(adjudication.get("decisions"), list):
         errors.append(f"{prefix}: adjudication decisions must be an array")
+    errors.extend(validate_public_english(blind.get("english"), f"{prefix}, blind"))
+    errors.extend(
+        validate_public_english(adjudication.get("english"), f"{prefix}, adjudicated")
+    )
 
     names = output.get("names", {})
     candidates = names.get("candidates")
@@ -1092,15 +2051,23 @@ def validate_entry_shard_output(
             mentioned_ids.add(str(candidate_id))
             if candidate_id not in candidate_ids:
                 errors.append(f"{prefix}: name mention references an unknown candidate")
-            if mention.get("sourceUnitId") != output.get("sourceUnitId"):
+            if mention.get("recordId") != output.get("sourceUnitId"):
                 errors.append(f"{prefix}: name mention references the wrong source unit")
             if not mention.get("location"):
                 errors.append(f"{prefix}: name mention location is required")
+            spans = mention.get("sourceSpans")
+            if not isinstance(spans, list) or not spans:
+                errors.append(f"{prefix}: name mention exact source spans are required")
         if set(candidate_ids) - mentioned_ids:
             errors.append(f"{prefix}: every name candidate requires a mention")
 
-    if not isinstance(output.get("unresolved"), list):
-        errors.append(f"{prefix}: unresolved findings must be an array")
+    unresolved = output.get("unresolved")
+    errors.extend(validate_unresolved(unresolved, prefix, strict=True))
+    errors.extend(
+        validate_uncertainty_witness_alignment(
+            unresolved, output.get("witnessResolution", {}), prefix
+        )
+    )
     if output.get("humanReview", {}).get("status") != "unreviewed":
         errors.append(f"{prefix}: machine work must remain human-unreviewed")
     errors.extend(private_data_errors(output, prefix))
@@ -1112,8 +2079,13 @@ def merge_entry_shard(packet_path: Path, shard_path: Path) -> int:
     packet = load_json(packet_path)
     shard = load_json(shard_path)
     errors: list[str] = []
-    if packet.get("schemaVersion") != "1.1.0":
-        errors.append("packet: entry shards require packet schema 1.1.0")
+    if packet.get("postRunRepairAudit", {}).get("status") == "complete":
+        errors.append(
+            "packet: cannot merge a shard after post-run repairs; rebuild from the "
+            "pre-repair packet"
+        )
+    if packet.get("schemaVersion") != "1.2.0":
+        errors.append("packet: entry shards require packet schema 1.2.0")
     if shard.get("schemaVersion") != "1.0.0":
         errors.append("shard: schemaVersion must be 1.0.0")
     if shard.get("packetId") != packet.get("packetId"):
@@ -1161,6 +2133,15 @@ def merge_entry_shard(packet_path: Path, shard_path: Path) -> int:
         if output.get("sourceUnitId") != target.get("sourceUnitId"):
             errors.append(f"{prefix}: sourceUnitId does not match the packet")
         errors.extend(validate_entry_shard_output(output, policy_sha256, prefix))
+        errors.extend(
+            validate_names(
+                output.get("names", {}),
+                target.get("source", {}),
+                str(output.get("sourceUnitId")),
+                prefix,
+                require_spans=True,
+            )
+        )
         pending_updates.append((target, output))
     if errors:
         raise WorkflowError("\n".join(errors))
@@ -1177,6 +2158,11 @@ def merge_entry_shard(packet_path: Path, shard_path: Path) -> int:
     for target, output in pending_updates:
         for field in output_fields:
             target[field] = output[field]
+    packet["formulaInventory"] = {
+        "status": "pending",
+        "registryVersion": FORMULA_REGISTRY_VERSION,
+        "occurrences": [],
+    }
     packet["reviewPresentation"] = {"status": "pending", "path": None, "sha256": None}
     packet["machineReadiness"]["status"] = "pending"
     packet["machineReadiness"]["validatedAt"] = None
@@ -1189,6 +2175,11 @@ def merge_preceding_shard(packet_path: Path, shard_path: Path) -> int:
     packet = load_json(packet_path)
     shard = load_json(shard_path)
     errors: list[str] = []
+    if packet.get("postRunRepairAudit", {}).get("status") == "complete":
+        errors.append(
+            "packet: cannot merge a shard after post-run repairs; rebuild from the "
+            "pre-repair packet"
+        )
     single_envelope = {
         "schemaVersion",
         "packetId",
@@ -1204,8 +2195,10 @@ def merge_preceding_shard(packet_path: Path, shard_path: Path) -> int:
         "endUnit",
         "sourceUnits",
     }
-    if packet.get("schemaVersion") != "1.1.0" or shard.get("schemaVersion") != "1.1.0":
-        errors.append("structural shard: packet and shard must use schema 1.1.0")
+    if packet.get("schemaVersion") != "1.2.0" or shard.get("schemaVersion") != "1.1.0":
+        errors.append(
+            "structural shard: packet must use schema 1.2.0 and shard schema 1.1.0"
+        )
     if shard.get("packetId") != packet.get("packetId"):
         errors.append("structural shard: packetId does not match the target packet")
     assignment = packet.get("assignment", {})
@@ -1314,6 +2307,11 @@ def merge_preceding_shard(packet_path: Path, shard_path: Path) -> int:
 
     for target, translations in pending_updates:
         target["precedingTranslations"] = translations
+    packet["formulaInventory"] = {
+        "status": "pending",
+        "registryVersion": FORMULA_REGISTRY_VERSION,
+        "occurrences": [],
+    }
     packet["reviewPresentation"] = {"status": "pending", "path": None, "sha256": None}
     packet["machineReadiness"]["status"] = "pending"
     packet["machineReadiness"]["validatedAt"] = None
@@ -1323,8 +2321,16 @@ def merge_preceding_shard(packet_path: Path, shard_path: Path) -> int:
 
 def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list[str]:
     errors: list[str] = []
-    if packet.get("schemaVersion") != "1.1.0":
-        errors.append("packet: schemaVersion must be 1.1.0")
+    packet_schema = load_json(DEFAULT_PACKET_SCHEMA)
+    errors.extend(
+        f"packet schema: {error}"
+        for error in validate_schema_instance(packet, packet_schema)
+    )
+    errors.extend(validate_post_run_repair_audit(packet))
+    if packet.get("schemaVersion") != "1.2.0":
+        errors.append("packet: schemaVersion must be 1.2.0")
+    if packet.get("toolVersion") != TOOL_VERSION:
+        errors.append(f"packet: toolVersion must be {TOOL_VERSION}")
     if packet.get("workId") != "ibn-hajar-al-isabah":
         errors.append("packet: unexpected workId")
     assignment = packet.get("assignment")
@@ -1377,6 +2383,12 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
         for item in exclusions or []
     ):
         errors.append("packet: OpenITI metadata exclusion must be explicit")
+    inventory = packet.get("formulaInventory")
+    if not isinstance(inventory, dict) or inventory.get("status") not in {
+        "pending",
+        "complete",
+    }:
+        errors.append("packet: formula inventory state is missing")
 
     for index, entry in enumerate(entries):
         if not isinstance(entry, dict):
@@ -1482,62 +2494,133 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
         if not isinstance(critique.get("findings"), list):
             errors.append(f"{prefix}: critique findings must be an array")
 
-        witness = entry.get("witnessResolution", {})
-        requires_witness = any(
-            isinstance(finding, dict) and finding.get("requiresWitness") is True
-            for finding in critique.get("findings", [])
+        findings = critique.get("findings", [])
+        errors.extend(
+            validate_witness(
+                entry.get("witnessResolution", {}),
+                findings if isinstance(findings, list) else [],
+                prefix,
+                strict=True,
+            )
         )
-        if witness.get("status") not in {"complete", "not_required"}:
-            errors.append(f"{prefix}: witness resolution is not final")
-        if requires_witness and witness.get("status") != "complete":
-            errors.append(f"{prefix}: material critique requires witness resolution")
-        for result in witness.get("results", []):
-            if not isinstance(result, dict) or result.get("status") not in {"hit", "no_match"}:
-                errors.append(f"{prefix}: witness result must be hit or no_match")
 
         adjudication = entry.get("adjudication", {})
         if adjudication.get("status") != "complete" or not adjudication.get("english"):
             errors.append(f"{prefix}: adjudication is incomplete")
         if not isinstance(adjudication.get("decisions"), list):
             errors.append(f"{prefix}: adjudication decisions must be an array")
+        errors.extend(validate_public_english(blind.get("english"), f"{prefix}, blind"))
+        errors.extend(
+            validate_public_english(
+                adjudication.get("english"), f"{prefix}, adjudicated"
+            )
+        )
 
-        names = entry.get("names", {})
-        if names.get("status") != "complete" or not names.get("candidates"):
-            errors.append(f"{prefix}: durable name candidates are incomplete")
-        if not isinstance(names.get("mentions"), list):
-            errors.append(f"{prefix}: name mentions must be an array")
-        if not isinstance(entry.get("unresolved"), list):
-            errors.append(f"{prefix}: unresolved findings must be an array")
+        errors.extend(
+            validate_names(
+                entry.get("names", {}),
+                source,
+                str(entry.get("sourceUnitId")),
+                prefix,
+                require_spans=True,
+            )
+        )
+        unresolved = entry.get("unresolved")
+        errors.extend(validate_unresolved(unresolved, prefix, strict=True))
+        errors.extend(
+            validate_uncertainty_witness_alignment(
+                unresolved, entry.get("witnessResolution", {}), prefix
+            )
+        )
         if entry.get("humanReview", {}).get("status") != "unreviewed":
             errors.append(f"{prefix}: machine-ready work must remain human-unreviewed")
 
     if machine_ready:
+        candidate_ids: list[str] = []
+        mention_ids: list[str] = []
+        for entry in entries:
+            owners = [entry, *entry.get("precedingTranslations", [])]
+            for owner in owners:
+                names = owner.get("names", {})
+                candidate_ids.extend(
+                    candidate.get("candidateId")
+                    for candidate in names.get("candidates", [])
+                    if isinstance(candidate, dict)
+                    and isinstance(candidate.get("candidateId"), str)
+                )
+                mention_ids.extend(
+                    mention.get("mentionId")
+                    for mention in names.get("mentions", [])
+                    if isinstance(mention, dict)
+                    and isinstance(mention.get("mentionId"), str)
+                )
+        if len(candidate_ids) != len(set(candidate_ids)):
+            errors.append("packet: name candidate IDs must be globally unique")
+        if len(mention_ids) != len(set(mention_ids)):
+            errors.append("packet: name mention IDs must be globally unique")
+        expected_inventory, inventory_errors = formula_inventory(packet)
+        errors.extend(inventory_errors)
+        if packet.get("formulaInventory") != expected_inventory:
+            errors.append("packet: formula inventory is missing, stale, or incomplete")
         presentation = packet.get("reviewPresentation", {})
-        if presentation.get("status") != "ready" or not presentation.get("sha256"):
+        presentation_path = presentation.get("path")
+        if (
+            presentation.get("status") != "ready"
+            or not isinstance(presentation_path, str)
+            or not presentation_path
+            or Path(presentation_path).name != presentation_path
+            or not SHA256_RE.fullmatch(str(presentation.get("sha256", "")))
+        ):
             errors.append("packet: review presentation is not ready")
         readiness = packet.get("machineReadiness", {})
         if readiness.get("status") != "ready" or not readiness.get("validatedAt"):
             errors.append("packet: machine readiness is not finalized")
+        if readiness.get("validatorVersion") != TOOL_VERSION:
+            errors.append("packet: machine readiness used a stale validator")
     errors.extend(private_data_errors(packet))
     return errors
 
 
 def render_review(packet: dict[str, Any]) -> str:
+    authority = packet["authority"]
+    source_url = (
+        f"{authority['repository']}/blob/{authority['commit']}/{authority['path']}"
+    )
     lines = [
         f"# Al-Isabah translation review — issue #{packet['assignment']['issueNumber']}",
         "",
         f"- Packet: `{packet['packetId']}`",
-        f"- Source: `{packet['authority']['sourceId']}` at `{packet['authority']['commit']}`",
+        f"- Source: [{authority['sourceId']}]({source_url}) at `{authority['commit']}`",
+        f"- Source license: [{authority['license']['spdx']}]({authority['license']['url']})",
+        f"- Source attribution: {authority['license']['attribution']}",
         f"- Source units: {packet['assignment']['startUnit']}–{packet['assignment']['endUnit']}",
         "- Printed entries: "
         f"{packet['assignment']['printedEntryStart']}–"
         f"{packet['assignment']['printedEntryEnd']}",
         "- Machine state: ready for human review",
         "- Human review: unreviewed",
+        f"- Formula occurrences audited: {len(packet['formulaInventory']['occurrences'])}",
         "",
         "> English is a machine-ready candidate, not a canonical or human-approved translation.",
         "",
     ]
+    formula_key: dict[tuple[str, str, str], None] = {}
+    for occurrence in packet["formulaInventory"]["occurrences"]:
+        formula_key[
+            (
+                occurrence["targetRealization"],
+                occurrence["accessibleEnglish"],
+                occurrence["expandedArabic"],
+            )
+        ] = None
+    if formula_key:
+        lines.extend(["## Formula key", ""])
+        for realization, accessible, expanded_arabic in formula_key:
+            lines.append(
+                f"- `{realization}` — {accessible} "
+                f"_(expanded Arabic: {expanded_arabic})_"
+            )
+        lines.append("")
     for entry in packet["entries"]:
         for segment, translation in zip(
             entry["source"]["precedingSegments"],
@@ -1567,7 +2650,7 @@ def render_review(packet: dict[str, Any]) -> str:
             if heading_arabic:
                 lines.extend([f"**{heading_arabic}**", ""])
             if segment.get("arabic"):
-                lines.extend([segment["arabic"].strip(), ""])
+                lines.extend([present_openiti_arabic(segment["arabic"].strip()), ""])
             lines.extend(
                 [
                     "</div>",
@@ -1590,13 +2673,18 @@ def render_review(packet: dict[str, Any]) -> str:
                 "",
                 '<div dir="rtl" lang="ar">',
                 "",
-                entry["source"]["arabic"].strip(),
+                present_openiti_arabic(entry["source"]["arabic"].strip()),
                 "",
                 "</div>",
                 "",
                 "### Evidence state",
                 "",
                 f"- Source SHA-256: `{entry['source']['rawSha256']}`",
+                "- Source locations: "
+                + ", ".join(
+                    f"volume {item['volume']}, page {item['page']}"
+                    for item in entry["source"]["locations"]
+                ),
                 f"- Critique findings: {len(entry['independentCritique']['findings'])}",
                 f"- Witness resolution: `{entry['witnessResolution']['status']}`",
                 f"- Name candidates: {len(entry['names']['candidates'])}",
@@ -1607,13 +2695,21 @@ def render_review(packet: dict[str, Any]) -> str:
         if entry["unresolved"]:
             lines.extend(["#### Unresolved", ""])
             for finding in entry["unresolved"]:
-                lines.append(f"- {finding}")
+                lines.append(
+                    f"- **{finding['severity']} — {finding['kind']}**: "
+                    f"{finding['description']} "
+                    f"_(location: {finding['location']}; "
+                    f"disposition: {finding['disposition']})_"
+                )
             lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 
 
 def finalize_packet(packet_path: Path, presentation_path: Path | None = None) -> Path:
     packet = load_json(packet_path)
+    packet["formulaInventory"], formula_errors = formula_inventory(packet)
+    if formula_errors:
+        raise WorkflowError("\n".join(formula_errors))
     packet["reviewPresentation"] = {"status": "pending", "path": None, "sha256": None}
     packet["machineReadiness"] = {
         "status": "pending",
@@ -1623,8 +2719,16 @@ def finalize_packet(packet_path: Path, presentation_path: Path | None = None) ->
     errors = validate_packet(packet, machine_ready=False)
     readiness_candidate = {
         **packet,
-        "reviewPresentation": {"status": "ready", "sha256": "0" * 64},
-        "machineReadiness": {"status": "ready", "validatedAt": utc_now()},
+        "reviewPresentation": {
+            "status": "ready",
+            "path": "pending.review.md",
+            "sha256": "0" * 64,
+        },
+        "machineReadiness": {
+            "status": "ready",
+            "validatedAt": utc_now(),
+            "validatorVersion": TOOL_VERSION,
+        },
     }
     stage_errors = [
         error
@@ -1676,6 +2780,9 @@ def submit_packet(
         raise WorkflowError("submission: review presentation file is missing")
     if bytes_sha256(presentation.read_bytes()) != packet["reviewPresentation"]["sha256"]:
         raise WorkflowError("submission: review presentation hash does not match")
+    expected_presentation = render_review(packet).encode("utf-8")
+    if presentation.read_bytes() != expected_presentation:
+        raise WorkflowError("submission: review presentation does not match packet")
     issue_number = packet["assignment"]["issueNumber"]
     target_packet = output_root / f"issue-{issue_number:04d}.packet.json"
     target_review = output_root / f"issue-{issue_number:04d}.review.md"
