@@ -44,6 +44,11 @@ Before starting or modifying any translation, read in order:
 3. `docs/translation-profiles/al-isabah.md`; and
 4. `docs/contracts/entry-title-structure.md`.
 
+Then follow `docs/translation/agent-workflow.md` for the executable clone,
+doctor, hydrate, claim, prepare, translate, validate, render, and submit path.
+GitHub issues are the assignment ledger; do not translate an unclaimed or
+overlapping entry range.
+
 Do not hand work to a human merely because a first English draft exists. Human
 review is the last scholarly quality gate: exhaust the applicable source
 alignment, blind translation, independent critique, selective witness

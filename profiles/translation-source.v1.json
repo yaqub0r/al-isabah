@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "workId": "ibn-hajar-al-isabah",
+  "sourceId": "openiti-jk000533-5835c183",
+  "status": "active",
+  "sourceRevision": {
+    "repository": "https://github.com/OpenITI/0875AH",
+    "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+    "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.IsabaFiTamyiz/0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1.mARkdown"
+  },
+  "download": {
+    "url": "https://raw.githubusercontent.com/OpenITI/0875AH/5835c183b8bbf4ea454d5c1be2b168b669403771/data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.IsabaFiTamyiz/0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1.mARkdown",
+    "filename": "0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1.mARkdown",
+    "bytes": 9762988,
+    "sha256": "bc9db8134c8278973967c91c00324531833f643fc0fb2c8ebe318c9ed4469eea"
+  },
+  "license": {
+    "spdx": "CC-BY-NC-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "OpenITI, JK000533 transcription of Ibn Hajar al-Asqalani's al-Isabah fi Tamyiz al-Sahabah"
+  },
+  "format": {
+    "entryMarker": "^###\\s+\\$+\\s+(?<entryNumber>[0-9]+)\\s+",
+    "pageMarker": "PageV(?<volume>[0-9]{2})P(?<page>[0-9]{3})",
+    "volumes": 8
+  },
+  "inventory": {
+    "sourceUnits": 12303,
+    "uniquePrintedEntryNumbers": 12298,
+    "duplicatedPrintedEntryNumbers": [1311, 6986, 7760, 9634, 9635]
+  },
+  "complianceRecord": "compliance/source-register.v1.json#openiti-cleaned-arabic-comparison"
+}

@@ -29,8 +29,13 @@ jobs:
       - name: Parse workflow schema
         run: |
           python3 -m json.tool schemas/review-proposal.schema.json > /dev/null
+          python3 -m json.tool schemas/translation-work-packet.v1.schema.json > /dev/null
           python3 -m json.tool schemas/canonical-entry.v1.schema.json > /dev/null
           python3 -m json.tool schemas/identifier-ledger.v1.schema.json > /dev/null
+          python3 -m json.tool profiles/translation-source.v1.json > /dev/null
+
+      - name: Validate translation workflow
+        run: python3 scripts/translation_workflow.py doctor --offline
 
       - name: Validate canonical publication content
         run: python3 scripts/validate_content.py

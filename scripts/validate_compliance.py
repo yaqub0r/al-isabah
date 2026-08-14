@@ -40,6 +40,7 @@ REQUIRED_POLICIES = {
     "translation-quality-workflow": "docs/contracts/translation-quality-workflow.md",
     "al-isabah-translation-profile": "docs/translation-profiles/al-isabah.md",
     "entry-title-structure": "docs/contracts/entry-title-structure.md",
+    "translation-source-profile": "profiles/translation-source.v1.json",
 }
 REQUIRED_TRANSLATION_CONTROLS = {
     "source_authority",

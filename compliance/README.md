@@ -14,7 +14,8 @@ The policy binding is repository-local. It integrity-pins:
 
 - `translation-quality-workflow`;
 - `al-isabah-translation-profile`; and
-- `entry-title-structure`.
+- `entry-title-structure`; and
+- `translation-source-profile`.
 
 The binding, repository-relative paths, and canonical UTF-8/LF SHA-256 digests
 are recorded in [`policy-binding.v1.json`](policy-binding.v1.json). Validation fails if a
