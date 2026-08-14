@@ -108,8 +108,10 @@ python scripts/translation_workflow.py validate \
 
 ## 5. Complete the autonomous stages
 
-Edit only the packet's output fields. Never rewrite `authority`, `policy`,
-`assignment`, or any `source` field.
+For a single-worker range, edit only the packet's output fields. For a
+parallel whole-volume run, workers write disjoint ignored runtime shards and
+the coordinating agent merges them with the commands below. Never rewrite
+`authority`, `policy`, `assignment`, or any `source` field.
 
 For every entry:
 
@@ -123,7 +125,10 @@ For every entry:
 3. **Witness resolution** — set `not_required` only when no critique finding
    requires a witness. Otherwise record the smallest useful classified
    witness checks. Every result ends as `hit` or `no_match`; `unavailable`
-   remains a blocker rather than being converted to `no_match`.
+   remains a blocker rather than being converted to `no_match`. Record the
+   query, classified role, witness identity, exact passage, location, decision,
+   retrieval date, evidence kind, and passage/evidence hashes. A material or
+   blocking unresolved item also requires completed witness evidence.
 4. **Adjudication** — write the complete final candidate and record material
    decisions. Fluent wording must not hide an unresolved reading.
 5. **Names** — mark names complete and store durable JSON candidates and
@@ -132,10 +137,55 @@ For every entry:
 6. **Unresolved inventory** — retain an array even when it is empty.
 7. **Human state** — leave `humanReview.status` as `unreviewed`.
 
-A minimal name candidate contains a packet-scoped ID, observed Arabic form,
-proposed English form, aliases, confidence evidence, and review state. A
-mention points to the source unit and exact entry location. These fields stay
-JSON even when an application later projects them into a database.
+Do not silently rewrite a completed blind or adjudicated run during QA. If a
+deterministic repair is necessary, retain the original run provenance and add
+the packet-level `postRunRepairAudit`: it binds the base packet and repair
+artifact hashes, a distinct repair-run ID, every affected JSON field, the
+old/new text-hash chain, and the reason for the intervention. Machine readiness
+fails if the final field values drift from that audit.
+
+A minimal name candidate contains a packet-scoped ID, one person's observed
+Arabic form, proposed English form, aliases, confidence evidence, and review
+state. A genuine named group may instead be explicitly typed `collective`; do
+not use that escape hatch for an unsplit list of people. A mention points to the
+owning biography or structural segment through
+`recordId` and includes hashed exact spans in `headingArabic` or `arabic`;
+`rawOpeniti` may be supplementary, never the only readable binding. These
+fields stay JSON even when an application later projects them into a database.
+
+Parallel biography workers use a schema `1.0.0` shard envelope containing the
+packet ID, issue number, exact starting and ending source ordinals, and only
+the completed output fields for every source unit in that range. The
+coordinator applies a completed shard atomically:
+
+```sh
+python scripts/translation_workflow.py merge-shard \
+  --packet .runtime/translation/packets/issue-0025.json \
+  --shard .runtime/translation/shards/issue-0025-units-000001-000010.json
+```
+
+Structural and front-matter text is owned by the following source unit. A
+schema `1.1.0` structural shard may contain one source ordinal and translations
+whose segment IDs exactly match that unit's `source.precedingSegments`:
+
+```sh
+python scripts/translation_workflow.py merge-structure-shard \
+  --packet .runtime/translation/packets/issue-0025.json \
+  --shard .runtime/translation/shards/issue-0025-structure-before-unit-000001.json
+```
+
+A worker handling a range may instead provide `startUnit`, `endUnit`, and a
+`sourceUnits` array. Each array item contains `sourceOrdinal` and
+`precedingTranslations`. The array must be ordered and must exactly include
+every source unit in the declared range that owns structural material; units
+without structural material are omitted. The same command applies either
+shape atomically.
+
+Both commands reject wrong or missing ordinals, source-ID drift, stale policy
+hashes, non-final witnesses, reused critique runs, broken name references,
+private fields, and structural coverage gaps before writing. Shards and the
+working packet stay below ignored `.runtime`; only a complete validated
+proposal enters Git.
 
 ## 6. Render and finalize machine readiness
 
@@ -181,9 +231,11 @@ promotion remain later, independently recorded gates.
   them.
 - If the source, policy, or assignment changes, the old packet fails as stale;
   create a new packet and migrate decisions explicitly.
-- Divide work by non-overlapping printed-entry ranges. Topic cohorts may refer
-  to the same source entries for discovery, but they must not create competing
-  translation claims or new stable identities.
+- Divide work by non-overlapping source-ordinal ranges. Printed entry numbers
+  are searchable metadata and cannot be used as shard identity because five
+  printed numbers are duplicated. Topic cohorts may refer to the same source
+  entries for discovery, but they must not create competing translation claims
+  or new stable identities.
 - An interrupted agent leaves its issue open and packet local. Another agent
   takes over only after assignment is transferred on GitHub.
 
