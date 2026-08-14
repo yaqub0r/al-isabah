@@ -5,10 +5,11 @@
 
 ## Purpose
 
-This repository is the canonical, publication-ready scholarly record for
-*al-Isabah fi Tamyiz al-Sahabah*. Sabiqah prepares and approves content through
-its governed workflow; this repository preserves the approved edition and
-publishes reproducible, versioned releases.
+This repository is the canonical scholarly authority for
+*al-Isabah fi Tamyiz al-Sahabah*. It governs translation and review through its
+local contracts, preserves the approved edition, and publishes reproducible,
+versioned releases. Sabiqah may execute or present those workflows as a client,
+but it does not own the book's policy.
 
 This record defines repository responsibilities and trust boundaries. It does
 not establish the rights status of a particular source or replace qualified
@@ -18,6 +19,8 @@ legal review.
 
 The repository owns:
 
+- the translation-quality contract and Al-Isabah implementation profile;
+- source classification, translation runs, review state, and promotion rules;
 - approved canonical Arabic records and aligned English translations;
 - stable work, entry, segment, and source identifiers;
 - book-specific bibliographic provenance and rights basis for released content;
@@ -32,30 +35,28 @@ transcription base from witnesses consulted only for comparison. It should
 contain enough non-sensitive provenance to audit a released record without
 reproducing restricted evidence.
 
-## Responsibilities outside this repository
+## Responsibilities outside public Git
 
-Sabiqah governs:
+Restricted scans, OCR, witness translations, rights-holder correspondence,
+credentials, private storage locations, detailed comparison passages, and
+reconstructive model traces must not be committed here. They may live in
+project-approved access-controlled storage or be processed through a client
+application, but this repository still governs their identity, hash, witness
+role, allowed use, and effect on a translation decision. A provider's public
+availability is provenance, not by itself a reuse authorization.
 
-- acquisition and private storage of research witnesses;
-- rights assessment and clearance workflow;
-- detailed comparison material that is not approved for public release;
-- translation, contributor, scholarly-review, and compliance workflow;
-- accounts, invitations, reviewer reputation, and other application state; and
-- reader/editor presentation and deployment infrastructure.
-
-Restricted scans, OCR, translations, rights-holder correspondence, credentials,
-private storage locations, and reconstructive comparison files must not be
-committed here. A provider's public availability is provenance, not by itself a
-reuse authorization.
+Sabiqah governs its own accounts, invitations, reviewer reputation, application
+state, reader/editor presentation, and deployment infrastructure. Those are
+application responsibilities, not translation-policy authority.
 
 ## Promotion boundary
 
-Content enters this repository through an explicit, reviewed promotion from
-Sabiqah. Each promotion must identify:
+Content becomes canonical through an explicit, locally validated promotion.
+Each promotion must identify:
 
 - the content and provenance manifest;
-- the Sabiqah compliance-policy version applied;
-- the Sabiqah translation-quality policy version and passing attestations for
+- the repository-local compliance-policy binding applied;
+- the local translation-quality contract/profile versions and passing attestations for
   source authority, public-output eligibility, Arabic-form honorific
   preservation, and translation lineage;
 - the source commit or reproducible content hash;
@@ -63,15 +64,16 @@ Sabiqah. Each promotion must identify:
 - unresolved limitations that must remain visible to readers and reviewers.
 
 Repository validation and maintainer review are independent gates. Promotion
-does not permit Sabiqah or an agent to silently overwrite canonical Arabic,
+does not permit an application or agent to silently overwrite canonical Arabic,
 translation, provenance, or editorial history.
 
-Sabiqah may expose a separately validated `public-working` corpus before this
-promotion. Such a corpus must use approved public-source expression, carry its
-license and attribution, exclude private evidence, and quarantine failed
-records. Public readability is not an implicit promotion request: this
-repository accepts only the subset that later completes human scholarly review,
-compliance approval, and the manifest gates above.
+An application may expose a separately validated `public-working` corpus before
+canonical promotion. Such a corpus must use approved public-source expression,
+carry its license and attribution, exclude private evidence, and quarantine
+failed records under the local translation contract. Public readability is not
+an implicit promotion request: only the subset that later completes human
+scholarly review, compliance approval, and the manifest gates becomes
+canonical.
 
 ## Release and consumption
 

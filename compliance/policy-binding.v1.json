@@ -1,23 +1,27 @@
 {
-  "schema": "al-isabah.compliance-policy-binding.v1",
+  "schema": "al-isabah.local-policy-binding.v1",
   "authority": {
-    "repository": "https://github.com/yaqub0r/sabiqah",
-    "commit": "d25027ca73ff4a7dc9476e0d768e6361227e2c5b"
+    "repository": "https://github.com/yaqub0r/al-isabah",
+    "scope": "repository-local",
+    "issue": "https://github.com/yaqub0r/al-isabah/issues/22"
   },
   "contracts": [
     {
-      "id": "content-source-compliance",
-      "path": "docs/contracts/content-source-compliance.md"
-    },
-    {
       "id": "translation-quality-workflow",
-      "path": "docs/contracts/translation-quality-workflow.md"
+      "path": "docs/contracts/translation-quality-workflow.md",
+      "sha256": "fd8948f60217784874c0a343ccb0bbbac956201f85a678d8e9af3cac5015f2f3"
     },
     {
-      "id": "canonical-book-promotion",
-      "path": "docs/contracts/canonical-book-promotion.md"
+      "id": "al-isabah-translation-profile",
+      "path": "docs/translation-profiles/al-isabah.md",
+      "sha256": "ce15419a2a2d744dee10be8d81ba81ee2c5a7b9df257359501ed1788137903fe"
+    },
+    {
+      "id": "entry-title-structure",
+      "path": "docs/contracts/entry-title-structure.md",
+      "sha256": "4540032c15f622d2811191b13e3fdcbfc031ea0b0d5a1762197d040ad5f6c1a9"
     }
   ],
-  "applied_by_issue": "https://github.com/yaqub0r/al-isabah/issues/15",
-  "note": "This binding identifies the operational policy applied to these records; it is not a legal opinion."
+  "applied_by_issue": "https://github.com/yaqub0r/al-isabah/issues/22",
+  "note": "This binding makes Al-Isabah translation governance self-contained and integrity-pinned; it is not a legal opinion."
 }

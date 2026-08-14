@@ -16,7 +16,7 @@ requests. Use a closing reference only when all acceptance criteria are met.
 - Treat machine validation and human scholarly review as separate states.
 - Prefer reversible imports and derived projections over destructive rewrites.
 - Follow `docs/architecture/canonical-publication-repository.md` for the
-  repository's responsibilities and promotion boundary with Sabiqah.
+  repository's responsibilities and client/application boundary.
 - Accept only publication-ready content promoted with reviewable provenance and
   compliance metadata. Keep restricted research witnesses, reconstructive
   comparison output, and private storage details out of this repository.
@@ -30,6 +30,34 @@ requests. Use a closing reference only when all acceptance criteria are met.
   `compliance/promotions/`, then run `python -m unittest discover -s tests`.
   A passing structural check does not override a blocked or unresolved rights
   classification.
+
+## Translation workflow
+
+This repository is the authority for translating Al-Isabah. Sabiqah and other
+applications may execute or present the workflow, but their copies and runtime
+behavior never replace the policies in this repository.
+
+Before starting or modifying any translation, read in order:
+
+1. `docs/contracts/INDEX.md`;
+2. `docs/contracts/translation-quality-workflow.md`;
+3. `docs/translation-profiles/al-isabah.md`; and
+4. `docs/contracts/entry-title-structure.md`.
+
+Do not hand work to a human merely because a first English draft exists. Human
+review is the last scholarly quality gate: exhaust the applicable source
+alignment, blind translation, independent critique, selective witness
+resolution, adjudication, deterministic validation, name reconciliation, and
+bilingual presentation stages first. Preserve unresolved findings rather than
+hiding them with fluent wording.
+
+All contracts needed to make Al-Isabah translation decisions must remain local
+to this repository and integrity-bound by
+`compliance/policy-binding.v1.json`. A translation change may use restricted
+evidence in approved external storage, but it must not depend on policy text in
+another repository. Run `python -m unittest discover -s tests` before delivery;
+the suite fails when a required local policy file is missing or altered without
+updating its reviewed binding.
 
 ## Architecture
 
