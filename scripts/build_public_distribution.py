@@ -45,6 +45,15 @@ def sha256(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
+def utc_timestamp(value: str) -> str:
+    parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    if parsed.tzinfo is None:
+        raise DistributionError("generated timestamp must include a timezone")
+    return parsed.astimezone(timezone.utc).isoformat(timespec="seconds").replace(
+        "+00:00", "Z"
+    )
+
+
 def git_value(*args: str) -> str:
     result = subprocess.run(
         ["git", *args], cwd=ROOT, check=True, capture_output=True, text=True
@@ -403,7 +412,7 @@ def main() -> int:
     generated_at = args.generated_at or git_value("show", "-s", "--format=%cI", commit)
     if len(commit) != 40 or not re.fullmatch(r"[a-f0-9]{40}", commit):
         raise DistributionError("repository commit must be a full lowercase SHA-1")
-    datetime.fromisoformat(generated_at.replace("Z", "+00:00")).astimezone(timezone.utc)
+    generated_at = utc_timestamp(generated_at)
     manifest = build(args.output.resolve(), commit, generated_at)
     if args.archive:
         package(args.output.resolve(), args.archive.resolve())

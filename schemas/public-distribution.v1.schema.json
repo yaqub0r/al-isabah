@@ -45,7 +45,11 @@
         "commit": { "type": "string", "pattern": "^[a-f0-9]{40}$" }
       }
     },
-    "generatedAt": { "type": "string", "format": "date-time" },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$"
+    },
     "packets": {
       "type": "array",
       "minItems": 1,

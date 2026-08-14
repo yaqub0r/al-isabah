@@ -26,6 +26,12 @@ GENERATED_AT = "2026-08-14T16:22:30Z"
 
 
 class PublicDistributionTests(unittest.TestCase):
+    def test_generated_timestamp_is_normalized_to_utc_z_form(self):
+        self.assertEqual(
+            BUILD.utc_timestamp("2026-08-14T14:22:30-02:00"),
+            "2026-08-14T16:22:30Z",
+        )
+
     def test_packet_volume_uses_the_dominant_source_volume(self):
         packet = {
             "packetId": "volume-8-test",
@@ -75,6 +81,18 @@ class PublicDistributionTests(unittest.TestCase):
             errors = VALIDATE.validate(output)
             self.assertTrue(any("hash mismatch" in error for error in errors))
             self.assertTrue(any("duplicate stable record ID" in error for error in errors))
+
+    def test_validator_rejects_a_noncanonical_timestamp(self):
+        with tempfile.TemporaryDirectory() as temp:
+            output = Path(temp) / "distribution"
+            BUILD.build(output, COMMIT, GENERATED_AT)
+            manifest_path = output / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["generatedAt"] = "2026-08-14T16:22:30+00:00"
+            manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+            self.assertTrue(
+                any("UTC Z form" in error for error in VALIDATE.validate(output))
+            )
 
 
 if __name__ == "__main__":
