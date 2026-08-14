@@ -76,7 +76,7 @@ class ComplianceTests(unittest.TestCase):
             "promotion: eligible release requires every review to be approved", errors
         )
 
-    def test_policy_requires_translation_quality_contract(self):
+    def test_policy_requires_every_local_translation_policy(self):
         policy = copy.deepcopy(self.policy)
         policy["contracts"] = [
             contract
@@ -84,8 +84,26 @@ class ComplianceTests(unittest.TestCase):
             if contract["id"] != "translation-quality-workflow"
         ]
         self.assertIn(
-            "policy: all three pinned Sabiqah contracts are required",
+            "policy: all required local translation policies are required",
             self.validate(policy=policy),
+        )
+
+    def test_policy_rejects_external_translation_authority(self):
+        policy = copy.deepcopy(self.policy)
+        policy["authority"]["repository"] = "https://github.com/yaqub0r/sabiqah"
+        self.assertIn(
+            "policy: authority repository must be Al-Isabah",
+            self.validate(policy=policy),
+        )
+
+    def test_policy_rejects_stale_local_contract_hash(self):
+        policy = copy.deepcopy(self.policy)
+        policy["contracts"][0]["sha256"] = "0" * 64
+        self.assertTrue(
+            any(
+                error.endswith("sha256 does not match local file")
+                for error in self.validate(policy=policy)
+            )
         )
 
     def test_eligible_claim_requires_translation_quality_controls(self):

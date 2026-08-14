@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -35,10 +36,10 @@ REQUIRED_REVIEWS = {
     "human_scholarly",
     "canonical_repository",
 }
-REQUIRED_CONTRACTS = {
-    "content-source-compliance": "docs/contracts/content-source-compliance.md",
+REQUIRED_POLICIES = {
     "translation-quality-workflow": "docs/contracts/translation-quality-workflow.md",
-    "canonical-book-promotion": "docs/contracts/canonical-book-promotion.md",
+    "al-isabah-translation-profile": "docs/translation-profiles/al-isabah.md",
+    "entry-title-structure": "docs/contracts/entry-title-structure.md",
 }
 REQUIRED_TRANSLATION_CONTROLS = {
     "source_authority",
@@ -67,6 +68,12 @@ def load_json(path: Path) -> dict[str, Any]:
     return value
 
 
+def canonical_text_sha256(path: Path) -> str:
+    """Hash UTF-8 policy text with platform-independent LF line endings."""
+    text = path.read_text(encoding="utf-8").replace("\r\n", "\n").replace("\r", "\n")
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
 def _walk(value: Any, location: str = "$") -> list[str]:
     errors: list[str] = []
     if isinstance(value, dict):
@@ -85,22 +92,59 @@ def _walk(value: Any, location: str = "$") -> list[str]:
 
 def validate_policy(policy: dict[str, Any]) -> list[str]:
     errors: list[str] = []
-    if policy.get("schema") != "al-isabah.compliance-policy-binding.v1":
+    if policy.get("schema") != "al-isabah.local-policy-binding.v1":
         errors.append("policy: unexpected schema")
     authority = policy.get("authority")
-    if not isinstance(authority, dict) or not GIT_SHA.fullmatch(
-        str(authority.get("commit", ""))
-    ):
-        errors.append("policy: authority commit must be a full Git SHA")
-    elif authority.get("repository") != "https://github.com/yaqub0r/sabiqah":
-        errors.append("policy: authority repository must be the Sabiqah repository")
-    contracts = {
-        item.get("id"): item.get("path")
-        for item in policy.get("contracts", [])
-        if isinstance(item, dict)
-    }
-    if contracts != REQUIRED_CONTRACTS:
-        errors.append("policy: all three pinned Sabiqah contracts are required")
+    if not isinstance(authority, dict):
+        errors.append("policy: authority must be an object")
+    else:
+        if authority.get("repository") != "https://github.com/yaqub0r/al-isabah":
+            errors.append("policy: authority repository must be Al-Isabah")
+        if authority.get("scope") != "repository-local":
+            errors.append("policy: authority scope must be repository-local")
+
+    policies: dict[str, dict[str, Any]] = {}
+    for index, item in enumerate(policy.get("contracts", [])):
+        if not isinstance(item, dict):
+            errors.append(f"policy.contracts[{index}]: must be an object")
+            continue
+        policy_id = item.get("id")
+        if not isinstance(policy_id, str) or not policy_id:
+            errors.append(f"policy.contracts[{index}]: id is required")
+            continue
+        if policy_id in policies:
+            errors.append(f"policy.contracts[{index}]: duplicate id {policy_id}")
+        policies[policy_id] = item
+
+    if set(policies) != set(REQUIRED_POLICIES):
+        errors.append("policy: all required local translation policies are required")
+
+    for policy_id, expected_path in REQUIRED_POLICIES.items():
+        item = policies.get(policy_id)
+        if item is None:
+            continue
+        relative_path = item.get("path")
+        if relative_path != expected_path:
+            errors.append(f"policy: {policy_id} must use {expected_path}")
+            continue
+        candidate = (ROOT / expected_path).resolve()
+        try:
+            candidate.relative_to(ROOT.resolve())
+        except ValueError:
+            errors.append(f"policy: {policy_id} resolves outside the repository")
+            continue
+        if not candidate.is_file():
+            errors.append(f"policy: {policy_id} local file is missing")
+            continue
+        expected_sha = item.get("sha256")
+        if not isinstance(expected_sha, str) or not re.fullmatch(
+            r"[0-9a-f]{64}", expected_sha
+        ):
+            errors.append(f"policy: {policy_id} sha256 must be a SHA-256")
+            continue
+        actual_sha = canonical_text_sha256(candidate)
+        if actual_sha != expected_sha:
+            errors.append(f"policy: {policy_id} sha256 does not match local file")
     errors.extend(_walk(policy, "policy"))
     return errors
 

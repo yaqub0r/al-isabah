@@ -69,10 +69,13 @@ docs/
   decisions/
 ```
 
-Acquisition, restricted evidence, translation runs, comparison material, and
-pre-publication review corpora live in Sabiqah's governed private workflow.
-Only approved records, their book-specific public provenance, stable IDs, and
-deterministic publication validation enter this repository.
+Al-Isabah governs acquisition decisions, translation runs, comparison roles,
+and pre-publication review through its local contracts. Restricted source
+expression, model traces, and large immutable evidence may live in approved
+access-controlled storage; the repository retains their non-sensitive,
+hash-bound provenance and every policy needed to interpret them. Canonical
+content contains only approved records, their book-specific public provenance,
+stable IDs, and deterministic publication validation.
 
 ## Stable identifiers
 
@@ -133,17 +136,18 @@ Rendering must not make commentary appear to be Ibn Hajar's text.
 
 ## Promotion policy
 
-Candidate records remain in Sabiqah until its source-compliance and scholarly
-review gates approve an explicit promotion manifest. This repository validates
-the promoted record independently and refuses canonical content that lacks
-reviewed Arabic and English, an active stable identifier, source hashes, and
-promotion provenance. Import never silently overwrites canonical history.
+Candidate records remain non-canonical until the repository-local
+source-compliance and scholarly-review gates approve an explicit promotion
+manifest. Repository validation refuses canonical content that lacks reviewed
+Arabic and English, an active stable identifier, source hashes, and promotion
+provenance. Import never silently overwrites canonical history.
 
 ## Sabiqah reader and review workflow
 
-Sabiqah owns the static-first Astro reader, reusable React proposal editor,
+Sabiqah owns its static-first Astro reader, reusable React proposal editor,
 reviewer enrollment and reputation, and Cloudflare deployment. This repository
-does not contain or deploy a second web application.
+owns the translation and canonical-content contracts that those interfaces
+consume; it does not contain or deploy a second web application.
 
 Decap is available from the first beta as Sabiqah's replaceable GitHub workflow
 shell. Open Authoring creates a contributor-owned fork and a pull request to

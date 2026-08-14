@@ -9,16 +9,34 @@ Arabic text, aligned English translation, editorial annotations, stable
 identifiers, review state, book-specific provenance, and release history. Web
 and future mobile applications are clients of that dataset.
 
-[Sabiqah](https://github.com/yaqub0r/sabiqah) governs source acquisition,
-rights assessment and clearance, private research evidence, comparison,
-translation and review workflows, promotion, and public presentation. This
-repository receives publication-ready content through an explicit reviewed
-promotion. Restricted research witnesses and private comparison evidence do
-not belong here.
+This repository governs Al-Isabah source decisions, translation quality,
+review state, canonical promotion, and releases. Restricted research witnesses,
+credentials, and private comparison expression stay in approved external
+storage, while their non-sensitive identities, hashes, roles, and allowed uses
+remain governed here. [Sabiqah](https://github.com/yaqub0r/sabiqah) may provide
+reader and review interfaces, but it is a client of this repository's pinned
+contracts and releases rather than the translation authority.
 
 See the [canonical publication repository
 model](docs/architecture/canonical-publication-repository.md) for the complete
 responsibility and trust-boundary model.
+
+## Translating Al-Isabah
+
+Start with the [local contract index](docs/contracts/INDEX.md). It directs an
+agent through the required
+[translation-quality workflow](docs/contracts/translation-quality-workflow.md),
+the [Al-Isabah translation profile](docs/translation-profiles/al-isabah.md),
+and the [entry-title structure contract](docs/contracts/entry-title-structure.md).
+Together they specify the authoritative Arabic source, witness roles, stable
+units and JSON names, autonomous quality stages, human-review handoff, and
+promotion boundary.
+
+Human review is deliberately last. A draft must first complete every applicable
+autonomous alignment, blind translation, critique, witness, adjudication,
+validation, and readable-presentation step. The local compliance validator
+integrity-checks these policy files so a fresh clone cannot silently depend on
+translation rules stored in another repository.
 
 ## Entry structure
 
@@ -33,7 +51,7 @@ boundary reliably. Reader applications consume this structure and must not
 infer titles from typography or body length.
 
 The [source compliance register](compliance/source-register.v1.json) applies
-Sabiqah's pinned content contracts to the data currently available on the
+the repository-local policy binding to the data currently available on the
 Volume 8 and Khadijah development branches. The corresponding [promotion
 readiness manifest](compliance/promotions/available-data.v1.json) is
 **blocked**: the current Arabic and English records remain useful research and
@@ -59,8 +77,8 @@ Validate the active title-decision profile directly with:
 python scripts/validate_entry_titles.py
 ```
 
-Canonical publication records are validated separately from Sabiqah's private
-research corpus. Run `python scripts/validate_content.py`; it fails closed when
+Canonical publication records are validated separately from private research
+evidence. Run `python scripts/validate_content.py`; it fails closed when
 an entry lacks an active stable identifier, reviewed Arabic and English,
 compliance approval, source hashes, or an explicit promotion manifest.
 

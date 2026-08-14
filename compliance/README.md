@@ -1,7 +1,7 @@
 # Al-Isabah source compliance
 
-This directory applies Sabiqah's content-source and canonical-promotion
-contracts to the actual Al-Isabah material presently available for research
+This directory applies Al-Isabah's repository-local source, translation, and
+canonical-promotion controls to the material presently available for research
 and review.
 
 It is a public operational record, not a source-specific legal opinion. Public
@@ -10,15 +10,16 @@ permission to reproduce, adapt, or redistribute an artifact.
 
 ## Governing contracts
 
-The policy binding is pinned to Sabiqah merge commit
-`d25027ca73ff4a7dc9476e0d768e6361227e2c5b`:
+The policy binding is repository-local. It integrity-pins:
 
-- `content-source-compliance`
-- `translation-quality-workflow`
-- `canonical-book-promotion`
+- `translation-quality-workflow`;
+- `al-isabah-translation-profile`; and
+- `entry-title-structure`.
 
-The binding, contract paths, and integrity reference are recorded in
-[`policy-binding.v1.json`](policy-binding.v1.json).
+The binding, repository-relative paths, and canonical UTF-8/LF SHA-256 digests
+are recorded in [`policy-binding.v1.json`](policy-binding.v1.json). Validation fails if a
+required policy file is missing, changed without review, resolves outside the
+repository, or names another repository as its authority.
 
 ## Records
 
