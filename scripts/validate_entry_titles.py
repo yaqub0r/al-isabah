@@ -11,7 +11,7 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROFILE = ROOT / "profiles" / "entry-title-decisions.v1.json"
+PROFILE = ROOT / "profiles" / "entry-title-decisions.v2.json"
 GIT_SHA = re.compile(r"^[0-9a-f]{40}$")
 RELATIONSHIP_PROSE = re.compile(
     r"\b(?:the\s+)?(?:wife|mother|sister|daughter)\s+of\b|\b(?:mentioned|narrated)\b",
