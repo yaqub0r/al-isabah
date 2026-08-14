@@ -1,0 +1,81 @@
+import importlib.util
+import json
+import sys
+import tempfile
+import unittest
+import zipfile
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def load_module(name: str, path: Path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[name] = module
+    assert spec.loader is not None
+    spec.loader.exec_module(module)
+    return module
+
+
+BUILD = load_module("build_public_distribution", ROOT / "scripts" / "build_public_distribution.py")
+VALIDATE = load_module("validate_public_distribution", ROOT / "scripts" / "validate_public_distribution.py")
+COMMIT = "abd81f7eab94158be9e957d4b6f80751f1cc19e8"
+GENERATED_AT = "2026-08-14T16:22:30Z"
+
+
+class PublicDistributionTests(unittest.TestCase):
+    def test_packet_volume_uses_the_dominant_source_volume(self):
+        packet = {
+            "packetId": "volume-8-test",
+            "assignment": {},
+            "entries": [
+                {"source": {"locations": [{"volume": 8, "page": 1}]}},
+                {"source": {"locations": [{"volume": 8, "page": 2}]}},
+                {"source": {"locations": [{"volume": 7, "page": 600}]}},
+            ],
+        }
+        self.assertEqual(BUILD.packet_volume(packet), 8)
+
+    def test_real_volume_one_packet_is_complete_and_preserves_duplicate_printed_number(self):
+        with tempfile.TemporaryDirectory() as temp:
+            output = Path(temp) / "distribution"
+            manifest = BUILD.build(output, COMMIT, GENERATED_AT)
+            self.assertEqual(manifest["counts"]["entries"], 1537)
+            self.assertEqual(manifest["duplicatePrintedEntryNumbers"], [{
+                "printedEntryNumber": 1311,
+                "recordIds": ["openiti-5835c183-unit-001310", "openiti-5835c183-unit-001311"],
+            }])
+            self.assertEqual(VALIDATE.validate(output), [])
+
+    def test_archive_is_deterministic(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            output = root / "distribution"
+            BUILD.build(output, COMMIT, GENERATED_AT)
+            first = root / "first.zip"
+            second = root / "second.zip"
+            BUILD.package(output, first)
+            BUILD.package(output, second)
+            self.assertEqual(first.read_bytes(), second.read_bytes())
+            with zipfile.ZipFile(first) as archive:
+                self.assertEqual(sorted(archive.namelist()), ["manifest.json", "records/volume-01.jsonl"])
+
+    def test_validator_rejects_identity_collapse(self):
+        with tempfile.TemporaryDirectory() as temp:
+            output = Path(temp) / "distribution"
+            BUILD.build(output, COMMIT, GENERATED_AT)
+            shard = output / "records" / "volume-01.jsonl"
+            records = shard.read_text(encoding="utf-8").splitlines()
+            duplicate = json.loads(records[1310])
+            duplicate["id"] = json.loads(records[1309])["id"]
+            records[1310] = json.dumps(duplicate, ensure_ascii=False)
+            shard.write_text("\n".join(records) + "\n", encoding="utf-8")
+            errors = VALIDATE.validate(output)
+            self.assertTrue(any("hash mismatch" in error for error in errors))
+            self.assertTrue(any("duplicate stable record ID" in error for error in errors))
+
+
+if __name__ == "__main__":
+    unittest.main()

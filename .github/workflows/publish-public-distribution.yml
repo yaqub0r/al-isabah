@@ -1,0 +1,64 @@
+name: Publish public-working distribution
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "content/translation-proposals/**"
+      - "compliance/**"
+      - "profiles/**"
+      - "schemas/**"
+      - "scripts/build_public_distribution.py"
+      - "scripts/validate_public_distribution.py"
+      - ".github/workflows/publish-public-distribution.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: al-isabah-public-distribution
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Build, validate, and publish immutable bundle
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+
+      - name: Build deterministic distribution
+        run: |
+          set -euo pipefail
+          archive=".runtime/al-isabah-public-distribution-${GITHUB_SHA}.zip"
+          python3 scripts/build_public_distribution.py \
+            --output .runtime/public-distribution \
+            --archive "${archive}" \
+            --repository-commit "${GITHUB_SHA}"
+          python3 scripts/validate_public_distribution.py .runtime/public-distribution
+          echo "ARCHIVE=${archive}" >> "${GITHUB_ENV}"
+
+      - name: Publish commit-addressed public-working pre-release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          tag="public-working-${GITHUB_SHA}"
+          if gh release view "${tag}" >/dev/null 2>&1; then
+            echo "${tag} already exists; immutable release retained."
+            exit 0
+          fi
+          gh release create "${tag}" "${ARCHIVE}" \
+            --target "${GITHUB_SHA}" \
+            --title "Al-Isabah public-working distribution ${GITHUB_SHA::12}" \
+            --notes "Application-neutral, machine-ready public-working distribution. This is not a canonical or human-approved edition." \
+            --prerelease
