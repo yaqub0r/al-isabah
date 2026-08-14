@@ -6,7 +6,7 @@
 ## Purpose
 
 This repository is the canonical scholarly authority for
-*al-Isabah fi Tamyiz al-Sahabah*. It governs translation and review through its
+_al-Isabah fi Tamyiz al-Sahabah_. It governs translation and review through its
 local contracts, preserves the approved edition, and publishes reproducible,
 versioned releases. Sabiqah may execute or present those workflows as a client,
 but it does not own the book's policy.
@@ -82,6 +82,11 @@ only material approved for that release. Sabiqah and other consumers use the
 versioned release contract rather than private evidence or a mutable working
 branch. The repository remains platform-neutral: its domain model must not
 depend on Sabiqah's current web framework, hosting provider, or editorial UI.
+
+The application-neutral handoff is defined by the
+[public distribution contract](public-distribution.md). Consumers ingest that
+immutable contract rather than inspecting translation packets or depending on
+the repository's internal working layout.
 
 Corrections arrive as reviewable proposals with their rationale and evidence
 references. Accepted corrections create new history; they do not erase the

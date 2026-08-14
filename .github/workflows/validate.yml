@@ -33,6 +33,7 @@ jobs:
           python3 -m json.tool schemas/canonical-entry.v1.schema.json > /dev/null
           python3 -m json.tool schemas/identifier-ledger.v1.schema.json > /dev/null
           python3 -m json.tool profiles/translation-source.v1.json > /dev/null
+          python3 -m json.tool schemas/public-distribution.v1.schema.json > /dev/null
 
       - name: Validate translation workflow
         run: python3 scripts/translation_workflow.py doctor --offline
@@ -42,6 +43,13 @@ jobs:
 
       - name: Validate compliance records
         run: python3 scripts/validate_compliance.py
+
+      - name: Build and validate public distribution contract
+        run: |
+          python3 scripts/build_public_distribution.py \
+            --output .runtime/public-distribution \
+            --repository-commit "${GITHUB_SHA}"
+          python3 scripts/validate_public_distribution.py .runtime/public-distribution
 
       - name: Parse compliance schemas
         run: |
