@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://sabiqah.org/schemas/al-isabah/source-register.v1.schema.json",
+  "$id": "https://github.com/yaqub0r/al-isabah/compliance/schemas/source-register.v1.schema.json",
   "title": "Al-Isabah source compliance register v1",
   "type": "object",
   "required": [

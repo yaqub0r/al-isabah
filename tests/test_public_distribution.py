@@ -49,11 +49,30 @@ class PublicDistributionTests(unittest.TestCase):
             output = Path(temp) / "distribution"
             manifest = BUILD.build(output, COMMIT, GENERATED_AT)
             self.assertEqual(manifest["counts"]["entries"], 1537)
+            self.assertEqual(manifest["schemaVersion"], "2.0.0")
+            self.assertEqual(
+                manifest["rights"]["license"]["spdx"], "CC-BY-NC-SA-4.0"
+            )
+            self.assertIs(manifest["rights"]["softwareLicenseGranted"], False)
+            self.assertTrue(manifest["rights"]["attribution"])
+            self.assertTrue(manifest["rights"]["excludedMaterial"])
+            self.assertTrue(all("path" not in packet for packet in manifest["packets"]))
             self.assertEqual(manifest["duplicatePrintedEntryNumbers"], [{
                 "printedEntryNumber": 1311,
                 "recordIds": ["openiti-5835c183-unit-001310", "openiti-5835c183-unit-001311"],
             }])
             self.assertEqual(VALIDATE.validate(output), [])
+
+            first_record = json.loads(
+                (output / "records" / "volume-01.jsonl")
+                .read_text(encoding="utf-8")
+                .splitlines()[0]
+            )
+            self.assertEqual(set(first_record["policy"]), {"bindingSha256"})
+            self.assertFalse(
+                {"repository", "path", "lineStart", "lineEnd"}
+                & set(first_record["source"])
+            )
 
     def test_archive_is_deterministic(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -92,6 +111,18 @@ class PublicDistributionTests(unittest.TestCase):
             manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
             self.assertTrue(
                 any("UTC Z form" in error for error in VALIDATE.validate(output))
+            )
+
+    def test_validator_rejects_private_operational_fields(self):
+        with tempfile.TemporaryDirectory() as temp:
+            output = Path(temp) / "distribution"
+            BUILD.build(output, COMMIT, GENERATED_AT)
+            manifest_path = output / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["rights"]["credential"] = "not-a-real-secret"
+            manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+            self.assertTrue(
+                any("private field" in error for error in VALIDATE.validate(output))
             )
 
 

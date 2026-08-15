@@ -16,6 +16,52 @@ SHA256 = re.compile(r"^[a-f0-9]{64}$")
 COMMIT = re.compile(r"^[a-f0-9]{40}$")
 IDENTIFIER = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._:-]{2,199}$")
 UTC_TIMESTAMP = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z$")
+FORBIDDEN_MARKERS = (
+    "sabiqah",
+    "firstlight",
+    "elixir",
+    "usul.ai",
+    "lastpass",
+    "r2.cloudflarestorage.com",
+    "aws_access_key_id",
+    "aws_secret_access_key",
+    "schema.json",
+    "/api/",
+)
+FORBIDDEN_FIELDS = {
+    "api",
+    "api_url",
+    "bucket",
+    "credential",
+    "endpoint",
+    "local_path",
+    "object_key",
+    "private_path",
+    "private_url",
+    "schema_path",
+    "source_path",
+    "storage_location",
+    "token",
+}
+
+
+def public_boundary_errors(value: Any, location: str = "$") -> list[str]:
+    errors: list[str] = []
+    if isinstance(value, dict):
+        for key, child in value.items():
+            child_location = f"{location}.{key}"
+            if key.casefold() in FORBIDDEN_FIELDS:
+                errors.append(f"{child_location}: private field is not allowed")
+            errors.extend(public_boundary_errors(child, child_location))
+    elif isinstance(value, list):
+        for index, child in enumerate(value):
+            errors.extend(public_boundary_errors(child, f"{location}[{index}]"))
+    elif isinstance(value, str):
+        folded = value.casefold()
+        for marker in FORBIDDEN_MARKERS:
+            if marker in folded:
+                errors.append(f"{location}: private marker {marker!r} is not allowed")
+    return errors
 
 
 def digest(path: Path) -> str:
@@ -28,7 +74,7 @@ def validate(root: Path) -> list[str]:
     if not manifest_path.is_file():
         return ["manifest.json is missing"]
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    if manifest.get("schemaVersion") != "1.0.0":
+    if manifest.get("schemaVersion") != "2.0.0":
         errors.append("manifest: unsupported schema version")
     if manifest.get("publicationStatus") != "public-working":
         errors.append("manifest: publication status must be public-working")
@@ -47,6 +93,15 @@ def validate(root: Path) -> list[str]:
         errors.append("manifest: wrong repository authority")
     if not COMMIT.fullmatch(str(repository.get("commit", ""))):
         errors.append("manifest: invalid repository commit")
+    rights = manifest.get("rights", {})
+    if rights.get("license", {}).get("spdx") != "CC-BY-NC-SA-4.0":
+        errors.append("manifest: public content license must be CC BY-NC-SA 4.0")
+    if rights.get("softwareLicenseGranted") is not False:
+        errors.append("manifest: public content terms must not grant a software license")
+    if not rights.get("attribution"):
+        errors.append("manifest: public content attribution is required")
+    if not rights.get("excludedMaterial"):
+        errors.append("manifest: excluded material must be declared")
     authorities = {
         item.get("sourceId"): item for item in manifest.get("authorities", [])
     }
@@ -94,10 +149,15 @@ def validate(root: Path) -> list[str]:
                 errors.append(f"{relative}: records are not in stable source order")
             previous = order
             printed.setdefault(int(record.get("printedEntryNumber", 0)), []).append(record_id)
-            if record.get("schemaVersion") != "1.0.0" or record.get("kind") != "entry":
+            if record.get("schemaVersion") != "2.0.0" or record.get("kind") != "entry":
                 errors.append(f"{record_id}: unsupported record contract")
             if record.get("source", {}).get("authorityId") not in authorities:
                 errors.append(f"{record_id}: unknown source authority")
+            forbidden_source_fields = {"repository", "path", "lineStart", "lineEnd"}
+            if forbidden_source_fields.intersection(record.get("source", {})):
+                errors.append(f"{record_id}: source file locations are not public fields")
+            if set(record.get("policy", {})) != {"bindingSha256"}:
+                errors.append(f"{record_id}: policy internals are not public fields")
             if not record.get("title", {}).get("arabic") or not record.get("title", {}).get("english"):
                 errors.append(f"{record_id}: bilingual title is incomplete")
             if not str(record.get("arabic", "")).strip() or not str(record.get("english", "")).strip():
@@ -125,6 +185,14 @@ def validate(root: Path) -> list[str]:
     actual_duplicates = {number: ids for number, ids in printed.items() if len(ids) > 1}
     if declared_duplicates != actual_duplicates:
         errors.append("manifest: duplicate printed-entry inventory differs")
+    errors.extend(public_boundary_errors(manifest, "manifest"))
+    for path in sorted(root.glob("records/*.jsonl")):
+        records = [
+            json.loads(line)
+            for line in path.read_text(encoding="utf-8").splitlines()
+            if line
+        ]
+        errors.extend(public_boundary_errors(records, path.name))
     return errors
 
 

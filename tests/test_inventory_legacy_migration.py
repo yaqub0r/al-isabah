@@ -7,14 +7,14 @@ import unittest
 from pathlib import Path
 
 
-SCRIPT = Path(__file__).parents[1] / "scripts" / "inventory_firstlight.py"
-SPEC = importlib.util.spec_from_file_location("inventory_firstlight", SCRIPT)
+SCRIPT = Path(__file__).parents[1] / "scripts" / "inventory_legacy_migration.py"
+SPEC = importlib.util.spec_from_file_location("inventory_legacy_migration", SCRIPT)
 MODULE = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader
 SPEC.loader.exec_module(MODULE)
 
 
-class FirstLightInventoryTests(unittest.TestCase):
+class LegacyMigrationInventoryTests(unittest.TestCase):
     def test_inventory_is_deterministic_and_role_summarized(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

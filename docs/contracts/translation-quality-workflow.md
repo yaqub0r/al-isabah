@@ -25,7 +25,7 @@ releases. Restricted source expression and large immutable evidence may live
 in access-controlled storage, but their identities, hashes, roles, and allowed
 uses remain governed by this repository.
 
-Sabiqah, FirstLight, and other products may provide interfaces or consume
+Downstream products may provide interfaces or consume
 checksum-pinned releases. They do not define Al-Isabah's translation policy or
 become the scholarly authority by storing or displaying project artifacts.
 

@@ -2,7 +2,7 @@
 
 - **Status:** Accepted
 - **Issue:** [#28](https://github.com/yaqub0r/al-isabah/issues/28)
-- **Schema:** [`public-distribution.v1.schema.json`](../../schemas/public-distribution.v1.schema.json)
+- **Schema:** [`public-distribution.v2.schema.json`](../../schemas/public-distribution.v2.schema.json)
 
 ## Purpose
 
@@ -33,6 +33,19 @@ human-review state, unresolved findings, and formula inventory into the
 distribution. Restricted witnesses, private locators, credentials, model
 traces, and internal critique evidence are not distribution fields.
 
+The distribution also excludes downstream application and private research
+system names, private paths or storage locations, source-file paths and line
+coordinates, API details, schema locations, and operational credentials. It
+retains only the public scholarly provenance needed to identify and verify the
+approved edition: authority identifier, immutable source revision, artifact and
+record hashes, license, attribution, and human-readable page metadata. Internal
+packet paths and policy file inventories are not part of the public contract.
+
+Every distribution declares its book-level rights-matrix identifier, public
+content license, required attribution, and excluded material. The current
+eligible public scholarly content is CC BY-NC-SA 4.0. This is a content grant,
+not a software license; code and repository infrastructure remain outside it.
+
 An unreviewed record may be public-working. It is never represented as
 canonical. Ambiguous title projection remains visibly `needs_attention` and
 does not silently acquire human approval.
@@ -52,7 +65,10 @@ public-working distribution, not a declaration of canonical publication.
 
 ## Compatibility changes
 
-Additive fields may be introduced in a backward-compatible minor version.
+Additive fields may be introduced in a backward-compatible minor version. The
+2.0 contract adds explicit content-rights metadata and removes internal
+location details from newly produced bundles; v1 remains available for
+validating older immutable bundles.
 Removing or changing a required field, identity rule, public-state meaning, or
 checksum rule requires a new major version and coordinated consumer support.
 Applications pin a distribution ID and retain the previous immutable version

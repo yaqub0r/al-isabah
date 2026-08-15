@@ -2,13 +2,13 @@
 
 ## Product boundary
 
-Al-Isabah is a platform-neutral scholarly dataset with multiple clients. The
-Sabiqah reader and review editor, import and validation tools, and future
-clients consume explicit book-owned contracts rather than importing a web
-application from this repository.
+Al-Isabah is a platform-neutral scholarly dataset with multiple clients. Reader
+and review applications, import and validation tools, and future clients consume
+explicit book-owned contracts rather than importing a web application from this
+repository.
 
-The repository owns the scholarly truth. FirstLight is a downstream consumer
-of explicit, versioned releases; it does not own the canonical al-Isabah data.
+The repository owns the scholarly truth. Downstream applications consume
+explicit, versioned releases; they do not own the canonical Al-Isabah data.
 
 The product specification is guidance. Architecture should be added only when
 it protects the dataset or enables a demonstrated user workflow.
@@ -142,20 +142,19 @@ manifest. Repository validation refuses canonical content that lacks reviewed
 Arabic and English, an active stable identifier, source hashes, and promotion
 provenance. Import never silently overwrites canonical history.
 
-## Sabiqah reader and review workflow
+## Reader and review workflow
 
-Sabiqah owns its static-first Astro reader, reusable React proposal editor,
-reviewer enrollment and reputation, and Cloudflare deployment. This repository
-owns the translation and canonical-content contracts that those interfaces
-consume; it does not contain or deploy a second web application.
+A downstream application owns its reader and proposal editor, reviewer state,
+and deployment. This repository owns the translation and canonical-content
+contracts those interfaces consume; it does not contain or deploy a web
+application.
 
-Decap is available from the first beta as Sabiqah's replaceable GitHub workflow
-shell. Open Authoring creates a contributor-owned fork and a pull request to
-this repository. The Sabiqah editor emits a validated proposal; its Decap
-adapter stores the proposal in `content/review-proposals/` using
-`schemas/review-proposal.schema.json`. A proposal is not canonical scholarship
-and never silently changes Arabic. Repository validation and maintainer review
-must approve the corresponding editorial change.
+A consumer may use a replaceable GitHub workflow shell that creates a
+contributor-owned fork and pull request to this repository. Its editor emits a
+validated proposal using the repository's review-proposal contract. A proposal
+is not canonical scholarship and never silently changes Arabic. Repository
+validation and maintainer review must approve the corresponding editorial
+change.
 
 ## Search
 
@@ -164,23 +163,21 @@ and never rewrites canonical Arabic. The initial implementation may use
 Pagefind or another static index after representative Arabic and English
 queries are benchmarked.
 
-## FirstLight integration
+## Downstream integration
 
 Al-Isabah publishes a versioned data bundle and manifest containing hashes,
-schema versions, coverage, review state, and download locations. FirstLight
-pins a specific release and checksum. Story-specific annotations remain in
-FirstLight and refer to stable al-Isabah IDs.
+contract versions, coverage, and review state. A downstream application pins a
+specific release and checksum. Application-specific annotations remain outside
+this repository and refer to stable Al-Isabah IDs.
 
 No Git submodule is planned: a pinned release is easier to clone, validate,
 upgrade, and roll back.
 
-## Hosting and future API
+## Hosting and future interfaces
 
-Sabiqah deploys the public client through Cloudflare Workers Static Assets and
-uses R2 for large versioned objects. Hosting stays outside this book's domain
-model. A future mobile client consumes the same book releases or a generated
-API contract; this repository does not abstract a web UI into a cross-platform
-component system.
+Hosting stays outside this book's domain model. A future mobile client consumes
+the same book releases or a generated interface contract; this repository does
+not abstract a web UI into a cross-platform component system.
 
 ## Rights and publication
 

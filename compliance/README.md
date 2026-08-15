@@ -30,18 +30,21 @@ repository, or names another repository as its authority.
 - [`promotions/available-data.v1.json`](promotions/available-data.v1.json)
   evaluates the presently available Volume 8 and Khadijah data for promotion.
 - [`schemas/`](schemas/) defines the machine-readable record shapes.
+- [`rights-matrix.al-isabah.v1.json`](rights-matrix.al-isabah.v1.json) is the
+  pilot per-book decision record for source roles, allowed uses, public content
+  licensing, attribution, exclusions, review date, and follow-up triggers.
 - [`../scripts/validate_compliance.py`](../scripts/validate_compliance.py)
   rejects inconsistent or unsafe promotion claims.
 
 ## Current result
 
 Public working display and canonical promotion now have separate decisions.
-Sabiqah may anonymously serve `al-isabah-public-openiti-5835c18-v1` because all
+An application may anonymously serve `al-isabah-public-openiti-5835c18-v1` because all
 1,565 legacy book entries are rebuilt against the pinned licensed OpenITI
 authority, attributed under CC BY-NC-SA 4.0, and stripped of private apparatus
 and locators. The 1,496 translations that pass the public-output and Arabic-form
 honorific checks retain English; the other 69 entries remain public in approved
-Arabic while their legacy English is withheld. The 14 FirstLight contextual
+Arabic while their legacy English is withheld. The 14 legacy contextual
 passages are not book entries and remain named in the corpus quarantine ledger.
 
 Canonical promotion into this repository remains blocked. In particular:
@@ -64,3 +67,17 @@ honest reading and review; it does not convert machine-remediated records into
 the canonical scholarly edition. Promotion can be reconsidered after English
 lineage and scholarship are independently reviewed and every applicable
 repository gate passes.
+
+## Public content license and boundary
+
+Eligible public scholarly content is licensed under CC BY-NC-SA 4.0 with the
+attribution in [`../CONTENT_LICENSE.md`](../CONTENT_LICENSE.md). This grant does
+not apply to software, schemas, workflows, tests, or other code. It also does
+not reclassify restricted source material.
+
+Public distributions contain no downstream application or private research
+system names, private evidence expression, OCR, credentials, operational
+details, private paths, storage locations, API details, schema locations, or
+source-file locations. Public scholarly provenance remains hash-bound through
+edition identifiers, immutable revisions, record hashes, license and
+attribution, without publishing those operational locators.

@@ -13,9 +13,8 @@ This repository governs Al-Isabah source decisions, translation quality,
 review state, canonical promotion, and releases. Restricted research witnesses,
 credentials, and private comparison expression stay in approved external
 storage, while their non-sensitive identities, hashes, roles, and allowed uses
-remain governed here. [Sabiqah](https://github.com/yaqub0r/sabiqah) may provide
-reader and review interfaces, but it is a client of this repository's pinned
-contracts and releases rather than the translation authority.
+remain governed here. Reader and review applications are clients of this
+repository's pinned contracts and releases rather than translation authorities.
 
 See the [canonical publication repository
 model](docs/architecture/canonical-publication-repository.md) for the complete
@@ -39,7 +38,7 @@ integrity-checks these policy files so a fresh clone cannot silently depend on
 translation rules stored in another repository.
 
 The [agent translation runbook](docs/translation/agent-workflow.md) turns that
-contract into one distributable path that requires no Sabiqah checkout or model
+contract into one distributable path that requires no downstream application checkout or model
 API key:
 
 ```sh
@@ -78,8 +77,12 @@ readiness manifest](compliance/promotions/available-data.v1.json) is
 review material, but they are not approved for a public release.
 
 The repository is public, but public repository visibility is not a rights or
-release decision for any source artifact. Only reviewed, publication-ready
-content belongs in versioned public releases.
+release decision for any source artifact. Eligible public scholarly content is
+available under CC BY-NC-SA 4.0 only when the per-book rights matrix and an
+applicable publication manifest approve it. See the [content license](CONTENT_LICENSE.md)
+and [pilot rights matrix](compliance/rights-matrix.al-isabah.v1.json). Software,
+schemas, workflows, tests, and other code are outside that grant; no software
+license has been selected.
 
 Repository-model documentation is tracked in [issue
 #9](https://github.com/yaqub0r/al-isabah/issues/9). Initial repository work is
@@ -102,7 +105,7 @@ evidence. Run `python scripts/validate_content.py`; it fails closed when
 an entry lacks an active stable identifier, reviewed Arabic and English,
 compliance approval, source hashes, or an explicit promotion manifest.
 
-The legacy Volume 8 and Khadijah development work was retained for authenticated
-review in Sabiqah rather than promoted here. Its non-sensitive integrity and
-retirement record is in `compliance/research-retirement.v1.json`.
+The legacy Volume 8 and Khadijah development work was retained in approved
+access-controlled research storage rather than promoted here. Its non-sensitive
+integrity and retirement record is in `compliance/research-retirement.v1.json`.
 

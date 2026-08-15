@@ -34,6 +34,7 @@ jobs:
           python3 -m json.tool schemas/identifier-ledger.v1.schema.json > /dev/null
           python3 -m json.tool profiles/translation-source.v1.json > /dev/null
           python3 -m json.tool schemas/public-distribution.v1.schema.json > /dev/null
+          python3 -m json.tool schemas/public-distribution.v2.schema.json > /dev/null
 
       - name: Validate translation workflow
         run: python3 scripts/translation_workflow.py doctor --offline
@@ -55,3 +56,5 @@ jobs:
         run: |
           python3 -m json.tool compliance/schemas/source-register.v1.schema.json > /dev/null
           python3 -m json.tool compliance/schemas/promotion-readiness.v1.schema.json > /dev/null
+          python3 -m json.tool compliance/schemas/book-rights-matrix.v1.schema.json > /dev/null
+          python3 -m json.tool compliance/rights-matrix.al-isabah.v1.json > /dev/null

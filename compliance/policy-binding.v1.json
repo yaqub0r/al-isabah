@@ -9,12 +9,12 @@
     {
       "id": "translation-quality-workflow",
       "path": "docs/contracts/translation-quality-workflow.md",
-      "sha256": "fd8948f60217784874c0a343ccb0bbbac956201f85a678d8e9af3cac5015f2f3"
+      "sha256": "99de91a42958370557356537eb544165b6c243ac1ae08e686fce5ac972d9ccf1"
     },
     {
       "id": "al-isabah-translation-profile",
       "path": "docs/translation-profiles/al-isabah.md",
-      "sha256": "ce15419a2a2d744dee10be8d81ba81ee2c5a7b9df257359501ed1788137903fe"
+      "sha256": "298402265b5edfaa136fa32d24e5c54bb24d38c5afe92eda37f736eb5792b89e"
     },
     {
       "id": "entry-title-structure",
@@ -27,6 +27,6 @@
       "sha256": "c3db1e037a9f98ed7c6ada57d076084e5451c5651ed972ea68867ed5ad580ead"
     }
   ],
-  "applied_by_issue": "https://github.com/yaqub0r/al-isabah/issues/22",
+  "applied_by_issue": "https://github.com/yaqub0r/al-isabah/issues/32",
   "note": "This binding makes Al-Isabah translation governance self-contained and integrity-pinned; it is not a legal opinion."
 }

@@ -4,10 +4,11 @@
   "work_id": "ibn-hajar-al-isabah",
   "policy_binding": "compliance/policy-binding.v1.json",
   "source_register": "compliance/source-register.v1.json",
+  "rights_matrix": "compliance/rights-matrix.al-isabah.v1.json",
   "status": "blocked",
   "public_release_eligible": false,
   "working_publication": {
-    "artifact": "sabiqah-public-working-corpus-openiti-5835c18-v1",
+    "artifact": "al-isabah-public-working-corpus-openiti-5835c18-v1",
     "corpus_id": "al-isabah-public-openiti-5835c18-v1",
     "status": "public-working",
     "canonical_promotion": "blocked",
@@ -71,5 +72,5 @@
       "summary": "Complete human scholarly review and resolve or explicitly carry forward all remaining uncertainties."
     }
   ],
-  "decision": "Serve only the validated Sabiqah public-working corpus with its license, attribution, review state, and quarantine exclusions. Preserve the legacy candidate data privately and do not promote any record as an approved canonical release until the independent repository gates pass."
+  "decision": "Serve only the validated application-neutral public-working corpus with its license, attribution, review state, and quarantine exclusions. Preserve the legacy candidate data privately and do not promote any record as an approved canonical release until the independent repository gates pass."
 }
