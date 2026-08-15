@@ -79,7 +79,7 @@ review material, but they are not approved for a public release.
 The repository is public, but public repository visibility is not a rights or
 release decision for any source artifact. Eligible public scholarly content is
 available under CC BY-NC-SA 4.0 only when the per-book rights matrix and an
-applicable publication manifest approve it. See the [content license](CONTENT_LICENSE.md)
+applicable publication manifest approve it. See the [scholarly-content rights notice](SCHOLARLY_CONTENT_RIGHTS.md)
 and [pilot rights matrix](compliance/rights-matrix.al-isabah.v1.json). Software,
 schemas, workflows, tests, and other code are outside that grant; no software
 license has been selected.

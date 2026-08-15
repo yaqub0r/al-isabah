@@ -1,4 +1,4 @@
-# License for eligible public scholarly content
+# Rights notice for eligible public scholarly content
 
 The eligible public scholarly content published by the Al-Isabah project is
 licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0
