@@ -3,7 +3,7 @@
 This is the executable path for distributing Al-Isabah translation across
 independent Codex agents. An agent needs this repository, Python 3.11 or later,
 Git, GitHub CLI authentication for claiming work, and network access only to
-hydrate the pinned public OpenITI source. Sabiqah, a database, and a model API
+hydrate the pinned public OpenITI source. A downstream application, database, and model service
 key are not prerequisites.
 
 The repository contract remains authoritative. Read, in order:

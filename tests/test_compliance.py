@@ -20,13 +20,15 @@ class ComplianceTests(unittest.TestCase):
         cls.register = MODULE.load_json(MODULE.REGISTER_PATH)
         cls.promotion = MODULE.load_json(MODULE.PROMOTION_PATH)
         cls.retirement = MODULE.load_json(MODULE.RETIREMENT_PATH)
+        cls.rights_matrix = MODULE.load_json(MODULE.RIGHTS_MATRIX_PATH)
 
-    def validate(self, *, policy=None, register=None, promotion=None):
+    def validate(self, *, policy=None, register=None, promotion=None, rights_matrix=None):
         return MODULE.validate_all(
             copy.deepcopy(policy or self.policy),
             copy.deepcopy(register or self.register),
             copy.deepcopy(promotion or self.promotion),
             copy.deepcopy(self.retirement),
+            copy.deepcopy(rights_matrix or self.rights_matrix),
         )
 
     def test_current_blocked_manifest_is_valid(self):
@@ -177,7 +179,7 @@ class ComplianceTests(unittest.TestCase):
         artifact = next(
             item
             for item in register["artifacts"]
-            if item["id"] == "sabiqah-public-working-corpus-openiti-5835c18-v1"
+            if item["id"] == MODULE.PUBLIC_CORPUS_ID
         )
         artifact["integrity"]["arabic_only_entries"] -= 1
         errors = self.validate(register=register)
@@ -191,7 +193,7 @@ class ComplianceTests(unittest.TestCase):
         artifact = next(
             item
             for item in register["artifacts"]
-            if item["id"] == "sabiqah-public-working-corpus-openiti-5835c18-v1"
+            if item["id"] == MODULE.PUBLIC_CORPUS_ID
         )
         artifact["integrity"]["excluded_contextual_passages"] -= 1
         errors = self.validate(register=register)
@@ -205,7 +207,7 @@ class ComplianceTests(unittest.TestCase):
         artifact = next(
             item
             for item in register["artifacts"]
-            if item["id"] == "sabiqah-public-working-corpus-openiti-5835c18-v1"
+            if item["id"] == MODULE.PUBLIC_CORPUS_ID
         )
         artifact["classification"] = "unresolved"
         errors = self.validate(register=register)
@@ -218,6 +220,14 @@ class ComplianceTests(unittest.TestCase):
         promotion["candidate_revisions"][0]["dependencies"].append("not-registered")
         errors = self.validate(promotion=promotion)
         self.assertTrue(any("unknown dependency not-registered" in e for e in errors))
+
+    def test_promotion_must_link_the_book_rights_matrix(self):
+        promotion = copy.deepcopy(self.promotion)
+        promotion["rights_matrix"] = "compliance/other-rights.json"
+        self.assertIn(
+            "promotion: rights matrix must use the repository-relative v1 path",
+            self.validate(promotion=promotion),
+        )
 
     def test_private_storage_fields_fail(self):
         register = copy.deepcopy(self.register)
@@ -245,10 +255,44 @@ class ComplianceTests(unittest.TestCase):
 
     def test_retirement_record_requires_canonical_archive(self):
         retirement = copy.deepcopy(self.retirement)
-        retirement["sabiqah_snapshot"]["archive_format"] = "git-archive-tar"
+        retirement["external_private_snapshot"]["archive_format"] = "git-archive-tar"
         errors = MODULE.validate_retirement(retirement)
         self.assertIn(
             "retirement: archive format must be canonical-git-tree-tar-v1", errors
+        )
+
+    def test_rights_matrix_requires_exact_openiti_pin(self):
+        matrix = copy.deepcopy(self.rights_matrix)
+        source = next(
+            item
+            for item in matrix["source_editions"]
+            if item["source_id"] == "openiti-cleaned-arabic-comparison"
+        )
+        source["sha256"] = "0" * 64
+        self.assertIn(
+            "rights matrix: OpenITI artifact hash is not pinned",
+            self.validate(rights_matrix=matrix),
+        )
+
+    def test_rights_matrix_keeps_private_witnesses_private(self):
+        matrix = copy.deepcopy(self.rights_matrix)
+        source = next(
+            item
+            for item in matrix["source_editions"]
+            if item["source_id"] == "urdu-modern-translation-witness"
+        )
+        source["publication_role"] = "arabic-publication-base"
+        self.assertIn(
+            "rights matrix: urdu-modern-translation-witness must remain private-reference-only",
+            self.validate(rights_matrix=matrix),
+        )
+
+    def test_rights_matrix_does_not_grant_software_terms(self):
+        matrix = copy.deepcopy(self.rights_matrix)
+        matrix["public_content_license"]["software_license_granted"] = True
+        self.assertIn(
+            "rights matrix: software must remain outside the content grant",
+            self.validate(rights_matrix=matrix),
         )
 
 

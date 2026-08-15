@@ -18,16 +18,37 @@ from typing import Any, Iterable
 
 ROOT = Path(__file__).resolve().parents[1]
 PACKETS = ROOT / "content" / "translation-proposals"
-SCHEMA_VERSION = "1.0.0"
+SCHEMA_VERSION = "2.0.0"
 WORK_ID = "ibn-hajar-al-isabah"
 REPOSITORY = "https://github.com/yaqub0r/al-isabah"
+RIGHTS_MATRIX = ROOT / "compliance" / "rights-matrix.al-isabah.v1.json"
 PRIVATE_MARKERS = (
+    "sabiqah",
+    "firstlight",
+    "elixir",
     "usul.ai",
     "lastpass",
     "r2.cloudflarestorage.com",
     "aws_access_key_id",
     "aws_secret_access_key",
+    "schema.json",
+    "/api/",
 )
+PRIVATE_KEYS = {
+    "api",
+    "api_url",
+    "bucket",
+    "credential",
+    "endpoint",
+    "local_path",
+    "object_key",
+    "private_path",
+    "private_url",
+    "schema_path",
+    "source_path",
+    "storage_location",
+    "token",
+}
 
 
 class DistributionError(RuntimeError):
@@ -249,18 +270,13 @@ def record_for(
         "humanReview": entry["humanReview"]["status"],
         "source": {
             "authorityId": packet["authority"]["sourceId"],
-            "repository": packet["authority"]["repository"],
             "commit": packet["authority"]["commit"],
-            "path": packet["authority"]["path"],
             "artifactSha256": packet["authority"]["sha256"],
             "exactTextSha256": source["rawSha256"],
-            "lineStart": int(source["lineStart"]),
-            "lineEnd": int(source["lineEnd"]),
             "license": packet["authority"]["license"],
         },
         "policy": {
             "bindingSha256": packet["policy"]["bindingSha256"],
-            "contracts": packet["policy"]["contracts"],
         },
     }
 
@@ -282,11 +298,28 @@ def packet_volume(packet: dict[str, Any]) -> int:
     return winners[0]
 
 
-def validate_no_private_markers(value: Any, label: str) -> None:
+def private_keys(value: Any, location: str = "$") -> list[str]:
+    found: list[str] = []
+    if isinstance(value, dict):
+        for key, child in value.items():
+            child_location = f"{location}.{key}"
+            if key.casefold() in PRIVATE_KEYS:
+                found.append(child_location)
+            found.extend(private_keys(child, child_location))
+    elif isinstance(value, list):
+        for index, child in enumerate(value):
+            found.extend(private_keys(child, f"{location}[{index}]"))
+    return found
+
+
+def validate_public_boundary(value: Any, label: str) -> None:
     serialized = json.dumps(value, ensure_ascii=False).casefold()
     found = [marker for marker in PRIVATE_MARKERS if marker in serialized]
     if found:
         raise DistributionError(f"{label}: private marker present: {', '.join(found)}")
+    keys = private_keys(value)
+    if keys:
+        raise DistributionError(f"{label}: private field present: {', '.join(keys)}")
 
 
 def load_packets() -> list[tuple[Path, dict[str, Any]]]:
@@ -297,7 +330,6 @@ def load_packets() -> list[tuple[Path, dict[str, Any]]]:
             continue
         if packet.get("reviewPresentation", {}).get("status") != "ready":
             raise DistributionError(f"{path.name}: review presentation is not ready")
-        validate_no_private_markers(packet.get("authority", {}), path.name)
         result.append((path, packet))
     if not result:
         raise DistributionError("no machine-ready translation packets were found")
@@ -319,13 +351,17 @@ def build(output: Path, repository_commit: str, generated_at: str) -> dict[str, 
         packet_records.append(
             {
                 "packetId": packet["packetId"],
-                "path": path.relative_to(ROOT).as_posix(),
                 "sha256": sha256(path.read_bytes()),
                 "entryCount": len(packet["entries"]),
             }
         )
         authority = packet["authority"]
-        authorities[authority["sourceId"]] = authority
+        authorities[authority["sourceId"]] = {
+            "sourceId": authority["sourceId"],
+            "commit": authority["commit"],
+            "sha256": authority["sha256"],
+            "license": authority["license"],
+        }
         for entry in packet["entries"]:
             record = record_for(packet, entry, formulas, volume)
             if record["id"] in seen_ids:
@@ -360,6 +396,8 @@ def build(output: Path, repository_commit: str, generated_at: str) -> dict[str, 
         if len(ids) > 1
     ]
     distribution_id = f"al-isabah-public-working-{repository_commit[:12]}"
+    rights_matrix = json.loads(RIGHTS_MATRIX.read_text(encoding="utf-8"))
+    content_license = rights_matrix["public_content_license"]
     manifest = {
         "schemaVersion": SCHEMA_VERSION,
         "distributionId": distribution_id,
@@ -372,6 +410,16 @@ def build(output: Path, repository_commit: str, generated_at: str) -> dict[str, 
         },
         "repository": {"url": REPOSITORY, "commit": repository_commit},
         "generatedAt": generated_at,
+        "rights": {
+            "matrixId": rights_matrix["matrix_id"],
+            "license": {
+                "spdx": content_license["spdx"],
+                "url": content_license["url"],
+            },
+            "softwareLicenseGranted": content_license["software_license_granted"],
+            "attribution": rights_matrix["attribution"],
+            "excludedMaterial": rights_matrix["exclusions"],
+        },
         "packets": packet_records,
         "authorities": list(authorities.values()),
         "counts": {
@@ -383,7 +431,9 @@ def build(output: Path, repository_commit: str, generated_at: str) -> dict[str, 
         "duplicatePrintedEntryNumbers": duplicate_printed,
         "files": files,
     }
-    validate_no_private_markers(manifest, "manifest")
+    validate_public_boundary(manifest, "manifest")
+    for volume, records in records_by_volume.items():
+        validate_public_boundary(records, f"volume {volume} records")
     (output / "manifest.json").write_bytes(canonical_json(manifest))
     return manifest
 

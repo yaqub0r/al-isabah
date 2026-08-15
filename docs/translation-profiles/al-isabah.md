@@ -161,7 +161,7 @@ honorific phrases so the compact character attaches to its referent, and its
 validator rejects regressions such as `the Prophet, ﷺ`. Every version is
 immutable and bound to its own generated manifest.
 
-The former FirstLight implementation, Sabiqah copies, and closed Al-Isabah
+Former downstream implementations, external copies, and closed Al-Isabah
 development branches are historical evidence, not governing locations.
 Al-Isabah owns future translation execution, this profile, human-review state,
 compliance approval, and explicit promotion. External applications may execute

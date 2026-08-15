@@ -8,7 +8,7 @@
 This repository is the canonical scholarly authority for
 _al-Isabah fi Tamyiz al-Sahabah_. It governs translation and review through its
 local contracts, preserves the approved edition, and publishes reproducible,
-versioned releases. Sabiqah may execute or present those workflows as a client,
+versioned releases. A downstream application may execute or present those workflows as a client,
 but it does not own the book's policy.
 
 This record defines repository responsibilities and trust boundaries. It does
@@ -45,8 +45,8 @@ application, but this repository still governs their identity, hash, witness
 role, allowed use, and effect on a translation decision. A provider's public
 availability is provenance, not by itself a reuse authorization.
 
-Sabiqah governs its own accounts, invitations, reviewer reputation, application
-state, reader/editor presentation, and deployment infrastructure. Those are
+Each downstream application governs its own accounts, invitations, reviewer
+reputation, application state, reader/editor presentation, and deployment infrastructure. Those are
 application responsibilities, not translation-policy authority.
 
 ## Promotion boundary
@@ -78,10 +78,10 @@ canonical.
 ## Release and consumption
 
 Every public release is pinned to an immutable repository state and contains
-only material approved for that release. Sabiqah and other consumers use the
+only material approved for that release. Consumers use the
 versioned release contract rather than private evidence or a mutable working
 branch. The repository remains platform-neutral: its domain model must not
-depend on Sabiqah's current web framework, hosting provider, or editorial UI.
+depend on a consumer's current web framework, hosting provider, or editorial UI.
 
 The application-neutral handoff is defined by the
 [public distribution contract](public-distribution.md). Consumers ingest that

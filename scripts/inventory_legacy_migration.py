@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create a deterministic SHA-256 inventory for the FirstLight migration.
+"""Create a deterministic SHA-256 inventory for a controlled legacy migration.
 
 The source tree is read-only. Paths are repository-relative, symlinks are
 rejected, and duplicate inclusion is an error so the inventory has one clear
@@ -14,8 +14,8 @@ from collections import defaultdict
 from pathlib import Path, PurePosixPath
 
 
-SCOPE_SCHEMA = "al-isabah.firstlight-migration-scope.v1"
-INVENTORY_SCHEMA = "al-isabah.firstlight-migration-inventory.v1"
+SCOPE_SCHEMA = "al-isabah.legacy-migration-scope.v1"
+INVENTORY_SCHEMA = "al-isabah.legacy-migration-inventory.v1"
 
 
 def sha256_file(path: Path) -> str:

@@ -17,6 +17,7 @@ REGISTER_PATH = ROOT / "compliance" / "source-register.v1.json"
 PROMOTION_PATH = ROOT / "compliance" / "promotions" / "available-data.v1.json"
 POLICY_PATH = ROOT / "compliance" / "policy-binding.v1.json"
 RETIREMENT_PATH = ROOT / "compliance" / "research-retirement.v1.json"
+RIGHTS_MATRIX_PATH = ROOT / "compliance" / "rights-matrix.al-isabah.v1.json"
 
 CLASSIFICATIONS = {
     "approved-for-publication",
@@ -55,6 +56,16 @@ WORKING_PUBLICATION_GATES = {
     "honorific_preservation",
     "canonical_human_review",
 }
+REQUIRED_RIGHTS_SOURCES = {
+    "openiti-cleaned-arabic-comparison",
+    "aco-1905-1907-arabic-candidate",
+    "dki-1995-arabic-edition",
+    "usul-shamela-dki-reader-text",
+    "urdu-modern-translation-witness",
+}
+PUBLIC_CORPUS_ID = "al-isabah-public-working-corpus-openiti-5835c18-v1"
+OPENITI_COMMIT = "5835c183b8bbf4ea454d5c1be2b168b669403771"
+OPENITI_SHA256 = "bc9db8134c8278973967c91c00324531833f643fc0fb2c8ebe318c9ed4469eea"
 
 
 class ComplianceError(ValueError):
@@ -204,7 +215,7 @@ def validate_register(register: dict[str, Any]) -> tuple[list[str], dict[str, di
                 errors.append(
                     f"register: {artifact_id} has unknown private comparison input {comparison}"
                 )
-    public_corpus = artifacts.get("sabiqah-public-working-corpus-openiti-5835c18-v1")
+    public_corpus = artifacts.get(PUBLIC_CORPUS_ID)
     if public_corpus:
         integrity = public_corpus.get("integrity", {})
         for field in ("manifest_sha256", "quarantine_sha256"):
@@ -268,6 +279,8 @@ def validate_promotion(
     errors: list[str] = []
     if promotion.get("schema") != "al-isabah.promotion-readiness.v1":
         errors.append("promotion: unexpected schema")
+    if promotion.get("rights_matrix") != "compliance/rights-matrix.al-isabah.v1.json":
+        errors.append("promotion: rights matrix must use the repository-relative v1 path")
     eligible = promotion.get("public_release_eligible")
     status = promotion.get("status")
     blockers = promotion.get("blockers")
@@ -407,8 +420,8 @@ def validate_retirement(retirement: dict[str, Any]) -> list[str]:
     errors: list[str] = []
     if retirement.get("schema") != "al-isabah.research-retirement.v1":
         errors.append("retirement: unexpected schema")
-    if retirement.get("decision") != "retained-in-sabiqah-private-research":
-        errors.append("retirement: candidate research must be retained in Sabiqah")
+    if retirement.get("decision") != "retained-in-private-research":
+        errors.append("retirement: candidate research must remain private")
     if retirement.get("publication_status") != "blocked":
         errors.append("retirement: legacy candidate content must remain blocked")
     source = retirement.get("legacy_source")
@@ -416,9 +429,9 @@ def validate_retirement(retirement: dict[str, Any]) -> list[str]:
         errors.append("retirement: legacy source commit must be a full Git SHA")
     elif source.get("repository") != "https://github.com/yaqub0r/al-isabah":
         errors.append("retirement: legacy source repository is incorrect")
-    snapshot = retirement.get("sabiqah_snapshot")
+    snapshot = retirement.get("external_private_snapshot")
     if not isinstance(snapshot, dict):
-        errors.append("retirement: Sabiqah snapshot metadata is required")
+        errors.append("retirement: private snapshot metadata is required")
     else:
         if snapshot.get("archive_format") != "canonical-git-tree-tar-v1":
             errors.append("retirement: archive format must be canonical-git-tree-tar-v1")
@@ -432,11 +445,97 @@ def validate_retirement(retirement: dict[str, Any]) -> list[str]:
     return errors
 
 
+def validate_rights_matrix(
+    matrix: dict[str, Any], artifacts: dict[str, dict[str, Any]]
+) -> list[str]:
+    errors: list[str] = []
+    if matrix.get("schema") != "al-isabah.book-rights-matrix.v1":
+        errors.append("rights matrix: unexpected schema")
+    if matrix.get("work_id") != "ibn-hajar-al-isabah":
+        errors.append("rights matrix: unexpected work")
+    for field in ("matrix_id", "title", "reviewed_on"):
+        if not isinstance(matrix.get(field), str) or not matrix[field].strip():
+            errors.append(f"rights matrix: {field} is required")
+
+    sources: dict[str, dict[str, Any]] = {}
+    for index, source in enumerate(matrix.get("source_editions", [])):
+        location = f"rights matrix.source_editions[{index}]"
+        if not isinstance(source, dict):
+            errors.append(f"{location}: must be an object")
+            continue
+        source_id = source.get("source_id")
+        if not isinstance(source_id, str) or not source_id:
+            errors.append(f"{location}: source_id is required")
+            continue
+        if source_id in sources:
+            errors.append(f"{location}: duplicate source_id {source_id}")
+        sources[source_id] = source
+        if source_id not in artifacts:
+            errors.append(f"{location}: unknown source register id {source_id}")
+        for field in ("edition", "publication_role", "rights_basis"):
+            if not isinstance(source.get(field), str) or not source[field].strip():
+                errors.append(f"{location}: {field} is required")
+        for field in ("allowed_uses", "exclusions"):
+            values = source.get(field)
+            if not isinstance(values, list) or not values or not all(
+                isinstance(value, str) and value.strip() for value in values
+            ):
+                errors.append(f"{location}: {field} must be a non-empty string list")
+    if set(sources) != REQUIRED_RIGHTS_SOURCES:
+        errors.append("rights matrix: all required source editions are required")
+
+    openiti = sources.get("openiti-cleaned-arabic-comparison", {})
+    if openiti.get("source_revision") != OPENITI_COMMIT:
+        errors.append("rights matrix: OpenITI source revision is not pinned")
+    if openiti.get("sha256") != OPENITI_SHA256:
+        errors.append("rights matrix: OpenITI artifact hash is not pinned")
+    if openiti.get("publication_role") != "arabic-publication-base":
+        errors.append("rights matrix: OpenITI must be the Arabic publication base")
+    if sources.get("aco-1905-1907-arabic-candidate", {}).get(
+        "publication_role"
+    ) != "independent-public-domain-visual-witness":
+        errors.append("rights matrix: ACO must remain an independent visual witness")
+    for source_id in (
+        "dki-1995-arabic-edition",
+        "usul-shamela-dki-reader-text",
+        "urdu-modern-translation-witness",
+    ):
+        if sources.get(source_id, {}).get("publication_role") != "private-reference-only":
+            errors.append(f"rights matrix: {source_id} must remain private-reference-only")
+
+    license_record = matrix.get("public_content_license")
+    if not isinstance(license_record, dict):
+        errors.append("rights matrix: public_content_license must be an object")
+    else:
+        if license_record.get("spdx") != "CC-BY-NC-SA-4.0":
+            errors.append("rights matrix: public content license must be CC BY-NC-SA 4.0")
+        if license_record.get("software_license_granted") is not False:
+            errors.append("rights matrix: software must remain outside the content grant")
+    for field in ("attribution", "exclusions"):
+        values = matrix.get(field)
+        if not isinstance(values, list) or not values or not all(
+            isinstance(value, str) and value.strip() for value in values
+        ):
+            errors.append(f"rights matrix: {field} must be a non-empty string list")
+    decision = matrix.get("publication_decision", {})
+    if decision.get("public_reuse") != "approved-under-cc-by-nc-sa-4.0":
+        errors.append("rights matrix: public reuse decision is not approved")
+    follow_up = matrix.get("follow_up_review", {})
+    if follow_up.get("status") not in {"required-on-change", "scheduled", "complete"}:
+        errors.append("rights matrix: follow-up review status is invalid")
+    triggers = follow_up.get("triggers")
+    if not isinstance(triggers, list) or not triggers:
+        errors.append("rights matrix: follow-up review triggers are required")
+    errors.extend(_walk(matrix, "rights_matrix"))
+    return errors
+
+
 def validate_all(
     policy: dict[str, Any],
     register: dict[str, Any],
     promotion: dict[str, Any],
     retirement: dict[str, Any] | None = None,
+    rights_matrix: dict[str, Any] | None = None,
 ) -> list[str]:
     errors = validate_policy(policy)
     register_errors, artifacts = validate_register(register)
@@ -444,6 +543,8 @@ def validate_all(
     errors.extend(validate_promotion(promotion, artifacts))
     if retirement is not None:
         errors.extend(validate_retirement(retirement))
+    if rights_matrix is not None:
+        errors.extend(validate_rights_matrix(rights_matrix, artifacts))
     return errors
 
 
@@ -453,13 +554,15 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--register", type=Path, default=REGISTER_PATH)
     parser.add_argument("--promotion", type=Path, default=PROMOTION_PATH)
     parser.add_argument("--retirement", type=Path, default=RETIREMENT_PATH)
+    parser.add_argument("--rights-matrix", type=Path, default=RIGHTS_MATRIX_PATH)
     args = parser.parse_args(argv)
 
     policy = load_json(args.policy)
     register = load_json(args.register)
     promotion = load_json(args.promotion)
     retirement = load_json(args.retirement)
-    errors = validate_all(policy, register, promotion, retirement)
+    rights_matrix = load_json(args.rights_matrix)
+    errors = validate_all(policy, register, promotion, retirement, rights_matrix)
     if errors:
         for error in errors:
             print(error, file=sys.stderr)

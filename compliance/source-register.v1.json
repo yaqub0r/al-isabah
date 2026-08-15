@@ -41,7 +41,7 @@
         "volumes": 8
       },
       "classification": "private-reference",
-      "rights_basis": "The underlying medieval work is public domain, but the modern introduction, critical apparatus, annotations, and sufficiently original editorial revisions are not approved for redistribution by Sabiqah.",
+      "rights_basis": "The underlying medieval work is public domain, but the modern introduction, critical apparatus, annotations, and sufficiently original editorial revisions are not approved for public redistribution by this project.",
       "provider_pages": [
         "https://usul.ai/t/isaba-fi-tamyiz/19",
         "https://archive.org/details/al-isabah-fi-tamiz-al-sahaba-al-ibn-hajar-ashqalani-jild-1"
@@ -73,7 +73,7 @@
       "kind": "digital-transcription",
       "title": "Usul/Shamela reader text for the DKI 1995 edition",
       "classification": "private-reference",
-      "rights_basis": "Usul's availability and Shamela provenance do not establish Sabiqah's redistribution rights; the reader includes modern editorial material from the DKI edition.",
+      "rights_basis": "Usul's availability and Shamela provenance do not establish this project's redistribution rights; the reader includes modern editorial material from the DKI edition.",
       "provider_pages": [
         "https://usul.ai/t/isaba-fi-tamyiz/19",
         "https://shamela.ws/book/9767"
@@ -131,7 +131,7 @@
       "kind": "licensed-publication-base",
       "title": "OpenITI cleaned al-Isabah text, JK000533",
       "classification": "approved-for-publication",
-      "rights_basis": "OpenITI distributes the pinned transcription under CC BY-NC-SA 4.0 and documents removal of modern paratext. It is approved for Sabiqah's attributed, noncommercial, share-alike public working edition; this does not make it the canonical Al-Isabah edition.",
+      "rights_basis": "OpenITI distributes the pinned transcription under CC BY-NC-SA 4.0 and documents removal of modern paratext. It is approved for an attributed, noncommercial, share-alike public working edition; this does not make it the canonical Al-Isabah edition.",
       "provider_pages": [
         "https://github.com/OpenITI/0875AH/blob/5835c183b8bbf4ea454d5c1be2b168b669403771/data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.IsabaFiTamyiz/0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1.mARkdown",
         "https://openiti.org/documentation/"
@@ -159,7 +159,7 @@
         "omit attribution, apply incompatible terms, or use outside the noncommercial license scope",
         "represent machine alignment as canonical scholarly approval"
       ],
-      "review_status": "approved-for-sabiqah-public-working-edition"
+      "review_status": "approved-for-public-working-edition"
     },
     {
       "id": "aco-1905-1907-arabic-candidate",
@@ -193,11 +193,11 @@
       "review_status": "approved-as-independent-public-domain-witness"
     },
     {
-      "id": "sabiqah-public-working-corpus-openiti-5835c18-v1",
+      "id": "al-isabah-public-working-corpus-openiti-5835c18-v1",
       "kind": "public-working-bilingual-corpus",
-      "title": "Sabiqah Al-Isabah public working corpus v1",
+      "title": "Al-Isabah public working corpus v1",
       "classification": "approved-for-publication",
-      "rights_basis": "Displayed Arabic is deterministically rebuilt from the pinned CC BY-NC-SA 4.0 OpenITI authority. Sabiqah-authored English is retained only when it passes the public-output and Arabic-form honorific gates; otherwise the approved Arabic entry remains public with its English withheld. Non-book contextual passages remain excluded.",
+      "rights_basis": "Displayed Arabic is deterministically rebuilt from the pinned CC BY-NC-SA 4.0 OpenITI authority. Project-authored English is retained only when it passes the public-output and Arabic-form honorific gates; otherwise the approved Arabic entry remains public with its English withheld. Non-book contextual passages remain excluded.",
       "license": {
         "spdx": "CC-BY-NC-SA-4.0",
         "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
@@ -312,7 +312,7 @@
       ],
       "prohibited_public_actions": [
         "publish as a canonical release",
-        "serve through Sabiqah as approved content"
+        "serve through a downstream application as approved content"
       ],
       "review_status": "promotion-blocked"
     },

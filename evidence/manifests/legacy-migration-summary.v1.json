@@ -1,0 +1,13 @@
+{
+  "schema": "al-isabah.legacy-migration-summary.v1",
+  "recorded_at": "2026-08-15",
+  "historical_source_revision": "2689ff40",
+  "historical_scope_sha256": "59a64f1f045044d26ada6690ca4277732e541f29e777eb30dc049b9ecaf69973",
+  "historical_inventory_sha256": "8ea9b589941dd35224faaf49ecd0cc18e87dfa9e154ae6f43d06cc92971c0a1c",
+  "summary": {
+    "file_count": 167,
+    "byte_size": 478653164
+  },
+  "publication_status": "private-reference-only",
+  "note": "The immutable historical inventory remains recoverable from repository history. Current public records retain only non-sensitive integrity and count metadata; legacy repository names, paths, source locations, and private evidence descriptions are intentionally omitted."
+}

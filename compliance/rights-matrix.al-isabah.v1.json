@@ -1,0 +1,112 @@
+{
+  "schema": "al-isabah.book-rights-matrix.v1",
+  "matrix_id": "al-isabah-rights-2026-08-15",
+  "work_id": "ibn-hajar-al-isabah",
+  "title": "al-Isabah fi Tamyiz al-Sahabah",
+  "source_editions": [
+    {
+      "source_id": "openiti-cleaned-arabic-comparison",
+      "edition": "OpenITI JK000533 transcription",
+      "publication_role": "arabic-publication-base",
+      "rights_basis": "OpenITI distributes the pinned transcription under CC BY-NC-SA 4.0.",
+      "source_revision": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+      "sha256": "bc9db8134c8278973967c91c00324531833f643fc0fb2c8ebe318c9ed4469eea",
+      "allowed_uses": [
+        "attributed noncommercial public reading and redistribution",
+        "noncommercial adaptation and translation with share-alike terms"
+      ],
+      "exclusions": [
+        "use without attribution",
+        "commercial use without separate permission",
+        "distribution under incompatible terms"
+      ]
+    },
+    {
+      "source_id": "aco-1905-1907-arabic-candidate",
+      "edition": "Arabic Collections Online 1905-1907 edition",
+      "publication_role": "independent-public-domain-visual-witness",
+      "rights_basis": "Arabic Collections Online identifies the four-volume visual witness as public domain; it is independent of the OpenITI edition.",
+      "allowed_uses": [
+        "public visual reference with attribution",
+        "bibliographic and independently established passage verification"
+      ],
+      "exclusions": [
+        "claiming that its pagination or edition identity matches OpenITI",
+        "copying third-party metadata or annotations without a separate rights basis"
+      ]
+    },
+    {
+      "source_id": "dki-1995-arabic-edition",
+      "edition": "Dar al-Kutub al-Ilmiyyah 1995 Arabic edition",
+      "publication_role": "private-reference-only",
+      "rights_basis": "The medieval work is public domain, but redistribution rights for the modern edition, apparatus, annotations, and editorial expression have not been established.",
+      "allowed_uses": [
+        "controlled research consultation",
+        "bibliographic and comparison review"
+      ],
+      "exclusions": [
+        "public scans, OCR, transcription, apparatus, annotations, or editorial expression",
+        "use as public Arabic wording"
+      ]
+    },
+    {
+      "source_id": "usul-shamela-dki-reader-text",
+      "edition": "Usul/Shamela reader text associated with the DKI edition",
+      "publication_role": "private-reference-only",
+      "rights_basis": "Public availability does not establish redistribution permission, and the reader includes modern editorial material.",
+      "allowed_uses": [
+        "controlled textual comparison"
+      ],
+      "exclusions": [
+        "public reader text, structured units, or derived wording",
+        "treating provider availability as permission"
+      ]
+    },
+    {
+      "source_id": "urdu-modern-translation-witness",
+      "edition": "Modern Urdu translation witness",
+      "publication_role": "private-reference-only",
+      "rights_basis": "The edition reserves publication rights and no compatible public reuse license has been verified.",
+      "allowed_uses": [
+        "controlled passage-specific ambiguity comparison"
+      ],
+      "exclusions": [
+        "public scans, OCR, structured units, or protected Urdu expression",
+        "use as the public English translation base"
+      ]
+    }
+  ],
+  "public_content_license": {
+    "spdx": "CC-BY-NC-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "scope": "Eligible public Arabic and project-authored English scholarly content explicitly approved by this matrix and a publication manifest.",
+    "software_license_granted": false
+  },
+  "attribution": [
+    "Al-Isabah project, al-Isabah fi Tamyiz al-Sahabah public scholarly content",
+    "OpenITI, JK000533 transcription of Ibn Hajar al-Asqalani's al-Isabah fi Tamyiz al-Sahabah, commit 5835c183b8bbf4ea454d5c1be2b168b669403771"
+  ],
+  "exclusions": [
+    "software, scripts, workflows, schemas, tests, and other code",
+    "downstream applications and private research systems",
+    "restricted or reference-only scans, OCR, witness translations, and comparison evidence",
+    "credentials, private operational information, private paths, storage details, APIs, schema locations, and source-file locations"
+  ],
+  "publication_decision": {
+    "public_reading": "approved-noncommercial-with-attribution-and-share-alike",
+    "public_reuse": "approved-under-cc-by-nc-sa-4.0",
+    "canonical_promotion": "separately-gated",
+    "decision_issue": "https://github.com/yaqub0r/al-isabah/issues/32"
+  },
+  "reviewed_on": "2026-08-15",
+  "follow_up_review": {
+    "status": "required-on-change",
+    "due_on": null,
+    "triggers": [
+      "a source, edition, or source revision changes",
+      "commercial reuse or a software license is proposed",
+      "new content or evidence is proposed for public distribution",
+      "rights information or applicable license terms change"
+    ]
+  }
+}
