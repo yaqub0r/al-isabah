@@ -71,7 +71,7 @@ repository gate passes.
 ## Public content license and boundary
 
 Eligible public scholarly content is licensed under CC BY-NC-SA 4.0 with the
-attribution in [`../CONTENT_LICENSE.md`](../CONTENT_LICENSE.md). This grant does
+attribution in [`../SCHOLARLY_CONTENT_RIGHTS.md`](../SCHOLARLY_CONTENT_RIGHTS.md). This grant does
 not apply to software, schemas, workflows, tests, or other code. It also does
 not reclassify restricted source material.
 
