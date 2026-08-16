@@ -18,6 +18,10 @@ PROMOTION_PATH = ROOT / "compliance" / "promotions" / "available-data.v1.json"
 POLICY_PATH = ROOT / "compliance" / "policy-binding.v1.json"
 RETIREMENT_PATH = ROOT / "compliance" / "research-retirement.v1.json"
 RIGHTS_MATRIX_PATH = ROOT / "compliance" / "rights-matrix.al-isabah.v1.json"
+GOVERNANCE_REFERENCE_PATH = (
+    ROOT / "docs" / "contracts" / "translation-governance-reference.v1.json"
+)
+FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 
 CLASSIFICATIONS = {
     "approved-for-publication",
@@ -43,6 +47,79 @@ REQUIRED_POLICIES = {
     "entry-title-structure": "docs/contracts/entry-title-structure.md",
     "translation-source-profile": "profiles/translation-source.v1.json",
 }
+REQUIRED_GOVERNANCE_ARTIFACTS = {
+    "policy-binding": (
+        "compliance/policy-binding.v1.json",
+        "active",
+        None,
+    ),
+    "translation-quality-workflow": (
+        "docs/contracts/translation-quality-workflow.md",
+        "active",
+        None,
+    ),
+    "al-isabah-translation-profile": (
+        "docs/translation-profiles/al-isabah.md",
+        "active",
+        None,
+    ),
+    "entry-title-structure": (
+        "docs/contracts/entry-title-structure.md",
+        "active",
+        None,
+    ),
+    "translation-source-profile": (
+        "profiles/translation-source.v1.json",
+        "active",
+        "1.0.0",
+    ),
+    "honorific-formula-registry": (
+        "profiles/honorific-formulas.v1.json",
+        "active",
+        "1.2.0",
+    ),
+    "public-distribution-contract": (
+        "docs/architecture/public-distribution.md",
+        "reference",
+        None,
+    ),
+    "public-distribution-v2": (
+        "schemas/public-distribution.v2.schema.json",
+        "active",
+        "2.0.0",
+    ),
+    "public-distribution-v1": (
+        "schemas/public-distribution.v1.schema.json",
+        "rollback-only",
+        "1.0.0",
+    ),
+}
+REQUIRED_DEPRECATED_CONSUMER_AUTHORITIES = {
+    (
+        "docs/contracts/translation-quality-workflow.md",
+        None,
+    ),
+    ("docs/translation-profiles/al-isabah.md", None),
+    ("packages/release-model/src/honorifics.registry.json", None),
+    (
+        "docs/contracts/contracts.registry.json",
+        "contracts[id=translation-quality-workflow]",
+    ),
+    (
+        "tools/contracts/check-contract-ack.node-test.mjs",
+        "translation-quality-workflow expectations",
+    ),
+    (
+        ".github/workflows/application-validate.yml",
+        "docs/translation-profiles/al-isabah.md path filters",
+    ),
+    (
+        "docs/contracts/INDEX.md",
+        "translation-quality-workflow row and Al-Isabah book-profile section",
+    ),
+}
+SEMVER = re.compile(r"^[0-9]+\.[0-9]+\.[0-9]+$")
+SHA256 = re.compile(r"^[0-9a-f]{64}$")
 REQUIRED_TRANSLATION_CONTROLS = {
     "source_authority",
     "public_output",
@@ -158,6 +235,221 @@ def validate_policy(policy: dict[str, Any]) -> list[str]:
         if actual_sha != expected_sha:
             errors.append(f"policy: {policy_id} sha256 does not match local file")
     errors.extend(_walk(policy, "policy"))
+    return errors
+
+
+def validate_formula_registry(registry: dict[str, Any]) -> list[str]:
+    errors: list[str] = []
+    if set(registry) != {
+        "schema",
+        "registryVersion",
+        "contractId",
+        "profileId",
+        "entries",
+    }:
+        errors.append("formula registry: fields do not match the v1 contract")
+    if registry.get("schema") != "al-isabah.honorific-formula-registry.v1":
+        errors.append("formula registry: unexpected schema")
+    if not SEMVER.fullmatch(str(registry.get("registryVersion", ""))):
+        errors.append("formula registry: registryVersion must be semantic")
+    if registry.get("contractId") != "translation-quality-workflow":
+        errors.append("formula registry: governing contract is incorrect")
+    if registry.get("profileId") != "al-isabah-translation-profile":
+        errors.append("formula registry: governing profile is incorrect")
+
+    required_fields = {
+        "source",
+        "target",
+        "semanticClass",
+        "referentScope",
+        "grammaticalAgreement",
+        "expandedArabic",
+        "accessibleEnglish",
+    }
+    entries = registry.get("entries")
+    if not isinstance(entries, list) or not entries:
+        errors.append("formula registry: entries must be a non-empty list")
+        entries = []
+    seen_sources: set[str] = set()
+    for index, entry in enumerate(entries):
+        location = f"formula registry.entries[{index}]"
+        if not isinstance(entry, dict):
+            errors.append(f"{location}: must be an object")
+            continue
+        if set(entry) != required_fields:
+            errors.append(f"{location}: fields do not match the v1 contract")
+            continue
+        for field in required_fields:
+            if not isinstance(entry.get(field), str) or not entry[field].strip():
+                errors.append(f"{location}.{field}: must be a non-empty string")
+        source = entry.get("source")
+        if isinstance(source, str):
+            if source in seen_sources:
+                errors.append(f"{location}.source: duplicate formula source")
+            seen_sources.add(source)
+    errors.extend(_walk(registry, "formula_registry"))
+    return errors
+
+
+def validate_translation_governance(
+    reference: dict[str, Any],
+    registry: dict[str, Any],
+    policy: dict[str, Any],
+) -> list[str]:
+    errors = validate_formula_registry(registry)
+    expected_top_level = {
+        "schema",
+        "referenceVersion",
+        "authority",
+        "integrity",
+        "governanceArtifacts",
+        "releaseSemantics",
+        "consumerBoundary",
+        "deprecatedConsumerAuthorities",
+    }
+    if set(reference) != expected_top_level:
+        errors.append("governance reference: fields do not match the v1 contract")
+    if reference.get("schema") != "al-isabah.translation-governance-reference.v1":
+        errors.append("governance reference: unexpected schema")
+    if not SEMVER.fullmatch(str(reference.get("referenceVersion", ""))):
+        errors.append("governance reference: referenceVersion must be semantic")
+
+    authority = reference.get("authority")
+    expected_authority = {
+        "repository": "https://github.com/yaqub0r/al-isabah",
+        "repositoryPath": "docs/contracts/translation-governance-reference.v1.json",
+        "requiredPin": "immutable-repository-commit",
+    }
+    if authority != expected_authority:
+        errors.append("governance reference: authority or pinning rule is incorrect")
+    if reference.get("integrity") != {
+        "algorithm": "sha256",
+        "textNormalization": "utf-8-lf",
+    }:
+        errors.append("governance reference: integrity rule is incorrect")
+
+    artifacts: dict[str, dict[str, Any]] = {}
+    raw_artifacts = reference.get("governanceArtifacts")
+    if not isinstance(raw_artifacts, list):
+        errors.append("governance reference: governanceArtifacts must be a list")
+        raw_artifacts = []
+    for index, artifact in enumerate(raw_artifacts):
+        location = f"governance reference.governanceArtifacts[{index}]"
+        if not isinstance(artifact, dict):
+            errors.append(f"{location}: must be an object")
+            continue
+        artifact_id = artifact.get("id")
+        if not isinstance(artifact_id, str) or not artifact_id:
+            errors.append(f"{location}.id: is required")
+            continue
+        if artifact_id in artifacts:
+            errors.append(f"{location}.id: duplicate {artifact_id}")
+        artifacts[artifact_id] = artifact
+
+    if set(artifacts) != set(REQUIRED_GOVERNANCE_ARTIFACTS):
+        errors.append("governance reference: exact v1 artifact set is required")
+    for artifact_id, (path, status, version) in REQUIRED_GOVERNANCE_ARTIFACTS.items():
+        artifact = artifacts.get(artifact_id)
+        if artifact is None:
+            continue
+        expected_fields = {"id", "path", "sha256", "status"}
+        if version is not None:
+            expected_fields.add("version")
+        if set(artifact) != expected_fields:
+            errors.append(f"governance reference: {artifact_id} fields are incorrect")
+        if artifact.get("path") != path or artifact.get("status") != status:
+            errors.append(f"governance reference: {artifact_id} metadata is incorrect")
+        if artifact.get("version") != version:
+            errors.append(f"governance reference: {artifact_id} version is incorrect")
+        if not SHA256.fullmatch(str(artifact.get("sha256", ""))):
+            errors.append(f"governance reference: {artifact_id} hash is invalid")
+        candidate = (ROOT / path).resolve()
+        try:
+            candidate.relative_to(ROOT.resolve())
+        except ValueError:
+            errors.append(f"governance reference: {artifact_id} resolves outside the repository")
+            continue
+        if not candidate.is_file():
+            errors.append(f"governance reference: {artifact_id} file is missing")
+            continue
+        actual_sha = canonical_text_sha256(candidate)
+        if artifact.get("sha256") != actual_sha:
+            errors.append(f"governance reference: {artifact_id} hash is stale")
+
+    policy_contracts = {
+        item.get("id"): item
+        for item in policy.get("contracts", [])
+        if isinstance(item, dict) and isinstance(item.get("id"), str)
+    }
+    for policy_id in REQUIRED_POLICIES:
+        policy_item = policy_contracts.get(policy_id)
+        artifact = artifacts.get(policy_id)
+        if policy_item is None or artifact is None:
+            continue
+        if (
+            artifact.get("path") != policy_item.get("path")
+            or artifact.get("sha256") != policy_item.get("sha256")
+        ):
+            errors.append(
+                f"governance reference: {policy_id} differs from the local policy binding"
+            )
+    registry_artifact = artifacts.get("honorific-formula-registry", {})
+    if registry_artifact.get("version") != registry.get("registryVersion"):
+        errors.append("governance reference: formula registry version is stale")
+
+    expected_release_semantics = {
+        "humanReviewScope": "per-record-metadata-and-confidence",
+        "humanReviewChangesReleaseClass": False,
+        "immutableCycleChangeKinds": [
+            "incremental-translation",
+            "correction",
+            "review-coverage",
+        ],
+        "correctionMode": "new-immutable-release-with-supersession",
+    }
+    if reference.get("releaseSemantics") != expected_release_semantics:
+        errors.append("governance reference: release semantics are incorrect")
+
+    expected_boundary = {
+        "allowed": [
+            "verify-and-ingest-checksum-pinned-releases",
+            "manage-private-evidence-without-exporting-it-upstream",
+            "provide-review-and-reader-interfaces",
+            "store-and-present-release-and-review-metadata",
+        ],
+        "prohibited": [
+            "define-al-isabah-translation-policy",
+            "treat-a-local-copy-as-governing",
+            "change-release-class-from-human-review",
+            "rewrite-or-mutate-an-immutable-release",
+        ],
+    }
+    if reference.get("consumerBoundary") != expected_boundary:
+        errors.append("governance reference: consumer boundary is incorrect")
+
+    deprecated = reference.get("deprecatedConsumerAuthorities")
+    if not isinstance(deprecated, list):
+        errors.append("governance reference: deprecated authorities must be a list")
+        deprecated = []
+    found_deprecations: set[tuple[str, str | None]] = set()
+    for index, item in enumerate(deprecated):
+        location = f"governance reference.deprecatedConsumerAuthorities[{index}]"
+        if not isinstance(item, dict):
+            errors.append(f"{location}: must be an object")
+            continue
+        if item.get("consumerRepository") != "https://github.com/yaqub0r/sabiqah":
+            errors.append(f"{location}: consumer repository is incorrect")
+        key = (str(item.get("path", "")), item.get("selector"))
+        if key in found_deprecations:
+            errors.append(f"{location}: duplicate deprecation")
+        found_deprecations.add(key)
+        for field in ("path", "kind", "replacement"):
+            if not isinstance(item.get(field), str) or not item[field].strip():
+                errors.append(f"{location}.{field}: must be a non-empty string")
+    if found_deprecations != REQUIRED_DEPRECATED_CONSUMER_AUTHORITIES:
+        errors.append("governance reference: exact Sabiqah authority inventory is required")
+
+    errors.extend(_walk(reference, "governance_reference"))
     return errors
 
 
@@ -536,8 +828,27 @@ def validate_all(
     promotion: dict[str, Any],
     retirement: dict[str, Any] | None = None,
     rights_matrix: dict[str, Any] | None = None,
+    governance_reference: dict[str, Any] | None = None,
+    formula_registry: dict[str, Any] | None = None,
 ) -> list[str]:
     errors = validate_policy(policy)
+    governance_reference = (
+        load_json(GOVERNANCE_REFERENCE_PATH)
+        if governance_reference is None
+        else governance_reference
+    )
+    formula_registry = (
+        load_json(FORMULA_REGISTRY_PATH)
+        if formula_registry is None
+        else formula_registry
+    )
+    errors.extend(
+        validate_translation_governance(
+            governance_reference,
+            formula_registry,
+            policy,
+        )
+    )
     register_errors, artifacts = validate_register(register)
     errors.extend(register_errors)
     errors.extend(validate_promotion(promotion, artifacts))
@@ -555,6 +866,16 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--promotion", type=Path, default=PROMOTION_PATH)
     parser.add_argument("--retirement", type=Path, default=RETIREMENT_PATH)
     parser.add_argument("--rights-matrix", type=Path, default=RIGHTS_MATRIX_PATH)
+    parser.add_argument(
+        "--governance-reference",
+        type=Path,
+        default=GOVERNANCE_REFERENCE_PATH,
+    )
+    parser.add_argument(
+        "--formula-registry",
+        type=Path,
+        default=FORMULA_REGISTRY_PATH,
+    )
     args = parser.parse_args(argv)
 
     policy = load_json(args.policy)
@@ -562,7 +883,17 @@ def main(argv: list[str] | None = None) -> int:
     promotion = load_json(args.promotion)
     retirement = load_json(args.retirement)
     rights_matrix = load_json(args.rights_matrix)
-    errors = validate_all(policy, register, promotion, retirement, rights_matrix)
+    governance_reference = load_json(args.governance_reference)
+    formula_registry = load_json(args.formula_registry)
+    errors = validate_all(
+        policy,
+        register,
+        promotion,
+        retirement,
+        rights_matrix,
+        governance_reference,
+        formula_registry,
+    )
     if errors:
         for error in errors:
             print(error, file=sys.stderr)

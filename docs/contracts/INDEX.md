@@ -29,6 +29,13 @@ bilingual presentation agree by hash.
 
 ## Local supporting controls
 
+- [`translation-governance-reference.v1.json`](translation-governance-reference.v1.json)
+  is the versioned, integrity-bound discovery document for downstream
+  consumers. The companion [compatibility guide](downstream-consumer-compatibility.md)
+  defines pinning, release semantics, and the Sabiqah deprecation inventory.
+- [`profiles/honorific-formulas.v1.json`](../../profiles/honorific-formulas.v1.json)
+  is the machine-readable Al-Isabah formula registry implemented by the local
+  translation workflow.
 - [`compliance/source-register.v1.json`](../../compliance/source-register.v1.json)
   classifies authorities and witnesses and records publication eligibility.
 - [`compliance/promotions/available-data.v1.json`](../../compliance/promotions/available-data.v1.json)

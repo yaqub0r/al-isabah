@@ -749,6 +749,20 @@ class TranslationWorkflowTests(unittest.TestCase):
             all(rule["accessibleEnglish"] for rule in MODULE.FORMULA_RULES)
         )
 
+    def test_machine_readable_formula_registry_matches_the_workflow(self):
+        registry = MODULE.load_json(MODULE.FORMULA_REGISTRY_PATH)
+        self.assertEqual(
+            registry["schema"],
+            "al-isabah.honorific-formula-registry.v1",
+        )
+        self.assertEqual(
+            registry["registryVersion"],
+            MODULE.FORMULA_REGISTRY_VERSION,
+        )
+        self.assertEqual(registry["contractId"], "translation-quality-workflow")
+        self.assertEqual(registry["profileId"], "al-isabah-translation-profile")
+        self.assertEqual(registry["entries"], list(MODULE.FORMULA_RULES))
+
     def test_formula_inventory_rejects_lost_exaltation_semantics(self):
         packet = self.packet()
         complete_autonomous_stages(packet)

@@ -41,6 +41,10 @@ jobs:
           python3 -m json.tool schemas/public-proposal.v1.schema.json > /dev/null
           python3 -m json.tool schemas/public-review.v1.schema.json > /dev/null
           python3 -m json.tool schemas/release-closure.v1.schema.json > /dev/null
+          python3 -m json.tool schemas/honorific-formula-registry.v1.schema.json > /dev/null
+          python3 -m json.tool schemas/translation-governance-reference.v1.schema.json > /dev/null
+          python3 -m json.tool profiles/honorific-formulas.v1.json > /dev/null
+          python3 -m json.tool docs/contracts/translation-governance-reference.v1.json > /dev/null
 
       - name: Validate translation workflow
         run: python3 scripts/translation_workflow.py doctor --offline

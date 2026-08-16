@@ -1,0 +1,145 @@
+{
+  "schema": "al-isabah.translation-governance-reference.v1",
+  "referenceVersion": "1.0.0",
+  "authority": {
+    "repository": "https://github.com/yaqub0r/al-isabah",
+    "repositoryPath": "docs/contracts/translation-governance-reference.v1.json",
+    "requiredPin": "immutable-repository-commit"
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "textNormalization": "utf-8-lf"
+  },
+  "governanceArtifacts": [
+    {
+      "id": "policy-binding",
+      "path": "compliance/policy-binding.v1.json",
+      "sha256": "f1ca5fa8303b13e70bbd92aeeb8e5d2a05ba037cf951043b5043262dd2d591e5",
+      "status": "active"
+    },
+    {
+      "id": "translation-quality-workflow",
+      "path": "docs/contracts/translation-quality-workflow.md",
+      "sha256": "99de91a42958370557356537eb544165b6c243ac1ae08e686fce5ac972d9ccf1",
+      "status": "active"
+    },
+    {
+      "id": "al-isabah-translation-profile",
+      "path": "docs/translation-profiles/al-isabah.md",
+      "sha256": "298402265b5edfaa136fa32d24e5c54bb24d38c5afe92eda37f736eb5792b89e",
+      "status": "active"
+    },
+    {
+      "id": "entry-title-structure",
+      "path": "docs/contracts/entry-title-structure.md",
+      "sha256": "4540032c15f622d2811191b13e3fdcbfc031ea0b0d5a1762197d040ad5f6c1a9",
+      "status": "active"
+    },
+    {
+      "id": "translation-source-profile",
+      "path": "profiles/translation-source.v1.json",
+      "sha256": "c3db1e037a9f98ed7c6ada57d076084e5451c5651ed972ea68867ed5ad580ead",
+      "status": "active",
+      "version": "1.0.0"
+    },
+    {
+      "id": "honorific-formula-registry",
+      "path": "profiles/honorific-formulas.v1.json",
+      "sha256": "2691994d50457d967f41d04140b9f86f23967254fd764f2c756109194ba51a55",
+      "status": "active",
+      "version": "1.2.0"
+    },
+    {
+      "id": "public-distribution-contract",
+      "path": "docs/architecture/public-distribution.md",
+      "sha256": "8814bf66b8add3e189cf407472dc8af119c3e1e5dd917d3232914335eba03cd8",
+      "status": "reference"
+    },
+    {
+      "id": "public-distribution-v2",
+      "path": "schemas/public-distribution.v2.schema.json",
+      "sha256": "3fb6445b9770940ab05b6754d4cd69983e4e5f024cf29027dbb84cd446db31d1",
+      "status": "active",
+      "version": "2.0.0"
+    },
+    {
+      "id": "public-distribution-v1",
+      "path": "schemas/public-distribution.v1.schema.json",
+      "sha256": "ada509899ee4b0d5d2f1afbcd31034135a614f7822c030eb5a2d402accd36614",
+      "status": "rollback-only",
+      "version": "1.0.0"
+    }
+  ],
+  "releaseSemantics": {
+    "humanReviewScope": "per-record-metadata-and-confidence",
+    "humanReviewChangesReleaseClass": false,
+    "immutableCycleChangeKinds": [
+      "incremental-translation",
+      "correction",
+      "review-coverage"
+    ],
+    "correctionMode": "new-immutable-release-with-supersession"
+  },
+  "consumerBoundary": {
+    "allowed": [
+      "verify-and-ingest-checksum-pinned-releases",
+      "manage-private-evidence-without-exporting-it-upstream",
+      "provide-review-and-reader-interfaces",
+      "store-and-present-release-and-review-metadata"
+    ],
+    "prohibited": [
+      "define-al-isabah-translation-policy",
+      "treat-a-local-copy-as-governing",
+      "change-release-class-from-human-review",
+      "rewrite-or-mutate-an-immutable-release"
+    ]
+  },
+  "deprecatedConsumerAuthorities": [
+    {
+      "consumerRepository": "https://github.com/yaqub0r/sabiqah",
+      "path": "docs/contracts/translation-quality-workflow.md",
+      "kind": "governing-contract-copy",
+      "replacement": "translation-quality-workflow"
+    },
+    {
+      "consumerRepository": "https://github.com/yaqub0r/sabiqah",
+      "path": "docs/translation-profiles/al-isabah.md",
+      "kind": "governing-profile-copy",
+      "replacement": "al-isabah-translation-profile"
+    },
+    {
+      "consumerRepository": "https://github.com/yaqub0r/sabiqah",
+      "path": "packages/release-model/src/honorifics.registry.json",
+      "kind": "semantic-registry-authority",
+      "replacement": "honorific-formula-registry"
+    },
+    {
+      "consumerRepository": "https://github.com/yaqub0r/sabiqah",
+      "path": "docs/contracts/contracts.registry.json",
+      "selector": "contracts[id=translation-quality-workflow]",
+      "kind": "local-governance-registration",
+      "replacement": "pinned-upstream-reference"
+    },
+    {
+      "consumerRepository": "https://github.com/yaqub0r/sabiqah",
+      "path": "tools/contracts/check-contract-ack.node-test.mjs",
+      "selector": "translation-quality-workflow expectations",
+      "kind": "local-governance-acknowledgement",
+      "replacement": "consumer-compatibility-check"
+    },
+    {
+      "consumerRepository": "https://github.com/yaqub0r/sabiqah",
+      "path": ".github/workflows/application-validate.yml",
+      "selector": "docs/translation-profiles/al-isabah.md path filters",
+      "kind": "duplicate-profile-ci-reference",
+      "replacement": "pinned-upstream-reference compatibility validation"
+    },
+    {
+      "consumerRepository": "https://github.com/yaqub0r/sabiqah",
+      "path": "docs/contracts/INDEX.md",
+      "selector": "translation-quality-workflow row and Al-Isabah book-profile section",
+      "kind": "local-policy-discovery",
+      "replacement": "pinned-upstream-reference documentation"
+    }
+  ]
+}
