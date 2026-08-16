@@ -98,6 +98,15 @@
     "canonical_promotion": "separately-gated",
     "decision_issue": "https://github.com/yaqub0r/al-isabah/issues/32"
   },
+  "public_boundary_decision": {
+    "issue": "https://github.com/yaqub0r/al-isabah/issues/35",
+    "classification": "repository-policy-boundary-forward-remediation",
+    "legal_conclusion": false,
+    "current_tree": "strict-public-proposal-only",
+    "history": "preserved-with-canonical-hashes",
+    "canonical_promotion": "blocked",
+    "release_changes": "none"
+  },
   "reviewed_on": "2026-08-15",
   "follow_up_review": {
     "status": "required-on-change",

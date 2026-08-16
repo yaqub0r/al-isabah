@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/schemas/public-review.v1.schema.json",
+  "title": "Al-Isabah deterministic public review v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "proposalId", "proposalSha256", "projection", "review", "publicBoundary", "decision"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "proposalId": {"const": "issue-0026-public-proposal-v1"},
+    "proposalSha256": {"$ref": "#/$defs/sha256"},
+    "projection": {
+      "type": "object", "additionalProperties": false,
+      "required": ["recordCount", "recordsSha256", "orderSha256", "userFacingSha256"],
+      "properties": {
+        "recordCount": {"const": 1537},
+        "recordsSha256": {"$ref": "#/$defs/sha256"},
+        "orderSha256": {"$ref": "#/$defs/sha256"},
+        "userFacingSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "review": {
+      "type": "object", "additionalProperties": false,
+      "required": ["machinePassed", "needsAttention", "humanReviewed", "humanUnreviewed"],
+      "properties": {
+        "machinePassed": {"type": "integer", "minimum": 0},
+        "needsAttention": {"type": "integer", "minimum": 0},
+        "humanReviewed": {"type": "integer", "minimum": 0},
+        "humanUnreviewed": {"type": "integer", "minimum": 0}
+      }
+    },
+    "publicBoundary": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "findingCount"],
+      "properties": {"status": {"const": "passed"}, "findingCount": {"const": 0}}
+    },
+    "decision": {
+      "type": "object", "additionalProperties": false,
+      "required": ["publicationStatus", "canonicalPromotion", "legalConclusion"],
+      "properties": {
+        "publicationStatus": {"const": "public-working"},
+        "canonicalPromotion": {"const": "blocked"},
+        "legalConclusion": {"const": false}
+      }
+    }
+  },
+  "$defs": {"sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}
+}

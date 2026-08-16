@@ -813,6 +813,16 @@ class TranslationWorkflowTests(unittest.TestCase):
                     packet_path, root / "proposals", allow_test_fixture=True
                 )
 
+    def test_submit_rejects_any_public_repository_destination(self):
+        with self.assertRaisesRegex(
+            MODULE.WorkflowError, "cannot be written inside the public repository"
+        ):
+            MODULE.submit_packet(
+                ROOT / "synthetic-does-not-need-to-exist.json",
+                ROOT / "content" / "translation-proposals",
+                allow_test_fixture=True,
+            )
+
     def test_machine_validation_enforces_schema_and_packet_scoped_name_ids(self):
         packet = self.packet()
         complete_autonomous_stages(packet)

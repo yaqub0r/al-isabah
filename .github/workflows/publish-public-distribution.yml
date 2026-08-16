@@ -6,16 +6,22 @@ on:
       - main
     paths:
       - "content/translation-proposals/**"
+      - "content/public-proposals/**"
       - "compliance/**"
       - "profiles/**"
       - "schemas/**"
       - "scripts/build_public_distribution.py"
       - "scripts/validate_public_distribution.py"
+      - "scripts/validate_public_proposal.py"
+      - "scripts/validate_release_closure.py"
       - ".github/workflows/publish-public-distribution.yml"
   workflow_dispatch:
 
 permissions:
   contents: read
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
 
 concurrency:
   group: al-isabah-public-distribution
@@ -40,6 +46,12 @@ jobs:
         run: |
           set -euo pipefail
           archive=".runtime/al-isabah-public-distribution-${GITHUB_SHA}.zip"
+          python3 scripts/validate_public_tree.py
+          python3 scripts/validate_public_proposal.py
+          python3 scripts/build_public_review.py \
+            --output content/public-proposals/issue-0026.public-review.json \
+            --check
+          python3 scripts/validate_release_closure.py
           python3 scripts/build_public_distribution.py \
             --output .runtime/public-distribution \
             --archive "${archive}" \

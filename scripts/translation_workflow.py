@@ -2765,6 +2765,11 @@ def submit_packet(
     output_root: Path = PROPOSAL_ROOT,
     allow_test_fixture: bool = False,
 ) -> tuple[Path, Path]:
+    resolved_output = output_root.resolve()
+    if resolved_output == ROOT or ROOT in resolved_output.parents:
+        raise WorkflowError(
+            "submission: raw translation-work artifacts cannot be written inside the public repository"
+        )
     packet = load_json(packet_path)
     if (
         not allow_test_fixture
@@ -2784,8 +2789,8 @@ def submit_packet(
     if presentation.read_bytes() != expected_presentation:
         raise WorkflowError("submission: review presentation does not match packet")
     issue_number = packet["assignment"]["issueNumber"]
-    target_packet = output_root / f"issue-{issue_number:04d}.packet.json"
-    target_review = output_root / f"issue-{issue_number:04d}.review.md"
+    target_packet = resolved_output / f"issue-{issue_number:04d}.packet.json"
+    target_review = resolved_output / f"issue-{issue_number:04d}.review.md"
     if target_packet.exists() or target_review.exists():
         raise WorkflowError("submission: target already exists; never overwrite a proposal")
     submitted = json.loads(json.dumps(packet))
@@ -3068,9 +3073,9 @@ def parser() -> argparse.ArgumentParser:
     render.add_argument("--output", type=Path)
     render.set_defaults(func=command_render)
 
-    submit = subparsers.add_parser("submit", help="prepare tracked pull-request artifacts")
+    submit = subparsers.add_parser("submit", help="prepare external review artifacts")
     submit.add_argument("--packet", type=Path, required=True)
-    submit.add_argument("--output-root", type=Path, default=PROPOSAL_ROOT)
+    submit.add_argument("--output-root", type=Path, default=PROPOSAL_ROOT, help="explicit approved destination outside this public repository")
     submit.set_defaults(func=command_submit)
     return value
 

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0.0",
+  "closureId": "issue-0026-public-working-closure-v1",
+  "issue": "https://github.com/yaqub0r/al-isabah/issues/35",
+  "publicationStatus": "public-working",
+  "canonicalPromotion": "blocked",
+  "consumerSchemaVersion": "2.0.0",
+  "publicProposal": {
+    "path": "content/public-proposals/issue-0026.public-proposal.json",
+    "sha256": "d3724903dd3ffd8030390415464fcbc9728274f971dd2b774e6384ecda30359c"
+  },
+  "publicReview": {
+    "path": "content/public-proposals/issue-0026.public-review.json",
+    "sha256": "39806b1fac07f7e806fda7d3bd528ae320f1491cbafa43242af1881453dde4ef"
+  },
+  "projection": {
+    "entryCount": 1537,
+    "orderSha256": "69efa02ecc2c277471bd1108ffb4f6f758c3454659814b2ef3f80fce845f667f",
+    "userFacingSha256": "702a3af5543f3c8d83aa45559f62a132300cd6dabe7a3b3428940b73d8493047",
+    "recordsSha256": "cd08afb8b55700fe291bbc1ef0ab3a48b240e849bd4cce7a105e45722fabbc2f"
+  },
+  "sourceAuthority": {
+    "sourceId": "openiti-cleaned-arabic-comparison",
+    "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+    "artifactSha256": "bc9db8134c8278973967c91c00324531833f643fc0fb2c8ebe318c9ed4469eea",
+    "license": "CC-BY-NC-SA-4.0",
+    "attributionRequired": true
+  },
+  "sourceRegister": {
+    "path": "compliance/source-register.v1.json",
+    "sha256": "99b6a07943b75707d239515c680f275d35dd0d895f0d6933a2e7d881e162317b"
+  },
+  "rights": {
+    "path": "compliance/rights-matrix.al-isabah.v1.json",
+    "sha256": "97df0e768ceec261b7c8686cd9d449bcf64b4cf4c0342ba9206f8cfc552f0110",
+    "matrixId": "al-isabah-rights-2026-08-15",
+    "license": "CC-BY-NC-SA-4.0",
+    "exclusionsSha256": "0b8ed5b2d5ced62847488559ca2eb1eb2bfc36c3b17db9e0fe967b8b09f30fef",
+    "publicationDecisionSha256": "a01a703da742f8f61c708ef09c00bdcb66a4e2d35d1e714f1efd4bb18fb1740f",
+    "publicBoundaryDecisionSha256": "6856053607f94f225a7eb85fdf823cb6a2bf3cd2b7eb4f0048094802bd8088f9",
+    "followUpReviewSha256": "dd28f28cd2ff7bb2645c927c3983212ae3b74410d6128be168ef4540baa91eb9"
+  },
+  "policyBinding": {
+    "path": "compliance/policy-binding.v1.json",
+    "sha256": "f1ca5fa8303b13e70bbd92aeeb8e5d2a05ba037cf951043b5043262dd2d591e5"
+  },
+  "promotion": {
+    "path": "compliance/promotions/available-data.v1.json",
+    "sha256": "b2cb050d877a445b01fc4f83ab48e9b5e1ecb4419200f3357aa5d6e64b74db94",
+    "status": "blocked"
+  },
+  "reviewCounts": {
+    "machinePassed": 745,
+    "needsAttention": 792,
+    "humanReviewed": 0,
+    "humanUnreviewed": 1537
+  },
+  "outputInventory": [
+    {
+      "path": "records/volume-01.jsonl",
+      "sha256": "cd08afb8b55700fe291bbc1ef0ab3a48b240e849bd4cce7a105e45722fabbc2f",
+      "bytes": 6945696,
+      "recordCount": 1537
+    },
+    {
+      "path": "review.json",
+      "sha256": "39806b1fac07f7e806fda7d3bd528ae320f1491cbafa43242af1881453dde4ef",
+      "bytes": 691,
+      "recordCount": 1
+    }
+  ],
+  "historicalExposure": {
+    "decision": "forward-remediation-no-history-rewrite",
+    "historyPreserved": true,
+    "releaseChanges": "none",
+    "sealedPrivateCopyPrerequisiteForFutureRewrite": true,
+    "legalConclusion": false
+  }
+}

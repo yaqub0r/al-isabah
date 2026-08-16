@@ -184,8 +184,8 @@ shape atomically.
 Both commands reject wrong or missing ordinals, source-ID drift, stale policy
 hashes, non-final witnesses, reused critique runs, broken name references,
 private fields, and structural coverage gaps before writing. Shards and the
-working packet stay below ignored `.runtime`; only a complete validated
-proposal enters Git.
+working packet stay below ignored `.runtime`; only a separately derived strict
+public proposal may enter Git.
 
 ## 6. Render and finalize machine readiness
 
@@ -208,15 +208,18 @@ pass. It does not set human approval.
 
 ```sh
 python scripts/translation_workflow.py submit \
-  --packet .runtime/translation/packets/issue-0025.json
+  --packet .runtime/translation/packets/issue-0025.json \
+  --output-root <approved-external-evidence-destination>
 ```
 
 The command revalidates the packet and presentation, rejects private fields and
-absolute workstation paths, and creates immutable proposal files below
-`content/translation-proposals/`. It refuses to overwrite an existing
-proposal. Commit only those proposal files and intentional supporting changes;
-never commit `.runtime`, downloaded source files, private witnesses, or model
-traces.
+absolute workstation paths, and writes immutable evidence only to an explicit,
+repository-reviewed destination outside this public checkout. It refuses every
+destination inside the repository and refuses to overwrite existing evidence.
+Do not run `submit` until the project has approved the exact destination. A
+separate reviewed process derives a strict `public-proposal.v1` artifact for a
+public pull request. Never commit the raw packet, detailed review, `.runtime`,
+downloaded sources, private witnesses, or model traces.
 
 The pull request references the assignment issue without closing it unless the
 complete assigned range is present and valid. Machine-ready does not mean

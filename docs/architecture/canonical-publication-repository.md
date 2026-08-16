@@ -88,6 +88,11 @@ The application-neutral handoff is defined by the
 immutable contract rather than inspecting translation packets or depending on
 the repository's internal working layout.
 
+Public-working handoff now begins with a strict public proposal, not an internal
+translation-work packet. The [issue 0026 boundary decision](public-boundary-remediation.md)
+records the forward remediation and historical-exposure exception. This does
+not change the separate canonical-promotion gates.
+
 Corrections arrive as reviewable proposals with their rationale and evidence
 references. Accepted corrections create new history; they do not erase the
 provenance or review record of earlier releases.

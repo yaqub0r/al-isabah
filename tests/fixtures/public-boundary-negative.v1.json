@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0.0",
+  "cases": [
+    {"category": "blind-translation", "shape": "prohibited-field"},
+    {"category": "independent-critique", "shape": "prohibited-field"},
+    {"category": "witness-resolution", "shape": "prohibited-field"},
+    {"category": "model-reasoning", "shape": "prohibited-field"},
+    {"category": "prompt-response", "shape": "prohibited-field"},
+    {"category": "raw-findings", "shape": "prohibited-field"},
+    {"category": "reconstructive-repair", "shape": "prohibited-field"},
+    {"category": "absolute-path", "shape": "unsafe-value"},
+    {"category": "relative-path", "shape": "unsafe-value"},
+    {"category": "unsafe-url", "shape": "unsafe-value"},
+    {"category": "token-shaped-secret", "shape": "unsafe-value"},
+    {"category": "unknown-key", "shape": "contract-error"},
+    {"category": "raw-packet-inclusion", "shape": "unsafe-value"},
+    {"category": "raw-review-inclusion", "shape": "unsafe-value"},
+    {"category": "closure-mismatch", "shape": "binding-error"},
+    {"category": "source-mismatch", "shape": "binding-error"},
+    {"category": "rights-mismatch", "shape": "binding-error"},
+    {"category": "policy-mismatch", "shape": "binding-error"},
+    {"category": "user-facing-drift", "shape": "parity-error"}
+  ]
+}
