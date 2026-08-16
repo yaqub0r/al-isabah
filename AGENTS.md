@@ -1,5 +1,15 @@
 # Repository workflow
 
+## Realtime voice pronunciation
+
+When conversation context indicates realtime voice, use the original-language
+spelling and this project glossary. Preserve consonant distinctions and vowel
+length, apply user corrections consistently, and keep ordinary project Latin
+spellings in prose.
+
+- Al-Isabah — الإِصَابَة — *al-iṣābah* — approximately /al.ʔi.sˤaː.ba/; use
+  emphatic ṣād ص and the long ā, not sīn.
+
 ## Issue-first development
 
 Every repository change must be associated with a GitHub issue before work
