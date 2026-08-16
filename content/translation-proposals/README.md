@@ -1,16 +1,21 @@
 # Translation proposals
 
-This directory contains machine-ready, human-unreviewed translation packets
-and their generated bilingual review presentations. They are public working
-artifacts governed by `docs/contracts/translation-quality-workflow.md`; they
-are not canonical entries or releases.
+This directory documents the internal translation-work submission path. Raw
+translation packets and their detailed review presentations are not public
+repository artifacts. They may contain autonomous-stage evidence,
+reconstructive material, or restricted-reference details and must remain in an
+approved non-public evidence system.
 
-Create files here only through:
+Generate external review evidence only through:
 
 ```sh
-python scripts/translation_workflow.py submit --packet <runtime-packet.json>
+python scripts/translation_workflow.py submit --packet <runtime-packet.json> \
+  --output-root <approved-external-evidence-destination>
 ```
 
 Proposal filenames are bound to the GitHub assignment issue. The submit command
-never overwrites an existing proposal. Human decisions and canonical promotion
-are recorded separately and do not mutate the original proposal evidence.
+must target an approved external evidence destination; a repository path under
+this directory is not an authorized destination. Public-working content enters
+this repository only through the strict `public-proposal.v1` projection under
+`content/public-proposals/`. Human decisions and canonical promotion remain
+separate states.

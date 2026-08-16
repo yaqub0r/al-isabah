@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/schemas/release-closure.v1.schema.json",
+  "title": "Al-Isabah exact public-working release closure v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "closureId", "issue", "publicationStatus", "canonicalPromotion", "consumerSchemaVersion", "publicProposal", "publicReview", "projection", "sourceAuthority", "sourceRegister", "rights", "policyBinding", "promotion", "reviewCounts", "outputInventory", "historicalExposure"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "closureId": {"const": "issue-0026-public-working-closure-v1"},
+    "issue": {"const": "https://github.com/yaqub0r/al-isabah/issues/35"},
+    "publicationStatus": {"const": "public-working"},
+    "canonicalPromotion": {"const": "blocked"},
+    "consumerSchemaVersion": {"const": "2.0.0"},
+    "publicProposal": {"$ref": "#/$defs/fileBinding"},
+    "publicReview": {"$ref": "#/$defs/fileBinding"},
+    "projection": {
+      "type": "object", "additionalProperties": false,
+      "required": ["entryCount", "orderSha256", "userFacingSha256", "recordsSha256"],
+      "properties": {"entryCount": {"const": 1537}, "orderSha256": {"$ref": "#/$defs/sha256"}, "userFacingSha256": {"$ref": "#/$defs/sha256"}, "recordsSha256": {"$ref": "#/$defs/sha256"}}
+    },
+    "sourceAuthority": {
+      "type": "object", "additionalProperties": false,
+      "required": ["sourceId", "commit", "artifactSha256", "license", "attributionRequired"],
+      "properties": {"sourceId": {"const": "openiti-cleaned-arabic-comparison"}, "commit": {"type": "string", "pattern": "^[a-f0-9]{40}$"}, "artifactSha256": {"$ref": "#/$defs/sha256"}, "license": {"const": "CC-BY-NC-SA-4.0"}, "attributionRequired": {"const": true}}
+    },
+    "sourceRegister": {"$ref": "#/$defs/fileBinding"},
+    "rights": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "sha256", "matrixId", "license", "exclusionsSha256", "publicationDecisionSha256", "publicBoundaryDecisionSha256", "followUpReviewSha256"],
+      "properties": {"path": {"const": "compliance/rights-matrix.al-isabah.v1.json"}, "sha256": {"$ref": "#/$defs/sha256"}, "matrixId": {"type": "string"}, "license": {"const": "CC-BY-NC-SA-4.0"}, "exclusionsSha256": {"$ref": "#/$defs/sha256"}, "publicationDecisionSha256": {"$ref": "#/$defs/sha256"}, "publicBoundaryDecisionSha256": {"$ref": "#/$defs/sha256"}, "followUpReviewSha256": {"$ref": "#/$defs/sha256"}}
+    },
+    "policyBinding": {"$ref": "#/$defs/fileBinding"},
+    "promotion": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "sha256", "status"],
+      "properties": {"path": {"const": "compliance/promotions/available-data.v1.json"}, "sha256": {"$ref": "#/$defs/sha256"}, "status": {"const": "blocked"}}
+    },
+    "reviewCounts": {
+      "type": "object", "additionalProperties": false,
+      "required": ["machinePassed", "needsAttention", "humanReviewed", "humanUnreviewed"],
+      "properties": {"machinePassed": {"type": "integer"}, "needsAttention": {"type": "integer"}, "humanReviewed": {"type": "integer"}, "humanUnreviewed": {"type": "integer"}}
+    },
+    "outputInventory": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/output"}},
+    "historicalExposure": {
+      "type": "object", "additionalProperties": false,
+      "required": ["decision", "historyPreserved", "releaseChanges", "sealedPrivateCopyPrerequisiteForFutureRewrite", "legalConclusion"],
+      "properties": {"decision": {"const": "forward-remediation-no-history-rewrite"}, "historyPreserved": {"const": true}, "releaseChanges": {"const": "none"}, "sealedPrivateCopyPrerequisiteForFutureRewrite": {"const": true}, "legalConclusion": {"const": false}}
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "fileBinding": {"type": "object", "additionalProperties": false, "required": ["path", "sha256"], "properties": {"path": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._/-]+$"}, "sha256": {"$ref": "#/$defs/sha256"}}},
+    "output": {"type": "object", "additionalProperties": false, "required": ["path", "sha256", "bytes", "recordCount"], "properties": {"path": {"enum": ["records/volume-01.jsonl", "review.json"]}, "sha256": {"$ref": "#/$defs/sha256"}, "bytes": {"type": "integer", "minimum": 1}, "recordCount": {"type": "integer", "minimum": 1}}}
+  }
+}

@@ -109,3 +109,18 @@ The legacy Volume 8 and Khadijah development work was retained in approved
 access-controlled research storage rather than promoted here. Its non-sensitive
 integrity and retirement record is in `compliance/research-retirement.v1.json`.
 
+## Public-working boundary
+
+Current public-working builds consume only the strict
+[`public-proposal.v1`](schemas/public-proposal.v1.schema.json) artifact and its
+exact release closure. Internal translation-work packets and detailed review
+evidence are not public build inputs. The issue #35 forward remediation preserves
+the same 1,537 reader-facing Arabic/English records while excluding internal,
+reconstructive, restricted-reference, and operational material from the current
+tree. Canonical promotion remains blocked.
+
+Automated publication is intentionally paused. See the
+[public-boundary remediation record](docs/architecture/public-boundary-remediation.md)
+for the preserved-history decision and the conditions for deliberate future
+re-enablement.
+

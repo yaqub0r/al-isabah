@@ -17,7 +17,8 @@
     "authorities",
     "counts",
     "duplicatePrintedEntryNumbers",
-    "files"
+    "files",
+    "releaseClosure"
   ],
   "properties": {
     "schemaVersion": { "const": "2.0.0" },
@@ -154,6 +155,15 @@
           "recordCount": { "type": "integer", "minimum": 1 },
           "volume": { "type": "integer", "minimum": 1 }
         }
+      }
+    },
+    "releaseClosure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["closureId", "sha256"],
+      "properties": {
+        "closureId": { "const": "issue-0026-public-working-closure-v1" },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
       }
     }
   }

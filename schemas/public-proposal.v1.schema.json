@@ -1,0 +1,206 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/schemas/public-proposal.v1.schema.json",
+  "title": "Al-Isabah public proposal v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "proposalId", "workId", "publicationStatus", "canonicalPromotion", "consumerSchemaVersion", "sourceAuthority", "rights", "policy", "review", "historicalEvidence", "baseline", "records"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "proposalId": {"const": "issue-0026-public-proposal-v1"},
+    "workId": {"const": "ibn-hajar-al-isabah"},
+    "publicationStatus": {"const": "public-working"},
+    "canonicalPromotion": {"const": "blocked"},
+    "consumerSchemaVersion": {"const": "2.0.0"},
+    "sourceAuthority": {"$ref": "#/$defs/authority"},
+    "rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["matrixId", "allowedUseClassification", "statusCode", "effectCode"],
+      "properties": {
+        "matrixId": {"type": "string", "minLength": 1},
+        "allowedUseClassification": {"const": "approved-noncommercial-public-working"},
+        "statusCode": {"const": "public-working"},
+        "effectCode": {"const": "canonical-promotion-blocked"}
+      }
+    },
+    "policy": {"$ref": "#/$defs/policy"},
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["machinePassed", "needsAttention", "humanReviewed", "humanUnreviewed"],
+      "properties": {
+        "machinePassed": {"type": "integer", "minimum": 0},
+        "needsAttention": {"type": "integer", "minimum": 0},
+        "humanReviewed": {"type": "integer", "minimum": 0},
+        "humanUnreviewed": {"type": "integer", "minimum": 0}
+      }
+    },
+    "historicalEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["packetGitBlobSha1", "packetGitBlobSha256", "packetGitBlobBytes", "reviewGitBlobSha1", "reviewSha256", "historyPreserved"],
+      "properties": {
+        "packetGitBlobSha1": {"type": "string", "pattern": "^[a-f0-9]{40}$"},
+        "packetGitBlobSha256": {"$ref": "#/$defs/sha256"},
+        "packetGitBlobBytes": {"const": 34475553},
+        "reviewGitBlobSha1": {"type": "string", "pattern": "^[a-f0-9]{40}$"},
+        "reviewSha256": {"$ref": "#/$defs/sha256"},
+        "historyPreserved": {"const": true}
+      }
+    },
+    "baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["distributionSchemaVersion", "recordCount", "userFacingSha256"],
+      "properties": {
+        "distributionSchemaVersion": {"const": "2.0.0"},
+        "recordCount": {"const": 1537},
+        "userFacingSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "records": {"type": "array", "minItems": 1537, "maxItems": 1537, "items": {"$ref": "#/$defs/record"}}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "stringOrStrings": {"oneOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
+    "scalarHeading": {"type": ["string", "integer", "null"]},
+    "license": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["spdx", "url", "attribution"],
+      "properties": {
+        "spdx": {"const": "CC-BY-NC-SA-4.0"},
+        "url": {"const": "https://creativecommons.org/licenses/by-nc-sa/4.0/"},
+        "attribution": {"type": "string", "minLength": 1}
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceId", "commit", "sha256", "license"],
+      "properties": {
+        "sourceId": {"const": "openiti-cleaned-arabic-comparison"},
+        "commit": {"type": "string", "pattern": "^[a-f0-9]{40}$"},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "license": {"$ref": "#/$defs/license"}
+      }
+    },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bindingSha256"],
+      "properties": {"bindingSha256": {"$ref": "#/$defs/sha256"}}
+    },
+    "page": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["volume", "page"],
+      "properties": {"volume": {"type": "integer", "minimum": 1}, "page": {"type": "integer", "minimum": 1}}
+    },
+    "title": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["arabic", "english", "state", "method"],
+      "properties": {
+        "arabic": {"type": "string", "minLength": 1},
+        "english": {"type": "string", "minLength": 1},
+        "state": {"enum": ["ready", "needs_attention"]},
+        "method": {"enum": ["primary-name-candidate", "opening-fallback"]}
+      }
+    },
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["category", "priority"],
+      "properties": {"category": {"type": "string", "minLength": 1}, "priority": {"type": "string", "minLength": 1}}
+    },
+    "heading": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["arabic", "english", "level"],
+      "properties": {"arabic": {"$ref": "#/$defs/scalarHeading"}, "english": {"$ref": "#/$defs/scalarHeading"}, "level": {"$ref": "#/$defs/scalarHeading"}}
+    },
+    "context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "heading", "arabic", "english", "pages", "humanReview", "unresolved", "sourceSha256"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "kind": {"type": "string", "minLength": 1},
+        "heading": {"$ref": "#/$defs/heading"},
+        "arabic": {"type": "string"},
+        "english": {"type": "string"},
+        "pages": {"type": "array", "items": {"$ref": "#/$defs/page"}},
+        "humanReview": {"enum": ["unreviewed", "in_review", "reviewed", "verified"]},
+        "unresolved": {"type": "array", "items": {"$ref": "#/$defs/finding"}},
+        "sourceSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "name": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "arabic", "english", "aliases", "kind", "reviewState"],
+      "properties": {
+        "id": {"$ref": "#/$defs/stringOrStrings"},
+        "arabic": {"$ref": "#/$defs/stringOrStrings"},
+        "english": {"$ref": "#/$defs/stringOrStrings"},
+        "aliases": {"$ref": "#/$defs/stringOrStrings"},
+        "kind": {"$ref": "#/$defs/stringOrStrings"},
+        "reviewState": {"$ref": "#/$defs/stringOrStrings"}
+      }
+    },
+    "formula": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["formulaId", "recordId", "observedArabic", "semanticClass", "targetRealization"],
+      "properties": {
+        "formulaId": {"type": "string", "minLength": 1},
+        "recordId": {"type": "string", "minLength": 1},
+        "observedArabic": {"type": "string", "minLength": 1},
+        "semanticClass": {"type": "string", "minLength": 1},
+        "targetRealization": {"type": "string", "minLength": 1}
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["authorityId", "commit", "artifactSha256", "exactTextSha256", "license"],
+      "properties": {
+        "authorityId": {"const": "openiti-cleaned-arabic-comparison"},
+        "commit": {"type": "string", "pattern": "^[a-f0-9]{40}$"},
+        "artifactSha256": {"$ref": "#/$defs/sha256"},
+        "exactTextSha256": {"$ref": "#/$defs/sha256"},
+        "license": {"$ref": "#/$defs/license"}
+      }
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "id", "kind", "workId", "packetId", "sourceOrdinal", "printedEntryNumber", "canonicalEntryId", "volume", "pages", "title", "arabic", "english", "precedingMaterial", "names", "unresolved", "formulas", "machineAssessment", "humanReview", "source", "policy"],
+      "properties": {
+        "schemaVersion": {"const": "2.0.0"},
+        "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,199}$"},
+        "kind": {"const": "entry"},
+        "workId": {"const": "ibn-hajar-al-isabah"},
+        "packetId": {"type": "string", "minLength": 1},
+        "sourceOrdinal": {"type": "integer", "minimum": 1},
+        "printedEntryNumber": {"type": "integer", "minimum": 1},
+        "canonicalEntryId": {"type": ["string", "null"]},
+        "volume": {"type": "integer", "minimum": 1},
+        "pages": {"type": "array", "items": {"$ref": "#/$defs/page"}},
+        "title": {"$ref": "#/$defs/title"},
+        "arabic": {"type": "string", "minLength": 1},
+        "english": {"type": "string", "minLength": 1},
+        "precedingMaterial": {"type": "array", "items": {"$ref": "#/$defs/context"}},
+        "names": {"type": "array", "items": {"$ref": "#/$defs/name"}},
+        "unresolved": {"type": "array", "items": {"$ref": "#/$defs/finding"}},
+        "formulas": {"type": "array", "items": {"$ref": "#/$defs/formula"}},
+        "machineAssessment": {"enum": ["passed", "needs_attention"]},
+        "humanReview": {"enum": ["unreviewed", "in_review", "reviewed", "verified"]},
+        "source": {"$ref": "#/$defs/source"},
+        "policy": {"$ref": "#/$defs/policy"}
+      }
+    }
+  }
+}

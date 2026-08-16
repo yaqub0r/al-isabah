@@ -237,6 +237,40 @@
       "review_status": "approved-for-public-working-display-canonical-promotion-blocked"
     },
     {
+      "id": "issue-0026-public-proposal-v1",
+      "kind": "public-working-bilingual-proposal",
+      "title": "Issue 0026 strict public proposal",
+      "classification": "approved-for-publication",
+      "rights_basis": "A deterministic projection of the accepted public-distribution v2 record fields. It preserves the approved bilingual reading content and normalized public provenance while excluding internal translation stages, reconstructive evidence, raw findings, restricted witness wording, operational locations, and source coordinates.",
+      "license": {
+        "spdx": "CC-BY-NC-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      "integrity": {
+        "proposal_sha256": "d3724903dd3ffd8030390415464fcbc9728274f971dd2b774e6384ecda30359c",
+        "public_review_sha256": "39806b1fac07f7e806fda7d3bd528ae320f1491cbafa43242af1881453dde4ef",
+        "record_projection_sha256": "cd08afb8b55700fe291bbc1ef0ab3a48b240e849bd4cce7a105e45722fabbc2f",
+        "order_sha256": "69efa02ecc2c277471bd1108ffb4f6f758c3454659814b2ef3f80fce845f667f",
+        "user_facing_sha256": "702a3af5543f3c8d83aa45559f62a132300cd6dabe7a3b3428940b73d8493047",
+        "public_entries": 1537
+      },
+      "depends_on": [
+        "ibn-hajar-underlying-medieval-work",
+        "openiti-cleaned-arabic-comparison"
+      ],
+      "allowed_actions": [
+        "noncommercial public-working reading with attribution and share-alike terms",
+        "deterministic v2 consumer distribution",
+        "aggregate machine and human review reporting"
+      ],
+      "prohibited_public_actions": [
+        "represent the proposal as canonically promoted or human-approved",
+        "add restricted witness expression, raw findings, reconstructive evidence, or operational metadata",
+        "publish without exact public-boundary and release-closure validation"
+      ],
+      "review_status": "approved-forward-remediation-canonical-promotion-blocked"
+    },
+    {
       "id": "volume-08-aligned-arabic",
       "kind": "derived-arabic-data",
       "title": "Volume 8 aligned Arabic source",

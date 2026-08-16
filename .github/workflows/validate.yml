@@ -9,6 +9,9 @@ on:
 permissions:
   contents: read
 
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -35,6 +38,9 @@ jobs:
           python3 -m json.tool profiles/translation-source.v1.json > /dev/null
           python3 -m json.tool schemas/public-distribution.v1.schema.json > /dev/null
           python3 -m json.tool schemas/public-distribution.v2.schema.json > /dev/null
+          python3 -m json.tool schemas/public-proposal.v1.schema.json > /dev/null
+          python3 -m json.tool schemas/public-review.v1.schema.json > /dev/null
+          python3 -m json.tool schemas/release-closure.v1.schema.json > /dev/null
 
       - name: Validate translation workflow
         run: python3 scripts/translation_workflow.py doctor --offline
@@ -47,6 +53,12 @@ jobs:
 
       - name: Build and validate public distribution contract
         run: |
+          python3 scripts/validate_public_tree.py
+          python3 scripts/validate_public_proposal.py
+          python3 scripts/build_public_review.py \
+            --output content/public-proposals/issue-0026.public-review.json \
+            --check
+          python3 scripts/validate_release_closure.py
           python3 scripts/build_public_distribution.py \
             --output .runtime/public-distribution \
             --repository-commit "${GITHUB_SHA}"

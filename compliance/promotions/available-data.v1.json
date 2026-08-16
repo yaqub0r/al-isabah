@@ -58,6 +58,23 @@
     "honorific_preservation": "incomplete",
     "translation_lineage": "incomplete"
   },
+  "public_boundary_remediation": {
+    "issue": "https://github.com/yaqub0r/al-isabah/issues/35",
+    "status": "forward-remediated-current-tree",
+    "public_proposal": "issue-0026-public-proposal-v1",
+    "record_count": 1537,
+    "user_facing_parity": "passed",
+    "historical_exposure": "retained-by-explicit-no-history-rewrite-decision",
+    "legal_conclusion": false,
+    "publication_workflow": "disabled-manually",
+    "reenablement_conditions": [
+      "current-tree remediation is merged",
+      "public-boundary and release-closure validation pass on the merged commit",
+      "the historical-exposure decision remains recorded",
+      "repository review is complete",
+      "publication is deliberately re-enabled and then verified"
+    ]
+  },
   "blockers": [
     {
       "id": "historical-acquisition-record-remediation",
@@ -72,5 +89,5 @@
       "summary": "Complete human scholarly review and resolve or explicitly carry forward all remaining uncertainties."
     }
   ],
-  "decision": "Serve only the validated application-neutral public-working corpus with its license, attribution, review state, and quarantine exclusions. Preserve the legacy candidate data privately and do not promote any record as an approved canonical release until the independent repository gates pass."
+  "decision": "Serve only a validated application-neutral public-working corpus or strict public proposal with its license, attribution, review state, public-boundary checks, and exact release closure. Current Git history remains intact by explicit forward-remediation decision. Do not promote any record as canonical until the independent repository gates pass."
 }

@@ -37,3 +37,13 @@ deliberate licensing decision. Consult
 [`compliance/rights-matrix.al-isabah.v1.json`](compliance/rights-matrix.al-isabah.v1.json)
 and [`compliance/source-register.v1.json`](compliance/source-register.v1.json)
 before reusing a particular artifact.
+
+## Current public-working remediation
+
+Issue #35 is a repository public-boundary remediation, not a legal or copyright
+conclusion. The current tree exposes the approved reader-facing content only
+through a strict public proposal and exact closure manifest. Internal translation
+stages, reconstructive evidence, raw findings, restricted witness wording, and
+operational metadata are excluded. Canonical promotion and automated publication
+remain blocked pending their separate reviewed gates. Existing history and
+releases are preserved by explicit forward-fix decision.
