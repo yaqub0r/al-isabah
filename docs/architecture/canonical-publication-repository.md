@@ -88,6 +88,14 @@ The application-neutral handoff is defined by the
 immutable contract rather than inspecting translation packets or depending on
 the repository's internal working layout.
 
+Consumers discover the governing policy set through the versioned
+[translation-governance reference](../contracts/translation-governance-reference.v1.json)
+and pin it at an immutable repository commit. That reference records the
+active policy and formula-registry hashes without replacing the public
+distribution schema. Human review remains per-record metadata and confidence,
+not a release class; incremental translations, corrections, and review
+coverage use the same immutable release and supersession cycle.
+
 Public-working handoff now begins with a strict public proposal, not an internal
 translation-work packet. The [issue 0026 boundary decision](public-boundary-remediation.md)
 records the forward remediation and historical-exposure exception. This does

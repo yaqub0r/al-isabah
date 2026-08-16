@@ -28,6 +28,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_MANIFEST = ROOT / "profiles" / "translation-source.v1.json"
 DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v1.json"
 DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v1.schema.json"
+FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 RUNTIME_ROOT = ROOT / ".runtime" / "translation"
 PROPOSAL_ROOT = ROOT / "content" / "translation-proposals"
 REPOSITORY = "yaqub0r/al-isabah"

@@ -20,6 +20,15 @@ See the [canonical publication repository
 model](docs/architecture/canonical-publication-repository.md) for the complete
 responsibility and trust-boundary model.
 
+Downstream consumers discover and pin the versioned
+[translation-governance reference](docs/contracts/translation-governance-reference.v1.json).
+Its [compatibility guide](docs/contracts/downstream-consumer-compatibility.md)
+documents immutable-commit pinning, the Al-Isabah-owned formula registry,
+consumer responsibilities, and the downstream deprecation path. Human review
+updates per-record metadata and confidence rather than release class;
+incremental translations, corrections, and review coverage all use the same
+immutable release cycle.
+
 ## Translating Al-Isabah
 
 Start with the [local contract index](docs/contracts/INDEX.md). It directs an

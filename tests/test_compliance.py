@@ -21,14 +21,39 @@ class ComplianceTests(unittest.TestCase):
         cls.promotion = MODULE.load_json(MODULE.PROMOTION_PATH)
         cls.retirement = MODULE.load_json(MODULE.RETIREMENT_PATH)
         cls.rights_matrix = MODULE.load_json(MODULE.RIGHTS_MATRIX_PATH)
+        cls.governance_reference = MODULE.load_json(
+            MODULE.GOVERNANCE_REFERENCE_PATH
+        )
+        cls.formula_registry = MODULE.load_json(MODULE.FORMULA_REGISTRY_PATH)
 
-    def validate(self, *, policy=None, register=None, promotion=None, rights_matrix=None):
+    def validate(
+        self,
+        *,
+        policy=None,
+        register=None,
+        promotion=None,
+        rights_matrix=None,
+        governance_reference=None,
+        formula_registry=None,
+    ):
         return MODULE.validate_all(
-            copy.deepcopy(policy or self.policy),
-            copy.deepcopy(register or self.register),
-            copy.deepcopy(promotion or self.promotion),
+            copy.deepcopy(self.policy if policy is None else policy),
+            copy.deepcopy(self.register if register is None else register),
+            copy.deepcopy(self.promotion if promotion is None else promotion),
             copy.deepcopy(self.retirement),
-            copy.deepcopy(rights_matrix or self.rights_matrix),
+            copy.deepcopy(
+                self.rights_matrix if rights_matrix is None else rights_matrix
+            ),
+            copy.deepcopy(
+                self.governance_reference
+                if governance_reference is None
+                else governance_reference
+            ),
+            copy.deepcopy(
+                self.formula_registry
+                if formula_registry is None
+                else formula_registry
+            ),
         )
 
     def test_current_blocked_manifest_is_valid(self):
@@ -105,6 +130,53 @@ class ComplianceTests(unittest.TestCase):
             any(
                 error.endswith("sha256 does not match local file")
                 for error in self.validate(policy=policy)
+            )
+        )
+
+    def test_governance_reference_rejects_external_authority(self):
+        reference = copy.deepcopy(self.governance_reference)
+        reference["authority"]["repository"] = "https://github.com/yaqub0r/sabiqah"
+        self.assertIn(
+            "governance reference: authority or pinning rule is incorrect",
+            self.validate(governance_reference=reference),
+        )
+
+    def test_governance_reference_rejects_stale_formula_hash(self):
+        reference = copy.deepcopy(self.governance_reference)
+        artifact = next(
+            item
+            for item in reference["governanceArtifacts"]
+            if item["id"] == "honorific-formula-registry"
+        )
+        artifact["sha256"] = "0" * 64
+        self.assertIn(
+            "governance reference: honorific-formula-registry hash is stale",
+            self.validate(governance_reference=reference),
+        )
+
+    def test_governance_reference_preserves_review_release_semantics(self):
+        reference = copy.deepcopy(self.governance_reference)
+        reference["releaseSemantics"]["humanReviewChangesReleaseClass"] = True
+        self.assertIn(
+            "governance reference: release semantics are incorrect",
+            self.validate(governance_reference=reference),
+        )
+
+    def test_governance_reference_requires_the_sabiqah_deprecation_inventory(self):
+        reference = copy.deepcopy(self.governance_reference)
+        reference["deprecatedConsumerAuthorities"].pop()
+        self.assertIn(
+            "governance reference: exact Sabiqah authority inventory is required",
+            self.validate(governance_reference=reference),
+        )
+
+    def test_formula_registry_rejects_duplicate_source(self):
+        registry = copy.deepcopy(self.formula_registry)
+        registry["entries"].append(copy.deepcopy(registry["entries"][0]))
+        self.assertTrue(
+            any(
+                "duplicate formula source" in error
+                for error in self.validate(formula_registry=registry)
             )
         )
 
