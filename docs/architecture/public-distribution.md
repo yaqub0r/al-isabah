@@ -81,3 +81,25 @@ Removing or changing a required field, identity rule, public-state meaning, or
 checksum rule requires a new major version and coordinated consumer support.
 Applications pin a distribution ID and retain the previous immutable version
 for rollback.
+
+## Release immutability and supersession
+
+The public-working release for commit
+`919b75cd314d6a3e340e6f4676715ef4a2bee46a` is a valid schema-v2 transport,
+but GitHub reports it as mutable because repository release immutability was
+disabled when it was created. It remains retained as historical evidence and a
+content-equivalent transition pin; it must not be cited as proof that its tag or
+asset is immutable.
+
+Issue [#40](https://github.com/yaqub0r/al-isabah/issues/40) records the
+non-destructive supersession decision. Repository release immutability must be
+enabled before any later public-working release is created. The first verified
+schema-v2 release created under that setting is the recommended pin when issue
+#40 records its exact commit-addressed tag and asset digest. Its reader-facing
+scholarly content must remain identical to the transition pin, and its manifest
+must continue to declare `public-working` with `canonicalPromotion` blocked.
+
+No predecessor is replaced by this supersession. Existing schema-v2 releases
+remain rollback and historical pins. Legacy schema-v1 releases remain retained
+for history but are superseded for new consumers because they contain the
+already documented legacy operational metadata.
