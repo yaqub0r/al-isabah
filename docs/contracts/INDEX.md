@@ -33,6 +33,10 @@ bilingual presentation agree by hash.
   is the versioned, integrity-bound discovery document for downstream
   consumers. The companion [compatibility guide](downstream-consumer-compatibility.md)
   defines pinning, release semantics, and the Sabiqah deprecation inventory.
+- [`elixr-approved-story-projection`](elixr-approved-story-projection.md) is the
+  closed, text-free consumer contract for the first partial Khadijah structured
+  assertion projection. It pins one exact immutable public-working release and
+  does not create a new release or canonical-promotion state.
 - [`profiles/honorific-formulas.v1.json`](../../profiles/honorific-formulas.v1.json)
   is the machine-readable Al-Isabah formula registry implemented by the local
   translation workflow.
