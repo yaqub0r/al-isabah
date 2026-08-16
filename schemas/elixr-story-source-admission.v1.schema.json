@@ -1,0 +1,294 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/schemas/elixr-story-source-admission.v1.schema.json",
+  "title": "Al-Isabah Elixr story source admission v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion", "admissionId", "projectionId", "workId", "sourceRelease",
+    "rights", "candidateRecords", "persons", "events", "relationships",
+    "attestedClaims", "inferredClaims", "ambiguitySets", "review", "lifecycle"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "admissionId": { "const": "al-isabah-khadijah-elixr-story-source-admission-v1" },
+    "projectionId": { "const": "al-isabah-khadijah-elixr-approved-story-projection-v1" },
+    "workId": { "const": "ibn-hajar-al-isabah" },
+    "sourceRelease": { "$ref": "#/$defs/sourceRelease" },
+    "rights": { "$ref": "#/$defs/rights" },
+    "candidateRecords": {
+      "type": "array", "minItems": 4, "maxItems": 4,
+      "items": { "$ref": "#/$defs/candidateRecord" }
+    },
+    "persons": {
+      "type": "array", "minItems": 1,
+      "items": { "$ref": "#/$defs/person" }
+    },
+    "events": {
+      "type": "array", "minItems": 1,
+      "items": { "$ref": "#/$defs/event" }
+    },
+    "relationships": {
+      "type": "array", "minItems": 1,
+      "items": { "$ref": "#/$defs/relationship" }
+    },
+    "attestedClaims": {
+      "type": "array", "minItems": 1,
+      "items": { "$ref": "#/$defs/claim" }
+    },
+    "inferredClaims": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/claim" }
+    },
+    "ambiguitySets": {
+      "type": "array", "minItems": 1,
+      "items": { "$ref": "#/$defs/ambiguitySet" }
+    },
+    "review": { "$ref": "#/$defs/review" },
+    "lifecycle": { "$ref": "#/$defs/projectionLifecycle" }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "stableId": {
+      "type": "string",
+      "pattern": "^isabah-(?:person|event|relationship|claim)-[a-z0-9-]+-v1$"
+    },
+    "sourceRelease": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "repositoryCommit", "releaseTag", "immutable", "distributionId", "assetName",
+        "assetSha256", "proposalId", "proposalSha256", "closureId", "closureSha256"
+      ],
+      "properties": {
+        "repositoryCommit": { "const": "278e4e43f983ff7733368557516406f1f53211dc" },
+        "releaseTag": { "const": "public-working-278e4e43f983ff7733368557516406f1f53211dc" },
+        "immutable": { "const": true },
+        "distributionId": { "const": "al-isabah-public-working-278e4e43f983" },
+        "assetName": { "const": "al-isabah-public-distribution-278e4e43f983ff7733368557516406f1f53211dc.zip" },
+        "assetSha256": { "const": "41c3ffd1b665a7e9af689c5540b668907cb6b84f4fae23033ab418209d1e1329" },
+        "proposalId": { "const": "issue-0026-public-proposal-v1" },
+        "proposalSha256": { "$ref": "#/$defs/sha256" },
+        "closureId": { "const": "issue-0026-public-working-closure-v1" },
+        "closureSha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "rights": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "matrixId", "matrixSha256", "license", "licenseUrl", "useClassification",
+        "softwareLicenseGranted", "attribution"
+      ],
+      "properties": {
+        "matrixId": { "const": "al-isabah-rights-2026-08-15" },
+        "matrixSha256": { "$ref": "#/$defs/sha256" },
+        "license": { "const": "CC-BY-NC-SA-4.0" },
+        "licenseUrl": { "const": "https://creativecommons.org/licenses/by-nc-sa/4.0/" },
+        "useClassification": { "const": "approved-noncommercial-with-attribution-and-share-alike" },
+        "softwareLicenseGranted": { "const": false },
+        "attribution": {
+          "type": "array", "minItems": 2, "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "candidateRecord": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "recordId", "sourceOrdinal", "recordSha256", "decision", "storyUseTier",
+        "rationaleCodes", "machineAssessment", "humanReview", "uncertaintyCodes"
+      ],
+      "properties": {
+        "recordId": { "type": "string", "pattern": "^openiti-5835c183-unit-[0-9]{6}$" },
+        "sourceOrdinal": { "type": "integer", "minimum": 1 },
+        "recordSha256": { "$ref": "#/$defs/sha256" },
+        "decision": { "enum": ["admitted", "excluded"] },
+        "storyUseTier": {
+          "enum": ["factual_spine", "qualified_context", "attributed_disputed_report", "not_suitable_for_story"]
+        },
+        "rationaleCodes": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+        },
+        "machineAssessment": { "enum": ["passed", "needs_attention"] },
+        "humanReview": { "enum": ["unreviewed", "in_review", "reviewed", "verified"] },
+        "uncertaintyCodes": {
+          "type": "array", "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+        }
+      }
+    },
+    "sourceBinding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["recordId", "sourceNameId"],
+      "properties": {
+        "recordId": { "type": "string", "pattern": "^openiti-5835c183-unit-[0-9]{6}$" },
+        "sourceNameId": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9-]+$" }
+      }
+    },
+    "person": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "roles", "sourceBindings"],
+      "properties": {
+        "id": { "$ref": "#/$defs/stableId" },
+        "roles": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": {
+            "enum": [
+              "story_subject", "related_person", "event_participant",
+              "commissioning_principal", "traveler", "companion",
+              "caravan_leader", "encountered_person"
+            ]
+          }
+        },
+        "sourceBindings": {
+          "type": "array", "minItems": 1,
+          "items": { "$ref": "#/$defs/sourceBinding" }
+        }
+      }
+    },
+    "participantRole": {
+      "type": "object", "additionalProperties": false,
+      "required": ["personId", "role"],
+      "properties": {
+        "personId": { "$ref": "#/$defs/stableId" },
+        "role": {
+          "enum": [
+            "migrant", "commissioning_principal", "traveler", "companion",
+            "caravan_leader", "encountered_person"
+          ]
+        }
+      }
+    },
+    "event": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "type", "temporalStatus", "participantRoles", "sourceRecordIds"],
+      "properties": {
+        "id": { "$ref": "#/$defs/stableId" },
+        "type": { "enum": ["migration", "commercial_journey"] },
+        "temporalStatus": { "enum": ["unstated", "relative_only"] },
+        "participantRoles": {
+          "type": "array", "minItems": 1,
+          "items": { "$ref": "#/$defs/participantRole" }
+        },
+        "sourceRecordIds": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^openiti-5835c183-unit-[0-9]{6}$" }
+        }
+      }
+    },
+    "relationship": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "type", "subjectPersonId", "objectPersonId", "sourceRecordIds"],
+      "properties": {
+        "id": { "$ref": "#/$defs/stableId" },
+        "type": { "enum": ["nephew_of", "mother_of", "son_of", "brother_of"] },
+        "subjectPersonId": { "$ref": "#/$defs/stableId" },
+        "objectPersonId": { "$ref": "#/$defs/stableId" },
+        "sourceRecordIds": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^openiti-5835c183-unit-[0-9]{6}$" }
+        }
+      }
+    },
+    "claim": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "id", "claimType", "subjectId", "predicate", "objectId", "assertionClass",
+        "sourceReportExistence", "sourceCriticalStatus", "evidentiaryStrength",
+        "transmissionStrength", "storyUseTier", "storyAttributionRequired",
+        "rationaleCodes", "factualAmbiguityCodes", "sourceRecordIds",
+        "status", "correctionOfClaimId", "supersedesClaimIds", "supersededByClaimId"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/stableId" },
+        "claimType": { "enum": ["relationship", "event_participation"] },
+        "subjectId": { "$ref": "#/$defs/stableId" },
+        "predicate": { "enum": ["nephew_of", "mother_of", "son_of", "brother_of", "participated_in"] },
+        "objectId": { "$ref": "#/$defs/stableId" },
+        "assertionClass": { "enum": ["attested", "inferred"] },
+        "sourceReportExistence": { "const": "attested_in_source" },
+        "sourceCriticalStatus": { "enum": ["unqualified", "qualified", "disputed", "rejected"] },
+        "evidentiaryStrength": { "enum": ["source_supported", "limited", "not_established"] },
+        "transmissionStrength": { "enum": ["source_supported", "mixed", "criticized", "weak", "not_assessed"] },
+        "storyUseTier": {
+          "enum": ["factual_spine", "qualified_context", "attributed_disputed_report", "not_suitable_for_story"]
+        },
+        "storyAttributionRequired": { "type": "boolean" },
+        "rationaleCodes": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+        },
+        "factualAmbiguityCodes": {
+          "type": "array", "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+        },
+        "sourceRecordIds": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^openiti-5835c183-unit-[0-9]{6}$" }
+        },
+        "status": { "enum": ["active", "corrected", "superseded"] },
+        "correctionOfClaimId": {
+          "anyOf": [{ "$ref": "#/$defs/stableId" }, { "type": "null" }]
+        },
+        "supersedesClaimIds": {
+          "type": "array", "uniqueItems": true,
+          "items": { "$ref": "#/$defs/stableId" }
+        },
+        "supersededByClaimId": {
+          "anyOf": [{ "$ref": "#/$defs/stableId" }, { "type": "null" }]
+        }
+      }
+    },
+    "ambiguitySet": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "id", "memberClaimIds", "presentationMode", "resolutionStatus",
+        "rationaleCodes", "sourceRecordIds"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^isabah-ambiguity-[a-z0-9-]+-v1$" },
+        "memberClaimIds": {
+          "type": "array", "minItems": 2, "uniqueItems": true,
+          "items": { "$ref": "#/$defs/stableId" }
+        },
+        "presentationMode": { "enum": ["parallel_attributed_reports", "qualified_ambiguity_context"] },
+        "resolutionStatus": { "const": "unresolved" },
+        "rationaleCodes": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+        },
+        "sourceRecordIds": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^openiti-5835c183-unit-[0-9]{6}$" }
+        }
+      }
+    },
+    "review": {
+      "type": "object", "additionalProperties": false,
+      "required": ["coverage", "confidence", "humanReviewEffect", "releaseClassEffect", "uncertaintyCodes"],
+      "properties": {
+        "coverage": { "const": "partial" },
+        "confidence": { "const": "unscored" },
+        "humanReviewEffect": { "const": "per_record_metadata" },
+        "releaseClassEffect": { "const": "none" },
+        "uncertaintyCodes": {
+          "type": "array", "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+        }
+      }
+    },
+    "projectionLifecycle": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "correctsProjectionId", "supersedesProjectionIds", "supersededByProjectionId"],
+      "properties": {
+        "status": { "enum": ["active", "corrected", "superseded"] },
+        "correctsProjectionId": { "type": ["string", "null"] },
+        "supersedesProjectionIds": {
+          "type": "array", "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "supersededByProjectionId": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

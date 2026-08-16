@@ -1,0 +1,444 @@
+{
+  "schemaVersion": "1.0.0",
+  "admissionId": "al-isabah-khadijah-elixr-story-source-admission-v1",
+  "projectionId": "al-isabah-khadijah-elixr-approved-story-projection-v1",
+  "workId": "ibn-hajar-al-isabah",
+  "sourceRelease": {
+    "repositoryCommit": "278e4e43f983ff7733368557516406f1f53211dc",
+    "releaseTag": "public-working-278e4e43f983ff7733368557516406f1f53211dc",
+    "immutable": true,
+    "distributionId": "al-isabah-public-working-278e4e43f983",
+    "assetName": "al-isabah-public-distribution-278e4e43f983ff7733368557516406f1f53211dc.zip",
+    "assetSha256": "41c3ffd1b665a7e9af689c5540b668907cb6b84f4fae23033ab418209d1e1329",
+    "proposalId": "issue-0026-public-proposal-v1",
+    "proposalSha256": "d3724903dd3ffd8030390415464fcbc9728274f971dd2b774e6384ecda30359c",
+    "closureId": "issue-0026-public-working-closure-v1",
+    "closureSha256": "3dba70776b97ae72d690e2db3f993eee39878754678bba329c4248f460738274"
+  },
+  "rights": {
+    "matrixId": "al-isabah-rights-2026-08-15",
+    "matrixSha256": "97df0e768ceec261b7c8686cd9d449bcf64b4cf4c0342ba9206f8cfc552f0110",
+    "license": "CC-BY-NC-SA-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "useClassification": "approved-noncommercial-with-attribution-and-share-alike",
+    "softwareLicenseGranted": false,
+    "attribution": [
+      "Al-Isabah project, al-Isabah fi Tamyiz al-Sahabah public scholarly content",
+      "OpenITI, JK000533 transcription of Ibn Hajar al-Asqalani's al-Isabah fi Tamyiz al-Sahabah, commit 5835c183b8bbf4ea454d5c1be2b168b669403771"
+    ]
+  },
+  "candidateRecords": [
+    {
+      "recordId": "openiti-5835c183-unit-000097",
+      "sourceOrdinal": 97,
+      "recordSha256": "d1dae602518ab9bf68365e6cfc4b25cae4f8c62911d5b4893cb74078f8dbe433",
+      "decision": "admitted",
+      "storyUseTier": "attributed_disputed_report",
+      "rationaleCodes": [
+        "competing-genealogical-attributions",
+        "transmission-chain-criticism"
+      ],
+      "machineAssessment": "needs_attention",
+      "humanReview": "unreviewed",
+      "uncertaintyCodes": [
+        "source-reported-genealogical-uncertainty",
+        "source-reported-killer-variant"
+      ]
+    },
+    {
+      "recordId": "openiti-5835c183-unit-000171",
+      "sourceOrdinal": 171,
+      "recordSha256": "f260428cbcaf23356d29e0fa953c47c78a667c2f4c46f17cade87da53dd439da",
+      "decision": "admitted",
+      "storyUseTier": "factual_spine",
+      "rationaleCodes": [
+        "machine-passed-no-unresolved-findings"
+      ],
+      "machineAssessment": "passed",
+      "humanReview": "unreviewed",
+      "uncertaintyCodes": []
+    },
+    {
+      "recordId": "openiti-5835c183-unit-000399",
+      "sourceOrdinal": 399,
+      "recordSha256": "c32808e95e4db9ac44d68d00a02a111f43a26d270c3e2e0b19b5c6d5de4d9b03",
+      "decision": "admitted",
+      "storyUseTier": "attributed_disputed_report",
+      "rationaleCodes": [
+        "competing-maternal-attributions",
+        "missing-corroboration",
+        "source-author-rejection"
+      ],
+      "machineAssessment": "needs_attention",
+      "humanReview": "unreviewed",
+      "uncertaintyCodes": [
+        "otherwise-unattested-maternal-attribution"
+      ]
+    },
+    {
+      "recordId": "openiti-5835c183-unit-000795",
+      "sourceOrdinal": 795,
+      "recordSha256": "80c18e957eab34b3ca73fd7716b95d0bb3c2ee882a0530983f259c8afc4807fb",
+      "decision": "admitted",
+      "storyUseTier": "attributed_disputed_report",
+      "rationaleCodes": [
+        "competing-journey-contexts",
+        "identity-and-religious-affiliation-ambiguity",
+        "transmission-and-interpolation-qualification",
+        "chronology-uncertainty"
+      ],
+      "machineAssessment": "needs_attention",
+      "humanReview": "unreviewed",
+      "uncertaintyCodes": [
+        "identity-religion-and-chronology",
+        "hadith-interpolation",
+        "companion-status"
+      ]
+    }
+  ],
+  "persons": [
+    {
+      "id": "isabah-person-khadijah-bint-khuwaylid-v1",
+      "roles": ["story_subject", "commissioning_principal"],
+      "sourceBindings": [
+        {"recordId": "openiti-5835c183-unit-000097", "sourceNameId": "issue26-u000097-name-002-person-001"},
+        {"recordId": "openiti-5835c183-unit-000171", "sourceNameId": "issue-26-u000171-name-002"},
+        {"recordId": "openiti-5835c183-unit-000399", "sourceNameId": "issue-26-u000399-name-004"},
+        {"recordId": "openiti-5835c183-unit-000795", "sourceNameId": "issue26-u000795-name-006-person-002"}
+      ]
+    },
+    {
+      "id": "isabah-person-al-aswad-ibn-nawfal-v1",
+      "roles": ["related_person", "event_participant"],
+      "sourceBindings": [
+        {"recordId": "openiti-5835c183-unit-000171", "sourceNameId": "issue-26-u000171-name-001"}
+      ]
+    },
+    {
+      "id": "isabah-person-asad-ibn-khuwaylid-v1",
+      "roles": ["related_person"],
+      "sourceBindings": [
+        {"recordId": "openiti-5835c183-unit-000097", "sourceNameId": "issue26-u000097-name-001"}
+      ]
+    },
+    {
+      "id": "isabah-person-nawfal-ibn-khuwaylid-v1",
+      "roles": ["related_person"],
+      "sourceBindings": [
+        {"recordId": "openiti-5835c183-unit-000097", "sourceNameId": "issue26-u000097-name-002-person-010"}
+      ]
+    },
+    {
+      "id": "isabah-person-ibrahim-ibn-muhammad-v1",
+      "roles": ["related_person"],
+      "sourceBindings": [
+        {"recordId": "openiti-5835c183-unit-000399", "sourceNameId": "issue-26-u000399-name-001"}
+      ]
+    },
+    {
+      "id": "isabah-person-mariya-v1",
+      "roles": ["related_person"],
+      "sourceBindings": [
+        {"recordId": "openiti-5835c183-unit-000399", "sourceNameId": "issue-26-u000399-name-008"}
+      ]
+    },
+    {
+      "id": "isabah-person-muhammad-ibn-abd-allah-v1",
+      "roles": ["event_participant", "traveler"],
+      "sourceBindings": [
+        {"recordId": "openiti-5835c183-unit-000795", "sourceNameId": "issue26-u000795-name-003-person-002"}
+      ]
+    },
+    {
+      "id": "isabah-person-maysara-v1",
+      "roles": ["event_participant", "companion"],
+      "sourceBindings": [
+        {"recordId": "openiti-5835c183-unit-000795", "sourceNameId": "issue26-u000795-name-006-person-003"}
+      ]
+    },
+    {
+      "id": "isabah-person-bahira-jirjis-v1",
+      "roles": ["event_participant"],
+      "sourceBindings": [
+        {"recordId": "openiti-5835c183-unit-000795", "sourceNameId": "issue26-u000795-name-001"}
+      ]
+    },
+    {
+      "id": "isabah-person-abu-talib-v1",
+      "roles": ["event_participant", "caravan_leader"],
+      "sourceBindings": [
+        {"recordId": "openiti-5835c183-unit-000795", "sourceNameId": "issue26-u000795-name-003-person-001"}
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "isabah-event-al-aswad-migration-one-v1",
+      "type": "migration",
+      "temporalStatus": "relative_only",
+      "participantRoles": [
+        {"personId": "isabah-person-al-aswad-ibn-nawfal-v1", "role": "migrant"}
+      ],
+      "sourceRecordIds": ["openiti-5835c183-unit-000171"]
+    },
+    {
+      "id": "isabah-event-al-aswad-migration-two-v1",
+      "type": "migration",
+      "temporalStatus": "relative_only",
+      "participantRoles": [
+        {"personId": "isabah-person-al-aswad-ibn-nawfal-v1", "role": "migrant"}
+      ],
+      "sourceRecordIds": ["openiti-5835c183-unit-000171"]
+    },
+    {
+      "id": "isabah-event-abu-talib-commercial-journey-v1",
+      "type": "commercial_journey",
+      "temporalStatus": "unstated",
+      "participantRoles": [
+        {"personId": "isabah-person-abu-talib-v1", "role": "caravan_leader"},
+        {"personId": "isabah-person-muhammad-ibn-abd-allah-v1", "role": "traveler"},
+        {"personId": "isabah-person-bahira-jirjis-v1", "role": "encountered_person"}
+      ],
+      "sourceRecordIds": ["openiti-5835c183-unit-000795"]
+    },
+    {
+      "id": "isabah-event-khadijah-commercial-journey-v1",
+      "type": "commercial_journey",
+      "temporalStatus": "unstated",
+      "participantRoles": [
+        {"personId": "isabah-person-khadijah-bint-khuwaylid-v1", "role": "commissioning_principal"},
+        {"personId": "isabah-person-muhammad-ibn-abd-allah-v1", "role": "traveler"},
+        {"personId": "isabah-person-maysara-v1", "role": "companion"},
+        {"personId": "isabah-person-bahira-jirjis-v1", "role": "encountered_person"}
+      ],
+      "sourceRecordIds": ["openiti-5835c183-unit-000795"]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "isabah-relationship-al-aswad-nephew-of-khadijah-v1",
+      "type": "nephew_of",
+      "subjectPersonId": "isabah-person-al-aswad-ibn-nawfal-v1",
+      "objectPersonId": "isabah-person-khadijah-bint-khuwaylid-v1",
+      "sourceRecordIds": ["openiti-5835c183-unit-000171"]
+    },
+    {
+      "id": "isabah-relationship-asad-nephew-of-khadijah-v1",
+      "type": "nephew_of",
+      "subjectPersonId": "isabah-person-asad-ibn-khuwaylid-v1",
+      "objectPersonId": "isabah-person-khadijah-bint-khuwaylid-v1",
+      "sourceRecordIds": ["openiti-5835c183-unit-000097"]
+    },
+    {
+      "id": "isabah-relationship-asad-son-of-nawfal-v1",
+      "type": "son_of",
+      "subjectPersonId": "isabah-person-asad-ibn-khuwaylid-v1",
+      "objectPersonId": "isabah-person-nawfal-ibn-khuwaylid-v1",
+      "sourceRecordIds": ["openiti-5835c183-unit-000097"]
+    },
+    {
+      "id": "isabah-relationship-nawfal-brother-of-khadijah-v1",
+      "type": "brother_of",
+      "subjectPersonId": "isabah-person-nawfal-ibn-khuwaylid-v1",
+      "objectPersonId": "isabah-person-khadijah-bint-khuwaylid-v1",
+      "sourceRecordIds": ["openiti-5835c183-unit-000097"]
+    },
+    {
+      "id": "isabah-relationship-khadijah-mother-of-ibrahim-v1",
+      "type": "mother_of",
+      "subjectPersonId": "isabah-person-khadijah-bint-khuwaylid-v1",
+      "objectPersonId": "isabah-person-ibrahim-ibn-muhammad-v1",
+      "sourceRecordIds": ["openiti-5835c183-unit-000399"]
+    },
+    {
+      "id": "isabah-relationship-mariya-mother-of-ibrahim-v1",
+      "type": "mother_of",
+      "subjectPersonId": "isabah-person-mariya-v1",
+      "objectPersonId": "isabah-person-ibrahim-ibn-muhammad-v1",
+      "sourceRecordIds": ["openiti-5835c183-unit-000399"]
+    }
+  ],
+  "attestedClaims": [
+    {
+      "id": "isabah-claim-al-aswad-nephew-of-khadijah-v1",
+      "claimType": "relationship", "subjectId": "isabah-person-al-aswad-ibn-nawfal-v1",
+      "predicate": "nephew_of", "objectId": "isabah-relationship-al-aswad-nephew-of-khadijah-v1",
+      "assertionClass": "attested", "sourceReportExistence": "attested_in_source",
+      "sourceCriticalStatus": "unqualified", "evidentiaryStrength": "source_supported",
+      "transmissionStrength": "source_supported", "storyUseTier": "factual_spine",
+      "storyAttributionRequired": false,
+      "rationaleCodes": ["machine-passed-no-unresolved-findings"],
+      "factualAmbiguityCodes": [], "sourceRecordIds": ["openiti-5835c183-unit-000171"],
+      "status": "active", "correctionOfClaimId": null, "supersedesClaimIds": [], "supersededByClaimId": null
+    },
+    {
+      "id": "isabah-claim-al-aswad-migration-one-v1",
+      "claimType": "event_participation", "subjectId": "isabah-person-al-aswad-ibn-nawfal-v1",
+      "predicate": "participated_in", "objectId": "isabah-event-al-aswad-migration-one-v1",
+      "assertionClass": "attested", "sourceReportExistence": "attested_in_source",
+      "sourceCriticalStatus": "unqualified", "evidentiaryStrength": "source_supported",
+      "transmissionStrength": "source_supported", "storyUseTier": "qualified_context",
+      "storyAttributionRequired": false,
+      "rationaleCodes": ["context-not-subject-biography"],
+      "factualAmbiguityCodes": [], "sourceRecordIds": ["openiti-5835c183-unit-000171"],
+      "status": "active", "correctionOfClaimId": null, "supersedesClaimIds": [], "supersededByClaimId": null
+    },
+    {
+      "id": "isabah-claim-al-aswad-migration-two-v1",
+      "claimType": "event_participation", "subjectId": "isabah-person-al-aswad-ibn-nawfal-v1",
+      "predicate": "participated_in", "objectId": "isabah-event-al-aswad-migration-two-v1",
+      "assertionClass": "attested", "sourceReportExistence": "attested_in_source",
+      "sourceCriticalStatus": "unqualified", "evidentiaryStrength": "source_supported",
+      "transmissionStrength": "source_supported", "storyUseTier": "qualified_context",
+      "storyAttributionRequired": false,
+      "rationaleCodes": ["context-not-subject-biography"],
+      "factualAmbiguityCodes": [], "sourceRecordIds": ["openiti-5835c183-unit-000171"],
+      "status": "active", "correctionOfClaimId": null, "supersedesClaimIds": [], "supersededByClaimId": null
+    },
+    {
+      "id": "isabah-claim-asad-nephew-of-khadijah-v1",
+      "claimType": "relationship", "subjectId": "isabah-person-asad-ibn-khuwaylid-v1",
+      "predicate": "nephew_of", "objectId": "isabah-relationship-asad-nephew-of-khadijah-v1",
+      "assertionClass": "attested", "sourceReportExistence": "attested_in_source",
+      "sourceCriticalStatus": "disputed", "evidentiaryStrength": "limited",
+      "transmissionStrength": "criticized", "storyUseTier": "attributed_disputed_report",
+      "storyAttributionRequired": true,
+      "rationaleCodes": ["competing-genealogical-attributions", "transmission-chain-criticism"],
+      "factualAmbiguityCodes": ["genealogical-identity"], "sourceRecordIds": ["openiti-5835c183-unit-000097"],
+      "status": "active", "correctionOfClaimId": null, "supersedesClaimIds": [], "supersededByClaimId": null
+    },
+    {
+      "id": "isabah-claim-asad-son-of-nawfal-v1",
+      "claimType": "relationship", "subjectId": "isabah-person-asad-ibn-khuwaylid-v1",
+      "predicate": "son_of", "objectId": "isabah-relationship-asad-son-of-nawfal-v1",
+      "assertionClass": "attested", "sourceReportExistence": "attested_in_source",
+      "sourceCriticalStatus": "qualified", "evidentiaryStrength": "limited",
+      "transmissionStrength": "not_assessed", "storyUseTier": "attributed_disputed_report",
+      "storyAttributionRequired": true,
+      "rationaleCodes": ["possible-lineage-reconciliation"],
+      "factualAmbiguityCodes": ["genealogical-identity"], "sourceRecordIds": ["openiti-5835c183-unit-000097"],
+      "status": "active", "correctionOfClaimId": null, "supersedesClaimIds": [], "supersededByClaimId": null
+    },
+    {
+      "id": "isabah-claim-nawfal-brother-of-khadijah-v1",
+      "claimType": "relationship", "subjectId": "isabah-person-nawfal-ibn-khuwaylid-v1",
+      "predicate": "brother_of", "objectId": "isabah-relationship-nawfal-brother-of-khadijah-v1",
+      "assertionClass": "attested", "sourceReportExistence": "attested_in_source",
+      "sourceCriticalStatus": "unqualified", "evidentiaryStrength": "source_supported",
+      "transmissionStrength": "not_assessed", "storyUseTier": "qualified_context",
+      "storyAttributionRequired": true,
+      "rationaleCodes": ["genealogists-source-context"],
+      "factualAmbiguityCodes": ["genealogical-identity"], "sourceRecordIds": ["openiti-5835c183-unit-000097"],
+      "status": "active", "correctionOfClaimId": null, "supersedesClaimIds": [], "supersededByClaimId": null
+    },
+    {
+      "id": "isabah-claim-khadijah-mother-of-ibrahim-v1",
+      "claimType": "relationship", "subjectId": "isabah-person-khadijah-bint-khuwaylid-v1",
+      "predicate": "mother_of", "objectId": "isabah-relationship-khadijah-mother-of-ibrahim-v1",
+      "assertionClass": "attested", "sourceReportExistence": "attested_in_source",
+      "sourceCriticalStatus": "rejected", "evidentiaryStrength": "not_established",
+      "transmissionStrength": "not_assessed", "storyUseTier": "attributed_disputed_report",
+      "storyAttributionRequired": true,
+      "rationaleCodes": ["missing-corroboration", "source-author-rejection"],
+      "factualAmbiguityCodes": ["maternal-attribution"], "sourceRecordIds": ["openiti-5835c183-unit-000399"],
+      "status": "active", "correctionOfClaimId": null, "supersedesClaimIds": [], "supersededByClaimId": null
+    },
+    {
+      "id": "isabah-claim-mariya-mother-of-ibrahim-v1",
+      "claimType": "relationship", "subjectId": "isabah-person-mariya-v1",
+      "predicate": "mother_of", "objectId": "isabah-relationship-mariya-mother-of-ibrahim-v1",
+      "assertionClass": "attested", "sourceReportExistence": "attested_in_source",
+      "sourceCriticalStatus": "unqualified", "evidentiaryStrength": "source_supported",
+      "transmissionStrength": "not_assessed", "storyUseTier": "qualified_context",
+      "storyAttributionRequired": true,
+      "rationaleCodes": ["competing-maternal-attribution"],
+      "factualAmbiguityCodes": ["maternal-attribution"], "sourceRecordIds": ["openiti-5835c183-unit-000399"],
+      "status": "active", "correctionOfClaimId": null, "supersedesClaimIds": [], "supersededByClaimId": null
+    },
+    {
+      "id": "isabah-claim-abu-talib-commercial-journey-v1",
+      "claimType": "event_participation", "subjectId": "isabah-person-muhammad-ibn-abd-allah-v1",
+      "predicate": "participated_in", "objectId": "isabah-event-abu-talib-commercial-journey-v1",
+      "assertionClass": "attested", "sourceReportExistence": "attested_in_source",
+      "sourceCriticalStatus": "qualified", "evidentiaryStrength": "limited",
+      "transmissionStrength": "mixed", "storyUseTier": "attributed_disputed_report",
+      "storyAttributionRequired": true,
+      "rationaleCodes": ["competing-journey-contexts", "transmission-and-interpolation-qualification"],
+      "factualAmbiguityCodes": ["journey-context", "identity-and-chronology"], "sourceRecordIds": ["openiti-5835c183-unit-000795"],
+      "status": "active", "correctionOfClaimId": null, "supersedesClaimIds": [], "supersededByClaimId": null
+    },
+    {
+      "id": "isabah-claim-khadijah-commercial-journey-v1",
+      "claimType": "event_participation", "subjectId": "isabah-person-khadijah-bint-khuwaylid-v1",
+      "predicate": "participated_in", "objectId": "isabah-event-khadijah-commercial-journey-v1",
+      "assertionClass": "attested", "sourceReportExistence": "attested_in_source",
+      "sourceCriticalStatus": "qualified", "evidentiaryStrength": "limited",
+      "transmissionStrength": "not_assessed", "storyUseTier": "attributed_disputed_report",
+      "storyAttributionRequired": true,
+      "rationaleCodes": ["competing-journey-contexts", "identity-and-chronology-qualification"],
+      "factualAmbiguityCodes": ["journey-context", "identity-and-chronology"], "sourceRecordIds": ["openiti-5835c183-unit-000795"],
+      "status": "active", "correctionOfClaimId": null, "supersedesClaimIds": [], "supersededByClaimId": null
+    }
+  ],
+  "inferredClaims": [],
+  "ambiguitySets": [
+    {
+      "id": "isabah-ambiguity-asad-genealogy-v1",
+      "memberClaimIds": [
+        "isabah-claim-asad-nephew-of-khadijah-v1",
+        "isabah-claim-asad-son-of-nawfal-v1",
+        "isabah-claim-nawfal-brother-of-khadijah-v1"
+      ],
+      "presentationMode": "qualified_ambiguity_context",
+      "resolutionStatus": "unresolved",
+      "rationaleCodes": ["competing-genealogical-attributions"],
+      "sourceRecordIds": ["openiti-5835c183-unit-000097"]
+    },
+    {
+      "id": "isabah-ambiguity-ibrahim-maternal-attribution-v1",
+      "memberClaimIds": [
+        "isabah-claim-khadijah-mother-of-ibrahim-v1",
+        "isabah-claim-mariya-mother-of-ibrahim-v1"
+      ],
+      "presentationMode": "parallel_attributed_reports",
+      "resolutionStatus": "unresolved",
+      "rationaleCodes": ["competing-maternal-attributions", "source-author-rejection"],
+      "sourceRecordIds": ["openiti-5835c183-unit-000399"]
+    },
+    {
+      "id": "isabah-ambiguity-bahira-journey-context-v1",
+      "memberClaimIds": [
+        "isabah-claim-abu-talib-commercial-journey-v1",
+        "isabah-claim-khadijah-commercial-journey-v1"
+      ],
+      "presentationMode": "parallel_attributed_reports",
+      "resolutionStatus": "unresolved",
+      "rationaleCodes": [
+        "competing-journey-contexts",
+        "identity-and-religious-affiliation-ambiguity",
+        "chronology-uncertainty"
+      ],
+      "sourceRecordIds": ["openiti-5835c183-unit-000795"]
+    }
+  ],
+  "review": {
+    "coverage": "partial",
+    "confidence": "unscored",
+    "humanReviewEffect": "per_record_metadata",
+    "releaseClassEffect": "none",
+    "uncertaintyCodes": [
+      "source-reported-genealogical-uncertainty",
+      "source-reported-killer-variant",
+      "otherwise-unattested-maternal-attribution",
+      "identity-religion-and-chronology",
+      "hadith-interpolation",
+      "companion-status"
+    ]
+  },
+  "lifecycle": {
+    "status": "active",
+    "correctsProjectionId": null,
+    "supersedesProjectionIds": [],
+    "supersededByProjectionId": null
+  }
+}
