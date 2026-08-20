@@ -759,6 +759,7 @@ class LocalModelEvaluationTests(unittest.TestCase):
             "evaluations/local-model/v1/results/README.md",
             "evaluations/local-model/v1/results/issue-49/gemma-packet.json",
             "evaluations/local-model/v1/results/issue-49/gemma-attempt-summary.json",
+            "evaluations/local-model/v1/results/issue-49/gemma-run.json",
             "evaluations/local-model/v1/results/issue-49/sol-packet.json",
             "evaluations/local-model/v1/results/issue-49/sol-run.json",
             "evaluations/local-model/v1/results/issue-49/identified-review-packet.json",
