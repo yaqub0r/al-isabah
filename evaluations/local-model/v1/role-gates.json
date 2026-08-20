@@ -1,0 +1,21 @@
+{
+  "roles": {
+    "critique_triage": {
+      "decision": "Requires a separate seeded-error test set.",
+      "minimumRecall": 0.95,
+      "minimumRepeats": 2,
+      "minimumSeededErrorCases": 30
+    },
+    "draft_assistance": {
+      "decision": "No role is granted automatically; passing makes the role eligible for a recorded human decision.",
+      "maximumMaterialErrors": 0,
+      "minimumHeldOutCases": 30,
+      "minimumRepeats": 2
+    },
+    "semantic_authority": {
+      "decision": "Sol x-high and human scholarly review remain authoritative.",
+      "status": "prohibited"
+    }
+  },
+  "schemaVersion": "1.0.0"
+}

@@ -1,0 +1,64 @@
+{
+  "cases": [
+    {
+      "arabic": "أسعد بن زرارة ذكر في الذي قبله إن ثبت وسيأتي في ترجمة عبد الله بن أسعد بن زرارة أن بعضهم روى الحديث المذكور في ترجمته فقال عن عبد الله بن أسعد بن زرارة عن أبيه فلعله كان فيه بن أسعد قال وهو عبد الله هذا",
+      "arabicSha256": "0ec392d7a90f45609106233ed52bdbf028df5e6fe940b27387f2df6185e3b651",
+      "caseId": "case-001",
+      "category": "textual-identity",
+      "heldOut": true,
+      "sourceUnitId": "openiti-5835c183-unit-000112"
+    },
+    {
+      "arabic": "جرول بن الأحنف بن السمط بن امرئ القيس بن عمرو بن معاوية بن الحارث الأكبر الكندي قيل هو اسم جد رجاء بن حيوة قاله أحمد بن محمد بن الحجاج بن رشدين وروى الطبراني من طريق جارية بن مصعب عن رجاء بن حيوة عن أبيه عن جده وهو من أصحاب النبي صلى الله عليه وسلم أن جارية من سبي حنين مرت بالنبي صلى الله عليه وسلم فقال لمن هذه الحديث ولم يسم جده وحكى بن عساكر فيه قولين آخرين أحدهما جندل بنون ثم دال والآخر بزاي بدل الدال",
+      "arabicSha256": "86502006251112f5ea574607a82977bacca2dce80f968a1651311a6c8dcb1769",
+      "caseId": "case-002",
+      "category": "isnad-and-honorific",
+      "heldOut": true,
+      "sourceUnitId": "openiti-5835c183-unit-001129"
+    },
+    {
+      "arabic": "الحارث بن فروة بن الشيطان بن خديج بن امرئ القيس بن الحارث بن معاوية بن الحارث بن معاوية بن ثور الكندي ذكر بن الكلبي وابن سعد والطبري أن له وفادة وقال بن الأثير وقع في ذيل أبي موسى الحارث بن قرة بقاف والذي في الجمهرة فروة بفاء وزيادة واو وهو الصواب وقال إن جده الشيطان سمي بذلك لجماله",
+      "arabicSha256": "bc9b380d582c0d5101a25ce86a26ad8ac1ca2cf504cd774330aac755a1926dd6",
+      "caseId": "case-003",
+      "category": "genealogy-and-variant",
+      "heldOut": true,
+      "sourceUnitId": "openiti-5835c183-unit-001467"
+    }
+  ],
+  "casesSha256": "fad8f34e31a4c979bc3c686727b37f5881f1b58c7ce07647fc5e6177edba92b9",
+  "config": {
+    "artifactDisclosure": "digest-pinned",
+    "configId": "gemma4-xhigh-v1",
+    "contextTokens": 49152,
+    "engine": "ollama",
+    "houseProfile": "xhigh",
+    "maxOutputTokens": 4096,
+    "model": "gemma4:26b",
+    "modelDigest": "5571076f3d70050487b26b341705799e0ab29b808164f90d20d4cf84f699d251",
+    "nativeThinkingObserved": true,
+    "nativeThinkingRequested": true,
+    "promptSha256": "757e4164228a721297b094dcae9bcf719b2d443b749d3e63b3b691baea52edee",
+    "promptVersion": "source-only-translation-v1",
+    "quantization": "controller-managed-undisclosed",
+    "role": "source-only-translation-candidate",
+    "runtimeVersion": "0.32.14",
+    "samplingSeed": null,
+    "schemaVersion": "1.0.0",
+    "temperature": 0.2
+  },
+  "configSha256": "2f138d9f94821dc1e657edc692e04626115b5582c0713f578d9aeda74f26bdec",
+  "evaluationId": "al-isabah-local-model-v1",
+  "issue": "https://github.com/yaqub0r/al-isabah/issues/49",
+  "packetId": "eval-packet-4aedfc0a9ad10252",
+  "policy": {
+    "bindingPath": "compliance/policy-binding.v1.json",
+    "bindingSha256": "f1ca5fa8303b13e70bbd92aeeb8e5d2a05ba037cf951043b5043262dd2d591e5",
+    "evaluationProtocolPath": "docs/contracts/local-model-translation-evaluation-protocol.md",
+    "evaluationProtocolSha256": "f05df2d883e95ef3c74f7013322d6cdc266b180def2646c2f7ee45af7a36f85f",
+    "glossaryPath": "profiles/honorific-formulas.v1.json",
+    "glossarySha256": "2691994d50457d967f41d04140b9f86f23967254fd764f2c756109194ba51a55",
+    "promptPath": "evaluations/local-model/v1/prompts/source-only-translation-v1.txt",
+    "promptSha256": "757e4164228a721297b094dcae9bcf719b2d443b749d3e63b3b691baea52edee"
+  },
+  "schemaVersion": "1.0.0"
+}

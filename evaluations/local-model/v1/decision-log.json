@@ -1,0 +1,20 @@
+{
+  "entries": [
+    {
+      "basis": [
+        "Three-case vertical slice is below every predeclared promotion threshold.",
+        "Sanitized model outputs may be tracked before identified public human scores are complete.",
+        "Sol x-high remains semantic authority."
+      ],
+      "date": "2026-08-20",
+      "decision": "No local-model workflow role granted.",
+      "issue": "https://github.com/yaqub0r/al-isabah/issues/49",
+      "promotionStatus": "blocked",
+      "status": "pending-identified-public-human-review",
+      "previousEntrySha256": null
+    }
+  ],
+  "logHeadSha256": "580836357b165731891f1f1b165ba3f6cba6aa9ac8eb098b9b5810351db06037",
+  "evaluationId": "al-isabah-local-model-v1",
+  "schemaVersion": "1.0.0"
+}
