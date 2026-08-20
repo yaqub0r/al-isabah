@@ -29,6 +29,10 @@ bilingual presentation agree by hash.
 
 ## Local supporting controls
 
+- [`local-model-translation-evaluation`](local-model-translation-evaluation-protocol.md)
+  is a non-governing, privacy-safe local-model calibration protocol under issue #49. It
+  separates source-only execution from human scoring, keeps model attempts and
+  reports out of public Git, and cannot grant semantic authority or promotion.
 - [`translation-governance-reference.v1.json`](translation-governance-reference.v1.json)
   is the versioned, integrity-bound discovery document for downstream
   consumers. The companion [compatibility guide](downstream-consumer-compatibility.md)

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/schemas/local-model-evaluation-alias-key.v1.schema.json",
+  "type": "object", "additionalProperties": false,
+  "required": ["schemaVersion", "evaluationId", "policySha256", "casesSha256", "reviewPacketId", "reviewPacketSha256", "seed", "runIds", "runArtifactSha256", "aliases"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"}, "evaluationId": {"type": "string"}, "policySha256": {"type": "string"}, "casesSha256": {"type": "string"},
+    "reviewPacketId": {"type": "string", "pattern": "^eval-review-packet-[a-f0-9]{16}$"}, "reviewPacketSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "seed": {"type": "string"}, "runIds": {"type": "array", "minItems": 2, "maxItems": 26, "uniqueItems": true, "items": {"type": "string", "pattern": "^eval-run-[a-f0-9]{16}$"}},
+    "runArtifactSha256": {"type": "object", "minProperties": 2, "maxProperties": 26, "additionalProperties": {"type": "string", "pattern": "^[a-f0-9]{64}$"}},
+    "aliases": {"type": "object", "minProperties": 2, "maxProperties": 26, "additionalProperties": {"type": "string", "pattern": "^[A-Z]$"}}
+  }
+}

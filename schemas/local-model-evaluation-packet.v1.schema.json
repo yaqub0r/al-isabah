@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/schemas/local-model-evaluation-packet.v1.schema.json",
+  "type": "object", "additionalProperties": false,
+  "required": ["schemaVersion", "packetId", "evaluationId", "issue", "policy", "config", "configSha256", "cases"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"}, "packetId": {"type": "string", "pattern": "^eval-packet-[a-f0-9]{16}$"},
+    "evaluationId": {"const": "al-isabah-local-model-v1"}, "issue": {"type": "string"},
+    "policy": {"type": "object"}, "config": {"type": "object"}, "configSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "cases": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false,
+      "required": ["caseId", "sourceUnitId", "category", "arabic", "arabicSha256", "heldOut"],
+      "properties": {"caseId": {"type": "string"}, "sourceUnitId": {"type": "string"}, "category": {"type": "string"}, "arabic": {"type": "string"}, "arabicSha256": {"type": "string"}, "heldOut": {"type": "boolean"}}
+    }}
+  }
+}

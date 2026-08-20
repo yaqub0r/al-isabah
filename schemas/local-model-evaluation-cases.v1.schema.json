@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/schemas/local-model-evaluation-cases.v1.schema.json",
+  "title": "Al-Isabah local-model evaluation cases v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "evaluationId", "issue", "authority", "policy", "cases"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "evaluationId": {"const": "al-isabah-local-model-v1"},
+    "issue": {"const": "https://github.com/yaqub0r/al-isabah/issues/49"},
+    "authority": {
+      "type": "object", "additionalProperties": false,
+      "required": ["sourceId", "commit", "path", "artifactSha256"],
+      "properties": {
+        "sourceId": {"const": "openiti-cleaned-arabic-comparison"},
+        "commit": {"type": "string", "pattern": "^[a-f0-9]{40}$"},
+        "path": {"type": "string", "minLength": 1},
+        "artifactSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "policy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["bindingPath", "bindingSha256", "evaluationProtocolPath", "evaluationProtocolSha256", "glossaryPath", "glossarySha256", "promptPath", "promptSha256"],
+      "properties": {
+        "bindingPath": {"const": "compliance/policy-binding.v1.json"},
+        "bindingSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "evaluationProtocolPath": {"const": "docs/contracts/local-model-translation-evaluation-protocol.md"},
+        "evaluationProtocolSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "glossaryPath": {"const": "profiles/honorific-formulas.v1.json"},
+        "glossarySha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "promptPath": {"const": "evaluations/local-model/v1/prompts/blind-translation-v1.txt"},
+        "promptSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "cases": {
+      "type": "array", "minItems": 3, "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["caseId", "sourceUnitId", "category", "heldOut", "arabic", "arabicSha256", "sourceExactTextSha256", "referenceEnglish", "referenceSha256"],
+        "properties": {
+          "caseId": {"type": "string", "pattern": "^case-[0-9]{3}$"},
+          "sourceUnitId": {"type": "string", "pattern": "^openiti-5835c183-unit-[0-9]{6}$"},
+          "category": {"enum": ["textual-identity", "isnad-and-honorific", "genealogy-and-variant"]},
+          "heldOut": {"const": true},
+          "arabic": {"type": "string", "minLength": 1},
+          "arabicSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "sourceExactTextSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "referenceEnglish": {"type": "string", "minLength": 1},
+          "referenceSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+        }
+      }
+    }
+  }
+}

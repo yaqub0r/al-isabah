@@ -1,0 +1,82 @@
+{
+  "attempts": [
+    {
+      "attemptId": "low-pre-fix-001",
+      "contextTokens": 16384,
+      "maxOutputTokens": 1024,
+      "modelsAfterUnload": [],
+      "nativeThinkingObserved": false,
+      "nativeThinkingRequested": false,
+      "profile": "low",
+      "profileTemperature": 0.2,
+      "result": "passed",
+      "smokeTemperature": 0.2,
+      "totalDurationNs": 126124796713
+    },
+    {
+      "attemptId": "high-pre-fix-001",
+      "contextTokens": 32768,
+      "maxOutputTokens": 2048,
+      "modelsAfterUnload": [],
+      "nativeThinkingObserved": true,
+      "nativeThinkingRequested": true,
+      "profile": "high",
+      "profileTemperature": 0.2,
+      "result": "passed",
+      "smokeTemperature": 0.2,
+      "totalDurationNs": 124890354065
+    },
+    {
+      "attemptId": "xhigh-pre-fix-001",
+      "contextTokens": 49152,
+      "maxOutputTokens": 4096,
+      "modelsAfterUnload": [],
+      "nativeThinkingObserved": true,
+      "nativeThinkingRequested": true,
+      "profile": "xhigh",
+      "profileTemperature": 0.2,
+      "result": "unexpected_response",
+      "smokeTemperature": 0.2,
+      "totalDurationNs": 124244054776
+    },
+    {
+      "attemptId": "xhigh-pre-fix-002",
+      "contextTokens": 49152,
+      "maxOutputTokens": 4096,
+      "modelsAfterUnload": [],
+      "nativeThinkingObserved": true,
+      "nativeThinkingRequested": true,
+      "profile": "xhigh",
+      "profileTemperature": 0.2,
+      "result": "unexpected_response",
+      "smokeTemperature": 0.2,
+      "totalDurationNs": 110036894033
+    },
+    {
+      "attemptId": "xhigh-post-fix-001",
+      "contextTokens": 49152,
+      "maxOutputTokens": 4096,
+      "modelsAfterUnload": [],
+      "nativeThinkingObserved": true,
+      "nativeThinkingRequested": true,
+      "profile": "xhigh",
+      "profileTemperature": 0.2,
+      "result": "passed",
+      "smokeTemperature": 0.0,
+      "totalDurationNs": 99921671509
+    }
+  ],
+  "controllerReturnedTo": "off",
+  "controllerRuntime": "ollama",
+  "controllerRuntimeVersion": "0.32.14",
+  "model": "gemma4:26b",
+  "modelDigest": "5571076f3d70050487b26b341705799e0ab29b808164f90d20d4cf84f699d251",
+  "note": "Smoke temperature is a deterministic probe setting; operational profile temperature remains 0.2. Earlier failures are retained as pre-fix evidence.",
+  "recordedAt": "2026-08-20T11:24:16Z",
+  "schemaVersion": "1.0.0",
+  "verifiedProfiles": [
+    "low",
+    "high",
+    "xhigh"
+  ]
+}

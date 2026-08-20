@@ -1,0 +1,20 @@
+{
+  "artifactDisclosure": "provider-not-disclosed",
+  "configId": "hermes-sol-xhigh-v1",
+  "contextTokens": null,
+  "engine": "openai-codex",
+  "houseProfile": "xhigh",
+  "maxOutputTokens": null,
+  "model": "gpt-5.6-sol",
+  "modelDigest": null,
+  "nativeThinkingObserved": null,
+  "nativeThinkingRequested": true,
+  "promptSha256": "ba06d5bc80df0bb6727e07b3207b6d420d83dfc7506ce88cb11c1019273f7432",
+  "promptVersion": "blind-translation-v1",
+  "quantization": "provider-managed-undisclosed",
+  "role": "blind-translation-candidate",
+  "runtimeVersion": "provider-managed",
+  "schemaVersion": "1.0.0",
+  "temperature": null,
+  "samplingSeed": null
+}

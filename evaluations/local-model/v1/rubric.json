@@ -1,0 +1,25 @@
+{
+  "dimensions": {
+    "fidelity": "No omission, addition, reversal, or unsupported normalization.",
+    "formula": "Honorific and devotional formula semantics, referents, agreement, and Arabic realization are preserved.",
+    "structure": "Names, lineages, isnads, relationships, numbers, titles, and report boundaries are preserved.",
+    "uncertainty": "Material ambiguity is exposed and not hidden by fluent wording."
+  },
+  "instruction": "Reviewers score anonymous candidates against Arabic only before the alias key or reference English is revealed.",
+  "materialErrorCategories": [
+    "omission",
+    "addition",
+    "meaning-reversal",
+    "name-or-lineage",
+    "relationship-or-isnad",
+    "number-or-date",
+    "textual-uncertainty",
+    "honorific-semantics",
+    "title-body-boundary"
+  ],
+  "scale": {
+    "maximum": 2,
+    "minimum": 0
+  },
+  "schemaVersion": "1.0.0"
+}

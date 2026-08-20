@@ -1,0 +1,56 @@
+{
+  "authority": {
+    "artifactSha256": "bc9db8134c8278973967c91c00324531833f643fc0fb2c8ebe318c9ed4469eea",
+    "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+    "path": "data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.IsabaFiTamyiz/0852IbnHajarCasqalani.IsabaFiTamyiz.JK000533-ara1.mARkdown",
+    "sourceId": "openiti-cleaned-arabic-comparison"
+  },
+  "cases": [
+    {
+      "arabic": "أسعد بن زرارة ذكر في الذي قبله إن ثبت وسيأتي في ترجمة عبد الله بن أسعد بن زرارة أن بعضهم روى الحديث المذكور في ترجمته فقال عن عبد الله بن أسعد بن زرارة عن أبيه فلعله كان فيه بن أسعد قال وهو عبد الله هذا",
+      "arabicSha256": "0ec392d7a90f45609106233ed52bdbf028df5e6fe940b27387f2df6185e3b651",
+      "caseId": "case-001",
+      "category": "textual-identity",
+      "heldOut": true,
+      "referenceEnglish": "Asʿad ibn Zurāra. He was mentioned in the preceding entry, if this separate identification is sound. It will be noted in the entry on ʿAbd Allāh ibn Asʿad ibn Zurāra that some transmitted the report mentioned in his entry as ‘from ʿAbd Allāh ibn Asʿad ibn Zurāra, from his father.’ Perhaps the text originally contained ‘ibn Asʿad.’ He said: and that person is this ʿAbd Allāh.",
+      "referenceSha256": "aca4070198c97cab4186cb5894736f5233946ed6daf6b7de0e94ec9ce4c831ed",
+      "sourceExactTextSha256": "11be23cb9e2727a7bcf89958f56bcb81872a930133256985b26f6548ca699612",
+      "sourceUnitId": "openiti-5835c183-unit-000112"
+    },
+    {
+      "arabic": "جرول بن الأحنف بن السمط بن امرئ القيس بن عمرو بن معاوية بن الحارث الأكبر الكندي قيل هو اسم جد رجاء بن حيوة قاله أحمد بن محمد بن الحجاج بن رشدين وروى الطبراني من طريق جارية بن مصعب عن رجاء بن حيوة عن أبيه عن جده وهو من أصحاب النبي صلى الله عليه وسلم أن جارية من سبي حنين مرت بالنبي صلى الله عليه وسلم فقال لمن هذه الحديث ولم يسم جده وحكى بن عساكر فيه قولين آخرين أحدهما جندل بنون ثم دال والآخر بزاي بدل الدال",
+      "arabicSha256": "86502006251112f5ea574607a82977bacca2dce80f968a1651311a6c8dcb1769",
+      "caseId": "case-002",
+      "category": "isnad-and-honorific",
+      "heldOut": true,
+      "referenceEnglish": "Jarwal ibn al-Aḥnaf ibn al-Simṭ ibn Imriʾ al-Qays ibn ʿAmr ibn Muʿāwiya ibn al-Ḥārith al-Akbar al-Kindī. It is said that this was the name of the grandfather of Rajāʾ ibn Ḥaywa; Aḥmad ibn Muḥammad ibn al-Ḥajjāj ibn Rushdayn said so. Al-Ṭabarānī transmitted, by way of Jāriya ibn Muṣʿab, from Rajāʾ ibn Ḥaywa, from his father, from his grandfather—who was one of the Companions of the Prophet ﷺ—that a slave girl from the captives of Ḥunayn passed by the Prophet ﷺ, and he said: “To whom does this woman belong?” And the report continues. He did not name his grandfather. Ibn ʿAsākir related two other views concerning the name: one is Jandal, with a nūn and then a dāl; the other has a zāy in place of the dāl.",
+      "referenceSha256": "3326d81f4138d01c2908293160dab4e4dd4570d02b67ccbf1d60c7260ff84abd",
+      "sourceExactTextSha256": "b65f6231f0e3a51c84372c15959bd2120c367d16e9441bb69456b398793171fa",
+      "sourceUnitId": "openiti-5835c183-unit-001129"
+    },
+    {
+      "arabic": "الحارث بن فروة بن الشيطان بن خديج بن امرئ القيس بن الحارث بن معاوية بن الحارث بن معاوية بن ثور الكندي ذكر بن الكلبي وابن سعد والطبري أن له وفادة وقال بن الأثير وقع في ذيل أبي موسى الحارث بن قرة بقاف والذي في الجمهرة فروة بفاء وزيادة واو وهو الصواب وقال إن جده الشيطان سمي بذلك لجماله",
+      "arabicSha256": "bc9b380d582c0d5101a25ce86a26ad8ac1ca2cf504cd774330aac755a1926dd6",
+      "caseId": "case-003",
+      "category": "genealogy-and-variant",
+      "heldOut": true,
+      "referenceEnglish": "Al-Harith ibn Farwa ibn al-Shaytan ibn Khudayj ibn Imri al-Qays ibn al-Harith ibn Muawiya ibn al-Harith ibn Muawiya ibn Thawr al-Kindi. Ibn al-Kalbi, Ibn Sad, and al-Tabari mentioned that he came in a delegation. Ibn al-Athir said: In Abu Musa's supplement it appears as al-Harith ibn Qurra, with qaf, but in al-Jamhara it is Farwa, with fa and an additional waw, which is correct. He said that his grandfather al-Shaytan was so named because of his beauty.",
+      "referenceSha256": "aced0929951922b92d735f1ee34ec2c815f881d3938d31508e69d4817f0c8cf3",
+      "sourceExactTextSha256": "77c3c4a28a65e09943846cf7142733a9d7c98a72f5bc9239b01e38169c96db68",
+      "sourceUnitId": "openiti-5835c183-unit-001467"
+    }
+  ],
+  "evaluationId": "al-isabah-local-model-v1",
+  "issue": "https://github.com/yaqub0r/al-isabah/issues/49",
+  "policy": {
+    "bindingPath": "compliance/policy-binding.v1.json",
+    "bindingSha256": "f1ca5fa8303b13e70bbd92aeeb8e5d2a05ba037cf951043b5043262dd2d591e5",
+    "evaluationProtocolPath": "docs/contracts/local-model-translation-evaluation-protocol.md",
+    "evaluationProtocolSha256": "5ba1a9277f7ef8a8a149025e7bdc71d36b19261e1aeaec1cebed389537e831f7",
+    "glossaryPath": "profiles/honorific-formulas.v1.json",
+    "glossarySha256": "2691994d50457d967f41d04140b9f86f23967254fd764f2c756109194ba51a55",
+    "promptPath": "evaluations/local-model/v1/prompts/blind-translation-v1.txt",
+    "promptSha256": "ba06d5bc80df0bb6727e07b3207b6d420d83dfc7506ce88cb11c1019273f7432"
+  },
+  "schemaVersion": "1.0.0"
+}
