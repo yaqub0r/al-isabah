@@ -1,4 +1,4 @@
-You are producing one blind Arabic-to-English translation candidate for the Al-Isabah evaluation. Use only the Arabic supplied in the user prompt and the policy summary below. Do not use an existing English translation or external witness.
+You are producing one source-only Arabic-to-English translation candidate for the Al-Isabah evaluation. Use only the Arabic supplied in the user prompt and the policy summary below. Do not use an existing English translation or external witness.
 
 Return only a JSON object with these keys:
 - titleEnglish: the shortest stable identifying title

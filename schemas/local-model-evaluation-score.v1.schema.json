@@ -1,29 +1,41 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/yaqub0r/al-isabah/schemas/local-model-evaluation-score.v1.schema.json",
-  "title": "Al-Isabah local-model evaluation score v1",
+  "title": "Al-Isabah identified public evaluation score v1",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "scoreId", "evaluationId", "reviewPacketId", "reviewPacketSha256", "casesSha256", "runArtifactSha256", "aliasKeySha256", "worksheetSha256", "rubricSha256", "roleGatesSha256", "reviewerId", "caseCount", "heldOutCount", "repeatsByConfig", "minimumRepeatCount", "runs", "roleGates", "promotionStatus"],
+  "required": ["schemaVersion", "scoreId", "evaluationId", "reviewPacketId", "reviewPacketSha256", "casesSha256", "runArtifactSha256", "worksheetSha256", "rubricSha256", "roleGatesSha256", "reviewerPublicId", "publicationConsent", "caseCount", "heldOutCount", "repeatsByConfig", "minimumRepeatCount", "runs", "roleGates", "reviewStatus", "promotionStatus"],
   "properties": {
-    "schemaVersion": {"const": "1.0.0"},
-    "scoreId": {"type": "string", "pattern": "^eval-score-[a-f0-9]{16}$"},
-    "evaluationId": {"const": "al-isabah-local-model-v1"},
-    "reviewPacketId": {"type": "string", "pattern": "^eval-review-packet-[a-f0-9]{16}$"},
-    "reviewPacketSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
-    "casesSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
-    "runArtifactSha256": {"type": "object", "minProperties": 2, "maxProperties": 26, "additionalProperties": {"type": "string", "pattern": "^[a-f0-9]{64}$"}},
-    "aliasKeySha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
-    "worksheetSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
-    "rubricSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
-    "roleGatesSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
-    "reviewerId": {"type": "string", "minLength": 1},
-    "caseCount": {"type": "integer", "minimum": 1},
-    "heldOutCount": {"type": "integer", "minimum": 0},
-    "repeatsByConfig": {"type": "object"},
-    "minimumRepeatCount": {"type": "integer", "minimum": 1},
-    "runs": {"type": "object"},
-    "roleGates": {"type": "object"},
-    "promotionStatus": {"const": "blocked"}
+    "schemaVersion": {"const": "1.0.0"}, "scoreId": {"type": "string", "pattern": "^eval-score-[a-f0-9]{16}$"},
+    "evaluationId": {"const": "al-isabah-local-model-v1"}, "reviewPacketId": {"type": "string", "pattern": "^eval-review-packet-[a-f0-9]{16}$"},
+    "reviewPacketSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "casesSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "runArtifactSha256": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "string", "pattern": "^[a-f0-9]{64}$"}},
+    "worksheetSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "rubricSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "roleGatesSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "reviewerPublicId": {"type": "string", "minLength": 1},
+    "publicationConsent": {"const": true}, "caseCount": {"type": "integer", "minimum": 1}, "heldOutCount": {"type": "integer", "minimum": 0},
+    "repeatsByConfig": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 1}}, "minimumRepeatCount": {"type": "integer", "minimum": 1},
+    "runs": {"type": "object", "minProperties": 1, "additionalProperties": {
+      "type": "object", "additionalProperties": false,
+      "required": ["configId", "model", "averageDimensionScore", "materialErrorCount", "reviews"],
+      "properties": {
+        "configId": {"type": "string"}, "model": {"type": "string"}, "averageDimensionScore": {"type": "number"}, "materialErrorCount": {"type": "integer"},
+        "reviews": {"type": "array", "items": {
+          "type": "object", "additionalProperties": false,
+          "required": ["caseId", "dimensions", "materialErrors", "notes"],
+          "properties": {
+            "caseId": {"type": "string"},
+            "dimensions": {"type": "object", "additionalProperties": false, "required": ["fidelity", "structure", "uncertainty", "formula"], "properties": {
+              "fidelity": {"type": "integer"}, "structure": {"type": "integer"}, "uncertainty": {"type": "integer"}, "formula": {"type": "integer"}
+            }},
+            "materialErrors": {"type": "array", "items": {"type": "string"}}, "notes": {"type": "string"}
+          }
+        }}
+      }
+    }},
+    "roleGates": {"type": "object", "additionalProperties": {
+      "type": "object", "additionalProperties": false, "required": ["status", "reasons"],
+      "properties": {"status": {"type": "string"}, "reasons": {"type": "array", "items": {"type": "string"}}}
+    }},
+    "reviewStatus": {"const": "complete"}, "promotionStatus": {"const": "blocked"}
   }
 }

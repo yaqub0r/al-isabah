@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "dependencySha256": {
+    "evaluations/local-model/v1/cases.json": "3b2b9c5fd70cf3b4b8819c92f5fac8a2e1a155046b6bf2a5e5679451c4967a3c",
+    "docs/contracts/local-model-translation-evaluation-protocol.md": "f05df2d883e95ef3c74f7013322d6cdc266b180def2646c2f7ee45af7a36f85f",
+    "evaluations/local-model/v1/rubric.json": "562f9ce308c1ef85c77e8d331fb56fb9ddc3100db7fb2df8067ee1e44a0a92e4",
+    "evaluations/local-model/v1/role-gates.json": "69ce03868ceec6608b6f1c2b1ed36ca0a44cc95a37bf75d35099678011d7da74",
+    "evaluations/local-model/v1/configs/gemma4-xhigh-v1.json": "96ac6c3bc22eaf98c5b01852a01912600481e9b0f552ca148e7e807a39034517",
+    "evaluations/local-model/v1/configs/hermes-sol-xhigh-v1.json": "ad5a9d1eabb34d254df9ebd4f98639e7f96c237e45a818ea2a59d1630b7033fa"
+  },
+  "artifacts": [
+    {
+      "path": "evaluations/local-model/v1/results/README.md",
+      "artifactType": "public-index",
+      "sha256": "33fb8f04f65825c1683c0cf4ff5b41462fab8b4228db3df79f8d005b65fbdf2c",
+      "dependencySha256": {
+        "evaluations/local-model/v1/cases.json": "3b2b9c5fd70cf3b4b8819c92f5fac8a2e1a155046b6bf2a5e5679451c4967a3c",
+        "docs/contracts/local-model-translation-evaluation-protocol.md": "f05df2d883e95ef3c74f7013322d6cdc266b180def2646c2f7ee45af7a36f85f",
+        "evaluations/local-model/v1/rubric.json": "562f9ce308c1ef85c77e8d331fb56fb9ddc3100db7fb2df8067ee1e44a0a92e4",
+        "evaluations/local-model/v1/role-gates.json": "69ce03868ceec6608b6f1c2b1ed36ca0a44cc95a37bf75d35099678011d7da74",
+        "evaluations/local-model/v1/configs/gemma4-xhigh-v1.json": "96ac6c3bc22eaf98c5b01852a01912600481e9b0f552ca148e7e807a39034517",
+        "evaluations/local-model/v1/configs/hermes-sol-xhigh-v1.json": "ad5a9d1eabb34d254df9ebd4f98639e7f96c237e45a818ea2a59d1630b7033fa"
+      }
+    },
+    {
+      "path": "evaluations/local-model/v1/results/issue-49/gemma-packet.json",
+      "artifactType": "source-packet",
+      "sha256": "917d05c664e25b0ed6b26a6ab8c1f7775453735267c0fb95e9dfc1eda713cca2",
+      "dependencySha256": {
+        "evaluations/local-model/v1/cases.json": "3b2b9c5fd70cf3b4b8819c92f5fac8a2e1a155046b6bf2a5e5679451c4967a3c",
+        "docs/contracts/local-model-translation-evaluation-protocol.md": "f05df2d883e95ef3c74f7013322d6cdc266b180def2646c2f7ee45af7a36f85f",
+        "evaluations/local-model/v1/rubric.json": "562f9ce308c1ef85c77e8d331fb56fb9ddc3100db7fb2df8067ee1e44a0a92e4",
+        "evaluations/local-model/v1/role-gates.json": "69ce03868ceec6608b6f1c2b1ed36ca0a44cc95a37bf75d35099678011d7da74",
+        "evaluations/local-model/v1/configs/gemma4-xhigh-v1.json": "96ac6c3bc22eaf98c5b01852a01912600481e9b0f552ca148e7e807a39034517",
+        "evaluations/local-model/v1/configs/hermes-sol-xhigh-v1.json": "ad5a9d1eabb34d254df9ebd4f98639e7f96c237e45a818ea2a59d1630b7033fa"
+      }
+    },
+    {
+      "path": "evaluations/local-model/v1/results/issue-49/gemma-attempt-summary.json",
+      "artifactType": "attempt-summary",
+      "sha256": "2b47be86ed5769f27dfa1ef922262dc28f696f85a05734c84546b17cd8593d09",
+      "dependencySha256": {
+        "evaluations/local-model/v1/cases.json": "3b2b9c5fd70cf3b4b8819c92f5fac8a2e1a155046b6bf2a5e5679451c4967a3c",
+        "docs/contracts/local-model-translation-evaluation-protocol.md": "f05df2d883e95ef3c74f7013322d6cdc266b180def2646c2f7ee45af7a36f85f",
+        "evaluations/local-model/v1/rubric.json": "562f9ce308c1ef85c77e8d331fb56fb9ddc3100db7fb2df8067ee1e44a0a92e4",
+        "evaluations/local-model/v1/role-gates.json": "69ce03868ceec6608b6f1c2b1ed36ca0a44cc95a37bf75d35099678011d7da74",
+        "evaluations/local-model/v1/configs/gemma4-xhigh-v1.json": "96ac6c3bc22eaf98c5b01852a01912600481e9b0f552ca148e7e807a39034517",
+        "evaluations/local-model/v1/configs/hermes-sol-xhigh-v1.json": "ad5a9d1eabb34d254df9ebd4f98639e7f96c237e45a818ea2a59d1630b7033fa",
+        "evaluations/local-model/v1/results/issue-49/gemma-packet.json": "917d05c664e25b0ed6b26a6ab8c1f7775453735267c0fb95e9dfc1eda713cca2"
+      }
+    },
+    {
+      "path": "evaluations/local-model/v1/results/issue-49/sol-packet.json",
+      "artifactType": "source-packet",
+      "sha256": "73e49f0641fe9dbdac7fa6ac3000e570f56fc19dd6d9de613fe64ad783318e46",
+      "dependencySha256": {
+        "evaluations/local-model/v1/cases.json": "3b2b9c5fd70cf3b4b8819c92f5fac8a2e1a155046b6bf2a5e5679451c4967a3c",
+        "docs/contracts/local-model-translation-evaluation-protocol.md": "f05df2d883e95ef3c74f7013322d6cdc266b180def2646c2f7ee45af7a36f85f",
+        "evaluations/local-model/v1/rubric.json": "562f9ce308c1ef85c77e8d331fb56fb9ddc3100db7fb2df8067ee1e44a0a92e4",
+        "evaluations/local-model/v1/role-gates.json": "69ce03868ceec6608b6f1c2b1ed36ca0a44cc95a37bf75d35099678011d7da74",
+        "evaluations/local-model/v1/configs/gemma4-xhigh-v1.json": "96ac6c3bc22eaf98c5b01852a01912600481e9b0f552ca148e7e807a39034517",
+        "evaluations/local-model/v1/configs/hermes-sol-xhigh-v1.json": "ad5a9d1eabb34d254df9ebd4f98639e7f96c237e45a818ea2a59d1630b7033fa"
+      }
+    },
+    {
+      "path": "evaluations/local-model/v1/results/issue-49/sol-run.json",
+      "artifactType": "run",
+      "sha256": "5b218ce52127f6ed3f1bf491f9a3a06da9919521aa3270dff968ea9d24243fc8",
+      "dependencySha256": {
+        "evaluations/local-model/v1/cases.json": "3b2b9c5fd70cf3b4b8819c92f5fac8a2e1a155046b6bf2a5e5679451c4967a3c",
+        "docs/contracts/local-model-translation-evaluation-protocol.md": "f05df2d883e95ef3c74f7013322d6cdc266b180def2646c2f7ee45af7a36f85f",
+        "evaluations/local-model/v1/rubric.json": "562f9ce308c1ef85c77e8d331fb56fb9ddc3100db7fb2df8067ee1e44a0a92e4",
+        "evaluations/local-model/v1/role-gates.json": "69ce03868ceec6608b6f1c2b1ed36ca0a44cc95a37bf75d35099678011d7da74",
+        "evaluations/local-model/v1/configs/gemma4-xhigh-v1.json": "96ac6c3bc22eaf98c5b01852a01912600481e9b0f552ca148e7e807a39034517",
+        "evaluations/local-model/v1/configs/hermes-sol-xhigh-v1.json": "ad5a9d1eabb34d254df9ebd4f98639e7f96c237e45a818ea2a59d1630b7033fa",
+        "evaluations/local-model/v1/results/issue-49/sol-packet.json": "73e49f0641fe9dbdac7fa6ac3000e570f56fc19dd6d9de613fe64ad783318e46"
+      }
+    },
+    {
+      "path": "evaluations/local-model/v1/results/issue-49/identified-review-packet.json",
+      "artifactType": "identified-review-packet",
+      "sha256": "0a77ae177c8ac2c5a17de024c56b6942cf9fa471d6b63f47d2205164e698d89f",
+      "dependencySha256": {
+        "evaluations/local-model/v1/cases.json": "3b2b9c5fd70cf3b4b8819c92f5fac8a2e1a155046b6bf2a5e5679451c4967a3c",
+        "docs/contracts/local-model-translation-evaluation-protocol.md": "f05df2d883e95ef3c74f7013322d6cdc266b180def2646c2f7ee45af7a36f85f",
+        "evaluations/local-model/v1/rubric.json": "562f9ce308c1ef85c77e8d331fb56fb9ddc3100db7fb2df8067ee1e44a0a92e4",
+        "evaluations/local-model/v1/role-gates.json": "69ce03868ceec6608b6f1c2b1ed36ca0a44cc95a37bf75d35099678011d7da74",
+        "evaluations/local-model/v1/configs/gemma4-xhigh-v1.json": "96ac6c3bc22eaf98c5b01852a01912600481e9b0f552ca148e7e807a39034517",
+        "evaluations/local-model/v1/configs/hermes-sol-xhigh-v1.json": "ad5a9d1eabb34d254df9ebd4f98639e7f96c237e45a818ea2a59d1630b7033fa",
+        "evaluations/local-model/v1/results/issue-49/sol-run.json": "5b218ce52127f6ed3f1bf491f9a3a06da9919521aa3270dff968ea9d24243fc8"
+      }
+    },
+    {
+      "path": "evaluations/local-model/v1/results/issue-49/pending-report.md",
+      "artifactType": "report",
+      "sha256": "fabd3069ea6b406658c4dfc70e56da5b9d7f2bae2d083feb832802c1ca8938bd",
+      "dependencySha256": {
+        "evaluations/local-model/v1/cases.json": "3b2b9c5fd70cf3b4b8819c92f5fac8a2e1a155046b6bf2a5e5679451c4967a3c",
+        "docs/contracts/local-model-translation-evaluation-protocol.md": "f05df2d883e95ef3c74f7013322d6cdc266b180def2646c2f7ee45af7a36f85f",
+        "evaluations/local-model/v1/rubric.json": "562f9ce308c1ef85c77e8d331fb56fb9ddc3100db7fb2df8067ee1e44a0a92e4",
+        "evaluations/local-model/v1/role-gates.json": "69ce03868ceec6608b6f1c2b1ed36ca0a44cc95a37bf75d35099678011d7da74",
+        "evaluations/local-model/v1/configs/gemma4-xhigh-v1.json": "96ac6c3bc22eaf98c5b01852a01912600481e9b0f552ca148e7e807a39034517",
+        "evaluations/local-model/v1/configs/hermes-sol-xhigh-v1.json": "ad5a9d1eabb34d254df9ebd4f98639e7f96c237e45a818ea2a59d1630b7033fa",
+        "evaluations/local-model/v1/results/issue-49/sol-run.json": "5b218ce52127f6ed3f1bf491f9a3a06da9919521aa3270dff968ea9d24243fc8",
+        "evaluations/local-model/v1/results/issue-49/identified-review-packet.json": "0a77ae177c8ac2c5a17de024c56b6942cf9fa471d6b63f47d2205164e698d89f"
+      },
+      "reportInputs": {
+        "cases": "evaluations/local-model/v1/cases.json",
+        "runs": [
+          "evaluations/local-model/v1/results/issue-49/sol-run.json"
+        ],
+        "packet": "evaluations/local-model/v1/results/issue-49/identified-review-packet.json"
+      }
+    }
+  ]
+}

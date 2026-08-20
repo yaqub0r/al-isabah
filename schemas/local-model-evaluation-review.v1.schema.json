@@ -1,31 +1,42 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/yaqub0r/al-isabah/schemas/local-model-evaluation-review.v1.schema.json",
-  "title": "Al-Isabah blinded human review v1",
+  "title": "Al-Isabah identified public human review v1",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "reviewPacketId", "reviewPacketSha256", "reviewerId", "cases"],
+  "required": ["schemaVersion", "reviewPacketId", "reviewPacketSha256", "reviewer", "status", "publicSafety", "cases"],
   "properties": {
     "schemaVersion": {"const": "1.0.0"},
     "reviewPacketId": {"type": "string", "pattern": "^eval-review-packet-[a-f0-9]{16}$"},
     "reviewPacketSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
-    "reviewerId": {"type": "string", "minLength": 1},
+    "reviewer": {
+      "type": "object", "additionalProperties": false,
+      "required": ["publicId", "publicationConsent", "consentRecordedOn", "consentEvidence"],
+      "properties": {
+        "publicId": {"type": "string", "minLength": 1},
+        "publicationConsent": {"const": true},
+        "consentRecordedOn": {"type": "string", "format": "date"},
+        "consentEvidence": {"type": "string", "pattern": "^https://github\\.com/yaqub0r/al-isabah/issues/49#issuecomment-[0-9]+$"}
+      }
+    },
+    "status": {"const": "complete"},
+    "publicSafety": {"type": "object", "additionalProperties": false, "required": ["status", "provenance", "admittedBy"], "properties": {"status": {"const": "admitted"}, "provenance": {"const": "identified-human-public-review"}, "admittedBy": {"type": "string", "minLength": 1}}},
     "cases": {"type": "array", "minItems": 1, "items": {
       "type": "object", "additionalProperties": false,
-      "required": ["caseId", "candidates"],
+      "required": ["caseId", "assessments"],
       "properties": {
         "caseId": {"type": "string", "pattern": "^case-[0-9]{3}$"},
-        "candidates": {"type": "array", "minItems": 2, "maxItems": 26, "items": {
+        "assessments": {"type": "array", "minItems": 1, "items": {
           "type": "object", "additionalProperties": false,
-          "required": ["alias", "fidelity", "structure", "uncertainty", "formula", "materialErrors", "notes"],
+          "required": ["runId", "fidelity", "structure", "uncertainty", "formula", "materialErrors", "notes"],
           "properties": {
-            "alias": {"type": "string", "pattern": "^[A-Z]$"},
+            "runId": {"type": "string", "pattern": "^eval-run-[a-f0-9]{16}$"},
             "fidelity": {"type": "integer", "minimum": 0, "maximum": 2},
             "structure": {"type": "integer", "minimum": 0, "maximum": 2},
             "uncertainty": {"type": "integer", "minimum": 0, "maximum": 2},
             "formula": {"type": "integer", "minimum": 0, "maximum": 2},
             "materialErrors": {"type": "array", "items": {"type": "string"}},
-            "notes": {"type": "string"}
+            "notes": {"type": "string", "minLength": 1}
           }
         }}
       }

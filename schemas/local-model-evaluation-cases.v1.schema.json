@@ -29,14 +29,14 @@
         "evaluationProtocolSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
         "glossaryPath": {"const": "profiles/honorific-formulas.v1.json"},
         "glossarySha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
-        "promptPath": {"const": "evaluations/local-model/v1/prompts/blind-translation-v1.txt"},
+        "promptPath": {"const": "evaluations/local-model/v1/prompts/source-only-translation-v1.txt"},
         "promptSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
       }
     },
     "cases": {
       "type": "array", "minItems": 3, "items": {
         "type": "object", "additionalProperties": false,
-        "required": ["caseId", "sourceUnitId", "category", "heldOut", "arabic", "arabicSha256", "sourceExactTextSha256", "referenceEnglish", "referenceSha256"],
+        "required": ["caseId", "sourceUnitId", "category", "heldOut", "arabic", "arabicSha256", "sourceExactTextSha256", "referenceEnglish", "referenceSha256", "publicEligibility"],
         "properties": {
           "caseId": {"type": "string", "pattern": "^case-[0-9]{3}$"},
           "sourceUnitId": {"type": "string", "pattern": "^openiti-5835c183-unit-[0-9]{6}$"},
@@ -46,7 +46,24 @@
           "arabicSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
           "sourceExactTextSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
           "referenceEnglish": {"type": "string", "minLength": 1},
-          "referenceSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+          "referenceSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "publicEligibility": {
+            "type": "object", "additionalProperties": false,
+            "required": ["decision", "authorityStatus", "restrictedWitnessText", "credentials", "internalPathsOrObjectLocators", "privateCorrespondence", "livingPersonPersonalInformation", "publicRationale", "reviewedBy", "reviewedOn", "issueEvidence"],
+            "properties": {
+              "decision": {"const": "approved"},
+              "authorityStatus": {"const": "public-approved-authority"},
+              "restrictedWitnessText": {"const": false},
+              "credentials": {"const": false},
+              "internalPathsOrObjectLocators": {"const": false},
+              "privateCorrespondence": {"const": false},
+              "livingPersonPersonalInformation": {"const": false},
+              "publicRationale": {"type": "string", "minLength": 1},
+              "reviewedBy": {"type": "string", "minLength": 1},
+              "reviewedOn": {"type": "string", "format": "date"},
+              "issueEvidence": {"type": "string", "pattern": "^https://github\\.com/yaqub0r/al-isabah/issues/49#issuecomment-[0-9]+$"}
+            }
+          }
         }
       }
     }

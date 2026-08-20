@@ -1,0 +1,147 @@
+{
+  "cases": [
+    {
+      "arabic": "أسعد بن زرارة ذكر في الذي قبله إن ثبت وسيأتي في ترجمة عبد الله بن أسعد بن زرارة أن بعضهم روى الحديث المذكور في ترجمته فقال عن عبد الله بن أسعد بن زرارة عن أبيه فلعله كان فيه بن أسعد قال وهو عبد الله هذا",
+      "arabicSha256": "0ec392d7a90f45609106233ed52bdbf028df5e6fe940b27387f2df6185e3b651",
+      "candidates": [
+        {
+          "bodyEnglish": "He was mentioned in the preceding entry, if that is established. It will be stated in the entry on ʿAbd Allāh ibn Asʿad ibn Zurāra that some transmitted the hadith mentioned in his entry, saying, “From ʿAbd Allāh ibn Asʿad ibn Zurāra, from his father.” Perhaps it contained the words “ibn Asʿad.” He said, “And it is this ʿAbd Allāh.”",
+          "config": {
+            "artifactDisclosure": "provider-not-disclosed",
+            "configId": "hermes-sol-xhigh-v1",
+            "contextTokens": null,
+            "engine": "openai-codex",
+            "houseProfile": "xhigh",
+            "maxOutputTokens": null,
+            "model": "gpt-5.6-sol",
+            "modelDigest": null,
+            "nativeThinkingObserved": null,
+            "nativeThinkingRequested": true,
+            "promptSha256": "757e4164228a721297b094dcae9bcf719b2d443b749d3e63b3b691baea52edee",
+            "promptVersion": "source-only-translation-v1",
+            "quantization": "provider-managed-undisclosed",
+            "role": "source-only-translation-candidate",
+            "runtimeVersion": "provider-managed",
+            "samplingSeed": null,
+            "schemaVersion": "1.0.0",
+            "temperature": null
+          },
+          "issues": [
+            "In the opening phrase “if that is established,” the source leaves the referent unstated.",
+            "The speaker of the final “He said” is not identified in the source."
+          ],
+          "publicSafety": {
+            "admittedBy": "config:hermes-sol-xhigh-v1",
+            "provenance": "sanitized-final-model-output",
+            "status": "admitted"
+          },
+          "runId": "eval-run-f3e4a634076469ec",
+          "runSha256": "4ffe237bc92abf2446e6448e813c28838ad300ecc7a041f66c0d5403a266afc3",
+          "titleEnglish": "Asʿad ibn Zurāra"
+        }
+      ],
+      "caseId": "case-001"
+    },
+    {
+      "arabic": "جرول بن الأحنف بن السمط بن امرئ القيس بن عمرو بن معاوية بن الحارث الأكبر الكندي قيل هو اسم جد رجاء بن حيوة قاله أحمد بن محمد بن الحجاج بن رشدين وروى الطبراني من طريق جارية بن مصعب عن رجاء بن حيوة عن أبيه عن جده وهو من أصحاب النبي صلى الله عليه وسلم أن جارية من سبي حنين مرت بالنبي صلى الله عليه وسلم فقال لمن هذه الحديث ولم يسم جده وحكى بن عساكر فيه قولين آخرين أحدهما جندل بنون ثم دال والآخر بزاي بدل الدال",
+      "arabicSha256": "86502006251112f5ea574607a82977bacca2dce80f968a1651311a6c8dcb1769",
+      "candidates": [
+        {
+          "bodyEnglish": "It is said that this was the name of the grandfather of Rajāʾ ibn Ḥaywa. Aḥmad ibn Muḥammad ibn al-Ḥajjāj ibn Rushdayn said this. Al-Ṭabarānī transmitted, by way of Jāriya ibn Muṣʿab, from Rajāʾ ibn Ḥaywa, from his father, from his grandfather—and he was one of the Companions of the Prophet ﷺ—that a slave girl from among the captives of Ḥunayn passed by the Prophet ﷺ, and he said, “To whom does this belong?”—the hadith. His grandfather was not named. Ibn ʿAsākir related two other opinions concerning the name: one was Jandal, with a nūn followed by a dāl, and the other had a zāy in place of the dāl.",
+          "config": {
+            "artifactDisclosure": "provider-not-disclosed",
+            "configId": "hermes-sol-xhigh-v1",
+            "contextTokens": null,
+            "engine": "openai-codex",
+            "houseProfile": "xhigh",
+            "maxOutputTokens": null,
+            "model": "gpt-5.6-sol",
+            "modelDigest": null,
+            "nativeThinkingObserved": null,
+            "nativeThinkingRequested": true,
+            "promptSha256": "757e4164228a721297b094dcae9bcf719b2d443b749d3e63b3b691baea52edee",
+            "promptVersion": "source-only-translation-v1",
+            "quantization": "provider-managed-undisclosed",
+            "role": "source-only-translation-candidate",
+            "runtimeVersion": "provider-managed",
+            "samplingSeed": null,
+            "schemaVersion": "1.0.0",
+            "temperature": null
+          },
+          "issues": [
+            "The grandfather in the chain is explicitly left unnamed.",
+            "The expression “the hadith” marks an omitted continuation of the report.",
+            "The source gives competing spellings of the grandfather’s name."
+          ],
+          "publicSafety": {
+            "admittedBy": "config:hermes-sol-xhigh-v1",
+            "provenance": "sanitized-final-model-output",
+            "status": "admitted"
+          },
+          "runId": "eval-run-f3e4a634076469ec",
+          "runSha256": "4ffe237bc92abf2446e6448e813c28838ad300ecc7a041f66c0d5403a266afc3",
+          "titleEnglish": "Jarwal ibn al-Aḥnaf ibn al-Simṭ ibn Imruʾ al-Qays ibn ʿAmr ibn Muʿāwiya ibn al-Ḥārith al-Akbar al-Kindī"
+        }
+      ],
+      "caseId": "case-002"
+    },
+    {
+      "arabic": "الحارث بن فروة بن الشيطان بن خديج بن امرئ القيس بن الحارث بن معاوية بن الحارث بن معاوية بن ثور الكندي ذكر بن الكلبي وابن سعد والطبري أن له وفادة وقال بن الأثير وقع في ذيل أبي موسى الحارث بن قرة بقاف والذي في الجمهرة فروة بفاء وزيادة واو وهو الصواب وقال إن جده الشيطان سمي بذلك لجماله",
+      "arabicSha256": "bc9b380d582c0d5101a25ce86a26ad8ac1ca2cf504cd774330aac755a1926dd6",
+      "candidates": [
+        {
+          "bodyEnglish": "Ibn al-Kalbī, Ibn Saʿd, and al-Ṭabarī mentioned that he made a deputation visit. Ibn al-Athīr said that the name occurring in the Supplement of Abū Mūsā is “al-Ḥārith ibn Qurra,” with a qāf, whereas the form in the Jamharah is “Farwa,” with a fāʾ and an additional wāw, and that this is correct. He said that his ancestor al-Shayṭān was so named because of his beauty.",
+          "config": {
+            "artifactDisclosure": "provider-not-disclosed",
+            "configId": "hermes-sol-xhigh-v1",
+            "contextTokens": null,
+            "engine": "openai-codex",
+            "houseProfile": "xhigh",
+            "maxOutputTokens": null,
+            "model": "gpt-5.6-sol",
+            "modelDigest": null,
+            "nativeThinkingObserved": null,
+            "nativeThinkingRequested": true,
+            "promptSha256": "757e4164228a721297b094dcae9bcf719b2d443b749d3e63b3b691baea52edee",
+            "promptVersion": "source-only-translation-v1",
+            "quantization": "provider-managed-undisclosed",
+            "role": "source-only-translation-candidate",
+            "runtimeVersion": "provider-managed",
+            "samplingSeed": null,
+            "schemaVersion": "1.0.0",
+            "temperature": null
+          },
+          "issues": [
+            "The destination and circumstances of the deputation visit are not stated."
+          ],
+          "publicSafety": {
+            "admittedBy": "config:hermes-sol-xhigh-v1",
+            "provenance": "sanitized-final-model-output",
+            "status": "admitted"
+          },
+          "runId": "eval-run-f3e4a634076469ec",
+          "runSha256": "4ffe237bc92abf2446e6448e813c28838ad300ecc7a041f66c0d5403a266afc3",
+          "titleEnglish": "Al-Ḥārith ibn Farwa ibn al-Shayṭān ibn Khudayj ibn Imruʾ al-Qays ibn al-Ḥārith ibn Muʿāwiya ibn al-Ḥārith ibn Muʿāwiya ibn Thawr al-Kindī"
+        }
+      ],
+      "caseId": "case-003"
+    }
+  ],
+  "casesSha256": "cf489aa723a66874211d09b533bbd465862c35f135b74c664f2078dd218b9be6",
+  "evaluationId": "al-isabah-local-model-v1",
+  "issue": "https://github.com/yaqub0r/al-isabah/issues/49",
+  "limitations": [
+    "Model identity is visible; scores must still be based on Arabic source evidence.",
+    "Unreviewed candidates grant no workflow role and cannot be promoted.",
+    "Raw thought traces and controller or agent logs are excluded."
+  ],
+  "policySha256": "634ed4ac947b3a85a71717e425c0099b6b5500c32432683957cebb7fbd3c8e29",
+  "promotionStatus": "blocked",
+  "reviewPacketId": "eval-review-packet-e496882d682873f2",
+  "reviewStatus": "unreviewed",
+  "roleStatus": "no-role",
+  "runArtifactSha256": {
+    "eval-run-f3e4a634076469ec": "4ffe237bc92abf2446e6448e813c28838ad300ecc7a041f66c0d5403a266afc3"
+  },
+  "schemaVersion": "1.0.0"
+}

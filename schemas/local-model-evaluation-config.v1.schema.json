@@ -8,7 +8,7 @@
   "properties": {
     "schemaVersion": {"const": "1.0.0"},
     "configId": {"type": "string", "minLength": 1},
-    "role": {"enum": ["blind-translation-candidate", "historical-comparator"]},
+    "role": {"enum": ["source-only-translation-candidate", "historical-comparator"]},
     "engine": {"type": "string", "minLength": 1},
     "runtimeVersion": {"type": "string", "minLength": 1},
     "model": {"type": "string", "minLength": 1},
