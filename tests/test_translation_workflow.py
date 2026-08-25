@@ -3,7 +3,10 @@ import importlib.util
 import json
 import tempfile
 import unittest
+from contextlib import redirect_stdout
+from io import StringIO
 from pathlib import Path
+from types import SimpleNamespace
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -178,6 +181,28 @@ class TranslationWorkflowTests(unittest.TestCase):
         self.assertEqual(MODULE.verify_source(FIXTURE_SOURCE, manifest), [])
         entries = MODULE.parse_openiti_entries(FIXTURE_SOURCE)
         self.assertEqual(MODULE.validate_source_inventory(entries, manifest), [])
+
+    def test_claim_dry_run_links_parent_and_separates_human_review(self):
+        with tempfile.TemporaryDirectory() as directory:
+            issues_path = Path(directory) / "issues.json"
+            issues_path.write_text("[]", encoding="utf-8")
+            args = SimpleNamespace(
+                manifest=FIXTURE_MANIFEST,
+                source=FIXTURE_SOURCE,
+                issues_json=issues_path,
+                start_unit=1,
+                end_unit=1,
+                parent_issue=53,
+                assignee="@me",
+                dry_run=True,
+            )
+            output = StringIO()
+            with redirect_stdout(output):
+                self.assertEqual(MODULE.command_claim(args), 0)
+            body = output.getvalue()
+            self.assertIn("Parent implementation: #53.", body)
+            self.assertIn("agent-complete", body)
+            self.assertIn("independent, ongoing management state", body)
 
     def test_hydrate_from_file_is_atomic_and_hash_checked(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -744,6 +769,37 @@ class TranslationWorkflowTests(unittest.TestCase):
         self.assertEqual(
             MODULE.registered_occurrences(damaged, "source")[0]["rule"]["target"],
             "ﷺ",
+        )
+        transposed_family = "صلى الله عليه وسلم وآله وسلم"
+        family_occurrences = MODULE.registered_occurrences(
+            transposed_family,
+            "source",
+        )
+        self.assertEqual(len(family_occurrences), 1)
+        self.assertEqual(family_occurrences[0]["rule"]["target"], "﵌")
+        self.assertEqual(
+            family_occurrences[0]["rule"]["semanticClass"],
+            "prophetic_blessing_with_family",
+        )
+        page_split_family = "صلى 204 الله عليه وآله وسلم"
+        page_split_occurrences = MODULE.registered_occurrences(
+            page_split_family,
+            "source",
+        )
+        self.assertEqual(len(page_split_occurrences), 1)
+        self.assertEqual(page_split_occurrences[0]["rule"]["target"], "﵌")
+        mid_formula_page_split = "صلى الله 207 عليه وآله وسلم"
+        mid_formula_occurrences = MODULE.registered_occurrences(
+            mid_formula_page_split,
+            "source",
+        )
+        self.assertEqual(len(mid_formula_occurrences), 1)
+        self.assertEqual(mid_formula_occurrences[0]["rule"]["target"], "﵌")
+        self.assertEqual(
+            MODULE.registered_occurrences("والله اعلم", "source")[0]["rule"][
+                "target"
+            ],
+            "والله أعلم",
         )
         self.assertTrue(
             all(rule["accessibleEnglish"] for rule in MODULE.FORMULA_RULES)

@@ -71,13 +71,32 @@ def validate(path: Path = CLOSURE) -> list[str]:
     expected_files = {
         "publicProposal": ("content/public-proposals/issue-0026.public-proposal.json", PROPOSAL, sha256_file),
         "publicReview": ("content/public-proposals/issue-0026.public-review.json", PUBLIC_REVIEW, sha256_file),
-        "sourceRegister": ("compliance/source-register.v1.json", REGISTER, sha256_text_file),
         "policyBinding": ("compliance/policy-binding.v1.json", POLICY, sha256_text_file),
     }
     for key, (expected_path, file_path, digest) in expected_files.items():
         binding = closure.get(key, {})
         if binding.get("path") != expected_path or binding.get("sha256") != digest(file_path):
             errors.append(safe_error(f"$.{key}", "file-binding-mismatch"))
+    register_binding = closure.get("sourceRegister", {})
+    if register_binding != {
+        "path": "compliance/source-register.v1.json",
+        "sha256": "99b6a07943b75707d239515c680f275d35dd0d895f0d6933a2e7d881e162317b",
+    }:
+        errors.append(safe_error("$.sourceRegister", "historical-binding-mismatch"))
+    else:
+        register = json.loads(REGISTER.read_text(encoding="utf-8"))
+        artifacts = {item.get("id"): item for item in register.get("artifacts", [])}
+        proposal_artifact = artifacts.get("issue-0026-public-proposal-v1", {})
+        source_artifact = artifacts.get("openiti-cleaned-arabic-comparison", {})
+        if (
+            proposal_artifact.get("integrity", {}).get("proposal_sha256")
+            != sha256_file(PROPOSAL)
+            or source_artifact.get("source_revision", {}).get("commit")
+            != proposal["sourceAuthority"]["commit"]
+            or source_artifact.get("integrity", {}).get("sha256")
+            != proposal["sourceAuthority"]["sha256"]
+        ):
+            errors.append(safe_error("$.sourceRegister", "current-register-superset-mismatch"))
     review_bytes = canonical_json(expected_review(PROPOSAL))
     if PUBLIC_REVIEW.read_bytes() != review_bytes:
         errors.append(safe_error("$.publicReview", "review-projection-mismatch"))

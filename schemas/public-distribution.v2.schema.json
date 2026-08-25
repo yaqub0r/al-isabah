@@ -162,7 +162,10 @@
       "additionalProperties": false,
       "required": ["closureId", "sha256"],
       "properties": {
-        "closureId": { "const": "issue-0026-public-working-closure-v1" },
+        "closureId": {
+          "type": "string",
+          "pattern": "^issue-[0-9]{4}-public-working-closure-v1$"
+        },
         "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
       }
     }

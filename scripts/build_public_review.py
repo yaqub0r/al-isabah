@@ -43,10 +43,11 @@ def review(proposal_path: Path = PROPOSAL) -> dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--proposal", type=Path, default=PROPOSAL)
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
-    data = canonical_json(review())
+    data = canonical_json(review(args.proposal.resolve()))
     if args.check:
         if not args.output.is_file() or args.output.read_bytes() != data:
             print("public review artifact differs from deterministic projection")

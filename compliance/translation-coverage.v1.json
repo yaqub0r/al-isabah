@@ -48,6 +48,31 @@
       "canonical_promotion": "blocked"
     },
     {
+      "scope_id": "volume-02",
+      "scope_kind": "volume",
+      "label": "Volume 2",
+      "volume": 2,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 1497,
+        "translated_units": 1497,
+        "remaining_agent_units": 0,
+        "basis": "issues-0054-through-0068-machine-ready-public-proposal",
+        "evidence": {
+          "source_register_artifact": "issue-0053-public-proposal-v1",
+          "sha256": "b687d09fa0d413a355517fd3e011c375d2b7e97783d54fec13b82f884f0f34df"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 1497
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "available",
+      "canonical_promotion": "blocked"
+    },
+    {
       "scope_id": "volume-08",
       "scope_kind": "volume",
       "label": "Volume 8",

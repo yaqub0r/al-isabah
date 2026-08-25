@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/schemas/current-release-closure.v1.schema.json",
+  "title": "Al-Isabah cumulative public-working release closure v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "closureId", "issue", "publicationStatus", "canonicalPromotion", "consumerSchemaVersion", "proposals", "sourceAuthorities", "sourceRegister", "rights", "promotion", "historicalClosure", "reviewCounts", "outputInventory"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "closureId": {"const": "issue-0053-public-working-closure-v1"},
+    "issue": {"const": "https://github.com/yaqub0r/al-isabah/issues/53"},
+    "publicationStatus": {"const": "public-working"},
+    "canonicalPromotion": {"const": "blocked"},
+    "consumerSchemaVersion": {"const": "2.0.0"},
+    "proposals": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["proposalId", "publicProposal", "publicReview", "policyBinding", "projection"],
+        "properties": {
+          "proposalId": {"pattern": "^issue-[0-9]{4}-public-proposal-v1$"},
+          "publicProposal": {"$ref": "#/$defs/fileBinding"},
+          "publicReview": {"$ref": "#/$defs/fileBinding"},
+          "policyBinding": {"$ref": "#/$defs/fileBinding"},
+          "projection": {"$ref": "#/$defs/projection"}
+        }
+      }
+    },
+    "sourceAuthorities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/sourceAuthority"}
+    },
+    "sourceRegister": {"$ref": "#/$defs/fileBinding"},
+    "rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "matrixId", "license"],
+      "properties": {
+        "path": {"const": "compliance/rights-matrix.al-isabah.v1.json"},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "matrixId": {"type": "string", "minLength": 1},
+        "license": {"const": "CC-BY-NC-SA-4.0"}
+      }
+    },
+    "promotion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "status"],
+      "properties": {
+        "path": {"const": "compliance/promotions/available-data.v1.json"},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "status": {"const": "blocked"}
+      }
+    },
+    "historicalClosure": {"$ref": "#/$defs/fileBinding"},
+    "reviewCounts": {"$ref": "#/$defs/reviewCounts"},
+    "outputInventory": {
+      "type": "array",
+      "minItems": 4,
+      "items": {"$ref": "#/$defs/output"}
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "fileBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._/-]+$"},
+        "sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "projection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entryCount", "orderSha256", "userFacingSha256", "recordsSha256"],
+      "properties": {
+        "entryCount": {"type": "integer", "minimum": 1},
+        "orderSha256": {"$ref": "#/$defs/sha256"},
+        "userFacingSha256": {"$ref": "#/$defs/sha256"},
+        "recordsSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "sourceAuthority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceId", "commit", "artifactSha256", "license", "attributionRequired"],
+      "properties": {
+        "sourceId": {"type": "string", "minLength": 1},
+        "commit": {"type": "string", "pattern": "^[a-f0-9]{40}$"},
+        "artifactSha256": {"$ref": "#/$defs/sha256"},
+        "license": {"const": "CC-BY-NC-SA-4.0"},
+        "attributionRequired": {"const": true}
+      }
+    },
+    "reviewCounts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["machinePassed", "needsAttention", "humanReviewed", "humanUnreviewed"],
+      "properties": {
+        "machinePassed": {"type": "integer", "minimum": 0},
+        "needsAttention": {"type": "integer", "minimum": 0},
+        "humanReviewed": {"type": "integer", "minimum": 0},
+        "humanUnreviewed": {"type": "integer", "minimum": 0}
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "bytes", "recordCount"],
+      "properties": {
+        "path": {"pattern": "^(?:records/volume-[0-9]{2}\\.jsonl|reviews/issue-[0-9]{4}\\.json)$"},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "bytes": {"type": "integer", "minimum": 1},
+        "recordCount": {"type": "integer", "minimum": 1}
+      }
+    }
+  }
+}

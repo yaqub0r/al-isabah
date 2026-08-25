@@ -1,6 +1,6 @@
 {
   "schema": "al-isabah.translation-governance-reference.v1",
-  "referenceVersion": "1.1.0",
+  "referenceVersion": "1.2.0",
   "authority": {
     "repository": "https://github.com/yaqub0r/al-isabah",
     "repositoryPath": "docs/contracts/translation-governance-reference.v1.json",
@@ -45,14 +45,14 @@
     {
       "id": "honorific-formula-registry",
       "path": "profiles/honorific-formulas.v1.json",
-      "sha256": "2691994d50457d967f41d04140b9f86f23967254fd764f2c756109194ba51a55",
+      "sha256": "2baa41dcc6359ddb115eafce02ea81af09b56253f83736f8b332af896c2866f3",
       "status": "active",
-      "version": "1.2.0"
+      "version": "1.2.2"
     },
     {
       "id": "translation-coverage",
       "path": "compliance/translation-coverage.v1.json",
-      "sha256": "0ae054d5b1b58510b770b6d0a16d2a4079785f74238ec693d0913efff1f46db0",
+      "sha256": "b5d552388abcce49dd38c1b4399e2bae03cab20433ec37876ac0519a37c32614",
       "status": "active",
       "version": "1.0.0"
     },
@@ -64,15 +64,22 @@
       "version": "1.0.0"
     },
     {
+      "id": "public-proposal-v1",
+      "path": "schemas/public-proposal.v1.schema.json",
+      "sha256": "4630ad6bd1cd94ca72e945dd4cdf5a51fd93c3d5b5287e20ea11ec19382d8c92",
+      "status": "active",
+      "version": "1.1.0"
+    },
+    {
       "id": "public-distribution-contract",
       "path": "docs/architecture/public-distribution.md",
-      "sha256": "8814bf66b8add3e189cf407472dc8af119c3e1e5dd917d3232914335eba03cd8",
+      "sha256": "57b6c704513c4882567133ef406cd3a7355df563f87096f5cdc0ecfb931ceb2d",
       "status": "reference"
     },
     {
       "id": "public-distribution-v2",
       "path": "schemas/public-distribution.v2.schema.json",
-      "sha256": "3fb6445b9770940ab05b6754d4cd69983e4e5f024cf29027dbb84cd446db31d1",
+      "sha256": "87b471dc0bbba4f6242ab4fe74677d7ee254c0181fa4f29b26057601be6f5f7b",
       "status": "active",
       "version": "2.0.0"
     },

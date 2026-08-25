@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "closureId": "issue-0053-public-working-closure-v1",
+  "issue": "https://github.com/yaqub0r/al-isabah/issues/53",
+  "publicationStatus": "public-working",
+  "canonicalPromotion": "blocked",
+  "consumerSchemaVersion": "2.0.0",
+  "proposals": [
+    {
+      "proposalId": "issue-0026-public-proposal-v1",
+      "publicProposal": {
+        "path": "content/public-proposals/issue-0026.public-proposal.json",
+        "sha256": "d3724903dd3ffd8030390415464fcbc9728274f971dd2b774e6384ecda30359c"
+      },
+      "publicReview": {
+        "path": "content/public-proposals/issue-0026.public-review.json",
+        "sha256": "39806b1fac07f7e806fda7d3bd528ae320f1491cbafa43242af1881453dde4ef"
+      },
+      "policyBinding": {
+        "path": "compliance/policy-binding.v1.json",
+        "sha256": "f1ca5fa8303b13e70bbd92aeeb8e5d2a05ba037cf951043b5043262dd2d591e5"
+      },
+      "projection": {
+        "entryCount": 1537,
+        "orderSha256": "69efa02ecc2c277471bd1108ffb4f6f758c3454659814b2ef3f80fce845f667f",
+        "userFacingSha256": "702a3af5543f3c8d83aa45559f62a132300cd6dabe7a3b3428940b73d8493047",
+        "recordsSha256": "cd08afb8b55700fe291bbc1ef0ab3a48b240e849bd4cce7a105e45722fabbc2f"
+      }
+    },
+    {
+      "proposalId": "issue-0053-public-proposal-v1",
+      "publicProposal": {
+        "path": "content/public-proposals/issue-0053.public-proposal.json",
+        "sha256": "b687d09fa0d413a355517fd3e011c375d2b7e97783d54fec13b82f884f0f34df"
+      },
+      "publicReview": {
+        "path": "content/public-proposals/issue-0053.public-review.json",
+        "sha256": "60d6fbed03f8716e89154c6f21910c8078fcd5281a270a491476399da30319cd"
+      },
+      "policyBinding": {
+        "path": "compliance/policy-binding.v2.json",
+        "sha256": "081b4d5903575710d9d7f21db6f978a0e7922b2e93431c1eab2f1a010e3f9ccf"
+      },
+      "projection": {
+        "entryCount": 1497,
+        "orderSha256": "2fc251be44606c0e9f72837ae2404fcfbc129aeac3190dc796d461be644c9126",
+        "userFacingSha256": "872684aaf7ed2ebbc6b78a3500b611321d28475d04d97dc4906ab37a23587423",
+        "recordsSha256": "c70c6158b3ff04b5234610926c5cf2af5201a047a95bbfc54517131fc9327c55"
+      }
+    }
+  ],
+  "sourceAuthorities": [
+    {
+      "sourceId": "openiti-cleaned-arabic-comparison",
+      "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+      "artifactSha256": "bc9db8134c8278973967c91c00324531833f643fc0fb2c8ebe318c9ed4469eea",
+      "license": "CC-BY-NC-SA-4.0",
+      "attributionRequired": true
+    }
+  ],
+  "sourceRegister": {
+    "path": "compliance/source-register.v1.json",
+    "sha256": "939e7d04e6c121633951fa496ad9bfbd037156a4ce38fe570a042f43c58c2444"
+  },
+  "rights": {
+    "path": "compliance/rights-matrix.al-isabah.v1.json",
+    "sha256": "97df0e768ceec261b7c8686cd9d449bcf64b4cf4c0342ba9206f8cfc552f0110",
+    "matrixId": "al-isabah-rights-2026-08-15",
+    "license": "CC-BY-NC-SA-4.0"
+  },
+  "promotion": {
+    "path": "compliance/promotions/available-data.v1.json",
+    "sha256": "b2cb050d877a445b01fc4f83ab48e9b5e1ecb4419200f3357aa5d6e64b74db94",
+    "status": "blocked"
+  },
+  "historicalClosure": {
+    "path": "compliance/publication/issue-0026.release-closure.v1.json",
+    "sha256": "3dba70776b97ae72d690e2db3f993eee39878754678bba329c4248f460738274"
+  },
+  "reviewCounts": {
+    "machinePassed": 2215,
+    "needsAttention": 819,
+    "humanReviewed": 0,
+    "humanUnreviewed": 3034
+  },
+  "outputInventory": [
+    {
+      "path": "records/volume-01.jsonl",
+      "sha256": "cd08afb8b55700fe291bbc1ef0ab3a48b240e849bd4cce7a105e45722fabbc2f",
+      "bytes": 6945696,
+      "recordCount": 1537
+    },
+    {
+      "path": "records/volume-02.jsonl",
+      "sha256": "c70c6158b3ff04b5234610926c5cf2af5201a047a95bbfc54517131fc9327c55",
+      "bytes": 4948485,
+      "recordCount": 1497
+    },
+    {
+      "path": "reviews/issue-0026.json",
+      "sha256": "39806b1fac07f7e806fda7d3bd528ae320f1491cbafa43242af1881453dde4ef",
+      "bytes": 691,
+      "recordCount": 1
+    },
+    {
+      "path": "reviews/issue-0053.json",
+      "sha256": "60d6fbed03f8716e89154c6f21910c8078fcd5281a270a491476399da30319cd",
+      "bytes": 691,
+      "recordCount": 1
+    }
+  ]
+}

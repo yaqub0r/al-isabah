@@ -14,6 +14,7 @@ SAFE_URLS = {
     "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "https://github.com/yaqub0r/al-isabah",
     "https://github.com/yaqub0r/al-isabah/issues/35",
+    "https://github.com/yaqub0r/al-isabah/issues/53",
 }
 PROHIBITED_KEY_FRAGMENTS = {
     "blindtranslation",
@@ -65,6 +66,10 @@ TOKEN_SHAPES = (
     re.compile(r"\b(?:sk|pk)_(?:live|test)_[A-Za-z0-9]{16,}\b"),
     re.compile(r"\bAKIA[A-Z0-9]{16}\b"),
     re.compile(r"\bBearer\s+[A-Za-z0-9._~-]{16,}\b", re.IGNORECASE),
+)
+INTERNAL_ARTIFACT = re.compile(
+    r"(?:^|[/\\])issue-[0-9]{4}\.(?:packet\.json|review\.md)$",
+    re.IGNORECASE,
 )
 
 
@@ -121,6 +126,8 @@ def boundary_errors(value: Any, path: str = "$") -> list[str]:
     elif isinstance(value, str):
         folded = value.casefold()
         if any(marker in folded for marker in PROHIBITED_MARKERS):
+            errors.append(safe_error(path, "internal-marker", value))
+        if INTERNAL_ARTIFACT.search(value):
             errors.append(safe_error(path, "internal-marker", value))
         if WINDOWS_ABSOLUTE.match(value) or UNC_PATH.match(value) or POSIX_ABSOLUTE.match(value):
             errors.append(safe_error(path, "absolute-path", value))
