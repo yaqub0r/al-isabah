@@ -43,6 +43,8 @@ jobs:
           python3 -m json.tool schemas/release-closure.v1.schema.json > /dev/null
           python3 -m json.tool schemas/honorific-formula-registry.v1.schema.json > /dev/null
           python3 -m json.tool schemas/translation-governance-reference.v1.schema.json > /dev/null
+          python3 -m json.tool compliance/translation-coverage.v1.json > /dev/null
+          python3 -m json.tool compliance/policy-binding.v2.json > /dev/null
           python3 -m json.tool profiles/honorific-formulas.v1.json > /dev/null
           python3 -m json.tool docs/contracts/translation-governance-reference.v1.json > /dev/null
 
@@ -72,5 +74,6 @@ jobs:
         run: |
           python3 -m json.tool compliance/schemas/source-register.v1.schema.json > /dev/null
           python3 -m json.tool compliance/schemas/promotion-readiness.v1.schema.json > /dev/null
+          python3 -m json.tool compliance/schemas/translation-coverage.v1.schema.json > /dev/null
           python3 -m json.tool compliance/schemas/book-rights-matrix.v1.schema.json > /dev/null
           python3 -m json.tool compliance/rights-matrix.al-isabah.v1.json > /dev/null

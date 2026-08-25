@@ -1,0 +1,76 @@
+{
+  "schema": "al-isabah.translation-coverage.v1",
+  "schema_version": "1.0.0",
+  "status_id": "translation-coverage-2026-08-25",
+  "work_id": "ibn-hajar-al-isabah",
+  "policy_binding": "compliance/policy-binding.v2.json",
+  "semantics": {
+    "completion_scope": "locked-volume-or-cohort-revision",
+    "agent_complete_requirements": [
+      "all-applicable-autonomous-stages-exhausted",
+      "locked-scope-has-structured-english",
+      "machine-validation-complete",
+      "review-presentation-ready",
+      "zero-remaining-agent-units"
+    ],
+    "human_review_relation": "independent-ongoing-management-state",
+    "human_review_edits_reopen_completion": false,
+    "reopen_triggers": [
+      "locked-scope-expanded",
+      "bound-source-or-policy-stale",
+      "machine-actionable-substantive-defect"
+    ]
+  },
+  "scopes": [
+    {
+      "scope_id": "volume-01",
+      "scope_kind": "volume",
+      "label": "Volume 1",
+      "volume": 1,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 1537,
+        "translated_units": 1537,
+        "remaining_agent_units": 0,
+        "basis": "issue-0026-machine-ready-public-proposal",
+        "evidence": {
+          "source_register_artifact": "issue-0026-public-proposal-v1",
+          "sha256": "d3724903dd3ffd8030390415464fcbc9728274f971dd2b774e6384ecda30359c"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 1537
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "available",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "volume-08",
+      "scope_kind": "volume",
+      "label": "Volume 8",
+      "volume": 8,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 1550,
+        "translated_units": 1550,
+        "remaining_agent_units": 0,
+        "basis": "legacy-machine-validated-volume-draft-with-review-presentation",
+        "evidence": {
+          "source_register_artifact": "volume-08-structured-english",
+          "sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 1550
+      },
+      "workflow_conformance": "legacy_audit_required",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    }
+  ]
+}

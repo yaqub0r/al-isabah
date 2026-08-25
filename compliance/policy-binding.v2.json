@@ -1,0 +1,33 @@
+{
+  "schema": "al-isabah.local-policy-binding.v2",
+  "authority": {
+    "repository": "https://github.com/yaqub0r/al-isabah",
+    "scope": "repository-local",
+    "issue": "https://github.com/yaqub0r/al-isabah/issues/51"
+  },
+  "contracts": [
+    {
+      "id": "translation-quality-workflow",
+      "path": "docs/contracts/translation-quality-workflow.md",
+      "sha256": "3628747b1676f1dfd4f0c7b6988d4d722ed196abe00f2f77587a24cd4e45fb02"
+    },
+    {
+      "id": "al-isabah-translation-profile",
+      "path": "docs/translation-profiles/al-isabah.md",
+      "sha256": "02ab10c499353dd0736f16f7d9831e5abbcef32577a5f38e50a9cce738b86516"
+    },
+    {
+      "id": "entry-title-structure",
+      "path": "docs/contracts/entry-title-structure.md",
+      "sha256": "4540032c15f622d2811191b13e3fdcbfc031ea0b0d5a1762197d040ad5f6c1a9"
+    },
+    {
+      "id": "translation-source-profile",
+      "path": "profiles/translation-source.v1.json",
+      "sha256": "c3db1e037a9f98ed7c6ada57d076084e5451c5651ed972ea68867ed5ad580ead"
+    }
+  ],
+  "supersedes": "compliance/policy-binding.v1.json",
+  "applied_by_issue": "https://github.com/yaqub0r/al-isabah/issues/51",
+  "note": "This binding makes agent completion independent from ongoing human review while preserving every scholarly, compliance, and promotion gate; it is not a legal opinion."
+}

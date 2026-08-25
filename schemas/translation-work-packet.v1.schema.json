@@ -113,7 +113,7 @@
       "additionalProperties": false,
       "required": ["bindingPath", "bindingSha256", "contracts"],
       "properties": {
-        "bindingPath": { "const": "compliance/policy-binding.v1.json" },
+        "bindingPath": { "const": "compliance/policy-binding.v2.json" },
         "bindingSha256": { "$ref": "#/$defs/sha256" },
         "contracts": {
           "type": "array",

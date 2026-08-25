@@ -135,7 +135,11 @@ The established pipeline implements the general state machine as follows:
    across reruns;
 9. generate the publicly consumable bilingual reading presentation from
    validated JSONL; and
-10. publish a machine-readiness record only after all preceding checks pass.
+10. publish a machine-readiness record only after all preceding checks pass;
+    and
+11. mark the locked volume or cohort `agent_complete` only when every scoped
+    unit has reached that state and the aggregate reports zero remaining agent
+    units.
 
 The existing `al-isabah-reading-a3b76bf-v3` corpus predates this invariant and
 is explicitly promotion-blocked private research material. It must not be made
@@ -178,6 +182,21 @@ include/exclude decisions, and source spans across Volumes 1-8.
 Both shapes produce the same entry and segment contracts. A cohort is therefore
 an incremental coverage view, not a competing corpus, and later work can fill
 gaps without changing stable identities.
+
+Agent completion is an aggregate property of a locked volume or cohort, not a
+human-approval claim. Once the autonomous workflow has exhausted the locked
+scope and produced its review presentation, that scope is done even when every
+record is still `unreviewed`. Human review coverage, current-policy conformance,
+public-working availability, compliance, and canonical promotion remain
+independent dimensions.
+
+The machine-readable
+[`translation-coverage.v1`](../../compliance/translation-coverage.v1.json)
+record is the current authority for aggregate completion. It classifies the
+existing Volume 1 and Volume 8 translations as agent-complete while preserving
+their different provenance and publication states. Volume 8 remains a legacy
+completion that requires a current-policy audit before canonical promotion;
+that compliance limitation does not erase the completed translation work.
 
 ## Al-Isabah-specific quality targets
 
@@ -229,7 +248,9 @@ restricted evidence without copying that evidence into the public
 presentation.
 
 Human approval is append-only review evidence. It does not erase uncertainties,
-alter canonical Arabic, or directly publish a release.
+alter canonical Arabic, directly publish a release, or decide whether a locked
+scope is agent-complete. Reviewer corrections create a new immutable revision
+without retroactively making the earlier completed revision incomplete.
 
 ## Promotion boundary
 

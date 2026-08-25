@@ -11,10 +11,12 @@ into an English candidate that is ready for human scholarly review. Its core
 quality model is reusable, while the local Al-Isabah profile tightens the
 requirements for this work and must not weaken them.
 
-The workflow optimizes for traceable accuracy, not fluent output alone. Human
-review is the last scholarly quality gate. The project must exhaust the applicable
-autonomous checks and witnesses before asking a reviewer to inspect the work.
-A reviewer receives a bounded evidence package, not an unexplained text dump.
+The workflow optimizes for traceable accuracy, not fluent output alone. The
+project must exhaust the applicable autonomous checks and witnesses before
+asking a reviewer to inspect the work. A reviewer receives a bounded evidence
+package, not an unexplained text dump. Human review remains a scholarly and
+canonical-promotion gate, but it is not part of the definition of whether the
+agent has finished translating a locked scope.
 
 ## Ownership boundary
 
@@ -118,9 +120,39 @@ source_locked
   -> adjudication_complete
   -> machine_validation_complete
   -> review_presentation_ready
-  -> human_review
-  -> promotion_eligible
+  -> agent_complete
 ```
+
+After `agent_complete`, three independent lifecycle dimensions continue:
+
+```text
+human_review: ongoing per-record management and correction
+compliance: blocked | eligible
+canonical_promotion: blocked | promoted
+```
+
+### Agent completion
+
+A locked volume or cohort is **done** at `agent_complete` when every applicable
+autonomous stage has been exhausted, every substantive unit in the locked scope
+has structured English, machine validation has passed or preserved a genuinely
+human-only finding as `needs_attention`, and the bilingual review presentation
+is ready. The aggregate completion record must report the locked, translated,
+and remaining agent-unit counts and must keep human-review coverage in a
+separate object.
+
+`agent_complete` does not mean human-approved, canonically promoted, free of
+recorded uncertainty, or legally cleared for a new use. Conversely, zero human
+reviews does not make an agent-complete scope incomplete. Human review is an
+ongoing management state that may correct an agent-complete work product through
+the normal immutable correction and supersession cycle.
+
+A human review edit or an increase in review coverage does not itself reopen
+agent work. A new agent revision is required only when there is newly available
+machine-actionable work: the locked scope expands, a bound source or policy
+input becomes stale, or a substantive defect is identified that the autonomous
+workflow can address. Earlier completion evidence remains in history while the
+new revision is in progress.
 
 ### 1. Source lock
 
@@ -303,16 +335,19 @@ The reviewer handoff includes:
 - stage, coverage, model, witness, and provenance summaries; and
 - a searchable durable name and mention index when names are in scope.
 
-Only this state opens human review. Automation may mark machine assessment
-complete or needing attention; it must never set `reviewed` or `verified`.
+Only this state opens human review. When it covers every unit in the locked
+volume or cohort, the aggregate scope becomes `agent_complete`. Automation may
+mark machine assessment complete or needing attention; it must never set
+`reviewed` or `verified`.
 
 ### 10. Human review and promotion
 
 Human review records reviewer identity, scope, date, decisions, and unresolved
-flags. Approval makes a record eligible for local compliance and canonical
-promotion; it does not perform promotion itself. Promotion follows the local
-promotion-readiness record, canonical publication model, and independent
-repository validation.
+flags as ongoing management of an already agent-complete work product. Approval
+makes a record eligible for local compliance and canonical promotion; it does
+not perform promotion itself and it does not determine agent completion.
+Promotion follows the local promotion-readiness record, canonical publication
+model, and independent repository validation.
 
 Human review may improve or approve a publicly consumable working record, but
 it must never be used to retroactively legalize restricted source expression.

@@ -68,9 +68,10 @@ hiding them with fluent wording.
 
 All contracts needed to make Al-Isabah translation decisions must remain local
 to this repository and integrity-bound by
-`compliance/policy-binding.v1.json`. A translation change may use restricted
-evidence in approved external storage, but it must not depend on policy text in
-another repository. Run `python -m unittest discover -s tests` before delivery;
+`compliance/policy-binding.v2.json`. The v1 binding remains immutable release
+provenance for earlier public-working artifacts. A translation change may use
+restricted evidence in approved external storage, but it must not depend on
+policy text in another repository. Run `python -m unittest discover -s tests` before delivery;
 the suite fails when a required local policy file is missing or altered without
 updating its reviewed binding.
 

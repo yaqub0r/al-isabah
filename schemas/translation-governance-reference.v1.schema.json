@@ -56,12 +56,16 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
+        "agentCompletionScope",
+        "agentCompletionIndependentOfHumanReview",
         "humanReviewScope",
         "humanReviewChangesReleaseClass",
         "immutableCycleChangeKinds",
         "correctionMode"
       ],
       "properties": {
+        "agentCompletionScope": { "const": "locked-volume-or-cohort-revision" },
+        "agentCompletionIndependentOfHumanReview": { "const": true },
         "humanReviewScope": { "const": "per-record-metadata-and-confidence" },
         "humanReviewChangesReleaseClass": { "const": false },
         "immutableCycleChangeKinds": {
