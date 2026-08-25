@@ -26,7 +26,7 @@ from typing import Any, Iterable
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_MANIFEST = ROOT / "profiles" / "translation-source.v1.json"
-DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v1.json"
+DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v2.json"
 DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v1.schema.json"
 FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 RUNTIME_ROOT = ROOT / ".runtime" / "translation"
@@ -1543,7 +1543,7 @@ def load_issue(number: int, path: Path | None = None) -> dict[str, Any]:
 
 def policy_snapshot(policy_path: Path) -> dict[str, Any]:
     policy = load_json(policy_path)
-    if policy.get("schema") != "al-isabah.local-policy-binding.v1":
+    if policy.get("schema") != "al-isabah.local-policy-binding.v2":
         raise WorkflowError("policy binding has an unexpected schema")
     authority = policy.get("authority", {})
     if authority.get("repository") != "https://github.com/yaqub0r/al-isabah":
@@ -1567,7 +1567,7 @@ def policy_snapshot(policy_path: Path) -> dict[str, Any]:
         if canonical_text_sha256(path) != contract.get("sha256"):
             raise WorkflowError(f"policy binding hash is stale: {contract.get('id')}")
     return {
-        "bindingPath": "compliance/policy-binding.v1.json",
+        "bindingPath": "compliance/policy-binding.v2.json",
         "bindingSha256": canonical_text_sha256(policy_path),
         "contracts": contracts,
     }

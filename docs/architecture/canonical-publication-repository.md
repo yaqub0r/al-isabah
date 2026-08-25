@@ -30,6 +30,12 @@ The repository owns:
   a release; and
 - immutable release identifiers, source commits, manifests, and change history.
 
+Aggregate translation completion is distinct from scholarly management. A
+locked volume or cohort is `agent_complete` after all applicable autonomous
+translation stages are exhausted with zero remaining agent units. Human review
+then continues per record and may produce corrections indefinitely; its
+coverage does not determine or erase the completion state.
+
 The public record must distinguish the witness used as a translation or
 transcription base from witnesses consulted only for comparison. It should
 contain enough non-sensitive provenance to audit a released record without
@@ -88,13 +94,15 @@ The application-neutral handoff is defined by the
 immutable contract rather than inspecting translation packets or depending on
 the repository's internal working layout.
 
-Consumers discover the governing policy set through the versioned
+Consumers discover the governing policy set and aggregate translation coverage
+through the versioned
 [translation-governance reference](../contracts/translation-governance-reference.v1.json)
-and pin it at an immutable repository commit. That reference records the
-active policy and formula-registry hashes without replacing the public
-distribution schema. Human review remains per-record metadata and confidence,
-not a release class; incremental translations, corrections, and review
-coverage use the same immutable release and supersession cycle.
+and pin it at an immutable repository commit. That reference records the active
+policy, formula-registry, and translation-coverage hashes without replacing the
+public distribution schema. Human review remains per-record metadata and
+confidence, not a release class or translation-completion test; incremental
+translations, corrections, and review coverage use the same immutable release
+and supersession cycle.
 
 Public-working handoff now begins with a strict public proposal, not an internal
 translation-work packet. The [issue 0026 boundary decision](public-boundary-remediation.md)

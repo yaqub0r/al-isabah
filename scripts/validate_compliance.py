@@ -15,7 +15,9 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 REGISTER_PATH = ROOT / "compliance" / "source-register.v1.json"
 PROMOTION_PATH = ROOT / "compliance" / "promotions" / "available-data.v1.json"
-POLICY_PATH = ROOT / "compliance" / "policy-binding.v1.json"
+POLICY_PATH = ROOT / "compliance" / "policy-binding.v2.json"
+LEGACY_POLICY_PATH = ROOT / "compliance" / "policy-binding.v1.json"
+COVERAGE_PATH = ROOT / "compliance" / "translation-coverage.v1.json"
 RETIREMENT_PATH = ROOT / "compliance" / "research-retirement.v1.json"
 RIGHTS_MATRIX_PATH = ROOT / "compliance" / "rights-matrix.al-isabah.v1.json"
 GOVERNANCE_REFERENCE_PATH = (
@@ -49,7 +51,7 @@ REQUIRED_POLICIES = {
 }
 REQUIRED_GOVERNANCE_ARTIFACTS = {
     "policy-binding": (
-        "compliance/policy-binding.v1.json",
+        "compliance/policy-binding.v2.json",
         "active",
         None,
     ),
@@ -77,6 +79,16 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
         "profiles/honorific-formulas.v1.json",
         "active",
         "1.2.0",
+    ),
+    "translation-coverage": (
+        "compliance/translation-coverage.v1.json",
+        "active",
+        "1.0.0",
+    ),
+    "translation-coverage-schema": (
+        "compliance/schemas/translation-coverage.v1.schema.json",
+        "active",
+        "1.0.0",
     ),
     "public-distribution-contract": (
         "docs/architecture/public-distribution.md",
@@ -143,6 +155,35 @@ REQUIRED_RIGHTS_SOURCES = {
 PUBLIC_CORPUS_ID = "al-isabah-public-working-corpus-openiti-5835c18-v1"
 OPENITI_COMMIT = "5835c183b8bbf4ea454d5c1be2b168b669403771"
 OPENITI_SHA256 = "bc9db8134c8278973967c91c00324531833f643fc0fb2c8ebe318c9ed4469eea"
+LEGACY_POLICY_SHA256 = "f1ca5fa8303b13e70bbd92aeeb8e5d2a05ba037cf951043b5043262dd2d591e5"
+AGENT_COMPLETE_REQUIREMENTS = [
+    "all-applicable-autonomous-stages-exhausted",
+    "locked-scope-has-structured-english",
+    "machine-validation-complete",
+    "review-presentation-ready",
+    "zero-remaining-agent-units",
+]
+AGENT_REOPEN_TRIGGERS = [
+    "locked-scope-expanded",
+    "bound-source-or-policy-stale",
+    "machine-actionable-substantive-defect",
+]
+REQUIRED_COMPLETION_SCOPES = {
+    "volume-01": {
+        "volume": 1,
+        "artifact": "issue-0026-public-proposal-v1",
+        "units": 1537,
+        "workflow_conformance": "current",
+        "public_working_status": "available",
+    },
+    "volume-08": {
+        "volume": 8,
+        "artifact": "volume-08-structured-english",
+        "units": 1550,
+        "workflow_conformance": "legacy_audit_required",
+        "public_working_status": "blocked",
+    },
+}
 
 
 class ComplianceError(ValueError):
@@ -181,8 +222,12 @@ def _walk(value: Any, location: str = "$") -> list[str]:
 
 def validate_policy(policy: dict[str, Any]) -> list[str]:
     errors: list[str] = []
-    if policy.get("schema") != "al-isabah.local-policy-binding.v1":
+    if policy.get("schema") != "al-isabah.local-policy-binding.v2":
         errors.append("policy: unexpected schema")
+    if policy.get("supersedes") != "compliance/policy-binding.v1.json":
+        errors.append("policy: v2 must supersede the immutable v1 binding")
+    if canonical_text_sha256(LEGACY_POLICY_PATH) != LEGACY_POLICY_SHA256:
+        errors.append("policy: immutable v1 release binding has changed")
     authority = policy.get("authority")
     if not isinstance(authority, dict):
         errors.append("policy: authority must be an object")
@@ -288,6 +333,189 @@ def validate_formula_registry(registry: dict[str, Any]) -> list[str]:
                 errors.append(f"{location}.source: duplicate formula source")
             seen_sources.add(source)
     errors.extend(_walk(registry, "formula_registry"))
+    return errors
+
+
+def validate_translation_coverage(
+    coverage: dict[str, Any], artifacts: dict[str, dict[str, Any]]
+) -> list[str]:
+    errors: list[str] = []
+    expected_top_level = {
+        "schema",
+        "schema_version",
+        "status_id",
+        "work_id",
+        "policy_binding",
+        "semantics",
+        "scopes",
+    }
+    if set(coverage) != expected_top_level:
+        errors.append("translation coverage: fields do not match the v1 contract")
+    if coverage.get("schema") != "al-isabah.translation-coverage.v1":
+        errors.append("translation coverage: unexpected schema")
+    if coverage.get("schema_version") != "1.0.0":
+        errors.append("translation coverage: unexpected schema version")
+    if coverage.get("work_id") != "ibn-hajar-al-isabah":
+        errors.append("translation coverage: unexpected work")
+    if coverage.get("policy_binding") != "compliance/policy-binding.v2.json":
+        errors.append("translation coverage: policy binding is incorrect")
+    if not re.fullmatch(
+        r"translation-coverage-[0-9]{4}-[0-9]{2}-[0-9]{2}",
+        str(coverage.get("status_id", "")),
+    ):
+        errors.append("translation coverage: status ID is invalid")
+
+    expected_semantics = {
+        "completion_scope": "locked-volume-or-cohort-revision",
+        "agent_complete_requirements": AGENT_COMPLETE_REQUIREMENTS,
+        "human_review_relation": "independent-ongoing-management-state",
+        "human_review_edits_reopen_completion": False,
+        "reopen_triggers": AGENT_REOPEN_TRIGGERS,
+    }
+    if coverage.get("semantics") != expected_semantics:
+        errors.append("translation coverage: completion semantics are incorrect")
+
+    scopes: dict[str, dict[str, Any]] = {}
+    raw_scopes = coverage.get("scopes")
+    if not isinstance(raw_scopes, list):
+        errors.append("translation coverage: scopes must be a list")
+        raw_scopes = []
+    expected_scope_fields = {
+        "scope_id",
+        "scope_kind",
+        "label",
+        "volume",
+        "agent_completion",
+        "human_review",
+        "workflow_conformance",
+        "public_working_status",
+        "canonical_promotion",
+    }
+    expected_completion_fields = {
+        "status",
+        "locked_units",
+        "translated_units",
+        "remaining_agent_units",
+        "basis",
+        "evidence",
+    }
+    expected_evidence_fields = {"source_register_artifact", "sha256"}
+    expected_review_fields = {
+        "management_state",
+        "reviewed_units",
+        "unreviewed_units",
+    }
+    for index, scope in enumerate(raw_scopes):
+        location = f"translation coverage.scopes[{index}]"
+        if not isinstance(scope, dict):
+            errors.append(f"{location}: must be an object")
+            continue
+        if set(scope) != expected_scope_fields:
+            errors.append(f"{location}: fields do not match the v1 contract")
+        scope_id = scope.get("scope_id")
+        if not isinstance(scope_id, str) or not scope_id:
+            errors.append(f"{location}.scope_id: is required")
+            continue
+        if scope_id in scopes:
+            errors.append(f"{location}.scope_id: duplicate {scope_id}")
+        scopes[scope_id] = scope
+        if scope.get("scope_kind") not in {"volume", "cohort"}:
+            errors.append(f"{location}.scope_kind: is invalid")
+        if not isinstance(scope.get("label"), str) or not scope["label"].strip():
+            errors.append(f"{location}.label: is required")
+        if not isinstance(scope.get("volume"), int) or not 1 <= scope["volume"] <= 8:
+            errors.append(f"{location}.volume: must be between 1 and 8")
+
+        completion = scope.get("agent_completion")
+        if not isinstance(completion, dict):
+            errors.append(f"{location}.agent_completion: must be an object")
+            completion = {}
+        elif set(completion) != expected_completion_fields:
+            errors.append(
+                f"{location}.agent_completion: fields do not match the v1 contract"
+            )
+        status = completion.get("status")
+        if status not in {"not_started", "in_progress", "agent_complete", "reopened"}:
+            errors.append(f"{location}.agent_completion.status: is invalid")
+        counts = [
+            completion.get("locked_units"),
+            completion.get("translated_units"),
+            completion.get("remaining_agent_units"),
+        ]
+        if not all(isinstance(value, int) and not isinstance(value, bool) and value >= 0 for value in counts):
+            errors.append(f"{location}.agent_completion: counts must be non-negative integers")
+        elif counts[1] + counts[2] != counts[0]:
+            errors.append(f"{location}.agent_completion: translated and remaining units must equal locked units")
+        if status == "agent_complete" and (
+            completion.get("translated_units") != completion.get("locked_units")
+            or completion.get("remaining_agent_units") != 0
+        ):
+            errors.append(
+                f"{location}.agent_completion: agent_complete requires full coverage and zero remaining agent units"
+            )
+        if not isinstance(completion.get("basis"), str) or not completion["basis"].strip():
+            errors.append(f"{location}.agent_completion.basis: is required")
+
+        evidence = completion.get("evidence")
+        if not isinstance(evidence, dict):
+            errors.append(f"{location}.agent_completion.evidence: must be an object")
+            evidence = {}
+        elif set(evidence) != expected_evidence_fields:
+            errors.append(
+                f"{location}.agent_completion.evidence: fields do not match the v1 contract"
+            )
+        artifact_id = evidence.get("source_register_artifact")
+        artifact = artifacts.get(str(artifact_id))
+        if artifact is None:
+            errors.append(f"{location}.agent_completion.evidence: artifact is not registered")
+        else:
+            integrity = artifact.get("integrity", {})
+            registered_sha = integrity.get("sha256", integrity.get("proposal_sha256"))
+            if evidence.get("sha256") != registered_sha:
+                errors.append(f"{location}.agent_completion.evidence: hash differs from source register")
+
+        review = scope.get("human_review")
+        if not isinstance(review, dict):
+            errors.append(f"{location}.human_review: must be an object")
+            review = {}
+        elif set(review) != expected_review_fields:
+            errors.append(f"{location}.human_review: fields do not match the v1 contract")
+        if review.get("management_state") != "ongoing":
+            errors.append(f"{location}.human_review.management_state: must remain ongoing")
+        review_counts = [review.get("reviewed_units"), review.get("unreviewed_units")]
+        if not all(isinstance(value, int) and not isinstance(value, bool) and value >= 0 for value in review_counts):
+            errors.append(f"{location}.human_review: counts must be non-negative integers")
+        elif isinstance(completion.get("locked_units"), int) and sum(review_counts) != completion["locked_units"]:
+            errors.append(f"{location}.human_review: review coverage must equal locked units")
+        if scope.get("workflow_conformance") not in {"current", "legacy_audit_required"}:
+            errors.append(f"{location}.workflow_conformance: is invalid")
+        if scope.get("public_working_status") not in {"available", "blocked"}:
+            errors.append(f"{location}.public_working_status: is invalid")
+        if scope.get("canonical_promotion") not in {"blocked", "eligible", "promoted"}:
+            errors.append(f"{location}.canonical_promotion: is invalid")
+
+    if set(scopes) != set(REQUIRED_COMPLETION_SCOPES):
+        errors.append("translation coverage: exact current volume inventory is required")
+    for scope_id, expected in REQUIRED_COMPLETION_SCOPES.items():
+        scope = scopes.get(scope_id)
+        if scope is None:
+            continue
+        completion = scope.get("agent_completion", {})
+        evidence = completion.get("evidence", {})
+        if (
+            scope.get("scope_kind") != "volume"
+            or scope.get("volume") != expected["volume"]
+            or completion.get("status") != "agent_complete"
+            or completion.get("locked_units") != expected["units"]
+            or completion.get("translated_units") != expected["units"]
+            or completion.get("remaining_agent_units") != 0
+            or evidence.get("source_register_artifact") != expected["artifact"]
+            or scope.get("workflow_conformance") != expected["workflow_conformance"]
+            or scope.get("public_working_status") != expected["public_working_status"]
+        ):
+            errors.append(f"translation coverage: {scope_id} completion evidence is incorrect")
+
+    errors.extend(_walk(coverage, "translation_coverage"))
     return errors
 
 
@@ -398,6 +626,8 @@ def validate_translation_governance(
         errors.append("governance reference: formula registry version is stale")
 
     expected_release_semantics = {
+        "agentCompletionScope": "locked-volume-or-cohort-revision",
+        "agentCompletionIndependentOfHumanReview": True,
         "humanReviewScope": "per-record-metadata-and-confidence",
         "humanReviewChangesReleaseClass": False,
         "immutableCycleChangeKinds": [
@@ -830,6 +1060,7 @@ def validate_all(
     rights_matrix: dict[str, Any] | None = None,
     governance_reference: dict[str, Any] | None = None,
     formula_registry: dict[str, Any] | None = None,
+    translation_coverage: dict[str, Any] | None = None,
 ) -> list[str]:
     errors = validate_policy(policy)
     governance_reference = (
@@ -851,6 +1082,12 @@ def validate_all(
     )
     register_errors, artifacts = validate_register(register)
     errors.extend(register_errors)
+    translation_coverage = (
+        load_json(COVERAGE_PATH)
+        if translation_coverage is None
+        else translation_coverage
+    )
+    errors.extend(validate_translation_coverage(translation_coverage, artifacts))
     errors.extend(validate_promotion(promotion, artifacts))
     if retirement is not None:
         errors.extend(validate_retirement(retirement))
@@ -876,6 +1113,11 @@ def main(argv: list[str] | None = None) -> int:
         type=Path,
         default=FORMULA_REGISTRY_PATH,
     )
+    parser.add_argument(
+        "--translation-coverage",
+        type=Path,
+        default=COVERAGE_PATH,
+    )
     args = parser.parse_args(argv)
 
     policy = load_json(args.policy)
@@ -885,6 +1127,7 @@ def main(argv: list[str] | None = None) -> int:
     rights_matrix = load_json(args.rights_matrix)
     governance_reference = load_json(args.governance_reference)
     formula_registry = load_json(args.formula_registry)
+    translation_coverage = load_json(args.translation_coverage)
     errors = validate_all(
         policy,
         register,
@@ -893,6 +1136,7 @@ def main(argv: list[str] | None = None) -> int:
         rights_matrix,
         governance_reference,
         formula_registry,
+        translation_coverage,
     )
     if errors:
         for error in errors:

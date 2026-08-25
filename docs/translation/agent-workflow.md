@@ -19,11 +19,19 @@ The repository contract remains authoritative. Read, in order:
 clone -> doctor -> hydrate -> claim -> prepare
       -> blind translate -> independent critique -> witness resolution
       -> adjudicate -> reconcile names -> render/finalize -> submit -> pull request
+      -> aggregate agent-complete status for the locked scope
 ```
 
 Human review is deliberately absent from the agent stages. A valid submission
 must still say `unreviewed`; the pull request makes the machine-ready evidence
 available for the later human gate.
+
+When every substantive unit in the claimed volume or cohort has passed these
+agent stages and the aggregate has zero remaining agent units, the scope is
+`agent_complete`—the repository term for translation work being done. Human
+review then continues as an independent management state. Review coverage or a
+reviewer edit does not unset completion; a later machine-actionable correction
+is a new revision with its own completion evidence.
 
 ## 1. Check the checkout
 
@@ -202,7 +210,9 @@ python scripts/translation_workflow.py validate \
 
 `render` creates an English-first bilingual Markdown review surface beside the
 packet, records its hash, and sets machine readiness only after all prior gates
-pass. It does not set human approval.
+pass. It does not set human approval. Machine readiness is per packet; the
+aggregate translation-coverage record may declare a volume or cohort
+`agent_complete` only after every unit in its locked inventory is machine-ready.
 
 ## 7. Prepare the pull-request artifacts
 
@@ -223,8 +233,9 @@ downloaded sources, private witnesses, or model traces.
 
 The pull request references the assignment issue without closing it unless the
 complete assigned range is present and valid. Machine-ready does not mean
-canonical. Human review, compliance approval, canonical ID allocation, and
-promotion remain later, independently recorded gates.
+canonical. A fully covered machine-ready scope is agent-complete even while
+human review remains open. Human review, compliance approval, canonical ID
+allocation, and promotion remain later, independently recorded gates.
 
 ## Recovery and parallel work
 

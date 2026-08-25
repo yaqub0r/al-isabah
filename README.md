@@ -46,6 +46,14 @@ validation, and readable-presentation step. The local compliance validator
 integrity-checks these policy files so a fresh clone cannot silently depend on
 translation rules stored in another repository.
 
+For project planning, a locked volume or cohort is **done** when those autonomous
+stages are exhausted for every scoped unit and the aggregate status is
+`agent_complete`. Human review is a separate, ongoing management state: zero
+human reviews does not make a completed translation incomplete, and later
+reviewer corrections use the immutable revision cycle. Aggregate completion and
+review coverage are recorded in
+[`compliance/translation-coverage.v1.json`](compliance/translation-coverage.v1.json).
+
 The [agent translation runbook](docs/translation/agent-workflow.md) turns that
 contract into one distributable path that requires no downstream application checkout or model
 API key:

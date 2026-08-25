@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/compliance/schemas/translation-coverage.v1.schema.json",
+  "title": "Al-Isabah aggregate translation coverage v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "schema_version",
+    "status_id",
+    "work_id",
+    "policy_binding",
+    "semantics",
+    "scopes"
+  ],
+  "properties": {
+    "schema": { "const": "al-isabah.translation-coverage.v1" },
+    "schema_version": { "const": "1.0.0" },
+    "status_id": { "type": "string", "pattern": "^translation-coverage-[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+    "work_id": { "const": "ibn-hajar-al-isabah" },
+    "policy_binding": { "const": "compliance/policy-binding.v2.json" },
+    "semantics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "completion_scope",
+        "agent_complete_requirements",
+        "human_review_relation",
+        "human_review_edits_reopen_completion",
+        "reopen_triggers"
+      ],
+      "properties": {
+        "completion_scope": { "const": "locked-volume-or-cohort-revision" },
+        "agent_complete_requirements": {
+          "const": [
+            "all-applicable-autonomous-stages-exhausted",
+            "locked-scope-has-structured-english",
+            "machine-validation-complete",
+            "review-presentation-ready",
+            "zero-remaining-agent-units"
+          ]
+        },
+        "human_review_relation": { "const": "independent-ongoing-management-state" },
+        "human_review_edits_reopen_completion": { "const": false },
+        "reopen_triggers": {
+          "const": [
+            "locked-scope-expanded",
+            "bound-source-or-policy-stale",
+            "machine-actionable-substantive-defect"
+          ]
+        }
+      }
+    },
+    "scopes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "scope_id",
+          "scope_kind",
+          "label",
+          "volume",
+          "agent_completion",
+          "human_review",
+          "workflow_conformance",
+          "public_working_status",
+          "canonical_promotion"
+        ],
+        "properties": {
+          "scope_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "scope_kind": { "enum": ["volume", "cohort"] },
+          "label": { "type": "string", "minLength": 1 },
+          "volume": { "type": "integer", "minimum": 1, "maximum": 8 },
+          "agent_completion": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "status",
+              "locked_units",
+              "translated_units",
+              "remaining_agent_units",
+              "basis",
+              "evidence"
+            ],
+            "properties": {
+              "status": { "enum": ["not_started", "in_progress", "agent_complete", "reopened"] },
+              "locked_units": { "type": "integer", "minimum": 0 },
+              "translated_units": { "type": "integer", "minimum": 0 },
+              "remaining_agent_units": { "type": "integer", "minimum": 0 },
+              "basis": { "type": "string", "minLength": 1 },
+              "evidence": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["source_register_artifact", "sha256"],
+                "properties": {
+                  "source_register_artifact": { "type": "string", "minLength": 1 },
+                  "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+                }
+              }
+            }
+          },
+          "human_review": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["management_state", "reviewed_units", "unreviewed_units"],
+            "properties": {
+              "management_state": { "const": "ongoing" },
+              "reviewed_units": { "type": "integer", "minimum": 0 },
+              "unreviewed_units": { "type": "integer", "minimum": 0 }
+            }
+          },
+          "workflow_conformance": { "enum": ["current", "legacy_audit_required"] },
+          "public_working_status": { "enum": ["available", "blocked"] },
+          "canonical_promotion": { "enum": ["blocked", "eligible", "promoted"] }
+        }
+      }
+    }
+  }
+}

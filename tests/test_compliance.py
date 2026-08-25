@@ -25,6 +25,7 @@ class ComplianceTests(unittest.TestCase):
             MODULE.GOVERNANCE_REFERENCE_PATH
         )
         cls.formula_registry = MODULE.load_json(MODULE.FORMULA_REGISTRY_PATH)
+        cls.translation_coverage = MODULE.load_json(MODULE.COVERAGE_PATH)
 
     def validate(
         self,
@@ -35,6 +36,7 @@ class ComplianceTests(unittest.TestCase):
         rights_matrix=None,
         governance_reference=None,
         formula_registry=None,
+        translation_coverage=None,
     ):
         return MODULE.validate_all(
             copy.deepcopy(self.policy if policy is None else policy),
@@ -53,6 +55,11 @@ class ComplianceTests(unittest.TestCase):
                 self.formula_registry
                 if formula_registry is None
                 else formula_registry
+            ),
+            copy.deepcopy(
+                self.translation_coverage
+                if translation_coverage is None
+                else translation_coverage
             ),
         )
 
@@ -160,6 +167,53 @@ class ComplianceTests(unittest.TestCase):
         self.assertIn(
             "governance reference: release semantics are incorrect",
             self.validate(governance_reference=reference),
+        )
+
+    def test_agent_completion_is_independent_of_human_review_coverage(self):
+        coverage = copy.deepcopy(self.translation_coverage)
+        volume_one = next(
+            scope for scope in coverage["scopes"] if scope["scope_id"] == "volume-01"
+        )
+        volume_one["human_review"]["reviewed_units"] = 1
+        volume_one["human_review"]["unreviewed_units"] = 1536
+        self.assertEqual(self.validate(translation_coverage=coverage), [])
+        self.assertEqual(
+            volume_one["agent_completion"]["status"], "agent_complete"
+        )
+
+    def test_agent_complete_requires_zero_remaining_agent_units(self):
+        coverage = copy.deepcopy(self.translation_coverage)
+        volume_one = next(
+            scope for scope in coverage["scopes"] if scope["scope_id"] == "volume-01"
+        )
+        volume_one["agent_completion"]["translated_units"] = 1536
+        volume_one["agent_completion"]["remaining_agent_units"] = 1
+        errors = self.validate(translation_coverage=coverage)
+        self.assertTrue(
+            any(
+                "agent_complete requires full coverage and zero remaining agent units"
+                in error
+                for error in errors
+            ),
+            errors,
+        )
+
+    def test_human_review_cannot_be_made_a_completion_trigger(self):
+        coverage = copy.deepcopy(self.translation_coverage)
+        coverage["semantics"]["human_review_edits_reopen_completion"] = True
+        self.assertIn(
+            "translation coverage: completion semantics are incorrect",
+            self.validate(translation_coverage=coverage),
+        )
+
+    def test_completion_evidence_must_match_the_source_register(self):
+        coverage = copy.deepcopy(self.translation_coverage)
+        coverage["scopes"][0]["agent_completion"]["evidence"]["sha256"] = "0" * 64
+        self.assertTrue(
+            any(
+                "hash differs from source register" in error
+                for error in self.validate(translation_coverage=coverage)
+            )
         )
 
     def test_governance_reference_requires_the_sabiqah_deprecation_inventory(self):

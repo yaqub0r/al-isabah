@@ -25,7 +25,9 @@ repository-local commands and distributed assignment protocol.
 The translation workflow is not complete when English is fluent. It is ready
 for human review only after the applicable autonomous stages are exhausted and
 the evidence package, structured English, durable JSON names, and readable
-bilingual presentation agree by hash.
+bilingual presentation agree by hash. When every unit in a locked volume or
+cohort reaches that point, the aggregate scope is `agent_complete`; human review
+coverage is an independent, ongoing management state.
 
 ## Local supporting controls
 
@@ -44,11 +46,15 @@ bilingual presentation agree by hash.
   classifies authorities and witnesses and records publication eligibility.
 - [`compliance/promotions/available-data.v1.json`](../../compliance/promotions/available-data.v1.json)
   records current public-working and canonical-promotion readiness.
+- [`compliance/translation-coverage.v1.json`](../../compliance/translation-coverage.v1.json)
+  records aggregate agent completion separately from human-review coverage and
+  promotion state.
 - [`canonical-publication-repository.md`](../architecture/canonical-publication-repository.md)
   defines the repository boundary and release responsibilities.
-- [`compliance/policy-binding.v1.json`](../../compliance/policy-binding.v1.json)
+- [`compliance/policy-binding.v2.json`](../../compliance/policy-binding.v2.json)
   integrity-pins the local contracts, translation profile, and pinned-source
-  profile used by validation.
+  profile used by new translation work. Version 1 remains immutable provenance
+  for releases created under its policy set.
 
 ## Validation
 

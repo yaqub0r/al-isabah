@@ -17,10 +17,11 @@ The policy binding is repository-local. It integrity-pins:
 - `entry-title-structure`; and
 - `translation-source-profile`.
 
-The binding, repository-relative paths, and canonical UTF-8/LF SHA-256 digests
-are recorded in [`policy-binding.v1.json`](policy-binding.v1.json). Validation fails if a
-required policy file is missing, changed without review, resolves outside the
-repository, or names another repository as its authority.
+The active binding, repository-relative paths, and canonical UTF-8/LF SHA-256
+digests are recorded in [`policy-binding.v2.json`](policy-binding.v2.json).
+Version 1 remains byte-stable because existing public-working releases pin it.
+Validation fails if a required policy file is missing, changed without review,
+resolves outside the repository, or names another repository as its authority.
 
 ## Records
 
@@ -29,6 +30,9 @@ repository, or names another repository as its authority.
   storage locations, or access credentials.
 - [`promotions/available-data.v1.json`](promotions/available-data.v1.json)
   evaluates the presently available Volume 8 and Khadijah data for promotion.
+- [`translation-coverage.v1.json`](translation-coverage.v1.json) reports whether
+  each locked volume or cohort is agent-complete while keeping human-review,
+  current-policy, public-working, and canonical-promotion states independent.
 - [`schemas/`](schemas/) defines the machine-readable record shapes.
 - [`rights-matrix.al-isabah.v1.json`](rights-matrix.al-isabah.v1.json) is the
   pilot per-book decision record for source roles, allowed uses, public content
