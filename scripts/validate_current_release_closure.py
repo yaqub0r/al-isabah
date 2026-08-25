@@ -183,7 +183,9 @@ def expected() -> tuple[dict[str, Any] | None, list[str]]:
             "sha256": sha256_text_file(PROMOTION),
             "status": promotion["status"],
         },
-        "historicalClosure": file_binding(HISTORICAL_CLOSURE),
+        # Bind canonical repository text so a Windows checkout with legacy
+        # CRLF material cannot change the preserved closure identity.
+        "historicalClosure": text_file_binding(HISTORICAL_CLOSURE),
         "reviewCounts": review_counts,
         "outputInventory": sorted(output_inventory, key=lambda item: item["path"]),
     }
