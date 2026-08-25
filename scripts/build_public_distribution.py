@@ -14,7 +14,13 @@ from pathlib import Path
 from typing import Any
 
 from public_boundary import boundary_errors, canonical_json, sha256_bytes, sha256_file, summarize
-from validate_release_closure import CLOSURE, PROPOSAL, PUBLIC_REVIEW, validate as validate_closure
+from validate_current_release_closure import (
+    CURRENT_CLOSURE,
+    output_review_path,
+    proposal_paths,
+    public_review_path,
+    validate as validate_closure,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -41,25 +47,62 @@ def git_value(*args: str) -> str:
 
 
 def build(output: Path, repository_commit: str, generated_at: str) -> dict[str, Any]:
-    closure_errors = validate_closure(CLOSURE)
+    closure_errors = validate_closure(CURRENT_CLOSURE)
     if closure_errors:
         raise DistributionError(summarize(closure_errors))
-    proposal = json.loads(PROPOSAL.read_text(encoding="utf-8"))
-    records = proposal["records"]
-    record_bytes = b"".join(canonical_json(record) for record in records)
-    closure = json.loads(CLOSURE.read_text(encoding="utf-8"))
+    proposals = [
+        (path, json.loads(path.read_text(encoding="utf-8")))
+        for path in proposal_paths()
+    ]
+    closure = json.loads(CURRENT_CLOSURE.read_text(encoding="utf-8"))
     inventory = {item["path"]: item for item in closure["outputInventory"]}
-    expected_record = inventory["records/volume-01.jsonl"]
-    if sha256_bytes(record_bytes) != expected_record["sha256"] or len(record_bytes) != expected_record["bytes"]:
-        raise DistributionError("release closure rejected the record projection")
     output.mkdir(parents=True, exist_ok=True)
     records_dir = output / "records"
     records_dir.mkdir(exist_ok=True)
-    (records_dir / "volume-01.jsonl").write_bytes(record_bytes)
-    (output / "review.json").write_bytes(PUBLIC_REVIEW.read_bytes())
-    (output / "release-closure.json").write_bytes(CLOSURE.read_bytes())
+    reviews_dir = output / "reviews"
+    reviews_dir.mkdir(exist_ok=True)
+    records_by_volume: dict[int, list[dict[str, Any]]] = defaultdict(list)
+    all_records: list[dict[str, Any]] = []
+    for proposal_path, proposal in proposals:
+        for record in proposal["records"]:
+            records_by_volume[record["volume"]].append(record)
+            all_records.append(record)
+        review_source = public_review_path(proposal_path)
+        review_output = output / output_review_path(proposal)
+        review_output.write_bytes(review_source.read_bytes())
+    files: list[dict[str, Any]] = []
+    for volume, records in sorted(records_by_volume.items()):
+        records.sort(key=lambda item: (item["sourceOrdinal"], item["id"]))
+        record_bytes = b"".join(canonical_json(record) for record in records)
+        relative = f"records/volume-{volume:02}.jsonl"
+        expected_record = inventory[relative]
+        if (
+            sha256_bytes(record_bytes) != expected_record["sha256"]
+            or len(record_bytes) != expected_record["bytes"]
+            or len(records) != expected_record["recordCount"]
+        ):
+            raise DistributionError("release closure rejected the record projection")
+        (output / relative).write_bytes(record_bytes)
+        files.append(
+            {
+                "path": relative,
+                "sha256": sha256_bytes(record_bytes),
+                "bytes": len(record_bytes),
+                "recordCount": len(records),
+                "volume": volume,
+            }
+        )
+    for relative, expected_output in inventory.items():
+        path = output / relative
+        if (
+            not path.is_file()
+            or sha256_file(path) != expected_output["sha256"]
+            or path.stat().st_size != expected_output["bytes"]
+        ):
+            raise DistributionError("release closure rejected the output inventory")
+    (output / "release-closure.json").write_bytes(CURRENT_CLOSURE.read_bytes())
     printed: dict[int, list[str]] = defaultdict(list)
-    for record in records:
+    for record in all_records:
         printed[record["printedEntryNumber"]].append(record["id"])
     duplicate_printed = [
         {"printedEntryNumber": number, "recordIds": ids}
@@ -67,7 +110,10 @@ def build(output: Path, repository_commit: str, generated_at: str) -> dict[str, 
     ]
     rights_matrix = json.loads(RIGHTS_MATRIX.read_text(encoding="utf-8"))
     license_record = rights_matrix["public_content_license"]
-    authority = proposal["sourceAuthority"]
+    authorities = {
+        proposal["sourceAuthority"]["sourceId"]: proposal["sourceAuthority"]
+        for _, proposal in proposals
+    }
     manifest = {
         "schemaVersion": SCHEMA_VERSION,
         "distributionId": f"al-isabah-public-working-{repository_commit[:12]}",
@@ -83,19 +129,35 @@ def build(output: Path, repository_commit: str, generated_at: str) -> dict[str, 
             "attribution": rights_matrix["attribution"],
             "excludedMaterial": rights_matrix["exclusions"],
         },
-        "packets": [{"packetId": proposal["proposalId"], "sha256": sha256_file(PROPOSAL), "entryCount": len(records)}],
-        "authorities": [authority],
+        "packets": [
+            {
+                "packetId": proposal["proposalId"],
+                "sha256": sha256_file(path),
+                "entryCount": len(proposal["records"]),
+            }
+            for path, proposal in proposals
+        ],
+        "authorities": [authorities[key] for key in sorted(authorities)],
         "counts": {
-            "entries": len(records),
-            "machinePassed": proposal["review"]["machinePassed"],
-            "needsAttention": proposal["review"]["needsAttention"],
-            "humanReviewed": proposal["review"]["humanReviewed"],
+            "entries": len(all_records),
+            "machinePassed": sum(
+                proposal["review"]["machinePassed"] for _, proposal in proposals
+            ),
+            "needsAttention": sum(
+                proposal["review"]["needsAttention"] for _, proposal in proposals
+            ),
+            "humanReviewed": sum(
+                proposal["review"]["humanReviewed"] for _, proposal in proposals
+            ),
         },
         "duplicatePrintedEntryNumbers": duplicate_printed,
-        "files": [{"path": "records/volume-01.jsonl", "sha256": sha256_bytes(record_bytes), "bytes": len(record_bytes), "recordCount": len(records), "volume": 1}],
-        "releaseClosure": {"closureId": closure["closureId"], "sha256": sha256_file(CLOSURE)},
+        "files": files,
+        "releaseClosure": {
+            "closureId": closure["closureId"],
+            "sha256": sha256_file(CURRENT_CLOSURE),
+        },
     }
-    errors = boundary_errors(manifest, "manifest") + boundary_errors(records, "records")
+    errors = boundary_errors(manifest, "manifest") + boundary_errors(all_records, "records")
     if errors:
         raise DistributionError(summarize(errors))
     (output / "manifest.json").write_bytes(canonical_json(manifest))

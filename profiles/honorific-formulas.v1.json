@@ -1,6 +1,6 @@
 {
   "schema": "al-isabah.honorific-formula-registry.v1",
-  "registryVersion": "1.2.0",
+  "registryVersion": "1.2.2",
   "contractId": "translation-quality-workflow",
   "profileId": "al-isabah-translation-profile",
   "entries": [
@@ -51,6 +51,33 @@
     },
     {
       "source": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
+      "target": "\ufd4c",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "\u0635\u0644\u0649 204 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
+      "target": "\ufd4c",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 207 \u0639\u0644\u064a\u0647 \u0648\u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
+      "target": "\ufd4c",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0633\u0644\u0645 \u0648\u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
       "target": "\ufd4c",
       "semanticClass": "prophetic_blessing_with_family",
       "referentScope": "the Prophet and his family",
@@ -204,6 +231,15 @@
     },
     {
       "source": "\u0648\u0627\u0644\u0644\u0647 \u0623\u0639\u0644\u0645",
+      "target": "\u0648\u0627\u0644\u0644\u0647 \u0623\u0639\u0644\u0645",
+      "semanticClass": "divine_knowledge_qualification",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "\u0648\u0627\u0644\u0644\u0647 \u0623\u0639\u0644\u0645",
+      "accessibleEnglish": "And God knows best."
+    },
+    {
+      "source": "\u0648\u0627\u0644\u0644\u0647 \u0627\u0639\u0644\u0645",
       "target": "\u0648\u0627\u0644\u0644\u0647 \u0623\u0639\u0644\u0645",
       "semanticClass": "divine_knowledge_qualification",
       "referentScope": "God",

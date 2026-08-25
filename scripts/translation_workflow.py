@@ -33,7 +33,7 @@ RUNTIME_ROOT = ROOT / ".runtime" / "translation"
 PROPOSAL_ROOT = ROOT / "content" / "translation-proposals"
 REPOSITORY = "yaqub0r/al-isabah"
 TOOL_VERSION = "1.2.0"
-FORMULA_REGISTRY_VERSION = "1.2.0"
+FORMULA_REGISTRY_VERSION = "1.2.2"
 
 ASSIGNMENT_START = "<!-- al-isabah-translation-assignment:v1"
 ASSIGNMENT_END = "-->"
@@ -122,6 +122,32 @@ FORMULA_RULES = (
     },
     {
         "source": "صلى الله عليه وآله وسلم",
+        "target": "﵌",
+        "semanticClass": "prophetic_blessing_with_family",
+        "referentScope": "the Prophet and his family",
+        "grammaticalAgreement": "masculine singular with family inclusion",
+        "expandedArabic": "صلى الله عليه وآله وسلم",
+    },
+    # A locked Volume 2 page marker interrupts one family-inclusive blessing.
+    {
+        "source": "صلى 204 الله عليه وآله وسلم",
+        "target": "﵌",
+        "semanticClass": "prophetic_blessing_with_family",
+        "referentScope": "the Prophet and his family",
+        "grammaticalAgreement": "masculine singular with family inclusion",
+        "expandedArabic": "صلى الله عليه وآله وسلم",
+    },
+    {
+        "source": "صلى الله 207 عليه وآله وسلم",
+        "target": "﵌",
+        "semanticClass": "prophetic_blessing_with_family",
+        "referentScope": "the Prophet and his family",
+        "grammaticalAgreement": "masculine singular with family inclusion",
+        "expandedArabic": "صلى الله عليه وآله وسلم",
+    },
+    # The locked source has one transposed family-inclusive blessing.
+    {
+        "source": "صلى الله عليه وسلم وآله وسلم",
         "target": "﵌",
         "semanticClass": "prophetic_blessing_with_family",
         "referentScope": "the Prophet and his family",
@@ -264,6 +290,15 @@ FORMULA_RULES = (
         "grammaticalAgreement": "not_applicable",
         "expandedArabic": "والله أعلم",
     },
+    # The locked source occasionally omits the hamza in this closing.
+    {
+        "source": "والله اعلم",
+        "target": "والله أعلم",
+        "semanticClass": "divine_knowledge_qualification",
+        "referentScope": "God",
+        "grammaticalAgreement": "not_applicable",
+        "expandedArabic": "والله أعلم",
+    },
     {
         "source": "الله أعلم",
         "target": "الله أعلم",
@@ -293,6 +328,9 @@ FORMULA_ACCESSIBLE_ENGLISH = (
     "May God bless him and grant him peace.",
     "May God bless him and his family and grant them peace.",
     "May God bless him and his family and grant them peace.",
+    "May God bless him and his family and grant them peace.",
+    "May God bless him and his family and grant them peace.",
+    "May God bless him and his family and grant them peace.",
     "May God bless him and grant him peace.",
     "May God be pleased with both of them.",
     "May God be pleased with them.",
@@ -309,6 +347,7 @@ FORMULA_ACCESSIBLE_ENGLISH = (
     "God willing.",
     "Glory be to Him, the Exalted.",
     "Blessed and exalted is He.",
+    "And God knows best.",
     "And God knows best.",
     "God knows best.",
     "Mighty and majestic is He.",
@@ -2889,11 +2928,19 @@ def command_claim(args: argparse.Namespace) -> int:
     }
     first = entries[args.start_unit - 1]["sourceEntryNumber"]
     last = entries[args.end_unit - 1]["sourceEntryNumber"]
+    parent = (
+        f"Parent implementation: #{args.parent_issue}.\n\n"
+        if args.parent_issue is not None
+        else ""
+    )
     body = (
         "## Translation assignment\n\n"
+        f"{parent}"
         f"Translate source units {args.start_unit}–{args.end_unit} "
         f"(printed entries {first}–{last}) under the repository-local "
-        "translation contract and profile. Human review remains the final gate.\n\n"
+        "translation contract and profile. The assignment is agent-complete "
+        "after every applicable autonomous stage is exhausted; human review "
+        "remains an independent, ongoing management state.\n\n"
         f"{assignment_marker(marker)}\n"
     )
     if args.dry_run:
@@ -3029,6 +3076,7 @@ def parser() -> argparse.ArgumentParser:
     claim.add_argument("--start-unit", type=int, required=True)
     claim.add_argument("--end-unit", type=int, required=True)
     claim.add_argument("--assignee", default="@me")
+    claim.add_argument("--parent-issue", type=int)
     claim.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
     claim.add_argument("--source", type=Path)
     claim.add_argument("--issues-json", type=Path)

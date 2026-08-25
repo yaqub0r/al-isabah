@@ -78,7 +78,7 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
     "honorific-formula-registry": (
         "profiles/honorific-formulas.v1.json",
         "active",
-        "1.2.0",
+        "1.2.2",
     ),
     "translation-coverage": (
         "compliance/translation-coverage.v1.json",
@@ -89,6 +89,11 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
         "compliance/schemas/translation-coverage.v1.schema.json",
         "active",
         "1.0.0",
+    ),
+    "public-proposal-v1": (
+        "schemas/public-proposal.v1.schema.json",
+        "active",
+        "1.1.0",
     ),
     "public-distribution-contract": (
         "docs/architecture/public-distribution.md",
@@ -173,6 +178,13 @@ REQUIRED_COMPLETION_SCOPES = {
         "volume": 1,
         "artifact": "issue-0026-public-proposal-v1",
         "units": 1537,
+        "workflow_conformance": "current",
+        "public_working_status": "available",
+    },
+    "volume-02": {
+        "volume": 2,
+        "artifact": "issue-0053-public-proposal-v1",
+        "units": 1497,
         "workflow_conformance": "current",
         "public_working_status": "available",
     },

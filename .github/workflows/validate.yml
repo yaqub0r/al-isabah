@@ -41,6 +41,7 @@ jobs:
           python3 -m json.tool schemas/public-proposal.v1.schema.json > /dev/null
           python3 -m json.tool schemas/public-review.v1.schema.json > /dev/null
           python3 -m json.tool schemas/release-closure.v1.schema.json > /dev/null
+          python3 -m json.tool schemas/current-release-closure.v1.schema.json > /dev/null
           python3 -m json.tool schemas/honorific-formula-registry.v1.schema.json > /dev/null
           python3 -m json.tool schemas/translation-governance-reference.v1.schema.json > /dev/null
           python3 -m json.tool compliance/translation-coverage.v1.json > /dev/null
@@ -64,7 +65,12 @@ jobs:
           python3 scripts/build_public_review.py \
             --output content/public-proposals/issue-0026.public-review.json \
             --check
+          python3 scripts/build_public_review.py \
+            --proposal content/public-proposals/issue-0053.public-proposal.json \
+            --output content/public-proposals/issue-0053.public-review.json \
+            --check
           python3 scripts/validate_release_closure.py
+          python3 scripts/validate_current_release_closure.py
           python3 scripts/build_public_distribution.py \
             --output .runtime/public-distribution \
             --repository-commit "${GITHUB_SHA}"

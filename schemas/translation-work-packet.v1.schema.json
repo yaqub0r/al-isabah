@@ -558,7 +558,7 @@
       "required": ["status", "registryVersion", "occurrences"],
       "properties": {
         "status": { "enum": ["pending", "complete"] },
-        "registryVersion": { "const": "1.2.0" },
+        "registryVersion": { "const": "1.2.2" },
         "occurrences": {
           "type": "array",
           "items": { "$ref": "#/$defs/formulaOccurrence" }

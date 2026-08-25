@@ -271,6 +271,43 @@
       "review_status": "approved-forward-remediation-canonical-promotion-blocked"
     },
     {
+      "id": "issue-0053-public-proposal-v1",
+      "kind": "public-working-bilingual-proposal",
+      "title": "Issue 0053 Volume 2 strict public proposal",
+      "classification": "approved-for-publication",
+      "rights_basis": "A deterministic strict-public projection of fifteen machine-ready Volume 2 translation packets. It retains the approved OpenITI Arabic authority, independently authored project English, normalized review state, formula identity, names, public-safe provenance, and aggregate evidence hashes while excluding internal stages, raw findings, witness expression, model traces, operational locations, and source coordinates.",
+      "license": {
+        "spdx": "CC-BY-NC-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      "integrity": {
+        "proposal_sha256": "b687d09fa0d413a355517fd3e011c375d2b7e97783d54fec13b82f884f0f34df",
+        "public_review_sha256": "60d6fbed03f8716e89154c6f21910c8078fcd5281a270a491476399da30319cd",
+        "record_projection_sha256": "c70c6158b3ff04b5234610926c5cf2af5201a047a95bbfc54517131fc9327c55",
+        "order_sha256": "2fc251be44606c0e9f72837ae2404fcfbc129aeac3190dc796d461be644c9126",
+        "user_facing_sha256": "872684aaf7ed2ebbc6b78a3500b611321d28475d04d97dc4906ab37a23587423",
+        "public_entries": 1497,
+        "packet_set_sha256": "8cff3f5565714590e71bf93737653c337fe59e49b0a0953dcee89863c4c8d725",
+        "review_set_sha256": "921ab3752b3609134eb70b486fda1c4165ef1e36c5baf140d1cc5319270272c2"
+      },
+      "depends_on": [
+        "ibn-hajar-underlying-medieval-work",
+        "openiti-cleaned-arabic-comparison"
+      ],
+      "allowed_actions": [
+        "noncommercial public-working reading with attribution and share-alike terms",
+        "deterministic v2 consumer distribution",
+        "aggregate machine and human review reporting",
+        "human review proposals without changing the agent-complete state"
+      ],
+      "prohibited_public_actions": [
+        "represent the proposal as canonically promoted or human-approved",
+        "add restricted witness expression, raw findings, internal stages, model traces, or operational metadata",
+        "publish without strict public-boundary and cumulative release-closure validation"
+      ],
+      "review_status": "approved-public-working-proposal-canonical-promotion-blocked"
+    },
+    {
       "id": "volume-08-aligned-arabic",
       "kind": "derived-arabic-data",
       "title": "Volume 8 aligned Arabic source",

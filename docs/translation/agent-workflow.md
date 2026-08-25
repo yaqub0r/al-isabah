@@ -231,6 +231,26 @@ separate reviewed process derives a strict `public-proposal.v1` artifact for a
 public pull request. Never commit the raw packet, detailed review, `.runtime`,
 downloaded sources, private witnesses, or model traces.
 
+For a reviewed, contiguous set of machine-ready packets that has never entered
+Git, derive the strict proposal with the packet-set projector:
+
+```sh
+python scripts/project_packet_set_public_proposal.py \
+  --proposal-id issue-0053-public-proposal-v1 \
+  --packet <first-runtime-packet.json> \
+  --packet <next-runtime-packet.json> \
+  --output content/public-proposals/issue-0053.public-proposal.json
+
+python scripts/validate_public_proposal.py \
+  content/public-proposals/issue-0053.public-proposal.json
+```
+
+The projector revalidates every packet and review presentation, requires one
+contiguous source range under one authority and policy binding, and emits only
+allowlisted public fields plus aggregate evidence hashes. The issue-specific
+proposal and deterministic public-review artifact may enter Git only after the
+strict boundary validator passes.
+
 The pull request references the assignment issue without closing it unless the
 complete assigned range is present and valid. Machine-ready does not mean
 canonical. A fully covered machine-ready scope is agent-complete even while

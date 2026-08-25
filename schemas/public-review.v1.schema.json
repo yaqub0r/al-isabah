@@ -7,13 +7,13 @@
   "required": ["schemaVersion", "proposalId", "proposalSha256", "projection", "review", "publicBoundary", "decision"],
   "properties": {
     "schemaVersion": {"const": "1.0.0"},
-    "proposalId": {"const": "issue-0026-public-proposal-v1"},
+    "proposalId": {"type": "string", "pattern": "^issue-[0-9]{4}-public-proposal-v1$"},
     "proposalSha256": {"$ref": "#/$defs/sha256"},
     "projection": {
       "type": "object", "additionalProperties": false,
       "required": ["recordCount", "recordsSha256", "orderSha256", "userFacingSha256"],
       "properties": {
-        "recordCount": {"const": 1537},
+        "recordCount": {"type": "integer", "minimum": 1},
         "recordsSha256": {"$ref": "#/$defs/sha256"},
         "orderSha256": {"$ref": "#/$defs/sha256"},
         "userFacingSha256": {"$ref": "#/$defs/sha256"}

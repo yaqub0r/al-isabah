@@ -14,6 +14,7 @@ on:
       - "scripts/validate_public_distribution.py"
       - "scripts/validate_public_proposal.py"
       - "scripts/validate_release_closure.py"
+      - "scripts/validate_current_release_closure.py"
       - ".github/workflows/publish-public-distribution.yml"
   workflow_dispatch:
 
@@ -51,7 +52,12 @@ jobs:
           python3 scripts/build_public_review.py \
             --output content/public-proposals/issue-0026.public-review.json \
             --check
+          python3 scripts/build_public_review.py \
+            --proposal content/public-proposals/issue-0053.public-proposal.json \
+            --output content/public-proposals/issue-0053.public-review.json \
+            --check
           python3 scripts/validate_release_closure.py
+          python3 scripts/validate_current_release_closure.py
           python3 scripts/build_public_distribution.py \
             --output .runtime/public-distribution \
             --archive "${archive}" \

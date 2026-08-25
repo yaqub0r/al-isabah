@@ -27,11 +27,14 @@ SHA1 = re.compile(r"^[a-f0-9]{40}$")
 SHA256 = re.compile(r"^[a-f0-9]{64}$")
 COMMIT = SHA1
 IDENTIFIER = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._:-]{2,199}$")
-TOP_KEYS = {
+PROPOSAL_ID = re.compile(r"^issue-[0-9]{4}-public-proposal-v1$")
+COMMON_TOP_KEYS = {
     "schemaVersion", "proposalId", "workId", "publicationStatus",
     "canonicalPromotion", "consumerSchemaVersion", "sourceAuthority", "rights",
-    "policy", "review", "historicalEvidence", "baseline", "records",
+    "policy", "review", "baseline", "records",
 }
+LEGACY_TOP_KEYS = COMMON_TOP_KEYS | {"historicalEvidence"}
+PACKET_SET_TOP_KEYS = COMMON_TOP_KEYS | {"evidenceBinding"}
 RECORD_KEYS = {
     "schemaVersion", "id", "kind", "workId", "packetId", "sourceOrdinal",
     "printedEntryNumber", "canonicalEntryId", "volume", "pages", "title",
@@ -44,6 +47,7 @@ KEYS = {
     "policy": {"bindingSha256"},
     "review": {"machinePassed", "needsAttention", "humanReviewed", "humanUnreviewed"},
     "historicalEvidence": {"packetGitBlobSha1", "packetGitBlobSha256", "packetGitBlobBytes", "reviewGitBlobSha1", "reviewSha256", "historyPreserved"},
+    "evidenceBinding": {"kind", "packetCount", "packetSetSha256", "reviewCount", "reviewSetSha256", "recordProjectionSha256"},
     "baseline": {"distributionSchemaVersion", "recordCount", "userFacingSha256"},
     "license": {"spdx", "url", "attribution"},
     "page": {"volume", "page"},
@@ -66,8 +70,11 @@ def parse(path: Path) -> tuple[Any | None, list[str]]:
 
 
 def nested_key_errors(proposal: dict[str, Any]) -> list[str]:
-    errors = exact_keys(proposal, TOP_KEYS, "$")
-    for key in ("sourceAuthority", "rights", "policy", "review", "historicalEvidence", "baseline"):
+    legacy = proposal.get("schemaVersion") == "1.0.0"
+    errors = exact_keys(proposal, LEGACY_TOP_KEYS if legacy else PACKET_SET_TOP_KEYS, "$")
+    top_objects = ["sourceAuthority", "rights", "policy", "review", "baseline"]
+    top_objects.append("historicalEvidence" if legacy else "evidenceBinding")
+    for key in top_objects:
         errors.extend(exact_keys(proposal.get(key), KEYS[key], f"$.{key}"))
     authority = proposal.get("sourceAuthority", {})
     errors.extend(exact_keys(authority.get("license"), KEYS["license"], "$.sourceAuthority.license"))
@@ -180,9 +187,8 @@ def validate(path: Path = ROOT / "content" / "public-proposals" / "issue-0026.pu
         return [safe_error("$", "expected-object")]
     errors.extend(nested_key_errors(proposal))
     errors.extend(boundary_errors(proposal))
+    schema_version = proposal.get("schemaVersion")
     expected = {
-        "schemaVersion": "1.0.0",
-        "proposalId": "issue-0026-public-proposal-v1",
         "workId": "ibn-hajar-al-isabah",
         "publicationStatus": "public-working",
         "canonicalPromotion": "blocked",
@@ -191,10 +197,19 @@ def validate(path: Path = ROOT / "content" / "public-proposals" / "issue-0026.pu
     for key, value in expected.items():
         if proposal.get(key) != value:
             errors.append(safe_error(f"$.{key}", "contract-mismatch"))
+    if schema_version not in {"1.0.0", "1.1.0"}:
+        errors.append(safe_error("$.schemaVersion", "contract-mismatch"))
+    proposal_id = proposal.get("proposalId")
+    if not isinstance(proposal_id, str) or not PROPOSAL_ID.fullmatch(proposal_id):
+        errors.append(safe_error("$.proposalId", "contract-mismatch"))
+    if schema_version == "1.0.0" and proposal_id != "issue-0026-public-proposal-v1":
+        errors.append(safe_error("$.proposalId", "contract-mismatch"))
     records = proposal.get("records", [])
-    if not isinstance(records, list) or len(records) != 1537:
+    if not isinstance(records, list) or not records:
         errors.append(safe_error("$.records", "record-count-mismatch"))
         return errors
+    if schema_version == "1.0.0" and len(records) != 1537:
+        errors.append(safe_error("$.records", "record-count-mismatch"))
     seen: set[str] = set()
     previous: tuple[int, str] | None = None
     for index, record in enumerate(records):
@@ -254,23 +269,60 @@ def validate(path: Path = ROOT / "content" / "public-proposals" / "issue-0026.pu
         errors.append(safe_error("$.sourceAuthority.sourceId", "source-register-mismatch"))
     elif authority.get("commit") != source.get("source_revision", {}).get("commit") or authority.get("sha256") != source.get("integrity", {}).get("sha256"):
         errors.append(safe_error("$.sourceAuthority", "source-register-mismatch"))
-    policy_hash = sha256_text_file(ROOT / "compliance" / "policy-binding.v1.json")
+    proposal_artifact = next(
+        (
+            item
+            for item in register["artifacts"]
+            if item.get("id") == proposal.get("proposalId")
+        ),
+        None,
+    )
+    if (
+        proposal_artifact is None
+        or proposal_artifact.get("classification") != "approved-for-publication"
+        or proposal_artifact.get("integrity", {}).get("proposal_sha256")
+        != sha256_file(path)
+        or proposal_artifact.get("integrity", {}).get("public_entries")
+        != len(records)
+    ):
+        errors.append(safe_error("$.proposalId", "proposal-register-mismatch"))
+    policy_path = (
+        ROOT / "compliance" / "policy-binding.v1.json"
+        if schema_version == "1.0.0"
+        else ROOT / "compliance" / "policy-binding.v2.json"
+    )
+    policy_hash = sha256_text_file(policy_path)
     if proposal.get("policy", {}).get("bindingSha256") != policy_hash:
         errors.append(safe_error("$.policy.bindingSha256", "policy-mismatch"))
     rights = json.loads((ROOT / "compliance" / "rights-matrix.al-isabah.v1.json").read_text(encoding="utf-8"))
     if proposal.get("rights", {}).get("matrixId") != rights.get("matrix_id"):
         errors.append(safe_error("$.rights.matrixId", "rights-mismatch"))
-    history = proposal.get("historicalEvidence", {})
-    expected_history = {
-        "packetGitBlobSha1": "4f3ebf1ec42d17825f5957280b6d21636f05ee39",
-        "packetGitBlobSha256": "809de448fdb9079bdea6fc88ad73c6d092db7c20222d353ab640e84232c4c526",
-        "packetGitBlobBytes": 34475553,
-        "reviewGitBlobSha1": "b1a9a8ebdd66d995cbe5d2c4750675306e373afd",
-        "reviewSha256": "58efb42068837520494f4a90ee7555a440e93cbf98fd2388bf4429807e7453f1",
-        "historyPreserved": True,
-    }
-    if history != expected_history:
-        errors.append(safe_error("$.historicalEvidence", "historical-evidence-mismatch"))
+    if schema_version == "1.0.0":
+        history = proposal.get("historicalEvidence", {})
+        expected_history = {
+            "packetGitBlobSha1": "4f3ebf1ec42d17825f5957280b6d21636f05ee39",
+            "packetGitBlobSha256": "809de448fdb9079bdea6fc88ad73c6d092db7c20222d353ab640e84232c4c526",
+            "packetGitBlobBytes": 34475553,
+            "reviewGitBlobSha1": "b1a9a8ebdd66d995cbe5d2c4750675306e373afd",
+            "reviewSha256": "58efb42068837520494f4a90ee7555a440e93cbf98fd2388bf4429807e7453f1",
+            "historyPreserved": True,
+        }
+        if history != expected_history:
+            errors.append(safe_error("$.historicalEvidence", "historical-evidence-mismatch"))
+    else:
+        evidence = proposal.get("evidenceBinding", {})
+        for key in ("packetSetSha256", "reviewSetSha256", "recordProjectionSha256"):
+            if not SHA256.fullmatch(str(evidence.get(key, ""))):
+                errors.append(safe_error(f"$.evidenceBinding.{key}", "invalid-hash"))
+        if (
+            evidence.get("kind") != "machine-ready-packet-set"
+            or not isinstance(evidence.get("packetCount"), int)
+            or evidence.get("packetCount", 0) < 1
+            or evidence.get("reviewCount") != evidence.get("packetCount")
+        ):
+            errors.append(safe_error("$.evidenceBinding", "evidence-binding-mismatch"))
+        if evidence.get("recordProjectionSha256") != records_sha256(records):
+            errors.append(safe_error("$.evidenceBinding.recordProjectionSha256", "projection-mismatch"))
     return errors
 
 

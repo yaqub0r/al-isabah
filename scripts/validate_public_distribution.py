@@ -12,7 +12,10 @@ from typing import Any
 
 from public_boundary import boundary_errors, exact_keys, safe_error, sha256_file, summarize
 from validate_public_proposal import KEYS as PROPOSAL_KEYS, RECORD_KEYS
-from validate_release_closure import CLOSURE, validate as validate_closure
+from validate_current_release_closure import (
+    CURRENT_CLOSURE,
+    validate as validate_closure,
+)
 
 
 COMMIT = re.compile(r"^[a-f0-9]{40}$")
@@ -70,26 +73,47 @@ def validate(root: Path) -> list[str]:
     repository = manifest.get("repository", {})
     if repository.get("url") != "https://github.com/yaqub0r/al-isabah" or not COMMIT.fullmatch(str(repository.get("commit", ""))):
         errors.append(safe_error("$.manifest.repository", "repository-mismatch"))
+    closure = json.loads(CURRENT_CLOSURE.read_text(encoding="utf-8"))
     closure_binding = manifest.get("releaseClosure", {})
-    if closure_binding != {"closureId": "issue-0026-public-working-closure-v1", "sha256": sha256_file(CLOSURE)}:
+    if closure_binding != {
+        "closureId": closure["closureId"],
+        "sha256": sha256_file(CURRENT_CLOSURE),
+    }:
         errors.append(safe_error("$.manifest.releaseClosure", "closure-mismatch"))
-    closure_errors = validate_closure(CLOSURE)
+    closure_errors = validate_closure(CURRENT_CLOSURE)
     if closure_errors:
         errors.append(safe_error("$.manifest.releaseClosure", "closure-invalid"))
-    if not (root / "release-closure.json").is_file() or (root / "release-closure.json").read_bytes() != CLOSURE.read_bytes():
+    if not (root / "release-closure.json").is_file() or (root / "release-closure.json").read_bytes() != CURRENT_CLOSURE.read_bytes():
         errors.append(safe_error("$.release-closure", "closure-copy-mismatch"))
     authorities = {item.get("sourceId"): item for item in manifest.get("authorities", [])}
-    if set(authorities) != {"openiti-cleaned-arabic-comparison"}:
+    expected_authorities = {
+        item["sourceId"]
+        for item in closure.get("sourceAuthorities", [])
+    }
+    if set(authorities) != expected_authorities:
         errors.append(safe_error("$.manifest.authorities", "source-mismatch"))
+    expected_packets = [
+        {
+            "packetId": item["proposalId"],
+            "sha256": item["publicProposal"]["sha256"],
+            "entryCount": item["projection"]["entryCount"],
+        }
+        for item in closure.get("proposals", [])
+    ]
+    if manifest.get("packets") != expected_packets:
+        errors.append(safe_error("$.manifest.packets", "proposal-set-mismatch"))
     expected_paths: set[str] = set()
     seen: set[str] = set()
     printed: dict[int, list[str]] = {}
     count = 0
+    machine_passed = 0
     needs_attention = 0
+    human_reviewed = 0
     previous: tuple[int, str] | None = None
     for item in manifest.get("files", []):
         relative = item.get("path")
-        if relative != "records/volume-01.jsonl":
+        volume = item.get("volume")
+        if not isinstance(volume, int) or relative != f"records/volume-{volume:02}.jsonl":
             errors.append(safe_error("$.manifest.files", "output-inventory-mismatch"))
             continue
         expected_paths.add(relative)
@@ -125,27 +149,44 @@ def validate(root: Path) -> list[str]:
                 errors.append(safe_error(f"{base}.machineAssessment", "invalid-review-state"))
             if record.get("source", {}).get("authorityId") not in authorities:
                 errors.append(safe_error(f"{base}.source.authorityId", "source-mismatch"))
+            if record.get("volume") != volume:
+                errors.append(safe_error(f"{base}.volume", "volume-shard-mismatch"))
+            if record.get("machineAssessment") == "passed":
+                machine_passed += 1
+            if record.get("humanReview") in {"reviewed", "verified"}:
+                human_reviewed += 1
     actual_paths = {path.relative_to(root).as_posix() for path in root.glob("records/*.jsonl")}
     if actual_paths != expected_paths:
         errors.append(safe_error("$.output.records", "output-inventory-mismatch"))
     counts = manifest.get("counts", {})
-    if count != 1537 or counts.get("entries") != count or counts.get("needsAttention") != needs_attention:
+    expected_count = sum(
+        item["projection"]["entryCount"] for item in closure.get("proposals", [])
+    )
+    if counts != {
+        "entries": count,
+        "machinePassed": machine_passed,
+        "needsAttention": needs_attention,
+        "humanReviewed": human_reviewed,
+    } or count != expected_count:
         errors.append(safe_error("$.manifest.counts", "record-count-mismatch"))
     declared = {int(item["printedEntryNumber"]): item["recordIds"] for item in manifest.get("duplicatePrintedEntryNumbers", [])}
     actual = {number: ids for number, ids in printed.items() if len(ids) > 1}
     if declared != actual:
         errors.append(safe_error("$.manifest.duplicatePrintedEntryNumbers", "identity-mismatch"))
-    review_path = root / "review.json"
-    if not review_path.is_file():
-        errors.append(safe_error("$.output.review", "missing-file"))
-    expected_inventory = {item["path"]: item for item in json.loads(CLOSURE.read_text(encoding="utf-8"))["outputInventory"]}
+    expected_inventory = {
+        item["path"]: item for item in closure["outputInventory"]
+    }
     for relative, item in expected_inventory.items():
         path = root / relative
         if not path.is_file() or sha256_file(path) != item["sha256"] or path.stat().st_size != item["bytes"]:
             errors.append(safe_error(f"$.output.{relative}", "closure-output-mismatch"))
-    allowed_top = {"manifest.json", "release-closure.json", "review.json"}
-    actual_top = {path.name for path in root.iterdir() if path.is_file()}
-    if actual_top != allowed_top:
+    expected_files = set(expected_inventory) | {"manifest.json", "release-closure.json"}
+    actual_files = {
+        path.relative_to(root).as_posix()
+        for path in root.rglob("*")
+        if path.is_file()
+    }
+    if actual_files != expected_files:
         errors.append(safe_error("$.output", "output-inventory-mismatch"))
     return errors
 

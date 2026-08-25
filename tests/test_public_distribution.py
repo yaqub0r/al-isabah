@@ -26,23 +26,32 @@ PROJECT = load_module("project_public_proposal", ROOT / "scripts" / "project_pub
 PROPOSAL_VALIDATOR = load_module("validate_public_proposal", ROOT / "scripts" / "validate_public_proposal.py")
 REVIEW = load_module("build_public_review", ROOT / "scripts" / "build_public_review.py")
 CLOSURE = load_module("validate_release_closure", ROOT / "scripts" / "validate_release_closure.py")
+CURRENT_CLOSURE = load_module(
+    "validate_current_release_closure",
+    ROOT / "scripts" / "validate_current_release_closure.py",
+)
 BUILD = load_module("build_public_distribution", ROOT / "scripts" / "build_public_distribution.py")
 VALIDATE = load_module("validate_public_distribution", ROOT / "scripts" / "validate_public_distribution.py")
 TREE = load_module("validate_public_tree", ROOT / "scripts" / "validate_public_tree.py")
 COMMIT = "abd81f7eab94158be9e957d4b6f80751f1cc19e8"
 GENERATED_AT = "2026-08-14T16:22:30Z"
 PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0026.public-proposal.json"
+VOLUME2_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0053.public-proposal.json"
+VOLUME2_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0053.public-review.json"
 EXPECTED_USER_FACING_SHA256 = "702a3af5543f3c8d83aa45559f62a132300cd6dabe7a3b3428940b73d8493047"
+VOLUME2_USER_FACING_SHA256 = "872684aaf7ed2ebbc6b78a3500b611321d28475d04d97dc4906ab37a23587423"
 
 
 class PublicDistributionTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.proposal = json.loads(PROPOSAL_PATH.read_text(encoding="utf-8"))
+        cls.volume2_proposal = json.loads(VOLUME2_PROPOSAL_PATH.read_text(encoding="utf-8"))
 
     def test_current_tree_and_exact_closure_are_valid(self):
         self.assertEqual(PROPOSAL_VALIDATOR.validate(), [])
         self.assertEqual(CLOSURE.validate(), [])
+        self.assertEqual(CURRENT_CLOSURE.validate(), [])
         self.assertEqual(TREE.validate(), [])
         self.assertEqual(REVIEW.canonical_json(REVIEW.review()), (ROOT / "content" / "public-proposals" / "issue-0026.public-review.json").read_bytes())
 
@@ -55,12 +64,46 @@ class PublicDistributionTests(unittest.TestCase):
         self.assertTrue(all(record["schemaVersion"] == "2.0.0" for record in records))
         self.assertTrue(all(record["arabic"].strip() and record["english"].strip() for record in records))
 
+    def test_volume2_packet_set_projection_is_strict_and_agent_complete(self):
+        proposal = self.volume2_proposal
+        records = proposal["records"]
+        self.assertEqual(PROPOSAL_VALIDATOR.validate(VOLUME2_PROPOSAL_PATH), [])
+        self.assertEqual(
+            REVIEW.canonical_json(REVIEW.review(VOLUME2_PROPOSAL_PATH)),
+            VOLUME2_REVIEW_PATH.read_bytes(),
+        )
+        self.assertEqual(proposal["schemaVersion"], "1.1.0")
+        self.assertEqual(len(records), 1497)
+        self.assertEqual(records[0]["sourceOrdinal"], 1538)
+        self.assertEqual(records[-1]["sourceOrdinal"], 3034)
+        self.assertEqual(
+            [record["sourceOrdinal"] for record in records],
+            list(range(1538, 3035)),
+        )
+        self.assertEqual(proposal["baseline"]["userFacingSha256"], VOLUME2_USER_FACING_SHA256)
+        self.assertEqual(
+            BOUNDARY.sha256_bytes(PROJECT.parity_projection(records)),
+            VOLUME2_USER_FACING_SHA256,
+        )
+        self.assertEqual(proposal["evidenceBinding"]["packetCount"], 15)
+        self.assertEqual(proposal["evidenceBinding"]["reviewCount"], 15)
+        self.assertEqual(proposal["review"]["humanReviewed"], 0)
+        self.assertEqual(proposal["review"]["humanUnreviewed"], 1497)
+        self.assertTrue(all(record["humanReview"] == "unreviewed" for record in records))
+        self.assertTrue(all(record["arabic"].strip() and record["english"].strip() for record in records))
+        self.assertEqual(BOUNDARY.boundary_errors(proposal), [])
+
     def test_v2_build_is_deterministic_and_consumer_compatible(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
             output = root / "distribution"
             manifest = BUILD.build(output, COMMIT, GENERATED_AT)
-            self.assertEqual(manifest["counts"]["entries"], 1537)
+            self.assertEqual(manifest["counts"]["entries"], 3034)
+            self.assertEqual(manifest["counts"]["humanReviewed"], 0)
+            self.assertEqual(
+                [item["entryCount"] for item in manifest["packets"]],
+                [1537, 1497],
+            )
             self.assertEqual(manifest["schemaVersion"], "2.0.0")
             self.assertEqual(manifest["canonicalPromotion"], "blocked")
             self.assertEqual(VALIDATE.validate(output), [])
@@ -70,7 +113,17 @@ class PublicDistributionTests(unittest.TestCase):
             BUILD.package(output, second)
             self.assertEqual(first.read_bytes(), second.read_bytes())
             with zipfile.ZipFile(first) as archive:
-                self.assertEqual(sorted(archive.namelist()), ["manifest.json", "records/volume-01.jsonl", "release-closure.json", "review.json"])
+                self.assertEqual(
+                    sorted(archive.namelist()),
+                    [
+                        "manifest.json",
+                        "records/volume-01.jsonl",
+                        "records/volume-02.jsonl",
+                        "release-closure.json",
+                        "reviews/issue-0026.json",
+                        "reviews/issue-0053.json",
+                    ],
+                )
 
     def test_all_synthetic_negative_fixture_categories_are_covered(self):
         fixture = json.loads((ROOT / "tests" / "fixtures" / "public-boundary-negative.v1.json").read_text(encoding="utf-8"))
@@ -129,6 +182,21 @@ class PublicDistributionTests(unittest.TestCase):
             closure["projection"]["entryCount"] -= 1
             path.write_bytes(BOUNDARY.canonical_json(closure))
             self.assertTrue(any("category=projection-mismatch" in error for error in CLOSURE.validate(path)))
+
+    def test_current_closure_mismatch_fails_closed(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / "closure.json"
+            closure = json.loads(
+                CURRENT_CLOSURE.CURRENT_CLOSURE.read_text(encoding="utf-8")
+            )
+            closure["reviewCounts"]["humanReviewed"] += 1
+            path.write_bytes(BOUNDARY.canonical_json(closure))
+            self.assertTrue(
+                any(
+                    "category=current-closure-mismatch" in error
+                    for error in CURRENT_CLOSURE.validate(path)
+                )
+            )
 
     def test_diagnostics_do_not_echo_rejected_values(self):
         rejected = "ghp_" + "9" * 24
