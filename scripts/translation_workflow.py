@@ -60,7 +60,9 @@ OPENITI_CONTROL_RE = re.compile(r"^###\s+\|(PARATEXT|APPENDIX)\|\s*$")
 PAGE_RE = re.compile(r"PageV(\d{2})P(\d{3})")
 MILESTONE_RE = re.compile(r"\bms\d+\b")
 SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
-WINDOWS_PATH_RE = re.compile(r"(?:[A-Za-z]:\\|C:/Users/)", re.IGNORECASE)
+WINDOWS_PATH_RE = re.compile(
+    r"(?<![A-Za-z])(?:[A-Za-z]:\\|C:/Users/)", re.IGNORECASE
+)
 PRIVATE_KEYS = {"object_key", "local_path", "private_url", "credential", "token"}
 EXPECTED_POLICY_IDS = {
     "translation-quality-workflow",

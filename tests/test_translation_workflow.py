@@ -363,6 +363,20 @@ def complete_autonomous_stages(packet):
 
 
 class TranslationWorkflowTests(unittest.TestCase):
+    def test_private_data_scan_accepts_escaped_newline_after_prose_colon(self):
+        value = {
+            "decision": "Verses by Haritha:\\n\\nThe first translated line."
+        }
+
+        self.assertEqual(MODULE.private_data_errors(value), [])
+
+    def test_private_data_scan_rejects_windows_absolute_path(self):
+        value = {"decision": r"Evidence cached at C:\Users\editor\scan.pdf"}
+
+        errors = MODULE.private_data_errors(value)
+
+        self.assertTrue(any("local absolute path" in error for error in errors))
+
     def packet(self):
         issue = assignment_issue()
         claims = MODULE.parse_claims([issue])
