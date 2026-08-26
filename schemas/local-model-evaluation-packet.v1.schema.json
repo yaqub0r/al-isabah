@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/schemas/local-model-evaluation-packet.v1.schema.json",
+  "title": "Al-Isabah source-only model packet v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "packetId", "evaluationId", "issue", "policy", "casesSha256", "config", "configSha256", "cases"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "packetId": {"type": "string", "pattern": "^eval-packet-[a-f0-9]{16}$"},
+    "evaluationId": {"const": "al-isabah-local-model-v1"},
+    "issue": {"const": "https://github.com/yaqub0r/al-isabah/issues/49"},
+    "policy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["bindingPath", "bindingSha256", "evaluationProtocolPath", "evaluationProtocolSha256", "glossaryPath", "glossarySha256", "promptPath", "promptSha256"],
+      "properties": {
+        "bindingPath": {"type": "string"}, "bindingSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "evaluationProtocolPath": {"type": "string"}, "evaluationProtocolSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "glossaryPath": {"type": "string"}, "glossarySha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "promptPath": {"type": "string"}, "promptSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "casesSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "config": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schemaVersion", "configId", "role", "engine", "runtimeVersion", "model", "modelDigest", "artifactDisclosure", "quantization", "houseProfile", "nativeThinkingRequested", "nativeThinkingObserved", "contextTokens", "maxOutputTokens", "temperature", "samplingSeed", "promptVersion", "promptSha256"],
+      "properties": {
+        "schemaVersion": {"const": "1.0.0"}, "configId": {"type": "string", "minLength": 1}, "role": {"type": "string"},
+        "engine": {"type": "string"}, "runtimeVersion": {"type": "string"}, "model": {"type": "string", "minLength": 1},
+        "modelDigest": {"type": ["string", "null"]}, "artifactDisclosure": {"type": "string"}, "quantization": {"type": "string"},
+        "houseProfile": {"type": "string"}, "nativeThinkingRequested": {"type": "boolean"}, "nativeThinkingObserved": {"type": ["boolean", "null"]},
+        "contextTokens": {"type": ["integer", "null"]}, "maxOutputTokens": {"type": ["integer", "null"]}, "temperature": {"type": ["number", "null"]},
+        "samplingSeed": {"type": ["integer", "string", "null"]}, "promptVersion": {"type": "string"}, "promptSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "configSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "cases": {"type": "array", "minItems": 1, "items": {
+      "type": "object", "additionalProperties": false,
+      "required": ["caseId", "sourceUnitId", "category", "arabic", "arabicSha256", "heldOut"],
+      "properties": {
+        "caseId": {"type": "string"}, "sourceUnitId": {"type": "string"}, "category": {"type": "string"},
+        "arabic": {"type": "string", "minLength": 1}, "arabicSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "heldOut": {"const": true}
+      }
+    }}
+  }
+}

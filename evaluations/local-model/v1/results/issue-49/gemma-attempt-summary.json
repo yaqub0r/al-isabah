@@ -1,0 +1,50 @@
+{
+  "attemptSummaryId": "eval-attempt-summary-d900e619e6d42215",
+  "cases": [
+    {
+      "attemptCount": 1,
+      "caseId": "case-001",
+      "outcome": "completed"
+    },
+    {
+      "attemptCount": 2,
+      "caseId": "case-002",
+      "outcome": "timeout"
+    },
+    {
+      "attemptCount": 0,
+      "caseId": "case-003",
+      "outcome": "controller-unavailable"
+    }
+  ],
+  "casesSha256": "fad8f34e31a4c979bc3c686727b37f5881f1b58c7ce07647fc5e6177edba92b9",
+  "configId": "gemma4-xhigh-v1",
+  "configSha256": "2f138d9f94821dc1e657edc692e04626115b5582c0713f578d9aeda74f26bdec",
+  "eligibility": {
+    "identifiedReview": "excluded",
+    "promotion": "blocked",
+    "repeats": "excluded",
+    "role": "no-role",
+    "scoring": "excluded"
+  },
+  "evaluationId": "al-isabah-local-model-v1",
+  "generatedAt": "2026-08-20T17:44:44Z",
+  "issue": "https://github.com/yaqub0r/al-isabah/issues/49",
+  "limitation": "Case-002 timed out twice; a later model-load attempt timed out. The controller was confirmed off with no model loaded.",
+  "packetId": "eval-packet-4aedfc0a9ad10252",
+  "packetSha256": "db3b638bc39322c865285cb15d7132cc7d9bfcd6c0f2b5e5917c23ee1746d537",
+  "promptSha256": "757e4164228a721297b094dcae9bcf719b2d443b749d3e63b3b691baea52edee",
+  "publicSafety": {
+    "admittedBy": "config:gemma4-xhigh-v1",
+    "provenance": "sanitized-attempt-summary",
+    "status": "admitted"
+  },
+  "resourceIdentity": {
+    "engine": "ollama",
+    "model": "gemma4:26b",
+    "modelDigest": "5571076f3d70050487b26b341705799e0ab29b808164f90d20d4cf84f699d251",
+    "profile": "xhigh",
+    "runtimeVersion": "0.32.14"
+  },
+  "schemaVersion": "1.0.0"
+}

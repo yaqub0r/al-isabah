@@ -1,0 +1,100 @@
+{
+  "casesSha256": "fad8f34e31a4c979bc3c686727b37f5881f1b58c7ce07647fc5e6177edba92b9",
+  "config": {
+    "artifactDisclosure": "provider-not-disclosed",
+    "configId": "hermes-sol-xhigh-v1",
+    "contextTokens": null,
+    "engine": "openai-codex",
+    "houseProfile": "xhigh",
+    "maxOutputTokens": null,
+    "model": "gpt-5.6-sol",
+    "modelDigest": null,
+    "nativeThinkingObserved": null,
+    "nativeThinkingRequested": true,
+    "promptSha256": "757e4164228a721297b094dcae9bcf719b2d443b749d3e63b3b691baea52edee",
+    "promptVersion": "source-only-translation-v1",
+    "quantization": "provider-managed-undisclosed",
+    "role": "source-only-translation-candidate",
+    "runtimeVersion": "provider-managed",
+    "samplingSeed": null,
+    "schemaVersion": "1.0.0",
+    "temperature": null
+  },
+  "configSha256": "9e19ee86e4ec3c80f94f37232e28e234e9f3936810c10a78154963787cb38772",
+  "evaluationId": "al-isabah-local-model-v1",
+  "generatedAt": "2026-08-20T18:10:05Z",
+  "issue": "https://github.com/yaqub0r/al-isabah/issues/49",
+  "outputs": [
+    {
+      "bodyEnglish": "He was mentioned in the preceding entry, if that is established. It will be stated in the entry on ʿAbd Allāh ibn Asʿad ibn Zurāra that some transmitted the hadith mentioned in his entry, saying, “From ʿAbd Allāh ibn Asʿad ibn Zurāra, from his father.” Perhaps it contained the words “ibn Asʿad.” He said, “And it is this ʿAbd Allāh.”",
+      "bodyEnglishSha256": "8822994821734813e986791e0cef2c8d53719c5b5f49592bc14d7a0fe25d54ad",
+      "caseId": "case-001",
+      "issues": [
+        "In the opening phrase “if that is established,” the source leaves the referent unstated.",
+        "The speaker of the final “He said” is not identified in the source."
+      ],
+      "publicSafety": {
+        "admittedBy": "config:hermes-sol-xhigh-v1",
+        "provenance": "sanitized-final-model-output",
+        "status": "admitted"
+      },
+      "titleEnglish": "Asʿad ibn Zurāra",
+      "titleEnglishSha256": "c9342a0499698d72cdf6ca628a634d35917b5a8a00ee7316e71e039cfede9fd3"
+    },
+    {
+      "bodyEnglish": "It is said that this was the name of the grandfather of Rajāʾ ibn Ḥaywa. Aḥmad ibn Muḥammad ibn al-Ḥajjāj ibn Rushdayn said this. Al-Ṭabarānī transmitted, by way of Jāriya ibn Muṣʿab, from Rajāʾ ibn Ḥaywa, from his father, from his grandfather—and he was one of the Companions of the Prophet ﷺ—that a slave girl from among the captives of Ḥunayn passed by the Prophet ﷺ, and he said, “To whom does this belong?”—the hadith. His grandfather was not named. Ibn ʿAsākir related two other opinions concerning the name: one was Jandal, with a nūn followed by a dāl, and the other had a zāy in place of the dāl.",
+      "bodyEnglishSha256": "aec01e1c9cfe88cae83a6c749f4c39b5835d2824a5bcf9da43886925a73945ca",
+      "caseId": "case-002",
+      "issues": [
+        "The grandfather in the chain is explicitly left unnamed.",
+        "The expression “the hadith” marks an omitted continuation of the report.",
+        "The source gives competing spellings of the grandfather’s name."
+      ],
+      "publicSafety": {
+        "admittedBy": "config:hermes-sol-xhigh-v1",
+        "provenance": "sanitized-final-model-output",
+        "status": "admitted"
+      },
+      "titleEnglish": "Jarwal ibn al-Aḥnaf ibn al-Simṭ ibn Imruʾ al-Qays ibn ʿAmr ibn Muʿāwiya ibn al-Ḥārith al-Akbar al-Kindī",
+      "titleEnglishSha256": "b2b1c9f3549f87cdaaa422fe7995b28d5794ee78fa5994ef2af148a47d21c91f"
+    },
+    {
+      "bodyEnglish": "Ibn al-Kalbī, Ibn Saʿd, and al-Ṭabarī mentioned that he made a deputation visit. Ibn al-Athīr said that the name occurring in the Supplement of Abū Mūsā is “al-Ḥārith ibn Qurra,” with a qāf, whereas the form in the Jamharah is “Farwa,” with a fāʾ and an additional wāw, and that this is correct. He said that his ancestor al-Shayṭān was so named because of his beauty.",
+      "bodyEnglishSha256": "5f92df850290fd0758355bc21390d7df49eef6c2a4a95406ef4aca0b0c093325",
+      "caseId": "case-003",
+      "issues": [
+        "The destination and circumstances of the deputation visit are not stated."
+      ],
+      "publicSafety": {
+        "admittedBy": "config:hermes-sol-xhigh-v1",
+        "provenance": "sanitized-final-model-output",
+        "status": "admitted"
+      },
+      "titleEnglish": "Al-Ḥārith ibn Farwa ibn al-Shayṭān ibn Khudayj ibn Imruʾ al-Qays ibn al-Ḥārith ibn Muʿāwiya ibn al-Ḥārith ibn Muʿāwiya ibn Thawr al-Kindī",
+      "titleEnglishSha256": "9d45d76559a72778a0e72469e309f65ee144cfd61cab10f0da675b28ac21c523"
+    }
+  ],
+  "packetId": "eval-packet-822724ca24c1c625",
+  "packetSha256": "d90e614f9f60192ec1ef54428d96212ef04cc01882da370a57da6d0f111545ab",
+  "policy": {
+    "bindingPath": "compliance/policy-binding.v1.json",
+    "bindingSha256": "f1ca5fa8303b13e70bbd92aeeb8e5d2a05ba037cf951043b5043262dd2d591e5",
+    "evaluationProtocolPath": "docs/contracts/local-model-translation-evaluation-protocol.md",
+    "evaluationProtocolSha256": "f05df2d883e95ef3c74f7013322d6cdc266b180def2646c2f7ee45af7a36f85f",
+    "glossaryPath": "profiles/honorific-formulas.v1.json",
+    "glossarySha256": "2691994d50457d967f41d04140b9f86f23967254fd764f2c756109194ba51a55",
+    "promptPath": "evaluations/local-model/v1/prompts/source-only-translation-v1.txt",
+    "promptSha256": "757e4164228a721297b094dcae9bcf719b2d443b749d3e63b3b691baea52edee"
+  },
+  "policySha256": "634ed4ac947b3a85a71717e425c0099b6b5500c32432683957cebb7fbd3c8e29",
+  "promotionStatus": "blocked",
+  "resourceOutcome": {
+    "limitations": [],
+    "profile": "xhigh",
+    "status": "completed"
+  },
+  "reviewStatus": "unreviewed",
+  "roleStatus": "no-role",
+  "runId": "eval-run-f3e4a634076469ec",
+  "schemaVersion": "1.0.0"
+}

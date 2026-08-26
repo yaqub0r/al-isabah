@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/schemas/local-model-evaluation-attempt-summary.v1.schema.json",
+  "title": "Sanitized public local-model attempt summary v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion", "attemptSummaryId", "packetId", "packetSha256",
+    "evaluationId", "issue", "configId", "configSha256", "promptSha256",
+    "casesSha256", "generatedAt", "resourceIdentity", "cases", "limitation",
+    "publicSafety", "eligibility"
+  ],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "attemptSummaryId": {"type": "string", "pattern": "^eval-attempt-summary-[a-f0-9]{16}$"},
+    "packetId": {"type": "string", "pattern": "^eval-packet-[a-f0-9]{16}$"},
+    "packetSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "evaluationId": {"type": "string", "minLength": 1},
+    "issue": {"type": "string", "minLength": 1},
+    "configId": {"type": "string", "minLength": 1},
+    "configSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "promptSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "casesSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "generatedAt": {"type": "string", "format": "date-time", "pattern": "Z$"},
+    "resourceIdentity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["profile", "engine", "runtimeVersion", "model", "modelDigest"],
+      "properties": {
+        "profile": {"type": "string", "minLength": 1},
+        "engine": {"type": "string", "minLength": 1},
+        "runtimeVersion": {"type": "string", "minLength": 1},
+        "model": {"type": "string", "minLength": 1},
+        "modelDigest": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["caseId", "attemptCount", "outcome"],
+        "properties": {
+          "caseId": {"type": "string", "minLength": 1},
+          "attemptCount": {"type": "integer", "minimum": 0, "maximum": 100},
+          "outcome": {"enum": ["completed", "empty-response", "timeout", "controller-unavailable"]}
+        }
+      }
+    },
+    "limitation": {"type": "string", "minLength": 1, "maxLength": 280},
+    "publicSafety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "provenance", "admittedBy"],
+      "properties": {
+        "status": {"const": "admitted"},
+        "provenance": {"const": "sanitized-attempt-summary"},
+        "admittedBy": {"type": "string", "pattern": "^config:[A-Za-z0-9._-]+$"}
+      }
+    },
+    "eligibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identifiedReview", "scoring", "repeats", "role", "promotion"],
+      "properties": {
+        "identifiedReview": {"const": "excluded"},
+        "scoring": {"const": "excluded"},
+        "repeats": {"const": "excluded"},
+        "role": {"const": "no-role"},
+        "promotion": {"const": "blocked"}
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/schemas/local-model-evaluation-config.v1.schema.json",
+  "title": "Al-Isabah local-model evaluation configuration v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "configId", "role", "engine", "runtimeVersion", "model", "modelDigest", "artifactDisclosure", "quantization", "houseProfile", "nativeThinkingRequested", "nativeThinkingObserved", "contextTokens", "maxOutputTokens", "temperature", "samplingSeed", "promptVersion", "promptSha256"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "configId": {"type": "string", "minLength": 1},
+    "role": {"enum": ["source-only-translation-candidate", "historical-comparator"]},
+    "engine": {"type": "string", "minLength": 1},
+    "runtimeVersion": {"type": "string", "minLength": 1},
+    "model": {"type": "string", "minLength": 1},
+    "modelDigest": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+    "artifactDisclosure": {"enum": ["digest-pinned", "provider-not-disclosed"]},
+    "quantization": {"type": "string", "minLength": 1},
+    "houseProfile": {"enum": ["low", "high", "xhigh", "not-applicable"]},
+    "nativeThinkingRequested": {"type": "boolean"},
+    "nativeThinkingObserved": {"type": ["boolean", "null"]},
+    "contextTokens": {"type": ["integer", "null"], "minimum": 1},
+    "maxOutputTokens": {"type": ["integer", "null"], "minimum": 1},
+    "temperature": {"type": ["number", "null"], "minimum": 0},
+    "samplingSeed": {"type": ["integer", "string", "null"]},
+    "promptVersion": {"type": "string", "minLength": 1},
+    "promptSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  }
+}
