@@ -23,6 +23,10 @@ def load_module(name: str, path: Path):
 sys.path.insert(0, str(ROOT / "scripts"))
 BOUNDARY = load_module("public_boundary", ROOT / "scripts" / "public_boundary.py")
 PROJECT = load_module("project_public_proposal", ROOT / "scripts" / "project_public_proposal.py")
+PACKET_PROJECT = load_module(
+    "project_packet_set_public_proposal",
+    ROOT / "scripts" / "project_packet_set_public_proposal.py",
+)
 PROPOSAL_VALIDATOR = load_module("validate_public_proposal", ROOT / "scripts" / "validate_public_proposal.py")
 REVIEW = load_module("build_public_review", ROOT / "scripts" / "build_public_review.py")
 CLOSURE = load_module("validate_release_closure", ROOT / "scripts" / "validate_release_closure.py")
@@ -39,7 +43,7 @@ PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0026.public-propo
 VOLUME2_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0053.public-proposal.json"
 VOLUME2_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0053.public-review.json"
 EXPECTED_USER_FACING_SHA256 = "702a3af5543f3c8d83aa45559f62a132300cd6dabe7a3b3428940b73d8493047"
-VOLUME2_USER_FACING_SHA256 = "872684aaf7ed2ebbc6b78a3500b611321d28475d04d97dc4906ab37a23587423"
+VOLUME2_USER_FACING_SHA256 = "60137418e7c1dbd3c9a1020bc290dcb1d8ec539d24fb58fbbc2793332b32b782"
 
 
 class PublicDistributionTests(unittest.TestCase):
@@ -92,6 +96,19 @@ class PublicDistributionTests(unittest.TestCase):
         self.assertTrue(all(record["humanReview"] == "unreviewed" for record in records))
         self.assertTrue(all(record["arabic"].strip() and record["english"].strip() for record in records))
         self.assertEqual(BOUNDARY.boundary_errors(proposal), [])
+
+    def test_packet_projection_preserves_collective_entity_type(self):
+        projected = PACKET_PROJECT.public_name(
+            {
+                "candidateId": "synthetic-collective",
+                "observedArabic": "بنو تميم",
+                "proposedEnglish": "Banū Tamīm",
+                "aliases": [],
+                "entityType": "collective",
+                "reviewState": "unreviewed",
+            }
+        )
+        self.assertEqual(projected["kind"], "collective")
 
     def test_v2_build_is_deterministic_and_consumer_compatible(self):
         with tempfile.TemporaryDirectory() as temp:

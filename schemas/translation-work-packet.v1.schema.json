@@ -21,10 +21,10 @@
     "machineReadiness"
   ],
   "properties": {
-    "schemaVersion": { "const": "1.2.0" },
+    "schemaVersion": { "const": "1.3.0" },
     "packetId": { "pattern": "^isabah-translation-issue-[0-9]+$" },
     "workId": { "const": "ibn-hajar-al-isabah" },
-    "toolVersion": { "const": "1.2.0" },
+    "toolVersion": { "const": "1.3.0" },
     "runId": { "pattern": "^translation-run-[0-9a-f]{16}$" },
     "assignment": { "$ref": "#/$defs/assignment" },
     "authority": { "$ref": "#/$defs/authority" },
@@ -370,20 +370,71 @@
     "critique": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["status", "runId", "model", "findings"],
+      "required": ["status", "runId", "model", "findings", "semanticAudit"],
       "properties": {
         "status": { "enum": ["pending", "complete"] },
         "runId": { "$ref": "#/$defs/nullableString" },
         "model": { "$ref": "#/$defs/nullableString" },
-        "findings": { "type": "array" }
+        "findings": { "type": "array" },
+        "semanticAudit": { "$ref": "#/$defs/semanticAudit" }
+      }
+    },
+    "semanticAudit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "checklistVersion",
+        "sourceSha256",
+        "candidateSha256",
+        "checks"
+      ],
+      "properties": {
+        "status": { "enum": ["pending", "complete"] },
+        "checklistVersion": { "const": "1.0.0" },
+        "sourceSha256": {
+          "anyOf": [{ "$ref": "#/$defs/sha256" }, { "type": "null" }]
+        },
+        "candidateSha256": {
+          "anyOf": [{ "$ref": "#/$defs/sha256" }, { "type": "null" }]
+        },
+        "checks": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/semanticCheck" }
+        }
+      }
+    },
+    "semanticCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["category", "outcome", "assessment"],
+      "properties": {
+        "category": {
+          "enum": [
+            "omissions",
+            "additions",
+            "reversals_and_negation",
+            "names_and_relationships",
+            "isnads_and_attribution",
+            "numbers_and_dates",
+            "citations_notes_and_poetry",
+            "structure_and_continuations",
+            "honorifics",
+            "damaged_syntax",
+            "unsupported_normalization"
+          ]
+        },
+        "outcome": { "enum": ["no_issue", "finding", "not_applicable"] },
+        "assessment": { "type": "string", "minLength": 12 }
       }
     },
     "witness": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["status", "results"],
+      "required": ["status", "results", "notRequiredRationale"],
       "properties": {
         "status": { "enum": ["pending", "not_required", "complete"] },
+        "notRequiredRationale": { "$ref": "#/$defs/nullableString" },
         "results": {
           "type": "array",
           "items": { "$ref": "#/$defs/witnessResult" }
@@ -453,7 +504,7 @@
     "names": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["status", "candidates", "mentions"],
+      "required": ["status", "candidates", "mentions", "inventoryAudit"],
       "properties": {
         "status": { "enum": ["pending", "complete"] },
         "candidates": {
@@ -463,7 +514,32 @@
         "mentions": {
           "type": "array",
           "items": { "$ref": "#/$defs/nameMention" }
-        }
+        },
+        "inventoryAudit": { "$ref": "#/$defs/nameInventoryAudit" }
+      }
+    },
+    "nameInventoryAudit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "runId",
+        "method",
+        "sourceSha256",
+        "englishSha256",
+        "assessment"
+      ],
+      "properties": {
+        "status": { "enum": ["pending", "complete"] },
+        "runId": { "$ref": "#/$defs/nullableString" },
+        "method": { "$ref": "#/$defs/nullableString" },
+        "sourceSha256": {
+          "anyOf": [{ "$ref": "#/$defs/sha256" }, { "type": "null" }]
+        },
+        "englishSha256": {
+          "anyOf": [{ "$ref": "#/$defs/sha256" }, { "type": "null" }]
+        },
+        "assessment": { "$ref": "#/$defs/nullableString" }
       }
     },
     "nameCandidate": {

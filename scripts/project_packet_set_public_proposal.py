@@ -48,7 +48,7 @@ def public_name(value: dict[str, Any]) -> dict[str, Any]:
         "arabic": value["observedArabic"],
         "english": value["proposedEnglish"],
         "aliases": value.get("aliases", []),
-        "kind": "person",
+        "kind": value.get("entityType", "person"),
         "reviewState": value.get("reviewState", "unreviewed"),
     }
 

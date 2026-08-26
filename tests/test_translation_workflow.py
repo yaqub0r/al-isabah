@@ -48,6 +48,36 @@ def complete_autonomous_stages(packet):
         ]
         return " ".join([label, *targets]).strip()
 
+    def semantic_audit(source, heading_english, english):
+        return {
+            "status": "complete",
+            "checklistVersion": MODULE.SEMANTIC_AUDIT_VERSION,
+            "sourceSha256": MODULE.semantic_source_sha256(source),
+            "candidateSha256": MODULE.semantic_candidate_sha256(
+                heading_english, english
+            ),
+            "checks": [
+                {
+                    "category": category,
+                    "outcome": "no_issue",
+                    "assessment": f"Fixture review checked {category} against both texts.",
+                }
+                for category in MODULE.SEMANTIC_AUDIT_CATEGORIES
+            ],
+        }
+
+    def name_audit(source, heading_english, english, number):
+        return {
+            "status": "complete",
+            "runId": f"names-{number}",
+            "method": "independent bilingual name inventory",
+            "sourceSha256": MODULE.semantic_source_sha256(source),
+            "englishSha256": MODULE.semantic_candidate_sha256(
+                heading_english, english
+            ),
+            "assessment": "Every personal reference in the fixture was reconciled.",
+        }
+
     for entry in packet["entries"]:
         number = entry["sourceOrdinal"]
         for index, (source, translation) in enumerate(
@@ -79,11 +109,17 @@ def complete_autonomous_stages(packet):
                     "runId": f"critique-structure-{number}-{index}",
                     "model": "codex-independent-pass",
                     "findings": [],
+                    "semanticAudit": semantic_audit(
+                        source,
+                        translation["blindTranslation"]["headingEnglish"],
+                        translation["blindTranslation"]["english"],
+                    ),
                 }
             )
             translation["witnessResolution"] = {
                 "status": "not_required",
                 "results": [],
+                "notRequiredRationale": "The independent critique found no concern requiring a witness.",
             }
             translation["adjudication"] = {
                 "status": "complete",
@@ -99,6 +135,12 @@ def complete_autonomous_stages(packet):
                 "status": "complete",
                 "candidates": [],
                 "mentions": [],
+                "inventoryAudit": name_audit(
+                    source,
+                    translation["adjudication"]["headingEnglish"],
+                    translation["adjudication"]["english"],
+                    f"{number}-{index}",
+                ),
             }
             translation["unresolved"] = []
         entry["blindTranslation"].update(
@@ -118,13 +160,20 @@ def complete_autonomous_stages(packet):
                 "runId": f"critique-{number}",
                 "model": "codex-independent-pass",
                 "findings": [],
+                "semanticAudit": semantic_audit(
+                    entry["source"], None, entry["blindTranslation"]["english"]
+                ),
             }
         )
-        entry["witnessResolution"] = {"status": "not_required", "results": []}
+        entry["witnessResolution"] = {
+            "status": "not_required",
+            "results": [],
+            "notRequiredRationale": "The independent critique found no concern requiring a witness.",
+        }
         entry["adjudication"] = {
             "status": "complete",
             "english": translated(
-                f"Adjudicated English for entry {number}.",
+                f"Adjudicated English for entry {number}. Duba'a.",
                 entry["source"]["arabic"],
             ),
             "decisions": [],
@@ -160,6 +209,9 @@ def complete_autonomous_stages(packet):
                     ],
                 }
             ],
+            "inventoryAudit": name_audit(
+                entry["source"], None, entry["adjudication"]["english"], number
+            ),
         }
         entry["unresolved"] = []
 
@@ -267,7 +319,7 @@ class TranslationWorkflowTests(unittest.TestCase):
     def test_packet_explicitly_excludes_container_metadata(self):
         packet = self.packet()
         exclusions = packet["scope"]["excludedRanges"]
-        self.assertEqual(packet["schemaVersion"], "1.2.0")
+        self.assertEqual(packet["schemaVersion"], "1.3.0")
         self.assertEqual(exclusions[0]["kind"], "openiti_metadata")
         self.assertEqual(exclusions[0]["lineStart"], 1)
         self.assertEqual(exclusions[0]["lineEnd"], 4)
@@ -563,6 +615,75 @@ class TranslationWorkflowTests(unittest.TestCase):
             )
         )
 
+    def test_machine_ready_requires_content_bound_semantic_audit(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        audit = packet["entries"][0]["independentCritique"]["semanticAudit"]
+        audit["sourceSha256"] = "0" * 64
+        errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertTrue(
+            any("semantic critique source hash is stale" in error for error in errors)
+        )
+
+        complete_autonomous_stages(packet)
+        packet["entries"][0]["independentCritique"]["semanticAudit"]["checks"] = []
+        errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertTrue(
+            any("explicitly cover every required category" in error for error in errors)
+        )
+
+    def test_packet_scale_title_only_name_placeholder_is_rejected(self):
+        error = MODULE.validate_name_inventory_distribution([1] * 20)
+        self.assertTrue(any("one-candidate placeholder" in item for item in error))
+        self.assertEqual(
+            MODULE.validate_name_inventory_distribution([1] * 16 + [2] * 4), []
+        )
+
+    def test_name_candidate_requires_grounded_english_form(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        entry = packet["entries"][0]
+        candidate = entry["names"]["candidates"][0]
+        candidate["proposedEnglish"] = "An absent English rendering"
+        candidate["aliases"] = []
+        errors = MODULE.validate_names(
+            entry["names"],
+            entry["source"],
+            None,
+            entry["adjudication"]["english"],
+            entry["sourceUnitId"],
+            "test",
+            require_spans=True,
+        )
+        self.assertTrue(
+            any("no English form in the adjudicated translation" in error for error in errors),
+            errors,
+        )
+
+    def test_name_candidate_allows_pronunciation_note_inside_canonical_form(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        entry = packet["entries"][0]
+        entry["names"]["candidates"][0]["proposedEnglish"] = "Duba'a al-Anṣārī"
+        entry["adjudication"]["english"] = (
+            "Duba'a—with an open first letter—al-Anṣārī transmitted the report."
+        )
+        entry["names"]["inventoryAudit"]["englishSha256"] = (
+            MODULE.semantic_candidate_sha256(None, entry["adjudication"]["english"])
+        )
+        self.assertEqual(
+            MODULE.validate_names(
+                entry["names"],
+                entry["source"],
+                None,
+                entry["adjudication"]["english"],
+                entry["sourceUnitId"],
+                "test",
+                require_spans=True,
+            ),
+            [],
+        )
+
     def test_machine_ready_requires_review_presentation_path(self):
         packet = self.packet()
         complete_autonomous_stages(packet)
@@ -662,6 +783,8 @@ class TranslationWorkflowTests(unittest.TestCase):
             MODULE.validate_names(
                 entry["names"],
                 entry["source"],
+                None,
+                entry["adjudication"]["english"],
                 entry["sourceUnitId"],
                 "test",
                 require_spans=True,
@@ -675,6 +798,8 @@ class TranslationWorkflowTests(unittest.TestCase):
                 for error in MODULE.validate_names(
                     entry["names"],
                     entry["source"],
+                    None,
+                    entry["adjudication"]["english"],
                     entry["sourceUnitId"],
                     "test",
                     require_spans=True,
@@ -875,6 +1000,11 @@ class TranslationWorkflowTests(unittest.TestCase):
             MODULE.finalize_packet(packet_path)
             mutated = MODULE.load_json(packet_path)
             mutated["entries"][0]["adjudication"]["english"] += " Changed later."
+            mutated["entries"][0]["names"]["inventoryAudit"]["englishSha256"] = (
+                MODULE.semantic_candidate_sha256(
+                    None, mutated["entries"][0]["adjudication"]["english"]
+                )
+            )
             MODULE.atomic_write(packet_path, MODULE.json_bytes(mutated))
             with self.assertRaisesRegex(
                 MODULE.WorkflowError, "review presentation does not match packet"

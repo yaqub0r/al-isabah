@@ -281,14 +281,14 @@
         "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
       },
       "integrity": {
-        "proposal_sha256": "b687d09fa0d413a355517fd3e011c375d2b7e97783d54fec13b82f884f0f34df",
-        "public_review_sha256": "60d6fbed03f8716e89154c6f21910c8078fcd5281a270a491476399da30319cd",
-        "record_projection_sha256": "c70c6158b3ff04b5234610926c5cf2af5201a047a95bbfc54517131fc9327c55",
+        "proposal_sha256": "2d5d43858dfecf55cd82be0ac92fd978087b43daac2c048ac2e718efb9de4a7b",
+        "public_review_sha256": "5c1acbce594ed917fc4d7206615353f8a3e5c10ccfcb95ba301bafaf5ec37a53",
+        "record_projection_sha256": "4e0aaf606d31210b5046e41b1e3cd4b273d374e784b7828bf17c3c587ac1259c",
         "order_sha256": "2fc251be44606c0e9f72837ae2404fcfbc129aeac3190dc796d461be644c9126",
-        "user_facing_sha256": "872684aaf7ed2ebbc6b78a3500b611321d28475d04d97dc4906ab37a23587423",
+        "user_facing_sha256": "60137418e7c1dbd3c9a1020bc290dcb1d8ec539d24fb58fbbc2793332b32b782",
         "public_entries": 1497,
-        "packet_set_sha256": "8cff3f5565714590e71bf93737653c337fe59e49b0a0953dcee89863c4c8d725",
-        "review_set_sha256": "921ab3752b3609134eb70b486fda1c4165ef1e36c5baf140d1cc5319270272c2"
+        "packet_set_sha256": "f863bf04297e025722fce606263db4da2828fe41edeca23942562c0b8f9abbff",
+        "review_set_sha256": "f9e26a3eea85a052ec0838fed76208081341fba89aa6002302d7dd528a170df6"
       },
       "depends_on": [
         "ibn-hajar-underlying-medieval-work",
