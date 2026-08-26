@@ -32,8 +32,22 @@ FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 RUNTIME_ROOT = ROOT / ".runtime" / "translation"
 PROPOSAL_ROOT = ROOT / "content" / "translation-proposals"
 REPOSITORY = "yaqub0r/al-isabah"
-TOOL_VERSION = "1.2.0"
+TOOL_VERSION = "1.3.0"
 FORMULA_REGISTRY_VERSION = "1.2.2"
+SEMANTIC_AUDIT_VERSION = "1.0.0"
+SEMANTIC_AUDIT_CATEGORIES = (
+    "omissions",
+    "additions",
+    "reversals_and_negation",
+    "names_and_relationships",
+    "isnads_and_attribution",
+    "numbers_and_dates",
+    "citations_notes_and_poetry",
+    "structure_and_continuations",
+    "honorifics",
+    "damaged_syntax",
+    "unsupported_normalization",
+)
 
 ASSIGNMENT_START = "<!-- al-isabah-translation-assignment:v1"
 ASSIGNMENT_END = "-->"
@@ -555,6 +569,8 @@ def formula_inventory(packet: dict[str, Any]) -> tuple[dict[str, Any], list[str]
 def validate_names(
     names: dict[str, Any],
     source: dict[str, Any],
+    adjudicated_heading: str | None,
+    adjudicated_english: str | None,
     record_id: str,
     prefix: str,
     require_spans: bool,
@@ -567,12 +583,52 @@ def validate_names(
         return [f"{prefix}: durable name candidates are incomplete"]
     if not isinstance(mentions, list):
         return [f"{prefix}: name mentions must be an array"]
+    if require_spans:
+        audit = names.get("inventoryAudit")
+        if not isinstance(audit, dict) or audit.get("status") != "complete":
+            errors.append(f"{prefix}: bilingual name inventory audit is incomplete")
+        else:
+            expected_source_sha256 = semantic_source_sha256(source)
+            if audit.get("sourceSha256") != expected_source_sha256:
+                errors.append(f"{prefix}: name inventory source hash is stale")
+            if not adjudicated_heading and not adjudicated_english:
+                errors.append(f"{prefix}: name inventory has no adjudicated English")
+            elif audit.get("englishSha256") != semantic_candidate_sha256(
+                adjudicated_heading, adjudicated_english
+            ):
+                errors.append(f"{prefix}: name inventory English hash is stale")
+            if not all(
+                isinstance(audit.get(field), str) and audit[field].strip()
+                for field in ("runId", "method", "assessment")
+            ):
+                errors.append(f"{prefix}: name inventory audit provenance is incomplete")
     candidate_by_id: dict[str, dict[str, Any]] = {}
     source_fields = {
         "headingArabic": source.get("headingArabic") or "",
         "arabic": source.get("arabic") or "",
         "rawOpeniti": source.get("rawOpeniti") or "",
     }
+    adjudicated_surface = "\n".join(
+        value
+        for value in (adjudicated_heading, adjudicated_english)
+        if isinstance(value, str) and value
+    ).casefold().replace("’", "'")
+    adjudicated_tokens = re.findall(r"[\wʾʿ'-]+", adjudicated_surface)
+
+    def grounded_english_form(form: str) -> bool:
+        normalized_form = form.casefold().replace("’", "'")
+        if normalized_form in adjudicated_surface:
+            return True
+        form_tokens = re.findall(r"[\wʾʿ'-]+", normalized_form)
+        if not form_tokens:
+            return False
+        cursor = 0
+        for token in form_tokens:
+            try:
+                cursor = adjudicated_tokens.index(token, cursor) + 1
+            except ValueError:
+                return False
+        return True
     for candidate in candidates:
         if not isinstance(candidate, dict):
             errors.append(f"{prefix}: name candidate must be an object")
@@ -598,11 +654,23 @@ def validate_names(
             errors.append(f"{prefix}: {candidate_id} observed Arabic leaks OpenITI markup")
         if not isinstance(proposed, str) or not proposed.strip():
             errors.append(f"{prefix}: {candidate_id} has no proposed English form")
-        if not isinstance(candidate.get("aliases"), list) or not all(
+        aliases = candidate.get("aliases")
+        if not isinstance(aliases, list) or not all(
             isinstance(alias, str) and alias.strip()
-            for alias in candidate.get("aliases", [])
+            for alias in aliases or []
         ):
             errors.append(f"{prefix}: {candidate_id} aliases must be nonempty strings")
+        elif require_spans and adjudicated_surface and isinstance(proposed, str):
+            english_forms = [proposed, *aliases]
+            if not any(
+                grounded_english_form(form)
+                for form in english_forms
+                if form.strip()
+            ):
+                errors.append(
+                    f"{prefix}: {candidate_id} has no English form in the "
+                    "adjudicated translation"
+                )
         if not isinstance(candidate.get("confidenceEvidence"), list) or not all(
             isinstance(item, str) and item.strip()
             for item in candidate.get("confidenceEvidence", [])
@@ -690,6 +758,114 @@ def validate_names(
     return errors
 
 
+def semantic_source_sha256(source: dict[str, Any]) -> str:
+    """Bind a semantic audit to the readable Arabic fields, not container markup."""
+    return bytes_sha256(
+        json_bytes(
+            {
+                "headingArabic": source.get("headingArabic"),
+                "arabic": source.get("arabic"),
+            }
+        )
+    )
+
+
+def semantic_candidate_sha256(
+    heading_english: str | None, english: str | None
+) -> str:
+    return bytes_sha256(
+        json_bytes(
+            {
+                "headingEnglish": heading_english,
+                "english": english,
+            }
+        )
+    )
+
+
+def pending_semantic_audit() -> dict[str, Any]:
+    return {
+        "status": "pending",
+        "checklistVersion": SEMANTIC_AUDIT_VERSION,
+        "sourceSha256": None,
+        "candidateSha256": None,
+        "checks": [],
+    }
+
+
+def pending_name_inventory_audit() -> dict[str, Any]:
+    return {
+        "status": "pending",
+        "runId": None,
+        "method": None,
+        "sourceSha256": None,
+        "englishSha256": None,
+        "assessment": None,
+    }
+
+
+def validate_semantic_audit(
+    critique: dict[str, Any],
+    source: dict[str, Any],
+    heading_english: str | None,
+    english: str | None,
+    prefix: str,
+) -> list[str]:
+    """Require positive, content-bound evidence for an independent critique."""
+    audit = critique.get("semanticAudit")
+    if not isinstance(audit, dict) or audit.get("status") != "complete":
+        return [f"{prefix}: semantic critique audit is incomplete"]
+    errors: list[str] = []
+    if audit.get("checklistVersion") != SEMANTIC_AUDIT_VERSION:
+        errors.append(f"{prefix}: semantic critique checklist is stale")
+    if audit.get("sourceSha256") != semantic_source_sha256(source):
+        errors.append(f"{prefix}: semantic critique source hash is stale")
+    if audit.get("candidateSha256") != semantic_candidate_sha256(
+        heading_english, english
+    ):
+        errors.append(f"{prefix}: semantic critique candidate hash is stale")
+    checks = audit.get("checks")
+    if not isinstance(checks, list):
+        return errors + [f"{prefix}: semantic critique checks must be an array"]
+    categories = [
+        check.get("category") if isinstance(check, dict) else None
+        for check in checks
+    ]
+    if categories != list(SEMANTIC_AUDIT_CATEGORIES):
+        errors.append(
+            f"{prefix}: semantic critique must explicitly cover every required category"
+        )
+    for check in checks:
+        if not isinstance(check, dict):
+            continue
+        if check.get("outcome") not in {"no_issue", "finding", "not_applicable"}:
+            errors.append(f"{prefix}: semantic critique outcome is invalid")
+        assessment = check.get("assessment")
+        if not isinstance(assessment, str) or len(assessment.strip()) < 12:
+            errors.append(
+                f"{prefix}: semantic critique category lacks a substantive assessment"
+            )
+    if any(
+        isinstance(check, dict) and check.get("outcome") == "finding"
+        for check in checks
+    ) and not critique.get("findings"):
+        errors.append(f"{prefix}: semantic critique reports a finding without details")
+    return errors
+
+
+def validate_name_inventory_distribution(counts: list[int]) -> list[str]:
+    """Catch packet-scale title-only inventories without judging small shards."""
+    if len(counts) < 20:
+        return []
+    multi_name_entries = sum(count > 1 for count in counts)
+    if multi_name_entries * 5 < len(counts):
+        return [
+            "packet: name inventory has a one-candidate placeholder signature; "
+            "fewer than 20% of biographies identify a second named referent"
+        ]
+    return []
+
+
 def validate_witness(
     witness: dict[str, Any], findings: list[Any], prefix: str, strict: bool
 ) -> list[str]:
@@ -709,6 +885,17 @@ def validate_witness(
         errors.append(f"{prefix}: completed witness resolution requires evidence")
     if witness.get("status") == "not_required" and results:
         errors.append(f"{prefix}: not-required witness resolution cannot contain results")
+    rationale = witness.get("notRequiredRationale")
+    if witness.get("status") == "not_required" and (
+        not isinstance(rationale, str) or len(rationale.strip()) < 12
+    ):
+        errors.append(
+            f"{prefix}: not-required witness resolution requires an explicit rationale"
+        )
+    if witness.get("status") != "not_required" and rationale is not None:
+        errors.append(
+            f"{prefix}: witness rationale is only valid when witnesses are not required"
+        )
     canonical = {
         "status",
         "query",
@@ -1631,15 +1818,25 @@ def pending_preceding_translation(
             "runId": None,
             "model": None,
             "findings": [],
+            "semanticAudit": pending_semantic_audit(),
         },
-        "witnessResolution": {"status": "pending", "results": []},
+        "witnessResolution": {
+            "status": "pending",
+            "results": [],
+            "notRequiredRationale": None,
+        },
         "adjudication": {
             "status": "pending",
             "headingEnglish": None,
             "english": None,
             "decisions": [],
         },
-        "names": {"status": "pending", "candidates": [], "mentions": []},
+        "names": {
+            "status": "pending",
+            "candidates": [],
+            "mentions": [],
+            "inventoryAudit": pending_name_inventory_audit(),
+        },
         "unresolved": [],
         "humanReview": {"status": "unreviewed"},
     }
@@ -1741,16 +1938,26 @@ def build_packet(
                     "runId": None,
                     "model": None,
                     "findings": [],
+                    "semanticAudit": pending_semantic_audit(),
                 },
-                "witnessResolution": {"status": "pending", "results": []},
+                "witnessResolution": {
+                    "status": "pending",
+                    "results": [],
+                    "notRequiredRationale": None,
+                },
                 "adjudication": {"status": "pending", "english": None, "decisions": []},
-                "names": {"status": "pending", "candidates": [], "mentions": []},
+                "names": {
+                    "status": "pending",
+                    "candidates": [],
+                    "mentions": [],
+                    "inventoryAudit": pending_name_inventory_audit(),
+                },
                 "unresolved": [],
                 "humanReview": {"status": "unreviewed"},
             }
         )
     return {
-        "schemaVersion": "1.2.0",
+        "schemaVersion": "1.3.0",
         "packetId": f"isabah-translation-issue-{number}",
         "workId": "ibn-hajar-al-isabah",
         "toolVersion": TOOL_VERSION,
@@ -1936,6 +2143,15 @@ def validate_preceding_translation(
         errors.append(f"{prefix}: critique must use a distinct run")
     if not isinstance(critique.get("findings"), list):
         errors.append(f"{prefix}: critique findings must be an array")
+    errors.extend(
+        validate_semantic_audit(
+            critique,
+            source,
+            blind.get("headingEnglish"),
+            blind.get("english"),
+            prefix,
+        )
+    )
 
     findings = critique.get("findings", [])
     errors.extend(
@@ -1973,6 +2189,8 @@ def validate_preceding_translation(
         validate_names(
             translation.get("names", {}),
             source,
+            adjudication.get("headingEnglish"),
+            adjudication.get("english"),
             str(source.get("segmentId")),
             prefix,
             require_spans=True,
@@ -2026,6 +2244,10 @@ def validate_entry_shard_output(
     if not isinstance(findings, list):
         errors.append(f"{prefix}: critique findings must be an array")
         findings = []
+    # Source-bound validation is repeated after the shard is matched to its
+    # packet entry.  Here we still reject a missing audit envelope.
+    if not isinstance(critique.get("semanticAudit"), dict):
+        errors.append(f"{prefix}: semantic critique audit is missing")
 
     errors.extend(
         validate_witness(
@@ -2124,8 +2346,8 @@ def merge_entry_shard(packet_path: Path, shard_path: Path) -> int:
             "packet: cannot merge a shard after post-run repairs; rebuild from the "
             "pre-repair packet"
         )
-    if packet.get("schemaVersion") != "1.2.0":
-        errors.append("packet: entry shards require packet schema 1.2.0")
+    if packet.get("schemaVersion") != "1.3.0":
+        errors.append("packet: entry shards require packet schema 1.3.0")
     if shard.get("schemaVersion") != "1.0.0":
         errors.append("shard: schemaVersion must be 1.0.0")
     if shard.get("packetId") != packet.get("packetId"):
@@ -2174,9 +2396,20 @@ def merge_entry_shard(packet_path: Path, shard_path: Path) -> int:
             errors.append(f"{prefix}: sourceUnitId does not match the packet")
         errors.extend(validate_entry_shard_output(output, policy_sha256, prefix))
         errors.extend(
+            validate_semantic_audit(
+                output.get("independentCritique", {}),
+                target.get("source", {}),
+                None,
+                output.get("blindTranslation", {}).get("english"),
+                prefix,
+            )
+        )
+        errors.extend(
             validate_names(
                 output.get("names", {}),
                 target.get("source", {}),
+                None,
+                output.get("adjudication", {}).get("english"),
                 str(output.get("sourceUnitId")),
                 prefix,
                 require_spans=True,
@@ -2235,9 +2468,9 @@ def merge_preceding_shard(packet_path: Path, shard_path: Path) -> int:
         "endUnit",
         "sourceUnits",
     }
-    if packet.get("schemaVersion") != "1.2.0" or shard.get("schemaVersion") != "1.1.0":
+    if packet.get("schemaVersion") != "1.3.0" or shard.get("schemaVersion") != "1.1.0":
         errors.append(
-            "structural shard: packet must use schema 1.2.0 and shard schema 1.1.0"
+            "structural shard: packet must use schema 1.3.0 and shard schema 1.1.0"
         )
     if shard.get("packetId") != packet.get("packetId"):
         errors.append("structural shard: packetId does not match the target packet")
@@ -2367,8 +2600,8 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
         for error in validate_schema_instance(packet, packet_schema)
     )
     errors.extend(validate_post_run_repair_audit(packet))
-    if packet.get("schemaVersion") != "1.2.0":
-        errors.append("packet: schemaVersion must be 1.2.0")
+    if packet.get("schemaVersion") != "1.3.0":
+        errors.append("packet: schemaVersion must be 1.3.0")
     if packet.get("toolVersion") != TOOL_VERSION:
         errors.append(f"packet: toolVersion must be {TOOL_VERSION}")
     if packet.get("workId") != "ibn-hajar-al-isabah":
@@ -2533,6 +2766,15 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
             errors.append(f"{prefix}: critique must use a distinct run")
         if not isinstance(critique.get("findings"), list):
             errors.append(f"{prefix}: critique findings must be an array")
+        errors.extend(
+            validate_semantic_audit(
+                critique,
+                source,
+                None,
+                blind.get("english"),
+                prefix,
+            )
+        )
 
         findings = critique.get("findings", [])
         errors.extend(
@@ -2560,6 +2802,8 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
             validate_names(
                 entry.get("names", {}),
                 source,
+                None,
+                adjudication.get("english"),
                 str(entry.get("sourceUnitId")),
                 prefix,
                 require_spans=True,
@@ -2578,7 +2822,12 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
     if machine_ready:
         candidate_ids: list[str] = []
         mention_ids: list[str] = []
+        entry_name_counts: list[int] = []
         for entry in entries:
+            entry_candidates = entry.get("names", {}).get("candidates", [])
+            entry_name_counts.append(
+                len(entry_candidates) if isinstance(entry_candidates, list) else 0
+            )
             owners = [entry, *entry.get("precedingTranslations", [])]
             for owner in owners:
                 names = owner.get("names", {})
@@ -2598,6 +2847,7 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
             errors.append("packet: name candidate IDs must be globally unique")
         if len(mention_ids) != len(set(mention_ids)):
             errors.append("packet: name mention IDs must be globally unique")
+        errors.extend(validate_name_inventory_distribution(entry_name_counts))
         expected_inventory, inventory_errors = formula_inventory(packet)
         errors.extend(inventory_errors)
         if packet.get("formulaInventory") != expected_inventory:

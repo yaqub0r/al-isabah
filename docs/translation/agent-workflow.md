@@ -129,19 +129,27 @@ For every entry:
 2. **Independent critique** — use a fresh critique pass with a different run
    ID. Inspect omissions, additions, reversals, names, relationships, isnads,
    numbers, negation, honorific semantics, poetry, notes, and continuations.
-   Each material uncertainty sets `requiresWitness: true`.
+   Each material uncertainty sets `requiresWitness: true`. A complete critique
+   also records the ordered semantic checklist in `semanticAudit`, bound to
+   hashes of the readable Arabic and the exact English candidate. A status
+   string and an empty findings array are not positive evidence of this pass.
 3. **Witness resolution** — set `not_required` only when no critique finding
    requires a witness. Otherwise record the smallest useful classified
    witness checks. Every result ends as `hit` or `no_match`; `unavailable`
    remains a blocker rather than being converted to `no_match`. Record the
    query, classified role, witness identity, exact passage, location, decision,
-   retrieval date, evidence kind, and passage/evidence hashes. A material or
-   blocking unresolved item also requires completed witness evidence.
+   retrieval date, evidence kind, and passage/evidence hashes. When witnesses
+   are not required, record the source-specific rationale rather than relying
+   on the status alone. A material or blocking unresolved item also requires
+   completed witness evidence.
 4. **Adjudication** — write the complete final candidate and record material
    decisions. Fluent wording must not hide an unresolved reading.
 5. **Names** — mark names complete and store durable JSON candidates and
    mentions. Candidate IDs remain packet-scoped until reconciled with the
-   canonical identity ledger; do not invent canonical entry IDs.
+   canonical identity ledger; do not invent canonical entry IDs. Bind the
+   bilingual inventory pass to source and adjudicated-English hashes, and make
+   sure every candidate has an English surface in that translation. Packet
+   validation rejects the one-title-candidate pattern at collection scale.
 6. **Unresolved inventory** — retain an array even when it is empty.
 7. **Human state** — leave `humanReview.status` as `unreviewed`.
 

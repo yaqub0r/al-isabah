@@ -31,11 +31,11 @@
       "proposalId": "issue-0053-public-proposal-v1",
       "publicProposal": {
         "path": "content/public-proposals/issue-0053.public-proposal.json",
-        "sha256": "b687d09fa0d413a355517fd3e011c375d2b7e97783d54fec13b82f884f0f34df"
+        "sha256": "2d5d43858dfecf55cd82be0ac92fd978087b43daac2c048ac2e718efb9de4a7b"
       },
       "publicReview": {
         "path": "content/public-proposals/issue-0053.public-review.json",
-        "sha256": "60d6fbed03f8716e89154c6f21910c8078fcd5281a270a491476399da30319cd"
+        "sha256": "5c1acbce594ed917fc4d7206615353f8a3e5c10ccfcb95ba301bafaf5ec37a53"
       },
       "policyBinding": {
         "path": "compliance/policy-binding.v2.json",
@@ -44,8 +44,8 @@
       "projection": {
         "entryCount": 1497,
         "orderSha256": "2fc251be44606c0e9f72837ae2404fcfbc129aeac3190dc796d461be644c9126",
-        "userFacingSha256": "872684aaf7ed2ebbc6b78a3500b611321d28475d04d97dc4906ab37a23587423",
-        "recordsSha256": "c70c6158b3ff04b5234610926c5cf2af5201a047a95bbfc54517131fc9327c55"
+        "userFacingSha256": "60137418e7c1dbd3c9a1020bc290dcb1d8ec539d24fb58fbbc2793332b32b782",
+        "recordsSha256": "4e0aaf606d31210b5046e41b1e3cd4b273d374e784b7828bf17c3c587ac1259c"
       }
     }
   ],
@@ -60,7 +60,7 @@
   ],
   "sourceRegister": {
     "path": "compliance/source-register.v1.json",
-    "sha256": "939e7d04e6c121633951fa496ad9bfbd037156a4ce38fe570a042f43c58c2444"
+    "sha256": "2fb184186f6939ef47b987f156a74a1bf420b2030349ab7e7185ddd205985e40"
   },
   "rights": {
     "path": "compliance/rights-matrix.al-isabah.v1.json",
@@ -92,8 +92,8 @@
     },
     {
       "path": "records/volume-02.jsonl",
-      "sha256": "c70c6158b3ff04b5234610926c5cf2af5201a047a95bbfc54517131fc9327c55",
-      "bytes": 4948485,
+      "sha256": "4e0aaf606d31210b5046e41b1e3cd4b273d374e784b7828bf17c3c587ac1259c",
+      "bytes": 6444485,
       "recordCount": 1497
     },
     {
@@ -104,7 +104,7 @@
     },
     {
       "path": "reviews/issue-0053.json",
-      "sha256": "60d6fbed03f8716e89154c6f21910c8078fcd5281a270a491476399da30319cd",
+      "sha256": "5c1acbce594ed917fc4d7206615353f8a3e5c10ccfcb95ba301bafaf5ec37a53",
       "bytes": 691,
       "recordCount": 1
     }

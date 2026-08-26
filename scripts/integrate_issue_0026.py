@@ -530,7 +530,7 @@ def main() -> int:
             + ", ".join(str(path) for path in missing_ranges)
         )
     provenance_counts = apply_provenance(packet, [load(path) for path in PROVENANCE_RANGES])
-    packet["schemaVersion"] = "1.2.0"
+    packet["schemaVersion"] = "1.3.0"
     packet["toolVersion"] = workflow.TOOL_VERSION
     packet["formulaInventory"], formula_errors = workflow.formula_inventory(packet)
     packet["reviewPresentation"] = {"status": "pending", "path": None, "sha256": None}
@@ -549,6 +549,8 @@ def main() -> int:
             workflow.validate_names(
                 entry["names"],
                 entry["source"],
+                entry["adjudication"].get("headingEnglish"),
+                entry["adjudication"].get("english"),
                 entry["sourceUnitId"],
                 f"source unit {entry['sourceOrdinal']}",
                 require_spans=True,
@@ -562,6 +564,8 @@ def main() -> int:
                 workflow.validate_names(
                     translation["names"],
                     source,
+                    translation["adjudication"].get("headingEnglish"),
+                    translation["adjudication"].get("english"),
                     source["segmentId"],
                     source["segmentId"],
                     require_spans=True,
