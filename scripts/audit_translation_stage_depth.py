@@ -5,16 +5,52 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from collections import Counter
 from pathlib import Path
 from typing import Any
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+import translation_workflow as workflow
 
 
 def load(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def add_owner(metrics: Counter, owner: dict[str, Any], source: dict[str, Any]) -> None:
+def has_attached_context_self_attestation(owner: dict[str, Any]) -> bool:
+    """Count internally consistent editable claims, never execution proof."""
+    context = owner.get("independentContext", {})
+    receipt = context.get("receipt", {})
+    provenance = owner.get("provenance", {})
+    evidence = provenance.get("evidence", [])
+    return bool(
+        context.get("status") == "complete"
+        and context.get("freshContext") is True
+        and context.get("priorStageContextExcluded") is True
+        and isinstance(receipt, dict)
+        and receipt.get("receiptId")
+        and receipt.get("receiptSha256")
+        and any(
+            isinstance(item, dict)
+            and item.get("evidenceId") == receipt.get("receiptId")
+            and item.get("role") == "independent_context_receipt"
+            and item.get("sha256") == receipt.get("receiptSha256")
+            for item in evidence
+        )
+    )
+
+
+def add_owner(
+    metrics: Counter,
+    owner: dict[str, Any],
+    source: dict[str, Any],
+    policy_sha256: str,
+) -> None:
+    blind = owner.get("blindTranslation", {})
     critique = owner.get("independentCritique", {})
     findings = critique.get("findings", [])
     witness = owner.get("witnessResolution", {})
@@ -27,25 +63,37 @@ def add_owner(metrics: Counter, owner: dict[str, Any], source: dict[str, Any]) -
     metrics["readableArabicCharacters"] += len(source.get("headingArabic") or "")
     metrics["readableArabicCharacters"] += len(source.get("arabic") or "")
     metrics["adjudicatedEnglishCharacters"] += len(heading) + len(english)
-    metrics["critiqueComplete"] += critique.get("status") == "complete"
-    metrics["semanticAuditComplete"] += (
+    metrics["critiqueStatusComplete"] += critique.get("status") == "complete"
+    metrics["contentAddressedStageChains"] += not workflow.validate_stage_chain(
+        owner,
+        source,
+        policy_sha256,
+        "stage-depth audit",
+    )
+    metrics[
+        "critiqueIndependentContextSelfAttestations"
+    ] += has_attached_context_self_attestation(critique)
+    metrics["semanticAuditStatusComplete"] += (
         critique.get("semanticAudit", {}).get("status") == "complete"
     )
     metrics["findings"] += len(findings) if isinstance(findings, list) else 0
     metrics["recordsWithFindings"] += bool(findings)
-    metrics["witnessComplete"] += witness.get("status") == "complete"
-    metrics["witnessNotRequired"] += witness.get("status") == "not_required"
+    metrics["witnessStatusComplete"] += witness.get("status") == "complete"
+    metrics["witnessStatusNotRequired"] += witness.get("status") == "not_required"
     results = witness.get("results", [])
     metrics["witnessResults"] += len(results) if isinstance(results, list) else 0
-    metrics["adjudicationComplete"] += adjudication.get("status") == "complete"
+    metrics["adjudicationStatusComplete"] += adjudication.get("status") == "complete"
     decisions = adjudication.get("decisions", [])
     metrics["adjudicationDecisions"] += (
         len(decisions) if isinstance(decisions, list) else 0
     )
-    metrics["nameInventoryComplete"] += names.get("status") == "complete"
-    metrics["nameInventoryAuditComplete"] += (
+    metrics["nameInventoryStatusComplete"] += names.get("status") == "complete"
+    metrics["nameInventoryAuditStatusComplete"] += (
         names.get("inventoryAudit", {}).get("status") == "complete"
     )
+    metrics[
+        "nameIndependentContextSelfAttestations"
+    ] += has_attached_context_self_attestation(names)
     candidates = names.get("candidates", [])
     mentions = names.get("mentions", [])
     metrics["nameCandidates"] += len(candidates) if isinstance(candidates, list) else 0
@@ -60,9 +108,10 @@ def audit_packets(paths: list[Path]) -> dict[str, Any]:
     for path in paths:
         packet = load(path)
         issue_numbers.append(packet.get("assignment", {}).get("issueNumber"))
+        policy_sha256 = str(packet.get("policy", {}).get("bindingSha256", ""))
         for entry in packet.get("entries", []):
             metrics["biographies"] += 1
-            add_owner(metrics, entry, entry.get("source", {}))
+            add_owner(metrics, entry, entry.get("source", {}), policy_sha256)
             candidates = entry.get("names", {}).get("candidates", [])
             metrics["biographiesWithMultipleNames"] += (
                 isinstance(candidates, list) and len(candidates) > 1
@@ -72,12 +121,17 @@ def audit_packets(paths: list[Path]) -> dict[str, Any]:
                 entry.get("precedingTranslations", []),
             ):
                 metrics["structuralRecords"] += 1
-                add_owner(metrics, owner, source)
+                add_owner(metrics, owner, source, policy_sha256)
     metrics["recordsWithoutFindings"] = metrics["records"] - metrics["recordsWithFindings"]
     return {
         "kind": "private-packet-stage-depth",
         "packetCount": len(paths),
         "issueNumbers": issue_numbers,
+        "evidenceSemantics": (
+            "Status/checklist/context fields are editable self-attestations; "
+            "contentAddressedStageChains means only recomputed internal consistency, "
+            "not proof that semantic work or separate contexts occurred."
+        ),
         "metrics": dict(sorted(metrics.items())),
     }
 

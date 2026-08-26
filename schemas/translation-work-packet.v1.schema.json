@@ -21,10 +21,10 @@
     "machineReadiness"
   ],
   "properties": {
-    "schemaVersion": { "const": "1.3.0" },
+    "schemaVersion": { "const": "1.4.0" },
     "packetId": { "pattern": "^isabah-translation-issue-[0-9]+$" },
     "workId": { "const": "ibn-hajar-al-isabah" },
-    "toolVersion": { "const": "1.3.0" },
+    "toolVersion": { "const": "1.4.0" },
     "runId": { "pattern": "^translation-run-[0-9a-f]{16}$" },
     "assignment": { "$ref": "#/$defs/assignment" },
     "authority": { "$ref": "#/$defs/authority" },
@@ -43,6 +43,109 @@
   "$defs": {
     "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
     "nullableString": { "type": ["string", "null"] },
+    "nullableSha256": {
+      "anyOf": [{ "$ref": "#/$defs/sha256" }, { "type": "null" }]
+    },
+    "stageEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidenceId", "role", "sha256"],
+      "properties": {
+        "evidenceId": { "type": "string", "minLength": 1 },
+        "role": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "stageProvenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "version",
+        "stage",
+        "origin",
+        "sourceSha256",
+        "upstreamSha256",
+        "promptOrPolicySha256",
+        "schemaSha256",
+        "runId",
+        "model",
+        "reasoning",
+        "evidence",
+        "evidenceSha256",
+        "inputSha256",
+        "outputSha256",
+        "fingerprint"
+      ],
+      "properties": {
+        "status": { "enum": ["pending", "complete"] },
+        "version": { "const": "1.0.0" },
+        "stage": {
+          "enum": [
+            "blind_translation",
+            "independent_critique",
+            "witness_resolution",
+            "adjudication",
+            "name_inventory"
+          ]
+        },
+        "origin": {
+          "enum": ["direct_execution", "legacy_migration", null]
+        },
+        "sourceSha256": { "$ref": "#/$defs/nullableSha256" },
+        "upstreamSha256": { "$ref": "#/$defs/nullableSha256" },
+        "promptOrPolicySha256": { "$ref": "#/$defs/nullableSha256" },
+        "schemaSha256": { "$ref": "#/$defs/nullableSha256" },
+        "runId": { "$ref": "#/$defs/nullableString" },
+        "model": { "$ref": "#/$defs/nullableString" },
+        "reasoning": { "$ref": "#/$defs/nullableString" },
+        "evidence": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/stageEvidence" }
+        },
+        "evidenceSha256": { "$ref": "#/$defs/nullableSha256" },
+        "inputSha256": { "$ref": "#/$defs/nullableSha256" },
+        "outputSha256": { "$ref": "#/$defs/nullableSha256" },
+        "fingerprint": { "$ref": "#/$defs/nullableSha256" }
+      }
+    },
+    "executionReceipt": {
+      "type": "object",
+      "description": "Editable context self-attestation used for internal consistency only; it is not authenticated proof that a separate execution context occurred.",
+      "additionalProperties": false,
+      "required": ["receiptId", "issuer", "receiptSha256"],
+      "properties": {
+        "receiptId": { "type": "string", "minLength": 1 },
+        "issuer": { "type": "string", "minLength": 1 },
+        "receiptSha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "independentContext": {
+      "type": "object",
+      "description": "A workflow self-attestation. Actual context separation must be established by execution controls and durable external evidence, not inferred from these editable fields.",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "method",
+        "freshContext",
+        "priorStageContextExcluded",
+        "inputSha256",
+        "receipt"
+      ],
+      "properties": {
+        "status": { "enum": ["pending", "complete"] },
+        "method": { "$ref": "#/$defs/nullableString" },
+        "freshContext": { "type": ["boolean", "null"] },
+        "priorStageContextExcluded": { "type": ["boolean", "null"] },
+        "inputSha256": { "$ref": "#/$defs/nullableSha256" },
+        "receipt": {
+          "anyOf": [
+            { "$ref": "#/$defs/executionReceipt" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
     "assignment": {
       "type": "object",
       "additionalProperties": false,
@@ -335,14 +438,15 @@
     "blind": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["status", "runId", "model", "reasoning", "policySha256", "english"],
+      "required": ["status", "runId", "model", "reasoning", "policySha256", "english", "provenance"],
       "properties": {
         "status": { "enum": ["pending", "complete"] },
         "runId": { "$ref": "#/$defs/nullableString" },
         "model": { "$ref": "#/$defs/nullableString" },
         "reasoning": { "$ref": "#/$defs/nullableString" },
         "policySha256": { "$ref": "#/$defs/sha256" },
-        "english": { "$ref": "#/$defs/nullableString" }
+        "english": { "$ref": "#/$defs/nullableString" },
+        "provenance": { "$ref": "#/$defs/stageProvenance" }
       }
     },
     "precedingBlind": {
@@ -355,7 +459,8 @@
         "reasoning",
         "policySha256",
         "headingEnglish",
-        "english"
+        "english",
+        "provenance"
       ],
       "properties": {
         "status": { "enum": ["pending", "complete"] },
@@ -364,19 +469,30 @@
         "reasoning": { "$ref": "#/$defs/nullableString" },
         "policySha256": { "$ref": "#/$defs/sha256" },
         "headingEnglish": { "$ref": "#/$defs/nullableString" },
-        "english": { "$ref": "#/$defs/nullableString" }
+        "english": { "$ref": "#/$defs/nullableString" },
+        "provenance": { "$ref": "#/$defs/stageProvenance" }
       }
     },
     "critique": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["status", "runId", "model", "findings", "semanticAudit"],
+      "required": [
+        "status",
+        "runId",
+        "model",
+        "findings",
+        "semanticAudit",
+        "independentContext",
+        "provenance"
+      ],
       "properties": {
         "status": { "enum": ["pending", "complete"] },
         "runId": { "$ref": "#/$defs/nullableString" },
         "model": { "$ref": "#/$defs/nullableString" },
         "findings": { "type": "array" },
-        "semanticAudit": { "$ref": "#/$defs/semanticAudit" }
+        "semanticAudit": { "$ref": "#/$defs/semanticAudit" },
+        "independentContext": { "$ref": "#/$defs/independentContext" },
+        "provenance": { "$ref": "#/$defs/stageProvenance" }
       }
     },
     "semanticAudit": {
@@ -431,14 +547,15 @@
     "witness": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["status", "results", "notRequiredRationale"],
+      "required": ["status", "results", "notRequiredRationale", "provenance"],
       "properties": {
         "status": { "enum": ["pending", "not_required", "complete"] },
         "notRequiredRationale": { "$ref": "#/$defs/nullableString" },
         "results": {
           "type": "array",
           "items": { "$ref": "#/$defs/witnessResult" }
-        }
+        },
+        "provenance": { "$ref": "#/$defs/stageProvenance" }
       }
     },
     "witnessResult": {
@@ -483,28 +600,37 @@
     "adjudication": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["status", "english", "decisions"],
+      "required": ["status", "english", "decisions", "provenance"],
       "properties": {
         "status": { "enum": ["pending", "complete"] },
         "english": { "$ref": "#/$defs/nullableString" },
-        "decisions": { "type": "array" }
+        "decisions": { "type": "array" },
+        "provenance": { "$ref": "#/$defs/stageProvenance" }
       }
     },
     "precedingAdjudication": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["status", "headingEnglish", "english", "decisions"],
+      "required": ["status", "headingEnglish", "english", "decisions", "provenance"],
       "properties": {
         "status": { "enum": ["pending", "complete"] },
         "headingEnglish": { "$ref": "#/$defs/nullableString" },
         "english": { "$ref": "#/$defs/nullableString" },
-        "decisions": { "type": "array" }
+        "decisions": { "type": "array" },
+        "provenance": { "$ref": "#/$defs/stageProvenance" }
       }
     },
     "names": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["status", "candidates", "mentions", "inventoryAudit"],
+      "required": [
+        "status",
+        "candidates",
+        "mentions",
+        "inventoryAudit",
+        "independentContext",
+        "provenance"
+      ],
       "properties": {
         "status": { "enum": ["pending", "complete"] },
         "candidates": {
@@ -515,7 +641,9 @@
           "type": "array",
           "items": { "$ref": "#/$defs/nameMention" }
         },
-        "inventoryAudit": { "$ref": "#/$defs/nameInventoryAudit" }
+        "inventoryAudit": { "$ref": "#/$defs/nameInventoryAudit" },
+        "independentContext": { "$ref": "#/$defs/independentContext" },
+        "provenance": { "$ref": "#/$defs/stageProvenance" }
       }
     },
     "nameInventoryAudit": {

@@ -41,6 +41,8 @@ def assignment_issue(number=25, start=1, end=2):
 
 
 def complete_autonomous_stages(packet):
+    policy_sha256 = packet["policy"]["bindingSha256"]
+
     def translated(label, source_text):
         targets = [
             occurrence["rule"]["target"]
@@ -77,6 +79,148 @@ def complete_autonomous_stages(packet):
             ),
             "assessment": "Every personal reference in the fixture was reconciled.",
         }
+
+    def independent_context(
+        stage, source, upstream, model, reasoning, evidence, receipt
+    ):
+        input_sha256 = MODULE.stage_input_sha256(
+            stage,
+            MODULE.semantic_source_sha256(source),
+            MODULE.stage_upstream_sha256(upstream),
+            policy_sha256,
+            MODULE.packet_schema_sha256(),
+            model,
+            reasoning,
+            MODULE.stage_evidence_sha256(evidence),
+        )
+        return {
+            "status": "complete",
+            "method": "fresh isolated synthetic test execution",
+            "freshContext": True,
+            "priorStageContextExcluded": True,
+            "inputSha256": input_sha256,
+            "receipt": receipt,
+        }
+
+    def finish_stage_chain(owner, source, token):
+        blind = owner["blindTranslation"]
+        blind["provenance"] = MODULE.completed_stage_provenance(
+            blind,
+            "blind_translation",
+            source,
+            [],
+            policy_sha256,
+            blind["model"],
+            blind["reasoning"],
+            [],
+        )
+
+        critique = owner["independentCritique"]
+        critique_receipt = {
+            "receiptId": f"critique-context-{token}",
+            "issuer": "synthetic-test-execution-harness",
+            "receiptSha256": MODULE.text_sha256(f"critique receipt {token}"),
+        }
+        critique_evidence = [
+            {
+                "evidenceId": critique_receipt["receiptId"],
+                "role": "independent_context_receipt",
+                "sha256": critique_receipt["receiptSha256"],
+            }
+        ]
+        critique_reasoning = "high"
+        critique["independentContext"] = independent_context(
+            "independent_critique",
+            source,
+            [("blind_translation", blind)],
+            critique["model"],
+            critique_reasoning,
+            critique_evidence,
+            critique_receipt,
+        )
+        critique["provenance"] = MODULE.completed_stage_provenance(
+            critique,
+            "independent_critique",
+            source,
+            [("blind_translation", blind)],
+            policy_sha256,
+            critique["model"],
+            critique_reasoning,
+            critique_evidence,
+        )
+
+        witness = owner["witnessResolution"]
+        witness_evidence = [
+            {
+                "evidenceId": f"witness-result-{token}-{index}",
+                "role": "witness_result",
+                "sha256": result["evidenceSha256"],
+            }
+            for index, result in enumerate(witness["results"], start=1)
+        ]
+        witness["provenance"] = MODULE.completed_stage_provenance(
+            witness,
+            "witness_resolution",
+            source,
+            [("independent_critique", critique)],
+            policy_sha256,
+            "deterministic-witness-gate",
+            "source-bound",
+            witness_evidence,
+            run_id=f"witness-{token}",
+        )
+
+        adjudication = owner["adjudication"]
+        adjudication["provenance"] = MODULE.completed_stage_provenance(
+            adjudication,
+            "adjudication",
+            source,
+            [
+                ("blind_translation", blind),
+                ("independent_critique", critique),
+                ("witness_resolution", witness),
+            ],
+            policy_sha256,
+            "codex-adjudication",
+            "high",
+            [],
+            run_id=f"adjudication-{token}",
+        )
+
+        names = owner["names"]
+        name_receipt = {
+            "receiptId": f"name-context-{token}",
+            "issuer": "synthetic-test-execution-harness",
+            "receiptSha256": MODULE.text_sha256(f"name receipt {token}"),
+        }
+        name_evidence = [
+            {
+                "evidenceId": name_receipt["receiptId"],
+                "role": "independent_context_receipt",
+                "sha256": name_receipt["receiptSha256"],
+            }
+        ]
+        name_model = "codex-independent-name-pass"
+        name_reasoning = "high"
+        names["independentContext"] = independent_context(
+            "name_inventory",
+            source,
+            [("adjudication", adjudication)],
+            name_model,
+            name_reasoning,
+            name_evidence,
+            name_receipt,
+        )
+        names["provenance"] = MODULE.completed_stage_provenance(
+            names,
+            "name_inventory",
+            source,
+            [("adjudication", adjudication)],
+            policy_sha256,
+            name_model,
+            name_reasoning,
+            name_evidence,
+        )
 
     for entry in packet["entries"]:
         number = entry["sourceOrdinal"]
@@ -143,6 +287,7 @@ def complete_autonomous_stages(packet):
                 ),
             }
             translation["unresolved"] = []
+            finish_stage_chain(translation, source, f"structure-{number}-{index}")
         entry["blindTranslation"].update(
             {
                 "status": "complete",
@@ -214,6 +359,7 @@ def complete_autonomous_stages(packet):
             ),
         }
         entry["unresolved"] = []
+        finish_stage_chain(entry, entry["source"], f"entry-{number}")
 
 
 class TranslationWorkflowTests(unittest.TestCase):
@@ -319,7 +465,7 @@ class TranslationWorkflowTests(unittest.TestCase):
     def test_packet_explicitly_excludes_container_metadata(self):
         packet = self.packet()
         exclusions = packet["scope"]["excludedRanges"]
-        self.assertEqual(packet["schemaVersion"], "1.3.0")
+        self.assertEqual(packet["schemaVersion"], "1.4.0")
         self.assertEqual(exclusions[0]["kind"], "openiti_metadata")
         self.assertEqual(exclusions[0]["lineStart"], 1)
         self.assertEqual(exclusions[0]["lineEnd"], 4)
@@ -632,11 +778,98 @@ class TranslationWorkflowTests(unittest.TestCase):
             any("explicitly cover every required category" in error for error in errors)
         )
 
-    def test_packet_scale_title_only_name_placeholder_is_rejected(self):
-        error = MODULE.validate_name_inventory_distribution([1] * 20)
-        self.assertTrue(any("one-candidate placeholder" in item for item in error))
-        self.assertEqual(
-            MODULE.validate_name_inventory_distribution([1] * 16 + [2] * 4), []
+    def test_prepared_packet_carries_pending_stage_provenance(self):
+        packet = self.packet()
+        owners = [
+            owner
+            for entry in packet["entries"]
+            for owner in [entry, *entry["precedingTranslations"]]
+        ]
+        for owner in owners:
+            for field in (
+                "blindTranslation",
+                "independentCritique",
+                "witnessResolution",
+                "adjudication",
+                "names",
+            ):
+                self.assertEqual(owner[field]["provenance"]["status"], "pending")
+            self.assertEqual(
+                owner["independentCritique"]["independentContext"]["status"],
+                "pending",
+            )
+            self.assertEqual(
+                owner["names"]["independentContext"]["status"], "pending"
+            )
+
+    def test_schema_1_3_packet_cannot_be_machine_ready(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        packet["schemaVersion"] = "1.3.0"
+        packet["toolVersion"] = "1.3.0"
+        errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertTrue(any("schemaVersion must be 1.4.0" in error for error in errors))
+        self.assertTrue(any("toolVersion must be 1.4.0" in error for error in errors))
+
+    def test_status_run_and_content_hashes_do_not_replace_stage_provenance(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        critique = packet["entries"][0]["independentCritique"]
+        critique.pop("provenance")
+        errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertTrue(
+            any("content-addressed provenance is incomplete" in error for error in errors)
+        )
+
+    def test_machine_ready_requires_internal_context_self_attestation(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        critique = packet["entries"][0]["independentCritique"]
+        critique["independentContext"]["receipt"] = None
+        errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertTrue(
+            any(
+                "context self-attestation receipt is incomplete" in error
+                for error in errors
+            )
+        )
+
+        complete_autonomous_stages(packet)
+        names = packet["entries"][0]["names"]
+        names["independentContext"]["receipt"] = None
+        errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertTrue(
+            any(
+                "context self-attestation receipt is incomplete" in error
+                for error in errors
+            )
+        )
+
+    def test_stage_provenance_detects_upstream_output_drift(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        packet["entries"][0]["blindTranslation"]["english"] += " Drift."
+        errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertTrue(
+            any("blind_translation outputSha256 is stale" in error for error in errors)
+        )
+        self.assertTrue(
+            any("independent_critique upstreamSha256 is stale" in error for error in errors)
+        )
+
+    def test_canned_witness_rationale_alone_is_not_stage_evidence(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        witness = packet["entries"][0]["witnessResolution"]
+        witness["provenance"] = MODULE.pending_stage_provenance(
+            "witness_resolution"
+        )
+        errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertTrue(
+            any(
+                "witness_resolution content-addressed provenance is incomplete" in error
+                for error in errors
+            )
         )
 
     def test_name_candidate_requires_grounded_english_form(self):
@@ -1004,6 +1237,48 @@ class TranslationWorkflowTests(unittest.TestCase):
                 MODULE.semantic_candidate_sha256(
                     None, mutated["entries"][0]["adjudication"]["english"]
                 )
+            )
+            entry = mutated["entries"][0]
+            adjudication = entry["adjudication"]
+            adjudication_provenance = adjudication["provenance"]
+            adjudication["provenance"] = MODULE.completed_stage_provenance(
+                adjudication,
+                "adjudication",
+                entry["source"],
+                [
+                    ("blind_translation", entry["blindTranslation"]),
+                    ("independent_critique", entry["independentCritique"]),
+                    ("witness_resolution", entry["witnessResolution"]),
+                ],
+                mutated["policy"]["bindingSha256"],
+                adjudication_provenance["model"],
+                adjudication_provenance["reasoning"],
+                adjudication_provenance["evidence"],
+                run_id=adjudication_provenance["runId"],
+            )
+            names = entry["names"]
+            name_provenance = names["provenance"]
+            names["independentContext"]["inputSha256"] = MODULE.stage_input_sha256(
+                "name_inventory",
+                MODULE.semantic_source_sha256(entry["source"]),
+                MODULE.stage_upstream_sha256(
+                    [("adjudication", adjudication)]
+                ),
+                mutated["policy"]["bindingSha256"],
+                MODULE.packet_schema_sha256(),
+                name_provenance["model"],
+                name_provenance["reasoning"],
+                MODULE.stage_evidence_sha256(name_provenance["evidence"]),
+            )
+            names["provenance"] = MODULE.completed_stage_provenance(
+                names,
+                "name_inventory",
+                entry["source"],
+                [("adjudication", adjudication)],
+                mutated["policy"]["bindingSha256"],
+                name_provenance["model"],
+                name_provenance["reasoning"],
+                name_provenance["evidence"],
             )
             MODULE.atomic_write(packet_path, MODULE.json_bytes(mutated))
             with self.assertRaisesRegex(

@@ -1,7 +1,7 @@
 {
   "schema": "al-isabah.translation-coverage.v1",
-  "schema_version": "1.0.0",
-  "status_id": "translation-coverage-2026-08-25",
+  "schema_version": "1.1.0",
+  "status_id": "translation-coverage-2026-08-26",
   "work_id": "ibn-hajar-al-isabah",
   "policy_binding": "compliance/policy-binding.v2.json",
   "semantics": {
@@ -15,6 +15,11 @@
     ],
     "human_review_relation": "independent-ongoing-management-state",
     "human_review_edits_reopen_completion": false,
+    "count_semantics": {
+      "translated_units": "units-with-structured-english-candidates",
+      "remaining_agent_units": "units-with-machine-actionable-autonomous-work",
+      "overlap_permitted_while_not_agent_complete": true
+    },
     "reopen_triggers": [
       "locked-scope-expanded",
       "bound-source-or-policy-stale",
@@ -53,14 +58,29 @@
       "label": "Volume 2",
       "volume": 2,
       "agent_completion": {
-        "status": "agent_complete",
+        "status": "reopened",
         "locked_units": 1497,
         "translated_units": 1497,
-        "remaining_agent_units": 0,
-        "basis": "issues-0054-through-0068-machine-ready-public-proposal",
-        "evidence": {
-          "source_register_artifact": "issue-0053-public-proposal-v1",
-          "sha256": "2d5d43858dfecf55cd82be0ac92fd978087b43daac2c048ac2e718efb9de4a7b"
+        "remaining_agent_units": 1497,
+        "basis": "issue-0070-machine-actionable-substantive-defect-recovery",
+        "recovery": {
+          "issue": "https://github.com/yaqub0r/al-isabah/issues/70",
+          "trigger": "machine-actionable-substantive-defect",
+          "state": "in_progress",
+          "historical_evidence_scope": "superseded-completion-claim-only",
+          "historical_completion": {
+            "status": "agent_complete",
+            "locked_units": 1497,
+            "translated_units": 1497,
+            "remaining_agent_units": 0,
+            "basis": "issues-0054-through-0068-machine-ready-public-proposal",
+            "evidence": {
+              "source_register_artifact": "issue-0053-public-proposal-v1",
+              "sha256": "2d5d43858dfecf55cd82be0ac92fd978087b43daac2c048ac2e718efb9de4a7b"
+            }
+          },
+          "public_working_status": "blocked",
+          "canonical_promotion": "blocked"
         }
       },
       "human_review": {
@@ -68,8 +88,8 @@
         "reviewed_units": 0,
         "unreviewed_units": 1497
       },
-      "workflow_conformance": "current",
-      "public_working_status": "available",
+      "workflow_conformance": "recovery_in_progress",
+      "public_working_status": "blocked",
       "canonical_promotion": "blocked"
     },
     {

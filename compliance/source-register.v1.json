@@ -1,7 +1,7 @@
 {
   "schema": "al-isabah.source-compliance-register.v1",
   "work_id": "ibn-hajar-al-isabah",
-  "assessed_at": "2026-08-12",
+  "assessed_at": "2026-08-26",
   "policy_binding": "compliance/policy-binding.v1.json",
   "classification_definitions": {
     "approved-for-publication": "An affirmative public reuse basis has been verified for this exact artifact and intended use.",
@@ -268,12 +268,12 @@
         "add restricted witness expression, raw findings, reconstructive evidence, or operational metadata",
         "publish without exact public-boundary and release-closure validation"
       ],
-      "review_status": "approved-forward-remediation-canonical-promotion-blocked"
+      "review_status": "approved-current-public-working-distribution-canonical-promotion-blocked"
     },
     {
       "id": "issue-0053-public-proposal-v1",
       "kind": "public-working-bilingual-proposal",
-      "title": "Issue 0053 Volume 2 strict public proposal",
+      "title": "Historical issue 0053 Volume 2 strict public proposal",
       "classification": "approved-for-publication",
       "rights_basis": "A deterministic strict-public projection of fifteen machine-ready Volume 2 translation packets. It retains the approved OpenITI Arabic authority, independently authored project English, normalized review state, formula identity, names, public-safe provenance, and aggregate evidence hashes while excluding internal stages, raw findings, witness expression, model traces, operational locations, and source coordinates.",
       "license": {
@@ -295,17 +295,17 @@
         "openiti-cleaned-arabic-comparison"
       ],
       "allowed_actions": [
-        "noncommercial public-working reading with attribution and share-alike terms",
-        "deterministic v2 consumer distribution",
-        "aggregate machine and human review reporting",
-        "human review proposals without changing the agent-complete state"
+        "retain the immutable proposal and review as historical evidence",
+        "inspect and verify the exact historical public-boundary projection",
+        "use the artifact only as evidence of the superseded completion claim recorded by issue 70"
       ],
       "prohibited_public_actions": [
-        "represent the proposal as canonically promoted or human-approved",
+        "include the proposal in a current release closure or public-working distribution while Volume 2 is reopened",
+        "represent the proposal as currently machine-ready, agent-complete, canonically promoted, or human-approved",
         "add restricted witness expression, raw findings, internal stages, model traces, or operational metadata",
-        "publish without strict public-boundary and cumulative release-closure validation"
+        "rewrite or replace the immutable historical proposal or review"
       ],
-      "review_status": "approved-public-working-proposal-canonical-promotion-blocked"
+      "review_status": "historical-reopened-scope-current-distribution-quarantined"
     },
     {
       "id": "volume-08-aligned-arabic",

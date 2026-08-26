@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0.0",
+  "closureId": "issue-0070-current-public-working-closure-v1",
+  "issue": "https://github.com/yaqub0r/al-isabah/issues/70",
+  "publicationStatus": "public-working",
+  "canonicalPromotion": "blocked",
+  "consumerSchemaVersion": "2.0.0",
+  "proposals": [
+    {
+      "proposalId": "issue-0026-public-proposal-v1",
+      "publicProposal": {
+        "path": "content/public-proposals/issue-0026.public-proposal.json",
+        "sha256": "d3724903dd3ffd8030390415464fcbc9728274f971dd2b774e6384ecda30359c"
+      },
+      "publicReview": {
+        "path": "content/public-proposals/issue-0026.public-review.json",
+        "sha256": "39806b1fac07f7e806fda7d3bd528ae320f1491cbafa43242af1881453dde4ef"
+      },
+      "policyBinding": {
+        "path": "compliance/policy-binding.v1.json",
+        "sha256": "f1ca5fa8303b13e70bbd92aeeb8e5d2a05ba037cf951043b5043262dd2d591e5"
+      },
+      "projection": {
+        "entryCount": 1537,
+        "orderSha256": "69efa02ecc2c277471bd1108ffb4f6f758c3454659814b2ef3f80fce845f667f",
+        "userFacingSha256": "702a3af5543f3c8d83aa45559f62a132300cd6dabe7a3b3428940b73d8493047",
+        "recordsSha256": "cd08afb8b55700fe291bbc1ef0ab3a48b240e849bd4cce7a105e45722fabbc2f"
+      }
+    }
+  ],
+  "sourceAuthorities": [
+    {
+      "sourceId": "openiti-cleaned-arabic-comparison",
+      "commit": "5835c183b8bbf4ea454d5c1be2b168b669403771",
+      "artifactSha256": "bc9db8134c8278973967c91c00324531833f643fc0fb2c8ebe318c9ed4469eea",
+      "license": "CC-BY-NC-SA-4.0",
+      "attributionRequired": true
+    }
+  ],
+  "sourceRegister": {
+    "path": "compliance/source-register.v1.json",
+    "sha256": "14d0564c9e56de65dd19fe0dccb5f87df9174aa7bb44f019b84556dc58f67017"
+  },
+  "translationCoverage": {
+    "path": "compliance/translation-coverage.v1.json",
+    "sha256": "265c98bcb068389eb241c24339ade9f8fedb4fa6ed535475896aec946cce7c9d"
+  },
+  "rights": {
+    "path": "compliance/rights-matrix.al-isabah.v1.json",
+    "sha256": "97df0e768ceec261b7c8686cd9d449bcf64b4cf4c0342ba9206f8cfc552f0110",
+    "matrixId": "al-isabah-rights-2026-08-15",
+    "license": "CC-BY-NC-SA-4.0"
+  },
+  "promotion": {
+    "path": "compliance/promotions/available-data.v1.json",
+    "sha256": "b2cb050d877a445b01fc4f83ab48e9b5e1ecb4419200f3357aa5d6e64b74db94",
+    "status": "blocked"
+  },
+  "historicalClosure": {
+    "path": "compliance/publication/issue-0053.release-closure.v1.json",
+    "sha256": "64d41b0752b2de3d11a944d440c3816ab04313c512e2c9c74c2a1aa03981e081"
+  },
+  "reviewCounts": {
+    "machinePassed": 745,
+    "needsAttention": 792,
+    "humanReviewed": 0,
+    "humanUnreviewed": 1537
+  },
+  "outputInventory": [
+    {
+      "path": "records/volume-01.jsonl",
+      "sha256": "cd08afb8b55700fe291bbc1ef0ab3a48b240e849bd4cce7a105e45722fabbc2f",
+      "bytes": 6945696,
+      "recordCount": 1537
+    },
+    {
+      "path": "reviews/issue-0026.json",
+      "sha256": "39806b1fac07f7e806fda7d3bd528ae320f1491cbafa43242af1881453dde4ef",
+      "bytes": 691,
+      "recordCount": 1
+    }
+  ]
+}

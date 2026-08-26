@@ -17,6 +17,7 @@ RELATIONSHIP_PROSE = re.compile(
     r"\b(?:the\s+)?(?:wife|mother|sister|daughter)\s+of\b|\b(?:mentioned|narrated)\b",
     re.IGNORECASE,
 )
+BODY_BOUNDARY = " \t\r\n,،.;:—–-"
 
 
 def load(path: Path = PROFILE) -> dict[str, Any]:
@@ -38,6 +39,55 @@ def _bilingual(value: object, location: str) -> list[str]:
         elif text != text.strip() or "\n" in text:
             errors.append(f"{location}.{language}: must be a single trimmed block")
     return errors
+
+
+def decision_index(profile: dict[str, Any]) -> dict[int, dict[str, Any]]:
+    """Return the exact governed decisions, keyed by printed entry number.
+
+    The current profile contract makes printed entry number its decision key.
+    Profile validation rejects duplicates before this index is suitable for a
+    public projection.
+    """
+    errors = validate(profile)
+    if errors:
+        raise ValueError("entry-title decision profile is invalid")
+    return {
+        decision["sourceEntryNumber"]: decision
+        for decision in profile["decisions"]
+    }
+
+
+def decision_for_entry(
+    profile: dict[str, Any], source_entry_number: int
+) -> dict[str, Any]:
+    decision = decision_index(profile).get(source_entry_number)
+    if decision is None:
+        raise ValueError(
+            f"source entry {source_entry_number} lacks a governed bilingual "
+            "title/body decision"
+        )
+    return decision
+
+
+def body_after_decided_title(
+    text: str,
+    title: str,
+    body_opening: str,
+    *,
+    location: str,
+) -> str:
+    """Remove only an exact decided title and prove the retained body opening."""
+    if not text.startswith(title):
+        raise ValueError(f"{location}: decided title is not an exact text prefix")
+    remainder = text[len(title):]
+    if not remainder or remainder[0] not in BODY_BOUNDARY:
+        raise ValueError(f"{location}: decided title has no exact body boundary")
+    body = remainder.lstrip(BODY_BOUNDARY)
+    if not body.startswith(body_opening):
+        raise ValueError(
+            f"{location}: decided moved text is not retained at the body opening"
+        )
+    return body
 
 
 def validate(profile: dict[str, Any]) -> list[str]:

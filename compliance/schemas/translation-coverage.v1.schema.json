@@ -15,7 +15,7 @@
   ],
   "properties": {
     "schema": { "const": "al-isabah.translation-coverage.v1" },
-    "schema_version": { "const": "1.0.0" },
+    "schema_version": { "const": "1.1.0" },
     "status_id": { "type": "string", "pattern": "^translation-coverage-[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
     "work_id": { "const": "ibn-hajar-al-isabah" },
     "policy_binding": { "const": "compliance/policy-binding.v2.json" },
@@ -27,6 +27,7 @@
         "agent_complete_requirements",
         "human_review_relation",
         "human_review_edits_reopen_completion",
+        "count_semantics",
         "reopen_triggers"
       ],
       "properties": {
@@ -42,6 +43,20 @@
         },
         "human_review_relation": { "const": "independent-ongoing-management-state" },
         "human_review_edits_reopen_completion": { "const": false },
+        "count_semantics": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "translated_units",
+            "remaining_agent_units",
+            "overlap_permitted_while_not_agent_complete"
+          ],
+          "properties": {
+            "translated_units": { "const": "units-with-structured-english-candidates" },
+            "remaining_agent_units": { "const": "units-with-machine-actionable-autonomous-work" },
+            "overlap_permitted_while_not_agent_complete": { "const": true }
+          }
+        },
         "reopen_triggers": {
           "const": [
             "locked-scope-expanded",
@@ -81,25 +96,135 @@
               "locked_units",
               "translated_units",
               "remaining_agent_units",
-              "basis",
-              "evidence"
+              "basis"
             ],
             "properties": {
               "status": { "enum": ["not_started", "in_progress", "agent_complete", "reopened"] },
               "locked_units": { "type": "integer", "minimum": 0 },
-              "translated_units": { "type": "integer", "minimum": 0 },
-              "remaining_agent_units": { "type": "integer", "minimum": 0 },
+              "translated_units": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "Units with structured English candidates. In a non-complete recovery this may overlap remaining_agent_units."
+              },
+              "remaining_agent_units": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "Units with machine-actionable autonomous work remaining, whether or not a structured English candidate already exists."
+              },
               "basis": { "type": "string", "minLength": 1 },
               "evidence": {
                 "type": "object",
+                "description": "Evidence for the current agent_complete claim. A reopened scope retains superseded evidence only under recovery.historical_completion.",
                 "additionalProperties": false,
                 "required": ["source_register_artifact", "sha256"],
                 "properties": {
                   "source_register_artifact": { "type": "string", "minLength": 1 },
                   "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
                 }
+              },
+              "recovery": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "issue",
+                  "trigger",
+                  "state",
+                  "historical_evidence_scope",
+                  "historical_completion",
+                  "public_working_status",
+                  "canonical_promotion"
+                ],
+                "properties": {
+                  "issue": {
+                    "type": "string",
+                    "pattern": "^https://github\\.com/yaqub0r/al-isabah/issues/[0-9]+$"
+                  },
+                  "trigger": {
+                    "enum": [
+                      "locked-scope-expanded",
+                      "bound-source-or-policy-stale",
+                      "machine-actionable-substantive-defect"
+                    ]
+                  },
+                  "state": { "const": "in_progress" },
+                  "historical_evidence_scope": { "const": "superseded-completion-claim-only" },
+                  "historical_completion": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "status",
+                      "locked_units",
+                      "translated_units",
+                      "remaining_agent_units",
+                      "basis",
+                      "evidence"
+                    ],
+                    "properties": {
+                      "status": { "const": "agent_complete" },
+                      "locked_units": { "type": "integer", "minimum": 0 },
+                      "translated_units": { "type": "integer", "minimum": 0 },
+                      "remaining_agent_units": { "const": 0 },
+                      "basis": { "type": "string", "minLength": 1 },
+                      "evidence": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": ["source_register_artifact", "sha256"],
+                        "properties": {
+                          "source_register_artifact": { "type": "string", "minLength": 1 },
+                          "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+                        }
+                      }
+                    }
+                  },
+                  "public_working_status": { "enum": ["available", "blocked"] },
+                  "canonical_promotion": { "const": "blocked" }
+                }
               }
-            }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": { "status": { "const": "agent_complete" } },
+                  "required": ["status"]
+                },
+                "then": {
+                  "required": ["evidence"],
+                  "properties": {
+                    "remaining_agent_units": { "const": 0 }
+                  },
+                  "not": { "required": ["recovery"] }
+                }
+              },
+              {
+                "if": {
+                  "properties": { "status": { "const": "reopened" } },
+                  "required": ["status"]
+                },
+                "then": {
+                  "required": ["recovery"],
+                  "properties": {
+                    "remaining_agent_units": { "minimum": 1 }
+                  },
+                  "not": { "required": ["evidence"] }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "status": { "enum": ["not_started", "in_progress"] }
+                  },
+                  "required": ["status"]
+                },
+                "then": {
+                  "not": {
+                    "anyOf": [
+                      { "required": ["evidence"] },
+                      { "required": ["recovery"] }
+                    ]
+                  }
+                }
+              }
+            ]
           },
           "human_review": {
             "type": "object",
@@ -111,7 +236,7 @@
               "unreviewed_units": { "type": "integer", "minimum": 0 }
             }
           },
-          "workflow_conformance": { "enum": ["current", "legacy_audit_required"] },
+          "workflow_conformance": { "enum": ["current", "recovery_in_progress", "legacy_audit_required"] },
           "public_working_status": { "enum": ["available", "blocked"] },
           "canonical_promotion": { "enum": ["blocked", "eligible", "promoted"] }
         }

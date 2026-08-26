@@ -63,6 +63,30 @@ class EntryTitleContractTests(unittest.TestCase):
         errors = MODULE.validate(profile)
         self.assertTrue(any("bodyOpening.ar" in error for error in errors), errors)
 
+    def test_exact_decided_title_is_removed_and_body_opening_is_retained(self) -> None:
+        self.assertEqual(
+            MODULE.body_after_decided_title(
+                "Ḥāzim, without a lineage attribution.",
+                "Ḥāzim",
+                "without a lineage attribution",
+                location="synthetic English body",
+            ),
+            "without a lineage attribution.",
+        )
+
+    def test_rejects_title_split_that_loses_the_decided_body_opening(self) -> None:
+        with self.assertRaisesRegex(ValueError, "not retained"):
+            MODULE.body_after_decided_title(
+                "Ḥāzim, narrated a report.",
+                "Ḥāzim",
+                "without a lineage attribution",
+                location="synthetic English body",
+            )
+
+    def test_volume2_has_no_governed_title_decision_yet(self) -> None:
+        with self.assertRaisesRegex(ValueError, "lacks a governed bilingual"):
+            MODULE.decision_for_entry(self.profile, 1538)
+
 
 if __name__ == "__main__":
     unittest.main()

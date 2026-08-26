@@ -32,9 +32,11 @@ FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 RUNTIME_ROOT = ROOT / ".runtime" / "translation"
 PROPOSAL_ROOT = ROOT / "content" / "translation-proposals"
 REPOSITORY = "yaqub0r/al-isabah"
-TOOL_VERSION = "1.3.0"
+TOOL_VERSION = "1.4.0"
 FORMULA_REGISTRY_VERSION = "1.2.2"
 SEMANTIC_AUDIT_VERSION = "1.0.0"
+STAGE_PROVENANCE_VERSION = "1.0.0"
+PACKET_SCHEMA_VERSION = "1.4.0"
 SEMANTIC_AUDIT_CATEGORIES = (
     "omissions",
     "additions",
@@ -783,6 +785,445 @@ def semantic_candidate_sha256(
     )
 
 
+def content_sha256(value: Any) -> str:
+    """Hash a canonical JSON value used as a semantic-stage input or output."""
+    return bytes_sha256(json_bytes(value))
+
+
+def packet_schema_sha256() -> str:
+    """Bind completed stages to the exact packet schema used for validation."""
+    return canonical_text_sha256(DEFAULT_PACKET_SCHEMA)
+
+
+def pending_stage_provenance(stage: str) -> dict[str, Any]:
+    return {
+        "status": "pending",
+        "version": STAGE_PROVENANCE_VERSION,
+        "stage": stage,
+        "origin": None,
+        "sourceSha256": None,
+        "upstreamSha256": None,
+        "promptOrPolicySha256": None,
+        "schemaSha256": None,
+        "runId": None,
+        "model": None,
+        "reasoning": None,
+        "evidence": [],
+        "evidenceSha256": None,
+        "inputSha256": None,
+        "outputSha256": None,
+        "fingerprint": None,
+    }
+
+
+def pending_independent_context() -> dict[str, Any]:
+    return {
+        "status": "pending",
+        "method": None,
+        "freshContext": None,
+        "priorStageContextExcluded": None,
+        "inputSha256": None,
+        "receipt": None,
+    }
+
+
+def stage_output_payload(owner: dict[str, Any], stage: str) -> dict[str, Any]:
+    """Return only the stage result; the provenance envelope cannot hash itself."""
+    fields = {
+        "blind_translation": (
+            "status",
+            "runId",
+            "model",
+            "reasoning",
+            "policySha256",
+            "headingEnglish",
+            "english",
+        ),
+        "independent_critique": (
+            "status",
+            "runId",
+            "model",
+            "findings",
+            "semanticAudit",
+            "independentContext",
+        ),
+        "witness_resolution": (
+            "status",
+            "results",
+            "notRequiredRationale",
+        ),
+        "adjudication": (
+            "status",
+            "headingEnglish",
+            "english",
+            "decisions",
+        ),
+        "name_inventory": (
+            "status",
+            "candidates",
+            "mentions",
+            "inventoryAudit",
+            "independentContext",
+        ),
+    }
+    return {field: owner.get(field) for field in fields[stage] if field in owner}
+
+
+def stage_upstream_sha256(
+    upstream: list[tuple[str, dict[str, Any]]],
+) -> str:
+    return content_sha256(
+        [
+            {
+                "stage": stage,
+                "outputSha256": content_sha256(stage_output_payload(owner, stage)),
+            }
+            for stage, owner in upstream
+        ]
+    )
+
+
+def stage_evidence_sha256(evidence: Any) -> str:
+    return content_sha256(evidence if isinstance(evidence, list) else [])
+
+
+def stage_input_sha256(
+    stage: str,
+    source_sha256: str,
+    upstream_sha256: str,
+    policy_sha256: str,
+    schema_sha256: str,
+    model: str,
+    reasoning: str,
+    evidence_sha256: str,
+) -> str:
+    return content_sha256(
+        {
+            "stage": stage,
+            "sourceSha256": source_sha256,
+            "upstreamSha256": upstream_sha256,
+            "promptOrPolicySha256": policy_sha256,
+            "schemaSha256": schema_sha256,
+            "model": model,
+            "reasoning": reasoning,
+            "evidenceSha256": evidence_sha256,
+        }
+    )
+
+
+def stage_fingerprint(provenance: dict[str, Any]) -> str:
+    return content_sha256(
+        {
+            field: provenance.get(field)
+            for field in (
+                "version",
+                "stage",
+                "origin",
+                "sourceSha256",
+                "upstreamSha256",
+                "promptOrPolicySha256",
+                "schemaSha256",
+                "runId",
+                "model",
+                "reasoning",
+                "evidenceSha256",
+                "inputSha256",
+                "outputSha256",
+            )
+        }
+    )
+
+
+def completed_stage_provenance(
+    owner: dict[str, Any],
+    stage: str,
+    source: dict[str, Any],
+    upstream: list[tuple[str, dict[str, Any]]],
+    policy_sha256: str,
+    model: str,
+    reasoning: str,
+    evidence: list[dict[str, Any]],
+    run_id: str | None = None,
+    origin: str = "direct_execution",
+) -> dict[str, Any]:
+    """Build deterministic provenance after externally produced evidence exists."""
+    source_sha256 = semantic_source_sha256(source)
+    upstream_sha256 = stage_upstream_sha256(upstream)
+    schema_sha256 = packet_schema_sha256()
+    evidence_sha256 = stage_evidence_sha256(evidence)
+    input_sha256 = stage_input_sha256(
+        stage,
+        source_sha256,
+        upstream_sha256,
+        policy_sha256,
+        schema_sha256,
+        model,
+        reasoning,
+        evidence_sha256,
+    )
+    provenance = {
+        "status": "complete",
+        "version": STAGE_PROVENANCE_VERSION,
+        "stage": stage,
+        "origin": origin,
+        "sourceSha256": source_sha256,
+        "upstreamSha256": upstream_sha256,
+        "promptOrPolicySha256": policy_sha256,
+        "schemaSha256": schema_sha256,
+        "runId": run_id
+        or owner.get("runId")
+        or owner.get("inventoryAudit", {}).get("runId"),
+        "model": model,
+        "reasoning": reasoning,
+        "evidence": evidence,
+        "evidenceSha256": evidence_sha256,
+        "inputSha256": input_sha256,
+        "outputSha256": content_sha256(stage_output_payload(owner, stage)),
+        "fingerprint": None,
+    }
+    provenance["fingerprint"] = stage_fingerprint(provenance)
+    return provenance
+
+
+def validate_independent_context(
+    owner: dict[str, Any], provenance: dict[str, Any], prefix: str
+) -> list[str]:
+    """Validate an editable context self-attestation, never context authenticity.
+
+    Actual separation is an execution property supplied by the coordinator and
+    durable evidence system. These packet fields establish only internal
+    consistency and must not be reported as proof that another context ran.
+    """
+    context = owner.get("independentContext")
+    if not isinstance(context, dict) or context.get("status") != "complete":
+        return [f"{prefix}: independent context self-attestation is incomplete"]
+    errors: list[str] = []
+    if not isinstance(context.get("method"), str) or len(context["method"].strip()) < 12:
+        errors.append(f"{prefix}: independent context method is incomplete")
+    if context.get("freshContext") is not True:
+        errors.append(f"{prefix}: independent context must be fresh")
+    if context.get("priorStageContextExcluded") is not True:
+        errors.append(f"{prefix}: prior-stage context exclusion is not attested")
+    if context.get("inputSha256") != provenance.get("inputSha256"):
+        errors.append(f"{prefix}: independent context input hash is stale")
+    receipt = context.get("receipt")
+    if not isinstance(receipt, dict) or set(receipt) != {
+        "receiptId",
+        "issuer",
+        "receiptSha256",
+    }:
+        return errors + [f"{prefix}: context self-attestation receipt is incomplete"]
+    if not all(
+        isinstance(receipt.get(field), str) and receipt[field].strip()
+        for field in ("receiptId", "issuer")
+    ) or not SHA256_RE.fullmatch(str(receipt.get("receiptSha256", ""))):
+        errors.append(f"{prefix}: context self-attestation receipt is incomplete")
+        return errors
+    evidence = provenance.get("evidence")
+    if not isinstance(evidence, list) or not any(
+        isinstance(item, dict)
+        and item.get("evidenceId") == receipt["receiptId"]
+        and item.get("role") == "independent_context_receipt"
+        and item.get("sha256") == receipt["receiptSha256"]
+        for item in evidence
+    ):
+        errors.append(f"{prefix}: context self-attestation is not attached")
+    return errors
+
+
+def validate_stage_provenance(
+    owner: dict[str, Any],
+    stage: str,
+    source: dict[str, Any],
+    upstream: list[tuple[str, dict[str, Any]]],
+    policy_sha256: str,
+    prefix: str,
+    require_independent_context: bool = False,
+) -> list[str]:
+    provenance = owner.get("provenance")
+    if not isinstance(provenance, dict) or provenance.get("status") != "complete":
+        return [f"{prefix}: {stage} content-addressed provenance is incomplete"]
+    errors: list[str] = []
+    if provenance.get("version") != STAGE_PROVENANCE_VERSION:
+        errors.append(f"{prefix}: {stage} provenance version is stale")
+    if provenance.get("stage") != stage:
+        errors.append(f"{prefix}: {stage} provenance names the wrong stage")
+    if provenance.get("origin") not in {"direct_execution", "legacy_migration"}:
+        errors.append(f"{prefix}: {stage} provenance origin is invalid")
+    source_sha256 = semantic_source_sha256(source)
+    upstream_sha256 = stage_upstream_sha256(upstream)
+    schema_sha256 = packet_schema_sha256()
+    evidence = provenance.get("evidence")
+    if not isinstance(evidence, list):
+        errors.append(f"{prefix}: {stage} evidence references must be an array")
+        evidence = []
+    evidence_ids: list[str] = []
+    for item in evidence:
+        if not isinstance(item, dict) or set(item) != {"evidenceId", "role", "sha256"}:
+            errors.append(f"{prefix}: {stage} evidence reference is not canonical")
+            continue
+        evidence_ids.append(str(item.get("evidenceId")))
+        if not isinstance(item.get("evidenceId"), str) or not item["evidenceId"].strip():
+            errors.append(f"{prefix}: {stage} evidence ID is missing")
+        if not isinstance(item.get("role"), str) or not item["role"].strip():
+            errors.append(f"{prefix}: {stage} evidence role is missing")
+        if not SHA256_RE.fullmatch(str(item.get("sha256", ""))):
+            errors.append(f"{prefix}: {stage} evidence hash is invalid")
+    if len(evidence_ids) != len(set(evidence_ids)):
+        errors.append(f"{prefix}: {stage} evidence IDs must be unique")
+    evidence_sha256 = stage_evidence_sha256(evidence)
+    model = provenance.get("model")
+    reasoning = provenance.get("reasoning")
+    if not isinstance(provenance.get("runId"), str) or not provenance["runId"].strip():
+        errors.append(f"{prefix}: {stage} run identity is incomplete")
+    if not isinstance(model, str) or not model.strip() or not isinstance(reasoning, str) or not reasoning.strip():
+        errors.append(f"{prefix}: {stage} model/reasoning provenance is incomplete")
+        model = str(model or "")
+        reasoning = str(reasoning or "")
+    expected = {
+        "sourceSha256": source_sha256,
+        "upstreamSha256": upstream_sha256,
+        "promptOrPolicySha256": policy_sha256,
+        "schemaSha256": schema_sha256,
+        "evidenceSha256": evidence_sha256,
+        "inputSha256": stage_input_sha256(
+            stage,
+            source_sha256,
+            upstream_sha256,
+            policy_sha256,
+            schema_sha256,
+            model,
+            reasoning,
+            evidence_sha256,
+        ),
+        "outputSha256": content_sha256(stage_output_payload(owner, stage)),
+    }
+    for field, value in expected.items():
+        if provenance.get(field) != value:
+            errors.append(f"{prefix}: {stage} {field} is stale")
+    if provenance.get("fingerprint") != stage_fingerprint(provenance):
+        errors.append(f"{prefix}: {stage} fingerprint is stale")
+    if stage == "blind_translation" and (
+        provenance.get("model") != owner.get("model")
+        or provenance.get("reasoning") != owner.get("reasoning")
+    ):
+        errors.append(f"{prefix}: blind stage model/reasoning does not match its output")
+    if stage == "blind_translation" and provenance.get("origin") == "legacy_migration":
+        required_lineage_roles = {
+            "legacy_packet_blob",
+            "legacy_packet_schema",
+            "legacy_blind_translation_record",
+        }
+        attached_lineage_roles = {
+            item.get("role") for item in evidence if isinstance(item, dict)
+        }
+        if not required_lineage_roles.issubset(attached_lineage_roles):
+            errors.append(
+                f"{prefix}: migrated blind stage lacks exact legacy packet/schema lineage"
+            )
+    if stage == "independent_critique" and provenance.get("model") != owner.get("model"):
+        errors.append(f"{prefix}: critique stage model does not match its output")
+    expected_run_id = owner.get("runId") or owner.get("inventoryAudit", {}).get("runId")
+    if expected_run_id and provenance.get("runId") != expected_run_id:
+        errors.append(f"{prefix}: {stage} run identity does not match its output")
+    if stage == "witness_resolution":
+        witness_hashes = {
+            result.get("evidenceSha256")
+            for result in owner.get("results", [])
+            if isinstance(result, dict)
+        }
+        attached_hashes = {
+            item.get("sha256")
+            for item in evidence
+            if isinstance(item, dict) and item.get("role") == "witness_result"
+        }
+        if not witness_hashes.issubset(attached_hashes):
+            errors.append(f"{prefix}: witness result evidence is not attached")
+    if require_independent_context:
+        errors.extend(validate_independent_context(owner, provenance, prefix))
+    return errors
+
+
+def validate_stage_chain(
+    owner: dict[str, Any],
+    source: dict[str, Any],
+    policy_sha256: str,
+    prefix: str,
+) -> list[str]:
+    """Validate all semantic stages against their exact upstream outputs."""
+    blind = owner.get("blindTranslation", {})
+    critique = owner.get("independentCritique", {})
+    witness = owner.get("witnessResolution", {})
+    adjudication = owner.get("adjudication", {})
+    names = owner.get("names", {})
+    errors = validate_stage_provenance(
+        blind,
+        "blind_translation",
+        source,
+        [],
+        policy_sha256,
+        prefix,
+    )
+    errors.extend(
+        validate_stage_provenance(
+            critique,
+            "independent_critique",
+            source,
+            [("blind_translation", blind)],
+            policy_sha256,
+            prefix,
+            require_independent_context=True,
+        )
+    )
+    errors.extend(
+        validate_stage_provenance(
+            witness,
+            "witness_resolution",
+            source,
+            [("independent_critique", critique)],
+            policy_sha256,
+            prefix,
+        )
+    )
+    errors.extend(
+        validate_stage_provenance(
+            adjudication,
+            "adjudication",
+            source,
+            [
+                ("blind_translation", blind),
+                ("independent_critique", critique),
+                ("witness_resolution", witness),
+            ],
+            policy_sha256,
+            prefix,
+        )
+    )
+    errors.extend(
+        validate_stage_provenance(
+            names,
+            "name_inventory",
+            source,
+            [("adjudication", adjudication)],
+            policy_sha256,
+            prefix,
+            require_independent_context=True,
+        )
+    )
+    critique_receipt = critique.get("independentContext", {}).get("receipt", {})
+    name_receipt = names.get("independentContext", {}).get("receipt", {})
+    if (
+        isinstance(critique_receipt, dict)
+        and isinstance(name_receipt, dict)
+        and critique_receipt.get("receiptId")
+        and critique_receipt.get("receiptId") == name_receipt.get("receiptId")
+    ):
+        errors.append(
+            f"{prefix}: critique and name inventory require distinct context receipts"
+        )
+    return errors
+
+
 def pending_semantic_audit() -> dict[str, Any]:
     return {
         "status": "pending",
@@ -851,19 +1292,6 @@ def validate_semantic_audit(
     ) and not critique.get("findings"):
         errors.append(f"{prefix}: semantic critique reports a finding without details")
     return errors
-
-
-def validate_name_inventory_distribution(counts: list[int]) -> list[str]:
-    """Catch packet-scale title-only inventories without judging small shards."""
-    if len(counts) < 20:
-        return []
-    multi_name_entries = sum(count > 1 for count in counts)
-    if multi_name_entries * 5 < len(counts):
-        return [
-            "packet: name inventory has a one-candidate placeholder signature; "
-            "fewer than 20% of biographies identify a second named referent"
-        ]
-    return []
 
 
 def validate_witness(
@@ -1812,6 +2240,7 @@ def pending_preceding_translation(
             "policySha256": policy_sha256,
             "headingEnglish": None,
             "english": None,
+            "provenance": pending_stage_provenance("blind_translation"),
         },
         "independentCritique": {
             "status": "pending",
@@ -1819,23 +2248,29 @@ def pending_preceding_translation(
             "model": None,
             "findings": [],
             "semanticAudit": pending_semantic_audit(),
+            "independentContext": pending_independent_context(),
+            "provenance": pending_stage_provenance("independent_critique"),
         },
         "witnessResolution": {
             "status": "pending",
             "results": [],
             "notRequiredRationale": None,
+            "provenance": pending_stage_provenance("witness_resolution"),
         },
         "adjudication": {
             "status": "pending",
             "headingEnglish": None,
             "english": None,
             "decisions": [],
+            "provenance": pending_stage_provenance("adjudication"),
         },
         "names": {
             "status": "pending",
             "candidates": [],
             "mentions": [],
             "inventoryAudit": pending_name_inventory_audit(),
+            "independentContext": pending_independent_context(),
+            "provenance": pending_stage_provenance("name_inventory"),
         },
         "unresolved": [],
         "humanReview": {"status": "unreviewed"},
@@ -1932,6 +2367,7 @@ def build_packet(
                     "reasoning": None,
                     "policySha256": policy["bindingSha256"],
                     "english": None,
+                    "provenance": pending_stage_provenance("blind_translation"),
                 },
                 "independentCritique": {
                     "status": "pending",
@@ -1939,25 +2375,35 @@ def build_packet(
                     "model": None,
                     "findings": [],
                     "semanticAudit": pending_semantic_audit(),
+                    "independentContext": pending_independent_context(),
+                    "provenance": pending_stage_provenance("independent_critique"),
                 },
                 "witnessResolution": {
                     "status": "pending",
                     "results": [],
                     "notRequiredRationale": None,
+                    "provenance": pending_stage_provenance("witness_resolution"),
                 },
-                "adjudication": {"status": "pending", "english": None, "decisions": []},
+                "adjudication": {
+                    "status": "pending",
+                    "english": None,
+                    "decisions": [],
+                    "provenance": pending_stage_provenance("adjudication"),
+                },
                 "names": {
                     "status": "pending",
                     "candidates": [],
                     "mentions": [],
                     "inventoryAudit": pending_name_inventory_audit(),
+                    "independentContext": pending_independent_context(),
+                    "provenance": pending_stage_provenance("name_inventory"),
                 },
                 "unresolved": [],
                 "humanReview": {"status": "unreviewed"},
             }
         )
     return {
-        "schemaVersion": "1.3.0",
+        "schemaVersion": PACKET_SCHEMA_VERSION,
         "packetId": f"isabah-translation-issue-{number}",
         "workId": "ibn-hajar-al-isabah",
         "toolVersion": TOOL_VERSION,
@@ -2205,6 +2651,9 @@ def validate_preceding_translation(
     )
     if translation.get("humanReview", {}).get("status") != "unreviewed":
         errors.append(f"{prefix}: machine-ready work must remain human-unreviewed")
+    errors.extend(
+        validate_stage_chain(translation, source, current_policy_sha256, prefix)
+    )
     return errors
 
 
@@ -2346,8 +2795,10 @@ def merge_entry_shard(packet_path: Path, shard_path: Path) -> int:
             "packet: cannot merge a shard after post-run repairs; rebuild from the "
             "pre-repair packet"
         )
-    if packet.get("schemaVersion") != "1.3.0":
-        errors.append("packet: entry shards require packet schema 1.3.0")
+    if packet.get("schemaVersion") != PACKET_SCHEMA_VERSION:
+        errors.append(
+            f"packet: entry shards require packet schema {PACKET_SCHEMA_VERSION}"
+        )
     if shard.get("schemaVersion") != "1.0.0":
         errors.append("shard: schemaVersion must be 1.0.0")
     if shard.get("packetId") != packet.get("packetId"):
@@ -2415,6 +2866,14 @@ def merge_entry_shard(packet_path: Path, shard_path: Path) -> int:
                 require_spans=True,
             )
         )
+        errors.extend(
+            validate_stage_chain(
+                output,
+                target.get("source", {}),
+                policy_sha256,
+                prefix,
+            )
+        )
         pending_updates.append((target, output))
     if errors:
         raise WorkflowError("\n".join(errors))
@@ -2468,9 +2927,13 @@ def merge_preceding_shard(packet_path: Path, shard_path: Path) -> int:
         "endUnit",
         "sourceUnits",
     }
-    if packet.get("schemaVersion") != "1.3.0" or shard.get("schemaVersion") != "1.1.0":
+    if (
+        packet.get("schemaVersion") != PACKET_SCHEMA_VERSION
+        or shard.get("schemaVersion") != "1.1.0"
+    ):
         errors.append(
-            "structural shard: packet must use schema 1.3.0 and shard schema 1.1.0"
+            "structural shard: packet must use schema "
+            f"{PACKET_SCHEMA_VERSION} and shard schema 1.1.0"
         )
     if shard.get("packetId") != packet.get("packetId"):
         errors.append("structural shard: packetId does not match the target packet")
@@ -2600,8 +3063,8 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
         for error in validate_schema_instance(packet, packet_schema)
     )
     errors.extend(validate_post_run_repair_audit(packet))
-    if packet.get("schemaVersion") != "1.3.0":
-        errors.append("packet: schemaVersion must be 1.3.0")
+    if packet.get("schemaVersion") != PACKET_SCHEMA_VERSION:
+        errors.append(f"packet: schemaVersion must be {PACKET_SCHEMA_VERSION}")
     if packet.get("toolVersion") != TOOL_VERSION:
         errors.append(f"packet: toolVersion must be {TOOL_VERSION}")
     if packet.get("workId") != "ibn-hajar-al-isabah":
@@ -2818,16 +3281,19 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
         )
         if entry.get("humanReview", {}).get("status") != "unreviewed":
             errors.append(f"{prefix}: machine-ready work must remain human-unreviewed")
+        errors.extend(
+            validate_stage_chain(
+                entry,
+                source,
+                current_policy["bindingSha256"],
+                prefix,
+            )
+        )
 
     if machine_ready:
         candidate_ids: list[str] = []
         mention_ids: list[str] = []
-        entry_name_counts: list[int] = []
         for entry in entries:
-            entry_candidates = entry.get("names", {}).get("candidates", [])
-            entry_name_counts.append(
-                len(entry_candidates) if isinstance(entry_candidates, list) else 0
-            )
             owners = [entry, *entry.get("precedingTranslations", [])]
             for owner in owners:
                 names = owner.get("names", {})
@@ -2847,7 +3313,6 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
             errors.append("packet: name candidate IDs must be globally unique")
         if len(mention_ids) != len(set(mention_ids)):
             errors.append("packet: name mention IDs must be globally unique")
-        errors.extend(validate_name_inventory_distribution(entry_name_counts))
         expected_inventory, inventory_errors = formula_inventory(packet)
         errors.extend(inventory_errors)
         if packet.get("formulaInventory") != expected_inventory:

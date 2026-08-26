@@ -83,17 +83,17 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
     "translation-coverage": (
         "compliance/translation-coverage.v1.json",
         "active",
-        "1.0.0",
+        "1.1.0",
     ),
     "translation-coverage-schema": (
         "compliance/schemas/translation-coverage.v1.schema.json",
         "active",
-        "1.0.0",
+        "1.1.0",
     ),
     "public-proposal-v1": (
         "schemas/public-proposal.v1.schema.json",
         "active",
-        "1.1.0",
+        "1.2.0",
     ),
     "public-distribution-contract": (
         "docs/architecture/public-distribution.md",
@@ -173,18 +173,16 @@ AGENT_REOPEN_TRIGGERS = [
     "bound-source-or-policy-stale",
     "machine-actionable-substantive-defect",
 ]
-REQUIRED_COMPLETION_SCOPES = {
+COUNT_SEMANTICS = {
+    "translated_units": "units-with-structured-english-candidates",
+    "remaining_agent_units": "units-with-machine-actionable-autonomous-work",
+    "overlap_permitted_while_not_agent_complete": True,
+}
+REQUIRED_COMPLETED_SCOPES = {
     "volume-01": {
         "volume": 1,
         "artifact": "issue-0026-public-proposal-v1",
         "units": 1537,
-        "workflow_conformance": "current",
-        "public_working_status": "available",
-    },
-    "volume-02": {
-        "volume": 2,
-        "artifact": "issue-0053-public-proposal-v1",
-        "units": 1497,
         "workflow_conformance": "current",
         "public_working_status": "available",
     },
@@ -193,6 +191,17 @@ REQUIRED_COMPLETION_SCOPES = {
         "artifact": "volume-08-structured-english",
         "units": 1550,
         "workflow_conformance": "legacy_audit_required",
+        "public_working_status": "blocked",
+    },
+}
+REQUIRED_REOPENED_SCOPES = {
+    "volume-02": {
+        "volume": 2,
+        "artifact": "issue-0053-public-proposal-v1",
+        "units": 1497,
+        "issue": "https://github.com/yaqub0r/al-isabah/issues/70",
+        "trigger": "machine-actionable-substantive-defect",
+        "workflow_conformance": "recovery_in_progress",
         "public_working_status": "blocked",
     },
 }
@@ -365,7 +374,7 @@ def validate_translation_coverage(
         errors.append("translation coverage: fields do not match the v1 contract")
     if coverage.get("schema") != "al-isabah.translation-coverage.v1":
         errors.append("translation coverage: unexpected schema")
-    if coverage.get("schema_version") != "1.0.0":
+    if coverage.get("schema_version") != "1.1.0":
         errors.append("translation coverage: unexpected schema version")
     if coverage.get("work_id") != "ibn-hajar-al-isabah":
         errors.append("translation coverage: unexpected work")
@@ -382,6 +391,7 @@ def validate_translation_coverage(
         "agent_complete_requirements": AGENT_COMPLETE_REQUIREMENTS,
         "human_review_relation": "independent-ongoing-management-state",
         "human_review_edits_reopen_completion": False,
+        "count_semantics": COUNT_SEMANTICS,
         "reopen_triggers": AGENT_REOPEN_TRIGGERS,
     }
     if coverage.get("semantics") != expected_semantics:
@@ -403,15 +413,26 @@ def validate_translation_coverage(
         "public_working_status",
         "canonical_promotion",
     }
-    expected_completion_fields = {
+    base_completion_fields = {
         "status",
         "locked_units",
         "translated_units",
         "remaining_agent_units",
         "basis",
-        "evidence",
     }
     expected_evidence_fields = {"source_register_artifact", "sha256"}
+    expected_recovery_fields = {
+        "issue",
+        "trigger",
+        "state",
+        "historical_evidence_scope",
+        "historical_completion",
+        "public_working_status",
+        "canonical_promotion",
+    }
+    expected_historical_completion_fields = base_completion_fields | {
+        "evidence"
+    }
     expected_review_fields = {
         "management_state",
         "reviewed_units",
@@ -442,13 +463,18 @@ def validate_translation_coverage(
         if not isinstance(completion, dict):
             errors.append(f"{location}.agent_completion: must be an object")
             completion = {}
-        elif set(completion) != expected_completion_fields:
-            errors.append(
-                f"{location}.agent_completion: fields do not match the v1 contract"
-            )
         status = completion.get("status")
         if status not in {"not_started", "in_progress", "agent_complete", "reopened"}:
             errors.append(f"{location}.agent_completion.status: is invalid")
+        expected_completion_fields = set(base_completion_fields)
+        if status == "agent_complete":
+            expected_completion_fields.add("evidence")
+        elif status == "reopened":
+            expected_completion_fields.add("recovery")
+        if set(completion) != expected_completion_fields:
+            errors.append(
+                f"{location}.agent_completion: fields do not match the v1 contract"
+            )
         counts = [
             completion.get("locked_units"),
             completion.get("translated_units"),
@@ -456,8 +482,10 @@ def validate_translation_coverage(
         ]
         if not all(isinstance(value, int) and not isinstance(value, bool) and value >= 0 for value in counts):
             errors.append(f"{location}.agent_completion: counts must be non-negative integers")
-        elif counts[1] + counts[2] != counts[0]:
-            errors.append(f"{location}.agent_completion: translated and remaining units must equal locked units")
+        elif counts[1] > counts[0] or counts[2] > counts[0]:
+            errors.append(
+                f"{location}.agent_completion: translated and remaining counts cannot exceed locked units"
+            )
         if status == "agent_complete" and (
             completion.get("translated_units") != completion.get("locked_units")
             or completion.get("remaining_agent_units") != 0
@@ -465,26 +493,137 @@ def validate_translation_coverage(
             errors.append(
                 f"{location}.agent_completion: agent_complete requires full coverage and zero remaining agent units"
             )
+        if status == "reopened" and completion.get("remaining_agent_units") == 0:
+            errors.append(
+                f"{location}.agent_completion: reopened requires machine-actionable work remaining"
+            )
         if not isinstance(completion.get("basis"), str) or not completion["basis"].strip():
             errors.append(f"{location}.agent_completion.basis: is required")
 
         evidence = completion.get("evidence")
-        if not isinstance(evidence, dict):
+        if status == "agent_complete" and not isinstance(evidence, dict):
             errors.append(f"{location}.agent_completion.evidence: must be an object")
             evidence = {}
-        elif set(evidence) != expected_evidence_fields:
+        elif isinstance(evidence, dict) and set(evidence) != expected_evidence_fields:
             errors.append(
                 f"{location}.agent_completion.evidence: fields do not match the v1 contract"
             )
-        artifact_id = evidence.get("source_register_artifact")
-        artifact = artifacts.get(str(artifact_id))
-        if artifact is None:
-            errors.append(f"{location}.agent_completion.evidence: artifact is not registered")
-        else:
-            integrity = artifact.get("integrity", {})
-            registered_sha = integrity.get("sha256", integrity.get("proposal_sha256"))
-            if evidence.get("sha256") != registered_sha:
-                errors.append(f"{location}.agent_completion.evidence: hash differs from source register")
+        if isinstance(evidence, dict):
+            artifact_id = evidence.get("source_register_artifact")
+            artifact = artifacts.get(str(artifact_id))
+            if artifact is None:
+                errors.append(f"{location}.agent_completion.evidence: artifact is not registered")
+            else:
+                integrity = artifact.get("integrity", {})
+                registered_sha = integrity.get("sha256", integrity.get("proposal_sha256"))
+                if evidence.get("sha256") != registered_sha:
+                    errors.append(f"{location}.agent_completion.evidence: hash differs from source register")
+
+        recovery = completion.get("recovery")
+        if status == "reopened":
+            if not isinstance(recovery, dict):
+                errors.append(f"{location}.agent_completion.recovery: must be an object")
+                recovery = {}
+            elif set(recovery) != expected_recovery_fields:
+                errors.append(
+                    f"{location}.agent_completion.recovery: fields do not match the v1 contract"
+                )
+            if not re.fullmatch(
+                r"https://github\.com/yaqub0r/al-isabah/issues/[0-9]+",
+                str(recovery.get("issue", "")),
+            ):
+                errors.append(f"{location}.agent_completion.recovery.issue: is invalid")
+            if recovery.get("trigger") not in AGENT_REOPEN_TRIGGERS:
+                errors.append(f"{location}.agent_completion.recovery.trigger: is invalid")
+            if recovery.get("state") != "in_progress":
+                errors.append(f"{location}.agent_completion.recovery.state: must be in_progress")
+            if recovery.get("historical_evidence_scope") != "superseded-completion-claim-only":
+                errors.append(
+                    f"{location}.agent_completion.recovery.historical_evidence_scope: must limit retained evidence to the superseded claim"
+                )
+            if recovery.get("public_working_status") != scope.get("public_working_status"):
+                errors.append(
+                    f"{location}.agent_completion.recovery: public-working status must match the current scope"
+                )
+            if recovery.get("canonical_promotion") != "blocked" or recovery.get(
+                "canonical_promotion"
+            ) != scope.get("canonical_promotion"):
+                errors.append(
+                    f"{location}.agent_completion.recovery: canonical promotion must remain blocked"
+                )
+
+            historical = recovery.get("historical_completion")
+            if not isinstance(historical, dict):
+                errors.append(
+                    f"{location}.agent_completion.recovery.historical_completion: must be an object"
+                )
+                historical = {}
+            elif set(historical) != expected_historical_completion_fields:
+                errors.append(
+                    f"{location}.agent_completion.recovery.historical_completion: fields do not match the v1 contract"
+                )
+            historical_counts = [
+                historical.get("locked_units"),
+                historical.get("translated_units"),
+                historical.get("remaining_agent_units"),
+            ]
+            if (
+                historical.get("status") != "agent_complete"
+                or not all(
+                    isinstance(value, int)
+                    and not isinstance(value, bool)
+                    and value >= 0
+                    for value in historical_counts
+                )
+                or historical.get("translated_units")
+                != historical.get("locked_units")
+                or historical.get("remaining_agent_units") != 0
+            ):
+                errors.append(
+                    f"{location}.agent_completion.recovery.historical_completion: retained claim must have been agent_complete"
+                )
+            if not isinstance(historical.get("basis"), str) or not historical[
+                "basis"
+            ].strip():
+                errors.append(
+                    f"{location}.agent_completion.recovery.historical_completion.basis: is required"
+                )
+            historical_evidence = historical.get("evidence")
+            if not isinstance(historical_evidence, dict):
+                errors.append(
+                    f"{location}.agent_completion.recovery.historical_completion.evidence: must be an object"
+                )
+                historical_evidence = {}
+            elif set(historical_evidence) != expected_evidence_fields:
+                errors.append(
+                    f"{location}.agent_completion.recovery.historical_completion.evidence: fields do not match the v1 contract"
+                )
+            historical_artifact = artifacts.get(
+                str(historical_evidence.get("source_register_artifact"))
+            )
+            if historical_artifact is None:
+                errors.append(
+                    f"{location}.agent_completion.recovery.historical_completion.evidence: artifact is not registered"
+                )
+            else:
+                historical_integrity = historical_artifact.get("integrity", {})
+                historical_registered_sha = historical_integrity.get(
+                    "sha256", historical_integrity.get("proposal_sha256")
+                )
+                if historical_evidence.get("sha256") != historical_registered_sha:
+                    errors.append(
+                        f"{location}.agent_completion.recovery.historical_completion.evidence: hash differs from source register"
+                    )
+                historical_public_entries = historical_integrity.get("public_entries")
+                if (
+                    not isinstance(historical_public_entries, int)
+                    or isinstance(historical_public_entries, bool)
+                    or historical.get("locked_units") != historical_public_entries
+                    or historical.get("translated_units") != historical_public_entries
+                ):
+                    errors.append(
+                        f"{location}.agent_completion.recovery.historical_completion: counts differ from the registered historical artifact"
+                    )
 
         review = scope.get("human_review")
         if not isinstance(review, dict):
@@ -499,16 +638,23 @@ def validate_translation_coverage(
             errors.append(f"{location}.human_review: counts must be non-negative integers")
         elif isinstance(completion.get("locked_units"), int) and sum(review_counts) != completion["locked_units"]:
             errors.append(f"{location}.human_review: review coverage must equal locked units")
-        if scope.get("workflow_conformance") not in {"current", "legacy_audit_required"}:
+        if scope.get("workflow_conformance") not in {
+            "current",
+            "recovery_in_progress",
+            "legacy_audit_required",
+        }:
             errors.append(f"{location}.workflow_conformance: is invalid")
         if scope.get("public_working_status") not in {"available", "blocked"}:
             errors.append(f"{location}.public_working_status: is invalid")
         if scope.get("canonical_promotion") not in {"blocked", "eligible", "promoted"}:
             errors.append(f"{location}.canonical_promotion: is invalid")
 
-    if set(scopes) != set(REQUIRED_COMPLETION_SCOPES):
+    required_scope_ids = set(REQUIRED_COMPLETED_SCOPES) | set(
+        REQUIRED_REOPENED_SCOPES
+    )
+    if set(scopes) != required_scope_ids:
         errors.append("translation coverage: exact current volume inventory is required")
-    for scope_id, expected in REQUIRED_COMPLETION_SCOPES.items():
+    for scope_id, expected in REQUIRED_COMPLETED_SCOPES.items():
         scope = scopes.get(scope_id)
         if scope is None:
             continue
@@ -526,6 +672,39 @@ def validate_translation_coverage(
             or scope.get("public_working_status") != expected["public_working_status"]
         ):
             errors.append(f"translation coverage: {scope_id} completion evidence is incorrect")
+
+    for scope_id, expected in REQUIRED_REOPENED_SCOPES.items():
+        scope = scopes.get(scope_id)
+        if scope is None:
+            continue
+        completion = scope.get("agent_completion", {})
+        recovery = completion.get("recovery", {})
+        historical = recovery.get("historical_completion", {})
+        historical_evidence = historical.get("evidence", {})
+        if (
+            scope.get("scope_kind") != "volume"
+            or scope.get("volume") != expected["volume"]
+            or completion.get("status") != "reopened"
+            or completion.get("locked_units") != expected["units"]
+            or completion.get("translated_units") != expected["units"]
+            or completion.get("remaining_agent_units") != expected["units"]
+            or recovery.get("issue") != expected["issue"]
+            or recovery.get("trigger") != expected["trigger"]
+            or recovery.get("state") != "in_progress"
+            or historical_evidence.get("source_register_artifact")
+            != expected["artifact"]
+            or historical.get("locked_units") != expected["units"]
+            or historical.get("translated_units") != expected["units"]
+            or historical.get("remaining_agent_units") != 0
+            or scope.get("workflow_conformance")
+            != expected["workflow_conformance"]
+            or scope.get("public_working_status")
+            != expected["public_working_status"]
+            or scope.get("canonical_promotion") != "blocked"
+        ):
+            errors.append(
+                f"translation coverage: {scope_id} recovery evidence is incorrect"
+            )
 
     errors.extend(_walk(coverage, "translation_coverage"))
     return errors

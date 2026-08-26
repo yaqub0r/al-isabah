@@ -68,7 +68,7 @@ class PublicDistributionTests(unittest.TestCase):
         self.assertTrue(all(record["schemaVersion"] == "2.0.0" for record in records))
         self.assertTrue(all(record["arabic"].strip() and record["english"].strip() for record in records))
 
-    def test_volume2_packet_set_projection_is_strict_and_agent_complete(self):
+    def test_historical_volume2_packet_set_projection_remains_strict(self):
         proposal = self.volume2_proposal
         records = proposal["records"]
         self.assertEqual(PROPOSAL_VALIDATOR.validate(VOLUME2_PROPOSAL_PATH), [])
@@ -97,6 +97,177 @@ class PublicDistributionTests(unittest.TestCase):
         self.assertTrue(all(record["arabic"].strip() and record["english"].strip() for record in records))
         self.assertEqual(BOUNDARY.boundary_errors(proposal), [])
 
+    def test_current_closure_quarantines_the_reopened_volume2_scope(self):
+        paths, errors = CURRENT_CLOSURE.current_proposal_paths()
+        self.assertEqual(errors, [])
+        self.assertEqual(paths, [PROPOSAL_PATH])
+        closure = json.loads(
+            CURRENT_CLOSURE.CURRENT_CLOSURE.read_text(encoding="utf-8")
+        )
+        self.assertEqual(
+            [item["proposalId"] for item in closure["proposals"]],
+            ["issue-0026-public-proposal-v1"],
+        )
+        self.assertEqual(
+            closure["historicalClosure"]["path"],
+            "compliance/publication/issue-0053.release-closure.v1.json",
+        )
+        self.assertEqual(
+            closure["translationCoverage"]["path"],
+            "compliance/translation-coverage.v1.json",
+        )
+        register = json.loads(
+            (ROOT / "compliance" / "source-register.v1.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        volume_two = next(
+            item
+            for item in register["artifacts"]
+            if item["id"] == "issue-0053-public-proposal-v1"
+        )
+        self.assertEqual(
+            volume_two["review_status"],
+            "historical-reopened-scope-current-distribution-quarantined",
+        )
+
+    def test_legacy_volume2_proposal_is_not_current_title_ready(self):
+        errors = PROPOSAL_VALIDATOR.validate(
+            VOLUME2_PROPOSAL_PATH,
+            require_current=True,
+        )
+        self.assertTrue(
+            any("category=historical-proposal-not-current" in error for error in errors),
+            errors,
+        )
+
+    def test_volume2_first_title_requires_an_exact_bilingual_boundary_decision(self):
+        record = self.volume2_proposal["records"][0]
+        self.assertEqual(record["sourceOrdinal"], 1538)
+        self.assertEqual(
+            record["title"],
+            {
+                "arabic": "حازم غير منسوب روى عبدان ومن طريقه أبو موسى من رواية محمد السعدي",
+                "english": "Ḥāzim",
+                "method": "primary-name-candidate",
+                "state": "ready",
+            },
+        )
+        entry = {
+            "sourceOrdinal": 1538,
+            "source": {
+                "headingArabic": record["title"]["arabic"],
+                "arabic": record["arabic"],
+            },
+            "adjudication": {"english": record["english"]},
+            "unresolved": [],
+        }
+        decision = {
+            "title": {"ar": "حازم", "en": "Ḥāzim"},
+            "bodyOpening": {
+                "ar": "غير منسوب",
+                "en": "without a lineage attribution",
+            },
+        }
+        title, arabic, english = PACKET_PROJECT.title_and_body(entry, decision)
+        self.assertEqual(title["arabic"], "حازم")
+        self.assertEqual(title["english"], "Ḥāzim")
+        self.assertEqual(title["method"], "profile-decision")
+        self.assertTrue(arabic.startswith("غير منسوب"))
+        self.assertTrue(english.startswith("without a lineage attribution"))
+
+    def test_current_title_binding_requires_exact_hash_and_unique_coverage(self):
+        profile = PACKET_PROJECT.load_title_profile(PACKET_PROJECT.ENTRY_TITLE_PROFILE)
+        decision = next(
+            item
+            for item in profile["decisions"]
+            if item["sourceEntryNumber"] == 11426
+        )
+        proposal = {
+            "entryTitleDecisions": {
+                "profileId": "entry-title-decisions.v2",
+                "profileSha256": BOUNDARY.sha256_file(PACKET_PROJECT.ENTRY_TITLE_PROFILE),
+                "coveredRecordCount": 1,
+            },
+            "records": [
+                {
+                    "printedEntryNumber": 11426,
+                    "title": {
+                        "arabic": decision["title"]["ar"],
+                        "english": decision["title"]["en"],
+                        "method": "profile-decision",
+                    },
+                    "arabic": decision["bodyOpening"]["ar"] + " synthetic",
+                    "english": decision["bodyOpening"]["en"] + " synthetic",
+                }
+            ],
+        }
+        self.assertEqual(PROPOSAL_VALIDATOR._title_decision_errors(proposal), [])
+        mismatched = copy.deepcopy(proposal)
+        mismatched["records"][0]["title"]["arabic"] += " synthetic continuation"
+        mismatched["records"][0]["english"] = "synthetic omitted body opening"
+        errors = PROPOSAL_VALIDATOR._title_decision_errors(mismatched)
+        self.assertTrue(any("category=title-decision-mismatch" in error for error in errors), errors)
+        self.assertTrue(any("category=title-body-opening-mismatch" in error for error in errors), errors)
+        proposal["entryTitleDecisions"]["profileSha256"] = "0" * 64
+        errors = PROPOSAL_VALIDATOR._title_decision_errors(proposal)
+        self.assertTrue(any("category=title-profile-mismatch" in error for error in errors), errors)
+        proposal["entryTitleDecisions"]["profileSha256"] = BOUNDARY.sha256_file(
+            PACKET_PROJECT.ENTRY_TITLE_PROFILE
+        )
+        proposal["entryTitleDecisions"]["coveredRecordCount"] = 2
+        proposal["records"].append(copy.deepcopy(proposal["records"][0]))
+        errors = PROPOSAL_VALIDATOR._title_decision_errors(proposal)
+        self.assertTrue(
+            any("category=ambiguous-title-decision-key" in error for error in errors),
+            errors,
+        )
+
+    def test_volume2_slice_requires_distinct_continued_heading_context(self):
+        first = self.volume2_proposal["records"][0]
+        self.assertEqual(first["sourceOrdinal"], 1538)
+        self.assertEqual(first["precedingMaterial"], [])
+        errors = PROPOSAL_VALIDATOR._slice_context_errors(self.volume2_proposal)
+        self.assertTrue(
+            any("category=missing-inherited-slice-context" in error for error in errors),
+            errors,
+        )
+        binding, contexts = PACKET_PROJECT.slice_context(
+            1538,
+            self.volume2_proposal["sourceAuthority"],
+            PROPOSAL_PATH,
+        )
+        self.assertEqual(binding["state"], "continued")
+        self.assertEqual(len(binding["contexts"]), 4)
+        self.assertEqual(
+            binding["contexts"][-1],
+            {
+                "sourceOccurrenceId": "openiti-5835c183-before-unit-001536-segment-001",
+                "displayContextId": (
+                    "continued-before-unit-001538-from-"
+                    "openiti-5835c183-before-unit-001536-segment-001"
+                ),
+            },
+        )
+        self.assertEqual(len(contexts), 4)
+        self.assertTrue(
+            all(item["kind"] == "continued_structural_heading" for item in contexts)
+        )
+        self.assertEqual(
+            contexts[-1]["heading"],
+            {
+                "arabic": "ذكر بقية حرف الحاء بعدها الألف",
+                "english": "Remaining Names under the Letter Ḥāʾ Followed by Alif",
+                "level": 4,
+            },
+        )
+        self.assertTrue(
+            all(
+                display["id"] != source["sourceOccurrenceId"]
+                for display, source in zip(contexts, binding["contexts"], strict=True)
+            )
+        )
+
     def test_packet_projection_preserves_collective_entity_type(self):
         projected = PACKET_PROJECT.public_name(
             {
@@ -115,11 +286,11 @@ class PublicDistributionTests(unittest.TestCase):
             root = Path(temp)
             output = root / "distribution"
             manifest = BUILD.build(output, COMMIT, GENERATED_AT)
-            self.assertEqual(manifest["counts"]["entries"], 3034)
+            self.assertEqual(manifest["counts"]["entries"], 1537)
             self.assertEqual(manifest["counts"]["humanReviewed"], 0)
             self.assertEqual(
                 [item["entryCount"] for item in manifest["packets"]],
-                [1537, 1497],
+                [1537],
             )
             self.assertEqual(manifest["schemaVersion"], "2.0.0")
             self.assertEqual(manifest["canonicalPromotion"], "blocked")
@@ -135,12 +306,24 @@ class PublicDistributionTests(unittest.TestCase):
                     [
                         "manifest.json",
                         "records/volume-01.jsonl",
-                        "records/volume-02.jsonl",
                         "release-closure.json",
                         "reviews/issue-0026.json",
-                        "reviews/issue-0053.json",
                     ],
                 )
+
+    def test_build_rejects_a_stale_quarantined_output(self):
+        with tempfile.TemporaryDirectory() as temp:
+            output = Path(temp) / "distribution"
+            stale = output / "records" / "volume-02.jsonl"
+            stale.parent.mkdir(parents=True)
+            stale.write_text("synthetic historical record\n", encoding="utf-8")
+            with self.assertRaisesRegex(
+                BUILD.DistributionError,
+                "output directory must be empty",
+            ):
+                BUILD.build(output, COMMIT, GENERATED_AT)
+            with self.assertRaises(BUILD.DistributionError):
+                BUILD.package(output, Path(temp) / "stale.zip")
 
     def test_all_synthetic_negative_fixture_categories_are_covered(self):
         fixture = json.loads((ROOT / "tests" / "fixtures" / "public-boundary-negative.v1.json").read_text(encoding="utf-8"))

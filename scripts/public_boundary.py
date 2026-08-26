@@ -15,6 +15,7 @@ SAFE_URLS = {
     "https://github.com/yaqub0r/al-isabah",
     "https://github.com/yaqub0r/al-isabah/issues/35",
     "https://github.com/yaqub0r/al-isabah/issues/53",
+    "https://github.com/yaqub0r/al-isabah/issues/70",
 }
 PROHIBITED_KEY_FRAGMENTS = {
     "blindtranslation",

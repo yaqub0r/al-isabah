@@ -1,6 +1,6 @@
 {
   "schema": "al-isabah.translation-governance-reference.v1",
-  "referenceVersion": "1.2.0",
+  "referenceVersion": "1.4.0",
   "authority": {
     "repository": "https://github.com/yaqub0r/al-isabah",
     "repositoryPath": "docs/contracts/translation-governance-reference.v1.json",
@@ -52,23 +52,23 @@
     {
       "id": "translation-coverage",
       "path": "compliance/translation-coverage.v1.json",
-      "sha256": "061b026c2b11bf07a1a62ad85e7d25a623e5b516576b7bc82a68617b03a95b60",
+      "sha256": "265c98bcb068389eb241c24339ade9f8fedb4fa6ed535475896aec946cce7c9d",
       "status": "active",
-      "version": "1.0.0"
+      "version": "1.1.0"
     },
     {
       "id": "translation-coverage-schema",
       "path": "compliance/schemas/translation-coverage.v1.schema.json",
-      "sha256": "5e2aab478d0d421278bd114b4455de76f397f602c0e51a7b1bebbb48d8240984",
+      "sha256": "3337a075cca03022259ebcf33cad517d9598021aa6e9b7c17325f58e13334506",
       "status": "active",
-      "version": "1.0.0"
+      "version": "1.1.0"
     },
     {
       "id": "public-proposal-v1",
       "path": "schemas/public-proposal.v1.schema.json",
-      "sha256": "4630ad6bd1cd94ca72e945dd4cdf5a51fd93c3d5b5287e20ea11ec19382d8c92",
+      "sha256": "ebb95f2884b5317301b2018cd1a2036f8c2732c497fa6251d0f7d64c4bd99099",
       "status": "active",
-      "version": "1.1.0"
+      "version": "1.2.0"
     },
     {
       "id": "public-distribution-contract",
