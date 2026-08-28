@@ -24,6 +24,9 @@ import validate_entry_titles as title_contract
 
 
 ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_PROPOSAL = (
+    ROOT / "content" / "public-proposals" / "issue-0070.public-proposal.json"
+)
 # Immutable release-closure v1 provenance for the quarantined 1.1 proposal.
 # Only this exact proposal/version/hash tuple may use a superseded v2 snapshot.
 HISTORICAL_POLICY_BINDINGS = {
@@ -416,7 +419,7 @@ def record_semantic_errors(record: dict[str, Any], base: str) -> list[str]:
 
 
 def validate(
-    path: Path = ROOT / "content" / "public-proposals" / "issue-0026.public-proposal.json",
+    path: Path = DEFAULT_PROPOSAL,
     *,
     require_current: bool = False,
 ) -> list[str]:
@@ -577,7 +580,7 @@ def validate(
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("path", nargs="?", type=Path, default=ROOT / "content" / "public-proposals" / "issue-0026.public-proposal.json")
+    parser.add_argument("path", nargs="?", type=Path, default=DEFAULT_PROPOSAL)
     parser.add_argument(
         "--allow-historical",
         action="store_true",

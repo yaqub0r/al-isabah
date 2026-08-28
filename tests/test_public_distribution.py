@@ -1,6 +1,7 @@
 import copy
 import importlib.util
 import json
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -61,11 +62,26 @@ class PublicDistributionTests(unittest.TestCase):
         )
 
     def test_current_tree_and_exact_closure_are_valid(self):
+        self.assertEqual(PROPOSAL_VALIDATOR.DEFAULT_PROPOSAL, ISSUE_0070_PROPOSAL_PATH)
         self.assertEqual(PROPOSAL_VALIDATOR.validate(), [])
         self.assertEqual(CLOSURE.validate(), [])
         self.assertEqual(CURRENT_CLOSURE.validate(), [])
         self.assertEqual(TREE.validate(), [])
         self.assertEqual(REVIEW.canonical_json(REVIEW.review()), (ROOT / "content" / "public-proposals" / "issue-0026.public-review.json").read_bytes())
+
+    def test_bare_public_proposal_cli_validates_the_current_issue_70_artifact(self):
+        result = subprocess.run(
+            [sys.executable, str(ROOT / "scripts" / "validate_public_proposal.py")],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn(
+            "proposal-sha256=9f1be4e740ea501fa1055e4298aab2add915342575723e377541da81cf762b11",
+            result.stdout,
+        )
 
     def test_exact_1537_record_user_facing_parity_and_stable_order(self):
         records = self.proposal["records"]
