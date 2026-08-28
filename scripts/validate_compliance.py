@@ -193,6 +193,13 @@ REQUIRED_COMPLETED_SCOPES = {
         "workflow_conformance": "current",
         "public_working_status": "available",
     },
+    "volume-02": {
+        "volume": 2,
+        "artifact": "issue-0070-public-proposal-v1",
+        "units": 1497,
+        "workflow_conformance": "current",
+        "public_working_status": "available",
+    },
     "volume-08": {
         "volume": 8,
         "artifact": "volume-08-structured-english",
@@ -201,17 +208,7 @@ REQUIRED_COMPLETED_SCOPES = {
         "public_working_status": "blocked",
     },
 }
-REQUIRED_REOPENED_SCOPES = {
-    "volume-02": {
-        "volume": 2,
-        "artifact": "issue-0053-public-proposal-v1",
-        "units": 1497,
-        "issue": "https://github.com/yaqub0r/al-isabah/issues/70",
-        "trigger": "machine-actionable-substantive-defect",
-        "workflow_conformance": "recovery_in_progress",
-        "public_working_status": "blocked",
-    },
-}
+REQUIRED_REOPENED_SCOPES = {}
 
 
 class ComplianceError(ValueError):

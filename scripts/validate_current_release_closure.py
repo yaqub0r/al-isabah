@@ -311,8 +311,8 @@ def expected() -> tuple[dict[str, Any] | None, list[str]]:
             "sha256": sha256_text_file(PROMOTION),
             "status": promotion["status"],
         },
-        # Preserve the last cumulative closure as immutable history while the
-        # current projection excludes its reopened Volume 2 scope.
+        # Preserve the superseded cumulative closure as immutable history while
+        # current admission follows the governed proposal inventory above.
         "historicalClosure": text_file_binding(HISTORICAL_CLOSURE),
         "reviewCounts": review_counts,
         "outputInventory": sorted(output_inventory, key=lambda item: item["path"]),

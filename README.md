@@ -130,13 +130,15 @@ integrity and retirement record is in `compliance/research-retirement.v1.json`.
 
 ## Public-working boundary
 
-Current public-working builds consume only the strict
-[`public-proposal.v1`](schemas/public-proposal.v1.schema.json) artifact and its
+Current public-working builds consume only strict
+[`public-proposal.v1`](schemas/public-proposal.v1.schema.json) artifacts and their
 exact release closure. Internal translation-work packets and detailed review
-evidence are not public build inputs. The issue #35 forward remediation preserves
-the same 1,537 reader-facing Arabic/English records while excluding internal,
-reconstructive, restricted-reference, and operational material from the current
-tree. Canonical promotion remains blocked.
+evidence are not public build inputs. The cumulative closure admits the 1,537
+Volume 1 records and the corrected 1,497-record Volume 2 proposal while excluding
+internal, reconstructive, restricted-reference, and operational material from
+the current tree. All Volume 2 records remain human-unreviewed, 66 unresolved
+items remain visible at public-safe granularity, and canonical promotion remains
+blocked.
 
 Automated publication is intentionally paused. See the
 [public-boundary remediation record](docs/architecture/public-boundary-remediation.md)

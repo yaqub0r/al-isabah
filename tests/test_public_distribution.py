@@ -136,7 +136,7 @@ class PublicDistributionTests(unittest.TestCase):
             errors = PROPOSAL_VALIDATOR.validate(path)
         self.assertTrue(any("category=policy-mismatch" in error for error in errors))
 
-    def test_issue_70_corrected_proposal_is_strict_public_safe_and_submission_blocked(self):
+    def test_issue_70_corrected_proposal_is_strict_public_safe_and_current(self):
         proposal = self.issue_0070_proposal
         records = proposal["records"]
         self.assertEqual(PROPOSAL_VALIDATOR.validate(ISSUE_0070_PROPOSAL_PATH), [])
@@ -174,23 +174,27 @@ class PublicDistributionTests(unittest.TestCase):
         )
         self.assertEqual(
             artifact["review_status"],
-            "approved-public-proposal-external-submission-blocked",
+            CURRENT_CLOSURE.CURRENT_DISTRIBUTION_REVIEW_STATUS,
         )
-        self.assertIn(
-            "include the proposal in a current release closure or public-working distribution before approved external evidence submission",
-            artifact["prohibited_public_actions"],
+        self.assertEqual(
+            artifact["integrity"]["submitted_packet_sha256"],
+            "5be390962508d54bb2ed0c82310bba6e17bfd1cc6d771e89ed91e592b89bf7d6",
+        )
+        self.assertEqual(
+            artifact["integrity"]["submitted_review_sha256"],
+            "a2aa7554db7f71a32010e6a7c9d166ff15648443e777b97245e8afb27432afbc",
         )
 
-    def test_current_closure_quarantines_the_reopened_volume2_scope(self):
+    def test_current_closure_admits_corrected_volume2_and_quarantines_history(self):
         paths, errors = CURRENT_CLOSURE.current_proposal_paths()
         self.assertEqual(errors, [])
-        self.assertEqual(paths, [PROPOSAL_PATH])
+        self.assertEqual(paths, [PROPOSAL_PATH, ISSUE_0070_PROPOSAL_PATH])
         closure = json.loads(
             CURRENT_CLOSURE.CURRENT_CLOSURE.read_text(encoding="utf-8")
         )
         self.assertEqual(
             [item["proposalId"] for item in closure["proposals"]],
-            ["issue-0026-public-proposal-v1"],
+            ["issue-0026-public-proposal-v1", "issue-0070-public-proposal-v1"],
         )
         self.assertEqual(
             closure["historicalClosure"]["path"],
@@ -219,7 +223,7 @@ class PublicDistributionTests(unittest.TestCase):
             for item in register["artifacts"]
             if item["id"] == "issue-0070-public-proposal-v1"
         )
-        self.assertNotEqual(
+        self.assertEqual(
             corrected_volume_two["review_status"],
             CURRENT_CLOSURE.CURRENT_DISTRIBUTION_REVIEW_STATUS,
         )
@@ -472,11 +476,11 @@ class PublicDistributionTests(unittest.TestCase):
             root = Path(temp)
             output = root / "distribution"
             manifest = BUILD.build(output, COMMIT, GENERATED_AT)
-            self.assertEqual(manifest["counts"]["entries"], 1537)
+            self.assertEqual(manifest["counts"]["entries"], 3034)
             self.assertEqual(manifest["counts"]["humanReviewed"], 0)
             self.assertEqual(
                 [item["entryCount"] for item in manifest["packets"]],
-                [1537],
+                [1537, 1497],
             )
             self.assertEqual(manifest["schemaVersion"], "2.0.0")
             self.assertEqual(manifest["canonicalPromotion"], "blocked")
@@ -492,8 +496,10 @@ class PublicDistributionTests(unittest.TestCase):
                     [
                         "manifest.json",
                         "records/volume-01.jsonl",
+                        "records/volume-02.jsonl",
                         "release-closure.json",
                         "reviews/issue-0026.json",
+                        "reviews/issue-0070.json",
                     ],
                 )
 

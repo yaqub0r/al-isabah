@@ -26,6 +26,27 @@
         "userFacingSha256": "702a3af5543f3c8d83aa45559f62a132300cd6dabe7a3b3428940b73d8493047",
         "recordsSha256": "cd08afb8b55700fe291bbc1ef0ab3a48b240e849bd4cce7a105e45722fabbc2f"
       }
+    },
+    {
+      "proposalId": "issue-0070-public-proposal-v1",
+      "publicProposal": {
+        "path": "content/public-proposals/issue-0070.public-proposal.json",
+        "sha256": "9f1be4e740ea501fa1055e4298aab2add915342575723e377541da81cf762b11"
+      },
+      "publicReview": {
+        "path": "content/public-proposals/issue-0070.public-review.json",
+        "sha256": "d39a48f00903074dc2cbb1bd73bfe7aaf312143ed008b906d14305fc9353a444"
+      },
+      "policyBinding": {
+        "path": "compliance/policy-binding.v2.json",
+        "sha256": "20a74b3643a65e621efe02402e59944223f1424f75d67e1af94476d6f233bd6f"
+      },
+      "projection": {
+        "entryCount": 1497,
+        "orderSha256": "2fc251be44606c0e9f72837ae2404fcfbc129aeac3190dc796d461be644c9126",
+        "userFacingSha256": "ace77389d0a10122ec03d21524a11c5ebf54678417d79f5abede17383ed7ee6b",
+        "recordsSha256": "270e5867777693b32a92020dfff0952b1c4e24366a632980ea534dfea4be85b4"
+      }
     }
   ],
   "sourceAuthorities": [
@@ -39,11 +60,11 @@
   ],
   "sourceRegister": {
     "path": "compliance/source-register.v1.json",
-    "sha256": "97134f1865cfd3f2fe565f330d36cdcbc756daf68f1075b0b4a8688b876f1c06"
+    "sha256": "5f5e5ae81a221bdee7097b86534f6060c8d03b2d606e5e526fcb3436d94bbab1"
   },
   "translationCoverage": {
     "path": "compliance/translation-coverage.v1.json",
-    "sha256": "265c98bcb068389eb241c24339ade9f8fedb4fa6ed535475896aec946cce7c9d"
+    "sha256": "c1d58f94d14210c04256047fd95eb29d22767bd9245f309426a691edf4891f75"
   },
   "rights": {
     "path": "compliance/rights-matrix.al-isabah.v1.json",
@@ -61,10 +82,10 @@
     "sha256": "64d41b0752b2de3d11a944d440c3816ab04313c512e2c9c74c2a1aa03981e081"
   },
   "reviewCounts": {
-    "machinePassed": 745,
-    "needsAttention": 792,
+    "machinePassed": 2180,
+    "needsAttention": 854,
     "humanReviewed": 0,
-    "humanUnreviewed": 1537
+    "humanUnreviewed": 3034
   },
   "outputInventory": [
     {
@@ -74,8 +95,20 @@
       "recordCount": 1537
     },
     {
+      "path": "records/volume-02.jsonl",
+      "sha256": "270e5867777693b32a92020dfff0952b1c4e24366a632980ea534dfea4be85b4",
+      "bytes": 6619469,
+      "recordCount": 1497
+    },
+    {
       "path": "reviews/issue-0026.json",
       "sha256": "39806b1fac07f7e806fda7d3bd528ae320f1491cbafa43242af1881453dde4ef",
+      "bytes": 691,
+      "recordCount": 1
+    },
+    {
+      "path": "reviews/issue-0070.json",
+      "sha256": "d39a48f00903074dc2cbb1bd73bfe7aaf312143ed008b906d14305fc9353a444",
       "bytes": 691,
       "recordCount": 1
     }

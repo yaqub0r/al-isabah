@@ -248,80 +248,70 @@ class ComplianceTests(unittest.TestCase):
             errors,
         )
 
-    def test_reopened_scope_allows_translated_and_remaining_counts_to_overlap(self):
+    def test_volume_two_is_agent_complete_after_immutable_submission(self):
         coverage = copy.deepcopy(self.translation_coverage)
         volume_two = next(
             scope for scope in coverage["scopes"] if scope["scope_id"] == "volume-02"
         )
-        self.assertEqual(volume_two["agent_completion"]["status"], "reopened")
+        completion = volume_two["agent_completion"]
+        self.assertEqual(completion["status"], "agent_complete")
         self.assertEqual(volume_two["agent_completion"]["translated_units"], 1497)
+        self.assertEqual(completion["remaining_agent_units"], 0)
         self.assertEqual(
-            volume_two["agent_completion"]["remaining_agent_units"], 1497
+            completion["evidence"]["source_register_artifact"],
+            "issue-0070-public-proposal-v1",
         )
+        self.assertEqual(volume_two["workflow_conformance"], "current")
+        self.assertEqual(volume_two["public_working_status"], "available")
+        self.assertEqual(volume_two["canonical_promotion"], "blocked")
+        self.assertEqual(volume_two["human_review"]["reviewed_units"], 0)
+        self.assertEqual(volume_two["human_review"]["unreviewed_units"], 1497)
         self.assertEqual(self.validate(translation_coverage=coverage), [])
 
-    def test_reopened_scope_requires_machine_actionable_work_remaining(self):
+    def test_volume_two_agent_complete_requires_zero_remaining_units(self):
         coverage = copy.deepcopy(self.translation_coverage)
         volume_two = next(
             scope for scope in coverage["scopes"] if scope["scope_id"] == "volume-02"
         )
-        volume_two["agent_completion"]["remaining_agent_units"] = 0
+        volume_two["agent_completion"]["remaining_agent_units"] = 1
         errors = self.validate(translation_coverage=coverage)
         self.assertTrue(
             any(
-                "reopened requires machine-actionable work remaining" in error
+                "agent_complete requires full coverage and zero remaining agent units"
+                in error
                 for error in errors
             ),
             errors,
         )
 
-    def test_reopened_scope_scopes_prior_evidence_to_historical_claim(self):
+    def test_volume_two_completion_uses_the_corrected_proposal(self):
         coverage = copy.deepcopy(self.translation_coverage)
         volume_two = next(
             scope for scope in coverage["scopes"] if scope["scope_id"] == "volume-02"
         )
-
-    def test_reopened_historical_counts_match_the_registered_artifact(self):
-        coverage = copy.deepcopy(self.translation_coverage)
-        volume_two = next(
-            scope for scope in coverage["scopes"] if scope["scope_id"] == "volume-02"
+        evidence = volume_two["agent_completion"]["evidence"]
+        evidence["source_register_artifact"] = "issue-0053-public-proposal-v1"
+        evidence["sha256"] = (
+            "2d5d43858dfecf55cd82be0ac92fd978087b43daac2c048ac2e718efb9de4a7b"
         )
-        historical = volume_two["agent_completion"]["recovery"][
-            "historical_completion"
-        ]
-        historical["locked_units"] = 1
-        historical["translated_units"] = 1
         errors = self.validate(translation_coverage=coverage)
         self.assertTrue(
             any(
-                "counts differ from the registered historical artifact" in error
-                for error in errors
-            ),
-            errors,
-        )
-        recovery = volume_two["agent_completion"]["recovery"]
-        recovery["historical_evidence_scope"] = "current-recovery-completion"
-        errors = self.validate(translation_coverage=coverage)
-        self.assertTrue(
-            any(
-                "must limit retained evidence to the superseded claim" in error
+                "volume-02 completion evidence is incorrect" in error
                 for error in errors
             ),
             errors,
         )
 
-    def test_reopened_scope_blocks_current_public_and_canonical_use(self):
+    def test_volume_two_completion_requires_current_public_working_state(self):
         coverage = copy.deepcopy(self.translation_coverage)
         volume_two = next(
             scope for scope in coverage["scopes"] if scope["scope_id"] == "volume-02"
         )
-        volume_two["public_working_status"] = "available"
+        volume_two["public_working_status"] = "blocked"
         errors = self.validate(translation_coverage=coverage)
         self.assertTrue(
-            any("public-working status must match" in error for error in errors), errors
-        )
-        self.assertTrue(
-            any("volume-02 recovery evidence is incorrect" in error for error in errors),
+            any("volume-02 completion evidence is incorrect" in error for error in errors),
             errors,
         )
 

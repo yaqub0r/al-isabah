@@ -1,6 +1,6 @@
 {
   "schema": "al-isabah.translation-governance-reference.v1",
-  "referenceVersion": "1.5.0",
+  "referenceVersion": "1.5.1",
   "authority": {
     "repository": "https://github.com/yaqub0r/al-isabah",
     "repositoryPath": "docs/contracts/translation-governance-reference.v1.json",
@@ -59,7 +59,7 @@
     {
       "id": "translation-coverage",
       "path": "compliance/translation-coverage.v1.json",
-      "sha256": "265c98bcb068389eb241c24339ade9f8fedb4fa6ed535475896aec946cce7c9d",
+      "sha256": "c1d58f94d14210c04256047fd95eb29d22767bd9245f309426a691edf4891f75",
       "status": "active",
       "version": "1.1.0"
     },
