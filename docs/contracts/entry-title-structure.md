@@ -48,15 +48,26 @@ the source evidence supports a more specific block kind.
 Consumers render the structured title with one consistent title role. Body
 length, paragraph count, review state, and the length of the title must not
 change that role or its type scale. Lineage and prose use body presentation.
+The machine-review presentation and the public projection must both apply the
+same governed bilingual boundary; neither may fall back to the raw source
+heading or the unsplit adjudicated paragraph.
 
 ## Decisions and evidence
 
 Book-specific boundary decisions live in the versioned
-[`entry-title-decisions.v2.json`](../../profiles/entry-title-decisions.v2.json)
+[`entry-title-decisions.v3.json`](../../profiles/entry-title-decisions.v3.json)
 profile. Each decision records the pinned source authority and the exact title
 realization in both languages. A consumer may use that profile to build a
 working presentation, but it must not silently expand, shorten, or otherwise
 reinterpret the title.
+
+When the pinned source begins with a damaged, non-identifying name fragment, an
+optional `editorialSupply` may provide only the missing subject head. The supply
+must be visibly bracketed in both title languages and bound to an identified
+same-work witness, its exact passage and evidence hashes, the literal pinned
+Arabic and English prefixes, and a reviewed equal-scope bilingual personal
+name. Projection removes only those literal prefixes from the bodies; it never
+rewrites the canonical Arabic or treats the supplied title as source text.
 
 Changing a decision requires reviewable evidence and a new profile version.
 Canonical Arabic bytes, source hashes, and earlier decisions remain in history.
@@ -66,8 +77,11 @@ Canonical Arabic bytes, source hashes, and earlier decisions remain in history.
 Validation fails closed when:
 
 - a governed entry does not use the profile's exact bilingual title;
+- a machine-review or public projection bypasses the governed title/body split;
 - Arabic and English title scopes differ;
 - moved title text is lost instead of retained at the beginning of the body;
+- a supplied head, pinned prefix, witness passage, evidence hash, or cumulative
+  witness binding is missing or has drifted;
 - explanatory relationships or narration appear in the title; or
 - a consumer varies title semantics or presentation based on body length.
 
@@ -75,6 +89,7 @@ Entry 11426 is the positive reference for the title/body hierarchy. The initial
 profile also resolves the observed boundary defects in 11427, 11430, 11439,
 and 11441.
 
-Profile v2 extends the same invariant across the additional title/body scope
-differences identified in Volume 8, pages 1–25. Profile v1 remains immutable as
-the historical decision set.
+Profile v3 carries forward the immutable v2 decision history, adds the reviewed
+Volume 2 decisions, and records witness-bound editorial supplies for damaged
+subject headings 2784 and 2880. Profiles v1 and v2 remain immutable historical
+decision sets.

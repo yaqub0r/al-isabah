@@ -81,10 +81,12 @@ contract](docs/contracts/entry-title-structure.md) defines a title as the
 shortest stable name or heading phrase identifying an entry's subject. Lineage,
 relationships, narration, and biographical prose remain in ordered body blocks;
 Arabic and English titles must cover the same semantic boundary. The versioned
-[title-decision profile](profiles/entry-title-decisions.v2.json) records
+[title-decision profile](profiles/entry-title-decisions.v3.json) records
 reviewed decisions for entries whose printed heading line does not provide that
-boundary reliably. Reader applications consume this structure and must not
-infer titles from typography or body length.
+boundary reliably. Its witness-bound editorial supplies preserve damaged source
+prefixes while displaying bracketed subject heads supported by same-work
+evidence. Reader applications consume this structure and must not infer titles
+from typography or body length.
 
 The [source compliance register](compliance/source-register.v1.json) applies
 the repository-local policy binding to the data currently available on the

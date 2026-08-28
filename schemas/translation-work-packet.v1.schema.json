@@ -14,29 +14,34 @@
     "authority",
     "policy",
     "scope",
+    "sliceContext",
     "entries",
     "formulaInventory",
-    "postRunRepairAudit",
+    "postRunRepairAudits",
     "reviewPresentation",
     "machineReadiness"
   ],
   "properties": {
-    "schemaVersion": { "const": "1.4.0" },
+    "schemaVersion": { "const": "1.5.0" },
     "packetId": { "pattern": "^isabah-translation-issue-[0-9]+$" },
     "workId": { "const": "ibn-hajar-al-isabah" },
-    "toolVersion": { "const": "1.4.0" },
+    "toolVersion": { "const": "1.5.0" },
     "runId": { "pattern": "^translation-run-[0-9a-f]{16}$" },
     "assignment": { "$ref": "#/$defs/assignment" },
     "authority": { "$ref": "#/$defs/authority" },
     "policy": { "$ref": "#/$defs/policy" },
     "scope": { "$ref": "#/$defs/scope" },
+    "sliceContext": { "$ref": "#/$defs/sliceContext" },
     "entries": {
       "type": "array",
       "minItems": 1,
       "items": { "$ref": "#/$defs/entry" }
     },
     "formulaInventory": { "$ref": "#/$defs/formulaInventory" },
-    "postRunRepairAudit": { "$ref": "#/$defs/postRunRepairAudit" },
+    "postRunRepairAudits": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/postRunRepairAudit" }
+    },
     "reviewPresentation": { "$ref": "#/$defs/presentation" },
     "machineReadiness": { "$ref": "#/$defs/readiness" }
   },
@@ -75,7 +80,8 @@
         "evidenceSha256",
         "inputSha256",
         "outputSha256",
-        "fingerprint"
+        "fingerprint",
+        "rebinding"
       ],
       "properties": {
         "status": { "enum": ["pending", "complete"] },
@@ -90,7 +96,12 @@
           ]
         },
         "origin": {
-          "enum": ["direct_execution", "legacy_migration", null]
+          "enum": [
+            "direct_execution",
+            "legacy_migration",
+            "deterministic_rebinding",
+            null
+          ]
         },
         "sourceSha256": { "$ref": "#/$defs/nullableSha256" },
         "upstreamSha256": { "$ref": "#/$defs/nullableSha256" },
@@ -106,7 +117,62 @@
         "evidenceSha256": { "$ref": "#/$defs/nullableSha256" },
         "inputSha256": { "$ref": "#/$defs/nullableSha256" },
         "outputSha256": { "$ref": "#/$defs/nullableSha256" },
-        "fingerprint": { "$ref": "#/$defs/nullableSha256" }
+        "fingerprint": { "$ref": "#/$defs/nullableSha256" },
+        "rebinding": {
+          "anyOf": [
+            { "$ref": "#/$defs/stageProvenanceRebinding" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
+    "stageProvenanceRebinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reason",
+        "previousOrigin",
+        "previousSourceSha256",
+        "previousUpstreamSha256",
+        "previousPromptOrPolicySha256",
+        "previousSchemaSha256",
+        "previousInputSha256",
+        "previousOutputSha256",
+        "previousFingerprint",
+        "previousModel",
+        "previousReasoning",
+        "evidenceSha256",
+        "runId",
+        "repairRunIds"
+      ],
+      "properties": {
+        "reason": { "enum": ["schema_migration", "post_run_repair"] },
+        "previousOrigin": {
+          "enum": [
+            "direct_execution",
+            "legacy_migration",
+            "deterministic_rebinding"
+          ]
+        },
+        "previousSourceSha256": { "$ref": "#/$defs/sha256" },
+        "previousUpstreamSha256": { "$ref": "#/$defs/sha256" },
+        "previousPromptOrPolicySha256": { "$ref": "#/$defs/sha256" },
+        "previousSchemaSha256": { "$ref": "#/$defs/sha256" },
+        "previousInputSha256": { "$ref": "#/$defs/sha256" },
+        "previousOutputSha256": { "$ref": "#/$defs/sha256" },
+        "previousFingerprint": { "$ref": "#/$defs/sha256" },
+        "previousModel": { "type": "string", "minLength": 1 },
+        "previousReasoning": { "type": "string", "minLength": 1 },
+        "evidenceSha256": { "$ref": "#/$defs/sha256" },
+        "runId": { "type": "string", "minLength": 1 },
+        "repairRunIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^translation-repair-run-[0-9a-f]{16}$"
+          }
+        }
       }
     },
     "executionReceipt": {
@@ -261,6 +327,62 @@
           }
         }
       }
+    },
+    "sliceContextItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceOccurrenceId", "displayContextId"],
+      "properties": {
+        "sourceOccurrenceId": { "type": "string", "minLength": 1 },
+        "displayContextId": { "type": "string", "minLength": 1 }
+      }
+    },
+    "sliceContext": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "beforeSourceOrdinal",
+        "sourceProposalId",
+        "sourceProposalSha256",
+        "contexts"
+      ],
+      "properties": {
+        "state": { "enum": ["root", "continued"] },
+        "beforeSourceOrdinal": { "type": "integer", "minimum": 1 },
+        "sourceProposalId": {
+          "type": ["string", "null"],
+          "pattern": "^issue-[0-9]{4}-public-proposal-v1$"
+        },
+        "sourceProposalSha256": {
+          "anyOf": [{ "$ref": "#/$defs/sha256" }, { "type": "null" }]
+        },
+        "contexts": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sliceContextItem" }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "state": { "const": "root" } } },
+          "then": {
+            "properties": {
+              "beforeSourceOrdinal": { "const": 1 },
+              "sourceProposalId": { "const": null },
+              "sourceProposalSha256": { "const": null },
+              "contexts": { "maxItems": 0 }
+            }
+          },
+          "else": {
+            "properties": {
+              "beforeSourceOrdinal": { "minimum": 2 },
+              "sourceProposalId": { "type": "string" },
+              "sourceProposalSha256": { "$ref": "#/$defs/sha256" },
+              "contexts": { "minItems": 1 }
+            }
+          }
+        }
+      ]
     },
     "entry": {
       "type": "object",
@@ -489,10 +611,21 @@
         "status": { "enum": ["pending", "complete"] },
         "runId": { "$ref": "#/$defs/nullableString" },
         "model": { "$ref": "#/$defs/nullableString" },
-        "findings": { "type": "array" },
+        "findings": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/critiqueFinding" }
+        },
         "semanticAudit": { "$ref": "#/$defs/semanticAudit" },
         "independentContext": { "$ref": "#/$defs/independentContext" },
         "provenance": { "$ref": "#/$defs/stageProvenance" }
+      }
+    },
+    "critiqueFinding": {
+      "type": "object",
+      "required": ["findingId", "requiresWitness"],
+      "properties": {
+        "findingId": { "type": "string", "minLength": 1 },
+        "requiresWitness": { "type": "boolean" }
       }
     },
     "semanticAudit": {
@@ -563,6 +696,7 @@
       "additionalProperties": false,
       "required": [
         "status",
+        "findingIds",
         "query",
         "witnessRole",
         "witnessIdentity",
@@ -576,6 +710,12 @@
       ],
       "properties": {
         "status": { "enum": ["hit", "no_match"] },
+        "findingIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
         "query": { "type": "string", "minLength": 1 },
         "witnessRole": {
           "enum": [
@@ -762,7 +902,7 @@
       "required": ["status", "registryVersion", "occurrences"],
       "properties": {
         "status": { "enum": ["pending", "complete"] },
-        "registryVersion": { "const": "1.2.2" },
+        "registryVersion": { "const": "1.3.0" },
         "occurrences": {
           "type": "array",
           "items": { "$ref": "#/$defs/formulaOccurrence" }
@@ -814,13 +954,15 @@
       "additionalProperties": false,
       "required": [
         "status",
+        "previousAuditSha256",
         "basePacketSha256",
         "artifactSha256",
         "runId",
         "operations"
       ],
       "properties": {
-        "status": { "enum": ["not_required", "complete"] },
+        "status": { "const": "complete" },
+        "previousAuditSha256": { "$ref": "#/$defs/nullableSha256" },
         "basePacketSha256": {
           "anyOf": [
             { "$ref": "#/$defs/sha256" },
@@ -855,25 +997,145 @@
         "recordKind",
         "targetStage",
         "fieldPath",
-        "oldTextSha256",
-        "newTextSha256",
+        "valueKind",
         "reasons"
       ],
       "properties": {
         "repairId": { "type": "string", "minLength": 1 },
-        "sourceUnitId": { "type": "string", "minLength": 1 },
+        "sourceUnitId": {
+          "anyOf": [
+            { "type": "string", "minLength": 1 },
+            { "type": "null" }
+          ]
+        },
         "segmentId": { "$ref": "#/$defs/nullableString" },
-        "recordKind": { "enum": ["entry", "structural"] },
-        "targetStage": { "enum": ["blind_translation", "adjudication"] },
-        "fieldPath": { "type": "string", "pattern": "^\\$\\.entries\\[" },
+        "recordKind": { "enum": ["entry", "structural", "packet"] },
+        "targetStage": {
+          "enum": [
+            "blind_translation",
+            "independent_critique",
+            "witness_resolution",
+            "adjudication",
+            "name_inventory",
+            "policy_binding"
+          ]
+        },
+        "fieldPath": { "type": "string" },
+        "valueKind": { "enum": ["text", "canonical_json"] },
         "oldTextSha256": { "$ref": "#/$defs/sha256" },
         "newTextSha256": { "$ref": "#/$defs/sha256" },
+        "oldValueSha256": { "$ref": "#/$defs/sha256" },
+        "newValueSha256": { "$ref": "#/$defs/sha256" },
+        "oldPolicyBindingSha256": { "$ref": "#/$defs/sha256" },
+        "newPolicyBindingSha256": { "$ref": "#/$defs/sha256" },
+        "oldSemanticValueSha256": { "$ref": "#/$defs/sha256" },
+        "newSemanticValueSha256": { "$ref": "#/$defs/sha256" },
         "reasons": {
           "type": "array",
           "minItems": 1,
           "items": { "$ref": "#/$defs/postRunRepairReason" }
         }
-      }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "recordKind": { "const": "packet" } },
+            "required": ["recordKind"]
+          },
+          "then": {
+            "properties": {
+              "sourceUnitId": { "type": "null" },
+              "segmentId": { "type": "null" },
+              "targetStage": { "const": "policy_binding" },
+              "fieldPath": { "const": "$.policy" },
+              "valueKind": { "const": "canonical_json" }
+            },
+            "required": [
+              "oldPolicyBindingSha256",
+              "newPolicyBindingSha256"
+            ]
+          },
+          "else": {
+            "properties": {
+              "sourceUnitId": { "type": "string", "minLength": 1 },
+              "recordKind": { "enum": ["entry", "structural"] },
+              "targetStage": {
+                "enum": [
+                  "blind_translation",
+                  "independent_critique",
+                  "witness_resolution",
+                  "adjudication",
+                  "name_inventory"
+                ]
+              },
+              "fieldPath": { "pattern": "^\\$\\.entries\\[" }
+            },
+            "not": {
+              "anyOf": [
+                { "required": ["oldPolicyBindingSha256"] },
+                { "required": ["newPolicyBindingSha256"] }
+              ]
+            }
+          }
+        },
+        {
+          "if": { "properties": { "valueKind": { "const": "text" } } },
+          "then": {
+            "required": ["oldTextSha256", "newTextSha256"],
+            "not": {
+              "anyOf": [
+                { "required": ["oldValueSha256"] },
+                { "required": ["newValueSha256"] }
+              ]
+            }
+          },
+          "else": {
+            "required": ["oldValueSha256", "newValueSha256"],
+            "not": {
+              "anyOf": [
+                { "required": ["oldTextSha256"] },
+                { "required": ["newTextSha256"] }
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "targetStage": { "const": "adjudication" },
+              "valueKind": { "const": "canonical_json" }
+            },
+            "required": ["targetStage", "valueKind"]
+          },
+          "then": {
+            "required": [
+              "oldSemanticValueSha256",
+              "newSemanticValueSha256"
+            ]
+          },
+          "else": {}
+        },
+        {
+          "if": {
+            "properties": {
+              "valueKind": { "const": "canonical_json" },
+              "fieldPath": {
+                "pattern": "\\.(blindTranslation|independentCritique|witnessResolution|adjudication|names)$"
+              }
+            },
+            "required": ["valueKind", "fieldPath"]
+          },
+          "then": {},
+          "else": {
+            "not": {
+              "anyOf": [
+                { "required": ["oldSemanticValueSha256"] },
+                { "required": ["newSemanticValueSha256"] }
+              ]
+            }
+          }
+        }
+      ]
     },
     "postRunRepairReason": {
       "type": "object",

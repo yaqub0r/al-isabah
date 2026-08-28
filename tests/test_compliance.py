@@ -140,6 +140,56 @@ class ComplianceTests(unittest.TestCase):
             )
         )
 
+    def test_policy_binds_active_title_and_formula_authorities(self):
+        contracts = {item["id"]: item for item in self.policy["contracts"]}
+        self.assertEqual(
+            contracts["entry-title-decisions"],
+            {
+                "id": "entry-title-decisions",
+                "path": "profiles/entry-title-decisions.v3.json",
+                "sha256": MODULE.canonical_text_sha256(
+                    ROOT / "profiles" / "entry-title-decisions.v3.json"
+                ),
+            },
+        )
+        self.assertEqual(
+            contracts["honorific-formula-registry"],
+            {
+                "id": "honorific-formula-registry",
+                "path": "profiles/honorific-formulas.v1.json",
+                "sha256": MODULE.canonical_text_sha256(
+                    ROOT / "profiles" / "honorific-formulas.v1.json"
+                ),
+            },
+        )
+
+    def test_registry_contains_exact_quoted_prayer_record(self):
+        self.assertEqual(self.formula_registry["registryVersion"], "1.3.0")
+        prayer = "اللهم بارك على محمد وعلى آل محمد"
+        records = [
+            item for item in self.formula_registry["entries"]
+            if item["source"] == prayer
+        ]
+        self.assertEqual(
+            records,
+            [
+                {
+                    "source": prayer,
+                    "target": prayer,
+                    "semanticClass": "quoted_prophetic_blessing_with_family",
+                    "referentScope": "Muḥammad and the family of Muḥammad",
+                    "grammaticalAgreement": (
+                        "second-person masculine singular imperative addressed to God; "
+                        "masculine singular prophetic referent with family inclusion"
+                    ),
+                    "expandedArabic": prayer,
+                    "accessibleEnglish": (
+                        "O God, bless Muḥammad and the family of Muḥammad."
+                    ),
+                }
+            ],
+        )
+
     def test_governance_reference_rejects_external_authority(self):
         reference = copy.deepcopy(self.governance_reference)
         reference["authority"]["repository"] = "https://github.com/yaqub0r/sabiqah"

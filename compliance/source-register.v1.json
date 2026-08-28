@@ -308,6 +308,43 @@
       "review_status": "historical-reopened-scope-current-distribution-quarantined"
     },
     {
+      "id": "issue-0070-public-proposal-v1",
+      "kind": "public-working-bilingual-proposal",
+      "title": "Issue 0070 corrected Volume 2 strict public proposal",
+      "classification": "approved-for-publication",
+      "rights_basis": "A deterministic strict-public projection of the recovered machine-ready Volume 2 lineage. It retains the approved OpenITI Arabic authority, independently authored project English, normalized review state, formula identity, names, public-safe unresolved categories and priorities, continued structural context, and aggregate evidence hashes while excluding internal stages, detailed findings, witness expression, model traces, operational locations, private paths, and source coordinates.",
+      "license": {
+        "spdx": "CC-BY-NC-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      "integrity": {
+        "proposal_sha256": "9f1be4e740ea501fa1055e4298aab2add915342575723e377541da81cf762b11",
+        "public_review_sha256": "d39a48f00903074dc2cbb1bd73bfe7aaf312143ed008b906d14305fc9353a444",
+        "record_projection_sha256": "270e5867777693b32a92020dfff0952b1c4e24366a632980ea534dfea4be85b4",
+        "order_sha256": "2fc251be44606c0e9f72837ae2404fcfbc129aeac3190dc796d461be644c9126",
+        "user_facing_sha256": "ace77389d0a10122ec03d21524a11c5ebf54678417d79f5abede17383ed7ee6b",
+        "public_entries": 1497,
+        "packet_set_sha256": "e2a01dbca18974ebfd542b85ed341b1fc64c5f690ed7e7b1696b8793835ce9eb",
+        "review_set_sha256": "7f9d30139be62331a0cc525d91736f6aea54a11d377d79b3b7ab5851b20e29bf"
+      },
+      "depends_on": [
+        "ibn-hajar-underlying-medieval-work",
+        "openiti-cleaned-arabic-comparison"
+      ],
+      "allowed_actions": [
+        "retain and review the deterministic strict public proposal and public review",
+        "verify the public-boundary projection against the ignored machine-ready lineage",
+        "prepare final admission after immutable evidence is submitted to an explicitly approved external destination"
+      ],
+      "prohibited_public_actions": [
+        "include the proposal in a current release closure or public-working distribution before approved external evidence submission",
+        "represent the proposal as agent-complete, canonically promoted, human-approved, publication-eligible, or released",
+        "add detailed findings, restricted witness expression, internal stages, model traces, source coordinates, private paths, or operational metadata",
+        "overwrite or treat the historical issue 0053 proposal and review as current evidence"
+      ],
+      "review_status": "approved-public-proposal-external-submission-blocked"
+    },
+    {
       "id": "volume-08-aligned-arabic",
       "kind": "derived-arabic-data",
       "title": "Volume 8 aligned Arabic source",

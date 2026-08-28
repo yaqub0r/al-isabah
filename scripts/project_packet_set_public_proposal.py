@@ -25,14 +25,14 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import translation_workflow as workflow  # noqa: E402
 from validate_entry_titles import (  # noqa: E402
-    body_after_decided_title,
     decision_index,
+    governed_title_and_body,
     load as load_title_profile,
 )
 
 
 INLINE_SECTION = re.compile(r"\s*#~:section:\d*\s*(\([^\n]+\))\s*")
-ENTRY_TITLE_PROFILE = ROOT / "profiles" / "entry-title-decisions.v2.json"
+ENTRY_TITLE_PROFILE = ROOT / "profiles" / "entry-title-decisions.v3.json"
 ENTRY_TITLE_PROFILE_NAME = re.compile(r"^entry-title-decisions\.v[0-9]+\.json$")
 
 
@@ -84,35 +84,10 @@ def title_and_body(
     entry: dict[str, Any], decision: dict[str, Any]
 ) -> tuple[dict[str, Any], str, str]:
     """Project the exact governed title and retain the decided body opening."""
-    title = decision["title"]
-    body_opening = decision["bodyOpening"]
-    source_heading = public_arabic(entry["source"]["headingArabic"])
-    if not source_heading.startswith(title["ar"]):
-        raise ValueError(
-            f"source ordinal {entry['sourceOrdinal']} title decision does not "
-            "match the pinned Arabic heading"
-        )
-    arabic = body_after_decided_title(
-        public_arabic(entry["source"]["arabic"]),
-        title["ar"],
-        body_opening["ar"],
-        location=f"source ordinal {entry['sourceOrdinal']} Arabic body",
-    )
-    english = body_after_decided_title(
-        entry["adjudication"]["english"].strip(),
-        title["en"],
-        body_opening["en"],
-        location=f"source ordinal {entry['sourceOrdinal']} English body",
-    )
-    return (
-        {
-            "arabic": title["ar"],
-            "english": title["en"],
-            "state": "needs_attention" if entry.get("unresolved") else "ready",
-            "method": "profile-decision",
-        },
-        arabic,
-        english,
+    return governed_title_and_body(
+        entry,
+        decision,
+        render_arabic=public_arabic,
     )
 
 

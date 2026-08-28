@@ -24,6 +24,14 @@ import validate_entry_titles as title_contract
 
 
 ROOT = Path(__file__).resolve().parents[1]
+# Immutable release-closure v1 provenance for the quarantined 1.1 proposal.
+# Only this exact proposal/version/hash tuple may use a superseded v2 snapshot.
+HISTORICAL_POLICY_BINDINGS = {
+    (
+        "1.1.0",
+        "issue-0053-public-proposal-v1",
+    ): "081b4d5903575710d9d7f21db6f978a0e7922b2e93431c1eab2f1a010e3f9ccf",
+}
 SHA1 = re.compile(r"^[a-f0-9]{40}$")
 SHA256 = re.compile(r"^[a-f0-9]{64}$")
 COMMIT = SHA1
@@ -518,12 +526,19 @@ def validate(
         != len(records)
     ):
         errors.append(safe_error("$.proposalId", "proposal-register-mismatch"))
-    policy_path = (
-        ROOT / "compliance" / "policy-binding.v1.json"
-        if schema_version == "1.0.0"
-        else ROOT / "compliance" / "policy-binding.v2.json"
+    historical_policy_hash = HISTORICAL_POLICY_BINDINGS.get(
+        (schema_version, str(proposal_id))
     )
-    policy_hash = sha256_text_file(policy_path)
+    if schema_version == "1.0.0":
+        policy_hash = sha256_text_file(
+            ROOT / "compliance" / "policy-binding.v1.json"
+        )
+    elif historical_policy_hash is not None:
+        policy_hash = historical_policy_hash
+    else:
+        policy_hash = sha256_text_file(
+            ROOT / "compliance" / "policy-binding.v2.json"
+        )
     if proposal.get("policy", {}).get("bindingSha256") != policy_hash:
         errors.append(safe_error("$.policy.bindingSha256", "policy-mismatch"))
     rights = json.loads((ROOT / "compliance" / "rights-matrix.al-isabah.v1.json").read_text(encoding="utf-8"))

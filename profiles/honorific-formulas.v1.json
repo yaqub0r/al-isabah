@@ -1,9 +1,18 @@
 {
   "schema": "al-isabah.honorific-formula-registry.v1",
-  "registryVersion": "1.2.2",
+  "registryVersion": "1.3.0",
   "contractId": "translation-quality-workflow",
   "profileId": "al-isabah-translation-profile",
   "entries": [
+    {
+      "source": "اللهم بارك على محمد وعلى آل محمد",
+      "target": "اللهم بارك على محمد وعلى آل محمد",
+      "semanticClass": "quoted_prophetic_blessing_with_family",
+      "referentScope": "Muḥammad and the family of Muḥammad",
+      "grammaticalAgreement": "second-person masculine singular imperative addressed to God; masculine singular prophetic referent with family inclusion",
+      "expandedArabic": "اللهم بارك على محمد وعلى آل محمد",
+      "accessibleEnglish": "O God, bless Muḥammad and the family of Muḥammad."
+    },
     {
       "source": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0639\u0644\u064a\u0647\u0645 \u0635\u0644\u0627\u0629 \u062e\u0627\u0644\u062f\u0629 \u060c \u0648\u0633\u0644\u0627\u0645\u0627 \u0645\u0624\u0628\u062f\u0627 [ \u0648\u0633\u0644\u0645 \u062a\u0633\u0644\u064a\u0645\u0627 ]",
       "target": "May God bless him and them with an everlasting blessing and grant them perpetual peace [and fullest peace].",

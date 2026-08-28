@@ -39,7 +39,7 @@
   ],
   "sourceRegister": {
     "path": "compliance/source-register.v1.json",
-    "sha256": "14d0564c9e56de65dd19fe0dccb5f87df9174aa7bb44f019b84556dc58f67017"
+    "sha256": "97134f1865cfd3f2fe565f330d36cdcbc756daf68f1075b0b4a8688b876f1c06"
   },
   "translationCoverage": {
     "path": "compliance/translation-coverage.v1.json",

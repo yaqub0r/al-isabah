@@ -42,6 +42,11 @@ GENERATED_AT = "2026-08-14T16:22:30Z"
 PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0026.public-proposal.json"
 VOLUME2_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0053.public-proposal.json"
 VOLUME2_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0053.public-review.json"
+ISSUE_0070_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0070.public-proposal.json"
+ISSUE_0070_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0070.public-review.json"
+ISSUE_0070_RUNTIME_PACKET = (
+    ROOT / ".runtime" / "translation" / "packets" / "issue-0070-lineage.json"
+)
 EXPECTED_USER_FACING_SHA256 = "702a3af5543f3c8d83aa45559f62a132300cd6dabe7a3b3428940b73d8493047"
 VOLUME2_USER_FACING_SHA256 = "60137418e7c1dbd3c9a1020bc290dcb1d8ec539d24fb58fbbc2793332b32b782"
 
@@ -51,6 +56,9 @@ class PublicDistributionTests(unittest.TestCase):
     def setUpClass(cls):
         cls.proposal = json.loads(PROPOSAL_PATH.read_text(encoding="utf-8"))
         cls.volume2_proposal = json.loads(VOLUME2_PROPOSAL_PATH.read_text(encoding="utf-8"))
+        cls.issue_0070_proposal = json.loads(
+            ISSUE_0070_PROPOSAL_PATH.read_text(encoding="utf-8")
+        )
 
     def test_current_tree_and_exact_closure_are_valid(self):
         self.assertEqual(PROPOSAL_VALIDATOR.validate(), [])
@@ -97,6 +105,66 @@ class PublicDistributionTests(unittest.TestCase):
         self.assertTrue(all(record["arabic"].strip() and record["english"].strip() for record in records))
         self.assertEqual(BOUNDARY.boundary_errors(proposal), [])
 
+    def test_historical_volume2_policy_binding_is_exact_and_fail_closed(self):
+        proposal = copy.deepcopy(self.volume2_proposal)
+        self.assertEqual(
+            proposal["policy"]["bindingSha256"],
+            PROPOSAL_VALIDATOR.HISTORICAL_POLICY_BINDINGS[
+                ("1.1.0", "issue-0053-public-proposal-v1")
+            ],
+        )
+        proposal["policy"]["bindingSha256"] = "0" * 64
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "historical.public-proposal.json"
+            path.write_bytes(BOUNDARY.canonical_json(proposal))
+            errors = PROPOSAL_VALIDATOR.validate(path)
+        self.assertTrue(any("category=policy-mismatch" in error for error in errors))
+
+    def test_issue_70_corrected_proposal_is_strict_public_safe_and_submission_blocked(self):
+        proposal = self.issue_0070_proposal
+        records = proposal["records"]
+        self.assertEqual(PROPOSAL_VALIDATOR.validate(ISSUE_0070_PROPOSAL_PATH), [])
+        self.assertEqual(
+            REVIEW.canonical_json(REVIEW.review(ISSUE_0070_PROPOSAL_PATH)),
+            ISSUE_0070_REVIEW_PATH.read_bytes(),
+        )
+        self.assertEqual(proposal["schemaVersion"], "1.2.0")
+        self.assertEqual(len(records), 1497)
+        self.assertEqual(proposal["review"], {
+            "humanReviewed": 0,
+            "humanUnreviewed": 1497,
+            "machinePassed": 1435,
+            "needsAttention": 62,
+        })
+        self.assertTrue(all(record["humanReview"] == "unreviewed" for record in records))
+        unresolved = [item for record in records for item in record["unresolved"]]
+        self.assertEqual(len(unresolved), 66)
+        self.assertEqual(
+            sum(bool(record["unresolved"]) for record in records),
+            62,
+        )
+        self.assertTrue(all(set(item) == {"category", "priority"} for item in unresolved))
+        self.assertEqual(BOUNDARY.boundary_errors(proposal), [])
+
+        register = json.loads(
+            (ROOT / "compliance" / "source-register.v1.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        artifact = next(
+            item
+            for item in register["artifacts"]
+            if item["id"] == "issue-0070-public-proposal-v1"
+        )
+        self.assertEqual(
+            artifact["review_status"],
+            "approved-public-proposal-external-submission-blocked",
+        )
+        self.assertIn(
+            "include the proposal in a current release closure or public-working distribution before approved external evidence submission",
+            artifact["prohibited_public_actions"],
+        )
+
     def test_current_closure_quarantines_the_reopened_volume2_scope(self):
         paths, errors = CURRENT_CLOSURE.current_proposal_paths()
         self.assertEqual(errors, [])
@@ -129,6 +197,15 @@ class PublicDistributionTests(unittest.TestCase):
         self.assertEqual(
             volume_two["review_status"],
             "historical-reopened-scope-current-distribution-quarantined",
+        )
+        corrected_volume_two = next(
+            item
+            for item in register["artifacts"]
+            if item["id"] == "issue-0070-public-proposal-v1"
+        )
+        self.assertNotEqual(
+            corrected_volume_two["review_status"],
+            CURRENT_CLOSURE.CURRENT_DISTRIBUTION_REVIEW_STATUS,
         )
 
     def test_legacy_volume2_proposal_is_not_current_title_ready(self):
@@ -176,6 +253,99 @@ class PublicDistributionTests(unittest.TestCase):
         self.assertTrue(arabic.startswith("غير منسوب"))
         self.assertTrue(english.startswith("without a lineage attribution"))
 
+    def test_witness_bound_supply_displays_brackets_and_removes_only_source_prefix(self):
+        profile = PACKET_PROJECT.load_title_profile(PACKET_PROJECT.ENTRY_TITLE_PROFILE)
+        decision = PACKET_PROJECT.decision_index(profile)[2784]
+        entry = {
+            "sourceOrdinal": 2784,
+            "source": {
+                "headingArabic": "بن بدر بن امرئ القيس بن خلف",
+                "arabic": "بن بدر بن امرئ القيس بن خلف خبر",
+            },
+            "adjudication": {
+                "english": "Ibn Badr ibn Imriʾ al-Qays ibn Khalaf. Report."
+            },
+            "unresolved": [],
+        }
+        title, arabic, english = PACKET_PROJECT.title_and_body(entry, decision)
+        self.assertEqual(title["arabic"], "[الزبرقان] بن بدر")
+        self.assertEqual(title["english"], "[Al-Zibriqān] ibn Badr")
+        self.assertEqual(arabic, "بن امرئ القيس بن خلف خبر")
+        self.assertEqual(english, "ibn Imriʾ al-Qays ibn Khalaf. Report.")
+
+    def test_witness_bound_supply_rejects_drifted_packet_prefix(self):
+        profile = PACKET_PROJECT.load_title_profile(PACKET_PROJECT.ENTRY_TITLE_PROFILE)
+        decision = PACKET_PROJECT.decision_index(profile)[2880]
+        entry = {
+            "sourceOrdinal": 2880,
+            "source": {
+                "headingArabic": "زيد بن أبي أوفى بن خالد بن الحارث",
+                "arabic": "زيد بن أبي أوفى بن خالد بن الحارث خبر",
+            },
+            "adjudication": {
+                "english": "Zayd ibn Abī Awfā ibn Khālid ibn al-Ḥārith. Report."
+            },
+            "unresolved": [],
+        }
+        with self.assertRaisesRegex(ValueError, "pinned Arabic source prefix"):
+            PACKET_PROJECT.title_and_body(entry, decision)
+
+    @unittest.skipUnless(
+        ISSUE_0070_RUNTIME_PACKET.is_file(),
+        "ignored issue-70 recovery packet is available only in the review workspace",
+    )
+    def test_issue_70_all_1497_records_and_runtime_review_use_governed_titles(self):
+        packet = json.loads(ISSUE_0070_RUNTIME_PACKET.read_text(encoding="utf-8"))
+        unit_2792 = packet["entries"][2792 - 1538]
+        english_2792 = unit_2792["adjudication"]["english"]
+        if "Ibn Mandahh transmitted" in english_2792:
+            self.assertEqual(english_2792.count("Ibn Mandahh transmitted"), 1)
+            english_2792 = english_2792.replace(
+                "Ibn Mandahh transmitted",
+                "Ibn Mandah transmitted",
+                1,
+            )
+            unit_2792["adjudication"]["english"] = english_2792
+        self.assertNotIn("Ibn Mandahh transmitted", english_2792)
+        self.assertEqual(english_2792.count("Ibn Mandah transmitted"), 1)
+        profile = PACKET_PROJECT.load_title_profile(
+            PACKET_PROJECT.ENTRY_TITLE_PROFILE
+        )
+        decisions = PACKET_PROJECT.decision_index(profile)
+        formulas = {}
+        for occurrence in packet["formulaInventory"]["occurrences"]:
+            formulas.setdefault(occurrence["recordId"], []).append(occurrence)
+        records = [
+            PACKET_PROJECT.public_record(
+                packet,
+                entry,
+                formulas.get(entry["sourceUnitId"], []),
+                decisions[entry["sourceEntryNumber"]],
+            )
+            for entry in packet["entries"]
+        ]
+        self.assertEqual(len(records), 1497)
+        self.assertEqual(
+            [record["sourceOrdinal"] for record in records],
+            list(range(1538, 3035)),
+        )
+        supplied = {record["sourceOrdinal"]: record for record in records}
+        self.assertEqual(
+            supplied[2784]["title"]["english"], "[Al-Zibriqān] ibn Badr"
+        )
+        self.assertEqual(supplied[2784]["title"]["arabic"], "[الزبرقان] بن بدر")
+        self.assertEqual(
+            supplied[2880]["title"]["english"], "[Zayd] ibn Abī Awfā"
+        )
+        self.assertEqual(supplied[2880]["title"]["arabic"], "[زيد] بن أبي أوفى")
+
+        review = PACKET_PROJECT.workflow.render_review(packet)
+        self.assertEqual(review.count("### Governed bilingual title"), 1497)
+        self.assertIn("**[Al-Zibriqān] ibn Badr**", review)
+        self.assertIn("**[الزبرقان] بن بدر**", review)
+        self.assertIn("**[Zayd] ibn Abī Awfā**", review)
+        self.assertIn("**[زيد] بن أبي أوفى**", review)
+
     def test_current_title_binding_requires_exact_hash_and_unique_coverage(self):
         profile = PACKET_PROJECT.load_title_profile(PACKET_PROJECT.ENTRY_TITLE_PROFILE)
         decision = next(
@@ -185,7 +355,7 @@ class PublicDistributionTests(unittest.TestCase):
         )
         proposal = {
             "entryTitleDecisions": {
-                "profileId": "entry-title-decisions.v2",
+                "profileId": "entry-title-decisions.v3",
                 "profileSha256": BOUNDARY.sha256_file(PACKET_PROJECT.ENTRY_TITLE_PROFILE),
                 "coveredRecordCount": 1,
             },

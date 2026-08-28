@@ -18,12 +18,25 @@ reopened and blocked that scope after its prior machine-readiness and
 agent-completion evidence was discredited. The artifacts remain inspectable,
 but they are quarantined from every current closure and distribution.
 
+`issue-0070.public-proposal.json` and `issue-0070.public-review.json` are the
+corrected deterministic projection of the recovered, machine-ready Volume 2
+lineage. They expose 66 unresolved items across 62 records only as public-safe
+category and priority pairs, and all 1,497 records remain human-unreviewed. The
+proposal is registered for review, but an immutable copy of its private packet
+and review presentation has not been submitted because no exact external
+evidence destination is approved. Until that submission is authorized and
+completed, Volume 2 remains reopened and blocked from the current distribution;
+the proposal must not be described as agent-complete, human-approved,
+canonically promoted, publication-eligible, or released.
+
 `compliance/publication/issue-0053.release-closure.v1.json` remains the exact
 historical cumulative closure. The current distribution closure is
 `compliance/publication/issue-0070.release-closure.v1.json`; it binds the
 governed translation-coverage state and includes only the current-ready Volume
-1 proposal and review. Volume 8 remains unchanged and blocked from public
-working distribution pending its current-policy audit.
+1 proposal and review. The closure binds the blocked Issue #70 proposal through
+the source register without admitting it to distribution. Volume 8 remains
+unchanged and blocked from public working distribution pending its
+current-policy audit.
 
 These artifacts are approved only for `public-working` distribution. Canonical
 promotion remains blocked and requires its own human scholarly and compliance

@@ -138,14 +138,7 @@ def _validate_fresh_target(
         "target formula inventory must still be pending",
     )
     _require(
-        packet.get("postRunRepairAudit")
-        == {
-            "status": "not_required",
-            "basePacketSha256": None,
-            "artifactSha256": None,
-            "runId": None,
-            "operations": [],
-        },
+        packet.get("postRunRepairAudits") == [],
         "target post-run repair state is not freshly prepared",
     )
     _require(
@@ -240,7 +233,26 @@ def _validate_legacy_packet(
         actual_ordinals == list(range(expected_range[0], expected_range[1] + 1)),
         f"legacy issue {issue} does not exactly cover its source range in order",
     )
-    repair_errors = workflow.validate_post_run_repair_audit(packet)
+    legacy_audit = packet.get("postRunRepairAudit", {})
+    if legacy_audit.get("status") == "not_required":
+        repair_errors = [] if legacy_audit == {
+            "status": "not_required",
+            "basePacketSha256": None,
+            "artifactSha256": None,
+            "runId": None,
+            "operations": [],
+        } else ["legacy not-required repair audit must be empty"]
+    else:
+        modernized = copy.deepcopy(packet)
+        modernized.pop("postRunRepairAudit", None)
+        migrated_audit = copy.deepcopy(legacy_audit)
+        for operation in migrated_audit.get("operations", []):
+            if isinstance(operation, dict):
+                operation["valueKind"] = "text"
+        modernized["postRunRepairAudits"] = [
+            {**migrated_audit, "previousAuditSha256": None}
+        ]
+        repair_errors = workflow.validate_post_run_repair_audits(modernized)
     if repair_errors:
         raise RecoveryError(
             f"legacy issue {issue} repair evidence is invalid:\n- "
@@ -524,13 +536,7 @@ def recover_blind_translations(
         "registryVersion": workflow.FORMULA_REGISTRY_VERSION,
         "occurrences": [],
     }
-    recovered["postRunRepairAudit"] = {
-        "status": "not_required",
-        "basePacketSha256": None,
-        "artifactSha256": None,
-        "runId": None,
-        "operations": [],
-    }
+    recovered["postRunRepairAudits"] = []
     recovered["reviewPresentation"] = {
         "status": "pending",
         "path": None,

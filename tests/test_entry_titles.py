@@ -22,14 +22,13 @@ class EntryTitleContractTests(unittest.TestCase):
 
     def test_covers_reported_entries(self) -> None:
         numbers = {item["sourceEntryNumber"] for item in self.profile["decisions"]}
-        self.assertEqual(
-            numbers,
-            {
-                11426, 11427, 11430, 11436, 11439, 11441, 11442, 11443,
-                11445, 11446, 11449, 11451, 11454, 11458, 11459, 11473,
-                11474, 11476,
-            },
-        )
+        historical = {
+            11426, 11427, 11430, 11436, 11439, 11441, 11442, 11443,
+            11445, 11446, 11449, 11451, 11454, 11458, 11459, 11473,
+            11474, 11476,
+        }
+        self.assertEqual(numbers, historical | set(range(1538, 3035)))
+        self.assertEqual(len(self.profile["decisions"]), 1515)
 
     def test_positive_reference_matches_the_pinned_source_lineage(self) -> None:
         decision = next(
@@ -83,9 +82,115 @@ class EntryTitleContractTests(unittest.TestCase):
                 location="synthetic English body",
             )
 
-    def test_volume2_has_no_governed_title_decision_yet(self) -> None:
+    def test_openiti_milestones_are_removed_only_at_the_source_heading_boundary(self) -> None:
+        self.assertEqual(
+            MODULE.clean_source_heading_boundary(
+                "ms0504 الحكم بن ms0542 مرة قال"
+            ),
+            "الحكم بن مرة قال",
+        )
+        self.assertEqual(
+            MODULE.clean_source_heading_boundary("اسم xms0542 msnote"),
+            "اسم xms0542 msnote",
+        )
+
+    def test_governed_split_accepts_embedded_marker_without_losing_body_text(self) -> None:
+        entry = {
+            "sourceOrdinal": 1791,
+            "source": {
+                "headingArabic": "الحكم بن ms0542 مرة قال بن منده",
+                "arabic": "الحكم بن مرة قال بن منده خبر",
+            },
+            "adjudication": {
+                "english": "Al-Ḥakam ibn Murra. Ibn Mandah said: Report."
+            },
+            "unresolved": [],
+        }
+        decision = {
+            "title": {"ar": "الحكم بن مرة", "en": "Al-Ḥakam ibn Murra"},
+            "bodyOpening": {"ar": "قال بن منده", "en": "Ibn Mandah said"},
+        }
+        title, arabic, english = MODULE.governed_title_and_body(
+            entry,
+            decision,
+            render_arabic=lambda value: value.strip(),
+        )
+        self.assertEqual(title["arabic"], "الحكم بن مرة")
+        self.assertEqual(arabic, "قال بن منده خبر")
+        self.assertEqual(english, "Ibn Mandah said: Report.")
+
+    def test_witness_bound_supplies_are_transparent_and_scope_equal(self) -> None:
+        expected = {
+            2784: {
+                "title": {
+                    "ar": "[الزبرقان] بن بدر",
+                    "en": "[Al-Zibriqān] ibn Badr",
+                },
+                "scope": {
+                    "kind": "personal-name",
+                    "equality": "reviewed-bilingual-equivalent-subject",
+                    "ar": "الزبرقان بن بدر",
+                    "en": "Al-Zibriqān ibn Badr",
+                },
+                "prefix": {"ar": "بن بدر", "en": "Ibn Badr"},
+            },
+            2880: {
+                "title": {
+                    "ar": "[زيد] بن أبي أوفى",
+                    "en": "[Zayd] ibn Abī Awfā",
+                },
+                "scope": {
+                    "kind": "personal-name",
+                    "equality": "reviewed-bilingual-equivalent-subject",
+                    "ar": "زيد بن أبي أوفى",
+                    "en": "Zayd ibn Abī Awfā",
+                },
+                "prefix": {"ar": "بن أبي أوفى", "en": "Ibn Abī Awfā"},
+            },
+        }
+        for number, values in expected.items():
+            decision = MODULE.decision_for_entry(self.profile, number)
+            self.assertEqual(decision["title"], values["title"])
+            self.assertEqual(
+                decision["editorialSupply"]["semanticScope"], values["scope"]
+            )
+            self.assertEqual(MODULE.source_prefixes(decision), values["prefix"])
+            self.assertEqual(
+                decision["editorialSupply"]["witness"]["relation"],
+                "same-work-alternative-edition",
+            )
+
+    def test_rejects_drifted_editorial_supply_source_prefix(self) -> None:
+        profile = copy.deepcopy(self.profile)
+        decision = MODULE.decision_for_entry(profile, 2784)
+        decision["editorialSupply"]["sourcePrefix"]["ar"]["text"] += " "
+        errors = MODULE.validate(profile)
+        self.assertTrue(any("sourcePrefix.ar" in error for error in errors), errors)
+
+    def test_rejects_drifted_witness_passage(self) -> None:
+        profile = copy.deepcopy(self.profile)
+        decision = MODULE.decision_for_entry(profile, 2784)
+        decision["editorialSupply"]["witness"]["passage"]["text"] += " مختلف"
+        errors = MODULE.validate(profile)
+        self.assertTrue(any("witness.passage" in error for error in errors), errors)
+
+    def test_rejects_drifted_witness_evidence_hash(self) -> None:
+        profile = copy.deepcopy(self.profile)
+        decision = MODULE.decision_for_entry(profile, 2880)
+        decision["editorialSupply"]["witness"]["evidence"]["sha256"] = "0" * 64
+        errors = MODULE.validate(profile)
+        self.assertTrue(any("witness.bindingSha256" in error for error in errors), errors)
+
+    def test_rejects_unbracketed_editorial_supply(self) -> None:
+        profile = copy.deepcopy(self.profile)
+        decision = MODULE.decision_for_entry(profile, 2880)
+        decision["title"]["en"] = "Zayd ibn Abī Awfā"
+        errors = MODULE.validate(profile)
+        self.assertTrue(any("transparently bracket" in error for error in errors), errors)
+
+    def test_entry_outside_governed_ranges_is_rejected(self) -> None:
         with self.assertRaisesRegex(ValueError, "lacks a governed bilingual"):
-            MODULE.decision_for_entry(self.profile, 1538)
+            MODULE.decision_for_entry(self.profile, 3035)
 
 
 if __name__ == "__main__":

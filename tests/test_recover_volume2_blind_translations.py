@@ -57,6 +57,15 @@ def legacy_packets(target: dict) -> dict[int, dict]:
         packet = copy.deepcopy(target)
         packet["schemaVersion"] = MODULE.LEGACY_SCHEMA_VERSION
         packet["toolVersion"] = MODULE.LEGACY_SCHEMA_VERSION
+        packet.pop("sliceContext", None)
+        packet.pop("postRunRepairAudits", None)
+        packet["postRunRepairAudit"] = {
+            "status": "not_required",
+            "basePacketSha256": None,
+            "artifactSha256": None,
+            "runId": None,
+            "operations": [],
+        }
         packet["packetId"] = f"isabah-translation-issue-{issue}"
         packet["assignment"].update(
             {
@@ -181,7 +190,7 @@ class Volume2BlindRecoveryTests(unittest.TestCase):
                 self.assertEqual(owner["humanReview"], {"status": "unreviewed"})
                 self.assertNotIn("mechanicallyGenerated", str(owner))
         self.assertEqual(recovered["formulaInventory"]["status"], "pending")
-        self.assertEqual(recovered["postRunRepairAudit"]["status"], "not_required")
+        self.assertEqual(recovered["postRunRepairAudits"], [])
         self.assertEqual(recovered["reviewPresentation"]["status"], "pending")
         self.assertEqual(recovered["machineReadiness"]["status"], "pending")
         self.assertEqual(WORKFLOW.validate_packet(recovered, machine_ready=False), [])
@@ -256,14 +265,8 @@ class Volume2BlindRecoveryTests(unittest.TestCase):
         self.assertEqual(recovered_blind["provenance"]["origin"], "legacy_migration")
         self.assertEqual(summary["documentedBlindRepairs"], 1)
         self.assertEqual(
-            recovered["postRunRepairAudit"],
-            {
-                "status": "not_required",
-                "basePacketSha256": None,
-                "artifactSha256": None,
-                "runId": None,
-                "operations": [],
-            },
+            recovered["postRunRepairAudits"],
+            [],
         )
 
 
