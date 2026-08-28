@@ -1,20 +1,20 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/yaqub0r/al-isabah/schemas/current-release-closure.v1.schema.json",
-  "title": "Al-Isabah cumulative public-working release closure v1",
+  "title": "Al-Isabah current public-working release closure v1",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "closureId", "issue", "publicationStatus", "canonicalPromotion", "consumerSchemaVersion", "proposals", "sourceAuthorities", "sourceRegister", "rights", "promotion", "historicalClosure", "reviewCounts", "outputInventory"],
+  "required": ["schemaVersion", "closureId", "issue", "publicationStatus", "canonicalPromotion", "consumerSchemaVersion", "proposals", "sourceAuthorities", "sourceRegister", "translationCoverage", "rights", "promotion", "historicalClosure", "reviewCounts", "outputInventory"],
   "properties": {
     "schemaVersion": {"const": "1.0.0"},
-    "closureId": {"const": "issue-0053-public-working-closure-v1"},
-    "issue": {"const": "https://github.com/yaqub0r/al-isabah/issues/53"},
+    "closureId": {"const": "issue-0070-current-public-working-closure-v1"},
+    "issue": {"const": "https://github.com/yaqub0r/al-isabah/issues/70"},
     "publicationStatus": {"const": "public-working"},
     "canonicalPromotion": {"const": "blocked"},
     "consumerSchemaVersion": {"const": "2.0.0"},
     "proposals": {
       "type": "array",
-      "minItems": 2,
+      "minItems": 1,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -34,6 +34,7 @@
       "items": {"$ref": "#/$defs/sourceAuthority"}
     },
     "sourceRegister": {"$ref": "#/$defs/fileBinding"},
+    "translationCoverage": {"$ref": "#/$defs/fileBinding"},
     "rights": {
       "type": "object",
       "additionalProperties": false,
@@ -59,7 +60,7 @@
     "reviewCounts": {"$ref": "#/$defs/reviewCounts"},
     "outputInventory": {
       "type": "array",
-      "minItems": 4,
+      "minItems": 2,
       "items": {"$ref": "#/$defs/output"}
     }
   },

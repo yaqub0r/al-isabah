@@ -1,6 +1,6 @@
 {
   "schema": "al-isabah.translation-governance-reference.v1",
-  "referenceVersion": "1.2.0",
+  "referenceVersion": "1.5.1",
   "authority": {
     "repository": "https://github.com/yaqub0r/al-isabah",
     "repositoryPath": "docs/contracts/translation-governance-reference.v1.json",
@@ -14,7 +14,7 @@
     {
       "id": "policy-binding",
       "path": "compliance/policy-binding.v2.json",
-      "sha256": "081b4d5903575710d9d7f21db6f978a0e7922b2e93431c1eab2f1a010e3f9ccf",
+      "sha256": "20a74b3643a65e621efe02402e59944223f1424f75d67e1af94476d6f233bd6f",
       "status": "active"
     },
     {
@@ -32,8 +32,15 @@
     {
       "id": "entry-title-structure",
       "path": "docs/contracts/entry-title-structure.md",
-      "sha256": "4540032c15f622d2811191b13e3fdcbfc031ea0b0d5a1762197d040ad5f6c1a9",
+      "sha256": "e950f6375c45a06699d9b2653a4c7821cfd45879277369d1107720c6617272ba",
       "status": "active"
+    },
+    {
+      "id": "entry-title-decisions",
+      "path": "profiles/entry-title-decisions.v3.json",
+      "sha256": "dc5f80db7c897b4ecf0df5b5fa1bce7ce7388d05fe6607f6a6cdb9e092934afc",
+      "status": "active",
+      "version": "3.0.0"
     },
     {
       "id": "translation-source-profile",
@@ -45,30 +52,30 @@
     {
       "id": "honorific-formula-registry",
       "path": "profiles/honorific-formulas.v1.json",
-      "sha256": "2baa41dcc6359ddb115eafce02ea81af09b56253f83736f8b332af896c2866f3",
+      "sha256": "b23fcd528b840b0e5bbe8932fca6eeaaa576ee51263d9838d4f8d18e40c9e100",
       "status": "active",
-      "version": "1.2.2"
+      "version": "1.3.0"
     },
     {
       "id": "translation-coverage",
       "path": "compliance/translation-coverage.v1.json",
-      "sha256": "061b026c2b11bf07a1a62ad85e7d25a623e5b516576b7bc82a68617b03a95b60",
+      "sha256": "c1d58f94d14210c04256047fd95eb29d22767bd9245f309426a691edf4891f75",
       "status": "active",
-      "version": "1.0.0"
+      "version": "1.1.0"
     },
     {
       "id": "translation-coverage-schema",
       "path": "compliance/schemas/translation-coverage.v1.schema.json",
-      "sha256": "5e2aab478d0d421278bd114b4455de76f397f602c0e51a7b1bebbb48d8240984",
+      "sha256": "3337a075cca03022259ebcf33cad517d9598021aa6e9b7c17325f58e13334506",
       "status": "active",
-      "version": "1.0.0"
+      "version": "1.1.0"
     },
     {
       "id": "public-proposal-v1",
       "path": "schemas/public-proposal.v1.schema.json",
-      "sha256": "4630ad6bd1cd94ca72e945dd4cdf5a51fd93c3d5b5287e20ea11ec19382d8c92",
+      "sha256": "ebb95f2884b5317301b2018cd1a2036f8c2732c497fa6251d0f7d64c4bd99099",
       "status": "active",
-      "version": "1.1.0"
+      "version": "1.2.0"
     },
     {
       "id": "public-distribution-contract",

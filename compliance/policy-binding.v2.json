@@ -3,7 +3,7 @@
   "authority": {
     "repository": "https://github.com/yaqub0r/al-isabah",
     "scope": "repository-local",
-    "issue": "https://github.com/yaqub0r/al-isabah/issues/51"
+    "issue": "https://github.com/yaqub0r/al-isabah/issues/70"
   },
   "contracts": [
     {
@@ -19,7 +19,17 @@
     {
       "id": "entry-title-structure",
       "path": "docs/contracts/entry-title-structure.md",
-      "sha256": "4540032c15f622d2811191b13e3fdcbfc031ea0b0d5a1762197d040ad5f6c1a9"
+      "sha256": "e950f6375c45a06699d9b2653a4c7821cfd45879277369d1107720c6617272ba"
+    },
+    {
+      "id": "entry-title-decisions",
+      "path": "profiles/entry-title-decisions.v3.json",
+      "sha256": "dc5f80db7c897b4ecf0df5b5fa1bce7ce7388d05fe6607f6a6cdb9e092934afc"
+    },
+    {
+      "id": "honorific-formula-registry",
+      "path": "profiles/honorific-formulas.v1.json",
+      "sha256": "b23fcd528b840b0e5bbe8932fca6eeaaa576ee51263d9838d4f8d18e40c9e100"
     },
     {
       "id": "translation-source-profile",
@@ -28,6 +38,6 @@
     }
   ],
   "supersedes": "compliance/policy-binding.v1.json",
-  "applied_by_issue": "https://github.com/yaqub0r/al-isabah/issues/51",
-  "note": "This binding makes agent completion independent from ongoing human review while preserving every scholarly, compliance, and promotion gate; it is not a legal opinion."
+  "applied_by_issue": "https://github.com/yaqub0r/al-isabah/issues/70",
+  "note": "This binding makes agent completion independent from ongoing human review and activates the witness-bound v3 entry-title profile and v1.3.0 formula registry while preserving every scholarly, compliance, and promotion gate; it is not a legal opinion."
 }

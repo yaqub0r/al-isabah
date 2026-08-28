@@ -140,6 +140,56 @@ class ComplianceTests(unittest.TestCase):
             )
         )
 
+    def test_policy_binds_active_title_and_formula_authorities(self):
+        contracts = {item["id"]: item for item in self.policy["contracts"]}
+        self.assertEqual(
+            contracts["entry-title-decisions"],
+            {
+                "id": "entry-title-decisions",
+                "path": "profiles/entry-title-decisions.v3.json",
+                "sha256": MODULE.canonical_text_sha256(
+                    ROOT / "profiles" / "entry-title-decisions.v3.json"
+                ),
+            },
+        )
+        self.assertEqual(
+            contracts["honorific-formula-registry"],
+            {
+                "id": "honorific-formula-registry",
+                "path": "profiles/honorific-formulas.v1.json",
+                "sha256": MODULE.canonical_text_sha256(
+                    ROOT / "profiles" / "honorific-formulas.v1.json"
+                ),
+            },
+        )
+
+    def test_registry_contains_exact_quoted_prayer_record(self):
+        self.assertEqual(self.formula_registry["registryVersion"], "1.3.0")
+        prayer = "اللهم بارك على محمد وعلى آل محمد"
+        records = [
+            item for item in self.formula_registry["entries"]
+            if item["source"] == prayer
+        ]
+        self.assertEqual(
+            records,
+            [
+                {
+                    "source": prayer,
+                    "target": prayer,
+                    "semanticClass": "quoted_prophetic_blessing_with_family",
+                    "referentScope": "Muḥammad and the family of Muḥammad",
+                    "grammaticalAgreement": (
+                        "second-person masculine singular imperative addressed to God; "
+                        "masculine singular prophetic referent with family inclusion"
+                    ),
+                    "expandedArabic": prayer,
+                    "accessibleEnglish": (
+                        "O God, bless Muḥammad and the family of Muḥammad."
+                    ),
+                }
+            ],
+        )
+
     def test_governance_reference_rejects_external_authority(self):
         reference = copy.deepcopy(self.governance_reference)
         reference["authority"]["repository"] = "https://github.com/yaqub0r/sabiqah"
@@ -195,6 +245,73 @@ class ComplianceTests(unittest.TestCase):
                 in error
                 for error in errors
             ),
+            errors,
+        )
+
+    def test_volume_two_is_agent_complete_after_immutable_submission(self):
+        coverage = copy.deepcopy(self.translation_coverage)
+        volume_two = next(
+            scope for scope in coverage["scopes"] if scope["scope_id"] == "volume-02"
+        )
+        completion = volume_two["agent_completion"]
+        self.assertEqual(completion["status"], "agent_complete")
+        self.assertEqual(volume_two["agent_completion"]["translated_units"], 1497)
+        self.assertEqual(completion["remaining_agent_units"], 0)
+        self.assertEqual(
+            completion["evidence"]["source_register_artifact"],
+            "issue-0070-public-proposal-v1",
+        )
+        self.assertEqual(volume_two["workflow_conformance"], "current")
+        self.assertEqual(volume_two["public_working_status"], "available")
+        self.assertEqual(volume_two["canonical_promotion"], "blocked")
+        self.assertEqual(volume_two["human_review"]["reviewed_units"], 0)
+        self.assertEqual(volume_two["human_review"]["unreviewed_units"], 1497)
+        self.assertEqual(self.validate(translation_coverage=coverage), [])
+
+    def test_volume_two_agent_complete_requires_zero_remaining_units(self):
+        coverage = copy.deepcopy(self.translation_coverage)
+        volume_two = next(
+            scope for scope in coverage["scopes"] if scope["scope_id"] == "volume-02"
+        )
+        volume_two["agent_completion"]["remaining_agent_units"] = 1
+        errors = self.validate(translation_coverage=coverage)
+        self.assertTrue(
+            any(
+                "agent_complete requires full coverage and zero remaining agent units"
+                in error
+                for error in errors
+            ),
+            errors,
+        )
+
+    def test_volume_two_completion_uses_the_corrected_proposal(self):
+        coverage = copy.deepcopy(self.translation_coverage)
+        volume_two = next(
+            scope for scope in coverage["scopes"] if scope["scope_id"] == "volume-02"
+        )
+        evidence = volume_two["agent_completion"]["evidence"]
+        evidence["source_register_artifact"] = "issue-0053-public-proposal-v1"
+        evidence["sha256"] = (
+            "2d5d43858dfecf55cd82be0ac92fd978087b43daac2c048ac2e718efb9de4a7b"
+        )
+        errors = self.validate(translation_coverage=coverage)
+        self.assertTrue(
+            any(
+                "volume-02 completion evidence is incorrect" in error
+                for error in errors
+            ),
+            errors,
+        )
+
+    def test_volume_two_completion_requires_current_public_working_state(self):
+        coverage = copy.deepcopy(self.translation_coverage)
+        volume_two = next(
+            scope for scope in coverage["scopes"] if scope["scope_id"] == "volume-02"
+        )
+        volume_two["public_working_status"] = "blocked"
+        errors = self.validate(translation_coverage=coverage)
+        self.assertTrue(
+            any("volume-02 completion evidence is incorrect" in error for error in errors),
             errors,
         )
 

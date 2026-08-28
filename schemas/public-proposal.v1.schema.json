@@ -21,14 +21,25 @@
         "required": ["evidenceBinding"],
         "not": {"required": ["historicalEvidence"]},
         "properties": {
-          "schemaVersion": {"const": "1.1.0"},
           "proposalId": {"pattern": "^issue-[0-9]{4}-public-proposal-v1$"}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"schemaVersion": {"const": "1.2.0"}}},
+      "then": {"required": ["entryTitleDecisions", "sliceContext"]},
+      "else": {
+        "not": {
+          "anyOf": [
+            {"required": ["entryTitleDecisions"]},
+            {"required": ["sliceContext"]}
+          ]
         }
       }
     }
   ],
   "properties": {
-    "schemaVersion": {"enum": ["1.0.0", "1.1.0"]},
+    "schemaVersion": {"enum": ["1.0.0", "1.1.0", "1.2.0"]},
     "proposalId": {"pattern": "^issue-[0-9]{4}-public-proposal-v1$"},
     "workId": {"const": "ibn-hajar-al-isabah"},
     "publicationStatus": {"const": "public-working"},
@@ -84,6 +95,8 @@
         "recordProjectionSha256": {"$ref": "#/$defs/sha256"}
       }
     },
+    "entryTitleDecisions": {"$ref": "#/$defs/entryTitleDecisions"},
+    "sliceContext": {"$ref": "#/$defs/sliceContext"},
     "baseline": {
       "type": "object",
       "additionalProperties": false,
@@ -127,6 +140,60 @@
       "required": ["bindingSha256"],
       "properties": {"bindingSha256": {"$ref": "#/$defs/sha256"}}
     },
+    "entryTitleDecisions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["profileId", "profileSha256", "coveredRecordCount"],
+      "properties": {
+        "profileId": {"type": "string", "pattern": "^entry-title-decisions\\.v[0-9]+$"},
+        "profileSha256": {"$ref": "#/$defs/sha256"},
+        "coveredRecordCount": {"type": "integer", "minimum": 1}
+      }
+    },
+    "sliceContextItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceOccurrenceId", "displayContextId"],
+      "properties": {
+        "sourceOccurrenceId": {"type": "string", "minLength": 1},
+        "displayContextId": {"type": "string", "minLength": 1}
+      }
+    },
+    "sliceContext": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "beforeSourceOrdinal", "sourceProposalId", "sourceProposalSha256", "contexts"],
+      "properties": {
+        "state": {"enum": ["root", "continued"]},
+        "beforeSourceOrdinal": {"type": "integer", "minimum": 1},
+        "sourceProposalId": {"type": ["string", "null"], "pattern": "^issue-[0-9]{4}-public-proposal-v1$"},
+        "sourceProposalSha256": {
+          "oneOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]
+        },
+        "contexts": {"type": "array", "items": {"$ref": "#/$defs/sliceContextItem"}}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"state": {"const": "root"}}},
+          "then": {
+            "properties": {
+              "beforeSourceOrdinal": {"const": 1},
+              "sourceProposalId": {"const": null},
+              "sourceProposalSha256": {"const": null},
+              "contexts": {"maxItems": 0}
+            }
+          },
+          "else": {
+            "properties": {
+              "beforeSourceOrdinal": {"minimum": 2},
+              "sourceProposalId": {"type": "string"},
+              "sourceProposalSha256": {"$ref": "#/$defs/sha256"},
+              "contexts": {"minItems": 1}
+            }
+          }
+        }
+      ]
+    },
     "page": {
       "type": "object",
       "additionalProperties": false,
@@ -141,7 +208,7 @@
         "arabic": {"type": "string", "minLength": 1},
         "english": {"type": "string", "minLength": 1},
         "state": {"enum": ["ready", "needs_attention"]},
-        "method": {"enum": ["primary-name-candidate", "opening-fallback"]}
+        "method": {"enum": ["primary-name-candidate", "opening-fallback", "profile-decision"]}
       }
     },
     "finding": {

@@ -23,18 +23,26 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
 
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+from validate_entry_titles import governed_title_and_body
 
-ROOT = Path(__file__).resolve().parents[1]
+
+ROOT = SCRIPT_DIR.parent
 DEFAULT_MANIFEST = ROOT / "profiles" / "translation-source.v1.json"
 DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v2.json"
 DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v1.schema.json"
 FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 RUNTIME_ROOT = ROOT / ".runtime" / "translation"
 PROPOSAL_ROOT = ROOT / "content" / "translation-proposals"
+PUBLIC_PROPOSAL_ROOT = ROOT / "content" / "public-proposals"
 REPOSITORY = "yaqub0r/al-isabah"
-TOOL_VERSION = "1.3.0"
-FORMULA_REGISTRY_VERSION = "1.2.2"
+TOOL_VERSION = "1.5.0"
+FORMULA_REGISTRY_VERSION = "1.3.0"
 SEMANTIC_AUDIT_VERSION = "1.0.0"
+STAGE_PROVENANCE_VERSION = "1.0.0"
+PACKET_SCHEMA_VERSION = "1.5.0"
 SEMANTIC_AUDIT_CATEGORIES = (
     "omissions",
     "additions",
@@ -58,14 +66,26 @@ OPENITI_CONTROL_RE = re.compile(r"^###\s+\|(PARATEXT|APPENDIX)\|\s*$")
 PAGE_RE = re.compile(r"PageV(\d{2})P(\d{3})")
 MILESTONE_RE = re.compile(r"\bms\d+\b")
 SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
-WINDOWS_PATH_RE = re.compile(r"(?:[A-Za-z]:\\|C:/Users/)", re.IGNORECASE)
+PUBLIC_PROPOSAL_ID_RE = re.compile(r"^issue-[0-9]{4}-public-proposal-v1$")
+WINDOWS_PATH_RE = re.compile(
+    r"(?<![A-Za-z])(?:[A-Za-z]:\\|C:/Users/)", re.IGNORECASE
+)
 PRIVATE_KEYS = {"object_key", "local_path", "private_url", "credential", "token"}
 EXPECTED_POLICY_IDS = {
     "translation-quality-workflow",
     "al-isabah-translation-profile",
     "entry-title-structure",
+    "entry-title-decisions",
+    "honorific-formula-registry",
     "translation-source-profile",
 }
+SEMANTIC_STAGE_NAMES = (
+    "blind_translation",
+    "independent_critique",
+    "witness_resolution",
+    "adjudication",
+    "name_inventory",
+)
 OPENITI_POETRY_MARKER_RE = re.compile(r"(?<!\S)%(?!\S)")
 JSON_PATH_TOKEN_RE = re.compile(r"([A-Za-z][A-Za-z0-9_]*)|\[(\d+)\]")
 PUBLIC_PROCESS_TERMS = (
@@ -88,6 +108,17 @@ WITNESS_ROLES = {
 # executable form so the packet can persist a per-occurrence semantic audit
 # without relying on an application or database.
 FORMULA_RULES = (
+    {
+        "source": "اللهم بارك على محمد وعلى آل محمد",
+        "target": "اللهم بارك على محمد وعلى آل محمد",
+        "semanticClass": "quoted_prophetic_blessing_with_family",
+        "referentScope": "Muḥammad and the family of Muḥammad",
+        "grammaticalAgreement": (
+            "second-person masculine singular imperative addressed to God; "
+            "masculine singular prophetic referent with family inclusion"
+        ),
+        "expandedArabic": "اللهم بارك على محمد وعلى آل محمد",
+    },
     {
         "source": "صلى الله عليه وعليهم صلاة خالدة ، وسلاما مؤبدا [ وسلم تسليما ]",
         "target": (
@@ -336,6 +367,7 @@ FORMULA_RULES = (
 # tuple is intentionally parallel to FORMULA_RULES, whose order is already
 # semantically significant because longer source forms must be matched first.
 FORMULA_ACCESSIBLE_ENGLISH = (
+    "O God, bless Muḥammad and the family of Muḥammad.",
     "May God bless him and them with an everlasting blessing and grant them perpetual peace [and fullest peace].",
     "May God bless him and his family and grant them peace.",
     "May God bless him and grant him peace.",
@@ -574,6 +606,8 @@ def validate_names(
     record_id: str,
     prefix: str,
     require_spans: bool,
+    allow_historical_english: bool = False,
+    formula_occurrences: list[dict[str, Any]] | None = None,
 ) -> list[str]:
     """Validate one-person candidates and source-exact mention spans."""
     errors: list[str] = []
@@ -593,7 +627,9 @@ def validate_names(
                 errors.append(f"{prefix}: name inventory source hash is stale")
             if not adjudicated_heading and not adjudicated_english:
                 errors.append(f"{prefix}: name inventory has no adjudicated English")
-            elif audit.get("englishSha256") != semantic_candidate_sha256(
+            elif not allow_historical_english and audit.get(
+                "englishSha256"
+            ) != semantic_candidate_sha256(
                 adjudicated_heading, adjudicated_english
             ):
                 errors.append(f"{prefix}: name inventory English hash is stale")
@@ -614,6 +650,20 @@ def validate_names(
         if isinstance(value, str) and value
     ).casefold().replace("’", "'")
     adjudicated_tokens = re.findall(r"[\wʾʿ'-]+", adjudicated_surface)
+    mentions_by_candidate: dict[str, list[dict[str, Any]]] = {}
+    for mention in mentions:
+        if isinstance(mention, dict) and isinstance(
+            mention.get("candidateId"), str
+        ):
+            mentions_by_candidate.setdefault(mention["candidateId"], []).append(
+                mention
+            )
+    formula_occurrences = [
+        occurrence
+        for occurrence in formula_occurrences or []
+        if isinstance(occurrence, dict)
+        and occurrence.get("recordId") == record_id
+    ]
 
     def grounded_english_form(form: str) -> bool:
         normalized_form = form.casefold().replace("’", "'")
@@ -627,6 +677,48 @@ def validate_names(
             try:
                 cursor = adjudicated_tokens.index(token, cursor) + 1
             except ValueError:
+                return False
+        return True
+
+    def exact_accessible_surface(form: str, accessible: str) -> bool:
+        normalized_form = form.casefold().replace("’", "'").strip()
+        normalized_accessible = accessible.casefold().replace("’", "'")
+        if not normalized_form:
+            return False
+        return re.search(
+            rf"(?<![\wʾʿ]){re.escape(normalized_form)}(?![\wʾʿ])",
+            normalized_accessible,
+        ) is not None
+
+    def formula_internal_grounded(candidate_id: str, proposed: str) -> bool:
+        candidate_mentions = mentions_by_candidate.get(candidate_id, [])
+        readable_spans = [
+            span
+            for mention in candidate_mentions
+            for span in mention.get("sourceSpans", [])
+            if isinstance(span, dict)
+            and span.get("sourceField") in {"headingArabic", "arabic"}
+        ]
+        if not readable_spans:
+            return False
+        for span in readable_spans:
+            field = span.get("sourceField")
+            start = span.get("start")
+            end = span.get("end")
+            if not isinstance(start, int) or not isinstance(end, int):
+                return False
+            if not any(
+                occurrence.get("sourceField") == field
+                and isinstance(occurrence.get("sourceStart"), int)
+                and isinstance(occurrence.get("sourceEnd"), int)
+                and occurrence["sourceStart"] <= start
+                and end <= occurrence["sourceEnd"]
+                and isinstance(occurrence.get("accessibleEnglish"), str)
+                and exact_accessible_surface(
+                    proposed, occurrence["accessibleEnglish"]
+                )
+                for occurrence in formula_occurrences
+            ):
                 return False
         return True
     for candidate in candidates:
@@ -660,13 +752,13 @@ def validate_names(
             for alias in aliases or []
         ):
             errors.append(f"{prefix}: {candidate_id} aliases must be nonempty strings")
-        elif require_spans and adjudicated_surface and isinstance(proposed, str):
+        elif require_spans and isinstance(proposed, str):
             english_forms = [proposed, *aliases]
             if not any(
                 grounded_english_form(form)
                 for form in english_forms
                 if form.strip()
-            ):
+            ) and not formula_internal_grounded(candidate_id, proposed):
                 errors.append(
                     f"{prefix}: {candidate_id} has no English form in the "
                     "adjudicated translation"
@@ -783,6 +875,685 @@ def semantic_candidate_sha256(
     )
 
 
+def content_sha256(value: Any) -> str:
+    """Hash a canonical JSON value used as a semantic-stage input or output."""
+    return bytes_sha256(json_bytes(value))
+
+
+def packet_schema_sha256() -> str:
+    """Bind completed stages to the exact packet schema used for validation."""
+    return canonical_text_sha256(DEFAULT_PACKET_SCHEMA)
+
+
+def pending_stage_provenance(stage: str) -> dict[str, Any]:
+    return {
+        "status": "pending",
+        "version": STAGE_PROVENANCE_VERSION,
+        "stage": stage,
+        "origin": None,
+        "sourceSha256": None,
+        "upstreamSha256": None,
+        "promptOrPolicySha256": None,
+        "schemaSha256": None,
+        "runId": None,
+        "model": None,
+        "reasoning": None,
+        "evidence": [],
+        "evidenceSha256": None,
+        "inputSha256": None,
+        "outputSha256": None,
+        "fingerprint": None,
+        "rebinding": None,
+    }
+
+
+def pending_independent_context() -> dict[str, Any]:
+    return {
+        "status": "pending",
+        "method": None,
+        "freshContext": None,
+        "priorStageContextExcluded": None,
+        "inputSha256": None,
+        "receipt": None,
+    }
+
+
+def stage_output_payload(owner: dict[str, Any], stage: str) -> dict[str, Any]:
+    """Return only the stage result; the provenance envelope cannot hash itself."""
+    fields = {
+        "blind_translation": (
+            "status",
+            "runId",
+            "model",
+            "reasoning",
+            "policySha256",
+            "headingEnglish",
+            "english",
+        ),
+        "independent_critique": (
+            "status",
+            "runId",
+            "model",
+            "findings",
+            "semanticAudit",
+            "independentContext",
+        ),
+        "witness_resolution": (
+            "status",
+            "results",
+            "notRequiredRationale",
+        ),
+        "adjudication": (
+            "status",
+            "headingEnglish",
+            "english",
+            "decisions",
+        ),
+        "name_inventory": (
+            "status",
+            "candidates",
+            "mentions",
+            "inventoryAudit",
+            "independentContext",
+        ),
+    }
+    return {field: owner.get(field) for field in fields[stage] if field in owner}
+
+
+def stage_semantic_repair_payload(
+    owner: dict[str, Any], stage: str
+) -> dict[str, Any]:
+    """Return policy-independent stage content that a rebind may not change."""
+    fields = {
+        "blind_translation": (
+            "status",
+            "runId",
+            "model",
+            "reasoning",
+            "headingEnglish",
+            "english",
+        ),
+        "independent_critique": (
+            "status",
+            "runId",
+            "model",
+            "findings",
+            "semanticAudit",
+        ),
+        "witness_resolution": (
+            "status",
+            "results",
+            "notRequiredRationale",
+        ),
+        "adjudication": (
+            "status",
+            "headingEnglish",
+            "english",
+            "decisions",
+        ),
+        "name_inventory": (
+            "status",
+            "candidates",
+            "mentions",
+            "inventoryAudit",
+        ),
+    }
+    return {field: owner.get(field) for field in fields[stage] if field in owner}
+
+
+def stage_upstream_sha256(
+    upstream: list[tuple[str, dict[str, Any]]],
+) -> str:
+    return content_sha256(
+        [
+            {
+                "stage": stage,
+                "outputSha256": content_sha256(stage_output_payload(owner, stage)),
+            }
+            for stage, owner in upstream
+        ]
+    )
+
+
+def stage_evidence_sha256(evidence: Any) -> str:
+    return content_sha256(evidence if isinstance(evidence, list) else [])
+
+
+def stage_input_sha256(
+    stage: str,
+    source_sha256: str,
+    upstream_sha256: str,
+    policy_sha256: str,
+    schema_sha256: str,
+    model: str,
+    reasoning: str,
+    evidence_sha256: str,
+) -> str:
+    return content_sha256(
+        {
+            "stage": stage,
+            "sourceSha256": source_sha256,
+            "upstreamSha256": upstream_sha256,
+            "promptOrPolicySha256": policy_sha256,
+            "schemaSha256": schema_sha256,
+            "model": model,
+            "reasoning": reasoning,
+            "evidenceSha256": evidence_sha256,
+        }
+    )
+
+
+def stage_fingerprint(provenance: dict[str, Any]) -> str:
+    return content_sha256(
+        {
+            field: provenance.get(field)
+            for field in (
+                "version",
+                "stage",
+                "origin",
+                "sourceSha256",
+                "upstreamSha256",
+                "promptOrPolicySha256",
+                "schemaSha256",
+                "runId",
+                "model",
+                "reasoning",
+                "evidenceSha256",
+                "inputSha256",
+                "outputSha256",
+                "rebinding",
+            )
+        }
+    )
+
+
+def completed_stage_provenance(
+    owner: dict[str, Any],
+    stage: str,
+    source: dict[str, Any],
+    upstream: list[tuple[str, dict[str, Any]]],
+    policy_sha256: str,
+    model: str,
+    reasoning: str,
+    evidence: list[dict[str, Any]],
+    run_id: str | None = None,
+    origin: str = "direct_execution",
+    rebinding: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    """Build deterministic provenance after externally produced evidence exists."""
+    source_sha256 = semantic_source_sha256(source)
+    upstream_sha256 = stage_upstream_sha256(upstream)
+    schema_sha256 = packet_schema_sha256()
+    evidence_sha256 = stage_evidence_sha256(evidence)
+    input_sha256 = stage_input_sha256(
+        stage,
+        source_sha256,
+        upstream_sha256,
+        policy_sha256,
+        schema_sha256,
+        model,
+        reasoning,
+        evidence_sha256,
+    )
+    provenance = {
+        "status": "complete",
+        "version": STAGE_PROVENANCE_VERSION,
+        "stage": stage,
+        "origin": origin,
+        "sourceSha256": source_sha256,
+        "upstreamSha256": upstream_sha256,
+        "promptOrPolicySha256": policy_sha256,
+        "schemaSha256": schema_sha256,
+        "runId": run_id
+        or owner.get("runId")
+        or owner.get("inventoryAudit", {}).get("runId"),
+        "model": model,
+        "reasoning": reasoning,
+        "evidence": evidence,
+        "evidenceSha256": evidence_sha256,
+        "inputSha256": input_sha256,
+        "outputSha256": content_sha256(stage_output_payload(owner, stage)),
+        "fingerprint": None,
+        "rebinding": rebinding,
+    }
+    provenance["fingerprint"] = stage_fingerprint(provenance)
+    return provenance
+
+
+def validate_independent_context(
+    owner: dict[str, Any], provenance: dict[str, Any], prefix: str
+) -> list[str]:
+    """Validate an editable context self-attestation, never context authenticity.
+
+    Actual separation is an execution property supplied by the coordinator and
+    durable evidence system. These packet fields establish only internal
+    consistency and must not be reported as proof that another context ran.
+    """
+    context = owner.get("independentContext")
+    if not isinstance(context, dict) or context.get("status") != "complete":
+        return [f"{prefix}: independent context self-attestation is incomplete"]
+    errors: list[str] = []
+    if not isinstance(context.get("method"), str) or len(context["method"].strip()) < 12:
+        errors.append(f"{prefix}: independent context method is incomplete")
+    if context.get("freshContext") is not True:
+        errors.append(f"{prefix}: independent context must be fresh")
+    if context.get("priorStageContextExcluded") is not True:
+        errors.append(f"{prefix}: prior-stage context exclusion is not attested")
+    if context.get("inputSha256") != provenance.get("inputSha256"):
+        errors.append(f"{prefix}: independent context input hash is stale")
+    receipt = context.get("receipt")
+    if not isinstance(receipt, dict) or set(receipt) != {
+        "receiptId",
+        "issuer",
+        "receiptSha256",
+    }:
+        return errors + [f"{prefix}: context self-attestation receipt is incomplete"]
+    if not all(
+        isinstance(receipt.get(field), str) and receipt[field].strip()
+        for field in ("receiptId", "issuer")
+    ) or not SHA256_RE.fullmatch(str(receipt.get("receiptSha256", ""))):
+        errors.append(f"{prefix}: context self-attestation receipt is incomplete")
+        return errors
+    evidence = provenance.get("evidence")
+    if not isinstance(evidence, list) or not any(
+        isinstance(item, dict)
+        and item.get("evidenceId") == receipt["receiptId"]
+        and item.get("role") == "independent_context_receipt"
+        and item.get("sha256") == receipt["receiptSha256"]
+        for item in evidence
+    ):
+        errors.append(f"{prefix}: context self-attestation is not attached")
+    return errors
+
+
+def validate_policy_rebinding_output_identity(
+    owner: dict[str, Any],
+    stage: str,
+    provenance: dict[str, Any],
+    old_policy_sha256: str,
+    prefix: str,
+) -> list[str]:
+    """Prove a policy-wide rebind did not silently change semantic output."""
+    rebinding = provenance.get("rebinding", {})
+    payload = json.loads(json.dumps(stage_output_payload(owner, stage)))
+    if stage == "blind_translation":
+        payload["policySha256"] = old_policy_sha256
+    elif stage in {"independent_critique", "name_inventory"}:
+        context = payload.get("independentContext")
+        if not isinstance(context, dict):
+            return [f"{prefix}: policy repair lost independent-context identity"]
+        context["inputSha256"] = rebinding.get("previousInputSha256")
+    if content_sha256(payload) != rebinding.get("previousOutputSha256"):
+        return [f"{prefix}: policy repair changed unaudited semantic stage output"]
+    return []
+
+
+def validate_provenance_rebinding(
+    owner: dict[str, Any],
+    stage: str,
+    provenance: dict[str, Any],
+    schema_sha256: str,
+    permitted_repair_run_ids: tuple[str, ...],
+    permitted_policy_repair_bindings: dict[str, tuple[str, str]],
+    prefix: str,
+) -> list[str]:
+    """Validate hash-only regeneration without treating it as semantic execution."""
+    errors: list[str] = []
+    origin = provenance.get("origin")
+    rebinding = provenance.get("rebinding")
+    if origin != "deterministic_rebinding":
+        if rebinding is not None:
+            errors.append(f"{prefix}: non-rebound provenance cannot carry rebinding data")
+        if permitted_repair_run_ids:
+            errors.append(
+                f"{prefix}: audited repair requires deterministic provenance rebinding"
+            )
+        return errors
+    canonical = {
+        "reason",
+        "previousOrigin",
+        "previousSourceSha256",
+        "previousUpstreamSha256",
+        "previousPromptOrPolicySha256",
+        "previousSchemaSha256",
+        "previousInputSha256",
+        "previousOutputSha256",
+        "previousFingerprint",
+        "previousModel",
+        "previousReasoning",
+        "evidenceSha256",
+        "runId",
+        "repairRunIds",
+    }
+    if not isinstance(rebinding, dict) or set(rebinding) != canonical:
+        return [f"{prefix}: deterministic rebinding envelope is incomplete"]
+    if rebinding.get("previousOrigin") not in {
+        "direct_execution",
+        "legacy_migration",
+        "deterministic_rebinding",
+    }:
+        errors.append(f"{prefix}: previous provenance origin is invalid")
+    for field in (
+        "previousSourceSha256",
+        "previousUpstreamSha256",
+        "previousPromptOrPolicySha256",
+        "previousSchemaSha256",
+        "previousInputSha256",
+        "previousOutputSha256",
+        "previousFingerprint",
+        "evidenceSha256",
+    ):
+        if not SHA256_RE.fullmatch(str(rebinding.get(field, ""))):
+            errors.append(f"{prefix}: rebinding {field} is invalid")
+    for field in ("previousModel", "previousReasoning", "runId"):
+        if not isinstance(rebinding.get(field), str) or not rebinding[field].strip():
+            errors.append(f"{prefix}: rebinding {field} is incomplete")
+    if rebinding.get("previousSourceSha256") != provenance.get("sourceSha256"):
+        errors.append(f"{prefix}: rebinding changed the semantic source")
+    if rebinding.get("previousModel") != provenance.get("model") or rebinding.get(
+        "previousReasoning"
+    ) != provenance.get("reasoning"):
+        errors.append(f"{prefix}: rebinding changed model/reasoning evidence")
+    if rebinding.get("evidenceSha256") != provenance.get("evidenceSha256"):
+        errors.append(f"{prefix}: rebinding changed attached evidence")
+    if rebinding.get("runId") != provenance.get("runId"):
+        errors.append(f"{prefix}: rebinding changed the semantic run identity")
+    repair_run_ids = rebinding.get("repairRunIds")
+    if not isinstance(repair_run_ids, list) or any(
+        not isinstance(item, str) for item in repair_run_ids
+    ):
+        errors.append(f"{prefix}: rebinding repair run IDs are invalid")
+        repair_run_ids = []
+    elif len(repair_run_ids) != len(set(repair_run_ids)):
+        errors.append(f"{prefix}: rebinding repair run IDs must be unique")
+    if tuple(repair_run_ids) != permitted_repair_run_ids:
+        errors.append(f"{prefix}: rebinding repair history is stale")
+    reason = rebinding.get("reason")
+    previous_schema = rebinding.get("previousSchemaSha256")
+    latest_repair_run_id = repair_run_ids[-1] if repair_run_ids else None
+    policy_repair = permitted_policy_repair_bindings.get(
+        str(latest_repair_run_id)
+    )
+    if policy_repair is not None and reason != "post_run_repair":
+        errors.append(f"{prefix}: policy repair must use post-run repair rebinding")
+    if reason == "schema_migration":
+        if previous_schema == schema_sha256:
+            errors.append(f"{prefix}: schema migration must bind a prior schema")
+    elif reason == "post_run_repair":
+        if policy_repair is None:
+            if previous_schema != schema_sha256:
+                errors.append(
+                    f"{prefix}: repair rebinding must retain the current schema"
+                )
+            if rebinding.get("previousPromptOrPolicySha256") != provenance.get(
+                "promptOrPolicySha256"
+            ):
+                errors.append(f"{prefix}: repair rebinding changed the semantic policy")
+        else:
+            old_policy_sha256, new_policy_sha256 = policy_repair
+            if rebinding.get("previousPromptOrPolicySha256") != old_policy_sha256:
+                errors.append(
+                    f"{prefix}: policy repair does not bind the prior semantic policy"
+                )
+            if provenance.get("promptOrPolicySha256") != new_policy_sha256:
+                errors.append(
+                    f"{prefix}: policy repair does not bind the active semantic policy"
+                )
+            errors.extend(
+                validate_policy_rebinding_output_identity(
+                    owner,
+                    stage,
+                    provenance,
+                    old_policy_sha256,
+                    prefix,
+                )
+            )
+        if not permitted_repair_run_ids:
+            errors.append(f"{prefix}: repair rebinding lacks an audited repair")
+    else:
+        errors.append(f"{prefix}: deterministic rebinding reason is invalid")
+    return errors
+
+
+def validate_stage_provenance(
+    owner: dict[str, Any],
+    stage: str,
+    source: dict[str, Any],
+    upstream: list[tuple[str, dict[str, Any]]],
+    policy_sha256: str,
+    prefix: str,
+    require_independent_context: bool = False,
+    permitted_repair_run_ids: tuple[str, ...] = (),
+    permitted_policy_repair_bindings: dict[str, tuple[str, str]] | None = None,
+) -> list[str]:
+    provenance = owner.get("provenance")
+    if not isinstance(provenance, dict) or provenance.get("status") != "complete":
+        return [f"{prefix}: {stage} content-addressed provenance is incomplete"]
+    errors: list[str] = []
+    if provenance.get("version") != STAGE_PROVENANCE_VERSION:
+        errors.append(f"{prefix}: {stage} provenance version is stale")
+    if provenance.get("stage") != stage:
+        errors.append(f"{prefix}: {stage} provenance names the wrong stage")
+    if provenance.get("origin") not in {
+        "direct_execution",
+        "legacy_migration",
+        "deterministic_rebinding",
+    }:
+        errors.append(f"{prefix}: {stage} provenance origin is invalid")
+    source_sha256 = semantic_source_sha256(source)
+    upstream_sha256 = stage_upstream_sha256(upstream)
+    schema_sha256 = packet_schema_sha256()
+    evidence = provenance.get("evidence")
+    if not isinstance(evidence, list):
+        errors.append(f"{prefix}: {stage} evidence references must be an array")
+        evidence = []
+    evidence_ids: list[str] = []
+    for item in evidence:
+        if not isinstance(item, dict) or set(item) != {"evidenceId", "role", "sha256"}:
+            errors.append(f"{prefix}: {stage} evidence reference is not canonical")
+            continue
+        evidence_ids.append(str(item.get("evidenceId")))
+        if not isinstance(item.get("evidenceId"), str) or not item["evidenceId"].strip():
+            errors.append(f"{prefix}: {stage} evidence ID is missing")
+        if not isinstance(item.get("role"), str) or not item["role"].strip():
+            errors.append(f"{prefix}: {stage} evidence role is missing")
+        if not SHA256_RE.fullmatch(str(item.get("sha256", ""))):
+            errors.append(f"{prefix}: {stage} evidence hash is invalid")
+    if len(evidence_ids) != len(set(evidence_ids)):
+        errors.append(f"{prefix}: {stage} evidence IDs must be unique")
+    evidence_sha256 = stage_evidence_sha256(evidence)
+    model = provenance.get("model")
+    reasoning = provenance.get("reasoning")
+    if not isinstance(provenance.get("runId"), str) or not provenance["runId"].strip():
+        errors.append(f"{prefix}: {stage} run identity is incomplete")
+    if not isinstance(model, str) or not model.strip() or not isinstance(reasoning, str) or not reasoning.strip():
+        errors.append(f"{prefix}: {stage} model/reasoning provenance is incomplete")
+        model = str(model or "")
+        reasoning = str(reasoning or "")
+    expected = {
+        "sourceSha256": source_sha256,
+        "upstreamSha256": upstream_sha256,
+        "promptOrPolicySha256": policy_sha256,
+        "schemaSha256": schema_sha256,
+        "evidenceSha256": evidence_sha256,
+        "inputSha256": stage_input_sha256(
+            stage,
+            source_sha256,
+            upstream_sha256,
+            policy_sha256,
+            schema_sha256,
+            model,
+            reasoning,
+            evidence_sha256,
+        ),
+        "outputSha256": content_sha256(stage_output_payload(owner, stage)),
+    }
+    for field, value in expected.items():
+        if provenance.get(field) != value:
+            errors.append(f"{prefix}: {stage} {field} is stale")
+    if provenance.get("fingerprint") != stage_fingerprint(provenance):
+        errors.append(f"{prefix}: {stage} fingerprint is stale")
+    errors.extend(
+        validate_provenance_rebinding(
+            owner,
+            stage,
+            provenance,
+            schema_sha256,
+            permitted_repair_run_ids,
+            permitted_policy_repair_bindings or {},
+            f"{prefix}: {stage}",
+        )
+    )
+    if stage == "blind_translation" and (
+        provenance.get("model") != owner.get("model")
+        or provenance.get("reasoning") != owner.get("reasoning")
+    ):
+        errors.append(f"{prefix}: blind stage model/reasoning does not match its output")
+    is_legacy_blind = provenance.get("origin") == "legacy_migration" or (
+        provenance.get("origin") == "deterministic_rebinding"
+        and isinstance(provenance.get("rebinding"), dict)
+        and provenance["rebinding"].get("previousOrigin") == "legacy_migration"
+    )
+    if stage == "blind_translation" and is_legacy_blind:
+        required_lineage_roles = {
+            "legacy_packet_blob",
+            "legacy_packet_schema",
+            "legacy_blind_translation_record",
+        }
+        attached_lineage_roles = {
+            item.get("role") for item in evidence if isinstance(item, dict)
+        }
+        if not required_lineage_roles.issubset(attached_lineage_roles):
+            errors.append(
+                f"{prefix}: migrated blind stage lacks exact legacy packet/schema lineage"
+            )
+    if stage == "independent_critique" and provenance.get("model") != owner.get("model"):
+        errors.append(f"{prefix}: critique stage model does not match its output")
+    expected_run_id = owner.get("runId") or owner.get("inventoryAudit", {}).get("runId")
+    if expected_run_id and provenance.get("runId") != expected_run_id:
+        errors.append(f"{prefix}: {stage} run identity does not match its output")
+    if stage == "witness_resolution":
+        witness_hashes = {
+            result.get("evidenceSha256")
+            for result in owner.get("results", [])
+            if isinstance(result, dict)
+        }
+        attached_hashes = {
+            item.get("sha256")
+            for item in evidence
+            if isinstance(item, dict) and item.get("role") == "witness_result"
+        }
+        if not witness_hashes.issubset(attached_hashes):
+            errors.append(f"{prefix}: witness result evidence is not attached")
+    if require_independent_context:
+        errors.extend(validate_independent_context(owner, provenance, prefix))
+    return errors
+
+
+def validate_stage_chain(
+    owner: dict[str, Any],
+    source: dict[str, Any],
+    policy_sha256: str,
+    prefix: str,
+    repair_run_ids_by_stage: dict[str, tuple[str, ...]] | None = None,
+    permitted_policy_repair_bindings: dict[str, tuple[str, str]] | None = None,
+) -> list[str]:
+    """Validate all semantic stages against their exact upstream outputs."""
+    blind = owner.get("blindTranslation", {})
+    critique = owner.get("independentCritique", {})
+    witness = owner.get("witnessResolution", {})
+    adjudication = owner.get("adjudication", {})
+    names = owner.get("names", {})
+    repair_run_ids_by_stage = repair_run_ids_by_stage or {}
+    permitted_policy_repair_bindings = permitted_policy_repair_bindings or {}
+    errors = validate_stage_provenance(
+        blind,
+        "blind_translation",
+        source,
+        [],
+        policy_sha256,
+        prefix,
+        permitted_repair_run_ids=repair_run_ids_by_stage.get(
+            "blind_translation", ()
+        ),
+        permitted_policy_repair_bindings=permitted_policy_repair_bindings,
+    )
+    errors.extend(
+        validate_stage_provenance(
+            critique,
+            "independent_critique",
+            source,
+            [("blind_translation", blind)],
+            policy_sha256,
+            prefix,
+            require_independent_context=True,
+            permitted_repair_run_ids=repair_run_ids_by_stage.get(
+                "independent_critique", ()
+            ),
+            permitted_policy_repair_bindings=permitted_policy_repair_bindings,
+        )
+    )
+    errors.extend(
+        validate_stage_provenance(
+            witness,
+            "witness_resolution",
+            source,
+            [("independent_critique", critique)],
+            policy_sha256,
+            prefix,
+            permitted_repair_run_ids=repair_run_ids_by_stage.get(
+                "witness_resolution", ()
+            ),
+            permitted_policy_repair_bindings=permitted_policy_repair_bindings,
+        )
+    )
+    errors.extend(
+        validate_stage_provenance(
+            adjudication,
+            "adjudication",
+            source,
+            [
+                ("blind_translation", blind),
+                ("independent_critique", critique),
+                ("witness_resolution", witness),
+            ],
+            policy_sha256,
+            prefix,
+            permitted_repair_run_ids=repair_run_ids_by_stage.get(
+                "adjudication", ()
+            ),
+            permitted_policy_repair_bindings=permitted_policy_repair_bindings,
+        )
+    )
+    errors.extend(
+        validate_stage_provenance(
+            names,
+            "name_inventory",
+            source,
+            [("adjudication", adjudication)],
+            policy_sha256,
+            prefix,
+            require_independent_context=True,
+            permitted_repair_run_ids=repair_run_ids_by_stage.get(
+                "name_inventory", ()
+            ),
+            permitted_policy_repair_bindings=permitted_policy_repair_bindings,
+        )
+    )
+    critique_receipt = critique.get("independentContext", {}).get("receipt", {})
+    name_receipt = names.get("independentContext", {}).get("receipt", {})
+    if (
+        isinstance(critique_receipt, dict)
+        and isinstance(name_receipt, dict)
+        and critique_receipt.get("receiptId")
+        and critique_receipt.get("receiptId") == name_receipt.get("receiptId")
+    ):
+        errors.append(
+            f"{prefix}: critique and name inventory require distinct context receipts"
+        )
+    return errors
+
+
 def pending_semantic_audit() -> dict[str, Any]:
     return {
         "status": "pending",
@@ -810,6 +1581,7 @@ def validate_semantic_audit(
     heading_english: str | None,
     english: str | None,
     prefix: str,
+    allow_historical_candidate: bool = False,
 ) -> list[str]:
     """Require positive, content-bound evidence for an independent critique."""
     audit = critique.get("semanticAudit")
@@ -820,7 +1592,9 @@ def validate_semantic_audit(
         errors.append(f"{prefix}: semantic critique checklist is stale")
     if audit.get("sourceSha256") != semantic_source_sha256(source):
         errors.append(f"{prefix}: semantic critique source hash is stale")
-    if audit.get("candidateSha256") != semantic_candidate_sha256(
+    if not allow_historical_candidate and audit.get(
+        "candidateSha256"
+    ) != semantic_candidate_sha256(
         heading_english, english
     ):
         errors.append(f"{prefix}: semantic critique candidate hash is stale")
@@ -853,28 +1627,27 @@ def validate_semantic_audit(
     return errors
 
 
-def validate_name_inventory_distribution(counts: list[int]) -> list[str]:
-    """Catch packet-scale title-only inventories without judging small shards."""
-    if len(counts) < 20:
-        return []
-    multi_name_entries = sum(count > 1 for count in counts)
-    if multi_name_entries * 5 < len(counts):
-        return [
-            "packet: name inventory has a one-candidate placeholder signature; "
-            "fewer than 20% of biographies identify a second named referent"
-        ]
-    return []
-
-
 def validate_witness(
     witness: dict[str, Any], findings: list[Any], prefix: str, strict: bool
 ) -> list[str]:
     errors: list[str] = []
     results = witness.get("results")
-    requires_witness = any(
-        isinstance(finding, dict) and finding.get("requiresWitness") is True
-        for finding in findings
-    )
+    finding_ids: list[str] = []
+    required_finding_ids: list[str] = []
+    for index, finding in enumerate(findings, start=1):
+        if not isinstance(finding, dict):
+            errors.append(f"{prefix}: critique finding {index} must be an object")
+            continue
+        finding_id = finding.get("findingId")
+        if not isinstance(finding_id, str) or not finding_id.strip():
+            errors.append(f"{prefix}: critique finding {index} lacks a finding ID")
+            continue
+        finding_ids.append(finding_id)
+        if finding.get("requiresWitness") is True:
+            required_finding_ids.append(finding_id)
+    if len(finding_ids) != len(set(finding_ids)):
+        errors.append(f"{prefix}: critique finding IDs must be unique")
+    requires_witness = bool(required_finding_ids)
     if witness.get("status") not in {"complete", "not_required"}:
         errors.append(f"{prefix}: witness resolution is not final")
     if requires_witness and witness.get("status") != "complete":
@@ -898,6 +1671,7 @@ def validate_witness(
         )
     canonical = {
         "status",
+        "findingIds",
         "query",
         "witnessRole",
         "witnessIdentity",
@@ -909,6 +1683,7 @@ def validate_witness(
         "decision",
         "retrievedAt",
     }
+    referenced_finding_ids: list[str] = []
     for index, result in enumerate(results, start=1):
         result_prefix = f"{prefix}, witness result {index}"
         if not isinstance(result, dict) or result.get("status") not in {"hit", "no_match"}:
@@ -919,6 +1694,27 @@ def validate_witness(
         if set(result) != canonical:
             errors.append(f"{result_prefix}: provenance fields are not canonical")
             continue
+        result_finding_ids = result.get("findingIds")
+        if (
+            not isinstance(result_finding_ids, list)
+            or not result_finding_ids
+            or any(
+                not isinstance(finding_id, str) or not finding_id.strip()
+                for finding_id in result_finding_ids
+            )
+        ):
+            errors.append(f"{result_prefix}: findingIds must be a nonempty array")
+            result_finding_ids = []
+        elif len(result_finding_ids) != len(set(result_finding_ids)):
+            errors.append(f"{result_prefix}: findingIds must be unique")
+        for finding_id in result_finding_ids:
+            if finding_id not in required_finding_ids:
+                errors.append(
+                    f"{result_prefix}: findingId does not reference a witness-required "
+                    "critique finding"
+                )
+            else:
+                referenced_finding_ids.append(finding_id)
         for field in ("query", "witnessIdentity", "passage", "location", "decision", "retrievedAt"):
             if not isinstance(result.get(field), str) or not result[field].strip():
                 errors.append(f"{result_prefix}: {field} is required")
@@ -945,6 +1741,11 @@ def validate_witness(
                 datetime.fromisoformat(retrieved_at.replace("Z", "+00:00"))
             except ValueError:
                 errors.append(f"{result_prefix}: retrievedAt must be an ISO date or time")
+    if strict and set(required_finding_ids) - set(referenced_finding_ids):
+        errors.append(
+            f"{prefix}: every witness-required critique finding must be linked to a "
+            "witness result"
+        )
     return errors
 
 
@@ -1799,6 +2600,52 @@ def policy_snapshot(policy_path: Path) -> dict[str, Any]:
     }
 
 
+def active_title_decisions(
+    contracts: list[dict[str, Any]],
+) -> dict[int, dict[str, Any]]:
+    """Return all decisions from the integrity-checked active title profile."""
+    matches = [
+        contract
+        for contract in contracts
+        if isinstance(contract, dict)
+        and contract.get("id") == "entry-title-decisions"
+    ]
+    if len(matches) != 1:
+        raise WorkflowError("policy binding must name one entry-title decision profile")
+    path = (ROOT / str(matches[0].get("path", ""))).resolve()
+    try:
+        path.relative_to(ROOT.resolve())
+    except ValueError:
+        raise WorkflowError(
+            "entry-title decision profile resolves outside the repository"
+        ) from None
+    profile = load_json(path)
+    decisions = profile.get("decisions")
+    if not isinstance(decisions, list):
+        raise WorkflowError("entry-title decision profile has no decisions array")
+    indexed: dict[int, dict[str, Any]] = {}
+    for decision in decisions:
+        if not isinstance(decision, dict):
+            continue
+        number = decision.get("sourceEntryNumber")
+        if isinstance(number, int):
+            indexed[number] = decision
+    return indexed
+
+
+def active_title_editorial_supplies(
+    contracts: list[dict[str, Any]],
+) -> dict[int, dict[str, Any]]:
+    """Return active witness-bound supplies from the integrity-checked policy."""
+    return {
+        number: decision
+        for number, decision in active_title_decisions(contracts).items()
+        if isinstance(decision.get("editorialSupply"), dict)
+        and decision["editorialSupply"].get("kind")
+        == "witness-bound-subject-head"
+    }
+
+
 def pending_preceding_translation(
     segment: dict[str, Any], policy_sha256: str
 ) -> dict[str, Any]:
@@ -1812,6 +2659,7 @@ def pending_preceding_translation(
             "policySha256": policy_sha256,
             "headingEnglish": None,
             "english": None,
+            "provenance": pending_stage_provenance("blind_translation"),
         },
         "independentCritique": {
             "status": "pending",
@@ -1819,27 +2667,221 @@ def pending_preceding_translation(
             "model": None,
             "findings": [],
             "semanticAudit": pending_semantic_audit(),
+            "independentContext": pending_independent_context(),
+            "provenance": pending_stage_provenance("independent_critique"),
         },
         "witnessResolution": {
             "status": "pending",
             "results": [],
             "notRequiredRationale": None,
+            "provenance": pending_stage_provenance("witness_resolution"),
         },
         "adjudication": {
             "status": "pending",
             "headingEnglish": None,
             "english": None,
             "decisions": [],
+            "provenance": pending_stage_provenance("adjudication"),
         },
         "names": {
             "status": "pending",
             "candidates": [],
             "mentions": [],
             "inventoryAudit": pending_name_inventory_audit(),
+            "independentContext": pending_independent_context(),
+            "provenance": pending_stage_provenance("name_inventory"),
         },
         "unresolved": [],
         "humanReview": {"status": "unreviewed"},
     }
+
+
+def active_heading_contexts(
+    source_proposal: dict[str, Any], before_source_ordinal: int
+) -> list[dict[str, Any]]:
+    """Recover source-occurring headings active immediately before a slice."""
+    active: list[dict[str, Any]] = []
+    for record in source_proposal.get("records", []):
+        ordinal = record.get("sourceOrdinal")
+        if not isinstance(ordinal, int) or ordinal >= before_source_ordinal:
+            break
+        for context in record.get("precedingMaterial", []):
+            if context.get("kind") != "structural_heading":
+                continue
+            level = context.get("heading", {}).get("level")
+            if not isinstance(level, int) or level < 1:
+                raise WorkflowError(
+                    "continued-context source contains an invalid structural heading"
+                )
+            active = [
+                item
+                for item in active
+                if item["heading"]["level"] < level
+            ]
+            active.append(context)
+    return active
+
+
+def continued_heading_context(
+    source_context: dict[str, Any], first_source_ordinal: int
+) -> dict[str, Any]:
+    """Derive display-only context while retaining the source occurrence identity."""
+    source_occurrence_id = source_context["id"]
+    return {
+        "sourceOccurrenceId": source_occurrence_id,
+        "displayContextId": (
+            f"continued-before-unit-{first_source_ordinal:06d}-from-"
+            f"{source_occurrence_id}"
+        ),
+        "kind": "continued_structural_heading",
+        "heading": source_context["heading"],
+        "pages": source_context["pages"],
+        "sourceSha256": source_context["sourceSha256"],
+    }
+
+
+def validate_context_source_proposal(path: Path) -> list[str]:
+    """Run the repository's public-proposal validator in historical mode."""
+    scripts_path = str(ROOT / "scripts")
+    if scripts_path not in sys.path:
+        sys.path.insert(0, scripts_path)
+    from validate_public_proposal import validate as validate_public_proposal
+
+    return validate_public_proposal(path, require_current=False)
+
+
+def slice_context(
+    first_source_ordinal: int,
+    authority: dict[str, Any],
+    source_path: Path | None,
+) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    """Bind and derive the active source hierarchy for a runtime packet slice."""
+    if first_source_ordinal == 1:
+        if source_path is not None:
+            raise WorkflowError("a root packet must not supply continued context")
+        return (
+            {
+                "state": "root",
+                "beforeSourceOrdinal": 1,
+                "sourceProposalId": None,
+                "sourceProposalSha256": None,
+                "contexts": [],
+            },
+            [],
+        )
+    if source_path is None:
+        raise WorkflowError(
+            f"slice before source ordinal {first_source_ordinal} requires an "
+            "explicit prior public proposal for inherited context"
+        )
+    resolved_source = source_path.resolve()
+    try:
+        resolved_source.relative_to(PUBLIC_PROPOSAL_ROOT.resolve())
+    except ValueError as exc:
+        raise WorkflowError(
+            "continued-context source must be a repository public proposal"
+        ) from exc
+    if not resolved_source.is_file():
+        raise WorkflowError("continued-context source proposal is missing")
+    if validate_context_source_proposal(resolved_source):
+        raise WorkflowError("continued-context source proposal is invalid")
+    source_proposal = load_json(resolved_source)
+    source_proposal_id = source_proposal.get("proposalId")
+    if not isinstance(source_proposal_id, str) or not PUBLIC_PROPOSAL_ID_RE.fullmatch(
+        source_proposal_id
+    ):
+        raise WorkflowError("continued-context source proposal ID is invalid")
+    expected_path = PUBLIC_PROPOSAL_ROOT / (
+        source_proposal_id.removesuffix("-public-proposal-v1")
+        + ".public-proposal.json"
+    )
+    if resolved_source != expected_path.resolve():
+        raise WorkflowError("continued-context source proposal path is not canonical")
+    source_authority = source_proposal.get("sourceAuthority", {})
+    if (
+        source_authority.get("commit") != authority.get("commit")
+        or source_authority.get("sha256") != authority.get("sha256")
+    ):
+        raise WorkflowError("continued-context source authority mismatch")
+    source_ordinals = [
+        record.get("sourceOrdinal")
+        for record in source_proposal.get("records", [])
+        if isinstance(record, dict) and isinstance(record.get("sourceOrdinal"), int)
+    ]
+    if max(source_ordinals, default=0) != first_source_ordinal - 1:
+        raise WorkflowError(
+            "continued-context source must end immediately before the packet slice"
+        )
+    source_contexts = active_heading_contexts(
+        source_proposal, first_source_ordinal
+    )
+    if not source_contexts:
+        raise WorkflowError("active source hierarchy could not be established")
+    displayed = [
+        continued_heading_context(context, first_source_ordinal)
+        for context in source_contexts
+    ]
+    return (
+        {
+            "state": "continued",
+            "beforeSourceOrdinal": first_source_ordinal,
+            "sourceProposalId": source_proposal_id,
+            "sourceProposalSha256": bytes_sha256(resolved_source.read_bytes()),
+            "contexts": [
+                {
+                    "sourceOccurrenceId": item["sourceOccurrenceId"],
+                    "displayContextId": item["displayContextId"],
+                }
+                for item in displayed
+            ],
+        },
+        displayed,
+    )
+
+
+def resolved_packet_slice_context(
+    packet: dict[str, Any],
+) -> tuple[list[dict[str, Any]], list[str]]:
+    """Resolve a packet binding and report any missing or drifted context."""
+    first_source_ordinal = packet.get("assignment", {}).get("startUnit")
+    if not isinstance(first_source_ordinal, int) or first_source_ordinal < 1:
+        return [], ["packet: inherited slice context has an invalid source ordinal"]
+    binding = packet.get("sliceContext")
+    if not isinstance(binding, dict):
+        return [], ["packet: inherited slice context is missing"]
+    if first_source_ordinal == 1:
+        expected, displayed = slice_context(1, packet.get("authority", {}), None)
+        if binding != expected:
+            return [], ["packet: root slice context is invalid"]
+        return displayed, []
+    source_proposal_id = binding.get("sourceProposalId")
+    if not isinstance(source_proposal_id, str) or not PUBLIC_PROPOSAL_ID_RE.fullmatch(
+        source_proposal_id
+    ):
+        return [], ["packet: inherited slice context source is invalid"]
+    source_path = PUBLIC_PROPOSAL_ROOT / (
+        source_proposal_id.removesuffix("-public-proposal-v1")
+        + ".public-proposal.json"
+    )
+    try:
+        expected, displayed = slice_context(
+            first_source_ordinal,
+            packet.get("authority", {}),
+            source_path,
+        )
+    except WorkflowError as error:
+        return [], [f"packet: inherited slice context is invalid: {error}"]
+    if any(
+        item.get("sourceOccurrenceId") == item.get("displayContextId")
+        for item in binding.get("contexts", [])
+        if isinstance(item, dict)
+    ):
+        return [], [
+            "packet: source occurrence and display context IDs must remain distinct"
+        ]
+    if binding != expected:
+        return [], ["packet: inherited slice context binding is stale or incomplete"]
+    return displayed, []
 
 
 def build_packet(
@@ -1848,6 +2890,7 @@ def build_packet(
     source_path: Path,
     manifest_path: Path = DEFAULT_MANIFEST,
     policy_path: Path = DEFAULT_POLICY,
+    continued_context_source: Path | None = None,
 ) -> dict[str, Any]:
     number = issue.get("number")
     if not isinstance(number, int):
@@ -1907,8 +2950,18 @@ def build_packet(
         "sha256": manifest["download"]["sha256"],
         "license": manifest["license"],
     }
+    slice_context_binding, _ = slice_context(
+        marker["startUnit"], source, continued_context_source
+    )
     fingerprint = bytes_sha256(
-        json_bytes({"assignment": assignment, "source": source, "policy": policy})
+        json_bytes(
+            {
+                "assignment": assignment,
+                "source": source,
+                "policy": policy,
+                "sliceContext": slice_context_binding,
+            }
+        )
     )
     entries = []
     for source_entry in selected:
@@ -1932,6 +2985,7 @@ def build_packet(
                     "reasoning": None,
                     "policySha256": policy["bindingSha256"],
                     "english": None,
+                    "provenance": pending_stage_provenance("blind_translation"),
                 },
                 "independentCritique": {
                     "status": "pending",
@@ -1939,25 +2993,35 @@ def build_packet(
                     "model": None,
                     "findings": [],
                     "semanticAudit": pending_semantic_audit(),
+                    "independentContext": pending_independent_context(),
+                    "provenance": pending_stage_provenance("independent_critique"),
                 },
                 "witnessResolution": {
                     "status": "pending",
                     "results": [],
                     "notRequiredRationale": None,
+                    "provenance": pending_stage_provenance("witness_resolution"),
                 },
-                "adjudication": {"status": "pending", "english": None, "decisions": []},
+                "adjudication": {
+                    "status": "pending",
+                    "english": None,
+                    "decisions": [],
+                    "provenance": pending_stage_provenance("adjudication"),
+                },
                 "names": {
                     "status": "pending",
                     "candidates": [],
                     "mentions": [],
                     "inventoryAudit": pending_name_inventory_audit(),
+                    "independentContext": pending_independent_context(),
+                    "provenance": pending_stage_provenance("name_inventory"),
                 },
                 "unresolved": [],
                 "humanReview": {"status": "unreviewed"},
             }
         )
     return {
-        "schemaVersion": "1.3.0",
+        "schemaVersion": PACKET_SCHEMA_VERSION,
         "packetId": f"isabah-translation-issue-{number}",
         "workId": "ibn-hajar-al-isabah",
         "toolVersion": TOOL_VERSION,
@@ -1969,19 +3033,14 @@ def build_packet(
             "precedingMaterialOwnership": "following_source_unit",
             "excludedRanges": source_scope_exclusions(source_path),
         },
+        "sliceContext": slice_context_binding,
         "entries": entries,
         "formulaInventory": {
             "status": "pending",
             "registryVersion": FORMULA_REGISTRY_VERSION,
             "occurrences": [],
         },
-        "postRunRepairAudit": {
-            "status": "not_required",
-            "basePacketSha256": None,
-            "artifactSha256": None,
-            "runId": None,
-            "operations": [],
-        },
+        "postRunRepairAudits": [],
         "reviewPresentation": {"status": "pending", "path": None, "sha256": None},
         "machineReadiness": {
             "status": "pending",
@@ -2028,90 +3087,654 @@ def normalized_repair_record_kind(value: str) -> str:
     raise WorkflowError(f"unsupported repair record kind: {value}")
 
 
-def validate_post_run_repair_audit(packet: dict[str, Any]) -> list[str]:
-    audit = packet.get("postRunRepairAudit", {})
-    status = audit.get("status")
-    operations = audit.get("operations")
-    if status == "not_required":
-        if operations != [] or any(
-            audit.get(field) is not None
-            for field in ("basePacketSha256", "artifactSha256", "runId")
-        ):
-            return ["packet: not-required post-run repair audit must be empty"]
-        return []
-    if status != "complete" or not isinstance(operations, list) or not operations:
-        return ["packet: post-run repair audit is incomplete"]
-    if not all(
-        SHA256_RE.fullmatch(str(audit.get(field, "")))
-        for field in ("basePacketSha256", "artifactSha256")
-    ):
-        return ["packet: post-run repair audit hashes are invalid"]
-    if not re.fullmatch(
-        r"translation-repair-run-[0-9a-f]{16}", str(audit.get("runId", ""))
-    ):
-        return ["packet: post-run repair run ID is invalid"]
+def is_policy_root_repair_operation(operation: dict[str, Any]) -> bool:
+    """Identify the one exact packet-level policy binding operation shape."""
+    return (
+        operation.get("sourceUnitId") is None
+        and operation.get("segmentId") is None
+        and operation.get("recordKind") == "packet"
+        and operation.get("targetStage") == "policy_binding"
+        and operation.get("fieldPath") == "$.policy"
+        and operation.get("valueKind") == "canonical_json"
+    )
 
+
+def packet_semantic_owner_policy_paths(
+    packet: dict[str, Any],
+) -> list[tuple[tuple[str, str | None], str]]:
+    """Return every semantic owner and its exact blind-policy field path."""
+    paths: list[tuple[tuple[str, str | None], str]] = []
+    for entry_index, entry in enumerate(packet.get("entries", [])):
+        if not isinstance(entry, dict):
+            continue
+        source_unit_id = str(entry.get("sourceUnitId"))
+        for translation_index, translation in enumerate(
+            entry.get("precedingTranslations", [])
+        ):
+            if not isinstance(translation, dict):
+                continue
+            segment_id = str(translation.get("segmentId"))
+            paths.append(
+                (
+                    (source_unit_id, segment_id),
+                    f"$.entries[{entry_index}].precedingTranslations"
+                    f"[{translation_index}].blindTranslation.policySha256",
+                )
+            )
+        paths.append(
+            (
+                (source_unit_id, None),
+                f"$.entries[{entry_index}].blindTranslation.policySha256",
+            )
+        )
+    return paths
+
+
+def packet_semantic_owner_stage_paths(
+    packet: dict[str, Any],
+) -> list[tuple[tuple[str, str | None], str, str]]:
+    """Return all whole semantic stages in structural-before-entry source order."""
+    stage_fields = (
+        ("blindTranslation", "blind_translation"),
+        ("independentCritique", "independent_critique"),
+        ("witnessResolution", "witness_resolution"),
+        ("adjudication", "adjudication"),
+        ("names", "name_inventory"),
+    )
+    paths: list[tuple[tuple[str, str | None], str, str]] = []
+    for entry_index, entry in enumerate(packet.get("entries", [])):
+        if not isinstance(entry, dict):
+            continue
+        source_unit_id = str(entry.get("sourceUnitId"))
+        for translation_index, translation in enumerate(
+            entry.get("precedingTranslations", [])
+        ):
+            if not isinstance(translation, dict):
+                continue
+            key = (source_unit_id, str(translation.get("segmentId")))
+            prefix = (
+                f"$.entries[{entry_index}].precedingTranslations"
+                f"[{translation_index}]"
+            )
+            paths.extend(
+                (key, f"{prefix}.{stage_field}", stage)
+                for stage_field, stage in stage_fields
+            )
+        key = (source_unit_id, None)
+        prefix = f"$.entries[{entry_index}]"
+        paths.extend(
+            (key, f"{prefix}.{stage_field}", stage)
+            for stage_field, stage in stage_fields
+        )
+    return paths
+
+
+def policy_repair_bindings(
+    packet: dict[str, Any],
+) -> dict[str, tuple[str, str]]:
+    """Return audit-run bindings only for the exact policy-root operation."""
+    bindings: dict[str, tuple[str, str]] = {}
+    for audit in packet.get("postRunRepairAudits", []):
+        if not isinstance(audit, dict) or not isinstance(audit.get("runId"), str):
+            continue
+        roots = [
+            operation
+            for operation in audit.get("operations", [])
+            if isinstance(operation, dict)
+            and is_policy_root_repair_operation(operation)
+        ]
+        if len(roots) != 1:
+            continue
+        root = roots[0]
+        old_binding = root.get("oldPolicyBindingSha256")
+        new_binding = root.get("newPolicyBindingSha256")
+        if not SHA256_RE.fullmatch(str(old_binding or "")) or not SHA256_RE.fullmatch(
+            str(new_binding or "")
+        ):
+            continue
+        if packet.get("policy", {}).get("bindingSha256") != new_binding:
+            continue
+        bindings[str(audit["runId"])] = (str(old_binding), str(new_binding))
+    return bindings
+
+
+def repair_operation_owner(
+    packet: dict[str, Any], operation: dict[str, Any]
+) -> tuple[dict[str, Any], dict[str, Any], tuple[str, str | None], str, str, str | None]:
+    """Resolve one exact repair path to its entry and semantic owner."""
+    path = operation.get("fieldPath")
+    if not isinstance(path, str) or not path.startswith("$."):
+        raise WorkflowError("target must be an exact repairable stage-output path")
+    tokens: list[str | int] = [
+        name if name else int(array_index)
+        for name, array_index in JSON_PATH_TOKEN_RE.findall(path[2:])
+    ]
+    canonical_path = "$"
+    for token in tokens:
+        canonical_path += f"[{token}]" if isinstance(token, int) else f".{token}"
+    if canonical_path != path:
+        raise WorkflowError("repair field path is not canonical")
+    try:
+        if len(tokens) in {3, 4}:
+            collection, entry_index, stage_field, *output_tokens = tokens
+            if collection != "entries" or not isinstance(entry_index, int):
+                raise WorkflowError("entry repair path is malformed")
+            output_field = output_tokens[0] if output_tokens else None
+            entry = packet["entries"][entry_index]
+            owner = entry
+            record_kind = "entry"
+            segment_id = None
+        elif len(tokens) in {5, 6}:
+            collection, entry_index, translations_field, translation_index, stage_field, *output_tokens = tokens
+            if (
+                collection != "entries"
+                or not isinstance(entry_index, int)
+                or translations_field != "precedingTranslations"
+                or not isinstance(translation_index, int)
+            ):
+                raise WorkflowError("structural repair path is malformed")
+            output_field = output_tokens[0] if output_tokens else None
+            entry = packet["entries"][entry_index]
+            owner = entry["precedingTranslations"][translation_index]
+            record_kind = "structural"
+            segment_id = owner["segmentId"]
+        else:
+            raise WorkflowError("repair path has unexpected depth")
+    except (KeyError, IndexError, TypeError):
+        raise WorkflowError("repair field path owner is invalid") from None
+    leaf_fields = {
+        "blindTranslation": (
+            "blind_translation",
+            {"headingEnglish", "english", "policySha256"},
+            "text",
+        ),
+        "independentCritique": (
+            "independent_critique",
+            {"findings", "semanticAudit"},
+            "canonical_json",
+        ),
+        "witnessResolution": (
+            "witness_resolution",
+            set(),
+            "canonical_json",
+        ),
+        "adjudication": (
+            "adjudication",
+            {"headingEnglish", "english"},
+            "text",
+        ),
+        "names": (
+            "name_inventory",
+            {"candidates", "mentions", "inventoryAudit"},
+            "canonical_json",
+        ),
+    }
+    if output_field is None:
+        whole_fields = {
+            "blindTranslation": "blind_translation",
+            "independentCritique": "independent_critique",
+            "witnessResolution": "witness_resolution",
+            "adjudication": "adjudication",
+            "names": "name_inventory",
+            "unresolved": "witness_resolution",
+        }
+        stage = whole_fields.get(str(stage_field))
+        if stage is None or stage_field not in owner:
+            raise WorkflowError("target is not an allowlisted whole stage-output field")
+        expected_value_kind = "canonical_json"
+        current_value = owner[stage_field]
+    else:
+        stage_definition = leaf_fields.get(str(stage_field))
+        if stage_definition is None or output_field not in stage_definition[1]:
+            raise WorkflowError("target is not an allowlisted stage-output field")
+        if output_field not in owner.get(stage_field, {}):
+            raise WorkflowError("repair target field does not exist")
+        stage, _, expected_value_kind = stage_definition
+        current_value = owner[stage_field][output_field]
+    if operation.get("valueKind") != expected_value_kind:
+        raise WorkflowError("repair value kind does not match its target stage")
+    if expected_value_kind == "text" and not isinstance(current_value, str):
+        raise WorkflowError("text repair target is not a string")
+    if output_field == "policySha256" and not SHA256_RE.fullmatch(str(current_value)):
+        raise WorkflowError("policy SHA repair target is not a SHA-256")
+    if expected_value_kind == "canonical_json" and not isinstance(
+        current_value, (dict, list)
+    ):
+        raise WorkflowError("canonical JSON repair target is not an object or array")
+    source_unit_id = str(entry.get("sourceUnitId"))
+    return (
+        entry,
+        owner,
+        (source_unit_id, segment_id),
+        stage,
+        record_kind,
+        segment_id,
+    )
+
+
+def repair_rebinding_permissions(
+    packet: dict[str, Any],
+) -> dict[tuple[str, str | None], dict[str, tuple[str, ...]]]:
+    """Return cumulative repair-run permissions by owner and affected stage."""
+    mutable: dict[tuple[str, str | None], dict[str, list[str]]] = {}
+    for audit in packet.get("postRunRepairAudits", []):
+        if not isinstance(audit, dict):
+            continue
+        repair_run_id = audit.get("runId")
+        if not isinstance(repair_run_id, str):
+            continue
+        for operation in audit.get("operations", []):
+            if not isinstance(operation, dict):
+                continue
+            if is_policy_root_repair_operation(operation):
+                for key, _ in packet_semantic_owner_policy_paths(packet):
+                    owner_permissions = mutable.setdefault(key, {})
+                    for stage in SEMANTIC_STAGE_NAMES:
+                        run_ids = owner_permissions.setdefault(stage, [])
+                        if repair_run_id not in run_ids:
+                            run_ids.append(repair_run_id)
+                continue
+            try:
+                _, _, key, target_stage, _, _ = repair_operation_owner(
+                    packet, operation
+                )
+            except WorkflowError:
+                continue
+            affected_stages_by_target = {
+                "blind_translation": (
+                    "blind_translation",
+                    "independent_critique",
+                    "witness_resolution",
+                    "adjudication",
+                ),
+                "independent_critique": (
+                    "independent_critique",
+                    "witness_resolution",
+                    "adjudication",
+                    "name_inventory",
+                ),
+                "witness_resolution": (
+                    "witness_resolution",
+                    "adjudication",
+                    "name_inventory",
+                ),
+                "adjudication": ("adjudication", "name_inventory"),
+                "name_inventory": ("name_inventory",),
+            }
+            affected_stages = affected_stages_by_target[target_stage]
+            owner_permissions = mutable.setdefault(key, {})
+            for stage in affected_stages:
+                run_ids = owner_permissions.setdefault(stage, [])
+                if repair_run_id not in run_ids:
+                    run_ids.append(repair_run_id)
+    return {
+        key: {stage: tuple(run_ids) for stage, run_ids in stages.items()}
+        for key, stages in mutable.items()
+    }
+
+
+def repaired_target_stages(
+    packet: dict[str, Any],
+) -> dict[tuple[str, str | None], set[str]]:
+    """Return the semantic text stages directly changed by an audited repair."""
+    targets: dict[tuple[str, str | None], set[str]] = {}
+    for audit in packet.get("postRunRepairAudits", []):
+        if not isinstance(audit, dict):
+            continue
+        for operation in audit.get("operations", []):
+            if not isinstance(operation, dict):
+                continue
+            if operation.get("valueKind") != "text":
+                continue
+            if str(operation.get("fieldPath", "")).endswith(".policySha256"):
+                # This changes a stage binding and its content hash, not the
+                # English candidate governed by the semantic audit.
+                continue
+            try:
+                _, _, key, target_stage, _, _ = repair_operation_owner(
+                    packet, operation
+                )
+            except WorkflowError:
+                continue
+            targets.setdefault(key, set()).add(target_stage)
+    return targets
+
+
+def validate_post_run_repair_audits(packet: dict[str, Any]) -> list[str]:
+    audits = packet.get("postRunRepairAudits")
+    if not isinstance(audits, list):
+        return ["packet: post-run repair audits must be an array"]
     errors: list[str] = []
     repair_ids: list[str] = []
-    last_hash_by_path: dict[str, str] = {}
-    for index, operation in enumerate(operations):
-        prefix = f"packet post-run repair operation {index + 1}"
-        repair_id = operation.get("repairId")
-        if isinstance(repair_id, str):
-            repair_ids.append(repair_id)
-        path = operation.get("fieldPath")
-        if not isinstance(path, str) or not (
-            ".blindTranslation." in path or ".adjudication." in path
+    run_ids: list[str] = []
+    last_hash_by_path: dict[str, tuple[str, str]] = {}
+    last_audit_index_by_path: dict[str, int] = {}
+    last_operation_order_by_path: dict[str, tuple[int, int]] = {}
+    policy_root_audit_indices: set[int] = set()
+    operation_orders = [
+        (audit_index, operation_index, str(operation.get("fieldPath")))
+        for audit_index, audit in enumerate(audits, start=1)
+        if isinstance(audit, dict)
+        for operation_index, operation in enumerate(
+            audit.get("operations", []), start=1
+        )
+        if isinstance(operation, dict)
+        and isinstance(operation.get("fieldPath"), str)
+    ]
+
+    def has_later_descendant_operation(
+        path: str, audit_index: int, operation_index: int
+    ) -> bool:
+        current_order = (audit_index, operation_index)
+        return any(
+            (later_audit_index, later_operation_index) > current_order
+            and later_path.startswith(f"{path}.")
+            for later_audit_index, later_operation_index, later_path in operation_orders
+        )
+
+    previous_audit: dict[str, Any] | None = None
+    for audit_index, audit in enumerate(audits, start=1):
+        audit_prefix = f"packet post-run repair audit {audit_index}"
+        if not isinstance(audit, dict):
+            errors.append(f"{audit_prefix}: audit must be an object")
+            continue
+        expected_previous_hash = (
+            None if previous_audit is None else content_sha256(previous_audit)
+        )
+        if audit.get("previousAuditSha256") != expected_previous_hash:
+            errors.append(f"{audit_prefix}: previous-audit hash chain is broken")
+        previous_audit = audit
+        operations = audit.get("operations")
+        if audit.get("status") != "complete" or not isinstance(operations, list) or not operations:
+            errors.append(f"{audit_prefix}: audit is incomplete")
+            continue
+        if not all(
+            SHA256_RE.fullmatch(str(audit.get(field, "")))
+            for field in ("basePacketSha256", "artifactSha256")
         ):
-            errors.append(f"{prefix}: target must be blind or adjudicated output")
-            continue
-        path_tokens: list[str | int] = [
-            name if name else int(array_index)
-            for name, array_index in JSON_PATH_TOKEN_RE.findall(path[2:])
+            errors.append(f"{audit_prefix}: audit hashes are invalid")
+        run_id = audit.get("runId")
+        if not re.fullmatch(
+            r"translation-repair-run-[0-9a-f]{16}", str(run_id or "")
+        ):
+            errors.append(f"{audit_prefix}: repair run ID is invalid")
+        else:
+            run_ids.append(str(run_id))
+        policy_root_operations = [
+            operation
+            for operation in operations
+            if isinstance(operation, dict)
+            and is_policy_root_repair_operation(operation)
         ]
-        try:
-            entry_index = int(path_tokens[1])
-            entry = packet["entries"][entry_index]
-            if "precedingTranslations" in path_tokens:
-                translation_token = path_tokens.index("precedingTranslations")
-                translation_index = int(path_tokens[translation_token + 1])
-                owner = entry["precedingTranslations"][translation_index]
-                expected_kind = "structural"
-                expected_segment_id = owner["segmentId"]
+        if policy_root_operations:
+            policy_root_audit_indices.add(audit_index)
+            if len(policy_root_operations) != 1:
+                errors.append(
+                    f"{audit_prefix}: policy repair must contain exactly one root operation"
+                )
+            policy_root = policy_root_operations[0]
+            if not operations or operations[0] is not policy_root:
+                errors.append(
+                    f"{audit_prefix}: policy root repair must be the first operation"
+                )
+            expected_stage_paths = [
+                path for _, path, _ in packet_semantic_owner_stage_paths(packet)
+            ]
+            actual_paths = [
+                operation.get("fieldPath")
+                for operation in operations
+                if isinstance(operation, dict)
+            ]
+            if actual_paths != ["$.policy", *expected_stage_paths]:
+                errors.append(
+                    f"{audit_prefix}: policy repair must exactly and in source order "
+                    "cover all five whole stages for every semantic owner"
+                )
+            old_binding = policy_root.get("oldPolicyBindingSha256")
+            new_binding = policy_root.get("newPolicyBindingSha256")
+            if not SHA256_RE.fullmatch(
+                str(old_binding or "")
+            ) or not SHA256_RE.fullmatch(str(new_binding or "")):
+                errors.append(f"{audit_prefix}: policy binding hashes are invalid")
+            elif old_binding == new_binding:
+                errors.append(f"{audit_prefix}: policy binding repair must change policy")
+            try:
+                expected_policy = policy_snapshot(DEFAULT_POLICY)
+            except WorkflowError as exc:
+                errors.append(f"{audit_prefix}: active policy is invalid: {exc}")
+                expected_policy = None
+            if expected_policy is not None:
+                if packet.get("policy") != expected_policy:
+                    errors.append(
+                        f"{audit_prefix}: repaired policy does not exactly match "
+                        "the active local binding"
+                    )
+                if new_binding != expected_policy.get("bindingSha256"):
+                    errors.append(
+                        f"{audit_prefix}: new policy binding does not match "
+                        "the active local binding"
+                    )
+                if policy_root.get("newValueSha256") != content_sha256(
+                    expected_policy
+                ):
+                    errors.append(
+                        f"{audit_prefix}: new policy object hash does not match "
+                        "the active local binding"
+                    )
+        for operation_index, operation in enumerate(operations, start=1):
+            prefix = f"{audit_prefix}, operation {operation_index}"
+            if not isinstance(operation, dict):
+                errors.append(f"{prefix}: operation must be an object")
+                continue
+            repair_id = operation.get("repairId")
+            if not isinstance(repair_id, str) or not repair_id.strip():
+                errors.append(f"{prefix}: repair ID is missing")
             else:
-                expected_kind = "entry"
-                expected_segment_id = None
-            expected_stage = (
-                "blind_translation"
-                if ".blindTranslation." in path
-                else "adjudication"
-            )
-        except (KeyError, IndexError, TypeError, ValueError):
-            errors.append(f"{prefix}: field path owner is invalid")
-            continue
-        if operation.get("sourceUnitId") != entry.get("sourceUnitId"):
-            errors.append(f"{prefix}: source unit metadata does not match field path")
-        if operation.get("recordKind") != expected_kind:
-            errors.append(f"{prefix}: record kind does not match field path")
-        if operation.get("segmentId") != expected_segment_id:
-            errors.append(f"{prefix}: segment metadata does not match field path")
-        if operation.get("targetStage") != expected_stage:
-            errors.append(f"{prefix}: target stage does not match field path")
-        old_hash = operation.get("oldTextSha256")
-        new_hash = operation.get("newTextSha256")
-        if path in last_hash_by_path and old_hash != last_hash_by_path[path]:
-            errors.append(f"{prefix}: repair hash chain is broken")
-        last_hash_by_path[path] = str(new_hash)
+                repair_ids.append(repair_id)
+            value_kind = operation.get("valueKind")
+            if value_kind == "text":
+                old_hash = operation.get("oldTextSha256")
+                new_hash = operation.get("newTextSha256")
+            elif value_kind == "canonical_json":
+                old_hash = operation.get("oldValueSha256")
+                new_hash = operation.get("newValueSha256")
+            else:
+                errors.append(f"{prefix}: repair value kind is invalid")
+                old_hash = None
+                new_hash = None
+            if not SHA256_RE.fullmatch(str(old_hash or "")) or not SHA256_RE.fullmatch(
+                str(new_hash or "")
+            ):
+                errors.append(f"{prefix}: repair value hashes are invalid")
+            elif old_hash == new_hash:
+                errors.append(f"{prefix}: repair must change the target value")
+            path = str(operation.get("fieldPath"))
+            if not is_policy_root_repair_operation(operation):
+                try:
+                    entry, owner, _, expected_stage, expected_kind, expected_segment_id = (
+                        repair_operation_owner(packet, operation)
+                    )
+                except WorkflowError as exc:
+                    errors.append(f"{prefix}: {exc}")
+                    continue
+                if operation.get("sourceUnitId") != entry.get("sourceUnitId"):
+                    errors.append(
+                        f"{prefix}: source unit metadata does not match field path"
+                    )
+                if operation.get("recordKind") != expected_kind:
+                    errors.append(f"{prefix}: record kind does not match field path")
+                if operation.get("segmentId") != expected_segment_id:
+                    errors.append(f"{prefix}: segment metadata does not match field path")
+                if operation.get("targetStage") != expected_stage:
+                    errors.append(f"{prefix}: target stage does not match field path")
+                whole_stage_field = path.rsplit(".", 1)[-1]
+                whole_stage_fields = {
+                    "blindTranslation",
+                    "independentCritique",
+                    "witnessResolution",
+                    "adjudication",
+                    "names",
+                }
+                if (
+                    value_kind == "canonical_json"
+                    and whole_stage_field
+                    in {"blindTranslation", "independentCritique", "names"}
+                    and not policy_root_operations
+                ):
+                    errors.append(
+                        f"{prefix}: whole stage target requires an exact policy-root audit"
+                    )
+                has_semantic_hashes = any(
+                    field in operation
+                    for field in (
+                        "oldSemanticValueSha256",
+                        "newSemanticValueSha256",
+                    )
+                )
+                requires_semantic_hashes = (
+                    value_kind == "canonical_json"
+                    and whole_stage_field in whole_stage_fields
+                    and (
+                        bool(policy_root_operations)
+                        or expected_stage == "adjudication"
+                        or has_semantic_hashes
+                    )
+                )
+                if requires_semantic_hashes:
+                    old_semantic_hash = operation.get("oldSemanticValueSha256")
+                    new_semantic_hash = operation.get("newSemanticValueSha256")
+                    current_semantic_hash = content_sha256(
+                        stage_semantic_repair_payload(
+                            owner[whole_stage_field], expected_stage
+                        )
+                    )
+                    if not SHA256_RE.fullmatch(
+                        str(old_semantic_hash or "")
+                    ) or not SHA256_RE.fullmatch(str(new_semantic_hash or "")):
+                        errors.append(
+                            f"{prefix}: stage semantic preservation hashes are invalid"
+                        )
+                    elif old_semantic_hash != new_semantic_hash:
+                        errors.append(
+                            f"{prefix}: canonical stage repair changed semantic content"
+                        )
+                    elif (
+                        new_semantic_hash != current_semantic_hash
+                        and not has_later_descendant_operation(
+                            path, audit_index, operation_index
+                        )
+                    ):
+                        errors.append(
+                            f"{prefix}: canonical stage semantic content drifted"
+                        )
+                if (
+                    policy_root_operations
+                    and expected_stage == "blind_translation"
+                    and owner["blindTranslation"].get("policySha256") != new_binding
+                ):
+                    errors.append(
+                        f"{prefix}: blind stage does not bind the repaired policy"
+                    )
+            if path in last_hash_by_path:
+                previous_kind, previous_hash = last_hash_by_path[path]
+                if value_kind != previous_kind or old_hash != previous_hash:
+                    errors.append(f"{prefix}: repair value-hash chain is broken")
+            last_hash_by_path[path] = (str(value_kind), str(new_hash))
+            last_audit_index_by_path[path] = audit_index
+            last_operation_order_by_path[path] = (audit_index, operation_index)
+    if len(run_ids) != len(set(run_ids)):
+        errors.append("packet: post-run repair run IDs must be globally unique")
     if len(repair_ids) != len(set(repair_ids)):
-        errors.append("packet: post-run repair IDs must be unique")
-    for path, expected_hash in last_hash_by_path.items():
+        errors.append("packet: post-run repair IDs must be globally unique")
+    for path, (value_kind, expected_hash) in last_hash_by_path.items():
         try:
             current = json_path_value(packet, path)
         except (KeyError, IndexError, TypeError, WorkflowError):
             errors.append(f"packet: post-run repair target is missing: {path}")
             continue
-        if not isinstance(current, str) or text_sha256(current) != expected_hash:
-            errors.append(f"packet: post-run repair target drifted: {path}")
+        if value_kind == "text":
+            current_hash = text_sha256(current) if isinstance(current, str) else None
+        else:
+            current_hash = (
+                content_sha256(current) if isinstance(current, (dict, list)) else None
+            )
+        if current_hash != expected_hash:
+            terminal_order = last_operation_order_by_path[path]
+            if any(
+                other_path.startswith(f"{path}.")
+                and other_order > terminal_order
+                for other_path, other_order in last_operation_order_by_path.items()
+            ):
+                # A later exact leaf operation legitimately changes its containing
+                # stage object. The leaf target is still checked independently
+                # below, so append-only repairs can supersede an earlier whole-
+                # stage policy snapshot without erasing either record.
+                continue
+            superseded_by_later_stage_ancestor = False
+            descendant_audit_index = last_audit_index_by_path[path]
+            for ancestor_path, (ancestor_kind, ancestor_hash) in (
+                last_hash_by_path.items()
+            ):
+                if (
+                    ancestor_kind != "canonical_json"
+                    or not path.startswith(f"{ancestor_path}.")
+                    or last_audit_index_by_path[ancestor_path]
+                    <= descendant_audit_index
+                    or last_audit_index_by_path[ancestor_path]
+                    not in policy_root_audit_indices
+                    or ancestor_path.rsplit(".", 1)[-1]
+                    not in {
+                        "blindTranslation",
+                        "independentCritique",
+                        "witnessResolution",
+                        "adjudication",
+                        "names",
+                    }
+                ):
+                    continue
+                try:
+                    ancestor_value = json_path_value(packet, ancestor_path)
+                except (KeyError, IndexError, TypeError, WorkflowError):
+                    continue
+                if (
+                    isinstance(ancestor_value, (dict, list))
+                    and content_sha256(ancestor_value) == ancestor_hash
+                ):
+                    superseded_by_later_stage_ancestor = True
+                    break
+            if superseded_by_later_stage_ancestor:
+                continue
+            errors.append(f"packet: post-run repair terminal target drifted: {path}")
+    return errors
+
+
+def validate_unresolved_editorial_supply_state(
+    unresolved: Any,
+    source_entry_number: Any,
+    active_editorial_supplies: dict[int, dict[str, Any]],
+    prefix: str,
+) -> list[str]:
+    """Reject a current damaged-heading state already resolved by active policy.
+
+    Historical critique findings and witness results remain valid evidence. This
+    check is limited to the mutable ``unresolved`` queue: once an integrity-bound
+    title decision implements a witness-bound subject-head supply, that queue may
+    no longer claim the same heading lacks an editorial-supply path.
+    """
+    if source_entry_number not in active_editorial_supplies or not isinstance(
+        unresolved, list
+    ):
+        return []
+    errors: list[str] = []
+    for index, finding in enumerate(unresolved, start=1):
+        if (
+            isinstance(finding, dict)
+            and finding.get("kind") == "damaged-subject-heading"
+        ):
+            errors.append(
+                f"{prefix}, unresolved item {index}: damaged-subject-heading state "
+                "contradicts the active witness-bound editorial supply"
+            )
     return errors
 
 
@@ -2120,8 +3743,14 @@ def validate_preceding_translation(
     source: dict[str, Any],
     current_policy_sha256: str,
     prefix: str,
+    repair_run_ids_by_stage: dict[str, tuple[str, ...]] | None = None,
+    target_repair_stages: set[str] | None = None,
+    formula_occurrences: list[dict[str, Any]] | None = None,
+    permitted_policy_repair_bindings: dict[str, tuple[str, str]] | None = None,
 ) -> list[str]:
     errors: list[str] = []
+    repair_run_ids_by_stage = repair_run_ids_by_stage or {}
+    target_repair_stages = target_repair_stages or set()
     blind = translation.get("blindTranslation", {})
     source_has_heading = bool(source.get("headingArabic"))
     source_has_body = bool(source.get("arabic"))
@@ -2150,6 +3779,7 @@ def validate_preceding_translation(
             blind.get("headingEnglish"),
             blind.get("english"),
             prefix,
+            allow_historical_candidate="blind_translation" in target_repair_stages,
         )
     )
 
@@ -2194,6 +3824,8 @@ def validate_preceding_translation(
             str(source.get("segmentId")),
             prefix,
             require_spans=True,
+            allow_historical_english="adjudication" in target_repair_stages,
+            formula_occurrences=formula_occurrences,
         )
     )
     unresolved = translation.get("unresolved")
@@ -2205,6 +3837,16 @@ def validate_preceding_translation(
     )
     if translation.get("humanReview", {}).get("status") != "unreviewed":
         errors.append(f"{prefix}: machine-ready work must remain human-unreviewed")
+    errors.extend(
+        validate_stage_chain(
+            translation,
+            source,
+            current_policy_sha256,
+            prefix,
+            repair_run_ids_by_stage,
+            permitted_policy_repair_bindings,
+        )
+    )
     return errors
 
 
@@ -2341,13 +3983,15 @@ def merge_entry_shard(packet_path: Path, shard_path: Path) -> int:
     packet = load_json(packet_path)
     shard = load_json(shard_path)
     errors: list[str] = []
-    if packet.get("postRunRepairAudit", {}).get("status") == "complete":
+    if packet.get("postRunRepairAudits"):
         errors.append(
             "packet: cannot merge a shard after post-run repairs; rebuild from the "
             "pre-repair packet"
         )
-    if packet.get("schemaVersion") != "1.3.0":
-        errors.append("packet: entry shards require packet schema 1.3.0")
+    if packet.get("schemaVersion") != PACKET_SCHEMA_VERSION:
+        errors.append(
+            f"packet: entry shards require packet schema {PACKET_SCHEMA_VERSION}"
+        )
     if shard.get("schemaVersion") != "1.0.0":
         errors.append("shard: schemaVersion must be 1.0.0")
     if shard.get("packetId") != packet.get("packetId"):
@@ -2415,6 +4059,14 @@ def merge_entry_shard(packet_path: Path, shard_path: Path) -> int:
                 require_spans=True,
             )
         )
+        errors.extend(
+            validate_stage_chain(
+                output,
+                target.get("source", {}),
+                policy_sha256,
+                prefix,
+            )
+        )
         pending_updates.append((target, output))
     if errors:
         raise WorkflowError("\n".join(errors))
@@ -2448,7 +4100,7 @@ def merge_preceding_shard(packet_path: Path, shard_path: Path) -> int:
     packet = load_json(packet_path)
     shard = load_json(shard_path)
     errors: list[str] = []
-    if packet.get("postRunRepairAudit", {}).get("status") == "complete":
+    if packet.get("postRunRepairAudits"):
         errors.append(
             "packet: cannot merge a shard after post-run repairs; rebuild from the "
             "pre-repair packet"
@@ -2468,9 +4120,13 @@ def merge_preceding_shard(packet_path: Path, shard_path: Path) -> int:
         "endUnit",
         "sourceUnits",
     }
-    if packet.get("schemaVersion") != "1.3.0" or shard.get("schemaVersion") != "1.1.0":
+    if (
+        packet.get("schemaVersion") != PACKET_SCHEMA_VERSION
+        or shard.get("schemaVersion") != "1.1.0"
+    ):
         errors.append(
-            "structural shard: packet must use schema 1.3.0 and shard schema 1.1.0"
+            "structural shard: packet must use schema "
+            f"{PACKET_SCHEMA_VERSION} and shard schema 1.1.0"
         )
     if shard.get("packetId") != packet.get("packetId"):
         errors.append("structural shard: packetId does not match the target packet")
@@ -2599,9 +4255,12 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
         f"packet schema: {error}"
         for error in validate_schema_instance(packet, packet_schema)
     )
-    errors.extend(validate_post_run_repair_audit(packet))
-    if packet.get("schemaVersion") != "1.3.0":
-        errors.append("packet: schemaVersion must be 1.3.0")
+    errors.extend(validate_post_run_repair_audits(packet))
+    repair_permissions = repair_rebinding_permissions(packet)
+    permitted_policy_repair_bindings = policy_repair_bindings(packet)
+    target_repairs = repaired_target_stages(packet)
+    if packet.get("schemaVersion") != PACKET_SCHEMA_VERSION:
+        errors.append(f"packet: schemaVersion must be {PACKET_SCHEMA_VERSION}")
     if packet.get("toolVersion") != TOOL_VERSION:
         errors.append(f"packet: toolVersion must be {TOOL_VERSION}")
     if packet.get("workId") != "ibn-hajar-al-isabah":
@@ -2625,6 +4284,14 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
     if ordinals != list(range(start, end + 1)):
         errors.append("packet: source units must exactly cover the assigned range in order")
     current_policy = policy_snapshot(DEFAULT_POLICY)
+    title_decisions = active_title_decisions(current_policy["contracts"])
+    active_editorial_supplies = {
+        number: decision
+        for number, decision in title_decisions.items()
+        if isinstance(decision.get("editorialSupply"), dict)
+        and decision["editorialSupply"].get("kind")
+        == "witness-bound-subject-head"
+    }
     if packet.get("policy", {}).get("bindingSha256") != current_policy["bindingSha256"]:
         errors.append("packet: policy binding is stale")
     authority = packet.get("authority", {})
@@ -2662,6 +4329,17 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
         "complete",
     }:
         errors.append("packet: formula inventory state is missing")
+    formula_occurrences_by_record: dict[str, list[dict[str, Any]]] = {}
+    if isinstance(inventory, dict) and inventory.get("status") == "complete":
+        occurrences = inventory.get("occurrences")
+        if isinstance(occurrences, list):
+            for occurrence in occurrences:
+                if isinstance(occurrence, dict) and isinstance(
+                    occurrence.get("recordId"), str
+                ):
+                    formula_occurrences_by_record.setdefault(
+                        occurrence["recordId"], []
+                    ).append(occurrence)
 
     for index, entry in enumerate(entries):
         if not isinstance(entry, dict):
@@ -2740,15 +4418,56 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
                     segment_prefix = (
                         f"{prefix}, preceding segment {segment_source.get('segmentId', '?')}"
                     )
+                    repair_key = (
+                        str(entry.get("sourceUnitId")),
+                        str(segment_source.get("segmentId")),
+                    )
                     errors.extend(
                         validate_preceding_translation(
                             translation,
                             segment_source,
                             current_policy["bindingSha256"],
                             segment_prefix,
+                            repair_permissions.get(repair_key),
+                            target_repairs.get(repair_key),
+                            formula_occurrences_by_record.get(
+                                str(segment_source.get("segmentId")), []
+                            ),
+                            permitted_policy_repair_bindings,
                         )
                     )
+        else:
+            for segment_source, translation in zip(preceding, translations):
+                if not isinstance(segment_source, dict) or not isinstance(
+                    translation, dict
+                ):
+                    continue
+                blind = translation.get("blindTranslation", {})
+                if (
+                    blind.get("status") == "complete"
+                    and blind.get("policySha256")
+                    != current_policy["bindingSha256"]
+                ):
+                    errors.append(
+                        f"{prefix}, preceding segment "
+                        f"{segment_source.get('segmentId', '?')}: "
+                        "blind translation used a stale policy"
+                    )
+        errors.extend(
+            validate_unresolved_editorial_supply_state(
+                entry.get("unresolved"),
+                entry.get("sourceEntryNumber"),
+                active_editorial_supplies,
+                prefix,
+            )
+        )
         if not machine_ready:
+            blind = entry.get("blindTranslation", {})
+            if (
+                blind.get("status") == "complete"
+                and blind.get("policySha256") != current_policy["bindingSha256"]
+            ):
+                errors.append(f"{prefix}: blind translation used a stale policy")
             continue
 
         blind = entry.get("blindTranslation", {})
@@ -2773,6 +4492,8 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
                 None,
                 blind.get("english"),
                 prefix,
+                allow_historical_candidate="blind_translation"
+                in target_repairs.get((str(entry.get("sourceUnitId")), None), set()),
             )
         )
 
@@ -2798,6 +4519,24 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
             )
         )
 
+        if manifest.get("status") != "test-fixture":
+            decision = title_decisions.get(entry.get("sourceEntryNumber"))
+            if decision is None:
+                errors.append(
+                    f"{prefix}: active profile lacks a governed title decision"
+                )
+            else:
+                try:
+                    governed_title_and_body(
+                        entry,
+                        decision,
+                        render_arabic=lambda value: present_openiti_arabic(
+                            value.strip()
+                        ),
+                    )
+                except (KeyError, TypeError, ValueError) as exc:
+                    errors.append(f"{prefix}: public title projection failed: {exc}")
+
         errors.extend(
             validate_names(
                 entry.get("names", {}),
@@ -2807,6 +4546,11 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
                 str(entry.get("sourceUnitId")),
                 prefix,
                 require_spans=True,
+                allow_historical_english="adjudication"
+                in target_repairs.get((str(entry.get("sourceUnitId")), None), set()),
+                formula_occurrences=formula_occurrences_by_record.get(
+                    str(entry.get("sourceUnitId")), []
+                ),
             )
         )
         unresolved = entry.get("unresolved")
@@ -2818,16 +4562,23 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
         )
         if entry.get("humanReview", {}).get("status") != "unreviewed":
             errors.append(f"{prefix}: machine-ready work must remain human-unreviewed")
+        errors.extend(
+            validate_stage_chain(
+                entry,
+                source,
+                current_policy["bindingSha256"],
+                prefix,
+                repair_permissions.get((str(entry.get("sourceUnitId")), None)),
+                permitted_policy_repair_bindings,
+            )
+        )
 
     if machine_ready:
+        _, slice_context_errors = resolved_packet_slice_context(packet)
+        errors.extend(slice_context_errors)
         candidate_ids: list[str] = []
         mention_ids: list[str] = []
-        entry_name_counts: list[int] = []
         for entry in entries:
-            entry_candidates = entry.get("names", {}).get("candidates", [])
-            entry_name_counts.append(
-                len(entry_candidates) if isinstance(entry_candidates, list) else 0
-            )
             owners = [entry, *entry.get("precedingTranslations", [])]
             for owner in owners:
                 names = owner.get("names", {})
@@ -2847,7 +4598,6 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
             errors.append("packet: name candidate IDs must be globally unique")
         if len(mention_ids) != len(set(mention_ids)):
             errors.append("packet: name mention IDs must be globally unique")
-        errors.extend(validate_name_inventory_distribution(entry_name_counts))
         expected_inventory, inventory_errors = formula_inventory(packet)
         errors.extend(inventory_errors)
         if packet.get("formulaInventory") != expected_inventory:
@@ -2862,6 +4612,20 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
             or not SHA256_RE.fullmatch(str(presentation.get("sha256", "")))
         ):
             errors.append("packet: review presentation is not ready")
+        else:
+            try:
+                expected_review_sha256 = bytes_sha256(
+                    render_review(packet).encode("utf-8")
+                )
+            except (KeyError, TypeError, ValueError, WorkflowError) as exc:
+                errors.append(
+                    f"packet: governed review presentation cannot render: {exc}"
+                )
+            else:
+                if presentation.get("sha256") != expected_review_sha256:
+                    errors.append(
+                        "packet: review presentation does not match governed titles"
+                    )
         readiness = packet.get("machineReadiness", {})
         if readiness.get("status") != "ready" or not readiness.get("validatedAt"):
             errors.append("packet: machine readiness is not finalized")
@@ -2872,6 +4636,18 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
 
 
 def render_review(packet: dict[str, Any]) -> str:
+    continued_contexts, context_errors = resolved_packet_slice_context(packet)
+    if context_errors:
+        raise WorkflowError("\n".join(context_errors))
+    policy = policy_snapshot(DEFAULT_POLICY)
+    title_decisions = active_title_decisions(policy["contracts"])
+    manifest_name = packet.get("authority", {}).get("manifestPath")
+    manifest = (
+        load_json((ROOT / manifest_name).resolve())
+        if isinstance(manifest_name, str) and manifest_name
+        else {}
+    )
+    governed_titles_required = manifest.get("status") != "test-fixture"
     authority = packet["authority"]
     source_url = (
         f"{authority['repository']}/blob/{authority['commit']}/{authority['path']}"
@@ -2911,6 +4687,37 @@ def render_review(packet: dict[str, Any]) -> str:
                 f"_(expanded Arabic: {expanded_arabic})_"
             )
         lines.append("")
+    if continued_contexts:
+        lines.extend(
+            [
+                "## Continued source hierarchy",
+                "",
+                (
+                    "> Continued context: these headings occurred before this "
+                    "packet slice and are restated here for orientation."
+                ),
+                "",
+            ]
+        )
+        for context in continued_contexts:
+            heading = context["heading"]
+            level = min(heading["level"] + 1, 6)
+            lines.extend(
+                [
+                    f"{'#' * level} Continued context · {heading['english']}",
+                    "",
+                    '<div dir="rtl" lang="ar">',
+                    "",
+                    f"**{heading['arabic']}**",
+                    "",
+                    "</div>",
+                    "",
+                    f"- Display context ID: `{context['displayContextId']}`",
+                    f"- Source occurrence ID: `{context['sourceOccurrenceId']}`",
+                    f"- Source occurrence SHA-256: `{context['sourceSha256']}`",
+                    "",
+                ]
+            )
     for entry in packet["entries"]:
         for segment, translation in zip(
             entry["source"]["precedingSegments"],
@@ -2950,20 +4757,57 @@ def render_review(packet: dict[str, Any]) -> str:
                     "",
                 ]
             )
+        if governed_titles_required:
+            decision = title_decisions.get(entry.get("sourceEntryNumber"))
+            if decision is None:
+                raise WorkflowError(
+                    f"source unit {entry.get('sourceOrdinal')}: active profile "
+                    "lacks a governed title decision"
+                )
+            try:
+                title, arabic_body, english_body = governed_title_and_body(
+                    entry,
+                    decision,
+                    render_arabic=lambda value: present_openiti_arabic(
+                        value.strip()
+                    ),
+                )
+            except (KeyError, TypeError, ValueError) as exc:
+                raise WorkflowError(
+                    f"source unit {entry.get('sourceOrdinal')}: governed title "
+                    f"projection failed: {exc}"
+                ) from exc
+        else:
+            title = {
+                "arabic": entry["source"]["headingArabic"],
+                "english": "Synthetic fixture entry",
+            }
+            arabic_body = present_openiti_arabic(entry["source"]["arabic"].strip())
+            english_body = entry["adjudication"]["english"].strip()
         lines.extend(
             [
                 f"## Source unit {entry['sourceOrdinal']} · "
                 f"printed entry {entry['sourceEntryNumber']}",
                 "",
-                "### English candidate",
-                "",
-                entry["adjudication"]["english"].strip(),
-                "",
-                "### Arabic authority",
+                "### Governed bilingual title",
                 "",
                 '<div dir="rtl" lang="ar">',
                 "",
-                present_openiti_arabic(entry["source"]["arabic"].strip()),
+                f"**{title['arabic']}**",
+                "",
+                "</div>",
+                "",
+                f"**{title['english']}**",
+                "",
+                "### English body candidate",
+                "",
+                english_body,
+                "",
+                "### Arabic authority body",
+                "",
+                '<div dir="rtl" lang="ar">',
+                "",
+                arabic_body,
                 "",
                 "</div>",
                 "",
@@ -3250,7 +5094,14 @@ def command_prepare(args: argparse.Namespace) -> int:
     issue = load_issue(args.issue, args.issue_json)
     claims = parse_claims(load_issues(args.issues_json))
     source = args.source or default_source_path(manifest)
-    packet = build_packet(issue, claims, source, args.manifest, args.policy)
+    packet = build_packet(
+        issue,
+        claims,
+        source,
+        args.manifest,
+        args.policy,
+        args.continued_context_source,
+    )
     output = args.output or RUNTIME_ROOT / "packets" / f"issue-{args.issue:04d}.json"
     atomic_write(output, json_bytes(packet))
     print(f"Prepared {output}")
@@ -3344,6 +5195,14 @@ def parser() -> argparse.ArgumentParser:
     prepare.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
     prepare.add_argument("--policy", type=Path, default=DEFAULT_POLICY)
     prepare.add_argument("--source", type=Path)
+    prepare.add_argument(
+        "--continued-context-source",
+        type=Path,
+        help=(
+            "validated prior public proposal ending immediately before a "
+            "non-root packet slice"
+        ),
+    )
     prepare.add_argument("--output", type=Path)
     prepare.set_defaults(func=command_prepare)
 

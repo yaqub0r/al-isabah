@@ -17,23 +17,56 @@ SPEC.loader.exec_module(AUDIT)
 
 class TranslationStageDepthAuditTests(unittest.TestCase):
     def test_packet_audit_counts_positive_stage_evidence(self):
+        def context(stage):
+            receipt_id = f"{stage}-receipt"
+            receipt_sha = stage * 64
+            return {
+                "independentContext": {
+                    "status": "complete",
+                    "freshContext": True,
+                    "priorStageContextExcluded": True,
+                    "receipt": {
+                        "receiptId": receipt_id,
+                        "receiptSha256": receipt_sha,
+                    },
+                },
+                "provenance": {
+                    "status": "complete",
+                    "evidence": [
+                        {
+                            "evidenceId": receipt_id,
+                            "role": "independent_context_receipt",
+                            "sha256": receipt_sha,
+                        }
+                    ],
+                },
+            }
+
         owner = {
+            "blindTranslation": {"provenance": {"status": "complete"}},
             "independentCritique": {
                 "status": "complete",
                 "findings": [{"kind": "source-reading"}],
                 "semanticAudit": {"status": "complete"},
+                **context("c"),
             },
-            "witnessResolution": {"status": "complete", "results": [{}, {}]},
+            "witnessResolution": {
+                "status": "complete",
+                "results": [{}, {}],
+                "provenance": {"status": "complete"},
+            },
             "adjudication": {
                 "status": "complete",
                 "english": "English",
                 "decisions": [{"kind": "source-reading"}],
+                "provenance": {"status": "complete"},
             },
             "names": {
                 "status": "complete",
                 "inventoryAudit": {"status": "complete"},
                 "candidates": [{}, {}],
                 "mentions": [{}, {}],
+                **context("n"),
             },
             "unresolved": [{}],
         }
@@ -60,8 +93,14 @@ class TranslationStageDepthAuditTests(unittest.TestCase):
         self.assertEqual(metrics["witnessResults"], 2)
         self.assertEqual(metrics["nameCandidates"], 2)
         self.assertEqual(metrics["biographiesWithMultipleNames"], 1)
-        self.assertEqual(metrics["semanticAuditComplete"], 1)
-        self.assertEqual(metrics["nameInventoryAuditComplete"], 1)
+        self.assertEqual(metrics["semanticAuditStatusComplete"], 1)
+        self.assertEqual(metrics["nameInventoryAuditStatusComplete"], 1)
+        self.assertEqual(metrics["contentAddressedStageChains"], 0)
+        self.assertEqual(
+            metrics["critiqueIndependentContextSelfAttestations"], 1
+        )
+        self.assertEqual(metrics["nameIndependentContextSelfAttestations"], 1)
+        self.assertIn("editable self-attestations", report["evidenceSemantics"])
 
     def test_empty_findings_remain_visible_in_aggregate(self):
         packet = {
@@ -83,7 +122,8 @@ class TranslationStageDepthAuditTests(unittest.TestCase):
             path.write_text(json.dumps(packet), encoding="utf-8")
             report = AUDIT.audit_packets([path])
         self.assertEqual(report["metrics"]["recordsWithoutFindings"], 1)
-        self.assertEqual(report["metrics"].get("semanticAuditComplete", 0), 0)
+        self.assertEqual(report["metrics"].get("semanticAuditStatusComplete", 0), 0)
+        self.assertEqual(report["metrics"].get("contentAddressedStageChains", 0), 0)
 
 
 if __name__ == "__main__":

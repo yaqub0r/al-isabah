@@ -81,10 +81,12 @@ contract](docs/contracts/entry-title-structure.md) defines a title as the
 shortest stable name or heading phrase identifying an entry's subject. Lineage,
 relationships, narration, and biographical prose remain in ordered body blocks;
 Arabic and English titles must cover the same semantic boundary. The versioned
-[title-decision profile](profiles/entry-title-decisions.v2.json) records
+[title-decision profile](profiles/entry-title-decisions.v3.json) records
 reviewed decisions for entries whose printed heading line does not provide that
-boundary reliably. Reader applications consume this structure and must not
-infer titles from typography or body length.
+boundary reliably. Its witness-bound editorial supplies preserve damaged source
+prefixes while displaying bracketed subject heads supported by same-work
+evidence. Reader applications consume this structure and must not infer titles
+from typography or body length.
 
 The [source compliance register](compliance/source-register.v1.json) applies
 the repository-local policy binding to the data currently available on the
@@ -128,13 +130,15 @@ integrity and retirement record is in `compliance/research-retirement.v1.json`.
 
 ## Public-working boundary
 
-Current public-working builds consume only the strict
-[`public-proposal.v1`](schemas/public-proposal.v1.schema.json) artifact and its
+Current public-working builds consume only strict
+[`public-proposal.v1`](schemas/public-proposal.v1.schema.json) artifacts and their
 exact release closure. Internal translation-work packets and detailed review
-evidence are not public build inputs. The issue #35 forward remediation preserves
-the same 1,537 reader-facing Arabic/English records while excluding internal,
-reconstructive, restricted-reference, and operational material from the current
-tree. Canonical promotion remains blocked.
+evidence are not public build inputs. The cumulative closure admits the 1,537
+Volume 1 records and the corrected 1,497-record Volume 2 proposal while excluding
+internal, reconstructive, restricted-reference, and operational material from
+the current tree. All Volume 2 records remain human-unreviewed, 66 unresolved
+items remain visible at public-safe granularity, and canonical promotion remains
+blocked.
 
 Automated publication is intentionally paused. See the
 [public-boundary remediation record](docs/architecture/public-boundary-remediation.md)

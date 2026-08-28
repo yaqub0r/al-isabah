@@ -17,7 +17,6 @@ from public_boundary import boundary_errors, canonical_json, sha256_bytes, sha25
 from validate_current_release_closure import (
     CURRENT_CLOSURE,
     output_review_path,
-    proposal_paths,
     public_review_path,
     validate as validate_closure,
 )
@@ -50,11 +49,16 @@ def build(output: Path, repository_commit: str, generated_at: str) -> dict[str, 
     closure_errors = validate_closure(CURRENT_CLOSURE)
     if closure_errors:
         raise DistributionError(summarize(closure_errors))
-    proposals = [
-        (path, json.loads(path.read_text(encoding="utf-8")))
-        for path in proposal_paths()
-    ]
+    if output.exists() and any(path.is_file() for path in output.rglob("*")):
+        raise DistributionError("output directory must be empty")
     closure = json.loads(CURRENT_CLOSURE.read_text(encoding="utf-8"))
+    proposals = [
+        (
+            ROOT / item["publicProposal"]["path"],
+            json.loads((ROOT / item["publicProposal"]["path"]).read_text(encoding="utf-8")),
+        )
+        for item in closure["proposals"]
+    ]
     inventory = {item["path"]: item for item in closure["outputInventory"]}
     output.mkdir(parents=True, exist_ok=True)
     records_dir = output / "records"
@@ -161,10 +165,23 @@ def build(output: Path, repository_commit: str, generated_at: str) -> dict[str, 
     if errors:
         raise DistributionError(summarize(errors))
     (output / "manifest.json").write_bytes(canonical_json(manifest))
+    expected_paths = set(inventory) | {"manifest.json", "release-closure.json"}
+    actual_paths = {
+        path.relative_to(output).as_posix()
+        for path in output.rglob("*")
+        if path.is_file()
+    }
+    if actual_paths != expected_paths:
+        raise DistributionError("release closure rejected the output inventory")
     return manifest
 
 
 def package(output: Path, archive: Path) -> None:
+    from validate_public_distribution import validate as validate_distribution
+
+    errors = validate_distribution(output)
+    if errors:
+        raise DistributionError(summarize(errors))
     archive.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as bundle:
         for path in sorted(output.rglob("*")):

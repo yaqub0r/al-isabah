@@ -1,6 +1,7 @@
 import copy
 import importlib.util
 import json
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -42,6 +43,11 @@ GENERATED_AT = "2026-08-14T16:22:30Z"
 PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0026.public-proposal.json"
 VOLUME2_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0053.public-proposal.json"
 VOLUME2_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0053.public-review.json"
+ISSUE_0070_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0070.public-proposal.json"
+ISSUE_0070_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0070.public-review.json"
+ISSUE_0070_RUNTIME_PACKET = (
+    ROOT / ".runtime" / "translation" / "packets" / "issue-0070-lineage.json"
+)
 EXPECTED_USER_FACING_SHA256 = "702a3af5543f3c8d83aa45559f62a132300cd6dabe7a3b3428940b73d8493047"
 VOLUME2_USER_FACING_SHA256 = "60137418e7c1dbd3c9a1020bc290dcb1d8ec539d24fb58fbbc2793332b32b782"
 
@@ -51,13 +57,31 @@ class PublicDistributionTests(unittest.TestCase):
     def setUpClass(cls):
         cls.proposal = json.loads(PROPOSAL_PATH.read_text(encoding="utf-8"))
         cls.volume2_proposal = json.loads(VOLUME2_PROPOSAL_PATH.read_text(encoding="utf-8"))
+        cls.issue_0070_proposal = json.loads(
+            ISSUE_0070_PROPOSAL_PATH.read_text(encoding="utf-8")
+        )
 
     def test_current_tree_and_exact_closure_are_valid(self):
+        self.assertEqual(PROPOSAL_VALIDATOR.DEFAULT_PROPOSAL, ISSUE_0070_PROPOSAL_PATH)
         self.assertEqual(PROPOSAL_VALIDATOR.validate(), [])
         self.assertEqual(CLOSURE.validate(), [])
         self.assertEqual(CURRENT_CLOSURE.validate(), [])
         self.assertEqual(TREE.validate(), [])
         self.assertEqual(REVIEW.canonical_json(REVIEW.review()), (ROOT / "content" / "public-proposals" / "issue-0026.public-review.json").read_bytes())
+
+    def test_bare_public_proposal_cli_validates_the_current_issue_70_artifact(self):
+        result = subprocess.run(
+            [sys.executable, str(ROOT / "scripts" / "validate_public_proposal.py")],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn(
+            "proposal-sha256=9f1be4e740ea501fa1055e4298aab2add915342575723e377541da81cf762b11",
+            result.stdout,
+        )
 
     def test_exact_1537_record_user_facing_parity_and_stable_order(self):
         records = self.proposal["records"]
@@ -68,7 +92,7 @@ class PublicDistributionTests(unittest.TestCase):
         self.assertTrue(all(record["schemaVersion"] == "2.0.0" for record in records))
         self.assertTrue(all(record["arabic"].strip() and record["english"].strip() for record in records))
 
-    def test_volume2_packet_set_projection_is_strict_and_agent_complete(self):
+    def test_historical_volume2_packet_set_projection_remains_strict(self):
         proposal = self.volume2_proposal
         records = proposal["records"]
         self.assertEqual(PROPOSAL_VALIDATOR.validate(VOLUME2_PROPOSAL_PATH), [])
@@ -96,6 +120,343 @@ class PublicDistributionTests(unittest.TestCase):
         self.assertTrue(all(record["humanReview"] == "unreviewed" for record in records))
         self.assertTrue(all(record["arabic"].strip() and record["english"].strip() for record in records))
         self.assertEqual(BOUNDARY.boundary_errors(proposal), [])
+
+    def test_historical_volume2_policy_binding_is_exact_and_fail_closed(self):
+        proposal = copy.deepcopy(self.volume2_proposal)
+        self.assertEqual(
+            proposal["policy"]["bindingSha256"],
+            PROPOSAL_VALIDATOR.HISTORICAL_POLICY_BINDINGS[
+                ("1.1.0", "issue-0053-public-proposal-v1")
+            ],
+        )
+        proposal["policy"]["bindingSha256"] = "0" * 64
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "historical.public-proposal.json"
+            path.write_bytes(BOUNDARY.canonical_json(proposal))
+            errors = PROPOSAL_VALIDATOR.validate(path)
+        self.assertTrue(any("category=policy-mismatch" in error for error in errors))
+
+    def test_issue_70_corrected_proposal_is_strict_public_safe_and_current(self):
+        proposal = self.issue_0070_proposal
+        records = proposal["records"]
+        self.assertEqual(PROPOSAL_VALIDATOR.validate(ISSUE_0070_PROPOSAL_PATH), [])
+        self.assertEqual(
+            REVIEW.canonical_json(REVIEW.review(ISSUE_0070_PROPOSAL_PATH)),
+            ISSUE_0070_REVIEW_PATH.read_bytes(),
+        )
+        self.assertEqual(proposal["schemaVersion"], "1.2.0")
+        self.assertEqual(len(records), 1497)
+        self.assertEqual(proposal["review"], {
+            "humanReviewed": 0,
+            "humanUnreviewed": 1497,
+            "machinePassed": 1435,
+            "needsAttention": 62,
+        })
+        self.assertTrue(all(record["humanReview"] == "unreviewed" for record in records))
+        unresolved = [item for record in records for item in record["unresolved"]]
+        self.assertEqual(len(unresolved), 66)
+        self.assertEqual(
+            sum(bool(record["unresolved"]) for record in records),
+            62,
+        )
+        self.assertTrue(all(set(item) == {"category", "priority"} for item in unresolved))
+        self.assertEqual(BOUNDARY.boundary_errors(proposal), [])
+
+        register = json.loads(
+            (ROOT / "compliance" / "source-register.v1.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        artifact = next(
+            item
+            for item in register["artifacts"]
+            if item["id"] == "issue-0070-public-proposal-v1"
+        )
+        self.assertEqual(
+            artifact["review_status"],
+            CURRENT_CLOSURE.CURRENT_DISTRIBUTION_REVIEW_STATUS,
+        )
+        self.assertEqual(
+            artifact["integrity"]["submitted_packet_sha256"],
+            "5be390962508d54bb2ed0c82310bba6e17bfd1cc6d771e89ed91e592b89bf7d6",
+        )
+        self.assertEqual(
+            artifact["integrity"]["submitted_review_sha256"],
+            "a2aa7554db7f71a32010e6a7c9d166ff15648443e777b97245e8afb27432afbc",
+        )
+
+    def test_current_closure_admits_corrected_volume2_and_quarantines_history(self):
+        paths, errors = CURRENT_CLOSURE.current_proposal_paths()
+        self.assertEqual(errors, [])
+        self.assertEqual(paths, [PROPOSAL_PATH, ISSUE_0070_PROPOSAL_PATH])
+        closure = json.loads(
+            CURRENT_CLOSURE.CURRENT_CLOSURE.read_text(encoding="utf-8")
+        )
+        self.assertEqual(
+            [item["proposalId"] for item in closure["proposals"]],
+            ["issue-0026-public-proposal-v1", "issue-0070-public-proposal-v1"],
+        )
+        self.assertEqual(
+            closure["historicalClosure"]["path"],
+            "compliance/publication/issue-0053.release-closure.v1.json",
+        )
+        self.assertEqual(
+            closure["translationCoverage"]["path"],
+            "compliance/translation-coverage.v1.json",
+        )
+        register = json.loads(
+            (ROOT / "compliance" / "source-register.v1.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        volume_two = next(
+            item
+            for item in register["artifacts"]
+            if item["id"] == "issue-0053-public-proposal-v1"
+        )
+        self.assertEqual(
+            volume_two["review_status"],
+            "historical-reopened-scope-current-distribution-quarantined",
+        )
+        corrected_volume_two = next(
+            item
+            for item in register["artifacts"]
+            if item["id"] == "issue-0070-public-proposal-v1"
+        )
+        self.assertEqual(
+            corrected_volume_two["review_status"],
+            CURRENT_CLOSURE.CURRENT_DISTRIBUTION_REVIEW_STATUS,
+        )
+
+    def test_legacy_volume2_proposal_is_not_current_title_ready(self):
+        errors = PROPOSAL_VALIDATOR.validate(
+            VOLUME2_PROPOSAL_PATH,
+            require_current=True,
+        )
+        self.assertTrue(
+            any("category=historical-proposal-not-current" in error for error in errors),
+            errors,
+        )
+
+    def test_volume2_first_title_requires_an_exact_bilingual_boundary_decision(self):
+        record = self.volume2_proposal["records"][0]
+        self.assertEqual(record["sourceOrdinal"], 1538)
+        self.assertEqual(
+            record["title"],
+            {
+                "arabic": "حازم غير منسوب روى عبدان ومن طريقه أبو موسى من رواية محمد السعدي",
+                "english": "Ḥāzim",
+                "method": "primary-name-candidate",
+                "state": "ready",
+            },
+        )
+        entry = {
+            "sourceOrdinal": 1538,
+            "source": {
+                "headingArabic": record["title"]["arabic"],
+                "arabic": record["arabic"],
+            },
+            "adjudication": {"english": record["english"]},
+            "unresolved": [],
+        }
+        decision = {
+            "title": {"ar": "حازم", "en": "Ḥāzim"},
+            "bodyOpening": {
+                "ar": "غير منسوب",
+                "en": "without a lineage attribution",
+            },
+        }
+        title, arabic, english = PACKET_PROJECT.title_and_body(entry, decision)
+        self.assertEqual(title["arabic"], "حازم")
+        self.assertEqual(title["english"], "Ḥāzim")
+        self.assertEqual(title["method"], "profile-decision")
+        self.assertTrue(arabic.startswith("غير منسوب"))
+        self.assertTrue(english.startswith("without a lineage attribution"))
+
+    def test_witness_bound_supply_displays_brackets_and_removes_only_source_prefix(self):
+        profile = PACKET_PROJECT.load_title_profile(PACKET_PROJECT.ENTRY_TITLE_PROFILE)
+        decision = PACKET_PROJECT.decision_index(profile)[2784]
+        entry = {
+            "sourceOrdinal": 2784,
+            "source": {
+                "headingArabic": "بن بدر بن امرئ القيس بن خلف",
+                "arabic": "بن بدر بن امرئ القيس بن خلف خبر",
+            },
+            "adjudication": {
+                "english": "Ibn Badr ibn Imriʾ al-Qays ibn Khalaf. Report."
+            },
+            "unresolved": [],
+        }
+        title, arabic, english = PACKET_PROJECT.title_and_body(entry, decision)
+        self.assertEqual(title["arabic"], "[الزبرقان] بن بدر")
+        self.assertEqual(title["english"], "[Al-Zibriqān] ibn Badr")
+        self.assertEqual(arabic, "بن امرئ القيس بن خلف خبر")
+        self.assertEqual(english, "ibn Imriʾ al-Qays ibn Khalaf. Report.")
+
+    def test_witness_bound_supply_rejects_drifted_packet_prefix(self):
+        profile = PACKET_PROJECT.load_title_profile(PACKET_PROJECT.ENTRY_TITLE_PROFILE)
+        decision = PACKET_PROJECT.decision_index(profile)[2880]
+        entry = {
+            "sourceOrdinal": 2880,
+            "source": {
+                "headingArabic": "زيد بن أبي أوفى بن خالد بن الحارث",
+                "arabic": "زيد بن أبي أوفى بن خالد بن الحارث خبر",
+            },
+            "adjudication": {
+                "english": "Zayd ibn Abī Awfā ibn Khālid ibn al-Ḥārith. Report."
+            },
+            "unresolved": [],
+        }
+        with self.assertRaisesRegex(ValueError, "pinned Arabic source prefix"):
+            PACKET_PROJECT.title_and_body(entry, decision)
+
+    @unittest.skipUnless(
+        ISSUE_0070_RUNTIME_PACKET.is_file(),
+        "ignored issue-70 recovery packet is available only in the review workspace",
+    )
+    def test_issue_70_all_1497_records_and_runtime_review_use_governed_titles(self):
+        packet = json.loads(ISSUE_0070_RUNTIME_PACKET.read_text(encoding="utf-8"))
+        unit_2792 = packet["entries"][2792 - 1538]
+        english_2792 = unit_2792["adjudication"]["english"]
+        if "Ibn Mandahh transmitted" in english_2792:
+            self.assertEqual(english_2792.count("Ibn Mandahh transmitted"), 1)
+            english_2792 = english_2792.replace(
+                "Ibn Mandahh transmitted",
+                "Ibn Mandah transmitted",
+                1,
+            )
+            unit_2792["adjudication"]["english"] = english_2792
+        self.assertNotIn("Ibn Mandahh transmitted", english_2792)
+        self.assertEqual(english_2792.count("Ibn Mandah transmitted"), 1)
+        profile = PACKET_PROJECT.load_title_profile(
+            PACKET_PROJECT.ENTRY_TITLE_PROFILE
+        )
+        decisions = PACKET_PROJECT.decision_index(profile)
+        formulas = {}
+        for occurrence in packet["formulaInventory"]["occurrences"]:
+            formulas.setdefault(occurrence["recordId"], []).append(occurrence)
+        records = [
+            PACKET_PROJECT.public_record(
+                packet,
+                entry,
+                formulas.get(entry["sourceUnitId"], []),
+                decisions[entry["sourceEntryNumber"]],
+            )
+            for entry in packet["entries"]
+        ]
+        self.assertEqual(len(records), 1497)
+        self.assertEqual(
+            [record["sourceOrdinal"] for record in records],
+            list(range(1538, 3035)),
+        )
+        supplied = {record["sourceOrdinal"]: record for record in records}
+        self.assertEqual(
+            supplied[2784]["title"]["english"], "[Al-Zibriqān] ibn Badr"
+        )
+        self.assertEqual(supplied[2784]["title"]["arabic"], "[الزبرقان] بن بدر")
+        self.assertEqual(
+            supplied[2880]["title"]["english"], "[Zayd] ibn Abī Awfā"
+        )
+        self.assertEqual(supplied[2880]["title"]["arabic"], "[زيد] بن أبي أوفى")
+
+        review = PACKET_PROJECT.workflow.render_review(packet)
+        self.assertEqual(review.count("### Governed bilingual title"), 1497)
+        self.assertIn("**[Al-Zibriqān] ibn Badr**", review)
+        self.assertIn("**[الزبرقان] بن بدر**", review)
+        self.assertIn("**[Zayd] ibn Abī Awfā**", review)
+        self.assertIn("**[زيد] بن أبي أوفى**", review)
+
+    def test_current_title_binding_requires_exact_hash_and_unique_coverage(self):
+        profile = PACKET_PROJECT.load_title_profile(PACKET_PROJECT.ENTRY_TITLE_PROFILE)
+        decision = next(
+            item
+            for item in profile["decisions"]
+            if item["sourceEntryNumber"] == 11426
+        )
+        proposal = {
+            "entryTitleDecisions": {
+                "profileId": "entry-title-decisions.v3",
+                "profileSha256": BOUNDARY.sha256_file(PACKET_PROJECT.ENTRY_TITLE_PROFILE),
+                "coveredRecordCount": 1,
+            },
+            "records": [
+                {
+                    "printedEntryNumber": 11426,
+                    "title": {
+                        "arabic": decision["title"]["ar"],
+                        "english": decision["title"]["en"],
+                        "method": "profile-decision",
+                    },
+                    "arabic": decision["bodyOpening"]["ar"] + " synthetic",
+                    "english": decision["bodyOpening"]["en"] + " synthetic",
+                }
+            ],
+        }
+        self.assertEqual(PROPOSAL_VALIDATOR._title_decision_errors(proposal), [])
+        mismatched = copy.deepcopy(proposal)
+        mismatched["records"][0]["title"]["arabic"] += " synthetic continuation"
+        mismatched["records"][0]["english"] = "synthetic omitted body opening"
+        errors = PROPOSAL_VALIDATOR._title_decision_errors(mismatched)
+        self.assertTrue(any("category=title-decision-mismatch" in error for error in errors), errors)
+        self.assertTrue(any("category=title-body-opening-mismatch" in error for error in errors), errors)
+        proposal["entryTitleDecisions"]["profileSha256"] = "0" * 64
+        errors = PROPOSAL_VALIDATOR._title_decision_errors(proposal)
+        self.assertTrue(any("category=title-profile-mismatch" in error for error in errors), errors)
+        proposal["entryTitleDecisions"]["profileSha256"] = BOUNDARY.sha256_file(
+            PACKET_PROJECT.ENTRY_TITLE_PROFILE
+        )
+        proposal["entryTitleDecisions"]["coveredRecordCount"] = 2
+        proposal["records"].append(copy.deepcopy(proposal["records"][0]))
+        errors = PROPOSAL_VALIDATOR._title_decision_errors(proposal)
+        self.assertTrue(
+            any("category=ambiguous-title-decision-key" in error for error in errors),
+            errors,
+        )
+
+    def test_volume2_slice_requires_distinct_continued_heading_context(self):
+        first = self.volume2_proposal["records"][0]
+        self.assertEqual(first["sourceOrdinal"], 1538)
+        self.assertEqual(first["precedingMaterial"], [])
+        errors = PROPOSAL_VALIDATOR._slice_context_errors(self.volume2_proposal)
+        self.assertTrue(
+            any("category=missing-inherited-slice-context" in error for error in errors),
+            errors,
+        )
+        binding, contexts = PACKET_PROJECT.slice_context(
+            1538,
+            self.volume2_proposal["sourceAuthority"],
+            PROPOSAL_PATH,
+        )
+        self.assertEqual(binding["state"], "continued")
+        self.assertEqual(len(binding["contexts"]), 4)
+        self.assertEqual(
+            binding["contexts"][-1],
+            {
+                "sourceOccurrenceId": "openiti-5835c183-before-unit-001536-segment-001",
+                "displayContextId": (
+                    "continued-before-unit-001538-from-"
+                    "openiti-5835c183-before-unit-001536-segment-001"
+                ),
+            },
+        )
+        self.assertEqual(len(contexts), 4)
+        self.assertTrue(
+            all(item["kind"] == "continued_structural_heading" for item in contexts)
+        )
+        self.assertEqual(
+            contexts[-1]["heading"],
+            {
+                "arabic": "ذكر بقية حرف الحاء بعدها الألف",
+                "english": "Remaining Names under the Letter Ḥāʾ Followed by Alif",
+                "level": 4,
+            },
+        )
+        self.assertTrue(
+            all(
+                display["id"] != source["sourceOccurrenceId"]
+                for display, source in zip(contexts, binding["contexts"], strict=True)
+            )
+        )
 
     def test_packet_projection_preserves_collective_entity_type(self):
         projected = PACKET_PROJECT.public_name(
@@ -138,9 +499,23 @@ class PublicDistributionTests(unittest.TestCase):
                         "records/volume-02.jsonl",
                         "release-closure.json",
                         "reviews/issue-0026.json",
-                        "reviews/issue-0053.json",
+                        "reviews/issue-0070.json",
                     ],
                 )
+
+    def test_build_rejects_a_stale_quarantined_output(self):
+        with tempfile.TemporaryDirectory() as temp:
+            output = Path(temp) / "distribution"
+            stale = output / "records" / "volume-02.jsonl"
+            stale.parent.mkdir(parents=True)
+            stale.write_text("synthetic historical record\n", encoding="utf-8")
+            with self.assertRaisesRegex(
+                BUILD.DistributionError,
+                "output directory must be empty",
+            ):
+                BUILD.build(output, COMMIT, GENERATED_AT)
+            with self.assertRaises(BUILD.DistributionError):
+                BUILD.package(output, Path(temp) / "stale.zip")
 
     def test_all_synthetic_negative_fixture_categories_are_covered(self):
         fixture = json.loads((ROOT / "tests" / "fixtures" / "public-boundary-negative.v1.json").read_text(encoding="utf-8"))

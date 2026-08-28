@@ -12,16 +12,30 @@ locations, source coordinates, credentials, and unknown fields.
 `issue-0026.public-review.json`. Both are bound by the exact closure manifest in
 `compliance/publication/issue-0026.release-closure.v1.json`.
 
-`issue-0053.public-proposal.json` is the v1.1 strict projection for the 1,497
-machine-ready Volume 2 records. Its aggregate packet-set and review-set hashes
-bind the public projection to evidence that never entered Git; its deterministic
-public review is `issue-0053.public-review.json`. Human review remains
-`unreviewed` and independently ongoing for every record.
+`issue-0053.public-proposal.json` and `issue-0053.public-review.json` are
+immutable historical projections for the 1,497 Volume 2 records. Issue #70
+reopened and blocked that scope after its prior machine-readiness and
+agent-completion evidence was discredited. The artifacts remain inspectable,
+but they are quarantined from every current closure and distribution.
 
-The cumulative distribution closure is
-`compliance/publication/issue-0053.release-closure.v1.json`. It binds both
-approved proposals and reviews, Volume 1 and Volume 2 record shards, the current
-source register, and the preserved historical issue-0026 closure.
+`issue-0070.public-proposal.json` and `issue-0070.public-review.json` are the
+corrected deterministic projection of the recovered, machine-ready Volume 2
+lineage. They expose 66 unresolved items across 62 records only as public-safe
+category and priority pairs, and all 1,497 records remain human-unreviewed. The
+private packet and review presentation were submitted immutably to the approved
+access-controlled evidence destination and are bound here by hash without
+exposing that private location. Volume 2 is therefore agent-complete and
+admitted to the current public-working distribution. It remains human-unreviewed
+and must not be described as human-approved, canonically promoted,
+publication-eligible, or released.
+
+`compliance/publication/issue-0053.release-closure.v1.json` remains the exact
+historical cumulative closure. The current distribution closure is
+`compliance/publication/issue-0070.release-closure.v1.json`; it binds the
+governed translation-coverage state and includes only the current-ready Volume
+1 and corrected Volume 2 proposals and reviews. The superseded Issue #53
+proposal remains historical and excluded. Volume 8 remains unchanged and
+blocked from public working distribution pending its current-policy audit.
 
 These artifacts are approved only for `public-working` distribution. Canonical
 promotion remains blocked and requires its own human scholarly and compliance

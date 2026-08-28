@@ -7,6 +7,7 @@ from contextlib import redirect_stdout
 from io import StringIO
 from pathlib import Path
 from types import SimpleNamespace
+from unittest import mock
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,6 +20,9 @@ SPEC.loader.exec_module(MODULE)
 
 FIXTURE_SOURCE = ROOT / "tests" / "fixtures" / "openiti-mini.mARkdown"
 FIXTURE_MANIFEST = ROOT / "tests" / "fixtures" / "translation-source.mini.json"
+ISSUE_0026_PROPOSAL = (
+    ROOT / "content" / "public-proposals" / "issue-0026.public-proposal.json"
+)
 
 
 def assignment_issue(number=25, start=1, end=2):
@@ -41,6 +45,8 @@ def assignment_issue(number=25, start=1, end=2):
 
 
 def complete_autonomous_stages(packet):
+    policy_sha256 = packet["policy"]["bindingSha256"]
+
     def translated(label, source_text):
         targets = [
             occurrence["rule"]["target"]
@@ -77,6 +83,148 @@ def complete_autonomous_stages(packet):
             ),
             "assessment": "Every personal reference in the fixture was reconciled.",
         }
+
+    def independent_context(
+        stage, source, upstream, model, reasoning, evidence, receipt
+    ):
+        input_sha256 = MODULE.stage_input_sha256(
+            stage,
+            MODULE.semantic_source_sha256(source),
+            MODULE.stage_upstream_sha256(upstream),
+            policy_sha256,
+            MODULE.packet_schema_sha256(),
+            model,
+            reasoning,
+            MODULE.stage_evidence_sha256(evidence),
+        )
+        return {
+            "status": "complete",
+            "method": "fresh isolated synthetic test execution",
+            "freshContext": True,
+            "priorStageContextExcluded": True,
+            "inputSha256": input_sha256,
+            "receipt": receipt,
+        }
+
+    def finish_stage_chain(owner, source, token):
+        blind = owner["blindTranslation"]
+        blind["provenance"] = MODULE.completed_stage_provenance(
+            blind,
+            "blind_translation",
+            source,
+            [],
+            policy_sha256,
+            blind["model"],
+            blind["reasoning"],
+            [],
+        )
+
+        critique = owner["independentCritique"]
+        critique_receipt = {
+            "receiptId": f"critique-context-{token}",
+            "issuer": "synthetic-test-execution-harness",
+            "receiptSha256": MODULE.text_sha256(f"critique receipt {token}"),
+        }
+        critique_evidence = [
+            {
+                "evidenceId": critique_receipt["receiptId"],
+                "role": "independent_context_receipt",
+                "sha256": critique_receipt["receiptSha256"],
+            }
+        ]
+        critique_reasoning = "high"
+        critique["independentContext"] = independent_context(
+            "independent_critique",
+            source,
+            [("blind_translation", blind)],
+            critique["model"],
+            critique_reasoning,
+            critique_evidence,
+            critique_receipt,
+        )
+        critique["provenance"] = MODULE.completed_stage_provenance(
+            critique,
+            "independent_critique",
+            source,
+            [("blind_translation", blind)],
+            policy_sha256,
+            critique["model"],
+            critique_reasoning,
+            critique_evidence,
+        )
+
+        witness = owner["witnessResolution"]
+        witness_evidence = [
+            {
+                "evidenceId": f"witness-result-{token}-{index}",
+                "role": "witness_result",
+                "sha256": result["evidenceSha256"],
+            }
+            for index, result in enumerate(witness["results"], start=1)
+        ]
+        witness["provenance"] = MODULE.completed_stage_provenance(
+            witness,
+            "witness_resolution",
+            source,
+            [("independent_critique", critique)],
+            policy_sha256,
+            "deterministic-witness-gate",
+            "source-bound",
+            witness_evidence,
+            run_id=f"witness-{token}",
+        )
+
+        adjudication = owner["adjudication"]
+        adjudication["provenance"] = MODULE.completed_stage_provenance(
+            adjudication,
+            "adjudication",
+            source,
+            [
+                ("blind_translation", blind),
+                ("independent_critique", critique),
+                ("witness_resolution", witness),
+            ],
+            policy_sha256,
+            "codex-adjudication",
+            "high",
+            [],
+            run_id=f"adjudication-{token}",
+        )
+
+        names = owner["names"]
+        name_receipt = {
+            "receiptId": f"name-context-{token}",
+            "issuer": "synthetic-test-execution-harness",
+            "receiptSha256": MODULE.text_sha256(f"name receipt {token}"),
+        }
+        name_evidence = [
+            {
+                "evidenceId": name_receipt["receiptId"],
+                "role": "independent_context_receipt",
+                "sha256": name_receipt["receiptSha256"],
+            }
+        ]
+        name_model = "codex-independent-name-pass"
+        name_reasoning = "high"
+        names["independentContext"] = independent_context(
+            "name_inventory",
+            source,
+            [("adjudication", adjudication)],
+            name_model,
+            name_reasoning,
+            name_evidence,
+            name_receipt,
+        )
+        names["provenance"] = MODULE.completed_stage_provenance(
+            names,
+            "name_inventory",
+            source,
+            [("adjudication", adjudication)],
+            policy_sha256,
+            name_model,
+            name_reasoning,
+            name_evidence,
+        )
 
     for entry in packet["entries"]:
         number = entry["sourceOrdinal"]
@@ -143,6 +291,7 @@ def complete_autonomous_stages(packet):
                 ),
             }
             translation["unresolved"] = []
+            finish_stage_chain(translation, source, f"structure-{number}-{index}")
         entry["blindTranslation"].update(
             {
                 "status": "complete",
@@ -214,9 +363,24 @@ def complete_autonomous_stages(packet):
             ),
         }
         entry["unresolved"] = []
+        finish_stage_chain(entry, entry["source"], f"entry-{number}")
 
 
 class TranslationWorkflowTests(unittest.TestCase):
+    def test_private_data_scan_accepts_escaped_newline_after_prose_colon(self):
+        value = {
+            "decision": "Verses by Haritha:\\n\\nThe first translated line."
+        }
+
+        self.assertEqual(MODULE.private_data_errors(value), [])
+
+    def test_private_data_scan_rejects_windows_absolute_path(self):
+        value = {"decision": r"Evidence cached at C:\Users\editor\scan.pdf"}
+
+        errors = MODULE.private_data_errors(value)
+
+        self.assertTrue(any("local absolute path" in error for error in errors))
+
     def packet(self):
         issue = assignment_issue()
         claims = MODULE.parse_claims([issue])
@@ -319,7 +483,17 @@ class TranslationWorkflowTests(unittest.TestCase):
     def test_packet_explicitly_excludes_container_metadata(self):
         packet = self.packet()
         exclusions = packet["scope"]["excludedRanges"]
-        self.assertEqual(packet["schemaVersion"], "1.3.0")
+        self.assertEqual(packet["schemaVersion"], "1.5.0")
+        self.assertEqual(
+            packet["sliceContext"],
+            {
+                "state": "root",
+                "beforeSourceOrdinal": 1,
+                "sourceProposalId": None,
+                "sourceProposalSha256": None,
+                "contexts": [],
+            },
+        )
         self.assertEqual(exclusions[0]["kind"], "openiti_metadata")
         self.assertEqual(exclusions[0]["lineStart"], 1)
         self.assertEqual(exclusions[0]["lineEnd"], 4)
@@ -332,6 +506,105 @@ class TranslationWorkflowTests(unittest.TestCase):
         self.assertEqual(
             packet["scope"]["precedingMaterialOwnership"],
             "following_source_unit",
+        )
+
+    def test_nonroot_packet_requires_explicit_reviewable_context_source(self):
+        issue = assignment_issue(start=2, end=2)
+        with self.assertRaisesRegex(
+            MODULE.WorkflowError,
+            "explicit prior public proposal",
+        ):
+            MODULE.build_packet(
+                issue,
+                MODULE.parse_claims([issue]),
+                FIXTURE_SOURCE,
+                FIXTURE_MANIFEST,
+                MODULE.DEFAULT_POLICY,
+            )
+
+    def test_volume2_context_is_source_bound_distinct_and_rendered_first(self):
+        proposal = MODULE.load_json(ISSUE_0026_PROPOSAL)
+        source_authority = proposal["sourceAuthority"]
+        authority = {
+            "commit": source_authority["commit"],
+            "sha256": source_authority["sha256"],
+        }
+        binding, contexts = MODULE.slice_context(
+            1538,
+            authority,
+            ISSUE_0026_PROPOSAL,
+        )
+        self.assertEqual(binding["state"], "continued")
+        self.assertEqual(binding["sourceProposalId"], "issue-0026-public-proposal-v1")
+        self.assertEqual(len(contexts), 4)
+        self.assertEqual(
+            binding["contexts"][-1],
+            {
+                "sourceOccurrenceId": (
+                    "openiti-5835c183-before-unit-001536-segment-001"
+                ),
+                "displayContextId": (
+                    "continued-before-unit-001538-from-"
+                    "openiti-5835c183-before-unit-001536-segment-001"
+                ),
+            },
+        )
+        self.assertTrue(
+            all(
+                item["sourceOccurrenceId"] != item["displayContextId"]
+                for item in contexts
+            )
+        )
+        packet_contexts, errors = MODULE.resolved_packet_slice_context(
+            {
+                "assignment": {"startUnit": 1538},
+                "authority": authority,
+                "sliceContext": binding,
+            }
+        )
+        self.assertEqual(errors, [])
+        self.assertEqual(packet_contexts, contexts)
+
+        review_packet = self.packet()
+        complete_autonomous_stages(review_packet)
+        review_packet["assignment"]["startUnit"] = 1538
+        review_packet["authority"].update(authority)
+        review_packet["sliceContext"] = binding
+        review_packet["entries"][0]["sourceOrdinal"] = 1538
+        review = MODULE.render_review(review_packet)
+        context_position = review.index("## Continued source hierarchy")
+        first_unit_position = review.index("## Source unit 1538")
+        self.assertLess(context_position, first_unit_position)
+        self.assertIn("Continued context · First Division", review)
+        self.assertIn("القسم الأول", review)
+        self.assertIn(binding["contexts"][-1]["sourceOccurrenceId"], review)
+        self.assertIn(binding["contexts"][-1]["displayContextId"], review)
+
+    def test_machine_readiness_rejects_missing_or_drifted_slice_context(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        packet.pop("sliceContext")
+        errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertIn("packet: inherited slice context is missing", errors)
+
+        proposal = MODULE.load_json(ISSUE_0026_PROPOSAL)
+        authority = {
+            "commit": proposal["sourceAuthority"]["commit"],
+            "sha256": proposal["sourceAuthority"]["sha256"],
+        }
+        binding, _ = MODULE.slice_context(1538, authority, ISSUE_0026_PROPOSAL)
+        binding["sourceProposalSha256"] = "0" * 64
+        drifted = self.packet()
+        drifted["assignment"]["startUnit"] = 1538
+        drifted["assignment"]["endUnit"] = 1539
+        drifted["authority"].update(authority)
+        drifted["sliceContext"] = binding
+        for ordinal, entry in enumerate(drifted["entries"], start=1538):
+            entry["sourceOrdinal"] = ordinal
+        errors = MODULE.validate_packet(drifted, machine_ready=True)
+        self.assertIn(
+            "packet: inherited slice context binding is stale or incomplete",
+            errors,
         )
 
     def test_assignment_overlap_is_rejected(self):
@@ -355,6 +628,22 @@ class TranslationWorkflowTests(unittest.TestCase):
             [11426, 11427],
         )
         self.assertEqual(MODULE.validate_packet(packet), [])
+
+    def test_prepared_validation_rejects_stale_completed_blind_policy(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        stale_policy = "0" * 64
+        packet["entries"][0]["blindTranslation"]["policySha256"] = stale_policy
+        structural = packet["entries"][0]["precedingTranslations"][0]
+        structural["blindTranslation"]["policySha256"] = stale_policy
+
+        errors = MODULE.validate_packet(packet, machine_ready=False)
+
+        self.assertEqual(
+            sum("blind translation used a stale policy" in error for error in errors),
+            2,
+        )
+        self.assertTrue(any("preceding segment" in error for error in errors))
 
     def test_packet_requires_exact_preceding_segment_coverage(self):
         packet = self.packet()
@@ -430,7 +719,11 @@ class TranslationWorkflowTests(unittest.TestCase):
             )
         }
         output["independentCritique"]["findings"] = [
-            {"kind": "source-reading", "requiresWitness": True}
+            {
+                "findingId": "source-reading-1",
+                "kind": "source-reading",
+                "requiresWitness": True,
+            }
         ]
         output["witnessResolution"] = {
             "status": "pending",
@@ -487,13 +780,16 @@ class TranslationWorkflowTests(unittest.TestCase):
             ],
         }
         packet = self.packet()
-        packet["postRunRepairAudit"] = {
-            "status": "complete",
-            "basePacketSha256": "1" * 64,
-            "artifactSha256": "2" * 64,
-            "runId": "translation-repair-run-1234567890abcdef",
-            "operations": [{"repairId": "already-applied"}],
-        }
+        packet["postRunRepairAudits"] = [
+            {
+                "status": "complete",
+                "previousAuditSha256": None,
+                "basePacketSha256": "1" * 64,
+                "artifactSha256": "2" * 64,
+                "runId": "translation-repair-run-1234567890abcdef",
+                "operations": [{"repairId": "already-applied"}],
+            }
+        ]
         with tempfile.TemporaryDirectory() as temporary:
             packet_path = Path(temporary) / "packet.json"
             entry_path = Path(temporary) / "entry-shard.json"
@@ -592,6 +888,29 @@ class TranslationWorkflowTests(unittest.TestCase):
         packet["policy"]["bindingSha256"] = "0" * 64
         self.assertIn("packet: policy binding is stale", MODULE.validate_packet(packet))
 
+    def test_machine_ready_production_packet_enforces_governed_title_projection(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        original_load = MODULE.load_json
+
+        def production_manifest(path):
+            value = original_load(path)
+            if Path(path).resolve() == FIXTURE_MANIFEST.resolve():
+                value = copy.deepcopy(value)
+                value["status"] = "active"
+            return value
+
+        with mock.patch.object(MODULE, "load_json", side_effect=production_manifest):
+            errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertTrue(
+            any(
+                "public title projection failed" in error
+                or "lacks a governed title decision" in error
+                for error in errors
+            ),
+            errors,
+        )
+
     def test_machine_ready_requires_independent_critique(self):
         packet = self.packet()
         complete_autonomous_stages(packet)
@@ -632,11 +951,98 @@ class TranslationWorkflowTests(unittest.TestCase):
             any("explicitly cover every required category" in error for error in errors)
         )
 
-    def test_packet_scale_title_only_name_placeholder_is_rejected(self):
-        error = MODULE.validate_name_inventory_distribution([1] * 20)
-        self.assertTrue(any("one-candidate placeholder" in item for item in error))
-        self.assertEqual(
-            MODULE.validate_name_inventory_distribution([1] * 16 + [2] * 4), []
+    def test_prepared_packet_carries_pending_stage_provenance(self):
+        packet = self.packet()
+        owners = [
+            owner
+            for entry in packet["entries"]
+            for owner in [entry, *entry["precedingTranslations"]]
+        ]
+        for owner in owners:
+            for field in (
+                "blindTranslation",
+                "independentCritique",
+                "witnessResolution",
+                "adjudication",
+                "names",
+            ):
+                self.assertEqual(owner[field]["provenance"]["status"], "pending")
+            self.assertEqual(
+                owner["independentCritique"]["independentContext"]["status"],
+                "pending",
+            )
+            self.assertEqual(
+                owner["names"]["independentContext"]["status"], "pending"
+            )
+
+    def test_schema_1_4_packet_cannot_be_machine_ready(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        packet["schemaVersion"] = "1.4.0"
+        packet["toolVersion"] = "1.4.0"
+        errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertTrue(any("schemaVersion must be 1.5.0" in error for error in errors))
+        self.assertTrue(any("toolVersion must be 1.5.0" in error for error in errors))
+
+    def test_status_run_and_content_hashes_do_not_replace_stage_provenance(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        critique = packet["entries"][0]["independentCritique"]
+        critique.pop("provenance")
+        errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertTrue(
+            any("content-addressed provenance is incomplete" in error for error in errors)
+        )
+
+    def test_machine_ready_requires_internal_context_self_attestation(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        critique = packet["entries"][0]["independentCritique"]
+        critique["independentContext"]["receipt"] = None
+        errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertTrue(
+            any(
+                "context self-attestation receipt is incomplete" in error
+                for error in errors
+            )
+        )
+
+        complete_autonomous_stages(packet)
+        names = packet["entries"][0]["names"]
+        names["independentContext"]["receipt"] = None
+        errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertTrue(
+            any(
+                "context self-attestation receipt is incomplete" in error
+                for error in errors
+            )
+        )
+
+    def test_stage_provenance_detects_upstream_output_drift(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        packet["entries"][0]["blindTranslation"]["english"] += " Drift."
+        errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertTrue(
+            any("blind_translation outputSha256 is stale" in error for error in errors)
+        )
+        self.assertTrue(
+            any("independent_critique upstreamSha256 is stale" in error for error in errors)
+        )
+
+    def test_canned_witness_rationale_alone_is_not_stage_evidence(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        witness = packet["entries"][0]["witnessResolution"]
+        witness["provenance"] = MODULE.pending_stage_provenance(
+            "witness_resolution"
+        )
+        errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertTrue(
+            any(
+                "witness_resolution content-addressed provenance is incomplete" in error
+                for error in errors
+            )
         )
 
     def test_name_candidate_requires_grounded_english_form(self):
@@ -659,6 +1065,173 @@ class TranslationWorkflowTests(unittest.TestCase):
             any("no English form in the adjudicated translation" in error for error in errors),
             errors,
         )
+
+    def test_name_candidate_grounding_rejects_stale_close_romanization(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        entry = packet["entries"][0]
+        candidate = entry["names"]["candidates"][0]
+        candidate["proposedEnglish"] = "Khudayj ibn Rāfiʿ"
+        candidate["aliases"] = []
+        entry["adjudication"]["english"] = (
+            "Khadīj ibn Rāfiʿ transmitted the report."
+        )
+        entry["names"]["inventoryAudit"]["englishSha256"] = (
+            MODULE.semantic_candidate_sha256(
+                None, entry["adjudication"]["english"]
+            )
+        )
+
+        errors = MODULE.validate_names(
+            entry["names"],
+            entry["source"],
+            None,
+            entry["adjudication"]["english"],
+            entry["sourceUnitId"],
+            "test",
+            require_spans=True,
+        )
+        self.assertTrue(
+            any("no English form in the adjudicated translation" in error for error in errors),
+            errors,
+        )
+
+        candidate["proposedEnglish"] = "Khadīj ibn Rāfiʿ"
+        self.assertEqual(
+            MODULE.validate_names(
+                entry["names"],
+                entry["source"],
+                None,
+                entry["adjudication"]["english"],
+                entry["sourceUnitId"],
+                "test",
+                require_spans=True,
+            ),
+            [],
+        )
+
+    def _formula_internal_name_case(self):
+        record_id = "openiti-test-unit-formula-name"
+        formula = "اللهم بارك على محمد وعلى آل محمد"
+        arabic = f"قال الراوي {formula} ثم سكت"
+        observed = "آل محمد"
+        start = arabic.index(observed)
+        end = start + len(observed)
+        adjudicated = f"The narrator preserved the prayer verbatim: {formula}."
+        names = {
+            "status": "complete",
+            "candidates": [
+                {
+                    "candidateId": "formula-collective-001",
+                    "observedArabic": observed,
+                    "proposedEnglish": "the family of Muḥammad",
+                    "aliases": [],
+                    "confidenceEvidence": [
+                        "Exact formula-internal collective with accessible English grounding."
+                    ],
+                    "reviewState": "unreviewed",
+                    "entityType": "collective",
+                }
+            ],
+            "mentions": [
+                {
+                    "mentionId": "formula-collective-001-mention-001",
+                    "candidateId": "formula-collective-001",
+                    "originCandidateId": "formula-collective-001",
+                    "recordId": record_id,
+                    "location": "entry-body-quoted-prayer",
+                    "sourceSpans": [
+                        {
+                            "sourceField": "arabic",
+                            "start": start,
+                            "end": end,
+                            "sha256": MODULE.text_sha256(observed),
+                        }
+                    ],
+                }
+            ],
+            "inventoryAudit": {
+                "status": "complete",
+                "sourceSha256": MODULE.semantic_source_sha256(
+                    {"headingArabic": None, "arabic": arabic}
+                ),
+                "englishSha256": MODULE.semantic_candidate_sha256(
+                    None, adjudicated
+                ),
+                "runId": "formula-name-test-run",
+                "method": "Exact bilingual formula-name test.",
+                "assessment": "One collective and one exact mention.",
+            },
+        }
+        occurrence = {
+            "recordId": record_id,
+            "sourceField": "arabic",
+            "sourceStart": arabic.index(formula),
+            "sourceEnd": arabic.index(formula) + len(formula),
+            "accessibleEnglish": (
+                "O God, bless Muḥammad and the family of Muḥammad."
+            ),
+        }
+        return names, arabic, adjudicated, occurrence, record_id
+
+    def test_formula_internal_name_uses_exact_accessible_english_grounding(self):
+        names, arabic, adjudicated, occurrence, record_id = (
+            self._formula_internal_name_case()
+        )
+        self.assertEqual(
+            MODULE.validate_names(
+                names,
+                {"headingArabic": None, "arabic": arabic},
+                None,
+                adjudicated,
+                record_id,
+                "test",
+                require_spans=True,
+                formula_occurrences=[occurrence],
+            ),
+            [],
+        )
+
+    def test_formula_accessibility_cannot_bypass_name_grounding_guards(self):
+        names, arabic, adjudicated, occurrence, record_id = (
+            self._formula_internal_name_case()
+        )
+        cases = []
+
+        unnested = copy.deepcopy(occurrence)
+        unnested["sourceStart"] = names["mentions"][0]["sourceSpans"][0]["end"]
+        cases.append((copy.deepcopy(names), [unnested], "unnested span"))
+
+        wrong_record = copy.deepcopy(occurrence)
+        wrong_record["recordId"] = "different-record"
+        cases.append((copy.deepcopy(names), [wrong_record], "wrong record"))
+
+        inexact = copy.deepcopy(names)
+        inexact["candidates"][0]["proposedEnglish"] = (
+            "the household of Muḥammad"
+        )
+        inexact["candidates"][0]["aliases"] = ["the family of Muḥammad"]
+        cases.append((inexact, [copy.deepcopy(occurrence)], "alias-only match"))
+
+        for case_names, occurrences, label in cases:
+            with self.subTest(label=label):
+                errors = MODULE.validate_names(
+                    case_names,
+                    {"headingArabic": None, "arabic": arabic},
+                    None,
+                    adjudicated,
+                    record_id,
+                    "test",
+                    require_spans=True,
+                    formula_occurrences=occurrences,
+                )
+                self.assertTrue(
+                    any(
+                        "no English form in the adjudicated translation" in error
+                        for error in errors
+                    ),
+                    errors,
+                )
 
     def test_name_candidate_allows_pronunciation_note_inside_canonical_form(self):
         packet = self.packet()
@@ -707,7 +1280,11 @@ class TranslationWorkflowTests(unittest.TestCase):
         packet = self.packet()
         complete_autonomous_stages(packet)
         packet["entries"][0]["independentCritique"]["findings"] = [
-            {"kind": "ambiguous-name", "requiresWitness": True}
+            {
+                "findingId": "ambiguous-name-1",
+                "kind": "ambiguous-name",
+                "requiresWitness": True,
+            }
         ]
         errors = MODULE.validate_packet(packet, machine_ready=True)
         self.assertTrue(any("requires witness resolution" in error for error in errors))
@@ -727,10 +1304,49 @@ class TranslationWorkflowTests(unittest.TestCase):
             any("material unresolved finding requires" in error for error in errors)
         )
 
+    def test_active_editorial_supply_rejects_contradictory_unresolved_state(self):
+        unresolved = [
+            {
+                "kind": "damaged-subject-heading",
+                "description": "The subject head still lacks an editorial-supply model.",
+                "severity": "material",
+                "location": "entry title",
+                "disposition": "needs_attention",
+            }
+        ]
+        supplies = {
+            2784: {
+                "sourceEntryNumber": 2784,
+                "editorialSupply": {"kind": "witness-bound-subject-head"},
+            }
+        }
+        self.assertEqual(
+            MODULE.validate_unresolved_editorial_supply_state(
+                unresolved, 2784, supplies, "test"
+            ),
+            [
+                "test, unresolved item 1: damaged-subject-heading state "
+                "contradicts the active witness-bound editorial supply"
+            ],
+        )
+        self.assertEqual(
+            MODULE.validate_unresolved_editorial_supply_state(
+                [], 2784, supplies, "test"
+            ),
+            [],
+        )
+        self.assertEqual(
+            MODULE.validate_unresolved_editorial_supply_state(
+                unresolved, 2880, supplies, "test"
+            ),
+            [],
+        )
+
     def test_machine_ready_witness_requires_canonical_hashed_provenance(self):
         passage = "Exact short witness reading."
         result = {
             "status": "hit",
+            "findingIds": ["ambiguous-name-1"],
             "query": "Which reading is attested?",
             "witnessRole": "alternative_edition",
             "witnessIdentity": "Public test facsimile",
@@ -745,7 +1361,7 @@ class TranslationWorkflowTests(unittest.TestCase):
         self.assertEqual(
             MODULE.validate_witness(
                 {"status": "complete", "results": [result]},
-                [{"requiresWitness": True}],
+                [{"findingId": "ambiguous-name-1", "requiresWitness": True}],
                 "test",
                 strict=True,
             ),
@@ -768,11 +1384,99 @@ class TranslationWorkflowTests(unittest.TestCase):
                 "not canonical" in error
                 for error in MODULE.validate_witness(
                     {"status": "complete", "results": [legacy]},
-                    [{"requiresWitness": True}],
+                    [
+                        {
+                            "findingId": "ambiguous-name-1",
+                            "requiresWitness": True,
+                        }
+                    ],
                     "test",
                     strict=True,
                 )
             )
+        )
+
+    def test_witness_result_hash_must_be_attached_to_witness_provenance(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        entry = packet["entries"][0]
+        passage = "Exact short witness reading."
+        evidence_sha256 = MODULE.text_sha256(passage)
+        result = {
+            "status": "hit",
+            "findingIds": ["ambiguous-name-1"],
+            "query": "Which reading is attested?",
+            "witnessRole": "alternative_edition",
+            "witnessIdentity": "Public test facsimile",
+            "passage": passage,
+            "passageSha256": evidence_sha256,
+            "location": "volume 1, page 1",
+            "evidenceKind": "passage",
+            "evidenceSha256": evidence_sha256,
+            "decision": "The reading is confirmed.",
+            "retrievedAt": "2026-08-14",
+        }
+        witness = entry["witnessResolution"]
+        witness.update(
+            {
+                "status": "complete",
+                "results": [result],
+                "notRequiredRationale": None,
+            }
+        )
+        evidence = [
+            {
+                "evidenceId": "witness-result-regression-1",
+                "role": "witness_result",
+                "sha256": evidence_sha256,
+            }
+        ]
+        witness["provenance"] = MODULE.completed_stage_provenance(
+            witness,
+            "witness_resolution",
+            entry["source"],
+            [("independent_critique", entry["independentCritique"])],
+            packet["policy"]["bindingSha256"],
+            "deterministic-witness-gate",
+            "source-bound",
+            evidence,
+            run_id="witness-result-regression",
+        )
+        linked_errors = MODULE.validate_stage_provenance(
+            witness,
+            "witness_resolution",
+            entry["source"],
+            [("independent_critique", entry["independentCritique"])],
+            packet["policy"]["bindingSha256"],
+            "test",
+        )
+        self.assertFalse(
+            any("witness result evidence is not attached" in error for error in linked_errors),
+            linked_errors,
+        )
+
+        witness["provenance"] = MODULE.completed_stage_provenance(
+            witness,
+            "witness_resolution",
+            entry["source"],
+            [("independent_critique", entry["independentCritique"])],
+            packet["policy"]["bindingSha256"],
+            "deterministic-witness-gate",
+            "source-bound",
+            [],
+            run_id="witness-result-regression",
+        )
+        unlinked_errors = MODULE.validate_stage_provenance(
+            witness,
+            "witness_resolution",
+            entry["source"],
+            [("independent_critique", entry["independentCritique"])],
+            packet["policy"]["bindingSha256"],
+            "test",
+        )
+        self.assertIn(
+            "test: witness result evidence is not attached",
+            unlinked_errors,
         )
 
     def test_machine_ready_names_require_exact_source_spans(self):
@@ -1005,9 +1709,52 @@ class TranslationWorkflowTests(unittest.TestCase):
                     None, mutated["entries"][0]["adjudication"]["english"]
                 )
             )
+            entry = mutated["entries"][0]
+            adjudication = entry["adjudication"]
+            adjudication_provenance = adjudication["provenance"]
+            adjudication["provenance"] = MODULE.completed_stage_provenance(
+                adjudication,
+                "adjudication",
+                entry["source"],
+                [
+                    ("blind_translation", entry["blindTranslation"]),
+                    ("independent_critique", entry["independentCritique"]),
+                    ("witness_resolution", entry["witnessResolution"]),
+                ],
+                mutated["policy"]["bindingSha256"],
+                adjudication_provenance["model"],
+                adjudication_provenance["reasoning"],
+                adjudication_provenance["evidence"],
+                run_id=adjudication_provenance["runId"],
+            )
+            names = entry["names"]
+            name_provenance = names["provenance"]
+            names["independentContext"]["inputSha256"] = MODULE.stage_input_sha256(
+                "name_inventory",
+                MODULE.semantic_source_sha256(entry["source"]),
+                MODULE.stage_upstream_sha256(
+                    [("adjudication", adjudication)]
+                ),
+                mutated["policy"]["bindingSha256"],
+                MODULE.packet_schema_sha256(),
+                name_provenance["model"],
+                name_provenance["reasoning"],
+                MODULE.stage_evidence_sha256(name_provenance["evidence"]),
+            )
+            names["provenance"] = MODULE.completed_stage_provenance(
+                names,
+                "name_inventory",
+                entry["source"],
+                [("adjudication", adjudication)],
+                mutated["policy"]["bindingSha256"],
+                name_provenance["model"],
+                name_provenance["reasoning"],
+                name_provenance["evidence"],
+            )
             MODULE.atomic_write(packet_path, MODULE.json_bytes(mutated))
             with self.assertRaisesRegex(
-                MODULE.WorkflowError, "review presentation does not match packet"
+                MODULE.WorkflowError,
+                "review presentation does not match governed titles",
             ):
                 MODULE.submit_packet(
                     packet_path, root / "proposals", allow_test_fixture=True
@@ -1050,12 +1797,14 @@ class TranslationWorkflowTests(unittest.TestCase):
         path = "$.entries[0].blindTranslation.english"
         original = packet["entries"][0]["blindTranslation"]["english"] or ""
         packet["entries"][0]["blindTranslation"]["english"] = "Repaired blind text."
-        packet["postRunRepairAudit"] = {
-            "status": "complete",
-            "basePacketSha256": "1" * 64,
-            "artifactSha256": "2" * 64,
-            "runId": "translation-repair-run-1234567890abcdef",
-            "operations": [
+        packet["postRunRepairAudits"] = [
+            {
+                "status": "complete",
+                "previousAuditSha256": None,
+                "basePacketSha256": "1" * 64,
+                "artifactSha256": "2" * 64,
+                "runId": "translation-repair-run-1234567890abcdef",
+                "operations": [
                 {
                     "repairId": "repair-1",
                     "sourceUnitId": packet["entries"][0]["sourceUnitId"],
@@ -1063,22 +1812,1056 @@ class TranslationWorkflowTests(unittest.TestCase):
                     "recordKind": "entry",
                     "targetStage": "blind_translation",
                     "fieldPath": path,
+                    "valueKind": "text",
                     "oldTextSha256": MODULE.text_sha256(original),
                     "newTextSha256": MODULE.text_sha256("Repaired blind text."),
                     "reasons": [
                         {"code": "test", "explanation": "Test repair provenance."}
                     ],
                 }
-            ],
-        }
-        self.assertEqual(MODULE.validate_post_run_repair_audit(packet), [])
+                ],
+            }
+        ]
+        self.assertEqual(MODULE.validate_post_run_repair_audits(packet), [])
         packet["entries"][0]["blindTranslation"]["english"] = "Drifted."
         self.assertTrue(
             any(
                 "target drifted" in error
-                for error in MODULE.validate_post_run_repair_audit(packet)
+                for error in MODULE.validate_post_run_repair_audits(packet)
             )
         )
+
+    def test_cumulative_repairs_chain_and_rebind_historical_stage_evidence(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        entry = packet["entries"][0]
+        source = entry["source"]
+        policy_sha256 = packet["policy"]["bindingSha256"]
+        path = "$.entries[0].blindTranslation.english"
+        original = entry["blindTranslation"]["english"]
+
+        def operation(repair_id, old_text, new_text):
+            return {
+                "repairId": repair_id,
+                "sourceUnitId": entry["sourceUnitId"],
+                "segmentId": None,
+                "recordKind": "entry",
+                "targetStage": "blind_translation",
+                "fieldPath": path,
+                "valueKind": "text",
+                "oldTextSha256": MODULE.text_sha256(old_text),
+                "newTextSha256": MODULE.text_sha256(new_text),
+                "reasons": [
+                    {"code": "test", "explanation": "Audited fixture text repair."}
+                ],
+            }
+
+        def rebind_stage(stage_field, stage_name, upstream, repair_run_ids):
+            stage = entry[stage_field]
+            previous = copy.deepcopy(stage["provenance"])
+            evidence = copy.deepcopy(previous["evidence"])
+            if stage_name == "independent_critique":
+                stage["independentContext"]["inputSha256"] = (
+                    MODULE.stage_input_sha256(
+                        stage_name,
+                        MODULE.semantic_source_sha256(source),
+                        MODULE.stage_upstream_sha256(upstream),
+                        policy_sha256,
+                        MODULE.packet_schema_sha256(),
+                        previous["model"],
+                        previous["reasoning"],
+                        MODULE.stage_evidence_sha256(evidence),
+                    )
+                )
+            rebinding = {
+                "reason": "post_run_repair",
+                "previousOrigin": previous["origin"],
+                "previousSourceSha256": previous["sourceSha256"],
+                "previousUpstreamSha256": previous["upstreamSha256"],
+                "previousPromptOrPolicySha256": previous[
+                    "promptOrPolicySha256"
+                ],
+                "previousSchemaSha256": previous["schemaSha256"],
+                "previousInputSha256": previous["inputSha256"],
+                "previousOutputSha256": previous["outputSha256"],
+                "previousFingerprint": previous["fingerprint"],
+                "previousModel": previous["model"],
+                "previousReasoning": previous["reasoning"],
+                "evidenceSha256": previous["evidenceSha256"],
+                "runId": previous["runId"],
+                "repairRunIds": list(repair_run_ids),
+            }
+            stage["provenance"] = MODULE.completed_stage_provenance(
+                stage,
+                stage_name,
+                source,
+                upstream,
+                policy_sha256,
+                previous["model"],
+                previous["reasoning"],
+                evidence,
+                run_id=previous["runId"],
+                origin="deterministic_rebinding",
+                rebinding=rebinding,
+            )
+
+        def rebind_downstream(repair_run_ids):
+            blind = entry["blindTranslation"]
+            critique = entry["independentCritique"]
+            witness = entry["witnessResolution"]
+            rebind_stage("blindTranslation", "blind_translation", [], repair_run_ids)
+            rebind_stage(
+                "independentCritique",
+                "independent_critique",
+                [("blind_translation", blind)],
+                repair_run_ids,
+            )
+            rebind_stage(
+                "witnessResolution",
+                "witness_resolution",
+                [("independent_critique", critique)],
+                repair_run_ids,
+            )
+            rebind_stage(
+                "adjudication",
+                "adjudication",
+                [
+                    ("blind_translation", blind),
+                    ("independent_critique", critique),
+                    ("witness_resolution", witness),
+                ],
+                repair_run_ids,
+            )
+
+        first_text = f"{original} First audited repair."
+        entry["blindTranslation"]["english"] = first_text
+        first = {
+            "status": "complete",
+            "previousAuditSha256": None,
+            "basePacketSha256": "1" * 64,
+            "artifactSha256": "2" * 64,
+            "runId": "translation-repair-run-1111111111111111",
+            "operations": [operation("repair-1", original, first_text)],
+        }
+        packet["postRunRepairAudits"] = [first]
+        rebind_downstream((first["runId"],))
+
+        second_text = f"{first_text} Second audited repair."
+        entry["blindTranslation"]["english"] = second_text
+        second = {
+            "status": "complete",
+            "previousAuditSha256": MODULE.content_sha256(first),
+            "basePacketSha256": "3" * 64,
+            "artifactSha256": "4" * 64,
+            "runId": "translation-repair-run-2222222222222222",
+            "operations": [operation("repair-2", first_text, second_text)],
+        }
+        packet["postRunRepairAudits"].append(second)
+        run_ids = (first["runId"], second["runId"])
+        rebind_downstream(run_ids)
+
+        self.assertEqual(MODULE.validate_post_run_repair_audits(packet), [])
+        self.assertEqual(
+            MODULE.validate_semantic_audit(
+                entry["independentCritique"],
+                source,
+                None,
+                second_text,
+                "test",
+                allow_historical_candidate=True,
+            ),
+            [],
+        )
+        self.assertEqual(
+            MODULE.validate_stage_chain(
+                entry,
+                source,
+                policy_sha256,
+                "test",
+                MODULE.repair_rebinding_permissions(packet)[
+                    (entry["sourceUnitId"], None)
+                ],
+            ),
+            [],
+        )
+
+        deleted_first = copy.deepcopy(packet)
+        deleted_first["postRunRepairAudits"] = [
+            deleted_first["postRunRepairAudits"][1]
+        ]
+        self.assertTrue(
+            any(
+                "previous-audit hash chain" in error
+                for error in MODULE.validate_post_run_repair_audits(deleted_first)
+            )
+        )
+        broken_continuity = copy.deepcopy(packet)
+        broken_continuity["postRunRepairAudits"][1]["operations"][0][
+            "oldTextSha256"
+        ] = "f" * 64
+        self.assertTrue(
+            any(
+                "value-hash chain" in error
+                for error in MODULE.validate_post_run_repair_audits(
+                    broken_continuity
+                )
+            )
+        )
+
+    def test_canonical_json_repairs_are_exact_stage_bound_and_terminal(self):
+        packet = self.packet()
+        entry = packet["entries"][0]
+        paths = (
+            (
+                "$.entries[0].independentCritique.findings",
+                "independent_critique",
+            ),
+            (
+                "$.entries[0].independentCritique.semanticAudit",
+                "independent_critique",
+            ),
+            ("$.entries[0].witnessResolution", "witness_resolution"),
+            ("$.entries[0].unresolved", "witness_resolution"),
+            ("$.entries[0].names.candidates", "name_inventory"),
+            ("$.entries[0].names.mentions", "name_inventory"),
+            ("$.entries[0].names.inventoryAudit", "name_inventory"),
+            ("$.entries[0].adjudication", "adjudication"),
+        )
+        operations = []
+        for index, (path, stage) in enumerate(paths, start=1):
+            operation = {
+                "repairId": f"canonical-repair-{index}",
+                "sourceUnitId": entry["sourceUnitId"],
+                "segmentId": None,
+                "recordKind": "entry",
+                "targetStage": stage,
+                "fieldPath": path,
+                "valueKind": "canonical_json",
+                "oldValueSha256": f"{index:x}" * 64,
+                "newValueSha256": MODULE.content_sha256(
+                    MODULE.json_path_value(packet, path)
+                ),
+                "reasons": [
+                    {
+                        "code": "test-object-repair",
+                        "explanation": "Exact canonical object or array repair.",
+                    }
+                ],
+            }
+            if stage == "adjudication":
+                semantic_hash = MODULE.content_sha256(
+                    MODULE.stage_output_payload(
+                        entry["adjudication"], "adjudication"
+                    )
+                )
+                operation["oldSemanticValueSha256"] = semantic_hash
+                operation["newSemanticValueSha256"] = semantic_hash
+            operations.append(operation)
+        packet["postRunRepairAudits"] = [
+            {
+                "status": "complete",
+                "previousAuditSha256": None,
+                "basePacketSha256": "a" * 64,
+                "artifactSha256": "b" * 64,
+                "runId": "translation-repair-run-3333333333333333",
+                "operations": operations,
+            }
+        ]
+        self.assertEqual(MODULE.validate_post_run_repair_audits(packet), [])
+        self.assertEqual(
+            MODULE.validate_schema_instance(
+                packet, MODULE.load_json(MODULE.DEFAULT_PACKET_SCHEMA)
+            ),
+            [],
+        )
+        permissions = MODULE.repair_rebinding_permissions(packet)[
+            (entry["sourceUnitId"], None)
+        ]
+        self.assertEqual(
+            set(permissions),
+            {
+                "independent_critique",
+                "witness_resolution",
+                "adjudication",
+                "name_inventory",
+            },
+        )
+
+        drifted = copy.deepcopy(packet)
+        drifted["entries"][0]["unresolved"].append({"unexpected": True})
+        self.assertTrue(
+            any(
+                "terminal target drifted" in error
+                for error in MODULE.validate_post_run_repair_audits(drifted)
+            )
+        )
+        changed_adjudication = copy.deepcopy(packet)
+        adjudication_operation = changed_adjudication["postRunRepairAudits"][0][
+            "operations"
+        ][-1]
+        adjudication_operation["newSemanticValueSha256"] = "f" * 64
+        self.assertTrue(
+            any(
+                "changed semantic content" in error
+                for error in MODULE.validate_post_run_repair_audits(
+                    changed_adjudication
+                )
+            )
+        )
+        forbidden = copy.deepcopy(packet)
+        forbidden["postRunRepairAudits"][0]["operations"][0][
+            "fieldPath"
+        ] = "$.entries[0].independentCritique.independentContext"
+        self.assertTrue(
+            any(
+                "not an allowlisted" in error
+                for error in MODULE.validate_post_run_repair_audits(forbidden)
+            )
+        )
+
+    def test_policy_sha256_repairs_are_exact_stage_bound_and_terminal(self):
+        packet = self.packet()
+        entry = packet["entries"][0]
+        structural = entry["precedingTranslations"][0]
+        old_policy = packet["policy"]["bindingSha256"]
+        new_policy = "f" * 64
+        entry["blindTranslation"]["policySha256"] = new_policy
+        structural["blindTranslation"]["policySha256"] = new_policy
+        operations = [
+            {
+                "repairId": "entry-policy-repair",
+                "sourceUnitId": entry["sourceUnitId"],
+                "segmentId": None,
+                "recordKind": "entry",
+                "targetStage": "blind_translation",
+                "fieldPath": "$.entries[0].blindTranslation.policySha256",
+                "valueKind": "text",
+                "oldTextSha256": MODULE.text_sha256(old_policy),
+                "newTextSha256": MODULE.text_sha256(new_policy),
+                "reasons": [
+                    {
+                        "code": "stale-policy-field",
+                        "explanation": "Refresh the exact stage policy binding.",
+                    }
+                ],
+            },
+            {
+                "repairId": "structural-policy-repair",
+                "sourceUnitId": entry["sourceUnitId"],
+                "segmentId": structural["segmentId"],
+                "recordKind": "structural",
+                "targetStage": "blind_translation",
+                "fieldPath": (
+                    "$.entries[0].precedingTranslations[0]."
+                    "blindTranslation.policySha256"
+                ),
+                "valueKind": "text",
+                "oldTextSha256": MODULE.text_sha256(old_policy),
+                "newTextSha256": MODULE.text_sha256(new_policy),
+                "reasons": [
+                    {
+                        "code": "stale-policy-field",
+                        "explanation": "Refresh the exact stage policy binding.",
+                    }
+                ],
+            },
+        ]
+        packet["postRunRepairAudits"] = [
+            {
+                "status": "complete",
+                "previousAuditSha256": None,
+                "basePacketSha256": "a" * 64,
+                "artifactSha256": "b" * 64,
+                "runId": "translation-repair-run-4444444444444444",
+                "operations": operations,
+            }
+        ]
+
+        self.assertEqual(MODULE.validate_post_run_repair_audits(packet), [])
+        self.assertEqual(
+            MODULE.validate_schema_instance(
+                packet, MODULE.load_json(MODULE.DEFAULT_PACKET_SCHEMA)
+            ),
+            [],
+        )
+
+        permissions = MODULE.repair_rebinding_permissions(packet)
+        self.assertIn(
+            "blind_translation",
+            permissions[(entry["sourceUnitId"], None)],
+        )
+        self.assertIn(
+            "blind_translation",
+            permissions[(entry["sourceUnitId"], structural["segmentId"])],
+        )
+        self.assertNotIn(
+            (entry["sourceUnitId"], None),
+            MODULE.repaired_target_stages(packet),
+        )
+
+        drifted = copy.deepcopy(packet)
+        drifted["entries"][0]["blindTranslation"]["policySha256"] = "e" * 64
+        self.assertTrue(
+            any(
+                "terminal target drifted" in error
+                for error in MODULE.validate_post_run_repair_audits(drifted)
+            )
+        )
+        wrong_kind = copy.deepcopy(packet)
+        wrong_kind["postRunRepairAudits"][0]["operations"][0][
+            "valueKind"
+        ] = "canonical_json"
+        self.assertTrue(
+            any(
+                "value kind does not match" in error
+                for error in MODULE.validate_post_run_repair_audits(wrong_kind)
+            )
+        )
+
+    def test_policy_root_repair_is_exact_exhaustive_and_globally_scoped(self):
+        packet = self.packet()
+        current_policy = copy.deepcopy(packet["policy"])
+        old_policy = copy.deepcopy(current_policy)
+        old_policy["bindingSha256"] = "a" * 64
+        run_id = "translation-repair-run-5555555555555555"
+        operations = [
+            {
+                "repairId": "packet-policy-root-repair",
+                "sourceUnitId": None,
+                "segmentId": None,
+                "recordKind": "packet",
+                "targetStage": "policy_binding",
+                "fieldPath": "$.policy",
+                "valueKind": "canonical_json",
+                "oldValueSha256": MODULE.content_sha256(old_policy),
+                "newValueSha256": MODULE.content_sha256(current_policy),
+                "oldPolicyBindingSha256": old_policy["bindingSha256"],
+                "newPolicyBindingSha256": current_policy["bindingSha256"],
+                "reasons": [
+                    {
+                        "code": "policy-binding-refresh",
+                        "explanation": "Bind the packet to the reviewed local policy.",
+                    }
+                ],
+            }
+        ]
+        for index, (key, path, stage) in enumerate(
+            MODULE.packet_semantic_owner_stage_paths(packet), start=1
+        ):
+            current_stage = MODULE.json_path_value(packet, path)
+            old_stage = copy.deepcopy(current_stage)
+            if stage == "blind_translation":
+                old_stage["policySha256"] = old_policy["bindingSha256"]
+            else:
+                old_stage["provenance"]["fingerprint"] = "d" * 64
+            semantic_hash = MODULE.content_sha256(
+                MODULE.stage_semantic_repair_payload(current_stage, stage)
+            )
+            operations.append(
+                {
+                    "repairId": f"packet-policy-stage-repair-{index}",
+                    "sourceUnitId": key[0],
+                    "segmentId": key[1],
+                    "recordKind": "structural"
+                    if key[1] is not None
+                    else "entry",
+                    "targetStage": stage,
+                    "fieldPath": path,
+                    "valueKind": "canonical_json",
+                    "oldValueSha256": MODULE.content_sha256(old_stage),
+                    "newValueSha256": MODULE.content_sha256(current_stage),
+                    "oldSemanticValueSha256": semantic_hash,
+                    "newSemanticValueSha256": semantic_hash,
+                    "reasons": [
+                        {
+                            "code": "policy-binding-refresh",
+                            "explanation": "Refresh this exact policy-bound stage.",
+                        }
+                    ],
+                }
+            )
+        packet["postRunRepairAudits"] = [
+            {
+                "status": "complete",
+                "previousAuditSha256": None,
+                "basePacketSha256": "b" * 64,
+                "artifactSha256": "c" * 64,
+                "runId": run_id,
+                "operations": operations,
+            }
+        ]
+
+        self.assertEqual(MODULE.validate_post_run_repair_audits(packet), [])
+        self.assertEqual(
+            MODULE.validate_schema_instance(
+                packet, MODULE.load_json(MODULE.DEFAULT_PACKET_SCHEMA)
+            ),
+            [],
+        )
+        with_descendant = copy.deepcopy(packet)
+        root_audit = with_descendant["postRunRepairAudits"][0]
+        blind_stage_operation = root_audit["operations"][1]
+        blind_stage_path = blind_stage_operation["fieldPath"]
+        descendant_path = f"{blind_stage_path}.policySha256"
+        prior_leaf_audit = {
+            "status": "complete",
+            "previousAuditSha256": None,
+            "basePacketSha256": "4" * 64,
+            "artifactSha256": "5" * 64,
+            "runId": "translation-repair-run-4545454545454545",
+            "operations": [
+                {
+                    "repairId": "prior-policy-leaf-repair",
+                    "sourceUnitId": blind_stage_operation["sourceUnitId"],
+                    "segmentId": blind_stage_operation["segmentId"],
+                    "recordKind": blind_stage_operation["recordKind"],
+                    "targetStage": "blind_translation",
+                    "fieldPath": descendant_path,
+                    "valueKind": "text",
+                    "oldTextSha256": MODULE.text_sha256("0" * 64),
+                    "newTextSha256": MODULE.text_sha256(
+                        old_policy["bindingSha256"]
+                    ),
+                    "reasons": [
+                        {
+                            "code": "prior-policy-leaf",
+                            "explanation": "Fixture for ordered ancestor supersession.",
+                        }
+                    ],
+                }
+            ],
+        }
+        root_audit["previousAuditSha256"] = MODULE.content_sha256(
+            prior_leaf_audit
+        )
+        with_descendant["postRunRepairAudits"] = [prior_leaf_audit, root_audit]
+        self.assertEqual(
+            MODULE.validate_post_run_repair_audits(with_descendant), []
+        )
+        tampered_ancestor = copy.deepcopy(with_descendant)
+        MODULE.json_path_value(tampered_ancestor, blind_stage_path)["provenance"][
+            "fingerprint"
+        ] = "6" * 64
+        self.assertTrue(
+            any(
+                blind_stage_path in error and "terminal target drifted" in error
+                for error in MODULE.validate_post_run_repair_audits(
+                    tampered_ancestor
+                )
+            )
+        )
+        permissions = MODULE.repair_rebinding_permissions(packet)
+        for key, _, _ in MODULE.packet_semantic_owner_stage_paths(packet):
+            self.assertEqual(
+                set(permissions[key]), set(MODULE.SEMANTIC_STAGE_NAMES)
+            )
+
+        incomplete = copy.deepcopy(packet)
+        incomplete["postRunRepairAudits"][0]["operations"].pop()
+        self.assertTrue(
+            any(
+                "cover all five whole stages for every semantic owner" in error
+                for error in MODULE.validate_post_run_repair_audits(incomplete)
+            )
+        )
+        drifted = copy.deepcopy(packet)
+        drifted["policy"]["contracts"] = list(
+            reversed(drifted["policy"]["contracts"])
+        )
+        drifted["postRunRepairAudits"][0]["operations"][0][
+            "newValueSha256"
+        ] = MODULE.content_sha256(drifted["policy"])
+        self.assertTrue(
+            any(
+                "does not exactly match the active local binding" in error
+                for error in MODULE.validate_post_run_repair_audits(drifted)
+            )
+        )
+        arbitrary_root = copy.deepcopy(packet)
+        arbitrary_root["postRunRepairAudits"][0]["operations"][0][
+            "fieldPath"
+        ] = "$.authority"
+        self.assertTrue(
+            any(
+                "exact repairable stage-output path" in error
+                or "unexpected depth" in error
+                for error in MODULE.validate_post_run_repair_audits(arbitrary_root)
+            )
+        )
+
+    def test_policy_root_rebinding_preserves_semantic_stage_output(self):
+        packet = self.packet()
+        current_policy = copy.deepcopy(packet["policy"])
+        old_policy = copy.deepcopy(current_policy)
+        old_policy["bindingSha256"] = "d" * 64
+        packet["policy"] = old_policy
+        for entry in packet["entries"]:
+            entry["blindTranslation"]["policySha256"] = old_policy[
+                "bindingSha256"
+            ]
+            for translation in entry["precedingTranslations"]:
+                translation["blindTranslation"]["policySha256"] = old_policy[
+                    "bindingSha256"
+                ]
+        complete_autonomous_stages(packet)
+
+        old_stage_values = {
+            path: copy.deepcopy(MODULE.json_path_value(packet, path))
+            for _, path, _ in MODULE.packet_semantic_owner_stage_paths(packet)
+        }
+        packet["policy"] = current_policy
+        run_id = "translation-repair-run-6666666666666666"
+        operations = [
+            {
+                "repairId": "packet-policy-root-rebind",
+                "sourceUnitId": None,
+                "segmentId": None,
+                "recordKind": "packet",
+                "targetStage": "policy_binding",
+                "fieldPath": "$.policy",
+                "valueKind": "canonical_json",
+                "oldValueSha256": MODULE.content_sha256(old_policy),
+                "newValueSha256": MODULE.content_sha256(current_policy),
+                "oldPolicyBindingSha256": old_policy["bindingSha256"],
+                "newPolicyBindingSha256": current_policy["bindingSha256"],
+                "reasons": [
+                    {
+                        "code": "policy-binding-refresh",
+                        "explanation": "Refresh policy-bound hashes only.",
+                    }
+                ],
+            }
+        ]
+
+        semantic_owners = []
+        for entry_index, entry in enumerate(packet["entries"]):
+            for translation_index, (source, translation) in enumerate(
+                zip(
+                    entry["source"]["precedingSegments"],
+                    entry["precedingTranslations"],
+                )
+            ):
+                semantic_owners.append((translation, source))
+                translation["blindTranslation"]["policySha256"] = current_policy[
+                    "bindingSha256"
+                ]
+            semantic_owners.append((entry, entry["source"]))
+            entry["blindTranslation"]["policySha256"] = current_policy[
+                "bindingSha256"
+            ]
+
+        def rebind_stage(owner, field, stage, source, upstream):
+            stage_owner = owner[field]
+            previous = copy.deepcopy(stage_owner["provenance"])
+            evidence = copy.deepcopy(previous["evidence"])
+            if stage in {"independent_critique", "name_inventory"}:
+                stage_owner["independentContext"]["inputSha256"] = (
+                    MODULE.stage_input_sha256(
+                        stage,
+                        MODULE.semantic_source_sha256(source),
+                        MODULE.stage_upstream_sha256(upstream),
+                        current_policy["bindingSha256"],
+                        MODULE.packet_schema_sha256(),
+                        previous["model"],
+                        previous["reasoning"],
+                        MODULE.stage_evidence_sha256(evidence),
+                    )
+                )
+            rebinding = {
+                "reason": "post_run_repair",
+                "previousOrigin": previous["origin"],
+                "previousSourceSha256": previous["sourceSha256"],
+                "previousUpstreamSha256": previous["upstreamSha256"],
+                "previousPromptOrPolicySha256": previous[
+                    "promptOrPolicySha256"
+                ],
+                "previousSchemaSha256": previous["schemaSha256"],
+                "previousInputSha256": previous["inputSha256"],
+                "previousOutputSha256": previous["outputSha256"],
+                "previousFingerprint": previous["fingerprint"],
+                "previousModel": previous["model"],
+                "previousReasoning": previous["reasoning"],
+                "evidenceSha256": previous["evidenceSha256"],
+                "runId": previous["runId"],
+                "repairRunIds": [run_id],
+            }
+            stage_owner["provenance"] = MODULE.completed_stage_provenance(
+                stage_owner,
+                stage,
+                source,
+                upstream,
+                current_policy["bindingSha256"],
+                previous["model"],
+                previous["reasoning"],
+                evidence,
+                run_id=previous["runId"],
+                origin="deterministic_rebinding",
+                rebinding=rebinding,
+            )
+
+        for owner, source in semantic_owners:
+            blind = owner["blindTranslation"]
+            critique = owner["independentCritique"]
+            witness = owner["witnessResolution"]
+            adjudication = owner["adjudication"]
+            rebind_stage(owner, "blindTranslation", "blind_translation", source, [])
+            rebind_stage(
+                owner,
+                "independentCritique",
+                "independent_critique",
+                source,
+                [("blind_translation", blind)],
+            )
+            rebind_stage(
+                owner,
+                "witnessResolution",
+                "witness_resolution",
+                source,
+                [("independent_critique", critique)],
+            )
+            rebind_stage(
+                owner,
+                "adjudication",
+                "adjudication",
+                source,
+                [
+                    ("blind_translation", blind),
+                    ("independent_critique", critique),
+                    ("witness_resolution", witness),
+                ],
+            )
+            rebind_stage(
+                owner,
+                "names",
+                "name_inventory",
+                source,
+                [("adjudication", adjudication)],
+            )
+
+        for index, (key, path, stage) in enumerate(
+            MODULE.packet_semantic_owner_stage_paths(packet), start=1
+        ):
+            old_stage = old_stage_values[path]
+            current_stage = MODULE.json_path_value(packet, path)
+            old_semantic_hash = MODULE.content_sha256(
+                MODULE.stage_semantic_repair_payload(old_stage, stage)
+            )
+            new_semantic_hash = MODULE.content_sha256(
+                MODULE.stage_semantic_repair_payload(current_stage, stage)
+            )
+            self.assertEqual(old_semantic_hash, new_semantic_hash)
+            operations.append(
+                {
+                    "repairId": f"policy-whole-stage-{index}",
+                    "sourceUnitId": key[0],
+                    "segmentId": key[1],
+                    "recordKind": "structural" if key[1] is not None else "entry",
+                    "targetStage": stage,
+                    "fieldPath": path,
+                    "valueKind": "canonical_json",
+                    "oldValueSha256": MODULE.content_sha256(old_stage),
+                    "newValueSha256": MODULE.content_sha256(current_stage),
+                    "oldSemanticValueSha256": old_semantic_hash,
+                    "newSemanticValueSha256": new_semantic_hash,
+                    "reasons": [
+                        {
+                            "code": "policy-binding-refresh",
+                            "explanation": "Refresh this exact policy-bound stage.",
+                        }
+                    ],
+                }
+            )
+        packet["postRunRepairAudits"] = [
+            {
+                "status": "complete",
+                "previousAuditSha256": None,
+                "basePacketSha256": "e" * 64,
+                "artifactSha256": "f" * 64,
+                "runId": run_id,
+                "operations": operations,
+            }
+        ]
+
+        permissions = MODULE.repair_rebinding_permissions(packet)
+        policy_bindings = MODULE.policy_repair_bindings(packet)
+        for owner, source in semantic_owners:
+            segment_id = owner.get("segmentId")
+            entry = next(
+                entry
+                for entry in packet["entries"]
+                if owner is entry or owner in entry["precedingTranslations"]
+            )
+            key = (entry["sourceUnitId"], segment_id)
+            self.assertEqual(
+                MODULE.validate_stage_chain(
+                    owner,
+                    source,
+                    current_policy["bindingSha256"],
+                    "policy fixture",
+                    permissions[key],
+                    policy_bindings,
+                ),
+                [],
+            )
+
+        victim = packet["entries"][0]["blindTranslation"]
+        victim["english"] += " Unaudited drift."
+        victim["provenance"]["outputSha256"] = MODULE.content_sha256(
+            MODULE.stage_output_payload(victim, "blind_translation")
+        )
+        victim["provenance"]["fingerprint"] = MODULE.stage_fingerprint(
+            victim["provenance"]
+        )
+        errors = MODULE.validate_stage_provenance(
+            victim,
+            "blind_translation",
+            packet["entries"][0]["source"],
+            [],
+            current_policy["bindingSha256"],
+            "policy fixture",
+            permitted_repair_run_ids=permissions[
+                (packet["entries"][0]["sourceUnitId"], None)
+            ]["blind_translation"],
+            permitted_policy_repair_bindings=policy_bindings,
+        )
+        self.assertTrue(
+            any("changed unaudited semantic stage output" in error for error in errors)
+        )
+
+    def test_policy_rebinding_cannot_supersede_unenumerated_whole_stage_terminal(self):
+        packet = self.packet()
+        current_policy = copy.deepcopy(packet["policy"])
+        old_policy = copy.deepcopy(current_policy)
+        old_policy["bindingSha256"] = "7" * 64
+        packet["policy"] = old_policy
+        for entry in packet["entries"]:
+            entry["blindTranslation"]["policySha256"] = old_policy[
+                "bindingSha256"
+            ]
+            for translation in entry["precedingTranslations"]:
+                translation["blindTranslation"]["policySha256"] = old_policy[
+                    "bindingSha256"
+                ]
+        complete_autonomous_stages(packet)
+
+        entry = packet["entries"][0]
+        witness = entry["witnessResolution"]
+        first_run_id = "translation-repair-run-7777777777777777"
+        witness_path = "$.entries[0].witnessResolution"
+        first_audit = {
+            "status": "complete",
+            "previousAuditSha256": None,
+            "basePacketSha256": "8" * 64,
+            "artifactSha256": "9" * 64,
+            "runId": first_run_id,
+            "operations": [
+                {
+                    "repairId": "prior-whole-witness-repair",
+                    "sourceUnitId": entry["sourceUnitId"],
+                    "segmentId": None,
+                    "recordKind": "entry",
+                    "targetStage": "witness_resolution",
+                    "fieldPath": witness_path,
+                    "valueKind": "canonical_json",
+                    "oldValueSha256": "1" * 64,
+                    "newValueSha256": MODULE.content_sha256(witness),
+                    "reasons": [
+                        {
+                            "code": "prior-witness-link",
+                            "explanation": "Fixture for a prior whole-witness repair.",
+                        }
+                    ],
+                }
+            ],
+        }
+
+        packet["policy"] = current_policy
+        root_run_id = "translation-repair-run-8888888888888888"
+        root_operations = [
+            {
+                "repairId": "packet-policy-root-after-witness",
+                "sourceUnitId": None,
+                "segmentId": None,
+                "recordKind": "packet",
+                "targetStage": "policy_binding",
+                "fieldPath": "$.policy",
+                "valueKind": "canonical_json",
+                "oldValueSha256": MODULE.content_sha256(old_policy),
+                "newValueSha256": MODULE.content_sha256(current_policy),
+                "oldPolicyBindingSha256": old_policy["bindingSha256"],
+                "newPolicyBindingSha256": current_policy["bindingSha256"],
+                "reasons": [
+                    {
+                        "code": "policy-binding-refresh",
+                        "explanation": "Refresh policy-bound metadata only.",
+                    }
+                ],
+            }
+        ]
+        for index, (key, path) in enumerate(
+            MODULE.packet_semantic_owner_policy_paths(packet), start=1
+        ):
+            root_operations.append(
+                {
+                    "repairId": f"policy-after-witness-owner-{index}",
+                    "sourceUnitId": key[0],
+                    "segmentId": key[1],
+                    "recordKind": "structural" if key[1] is not None else "entry",
+                    "targetStage": "blind_translation",
+                    "fieldPath": path,
+                    "valueKind": "text",
+                    "oldTextSha256": MODULE.text_sha256(
+                        old_policy["bindingSha256"]
+                    ),
+                    "newTextSha256": MODULE.text_sha256(
+                        current_policy["bindingSha256"]
+                    ),
+                    "reasons": [
+                        {
+                            "code": "policy-binding-refresh",
+                            "explanation": "Refresh the exact owner policy field.",
+                        }
+                    ],
+                }
+            )
+        root_audit = {
+            "status": "complete",
+            "previousAuditSha256": MODULE.content_sha256(first_audit),
+            "basePacketSha256": "2" * 64,
+            "artifactSha256": "3" * 64,
+            "runId": root_run_id,
+            "operations": root_operations,
+        }
+        packet["postRunRepairAudits"] = [first_audit, root_audit]
+        for owner_key, path in MODULE.packet_semantic_owner_policy_paths(packet):
+            MODULE.json_path_value(
+                packet, path.rsplit(".policySha256", 1)[0]
+            )["policySha256"] = current_policy["bindingSha256"]
+
+        previous = copy.deepcopy(witness["provenance"])
+        rebinding = {
+            "reason": "post_run_repair",
+            "previousOrigin": previous["origin"],
+            "previousSourceSha256": previous["sourceSha256"],
+            "previousUpstreamSha256": previous["upstreamSha256"],
+            "previousPromptOrPolicySha256": previous[
+                "promptOrPolicySha256"
+            ],
+            "previousSchemaSha256": previous["schemaSha256"],
+            "previousInputSha256": previous["inputSha256"],
+            "previousOutputSha256": previous["outputSha256"],
+            "previousFingerprint": previous["fingerprint"],
+            "previousModel": previous["model"],
+            "previousReasoning": previous["reasoning"],
+            "evidenceSha256": previous["evidenceSha256"],
+            "runId": previous["runId"],
+            "repairRunIds": [first_run_id, root_run_id],
+        }
+        witness["provenance"] = MODULE.completed_stage_provenance(
+            witness,
+            "witness_resolution",
+            entry["source"],
+            [("independent_critique", entry["independentCritique"])],
+            current_policy["bindingSha256"],
+            previous["model"],
+            previous["reasoning"],
+            copy.deepcopy(previous["evidence"]),
+            run_id=previous["runId"],
+            origin="deterministic_rebinding",
+            rebinding=rebinding,
+        )
+
+        errors = MODULE.validate_post_run_repair_audits(packet)
+        self.assertTrue(
+            any(
+                "cover all five whole stages for every semantic owner" in error
+                for error in errors
+            )
+        )
+        self.assertTrue(
+            any(
+                witness_path in error and "terminal target drifted" in error
+                for error in errors
+            )
+        )
+        witness["notRequiredRationale"] += " Unaudited semantic drift."
+        self.assertTrue(
+            any(
+                witness_path in error and "terminal target drifted" in error
+                for error in MODULE.validate_post_run_repair_audits(packet)
+            )
+        )
+
+    def test_later_leaf_repair_supersedes_prior_whole_stage_terminal(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        entry = packet["entries"][0]
+        stage_path = "$.entries[0].adjudication"
+        leaf_path = f"{stage_path}.english"
+        old_stage = copy.deepcopy(entry["adjudication"])
+        old_english = old_stage["english"]
+        new_english = f"{old_english} Audited correction."
+        semantic_sha256 = MODULE.content_sha256(
+            MODULE.stage_semantic_repair_payload(old_stage, "adjudication")
+        )
+        first_audit = {
+            "status": "complete",
+            "previousAuditSha256": None,
+            "basePacketSha256": "1" * 64,
+            "artifactSha256": "2" * 64,
+            "runId": "translation-repair-run-aaaaaaaaaaaaaaaa",
+            "operations": [
+                {
+                    "repairId": "whole-adjudication-snapshot",
+                    "sourceUnitId": entry["sourceUnitId"],
+                    "segmentId": None,
+                    "recordKind": "entry",
+                    "targetStage": "adjudication",
+                    "fieldPath": stage_path,
+                    "valueKind": "canonical_json",
+                    "oldValueSha256": "3" * 64,
+                    "newValueSha256": MODULE.content_sha256(old_stage),
+                    "oldSemanticValueSha256": semantic_sha256,
+                    "newSemanticValueSha256": semantic_sha256,
+                    "reasons": [
+                        {
+                            "code": "test-stage-snapshot",
+                            "explanation": "Record the exact pre-repair stage object.",
+                        }
+                    ],
+                }
+            ],
+        }
+        entry["adjudication"]["english"] = new_english
+        second_audit = {
+            "status": "complete",
+            "previousAuditSha256": MODULE.content_sha256(first_audit),
+            "basePacketSha256": "4" * 64,
+            "artifactSha256": "5" * 64,
+            "runId": "translation-repair-run-bbbbbbbbbbbbbbbb",
+            "operations": [
+                {
+                    "repairId": "later-adjudication-leaf-repair",
+                    "sourceUnitId": entry["sourceUnitId"],
+                    "segmentId": None,
+                    "recordKind": "entry",
+                    "targetStage": "adjudication",
+                    "fieldPath": leaf_path,
+                    "valueKind": "text",
+                    "oldTextSha256": MODULE.text_sha256(old_english),
+                    "newTextSha256": MODULE.text_sha256(new_english),
+                    "reasons": [
+                        {
+                            "code": "test-leaf-repair",
+                            "explanation": "Apply one later exact append-only repair.",
+                        }
+                    ],
+                }
+            ],
+        }
+        packet["postRunRepairAudits"] = [first_audit, second_audit]
+
+        self.assertEqual(MODULE.validate_post_run_repair_audits(packet), [])
 
     def test_production_repair_record_kind_normalizes_biography_to_entry(self):
         self.assertEqual(MODULE.normalized_repair_record_kind("biography"), "entry")
@@ -1092,12 +2875,14 @@ class TranslationWorkflowTests(unittest.TestCase):
         packet = self.packet()
         path = "$.entries[0].blindTranslation.english"
         packet["entries"][0]["blindTranslation"]["english"] = "Repaired."
-        packet["postRunRepairAudit"] = {
-            "status": "complete",
-            "basePacketSha256": "1" * 64,
-            "artifactSha256": "2" * 64,
-            "runId": "translation-repair-run-1234567890abcdef",
-            "operations": [
+        packet["postRunRepairAudits"] = [
+            {
+                "status": "complete",
+                "previousAuditSha256": None,
+                "basePacketSha256": "1" * 64,
+                "artifactSha256": "2" * 64,
+                "runId": "translation-repair-run-1234567890abcdef",
+                "operations": [
                 {
                     "repairId": "repair-1",
                     "sourceUnitId": "wrong-unit",
@@ -1105,15 +2890,17 @@ class TranslationWorkflowTests(unittest.TestCase):
                     "recordKind": "structural",
                     "targetStage": "adjudication",
                     "fieldPath": path,
+                    "valueKind": "text",
                     "oldTextSha256": MODULE.text_sha256(""),
                     "newTextSha256": MODULE.text_sha256("Repaired."),
                     "reasons": [
                         {"code": "test", "explanation": "Test repair provenance."}
                     ],
                 }
-            ],
-        }
-        errors = MODULE.validate_post_run_repair_audit(packet)
+                ],
+            }
+        ]
+        errors = MODULE.validate_post_run_repair_audits(packet)
         self.assertTrue(any("source unit metadata" in error for error in errors))
         self.assertTrue(any("record kind" in error for error in errors))
         self.assertTrue(any("segment metadata" in error for error in errors))

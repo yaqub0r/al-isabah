@@ -1,5 +1,13 @@
 # Volume 2 autonomous-stage remediation
 
+> **Historical status (2026-08-26): superseded and discredited as a current
+> remediation claim.** Issue [#70](https://github.com/yaqub0r/al-isabah/issues/70)
+> reopened the complete Volume 2 scope after independent review found that this
+> remediation did not establish the claimed autonomous-stage depth. The exact
+> prior proposal, review, and release closure remain immutable historical
+> evidence, but they are blocked from current closure and distribution and must
+> not be cited as current machine-readiness or agent-completion evidence.
+
 Issue [#70](https://github.com/yaqub0r/al-isabah/issues/70) corrects the
 autonomous-stage depth of source units 1538–3034. Human review remains the
 independent, ongoing management state and was not part of either the original

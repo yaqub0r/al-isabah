@@ -23,22 +23,142 @@ from validate_public_proposal import (
     records_sha256,
     validate as validate_proposal,
 )
-from validate_release_closure import CLOSURE as HISTORICAL_CLOSURE
+from validate_release_closure import CLOSURE as LEGACY_CLOSURE
 from validate_release_closure import validate as validate_historical_closure
 
 
 ROOT = Path(__file__).resolve().parents[1]
 CURRENT_CLOSURE = (
+    ROOT / "compliance" / "publication" / "issue-0070.release-closure.v1.json"
+)
+HISTORICAL_CLOSURE = (
     ROOT / "compliance" / "publication" / "issue-0053.release-closure.v1.json"
+)
+HISTORICAL_CLOSURE_SHA256 = (
+    "64d41b0752b2de3d11a944d440c3816ab04313c512e2c9c74c2a1aa03981e081"
 )
 PROPOSAL_ROOT = ROOT / "content" / "public-proposals"
 REGISTER = ROOT / "compliance" / "source-register.v1.json"
 RIGHTS = ROOT / "compliance" / "rights-matrix.al-isabah.v1.json"
 PROMOTION = ROOT / "compliance" / "promotions" / "available-data.v1.json"
+COVERAGE = ROOT / "compliance" / "translation-coverage.v1.json"
+CURRENT_DISTRIBUTION_REVIEW_STATUS = (
+    "approved-current-public-working-distribution-canonical-promotion-blocked"
+)
 
 
-def proposal_paths() -> list[Path]:
-    return sorted(PROPOSAL_ROOT.glob("*.public-proposal.json"))
+def _json_object(path: Path, location: str) -> tuple[dict[str, Any] | None, list[str]]:
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError):
+        return None, [safe_error(location, "invalid-json")]
+    if not isinstance(value, dict):
+        return None, [safe_error(location, "invalid-object")]
+    return value, []
+
+
+def current_proposal_paths(
+    coverage_path: Path = COVERAGE,
+    register_path: Path = REGISTER,
+) -> tuple[list[Path], list[str]]:
+    """Return only proposal artifacts admitted by current governed scope state."""
+
+    coverage, errors = _json_object(coverage_path, "$.translationCoverage")
+    register, register_errors = _json_object(register_path, "$.sourceRegister")
+    errors.extend(register_errors)
+    if coverage is None or register is None:
+        return [], errors
+    if (
+        coverage.get("schema") != "al-isabah.translation-coverage.v1"
+        or coverage.get("schema_version") != "1.1.0"
+    ):
+        errors.append(safe_error("$.translationCoverage", "coverage-contract-mismatch"))
+        return [], errors
+
+    artifacts = {
+        item.get("id"): item
+        for item in register.get("artifacts", [])
+        if isinstance(item, dict) and isinstance(item.get("id"), str)
+    }
+    scopes = coverage.get("scopes")
+    if not isinstance(scopes, list):
+        return [], errors + [safe_error("$.translationCoverage.scopes", "invalid-scope-inventory")]
+
+    current: list[Path] = []
+    admitted_ids: set[str] = set()
+    seen_volumes: set[int] = set()
+    for index, scope in enumerate(scopes):
+        location = f"$.translationCoverage.scopes[{index}]"
+        if not isinstance(scope, dict) or scope.get("scope_kind") != "volume":
+            errors.append(safe_error(location, "invalid-scope-inventory"))
+            continue
+        volume = scope.get("volume")
+        if not isinstance(volume, int) or isinstance(volume, bool) or volume in seen_volumes:
+            errors.append(safe_error(f"{location}.volume", "invalid-scope-inventory"))
+            continue
+        seen_volumes.add(volume)
+        completion = scope.get("agent_completion")
+        if not isinstance(completion, dict):
+            errors.append(safe_error(f"{location}.agentCompletion", "invalid-scope-state"))
+            continue
+        is_current_ready = (
+            completion.get("status") == "agent_complete"
+            and completion.get("locked_units") == completion.get("translated_units")
+            and completion.get("remaining_agent_units") == 0
+            and scope.get("workflow_conformance") == "current"
+            and scope.get("public_working_status") == "available"
+        )
+        if not is_current_ready:
+            continue
+        evidence = completion.get("evidence")
+        if not isinstance(evidence, dict):
+            errors.append(safe_error(f"{location}.agentCompletion.evidence", "missing-artifact"))
+            continue
+        proposal_id = evidence.get("source_register_artifact")
+        artifact = artifacts.get(proposal_id)
+        if (
+            not isinstance(proposal_id, str)
+            or not proposal_id.endswith("-public-proposal-v1")
+            or not isinstance(artifact, dict)
+            or artifact.get("review_status") != CURRENT_DISTRIBUTION_REVIEW_STATUS
+        ):
+            errors.append(safe_error(f"{location}.agentCompletion.evidence", "proposal-current-status-mismatch"))
+            continue
+        proposal_path = PROPOSAL_ROOT / f"{proposal_id.removesuffix('-public-proposal-v1')}.public-proposal.json"
+        integrity = artifact.get("integrity", {})
+        if (
+            not proposal_path.is_file()
+            or evidence.get("sha256") != integrity.get("proposal_sha256")
+            or evidence.get("sha256") != sha256_file(proposal_path)
+            or integrity.get("public_entries") != completion.get("locked_units")
+        ):
+            errors.append(safe_error(f"{location}.agentCompletion.evidence", "proposal-evidence-mismatch"))
+            continue
+        proposal, proposal_errors = _json_object(proposal_path, f"$.proposals.{proposal_id}")
+        errors.extend(proposal_errors)
+        if proposal is None:
+            continue
+        records = proposal.get("records")
+        if (
+            proposal.get("proposalId") != proposal_id
+            or not isinstance(records, list)
+            or len(records) != completion.get("locked_units")
+            or any(not isinstance(record, dict) or record.get("volume") != volume for record in records)
+        ):
+            errors.append(safe_error(f"$.proposals.{proposal_id}", "scope-projection-mismatch"))
+            continue
+        admitted_ids.add(proposal_id)
+        current.append(proposal_path)
+
+    for artifact_id, artifact in artifacts.items():
+        if (
+            artifact.get("review_status") == CURRENT_DISTRIBUTION_REVIEW_STATUS
+            and artifact_id not in admitted_ids
+        ):
+            errors.append(safe_error(f"$.sourceRegister.{artifact_id}", "unadmitted-current-proposal"))
+    if not current:
+        errors.append(safe_error("$.proposals", "missing-current-ready-artifact"))
+    return sorted(current), errors
 
 
 def public_review_path(proposal_path: Path) -> Path:
@@ -67,9 +187,16 @@ def text_file_binding(path: Path) -> dict[str, str]:
 
 
 def expected() -> tuple[dict[str, Any] | None, list[str]]:
-    errors = validate_historical_closure(HISTORICAL_CLOSURE)
+    errors = validate_historical_closure(LEGACY_CLOSURE)
+    if (
+        not HISTORICAL_CLOSURE.is_file()
+        or sha256_text_file(HISTORICAL_CLOSURE) != HISTORICAL_CLOSURE_SHA256
+    ):
+        errors.append(safe_error("$.historicalClosure", "historical-closure-mismatch"))
+    current_paths, readiness_errors = current_proposal_paths()
+    errors.extend(readiness_errors)
     proposals: list[tuple[Path, dict[str, Any], Path, bytes]] = []
-    for proposal_path in proposal_paths():
+    for proposal_path in current_paths:
         proposal_errors = validate_proposal(proposal_path)
         if proposal_errors:
             errors.append(
@@ -164,14 +291,15 @@ def expected() -> tuple[dict[str, Any] | None, list[str]]:
     promotion = json.loads(PROMOTION.read_text(encoding="utf-8"))
     closure = {
         "schemaVersion": "1.0.0",
-        "closureId": "issue-0053-public-working-closure-v1",
-        "issue": "https://github.com/yaqub0r/al-isabah/issues/53",
+        "closureId": "issue-0070-current-public-working-closure-v1",
+        "issue": "https://github.com/yaqub0r/al-isabah/issues/70",
         "publicationStatus": "public-working",
         "canonicalPromotion": "blocked",
         "consumerSchemaVersion": "2.0.0",
         "proposals": proposal_entries,
         "sourceAuthorities": [authorities[key] for key in sorted(authorities)],
         "sourceRegister": text_file_binding(REGISTER),
+        "translationCoverage": text_file_binding(COVERAGE),
         "rights": {
             "path": "compliance/rights-matrix.al-isabah.v1.json",
             "sha256": sha256_text_file(RIGHTS),
@@ -183,8 +311,8 @@ def expected() -> tuple[dict[str, Any] | None, list[str]]:
             "sha256": sha256_text_file(PROMOTION),
             "status": promotion["status"],
         },
-        # Bind canonical repository text so a Windows checkout with legacy
-        # CRLF material cannot change the preserved closure identity.
+        # Preserve the superseded cumulative closure as immutable history while
+        # current admission follows the governed proposal inventory above.
         "historicalClosure": text_file_binding(HISTORICAL_CLOSURE),
         "reviewCounts": review_counts,
         "outputInventory": sorted(output_inventory, key=lambda item: item["path"]),

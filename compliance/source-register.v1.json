@@ -1,7 +1,7 @@
 {
   "schema": "al-isabah.source-compliance-register.v1",
   "work_id": "ibn-hajar-al-isabah",
-  "assessed_at": "2026-08-12",
+  "assessed_at": "2026-08-26",
   "policy_binding": "compliance/policy-binding.v1.json",
   "classification_definitions": {
     "approved-for-publication": "An affirmative public reuse basis has been verified for this exact artifact and intended use.",
@@ -268,12 +268,12 @@
         "add restricted witness expression, raw findings, reconstructive evidence, or operational metadata",
         "publish without exact public-boundary and release-closure validation"
       ],
-      "review_status": "approved-forward-remediation-canonical-promotion-blocked"
+      "review_status": "approved-current-public-working-distribution-canonical-promotion-blocked"
     },
     {
       "id": "issue-0053-public-proposal-v1",
       "kind": "public-working-bilingual-proposal",
-      "title": "Issue 0053 Volume 2 strict public proposal",
+      "title": "Historical issue 0053 Volume 2 strict public proposal",
       "classification": "approved-for-publication",
       "rights_basis": "A deterministic strict-public projection of fifteen machine-ready Volume 2 translation packets. It retains the approved OpenITI Arabic authority, independently authored project English, normalized review state, formula identity, names, public-safe provenance, and aggregate evidence hashes while excluding internal stages, raw findings, witness expression, model traces, operational locations, and source coordinates.",
       "license": {
@@ -295,17 +295,56 @@
         "openiti-cleaned-arabic-comparison"
       ],
       "allowed_actions": [
+        "retain the immutable proposal and review as historical evidence",
+        "inspect and verify the exact historical public-boundary projection",
+        "use the artifact only as evidence of the superseded completion claim recorded by issue 70"
+      ],
+      "prohibited_public_actions": [
+        "include the proposal in a current release closure or public-working distribution while Volume 2 is reopened",
+        "represent the proposal as currently machine-ready, agent-complete, canonically promoted, or human-approved",
+        "add restricted witness expression, raw findings, internal stages, model traces, or operational metadata",
+        "rewrite or replace the immutable historical proposal or review"
+      ],
+      "review_status": "historical-reopened-scope-current-distribution-quarantined"
+    },
+    {
+      "id": "issue-0070-public-proposal-v1",
+      "kind": "public-working-bilingual-proposal",
+      "title": "Issue 0070 corrected Volume 2 strict public proposal",
+      "classification": "approved-for-publication",
+      "rights_basis": "A deterministic strict-public projection of the recovered machine-ready Volume 2 lineage. It retains the approved OpenITI Arabic authority, independently authored project English, normalized review state, formula identity, names, public-safe unresolved categories and priorities, continued structural context, and aggregate evidence hashes while excluding internal stages, detailed findings, witness expression, model traces, operational locations, private paths, and source coordinates.",
+      "license": {
+        "spdx": "CC-BY-NC-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      "integrity": {
+        "proposal_sha256": "9f1be4e740ea501fa1055e4298aab2add915342575723e377541da81cf762b11",
+        "public_review_sha256": "d39a48f00903074dc2cbb1bd73bfe7aaf312143ed008b906d14305fc9353a444",
+        "record_projection_sha256": "270e5867777693b32a92020dfff0952b1c4e24366a632980ea534dfea4be85b4",
+        "order_sha256": "2fc251be44606c0e9f72837ae2404fcfbc129aeac3190dc796d461be644c9126",
+        "user_facing_sha256": "ace77389d0a10122ec03d21524a11c5ebf54678417d79f5abede17383ed7ee6b",
+        "public_entries": 1497,
+        "packet_set_sha256": "e2a01dbca18974ebfd542b85ed341b1fc64c5f690ed7e7b1696b8793835ce9eb",
+        "review_set_sha256": "7f9d30139be62331a0cc525d91736f6aea54a11d377d79b3b7ab5851b20e29bf",
+        "submitted_packet_sha256": "5be390962508d54bb2ed0c82310bba6e17bfd1cc6d771e89ed91e592b89bf7d6",
+        "submitted_review_sha256": "a2aa7554db7f71a32010e6a7c9d166ff15648443e777b97245e8afb27432afbc"
+      },
+      "depends_on": [
+        "ibn-hajar-underlying-medieval-work",
+        "openiti-cleaned-arabic-comparison"
+      ],
+      "allowed_actions": [
         "noncommercial public-working reading with attribution and share-alike terms",
         "deterministic v2 consumer distribution",
         "aggregate machine and human review reporting",
-        "human review proposals without changing the agent-complete state"
+        "verify the public proposal against the immutable submitted evidence hashes"
       ],
       "prohibited_public_actions": [
-        "represent the proposal as canonically promoted or human-approved",
-        "add restricted witness expression, raw findings, internal stages, model traces, or operational metadata",
-        "publish without strict public-boundary and cumulative release-closure validation"
+        "represent the proposal as canonically promoted, human-approved, publication-eligible, or released",
+        "add detailed findings, restricted witness expression, internal stages, model traces, source coordinates, private paths, or operational metadata",
+        "overwrite or treat the historical issue 0053 proposal and review as current evidence"
       ],
-      "review_status": "approved-public-working-proposal-canonical-promotion-blocked"
+      "review_status": "approved-current-public-working-distribution-canonical-promotion-blocked"
     },
     {
       "id": "volume-08-aligned-arabic",

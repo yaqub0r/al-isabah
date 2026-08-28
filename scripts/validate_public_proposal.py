@@ -20,14 +20,27 @@ from public_boundary import (
     sha256_text_file,
     summarize,
 )
+import validate_entry_titles as title_contract
 
 
 ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_PROPOSAL = (
+    ROOT / "content" / "public-proposals" / "issue-0070.public-proposal.json"
+)
+# Immutable release-closure v1 provenance for the quarantined 1.1 proposal.
+# Only this exact proposal/version/hash tuple may use a superseded v2 snapshot.
+HISTORICAL_POLICY_BINDINGS = {
+    (
+        "1.1.0",
+        "issue-0053-public-proposal-v1",
+    ): "081b4d5903575710d9d7f21db6f978a0e7922b2e93431c1eab2f1a010e3f9ccf",
+}
 SHA1 = re.compile(r"^[a-f0-9]{40}$")
 SHA256 = re.compile(r"^[a-f0-9]{64}$")
 COMMIT = SHA1
 IDENTIFIER = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._:-]{2,199}$")
 PROPOSAL_ID = re.compile(r"^issue-[0-9]{4}-public-proposal-v1$")
+TITLE_PROFILE_ID = re.compile(r"^entry-title-decisions\.v[0-9]+$")
 COMMON_TOP_KEYS = {
     "schemaVersion", "proposalId", "workId", "publicationStatus",
     "canonicalPromotion", "consumerSchemaVersion", "sourceAuthority", "rights",
@@ -35,6 +48,7 @@ COMMON_TOP_KEYS = {
 }
 LEGACY_TOP_KEYS = COMMON_TOP_KEYS | {"historicalEvidence"}
 PACKET_SET_TOP_KEYS = COMMON_TOP_KEYS | {"evidenceBinding"}
+CURRENT_TOP_KEYS = PACKET_SET_TOP_KEYS | {"entryTitleDecisions", "sliceContext"}
 RECORD_KEYS = {
     "schemaVersion", "id", "kind", "workId", "packetId", "sourceOrdinal",
     "printedEntryNumber", "canonicalEntryId", "volume", "pages", "title",
@@ -48,6 +62,9 @@ KEYS = {
     "review": {"machinePassed", "needsAttention", "humanReviewed", "humanUnreviewed"},
     "historicalEvidence": {"packetGitBlobSha1", "packetGitBlobSha256", "packetGitBlobBytes", "reviewGitBlobSha1", "reviewSha256", "historyPreserved"},
     "evidenceBinding": {"kind", "packetCount", "packetSetSha256", "reviewCount", "reviewSetSha256", "recordProjectionSha256"},
+    "entryTitleDecisions": {"profileId", "profileSha256", "coveredRecordCount"},
+    "sliceContext": {"state", "beforeSourceOrdinal", "sourceProposalId", "sourceProposalSha256", "contexts"},
+    "sliceContextItem": {"sourceOccurrenceId", "displayContextId"},
     "baseline": {"distributionSchemaVersion", "recordCount", "userFacingSha256"},
     "license": {"spdx", "url", "attribution"},
     "page": {"volume", "page"},
@@ -70,14 +87,33 @@ def parse(path: Path) -> tuple[Any | None, list[str]]:
 
 
 def nested_key_errors(proposal: dict[str, Any]) -> list[str]:
-    legacy = proposal.get("schemaVersion") == "1.0.0"
-    errors = exact_keys(proposal, LEGACY_TOP_KEYS if legacy else PACKET_SET_TOP_KEYS, "$")
+    schema_version = proposal.get("schemaVersion")
+    legacy = schema_version == "1.0.0"
+    top_keys = (
+        LEGACY_TOP_KEYS
+        if legacy
+        else CURRENT_TOP_KEYS
+        if schema_version == "1.2.0"
+        else PACKET_SET_TOP_KEYS
+    )
+    errors = exact_keys(proposal, top_keys, "$")
     top_objects = ["sourceAuthority", "rights", "policy", "review", "baseline"]
     top_objects.append("historicalEvidence" if legacy else "evidenceBinding")
+    if schema_version == "1.2.0":
+        top_objects.extend(["entryTitleDecisions", "sliceContext"])
     for key in top_objects:
         errors.extend(exact_keys(proposal.get(key), KEYS[key], f"$.{key}"))
     authority = proposal.get("sourceAuthority", {})
     errors.extend(exact_keys(authority.get("license"), KEYS["license"], "$.sourceAuthority.license"))
+    if schema_version == "1.2.0":
+        for index, context in enumerate(proposal.get("sliceContext", {}).get("contexts", [])):
+            errors.extend(
+                exact_keys(
+                    context,
+                    KEYS["sliceContextItem"],
+                    f"$.sliceContext.contexts[{index}]",
+                )
+            )
     for index, record in enumerate(proposal.get("records", [])):
         base = f"$.records[{index}]"
         errors.extend(exact_keys(record, RECORD_KEYS, base))
@@ -116,6 +152,209 @@ def records_sha256(records: list[dict[str, Any]]) -> str:
     return sha256_bytes(b"".join(canonical_json(item) for item in records))
 
 
+def _title_decision_errors(proposal: dict[str, Any]) -> list[str]:
+    errors: list[str] = []
+    binding = proposal.get("entryTitleDecisions", {})
+    profile_id = binding.get("profileId")
+    if not isinstance(profile_id, str) or not TITLE_PROFILE_ID.fullmatch(profile_id):
+        return [safe_error("$.entryTitleDecisions.profileId", "title-profile-mismatch")]
+    profile_path = ROOT / "profiles" / f"{profile_id}.json"
+    if (
+        not profile_path.is_file()
+        or binding.get("profileSha256") != sha256_file(profile_path)
+    ):
+        return [safe_error("$.entryTitleDecisions", "title-profile-mismatch")]
+    try:
+        profile = title_contract.load(profile_path)
+        decisions = title_contract.decision_index(profile)
+    except (OSError, ValueError, json.JSONDecodeError):
+        return [safe_error("$.entryTitleDecisions", "title-profile-mismatch")]
+    records = proposal.get("records", [])
+    if binding.get("coveredRecordCount") != len(records):
+        errors.append(
+            safe_error(
+                "$.entryTitleDecisions.coveredRecordCount",
+                "title-decision-coverage-mismatch",
+            )
+        )
+    seen_numbers: set[int] = set()
+    for index, record in enumerate(records):
+        base = f"$.records[{index}]"
+        number = record.get("printedEntryNumber")
+        if not isinstance(number, int) or number in seen_numbers:
+            errors.append(
+                safe_error(
+                    f"{base}.printedEntryNumber",
+                    "ambiguous-title-decision-key",
+                )
+            )
+            continue
+        seen_numbers.add(number)
+        decision = decisions.get(number)
+        if decision is None:
+            errors.append(
+                safe_error(f"{base}.title", "missing-title-body-decision")
+            )
+            continue
+        expected_title = {
+            "arabic": decision["title"]["ar"],
+            "english": decision["title"]["en"],
+        }
+        title = record.get("title", {})
+        if (
+            {key: title.get(key) for key in ("arabic", "english")}
+            != expected_title
+            or title.get("method") != "profile-decision"
+        ):
+            errors.append(safe_error(f"{base}.title", "title-decision-mismatch"))
+        if not str(record.get("arabic", "")).startswith(
+            decision["bodyOpening"]["ar"]
+        ) or not str(record.get("english", "")).startswith(
+            decision["bodyOpening"]["en"]
+        ):
+            errors.append(
+                safe_error(base, "title-body-opening-mismatch")
+            )
+    return errors
+
+
+def _active_heading_contexts(
+    source_proposal: dict[str, Any], before_source_ordinal: int
+) -> list[dict[str, Any]]:
+    active: list[dict[str, Any]] = []
+    for record in source_proposal.get("records", []):
+        ordinal = record.get("sourceOrdinal")
+        if not isinstance(ordinal, int) or ordinal >= before_source_ordinal:
+            break
+        for context in record.get("precedingMaterial", []):
+            if context.get("kind") != "structural_heading":
+                continue
+            level = context.get("heading", {}).get("level")
+            if not isinstance(level, int) or level < 1:
+                return []
+            active = [
+                item
+                for item in active
+                if item["heading"]["level"] < level
+            ]
+            active.append(context)
+    return active
+
+
+def _continued_context(
+    source_context: dict[str, Any], first_source_ordinal: int
+) -> dict[str, Any]:
+    return {
+        "id": (
+            f"continued-before-unit-{first_source_ordinal:06d}-from-"
+            f"{source_context['id']}"
+        ),
+        "kind": "continued_structural_heading",
+        "heading": source_context["heading"],
+        "arabic": "",
+        "english": "",
+        "pages": source_context["pages"],
+        "humanReview": source_context["humanReview"],
+        "unresolved": source_context["unresolved"],
+        "sourceSha256": source_context["sourceSha256"],
+    }
+
+
+def _slice_context_errors(proposal: dict[str, Any]) -> list[str]:
+    errors: list[str] = []
+    records = proposal.get("records", [])
+    if not records:
+        return [safe_error("$.sliceContext", "missing-inherited-slice-context")]
+    first_ordinal = records[0].get("sourceOrdinal")
+    binding = proposal.get("sliceContext", {})
+    displayed_continued = [
+        (record_index, context)
+        for record_index, record in enumerate(records)
+        for context in record.get("precedingMaterial", [])
+        if context.get("kind") == "continued_structural_heading"
+    ]
+    if first_ordinal == 1:
+        if binding != {
+            "state": "root",
+            "beforeSourceOrdinal": 1,
+            "sourceProposalId": None,
+            "sourceProposalSha256": None,
+            "contexts": [],
+        } or displayed_continued:
+            errors.append(safe_error("$.sliceContext", "invalid-root-context"))
+        return errors
+    if (
+        binding.get("state") != "continued"
+        or binding.get("beforeSourceOrdinal") != first_ordinal
+        or not binding.get("contexts")
+    ):
+        return [safe_error("$.sliceContext", "missing-inherited-slice-context")]
+    source_proposal_id = binding.get("sourceProposalId")
+    if not isinstance(source_proposal_id, str) or not PROPOSAL_ID.fullmatch(
+        source_proposal_id
+    ):
+        return [safe_error("$.sliceContext.sourceProposalId", "context-source-mismatch")]
+    source_filename = (
+        source_proposal_id.removesuffix("-public-proposal-v1") + ".public-proposal.json"
+    )
+    source_path = ROOT / "content" / "public-proposals" / source_filename
+    if (
+        not source_path.is_file()
+        or binding.get("sourceProposalSha256") != sha256_file(source_path)
+    ):
+        return [safe_error("$.sliceContext", "context-source-mismatch")]
+    source_proposal, parse_errors = parse(source_path)
+    if parse_errors or not isinstance(source_proposal, dict):
+        return [safe_error("$.sliceContext", "context-source-mismatch")]
+    if validate(source_path, require_current=False):
+        return [safe_error("$.sliceContext", "context-source-mismatch")]
+    source_ordinals = [
+        item.get("sourceOrdinal")
+        for item in source_proposal.get("records", [])
+        if isinstance(item, dict) and isinstance(item.get("sourceOrdinal"), int)
+    ]
+    if (
+        source_proposal.get("sourceAuthority") != proposal.get("sourceAuthority")
+        or max(source_ordinals, default=0) != first_ordinal - 1
+    ):
+        errors.append(safe_error("$.sliceContext", "context-source-mismatch"))
+        return errors
+    active = _active_heading_contexts(source_proposal, first_ordinal)
+    expected_bindings: list[dict[str, str]] = []
+    expected_displayed: list[dict[str, Any]] = []
+    for source_context in active:
+        display = _continued_context(source_context, first_ordinal)
+        expected_bindings.append(
+            {
+                "sourceOccurrenceId": source_context["id"],
+                "displayContextId": display["id"],
+            }
+        )
+        expected_displayed.append(display)
+    if not active or binding.get("contexts") != expected_bindings:
+        errors.append(safe_error("$.sliceContext.contexts", "active-context-mismatch"))
+    first_contexts = records[0].get("precedingMaterial", [])
+    if first_contexts[: len(expected_displayed)] != expected_displayed:
+        errors.append(
+            safe_error(
+                "$.records[0].precedingMaterial",
+                "continued-context-mismatch",
+            )
+        )
+    if (
+        [context for _, context in displayed_continued] != expected_displayed
+        or any(record_index != 0 for record_index, _ in displayed_continued)
+    ):
+        errors.append(safe_error("$.records", "misplaced-continued-context"))
+    return errors
+
+
+def current_readiness_errors(proposal: dict[str, Any]) -> list[str]:
+    if proposal.get("schemaVersion") != "1.2.0":
+        return [safe_error("$.schemaVersion", "historical-proposal-not-current")]
+    return _title_decision_errors(proposal) + _slice_context_errors(proposal)
+
+
 def record_semantic_errors(record: dict[str, Any], base: str) -> list[str]:
     errors: list[str] = []
     if record.get("kind") != "entry" or record.get("workId") != "ibn-hajar-al-isabah":
@@ -126,7 +365,7 @@ def record_semantic_errors(record: dict[str, Any], base: str) -> list[str]:
     title = record.get("title", {})
     if not all(isinstance(title.get(key), str) and title[key].strip() for key in ("arabic", "english")):
         errors.append(safe_error(f"{base}.title", "incomplete-bilingual-content"))
-    if title.get("state") not in {"ready", "needs_attention"} or title.get("method") not in {"primary-name-candidate", "opening-fallback"}:
+    if title.get("state") not in {"ready", "needs_attention"} or title.get("method") not in {"primary-name-candidate", "opening-fallback", "profile-decision"}:
         errors.append(safe_error(f"{base}.title", "invalid-title-state"))
     for page_path, pages in [(f"{base}.pages", record.get("pages", []))] + [
         (f"{base}.precedingMaterial[{index}].pages", context.get("pages", []))
@@ -179,7 +418,11 @@ def record_semantic_errors(record: dict[str, Any], base: str) -> list[str]:
     return errors
 
 
-def validate(path: Path = ROOT / "content" / "public-proposals" / "issue-0026.public-proposal.json") -> list[str]:
+def validate(
+    path: Path = DEFAULT_PROPOSAL,
+    *,
+    require_current: bool = False,
+) -> list[str]:
     proposal, errors = parse(path)
     if proposal is None:
         return errors
@@ -197,7 +440,7 @@ def validate(path: Path = ROOT / "content" / "public-proposals" / "issue-0026.pu
     for key, value in expected.items():
         if proposal.get(key) != value:
             errors.append(safe_error(f"$.{key}", "contract-mismatch"))
-    if schema_version not in {"1.0.0", "1.1.0"}:
+    if schema_version not in {"1.0.0", "1.1.0", "1.2.0"}:
         errors.append(safe_error("$.schemaVersion", "contract-mismatch"))
     proposal_id = proposal.get("proposalId")
     if not isinstance(proposal_id, str) or not PROPOSAL_ID.fullmatch(proposal_id):
@@ -286,12 +529,19 @@ def validate(path: Path = ROOT / "content" / "public-proposals" / "issue-0026.pu
         != len(records)
     ):
         errors.append(safe_error("$.proposalId", "proposal-register-mismatch"))
-    policy_path = (
-        ROOT / "compliance" / "policy-binding.v1.json"
-        if schema_version == "1.0.0"
-        else ROOT / "compliance" / "policy-binding.v2.json"
+    historical_policy_hash = HISTORICAL_POLICY_BINDINGS.get(
+        (schema_version, str(proposal_id))
     )
-    policy_hash = sha256_text_file(policy_path)
+    if schema_version == "1.0.0":
+        policy_hash = sha256_text_file(
+            ROOT / "compliance" / "policy-binding.v1.json"
+        )
+    elif historical_policy_hash is not None:
+        policy_hash = historical_policy_hash
+    else:
+        policy_hash = sha256_text_file(
+            ROOT / "compliance" / "policy-binding.v2.json"
+        )
     if proposal.get("policy", {}).get("bindingSha256") != policy_hash:
         errors.append(safe_error("$.policy.bindingSha256", "policy-mismatch"))
     rights = json.loads((ROOT / "compliance" / "rights-matrix.al-isabah.v1.json").read_text(encoding="utf-8"))
@@ -323,14 +573,24 @@ def validate(path: Path = ROOT / "content" / "public-proposals" / "issue-0026.pu
             errors.append(safe_error("$.evidenceBinding", "evidence-binding-mismatch"))
         if evidence.get("recordProjectionSha256") != records_sha256(records):
             errors.append(safe_error("$.evidenceBinding.recordProjectionSha256", "projection-mismatch"))
+    if schema_version == "1.2.0" or require_current:
+        errors.extend(current_readiness_errors(proposal))
     return errors
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("path", nargs="?", type=Path, default=ROOT / "content" / "public-proposals" / "issue-0026.public-proposal.json")
+    parser.add_argument("path", nargs="?", type=Path, default=DEFAULT_PROPOSAL)
+    parser.add_argument(
+        "--allow-historical",
+        action="store_true",
+        help="validate an immutable 1.0/1.1 artifact without claiming current readiness",
+    )
     args = parser.parse_args()
-    errors = validate(args.path.resolve())
+    errors = validate(
+        args.path.resolve(),
+        require_current=not args.allow_historical,
+    )
     if errors:
         print(summarize(errors))
         for error in errors:
