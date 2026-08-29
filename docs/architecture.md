@@ -136,11 +136,13 @@ Rendering must not make commentary appear to be Ibn Hajar's text.
 
 ## Promotion policy
 
-Candidate records remain non-canonical until the repository-local
-source-compliance and scholarly-review gates approve an explicit promotion
-manifest. Repository validation refuses canonical content that lacks reviewed
-Arabic and English, an active stable identifier, source hashes, and promotion
-provenance. Import never silently overwrites canonical history.
+Candidate records remain non-canonical until the repository-local substantive
+and compliance gates approve an explicit promotion manifest. Repository
+validation refuses canonical content that lacks an active stable identifier,
+exact source and provenance binding, rights eligibility, deterministic
+validation, public-boundary compliance, or honest unresolved-state and
+human-review disclosure. Human-review coverage is ongoing metadata and never a
+promotion gate by itself. Import never silently overwrites canonical history.
 
 ## Reader and review workflow
 

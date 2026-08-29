@@ -11,7 +11,7 @@ For every Arabic-to-English translation task, read these documents in order:
 
 1. [`translation-quality-workflow`](translation-quality-workflow.md) — the
    required source lock, autonomous translation, critique, witness,
-   adjudication, validation, presentation, and human-review gates;
+   adjudication, validation, presentation, and human-review handoff;
 2. [Al-Isabah translation profile](../translation-profiles/al-isabah.md) — the
    approved Arabic authority, witness roles, honorific rules, stable units,
    Volume 8 precedent, and book-specific quality targets; and
@@ -31,7 +31,7 @@ coverage is an independent, ongoing management state.
 
 ## Local supporting controls
 
-- [`translation-governance-reference.v1.json`](translation-governance-reference.v1.json)
+- [`translation-governance-reference.v2.json`](translation-governance-reference.v2.json)
   is the versioned, integrity-bound discovery document for downstream
   consumers. The companion [compatibility guide](downstream-consumer-compatibility.md)
   defines pinning, release semantics, and the Sabiqah deprecation inventory.
@@ -44,17 +44,17 @@ coverage is an independent, ongoing management state.
   translation workflow.
 - [`compliance/source-register.v1.json`](../../compliance/source-register.v1.json)
   classifies authorities and witnesses and records publication eligibility.
-- [`compliance/promotions/available-data.v1.json`](../../compliance/promotions/available-data.v1.json)
+- [`compliance/promotions/available-data.v2.json`](../../compliance/promotions/available-data.v2.json)
   records current public-working and canonical-promotion readiness.
 - [`compliance/translation-coverage.v1.json`](../../compliance/translation-coverage.v1.json)
   records aggregate agent completion separately from human-review coverage and
   promotion state.
 - [`canonical-publication-repository.md`](../architecture/canonical-publication-repository.md)
   defines the repository boundary and release responsibilities.
-- [`compliance/policy-binding.v2.json`](../../compliance/policy-binding.v2.json)
+- [`compliance/policy-binding.v3.json`](../../compliance/policy-binding.v3.json)
   integrity-pins the local contracts, translation profile, and pinned-source
-  profile used by new translation work. Version 1 remains immutable provenance
-  for releases created under its policy set.
+  profile used by new translation work. Versions 1 and 2 remain immutable
+  provenance for releases created under their policy sets.
 
 ## Validation
 
@@ -67,6 +67,7 @@ python scripts/validate_content.py
 python scripts/validate_entry_titles.py
 ```
 
-A passing structural check does not create human approval, settle a rights
-question, or make a release eligible. Those states remain explicit in the
-records they govern.
+A passing structural check does not create human approval or settle a rights
+question. Human approval is disclosed, never inferred; release eligibility is
+decided independently by the exact substantive controls in the active
+promotion-readiness record.

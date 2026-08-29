@@ -19,7 +19,7 @@ def write_json(path: Path, value: object) -> None:
 
 def entry(entry_id: str = "isabah-entry-00000001") -> dict:
     return {
-        "schemaVersion": "1.0.0",
+        "schemaVersion": "2.0.0",
         "id": entry_id,
         "workId": "ibn-hajar-al-isabah",
         "printedEntryNumber": 1,
@@ -35,7 +35,22 @@ def entry(entry_id: str = "isabah-entry-00000001") -> dict:
             }
         ],
         "names": ["Name"],
-        "review": {"arabic": "reviewed", "translation": "reviewed", "compliance": "approved"},
+        "review": {
+            "managementState": "ongoing",
+            "arabic": "unreviewed",
+            "translation": "unreviewed",
+        },
+        "compliance": "approved",
+        "eligibility": {
+            "sourceBinding": "passed",
+            "provenanceBinding": "passed",
+            "rightsEligibility": "passed",
+            "publicOutputBoundary": "passed",
+            "deterministicValidation": "passed",
+            "substantiveEligibility": "passed",
+            "unresolvedStateDisclosure": "passed",
+        },
+        "unresolved": [],
         "provenance": {"promotionManifest": "compliance/promotions/release.v1.json", "sourceCommit": "b" * 40},
     }
 
@@ -57,7 +72,7 @@ def ledger(entry_id: str = "isabah-entry-00000001") -> dict:
 
 
 class ContentValidationTests(unittest.TestCase):
-    def test_accepts_reviewed_promoted_entry(self) -> None:
+    def test_accepts_zero_review_promoted_entry(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             content = Path(directory) / "content"
             write_json(content / "entries" / "isabah-entry-00000001.json", entry())
@@ -68,11 +83,31 @@ class ContentValidationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             content = Path(directory) / "content"
             value = entry()
-            value["review"]["compliance"] = "blocked"
+            value["compliance"] = "blocked"
             write_json(content / "entries" / "isabah-entry-00000001.json", value)
             write_json(content / "identifiers.json", ledger())
             errors = MODULE.validate(content)
             self.assertTrue(any("compliance approval" in error for error in errors), errors)
+
+    def test_rejects_missing_human_review_disclosure(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            content = Path(directory) / "content"
+            value = entry()
+            del value["review"]
+            write_json(content / "entries" / "isabah-entry-00000001.json", value)
+            write_json(content / "identifiers.json", ledger())
+            errors = MODULE.validate(content)
+            self.assertTrue(any("state disclosure" in error for error in errors), errors)
+
+    def test_rejects_substantive_eligibility_defect(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            content = Path(directory) / "content"
+            value = entry()
+            value["eligibility"]["substantiveEligibility"] = "blocked"
+            write_json(content / "entries" / "isabah-entry-00000001.json", value)
+            write_json(content / "identifiers.json", ledger())
+            errors = MODULE.validate(content)
+            self.assertTrue(any("substantiveEligibility must pass" in error for error in errors), errors)
 
     def test_rejects_unallocated_record(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

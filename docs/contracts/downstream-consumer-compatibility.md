@@ -3,7 +3,7 @@
 - **Status:** Active
 - **Issue:** [#45](https://github.com/yaqub0r/al-isabah/issues/45)
 - **Machine reference:**
-  [`translation-governance-reference.v1.json`](translation-governance-reference.v1.json)
+  [`translation-governance-reference.v2.json`](translation-governance-reference.v2.json)
 
 ## Authority and pinning
 
@@ -31,10 +31,23 @@ contract. Public distribution schema v2 remains the active ingestion format;
 schema v1 remains rollback-only. This ownership cleanup changes neither
 schema, release class, nor existing release bytes.
 
+Reference v2.0.0 is a breaking consumer-interpretation change. It supersedes
+the immutable v1 reference by exact hash and makes these requirements
+machine-readable: human review is append-only and nonterminal, its state and
+coverage are required disclosures, and its coverage has no publication,
+promotion, eligibility, or release-class effect. Consumers must reject a
+missing disclosure and must continue to fail closed on the enumerated source,
+provenance, rights, public-boundary, deterministic-validation, substantive, and
+unresolved-state controls. Existing releases retain their original policy and
+reference pins; consumers upgrade by pinning the v2 path at a new immutable
+Al-Isabah commit rather than rewriting an earlier release.
+
 ## Review, correction, and release semantics
 
-Human scholarly review changes per-record review metadata and confidence. It
-does not create or select a different release class. Additional translations,
+Human scholarly review changes append-only per-record review metadata and
+confidence. It is ongoing and nonterminal, and its absence or incomplete
+coverage never blocks publication, promotion, or release eligibility by itself.
+It does not create or select a different release class. Additional translations,
 accepted corrections, and increased review coverage all use the same
 immutable release cycle: validate a new repository state, issue a new
 checksum-addressed release when separately authorized, and retain explicit
@@ -44,7 +57,10 @@ A consumer may retain its own reviewer accounts, access control, append-only
 review events, private evidence, application state, storage, and presentation.
 Those responsibilities do not make the consumer the scholarly authority.
 Accepted review decisions return through an Al-Isabah-governed proposal and
-release process before they become canonical book metadata.
+release process before they become canonical book metadata. A discovered
+source, rights, provenance, boundary, validation, or substantive defect may
+block the affected record under its own reason code; review status is never the
+blocking reason.
 
 ## Sabiqah follow-up inventory
 

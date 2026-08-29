@@ -66,8 +66,9 @@ Each promotion must identify:
   source authority, public-output eligibility, Arabic-form honorific
   preservation, and translation lineage;
 - the source commit or reproducible content hash;
-- completed scholarly and compliance reviews; and
-- unresolved limitations that must remain visible to readers and reviewers.
+- passing rights, public-boundary, deterministic-validation, substantive, and
+  compliance controls; and
+- complete disclosure of unresolved limitations and ongoing human-review state.
 
 Repository validation and maintainer review are independent gates. Promotion
 does not permit an application or agent to silently overwrite canonical Arabic,
@@ -77,9 +78,10 @@ An application may expose a separately validated `public-working` corpus before
 canonical promotion. Such a corpus must use approved public-source expression,
 carry its license and attribution, exclude private evidence, and quarantine
 failed records under the local translation contract. Public readability is not
-an implicit promotion request: only the subset that later completes human
-scholarly review, compliance approval, and the manifest gates becomes
-canonical.
+an implicit promotion request: only the subset that passes the substantive
+compliance and manifest gates becomes canonical. Human review remains
+append-only, ongoing metadata; zero or incomplete coverage never blocks
+promotion by itself.
 
 ## Release and consumption
 
@@ -96,7 +98,7 @@ the repository's internal working layout.
 
 Consumers discover the governing policy set and aggregate translation coverage
 through the versioned
-[translation-governance reference](../contracts/translation-governance-reference.v1.json)
+[translation-governance reference](../contracts/translation-governance-reference.v2.json)
 and pin it at an immutable repository commit. That reference records the active
 policy, formula-registry, and translation-coverage hashes without replacing the
 public distribution schema. Human review remains per-record metadata and
@@ -110,5 +112,6 @@ records the forward remediation and historical-exposure exception. This does
 not change the separate canonical-promotion gates.
 
 Corrections arrive as reviewable proposals with their rationale and evidence
-references. Accepted corrections create new history; they do not erase the
-provenance or review record of earlier releases.
+references. Accepted corrections create new immutable superseding releases;
+they do not erase the provenance or review record of earlier releases, imply
+review completion, or select a different release class.

@@ -1,0 +1,43 @@
+{
+  "schema": "al-isabah.local-policy-binding.v3",
+  "authority": {
+    "repository": "https://github.com/yaqub0r/al-isabah",
+    "scope": "repository-local",
+    "issue": "https://github.com/yaqub0r/al-isabah/issues/73"
+  },
+  "contracts": [
+    {
+      "id": "translation-quality-workflow",
+      "path": "docs/contracts/translation-quality-workflow.md",
+      "sha256": "ae90fbc72e4cba2ab000d957db7306f87a7cb19422320e5fd9a1fca9b97b251e"
+    },
+    {
+      "id": "al-isabah-translation-profile",
+      "path": "docs/translation-profiles/al-isabah.md",
+      "sha256": "640a6c58adf135d43d32759101f37d1084549eb039d59ddc11efe8d9a1b713c1"
+    },
+    {
+      "id": "entry-title-structure",
+      "path": "docs/contracts/entry-title-structure.md",
+      "sha256": "e950f6375c45a06699d9b2653a4c7821cfd45879277369d1107720c6617272ba"
+    },
+    {
+      "id": "entry-title-decisions",
+      "path": "profiles/entry-title-decisions.v3.json",
+      "sha256": "dc5f80db7c897b4ecf0df5b5fa1bce7ce7388d05fe6607f6a6cdb9e092934afc"
+    },
+    {
+      "id": "honorific-formula-registry",
+      "path": "profiles/honorific-formulas.v1.json",
+      "sha256": "b23fcd528b840b0e5bbe8932fca6eeaaa576ee51263d9838d4f8d18e40c9e100"
+    },
+    {
+      "id": "translation-source-profile",
+      "path": "profiles/translation-source.v1.json",
+      "sha256": "c3db1e037a9f98ed7c6ada57d076084e5451c5651ed972ea68867ed5ad580ead"
+    }
+  ],
+  "supersedes": "compliance/policy-binding.v2.json",
+  "applied_by_issue": "https://github.com/yaqub0r/al-isabah/issues/73",
+  "note": "This binding makes human scholarly review append-only, ongoing, disclosed, and non-gating while preserving fail-closed source, rights, provenance, public-boundary, deterministic-validation, substantive, and unresolved-state controls. The v1 and v2 bindings remain immutable release provenance; this is not a legal opinion."
+}

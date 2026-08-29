@@ -257,8 +257,11 @@ without retroactively making the earlier completed revision incomplete.
 Eligible records are packaged in an explicit promotion manifest referencing the
 immutable translation corpus and evidence hashes without exposing restricted
 expression or private object locations. Repository validation independently
-checks stable identifiers, reviewed Arabic and English, public provenance,
-compliance status, and promotion lineage before accepting canonical content.
+checks stable identifiers, exact source and public provenance, rights and
+compliance status, deterministic autonomous validation, disclosed unresolved
+state, disclosed ongoing human-review state, and promotion lineage before
+accepting canonical content. It does not require any minimum human-review
+coverage.
 
 Public readability precedes and does not bypass this promotion boundary. A
 working record may be publicly consumable while still labeled unreviewed,

@@ -185,6 +185,48 @@ class PublicDistributionTests(unittest.TestCase):
             "a2aa7554db7f71a32010e6a7c9d166ff15648443e777b97245e8afb27432afbc",
         )
 
+    def test_missing_review_state_disclosure_fails_at_every_public_boundary(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+
+            proposal = copy.deepcopy(self.issue_0070_proposal)
+            del proposal["review"]
+            proposal_path = root / "proposal.json"
+            proposal_path.write_bytes(BOUNDARY.canonical_json(proposal))
+            self.assertTrue(
+                any(
+                    "category=missing-field" in error and ".review" in error
+                    for error in PROPOSAL_VALIDATOR.validate(proposal_path)
+                )
+            )
+
+            closure = json.loads(
+                CURRENT_CLOSURE.CURRENT_CLOSURE.read_text(encoding="utf-8")
+            )
+            del closure["reviewCounts"]
+            closure_path = root / "closure.json"
+            closure_path.write_bytes(BOUNDARY.canonical_json(closure))
+            self.assertTrue(
+                any(
+                    "category=current-closure-mismatch" in error
+                    for error in CURRENT_CLOSURE.validate(closure_path)
+                )
+            )
+
+            output = root / "distribution"
+            BUILD.build(output, COMMIT, GENERATED_AT)
+            manifest_path = output / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            del manifest["counts"]["humanReviewed"]
+            manifest_path.write_bytes(BOUNDARY.canonical_json(manifest))
+            self.assertTrue(
+                any(
+                    "category=missing-field" in error
+                    and ".counts.humanReviewed" in error
+                    for error in VALIDATE.validate(output)
+                )
+            )
+
     def test_current_closure_admits_corrected_volume2_and_quarantines_history(self):
         paths, errors = CURRENT_CLOSURE.current_proposal_paths()
         self.assertEqual(errors, [])

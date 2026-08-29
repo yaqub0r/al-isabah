@@ -24,7 +24,7 @@ clone -> doctor -> hydrate -> claim -> prepare
 
 Human review is deliberately absent from the agent stages. A valid submission
 must still say `unreviewed`; the pull request makes the machine-ready evidence
-available for the later human gate.
+available for ongoing human review, whose coverage is disclosed but non-gating.
 
 When every substantive unit in the claimed volume or cohort has passed these
 agent stages and the aggregate has zero remaining agent units, the scope is
@@ -263,7 +263,9 @@ The pull request references the assignment issue without closing it unless the
 complete assigned range is present and valid. Machine-ready does not mean
 canonical. A fully covered machine-ready scope is agent-complete even while
 human review remains open. Human review, compliance approval, canonical ID
-allocation, and promotion remain later, independently recorded gates.
+allocation, and promotion remain later, independently recorded dimensions.
+Human review is metadata and a correction source; the other controls determine
+eligibility on their own terms.
 
 ## Recovery and parallel work
 
