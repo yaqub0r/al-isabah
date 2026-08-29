@@ -21,7 +21,7 @@ model](docs/architecture/canonical-publication-repository.md) for the complete
 responsibility and trust-boundary model.
 
 Downstream consumers discover and pin the versioned
-[translation-governance reference](docs/contracts/translation-governance-reference.v1.json).
+[translation-governance reference](docs/contracts/translation-governance-reference.v2.json).
 Its [compatibility guide](docs/contracts/downstream-consumer-compatibility.md)
 documents immutable-commit pinning, the Al-Isabah-owned formula registry,
 consumer responsibilities, and the downstream deprecation path. Human review
@@ -40,7 +40,8 @@ Together they specify the authoritative Arabic source, witness roles, stable
 units and JSON names, autonomous quality stages, human-review handoff, and
 promotion boundary.
 
-Human review is deliberately last. A draft must first complete every applicable
+Human review deliberately begins after the autonomous handoff; it is not a
+terminal publication gate. A draft must first complete every applicable
 autonomous alignment, blind translation, critique, witness, adjudication,
 validation, and readable-presentation step. The local compliance validator
 integrity-checks these policy files so a fresh clone cannot silently depend on
@@ -91,7 +92,7 @@ from typography or body length.
 The [source compliance register](compliance/source-register.v1.json) applies
 the repository-local policy binding to the data currently available on the
 Volume 8 and Khadijah development branches. The corresponding [promotion
-readiness manifest](compliance/promotions/available-data.v1.json) is
+readiness manifest](compliance/promotions/available-data.v2.json) is
 **blocked**: the current Arabic and English records remain useful research and
 review material, but they are not approved for a public release.
 
@@ -120,9 +121,11 @@ python scripts/validate_entry_titles.py
 ```
 
 Canonical publication records are validated separately from private research
-evidence. Run `python scripts/validate_content.py`; it fails closed when
-an entry lacks an active stable identifier, reviewed Arabic and English,
-compliance approval, source hashes, or an explicit promotion manifest.
+evidence. Run `python scripts/validate_content.py`; it fails closed when an
+entry lacks an active stable identifier, exact substantive eligibility
+attestations, disclosed ongoing human-review and unresolved states, compliance
+approval, source hashes, or an explicit promotion manifest. Zero or incomplete
+human-review coverage is not itself a blocker.
 
 The legacy Volume 8 and Khadijah development work was retained in approved
 access-controlled research storage rather than promoted here. Its non-sensitive

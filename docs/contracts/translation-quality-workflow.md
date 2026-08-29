@@ -14,9 +14,10 @@ requirements for this work and must not weaken them.
 The workflow optimizes for traceable accuracy, not fluent output alone. The
 project must exhaust the applicable autonomous checks and witnesses before
 asking a reviewer to inspect the work. A reviewer receives a bounded evidence
-package, not an unexplained text dump. Human review remains a scholarly and
-canonical-promotion gate, but it is not part of the definition of whether the
-agent has finished translating a locked scope.
+package, not an unexplained text dump. Human review remains append-only,
+ongoing scholarly metadata and a source of corrections. Its absence or
+incomplete coverage is neither a translation-completion test nor a publication,
+promotion, or release-eligibility gate.
 
 ## Ownership boundary
 
@@ -33,7 +34,7 @@ become the scholarly authority by storing or displaying project artifacts.
 
 This contract works with the repository-local
 [`source register`](../../compliance/source-register.v1.json),
-[`promotion-readiness record`](../../compliance/promotions/available-data.v1.json),
+[`promotion-readiness record`](../../compliance/promotions/available-data.v2.json),
 and [canonical publication model](../architecture/canonical-publication-repository.md).
 It does not authorize redistribution or declare a translation canonical.
 
@@ -75,11 +76,11 @@ product. Facts learned from a witness require an independently written record
 and, where applicable, verification against a publication-approved source.
 
 Public consumability is not canonical status. A machine-ready or unreviewed
-record may be publicly readable when it satisfies this invariant, while human
-approval, compliance approval, book-repository acceptance, and versioned
-canonical release remain separate later gates. Public consumability is a
-property of the work product, independent of its human-review and canonical-
-promotion state.
+record may be publicly readable when it satisfies this invariant. Compliance,
+book-repository acceptance, and versioned canonical release remain separate
+later gates; human-review state remains disclosed metadata rather than one of
+those gates. Public consumability is a property of the work product,
+independent of its human-review and canonical-promotion state.
 
 ## Required source bundle
 
@@ -343,11 +344,19 @@ mark machine assessment complete or needing attention; it must never set
 ### 10. Human review and promotion
 
 Human review records reviewer identity, scope, date, decisions, and unresolved
-flags as ongoing management of an already agent-complete work product. Approval
-makes a record eligible for local compliance and canonical promotion; it does
-not perform promotion itself and it does not determine agent completion.
-Promotion follows the local promotion-readiness record, canonical publication
-model, and independent repository validation.
+flags as ongoing, append-only management of an already agent-complete work
+product. Zero, partial, or increased review coverage must be disclosed and
+never makes a record eligible or ineligible by itself. Promotion follows the
+local promotion-readiness record, canonical publication model, and independent
+repository validation of exact source and provenance binding, rights,
+public-output boundaries, deterministic autonomous validation, substantive
+eligibility, and unresolved-state disclosure.
+
+A review may discover a concrete defect. The affected record then blocks under
+that defect's source, rights, provenance, boundary, validation, or substantive
+reason code—not under review absence or coverage. An accepted correction
+creates a new immutable superseding release without implying review completion
+or selecting a separate release class.
 
 Human review may improve or approve a publicly consumable working record, but
 it must never be used to retroactively legalize restricted source expression.
@@ -395,10 +404,13 @@ in prompts, public manifests, logs, or canonical content.
 
 ## Fail-closed conditions
 
-The workflow does not open human review or promotion when any required input is
+The workflow does not open human review when its autonomous handoff inputs are
 missing, stale, unclassified, misaligned, provider-indeterminate, structurally
-incomplete, or unsupported by current hashes. The blocked state must state the
-reason and the evidence needed to continue.
+incomplete, or unsupported by current hashes. Promotion independently fails
+closed on those same concrete defects and on missing review-state or
+unresolved-state disclosure. Human-review absence or incomplete coverage is
+never itself a blocker. Every blocked state must state the defect and the
+evidence needed to continue.
 
 The workflow must also refuse to write a durable translation record or reading
 presentation when the displayed source authority lacks

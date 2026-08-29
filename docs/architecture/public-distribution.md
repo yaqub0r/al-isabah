@@ -15,7 +15,9 @@ Each strict `public-proposal.v1` artifact contributes its approved public-workin
 records to a deterministic distribution. Internal translation-work packets are
 not build inputs. A distribution is immutable,
 checksum-addressed, bound to the exact repository commit and source authority,
-and explicitly distinct from a canonical or human-approved release.
+and explicitly distinct from canonical promotion. Human-review state is
+disclosed per record and in aggregate, but no amount of review coverage defines
+a release class or publication eligibility.
 
 Public-proposal v1.0 remains the exact historical-remediation shape for issue
 0026. Public-proposal v1.1 is the additive shape for packet sets that never
@@ -58,9 +60,11 @@ content license, required attribution, and excluded material. The current
 eligible public scholarly content is CC BY-NC-SA 4.0. This is a content grant,
 not a software license; code and repository infrastructure remain outside it.
 
-An unreviewed record may be public-working. It is never represented as
-canonical. Ambiguous title projection remains visibly `needs_attention` and
-does not silently acquire human approval.
+An unreviewed record may be public-working or canonically promoted when every
+independent substantive eligibility control passes. Its review state is always
+disclosed. Ambiguous title projection remains visibly `needs_attention`; a
+substantive title defect blocks the affected record because of that defect, not
+because human review is absent.
 
 ## Files
 

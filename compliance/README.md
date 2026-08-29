@@ -18,8 +18,9 @@ The policy binding is repository-local. It integrity-pins:
 - `translation-source-profile`.
 
 The active binding, repository-relative paths, and canonical UTF-8/LF SHA-256
-digests are recorded in [`policy-binding.v2.json`](policy-binding.v2.json).
-Version 1 remains byte-stable because existing public-working releases pin it.
+digests are recorded in [`policy-binding.v3.json`](policy-binding.v3.json).
+Versions 1 and 2 remain byte-stable because existing public-working releases
+pin them.
 Validation fails if a required policy file is missing, changed without review,
 resolves outside the repository, or names another repository as its authority.
 
@@ -28,7 +29,7 @@ resolves outside the repository, or names another repository as its authority.
 - [`source-register.v1.json`](source-register.v1.json) classifies source and
   derived-data classes without publishing restricted expression, private
   storage locations, or access credentials.
-- [`promotions/available-data.v1.json`](promotions/available-data.v1.json)
+- [`promotions/available-data.v2.json`](promotions/available-data.v2.json)
   evaluates the presently available Volume 8 and Khadijah data for promotion.
 - [`translation-coverage.v1.json`](translation-coverage.v1.json) reports whether
   each locked volume or cohort is agent-complete while keeping human-review,
@@ -51,14 +52,15 @@ honorific checks retain English; the other 69 entries remain public in approved
 Arabic while their legacy English is withheld. The 14 legacy contextual
 passages are not book entries and remain named in the corpus quarantine ledger.
 
-Canonical promotion into this repository remains blocked. In particular:
+Canonical promotion into this repository remains blocked by concrete source,
+rights, provenance, and substantive conditions. In particular:
 
 - the 1995 DKI Arabic facsimile, reader text, OCR, and aligned transcription are
   private/reference-only research witnesses, not approved public source text;
 - the modern Urdu translation is a private comparison witness, not a public
   translation base;
-- the legacy English and entry projections have not completed human and
-  canonical-repository review;
+- the legacy English and entry projections lack current source/provenance
+  binding and deterministic substantive eligibility evidence;
 - the old projections still contain modern editorial apparatus and are not the
   public-working corpus;
 - exact historical acquisition dates for retained research witnesses were not
@@ -69,8 +71,15 @@ does not assert that the underlying medieval work is protected, and it does not
 require deleting research evidence. The public-working determination permits
 honest reading and review; it does not convert machine-remediated records into
 the canonical scholarly edition. Promotion can be reconsidered after English
-lineage and scholarship are independently reviewed and every applicable
-repository gate passes.
+lineage and substantive findings are deterministically resolved or honestly
+carried forward and every applicable repository gate passes. Human scholarly
+review remains append-only, ongoing, nonterminal metadata; zero or incomplete
+coverage is disclosed and never blocks publication or promotion by itself.
+
+The release-bound v1 promotion record, v1 source register, v1/v2 policy
+bindings, and publication closures retain their historical wording and hashes.
+They are immutable evidence, not the active interpretation contract. New
+consumers pin the v2 governance reference and v2 promotion-readiness record.
 
 ## Public content license and boundary
 

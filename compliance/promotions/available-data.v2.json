@@ -1,0 +1,121 @@
+{
+  "schema": "al-isabah.promotion-readiness.v2",
+  "manifest_id": "available-data-2026-08-29",
+  "work_id": "ibn-hajar-al-isabah",
+  "policy_binding": "compliance/policy-binding.v3.json",
+  "source_register": "compliance/source-register.v1.json",
+  "rights_matrix": "compliance/rights-matrix.al-isabah.v1.json",
+  "translation_coverage": "compliance/translation-coverage.v1.json",
+  "status": "blocked",
+  "public_release_eligible": false,
+  "working_publication": {
+    "artifact": "al-isabah-public-working-corpus-openiti-5835c18-v1",
+    "corpus_id": "al-isabah-public-openiti-5835c18-v1",
+    "status": "public-working",
+    "canonical_promotion": "blocked",
+    "public_entries": 1565,
+    "quarantined_records": 14,
+    "gates": {
+      "source_binding": "passed",
+      "provenance_binding": "passed",
+      "rights_eligibility": "passed",
+      "public_output_boundary": "passed",
+      "deterministic_validation": "passed",
+      "honorific_preservation": "passed",
+      "unresolved_state_disclosure": "passed"
+    }
+  },
+  "candidate_revisions": [
+    {
+      "scope": "volume-08",
+      "repository": "https://github.com/yaqub0r/al-isabah",
+      "branch": "codex/issue-1-volume-8-migration",
+      "commit": "20264a5ca018fe2a2890dc070f9c6bd904e3cb84",
+      "dependencies": [
+        "volume-08-entry-projection",
+        "volume-08-aligned-arabic",
+        "volume-08-structured-english"
+      ]
+    },
+    {
+      "scope": "khadijah-immediate",
+      "repository": "https://github.com/yaqub0r/al-isabah",
+      "branch": "codex/issue-4-khadijah-cohort",
+      "commit": "a3b76bfc72cc9d5d8f6d7d26f249f2f32b0ef178",
+      "dependencies": [
+        "khadijah-cohort-candidate",
+        "dki-1995-arabic-edition",
+        "usul-shamela-dki-reader-text",
+        "urdu-modern-translation-witness"
+      ]
+    }
+  ],
+  "eligibility_controls": {
+    "source_binding": "blocked",
+    "provenance_binding": "blocked",
+    "rights_eligibility": "blocked",
+    "public_output_boundary": "blocked",
+    "deterministic_validation": "incomplete",
+    "substantive_eligibility": "incomplete",
+    "unresolved_state_disclosure": "passed"
+  },
+  "human_review": {
+    "management_state": "ongoing",
+    "evidence_mode": "append-only",
+    "coverage_record": "compliance/translation-coverage.v1.json",
+    "coverage_disclosure": "required",
+    "eligibility_effect": "none",
+    "release_class_effect": "none",
+    "terminal_completion_claim": false
+  },
+  "public_boundary_remediation": {
+    "issue": "https://github.com/yaqub0r/al-isabah/issues/35",
+    "status": "forward-remediated-current-tree",
+    "public_proposal": "issue-0026-public-proposal-v1",
+    "record_count": 1537,
+    "user_facing_parity": "passed",
+    "historical_exposure": "retained-by-explicit-no-history-rewrite-decision",
+    "legal_conclusion": false,
+    "publication_workflow": "disabled-manually",
+    "reenablement_conditions": [
+      "current-tree remediation is merged",
+      "public-boundary and release-closure validation pass on the merged commit",
+      "the historical-exposure decision remains recorded",
+      "repository review is complete",
+      "publication is deliberately re-enabled and then verified"
+    ]
+  },
+  "blockers": [
+    {
+      "id": "historical-acquisition-record-remediation",
+      "control": "provenance_binding",
+      "summary": "The exact historical acquisition dates for retained DKI/Usul and Urdu witnesses were not captured; preserve that limitation and complete the record where evidence permits."
+    },
+    {
+      "id": "candidate-source-rights-remediation",
+      "control": "source_binding",
+      "summary": "The candidate revisions depend on DKI/Usul-derived Arabic; rebuild or audit affected records against the approved public source before promotion."
+    },
+    {
+      "id": "candidate-rights-remediation",
+      "control": "rights_eligibility",
+      "summary": "The candidate revisions depend on restricted comparison witnesses; independently verify that no restricted expression enters a promoted record."
+    },
+    {
+      "id": "candidate-public-boundary-remediation",
+      "control": "public_output_boundary",
+      "summary": "The legacy candidate projections contain modern editorial apparatus and are not the validated public-working corpus."
+    },
+    {
+      "id": "deterministic-validation-required",
+      "control": "deterministic_validation",
+      "summary": "Bind every affected record to current autonomous validation evidence before promotion."
+    },
+    {
+      "id": "substantive-validation-required",
+      "control": "substantive_eligibility",
+      "summary": "Resolve or explicitly carry forward every substantive finding under the deterministic validation policy before promotion."
+    }
+  ],
+  "decision": "Serve only a validated application-neutral public-working corpus or strict public proposal with its license, attribution, disclosed ongoing human-review state, public-boundary checks, and exact release closure. Current Git history and earlier versioned records remain intact. Do not promote an affected record until every substantive eligibility control passes; zero or incomplete human review is never itself a blocker."
+}

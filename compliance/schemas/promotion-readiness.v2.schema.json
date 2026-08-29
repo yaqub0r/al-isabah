@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/compliance/schemas/promotion-readiness.v2.schema.json",
+  "title": "Al-Isabah promotion readiness v2",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema", "manifest_id", "work_id", "policy_binding", "source_register",
+    "rights_matrix", "translation_coverage", "status", "public_release_eligible",
+    "working_publication", "candidate_revisions", "eligibility_controls",
+    "human_review", "blockers", "decision"
+  ],
+  "properties": {
+    "schema": {"const": "al-isabah.promotion-readiness.v2"},
+    "policy_binding": {"const": "compliance/policy-binding.v3.json"},
+    "source_register": {"const": "compliance/source-register.v1.json"},
+    "rights_matrix": {"const": "compliance/rights-matrix.al-isabah.v1.json"},
+    "translation_coverage": {"const": "compliance/translation-coverage.v1.json"},
+    "status": {"enum": ["blocked", "eligible"]},
+    "public_release_eligible": {"type": "boolean"},
+    "working_publication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifact", "corpus_id", "status", "canonical_promotion", "public_entries", "quarantined_records", "gates"],
+      "properties": {
+        "artifact": {"type": "string", "minLength": 1},
+        "corpus_id": {"type": "string", "minLength": 1},
+        "status": {"const": "public-working"},
+        "canonical_promotion": {"const": "blocked"},
+        "public_entries": {"type": "integer", "minimum": 0},
+        "quarantined_records": {"type": "integer", "minimum": 0},
+        "gates": {"$ref": "#/$defs/workingGates"}
+      }
+    },
+    "candidate_revisions": {"type": "array", "minItems": 1},
+    "eligibility_controls": {"$ref": "#/$defs/eligibilityControls"},
+    "human_review": {"$ref": "#/$defs/humanReviewDisclosure"},
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "control", "summary"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "control": {"enum": ["source_binding", "provenance_binding", "rights_eligibility", "public_output_boundary", "deterministic_validation", "substantive_eligibility", "unresolved_state_disclosure"]},
+          "summary": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "state": {"enum": ["blocked", "incomplete", "passed"]},
+    "workingGates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_binding", "provenance_binding", "rights_eligibility", "public_output_boundary", "deterministic_validation", "honorific_preservation", "unresolved_state_disclosure"],
+      "properties": {
+        "source_binding": {"const": "passed"},
+        "provenance_binding": {"const": "passed"},
+        "rights_eligibility": {"const": "passed"},
+        "public_output_boundary": {"const": "passed"},
+        "deterministic_validation": {"const": "passed"},
+        "honorific_preservation": {"const": "passed"},
+        "unresolved_state_disclosure": {"const": "passed"}
+      }
+    },
+    "eligibilityControls": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_binding", "provenance_binding", "rights_eligibility", "public_output_boundary", "deterministic_validation", "substantive_eligibility", "unresolved_state_disclosure"],
+      "properties": {
+        "source_binding": {"$ref": "#/$defs/state"},
+        "provenance_binding": {"$ref": "#/$defs/state"},
+        "rights_eligibility": {"$ref": "#/$defs/state"},
+        "public_output_boundary": {"$ref": "#/$defs/state"},
+        "deterministic_validation": {"$ref": "#/$defs/state"},
+        "substantive_eligibility": {"$ref": "#/$defs/state"},
+        "unresolved_state_disclosure": {"$ref": "#/$defs/state"}
+      }
+    },
+    "humanReviewDisclosure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["management_state", "evidence_mode", "coverage_record", "coverage_disclosure", "eligibility_effect", "release_class_effect", "terminal_completion_claim"],
+      "properties": {
+        "management_state": {"const": "ongoing"},
+        "evidence_mode": {"const": "append-only"},
+        "coverage_record": {"const": "compliance/translation-coverage.v1.json"},
+        "coverage_disclosure": {"const": "required"},
+        "eligibility_effect": {"const": "none"},
+        "release_class_effect": {"const": "none"},
+        "terminal_completion_claim": {"const": false}
+      }
+    }
+  }
+}

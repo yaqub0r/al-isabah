@@ -22,6 +22,7 @@ COMMIT = re.compile(r"^[a-f0-9]{40}$")
 IDENTIFIER = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._:-]{2,199}$")
 UTC_TIMESTAMP = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z$")
 MANIFEST_KEYS = {"schemaVersion", "distributionId", "publicationStatus", "canonicalPromotion", "work", "repository", "generatedAt", "rights", "packets", "authorities", "counts", "duplicatePrintedEntryNumbers", "files", "releaseClosure"}
+COUNT_KEYS = {"entries", "machinePassed", "needsAttention", "humanReviewed"}
 
 
 def record_key_errors(record: dict[str, Any], base: str) -> list[str]:
@@ -59,6 +60,7 @@ def validate(root: Path) -> list[str]:
     except (UnicodeError, json.JSONDecodeError) as error:
         return [safe_error(f"$.manifest.line[{getattr(error, 'lineno', 0)}]", "invalid-json")]
     errors.extend(exact_keys(manifest, MANIFEST_KEYS, "$.manifest"))
+    errors.extend(exact_keys(manifest.get("counts"), COUNT_KEYS, "$.manifest.counts"))
     errors.extend(boundary_errors(manifest, "$.manifest"))
     if manifest.get("schemaVersion") != "2.0.0" or manifest.get("publicationStatus") != "public-working" or manifest.get("canonicalPromotion") != "blocked":
         errors.append(safe_error("$.manifest", "consumer-contract-mismatch"))

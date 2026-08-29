@@ -34,6 +34,7 @@ jobs:
           python3 -m json.tool schemas/review-proposal.schema.json > /dev/null
           python3 -m json.tool schemas/translation-work-packet.v1.schema.json > /dev/null
           python3 -m json.tool schemas/canonical-entry.v1.schema.json > /dev/null
+          python3 -m json.tool schemas/canonical-entry.v2.schema.json > /dev/null
           python3 -m json.tool schemas/identifier-ledger.v1.schema.json > /dev/null
           python3 -m json.tool profiles/translation-source.v1.json > /dev/null
           python3 -m json.tool schemas/public-distribution.v1.schema.json > /dev/null
@@ -44,10 +45,13 @@ jobs:
           python3 -m json.tool schemas/current-release-closure.v1.schema.json > /dev/null
           python3 -m json.tool schemas/honorific-formula-registry.v1.schema.json > /dev/null
           python3 -m json.tool schemas/translation-governance-reference.v1.schema.json > /dev/null
+          python3 -m json.tool schemas/translation-governance-reference.v2.schema.json > /dev/null
           python3 -m json.tool compliance/translation-coverage.v1.json > /dev/null
           python3 -m json.tool compliance/policy-binding.v2.json > /dev/null
+          python3 -m json.tool compliance/policy-binding.v3.json > /dev/null
           python3 -m json.tool profiles/honorific-formulas.v1.json > /dev/null
           python3 -m json.tool docs/contracts/translation-governance-reference.v1.json > /dev/null
+          python3 -m json.tool docs/contracts/translation-governance-reference.v2.json > /dev/null
 
       - name: Validate translation workflow
         run: python3 scripts/translation_workflow.py doctor --offline
@@ -80,6 +84,8 @@ jobs:
         run: |
           python3 -m json.tool compliance/schemas/source-register.v1.schema.json > /dev/null
           python3 -m json.tool compliance/schemas/promotion-readiness.v1.schema.json > /dev/null
+          python3 -m json.tool compliance/schemas/promotion-readiness.v2.schema.json > /dev/null
+          python3 -m json.tool compliance/promotions/available-data.v2.json > /dev/null
           python3 -m json.tool compliance/schemas/translation-coverage.v1.schema.json > /dev/null
           python3 -m json.tool compliance/schemas/book-rights-matrix.v1.schema.json > /dev/null
           python3 -m json.tool compliance/rights-matrix.al-isabah.v1.json > /dev/null

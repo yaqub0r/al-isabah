@@ -34,6 +34,10 @@ HISTORICAL_POLICY_BINDINGS = {
         "1.1.0",
         "issue-0053-public-proposal-v1",
     ): "081b4d5903575710d9d7f21db6f978a0e7922b2e93431c1eab2f1a010e3f9ccf",
+    (
+        "1.2.0",
+        "issue-0070-public-proposal-v1",
+    ): "20a74b3643a65e621efe02402e59944223f1424f75d67e1af94476d6f233bd6f",
 }
 SHA1 = re.compile(r"^[a-f0-9]{40}$")
 SHA256 = re.compile(r"^[a-f0-9]{64}$")
@@ -540,7 +544,7 @@ def validate(
         policy_hash = historical_policy_hash
     else:
         policy_hash = sha256_text_file(
-            ROOT / "compliance" / "policy-binding.v2.json"
+            ROOT / "compliance" / "policy-binding.v3.json"
         )
     if proposal.get("policy", {}).get("bindingSha256") != policy_hash:
         errors.append(safe_error("$.policy.bindingSha256", "policy-mismatch"))

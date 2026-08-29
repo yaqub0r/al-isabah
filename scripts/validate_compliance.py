@@ -14,14 +14,15 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTER_PATH = ROOT / "compliance" / "source-register.v1.json"
-PROMOTION_PATH = ROOT / "compliance" / "promotions" / "available-data.v1.json"
-POLICY_PATH = ROOT / "compliance" / "policy-binding.v2.json"
+PROMOTION_PATH = ROOT / "compliance" / "promotions" / "available-data.v2.json"
+POLICY_PATH = ROOT / "compliance" / "policy-binding.v3.json"
 LEGACY_POLICY_PATH = ROOT / "compliance" / "policy-binding.v1.json"
+PREVIOUS_POLICY_PATH = ROOT / "compliance" / "policy-binding.v2.json"
 COVERAGE_PATH = ROOT / "compliance" / "translation-coverage.v1.json"
 RETIREMENT_PATH = ROOT / "compliance" / "research-retirement.v1.json"
 RIGHTS_MATRIX_PATH = ROOT / "compliance" / "rights-matrix.al-isabah.v1.json"
 GOVERNANCE_REFERENCE_PATH = (
-    ROOT / "docs" / "contracts" / "translation-governance-reference.v1.json"
+    ROOT / "docs" / "contracts" / "translation-governance-reference.v2.json"
 )
 FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 
@@ -37,12 +38,6 @@ PUBLIC_CLASSIFICATION = "approved-for-publication"
 GIT_SHA = re.compile(r"^[0-9a-f]{40}$")
 WINDOWS_PATH = re.compile(r"(?:[A-Za-z]:\\|C:/Users/)", re.IGNORECASE)
 PRIVATE_KEYS = {"object_key", "local_path", "private_url", "credential", "token"}
-REQUIRED_REVIEWS = {
-    "source_compliance",
-    "translation_quality",
-    "human_scholarly",
-    "canonical_repository",
-}
 REQUIRED_POLICIES = {
     "translation-quality-workflow": "docs/contracts/translation-quality-workflow.md",
     "al-isabah-translation-profile": "docs/translation-profiles/al-isabah.md",
@@ -53,7 +48,7 @@ REQUIRED_POLICIES = {
 }
 REQUIRED_GOVERNANCE_ARTIFACTS = {
     "policy-binding": (
-        "compliance/policy-binding.v2.json",
+        "compliance/policy-binding.v3.json",
         "active",
         None,
     ),
@@ -96,6 +91,31 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
         "compliance/schemas/translation-coverage.v1.schema.json",
         "active",
         "1.1.0",
+    ),
+    "governance-reference-schema": (
+        "schemas/translation-governance-reference.v2.schema.json",
+        "active",
+        "2.0.0",
+    ),
+    "promotion-readiness": (
+        "compliance/promotions/available-data.v2.json",
+        "active",
+        "2.0.0",
+    ),
+    "promotion-readiness-schema": (
+        "compliance/schemas/promotion-readiness.v2.schema.json",
+        "active",
+        "2.0.0",
+    ),
+    "canonical-entry-v2": (
+        "schemas/canonical-entry.v2.schema.json",
+        "active",
+        "2.0.0",
+    ),
+    "canonical-entry-v1": (
+        "schemas/canonical-entry.v1.schema.json",
+        "rollback-only",
+        "1.0.0",
     ),
     "public-proposal-v1": (
         "schemas/public-proposal.v1.schema.json",
@@ -144,18 +164,24 @@ REQUIRED_DEPRECATED_CONSUMER_AUTHORITIES = {
 }
 SEMVER = re.compile(r"^[0-9]+\.[0-9]+\.[0-9]+$")
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
-REQUIRED_TRANSLATION_CONTROLS = {
-    "source_authority",
-    "public_output",
-    "honorific_preservation",
-    "translation_lineage",
+REQUIRED_ELIGIBILITY_CONTROLS = {
+    "source_binding",
+    "provenance_binding",
+    "rights_eligibility",
+    "public_output_boundary",
+    "deterministic_validation",
+    "substantive_eligibility",
+    "unresolved_state_disclosure",
 }
 TRANSLATION_CONTROL_STATES = {"blocked", "incomplete", "passed"}
 WORKING_PUBLICATION_GATES = {
-    "source_authority",
-    "public_output",
+    "source_binding",
+    "provenance_binding",
+    "rights_eligibility",
+    "public_output_boundary",
+    "deterministic_validation",
     "honorific_preservation",
-    "canonical_human_review",
+    "unresolved_state_disclosure",
 }
 REQUIRED_RIGHTS_SOURCES = {
     "openiti-cleaned-arabic-comparison",
@@ -168,6 +194,7 @@ PUBLIC_CORPUS_ID = "al-isabah-public-working-corpus-openiti-5835c18-v1"
 OPENITI_COMMIT = "5835c183b8bbf4ea454d5c1be2b168b669403771"
 OPENITI_SHA256 = "bc9db8134c8278973967c91c00324531833f643fc0fb2c8ebe318c9ed4469eea"
 LEGACY_POLICY_SHA256 = "f1ca5fa8303b13e70bbd92aeeb8e5d2a05ba037cf951043b5043262dd2d591e5"
+PREVIOUS_POLICY_SHA256 = "20a74b3643a65e621efe02402e59944223f1424f75d67e1af94476d6f233bd6f"
 AGENT_COMPLETE_REQUIREMENTS = [
     "all-applicable-autonomous-stages-exhausted",
     "locked-scope-has-structured-english",
@@ -247,12 +274,14 @@ def _walk(value: Any, location: str = "$") -> list[str]:
 
 def validate_policy(policy: dict[str, Any]) -> list[str]:
     errors: list[str] = []
-    if policy.get("schema") != "al-isabah.local-policy-binding.v2":
+    if policy.get("schema") != "al-isabah.local-policy-binding.v3":
         errors.append("policy: unexpected schema")
-    if policy.get("supersedes") != "compliance/policy-binding.v1.json":
-        errors.append("policy: v2 must supersede the immutable v1 binding")
+    if policy.get("supersedes") != "compliance/policy-binding.v2.json":
+        errors.append("policy: v3 must supersede the immutable v2 binding")
     if canonical_text_sha256(LEGACY_POLICY_PATH) != LEGACY_POLICY_SHA256:
         errors.append("policy: immutable v1 release binding has changed")
+    if canonical_text_sha256(PREVIOUS_POLICY_PATH) != PREVIOUS_POLICY_SHA256:
+        errors.append("policy: immutable v2 release binding has changed")
     authority = policy.get("authority")
     if not isinstance(authority, dict):
         errors.append("policy: authority must be an object")
@@ -723,6 +752,7 @@ def validate_translation_governance(
     expected_top_level = {
         "schema",
         "referenceVersion",
+        "supersedes",
         "authority",
         "integrity",
         "governanceArtifacts",
@@ -731,16 +761,24 @@ def validate_translation_governance(
         "deprecatedConsumerAuthorities",
     }
     if set(reference) != expected_top_level:
-        errors.append("governance reference: fields do not match the v1 contract")
-    if reference.get("schema") != "al-isabah.translation-governance-reference.v1":
+        errors.append("governance reference: fields do not match the v2 contract")
+    if reference.get("schema") != "al-isabah.translation-governance-reference.v2":
         errors.append("governance reference: unexpected schema")
-    if not SEMVER.fullmatch(str(reference.get("referenceVersion", ""))):
-        errors.append("governance reference: referenceVersion must be semantic")
+    if reference.get("referenceVersion") != "2.0.0":
+        errors.append("governance reference: breaking semantics require version 2.0.0")
+    if reference.get("supersedes") != {
+        "path": "docs/contracts/translation-governance-reference.v1.json",
+        "referenceVersion": "1.5.1",
+        "sha256": canonical_text_sha256(
+            ROOT / "docs" / "contracts" / "translation-governance-reference.v1.json"
+        ),
+    }:
+        errors.append("governance reference: immutable v1 supersession binding is incorrect")
 
     authority = reference.get("authority")
     expected_authority = {
         "repository": "https://github.com/yaqub0r/al-isabah",
-        "repositoryPath": "docs/contracts/translation-governance-reference.v1.json",
+        "repositoryPath": "docs/contracts/translation-governance-reference.v2.json",
         "requiredPin": "immutable-repository-commit",
     }
     if authority != expected_authority:
@@ -770,7 +808,7 @@ def validate_translation_governance(
         artifacts[artifact_id] = artifact
 
     if set(artifacts) != set(REQUIRED_GOVERNANCE_ARTIFACTS):
-        errors.append("governance reference: exact v1 artifact set is required")
+        errors.append("governance reference: exact v2 artifact set is required")
     for artifact_id, (path, status, version) in REQUIRED_GOVERNANCE_ARTIFACTS.items():
         artifact = artifacts.get(artifact_id)
         if artifact is None:
@@ -823,8 +861,21 @@ def validate_translation_governance(
     expected_release_semantics = {
         "agentCompletionScope": "locked-volume-or-cohort-revision",
         "agentCompletionIndependentOfHumanReview": True,
-        "humanReviewScope": "per-record-metadata-and-confidence",
+        "humanReviewScope": "append-only-per-record-metadata-and-confidence",
+        "humanReviewManagementState": "ongoing-nonterminal",
+        "humanReviewDisclosureRequired": True,
+        "humanReviewAffectsEligibility": False,
         "humanReviewChangesReleaseClass": False,
+        "substantiveDefectsAffectEligibility": True,
+        "promotionEligibilityControls": [
+            "source-binding",
+            "provenance-binding",
+            "rights-eligibility",
+            "public-output-boundary",
+            "deterministic-validation",
+            "substantive-eligibility",
+            "unresolved-state-disclosure",
+        ],
         "immutableCycleChangeKinds": [
             "incremental-translation",
             "correction",
@@ -845,6 +896,8 @@ def validate_translation_governance(
         "prohibited": [
             "define-al-isabah-translation-policy",
             "treat-a-local-copy-as-governing",
+            "gate-publication-or-promotion-on-human-review-coverage",
+            "infer-terminal-human-review-completion",
             "change-release-class-from-human-review",
             "rewrite-or-mutate-an-immutable-release",
         ],
@@ -994,10 +1047,16 @@ def validate_promotion(
     promotion: dict[str, Any], artifacts: dict[str, dict[str, Any]]
 ) -> list[str]:
     errors: list[str] = []
-    if promotion.get("schema") != "al-isabah.promotion-readiness.v1":
+    if promotion.get("schema") != "al-isabah.promotion-readiness.v2":
         errors.append("promotion: unexpected schema")
+    if promotion.get("policy_binding") != "compliance/policy-binding.v3.json":
+        errors.append("promotion: active policy binding is incorrect")
+    if promotion.get("source_register") != "compliance/source-register.v1.json":
+        errors.append("promotion: source register binding is incorrect")
     if promotion.get("rights_matrix") != "compliance/rights-matrix.al-isabah.v1.json":
         errors.append("promotion: rights matrix must use the repository-relative v1 path")
+    if promotion.get("translation_coverage") != "compliance/translation-coverage.v1.json":
+        errors.append("promotion: translation coverage binding is incorrect")
     eligible = promotion.get("public_release_eligible")
     status = promotion.get("status")
     blockers = promotion.get("blockers")
@@ -1035,11 +1094,9 @@ def validate_promotion(
     if not isinstance(working_gates, dict) or set(working_gates) != WORKING_PUBLICATION_GATES:
         errors.append("promotion: working publication must contain exactly the required gates")
         working_gates = {}
-    for gate in ("source_authority", "public_output", "honorific_preservation"):
+    for gate in WORKING_PUBLICATION_GATES:
         if working_gates.get(gate) != "passed":
             errors.append(f"promotion: public working gate {gate} must pass")
-    if working_gates.get("canonical_human_review") not in {"incomplete", "passed"}:
-        errors.append("promotion: canonical_human_review has an invalid state")
     if working_artifact:
         integrity = working_artifact.get("integrity", {})
         if working.get("corpus_id") != integrity.get("corpus_id"):
@@ -1049,33 +1106,63 @@ def validate_promotion(
         if working.get("quarantined_records") != integrity.get("quarantined_records"):
             errors.append("promotion: working quarantine count differs from its register")
 
-    translation_quality = promotion.get("translation_quality")
-    if not isinstance(translation_quality, dict):
-        errors.append("promotion: translation_quality must be an object")
-        translation_quality = {}
-    elif set(translation_quality) != REQUIRED_TRANSLATION_CONTROLS:
-        errors.append(
-            "promotion: translation_quality must contain exactly the required controls"
-        )
-    for control in REQUIRED_TRANSLATION_CONTROLS:
-        if translation_quality.get(control) not in TRANSLATION_CONTROL_STATES:
-            errors.append(
-                f"promotion: translation_quality.{control} has an invalid state"
-            )
+    eligibility_controls = promotion.get("eligibility_controls")
+    if not isinstance(eligibility_controls, dict):
+        errors.append("promotion: eligibility_controls must be an object")
+        eligibility_controls = {}
+    elif set(eligibility_controls) != REQUIRED_ELIGIBILITY_CONTROLS:
+        errors.append("promotion: exact substantive eligibility controls are required")
+    for control in REQUIRED_ELIGIBILITY_CONTROLS:
+        if eligibility_controls.get(control) not in TRANSLATION_CONTROL_STATES:
+            errors.append(f"promotion: eligibility_controls.{control} has an invalid state")
     if (
-        translation_quality.get("public_output") == "passed"
-        and translation_quality.get("source_authority") != "passed"
+        eligibility_controls.get("public_output_boundary") == "passed"
+        and eligibility_controls.get("source_binding") != "passed"
     ):
-        errors.append(
-            "promotion: public_output cannot pass before source_authority passes"
-        )
+        errors.append("promotion: public output cannot pass before source binding")
     if eligible and any(
-        translation_quality.get(control) != "passed"
-        for control in REQUIRED_TRANSLATION_CONTROLS
+        eligibility_controls.get(control) != "passed"
+        for control in REQUIRED_ELIGIBILITY_CONTROLS
     ):
-        errors.append(
-            "promotion: eligible release requires every translation-quality control to pass"
-        )
+        errors.append("promotion: eligible release requires every substantive control to pass")
+
+    human_review = promotion.get("human_review")
+    expected_human_review = {
+        "management_state": "ongoing",
+        "evidence_mode": "append-only",
+        "coverage_record": "compliance/translation-coverage.v1.json",
+        "coverage_disclosure": "required",
+        "eligibility_effect": "none",
+        "release_class_effect": "none",
+        "terminal_completion_claim": False,
+    }
+    if human_review != expected_human_review:
+        errors.append("promotion: complete non-gating human-review disclosure is required")
+
+    blocker_controls: set[str] = set()
+    for index, blocker in enumerate(blockers):
+        location = f"promotion.blockers[{index}]"
+        if not isinstance(blocker, dict) or set(blocker) != {"id", "control", "summary"}:
+            errors.append(f"{location}: must identify one substantive control and reason")
+            continue
+        control = blocker.get("control")
+        if control not in REQUIRED_ELIGIBILITY_CONTROLS:
+            errors.append(f"{location}.control: human review is not an eligibility control")
+        elif eligibility_controls.get(control) == "passed":
+            errors.append(f"{location}.control: blocker control cannot already pass")
+        else:
+            blocker_controls.add(control)
+        if not isinstance(blocker.get("id"), str) or not blocker["id"].strip():
+            errors.append(f"{location}.id: is required")
+        if not isinstance(blocker.get("summary"), str) or not blocker["summary"].strip():
+            errors.append(f"{location}.summary: is required")
+    nonpassing_controls = {
+        control
+        for control in REQUIRED_ELIGIBILITY_CONTROLS
+        if eligibility_controls.get(control) in {"blocked", "incomplete"}
+    }
+    if not eligible and blocker_controls != nonpassing_controls:
+        errors.append("promotion: every non-passing substantive control needs its own blocker")
 
     direct_dependencies: set[str] = set()
     revisions = promotion.get("candidate_revisions")
@@ -1122,13 +1209,6 @@ def validate_promotion(
             "promotion: eligible release depends on non-approved artifacts: "
             + ", ".join(non_public)
         )
-    reviews = promotion.get("reviews")
-    if eligible and (
-        not isinstance(reviews, dict)
-        or set(reviews) != REQUIRED_REVIEWS
-        or any(reviews.get(review) != "approved" for review in REQUIRED_REVIEWS)
-    ):
-        errors.append("promotion: eligible release requires every review to be approved")
     errors.extend(_walk(promotion, "promotion"))
     return errors
 

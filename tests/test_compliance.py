@@ -71,11 +71,8 @@ class ComplianceTests(unittest.TestCase):
         promotion["status"] = "eligible"
         promotion["public_release_eligible"] = True
         promotion["blockers"] = []
-        promotion["reviews"] = {
-            "source_compliance": "approved",
-            "translation_quality": "approved",
-            "human_scholarly": "approved",
-            "canonical_repository": "approved",
+        promotion["eligibility_controls"] = {
+            control: "passed" for control in MODULE.REQUIRED_ELIGIBILITY_CONTROLS
         }
         errors = self.validate(promotion=promotion)
         self.assertTrue(
@@ -83,7 +80,7 @@ class ComplianceTests(unittest.TestCase):
             errors,
         )
 
-    def test_eligible_claim_requires_all_reviews(self):
+    def test_eligible_claim_allows_zero_human_reviews(self):
         register = copy.deepcopy(self.register)
         for artifact in register["artifacts"]:
             artifact["classification"] = "approved-for-publication"
@@ -91,23 +88,23 @@ class ComplianceTests(unittest.TestCase):
         promotion["status"] = "eligible"
         promotion["public_release_eligible"] = True
         promotion["blockers"] = []
-        errors = self.validate(register=register, promotion=promotion)
-        self.assertIn(
-            "promotion: eligible release requires every review to be approved", errors
+        promotion["eligibility_controls"] = {
+            control: "passed" for control in MODULE.REQUIRED_ELIGIBILITY_CONTROLS
+        }
+        self.assertTrue(
+            all(
+                scope["human_review"]["reviewed_units"] == 0
+                for scope in self.translation_coverage["scopes"]
+            )
         )
+        self.assertEqual(self.validate(register=register, promotion=promotion), [])
 
-    def test_eligible_claim_rejects_empty_reviews(self):
-        register = copy.deepcopy(self.register)
-        for artifact in register["artifacts"]:
-            artifact["classification"] = "approved-for-publication"
+    def test_missing_human_review_disclosure_fails(self):
         promotion = copy.deepcopy(self.promotion)
-        promotion["status"] = "eligible"
-        promotion["public_release_eligible"] = True
-        promotion["blockers"] = []
-        promotion["reviews"] = {}
-        errors = self.validate(register=register, promotion=promotion)
+        del promotion["human_review"]
         self.assertIn(
-            "promotion: eligible release requires every review to be approved", errors
+            "promotion: complete non-gating human-review disclosure is required",
+            self.validate(promotion=promotion),
         )
 
     def test_policy_requires_every_local_translation_policy(self):
@@ -214,6 +211,14 @@ class ComplianceTests(unittest.TestCase):
     def test_governance_reference_preserves_review_release_semantics(self):
         reference = copy.deepcopy(self.governance_reference)
         reference["releaseSemantics"]["humanReviewChangesReleaseClass"] = True
+        self.assertIn(
+            "governance reference: release semantics are incorrect",
+            self.validate(governance_reference=reference),
+        )
+
+    def test_governance_reference_forbids_review_coverage_gating(self):
+        reference = copy.deepcopy(self.governance_reference)
+        reference["releaseSemantics"]["humanReviewAffectsEligibility"] = True
         self.assertIn(
             "governance reference: release semantics are incorrect",
             self.validate(governance_reference=reference),
@@ -351,7 +356,7 @@ class ComplianceTests(unittest.TestCase):
             )
         )
 
-    def test_eligible_claim_requires_translation_quality_controls(self):
+    def test_eligible_claim_requires_substantive_controls(self):
         register = copy.deepcopy(self.register)
         for artifact in register["artifacts"]:
             artifact["classification"] = "approved-for-publication"
@@ -359,17 +364,37 @@ class ComplianceTests(unittest.TestCase):
         promotion["status"] = "eligible"
         promotion["public_release_eligible"] = True
         promotion["blockers"] = []
-        promotion["reviews"] = {
-            "source_compliance": "approved",
-            "translation_quality": "approved",
-            "human_scholarly": "approved",
-            "canonical_repository": "approved",
-        }
         errors = self.validate(register=register, promotion=promotion)
         self.assertIn(
-            "promotion: eligible release requires every translation-quality control to pass",
+            "promotion: eligible release requires every substantive control to pass",
             errors,
         )
+
+    def test_source_rights_provenance_and_substantive_blockers_fail_closed(self):
+        register = copy.deepcopy(self.register)
+        for artifact in register["artifacts"]:
+            artifact["classification"] = "approved-for-publication"
+        for control in (
+            "source_binding",
+            "rights_eligibility",
+            "provenance_binding",
+            "substantive_eligibility",
+        ):
+            with self.subTest(control=control):
+                promotion = copy.deepcopy(self.promotion)
+                promotion["status"] = "eligible"
+                promotion["public_release_eligible"] = True
+                promotion["blockers"] = []
+                promotion["eligibility_controls"] = {
+                    name: "passed"
+                    for name in MODULE.REQUIRED_ELIGIBILITY_CONTROLS
+                }
+                promotion["eligibility_controls"][control] = "blocked"
+                errors = self.validate(register=register, promotion=promotion)
+                self.assertIn(
+                    "promotion: eligible release requires every substantive control to pass",
+                    errors,
+                )
 
     def test_fully_attested_eligible_claim_passes(self):
         register = copy.deepcopy(self.register)
@@ -379,23 +404,17 @@ class ComplianceTests(unittest.TestCase):
         promotion["status"] = "eligible"
         promotion["public_release_eligible"] = True
         promotion["blockers"] = []
-        promotion["reviews"] = {
-            "source_compliance": "approved",
-            "translation_quality": "approved",
-            "human_scholarly": "approved",
-            "canonical_repository": "approved",
-        }
-        promotion["translation_quality"] = {
-            control: "passed" for control in MODULE.REQUIRED_TRANSLATION_CONTROLS
+        promotion["eligibility_controls"] = {
+            control: "passed" for control in MODULE.REQUIRED_ELIGIBILITY_CONTROLS
         }
         self.assertEqual(self.validate(register=register, promotion=promotion), [])
 
     def test_public_output_cannot_pass_before_source_authority(self):
         promotion = copy.deepcopy(self.promotion)
-        promotion["translation_quality"]["public_output"] = "passed"
+        promotion["eligibility_controls"]["public_output_boundary"] = "passed"
         errors = self.validate(promotion=promotion)
         self.assertIn(
-            "promotion: public_output cannot pass before source_authority passes",
+            "promotion: public output cannot pass before source binding",
             errors,
         )
 

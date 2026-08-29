@@ -16,6 +16,16 @@ ENTRY_ID = re.compile(r"^isabah-entry-([0-9]{8})$")
 SEGMENT_ID = re.compile(r"^(isabah-entry-[0-9]{8})-segment-([0-9]{4})$")
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
 GIT_SHA = re.compile(r"^[0-9a-f]{40}$")
+REVIEW_STATES = {"unreviewed", "in_review", "reviewed", "verified", "disputed"}
+ELIGIBILITY_CONTROLS = {
+    "sourceBinding",
+    "provenanceBinding",
+    "rightsEligibility",
+    "publicOutputBoundary",
+    "deterministicValidation",
+    "substantiveEligibility",
+    "unresolvedStateDisclosure",
+}
 
 
 def load(path: Path) -> dict[str, Any]:
@@ -28,7 +38,7 @@ def load(path: Path) -> dict[str, Any]:
 def validate_entry(entry: dict[str, Any], path: Path) -> list[str]:
     errors: list[str] = []
     entry_id = entry.get("id")
-    if entry.get("schemaVersion") != "1.0.0":
+    if entry.get("schemaVersion") != "2.0.0":
         errors.append(f"{path}: unsupported schemaVersion")
     if not isinstance(entry_id, str) or not ENTRY_ID.fullmatch(entry_id):
         errors.append(f"{path}: invalid stable entry id")
@@ -72,13 +82,32 @@ def validate_entry(entry: dict[str, Any], path: Path) -> list[str]:
                 errors.append(f"{location} has a source span without a SHA-256")
 
     review = entry.get("review")
-    if not isinstance(review, dict) or review.get("compliance") != "approved":
+    if not isinstance(review, dict) or set(review) != {
+        "managementState", "arabic", "translation"
+    }:
+        errors.append(f"{path}: complete human-review state disclosure is required")
+    else:
+        if review.get("managementState") != "ongoing":
+            errors.append(f"{path}: human review must remain ongoing and nonterminal")
+        if review.get("arabic") not in REVIEW_STATES or review.get("translation") not in REVIEW_STATES:
+            errors.append(f"{path}: human-review state is invalid")
+    if entry.get("compliance") != "approved":
         errors.append(f"{path}: canonical content requires compliance approval")
-    elif review.get("arabic") not in {"reviewed", "verified", "disputed"} or review.get("translation") not in {"reviewed", "verified", "disputed"}:
-        errors.append(f"{path}: canonical content requires explicit scholarly review")
+    eligibility = entry.get("eligibility")
+    if not isinstance(eligibility, dict) or set(eligibility) != ELIGIBILITY_CONTROLS:
+        errors.append(f"{path}: exact substantive eligibility controls are required")
+    else:
+        for control in ELIGIBILITY_CONTROLS:
+            if eligibility.get(control) != "passed":
+                errors.append(f"{path}: eligibility control {control} must pass")
+    unresolved = entry.get("unresolved")
+    if not isinstance(unresolved, list) or not all(
+        isinstance(item, str) and item.strip() for item in unresolved
+    ):
+        errors.append(f"{path}: unresolved-state disclosure is required")
     provenance = entry.get("provenance")
     if not isinstance(provenance, dict) or not GIT_SHA.fullmatch(str(provenance.get("sourceCommit", ""))) or not str(provenance.get("promotionManifest", "")).strip():
-        errors.append(f"{path}: reviewed promotion provenance is required")
+        errors.append(f"{path}: exact promotion provenance is required")
     return errors
 
 
