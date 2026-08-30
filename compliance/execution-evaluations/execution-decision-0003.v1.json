@@ -1,0 +1,63 @@
+{
+  "schema": "al-isabah.execution-evaluation.v1",
+  "runtimeAuthority": null,
+  "recordVersion": "1.0.0",
+  "recordedOn": "2026-08-30",
+  "stages": [
+    "blind_translation",
+    "independent_critique",
+    "witness_resolution",
+    "adjudication",
+    "name_inventory"
+  ],
+  "scope": "production-semantic-translation",
+  "inputHashes": {
+    "promptSha256": null,
+    "policySha256": null,
+    "schemaSha256": null,
+    "sourceSha256": null,
+    "cohortSha256": null
+  },
+  "evaluation": {
+    "kind": "not-performed",
+    "design": "No controlled quality experiment was performed for this decision.",
+    "blindedComparison": {
+      "performed": false,
+      "details": "No blinded paired comparison is available.",
+      "evidenceSha256": null
+    },
+    "substantiveErrorCategories": []
+  },
+  "measurements": {
+    "substantiveErrors": null,
+    "unresolvedItems": null,
+    "witnessChecks": null,
+    "usageTokens": null,
+    "costUsd": null,
+    "latencyMs": null
+  },
+  "supersedes": [],
+  "relatedIssues": [
+    76,
+    75,
+    49
+  ],
+  "recordId": "execution-decision-0003",
+  "status": "unevaluated",
+  "methodId": "codex-ultra-unevaluated-v1",
+  "configuration": {
+    "provider": "openai",
+    "model": "gpt-5.6-sol",
+    "reasoning": null,
+    "orchestration": "codex-ultra",
+    "configurationOrigin": "unspecified"
+  },
+  "decisionBasis": [
+    "The Codex ultra label was never approved.",
+    "It is an orchestration or configuration label, not a reasoning level."
+  ],
+  "limitations": [
+    "No controlled evaluation of this orchestration label is available.",
+    "No approval or quality-failure claim follows from this historical label."
+  ]
+}

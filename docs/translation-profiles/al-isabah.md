@@ -122,7 +122,7 @@ The established pipeline implements the general state machine as follows:
    excluding modern editorial paratext before alignment;
 2. align its machine text to its facsimile and audit page, entry, and sequence
    coverage;
-3. perform a provenance-bound blind Codex Arabic-to-English pass;
+3. perform a trusted-runtime-bound blind Arabic-to-English pass;
 4. independently critique omissions, additions, names, isnads, negation,
    numbering, notes, and cross-page continuations;
 5. resolve only flagged concerns against classified translation witnesses,
@@ -214,10 +214,14 @@ Machine readiness requires:
   source bundle, readiness record, and generated presentation; and
 - human-review state still `unreviewed` when machine readiness first opens.
 
-Reasoning effort is calibrated with blinded paired comparisons whose source,
-prompt, schema, model family, and witnesses are otherwise identical. A lower
-setting is used only when the versioned evaluation policy accepts it without a
-material quality regression.
+Only exact stage-specific methods in the active execution registry are approved.
+Follow [execution-method governance](../contracts/translation-execution-methods.md)
+for runtime attestation and future evaluation decisions. The initial approval is
+a governance baseline, not a claim that controlled calibration has occurred.
+Future comparisons should lock source, prompt, schema, witnesses, and cohort,
+record blinding and substantive findings, and disclose all evidence limitations.
+A different model, reasoning setting, or orchestration method requires a new
+reviewed decision and registry version before production use.
 
 ## Reviewer handoff
 

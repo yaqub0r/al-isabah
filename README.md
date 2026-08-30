@@ -21,7 +21,7 @@ model](docs/architecture/canonical-publication-repository.md) for the complete
 responsibility and trust-boundary model.
 
 Downstream consumers discover and pin the versioned
-[translation-governance reference](docs/contracts/translation-governance-reference.v2.json).
+[translation-governance reference](docs/contracts/translation-governance-reference.v3.json).
 Its [compatibility guide](docs/contracts/downstream-consumer-compatibility.md)
 documents immutable-commit pinning, the Al-Isabah-owned formula registry,
 consumer responsibilities, and the downstream deprecation path. Human review

@@ -3,6 +3,7 @@ from __future__ import annotations
 import copy
 import importlib.util
 import unittest
+from unittest import mock
 from pathlib import Path
 
 
@@ -142,6 +143,13 @@ def legacy_packets(target: dict) -> dict[int, dict]:
 
 
 class Volume2BlindRecoveryTests(unittest.TestCase):
+    def setUp(self):
+        # Exercise historical recovery mechanics independently of v2 admission.
+        # Historical migration is not a new authenticated production execution.
+        patcher = mock.patch.object(WORKFLOW, "validate_execution", return_value=[])
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
     def recover(self, target: dict, packets: dict[int, dict]):
         return MODULE.recover_blind_translations(
             target,

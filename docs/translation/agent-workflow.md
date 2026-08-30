@@ -1,7 +1,7 @@
 # Agent translation workflow
 
 This is the executable path for distributing Al-Isabah translation across
-independent Codex agents. An agent needs this repository, Python 3.11 or later,
+independent agents. An agent needs this repository, Python 3.11 or later,
 Git, GitHub CLI authentication for claiming work, and network access only to
 hydrate the pinned public OpenITI source. A downstream application, database, and model service
 key are not prerequisites.
@@ -11,7 +11,8 @@ The repository contract remains authoritative. Read, in order:
 1. [`../contracts/translation-quality-workflow.md`](../contracts/translation-quality-workflow.md);
 2. [`../translation-profiles/al-isabah.md`](../translation-profiles/al-isabah.md);
 3. [`../contracts/entry-title-structure.md`](../contracts/entry-title-structure.md);
-4. this runbook.
+4. [`../contracts/translation-execution-methods.md`](../contracts/translation-execution-methods.md);
+5. this runbook.
 
 ## The path
 
@@ -45,6 +46,12 @@ python -m unittest discover -s tests
 `doctor` verifies the local policy binding, pinned source manifest, ignored
 runtime path, and GitHub CLI availability. It does not inspect or expose
 credentials.
+
+`doctor` reports runtime trust separately from policy validity. The initial
+execution registry has no enrolled attester: do not begin production semantic
+work until a reviewed successor registry enrolls one. The translating worker
+must not hold the signing key. OpenSSH `ssh-keygen` is required to verify signed
+runtime receipts; it is not required merely to inspect policy or prepare a packet.
 
 ## 2. Hydrate the public Arabic authority
 
@@ -124,8 +131,9 @@ the coordinating agent merges them with the commands below. Never rewrite
 For every entry:
 
 1. **Blind translation** — translate directly from `source.arabic`. Record a
-   distinct run ID, Codex model identity, reasoning setting, and complete
-   English. Do not look at an English translation witness first.
+   distinct run ID, exact active method ID, explicit configuration, and complete
+   English. Obtain an independently signed runtime receipt for the resulting
+   checkpoint; a model label written by the worker is not attestation. Do not look at an English translation witness first.
 2. **Independent critique** — use a fresh critique pass with a different run
    ID. Inspect omissions, additions, reversals, names, relationships, isnads,
    numbers, negation, honorific semantics, poetry, notes, and continuations.
@@ -153,6 +161,16 @@ For every entry:
 6. **Unresolved inventory** — retain an array even when it is empty.
 7. **Human state** — leave `humanReview.status` as `unreviewed`.
 
+For all five semantic stages, the external trusted attester supplies the
+`provenance.execution` envelope described by `runtime-attestation.v1`. After
+assembling content-addressed provenance, it observes and signs the effective
+configuration, run/session, input/output hashes, and checkpoint fingerprint.
+It also attests fresh context for independent critique and name inventory.
+Attach that receipt without changing its payload or signature. No repository
+command signs receipts or infers settings. Missing, inherited, unknown, or
+mismatched configurations and unenrolled signatures fail validation and shard
+merging. Deterministic parsing/rendering is outside this semantic model gate.
+
 Do not silently rewrite a completed blind or adjudicated run during QA. If a
 deterministic repair is necessary, retain the original run provenance and add
 the packet-level `postRunRepairAudit`: it binds the base packet and repair
@@ -169,7 +187,7 @@ owning biography or structural segment through
 `rawOpeniti` may be supplementary, never the only readable binding. These
 fields stay JSON even when an application later projects them into a database.
 
-Parallel biography workers use a schema `1.0.0` shard envelope containing the
+Parallel biography workers use a schema `2.0.0` shard envelope containing the
 packet ID, issue number, exact starting and ending source ordinals, and only
 the completed output fields for every source unit in that range. The
 coordinator applies a completed shard atomically:
@@ -181,7 +199,7 @@ python scripts/translation_workflow.py merge-shard \
 ```
 
 Structural and front-matter text is owned by the following source unit. A
-schema `1.1.0` structural shard may contain one source ordinal and translations
+schema `2.1.0` structural shard may contain one source ordinal and translations
 whose segment IDs exactly match that unit's `source.precedingSegments`:
 
 ```sh

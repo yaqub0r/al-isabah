@@ -1,0 +1,190 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "methodId",
+    "registrySha256",
+    "requested",
+    "attestation"
+  ],
+  "properties": {
+    "methodId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "registrySha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "requested": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provider",
+        "model",
+        "reasoning",
+        "orchestration",
+        "configurationOrigin"
+      ],
+      "properties": {
+        "provider": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reasoning": {
+          "type": "string",
+          "minLength": 1
+        },
+        "orchestration": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "configurationOrigin": {
+          "const": "explicit"
+        }
+      }
+    },
+    "attestation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "payload",
+        "signature"
+      ],
+      "properties": {
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "schemaVersion",
+            "authorityId",
+            "methodId",
+            "registrySha256",
+            "stage",
+            "configuration",
+            "runId",
+            "sessionId",
+            "checkpointSha256",
+            "inputSha256",
+            "outputSha256",
+            "telemetrySha256",
+            "issuedAt",
+            "independentContext"
+          ],
+          "properties": {
+            "schemaVersion": {
+              "const": "1.0.0"
+            },
+            "authorityId": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            },
+            "methodId": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            },
+            "registrySha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "stage": {
+              "enum": [
+                "blind_translation",
+                "independent_critique",
+                "witness_resolution",
+                "adjudication",
+                "name_inventory"
+              ]
+            },
+            "configuration": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "provider",
+                "model",
+                "reasoning",
+                "orchestration",
+                "configurationOrigin"
+              ],
+              "properties": {
+                "provider": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+                },
+                "model": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "reasoning": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "orchestration": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+                },
+                "configurationOrigin": {
+                  "const": "explicit"
+                }
+              }
+            },
+            "runId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sessionId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "checkpointSha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "inputSha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "outputSha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "telemetrySha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "issuedAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "independentContext": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "freshContext",
+                "priorStageContextExcluded"
+              ],
+              "properties": {
+                "freshContext": {
+                  "type": "boolean"
+                },
+                "priorStageContextExcluded": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "signature": {
+          "type": "string",
+          "pattern": "^-----BEGIN SSH SIGNATURE-----\\n[A-Za-z0-9+/=\\n]+\\n-----END SSH SIGNATURE-----\\n?$"
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Signed effective runtime binding v1"
+}

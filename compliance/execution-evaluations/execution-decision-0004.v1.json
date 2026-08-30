@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.execution-evaluation.v1",
+  "runtimeAuthority": null,
+  "recordVersion": "1.0.0",
+  "recordedOn": "2026-08-30",
+  "stages": [
+    "blind_translation",
+    "independent_critique",
+    "witness_resolution",
+    "adjudication",
+    "name_inventory"
+  ],
+  "scope": "production-semantic-translation",
+  "inputHashes": {
+    "promptSha256": null,
+    "policySha256": null,
+    "schemaSha256": null,
+    "sourceSha256": null,
+    "cohortSha256": null
+  },
+  "evaluation": {
+    "kind": "incident-observation",
+    "design": "Governance response to the configuration/provenance mismatch recorded by Issue 75.",
+    "blindedComparison": {
+      "performed": false,
+      "details": "No blinded paired comparison is available.",
+      "evidenceSha256": null
+    },
+    "substantiveErrorCategories": [
+      "provenance-mismatch"
+    ]
+  },
+  "measurements": {
+    "substantiveErrors": null,
+    "unresolvedItems": null,
+    "witnessChecks": null,
+    "usageTokens": null,
+    "costUsd": null,
+    "latencyMs": null
+  },
+  "supersedes": [],
+  "relatedIssues": [
+    76,
+    75,
+    49
+  ],
+  "recordId": "execution-decision-0004",
+  "status": "rejected",
+  "methodId": "implicit-inheritance-v1",
+  "configuration": {
+    "provider": null,
+    "model": null,
+    "reasoning": null,
+    "orchestration": "implicit-worker-inheritance",
+    "configurationOrigin": "inherited"
+  },
+  "decisionBasis": [
+    "Implicit model or reasoning inheritance is rejected because it does not establish the effective settings of each worker.",
+    "Issue 75 demonstrated actual high execution being mislabeled as xhigh or an orchestration label."
+  ],
+  "limitations": [
+    "This is a provenance-safety rejection, not a measured translation-quality result.",
+    "The public decision records the observed failure mode without republishing historical packets or restricted runtime evidence."
+  ]
+}
