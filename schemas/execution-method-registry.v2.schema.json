@@ -1,0 +1,168 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "registryVersion",
+    "supersedes",
+    "scope",
+    "stages",
+    "methods",
+    "evaluations",
+    "runtimeTrustStatus",
+    "trustDecisionId"
+  ],
+  "properties": {
+    "schema": {
+      "const": "al-isabah.execution-method-registry.v2"
+    },
+    "registryVersion": {
+      "type": "string",
+      "pattern": "^[1-9][0-9]*\\.0\\.0$"
+    },
+    "supersedes": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "pattern": "^profiles/execution-methods\\.v[0-9]+\\.json$"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "scope": {
+      "const": "production-semantic-translation"
+    },
+    "stages": {
+      "const": [
+        "blind_translation",
+        "independent_critique",
+        "witness_resolution",
+        "adjudication",
+        "name_inventory"
+      ]
+    },
+    "methods": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "methodId",
+          "configuration",
+          "stages",
+          "decisionId"
+        ],
+        "properties": {
+          "methodId": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "configuration": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "provider",
+              "model",
+              "reasoning",
+              "orchestration",
+              "configurationOrigin"
+            ],
+            "properties": {
+              "provider": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "model": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reasoning": {
+                "type": "string",
+                "minLength": 1
+              },
+              "orchestration": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "configurationOrigin": {
+                "const": "explicit"
+              }
+            }
+          },
+          "stages": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "blind_translation",
+                "independent_critique",
+                "witness_resolution",
+                "adjudication",
+                "name_inventory"
+              ]
+            }
+          },
+          "decisionId": {
+            "type": "string",
+            "pattern": "^execution-decision-[0-9]{4}$"
+          }
+        }
+      }
+    },
+    "evaluations": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "recordId",
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "recordId": {
+            "type": "string",
+            "pattern": "^execution-decision-[0-9]{4}$"
+          },
+          "path": {
+            "type": "string",
+            "pattern": "^compliance/execution-evaluations/execution-decision-[0-9]{4}\\.v[0-9]+\\.json$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "runtimeTrustStatus": {
+      "const": "trusted-local-host"
+    },
+    "trustDecisionId": {
+      "type": "string",
+      "pattern": "^execution-decision-[0-9]{4}$"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Versioned active semantic execution methods"
+}

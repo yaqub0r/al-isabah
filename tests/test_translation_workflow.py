@@ -490,7 +490,7 @@ class TranslationWorkflowTests(unittest.TestCase):
     def test_packet_explicitly_excludes_container_metadata(self):
         packet = self.packet()
         exclusions = packet["scope"]["excludedRanges"]
-        self.assertEqual(packet["schemaVersion"], "2.0.0")
+        self.assertEqual(packet["schemaVersion"], "3.0.0")
         self.assertEqual(
             packet["sliceContext"],
             {
@@ -681,7 +681,7 @@ class TranslationWorkflowTests(unittest.TestCase):
             for entry in completed["entries"]
         ]
         shard = {
-            "schemaVersion": "2.0.0",
+            "schemaVersion": "3.0.0",
             "packetId": completed["packetId"],
             "issueNumber": completed["assignment"]["issueNumber"],
             "startUnit": 1,
@@ -737,7 +737,7 @@ class TranslationWorkflowTests(unittest.TestCase):
             "results": [{"status": "unavailable"}],
         }
         shard = {
-            "schemaVersion": "2.0.0",
+            "schemaVersion": "3.0.0",
             "packetId": completed["packetId"],
             "issueNumber": completed["assignment"]["issueNumber"],
             "startUnit": 1,
@@ -767,7 +767,7 @@ class TranslationWorkflowTests(unittest.TestCase):
             "humanReview",
         )
         entry_shard = {
-            "schemaVersion": "2.0.0",
+            "schemaVersion": "3.0.0",
             "packetId": completed["packetId"],
             "issueNumber": completed["assignment"]["issueNumber"],
             "startUnit": 1,
@@ -778,7 +778,7 @@ class TranslationWorkflowTests(unittest.TestCase):
             ],
         }
         structural_shard = {
-            "schemaVersion": "2.1.0",
+            "schemaVersion": "3.1.0",
             "packetId": completed["packetId"],
             "issueNumber": completed["assignment"]["issueNumber"],
             "sourceOrdinal": 1,
@@ -815,7 +815,7 @@ class TranslationWorkflowTests(unittest.TestCase):
         completed = self.packet()
         complete_autonomous_stages(completed)
         shard = {
-            "schemaVersion": "2.1.0",
+            "schemaVersion": "3.1.0",
             "packetId": completed["packetId"],
             "issueNumber": completed["assignment"]["issueNumber"],
             "sourceOrdinal": 1,
@@ -855,7 +855,7 @@ class TranslationWorkflowTests(unittest.TestCase):
             if entry["source"]["precedingSegments"]
         ]
         shard = {
-            "schemaVersion": "2.1.0",
+            "schemaVersion": "3.1.0",
             "packetId": completed["packetId"],
             "issueNumber": completed["assignment"]["issueNumber"],
             "startUnit": 1,
@@ -988,8 +988,8 @@ class TranslationWorkflowTests(unittest.TestCase):
         packet["schemaVersion"] = "1.4.0"
         packet["toolVersion"] = "1.4.0"
         errors = MODULE.validate_packet(packet, machine_ready=True)
-        self.assertTrue(any("schemaVersion must be 2.0.0" in error for error in errors))
-        self.assertTrue(any("toolVersion must be 2.0.0" in error for error in errors))
+        self.assertTrue(any("schemaVersion must be 3.0.0" in error for error in errors))
+        self.assertTrue(any("toolVersion must be 3.0.0" in error for error in errors))
 
     def test_status_run_and_content_hashes_do_not_replace_stage_provenance(self):
         packet = self.packet()

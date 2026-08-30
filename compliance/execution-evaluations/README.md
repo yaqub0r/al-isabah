@@ -11,4 +11,7 @@ controlled quality experiments.
 Records are append-only. Add a successor record with exact supersession links
 and a new versioned active registry; never edit or delete a prior record. The
 registry's predecessor chain retains all historical evidence references. Its
-initial approved method does not enroll a runtime signing authority.
+initial approved method did not enroll a runtime signing authority. Decision
+0006 and registry v2 supersede that signing prerequisite with explicit launches
+and captured host settings under a trusted-host assumption. Earlier records
+remain unchanged; no quality benchmark or signing service is required.

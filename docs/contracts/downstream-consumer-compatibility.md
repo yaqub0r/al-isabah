@@ -3,7 +3,7 @@
 - **Status:** Active
 - **Issue:** [#45](https://github.com/yaqub0r/al-isabah/issues/45)
 - **Machine reference:**
-  [`translation-governance-reference.v3.json`](translation-governance-reference.v3.json)
+  [`translation-governance-reference.v4.json`](translation-governance-reference.v4.json)
 
 ## Authority and pinning
 
@@ -52,6 +52,15 @@ must fail closed until reviewed enrollment. Consumers must not treat worker
 self-report or historical provenance as a new attestation. The immutable v2
 reference remains the authority for its original releases, and the public
 proposal/distribution schemas and release bytes are unchanged.
+
+Reference v4.0.0 supersedes v3 by exact hash and changes the trust interpretation:
+new packet/provenance v3 requires explicit production-task and semantic-worker
+launch overrides plus captured effective host metadata under a trusted-local-host
+assumption. Registry v2, policy binding v5 and runtime-host-evidence schema v1
+replace the active signing/enrollment prerequisite. Unsigned metadata does not
+protect against a malicious host/editor. Historical v3 signed semantics remain
+valid only under their original pins; old receipts and releases are not rewritten.
+No new quality trial or model requalification is required by this change.
 
 ## Review, correction, and release semantics
 

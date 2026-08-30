@@ -386,7 +386,7 @@ def project(
         },
         "policy": {
             "bindingSha256": sha256_text_file(
-                ROOT / "compliance" / "policy-binding.v4.json"
+                ROOT / "compliance" / "policy-binding.v5.json"
             )
         },
         "entryTitleDecisions": {

@@ -1,0 +1,329 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "trustModel",
+    "methodId",
+    "registrySha256",
+    "task",
+    "worker",
+    "binding"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "trustModel": {
+      "const": "trusted-local-host"
+    },
+    "methodId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "registrySha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "task": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "request",
+        "observed"
+      ],
+      "properties": {
+        "request": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind",
+                "overrides"
+              ],
+              "properties": {
+                "kind": {
+                  "const": "codex-task"
+                },
+                "overrides": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "model",
+                    "thinking"
+                  ],
+                  "properties": {
+                    "model": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "thinking": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind",
+                "overrides"
+              ],
+              "properties": {
+                "kind": {
+                  "const": "codex-worker"
+                },
+                "overrides": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "model",
+                    "reasoning_effort",
+                    "fork_turns"
+                  ],
+                  "properties": {
+                    "model": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "reasoning_effort": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "fork_turns": {
+                      "const": "none"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "observed": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "source",
+            "sessionId",
+            "turnId",
+            "provider",
+            "model",
+            "reasoning",
+            "firstTurn",
+            "forked"
+          ],
+          "properties": {
+            "source": {
+              "const": "codex-session-metadata"
+            },
+            "sessionId": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "turnId": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "provider": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reasoning": {
+              "type": "string",
+              "minLength": 1
+            },
+            "firstTurn": {
+              "type": "boolean"
+            },
+            "forked": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "worker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "request",
+        "observed"
+      ],
+      "properties": {
+        "request": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind",
+                "overrides"
+              ],
+              "properties": {
+                "kind": {
+                  "const": "codex-task"
+                },
+                "overrides": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "model",
+                    "thinking"
+                  ],
+                  "properties": {
+                    "model": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "thinking": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind",
+                "overrides"
+              ],
+              "properties": {
+                "kind": {
+                  "const": "codex-worker"
+                },
+                "overrides": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "model",
+                    "reasoning_effort",
+                    "fork_turns"
+                  ],
+                  "properties": {
+                    "model": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "reasoning_effort": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "fork_turns": {
+                      "const": "none"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "observed": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "source",
+            "sessionId",
+            "turnId",
+            "provider",
+            "model",
+            "reasoning",
+            "firstTurn",
+            "forked"
+          ],
+          "properties": {
+            "source": {
+              "const": "codex-session-metadata"
+            },
+            "sessionId": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "turnId": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "provider": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reasoning": {
+              "type": "string",
+              "minLength": 1
+            },
+            "firstTurn": {
+              "type": "boolean"
+            },
+            "forked": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stage",
+        "runId",
+        "sessionId",
+        "turnId",
+        "inputSha256",
+        "outputSha256",
+        "checkpointSha256"
+      ],
+      "properties": {
+        "stage": {
+          "enum": [
+            "blind_translation",
+            "independent_critique",
+            "witness_resolution",
+            "adjudication",
+            "name_inventory"
+          ]
+        },
+        "runId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "sessionId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "turnId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "inputSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "outputSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "checkpointSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Minimal unsigned trusted-host runtime evidence v1"
+}

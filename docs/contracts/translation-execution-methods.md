@@ -2,7 +2,7 @@
 
 - **Contract ID:** `translation-execution-methods`
 - **Status:** Active
-- **Issue:** [#76](https://github.com/yaqub0r/al-isabah/issues/76)
+- **Issues:** [#76](https://github.com/yaqub0r/al-isabah/issues/76), successor [#78](https://github.com/yaqub0r/al-isabah/issues/78)
 
 ## Admission, not a model recommendation
 
@@ -22,49 +22,43 @@ authorize another. A future method can have a narrower stage scope.
 
 ## Effective runtime binding
 
-Packet v2 and stage-provenance v2 require an `execution` envelope for every
-completed semantic stage. Its requested configuration must be explicit and
-exactly match the stage's active method. Its independent attestation binds the
-effective configuration, method and registry hash, run and session identities,
-input/output hashes, checkpoint fingerprint, telemetry digest, issuance time,
-and context-separation observations. The checkpoint already binds source,
-policy, schema, upstream output, and attached evidence. A changed checkpoint
-requires a new attestation; old receipts cannot certify a repaired output.
+Packet v3 and stage-provenance v3 require an `execution` envelope for every
+completed semantic stage. Both the production task and each semantic worker
+must be launched with explicit model and reasoning overrides matching the
+stage's approved method. Neither parent settings, defaults, inherited context,
+nor instructions in a prompt establish the effective settings.
 
-The runtime attester must observe the effective settings from the execution
-host or provider, not copy labels from the worker, task prompt, intended model
-selection, or packet. It must bind the resulting output to the observed run
-before signing. For critique and name inventory it must independently observe
-fresh context and prior-stage exclusion. The existing context self-report is
-still checked for consistency but is not an authentication mechanism.
-An independent stage cannot reuse its upstream stage's attested session ID.
+The coordinator records the actual launch overrides and captures effective
+provider, model, reasoning, session and turn identities from the selected
+host-written metadata, separately from worker-authored output labels. The
+minimal evidence binds those records to the method, registry hash, stage/run,
+input/output hashes and checkpoint fingerprint. The checkpoint already binds
+source, policy, schema, upstream output and attached evidence. New or changed
+outputs/checkpoints require a new capture binding; old evidence cannot certify
+repaired output. Historical rebinding never manufactures new execution.
 
-Attestations use OpenSSH Ed25519 signatures over canonical JSON: UTF-8,
-sorted keys, compact separators, one terminal LF, and namespace
-`al-isabah-runtime-v1`. Verification uses `ssh-keygen -Y verify` with a public
-key selected only from the reviewed active registry. Worker-selected keys,
-trust-store overrides, unsigned telemetry, self-report, missing configuration,
-and signature or telemetry/provenance mismatches fail closed. Verification
-failure or an unavailable verifier is never a successful run.
-The signature transport follows the
-[OpenSSH verification interface](https://man.openbsd.org/ssh-keygen#Y).
+Semantic workers start with explicitly excluded inherited conversation context.
+Capture verifies first-turn metadata and rejects recorded forks. Independent
+critique and name inventory must use sessions distinct from their prior stages
+and from the coordinating production task. Existing context receipts must still
+match their input/output/run hashes. Fresh-context metadata and launch controls
+are operational evidence, not a semantic audit of the contents of a prompt.
 
-The signing key must be controlled by a trusted runtime service or operator
-outside the translating worker's writable and credential boundary. This
-repository contains no signer, private key, or claim that a host adapter has
-already been deployed. The initial registry deliberately reports
-`runtimeTrustStatus: unprovisioned` with no enrolled keys. It approves a method,
-not an operational attester. Therefore new production semantic completion is
-blocked until a separately reviewed registry version enrolls a real attester
-and a decision record pins its authority ID and public-key digest. Synthetic
-tests use ephemeral keys and are not production enrollment or quality evidence.
+This is **unsigned operational provenance under a trusted-local-host and
+trusted-coordinator assumption**. It detects omissions, accidental setting
+inheritance, stale bindings and inconsistent labels. It does not authenticate
+the host or protect against a malicious host/editor consistently fabricating
+metadata. A worker label alone is insufficient; a hash is not a signature.
+No external attester, enrolled key, signing service, new benchmark, pilot
+translation or additional semantic pass is required. Failure to capture actual
+host settings remains fail-closed, never a reason to copy intended settings.
 
-Signatures authenticate the enrolled authority's statement, not the truth of
-arbitrary telemetry. Enrollment review must establish effective-setting
-observation, output/run binding, context separation, key custody, and a
-revocation procedure. Key rotation or revocation requires a new registry version;
-old receipts remain evidence under their original pin but do not authorize new
-production work. Raw telemetry and signing material remain outside public Git.
+The local `host_runtime.py` request, capture-launch and bind commands implement
+the current host adapter; the runbook specifies literal launch overrides and
+the private-data boundary. Only caller-selected session metadata is read.
+The adapter retains no prompts, responses, raw logs, private paths or secrets.
+An unsupported or incomplete host metadata format fails closed and requires a
+reviewed adapter update, not a speculative service dependency.
 
 ## Decisions and evaluation evidence
 
@@ -90,8 +84,8 @@ To add or change a method:
    decision or a successor's supersession edge retires an earlier approval.
 2. Add the next versioned registry file. Pin its predecessor and retain every
    earlier evaluation reference unchanged. Active methods must match exact,
-   unsuperseded approvals and stage scopes. Enrolling an attester also requires
-   a decision binding its public-key digest.
+   unsuperseded approvals and stage scopes. Trust-semantics changes require an
+   explicit successor decision, not silent reinterpretation of an old record.
 3. Review the evidence limitations, runtime trust boundary, registry update,
    schemas, policy binding, and machine-reference pin together through a PR.
    No automation or evaluation score approves a method by itself.
@@ -102,14 +96,16 @@ does not treat its proposed harness as an already controlled evaluation.
 
 ## Historical and consumer boundary
 
-This is a breaking consumer-interpretation change: machine reference v3.0.0,
-policy binding v4, and packet v2 apply to new work. Existing packet/schema v1,
-policy bindings v1-v3, governance references v1-v2, decisions, source bytes,
-and released products remain unchanged. Validate an old packet with the code
-and governance at its original immutable commit; it is not a new v2 production
-submission. Deterministic rebinding or relabeling cannot invent a past runtime
-attestation. Existing public releases retain their pinned validation path and
-are not reissued by this change.
+This is a breaking consumer-interpretation change: machine reference v4.0.0,
+policy binding v5, registry v2 and packet/provenance v3 apply to new work.
+Registry v1, packet schemas v1-v2, signed-attestation schema v1, policy bindings
+v1-v4, governance references v1-v3, decisions, source bytes and releases remain
+unchanged. Decision 0006 supersedes 0001's mandatory signing design without
+claiming that the approved model needs requalification or failed a benchmark.
+The former signed verifier remains available for historical regression tests;
+validate old packets using code and governance at their original immutable
+commit. Never reinterpret a historical signed receipt as unsigned new work or
+relabel an old high run as the approved baseline.
 
 Run the full tests, compliance validator, execution-governance validator, and
 public-tree validator. New packet validation and shard merging must exercise

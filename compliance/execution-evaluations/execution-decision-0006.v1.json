@@ -1,0 +1,74 @@
+{
+  "schema": "al-isabah.execution-evaluation.v1",
+  "runtimeAuthority": null,
+  "recordVersion": "1.0.0",
+  "recordedOn": "2026-08-30",
+  "stages": [
+    "blind_translation",
+    "independent_critique",
+    "witness_resolution",
+    "adjudication",
+    "name_inventory"
+  ],
+  "scope": "production-semantic-translation",
+  "inputHashes": {
+    "promptSha256": null,
+    "policySha256": null,
+    "schemaSha256": null,
+    "sourceSha256": null,
+    "cohortSha256": null
+  },
+  "evaluation": {
+    "kind": "governance-decision",
+    "design": "No controlled quality experiment was performed for this decision.",
+    "blindedComparison": {
+      "performed": false,
+      "details": "No blinded paired comparison is available.",
+      "evidenceSha256": null
+    },
+    "substantiveErrorCategories": []
+  },
+  "measurements": {
+    "substantiveErrors": null,
+    "unresolvedItems": null,
+    "witnessChecks": null,
+    "usageTokens": null,
+    "costUsd": null,
+    "latencyMs": null
+  },
+  "supersedes": [
+    {
+      "recordId": "execution-decision-0001",
+      "path": "compliance/execution-evaluations/execution-decision-0001.v1.json",
+      "sha256": "c898e5419eacd3b2ef2bcd6145fb1e6e39b745d3f2bc2f68d1aea2e7c4ff3d31"
+    }
+  ],
+  "relatedIssues": [
+    78,
+    76,
+    75,
+    49
+  ],
+  "recordId": "execution-decision-0006",
+  "status": "approved",
+  "methodId": "sol-xhigh-explicit-host-v1",
+  "configuration": {
+    "provider": "openai",
+    "model": "gpt-5.6-sol",
+    "reasoning": "xhigh",
+    "orchestration": "explicit-fresh-host-runtime-v1",
+    "configurationOrigin": "explicit"
+  },
+  "decisionBasis": [
+    "Issue 78 retains the exact approved Sol xhigh production baseline and supersedes mandatory external signing with explicit task and worker launch overrides plus captured host settings.",
+    "The original Volume 3 task and semantic worker launches omitted model and reasoning overrides and ran high. Worker labels incorrectly reported xhigh or ultra; this was a configuration and provenance incident, not a Sol xhigh quality failure.",
+    "Unsigned local metadata is accepted as operational provenance under a trusted host and coordinator assumption. The host collector reads effective settings separately from worker output labels."
+  ],
+  "limitations": [
+    "No controlled quality comparison, new benchmark, pilot translation, or additional semantic pass was requested or performed. Unavailable measurements and experiment hashes remain null.",
+    "Unsigned metadata and consistency hashes do not prove truth against a malicious host or editor. The coordinator must record actual launch overrides and select the correct host session and turn.",
+    "Fresh context evidence combines explicit non-inheriting worker launch overrides, first-turn host metadata, and distinct task and upstream session identities; it does not prove the contents of an unseen prompt.",
+    "The original signed-attestation decision and incident records remain immutable under their original pins. No signing service, key custody, or authority enrollment is required for new work.",
+    "Issue 49 remains a possible future evidence producer without changed scope or completion."
+  ]
+}

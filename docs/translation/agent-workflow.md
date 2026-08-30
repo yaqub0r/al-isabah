@@ -47,11 +47,10 @@ python -m unittest discover -s tests
 runtime path, and GitHub CLI availability. It does not inspect or expose
 credentials.
 
-`doctor` reports runtime trust separately from policy validity. The initial
-execution registry has no enrolled attester: do not begin production semantic
-work until a reviewed successor registry enrolls one. The translating worker
-must not hold the signing key. OpenSSH `ssh-keygen` is required to verify signed
-runtime receipts; it is not required merely to inspect policy or prepare a packet.
+`doctor` reports the `trusted-local-host` provenance model separately from
+policy validity. No signer, key enrollment, service or model benchmark is
+required. Follow the executable launch/capture path below for every production
+task and semantic worker; worker labels and inherited defaults are insufficient.
 
 ## 2. Hydrate the public Arabic authority
 
@@ -132,8 +131,9 @@ For every entry:
 
 1. **Blind translation** — translate directly from `source.arabic`. Record a
    distinct run ID, exact active method ID, explicit configuration, and complete
-   English. Obtain an independently signed runtime receipt for the resulting
-   checkpoint; a model label written by the worker is not attestation. Do not look at an English translation witness first.
+   English. Capture host settings and bind them to the resulting checkpoint;
+   a model label written by the worker is insufficient. Do not look at an
+   English translation witness first.
 2. **Independent critique** — use a fresh critique pass with a different run
    ID. Inspect omissions, additions, reversals, names, relationships, isnads,
    numbers, negation, honorific semantics, poetry, notes, and continuations.
@@ -161,15 +161,11 @@ For every entry:
 6. **Unresolved inventory** — retain an array even when it is empty.
 7. **Human state** — leave `humanReview.status` as `unreviewed`.
 
-For all five semantic stages, the external trusted attester supplies the
-`provenance.execution` envelope described by `runtime-attestation.v1`. After
-assembling content-addressed provenance, it observes and signs the effective
-configuration, run/session, input/output hashes, and checkpoint fingerprint.
-It also attests fresh context for independent critique and name inventory.
-Attach that receipt without changing its payload or signature. No repository
-command signs receipts or infers settings. Missing, inherited, unknown, or
-mismatched configurations and unenrolled signatures fail validation and shard
-merging. Deterministic parsing/rendering is outside this semantic model gate.
+For all five semantic stages, the coordinating host supplies the
+`provenance.execution` envelope described by `runtime-host-evidence.v1`, using
+the capture path below. Missing, inherited, unknown or mismatched settings and
+session/checkpoint inconsistencies fail validation and shard merging.
+Deterministic parsing/rendering is outside this semantic model gate.
 
 Do not silently rewrite a completed blind or adjudicated run during QA. If a
 deterministic repair is necessary, retain the original run provenance and add
@@ -187,7 +183,7 @@ owning biography or structural segment through
 `rawOpeniti` may be supplementary, never the only readable binding. These
 fields stay JSON even when an application later projects them into a database.
 
-Parallel biography workers use a schema `2.0.0` shard envelope containing the
+Parallel biography workers use a schema `3.0.0` shard envelope containing the
 packet ID, issue number, exact starting and ending source ordinals, and only
 the completed output fields for every source unit in that range. The
 coordinator applies a completed shard atomically:
@@ -199,7 +195,7 @@ python scripts/translation_workflow.py merge-shard \
 ```
 
 Structural and front-matter text is owned by the following source unit. A
-schema `2.1.0` structural shard may contain one source ordinal and translations
+schema `3.1.0` structural shard may contain one source ordinal and translations
 whose segment IDs exactly match that unit's `source.precedingSegments`:
 
 ```sh
@@ -220,6 +216,89 @@ hashes, non-final witnesses, reused critique runs, broken name references,
 private fields, and structural coverage gaps before writing. Shards and the
 working packet stay below ignored `.runtime`; only a separately derived strict
 public proposal may enter Git.
+
+### Explicit launch and local host capture (packet v3)
+
+The coordinator records actual launch arguments, not an assertion copied from
+the worker's output. Before launching a production task, create its request:
+
+```sh
+python scripts/host_runtime.py request --kind codex-task \
+  --method-id sol-xhigh-explicit-host-v1 --model gpt-5.6-sol --reasoning xhigh \
+  --output .runtime/translation/task-request.json
+```
+
+Use exactly the emitted `overrides` when calling the existing Codex task tool:
+`model: "gpt-5.6-sol", thinking: "xhigh"`. These must be explicit in
+`create_thread` or `send_message_to_thread`, not inferred from the orchestrator.
+This example documents production execution; do not create an extra task merely
+to run deterministic repository validation.
+
+Before each semantic worker, record `--kind codex-worker` with the same method,
+model and reasoning, writing a distinct request file. Launch that worker with
+explicit `model: "gpt-5.6-sol", reasoning_effort: "xhigh", fork_turns: "none"`.
+Provide only the stage's intended inputs. Every independent worker needs a
+fresh session; continuing a previous semantic worker or inheriting a full
+conversation is not this approved method. Do not change models mid-turn.
+
+After the host has emitted metadata, capture each launch separately:
+
+```sh
+python scripts/host_runtime.py capture-launch --kind codex-task \
+  --method-id sol-xhigh-explicit-host-v1 \
+  --request .runtime/translation/task-request.json \
+  --session-log <selected-private-task-rollout.jsonl> \
+  --session-id <returned-task-id> --turn-id <selected-host-turn-id> \
+  --output .runtime/translation/task-launch.json
+
+python scripts/host_runtime.py capture-launch --kind codex-worker \
+  --method-id sol-xhigh-explicit-host-v1 \
+  --request .runtime/translation/worker-request.json \
+  --session-log <selected-private-worker-rollout.jsonl> \
+  --session-id <returned-worker-session-id> --turn-id <selected-host-turn-id> \
+  --output .runtime/translation/worker-launch.json
+```
+
+Use the session's host rollout location supplied by the executing environment;
+do not scan other users' or unrelated sessions. This adapter reads only that
+file. It projects `session_meta.id`, `model_provider`, optional fork identity,
+and the selected `turn_context.turn_id`, `model`, `effort`, plus whether it is
+the first recorded turn. Missing metadata, conflicting settings for that turn,
+wrong identity, a reused worker turn or recorded fork fails. Raw prompt and
+response rows are never retained or printed. Runtime metadata format changes
+require a reviewed adapter update; never substitute worker-written labels.
+
+After building normal content-addressed stage provenance with
+`completed_stage_provenance`, save that stage's provenance object in an ignored
+JSON file and bind its exact output and checkpoint:
+
+```sh
+python scripts/host_runtime.py bind \
+  --method-id sol-xhigh-explicit-host-v1 --stage blind_translation \
+  --provenance .runtime/translation/stage-provenance.json \
+  --task-launch .runtime/translation/task-launch.json \
+  --worker-launch .runtime/translation/worker-launch.json \
+  --output .runtime/translation/stage-execution.json
+```
+
+Attach the emitted object as that stage's `provenance.execution`, then run
+ordinary packet or shard validation. A worker may cover multiple entries in
+one bounded stage: reuse the captured launch metadata, but bind each entry's
+own provenance separately. Preserve separate launches for independent critique
+and name inventory. Packet validation recalculates content hashes and rejects
+upstream-session reuse; capture alone is not machine readiness.
+
+All outputs must stay under ignored `.runtime`, use fresh output paths and
+refuse overwrite. Keep raw rollouts in their existing private host storage.
+Public proposals continue to exclude these runtime internals. The host and
+coordinator are trusted to record real launch arguments and associate output
+with the correct session. This is operational provenance, **not cryptographic
+proof against a malicious host/editor**. No signer, enrolled key, pilot run,
+benchmark or extra semantic pass is part of this path.
+
+The current Codex configuration surface also documents explicit model and
+reasoning overrides in the [official configuration reference](https://learn.chatgpt.com/docs/config-file/config-reference).
+That link is interface context, not an external translation-policy dependency.
 
 ## 6. Render and finalize machine readiness
 
