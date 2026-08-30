@@ -18,9 +18,8 @@ The policy binding is repository-local. It integrity-pins:
 - `translation-source-profile`.
 
 The active binding, repository-relative paths, and canonical UTF-8/LF SHA-256
-digests are recorded in [`policy-binding.v4.json`](policy-binding.v4.json).
-Versions 1 and 2 remain byte-stable because existing public-working releases
-pin them.
+digests are recorded in [`policy-binding.v5.json`](policy-binding.v5.json).
+Versions 1 through 4 remain byte-stable under their original governance pins.
 Validation fails if a required policy file is missing, changed without review,
 resolves outside the repository, or names another repository as its authority.
 
@@ -79,7 +78,7 @@ coverage is disclosed and never blocks publication or promotion by itself.
 The release-bound v1 promotion record, v1 source register, v1/v2 policy
 bindings, and publication closures retain their historical wording and hashes.
 They are immutable evidence, not the active interpretation contract. New
-consumers pin the v2 governance reference and v2 promotion-readiness record.
+consumers pin the v4 governance reference and v2 promotion-readiness record.
 
 ## Public content license and boundary
 

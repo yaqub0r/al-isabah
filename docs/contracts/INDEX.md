@@ -31,7 +31,7 @@ coverage is an independent, ongoing management state.
 
 ## Local supporting controls
 
-- [`translation-governance-reference.v3.json`](translation-governance-reference.v3.json)
+- [`translation-governance-reference.v4.json`](translation-governance-reference.v4.json)
   is the versioned, integrity-bound discovery document for downstream
   consumers. The companion [compatibility guide](downstream-consumer-compatibility.md)
   defines pinning, release semantics, and the Sabiqah deprecation inventory.
@@ -51,14 +51,14 @@ coverage is an independent, ongoing management state.
   promotion state.
 - [`canonical-publication-repository.md`](../architecture/canonical-publication-repository.md)
   defines the repository boundary and release responsibilities.
-- [`compliance/policy-binding.v4.json`](../../compliance/policy-binding.v4.json)
+- [`compliance/policy-binding.v5.json`](../../compliance/policy-binding.v5.json)
   integrity-pins the local contracts, translation profile, and pinned-source
-  profile used by new translation work. Versions 1 through 3 remain immutable
+  profile used by new translation work. Versions 1 through 4 remain immutable
   provenance for releases created under their policy sets.
 
 - [`translation-execution-methods`](translation-execution-methods.md) governs exact
-  stage-specific method admission and trusted effective-runtime attestations.
-- [`execution-methods.v1.json`](../../profiles/execution-methods.v1.json) pins
+  stage-specific admission and captured effective settings under trusted-host semantics.
+- [`execution-methods.v2.json`](../../profiles/execution-methods.v2.json) pins
   active approvals and append-only public-safe evaluation records.
 
 ## Validation

@@ -216,7 +216,10 @@ Machine readiness requires:
 
 Only exact stage-specific methods in the active execution registry are approved.
 Follow [execution-method governance](../contracts/translation-execution-methods.md)
-for runtime attestation and future evaluation decisions. The initial approval is
+for explicit launches, captured host settings and future evaluation decisions.
+The approved production baseline remains exactly `gpt-5.6-sol` at `xhigh` for
+the production task and every semantic worker. No signing key, external service,
+new benchmark or extra semantic pass is required. The initial approval is
 a governance baseline, not a claim that controlled calibration has occurred.
 Future comparisons should lock source, prompt, schema, witnesses, and cohort,
 record blinding and substantive findings, and disclose all evidence limitations.

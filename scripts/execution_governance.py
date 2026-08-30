@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Fail-closed method admission and externally signed runtime verification.
+"""Fail-closed method admission, with immutable signed-history validation.
 
-This module never launches a model, signs a receipt, or accepts a worker-supplied
-trust store. OpenSSH verifies signatures; the reviewed registry supplies keys.
+Current execution uses unsigned trusted-host metadata; historical signature
+verification is retained explicitly, never used as a new production gate.
 """
 
 from __future__ import annotations
@@ -23,8 +23,8 @@ from schema_validation import validate_schema_instance
 from public_boundary import TOKEN_SHAPES, canonical_json, sha256_text_file
 
 ROOT = Path(__file__).resolve().parents[1]
-REGISTRY_PATH = ROOT / "profiles/execution-methods.v1.json"
-POLICY_PATH = ROOT / "compliance/policy-binding.v4.json"
+REGISTRY_PATH = ROOT / "profiles/execution-methods.v2.json"
+POLICY_PATH = ROOT / "compliance/policy-binding.v5.json"
 EVALUATION_ROOT = ROOT / "compliance/execution-evaluations"
 REGISTRY_SCHEMA = ROOT / "schemas/execution-method-registry.v1.schema.json"
 EVALUATION_SCHEMA = ROOT / "schemas/execution-evaluation.v1.schema.json"
@@ -37,7 +37,7 @@ STAGES = (
 )
 
 
-def read_json(path: Path) -> Any:
+def parse_json(text: str) -> Any:
     def unique_pairs(pairs):
         result = {}
         for key, value in pairs:
@@ -47,8 +47,12 @@ def read_json(path: Path) -> Any:
         return result
     def reject_constant(_value):
         raise ValueError("non-finite JSON number")
-    return json.loads(path.read_text(encoding="utf-8"), object_pairs_hook=unique_pairs,
+    return json.loads(text, object_pairs_hook=unique_pairs,
                       parse_constant=reject_constant)
+
+
+def read_json(path: Path) -> Any:
+    return parse_json(path.read_text(encoding="utf-8"))
 
 
 def schema_errors(value: Any, path: Path) -> list[str]:
@@ -125,7 +129,10 @@ def validate_evaluation(record: Any) -> list[str]:
 
 
 def validate_registry(registry: Any, root: Path = ROOT, seen: frozenset[str] = frozenset()) -> list[str]:
-    errors = schema_errors(registry, REGISTRY_SCHEMA) + public_errors(registry)
+    schema = REGISTRY_SCHEMA
+    if isinstance(registry, dict) and registry.get("schema") == "al-isabah.execution-method-registry.v2":
+        schema = ROOT / "schemas/execution-method-registry.v2.schema.json"
+    errors = schema_errors(registry, schema) + public_errors(registry)
     if errors:
         return errors
     if registry["registryVersion"] == "1.0.0" and hashlib.sha256(canonical_json(registry)).hexdigest() != INITIAL_REGISTRY_CONTENT_SHA256:
@@ -180,7 +187,7 @@ def validate_registry(registry: Any, root: Path = ROOT, seen: frozenset[str] = f
     if covered != set(STAGES):
         errors.append("execution: every semantic stage needs explicit method coverage")
     authorities = set()
-    for authority in registry["runtimeAuthorities"]:
+    for authority in registry.get("runtimeAuthorities", []):
         try:
             key_bytes = base64.b64decode(authority["publicKey"].split()[1], validate=True)
             if len(key_bytes) != 51 or not key_bytes.startswith(b"\x00\x00\x00\x0bssh-ed25519\x00\x00\x00\x20"):
@@ -198,7 +205,11 @@ def validate_registry(registry: Any, root: Path = ROOT, seen: frozenset[str] = f
                     "publicKeySha256": hashlib.sha256(authority["publicKey"].encode("ascii")).hexdigest(),
                 }):
             errors.append("execution: runtime authority lacks reviewed admission")
-    if (registry["runtimeTrustStatus"] == "enrolled") != bool(authorities):
+    if registry["runtimeTrustStatus"] == "trusted-local-host":
+        decision = records.get(registry["trustDecisionId"], {})
+        if decision.get("status") != "approved" or registry["trustDecisionId"] in superseded:
+            errors.append("execution: host trust lacks an unsuperseded reviewed decision")
+    elif (registry["runtimeTrustStatus"] == "enrolled") != bool(authorities):
         errors.append("execution: runtime trust status is inconsistent")
     previous = registry["supersedes"]
     if previous:
@@ -252,7 +263,8 @@ def verify_signature(payload: dict[str, Any], signature: str, public_key: str) -
         return False
 
 
-def validate_execution(provenance: dict[str, Any], stage: str) -> list[str]:
+def validate_signed_execution(provenance: dict[str, Any], stage: str) -> list[str]:
+    """Historical verifier; callers must supply the original pinned registry."""
     execution = provenance.get("execution")
     if not isinstance(execution, dict):
         return ["execution: trusted runtime attestation is required"]
@@ -294,6 +306,11 @@ def validate_execution(provenance: dict[str, Any], stage: str) -> list[str]:
     elif not errors and not verify_signature(payload, execution["attestation"]["signature"], authorities[0]["publicKey"]):
         errors.append("execution: runtime signature verification failed")
     return errors
+
+
+def validate_execution(provenance: dict[str, Any], stage: str) -> list[str]:
+    from host_runtime import validate_execution as validate_host_execution
+    return validate_host_execution(provenance, stage)
 
 
 def validate() -> list[str]:

@@ -88,8 +88,10 @@ Every production semantic stage must use an exact method ID approved for that
 stage in the integrity-bound active execution registry and pass the
 [trusted runtime binding contract](translation-execution-methods.md).
 Model/reasoning inheritance and worker self-report alone are insufficient.
-Method approval is distinct from quality evidence and from runtime-attester
-enrollment. Historical records retain their original immutable governance pins.
+Method approval is distinct from quality evidence. Explicit task/worker launches
+and captured effective host settings provide operational provenance under the
+trusted-host assumption, not protection against a malicious host or editor.
+Historical records retain their original immutable governance pins.
 
 ## Required source bundle
 

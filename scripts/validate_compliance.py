@@ -21,7 +21,7 @@ from execution_governance import validate as validate_execution_governance
 ROOT = SCRIPT_DIR.parent
 REGISTER_PATH = ROOT / "compliance" / "source-register.v1.json"
 PROMOTION_PATH = ROOT / "compliance" / "promotions" / "available-data.v2.json"
-POLICY_PATH = ROOT / "compliance" / "policy-binding.v4.json"
+POLICY_PATH = ROOT / "compliance" / "policy-binding.v5.json"
 LAST_POLICY_PATH = ROOT / "compliance" / "policy-binding.v3.json"
 LEGACY_POLICY_PATH = ROOT / "compliance" / "policy-binding.v1.json"
 PREVIOUS_POLICY_PATH = ROOT / "compliance" / "policy-binding.v2.json"
@@ -29,7 +29,7 @@ COVERAGE_PATH = ROOT / "compliance" / "translation-coverage.v1.json"
 RETIREMENT_PATH = ROOT / "compliance" / "research-retirement.v1.json"
 RIGHTS_MATRIX_PATH = ROOT / "compliance" / "rights-matrix.al-isabah.v1.json"
 GOVERNANCE_REFERENCE_PATH = (
-    ROOT / "docs" / "contracts" / "translation-governance-reference.v3.json"
+    ROOT / "docs" / "contracts" / "translation-governance-reference.v4.json"
 )
 FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 
@@ -53,17 +53,17 @@ REQUIRED_POLICIES = {
     "honorific-formula-registry": "profiles/honorific-formulas.v1.json",
     "translation-source-profile": "profiles/translation-source.v1.json",
     "execution-method-contract": "docs/contracts/translation-execution-methods.md",
-    "execution-method-registry": "profiles/execution-methods.v1.json",
-    "execution-method-registry-schema": "schemas/execution-method-registry.v1.schema.json",
+    "execution-method-registry": "profiles/execution-methods.v2.json",
+    "execution-method-registry-schema": "schemas/execution-method-registry.v2.schema.json",
     "execution-evaluation-schema": "schemas/execution-evaluation.v1.schema.json",
-    "runtime-attestation-schema": "schemas/runtime-attestation.v1.schema.json",
-    "translation-work-packet-schema": "schemas/translation-work-packet.v2.schema.json",
+    "runtime-host-evidence-schema": "schemas/runtime-host-evidence.v1.schema.json",
+    "translation-work-packet-schema": "schemas/translation-work-packet.v3.schema.json",
     "translation-agent-workflow": "docs/translation/agent-workflow.md",
-    "local-policy-binding-schema": "compliance/schemas/policy-binding.v4.schema.json",
+    "local-policy-binding-schema": "compliance/schemas/policy-binding.v5.schema.json",
 }
 REQUIRED_GOVERNANCE_ARTIFACTS = {
     "policy-binding": (
-        "compliance/policy-binding.v4.json",
+        "compliance/policy-binding.v5.json",
         "active",
         None,
     ),
@@ -108,9 +108,9 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
         "1.1.0",
     ),
     "governance-reference-schema": (
-        "schemas/translation-governance-reference.v3.schema.json",
+        "schemas/translation-governance-reference.v4.schema.json",
         "active",
-        "3.0.0",
+        "4.0.0",
     ),
     "promotion-readiness": (
         "compliance/promotions/available-data.v2.json",
@@ -155,13 +155,13 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
 }
 REQUIRED_GOVERNANCE_ARTIFACTS.update({
     "execution-method-contract": ("docs/contracts/translation-execution-methods.md", "active", None),
-    "execution-method-registry": ("profiles/execution-methods.v1.json", "active", "1.0.0"),
-    "execution-method-registry-schema": ("schemas/execution-method-registry.v1.schema.json", "active", None),
+    "execution-method-registry": ("profiles/execution-methods.v2.json", "active", "2.0.0"),
+    "execution-method-registry-schema": ("schemas/execution-method-registry.v2.schema.json", "active", None),
     "execution-evaluation-schema": ("schemas/execution-evaluation.v1.schema.json", "active", None),
-    "runtime-attestation-schema": ("schemas/runtime-attestation.v1.schema.json", "active", None),
-    "translation-work-packet-schema": ("schemas/translation-work-packet.v2.schema.json", "active", "2.0.0"),
+    "runtime-host-evidence-schema": ("schemas/runtime-host-evidence.v1.schema.json", "active", None),
+    "translation-work-packet-schema": ("schemas/translation-work-packet.v3.schema.json", "active", "3.0.0"),
     "translation-agent-workflow": ("docs/translation/agent-workflow.md", "active", None),
-    "local-policy-binding-schema": ("compliance/schemas/policy-binding.v4.schema.json", "active", None),
+    "local-policy-binding-schema": ("compliance/schemas/policy-binding.v5.schema.json", "active", None),
 })
 REQUIRED_DEPRECATED_CONSUMER_AUTHORITIES = {
     (
@@ -299,12 +299,14 @@ def _walk(value: Any, location: str = "$") -> list[str]:
 
 def validate_policy(policy: dict[str, Any]) -> list[str]:
     errors: list[str] = []
-    if validate_schema_instance(policy, load_json(ROOT / "compliance/schemas/policy-binding.v4.schema.json")):
+    if validate_schema_instance(policy, load_json(ROOT / "compliance/schemas/policy-binding.v5.schema.json")):
         errors.append("policy: schema validation failed")
-    if policy.get("schema") != "al-isabah.local-policy-binding.v4":
+    if policy.get("schema") != "al-isabah.local-policy-binding.v5":
         errors.append("policy: unexpected schema")
-    if policy.get("supersedes") != "compliance/policy-binding.v3.json":
-        errors.append("policy: v4 must supersede the immutable v3 binding")
+    if policy.get("supersedes") != "compliance/policy-binding.v4.json":
+        errors.append("policy: v5 must supersede the immutable v4 binding")
+    if canonical_text_sha256(ROOT / "compliance/policy-binding.v4.json") != "8de2dbe3c1700dc20532507a6b75f64344d23111d4737cd265c237eae0d00a54":
+        errors.append("policy: immutable v4 binding has changed")
     if canonical_text_sha256(LAST_POLICY_PATH) != "cfdd5d5baab74a21930e549cc4418574decc07e20e84bf6438e0b9527e360a0b":
         errors.append("policy: immutable v3 release binding has changed")
     if canonical_text_sha256(LEGACY_POLICY_PATH) != LEGACY_POLICY_SHA256:
@@ -779,7 +781,7 @@ def validate_translation_governance(
 ) -> list[str]:
     errors = validate_formula_registry(registry)
     errors.extend(validate_execution_governance())
-    if validate_schema_instance(reference, load_json(ROOT / "schemas/translation-governance-reference.v3.schema.json")):
+    if validate_schema_instance(reference, load_json(ROOT / "schemas/translation-governance-reference.v4.schema.json")):
         errors.append("governance reference: schema validation failed")
     expected_top_level = {
         "schema",
@@ -794,24 +796,24 @@ def validate_translation_governance(
         "deprecatedConsumerAuthorities",
     }
     if set(reference) != expected_top_level:
-        errors.append("governance reference: fields do not match the v3 contract")
-    if reference.get("schema") != "al-isabah.translation-governance-reference.v3":
+        errors.append("governance reference: fields do not match the v4 contract")
+    if reference.get("schema") != "al-isabah.translation-governance-reference.v4":
         errors.append("governance reference: unexpected schema")
-    if reference.get("referenceVersion") != "3.0.0":
-        errors.append("governance reference: breaking semantics require version 3.0.0")
+    if reference.get("referenceVersion") != "4.0.0":
+        errors.append("governance reference: breaking semantics require version 4.0.0")
     if reference.get("supersedes") != {
-        "path": "docs/contracts/translation-governance-reference.v2.json",
-        "referenceVersion": "2.0.0",
-        "sha256": canonical_text_sha256(
-            ROOT / "docs" / "contracts" / "translation-governance-reference.v2.json"
-        ),
+        "path": "docs/contracts/translation-governance-reference.v3.json",
+        "referenceVersion": "3.0.0",
+        "sha256": "7b6f04c9954a67dda51f049a1f0fc584cbb495df10f4eaddd7708110c0191906",
     }:
-        errors.append("governance reference: immutable v2 supersession binding is incorrect")
+        errors.append("governance reference: immutable v3 supersession binding is incorrect")
+    if canonical_text_sha256(ROOT / "docs/contracts/translation-governance-reference.v3.json") != reference.get("supersedes", {}).get("sha256"):
+        errors.append("governance reference: immutable v3 reference changed")
 
     authority = reference.get("authority")
     expected_authority = {
         "repository": "https://github.com/yaqub0r/al-isabah",
-        "repositoryPath": "docs/contracts/translation-governance-reference.v3.json",
+        "repositoryPath": "docs/contracts/translation-governance-reference.v4.json",
         "requiredPin": "immutable-repository-commit",
     }
     if authority != expected_authority:
@@ -841,7 +843,7 @@ def validate_translation_governance(
         artifacts[artifact_id] = artifact
 
     if set(artifacts) != set(REQUIRED_GOVERNANCE_ARTIFACTS):
-        errors.append("governance reference: exact v3 artifact set is required")
+        errors.append("governance reference: exact v4 artifact set is required")
     for artifact_id, (path, status, version) in REQUIRED_GOVERNANCE_ARTIFACTS.items():
         artifact = artifacts.get(artifact_id)
         if artifact is None:

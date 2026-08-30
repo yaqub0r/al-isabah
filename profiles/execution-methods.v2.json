@@ -1,0 +1,70 @@
+{
+  "schema": "al-isabah.execution-method-registry.v2",
+  "registryVersion": "2.0.0",
+  "supersedes": {
+    "path": "profiles/execution-methods.v1.json",
+    "sha256": "196dd363f238211b87e36bf2dbc1dfda9858ab7b2c6d07b12e9719faf2028727"
+  },
+  "scope": "production-semantic-translation",
+  "stages": [
+    "blind_translation",
+    "independent_critique",
+    "witness_resolution",
+    "adjudication",
+    "name_inventory"
+  ],
+  "methods": [
+    {
+      "methodId": "sol-xhigh-explicit-host-v1",
+      "configuration": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "reasoning": "xhigh",
+        "orchestration": "explicit-fresh-host-runtime-v1",
+        "configurationOrigin": "explicit"
+      },
+      "stages": [
+        "blind_translation",
+        "independent_critique",
+        "witness_resolution",
+        "adjudication",
+        "name_inventory"
+      ],
+      "decisionId": "execution-decision-0006"
+    }
+  ],
+  "evaluations": [
+    {
+      "recordId": "execution-decision-0001",
+      "path": "compliance/execution-evaluations/execution-decision-0001.v1.json",
+      "sha256": "c898e5419eacd3b2ef2bcd6145fb1e6e39b745d3f2bc2f68d1aea2e7c4ff3d31"
+    },
+    {
+      "recordId": "execution-decision-0002",
+      "path": "compliance/execution-evaluations/execution-decision-0002.v1.json",
+      "sha256": "cc0117288753d4d5595fd8a30d2133097d94e645d5cb80df5f3dc8e761b7e9cc"
+    },
+    {
+      "recordId": "execution-decision-0003",
+      "path": "compliance/execution-evaluations/execution-decision-0003.v1.json",
+      "sha256": "f6348e746dc5be9674a63e9e0764c13c27c1f98f53080854bee05a399eef2388"
+    },
+    {
+      "recordId": "execution-decision-0004",
+      "path": "compliance/execution-evaluations/execution-decision-0004.v1.json",
+      "sha256": "f9917ebb71bec140b8260b70ad5878fe5c9b45a35bcb8e1b387756a464259f78"
+    },
+    {
+      "recordId": "execution-decision-0005",
+      "path": "compliance/execution-evaluations/execution-decision-0005.v1.json",
+      "sha256": "fa635ffad79cff2a680bf2918784609f19a87aeccda07ce1335de6e3735438a4"
+    },
+    {
+      "recordId": "execution-decision-0006",
+      "path": "compliance/execution-evaluations/execution-decision-0006.v1.json",
+      "sha256": "4d298572c82438a573460c5a8819284f727527cadef8c3ac0f0ba05476860eb9"
+    }
+  ],
+  "runtimeTrustStatus": "trusted-local-host",
+  "trustDecisionId": "execution-decision-0006"
+}

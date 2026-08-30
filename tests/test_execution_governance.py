@@ -30,7 +30,7 @@ class ExecutionGovernanceTests(unittest.TestCase):
         subprocess.run([executable, "-q", "-t", "ed25519", "-N", "", "-f", str(cls.key)],
                        check=True, capture_output=True)
         cls.public_key = " ".join(cls.key.with_suffix(".pub").read_text().split()[:2])
-        cls.registry = GOVERNANCE.read_json(GOVERNANCE.REGISTRY_PATH)
+        cls.registry = GOVERNANCE.read_json(GOVERNANCE.ROOT / "profiles/execution-methods.v1.json")
         cls.registry["runtimeAuthorities"] = [{
             "authorityId": "synthetic-runtime", "publicKey": cls.public_key,
             "decisionId": "execution-decision-0006",
@@ -86,7 +86,7 @@ class ExecutionGovernanceTests(unittest.TestCase):
     def test_exact_approved_method_passes_every_stage_with_real_signature(self):
         for stage in GOVERNANCE.STAGES:
             with self.subTest(stage=stage):
-                self.assertEqual(GOVERNANCE.validate_execution(self.provenance(stage), stage), [])
+                self.assertEqual(GOVERNANCE.validate_signed_execution(self.provenance(stage), stage), [])
 
     def test_unapproved_high_ultra_unknown_and_inherited_settings_fail(self):
         cases = [
@@ -103,29 +103,29 @@ class ExecutionGovernanceTests(unittest.TestCase):
         for change in cases:
             value = self.provenance()
             change(value["execution"])
-            self.assertTrue(GOVERNANCE.validate_execution(value, "blind_translation"))
+            self.assertTrue(GOVERNANCE.validate_signed_execution(value, "blind_translation"))
 
     def test_missing_attestation_and_worker_self_report_fail(self):
         value = self.provenance()
         value["execution"].pop("attestation")
-        self.assertTrue(GOVERNANCE.validate_execution(value, "blind_translation"))
+        self.assertTrue(GOVERNANCE.validate_signed_execution(value, "blind_translation"))
         value.pop("execution")
         self.assertIn("execution: trusted runtime attestation is required",
-                      GOVERNANCE.validate_execution(value, "blind_translation"))
+                      GOVERNANCE.validate_signed_execution(value, "blind_translation"))
 
     def test_historical_rebinding_is_not_a_new_approved_execution(self):
         for origin in ("legacy_migration", "deterministic_rebinding"):
             value = self.provenance()
             value["origin"] = origin
             self.assertIn("execution: historical rebinding is not a new approved execution",
-                          GOVERNANCE.validate_execution(value, "blind_translation"))
+                          GOVERNANCE.validate_signed_execution(value, "blind_translation"))
 
     def test_signed_effective_high_cannot_be_labeled_xhigh(self):
         value = self.provenance()
         payload = value["execution"]["attestation"]["payload"]
         payload["configuration"]["reasoning"] = "high"
         value["execution"]["attestation"]["signature"] = self.sign(payload)
-        errors = GOVERNANCE.validate_execution(value, "blind_translation")
+        errors = GOVERNANCE.validate_signed_execution(value, "blind_translation")
         self.assertIn("execution: runtime telemetry and worker provenance disagree", errors)
 
     def test_run_checkpoint_session_and_signature_tampering_fail(self):
@@ -133,74 +133,31 @@ class ExecutionGovernanceTests(unittest.TestCase):
             value = self.provenance()
             payload = value["execution"]["attestation"]["payload"]
             payload[field] = "f" * 64
-            self.assertTrue(GOVERNANCE.validate_execution(value, "blind_translation"), field)
+            self.assertTrue(GOVERNANCE.validate_signed_execution(value, "blind_translation"), field)
         value = self.provenance()
         value["execution"]["attestation"]["signature"] = "-----BEGIN SSH SIGNATURE-----\nAAAA\n-----END SSH SIGNATURE-----\n"
-        self.assertTrue(GOVERNANCE.validate_execution(value, "blind_translation"))
+        self.assertTrue(GOVERNANCE.validate_signed_execution(value, "blind_translation"))
 
     def test_unenrolled_key_and_missing_verifier_fail_closed(self):
         value = self.provenance()
         registry = copy.deepcopy(self.registry)
         registry["runtimeAuthorities"] = []
         with mock.patch.object(GOVERNANCE, "load_active_registry", return_value=registry):
-            self.assertTrue(GOVERNANCE.validate_execution(value, "blind_translation"))
+            self.assertTrue(GOVERNANCE.validate_signed_execution(value, "blind_translation"))
         with mock.patch.object(GOVERNANCE.shutil, "which", return_value=None):
-            self.assertTrue(GOVERNANCE.validate_execution(value, "blind_translation"))
+            self.assertTrue(GOVERNANCE.validate_signed_execution(value, "blind_translation"))
 
     def test_stage_scope_and_context_separation_are_not_inferred(self):
         value = self.provenance("independent_critique")
         payload = value["execution"]["attestation"]["payload"]
         payload["independentContext"]["freshContext"] = False
         value["execution"]["attestation"]["signature"] = self.sign(payload)
-        self.assertTrue(GOVERNANCE.validate_execution(value, "independent_critique"))
+        self.assertTrue(GOVERNANCE.validate_signed_execution(value, "independent_critique"))
         registry = copy.deepcopy(self.registry)
         registry["methods"][0]["stages"] = ["blind_translation"]
         with mock.patch.object(GOVERNANCE, "load_active_registry", return_value=registry):
-            self.assertTrue(GOVERNANCE.validate_execution(self.provenance("adjudication"), "adjudication"))
+            self.assertTrue(GOVERNANCE.validate_signed_execution(self.provenance("adjudication"), "adjudication"))
 
-    def test_full_packet_readiness_really_uses_runtime_gate(self):
-        issue = assignment_issue()
-        packet = WORKFLOW.build_packet(issue, WORKFLOW.parse_claims([issue]), FIXTURE_SOURCE,
-                                       FIXTURE_MANIFEST, WORKFLOW.DEFAULT_POLICY)
-        complete_autonomous_stages(packet)
-        fields = dict(zip(GOVERNANCE.STAGES, (
-            "blindTranslation", "independentCritique", "witnessResolution", "adjudication", "names")))
-        for entry in packet["entries"]:
-            for owner in [entry, *entry["precedingTranslations"]]:
-                for stage, field in fields.items():
-                    self.attest(owner[field]["provenance"], stage)
-        packet["formulaInventory"], errors = WORKFLOW.formula_inventory(packet)
-        self.assertEqual(errors, [])
-        packet["reviewPresentation"] = {"status": "ready", "path": "review.md", "sha256": "a" * 64}
-        packet["machineReadiness"].update(status="ready", validatedAt="2026-08-30T12:00:00Z")
-        packet["reviewPresentation"]["sha256"] = WORKFLOW.text_sha256(WORKFLOW.render_review(packet))
-        self.assertEqual(WORKFLOW.validate_packet(packet, machine_ready=True), [])
-        packet["entries"][0]["blindTranslation"]["provenance"]["execution"] = None
-        self.assertIn("execution: trusted runtime attestation is required",
-                      WORKFLOW.validate_packet(packet, machine_ready=True))
-        packet["entries"][0]["independentCritique"]["provenance"]["execution"] = {"attestation": None}
-        self.assertTrue(WORKFLOW.validate_packet(packet, machine_ready=True))
-
-    def test_shard_merge_rejects_unattested_outputs_without_writing(self):
-        issue = assignment_issue()
-        packet = WORKFLOW.build_packet(issue, WORKFLOW.parse_claims([issue]), FIXTURE_SOURCE,
-                                       FIXTURE_MANIFEST, WORKFLOW.DEFAULT_POLICY)
-        completed = copy.deepcopy(packet)
-        complete_autonomous_stages(completed)
-        fields = ("sourceOrdinal", "sourceUnitId", "blindTranslation", "independentCritique",
-                  "witnessResolution", "adjudication", "names", "unresolved", "humanReview")
-        shard = {"schemaVersion": "2.0.0", "packetId": packet["packetId"],
-                 "issueNumber": 25, "startUnit": 1, "endUnit": 2,
-                 "entries": [{field: entry[field] for field in fields} for entry in completed["entries"]]}
-        with tempfile.TemporaryDirectory() as directory:
-            packet_path = Path(directory) / "packet.json"
-            shard_path = Path(directory) / "shard.json"
-            packet_path.write_bytes(WORKFLOW.json_bytes(packet))
-            shard_path.write_bytes(WORKFLOW.json_bytes(shard))
-            before = packet_path.read_bytes()
-            with self.assertRaisesRegex(WORKFLOW.WorkflowError, "trusted runtime attestation"):
-                WORKFLOW.merge_entry_shard(packet_path, shard_path)
-            self.assertEqual(packet_path.read_bytes(), before)
 
     def test_signature_namespace_cannot_be_replayed_from_another_protocol(self):
         value = self.provenance()
@@ -209,12 +166,12 @@ class ExecutionGovernanceTests(unittest.TestCase):
                                  "-n", "another-protocol"], input=canonical_json(payload),
                                 capture_output=True, check=True)
         value["execution"]["attestation"]["signature"] = result.stdout.decode("ascii")
-        self.assertTrue(GOVERNANCE.validate_execution(value, "blind_translation"))
+        self.assertTrue(GOVERNANCE.validate_signed_execution(value, "blind_translation"))
 
 
 class ExecutionArtifactTests(unittest.TestCase):
     def test_embedded_packet_attestation_schema_matches_standalone_schema(self):
-        packet_schema = GOVERNANCE.read_json(WORKFLOW.DEFAULT_PACKET_SCHEMA)
+        packet_schema = GOVERNANCE.read_json(GOVERNANCE.ROOT / "schemas/translation-work-packet.v2.schema.json")
         standalone = GOVERNANCE.read_json(GOVERNANCE.ATTESTATION_SCHEMA)
         standalone.pop("$schema")
         standalone.pop("title")
@@ -222,7 +179,7 @@ class ExecutionArtifactTests(unittest.TestCase):
 
     def test_real_initial_registry_is_valid_but_no_signer_is_fabricated(self):
         self.assertEqual(GOVERNANCE.validate(), [])
-        registry = GOVERNANCE.load_active_registry()
+        registry = GOVERNANCE.read_json(GOVERNANCE.ROOT / "profiles/execution-methods.v1.json")
         self.assertEqual(registry["runtimeAuthorities"], [])
         self.assertEqual(registry["runtimeTrustStatus"], "unprovisioned")
         self.assertEqual(len(registry["methods"]), 1)
@@ -234,7 +191,7 @@ class ExecutionArtifactTests(unittest.TestCase):
 
     def test_initial_decisions_do_not_invent_quality_evidence(self):
         records = [GOVERNANCE.read_json(GOVERNANCE.ROOT / ref["path"])
-                   for ref in GOVERNANCE.load_active_registry()["evaluations"]]
+                   for ref in GOVERNANCE.read_json(GOVERNANCE.ROOT / "profiles/execution-methods.v1.json")["evaluations"]]
         self.assertEqual([record["status"] for record in records],
                          ["approved", "unevaluated", "unevaluated", "rejected", "rejected"])
         for record in records:
@@ -244,7 +201,7 @@ class ExecutionArtifactTests(unittest.TestCase):
         self.assertIsNone(records[2]["configuration"]["reasoning"])
 
     def test_evaluation_artifacts_must_not_be_filesystem_links(self):
-        registry = GOVERNANCE.load_active_registry()
+        registry = GOVERNANCE.read_json(GOVERNANCE.ROOT / "profiles/execution-methods.v1.json")
         with mock.patch.object(Path, "is_symlink", return_value=True):
             self.assertIn("execution: evaluation hash mismatch",
                           GOVERNANCE.validate_registry(registry))
@@ -269,7 +226,7 @@ class ExecutionArtifactTests(unittest.TestCase):
             root = Path(directory)
             (root / "profiles").mkdir()
             (root / "compliance/execution-evaluations").mkdir(parents=True)
-            original = GOVERNANCE.read_json(GOVERNANCE.REGISTRY_PATH)
+            original = GOVERNANCE.read_json(GOVERNANCE.ROOT / "profiles/execution-methods.v1.json")
             for ref in original["evaluations"]:
                 shutil.copyfile(GOVERNANCE.ROOT / ref["path"], root / ref["path"])
             previous = root / "profiles/execution-methods.v1.json"

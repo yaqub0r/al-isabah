@@ -33,18 +33,18 @@ from execution_governance import validate_execution
 
 ROOT = SCRIPT_DIR.parent
 DEFAULT_MANIFEST = ROOT / "profiles" / "translation-source.v1.json"
-DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v4.json"
-DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v2.schema.json"
+DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v5.json"
+DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v3.schema.json"
 FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 RUNTIME_ROOT = ROOT / ".runtime" / "translation"
 PROPOSAL_ROOT = ROOT / "content" / "translation-proposals"
 PUBLIC_PROPOSAL_ROOT = ROOT / "content" / "public-proposals"
 REPOSITORY = "yaqub0r/al-isabah"
-TOOL_VERSION = "2.0.0"
+TOOL_VERSION = "3.0.0"
 FORMULA_REGISTRY_VERSION = "1.3.0"
 SEMANTIC_AUDIT_VERSION = "1.0.0"
-STAGE_PROVENANCE_VERSION = "2.0.0"
-PACKET_SCHEMA_VERSION = "2.0.0"
+STAGE_PROVENANCE_VERSION = "3.0.0"
+PACKET_SCHEMA_VERSION = "3.0.0"
 SEMANTIC_AUDIT_CATEGORIES = (
     "omissions",
     "additions",
@@ -84,7 +84,7 @@ EXPECTED_POLICY_IDS = {
     "execution-method-registry",
     "execution-method-registry-schema",
     "execution-evaluation-schema",
-    "runtime-attestation-schema",
+    "runtime-host-evidence-schema",
     "translation-work-packet-schema",
     "translation-agent-workflow",
     "local-policy-binding-schema",
@@ -1556,14 +1556,14 @@ def validate_stage_chain(
     critique_receipt = critique.get("independentContext", {}).get("receipt", {})
     def session(stage_owner: dict[str, Any]) -> str | None:
         value: Any = stage_owner
-        for field in ("provenance", "execution", "attestation", "payload", "sessionId"):
+        for field in ("provenance", "execution", "worker", "observed", "sessionId"):
             if not isinstance(value, dict):
                 return None
             value = value.get(field)
         return value if isinstance(value, str) else None
 
-    for independent, prior in ((critique, blind), (names, adjudication)):
-        if session(independent) and session(independent) == session(prior):
+    for independent, priors in ((critique, (blind,)), (names, (blind, critique, witness, adjudication))):
+        if session(independent) and session(independent) in {session(prior) for prior in priors}:
             errors.append(f"{prefix}: independent stage reused the upstream runtime session")
     name_receipt = names.get("independentContext", {}).get("receipt", {})
     if (
@@ -2464,7 +2464,7 @@ def load_issue(number: int, path: Path | None = None) -> dict[str, Any]:
 
 def policy_snapshot(policy_path: Path) -> dict[str, Any]:
     policy = load_json(policy_path)
-    if policy.get("schema") != "al-isabah.local-policy-binding.v4":
+    if policy.get("schema") != "al-isabah.local-policy-binding.v5":
         raise WorkflowError("policy binding has an unexpected schema")
     authority = policy.get("authority", {})
     if authority.get("repository") != "https://github.com/yaqub0r/al-isabah":
@@ -2488,7 +2488,7 @@ def policy_snapshot(policy_path: Path) -> dict[str, Any]:
         if canonical_text_sha256(path) != contract.get("sha256"):
             raise WorkflowError(f"policy binding hash is stale: {contract.get('id')}")
     return {
-        "bindingPath": "compliance/policy-binding.v4.json",
+        "bindingPath": "compliance/policy-binding.v5.json",
         "bindingSha256": canonical_text_sha256(policy_path),
         "contracts": contracts,
     }
@@ -3886,8 +3886,8 @@ def merge_entry_shard(packet_path: Path, shard_path: Path) -> int:
         errors.append(
             f"packet: entry shards require packet schema {PACKET_SCHEMA_VERSION}"
         )
-    if shard.get("schemaVersion") != "2.0.0":
-        errors.append("shard: schemaVersion must be 2.0.0")
+    if shard.get("schemaVersion") != "3.0.0":
+        errors.append("shard: schemaVersion must be 3.0.0")
     if shard.get("packetId") != packet.get("packetId"):
         errors.append("shard: packetId does not match the target packet")
     assignment = packet.get("assignment", {})
@@ -4016,11 +4016,11 @@ def merge_preceding_shard(packet_path: Path, shard_path: Path) -> int:
     }
     if (
         packet.get("schemaVersion") != PACKET_SCHEMA_VERSION
-        or shard.get("schemaVersion") != "2.1.0"
+        or shard.get("schemaVersion") != "3.1.0"
     ):
         errors.append(
             "structural shard: packet must use schema "
-            f"{PACKET_SCHEMA_VERSION} and shard schema 2.1.0"
+            f"{PACKET_SCHEMA_VERSION} and shard schema 3.1.0"
         )
     if shard.get("packetId") != packet.get("packetId"):
         errors.append("structural shard: packetId does not match the target packet")
@@ -4851,8 +4851,7 @@ def command_doctor(args: argparse.Namespace) -> int:
         raise WorkflowError("\n".join(errors))
     trust_status = load_active_registry()["runtimeTrustStatus"]
     print(f"Local policies and source manifest are valid; runtime trust: {trust_status}.")
-    if trust_status != "enrolled":
-        print("Production semantic completion remains blocked until trusted runtime enrollment.")
+    print("New semantic work requires explicit task/worker overrides and captured host metadata; no signing key is required.")
     return 0
 
 

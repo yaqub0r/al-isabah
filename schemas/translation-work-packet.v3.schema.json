@@ -1,0 +1,2503 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/schemas/translation-work-packet.v3.schema.json",
+  "title": "Al-Isabah distributed translation work packet v3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "packetId",
+    "workId",
+    "toolVersion",
+    "runId",
+    "assignment",
+    "authority",
+    "policy",
+    "scope",
+    "sliceContext",
+    "entries",
+    "formulaInventory",
+    "postRunRepairAudits",
+    "reviewPresentation",
+    "machineReadiness"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "3.0.0"
+    },
+    "packetId": {
+      "pattern": "^isabah-translation-issue-[0-9]+$"
+    },
+    "workId": {
+      "const": "ibn-hajar-al-isabah"
+    },
+    "toolVersion": {
+      "const": "3.0.0"
+    },
+    "runId": {
+      "pattern": "^translation-run-[0-9a-f]{16}$"
+    },
+    "assignment": {
+      "$ref": "#/$defs/assignment"
+    },
+    "authority": {
+      "$ref": "#/$defs/authority"
+    },
+    "policy": {
+      "$ref": "#/$defs/policy"
+    },
+    "scope": {
+      "$ref": "#/$defs/scope"
+    },
+    "sliceContext": {
+      "$ref": "#/$defs/sliceContext"
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/entry"
+      }
+    },
+    "formulaInventory": {
+      "$ref": "#/$defs/formulaInventory"
+    },
+    "postRunRepairAudits": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/postRunRepairAudit"
+      }
+    },
+    "reviewPresentation": {
+      "$ref": "#/$defs/presentation"
+    },
+    "machineReadiness": {
+      "$ref": "#/$defs/readiness"
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "nullableString": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "nullableSha256": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/sha256"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "stageEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidenceId",
+        "role",
+        "sha256"
+      ],
+      "properties": {
+        "evidenceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "stageProvenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "version",
+        "stage",
+        "origin",
+        "sourceSha256",
+        "upstreamSha256",
+        "promptOrPolicySha256",
+        "schemaSha256",
+        "runId",
+        "model",
+        "reasoning",
+        "evidence",
+        "evidenceSha256",
+        "inputSha256",
+        "outputSha256",
+        "fingerprint",
+        "rebinding",
+        "execution"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "complete"
+          ]
+        },
+        "version": {
+          "const": "3.0.0"
+        },
+        "stage": {
+          "enum": [
+            "blind_translation",
+            "independent_critique",
+            "witness_resolution",
+            "adjudication",
+            "name_inventory"
+          ]
+        },
+        "origin": {
+          "enum": [
+            "direct_execution",
+            "legacy_migration",
+            "deterministic_rebinding",
+            null
+          ]
+        },
+        "sourceSha256": {
+          "$ref": "#/$defs/nullableSha256"
+        },
+        "upstreamSha256": {
+          "$ref": "#/$defs/nullableSha256"
+        },
+        "promptOrPolicySha256": {
+          "$ref": "#/$defs/nullableSha256"
+        },
+        "schemaSha256": {
+          "$ref": "#/$defs/nullableSha256"
+        },
+        "runId": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "model": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "reasoning": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/stageEvidence"
+          }
+        },
+        "evidenceSha256": {
+          "$ref": "#/$defs/nullableSha256"
+        },
+        "inputSha256": {
+          "$ref": "#/$defs/nullableSha256"
+        },
+        "outputSha256": {
+          "$ref": "#/$defs/nullableSha256"
+        },
+        "fingerprint": {
+          "$ref": "#/$defs/nullableSha256"
+        },
+        "rebinding": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/stageProvenanceRebinding"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "execution": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/execution"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "stageProvenanceRebinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reason",
+        "previousOrigin",
+        "previousSourceSha256",
+        "previousUpstreamSha256",
+        "previousPromptOrPolicySha256",
+        "previousSchemaSha256",
+        "previousInputSha256",
+        "previousOutputSha256",
+        "previousFingerprint",
+        "previousModel",
+        "previousReasoning",
+        "evidenceSha256",
+        "runId",
+        "repairRunIds"
+      ],
+      "properties": {
+        "reason": {
+          "enum": [
+            "schema_migration",
+            "post_run_repair"
+          ]
+        },
+        "previousOrigin": {
+          "enum": [
+            "direct_execution",
+            "legacy_migration",
+            "deterministic_rebinding"
+          ]
+        },
+        "previousSourceSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "previousUpstreamSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "previousPromptOrPolicySha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "previousSchemaSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "previousInputSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "previousOutputSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "previousFingerprint": {
+          "$ref": "#/$defs/sha256"
+        },
+        "previousModel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "previousReasoning": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidenceSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "runId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "repairRunIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^translation-repair-run-[0-9a-f]{16}$"
+          }
+        }
+      }
+    },
+    "executionReceipt": {
+      "type": "object",
+      "description": "Editable context self-attestation used for internal consistency only; it is not authenticated proof that a separate execution context occurred.",
+      "additionalProperties": false,
+      "required": [
+        "receiptId",
+        "issuer",
+        "receiptSha256"
+      ],
+      "properties": {
+        "receiptId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "issuer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "receiptSha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "independentContext": {
+      "type": "object",
+      "description": "A workflow self-attestation. Actual context separation uses explicit non-inheriting launches and captured host metadata under the trusted-host assumption, not these editable fields alone.",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "method",
+        "freshContext",
+        "priorStageContextExcluded",
+        "inputSha256",
+        "receipt"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "complete"
+          ]
+        },
+        "method": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "freshContext": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "priorStageContextExcluded": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "inputSha256": {
+          "$ref": "#/$defs/nullableSha256"
+        },
+        "receipt": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/executionReceipt"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "assignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repository",
+        "issueNumber",
+        "issueUrl",
+        "stateAtPreparation",
+        "claimedBy",
+        "startUnit",
+        "endUnit",
+        "printedEntryStart",
+        "printedEntryEnd",
+        "createdAt"
+      ],
+      "properties": {
+        "repository": {
+          "const": "yaqub0r/al-isabah"
+        },
+        "issueNumber": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "issueUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "stateAtPreparation": {
+          "const": "OPEN"
+        },
+        "claimedBy": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "startUnit": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "endUnit": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "printedEntryStart": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "printedEntryEnd": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "manifestPath",
+        "manifestSha256",
+        "sourceId",
+        "repository",
+        "commit",
+        "path",
+        "sha256",
+        "license"
+      ],
+      "properties": {
+        "manifestPath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "manifestSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "sourceId": {
+          "const": "openiti-jk000533-5835c183"
+        },
+        "repository": {
+          "const": "https://github.com/OpenITI/0875AH"
+        },
+        "commit": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "license": {
+          "type": "object",
+          "required": [
+            "spdx",
+            "url",
+            "attribution"
+          ],
+          "properties": {
+            "spdx": {
+              "const": "CC-BY-NC-SA-4.0"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "attribution": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bindingPath",
+        "bindingSha256",
+        "contracts"
+      ],
+      "properties": {
+        "bindingPath": {
+          "const": "compliance/policy-binding.v5.json"
+        },
+        "bindingSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "contracts": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "path",
+              "sha256"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "path": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sha256": {
+                "$ref": "#/$defs/sha256"
+              }
+            }
+          }
+        }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "precedingMaterialOwnership",
+        "excludedRanges"
+      ],
+      "properties": {
+        "precedingMaterialOwnership": {
+          "const": "following_source_unit"
+        },
+        "excludedRanges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "lineStart",
+              "lineEnd",
+              "rawSha256",
+              "reason"
+            ],
+            "properties": {
+              "kind": {
+                "enum": [
+                  "openiti_metadata",
+                  "modern_paratext",
+                  "openiti_control"
+                ]
+              },
+              "lineStart": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "lineEnd": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "rawSha256": {
+                "$ref": "#/$defs/sha256"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "sliceContextItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceOccurrenceId",
+        "displayContextId"
+      ],
+      "properties": {
+        "sourceOccurrenceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "displayContextId": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "sliceContext": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "beforeSourceOrdinal",
+        "sourceProposalId",
+        "sourceProposalSha256",
+        "contexts"
+      ],
+      "properties": {
+        "state": {
+          "enum": [
+            "root",
+            "continued"
+          ]
+        },
+        "beforeSourceOrdinal": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sourceProposalId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^issue-[0-9]{4}-public-proposal-v1$"
+        },
+        "sourceProposalSha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sha256"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "contexts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sliceContextItem"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "state": {
+                "const": "root"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "beforeSourceOrdinal": {
+                "const": 1
+              },
+              "sourceProposalId": {
+                "const": null
+              },
+              "sourceProposalSha256": {
+                "const": null
+              },
+              "contexts": {
+                "maxItems": 0
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "beforeSourceOrdinal": {
+                "minimum": 2
+              },
+              "sourceProposalId": {
+                "type": "string"
+              },
+              "sourceProposalSha256": {
+                "$ref": "#/$defs/sha256"
+              },
+              "contexts": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceOrdinal",
+        "sourceEntryNumber",
+        "sourceUnitId",
+        "canonicalEntryId",
+        "source",
+        "precedingTranslations",
+        "blindTranslation",
+        "independentCritique",
+        "witnessResolution",
+        "adjudication",
+        "names",
+        "unresolved",
+        "humanReview"
+      ],
+      "properties": {
+        "sourceOrdinal": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sourceEntryNumber": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sourceUnitId": {
+          "pattern": "^openiti-5835c183-unit-[0-9]{6}$"
+        },
+        "canonicalEntryId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^isabah-entry-[0-9]{8}$"
+        },
+        "source": {
+          "$ref": "#/$defs/sourceEntry"
+        },
+        "precedingTranslations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/precedingTranslation"
+          }
+        },
+        "blindTranslation": {
+          "$ref": "#/$defs/blind"
+        },
+        "independentCritique": {
+          "$ref": "#/$defs/critique"
+        },
+        "witnessResolution": {
+          "$ref": "#/$defs/witness"
+        },
+        "adjudication": {
+          "$ref": "#/$defs/adjudication"
+        },
+        "names": {
+          "$ref": "#/$defs/names"
+        },
+        "unresolved": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/unresolvedItem"
+          }
+        },
+        "humanReview": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status"
+          ],
+          "properties": {
+            "status": {
+              "const": "unreviewed"
+            }
+          }
+        }
+      }
+    },
+    "sourceEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceOrdinal",
+        "sourceEntryNumber",
+        "sourceUnitId",
+        "lineStart",
+        "lineEnd",
+        "locations",
+        "rawOpeniti",
+        "rawSha256",
+        "headingArabic",
+        "arabic",
+        "precedingSegments"
+      ],
+      "properties": {
+        "sourceOrdinal": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sourceEntryNumber": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sourceUnitId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "lineStart": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "lineEnd": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "locations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "volume",
+              "page"
+            ],
+            "properties": {
+              "volume": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "page": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        },
+        "rawOpeniti": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rawSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "headingArabic": {
+          "type": "string",
+          "minLength": 1
+        },
+        "arabic": {
+          "type": "string",
+          "minLength": 1
+        },
+        "precedingSegments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/precedingSource"
+          }
+        }
+      }
+    },
+    "precedingSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "segmentId",
+        "kind",
+        "lineStart",
+        "lineEnd",
+        "locations",
+        "rawOpeniti",
+        "rawSha256",
+        "headingLevel",
+        "headingArabic",
+        "arabic"
+      ],
+      "properties": {
+        "segmentId": {
+          "pattern": "^openiti-5835c183-before-unit-[0-9]{6}-segment-[0-9]{3}$"
+        },
+        "kind": {
+          "enum": [
+            "front_matter",
+            "interstitial_prose",
+            "structural_heading"
+          ]
+        },
+        "lineStart": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "lineEnd": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "locations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "volume",
+              "page"
+            ],
+            "properties": {
+              "volume": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "page": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        },
+        "rawOpeniti": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rawSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "headingLevel": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "headingArabic": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "arabic": {
+          "$ref": "#/$defs/nullableString"
+        }
+      }
+    },
+    "precedingTranslation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "segmentId",
+        "blindTranslation",
+        "independentCritique",
+        "witnessResolution",
+        "adjudication",
+        "names",
+        "unresolved",
+        "humanReview"
+      ],
+      "properties": {
+        "segmentId": {
+          "pattern": "^openiti-5835c183-before-unit-[0-9]{6}-segment-[0-9]{3}$"
+        },
+        "blindTranslation": {
+          "$ref": "#/$defs/precedingBlind"
+        },
+        "independentCritique": {
+          "$ref": "#/$defs/critique"
+        },
+        "witnessResolution": {
+          "$ref": "#/$defs/witness"
+        },
+        "adjudication": {
+          "$ref": "#/$defs/precedingAdjudication"
+        },
+        "names": {
+          "$ref": "#/$defs/names"
+        },
+        "unresolved": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/unresolvedItem"
+          }
+        },
+        "humanReview": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status"
+          ],
+          "properties": {
+            "status": {
+              "const": "unreviewed"
+            }
+          }
+        }
+      }
+    },
+    "blind": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "runId",
+        "model",
+        "reasoning",
+        "policySha256",
+        "english",
+        "provenance"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "complete"
+          ]
+        },
+        "runId": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "model": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "reasoning": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "policySha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "english": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "provenance": {
+          "$ref": "#/$defs/stageProvenance"
+        }
+      }
+    },
+    "precedingBlind": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "runId",
+        "model",
+        "reasoning",
+        "policySha256",
+        "headingEnglish",
+        "english",
+        "provenance"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "complete"
+          ]
+        },
+        "runId": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "model": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "reasoning": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "policySha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "headingEnglish": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "english": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "provenance": {
+          "$ref": "#/$defs/stageProvenance"
+        }
+      }
+    },
+    "critique": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "runId",
+        "model",
+        "findings",
+        "semanticAudit",
+        "independentContext",
+        "provenance"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "complete"
+          ]
+        },
+        "runId": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "model": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "findings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/critiqueFinding"
+          }
+        },
+        "semanticAudit": {
+          "$ref": "#/$defs/semanticAudit"
+        },
+        "independentContext": {
+          "$ref": "#/$defs/independentContext"
+        },
+        "provenance": {
+          "$ref": "#/$defs/stageProvenance"
+        }
+      }
+    },
+    "critiqueFinding": {
+      "type": "object",
+      "required": [
+        "findingId",
+        "requiresWitness"
+      ],
+      "properties": {
+        "findingId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "requiresWitness": {
+          "type": "boolean"
+        }
+      }
+    },
+    "semanticAudit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "checklistVersion",
+        "sourceSha256",
+        "candidateSha256",
+        "checks"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "complete"
+          ]
+        },
+        "checklistVersion": {
+          "const": "1.0.0"
+        },
+        "sourceSha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sha256"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "candidateSha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sha256"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/semanticCheck"
+          }
+        }
+      }
+    },
+    "semanticCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "category",
+        "outcome",
+        "assessment"
+      ],
+      "properties": {
+        "category": {
+          "enum": [
+            "omissions",
+            "additions",
+            "reversals_and_negation",
+            "names_and_relationships",
+            "isnads_and_attribution",
+            "numbers_and_dates",
+            "citations_notes_and_poetry",
+            "structure_and_continuations",
+            "honorifics",
+            "damaged_syntax",
+            "unsupported_normalization"
+          ]
+        },
+        "outcome": {
+          "enum": [
+            "no_issue",
+            "finding",
+            "not_applicable"
+          ]
+        },
+        "assessment": {
+          "type": "string",
+          "minLength": 12
+        }
+      }
+    },
+    "witness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "results",
+        "notRequiredRationale",
+        "provenance"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "not_required",
+            "complete"
+          ]
+        },
+        "notRequiredRationale": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/witnessResult"
+          }
+        },
+        "provenance": {
+          "$ref": "#/$defs/stageProvenance"
+        }
+      }
+    },
+    "witnessResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "findingIds",
+        "query",
+        "witnessRole",
+        "witnessIdentity",
+        "passage",
+        "passageSha256",
+        "location",
+        "evidenceKind",
+        "evidenceSha256",
+        "decision",
+        "retrievedAt"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "hit",
+            "no_match"
+          ]
+        },
+        "findingIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "query": {
+          "type": "string",
+          "minLength": 1
+        },
+        "witnessRole": {
+          "enum": [
+            "alternative_edition",
+            "translation_witness",
+            "collateral_work",
+            "lexical_reference",
+            "same_authority",
+            "discovery_check"
+          ]
+        },
+        "witnessIdentity": {
+          "type": "string",
+          "minLength": 1
+        },
+        "passage": {
+          "type": "string",
+          "minLength": 1
+        },
+        "passageSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "location": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidenceKind": {
+          "enum": [
+            "passage",
+            "artifact",
+            "search_log"
+          ]
+        },
+        "evidenceSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "decision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "retrievedAt": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "adjudication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "english",
+        "decisions",
+        "provenance"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "complete"
+          ]
+        },
+        "english": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "decisions": {
+          "type": "array"
+        },
+        "provenance": {
+          "$ref": "#/$defs/stageProvenance"
+        }
+      }
+    },
+    "precedingAdjudication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "headingEnglish",
+        "english",
+        "decisions",
+        "provenance"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "complete"
+          ]
+        },
+        "headingEnglish": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "english": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "decisions": {
+          "type": "array"
+        },
+        "provenance": {
+          "$ref": "#/$defs/stageProvenance"
+        }
+      }
+    },
+    "names": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "candidates",
+        "mentions",
+        "inventoryAudit",
+        "independentContext",
+        "provenance"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "complete"
+          ]
+        },
+        "candidates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nameCandidate"
+          }
+        },
+        "mentions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nameMention"
+          }
+        },
+        "inventoryAudit": {
+          "$ref": "#/$defs/nameInventoryAudit"
+        },
+        "independentContext": {
+          "$ref": "#/$defs/independentContext"
+        },
+        "provenance": {
+          "$ref": "#/$defs/stageProvenance"
+        }
+      }
+    },
+    "nameInventoryAudit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "runId",
+        "method",
+        "sourceSha256",
+        "englishSha256",
+        "assessment"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "complete"
+          ]
+        },
+        "runId": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "method": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "sourceSha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sha256"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "englishSha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sha256"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "assessment": {
+          "$ref": "#/$defs/nullableString"
+        }
+      }
+    },
+    "nameCandidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidateId",
+        "observedArabic",
+        "proposedEnglish",
+        "aliases",
+        "confidenceEvidence",
+        "reviewState"
+      ],
+      "properties": {
+        "candidateId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observedArabic": {
+          "type": "string",
+          "minLength": 1
+        },
+        "proposedEnglish": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observedVariants": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "originCandidateId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "entityType": {
+          "enum": [
+            "person",
+            "collective"
+          ]
+        },
+        "repair": {
+          "type": "object"
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "confidenceEvidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "reviewState": {
+          "enum": [
+            "unreviewed",
+            "needs_attention"
+          ]
+        }
+      }
+    },
+    "nameMention": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidateId",
+        "recordId",
+        "location",
+        "mentionId",
+        "originCandidateId",
+        "sourceSpans"
+      ],
+      "properties": {
+        "candidateId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recordId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "location": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mentionId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "originCandidateId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceSpans": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/nameSourceSpan"
+          }
+        }
+      }
+    },
+    "nameSourceSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceField",
+        "start",
+        "end",
+        "sha256"
+      ],
+      "properties": {
+        "sourceField": {
+          "enum": [
+            "headingArabic",
+            "arabic",
+            "rawOpeniti"
+          ]
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "unresolvedItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "description",
+        "severity",
+        "location",
+        "disposition"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "severity": {
+          "enum": [
+            "minor",
+            "material",
+            "blocking",
+            "source_reported"
+          ]
+        },
+        "location": {
+          "type": "string",
+          "minLength": 1
+        },
+        "disposition": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "formulaInventory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "registryVersion",
+        "occurrences"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "complete"
+          ]
+        },
+        "registryVersion": {
+          "const": "1.3.0"
+        },
+        "occurrences": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/formulaOccurrence"
+          }
+        }
+      }
+    },
+    "formulaOccurrence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "formulaId",
+        "recordId",
+        "sourceField",
+        "sourceStart",
+        "sourceEnd",
+        "observedArabic",
+        "semanticClass",
+        "referentScope",
+        "grammaticalAgreement",
+        "expandedArabic",
+        "targetRealization",
+        "accessibleEnglish",
+        "blindStart",
+        "blindEnd",
+        "adjudicatedStart",
+        "adjudicatedEnd"
+      ],
+      "properties": {
+        "formulaId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recordId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceField": {
+          "enum": [
+            "headingArabic",
+            "arabic"
+          ]
+        },
+        "sourceStart": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sourceEnd": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "observedArabic": {
+          "type": "string",
+          "minLength": 1
+        },
+        "semanticClass": {
+          "type": "string",
+          "minLength": 1
+        },
+        "referentScope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "grammaticalAgreement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expandedArabic": {
+          "type": "string",
+          "minLength": 1
+        },
+        "targetRealization": {
+          "type": "string",
+          "minLength": 1
+        },
+        "accessibleEnglish": {
+          "type": "string",
+          "minLength": 1
+        },
+        "blindStart": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "blindEnd": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "adjudicatedStart": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "adjudicatedEnd": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "postRunRepairAudit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "previousAuditSha256",
+        "basePacketSha256",
+        "artifactSha256",
+        "runId",
+        "operations"
+      ],
+      "properties": {
+        "status": {
+          "const": "complete"
+        },
+        "previousAuditSha256": {
+          "$ref": "#/$defs/nullableSha256"
+        },
+        "basePacketSha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sha256"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "artifactSha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sha256"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "runId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^translation-repair-run-[0-9a-f]{16}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "operations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/postRunRepairOperation"
+          }
+        }
+      }
+    },
+    "postRunRepairOperation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repairId",
+        "sourceUnitId",
+        "segmentId",
+        "recordKind",
+        "targetStage",
+        "fieldPath",
+        "valueKind",
+        "reasons"
+      ],
+      "properties": {
+        "repairId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceUnitId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "segmentId": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "recordKind": {
+          "enum": [
+            "entry",
+            "structural",
+            "packet"
+          ]
+        },
+        "targetStage": {
+          "enum": [
+            "blind_translation",
+            "independent_critique",
+            "witness_resolution",
+            "adjudication",
+            "name_inventory",
+            "policy_binding"
+          ]
+        },
+        "fieldPath": {
+          "type": "string"
+        },
+        "valueKind": {
+          "enum": [
+            "text",
+            "canonical_json"
+          ]
+        },
+        "oldTextSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "newTextSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "oldValueSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "newValueSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "oldPolicyBindingSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "newPolicyBindingSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "oldSemanticValueSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "newSemanticValueSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "reasons": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/postRunRepairReason"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "recordKind": {
+                "const": "packet"
+              }
+            },
+            "required": [
+              "recordKind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "sourceUnitId": {
+                "type": "null"
+              },
+              "segmentId": {
+                "type": "null"
+              },
+              "targetStage": {
+                "const": "policy_binding"
+              },
+              "fieldPath": {
+                "const": "$.policy"
+              },
+              "valueKind": {
+                "const": "canonical_json"
+              }
+            },
+            "required": [
+              "oldPolicyBindingSha256",
+              "newPolicyBindingSha256"
+            ]
+          },
+          "else": {
+            "properties": {
+              "sourceUnitId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "recordKind": {
+                "enum": [
+                  "entry",
+                  "structural"
+                ]
+              },
+              "targetStage": {
+                "enum": [
+                  "blind_translation",
+                  "independent_critique",
+                  "witness_resolution",
+                  "adjudication",
+                  "name_inventory"
+                ]
+              },
+              "fieldPath": {
+                "pattern": "^\\$\\.entries\\["
+              }
+            },
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "oldPolicyBindingSha256"
+                  ]
+                },
+                {
+                  "required": [
+                    "newPolicyBindingSha256"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "valueKind": {
+                "const": "text"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "oldTextSha256",
+              "newTextSha256"
+            ],
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "oldValueSha256"
+                  ]
+                },
+                {
+                  "required": [
+                    "newValueSha256"
+                  ]
+                }
+              ]
+            }
+          },
+          "else": {
+            "required": [
+              "oldValueSha256",
+              "newValueSha256"
+            ],
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "oldTextSha256"
+                  ]
+                },
+                {
+                  "required": [
+                    "newTextSha256"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "targetStage": {
+                "const": "adjudication"
+              },
+              "valueKind": {
+                "const": "canonical_json"
+              }
+            },
+            "required": [
+              "targetStage",
+              "valueKind"
+            ]
+          },
+          "then": {
+            "required": [
+              "oldSemanticValueSha256",
+              "newSemanticValueSha256"
+            ]
+          },
+          "else": {}
+        },
+        {
+          "if": {
+            "properties": {
+              "valueKind": {
+                "const": "canonical_json"
+              },
+              "fieldPath": {
+                "pattern": "\\.(blindTranslation|independentCritique|witnessResolution|adjudication|names)$"
+              }
+            },
+            "required": [
+              "valueKind",
+              "fieldPath"
+            ]
+          },
+          "then": {},
+          "else": {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "oldSemanticValueSha256"
+                  ]
+                },
+                {
+                  "required": [
+                    "newSemanticValueSha256"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "postRunRepairReason": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "code",
+        "explanation"
+      ],
+      "properties": {
+        "code": {
+          "type": "string",
+          "minLength": 1
+        },
+        "explanation": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "presentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "ready"
+          ]
+        },
+        "path": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "sha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sha256"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "readiness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "validatedAt",
+        "validatorVersion"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "ready"
+          ]
+        },
+        "validatedAt": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "validatorVersion": {
+          "const": "3.0.0"
+        }
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "trustModel",
+        "methodId",
+        "registrySha256",
+        "task",
+        "worker",
+        "binding"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0.0"
+        },
+        "trustModel": {
+          "const": "trusted-local-host"
+        },
+        "methodId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+        },
+        "registrySha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "task": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "request",
+            "observed"
+          ],
+          "properties": {
+            "request": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "kind",
+                    "overrides"
+                  ],
+                  "properties": {
+                    "kind": {
+                      "const": "codex-task"
+                    },
+                    "overrides": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "model",
+                        "thinking"
+                      ],
+                      "properties": {
+                        "model": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "thinking": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "kind",
+                    "overrides"
+                  ],
+                  "properties": {
+                    "kind": {
+                      "const": "codex-worker"
+                    },
+                    "overrides": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "model",
+                        "reasoning_effort",
+                        "fork_turns"
+                      ],
+                      "properties": {
+                        "model": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "reasoning_effort": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "fork_turns": {
+                          "const": "none"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "observed": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "source",
+                "sessionId",
+                "turnId",
+                "provider",
+                "model",
+                "reasoning",
+                "firstTurn",
+                "forked"
+              ],
+              "properties": {
+                "source": {
+                  "const": "codex-session-metadata"
+                },
+                "sessionId": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+                },
+                "turnId": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+                },
+                "provider": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "model": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "reasoning": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "firstTurn": {
+                  "type": "boolean"
+                },
+                "forked": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "worker": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "request",
+            "observed"
+          ],
+          "properties": {
+            "request": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "kind",
+                    "overrides"
+                  ],
+                  "properties": {
+                    "kind": {
+                      "const": "codex-task"
+                    },
+                    "overrides": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "model",
+                        "thinking"
+                      ],
+                      "properties": {
+                        "model": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "thinking": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "kind",
+                    "overrides"
+                  ],
+                  "properties": {
+                    "kind": {
+                      "const": "codex-worker"
+                    },
+                    "overrides": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "model",
+                        "reasoning_effort",
+                        "fork_turns"
+                      ],
+                      "properties": {
+                        "model": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "reasoning_effort": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "fork_turns": {
+                          "const": "none"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "observed": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "source",
+                "sessionId",
+                "turnId",
+                "provider",
+                "model",
+                "reasoning",
+                "firstTurn",
+                "forked"
+              ],
+              "properties": {
+                "source": {
+                  "const": "codex-session-metadata"
+                },
+                "sessionId": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+                },
+                "turnId": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+                },
+                "provider": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "model": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "reasoning": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "firstTurn": {
+                  "type": "boolean"
+                },
+                "forked": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "binding": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "stage",
+            "runId",
+            "sessionId",
+            "turnId",
+            "inputSha256",
+            "outputSha256",
+            "checkpointSha256"
+          ],
+          "properties": {
+            "stage": {
+              "enum": [
+                "blind_translation",
+                "independent_critique",
+                "witness_resolution",
+                "adjudication",
+                "name_inventory"
+              ]
+            },
+            "runId": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "sessionId": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "turnId": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "inputSha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "outputSha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "checkpointSha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        }
+      }
+    }
+  }
+}

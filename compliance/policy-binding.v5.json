@@ -1,0 +1,83 @@
+{
+  "schema": "al-isabah.local-policy-binding.v5",
+  "authority": {
+    "repository": "https://github.com/yaqub0r/al-isabah",
+    "scope": "repository-local",
+    "issue": "https://github.com/yaqub0r/al-isabah/issues/78"
+  },
+  "contracts": [
+    {
+      "id": "translation-quality-workflow",
+      "path": "docs/contracts/translation-quality-workflow.md",
+      "sha256": "cb78512085a81ee2e2439cc44e0672a6b0d5cf41fa7dc545147f727049fa7254"
+    },
+    {
+      "id": "al-isabah-translation-profile",
+      "path": "docs/translation-profiles/al-isabah.md",
+      "sha256": "e9f166b79fbee21c228d6f67656bbebd1bbdf639927f6b10cabb8a6adff20460"
+    },
+    {
+      "id": "entry-title-structure",
+      "path": "docs/contracts/entry-title-structure.md",
+      "sha256": "e950f6375c45a06699d9b2653a4c7821cfd45879277369d1107720c6617272ba"
+    },
+    {
+      "id": "entry-title-decisions",
+      "path": "profiles/entry-title-decisions.v3.json",
+      "sha256": "dc5f80db7c897b4ecf0df5b5fa1bce7ce7388d05fe6607f6a6cdb9e092934afc"
+    },
+    {
+      "id": "honorific-formula-registry",
+      "path": "profiles/honorific-formulas.v1.json",
+      "sha256": "b23fcd528b840b0e5bbe8932fca6eeaaa576ee51263d9838d4f8d18e40c9e100"
+    },
+    {
+      "id": "translation-source-profile",
+      "path": "profiles/translation-source.v1.json",
+      "sha256": "c3db1e037a9f98ed7c6ada57d076084e5451c5651ed972ea68867ed5ad580ead"
+    },
+    {
+      "id": "execution-method-contract",
+      "path": "docs/contracts/translation-execution-methods.md",
+      "sha256": "830d397a0762e38cfdb49c6e5686294382a55c1b8b7846fdb179468377272e78"
+    },
+    {
+      "id": "execution-method-registry",
+      "path": "profiles/execution-methods.v2.json",
+      "sha256": "9c0b1ef2cc208edb9885b81b16ff5ec10b3ea978b2742e9cb3c68b15ceeab809"
+    },
+    {
+      "id": "execution-method-registry-schema",
+      "path": "schemas/execution-method-registry.v2.schema.json",
+      "sha256": "2e60b173601daf248a8a233e68f47640976af680eeb0ce70d3d8910a7b2159a8"
+    },
+    {
+      "id": "execution-evaluation-schema",
+      "path": "schemas/execution-evaluation.v1.schema.json",
+      "sha256": "c4d6f82ab172d0d43eac63aea91893af5dda91927b9183355a58d72c0ed2d2e5"
+    },
+    {
+      "id": "runtime-host-evidence-schema",
+      "path": "schemas/runtime-host-evidence.v1.schema.json",
+      "sha256": "e77ba3dd9e8eaea5d770683bbdfc80fb215f8c7dfc9a4d3736f09019cad4c9eb"
+    },
+    {
+      "id": "translation-work-packet-schema",
+      "path": "schemas/translation-work-packet.v3.schema.json",
+      "sha256": "80a1a0d1de2d8c21e62974b47c2ab13a2cc41e67970d0754c5d2baedbd99a0eb"
+    },
+    {
+      "id": "translation-agent-workflow",
+      "path": "docs/translation/agent-workflow.md",
+      "sha256": "840b349be21d277f596992bc23f5987ea2ed6326c2bd390e65596d33df84dd96"
+    },
+    {
+      "id": "local-policy-binding-schema",
+      "path": "compliance/schemas/policy-binding.v5.schema.json",
+      "sha256": "8ca7b9053cdf5bb11a9b0fa0e2131d3c4ba4e52f0f1fc94b043887f57700087a"
+    }
+  ],
+  "supersedes": "compliance/policy-binding.v4.json",
+  "applied_by_issue": "https://github.com/yaqub0r/al-isabah/issues/78",
+  "note": "New production semantic work requires explicit approved task and worker launch overrides plus captured effective host metadata bound to exact checkpoints. This is unsigned operational provenance under a trusted-local-host assumption, not proof against a malicious editor. No signing key, enrolled authority, service, benchmark or extra semantic pass is required. Historical bindings v1-v4 and releases retain original pins."
+}
