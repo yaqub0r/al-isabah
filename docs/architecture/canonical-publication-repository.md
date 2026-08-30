@@ -98,7 +98,7 @@ the repository's internal working layout.
 
 Consumers discover the governing policy set and aggregate translation coverage
 through the versioned
-[translation-governance reference](../contracts/translation-governance-reference.v2.json)
+[translation-governance reference](../contracts/translation-governance-reference.v3.json)
 and pin it at an immutable repository commit. That reference records the active
 policy, formula-registry, and translation-coverage hashes without replacing the
 public distribution schema. Human review remains per-record metadata and

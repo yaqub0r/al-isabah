@@ -82,6 +82,15 @@ later gates; human-review state remains disclosed metadata rather than one of
 those gates. Public consumability is a property of the work product,
 independent of its human-review and canonical-promotion state.
 
+## Production execution admission
+
+Every production semantic stage must use an exact method ID approved for that
+stage in the integrity-bound active execution registry and pass the
+[trusted runtime binding contract](translation-execution-methods.md).
+Model/reasoning inheritance and worker self-report alone are insufficient.
+Method approval is distinct from quality evidence and from runtime-attester
+enrollment. Historical records retain their original immutable governance pins.
+
 ## Required source bundle
 
 Every in-scope work must identify these roles, including pending roles:

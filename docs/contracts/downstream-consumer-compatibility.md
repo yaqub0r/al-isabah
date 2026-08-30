@@ -3,7 +3,7 @@
 - **Status:** Active
 - **Issue:** [#45](https://github.com/yaqub0r/al-isabah/issues/45)
 - **Machine reference:**
-  [`translation-governance-reference.v2.json`](translation-governance-reference.v2.json)
+  [`translation-governance-reference.v3.json`](translation-governance-reference.v3.json)
 
 ## Authority and pinning
 
@@ -41,6 +41,17 @@ provenance, rights, public-boundary, deterministic-validation, substantive, and
 unresolved-state controls. Existing releases retain their original policy and
 reference pins; consumers upgrade by pinning the v2 path at a new immutable
 Al-Isabah commit rather than rewriting an earlier release.
+
+Reference v3.0.0 adds another breaking consumer interpretation: production
+semantic stages require exact active method IDs, stage-specific approvals, and
+trusted signed effective-runtime bindings. It pins policy binding v4, packet v2,
+the execution registry, evaluation schema, and runtime-attestation schema.
+Configuration approval does not imply a trusted runtime attester is enrolled;
+the initial registry is explicitly unprovisioned. New production execution
+must fail closed until reviewed enrollment. Consumers must not treat worker
+self-report or historical provenance as a new attestation. The immutable v2
+reference remains the authority for its original releases, and the public
+proposal/distribution schemas and release bytes are unchanged.
 
 ## Review, correction, and release semantics
 

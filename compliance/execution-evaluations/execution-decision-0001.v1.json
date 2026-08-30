@@ -1,0 +1,65 @@
+{
+  "schema": "al-isabah.execution-evaluation.v1",
+  "runtimeAuthority": null,
+  "recordVersion": "1.0.0",
+  "recordedOn": "2026-08-30",
+  "stages": [
+    "blind_translation",
+    "independent_critique",
+    "witness_resolution",
+    "adjudication",
+    "name_inventory"
+  ],
+  "scope": "production-semantic-translation",
+  "inputHashes": {
+    "promptSha256": null,
+    "policySha256": null,
+    "schemaSha256": null,
+    "sourceSha256": null,
+    "cohortSha256": null
+  },
+  "evaluation": {
+    "kind": "governance-decision",
+    "design": "No controlled quality experiment was performed for this decision.",
+    "blindedComparison": {
+      "performed": false,
+      "details": "No blinded paired comparison is available.",
+      "evidenceSha256": null
+    },
+    "substantiveErrorCategories": []
+  },
+  "measurements": {
+    "substantiveErrors": null,
+    "unresolvedItems": null,
+    "witnessChecks": null,
+    "usageTokens": null,
+    "costUsd": null,
+    "latencyMs": null
+  },
+  "supersedes": [],
+  "relatedIssues": [
+    76,
+    75,
+    49
+  ],
+  "recordId": "execution-decision-0001",
+  "status": "approved",
+  "methodId": "sol-xhigh-explicit-attested-v1",
+  "configuration": {
+    "provider": "openai",
+    "model": "gpt-5.6-sol",
+    "reasoning": "xhigh",
+    "orchestration": "explicit-isolated-runtime-v1",
+    "configurationOrigin": "explicit"
+  },
+  "decisionBasis": [
+    "Issue 76 explicitly approves this exact production semantic baseline as a governance decision.",
+    "Only explicit configuration with independently authenticated effective runtime provenance is admitted."
+  ],
+  "limitations": [
+    "Approval is not empirical proof of optimality or a controlled comparison against another model or effort.",
+    "No locked experiment input set, blinded comparison, quality counts, cost, or latency measurements were supplied; null fields mean unavailable.",
+    "No trusted runtime signer is enrolled by this decision. Configuration approval alone cannot authorize an unattested run.",
+    "Issue 49 may supply future evaluation evidence; its scope and completion state are unchanged."
+  ]
+}

@@ -132,7 +132,7 @@ def complete_autonomous_stages(packet):
                 "sha256": critique_receipt["receiptSha256"],
             }
         ]
-        critique_reasoning = "high"
+        critique_reasoning = "xhigh"
         critique["independentContext"] = independent_context(
             "independent_critique",
             source,
@@ -168,8 +168,8 @@ def complete_autonomous_stages(packet):
             source,
             [("independent_critique", critique)],
             policy_sha256,
-            "deterministic-witness-gate",
-            "source-bound",
+            "gpt-5.6-sol",
+            "xhigh",
             witness_evidence,
             run_id=f"witness-{token}",
         )
@@ -185,8 +185,8 @@ def complete_autonomous_stages(packet):
                 ("witness_resolution", witness),
             ],
             policy_sha256,
-            "codex-adjudication",
-            "high",
+            "gpt-5.6-sol",
+            "xhigh",
             [],
             run_id=f"adjudication-{token}",
         )
@@ -204,8 +204,8 @@ def complete_autonomous_stages(packet):
                 "sha256": name_receipt["receiptSha256"],
             }
         ]
-        name_model = "codex-independent-name-pass"
-        name_reasoning = "high"
+        name_model = "gpt-5.6-sol"
+        name_reasoning = "xhigh"
         names["independentContext"] = independent_context(
             "name_inventory",
             source,
@@ -241,8 +241,8 @@ def complete_autonomous_stages(packet):
                 {
                     "status": "complete",
                     "runId": f"blind-structure-{number}-{index}",
-                    "model": "codex",
-                    "reasoning": "high",
+                    "model": "gpt-5.6-sol",
+                    "reasoning": "xhigh",
                     "headingEnglish": translated("Translated heading", heading)
                     if heading
                     else None,
@@ -255,7 +255,7 @@ def complete_autonomous_stages(packet):
                 {
                     "status": "complete",
                     "runId": f"critique-structure-{number}-{index}",
-                    "model": "codex-independent-pass",
+                    "model": "gpt-5.6-sol",
                     "findings": [],
                     "semanticAudit": semantic_audit(
                         source,
@@ -296,8 +296,8 @@ def complete_autonomous_stages(packet):
             {
                 "status": "complete",
                 "runId": f"blind-{number}",
-                "model": "codex",
-                "reasoning": "high",
+                "model": "gpt-5.6-sol",
+                "reasoning": "xhigh",
                 "english": translated(
                     f"Blind English for entry {number}.", entry["source"]["arabic"]
                 ),
@@ -307,7 +307,7 @@ def complete_autonomous_stages(packet):
             {
                 "status": "complete",
                 "runId": f"critique-{number}",
-                "model": "codex-independent-pass",
+                "model": "gpt-5.6-sol",
                 "findings": [],
                 "semanticAudit": semantic_audit(
                     entry["source"], None, entry["blindTranslation"]["english"]
@@ -367,6 +367,13 @@ def complete_autonomous_stages(packet):
 
 
 class TranslationWorkflowTests(unittest.TestCase):
+    def setUp(self):
+        # These structural/regression tests isolate runtime authentication.
+        # test_execution_governance exercises actual signatures and packet admission.
+        patcher = mock.patch.object(MODULE, "validate_execution", return_value=[])
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
     def test_private_data_scan_accepts_escaped_newline_after_prose_colon(self):
         value = {
             "decision": "Verses by Haritha:\\n\\nThe first translated line."
@@ -483,7 +490,7 @@ class TranslationWorkflowTests(unittest.TestCase):
     def test_packet_explicitly_excludes_container_metadata(self):
         packet = self.packet()
         exclusions = packet["scope"]["excludedRanges"]
-        self.assertEqual(packet["schemaVersion"], "1.5.0")
+        self.assertEqual(packet["schemaVersion"], "2.0.0")
         self.assertEqual(
             packet["sliceContext"],
             {
@@ -674,7 +681,7 @@ class TranslationWorkflowTests(unittest.TestCase):
             for entry in completed["entries"]
         ]
         shard = {
-            "schemaVersion": "1.0.0",
+            "schemaVersion": "2.0.0",
             "packetId": completed["packetId"],
             "issueNumber": completed["assignment"]["issueNumber"],
             "startUnit": 1,
@@ -730,7 +737,7 @@ class TranslationWorkflowTests(unittest.TestCase):
             "results": [{"status": "unavailable"}],
         }
         shard = {
-            "schemaVersion": "1.0.0",
+            "schemaVersion": "2.0.0",
             "packetId": completed["packetId"],
             "issueNumber": completed["assignment"]["issueNumber"],
             "startUnit": 1,
@@ -760,7 +767,7 @@ class TranslationWorkflowTests(unittest.TestCase):
             "humanReview",
         )
         entry_shard = {
-            "schemaVersion": "1.0.0",
+            "schemaVersion": "2.0.0",
             "packetId": completed["packetId"],
             "issueNumber": completed["assignment"]["issueNumber"],
             "startUnit": 1,
@@ -771,7 +778,7 @@ class TranslationWorkflowTests(unittest.TestCase):
             ],
         }
         structural_shard = {
-            "schemaVersion": "1.1.0",
+            "schemaVersion": "2.1.0",
             "packetId": completed["packetId"],
             "issueNumber": completed["assignment"]["issueNumber"],
             "sourceOrdinal": 1,
@@ -808,7 +815,7 @@ class TranslationWorkflowTests(unittest.TestCase):
         completed = self.packet()
         complete_autonomous_stages(completed)
         shard = {
-            "schemaVersion": "1.1.0",
+            "schemaVersion": "2.1.0",
             "packetId": completed["packetId"],
             "issueNumber": completed["assignment"]["issueNumber"],
             "sourceOrdinal": 1,
@@ -848,7 +855,7 @@ class TranslationWorkflowTests(unittest.TestCase):
             if entry["source"]["precedingSegments"]
         ]
         shard = {
-            "schemaVersion": "1.1.0",
+            "schemaVersion": "2.1.0",
             "packetId": completed["packetId"],
             "issueNumber": completed["assignment"]["issueNumber"],
             "startUnit": 1,
@@ -981,8 +988,8 @@ class TranslationWorkflowTests(unittest.TestCase):
         packet["schemaVersion"] = "1.4.0"
         packet["toolVersion"] = "1.4.0"
         errors = MODULE.validate_packet(packet, machine_ready=True)
-        self.assertTrue(any("schemaVersion must be 1.5.0" in error for error in errors))
-        self.assertTrue(any("toolVersion must be 1.5.0" in error for error in errors))
+        self.assertTrue(any("schemaVersion must be 2.0.0" in error for error in errors))
+        self.assertTrue(any("toolVersion must be 2.0.0" in error for error in errors))
 
     def test_status_run_and_content_hashes_do_not_replace_stage_provenance(self):
         packet = self.packet()

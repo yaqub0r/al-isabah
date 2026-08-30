@@ -544,7 +544,7 @@ def validate(
         policy_hash = historical_policy_hash
     else:
         policy_hash = sha256_text_file(
-            ROOT / "compliance" / "policy-binding.v3.json"
+            ROOT / "compliance" / "policy-binding.v4.json"
         )
     if proposal.get("policy", {}).get("bindingSha256") != policy_hash:
         errors.append(safe_error("$.policy.bindingSha256", "policy-mismatch"))

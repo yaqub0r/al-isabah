@@ -1,0 +1,408 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "recordId",
+    "recordVersion",
+    "recordedOn",
+    "status",
+    "methodId",
+    "configuration",
+    "stages",
+    "scope",
+    "inputHashes",
+    "evaluation",
+    "measurements",
+    "decisionBasis",
+    "limitations",
+    "supersedes",
+    "relatedIssues",
+    "runtimeAuthority"
+  ],
+  "properties": {
+    "runtimeAuthority": {
+      "anyOf": [
+        {"type": "null"},
+        {"type": "object", "additionalProperties": false,
+         "required": ["authorityId", "publicKeySha256"],
+         "properties": {
+           "authorityId": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+           "publicKeySha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+         }}
+      ]
+    },
+    "schema": {
+      "const": "al-isabah.execution-evaluation.v1"
+    },
+    "recordId": {
+      "type": "string",
+      "pattern": "^execution-decision-[0-9]{4}$"
+    },
+    "recordVersion": {
+      "const": "1.0.0"
+    },
+    "recordedOn": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "status": {
+      "enum": [
+        "approved",
+        "rejected",
+        "inconclusive",
+        "unevaluated",
+        "superseded"
+      ]
+    },
+    "methodId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "configuration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provider",
+        "model",
+        "reasoning",
+        "orchestration",
+        "configurationOrigin"
+      ],
+      "properties": {
+        "provider": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "model": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reasoning": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "orchestration": {
+          "type": "string",
+          "minLength": 1
+        },
+        "configurationOrigin": {
+          "enum": [
+            "explicit",
+            "inherited",
+            "unspecified"
+          ]
+        }
+      }
+    },
+    "stages": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "blind_translation",
+          "independent_critique",
+          "witness_resolution",
+          "adjudication",
+          "name_inventory"
+        ]
+      }
+    },
+    "scope": {
+      "const": "production-semantic-translation"
+    },
+    "inputHashes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "promptSha256",
+        "policySha256",
+        "schemaSha256",
+        "sourceSha256",
+        "cohortSha256"
+      ],
+      "properties": {
+        "promptSha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "policySha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "schemaSha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sourceSha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cohortSha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "design",
+        "blindedComparison",
+        "substantiveErrorCategories"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "governance-decision",
+            "incident-observation",
+            "controlled-comparison",
+            "not-performed"
+          ]
+        },
+        "design": {
+          "type": "string",
+          "minLength": 1
+        },
+        "blindedComparison": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "performed",
+            "details",
+            "evidenceSha256"
+          ],
+          "properties": {
+            "performed": {
+              "type": "boolean"
+            },
+            "details": {
+              "type": "string",
+              "minLength": 1
+            },
+            "evidenceSha256": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        "substantiveErrorCategories": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "omission",
+              "addition",
+              "meaning-reversal",
+              "name-or-relationship",
+              "structure",
+              "honorific",
+              "unsupported-normalization",
+              "provenance-mismatch"
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "measurements": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "substantiveErrors",
+        "unresolvedItems",
+        "witnessChecks",
+        "usageTokens",
+        "costUsd",
+        "latencyMs"
+      ],
+      "properties": {
+        "substantiveErrors": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unresolvedItems": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "witnessChecks": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "usageTokens": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "costUsd": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "latencyMs": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "decisionBasis": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "supersedes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "recordId",
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "recordId": {
+            "type": "string",
+            "pattern": "^execution-decision-[0-9]{4}$"
+          },
+          "path": {
+            "type": "string",
+            "pattern": "^compliance/execution-evaluations/execution-decision-[0-9]{4}\\.v[0-9]+\\.json$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      },
+      "uniqueItems": true
+    },
+    "relatedIssues": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public-safe append-only execution evaluation or governance decision"
+}

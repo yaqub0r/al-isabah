@@ -31,7 +31,7 @@ coverage is an independent, ongoing management state.
 
 ## Local supporting controls
 
-- [`translation-governance-reference.v2.json`](translation-governance-reference.v2.json)
+- [`translation-governance-reference.v3.json`](translation-governance-reference.v3.json)
   is the versioned, integrity-bound discovery document for downstream
   consumers. The companion [compatibility guide](downstream-consumer-compatibility.md)
   defines pinning, release semantics, and the Sabiqah deprecation inventory.
@@ -51,10 +51,15 @@ coverage is an independent, ongoing management state.
   promotion state.
 - [`canonical-publication-repository.md`](../architecture/canonical-publication-repository.md)
   defines the repository boundary and release responsibilities.
-- [`compliance/policy-binding.v3.json`](../../compliance/policy-binding.v3.json)
+- [`compliance/policy-binding.v4.json`](../../compliance/policy-binding.v4.json)
   integrity-pins the local contracts, translation profile, and pinned-source
-  profile used by new translation work. Versions 1 and 2 remain immutable
+  profile used by new translation work. Versions 1 through 3 remain immutable
   provenance for releases created under their policy sets.
+
+- [`translation-execution-methods`](translation-execution-methods.md) governs exact
+  stage-specific method admission and trusted effective-runtime attestations.
+- [`execution-methods.v1.json`](../../profiles/execution-methods.v1.json) pins
+  active approvals and append-only public-safe evaluation records.
 
 ## Validation
 
@@ -65,6 +70,8 @@ python -m unittest discover -s tests
 python scripts/validate_compliance.py
 python scripts/validate_content.py
 python scripts/validate_entry_titles.py
+python scripts/execution_governance.py
+python scripts/validate_public_tree.py
 ```
 
 A passing structural check does not create human approval or settle a rights

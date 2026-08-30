@@ -216,6 +216,16 @@ class ComplianceTests(unittest.TestCase):
             self.validate(governance_reference=reference),
         )
 
+    def test_governance_reference_requires_new_execution_interpretation(self):
+        for replacement in (True, 0, None):
+            reference = copy.deepcopy(self.governance_reference)
+            reference["executionSemantics"]["workerSelfReportSufficient"] = replacement
+            self.assertIn("governance reference: schema validation failed",
+                          self.validate(governance_reference=reference))
+        reference = copy.deepcopy(self.governance_reference)
+        del reference["executionSemantics"]
+        self.assertTrue(self.validate(governance_reference=reference))
+
     def test_governance_reference_forbids_review_coverage_gating(self):
         reference = copy.deepcopy(self.governance_reference)
         reference["releaseSemantics"]["humanReviewAffectsEligibility"] = True
