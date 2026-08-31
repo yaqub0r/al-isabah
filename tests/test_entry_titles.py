@@ -27,8 +27,67 @@ class EntryTitleContractTests(unittest.TestCase):
             11445, 11446, 11449, 11451, 11454, 11458, 11459, 11473,
             11474, 11476,
         }
-        self.assertEqual(numbers, historical | set(range(1538, 3035)))
-        self.assertEqual(len(self.profile["decisions"]), 1515)
+        self.assertEqual(numbers, historical | set(range(1538, 3408)))
+        self.assertEqual(len(self.profile["decisions"]), 1888)
+
+    def test_successor_preserves_all_previous_decisions(self) -> None:
+        previous = MODULE.load(ROOT / "profiles" / "entry-title-decisions.v3.json")
+        previous_numbers = {item["sourceEntryNumber"] for item in previous["decisions"]}
+        preserved = [
+            item for item in self.profile["decisions"]
+            if item["sourceEntryNumber"] in previous_numbers
+        ]
+        added = [
+            item for item in self.profile["decisions"]
+            if item["sourceEntryNumber"] not in previous_numbers
+        ]
+        self.assertEqual(preserved, previous["decisions"])
+        self.assertEqual(
+            [item["sourceEntryNumber"] for item in added], list(range(3035, 3408))
+        )
+        self.assertTrue(all("editorialSupply" not in item for item in added))
+
+    def test_literal_damaged_heads_keep_body_and_attention_state(self) -> None:
+        cases = {
+            3052: ("الم بن وابصة", "“الم” ibn Wābiṣah"),
+            3317: ("سفين بن عبد الله", "“سفين” ibn ʿAbd Allāh"),
+        }
+        for number, (arabic_title, english_title) in cases.items():
+            with self.subTest(number=number):
+                decision = MODULE.decision_for_entry(self.profile, number)
+                self.assertEqual(decision["title"], {"ar": arabic_title, "en": english_title})
+                self.assertNotIn("editorialSupply", decision)
+                arabic = arabic_title + " " + decision["bodyOpening"]["ar"]
+                english = english_title + ". " + decision["bodyOpening"]["en"]
+                entry = {
+                    "sourceOrdinal": number,
+                    "source": {"headingArabic": arabic, "arabic": arabic},
+                    "adjudication": {"english": english},
+                    "unresolved": [{"description": "Source spelling remains unresolved."}],
+                }
+                title, body_ar, body_en = MODULE.governed_title_and_body(
+                    entry, decision, render_arabic=lambda value: value
+                )
+                self.assertEqual(title["state"], "needs_attention")
+                self.assertEqual(body_ar, decision["bodyOpening"]["ar"])
+                self.assertEqual(body_en, decision["bodyOpening"]["en"])
+
+    def test_ordinary_decision_cannot_silently_repair_source_letters(self) -> None:
+        for number, restored in ((3052, "سالم بن وابصة"), (3317, "سفيان بن عبد الله")):
+            with self.subTest(number=number):
+                decision = copy.deepcopy(MODULE.decision_for_entry(self.profile, number))
+                literal = decision["title"]["ar"]
+                decision["title"]["ar"] = restored
+                source = literal + " " + decision["bodyOpening"]["ar"]
+                entry = {
+                    "sourceOrdinal": number,
+                    "source": {"headingArabic": source, "arabic": source},
+                    "adjudication": {"english": decision["title"]["en"]},
+                }
+                with self.assertRaisesRegex(ValueError, "pinned Arabic source prefix"):
+                    MODULE.governed_title_and_body(
+                        entry, decision, render_arabic=lambda value: value
+                    )
 
     def test_positive_reference_matches_the_pinned_source_lineage(self) -> None:
         decision = next(
@@ -190,7 +249,7 @@ class EntryTitleContractTests(unittest.TestCase):
 
     def test_entry_outside_governed_ranges_is_rejected(self) -> None:
         with self.assertRaisesRegex(ValueError, "lacks a governed bilingual"):
-            MODULE.decision_for_entry(self.profile, 3035)
+            MODULE.decision_for_entry(self.profile, 3408)
 
 
 if __name__ == "__main__":

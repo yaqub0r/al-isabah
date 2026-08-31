@@ -49,7 +49,7 @@ REQUIRED_POLICIES = {
     "translation-quality-workflow": "docs/contracts/translation-quality-workflow.md",
     "al-isabah-translation-profile": "docs/translation-profiles/al-isabah.md",
     "entry-title-structure": "docs/contracts/entry-title-structure.md",
-    "entry-title-decisions": "profiles/entry-title-decisions.v3.json",
+    "entry-title-decisions": "profiles/entry-title-decisions.v4.json",
     "honorific-formula-registry": "profiles/honorific-formulas.v1.json",
     "translation-source-profile": "profiles/translation-source.v1.json",
     "execution-method-contract": "docs/contracts/translation-execution-methods.md",
@@ -83,9 +83,9 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
         None,
     ),
     "entry-title-decisions": (
-        "profiles/entry-title-decisions.v3.json",
+        "profiles/entry-title-decisions.v4.json",
         "active",
-        "3.0.0",
+        "4.0.0",
     ),
     "translation-source-profile": (
         "profiles/translation-source.v1.json",
