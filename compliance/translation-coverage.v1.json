@@ -1,7 +1,7 @@
 {
   "schema": "al-isabah.translation-coverage.v1",
   "schema_version": "1.1.0",
-  "status_id": "translation-coverage-2026-08-28",
+  "status_id": "translation-coverage-2026-08-31",
   "work_id": "ibn-hajar-al-isabah",
   "policy_binding": "compliance/policy-binding.v2.json",
   "semantics": {
@@ -99,6 +99,52 @@
         "unreviewed_units": 1550
       },
       "workflow_conformance": "legacy_audit_required",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "issue-0080-volume-03-quarter-01",
+      "scope_kind": "cohort",
+      "label": "Issue 80 — Volume 3 first quarter (3035–3407)",
+      "volume": 3,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 373,
+        "translated_units": 373,
+        "remaining_agent_units": 0,
+        "basis": "Machine-ready first-quarter proposal and bilingual review; external evidence submission and current distribution admission remain pending. This cohort overlaps the Volume 3 view and is not additive to it.",
+        "evidence": {
+          "source_register_artifact": "issue-0080-public-proposal-v1",
+          "sha256": "1881b4e86df921c3bd81bd1c354586a8697e07dfaa870558863a3e5f3cc7b94e"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 373
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "volume-03",
+      "scope_kind": "volume",
+      "label": "Volume 3",
+      "volume": 3,
+      "agent_completion": {
+        "status": "in_progress",
+        "locked_units": 1491,
+        "translated_units": 373,
+        "remaining_agent_units": 1118,
+        "basis": "Only source ordinals3035–3407 are complete in Issue 80. The remaining3408–4525 are outside that assignment. This volume view includes the quarter cohort; the two counts must not be added."
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 1491
+      },
+      "workflow_conformance": "current",
       "public_working_status": "blocked",
       "canonical_promotion": "blocked"
     }

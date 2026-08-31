@@ -26,6 +26,9 @@ LAST_POLICY_PATH = ROOT / "compliance" / "policy-binding.v3.json"
 LEGACY_POLICY_PATH = ROOT / "compliance" / "policy-binding.v1.json"
 PREVIOUS_POLICY_PATH = ROOT / "compliance" / "policy-binding.v2.json"
 COVERAGE_PATH = ROOT / "compliance" / "translation-coverage.v1.json"
+QUARTER_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0080.public-proposal.json"
+QUARTER_SCOPE_ID = "issue-0080-volume-03-quarter-01"
+QUARTER_PENDING_STATUS = "machine-ready-quarter-proposal-pending-submission-and-distribution-admission"
 RETIREMENT_PATH = ROOT / "compliance" / "research-retirement.v1.json"
 RIGHTS_MATRIX_PATH = ROOT / "compliance" / "rights-matrix.al-isabah.v1.json"
 GOVERNANCE_REFERENCE_PATH = (
@@ -259,8 +262,17 @@ REQUIRED_COMPLETED_SCOPES = {
         "workflow_conformance": "legacy_audit_required",
         "public_working_status": "blocked",
     },
+    QUARTER_SCOPE_ID: {
+        "scope_kind": "cohort",
+        "volume": 3,
+        "artifact": "issue-0080-public-proposal-v1",
+        "units": 373,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
 }
 REQUIRED_REOPENED_SCOPES = {}
+REQUIRED_PARTIAL_SCOPES = {"volume-03": {"volume": 3, "units": 1491, "translated": 373, "remaining": 1118}}
 
 
 class ComplianceError(ValueError):
@@ -713,11 +725,9 @@ def validate_translation_coverage(
         if scope.get("canonical_promotion") not in {"blocked", "eligible", "promoted"}:
             errors.append(f"{location}.canonical_promotion: is invalid")
 
-    required_scope_ids = set(REQUIRED_COMPLETED_SCOPES) | set(
-        REQUIRED_REOPENED_SCOPES
-    )
+    required_scope_ids = set(REQUIRED_COMPLETED_SCOPES) | set(REQUIRED_REOPENED_SCOPES) | set(REQUIRED_PARTIAL_SCOPES)
     if set(scopes) != required_scope_ids:
-        errors.append("translation coverage: exact current volume inventory is required")
+        errors.append("translation coverage: exact current volume and cohort inventory is required")
     for scope_id, expected in REQUIRED_COMPLETED_SCOPES.items():
         scope = scopes.get(scope_id)
         if scope is None:
@@ -725,7 +735,7 @@ def validate_translation_coverage(
         completion = scope.get("agent_completion", {})
         evidence = completion.get("evidence", {})
         if (
-            scope.get("scope_kind") != "volume"
+            scope.get("scope_kind") != expected.get("scope_kind", "volume")
             or scope.get("volume") != expected["volume"]
             or completion.get("status") != "agent_complete"
             or completion.get("locked_units") != expected["units"]
@@ -736,6 +746,26 @@ def validate_translation_coverage(
             or scope.get("public_working_status") != expected["public_working_status"]
         ):
             errors.append(f"translation coverage: {scope_id} completion evidence is incorrect")
+
+    for scope_id, expected in REQUIRED_PARTIAL_SCOPES.items():
+        scope = scopes.get(scope_id, {})
+        completion = scope.get("agent_completion", {})
+        if (
+            scope.get("scope_kind") != "volume"
+            or scope.get("volume") != expected["volume"]
+            or completion.get("status") != "in_progress"
+            or completion.get("locked_units") != expected["units"]
+            or completion.get("translated_units") != expected["translated"]
+            or completion.get("remaining_agent_units") != expected["remaining"]
+            or scope.get("workflow_conformance") != "current"
+            or scope.get("public_working_status") != "blocked"
+            or scope.get("canonical_promotion") != "blocked"
+        ):
+            errors.append(f"translation coverage: {scope_id} partial completion is incorrect")
+
+    quarter = scopes.get(QUARTER_SCOPE_ID)
+    if quarter is not None:
+        errors.extend(validate_quarter_completion(quarter, artifacts))
 
     for scope_id, expected in REQUIRED_REOPENED_SCOPES.items():
         scope = scopes.get(scope_id)
@@ -772,6 +802,60 @@ def validate_translation_coverage(
 
     errors.extend(_walk(coverage, "translation_coverage"))
     return errors
+
+
+def validate_quarter_completion(
+    scope: dict[str, Any], artifacts: dict[str, dict[str, Any]]
+) -> list[str]:
+    """Bind the completed cohort to its exact, still non-admitted proposal."""
+    prefix = "translation coverage: issue-0080 quarter"
+    artifact = artifacts.get("issue-0080-public-proposal-v1", {})
+    if not isinstance(artifact, dict) or not isinstance(artifact.get("integrity"), dict):
+        return [f"{prefix} registered evidence is invalid"]
+    integrity = artifact.get("integrity", {})
+    if (
+        artifact.get("review_status") != QUARTER_PENDING_STATUS
+        or scope.get("canonical_promotion") != "blocked"
+        or integrity.get("public_entries") != 373
+        or integrity.get("source_ordinal_start") != 3035
+        or integrity.get("source_ordinal_end") != 3407
+        or integrity.get("owned_structural_segments") != 13
+        or integrity.get("structural_owners") != 12
+        or any(key.startswith("submitted_") for key in integrity)
+    ):
+        return [f"{prefix} scope or pending-admission evidence is incorrect"]
+    try:
+        proposal = load_json(QUARTER_PROPOSAL_PATH)
+        proposal_sha = hashlib.sha256(QUARTER_PROPOSAL_PATH.read_bytes()).hexdigest()
+    except (OSError, ValueError, UnicodeError):
+        return [f"{prefix} proposal is missing or invalid"]
+    records = proposal.get("records", [])
+    policy = proposal.get("policy")
+    if not isinstance(policy, dict):
+        return [f"{prefix} execution binding is invalid"]
+    if (
+        proposal.get("proposalId") != "issue-0080-public-proposal-v1"
+        or proposal.get("schemaVersion") != "1.2.0"
+        or proposal_sha != integrity.get("proposal_sha256")
+        or not isinstance(records, list)
+        or any(not isinstance(record, dict) for record in records)
+        or [record.get("sourceOrdinal") for record in records] != list(range(3035, 3408))
+        or any(record.get("volume") != 3 for record in records)
+        or policy.get("bindingSha256") != canonical_text_sha256(POLICY_PATH)
+        or integrity.get("execution_policy_binding_sha256") != policy.get("bindingSha256")
+    ):
+        return [f"{prefix} exact proposal range, hash or execution binding is incorrect"]
+    from validate_public_proposal import validate as validate_proposal
+
+    if validate_proposal(QUARTER_PROPOSAL_PATH, require_current=True):
+        return [f"{prefix} strict public proposal is invalid"]
+    owned_context = [
+        [item for item in record["precedingMaterial"] if item["kind"] != "continued_structural_heading"]
+        for record in records
+    ]
+    if sum(map(len, owned_context)) != 13 or sum(bool(items) for items in owned_context) != 12:
+        return [f"{prefix} owned structural coverage is incorrect"]
+    return []
 
 
 def validate_translation_governance(
