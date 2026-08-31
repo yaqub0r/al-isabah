@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import copy
+import re
 from pathlib import Path
 from typing import Any
 
@@ -50,6 +51,36 @@ def request_errors(request: Any, configuration: dict[str, Any], kind: str) -> li
     return []
 
 
+def validate_session_identity(meta: dict[str, Any], session_id: str) -> None:
+    """Keep thread identity distinct from a direct worker's root host session.
+
+    Older rollouts omit session_id or repeat id. Current direct-worker rollouts
+    use id for the worker thread and session_id for its parent host session.
+    Accept that second shape only when both recorded parent links and the
+    recorded agent path agree; arbitrary mismatched aliases remain invalid.
+    These checks interpret trusted host metadata, not worker-authored labels.
+    """
+    if meta.get("id") != session_id:
+        fail("session identity mismatch")
+    host_session = meta.get("session_id", session_id)
+    if host_session == session_id:
+        return
+    source = meta.get("source")
+    subagent = source.get("subagent") if isinstance(source, dict) else None
+    spawn = subagent.get("thread_spawn") if isinstance(subagent, dict) else None
+    agent_path = meta.get("agent_path")
+    if (
+        not isinstance(host_session, str) or not host_session
+        or meta.get("parent_thread_id") != host_session
+        or not isinstance(spawn, dict)
+        or spawn.get("parent_thread_id") != host_session
+        or type(spawn.get("depth")) is not int or spawn["depth"] != 1
+        or not isinstance(agent_path, str) or re.fullmatch(r"/root/[a-z0-9_]+", agent_path) is None
+        or spawn.get("agent_path") != agent_path
+    ):
+        fail("session identity mismatch")
+
+
 def observe_session(path: Path, session_id: str, turn_id: str) -> dict[str, Any]:
     """Versioned adapter for Codex session_meta / turn_context JSONL records.
 
@@ -84,8 +115,7 @@ def observe_session(path: Path, session_id: str, turn_id: str) -> dict[str, Any]
     if len(metadata) != 1 or not selected:
         fail("exact session and turn metadata required")
     meta = metadata[0]
-    if meta.get("id") != session_id or meta.get("session_id", session_id) != session_id:
-        fail("session identity mismatch")
+    validate_session_identity(meta, session_id)
     if any(item != selected[0] for item in selected):
         fail("effective settings changed within the selected turn")
     if not all(isinstance(value, str) and value for value in selected[0].values()):

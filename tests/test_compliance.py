@@ -143,9 +143,9 @@ class ComplianceTests(unittest.TestCase):
             contracts["entry-title-decisions"],
             {
                 "id": "entry-title-decisions",
-                "path": "profiles/entry-title-decisions.v3.json",
+                "path": "profiles/entry-title-decisions.v4.json",
                 "sha256": MODULE.canonical_text_sha256(
-                    ROOT / "profiles" / "entry-title-decisions.v3.json"
+                    ROOT / "profiles" / "entry-title-decisions.v4.json"
                 ),
             },
         )

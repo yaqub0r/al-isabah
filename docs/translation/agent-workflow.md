@@ -268,6 +268,23 @@ wrong identity, a reused worker turn or recorded fork fails. Raw prompt and
 response rows are never retained or printed. Runtime metadata format changes
 require a reviewed adapter update; never substitute worker-written labels.
 
+For the current direct-worker host format, select the worker thread identity
+(`CODEX_THREAD_ID`), not the root host session identity (`CODEX_SESSION_ID`).
+The coordinator must check that the rollout filename and recorded agent path
+identify the intended worker; the adapter verifies its exact `session_meta.id`.
+Its separate `session_meta.session_id` may identify the
+root host session only when the top-level and nested spawn parent identities
+agree, the spawn depth is exactly one, and both agent paths agree on a direct
+`/root/<task_name>` path using lowercase letters, digits, and underscores. The adapter
+retains the worker identity in the existing evidence schema and discards these
+parent/path diagnostics. These parent, depth, and path checks apply when
+`session_id` differs from `id`; legacy metadata that omits `session_id` or repeats
+`id` retains its existing identity behavior. In the distinct-root-session shape,
+arbitrary alias mismatches and nested-worker metadata fail closed. All shapes
+retain the exact selected identity, turn, effective settings, and fork checks.
+This host-format correction changes neither the approved method nor the
+trusted-host boundary; it does not admit earlier uncaptured semantic output.
+
 After building normal content-addressed stage provenance with
 `completed_stage_provenance`, save that stage's provenance object in an ignored
 JSON file and bind its exact output and checkpoint:
