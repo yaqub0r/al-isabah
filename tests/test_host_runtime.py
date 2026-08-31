@@ -123,6 +123,102 @@ class HostRuntimeTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             HOST.observe_session(path, "worker", "turn")
 
+    def direct_worker_log(self, **kwargs):
+        path = self.log(**kwargs)
+        records = [json.loads(line) for line in path.read_text().splitlines()]
+        records[0]["payload"].update({
+            "session_id": "root-host-session",
+            "parent_thread_id": "root-host-session",
+            "agent_path": "/root/translation_worker",
+            "source": {"subagent": {"thread_spawn": {
+                "parent_thread_id": "root-host-session", "depth": 1,
+                "agent_path": "/root/translation_worker",
+            }}},
+        })
+        path.write_text("".join(json.dumps(row) + "\n" for row in records))
+        return path
+
+    def test_direct_worker_uses_thread_identity_not_root_host_session(self):
+        path = self.direct_worker_log()
+        request = HOST.launch_request("codex-worker", "gpt-5.6-sol", "xhigh")
+        launch = HOST.capture_launch(request, path, "worker", "turn", "codex-worker", METHOD)
+        self.assertEqual(launch["observed"]["sessionId"], "worker")
+        self.assertTrue(launch["observed"]["firstTurn"])
+        self.assertFalse(launch["observed"]["forked"])
+        self.assertNotIn("root-host-session", json.dumps(launch))
+        self.assertNotIn("translation_worker", json.dumps(launch))
+        task = self.launch("codex-task", "root-host-session", prior=True)
+        provenance = self.provenance()
+        provenance.pop("execution")
+        execution = HOST.capture_execution(provenance, "blind_translation", METHOD, task, launch)
+        self.assertEqual(execution["binding"]["sessionId"], "worker")
+        for wrong in ("root-host-session", "other-worker"):
+            with self.assertRaisesRegex(ValueError, "session identity mismatch"):
+                HOST.observe_session(path, wrong, "turn")
+
+    def test_direct_worker_rejects_incomplete_or_conflicting_parent_metadata(self):
+        changes = [
+            lambda m: m.update(session_id=None),
+            lambda m: m.update(session_id=""),
+            lambda m: m.pop("parent_thread_id"),
+            lambda m: m.update(parent_thread_id="another-parent"),
+            lambda m: m.pop("source"),
+            lambda m: m.update(source=[]),
+            lambda m: m.update(source={"subagent": []}),
+            lambda m: m.update(source={"subagent": {"thread_spawn": []}}),
+            lambda m: m["source"]["subagent"]["thread_spawn"].update(parent_thread_id="another-parent"),
+            lambda m: m["source"]["subagent"]["thread_spawn"].update(depth=2),
+            lambda m: m["source"]["subagent"]["thread_spawn"].update(depth=True),
+            lambda m: m.pop("agent_path"),
+            lambda m: m.update(agent_path="/root/"),
+            lambda m: m.update(agent_path="/root/nested/worker"),
+            lambda m: m["source"]["subagent"]["thread_spawn"].update(agent_path="/root/another_worker"),
+        ]
+        for change in changes:
+            path = self.direct_worker_log()
+            records = [json.loads(line) for line in path.read_text().splitlines()]
+            change(records[0]["payload"])
+            path.write_text("".join(json.dumps(row) + "\n" for row in records))
+            with self.assertRaisesRegex(ValueError, "session identity mismatch"):
+                HOST.observe_session(path, "worker", "turn")
+
+    def test_direct_worker_retains_model_turn_and_fresh_context_gates(self):
+        request = HOST.launch_request("codex-worker", "gpt-5.6-sol", "xhigh")
+        for kwargs in ({"reasoning": "high"}, {"model": "unknown"},
+                       {"prior": True}, {"forked": True}):
+            with self.assertRaises(ValueError):
+                HOST.capture_launch(request, self.direct_worker_log(**kwargs),
+                                    "worker", "turn", "codex-worker", METHOD)
+        with self.assertRaises(ValueError):
+            HOST.capture_launch(request, self.direct_worker_log(), "worker",
+                                "wrong-turn", "codex-worker", METHOD)
+
+    def test_direct_worker_rejects_matching_malformed_agent_paths(self):
+        for component in ("", ".", "..", "nested/worker", "worker\\child", " worker",
+                          "worker ", "worker\n", "worker\t", "Worker", "worker-name"):
+            with self.subTest(component=component):
+                path = self.direct_worker_log()
+                records = [json.loads(line) for line in path.read_text().splitlines()]
+                meta = records[0]["payload"]
+                meta["agent_path"] = "/root/" + component
+                meta["source"]["subagent"]["thread_spawn"]["agent_path"] = meta["agent_path"]
+                path.write_text("".join(json.dumps(row) + "\n" for row in records))
+                with self.assertRaisesRegex(ValueError, "session identity mismatch"):
+                    HOST.observe_session(path, "worker", "turn")
+
+    def test_legacy_identity_shapes_preserve_spawn_metadata_compatibility(self):
+        for explicit_session in (False, True):
+            path = self.direct_worker_log()
+            records = [json.loads(line) for line in path.read_text().splitlines()]
+            meta = records[0]["payload"]
+            if explicit_session:
+                meta["session_id"] = "worker"
+            else:
+                meta.pop("session_id")
+            meta["source"]["subagent"]["thread_spawn"]["depth"] = 2
+            path.write_text("".join(json.dumps(row) + "\n" for row in records))
+            self.assertEqual(HOST.observe_session(path, "worker", "turn")["sessionId"], "worker")
+
     def test_conflicting_host_turn_settings_and_malformed_logs_fail_safely(self):
         path = self.log()
         with path.open("a", encoding="utf-8") as stream:

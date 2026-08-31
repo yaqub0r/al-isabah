@@ -19,7 +19,7 @@
     {
       "id": "policy-binding",
       "path": "compliance/policy-binding.v5.json",
-      "sha256": "97e4d2faa57a1bc1b0679cdd31c148ea19d6655609d0d30f83fb563cc59b6259",
+      "sha256": "9e4f3ddc0e3c677a54259daa00da5cf8607169cdc4e085b2b82e28932309cafc",
       "status": "active"
     },
     {
@@ -178,7 +178,7 @@
     {
       "id": "translation-agent-workflow",
       "path": "docs/translation/agent-workflow.md",
-      "sha256": "840b349be21d277f596992bc23f5987ea2ed6326c2bd390e65596d33df84dd96",
+      "sha256": "a22c403d0c7ca6210352fd997b3edd5d16e942829fea7fa6fce0e0a8dbdd7654",
       "status": "active"
     },
     {
