@@ -45,6 +45,7 @@ VOLUME2_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0053.publ
 VOLUME2_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0053.public-review.json"
 ISSUE_0070_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0070.public-proposal.json"
 ISSUE_0070_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0070.public-review.json"
+ISSUE_0080_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0080.public-proposal.json"
 ISSUE_0070_RUNTIME_PACKET = (
     ROOT / ".runtime" / "translation" / "packets" / "issue-0070-lineage.json"
 )
@@ -59,6 +60,9 @@ class PublicDistributionTests(unittest.TestCase):
         cls.volume2_proposal = json.loads(VOLUME2_PROPOSAL_PATH.read_text(encoding="utf-8"))
         cls.issue_0070_proposal = json.loads(
             ISSUE_0070_PROPOSAL_PATH.read_text(encoding="utf-8")
+        )
+        cls.issue_0080_proposal = json.loads(
+            ISSUE_0080_PROPOSAL_PATH.read_text(encoding="utf-8")
         )
 
     def test_current_tree_and_exact_closure_are_valid(self):
@@ -135,6 +139,36 @@ class PublicDistributionTests(unittest.TestCase):
             path.write_bytes(BOUNDARY.canonical_json(proposal))
             errors = PROPOSAL_VALIDATOR.validate(path)
         self.assertTrue(any("category=policy-mismatch" in error for error in errors))
+
+    def test_issue_80_historical_policy_binding_remains_exact_and_fail_closed(self):
+        proposal = copy.deepcopy(self.issue_0080_proposal)
+        self.assertEqual(PROPOSAL_VALIDATOR.validate(ISSUE_0080_PROPOSAL_PATH), [])
+        self.assertEqual(
+            proposal["policy"]["bindingSha256"],
+            PROPOSAL_VALIDATOR.HISTORICAL_POLICY_BINDINGS[
+                ("1.2.0", "issue-0080-public-proposal-v1")
+            ],
+        )
+        proposal["policy"]["bindingSha256"] = "0" * 64
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "issue-0080.public-proposal.json"
+            path.write_bytes(BOUNDARY.canonical_json(proposal))
+            errors = PROPOSAL_VALIDATOR.validate(path)
+        self.assertTrue(any("category=policy-mismatch" in error for error in errors))
+
+        proposal = copy.deepcopy(self.issue_0080_proposal)
+        proposal["entryTitleDecisions"].update(
+            PROPOSAL_VALIDATOR.PINNED_TITLE_PROFILE_BINDINGS[
+                ("1.2.0", "issue-0082-public-proposal-v1")
+            ]
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "issue-0080.public-proposal.json"
+            path.write_bytes(BOUNDARY.canonical_json(proposal))
+            errors = PROPOSAL_VALIDATOR.validate(path)
+        self.assertTrue(
+            any("category=title-profile-mismatch" in error for error in errors)
+        )
 
     def test_issue_70_corrected_proposal_is_strict_public_safe_and_current(self):
         proposal = self.issue_0070_proposal
@@ -417,7 +451,7 @@ class PublicDistributionTests(unittest.TestCase):
         )
         proposal = {
             "entryTitleDecisions": {
-                "profileId": "entry-title-decisions.v4",
+                "profileId": "entry-title-decisions.v5",
                 "profileSha256": BOUNDARY.sha256_file(PACKET_PROJECT.ENTRY_TITLE_PROFILE),
                 "coveredRecordCount": 1,
             },
@@ -534,9 +568,13 @@ class PublicDistributionTests(unittest.TestCase):
                 "aliases": [],
                 "entityType": "collective",
                 "reviewState": "unreviewed",
-            }
+            },
+            "openiti-synthetic-unit-000001-name-001",
         )
         self.assertEqual(projected["kind"], "collective")
+        self.assertEqual(
+            projected["id"], "openiti-synthetic-unit-000001-name-001"
+        )
 
     def test_v2_build_is_deterministic_and_consumer_compatible(self):
         with tempfile.TemporaryDirectory() as temp:

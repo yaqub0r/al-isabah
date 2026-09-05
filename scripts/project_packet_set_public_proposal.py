@@ -17,7 +17,7 @@ from pathlib import Path
 from typing import Any
 
 from project_public_proposal import FORMULA_KEYS, NORMALIZED_SOURCE_ID, parity_projection
-from public_boundary import canonical_json, sha256_bytes, sha256_file, sha256_text_file
+from public_boundary import canonical_json, sha256_bytes, sha256_file
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -32,7 +32,7 @@ from validate_entry_titles import (  # noqa: E402
 
 
 INLINE_SECTION = re.compile(r"\s*#~:section:\d*\s*(\([^\n]+\))\s*")
-ENTRY_TITLE_PROFILE = ROOT / "profiles" / "entry-title-decisions.v4.json"
+ENTRY_TITLE_PROFILE = ROOT / "profiles" / "entry-title-decisions.v5.json"
 ENTRY_TITLE_PROFILE_NAME = re.compile(r"^entry-title-decisions\.v[0-9]+\.json$")
 
 
@@ -49,9 +49,9 @@ def finding(value: dict[str, Any]) -> dict[str, str]:
     }
 
 
-def public_name(value: dict[str, Any]) -> dict[str, Any]:
+def public_name(value: dict[str, Any], stable_id: str) -> dict[str, Any]:
     return {
-        "id": value["candidateId"],
+        "id": stable_id,
         "arabic": value["observedArabic"],
         "english": value["proposedEnglish"],
         "aliases": value.get("aliases", []),
@@ -230,7 +230,13 @@ def public_record(
         "arabic": arabic,
         "english": english,
         "precedingMaterial": contexts,
-        "names": [public_name(item) for item in candidates],
+        "names": [
+            public_name(
+                item,
+                f"{entry['sourceUnitId']}-name-{index:03d}",
+            )
+            for index, item in enumerate(candidates, start=1)
+        ],
         "unresolved": [finding(item) for item in unresolved],
         "formulas": [
             {key: item[key] for key in FORMULA_KEYS}
@@ -384,11 +390,7 @@ def project(
             "statusCode": "public-working",
             "effectCode": "canonical-promotion-blocked",
         },
-        "policy": {
-            "bindingSha256": sha256_text_file(
-                ROOT / "compliance" / "policy-binding.v5.json"
-            )
-        },
+        "policy": {"bindingSha256": policy_sha256},
         "entryTitleDecisions": {
             "profileId": title_profile_path.stem,
             "profileSha256": sha256_file(title_profile_path),

@@ -12,7 +12,7 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROFILE = ROOT / "profiles" / "entry-title-decisions.v4.json"
+PROFILE = ROOT / "profiles" / "entry-title-decisions.v5.json"
 GIT_SHA = re.compile(r"^[0-9a-f]{40}$")
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
 ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -21,7 +21,9 @@ RELATIONSHIP_PROSE = re.compile(
     re.IGNORECASE,
 )
 BODY_BOUNDARY = " \t\r\n,،.;:—–-"
-OPENITI_MILESTONE = re.compile(r"(?<![A-Za-z0-9_])ms[0-9]+(?![A-Za-z0-9_])")
+OPENITI_MILESTONE = re.compile(
+    r"(?<![A-Za-z0-9_])(?:ms[0-9]+|PageV[0-9]{2}P[0-9]{3})(?![A-Za-z0-9_])"
+)
 
 
 def load(path: Path = PROFILE) -> dict[str, Any]:
@@ -42,6 +44,10 @@ def _bilingual(value: object, location: str) -> list[str]:
             errors.append(f"{location}.{language}: non-empty text is required")
         elif text != text.strip() or "\n" in text:
             errors.append(f"{location}.{language}: must be a single trimmed block")
+        elif OPENITI_MILESTONE.search(text):
+            errors.append(
+                f"{location}.{language}: OpenITI milestone controls are not display text"
+            )
     return errors
 
 

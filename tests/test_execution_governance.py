@@ -299,13 +299,25 @@ class ExecutionArtifactTests(unittest.TestCase):
     def test_historical_policy_references_and_packet_schema_remain_immutable(self):
         expected = {
             "compliance/policy-binding.v3.json": "cfdd5d5baab74a21930e549cc4418574decc07e20e84bf6438e0b9527e360a0b",
+            "compliance/policy-binding.v5.json": "a89774893a9c623814f51a942c0c43056a0f6ffb8b979a43bc6bdb6e317c3f91",
             "docs/contracts/translation-governance-reference.v2.json": "7d73170d384f417733134e5ca09263ba73c92e941c5590d534d9eb38ec6704ae",
+            "docs/contracts/translation-governance-reference.v4.json": "fa4f4e35fab2182d31cb9441e9cf84d2c01a8bc1c6467abca8c09ae9525c82a4",
+            "profiles/entry-title-decisions.v4.json": "f177c6c9fba1702aae911c0dba024e9e24b1093016b62066a573f63e6afff2a3",
+            "schemas/translation-work-packet.v3.schema.json": "80a1a0d1de2d8c21e62974b47c2ab13a2cc41e67970d0754c5d2baedbd99a0eb",
         }
         for path, digest in expected.items():
             self.assertEqual(sha256_text_file(GOVERNANCE.ROOT / path), digest)
         old = GOVERNANCE.read_json(GOVERNANCE.ROOT / "schemas/translation-work-packet.v1.schema.json")
         self.assertEqual(old["properties"]["schemaVersion"]["const"], "1.5.0")
         self.assertNotIn("execution", old["$defs"]["stageProvenance"]["properties"])
+        active = GOVERNANCE.read_json(
+            GOVERNANCE.ROOT / "schemas/translation-work-packet.v4.schema.json"
+        )
+        self.assertEqual(active["properties"]["schemaVersion"]["const"], "3.0.0")
+        self.assertEqual(
+            active["$defs"]["policy"]["properties"]["bindingPath"]["const"],
+            "compliance/policy-binding.v6.json",
+        )
 
 
 if __name__ == "__main__":

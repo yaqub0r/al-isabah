@@ -1,7 +1,7 @@
 {
   "schema": "al-isabah.translation-coverage.v1",
   "schema_version": "1.1.0",
-  "status_id": "translation-coverage-2026-08-31",
+  "status_id": "translation-coverage-2026-09-05",
   "work_id": "ibn-hajar-al-isabah",
   "policy_binding": "compliance/policy-binding.v2.json",
   "semantics": {
@@ -128,6 +128,31 @@
       "canonical_promotion": "blocked"
     },
     {
+      "scope_id": "issue-0082-volume-03-quarter-02",
+      "scope_kind": "cohort",
+      "label": "Issue 82 — Volume 3 second quarter (3408–3780)",
+      "volume": 3,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 373,
+        "translated_units": 373,
+        "remaining_agent_units": 0,
+        "basis": "Machine-ready second-quarter proposal and bilingual review; external evidence submission and current distribution admission remain pending. This cohort overlaps the Volume 3 view and is not additive to it.",
+        "evidence": {
+          "source_register_artifact": "issue-0082-public-proposal-v1",
+          "sha256": "6d1251afe2ae69e3f8c88f5f435c78215501bbe32d3a34269f6e9b8e4ba6f22b"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 373
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
       "scope_id": "volume-03",
       "scope_kind": "volume",
       "label": "Volume 3",
@@ -135,9 +160,9 @@
       "agent_completion": {
         "status": "in_progress",
         "locked_units": 1491,
-        "translated_units": 373,
-        "remaining_agent_units": 1118,
-        "basis": "Only source ordinals3035–3407 are complete in Issue 80. The remaining3408–4525 are outside that assignment. This volume view includes the quarter cohort; the two counts must not be added."
+        "translated_units": 746,
+        "remaining_agent_units": 745,
+        "basis": "Source ordinals 3035–3407 are complete in Issue 80 and 3408–3780 are complete in Issue 82. The remaining 3781–4525 are outside those assignments. This volume view includes both quarter cohorts; the cohort and volume counts must not be added."
       },
       "human_review": {
         "management_state": "ongoing",

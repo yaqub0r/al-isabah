@@ -21,7 +21,7 @@ model](docs/architecture/canonical-publication-repository.md) for the complete
 responsibility and trust-boundary model.
 
 Downstream consumers discover and pin the versioned
-[translation-governance reference](docs/contracts/translation-governance-reference.v4.json).
+[translation-governance reference](docs/contracts/translation-governance-reference.v6.json).
 Its [compatibility guide](docs/contracts/downstream-consumer-compatibility.md)
 documents immutable-commit pinning, the Al-Isabah-owned formula registry,
 consumer responsibilities, and the downstream deprecation path. Human review
@@ -82,7 +82,7 @@ contract](docs/contracts/entry-title-structure.md) defines a title as the
 shortest stable name or heading phrase identifying an entry's subject. Lineage,
 relationships, narration, and biographical prose remain in ordered body blocks;
 Arabic and English titles must cover the same semantic boundary. The versioned
-[title-decision profile](profiles/entry-title-decisions.v3.json) records
+[title-decision profile](profiles/entry-title-decisions.v5.json) records
 reviewed decisions for entries whose printed heading line does not provide that
 boundary reliably. Its witness-bound editorial supplies preserve damaged source
 prefixes while displaying bracketed subject heads supported by same-work

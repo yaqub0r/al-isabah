@@ -27,11 +27,11 @@ class EntryTitleContractTests(unittest.TestCase):
             11445, 11446, 11449, 11451, 11454, 11458, 11459, 11473,
             11474, 11476,
         }
-        self.assertEqual(numbers, historical | set(range(1538, 3408)))
-        self.assertEqual(len(self.profile["decisions"]), 1888)
+        self.assertEqual(numbers, historical | set(range(1538, 3781)))
+        self.assertEqual(len(self.profile["decisions"]), 2261)
 
     def test_successor_preserves_all_previous_decisions(self) -> None:
-        previous = MODULE.load(ROOT / "profiles" / "entry-title-decisions.v3.json")
+        previous = MODULE.load(ROOT / "profiles" / "entry-title-decisions.v4.json")
         previous_numbers = {item["sourceEntryNumber"] for item in previous["decisions"]}
         preserved = [
             item for item in self.profile["decisions"]
@@ -43,7 +43,7 @@ class EntryTitleContractTests(unittest.TestCase):
         ]
         self.assertEqual(preserved, previous["decisions"])
         self.assertEqual(
-            [item["sourceEntryNumber"] for item in added], list(range(3035, 3408))
+            [item["sourceEntryNumber"] for item in added], list(range(3408, 3781))
         )
         self.assertTrue(all("editorialSupply" not in item for item in added))
 
@@ -144,14 +144,31 @@ class EntryTitleContractTests(unittest.TestCase):
     def test_openiti_milestones_are_removed_only_at_the_source_heading_boundary(self) -> None:
         self.assertEqual(
             MODULE.clean_source_heading_boundary(
-                "ms0504 الحكم بن ms0542 مرة قال"
+                "ms0504 الحكم بن ms0542 مرة قال PageV03P210"
             ),
             "الحكم بن مرة قال",
         )
         self.assertEqual(
-            MODULE.clean_source_heading_boundary("اسم xms0542 msnote"),
-            "اسم xms0542 msnote",
+            MODULE.clean_source_heading_boundary(
+                "اسم xms0542 msnote xPageV03P210 PageV03P210x"
+            ),
+            "اسم xms0542 msnote xPageV03P210 PageV03P210x",
         )
+
+    def test_rejects_openiti_milestone_controls_in_display_fields(self) -> None:
+        for language in ("ar", "en"):
+            for control in ("ms1115", "PageV03P210"):
+                with self.subTest(language=language, control=control):
+                    profile = copy.deepcopy(self.profile)
+                    profile["decisions"][-1]["bodyOpening"][language] += f" {control}"
+                    errors = MODULE.validate(profile)
+                    self.assertTrue(
+                        any(
+                            "milestone controls are not display text" in error
+                            for error in errors
+                        ),
+                        errors,
+                    )
 
     def test_governed_split_accepts_embedded_marker_without_losing_body_text(self) -> None:
         entry = {
@@ -249,7 +266,7 @@ class EntryTitleContractTests(unittest.TestCase):
 
     def test_entry_outside_governed_ranges_is_rejected(self) -> None:
         with self.assertRaisesRegex(ValueError, "lacks a governed bilingual"):
-            MODULE.decision_for_entry(self.profile, 3408)
+            MODULE.decision_for_entry(self.profile, 3781)
 
 
 if __name__ == "__main__":
