@@ -38,6 +38,28 @@ HISTORICAL_POLICY_BINDINGS = {
         "1.2.0",
         "issue-0070-public-proposal-v1",
     ): "20a74b3643a65e621efe02402e59944223f1424f75d67e1af94476d6f233bd6f",
+    (
+        "1.2.0",
+        "issue-0080-public-proposal-v1",
+    ): "a89774893a9c623814f51a942c0c43056a0f6ffb8b979a43bc6bdb6e317c3f91",
+}
+PINNED_TITLE_PROFILE_BINDINGS = {
+    ("1.2.0", "issue-0070-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v3",
+        "profileSha256": "dc5f80db7c897b4ecf0df5b5fa1bce7ce7388d05fe6607f6a6cdb9e092934afc",
+    },
+    ("1.2.0", "issue-0080-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v4",
+        "profileSha256": "f177c6c9fba1702aae911c0dba024e9e24b1093016b62066a573f63e6afff2a3",
+    },
+    ("1.2.0", "issue-0082-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v5",
+        "profileSha256": "3f338cf5e748d142c3de86d9926db5f97b727de3790a92be7afb9bcc9d1d8221",
+    },
+}
+SOURCE_DERIVED_NAME_ID_PROPOSALS = {
+    "issue-0080-public-proposal-v1",
+    "issue-0082-public-proposal-v1",
 }
 SHA1 = re.compile(r"^[a-f0-9]{40}$")
 SHA256 = re.compile(r"^[a-f0-9]{64}$")
@@ -159,6 +181,13 @@ def records_sha256(records: list[dict[str, Any]]) -> str:
 def _title_decision_errors(proposal: dict[str, Any]) -> list[str]:
     errors: list[str] = []
     binding = proposal.get("entryTitleDecisions", {})
+    expected_binding = PINNED_TITLE_PROFILE_BINDINGS.get(
+        (proposal.get("schemaVersion"), proposal.get("proposalId"))
+    )
+    if expected_binding is not None and any(
+        binding.get(key) != value for key, value in expected_binding.items()
+    ):
+        return [safe_error("$.entryTitleDecisions", "title-profile-mismatch")]
     profile_id = binding.get("profileId")
     if not isinstance(profile_id, str) or not TITLE_PROFILE_ID.fullmatch(profile_id):
         return [safe_error("$.entryTitleDecisions.profileId", "title-profile-mismatch")]
@@ -490,6 +519,16 @@ def validate(
             errors.append(safe_error(f"{base}.source.artifactSha256", "source-mismatch"))
         if record.get("policy") != proposal.get("policy"):
             errors.append(safe_error(f"{base}.policy", "policy-mismatch"))
+        if proposal_id in SOURCE_DERIVED_NAME_ID_PROPOSALS:
+            for name_index, name in enumerate(record.get("names", []), start=1):
+                expected_name_id = f"{record_id}-name-{name_index:03d}"
+                if not isinstance(name, dict) or name.get("id") != expected_name_id:
+                    errors.append(
+                        safe_error(
+                            f"{base}.names[{name_index - 1}].id",
+                            "invalid-stable-name-id",
+                        )
+                    )
     baseline = proposal.get("baseline", {})
     if baseline.get("recordCount") != len(records):
         errors.append(safe_error("$.baseline.recordCount", "record-count-mismatch"))
@@ -544,7 +583,7 @@ def validate(
         policy_hash = historical_policy_hash
     else:
         policy_hash = sha256_text_file(
-            ROOT / "compliance" / "policy-binding.v5.json"
+            ROOT / "compliance" / "policy-binding.v6.json"
         )
     if proposal.get("policy", {}).get("bindingSha256") != policy_hash:
         errors.append(safe_error("$.policy.bindingSha256", "policy-mismatch"))

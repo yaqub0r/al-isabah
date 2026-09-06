@@ -32,6 +32,9 @@ ROOT = Path(__file__).resolve().parents[1]
 CURRENT_CLOSURE = (
     ROOT / "compliance" / "publication" / "issue-0070.release-closure.v1.json"
 )
+CURRENT_CLOSURE_SHA256 = (
+    "f7bd1156bb02ac66ad50cb16379e65adeb5710efef63816e1bd6be1d056a9135"
+)
 HISTORICAL_CLOSURE = (
     ROOT / "compliance" / "publication" / "issue-0053.release-closure.v1.json"
 )
@@ -46,6 +49,14 @@ COVERAGE = ROOT / "compliance" / "translation-coverage.v1.json"
 CURRENT_DISTRIBUTION_REVIEW_STATUS = (
     "approved-current-public-working-distribution-canonical-promotion-blocked"
 )
+CURRENT_CLOSURE_SOURCE_REGISTER = {
+    "path": "compliance/source-register.v1.json",
+    "sha256": "5977720da752e04e523b0ac165b6368aff58be43efc93540ddd5f89b2f0c15e5",
+}
+CURRENT_CLOSURE_TRANSLATION_COVERAGE = {
+    "path": "compliance/translation-coverage.v1.json",
+    "sha256": "4699daa94705d2bd4895e19730d320f55c71ecf5e6f4cd5c6520a7e4b71182ae",
+}
 
 
 def _json_object(path: Path, location: str) -> tuple[dict[str, Any] | None, list[str]]:
@@ -311,8 +322,11 @@ def expected() -> tuple[dict[str, Any] | None, list[str]]:
         "consumerSchemaVersion": "2.0.0",
         "proposals": proposal_entries,
         "sourceAuthorities": [authorities[key] for key in sorted(authorities)],
-        "sourceRegister": text_file_binding(REGISTER),
-        "translationCoverage": text_file_binding(COVERAGE),
+        # The closure retains its last preserved and validated metadata
+        # snapshot. Live ledgers are validated above and may add blocked
+        # cohorts without rewriting this immutable closure output.
+        "sourceRegister": CURRENT_CLOSURE_SOURCE_REGISTER,
+        "translationCoverage": CURRENT_CLOSURE_TRANSLATION_COVERAGE,
         "rights": {
             "path": "compliance/rights-matrix.al-isabah.v1.json",
             "sha256": sha256_text_file(RIGHTS),
@@ -337,6 +351,8 @@ def validate(path: Path = CURRENT_CLOSURE) -> list[str]:
     expected_closure, errors = expected()
     if errors:
         return errors
+    if not path.is_file() or sha256_file(path) != CURRENT_CLOSURE_SHA256:
+        return [safe_error("$", "current-closure-mismatch")]
     try:
         closure = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, UnicodeError, json.JSONDecodeError) as error:

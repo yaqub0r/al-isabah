@@ -3,7 +3,7 @@
 - **Status:** Active
 - **Issue:** [#45](https://github.com/yaqub0r/al-isabah/issues/45)
 - **Machine reference:**
-  [`translation-governance-reference.v4.json`](translation-governance-reference.v4.json)
+  [`translation-governance-reference.v6.json`](translation-governance-reference.v6.json)
 
 ## Authority and pinning
 
@@ -61,6 +61,25 @@ replace the active signing/enrollment prerequisite. Unsigned metadata does not
 protect against a malicious host/editor. Historical v3 signed semantics remain
 valid only under their original pins; old receipts and releases are not rewritten.
 No new quality trial or model requalification is required by this change.
+
+Reference v5.0.0 supersedes v4 by exact hash without changing those execution
+semantics. It binds the additive Issue 82 title profile v5 and policy binding
+v6. Its packet-schema document v4 changes only the exact policy-path pin;
+packet, shard, tool and stage-provenance data remain version 3.0.0, registry v2
+remains active, and Issue 80 retains reference v4, binding v5, title profile v4
+and packet-schema v3 as immutable provenance.
+
+Reference v6.0.0 supersedes v5 by exact hash without changing semantic policy,
+execution selection, packet data, or release state. It advances only the active
+discovery pins for the completed Issue 82 coverage inventory and its companion
+reference schema. Issue 82 semantic stages remain bound to policy binding v6
+and title profile v5; references v1–v5 remain immutable provenance.
+
+References v5 and v6 use new major versions because each replaces the stable
+machine-reference path and exact active artifact-identity set that a pinned
+consumer must explicitly select. Their unchanged translation, execution, and
+release semantics do not make that consumer discovery transition additive to
+the preceding reference artifact.
 
 ## Review, correction, and release semantics
 

@@ -55,7 +55,7 @@ heading or the unsplit adjudicated paragraph.
 ## Decisions and evidence
 
 Book-specific boundary decisions live in the versioned
-[`entry-title-decisions.v4.json`](../../profiles/entry-title-decisions.v4.json)
+[`entry-title-decisions.v5.json`](../../profiles/entry-title-decisions.v5.json)
 profile. Each decision records the pinned source authority and the exact title
 realization in both languages. A consumer may use that profile to build a
 working presentation, but it must not silently expand, shorten, or otherwise
@@ -100,3 +100,11 @@ use the existing ordinary boundary representation, retaining damaged source
 forms and unresolved readings without supplying missing letters. Profiles v1–v3
 remain immutable historical decision sets. These title decisions do not assert
 completion of full-biography translation or human scholarly review.
+
+Profile v5 carries forward every v4 decision unchanged and adds the 373
+source-only title/body-opening decisions for Volume 3 entries 3408–3780. Its
+new decisions use the ordinary boundary representation, retain literal damaged
+source forms, and exclude recognized OpenITI milestone controls from display
+text through the existing source-boundary grammar. They make no witness-bound
+editorial supplies. Profiles v1–v4 remain immutable historical decision sets,
+and Issue 80 continues to bind profile v4 exactly.

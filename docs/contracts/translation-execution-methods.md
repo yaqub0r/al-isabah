@@ -107,6 +107,14 @@ validate old packets using code and governance at their original immutable
 commit. Never reinterpret a historical signed receipt as unsigned new work or
 relabel an old high run as the approved baseline.
 
+Machine reference v5.0.0 and policy binding v6 succeed those discovery and
+policy artifacts for Issue 82 so the next immutable title-decision profile can
+be bound without changing Issue 80. The packet-schema document advances to v4
+only to hard-pin the v6 policy path; packet, shard, stage-provenance and tool
+data remain version 3.0.0, and registry v2 plus the approved execution method
+remain unchanged. References v1–v4, bindings v1–v5, and packet schemas v1–v3
+remain immutable historical provenance.
+
 Run the full tests, compliance validator, execution-governance validator, and
 public-tree validator. New packet validation and shard merging must exercise
 runtime admission, not merely parse the envelope. A downstream client must pin

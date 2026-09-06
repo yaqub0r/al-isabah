@@ -24,7 +24,7 @@ from public_boundary import TOKEN_SHAPES, canonical_json, sha256_text_file
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "profiles/execution-methods.v2.json"
-POLICY_PATH = ROOT / "compliance/policy-binding.v5.json"
+POLICY_PATH = ROOT / "compliance/policy-binding.v6.json"
 EVALUATION_ROOT = ROOT / "compliance/execution-evaluations"
 REGISTRY_SCHEMA = ROOT / "schemas/execution-method-registry.v1.schema.json"
 EVALUATION_SCHEMA = ROOT / "schemas/execution-evaluation.v1.schema.json"
