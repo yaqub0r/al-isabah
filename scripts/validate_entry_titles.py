@@ -12,7 +12,7 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROFILE = ROOT / "profiles" / "entry-title-decisions.v6.json"
+PROFILE = ROOT / "profiles" / "entry-title-decisions.v7.json"
 GIT_SHA = re.compile(r"^[0-9a-f]{40}$")
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
 ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -131,6 +131,33 @@ def governed_title_and_body(
     """Apply one exact title decision to already governed packet fields."""
     title = decision["title"]
     body_opening = decision["bodyOpening"]
+    if decision.get("bodyOpeningKind") == "none":
+        source_heading = clean_source_heading_boundary(
+            render_arabic(entry["source"]["headingArabic"])
+        )
+        source_text = render_arabic(entry["source"]["arabic"]).strip()
+        english_text = entry["adjudication"]["english"].strip()
+        if (
+            body_opening != {"ar": "", "en": ""}
+            or source_heading != title["ar"]
+            or source_text != title["ar"]
+            or english_text != title["en"]
+            or entry["source"].get("rawSha256") != decision.get("sourceUnitSha256")
+        ):
+            raise ValueError(
+                f"source ordinal {entry['sourceOrdinal']} is not an exact "
+                "bilingual title-only source unit"
+            )
+        return (
+            {
+                "arabic": title["ar"],
+                "english": title["en"],
+                "state": "needs_attention" if entry.get("unresolved") else "ready",
+                "method": "profile-decision",
+            },
+            "",
+            "",
+        )
     source_prefix = source_prefixes(decision)
     source_heading = clean_source_heading_boundary(
         render_arabic(entry["source"]["headingArabic"])
@@ -337,12 +364,14 @@ def body_after_decided_title(
 
 def validate(profile: dict[str, Any]) -> list[str]:
     errors: list[str] = []
+    schema_version = profile.get("schemaVersion")
     expected = {
-        "schemaVersion": "1.1.0",
         "contractId": "al-isabah-entry-title-structure",
         "workId": "ibn-hajar-al-isabah",
         "status": "active",
     }
+    if schema_version not in {"1.1.0", "1.2.0"}:
+        errors.append("profile: schemaVersion must be '1.1.0' or '1.2.0'")
     for key, value in expected.items():
         if profile.get(key) != value:
             errors.append(f"profile: {key} must be {value!r}")
@@ -384,6 +413,9 @@ def validate(profile: dict[str, Any]) -> list[str]:
             "bodyOpeningKind",
             "bodyOpening",
         }
+        title_only = decision.get("bodyOpeningKind") == "none"
+        if title_only:
+            allowed_fields.add("sourceUnitSha256")
         if "editorialSupply" in decision:
             allowed_fields.add("editorialSupply")
         if set(decision) != allowed_fields:
@@ -397,10 +429,20 @@ def validate(profile: dict[str, Any]) -> list[str]:
             seen.add(number)
         if decision.get("role") not in allowed_roles:
             errors.append(f"{location}: invalid role")
-        if decision.get("bodyOpeningKind") not in {"lineage", "prose"}:
+        if decision.get("bodyOpeningKind") not in {"lineage", "prose", "none"}:
             errors.append(f"{location}: invalid bodyOpeningKind")
         errors.extend(_bilingual(decision.get("title"), f"{location}.title"))
-        errors.extend(_bilingual(decision.get("bodyOpening"), f"{location}.bodyOpening"))
+        if title_only:
+            if schema_version != "1.2.0":
+                errors.append(f"{location}: title-only mode requires profile schema 1.2.0")
+            if decision.get("bodyOpening") != {"ar": "", "en": ""}:
+                errors.append(f"{location}.bodyOpening: title-only opening must be exactly empty in both languages")
+            if not SHA256.fullmatch(str(decision.get("sourceUnitSha256", ""))):
+                errors.append(f"{location}.sourceUnitSha256: must be a SHA-256")
+            if "editorialSupply" in decision:
+                errors.append(f"{location}: title-only mode cannot use editorialSupply")
+        else:
+            errors.extend(_bilingual(decision.get("bodyOpening"), f"{location}.bodyOpening"))
         title = decision.get("title")
         if isinstance(title, dict) and RELATIONSHIP_PROSE.search(str(title.get("en", ""))):
             errors.append(f"{location}.title.en: relationship or narration prose belongs in the body")

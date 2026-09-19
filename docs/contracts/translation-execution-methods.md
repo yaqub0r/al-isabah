@@ -128,3 +128,11 @@ hard-pins the v7 binding; packet, shard, tool and stage-provenance data
 remain version 3.0.0. Registry v2 and the approved execution method
 remain unchanged. Reference v6, binding v6, title profile v5, packet
 schema v4, prior executions and releases retain their immutable pins.
+
+Machine reference v8.0.0 and policy binding v8 succeed v7 for Issue 86's
+additive Volume 4 title profile and exact title-only source-unit
+representation. Packet-schema document v6 hard-pins the v8 binding; packet,
+shard, tool and stage-provenance data remain version 3.0.0. Registry v2 and the
+approved execution method remain unchanged. Reference v7, binding v7, title
+profile v6, packet schema v5, prior executions and releases retain their
+immutable pins.

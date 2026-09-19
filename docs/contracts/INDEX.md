@@ -31,7 +31,7 @@ coverage is an independent, ongoing management state.
 
 ## Local supporting controls
 
-- [`translation-governance-reference.v7.json`](translation-governance-reference.v7.json)
+- [`translation-governance-reference.v8.json`](translation-governance-reference.v8.json)
   is the versioned, integrity-bound discovery document for downstream
   consumers. The companion [compatibility guide](downstream-consumer-compatibility.md)
   defines pinning, release semantics, and the Sabiqah deprecation inventory.
@@ -51,9 +51,9 @@ coverage is an independent, ongoing management state.
   promotion state.
 - [`canonical-publication-repository.md`](../architecture/canonical-publication-repository.md)
   defines the repository boundary and release responsibilities.
-- [`compliance/policy-binding.v7.json`](../../compliance/policy-binding.v7.json)
+- [`compliance/policy-binding.v8.json`](../../compliance/policy-binding.v8.json)
   integrity-pins the local contracts, translation profile, and pinned-source
-  profile used by new translation work. Versions 1 through 6 remain immutable
+  profile used by new translation work. Versions 1 through 7 remain immutable
   provenance for releases created under their policy sets.
 
 - [`translation-execution-methods`](translation-execution-methods.md) governs exact

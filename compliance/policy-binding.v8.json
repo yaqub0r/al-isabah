@@ -1,0 +1,88 @@
+{
+  "schema": "al-isabah.local-policy-binding.v8",
+  "authority": {
+    "repository": "https://github.com/yaqub0r/al-isabah",
+    "scope": "repository-local",
+    "issue": "https://github.com/yaqub0r/al-isabah/issues/86"
+  },
+  "contracts": [
+    {
+      "id": "translation-quality-workflow",
+      "path": "docs/contracts/translation-quality-workflow.md",
+      "sha256": "cb78512085a81ee2e2439cc44e0672a6b0d5cf41fa7dc545147f727049fa7254"
+    },
+    {
+      "id": "al-isabah-translation-profile",
+      "path": "docs/translation-profiles/al-isabah.md",
+      "sha256": "e9f166b79fbee21c228d6f67656bbebd1bbdf639927f6b10cabb8a6adff20460"
+    },
+    {
+      "id": "entry-title-structure",
+      "path": "docs/contracts/entry-title-structure.md",
+      "sha256": "7e2a5a622ba33d672bfcce38840e6a81a963ff226041c0fbd823d7ab8dc776e8"
+    },
+    {
+      "id": "entry-title-decisions",
+      "path": "profiles/entry-title-decisions.v7.json",
+      "sha256": "c47956b9afaa0f871b4caecbe7d5de11049e0b2919e33af2155fa1d03dbef75c"
+    },
+    {
+      "id": "entry-title-decision-schema",
+      "path": "schemas/entry-title-decisions.v2.schema.json",
+      "sha256": "7ead69920a597fbf573533f07030d9ae2761588c59474e8b4ab0bc70084a4337"
+    },
+    {
+      "id": "honorific-formula-registry",
+      "path": "profiles/honorific-formulas.v1.json",
+      "sha256": "b23fcd528b840b0e5bbe8932fca6eeaaa576ee51263d9838d4f8d18e40c9e100"
+    },
+    {
+      "id": "translation-source-profile",
+      "path": "profiles/translation-source.v1.json",
+      "sha256": "c3db1e037a9f98ed7c6ada57d076084e5451c5651ed972ea68867ed5ad580ead"
+    },
+    {
+      "id": "execution-method-contract",
+      "path": "docs/contracts/translation-execution-methods.md",
+      "sha256": "bb17b3153e63712fc0cf5dfba52222fa9f8c308fd095abb064f1de8e62f6999b"
+    },
+    {
+      "id": "execution-method-registry",
+      "path": "profiles/execution-methods.v2.json",
+      "sha256": "9c0b1ef2cc208edb9885b81b16ff5ec10b3ea978b2742e9cb3c68b15ceeab809"
+    },
+    {
+      "id": "execution-method-registry-schema",
+      "path": "schemas/execution-method-registry.v2.schema.json",
+      "sha256": "2e60b173601daf248a8a233e68f47640976af680eeb0ce70d3d8910a7b2159a8"
+    },
+    {
+      "id": "execution-evaluation-schema",
+      "path": "schemas/execution-evaluation.v1.schema.json",
+      "sha256": "c4d6f82ab172d0d43eac63aea91893af5dda91927b9183355a58d72c0ed2d2e5"
+    },
+    {
+      "id": "runtime-host-evidence-schema",
+      "path": "schemas/runtime-host-evidence.v1.schema.json",
+      "sha256": "e77ba3dd9e8eaea5d770683bbdfc80fb215f8c7dfc9a4d3736f09019cad4c9eb"
+    },
+    {
+      "id": "translation-work-packet-schema",
+      "path": "schemas/translation-work-packet.v6.schema.json",
+      "sha256": "043c5c901000c6353d235f5892d826badb96a23555f11bb300b74b540f3ab0d4"
+    },
+    {
+      "id": "translation-agent-workflow",
+      "path": "docs/translation/agent-workflow.md",
+      "sha256": "cdfe5ed69fa1aa35120dcc96a6fd702261aa5dd2575cdc465a89679ceeca5c69"
+    },
+    {
+      "id": "local-policy-binding-schema",
+      "path": "compliance/schemas/policy-binding.v8.schema.json",
+      "sha256": "7a8fc8e2e2addc7e55d29c2ab50a7cbbb7cee6dab4c14c3eaccb0840d978db0d"
+    }
+  ],
+  "supersedes": "compliance/policy-binding.v7.json",
+  "applied_by_issue": "https://github.com/yaqub0r/al-isabah/issues/86",
+  "note": "Issue 86 adds source-only title/body-opening decisions for Volume 4 entries 4526–6158 through additive profile v7, introduces a hash-bound title-only representation and public proposal schema v2, and uses packet-schema document v6 solely to hard-pin this v8 binding. Packet, shard, tool and stage-provenance data remain version 3.0.0; execution registry v2 and sol-xhigh-explicit-host-v1 remain unchanged. Earlier bindings, title profiles, schemas, proposals, releases and evidence retain their original immutable pins."
+}

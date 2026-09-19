@@ -32,7 +32,7 @@ from validate_entry_titles import (  # noqa: E402
 
 
 INLINE_SECTION = re.compile(r"\s*#~:section:\d*\s*(\([^\n]+\))\s*")
-ENTRY_TITLE_PROFILE = ROOT / "profiles" / "entry-title-decisions.v6.json"
+ENTRY_TITLE_PROFILE = ROOT / "profiles" / "entry-title-decisions.v7.json"
 ENTRY_TITLE_PROFILE_NAME = re.compile(r"^entry-title-decisions\.v[0-9]+\.json$")
 
 
@@ -215,7 +215,7 @@ def public_record(
     title, arabic, english = title_and_body(entry, decision)
     if needs_attention:
         title["state"] = "needs_attention"
-    return {
+    record = {
         "schemaVersion": "2.0.0",
         "id": entry["sourceUnitId"],
         "kind": "entry",
@@ -253,6 +253,9 @@ def public_record(
         },
         "policy": {"bindingSha256": packet["policy"]["bindingSha256"]},
     }
+    if decision["bodyOpeningKind"] == "none":
+        record["bodyState"] = "title-only"
+    return record
 
 
 def packet_set_hash(values: list[dict[str, Any]], key: str) -> str:
@@ -370,6 +373,10 @@ def project(
 
     if records != sorted(records, key=lambda item: (item["sourceOrdinal"], item["id"])):
         raise ValueError("public records are not in stable source order")
+    has_title_only = any(record.get("bodyState") == "title-only" for record in records)
+    if has_title_only:
+        for record in records:
+            record["schemaVersion"] = "2.1.0"
     rights = json.loads(
         (ROOT / "compliance" / "rights-matrix.al-isabah.v1.json").read_text(
             encoding="utf-8"
@@ -377,12 +384,12 @@ def project(
     )
     record_projection = sha256_bytes(b"".join(canonical_json(item) for item in records))
     proposal = {
-        "schemaVersion": "1.2.0",
+        "schemaVersion": "1.3.0" if has_title_only else "1.2.0",
         "proposalId": proposal_id,
         "workId": first["workId"],
         "publicationStatus": "public-working",
         "canonicalPromotion": "blocked",
-        "consumerSchemaVersion": "2.0.0",
+        "consumerSchemaVersion": "2.1.0" if has_title_only else "2.0.0",
         "sourceAuthority": {
             "sourceId": NORMALIZED_SOURCE_ID,
             "commit": authority["commit"],

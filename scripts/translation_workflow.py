@@ -33,8 +33,8 @@ from execution_governance import validate_execution
 
 ROOT = SCRIPT_DIR.parent
 DEFAULT_MANIFEST = ROOT / "profiles" / "translation-source.v1.json"
-DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v7.json"
-DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v5.schema.json"
+DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v8.json"
+DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v6.schema.json"
 FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 RUNTIME_ROOT = ROOT / ".runtime" / "translation"
 PROPOSAL_ROOT = ROOT / "content" / "translation-proposals"
@@ -78,6 +78,7 @@ EXPECTED_POLICY_IDS = {
     "al-isabah-translation-profile",
     "entry-title-structure",
     "entry-title-decisions",
+    "entry-title-decision-schema",
     "honorific-formula-registry",
     "translation-source-profile",
     "execution-method-contract",
@@ -2520,7 +2521,7 @@ def load_issue(number: int, path: Path | None = None) -> dict[str, Any]:
 
 def policy_snapshot(policy_path: Path) -> dict[str, Any]:
     policy = load_json(policy_path)
-    if policy.get("schema") != "al-isabah.local-policy-binding.v7":
+    if policy.get("schema") != "al-isabah.local-policy-binding.v8":
         raise WorkflowError("policy binding has an unexpected schema")
     authority = policy.get("authority", {})
     if authority.get("repository") != "https://github.com/yaqub0r/al-isabah":
@@ -2544,7 +2545,7 @@ def policy_snapshot(policy_path: Path) -> dict[str, Any]:
         if canonical_text_sha256(path) != contract.get("sha256"):
             raise WorkflowError(f"policy binding hash is stale: {contract.get('id')}")
     return {
-        "bindingPath": "compliance/policy-binding.v7.json",
+        "bindingPath": "compliance/policy-binding.v8.json",
         "bindingSha256": canonical_text_sha256(policy_path),
         "contracts": contracts,
     }
@@ -4760,6 +4761,7 @@ def render_review(packet: dict[str, Any]) -> str:
             }
             arabic_body = present_openiti_arabic(entry["source"]["arabic"].strip())
             english_body = entry["adjudication"]["english"].strip()
+        title_only = governed_titles_required and decision["bodyOpeningKind"] == "none"
         lines.extend(
             [
                 f"## Source unit {entry['sourceOrdinal']} · "
@@ -4775,6 +4777,12 @@ def render_review(packet: dict[str, Any]) -> str:
                 "",
                 f"**{title['english']}**",
                 "",
+            ]
+        )
+        if title_only:
+            lines.extend(["*The pinned source unit contains only this title.*", ""])
+        else:
+            lines.extend([
                 "### English body candidate",
                 "",
                 english_body,
@@ -4787,6 +4795,9 @@ def render_review(packet: dict[str, Any]) -> str:
                 "",
                 "</div>",
                 "",
+            ])
+        lines.extend(
+            [
                 "### Evidence state",
                 "",
                 f"- Source SHA-256: `{entry['source']['rawSha256']}`",

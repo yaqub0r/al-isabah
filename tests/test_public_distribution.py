@@ -657,7 +657,7 @@ class PublicDistributionTests(unittest.TestCase):
         )
         proposal = {
             "entryTitleDecisions": {
-                "profileId": "entry-title-decisions.v6",
+                "profileId": "entry-title-decisions.v7",
                 "profileSha256": BOUNDARY.sha256_file(PACKET_PROJECT.ENTRY_TITLE_PROFILE),
                 "coveredRecordCount": 1,
             },

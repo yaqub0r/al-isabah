@@ -143,9 +143,19 @@ class ComplianceTests(unittest.TestCase):
             contracts["entry-title-decisions"],
             {
                 "id": "entry-title-decisions",
-                "path": "profiles/entry-title-decisions.v6.json",
+                "path": "profiles/entry-title-decisions.v7.json",
                 "sha256": MODULE.canonical_text_sha256(
-                    ROOT / "profiles" / "entry-title-decisions.v6.json"
+                    ROOT / "profiles" / "entry-title-decisions.v7.json"
+                ),
+            },
+        )
+        self.assertEqual(
+            contracts["entry-title-decision-schema"],
+            {
+                "id": "entry-title-decision-schema",
+                "path": "schemas/entry-title-decisions.v2.schema.json",
+                "sha256": MODULE.canonical_text_sha256(
+                    ROOT / "schemas" / "entry-title-decisions.v2.schema.json"
                 ),
             },
         )

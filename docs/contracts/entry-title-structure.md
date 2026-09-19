@@ -55,7 +55,7 @@ heading or the unsplit adjudicated paragraph.
 ## Decisions and evidence
 
 Book-specific boundary decisions live in the versioned
-[`entry-title-decisions.v6.json`](../../profiles/entry-title-decisions.v6.json)
+[`entry-title-decisions.v7.json`](../../profiles/entry-title-decisions.v7.json)
 profile. Each decision records the pinned source authority and the exact title
 realization in both languages. A consumer may use that profile to build a
 working presentation, but it must not silently expand, shorten, or otherwise
@@ -72,6 +72,14 @@ rewrites the canonical Arabic or treats the supplied title as source text.
 Changing a decision requires reviewable evidence and a new profile version.
 Canonical Arabic bytes, source hashes, and earlier decisions remain in history.
 
+When a pinned source unit consists only of its identifying bilingual title,
+the decision uses `bodyOpeningKind: "none"`, exact empty Arabic and English
+body openings, and the pinned source-unit SHA-256. This mode is valid only when
+the whole readable Arabic unit and cleaned heading equal the decided Arabic
+title and the complete adjudicated English equals the decided English title.
+Public projection marks the entry as title-only and emits no body paragraphs;
+an empty-prefix check alone never proves this state.
+
 ## Validation
 
 Validation fails closed when:
@@ -83,6 +91,9 @@ Validation fails closed when:
 - a supplied head, pinned prefix, witness passage, evidence hash, or cumulative
   witness binding is missing or has drifted;
 - explanatory relationships or narration appear in the title; or
+- a title-only decision has extra source or English text, a nonempty or
+  one-sided body, a missing or mismatched unit hash, or an ordinary entry is
+  marked title-only; or
 - a consumer varies title semantics or presentation based on body length.
 
 Entry 11426 is the positive reference for the title/body hierarchy. The initial
@@ -117,3 +128,13 @@ altering source bytes. No witness-bound editorial supplies are made.
 Profiles v1–v5 remain immutable historical decision sets; Issue 82 keeps
 its exact v5 binding. These decisions do not assert full-biography
 translation or human scholarly review.
+
+Profile v7 carries forward every v6 decision unchanged and adds the 1,633
+source-only title/body-opening decisions for Volume 4 entries 4526–6158.
+Entry 5041 is the exact title-only source unit `عبد الله الأنصاري`; its decision
+uses the title-only representation and binds the complete source-unit hash.
+The remaining new decisions use the ordinary boundary representation and
+retain damaged or unresolved source readings without silent repair. Profiles
+v1–v6 remain immutable historical decision sets, and Issue 84 keeps its exact
+v6 binding. These decisions do not assert full-biography translation or human
+scholarly review.

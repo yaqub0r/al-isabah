@@ -349,7 +349,7 @@ absolute workstation paths, and writes immutable evidence only to an explicit,
 repository-reviewed destination outside this public checkout. It refuses every
 destination inside the repository and refuses to overwrite existing evidence.
 Do not run `submit` until the project has approved the exact destination. A
-separate reviewed process derives a strict `public-proposal.v1` artifact for a
+separate reviewed process derives a strict `public-proposal.v2` artifact for a
 public pull request. Never commit the raw packet, detailed review, `.runtime`,
 downloaded sources, private witnesses, or model traces.
 

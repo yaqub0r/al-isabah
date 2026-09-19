@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate public-proposal.v1 and its repository bindings."""
+"""Validate public-proposal.v1/v2 artifacts and their repository bindings."""
 
 from __future__ import annotations
 
@@ -20,6 +20,7 @@ from public_boundary import (
     sha256_text_file,
     summarize,
 )
+from schema_validation import validate_schema_instance
 import validate_entry_titles as title_contract
 
 
@@ -61,11 +62,20 @@ PINNED_TITLE_PROFILE_BINDINGS = {
         "profileId": "entry-title-decisions.v5",
         "profileSha256": "3f338cf5e748d142c3de86d9926db5f97b727de3790a92be7afb9bcc9d1d8221",
     },
+    ("1.2.0", "issue-0084-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v6",
+        "profileSha256": "09014c9e78befd5dcd490e1452b91b0ec099982253ec13297e98fc74de41a6e6",
+    },
+    ("1.3.0", "issue-0086-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v7",
+        "profileSha256": "c55beda28acc0d0eef520470ab6e12ee20ae0c3f3ec3de6a91f19949a063aacb",
+    },
 }
 SOURCE_DERIVED_NAME_ID_PROPOSALS = {
     "issue-0080-public-proposal-v1",
     "issue-0082-public-proposal-v1",
     "issue-0084-public-proposal-v1",
+    "issue-0086-public-proposal-v1",
 }
 ARABIC_SCRIPT_RE = re.compile(
     r"[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff]"
@@ -139,19 +149,19 @@ def nested_key_errors(proposal: dict[str, Any]) -> list[str]:
         LEGACY_TOP_KEYS
         if legacy
         else CURRENT_TOP_KEYS
-        if schema_version == "1.2.0"
+        if schema_version in {"1.2.0", "1.3.0"}
         else PACKET_SET_TOP_KEYS
     )
     errors = exact_keys(proposal, top_keys, "$")
     top_objects = ["sourceAuthority", "rights", "policy", "review", "baseline"]
     top_objects.append("historicalEvidence" if legacy else "evidenceBinding")
-    if schema_version == "1.2.0":
+    if schema_version in {"1.2.0", "1.3.0"}:
         top_objects.extend(["entryTitleDecisions", "sliceContext"])
     for key in top_objects:
         errors.extend(exact_keys(proposal.get(key), KEYS[key], f"$.{key}"))
     authority = proposal.get("sourceAuthority", {})
     errors.extend(exact_keys(authority.get("license"), KEYS["license"], "$.sourceAuthority.license"))
-    if schema_version == "1.2.0":
+    if schema_version in {"1.2.0", "1.3.0"}:
         for index, context in enumerate(proposal.get("sliceContext", {}).get("contexts", [])):
             errors.extend(
                 exact_keys(
@@ -162,7 +172,10 @@ def nested_key_errors(proposal: dict[str, Any]) -> list[str]:
             )
     for index, record in enumerate(proposal.get("records", [])):
         base = f"$.records[{index}]"
-        errors.extend(exact_keys(record, RECORD_KEYS, base))
+        record_keys = RECORD_KEYS
+        if schema_version == "1.3.0" and "bodyState" in record:
+            record_keys = RECORD_KEYS | {"bodyState"}
+        errors.extend(exact_keys(record, record_keys, base))
         errors.extend(exact_keys(record.get("title"), KEYS["title"], f"{base}.title"))
         errors.extend(exact_keys(record.get("source"), KEYS["source"], f"{base}.source"))
         errors.extend(exact_keys(record.get("policy"), KEYS["policy"], f"{base}.policy"))
@@ -204,6 +217,8 @@ def _title_decision_errors(proposal: dict[str, Any]) -> list[str]:
     expected_binding = PINNED_TITLE_PROFILE_BINDINGS.get(
         (proposal.get("schemaVersion"), proposal.get("proposalId"))
     )
+    if proposal.get("schemaVersion") == "1.3.0" and expected_binding is None:
+        return [safe_error("$.entryTitleDecisions", "title-profile-mismatch")]
     if expected_binding is not None and any(
         binding.get(key) != value for key, value in expected_binding.items()
     ):
@@ -260,14 +275,26 @@ def _title_decision_errors(proposal: dict[str, Any]) -> list[str]:
             or title.get("method") != "profile-decision"
         ):
             errors.append(safe_error(f"{base}.title", "title-decision-mismatch"))
-        if not str(record.get("arabic", "")).startswith(
-            decision["bodyOpening"]["ar"]
-        ) or not str(record.get("english", "")).startswith(
-            decision["bodyOpening"]["en"]
-        ):
-            errors.append(
-                safe_error(base, "title-body-opening-mismatch")
+        if decision["bodyOpeningKind"] == "none":
+            if (
+                proposal.get("schemaVersion") != "1.3.0"
+                or record.get("bodyState") != "title-only"
+                or record.get("arabic") != ""
+                or record.get("english") != ""
+                or record.get("source", {}).get("exactTextSha256")
+                != decision["sourceUnitSha256"]
+            ):
+                errors.append(safe_error(base, "title-only-body-mismatch"))
+        elif (
+            "bodyState" in record
+            or not str(record.get("arabic", "")).startswith(
+                decision["bodyOpening"]["ar"]
             )
+            or not str(record.get("english", "")).startswith(
+                decision["bodyOpening"]["en"]
+            )
+        ):
+            errors.append(safe_error(base, "title-body-opening-mismatch"))
     return errors
 
 
@@ -403,7 +430,7 @@ def _slice_context_errors(proposal: dict[str, Any]) -> list[str]:
 
 
 def current_readiness_errors(proposal: dict[str, Any]) -> list[str]:
-    if proposal.get("schemaVersion") != "1.2.0":
+    if proposal.get("schemaVersion") not in {"1.2.0", "1.3.0"}:
         return [safe_error("$.schemaVersion", "historical-proposal-not-current")]
     return _title_decision_errors(proposal) + _slice_context_errors(proposal)
 
@@ -715,6 +742,14 @@ def validate(
         return errors
     if not isinstance(proposal, dict):
         return [safe_error("$", "expected-object")]
+    if proposal.get("schemaVersion") == "1.3.0":
+        schema = json.loads(
+            (ROOT / "schemas" / "public-proposal.v2.schema.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        if validate_schema_instance(proposal, schema):
+            errors.append(safe_error("$", "schema-mismatch"))
     errors.extend(nested_key_errors(proposal))
     errors.extend(boundary_errors(proposal))
     schema_version = proposal.get("schemaVersion")
@@ -722,12 +757,12 @@ def validate(
         "workId": "ibn-hajar-al-isabah",
         "publicationStatus": "public-working",
         "canonicalPromotion": "blocked",
-        "consumerSchemaVersion": "2.0.0",
+        "consumerSchemaVersion": "2.1.0" if schema_version == "1.3.0" else "2.0.0",
     }
     for key, value in expected.items():
         if proposal.get(key) != value:
             errors.append(safe_error(f"$.{key}", "contract-mismatch"))
-    if schema_version not in {"1.0.0", "1.1.0", "1.2.0"}:
+    if schema_version not in {"1.0.0", "1.1.0", "1.2.0", "1.3.0"}:
         errors.append(safe_error("$.schemaVersion", "contract-mismatch"))
     proposal_id = proposal.get("proposalId")
     if not isinstance(proposal_id, str) or not PROPOSAL_ID.fullmatch(proposal_id):
@@ -743,7 +778,7 @@ def validate(
     seen: set[str] = set()
     previous: tuple[int, str] | None = None
     enforce_public_english = (
-        schema_version == "1.2.0"
+        schema_version in {"1.2.0", "1.3.0"}
         and (schema_version, str(proposal_id)) not in HISTORICAL_POLICY_BINDINGS
     )
     active_title_decisions: dict[int, dict[str, Any]] = {}
@@ -776,7 +811,8 @@ def validate(
             if previous is not None and current <= previous:
                 errors.append(safe_error(base, "unstable-order"))
             previous = current
-        if record.get("schemaVersion") != "2.0.0" or record.get("kind") != "entry":
+        record_version = "2.1.0" if schema_version == "1.3.0" else "2.0.0"
+        if record.get("schemaVersion") != record_version or record.get("kind") != "entry":
             errors.append(safe_error(base, "consumer-contract-mismatch"))
         errors.extend(
             record_semantic_errors(
@@ -792,7 +828,11 @@ def validate(
                 ),
             )
         )
-        if not str(record.get("arabic", "")).strip() or not str(record.get("english", "")).strip():
+        title_only = schema_version == "1.3.0" and record.get("bodyState") == "title-only"
+        if title_only:
+            if record.get("arabic") != "" or record.get("english") != "":
+                errors.append(safe_error(base, "title-only-body-mismatch"))
+        elif not str(record.get("arabic", "")).strip() or not str(record.get("english", "")).strip():
             errors.append(safe_error(base, "incomplete-bilingual-content"))
         if record.get("source", {}).get("authorityId") != "openiti-cleaned-arabic-comparison":
             errors.append(safe_error(f"{base}.source.authorityId", "source-mismatch"))
@@ -862,6 +902,13 @@ def validate(
         )
     elif historical_policy_hash is not None:
         policy_hash = historical_policy_hash
+    elif schema_version == "1.3.0":
+        successor_policy = ROOT / "compliance" / "policy-binding.v8.json"
+        policy_hash = (
+            sha256_text_file(successor_policy)
+            if successor_policy.is_file()
+            else None
+        )
     else:
         policy_hash = sha256_text_file(
             ROOT / "compliance" / "policy-binding.v7.json"
@@ -897,7 +944,7 @@ def validate(
             errors.append(safe_error("$.evidenceBinding", "evidence-binding-mismatch"))
         if evidence.get("recordProjectionSha256") != records_sha256(records):
             errors.append(safe_error("$.evidenceBinding.recordProjectionSha256", "projection-mismatch"))
-    if schema_version == "1.2.0" or require_current:
+    if schema_version in {"1.2.0", "1.3.0"} or require_current:
         errors.extend(current_readiness_errors(proposal))
     return errors
 

@@ -1,5 +1,7 @@
 import copy
+import hashlib
 import importlib.util
+import json
 import unittest
 from pathlib import Path
 
@@ -11,6 +13,12 @@ SPEC = importlib.util.spec_from_file_location(
 MODULE = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None
 SPEC.loader.exec_module(MODULE)
+SCHEMA_SPEC = importlib.util.spec_from_file_location(
+    "schema_validation", ROOT / "scripts" / "schema_validation.py"
+)
+SCHEMA_MODULE = importlib.util.module_from_spec(SCHEMA_SPEC)
+assert SCHEMA_SPEC.loader is not None
+SCHEMA_SPEC.loader.exec_module(SCHEMA_MODULE)
 
 
 class EntryTitleContractTests(unittest.TestCase):
@@ -27,11 +35,11 @@ class EntryTitleContractTests(unittest.TestCase):
             11445, 11446, 11449, 11451, 11454, 11458, 11459, 11473,
             11474, 11476,
         }
-        self.assertEqual(numbers, historical | set(range(1538, 4526)))
-        self.assertEqual(len(self.profile["decisions"]), 3006)
+        self.assertEqual(numbers, historical | set(range(1538, 6159)))
+        self.assertEqual(len(self.profile["decisions"]), 4639)
 
     def test_successor_preserves_all_previous_decisions(self) -> None:
-        previous = MODULE.load(ROOT / "profiles" / "entry-title-decisions.v5.json")
+        previous = MODULE.load(ROOT / "profiles" / "entry-title-decisions.v6.json")
         previous_numbers = {item["sourceEntryNumber"] for item in previous["decisions"]}
         preserved = [
             item for item in self.profile["decisions"]
@@ -43,9 +51,24 @@ class EntryTitleContractTests(unittest.TestCase):
         ]
         self.assertEqual(preserved, previous["decisions"])
         self.assertEqual(
-            [item["sourceEntryNumber"] for item in added], list(range(3781, 4526))
+            [item["sourceEntryNumber"] for item in added], list(range(4526, 6159))
         )
         self.assertTrue(all("editorialSupply" not in item for item in added))
+
+    def test_volume4_title_only_decision_is_exact_and_schema_valid(self) -> None:
+        title_only = MODULE.decision_for_entry(self.profile, 5041)
+        self.assertEqual(
+            title_only["title"],
+            {"ar": "عبد الله الأنصاري", "en": "ʿAbd Allāh al-Anṣārī"},
+        )
+        self.assertEqual(title_only["bodyOpeningKind"], "none")
+        self.assertEqual(title_only["bodyOpening"], {"ar": "", "en": ""})
+        schema = json.loads(
+            (ROOT / "schemas" / "entry-title-decisions.v2.schema.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual(SCHEMA_MODULE.validate_schema_instance(self.profile, schema), [])
 
     def test_literal_zay_prefixes_remain_visible_without_an_assigned_role(self) -> None:
         for number in (3908, 4021, 4076, 4162, 4247):
@@ -288,7 +311,7 @@ class EntryTitleContractTests(unittest.TestCase):
 
     def test_entry_outside_governed_ranges_is_rejected(self) -> None:
         with self.assertRaisesRegex(ValueError, "lacks a governed bilingual"):
-            MODULE.decision_for_entry(self.profile, 4526)
+            MODULE.decision_for_entry(self.profile, 6159)
 
 
 if __name__ == "__main__":

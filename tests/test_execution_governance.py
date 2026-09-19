@@ -301,9 +301,11 @@ class ExecutionArtifactTests(unittest.TestCase):
             "compliance/policy-binding.v3.json": "cfdd5d5baab74a21930e549cc4418574decc07e20e84bf6438e0b9527e360a0b",
             "compliance/policy-binding.v5.json": "a89774893a9c623814f51a942c0c43056a0f6ffb8b979a43bc6bdb6e317c3f91",
             "compliance/policy-binding.v6.json": "faf1078753c33c278098e71d0392a2af1e955320f090660da24ba64bc1831692",
+            "compliance/policy-binding.v7.json": "f75113f0fe08869efa947c19b9a12a38e5a8c9ece972bbf5d8ebecea6ce48810",
             "docs/contracts/translation-governance-reference.v2.json": "7d73170d384f417733134e5ca09263ba73c92e941c5590d534d9eb38ec6704ae",
             "docs/contracts/translation-governance-reference.v4.json": "fa4f4e35fab2182d31cb9441e9cf84d2c01a8bc1c6467abca8c09ae9525c82a4",
             "docs/contracts/translation-governance-reference.v6.json": "804e9d2bec2c442be69a023e5dccf93cfc7a07b0e9bccba696721185d8b48e0d",
+            "docs/contracts/translation-governance-reference.v7.json": "1a55f12c9ba729876440a944bed47b1f2d28bbb1d11b443bab646f6ca4ed5fe8",
             "profiles/entry-title-decisions.v4.json": "f177c6c9fba1702aae911c0dba024e9e24b1093016b62066a573f63e6afff2a3",
             "profiles/entry-title-decisions.v5.json": "3f338cf5e748d142c3de86d9926db5f97b727de3790a92be7afb9bcc9d1d8221",
             "schemas/translation-work-packet.v3.schema.json": "80a1a0d1de2d8c21e62974b47c2ab13a2cc41e67970d0754c5d2baedbd99a0eb",
@@ -315,12 +317,12 @@ class ExecutionArtifactTests(unittest.TestCase):
         self.assertEqual(old["properties"]["schemaVersion"]["const"], "1.5.0")
         self.assertNotIn("execution", old["$defs"]["stageProvenance"]["properties"])
         active = GOVERNANCE.read_json(
-            GOVERNANCE.ROOT / "schemas/translation-work-packet.v5.schema.json"
+            GOVERNANCE.ROOT / "schemas/translation-work-packet.v6.schema.json"
         )
         self.assertEqual(active["properties"]["schemaVersion"]["const"], "3.0.0")
         self.assertEqual(
             active["$defs"]["policy"]["properties"]["bindingPath"]["const"],
-            "compliance/policy-binding.v7.json",
+            "compliance/policy-binding.v8.json",
         )
 
 
