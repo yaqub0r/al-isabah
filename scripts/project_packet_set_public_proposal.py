@@ -32,7 +32,7 @@ from validate_entry_titles import (  # noqa: E402
 
 
 INLINE_SECTION = re.compile(r"\s*#~:section:\d*\s*(\([^\n]+\))\s*")
-ENTRY_TITLE_PROFILE = ROOT / "profiles" / "entry-title-decisions.v5.json"
+ENTRY_TITLE_PROFILE = ROOT / "profiles" / "entry-title-decisions.v6.json"
 ENTRY_TITLE_PROFILE_NAME = re.compile(r"^entry-title-decisions\.v[0-9]+\.json$")
 
 
@@ -353,7 +353,12 @@ def project(
                 public_record(
                     packet,
                     entry,
-                    by_record[entry["sourceUnitId"]],
+                    [
+                        occurrence
+                        for segment in entry["source"]["precedingSegments"]
+                        for occurrence in by_record[segment["segmentId"]]
+                    ]
+                    + by_record[entry["sourceUnitId"]],
                     decision,
                     inherited_contexts=(
                         inherited_contexts

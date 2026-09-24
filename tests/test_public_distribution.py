@@ -46,6 +46,8 @@ VOLUME2_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0053.public
 ISSUE_0070_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0070.public-proposal.json"
 ISSUE_0070_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0070.public-review.json"
 ISSUE_0080_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0080.public-proposal.json"
+ISSUE_0082_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0082.public-proposal.json"
+ISSUE_0084_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0084.public-proposal.json"
 ISSUE_0070_RUNTIME_PACKET = (
     ROOT / ".runtime" / "translation" / "packets" / "issue-0070-lineage.json"
 )
@@ -63,6 +65,12 @@ class PublicDistributionTests(unittest.TestCase):
         )
         cls.issue_0080_proposal = json.loads(
             ISSUE_0080_PROPOSAL_PATH.read_text(encoding="utf-8")
+        )
+        cls.issue_0082_proposal = json.loads(
+            ISSUE_0082_PROPOSAL_PATH.read_text(encoding="utf-8")
+        )
+        cls.issue_0084_proposal = json.loads(
+            ISSUE_0084_PROPOSAL_PATH.read_text(encoding="utf-8")
         )
 
     def test_current_tree_and_exact_closure_are_valid(self):
@@ -168,6 +176,204 @@ class PublicDistributionTests(unittest.TestCase):
             errors = PROPOSAL_VALIDATOR.validate(path)
         self.assertTrue(
             any("category=title-profile-mismatch" in error for error in errors)
+        )
+
+    def test_issue_82_historical_policy_binding_remains_exact_and_fail_closed(self):
+        proposal = copy.deepcopy(self.issue_0082_proposal)
+        self.assertEqual(PROPOSAL_VALIDATOR.validate(ISSUE_0082_PROPOSAL_PATH), [])
+        self.assertEqual(
+            proposal["policy"]["bindingSha256"],
+            PROPOSAL_VALIDATOR.HISTORICAL_POLICY_BINDINGS[
+                ("1.2.0", "issue-0082-public-proposal-v1")
+            ],
+        )
+        proposal["policy"]["bindingSha256"] = (
+            PROPOSAL_VALIDATOR.sha256_text_file(
+                ROOT / "compliance" / "policy-binding.v7.json"
+            )
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "issue-0082.public-proposal.json"
+            path.write_bytes(BOUNDARY.canonical_json(proposal))
+            errors = PROPOSAL_VALIDATOR.validate(path)
+        self.assertTrue(any("category=policy-mismatch" in error for error in errors))
+
+    def test_current_public_record_rejects_process_residue_and_undeclared_arabic(self):
+        record = copy.deepcopy(self.issue_0082_proposal["records"][0])
+        for residue in (
+            "Variant English rendering: internal alternative.",
+            "Variant English rendering - internal alternative.",
+            "This follows the pinned wording.",
+            "ACO reads differently.",
+        ):
+            record["english"] = residue
+            errors = PROPOSAL_VALIDATOR.record_semantic_errors(
+                record, "$.records[0]", enforce_public_english=True
+            )
+            self.assertTrue(
+                any("category=internal-process-language" in error for error in errors),
+                residue,
+            )
+
+        record["english"] = "He said: اللهم اغفر لي."
+        errors = PROPOSAL_VALIDATOR.record_semantic_errors(
+            record, "$.records[0]", enforce_public_english=True
+        )
+        self.assertTrue(
+            any("category=undeclared-arabic-in-english" in error for error in errors)
+        )
+
+        record["formulas"] = []
+        governed = "بنو تميم"
+        self.assertEqual(
+            PROPOSAL_VALIDATOR.governed_arabic_literals(
+                f"The source heading reads {governed}."
+            ),
+            [governed],
+        )
+        record["english"] = f"The source heading reads {governed}."
+        errors = PROPOSAL_VALIDATOR.record_semantic_errors(
+            record,
+            "$.records[0]",
+            enforce_public_english=True,
+            allowed_arabic_literals=[governed],
+        )
+        self.assertFalse(
+            any("category=undeclared-arabic-in-english" in error for error in errors)
+        )
+        record["english"] += " تميم"
+        errors = PROPOSAL_VALIDATOR.record_semantic_errors(
+            record,
+            "$.records[0]",
+            enforce_public_english=True,
+            allowed_arabic_literals=[governed],
+        )
+        self.assertTrue(
+            any("category=undeclared-arabic-in-english" in error for error in errors)
+        )
+
+        structural_record = copy.deepcopy(
+            next(
+                item
+                for item in self.issue_0084_proposal["records"]
+                if item["precedingMaterial"]
+            )
+        )
+        structural_record["precedingMaterial"][0]["heading"]["english"] = (
+            "Injected الله"
+        )
+        errors = PROPOSAL_VALIDATOR.record_semantic_errors(
+            structural_record,
+            "$.records[0]",
+            enforce_public_english=True,
+        )
+        self.assertTrue(
+            any(
+                "precedingMaterial[0].heading.english" in error
+                and "category=undeclared-arabic-in-english" in error
+                for error in errors
+            )
+        )
+
+        invented_formula_record = copy.deepcopy(
+            self.issue_0084_proposal["records"][0]
+        )
+        invented_formula_record["english"] += " اللهم"
+        invented_formula_record["formulas"] = [
+            {
+                "formulaId": "invented",
+                "recordId": invented_formula_record["id"],
+                "observedArabic": "not-in-source",
+                "semanticClass": "invented",
+                "targetRealization": "اللهم",
+            }
+        ]
+        errors = PROPOSAL_VALIDATOR.record_semantic_errors(
+            invented_formula_record,
+            "$.records[0]",
+            enforce_public_english=True,
+        )
+        self.assertTrue(
+            any("category=formula-inventory-mismatch" in error for error in errors)
+        )
+
+        context_formula_record = copy.deepcopy(
+            self.issue_0084_proposal["records"][0]
+        )
+        context = context_formula_record["precedingMaterial"][-1]
+        context["arabic"] = "صلى الله عليه وسلم"
+        context["english"] = "صلى الله عليه وسلم"
+        context_formula_record["formulas"] = [
+            {
+                "formulaId": f"{context['id']}-arabic-formula-001",
+                "recordId": context["id"],
+                "observedArabic": "صلى الله عليه وسلم",
+                "semanticClass": "prophetic_blessing",
+                "targetRealization": "صلى الله عليه وسلم",
+            }
+        ]
+        errors = PROPOSAL_VALIDATOR.record_semantic_errors(
+            context_formula_record,
+            "$.records[0]",
+            enforce_public_english=True,
+        )
+        self.assertFalse(
+            any("category=formula-inventory-mismatch" in error for error in errors)
+        )
+        self.assertFalse(
+            any("category=undeclared-arabic-in-english" in error for error in errors)
+        )
+        formula_text = "The Prophet صلى الله عليه وسلم spoke."
+        self.assertEqual(
+            PROPOSAL_VALIDATOR.governed_arabic_literals(formula_text), []
+        )
+
+        record["formulas"] = []
+        record["english"] = "The source reads يأيت here."
+        errors = PROPOSAL_VALIDATOR.record_semantic_errors(
+            record,
+            "$.records[0]",
+            enforce_public_english=True,
+            allowed_arabic_literals=["يأيت"],
+        )
+        self.assertFalse(
+            any("category=undeclared-arabic-in-english" in error for error in errors)
+        )
+
+        record["arabic"] = "قال صلى الله عليه وسلم"
+        record["formulas"] = [
+            {
+                "formulaId": f"{record['id']}-arabic-formula-001",
+                "recordId": record["id"],
+                "observedArabic": "صلى الله عليه وسلم",
+                "semanticClass": "prophetic_blessing",
+                "targetRealization": "صلى الله عليه وسلم",
+            }
+        ]
+        record["english"] = "The Prophet صلى الله عليه وسلم spoke."
+        errors = PROPOSAL_VALIDATOR.record_semantic_errors(
+            record, "$.records[0]", enforce_public_english=True
+        )
+        self.assertFalse(
+            any("category=undeclared-arabic-in-english" in error for error in errors)
+        )
+
+        record["english"] = "The Prophet spoke."
+        errors = PROPOSAL_VALIDATOR.record_semantic_errors(
+            record, "$.records[0]", enforce_public_english=True
+        )
+        self.assertTrue(
+            any("category=missing-declared-formula-target" in error for error in errors)
+        )
+
+        record["english"] = (
+            "The Prophet صلى الله عليه وسلم صلى الله عليه وسلم spoke."
+        )
+        errors = PROPOSAL_VALIDATOR.record_semantic_errors(
+            record, "$.records[0]", enforce_public_english=True
+        )
+        self.assertTrue(
+            any("category=undeclared-arabic-in-english" in error for error in errors)
         )
 
     def test_issue_70_corrected_proposal_is_strict_public_safe_and_current(self):
@@ -451,7 +657,7 @@ class PublicDistributionTests(unittest.TestCase):
         )
         proposal = {
             "entryTitleDecisions": {
-                "profileId": "entry-title-decisions.v5",
+                "profileId": "entry-title-decisions.v6",
                 "profileSha256": BOUNDARY.sha256_file(PACKET_PROJECT.ENTRY_TITLE_PROFILE),
                 "coveredRecordCount": 1,
             },

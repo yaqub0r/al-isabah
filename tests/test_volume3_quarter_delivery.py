@@ -27,6 +27,9 @@ class VolumeThreeQuarterDeliveryTests(unittest.TestCase):
         cls.second_proposal = compliance.load_json(
             compliance.SECOND_QUARTER_PROPOSAL_PATH
         )
+        cls.final_half_proposal = compliance.load_json(
+            compliance.FINAL_HALF_PROPOSAL_PATH
+        )
 
     def scope(self, coverage, scope_id=compliance.QUARTER_SCOPE_ID):
         return next(s for s in coverage["scopes"] if s["scope_id"] == scope_id)
@@ -37,28 +40,37 @@ class VolumeThreeQuarterDeliveryTests(unittest.TestCase):
         second_quarter = self.scope(
             self.coverage, compliance.SECOND_QUARTER_SCOPE_ID
         )
+        final_half = self.scope(self.coverage, compliance.FINAL_HALF_SCOPE_ID)
         volume = self.scope(self.coverage, "volume-03")
-        for cohort in (quarter, second_quarter):
+        for cohort, count in (
+            (quarter, 373),
+            (second_quarter, 373),
+            (final_half, 745),
+        ):
             self.assertEqual(cohort["scope_kind"], "cohort")
             self.assertEqual(cohort["agent_completion"]["status"], "agent_complete")
-            self.assertEqual(cohort["agent_completion"]["locked_units"], 373)
+            self.assertEqual(cohort["agent_completion"]["locked_units"], count)
             self.assertEqual(cohort["agent_completion"]["remaining_agent_units"], 0)
-        self.assertEqual(volume["agent_completion"]["status"], "in_progress")
+        self.assertEqual(volume["agent_completion"]["status"], "agent_complete")
         self.assertEqual(volume["agent_completion"]["locked_units"], 1491)
-        self.assertEqual(volume["agent_completion"]["translated_units"], 746)
-        self.assertEqual(volume["agent_completion"]["remaining_agent_units"], 745)
-        self.assertNotIn("evidence", volume["agent_completion"])
+        self.assertEqual(volume["agent_completion"]["translated_units"], 1491)
+        self.assertEqual(volume["agent_completion"]["remaining_agent_units"], 0)
+        self.assertEqual(
+            volume["agent_completion"]["evidence"],
+            final_half["agent_completion"]["evidence"],
+        )
         for scope, count in (
             (quarter, 373),
             (second_quarter, 373),
+            (final_half, 745),
             (volume, 1491),
         ):
             self.assertEqual(scope["human_review"], {
                 "management_state": "ongoing", "reviewed_units": 0, "unreviewed_units": count})
             self.assertEqual(scope["public_working_status"], "blocked")
             self.assertEqual(scope["canonical_promotion"], "blocked")
-        # Coverage semantics retain their historical v2 envelope; Issue 80
-        # retains its exact v5 execution binding after v6 becomes active.
+        # Coverage semantics retain their historical v2 envelope; Issues 80
+        # and 82 retain their exact v5/v6 bindings after v7 becomes active.
         self.assertEqual(self.coverage["policy_binding"], "compliance/policy-binding.v2.json")
         self.assertEqual(self.proposal["policy"]["bindingSha256"],
                          "a89774893a9c623814f51a942c0c43056a0f6ffb8b979a43bc6bdb6e317c3f91")
@@ -68,6 +80,14 @@ class VolumeThreeQuarterDeliveryTests(unittest.TestCase):
         )
         self.assertEqual(
             self.second_proposal["policy"]["bindingSha256"],
+            compliance.canonical_text_sha256(compliance.FROZEN_POLICY_V6_PATH),
+        )
+        self.assertNotEqual(
+            self.second_proposal["policy"]["bindingSha256"],
+            compliance.canonical_text_sha256(compliance.POLICY_PATH),
+        )
+        self.assertEqual(
+            self.final_half_proposal["policy"]["bindingSha256"],
             compliance.canonical_text_sha256(compliance.POLICY_PATH),
         )
 
@@ -82,8 +102,9 @@ class VolumeThreeQuarterDeliveryTests(unittest.TestCase):
         self.assertTrue(compliance.validate_translation_coverage(coverage, self.artifacts))
         coverage = copy.deepcopy(self.coverage)
         completion = self.scope(coverage, "volume-03")["agent_completion"]
-        completion.update(status="agent_complete", translated_units=1491, remaining_agent_units=0,
-                          evidence=copy.deepcopy(self.scope(coverage)["agent_completion"]["evidence"]))
+        completion.update(status="in_progress", translated_units=746,
+                          remaining_agent_units=745)
+        completion.pop("evidence")
         self.assertTrue(compliance.validate_translation_coverage(coverage, self.artifacts))
 
     def test_exact_proposal_range_identity_and_hash_are_bound(self):
@@ -182,6 +203,46 @@ class VolumeThreeQuarterDeliveryTests(unittest.TestCase):
             any("category=invalid-stable-name-id" in error for error in errors)
         )
 
+    def test_final_half_exact_range_identity_hash_and_name_ids_are_bound(self):
+        config = compliance.QUARTER_COMPLETIONS[compliance.FINAL_HALF_SCOPE_ID]
+        self.assertEqual(
+            compliance.validate_quarter_completion(
+                self.scope(self.coverage, compliance.FINAL_HALF_SCOPE_ID),
+                self.artifacts,
+                config,
+            ),
+            [],
+        )
+        records = self.final_half_proposal["records"]
+        self.assertEqual(
+            [record["sourceOrdinal"] for record in records],
+            list(range(3781, 4526)),
+        )
+        for record in records:
+            self.assertEqual(
+                [name["id"] for name in record["names"]],
+                [
+                    f"{record['id']}-name-{index:03d}"
+                    for index in range(1, len(record["names"]) + 1)
+                ],
+            )
+        for field, value in (
+            ("source_ordinal_start", 3782),
+            ("source_ordinal_end", 4524),
+            ("owned_structural_segments", 134),
+            ("structural_owners", 106),
+        ):
+            with self.subTest(field=field):
+                artifacts = copy.deepcopy(self.artifacts)
+                artifacts["issue-0084-public-proposal-v1"]["integrity"][field] = value
+                self.assertTrue(
+                    compliance.validate_quarter_completion(
+                        self.scope(self.coverage, compliance.FINAL_HALF_SCOPE_ID),
+                        artifacts,
+                        config,
+                    )
+                )
+
     def test_no_submission_or_distribution_admission_is_claimed(self):
         artifact = self.artifacts["issue-0080-public-proposal-v1"]
         self.assertEqual(artifact["review_status"], compliance.QUARTER_PENDING_STATUS)
@@ -194,9 +255,11 @@ class VolumeThreeQuarterDeliveryTests(unittest.TestCase):
         self.assertEqual(current["closureId"], "issue-0070-current-public-working-closure-v1")
         self.assertNotIn("issue-0080-public-proposal-v1", [p["proposalId"] for p in current["proposals"]])
         self.assertNotIn("issue-0082-public-proposal-v1", [p["proposalId"] for p in current["proposals"]])
+        self.assertNotIn("issue-0084-public-proposal-v1", [p["proposalId"] for p in current["proposals"]])
         self.assertFalse(any("volume-03" in item["path"] for item in current["outputInventory"]))
         self.assertFalse((ROOT / "compliance/publication/issue-0080.release-closure.v1.json").exists())
         self.assertFalse((ROOT / "compliance/publication/issue-0082.release-closure.v1.json").exists())
+        self.assertFalse((ROOT / "compliance/publication/issue-0084.release-closure.v1.json").exists())
         artifacts = copy.deepcopy(self.artifacts)
         artifacts["issue-0080-public-proposal-v1"]["review_status"] = closure.CURRENT_DISTRIBUTION_REVIEW_STATUS
         self.assertTrue(compliance.validate_translation_coverage(self.coverage, artifacts))
@@ -290,6 +353,31 @@ class VolumeThreeQuarterDeliveryTests(unittest.TestCase):
         self.assertEqual(
             hashlib.sha256(second_review_path.read_bytes()).hexdigest(),
             self.artifacts["issue-0082-public-proposal-v1"]["integrity"][
+                "public_review_sha256"
+            ],
+        )
+
+        final_records = self.final_half_proposal["records"]
+        final_owned = [
+            [
+                context
+                for context in record["precedingMaterial"]
+                if context["kind"] != "continued_structural_heading"
+            ]
+            for record in final_records
+        ]
+        self.assertEqual(sum(map(len, final_owned)), 135)
+        self.assertEqual(sum(bool(contexts) for contexts in final_owned), 107)
+        final_review_path = compliance.FINAL_HALF_PROPOSAL_PATH.with_name(
+            "issue-0084.public-review.json"
+        )
+        self.assertEqual(
+            final_review_path.read_bytes(),
+            canonical_json(review(compliance.FINAL_HALF_PROPOSAL_PATH)),
+        )
+        self.assertEqual(
+            hashlib.sha256(final_review_path.read_bytes()).hexdigest(),
+            self.artifacts["issue-0084-public-proposal-v1"]["integrity"][
                 "public_review_sha256"
             ],
         )

@@ -27,11 +27,11 @@ class EntryTitleContractTests(unittest.TestCase):
             11445, 11446, 11449, 11451, 11454, 11458, 11459, 11473,
             11474, 11476,
         }
-        self.assertEqual(numbers, historical | set(range(1538, 3781)))
-        self.assertEqual(len(self.profile["decisions"]), 2261)
+        self.assertEqual(numbers, historical | set(range(1538, 4526)))
+        self.assertEqual(len(self.profile["decisions"]), 3006)
 
     def test_successor_preserves_all_previous_decisions(self) -> None:
-        previous = MODULE.load(ROOT / "profiles" / "entry-title-decisions.v4.json")
+        previous = MODULE.load(ROOT / "profiles" / "entry-title-decisions.v5.json")
         previous_numbers = {item["sourceEntryNumber"] for item in previous["decisions"]}
         preserved = [
             item for item in self.profile["decisions"]
@@ -43,9 +43,31 @@ class EntryTitleContractTests(unittest.TestCase):
         ]
         self.assertEqual(preserved, previous["decisions"])
         self.assertEqual(
-            [item["sourceEntryNumber"] for item in added], list(range(3408, 3781))
+            [item["sourceEntryNumber"] for item in added], list(range(3781, 4526))
         )
         self.assertTrue(all("editorialSupply" not in item for item in added))
+
+    def test_literal_zay_prefixes_remain_visible_without_an_assigned_role(self) -> None:
+        for number in (3908, 4021, 4076, 4162, 4247):
+            with self.subTest(number=number):
+                decision = MODULE.decision_for_entry(self.profile, number)
+                self.assertTrue(decision["title"]["ar"].startswith("ز "))
+                self.assertTrue(decision["title"]["en"].startswith("“ز” "))
+                self.assertNotIn("editorialSupply", decision)
+
+    def test_new_body_openings_preserve_attested_formula_in_arabic(self) -> None:
+        formula = "صلى الله عليه وسلم"
+        covered = 0
+        for decision in self.profile["decisions"]:
+            if not 3781 <= decision["sourceEntryNumber"] <= 4525:
+                continue
+            for field in ("title", "bodyOpening"):
+                arabic = decision[field]["ar"]
+                english = decision[field]["en"]
+                self.assertEqual(english.count(formula), arabic.count(formula))
+                self.assertNotIn("ﷺ", english)
+                covered += arabic.count(formula)
+        self.assertEqual(covered, 19)
 
     def test_literal_damaged_heads_keep_body_and_attention_state(self) -> None:
         cases = {
@@ -266,7 +288,7 @@ class EntryTitleContractTests(unittest.TestCase):
 
     def test_entry_outside_governed_ranges_is_rejected(self) -> None:
         with self.assertRaisesRegex(ValueError, "lacks a governed bilingual"):
-            MODULE.decision_for_entry(self.profile, 3781)
+            MODULE.decision_for_entry(self.profile, 4526)
 
 
 if __name__ == "__main__":

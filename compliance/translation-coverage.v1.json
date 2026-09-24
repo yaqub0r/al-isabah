@@ -1,7 +1,7 @@
 {
   "schema": "al-isabah.translation-coverage.v1",
   "schema_version": "1.1.0",
-  "status_id": "translation-coverage-2026-09-05",
+  "status_id": "translation-coverage-2026-09-24",
   "work_id": "ibn-hajar-al-isabah",
   "policy_binding": "compliance/policy-binding.v2.json",
   "semantics": {
@@ -153,16 +153,45 @@
       "canonical_promotion": "blocked"
     },
     {
+      "scope_id": "issue-0084-volume-03-final-half",
+      "scope_kind": "cohort",
+      "label": "Issue 84 — Volume 3 final half (3781–4525)",
+      "volume": 3,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 745,
+        "translated_units": 745,
+        "remaining_agent_units": 0,
+        "basis": "Machine-ready final-half proposal and bilingual review; external evidence submission and current distribution admission remain pending. This cohort overlaps the Volume 3 view and is not additive to it.",
+        "evidence": {
+          "source_register_artifact": "issue-0084-public-proposal-v1",
+          "sha256": "74efb72d5fd82f8600d8c77fd7ac720956f35c34eb85b20f6eeccee81783566b"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 745
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
       "scope_id": "volume-03",
       "scope_kind": "volume",
       "label": "Volume 3",
       "volume": 3,
       "agent_completion": {
-        "status": "in_progress",
+        "status": "agent_complete",
         "locked_units": 1491,
-        "translated_units": 746,
-        "remaining_agent_units": 745,
-        "basis": "Source ordinals 3035–3407 are complete in Issue 80 and 3408–3780 are complete in Issue 82. The remaining 3781–4525 are outside those assignments. This volume view includes both quarter cohorts; the cohort and volume counts must not be added."
+        "translated_units": 1491,
+        "remaining_agent_units": 0,
+        "basis": "Source ordinals 3035–3407 are complete in Issue 80, 3408–3780 are complete in Issue 82, and 3781–4525 are complete in Issue 84. The volume view includes all three overlapping cohorts; cohort and volume counts must not be added. External evidence submission and current distribution admission remain pending.",
+        "evidence": {
+          "source_register_artifact": "issue-0084-public-proposal-v1",
+          "sha256": "74efb72d5fd82f8600d8c77fd7ac720956f35c34eb85b20f6eeccee81783566b"
+        }
       },
       "human_review": {
         "management_state": "ongoing",

@@ -121,3 +121,10 @@ runtime admission, not merely parse the envelope. A downstream client must pin
 the new machine reference at an immutable commit and verify all listed hashes
 before executing new production work. Release creation remains separately
 authorized; this contract changes no publication trigger or setting.
+
+Machine reference v7.0.0 and policy binding v7 succeed v6 for Issue 84's
+additive Volume 3 title-decision profile. Packet-schema document v5
+hard-pins the v7 binding; packet, shard, tool and stage-provenance data
+remain version 3.0.0. Registry v2 and the approved execution method
+remain unchanged. Reference v6, binding v6, title profile v5, packet
+schema v4, prior executions and releases retain their immutable pins.

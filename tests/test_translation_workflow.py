@@ -1673,13 +1673,112 @@ class TranslationWorkflowTests(unittest.TestCase):
         )
 
     def test_public_english_rejects_internal_source_lock_language(self):
-        for phrase in ("pinned OpenITI", "pinned wording", "pinned text", "pinned unit"):
+        for phrase in (
+            "pinned OpenITI", "pinned wording", "pinned text", "pinned unit",
+            "the pinned Arabic", "ACO reads differently",
+            "Variant English rendering: Abu Nu'aym",
+            "Variant English renderings: two alternatives",
+            "Variant English rendering - internal alternative",
+        ):
             self.assertTrue(MODULE.validate_public_english(phrase, "candidate"))
+        for phrase in ("Jacob witnessed Badr", "Anas gave a report"):
+            self.assertEqual(MODULE.validate_public_english(phrase, "candidate"), [])
         self.assertEqual(
             MODULE.registered_occurrences("صلى آله عليه وسلم", "source")[0][
                 "rule"
             ]["target"],
             "ﷺ",
+        )
+
+    def test_public_english_allows_only_declared_arabic_formula_targets(self):
+        formula = {
+            "targetRealization": "صلى الله عليه وسلم",
+        }
+        self.assertEqual(
+            MODULE.validate_public_english(
+                "The Prophet صلى الله عليه وسلم spoke.",
+                "candidate",
+                [formula],
+            ),
+            [],
+        )
+        self.assertTrue(
+            MODULE.validate_public_english(
+                "He said: اللهم اغفر لي.",
+                "candidate",
+                [formula],
+            )
+        )
+        self.assertTrue(
+            MODULE.validate_public_english(
+                "The Prophet spoke.",
+                "candidate",
+                [formula],
+            )
+        )
+        self.assertTrue(
+            MODULE.validate_public_english(
+                "The Prophet صلى الله عليه وسلم صلى الله عليه وسلم spoke.",
+                "candidate",
+                [formula],
+            )
+        )
+        self.assertEqual(
+            MODULE.validate_public_english(
+                "The source reads يأيت here.",
+                "candidate",
+                [],
+                ["يأيت"],
+            ),
+            [],
+        )
+        self.assertTrue(
+            MODULE.validate_public_english(
+                "The source reads يأيت and repeats يأيت.",
+                "candidate",
+                [],
+                ["يأيت"],
+            )
+        )
+        governed = "بنو تميم"
+        self.assertEqual(
+            MODULE.governed_arabic_literals(
+                f"The source heading reads {governed}."
+            ),
+            [governed],
+        )
+        self.assertEqual(
+            MODULE.validate_public_english(
+                f"The source heading reads {governed}.",
+                "candidate",
+                [],
+                [governed],
+            ),
+            [],
+        )
+        self.assertTrue(
+            MODULE.validate_public_english(
+                f"The source heading reads {governed}. تميم",
+                "candidate",
+                [],
+                [governed],
+            )
+        )
+        self.assertTrue(
+            MODULE.validate_public_english(
+                "Injected الله", "structural heading", []
+            )
+        )
+        formula_text = "The Prophet صلى الله عليه وسلم spoke."
+        self.assertEqual(MODULE.governed_arabic_literals(formula_text), [])
+        self.assertEqual(MODULE.governed_arabic_literals("“ز” Sharik"), ["ز"])
+        self.assertTrue(
+            MODULE.validate_public_english(
+                formula_text + " صلى الله عليه وسلم",
+                "candidate",
+                [formula],
+                MODULE.governed_arabic_literals(formula_text),
+            )
         )
 
     def test_submit_is_immutable_and_copies_only_validated_artifacts(self):

@@ -55,7 +55,7 @@ heading or the unsplit adjudicated paragraph.
 ## Decisions and evidence
 
 Book-specific boundary decisions live in the versioned
-[`entry-title-decisions.v5.json`](../../profiles/entry-title-decisions.v5.json)
+[`entry-title-decisions.v6.json`](../../profiles/entry-title-decisions.v6.json)
 profile. Each decision records the pinned source authority and the exact title
 realization in both languages. A consumer may use that profile to build a
 working presentation, but it must not silently expand, shorten, or otherwise
@@ -108,3 +108,12 @@ source forms, and exclude recognized OpenITI milestone controls from display
 text through the existing source-boundary grammar. They make no witness-bound
 editorial supplies. Profiles v1–v4 remain immutable historical decision sets,
 and Issue 80 continues to bind profile v4 exactly.
+
+Profile v6 carries forward every v5 decision unchanged and adds the 745
+source-only title/body-opening decisions for Volume 3 entries 3781–4525.
+Five headings begin with an isolated literal `ز`. Their decisions retain
+that prefix visibly in both title languages without assigning its role or
+altering source bytes. No witness-bound editorial supplies are made.
+Profiles v1–v5 remain immutable historical decision sets; Issue 82 keeps
+its exact v5 binding. These decisions do not assert full-biography
+translation or human scholarly review.

@@ -33,8 +33,8 @@ from execution_governance import validate_execution
 
 ROOT = SCRIPT_DIR.parent
 DEFAULT_MANIFEST = ROOT / "profiles" / "translation-source.v1.json"
-DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v6.json"
-DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v4.schema.json"
+DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v7.json"
+DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v5.schema.json"
 FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 RUNTIME_ROOT = ROOT / ".runtime" / "translation"
 PROPOSAL_ROOT = ROOT / "content" / "translation-proposals"
@@ -98,11 +98,16 @@ SEMANTIC_STAGE_NAMES = (
 )
 OPENITI_POETRY_MARKER_RE = re.compile(r"(?<!\S)%(?!\S)")
 JSON_PATH_TOKEN_RE = re.compile(r"([A-Za-z][A-Za-z0-9_]*)|\[(\d+)\]")
-PUBLIC_PROCESS_TERMS = (
-    "pinned OpenITI",
-    "pinned wording",
-    "pinned text",
-    "pinned unit",
+PUBLIC_PROCESS_RE = re.compile(
+    r"\b(?:pinned|OpenITI|ACO|Variant English renderings?)\b",
+    re.IGNORECASE,
+)
+ARABIC_SCRIPT_RE = re.compile(
+    r"[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff]"
+)
+ARABIC_LITERAL_RE = re.compile(
+    r"[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff]+"
+    r"(?:[ \t]+[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff]+)*"
 )
 UNRESOLVED_SEVERITIES = {"minor", "material", "blocking", "source_reported"}
 WITNESS_ROLES = {
@@ -1813,16 +1818,67 @@ def validate_uncertainty_witness_alignment(
     return []
 
 
-def validate_public_english(value: str | None, prefix: str) -> list[str]:
+def validate_public_english(
+    value: str | None,
+    prefix: str,
+    formula_occurrences: list[dict[str, Any]] | None = None,
+    allowed_arabic_literals: list[str] | None = None,
+) -> list[str]:
     if not value:
         return []
     errors: list[str] = []
     if OPENITI_POETRY_MARKER_RE.search(value):
         errors.append(f"{prefix}: raw OpenITI poetry marker leaked into English")
-    for term in PUBLIC_PROCESS_TERMS:
-        if term.lower() in value.lower():
-            errors.append(f"{prefix}: internal process language leaked into English")
+    if PUBLIC_PROCESS_RE.search(value):
+        errors.append(f"{prefix}: internal process language leaked into English")
+    if formula_occurrences is not None:
+        residual = value
+        targets = [
+            occurrence.get("targetRealization")
+            for occurrence in formula_occurrences
+            if isinstance(occurrence, dict)
+            and isinstance(occurrence.get("targetRealization"), str)
+            and occurrence["targetRealization"]
+        ]
+        for target in sorted(targets, key=len, reverse=True):
+            location = residual.find(target)
+            if location < 0:
+                errors.append(
+                    f"{prefix}: declared formula target is missing from English"
+                )
+                continue
+            residual = residual[:location] + residual[location + len(target):]
+        for literal in sorted(allowed_arabic_literals or [], key=len, reverse=True):
+            location = residual.find(literal)
+            if location >= 0:
+                residual = residual[:location] + residual[location + len(literal):]
+        if ARABIC_SCRIPT_RE.search(residual):
+            errors.append(
+                f"{prefix}: Arabic outside declared formula targets leaked into English"
+            )
     return errors
+
+
+def governed_arabic_literals(value: str | None) -> list[str]:
+    """Return exact Arabic spans, preserving spaces inside a governed literal."""
+    formula_literals = {
+        str(formula_value)
+        for rule in FORMULA_RULES
+        for formula_value in (rule["source"], rule["target"], rule["expandedArabic"])
+    }
+    def is_formula_literal(literal: str) -> bool:
+        pattern = re.compile(
+            r"(?<![\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff])"
+            + re.escape(literal)
+            + r"(?![\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff])"
+        )
+        return any(pattern.search(formula_literal) for formula_literal in formula_literals)
+
+    return [
+        literal
+        for literal in ARABIC_LITERAL_RE.findall(value or "")
+        if not is_formula_literal(literal)
+    ]
 
 
 def present_openiti_arabic(value: str) -> str:
@@ -2464,7 +2520,7 @@ def load_issue(number: int, path: Path | None = None) -> dict[str, Any]:
 
 def policy_snapshot(policy_path: Path) -> dict[str, Any]:
     policy = load_json(policy_path)
-    if policy.get("schema") != "al-isabah.local-policy-binding.v6":
+    if policy.get("schema") != "al-isabah.local-policy-binding.v7":
         raise WorkflowError("policy binding has an unexpected schema")
     authority = policy.get("authority", {})
     if authority.get("repository") != "https://github.com/yaqub0r/al-isabah":
@@ -2488,7 +2544,7 @@ def policy_snapshot(policy_path: Path) -> dict[str, Any]:
         if canonical_text_sha256(path) != contract.get("sha256"):
             raise WorkflowError(f"policy binding hash is stale: {contract.get('id')}")
     return {
-        "bindingPath": "compliance/policy-binding.v6.json",
+        "bindingPath": "compliance/policy-binding.v7.json",
         "bindingSha256": canonical_text_sha256(policy_path),
         "contracts": contracts,
     }
@@ -3697,16 +3753,24 @@ def validate_preceding_translation(
     if not isinstance(adjudication.get("decisions"), list):
         errors.append(f"{prefix}: adjudication decisions must be an array")
     errors.extend(
-        validate_public_english(blind.get("headingEnglish"), f"{prefix}, blind heading")
+        validate_public_english(
+            blind.get("headingEnglish"), f"{prefix}, blind heading", []
+        )
     )
     errors.extend(validate_public_english(blind.get("english"), f"{prefix}, blind"))
     errors.extend(
         validate_public_english(
-            adjudication.get("headingEnglish"), f"{prefix}, adjudicated heading"
+            adjudication.get("headingEnglish"),
+            f"{prefix}, adjudicated heading",
+            [],
         )
     )
     errors.extend(
-        validate_public_english(adjudication.get("english"), f"{prefix}, adjudicated")
+        validate_public_english(
+            adjudication.get("english"),
+            f"{prefix}, adjudicated",
+            formula_occurrences,
+        )
     )
 
     errors.extend(
@@ -4402,19 +4466,37 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
         )
 
         adjudication = entry.get("adjudication", {})
+        decision = (
+            title_decisions.get(entry.get("sourceEntryNumber"))
+            if manifest.get("status") != "test-fixture"
+            else None
+        )
         if adjudication.get("status") != "complete" or not adjudication.get("english"):
             errors.append(f"{prefix}: adjudication is incomplete")
         if not isinstance(adjudication.get("decisions"), list):
             errors.append(f"{prefix}: adjudication decisions must be an array")
+        record_formula_occurrences = formula_occurrences_by_record.get(
+            str(entry.get("sourceUnitId")), []
+        )
         errors.extend(validate_public_english(blind.get("english"), f"{prefix}, blind"))
         errors.extend(
             validate_public_english(
-                adjudication.get("english"), f"{prefix}, adjudicated"
+                adjudication.get("english"),
+                f"{prefix}, adjudicated",
+                record_formula_occurrences,
+                [
+                    literal
+                    for field in ("title", "bodyOpening")
+                    for literal in governed_arabic_literals(
+                        str(decision.get(field, {}).get("en", ""))
+                    )
+                ]
+                if decision is not None
+                else [],
             )
         )
 
         if manifest.get("status") != "test-fixture":
-            decision = title_decisions.get(entry.get("sourceEntryNumber"))
             if decision is None:
                 errors.append(
                     f"{prefix}: active profile lacks a governed title decision"
