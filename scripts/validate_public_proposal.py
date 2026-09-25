@@ -68,7 +68,7 @@ PINNED_TITLE_PROFILE_BINDINGS = {
     },
     ("1.3.0", "issue-0086-public-proposal-v1"): {
         "profileId": "entry-title-decisions.v7",
-        "profileSha256": "c55beda28acc0d0eef520470ab6e12ee20ae0c3f3ec3de6a91f19949a063aacb",
+        "profileSha256": "c47956b9afaa0f871b4caecbe7d5de11049e0b2919e33af2155fa1d03dbef75c",
     },
 }
 SOURCE_DERIVED_NAME_ID_PROPOSALS = {
