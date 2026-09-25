@@ -96,6 +96,13 @@ to referent, masculine or feminine agreement, singular, dual or plural number,
 or inclusion of the Prophet's family fail machine readiness. Formula wording
 that is quoted or analyzed remains substantive and is not compacted.
 
+Raw spelling alone does not establish formulaic use. Treat the basmala as a
+formula when it stands as a structural invocation; translate it as substantive
+language when a source quotes or analyzes its wording. Treat standalone
+`تعالى` as formulaic only in a divine-referent construction such as
+`قوله تعالى`, `قال تعالى`, `الله تعالى`, or `لله تعالى`; ordinary verbal use
+remains substantive text.
+
 ## Stable units
 
 Canonical publication uses permanent entry identifiers such as

@@ -47,10 +47,14 @@ def assignment_issue(number=25, start=1, end=2):
 def complete_autonomous_stages(packet):
     policy_sha256 = packet["policy"]["bindingSha256"]
 
-    def translated(label, source_text):
+    def translated(label, source_text, *, include_contextual=False):
         targets = [
             occurrence["rule"]["target"]
-            for occurrence in MODULE.registered_occurrences(source_text or "", "source")
+            for occurrence in MODULE.registered_occurrences(
+                source_text or "",
+                "source",
+                include_contextual=include_contextual,
+            )
         ]
         return " ".join([label, *targets]).strip()
 
@@ -243,10 +247,14 @@ def complete_autonomous_stages(packet):
                     "runId": f"blind-structure-{number}-{index}",
                     "model": "gpt-5.6-sol",
                     "reasoning": "xhigh",
-                    "headingEnglish": translated("Translated heading", heading)
+                    "headingEnglish": translated(
+                        "Translated heading", heading, include_contextual=True
+                    )
                     if heading
                     else None,
-                    "english": translated("Translated source prose.", prose)
+                    "english": translated(
+                        "Translated source prose.", prose, include_contextual=True
+                    )
                     if prose
                     else None,
                 }
@@ -271,10 +279,14 @@ def complete_autonomous_stages(packet):
             }
             translation["adjudication"] = {
                 "status": "complete",
-                "headingEnglish": translated("Translated heading", heading)
+                "headingEnglish": translated(
+                    "Translated heading", heading, include_contextual=True
+                )
                 if heading
                 else None,
-                "english": translated("Adjudicated source prose.", prose)
+                "english": translated(
+                    "Adjudicated source prose.", prose, include_contextual=True
+                )
                 if prose
                 else None,
                 "decisions": [],
@@ -370,7 +382,9 @@ class TranslationWorkflowTests(unittest.TestCase):
     def setUp(self):
         # These structural/regression tests isolate runtime authentication.
         # test_execution_governance exercises actual signatures and packet admission.
-        patcher = mock.patch.object(MODULE, "validate_execution", return_value=[])
+        patcher = mock.patch.object(
+            MODULE, "validate_stage_execution", return_value=[]
+        )
         patcher.start()
         self.addCleanup(patcher.stop)
 
@@ -833,7 +847,9 @@ class TranslationWorkflowTests(unittest.TestCase):
             self.assertEqual(
                 merged["entries"][0]["precedingTranslations"][0]["adjudication"]
                 ["english"],
-                "Adjudicated source prose.",
+                completed["entries"][0]["precedingTranslations"][0][
+                    "adjudication"
+                ]["english"],
             )
 
             original = packet_path.read_bytes()
@@ -842,6 +858,99 @@ class TranslationWorkflowTests(unittest.TestCase):
             with self.assertRaisesRegex(MODULE.WorkflowError, "exactly"):
                 MODULE.merge_preceding_shard(packet_path, shard_path)
             self.assertEqual(packet_path.read_bytes(), original)
+
+    def test_structural_heading_preserves_source_attested_formula(self):
+        completed = self.packet()
+        source = completed["entries"][0]["source"]["precedingSegments"][0]
+        source["headingArabic"] = (
+            f"{source['headingArabic']} صلى الله عليه وسلم"
+        )
+        complete_autonomous_stages(completed)
+        translation = completed["entries"][0]["precedingTranslations"][0]
+        shard = {
+            "schemaVersion": "3.1.0",
+            "packetId": completed["packetId"],
+            "issueNumber": completed["assignment"]["issueNumber"],
+            "sourceOrdinal": completed["entries"][0]["sourceOrdinal"],
+            "precedingTranslations": completed["entries"][0][
+                "precedingTranslations"
+            ],
+        }
+        with tempfile.TemporaryDirectory() as temporary:
+            packet_path = Path(temporary) / "packet.json"
+            shard_path = Path(temporary) / "structural-shard.json"
+            packet_path.write_bytes(MODULE.json_bytes(completed))
+            shard_path.write_bytes(MODULE.json_bytes(shard))
+            self.assertEqual(MODULE.merge_preceding_shard(packet_path, shard_path), 3)
+            merged = MODULE.load_json(packet_path)
+
+        inventory, inventory_errors = MODULE.formula_inventory(merged)
+        self.assertEqual(inventory_errors, [])
+        occurrences = [
+            occurrence
+            for occurrence in inventory["occurrences"]
+            if occurrence["recordId"] == source["segmentId"]
+        ]
+        self.assertEqual(
+            [
+                occurrence["sourceField"]
+                for occurrence in occurrences
+                if occurrence["sourceField"] == "headingArabic"
+            ],
+            ["headingArabic"],
+        )
+        self.assertEqual(
+            MODULE.validate_preceding_translation(
+                translation,
+                source,
+                completed["policy"]["bindingSha256"],
+                "formula heading",
+                formula_occurrences=occurrences,
+            ),
+            [],
+        )
+
+    def test_structural_source_attested_basmala_is_required(self):
+        completed = self.packet()
+        complete_autonomous_stages(completed)
+        source = completed["entries"][0]["source"]["precedingSegments"][0]
+        translation = completed["entries"][0]["precedingTranslations"][0]
+        self.assertIn("بسم الله الرحمن الرحيم", source["arabic"])
+        inventory, inventory_errors = MODULE.formula_inventory(completed)
+        self.assertEqual(inventory_errors, [])
+        occurrences = [
+            occurrence
+            for occurrence in inventory["occurrences"]
+            if occurrence["recordId"] == source["segmentId"]
+        ]
+        self.assertEqual([item["observedArabic"] for item in occurrences], ["بسم الله الرحمن الرحيم"])
+        self.assertEqual(
+            MODULE.validate_preceding_translation(
+                translation,
+                source,
+                completed["policy"]["bindingSha256"],
+                "basmala context",
+                formula_occurrences=occurrences,
+            ),
+            [],
+        )
+
+        missing = copy.deepcopy(translation)
+        for stage in ("blindTranslation", "adjudication"):
+            missing[stage]["english"] = missing[stage]["english"].replace(
+                " بسم الله الرحمن الرحيم", ""
+            )
+        errors = MODULE.validate_preceding_translation(
+            missing,
+            source,
+            completed["policy"]["bindingSha256"],
+            "basmala context",
+            formula_occurrences=occurrences,
+        )
+        self.assertEqual(
+            sum("declared formula target is missing" in error for error in errors),
+            2,
+        )
 
     def test_multi_unit_structural_shard_requires_every_owner_in_range(self):
         completed = self.packet()
@@ -880,7 +989,9 @@ class TranslationWorkflowTests(unittest.TestCase):
             self.assertEqual(
                 merged["entries"][1]["precedingTranslations"][0]["adjudication"]
                 ["english"],
-                "Adjudicated source prose.",
+                completed["entries"][1]["precedingTranslations"][0][
+                    "adjudication"
+                ]["english"],
             )
 
             packet_path.write_bytes(original)
@@ -1070,6 +1181,33 @@ class TranslationWorkflowTests(unittest.TestCase):
         )
         self.assertTrue(
             any("no English form in the adjudicated translation" in error for error in errors),
+            errors,
+        )
+
+    def test_name_candidate_rejects_pronoun_as_identity(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        entry = packet["entries"][0]
+        candidate = entry["names"]["candidates"][0]
+        candidate["proposedEnglish"] = "He"
+        candidate["aliases"] = []
+        entry["adjudication"]["english"] = "He transmitted the report."
+        entry["names"]["inventoryAudit"]["englishSha256"] = (
+            MODULE.semantic_candidate_sha256(
+                None, entry["adjudication"]["english"]
+            )
+        )
+        errors = MODULE.validate_names(
+            entry["names"],
+            entry["source"],
+            None,
+            entry["adjudication"]["english"],
+            entry["sourceUnitId"],
+            "test",
+            require_spans=True,
+        )
+        self.assertTrue(
+            any("not an identity-bearing form" in error for error in errors),
             errors,
         )
 
@@ -1654,6 +1792,46 @@ class TranslationWorkflowTests(unittest.TestCase):
         self.assertEqual(registry["contractId"], "translation-quality-workflow")
         self.assertEqual(registry["profileId"], "al-isabah-translation-profile")
         self.assertEqual(registry["entries"], list(MODULE.FORMULA_RULES))
+
+    def test_contextual_formulas_and_stage_specific_targets_are_exact(self):
+        basmala = "بسم الله الرحمن الرحيم"
+        self.assertEqual(MODULE.registered_occurrences(basmala, "source"), [])
+        self.assertEqual(
+            len(
+                MODULE.registered_occurrences(
+                    basmala, "source", include_contextual=True
+                )
+            ),
+            1,
+        )
+        self.assertEqual(
+            len(MODULE.registered_occurrences("قوله تعالى", "source")), 1
+        )
+        self.assertEqual(
+            len(MODULE.registered_occurrences("لله تعالى", "source")), 1
+        )
+        self.assertEqual(
+            MODULE.registered_occurrences("يتعالى الرجل", "source"), []
+        )
+
+        blind = "The Prophet ﷺ spoke."
+        adjudicated = "The Prophet صلى الله عليه وسلم spoke."
+        occurrence = {
+            "sourceField": "arabic",
+            "targetRealization": "صلى الله عليه وسلم",
+            "blindStart": blind.index("ﷺ"),
+            "blindEnd": blind.index("ﷺ") + 1,
+            "adjudicatedStart": adjudicated.index("صلى الله عليه وسلم"),
+            "adjudicatedEnd": adjudicated.index("صلى الله عليه وسلم")
+            + len("صلى الله عليه وسلم"),
+        }
+        projected = MODULE.formula_occurrences_for_target(
+            [occurrence], blind, "blind", source_field="arabic"
+        )
+        self.assertEqual(projected[0]["targetRealization"], "ﷺ")
+        self.assertEqual(
+            MODULE.validate_public_english(blind, "blind target", projected), []
+        )
 
     def test_formula_inventory_rejects_lost_exaltation_semantics(self):
         packet = self.packet()

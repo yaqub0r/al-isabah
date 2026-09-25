@@ -14,7 +14,7 @@
     {
       "id": "al-isabah-translation-profile",
       "path": "docs/translation-profiles/al-isabah.md",
-      "sha256": "e9f166b79fbee21c228d6f67656bbebd1bbdf639927f6b10cabb8a6adff20460"
+      "sha256": "a220dd0ff8ce0ece5e4024ed7ab5f9430decf8860129e0966767f5088f07d2e9"
     },
     {
       "id": "entry-title-structure",
@@ -24,7 +24,7 @@
     {
       "id": "entry-title-decisions",
       "path": "profiles/entry-title-decisions.v7.json",
-      "sha256": "c47956b9afaa0f871b4caecbe7d5de11049e0b2919e33af2155fa1d03dbef75c"
+      "sha256": "a31e8ef7670f30577f70ba5c930c8c6b8803fc9bfce8eec3a362f4ac8c097a52"
     },
     {
       "id": "entry-title-decision-schema",
@@ -34,7 +34,7 @@
     {
       "id": "honorific-formula-registry",
       "path": "profiles/honorific-formulas.v1.json",
-      "sha256": "b23fcd528b840b0e5bbe8932fca6eeaaa576ee51263d9838d4f8d18e40c9e100"
+      "sha256": "1655874b472e73eb7468e9f68f0ec5c469146bf5afbbbdef84f67220130dba9f"
     },
     {
       "id": "translation-source-profile",
@@ -69,7 +69,7 @@
     {
       "id": "translation-work-packet-schema",
       "path": "schemas/translation-work-packet.v6.schema.json",
-      "sha256": "043c5c901000c6353d235f5892d826badb96a23555f11bb300b74b540f3ab0d4"
+      "sha256": "ea5bff6371abdb767c16b973ed7d83a52ddcdc16e788373e7aad243177b02cbb"
     },
     {
       "id": "translation-agent-workflow",
@@ -84,5 +84,5 @@
   ],
   "supersedes": "compliance/policy-binding.v7.json",
   "applied_by_issue": "https://github.com/yaqub0r/al-isabah/issues/86",
-  "note": "Issue 86 adds source-only title/body-opening decisions for Volume 4 entries 4526–6158 through additive profile v7, introduces a hash-bound title-only representation and public proposal schema v2, and uses packet-schema document v6 solely to hard-pin this v8 binding. Packet, shard, tool and stage-provenance data remain version 3.0.0; execution registry v2 and sol-xhigh-explicit-host-v1 remain unchanged. Earlier bindings, title profiles, schemas, proposals, releases and evidence retain their original immutable pins."
+  "note": "Issue 86 adds source-only title/body-opening decisions for Volume 4 entries 4526–6158 through additive profile v7, introduces a hash-bound title-only representation and public proposal schema v2, and extends formula registry 1.4 with source-attested Volume 4 variants. Packet-schema document v6 pins registry 1.4 to this v8 binding. Packet, shard, tool and stage-provenance data remain version 3.0.0; execution registry v2 and sol-xhigh-explicit-host-v1 remain unchanged. Earlier bindings, title profiles, schemas, proposals, releases and evidence retain their original immutable pins."
 }

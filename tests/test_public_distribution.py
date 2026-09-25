@@ -323,6 +323,19 @@ class PublicDistributionTests(unittest.TestCase):
         self.assertFalse(
             any("category=undeclared-arabic-in-english" in error for error in errors)
         )
+        context["heading"] = {
+            "arabic": None,
+            "english": None,
+            "level": None,
+        }
+        errors = PROPOSAL_VALIDATOR.record_semantic_errors(
+            context_formula_record,
+            "$.records[0]",
+            enforce_public_english=True,
+        )
+        self.assertFalse(
+            any("category=formula-inventory-mismatch" in error for error in errors)
+        )
         formula_text = "The Prophet صلى الله عليه وسلم spoke."
         self.assertEqual(
             PROPOSAL_VALIDATOR.governed_arabic_literals(formula_text), []

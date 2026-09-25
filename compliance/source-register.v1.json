@@ -582,6 +582,47 @@
         "treat this cohort alone as evidence for the preceding Issue 80 and Issue 82 ranges"
       ],
       "review_status": "machine-ready-quarter-proposal-pending-submission-and-distribution-admission"
+    },
+    {
+      "id": "issue-0086-public-proposal-v1",
+      "kind": "public-working-bilingual-proposal",
+      "title": "Issue 0086 Volume 4 strict public proposal",
+      "classification": "approved-for-publication",
+      "rights_basis": "Strict allowlisted projection of the newly machine-ready full Volume 4, source ordinals 4526–6158 and 1,633 biographies. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, formulas, structural hierarchy and public uncertainty disclosures. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is not evidence of external submission or admission to the current distribution.",
+      "license": {
+        "spdx": "CC-BY-NC-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      "integrity": {
+        "proposal_sha256": "54d2eaaeebc7a4567f4df5dbac30c4555bfbef5ad0e1e80e6d71c60420ddce71",
+        "public_review_sha256": "44b9db2fa11f42492a0291a4704f44665a2311ca1612f38341209734f55d86a0",
+        "record_projection_sha256": "ac025ebe95db3056b9c8248c59cfb7110c964eb82aa31697cb09cf8b633836cf",
+        "order_sha256": "47c55af095f2dca2692906b9481ca4526f919a89869dcb2add71c901c034a443",
+        "user_facing_sha256": "4bbe38f3793f656b8641829e339c4086d93c2eaaa23851f16ae67387d43b0c7a",
+        "public_entries": 1633,
+        "source_ordinal_start": 4526,
+        "source_ordinal_end": 6158,
+        "owned_structural_segments": 38,
+        "structural_owners": 33,
+        "execution_policy_binding_sha256": "9c82594b8d3a857baf54ba112ecf860e8a59b3f378381ab42db3819b1220cf34",
+        "packet_set_sha256": "c4775c0f027b64fd9b3fe70f968b4f655b70a7c03da8eaddacafb49def121dfc",
+        "review_set_sha256": "efe00c9ca46e32ce2542fe733b7469c513212c2d2f545e409f8be3627bc2435d"
+      },
+      "depends_on": [
+        "ibn-hajar-underlying-medieval-work",
+        "openiti-cleaned-arabic-comparison"
+      ],
+      "allowed_actions": [
+        "review the strict public-safe Volume 4 proposal in the issue-scoped change",
+        "reproduce deterministic proposal, review and coverage checks under the approved noncommercial license",
+        "report full Volume 4 agent completion independently of ongoing human review"
+      ],
+      "prohibited_public_actions": [
+        "claim external evidence submission, current distribution admission, canonical promotion, human approval or release",
+        "publish private evidence, detailed findings, witness expression, model traces, source coordinates or operational paths",
+        "treat this local proposal as a published release"
+      ],
+      "review_status": "machine-ready-volume-proposal-pending-submission-and-distribution-admission"
     }
   ]
 }

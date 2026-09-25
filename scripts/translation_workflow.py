@@ -9,6 +9,7 @@ human-review handoff, and prepares a public-safe pull-request artifact.
 from __future__ import annotations
 
 import argparse
+import copy
 import hashlib
 import json
 import os
@@ -41,7 +42,7 @@ PROPOSAL_ROOT = ROOT / "content" / "translation-proposals"
 PUBLIC_PROPOSAL_ROOT = ROOT / "content" / "public-proposals"
 REPOSITORY = "yaqub0r/al-isabah"
 TOOL_VERSION = "3.0.0"
-FORMULA_REGISTRY_VERSION = "1.3.0"
+FORMULA_REGISTRY_VERSION = "1.4.0"
 SEMANTIC_AUDIT_VERSION = "1.0.0"
 STAGE_PROVENANCE_VERSION = "3.0.0"
 PACKET_SCHEMA_VERSION = "3.0.0"
@@ -119,11 +120,97 @@ WITNESS_ROLES = {
     "same_authority",
     "discovery_check",
 }
+NON_IDENTITY_NAME_FORMS = {
+    "he",
+    "she",
+    "him",
+    "her",
+    "they",
+    "them",
+    "those",
+    "ibn",
+    "bin",
+    "abū",
+    "abu",
+    "umm",
+}
 
 # Longer forms must precede forms that they contain. The registry is kept in
 # executable form so the packet can persist a per-occurrence semantic audit
 # without relying on an application or database.
 FORMULA_RULES = (
+    {
+        "source": "بسم الله الرحمن الرحيم",
+        "target": "بسم الله الرحمن الرحيم",
+        "semanticClass": "basmala_invocation",
+        "referentScope": "God",
+        "grammaticalAgreement": "not_applicable",
+        "expandedArabic": "بسم الله الرحمن الرحيم",
+    },
+    {
+        "source": "صلى الله عليه وسلم واله وسلم",
+        "target": "صلى الله عليه وسلم واله وسلم",
+        "semanticClass": "prophetic_blessing_with_family",
+        "referentScope": "the Prophet and his family",
+        "grammaticalAgreement": "masculine singular with family inclusion",
+        "expandedArabic": "صلى الله عليه وسلم وآله وسلم",
+    },
+    {
+        "source": "صلى الله عليه وسلم وسلم",
+        "target": "صلى الله عليه وسلم وسلم",
+        "semanticClass": "prophetic_blessing_with_repeated_peace",
+        "referentScope": "the Prophet",
+        "grammaticalAgreement": "masculine singular",
+        "expandedArabic": "صلى الله عليه وسلم وسلم",
+    },
+    {
+        "source": "عليها السلام",
+        "target": "عليها السلام",
+        "semanticClass": "peace_invocation",
+        "referentScope": "the immediately preceding female referent",
+        "grammaticalAgreement": "feminine singular",
+        "expandedArabic": "عليها السلام",
+    },
+    {
+        "source": "والله المستعان",
+        "target": "والله المستعان",
+        "semanticClass": "divine_help_qualification",
+        "referentScope": "God",
+        "grammaticalAgreement": "not_applicable",
+        "expandedArabic": "والله المستعان",
+    },
+    {
+        "source": "فالله أعلم",
+        "target": "فالله أعلم",
+        "semanticClass": "divine_knowledge_qualification",
+        "referentScope": "God",
+        "grammaticalAgreement": "not_applicable",
+        "expandedArabic": "فالله أعلم",
+    },
+    {
+        "source": "فالله اعلم",
+        "target": "فالله اعلم",
+        "semanticClass": "divine_knowledge_qualification",
+        "referentScope": "God",
+        "grammaticalAgreement": "not_applicable",
+        "expandedArabic": "فالله أعلم",
+    },
+    {
+        "source": "ولله الحمد",
+        "target": "ولله الحمد",
+        "semanticClass": "divine_praise",
+        "referentScope": "God",
+        "grammaticalAgreement": "not_applicable",
+        "expandedArabic": "ولله الحمد",
+    },
+    {
+        "source": "تعالى",
+        "target": "تعالى",
+        "semanticClass": "divine_exaltation",
+        "referentScope": "God",
+        "grammaticalAgreement": "not_applicable",
+        "expandedArabic": "تعالى",
+    },
     {
         "source": "اللهم بارك على محمد وعلى آل محمد",
         "target": "اللهم بارك على محمد وعلى آل محمد",
@@ -383,6 +470,15 @@ FORMULA_RULES = (
 # tuple is intentionally parallel to FORMULA_RULES, whose order is already
 # semantically significant because longer source forms must be matched first.
 FORMULA_ACCESSIBLE_ENGLISH = (
+    "In the name of God, the Most Compassionate, the Most Merciful.",
+    "May God bless him and his family and grant them peace.",
+    "May God bless him and grant him peace, and grant him peace.",
+    "Peace be upon her.",
+    "God is the One whose help is sought.",
+    "Thus God knows best.",
+    "Thus God knows best.",
+    "And praise belongs to God.",
+    "Exalted is He.",
     "O God, bless Muḥammad and the family of Muḥammad.",
     "May God bless him and them with an everlasting blessing and grant them perpetual peace [and fullest peace].",
     "May God bless him and his family and grant them peace.",
@@ -420,6 +516,7 @@ FORMULA_RULES = tuple(
     {**rule, "accessibleEnglish": accessible}
     for rule, accessible in zip(FORMULA_RULES, FORMULA_ACCESSIBLE_ENGLISH)
 )
+CONTEXTUAL_FORMULA_SOURCES = {"بسم الله الرحمن الرحيم"}
 
 
 class WorkflowError(ValueError):
@@ -447,20 +544,30 @@ def text_sha256(value: str) -> str:
     return bytes_sha256(value.encode("utf-8"))
 
 
-def registered_occurrences(text: str, field: str) -> list[dict[str, Any]]:
+def registered_occurrences(
+    text: str, field: str, *, include_contextual: bool = False
+) -> list[dict[str, Any]]:
     """Return non-overlapping formula occurrences, preferring longer forms."""
+    rules = tuple(
+        rule
+        for rule in FORMULA_RULES
+        if include_contextual
+        or str(rule["source"]) not in CONTEXTUAL_FORMULA_SOURCES
+    )
     if field == "target":
         values = sorted(
             {
                 str(value)
-                for rule in FORMULA_RULES
+                for rule in rules
                 for value in (rule["target"], rule["expandedArabic"])
             },
             key=len,
             reverse=True,
         )
     else:
-        values = sorted({str(rule[field]) for rule in FORMULA_RULES}, key=len, reverse=True)
+        values = sorted({str(rule[field]) for rule in rules}, key=len, reverse=True)
+    if not values:
+        return []
     pattern = re.compile("|".join(re.escape(value) for value in values))
     occurrences: list[dict[str, Any]] = []
     for match in pattern.finditer(text):
@@ -468,11 +575,17 @@ def registered_occurrences(text: str, field: str) -> list[dict[str, Any]]:
         if field == "target":
             rule = next(
                 rule
-                for rule in FORMULA_RULES
+                for rule in rules
                 if value in {rule["target"], rule["expandedArabic"]}
             )
         else:
-            rule = next(rule for rule in FORMULA_RULES if rule[field] == value)
+            rule = next(rule for rule in rules if rule[field] == value)
+        if (
+            field == "source"
+            and rule["source"] == "تعالى"
+            and re.search(r"(?:الله|لله|قوله|قال)\s*$", text[: match.start()]) is None
+        ):
+            continue
         occurrences.append(
             {
                 "start": match.start(),
@@ -495,12 +608,20 @@ def formula_inventory(packet: dict[str, Any]) -> tuple[dict[str, Any], list[str]
         source_text: str | None,
         blind_text: str | None,
         adjudicated_text: str | None,
+        *,
+        include_contextual: bool = False,
     ) -> None:
         if not source_text:
             return
-        source_hits = registered_occurrences(source_text, "source")
-        blind_hits = registered_occurrences(blind_text or "", "target")
-        adjudicated_hits = registered_occurrences(adjudicated_text or "", "target")
+        source_hits = registered_occurrences(
+            source_text, "source", include_contextual=include_contextual
+        )
+        blind_hits = registered_occurrences(
+            blind_text or "", "target", include_contextual=include_contextual
+        )
+        adjudicated_hits = registered_occurrences(
+            adjudicated_text or "", "target", include_contextual=include_contextual
+        )
         expected_classes = [
             (
                 hit["rule"]["semanticClass"],
@@ -586,6 +707,7 @@ def formula_inventory(packet: dict[str, Any]) -> tuple[dict[str, Any], list[str]
                 segment.get("headingArabic"),
                 blind.get("headingEnglish"),
                 adjudication.get("headingEnglish"),
+                include_contextual=True,
             )
             add_record(
                 record_id,
@@ -593,6 +715,7 @@ def formula_inventory(packet: dict[str, Any]) -> tuple[dict[str, Any], list[str]
                 segment.get("arabic"),
                 blind.get("english"),
                 adjudication.get("english"),
+                include_contextual=True,
             )
         add_record(
             str(entry.get("sourceUnitId")),
@@ -762,6 +885,10 @@ def validate_names(
             errors.append(f"{prefix}: {candidate_id} observed Arabic leaks OpenITI markup")
         if not isinstance(proposed, str) or not proposed.strip():
             errors.append(f"{prefix}: {candidate_id} has no proposed English form")
+        elif proposed.strip().casefold() in NON_IDENTITY_NAME_FORMS:
+            errors.append(
+                f"{prefix}: {candidate_id} proposed English is not an identity-bearing form"
+            )
         aliases = candidate.get("aliases")
         if not isinstance(aliases, list) or not all(
             isinstance(alias, str) and alias.strip()
@@ -1096,6 +1223,7 @@ def completed_stage_provenance(
     run_id: str | None = None,
     origin: str = "direct_execution",
     rebinding: dict[str, Any] | None = None,
+    execution: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """Build deterministic provenance after externally produced evidence exists."""
     source_sha256 = semantic_source_sha256(source)
@@ -1132,10 +1260,39 @@ def completed_stage_provenance(
         "outputSha256": content_sha256(stage_output_payload(owner, stage)),
         "fingerprint": None,
         "rebinding": rebinding,
-        "execution": None,
+        "execution": copy.deepcopy(execution),
     }
     provenance["fingerprint"] = stage_fingerprint(provenance)
     return provenance
+
+
+def validate_stage_execution(
+    provenance: dict[str, Any], stage: str
+) -> list[str]:
+    """Validate the captured execution that produced a stage before repair.
+
+    A deterministic rebind changes content-addressed hashes but is not another
+    semantic model run. Its preserved execution envelope therefore remains
+    bound to the original direct execution recorded inside that envelope.
+    """
+    if provenance.get("origin") != "deterministic_rebinding":
+        return validate_execution(provenance, stage)
+    execution = provenance.get("execution")
+    binding = execution.get("binding") if isinstance(execution, dict) else None
+    if not isinstance(binding, dict):
+        return [
+            "host runtime: deterministic rebinding must preserve captured host evidence"
+        ]
+    historical = copy.deepcopy(provenance)
+    historical["origin"] = "direct_execution"
+    for provenance_field, binding_field in (
+        ("runId", "runId"),
+        ("inputSha256", "inputSha256"),
+        ("outputSha256", "outputSha256"),
+        ("fingerprint", "checkpointSha256"),
+    ):
+        historical[provenance_field] = binding.get(binding_field)
+    return validate_execution(historical, stage)
 
 
 def validate_independent_context(
@@ -1465,7 +1622,7 @@ def validate_stage_provenance(
             errors.append(f"{prefix}: witness result evidence is not attached")
     if require_independent_context:
         errors.extend(validate_independent_context(owner, provenance, prefix))
-    errors.extend(validate_execution(provenance, stage))
+    errors.extend(validate_stage_execution(provenance, stage))
     return errors
 
 
@@ -1817,6 +1974,38 @@ def validate_uncertainty_witness_alignment(
     if witness.get("status") != "complete" or not isinstance(results, list) or not results:
         return [f"{prefix}: material unresolved finding requires completed witness evidence"]
     return []
+
+
+def formula_occurrences_for_target(
+    formula_occurrences: list[dict[str, Any]],
+    target_text: str | None,
+    target_kind: str,
+    *,
+    source_field: str | None = None,
+) -> list[dict[str, Any]]:
+    """Project inventory occurrences onto one stage's exact target spelling."""
+    start_field, end_field = {
+        "blind": ("blindStart", "blindEnd"),
+        "adjudicated": ("adjudicatedStart", "adjudicatedEnd"),
+    }[target_kind]
+    text = target_text or ""
+    projected: list[dict[str, Any]] = []
+    for occurrence in formula_occurrences:
+        if not isinstance(occurrence, dict):
+            continue
+        if source_field is not None and occurrence.get("sourceField") != source_field:
+            continue
+        item = dict(occurrence)
+        start = item.get(start_field)
+        end = item.get(end_field)
+        if (
+            isinstance(start, int)
+            and isinstance(end, int)
+            and 0 <= start < end <= len(text)
+        ):
+            item["targetRealization"] = text[start:end]
+        projected.append(item)
+    return projected
 
 
 def validate_public_english(
@@ -3753,24 +3942,91 @@ def validate_preceding_translation(
         errors.append(f"{prefix}: adjudicated substantive prose is untranslated")
     if not isinstance(adjudication.get("decisions"), list):
         errors.append(f"{prefix}: adjudication decisions must be an array")
+
+    def field_formula_occurrences(
+        source_field: str, target_text: str | None, target_kind: str
+    ) -> list[dict[str, Any]]:
+        if formula_occurrences is not None:
+            return formula_occurrences_for_target(
+                formula_occurrences,
+                target_text,
+                target_kind,
+                source_field=source_field,
+            )
+        source_hits = registered_occurrences(
+            str(source.get(source_field) or ""),
+            "source",
+            include_contextual=True,
+        )
+        target_hits = registered_occurrences(
+            target_text or "", "target", include_contextual=True
+        )
+        source_classes = [
+            (
+                hit["rule"]["semanticClass"],
+                hit["rule"]["referentScope"],
+                hit["rule"]["grammaticalAgreement"],
+            )
+            for hit in source_hits
+        ]
+        target_classes = [
+            (
+                hit["rule"]["semanticClass"],
+                hit["rule"]["referentScope"],
+                hit["rule"]["grammaticalAgreement"],
+            )
+            for hit in target_hits
+        ]
+        if target_classes != source_classes:
+            return [
+                {
+                    "sourceField": source_field,
+                    "targetRealization": hit["rule"]["target"],
+                }
+                for hit in source_hits
+            ]
+        return [
+            {
+                "sourceField": source_field,
+                "targetRealization": hit["value"],
+            }
+            for hit in target_hits
+        ]
+
     errors.extend(
         validate_public_english(
-            blind.get("headingEnglish"), f"{prefix}, blind heading", []
+            blind.get("headingEnglish"),
+            f"{prefix}, blind heading",
+            field_formula_occurrences(
+                "headingArabic", blind.get("headingEnglish"), "blind"
+            ),
         )
     )
-    errors.extend(validate_public_english(blind.get("english"), f"{prefix}, blind"))
+    errors.extend(
+        validate_public_english(
+            blind.get("english"),
+            f"{prefix}, blind",
+            field_formula_occurrences("arabic", blind.get("english"), "blind"),
+        )
+    )
     errors.extend(
         validate_public_english(
             adjudication.get("headingEnglish"),
             f"{prefix}, adjudicated heading",
-            [],
+            field_formula_occurrences(
+                "headingArabic",
+                adjudication.get("headingEnglish"),
+                "adjudicated",
+            ),
         )
     )
     errors.extend(
         validate_public_english(
             adjudication.get("english"),
             f"{prefix}, adjudicated",
-            formula_occurrences,
+            field_formula_occurrences(
+                "arabic", adjudication.get("english"), "adjudicated"
+            ),
         )
     )
 
@@ -4288,8 +4544,9 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
         "complete",
     }:
         errors.append("packet: formula inventory state is missing")
-    formula_occurrences_by_record: dict[str, list[dict[str, Any]]] = {}
+    formula_occurrences_by_record: dict[str, list[dict[str, Any]]] | None = None
     if isinstance(inventory, dict) and inventory.get("status") == "complete":
+        formula_occurrences_by_record = {}
         occurrences = inventory.get("occurrences")
         if isinstance(occurrences, list):
             for occurrence in occurrences:
@@ -4389,7 +4646,9 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
                             segment_prefix,
                             repair_permissions.get(repair_key),
                             target_repairs.get(repair_key),
-                            formula_occurrences_by_record.get(
+                            None
+                            if formula_occurrences_by_record is None
+                            else formula_occurrences_by_record.get(
                                 str(segment_source.get("segmentId")), []
                             ),
                             permitted_policy_repair_bindings,
@@ -4476,10 +4735,24 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
             errors.append(f"{prefix}: adjudication is incomplete")
         if not isinstance(adjudication.get("decisions"), list):
             errors.append(f"{prefix}: adjudication decisions must be an array")
-        record_formula_occurrences = formula_occurrences_by_record.get(
-            str(entry.get("sourceUnitId")), []
+        record_formula_occurrences = (
+            None
+            if formula_occurrences_by_record is None
+            else formula_occurrences_by_record.get(str(entry.get("sourceUnitId")), [])
         )
-        errors.extend(validate_public_english(blind.get("english"), f"{prefix}, blind"))
+        errors.extend(
+            validate_public_english(
+                blind.get("english"),
+                f"{prefix}, blind",
+                None
+                if record_formula_occurrences is None
+                else formula_occurrences_for_target(
+                    record_formula_occurrences,
+                    blind.get("english"),
+                    "blind",
+                ),
+            )
+        )
         errors.extend(
             validate_public_english(
                 adjudication.get("english"),
@@ -4525,8 +4798,12 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
                 require_spans=True,
                 allow_historical_english="adjudication"
                 in target_repairs.get((str(entry.get("sourceUnitId")), None), set()),
-                formula_occurrences=formula_occurrences_by_record.get(
-                    str(entry.get("sourceUnitId")), []
+                formula_occurrences=(
+                    []
+                    if formula_occurrences_by_record is None
+                    else formula_occurrences_by_record.get(
+                        str(entry.get("sourceUnitId")), []
+                    )
                 ),
             )
         )

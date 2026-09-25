@@ -1,9 +1,90 @@
 {
   "schema": "al-isabah.honorific-formula-registry.v1",
-  "registryVersion": "1.3.0",
+  "registryVersion": "1.4.0",
   "contractId": "translation-quality-workflow",
   "profileId": "al-isabah-translation-profile",
   "entries": [
+    {
+      "source": "بسم الله الرحمن الرحيم",
+      "target": "بسم الله الرحمن الرحيم",
+      "semanticClass": "basmala_invocation",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "بسم الله الرحمن الرحيم",
+      "accessibleEnglish": "In the name of God, the Most Compassionate, the Most Merciful."
+    },
+    {
+      "source": "صلى الله عليه وسلم واله وسلم",
+      "target": "صلى الله عليه وسلم واله وسلم",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وسلم وآله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى الله عليه وسلم وسلم",
+      "target": "صلى الله عليه وسلم وسلم",
+      "semanticClass": "prophetic_blessing_with_repeated_peace",
+      "referentScope": "the Prophet",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "صلى الله عليه وسلم وسلم",
+      "accessibleEnglish": "May God bless him and grant him peace, and grant him peace."
+    },
+    {
+      "source": "عليها السلام",
+      "target": "عليها السلام",
+      "semanticClass": "peace_invocation",
+      "referentScope": "the immediately preceding female referent",
+      "grammaticalAgreement": "feminine singular",
+      "expandedArabic": "عليها السلام",
+      "accessibleEnglish": "Peace be upon her."
+    },
+    {
+      "source": "والله المستعان",
+      "target": "والله المستعان",
+      "semanticClass": "divine_help_qualification",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "والله المستعان",
+      "accessibleEnglish": "God is the One whose help is sought."
+    },
+    {
+      "source": "فالله أعلم",
+      "target": "فالله أعلم",
+      "semanticClass": "divine_knowledge_qualification",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "فالله أعلم",
+      "accessibleEnglish": "Thus God knows best."
+    },
+    {
+      "source": "فالله اعلم",
+      "target": "فالله اعلم",
+      "semanticClass": "divine_knowledge_qualification",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "فالله أعلم",
+      "accessibleEnglish": "Thus God knows best."
+    },
+    {
+      "source": "ولله الحمد",
+      "target": "ولله الحمد",
+      "semanticClass": "divine_praise",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "ولله الحمد",
+      "accessibleEnglish": "And praise belongs to God."
+    },
+    {
+      "source": "تعالى",
+      "target": "تعالى",
+      "semanticClass": "divine_exaltation",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "تعالى",
+      "accessibleEnglish": "Exalted is He."
+    },
     {
       "source": "اللهم بارك على محمد وعلى آل محمد",
       "target": "اللهم بارك على محمد وعلى آل محمد",

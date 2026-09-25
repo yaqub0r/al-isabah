@@ -115,7 +115,7 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
     "honorific-formula-registry": (
         "profiles/honorific-formulas.v1.json",
         "active",
-        "1.3.0",
+        "1.4.0",
     ),
     "translation-coverage": (
         "compliance/translation-coverage.v1.json",
@@ -248,7 +248,7 @@ PREVIOUS_POLICY_SHA256 = "20a74b3643a65e621efe02402e59944223f1424f75d67e1af94476
 FROZEN_POLICY_V5_SHA256 = "a89774893a9c623814f51a942c0c43056a0f6ffb8b979a43bc6bdb6e317c3f91"
 ACTIVE_POLICY_V6_SHA256 = "faf1078753c33c278098e71d0392a2af1e955320f090660da24ba64bc1831692"
 ACTIVE_POLICY_V7_SHA256 = "f75113f0fe08869efa947c19b9a12a38e5a8c9ece972bbf5d8ebecea6ce48810"
-ACTIVE_POLICY_V8_SHA256 = "f25466c86242ea07172fd73c57b382ee4bbfeabbffcb1653ce3e413f5a04dd2c"
+ACTIVE_POLICY_V8_SHA256 = "9c82594b8d3a857baf54ba112ecf860e8a59b3f378381ab42db3819b1220cf34"
 QUARTER_COMPLETIONS = {
     QUARTER_SCOPE_ID: {
         "label": "issue-0080 quarter",
@@ -357,6 +357,21 @@ REQUIRED_COMPLETED_SCOPES = {
         "volume": 3,
         "artifact": "issue-0084-public-proposal-v1",
         "units": 1491,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
+    "issue-0086-volume-04": {
+        "scope_kind": "cohort",
+        "volume": 4,
+        "artifact": "issue-0086-public-proposal-v1",
+        "units": 1633,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
+    "volume-04": {
+        "volume": 4,
+        "artifact": "issue-0086-public-proposal-v1",
+        "units": 1633,
         "workflow_conformance": "current",
         "public_working_status": "blocked",
     },

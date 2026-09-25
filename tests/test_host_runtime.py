@@ -63,6 +63,36 @@ class HostRuntimeTests(unittest.TestCase):
             for stage in GOVERNANCE.STAGES:
                 self.assertEqual(GOVERNANCE.validate_execution(self.provenance(stage), stage), [])
 
+    def test_deterministic_rebinding_preserves_original_host_capture(self):
+        direct = self.provenance("blind_translation")
+        rebound = copy.deepcopy(direct)
+        rebound.update(
+            origin="deterministic_rebinding",
+            inputSha256="4" * 64,
+            outputSha256="5" * 64,
+            fingerprint="6" * 64,
+        )
+        self.assertEqual(
+            WORKFLOW.validate_stage_execution(rebound, "blind_translation"), []
+        )
+
+        missing = copy.deepcopy(rebound)
+        missing["execution"] = None
+        self.assertTrue(
+            any(
+                "must preserve captured host evidence" in error
+                for error in WORKFLOW.validate_stage_execution(
+                    missing, "blind_translation"
+                )
+            )
+        )
+
+        mismatched = copy.deepcopy(rebound)
+        mismatched["reasoning"] = "high"
+        self.assertTrue(
+            WORKFLOW.validate_stage_execution(mismatched, "blind_translation")
+        )
+
     def test_missing_implicit_high_ultra_unknown_requests_fail(self):
         cases = [lambda e: e.update(methodId="unknown"),
                  lambda e: e.update(methodId="sol-xhigh-explicit-attested-v1")]

@@ -171,7 +171,7 @@ class ComplianceTests(unittest.TestCase):
         )
 
     def test_registry_contains_exact_quoted_prayer_record(self):
-        self.assertEqual(self.formula_registry["registryVersion"], "1.3.0")
+        self.assertEqual(self.formula_registry["registryVersion"], "1.4.0")
         prayer = "اللهم بارك على محمد وعلى آل محمد"
         records = [
             item for item in self.formula_registry["entries"]
@@ -308,6 +308,28 @@ class ComplianceTests(unittest.TestCase):
             ),
             errors,
         )
+
+    def test_volume_four_completion_is_full_and_nonadditive(self):
+        coverage = copy.deepcopy(self.translation_coverage)
+        scopes = {scope["scope_id"]: scope for scope in coverage["scopes"]}
+        cohort = scopes["issue-0086-volume-04"]
+        volume = scopes["volume-04"]
+        for scope in (cohort, volume):
+            completion = scope["agent_completion"]
+            self.assertEqual(completion["status"], "agent_complete")
+            self.assertEqual(completion["locked_units"], 1633)
+            self.assertEqual(completion["translated_units"], 1633)
+            self.assertEqual(completion["remaining_agent_units"], 0)
+            self.assertEqual(
+                completion["evidence"]["source_register_artifact"],
+                "issue-0086-public-proposal-v1",
+            )
+            self.assertEqual(scope["public_working_status"], "blocked")
+            self.assertEqual(scope["canonical_promotion"], "blocked")
+            self.assertEqual(scope["human_review"]["unreviewed_units"], 1633)
+        self.assertIn("not additive", cohort["agent_completion"]["basis"])
+        self.assertIn("must not be added", volume["agent_completion"]["basis"])
+        self.assertEqual(self.validate(translation_coverage=coverage), [])
 
     def test_volume_two_completion_uses_the_corrected_proposal(self):
         coverage = copy.deepcopy(self.translation_coverage)

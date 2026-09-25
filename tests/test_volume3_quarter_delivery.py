@@ -69,8 +69,8 @@ class VolumeThreeQuarterDeliveryTests(unittest.TestCase):
                 "management_state": "ongoing", "reviewed_units": 0, "unreviewed_units": count})
             self.assertEqual(scope["public_working_status"], "blocked")
             self.assertEqual(scope["canonical_promotion"], "blocked")
-        # Coverage semantics retain their historical v2 envelope; Issues 80
-        # and 82 retain their exact v5/v6 bindings after v7 becomes active.
+        # Coverage semantics retain their historical v2 envelope; Issues 80,
+        # 82, and 84 retain their exact v5/v6/v7 bindings after v8 becomes active.
         self.assertEqual(self.coverage["policy_binding"], "compliance/policy-binding.v2.json")
         self.assertEqual(self.proposal["policy"]["bindingSha256"],
                          "a89774893a9c623814f51a942c0c43056a0f6ffb8b979a43bc6bdb6e317c3f91")
@@ -87,6 +87,10 @@ class VolumeThreeQuarterDeliveryTests(unittest.TestCase):
             compliance.canonical_text_sha256(compliance.POLICY_PATH),
         )
         self.assertEqual(
+            self.final_half_proposal["policy"]["bindingSha256"],
+            compliance.canonical_text_sha256(compliance.FROZEN_POLICY_V7_PATH),
+        )
+        self.assertNotEqual(
             self.final_half_proposal["policy"]["bindingSha256"],
             compliance.canonical_text_sha256(compliance.POLICY_PATH),
         )

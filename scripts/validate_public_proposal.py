@@ -68,7 +68,7 @@ PINNED_TITLE_PROFILE_BINDINGS = {
     },
     ("1.3.0", "issue-0086-public-proposal-v1"): {
         "profileId": "entry-title-decisions.v7",
-        "profileSha256": "c47956b9afaa0f871b4caecbe7d5de11049e0b2919e33af2155fa1d03dbef75c",
+        "profileSha256": "a31e8ef7670f30577f70ba5c930c8c6b8803fc9bfce8eec3a362f4ac8c097a52",
     },
 }
 SOURCE_DERIVED_NAME_ID_PROPOSALS = {
@@ -91,6 +91,21 @@ PUBLIC_PROCESS_RE = re.compile(
 FORMULA_RULES = tuple(
     json.loads(FORMULA_REGISTRY_PATH.read_text(encoding="utf-8"))["entries"]
 )
+FORMULA_V14_SOURCES = {
+    "بسم الله الرحمن الرحيم",
+    "صلى الله عليه وسلم واله وسلم",
+    "صلى الله عليه وسلم وسلم",
+    "عليها السلام",
+    "والله المستعان",
+    "فالله أعلم",
+    "فالله اعلم",
+    "ولله الحمد",
+    "تعالى",
+}
+LEGACY_FORMULA_RULES = tuple(
+    rule for rule in FORMULA_RULES if rule["source"] not in FORMULA_V14_SOURCES
+)
+CONTEXTUAL_FORMULA_SOURCES = {"بسم الله الرحمن الرحيم"}
 SHA1 = re.compile(r"^[a-f0-9]{40}$")
 SHA256 = re.compile(r"^[a-f0-9]{64}$")
 COMMIT = SHA1
@@ -471,11 +486,14 @@ def public_english_errors(
     return errors
 
 
-def governed_arabic_literals(value: str | None) -> list[str]:
+def governed_arabic_literals(
+    value: str | None,
+    rules: tuple[dict[str, Any], ...] = FORMULA_RULES,
+) -> list[str]:
     """Return exact Arabic spans, preserving spaces inside a governed literal."""
     formula_literals = {
         str(formula_value)
-        for rule in FORMULA_RULES
+        for rule in rules
         for formula_value in (rule["source"], rule["target"], rule["expandedArabic"])
     }
     def is_formula_literal(literal: str) -> bool:
@@ -493,13 +511,25 @@ def governed_arabic_literals(value: str | None) -> list[str]:
     ]
 
 
-def registered_formula_occurrences(text: str, field: str) -> list[dict[str, Any]]:
+def registered_formula_occurrences(
+    text: str,
+    field: str,
+    rules: tuple[dict[str, Any], ...] = FORMULA_RULES,
+    *,
+    include_contextual: bool = False,
+) -> list[dict[str, Any]]:
     """Return registry-bound non-overlapping formula occurrences in source order."""
+    effective_rules = tuple(
+        rule
+        for rule in rules
+        if include_contextual
+        or str(rule["source"]) not in CONTEXTUAL_FORMULA_SOURCES
+    )
     if field == "target":
         values = sorted(
             {
                 str(value)
-                for rule in FORMULA_RULES
+                for rule in effective_rules
                 for value in (rule["target"], rule["expandedArabic"])
             },
             key=len,
@@ -507,7 +537,7 @@ def registered_formula_occurrences(text: str, field: str) -> list[dict[str, Any]
         )
     else:
         values = sorted(
-            {str(rule["source"]) for rule in FORMULA_RULES},
+            {str(rule["source"]) for rule in effective_rules},
             key=len,
             reverse=True,
         )
@@ -518,11 +548,17 @@ def registered_formula_occurrences(text: str, field: str) -> list[dict[str, Any]
         if field == "target":
             rule = next(
                 item
-                for item in FORMULA_RULES
+                for item in effective_rules
                 if value in {item["target"], item["expandedArabic"]}
             )
         else:
-            rule = next(item for item in FORMULA_RULES if value == item["source"])
+            rule = next(item for item in effective_rules if value == item["source"])
+        if (
+            field == "source"
+            and rule["source"] == "تعالى"
+            and re.search(r"(?:الله|لله|قوله|قال)\s*$", text[: match.start()]) is None
+        ):
+            continue
         occurrences.append({"value": value, "rule": rule})
     return occurrences
 
@@ -547,15 +583,24 @@ def expected_scope_formulas(
     source_field: str,
     source: Any,
     english: Any,
+    rules: tuple[dict[str, Any], ...] = FORMULA_RULES,
+    *,
+    include_contextual: bool = False,
 ) -> tuple[list[dict[str, Any]], bool]:
+    if source is None and english is None:
+        return [], True
     if not (
         isinstance(record_id, str)
         and isinstance(source, str)
         and isinstance(english, str)
     ):
         return [], False
-    source_hits = registered_formula_occurrences(source, "source")
-    target_hits = registered_formula_occurrences(english, "target")
+    source_hits = registered_formula_occurrences(
+        source, "source", rules, include_contextual=include_contextual
+    )
+    target_hits = registered_formula_occurrences(
+        english, "target", rules, include_contextual=include_contextual
+    )
     if len(source_hits) != len(target_hits):
         return [], False
     expected: list[dict[str, Any]] = []
@@ -584,7 +629,11 @@ def expected_scope_formulas(
     return expected, valid
 
 
-def public_formula_errors(record: dict[str, Any], base: str) -> list[str]:
+def public_formula_errors(
+    record: dict[str, Any],
+    base: str,
+    rules: tuple[dict[str, Any], ...] = FORMULA_RULES,
+) -> list[str]:
     """Recompute every public formula from its exact source and English field."""
     formulas = record.get("formulas")
     if not isinstance(formulas, list):
@@ -601,6 +650,8 @@ def public_formula_errors(record: dict[str, Any], base: str) -> list[str]:
                 "headingArabic",
                 heading.get("arabic"),
                 heading.get("english"),
+                rules,
+                include_contextual=True,
             )
             expected.extend(scope)
             valid = valid and scope_valid
@@ -609,6 +660,8 @@ def public_formula_errors(record: dict[str, Any], base: str) -> list[str]:
             "arabic",
             context.get("arabic"),
             context.get("english"),
+            rules,
+            include_contextual=True,
         )
         expected.extend(scope)
         valid = valid and scope_valid
@@ -617,6 +670,7 @@ def public_formula_errors(record: dict[str, Any], base: str) -> list[str]:
         "arabic",
         record.get("arabic"),
         record.get("english"),
+        rules,
     )
     expected.extend(scope)
     valid = valid and scope_valid
@@ -631,6 +685,7 @@ def record_semantic_errors(
     *,
     enforce_public_english: bool = False,
     allowed_arabic_literals: list[str] | None = None,
+    formula_rules: tuple[dict[str, Any], ...] = FORMULA_RULES,
 ) -> list[str]:
     errors: list[str] = []
     if record.get("kind") != "entry" or record.get("workId") != "ibn-hajar-al-isabah":
@@ -682,7 +737,7 @@ def record_semantic_errors(
             errors.append(safe_error(f"{base}.formulas[{index}]", "invalid-formula"))
     if enforce_public_english:
         formulas = record.get("formulas", [])
-        errors.extend(public_formula_errors(record, base))
+        errors.extend(public_formula_errors(record, base, formula_rules))
         entry_formulas = formulas_for_scope(formulas, record.get("id"), "arabic")
         errors.extend(
             public_english_errors(
@@ -814,6 +869,9 @@ def validate(
         record_version = "2.1.0" if schema_version == "1.3.0" else "2.0.0"
         if record.get("schemaVersion") != record_version or record.get("kind") != "entry":
             errors.append(safe_error(base, "consumer-contract-mismatch"))
+        formula_rules = (
+            FORMULA_RULES if schema_version == "1.3.0" else LEGACY_FORMULA_RULES
+        )
         errors.extend(
             record_semantic_errors(
                 record,
@@ -824,8 +882,10 @@ def validate(
                         active_title_decisions.get(
                             record.get("printedEntryNumber"), {}
                         ).get("bodyOpening", {}).get("en", "")
-                    )
+                    ),
+                    formula_rules,
                 ),
+                formula_rules=formula_rules,
             )
         )
         title_only = schema_version == "1.3.0" and record.get("bodyState") == "title-only"
