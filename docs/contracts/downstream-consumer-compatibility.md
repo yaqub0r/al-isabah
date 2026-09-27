@@ -3,7 +3,7 @@
 - **Status:** Active
 - **Issue:** [#45](https://github.com/yaqub0r/al-isabah/issues/45)
 - **Machine reference:**
-  [`translation-governance-reference.v7.json`](translation-governance-reference.v7.json)
+  [`translation-governance-reference.v9.json`](translation-governance-reference.v9.json)
 
 ## Authority and pinning
 

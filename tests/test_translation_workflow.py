@@ -501,6 +501,40 @@ class TranslationWorkflowTests(unittest.TestCase):
         )
         self.assertEqual(entries[2]["locations"][0], {"volume": 8, "page": 5})
 
+    def test_four_pipe_invocation_moves_to_following_context_only(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "invocation.mARkdown"
+            source.write_text(
+                "#META#Header#End#\n"
+                "### $ 1 أول\n"
+                "# ملحوظة في المتن\n"
+                "# بسم الله الرحمن الرحيم\n"
+                "### |||| ( باب ثان )\n"
+                "### $ 2 ثان\n"
+                "# بسم الله الرحمن الرحيم\n"
+                "### ||| ( قسم ثالث )\n"
+                "### $ 3 ثالث\n",
+                encoding="utf-8",
+            )
+            entries = MODULE.parse_openiti_entries(source)
+
+        self.assertEqual(len(entries), 3)
+        self.assertIn("ملحوظة في المتن", entries[0]["arabic"])
+        self.assertNotIn("بسم الله الرحمن الرحيم", entries[0]["arabic"])
+        self.assertEqual(
+            [
+                (segment["kind"], segment["lineStart"])
+                for segment in entries[1]["precedingSegments"]
+            ],
+            [("interstitial_prose", 4), ("structural_heading", 5)],
+        )
+        self.assertEqual(
+            entries[1]["precedingSegments"][0]["arabic"],
+            "بسم الله الرحمن الرحيم",
+        )
+        self.assertEqual(entries[1]["arabic"].count("بسم الله الرحمن الرحيم"), 1)
+        self.assertEqual(len(entries[2]["precedingSegments"]), 1)
+
     def test_packet_explicitly_excludes_container_metadata(self):
         packet = self.packet()
         exclusions = packet["scope"]["excludedRanges"]

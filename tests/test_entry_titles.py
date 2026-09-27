@@ -35,25 +35,22 @@ class EntryTitleContractTests(unittest.TestCase):
             11445, 11446, 11449, 11451, 11454, 11458, 11459, 11473,
             11474, 11476,
         }
-        self.assertEqual(numbers, historical | set(range(1538, 6159)))
-        self.assertEqual(len(self.profile["decisions"]), 4639)
+        expected = historical | set(range(1538, 7762))
+        expected.remove(7052)
+        self.assertEqual(numbers, expected)
+        self.assertEqual(len(self.profile["decisions"]), 6243)
 
     def test_successor_preserves_all_previous_decisions(self) -> None:
-        previous = MODULE.load(ROOT / "profiles" / "entry-title-decisions.v6.json")
-        previous_numbers = {item["sourceEntryNumber"] for item in previous["decisions"]}
-        preserved = [
-            item for item in self.profile["decisions"]
-            if item["sourceEntryNumber"] in previous_numbers
-        ]
-        added = [
-            item for item in self.profile["decisions"]
-            if item["sourceEntryNumber"] not in previous_numbers
-        ]
-        self.assertEqual(preserved, previous["decisions"])
+        previous = MODULE.load(ROOT / "profiles" / "entry-title-decisions.v7.json")
+        split = len(previous["decisions"])
+        self.assertEqual(self.profile["decisions"][:split], previous["decisions"])
+        added = self.profile["decisions"][split:]
         self.assertEqual(
-            [item["sourceEntryNumber"] for item in added], list(range(4526, 6159))
+            [item["sourceUnitId"] for item in added],
+            [f"openiti-5835c183-unit-{ordinal:06d}" for ordinal in range(6159, 7763)],
         )
         self.assertTrue(all("editorialSupply" not in item for item in added))
+        self.assertTrue(all("sourceRawSha256" in item for item in added))
 
     def test_volume4_title_only_decision_is_exact_and_schema_valid(self) -> None:
         title_only = MODULE.decision_for_entry(self.profile, 5041)
@@ -64,7 +61,7 @@ class EntryTitleContractTests(unittest.TestCase):
         self.assertEqual(title_only["bodyOpeningKind"], "none")
         self.assertEqual(title_only["bodyOpening"], {"ar": "", "en": ""})
         schema = json.loads(
-            (ROOT / "schemas" / "entry-title-decisions.v2.schema.json").read_text(
+            (ROOT / "schemas" / "entry-title-decisions.v3.schema.json").read_text(
                 encoding="utf-8"
             )
         )
@@ -311,7 +308,35 @@ class EntryTitleContractTests(unittest.TestCase):
 
     def test_entry_outside_governed_ranges_is_rejected(self) -> None:
         with self.assertRaisesRegex(ValueError, "lacks a governed bilingual"):
-            MODULE.decision_for_entry(self.profile, 6159)
+            MODULE.decision_for_entry(self.profile, 7762)
+
+    def test_repeated_printed_numbers_resolve_only_by_source_unit(self) -> None:
+        for number, ordinals in ((6986, (6986, 6987)), (7760, (7760, 7761))):
+            with self.subTest(number=number):
+                with self.assertRaisesRegex(ValueError, "lacks a governed bilingual"):
+                    MODULE.decision_for_entry(self.profile, number)
+                decisions = [
+                    MODULE.decision_for_entry(
+                        self.profile,
+                        number,
+                        f"openiti-5835c183-unit-{ordinal:06d}",
+                    )
+                    for ordinal in ordinals
+                ]
+                self.assertEqual([item["sourceEntryNumber"] for item in decisions], [number, number])
+                self.assertEqual(len({item["sourceRawSha256"] for item in decisions}), 2)
+
+    def test_volume5_title_only_decision_is_source_bound(self) -> None:
+        decision = MODULE.decision_for_entry(
+            self.profile, 7613, "openiti-5835c183-unit-007613"
+        )
+        self.assertEqual(decision["title"]["ar"], "مالك بن الجلاح")
+        self.assertEqual(decision["bodyOpeningKind"], "none")
+        self.assertEqual(decision["bodyOpening"], {"ar": "", "en": ""})
+        self.assertEqual(
+            decision["sourceRawSha256"],
+            "fa3cc474d223425554535518331a8e9d7406089e64ea728453049bdf784c4c1b",
+        )
 
 
 if __name__ == "__main__":

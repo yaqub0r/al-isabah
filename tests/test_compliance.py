@@ -143,9 +143,9 @@ class ComplianceTests(unittest.TestCase):
             contracts["entry-title-decisions"],
             {
                 "id": "entry-title-decisions",
-                "path": "profiles/entry-title-decisions.v7.json",
+                "path": "profiles/entry-title-decisions.v8.json",
                 "sha256": MODULE.canonical_text_sha256(
-                    ROOT / "profiles" / "entry-title-decisions.v7.json"
+                    ROOT / "profiles" / "entry-title-decisions.v8.json"
                 ),
             },
         )
@@ -153,9 +153,9 @@ class ComplianceTests(unittest.TestCase):
             contracts["entry-title-decision-schema"],
             {
                 "id": "entry-title-decision-schema",
-                "path": "schemas/entry-title-decisions.v2.schema.json",
+                "path": "schemas/entry-title-decisions.v3.schema.json",
                 "sha256": MODULE.canonical_text_sha256(
-                    ROOT / "schemas" / "entry-title-decisions.v2.schema.json"
+                    ROOT / "schemas" / "entry-title-decisions.v3.schema.json"
                 ),
             },
         )

@@ -48,6 +48,10 @@ HISTORICAL_POLICY_BINDINGS = {
         "1.2.0",
         "issue-0082-public-proposal-v1",
     ): "faf1078753c33c278098e71d0392a2af1e955320f090660da24ba64bc1831692",
+    (
+        "1.3.0",
+        "issue-0086-public-proposal-v1",
+    ): "9c82594b8d3a857baf54ba112ecf860e8a59b3f378381ab42db3819b1220cf34",
 }
 PINNED_TITLE_PROFILE_BINDINGS = {
     ("1.2.0", "issue-0070-public-proposal-v1"): {
@@ -70,12 +74,17 @@ PINNED_TITLE_PROFILE_BINDINGS = {
         "profileId": "entry-title-decisions.v7",
         "profileSha256": "a31e8ef7670f30577f70ba5c930c8c6b8803fc9bfce8eec3a362f4ac8c097a52",
     },
+    ("1.3.0", "issue-0085-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v8",
+        "profileSha256": "fa797cd530a5be7c9be4045c03b35fd08d28aaa75eb9c45b0a1523d2644d8cf9",
+    },
 }
 SOURCE_DERIVED_NAME_ID_PROPOSALS = {
     "issue-0080-public-proposal-v1",
     "issue-0082-public-proposal-v1",
     "issue-0084-public-proposal-v1",
     "issue-0086-public-proposal-v1",
+    "issue-0085-public-proposal-v1",
 }
 ARABIC_SCRIPT_RE = re.compile(
     r"[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff]"
@@ -260,25 +269,33 @@ def _title_decision_errors(proposal: dict[str, Any]) -> list[str]:
                 "title-decision-coverage-mismatch",
             )
         )
-    seen_numbers: set[int] = set()
     for index, record in enumerate(records):
         base = f"$.records[{index}]"
         number = record.get("printedEntryNumber")
-        if not isinstance(number, int) or number in seen_numbers:
+        if not isinstance(number, int):
             errors.append(
                 safe_error(
                     f"{base}.printedEntryNumber",
-                    "ambiguous-title-decision-key",
+                    "missing-title-body-decision",
                 )
             )
             continue
-        seen_numbers.add(number)
-        decision = decisions.get(number)
+        decision = decisions.get(record.get("id")) or decisions.get(number)
         if decision is None:
             errors.append(
                 safe_error(f"{base}.title", "missing-title-body-decision")
             )
             continue
+        if decision.get("sourceEntryNumber") != number:
+            errors.append(
+                safe_error(f"{base}.printedEntryNumber", "title-decision-mismatch")
+            )
+        if "sourceUnitId" in decision and (
+            record.get("id") != decision["sourceUnitId"]
+            or record.get("source", {}).get("exactTextSha256")
+            != decision.get("sourceRawSha256")
+        ):
+            errors.append(safe_error(base, "title-source-unit-mismatch"))
         expected_title = {
             "arabic": decision["title"]["ar"],
             "english": decision["title"]["en"],
@@ -297,7 +314,7 @@ def _title_decision_errors(proposal: dict[str, Any]) -> list[str]:
                 or record.get("arabic") != ""
                 or record.get("english") != ""
                 or record.get("source", {}).get("exactTextSha256")
-                != decision["sourceUnitSha256"]
+                != decision.get("sourceRawSha256", decision.get("sourceUnitSha256"))
             ):
                 errors.append(safe_error(base, "title-only-body-mismatch"))
         elif (
@@ -879,8 +896,11 @@ def validate(
                 enforce_public_english=enforce_public_english,
                 allowed_arabic_literals=governed_arabic_literals(
                     str(
-                        active_title_decisions.get(
-                            record.get("printedEntryNumber"), {}
+                        (
+                            active_title_decisions.get(record.get("id"))
+                            or active_title_decisions.get(
+                                record.get("printedEntryNumber"), {}
+                            )
                         ).get("bodyOpening", {}).get("en", "")
                     ),
                     formula_rules,
@@ -963,7 +983,7 @@ def validate(
     elif historical_policy_hash is not None:
         policy_hash = historical_policy_hash
     elif schema_version == "1.3.0":
-        successor_policy = ROOT / "compliance" / "policy-binding.v8.json"
+        successor_policy = ROOT / "compliance" / "policy-binding.v9.json"
         policy_hash = (
             sha256_text_file(successor_policy)
             if successor_policy.is_file()

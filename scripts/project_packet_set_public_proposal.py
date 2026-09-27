@@ -32,7 +32,7 @@ from validate_entry_titles import (  # noqa: E402
 
 
 INLINE_SECTION = re.compile(r"\s*#~:section:\d*\s*(\([^\n]+\))\s*")
-ENTRY_TITLE_PROFILE = ROOT / "profiles" / "entry-title-decisions.v7.json"
+ENTRY_TITLE_PROFILE = ROOT / "profiles" / "entry-title-decisions.v8.json"
 ENTRY_TITLE_PROFILE_NAME = re.compile(r"^entry-title-decisions\.v[0-9]+\.json$")
 
 
@@ -324,7 +324,6 @@ def project(
     )
     previous_end: int | None = None
     records: list[dict[str, Any]] = []
-    governed_numbers: set[int] = set()
     for _, packet in packets:
         if packet["authority"]["commit"] != authority["commit"] or packet["authority"]["sha256"] != authority["sha256"]:
             raise ValueError("packet authority mismatch")
@@ -340,13 +339,9 @@ def project(
             by_record[occurrence["recordId"]].append(occurrence)
         for entry in packet["entries"]:
             number = entry["sourceEntryNumber"]
-            if number in governed_numbers:
-                raise ValueError(
-                    f"printed entry number {number} is ambiguous under the "
-                    "current title-decision profile key"
-                )
-            governed_numbers.add(number)
-            decision = title_decisions.get(number)
+            decision = title_decisions.get(entry["sourceUnitId"]) or title_decisions.get(
+                number
+            )
             if decision is None:
                 raise ValueError(
                     f"source entry {number} lacks a governed bilingual "

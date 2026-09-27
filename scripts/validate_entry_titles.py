@@ -12,10 +12,12 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROFILE = ROOT / "profiles" / "entry-title-decisions.v7.json"
+PROFILE = ROOT / "profiles" / "entry-title-decisions.v8.json"
+HISTORICAL_PROFILE = ROOT / "profiles" / "entry-title-decisions.v7.json"
 GIT_SHA = re.compile(r"^[0-9a-f]{40}$")
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
 ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+SOURCE_UNIT_ID = re.compile(r"^openiti-5835c183-unit-([0-9]{6})$")
 RELATIONSHIP_PROSE = re.compile(
     r"\b(?:the\s+)?(?:wife|mother|sister|daughter)\s+of\b|\b(?:mentioned|narrated)\b",
     re.IGNORECASE,
@@ -131,6 +133,19 @@ def governed_title_and_body(
     """Apply one exact title decision to already governed packet fields."""
     title = decision["title"]
     body_opening = decision["bodyOpening"]
+    if (
+        entry.get("sourceEntryNumber") is not None
+        and entry["sourceEntryNumber"] != decision.get("sourceEntryNumber")
+    ):
+        raise ValueError("title decision printed number does not match the source unit")
+    source_unit_id = decision.get("sourceUnitId")
+    if source_unit_id is not None:
+        if entry.get("sourceUnitId") != source_unit_id:
+            raise ValueError("title decision does not match the source unit")
+        if entry.get("source", {}).get("rawSha256") != decision.get(
+            "sourceRawSha256"
+        ):
+            raise ValueError("title decision does not match the source-unit raw hash")
     if decision.get("bodyOpeningKind") == "none":
         source_heading = clean_source_heading_boundary(
             render_arabic(entry["source"]["headingArabic"])
@@ -142,7 +157,8 @@ def governed_title_and_body(
             or source_heading != title["ar"]
             or source_text != title["ar"]
             or english_text != title["en"]
-            or entry["source"].get("rawSha256") != decision.get("sourceUnitSha256")
+            or entry["source"].get("rawSha256")
+            != decision.get("sourceRawSha256", decision.get("sourceUnitSha256"))
         ):
             raise ValueError(
                 f"source ordinal {entry['sourceOrdinal']} is not an exact "
@@ -313,26 +329,30 @@ def _editorial_supply_errors(
     return errors
 
 
-def decision_index(profile: dict[str, Any]) -> dict[int, dict[str, Any]]:
-    """Return the exact governed decisions, keyed by printed entry number.
-
-    The current profile contract makes printed entry number its decision key.
-    Profile validation rejects duplicates before this index is suitable for a
-    public projection.
-    """
+def decision_index(profile: dict[str, Any]) -> dict[int | str, dict[str, Any]]:
+    """Index exact source units and unambiguous printed-number fallbacks."""
     errors = validate(profile)
     if errors:
         raise ValueError("entry-title decision profile is invalid")
-    return {
-        decision["sourceEntryNumber"]: decision
-        for decision in profile["decisions"]
-    }
+    by_number: dict[int, list[dict[str, Any]]] = {}
+    indexed: dict[int | str, dict[str, Any]] = {}
+    for decision in profile["decisions"]:
+        by_number.setdefault(decision["sourceEntryNumber"], []).append(decision)
+        if "sourceUnitId" in decision:
+            indexed[decision["sourceUnitId"]] = decision
+    for number, decisions in by_number.items():
+        if len(decisions) == 1:
+            indexed[number] = decisions[0]
+    return indexed
 
 
 def decision_for_entry(
-    profile: dict[str, Any], source_entry_number: int
+    profile: dict[str, Any], source_entry_number: int, source_unit_id: str | None = None
 ) -> dict[str, Any]:
-    decision = decision_index(profile).get(source_entry_number)
+    indexed = decision_index(profile)
+    decision = indexed.get(source_unit_id) if source_unit_id else None
+    if decision is None:
+        decision = indexed.get(source_entry_number)
     if decision is None:
         raise ValueError(
             f"source entry {source_entry_number} lacks a governed bilingual "
@@ -349,6 +369,8 @@ def body_after_decided_title(
     location: str,
 ) -> str:
     """Remove only an exact decided title and prove the retained body opening."""
+    if not body_opening:
+        raise ValueError(f"{location}: ordinary body opening cannot be empty")
     if not text.startswith(title):
         raise ValueError(f"{location}: decided title is not an exact text prefix")
     remainder = text[len(title):]
@@ -370,8 +392,8 @@ def validate(profile: dict[str, Any]) -> list[str]:
         "workId": "ibn-hajar-al-isabah",
         "status": "active",
     }
-    if schema_version not in {"1.1.0", "1.2.0"}:
-        errors.append("profile: schemaVersion must be '1.1.0' or '1.2.0'")
+    if schema_version not in {"1.1.0", "1.2.0", "1.3.0"}:
+        errors.append("profile: unsupported schemaVersion")
     for key, value in expected.items():
         if profile.get(key) != value:
             errors.append(f"profile: {key} must be {value!r}")
@@ -399,7 +421,15 @@ def validate(profile: dict[str, Any]) -> list[str]:
     if not isinstance(decisions, list) or not decisions:
         return errors + ["profile: decisions must be a non-empty list"]
 
-    seen: set[int] = set()
+    historical_count = 0
+    if schema_version == "1.3.0":
+        historical = load(HISTORICAL_PROFILE)["decisions"]
+        historical_count = len(historical)
+        if decisions[:historical_count] != historical:
+            errors.append("profile: historical v7 decisions must remain unchanged")
+
+    seen_numbers: dict[int, list[dict[str, Any]]] = {}
+    seen_units: set[str] = set()
     allowed_roles = {"positive-reference", "corrective", "typography-reference"}
     for index, decision in enumerate(decisions):
         location = f"decision {index}"
@@ -414,7 +444,10 @@ def validate(profile: dict[str, Any]) -> list[str]:
             "bodyOpening",
         }
         title_only = decision.get("bodyOpeningKind") == "none"
-        if title_only:
+        source_bound = schema_version == "1.3.0" and index >= historical_count
+        if source_bound:
+            allowed_fields.update({"sourceUnitId", "sourceRawSha256"})
+        elif title_only:
             allowed_fields.add("sourceUnitSha256")
         if "editorialSupply" in decision:
             allowed_fields.add("editorialSupply")
@@ -423,22 +456,42 @@ def validate(profile: dict[str, Any]) -> list[str]:
         number = decision.get("sourceEntryNumber")
         if not isinstance(number, int) or number < 1:
             errors.append(f"{location}: sourceEntryNumber must be positive")
-        elif number in seen:
-            errors.append(f"{location}: duplicate sourceEntryNumber {number}")
         else:
-            seen.add(number)
+            seen_numbers.setdefault(number, []).append(decision)
+        if source_bound:
+            source_unit_id = decision.get("sourceUnitId")
+            match = SOURCE_UNIT_ID.fullmatch(str(source_unit_id))
+            if match is None:
+                errors.append(
+                    f"{location}: sourceUnitId must be a pinned source-unit key"
+                )
+            elif int(match.group(1)) != 6159 + index - historical_count:
+                errors.append(f"{location}: sourceUnitId must follow source order")
+            elif source_unit_id in seen_units:
+                errors.append(f"{location}: duplicate sourceUnitId {source_unit_id}")
+            else:
+                seen_units.add(source_unit_id)
+            if not SHA256.fullmatch(str(decision.get("sourceRawSha256", ""))):
+                errors.append(f"{location}: sourceRawSha256 must be a SHA-256")
         if decision.get("role") not in allowed_roles:
             errors.append(f"{location}: invalid role")
         if decision.get("bodyOpeningKind") not in {"lineage", "prose", "none"}:
             errors.append(f"{location}: invalid bodyOpeningKind")
         errors.extend(_bilingual(decision.get("title"), f"{location}.title"))
         if title_only:
-            if schema_version != "1.2.0":
-                errors.append(f"{location}: title-only mode requires profile schema 1.2.0")
+            if schema_version not in {"1.2.0", "1.3.0"}:
+                errors.append(
+                    f"{location}: title-only mode requires profile schema 1.2.0 or later"
+                )
             if decision.get("bodyOpening") != {"ar": "", "en": ""}:
                 errors.append(f"{location}.bodyOpening: title-only opening must be exactly empty in both languages")
-            if not SHA256.fullmatch(str(decision.get("sourceUnitSha256", ""))):
-                errors.append(f"{location}.sourceUnitSha256: must be a SHA-256")
+            raw_hash = (
+                decision.get("sourceRawSha256")
+                if source_bound
+                else decision.get("sourceUnitSha256")
+            )
+            if not SHA256.fullmatch(str(raw_hash or "")):
+                errors.append(f"{location}: title-only source hash must be a SHA-256")
             if "editorialSupply" in decision:
                 errors.append(f"{location}: title-only mode cannot use editorialSupply")
         else:
@@ -454,6 +507,11 @@ def validate(profile: dict[str, Any]) -> list[str]:
                     profile,
                     f"{location}.editorialSupply",
                 )
+            )
+    for number, matches in seen_numbers.items():
+        if len(matches) > 1 and any("sourceUnitId" not in item for item in matches):
+            errors.append(
+                f"profile: duplicate sourceEntryNumber {number} needs distinct source-unit keys"
             )
     return errors
 

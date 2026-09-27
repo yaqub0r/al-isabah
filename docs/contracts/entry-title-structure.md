@@ -55,7 +55,7 @@ heading or the unsplit adjudicated paragraph.
 ## Decisions and evidence
 
 Book-specific boundary decisions live in the versioned
-[`entry-title-decisions.v7.json`](../../profiles/entry-title-decisions.v7.json)
+[`entry-title-decisions.v8.json`](../../profiles/entry-title-decisions.v8.json)
 profile. Each decision records the pinned source authority and the exact title
 realization in both languages. A consumer may use that profile to build a
 working presentation, but it must not silently expand, shorten, or otherwise
@@ -71,6 +71,12 @@ rewrites the canonical Arabic or treats the supplied title as source text.
 
 Changing a decision requires reviewable evidence and a new profile version.
 Canonical Arabic bytes, source hashes, and earlier decisions remain in history.
+
+Printed entry numbers are display metadata rather than stable identity. When a
+source range contains a repeated printed number, each new decision binds its
+immutable `sourceUnitId` and exact source-unit hash. Consumers resolve that key
+first and may use a printed-number fallback only when the active profile makes
+the number unambiguous.
 
 When a pinned source unit consists only of its identifying bilingual title,
 the decision uses `bodyOpeningKind: "none"`, exact empty Arabic and English
@@ -138,3 +144,11 @@ retain damaged or unresolved source readings without silent repair. Profiles
 v1–v6 remain immutable historical decision sets, and Issue 84 keeps its exact
 v6 binding. These decisions do not assert full-biography translation or human
 scholarly review.
+
+Profile v8 carries forward every v7 decision unchanged and adds the 1,604
+source-only title/body-opening decisions for Volume 5 source ordinals
+6159–7762. Its new decisions bind source-unit identity and exact source hashes,
+so the repeated printed numbers 6986 and 7760 remain distinct. Ordinal 7613 is
+the exact title-only unit `مالك بن الجلاح`. Profiles v1–v7 remain immutable;
+Issue 86 keeps its exact v7 binding. These decisions do not assert
+full-biography translation or human scholarly review.

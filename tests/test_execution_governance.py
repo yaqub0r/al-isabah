@@ -302,10 +302,12 @@ class ExecutionArtifactTests(unittest.TestCase):
             "compliance/policy-binding.v5.json": "a89774893a9c623814f51a942c0c43056a0f6ffb8b979a43bc6bdb6e317c3f91",
             "compliance/policy-binding.v6.json": "faf1078753c33c278098e71d0392a2af1e955320f090660da24ba64bc1831692",
             "compliance/policy-binding.v7.json": "f75113f0fe08869efa947c19b9a12a38e5a8c9ece972bbf5d8ebecea6ce48810",
+            "compliance/policy-binding.v8.json": "9c82594b8d3a857baf54ba112ecf860e8a59b3f378381ab42db3819b1220cf34",
             "docs/contracts/translation-governance-reference.v2.json": "7d73170d384f417733134e5ca09263ba73c92e941c5590d534d9eb38ec6704ae",
             "docs/contracts/translation-governance-reference.v4.json": "fa4f4e35fab2182d31cb9441e9cf84d2c01a8bc1c6467abca8c09ae9525c82a4",
             "docs/contracts/translation-governance-reference.v6.json": "804e9d2bec2c442be69a023e5dccf93cfc7a07b0e9bccba696721185d8b48e0d",
             "docs/contracts/translation-governance-reference.v7.json": "1a55f12c9ba729876440a944bed47b1f2d28bbb1d11b443bab646f6ca4ed5fe8",
+            "docs/contracts/translation-governance-reference.v8.json": "c7046739d02009c01c46af3d4cc4d812d3d7382ad05b76773a8efc6c3f308d2e",
             "profiles/entry-title-decisions.v4.json": "f177c6c9fba1702aae911c0dba024e9e24b1093016b62066a573f63e6afff2a3",
             "profiles/entry-title-decisions.v5.json": "3f338cf5e748d142c3de86d9926db5f97b727de3790a92be7afb9bcc9d1d8221",
             "schemas/translation-work-packet.v3.schema.json": "80a1a0d1de2d8c21e62974b47c2ab13a2cc41e67970d0754c5d2baedbd99a0eb",
@@ -317,12 +319,12 @@ class ExecutionArtifactTests(unittest.TestCase):
         self.assertEqual(old["properties"]["schemaVersion"]["const"], "1.5.0")
         self.assertNotIn("execution", old["$defs"]["stageProvenance"]["properties"])
         active = GOVERNANCE.read_json(
-            GOVERNANCE.ROOT / "schemas/translation-work-packet.v6.schema.json"
+            GOVERNANCE.ROOT / "schemas/translation-work-packet.v7.schema.json"
         )
         self.assertEqual(active["properties"]["schemaVersion"]["const"], "3.0.0")
         self.assertEqual(
             active["$defs"]["policy"]["properties"]["bindingPath"]["const"],
-            "compliance/policy-binding.v8.json",
+            "compliance/policy-binding.v9.json",
         )
 
 

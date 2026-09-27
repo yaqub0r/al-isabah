@@ -661,7 +661,7 @@ class PublicDistributionTests(unittest.TestCase):
         self.assertIn("**[Zayd] ibn Abī Awfā**", review)
         self.assertIn("**[زيد] بن أبي أوفى**", review)
 
-    def test_current_title_binding_requires_exact_hash_and_unique_coverage(self):
+    def test_current_title_binding_requires_exact_hash_and_source_unit_coverage(self):
         profile = PACKET_PROJECT.load_title_profile(PACKET_PROJECT.ENTRY_TITLE_PROFILE)
         decision = next(
             item
@@ -670,7 +670,7 @@ class PublicDistributionTests(unittest.TestCase):
         )
         proposal = {
             "entryTitleDecisions": {
-                "profileId": "entry-title-decisions.v7",
+                "profileId": "entry-title-decisions.v8",
                 "profileSha256": BOUNDARY.sha256_file(PACKET_PROJECT.ENTRY_TITLE_PROFILE),
                 "coveredRecordCount": 1,
             },
@@ -700,11 +700,33 @@ class PublicDistributionTests(unittest.TestCase):
         proposal["entryTitleDecisions"]["profileSha256"] = BOUNDARY.sha256_file(
             PACKET_PROJECT.ENTRY_TITLE_PROFILE
         )
+        repeated = [
+            item
+            for item in profile["decisions"]
+            if item["sourceEntryNumber"] == 6986
+        ]
+        self.assertEqual(len(repeated), 2)
         proposal["entryTitleDecisions"]["coveredRecordCount"] = 2
-        proposal["records"].append(copy.deepcopy(proposal["records"][0]))
+        proposal["records"] = [
+            {
+                "id": item["sourceUnitId"],
+                "printedEntryNumber": 6986,
+                "title": {
+                    "arabic": item["title"]["ar"],
+                    "english": item["title"]["en"],
+                    "method": "profile-decision",
+                },
+                "arabic": item["bodyOpening"]["ar"] + " synthetic",
+                "english": item["bodyOpening"]["en"] + " synthetic",
+                "source": {"exactTextSha256": item["sourceRawSha256"]},
+            }
+            for item in repeated
+        ]
+        self.assertEqual(PROPOSAL_VALIDATOR._title_decision_errors(proposal), [])
+        proposal["records"][1]["id"] = proposal["records"][0]["id"]
         errors = PROPOSAL_VALIDATOR._title_decision_errors(proposal)
         self.assertTrue(
-            any("category=ambiguous-title-decision-key" in error for error in errors),
+            any("category=title-source-unit-mismatch" in error for error in errors),
             errors,
         )
 

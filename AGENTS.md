@@ -74,7 +74,7 @@ hiding them with fluent wording.
 
 All contracts needed to make Al-Isabah translation decisions must remain local
 to this repository and integrity-bound by
-`compliance/policy-binding.v7.json`. The v1-v6 bindings remain immutable
+`compliance/policy-binding.v9.json`. The v1-v8 bindings remain immutable
 release provenance for earlier public-working artifacts. A translation change may use
 restricted evidence in approved external storage, but it must not depend on
 policy text in another repository. Run `python -m unittest discover -s tests` before delivery;

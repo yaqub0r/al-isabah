@@ -27,15 +27,15 @@ from typing import Any, Iterable
 SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
-from validate_entry_titles import governed_title_and_body
+from validate_entry_titles import decision_index, governed_title_and_body
 from schema_validation import validate_schema_instance
 from execution_governance import validate_execution
 
 
 ROOT = SCRIPT_DIR.parent
 DEFAULT_MANIFEST = ROOT / "profiles" / "translation-source.v1.json"
-DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v8.json"
-DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v6.schema.json"
+DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v9.json"
+DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v7.schema.json"
 FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 RUNTIME_ROOT = ROOT / ".runtime" / "translation"
 PROPOSAL_ROOT = ROOT / "content" / "translation-proposals"
@@ -2457,6 +2457,25 @@ def parse_openiti_entries(path: Path) -> list[dict[str, Any]]:
             finish(line_number - 1)
             finish_pending(line_number - 1)
             continue
+        # The invocation immediately before the four-pipe Muhammad section is
+        # structural context for the following unit.  Keep this exact adjacent
+        # pair out of the preceding biography; ordinary ``# `` prose remains
+        # part of its current source unit.
+        next_line = lines[line_number] if line_number < len(lines) else ""
+        next_structure = STRUCTURE_RE.match(next_line)
+        if (
+            current is not None
+            and line == "# بسم الله الرحمن الرحيم"
+            and next_structure is not None
+            and len(next_structure.group(1)) == 4
+        ):
+            finish(line_number - 1)
+            pending = {
+                "lineStart": line_number,
+                "startPage": current_page,
+                "rawLines": [line],
+            }
+            continue
         match = ENTRY_RE.match(line)
         if match:
             finish(line_number - 1)
@@ -2710,7 +2729,7 @@ def load_issue(number: int, path: Path | None = None) -> dict[str, Any]:
 
 def policy_snapshot(policy_path: Path) -> dict[str, Any]:
     policy = load_json(policy_path)
-    if policy.get("schema") != "al-isabah.local-policy-binding.v8":
+    if policy.get("schema") != "al-isabah.local-policy-binding.v9":
         raise WorkflowError("policy binding has an unexpected schema")
     authority = policy.get("authority", {})
     if authority.get("repository") != "https://github.com/yaqub0r/al-isabah":
@@ -2734,7 +2753,7 @@ def policy_snapshot(policy_path: Path) -> dict[str, Any]:
         if canonical_text_sha256(path) != contract.get("sha256"):
             raise WorkflowError(f"policy binding hash is stale: {contract.get('id')}")
     return {
-        "bindingPath": "compliance/policy-binding.v8.json",
+        "bindingPath": "compliance/policy-binding.v9.json",
         "bindingSha256": canonical_text_sha256(policy_path),
         "contracts": contracts,
     }
@@ -2742,7 +2761,7 @@ def policy_snapshot(policy_path: Path) -> dict[str, Any]:
 
 def active_title_decisions(
     contracts: list[dict[str, Any]],
-) -> dict[int, dict[str, Any]]:
+) -> dict[int | str, dict[str, Any]]:
     """Return all decisions from the integrity-checked active title profile."""
     matches = [
         contract
@@ -2763,14 +2782,10 @@ def active_title_decisions(
     decisions = profile.get("decisions")
     if not isinstance(decisions, list):
         raise WorkflowError("entry-title decision profile has no decisions array")
-    indexed: dict[int, dict[str, Any]] = {}
-    for decision in decisions:
-        if not isinstance(decision, dict):
-            continue
-        number = decision.get("sourceEntryNumber")
-        if isinstance(number, int):
-            indexed[number] = decision
-    return indexed
+    try:
+        return decision_index(profile)
+    except ValueError as exc:
+        raise WorkflowError("entry-title decision profile is invalid") from exc
 
 
 def active_title_editorial_supplies(
@@ -2780,6 +2795,7 @@ def active_title_editorial_supplies(
     return {
         number: decision
         for number, decision in active_title_decisions(contracts).items()
+        if isinstance(number, int)
         if isinstance(decision.get("editorialSupply"), dict)
         and decision["editorialSupply"].get("kind")
         == "witness-bound-subject-head"
@@ -4727,7 +4743,8 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
 
         adjudication = entry.get("adjudication", {})
         decision = (
-            title_decisions.get(entry.get("sourceEntryNumber"))
+            title_decisions.get(entry.get("sourceUnitId"))
+            or title_decisions.get(entry.get("sourceEntryNumber"))
             if manifest.get("status") != "test-fixture"
             else None
         )
@@ -5012,7 +5029,9 @@ def render_review(packet: dict[str, Any]) -> str:
                 ]
             )
         if governed_titles_required:
-            decision = title_decisions.get(entry.get("sourceEntryNumber"))
+            decision = title_decisions.get(entry.get("sourceUnitId")) or title_decisions.get(
+                entry.get("sourceEntryNumber")
+            )
             if decision is None:
                 raise WorkflowError(
                     f"source unit {entry.get('sourceOrdinal')}: active profile "

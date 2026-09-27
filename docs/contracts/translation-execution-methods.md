@@ -136,3 +136,11 @@ shard, tool and stage-provenance data remain version 3.0.0. Registry v2 and the
 approved execution method remain unchanged. Reference v7, binding v7, title
 profile v6, packet schema v5, prior executions and releases retain their
 immutable pins.
+
+Machine reference v9.0.0 and policy binding v9 succeed v8 for Issue 85's
+additive Volume 5 source-unit-keyed title profile and exact structural
+invocation boundary. Packet-schema document v7 hard-pins the v9 binding;
+packet, shard, tool and stage-provenance data remain version 3.0.0. Registry v2
+and the approved execution method remain unchanged. Reference v8, binding v8,
+title profile v7, packet schema v6, prior executions and releases retain their
+immutable pins.
