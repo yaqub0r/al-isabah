@@ -194,3 +194,34 @@ as metadata only. Source partitioning and all semantic stages remain unstarted.
 The real 1,550-entry import has not been performed. The exact real semantic
 artifact and owner release/admission decisions remain required; these engineering
 fixtures do not replace them. No merge, publication or model execution occurs.
+
+
+## Concrete local trial preparation
+
+The next deterministic checkpoint assembles the selected 13 entries and seven
+owned structural units into 20 lossless OpenITI blocks, with two separately
+identified inherited heading contexts and all four retained findings. Its ignored
+input packet and public-safe partition metadata reproduce from the exact approved
+source and verified successor record hashes. This is paragraph-marker partitioning,
+not a claim that title, name, sentence or semantic boundaries were inferred.
+English structural alignment and all semantic review stages remain unstarted.
+
+`scripts/knowledge_pilot_trial.py` provides a separate local-only request,
+authorization, stage preparation, host capture and final validation path. The
+runbook is `docs/translation/knowledge-pilot-local-trial.md`. It checks the reviewed
+immutable feature commit and critical working files, exact packet/partition,
+method/profile/schema/runbook pins, source scope and explicit task/worker settings.
+Only an actual user response to the concrete ready trial in the coordinating
+conversation can authorize its three fresh semantic workers. The coordinator
+records that response honestly under the trusted-operator model and separately
+supplies its decision digest. This does not authenticate a GitHub identity from
+chat or approve merge, publication, production method activation or consumer intake.
+No actual approval receipt exists at preparation time.
+
+The upstream-only stage schema and validator require exact source-span coverage,
+source-bound names/mentions, typed reference closure, retained-finding dispositions,
+positive independent nonclaim reviews, explicit per-record semantic checks, and
+honest partial/unresolved states. Final reporting requires all three stage outputs
+and actual host receipts. Source expression and mention positions remain in ignored
+runtime workflow evidence. A successful local trial still leaves exact artifact
+admission and public release to their separate owner decisions after review.
