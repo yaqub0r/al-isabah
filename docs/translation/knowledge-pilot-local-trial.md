@@ -142,3 +142,71 @@ inputs, outputs and decisions must remain under ignored
 `.runtime/knowledge/issue-0089/`; a public output directory is rejected. Use a new
 `--directory` beneath that root for a newly reviewed commit; conflicting earlier
 outputs are preserved rather than overwritten.
+
+
+## Local host adapter repair and bounded recovery
+
+Local-trial receipts now use `al-isabah.knowledge-local-trial-receipt.v2`.
+The host child identity is `session_meta.id`; on the supported linked-worker
+format, `session_meta.session_id`, `parent_thread_id`, and
+`source.subagent.thread_spawn.parent_thread_id` all identify the parent task.
+All three must match the independently observed task session. Missing,
+contradictory, or malformed linkage fails closed. `history_mode: paginated`
+is storage metadata, not evidence of inherited conversation. Actual launch
+requests must still specify fresh non-forked workers, and each worker's selected
+turn must be its first. Later parent turns are permitted only with the same
+session, request, provider, model, reasoning, and fork state; capture the actual
+parent turn's effective settings each time.
+
+The production translation v1 evidence schema, embedded packet schema, policy
+bindings, and frozen knowledge draft fixtures remain unchanged. Legacy standalone
+metadata retains its old observation shape. Linked children require the explicit
+parent-aware local adapter and cannot enter those frozen production schemas.
+This is a local-trial compatibility repair, not a translation protocol migration.
+
+For the interrupted first-stage trial only, `scripts/knowledge_pilot_recovery.py`
+provides a separate recovery path. It preserves the original decision, input,
+and output bytes and their original execution code. It reconstructs the old input
+using the committed historical runbook and verifies that source, profile, schema,
+method, cohort, and launch settings remain identical. Its new request separately
+pins the repaired verifier commit and the original canonical and raw-file hashes.
+The original three-worker authorization allows only the two remaining stages;
+extraction cannot be rerun through recovery. The same parent task is retained.
+
+Before generating the repair request, the coordinator reviews operational evidence
+that the exact current output was finalized and hash-validated in the initial
+worker turn. A later metadata-only turn must be disclosed explicitly. Record the
+selected actual task and worker observations, that initial output digest, the
+additional turn ID, `initialTurnFinalized: true`, and
+`additionalTurnDisposition: metadata_only_no_output_change` in a private
+`al-isabah.knowledge-local-trial-repair-review.v1` record. If the output was written
+or changed later, or chronology is uncertain, this bounded recovery is unavailable.
+The review is a trusted coordinator judgment, not something inferred from
+`firstTurn` or cryptographically proved by a self-written boolean.
+
+Use an explicitly chosen NEW ignored directory and the original trial directory:
+
+```powershell
+python scripts/knowledge_pilot_recovery.py request --original-directory .runtime/knowledge/issue-0089/trial --directory .runtime/knowledge/issue-0089/adapter-recovery --review <review-json>
+```
+
+The request is unsigned and does not authorize recovery. After reviewing the
+repair diff, tests, exact commit and request, the coordinator may record a separate
+`al-isabah.knowledge-local-trial-repair-decision.v1` with the exact request,
+`approval: approved`, and origin
+`{kind: trusted_coordinator_repair_review, threadId: <original-coordinator-id>}`.
+This scope-preserving repair relies on the unchanged actual user approval; never
+label the coordinator review as a new user message or rewrite the old decision.
+No publication, admission, new scope, or new model authorization is implied.
+
+Run `capture-original` with that decision, its separately supplied digest, and the
+actual task/worker log, request, session and initial-turn arguments. It re-observes
+both host identities and writes only a new `recovery.json`, explicitly marked
+`retrospective_verification_not_execution`. Original evidence remains in place.
+Use `prepare` and `capture` for `knowledge_independent_review`, then
+`knowledge_adjudication`, supplying the same original directory, new directory,
+review, decision and digest. Later captures select the actual current parent turn
+and distinct fresh workers. Use `report` for the final local validation. All
+remaining inputs bind the recovery digest and original output/receipt lineage;
+no original stage is relabeled as having run under repaired code. Conflicting
+existing files fail rather than being replaced. This helper never launches models.

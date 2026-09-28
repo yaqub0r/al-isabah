@@ -42,6 +42,60 @@ class HostRuntimeTests(unittest.TestCase):
         path.write_text("".join(json.dumps(row) + "\n" for row in records), encoding="utf-8")
         return path
 
+    def linked_log(self,change=None,later=False):
+        rows=[{'type':'session_meta','payload':{
+            'id':'worker','session_id':'task','parent_thread_id':'task',
+            'source':{'subagent':{'thread_spawn':{'parent_thread_id':'task','depth':1}}},
+            'history_mode':'paginated','model_provider':'openai'}},
+            {'type':'turn_context','payload':{'turn_id':'initial','model':'gpt-5.6-sol','effort':'xhigh'}}]
+        if later:rows.append({'type':'turn_context','payload':{'turn_id':'metadata-followup','model':'gpt-5.6-sol','effort':'xhigh'}})
+        if change:change(rows)
+        path=self.root/'linked.jsonl'
+        path.write_text(''.join(json.dumps(r)+'\n' for r in rows),encoding='utf-8')
+        return path
+
+    def test_linked_worker_identity_is_separate_from_parent(self):
+        path=self.linked_log(later=True)
+        observed=HOST.observe_session(path,'worker','initial',expected_parent_session_id='task')
+        self.assertEqual((observed['sessionId'],observed['parentSessionId']),('worker','task'))
+        self.assertTrue(observed['firstTurn']);self.assertFalse(observed['forked'])
+        self.assertEqual(HOST.launch_errors({'request':HOST.launch_request('codex-worker','gpt-5.6-sol','xhigh'),'observed':observed},HOST.configuration_for(METHOD),'codex-worker'),[])
+        later=HOST.observe_session(path,'worker','metadata-followup',expected_parent_session_id='task')
+        self.assertFalse(later['firstTurn'])
+        self.assertTrue(HOST.launch_errors({'request':HOST.launch_request('codex-worker','gpt-5.6-sol','xhigh'),'observed':later},HOST.configuration_for(METHOD),'codex-worker'))
+        for session,parent in [('wrong','task'),('worker','wrong'),('worker','worker')]:
+            with self.assertRaises(ValueError):HOST.observe_session(path,session,'initial',expected_parent_session_id=parent)
+        with self.assertRaises(ValueError):HOST.observe_session(path,'worker','initial')
+
+    def test_linked_metadata_missing_contradictory_malformed_or_ambiguous_rejected(self):
+        changes=[]
+        for field in ('id','session_id','parent_thread_id'):
+            changes.extend([lambda r,f=field:r[0]['payload'].pop(f),lambda r,f=field:r[0]['payload'].update({f:'wrong'})])
+        changes.extend([
+            lambda r:r[0]['payload'].update(source='subagent'),
+            lambda r:r[0]['payload'].update(source={'subagent':None}),
+            lambda r:r[0]['payload'].update(source={'subagent':{'thread_spawn':[]}}),
+            lambda r:r[0]['payload']['source']['subagent']['thread_spawn'].pop('parent_thread_id'),
+            lambda r:r[0]['payload']['source']['subagent']['thread_spawn'].update(parent_thread_id='wrong'),
+            lambda r:r[0]['payload'].update(parent_session_id='wrong'),
+            lambda r:r[0]['payload'].update(forked_from_id={}),
+            lambda r:r.append(copy.deepcopy(r[0])),
+            lambda r:r.append({'type':'turn_context','payload':{'turn_id':'initial','model':'wrong','effort':'xhigh'}}),
+        ])
+        for change in changes:
+            with self.subTest(change=change):
+                with self.assertRaises(ValueError):HOST.observe_session(self.linked_log(change),'worker','initial',expected_parent_session_id='task')
+
+    def test_linked_worker_fork_and_effective_model_mismatch_still_fail(self):
+        for change in [lambda r:r[0]['payload'].update(forked_from_id='old'),lambda r:r[0]['payload'].update(forked_from='old'),lambda r:r[1]['payload'].update(model='wrong')]:
+            observed=HOST.observe_session(self.linked_log(change),'worker','initial',expected_parent_session_id='task')
+            self.assertTrue(HOST.launch_errors({'request':HOST.launch_request('codex-worker','gpt-5.6-sol','xhigh'),'observed':observed},HOST.configuration_for(METHOD),'codex-worker'))
+
+    def test_legacy_observation_shape_stays_frozen(self):
+        observed=HOST.observe_session(self.log(),'worker','turn')
+        self.assertEqual(set(observed),{'source','sessionId','turnId','provider','model','reasoning','firstTurn','forked'})
+        self.assertNotIn('parentSessionId',observed)
+
     def launch(self, kind="codex-worker", session="worker", **kwargs):
         return HOST.capture_launch(HOST.launch_request(kind, "gpt-5.6-sol", "xhigh"),
                                    self.log(session=session, **kwargs), session, "turn", kind, METHOD)

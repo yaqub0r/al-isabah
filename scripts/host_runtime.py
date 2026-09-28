@@ -50,7 +50,8 @@ def request_errors(request: Any, configuration: dict[str, Any], kind: str) -> li
     return []
 
 
-def observe_session(path: Path, session_id: str, turn_id: str) -> dict[str, Any]:
+def observe_session(path: Path, session_id: str, turn_id: str, *,
+                    expected_parent_session_id: str | None = None) -> dict[str, Any]:
     """Versioned adapter for Codex session_meta / turn_context JSONL records.
 
     The log may contain private expression: parse it in memory, select metadata
@@ -84,8 +85,33 @@ def observe_session(path: Path, session_id: str, turn_id: str) -> dict[str, Any]
     if len(metadata) != 1 or not selected:
         fail("exact session and turn metadata required")
     meta = metadata[0]
-    if meta.get("id") != session_id or meta.get("session_id", session_id) != session_id:
+    if not isinstance(session_id, str) or not session_id or meta.get("id") != session_id:
         fail("session identity mismatch")
+    source = meta.get("source")
+    nested_parent = None
+    linked_source = isinstance(source, dict) and "subagent" in source
+    if linked_source:
+        subagent = source["subagent"]
+        spawn = subagent.get("thread_spawn") if isinstance(subagent, dict) else None
+        if not isinstance(spawn, dict):
+            fail("invalid worker parent metadata")
+        nested_parent = spawn.get("parent_thread_id")
+    has_parent = "parent_thread_id" in meta or "parent_session_id" in meta or linked_source
+    if expected_parent_session_id is None:
+        # Preserve the legacy observation shape. A linked child cannot silently
+        # fall back to treating the parent's session_id as its own identity.
+        if has_parent or meta.get("session_id", session_id) != session_id:
+            fail("explicit worker parent binding required or session identity mismatch")
+    else:
+        if (not isinstance(expected_parent_session_id, str) or not expected_parent_session_id
+                or expected_parent_session_id == session_id or not linked_source
+                or meta.get("session_id") != expected_parent_session_id
+                or meta.get("parent_thread_id") != expected_parent_session_id
+                or nested_parent != expected_parent_session_id):
+            fail("worker parent identity mismatch")
+    # A second alias is not accepted as an alternative source of parent identity.
+    if "parent_session_id" in meta and meta["parent_session_id"] != expected_parent_session_id:
+        fail("contradictory worker parent metadata")
     if any(item != selected[0] for item in selected):
         fail("effective settings changed within the selected turn")
     if not all(isinstance(value, str) and value for value in selected[0].values()):
@@ -93,11 +119,17 @@ def observe_session(path: Path, session_id: str, turn_id: str) -> dict[str, Any]
     provider = meta.get("model_provider")
     if not isinstance(provider, str) or not provider:
         fail("effective host provider is required")
-    return {
+    if any(key in meta and meta[key] is not None and (not isinstance(meta[key], str) or not meta[key])
+           for key in ("forked_from_id", "forked_from")):
+        fail("invalid fork metadata")
+    observation = {
         "source": "codex-session-metadata", "sessionId": session_id, "turnId": turn_id,
         "provider": provider, **selected[0], "firstTurn": turns[0] == turn_id,
         "forked": bool(meta.get("forked_from_id") or meta.get("forked_from")),
     }
+    if expected_parent_session_id is not None:
+        observation["parentSessionId"] = expected_parent_session_id
+    return observation
 
 
 def launch_errors(launch: dict[str, Any], configuration: dict[str, Any], kind: str) -> list[str]:

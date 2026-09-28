@@ -13,6 +13,7 @@ import assemble_knowledge_pilot as assembly
 from knowledge_export import canonical,digest,read,shape,reject,Rejection
 ROOT=Path(__file__).resolve().parents[1]
 SCHEMA=ROOT/'schemas/knowledge-pilot-stage-output.v1.schema.json'
+WORKER_OBSERVATION=ROOT/'schemas/knowledge-local-trial-worker-observation.v2.schema.json'
 PROFILE=ROOT/'profiles/knowledge/volume-08.local-trial.v1.json'
 RUNBOOK=ROOT/'docs/translation/knowledge-pilot-local-trial.md'
 COORDINATOR='01a0e484-1411-7380-bb06-ada33129c9b2'
@@ -20,6 +21,8 @@ STAGES=method.STAGES
 REVIEW_AXES=('sourceIdentity','englishFidelity','structureCoverage','honorificPreservation','nameIdentity','negationNumbersTransmission','qualificationPreservation')
 COLLECTIONS=('entities','mentions','names','reports','events','claims','ambiguityGroups','values','places','times','qualifications','attributions','useRestrictions','findings')
 CRITICAL=('scripts/knowledge_pilot_trial.py','scripts/assemble_knowledge_pilot.py','scripts/prepare_knowledge_pilot.py','scripts/knowledge_export.py','scripts/knowledge_export_v2_draft2.py','scripts/knowledge_runtime_draft.py','scripts/host_runtime.py','scripts/execution_governance.py','scripts/schema_validation.py','scripts/public_boundary.py','scripts/translation_workflow.py','schemas/knowledge-pilot-stage-output.v1.schema.json','schemas/al-isabah-knowledge-export.v2-draft2.schema.json','profiles/knowledge/volume-08.local-trial.v1.json','profiles/knowledge/execution-methods.v1-draft.json','docs/translation/knowledge-pilot-local-trial.md','profiles/translation-source.v1.json','compliance/source-register.v1.json','compliance/policy-binding.v5.json',*assembly.POLICIES)
+
+CRITICAL=(*CRITICAL,'schemas/knowledge-local-trial-worker-observation.v2.schema.json','schemas/knowledge-runtime-receipt.v1-draft.schema.json','scripts/knowledge_pilot_recovery.py')
 
 
 def git(*args):
@@ -69,15 +72,18 @@ def decision_request(packet,metadata,commit):
     return {'schema':'al-isabah.knowledge-local-trial-request.v1','fixtureClass':fixture,'issue':89,'action':'bounded_local_knowledge_trial','coordinatorThreadId':COORDINATOR,'codeCommit':commit,'packetSha256':packet['packetSha256'],'partitionSha256':metadata['partitionSha256'],'partitionFileSha256':digest(metadata),'methodRegistrySha256':digest(read(method.REGISTRY_PATH)),'methodId':read(method.REGISTRY_PATH)['methods'][0]['methodId'],'profileSha256':digest(read(PROFILE)),'outputSchemaSha256':digest(read(SCHEMA)),'runbookLfSha256':assembly.lf_sha(RUNBOOK),'sourceOrdinals':metadata['sourceOrdinals'],'stages':list(STAGES),'maxFreshWorkers':3,'taskRequest':host_runtime.launch_request('codex-task','gpt-5.6-sol','xhigh'),'workerRequest':host_runtime.launch_request('codex-worker','gpt-5.6-sol','xhigh'),'provider':'openai','publicReleaseAuthorized':False,'consumerAdmissionAuthorized':False}
 
 
-def authorize(decision,expected_digest,packet,metadata,commit):
+def check_decision(decision,expected_digest,request):
     if digest(decision)!=expected_digest:reject('trial-decision-pin-mismatch')
     if set(decision)!={'schema','request','approval','origin'} or decision['schema']!='al-isabah.knowledge-local-trial-decision.v1' or decision['approval']!='approved':reject('trial-not-authorized')
-    request=decision_request(packet,metadata,commit)
     if decision['request']!=request:reject('trial-decision-scope-mismatch')
     origin=decision['origin']
     if set(origin)!={'kind','threadId','userTurnReference','recordedBy'} or origin['kind']!='actual_user_message' or origin['threadId']!=COORDINATOR or origin['recordedBy']!='trusted_coordinator' or not isinstance(origin['userTurnReference'],str):reject('trial-user-authorization-required')
-    # This is trusted operator provenance, not independent chat authentication.
     return request
+
+
+def authorize(decision,expected_digest,packet,metadata,commit):
+    # Trusted operator provenance, not independent chat authentication.
+    return check_decision(decision,expected_digest,decision_request(packet,metadata,commit))
 
 
 def retained_ledger(packet):
@@ -196,18 +202,26 @@ def validate_output(output,stage_input,packet):
 def receipt_checkpoint(receipt):return digest({k:v for k,v in receipt.items() if k not in {'checkpointSha256','receiptSha256'}})
 
 
+def task_identity(launch):
+    # The coordinator can continue in later turns; its independently observed
+    # effective settings, identity, request, and fork state must remain exact.
+    return {**launch,'observed':{k:v for k,v in launch['observed'].items() if k not in {'turnId','firstTurn'}}}
+
+
 def validate_receipt(receipt,stage_input,output,decision_digest,prior_receipts):
     expected_keys={'schema','fixtureClass','stage','stageInputSha256','outputSha256','decisionSha256','methodRegistrySha256','packetSha256','sourceRecordVersionIds','upstreamReceiptSha256','task','worker','checkpointSha256','receiptSha256'}
-    if set(receipt)!=expected_keys or receipt['schema']!='al-isabah.knowledge-local-trial-receipt.v1':reject('trial-receipt-shape-mismatch')
+    if set(receipt)!=expected_keys or receipt['schema']!='al-isabah.knowledge-local-trial-receipt.v2':reject('trial-receipt-shape-mismatch')
     for key,value in [('fixtureClass',stage_input['fixtureClass']),('stage',stage_input['stage']),('stageInputSha256',digest(stage_input)),('outputSha256',digest(output)),('decisionSha256',decision_digest),('methodRegistrySha256',stage_input['methodRegistrySha256']),('packetSha256',stage_input['packetSha256']),('sourceRecordVersionIds',stage_input['sourceRecordVersionIds']),('upstreamReceiptSha256',[r['receiptSha256'] for r in prior_receipts])]:
         if receipt[key]!=value:reject('trial-receipt-binding-mismatch')
     launch_schema=read(method.SCHEMA_PATH)
+    launch_schema['properties']['worker']['properties']['observed']=read(WORKER_OBSERVATION)
     if any(validate_schema_instance(receipt[k],launch_schema['properties'][k]) for k in ('task','worker')):reject('trial-host-mismatch')
     config=method.configuration(read(method.REGISTRY_PATH))
     if host_runtime.launch_errors(receipt['task'],config,'codex-task') or host_runtime.launch_errors(receipt['worker'],config,'codex-worker'):reject('trial-host-mismatch')
     if receipt['task']['request']!=stage_input['taskRequest'] or receipt['worker']['request']!=stage_input['workerRequest']:reject('trial-host-mismatch')
+    if receipt['worker']['observed']['parentSessionId']!=receipt['task']['observed']['sessionId']:reject('trial-worker-parent-mismatch')
     old_sessions={r['worker']['observed']['sessionId'] for r in prior_receipts}|{receipt['task']['observed']['sessionId']}
-    if receipt['worker']['observed']['sessionId'] in old_sessions or any(r['task']!=receipt['task'] for r in prior_receipts):reject('trial-worker-independence-mismatch')
+    if receipt['worker']['observed']['sessionId'] in old_sessions or any(task_identity(r['task'])!=task_identity(receipt['task']) for r in prior_receipts):reject('trial-worker-independence-mismatch')
     if receipt_checkpoint(receipt)!=receipt['checkpointSha256'] or digest({k:v for k,v in receipt.items() if k!='receiptSha256'})!=receipt['receiptSha256']:reject('trial-receipt-binding-mismatch')
     return receipt
 
@@ -222,12 +236,16 @@ def prepare_stage(stage,decision,expected_digest,packet,metadata,commit,prior=()
         validate_output(item['output'],expected_input,packet)
         validate_receipt(item['receipt'],expected_input,item['output'],expected_digest,[x['receipt'] for x in validated])
         validated.append(item)
-    return {'schema':'al-isabah.knowledge-local-trial-stage-input.v1','fixtureClass':request['fixtureClass'],'stage':stage,'decisionSha256':expected_digest,'packetSha256':packet['packetSha256'],'partitionSha256':metadata['partitionSha256'],'methodRegistrySha256':request['methodRegistrySha256'],'profileSha256':request['profileSha256'],'outputSchemaSha256':request['outputSchemaSha256'],'taskRequest':request['taskRequest'],'workerRequest':request['workerRequest'],'sourceRecordVersionIds':sorted(r['id'] for r in packet['records']),'lockedInput':copy.deepcopy(packet),'profile':read(PROFILE),'outputSchema':read(SCHEMA),'artifacts':artifact_inputs(packet),'retainedFindingLedger':retained_ledger(packet),'instructions':RUNBOOK.read_text(encoding='utf-8-sig'),'priorOutputs':[x['output'] for x in validated],'priorReceiptSha256':[x['receipt']['receiptSha256'] for x in validated]}
+    return stage_input_value(stage,request,expected_digest,packet,metadata,validated)
+
+
+def stage_input_value(stage,request,expected_digest,packet,metadata,validated,instructions=None):
+    return {'schema':'al-isabah.knowledge-local-trial-stage-input.v1','fixtureClass':request['fixtureClass'],'stage':stage,'decisionSha256':expected_digest,'packetSha256':packet['packetSha256'],'partitionSha256':metadata['partitionSha256'],'methodRegistrySha256':request['methodRegistrySha256'],'profileSha256':request['profileSha256'],'outputSchemaSha256':request['outputSchemaSha256'],'taskRequest':request['taskRequest'],'workerRequest':request['workerRequest'],'sourceRecordVersionIds':sorted(r['id'] for r in packet['records']),'lockedInput':copy.deepcopy(packet),'profile':read(PROFILE),'outputSchema':read(SCHEMA),'artifacts':artifact_inputs(packet),'retainedFindingLedger':retained_ledger(packet),'instructions':RUNBOOK.read_text(encoding='utf-8-sig') if instructions is None else instructions,'priorOutputs':[x['output'] for x in validated],'priorReceiptSha256':[x['receipt']['receiptSha256'] for x in validated]}
 
 
 def capture(stage_input,output,packet,decision_digest,task,worker,prior_receipts):
     validate_output(output,stage_input,packet)
-    receipt={'schema':'al-isabah.knowledge-local-trial-receipt.v1','fixtureClass':stage_input['fixtureClass'],'stage':stage_input['stage'],'stageInputSha256':digest(stage_input),'outputSha256':digest(output),'decisionSha256':decision_digest,'methodRegistrySha256':stage_input['methodRegistrySha256'],'packetSha256':packet['packetSha256'],'sourceRecordVersionIds':stage_input['sourceRecordVersionIds'],'upstreamReceiptSha256':[r['receiptSha256'] for r in prior_receipts],'task':task,'worker':worker,'checkpointSha256':'','receiptSha256':''}
+    receipt={'schema':'al-isabah.knowledge-local-trial-receipt.v2','fixtureClass':stage_input['fixtureClass'],'stage':stage_input['stage'],'stageInputSha256':digest(stage_input),'outputSha256':digest(output),'decisionSha256':decision_digest,'methodRegistrySha256':stage_input['methodRegistrySha256'],'packetSha256':packet['packetSha256'],'sourceRecordVersionIds':stage_input['sourceRecordVersionIds'],'upstreamReceiptSha256':[r['receiptSha256'] for r in prior_receipts],'task':task,'worker':worker,'checkpointSha256':'','receiptSha256':''}
     receipt['checkpointSha256']=receipt_checkpoint(receipt);receipt['receiptSha256']=digest({k:v for k,v in receipt.items() if k!='receiptSha256'})
     return validate_receipt(receipt,stage_input,output,decision_digest,prior_receipts)
 
@@ -285,7 +303,7 @@ def main():
         if read(input_path)!=stage_input:reject('trial-stage-input-drift')
         if not all([args.task_log,args.worker_log,args.task_request,args.worker_request,args.task_session,args.worker_session,args.task_turn,args.worker_turn]):reject('trial-host-inputs-required')
         task={'request':read(args.task_request),'observed':host_runtime.observe_session(args.task_log,args.task_session,args.task_turn)}
-        worker={'request':read(args.worker_request),'observed':host_runtime.observe_session(args.worker_log,args.worker_session,args.worker_turn)}
+        worker={'request':read(args.worker_request),'observed':host_runtime.observe_session(args.worker_log,args.worker_session,args.worker_turn,expected_parent_session_id=task['observed']['sessionId'])}
         output=read(args.directory/(args.stage+'.output.json'))
         receipt=capture(stage_input,output,packet,args.decision_sha256,task,worker,[x['receipt'] for x in prior]);write_new(args.directory/(args.stage+'.receipt.json'),receipt);print(receipt['receiptSha256']);return 0
     except (Rejection,OSError,ValueError,KeyError,TypeError):print('local-trial-operation-rejected');return 1

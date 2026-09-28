@@ -1,5 +1,6 @@
 """Local-trial tests use authored synthetic metadata; no user approval/model run."""
 import copy
+import json
 import sys
 import tempfile
 import unittest
@@ -10,7 +11,20 @@ sys.path.insert(0,str(ROOT/'scripts'))
 import knowledge_pilot_trial as trial
 import assemble_knowledge_pilot as assembly
 from knowledge_export import canonical,digest,Rejection
-from knowledge_export_v2_draft2_support import launch
+from knowledge_export_v2_draft2_support import launch as legacy_launch
+
+
+def launch(kind,identity,parent='synthetic-task'):
+    if kind=='codex-task':return legacy_launch(kind,identity)
+    with tempfile.TemporaryDirectory() as directory:
+        path=Path(directory)/'synthetic.jsonl'
+        path.write_text('\n'.join(json.dumps(x) for x in [
+            {'type':'session_meta','payload':{'id':identity,'session_id':parent,'parent_thread_id':parent,'source':{'subagent':{'thread_spawn':{'parent_thread_id':parent}}},'history_mode':'paginated','model_provider':'openai'}},
+            {'type':'turn_context','payload':{'turn_id':'turn','model':'gpt-5.6-sol','effort':'xhigh'}}
+        ])+'\n',encoding='utf-8')
+        observed=trial.host_runtime.observe_session(path,identity,'turn',expected_parent_session_id=parent)
+    return {'request':trial.host_runtime.launch_request(kind,'gpt-5.6-sol','xhigh'),'observed':observed}
+
 
 
 def fixture():
@@ -67,7 +81,7 @@ class KnowledgeLocalTrialTests(unittest.TestCase):
         prior=[];task=launch('codex-task','synthetic-pilot-task')
         for n,stage in enumerate(trial.STAGES):
             stage_input=self.stage(stage,prior);output=partial_output(stage_input,self.packet)
-            receipt=trial.capture(stage_input,output,self.packet,self.pin,task,launch('codex-worker','synthetic-pilot-worker-'+str(n)),[p['receipt'] for p in prior])
+            receipt=trial.capture(stage_input,output,self.packet,self.pin,task,launch('codex-worker','synthetic-pilot-worker-'+str(n),'synthetic-pilot-task'),[p['receipt'] for p in prior])
             prior.append({'input':stage_input,'output':output,'receipt':receipt})
         self.assertEqual(len(prior),3);self.assertEqual(prior[-1]['output']['status'],'partial')
         self.assertNotIn('reviewed',canonical(prior[-1]['receipt']).decode())
