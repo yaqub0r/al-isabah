@@ -176,3 +176,21 @@ pins. Elixr independently validates the same frozen schema and shared fixtures;
 its draft consumer remains synthetic-only. Exact freeze pins are recorded in
 `evidence/inventories/issue-0089-knowledge-v2-draft-freeze.v1.json`. This evidence
 does not establish real semantic extraction or complete import.
+
+## Draft 2 engineering follow-through
+
+The separate executable `2.0.0-draft.2` contract is documented in
+`docs/contracts/al-isabah-knowledge-export-v2-draft2.md`. It adds readable names,
+rational quantities, explicit current source/span selection with immutable
+historical versions, and scoped extraction/review/adjudication receipt binding.
+Its positive fixtures cover source correction, unchanged-source extraction
+correction, unchanged-disposition reaffirmation, and an independent cohort
+correction that retains the other cohort's original receipts. Draft 1 is unchanged.
+
+The proposed method registry remains inactive, with owner decision not recorded.
+`evidence/inventories/issue-0089-knowledge-pilot-preparation.v1.json` prepares the
+13 selected real entries, seven owned structural units and four retained findings
+as metadata only. Source partitioning and all semantic stages remain unstarted.
+The real 1,550-entry import has not been performed. The exact real semantic
+artifact and owner release/admission decisions remain required; these engineering
+fixtures do not replace them. No merge, publication or model execution occurs.

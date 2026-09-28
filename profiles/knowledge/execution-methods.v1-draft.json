@@ -1,0 +1,26 @@
+{
+  "schema": "al-isabah.knowledge-method-registry.v1-draft",
+  "registryVersion": "1.0.0-draft.1",
+  "status": "proposed",
+  "realExecutionEnabled": false,
+  "runtimeTrustStatus": "trusted-local-host",
+  "methods": [
+    {
+      "methodId": "codex-sol-xhigh-knowledge-explicit-host-draft-1",
+      "configuration": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "reasoning": "xhigh",
+        "orchestration": "explicit-fresh-host-runtime-v1",
+        "configurationOrigin": "explicit"
+      },
+      "stages": [
+        "knowledge_extraction",
+        "knowledge_independent_review",
+        "knowledge_adjudication"
+      ],
+      "decisionAuthority": "github:yaqub0r",
+      "decisionStatus": "not_recorded"
+    }
+  ]
+}
