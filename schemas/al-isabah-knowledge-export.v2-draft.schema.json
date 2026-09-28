@@ -1,0 +1,2245 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:al-isabah:knowledge-export:v2-draft",
+  "type": "object",
+  "properties": {
+    "schemaId": {
+      "const": "al-isabah.knowledge-export.v2"
+    },
+    "exportId": {
+      "type": "string",
+      "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+      "maxLength": 205
+    },
+    "batchId": {
+      "type": "string",
+      "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+      "maxLength": 205
+    },
+    "snapshotId": {
+      "type": "string",
+      "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+      "maxLength": 205
+    },
+    "snapshotSha256": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "schemaVersion": {
+      "const": "2.0.0-draft.1"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "synthetic",
+        "real"
+      ]
+    },
+    "fixtureClass": {
+      "type": "string",
+      "enum": [
+        "synthetic-conformance",
+        "not-a-fixture"
+      ]
+    },
+    "profileSha256": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "inventorySha256": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "authority": {
+      "$ref": "#/$defs/authority"
+    },
+    "assessmentSelection": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/assessmentSelection"
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "selection": {
+      "$ref": "#/$defs/batch"
+    },
+    "coverage": {
+      "$ref": "#/$defs/coverage"
+    },
+    "sourceRecords": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/sourceRecords"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "assessments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/assessments"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "actors": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/actors"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/artifacts"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entities"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "mentions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/mentions"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "reports": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/reports"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/events"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/claims"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "ambiguityGroups": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ambiguityGroups"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "spanDispositions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/spanDispositions"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "lifecycleEvents": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/lifecycleEvents"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "values": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/values"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "places": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/places"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "times": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/times"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "qualifications": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/qualifications"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "attributions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/attributions"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "useRestrictions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/useRestrictions"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/findings"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "payloadSha256": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    }
+  },
+  "required": [
+    "schemaId",
+    "exportId",
+    "batchId",
+    "snapshotId",
+    "snapshotSha256",
+    "schemaVersion",
+    "mode",
+    "fixtureClass",
+    "profileSha256",
+    "inventorySha256",
+    "authority",
+    "assessmentSelection",
+    "selection",
+    "coverage",
+    "sourceRecords",
+    "assessments",
+    "actors",
+    "artifacts",
+    "entities",
+    "mentions",
+    "reports",
+    "events",
+    "claims",
+    "ambiguityGroups",
+    "spanDispositions",
+    "lifecycleEvents",
+    "values",
+    "places",
+    "times",
+    "qualifications",
+    "attributions",
+    "useRestrictions",
+    "findings",
+    "payloadSha256"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+      "maxLength": 205
+    },
+    "hash": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "ids": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/id"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "date": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "recorded",
+            "unknown"
+          ]
+        },
+        "timestamp": {
+          "type": "string",
+          "pattern": "([0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z)?"
+        },
+        "reasonCode": {
+          "type": "string",
+          "enum": [
+            "none",
+            "not_recorded",
+            "not_performed"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "timestamp",
+        "reasonCode"
+      ],
+      "additionalProperties": false
+    },
+    "ref": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "sourceRecords",
+            "assessments",
+            "actors",
+            "artifacts",
+            "entities",
+            "mentions",
+            "reports",
+            "events",
+            "claims",
+            "ambiguityGroups",
+            "spanDispositions",
+            "lifecycleEvents",
+            "values",
+            "places",
+            "times",
+            "qualifications",
+            "attributions",
+            "useRestrictions",
+            "findings"
+          ]
+        },
+        "id": {
+          "$ref": "#/$defs/id"
+        }
+      },
+      "required": [
+        "kind",
+        "id"
+      ],
+      "additionalProperties": false
+    },
+    "refs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ref"
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    },
+    "input": {
+      "type": "object",
+      "properties": {
+        "ref": {
+          "$ref": "#/$defs/ref"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        }
+      },
+      "required": [
+        "ref",
+        "sha256"
+      ],
+      "additionalProperties": false
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "volume": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 99
+        },
+        "page": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000
+        }
+      },
+      "required": [
+        "volume",
+        "page"
+      ],
+      "additionalProperties": false
+    },
+    "authority": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "workId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "editionId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "revisionId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "sourceArtifactSha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "verificationBasis": {
+          "type": "string",
+          "enum": [
+            "licensed_transcription",
+            "synthetic"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "workId",
+        "editionId",
+        "revisionId",
+        "sourceArtifactSha256",
+        "verificationBasis"
+      ],
+      "additionalProperties": false
+    },
+    "sourceUnit": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "entry",
+            "structural_heading",
+            "interstitial_prose"
+          ]
+        },
+        "ownerEntryId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "rawSha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "locations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/location"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "inScope": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "ownerEntryId",
+        "rawSha256",
+        "locations",
+        "inScope"
+      ],
+      "additionalProperties": false
+    },
+    "logicalRecord": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "sourceUnitIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "inScope": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "sourceUnitIds",
+        "inScope"
+      ],
+      "additionalProperties": false
+    },
+    "sourceSpan": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "sourceUnitId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        }
+      },
+      "required": [
+        "id",
+        "sourceUnitId",
+        "sha256"
+      ],
+      "additionalProperties": false
+    },
+    "inventory": {
+      "type": "object",
+      "properties": {
+        "schemaId": {
+          "const": "al-isabah.knowledge-inventory.v2-draft"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "authority": {
+          "$ref": "#/$defs/authority"
+        },
+        "selectedScopeSha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "sourceUnits": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sourceUnit"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "logicalRecords": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/logicalRecord"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "sourceSpans": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sourceSpan"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "reconciliationStatus": {
+          "type": "string",
+          "enum": [
+            "synthetic",
+            "verified",
+            "fresh_derivation_legacy_mapping_unverified"
+          ]
+        },
+        "reconciliationEvidenceSha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        }
+      },
+      "required": [
+        "schemaId",
+        "id",
+        "authority",
+        "selectedScopeSha256",
+        "sourceUnits",
+        "logicalRecords",
+        "sourceSpans",
+        "reconciliationStatus",
+        "reconciliationEvidenceSha256"
+      ],
+      "additionalProperties": false
+    },
+    "predicate": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "family": {
+          "type": "string",
+          "enum": [
+            "identity",
+            "relationship",
+            "event",
+            "report",
+            "source_criticism",
+            "context",
+            "structure"
+          ]
+        },
+        "subjectKinds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "person",
+              "collective",
+              "work",
+              "place"
+            ]
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "objectKinds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "entities",
+              "events",
+              "values",
+              "reports",
+              "places",
+              "times",
+              "sourceRecords"
+            ]
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "directional": {
+          "type": "boolean"
+        },
+        "objectEntityKinds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "person",
+              "collective",
+              "work",
+              "place"
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "family",
+        "subjectKinds",
+        "objectKinds",
+        "directional",
+        "objectEntityKinds"
+      ],
+      "additionalProperties": false
+    },
+    "profile": {
+      "type": "object",
+      "properties": {
+        "schemaId": {
+          "const": "al-isabah.knowledge-profile.v2-draft"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "version": {
+          "const": "2.0.0-draft.1"
+        },
+        "status": {
+          "const": "draft"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "synthetic",
+            "real"
+          ]
+        },
+        "realExecutionEnabled": {
+          "const": false
+        },
+        "realAdmissionEnabled": {
+          "const": false
+        },
+        "authority": {
+          "$ref": "#/$defs/authority"
+        },
+        "selectedScopeSha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "predicates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/predicate"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "eventTypes": {
+          "$ref": "#/$defs/ids"
+        },
+        "participantRoles": {
+          "$ref": "#/$defs/ids"
+        },
+        "reasonCodes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "mapped",
+              "uncertain",
+              "heading",
+              "formula_only",
+              "bibliographic_format",
+              "unsupported",
+              "pending",
+              "source_damage",
+              "mapping_unverified"
+            ]
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "rights": {
+          "$ref": "#/$defs/rights"
+        }
+      },
+      "required": [
+        "schemaId",
+        "id",
+        "version",
+        "status",
+        "mode",
+        "realExecutionEnabled",
+        "realAdmissionEnabled",
+        "authority",
+        "selectedScopeSha256",
+        "predicates",
+        "eventTypes",
+        "participantRoles",
+        "reasonCodes",
+        "rights"
+      ],
+      "additionalProperties": false
+    },
+    "rights": {
+      "type": "object",
+      "properties": {
+        "basis": {
+          "type": "string",
+          "enum": [
+            "synthetic_testing_only",
+            "proposed_cc_by_nc_sa_4_0"
+          ]
+        },
+        "attributionRequired": {
+          "const": true
+        },
+        "commercialUse": {
+          "const": "not_granted"
+        },
+        "shareAlike": {
+          "const": true
+        },
+        "approvalStatus": {
+          "const": "not_approved_for_real_intake"
+        }
+      },
+      "required": [
+        "basis",
+        "attributionRequired",
+        "commercialUse",
+        "shareAlike",
+        "approvalStatus"
+      ],
+      "additionalProperties": false
+    },
+    "sourceRecords": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "logicalRecordId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "authorityUnitIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "recordSha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "sourceArtifactId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        }
+      },
+      "required": [
+        "id",
+        "logicalRecordId",
+        "authorityUnitIds",
+        "recordSha256",
+        "sourceArtifactId"
+      ],
+      "additionalProperties": false
+    },
+    "actors": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "machine",
+            "human",
+            "not_performed"
+          ]
+        },
+        "authorityArtifactId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "authorityArtifactId"
+      ],
+      "additionalProperties": false
+    },
+    "artifacts": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "source_derivation",
+            "source_release",
+            "policy",
+            "method",
+            "rights",
+            "review_decision",
+            "actor_authority"
+          ]
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "synthetic_only",
+            "proposed",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "sha256",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "assessments": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "extraction",
+            "independent_review",
+            "adjudication",
+            "machine",
+            "human_review",
+            "eligibility",
+            "identity"
+          ]
+        },
+        "targets": {
+          "$ref": "#/$defs/refs"
+        },
+        "inputs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/input"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "complete",
+            "partial",
+            "not_started",
+            "unreviewed",
+            "reviewed",
+            "blocked",
+            "eligible",
+            "needs_attention"
+          ]
+        },
+        "actorId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "methodArtifactId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "effectiveAt": {
+          "$ref": "#/$defs/date"
+        },
+        "observedAt": {
+          "$ref": "#/$defs/date"
+        },
+        "predecessorIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "findingIds": {
+          "$ref": "#/$defs/ids"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "targets",
+        "inputs",
+        "status",
+        "actorId",
+        "methodArtifactId",
+        "effectiveAt",
+        "observedAt",
+        "predecessorIds",
+        "findingIds"
+      ],
+      "additionalProperties": false
+    },
+    "entities": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "person",
+            "collective",
+            "work",
+            "place"
+          ]
+        },
+        "sourceRecordVersionIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "mentionIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "identityAssessmentIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "ambiguityGroupIds": {
+          "$ref": "#/$defs/ids"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "sourceRecordVersionIds",
+        "mentionIds",
+        "identityAssessmentIds",
+        "ambiguityGroupIds"
+      ],
+      "additionalProperties": false
+    },
+    "mentions": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "entityId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "sourceRecordVersionId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "sourceSpanId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "surfaceSha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "nameRole": {
+          "type": "string",
+          "enum": [
+            "name",
+            "kunya",
+            "nisba",
+            "alias",
+            "unnamed_reference"
+          ]
+        },
+        "ambiguityGroupIds": {
+          "$ref": "#/$defs/ids"
+        }
+      },
+      "required": [
+        "id",
+        "entityId",
+        "sourceRecordVersionId",
+        "sourceSpanId",
+        "surfaceSha256",
+        "nameRole",
+        "ambiguityGroupIds"
+      ],
+      "additionalProperties": false
+    },
+    "transmitter": {
+      "type": "object",
+      "properties": {
+        "position": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "role": {
+          "type": "string",
+          "enum": [
+            "speaker",
+            "transmitter",
+            "attributor",
+            "unresolved"
+          ]
+        },
+        "entityIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "ambiguityGroupIds": {
+          "$ref": "#/$defs/ids"
+        }
+      },
+      "required": [
+        "position",
+        "role",
+        "entityIds",
+        "ambiguityGroupIds"
+      ],
+      "additionalProperties": false
+    },
+    "reports": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "sourceRecordVersionIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "sourceSpanIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "attributorEntityIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "transmission": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/transmitter"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "claimIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "criticalAssessmentIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "ambiguityGroupIds": {
+          "$ref": "#/$defs/ids"
+        }
+      },
+      "required": [
+        "id",
+        "sourceRecordVersionIds",
+        "sourceSpanIds",
+        "attributorEntityIds",
+        "transmission",
+        "claimIds",
+        "criticalAssessmentIds",
+        "ambiguityGroupIds"
+      ],
+      "additionalProperties": false
+    },
+    "participant": {
+      "type": "object",
+      "properties": {
+        "roleId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "entityId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        }
+      },
+      "required": [
+        "roleId",
+        "entityId"
+      ],
+      "additionalProperties": false
+    },
+    "events": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "typeId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "participantRoles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/participant"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "placeIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "timeIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "sourceRecordVersionIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "reportIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "ambiguityGroupIds": {
+          "$ref": "#/$defs/ids"
+        }
+      },
+      "required": [
+        "id",
+        "typeId",
+        "participantRoles",
+        "placeIds",
+        "timeIds",
+        "sourceRecordVersionIds",
+        "reportIds",
+        "ambiguityGroupIds"
+      ],
+      "additionalProperties": false
+    },
+    "claims": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "reportIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "sourceRecordVersionIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "sourceSpanIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "subjectId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "predicateId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "objectRef": {
+          "$ref": "#/$defs/ref"
+        },
+        "assertionClass": {
+          "type": "string",
+          "enum": [
+            "source_attested",
+            "inferred"
+          ]
+        },
+        "polarity": {
+          "type": "string",
+          "enum": [
+            "positive",
+            "negative",
+            "absence_of_evidence"
+          ]
+        },
+        "modality": {
+          "type": "string",
+          "enum": [
+            "asserted",
+            "possible",
+            "conditional",
+            "disputed"
+          ]
+        },
+        "qualificationIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+            "maxLength": 205
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "assessmentIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "attributionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+            "maxLength": 205
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "ambiguityGroupIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "useRestrictionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+            "maxLength": 205
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "reportIds",
+        "sourceRecordVersionIds",
+        "sourceSpanIds",
+        "subjectId",
+        "predicateId",
+        "objectRef",
+        "assertionClass",
+        "polarity",
+        "modality",
+        "qualificationIds",
+        "assessmentIds",
+        "attributionIds",
+        "ambiguityGroupIds",
+        "useRestrictionIds"
+      ],
+      "additionalProperties": false
+    },
+    "ambiguityGroups": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "identity",
+            "report_alternatives",
+            "reading",
+            "attribution",
+            "time",
+            "place"
+          ]
+        },
+        "members": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ref"
+          },
+          "uniqueItems": true,
+          "minItems": 2
+        },
+        "sourceRecordVersionIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "assessmentIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "resolutionState": {
+          "type": "string",
+          "enum": [
+            "unresolved",
+            "represented_alternatives"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "members",
+        "sourceRecordVersionIds",
+        "assessmentIds",
+        "resolutionState"
+      ],
+      "additionalProperties": false
+    },
+    "spanDispositions": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "sourceSpanId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "represented",
+            "represented_uncertain",
+            "structural_only",
+            "nonclaim_form",
+            "unsupported_semantics",
+            "unprocessed",
+            "source_or_mapping_blocked"
+          ]
+        },
+        "reasonCode": {
+          "type": "string",
+          "enum": [
+            "mapped",
+            "uncertain",
+            "heading",
+            "formula_only",
+            "bibliographic_format",
+            "unsupported",
+            "pending",
+            "source_damage",
+            "mapping_unverified"
+          ]
+        },
+        "reportIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "claimIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "ambiguityGroupIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "assessmentIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+            "maxLength": 205
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "sourceSpanId",
+        "status",
+        "reasonCode",
+        "reportIds",
+        "claimIds",
+        "ambiguityGroupIds",
+        "assessmentIds"
+      ],
+      "additionalProperties": false
+    },
+    "lifecycleEvents": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "corrects",
+            "supersedes",
+            "withdraws",
+            "entity_split",
+            "entity_merge"
+          ]
+        },
+        "targets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ref"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "replacements": {
+          "$ref": "#/$defs/refs"
+        },
+        "decisionArtifactId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "effectiveAt": {
+          "$ref": "#/$defs/date"
+        },
+        "dependencyIds": {
+          "$ref": "#/$defs/ids"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "targets",
+        "replacements",
+        "decisionArtifactId",
+        "effectiveAt",
+        "dependencyIds"
+      ],
+      "additionalProperties": false
+    },
+    "values": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "count",
+            "age",
+            "duration",
+            "ordinal"
+          ]
+        },
+        "amount": {
+          "type": "integer",
+          "minimum": -1000000,
+          "maximum": 1000000
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "persons",
+            "years",
+            "months",
+            "days",
+            "sequence"
+          ]
+        },
+        "approximate": {
+          "type": "boolean"
+        },
+        "sourceRecordVersionIds": {
+          "$ref": "#/$defs/ids"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "amount",
+        "unit",
+        "approximate",
+        "sourceRecordVersionIds"
+      ],
+      "additionalProperties": false
+    },
+    "places": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "entityId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "certainty": {
+          "type": "string",
+          "enum": [
+            "source_named",
+            "proposed_identification",
+            "unresolved"
+          ]
+        },
+        "ambiguityGroupIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "sourceRecordVersionIds": {
+          "$ref": "#/$defs/ids"
+        }
+      },
+      "required": [
+        "id",
+        "entityId",
+        "certainty",
+        "ambiguityGroupIds",
+        "sourceRecordVersionIds"
+      ],
+      "additionalProperties": false
+    },
+    "times": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "calendar": {
+          "type": "string",
+          "enum": [
+            "hijri",
+            "gregorian",
+            "relative",
+            "unknown"
+          ]
+        },
+        "earliest": {
+          "type": "integer",
+          "minimum": -1000000,
+          "maximum": 1000000
+        },
+        "latest": {
+          "type": "integer",
+          "minimum": -1000000,
+          "maximum": 1000000
+        },
+        "precision": {
+          "type": "string",
+          "enum": [
+            "year",
+            "month",
+            "day",
+            "unknown"
+          ]
+        },
+        "approximate": {
+          "type": "boolean"
+        },
+        "ambiguityGroupIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "sourceRecordVersionIds": {
+          "$ref": "#/$defs/ids"
+        }
+      },
+      "required": [
+        "id",
+        "calendar",
+        "earliest",
+        "latest",
+        "precision",
+        "approximate",
+        "ambiguityGroupIds",
+        "sourceRecordVersionIds"
+      ],
+      "additionalProperties": false
+    },
+    "qualifications": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "targets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ref"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "evaluatorEntityIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "criticalStatus": {
+          "type": "string",
+          "enum": [
+            "unqualified",
+            "qualified",
+            "disputed",
+            "rejected",
+            "unknown"
+          ]
+        },
+        "evidentiaryStrength": {
+          "type": "string",
+          "enum": [
+            "source_supported",
+            "qualified",
+            "unassessed"
+          ]
+        },
+        "transmissionStrength": {
+          "type": "string",
+          "enum": [
+            "unassessed",
+            "qualified",
+            "disputed"
+          ]
+        },
+        "sourceRecordVersionIds": {
+          "$ref": "#/$defs/ids"
+        }
+      },
+      "required": [
+        "id",
+        "targets",
+        "evaluatorEntityIds",
+        "criticalStatus",
+        "evidentiaryStrength",
+        "transmissionStrength",
+        "sourceRecordVersionIds"
+      ],
+      "additionalProperties": false
+    },
+    "attributions": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "source_author",
+            "named_attributor",
+            "work",
+            "license"
+          ]
+        },
+        "entityIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "artifactIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "required": {
+          "const": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "entityIds",
+        "artifactIds",
+        "required"
+      ],
+      "additionalProperties": false
+    },
+    "useRestrictions": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "tier": {
+          "type": "string",
+          "enum": [
+            "factual_spine",
+            "qualified_context",
+            "attributed_disputed_report",
+            "not_for_narrative"
+          ]
+        },
+        "attributionRequired": {
+          "const": true
+        }
+      },
+      "required": [
+        "id",
+        "tier",
+        "attributionRequired"
+      ],
+      "additionalProperties": false
+    },
+    "findings": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "targets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ref"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "identity",
+            "source",
+            "omission",
+            "addition",
+            "polarity",
+            "role",
+            "attribution",
+            "transmission",
+            "qualification",
+            "unsupported"
+          ]
+        },
+        "severity": {
+          "type": "string",
+          "enum": [
+            "informational",
+            "material",
+            "blocking"
+          ]
+        },
+        "disposition": {
+          "type": "string",
+          "enum": [
+            "resolved",
+            "represented_uncertain",
+            "unresolved"
+          ]
+        },
+        "evidenceArtifactIds": {
+          "$ref": "#/$defs/ids"
+        }
+      },
+      "required": [
+        "id",
+        "targets",
+        "category",
+        "severity",
+        "disposition",
+        "evidenceArtifactIds"
+      ],
+      "additionalProperties": false
+    },
+    "assessmentSelection": {
+      "type": "object",
+      "properties": {
+        "sourceRecordVersionId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "extractionAssessmentId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "humanReviewAssessmentId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        }
+      },
+      "required": [
+        "sourceRecordVersionId",
+        "extractionAssessmentId",
+        "humanReviewAssessmentId"
+      ],
+      "additionalProperties": false
+    },
+    "batch": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "exportId": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "requestedLogicalRecordIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "dependencyLogicalRecordIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "selectionMode": {
+          "const": "full_snapshot"
+        }
+      },
+      "required": [
+        "id",
+        "exportId",
+        "requestedLogicalRecordIds",
+        "dependencyLogicalRecordIds",
+        "selectionMode"
+      ],
+      "additionalProperties": false
+    },
+    "snapshot": {
+      "type": "object",
+      "properties": {
+        "schemaId": {
+          "const": "al-isabah.knowledge-snapshot.v2"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "urn:al-isabah:[a-z0-9][a-z0-9:._-]{0,190}",
+          "maxLength": 205
+        },
+        "schemaVersion": {
+          "const": "2.0.0-draft.1"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "synthetic",
+            "real"
+          ]
+        },
+        "fixtureClass": {
+          "type": "string",
+          "enum": [
+            "synthetic-conformance",
+            "not-a-fixture"
+          ]
+        },
+        "profileSha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "inventorySha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "authority": {
+          "$ref": "#/$defs/authority"
+        },
+        "assessmentSelection": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assessmentSelection"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "batch": {
+          "$ref": "#/$defs/batch"
+        },
+        "sourceRecords": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sourceRecords"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "assessments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assessments"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "actors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/actors"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "artifacts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/artifacts"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "entities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/entities"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "mentions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mentions"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "reports": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/reports"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "events": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/events"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "claims": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/claims"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "ambiguityGroups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ambiguityGroups"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "spanDispositions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/spanDispositions"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "lifecycleEvents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/lifecycleEvents"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "values": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/values"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "places": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/places"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "times": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/times"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "qualifications": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/qualifications"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "attributions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/attributions"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "useRestrictions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/useRestrictions"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "findings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/findings"
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        }
+      },
+      "required": [
+        "schemaId",
+        "id",
+        "schemaVersion",
+        "mode",
+        "fixtureClass",
+        "profileSha256",
+        "inventorySha256",
+        "authority",
+        "assessmentSelection",
+        "batch",
+        "sourceRecords",
+        "assessments",
+        "actors",
+        "artifacts",
+        "entities",
+        "mentions",
+        "reports",
+        "events",
+        "claims",
+        "ambiguityGroups",
+        "spanDispositions",
+        "lifecycleEvents",
+        "values",
+        "places",
+        "times",
+        "qualifications",
+        "attributions",
+        "useRestrictions",
+        "findings"
+      ],
+      "additionalProperties": false
+    },
+    "trust": {
+      "type": "object",
+      "properties": {
+        "schemaId": {
+          "const": "al-isabah.knowledge-draft-trust.v2"
+        },
+        "fixtureClass": {
+          "const": "synthetic-conformance"
+        },
+        "snapshotSha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "inventorySha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "profileSha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        },
+        "schemaSha256": {
+          "type": "string",
+          "pattern": "[0-9a-f]{64}"
+        }
+      },
+      "required": [
+        "schemaId",
+        "fixtureClass",
+        "snapshotSha256",
+        "inventorySha256",
+        "profileSha256",
+        "schemaSha256"
+      ],
+      "additionalProperties": false
+    },
+    "coverage": {
+      "type": "object",
+      "properties": {
+        "requestedLogicalRecords": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "dependencyLogicalRecords": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sourceUnits": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "entries": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "structuralUnits": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "expectedSpans": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "representedSpans": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "uncertainSpans": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "blockedSpans": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "extractionCompleteRecords": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "assessmentVersions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "claims": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "scopeExtractionComplete": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "requestedLogicalRecords",
+        "dependencyLogicalRecords",
+        "sourceUnits",
+        "entries",
+        "structuralUnits",
+        "expectedSpans",
+        "representedSpans",
+        "uncertainSpans",
+        "blockedSpans",
+        "extractionCompleteRecords",
+        "assessmentVersions",
+        "claims",
+        "scopeExtractionComplete"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

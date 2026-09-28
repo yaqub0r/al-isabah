@@ -2,7 +2,9 @@
 
 Issue [#89](https://github.com/yaqub0r/al-isabah/issues/89), coordinated with Elixr
 [#29](https://github.com/yaqub0r/elixr/issues/29). Status: **decision proposal,
-not active policy, wire schema, assertion approval or source admission**.
+not active policy, assertion approval or source admission**. The later executable
+synthetic draft is specified in `docs/contracts/al-isabah-knowledge-export-v2-draft.md`;
+its actual schema is draft-only and real mode remains disabled.
 The [eligibility checkpoint](volume-08-eligibility-checkpoint.md) describes the
 actual source evidence and outstanding mapping. This proposal must not cause a
 synthetic schema to accept real data or imply that extraction has occurred.
@@ -214,7 +216,7 @@ usable value: null placeholders are not acceptable in a real admitted payload.
 ## Minimal semantic execution-method proposal
 
 For review, propose a new knowledge-stage method using the already available
-Codex provider, explicit `gpt-5.6-sol` / `xhigh` task and fresh-worker launches,
+Codex execution host and registry provider `openai`, explicit `gpt-5.6-sol` / `xhigh` task and fresh-worker launches,
 matching the current translation baseline operational settings. This is a new
 stage-scope approval request, not a claim that the translation registry already
 covers extraction or that this model has empirically proved optimal. No paid

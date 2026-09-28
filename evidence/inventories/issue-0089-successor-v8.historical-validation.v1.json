@@ -1,0 +1,29 @@
+{
+  "schema": "al-isabah.historical-candidate-validation.v1",
+  "candidateCorpusId": "al-isabah-public-openiti-5835c18-v8",
+  "manifestSha256": "8f2573d56c6bac3fce29345952d1e877e0f51cc34bbd329700524d116d7a4104",
+  "ownerCodeRevision": "07a9adae7066bc86cebe121b92fbd334eea525bc",
+  "ownerMainAncestorVerified": true,
+  "codeSha256": {
+    "builder": "efa7f22a1c183511e7db0fab0380ca83f2bf82ade6ddaa0d0803c87b56173ced",
+    "validator": "d2464f90090b765113a824b67bd6e81992eab6678126a3552eed4503e1262f4d"
+  },
+  "dependencySha256": {
+    "honorificRegistry": "d9e247e21e6dac60be6fe75b7e40c18a7656f68e05ff79e2f36c3324f424c05e",
+    "entryTitleProfile": "b60ae078bbbd614bfda82b52db49bfd78e6140da5483e2c6bc25695554589dd4"
+  },
+  "execution": "historical-git-blobs-loaded-in-memory-read-only-with-exact-registry-and-profile",
+  "validationErrorCount": 0,
+  "semanticReviewPerformed": false,
+  "newPublicationApproval": false,
+  "currentPolicyConformanceClaimed": false,
+  "comparisonWithCurrentOwnerValidator": {
+    "errorCount": 2195,
+    "interpretation": "different-current-registry-and-presentation-rules-not-equivalent-to-original-validation",
+    "dominantCategories": [
+      "honorific-registry-and-rendering",
+      "source-and-english-formula-inventories"
+    ],
+    "notARecordRejectionCount": true
+  }
+}

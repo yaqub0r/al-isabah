@@ -3,8 +3,11 @@
 Issue [#89](https://github.com/yaqub0r/al-isabah/issues/89). Inspected from
 `456944fe5d1a7e6bbb6404cc77f3109803893240`, 2026-09-28. This is an upstream
 prerequisite checkpoint for complete real import into Elixr, not extraction,
-publication approval, or a completed import. The user-facing scope choice and
-legacy-to-approved identity reconciliation remain pending.
+publication approval, or a completed import. The user has since selected the full
+legacy Volume 8 scope. The candidate v8 byte-domain crosswalk is now verified;
+semantic identity/fidelity review remains separate. The current decision packet
+is `docs/decisions/0002-volume08-real-extraction-admission-draft.md`. Earlier pending
+statements below describe the initial checkpoint, not a new scope question.
 
 ## Authority and exact candidate scopes
 

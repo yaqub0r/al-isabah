@@ -1,0 +1,46 @@
+{
+  "schema": "al-isabah.knowledge-v2-draft-freeze.v1",
+  "status": "draft-conformance-only-no-real-admission",
+  "artifacts": [
+    {
+      "artifact": "schemas/al-isabah-knowledge-export.v2-draft.schema.json",
+      "fileSha256": "ef9b7138b3a63dfcef9a12765a8772364b91e4f104022067dd492812b6f31c9e",
+      "semanticSha256": "cbac0da8cab4fd537f1941a18bd45b4579bfb099c8492e1645be9533f717cdd5"
+    },
+    {
+      "artifact": "profiles/knowledge/volume-08.v2-draft.json",
+      "fileSha256": "9bcc247d57dd7c473c35397995ebcb16f84ae847451cc07dcea82670ac1fdce6",
+      "semanticSha256": "51fbda3dbcd4abc3ee9baa5b8d1f0502c9c7f39261a905f2878df53b17a1b59f"
+    },
+    {
+      "artifact": "tests/fixtures/knowledge-export-v2-draft/snapshot.json",
+      "fileSha256": "7343f60a578ed49b84f82aa8f25223fc5235fc788112c2d8cf6c5d32269832a7",
+      "semanticSha256": "7343f60a578ed49b84f82aa8f25223fc5235fc788112c2d8cf6c5d32269832a7"
+    },
+    {
+      "artifact": "tests/fixtures/knowledge-export-v2-draft/inventory.json",
+      "fileSha256": "bc0a4fb00faa8d1ba78052ff9c2913bd0fc2a90026eba1b77dff0e34504dc95d",
+      "semanticSha256": "bc0a4fb00faa8d1ba78052ff9c2913bd0fc2a90026eba1b77dff0e34504dc95d"
+    },
+    {
+      "artifact": "tests/fixtures/knowledge-export-v2-draft/profile.json",
+      "fileSha256": "b812c670e896ebf1f7b3779b49d046ce120444bf2937374a515755089e000d99",
+      "semanticSha256": "b812c670e896ebf1f7b3779b49d046ce120444bf2937374a515755089e000d99"
+    },
+    {
+      "artifact": "tests/fixtures/knowledge-export-v2-draft/trust.json",
+      "fileSha256": "c1b066ced8ce1de153cc6f304d642c97afa8e103c30a66649093b70a0be0c758",
+      "semanticSha256": "c1b066ced8ce1de153cc6f304d642c97afa8e103c30a66649093b70a0be0c758"
+    },
+    {
+      "artifact": "tests/fixtures/knowledge-export-v2-draft/batch.json",
+      "fileSha256": "3e88ab9621a0ef899ee2df1d5e0f538d232238dfdb7f684f60304ffa2f1c2c56",
+      "semanticSha256": "3e88ab9621a0ef899ee2df1d5e0f538d232238dfdb7f684f60304ffa2f1c2c56"
+    },
+    {
+      "artifact": "tests/fixtures/knowledge-export-v2-draft/adversarial-cases.json",
+      "fileSha256": "287f84def51e7a5fc1a4d3e8c904cc3e5a6194100002748d0c346ff2f4c81c5f",
+      "semanticSha256": "fa05b91c65f9487937bfbda3e74e2e2852f85372121e5a815954c23f28fcdebb"
+    }
+  ]
+}
