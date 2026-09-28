@@ -1,7 +1,7 @@
 {
   "schema": "al-isabah.source-compliance-register.v1",
   "work_id": "ibn-hajar-al-isabah",
-  "assessed_at": "2026-08-26",
+  "assessed_at": "2026-09-28",
   "policy_binding": "compliance/policy-binding.v1.json",
   "classification_definitions": {
     "approved-for-publication": "An affirmative public reuse basis has been verified for this exact artifact and intended use.",
@@ -616,6 +616,47 @@
         "review the strict public-safe Volume 4 proposal in the issue-scoped change",
         "reproduce deterministic proposal, review and coverage checks under the approved noncommercial license",
         "report full Volume 4 agent completion independently of ongoing human review"
+      ],
+      "prohibited_public_actions": [
+        "claim external evidence submission, current distribution admission, canonical promotion, human approval or release",
+        "publish private evidence, detailed findings, witness expression, model traces, source coordinates or operational paths",
+        "treat this local proposal as a published release"
+      ],
+      "review_status": "machine-ready-volume-proposal-pending-submission-and-distribution-admission"
+    },
+    {
+      "id": "issue-0085-public-proposal-v1",
+      "kind": "public-working-bilingual-proposal",
+      "title": "Issue 0085 Volume 5 strict public proposal",
+      "classification": "approved-for-publication",
+      "rights_basis": "Strict allowlisted projection of the newly machine-ready full Volume 5, source ordinals 6159–7762 and 1,604 biographies. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, formulas, structural hierarchy and public uncertainty disclosures. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is not evidence of external submission or admission to the current distribution.",
+      "license": {
+        "spdx": "CC-BY-NC-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      "integrity": {
+        "proposal_sha256": "fa1f5b8820dc7a1ba007f00d17ff40d0f70a6179e80842507adbd9aa4c29c27e",
+        "public_review_sha256": "215e5c28c46b32374b7c2dc9fc213e33e6ecf6beb0f1cbf59ddf994474d040b8",
+        "record_projection_sha256": "cb06941f37263466180b37658925e160fcfc1afe38de751e60552d5688fbe222",
+        "order_sha256": "e55dea90ec408e545f95a2b35d38d300d2ccba1eef3ef69a12531ec8440ed24d",
+        "user_facing_sha256": "ad7db8a815eabd37a223583ac19d782e2dec31d54d1f0b207052a03e80c3e394",
+        "public_entries": 1604,
+        "source_ordinal_start": 6159,
+        "source_ordinal_end": 7762,
+        "owned_structural_segments": 197,
+        "structural_owners": 171,
+        "execution_policy_binding_sha256": "ec32ce5933a7f79167f9666b522187fd7e1ea8aacd7c0acce10c1ac269e32ebe",
+        "packet_set_sha256": "60e4ac02b4d7c3c43c6d88c5cb7f6a0238507ebd7f354f1cd2fb96f308ad9ddd",
+        "review_set_sha256": "c37c068f65bb1358d32305277c653bbcc78b6e17aaf8a649541cbf94ae4a3485"
+      },
+      "depends_on": [
+        "ibn-hajar-underlying-medieval-work",
+        "openiti-cleaned-arabic-comparison"
+      ],
+      "allowed_actions": [
+        "review the strict public-safe Volume 5 proposal in the issue-scoped change",
+        "reproduce deterministic proposal, review and coverage checks under the approved noncommercial license",
+        "report full Volume 5 agent completion independently of ongoing human review"
       ],
       "prohibited_public_actions": [
         "claim external evidence submission, current distribution admission, canonical promotion, human approval or release",

@@ -1,6 +1,6 @@
 {
   "schema": "al-isabah.honorific-formula-registry.v1",
-  "registryVersion": "1.4.0",
+  "registryVersion": "1.6.0",
   "contractId": "translation-quality-workflow",
   "profileId": "al-isabah-translation-profile",
   "entries": [
@@ -95,264 +95,525 @@
       "accessibleEnglish": "O God, bless Muḥammad and the family of Muḥammad."
     },
     {
-      "source": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0639\u0644\u064a\u0647\u0645 \u0635\u0644\u0627\u0629 \u062e\u0627\u0644\u062f\u0629 \u060c \u0648\u0633\u0644\u0627\u0645\u0627 \u0645\u0624\u0628\u062f\u0627 [ \u0648\u0633\u0644\u0645 \u062a\u0633\u0644\u064a\u0645\u0627 ]",
+      "source": "صلى الله عليه وعليهم صلاة خالدة ، وسلاما مؤبدا [ وسلم تسليما ]",
       "target": "May God bless him and them with an everlasting blessing and grant them perpetual peace [and fullest peace].",
       "semanticClass": "contextual_prayer_and_peace_invocation",
       "referentScope": "the Prophet and his Companions",
       "grammaticalAgreement": "masculine singular and masculine plural",
-      "expandedArabic": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0639\u0644\u064a\u0647\u0645 \u0635\u0644\u0627\u0629 \u062e\u0627\u0644\u062f\u0629 \u060c \u0648\u0633\u0644\u0627\u0645\u0627 \u0645\u0624\u0628\u062f\u0627 [ \u0648\u0633\u0644\u0645 \u062a\u0633\u0644\u064a\u0645\u0627 ]",
+      "expandedArabic": "صلى الله عليه وعليهم صلاة خالدة ، وسلاما مؤبدا [ وسلم تسليما ]",
       "accessibleEnglish": "May God bless him and them with an everlasting blessing and grant them perpetual peace [and fullest peace]."
     },
     {
-      "source": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u062a\u0639\u0627\u0644\u0649 \u0639\u0644\u064a\u0647 \u0648\u0639\u0644\u0649 \u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
-      "target": "\ufd4c",
-      "semanticClass": "prophetic_blessing_with_family",
-      "referentScope": "the Prophet and his family",
-      "grammaticalAgreement": "masculine singular with family inclusion",
-      "expandedArabic": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u062a\u0639\u0627\u0644\u0649 \u0639\u0644\u064a\u0647 \u0648\u0639\u0644\u0649 \u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
-      "accessibleEnglish": "May God bless him and his family and grant them peace."
+      "source": "والله سبحانه وتعالى اعلم",
+      "target": "والله سبحانه وتعالى اعلم",
+      "semanticClass": "divine_knowledge_with_exaltation_qualification",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "والله سبحانه وتعالى اعلم",
+      "accessibleEnglish": "And God—glory be to Him, the Exalted—knows best."
     },
     {
-      "source": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u0633\u0647 \u0648\u0633\u0644\u0645",
-      "target": "\ufdfa",
-      "semanticClass": "prophetic_blessing",
-      "referentScope": "the Prophet",
-      "grammaticalAgreement": "masculine singular",
-      "expandedArabic": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0633\u0644\u0645",
-      "accessibleEnglish": "May God bless him and grant him peace."
+      "source": "والله عنده حسن المآب",
+      "target": "والله عنده حسن المآب",
+      "semanticClass": "divine_return_qualification",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "والله عنده حسن المآب",
+      "accessibleEnglish": "And with God is the best return."
     },
     {
-      "source": "\u0635\u0644\u0649 \u0622\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0633\u0644\u0645",
-      "target": "\ufdfa",
-      "semanticClass": "prophetic_blessing",
-      "referentScope": "the Prophet",
-      "grammaticalAgreement": "masculine singular",
-      "expandedArabic": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0633\u0644\u0645",
-      "accessibleEnglish": "May God bless him and grant him peace."
-    },
-    {
-      "source": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0639\u0644\u0649 \u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
-      "target": "\ufd4c",
-      "semanticClass": "prophetic_blessing_with_family",
-      "referentScope": "the Prophet and his family",
-      "grammaticalAgreement": "masculine singular with family inclusion",
-      "expandedArabic": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0639\u0644\u0649 \u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
-      "accessibleEnglish": "May God bless him and his family and grant them peace."
-    },
-    {
-      "source": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
-      "target": "\ufd4c",
-      "semanticClass": "prophetic_blessing_with_family",
-      "referentScope": "the Prophet and his family",
-      "grammaticalAgreement": "masculine singular with family inclusion",
-      "expandedArabic": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
-      "accessibleEnglish": "May God bless him and his family and grant them peace."
-    },
-    {
-      "source": "\u0635\u0644\u0649 204 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
-      "target": "\ufd4c",
-      "semanticClass": "prophetic_blessing_with_family",
-      "referentScope": "the Prophet and his family",
-      "grammaticalAgreement": "masculine singular with family inclusion",
-      "expandedArabic": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
-      "accessibleEnglish": "May God bless him and his family and grant them peace."
-    },
-    {
-      "source": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 207 \u0639\u0644\u064a\u0647 \u0648\u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
-      "target": "\ufd4c",
-      "semanticClass": "prophetic_blessing_with_family",
-      "referentScope": "the Prophet and his family",
-      "grammaticalAgreement": "masculine singular with family inclusion",
-      "expandedArabic": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
-      "accessibleEnglish": "May God bless him and his family and grant them peace."
-    },
-    {
-      "source": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0633\u0644\u0645 \u0648\u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
-      "target": "\ufd4c",
-      "semanticClass": "prophetic_blessing_with_family",
-      "referentScope": "the Prophet and his family",
-      "grammaticalAgreement": "masculine singular with family inclusion",
-      "expandedArabic": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0622\u0644\u0647 \u0648\u0633\u0644\u0645",
-      "accessibleEnglish": "May God bless him and his family and grant them peace."
-    },
-    {
-      "source": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0633\u0644\u0645",
-      "target": "\ufdfa",
-      "semanticClass": "prophetic_blessing",
-      "referentScope": "the Prophet",
-      "grammaticalAgreement": "masculine singular",
-      "expandedArabic": "\u0635\u0644\u0649 \u0627\u0644\u0644\u0647 \u0639\u0644\u064a\u0647 \u0648\u0633\u0644\u0645",
-      "accessibleEnglish": "May God bless him and grant him peace."
-    },
-    {
-      "source": "\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647\u0645\u0627",
-      "target": "\ufd44",
-      "semanticClass": "divine_approval",
-      "referentScope": "the two immediately preceding referents",
-      "grammaticalAgreement": "dual",
-      "expandedArabic": "\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647\u0645\u0627",
-      "accessibleEnglish": "May God be pleased with both of them."
-    },
-    {
-      "source": "\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647\u0645",
-      "target": "\ufd43",
-      "semanticClass": "divine_approval",
-      "referentScope": "the immediately preceding group",
-      "grammaticalAgreement": "masculine plural",
-      "expandedArabic": "\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647\u0645",
-      "accessibleEnglish": "May God be pleased with them."
-    },
-    {
-      "source": "\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647\u0646",
-      "target": "\ufd45",
-      "semanticClass": "divine_approval",
-      "referentScope": "the immediately preceding group",
-      "grammaticalAgreement": "feminine plural",
-      "expandedArabic": "\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647\u0646",
-      "accessibleEnglish": "May God be pleased with them."
-    },
-    {
-      "source": "\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647\u0627",
-      "target": "\ufd42",
-      "semanticClass": "divine_approval",
-      "referentScope": "the immediately preceding female referent",
-      "grammaticalAgreement": "feminine singular",
-      "expandedArabic": "\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647\u0627",
-      "accessibleEnglish": "May God be pleased with her."
-    },
-    {
-      "source": "\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647",
-      "target": "\ufd41",
-      "semanticClass": "divine_approval",
-      "referentScope": "the immediately preceding male referent",
-      "grammaticalAgreement": "masculine singular",
-      "expandedArabic": "\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647",
-      "accessibleEnglish": "May God be pleased with him."
-    },
-    {
-      "source": "\u0631\u062d\u0645\u0647\u0645 \u0627\u0644\u0644\u0647",
-      "target": "\ufd4f",
-      "semanticClass": "mercy_invocation",
-      "referentScope": "the immediately preceding group",
-      "grammaticalAgreement": "plural",
-      "expandedArabic": "\u0631\u062d\u0645\u0647\u0645 \u0627\u0644\u0644\u0647",
-      "accessibleEnglish": "May God have mercy on them."
-    },
-    {
-      "source": "\u0631\u062d\u0645\u0647 \u0627\u0644\u0644\u0647",
-      "target": "\ufd40",
-      "semanticClass": "mercy_invocation",
-      "referentScope": "the immediately preceding male referent",
-      "grammaticalAgreement": "masculine singular",
-      "expandedArabic": "\u0631\u062d\u0645\u0647 \u0627\u0644\u0644\u0647",
-      "accessibleEnglish": "May God have mercy on him."
-    },
-    {
-      "source": "\u0639\u0644\u064a\u0647\u0645\u0627 \u0627\u0644\u0633\u0644\u0627\u0645",
-      "target": "\ufd49",
-      "semanticClass": "peace_invocation",
-      "referentScope": "the two immediately preceding referents",
-      "grammaticalAgreement": "dual",
-      "expandedArabic": "\u0639\u0644\u064a\u0647\u0645\u0627 \u0627\u0644\u0633\u0644\u0627\u0645",
-      "accessibleEnglish": "Peace be upon both of them."
-    },
-    {
-      "source": "\u0639\u0644\u064a\u0647\u0645 \u0627\u0644\u0633\u0644\u0627\u0645",
-      "target": "\ufd48",
-      "semanticClass": "peace_invocation",
-      "referentScope": "the immediately preceding group",
-      "grammaticalAgreement": "plural",
-      "expandedArabic": "\u0639\u0644\u064a\u0647\u0645 \u0627\u0644\u0633\u0644\u0627\u0645",
-      "accessibleEnglish": "Peace be upon them."
-    },
-    {
-      "source": "\u0639\u0644\u064a\u0647 \u0627\u0644\u0635\u0644\u0627\u0629 \u0648\u0627\u0644\u0633\u0644\u0627\u0645",
-      "target": "\ufd4a",
-      "semanticClass": "prayer_and_peace_invocation",
-      "referentScope": "the immediately preceding prophetic referent",
-      "grammaticalAgreement": "masculine singular",
-      "expandedArabic": "\u0639\u0644\u064a\u0647 \u0627\u0644\u0635\u0644\u0627\u0629 \u0648\u0627\u0644\u0633\u0644\u0627\u0645",
-      "accessibleEnglish": "May blessings and peace be upon him."
-    },
-    {
-      "source": "\u0639\u0644\u064a\u0647 \u0627\u0644\u0633\u0644\u0627\u0645",
-      "target": "\ufd47",
-      "semanticClass": "peace_invocation",
-      "referentScope": "the immediately preceding prophetic referent",
-      "grammaticalAgreement": "masculine singular",
-      "expandedArabic": "\u0639\u0644\u064a\u0647 \u0627\u0644\u0633\u0644\u0627\u0645",
-      "accessibleEnglish": "Peace be upon him."
-    },
-    {
-      "source": "\u0625\u0646 \u0634\u0627\u0621 \u0627\u0644\u0644\u0647 \u062a\u0639\u0627\u0644\u0649",
-      "target": "\u0625\u0646 \u0634\u0627\u0621 \u0627\u0644\u0644\u0647 \u062a\u0639\u0627\u0644\u0649",
+      "source": "ان شاء الله تعالى",
+      "target": "ان شاء الله تعالى",
       "semanticClass": "divine_will_qualification",
       "referentScope": "God",
       "grammaticalAgreement": "not_applicable",
-      "expandedArabic": "\u0625\u0646 \u0634\u0627\u0621 \u0627\u0644\u0644\u0647 \u062a\u0639\u0627\u0644\u0649",
+      "expandedArabic": "ان شاء الله تعالى",
       "accessibleEnglish": "God willing, exalted is He."
     },
     {
-      "source": "\u0625\u0646 \u0634\u0627\u0621 \u0627\u0644\u0644\u0647",
-      "target": "\u0625\u0646 \u0634\u0627\u0621 \u0627\u0644\u0644\u0647",
+      "source": "نسأل الله التوفيق",
+      "target": "نسأل الله التوفيق",
+      "semanticClass": "divine_success_supplication",
+      "referentScope": "God",
+      "grammaticalAgreement": "first person plural supplication",
+      "expandedArabic": "نسأل الله التوفيق",
+      "accessibleEnglish": "We ask God to grant success."
+    },
+    {
+      "source": "والله الموفق",
+      "target": "والله الموفق",
+      "semanticClass": "divine_success_qualification",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "والله الموفق",
+      "accessibleEnglish": "And God is the granter of success."
+    },
+    {
+      "source": "وبالله التوفيق",
+      "target": "وبالله التوفيق",
+      "semanticClass": "divine_success_qualification",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "وبالله التوفيق",
+      "accessibleEnglish": "And through God comes success."
+    },
+    {
+      "source": "اللهم صل على النبي والوصي",
+      "target": "اللهم صل على النبي والوصي",
+      "semanticClass": "quoted_prophetic_blessing_with_legatee",
+      "referentScope": "the Prophet and the legatee",
+      "grammaticalAgreement": "second-person masculine singular imperative addressed to God; two masculine singular referents",
+      "expandedArabic": "اللهم صل على النبي والوصي",
+      "accessibleEnglish": "O God, bless the Prophet and the legatee."
+    },
+    {
+      "source": "رحم الله عائشة",
+      "target": "رحم الله عائشة",
+      "semanticClass": "mercy_invocation",
+      "referentScope": "ʿĀʾishah",
+      "grammaticalAgreement": "feminine singular",
+      "expandedArabic": "رحم الله عائشة",
+      "accessibleEnglish": "May God have mercy on ʿĀʾishah."
+    },
+    {
+      "source": "رحم الله هشاما",
+      "target": "رحم الله هشاما",
+      "semanticClass": "mercy_invocation",
+      "referentScope": "Hishām",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "رحم الله هشاما",
+      "accessibleEnglish": "May God have mercy on Hishām."
+    },
+    {
+      "source": "رحم الله عبادا",
+      "target": "رحم الله عبادا",
+      "semanticClass": "mercy_invocation",
+      "referentScope": "ʿAbbād",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "رحم الله عبادا",
+      "accessibleEnglish": "May God have mercy on ʿAbbād."
+    },
+    {
+      "source": "رحم الله لبيدا",
+      "target": "رحم الله لبيدا",
+      "semanticClass": "mercy_invocation",
+      "referentScope": "Labīd",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "رحم الله لبيدا",
+      "accessibleEnglish": "May God have mercy on Labīd."
+    },
+    {
+      "source": "رحم الله عروة",
+      "target": "رحم الله عروة",
+      "semanticClass": "mercy_invocation",
+      "referentScope": "ʿUrwah",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "رحم الله عروة",
+      "accessibleEnglish": "May God have mercy on ʿUrwah."
+    },
+    {
+      "source": "رحم الله قسا",
+      "target": "رحم الله قسا",
+      "semanticClass": "mercy_invocation",
+      "referentScope": "Quss",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "رحم الله قسا",
+      "accessibleEnglish": "May God have mercy on Quss."
+    },
+    {
+      "source": "يرحمك الله",
+      "target": "يرحمك الله",
+      "semanticClass": "mercy_invocation",
+      "referentScope": "the immediately addressed person",
+      "grammaticalAgreement": "second person masculine singular",
+      "expandedArabic": "يرحمك الله",
+      "accessibleEnglish": "May God have mercy on you."
+    },
+    {
+      "source": "ان شاء الله",
+      "target": "ان شاء الله",
       "semanticClass": "divine_will_qualification",
       "referentScope": "God",
       "grammaticalAgreement": "not_applicable",
-      "expandedArabic": "\u0625\u0646 \u0634\u0627\u0621 \u0627\u0644\u0644\u0647",
+      "expandedArabic": "ان شاء الله",
       "accessibleEnglish": "God willing."
     },
     {
-      "source": "\u0633\u0628\u062d\u0627\u0646\u0647 \u0648\u062a\u0639\u0627\u0644\u0649",
-      "target": "\u0633\u0628\u062d\u0627\u0646\u0647 \u0648\u062a\u0639\u0627\u0644\u0649",
+      "source": "صلى الله تعالى عليه وعلى آله وسلم",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله تعالى عليه وعلى آله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى الله علسه وسلم",
+      "target": "ﷺ",
+      "semanticClass": "prophetic_blessing",
+      "referentScope": "the Prophet",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "صلى الله عليه وسلم",
+      "accessibleEnglish": "May God bless him and grant him peace."
+    },
+    {
+      "source": "صلى آله عليه وسلم",
+      "target": "ﷺ",
+      "semanticClass": "prophetic_blessing",
+      "referentScope": "the Prophet",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "صلى الله عليه وسلم",
+      "accessibleEnglish": "May God bless him and grant him peace."
+    },
+    {
+      "source": "صلى الله عليه وعلى آله وسلم",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وعلى آله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى الله عليه وآله وسلم",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وآله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى 204 الله عليه وآله وسلم",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وآله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى الله 207 عليه وآله وسلم",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وآله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى الله عليه وسلم وأله وسلم",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وآله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى الله عليه وسلم آله وسلم",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وآله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صل الله عليه وآله وسلم",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وآله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى الله عليه وسلم وعلى آله وسلم",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وعلى آله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى الله عليه وسلم وآوله وسلم",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وآله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى الله عليه وسلم وآله سلم",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وآله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى الله عليه وسلم وآله ولم",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وآله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى الله عليه وسلم وآله وسلم",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وآله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى الله عليه وسلم وآله",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وآله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى الله عيه وآله وسلم",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وآله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى الله علي وآله وسلم",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وآله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى الله عيله وآله وسلم",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وآله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى الله عله وآله وسلم",
+      "target": "﵌",
+      "semanticClass": "prophetic_blessing_with_family",
+      "referentScope": "the Prophet and his family",
+      "grammaticalAgreement": "masculine singular with family inclusion",
+      "expandedArabic": "صلى الله عليه وآله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant them peace."
+    },
+    {
+      "source": "صلى الله عيله وسلم",
+      "target": "ﷺ",
+      "semanticClass": "prophetic_blessing",
+      "referentScope": "the Prophet",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "صلى الله عليه وسلم",
+      "accessibleEnglish": "May God bless him and grant him peace."
+    },
+    {
+      "source": "صلى الله",
+      "target": "صلى الله",
+      "semanticClass": "truncated_prophetic_blessing",
+      "referentScope": "the Prophet",
+      "grammaticalAgreement": "masculine singular elliptic",
+      "expandedArabic": "صلى الله",
+      "accessibleEnglish": "The source preserves the truncated wording ‘May God bless [him].’"
+    },
+    {
+      "source": "صلى الله عليه وسلم",
+      "target": "ﷺ",
+      "semanticClass": "prophetic_blessing",
+      "referentScope": "the Prophet",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "صلى الله عليه وسلم",
+      "accessibleEnglish": "May God bless him and grant him peace."
+    },
+    {
+      "source": "رضي الله عنهما",
+      "target": "﵄",
+      "semanticClass": "divine_approval",
+      "referentScope": "the two immediately preceding referents",
+      "grammaticalAgreement": "dual",
+      "expandedArabic": "رضي الله عنهما",
+      "accessibleEnglish": "May God be pleased with both of them."
+    },
+    {
+      "source": "رضي الله عنهم",
+      "target": "﵃",
+      "semanticClass": "divine_approval",
+      "referentScope": "the immediately preceding group",
+      "grammaticalAgreement": "masculine plural",
+      "expandedArabic": "رضي الله عنهم",
+      "accessibleEnglish": "May God be pleased with them."
+    },
+    {
+      "source": "رضي الله عنهن",
+      "target": "﵅",
+      "semanticClass": "divine_approval",
+      "referentScope": "the immediately preceding group",
+      "grammaticalAgreement": "feminine plural",
+      "expandedArabic": "رضي الله عنهن",
+      "accessibleEnglish": "May God be pleased with them."
+    },
+    {
+      "source": "رضي الله عنها",
+      "target": "﵂",
+      "semanticClass": "divine_approval",
+      "referentScope": "the immediately preceding female referent",
+      "grammaticalAgreement": "feminine singular",
+      "expandedArabic": "رضي الله عنها",
+      "accessibleEnglish": "May God be pleased with her."
+    },
+    {
+      "source": "رضي الله عنه",
+      "target": "﵁",
+      "semanticClass": "divine_approval",
+      "referentScope": "the immediately preceding male referent",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "رضي الله عنه",
+      "accessibleEnglish": "May God be pleased with him."
+    },
+    {
+      "source": "رحمهم الله",
+      "target": "﵏",
+      "semanticClass": "mercy_invocation",
+      "referentScope": "the immediately preceding group",
+      "grammaticalAgreement": "plural",
+      "expandedArabic": "رحمهم الله",
+      "accessibleEnglish": "May God have mercy on them."
+    },
+    {
+      "source": "رحمه الله",
+      "target": "﵀",
+      "semanticClass": "mercy_invocation",
+      "referentScope": "the immediately preceding male referent",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "رحمه الله",
+      "accessibleEnglish": "May God have mercy on him."
+    },
+    {
+      "source": "عليهما السلام",
+      "target": "﵉",
+      "semanticClass": "peace_invocation",
+      "referentScope": "the two immediately preceding referents",
+      "grammaticalAgreement": "dual",
+      "expandedArabic": "عليهما السلام",
+      "accessibleEnglish": "Peace be upon both of them."
+    },
+    {
+      "source": "عليهم السلام",
+      "target": "﵈",
+      "semanticClass": "peace_invocation",
+      "referentScope": "the immediately preceding group",
+      "grammaticalAgreement": "plural",
+      "expandedArabic": "عليهم السلام",
+      "accessibleEnglish": "Peace be upon them."
+    },
+    {
+      "source": "عليه الصلاة والسلام",
+      "target": "﵊",
+      "semanticClass": "prayer_and_peace_invocation",
+      "referentScope": "the immediately preceding prophetic referent",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "عليه الصلاة والسلام",
+      "accessibleEnglish": "May blessings and peace be upon him."
+    },
+    {
+      "source": "عليه السلام",
+      "target": "﵇",
+      "semanticClass": "peace_invocation",
+      "referentScope": "the immediately preceding prophetic referent",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "عليه السلام",
+      "accessibleEnglish": "Peace be upon him."
+    },
+    {
+      "source": "إن شاء الله تعالى",
+      "target": "إن شاء الله تعالى",
+      "semanticClass": "divine_will_qualification",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "إن شاء الله تعالى",
+      "accessibleEnglish": "God willing, exalted is He."
+    },
+    {
+      "source": "إن شاء الله",
+      "target": "إن شاء الله",
+      "semanticClass": "divine_will_qualification",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "إن شاء الله",
+      "accessibleEnglish": "God willing."
+    },
+    {
+      "source": "سبحانه وتعالى",
+      "target": "سبحانه وتعالى",
       "semanticClass": "divine_exaltation",
       "referentScope": "God",
       "grammaticalAgreement": "not_applicable",
-      "expandedArabic": "\u0633\u0628\u062d\u0627\u0646\u0647 \u0648\u062a\u0639\u0627\u0644\u0649",
+      "expandedArabic": "سبحانه وتعالى",
       "accessibleEnglish": "Glory be to Him, the Exalted."
     },
     {
-      "source": "\u062a\u0628\u0627\u0631\u0643 \u0648\u062a\u0639\u0627\u0644\u0649",
-      "target": "\ufd4e",
+      "source": "تبارك وتعالى",
+      "target": "﵎",
       "semanticClass": "divine_exaltation",
       "referentScope": "God",
       "grammaticalAgreement": "not_applicable",
-      "expandedArabic": "\u062a\u0628\u0627\u0631\u0643 \u0648\u062a\u0639\u0627\u0644\u0649",
+      "expandedArabic": "تبارك وتعالى",
       "accessibleEnglish": "Blessed and exalted is He."
     },
     {
-      "source": "\u0648\u0627\u0644\u0644\u0647 \u0623\u0639\u0644\u0645",
-      "target": "\u0648\u0627\u0644\u0644\u0647 \u0623\u0639\u0644\u0645",
+      "source": "والله أعلم",
+      "target": "والله أعلم",
       "semanticClass": "divine_knowledge_qualification",
       "referentScope": "God",
       "grammaticalAgreement": "not_applicable",
-      "expandedArabic": "\u0648\u0627\u0644\u0644\u0647 \u0623\u0639\u0644\u0645",
+      "expandedArabic": "والله أعلم",
       "accessibleEnglish": "And God knows best."
     },
     {
-      "source": "\u0648\u0627\u0644\u0644\u0647 \u0627\u0639\u0644\u0645",
-      "target": "\u0648\u0627\u0644\u0644\u0647 \u0623\u0639\u0644\u0645",
+      "source": "والله اعلم",
+      "target": "والله أعلم",
       "semanticClass": "divine_knowledge_qualification",
       "referentScope": "God",
       "grammaticalAgreement": "not_applicable",
-      "expandedArabic": "\u0648\u0627\u0644\u0644\u0647 \u0623\u0639\u0644\u0645",
+      "expandedArabic": "والله أعلم",
       "accessibleEnglish": "And God knows best."
     },
     {
-      "source": "\u0627\u0644\u0644\u0647 \u0623\u0639\u0644\u0645",
-      "target": "\u0627\u0644\u0644\u0647 \u0623\u0639\u0644\u0645",
+      "source": "الله أعلم",
+      "target": "الله أعلم",
       "semanticClass": "divine_knowledge_qualification",
       "referentScope": "God",
       "grammaticalAgreement": "not_applicable",
-      "expandedArabic": "\u0627\u0644\u0644\u0647 \u0623\u0639\u0644\u0645",
+      "expandedArabic": "الله أعلم",
       "accessibleEnglish": "God knows best."
     },
     {
-      "source": "\u0639\u0632 \u0648\u062c\u0644",
-      "target": "\ufdff",
+      "source": "عز وجل",
+      "target": "﷿",
       "semanticClass": "divine_exaltation",
       "referentScope": "God",
       "grammaticalAgreement": "not_applicable",
-      "expandedArabic": "\u0639\u0632 \u0648\u062c\u0644",
+      "expandedArabic": "عز وجل",
       "accessibleEnglish": "Mighty and majestic is He."
     }
   ]

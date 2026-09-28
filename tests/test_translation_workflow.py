@@ -1827,6 +1827,103 @@ class TranslationWorkflowTests(unittest.TestCase):
         self.assertEqual(registry["profileId"], "al-isabah-translation-profile")
         self.assertEqual(registry["entries"], list(MODULE.FORMULA_RULES))
 
+    def test_family_suffix_before_rajulan_is_substantive_text(self):
+        observed = "صلى الله عليه وسلم وآله"
+        family = MODULE.registered_occurrences(observed, "source")
+        self.assertEqual(len(family), 1)
+        self.assertEqual(family[0]["value"], observed)
+        self.assertEqual(family[0]["rule"]["target"], "﵌")
+        longer_word = MODULE.registered_occurrences(
+            f"{observed} رجلان",
+            "source",
+        )
+        self.assertEqual(longer_word[0]["value"], observed)
+        self.assertEqual(longer_word[0]["rule"]["target"], "﵌")
+
+        plain = "صلى الله عليه وسلم"
+        plain_rule = next(
+            rule for rule in MODULE.FORMULA_RULES if rule["source"] == plain
+        )
+        contextual_text = f"قال {observed} رجلا"
+        start = contextual_text.index(observed)
+        contextual = MODULE.registered_occurrences(
+            contextual_text,
+            "source",
+        )
+        self.assertEqual(
+            contextual,
+            [
+                {
+                    "start": start,
+                    "end": start + len(plain),
+                    "value": plain,
+                    "rule": plain_rule,
+                }
+            ],
+        )
+
+    def test_volume_five_formula_rules_preserve_exact_arabic_wording(self):
+        forward = MODULE.registered_occurrences(
+            "وسيأتي بيانه في موضعه ان شاء الله تعالى", "source"
+        )
+        self.assertEqual(len(forward), 1)
+        self.assertEqual(forward[0]["value"], "ان شاء الله تعالى")
+        self.assertEqual(forward[0]["rule"]["target"], "ان شاء الله تعالى")
+        self.assertEqual(
+            [
+                hit["value"]
+                for hit in MODULE.registered_occurrences(
+                    "قال: ان شاء الله تعالى نفعل ذلك", "source"
+                )
+            ],
+            ["ان شاء الله تعالى"],
+        )
+        self.assertEqual(
+            [
+                hit["value"]
+                for hit in MODULE.registered_occurrences(
+                    "قال: ان شاء الله نفعل ذلك", "source"
+                )
+            ],
+            ["ان شاء الله"],
+        )
+
+        closing = "والله عنده حسن المآب"
+        self.assertEqual(
+            [hit["value"] for hit in MODULE.registered_occurrences(closing, "source")],
+            [closing],
+        )
+        self.assertEqual(
+            MODULE.registered_occurrences(f"{closing} في الآخرة", "source"),
+            [],
+        )
+
+        truncated = "صلى الله"
+        source_text = f"صنعت لرسول الله {truncated} كسوة"
+        source_hits = MODULE.registered_occurrences(source_text, "source")
+        self.assertEqual([hit["value"] for hit in source_hits], [truncated])
+        target_text = f"made a garment for the Messenger of Allah {truncated}."
+        target_hits = MODULE.registered_occurrences(target_text, "target")
+        self.assertEqual([hit["value"] for hit in target_hits], [truncated])
+        self.assertEqual(
+            MODULE.registered_occurrences(
+                "﵌ صلى الله عيه وآله وسلم", "target"
+            ),
+            [
+                hit
+                for hit in MODULE.registered_occurrences("﵌", "target")
+            ],
+        )
+        self.assertNotIn(
+            truncated,
+            [
+                hit["value"]
+                for hit in MODULE.registered_occurrences(
+                    "قال رسول الله صلى الله عليه وسلم", "source"
+                )
+            ],
+        )
+
     def test_contextual_formulas_and_stage_specific_targets_are_exact(self):
         basmala = "بسم الله الرحمن الرحيم"
         self.assertEqual(MODULE.registered_occurrences(basmala, "source"), [])

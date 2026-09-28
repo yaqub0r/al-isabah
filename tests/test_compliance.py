@@ -171,7 +171,7 @@ class ComplianceTests(unittest.TestCase):
         )
 
     def test_registry_contains_exact_quoted_prayer_record(self):
-        self.assertEqual(self.formula_registry["registryVersion"], "1.4.0")
+        self.assertEqual(self.formula_registry["registryVersion"], "1.6.0")
         prayer = "اللهم بارك على محمد وعلى آل محمد"
         records = [
             item for item in self.formula_registry["entries"]
@@ -196,6 +196,118 @@ class ComplianceTests(unittest.TestCase):
                 }
             ],
         )
+
+    def test_registry_contains_exact_damaged_prophetic_blessing_variants(self):
+        family_expansions = {
+            "صلى الله عليه وسلم وعلى آله وسلم": "صلى الله عليه وعلى آله وسلم",
+            "صلى الله عليه وسلم وآله": "صلى الله عليه وآله وسلم",
+            "صلى الله عيه وآله وسلم": "صلى الله عليه وآله وسلم",
+            "صلى الله عليه وسلم وآوله وسلم": "صلى الله عليه وآله وسلم",
+            "صلى الله علي وآله وسلم": "صلى الله عليه وآله وسلم",
+            "صلى الله عليه وسلم وآله سلم": "صلى الله عليه وآله وسلم",
+            "صلى الله عيله وآله وسلم": "صلى الله عليه وآله وسلم",
+            "صلى الله عله وآله وسلم": "صلى الله عليه وآله وسلم",
+            "صلى الله عليه وسلم وآله ولم": "صلى الله عليه وآله وسلم",
+        }
+        records = {
+            item["source"]: item for item in self.formula_registry["entries"]
+        }
+        for source, expanded_arabic in family_expansions.items():
+            self.assertEqual(
+                records[source],
+                {
+                    "source": source,
+                    "target": "﵌",
+                    "semanticClass": "prophetic_blessing_with_family",
+                    "referentScope": "the Prophet and his family",
+                    "grammaticalAgreement": (
+                        "masculine singular with family inclusion"
+                    ),
+                    "expandedArabic": expanded_arabic,
+                    "accessibleEnglish": (
+                        "May God bless him and his family and grant them peace."
+                    ),
+                },
+            )
+
+        damaged_plain = "صلى الله عيله وسلم"
+        self.assertEqual(
+            records[damaged_plain],
+            {
+                "source": damaged_plain,
+                "target": "ﷺ",
+                "semanticClass": "prophetic_blessing",
+                "referentScope": "the Prophet",
+                "grammaticalAgreement": "masculine singular",
+                "expandedArabic": "صلى الله عليه وسلم",
+                "accessibleEnglish": "May God bless him and grant him peace.",
+            },
+        )
+
+    def test_registry_contains_volume_five_formula_successor_rules(self):
+        records = {
+            item["source"]: item for item in self.formula_registry["entries"]
+        }
+        expected = {
+            "والله الموفق": (
+                "والله الموفق",
+                "divine_success_qualification",
+            ),
+            "ان شاء الله تعالى": (
+                "ان شاء الله تعالى",
+                "divine_will_qualification",
+            ),
+            "ان شاء الله": (
+                "ان شاء الله",
+                "divine_will_qualification",
+            ),
+            "نسأل الله التوفيق": (
+                "نسأل الله التوفيق",
+                "divine_success_supplication",
+            ),
+            "والله عنده حسن المآب": (
+                "والله عنده حسن المآب",
+                "divine_return_qualification",
+            ),
+            "والله سبحانه وتعالى اعلم": (
+                "والله سبحانه وتعالى اعلم",
+                "divine_knowledge_with_exaltation_qualification",
+            ),
+            "وبالله التوفيق": (
+                "وبالله التوفيق",
+                "divine_success_qualification",
+            ),
+            "صلى الله عليه وسلم وأله وسلم": (
+                "﵌",
+                "prophetic_blessing_with_family",
+            ),
+            "صلى الله عليه وسلم آله وسلم": (
+                "﵌",
+                "prophetic_blessing_with_family",
+            ),
+            "صل الله عليه وآله وسلم": (
+                "﵌",
+                "prophetic_blessing_with_family",
+            ),
+            "صلى الله": (
+                "صلى الله",
+                "truncated_prophetic_blessing",
+            ),
+            "اللهم صل على النبي والوصي": (
+                "اللهم صل على النبي والوصي",
+                "quoted_prophetic_blessing_with_legatee",
+            ),
+            "رحم الله عائشة": ("رحم الله عائشة", "mercy_invocation"),
+            "رحم الله هشاما": ("رحم الله هشاما", "mercy_invocation"),
+            "رحم الله عبادا": ("رحم الله عبادا", "mercy_invocation"),
+            "رحم الله لبيدا": ("رحم الله لبيدا", "mercy_invocation"),
+            "رحم الله عروة": ("رحم الله عروة", "mercy_invocation"),
+            "رحم الله قسا": ("رحم الله قسا", "mercy_invocation"),
+            "يرحمك الله": ("يرحمك الله", "mercy_invocation"),
+        }
+        for source, (target, semantic_class) in expected.items():
+            self.assertEqual(records[source]["target"], target)
+            self.assertEqual(records[source]["semanticClass"], semantic_class)
 
     def test_governance_reference_rejects_external_authority(self):
         reference = copy.deepcopy(self.governance_reference)
@@ -327,6 +439,28 @@ class ComplianceTests(unittest.TestCase):
             self.assertEqual(scope["public_working_status"], "blocked")
             self.assertEqual(scope["canonical_promotion"], "blocked")
             self.assertEqual(scope["human_review"]["unreviewed_units"], 1633)
+        self.assertIn("not additive", cohort["agent_completion"]["basis"])
+        self.assertIn("must not be added", volume["agent_completion"]["basis"])
+        self.assertEqual(self.validate(translation_coverage=coverage), [])
+
+    def test_volume_five_completion_is_full_and_nonadditive(self):
+        coverage = copy.deepcopy(self.translation_coverage)
+        scopes = {scope["scope_id"]: scope for scope in coverage["scopes"]}
+        cohort = scopes["issue-0085-volume-05"]
+        volume = scopes["volume-05"]
+        for scope in (cohort, volume):
+            completion = scope["agent_completion"]
+            self.assertEqual(completion["status"], "agent_complete")
+            self.assertEqual(completion["locked_units"], 1604)
+            self.assertEqual(completion["translated_units"], 1604)
+            self.assertEqual(completion["remaining_agent_units"], 0)
+            self.assertEqual(
+                completion["evidence"]["source_register_artifact"],
+                "issue-0085-public-proposal-v1",
+            )
+            self.assertEqual(scope["public_working_status"], "blocked")
+            self.assertEqual(scope["canonical_promotion"], "blocked")
+            self.assertEqual(scope["human_review"]["unreviewed_units"], 1604)
         self.assertIn("not additive", cohort["agent_completion"]["basis"])
         self.assertIn("must not be added", volume["agent_completion"]["basis"])
         self.assertEqual(self.validate(translation_coverage=coverage), [])

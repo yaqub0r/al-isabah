@@ -111,6 +111,93 @@ def continued_context(
     }
 
 
+def projected_formula_inventory(
+    record: dict[str, Any], packet_formulas: list[dict[str, Any]]
+) -> list[dict[str, str]]:
+    """Recompute formula declarations from every projected bilingual field."""
+    from validate_public_proposal import expected_scope_formulas
+
+    scopes: list[tuple[str, str, str, str]] = []
+    for context in record.get("precedingMaterial", []):
+        heading = context.get("heading", {})
+        scopes.append(
+            (
+                context["id"],
+                "headingArabic",
+                heading.get("arabic") or "",
+                heading.get("english") or "",
+            )
+        )
+        scopes.append(
+            (
+                context["id"],
+                "arabic",
+                context.get("arabic") or "",
+                context.get("english") or "",
+            )
+        )
+    title = record["title"]
+    scopes.append(
+        (
+            record["id"],
+            "titleArabic",
+            title.get("arabic") or "",
+            title.get("english") or "",
+        )
+    )
+    scopes.append(
+        (
+            record["id"],
+            "arabic",
+            record.get("arabic") or "",
+            record.get("english") or "",
+        )
+    )
+
+    inventory: list[dict[str, str]] = []
+    for record_id, source_field, source, english in scopes:
+        formulas, valid = expected_scope_formulas(
+            record_id,
+            source_field,
+            source,
+            english,
+            include_contextual=True,
+        )
+        if not valid:
+            raise ValueError(
+                f"formula parity failed for projected field "
+                f"{record_id}:{source_field}"
+            )
+        inventory.extend(
+            {key: str(item[key]) for key in FORMULA_KEYS}
+            for item in formulas
+        )
+    inherited_ids = {
+        context["id"]
+        for context in record.get("precedingMaterial", [])
+        if context.get("kind") == "continued_structural_heading"
+    }
+    projected_packet_inventory = [
+        item for item in inventory if item["recordId"] not in inherited_ids
+    ]
+
+    def signature(item: dict[str, Any]) -> tuple[str, str, str]:
+        return (
+            str(item["observedArabic"]),
+            str(item["semanticClass"]),
+            str(item["targetRealization"]),
+        )
+
+    if [signature(item) for item in projected_packet_inventory] != [
+        signature(item) for item in packet_formulas
+    ]:
+        raise ValueError(
+            f"projected formula inventory drifted from packet "
+            f"{record['id']}"
+        )
+    return inventory
+
+
 def active_heading_contexts(
     source_proposal: dict[str, Any], before_source_ordinal: int
 ) -> list[dict[str, Any]]:
@@ -238,10 +325,7 @@ def public_record(
             for index, item in enumerate(candidates, start=1)
         ],
         "unresolved": [finding(item) for item in unresolved],
-        "formulas": [
-            {key: item[key] for key in FORMULA_KEYS}
-            for item in formulas
-        ],
+        "formulas": [],
         "machineAssessment": "needs_attention" if needs_attention else "passed",
         "humanReview": entry["humanReview"]["status"],
         "source": {
@@ -253,6 +337,7 @@ def public_record(
         },
         "policy": {"bindingSha256": packet["policy"]["bindingSha256"]},
     }
+    record["formulas"] = projected_formula_inventory(record, formulas)
     if decision["bodyOpeningKind"] == "none":
         record["bodyState"] = "title-only"
     return record

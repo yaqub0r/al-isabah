@@ -19,7 +19,7 @@
     {
       "id": "policy-binding",
       "path": "compliance/policy-binding.v9.json",
-      "sha256": "ef155e3aaaec9aae14f495ecff6aa212c975a6a3d703f3afc4a14b6c881b1998",
+      "sha256": "ec32ce5933a7f79167f9666b522187fd7e1ea8aacd7c0acce10c1ac269e32ebe",
       "status": "active"
     },
     {
@@ -32,7 +32,7 @@
     {
       "id": "translation-quality-workflow",
       "path": "docs/contracts/translation-quality-workflow.md",
-      "sha256": "cb78512085a81ee2e2439cc44e0672a6b0d5cf41fa7dc545147f727049fa7254",
+      "sha256": "0051e4224b3ec2094be1e01c9ff3cdaf8a73dea0dddafc2e570a1ef6664a28b2",
       "status": "active"
     },
     {
@@ -71,14 +71,14 @@
     {
       "id": "honorific-formula-registry",
       "path": "profiles/honorific-formulas.v1.json",
-      "sha256": "1655874b472e73eb7468e9f68f0ec5c469146bf5afbbbdef84f67220130dba9f",
+      "sha256": "118673fba290d5295be19cfe284c301241d558791fe7e001cde15a724c50c7f9",
       "status": "active",
-      "version": "1.4.0"
+      "version": "1.6.0"
     },
     {
       "id": "translation-coverage",
       "path": "compliance/translation-coverage.v1.json",
-      "sha256": "6f09d5cffee34ebcebe743530ff1bb91e4b4d0cb1b6a282e52f561c44670ffcd",
+      "sha256": "930a7048ce9e929caafa0e241e139c6261ab79c84f592fbff646e7d6723e929c",
       "status": "active",
       "version": "1.1.0"
     },
@@ -185,14 +185,14 @@
     {
       "id": "translation-work-packet-schema",
       "path": "schemas/translation-work-packet.v7.schema.json",
-      "sha256": "6ba4db46ba0f6260d917233d51ddd821639c55aed67eba2b7e85fb1aa1c03e7a",
+      "sha256": "b4273eafebc395dbcb0d709a6fa57b876aaa74f3e4af122d9938df1b3cec03c3",
       "status": "active",
       "version": "3.0.0"
     },
     {
       "id": "translation-agent-workflow",
       "path": "docs/translation/agent-workflow.md",
-      "sha256": "cdfe5ed69fa1aa35120dcc96a6fd702261aa5dd2575cdc465a89679ceeca5c69",
+      "sha256": "f2bd486f2894aa965b53be9dbb96736ca734519a0456c7bd69842796437ac0d8",
       "status": "active"
     },
     {

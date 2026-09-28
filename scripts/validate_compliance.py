@@ -116,7 +116,7 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
     "honorific-formula-registry": (
         "profiles/honorific-formulas.v1.json",
         "active",
-        "1.4.0",
+        "1.6.0",
     ),
     "translation-coverage": (
         "compliance/translation-coverage.v1.json",
@@ -373,6 +373,21 @@ REQUIRED_COMPLETED_SCOPES = {
         "volume": 4,
         "artifact": "issue-0086-public-proposal-v1",
         "units": 1633,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
+    "issue-0085-volume-05": {
+        "scope_kind": "cohort",
+        "volume": 5,
+        "artifact": "issue-0085-public-proposal-v1",
+        "units": 1604,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
+    "volume-05": {
+        "volume": 5,
+        "artifact": "issue-0085-public-proposal-v1",
+        "units": 1604,
         "workflow_conformance": "current",
         "public_working_status": "blocked",
     },

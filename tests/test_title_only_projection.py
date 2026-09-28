@@ -29,6 +29,71 @@ VALIDATE = load_module("validate_public_proposal", ROOT / "scripts" / "validate_
 
 
 class TitleOnlyProjectionTests(unittest.TestCase):
+    def test_title_and_inherited_heading_formulas_are_declared(self) -> None:
+        formula = "صلى الله عليه وسلم"
+        record = {
+            "id": "synthetic-unit-007274",
+            "title": {
+                "arabic": f"القاسم بن رسول الله {formula}",
+                "english": f"al-Qāsim, son of the Messenger of God {formula}",
+            },
+            "arabic": "",
+            "english": "",
+            "precedingMaterial": [
+                {
+                    "id": (
+                        "continued-before-unit-007274-from-"
+                        "synthetic-structural-heading"
+                    ),
+                    "kind": "continued_structural_heading",
+                    "heading": {
+                        "arabic": f"من لم يره {formula}",
+                        "english": f"Those who did not see him {formula}",
+                    },
+                    "arabic": "",
+                    "english": "",
+                }
+            ],
+        }
+        packet_formulas = [
+            {
+                "observedArabic": formula,
+                "semanticClass": "prophetic_blessing",
+                "targetRealization": formula,
+            }
+        ]
+
+        record["formulas"] = PROJECT.projected_formula_inventory(
+            record, packet_formulas
+        )
+
+        self.assertEqual(
+            [item["formulaId"] for item in record["formulas"]],
+            [
+                (
+                    "continued-before-unit-007274-from-"
+                    "synthetic-structural-heading-headingArabic-formula-001"
+                ),
+                "synthetic-unit-007274-titleArabic-formula-001",
+            ],
+        )
+        self.assertEqual(
+            VALIDATE.public_formula_errors(record, "$.record"),
+            [],
+        )
+        title_formulas = VALIDATE.formulas_for_scope(
+            record["formulas"], record["id"], "titleArabic"
+        )
+        self.assertEqual(
+            VALIDATE.public_english_errors(
+                record["title"]["english"],
+                title_formulas,
+                record["id"],
+                "$.record.title.english",
+            ),
+            [],
+        )
+
     def test_exact_title_only_record_and_public_binding(self) -> None:
         arabic = "عبد الله الأنصاري"
         english = "ʿAbd Allāh al-Anṣārī"

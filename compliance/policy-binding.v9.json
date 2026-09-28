@@ -9,7 +9,7 @@
     {
       "id": "translation-quality-workflow",
       "path": "docs/contracts/translation-quality-workflow.md",
-      "sha256": "cb78512085a81ee2e2439cc44e0672a6b0d5cf41fa7dc545147f727049fa7254"
+      "sha256": "0051e4224b3ec2094be1e01c9ff3cdaf8a73dea0dddafc2e570a1ef6664a28b2"
     },
     {
       "id": "al-isabah-translation-profile",
@@ -34,7 +34,7 @@
     {
       "id": "honorific-formula-registry",
       "path": "profiles/honorific-formulas.v1.json",
-      "sha256": "1655874b472e73eb7468e9f68f0ec5c469146bf5afbbbdef84f67220130dba9f"
+      "sha256": "118673fba290d5295be19cfe284c301241d558791fe7e001cde15a724c50c7f9"
     },
     {
       "id": "translation-source-profile",
@@ -69,12 +69,12 @@
     {
       "id": "translation-work-packet-schema",
       "path": "schemas/translation-work-packet.v7.schema.json",
-      "sha256": "6ba4db46ba0f6260d917233d51ddd821639c55aed67eba2b7e85fb1aa1c03e7a"
+      "sha256": "b4273eafebc395dbcb0d709a6fa57b876aaa74f3e4af122d9938df1b3cec03c3"
     },
     {
       "id": "translation-agent-workflow",
       "path": "docs/translation/agent-workflow.md",
-      "sha256": "cdfe5ed69fa1aa35120dcc96a6fd702261aa5dd2575cdc465a89679ceeca5c69"
+      "sha256": "f2bd486f2894aa965b53be9dbb96736ca734519a0456c7bd69842796437ac0d8"
     },
     {
       "id": "local-policy-binding-schema",
@@ -84,5 +84,5 @@
   ],
   "supersedes": "compliance/policy-binding.v8.json",
   "applied_by_issue": "https://github.com/yaqub0r/al-isabah/issues/85",
-  "note": "Issue 85 adds source-unit-keyed title/body-opening decisions for Volume 5 ordinals 6159-7762 through additive profile v8, preserves repeated printed numbers without identity collapse, and corrects the exact structural invocation boundary before the four-pipe Muhammad section. Packet-schema document v7 pins this v9 binding. Packet, shard, tool and stage-provenance data remain version 3.0.0; public-proposal v2, execution registry v2 and sol-xhigh-explicit-host-v1 remain unchanged. Earlier bindings, title profiles, schemas, proposals, releases and evidence retain their original immutable pins."
+  "note": "Issue 85 adds source-unit-keyed title/body-opening decisions for Volume 5 ordinals 6159-7762 through additive profile v8, preserves repeated printed numbers without identity collapse, and corrects the exact structural invocation boundary before the four-pipe Muhammad section. It advances the honorific formula registry to v1.6.0 with the reviewed Volume 5 authorial qualifications, success supplication, exact damaged family-bearing source variants, named mercy invocations, quoted prayer forms, and one guarded truncated blessing. Every attested formula remains in Arabic written form at its corresponding English occurrence, including formulas inside quotations. It also requires final adjudication to receive and exactly retain the active bilingual title decision after blind critique and witness work. Packet-schema document v7 pins that registry version while continuing to pin this v9 binding. Packet, shard, tool and stage-provenance data remain version 3.0.0; public-proposal v2, execution registry v2 and sol-xhigh-explicit-host-v1 remain unchanged. Earlier bindings, title profiles, schemas, proposals, releases and evidence retain their original immutable pins."
 }

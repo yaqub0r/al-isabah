@@ -137,6 +137,9 @@ For every entry:
 2. **Independent critique** — use a fresh critique pass with a different run
    ID. Inspect omissions, additions, reversals, names, relationships, isnads,
    numbers, negation, honorific semantics, poetry, notes, and continuations.
+   Preserve every attested honorific and devotional formula at the
+   corresponding English occurrence in Arabic written form, including formulas
+   inside quotations; translate the surrounding substantive wording.
    Each material uncertainty sets `requiresWitness: true`. A complete critique
    also records the ordered semantic checklist in `semanticAudit`, bound to
    hashes of the readable Arabic and the exact English candidate. A status
@@ -150,8 +153,14 @@ For every entry:
    are not required, record the source-specific rationale rather than relying
    on the status alone. A material or blocking unresolved item also requires
    completed witness evidence.
-4. **Adjudication** — write the complete final candidate and record material
-   decisions. Fluent wording must not hide an unresolved reading.
+4. **Adjudication** — after critique and witness resolution, provide the active
+   governed bilingual title decision and write the complete final candidate.
+   Begin the English candidate with the exact governed English title and retain
+   the exact governed English body opening immediately after its title boundary;
+   emit only the governed title for a title-only source unit. Record material
+   decisions, and do not hide an unresolved reading with fluent wording. Keep
+   the prewritten English title and body opening out of blind translation and
+   independent critique inputs.
 5. **Names** — mark names complete and store durable JSON candidates and
    mentions. Candidate IDs remain packet-scoped until reconciled with the
    canonical identity ledger; do not invent canonical entry IDs. Bind the

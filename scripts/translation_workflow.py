@@ -42,7 +42,7 @@ PROPOSAL_ROOT = ROOT / "content" / "translation-proposals"
 PUBLIC_PROPOSAL_ROOT = ROOT / "content" / "public-proposals"
 REPOSITORY = "yaqub0r/al-isabah"
 TOOL_VERSION = "3.0.0"
-FORMULA_REGISTRY_VERSION = "1.4.0"
+FORMULA_REGISTRY_VERSION = "1.6.0"
 SEMANTIC_AUDIT_VERSION = "1.0.0"
 STAGE_PROVENANCE_VERSION = "3.0.0"
 PACKET_SCHEMA_VERSION = "3.0.0"
@@ -135,389 +135,23 @@ NON_IDENTITY_NAME_FORMS = {
     "umm",
 }
 
-# Longer forms must precede forms that they contain. The registry is kept in
-# executable form so the packet can persist a per-occurrence semantic audit
-# without relying on an application or database.
-FORMULA_RULES = (
-    {
-        "source": "بسم الله الرحمن الرحيم",
-        "target": "بسم الله الرحمن الرحيم",
-        "semanticClass": "basmala_invocation",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "بسم الله الرحمن الرحيم",
-    },
-    {
-        "source": "صلى الله عليه وسلم واله وسلم",
-        "target": "صلى الله عليه وسلم واله وسلم",
-        "semanticClass": "prophetic_blessing_with_family",
-        "referentScope": "the Prophet and his family",
-        "grammaticalAgreement": "masculine singular with family inclusion",
-        "expandedArabic": "صلى الله عليه وسلم وآله وسلم",
-    },
-    {
-        "source": "صلى الله عليه وسلم وسلم",
-        "target": "صلى الله عليه وسلم وسلم",
-        "semanticClass": "prophetic_blessing_with_repeated_peace",
-        "referentScope": "the Prophet",
-        "grammaticalAgreement": "masculine singular",
-        "expandedArabic": "صلى الله عليه وسلم وسلم",
-    },
-    {
-        "source": "عليها السلام",
-        "target": "عليها السلام",
-        "semanticClass": "peace_invocation",
-        "referentScope": "the immediately preceding female referent",
-        "grammaticalAgreement": "feminine singular",
-        "expandedArabic": "عليها السلام",
-    },
-    {
-        "source": "والله المستعان",
-        "target": "والله المستعان",
-        "semanticClass": "divine_help_qualification",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "والله المستعان",
-    },
-    {
-        "source": "فالله أعلم",
-        "target": "فالله أعلم",
-        "semanticClass": "divine_knowledge_qualification",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "فالله أعلم",
-    },
-    {
-        "source": "فالله اعلم",
-        "target": "فالله اعلم",
-        "semanticClass": "divine_knowledge_qualification",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "فالله أعلم",
-    },
-    {
-        "source": "ولله الحمد",
-        "target": "ولله الحمد",
-        "semanticClass": "divine_praise",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "ولله الحمد",
-    },
-    {
-        "source": "تعالى",
-        "target": "تعالى",
-        "semanticClass": "divine_exaltation",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "تعالى",
-    },
-    {
-        "source": "اللهم بارك على محمد وعلى آل محمد",
-        "target": "اللهم بارك على محمد وعلى آل محمد",
-        "semanticClass": "quoted_prophetic_blessing_with_family",
-        "referentScope": "Muḥammad and the family of Muḥammad",
-        "grammaticalAgreement": (
-            "second-person masculine singular imperative addressed to God; "
-            "masculine singular prophetic referent with family inclusion"
-        ),
-        "expandedArabic": "اللهم بارك على محمد وعلى آل محمد",
-    },
-    {
-        "source": "صلى الله عليه وعليهم صلاة خالدة ، وسلاما مؤبدا [ وسلم تسليما ]",
-        "target": (
-            "May God bless him and them with an everlasting blessing and grant "
-            "them perpetual peace [and fullest peace]."
-        ),
-        "semanticClass": "contextual_prayer_and_peace_invocation",
-        "referentScope": "the Prophet and his Companions",
-        "grammaticalAgreement": "masculine singular and masculine plural",
-        "expandedArabic": (
-            "صلى الله عليه وعليهم صلاة خالدة ، وسلاما مؤبدا [ وسلم تسليما ]"
-        ),
-    },
-    {
-        "source": "صلى الله تعالى عليه وعلى آله وسلم",
-        "target": "﵌",
-        "semanticClass": "prophetic_blessing_with_family",
-        "referentScope": "the Prophet and his family",
-        "grammaticalAgreement": "masculine singular with family inclusion",
-        "expandedArabic": "صلى الله تعالى عليه وعلى آله وسلم",
-    },
-    # The locked source has one transparent OCR substitution in the formula.
-    {
-        "source": "صلى الله علسه وسلم",
-        "target": "ﷺ",
-        "semanticClass": "prophetic_blessing",
-        "referentScope": "the Prophet",
-        "grammaticalAgreement": "masculine singular",
-        "expandedArabic": "صلى الله عليه وسلم",
-    },
-    {
-        "source": "صلى آله عليه وسلم",
-        "target": "ﷺ",
-        "semanticClass": "prophetic_blessing",
-        "referentScope": "the Prophet",
-        "grammaticalAgreement": "masculine singular",
-        "expandedArabic": "صلى الله عليه وسلم",
-    },
-    {
-        "source": "صلى الله عليه وعلى آله وسلم",
-        "target": "﵌",
-        "semanticClass": "prophetic_blessing_with_family",
-        "referentScope": "the Prophet and his family",
-        "grammaticalAgreement": "masculine singular with family inclusion",
-        "expandedArabic": "صلى الله عليه وعلى آله وسلم",
-    },
-    {
-        "source": "صلى الله عليه وآله وسلم",
-        "target": "﵌",
-        "semanticClass": "prophetic_blessing_with_family",
-        "referentScope": "the Prophet and his family",
-        "grammaticalAgreement": "masculine singular with family inclusion",
-        "expandedArabic": "صلى الله عليه وآله وسلم",
-    },
-    # A locked Volume 2 page marker interrupts one family-inclusive blessing.
-    {
-        "source": "صلى 204 الله عليه وآله وسلم",
-        "target": "﵌",
-        "semanticClass": "prophetic_blessing_with_family",
-        "referentScope": "the Prophet and his family",
-        "grammaticalAgreement": "masculine singular with family inclusion",
-        "expandedArabic": "صلى الله عليه وآله وسلم",
-    },
-    {
-        "source": "صلى الله 207 عليه وآله وسلم",
-        "target": "﵌",
-        "semanticClass": "prophetic_blessing_with_family",
-        "referentScope": "the Prophet and his family",
-        "grammaticalAgreement": "masculine singular with family inclusion",
-        "expandedArabic": "صلى الله عليه وآله وسلم",
-    },
-    # The locked source has one transposed family-inclusive blessing.
-    {
-        "source": "صلى الله عليه وسلم وآله وسلم",
-        "target": "﵌",
-        "semanticClass": "prophetic_blessing_with_family",
-        "referentScope": "the Prophet and his family",
-        "grammaticalAgreement": "masculine singular with family inclusion",
-        "expandedArabic": "صلى الله عليه وآله وسلم",
-    },
-    {
-        "source": "صلى الله عليه وسلم",
-        "target": "ﷺ",
-        "semanticClass": "prophetic_blessing",
-        "referentScope": "the Prophet",
-        "grammaticalAgreement": "masculine singular",
-        "expandedArabic": "صلى الله عليه وسلم",
-    },
-    {
-        "source": "رضي الله عنهما",
-        "target": "﵄",
-        "semanticClass": "divine_approval",
-        "referentScope": "the two immediately preceding referents",
-        "grammaticalAgreement": "dual",
-        "expandedArabic": "رضي الله عنهما",
-    },
-    {
-        "source": "رضي الله عنهم",
-        "target": "﵃",
-        "semanticClass": "divine_approval",
-        "referentScope": "the immediately preceding group",
-        "grammaticalAgreement": "masculine plural",
-        "expandedArabic": "رضي الله عنهم",
-    },
-    {
-        "source": "رضي الله عنهن",
-        "target": "﵅",
-        "semanticClass": "divine_approval",
-        "referentScope": "the immediately preceding group",
-        "grammaticalAgreement": "feminine plural",
-        "expandedArabic": "رضي الله عنهن",
-    },
-    {
-        "source": "رضي الله عنها",
-        "target": "﵂",
-        "semanticClass": "divine_approval",
-        "referentScope": "the immediately preceding female referent",
-        "grammaticalAgreement": "feminine singular",
-        "expandedArabic": "رضي الله عنها",
-    },
-    {
-        "source": "رضي الله عنه",
-        "target": "﵁",
-        "semanticClass": "divine_approval",
-        "referentScope": "the immediately preceding male referent",
-        "grammaticalAgreement": "masculine singular",
-        "expandedArabic": "رضي الله عنه",
-    },
-    {
-        "source": "رحمهم الله",
-        "target": "﵏",
-        "semanticClass": "mercy_invocation",
-        "referentScope": "the immediately preceding group",
-        "grammaticalAgreement": "plural",
-        "expandedArabic": "رحمهم الله",
-    },
-    {
-        "source": "رحمه الله",
-        "target": "﵀",
-        "semanticClass": "mercy_invocation",
-        "referentScope": "the immediately preceding male referent",
-        "grammaticalAgreement": "masculine singular",
-        "expandedArabic": "رحمه الله",
-    },
-    {
-        "source": "عليهما السلام",
-        "target": "﵉",
-        "semanticClass": "peace_invocation",
-        "referentScope": "the two immediately preceding referents",
-        "grammaticalAgreement": "dual",
-        "expandedArabic": "عليهما السلام",
-    },
-    {
-        "source": "عليهم السلام",
-        "target": "﵈",
-        "semanticClass": "peace_invocation",
-        "referentScope": "the immediately preceding group",
-        "grammaticalAgreement": "plural",
-        "expandedArabic": "عليهم السلام",
-    },
-    {
-        "source": "عليه الصلاة والسلام",
-        "target": "﵊",
-        "semanticClass": "prayer_and_peace_invocation",
-        "referentScope": "the immediately preceding prophetic referent",
-        "grammaticalAgreement": "masculine singular",
-        "expandedArabic": "عليه الصلاة والسلام",
-    },
-    {
-        "source": "عليه السلام",
-        "target": "﵇",
-        "semanticClass": "peace_invocation",
-        "referentScope": "the immediately preceding prophetic referent",
-        "grammaticalAgreement": "masculine singular",
-        "expandedArabic": "عليه السلام",
-    },
-    {
-        "source": "إن شاء الله تعالى",
-        "target": "إن شاء الله تعالى",
-        "semanticClass": "divine_will_qualification",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "إن شاء الله تعالى",
-    },
-    {
-        "source": "إن شاء الله",
-        "target": "إن شاء الله",
-        "semanticClass": "divine_will_qualification",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "إن شاء الله",
-    },
-    {
-        "source": "سبحانه وتعالى",
-        "target": "سبحانه وتعالى",
-        "semanticClass": "divine_exaltation",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "سبحانه وتعالى",
-    },
-    {
-        "source": "تبارك وتعالى",
-        "target": "﵎",
-        "semanticClass": "divine_exaltation",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "تبارك وتعالى",
-    },
-    {
-        "source": "والله أعلم",
-        "target": "والله أعلم",
-        "semanticClass": "divine_knowledge_qualification",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "والله أعلم",
-    },
-    # The locked source occasionally omits the hamza in this closing.
-    {
-        "source": "والله اعلم",
-        "target": "والله أعلم",
-        "semanticClass": "divine_knowledge_qualification",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "والله أعلم",
-    },
-    {
-        "source": "الله أعلم",
-        "target": "الله أعلم",
-        "semanticClass": "divine_knowledge_qualification",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "الله أعلم",
-    },
-    {
-        "source": "عز وجل",
-        "target": "﷿",
-        "semanticClass": "divine_exaltation",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "عز وجل",
-    },
-)
+# Load the versioned local registry as the single executable formula source.
+# Import fails closed when the bound registry is missing, malformed, or stale.
+_FORMULA_REGISTRY = json.loads(FORMULA_REGISTRY_PATH.read_text(encoding="utf-8"))
+if _FORMULA_REGISTRY.get("registryVersion") != FORMULA_REGISTRY_VERSION:
+    raise RuntimeError("formula registry version is out of sync")
+FORMULA_RULES = tuple(_FORMULA_REGISTRY.get("entries", ()))
+if not FORMULA_RULES or not all(
+    isinstance(rule, dict) and isinstance(rule.get("accessibleEnglish"), str)
+    and rule["accessibleEnglish"].strip()
+    for rule in FORMULA_RULES
+):
+    raise RuntimeError("formula registry entries are incomplete")
 
-# The compact display value never stands alone as the semantic record. Keep a
-# target-language expansion for accessibility, search, copy, and review. This
-# tuple is intentionally parallel to FORMULA_RULES, whose order is already
-# semantically significant because longer source forms must be matched first.
-FORMULA_ACCESSIBLE_ENGLISH = (
-    "In the name of God, the Most Compassionate, the Most Merciful.",
-    "May God bless him and his family and grant them peace.",
-    "May God bless him and grant him peace, and grant him peace.",
-    "Peace be upon her.",
-    "God is the One whose help is sought.",
-    "Thus God knows best.",
-    "Thus God knows best.",
-    "And praise belongs to God.",
-    "Exalted is He.",
-    "O God, bless Muḥammad and the family of Muḥammad.",
-    "May God bless him and them with an everlasting blessing and grant them perpetual peace [and fullest peace].",
-    "May God bless him and his family and grant them peace.",
-    "May God bless him and grant him peace.",
-    "May God bless him and grant him peace.",
-    "May God bless him and his family and grant them peace.",
-    "May God bless him and his family and grant them peace.",
-    "May God bless him and his family and grant them peace.",
-    "May God bless him and his family and grant them peace.",
-    "May God bless him and his family and grant them peace.",
-    "May God bless him and grant him peace.",
-    "May God be pleased with both of them.",
-    "May God be pleased with them.",
-    "May God be pleased with them.",
-    "May God be pleased with her.",
-    "May God be pleased with him.",
-    "May God have mercy on them.",
-    "May God have mercy on him.",
-    "Peace be upon both of them.",
-    "Peace be upon them.",
-    "May blessings and peace be upon him.",
-    "Peace be upon him.",
-    "God willing, exalted is He.",
-    "God willing.",
-    "Glory be to Him, the Exalted.",
-    "Blessed and exalted is He.",
-    "And God knows best.",
-    "And God knows best.",
-    "God knows best.",
-    "Mighty and majestic is He.",
-)
-if len(FORMULA_ACCESSIBLE_ENGLISH) != len(FORMULA_RULES):
-    raise RuntimeError("formula accessibility registry is out of sync")
-FORMULA_RULES = tuple(
-    {**rule, "accessibleEnglish": accessible}
-    for rule, accessible in zip(FORMULA_RULES, FORMULA_ACCESSIBLE_ENGLISH)
-)
+# The basmala was historically treated as contextual in entry bodies. Current
+# packet construction opts it in explicitly while retaining the default for
+# callers that validate immutable historical artifacts.
 CONTEXTUAL_FORMULA_SOURCES = {"بسم الله الرحمن الرحيم"}
-
 
 class WorkflowError(ValueError):
     """A deterministic translation-workflow failure."""
@@ -580,16 +214,48 @@ def registered_occurrences(
             )
         else:
             rule = next(rule for rule in rules if rule[field] == value)
+        end = match.end()
+        if (
+            field == "source"
+            and rule["source"] == "صلى الله عليه وسلم وآله"
+            and re.match(r"\s+رجلا(?:\s|$)", text[match.end() :]) is not None
+        ):
+            value = "صلى الله عليه وسلم"
+            rule = next(item for item in rules if item["source"] == value)
+            end = match.start() + len(value)
         if (
             field == "source"
             and rule["source"] == "تعالى"
             and re.search(r"(?:الله|لله|قوله|قال)\s*$", text[: match.start()]) is None
         ):
             continue
+        if rule["source"] == "والله عنده حسن المآب" and text[
+            match.end() :
+        ].strip(" \t\r\n.,;:!?؟،؛—–"):
+            # This phrase is formulaic only as the reviewed entry-final closing.
+            continue
+        if rule["source"] == "صلى الله":
+            prefix = text[: match.start()]
+            suffix = text[match.end() :]
+            if field == "source":
+                has_prophetic_referent = re.search(
+                    r"(?:رسول الله|النبي)\s*$", prefix
+                )
+            else:
+                has_prophetic_referent = re.search(
+                    r"(?:Messenger of (?:God|Allah)|Prophet)\s*$", prefix,
+                    flags=re.IGNORECASE,
+                )
+            has_formula_continuation = re.match(
+                r"\s+(?:تعالى|عليه|عيه|علي|عيله|عله|على|و?آله|واله)",
+                suffix,
+            )
+            if has_prophetic_referent is None or has_formula_continuation is not None:
+                continue
         occurrences.append(
             {
                 "start": match.start(),
-                "end": match.end(),
+                "end": end,
                 "value": value,
                 "rule": rule,
             }
@@ -723,6 +389,7 @@ def formula_inventory(packet: dict[str, Any]) -> tuple[dict[str, Any], list[str]
             source.get("arabic"),
             entry.get("blindTranslation", {}).get("english"),
             entry.get("adjudication", {}).get("english"),
+            include_contextual=True,
         )
     formula_ids = [item["formulaId"] for item in occurrences]
     if len(formula_ids) != len(set(formula_ids)):

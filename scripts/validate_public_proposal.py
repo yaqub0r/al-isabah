@@ -111,8 +111,44 @@ FORMULA_V14_SOURCES = {
     "ولله الحمد",
     "تعالى",
 }
+FORMULA_V15_SOURCES = {
+    "صلى الله عليه وسلم وعلى آله وسلم",
+    "صلى الله عليه وسلم وآله",
+    "صلى الله عيه وآله وسلم",
+    "صلى الله عليه وسلم وآوله وسلم",
+    "صلى الله علي وآله وسلم",
+    "صلى الله عليه وسلم وآله سلم",
+    "صلى الله عيله وآله وسلم",
+    "صلى الله عله وآله وسلم",
+    "صلى الله عليه وسلم وآله ولم",
+    "صلى الله عيله وسلم",
+}
+FORMULA_V16_SOURCES = {
+    "والله الموفق",
+    "ان شاء الله تعالى",
+    "ان شاء الله",
+    "نسأل الله التوفيق",
+    "والله عنده حسن المآب",
+    "والله سبحانه وتعالى اعلم",
+    "وبالله التوفيق",
+    "اللهم صل على النبي والوصي",
+    "رحم الله عائشة",
+    "رحم الله هشاما",
+    "رحم الله عبادا",
+    "رحم الله لبيدا",
+    "رحم الله عروة",
+    "رحم الله قسا",
+    "يرحمك الله",
+    "صلى الله عليه وسلم وأله وسلم",
+    "صلى الله عليه وسلم آله وسلم",
+    "صل الله عليه وآله وسلم",
+    "صلى الله",
+}
 LEGACY_FORMULA_RULES = tuple(
-    rule for rule in FORMULA_RULES if rule["source"] not in FORMULA_V14_SOURCES
+    rule
+    for rule in FORMULA_RULES
+    if rule["source"]
+    not in FORMULA_V14_SOURCES | FORMULA_V15_SOURCES | FORMULA_V16_SOURCES
 )
 CONTEXTUAL_FORMULA_SOURCES = {"بسم الله الرحمن الرحيم"}
 SHA1 = re.compile(r"^[a-f0-9]{40}$")
@@ -572,10 +608,41 @@ def registered_formula_occurrences(
             rule = next(item for item in effective_rules if value == item["source"])
         if (
             field == "source"
+            and rule["source"] == "صلى الله عليه وسلم وآله"
+            and re.match(r"\s+رجلا(?:\s|$)", text[match.end() :]) is not None
+        ):
+            value = "صلى الله عليه وسلم"
+            rule = next(
+                item for item in effective_rules if item["source"] == value
+            )
+        if (
+            field == "source"
             and rule["source"] == "تعالى"
             and re.search(r"(?:الله|لله|قوله|قال)\s*$", text[: match.start()]) is None
         ):
             continue
+        if rule["source"] == "والله عنده حسن المآب" and text[
+            match.end() :
+        ].strip(" \t\r\n.,;:!?؟،؛—–"):
+            continue
+        if rule["source"] == "صلى الله":
+            prefix = text[: match.start()]
+            suffix = text[match.end() :]
+            if field == "source":
+                has_prophetic_referent = re.search(
+                    r"(?:رسول الله|النبي)\s*$", prefix
+                )
+            else:
+                has_prophetic_referent = re.search(
+                    r"(?:Messenger of (?:God|Allah)|Prophet)\s*$", prefix,
+                    flags=re.IGNORECASE,
+                )
+            has_formula_continuation = re.match(
+                r"\s+(?:تعالى|عليه|عيه|علي|عيله|عله|على|و?آله|واله)",
+                suffix,
+            )
+            if has_prophetic_referent is None or has_formula_continuation is not None:
+                continue
         occurrences.append({"value": value, "rule": rule})
     return occurrences
 
@@ -682,12 +749,30 @@ def public_formula_errors(
         )
         expected.extend(scope)
         valid = valid and scope_valid
+    title = record.get("title", {})
+    if isinstance(title, dict):
+        scope, scope_valid = expected_scope_formulas(
+            record.get("id"),
+            "titleArabic",
+            title.get("arabic"),
+            title.get("english"),
+            rules,
+            include_contextual=True,
+        )
+        expected.extend(scope)
+        valid = valid and scope_valid
     scope, scope_valid = expected_scope_formulas(
         record.get("id"),
         "arabic",
         record.get("arabic"),
         record.get("english"),
         rules,
+        include_contextual=any(
+            isinstance(formula, dict)
+            and formula.get("recordId") == record.get("id")
+            and formula.get("observedArabic") in CONTEXTUAL_FORMULA_SOURCES
+            for formula in formulas
+        ),
     )
     expected.extend(scope)
     valid = valid and scope_valid
@@ -755,6 +840,19 @@ def record_semantic_errors(
     if enforce_public_english:
         formulas = record.get("formulas", [])
         errors.extend(public_formula_errors(record, base, formula_rules))
+        title = record.get("title", {})
+        if isinstance(title, dict):
+            errors.extend(
+                public_english_errors(
+                    title.get("english"),
+                    formulas_for_scope(
+                        formulas, record.get("id"), "titleArabic"
+                    ),
+                    record.get("id"),
+                    f"{base}.title.english",
+                    allowed_arabic_literals,
+                )
+            )
         entry_formulas = formulas_for_scope(formulas, record.get("id"), "arabic")
         errors.extend(
             public_english_errors(
@@ -889,22 +987,23 @@ def validate(
         formula_rules = (
             FORMULA_RULES if schema_version == "1.3.0" else LEGACY_FORMULA_RULES
         )
+        active_title_decision = (
+            active_title_decisions.get(record.get("id"))
+            or active_title_decisions.get(record.get("printedEntryNumber"), {})
+        )
+        allowed_title_literals = governed_arabic_literals(
+            "\n".join(
+                str(active_title_decision.get(field, {}).get("en", ""))
+                for field in ("title", "bodyOpening")
+            ),
+            formula_rules,
+        )
         errors.extend(
             record_semantic_errors(
                 record,
                 base,
                 enforce_public_english=enforce_public_english,
-                allowed_arabic_literals=governed_arabic_literals(
-                    str(
-                        (
-                            active_title_decisions.get(record.get("id"))
-                            or active_title_decisions.get(
-                                record.get("printedEntryNumber"), {}
-                            )
-                        ).get("bodyOpening", {}).get("en", "")
-                    ),
-                    formula_rules,
-                ),
+                allowed_arabic_literals=allowed_title_literals,
                 formula_rules=formula_rules,
             )
         )

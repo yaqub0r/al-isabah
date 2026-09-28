@@ -1671,7 +1671,7 @@
           ]
         },
         "registryVersion": {
-          "const": "1.4.0"
+          "const": "1.6.0"
         },
         "occurrences": {
           "type": "array",

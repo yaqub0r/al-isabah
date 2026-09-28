@@ -198,6 +198,147 @@ class PublicDistributionTests(unittest.TestCase):
             errors = PROPOSAL_VALIDATOR.validate(path)
         self.assertTrue(any("category=policy-mismatch" in error for error in errors))
 
+    def test_schema_12_formula_snapshot_excludes_v15_variants(self):
+        self.assertEqual(
+            PROPOSAL_VALIDATOR.FORMULA_V15_SOURCES,
+            {
+                "صلى الله عليه وسلم وعلى آله وسلم",
+                "صلى الله عليه وسلم وآله",
+                "صلى الله عيه وآله وسلم",
+                "صلى الله عليه وسلم وآوله وسلم",
+                "صلى الله علي وآله وسلم",
+                "صلى الله عليه وسلم وآله سلم",
+                "صلى الله عيله وآله وسلم",
+                "صلى الله عله وآله وسلم",
+                "صلى الله عليه وسلم وآله ولم",
+                "صلى الله عيله وسلم",
+            },
+        )
+        legacy_sources = {
+            rule["source"] for rule in PROPOSAL_VALIDATOR.LEGACY_FORMULA_RULES
+        }
+        self.assertTrue(
+            PROPOSAL_VALIDATOR.FORMULA_V15_SOURCES.isdisjoint(legacy_sources)
+        )
+
+        record = next(
+            item
+            for item in self.issue_0084_proposal["records"]
+            if item["sourceOrdinal"] == 3876
+        )
+        self.assertIn("صلى الله عليه وسلم وعلى آله وسلم", record["arabic"])
+        self.assertEqual(
+            PROPOSAL_VALIDATOR.public_formula_errors(
+                record,
+                "$.records[3876]",
+                PROPOSAL_VALIDATOR.LEGACY_FORMULA_RULES,
+            ),
+            [],
+        )
+        self.assertTrue(
+            PROPOSAL_VALIDATOR.public_formula_errors(
+                record,
+                "$.records[3876]",
+                PROPOSAL_VALIDATOR.FORMULA_RULES,
+            )
+        )
+
+    def test_schema_12_formula_snapshot_excludes_v16_rules(self):
+        self.assertEqual(
+            PROPOSAL_VALIDATOR.FORMULA_V16_SOURCES,
+            {
+                "والله الموفق",
+                "ان شاء الله تعالى",
+                "ان شاء الله",
+                "نسأل الله التوفيق",
+                "والله عنده حسن المآب",
+                "والله سبحانه وتعالى اعلم",
+                "وبالله التوفيق",
+                "اللهم صل على النبي والوصي",
+                "رحم الله عائشة",
+                "رحم الله هشاما",
+                "رحم الله عبادا",
+                "رحم الله لبيدا",
+                "رحم الله عروة",
+                "رحم الله قسا",
+                "يرحمك الله",
+                "صلى الله عليه وسلم وأله وسلم",
+                "صلى الله عليه وسلم آله وسلم",
+                "صل الله عليه وآله وسلم",
+                "صلى الله",
+            },
+        )
+        legacy_sources = {
+            rule["source"] for rule in PROPOSAL_VALIDATOR.LEGACY_FORMULA_RULES
+        }
+        self.assertTrue(
+            PROPOSAL_VALIDATOR.FORMULA_V16_SOURCES.isdisjoint(legacy_sources)
+        )
+
+    def test_current_formula_rules_preserve_volume_five_exact_arabic(self):
+        forward = PROPOSAL_VALIDATOR.registered_formula_occurrences(
+            "وسيأتي بيانه ان شاء الله تعالى", "source"
+        )
+        self.assertEqual([hit["value"] for hit in forward], ["ان شاء الله تعالى"])
+        self.assertEqual(
+            [
+                hit["value"]
+                for hit in PROPOSAL_VALIDATOR.registered_formula_occurrences(
+                    "قال: ان شاء الله تعالى نفعل ذلك", "source"
+                )
+            ],
+            ["ان شاء الله تعالى"],
+        )
+        self.assertEqual(
+            [
+                hit["value"]
+                for hit in PROPOSAL_VALIDATOR.registered_formula_occurrences(
+                    "قال: ان شاء الله نفعل ذلك", "source"
+                )
+            ],
+            ["ان شاء الله"],
+        )
+        self.assertEqual(
+            PROPOSAL_VALIDATOR.registered_formula_occurrences(
+                "والله عنده حسن المآب في الآخرة", "source"
+            ),
+            [],
+        )
+        truncated = PROPOSAL_VALIDATOR.registered_formula_occurrences(
+            "made a garment for the Messenger of Allah صلى الله.", "target"
+        )
+        self.assertEqual([hit["value"] for hit in truncated], ["صلى الله"])
+
+    def test_family_suffix_before_rajulan_is_substantive_text(self):
+        observed = "صلى الله عليه وسلم وآله"
+        family = PROPOSAL_VALIDATOR.registered_formula_occurrences(
+            observed,
+            "source",
+        )
+        self.assertEqual(len(family), 1)
+        self.assertEqual(family[0]["value"], observed)
+        self.assertEqual(family[0]["rule"]["target"], "﵌")
+        longer_word = PROPOSAL_VALIDATOR.registered_formula_occurrences(
+            f"{observed} رجلان",
+            "source",
+        )
+        self.assertEqual(longer_word[0]["value"], observed)
+        self.assertEqual(longer_word[0]["rule"]["target"], "﵌")
+
+        plain = "صلى الله عليه وسلم"
+        plain_rule = next(
+            rule
+            for rule in PROPOSAL_VALIDATOR.FORMULA_RULES
+            if rule["source"] == plain
+        )
+        self.assertEqual(
+            PROPOSAL_VALIDATOR.registered_formula_occurrences(
+                f"قال {observed} رجلا",
+                "source",
+            ),
+            [{"value": plain, "rule": plain_rule}],
+        )
+
     def test_current_public_record_rejects_process_residue_and_undeclared_arabic(self):
         record = copy.deepcopy(self.issue_0082_proposal["records"][0])
         for residue in (
