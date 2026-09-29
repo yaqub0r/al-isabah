@@ -58,18 +58,18 @@ class ContinuationTests(unittest.TestCase):
         if final:rows.append({'type':'response_item','payload':{'type':'message','role':'assistant','phase':'final','content':[]}})
         self.log.write_text(''.join(json.dumps(x)+'\n' for x in rows),encoding='utf-8')
 
-    def worker_log(self,session,failed=False,unknown=False):
+    def worker_log(self,session,failed=False,unknown=False,phase='final'):
         parent=self.ctx['first']['receipt']['task']['observed']['sessionId']
         rows=[{'type':'session_meta','payload':{'id':session,'session_id':parent,
                'parent_thread_id':parent,'source':{'subagent':{'thread_spawn':{'parent_thread_id':parent}}},
                'model_provider':'openai'}},
               {'type':'turn_context','payload':{'turn_id':'turn','model':'gpt-6-sol','effort':'high'}}]
+        if not failed and not unknown:
+            rows.append({'type':'response_item','payload':{'type':'message','role':'assistant',
+                         'phase':phase,'content':[]}})
         if not unknown:
             rows.append({'type':'event_msg','payload':{'type':'task_complete','turn_id':'turn',
                          'error':{'message':continuation.FAILED_ERROR} if failed else None}})
-        if not failed and not unknown:
-            rows.append({'type':'response_item','payload':{'type':'message','role':'assistant',
-                         'phase':'final','content':[]}})
         path=Path(self.temporary.name)/(session+'.jsonl')
         path.write_text(''.join(json.dumps(x)+'\n' for x in rows),encoding='utf-8')
         return path
@@ -174,6 +174,31 @@ class ContinuationTests(unittest.TestCase):
             continuation.capture(continuation.REVIEW,item,self.ctx,self.log,self.commit,
                                  self.decision,self.pin,changed)
 
+    def test_host_final_answer_then_matching_successful_terminal_is_completed(self):
+        stage=continuation.prepare(continuation.REVIEW,self.ctx,self.log,self.commit,self.decision,self.pin)
+        continuation.original.old.write_new(self.workdir/(continuation.REVIEW+'.input.json'),stage)
+        reserved=continuation.reserve_once(self.workdir,continuation.REVIEW,self.ctx,self.log,
+                                            self.commit,self.decision,self.pin)
+        path=self.worker_log('synthetic-final-answer',phase='final_answer')
+        rows=[json.loads(x) for x in path.read_text(encoding='utf-8').splitlines()]
+        self.assertEqual(rows[-1]['payload']['error'],None)
+        attempt=continuation.bind_once(self.workdir,continuation.REVIEW,path,'synthetic-final-answer','turn',
+                   self.ctx,self.log,self.commit,self.decision,self.pin)
+        self.assertEqual(attempt['status'],'completed')
+        self.assertEqual(continuation.terminal_result(path.read_bytes(),'turn'),('completed','final_answer'))
+        changed=copy.deepcopy(rows);changed[-1]['payload']['turn_id']='another-turn'
+        with self.assertRaises(Rejection):
+            continuation.terminal_result(''.join(json.dumps(x)+'\n' for x in changed).encode(),'turn')
+
+    def test_failed_launch_with_final_answer_cannot_be_called_no_output(self):
+        self.write_log(final=True)
+        rows=[json.loads(x) for x in self.log.read_text(encoding='utf-8').splitlines()]
+        rows[-1]['payload']['phase']='final_answer'
+        self.log.write_text(''.join(json.dumps(x)+'\n' for x in rows),encoding='utf-8')
+        with mock.patch.object(continuation,'FAILED_LOG_SHA',hashlib.sha256(self.log.read_bytes()).hexdigest()):
+            with self.assertRaisesRegex(Rejection,'continuation-failure-not-proven'):
+                continuation.failed_launch(self.ctx,self.log)
+
     def test_wrong_supplement_pins_sessions_and_order_rejected(self):
         altered=copy.deepcopy(self.decision);altered['request']['maxAdditionalWorkerLaunches']=3
         with self.assertRaises(Rejection):continuation.prepare(continuation.REVIEW,self.ctx,self.log,
@@ -228,6 +253,75 @@ class ContinuationTests(unittest.TestCase):
         with mock.patch.object(continuation.original.old,'git',side_effect=historical_drift):
             with self.assertRaisesRegex(Rejection,'continuation-code-drift'):
                 continuation.verify_historical_code()
+
+    def test_repaired_historical_review_uses_only_remaining_adjudicator_slot(self):
+        name=continuation.REVIEW
+        stage=continuation.prepare(name,self.ctx,self.log,self.commit,self.decision,self.pin)
+        proposal=self.fixture.proposal(stage,self.ctx['first']['proposal']['output'])
+        continuation.original.old.write_new(self.workdir/'decision-request.json',self.req)
+        continuation.original.old.write_new(self.workdir/'approved-decision.json',self.decision)
+        continuation.original.old.write_new(self.workdir/(name+'.input.json'),stage)
+        reserved=continuation.reserve_once(self.workdir,name,self.ctx,self.log,self.commit,self.decision,self.pin)
+        worker_log=self.worker_log('synthetic-replacement-review',phase='final_answer')
+        with mock.patch.object(continuation,'terminal_result',return_value=('unknown',None)):
+            unknown=continuation.bind_once(self.workdir,name,worker_log,'synthetic-replacement-review',
+                                           'turn',self.ctx,self.log,self.commit,self.decision,self.pin)
+        continuation.original.old.write_new(self.workdir/(name+'.proposal.json'),proposal)
+        unknown_bytes=(self.workdir/(name+'.attempt.json')).read_bytes()
+        self.assertEqual(unknown['status'],'unknown')
+        self.assertEqual(continuation.terminal_result(worker_log.read_bytes(),'turn'),('completed','final_answer'))
+
+        def evidence(ctx,directory,path):
+            self.assertEqual(directory,self.workdir)
+            self.assertEqual(path,worker_log)
+            self.assertEqual(continuation.terminal_result(path.read_bytes(),'turn'),('completed','final_answer'))
+            self.assertEqual(digest(continuation.original.old.read(directory/(name+'.proposal.json'))),digest(proposal))
+            return {'requestSha256':digest(self.req),'decisionSha256':self.pin,
+                    'inputSha256':digest(stage),'reservationSha256':digest(reserved),
+                    'originalUnknownAttemptSha256':digest(unknown),'proposalSha256':digest(proposal),
+                    'logSha256':hashlib.sha256(path.read_bytes()).hexdigest(),
+                    'workerSessionId':'synthetic-replacement-review','workerTurnId':'turn',
+                    'hostTerminalPhase':'final_answer','hostTerminalStatus':'completed',
+                    'reclassifiedAttemptSha256':digest({**unknown,'status':'completed'})}
+
+        def historical_git(command,object_name):
+            self.assertEqual(command,'show')
+            path=object_name.split(':',1)[1]
+            return (continuation.ROOT/path).read_bytes()
+
+        with (mock.patch.object(continuation,'review_correction_preview',side_effect=evidence),
+              mock.patch.object(continuation,'REVIEW_CORRECTION_PINS',
+                                {'request':digest(self.req),'decision':self.pin}),
+              mock.patch.object(continuation.original.old,'git',side_effect=historical_git)):
+            record=continuation.repair_document(self.ctx,self.log,self.commit,self.decision,self.pin)
+            record['status']='reviewed'
+            self.ctx['repair']=record;self.ctx['repairPin']=digest(record)
+            review={'input':stage,'proposal':proposal,'reservation':reserved,'attempt':unknown,'receipt':None}
+            review['receipt']=continuation.capture(name,review,self.ctx,self.log,self.commit,
+                                                   self.decision,self.pin,unknown['worker'])
+            self.assertEqual((self.workdir/(name+'.attempt.json')).read_bytes(),unknown_bytes)
+            self.assertEqual(review['receipt']['originalUnknownAttemptSha256'],digest(unknown))
+            self.assertEqual(review['receipt']['executionRepairSha256'],self.ctx['repairPin'])
+            self.assertEqual(len(continuation.attempts(self.ctx,self.req,review)),3)
+            with self.assertRaisesRegex(Rejection,'continuation-review-launch-already-consumed'):
+                continuation.reserve_once(self.workdir,name,self.ctx,self.log,self.commit,
+                                          self.decision,self.pin)
+            changed=copy.deepcopy(review);changed['proposal']['output']={}
+            with self.assertRaises(Rejection):
+                continuation.validate_receipt(name,changed,self.ctx,self.log,self.commit,self.decision,self.pin)
+            with self.assertRaises(Rejection):
+                continuation.prepare(continuation.ADJUDICATION,self.ctx,self.log,'f'*40,
+                                     self.decision,self.pin,review)
+            with self.assertRaises(Rejection):
+                continuation.prepare(continuation.ADJUDICATION,self.ctx,self.log,self.commit,
+                                     {**self.decision,'approval':'rejected'},self.pin,review)
+            adjudication=self.adjudication(review,remove=True)
+            self.assertEqual(adjudication['reservation']['slotNumber'],4)
+            result=continuation.report(self.ctx,self.log,self.commit,self.decision,self.pin,review,adjudication)
+            self.assertEqual(result['finalKnownCoverageStatus'],'not_established')
+            self.assertEqual(result['finalMaterialObligationIds'],[])
+            self.assertEqual(result['launchAttempts'][2]['attemptSha256'],digest(unknown))
+            self.assertEqual(result['launchAttempts'][3]['status'],'completed')
 
 
 if __name__=='__main__':unittest.main()

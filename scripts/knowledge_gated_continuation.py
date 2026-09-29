@@ -32,6 +32,17 @@ REQUEST_SCHEMA='al-isabah.knowledge-gated-continuation-request.v1'
 DECISION_SCHEMA='al-isabah.knowledge-gated-continuation-decision.v1'
 STAGE_SCHEMA='al-isabah.knowledge-gated-continuation-stage-input.v1'
 RECEIPT_SCHEMA='al-isabah.knowledge-gated-continuation-receipt.v1'
+REPAIR_SCHEMA='al-isabah.knowledge-gated-continuation-execution-repair.v1'
+TERMINAL_PHASES={'final','final_answer'}
+REVIEW_CORRECTION_PINS={
+ 'request':'9d1502dafb2170235ab2668e5a05c27ebbcb76726194eb942bcd57e31853afc2',
+ 'decision':'5c8da1cdd54d2f50600e6a01c0e33c9add656302ba30ad38089b399a6e51f472',
+ 'input':'a3be54f0057f1d415b93ad03ec30cc99737987b2e9f5add0ddae1304d7ce1e25',
+ 'reservation':'520b7b85c6fb2ca71fd421e897f93cfee81abda9938412b95d63d40a333ad874',
+ 'attempt':'ddb41cc6f905e2fe354314ca3cbf8339f976a4eaacdee0ef049d1da11fa6e651',
+ 'proposal':'58f57a98cd688d77bbbdba90e7221271cb35aba9967a03358f887a6fc3c71581',
+ 'log':'a8831a7f35d79488cd6422ebf6bca51d7b94d592398542e2e04f85713dd9ae67',
+}
 
 
 def same_committed(path,commit):
@@ -130,7 +141,7 @@ def failed_launch(ctx,log):
                 row=json.loads(line);payload=row.get('payload',{})
                 if row.get('type')=='event_msg' and payload.get('type')=='task_complete':completed.append(payload)
                 if (row.get('type')=='response_item' and payload.get('type')=='message'
-                    and payload.get('role')=='assistant' and payload.get('phase')=='final'):
+                    and payload.get('role')=='assistant' and payload.get('phase') in TERMINAL_PHASES):
                     final.append(payload)
     except (OSError,ValueError,TypeError,AttributeError):
         reject('continuation-failed-log-drift')
@@ -179,6 +190,9 @@ def request(ctx,log,commit,preview=False):
 def authorize(ctx,log,commit,decision,pin):
     if digest(decision)!=pin or decision.get('schema')!=DECISION_SCHEMA:
         reject('continuation-exact-decision-required')
+    if 'repair' in ctx:
+        repair=validate_repair(ctx,log,commit,decision,pin)
+        return decision['request']
     adapted={**decision,'schema':'al-isabah.knowledge-local-trial-decision.v1'}
     return original.old.check_decision(adapted,digest(adapted),request(ctx,log,commit))
 
@@ -191,10 +205,12 @@ def attempts(ctx,req,review=None):
            'turnId':FAILED_TURN,'failedLaunchSha256':req['failedLaunchSha256']}]
     if review is not None:
         observed=review['receipt']['worker']['observed']
-        rows.append({'stage':REVIEW,'status':'completed','sessionId':observed['sessionId'],
+        row={'stage':REVIEW,'status':'completed','sessionId':observed['sessionId'],
                      'turnId':observed['turnId'],'reservationSha256':digest(review['reservation']),
                      'attemptSha256':digest(review['attempt']),
-                     'receiptSha256':review['receipt']['receiptSha256']})
+                     'receiptSha256':review['receipt']['receiptSha256']}
+        if 'repair' in ctx:row.update(originalAttemptStatus='unknown',executionRepairSha256=ctx['repairPin'])
+        rows.append(row)
     return rows
 
 
@@ -225,6 +241,7 @@ def prepare(name,ctx,log,commit,decision,pin,review=None):
                      priorRemediations=[first['proposal'],review['proposal']],
                      priorReceiptSha256=[first['receipt']['receiptSha256'],review['receipt']['receiptSha256']])
     else:
+        if 'repair' in ctx:return read(Path(ctx['continuationDirectory'])/(REVIEW+'.input.json'))
         value=copy.deepcopy(ctx['reviewInput'])
         value.update(schema=STAGE_SCHEMA,decisionSha256=pin,
                      instructions=(ROOT/RUNBOOK).read_text(encoding='utf-8-sig'))
@@ -232,6 +249,9 @@ def prepare(name,ctx,log,commit,decision,pin,review=None):
                  continuationDirectory=ctx['continuationDirectory'],
                  failedLaunch=copy.deepcopy(req['failedLaunch']),launchAttempts=attempts(ctx,req,review),
                  maxAdditionalWorkerLaunches=2,maxTotalWorkerLaunches=4)
+    if 'repair' in ctx:
+        value.update(executionRepairSha256=ctx['repairPin'],executionRepairCodeCommit=commit,
+                     originalUserScopeDecisionSha256=pin)
     return value
 
 
@@ -260,6 +280,7 @@ def write_once(path,value):
 
 
 def reserve_once(directory,name,ctx,log,commit,decision,pin,review=None):
+    if 'repair' in ctx and name==REVIEW:reject('continuation-review-launch-already-consumed')
     require_directory(directory,ctx)
     path=directory/(name+'.reservation.json')
     if path.exists():reject('continuation-slot-already-consumed')
@@ -268,6 +289,141 @@ def reserve_once(directory,name,ctx,log,commit,decision,pin,review=None):
         reject('continuation-stage-input-drift')
     write_once(path,value)
     return value
+
+
+def terminal_result(raw,turn):
+    completed=[];final=[]
+    try:
+        for position,line in enumerate(raw.decode('utf-8').splitlines()):
+            row=json.loads(line);payload=row.get('payload',{})
+            if row.get('type')=='event_msg' and payload.get('type')=='task_complete':
+                completed.append((position,payload))
+            if (row.get('type')=='response_item' and payload.get('type')=='message'
+                and payload.get('role')=='assistant' and payload.get('phase') in TERMINAL_PHASES):
+                final.append((position,payload['phase']))
+    except (UnicodeError,ValueError,TypeError,AttributeError):
+        reject('continuation-attempt-log-drift')
+    if len(completed)>1 or completed and completed[0][1].get('turn_id')!=turn:
+        reject('continuation-attempt-log-drift')
+    if completed and completed[0][1].get('error'):
+        error=completed[0][1]['error']
+        return ('failed_capacity' if isinstance(error,dict) and error.get('message')==FAILED_ERROR
+                else 'failed_other'),None
+    prior_final=[phase for position,phase in final if completed and position<completed[0][0]]
+    if completed and prior_final:return 'completed',prior_final[-1]
+    return 'unknown',None
+
+
+def review_correction_preview(ctx,directory,worker_log):
+    """Link a saved unknown attempt to host success without changing its bytes."""
+    validate_original(ctx)
+    names={'request':'decision-request.json','decision':'approved-decision.json',
+           'input':REVIEW+'.input.json','reservation':REVIEW+'.reservation.json',
+           'attempt':REVIEW+'.attempt.json','proposal':REVIEW+'.proposal.json'}
+    files={key:read(directory/name) for key,name in names.items()}
+    for key,name in names.items():
+        if hashlib.sha256((directory/name).read_bytes()).hexdigest()!=REVIEW_CORRECTION_PINS[key]:
+            reject('continuation-correction-pin-mismatch')
+    try:raw=worker_log.read_bytes()
+    except OSError:reject('continuation-correction-log-unavailable')
+    if hashlib.sha256(raw).hexdigest()!=REVIEW_CORRECTION_PINS['log']:
+        reject('continuation-correction-pin-mismatch')
+    req=files['request'];decision=files['decision'];stage=files['input']
+    reserved=files['reservation'];attempt=files['attempt'];proposal=files['proposal']
+    adapted={**decision,'schema':'al-isabah.knowledge-local-trial-decision.v1'}
+    original.old.check_decision(adapted,digest(adapted),req)
+    if (req['codeCommit']!='358f65c3413a60811f298165eeb46da6d9c9919e'
+        or req['continuationDirectory']!=str(directory.resolve())
+        or req['continuationCodeLfSha256']!=hashlib.sha256(
+            original.old.git('show',req['codeCommit']+':'+CODE).replace(b'\r\n',b'\n')).hexdigest()
+        or stage['decisionSha256']!=digest(decision)
+        or stage['continuationRequestSha256']!=digest(req)
+        or reserved['stageInputSha256']!=digest(stage)
+        or reserved['continuationDecisionSha256']!=digest(decision)
+        or reserved['continuationDirectory']!=str(directory.resolve())
+        or attempt['reservationSha256']!=digest(reserved)
+        or attempt['continuationDecisionSha256']!=digest(decision)
+        or attempt['status']!='unknown' or attempt['logSha256']!=REVIEW_CORRECTION_PINS['log']
+        or Path(attempt['logPath']).resolve()!=worker_log.resolve()
+        or attempt['stage']!=REVIEW):
+        reject('continuation-correction-scope-mismatch')
+    observed=attempt['worker']['observed']
+    actual=original.old.host_runtime.observe_session(worker_log,observed['sessionId'],
+                 observed['turnId'],expected_parent_session_id=req['failedLaunch']['taskSessionId'])
+    if actual!=observed or attempt['worker']['request']!=req['workerRequest']:
+        reject('continuation-correction-host-mismatch')
+    status,phase=terminal_result(raw,observed['turnId'])
+    if (status!='completed' or phase!='final_answer'
+        or observed['sessionId']!='01a0ee75-aa6f-7401-8f09-51fa46df83d6'):
+        reject('continuation-correction-not-proven')
+    original.remediation.validate_proposal(proposal,stage,ctx['packet'])
+    reclassified={**attempt,'status':'completed'}
+    return {'schema':'al-isabah.knowledge-gated-continuation-correction-preview.v1',
+            'originalCodeCommit':req['codeCommit'],'requestSha256':digest(req),
+            'decisionSha256':digest(decision),'inputSha256':digest(stage),
+            'reservationSha256':digest(reserved),'originalUnknownAttemptSha256':digest(attempt),
+            'proposalSha256':digest(proposal),'logSha256':hashlib.sha256(raw).hexdigest(),
+            'workerSessionId':observed['sessionId'],'workerTurnId':observed['turnId'],
+            'hostTerminalPhase':phase,'hostTerminalStatus':status,
+            'reclassifiedAttemptSha256':digest(reclassified),
+            'correctionCodeLfSha256':original.old.assembly.lf_sha(ROOT/CODE),
+            'correctionCodeCommit':'PENDING_REVIEWED_COMMIT',
+            'authorizable':False,'newWorkerLaunches':0,'consumerAdmissionAuthorized':False,
+            'publicReleaseAuthorized':False}
+
+
+def repair_document(ctx,log,commit,decision,pin):
+    """Construct an unreviewed engineering record from fixed historical evidence."""
+    directory=Path(ctx['continuationDirectory'])
+    attempt=read(directory/(REVIEW+'.attempt.json'))
+    evidence=review_correction_preview(ctx,directory,Path(attempt['logPath']))
+    failed=failed_launch(ctx,log)
+    if (pin!=REVIEW_CORRECTION_PINS['decision'] or digest(decision)!=pin
+        or decision!=read(directory/'approved-decision.json')
+        or digest(decision['request'])!=REVIEW_CORRECTION_PINS['request']
+        or decision['request']['failedLaunch']!=failed
+        or decision['request']['remainingStages']!=[REVIEW,ADJUDICATION]
+        or decision['request']['maxAdditionalWorkerLaunches']!=2
+        or decision['request']['maxTotalWorkerLaunches']!=4):
+        reject('continuation-repair-user-scope-mismatch')
+    verify_current_code(commit)
+    original_commit=decision['request']['codeCommit']
+    for path,field in ((CODE,'continuationCodeLfSha256'),(RUNBOOK,'continuationRunbookLfSha256')):
+        historical=original.old.git('show',original_commit+':'+path).replace(b'\r\n',b'\n')
+        if hashlib.sha256(historical).hexdigest()!=decision['request'][field]:
+            reject('continuation-repair-historical-code-drift')
+    return {'schema':REPAIR_SCHEMA,'issue':89,'purpose':'historical_review_terminal_interpretation',
+            'origin':{'kind':'trusted_coordinator_engineering_review'},'status':'pending_review',
+            'originalUserRequestSha256':evidence['requestSha256'],
+            'originalUserDecisionSha256':pin,'originalCodeCommit':original_commit,
+            'correctedCodeCommit':commit,
+            'correctedCodeLfSha256':original.old.assembly.lf_sha(ROOT/CODE),
+            'correctedRunbookLfSha256':original.old.assembly.lf_sha(ROOT/RUNBOOK),
+            'continuationDirectory':ctx['continuationDirectory'],
+            'reviewInputSha256':evidence['inputSha256'],
+            'reviewProposalSha256':evidence['proposalSha256'],
+            'reviewReservationSha256':evidence['reservationSha256'],
+            'reviewUnknownAttemptSha256':evidence['originalUnknownAttemptSha256'],
+            'reviewLogSha256':evidence['logSha256'],
+            'reviewSessionId':evidence['workerSessionId'],
+            'reviewTurnId':evidence['workerTurnId'],
+            'observedTerminalStatus':evidence['hostTerminalStatus'],
+            'observedTerminalPhase':evidence['hostTerminalPhase'],
+            'correctedInterpretationSha256':evidence['reclassifiedAttemptSha256'],
+            'remainingStage':ADJUDICATION,'remainingSlotNumber':4,
+            'newReviewWorkerLaunches':0,'maxTotalWorkerLaunches':4,
+            'consumerAdmissionAuthorized':False,'publicReleaseAuthorized':False}
+
+
+def validate_repair(ctx,log,commit,decision,pin):
+    record=ctx['repair']
+    if digest(record)!=ctx.get('repairPin'):
+        reject('continuation-repair-pin-mismatch')
+    expected=repair_document(ctx,log,commit,decision,pin)
+    expected['status']='reviewed'
+    if record!=expected:
+        reject('continuation-repair-not-reviewed-or-drift')
+    return record
 
 
 def bind_attempt(name,reserved,worker_log,session,turn,ctx,log,commit,decision,pin,review=None):
@@ -284,24 +440,11 @@ def bind_attempt(name,reserved,worker_log,session,turn,ctx,log,commit,decision,p
     prior=attempts(ctx,decision['request'],review)
     used={x['sessionId'] for x in prior}|set(stage['baseline']['historicalWorkerSessionIds'])
     if session in used:reject('continuation-worker-budget-or-reuse')
-    completed=[];final=[]
     try:
         raw=worker_log.read_bytes()
-        for line in raw.decode('utf-8').splitlines():
-            row=json.loads(line);payload=row.get('payload',{})
-            if row.get('type')=='event_msg' and payload.get('type')=='task_complete':completed.append(payload)
-            if (row.get('type')=='response_item' and payload.get('type')=='message'
-                and payload.get('role')=='assistant' and payload.get('phase')=='final'):
-                final.append(payload)
-    except (OSError,UnicodeError,ValueError,TypeError,AttributeError):
+    except OSError:
         reject('continuation-attempt-log-drift')
-    if len(completed)>1 or completed and completed[0].get('turn_id')!=turn:
-        reject('continuation-attempt-log-drift')
-    if completed and completed[0].get('error'):
-        error=completed[0]['error']
-        status='failed_capacity' if isinstance(error,dict) and error.get('message')==FAILED_ERROR else 'failed_other'
-    elif completed and final:status='completed'
-    else:status='unknown'
+    status,_=terminal_result(raw,turn)
     return {'schema':'al-isabah.knowledge-gated-continuation-attempt.v1','stage':name,
             'reservationSha256':digest(reserved),'continuationDecisionSha256':pin,
             'priorAttemptsSha256':digest(prior),'worker':worker,
@@ -310,6 +453,7 @@ def bind_attempt(name,reserved,worker_log,session,turn,ctx,log,commit,decision,p
 
 
 def bind_once(directory,name,worker_log,session,turn,ctx,log,commit,decision,pin,review=None):
+    if 'repair' in ctx and name==REVIEW:reject('continuation-review-launch-already-consumed')
     require_directory(directory,ctx)
     path=directory/(name+'.attempt.json')
     if path.exists():reject('continuation-slot-already-consumed')
@@ -320,6 +464,14 @@ def bind_once(directory,name,worker_log,session,turn,ctx,log,commit,decision,pin
 
 
 def validate_slot(item,name,ctx,log,commit,decision,pin,review=None):
+    if 'repair' in ctx and name==REVIEW:
+        repair=validate_repair(ctx,log,commit,decision,pin)
+        if (digest(item['input'])!=repair['reviewInputSha256']
+            or digest(item['proposal'])!=repair['reviewProposalSha256']
+            or digest(item['reservation'])!=repair['reviewReservationSha256']
+            or digest(item['attempt'])!=repair['reviewUnknownAttemptSha256']):
+            reject('continuation-repair-review-evidence-drift')
+        return item['attempt']['worker']
     reserved=item['reservation'];attempt=item['attempt']
     if reserved!=reservation(name,ctx,log,commit,decision,pin,review):
         reject('continuation-reservation-mismatch')
@@ -362,6 +514,13 @@ def capture(name,item,ctx,log,commit,decision,pin,worker,review=None):
            'extractionReceiptSha256':ctx['first']['receipt']['receiptSha256'],
            'finalLedgerSha256':digest(item['ledger']) if name==ADJUDICATION else '',
            'finalReconciliationSha256':digest(item['gate']) if name==ADJUDICATION else ''}
+    if 'repair' in ctx:
+        value.update(executionRepairSha256=ctx['repairPin'],
+                     executionRepairCodeCommit=commit,originalUserScopeDecisionSha256=pin)
+        if name==REVIEW:
+            value.update(originalUnknownAttemptSha256=digest(item['attempt']),
+                         correctedInterpretationSha256=ctx['repair']['correctedInterpretationSha256'],
+                         hostTerminalPhase='final_answer')
     value['checkpointSha256']=original.old.receipt_checkpoint(value)
     value['receiptSha256']=digest({k:v for k,v in value.items() if k!='receiptSha256'})
     return value
@@ -401,12 +560,14 @@ def report(ctx,log,commit,decision,pin,review,adjudication):
             'finalMaterialObligationIds':final['materialObligationIds'],
             'finalReconciliationSha256':digest(final),
             'humanReview':'unreviewed','exhaustiveCoverage':False,
-            'consumerAdmissionAuthorized':False,'publicReleaseAuthorized':False}
+            'consumerAdmissionAuthorized':False,'publicReleaseAuthorized':False,
+            **({'executionRepairSha256':ctx['repairPin'],'executionRepairCodeCommit':commit,
+                'originalUserScopeDecisionSha256':pin} if 'repair' in ctx else {})}
 
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('action',choices=('preview','request','prepare','reserve','bind','final-gate','capture','report'))
+    p.add_argument('action',choices=('preview','request','correction-preview','repair-preview','prepare','reserve','bind','final-gate','capture','report'))
     p.add_argument('--original-directory',type=Path,required=True)
     p.add_argument('--directory',type=Path,required=True)
     p.add_argument('--history',type=Path,required=True)
@@ -415,7 +576,9 @@ def main():
     p.add_argument('--packet',type=Path,default=original.old.assembly.DEFAULT_PACKET)
     p.add_argument('--partition',type=Path,default=original.old.assembly.DEFAULT_METADATA)
     p.add_argument('--decision',type=Path);p.add_argument('--decision-sha256')
+    p.add_argument('--repair-record',type=Path);p.add_argument('--repair-sha256')
     p.add_argument('--stage',choices=(REVIEW,ADJUDICATION))
+    p.add_argument('--correction-output',type=Path)
     p.add_argument('--worker-log',type=Path);p.add_argument('--worker-session');p.add_argument('--worker-turn')
     args=p.parse_args()
     try:
@@ -432,8 +595,28 @@ def main():
             value=request(ctx,args.failed_log,commit,args.action=='preview')
             name='request-preview.json' if args.action=='preview' else 'decision-request.json'
             original.old.write_new(args.directory/name,value);print(digest(value));return 0
+        if args.action=='correction-preview':
+            if not args.worker_log or not args.correction_output:
+                reject('continuation-correction-paths-required')
+            original.old.require_runtime_directory(args.correction_output.parent)
+            if args.correction_output.parent.resolve()==args.directory.resolve():
+                reject('continuation-correction-separate-output-required')
+            value=review_correction_preview(ctx,args.directory,args.worker_log)
+            original.old.write_new(args.correction_output,value);print(digest(value));return 0
         if not args.decision or not args.decision_sha256:reject('continuation-exact-decision-required')
         decision=read(args.decision);pin=args.decision_sha256
+        if args.action=='repair-preview':
+            if not args.correction_output:reject('continuation-correction-paths-required')
+            original.old.require_runtime_directory(args.correction_output.parent)
+            if args.correction_output.parent.resolve()==args.directory.resolve():
+                reject('continuation-correction-separate-output-required')
+            value=repair_document(ctx,args.failed_log,commit,decision,pin)
+            original.old.write_new(args.correction_output,value);print(digest(value));return 0
+        if bool(args.repair_record)!=bool(args.repair_sha256):reject('continuation-repair-pin-required')
+        if args.repair_record:
+            if args.repair_record.resolve().parent==args.directory.resolve():
+                reject('continuation-repair-separate-record-required')
+            ctx['repair']=read(args.repair_record);ctx['repairPin']=args.repair_sha256
         if args.action=='prepare':
             if not args.stage:reject('continuation-stage-required')
             review={k:read(args.directory/(REVIEW+'.'+k+'.json')) for k in ('input','proposal','reservation','attempt','receipt')} if args.stage==ADJUDICATION else None

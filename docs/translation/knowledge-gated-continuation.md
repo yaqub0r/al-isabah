@@ -34,6 +34,33 @@ stop and obtain a new decision instead of dispatching another worker. This
 local mechanism cannot detect launches made outside the recorded workflow;
 operators must not launch out of band.
 
+Host terminal metadata may mark an assistant's final response as `final` or
+`final_answer`; both require a matching successful `task_complete`. If an older
+validator persisted `unknown` despite a successful terminal log, preserve that
+attempt and use a separate linked correction preview. The preview binds the
+original request, decision, reservation, unknown attempt, proposal and raw-log
+hash. It does not rewrite the attempt, approve changed code, issue a new slot,
+or authorize adjudication. Resolve the changed-code authorization boundary
+before using the correction to capture a receipt or launch the remaining worker.
+
+For the pinned issue-89 `final_answer` host log, the execution-repair path uses
+the original exact user decision as its scope authority. After the classifier
+fix and this runbook are reviewed and committed, generate `repair-preview`
+outside the canonical continuation directory. It independently checks the
+original committed code and current corrected code, the original decision,
+the saved review input, proposal, reservation, `unknown` attempt, and raw host
+log. A coordinator engineering review changes only the record's `status` from
+`pending_review` to `reviewed` and pins the exact resulting JSON digest. The
+record's origin is `trusted_coordinator_engineering_review`; it is not a new
+user-message approval. Supply that record and digest with `--repair-record`
+and `--repair-sha256` on later commands. The fixed review may then receive a
+linked corrected receipt without another review launch. Its original attempt
+remains `unknown` on disk and in the launch ledger. The corrected receipt and
+subsequent adjudication input, receipt, and report bind the repair digest and
+corrected commit. Only the already approved fourth slot, adjudication, can be
+reserved and launched. The ordinary path still requires its exact committed
+request and decision, with no repair override.
+
 The replacement review receives the exact extraction ledger, Gate 1 and failed
 attempt metadata. The adjudicator also receives the review proposal and receipt.
 Each new receipt binds the continuation decision, failed attempt and prior launch
