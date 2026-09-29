@@ -132,6 +132,7 @@ class CoverageGateTests(unittest.TestCase):
     def test_cli_writes_only_a_new_metadata_result_after_pinned_validation(self):
         data=copy.deepcopy(self.data);packet,partition,baseline_input,baseline,candidate_input,proposal,seed,ledger,pins=data
         base=gate.old.ROOT/'.runtime/knowledge/issue-0089'
+        base.mkdir(parents=True,exist_ok=True)
         with tempfile.TemporaryDirectory(dir=base) as directory:
             root=Path(directory);values={'packet':packet,'partition':partition,'profile':baseline_input['profile'],
                 'baseline-input':baseline_input,'baseline-proposal':{'output':baseline},
