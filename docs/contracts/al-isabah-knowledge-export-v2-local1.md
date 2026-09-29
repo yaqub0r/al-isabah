@@ -44,6 +44,14 @@ commit `e2a898553e41185098f5fbcc30ed60e8a8816231`. Replay may run at a later HEA
 changing a historical dependency fails closed. Neither a hardcoded commit label
 nor a newly approved export can repair a tampered historical execution.
 
+The separately approved bounded Sol/High continuation is recognized only at
+commit `dbb54fab19d8e0d7a84d6420e70dc397f6ca1847` with its exact local method
+profile, adapter bytes, v2 request and decision, and three fresh ordered host
+receipts. Its task and worker observations must say `gpt-6-sol`/`high`; the
+worker must be parent-linked and independently fresh. This extends historical
+replay without changing the original `gpt-5.6-sol`/`xhigh` verifier or turning a
+partial result into complete extraction. It grants no export or admission.
+
 The new receipt bundle contains the unchanged historical evidence and explicit
 exporter-derived projection records. Each projection preserves original stage,
 proposal, receipt and decision digests, requested/dependency source coverage,
