@@ -22,6 +22,34 @@ def identity(kind,value):
                                                    'code':projection_code_digest()})[:32]
 
 
+def bind_finding_source_owners(stage,packet,known_prior=None):
+    """Expose source ownership already implied by each projected finding target."""
+    known_prior=known_prior or {}
+    maps={kind:{row['id']:row for row in stage[kind]} for kind in graph.COLLECTIONS}
+    spans={s['id']:u['sourceRecordVersionId'] for u in packet['units'] for s in u['spans']}
+    for finding in stage['findings']:
+        prior=known_prior.get(finding['id'])
+        if prior is not None and finding==prior:continue
+        owners=set()
+        for target in finding['targets']:
+            kind=target['kind'];ref=target['id']
+            if kind=='sourceRecords':owners.add(ref);continue
+            if kind=='sourceSpans':
+                if ref not in spans:reject('gated-finding-owner-unresolved')
+                owners.add(spans[ref]);continue
+            obj=maps.get(kind,{}).get(ref)
+            if obj is None:reject('gated-finding-owner-unresolved')
+            found=set(obj.get('sourceRecordVersionIds',[]))
+            if 'sourceRecordVersionId' in obj:found.add(obj['sourceRecordVersionId'])
+            if 'sourceSpanId' in obj:found.add(spans[obj['sourceSpanId']])
+            if not found:reject('gated-finding-owner-unresolved')
+            owners.update(found)
+        if not owners:reject('gated-finding-owner-unresolved')
+        existing={t['id'] for t in finding['targets'] if t['kind']=='sourceRecords'}
+        finding['targets'].extend({'kind':'sourceRecords','id':rid} for rid in sorted(owners-existing))
+        if prior is not None and finding!=prior:reject('gated-finding-prior-identity-conflict')
+
+
 def project_history(history,pins,requested,prior_bundle=None):
     normalized=replay.validate_history(history,pins);packet=normalized['packet']
     profile=prior_projection.profile_value()
@@ -30,7 +58,7 @@ def project_history(history,pins,requested,prior_bundle=None):
         read(prior_projection.BASELINE_CLASSIFICATIONS),prior_projection.BASELINE_CLASSIFICATIONS_SHA256)
     stages=[prior_projection.stage_snapshot(item,packet,inventory,source_records,profile,n,classifications)
             for n,item in enumerate(normalized['stages'])]
-    result=copy.deepcopy(stages[-1]);final={(kind,v['id']) for kind in graph.COLLECTIONS for v in result[kind]}
+    previous=None
     if prior_bundle is not None:
         if prior_bundle.get('projectionVersion')==PROJECTION_VERSION:
             previous=project_history(prior_bundle['history'],prior_bundle['pins'],
@@ -40,6 +68,10 @@ def project_history(history,pins,requested,prior_bundle=None):
                        prior_bundle['requestedSourceRecordVersionIds'],prior_bundle.get('priorBundle'))
         if previous[3]!=prior_bundle:reject('gated-prior-projection-binding-mismatch')
         if previous[1]!=inventory or previous[2]!=profile:reject('gated-cumulative-projection-context-mismatch')
+    known={x['id']:x for x in previous[0]['findings']} if previous else {}
+    for stage in stages:bind_finding_source_owners(stage,packet,known)
+    result=copy.deepcopy(stages[-1]);final={(kind,v['id']) for kind in graph.COLLECTIONS for v in result[kind]}
+    if previous is not None:
         for kind in graph.COLLECTIONS:prior_projection.merge_objects(result[kind],previous[0][kind])
     for stage in stages[:-1]:
         for kind in graph.COLLECTIONS:prior_projection.merge_objects(result[kind],stage[kind])
@@ -71,7 +103,9 @@ def project_history(history,pins,requested,prior_bundle=None):
     if prior_bundle is not None:bundle['priorBundle']=copy.deepcopy(prior_bundle)
     derived_chain=[]
     for n,(item,stage) in enumerate(zip(normalized['stages'],stages)):
-        outputs=graph.semantic_projection(stage,requested,dependencies)
+        # The final receipt attests the cumulative active snapshot. Earlier
+        # withdrawn objects remain separately bound by lifecycle events.
+        outputs=graph.semantic_projection(result if n==len(stages)-1 else stage,requested,dependencies)
         inputs={'inventorySha256':digest(inventory),'profileSha256':digest(profile),
                 'sourceRecords':[{'id':r['id'],'sha256':digest(r)} for r in sorted(source_records,key=lambda x:x['id'])],
                 'requestedSourceRecordVersionIds':requested,'dependencySourceRecordVersionIds':dependencies,

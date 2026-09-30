@@ -112,6 +112,59 @@ class GatedHistoryTests(unittest.TestCase):
                 [current[2]['authority']['revisionId'],source_record['sourceOrdinal']],versioned=False)
             self.assertEqual(projected[source_record['id']]['logicalRecordId'],expected)
 
+    def test_final_receipt_covers_retained_retired_historical_finding(self):
+        records=sorted(r['id'] for r in self.source.ctx['packet']['records'])
+        original=old_projection.stage_snapshot
+        retained_id=old_projection.identity('synthetic-retained-finding','indirect-target')
+        retired_id=old_projection.identity('synthetic-retired-finding','historical-only')
+        injected={}
+
+        def with_historical_finding(item,packet,inventory,source_records,profile,index,classifications=None):
+            stage=original(item,packet,inventory,source_records,profile,index,classifications)
+            if index==0:
+                retained=copy.deepcopy(stage['findings'][0]);retained['id']=retained_id
+                retained['targets']=[{'kind':'ambiguityGroups','id':stage['ambiguityGroups'][0]['id']}]
+                injected['retained']=retained
+                retired=copy.deepcopy(stage['findings'][0]);retired['id']=retired_id
+                stage['findings'].extend([retained,retired])
+            if index==2:stage['findings'].append(copy.deepcopy(injected['retained']))
+            return stage
+
+        with mock.patch.object(gated_projection.prior_projection,'stage_snapshot',
+                               side_effect=with_historical_finding):
+            candidate=gated_export.candidate(self.history,self.pins,records)
+            normalized=history_adapter.validate_history(self.history,self.pins)
+            packet=normalized['packet'];profile=candidate[2]
+            inventory,source_records=old_projection.inventory_value(packet,profile,records)
+            classes=old_projection.baseline_classifications(normalized['baseline'],packet,
+                old_projection.read(old_projection.BASELINE_CLASSIFICATIONS),
+                old_projection.BASELINE_CLASSIFICATIONS_SHA256)
+            next_stage=old_projection.stage_snapshot(normalized['stages'][-1],packet,inventory,
+                                                      source_records,profile,2,classes)
+        snapshot,bundle=candidate[0],candidate[3]
+        self.assertEqual(bundle['projectionVersion'],gated_projection.PROJECTION_VERSION)
+        raw_finding=copy.deepcopy(next(f for f in next_stage['findings'] if f['id']==retained_id))
+        raw_prior_stage=copy.deepcopy(next_stage)
+        gated_projection.bind_finding_source_owners(raw_prior_stage,packet,{retained_id:raw_finding})
+        self.assertEqual(next(f for f in raw_prior_stage['findings'] if f['id']==retained_id),raw_finding)
+        known={f['id']:f for f in snapshot['findings']}
+        gated_projection.bind_finding_source_owners(next_stage,packet,known)
+        old_projection.merge_objects(next_stage['findings'],snapshot['findings'])
+        incompatible=copy.deepcopy(known[retained_id])
+        incompatible['category']='identity' if incompatible['category']!='identity' else 'omission'
+        with self.assertRaisesRegex(Rejection,'gated-finding-prior-identity-conflict'):
+            gated_projection.bind_finding_source_owners(copy.deepcopy(raw_prior_stage),packet,
+                {retained_id:incompatible})
+        self.assertIn(retained_id,{f['id'] for f in snapshot['findings']})
+        self.assertIn(retired_id,{f['id'] for f in snapshot['findings']})
+        self.assertTrue(any({'kind':'findings','id':retired_id} in event['targets']
+                            for event in snapshot['lifecycleEvents']))
+        final_objects={(item['ref']['kind'],item['ref']['id'])
+                       for item in bundle['bindings'][-1]['outputs']['objects']}
+        self.assertIn(('findings',retained_id),final_objects)
+        self.assertNotIn(('findings',retired_id),final_objects)
+        self.assertEqual(candidate[4]['coverage']['requestedLogicalRecords'],len(records))
+
     def test_pinned_lineage_tampering_rejected(self):
         for mutate in (lambda h:h['report']['launchAttempts'][1].update(status='completed'),
                        lambda h:h['review']['attempt'].update(status='completed'),
