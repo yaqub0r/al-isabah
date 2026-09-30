@@ -1,0 +1,619 @@
+{
+  "schema": "al-isabah.synthetic-conformance-mutations.v1",
+  "resealAllInputPins": true,
+  "cases": [
+    {
+      "id": "duplicate-logical-record-version",
+      "expectedCode": "coverage-mismatch",
+      "patches": [
+        {
+          "input": "snapshot",
+          "op": "append",
+          "path": [
+            "sourceRecords"
+          ],
+          "value": {
+            "id": "urn:al-isabah:synthetic:sourcerecords:99",
+            "logicalRecordId": "urn:al-isabah:synthetic:logical:1",
+            "authorityUnitIds": [
+              "urn:al-isabah:synthetic:unit:1",
+              "urn:al-isabah:synthetic:unit:2"
+            ],
+            "recordSha256": "2dea9b17e0b1ddfa7f2a4fea033a2a25fefd8b36c37dd9e7c2233545533a582f",
+            "sourceArtifactId": "urn:al-isabah:synthetic:artifacts:1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "multiply-owned-authority-unit",
+      "expectedCode": "coverage-mismatch",
+      "patches": [
+        {
+          "input": "inventory",
+          "op": "set",
+          "path": [
+            "logicalRecords",
+            1,
+            "sourceUnitIds"
+          ],
+          "value": [
+            "urn:al-isabah:synthetic:unit:1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assessment-target-not-hash-bound",
+      "expectedCode": "assessment-binding-mismatch",
+      "patches": [
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "assessments",
+            0,
+            "inputs"
+          ],
+          "value": [
+            {
+              "ref": {
+                "kind": "artifacts",
+                "id": "urn:al-isabah:synthetic:artifacts:1"
+              },
+              "sha256": "404788601a8491443a171ff8f26332384980067b4de84124e34a38a2b10ed0d2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "relation-target-place",
+      "expectedCode": "reference-kind-mismatch",
+      "patches": [
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "claims",
+            0,
+            "objectRef"
+          ],
+          "value": {
+            "kind": "entities",
+            "id": "urn:al-isabah:synthetic:entities:3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mention-reverse-link-missing",
+      "expectedCode": "reference-closure-mismatch",
+      "patches": [
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "entities",
+            0,
+            "mentionIds"
+          ],
+          "value": []
+        }
+      ]
+    },
+    {
+      "id": "report-claim-reverse-link-missing",
+      "expectedCode": "reference-closure-mismatch",
+      "patches": [
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "reports",
+            0,
+            "claimIds"
+          ],
+          "value": [
+            "urn:al-isabah:synthetic:claims:3",
+            "urn:al-isabah:synthetic:claims:4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "claim-report-reverse-link-missing",
+      "expectedCode": "reference-closure-mismatch",
+      "patches": [
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "claims",
+            0,
+            "reportIds"
+          ],
+          "value": [
+            "urn:al-isabah:synthetic:reports:2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "span-claim-reverse-link-missing",
+      "expectedCode": "reference-closure-mismatch",
+      "patches": [
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "spanDispositions",
+            0,
+            "claimIds"
+          ],
+          "value": [
+            "urn:al-isabah:synthetic:claims:1",
+            "urn:al-isabah:synthetic:claims:4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "report-ambiguity-member-missing",
+      "expectedCode": "ambiguity-incomplete",
+      "patches": [
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "reports",
+            0,
+            "ambiguityGroupIds"
+          ],
+          "value": [
+            "urn:al-isabah:synthetic:ambiguitygroups:1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unreviewed-nonclaim",
+      "expectedCode": "nonclaim-review-required",
+      "patches": [
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "spanDispositions",
+            2,
+            "status"
+          ],
+          "value": "nonclaim_form"
+        },
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "spanDispositions",
+            2,
+            "reasonCode"
+          ],
+          "value": "formula_only"
+        }
+      ]
+    },
+    {
+      "id": "factual-absence-of-evidence",
+      "expectedCode": "qualification-loss",
+      "patches": [
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "claims",
+            2,
+            "polarity"
+          ],
+          "value": "absence_of_evidence"
+        },
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "claims",
+            2,
+            "useRestrictionIds"
+          ],
+          "value": [
+            "urn:al-isabah:synthetic:userestrictions:2"
+          ]
+        },
+        {
+          "input": "snapshot",
+          "op": "append",
+          "path": [
+            "useRestrictions"
+          ],
+          "value": {
+            "id": "urn:al-isabah:synthetic:userestrictions:2",
+            "tier": "factual_spine",
+            "attributionRequired": true
+          }
+        },
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "qualifications",
+            2,
+            "criticalStatus"
+          ],
+          "value": "unqualified"
+        },
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "qualifications",
+            2,
+            "evidentiaryStrength"
+          ],
+          "value": "source_supported"
+        }
+      ]
+    },
+    {
+      "id": "stale-assessment-selection",
+      "expectedCode": "stale-assessment-selection",
+      "patches": [
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "assessments"
+          ],
+          "value": [
+            {
+              "id": "urn:al-isabah:synthetic:assessments:2",
+              "kind": "extraction",
+              "targets": [
+                {
+                  "kind": "sourceRecords",
+                  "id": "urn:al-isabah:synthetic:sourcerecords:1"
+                }
+              ],
+              "inputs": [
+                {
+                  "ref": {
+                    "kind": "sourceRecords",
+                    "id": "urn:al-isabah:synthetic:sourcerecords:1"
+                  },
+                  "sha256": "c140040970885cf1387dd0d1ce8ba49a4832390ed9e856cde254cb4152ab1405"
+                }
+              ],
+              "status": "complete",
+              "actorId": "urn:al-isabah:synthetic:actors:1",
+              "methodArtifactId": "urn:al-isabah:synthetic:artifacts:2",
+              "effectiveAt": {
+                "status": "recorded",
+                "timestamp": "2000-01-01T00:00:00Z",
+                "reasonCode": "none"
+              },
+              "observedAt": {
+                "status": "recorded",
+                "timestamp": "2000-01-01T00:00:00Z",
+                "reasonCode": "none"
+              },
+              "predecessorIds": [],
+              "findingIds": []
+            },
+            {
+              "id": "urn:al-isabah:synthetic:assessments:20",
+              "kind": "extraction",
+              "targets": [
+                {
+                  "kind": "sourceRecords",
+                  "id": "urn:al-isabah:synthetic:sourcerecords:1"
+                }
+              ],
+              "inputs": [
+                {
+                  "ref": {
+                    "kind": "sourceRecords",
+                    "id": "urn:al-isabah:synthetic:sourcerecords:1"
+                  },
+                  "sha256": "c140040970885cf1387dd0d1ce8ba49a4832390ed9e856cde254cb4152ab1405"
+                }
+              ],
+              "status": "complete",
+              "actorId": "urn:al-isabah:synthetic:actors:1",
+              "methodArtifactId": "urn:al-isabah:synthetic:artifacts:2",
+              "effectiveAt": {
+                "status": "recorded",
+                "timestamp": "2000-01-01T00:00:00Z",
+                "reasonCode": "none"
+              },
+              "observedAt": {
+                "status": "recorded",
+                "timestamp": "2000-01-01T00:00:00Z",
+                "reasonCode": "none"
+              },
+              "predecessorIds": [
+                "urn:al-isabah:synthetic:assessments:2"
+              ],
+              "findingIds": []
+            },
+            {
+              "id": "urn:al-isabah:synthetic:assessments:3",
+              "kind": "human_review",
+              "targets": [
+                {
+                  "kind": "sourceRecords",
+                  "id": "urn:al-isabah:synthetic:sourcerecords:1"
+                }
+              ],
+              "inputs": [
+                {
+                  "ref": {
+                    "kind": "sourceRecords",
+                    "id": "urn:al-isabah:synthetic:sourcerecords:1"
+                  },
+                  "sha256": "c140040970885cf1387dd0d1ce8ba49a4832390ed9e856cde254cb4152ab1405"
+                }
+              ],
+              "status": "unreviewed",
+              "actorId": "urn:al-isabah:synthetic:actors:2",
+              "methodArtifactId": "urn:al-isabah:synthetic:artifacts:2",
+              "effectiveAt": {
+                "status": "unknown",
+                "timestamp": "",
+                "reasonCode": "not_performed"
+              },
+              "observedAt": {
+                "status": "unknown",
+                "timestamp": "",
+                "reasonCode": "not_performed"
+              },
+              "predecessorIds": [],
+              "findingIds": []
+            },
+            {
+              "id": "urn:al-isabah:synthetic:assessments:4",
+              "kind": "extraction",
+              "targets": [
+                {
+                  "kind": "sourceRecords",
+                  "id": "urn:al-isabah:synthetic:sourcerecords:2"
+                }
+              ],
+              "inputs": [
+                {
+                  "ref": {
+                    "kind": "sourceRecords",
+                    "id": "urn:al-isabah:synthetic:sourcerecords:2"
+                  },
+                  "sha256": "749edf950ec7fcf0ed1c853ad88669cb7811f6ebf2c22bd8a925066844c91a54"
+                }
+              ],
+              "status": "partial",
+              "actorId": "urn:al-isabah:synthetic:actors:1",
+              "methodArtifactId": "urn:al-isabah:synthetic:artifacts:2",
+              "effectiveAt": {
+                "status": "recorded",
+                "timestamp": "2000-01-01T00:00:00Z",
+                "reasonCode": "none"
+              },
+              "observedAt": {
+                "status": "recorded",
+                "timestamp": "2000-01-01T00:00:00Z",
+                "reasonCode": "none"
+              },
+              "predecessorIds": [],
+              "findingIds": [
+                "urn:al-isabah:synthetic:findings:1"
+              ]
+            },
+            {
+              "id": "urn:al-isabah:synthetic:assessments:5",
+              "kind": "human_review",
+              "targets": [
+                {
+                  "kind": "sourceRecords",
+                  "id": "urn:al-isabah:synthetic:sourcerecords:2"
+                }
+              ],
+              "inputs": [
+                {
+                  "ref": {
+                    "kind": "sourceRecords",
+                    "id": "urn:al-isabah:synthetic:sourcerecords:2"
+                  },
+                  "sha256": "749edf950ec7fcf0ed1c853ad88669cb7811f6ebf2c22bd8a925066844c91a54"
+                }
+              ],
+              "status": "unreviewed",
+              "actorId": "urn:al-isabah:synthetic:actors:2",
+              "methodArtifactId": "urn:al-isabah:synthetic:artifacts:2",
+              "effectiveAt": {
+                "status": "unknown",
+                "timestamp": "",
+                "reasonCode": "not_performed"
+              },
+              "observedAt": {
+                "status": "unknown",
+                "timestamp": "",
+                "reasonCode": "not_performed"
+              },
+              "predecessorIds": [],
+              "findingIds": []
+            },
+            {
+              "id": "urn:al-isabah:synthetic:assessments:6",
+              "kind": "extraction",
+              "targets": [
+                {
+                  "kind": "sourceRecords",
+                  "id": "urn:al-isabah:synthetic:sourcerecords:3"
+                }
+              ],
+              "inputs": [
+                {
+                  "ref": {
+                    "kind": "sourceRecords",
+                    "id": "urn:al-isabah:synthetic:sourcerecords:3"
+                  },
+                  "sha256": "d26e42c259b5bc32f447dcec530e3eb46b62574b9c1729707cae7552713840cb"
+                }
+              ],
+              "status": "complete",
+              "actorId": "urn:al-isabah:synthetic:actors:1",
+              "methodArtifactId": "urn:al-isabah:synthetic:artifacts:2",
+              "effectiveAt": {
+                "status": "recorded",
+                "timestamp": "2000-01-01T00:00:00Z",
+                "reasonCode": "none"
+              },
+              "observedAt": {
+                "status": "recorded",
+                "timestamp": "2000-01-01T00:00:00Z",
+                "reasonCode": "none"
+              },
+              "predecessorIds": [],
+              "findingIds": []
+            },
+            {
+              "id": "urn:al-isabah:synthetic:assessments:7",
+              "kind": "human_review",
+              "targets": [
+                {
+                  "kind": "sourceRecords",
+                  "id": "urn:al-isabah:synthetic:sourcerecords:3"
+                }
+              ],
+              "inputs": [
+                {
+                  "ref": {
+                    "kind": "sourceRecords",
+                    "id": "urn:al-isabah:synthetic:sourcerecords:3"
+                  },
+                  "sha256": "d26e42c259b5bc32f447dcec530e3eb46b62574b9c1729707cae7552713840cb"
+                }
+              ],
+              "status": "unreviewed",
+              "actorId": "urn:al-isabah:synthetic:actors:2",
+              "methodArtifactId": "urn:al-isabah:synthetic:artifacts:2",
+              "effectiveAt": {
+                "status": "unknown",
+                "timestamp": "",
+                "reasonCode": "not_performed"
+              },
+              "observedAt": {
+                "status": "unknown",
+                "timestamp": "",
+                "reasonCode": "not_performed"
+              },
+              "predecessorIds": [],
+              "findingIds": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unsupported-marked-complete",
+      "expectedCode": "false-extraction-completion",
+      "patches": [
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "assessments",
+            2,
+            "status"
+          ],
+          "value": "complete"
+        }
+      ]
+    },
+    {
+      "id": "private-prose-field",
+      "expectedCode": "prohibited-payload",
+      "patches": [
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "claims",
+            0,
+            "english"
+          ],
+          "value": "Synthetic prohibited body"
+        }
+      ]
+    },
+    {
+      "id": "real-mode",
+      "expectedCode": "real-mode-disabled",
+      "patches": [
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "mode"
+          ],
+          "value": "real"
+        }
+      ]
+    },
+    {
+      "id": "scope-subset",
+      "expectedCode": "batch-declaration-mismatch",
+      "patches": [
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "batch",
+            "requestedLogicalRecordIds"
+          ],
+          "value": [
+            "urn:al-isabah:synthetic:logical:1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "active-entity-withdrawal",
+      "expectedCode": "active-reference-retired",
+      "patches": [
+        {
+          "input": "snapshot",
+          "op": "set",
+          "path": [
+            "lifecycleEvents"
+          ],
+          "value": [
+            {
+              "id": "urn:al-isabah:synthetic:lifecycle:review-withdraw",
+              "kind": "withdraws",
+              "targets": [
+                {
+                  "kind": "entities",
+                  "id": "urn:al-isabah:synthetic:entities:1"
+                }
+              ],
+              "replacements": [],
+              "decisionArtifactId": "urn:al-isabah:synthetic:artifacts:4",
+              "effectiveAt": {
+                "status": "recorded",
+                "timestamp": "2026-01-01T00:00:00Z",
+                "reasonCode": "none"
+              },
+              "dependencyIds": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

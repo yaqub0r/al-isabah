@@ -1,0 +1,22 @@
+{
+  "schema": "al-isabah.selected-source-scope.v1",
+  "decisionId": "issue-0089-user-selected-legacy-volume-08",
+  "decisionBasis": "explicit-user-selection-relayed-by-coordinator",
+  "scope": "full-legacy-volume-08-mapped-to-approved-authority",
+  "legacyEntryCount": 1550,
+  "candidateInventory": {
+    "id": "issue-0089-womens-book.source-scope.v1",
+    "fileSha256": "001ea04c30fe3e52dec2d38dd49bb087c74a909474715c07e5a41b19237b4062",
+    "inventorySha256": "6b80a92201e07685abbf766cd04a763b1568fab29a136ac915254136a5408584"
+  },
+  "sourceEntries": 1550,
+  "ownedStructuralSegments": 205,
+  "sourceOrdinalRange": [
+    10754,
+    12303
+  ],
+  "identityCrosswalkStatus": "unverified",
+  "publicationApproval": false,
+  "semanticExecutionApproval": false,
+  "consumerAdmissionApproval": false
+}

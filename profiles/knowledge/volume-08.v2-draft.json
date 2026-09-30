@@ -1,0 +1,325 @@
+{
+  "schemaId": "al-isabah.knowledge-profile.v2-draft",
+  "id": "urn:al-isabah:profile:legacy-volume-08:knowledge-v2-draft-1",
+  "version": "2.0.0-draft.1",
+  "status": "draft",
+  "mode": "real",
+  "realExecutionEnabled": false,
+  "realAdmissionEnabled": false,
+  "authority": {
+    "id": "urn:al-isabah:authority:openiti-jk000533",
+    "workId": "urn:al-isabah:work:ibn-hajar-isabah",
+    "editionId": "urn:al-isabah:edition:openiti-jk000533",
+    "revisionId": "urn:al-isabah:revision:5835c183b8bbf4ea454d5c1be2b168b669403771",
+    "sourceArtifactSha256": "bc9db8134c8278973967c91c00324531833f643fc0fb2c8ebe318c9ed4469eea",
+    "verificationBasis": "licensed_transcription"
+  },
+  "selectedScopeSha256": "e75b13ab2915a9b4e96b368d365ea4428a247827c44731d5f92e1869e9b7bd67",
+  "predicates": [
+    {
+      "id": "urn:al-isabah:predicate:name-identity-candidate",
+      "family": "identity",
+      "subjectKinds": [
+        "person",
+        "collective"
+      ],
+      "objectKinds": [
+        "entities"
+      ],
+      "directional": true,
+      "objectEntityKinds": [
+        "person",
+        "collective",
+        "work"
+      ]
+    },
+    {
+      "id": "urn:al-isabah:predicate:parent-of",
+      "family": "relationship",
+      "subjectKinds": [
+        "person"
+      ],
+      "objectKinds": [
+        "entities"
+      ],
+      "directional": true,
+      "objectEntityKinds": [
+        "person"
+      ]
+    },
+    {
+      "id": "urn:al-isabah:predicate:child-of",
+      "family": "relationship",
+      "subjectKinds": [
+        "person"
+      ],
+      "objectKinds": [
+        "entities"
+      ],
+      "directional": true,
+      "objectEntityKinds": [
+        "person"
+      ]
+    },
+    {
+      "id": "urn:al-isabah:predicate:sibling-of",
+      "family": "relationship",
+      "subjectKinds": [
+        "person"
+      ],
+      "objectKinds": [
+        "entities"
+      ],
+      "directional": true,
+      "objectEntityKinds": [
+        "person"
+      ]
+    },
+    {
+      "id": "urn:al-isabah:predicate:spouse-of",
+      "family": "relationship",
+      "subjectKinds": [
+        "person"
+      ],
+      "objectKinds": [
+        "entities"
+      ],
+      "directional": true,
+      "objectEntityKinds": [
+        "person"
+      ]
+    },
+    {
+      "id": "urn:al-isabah:predicate:nephew-of",
+      "family": "relationship",
+      "subjectKinds": [
+        "person"
+      ],
+      "objectKinds": [
+        "entities"
+      ],
+      "directional": true,
+      "objectEntityKinds": [
+        "person"
+      ]
+    },
+    {
+      "id": "urn:al-isabah:predicate:affiliated-with",
+      "family": "relationship",
+      "subjectKinds": [
+        "person",
+        "collective"
+      ],
+      "objectKinds": [
+        "entities"
+      ],
+      "directional": true,
+      "objectEntityKinds": [
+        "person",
+        "collective",
+        "work"
+      ]
+    },
+    {
+      "id": "urn:al-isabah:predicate:participated-in",
+      "family": "event",
+      "subjectKinds": [
+        "person",
+        "collective"
+      ],
+      "objectKinds": [
+        "events"
+      ],
+      "directional": true,
+      "objectEntityKinds": []
+    },
+    {
+      "id": "urn:al-isabah:predicate:reported",
+      "family": "report",
+      "subjectKinds": [
+        "person",
+        "work"
+      ],
+      "objectKinds": [
+        "reports"
+      ],
+      "directional": true,
+      "objectEntityKinds": []
+    },
+    {
+      "id": "urn:al-isabah:predicate:transmitted",
+      "family": "report",
+      "subjectKinds": [
+        "person"
+      ],
+      "objectKinds": [
+        "reports"
+      ],
+      "directional": true,
+      "objectEntityKinds": []
+    },
+    {
+      "id": "urn:al-isabah:predicate:attributed-to",
+      "family": "report",
+      "subjectKinds": [
+        "person",
+        "work"
+      ],
+      "objectKinds": [
+        "entities",
+        "reports"
+      ],
+      "directional": true,
+      "objectEntityKinds": [
+        "person",
+        "collective",
+        "work"
+      ]
+    },
+    {
+      "id": "urn:al-isabah:predicate:doubted",
+      "family": "source_criticism",
+      "subjectKinds": [
+        "person",
+        "work"
+      ],
+      "objectKinds": [
+        "reports",
+        "entities"
+      ],
+      "directional": true,
+      "objectEntityKinds": [
+        "person",
+        "collective",
+        "work"
+      ]
+    },
+    {
+      "id": "urn:al-isabah:predicate:rejected",
+      "family": "source_criticism",
+      "subjectKinds": [
+        "person",
+        "work"
+      ],
+      "objectKinds": [
+        "reports",
+        "entities"
+      ],
+      "directional": true,
+      "objectEntityKinds": [
+        "person",
+        "collective",
+        "work"
+      ]
+    },
+    {
+      "id": "urn:al-isabah:predicate:corrected",
+      "family": "source_criticism",
+      "subjectKinds": [
+        "person",
+        "work"
+      ],
+      "objectKinds": [
+        "reports",
+        "entities"
+      ],
+      "directional": true,
+      "objectEntityKinds": [
+        "person",
+        "collective",
+        "work"
+      ]
+    },
+    {
+      "id": "urn:al-isabah:predicate:located-at",
+      "family": "context",
+      "subjectKinds": [
+        "person",
+        "collective",
+        "place"
+      ],
+      "objectKinds": [
+        "places"
+      ],
+      "directional": true,
+      "objectEntityKinds": []
+    },
+    {
+      "id": "urn:al-isabah:predicate:dated-to",
+      "family": "context",
+      "subjectKinds": [
+        "person",
+        "work"
+      ],
+      "objectKinds": [
+        "times"
+      ],
+      "directional": true,
+      "objectEntityKinds": []
+    },
+    {
+      "id": "urn:al-isabah:predicate:has-quantity",
+      "family": "context",
+      "subjectKinds": [
+        "person",
+        "collective"
+      ],
+      "objectKinds": [
+        "values"
+      ],
+      "directional": true,
+      "objectEntityKinds": []
+    },
+    {
+      "id": "urn:al-isabah:predicate:cross-refers-to",
+      "family": "structure",
+      "subjectKinds": [
+        "person",
+        "work"
+      ],
+      "objectKinds": [
+        "sourceRecords"
+      ],
+      "directional": true,
+      "objectEntityKinds": []
+    }
+  ],
+  "eventTypes": [
+    "urn:al-isabah:event-type:encounter",
+    "urn:al-isabah:event-type:journey",
+    "urn:al-isabah:event-type:marriage",
+    "urn:al-isabah:event-type:birth",
+    "urn:al-isabah:event-type:death",
+    "urn:al-isabah:event-type:conversion",
+    "urn:al-isabah:event-type:participation",
+    "urn:al-isabah:event-type:narration"
+  ],
+  "participantRoles": [
+    "urn:al-isabah:role:actor",
+    "urn:al-isabah:role:recipient",
+    "urn:al-isabah:role:witness",
+    "urn:al-isabah:role:speaker",
+    "urn:al-isabah:role:transmitter",
+    "urn:al-isabah:role:attributor",
+    "urn:al-isabah:role:subject",
+    "urn:al-isabah:role:affected_person"
+  ],
+  "reasonCodes": [
+    "mapped",
+    "uncertain",
+    "heading",
+    "formula_only",
+    "bibliographic_format",
+    "unsupported",
+    "pending",
+    "source_damage",
+    "mapping_unverified"
+  ],
+  "rights": {
+    "basis": "proposed_cc_by_nc_sa_4_0",
+    "attributionRequired": true,
+    "commercialUse": "not_granted",
+    "shareAlike": true,
+    "approvalStatus": "not_approved_for_real_intake"
+  }
+}

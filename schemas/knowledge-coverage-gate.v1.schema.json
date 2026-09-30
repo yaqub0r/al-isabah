@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9:._-]{0,204}$"},
+    "ids": {"type": "array", "items": {"$ref": "#/$defs/id"}, "uniqueItems": true},
+    "ref": {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "id"],
+      "properties": {
+        "kind": {"enum": ["claims", "events", "reports", "values"]},
+        "id": {"$ref": "#/$defs/id"}
+      }
+    },
+    "discriminator": {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "semanticId"],
+      "properties": {
+        "kind": {"enum": ["claims", "events", "reports", "values"]},
+        "semanticId": {"type": "string"}
+      }
+    },
+    "obligation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "recordId", "sourceSpanIds", "kind", "originSha256", "allowedUnresolvedReasons", "expectedSemantics"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^O-[A-Z0-9-]{3,80}$"},
+        "recordId": {"$ref": "#/$defs/id"},
+        "sourceSpanIds": {"type": "array", "items": {"$ref": "#/$defs/id"}, "minItems": 1, "uniqueItems": true},
+        "kind": {"enum": ["semantic_gap", "carry_forward", "provenance_gap", "candidate_only"]},
+        "originSha256": {"$ref": "#/$defs/hash"},
+        "expectedSemantics": {"type": "array", "items": {"$ref": "#/$defs/discriminator"}, "uniqueItems": true},
+        "allowedUnresolvedReasons": {
+          "type": "array", "uniqueItems": true,
+          "items": {"enum": ["not_yet_extracted", "unsupported_vocabulary", "missing_source_locator", "missing_notice_provenance", "witness_unavailable", "legacy_issue_unlocated", "candidate_unaligned", "source_damage"]}
+        }
+      }
+    },
+    "seed": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "status", "sourceArtifactSha256", "packetSha256", "baselineOutputSha256", "profileSha256", "originReportSha256", "requestedSourceRecordVersionIds", "obligations"],
+      "properties": {
+        "schema": {"const": "al-isabah.knowledge-coverage-seed.v1"},
+        "status": {"const": "reviewed_for_gate"},
+        "sourceArtifactSha256": {"$ref": "#/$defs/hash"},
+        "packetSha256": {"$ref": "#/$defs/hash"},
+        "baselineOutputSha256": {"$ref": "#/$defs/hash"},
+        "profileSha256": {"$ref": "#/$defs/hash"},
+        "originReportSha256": {"$ref": "#/$defs/hash"},
+        "requestedSourceRecordVersionIds": {"type": "array", "items": {"$ref": "#/$defs/id"}, "minItems": 1, "uniqueItems": true},
+        "obligations": {"type": "array", "items": {"$ref": "#/$defs/obligation"}, "minItems": 1}
+      }
+    },
+    "anchor": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "recordId", "sourceSpanId", "startChar", "endChar", "surfaceSha256", "scope"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "recordId": {"$ref": "#/$defs/id"},
+        "sourceSpanId": {"$ref": "#/$defs/id"},
+        "startChar": {"type": "integer", "minimum": 0},
+        "endChar": {"type": "integer", "minimum": 1},
+        "surfaceSha256": {"$ref": "#/$defs/hash"},
+        "scope": {"enum": ["coarse", "fine"]}
+      }
+    },
+    "outcome": {
+      "type": "object", "additionalProperties": false,
+      "required": ["obligationId", "status", "objectRefs", "sourceAnchorIds", "reasonCode"],
+      "properties": {
+        "obligationId": {"type": "string", "pattern": "^O-[A-Z0-9-]{3,80}$"},
+        "status": {"enum": ["represented", "qualified_uncertainty", "unresolved"]},
+        "objectRefs": {"type": "array", "items": {"$ref": "#/$defs/ref"}, "uniqueItems": true},
+        "sourceAnchorIds": {"$ref": "#/$defs/ids"},
+        "reasonCode": {"type": "string"}
+      }
+    },
+    "ledger": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "sourceArtifactSha256", "packetSha256", "baselineOutputSha256", "profileSha256", "seedSha256", "candidateOutputSha256", "sourceAnchors", "outcomes"],
+      "properties": {
+        "schema": {"const": "al-isabah.knowledge-coverage-ledger.v1"},
+        "sourceArtifactSha256": {"$ref": "#/$defs/hash"},
+        "packetSha256": {"$ref": "#/$defs/hash"},
+        "baselineOutputSha256": {"$ref": "#/$defs/hash"},
+        "profileSha256": {"$ref": "#/$defs/hash"},
+        "seedSha256": {"$ref": "#/$defs/hash"},
+        "candidateOutputSha256": {"$ref": "#/$defs/hash"},
+        "sourceAnchors": {"type": "array", "items": {"$ref": "#/$defs/anchor"}},
+        "outcomes": {"type": "array", "items": {"$ref": "#/$defs/outcome"}, "minItems": 1}
+      }
+    }
+  }
+}

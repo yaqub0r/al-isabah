@@ -1,0 +1,335 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "al-isabah.knowledge-runtime-receipt.v1-draft"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^urn:al-isabah:[a-z0-9:._-]+$",
+      "maxLength": 205
+    },
+    "fixtureClass": {
+      "enum": [
+        "synthetic-conformance",
+        "not-a-fixture"
+      ]
+    },
+    "methodId": {
+      "const": "codex-sol-xhigh-knowledge-explicit-host-draft-1"
+    },
+    "registrySha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "stage": {
+      "enum": [
+        "knowledge_extraction",
+        "knowledge_independent_review",
+        "knowledge_adjudication"
+      ]
+    },
+    "sourceRecordVersionIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^urn:al-isabah:[a-z0-9:._-]+$",
+        "maxLength": 205
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "inputSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "outputSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "checkpointSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "upstreamReceiptIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^urn:al-isabah:[a-z0-9:._-]+$",
+        "maxLength": 205
+      },
+      "uniqueItems": true
+    },
+    "task": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "request",
+        "observed"
+      ],
+      "properties": {
+        "request": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind",
+                "overrides"
+              ],
+              "properties": {
+                "kind": {
+                  "const": "codex-task"
+                },
+                "overrides": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "model",
+                    "thinking"
+                  ],
+                  "properties": {
+                    "model": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "thinking": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind",
+                "overrides"
+              ],
+              "properties": {
+                "kind": {
+                  "const": "codex-worker"
+                },
+                "overrides": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "model",
+                    "reasoning_effort",
+                    "fork_turns"
+                  ],
+                  "properties": {
+                    "model": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "reasoning_effort": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "fork_turns": {
+                      "const": "none"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "observed": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "source",
+            "sessionId",
+            "turnId",
+            "provider",
+            "model",
+            "reasoning",
+            "firstTurn",
+            "forked"
+          ],
+          "properties": {
+            "source": {
+              "const": "codex-session-metadata"
+            },
+            "sessionId": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "turnId": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "provider": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reasoning": {
+              "type": "string",
+              "minLength": 1
+            },
+            "firstTurn": {
+              "type": "boolean"
+            },
+            "forked": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "worker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "request",
+        "observed"
+      ],
+      "properties": {
+        "request": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind",
+                "overrides"
+              ],
+              "properties": {
+                "kind": {
+                  "const": "codex-task"
+                },
+                "overrides": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "model",
+                    "thinking"
+                  ],
+                  "properties": {
+                    "model": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "thinking": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind",
+                "overrides"
+              ],
+              "properties": {
+                "kind": {
+                  "const": "codex-worker"
+                },
+                "overrides": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "model",
+                    "reasoning_effort",
+                    "fork_turns"
+                  ],
+                  "properties": {
+                    "model": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "reasoning_effort": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "fork_turns": {
+                      "const": "none"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "observed": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "source",
+            "sessionId",
+            "turnId",
+            "provider",
+            "model",
+            "reasoning",
+            "firstTurn",
+            "forked"
+          ],
+          "properties": {
+            "source": {
+              "const": "codex-session-metadata"
+            },
+            "sessionId": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "turnId": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+            },
+            "provider": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reasoning": {
+              "type": "string",
+              "minLength": 1
+            },
+            "firstTurn": {
+              "type": "boolean"
+            },
+            "forked": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "receiptSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "required": [
+    "schema",
+    "id",
+    "fixtureClass",
+    "methodId",
+    "registrySha256",
+    "stage",
+    "sourceRecordVersionIds",
+    "inputSha256",
+    "outputSha256",
+    "checkpointSha256",
+    "upstreamReceiptIds",
+    "task",
+    "worker",
+    "receiptSha256"
+  ],
+  "additionalProperties": false
+}
