@@ -12,7 +12,7 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROFILE = ROOT / "profiles" / "entry-title-decisions.v3.json"
+PROFILE = ROOT / "profiles" / "entry-title-decisions.v4.json"
 GIT_SHA = re.compile(r"^[0-9a-f]{40}$")
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
 ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -348,7 +348,7 @@ def validate(profile: dict[str, Any]) -> list[str]:
         "sourceAuthority",
         "decisions",
     }:
-        errors.append("profile: fields do not match the v3 contract")
+        errors.append("profile: fields do not match the active title contract")
 
     authority = profile.get("sourceAuthority")
     if not isinstance(authority, dict):

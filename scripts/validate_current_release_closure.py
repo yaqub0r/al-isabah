@@ -25,6 +25,7 @@ from validate_public_proposal import (
 )
 from validate_release_closure import CLOSURE as LEGACY_CLOSURE
 from validate_release_closure import validate as validate_historical_closure
+from validate_compliance import validate_translation_coverage
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -83,20 +84,26 @@ def current_proposal_paths(
     scopes = coverage.get("scopes")
     if not isinstance(scopes, list):
         return [], errors + [safe_error("$.translationCoverage.scopes", "invalid-scope-inventory")]
+    if validate_translation_coverage(coverage, artifacts):
+        return [], errors + [safe_error("$.translationCoverage", "coverage-state-mismatch")]
 
     current: list[Path] = []
     admitted_ids: set[str] = set()
     seen_volumes: set[int] = set()
     for index, scope in enumerate(scopes):
         location = f"$.translationCoverage.scopes[{index}]"
-        if not isinstance(scope, dict) or scope.get("scope_kind") != "volume":
+        if not isinstance(scope, dict) or scope.get("scope_kind") not in {"volume", "cohort"}:
             errors.append(safe_error(location, "invalid-scope-inventory"))
             continue
         volume = scope.get("volume")
-        if not isinstance(volume, int) or isinstance(volume, bool) or volume in seen_volumes:
+        if not isinstance(volume, int) or isinstance(volume, bool):
             errors.append(safe_error(f"{location}.volume", "invalid-scope-inventory"))
             continue
-        seen_volumes.add(volume)
+        if scope["scope_kind"] == "volume":
+            if volume in seen_volumes:
+                errors.append(safe_error(f"{location}.volume", "invalid-scope-inventory"))
+                continue
+            seen_volumes.add(volume)
         completion = scope.get("agent_completion")
         if not isinstance(completion, dict):
             errors.append(safe_error(f"{location}.agentCompletion", "invalid-scope-state"))
@@ -108,6 +115,12 @@ def current_proposal_paths(
             and scope.get("workflow_conformance") == "current"
             and scope.get("public_working_status") == "available"
         )
+        if scope["scope_kind"] == "cohort":
+            # A completed but non-admitted cohort is an overlapping coverage
+            # view, not another published volume or an admission instruction.
+            if is_current_ready:
+                errors.append(safe_error(location, "cohort-publication-not-admitted"))
+            continue
         if not is_current_ready:
             continue
         evidence = completion.get("evidence")

@@ -19,7 +19,7 @@
     {
       "id": "policy-binding",
       "path": "compliance/policy-binding.v5.json",
-      "sha256": "97e4d2faa57a1bc1b0679cdd31c148ea19d6655609d0d30f83fb563cc59b6259",
+      "sha256": "a89774893a9c623814f51a942c0c43056a0f6ffb8b979a43bc6bdb6e317c3f91",
       "status": "active"
     },
     {
@@ -44,15 +44,15 @@
     {
       "id": "entry-title-structure",
       "path": "docs/contracts/entry-title-structure.md",
-      "sha256": "e950f6375c45a06699d9b2653a4c7821cfd45879277369d1107720c6617272ba",
+      "sha256": "a2139fa9a3a6d25755bb7103277f9f3308f19b2a77c7c5e713505d28007b4539",
       "status": "active"
     },
     {
       "id": "entry-title-decisions",
-      "path": "profiles/entry-title-decisions.v3.json",
-      "sha256": "dc5f80db7c897b4ecf0df5b5fa1bce7ce7388d05fe6607f6a6cdb9e092934afc",
+      "path": "profiles/entry-title-decisions.v4.json",
+      "sha256": "f177c6c9fba1702aae911c0dba024e9e24b1093016b62066a573f63e6afff2a3",
       "status": "active",
-      "version": "3.0.0"
+      "version": "4.0.0"
     },
     {
       "id": "translation-source-profile",
@@ -71,7 +71,7 @@
     {
       "id": "translation-coverage",
       "path": "compliance/translation-coverage.v1.json",
-      "sha256": "c1d58f94d14210c04256047fd95eb29d22767bd9245f309426a691edf4891f75",
+      "sha256": "4699daa94705d2bd4895e19730d320f55c71ecf5e6f4cd5c6520a7e4b71182ae",
       "status": "active",
       "version": "1.1.0"
     },
@@ -178,7 +178,7 @@
     {
       "id": "translation-agent-workflow",
       "path": "docs/translation/agent-workflow.md",
-      "sha256": "840b349be21d277f596992bc23f5987ea2ed6326c2bd390e65596d33df84dd96",
+      "sha256": "a22c403d0c7ca6210352fd997b3edd5d16e942829fea7fa6fce0e0a8dbdd7654",
       "status": "active"
     },
     {

@@ -60,11 +60,11 @@
   ],
   "sourceRegister": {
     "path": "compliance/source-register.v1.json",
-    "sha256": "5f5e5ae81a221bdee7097b86534f6060c8d03b2d606e5e526fcb3436d94bbab1"
+    "sha256": "5977720da752e04e523b0ac165b6368aff58be43efc93540ddd5f89b2f0c15e5"
   },
   "translationCoverage": {
     "path": "compliance/translation-coverage.v1.json",
-    "sha256": "c1d58f94d14210c04256047fd95eb29d22767bd9245f309426a691edf4891f75"
+    "sha256": "4699daa94705d2bd4895e19730d320f55c71ecf5e6f4cd5c6520a7e4b71182ae"
   },
   "rights": {
     "path": "compliance/rights-matrix.al-isabah.v1.json",

@@ -55,7 +55,7 @@ heading or the unsplit adjudicated paragraph.
 ## Decisions and evidence
 
 Book-specific boundary decisions live in the versioned
-[`entry-title-decisions.v3.json`](../../profiles/entry-title-decisions.v3.json)
+[`entry-title-decisions.v4.json`](../../profiles/entry-title-decisions.v4.json)
 profile. Each decision records the pinned source authority and the exact title
 realization in both languages. A consumer may use that profile to build a
 working presentation, but it must not silently expand, shorten, or otherwise
@@ -93,3 +93,10 @@ Profile v3 carries forward the immutable v2 decision history, adds the reviewed
 Volume 2 decisions, and records witness-bound editorial supplies for damaged
 subject headings 2784 and 2880. Profiles v1 and v2 remain immutable historical
 decision sets.
+
+Profile v4 carries forward every v3 decision unchanged and adds the 373
+title/body-opening decisions for Volume 3 entries 3035–3407. Its new decisions
+use the existing ordinary boundary representation, retaining damaged source
+forms and unresolved readings without supplying missing letters. Profiles v1–v3
+remain immutable historical decision sets. These title decisions do not assert
+completion of full-biography translation or human scholarly review.
