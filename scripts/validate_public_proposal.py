@@ -79,6 +79,20 @@ PINNED_TITLE_PROFILE_BINDINGS = {
         "profileSha256": "fa797cd530a5be7c9be4045c03b35fd08d28aaa75eb9c45b0a1523d2644d8cf9",
     },
 }
+# Issue #85's immutable proposal captured the CRLF working-copy bytes of the
+# v8 title profile before Git normalized that text file to its repository LF
+# representation.  Keep both identities explicit: the proposal continues to
+# bind the historical working-copy bytes, while validation also requires the
+# exact repository-normalized bytes pinned by policy binding v9.  This is a
+# closed compatibility record, not a general alternative-hash allowance.
+PORTABLE_TITLE_PROFILE_BINDINGS = {
+    ("1.3.0", "issue-0085-public-proposal-v1"): {
+        "repositoryLineEndings": "lf",
+        "repositorySha256": "22f0b3d42470caf4120a89c53c201dfc5f5f81b0aecaa65c571a5dc62525cb95",
+        "workingCopyLineEndings": "crlf",
+        "workingCopySha256": "fa797cd530a5be7c9be4045c03b35fd08d28aaa75eb9c45b0a1523d2644d8cf9",
+    },
+}
 SOURCE_DERIVED_NAME_ID_PROPOSALS = {
     "issue-0080-public-proposal-v1",
     "issue-0082-public-proposal-v1",
@@ -271,12 +285,47 @@ def records_sha256(records: list[dict[str, Any]]) -> str:
     return sha256_bytes(b"".join(canonical_json(item) for item in records))
 
 
+def _normalized_text_bytes(path: Path, line_endings: str) -> bytes:
+    text = path.read_text(encoding="utf-8").replace("\r\n", "\n").replace("\r", "\n")
+    if line_endings == "crlf":
+        text = text.replace("\n", "\r\n")
+    elif line_endings != "lf":
+        raise ValueError(f"unsupported line-ending identity: {line_endings}")
+    return text.encode("utf-8")
+
+
+def _title_profile_hash_matches(
+    proposal_key: tuple[Any, Any],
+    binding: dict[str, Any],
+    profile_path: Path,
+) -> bool:
+    portable = PORTABLE_TITLE_PROFILE_BINDINGS.get(proposal_key)
+    if portable is None:
+        return binding.get("profileSha256") == sha256_text_file(profile_path)
+    if (
+        binding.get("profileSha256") != portable["workingCopySha256"]
+        or sha256_bytes(
+            _normalized_text_bytes(
+                profile_path, portable["repositoryLineEndings"]
+            )
+        )
+        != portable["repositorySha256"]
+        or sha256_bytes(
+            _normalized_text_bytes(
+                profile_path, portable["workingCopyLineEndings"]
+            )
+        )
+        != portable["workingCopySha256"]
+    ):
+        return False
+    return True
+
+
 def _title_decision_errors(proposal: dict[str, Any]) -> list[str]:
     errors: list[str] = []
     binding = proposal.get("entryTitleDecisions", {})
-    expected_binding = PINNED_TITLE_PROFILE_BINDINGS.get(
-        (proposal.get("schemaVersion"), proposal.get("proposalId"))
-    )
+    proposal_key = (proposal.get("schemaVersion"), proposal.get("proposalId"))
+    expected_binding = PINNED_TITLE_PROFILE_BINDINGS.get(proposal_key)
     if proposal.get("schemaVersion") == "1.3.0" and expected_binding is None:
         return [safe_error("$.entryTitleDecisions", "title-profile-mismatch")]
     if expected_binding is not None and any(
@@ -289,7 +338,7 @@ def _title_decision_errors(proposal: dict[str, Any]) -> list[str]:
     profile_path = ROOT / "profiles" / f"{profile_id}.json"
     if (
         not profile_path.is_file()
-        or binding.get("profileSha256") != sha256_file(profile_path)
+        or not _title_profile_hash_matches(proposal_key, binding, profile_path)
     ):
         return [safe_error("$.entryTitleDecisions", "title-profile-mismatch")]
     try:

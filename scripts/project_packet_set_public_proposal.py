@@ -17,7 +17,7 @@ from pathlib import Path
 from typing import Any
 
 from project_public_proposal import FORMULA_KEYS, NORMALIZED_SOURCE_ID, parity_projection
-from public_boundary import canonical_json, sha256_bytes, sha256_file
+from public_boundary import canonical_json, sha256_bytes, sha256_file, sha256_text_file
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,6 +34,11 @@ from validate_entry_titles import (  # noqa: E402
 INLINE_SECTION = re.compile(r"\s*#~:section:\d*\s*(\([^\n]+\))\s*")
 ENTRY_TITLE_PROFILE = ROOT / "profiles" / "entry-title-decisions.v8.json"
 ENTRY_TITLE_PROFILE_NAME = re.compile(r"^entry-title-decisions\.v[0-9]+\.json$")
+
+
+def title_profile_sha256(path: Path) -> str:
+    """Hash a UTF-8 title profile using repository-normalized LF bytes."""
+    return sha256_text_file(path)
 
 
 def public_arabic(value: str) -> str:
@@ -485,7 +490,7 @@ def project(
         "policy": {"bindingSha256": policy_sha256},
         "entryTitleDecisions": {
             "profileId": title_profile_path.stem,
-            "profileSha256": sha256_file(title_profile_path),
+            "profileSha256": title_profile_sha256(title_profile_path),
             "coveredRecordCount": len(records),
         },
         "sliceContext": slice_context_binding,

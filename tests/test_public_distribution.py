@@ -7,6 +7,7 @@ import tempfile
 import unittest
 import zipfile
 from pathlib import Path
+from unittest.mock import patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -48,6 +49,7 @@ ISSUE_0070_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0070.pub
 ISSUE_0080_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0080.public-proposal.json"
 ISSUE_0082_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0082.public-proposal.json"
 ISSUE_0084_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0084.public-proposal.json"
+ISSUE_0085_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0085.public-proposal.json"
 ISSUE_0070_RUNTIME_PACKET = (
     ROOT / ".runtime" / "translation" / "packets" / "issue-0070-lineage.json"
 )
@@ -72,6 +74,68 @@ class PublicDistributionTests(unittest.TestCase):
         cls.issue_0084_proposal = json.loads(
             ISSUE_0084_PROPOSAL_PATH.read_text(encoding="utf-8")
         )
+        cls.issue_0085_proposal = json.loads(
+            ISSUE_0085_PROPOSAL_PATH.read_text(encoding="utf-8")
+        )
+
+    def test_issue_85_title_profile_binding_distinguishes_repository_and_working_copy_bytes(self):
+        proposal = copy.deepcopy(self.issue_0085_proposal)
+        key = (proposal["schemaVersion"], proposal["proposalId"])
+        portable = PROPOSAL_VALIDATOR.PORTABLE_TITLE_PROFILE_BINDINGS[key]
+        profile_path = ROOT / "profiles" / "entry-title-decisions.v8.json"
+        lf_bytes = PROPOSAL_VALIDATOR._normalized_text_bytes(profile_path, "lf")
+        crlf_bytes = PROPOSAL_VALIDATOR._normalized_text_bytes(profile_path, "crlf")
+
+        self.assertEqual(PROPOSAL_VALIDATOR.validate(ISSUE_0085_PROPOSAL_PATH), [])
+        self.assertEqual(BOUNDARY.sha256_bytes(lf_bytes), portable["repositorySha256"])
+        self.assertEqual(BOUNDARY.sha256_bytes(crlf_bytes), portable["workingCopySha256"])
+        self.assertEqual(
+            proposal["entryTitleDecisions"]["profileSha256"],
+            portable["workingCopySha256"],
+        )
+
+        with tempfile.TemporaryDirectory() as directory:
+            temporary_root = Path(directory)
+            temporary_profiles = temporary_root / "profiles"
+            temporary_profiles.mkdir()
+            temporary_profile = temporary_profiles / "entry-title-decisions.v8.json"
+            with patch.object(PROPOSAL_VALIDATOR, "ROOT", temporary_root):
+                for exact_bytes in (lf_bytes, crlf_bytes):
+                    temporary_profile.write_bytes(exact_bytes)
+                    self.assertEqual(
+                        PROPOSAL_VALIDATOR._title_decision_errors(proposal), []
+                    )
+
+                temporary_profile.write_bytes(lf_bytes + b" ")
+                self.assertTrue(
+                    any(
+                        "category=title-profile-mismatch" in error
+                        for error in PROPOSAL_VALIDATOR._title_decision_errors(proposal)
+                    )
+                )
+
+        proposal["entryTitleDecisions"]["profileSha256"] = portable[
+            "repositorySha256"
+        ]
+        self.assertTrue(
+            any(
+                "category=title-profile-mismatch" in error
+                for error in PROPOSAL_VALIDATOR._title_decision_errors(proposal)
+            )
+        )
+
+    def test_title_profile_projection_hash_is_portable_across_line_endings(self):
+        profile_path = ROOT / "profiles" / "entry-title-decisions.v8.json"
+        lf_bytes = PROPOSAL_VALIDATOR._normalized_text_bytes(profile_path, "lf")
+        crlf_bytes = PROPOSAL_VALIDATOR._normalized_text_bytes(profile_path, "crlf")
+        expected = BOUNDARY.sha256_bytes(lf_bytes)
+        with tempfile.TemporaryDirectory() as directory:
+            temporary_profile = Path(directory) / "entry-title-decisions.v8.json"
+            for exact_bytes in (lf_bytes, crlf_bytes):
+                temporary_profile.write_bytes(exact_bytes)
+                self.assertEqual(
+                    PACKET_PROJECT.title_profile_sha256(temporary_profile), expected
+                )
 
     def test_current_tree_and_exact_closure_are_valid(self):
         self.assertEqual(PROPOSAL_VALIDATOR.DEFAULT_PROPOSAL, ISSUE_0070_PROPOSAL_PATH)
@@ -812,7 +876,9 @@ class PublicDistributionTests(unittest.TestCase):
         proposal = {
             "entryTitleDecisions": {
                 "profileId": "entry-title-decisions.v8",
-                "profileSha256": BOUNDARY.sha256_file(PACKET_PROJECT.ENTRY_TITLE_PROFILE),
+                "profileSha256": PACKET_PROJECT.title_profile_sha256(
+                    PACKET_PROJECT.ENTRY_TITLE_PROFILE
+                ),
                 "coveredRecordCount": 1,
             },
             "records": [
@@ -838,7 +904,7 @@ class PublicDistributionTests(unittest.TestCase):
         proposal["entryTitleDecisions"]["profileSha256"] = "0" * 64
         errors = PROPOSAL_VALIDATOR._title_decision_errors(proposal)
         self.assertTrue(any("category=title-profile-mismatch" in error for error in errors), errors)
-        proposal["entryTitleDecisions"]["profileSha256"] = BOUNDARY.sha256_file(
+        proposal["entryTitleDecisions"]["profileSha256"] = PACKET_PROJECT.title_profile_sha256(
             PACKET_PROJECT.ENTRY_TITLE_PROFILE
         )
         repeated = [

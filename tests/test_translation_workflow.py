@@ -23,6 +23,9 @@ FIXTURE_MANIFEST = ROOT / "tests" / "fixtures" / "translation-source.mini.json"
 ISSUE_0026_PROPOSAL = (
     ROOT / "content" / "public-proposals" / "issue-0026.public-proposal.json"
 )
+ISSUE_0085_PROPOSAL = (
+    ROOT / "content" / "public-proposals" / "issue-0085.public-proposal.json"
+)
 
 
 def assignment_issue(number=25, start=1, end=2):
@@ -634,6 +637,33 @@ class TranslationWorkflowTests(unittest.TestCase):
         self.assertIn("القسم الأول", review)
         self.assertIn(binding["contexts"][-1]["sourceOccurrenceId"], review)
         self.assertIn(binding["contexts"][-1]["displayContextId"], review)
+
+    def test_volume6_context_accepts_exact_issue85_portable_profile_binding(self):
+        proposal = MODULE.load_json(ISSUE_0085_PROPOSAL)
+        authority = {
+            "commit": proposal["sourceAuthority"]["commit"],
+            "sha256": proposal["sourceAuthority"]["sha256"],
+        }
+        binding, contexts = MODULE.slice_context(
+            7763,
+            authority,
+            ISSUE_0085_PROPOSAL,
+        )
+        self.assertEqual(binding["state"], "continued")
+        self.assertEqual(
+            binding["sourceProposalId"], "issue-0085-public-proposal-v1"
+        )
+        self.assertEqual(
+            binding["sourceProposalSha256"],
+            "fa1f5b8820dc7a1ba007f00d17ff40d0f70a6179e80842507adbd9aa4c29c27e",
+        )
+        self.assertEqual(len(contexts), 4)
+        self.assertTrue(
+            all(
+                item["sourceOccurrenceId"] != item["displayContextId"]
+                for item in contexts
+            )
+        )
 
     def test_machine_readiness_rejects_missing_or_drifted_slice_context(self):
         packet = self.packet()
