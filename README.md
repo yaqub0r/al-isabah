@@ -9,6 +9,10 @@ Arabic text, aligned English translation, editorial annotations, stable
 identifiers, review state, book-specific provenance, and release history. Web
 and future mobile applications are clients of that dataset.
 
+Downstream applications maintain their own extraction, knowledge graphs,
+admission, orchestration, and application-specific evaluations. They consume
+approved, versioned book releases without adding application code here.
+
 This repository governs Al-Isabah source decisions, translation quality,
 review state, canonical promotion, and releases. Restricted research witnesses,
 credentials, and private comparison expression stay in approved external
