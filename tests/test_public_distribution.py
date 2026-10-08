@@ -417,7 +417,7 @@ class PublicDistributionTests(unittest.TestCase):
         )
         proposal = {
             "entryTitleDecisions": {
-                "profileId": "entry-title-decisions.v3",
+                "profileId": "entry-title-decisions.v4",
                 "profileSha256": BOUNDARY.sha256_file(PACKET_PROJECT.ENTRY_TITLE_PROFILE),
                 "coveredRecordCount": 1,
             },
@@ -454,6 +454,31 @@ class PublicDistributionTests(unittest.TestCase):
             any("category=ambiguous-title-decision-key" in error for error in errors),
             errors,
         )
+
+    def test_literal_damaged_title_survives_public_split_with_disclosure(self):
+        profile = PACKET_PROJECT.load_title_profile(PACKET_PROJECT.ENTRY_TITLE_PROFILE)
+        decisions = PACKET_PROJECT.decision_index(profile)
+        for number in (3052, 3317):
+            with self.subTest(number=number):
+                decision = decisions[number]
+                note = "Editorial note: the quoted source spelling remains unresolved."
+                source = decision["title"]["ar"] + " " + decision["bodyOpening"]["ar"]
+                entry = {
+                    "sourceOrdinal": number,
+                    "source": {"headingArabic": source, "arabic": source},
+                    "adjudication": {
+                        "english": decision["title"]["en"] + ". "
+                        + decision["bodyOpening"]["en"] + "\n\n" + note
+                    },
+                    "unresolved": [{"kind": "source-spelling", "severity": "material"}],
+                }
+                title, arabic, english = PACKET_PROJECT.title_and_body(entry, decision)
+                self.assertEqual(title["english"], decision["title"]["en"])
+                self.assertEqual(title["state"], "needs_attention")
+                self.assertEqual(arabic, decision["bodyOpening"]["ar"])
+                self.assertEqual(english, decision["bodyOpening"]["en"] + "\n\n" + note)
+                for value in (title["english"], english):
+                    self.assertEqual(PACKET_PROJECT.workflow.validate_public_english(value, "synthetic"), [])
 
     def test_volume2_slice_requires_distinct_continued_heading_context(self):
         first = self.volume2_proposal["records"][0]
