@@ -1,6 +1,6 @@
 {
   "schema": "al-isabah.honorific-formula-registry.v1",
-  "registryVersion": "1.6.0",
+  "registryVersion": "1.7.0",
   "contractId": "translation-quality-workflow",
   "profileId": "al-isabah-translation-profile",
   "entries": [
@@ -615,6 +615,780 @@
       "grammaticalAgreement": "not_applicable",
       "expandedArabic": "عز وجل",
       "accessibleEnglish": "Mighty and majestic is He."
+    },
+    {
+      "source": "لا إله إلا الله",
+      "target": "لا إله إلا الله",
+      "semanticClass": "declaration_of_divine_unity",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "لا إله إلا الله",
+      "accessibleEnglish": "There is no deity except God."
+    },
+    {
+      "source": "بسم الله",
+      "target": "بسم الله",
+      "semanticClass": "basmala_invocation",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "بسم الله",
+      "accessibleEnglish": "In the name of God."
+    },
+    {
+      "source": "أسقى الله بلدتنا",
+      "target": "أسقى الله بلدتنا",
+      "semanticClass": "rain_supplication",
+      "referentScope": "the speaker's town",
+      "grammaticalAgreement": "first person plural possessive; feminine singular object",
+      "expandedArabic": "أسقى الله بلدتنا",
+      "accessibleEnglish": "May God give our town water."
+    },
+    {
+      "source": "يغفر الله لك يا أبت",
+      "target": "يغفر الله لك يا أبت",
+      "semanticClass": "forgiveness_invocation",
+      "referentScope": "the speaker's father",
+      "grammaticalAgreement": "second person masculine singular",
+      "expandedArabic": "يغفر الله لك يا أبت",
+      "accessibleEnglish": "May God forgive you, my father."
+    },
+    {
+      "source": "صلى الله صلى الله عليه وسلم",
+      "target": "صلى الله صلى الله عليه وسلم",
+      "semanticClass": "damaged_repeated_prophetic_blessing",
+      "referentScope": "the Prophet",
+      "grammaticalAgreement": "masculine singular; damaged repeated wording",
+      "expandedArabic": "صلى الله صلى الله عليه وسلم",
+      "accessibleEnglish": "The source preserves a damaged repeated blessing for the Prophet."
+    },
+    {
+      "source": "اللهم إني أعوذ بك من سخطك",
+      "target": "اللهم إني أعوذ بك من سخطك",
+      "semanticClass": "divine_refuge_supplication",
+      "referentScope": "God",
+      "grammaticalAgreement": "first person singular supplication",
+      "expandedArabic": "اللهم إني أعوذ بك من سخطك",
+      "accessibleEnglish": "O God, I seek refuge in You from Your displeasure."
+    },
+    {
+      "source": "والله تعالى أعلم",
+      "target": "والله تعالى أعلم",
+      "semanticClass": "divine_knowledge_with_exaltation_qualification",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "والله تعالى أعلم",
+      "accessibleEnglish": "And God, the Exalted, knows best."
+    },
+    {
+      "source": "الحمد لله رب العالمين",
+      "target": "الحمد لله رب العالمين",
+      "semanticClass": "divine_praise",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "الحمد لله رب العالمين",
+      "accessibleEnglish": "Praise belongs to God, Lord of the worlds."
+    },
+    {
+      "source": "والعلم عند الله تعالى",
+      "target": "والعلم عند الله تعالى",
+      "semanticClass": "divine_knowledge_qualification",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "والعلم عند الله تعالى",
+      "accessibleEnglish": "And knowledge is with God, the Exalted."
+    },
+    {
+      "source": "جزى الله خيرا من أمير",
+      "target": "جزى الله خيرا من أمير",
+      "semanticClass": "divine_recompense_invocation",
+      "referentScope": "the commander praised in the verse",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "جزى الله خيرا من أمير",
+      "accessibleEnglish": "May God reward the commander with good."
+    },
+    {
+      "source": "بارك الله عليك",
+      "target": "بارك الله عليك",
+      "semanticClass": "blessing_invocation",
+      "referentScope": "the immediately addressed person",
+      "grammaticalAgreement": "second person masculine singular",
+      "expandedArabic": "بارك الله عليك",
+      "accessibleEnglish": "May God bless you."
+    },
+    {
+      "source": "فالله تعالى أعلم",
+      "target": "فالله تعالى أعلم",
+      "semanticClass": "divine_knowledge_with_exaltation_qualification",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "فالله تعالى أعلم",
+      "accessibleEnglish": "Thus God, the Exalted, knows best."
+    },
+    {
+      "source": "الله أكبر الله أكبر",
+      "target": "الله أكبر الله أكبر",
+      "semanticClass": "repeated_takbir",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "الله أكبر الله أكبر",
+      "accessibleEnglish": "God is greatest; God is greatest."
+    },
+    {
+      "source": "اللهم سلط عليه كلبك",
+      "target": "اللهم سلط عليه كلبك",
+      "semanticClass": "imprecation",
+      "referentScope": "the immediately preceding male referent",
+      "grammaticalAgreement": "third person masculine singular",
+      "expandedArabic": "اللهم سلط عليه كلبك",
+      "accessibleEnglish": "O God, set Your dog upon him."
+    },
+    {
+      "source": "بعون الله تعالى",
+      "target": "بعون الله تعالى",
+      "semanticClass": "divine_help_qualification",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "بعون الله تعالى",
+      "accessibleEnglish": "With the help of God, the Exalted."
+    },
+    {
+      "source": "حفظك الله من بين يديك ومن خلفك وعن يمينك وعن شمالك ومن فوقك ومن تحتك وأدرأ عنك شرور الإنس والجن",
+      "target": "حفظك الله من بين يديك ومن خلفك وعن يمينك وعن شمالك ومن فوقك ومن تحتك وأدرأ عنك شرور الإنس والجن",
+      "semanticClass": "protection_supplication",
+      "referentScope": "the immediately addressed male referent",
+      "grammaticalAgreement": "second person masculine singular",
+      "expandedArabic": "حفظك الله من بين يديك ومن خلفك وعن يمينك وعن شمالك ومن فوقك ومن تحتك وأدرأ عنك شرور الإنس والجن",
+      "accessibleEnglish": "May God protect you from before you and behind you, from your right and your left, and from above you and beneath you, and ward off from you the evils of humankind and jinn."
+    },
+    {
+      "source": "لا رفعك الله",
+      "target": "لا رفعك الله",
+      "semanticClass": "imprecation",
+      "referentScope": "the immediately addressed male referent",
+      "grammaticalAgreement": "second person masculine singular",
+      "expandedArabic": "لا رفعك الله",
+      "accessibleEnglish": "May God not raise you."
+    },
+    {
+      "source": "لا رفعه الله إن لم يسد إلا قومه",
+      "target": "لا رفعه الله إن لم يسد إلا قومه",
+      "semanticClass": "conditional_imprecation",
+      "referentScope": "the immediately preceding male referent",
+      "grammaticalAgreement": "third person masculine singular",
+      "expandedArabic": "لا رفعه الله إن لم يسد إلا قومه",
+      "accessibleEnglish": "May God not raise him if he rules none but his own people."
+    },
+    {
+      "source": "السلام عليكم",
+      "target": "السلام عليكم",
+      "semanticClass": "peace_greeting",
+      "referentScope": "the immediately addressed group",
+      "grammaticalAgreement": "second person plural",
+      "expandedArabic": "السلام عليكم",
+      "accessibleEnglish": "Peace be upon you."
+    },
+    {
+      "source": "بارك الله فيك",
+      "target": "بارك الله فيك",
+      "semanticClass": "blessing_invocation",
+      "referentScope": "the immediately addressed person",
+      "grammaticalAgreement": "second person masculine singular",
+      "expandedArabic": "بارك الله فيك",
+      "accessibleEnglish": "May God bless you."
+    },
+    {
+      "source": "اللهم أهلكهم واستأصل شأفتهم",
+      "target": "اللهم أهلكهم واستأصل شأفتهم",
+      "semanticClass": "collective_imprecation",
+      "referentScope": "the enemy group",
+      "grammaticalAgreement": "third person masculine plural",
+      "expandedArabic": "اللهم أهلكهم واستأصل شأفتهم",
+      "accessibleEnglish": "O God, destroy them and root them out."
+    },
+    {
+      "source": "اللهم انصرنا عليهم",
+      "target": "اللهم انصرنا عليهم",
+      "semanticClass": "victory_supplication",
+      "referentScope": "the speaker's group and the enemy group",
+      "grammaticalAgreement": "first person plural",
+      "expandedArabic": "اللهم انصرنا عليهم",
+      "accessibleEnglish": "O God, grant us victory over them."
+    },
+    {
+      "source": "نعوذ بالله من الحوب الكبير",
+      "target": "نعوذ بالله من الحوب الكبير",
+      "semanticClass": "divine_refuge_invocation",
+      "referentScope": "God",
+      "grammaticalAgreement": "first person plural",
+      "expandedArabic": "نعوذ بالله من الحوب الكبير",
+      "accessibleEnglish": "We seek refuge in God from grave sin."
+    },
+    {
+      "source": "اللهم لا أحل لهم أن يكذبوا علي",
+      "target": "اللهم لا أحل لهم أن يكذبوا علي",
+      "semanticClass": "contextual_divine_invocation",
+      "referentScope": "God and those who might lie about the speaker",
+      "grammaticalAgreement": "first person singular declaration",
+      "expandedArabic": "اللهم لا أحل لهم أن يكذبوا علي",
+      "accessibleEnglish": "O God, I do not permit them to lie about me."
+    },
+    {
+      "source": "رضيت بالله ربا وبالإسلام دينا وبمحمد نبيا",
+      "target": "رضيت بالله ربا وبالإسلام دينا وبمحمد نبيا",
+      "semanticClass": "creedal_contentment_declaration",
+      "referentScope": "God, Islam, and Muḥammad",
+      "grammaticalAgreement": "first person singular declaration",
+      "expandedArabic": "رضيت بالله ربا وبالإسلام دينا وبمحمد نبيا",
+      "accessibleEnglish": "I am content with God as Lord, Islam as religion, and Muḥammad as Prophet."
+    },
+    {
+      "source": "والله سبحانه وتعالى أعلم",
+      "target": "والله سبحانه وتعالى أعلم",
+      "semanticClass": "divine_knowledge_with_exaltation_qualification",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "والله سبحانه وتعالى أعلم",
+      "accessibleEnglish": "And God—glory be to Him, the Exalted—knows best."
+    },
+    {
+      "source": "اللهم اشغل عني عامرا كيف شئت وأنى شئت واهد بني عامر",
+      "target": "اللهم اشغل عني عامرا كيف شئت وأنى شئت واهد بني عامر",
+      "semanticClass": "contextual_supplication",
+      "referentScope": "ʿĀmir and Banū ʿĀmir",
+      "grammaticalAgreement": "first person singular supplication with masculine singular and plural objects",
+      "expandedArabic": "اللهم اشغل عني عامرا كيف شئت وأنى شئت واهد بني عامر",
+      "accessibleEnglish": "O God, occupy ʿĀmir away from me however and wherever You will, and guide Banū ʿĀmir."
+    },
+    {
+      "source": "الحمد لله الذي استنقذني به من النار",
+      "target": "الحمد لله الذي استنقذني به من النار",
+      "semanticClass": "divine_praise",
+      "referentScope": "God",
+      "grammaticalAgreement": "first person singular declaration",
+      "expandedArabic": "الحمد لله الذي استنقذني به من النار",
+      "accessibleEnglish": "Praise belongs to God, who saved me through him from the Fire."
+    },
+    {
+      "source": "فعجل الله حينك",
+      "target": "فعجل الله حينك",
+      "semanticClass": "imprecation",
+      "referentScope": "the immediately addressed male referent",
+      "grammaticalAgreement": "second person masculine singular",
+      "expandedArabic": "فعجل الله حينك",
+      "accessibleEnglish": "May God hasten your appointed time."
+    },
+    {
+      "source": "يا رب لا آلو إلا ما عجزت عنه",
+      "target": "يا رب لا آلو إلا ما عجزت عنه",
+      "semanticClass": "contextual_divine_address",
+      "referentScope": "God",
+      "grammaticalAgreement": "first person singular address to God",
+      "expandedArabic": "يا رب لا آلو إلا ما عجزت عنه",
+      "accessibleEnglish": "My Lord, I spare no effort except in what is beyond me."
+    },
+    {
+      "source": "يا رب ما آلوا إلا ما عجزت عنه",
+      "target": "يا رب ما آلوا إلا ما عجزت عنه",
+      "semanticClass": "contextual_divine_address",
+      "referentScope": "God",
+      "grammaticalAgreement": "first person singular address to God",
+      "expandedArabic": "يا رب ما آلوا إلا ما عجزت عنه",
+      "accessibleEnglish": "My Lord, I spare no effort except in what is beyond me."
+    },
+    {
+      "source": "سبحان الله",
+      "target": "سبحان الله",
+      "semanticClass": "divine_glorification",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "سبحان الله",
+      "accessibleEnglish": "Glory be to God."
+    },
+    {
+      "source": "جزاني الله من عثمان",
+      "target": "جزاني الله من عثمان",
+      "semanticClass": "poetic_recompense_invocation",
+      "referentScope": "the speaker and ʿUthmān",
+      "grammaticalAgreement": "first person singular object",
+      "expandedArabic": "جزاني الله من عثمان",
+      "accessibleEnglish": "May God recompense me on account of ʿUthmān."
+    },
+    {
+      "source": "جزى الله خيرا علايا من عشيرة",
+      "target": "جزى الله خيرا علايا من عشيرة",
+      "semanticClass": "poetic_recompense_invocation",
+      "referentScope": "the ʿAlāyā of the clan",
+      "grammaticalAgreement": "masculine plural collective",
+      "expandedArabic": "جزى الله خيرا علايا من عشيرة",
+      "accessibleEnglish": "May God reward with good the ʿAlāyā of the clan."
+    },
+    {
+      "source": "كرم الله وجهه",
+      "target": "كرم الله وجهه",
+      "semanticClass": "honor_invocation",
+      "referentScope": "ʿAlī ibn Abī Ṭālib",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "كرم الله وجهه",
+      "accessibleEnglish": "May God honor his face."
+    },
+    {
+      "source": "لعن الله ناقة حملتني إليك",
+      "target": "لعن الله ناقة حملتني إليك",
+      "semanticClass": "imprecation",
+      "referentScope": "the she-camel that carried the speaker",
+      "grammaticalAgreement": "feminine singular",
+      "expandedArabic": "لعن الله ناقة حملتني إليك",
+      "accessibleEnglish": "May God curse the she-camel that carried me to you."
+    },
+    {
+      "source": "لوى يده الله الذي هو غالبه",
+      "target": "لوى يده الله الذي هو غالبه",
+      "semanticClass": "poetic_imprecation",
+      "referentScope": "the man addressed in the verse",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "لوى يده الله الذي هو غالبه",
+      "accessibleEnglish": "May God, who overcomes him, twist his hand."
+    },
+    {
+      "source": "الله أكبر",
+      "target": "الله أكبر",
+      "semanticClass": "takbir",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "الله أكبر",
+      "accessibleEnglish": "God is greatest."
+    },
+    {
+      "source": "آمين",
+      "target": "آمين",
+      "semanticClass": "supplication_response",
+      "referentScope": "the immediately preceding supplication",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "آمين",
+      "accessibleEnglish": "Amen."
+    },
+    {
+      "source": "قاتله الله",
+      "target": "قاتله الله",
+      "semanticClass": "imprecation",
+      "referentScope": "the immediately preceding male referent",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "قاتله الله",
+      "accessibleEnglish": "May God fight him."
+    },
+    {
+      "source": "شكر الله قولك",
+      "target": "شكر الله قولك",
+      "semanticClass": "divine_recompense_invocation",
+      "referentScope": "the immediately addressed speaker",
+      "grammaticalAgreement": "second person masculine singular possessive",
+      "expandedArabic": "شكر الله قولك",
+      "accessibleEnglish": "May God reward you for your words."
+    },
+    {
+      "source": "فقبح الله من يكذب",
+      "target": "فقبح الله من يكذب",
+      "semanticClass": "imprecation",
+      "referentScope": "anyone who lies",
+      "grammaticalAgreement": "generic singular",
+      "expandedArabic": "فقبح الله من يكذب",
+      "accessibleEnglish": "May God disgrace whoever lies."
+    },
+    {
+      "source": "عمرك الله يا معمر",
+      "target": "عمرك الله يا معمر",
+      "semanticClass": "longevity_invocation",
+      "referentScope": "Muʿammar",
+      "grammaticalAgreement": "second person masculine singular",
+      "expandedArabic": "عمرك الله يا معمر",
+      "accessibleEnglish": "May God prolong your life, O Muʿammar."
+    },
+    {
+      "source": "اللهم اغفر لي وارحمني",
+      "target": "اللهم اغفر لي وارحمني",
+      "semanticClass": "forgiveness_and_mercy_supplication",
+      "referentScope": "God",
+      "grammaticalAgreement": "first person singular",
+      "expandedArabic": "اللهم اغفر لي وارحمني",
+      "accessibleEnglish": "O God, forgive me and have mercy on me."
+    },
+    {
+      "source": "اللهم تب علي",
+      "target": "اللهم تب علي",
+      "semanticClass": "repentance_supplication",
+      "referentScope": "God",
+      "grammaticalAgreement": "first person singular",
+      "expandedArabic": "اللهم تب علي",
+      "accessibleEnglish": "O God, accept my repentance."
+    },
+    {
+      "source": "الحمد لله لا شريك له",
+      "target": "الحمد لله لا شريك له",
+      "semanticClass": "divine_praise_and_unity_declaration",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "الحمد لله لا شريك له",
+      "accessibleEnglish": "Praise belongs to God; He has no partner."
+    },
+    {
+      "source": "لا يفضض الله فاك",
+      "target": "لا يفضض الله فاك",
+      "semanticClass": "wellbeing_invocation",
+      "referentScope": "the immediately addressed male referent",
+      "grammaticalAgreement": "second person masculine singular",
+      "expandedArabic": "لا يفضض الله فاك",
+      "accessibleEnglish": "May God preserve your mouth and teeth."
+    },
+    {
+      "source": "رحم الله نافع بن بديل",
+      "target": "رحم الله نافع بن بديل",
+      "semanticClass": "mercy_invocation",
+      "referentScope": "Nāfiʿ ibn Budayl",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "رحم الله نافع بن بديل",
+      "accessibleEnglish": "May God have mercy on Nāfiʿ ibn Budayl."
+    },
+    {
+      "source": "اللهم أمكني من نبهان في عنقه حبل أنوف",
+      "target": "اللهم أمكني من نبهان في عنقه حبل أنوف",
+      "semanticClass": "contextual_imprecation",
+      "referentScope": "Nabhān",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "اللهم أمكني من نبهان في عنقه حبل أنوف",
+      "accessibleEnglish": "O God, deliver Nabhān into my power with a coarse rope around his neck."
+    },
+    {
+      "source": "لا أله إلا الله",
+      "target": "لا أله إلا الله",
+      "semanticClass": "damaged_declaration_of_divine_unity",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "لا أله إلا الله",
+      "accessibleEnglish": "The source preserves a damaged spelling of the declaration, “There is no deity except God.”"
+    },
+    {
+      "source": "اللهم أمكني من نبهان في عنقه حبل أسود",
+      "target": "اللهم أمكني من نبهان في عنقه حبل أسود",
+      "semanticClass": "contextual_imprecation",
+      "referentScope": "Nabhān",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "اللهم أمكني من نبهان في عنقه حبل أسود",
+      "accessibleEnglish": "O God, deliver Nabhān into my power with a black rope around his neck."
+    },
+    {
+      "source": "اللهم زده ثباتا",
+      "target": "اللهم زده ثباتا",
+      "semanticClass": "steadfastness_supplication",
+      "referentScope": "the immediately preceding male referent",
+      "grammaticalAgreement": "third person masculine singular",
+      "expandedArabic": "اللهم زده ثباتا",
+      "accessibleEnglish": "O God, increase him in steadfastness."
+    },
+    {
+      "source": "الحمد لله الذي أكرمنا بالإسلام ومن علينا بمحمد ولم نمت على ما مات عليه الآباء",
+      "target": "الحمد لله الذي أكرمنا بالإسلام ومن علينا بمحمد ولم نمت على ما مات عليه الآباء",
+      "semanticClass": "divine_praise_and_gratitude",
+      "referentScope": "God",
+      "grammaticalAgreement": "first person plural declaration",
+      "expandedArabic": "الحمد لله الذي أكرمنا بالإسلام ومن علينا بمحمد ولم نمت على ما مات عليه الآباء",
+      "accessibleEnglish": "Praise belongs to God, who honored us with Islam, favored us with Muḥammad, and did not let us die upon what the forefathers died upon."
+    },
+    {
+      "source": "اللهم شفاء عاجلا",
+      "target": "اللهم شفاء عاجلا",
+      "semanticClass": "healing_supplication",
+      "referentScope": "the immediately preceding ill male referent",
+      "grammaticalAgreement": "elliptic masculine singular",
+      "expandedArabic": "اللهم شفاء عاجلا",
+      "accessibleEnglish": "O God, grant immediate healing."
+    },
+    {
+      "source": "أقسمت عليك يا رب لا تغيب الشمس حتى أطأ بعرجتي في خضر الجنة",
+      "target": "أقسمت عليك يا رب لا تغيب الشمس حتى أطأ بعرجتي في خضر الجنة",
+      "semanticClass": "oath_supplication",
+      "referentScope": "God and the speaker",
+      "grammaticalAgreement": "first person singular direct oath and supplication",
+      "expandedArabic": "أقسمت عليك يا رب لا تغيب الشمس حتى أطأ بعرجتي في خضر الجنة",
+      "accessibleEnglish": "I adjure You, my Lord: do not let the sun set until I tread, with my limp, in the greenery of Paradise."
+    },
+    {
+      "source": "لا اله الا الله",
+      "target": "لا اله الا الله",
+      "semanticClass": "declaration_of_divine_unity",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "لا اله الا الله",
+      "accessibleEnglish": "There is no deity except God."
+    },
+    {
+      "source": "عفا الله عما كان في الشرك",
+      "target": "عفا الله عما كان في الشرك",
+      "semanticClass": "forgiveness_invocation",
+      "referentScope": "conduct committed before Islam",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "عفا الله عما كان في الشرك",
+      "accessibleEnglish": "May God pardon what occurred in polytheism."
+    },
+    {
+      "source": "لعنك الله",
+      "target": "لعنك الله",
+      "semanticClass": "imprecation",
+      "referentScope": "the immediately addressed male referent",
+      "grammaticalAgreement": "second person masculine singular",
+      "expandedArabic": "لعنك الله",
+      "accessibleEnglish": "May God curse you."
+    },
+    {
+      "source": "اللهم انك تعلم أني أسلمت طائعا وقد خرجت مجاهدا أريد وجهك فأحي لي حماري ولا تجعل لأحد على منة",
+      "target": "اللهم انك تعلم أني أسلمت طائعا وقد خرجت مجاهدا أريد وجهك فأحي لي حماري ولا تجعل لأحد على منة",
+      "semanticClass": "contextual_supplication",
+      "referentScope": "God, the speaker, and the speaker's donkey",
+      "grammaticalAgreement": "first person singular with masculine singular object",
+      "expandedArabic": "اللهم انك تعلم أني أسلمت طائعا وقد خرجت مجاهدا أريد وجهك فأحي لي حماري ولا تجعل لأحد على منة",
+      "accessibleEnglish": "O God, You know that I embraced Islam willingly and went out striving, seeking Your countenance; revive my donkey for me and do not place anyone under an obligation to me."
+    },
+    {
+      "source": "مد الله في عمرك",
+      "target": "مد الله في عمرك",
+      "semanticClass": "longevity_invocation",
+      "referentScope": "the immediately addressed male referent",
+      "grammaticalAgreement": "second person masculine singular",
+      "expandedArabic": "مد الله في عمرك",
+      "accessibleEnglish": "May God prolong your life."
+    },
+    {
+      "source": "السلام عليك يا نبي الله ورحمة الله وبركاته",
+      "target": "السلام عليك يا نبي الله ورحمة الله وبركاته",
+      "semanticClass": "peace_mercy_and_blessing_greeting",
+      "referentScope": "the Prophet",
+      "grammaticalAgreement": "second person masculine singular",
+      "expandedArabic": "السلام عليك يا نبي الله ورحمة الله وبركاته",
+      "accessibleEnglish": "Peace be upon you, O Prophet of God, and God's mercy and blessings."
+    },
+    {
+      "source": "وعليك السلام ورحمة الله",
+      "target": "وعليك السلام ورحمة الله",
+      "semanticClass": "peace_and_mercy_greeting_response",
+      "referentScope": "the immediately addressed male referent",
+      "grammaticalAgreement": "second person masculine singular",
+      "expandedArabic": "وعليك السلام ورحمة الله",
+      "accessibleEnglish": "And upon you be peace and God's mercy."
+    },
+    {
+      "source": "وعليه السلام ورحمة الله وبركاته",
+      "target": "وعليه السلام ورحمة الله وبركاته",
+      "semanticClass": "peace_mercy_and_blessing_invocation",
+      "referentScope": "the immediately preceding male referent",
+      "grammaticalAgreement": "third person masculine singular",
+      "expandedArabic": "وعليه السلام ورحمة الله وبركاته",
+      "accessibleEnglish": "And upon him be peace, God's mercy, and His blessings."
+    },
+    {
+      "source": "وعليك السلام يا همامة",
+      "target": "وعليك السلام يا همامة",
+      "semanticClass": "peace_greeting_response",
+      "referentScope": "Humāmah",
+      "grammaticalAgreement": "second person masculine singular",
+      "expandedArabic": "وعليك السلام يا همامة",
+      "accessibleEnglish": "And upon you be peace, O Humāmah."
+    },
+    {
+      "source": "السلام عليك يا نبي الله",
+      "target": "السلام عليك يا نبي الله",
+      "semanticClass": "peace_greeting",
+      "referentScope": "the Prophet",
+      "grammaticalAgreement": "second person masculine singular",
+      "expandedArabic": "السلام عليك يا نبي الله",
+      "accessibleEnglish": "Peace be upon you, O Prophet of God."
+    },
+    {
+      "source": "اللهم سلط عليه كلبا من كلابك",
+      "target": "اللهم سلط عليه كلبا من كلابك",
+      "semanticClass": "contextual_imprecation",
+      "referentScope": "the immediately preceding male referent",
+      "grammaticalAgreement": "third person masculine singular",
+      "expandedArabic": "اللهم سلط عليه كلبا من كلابك",
+      "accessibleEnglish": "O God, set upon him a dog from among Your dogs."
+    },
+    {
+      "source": "نسأل الله الشهادة",
+      "target": "نسأل الله الشهادة",
+      "semanticClass": "martyrdom_supplication",
+      "referentScope": "God",
+      "grammaticalAgreement": "first person plural supplication",
+      "expandedArabic": "نسأل الله الشهادة",
+      "accessibleEnglish": "We ask God for martyrdom."
+    },
+    {
+      "source": "اللهم أذهب عنه الغل والحسد",
+      "target": "اللهم أذهب عنه الغل والحسد",
+      "semanticClass": "purification_supplication",
+      "referentScope": "the immediately preceding male referent",
+      "grammaticalAgreement": "third person masculine singular",
+      "expandedArabic": "اللهم أذهب عنه الغل والحسد",
+      "accessibleEnglish": "O God, remove rancor and envy from him."
+    },
+    {
+      "source": "رضي الله عنك وغفر لك يا رسول الله",
+      "target": "رضي الله عنك وغفر لك يا رسول الله",
+      "semanticClass": "divine_approval_and_forgiveness_invocation",
+      "referentScope": "the Messenger of God",
+      "grammaticalAgreement": "second person masculine singular",
+      "expandedArabic": "رضي الله عنك وغفر لك يا رسول الله",
+      "accessibleEnglish": "May God be pleased with you and forgive you, O Messenger of God."
+    },
+    {
+      "source": "اللهم اجعل له وزغا",
+      "target": "اللهم اجعل له وزغا",
+      "semanticClass": "contextual_imprecation",
+      "referentScope": "the immediately preceding male referent",
+      "grammaticalAgreement": "third person masculine singular",
+      "expandedArabic": "اللهم اجعل له وزغا",
+      "accessibleEnglish": "O God, give him a tremor."
+    },
+    {
+      "source": "كبك الله على وجهك في النار",
+      "target": "كبك الله على وجهك في النار",
+      "semanticClass": "imprecation",
+      "referentScope": "the immediately addressed male referent",
+      "grammaticalAgreement": "second person masculine singular",
+      "expandedArabic": "كبك الله على وجهك في النار",
+      "accessibleEnglish": "May God throw you face-first into the Fire."
+    },
+    {
+      "source": "اللهم اكسر به",
+      "target": "اللهم اكسر به",
+      "semanticClass": "contextual_imprecation",
+      "referentScope": "the contextually supplied object and male referent",
+      "grammaticalAgreement": "masculine singular pronoun with an elided object",
+      "expandedArabic": "اللهم اكسر به",
+      "accessibleEnglish": "O God, break [it] with him."
+    },
+    {
+      "source": "اللهم شفع البكائين فيمن لم يبك",
+      "target": "اللهم شفع البكائين فيمن لم يبك",
+      "semanticClass": "intercession_supplication",
+      "referentScope": "those who weep and those who do not weep",
+      "grammaticalAgreement": "masculine plural groups",
+      "expandedArabic": "اللهم شفع البكائين فيمن لم يبك",
+      "accessibleEnglish": "O God, allow those who weep to intercede for those who do not weep."
+    },
+    {
+      "source": "معاذ الله",
+      "target": "معاذ الله",
+      "semanticClass": "divine_refuge_invocation",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "معاذ الله",
+      "accessibleEnglish": "God forbid; refuge is with God."
+    },
+    {
+      "source": "بسم الله أعوذ بكلمات الله من غضبه وعقابه وشر عباده ومن همزات الشياطين وأعوذ بك رب أن يحضرون",
+      "target": "بسم الله أعوذ بكلمات الله من غضبه وعقابه وشر عباده ومن همزات الشياطين وأعوذ بك رب أن يحضرون",
+      "semanticClass": "bedtime_refuge_supplication",
+      "referentScope": "God and the speaker",
+      "grammaticalAgreement": "first person singular",
+      "expandedArabic": "بسم الله أعوذ بكلمات الله من غضبه وعقابه وشر عباده ومن همزات الشياطين وأعوذ بك رب أن يحضرون",
+      "accessibleEnglish": "In the name of God, I seek refuge in God's words from His wrath and punishment, the evil of His servants, and the promptings of devils; and I seek refuge in You, my Lord, lest they attend me."
+    },
+    {
+      "source": "اللهم أنج الوليد بن الوليد والمستضعفين من المؤمنين",
+      "target": "اللهم أنج الوليد بن الوليد والمستضعفين من المؤمنين",
+      "semanticClass": "rescue_supplication",
+      "referentScope": "al-Walīd ibn al-Walīd and the oppressed believers",
+      "grammaticalAgreement": "masculine singular and masculine plural",
+      "expandedArabic": "اللهم أنج الوليد بن الوليد والمستضعفين من المؤمنين",
+      "accessibleEnglish": "O God, rescue al-Walīd ibn al-Walīd and the oppressed believers."
+    },
+    {
+      "source": "جعله الله رفيقي في الجنة",
+      "target": "جعله الله رفيقي في الجنة",
+      "semanticClass": "companionship_supplication",
+      "referentScope": "the immediately preceding male volunteer",
+      "grammaticalAgreement": "third person masculine singular with first person singular possessive",
+      "expandedArabic": "جعله الله رفيقي في الجنة",
+      "accessibleEnglish": "May God make him my companion in Paradise."
+    },
+    {
+      "source": "اللهم أكثر رجالهم وأقل آثامهم ولا تحوجهم",
+      "target": "اللهم أكثر رجالهم وأقل آثامهم ولا تحوجهم",
+      "semanticClass": "collective_welfare_supplication",
+      "referentScope": "the immediately preceding group",
+      "grammaticalAgreement": "third person masculine plural",
+      "expandedArabic": "اللهم أكثر رجالهم وأقل آثامهم ولا تحوجهم",
+      "accessibleEnglish": "O God, increase their men, lessen their sins, and keep them from need."
+    },
+    {
+      "source": "الحمد لله يا أشعث الذي نصر دينه وأعز نبيه وأدخلك وقومك في هذا الدين كارهين",
+      "target": "الحمد لله يا أشعث الذي نصر دينه وأعز نبيه وأدخلك وقومك في هذا الدين كارهين",
+      "semanticClass": "divine_praise",
+      "referentScope": "God, Ashʿath, and his people",
+      "grammaticalAgreement": "second person masculine singular address within a praise declaration",
+      "expandedArabic": "الحمد لله يا أشعث الذي نصر دينه وأعز نبيه وأدخلك وقومك في هذا الدين كارهين",
+      "accessibleEnglish": "Praise belongs to God, O Ashʿath, who gave victory to His religion, strengthened His Prophet, and brought you and your people into this religion unwillingly."
+    },
+    {
+      "source": "رحم الله أباك",
+      "target": "رحم الله أباك",
+      "semanticClass": "mercy_invocation",
+      "referentScope": "the father of the immediately addressed person",
+      "grammaticalAgreement": "masculine singular",
+      "expandedArabic": "رحم الله أباك",
+      "accessibleEnglish": "May God have mercy on your father."
+    },
+    {
+      "source": "اللهم عبدك وابن عبدك احتاج إلى رحمتك وأنت غني عن عذابه ان كان محسنا فزد في إحسانه وان كان مسيئا فتجاوز عنه",
+      "target": "اللهم عبدك وابن عبدك احتاج إلى رحمتك وأنت غني عن عذابه ان كان محسنا فزد في إحسانه وان كان مسيئا فتجاوز عنه",
+      "semanticClass": "funeral_supplication",
+      "referentScope": "God and the deceased male",
+      "grammaticalAgreement": "third person masculine singular in a direct address to God",
+      "expandedArabic": "اللهم عبدك وابن عبدك احتاج إلى رحمتك وأنت غني عن عذابه ان كان محسنا فزد في إحسانه وان كان مسيئا فتجاوز عنه",
+      "accessibleEnglish": "O God, Your servant and the son of Your servant has come to need Your mercy, while You have no need to punish him. If he did good, increase his good; and if he did wrong, pardon him."
+    },
+    {
+      "source": "يا رب هذا قتلني عبثا فلا هو انتفع بقتلي ولا هو تركني أعيش في أرضك",
+      "target": "يا رب هذا قتلني عبثا فلا هو انتفع بقتلي ولا هو تركني أعيش في أرضك",
+      "semanticClass": "contextual_divine_complaint",
+      "referentScope": "God, the killed bird, and its killer",
+      "grammaticalAgreement": "first person singular complaint addressed to God",
+      "expandedArabic": "يا رب هذا قتلني عبثا فلا هو انتفع بقتلي ولا هو تركني أعيش في أرضك",
+      "accessibleEnglish": "My Lord, this one killed me wantonly: neither did he benefit from killing me nor did he leave me to live on Your earth."
+    },
+    {
+      "source": "استغفر الله",
+      "target": "استغفر الله",
+      "semanticClass": "forgiveness_invocation",
+      "referentScope": "God",
+      "grammaticalAgreement": "first person singular devotional utterance",
+      "expandedArabic": "استغفر الله",
+      "accessibleEnglish": "I seek God's forgiveness."
+    },
+    {
+      "source": "اللهم عبدك وابن عبدك احتاج إلى رحمتك",
+      "target": "اللهم عبدك وابن عبدك احتاج إلى رحمتك",
+      "semanticClass": "truncated_funeral_supplication",
+      "referentScope": "God and the deceased male",
+      "grammaticalAgreement": "third person masculine singular in a direct address to God",
+      "expandedArabic": "اللهم عبدك وابن عبدك احتاج إلى رحمتك",
+      "accessibleEnglish": "O God, Your servant and the son of Your servant has come to need Your mercy."
+    },
+    {
+      "source": "الحمد لله رب العالمين حمدا لا نهاية له",
+      "target": "الحمد لله رب العالمين حمدا لا نهاية له",
+      "semanticClass": "structural_divine_praise",
+      "referentScope": "God",
+      "grammaticalAgreement": "not_applicable",
+      "expandedArabic": "الحمد لله رب العالمين حمدا لا نهاية له",
+      "accessibleEnglish": "Praise belongs to God, Lord of the worlds, with praise that has no end."
+    },
+    {
+      "source": "صلى الله على سيدنا محمد وآله وصحبه وسلم تسليما كثيرا آمين",
+      "target": "صلى الله على سيدنا محمد وآله وصحبه وسلم تسليما كثيرا آمين",
+      "semanticClass": "prophetic_blessing_with_family_companions_and_response",
+      "referentScope": "Muḥammad, his family, and his Companions",
+      "grammaticalAgreement": "masculine singular with family and companion inclusion",
+      "expandedArabic": "صلى الله على سيدنا محمد وآله وصحبه وسلم تسليما كثيرا آمين",
+      "accessibleEnglish": "May God bless our master Muḥammad, his family, and his Companions, and grant abundant peace. Amen."
     }
   ]
 }

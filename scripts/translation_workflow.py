@@ -34,15 +34,15 @@ from execution_governance import validate_execution
 
 ROOT = SCRIPT_DIR.parent
 DEFAULT_MANIFEST = ROOT / "profiles" / "translation-source.v1.json"
-DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v9.json"
-DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v7.schema.json"
+DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v10.json"
+DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v8.schema.json"
 FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 RUNTIME_ROOT = ROOT / ".runtime" / "translation"
 PROPOSAL_ROOT = ROOT / "content" / "translation-proposals"
 PUBLIC_PROPOSAL_ROOT = ROOT / "content" / "public-proposals"
 REPOSITORY = "yaqub0r/al-isabah"
 TOOL_VERSION = "3.0.0"
-FORMULA_REGISTRY_VERSION = "1.6.0"
+FORMULA_REGISTRY_VERSION = "1.7.0"
 SEMANTIC_AUDIT_VERSION = "1.0.0"
 STAGE_PROVENANCE_VERSION = "3.0.0"
 PACKET_SCHEMA_VERSION = "3.0.0"
@@ -182,6 +182,30 @@ def registered_occurrences(
     text: str, field: str, *, include_contextual: bool = False
 ) -> list[dict[str, Any]]:
     """Return non-overlapping formula occurrences, preferring longer forms."""
+    contextual_spans: tuple[tuple[int, int], ...] = ()
+    if not include_contextual:
+        if field == "target":
+            contextual_values = {
+                str(value)
+                for rule in FORMULA_RULES
+                if str(rule["source"]) in CONTEXTUAL_FORMULA_SOURCES
+                for value in (rule["target"], rule["expandedArabic"])
+            }
+        else:
+            contextual_values = {
+                str(rule["source"])
+                for rule in FORMULA_RULES
+                if str(rule["source"]) in CONTEXTUAL_FORMULA_SOURCES
+            }
+        contextual_pattern = re.compile(
+            "|".join(
+                re.escape(value)
+                for value in sorted(contextual_values, key=len, reverse=True)
+            )
+        )
+        contextual_spans = tuple(
+            match.span() for match in contextual_pattern.finditer(text)
+        )
     rules = tuple(
         rule
         for rule in FORMULA_RULES
@@ -205,6 +229,11 @@ def registered_occurrences(
     pattern = re.compile("|".join(re.escape(value) for value in values))
     occurrences: list[dict[str, Any]] = []
     for match in pattern.finditer(text):
+        if any(
+            start <= match.start() and match.end() <= end
+            for start, end in contextual_spans
+        ):
+            continue
         value = match.group(0)
         if field == "target":
             rule = next(
@@ -2396,7 +2425,7 @@ def load_issue(number: int, path: Path | None = None) -> dict[str, Any]:
 
 def policy_snapshot(policy_path: Path) -> dict[str, Any]:
     policy = load_json(policy_path)
-    if policy.get("schema") != "al-isabah.local-policy-binding.v9":
+    if policy.get("schema") != "al-isabah.local-policy-binding.v10":
         raise WorkflowError("policy binding has an unexpected schema")
     authority = policy.get("authority", {})
     if authority.get("repository") != "https://github.com/yaqub0r/al-isabah":
@@ -2420,7 +2449,7 @@ def policy_snapshot(policy_path: Path) -> dict[str, Any]:
         if canonical_text_sha256(path) != contract.get("sha256"):
             raise WorkflowError(f"policy binding hash is stale: {contract.get('id')}")
     return {
-        "bindingPath": "compliance/policy-binding.v9.json",
+        "bindingPath": "compliance/policy-binding.v10.json",
         "bindingSha256": canonical_text_sha256(policy_path),
         "contracts": contracts,
     }
@@ -3068,7 +3097,7 @@ def repair_operation_owner(
     leaf_fields = {
         "blindTranslation": (
             "blind_translation",
-            {"headingEnglish", "english", "policySha256"},
+            {"headingEnglish", "english", "policySha256", "reasoning"},
             "text",
         ),
         "independentCritique": (
@@ -3209,8 +3238,10 @@ def repaired_target_stages(
                 continue
             if operation.get("valueKind") != "text":
                 continue
-            if str(operation.get("fieldPath", "")).endswith(".policySha256"):
-                # This changes a stage binding and its content hash, not the
+            if str(operation.get("fieldPath", "")).endswith(
+                (".policySha256", ".reasoning")
+            ):
+                # These change stage metadata and its content hash, not the
                 # English candidate governed by the semantic audit.
                 continue
             try:
@@ -4371,8 +4402,20 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
                 errors.append(f"{prefix}: blind translation used a stale policy")
             continue
 
+        decision = (
+            title_decisions.get(entry.get("sourceUnitId"))
+            or title_decisions.get(entry.get("sourceEntryNumber"))
+            if manifest.get("status") != "test-fixture"
+            else None
+        )
+        title_only = (
+            isinstance(decision, dict)
+            and decision.get("bodyOpeningKind") == "none"
+        )
         blind = entry.get("blindTranslation", {})
-        if blind.get("status") != "complete" or not blind.get("english"):
+        if blind.get("status") != "complete" or (
+            not blind.get("english") and not title_only
+        ):
             errors.append(f"{prefix}: blind translation is incomplete")
         if not all(blind.get(field) for field in ("runId", "model", "reasoning")):
             errors.append(f"{prefix}: blind translation provenance is incomplete")
@@ -4409,12 +4452,6 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
         )
 
         adjudication = entry.get("adjudication", {})
-        decision = (
-            title_decisions.get(entry.get("sourceUnitId"))
-            or title_decisions.get(entry.get("sourceEntryNumber"))
-            if manifest.get("status") != "test-fixture"
-            else None
-        )
         if adjudication.get("status") != "complete" or not adjudication.get("english"):
             errors.append(f"{prefix}: adjudication is incomplete")
         if not isinstance(adjudication.get("decisions"), list):

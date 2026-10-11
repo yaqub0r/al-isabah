@@ -35,19 +35,19 @@ class EntryTitleContractTests(unittest.TestCase):
             11445, 11446, 11449, 11451, 11454, 11458, 11459, 11473,
             11474, 11476,
         }
-        expected = historical | set(range(1538, 7762))
+        expected = historical | set(range(1538, 9484))
         expected.remove(7052)
         self.assertEqual(numbers, expected)
-        self.assertEqual(len(self.profile["decisions"]), 6243)
+        self.assertEqual(len(self.profile["decisions"]), 7965)
 
     def test_successor_preserves_all_previous_decisions(self) -> None:
-        previous = MODULE.load(ROOT / "profiles" / "entry-title-decisions.v7.json")
+        previous = MODULE.load(ROOT / "profiles" / "entry-title-decisions.v8.json")
         split = len(previous["decisions"])
         self.assertEqual(self.profile["decisions"][:split], previous["decisions"])
         added = self.profile["decisions"][split:]
         self.assertEqual(
             [item["sourceUnitId"] for item in added],
-            [f"openiti-5835c183-unit-{ordinal:06d}" for ordinal in range(6159, 7763)],
+            [f"openiti-5835c183-unit-{ordinal:06d}" for ordinal in range(7763, 9485)],
         )
         self.assertTrue(all("editorialSupply" not in item for item in added))
         self.assertTrue(all("sourceRawSha256" in item for item in added))
@@ -308,7 +308,7 @@ class EntryTitleContractTests(unittest.TestCase):
 
     def test_entry_outside_governed_ranges_is_rejected(self) -> None:
         with self.assertRaisesRegex(ValueError, "lacks a governed bilingual"):
-            MODULE.decision_for_entry(self.profile, 7762)
+            MODULE.decision_for_entry(self.profile, 9484)
 
     def test_repeated_printed_numbers_resolve_only_by_source_unit(self) -> None:
         for number, ordinals in ((6986, (6986, 6987)), (7760, (7760, 7761))):
@@ -337,6 +337,17 @@ class EntryTitleContractTests(unittest.TestCase):
             decision["sourceRawSha256"],
             "fa3cc474d223425554535518331a8e9d7406089e64ea728453049bdf784c4c1b",
         )
+
+    def test_volume6_title_only_decisions_are_source_bound(self) -> None:
+        for ordinal in (8282, 8357, 9010):
+            with self.subTest(ordinal=ordinal):
+                decision = MODULE.decision_for_entry(
+                    self.profile,
+                    ordinal - 1,
+                    f"openiti-5835c183-unit-{ordinal:06d}",
+                )
+                self.assertEqual(decision["bodyOpeningKind"], "none")
+                self.assertEqual(decision["bodyOpening"], {"ar": "", "en": ""})
 
 
 if __name__ == "__main__":

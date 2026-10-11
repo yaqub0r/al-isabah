@@ -1,7 +1,7 @@
 {
   "schema": "al-isabah.translation-coverage.v1",
   "schema_version": "1.1.0",
-  "status_id": "translation-coverage-2026-09-28",
+  "status_id": "translation-coverage-2026-10-11",
   "work_id": "ibn-hajar-al-isabah",
   "policy_binding": "compliance/policy-binding.v2.json",
   "semantics": {
@@ -297,6 +297,56 @@
         "management_state": "ongoing",
         "reviewed_units": 0,
         "unreviewed_units": 1604
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "issue-0091-volume-06",
+      "scope_kind": "cohort",
+      "label": "Issue 91 — Volume 6 (7763–9484)",
+      "volume": 6,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 1722,
+        "translated_units": 1722,
+        "remaining_agent_units": 0,
+        "basis": "Machine-ready full-volume proposal and bilingual review; external evidence submission and current distribution admission remain pending. This cohort overlaps the Volume 6 view and is not additive to it.",
+        "evidence": {
+          "source_register_artifact": "issue-0091-public-proposal-v1",
+          "sha256": "298e3e108bd08105aecc1a66fc3641b622c017ce5c64ab926b0b7472e7001314"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 1722
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "volume-06",
+      "scope_kind": "volume",
+      "label": "Volume 6",
+      "volume": 6,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 1722,
+        "translated_units": 1722,
+        "remaining_agent_units": 0,
+        "basis": "Source ordinals 7763–9484 are complete in Issue 91. The volume view includes the overlapping Issue 91 cohort; cohort and volume counts must not be added. External evidence submission and current distribution admission remain pending.",
+        "evidence": {
+          "source_register_artifact": "issue-0091-public-proposal-v1",
+          "sha256": "298e3e108bd08105aecc1a66fc3641b622c017ce5c64ab926b0b7472e7001314"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 1722
       },
       "workflow_conformance": "current",
       "public_working_status": "blocked",

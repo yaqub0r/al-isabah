@@ -50,6 +50,8 @@ ISSUE_0080_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0080.p
 ISSUE_0082_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0082.public-proposal.json"
 ISSUE_0084_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0084.public-proposal.json"
 ISSUE_0085_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0085.public-proposal.json"
+ISSUE_0091_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0091.public-proposal.json"
+ISSUE_0091_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0091.public-review.json"
 ISSUE_0070_RUNTIME_PACKET = (
     ROOT / ".runtime" / "translation" / "packets" / "issue-0070-lineage.json"
 )
@@ -77,6 +79,36 @@ class PublicDistributionTests(unittest.TestCase):
         cls.issue_0085_proposal = json.loads(
             ISSUE_0085_PROPOSAL_PATH.read_text(encoding="utf-8")
         )
+        cls.issue_0091_proposal = json.loads(
+            ISSUE_0091_PROPOSAL_PATH.read_text(encoding="utf-8")
+        )
+
+    def test_issue_91_volume_six_proposal_and_review_are_current(self):
+        proposal = self.issue_0091_proposal
+        records = proposal["records"]
+        anonymous = next(record for record in records if record["sourceOrdinal"] == 8582)
+
+        self.assertEqual(PROPOSAL_VALIDATOR.validate(ISSUE_0091_PROPOSAL_PATH), [])
+        self.assertEqual(
+            REVIEW.canonical_json(REVIEW.review(ISSUE_0091_PROPOSAL_PATH)),
+            ISSUE_0091_REVIEW_PATH.read_bytes(),
+        )
+        self.assertEqual(len(records), 1722)
+        self.assertEqual(records[0]["sourceOrdinal"], 7763)
+        self.assertEqual(records[-1]["sourceOrdinal"], 9484)
+        self.assertEqual(proposal["review"]["humanReviewed"], 0)
+        self.assertEqual(proposal["review"]["humanUnreviewed"], 1722)
+        self.assertEqual(
+            proposal["entryTitleDecisions"],
+            {
+                "profileId": "entry-title-decisions.v9",
+                "profileSha256": "e929ff952e8ed082bbd724d0fc009deca48cd3073fc6be9fb4095f9f92f147ab",
+                "coveredRecordCount": 1722,
+            },
+        )
+        self.assertEqual(anonymous["title"]["english"], "The Prophet's alms collector")
+        self.assertEqual(anonymous["names"], [])
+        self.assertEqual(proposal["canonicalPromotion"], "blocked")
 
     def test_issue_85_title_profile_binding_distinguishes_repository_and_working_copy_bytes(self):
         proposal = copy.deepcopy(self.issue_0085_proposal)
@@ -875,7 +907,7 @@ class PublicDistributionTests(unittest.TestCase):
         )
         proposal = {
             "entryTitleDecisions": {
-                "profileId": "entry-title-decisions.v8",
+                "profileId": "entry-title-decisions.v9",
                 "profileSha256": PACKET_PROJECT.title_profile_sha256(
                     PACKET_PROJECT.ENTRY_TITLE_PROFILE
                 ),
@@ -1023,6 +1055,57 @@ class PublicDistributionTests(unittest.TestCase):
         self.assertEqual(
             projected["id"], "openiti-synthetic-unit-000001-name-001"
         )
+
+    def test_packet_projection_allows_anonymous_profile_titled_entry(self):
+        packet = {
+            "workId": "ibn-hajar-al-isabah",
+            "packetId": "synthetic-anonymous-packet",
+            "authority": {
+                "commit": "a" * 40,
+                "sha256": "b" * 64,
+                "license": {
+                    "spdx": "CC-BY-NC-4.0",
+                    "url": "https://example.test/license",
+                    "attribution": "Synthetic test authority",
+                },
+            },
+            "policy": {"bindingSha256": "c" * 64},
+        }
+        entry = {
+            "sourceOrdinal": 8582,
+            "sourceEntryNumber": 8581,
+            "sourceUnitId": "openiti-synthetic-unit-008582",
+            "canonicalEntryId": None,
+            "source": {
+                "headingArabic": "مصدق النبي ذكره المؤلف",
+                "arabic": "مصدق النبي ذكره المؤلف",
+                "rawSha256": "d" * 64,
+                "locations": [{"volume": 6, "page": 360}],
+                "precedingSegments": [],
+            },
+            "precedingTranslations": [],
+            "adjudication": {
+                "english": "The Prophet's alms collector. The author mentioned him."
+            },
+            "names": {"candidates": []},
+            "unresolved": [],
+            "humanReview": {"status": "unreviewed"},
+        }
+        decision = {
+            "sourceEntryNumber": 8581,
+            "sourceUnitId": "openiti-synthetic-unit-008582",
+            "sourceRawSha256": "d" * 64,
+            "bodyOpeningKind": "prose",
+            "title": {"ar": "مصدق النبي", "en": "The Prophet's alms collector"},
+            "bodyOpening": {"ar": "ذكره المؤلف", "en": "The author mentioned him"},
+        }
+
+        record = PACKET_PROJECT.public_record(packet, entry, [], decision)
+
+        self.assertEqual(record["title"]["method"], "profile-decision")
+        self.assertEqual(record["title"]["english"], "The Prophet's alms collector")
+        self.assertEqual(record["names"], [])
+        self.assertEqual(record["english"], "The author mentioned him.")
 
     def test_v2_build_is_deterministic_and_consumer_compatible(self):
         with tempfile.TemporaryDirectory() as temp:

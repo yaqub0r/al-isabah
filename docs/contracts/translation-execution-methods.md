@@ -144,3 +144,12 @@ packet, shard, tool and stage-provenance data remain version 3.0.0. Registry v2
 and the approved execution method remain unchanged. Reference v8, binding v8,
 title profile v7, packet schema v6, prior executions and releases retain their
 immutable pins.
+
+Machine reference v10.0.0 and policy binding v10 succeed v9 for Issue 91's
+additive Volume 6 source-unit-keyed title profile and exact occurrence-level
+coverage of Volume 6 devotional formulas. Formula registry v1.7.0 appends the
+reviewed exact source forms without changing earlier entries. Packet-schema
+document v8 hard-pins the v10 binding and registry v1.7.0; packet, shard, tool,
+stage-provenance, execution-registry v2, and approved execution-method versions
+remain unchanged. Reference v9, binding v9, title profile v8, packet schema v7,
+prior executions, proposals, and releases retain their immutable pins.

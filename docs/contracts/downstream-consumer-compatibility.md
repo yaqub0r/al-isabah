@@ -3,7 +3,7 @@
 - **Status:** Active
 - **Issue:** [#45](https://github.com/yaqub0r/al-isabah/issues/45)
 - **Machine reference:**
-  [`translation-governance-reference.v9.json`](translation-governance-reference.v9.json)
+  [`translation-governance-reference.v10.json`](translation-governance-reference.v10.json)
 
 ## Authority and pinning
 
@@ -75,7 +75,27 @@ discovery pins for the completed Issue 82 coverage inventory and its companion
 reference schema. Issue 82 semantic stages remain bound to policy binding v6
 and title profile v5; references v1–v5 remain immutable provenance.
 
-References v5 and v6 use new major versions because each replaces the stable
+Reference v7.0.0 supersedes v6 by exact hash for Issue 84 and binds the additive
+Volume 3 title profile v6, policy binding v7, formula registry 1.3.0 and packet
+schema document v5. Reference v8.0.0 supersedes v7 for Issue 86 and binds the
+additive Volume 4 title profile v7, title-only representation, formula registry
+1.4.0, policy binding v8 and packet schema document v6. Neither transition
+changes packet, shard, tool or stage-provenance data version 3.0.0.
+
+Reference v9.0.0 supersedes v8 by exact hash for Issue 85. It binds the
+source-unit-keyed Volume 5 title profile v8, formula registry 1.6.0, policy
+binding v9 and packet schema document v7 while preserving repeated printed
+numbers and the corrected structural boundary before the Muhammad section.
+
+Reference v10.0.0 supersedes v9 by exact hash for Issue 91. It binds the
+additive Volume 6 title profile v9, formula registry 1.7.0, policy binding v10
+and packet schema document v8. Ordinal 9484 remains one cross-volume entry with
+four distinct preceding terminal structural segments, and the three Volume 6
+title-only units remain explicit. Public-proposal v2, execution registry v2,
+`sol-xhigh-explicit-host-v1`, and packet, shard, tool and stage-provenance data
+version 3.0.0 are unchanged. References v1–v9 remain immutable provenance.
+
+References v5 through v10 use new major versions because each replaces the stable
 machine-reference path and exact active artifact-identity set that a pinned
 consumer must explicitly select. Their unchanged translation, execution, and
 release semantics do not make that consumer discovery transition additive to

@@ -52,6 +52,10 @@ HISTORICAL_POLICY_BINDINGS = {
         "1.3.0",
         "issue-0086-public-proposal-v1",
     ): "9c82594b8d3a857baf54ba112ecf860e8a59b3f378381ab42db3819b1220cf34",
+    (
+        "1.3.0",
+        "issue-0085-public-proposal-v1",
+    ): "ec32ce5933a7f79167f9666b522187fd7e1ea8aacd7c0acce10c1ac269e32ebe",
 }
 PINNED_TITLE_PROFILE_BINDINGS = {
     ("1.2.0", "issue-0070-public-proposal-v1"): {
@@ -78,6 +82,10 @@ PINNED_TITLE_PROFILE_BINDINGS = {
         "profileId": "entry-title-decisions.v8",
         "profileSha256": "fa797cd530a5be7c9be4045c03b35fd08d28aaa75eb9c45b0a1523d2644d8cf9",
     },
+    ("1.3.0", "issue-0091-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v9",
+        "profileSha256": "e929ff952e8ed082bbd724d0fc009deca48cd3073fc6be9fb4095f9f92f147ab",
+    },
 }
 # Issue #85's immutable proposal captured the CRLF working-copy bytes of the
 # v8 title profile before Git normalized that text file to its repository LF
@@ -99,6 +107,7 @@ SOURCE_DERIVED_NAME_ID_PROPOSALS = {
     "issue-0084-public-proposal-v1",
     "issue-0086-public-proposal-v1",
     "issue-0085-public-proposal-v1",
+    "issue-0091-public-proposal-v1",
 }
 ARABIC_SCRIPT_RE = re.compile(
     r"[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff]"
@@ -114,6 +123,10 @@ PUBLIC_PROCESS_RE = re.compile(
 FORMULA_RULES = tuple(
     json.loads(FORMULA_REGISTRY_PATH.read_text(encoding="utf-8"))["entries"]
 )
+# Registry 1.7.0 is append-only. Keep the exact 1.6.0 prefix available so
+# immutable schema-1.3 proposals do not acquire newly detectable formulas.
+FORMULA_V16_ENTRY_COUNT = 68
+FORMULA_V16_RULES = FORMULA_RULES[:FORMULA_V16_ENTRY_COUNT]
 FORMULA_V14_SOURCES = {
     "بسم الله الرحمن الرحيم",
     "صلى الله عليه وسلم واله وسلم",
@@ -160,7 +173,7 @@ FORMULA_V16_SOURCES = {
 }
 LEGACY_FORMULA_RULES = tuple(
     rule
-    for rule in FORMULA_RULES
+    for rule in FORMULA_V16_RULES
     if rule["source"]
     not in FORMULA_V14_SOURCES | FORMULA_V15_SOURCES | FORMULA_V16_SOURCES
 )
@@ -621,6 +634,30 @@ def registered_formula_occurrences(
     include_contextual: bool = False,
 ) -> list[dict[str, Any]]:
     """Return registry-bound non-overlapping formula occurrences in source order."""
+    contextual_spans: tuple[tuple[int, int], ...] = ()
+    if not include_contextual:
+        if field == "target":
+            contextual_values = {
+                str(value)
+                for rule in rules
+                if str(rule["source"]) in CONTEXTUAL_FORMULA_SOURCES
+                for value in (rule["target"], rule["expandedArabic"])
+            }
+        else:
+            contextual_values = {
+                str(rule["source"])
+                for rule in rules
+                if str(rule["source"]) in CONTEXTUAL_FORMULA_SOURCES
+            }
+        contextual_pattern = re.compile(
+            "|".join(
+                re.escape(value)
+                for value in sorted(contextual_values, key=len, reverse=True)
+            )
+        )
+        contextual_spans = tuple(
+            match.span() for match in contextual_pattern.finditer(text)
+        )
     effective_rules = tuple(
         rule
         for rule in rules
@@ -646,6 +683,11 @@ def registered_formula_occurrences(
     pattern = re.compile("|".join(re.escape(value) for value in values))
     occurrences: list[dict[str, Any]] = []
     for match in pattern.finditer(text):
+        if any(
+            start <= match.start() and match.end() <= end
+            for start, end in contextual_spans
+        ):
+            continue
         value = match.group(0)
         if field == "target":
             rule = next(
@@ -1033,9 +1075,15 @@ def validate(
         record_version = "2.1.0" if schema_version == "1.3.0" else "2.0.0"
         if record.get("schemaVersion") != record_version or record.get("kind") != "entry":
             errors.append(safe_error(base, "consumer-contract-mismatch"))
-        formula_rules = (
-            FORMULA_RULES if schema_version == "1.3.0" else LEGACY_FORMULA_RULES
-        )
+        if schema_version == "1.3.0":
+            formula_rules = (
+                FORMULA_V16_RULES
+                if (schema_version, str(proposal_id))
+                in HISTORICAL_POLICY_BINDINGS
+                else FORMULA_RULES
+            )
+        else:
+            formula_rules = LEGACY_FORMULA_RULES
         active_title_decision = (
             active_title_decisions.get(record.get("id"))
             or active_title_decisions.get(record.get("printedEntryNumber"), {})
@@ -1131,7 +1179,7 @@ def validate(
     elif historical_policy_hash is not None:
         policy_hash = historical_policy_hash
     elif schema_version == "1.3.0":
-        successor_policy = ROOT / "compliance" / "policy-binding.v9.json"
+        successor_policy = ROOT / "compliance" / "policy-binding.v10.json"
         policy_hash = (
             sha256_text_file(successor_policy)
             if successor_policy.is_file()

@@ -1093,6 +1093,35 @@ class TranslationWorkflowTests(unittest.TestCase):
             errors,
         )
 
+    def test_machine_ready_allows_null_blind_body_for_governed_title_only_entry(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        entry = packet["entries"][0]
+        entry["blindTranslation"]["english"] = None
+        original_load = MODULE.load_json
+
+        def production_manifest(path):
+            value = original_load(path)
+            if Path(path).resolve() == FIXTURE_MANIFEST.resolve():
+                value = copy.deepcopy(value)
+                value["status"] = "active"
+            return value
+
+        title_only = {
+            entry["sourceUnitId"]: {"bodyOpeningKind": "none"},
+        }
+        with (
+            mock.patch.object(MODULE, "load_json", side_effect=production_manifest),
+            mock.patch.object(
+                MODULE, "active_title_decisions", return_value=title_only
+            ),
+        ):
+            errors = MODULE.validate_packet(packet, machine_ready=True)
+        self.assertFalse(
+            any("blind translation is incomplete" in error for error in errors),
+            errors,
+        )
+
     def test_machine_ready_requires_independent_critique(self):
         packet = self.packet()
         complete_autonomous_stages(packet)
@@ -1958,6 +1987,9 @@ class TranslationWorkflowTests(unittest.TestCase):
         basmala = "بسم الله الرحمن الرحيم"
         self.assertEqual(MODULE.registered_occurrences(basmala, "source"), [])
         self.assertEqual(
+            len(MODULE.registered_occurrences("بسم الله", "source")), 1
+        )
+        self.assertEqual(
             len(
                 MODULE.registered_occurrences(
                     basmala, "source", include_contextual=True
@@ -2275,6 +2307,48 @@ class TranslationWorkflowTests(unittest.TestCase):
                 for error in MODULE.validate_post_run_repair_audits(packet)
             )
         )
+
+    def test_post_run_repair_can_correct_blind_reasoning_metadata(self):
+        packet = self.packet()
+        entry = packet["entries"][0]
+        old_reasoning = "xhigh"
+        new_reasoning = "high"
+        entry["blindTranslation"]["reasoning"] = old_reasoning
+        entry["blindTranslation"]["reasoning"] = new_reasoning
+        path = "$.entries[0].blindTranslation.reasoning"
+        packet["postRunRepairAudits"] = [
+            {
+                "status": "complete",
+                "previousAuditSha256": None,
+                "basePacketSha256": "1" * 64,
+                "artifactSha256": "2" * 64,
+                "runId": "translation-repair-run-1234567890abcdef",
+                "operations": [
+                    {
+                        "repairId": "repair-blind-reasoning-1",
+                        "sourceUnitId": entry["sourceUnitId"],
+                        "segmentId": None,
+                        "recordKind": "entry",
+                        "targetStage": "blind_translation",
+                        "fieldPath": path,
+                        "valueKind": "text",
+                        "oldTextSha256": MODULE.text_sha256(old_reasoning),
+                        "newTextSha256": MODULE.text_sha256(new_reasoning),
+                        "reasons": [
+                            {
+                                "code": "blind-reasoning-metadata",
+                                "explanation": (
+                                    "Correct a blind-stage reasoning-effort field "
+                                    "without changing semantic English."
+                                ),
+                            }
+                        ],
+                    }
+                ],
+            }
+        ]
+        self.assertEqual(MODULE.validate_post_run_repair_audits(packet), [])
+        self.assertEqual(MODULE.repaired_target_stages(packet), {})
 
     def test_cumulative_repairs_chain_and_rebind_historical_stage_evidence(self):
         packet = self.packet()

@@ -143,9 +143,9 @@ class ComplianceTests(unittest.TestCase):
             contracts["entry-title-decisions"],
             {
                 "id": "entry-title-decisions",
-                "path": "profiles/entry-title-decisions.v8.json",
+                "path": "profiles/entry-title-decisions.v9.json",
                 "sha256": MODULE.canonical_text_sha256(
-                    ROOT / "profiles" / "entry-title-decisions.v8.json"
+                    ROOT / "profiles" / "entry-title-decisions.v9.json"
                 ),
             },
         )
@@ -171,7 +171,7 @@ class ComplianceTests(unittest.TestCase):
         )
 
     def test_registry_contains_exact_quoted_prayer_record(self):
-        self.assertEqual(self.formula_registry["registryVersion"], "1.6.0")
+        self.assertEqual(self.formula_registry["registryVersion"], "1.7.0")
         prayer = "اللهم بارك على محمد وعلى آل محمد"
         records = [
             item for item in self.formula_registry["entries"]
@@ -461,6 +461,28 @@ class ComplianceTests(unittest.TestCase):
             self.assertEqual(scope["public_working_status"], "blocked")
             self.assertEqual(scope["canonical_promotion"], "blocked")
             self.assertEqual(scope["human_review"]["unreviewed_units"], 1604)
+        self.assertIn("not additive", cohort["agent_completion"]["basis"])
+        self.assertIn("must not be added", volume["agent_completion"]["basis"])
+        self.assertEqual(self.validate(translation_coverage=coverage), [])
+
+    def test_volume_six_completion_is_full_and_nonadditive(self):
+        coverage = copy.deepcopy(self.translation_coverage)
+        scopes = {scope["scope_id"]: scope for scope in coverage["scopes"]}
+        cohort = scopes["issue-0091-volume-06"]
+        volume = scopes["volume-06"]
+        for scope in (cohort, volume):
+            completion = scope["agent_completion"]
+            self.assertEqual(completion["status"], "agent_complete")
+            self.assertEqual(completion["locked_units"], 1722)
+            self.assertEqual(completion["translated_units"], 1722)
+            self.assertEqual(completion["remaining_agent_units"], 0)
+            self.assertEqual(
+                completion["evidence"]["source_register_artifact"],
+                "issue-0091-public-proposal-v1",
+            )
+            self.assertEqual(scope["public_working_status"], "blocked")
+            self.assertEqual(scope["canonical_promotion"], "blocked")
+            self.assertEqual(scope["human_review"]["unreviewed_units"], 1722)
         self.assertIn("not additive", cohort["agent_completion"]["basis"])
         self.assertIn("must not be added", volume["agent_completion"]["basis"])
         self.assertEqual(self.validate(translation_coverage=coverage), [])

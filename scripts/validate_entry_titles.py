@@ -12,8 +12,9 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROFILE = ROOT / "profiles" / "entry-title-decisions.v8.json"
-HISTORICAL_PROFILE = ROOT / "profiles" / "entry-title-decisions.v7.json"
+PROFILE = ROOT / "profiles" / "entry-title-decisions.v9.json"
+HISTORICAL_PROFILE = ROOT / "profiles" / "entry-title-decisions.v8.json"
+SOURCE_BOUND_PROFILE = ROOT / "profiles" / "entry-title-decisions.v7.json"
 GIT_SHA = re.compile(r"^[0-9a-f]{40}$")
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
 ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -422,11 +423,13 @@ def validate(profile: dict[str, Any]) -> list[str]:
         return errors + ["profile: decisions must be a non-empty list"]
 
     historical_count = 0
+    source_bound_start = 0
     if schema_version == "1.3.0":
         historical = load(HISTORICAL_PROFILE)["decisions"]
         historical_count = len(historical)
+        source_bound_start = len(load(SOURCE_BOUND_PROFILE)["decisions"])
         if decisions[:historical_count] != historical:
-            errors.append("profile: historical v7 decisions must remain unchanged")
+            errors.append("profile: historical v8 decisions must remain unchanged")
 
     seen_numbers: dict[int, list[dict[str, Any]]] = {}
     seen_units: set[str] = set()
@@ -444,7 +447,7 @@ def validate(profile: dict[str, Any]) -> list[str]:
             "bodyOpening",
         }
         title_only = decision.get("bodyOpeningKind") == "none"
-        source_bound = schema_version == "1.3.0" and index >= historical_count
+        source_bound = schema_version == "1.3.0" and index >= source_bound_start
         if source_bound:
             allowed_fields.update({"sourceUnitId", "sourceRawSha256"})
         elif title_only:
@@ -465,7 +468,7 @@ def validate(profile: dict[str, Any]) -> list[str]:
                 errors.append(
                     f"{location}: sourceUnitId must be a pinned source-unit key"
                 )
-            elif int(match.group(1)) != 6159 + index - historical_count:
+            elif int(match.group(1)) != 6159 + index - source_bound_start:
                 errors.append(f"{location}: sourceUnitId must follow source order")
             elif source_unit_id in seen_units:
                 errors.append(f"{location}: duplicate sourceUnitId {source_unit_id}")

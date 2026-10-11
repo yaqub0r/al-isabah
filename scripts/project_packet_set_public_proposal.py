@@ -32,7 +32,7 @@ from validate_entry_titles import (  # noqa: E402
 
 
 INLINE_SECTION = re.compile(r"\s*#~:section:\d*\s*(\([^\n]+\))\s*")
-ENTRY_TITLE_PROFILE = ROOT / "profiles" / "entry-title-decisions.v8.json"
+ENTRY_TITLE_PROFILE = ROOT / "profiles" / "entry-title-decisions.v9.json"
 ENTRY_TITLE_PROFILE_NAME = re.compile(r"^entry-title-decisions\.v[0-9]+\.json$")
 
 
@@ -291,8 +291,6 @@ def public_record(
     inherited_contexts: list[dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     candidates = entry["names"]["candidates"]
-    if not candidates:
-        raise ValueError(f"source ordinal {entry['sourceOrdinal']} has no title candidate")
     contexts = list(inherited_contexts or []) + [
         public_context(segment, translation)
         for segment, translation in zip(

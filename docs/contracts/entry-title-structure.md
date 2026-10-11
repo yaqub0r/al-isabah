@@ -55,7 +55,7 @@ heading or the unsplit adjudicated paragraph.
 ## Decisions and evidence
 
 Book-specific boundary decisions live in the versioned
-[`entry-title-decisions.v8.json`](../../profiles/entry-title-decisions.v8.json)
+[`entry-title-decisions.v9.json`](../../profiles/entry-title-decisions.v9.json)
 profile. Each decision records the pinned source authority and the exact title
 realization in both languages. A consumer may use that profile to build a
 working presentation, but it must not silently expand, shorten, or otherwise
@@ -152,3 +152,12 @@ so the repeated printed numbers 6986 and 7760 remain distinct. Ordinal 7613 is
 the exact title-only unit `مالك بن الجلاح`. Profiles v1–v7 remain immutable;
 Issue 86 keeps its exact v7 binding. These decisions do not assert
 full-biography translation or human scholarly review.
+
+Profile v9 carries forward every v8 decision unchanged and adds the 1,722
+source-only title/body-opening decisions for Volume 6 source ordinals
+7763–9484. Ordinals 8282, 8357, and 9010 are exact title-only units. Ordinal
+9484 remains one entry even though its source unit crosses into Volume 7; its
+four preceding structural segments remain separately owned material and are
+not absorbed into the entry title. Profiles v1–v8 remain immutable, and Issue
+85 keeps its exact v8 binding. These decisions do not assert full-biography
+translation or human scholarly review.
