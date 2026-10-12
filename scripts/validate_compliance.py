@@ -21,7 +21,8 @@ from execution_governance import validate as validate_execution_governance
 ROOT = SCRIPT_DIR.parent
 REGISTER_PATH = ROOT / "compliance" / "source-register.v1.json"
 PROMOTION_PATH = ROOT / "compliance" / "promotions" / "available-data.v2.json"
-POLICY_PATH = ROOT / "compliance" / "policy-binding.v10.json"
+POLICY_PATH = ROOT / "compliance" / "policy-binding.v11.json"
+FROZEN_POLICY_V10_PATH = ROOT / "compliance" / "policy-binding.v10.json"
 FROZEN_POLICY_V9_PATH = ROOT / "compliance" / "policy-binding.v9.json"
 FROZEN_POLICY_V8_PATH = ROOT / "compliance" / "policy-binding.v8.json"
 FROZEN_POLICY_V7_PATH = ROOT / "compliance" / "policy-binding.v7.json"
@@ -42,10 +43,15 @@ FINAL_HALF_PROPOSAL_PATH = (
 )
 FINAL_HALF_SCOPE_ID = "issue-0084-volume-03-final-half"
 QUARTER_PENDING_STATUS = "machine-ready-quarter-proposal-pending-submission-and-distribution-admission"
+VOLUME7_PROPOSAL_PATH = (
+    ROOT / "content" / "public-proposals" / "issue-0096.public-proposal.json"
+)
+VOLUME7_SCOPE_ID = "issue-0096-volume-07"
+VOLUME_PENDING_STATUS = "machine-ready-volume-proposal-pending-submission-and-distribution-admission"
 RETIREMENT_PATH = ROOT / "compliance" / "research-retirement.v1.json"
 RIGHTS_MATRIX_PATH = ROOT / "compliance" / "rights-matrix.al-isabah.v1.json"
 GOVERNANCE_REFERENCE_PATH = (
-    ROOT / "docs" / "contracts" / "translation-governance-reference.v10.json"
+    ROOT / "docs" / "contracts" / "translation-governance-reference.v11.json"
 )
 FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 
@@ -65,7 +71,7 @@ REQUIRED_POLICIES = {
     "translation-quality-workflow": "docs/contracts/translation-quality-workflow.md",
     "al-isabah-translation-profile": "docs/translation-profiles/al-isabah.md",
     "entry-title-structure": "docs/contracts/entry-title-structure.md",
-    "entry-title-decisions": "profiles/entry-title-decisions.v9.json",
+    "entry-title-decisions": "profiles/entry-title-decisions.v10.json",
     "entry-title-decision-schema": "schemas/entry-title-decisions.v3.schema.json",
     "honorific-formula-registry": "profiles/honorific-formulas.v1.json",
     "translation-source-profile": "profiles/translation-source.v1.json",
@@ -74,13 +80,13 @@ REQUIRED_POLICIES = {
     "execution-method-registry-schema": "schemas/execution-method-registry.v2.schema.json",
     "execution-evaluation-schema": "schemas/execution-evaluation.v1.schema.json",
     "runtime-host-evidence-schema": "schemas/runtime-host-evidence.v1.schema.json",
-    "translation-work-packet-schema": "schemas/translation-work-packet.v8.schema.json",
+    "translation-work-packet-schema": "schemas/translation-work-packet.v9.schema.json",
     "translation-agent-workflow": "docs/translation/agent-workflow.md",
-    "local-policy-binding-schema": "compliance/schemas/policy-binding.v10.schema.json",
+    "local-policy-binding-schema": "compliance/schemas/policy-binding.v11.schema.json",
 }
 REQUIRED_GOVERNANCE_ARTIFACTS = {
     "policy-binding": (
-        "compliance/policy-binding.v10.json",
+        "compliance/policy-binding.v11.json",
         "active",
         None,
     ),
@@ -100,9 +106,9 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
         None,
     ),
     "entry-title-decisions": (
-        "profiles/entry-title-decisions.v9.json",
+        "profiles/entry-title-decisions.v10.json",
         "active",
-        "9.0.0",
+        "10.0.0",
     ),
     "entry-title-decision-schema": (
         "schemas/entry-title-decisions.v3.schema.json",
@@ -117,7 +123,7 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
     "honorific-formula-registry": (
         "profiles/honorific-formulas.v1.json",
         "active",
-        "1.7.0",
+        "1.8.0",
     ),
     "translation-coverage": (
         "compliance/translation-coverage.v1.json",
@@ -130,9 +136,9 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
         "1.1.0",
     ),
     "governance-reference-schema": (
-        "schemas/translation-governance-reference.v10.schema.json",
+        "schemas/translation-governance-reference.v11.schema.json",
         "active",
-        "10.0.0",
+        "11.0.0",
     ),
     "promotion-readiness": (
         "compliance/promotions/available-data.v2.json",
@@ -186,9 +192,9 @@ REQUIRED_GOVERNANCE_ARTIFACTS.update({
     "execution-method-registry-schema": ("schemas/execution-method-registry.v2.schema.json", "active", None),
     "execution-evaluation-schema": ("schemas/execution-evaluation.v1.schema.json", "active", None),
     "runtime-host-evidence-schema": ("schemas/runtime-host-evidence.v1.schema.json", "active", None),
-    "translation-work-packet-schema": ("schemas/translation-work-packet.v8.schema.json", "active", "3.0.0"),
+    "translation-work-packet-schema": ("schemas/translation-work-packet.v9.schema.json", "active", "3.0.0"),
     "translation-agent-workflow": ("docs/translation/agent-workflow.md", "active", None),
-    "local-policy-binding-schema": ("compliance/schemas/policy-binding.v10.schema.json", "active", None),
+    "local-policy-binding-schema": ("compliance/schemas/policy-binding.v11.schema.json", "active", None),
 })
 REQUIRED_DEPRECATED_CONSUMER_AUTHORITIES = {
     (
@@ -252,6 +258,7 @@ ACTIVE_POLICY_V6_SHA256 = "faf1078753c33c278098e71d0392a2af1e955320f090660da24ba
 ACTIVE_POLICY_V7_SHA256 = "f75113f0fe08869efa947c19b9a12a38e5a8c9ece972bbf5d8ebecea6ce48810"
 ACTIVE_POLICY_V8_SHA256 = "9c82594b8d3a857baf54ba112ecf860e8a59b3f378381ab42db3819b1220cf34"
 ACTIVE_POLICY_V9_SHA256 = "ec32ce5933a7f79167f9666b522187fd7e1ea8aacd7c0acce10c1ac269e32ebe"
+ACTIVE_POLICY_V10_SHA256 = "4f650a9bd17b730b6c311aba2911df22302db4971f39c094edb85d24a703d005"
 QUARTER_COMPLETIONS = {
     QUARTER_SCOPE_ID: {
         "label": "issue-0080 quarter",
@@ -291,6 +298,22 @@ QUARTER_COMPLETIONS = {
         "policySha256": ACTIVE_POLICY_V7_SHA256,
         "titleProfileId": "entry-title-decisions.v6",
         "titleProfileSha256": "09014c9e78befd5dcd490e1452b91b0ec099982253ec13297e98fc74de41a6e6",
+    },
+    VOLUME7_SCOPE_ID: {
+        "label": "issue-0096 full volume",
+        "artifact": "issue-0096-public-proposal-v1",
+        "proposalId": "issue-0096-public-proposal-v1",
+        "proposalPath": VOLUME7_PROPOSAL_PATH,
+        "start": 9485,
+        "end": 11424,
+        "volume": 7,
+        "schemaVersion": "1.3.0",
+        "pendingStatus": VOLUME_PENDING_STATUS,
+        "structuralSegments": 201,
+        "structuralOwners": 134,
+        "policySha256": "a335f829c16c05dbd8071ccca94f3ae1e2a57eaa1a949926971ca74fcdffc404",
+        "titleProfileId": "entry-title-decisions.v10",
+        "titleProfileSha256": "f99f48ff38a17ebff828580e26547ecdfb277d40dbaee8689b5e48bd4bf1fcfb",
     },
 }
 AGENT_COMPLETE_REQUIREMENTS = [
@@ -408,6 +431,21 @@ REQUIRED_COMPLETED_SCOPES = {
         "workflow_conformance": "current",
         "public_working_status": "blocked",
     },
+    VOLUME7_SCOPE_ID: {
+        "scope_kind": "cohort",
+        "volume": 7,
+        "artifact": "issue-0096-public-proposal-v1",
+        "units": 1940,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
+    "volume-07": {
+        "volume": 7,
+        "artifact": "issue-0096-public-proposal-v1",
+        "units": 1940,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
 }
 REQUIRED_REOPENED_SCOPES = {}
 REQUIRED_PARTIAL_SCOPES = {}
@@ -449,12 +487,14 @@ def _walk(value: Any, location: str = "$") -> list[str]:
 
 def validate_policy(policy: dict[str, Any]) -> list[str]:
     errors: list[str] = []
-    if validate_schema_instance(policy, load_json(ROOT / "compliance/schemas/policy-binding.v10.schema.json")):
+    if validate_schema_instance(policy, load_json(ROOT / "compliance/schemas/policy-binding.v11.schema.json")):
         errors.append("policy: schema validation failed")
-    if policy.get("schema") != "al-isabah.local-policy-binding.v10":
+    if policy.get("schema") != "al-isabah.local-policy-binding.v11":
         errors.append("policy: unexpected schema")
-    if policy.get("supersedes") != "compliance/policy-binding.v9.json":
-        errors.append("policy: v10 must supersede the immutable v9 binding")
+    if policy.get("supersedes") != "compliance/policy-binding.v10.json":
+        errors.append("policy: v11 must supersede the immutable v10 binding")
+    if canonical_text_sha256(FROZEN_POLICY_V10_PATH) != ACTIVE_POLICY_V10_SHA256:
+        errors.append("policy: immutable v10 Issue 91 binding has changed")
     if canonical_text_sha256(FROZEN_POLICY_V9_PATH) != ACTIVE_POLICY_V9_SHA256:
         errors.append("policy: immutable v9 Issue 85 binding has changed")
     if canonical_text_sha256(FROZEN_POLICY_V8_PATH) != ACTIVE_POLICY_V8_SHA256:
@@ -919,6 +959,7 @@ def validate_translation_coverage(
                 QUARTER_SCOPE_ID: QUARTER_PROPOSAL_PATH,
                 SECOND_QUARTER_SCOPE_ID: SECOND_QUARTER_PROPOSAL_PATH,
                 FINAL_HALF_SCOPE_ID: FINAL_HALF_PROPOSAL_PATH,
+                VOLUME7_SCOPE_ID: VOLUME7_PROPOSAL_PATH,
             }[scope_id]
             errors.extend(
                 validate_quarter_completion(quarter, artifacts, runtime_config)
@@ -974,7 +1015,8 @@ def validate_quarter_completion(
         return [f"{prefix} registered evidence is invalid"]
     integrity = artifact.get("integrity", {})
     if (
-        artifact.get("review_status") != QUARTER_PENDING_STATUS
+        artifact.get("review_status")
+        != config.get("pendingStatus", QUARTER_PENDING_STATUS)
         or scope.get("canonical_promotion") != "blocked"
         or integrity.get("public_entries") != config["end"] - config["start"] + 1
         or integrity.get("source_ordinal_start") != config["start"]
@@ -999,13 +1041,13 @@ def validate_quarter_completion(
         return [f"{prefix} title-profile binding is invalid"]
     if (
         proposal.get("proposalId") != config["proposalId"]
-        or proposal.get("schemaVersion") != "1.2.0"
+        or proposal.get("schemaVersion") != config.get("schemaVersion", "1.2.0")
         or proposal_sha != integrity.get("proposal_sha256")
         or not isinstance(records, list)
         or any(not isinstance(record, dict) for record in records)
         or [record.get("sourceOrdinal") for record in records]
         != list(range(config["start"], config["end"] + 1))
-        or any(record.get("volume") != 3 for record in records)
+        or any(record.get("volume") != config.get("volume", 3) for record in records)
         or policy.get("bindingSha256") != config["policySha256"]
         or title_profile.get("profileId") != config["titleProfileId"]
         or title_profile.get("profileSha256") != config["titleProfileSha256"]
@@ -1035,7 +1077,7 @@ def validate_translation_governance(
 ) -> list[str]:
     errors = validate_formula_registry(registry)
     errors.extend(validate_execution_governance())
-    if validate_schema_instance(reference, load_json(ROOT / "schemas/translation-governance-reference.v10.schema.json")):
+    if validate_schema_instance(reference, load_json(ROOT / "schemas/translation-governance-reference.v11.schema.json")):
         errors.append("governance reference: schema validation failed")
     expected_top_level = {
         "schema",
@@ -1050,24 +1092,24 @@ def validate_translation_governance(
         "deprecatedConsumerAuthorities",
     }
     if set(reference) != expected_top_level:
-        errors.append("governance reference: fields do not match the v10 contract")
-    if reference.get("schema") != "al-isabah.translation-governance-reference.v10":
+        errors.append("governance reference: fields do not match the v11 contract")
+    if reference.get("schema") != "al-isabah.translation-governance-reference.v11":
         errors.append("governance reference: unexpected schema")
-    if reference.get("referenceVersion") != "10.0.0":
-        errors.append("governance reference: active discovery requires version 10.0.0")
+    if reference.get("referenceVersion") != "11.0.0":
+        errors.append("governance reference: active discovery requires version 11.0.0")
     if reference.get("supersedes") != {
-        "path": "docs/contracts/translation-governance-reference.v9.json",
-        "referenceVersion": "9.0.0",
-        "sha256": "458e6540a8593fcfa096f9a7081c88c3c4c42a95952a4fe16234e5409aaeb86a",
+        "path": "docs/contracts/translation-governance-reference.v10.json",
+        "referenceVersion": "10.0.0",
+        "sha256": "f42ed5b372f621c95dccd66ba58f405f712287a032f66bd73124c5f1e774fb86",
     }:
-        errors.append("governance reference: immutable v9 supersession binding is incorrect")
-    if canonical_text_sha256(ROOT / "docs/contracts/translation-governance-reference.v9.json") != reference.get("supersedes", {}).get("sha256"):
-        errors.append("governance reference: immutable v9 reference changed")
+        errors.append("governance reference: immutable v10 supersession binding is incorrect")
+    if canonical_text_sha256(ROOT / "docs/contracts/translation-governance-reference.v10.json") != reference.get("supersedes", {}).get("sha256"):
+        errors.append("governance reference: immutable v10 reference changed")
 
     authority = reference.get("authority")
     expected_authority = {
         "repository": "https://github.com/yaqub0r/al-isabah",
-        "repositoryPath": "docs/contracts/translation-governance-reference.v10.json",
+        "repositoryPath": "docs/contracts/translation-governance-reference.v11.json",
         "requiredPin": "immutable-repository-commit",
     }
     if authority != expected_authority:
@@ -1097,7 +1139,7 @@ def validate_translation_governance(
         artifacts[artifact_id] = artifact
 
     if set(artifacts) != set(REQUIRED_GOVERNANCE_ARTIFACTS):
-        errors.append("governance reference: exact v10 artifact set is required")
+        errors.append("governance reference: exact v11 artifact set is required")
     for artifact_id, (path, status, version) in REQUIRED_GOVERNANCE_ARTIFACTS.items():
         artifact = artifacts.get(artifact_id)
         if artifact is None:

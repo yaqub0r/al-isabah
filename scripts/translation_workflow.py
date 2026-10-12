@@ -18,6 +18,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import unicodedata
 import urllib.request
 from urllib.parse import urlparse
 from datetime import datetime, timezone
@@ -34,15 +35,15 @@ from execution_governance import validate_execution
 
 ROOT = SCRIPT_DIR.parent
 DEFAULT_MANIFEST = ROOT / "profiles" / "translation-source.v1.json"
-DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v10.json"
-DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v8.schema.json"
+DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v11.json"
+DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v9.schema.json"
 FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 RUNTIME_ROOT = ROOT / ".runtime" / "translation"
 PROPOSAL_ROOT = ROOT / "content" / "translation-proposals"
 PUBLIC_PROPOSAL_ROOT = ROOT / "content" / "public-proposals"
 REPOSITORY = "yaqub0r/al-isabah"
 TOOL_VERSION = "3.0.0"
-FORMULA_REGISTRY_VERSION = "1.7.0"
+FORMULA_REGISTRY_VERSION = "1.8.0"
 SEMANTIC_AUDIT_VERSION = "1.0.0"
 STAGE_PROVENANCE_VERSION = "3.0.0"
 PACKET_SCHEMA_VERSION = "3.0.0"
@@ -229,6 +230,17 @@ def registered_occurrences(
     pattern = re.compile("|".join(re.escape(value) for value in values))
     occurrences: list[dict[str, Any]] = []
     for match in pattern.finditer(text):
+        before = text[match.start() - 1] if match.start() else ""
+        after = text[match.end()] if match.end() < len(text) else ""
+        if any(
+            character
+            and unicodedata.name(character, "").startswith("ARABIC")
+            and unicodedata.category(character)[0] in {"L", "M"}
+            for character in (before, after)
+        ):
+            # A governed expression must be a complete Arabic token or phrase,
+            # never a substring of a personal name or another lexical word.
+            continue
         if any(
             start <= match.start() and match.end() <= end
             for start, end in contextual_spans
@@ -2425,7 +2437,7 @@ def load_issue(number: int, path: Path | None = None) -> dict[str, Any]:
 
 def policy_snapshot(policy_path: Path) -> dict[str, Any]:
     policy = load_json(policy_path)
-    if policy.get("schema") != "al-isabah.local-policy-binding.v10":
+    if policy.get("schema") != "al-isabah.local-policy-binding.v11":
         raise WorkflowError("policy binding has an unexpected schema")
     authority = policy.get("authority", {})
     if authority.get("repository") != "https://github.com/yaqub0r/al-isabah":
@@ -2449,7 +2461,7 @@ def policy_snapshot(policy_path: Path) -> dict[str, Any]:
         if canonical_text_sha256(path) != contract.get("sha256"):
             raise WorkflowError(f"policy binding hash is stale: {contract.get('id')}")
     return {
-        "bindingPath": "compliance/policy-binding.v10.json",
+        "bindingPath": "compliance/policy-binding.v11.json",
         "bindingSha256": canonical_text_sha256(policy_path),
         "contracts": contracts,
     }
@@ -3264,7 +3276,20 @@ def validate_post_run_repair_audits(packet: dict[str, Any]) -> list[str]:
     last_hash_by_path: dict[str, tuple[str, str]] = {}
     last_audit_index_by_path: dict[str, int] = {}
     last_operation_order_by_path: dict[str, tuple[int, int]] = {}
-    policy_root_audit_indices: set[int] = set()
+    policy_root_audit_indices = {
+        audit_index
+        for audit_index, audit in enumerate(audits, start=1)
+        if isinstance(audit, dict)
+        and any(
+            isinstance(operation, dict)
+            and is_policy_root_repair_operation(operation)
+            for operation in audit.get("operations", [])
+        )
+    }
+    latest_policy_root_audit_index = (
+        max(policy_root_audit_indices) if policy_root_audit_indices else None
+    )
+    policy_root_binding_chain: list[tuple[int, str, str]] = []
     operation_orders = [
         (audit_index, operation_index, str(operation.get("fieldPath")))
         for audit_index, audit in enumerate(audits, start=1)
@@ -3321,7 +3346,6 @@ def validate_post_run_repair_audits(packet: dict[str, Any]) -> list[str]:
             and is_policy_root_repair_operation(operation)
         ]
         if policy_root_operations:
-            policy_root_audit_indices.add(audit_index)
             if len(policy_root_operations) != 1:
                 errors.append(
                     f"{audit_prefix}: policy repair must contain exactly one root operation"
@@ -3352,29 +3376,34 @@ def validate_post_run_repair_audits(packet: dict[str, Any]) -> list[str]:
                 errors.append(f"{audit_prefix}: policy binding hashes are invalid")
             elif old_binding == new_binding:
                 errors.append(f"{audit_prefix}: policy binding repair must change policy")
-            try:
-                expected_policy = policy_snapshot(DEFAULT_POLICY)
-            except WorkflowError as exc:
-                errors.append(f"{audit_prefix}: active policy is invalid: {exc}")
-                expected_policy = None
-            if expected_policy is not None:
-                if packet.get("policy") != expected_policy:
-                    errors.append(
-                        f"{audit_prefix}: repaired policy does not exactly match "
-                        "the active local binding"
-                    )
-                if new_binding != expected_policy.get("bindingSha256"):
-                    errors.append(
-                        f"{audit_prefix}: new policy binding does not match "
-                        "the active local binding"
-                    )
-                if policy_root.get("newValueSha256") != content_sha256(
-                    expected_policy
-                ):
-                    errors.append(
-                        f"{audit_prefix}: new policy object hash does not match "
-                        "the active local binding"
-                    )
+            else:
+                policy_root_binding_chain.append(
+                    (audit_index, str(old_binding), str(new_binding))
+                )
+            if audit_index == latest_policy_root_audit_index:
+                try:
+                    expected_policy = policy_snapshot(DEFAULT_POLICY)
+                except WorkflowError as exc:
+                    errors.append(f"{audit_prefix}: active policy is invalid: {exc}")
+                    expected_policy = None
+                if expected_policy is not None:
+                    if packet.get("policy") != expected_policy:
+                        errors.append(
+                            f"{audit_prefix}: repaired policy does not exactly match "
+                            "the active local binding"
+                        )
+                    if new_binding != expected_policy.get("bindingSha256"):
+                        errors.append(
+                            f"{audit_prefix}: new policy binding does not match "
+                            "the active local binding"
+                        )
+                    if policy_root.get("newValueSha256") != content_sha256(
+                        expected_policy
+                    ):
+                        errors.append(
+                            f"{audit_prefix}: new policy object hash does not match "
+                            "the active local binding"
+                        )
         for operation_index, operation in enumerate(operations, start=1):
             prefix = f"{audit_prefix}, operation {operation_index}"
             if not isinstance(operation, dict):
@@ -3483,6 +3512,7 @@ def validate_post_run_repair_audits(packet: dict[str, Any]) -> list[str]:
                         )
                 if (
                     policy_root_operations
+                    and audit_index == latest_policy_root_audit_index
                     and expected_stage == "blind_translation"
                     and owner["blindTranslation"].get("policySha256") != new_binding
                 ):
@@ -3500,6 +3530,15 @@ def validate_post_run_repair_audits(packet: dict[str, Any]) -> list[str]:
         errors.append("packet: post-run repair run IDs must be globally unique")
     if len(repair_ids) != len(set(repair_ids)):
         errors.append("packet: post-run repair IDs must be globally unique")
+    for (previous_index, _, previous_new), (current_index, current_old, _) in zip(
+        policy_root_binding_chain, policy_root_binding_chain[1:]
+    ):
+        if previous_new != current_old:
+            errors.append(
+                "packet post-run repair audit "
+                f"{current_index}: policy binding succession does not continue "
+                f"audit {previous_index}"
+            )
     for path, (value_kind, expected_hash) in last_hash_by_path.items():
         try:
             current = json_path_value(packet, path)

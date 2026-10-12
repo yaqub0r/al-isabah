@@ -351,6 +351,56 @@
       "workflow_conformance": "current",
       "public_working_status": "blocked",
       "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "issue-0096-volume-07",
+      "scope_kind": "cohort",
+      "label": "Issue 96 — Volume 7 (9485–11424)",
+      "volume": 7,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 1940,
+        "translated_units": 1940,
+        "remaining_agent_units": 0,
+        "basis": "Machine-ready full-volume proposal and bilingual review; external evidence submission and current distribution admission remain pending. This cohort overlaps the Volume 7 view and is not additive to it.",
+        "evidence": {
+          "source_register_artifact": "issue-0096-public-proposal-v1",
+          "sha256": "d7c8fbe0bd06e0e836d3f7167149995d269b17f81e21d09288c26b4d201a7850"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 1940
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "volume-07",
+      "scope_kind": "volume",
+      "label": "Volume 7",
+      "volume": 7,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 1940,
+        "translated_units": 1940,
+        "remaining_agent_units": 0,
+        "basis": "Source ordinals 9485–11424 are complete in Issue 96. The volume view includes the overlapping Issue 96 cohort; cohort and volume counts must not be added. External evidence submission and current distribution admission remain pending.",
+        "evidence": {
+          "source_register_artifact": "issue-0096-public-proposal-v1",
+          "sha256": "d7c8fbe0bd06e0e836d3f7167149995d269b17f81e21d09288c26b4d201a7850"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 1940
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
     }
   ]
 }

@@ -30,14 +30,17 @@ and must not be described as human-approved, canonically promoted,
 publication-eligible, or released.
 
 Issues 80, 82, and 84 contain the three contiguous machine-ready Volume 3
-cohorts; Issue 86 contains Volume 4; Issue 85 contains Volume 5; and Issue 91
-contains the 1,722-record Volume 6 assignment range. Each proposal has a
+cohorts; Issue 86 contains Volume 4; Issue 85 contains Volume 5; Issue 91
+contains the 1,722-record Volume 6 assignment range; and Issue 96 contains the
+1,940-record Volume 7 assignment range. Each proposal has a
 deterministic public review beside it and remains human-unreviewed. These are
 strict local public-safe proposals: external evidence submission, admission to
 the current public-working distribution, canonical promotion, and release all
 remain separately blocked. Issue 91 also preserves ordinal 9484 as one
 cross-volume entry while keeping its four preceding terminal structural
 segments distinct.
+Issue 96 explicitly inherits that validated structural context and owns 201 new
+structural segments across 134 Volume 7 records.
 
 `compliance/publication/issue-0053.release-closure.v1.json` remains the exact
 historical cumulative closure. The current distribution closure is

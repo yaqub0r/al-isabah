@@ -1,6 +1,6 @@
 {
   "schema": "al-isabah.honorific-formula-registry.v1",
-  "registryVersion": "1.7.0",
+  "registryVersion": "1.8.0",
   "contractId": "translation-quality-workflow",
   "profileId": "al-isabah-translation-profile",
   "entries": [
@@ -1389,6 +1389,519 @@
       "grammaticalAgreement": "masculine singular with family and companion inclusion",
       "expandedArabic": "صلى الله على سيدنا محمد وآله وصحبه وسلم تسليما كثيرا آمين",
       "accessibleEnglish": "May God bless our master Muḥammad, his family, and his Companions, and grant abundant peace. Amen."
+    },
+    {
+      "source": "آمنا بالله وكتبه ورسله",
+      "target": "آمنا بالله وكتبه ورسله",
+      "semanticClass": "creedal_confession",
+      "referentScope": "the speakers' belief in Allah, His books, and His messengers",
+      "grammaticalAgreement": "first-person plural",
+      "expandedArabic": "آمنا بالله وكتبه ورسله",
+      "accessibleEnglish": "We believe in Allah, His books, and His messengers."
+    },
+    {
+      "source": "أستغفر الله الذي لا إله إلا هو الحي القيوم وأتوب اليه",
+      "target": "أستغفر الله الذي لا إله إلا هو الحي القيوم وأتوب اليه",
+      "semanticClass": "supplication_istighfar",
+      "referentScope": "the singular speaker seeking forgiveness from Allah and repenting to Him",
+      "grammaticalAgreement": "first-person singular",
+      "expandedArabic": "أستغفر الله الذي لا إله إلا هو الحي القيوم وأتوب اليه",
+      "accessibleEnglish": "I seek forgiveness from Allah, besides whom there is no deity, the Ever-Living, the Sustainer, and I repent to Him."
+    },
+    {
+      "source": "أشهد أن لا إله إلا الله ثم أشهد أن محمدا رسول الله",
+      "target": "أشهد أن لا إله إلا الله ثم أشهد أن محمدا رسول الله",
+      "semanticClass": "creedal_testimony",
+      "referentScope": "the speaker's testimony, ending with Muhammad's messengership",
+      "grammaticalAgreement": "first-person singular; an internal damaged gap is preserved",
+      "expandedArabic": "أشهد أن لا إله إلا الله ثم أشهد أن محمدا رسول الله",
+      "accessibleEnglish": "I bear witness that … then I bear witness that Muhammad is the Messenger of Allah."
+    },
+    {
+      "source": "أشهد ان لا اله إلا الله وأن محمدا رسول الله",
+      "target": "أشهد ان لا اله إلا الله وأن محمدا رسول الله",
+      "semanticClass": "creedal_testimony",
+      "referentScope": "the speaker's testimony to Allah's oneness and Muhammad's messengership",
+      "grammaticalAgreement": "first-person singular",
+      "expandedArabic": "أشهد ان لا اله إلا الله وأن محمدا رسول الله",
+      "accessibleEnglish": "I bear witness that there is no deity but Allah and that Muhammad is the Messenger of Allah."
+    },
+    {
+      "source": "أعوذ بالله من النار",
+      "target": "أعوذ بالله من النار",
+      "semanticClass": "supplication_seeking_refuge",
+      "referentScope": "the singular speaker seeking Allah's protection from the Fire",
+      "grammaticalAgreement": "first-person singular",
+      "expandedArabic": "أعوذ بالله من النار",
+      "accessibleEnglish": "I seek refuge in Allah from the Fire."
+    },
+    {
+      "source": "أنت خلقتنا ونحن عبادك",
+      "target": "أنت خلقتنا ونحن عبادك",
+      "semanticClass": "supplication_funeral",
+      "referentScope": "the praying community addressing Allah about themselves",
+      "grammaticalAgreement": "second-person masculine singular divine addressee; first-person plural speakers",
+      "expandedArabic": "أنت خلقتنا ونحن عبادك",
+      "accessibleEnglish": "You created us, and we are Your servants."
+    },
+    {
+      "source": "إن الله هو السلام وعلى جبريل السلام",
+      "target": "إن الله هو السلام وعلى جبريل السلام",
+      "semanticClass": "honorific_salutation",
+      "referentScope": "Allah as al-Salam and Gabriel as the recipient of peace",
+      "grammaticalAgreement": "masculine singular angelic referent",
+      "expandedArabic": "إن الله هو السلام وعلى جبريل السلام",
+      "accessibleEnglish": "Indeed Allah is Peace, and peace be upon Gabriel."
+    },
+    {
+      "source": "إنا لله",
+      "target": "إنا لله",
+      "semanticClass": "devotional_remembrance",
+      "referentScope": "the speakers' belonging to Allah",
+      "grammaticalAgreement": "first-person plural",
+      "expandedArabic": "إنا لله",
+      "accessibleEnglish": "Indeed, we belong to Allah."
+    },
+    {
+      "source": "الحمد لله",
+      "target": "الحمد لله",
+      "semanticClass": "devotional_praise",
+      "referentScope": "praise directed to Allah",
+      "grammaticalAgreement": "invariable nominal formula",
+      "expandedArabic": "الحمد لله",
+      "accessibleEnglish": "Praise be to Allah."
+    },
+    {
+      "source": "السلام عليك يا رسول الله",
+      "target": "السلام عليك يا رسول الله",
+      "semanticClass": "honorific_salutation",
+      "referentScope": "the Messenger of Allah as the singular saluted referent",
+      "grammaticalAgreement": "second-person masculine singular",
+      "expandedArabic": "السلام عليك يا رسول الله",
+      "accessibleEnglish": "Peace be upon you, O Messenger of Allah."
+    },
+    {
+      "source": "العلم عند الله",
+      "target": "العلم عند الله",
+      "semanticClass": "devotional_epistemic_disclaimer",
+      "referentScope": "Allah as the ultimate possessor of knowledge",
+      "grammaticalAgreement": "invariable nominal formula",
+      "expandedArabic": "العلم عند الله",
+      "accessibleEnglish": "Knowledge rests with Allah."
+    },
+    {
+      "source": "الله ورسوله أعلم",
+      "target": "الله ورسوله أعلم",
+      "semanticClass": "devotional_epistemic_disclaimer",
+      "referentScope": "Allah and His Messenger as the coordinated knowers",
+      "grammaticalAgreement": "coordinated divine and masculine singular prophetic referents",
+      "expandedArabic": "الله ورسوله أعلم",
+      "accessibleEnglish": "Allah and His Messenger know best."
+    },
+    {
+      "source": "اللهم",
+      "target": "اللهم",
+      "semanticClass": "divine_invocation",
+      "referentScope": "Allah as the direct addressee",
+      "grammaticalAgreement": "singular divine vocative",
+      "expandedArabic": "اللهم",
+      "accessibleEnglish": "O Allah."
+    },
+    {
+      "source": "اللهم إني أحب لقاءك فأحبب لقائي",
+      "target": "اللهم إني أحب لقاءك فأحبب لقائي",
+      "semanticClass": "supplication",
+      "referentScope": "Abu Hurayrah addressing Allah about their meeting",
+      "grammaticalAgreement": "first-person masculine singular speaker; singular divine addressee",
+      "expandedArabic": "اللهم إني أحب لقاءك فأحبب لقائي",
+      "accessibleEnglish": "O Allah, I love to meet You, so love to meet me."
+    },
+    {
+      "source": "اللهم ارحم أمي اللهم اغفر لأمي",
+      "target": "اللهم ارحم أمي اللهم اغفر لأمي",
+      "semanticClass": "supplication_for_mercy_and_forgiveness",
+      "referentScope": "the speaker's mother",
+      "grammaticalAgreement": "feminine singular beneficiary",
+      "expandedArabic": "اللهم ارحم أمي اللهم اغفر لأمي",
+      "accessibleEnglish": "O Allah, have mercy on my mother; O Allah, forgive my mother."
+    },
+    {
+      "source": "اللهم اشف أبا هريرة",
+      "target": "اللهم اشف أبا هريرة",
+      "semanticClass": "supplication_for_healing",
+      "referentScope": "Abu Hurayrah as the requested beneficiary",
+      "grammaticalAgreement": "masculine singular beneficiary",
+      "expandedArabic": "اللهم اشف أبا هريرة",
+      "accessibleEnglish": "O Allah, heal Abu Hurayrah."
+    },
+    {
+      "source": "اللهم اغفر لعبد القيس",
+      "target": "اللهم اغفر لعبد القيس",
+      "semanticClass": "supplication_for_forgiveness",
+      "referentScope": "the collective of Abd al-Qays",
+      "grammaticalAgreement": "collective tribal beneficiary",
+      "expandedArabic": "اللهم اغفر لعبد القيس",
+      "accessibleEnglish": "O Allah, forgive Abd al-Qays."
+    },
+    {
+      "source": "اللهم اغفر للأنصار ولأبناء الأنصار ولأبناء أبناء الأنصار",
+      "target": "اللهم اغفر للأنصار ولأبناء الأنصار ولأبناء أبناء الأنصار",
+      "semanticClass": "supplication_for_forgiveness",
+      "referentScope": "the Ansar, their children, and their grandchildren",
+      "grammaticalAgreement": "successive masculine plural collective beneficiaries",
+      "expandedArabic": "اللهم اغفر للأنصار ولأبناء الأنصار ولأبناء أبناء الأنصار",
+      "accessibleEnglish": "O Allah, forgive the Ansar, the children of the Ansar, and the children of their children."
+    },
+    {
+      "source": "اللهم اغفر لي ذنبي وأخسىء شيطاني وفك رهاني",
+      "target": "اللهم اغفر لي ذنبي وأخسىء شيطاني وفك رهاني",
+      "semanticClass": "supplication_for_forgiveness_and_release",
+      "referentScope": "the singular speaker's sin, devil, and pledged burden",
+      "grammaticalAgreement": "first-person singular beneficiary",
+      "expandedArabic": "اللهم اغفر لي ذنبي وأخسىء شيطاني وفك رهاني",
+      "accessibleEnglish": "O Allah, forgive my sin, drive away my devil, and release my pledge."
+    },
+    {
+      "source": "اللهم اهد أم أبي هريرة",
+      "target": "اللهم اهد أم أبي هريرة",
+      "semanticClass": "supplication_for_guidance",
+      "referentScope": "Abu Hurayrah's mother",
+      "grammaticalAgreement": "feminine singular beneficiary",
+      "expandedArabic": "اللهم اهد أم أبي هريرة",
+      "accessibleEnglish": "O Allah, guide Abu Hurayrah's mother."
+    },
+    {
+      "source": "اللهم جمله",
+      "target": "اللهم جمله",
+      "semanticClass": "benedictive_supplication",
+      "referentScope": "Abu Zayd as the beneficiary of beautification",
+      "grammaticalAgreement": "masculine singular beneficiary",
+      "expandedArabic": "اللهم جمله",
+      "accessibleEnglish": "O Allah, beautify him."
+    },
+    {
+      "source": "اللهم رب السماوات السبع وما أظللن ورب الأرضين وما أقللن ورب الشياطين وما أظللن",
+      "target": "اللهم رب السماوات السبع وما أظللن ورب الأرضين وما أقللن ورب الشياطين وما أظللن",
+      "semanticClass": "supplication_divine_lordship",
+      "referentScope": "Allah as Lord of the seven heavens, the earths, and the devils and what they encompass",
+      "grammaticalAgreement": "singular divine addressee; feminine plural relative agreement for the created realms",
+      "expandedArabic": "اللهم رب السماوات السبع وما أظللن ورب الأرضين وما أقللن ورب الشياطين وما أظللن",
+      "accessibleEnglish": "O Allah, Lord of the seven heavens and what they shade, Lord of the earths and what they bear, and Lord of the devils and what they shade."
+    },
+    {
+      "source": "اللهم لا تدركني سنة ستين",
+      "target": "اللهم لا تدركني سنة ستين",
+      "semanticClass": "supplication_for_protection",
+      "referentScope": "Abu Hurayrah asking not to live into the year sixty",
+      "grammaticalAgreement": "first-person masculine singular beneficiary",
+      "expandedArabic": "اللهم لا تدركني سنة ستين",
+      "accessibleEnglish": "O Allah, do not let the year sixty overtake me."
+    },
+    {
+      "source": "اللهم لا ترجعها",
+      "target": "اللهم لا ترجعها",
+      "semanticClass": "supplication",
+      "referentScope": "Abu Hurayrah addressing Allah about the feminine-referenced illness or condition",
+      "grammaticalAgreement": "first-person context with a feminine singular object pronoun",
+      "expandedArabic": "اللهم لا ترجعها",
+      "accessibleEnglish": "O Allah, do not send it back."
+    },
+    {
+      "source": "اللهم نحن عبادك وأنت خلقتنا وأنت ربنا وإليك معادنا",
+      "target": "اللهم نحن عبادك وأنت خلقتنا وأنت ربنا وإليك معادنا",
+      "semanticClass": "supplication_funeral",
+      "referentScope": "the praying community addressing Allah about servitude, creation, lordship, and return",
+      "grammaticalAgreement": "first-person plural speakers; singular divine addressee",
+      "expandedArabic": "اللهم نحن عبادك وأنت خلقتنا وأنت ربنا وإليك معادنا",
+      "accessibleEnglish": "O Allah, we are Your servants; You created us; You are our Lord; and to You is our return."
+    },
+    {
+      "source": "باسم الله صلو صلب خير يعود من أفواهها ولا يضر أحد اكشف الباس رب الناس",
+      "target": "باسم الله صلو صلب خير يعود من أفواهها ولا يضر أحد اكشف الباس رب الناس",
+      "semanticClass": "healing_supplication",
+      "referentScope": "Allah as healer and a person afflicted by the skin eruption",
+      "grammaticalAgreement": "singular divine addressee; singular afflicted beneficiary",
+      "expandedArabic": "باسم الله صلو صلب خير يعود من أفواهها ولا يضر أحد اكشف الباس رب الناس",
+      "accessibleEnglish": "In the name of Allah … remove the affliction, Lord of humankind. The intervening transmitted wording is textually uncertain."
+    },
+    {
+      "source": "رحمك الله",
+      "target": "رحمك الله",
+      "semanticClass": "benedictive_supplication",
+      "referentScope": "Abu Sabra as the person for whom mercy is requested",
+      "grammaticalAgreement": "second-person masculine singular beneficiary",
+      "expandedArabic": "رحمك الله",
+      "accessibleEnglish": "May Allah have mercy on you."
+    },
+    {
+      "source": "رضيت بالله ربا",
+      "target": "رضيت بالله ربا",
+      "semanticClass": "devotional_affirmation",
+      "referentScope": "the singular speaker affirming Allah as Lord",
+      "grammaticalAgreement": "first-person singular",
+      "expandedArabic": "رضيت بالله ربا",
+      "accessibleEnglish": "I am content with Allah as Lord."
+    },
+    {
+      "source": "سبحانك اللهم وبحمدك",
+      "target": "سبحانك اللهم وبحمدك",
+      "semanticClass": "devotional_praise",
+      "referentScope": "Allah as the direct object of glorification and praise",
+      "grammaticalAgreement": "singular divine addressee",
+      "expandedArabic": "سبحانك اللهم وبحمدك",
+      "accessibleEnglish": "Glory be to You, O Allah, and praise be to You."
+    },
+    {
+      "source": "سلام الإله وريحانه",
+      "target": "سلام الإله وريحانه",
+      "semanticClass": "honorific_poetic_salutation",
+      "referentScope": "Abu al-Qasim, the Prophet, as recipient of God's peace and fragrant favor",
+      "grammaticalAgreement": "masculine singular honorific referent",
+      "expandedArabic": "سلام الإله وريحانه",
+      "accessibleEnglish": "God's peace and fragrant favor be upon him."
+    },
+    {
+      "source": "سلام عليك يا رسول الله",
+      "target": "سلام عليك يا رسول الله",
+      "semanticClass": "honorific_salutation",
+      "referentScope": "the Messenger of Allah as the singular saluted referent",
+      "grammaticalAgreement": "second-person masculine singular",
+      "expandedArabic": "سلام عليك يا رسول الله",
+      "accessibleEnglish": "Peace be upon you, O Messenger of Allah."
+    },
+    {
+      "source": "عليك السلام",
+      "target": "عليك السلام",
+      "semanticClass": "salutation",
+      "referentScope": "a single male addressee receiving peace",
+      "grammaticalAgreement": "second-person masculine singular",
+      "expandedArabic": "عليك السلام",
+      "accessibleEnglish": "Upon you be peace."
+    },
+    {
+      "source": "عليك السلام أبا القاسم",
+      "target": "عليك السلام أبا القاسم",
+      "semanticClass": "honorific_salutation",
+      "referentScope": "Abu al-Qasim, the Prophet, as the singular saluted referent",
+      "grammaticalAgreement": "second-person masculine singular",
+      "expandedArabic": "عليك السلام أبا القاسم",
+      "accessibleEnglish": "Upon you be peace, O Abu al-Qasim."
+    },
+    {
+      "source": "غفر الله لعمر",
+      "target": "غفر الله لعمر",
+      "semanticClass": "benedictive_supplication",
+      "referentScope": "Umar as the requested beneficiary of forgiveness",
+      "grammaticalAgreement": "masculine singular beneficiary",
+      "expandedArabic": "غفر الله لعمر",
+      "accessibleEnglish": "May Allah forgive Umar."
+    },
+    {
+      "source": "غفر الله لك",
+      "target": "غفر الله لك",
+      "semanticClass": "benedictive_supplication",
+      "referentScope": "Zaynab bint Jahsh as the requested beneficiary of forgiveness",
+      "grammaticalAgreement": "second-person feminine singular beneficiary in context",
+      "expandedArabic": "غفر الله لك",
+      "accessibleEnglish": "May Allah forgive you."
+    },
+    {
+      "source": "قبحهما الله",
+      "target": "قبحهما الله",
+      "semanticClass": "imprecatory_supplication",
+      "referentScope": "the two absent travelers as objects of the imprecation",
+      "grammaticalAgreement": "dual beneficiaries or targets",
+      "expandedArabic": "قبحهما الله",
+      "accessibleEnglish": "May Allah disfigure them both."
+    },
+    {
+      "source": "لا حول ولا قوة إلا بالله",
+      "target": "لا حول ولا قوة إلا بالله",
+      "semanticClass": "devotional_remembrance",
+      "referentScope": "all power and might attributed exclusively to Allah",
+      "grammaticalAgreement": "invariable nominal formula",
+      "expandedArabic": "لا حول ولا قوة إلا بالله",
+      "accessibleEnglish": "There is no power and no might except through Allah."
+    },
+    {
+      "source": "لبيك اللهم لبيك",
+      "target": "لبيك اللهم لبيك",
+      "semanticClass": "pilgrimage_talbiyah",
+      "referentScope": "the pilgrim responding to Allah",
+      "grammaticalAgreement": "first-person singular speaker; singular divine addressee",
+      "expandedArabic": "لبيك اللهم لبيك",
+      "accessibleEnglish": "At Your service, O Allah, at Your service."
+    },
+    {
+      "source": "نور الله عليك",
+      "target": "نور الله عليك",
+      "semanticClass": "benedictive_supplication",
+      "referentScope": "Tamim as the beneficiary in this world and the Hereafter",
+      "grammaticalAgreement": "second-person masculine singular beneficiary",
+      "expandedArabic": "نور الله عليك",
+      "accessibleEnglish": "May Allah illuminate you."
+    },
+    {
+      "source": "وأني رسول الله",
+      "target": "وأني رسول الله",
+      "semanticClass": "creedal_testimony",
+      "referentScope": "Muhammad's messengership as the proposition affirmed in the testimony",
+      "grammaticalAgreement": "first-person masculine singular within the Prophet's letter",
+      "expandedArabic": "وأني رسول الله",
+      "accessibleEnglish": "And that I am the Messenger of Allah."
+    },
+    {
+      "source": "والله الموعد",
+      "target": "والله الموعد",
+      "semanticClass": "devotional_appeal_to_judgment",
+      "referentScope": "Allah as the appointed final meeting and arbiter",
+      "grammaticalAgreement": "singular divine referent",
+      "expandedArabic": "والله الموعد",
+      "accessibleEnglish": "Allah is the appointed meeting and arbiter."
+    },
+    {
+      "source": "والله يهدي من يشاء",
+      "target": "والله يهدي من يشاء",
+      "semanticClass": "devotional_coda",
+      "referentScope": "Allah as the one who guides whom He wills",
+      "grammaticalAgreement": "masculine singular divine subject",
+      "expandedArabic": "والله يهدي من يشاء",
+      "accessibleEnglish": "And Allah guides whom He wills."
+    },
+    {
+      "source": "وحده لا شريك له له الملك وله الحمد يحيى ويميت بيده الخير إليه المصير وهو على كل شيء قدير",
+      "target": "وحده لا شريك له له الملك وله الحمد يحيى ويميت بيده الخير إليه المصير وهو على كل شيء قدير",
+      "semanticClass": "devotional_dhikr",
+      "referentScope": "Allah's uniqueness, sovereignty, praise, life-giving, death-giving, goodness, return, and omnipotence",
+      "grammaticalAgreement": "masculine singular divine referent",
+      "expandedArabic": "وحده لا شريك له له الملك وله الحمد يحيى ويميت بيده الخير إليه المصير وهو على كل شيء قدير",
+      "accessibleEnglish": "Alone, without partner; His is the dominion and His is the praise. He gives life and causes death; goodness is in His hand; to Him is the return; and He has power over all things."
+    },
+    {
+      "source": "وحده لا شريك له وأن محمدا عبده ورسوله",
+      "target": "وحده لا شريك له وأن محمدا عبده ورسوله",
+      "semanticClass": "creedal_testimony",
+      "referentScope": "Allah's uniqueness and Muhammad's servanthood and messengership",
+      "grammaticalAgreement": "singular divine referent and masculine singular prophetic referent",
+      "expandedArabic": "وحده لا شريك له وأن محمدا عبده ورسوله",
+      "accessibleEnglish": "Alone, without partner, and Muhammad is His servant and Messenger."
+    },
+    {
+      "source": "ورحمة الله",
+      "target": "ورحمة الله",
+      "semanticClass": "greeting_benediction",
+      "referentScope": "the plural people greeted as recipients of Allah's mercy",
+      "grammaticalAgreement": "second-person plural scope inherited from السلام عليكم",
+      "expandedArabic": "ورحمة الله",
+      "accessibleEnglish": "And the mercy of Allah."
+    },
+    {
+      "source": "ورحمة الله وبركاته",
+      "target": "ورحمة الله وبركاته",
+      "semanticClass": "greeting_benediction",
+      "referentScope": "the plural people greeted as recipients of Allah's mercy and blessings",
+      "grammaticalAgreement": "second-person plural scope inherited from السلام عليكم",
+      "expandedArabic": "ورحمة الله وبركاته",
+      "accessibleEnglish": "And the mercy of Allah and His blessings."
+    },
+    {
+      "source": "وعليك السلام",
+      "target": "وعليك السلام",
+      "semanticClass": "greeting_response",
+      "referentScope": "Abu Makat as the single male recipient of returned peace",
+      "grammaticalAgreement": "second-person masculine singular",
+      "expandedArabic": "وعليك السلام",
+      "accessibleEnglish": "And upon you be peace."
+    },
+    {
+      "source": "وعليكم السلام",
+      "target": "وعليكم السلام",
+      "semanticClass": "greeting_response",
+      "referentScope": "the plural people receiving the returned greeting",
+      "grammaticalAgreement": "second-person plural",
+      "expandedArabic": "وعليكم السلام",
+      "accessibleEnglish": "And upon you all be peace."
+    },
+    {
+      "source": "السلام عليكم يا أهل القبور من المسلمين أنتم لنا سلف ونحن لكم تبع وإنا إن شاء الله بكم لاحقون",
+      "target": "السلام عليكم يا أهل القبور من المسلمين أنتم لنا سلف ونحن لكم تبع وإنا إن شاء الله بكم لاحقون",
+      "semanticClass": "cemetery_salutation_and_remembrance",
+      "referentScope": "the Muslim dead as plural addressees and the living speakers as their followers",
+      "grammaticalAgreement": "second-person plural addressees; first-person plural speakers",
+      "expandedArabic": "السلام عليكم يا أهل القبور من المسلمين أنتم لنا سلف ونحن لكم تبع وإنا إن شاء الله بكم لاحقون",
+      "accessibleEnglish": "O Muslim inhabitants of the graves, you have gone before us, we follow after you, and we will surely join you."
+    },
+    {
+      "source": "يا ودود يا ذا العرش المجيد يا فعالا لما يريد أسألك بعزتك التي لا ترام وملكك الذي لا يضام وبنورك الذي ملأ أركان عرشك أن تكفيني شر هذا اللص يا مغيث أغثني",
+      "target": "يا ودود يا ذا العرش المجيد يا فعالا لما يريد أسألك بعزتك التي لا ترام وملكك الذي لا يضام وبنورك الذي ملأ أركان عرشك أن تكفيني شر هذا اللص يا مغيث أغثني",
+      "semanticClass": "supplication_for_deliverance",
+      "referentScope": "Allah invoked by divine names to deliver the singular speaker from the robber",
+      "grammaticalAgreement": "first-person singular speaker; singular divine addressee; masculine singular robber",
+      "expandedArabic": "يا ودود يا ذا العرش المجيد يا فعالا لما يريد أسألك بعزتك التي لا ترام وملكك الذي لا يضام وبنورك الذي ملأ أركان عرشك أن تكفيني شر هذا اللص يا مغيث أغثني",
+      "accessibleEnglish": "O Loving One, O Possessor of the Glorious Throne, O Doer of whatever He wills, I ask You by Your unassailable might, Your invincible dominion, and Your light that fills the pillars of Your Throne to protect me from this robber's evil. O Rescuer, rescue me."
+    },
+    {
+      "source": "يرحم الله أبا ذر",
+      "target": "يرحم الله أبا ذر",
+      "semanticClass": "benedictive_supplication",
+      "referentScope": "Abu Dharr as the requested beneficiary of mercy",
+      "grammaticalAgreement": "masculine singular beneficiary",
+      "expandedArabic": "يرحم الله أبا ذر",
+      "accessibleEnglish": "May Allah have mercy on Abu Dharr."
+    },
+    {
+      "source": "فالحمد لله",
+      "target": "فالحمد لله",
+      "semanticClass": "devotional_praise",
+      "referentScope": "praise directed to Allah",
+      "grammaticalAgreement": "invariable nominal formula with prefixed consecutive conjunction",
+      "expandedArabic": "فالحمد لله",
+      "accessibleEnglish": "Then praise be to Allah."
+    },
+    {
+      "source": "فلا حول ولا قوة إلا بالله",
+      "target": "فلا حول ولا قوة إلا بالله",
+      "semanticClass": "devotional_remembrance",
+      "referentScope": "all power and might attributed exclusively to Allah",
+      "grammaticalAgreement": "invariable nominal formula with prefixed consecutive conjunction",
+      "expandedArabic": "فلا حول ولا قوة إلا بالله",
+      "accessibleEnglish": "Then there is no power and no might except through Allah."
+    },
+    {
+      "source": "والعلم عند الله",
+      "target": "والعلم عند الله",
+      "semanticClass": "devotional_epistemic_disclaimer",
+      "referentScope": "Allah as the ultimate possessor of knowledge",
+      "grammaticalAgreement": "invariable nominal formula with prefixed conjunction",
+      "expandedArabic": "والعلم عند الله",
+      "accessibleEnglish": "And knowledge rests with Allah."
+    },
+    {
+      "source": "والحمد لله",
+      "target": "والحمد لله",
+      "semanticClass": "devotional_praise",
+      "referentScope": "praise directed to Allah",
+      "grammaticalAgreement": "invariable nominal formula with prefixed conjunction",
+      "expandedArabic": "والحمد لله",
+      "accessibleEnglish": "And praise be to Allah."
+    },
+    {
+      "source": "ولا إله إلا الله",
+      "target": "ولا إله إلا الله",
+      "semanticClass": "declaration_of_divine_unity",
+      "referentScope": "Allah as the sole deity",
+      "grammaticalAgreement": "invariable nominal formula with prefixed conjunction",
+      "expandedArabic": "ولا إله إلا الله",
+      "accessibleEnglish": "And there is no deity except Allah."
+    },
+    {
+      "source": "والله أكبر",
+      "target": "والله أكبر",
+      "semanticClass": "takbir",
+      "referentScope": "Allah as greater than all else",
+      "grammaticalAgreement": "invariable nominal formula with prefixed conjunction",
+      "expandedArabic": "والله أكبر",
+      "accessibleEnglish": "And Allah is greatest."
     }
   ]
 }

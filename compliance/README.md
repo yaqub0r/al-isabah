@@ -18,8 +18,8 @@ The policy binding is repository-local. It integrity-pins:
 - `translation-source-profile`.
 
 The active binding, repository-relative paths, and canonical UTF-8/LF SHA-256
-digests are recorded in [`policy-binding.v10.json`](policy-binding.v10.json).
-Versions 1 through 9 remain byte-stable under their original governance pins.
+digests are recorded in [`policy-binding.v11.json`](policy-binding.v11.json).
+Versions 1 through 10 remain byte-stable under their original governance pins.
 Validation fails if a required policy file is missing, changed without review,
 resolves outside the repository, or names another repository as its authority.
 

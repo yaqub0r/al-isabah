@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import unicodedata
 from pathlib import Path
 from typing import Any
 
@@ -56,6 +57,10 @@ HISTORICAL_POLICY_BINDINGS = {
         "1.3.0",
         "issue-0085-public-proposal-v1",
     ): "ec32ce5933a7f79167f9666b522187fd7e1ea8aacd7c0acce10c1ac269e32ebe",
+    (
+        "1.3.0",
+        "issue-0091-public-proposal-v1",
+    ): "4f650a9bd17b730b6c311aba2911df22302db4971f39c094edb85d24a703d005",
 }
 PINNED_TITLE_PROFILE_BINDINGS = {
     ("1.2.0", "issue-0070-public-proposal-v1"): {
@@ -86,6 +91,10 @@ PINNED_TITLE_PROFILE_BINDINGS = {
         "profileId": "entry-title-decisions.v9",
         "profileSha256": "e929ff952e8ed082bbd724d0fc009deca48cd3073fc6be9fb4095f9f92f147ab",
     },
+    ("1.3.0", "issue-0096-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v10",
+        "profileSha256": "f99f48ff38a17ebff828580e26547ecdfb277d40dbaee8689b5e48bd4bf1fcfb",
+    },
 }
 # Issue #85's immutable proposal captured the CRLF working-copy bytes of the
 # v8 title profile before Git normalized that text file to its repository LF
@@ -108,6 +117,7 @@ SOURCE_DERIVED_NAME_ID_PROPOSALS = {
     "issue-0086-public-proposal-v1",
     "issue-0085-public-proposal-v1",
     "issue-0091-public-proposal-v1",
+    "issue-0096-public-proposal-v1",
 }
 ARABIC_SCRIPT_RE = re.compile(
     r"[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff]"
@@ -127,6 +137,8 @@ FORMULA_RULES = tuple(
 # immutable schema-1.3 proposals do not acquire newly detectable formulas.
 FORMULA_V16_ENTRY_COUNT = 68
 FORMULA_V16_RULES = FORMULA_RULES[:FORMULA_V16_ENTRY_COUNT]
+FORMULA_V17_ENTRY_COUNT = 154
+FORMULA_V17_RULES = FORMULA_RULES[:FORMULA_V17_ENTRY_COUNT]
 FORMULA_V14_SOURCES = {
     "بسم الله الرحمن الرحيم",
     "صلى الله عليه وسلم واله وسلم",
@@ -683,6 +695,18 @@ def registered_formula_occurrences(
     pattern = re.compile("|".join(re.escape(value) for value in values))
     occurrences: list[dict[str, Any]] = []
     for match in pattern.finditer(text):
+        before = text[match.start() - 1] if match.start() else ""
+        after = text[match.end()] if match.end() < len(text) else ""
+        if rules is FORMULA_RULES and any(
+            character
+            and unicodedata.name(character, "").startswith("ARABIC")
+            and unicodedata.category(character)[0] in {"L", "M"}
+            for character in (before, after)
+        ):
+            # Keep public projection aligned with packet inventory: a governed
+            # expression is a complete Arabic token or phrase, not a substring
+            # of a prefixed lexical word or personal name.
+            continue
         if any(
             start <= match.start() and match.end() <= end
             for start, end in contextual_spans
@@ -1077,10 +1101,14 @@ def validate(
             errors.append(safe_error(base, "consumer-contract-mismatch"))
         if schema_version == "1.3.0":
             formula_rules = (
-                FORMULA_V16_RULES
-                if (schema_version, str(proposal_id))
-                in HISTORICAL_POLICY_BINDINGS
-                else FORMULA_RULES
+                FORMULA_V17_RULES
+                if proposal_id == "issue-0091-public-proposal-v1"
+                else (
+                    FORMULA_V16_RULES
+                    if (schema_version, str(proposal_id))
+                    in HISTORICAL_POLICY_BINDINGS
+                    else FORMULA_RULES
+                )
             )
         else:
             formula_rules = LEGACY_FORMULA_RULES
@@ -1179,7 +1207,7 @@ def validate(
     elif historical_policy_hash is not None:
         policy_hash = historical_policy_hash
     elif schema_version == "1.3.0":
-        successor_policy = ROOT / "compliance" / "policy-binding.v10.json"
+        successor_policy = ROOT / "compliance" / "policy-binding.v11.json"
         policy_hash = (
             sha256_text_file(successor_policy)
             if successor_policy.is_file()

@@ -705,6 +705,47 @@
         "treat this local proposal as a published release"
       ],
       "review_status": "machine-ready-volume-proposal-pending-submission-and-distribution-admission"
+    },
+    {
+      "id": "issue-0096-public-proposal-v1",
+      "kind": "public-working-bilingual-proposal",
+      "title": "Issue 0096 Volume 7 strict public proposal",
+      "classification": "approved-for-publication",
+      "rights_basis": "Strict allowlisted projection of the newly machine-ready Volume 7 assignment range, source ordinals 9485–11424 and 1,940 biographies. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, exact governed formulas, structural hierarchy and public uncertainty disclosures. The slice explicitly inherits its active structural context from the validated Issue 91 proposal while owning 201 new structural segments across 134 records. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is not evidence of external submission or admission to the current distribution.",
+      "license": {
+        "spdx": "CC-BY-NC-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      "integrity": {
+        "proposal_sha256": "d7c8fbe0bd06e0e836d3f7167149995d269b17f81e21d09288c26b4d201a7850",
+        "public_review_sha256": "f7f66cd19c88df6cf4d4117cdb9937266f65aaadb10891feb79d81ee90ea3af9",
+        "record_projection_sha256": "f8ed91fdfcf2619f51ed7eddabba4981ea6518be9b39620a11ede9899928f9a0",
+        "order_sha256": "44d91551d67b55d47b89793b7819127e5b4afe0d831cabf43fa80da48f9d5b14",
+        "user_facing_sha256": "697008ecf53fb85669cbf967c9a7e01ecfab91c9d9d243ce1814452c23677650",
+        "public_entries": 1940,
+        "source_ordinal_start": 9485,
+        "source_ordinal_end": 11424,
+        "owned_structural_segments": 201,
+        "structural_owners": 134,
+        "execution_policy_binding_sha256": "a335f829c16c05dbd8071ccca94f3ae1e2a57eaa1a949926971ca74fcdffc404",
+        "packet_set_sha256": "4e93317a5412916f136ac1457e66c35e62127ced099ee9dec8fcc67c83a72944",
+        "review_set_sha256": "69401e10a3cf086f3da3438d86315430564663775928fb246c21042cfd7e4763"
+      },
+      "depends_on": [
+        "ibn-hajar-underlying-medieval-work",
+        "openiti-cleaned-arabic-comparison"
+      ],
+      "allowed_actions": [
+        "review the strict public-safe Volume 7 proposal in the issue-scoped change",
+        "reproduce deterministic proposal, review and coverage checks under the approved noncommercial license",
+        "report full Volume 7 agent completion independently of ongoing human review"
+      ],
+      "prohibited_public_actions": [
+        "claim external evidence submission, current distribution admission, canonical promotion, human approval or release",
+        "publish private evidence, detailed findings, witness expression, model traces, source coordinates or operational paths",
+        "treat this local proposal as a published release"
+      ],
+      "review_status": "machine-ready-volume-proposal-pending-submission-and-distribution-admission"
     }
   ]
 }

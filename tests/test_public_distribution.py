@@ -52,6 +52,8 @@ ISSUE_0084_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0084.p
 ISSUE_0085_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0085.public-proposal.json"
 ISSUE_0091_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0091.public-proposal.json"
 ISSUE_0091_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0091.public-review.json"
+ISSUE_0096_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0096.public-proposal.json"
+ISSUE_0096_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0096.public-review.json"
 ISSUE_0070_RUNTIME_PACKET = (
     ROOT / ".runtime" / "translation" / "packets" / "issue-0070-lineage.json"
 )
@@ -82,6 +84,33 @@ class PublicDistributionTests(unittest.TestCase):
         cls.issue_0091_proposal = json.loads(
             ISSUE_0091_PROPOSAL_PATH.read_text(encoding="utf-8")
         )
+        cls.issue_0096_proposal = json.loads(
+            ISSUE_0096_PROPOSAL_PATH.read_text(encoding="utf-8")
+        )
+
+    def test_issue_96_volume_seven_proposal_and_review_are_current(self):
+        proposal = self.issue_0096_proposal
+        records = proposal["records"]
+
+        self.assertEqual(PROPOSAL_VALIDATOR.validate(ISSUE_0096_PROPOSAL_PATH), [])
+        self.assertEqual(
+            REVIEW.canonical_json(REVIEW.review(ISSUE_0096_PROPOSAL_PATH)),
+            ISSUE_0096_REVIEW_PATH.read_bytes(),
+        )
+        self.assertEqual(len(records), 1940)
+        self.assertEqual(records[0]["sourceOrdinal"], 9485)
+        self.assertEqual(records[-1]["sourceOrdinal"], 11424)
+        self.assertEqual(proposal["review"]["humanReviewed"], 0)
+        self.assertEqual(proposal["review"]["humanUnreviewed"], 1940)
+        self.assertEqual(
+            proposal["entryTitleDecisions"],
+            {
+                "profileId": "entry-title-decisions.v10",
+                "profileSha256": "f99f48ff38a17ebff828580e26547ecdfb277d40dbaee8689b5e48bd4bf1fcfb",
+                "coveredRecordCount": 1940,
+            },
+        )
+        self.assertEqual(proposal["canonicalPromotion"], "blocked")
 
     def test_issue_91_volume_six_proposal_and_review_are_current(self):
         proposal = self.issue_0091_proposal
@@ -404,6 +433,27 @@ class PublicDistributionTests(unittest.TestCase):
             "made a garment for the Messenger of Allah صلى الله.", "target"
         )
         self.assertEqual([hit["value"] for hit in truncated], ["صلى الله"])
+
+    def test_public_formula_matching_requires_reviewed_complete_arabic_surfaces(self):
+        for surface in (
+            "فالحمد لله",
+            "فلا حول ولا قوة إلا بالله",
+            "والعلم عند الله",
+            "والحمد لله",
+            "ولا إله إلا الله",
+            "والله أكبر",
+        ):
+            with self.subTest(surface=surface):
+                exact = PROPOSAL_VALIDATOR.registered_formula_occurrences(
+                    surface, "source", include_contextual=True
+                )
+                self.assertEqual([hit["value"] for hit in exact], [surface])
+        self.assertEqual(
+            PROPOSAL_VALIDATOR.registered_formula_occurrences(
+                "كالحمد لله", "source", include_contextual=True
+            ),
+            [],
+        )
 
     def test_family_suffix_before_rajulan_is_substantive_text(self):
         observed = "صلى الله عليه وسلم وآله"
@@ -907,7 +957,7 @@ class PublicDistributionTests(unittest.TestCase):
         )
         proposal = {
             "entryTitleDecisions": {
-                "profileId": "entry-title-decisions.v9",
+                "profileId": "entry-title-decisions.v10",
                 "profileSha256": PACKET_PROJECT.title_profile_sha256(
                     PACKET_PROJECT.ENTRY_TITLE_PROFILE
                 ),

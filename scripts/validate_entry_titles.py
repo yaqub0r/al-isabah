@@ -12,9 +12,13 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROFILE = ROOT / "profiles" / "entry-title-decisions.v9.json"
-HISTORICAL_PROFILE = ROOT / "profiles" / "entry-title-decisions.v8.json"
+PROFILE = ROOT / "profiles" / "entry-title-decisions.v10.json"
+HISTORICAL_PROFILE = ROOT / "profiles" / "entry-title-decisions.v9.json"
 SOURCE_BOUND_PROFILE = ROOT / "profiles" / "entry-title-decisions.v7.json"
+SOURCE_BOUND_SUCCESSORS = (
+    ROOT / "profiles" / "entry-title-decisions.v8.json",
+    HISTORICAL_PROFILE,
+)
 GIT_SHA = re.compile(r"^[0-9a-f]{40}$")
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
 ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -425,11 +429,20 @@ def validate(profile: dict[str, Any]) -> list[str]:
     historical_count = 0
     source_bound_start = 0
     if schema_version == "1.3.0":
-        historical = load(HISTORICAL_PROFILE)["decisions"]
+        known_predecessors = [
+            load(SOURCE_BOUND_PROFILE)["decisions"],
+            *(load(path)["decisions"] for path in SOURCE_BOUND_SUCCESSORS),
+        ]
+        eligible = [
+            candidate
+            for candidate in known_predecessors
+            if len(candidate) < len(decisions)
+        ]
+        historical = max(eligible, key=len) if eligible else known_predecessors[0]
         historical_count = len(historical)
         source_bound_start = len(load(SOURCE_BOUND_PROFILE)["decisions"])
         if decisions[:historical_count] != historical:
-            errors.append("profile: historical v8 decisions must remain unchanged")
+            errors.append("profile: immediate historical decisions must remain unchanged")
 
     seen_numbers: dict[int, list[dict[str, Any]]] = {}
     seen_units: set[str] = set()

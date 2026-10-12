@@ -1921,6 +1921,23 @@ class TranslationWorkflowTests(unittest.TestCase):
             ],
         )
 
+    def test_formula_matching_rejects_partial_words_and_ambiguous_bare_salam(self):
+        self.assertEqual(
+            MODULE.registered_occurrences("سلامة بنت الحر", "source"),
+            [],
+        )
+        self.assertEqual(
+            MODULE.registered_occurrences("قال سلام، ثم سكت", "source"),
+            [],
+        )
+        salutation = MODULE.registered_occurrences(
+            "السلام عليك يا رسول الله", "source"
+        )
+        self.assertEqual(salutation[0]["value"], "السلام عليك يا رسول الله")
+        prefixed = MODULE.registered_occurrences("فالحمد لله", "source")
+        self.assertEqual([item["value"] for item in prefixed], ["فالحمد لله"])
+        self.assertEqual(MODULE.registered_occurrences("كالحمد لله", "source"), [])
+
     def test_volume_five_formula_rules_preserve_exact_arabic_wording(self):
         forward = MODULE.registered_occurrences(
             "وسيأتي بيانه في موضعه ان شاء الله تعالى", "source"
@@ -3146,6 +3163,177 @@ class TranslationWorkflowTests(unittest.TestCase):
         self.assertTrue(
             any("changed unaudited semantic stage output" in error for error in errors)
         )
+
+    def test_sequential_policy_root_repairs_preserve_audited_history(self):
+        packet = self.packet()
+        current_policy = copy.deepcopy(packet["policy"])
+        old_policy = copy.deepcopy(current_policy)
+        old_policy["bindingSha256"] = "a" * 64
+        first_run_id = "translation-repair-run-1212121212121212"
+
+        def policy_operations(before_policy, after_policy, run_prefix):
+            operations = [
+                {
+                    "repairId": f"{run_prefix}-policy-root",
+                    "sourceUnitId": None,
+                    "segmentId": None,
+                    "recordKind": "packet",
+                    "targetStage": "policy_binding",
+                    "fieldPath": "$.policy",
+                    "valueKind": "canonical_json",
+                    "oldValueSha256": MODULE.content_sha256(before_policy),
+                    "newValueSha256": MODULE.content_sha256(after_policy),
+                    "oldPolicyBindingSha256": before_policy["bindingSha256"],
+                    "newPolicyBindingSha256": after_policy["bindingSha256"],
+                    "reasons": [
+                        {
+                            "code": "policy-binding-refresh",
+                            "explanation": "Refresh the exact policy-bound packet.",
+                        }
+                    ],
+                }
+            ]
+            for index, (key, path, stage) in enumerate(
+                MODULE.packet_semantic_owner_stage_paths(packet), start=1
+            ):
+                current_stage = MODULE.json_path_value(packet, path)
+                old_stage = copy.deepcopy(current_stage)
+                if stage == "blind_translation":
+                    old_stage["policySha256"] = before_policy["bindingSha256"]
+                else:
+                    old_stage["provenance"]["fingerprint"] = "b" * 64
+                semantic_hash = MODULE.content_sha256(
+                    MODULE.stage_semantic_repair_payload(current_stage, stage)
+                )
+                operations.append(
+                    {
+                        "repairId": f"{run_prefix}-stage-{index}",
+                        "sourceUnitId": key[0],
+                        "segmentId": key[1],
+                        "recordKind": "structural" if key[1] is not None else "entry",
+                        "targetStage": stage,
+                        "fieldPath": path,
+                        "valueKind": "canonical_json",
+                        "oldValueSha256": MODULE.content_sha256(old_stage),
+                        "newValueSha256": MODULE.content_sha256(current_stage),
+                        "oldSemanticValueSha256": semantic_hash,
+                        "newSemanticValueSha256": semantic_hash,
+                        "reasons": [
+                            {
+                                "code": "policy-binding-refresh",
+                                "explanation": "Refresh this exact policy-bound stage.",
+                            }
+                        ],
+                    }
+                )
+            return operations
+
+        first_operations = policy_operations(
+            old_policy, current_policy, "sequential-first"
+        )
+        first_audit = {
+            "status": "complete",
+            "previousAuditSha256": None,
+            "basePacketSha256": "c" * 64,
+            "artifactSha256": "d" * 64,
+            "runId": first_run_id,
+            "operations": first_operations,
+        }
+        packet["postRunRepairAudits"] = [first_audit]
+
+        successor_policy = copy.deepcopy(current_policy)
+        successor_policy["bindingSha256"] = "e" * 64
+        old_stage_values = {
+            path: copy.deepcopy(MODULE.json_path_value(packet, path))
+            for _, path, _ in MODULE.packet_semantic_owner_stage_paths(packet)
+        }
+        packet["policy"] = successor_policy
+        for _, path, stage in MODULE.packet_semantic_owner_stage_paths(packet):
+            stage_value = MODULE.json_path_value(packet, path)
+            if stage == "blind_translation":
+                stage_value["policySha256"] = successor_policy["bindingSha256"]
+            stage_value["provenance"]["fingerprint"] = "f" * 64
+        second_operations = [
+            {
+                "repairId": "sequential-second-policy-root",
+                "sourceUnitId": None,
+                "segmentId": None,
+                "recordKind": "packet",
+                "targetStage": "policy_binding",
+                "fieldPath": "$.policy",
+                "valueKind": "canonical_json",
+                "oldValueSha256": MODULE.content_sha256(current_policy),
+                "newValueSha256": MODULE.content_sha256(successor_policy),
+                "oldPolicyBindingSha256": current_policy["bindingSha256"],
+                "newPolicyBindingSha256": successor_policy["bindingSha256"],
+                "reasons": [
+                    {
+                        "code": "policy-binding-refresh",
+                        "explanation": "Refresh the exact policy-bound packet again.",
+                    }
+                ],
+            }
+        ]
+        for index, (key, path, stage) in enumerate(
+            MODULE.packet_semantic_owner_stage_paths(packet), start=1
+        ):
+            old_stage = old_stage_values[path]
+            current_stage = MODULE.json_path_value(packet, path)
+            semantic_hash = MODULE.content_sha256(
+                MODULE.stage_semantic_repair_payload(current_stage, stage)
+            )
+            self.assertEqual(
+                semantic_hash,
+                MODULE.content_sha256(
+                    MODULE.stage_semantic_repair_payload(old_stage, stage)
+                ),
+            )
+            second_operations.append(
+                {
+                    "repairId": f"sequential-second-stage-{index}",
+                    "sourceUnitId": key[0],
+                    "segmentId": key[1],
+                    "recordKind": "structural" if key[1] is not None else "entry",
+                    "targetStage": stage,
+                    "fieldPath": path,
+                    "valueKind": "canonical_json",
+                    "oldValueSha256": MODULE.content_sha256(old_stage),
+                    "newValueSha256": MODULE.content_sha256(current_stage),
+                    "oldSemanticValueSha256": semantic_hash,
+                    "newSemanticValueSha256": semantic_hash,
+                    "reasons": [
+                        {
+                            "code": "policy-binding-refresh",
+                            "explanation": "Refresh this exact policy-bound stage again.",
+                        }
+                    ],
+                }
+            )
+        packet["postRunRepairAudits"].append(
+            {
+                "status": "complete",
+                "previousAuditSha256": MODULE.content_sha256(first_audit),
+                "basePacketSha256": "1" * 64,
+                "artifactSha256": "2" * 64,
+                "runId": "translation-repair-run-3434343434343434",
+                "operations": second_operations,
+            }
+        )
+
+        with mock.patch.object(
+            MODULE, "policy_snapshot", return_value=successor_policy
+        ):
+            self.assertEqual(MODULE.validate_post_run_repair_audits(packet), [])
+            broken = copy.deepcopy(packet)
+            broken["postRunRepairAudits"][1]["operations"][0][
+                "oldPolicyBindingSha256"
+            ] = "3" * 64
+            self.assertTrue(
+                any(
+                    "policy binding succession does not continue" in error
+                    for error in MODULE.validate_post_run_repair_audits(broken)
+                )
+            )
 
     def test_policy_rebinding_cannot_supersede_unenumerated_whole_stage_terminal(self):
         packet = self.packet()
