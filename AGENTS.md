@@ -1,5 +1,14 @@
 # Repository workflow
 
+## Repository scope
+
+This public repository owns Al-Isabah book information: source and translation
+policy, approved editorial records, provenance, review state, compliance, and
+immutable publication contracts. Downstream applications own their extraction,
+knowledge graphs, admission, orchestration, and application-specific evaluations.
+Keep their implementation and issue tracking outside this repository. Public
+book releases expose only approved publication data through versioned contracts.
+
 ## Realtime voice pronunciation
 
 When conversation context indicates realtime voice, use the original-language
