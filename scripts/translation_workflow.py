@@ -35,15 +35,15 @@ from execution_governance import validate_execution
 
 ROOT = SCRIPT_DIR.parent
 DEFAULT_MANIFEST = ROOT / "profiles" / "translation-source.v1.json"
-DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v11.json"
-DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v9.schema.json"
+DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v12.json"
+DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v10.schema.json"
 FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 RUNTIME_ROOT = ROOT / ".runtime" / "translation"
 PROPOSAL_ROOT = ROOT / "content" / "translation-proposals"
 PUBLIC_PROPOSAL_ROOT = ROOT / "content" / "public-proposals"
 REPOSITORY = "yaqub0r/al-isabah"
 TOOL_VERSION = "3.0.0"
-FORMULA_REGISTRY_VERSION = "1.8.0"
+FORMULA_REGISTRY_VERSION = "1.9.0"
 SEMANTIC_AUDIT_VERSION = "1.0.0"
 STAGE_PROVENANCE_VERSION = "3.0.0"
 PACKET_SCHEMA_VERSION = "3.0.0"
@@ -190,7 +190,11 @@ def registered_occurrences(
                 str(value)
                 for rule in FORMULA_RULES
                 if str(rule["source"]) in CONTEXTUAL_FORMULA_SOURCES
-                for value in (rule["target"], rule["expandedArabic"])
+                for value in (
+                    rule["target"],
+                    rule["source"],
+                    rule["expandedArabic"],
+                )
             }
         else:
             contextual_values = {
@@ -218,7 +222,11 @@ def registered_occurrences(
             {
                 str(value)
                 for rule in rules
-                for value in (rule["target"], rule["expandedArabic"])
+                for value in (
+                    rule["target"],
+                    rule["source"],
+                    rule["expandedArabic"],
+                )
             },
             key=len,
             reverse=True,
@@ -249,10 +257,18 @@ def registered_occurrences(
         value = match.group(0)
         if field == "target":
             rule = next(
-                rule
-                for rule in rules
-                if value in {rule["target"], rule["expandedArabic"]}
+                (item for item in rules if value == item["target"]),
+                None,
             )
+            if rule is None:
+                rule = next(
+                    (item for item in rules if value == item["source"]),
+                    None,
+                )
+            if rule is None:
+                rule = next(
+                    item for item in rules if value == item["expandedArabic"]
+                )
         else:
             rule = next(rule for rule in rules if rule[field] == value)
         end = match.end()
@@ -991,6 +1007,30 @@ def validate_stage_execution(
         return [
             "host runtime: deterministic rebinding must preserve captured host evidence"
         ]
+    rebinding = provenance.get("rebinding")
+    if not isinstance(rebinding, dict):
+        return [
+            "host runtime: deterministic rebinding lacks original execution lineage"
+        ]
+    lineage_errors: list[str] = []
+    if binding.get("runId") != rebinding.get("runId"):
+        lineage_errors.append(
+            "host runtime: preserved execution run does not match rebinding lineage"
+        )
+    if rebinding.get("previousOrigin") == "direct_execution":
+        for binding_field, rebinding_field in (
+            ("inputSha256", "previousInputSha256"),
+            ("outputSha256", "previousOutputSha256"),
+            ("checkpointSha256", "previousFingerprint"),
+        ):
+            if binding.get(binding_field) != rebinding.get(rebinding_field):
+                lineage_errors.append(
+                    "host runtime: preserved execution does not match the original "
+                    "direct checkpoint"
+                )
+                break
+    if lineage_errors:
+        return lineage_errors
     historical = copy.deepcopy(provenance)
     historical["origin"] = "direct_execution"
     for provenance_field, binding_field in (
@@ -2515,7 +2555,7 @@ def load_issue(number: int, path: Path | None = None) -> dict[str, Any]:
 
 def policy_snapshot(policy_path: Path) -> dict[str, Any]:
     policy = load_json(policy_path)
-    if policy.get("schema") != "al-isabah.local-policy-binding.v11":
+    if policy.get("schema") != "al-isabah.local-policy-binding.v12":
         raise WorkflowError("policy binding has an unexpected schema")
     authority = policy.get("authority", {})
     if authority.get("repository") != "https://github.com/yaqub0r/al-isabah":
@@ -2539,7 +2579,7 @@ def policy_snapshot(policy_path: Path) -> dict[str, Any]:
         if canonical_text_sha256(path) != contract.get("sha256"):
             raise WorkflowError(f"policy binding hash is stale: {contract.get('id')}")
     return {
-        "bindingPath": "compliance/policy-binding.v11.json",
+        "bindingPath": "compliance/policy-binding.v12.json",
         "bindingSha256": canonical_text_sha256(policy_path),
         "contracts": contracts,
     }
@@ -4093,7 +4133,7 @@ def merge_entry_shard(packet_path: Path, shard_path: Path) -> int:
             validate_semantic_audit(
                 output.get("independentCritique", {}),
                 target.get("source", {}),
-                None,
+                output.get("blindTranslation", {}).get("headingEnglish"),
                 output.get("blindTranslation", {}).get("english"),
                 prefix,
             )
@@ -4102,7 +4142,7 @@ def merge_entry_shard(packet_path: Path, shard_path: Path) -> int:
             validate_names(
                 output.get("names", {}),
                 target.get("source", {}),
-                None,
+                output.get("adjudication", {}).get("headingEnglish"),
                 output.get("adjudication", {}).get("english"),
                 str(output.get("sourceUnitId")),
                 prefix,
@@ -4554,7 +4594,7 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
             validate_semantic_audit(
                 critique,
                 source,
-                None,
+                blind.get("headingEnglish"),
                 blind.get("english"),
                 prefix,
                 allow_historical_candidate="blind_translation"
@@ -4633,7 +4673,7 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
             validate_names(
                 entry.get("names", {}),
                 source,
-                None,
+                adjudication.get("headingEnglish"),
                 adjudication.get("english"),
                 str(entry.get("sourceUnitId")),
                 prefix,

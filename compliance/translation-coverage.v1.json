@@ -84,21 +84,21 @@
       "volume": 8,
       "agent_completion": {
         "status": "agent_complete",
-        "locked_units": 1550,
-        "translated_units": 1550,
+        "locked_units": 879,
+        "translated_units": 879,
         "remaining_agent_units": 0,
-        "basis": "legacy-machine-validated-volume-draft-with-review-presentation",
+        "basis": "Source ordinals 11425–12303 are complete in Issue 98. This current machine-ready scope supersedes the legacy 1,550-unit private Volume 8 inventory for completion reporting; legacy and current counts must not be added. The volume view includes the overlapping Issue 98 cohort, so cohort and volume counts are likewise not additive. External evidence submission and current distribution admission remain pending.",
         "evidence": {
-          "source_register_artifact": "volume-08-structured-english",
-          "sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+          "source_register_artifact": "issue-0098-public-proposal-v1",
+          "sha256": "8888df7b1a6c3114b2276a6a5efa657a2711071feff1e4a95f7708d6fbb94607"
         }
       },
       "human_review": {
         "management_state": "ongoing",
         "reviewed_units": 0,
-        "unreviewed_units": 1550
+        "unreviewed_units": 879
       },
-      "workflow_conformance": "legacy_audit_required",
+      "workflow_conformance": "current",
       "public_working_status": "blocked",
       "canonical_promotion": "blocked"
     },
@@ -397,6 +397,31 @@
         "management_state": "ongoing",
         "reviewed_units": 0,
         "unreviewed_units": 1940
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "issue-0098-volume-08",
+      "scope_kind": "cohort",
+      "label": "Issue 98 — Volume 8 (11425–12303)",
+      "volume": 8,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 879,
+        "translated_units": 879,
+        "remaining_agent_units": 0,
+        "basis": "Machine-ready full-volume proposal and bilingual review; external evidence submission and current distribution admission remain pending. This current cohort supersedes the legacy 1,550-unit private Volume 8 inventory for completion reporting and overlaps the Volume 8 view; the legacy/current and cohort/volume counts are not additive.",
+        "evidence": {
+          "source_register_artifact": "issue-0098-public-proposal-v1",
+          "sha256": "8888df7b1a6c3114b2276a6a5efa657a2711071feff1e4a95f7708d6fbb94607"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 879
       },
       "workflow_conformance": "current",
       "public_working_status": "blocked",

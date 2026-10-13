@@ -32,7 +32,8 @@ publication-eligible, or released.
 Issues 80, 82, and 84 contain the three contiguous machine-ready Volume 3
 cohorts; Issue 86 contains Volume 4; Issue 85 contains Volume 5; Issue 91
 contains the 1,722-record Volume 6 assignment range; and Issue 96 contains the
-1,940-record Volume 7 assignment range. Each proposal has a
+1,940-record Volume 7 assignment range. Issue 98 contains the 879-record Volume
+8 assignment range. Each proposal has a
 deterministic public review beside it and remains human-unreviewed. These are
 strict local public-safe proposals: external evidence submission, admission to
 the current public-working distribution, canonical promotion, and release all
@@ -41,14 +42,19 @@ cross-volume entry while keeping its four preceding terminal structural
 segments distinct.
 Issue 96 explicitly inherits that validated structural context and owns 201 new
 structural segments across 134 Volume 7 records.
+Issue 98 completes the normal contiguous source range and owns 139 new
+structural segments. It supersedes the earlier private-provisional Volume 8
+handoff for current review, while the preserved historical evidence remains
+outside the public proposal.
 
 `compliance/publication/issue-0053.release-closure.v1.json` remains the exact
 historical cumulative closure. The current distribution closure is
 `compliance/publication/issue-0070.release-closure.v1.json`; it binds the
 governed translation-coverage state and includes only the current-ready Volume
 1 and corrected Volume 2 proposals and reviews. The superseded Issue #53
-proposal remains historical and excluded. Volume 8 remains unchanged and
-blocked from public working distribution pending its current-policy audit.
+proposal remains historical and excluded. Volume 8 now has a current-policy
+strict proposal, but external public-working distribution admission remains a
+separate blocked decision.
 
 These artifacts are approved only for `public-working` distribution. Canonical
 promotion remains blocked and requires its own human scholarly and compliance

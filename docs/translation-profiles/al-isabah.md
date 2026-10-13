@@ -9,8 +9,9 @@
 ## Purpose
 
 This profile specializes the repository-local translation-quality contract for
-Al-Isabah. It captures the proven Volume 8 workflow in a form that can fill the
-other volumes and topic cohorts without renumbering existing records.
+Al-Isabah. It captures the proven normal-contract Volume 8 workflow in a form
+that can fill later revisions and topic cohorts without renumbering existing
+records.
 
 It contains policy and non-sensitive implementation requirements only. Private
 facsimiles, OCR, model outputs, comparison passages, object locations, and
@@ -199,11 +200,13 @@ independent dimensions.
 
 The machine-readable
 [`translation-coverage.v1`](../../compliance/translation-coverage.v1.json)
-record is the current authority for aggregate completion. It classifies the
-existing Volume 1 and Volume 8 translations as agent-complete while preserving
-their different provenance and publication states. Volume 8 remains a legacy
-completion that requires a current-policy audit before canonical promotion;
-that compliance limitation does not erase the completed translation work.
+record is the current authority for aggregate completion. Volume 8 is now the
+normal-contract Issue 98 completion for source ordinals 11,425–12,303: 879
+source units with exact source identity, current policy and execution lineage,
+and a strict public-safe proposal. The earlier 1,550-record legacy completion
+claim remains historical research evidence only and is superseded for current
+coverage accounting. Proposal readiness does not itself establish external
+distribution admission or canonical promotion.
 
 ## Al-Isabah-specific quality targets
 

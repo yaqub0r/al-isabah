@@ -55,7 +55,7 @@ heading or the unsplit adjudicated paragraph.
 ## Decisions and evidence
 
 Book-specific boundary decisions live in the versioned
-[`entry-title-decisions.v10.json`](../../profiles/entry-title-decisions.v10.json)
+[`entry-title-decisions.v11.json`](../../profiles/entry-title-decisions.v11.json)
 profile. Each decision records the pinned source authority and the exact title
 realization in both languages. A consumer may use that profile to build a
 working presentation, but it must not silently expand, shorten, or otherwise
@@ -172,3 +172,15 @@ title-only representation because the complete Arabic and adjudicated English
 units are their decided titles. Profiles v1–v9 remain
 immutable, and Issue 91 keeps its exact v9 binding. These decisions do not
 assert human scholarly review.
+
+Profile v11 carries forward every v10 decision unchanged and adds the 879
+source-bound title/body-opening decisions for Volume 8 source ordinals
+11425–12303. Historical unkeyed Volume 8 positive references remain immutable,
+but current records resolve only through their exact `sourceUnitId` and source
+hash; an unknown identity never falls back to the historical printed number.
+Ordinals 11930 and 12023 use the exact title-only representation. Ordinal
+11555 retains `بنت عجرة` / “daughter of ʿAjrah” as lineage body text rather
+than misclassifying the relationship as part of the title or as an empty body. No
+editorial supplies are added. Profiles v1–v10 remain immutable, and Issue 96
+keeps its exact v10 binding. These decisions do not assert human scholarly
+review.

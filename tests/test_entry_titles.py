@@ -35,20 +35,20 @@ class EntryTitleContractTests(unittest.TestCase):
             11445, 11446, 11449, 11451, 11454, 11458, 11459, 11473,
             11474, 11476,
         }
-        expected = historical | set(range(1538, 11426))
+        expected = historical | set(range(1538, 12305))
         expected.remove(7052)
         expected.difference_update({9674, 9675, 11423, 11424})
         self.assertEqual(numbers, expected)
-        self.assertEqual(len(self.profile["decisions"]), 9905)
+        self.assertEqual(len(self.profile["decisions"]), 10784)
 
     def test_successor_preserves_all_previous_decisions(self) -> None:
-        previous = MODULE.load(ROOT / "profiles" / "entry-title-decisions.v9.json")
+        previous = MODULE.load(ROOT / "profiles" / "entry-title-decisions.v10.json")
         split = len(previous["decisions"])
         self.assertEqual(self.profile["decisions"][:split], previous["decisions"])
         added = self.profile["decisions"][split:]
         self.assertEqual(
             [item["sourceUnitId"] for item in added],
-            [f"openiti-5835c183-unit-{ordinal:06d}" for ordinal in range(9485, 11425)],
+            [f"openiti-5835c183-unit-{ordinal:06d}" for ordinal in range(11425, 12304)],
         )
         self.assertTrue(all("editorialSupply" not in item for item in added))
         self.assertTrue(all("sourceRawSha256" in item for item in added))
@@ -151,6 +151,24 @@ class EntryTitleContractTests(unittest.TestCase):
         profile["decisions"].append(copy.deepcopy(profile["decisions"][0]))
         errors = MODULE.validate(profile)
         self.assertTrue(any("duplicate sourceEntryNumber" in error for error in errors), errors)
+
+    def test_historical_number_reference_can_coexist_with_exact_source_identity(self) -> None:
+        matches = [
+            item
+            for item in self.profile["decisions"]
+            if item["sourceEntryNumber"] == 11426
+        ]
+        self.assertEqual(len(matches), 2)
+        self.assertEqual(sum("sourceUnitId" not in item for item in matches), 1)
+        exact = next(item for item in matches if "sourceUnitId" in item)
+        self.assertIs(
+            MODULE.decision_for_entry(
+                self.profile, 11426, exact["sourceUnitId"]
+            ),
+            exact,
+        )
+        with self.assertRaisesRegex(ValueError, "lacks a governed bilingual"):
+            MODULE.decision_for_entry(self.profile, 11426)
 
     def test_rejects_relationship_prose_in_title(self) -> None:
         profile = copy.deepcopy(self.profile)
@@ -309,7 +327,7 @@ class EntryTitleContractTests(unittest.TestCase):
 
     def test_entry_outside_governed_ranges_is_rejected(self) -> None:
         with self.assertRaisesRegex(ValueError, "lacks a governed bilingual"):
-            MODULE.decision_for_entry(self.profile, 12000)
+            MODULE.decision_for_entry(self.profile, 13000)
 
     def test_repeated_printed_numbers_resolve_only_by_source_unit(self) -> None:
         for number, ordinals in ((6986, (6986, 6987)), (7760, (7760, 7761))):
@@ -369,6 +387,58 @@ class EntryTitleContractTests(unittest.TestCase):
                 )
                 self.assertEqual(decision["bodyOpeningKind"], "none")
                 self.assertEqual(decision["bodyOpening"], {"ar": "", "en": ""})
+
+    def test_volume8_decisions_require_exact_source_identity(self) -> None:
+        for ordinal in (11425, 11555, 11930, 12023, 12303):
+            source_unit_id = f"openiti-5835c183-unit-{ordinal:06d}"
+            decision = next(
+                item
+                for item in self.profile["decisions"]
+                if item.get("sourceUnitId") == source_unit_id
+            )
+            self.assertIs(
+                MODULE.decision_for_entry(
+                    self.profile,
+                    decision["sourceEntryNumber"],
+                    source_unit_id,
+                ),
+                decision,
+            )
+            with self.assertRaisesRegex(ValueError, "lacks a governed bilingual"):
+                MODULE.decision_for_entry(
+                    self.profile,
+                    decision["sourceEntryNumber"],
+                    "openiti-5835c183-unit-999999",
+                )
+
+    def test_volume8_title_only_decisions_are_source_bound(self) -> None:
+        for ordinal in (11930, 12023):
+            source_unit_id = f"openiti-5835c183-unit-{ordinal:06d}"
+            decision = next(
+                item
+                for item in self.profile["decisions"]
+                if item.get("sourceUnitId") == source_unit_id
+            )
+            resolved = MODULE.decision_for_entry(
+                self.profile,
+                decision["sourceEntryNumber"],
+                source_unit_id,
+            )
+            self.assertEqual(resolved["bodyOpeningKind"], "none")
+            self.assertEqual(resolved["bodyOpening"], {"ar": "", "en": ""})
+
+    def test_volume8_relationship_text_is_not_misclassified_as_title_only(self) -> None:
+        decision = MODULE.decision_for_entry(
+            self.profile,
+            11556,
+            "openiti-5835c183-unit-011555",
+        )
+        self.assertEqual(decision["title"], {"ar": "عائشة", "en": "ʿĀʾishah"})
+        self.assertEqual(decision["bodyOpeningKind"], "lineage")
+        self.assertEqual(
+            decision["bodyOpening"],
+            {"ar": "بنت عجرة", "en": "daughter of ʿAjrah"},
+        )
 
 
 if __name__ == "__main__":

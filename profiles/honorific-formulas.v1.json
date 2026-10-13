@@ -1,6 +1,6 @@
 {
   "schema": "al-isabah.honorific-formula-registry.v1",
-  "registryVersion": "1.8.0",
+  "registryVersion": "1.9.0",
   "contractId": "translation-quality-workflow",
   "profileId": "al-isabah-translation-profile",
   "entries": [
@@ -1902,6 +1902,105 @@
       "grammaticalAgreement": "invariable nominal formula with prefixed conjunction",
       "expandedArabic": "والله أكبر",
       "accessibleEnglish": "And Allah is greatest."
+    },
+    {
+      "source": "صلى الله عليه",
+      "target": "صلى الله عليه",
+      "semanticClass": "prophetic_blessing",
+      "referentScope": "The Prophet Muḥammad, a masculine singular referent.",
+      "grammaticalAgreement": "Masculine singular pronominal object in عليه, with الله as the explicit subject of صلى.",
+      "expandedArabic": "صلى الله عليه",
+      "accessibleEnglish": "May God bless him."
+    },
+    {
+      "source": "صلى الله على أبيها وآله وسلم",
+      "target": "صلى الله على أبيها وآله وسلم",
+      "semanticClass": "prophetic_blessing_and_peace",
+      "referentScope": "Fāṭimah's father, the Prophet Muḥammad, together with his family.",
+      "grammaticalAgreement": "The masculine singular kinship referent أبيها is primary and آله adds the coordinated collective family referent.",
+      "expandedArabic": "صلى الله على أبيها وآله وسلم",
+      "accessibleEnglish": "May God bless her father and his family and grant peace."
+    },
+    {
+      "source": "صلى عليه وآله وسلم",
+      "target": "صلى عليه وآله وسلم",
+      "semanticClass": "prophetic_blessing_and_peace",
+      "referentScope": "The Prophet Muḥammad and his family.",
+      "grammaticalAgreement": "عليه has a masculine singular pronominal referent and آله adds the collective family referent; the subject of صلى is elided.",
+      "expandedArabic": "صلى الله عليه وعلى آله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant peace."
+    },
+    {
+      "source": "رحم الله هندا",
+      "target": "رحم الله هندا",
+      "semanticClass": "mercy_supplication",
+      "referentScope": "Hind, a named feminine singular referent.",
+      "grammaticalAgreement": "هندا is the feminine singular proper-name object; رحم is a third-person perfect verb used optatively with الله as subject.",
+      "expandedArabic": "رحم الله هندا",
+      "accessibleEnglish": "May God have mercy on Hind."
+    },
+    {
+      "source": "صلى الله وآله وسلم",
+      "target": "صلى الله وآله وسلم",
+      "semanticClass": "prophetic_blessing_and_peace",
+      "referentScope": "The Prophet Muḥammad and his family.",
+      "grammaticalAgreement": "الله is the explicit subject of صلى and آله names the collective family referent; the expected pronominal recipient and preposition are elided in the attested wording.",
+      "expandedArabic": "صلى الله عليه وعلى آله وسلم",
+      "accessibleEnglish": "May God bless him and his family and grant peace."
+    },
+    {
+      "source": "صلى الله عليه وسلم وعلى وآله وسلم",
+      "target": "صلى الله عليه وسلم وعلى وآله وسلم",
+      "semanticClass": "prophetic_blessing_and_peace",
+      "referentScope": "The Prophet Muḥammad, a masculine singular referent, together with his collective family referent.",
+      "grammaticalAgreement": "عليه is masculine singular. The source-attested وعلى وآله contains both the prepositional coordinator وعلى and an additional conjunction on وآله; this irregular doubled conjunction must be preserved exactly rather than normalized.",
+      "expandedArabic": "صلى الله عليه وسلم وعلى وآله وسلم",
+      "accessibleEnglish": "May God bless him and grant him peace, and [bless] and grant peace to his family."
+    },
+    {
+      "source": "ورضي عنها",
+      "target": "ورضي عنها",
+      "semanticClass": "divine_approval",
+      "referentScope": "Fāṭimah al-Zahrāʾ, the immediately preceding feminine singular referent.",
+      "grammaticalAgreement": "The prefixed conjunction و coordinates this invocation with the preceding blessing; عنها is feminine singular, and the divine subject of رضي is elided.",
+      "expandedArabic": "ورضي عنها",
+      "accessibleEnglish": "And may God be pleased with her."
+    },
+    {
+      "source": "الله تعالى",
+      "target": "الله تعالى",
+      "semanticClass": "divine_exaltation",
+      "referentScope": "Allah, explicitly named as the divine referent in every occurrence.",
+      "grammaticalAgreement": "Masculine singular divine referent; تعالى is the masculine singular exaltation attached directly to الله.",
+      "expandedArabic": "الله تعالى",
+      "accessibleEnglish": "Allah, the Exalted."
+    },
+    {
+      "source": "عليه وعلى آله وسلم",
+      "target": "عليه وعلى آله وسلم",
+      "semanticClass": "prophetic_blessing_and_peace",
+      "referentScope": "The Messenger of Allah, the Prophet Muḥammad, together with his family.",
+      "grammaticalAgreement": "عليه has a masculine singular prophetic referent; the masculine singular possessive suffix in آله adds his collective family, and the subject of وسلم is elided.",
+      "expandedArabic": "عليه وعلى آله وسلم",
+      "accessibleEnglish": "Blessings and peace be upon him and upon his family."
+    },
+    {
+      "source": "إنا لله وإنا إليه راجعون",
+      "target": "إنا لله وإنا إليه راجعون",
+      "semanticClass": "devotional_remembrance",
+      "referentScope": "The first-person plural speakers acknowledge that they belong to Allah and return to Him.",
+      "grammaticalAgreement": "First-person plural in إنا and the suffix نا, with the masculine plural predicate راجعون referring to the speakers.",
+      "expandedArabic": "إنا لله وإنا إليه راجعون",
+      "accessibleEnglish": "Indeed, we belong to Allah, and indeed to Him we are returning."
+    },
+    {
+      "source": "عليه وآله وسلم",
+      "target": "عليه وآله وسلم",
+      "semanticClass": "prophetic_blessing_and_peace",
+      "referentScope": "The Messenger of Allah, the Prophet Muḥammad, together with his family.",
+      "grammaticalAgreement": "عليه has a masculine singular prophetic referent; the masculine singular possessive suffix in آله adds his collective family, and the subject of وسلم is elided.",
+      "expandedArabic": "عليه وآله وسلم",
+      "accessibleEnglish": "Blessings and peace be upon him and his family."
     }
   ]
 }

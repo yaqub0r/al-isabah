@@ -3,7 +3,7 @@
 - **Status:** Active
 - **Issue:** [#45](https://github.com/yaqub0r/al-isabah/issues/45)
 - **Machine reference:**
-  [`translation-governance-reference.v11.json`](translation-governance-reference.v11.json)
+  [`translation-governance-reference.v12.json`](translation-governance-reference.v12.json)
 
 ## Authority and pinning
 
@@ -103,7 +103,15 @@ proposal v2, execution registry v2, `sol-xhigh-explicit-host-v1`, and packet,
 shard, tool and stage-provenance data version 3.0.0 are unchanged. References
 v1–v10 remain immutable provenance.
 
-References v5 through v11 use new major versions because each replaces the stable
+Reference v12.0.0 supersedes v11 by exact hash for Issue 98. It binds the
+additive Volume 8 source-unit-keyed title profile v11, formula registry 1.9.0,
+policy binding v12, and packet schema document v10. Legacy unkeyed Volume 8
+title precedents remain historical fallbacks only; current records resolve by
+exact source-unit identity. Public-proposal v2, execution registry v2,
+`sol-xhigh-explicit-host-v1`, and packet, shard, tool and stage-provenance data
+version 3.0.0 are unchanged. References v1–v11 remain immutable provenance.
+
+References v5 through v12 use new major versions because each replaces the stable
 machine-reference path and exact active artifact-identity set that a pinned
 consumer must explicitly select. Their unchanged translation, execution, and
 release semantics do not make that consumer discovery transition additive to

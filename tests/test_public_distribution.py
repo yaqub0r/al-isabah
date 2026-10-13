@@ -49,11 +49,14 @@ ISSUE_0070_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0070.pub
 ISSUE_0080_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0080.public-proposal.json"
 ISSUE_0082_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0082.public-proposal.json"
 ISSUE_0084_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0084.public-proposal.json"
+ISSUE_0086_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0086.public-proposal.json"
 ISSUE_0085_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0085.public-proposal.json"
 ISSUE_0091_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0091.public-proposal.json"
 ISSUE_0091_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0091.public-review.json"
 ISSUE_0096_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0096.public-proposal.json"
 ISSUE_0096_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0096.public-review.json"
+ISSUE_0098_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0098.public-proposal.json"
+ISSUE_0098_REVIEW_PATH = ROOT / "content" / "public-proposals" / "issue-0098.public-review.json"
 ISSUE_0070_RUNTIME_PACKET = (
     ROOT / ".runtime" / "translation" / "packets" / "issue-0070-lineage.json"
 )
@@ -78,6 +81,9 @@ class PublicDistributionTests(unittest.TestCase):
         cls.issue_0084_proposal = json.loads(
             ISSUE_0084_PROPOSAL_PATH.read_text(encoding="utf-8")
         )
+        cls.issue_0086_proposal = json.loads(
+            ISSUE_0086_PROPOSAL_PATH.read_text(encoding="utf-8")
+        )
         cls.issue_0085_proposal = json.loads(
             ISSUE_0085_PROPOSAL_PATH.read_text(encoding="utf-8")
         )
@@ -87,6 +93,99 @@ class PublicDistributionTests(unittest.TestCase):
         cls.issue_0096_proposal = json.loads(
             ISSUE_0096_PROPOSAL_PATH.read_text(encoding="utf-8")
         )
+        cls.issue_0098_proposal = json.loads(
+            ISSUE_0098_PROPOSAL_PATH.read_text(encoding="utf-8")
+        )
+
+    def test_issue_98_volume_eight_proposal_and_review_are_current(self):
+        proposal = self.issue_0098_proposal
+        records = proposal["records"]
+
+        self.assertEqual(PROPOSAL_VALIDATOR.validate(ISSUE_0098_PROPOSAL_PATH), [])
+        self.assertEqual(
+            REVIEW.canonical_json(REVIEW.review(ISSUE_0098_PROPOSAL_PATH)),
+            ISSUE_0098_REVIEW_PATH.read_bytes(),
+        )
+        self.assertEqual(len(records), 879)
+        self.assertEqual(
+            [record["sourceOrdinal"] for record in records],
+            list(range(11425, 12304)),
+        )
+        self.assertEqual(proposal["review"]["humanReviewed"], 0)
+        self.assertEqual(proposal["review"]["humanUnreviewed"], 879)
+        self.assertEqual(
+            proposal["entryTitleDecisions"],
+            {
+                "profileId": "entry-title-decisions.v11",
+                "profileSha256": "130a872700412dba03aa14ce2a6b9c43e3dc2e8afa629c7b4c8e3feeb74f33ef",
+                "coveredRecordCount": 879,
+            },
+        )
+        title_only = [
+            record["sourceOrdinal"]
+            for record in records
+            if record["arabic"] == "" and record["english"] == ""
+        ]
+        self.assertEqual(title_only, [11930, 12023])
+        owned = [
+            item
+            for record in records
+            for item in record["precedingMaterial"]
+            if item["kind"] != "continued_structural_heading"
+        ]
+        inherited = [
+            item
+            for record in records
+            for item in record["precedingMaterial"]
+            if item["kind"] == "continued_structural_heading"
+        ]
+        self.assertEqual(len(owned), 139)
+        self.assertEqual(len(inherited), 3)
+        self.assertEqual(proposal["canonicalPromotion"], "blocked")
+
+    def test_current_cover_to_cover_proposals_are_exact_and_nonduplicative(self):
+        proposals = [
+            self.proposal,
+            self.issue_0070_proposal,
+            self.issue_0080_proposal,
+            self.issue_0082_proposal,
+            self.issue_0084_proposal,
+            self.issue_0086_proposal,
+            self.issue_0085_proposal,
+            self.issue_0091_proposal,
+            self.issue_0096_proposal,
+            self.issue_0098_proposal,
+        ]
+        self.assertEqual(len(proposals), 10)
+        self.assertIn("issue-0070-public-proposal-v1", {
+            proposal["proposalId"] for proposal in proposals
+        })
+        self.assertNotIn("issue-0053-public-proposal-v1", {
+            proposal["proposalId"] for proposal in proposals
+        })
+        ordinals = [
+            record["sourceOrdinal"]
+            for proposal in proposals
+            for record in proposal["records"]
+        ]
+        self.assertEqual(ordinals, list(range(1, 12304)))
+        owned = [
+            item
+            for proposal in proposals
+            for record in proposal["records"]
+            for item in record["precedingMaterial"]
+            if item["kind"] != "continued_structural_heading"
+        ]
+        inherited_display = [
+            item
+            for proposal in proposals[:-1]
+            for record in proposal["records"]
+            for item in record["precedingMaterial"]
+            if item["kind"] == "continued_structural_heading"
+        ]
+        self.assertEqual(len(owned), 1382)
+        self.assertEqual(len(inherited_display), 23)
+        self.assertEqual(len(owned) + len(inherited_display), 1405)
 
     def test_issue_96_volume_seven_proposal_and_review_are_current(self):
         proposal = self.issue_0096_proposal
@@ -433,6 +532,39 @@ class PublicDistributionTests(unittest.TestCase):
             "made a garment for the Messenger of Allah صلى الله.", "target"
         )
         self.assertEqual([hit["value"] for hit in truncated], ["صلى الله"])
+
+    def test_public_target_formula_matching_prefers_exact_target_over_expansion(self):
+        exact = "صلى الله عليه وسلم وعلى آله وسلم"
+        hits = PROPOSAL_VALIDATOR.registered_formula_occurrences(exact, "target")
+        self.assertEqual(len(hits), 1)
+        self.assertEqual(hits[0]["value"], exact)
+        self.assertEqual(hits[0]["rule"]["source"], exact)
+
+        volume_eight = "صلى الله عليه وسلم وعلى وآله وسلم"
+        hits = PROPOSAL_VALIDATOR.registered_formula_occurrences(
+            volume_eight, "target"
+        )
+        self.assertEqual(len(hits), 1)
+        self.assertEqual(hits[0]["rule"]["source"], volume_eight)
+
+    def test_public_volume_eight_round_two_formulas_are_exact(self):
+        for surface in (
+            "ورضي عنها",
+            "الله تعالى",
+            "عليه وعلى آله وسلم",
+            "إنا لله وإنا إليه راجعون",
+            "عليه وآله وسلم",
+        ):
+            with self.subTest(surface=surface):
+                source_hits = PROPOSAL_VALIDATOR.registered_formula_occurrences(
+                    surface, "source"
+                )
+                target_hits = PROPOSAL_VALIDATOR.registered_formula_occurrences(
+                    surface, "target"
+                )
+                self.assertEqual([hit["value"] for hit in source_hits], [surface])
+                self.assertEqual([hit["value"] for hit in target_hits], [surface])
+                self.assertEqual(target_hits[0]["rule"]["source"], surface)
 
     def test_public_formula_matching_requires_reviewed_complete_arabic_surfaces(self):
         for surface in (
@@ -953,11 +1085,11 @@ class PublicDistributionTests(unittest.TestCase):
         decision = next(
             item
             for item in profile["decisions"]
-            if item["sourceEntryNumber"] == 11426
+            if item["sourceEntryNumber"] == 11426 and "sourceUnitId" in item
         )
         proposal = {
             "entryTitleDecisions": {
-                "profileId": "entry-title-decisions.v10",
+                "profileId": "entry-title-decisions.v11",
                 "profileSha256": PACKET_PROJECT.title_profile_sha256(
                     PACKET_PROJECT.ENTRY_TITLE_PROFILE
                 ),
@@ -965,6 +1097,7 @@ class PublicDistributionTests(unittest.TestCase):
             },
             "records": [
                 {
+                    "id": decision["sourceUnitId"],
                     "printedEntryNumber": 11426,
                     "title": {
                         "arabic": decision["title"]["ar"],
@@ -973,6 +1106,7 @@ class PublicDistributionTests(unittest.TestCase):
                     },
                     "arabic": decision["bodyOpening"]["ar"] + " synthetic",
                     "english": decision["bodyOpening"]["en"] + " synthetic",
+                    "source": {"exactTextSha256": decision["sourceRawSha256"]},
                 }
             ],
         }

@@ -71,6 +71,13 @@ class HostRuntimeTests(unittest.TestCase):
             inputSha256="4" * 64,
             outputSha256="5" * 64,
             fingerprint="6" * 64,
+            rebinding={
+                "previousOrigin": "direct_execution",
+                "runId": direct["runId"],
+                "previousInputSha256": direct["inputSha256"],
+                "previousOutputSha256": direct["outputSha256"],
+                "previousFingerprint": direct["fingerprint"],
+            },
         )
         self.assertEqual(
             WORKFLOW.validate_stage_execution(rebound, "blind_translation"), []
@@ -92,6 +99,41 @@ class HostRuntimeTests(unittest.TestCase):
         self.assertTrue(
             WORKFLOW.validate_stage_execution(mismatched, "blind_translation")
         )
+
+    def test_deterministic_rebinding_rejects_foreign_original_execution_identity(self):
+        direct = self.provenance("blind_translation")
+        rebound = copy.deepcopy(direct)
+        rebound.update(
+            origin="deterministic_rebinding",
+            inputSha256="4" * 64,
+            outputSha256="5" * 64,
+            fingerprint="6" * 64,
+            rebinding={
+                "previousOrigin": "direct_execution",
+                "runId": direct["runId"],
+                "previousInputSha256": direct["inputSha256"],
+                "previousOutputSha256": direct["outputSha256"],
+                "previousFingerprint": direct["fingerprint"],
+            },
+        )
+        mutations = {
+            "foreign run": ("runId", "9" * 64),
+            "foreign input": ("inputSha256", "8" * 64),
+            "foreign output": ("outputSha256", "7" * 64),
+            "foreign checkpoint": ("checkpointSha256", "0" * 64),
+        }
+        for label, (field, value) in mutations.items():
+            with self.subTest(label=label):
+                changed = copy.deepcopy(rebound)
+                changed["execution"]["binding"][field] = value
+                errors = WORKFLOW.validate_stage_execution(
+                    changed, "blind_translation"
+                )
+                self.assertTrue(
+                    any("rebinding lineage" in error or "original direct checkpoint" in error
+                        for error in errors),
+                    errors,
+                )
 
     def test_missing_implicit_high_ultra_unknown_requests_fail(self):
         cases = [lambda e: e.update(methodId="unknown"),

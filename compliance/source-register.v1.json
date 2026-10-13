@@ -746,6 +746,47 @@
         "treat this local proposal as a published release"
       ],
       "review_status": "machine-ready-volume-proposal-pending-submission-and-distribution-admission"
+    },
+    {
+      "id": "issue-0098-public-proposal-v1",
+      "kind": "public-working-bilingual-proposal",
+      "title": "Issue 0098 Volume 8 strict public proposal",
+      "classification": "approved-for-publication",
+      "rights_basis": "Strict allowlisted projection of the newly machine-ready Volume 8 assignment range, source ordinals 11425–12303 and 879 biographies. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, exact governed formulas, structural hierarchy and public uncertainty disclosures. The slice explicitly inherits its active structural context from the validated Issue 96 proposal while owning 139 new structural segments across 80 records. It supersedes the legacy Volume 8 private translation inventory for completion reporting; the two counts are not additive. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is not evidence of external submission or admission to the current distribution.",
+      "license": {
+        "spdx": "CC-BY-NC-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      "integrity": {
+        "proposal_sha256": "8888df7b1a6c3114b2276a6a5efa657a2711071feff1e4a95f7708d6fbb94607",
+        "public_review_sha256": "da22c8ac87b7d7059ea7e6883edf73aedba484556a984f8601dc9f0179c31ea6",
+        "record_projection_sha256": "c4867cc3486cff480395523e98535b2cc226d12575e4ab5e862bf5e5eb1223d2",
+        "order_sha256": "154aaf4934e9ab3b9a124bbfe84bed496359f634d8a556956c51773560bfc9f0",
+        "user_facing_sha256": "85c5bddeb2d5f931bf3a3c120e4adf262130252f3dc9281156067887206581f0",
+        "public_entries": 879,
+        "source_ordinal_start": 11425,
+        "source_ordinal_end": 12303,
+        "owned_structural_segments": 139,
+        "structural_owners": 80,
+        "execution_policy_binding_sha256": "c2323ad10d5679d625eac628c966476efad270e7bc23f6a8fbda8823196f0e7c",
+        "packet_set_sha256": "55ad2721016ed2212289ddf384e5b571d13423af3c5180318ca2140fc03d82d9",
+        "review_set_sha256": "1dc6a3d911c85f54a6895230f45d6ac2848c3c7f8a6ce132b945e8d0bcb4da3c"
+      },
+      "depends_on": [
+        "ibn-hajar-underlying-medieval-work",
+        "openiti-cleaned-arabic-comparison"
+      ],
+      "allowed_actions": [
+        "review the strict public-safe Volume 8 proposal in the issue-scoped change",
+        "reproduce deterministic proposal, review and coverage checks under the approved noncommercial license",
+        "report full Volume 8 agent completion independently of ongoing human review"
+      ],
+      "prohibited_public_actions": [
+        "claim external evidence submission, current distribution admission, canonical promotion, human approval or release",
+        "publish private evidence, detailed findings, witness expression, model traces, source coordinates or operational paths",
+        "treat this local proposal as a published release"
+      ],
+      "review_status": "machine-ready-volume-proposal-pending-submission-and-distribution-admission"
     }
   ]
 }

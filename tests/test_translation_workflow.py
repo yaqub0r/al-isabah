@@ -313,6 +313,12 @@ def complete_autonomous_stages(packet):
                 "runId": f"blind-{number}",
                 "model": "gpt-5.6-sol",
                 "reasoning": "xhigh",
+                "headingEnglish": translated(
+                    f"Blind heading for entry {number}.",
+                    entry["source"].get("headingArabic"),
+                )
+                if entry["source"].get("headingArabic")
+                else None,
                 "english": translated(
                     f"Blind English for entry {number}.", entry["source"]["arabic"]
                 ),
@@ -325,7 +331,9 @@ def complete_autonomous_stages(packet):
                 "model": "gpt-5.6-sol",
                 "findings": [],
                 "semanticAudit": semantic_audit(
-                    entry["source"], None, entry["blindTranslation"]["english"]
+                    entry["source"],
+                    entry["blindTranslation"]["headingEnglish"],
+                    entry["blindTranslation"]["english"],
                 ),
             }
         )
@@ -336,6 +344,12 @@ def complete_autonomous_stages(packet):
         }
         entry["adjudication"] = {
             "status": "complete",
+            "headingEnglish": translated(
+                f"Adjudicated heading for entry {number}.",
+                entry["source"].get("headingArabic"),
+            )
+            if entry["source"].get("headingArabic")
+            else None,
             "english": translated(
                 f"Adjudicated English for entry {number}. Duba'a.",
                 entry["source"]["arabic"],
@@ -374,7 +388,10 @@ def complete_autonomous_stages(packet):
                 }
             ],
             "inventoryAudit": name_audit(
-                entry["source"], None, entry["adjudication"]["english"], number
+                entry["source"],
+                entry["adjudication"]["headingEnglish"],
+                entry["adjudication"]["english"],
+                number,
             ),
         }
         entry["unresolved"] = []
@@ -1352,13 +1369,14 @@ class TranslationWorkflowTests(unittest.TestCase):
         entry["adjudication"]["english"] = "He transmitted the report."
         entry["names"]["inventoryAudit"]["englishSha256"] = (
             MODULE.semantic_candidate_sha256(
-                None, entry["adjudication"]["english"]
+                entry["adjudication"]["headingEnglish"],
+                entry["adjudication"]["english"],
             )
         )
         errors = MODULE.validate_names(
             entry["names"],
             entry["source"],
-            None,
+            entry["adjudication"]["headingEnglish"],
             entry["adjudication"]["english"],
             entry["sourceUnitId"],
             "test",
@@ -1381,14 +1399,15 @@ class TranslationWorkflowTests(unittest.TestCase):
         )
         entry["names"]["inventoryAudit"]["englishSha256"] = (
             MODULE.semantic_candidate_sha256(
-                None, entry["adjudication"]["english"]
+                entry["adjudication"]["headingEnglish"],
+                entry["adjudication"]["english"],
             )
         )
 
         errors = MODULE.validate_names(
             entry["names"],
             entry["source"],
-            None,
+            entry["adjudication"]["headingEnglish"],
             entry["adjudication"]["english"],
             entry["sourceUnitId"],
             "test",
@@ -1404,7 +1423,7 @@ class TranslationWorkflowTests(unittest.TestCase):
             MODULE.validate_names(
                 entry["names"],
                 entry["source"],
-                None,
+                entry["adjudication"]["headingEnglish"],
                 entry["adjudication"]["english"],
                 entry["sourceUnitId"],
                 "test",
@@ -1545,13 +1564,16 @@ class TranslationWorkflowTests(unittest.TestCase):
             "Duba'a—with an open first letter—al-Anṣārī transmitted the report."
         )
         entry["names"]["inventoryAudit"]["englishSha256"] = (
-            MODULE.semantic_candidate_sha256(None, entry["adjudication"]["english"])
+            MODULE.semantic_candidate_sha256(
+                entry["adjudication"]["headingEnglish"],
+                entry["adjudication"]["english"],
+            )
         )
         self.assertEqual(
             MODULE.validate_names(
                 entry["names"],
                 entry["source"],
-                None,
+                entry["adjudication"]["headingEnglish"],
                 entry["adjudication"]["english"],
                 entry["sourceUnitId"],
                 "test",
@@ -1790,7 +1812,7 @@ class TranslationWorkflowTests(unittest.TestCase):
             MODULE.validate_names(
                 entry["names"],
                 entry["source"],
-                None,
+                entry["adjudication"]["headingEnglish"],
                 entry["adjudication"]["english"],
                 entry["sourceUnitId"],
                 "test",
@@ -1805,7 +1827,7 @@ class TranslationWorkflowTests(unittest.TestCase):
                 for error in MODULE.validate_names(
                     entry["names"],
                     entry["source"],
-                    None,
+                    entry["adjudication"]["headingEnglish"],
                     entry["adjudication"]["english"],
                     entry["sourceUnitId"],
                     "test",
@@ -1878,6 +1900,23 @@ class TranslationWorkflowTests(unittest.TestCase):
                 )
             )
             self.assertEqual(MODULE.validate_packet(final, machine_ready=True), [])
+
+    def test_entry_semantic_and_name_hashes_include_governed_headings(self):
+        packet = self.packet()
+        complete_autonomous_stages(packet)
+        entry = packet["entries"][0]
+        self.assertTrue(entry["blindTranslation"]["headingEnglish"])
+        self.assertTrue(entry["adjudication"]["headingEnglish"])
+
+        errors = MODULE.validate_packet(packet)
+        self.assertFalse(
+            any("semantic critique candidate hash is stale" in error for error in errors),
+            errors,
+        )
+        self.assertFalse(
+            any("name inventory English hash is stale" in error for error in errors),
+            errors,
+        )
 
     def test_formula_registry_covers_contextual_and_source_damaged_prayers(self):
         contextual = (
@@ -2046,14 +2085,16 @@ class TranslationWorkflowTests(unittest.TestCase):
         target_text = f"made a garment for the Messenger of Allah {truncated}."
         target_hits = MODULE.registered_occurrences(target_text, "target")
         self.assertEqual([hit["value"] for hit in target_hits], [truncated])
+        adjacent = MODULE.registered_occurrences(
+            "﵌ صلى الله عيه وآله وسلم", "target"
+        )
         self.assertEqual(
-            MODULE.registered_occurrences(
-                "﵌ صلى الله عيه وآله وسلم", "target"
-            ),
-            [
-                hit
-                for hit in MODULE.registered_occurrences("﵌", "target")
-            ],
+            [hit["value"] for hit in adjacent],
+            ["﵌", "صلى الله عيه وآله وسلم"],
+        )
+        self.assertEqual(
+            adjacent[1]["rule"]["source"],
+            "صلى الله عيه وآله وسلم",
         )
         self.assertNotIn(
             truncated,
@@ -2064,6 +2105,34 @@ class TranslationWorkflowTests(unittest.TestCase):
                 )
             ],
         )
+
+    def test_target_formula_matching_prefers_an_exact_target_over_an_expansion(self):
+        exact = "صلى الله عليه وسلم وعلى آله وسلم"
+        hits = MODULE.registered_occurrences(exact, "target")
+        self.assertEqual(len(hits), 1)
+        self.assertEqual(hits[0]["value"], exact)
+        self.assertEqual(hits[0]["rule"]["source"], exact)
+
+        volume_eight = "صلى الله عليه وسلم وعلى وآله وسلم"
+        hits = MODULE.registered_occurrences(volume_eight, "target")
+        self.assertEqual(len(hits), 1)
+        self.assertEqual(hits[0]["rule"]["source"], volume_eight)
+
+    def test_volume_eight_formula_admission_round_two_preserves_exact_surfaces(self):
+        for surface in (
+            "ورضي عنها",
+            "الله تعالى",
+            "عليه وعلى آله وسلم",
+            "إنا لله وإنا إليه راجعون",
+            "عليه وآله وسلم",
+        ):
+            with self.subTest(surface=surface):
+                source_hits = MODULE.registered_occurrences(surface, "source")
+                target_hits = MODULE.registered_occurrences(surface, "target")
+                self.assertEqual([hit["value"] for hit in source_hits], [surface])
+                self.assertEqual([hit["value"] for hit in target_hits], [surface])
+                self.assertEqual(source_hits[0]["rule"]["source"], surface)
+                self.assertEqual(target_hits[0]["rule"]["source"], surface)
 
     def test_contextual_formulas_and_stage_specific_targets_are_exact(self):
         basmala = "بسم الله الرحمن الرحيم"

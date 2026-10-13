@@ -61,6 +61,10 @@ HISTORICAL_POLICY_BINDINGS = {
         "1.3.0",
         "issue-0091-public-proposal-v1",
     ): "4f650a9bd17b730b6c311aba2911df22302db4971f39c094edb85d24a703d005",
+    (
+        "1.3.0",
+        "issue-0096-public-proposal-v1",
+    ): "a335f829c16c05dbd8071ccca94f3ae1e2a57eaa1a949926971ca74fcdffc404",
 }
 PINNED_TITLE_PROFILE_BINDINGS = {
     ("1.2.0", "issue-0070-public-proposal-v1"): {
@@ -95,6 +99,10 @@ PINNED_TITLE_PROFILE_BINDINGS = {
         "profileId": "entry-title-decisions.v10",
         "profileSha256": "f99f48ff38a17ebff828580e26547ecdfb277d40dbaee8689b5e48bd4bf1fcfb",
     },
+    ("1.3.0", "issue-0098-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v11",
+        "profileSha256": "130a872700412dba03aa14ce2a6b9c43e3dc2e8afa629c7b4c8e3feeb74f33ef",
+    },
 }
 # Issue #85's immutable proposal captured the CRLF working-copy bytes of the
 # v8 title profile before Git normalized that text file to its repository LF
@@ -118,6 +126,7 @@ SOURCE_DERIVED_NAME_ID_PROPOSALS = {
     "issue-0085-public-proposal-v1",
     "issue-0091-public-proposal-v1",
     "issue-0096-public-proposal-v1",
+    "issue-0098-public-proposal-v1",
 }
 ARABIC_SCRIPT_RE = re.compile(
     r"[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff]"
@@ -133,12 +142,14 @@ PUBLIC_PROCESS_RE = re.compile(
 FORMULA_RULES = tuple(
     json.loads(FORMULA_REGISTRY_PATH.read_text(encoding="utf-8"))["entries"]
 )
-# Registry 1.7.0 is append-only. Keep the exact 1.6.0 prefix available so
+# The formula registry is append-only. Keep the exact historical prefixes so
 # immutable schema-1.3 proposals do not acquire newly detectable formulas.
 FORMULA_V16_ENTRY_COUNT = 68
 FORMULA_V16_RULES = FORMULA_RULES[:FORMULA_V16_ENTRY_COUNT]
 FORMULA_V17_ENTRY_COUNT = 154
 FORMULA_V17_RULES = FORMULA_RULES[:FORMULA_V17_ENTRY_COUNT]
+FORMULA_V18_ENTRY_COUNT = 211
+FORMULA_V18_RULES = FORMULA_RULES[:FORMULA_V18_ENTRY_COUNT]
 FORMULA_V14_SOURCES = {
     "بسم الله الرحمن الرحيم",
     "صلى الله عليه وسلم واله وسلم",
@@ -653,7 +664,11 @@ def registered_formula_occurrences(
                 str(value)
                 for rule in rules
                 if str(rule["source"]) in CONTEXTUAL_FORMULA_SOURCES
-                for value in (rule["target"], rule["expandedArabic"])
+                for value in (
+                    rule["target"],
+                    rule["source"],
+                    rule["expandedArabic"],
+                )
             }
         else:
             contextual_values = {
@@ -681,7 +696,11 @@ def registered_formula_occurrences(
             {
                 str(value)
                 for rule in effective_rules
-                for value in (rule["target"], rule["expandedArabic"])
+                for value in (
+                    rule["target"],
+                    rule["source"],
+                    rule["expandedArabic"],
+                )
             },
             key=len,
             reverse=True,
@@ -715,10 +734,20 @@ def registered_formula_occurrences(
         value = match.group(0)
         if field == "target":
             rule = next(
-                item
-                for item in effective_rules
-                if value in {item["target"], item["expandedArabic"]}
+                (item for item in effective_rules if value == item["target"]),
+                None,
             )
+            if rule is None:
+                rule = next(
+                    (item for item in effective_rules if value == item["source"]),
+                    None,
+                )
+            if rule is None:
+                rule = next(
+                    item
+                    for item in effective_rules
+                    if value == item["expandedArabic"]
+                )
         else:
             rule = next(item for item in effective_rules if value == item["source"])
         if (
@@ -1101,13 +1130,17 @@ def validate(
             errors.append(safe_error(base, "consumer-contract-mismatch"))
         if schema_version == "1.3.0":
             formula_rules = (
-                FORMULA_V17_RULES
-                if proposal_id == "issue-0091-public-proposal-v1"
+                FORMULA_V18_RULES
+                if proposal_id == "issue-0096-public-proposal-v1"
                 else (
-                    FORMULA_V16_RULES
-                    if (schema_version, str(proposal_id))
-                    in HISTORICAL_POLICY_BINDINGS
-                    else FORMULA_RULES
+                    FORMULA_V17_RULES
+                    if proposal_id == "issue-0091-public-proposal-v1"
+                    else (
+                        FORMULA_V16_RULES
+                        if (schema_version, str(proposal_id))
+                        in HISTORICAL_POLICY_BINDINGS
+                        else FORMULA_RULES
+                    )
                 )
             )
         else:
@@ -1207,7 +1240,7 @@ def validate(
     elif historical_policy_hash is not None:
         policy_hash = historical_policy_hash
     elif schema_version == "1.3.0":
-        successor_policy = ROOT / "compliance" / "policy-binding.v11.json"
+        successor_policy = ROOT / "compliance" / "policy-binding.v12.json"
         policy_hash = (
             sha256_text_file(successor_policy)
             if successor_policy.is_file()

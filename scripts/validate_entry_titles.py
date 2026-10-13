@@ -12,11 +12,12 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROFILE = ROOT / "profiles" / "entry-title-decisions.v10.json"
-HISTORICAL_PROFILE = ROOT / "profiles" / "entry-title-decisions.v9.json"
+PROFILE = ROOT / "profiles" / "entry-title-decisions.v11.json"
+HISTORICAL_PROFILE = ROOT / "profiles" / "entry-title-decisions.v10.json"
 SOURCE_BOUND_PROFILE = ROOT / "profiles" / "entry-title-decisions.v7.json"
 SOURCE_BOUND_SUCCESSORS = (
     ROOT / "profiles" / "entry-title-decisions.v8.json",
+    ROOT / "profiles" / "entry-title-decisions.v9.json",
     HISTORICAL_PROFILE,
 )
 GIT_SHA = re.compile(r"^[0-9a-f]{40}$")
@@ -355,8 +356,9 @@ def decision_for_entry(
     profile: dict[str, Any], source_entry_number: int, source_unit_id: str | None = None
 ) -> dict[str, Any]:
     indexed = decision_index(profile)
-    decision = indexed.get(source_unit_id) if source_unit_id else None
-    if decision is None:
+    if source_unit_id is not None:
+        decision = indexed.get(source_unit_id)
+    else:
         decision = indexed.get(source_entry_number)
     if decision is None:
         raise ValueError(
@@ -525,7 +527,8 @@ def validate(profile: dict[str, Any]) -> list[str]:
                 )
             )
     for number, matches in seen_numbers.items():
-        if len(matches) > 1 and any("sourceUnitId" not in item for item in matches):
+        unbound = [item for item in matches if "sourceUnitId" not in item]
+        if len(unbound) > 1:
             errors.append(
                 f"profile: duplicate sourceEntryNumber {number} needs distinct source-unit keys"
             )

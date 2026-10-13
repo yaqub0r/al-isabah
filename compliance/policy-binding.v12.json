@@ -1,0 +1,88 @@
+{
+  "schema": "al-isabah.local-policy-binding.v12",
+  "authority": {
+    "repository": "https://github.com/yaqub0r/al-isabah",
+    "scope": "repository-local",
+    "issue": "https://github.com/yaqub0r/al-isabah/issues/98"
+  },
+  "contracts": [
+    {
+      "id": "translation-quality-workflow",
+      "path": "docs/contracts/translation-quality-workflow.md",
+      "sha256": "0051e4224b3ec2094be1e01c9ff3cdaf8a73dea0dddafc2e570a1ef6664a28b2"
+    },
+    {
+      "id": "al-isabah-translation-profile",
+      "path": "docs/translation-profiles/al-isabah.md",
+      "sha256": "dc5a9a529b1365ae07d44bee23d0c13b2dcc5ef23a8326c00176f9ceef300c1b"
+    },
+    {
+      "id": "entry-title-structure",
+      "path": "docs/contracts/entry-title-structure.md",
+      "sha256": "31929b06372058ec9924c7ddf7e7ea5f9a532425248fd6e88f474c653c30f558"
+    },
+    {
+      "id": "entry-title-decisions",
+      "path": "profiles/entry-title-decisions.v11.json",
+      "sha256": "130a872700412dba03aa14ce2a6b9c43e3dc2e8afa629c7b4c8e3feeb74f33ef"
+    },
+    {
+      "id": "entry-title-decision-schema",
+      "path": "schemas/entry-title-decisions.v3.schema.json",
+      "sha256": "8b1abf566c4aa47017db575803ae9b1f46f47eccf28dd168b59a81c13aec6437"
+    },
+    {
+      "id": "honorific-formula-registry",
+      "path": "profiles/honorific-formulas.v1.json",
+      "sha256": "6a9dc65f90947ffb1ce43d05c3404493514f564cda43742f90b28ebb43bf180d"
+    },
+    {
+      "id": "translation-source-profile",
+      "path": "profiles/translation-source.v1.json",
+      "sha256": "c3db1e037a9f98ed7c6ada57d076084e5451c5651ed972ea68867ed5ad580ead"
+    },
+    {
+      "id": "execution-method-contract",
+      "path": "docs/contracts/translation-execution-methods.md",
+      "sha256": "3e6e18356368125015638beec0bb01c2fe84a9571ac44e11e1a106f986d99db2"
+    },
+    {
+      "id": "execution-method-registry",
+      "path": "profiles/execution-methods.v2.json",
+      "sha256": "9c0b1ef2cc208edb9885b81b16ff5ec10b3ea978b2742e9cb3c68b15ceeab809"
+    },
+    {
+      "id": "execution-method-registry-schema",
+      "path": "schemas/execution-method-registry.v2.schema.json",
+      "sha256": "2e60b173601daf248a8a233e68f47640976af680eeb0ce70d3d8910a7b2159a8"
+    },
+    {
+      "id": "execution-evaluation-schema",
+      "path": "schemas/execution-evaluation.v1.schema.json",
+      "sha256": "c4d6f82ab172d0d43eac63aea91893af5dda91927b9183355a58d72c0ed2d2e5"
+    },
+    {
+      "id": "runtime-host-evidence-schema",
+      "path": "schemas/runtime-host-evidence.v1.schema.json",
+      "sha256": "e77ba3dd9e8eaea5d770683bbdfc80fb215f8c7dfc9a4d3736f09019cad4c9eb"
+    },
+    {
+      "id": "translation-work-packet-schema",
+      "path": "schemas/translation-work-packet.v10.schema.json",
+      "sha256": "23d3ac778b6934a7ef0da4c4385e7b0aef9587dcc63d16350361fc62f7ff953d"
+    },
+    {
+      "id": "translation-agent-workflow",
+      "path": "docs/translation/agent-workflow.md",
+      "sha256": "f2bd486f2894aa965b53be9dbb96736ca734519a0456c7bd69842796437ac0d8"
+    },
+    {
+      "id": "local-policy-binding-schema",
+      "path": "compliance/schemas/policy-binding.v12.schema.json",
+      "sha256": "07b5314dc6205f218d336de113fa21410c8adce1d8fafdefc67826e4d6fdc438"
+    }
+  ],
+  "supersedes": "compliance/policy-binding.v11.json",
+  "applied_by_issue": "https://github.com/yaqub0r/al-isabah/issues/98",
+  "note": "Issue 98 adds source-unit-keyed title/body-opening decisions for Volume 8 ordinals 11425-12303 through additive profile v11, preserving every v10 decision unchanged. It advances the honorific formula registry to v1.9.0 with 11 reviewed exact Volume 8 source forms while keeping non-formula Arabic and translation defects outside the registry. Packet-schema document v10 pins registry 1.9.0 to this v12 binding. Packet, shard, tool and stage-provenance data remain version 3.0.0; public-proposal v2, execution registry v2 and sol-xhigh-explicit-host-v1 remain unchanged. Earlier bindings, title profiles, schemas, proposals, releases and evidence retain their original immutable pins."
+}
