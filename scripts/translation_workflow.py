@@ -2099,7 +2099,11 @@ def source_scope_exclusions(path: Path) -> list[dict[str, Any]]:
                 raw = f"{lines[index]}\n"
                 exclusions.append(
                     {
-                        "kind": "openiti_empty_structural_marker",
+                        # The packet schema intentionally keeps exclusions in
+                        # three stable categories.  An empty OpenITI structural
+                        # marker is container control syntax, not a fourth
+                        # publication/content class.
+                        "kind": "openiti_control",
                         "lineStart": index + 1,
                         "lineEnd": index + 1,
                         "rawSha256": bytes_sha256(raw.encode("utf-8")),

@@ -585,9 +585,17 @@ class TranslationWorkflowTests(unittest.TestCase):
         self.assertEqual(len(entries), 2)
         self.assertEqual(
             [item["kind"] for item in exclusions],
-            ["openiti_metadata", "openiti_empty_structural_marker"],
+            ["openiti_metadata", "openiti_control"],
         )
         self.assertEqual(partition_errors, [])
+        packet = self.packet()
+        packet["scope"]["excludedRanges"] = exclusions
+        self.assertEqual(
+            MODULE.validate_schema_instance(
+                packet, MODULE.load_json(MODULE.DEFAULT_PACKET_SCHEMA)
+            ),
+            [],
+        )
 
     def test_source_partition_rejects_unclassified_nonblank_row(self):
         with tempfile.TemporaryDirectory() as directory:
