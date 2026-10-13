@@ -566,6 +566,63 @@ class TranslationWorkflowTests(unittest.TestCase):
             "following_source_unit",
         )
 
+    def test_empty_structural_marker_is_explicitly_excluded(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "empty-marker.mARkdown"
+            source.write_text(
+                "#META#Header#End#\n"
+                "### $ 1 أول\n"
+                "### ||| \n"
+                "### $ 2 ثان\n",
+                encoding="utf-8",
+            )
+            entries = MODULE.parse_openiti_entries(source)
+            exclusions = MODULE.source_scope_exclusions(source)
+            partition_errors = MODULE.source_partition_errors(
+                source, entries, exclusions
+            )
+
+        self.assertEqual(len(entries), 2)
+        self.assertEqual(
+            [item["kind"] for item in exclusions],
+            ["openiti_metadata", "openiti_empty_structural_marker"],
+        )
+        self.assertEqual(partition_errors, [])
+
+    def test_source_partition_rejects_unclassified_nonblank_row(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "unclassified.mARkdown"
+            source.write_text(
+                "#META#Header#End#\n"
+                "### $ 1 أول\n"
+                "### ||| \n"
+                "### $ 2 ثان\n",
+                encoding="utf-8",
+            )
+            entries = MODULE.parse_openiti_entries(source)
+            exclusions = MODULE.source_scope_exclusions(source)[:1]
+            errors = MODULE.source_partition_errors(source, entries, exclusions)
+
+        self.assertEqual(
+            errors,
+            ["source partition: nonblank line 3 is unclassified"],
+        )
+
+    def test_parser_rejects_terminal_material_without_following_owner(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "terminal.mARkdown"
+            source.write_text(
+                "#META#Header#End#\n"
+                "### $ 1 أول\n"
+                "### ||| ( عنوان بلا مدخل تال )\n",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(
+                MODULE.WorkflowError,
+                "terminal authored material beginning at line 3",
+            ):
+                MODULE.parse_openiti_entries(source)
+
     def test_nonroot_packet_requires_explicit_reviewable_context_source(self):
         issue = assignment_issue(start=2, end=2)
         with self.assertRaisesRegex(

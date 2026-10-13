@@ -2074,24 +2074,91 @@ def source_scope_exclusions(path: Path) -> list[dict[str, Any]]:
             index = range_end
             continue
         control = OPENITI_CONTROL_RE.match(lines[index])
-        if control is None:
+        if control is not None:
+            raw = f"{lines[index]}\n"
+            exclusions.append(
+                {
+                    "kind": "openiti_control",
+                    "lineStart": index + 1,
+                    "lineEnd": index + 1,
+                    "rawSha256": bytes_sha256(raw.encode("utf-8")),
+                    "reason": (
+                        f"OpenITI {control.group(1)} control marker; the following "
+                        "source text remains in translation scope"
+                    ),
+                }
+            )
             index += 1
             continue
-        raw = f"{lines[index]}\n"
-        exclusions.append(
-            {
-                "kind": "openiti_control",
-                "lineStart": index + 1,
-                "lineEnd": index + 1,
-                "rawSha256": bytes_sha256(raw.encode("utf-8")),
-                "reason": (
-                    f"OpenITI {control.group(1)} control marker; the following "
-                    "source text remains in translation scope"
-                ),
-            }
-        )
+        structure = STRUCTURE_RE.match(lines[index])
+        if structure is not None and not structure.group(2).strip():
+            next_nonblank = index + 1
+            while next_nonblank < len(lines) and not lines[next_nonblank].strip():
+                next_nonblank += 1
+            if next_nonblank < len(lines) and lines[next_nonblank].startswith("###"):
+                raw = f"{lines[index]}\n"
+                exclusions.append(
+                    {
+                        "kind": "openiti_empty_structural_marker",
+                        "lineStart": index + 1,
+                        "lineEnd": index + 1,
+                        "rawSha256": bytes_sha256(raw.encode("utf-8")),
+                        "reason": (
+                            "Empty OpenITI structural marker with no authored text; "
+                            "the following source marker remains in translation scope"
+                        ),
+                    }
+                )
         index += 1
     return exclusions
+
+
+def source_partition_errors(
+    path: Path,
+    entries: list[dict[str, Any]],
+    exclusions: list[dict[str, Any]],
+) -> list[str]:
+    """Require every nonblank source row to have exactly one disposition."""
+    lines = path.read_text(encoding="utf-8").splitlines()
+    owners: dict[int, list[str]] = {}
+
+    def own(line_start: Any, line_end: Any, label: str) -> None:
+        if not isinstance(line_start, int) or not isinstance(line_end, int):
+            return
+        for line_number in range(line_start, line_end + 1):
+            owners.setdefault(line_number, []).append(label)
+
+    for entry in entries:
+        ordinal = entry.get("sourceOrdinal")
+        own(entry.get("lineStart"), entry.get("lineEnd"), f"entry {ordinal}")
+        for segment in entry.get("precedingSegments", []):
+            own(
+                segment.get("lineStart"),
+                segment.get("lineEnd"),
+                f"preceding segment {segment.get('segmentId')}",
+            )
+    for index, exclusion in enumerate(exclusions, start=1):
+        own(
+            exclusion.get("lineStart"),
+            exclusion.get("lineEnd"),
+            f"exclusion {index} ({exclusion.get('kind')})",
+        )
+
+    errors: list[str] = []
+    for line_number, line in enumerate(lines, start=1):
+        if not line.strip():
+            continue
+        labels = owners.get(line_number, [])
+        if not labels:
+            errors.append(
+                f"source partition: nonblank line {line_number} is unclassified"
+            )
+        elif len(labels) > 1:
+            errors.append(
+                f"source partition: nonblank line {line_number} has overlapping "
+                f"owners: {', '.join(labels)}"
+            )
+    return errors
 
 
 def parse_openiti_entries(path: Path) -> list[dict[str, Any]]:
@@ -2228,6 +2295,13 @@ def parse_openiti_entries(path: Path) -> list[dict[str, Any]]:
                 "rawLines": [line],
             }
     finish(len(lines))
+    finish_pending(len(lines))
+    if pending_segments:
+        first_line = pending_segments[0]["lineStart"]
+        raise WorkflowError(
+            "source: terminal authored material beginning at line "
+            f"{first_line} is not owned by a following source unit"
+        )
     if not metadata_complete:
         raise WorkflowError("source: OpenITI metadata terminator is missing")
     if not entries:
@@ -2782,6 +2856,10 @@ def build_packet(
     inventory_errors = validate_source_inventory(parsed, manifest)
     if inventory_errors:
         raise WorkflowError("\n".join(inventory_errors))
+    exclusions = source_scope_exclusions(source_path)
+    partition_errors = source_partition_errors(source_path, parsed, exclusions)
+    if partition_errors:
+        raise WorkflowError("\n".join(partition_errors))
     if marker["endUnit"] > len(parsed):
         raise WorkflowError(
             f"source has {len(parsed)} units; assignment ends at {marker['endUnit']}"
@@ -2895,7 +2973,7 @@ def build_packet(
         "policy": policy,
         "scope": {
             "precedingMaterialOwnership": "following_source_unit",
-            "excludedRanges": source_scope_exclusions(source_path),
+            "excludedRanges": exclusions,
         },
         "sliceContext": slice_context_binding,
         "entries": entries,
