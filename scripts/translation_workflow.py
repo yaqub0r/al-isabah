@@ -9,6 +9,7 @@ human-review handoff, and prepares a public-safe pull-request artifact.
 from __future__ import annotations
 
 import argparse
+import copy
 import hashlib
 import json
 import os
@@ -17,6 +18,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import unicodedata
 import urllib.request
 from urllib.parse import urlparse
 from datetime import datetime, timezone
@@ -26,22 +28,22 @@ from typing import Any, Iterable
 SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
-from validate_entry_titles import governed_title_and_body
+from validate_entry_titles import decision_index, governed_title_and_body
 from schema_validation import validate_schema_instance
 from execution_governance import validate_execution
 
 
 ROOT = SCRIPT_DIR.parent
 DEFAULT_MANIFEST = ROOT / "profiles" / "translation-source.v1.json"
-DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v5.json"
-DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v3.schema.json"
+DEFAULT_POLICY = ROOT / "compliance" / "policy-binding.v12.json"
+DEFAULT_PACKET_SCHEMA = ROOT / "schemas" / "translation-work-packet.v10.schema.json"
 FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 RUNTIME_ROOT = ROOT / ".runtime" / "translation"
 PROPOSAL_ROOT = ROOT / "content" / "translation-proposals"
 PUBLIC_PROPOSAL_ROOT = ROOT / "content" / "public-proposals"
 REPOSITORY = "yaqub0r/al-isabah"
 TOOL_VERSION = "3.0.0"
-FORMULA_REGISTRY_VERSION = "1.3.0"
+FORMULA_REGISTRY_VERSION = "1.9.0"
 SEMANTIC_AUDIT_VERSION = "1.0.0"
 STAGE_PROVENANCE_VERSION = "3.0.0"
 PACKET_SCHEMA_VERSION = "3.0.0"
@@ -78,6 +80,7 @@ EXPECTED_POLICY_IDS = {
     "al-isabah-translation-profile",
     "entry-title-structure",
     "entry-title-decisions",
+    "entry-title-decision-schema",
     "honorific-formula-registry",
     "translation-source-profile",
     "execution-method-contract",
@@ -98,11 +101,16 @@ SEMANTIC_STAGE_NAMES = (
 )
 OPENITI_POETRY_MARKER_RE = re.compile(r"(?<!\S)%(?!\S)")
 JSON_PATH_TOKEN_RE = re.compile(r"([A-Za-z][A-Za-z0-9_]*)|\[(\d+)\]")
-PUBLIC_PROCESS_TERMS = (
-    "pinned OpenITI",
-    "pinned wording",
-    "pinned text",
-    "pinned unit",
+PUBLIC_PROCESS_RE = re.compile(
+    r"\b(?:pinned|OpenITI|ACO|Variant English renderings?)\b",
+    re.IGNORECASE,
+)
+ARABIC_SCRIPT_RE = re.compile(
+    r"[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff]"
+)
+ARABIC_LITERAL_RE = re.compile(
+    r"[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff]+"
+    r"(?:[ \t]+[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff]+)*"
 )
 UNRESOLVED_SEVERITIES = {"minor", "material", "blocking", "source_reported"}
 WITNESS_ROLES = {
@@ -113,308 +121,38 @@ WITNESS_ROLES = {
     "same_authority",
     "discovery_check",
 }
+NON_IDENTITY_NAME_FORMS = {
+    "he",
+    "she",
+    "him",
+    "her",
+    "they",
+    "them",
+    "those",
+    "ibn",
+    "bin",
+    "abū",
+    "abu",
+    "umm",
+}
 
-# Longer forms must precede forms that they contain. The registry is kept in
-# executable form so the packet can persist a per-occurrence semantic audit
-# without relying on an application or database.
-FORMULA_RULES = (
-    {
-        "source": "اللهم بارك على محمد وعلى آل محمد",
-        "target": "اللهم بارك على محمد وعلى آل محمد",
-        "semanticClass": "quoted_prophetic_blessing_with_family",
-        "referentScope": "Muḥammad and the family of Muḥammad",
-        "grammaticalAgreement": (
-            "second-person masculine singular imperative addressed to God; "
-            "masculine singular prophetic referent with family inclusion"
-        ),
-        "expandedArabic": "اللهم بارك على محمد وعلى آل محمد",
-    },
-    {
-        "source": "صلى الله عليه وعليهم صلاة خالدة ، وسلاما مؤبدا [ وسلم تسليما ]",
-        "target": (
-            "May God bless him and them with an everlasting blessing and grant "
-            "them perpetual peace [and fullest peace]."
-        ),
-        "semanticClass": "contextual_prayer_and_peace_invocation",
-        "referentScope": "the Prophet and his Companions",
-        "grammaticalAgreement": "masculine singular and masculine plural",
-        "expandedArabic": (
-            "صلى الله عليه وعليهم صلاة خالدة ، وسلاما مؤبدا [ وسلم تسليما ]"
-        ),
-    },
-    {
-        "source": "صلى الله تعالى عليه وعلى آله وسلم",
-        "target": "﵌",
-        "semanticClass": "prophetic_blessing_with_family",
-        "referentScope": "the Prophet and his family",
-        "grammaticalAgreement": "masculine singular with family inclusion",
-        "expandedArabic": "صلى الله تعالى عليه وعلى آله وسلم",
-    },
-    # The locked source has one transparent OCR substitution in the formula.
-    {
-        "source": "صلى الله علسه وسلم",
-        "target": "ﷺ",
-        "semanticClass": "prophetic_blessing",
-        "referentScope": "the Prophet",
-        "grammaticalAgreement": "masculine singular",
-        "expandedArabic": "صلى الله عليه وسلم",
-    },
-    {
-        "source": "صلى آله عليه وسلم",
-        "target": "ﷺ",
-        "semanticClass": "prophetic_blessing",
-        "referentScope": "the Prophet",
-        "grammaticalAgreement": "masculine singular",
-        "expandedArabic": "صلى الله عليه وسلم",
-    },
-    {
-        "source": "صلى الله عليه وعلى آله وسلم",
-        "target": "﵌",
-        "semanticClass": "prophetic_blessing_with_family",
-        "referentScope": "the Prophet and his family",
-        "grammaticalAgreement": "masculine singular with family inclusion",
-        "expandedArabic": "صلى الله عليه وعلى آله وسلم",
-    },
-    {
-        "source": "صلى الله عليه وآله وسلم",
-        "target": "﵌",
-        "semanticClass": "prophetic_blessing_with_family",
-        "referentScope": "the Prophet and his family",
-        "grammaticalAgreement": "masculine singular with family inclusion",
-        "expandedArabic": "صلى الله عليه وآله وسلم",
-    },
-    # A locked Volume 2 page marker interrupts one family-inclusive blessing.
-    {
-        "source": "صلى 204 الله عليه وآله وسلم",
-        "target": "﵌",
-        "semanticClass": "prophetic_blessing_with_family",
-        "referentScope": "the Prophet and his family",
-        "grammaticalAgreement": "masculine singular with family inclusion",
-        "expandedArabic": "صلى الله عليه وآله وسلم",
-    },
-    {
-        "source": "صلى الله 207 عليه وآله وسلم",
-        "target": "﵌",
-        "semanticClass": "prophetic_blessing_with_family",
-        "referentScope": "the Prophet and his family",
-        "grammaticalAgreement": "masculine singular with family inclusion",
-        "expandedArabic": "صلى الله عليه وآله وسلم",
-    },
-    # The locked source has one transposed family-inclusive blessing.
-    {
-        "source": "صلى الله عليه وسلم وآله وسلم",
-        "target": "﵌",
-        "semanticClass": "prophetic_blessing_with_family",
-        "referentScope": "the Prophet and his family",
-        "grammaticalAgreement": "masculine singular with family inclusion",
-        "expandedArabic": "صلى الله عليه وآله وسلم",
-    },
-    {
-        "source": "صلى الله عليه وسلم",
-        "target": "ﷺ",
-        "semanticClass": "prophetic_blessing",
-        "referentScope": "the Prophet",
-        "grammaticalAgreement": "masculine singular",
-        "expandedArabic": "صلى الله عليه وسلم",
-    },
-    {
-        "source": "رضي الله عنهما",
-        "target": "﵄",
-        "semanticClass": "divine_approval",
-        "referentScope": "the two immediately preceding referents",
-        "grammaticalAgreement": "dual",
-        "expandedArabic": "رضي الله عنهما",
-    },
-    {
-        "source": "رضي الله عنهم",
-        "target": "﵃",
-        "semanticClass": "divine_approval",
-        "referentScope": "the immediately preceding group",
-        "grammaticalAgreement": "masculine plural",
-        "expandedArabic": "رضي الله عنهم",
-    },
-    {
-        "source": "رضي الله عنهن",
-        "target": "﵅",
-        "semanticClass": "divine_approval",
-        "referentScope": "the immediately preceding group",
-        "grammaticalAgreement": "feminine plural",
-        "expandedArabic": "رضي الله عنهن",
-    },
-    {
-        "source": "رضي الله عنها",
-        "target": "﵂",
-        "semanticClass": "divine_approval",
-        "referentScope": "the immediately preceding female referent",
-        "grammaticalAgreement": "feminine singular",
-        "expandedArabic": "رضي الله عنها",
-    },
-    {
-        "source": "رضي الله عنه",
-        "target": "﵁",
-        "semanticClass": "divine_approval",
-        "referentScope": "the immediately preceding male referent",
-        "grammaticalAgreement": "masculine singular",
-        "expandedArabic": "رضي الله عنه",
-    },
-    {
-        "source": "رحمهم الله",
-        "target": "﵏",
-        "semanticClass": "mercy_invocation",
-        "referentScope": "the immediately preceding group",
-        "grammaticalAgreement": "plural",
-        "expandedArabic": "رحمهم الله",
-    },
-    {
-        "source": "رحمه الله",
-        "target": "﵀",
-        "semanticClass": "mercy_invocation",
-        "referentScope": "the immediately preceding male referent",
-        "grammaticalAgreement": "masculine singular",
-        "expandedArabic": "رحمه الله",
-    },
-    {
-        "source": "عليهما السلام",
-        "target": "﵉",
-        "semanticClass": "peace_invocation",
-        "referentScope": "the two immediately preceding referents",
-        "grammaticalAgreement": "dual",
-        "expandedArabic": "عليهما السلام",
-    },
-    {
-        "source": "عليهم السلام",
-        "target": "﵈",
-        "semanticClass": "peace_invocation",
-        "referentScope": "the immediately preceding group",
-        "grammaticalAgreement": "plural",
-        "expandedArabic": "عليهم السلام",
-    },
-    {
-        "source": "عليه الصلاة والسلام",
-        "target": "﵊",
-        "semanticClass": "prayer_and_peace_invocation",
-        "referentScope": "the immediately preceding prophetic referent",
-        "grammaticalAgreement": "masculine singular",
-        "expandedArabic": "عليه الصلاة والسلام",
-    },
-    {
-        "source": "عليه السلام",
-        "target": "﵇",
-        "semanticClass": "peace_invocation",
-        "referentScope": "the immediately preceding prophetic referent",
-        "grammaticalAgreement": "masculine singular",
-        "expandedArabic": "عليه السلام",
-    },
-    {
-        "source": "إن شاء الله تعالى",
-        "target": "إن شاء الله تعالى",
-        "semanticClass": "divine_will_qualification",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "إن شاء الله تعالى",
-    },
-    {
-        "source": "إن شاء الله",
-        "target": "إن شاء الله",
-        "semanticClass": "divine_will_qualification",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "إن شاء الله",
-    },
-    {
-        "source": "سبحانه وتعالى",
-        "target": "سبحانه وتعالى",
-        "semanticClass": "divine_exaltation",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "سبحانه وتعالى",
-    },
-    {
-        "source": "تبارك وتعالى",
-        "target": "﵎",
-        "semanticClass": "divine_exaltation",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "تبارك وتعالى",
-    },
-    {
-        "source": "والله أعلم",
-        "target": "والله أعلم",
-        "semanticClass": "divine_knowledge_qualification",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "والله أعلم",
-    },
-    # The locked source occasionally omits the hamza in this closing.
-    {
-        "source": "والله اعلم",
-        "target": "والله أعلم",
-        "semanticClass": "divine_knowledge_qualification",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "والله أعلم",
-    },
-    {
-        "source": "الله أعلم",
-        "target": "الله أعلم",
-        "semanticClass": "divine_knowledge_qualification",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "الله أعلم",
-    },
-    {
-        "source": "عز وجل",
-        "target": "﷿",
-        "semanticClass": "divine_exaltation",
-        "referentScope": "God",
-        "grammaticalAgreement": "not_applicable",
-        "expandedArabic": "عز وجل",
-    },
-)
+# Load the versioned local registry as the single executable formula source.
+# Import fails closed when the bound registry is missing, malformed, or stale.
+_FORMULA_REGISTRY = json.loads(FORMULA_REGISTRY_PATH.read_text(encoding="utf-8"))
+if _FORMULA_REGISTRY.get("registryVersion") != FORMULA_REGISTRY_VERSION:
+    raise RuntimeError("formula registry version is out of sync")
+FORMULA_RULES = tuple(_FORMULA_REGISTRY.get("entries", ()))
+if not FORMULA_RULES or not all(
+    isinstance(rule, dict) and isinstance(rule.get("accessibleEnglish"), str)
+    and rule["accessibleEnglish"].strip()
+    for rule in FORMULA_RULES
+):
+    raise RuntimeError("formula registry entries are incomplete")
 
-# The compact display value never stands alone as the semantic record. Keep a
-# target-language expansion for accessibility, search, copy, and review. This
-# tuple is intentionally parallel to FORMULA_RULES, whose order is already
-# semantically significant because longer source forms must be matched first.
-FORMULA_ACCESSIBLE_ENGLISH = (
-    "O God, bless Muḥammad and the family of Muḥammad.",
-    "May God bless him and them with an everlasting blessing and grant them perpetual peace [and fullest peace].",
-    "May God bless him and his family and grant them peace.",
-    "May God bless him and grant him peace.",
-    "May God bless him and grant him peace.",
-    "May God bless him and his family and grant them peace.",
-    "May God bless him and his family and grant them peace.",
-    "May God bless him and his family and grant them peace.",
-    "May God bless him and his family and grant them peace.",
-    "May God bless him and his family and grant them peace.",
-    "May God bless him and grant him peace.",
-    "May God be pleased with both of them.",
-    "May God be pleased with them.",
-    "May God be pleased with them.",
-    "May God be pleased with her.",
-    "May God be pleased with him.",
-    "May God have mercy on them.",
-    "May God have mercy on him.",
-    "Peace be upon both of them.",
-    "Peace be upon them.",
-    "May blessings and peace be upon him.",
-    "Peace be upon him.",
-    "God willing, exalted is He.",
-    "God willing.",
-    "Glory be to Him, the Exalted.",
-    "Blessed and exalted is He.",
-    "And God knows best.",
-    "And God knows best.",
-    "God knows best.",
-    "Mighty and majestic is He.",
-)
-if len(FORMULA_ACCESSIBLE_ENGLISH) != len(FORMULA_RULES):
-    raise RuntimeError("formula accessibility registry is out of sync")
-FORMULA_RULES = tuple(
-    {**rule, "accessibleEnglish": accessible}
-    for rule, accessible in zip(FORMULA_RULES, FORMULA_ACCESSIBLE_ENGLISH)
-)
-
+# The basmala was historically treated as contextual in entry bodies. Current
+# packet construction opts it in explicitly while retaining the default for
+# callers that validate immutable historical artifacts.
+CONTEXTUAL_FORMULA_SOURCES = {"بسم الله الرحمن الرحيم"}
 
 class WorkflowError(ValueError):
     """A deterministic translation-workflow failure."""
@@ -441,36 +179,140 @@ def text_sha256(value: str) -> str:
     return bytes_sha256(value.encode("utf-8"))
 
 
-def registered_occurrences(text: str, field: str) -> list[dict[str, Any]]:
+def registered_occurrences(
+    text: str, field: str, *, include_contextual: bool = False
+) -> list[dict[str, Any]]:
     """Return non-overlapping formula occurrences, preferring longer forms."""
+    contextual_spans: tuple[tuple[int, int], ...] = ()
+    if not include_contextual:
+        if field == "target":
+            contextual_values = {
+                str(value)
+                for rule in FORMULA_RULES
+                if str(rule["source"]) in CONTEXTUAL_FORMULA_SOURCES
+                for value in (
+                    rule["target"],
+                    rule["source"],
+                    rule["expandedArabic"],
+                )
+            }
+        else:
+            contextual_values = {
+                str(rule["source"])
+                for rule in FORMULA_RULES
+                if str(rule["source"]) in CONTEXTUAL_FORMULA_SOURCES
+            }
+        contextual_pattern = re.compile(
+            "|".join(
+                re.escape(value)
+                for value in sorted(contextual_values, key=len, reverse=True)
+            )
+        )
+        contextual_spans = tuple(
+            match.span() for match in contextual_pattern.finditer(text)
+        )
+    rules = tuple(
+        rule
+        for rule in FORMULA_RULES
+        if include_contextual
+        or str(rule["source"]) not in CONTEXTUAL_FORMULA_SOURCES
+    )
     if field == "target":
         values = sorted(
             {
                 str(value)
-                for rule in FORMULA_RULES
-                for value in (rule["target"], rule["expandedArabic"])
+                for rule in rules
+                for value in (
+                    rule["target"],
+                    rule["source"],
+                    rule["expandedArabic"],
+                )
             },
             key=len,
             reverse=True,
         )
     else:
-        values = sorted({str(rule[field]) for rule in FORMULA_RULES}, key=len, reverse=True)
+        values = sorted({str(rule[field]) for rule in rules}, key=len, reverse=True)
+    if not values:
+        return []
     pattern = re.compile("|".join(re.escape(value) for value in values))
     occurrences: list[dict[str, Any]] = []
     for match in pattern.finditer(text):
+        before = text[match.start() - 1] if match.start() else ""
+        after = text[match.end()] if match.end() < len(text) else ""
+        if any(
+            character
+            and unicodedata.name(character, "").startswith("ARABIC")
+            and unicodedata.category(character)[0] in {"L", "M"}
+            for character in (before, after)
+        ):
+            # A governed expression must be a complete Arabic token or phrase,
+            # never a substring of a personal name or another lexical word.
+            continue
+        if any(
+            start <= match.start() and match.end() <= end
+            for start, end in contextual_spans
+        ):
+            continue
         value = match.group(0)
         if field == "target":
             rule = next(
-                rule
-                for rule in FORMULA_RULES
-                if value in {rule["target"], rule["expandedArabic"]}
+                (item for item in rules if value == item["target"]),
+                None,
             )
+            if rule is None:
+                rule = next(
+                    (item for item in rules if value == item["source"]),
+                    None,
+                )
+            if rule is None:
+                rule = next(
+                    item for item in rules if value == item["expandedArabic"]
+                )
         else:
-            rule = next(rule for rule in FORMULA_RULES if rule[field] == value)
+            rule = next(rule for rule in rules if rule[field] == value)
+        end = match.end()
+        if (
+            field == "source"
+            and rule["source"] == "صلى الله عليه وسلم وآله"
+            and re.match(r"\s+رجلا(?:\s|$)", text[match.end() :]) is not None
+        ):
+            value = "صلى الله عليه وسلم"
+            rule = next(item for item in rules if item["source"] == value)
+            end = match.start() + len(value)
+        if (
+            field == "source"
+            and rule["source"] == "تعالى"
+            and re.search(r"(?:الله|لله|قوله|قال)\s*$", text[: match.start()]) is None
+        ):
+            continue
+        if rule["source"] == "والله عنده حسن المآب" and text[
+            match.end() :
+        ].strip(" \t\r\n.,;:!?؟،؛—–"):
+            # This phrase is formulaic only as the reviewed entry-final closing.
+            continue
+        if rule["source"] == "صلى الله":
+            prefix = text[: match.start()]
+            suffix = text[match.end() :]
+            if field == "source":
+                has_prophetic_referent = re.search(
+                    r"(?:رسول الله|النبي)\s*$", prefix
+                )
+            else:
+                has_prophetic_referent = re.search(
+                    r"(?:Messenger of (?:God|Allah)|Prophet)\s*$", prefix,
+                    flags=re.IGNORECASE,
+                )
+            has_formula_continuation = re.match(
+                r"\s+(?:تعالى|عليه|عيه|علي|عيله|عله|على|و?آله|واله)",
+                suffix,
+            )
+            if has_prophetic_referent is None or has_formula_continuation is not None:
+                continue
         occurrences.append(
             {
                 "start": match.start(),
-                "end": match.end(),
+                "end": end,
                 "value": value,
                 "rule": rule,
             }
@@ -489,12 +331,20 @@ def formula_inventory(packet: dict[str, Any]) -> tuple[dict[str, Any], list[str]
         source_text: str | None,
         blind_text: str | None,
         adjudicated_text: str | None,
+        *,
+        include_contextual: bool = False,
     ) -> None:
         if not source_text:
             return
-        source_hits = registered_occurrences(source_text, "source")
-        blind_hits = registered_occurrences(blind_text or "", "target")
-        adjudicated_hits = registered_occurrences(adjudicated_text or "", "target")
+        source_hits = registered_occurrences(
+            source_text, "source", include_contextual=include_contextual
+        )
+        blind_hits = registered_occurrences(
+            blind_text or "", "target", include_contextual=include_contextual
+        )
+        adjudicated_hits = registered_occurrences(
+            adjudicated_text or "", "target", include_contextual=include_contextual
+        )
         expected_classes = [
             (
                 hit["rule"]["semanticClass"],
@@ -580,6 +430,7 @@ def formula_inventory(packet: dict[str, Any]) -> tuple[dict[str, Any], list[str]
                 segment.get("headingArabic"),
                 blind.get("headingEnglish"),
                 adjudication.get("headingEnglish"),
+                include_contextual=True,
             )
             add_record(
                 record_id,
@@ -587,6 +438,7 @@ def formula_inventory(packet: dict[str, Any]) -> tuple[dict[str, Any], list[str]
                 segment.get("arabic"),
                 blind.get("english"),
                 adjudication.get("english"),
+                include_contextual=True,
             )
         add_record(
             str(entry.get("sourceUnitId")),
@@ -594,6 +446,7 @@ def formula_inventory(packet: dict[str, Any]) -> tuple[dict[str, Any], list[str]
             source.get("arabic"),
             entry.get("blindTranslation", {}).get("english"),
             entry.get("adjudication", {}).get("english"),
+            include_contextual=True,
         )
     formula_ids = [item["formulaId"] for item in occurrences]
     if len(formula_ids) != len(set(formula_ids)):
@@ -756,6 +609,10 @@ def validate_names(
             errors.append(f"{prefix}: {candidate_id} observed Arabic leaks OpenITI markup")
         if not isinstance(proposed, str) or not proposed.strip():
             errors.append(f"{prefix}: {candidate_id} has no proposed English form")
+        elif proposed.strip().casefold() in NON_IDENTITY_NAME_FORMS:
+            errors.append(
+                f"{prefix}: {candidate_id} proposed English is not an identity-bearing form"
+            )
         aliases = candidate.get("aliases")
         if not isinstance(aliases, list) or not all(
             isinstance(alias, str) and alias.strip()
@@ -1090,6 +947,7 @@ def completed_stage_provenance(
     run_id: str | None = None,
     origin: str = "direct_execution",
     rebinding: dict[str, Any] | None = None,
+    execution: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """Build deterministic provenance after externally produced evidence exists."""
     source_sha256 = semantic_source_sha256(source)
@@ -1126,10 +984,63 @@ def completed_stage_provenance(
         "outputSha256": content_sha256(stage_output_payload(owner, stage)),
         "fingerprint": None,
         "rebinding": rebinding,
-        "execution": None,
+        "execution": copy.deepcopy(execution),
     }
     provenance["fingerprint"] = stage_fingerprint(provenance)
     return provenance
+
+
+def validate_stage_execution(
+    provenance: dict[str, Any], stage: str
+) -> list[str]:
+    """Validate the captured execution that produced a stage before repair.
+
+    A deterministic rebind changes content-addressed hashes but is not another
+    semantic model run. Its preserved execution envelope therefore remains
+    bound to the original direct execution recorded inside that envelope.
+    """
+    if provenance.get("origin") != "deterministic_rebinding":
+        return validate_execution(provenance, stage)
+    execution = provenance.get("execution")
+    binding = execution.get("binding") if isinstance(execution, dict) else None
+    if not isinstance(binding, dict):
+        return [
+            "host runtime: deterministic rebinding must preserve captured host evidence"
+        ]
+    rebinding = provenance.get("rebinding")
+    if not isinstance(rebinding, dict):
+        return [
+            "host runtime: deterministic rebinding lacks original execution lineage"
+        ]
+    lineage_errors: list[str] = []
+    if binding.get("runId") != rebinding.get("runId"):
+        lineage_errors.append(
+            "host runtime: preserved execution run does not match rebinding lineage"
+        )
+    if rebinding.get("previousOrigin") == "direct_execution":
+        for binding_field, rebinding_field in (
+            ("inputSha256", "previousInputSha256"),
+            ("outputSha256", "previousOutputSha256"),
+            ("checkpointSha256", "previousFingerprint"),
+        ):
+            if binding.get(binding_field) != rebinding.get(rebinding_field):
+                lineage_errors.append(
+                    "host runtime: preserved execution does not match the original "
+                    "direct checkpoint"
+                )
+                break
+    if lineage_errors:
+        return lineage_errors
+    historical = copy.deepcopy(provenance)
+    historical["origin"] = "direct_execution"
+    for provenance_field, binding_field in (
+        ("runId", "runId"),
+        ("inputSha256", "inputSha256"),
+        ("outputSha256", "outputSha256"),
+        ("fingerprint", "checkpointSha256"),
+    ):
+        historical[provenance_field] = binding.get(binding_field)
+    return validate_execution(historical, stage)
 
 
 def validate_independent_context(
@@ -1459,7 +1370,7 @@ def validate_stage_provenance(
             errors.append(f"{prefix}: witness result evidence is not attached")
     if require_independent_context:
         errors.extend(validate_independent_context(owner, provenance, prefix))
-    errors.extend(validate_execution(provenance, stage))
+    errors.extend(validate_stage_execution(provenance, stage))
     return errors
 
 
@@ -1813,16 +1724,99 @@ def validate_uncertainty_witness_alignment(
     return []
 
 
-def validate_public_english(value: str | None, prefix: str) -> list[str]:
+def formula_occurrences_for_target(
+    formula_occurrences: list[dict[str, Any]],
+    target_text: str | None,
+    target_kind: str,
+    *,
+    source_field: str | None = None,
+) -> list[dict[str, Any]]:
+    """Project inventory occurrences onto one stage's exact target spelling."""
+    start_field, end_field = {
+        "blind": ("blindStart", "blindEnd"),
+        "adjudicated": ("adjudicatedStart", "adjudicatedEnd"),
+    }[target_kind]
+    text = target_text or ""
+    projected: list[dict[str, Any]] = []
+    for occurrence in formula_occurrences:
+        if not isinstance(occurrence, dict):
+            continue
+        if source_field is not None and occurrence.get("sourceField") != source_field:
+            continue
+        item = dict(occurrence)
+        start = item.get(start_field)
+        end = item.get(end_field)
+        if (
+            isinstance(start, int)
+            and isinstance(end, int)
+            and 0 <= start < end <= len(text)
+        ):
+            item["targetRealization"] = text[start:end]
+        projected.append(item)
+    return projected
+
+
+def validate_public_english(
+    value: str | None,
+    prefix: str,
+    formula_occurrences: list[dict[str, Any]] | None = None,
+    allowed_arabic_literals: list[str] | None = None,
+) -> list[str]:
     if not value:
         return []
     errors: list[str] = []
     if OPENITI_POETRY_MARKER_RE.search(value):
         errors.append(f"{prefix}: raw OpenITI poetry marker leaked into English")
-    for term in PUBLIC_PROCESS_TERMS:
-        if term.lower() in value.lower():
-            errors.append(f"{prefix}: internal process language leaked into English")
+    if PUBLIC_PROCESS_RE.search(value):
+        errors.append(f"{prefix}: internal process language leaked into English")
+    if formula_occurrences is not None:
+        residual = value
+        targets = [
+            occurrence.get("targetRealization")
+            for occurrence in formula_occurrences
+            if isinstance(occurrence, dict)
+            and isinstance(occurrence.get("targetRealization"), str)
+            and occurrence["targetRealization"]
+        ]
+        for target in sorted(targets, key=len, reverse=True):
+            location = residual.find(target)
+            if location < 0:
+                errors.append(
+                    f"{prefix}: declared formula target is missing from English"
+                )
+                continue
+            residual = residual[:location] + residual[location + len(target):]
+        for literal in sorted(allowed_arabic_literals or [], key=len, reverse=True):
+            location = residual.find(literal)
+            if location >= 0:
+                residual = residual[:location] + residual[location + len(literal):]
+        if ARABIC_SCRIPT_RE.search(residual):
+            errors.append(
+                f"{prefix}: Arabic outside declared formula targets leaked into English"
+            )
     return errors
+
+
+def governed_arabic_literals(value: str | None) -> list[str]:
+    """Return exact Arabic spans, preserving spaces inside a governed literal."""
+    formula_literals = {
+        str(formula_value)
+        for rule in FORMULA_RULES
+        for formula_value in (rule["source"], rule["target"], rule["expandedArabic"])
+    }
+    def is_formula_literal(literal: str) -> bool:
+        pattern = re.compile(
+            r"(?<![\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff])"
+            + re.escape(literal)
+            + r"(?![\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff])"
+        )
+        return any(pattern.search(formula_literal) for formula_literal in formula_literals)
+
+    return [
+        literal
+        for literal in ARABIC_LITERAL_RE.findall(value or "")
+        if not is_formula_literal(literal)
+    ]
 
 
 def present_openiti_arabic(value: str) -> str:
@@ -2120,24 +2114,95 @@ def source_scope_exclusions(path: Path) -> list[dict[str, Any]]:
             index = range_end
             continue
         control = OPENITI_CONTROL_RE.match(lines[index])
-        if control is None:
+        if control is not None:
+            raw = f"{lines[index]}\n"
+            exclusions.append(
+                {
+                    "kind": "openiti_control",
+                    "lineStart": index + 1,
+                    "lineEnd": index + 1,
+                    "rawSha256": bytes_sha256(raw.encode("utf-8")),
+                    "reason": (
+                        f"OpenITI {control.group(1)} control marker; the following "
+                        "source text remains in translation scope"
+                    ),
+                }
+            )
             index += 1
             continue
-        raw = f"{lines[index]}\n"
-        exclusions.append(
-            {
-                "kind": "openiti_control",
-                "lineStart": index + 1,
-                "lineEnd": index + 1,
-                "rawSha256": bytes_sha256(raw.encode("utf-8")),
-                "reason": (
-                    f"OpenITI {control.group(1)} control marker; the following "
-                    "source text remains in translation scope"
-                ),
-            }
-        )
+        structure = STRUCTURE_RE.match(lines[index])
+        if structure is not None and not structure.group(2).strip():
+            next_nonblank = index + 1
+            while next_nonblank < len(lines) and not lines[next_nonblank].strip():
+                next_nonblank += 1
+            if next_nonblank < len(lines) and lines[next_nonblank].startswith("###"):
+                raw = f"{lines[index]}\n"
+                exclusions.append(
+                    {
+                        # The packet schema intentionally keeps exclusions in
+                        # three stable categories.  An empty OpenITI structural
+                        # marker is container control syntax, not a fourth
+                        # publication/content class.
+                        "kind": "openiti_control",
+                        "lineStart": index + 1,
+                        "lineEnd": index + 1,
+                        "rawSha256": bytes_sha256(raw.encode("utf-8")),
+                        "reason": (
+                            "Empty OpenITI structural marker with no authored text; "
+                            "the following source marker remains in translation scope"
+                        ),
+                    }
+                )
         index += 1
     return exclusions
+
+
+def source_partition_errors(
+    path: Path,
+    entries: list[dict[str, Any]],
+    exclusions: list[dict[str, Any]],
+) -> list[str]:
+    """Require every nonblank source row to have exactly one disposition."""
+    lines = path.read_text(encoding="utf-8").splitlines()
+    owners: dict[int, list[str]] = {}
+
+    def own(line_start: Any, line_end: Any, label: str) -> None:
+        if not isinstance(line_start, int) or not isinstance(line_end, int):
+            return
+        for line_number in range(line_start, line_end + 1):
+            owners.setdefault(line_number, []).append(label)
+
+    for entry in entries:
+        ordinal = entry.get("sourceOrdinal")
+        own(entry.get("lineStart"), entry.get("lineEnd"), f"entry {ordinal}")
+        for segment in entry.get("precedingSegments", []):
+            own(
+                segment.get("lineStart"),
+                segment.get("lineEnd"),
+                f"preceding segment {segment.get('segmentId')}",
+            )
+    for index, exclusion in enumerate(exclusions, start=1):
+        own(
+            exclusion.get("lineStart"),
+            exclusion.get("lineEnd"),
+            f"exclusion {index} ({exclusion.get('kind')})",
+        )
+
+    errors: list[str] = []
+    for line_number, line in enumerate(lines, start=1):
+        if not line.strip():
+            continue
+        labels = owners.get(line_number, [])
+        if not labels:
+            errors.append(
+                f"source partition: nonblank line {line_number} is unclassified"
+            )
+        elif len(labels) > 1:
+            errors.append(
+                f"source partition: nonblank line {line_number} has overlapping "
+                f"owners: {', '.join(labels)}"
+            )
+    return errors
 
 
 def parse_openiti_entries(path: Path) -> list[dict[str, Any]]:
@@ -2211,6 +2276,25 @@ def parse_openiti_entries(path: Path) -> list[dict[str, Any]]:
             finish(line_number - 1)
             finish_pending(line_number - 1)
             continue
+        # The invocation immediately before the four-pipe Muhammad section is
+        # structural context for the following unit.  Keep this exact adjacent
+        # pair out of the preceding biography; ordinary ``# `` prose remains
+        # part of its current source unit.
+        next_line = lines[line_number] if line_number < len(lines) else ""
+        next_structure = STRUCTURE_RE.match(next_line)
+        if (
+            current is not None
+            and line == "# بسم الله الرحمن الرحيم"
+            and next_structure is not None
+            and len(next_structure.group(1)) == 4
+        ):
+            finish(line_number - 1)
+            pending = {
+                "lineStart": line_number,
+                "startPage": current_page,
+                "rawLines": [line],
+            }
+            continue
         match = ENTRY_RE.match(line)
         if match:
             finish(line_number - 1)
@@ -2255,6 +2339,13 @@ def parse_openiti_entries(path: Path) -> list[dict[str, Any]]:
                 "rawLines": [line],
             }
     finish(len(lines))
+    finish_pending(len(lines))
+    if pending_segments:
+        first_line = pending_segments[0]["lineStart"]
+        raise WorkflowError(
+            "source: terminal authored material beginning at line "
+            f"{first_line} is not owned by a following source unit"
+        )
     if not metadata_complete:
         raise WorkflowError("source: OpenITI metadata terminator is missing")
     if not entries:
@@ -2464,7 +2555,7 @@ def load_issue(number: int, path: Path | None = None) -> dict[str, Any]:
 
 def policy_snapshot(policy_path: Path) -> dict[str, Any]:
     policy = load_json(policy_path)
-    if policy.get("schema") != "al-isabah.local-policy-binding.v5":
+    if policy.get("schema") != "al-isabah.local-policy-binding.v12":
         raise WorkflowError("policy binding has an unexpected schema")
     authority = policy.get("authority", {})
     if authority.get("repository") != "https://github.com/yaqub0r/al-isabah":
@@ -2488,7 +2579,7 @@ def policy_snapshot(policy_path: Path) -> dict[str, Any]:
         if canonical_text_sha256(path) != contract.get("sha256"):
             raise WorkflowError(f"policy binding hash is stale: {contract.get('id')}")
     return {
-        "bindingPath": "compliance/policy-binding.v5.json",
+        "bindingPath": "compliance/policy-binding.v12.json",
         "bindingSha256": canonical_text_sha256(policy_path),
         "contracts": contracts,
     }
@@ -2496,7 +2587,7 @@ def policy_snapshot(policy_path: Path) -> dict[str, Any]:
 
 def active_title_decisions(
     contracts: list[dict[str, Any]],
-) -> dict[int, dict[str, Any]]:
+) -> dict[int | str, dict[str, Any]]:
     """Return all decisions from the integrity-checked active title profile."""
     matches = [
         contract
@@ -2517,14 +2608,10 @@ def active_title_decisions(
     decisions = profile.get("decisions")
     if not isinstance(decisions, list):
         raise WorkflowError("entry-title decision profile has no decisions array")
-    indexed: dict[int, dict[str, Any]] = {}
-    for decision in decisions:
-        if not isinstance(decision, dict):
-            continue
-        number = decision.get("sourceEntryNumber")
-        if isinstance(number, int):
-            indexed[number] = decision
-    return indexed
+    try:
+        return decision_index(profile)
+    except ValueError as exc:
+        raise WorkflowError("entry-title decision profile is invalid") from exc
 
 
 def active_title_editorial_supplies(
@@ -2534,6 +2621,7 @@ def active_title_editorial_supplies(
     return {
         number: decision
         for number, decision in active_title_decisions(contracts).items()
+        if isinstance(number, int)
         if isinstance(decision.get("editorialSupply"), dict)
         and decision["editorialSupply"].get("kind")
         == "witness-bound-subject-head"
@@ -2812,6 +2900,10 @@ def build_packet(
     inventory_errors = validate_source_inventory(parsed, manifest)
     if inventory_errors:
         raise WorkflowError("\n".join(inventory_errors))
+    exclusions = source_scope_exclusions(source_path)
+    partition_errors = source_partition_errors(source_path, parsed, exclusions)
+    if partition_errors:
+        raise WorkflowError("\n".join(partition_errors))
     if marker["endUnit"] > len(parsed):
         raise WorkflowError(
             f"source has {len(parsed)} units; assignment ends at {marker['endUnit']}"
@@ -2925,7 +3017,7 @@ def build_packet(
         "policy": policy,
         "scope": {
             "precedingMaterialOwnership": "following_source_unit",
-            "excludedRanges": source_scope_exclusions(source_path),
+            "excludedRanges": exclusions,
         },
         "sliceContext": slice_context_binding,
         "entries": entries,
@@ -3139,7 +3231,7 @@ def repair_operation_owner(
     leaf_fields = {
         "blindTranslation": (
             "blind_translation",
-            {"headingEnglish", "english", "policySha256"},
+            {"headingEnglish", "english", "policySha256", "reasoning"},
             "text",
         ),
         "independentCritique": (
@@ -3280,8 +3372,10 @@ def repaired_target_stages(
                 continue
             if operation.get("valueKind") != "text":
                 continue
-            if str(operation.get("fieldPath", "")).endswith(".policySha256"):
-                # This changes a stage binding and its content hash, not the
+            if str(operation.get("fieldPath", "")).endswith(
+                (".policySha256", ".reasoning")
+            ):
+                # These change stage metadata and its content hash, not the
                 # English candidate governed by the semantic audit.
                 continue
             try:
@@ -3304,7 +3398,20 @@ def validate_post_run_repair_audits(packet: dict[str, Any]) -> list[str]:
     last_hash_by_path: dict[str, tuple[str, str]] = {}
     last_audit_index_by_path: dict[str, int] = {}
     last_operation_order_by_path: dict[str, tuple[int, int]] = {}
-    policy_root_audit_indices: set[int] = set()
+    policy_root_audit_indices = {
+        audit_index
+        for audit_index, audit in enumerate(audits, start=1)
+        if isinstance(audit, dict)
+        and any(
+            isinstance(operation, dict)
+            and is_policy_root_repair_operation(operation)
+            for operation in audit.get("operations", [])
+        )
+    }
+    latest_policy_root_audit_index = (
+        max(policy_root_audit_indices) if policy_root_audit_indices else None
+    )
+    policy_root_binding_chain: list[tuple[int, str, str]] = []
     operation_orders = [
         (audit_index, operation_index, str(operation.get("fieldPath")))
         for audit_index, audit in enumerate(audits, start=1)
@@ -3361,7 +3468,6 @@ def validate_post_run_repair_audits(packet: dict[str, Any]) -> list[str]:
             and is_policy_root_repair_operation(operation)
         ]
         if policy_root_operations:
-            policy_root_audit_indices.add(audit_index)
             if len(policy_root_operations) != 1:
                 errors.append(
                     f"{audit_prefix}: policy repair must contain exactly one root operation"
@@ -3392,29 +3498,34 @@ def validate_post_run_repair_audits(packet: dict[str, Any]) -> list[str]:
                 errors.append(f"{audit_prefix}: policy binding hashes are invalid")
             elif old_binding == new_binding:
                 errors.append(f"{audit_prefix}: policy binding repair must change policy")
-            try:
-                expected_policy = policy_snapshot(DEFAULT_POLICY)
-            except WorkflowError as exc:
-                errors.append(f"{audit_prefix}: active policy is invalid: {exc}")
-                expected_policy = None
-            if expected_policy is not None:
-                if packet.get("policy") != expected_policy:
-                    errors.append(
-                        f"{audit_prefix}: repaired policy does not exactly match "
-                        "the active local binding"
-                    )
-                if new_binding != expected_policy.get("bindingSha256"):
-                    errors.append(
-                        f"{audit_prefix}: new policy binding does not match "
-                        "the active local binding"
-                    )
-                if policy_root.get("newValueSha256") != content_sha256(
-                    expected_policy
-                ):
-                    errors.append(
-                        f"{audit_prefix}: new policy object hash does not match "
-                        "the active local binding"
-                    )
+            else:
+                policy_root_binding_chain.append(
+                    (audit_index, str(old_binding), str(new_binding))
+                )
+            if audit_index == latest_policy_root_audit_index:
+                try:
+                    expected_policy = policy_snapshot(DEFAULT_POLICY)
+                except WorkflowError as exc:
+                    errors.append(f"{audit_prefix}: active policy is invalid: {exc}")
+                    expected_policy = None
+                if expected_policy is not None:
+                    if packet.get("policy") != expected_policy:
+                        errors.append(
+                            f"{audit_prefix}: repaired policy does not exactly match "
+                            "the active local binding"
+                        )
+                    if new_binding != expected_policy.get("bindingSha256"):
+                        errors.append(
+                            f"{audit_prefix}: new policy binding does not match "
+                            "the active local binding"
+                        )
+                    if policy_root.get("newValueSha256") != content_sha256(
+                        expected_policy
+                    ):
+                        errors.append(
+                            f"{audit_prefix}: new policy object hash does not match "
+                            "the active local binding"
+                        )
         for operation_index, operation in enumerate(operations, start=1):
             prefix = f"{audit_prefix}, operation {operation_index}"
             if not isinstance(operation, dict):
@@ -3523,6 +3634,7 @@ def validate_post_run_repair_audits(packet: dict[str, Any]) -> list[str]:
                         )
                 if (
                     policy_root_operations
+                    and audit_index == latest_policy_root_audit_index
                     and expected_stage == "blind_translation"
                     and owner["blindTranslation"].get("policySha256") != new_binding
                 ):
@@ -3540,6 +3652,15 @@ def validate_post_run_repair_audits(packet: dict[str, Any]) -> list[str]:
         errors.append("packet: post-run repair run IDs must be globally unique")
     if len(repair_ids) != len(set(repair_ids)):
         errors.append("packet: post-run repair IDs must be globally unique")
+    for (previous_index, _, previous_new), (current_index, current_old, _) in zip(
+        policy_root_binding_chain, policy_root_binding_chain[1:]
+    ):
+        if previous_new != current_old:
+            errors.append(
+                "packet post-run repair audit "
+                f"{current_index}: policy binding succession does not continue "
+                f"audit {previous_index}"
+            )
     for path, (value_kind, expected_hash) in last_hash_by_path.items():
         try:
             current = json_path_value(packet, path)
@@ -3696,17 +3817,92 @@ def validate_preceding_translation(
         errors.append(f"{prefix}: adjudicated substantive prose is untranslated")
     if not isinstance(adjudication.get("decisions"), list):
         errors.append(f"{prefix}: adjudication decisions must be an array")
-    errors.extend(
-        validate_public_english(blind.get("headingEnglish"), f"{prefix}, blind heading")
-    )
-    errors.extend(validate_public_english(blind.get("english"), f"{prefix}, blind"))
+
+    def field_formula_occurrences(
+        source_field: str, target_text: str | None, target_kind: str
+    ) -> list[dict[str, Any]]:
+        if formula_occurrences is not None:
+            return formula_occurrences_for_target(
+                formula_occurrences,
+                target_text,
+                target_kind,
+                source_field=source_field,
+            )
+        source_hits = registered_occurrences(
+            str(source.get(source_field) or ""),
+            "source",
+            include_contextual=True,
+        )
+        target_hits = registered_occurrences(
+            target_text or "", "target", include_contextual=True
+        )
+        source_classes = [
+            (
+                hit["rule"]["semanticClass"],
+                hit["rule"]["referentScope"],
+                hit["rule"]["grammaticalAgreement"],
+            )
+            for hit in source_hits
+        ]
+        target_classes = [
+            (
+                hit["rule"]["semanticClass"],
+                hit["rule"]["referentScope"],
+                hit["rule"]["grammaticalAgreement"],
+            )
+            for hit in target_hits
+        ]
+        if target_classes != source_classes:
+            return [
+                {
+                    "sourceField": source_field,
+                    "targetRealization": hit["rule"]["target"],
+                }
+                for hit in source_hits
+            ]
+        return [
+            {
+                "sourceField": source_field,
+                "targetRealization": hit["value"],
+            }
+            for hit in target_hits
+        ]
+
     errors.extend(
         validate_public_english(
-            adjudication.get("headingEnglish"), f"{prefix}, adjudicated heading"
+            blind.get("headingEnglish"),
+            f"{prefix}, blind heading",
+            field_formula_occurrences(
+                "headingArabic", blind.get("headingEnglish"), "blind"
+            ),
         )
     )
     errors.extend(
-        validate_public_english(adjudication.get("english"), f"{prefix}, adjudicated")
+        validate_public_english(
+            blind.get("english"),
+            f"{prefix}, blind",
+            field_formula_occurrences("arabic", blind.get("english"), "blind"),
+        )
+    )
+    errors.extend(
+        validate_public_english(
+            adjudication.get("headingEnglish"),
+            f"{prefix}, adjudicated heading",
+            field_formula_occurrences(
+                "headingArabic",
+                adjudication.get("headingEnglish"),
+                "adjudicated",
+            ),
+        )
+    )
+    errors.extend(
+        validate_public_english(
+            adjudication.get("english"),
+            f"{prefix}, adjudicated",
+            field_formula_occurrences(
+                "arabic", adjudication.get("english"), "adjudicated"
+            ),
+        )
     )
 
     errors.extend(
@@ -3937,7 +4133,7 @@ def merge_entry_shard(packet_path: Path, shard_path: Path) -> int:
             validate_semantic_audit(
                 output.get("independentCritique", {}),
                 target.get("source", {}),
-                None,
+                output.get("blindTranslation", {}).get("headingEnglish"),
                 output.get("blindTranslation", {}).get("english"),
                 prefix,
             )
@@ -3946,7 +4142,7 @@ def merge_entry_shard(packet_path: Path, shard_path: Path) -> int:
             validate_names(
                 output.get("names", {}),
                 target.get("source", {}),
-                None,
+                output.get("adjudication", {}).get("headingEnglish"),
                 output.get("adjudication", {}).get("english"),
                 str(output.get("sourceUnitId")),
                 prefix,
@@ -4223,8 +4419,9 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
         "complete",
     }:
         errors.append("packet: formula inventory state is missing")
-    formula_occurrences_by_record: dict[str, list[dict[str, Any]]] = {}
+    formula_occurrences_by_record: dict[str, list[dict[str, Any]]] | None = None
     if isinstance(inventory, dict) and inventory.get("status") == "complete":
+        formula_occurrences_by_record = {}
         occurrences = inventory.get("occurrences")
         if isinstance(occurrences, list):
             for occurrence in occurrences:
@@ -4324,7 +4521,9 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
                             segment_prefix,
                             repair_permissions.get(repair_key),
                             target_repairs.get(repair_key),
-                            formula_occurrences_by_record.get(
+                            None
+                            if formula_occurrences_by_record is None
+                            else formula_occurrences_by_record.get(
                                 str(segment_source.get("segmentId")), []
                             ),
                             permitted_policy_repair_bindings,
@@ -4364,8 +4563,20 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
                 errors.append(f"{prefix}: blind translation used a stale policy")
             continue
 
+        decision = (
+            title_decisions.get(entry.get("sourceUnitId"))
+            or title_decisions.get(entry.get("sourceEntryNumber"))
+            if manifest.get("status") != "test-fixture"
+            else None
+        )
+        title_only = (
+            isinstance(decision, dict)
+            and decision.get("bodyOpeningKind") == "none"
+        )
         blind = entry.get("blindTranslation", {})
-        if blind.get("status") != "complete" or not blind.get("english"):
+        if blind.get("status") != "complete" or (
+            not blind.get("english") and not title_only
+        ):
             errors.append(f"{prefix}: blind translation is incomplete")
         if not all(blind.get(field) for field in ("runId", "model", "reasoning")):
             errors.append(f"{prefix}: blind translation provenance is incomplete")
@@ -4383,7 +4594,7 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
             validate_semantic_audit(
                 critique,
                 source,
-                None,
+                blind.get("headingEnglish"),
                 blind.get("english"),
                 prefix,
                 allow_historical_candidate="blind_translation"
@@ -4406,15 +4617,42 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
             errors.append(f"{prefix}: adjudication is incomplete")
         if not isinstance(adjudication.get("decisions"), list):
             errors.append(f"{prefix}: adjudication decisions must be an array")
-        errors.extend(validate_public_english(blind.get("english"), f"{prefix}, blind"))
+        record_formula_occurrences = (
+            None
+            if formula_occurrences_by_record is None
+            else formula_occurrences_by_record.get(str(entry.get("sourceUnitId")), [])
+        )
         errors.extend(
             validate_public_english(
-                adjudication.get("english"), f"{prefix}, adjudicated"
+                blind.get("english"),
+                f"{prefix}, blind",
+                None
+                if record_formula_occurrences is None
+                else formula_occurrences_for_target(
+                    record_formula_occurrences,
+                    blind.get("english"),
+                    "blind",
+                ),
+            )
+        )
+        errors.extend(
+            validate_public_english(
+                adjudication.get("english"),
+                f"{prefix}, adjudicated",
+                record_formula_occurrences,
+                [
+                    literal
+                    for field in ("title", "bodyOpening")
+                    for literal in governed_arabic_literals(
+                        str(decision.get(field, {}).get("en", ""))
+                    )
+                ]
+                if decision is not None
+                else [],
             )
         )
 
         if manifest.get("status") != "test-fixture":
-            decision = title_decisions.get(entry.get("sourceEntryNumber"))
             if decision is None:
                 errors.append(
                     f"{prefix}: active profile lacks a governed title decision"
@@ -4435,15 +4673,19 @@ def validate_packet(packet: dict[str, Any], machine_ready: bool = False) -> list
             validate_names(
                 entry.get("names", {}),
                 source,
-                None,
+                adjudication.get("headingEnglish"),
                 adjudication.get("english"),
                 str(entry.get("sourceUnitId")),
                 prefix,
                 require_spans=True,
                 allow_historical_english="adjudication"
                 in target_repairs.get((str(entry.get("sourceUnitId")), None), set()),
-                formula_occurrences=formula_occurrences_by_record.get(
-                    str(entry.get("sourceUnitId")), []
+                formula_occurrences=(
+                    []
+                    if formula_occurrences_by_record is None
+                    else formula_occurrences_by_record.get(
+                        str(entry.get("sourceUnitId")), []
+                    )
                 ),
             )
         )
@@ -4652,7 +4894,9 @@ def render_review(packet: dict[str, Any]) -> str:
                 ]
             )
         if governed_titles_required:
-            decision = title_decisions.get(entry.get("sourceEntryNumber"))
+            decision = title_decisions.get(entry.get("sourceUnitId")) or title_decisions.get(
+                entry.get("sourceEntryNumber")
+            )
             if decision is None:
                 raise WorkflowError(
                     f"source unit {entry.get('sourceOrdinal')}: active profile "
@@ -4678,6 +4922,7 @@ def render_review(packet: dict[str, Any]) -> str:
             }
             arabic_body = present_openiti_arabic(entry["source"]["arabic"].strip())
             english_body = entry["adjudication"]["english"].strip()
+        title_only = governed_titles_required and decision["bodyOpeningKind"] == "none"
         lines.extend(
             [
                 f"## Source unit {entry['sourceOrdinal']} · "
@@ -4693,6 +4938,12 @@ def render_review(packet: dict[str, Any]) -> str:
                 "",
                 f"**{title['english']}**",
                 "",
+            ]
+        )
+        if title_only:
+            lines.extend(["*The pinned source unit contains only this title.*", ""])
+        else:
+            lines.extend([
                 "### English body candidate",
                 "",
                 english_body,
@@ -4705,6 +4956,9 @@ def render_review(packet: dict[str, Any]) -> str:
                 "",
                 "</div>",
                 "",
+            ])
+        lines.extend(
+            [
                 "### Evidence state",
                 "",
                 f"- Source SHA-256: `{entry['source']['rawSha256']}`",

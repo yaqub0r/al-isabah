@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Validate public-proposal.v1 and its repository bindings."""
+"""Validate public-proposal.v1/v2 artifacts and their repository bindings."""
 
 from __future__ import annotations
 
 import argparse
 import json
 import re
+import unicodedata
 from pathlib import Path
 from typing import Any
 
@@ -20,6 +21,7 @@ from public_boundary import (
     sha256_text_file,
     summarize,
 )
+from schema_validation import validate_schema_instance
 import validate_entry_titles as title_contract
 
 
@@ -27,6 +29,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_PROPOSAL = (
     ROOT / "content" / "public-proposals" / "issue-0070.public-proposal.json"
 )
+FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 # Immutable release-closure v1 provenance for the quarantined 1.1 proposal.
 # Only this exact proposal/version/hash tuple may use a superseded v2 snapshot.
 HISTORICAL_POLICY_BINDINGS = {
@@ -38,7 +41,166 @@ HISTORICAL_POLICY_BINDINGS = {
         "1.2.0",
         "issue-0070-public-proposal-v1",
     ): "20a74b3643a65e621efe02402e59944223f1424f75d67e1af94476d6f233bd6f",
+    (
+        "1.2.0",
+        "issue-0080-public-proposal-v1",
+    ): "a89774893a9c623814f51a942c0c43056a0f6ffb8b979a43bc6bdb6e317c3f91",
+    (
+        "1.2.0",
+        "issue-0082-public-proposal-v1",
+    ): "faf1078753c33c278098e71d0392a2af1e955320f090660da24ba64bc1831692",
+    (
+        "1.3.0",
+        "issue-0086-public-proposal-v1",
+    ): "9c82594b8d3a857baf54ba112ecf860e8a59b3f378381ab42db3819b1220cf34",
+    (
+        "1.3.0",
+        "issue-0085-public-proposal-v1",
+    ): "ec32ce5933a7f79167f9666b522187fd7e1ea8aacd7c0acce10c1ac269e32ebe",
+    (
+        "1.3.0",
+        "issue-0091-public-proposal-v1",
+    ): "4f650a9bd17b730b6c311aba2911df22302db4971f39c094edb85d24a703d005",
+    (
+        "1.3.0",
+        "issue-0096-public-proposal-v1",
+    ): "a335f829c16c05dbd8071ccca94f3ae1e2a57eaa1a949926971ca74fcdffc404",
 }
+PINNED_TITLE_PROFILE_BINDINGS = {
+    ("1.2.0", "issue-0070-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v3",
+        "profileSha256": "dc5f80db7c897b4ecf0df5b5fa1bce7ce7388d05fe6607f6a6cdb9e092934afc",
+    },
+    ("1.2.0", "issue-0080-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v4",
+        "profileSha256": "f177c6c9fba1702aae911c0dba024e9e24b1093016b62066a573f63e6afff2a3",
+    },
+    ("1.2.0", "issue-0082-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v5",
+        "profileSha256": "3f338cf5e748d142c3de86d9926db5f97b727de3790a92be7afb9bcc9d1d8221",
+    },
+    ("1.2.0", "issue-0084-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v6",
+        "profileSha256": "09014c9e78befd5dcd490e1452b91b0ec099982253ec13297e98fc74de41a6e6",
+    },
+    ("1.3.0", "issue-0086-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v7",
+        "profileSha256": "a31e8ef7670f30577f70ba5c930c8c6b8803fc9bfce8eec3a362f4ac8c097a52",
+    },
+    ("1.3.0", "issue-0085-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v8",
+        "profileSha256": "fa797cd530a5be7c9be4045c03b35fd08d28aaa75eb9c45b0a1523d2644d8cf9",
+    },
+    ("1.3.0", "issue-0091-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v9",
+        "profileSha256": "e929ff952e8ed082bbd724d0fc009deca48cd3073fc6be9fb4095f9f92f147ab",
+    },
+    ("1.3.0", "issue-0096-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v10",
+        "profileSha256": "f99f48ff38a17ebff828580e26547ecdfb277d40dbaee8689b5e48bd4bf1fcfb",
+    },
+    ("1.3.0", "issue-0098-public-proposal-v1"): {
+        "profileId": "entry-title-decisions.v11",
+        "profileSha256": "130a872700412dba03aa14ce2a6b9c43e3dc2e8afa629c7b4c8e3feeb74f33ef",
+    },
+}
+# Issue #85's immutable proposal captured the CRLF working-copy bytes of the
+# v8 title profile before Git normalized that text file to its repository LF
+# representation.  Keep both identities explicit: the proposal continues to
+# bind the historical working-copy bytes, while validation also requires the
+# exact repository-normalized bytes pinned by policy binding v9.  This is a
+# closed compatibility record, not a general alternative-hash allowance.
+PORTABLE_TITLE_PROFILE_BINDINGS = {
+    ("1.3.0", "issue-0085-public-proposal-v1"): {
+        "repositoryLineEndings": "lf",
+        "repositorySha256": "22f0b3d42470caf4120a89c53c201dfc5f5f81b0aecaa65c571a5dc62525cb95",
+        "workingCopyLineEndings": "crlf",
+        "workingCopySha256": "fa797cd530a5be7c9be4045c03b35fd08d28aaa75eb9c45b0a1523d2644d8cf9",
+    },
+}
+SOURCE_DERIVED_NAME_ID_PROPOSALS = {
+    "issue-0080-public-proposal-v1",
+    "issue-0082-public-proposal-v1",
+    "issue-0084-public-proposal-v1",
+    "issue-0086-public-proposal-v1",
+    "issue-0085-public-proposal-v1",
+    "issue-0091-public-proposal-v1",
+    "issue-0096-public-proposal-v1",
+    "issue-0098-public-proposal-v1",
+}
+ARABIC_SCRIPT_RE = re.compile(
+    r"[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff]"
+)
+ARABIC_LITERAL_RE = re.compile(
+    r"[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff]+"
+    r"(?:[ \t]+[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff]+)*"
+)
+PUBLIC_PROCESS_RE = re.compile(
+    r"\b(?:pinned|OpenITI|ACO|Variant English renderings?)\b",
+    re.IGNORECASE,
+)
+FORMULA_RULES = tuple(
+    json.loads(FORMULA_REGISTRY_PATH.read_text(encoding="utf-8"))["entries"]
+)
+# The formula registry is append-only. Keep the exact historical prefixes so
+# immutable schema-1.3 proposals do not acquire newly detectable formulas.
+FORMULA_V16_ENTRY_COUNT = 68
+FORMULA_V16_RULES = FORMULA_RULES[:FORMULA_V16_ENTRY_COUNT]
+FORMULA_V17_ENTRY_COUNT = 154
+FORMULA_V17_RULES = FORMULA_RULES[:FORMULA_V17_ENTRY_COUNT]
+FORMULA_V18_ENTRY_COUNT = 211
+FORMULA_V18_RULES = FORMULA_RULES[:FORMULA_V18_ENTRY_COUNT]
+FORMULA_V14_SOURCES = {
+    "بسم الله الرحمن الرحيم",
+    "صلى الله عليه وسلم واله وسلم",
+    "صلى الله عليه وسلم وسلم",
+    "عليها السلام",
+    "والله المستعان",
+    "فالله أعلم",
+    "فالله اعلم",
+    "ولله الحمد",
+    "تعالى",
+}
+FORMULA_V15_SOURCES = {
+    "صلى الله عليه وسلم وعلى آله وسلم",
+    "صلى الله عليه وسلم وآله",
+    "صلى الله عيه وآله وسلم",
+    "صلى الله عليه وسلم وآوله وسلم",
+    "صلى الله علي وآله وسلم",
+    "صلى الله عليه وسلم وآله سلم",
+    "صلى الله عيله وآله وسلم",
+    "صلى الله عله وآله وسلم",
+    "صلى الله عليه وسلم وآله ولم",
+    "صلى الله عيله وسلم",
+}
+FORMULA_V16_SOURCES = {
+    "والله الموفق",
+    "ان شاء الله تعالى",
+    "ان شاء الله",
+    "نسأل الله التوفيق",
+    "والله عنده حسن المآب",
+    "والله سبحانه وتعالى اعلم",
+    "وبالله التوفيق",
+    "اللهم صل على النبي والوصي",
+    "رحم الله عائشة",
+    "رحم الله هشاما",
+    "رحم الله عبادا",
+    "رحم الله لبيدا",
+    "رحم الله عروة",
+    "رحم الله قسا",
+    "يرحمك الله",
+    "صلى الله عليه وسلم وأله وسلم",
+    "صلى الله عليه وسلم آله وسلم",
+    "صل الله عليه وآله وسلم",
+    "صلى الله",
+}
+LEGACY_FORMULA_RULES = tuple(
+    rule
+    for rule in FORMULA_V16_RULES
+    if rule["source"]
+    not in FORMULA_V14_SOURCES | FORMULA_V15_SOURCES | FORMULA_V16_SOURCES
+)
+CONTEXTUAL_FORMULA_SOURCES = {"بسم الله الرحمن الرحيم"}
 SHA1 = re.compile(r"^[a-f0-9]{40}$")
 SHA256 = re.compile(r"^[a-f0-9]{64}$")
 COMMIT = SHA1
@@ -97,19 +259,19 @@ def nested_key_errors(proposal: dict[str, Any]) -> list[str]:
         LEGACY_TOP_KEYS
         if legacy
         else CURRENT_TOP_KEYS
-        if schema_version == "1.2.0"
+        if schema_version in {"1.2.0", "1.3.0"}
         else PACKET_SET_TOP_KEYS
     )
     errors = exact_keys(proposal, top_keys, "$")
     top_objects = ["sourceAuthority", "rights", "policy", "review", "baseline"]
     top_objects.append("historicalEvidence" if legacy else "evidenceBinding")
-    if schema_version == "1.2.0":
+    if schema_version in {"1.2.0", "1.3.0"}:
         top_objects.extend(["entryTitleDecisions", "sliceContext"])
     for key in top_objects:
         errors.extend(exact_keys(proposal.get(key), KEYS[key], f"$.{key}"))
     authority = proposal.get("sourceAuthority", {})
     errors.extend(exact_keys(authority.get("license"), KEYS["license"], "$.sourceAuthority.license"))
-    if schema_version == "1.2.0":
+    if schema_version in {"1.2.0", "1.3.0"}:
         for index, context in enumerate(proposal.get("sliceContext", {}).get("contexts", [])):
             errors.extend(
                 exact_keys(
@@ -120,7 +282,10 @@ def nested_key_errors(proposal: dict[str, Any]) -> list[str]:
             )
     for index, record in enumerate(proposal.get("records", [])):
         base = f"$.records[{index}]"
-        errors.extend(exact_keys(record, RECORD_KEYS, base))
+        record_keys = RECORD_KEYS
+        if schema_version == "1.3.0" and "bodyState" in record:
+            record_keys = RECORD_KEYS | {"bodyState"}
+        errors.extend(exact_keys(record, record_keys, base))
         errors.extend(exact_keys(record.get("title"), KEYS["title"], f"{base}.title"))
         errors.extend(exact_keys(record.get("source"), KEYS["source"], f"{base}.source"))
         errors.extend(exact_keys(record.get("policy"), KEYS["policy"], f"{base}.policy"))
@@ -156,16 +321,60 @@ def records_sha256(records: list[dict[str, Any]]) -> str:
     return sha256_bytes(b"".join(canonical_json(item) for item in records))
 
 
+def _normalized_text_bytes(path: Path, line_endings: str) -> bytes:
+    text = path.read_text(encoding="utf-8").replace("\r\n", "\n").replace("\r", "\n")
+    if line_endings == "crlf":
+        text = text.replace("\n", "\r\n")
+    elif line_endings != "lf":
+        raise ValueError(f"unsupported line-ending identity: {line_endings}")
+    return text.encode("utf-8")
+
+
+def _title_profile_hash_matches(
+    proposal_key: tuple[Any, Any],
+    binding: dict[str, Any],
+    profile_path: Path,
+) -> bool:
+    portable = PORTABLE_TITLE_PROFILE_BINDINGS.get(proposal_key)
+    if portable is None:
+        return binding.get("profileSha256") == sha256_text_file(profile_path)
+    if (
+        binding.get("profileSha256") != portable["workingCopySha256"]
+        or sha256_bytes(
+            _normalized_text_bytes(
+                profile_path, portable["repositoryLineEndings"]
+            )
+        )
+        != portable["repositorySha256"]
+        or sha256_bytes(
+            _normalized_text_bytes(
+                profile_path, portable["workingCopyLineEndings"]
+            )
+        )
+        != portable["workingCopySha256"]
+    ):
+        return False
+    return True
+
+
 def _title_decision_errors(proposal: dict[str, Any]) -> list[str]:
     errors: list[str] = []
     binding = proposal.get("entryTitleDecisions", {})
+    proposal_key = (proposal.get("schemaVersion"), proposal.get("proposalId"))
+    expected_binding = PINNED_TITLE_PROFILE_BINDINGS.get(proposal_key)
+    if proposal.get("schemaVersion") == "1.3.0" and expected_binding is None:
+        return [safe_error("$.entryTitleDecisions", "title-profile-mismatch")]
+    if expected_binding is not None and any(
+        binding.get(key) != value for key, value in expected_binding.items()
+    ):
+        return [safe_error("$.entryTitleDecisions", "title-profile-mismatch")]
     profile_id = binding.get("profileId")
     if not isinstance(profile_id, str) or not TITLE_PROFILE_ID.fullmatch(profile_id):
         return [safe_error("$.entryTitleDecisions.profileId", "title-profile-mismatch")]
     profile_path = ROOT / "profiles" / f"{profile_id}.json"
     if (
         not profile_path.is_file()
-        or binding.get("profileSha256") != sha256_file(profile_path)
+        or not _title_profile_hash_matches(proposal_key, binding, profile_path)
     ):
         return [safe_error("$.entryTitleDecisions", "title-profile-mismatch")]
     try:
@@ -181,25 +390,33 @@ def _title_decision_errors(proposal: dict[str, Any]) -> list[str]:
                 "title-decision-coverage-mismatch",
             )
         )
-    seen_numbers: set[int] = set()
     for index, record in enumerate(records):
         base = f"$.records[{index}]"
         number = record.get("printedEntryNumber")
-        if not isinstance(number, int) or number in seen_numbers:
+        if not isinstance(number, int):
             errors.append(
                 safe_error(
                     f"{base}.printedEntryNumber",
-                    "ambiguous-title-decision-key",
+                    "missing-title-body-decision",
                 )
             )
             continue
-        seen_numbers.add(number)
-        decision = decisions.get(number)
+        decision = decisions.get(record.get("id")) or decisions.get(number)
         if decision is None:
             errors.append(
                 safe_error(f"{base}.title", "missing-title-body-decision")
             )
             continue
+        if decision.get("sourceEntryNumber") != number:
+            errors.append(
+                safe_error(f"{base}.printedEntryNumber", "title-decision-mismatch")
+            )
+        if "sourceUnitId" in decision and (
+            record.get("id") != decision["sourceUnitId"]
+            or record.get("source", {}).get("exactTextSha256")
+            != decision.get("sourceRawSha256")
+        ):
+            errors.append(safe_error(base, "title-source-unit-mismatch"))
         expected_title = {
             "arabic": decision["title"]["ar"],
             "english": decision["title"]["en"],
@@ -211,14 +428,26 @@ def _title_decision_errors(proposal: dict[str, Any]) -> list[str]:
             or title.get("method") != "profile-decision"
         ):
             errors.append(safe_error(f"{base}.title", "title-decision-mismatch"))
-        if not str(record.get("arabic", "")).startswith(
-            decision["bodyOpening"]["ar"]
-        ) or not str(record.get("english", "")).startswith(
-            decision["bodyOpening"]["en"]
-        ):
-            errors.append(
-                safe_error(base, "title-body-opening-mismatch")
+        if decision["bodyOpeningKind"] == "none":
+            if (
+                proposal.get("schemaVersion") != "1.3.0"
+                or record.get("bodyState") != "title-only"
+                or record.get("arabic") != ""
+                or record.get("english") != ""
+                or record.get("source", {}).get("exactTextSha256")
+                != decision.get("sourceRawSha256", decision.get("sourceUnitSha256"))
+            ):
+                errors.append(safe_error(base, "title-only-body-mismatch"))
+        elif (
+            "bodyState" in record
+            or not str(record.get("arabic", "")).startswith(
+                decision["bodyOpening"]["ar"]
             )
+            or not str(record.get("english", "")).startswith(
+                decision["bodyOpening"]["en"]
+            )
+        ):
+            errors.append(safe_error(base, "title-body-opening-mismatch"))
     return errors
 
 
@@ -354,12 +583,356 @@ def _slice_context_errors(proposal: dict[str, Any]) -> list[str]:
 
 
 def current_readiness_errors(proposal: dict[str, Any]) -> list[str]:
-    if proposal.get("schemaVersion") != "1.2.0":
+    if proposal.get("schemaVersion") not in {"1.2.0", "1.3.0"}:
         return [safe_error("$.schemaVersion", "historical-proposal-not-current")]
     return _title_decision_errors(proposal) + _slice_context_errors(proposal)
 
 
-def record_semantic_errors(record: dict[str, Any], base: str) -> list[str]:
+def public_english_errors(
+    value: Any,
+    formulas: Any,
+    record_id: Any,
+    path: str,
+    allowed_arabic_literals: list[str] | None = None,
+) -> list[str]:
+    if not isinstance(value, str):
+        return []
+    errors: list[str] = []
+    if PUBLIC_PROCESS_RE.search(value):
+        errors.append(safe_error(path, "internal-process-language"))
+    residual = value
+    targets = [
+        formula.get("targetRealization")
+        for formula in formulas
+        if isinstance(formula, dict)
+        and formula.get("recordId") == record_id
+        and isinstance(formula.get("targetRealization"), str)
+        and formula["targetRealization"]
+    ] if isinstance(formulas, list) else []
+    for target in sorted(targets, key=len, reverse=True):
+        location = residual.find(target)
+        if location < 0:
+            errors.append(safe_error(path, "missing-declared-formula-target"))
+            continue
+        residual = residual[:location] + residual[location + len(target):]
+    for literal in sorted(allowed_arabic_literals or [], key=len, reverse=True):
+        location = residual.find(literal)
+        if location >= 0:
+            residual = residual[:location] + residual[location + len(literal):]
+    if ARABIC_SCRIPT_RE.search(residual):
+        errors.append(safe_error(path, "undeclared-arabic-in-english"))
+    return errors
+
+
+def governed_arabic_literals(
+    value: str | None,
+    rules: tuple[dict[str, Any], ...] = FORMULA_RULES,
+) -> list[str]:
+    """Return exact Arabic spans, preserving spaces inside a governed literal."""
+    formula_literals = {
+        str(formula_value)
+        for rule in rules
+        for formula_value in (rule["source"], rule["target"], rule["expandedArabic"])
+    }
+    def is_formula_literal(literal: str) -> bool:
+        pattern = re.compile(
+            r"(?<![\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff])"
+            + re.escape(literal)
+            + r"(?![\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff])"
+        )
+        return any(pattern.search(formula_literal) for formula_literal in formula_literals)
+
+    return [
+        literal
+        for literal in ARABIC_LITERAL_RE.findall(value or "")
+        if not is_formula_literal(literal)
+    ]
+
+
+def registered_formula_occurrences(
+    text: str,
+    field: str,
+    rules: tuple[dict[str, Any], ...] = FORMULA_RULES,
+    *,
+    include_contextual: bool = False,
+) -> list[dict[str, Any]]:
+    """Return registry-bound non-overlapping formula occurrences in source order."""
+    contextual_spans: tuple[tuple[int, int], ...] = ()
+    if not include_contextual:
+        if field == "target":
+            contextual_values = {
+                str(value)
+                for rule in rules
+                if str(rule["source"]) in CONTEXTUAL_FORMULA_SOURCES
+                for value in (
+                    rule["target"],
+                    rule["source"],
+                    rule["expandedArabic"],
+                )
+            }
+        else:
+            contextual_values = {
+                str(rule["source"])
+                for rule in rules
+                if str(rule["source"]) in CONTEXTUAL_FORMULA_SOURCES
+            }
+        contextual_pattern = re.compile(
+            "|".join(
+                re.escape(value)
+                for value in sorted(contextual_values, key=len, reverse=True)
+            )
+        )
+        contextual_spans = tuple(
+            match.span() for match in contextual_pattern.finditer(text)
+        )
+    effective_rules = tuple(
+        rule
+        for rule in rules
+        if include_contextual
+        or str(rule["source"]) not in CONTEXTUAL_FORMULA_SOURCES
+    )
+    if field == "target":
+        values = sorted(
+            {
+                str(value)
+                for rule in effective_rules
+                for value in (
+                    rule["target"],
+                    rule["source"],
+                    rule["expandedArabic"],
+                )
+            },
+            key=len,
+            reverse=True,
+        )
+    else:
+        values = sorted(
+            {str(rule["source"]) for rule in effective_rules},
+            key=len,
+            reverse=True,
+        )
+    pattern = re.compile("|".join(re.escape(value) for value in values))
+    occurrences: list[dict[str, Any]] = []
+    for match in pattern.finditer(text):
+        before = text[match.start() - 1] if match.start() else ""
+        after = text[match.end()] if match.end() < len(text) else ""
+        if rules is FORMULA_RULES and any(
+            character
+            and unicodedata.name(character, "").startswith("ARABIC")
+            and unicodedata.category(character)[0] in {"L", "M"}
+            for character in (before, after)
+        ):
+            # Keep public projection aligned with packet inventory: a governed
+            # expression is a complete Arabic token or phrase, not a substring
+            # of a prefixed lexical word or personal name.
+            continue
+        if any(
+            start <= match.start() and match.end() <= end
+            for start, end in contextual_spans
+        ):
+            continue
+        value = match.group(0)
+        if field == "target":
+            rule = next(
+                (item for item in effective_rules if value == item["target"]),
+                None,
+            )
+            if rule is None:
+                rule = next(
+                    (item for item in effective_rules if value == item["source"]),
+                    None,
+                )
+            if rule is None:
+                rule = next(
+                    item
+                    for item in effective_rules
+                    if value == item["expandedArabic"]
+                )
+        else:
+            rule = next(item for item in effective_rules if value == item["source"])
+        if (
+            field == "source"
+            and rule["source"] == "صلى الله عليه وسلم وآله"
+            and re.match(r"\s+رجلا(?:\s|$)", text[match.end() :]) is not None
+        ):
+            value = "صلى الله عليه وسلم"
+            rule = next(
+                item for item in effective_rules if item["source"] == value
+            )
+        if (
+            field == "source"
+            and rule["source"] == "تعالى"
+            and re.search(r"(?:الله|لله|قوله|قال)\s*$", text[: match.start()]) is None
+        ):
+            continue
+        if rule["source"] == "والله عنده حسن المآب" and text[
+            match.end() :
+        ].strip(" \t\r\n.,;:!?؟،؛—–"):
+            continue
+        if rule["source"] == "صلى الله":
+            prefix = text[: match.start()]
+            suffix = text[match.end() :]
+            if field == "source":
+                has_prophetic_referent = re.search(
+                    r"(?:رسول الله|النبي)\s*$", prefix
+                )
+            else:
+                has_prophetic_referent = re.search(
+                    r"(?:Messenger of (?:God|Allah)|Prophet)\s*$", prefix,
+                    flags=re.IGNORECASE,
+                )
+            has_formula_continuation = re.match(
+                r"\s+(?:تعالى|عليه|عيه|علي|عيله|عله|على|و?آله|واله)",
+                suffix,
+            )
+            if has_prophetic_referent is None or has_formula_continuation is not None:
+                continue
+        occurrences.append({"value": value, "rule": rule})
+    return occurrences
+
+
+def formulas_for_scope(
+    formulas: Any, record_id: Any, source_field: str
+) -> list[dict[str, Any]]:
+    if not isinstance(formulas, list) or not isinstance(record_id, str):
+        return []
+    prefix = f"{record_id}-{source_field}-formula-"
+    return [
+        item
+        for item in formulas
+        if isinstance(item, dict)
+        and item.get("recordId") == record_id
+        and str(item.get("formulaId", "")).startswith(prefix)
+    ]
+
+
+def expected_scope_formulas(
+    record_id: Any,
+    source_field: str,
+    source: Any,
+    english: Any,
+    rules: tuple[dict[str, Any], ...] = FORMULA_RULES,
+    *,
+    include_contextual: bool = False,
+) -> tuple[list[dict[str, Any]], bool]:
+    if source is None and english is None:
+        return [], True
+    if not (
+        isinstance(record_id, str)
+        and isinstance(source, str)
+        and isinstance(english, str)
+    ):
+        return [], False
+    source_hits = registered_formula_occurrences(
+        source, "source", rules, include_contextual=include_contextual
+    )
+    target_hits = registered_formula_occurrences(
+        english, "target", rules, include_contextual=include_contextual
+    )
+    if len(source_hits) != len(target_hits):
+        return [], False
+    expected: list[dict[str, Any]] = []
+    valid = True
+    for index, (source_hit, target_hit) in enumerate(
+        zip(source_hits, target_hits), start=1
+    ):
+        source_rule = source_hit["rule"]
+        target_rule = target_hit["rule"]
+        expected.append(
+            {
+                "formulaId": f"{record_id}-{source_field}-formula-{index:03d}",
+                "recordId": record_id,
+                "observedArabic": source_hit["value"],
+                "semanticClass": source_rule["semanticClass"],
+                "targetRealization": target_hit["value"],
+            }
+        )
+        if (
+            target_rule["semanticClass"] != source_rule["semanticClass"]
+            or target_rule["referentScope"] != source_rule["referentScope"]
+            or target_rule["grammaticalAgreement"]
+            != source_rule["grammaticalAgreement"]
+        ):
+            valid = False
+    return expected, valid
+
+
+def public_formula_errors(
+    record: dict[str, Any],
+    base: str,
+    rules: tuple[dict[str, Any], ...] = FORMULA_RULES,
+) -> list[str]:
+    """Recompute every public formula from its exact source and English field."""
+    formulas = record.get("formulas")
+    if not isinstance(formulas, list):
+        return []
+    expected: list[dict[str, Any]] = []
+    valid = True
+    for context in record.get("precedingMaterial", []):
+        if not isinstance(context, dict):
+            continue
+        heading = context.get("heading", {})
+        if isinstance(heading, dict):
+            scope, scope_valid = expected_scope_formulas(
+                context.get("id"),
+                "headingArabic",
+                heading.get("arabic"),
+                heading.get("english"),
+                rules,
+                include_contextual=True,
+            )
+            expected.extend(scope)
+            valid = valid and scope_valid
+        scope, scope_valid = expected_scope_formulas(
+            context.get("id"),
+            "arabic",
+            context.get("arabic"),
+            context.get("english"),
+            rules,
+            include_contextual=True,
+        )
+        expected.extend(scope)
+        valid = valid and scope_valid
+    title = record.get("title", {})
+    if isinstance(title, dict):
+        scope, scope_valid = expected_scope_formulas(
+            record.get("id"),
+            "titleArabic",
+            title.get("arabic"),
+            title.get("english"),
+            rules,
+            include_contextual=True,
+        )
+        expected.extend(scope)
+        valid = valid and scope_valid
+    scope, scope_valid = expected_scope_formulas(
+        record.get("id"),
+        "arabic",
+        record.get("arabic"),
+        record.get("english"),
+        rules,
+        include_contextual=any(
+            isinstance(formula, dict)
+            and formula.get("recordId") == record.get("id")
+            and formula.get("observedArabic") in CONTEXTUAL_FORMULA_SOURCES
+            for formula in formulas
+        ),
+    )
+    expected.extend(scope)
+    valid = valid and scope_valid
+    if formulas != expected or not valid:
+        return [safe_error(f"{base}.formulas", "formula-inventory-mismatch")]
+    return []
+
+
+def record_semantic_errors(
+    record: dict[str, Any],
+    base: str,
+    *,
+    enforce_public_english: bool = False,
+    allowed_arabic_literals: list[str] | None = None,
+    formula_rules: tuple[dict[str, Any], ...] = FORMULA_RULES,
+) -> list[str]:
     errors: list[str] = []
     if record.get("kind") != "entry" or record.get("workId") != "ibn-hajar-al-isabah":
         errors.append(safe_error(base, "consumer-contract-mismatch"))
@@ -408,6 +981,57 @@ def record_semantic_errors(record: dict[str, Any], base: str) -> list[str]:
     for index, formula in enumerate(record.get("formulas", [])):
         if not all(isinstance(formula.get(key), str) and formula[key] for key in KEYS["formula"]):
             errors.append(safe_error(f"{base}.formulas[{index}]", "invalid-formula"))
+    if enforce_public_english:
+        formulas = record.get("formulas", [])
+        errors.extend(public_formula_errors(record, base, formula_rules))
+        title = record.get("title", {})
+        if isinstance(title, dict):
+            errors.extend(
+                public_english_errors(
+                    title.get("english"),
+                    formulas_for_scope(
+                        formulas, record.get("id"), "titleArabic"
+                    ),
+                    record.get("id"),
+                    f"{base}.title.english",
+                    allowed_arabic_literals,
+                )
+            )
+        entry_formulas = formulas_for_scope(formulas, record.get("id"), "arabic")
+        errors.extend(
+            public_english_errors(
+                record.get("english"),
+                entry_formulas,
+                record.get("id"),
+                f"{base}.english",
+                allowed_arabic_literals,
+            )
+        )
+        for index, context in enumerate(record.get("precedingMaterial", [])):
+            if not isinstance(context, dict):
+                continue
+            errors.extend(
+                public_english_errors(
+                    context.get("english"),
+                    formulas_for_scope(
+                        formulas, context.get("id"), "arabic"
+                    ),
+                    context.get("id"),
+                    f"{base}.precedingMaterial[{index}].english",
+                )
+            )
+            heading = context.get("heading", {})
+            if isinstance(heading, dict):
+                errors.extend(
+                    public_english_errors(
+                        heading.get("english"),
+                        formulas_for_scope(
+                            formulas, context.get("id"), "headingArabic"
+                        ),
+                        context.get("id"),
+                        f"{base}.precedingMaterial[{index}].heading.english",
+                    )
+                )
     source = record.get("source", {})
     if not COMMIT.fullmatch(str(source.get("commit", ""))):
         errors.append(safe_error(f"{base}.source.commit", "invalid-commit"))
@@ -432,6 +1056,14 @@ def validate(
         return errors
     if not isinstance(proposal, dict):
         return [safe_error("$", "expected-object")]
+    if proposal.get("schemaVersion") == "1.3.0":
+        schema = json.loads(
+            (ROOT / "schemas" / "public-proposal.v2.schema.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        if validate_schema_instance(proposal, schema):
+            errors.append(safe_error("$", "schema-mismatch"))
     errors.extend(nested_key_errors(proposal))
     errors.extend(boundary_errors(proposal))
     schema_version = proposal.get("schemaVersion")
@@ -439,12 +1071,12 @@ def validate(
         "workId": "ibn-hajar-al-isabah",
         "publicationStatus": "public-working",
         "canonicalPromotion": "blocked",
-        "consumerSchemaVersion": "2.0.0",
+        "consumerSchemaVersion": "2.1.0" if schema_version == "1.3.0" else "2.0.0",
     }
     for key, value in expected.items():
         if proposal.get(key) != value:
             errors.append(safe_error(f"$.{key}", "contract-mismatch"))
-    if schema_version not in {"1.0.0", "1.1.0", "1.2.0"}:
+    if schema_version not in {"1.0.0", "1.1.0", "1.2.0", "1.3.0"}:
         errors.append(safe_error("$.schemaVersion", "contract-mismatch"))
     proposal_id = proposal.get("proposalId")
     if not isinstance(proposal_id, str) or not PROPOSAL_ID.fullmatch(proposal_id):
@@ -459,6 +1091,20 @@ def validate(
         errors.append(safe_error("$.records", "record-count-mismatch"))
     seen: set[str] = set()
     previous: tuple[int, str] | None = None
+    enforce_public_english = (
+        schema_version in {"1.2.0", "1.3.0"}
+        and (schema_version, str(proposal_id)) not in HISTORICAL_POLICY_BINDINGS
+    )
+    active_title_decisions: dict[int, dict[str, Any]] = {}
+    if enforce_public_english:
+        profile_id = proposal.get("entryTitleDecisions", {}).get("profileId")
+        profile_path = ROOT / "profiles" / f"{profile_id}.json"
+        try:
+            active_title_decisions = title_contract.decision_index(
+                title_contract.load(profile_path)
+            )
+        except (OSError, ValueError, json.JSONDecodeError):
+            active_title_decisions = {}
     for index, record in enumerate(records):
         base = f"$.records[{index}]"
         if not isinstance(record, dict):
@@ -479,10 +1125,51 @@ def validate(
             if previous is not None and current <= previous:
                 errors.append(safe_error(base, "unstable-order"))
             previous = current
-        if record.get("schemaVersion") != "2.0.0" or record.get("kind") != "entry":
+        record_version = "2.1.0" if schema_version == "1.3.0" else "2.0.0"
+        if record.get("schemaVersion") != record_version or record.get("kind") != "entry":
             errors.append(safe_error(base, "consumer-contract-mismatch"))
-        errors.extend(record_semantic_errors(record, base))
-        if not str(record.get("arabic", "")).strip() or not str(record.get("english", "")).strip():
+        if schema_version == "1.3.0":
+            formula_rules = (
+                FORMULA_V18_RULES
+                if proposal_id == "issue-0096-public-proposal-v1"
+                else (
+                    FORMULA_V17_RULES
+                    if proposal_id == "issue-0091-public-proposal-v1"
+                    else (
+                        FORMULA_V16_RULES
+                        if (schema_version, str(proposal_id))
+                        in HISTORICAL_POLICY_BINDINGS
+                        else FORMULA_RULES
+                    )
+                )
+            )
+        else:
+            formula_rules = LEGACY_FORMULA_RULES
+        active_title_decision = (
+            active_title_decisions.get(record.get("id"))
+            or active_title_decisions.get(record.get("printedEntryNumber"), {})
+        )
+        allowed_title_literals = governed_arabic_literals(
+            "\n".join(
+                str(active_title_decision.get(field, {}).get("en", ""))
+                for field in ("title", "bodyOpening")
+            ),
+            formula_rules,
+        )
+        errors.extend(
+            record_semantic_errors(
+                record,
+                base,
+                enforce_public_english=enforce_public_english,
+                allowed_arabic_literals=allowed_title_literals,
+                formula_rules=formula_rules,
+            )
+        )
+        title_only = schema_version == "1.3.0" and record.get("bodyState") == "title-only"
+        if title_only:
+            if record.get("arabic") != "" or record.get("english") != "":
+                errors.append(safe_error(base, "title-only-body-mismatch"))
+        elif not str(record.get("arabic", "")).strip() or not str(record.get("english", "")).strip():
             errors.append(safe_error(base, "incomplete-bilingual-content"))
         if record.get("source", {}).get("authorityId") != "openiti-cleaned-arabic-comparison":
             errors.append(safe_error(f"{base}.source.authorityId", "source-mismatch"))
@@ -490,6 +1177,16 @@ def validate(
             errors.append(safe_error(f"{base}.source.artifactSha256", "source-mismatch"))
         if record.get("policy") != proposal.get("policy"):
             errors.append(safe_error(f"{base}.policy", "policy-mismatch"))
+        if proposal_id in SOURCE_DERIVED_NAME_ID_PROPOSALS:
+            for name_index, name in enumerate(record.get("names", []), start=1):
+                expected_name_id = f"{record_id}-name-{name_index:03d}"
+                if not isinstance(name, dict) or name.get("id") != expected_name_id:
+                    errors.append(
+                        safe_error(
+                            f"{base}.names[{name_index - 1}].id",
+                            "invalid-stable-name-id",
+                        )
+                    )
     baseline = proposal.get("baseline", {})
     if baseline.get("recordCount") != len(records):
         errors.append(safe_error("$.baseline.recordCount", "record-count-mismatch"))
@@ -542,9 +1239,16 @@ def validate(
         )
     elif historical_policy_hash is not None:
         policy_hash = historical_policy_hash
+    elif schema_version == "1.3.0":
+        successor_policy = ROOT / "compliance" / "policy-binding.v12.json"
+        policy_hash = (
+            sha256_text_file(successor_policy)
+            if successor_policy.is_file()
+            else None
+        )
     else:
         policy_hash = sha256_text_file(
-            ROOT / "compliance" / "policy-binding.v5.json"
+            ROOT / "compliance" / "policy-binding.v7.json"
         )
     if proposal.get("policy", {}).get("bindingSha256") != policy_hash:
         errors.append(safe_error("$.policy.bindingSha256", "policy-mismatch"))
@@ -577,7 +1281,7 @@ def validate(
             errors.append(safe_error("$.evidenceBinding", "evidence-binding-mismatch"))
         if evidence.get("recordProjectionSha256") != records_sha256(records):
             errors.append(safe_error("$.evidenceBinding.recordProjectionSha256", "projection-mismatch"))
-    if schema_version == "1.2.0" or require_current:
+    if schema_version in {"1.2.0", "1.3.0"} or require_current:
         errors.extend(current_readiness_errors(proposal))
     return errors
 

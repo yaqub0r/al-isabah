@@ -222,18 +222,20 @@ prompt or policy version, schema version, model identity, reasoning setting,
 and run identity. Preserve names, isnads, negation, dates, numerals, entry
 numbers, citations, notes, poetry, uncertainty, and cross-unit continuation.
 
-Preserve the semantics of every honorific and devotional formula from the
-authoritative source. Record its semantic class, referent scope, grammatical
-agreement, observed source form, expanded Arabic form, and target realization.
-A versioned language and book profile may use an established equivalent
-formula or a supported compact Unicode character. Literal spelling and global
-count equality are diagnostics, not proof of correctness.
+Preserve every honorific and devotional formula from the authoritative source
+at the corresponding occurrence in the English record, using Arabic written
+form. Record its semantic class, referent scope, grammatical agreement,
+observed source form, expanded Arabic form, and target realization. A
+versioned language and book profile may use the exact source form, a reviewed
+Arabic normalization for a damaged form, or a supported compact Arabic Unicode
+character. Literal spelling and global count equality are diagnostics, not
+proof of correct occurrence-level alignment.
 
-Never change a formula's referent, grammatical number or gender, family
-inclusion, or substantive meaning. If the words are quoted, defined,
-contrasted, or analyzed, they are substantive text rather than replaceable
-formulaic typography and must remain faithfully translated. An uncertain
-classification is an explicit review finding.
+Never translate, transliterate, omit, expand, substitute, or add a formula in
+the English record. Quotation, definition, contrast, or analysis does not
+remove this occurrence-level preservation requirement; translate the
+surrounding substantive wording while retaining the exact Arabic formula. An
+uncertain classification is an explicit review finding.
 
 Compact characters are presentation values, not the only semantic record.
 Keep the exact observed form in provenance and retain expanded Arabic plus a
@@ -269,6 +271,14 @@ Produce a complete final candidate from the source, blind translation,
 critique, and witness findings. Record each material decision and its basis.
 Anything not resolved remains explicit on the affected unit; fluency must not
 hide uncertainty.
+
+After critique and witness resolution are complete, supply the adjudicator with
+the active governed bilingual title decision. The final English candidate must
+begin with that exact English title and, for an ordinary record, retain the
+exact governed English body opening immediately after the title boundary. A
+title-only decision must produce exactly the governed title without fabricated
+body text. The blind translator and independent critic must not receive the
+prewritten English title or body opening.
 
 Adjudication also confirms that the resulting expression is independently
 written and traceable to the publication-approved source authority. A private

@@ -1,5 +1,7 @@
 import copy
+import hashlib
 import importlib.util
+import json
 import unittest
 from pathlib import Path
 
@@ -11,6 +13,12 @@ SPEC = importlib.util.spec_from_file_location(
 MODULE = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None
 SPEC.loader.exec_module(MODULE)
+SCHEMA_SPEC = importlib.util.spec_from_file_location(
+    "schema_validation", ROOT / "scripts" / "schema_validation.py"
+)
+SCHEMA_MODULE = importlib.util.module_from_spec(SCHEMA_SPEC)
+assert SCHEMA_SPEC.loader is not None
+SCHEMA_SPEC.loader.exec_module(SCHEMA_MODULE)
 
 
 class EntryTitleContractTests(unittest.TestCase):
@@ -27,8 +35,102 @@ class EntryTitleContractTests(unittest.TestCase):
             11445, 11446, 11449, 11451, 11454, 11458, 11459, 11473,
             11474, 11476,
         }
-        self.assertEqual(numbers, historical | set(range(1538, 3035)))
-        self.assertEqual(len(self.profile["decisions"]), 1515)
+        expected = historical | set(range(1538, 12305))
+        expected.remove(7052)
+        expected.difference_update({9674, 9675, 11423, 11424})
+        self.assertEqual(numbers, expected)
+        self.assertEqual(len(self.profile["decisions"]), 10784)
+
+    def test_successor_preserves_all_previous_decisions(self) -> None:
+        previous = MODULE.load(ROOT / "profiles" / "entry-title-decisions.v10.json")
+        split = len(previous["decisions"])
+        self.assertEqual(self.profile["decisions"][:split], previous["decisions"])
+        added = self.profile["decisions"][split:]
+        self.assertEqual(
+            [item["sourceUnitId"] for item in added],
+            [f"openiti-5835c183-unit-{ordinal:06d}" for ordinal in range(11425, 12304)],
+        )
+        self.assertTrue(all("editorialSupply" not in item for item in added))
+        self.assertTrue(all("sourceRawSha256" in item for item in added))
+
+    def test_volume4_title_only_decision_is_exact_and_schema_valid(self) -> None:
+        title_only = MODULE.decision_for_entry(self.profile, 5041)
+        self.assertEqual(
+            title_only["title"],
+            {"ar": "عبد الله الأنصاري", "en": "ʿAbd Allāh al-Anṣārī"},
+        )
+        self.assertEqual(title_only["bodyOpeningKind"], "none")
+        self.assertEqual(title_only["bodyOpening"], {"ar": "", "en": ""})
+        schema = json.loads(
+            (ROOT / "schemas" / "entry-title-decisions.v3.schema.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual(SCHEMA_MODULE.validate_schema_instance(self.profile, schema), [])
+
+    def test_literal_zay_prefixes_remain_visible_without_an_assigned_role(self) -> None:
+        for number in (3908, 4021, 4076, 4162, 4247):
+            with self.subTest(number=number):
+                decision = MODULE.decision_for_entry(self.profile, number)
+                self.assertTrue(decision["title"]["ar"].startswith("ز "))
+                self.assertTrue(decision["title"]["en"].startswith("“ز” "))
+                self.assertNotIn("editorialSupply", decision)
+
+    def test_new_body_openings_preserve_attested_formula_in_arabic(self) -> None:
+        formula = "صلى الله عليه وسلم"
+        covered = 0
+        for decision in self.profile["decisions"]:
+            if not 3781 <= decision["sourceEntryNumber"] <= 4525:
+                continue
+            for field in ("title", "bodyOpening"):
+                arabic = decision[field]["ar"]
+                english = decision[field]["en"]
+                self.assertEqual(english.count(formula), arabic.count(formula))
+                self.assertNotIn("ﷺ", english)
+                covered += arabic.count(formula)
+        self.assertEqual(covered, 19)
+
+    def test_literal_damaged_heads_keep_body_and_attention_state(self) -> None:
+        cases = {
+            3052: ("الم بن وابصة", "“الم” ibn Wābiṣah"),
+            3317: ("سفين بن عبد الله", "“سفين” ibn ʿAbd Allāh"),
+        }
+        for number, (arabic_title, english_title) in cases.items():
+            with self.subTest(number=number):
+                decision = MODULE.decision_for_entry(self.profile, number)
+                self.assertEqual(decision["title"], {"ar": arabic_title, "en": english_title})
+                self.assertNotIn("editorialSupply", decision)
+                arabic = arabic_title + " " + decision["bodyOpening"]["ar"]
+                english = english_title + ". " + decision["bodyOpening"]["en"]
+                entry = {
+                    "sourceOrdinal": number,
+                    "source": {"headingArabic": arabic, "arabic": arabic},
+                    "adjudication": {"english": english},
+                    "unresolved": [{"description": "Source spelling remains unresolved."}],
+                }
+                title, body_ar, body_en = MODULE.governed_title_and_body(
+                    entry, decision, render_arabic=lambda value: value
+                )
+                self.assertEqual(title["state"], "needs_attention")
+                self.assertEqual(body_ar, decision["bodyOpening"]["ar"])
+                self.assertEqual(body_en, decision["bodyOpening"]["en"])
+
+    def test_ordinary_decision_cannot_silently_repair_source_letters(self) -> None:
+        for number, restored in ((3052, "سالم بن وابصة"), (3317, "سفيان بن عبد الله")):
+            with self.subTest(number=number):
+                decision = copy.deepcopy(MODULE.decision_for_entry(self.profile, number))
+                literal = decision["title"]["ar"]
+                decision["title"]["ar"] = restored
+                source = literal + " " + decision["bodyOpening"]["ar"]
+                entry = {
+                    "sourceOrdinal": number,
+                    "source": {"headingArabic": source, "arabic": source},
+                    "adjudication": {"english": decision["title"]["en"]},
+                }
+                with self.assertRaisesRegex(ValueError, "pinned Arabic source prefix"):
+                    MODULE.governed_title_and_body(
+                        entry, decision, render_arabic=lambda value: value
+                    )
 
     def test_positive_reference_matches_the_pinned_source_lineage(self) -> None:
         decision = next(
@@ -49,6 +151,24 @@ class EntryTitleContractTests(unittest.TestCase):
         profile["decisions"].append(copy.deepcopy(profile["decisions"][0]))
         errors = MODULE.validate(profile)
         self.assertTrue(any("duplicate sourceEntryNumber" in error for error in errors), errors)
+
+    def test_historical_number_reference_can_coexist_with_exact_source_identity(self) -> None:
+        matches = [
+            item
+            for item in self.profile["decisions"]
+            if item["sourceEntryNumber"] == 11426
+        ]
+        self.assertEqual(len(matches), 2)
+        self.assertEqual(sum("sourceUnitId" not in item for item in matches), 1)
+        exact = next(item for item in matches if "sourceUnitId" in item)
+        self.assertIs(
+            MODULE.decision_for_entry(
+                self.profile, 11426, exact["sourceUnitId"]
+            ),
+            exact,
+        )
+        with self.assertRaisesRegex(ValueError, "lacks a governed bilingual"):
+            MODULE.decision_for_entry(self.profile, 11426)
 
     def test_rejects_relationship_prose_in_title(self) -> None:
         profile = copy.deepcopy(self.profile)
@@ -85,14 +205,31 @@ class EntryTitleContractTests(unittest.TestCase):
     def test_openiti_milestones_are_removed_only_at_the_source_heading_boundary(self) -> None:
         self.assertEqual(
             MODULE.clean_source_heading_boundary(
-                "ms0504 الحكم بن ms0542 مرة قال"
+                "ms0504 الحكم بن ms0542 مرة قال PageV03P210"
             ),
             "الحكم بن مرة قال",
         )
         self.assertEqual(
-            MODULE.clean_source_heading_boundary("اسم xms0542 msnote"),
-            "اسم xms0542 msnote",
+            MODULE.clean_source_heading_boundary(
+                "اسم xms0542 msnote xPageV03P210 PageV03P210x"
+            ),
+            "اسم xms0542 msnote xPageV03P210 PageV03P210x",
         )
+
+    def test_rejects_openiti_milestone_controls_in_display_fields(self) -> None:
+        for language in ("ar", "en"):
+            for control in ("ms1115", "PageV03P210"):
+                with self.subTest(language=language, control=control):
+                    profile = copy.deepcopy(self.profile)
+                    profile["decisions"][-1]["bodyOpening"][language] += f" {control}"
+                    errors = MODULE.validate(profile)
+                    self.assertTrue(
+                        any(
+                            "milestone controls are not display text" in error
+                            for error in errors
+                        ),
+                        errors,
+                    )
 
     def test_governed_split_accepts_embedded_marker_without_losing_body_text(self) -> None:
         entry = {
@@ -190,7 +327,118 @@ class EntryTitleContractTests(unittest.TestCase):
 
     def test_entry_outside_governed_ranges_is_rejected(self) -> None:
         with self.assertRaisesRegex(ValueError, "lacks a governed bilingual"):
-            MODULE.decision_for_entry(self.profile, 3035)
+            MODULE.decision_for_entry(self.profile, 13000)
+
+    def test_repeated_printed_numbers_resolve_only_by_source_unit(self) -> None:
+        for number, ordinals in ((6986, (6986, 6987)), (7760, (7760, 7761))):
+            with self.subTest(number=number):
+                with self.assertRaisesRegex(ValueError, "lacks a governed bilingual"):
+                    MODULE.decision_for_entry(self.profile, number)
+                decisions = [
+                    MODULE.decision_for_entry(
+                        self.profile,
+                        number,
+                        f"openiti-5835c183-unit-{ordinal:06d}",
+                    )
+                    for ordinal in ordinals
+                ]
+                self.assertEqual([item["sourceEntryNumber"] for item in decisions], [number, number])
+                self.assertEqual(len({item["sourceRawSha256"] for item in decisions}), 2)
+
+    def test_volume5_title_only_decision_is_source_bound(self) -> None:
+        decision = MODULE.decision_for_entry(
+            self.profile, 7613, "openiti-5835c183-unit-007613"
+        )
+        self.assertEqual(decision["title"]["ar"], "مالك بن الجلاح")
+        self.assertEqual(decision["bodyOpeningKind"], "none")
+        self.assertEqual(decision["bodyOpening"], {"ar": "", "en": ""})
+        self.assertEqual(
+            decision["sourceRawSha256"],
+            "fa3cc474d223425554535518331a8e9d7406089e64ea728453049bdf784c4c1b",
+        )
+
+    def test_volume6_title_only_decisions_are_source_bound(self) -> None:
+        for ordinal in (8282, 8357, 9010):
+            with self.subTest(ordinal=ordinal):
+                decision = MODULE.decision_for_entry(
+                    self.profile,
+                    ordinal - 1,
+                    f"openiti-5835c183-unit-{ordinal:06d}",
+                )
+                self.assertEqual(decision["bodyOpeningKind"], "none")
+                self.assertEqual(decision["bodyOpening"], {"ar": "", "en": ""})
+
+    def test_volume7_title_only_decisions_are_source_bound(self) -> None:
+        ordinals = (
+            10139, 10168, 10313, 10314, 10315, 10316, 10317, 10318,
+            10319, 10328, 10657, 10728, 10729, 10730, 10731,
+        )
+        for ordinal in ordinals:
+            with self.subTest(ordinal=ordinal):
+                decision = MODULE.decision_for_entry(
+                    self.profile,
+                    next(
+                        item["sourceEntryNumber"]
+                        for item in self.profile["decisions"]
+                        if item.get("sourceUnitId")
+                        == f"openiti-5835c183-unit-{ordinal:06d}"
+                    ),
+                    f"openiti-5835c183-unit-{ordinal:06d}",
+                )
+                self.assertEqual(decision["bodyOpeningKind"], "none")
+                self.assertEqual(decision["bodyOpening"], {"ar": "", "en": ""})
+
+    def test_volume8_decisions_require_exact_source_identity(self) -> None:
+        for ordinal in (11425, 11555, 11930, 12023, 12303):
+            source_unit_id = f"openiti-5835c183-unit-{ordinal:06d}"
+            decision = next(
+                item
+                for item in self.profile["decisions"]
+                if item.get("sourceUnitId") == source_unit_id
+            )
+            self.assertIs(
+                MODULE.decision_for_entry(
+                    self.profile,
+                    decision["sourceEntryNumber"],
+                    source_unit_id,
+                ),
+                decision,
+            )
+            with self.assertRaisesRegex(ValueError, "lacks a governed bilingual"):
+                MODULE.decision_for_entry(
+                    self.profile,
+                    decision["sourceEntryNumber"],
+                    "openiti-5835c183-unit-999999",
+                )
+
+    def test_volume8_title_only_decisions_are_source_bound(self) -> None:
+        for ordinal in (11930, 12023):
+            source_unit_id = f"openiti-5835c183-unit-{ordinal:06d}"
+            decision = next(
+                item
+                for item in self.profile["decisions"]
+                if item.get("sourceUnitId") == source_unit_id
+            )
+            resolved = MODULE.decision_for_entry(
+                self.profile,
+                decision["sourceEntryNumber"],
+                source_unit_id,
+            )
+            self.assertEqual(resolved["bodyOpeningKind"], "none")
+            self.assertEqual(resolved["bodyOpening"], {"ar": "", "en": ""})
+
+    def test_volume8_relationship_text_is_not_misclassified_as_title_only(self) -> None:
+        decision = MODULE.decision_for_entry(
+            self.profile,
+            11556,
+            "openiti-5835c183-unit-011555",
+        )
+        self.assertEqual(decision["title"], {"ar": "عائشة", "en": "ʿĀʾishah"})
+        self.assertEqual(decision["bodyOpeningKind"], "lineage")
+        self.assertEqual(
+            decision["bodyOpening"],
+            {"ar": "بنت عجرة", "en": "daughter of ʿAjrah"},
+        )
 
 
 if __name__ == "__main__":

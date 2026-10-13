@@ -25,7 +25,7 @@ model](docs/architecture/canonical-publication-repository.md) for the complete
 responsibility and trust-boundary model.
 
 Downstream consumers discover and pin the versioned
-[translation-governance reference](docs/contracts/translation-governance-reference.v4.json).
+[translation-governance reference](docs/contracts/translation-governance-reference.v12.json).
 Its [compatibility guide](docs/contracts/downstream-consumer-compatibility.md)
 documents immutable-commit pinning, the Al-Isabah-owned formula registry,
 consumer responsibilities, and the downstream deprecation path. Human review
@@ -86,8 +86,8 @@ contract](docs/contracts/entry-title-structure.md) defines a title as the
 shortest stable name or heading phrase identifying an entry's subject. Lineage,
 relationships, narration, and biographical prose remain in ordered body blocks;
 Arabic and English titles must cover the same semantic boundary. The versioned
-[title-decision profile](profiles/entry-title-decisions.v3.json) records
-reviewed decisions for entries whose printed heading line does not provide that
+[title-decision profile](profiles/entry-title-decisions.v11.json) records
+governed decisions for entries whose printed heading line does not provide that
 boundary reliably. Its witness-bound editorial supplies preserve damaged source
 prefixes while displaying bracketed subject heads supported by same-work
 evidence. Reader applications consume this structure and must not infer titles
@@ -131,14 +131,17 @@ attestations, disclosed ongoing human-review and unresolved states, compliance
 approval, source hashes, or an explicit promotion manifest. Zero or incomplete
 human-review coverage is not itself a blocker.
 
-The legacy Volume 8 and Khadijah development work was retained in approved
-access-controlled research storage rather than promoted here. Its non-sensitive
-integrity and retirement record is in `compliance/research-retirement.v1.json`.
+The legacy Volume 8 and Khadijah development work remains retained in approved
+access-controlled research storage. Issue 98 supersedes the legacy Volume 8
+completion claim with a normal-contract, source-bound public-safe proposal; it
+does not expose or erase the historical private evidence. The non-sensitive
+integrity and retirement record remains in
+`compliance/research-retirement.v1.json`.
 
 ## Public-working boundary
 
 Current public-working builds consume only strict
-[`public-proposal.v1`](schemas/public-proposal.v1.schema.json) artifacts and their
+[`public-proposal.v2`](schemas/public-proposal.v2.schema.json) artifacts and their
 exact release closure. Internal translation-work packets and detailed review
 evidence are not public build inputs. The cumulative closure admits the 1,537
 Volume 1 records and the corrected 1,497-record Volume 2 proposal while excluding

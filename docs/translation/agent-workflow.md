@@ -137,6 +137,9 @@ For every entry:
 2. **Independent critique** — use a fresh critique pass with a different run
    ID. Inspect omissions, additions, reversals, names, relationships, isnads,
    numbers, negation, honorific semantics, poetry, notes, and continuations.
+   Preserve every attested honorific and devotional formula at the
+   corresponding English occurrence in Arabic written form, including formulas
+   inside quotations; translate the surrounding substantive wording.
    Each material uncertainty sets `requiresWitness: true`. A complete critique
    also records the ordered semantic checklist in `semanticAudit`, bound to
    hashes of the readable Arabic and the exact English candidate. A status
@@ -150,8 +153,14 @@ For every entry:
    are not required, record the source-specific rationale rather than relying
    on the status alone. A material or blocking unresolved item also requires
    completed witness evidence.
-4. **Adjudication** — write the complete final candidate and record material
-   decisions. Fluent wording must not hide an unresolved reading.
+4. **Adjudication** — after critique and witness resolution, provide the active
+   governed bilingual title decision and write the complete final candidate.
+   Begin the English candidate with the exact governed English title and retain
+   the exact governed English body opening immediately after its title boundary;
+   emit only the governed title for a title-only source unit. Record material
+   decisions, and do not hide an unresolved reading with fluent wording. Keep
+   the prewritten English title and body opening out of blind translation and
+   independent critique inputs.
 5. **Names** — mark names complete and store durable JSON candidates and
    mentions. Candidate IDs remain packet-scoped until reconciled with the
    canonical identity ledger; do not invent canonical entry IDs. Bind the
@@ -268,6 +277,23 @@ wrong identity, a reused worker turn or recorded fork fails. Raw prompt and
 response rows are never retained or printed. Runtime metadata format changes
 require a reviewed adapter update; never substitute worker-written labels.
 
+For the current direct-worker host format, select the worker thread identity
+(`CODEX_THREAD_ID`), not the root host session identity (`CODEX_SESSION_ID`).
+The coordinator must check that the rollout filename and recorded agent path
+identify the intended worker; the adapter verifies its exact `session_meta.id`.
+Its separate `session_meta.session_id` may identify the
+root host session only when the top-level and nested spawn parent identities
+agree, the spawn depth is exactly one, and both agent paths agree on a direct
+`/root/<task_name>` path using lowercase letters, digits, and underscores. The adapter
+retains the worker identity in the existing evidence schema and discards these
+parent/path diagnostics. These parent, depth, and path checks apply when
+`session_id` differs from `id`; legacy metadata that omits `session_id` or repeats
+`id` retains its existing identity behavior. In the distinct-root-session shape,
+arbitrary alias mismatches and nested-worker metadata fail closed. All shapes
+retain the exact selected identity, turn, effective settings, and fork checks.
+This host-format correction changes neither the approved method nor the
+trusted-host boundary; it does not admit earlier uncaptured semantic output.
+
 After building normal content-addressed stage provenance with
 `completed_stage_provenance`, save that stage's provenance object in an ignored
 JSON file and bind its exact output and checkpoint:
@@ -332,7 +358,7 @@ absolute workstation paths, and writes immutable evidence only to an explicit,
 repository-reviewed destination outside this public checkout. It refuses every
 destination inside the repository and refuses to overwrite existing evidence.
 Do not run `submit` until the project has approved the exact destination. A
-separate reviewed process derives a strict `public-proposal.v1` artifact for a
+separate reviewed process derives a strict `public-proposal.v2` artifact for a
 public pull request. Never commit the raw packet, detailed review, `.runtime`,
 downloaded sources, private witnesses, or model traces.
 

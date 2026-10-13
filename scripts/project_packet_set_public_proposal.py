@@ -32,8 +32,13 @@ from validate_entry_titles import (  # noqa: E402
 
 
 INLINE_SECTION = re.compile(r"\s*#~:section:\d*\s*(\([^\n]+\))\s*")
-ENTRY_TITLE_PROFILE = ROOT / "profiles" / "entry-title-decisions.v3.json"
+ENTRY_TITLE_PROFILE = ROOT / "profiles" / "entry-title-decisions.v11.json"
 ENTRY_TITLE_PROFILE_NAME = re.compile(r"^entry-title-decisions\.v[0-9]+\.json$")
+
+
+def title_profile_sha256(path: Path) -> str:
+    """Hash a UTF-8 title profile using repository-normalized LF bytes."""
+    return sha256_text_file(path)
 
 
 def public_arabic(value: str) -> str:
@@ -49,9 +54,9 @@ def finding(value: dict[str, Any]) -> dict[str, str]:
     }
 
 
-def public_name(value: dict[str, Any]) -> dict[str, Any]:
+def public_name(value: dict[str, Any], stable_id: str) -> dict[str, Any]:
     return {
-        "id": value["candidateId"],
+        "id": stable_id,
         "arabic": value["observedArabic"],
         "english": value["proposedEnglish"],
         "aliases": value.get("aliases", []),
@@ -109,6 +114,93 @@ def continued_context(
         "unresolved": source_context["unresolved"],
         "sourceSha256": source_context["sourceSha256"],
     }
+
+
+def projected_formula_inventory(
+    record: dict[str, Any], packet_formulas: list[dict[str, Any]]
+) -> list[dict[str, str]]:
+    """Recompute formula declarations from every projected bilingual field."""
+    from validate_public_proposal import expected_scope_formulas
+
+    scopes: list[tuple[str, str, str, str]] = []
+    for context in record.get("precedingMaterial", []):
+        heading = context.get("heading", {})
+        scopes.append(
+            (
+                context["id"],
+                "headingArabic",
+                heading.get("arabic") or "",
+                heading.get("english") or "",
+            )
+        )
+        scopes.append(
+            (
+                context["id"],
+                "arabic",
+                context.get("arabic") or "",
+                context.get("english") or "",
+            )
+        )
+    title = record["title"]
+    scopes.append(
+        (
+            record["id"],
+            "titleArabic",
+            title.get("arabic") or "",
+            title.get("english") or "",
+        )
+    )
+    scopes.append(
+        (
+            record["id"],
+            "arabic",
+            record.get("arabic") or "",
+            record.get("english") or "",
+        )
+    )
+
+    inventory: list[dict[str, str]] = []
+    for record_id, source_field, source, english in scopes:
+        formulas, valid = expected_scope_formulas(
+            record_id,
+            source_field,
+            source,
+            english,
+            include_contextual=True,
+        )
+        if not valid:
+            raise ValueError(
+                f"formula parity failed for projected field "
+                f"{record_id}:{source_field}"
+            )
+        inventory.extend(
+            {key: str(item[key]) for key in FORMULA_KEYS}
+            for item in formulas
+        )
+    inherited_ids = {
+        context["id"]
+        for context in record.get("precedingMaterial", [])
+        if context.get("kind") == "continued_structural_heading"
+    }
+    projected_packet_inventory = [
+        item for item in inventory if item["recordId"] not in inherited_ids
+    ]
+
+    def signature(item: dict[str, Any]) -> tuple[str, str, str]:
+        return (
+            str(item["observedArabic"]),
+            str(item["semanticClass"]),
+            str(item["targetRealization"]),
+        )
+
+    if [signature(item) for item in projected_packet_inventory] != [
+        signature(item) for item in packet_formulas
+    ]:
+        raise ValueError(
+            f"projected formula inventory drifted from packet "
+            f"{record['id']}"
+        )
+    return inventory
 
 
 def active_heading_contexts(
@@ -199,8 +291,6 @@ def public_record(
     inherited_contexts: list[dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     candidates = entry["names"]["candidates"]
-    if not candidates:
-        raise ValueError(f"source ordinal {entry['sourceOrdinal']} has no title candidate")
     contexts = list(inherited_contexts or []) + [
         public_context(segment, translation)
         for segment, translation in zip(
@@ -215,7 +305,7 @@ def public_record(
     title, arabic, english = title_and_body(entry, decision)
     if needs_attention:
         title["state"] = "needs_attention"
-    return {
+    record = {
         "schemaVersion": "2.0.0",
         "id": entry["sourceUnitId"],
         "kind": "entry",
@@ -230,12 +320,15 @@ def public_record(
         "arabic": arabic,
         "english": english,
         "precedingMaterial": contexts,
-        "names": [public_name(item) for item in candidates],
-        "unresolved": [finding(item) for item in unresolved],
-        "formulas": [
-            {key: item[key] for key in FORMULA_KEYS}
-            for item in formulas
+        "names": [
+            public_name(
+                item,
+                f"{entry['sourceUnitId']}-name-{index:03d}",
+            )
+            for index, item in enumerate(candidates, start=1)
         ],
+        "unresolved": [finding(item) for item in unresolved],
+        "formulas": [],
         "machineAssessment": "needs_attention" if needs_attention else "passed",
         "humanReview": entry["humanReview"]["status"],
         "source": {
@@ -247,6 +340,10 @@ def public_record(
         },
         "policy": {"bindingSha256": packet["policy"]["bindingSha256"]},
     }
+    record["formulas"] = projected_formula_inventory(record, formulas)
+    if decision["bodyOpeningKind"] == "none":
+        record["bodyState"] = "title-only"
+    return record
 
 
 def packet_set_hash(values: list[dict[str, Any]], key: str) -> str:
@@ -315,7 +412,6 @@ def project(
     )
     previous_end: int | None = None
     records: list[dict[str, Any]] = []
-    governed_numbers: set[int] = set()
     for _, packet in packets:
         if packet["authority"]["commit"] != authority["commit"] or packet["authority"]["sha256"] != authority["sha256"]:
             raise ValueError("packet authority mismatch")
@@ -331,13 +427,9 @@ def project(
             by_record[occurrence["recordId"]].append(occurrence)
         for entry in packet["entries"]:
             number = entry["sourceEntryNumber"]
-            if number in governed_numbers:
-                raise ValueError(
-                    f"printed entry number {number} is ambiguous under the "
-                    "current title-decision profile key"
-                )
-            governed_numbers.add(number)
-            decision = title_decisions.get(number)
+            decision = title_decisions.get(entry["sourceUnitId"]) or title_decisions.get(
+                number
+            )
             if decision is None:
                 raise ValueError(
                     f"source entry {number} lacks a governed bilingual "
@@ -347,7 +439,12 @@ def project(
                 public_record(
                     packet,
                     entry,
-                    by_record[entry["sourceUnitId"]],
+                    [
+                        occurrence
+                        for segment in entry["source"]["precedingSegments"]
+                        for occurrence in by_record[segment["segmentId"]]
+                    ]
+                    + by_record[entry["sourceUnitId"]],
                     decision,
                     inherited_contexts=(
                         inherited_contexts
@@ -359,6 +456,10 @@ def project(
 
     if records != sorted(records, key=lambda item: (item["sourceOrdinal"], item["id"])):
         raise ValueError("public records are not in stable source order")
+    has_title_only = any(record.get("bodyState") == "title-only" for record in records)
+    if has_title_only:
+        for record in records:
+            record["schemaVersion"] = "2.1.0"
     rights = json.loads(
         (ROOT / "compliance" / "rights-matrix.al-isabah.v1.json").read_text(
             encoding="utf-8"
@@ -366,12 +467,12 @@ def project(
     )
     record_projection = sha256_bytes(b"".join(canonical_json(item) for item in records))
     proposal = {
-        "schemaVersion": "1.2.0",
+        "schemaVersion": "1.3.0" if has_title_only else "1.2.0",
         "proposalId": proposal_id,
         "workId": first["workId"],
         "publicationStatus": "public-working",
         "canonicalPromotion": "blocked",
-        "consumerSchemaVersion": "2.0.0",
+        "consumerSchemaVersion": "2.1.0" if has_title_only else "2.0.0",
         "sourceAuthority": {
             "sourceId": NORMALIZED_SOURCE_ID,
             "commit": authority["commit"],
@@ -384,14 +485,10 @@ def project(
             "statusCode": "public-working",
             "effectCode": "canonical-promotion-blocked",
         },
-        "policy": {
-            "bindingSha256": sha256_text_file(
-                ROOT / "compliance" / "policy-binding.v5.json"
-            )
-        },
+        "policy": {"bindingSha256": policy_sha256},
         "entryTitleDecisions": {
             "profileId": title_profile_path.stem,
-            "profileSha256": sha256_file(title_profile_path),
+            "profileSha256": title_profile_sha256(title_profile_path),
             "coveredRecordCount": len(records),
         },
         "sliceContext": slice_context_binding,

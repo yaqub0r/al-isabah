@@ -21,17 +21,63 @@ from execution_governance import validate as validate_execution_governance
 ROOT = SCRIPT_DIR.parent
 REGISTER_PATH = ROOT / "compliance" / "source-register.v1.json"
 PROMOTION_PATH = ROOT / "compliance" / "promotions" / "available-data.v2.json"
-POLICY_PATH = ROOT / "compliance" / "policy-binding.v5.json"
+POLICY_PATH = ROOT / "compliance" / "policy-binding.v12.json"
+FROZEN_POLICY_V11_PATH = ROOT / "compliance" / "policy-binding.v11.json"
+FROZEN_POLICY_V10_PATH = ROOT / "compliance" / "policy-binding.v10.json"
+FROZEN_POLICY_V9_PATH = ROOT / "compliance" / "policy-binding.v9.json"
+FROZEN_POLICY_V8_PATH = ROOT / "compliance" / "policy-binding.v8.json"
+FROZEN_POLICY_V7_PATH = ROOT / "compliance" / "policy-binding.v7.json"
+FROZEN_POLICY_V6_PATH = ROOT / "compliance" / "policy-binding.v6.json"
+FROZEN_POLICY_V5_PATH = ROOT / "compliance" / "policy-binding.v5.json"
 LAST_POLICY_PATH = ROOT / "compliance" / "policy-binding.v3.json"
 LEGACY_POLICY_PATH = ROOT / "compliance" / "policy-binding.v1.json"
 PREVIOUS_POLICY_PATH = ROOT / "compliance" / "policy-binding.v2.json"
 COVERAGE_PATH = ROOT / "compliance" / "translation-coverage.v1.json"
+QUARTER_PROPOSAL_PATH = ROOT / "content" / "public-proposals" / "issue-0080.public-proposal.json"
+QUARTER_SCOPE_ID = "issue-0080-volume-03-quarter-01"
+SECOND_QUARTER_PROPOSAL_PATH = (
+    ROOT / "content" / "public-proposals" / "issue-0082.public-proposal.json"
+)
+SECOND_QUARTER_SCOPE_ID = "issue-0082-volume-03-quarter-02"
+FINAL_HALF_PROPOSAL_PATH = (
+    ROOT / "content" / "public-proposals" / "issue-0084.public-proposal.json"
+)
+FINAL_HALF_SCOPE_ID = "issue-0084-volume-03-final-half"
+QUARTER_PENDING_STATUS = "machine-ready-quarter-proposal-pending-submission-and-distribution-admission"
+VOLUME7_PROPOSAL_PATH = (
+    ROOT / "content" / "public-proposals" / "issue-0096.public-proposal.json"
+)
+VOLUME7_SCOPE_ID = "issue-0096-volume-07"
+VOLUME8_PROPOSAL_PATH = (
+    ROOT / "content" / "public-proposals" / "issue-0098.public-proposal.json"
+)
+VOLUME8_SCOPE_ID = "issue-0098-volume-08"
+VOLUME_PENDING_STATUS = "machine-ready-volume-proposal-pending-submission-and-distribution-admission"
 RETIREMENT_PATH = ROOT / "compliance" / "research-retirement.v1.json"
 RIGHTS_MATRIX_PATH = ROOT / "compliance" / "rights-matrix.al-isabah.v1.json"
 GOVERNANCE_REFERENCE_PATH = (
-    ROOT / "docs" / "contracts" / "translation-governance-reference.v4.json"
+    ROOT / "docs" / "contracts" / "translation-governance-reference.v12.json"
 )
 FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
+
+# Compliance tests exercise many independent failure modes against the same
+# immutable public proposals.  Strict proposal validation is intentionally
+# expensive, so retain its result only while both the proposal bytes and every
+# repository file it consults remain identical.  Returning a copy prevents a
+# caller from mutating the cached result.
+_STRICT_PROPOSAL_VALIDATION_CACHE: dict[
+    tuple[str, str, tuple[tuple[str, str], ...]], tuple[str, ...]
+] = {}
+_STRICT_PROPOSAL_SHARED_DEPENDENCIES = (
+    ROOT / "profiles" / "honorific-formulas.v1.json",
+    ROOT / "schemas" / "public-proposal.v2.schema.json",
+    ROOT / "compliance" / "source-register.v1.json",
+    ROOT / "compliance" / "rights-matrix.al-isabah.v1.json",
+    ROOT / "compliance" / "policy-binding.v1.json",
+    ROOT / "compliance" / "policy-binding.v7.json",
+    ROOT / "compliance" / "policy-binding.v11.json",
+    ROOT / "compliance" / "policy-binding.v12.json",
+)
 
 CLASSIFICATIONS = {
     "approved-for-publication",
@@ -49,7 +95,8 @@ REQUIRED_POLICIES = {
     "translation-quality-workflow": "docs/contracts/translation-quality-workflow.md",
     "al-isabah-translation-profile": "docs/translation-profiles/al-isabah.md",
     "entry-title-structure": "docs/contracts/entry-title-structure.md",
-    "entry-title-decisions": "profiles/entry-title-decisions.v3.json",
+    "entry-title-decisions": "profiles/entry-title-decisions.v11.json",
+    "entry-title-decision-schema": "schemas/entry-title-decisions.v3.schema.json",
     "honorific-formula-registry": "profiles/honorific-formulas.v1.json",
     "translation-source-profile": "profiles/translation-source.v1.json",
     "execution-method-contract": "docs/contracts/translation-execution-methods.md",
@@ -57,13 +104,13 @@ REQUIRED_POLICIES = {
     "execution-method-registry-schema": "schemas/execution-method-registry.v2.schema.json",
     "execution-evaluation-schema": "schemas/execution-evaluation.v1.schema.json",
     "runtime-host-evidence-schema": "schemas/runtime-host-evidence.v1.schema.json",
-    "translation-work-packet-schema": "schemas/translation-work-packet.v3.schema.json",
+    "translation-work-packet-schema": "schemas/translation-work-packet.v10.schema.json",
     "translation-agent-workflow": "docs/translation/agent-workflow.md",
-    "local-policy-binding-schema": "compliance/schemas/policy-binding.v5.schema.json",
+    "local-policy-binding-schema": "compliance/schemas/policy-binding.v12.schema.json",
 }
 REQUIRED_GOVERNANCE_ARTIFACTS = {
     "policy-binding": (
-        "compliance/policy-binding.v5.json",
+        "compliance/policy-binding.v12.json",
         "active",
         None,
     ),
@@ -83,7 +130,12 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
         None,
     ),
     "entry-title-decisions": (
-        "profiles/entry-title-decisions.v3.json",
+        "profiles/entry-title-decisions.v11.json",
+        "active",
+        "11.0.0",
+    ),
+    "entry-title-decision-schema": (
+        "schemas/entry-title-decisions.v3.schema.json",
         "active",
         "3.0.0",
     ),
@@ -95,7 +147,7 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
     "honorific-formula-registry": (
         "profiles/honorific-formulas.v1.json",
         "active",
-        "1.3.0",
+        "1.9.0",
     ),
     "translation-coverage": (
         "compliance/translation-coverage.v1.json",
@@ -108,9 +160,9 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
         "1.1.0",
     ),
     "governance-reference-schema": (
-        "schemas/translation-governance-reference.v4.schema.json",
+        "schemas/translation-governance-reference.v12.schema.json",
         "active",
-        "4.0.0",
+        "12.0.0",
     ),
     "promotion-readiness": (
         "compliance/promotions/available-data.v2.json",
@@ -132,9 +184,14 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
         "rollback-only",
         "1.0.0",
     ),
+    "public-proposal-v2": (
+        "schemas/public-proposal.v2.schema.json",
+        "active",
+        "1.3.0",
+    ),
     "public-proposal-v1": (
         "schemas/public-proposal.v1.schema.json",
-        "active",
+        "rollback-only",
         "1.2.0",
     ),
     "public-distribution-contract": (
@@ -159,9 +216,9 @@ REQUIRED_GOVERNANCE_ARTIFACTS.update({
     "execution-method-registry-schema": ("schemas/execution-method-registry.v2.schema.json", "active", None),
     "execution-evaluation-schema": ("schemas/execution-evaluation.v1.schema.json", "active", None),
     "runtime-host-evidence-schema": ("schemas/runtime-host-evidence.v1.schema.json", "active", None),
-    "translation-work-packet-schema": ("schemas/translation-work-packet.v3.schema.json", "active", "3.0.0"),
+    "translation-work-packet-schema": ("schemas/translation-work-packet.v10.schema.json", "active", "3.0.0"),
     "translation-agent-workflow": ("docs/translation/agent-workflow.md", "active", None),
-    "local-policy-binding-schema": ("compliance/schemas/policy-binding.v5.schema.json", "active", None),
+    "local-policy-binding-schema": ("compliance/schemas/policy-binding.v12.schema.json", "active", None),
 })
 REQUIRED_DEPRECATED_CONSUMER_AUTHORITIES = {
     (
@@ -220,6 +277,87 @@ OPENITI_COMMIT = "5835c183b8bbf4ea454d5c1be2b168b669403771"
 OPENITI_SHA256 = "bc9db8134c8278973967c91c00324531833f643fc0fb2c8ebe318c9ed4469eea"
 LEGACY_POLICY_SHA256 = "f1ca5fa8303b13e70bbd92aeeb8e5d2a05ba037cf951043b5043262dd2d591e5"
 PREVIOUS_POLICY_SHA256 = "20a74b3643a65e621efe02402e59944223f1424f75d67e1af94476d6f233bd6f"
+FROZEN_POLICY_V5_SHA256 = "a89774893a9c623814f51a942c0c43056a0f6ffb8b979a43bc6bdb6e317c3f91"
+ACTIVE_POLICY_V6_SHA256 = "faf1078753c33c278098e71d0392a2af1e955320f090660da24ba64bc1831692"
+ACTIVE_POLICY_V7_SHA256 = "f75113f0fe08869efa947c19b9a12a38e5a8c9ece972bbf5d8ebecea6ce48810"
+ACTIVE_POLICY_V8_SHA256 = "9c82594b8d3a857baf54ba112ecf860e8a59b3f378381ab42db3819b1220cf34"
+ACTIVE_POLICY_V9_SHA256 = "ec32ce5933a7f79167f9666b522187fd7e1ea8aacd7c0acce10c1ac269e32ebe"
+ACTIVE_POLICY_V10_SHA256 = "4f650a9bd17b730b6c311aba2911df22302db4971f39c094edb85d24a703d005"
+ACTIVE_POLICY_V11_SHA256 = "a335f829c16c05dbd8071ccca94f3ae1e2a57eaa1a949926971ca74fcdffc404"
+ACTIVE_POLICY_V12_SHA256 = "c2323ad10d5679d625eac628c966476efad270e7bc23f6a8fbda8823196f0e7c"
+QUARTER_COMPLETIONS = {
+    QUARTER_SCOPE_ID: {
+        "label": "issue-0080 quarter",
+        "artifact": "issue-0080-public-proposal-v1",
+        "proposalId": "issue-0080-public-proposal-v1",
+        "proposalPath": QUARTER_PROPOSAL_PATH,
+        "start": 3035,
+        "end": 3407,
+        "structuralSegments": 13,
+        "structuralOwners": 12,
+        "policySha256": FROZEN_POLICY_V5_SHA256,
+        "titleProfileId": "entry-title-decisions.v4",
+        "titleProfileSha256": "f177c6c9fba1702aae911c0dba024e9e24b1093016b62066a573f63e6afff2a3",
+    },
+    SECOND_QUARTER_SCOPE_ID: {
+        "label": "issue-0082 quarter",
+        "artifact": "issue-0082-public-proposal-v1",
+        "proposalId": "issue-0082-public-proposal-v1",
+        "proposalPath": SECOND_QUARTER_PROPOSAL_PATH,
+        "start": 3408,
+        "end": 3780,
+        "structuralSegments": 36,
+        "structuralOwners": 32,
+        "policySha256": ACTIVE_POLICY_V6_SHA256,
+        "titleProfileId": "entry-title-decisions.v5",
+        "titleProfileSha256": "3f338cf5e748d142c3de86d9926db5f97b727de3790a92be7afb9bcc9d1d8221",
+    },
+    FINAL_HALF_SCOPE_ID: {
+        "label": "issue-0084 final half",
+        "artifact": "issue-0084-public-proposal-v1",
+        "proposalId": "issue-0084-public-proposal-v1",
+        "proposalPath": FINAL_HALF_PROPOSAL_PATH,
+        "start": 3781,
+        "end": 4525,
+        "structuralSegments": 135,
+        "structuralOwners": 107,
+        "policySha256": ACTIVE_POLICY_V7_SHA256,
+        "titleProfileId": "entry-title-decisions.v6",
+        "titleProfileSha256": "09014c9e78befd5dcd490e1452b91b0ec099982253ec13297e98fc74de41a6e6",
+    },
+    VOLUME7_SCOPE_ID: {
+        "label": "issue-0096 full volume",
+        "artifact": "issue-0096-public-proposal-v1",
+        "proposalId": "issue-0096-public-proposal-v1",
+        "proposalPath": VOLUME7_PROPOSAL_PATH,
+        "start": 9485,
+        "end": 11424,
+        "volume": 7,
+        "schemaVersion": "1.3.0",
+        "pendingStatus": VOLUME_PENDING_STATUS,
+        "structuralSegments": 201,
+        "structuralOwners": 134,
+        "policySha256": "a335f829c16c05dbd8071ccca94f3ae1e2a57eaa1a949926971ca74fcdffc404",
+        "titleProfileId": "entry-title-decisions.v10",
+        "titleProfileSha256": "f99f48ff38a17ebff828580e26547ecdfb277d40dbaee8689b5e48bd4bf1fcfb",
+    },
+    VOLUME8_SCOPE_ID: {
+        "label": "issue-0098 full volume",
+        "artifact": "issue-0098-public-proposal-v1",
+        "proposalId": "issue-0098-public-proposal-v1",
+        "proposalPath": VOLUME8_PROPOSAL_PATH,
+        "start": 11425,
+        "end": 12303,
+        "volume": 8,
+        "schemaVersion": "1.3.0",
+        "pendingStatus": VOLUME_PENDING_STATUS,
+        "structuralSegments": 139,
+        "structuralOwners": 80,
+        "policySha256": ACTIVE_POLICY_V12_SHA256,
+        "titleProfileId": "entry-title-decisions.v11",
+        "titleProfileSha256": "130a872700412dba03aa14ce2a6b9c43e3dc2e8afa629c7b4c8e3feeb74f33ef",
+    },
+}
 AGENT_COMPLETE_REQUIREMENTS = [
     "all-applicable-autonomous-stages-exhausted",
     "locked-scope-has-structured-english",
@@ -252,15 +390,115 @@ REQUIRED_COMPLETED_SCOPES = {
         "workflow_conformance": "current",
         "public_working_status": "available",
     },
+    VOLUME8_SCOPE_ID: {
+        "scope_kind": "cohort",
+        "volume": 8,
+        "artifact": "issue-0098-public-proposal-v1",
+        "units": 879,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
     "volume-08": {
         "volume": 8,
-        "artifact": "volume-08-structured-english",
-        "units": 1550,
-        "workflow_conformance": "legacy_audit_required",
+        "artifact": "issue-0098-public-proposal-v1",
+        "units": 879,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
+    QUARTER_SCOPE_ID: {
+        "scope_kind": "cohort",
+        "volume": 3,
+        "artifact": "issue-0080-public-proposal-v1",
+        "units": 373,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
+    SECOND_QUARTER_SCOPE_ID: {
+        "scope_kind": "cohort",
+        "volume": 3,
+        "artifact": "issue-0082-public-proposal-v1",
+        "units": 373,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
+    FINAL_HALF_SCOPE_ID: {
+        "scope_kind": "cohort",
+        "volume": 3,
+        "artifact": "issue-0084-public-proposal-v1",
+        "units": 745,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
+    "volume-03": {
+        "volume": 3,
+        "artifact": "issue-0084-public-proposal-v1",
+        "units": 1491,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
+    "issue-0086-volume-04": {
+        "scope_kind": "cohort",
+        "volume": 4,
+        "artifact": "issue-0086-public-proposal-v1",
+        "units": 1633,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
+    "volume-04": {
+        "volume": 4,
+        "artifact": "issue-0086-public-proposal-v1",
+        "units": 1633,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
+    "issue-0085-volume-05": {
+        "scope_kind": "cohort",
+        "volume": 5,
+        "artifact": "issue-0085-public-proposal-v1",
+        "units": 1604,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
+    "volume-05": {
+        "volume": 5,
+        "artifact": "issue-0085-public-proposal-v1",
+        "units": 1604,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
+    "issue-0091-volume-06": {
+        "scope_kind": "cohort",
+        "volume": 6,
+        "artifact": "issue-0091-public-proposal-v1",
+        "units": 1722,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
+    "volume-06": {
+        "volume": 6,
+        "artifact": "issue-0091-public-proposal-v1",
+        "units": 1722,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
+    VOLUME7_SCOPE_ID: {
+        "scope_kind": "cohort",
+        "volume": 7,
+        "artifact": "issue-0096-public-proposal-v1",
+        "units": 1940,
+        "workflow_conformance": "current",
+        "public_working_status": "blocked",
+    },
+    "volume-07": {
+        "volume": 7,
+        "artifact": "issue-0096-public-proposal-v1",
+        "units": 1940,
+        "workflow_conformance": "current",
         "public_working_status": "blocked",
     },
 }
 REQUIRED_REOPENED_SCOPES = {}
+REQUIRED_PARTIAL_SCOPES = {}
 
 
 class ComplianceError(ValueError):
@@ -273,6 +511,45 @@ def load_json(path: Path) -> dict[str, Any]:
     if not isinstance(value, dict):
         raise ComplianceError(f"{path}: top level must be an object")
     return value
+
+
+def _public_proposal_validation_fingerprint(
+    proposal: dict[str, Any],
+) -> tuple[tuple[str, str], ...]:
+    """Bind a cached strict validation to every repository file it reads."""
+    profile_id = proposal.get("entryTitleDecisions", {}).get("profileId")
+    dependencies = list(_STRICT_PROPOSAL_SHARED_DEPENDENCIES)
+    if isinstance(profile_id, str) and profile_id:
+        dependencies.append(ROOT / "profiles" / f"{profile_id}.json")
+    fingerprint: list[tuple[str, str]] = []
+    for path in dependencies:
+        try:
+            digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        except OSError:
+            digest = "missing"
+        fingerprint.append((path.relative_to(ROOT).as_posix(), digest))
+    return tuple(fingerprint)
+
+
+def _strict_public_proposal_errors(
+    proposal_path: Path,
+    proposal_sha256: str,
+    proposal: dict[str, Any],
+) -> list[str]:
+    """Validate once per exact proposal and dependency state."""
+    dependency_fingerprint = _public_proposal_validation_fingerprint(proposal)
+    key = (
+        str(proposal_path.resolve()),
+        proposal_sha256,
+        dependency_fingerprint,
+    )
+    cached = _STRICT_PROPOSAL_VALIDATION_CACHE.get(key)
+    if cached is None:
+        from validate_public_proposal import validate as validate_proposal
+
+        cached = tuple(validate_proposal(proposal_path, require_current=True))
+        _STRICT_PROPOSAL_VALIDATION_CACHE[key] = cached
+    return list(cached)
 
 
 def canonical_text_sha256(path: Path) -> str:
@@ -299,12 +576,26 @@ def _walk(value: Any, location: str = "$") -> list[str]:
 
 def validate_policy(policy: dict[str, Any]) -> list[str]:
     errors: list[str] = []
-    if validate_schema_instance(policy, load_json(ROOT / "compliance/schemas/policy-binding.v5.schema.json")):
+    if validate_schema_instance(policy, load_json(ROOT / "compliance/schemas/policy-binding.v12.schema.json")):
         errors.append("policy: schema validation failed")
-    if policy.get("schema") != "al-isabah.local-policy-binding.v5":
+    if policy.get("schema") != "al-isabah.local-policy-binding.v12":
         errors.append("policy: unexpected schema")
-    if policy.get("supersedes") != "compliance/policy-binding.v4.json":
-        errors.append("policy: v5 must supersede the immutable v4 binding")
+    if policy.get("supersedes") != "compliance/policy-binding.v11.json":
+        errors.append("policy: v12 must supersede the immutable v11 binding")
+    if canonical_text_sha256(FROZEN_POLICY_V11_PATH) != ACTIVE_POLICY_V11_SHA256:
+        errors.append("policy: immutable v11 Issue 96 binding has changed")
+    if canonical_text_sha256(FROZEN_POLICY_V10_PATH) != ACTIVE_POLICY_V10_SHA256:
+        errors.append("policy: immutable v10 Issue 91 binding has changed")
+    if canonical_text_sha256(FROZEN_POLICY_V9_PATH) != ACTIVE_POLICY_V9_SHA256:
+        errors.append("policy: immutable v9 Issue 85 binding has changed")
+    if canonical_text_sha256(FROZEN_POLICY_V8_PATH) != ACTIVE_POLICY_V8_SHA256:
+        errors.append("policy: immutable v8 Issue 86 binding has changed")
+    if canonical_text_sha256(FROZEN_POLICY_V7_PATH) != ACTIVE_POLICY_V7_SHA256:
+        errors.append("policy: immutable v7 Issue 84 binding has changed")
+    if canonical_text_sha256(FROZEN_POLICY_V6_PATH) != ACTIVE_POLICY_V6_SHA256:
+        errors.append("policy: immutable v6 Issue 82 binding has changed")
+    if canonical_text_sha256(FROZEN_POLICY_V5_PATH) != FROZEN_POLICY_V5_SHA256:
+        errors.append("policy: immutable v5 Issue 80 binding has changed")
     if canonical_text_sha256(ROOT / "compliance/policy-binding.v4.json") != "8de2dbe3c1700dc20532507a6b75f64344d23111d4737cd265c237eae0d00a54":
         errors.append("policy: immutable v4 binding has changed")
     if canonical_text_sha256(LAST_POLICY_PATH) != "cfdd5d5baab74a21930e549cc4418574decc07e20e84bf6438e0b9527e360a0b":
@@ -713,11 +1004,9 @@ def validate_translation_coverage(
         if scope.get("canonical_promotion") not in {"blocked", "eligible", "promoted"}:
             errors.append(f"{location}.canonical_promotion: is invalid")
 
-    required_scope_ids = set(REQUIRED_COMPLETED_SCOPES) | set(
-        REQUIRED_REOPENED_SCOPES
-    )
+    required_scope_ids = set(REQUIRED_COMPLETED_SCOPES) | set(REQUIRED_REOPENED_SCOPES) | set(REQUIRED_PARTIAL_SCOPES)
     if set(scopes) != required_scope_ids:
-        errors.append("translation coverage: exact current volume inventory is required")
+        errors.append("translation coverage: exact current volume and cohort inventory is required")
     for scope_id, expected in REQUIRED_COMPLETED_SCOPES.items():
         scope = scopes.get(scope_id)
         if scope is None:
@@ -725,7 +1014,7 @@ def validate_translation_coverage(
         completion = scope.get("agent_completion", {})
         evidence = completion.get("evidence", {})
         if (
-            scope.get("scope_kind") != "volume"
+            scope.get("scope_kind") != expected.get("scope_kind", "volume")
             or scope.get("volume") != expected["volume"]
             or completion.get("status") != "agent_complete"
             or completion.get("locked_units") != expected["units"]
@@ -736,6 +1025,37 @@ def validate_translation_coverage(
             or scope.get("public_working_status") != expected["public_working_status"]
         ):
             errors.append(f"translation coverage: {scope_id} completion evidence is incorrect")
+
+    for scope_id, expected in REQUIRED_PARTIAL_SCOPES.items():
+        scope = scopes.get(scope_id, {})
+        completion = scope.get("agent_completion", {})
+        if (
+            scope.get("scope_kind") != "volume"
+            or scope.get("volume") != expected["volume"]
+            or completion.get("status") != "in_progress"
+            or completion.get("locked_units") != expected["units"]
+            or completion.get("translated_units") != expected["translated"]
+            or completion.get("remaining_agent_units") != expected["remaining"]
+            or scope.get("workflow_conformance") != "current"
+            or scope.get("public_working_status") != "blocked"
+            or scope.get("canonical_promotion") != "blocked"
+        ):
+            errors.append(f"translation coverage: {scope_id} partial completion is incorrect")
+
+    for scope_id, quarter_config in QUARTER_COMPLETIONS.items():
+        quarter = scopes.get(scope_id)
+        if quarter is not None:
+            runtime_config = dict(quarter_config)
+            runtime_config["proposalPath"] = {
+                QUARTER_SCOPE_ID: QUARTER_PROPOSAL_PATH,
+                SECOND_QUARTER_SCOPE_ID: SECOND_QUARTER_PROPOSAL_PATH,
+                FINAL_HALF_SCOPE_ID: FINAL_HALF_PROPOSAL_PATH,
+                VOLUME7_SCOPE_ID: VOLUME7_PROPOSAL_PATH,
+                VOLUME8_SCOPE_ID: VOLUME8_PROPOSAL_PATH,
+            }[scope_id]
+            errors.extend(
+                validate_quarter_completion(quarter, artifacts, runtime_config)
+            )
 
     for scope_id, expected in REQUIRED_REOPENED_SCOPES.items():
         scope = scopes.get(scope_id)
@@ -774,6 +1094,72 @@ def validate_translation_coverage(
     return errors
 
 
+def validate_quarter_completion(
+    scope: dict[str, Any],
+    artifacts: dict[str, dict[str, Any]],
+    config: dict[str, Any] | None = None,
+) -> list[str]:
+    """Bind the completed cohort to its exact, still non-admitted proposal."""
+    config = config or QUARTER_COMPLETIONS[QUARTER_SCOPE_ID]
+    prefix = f"translation coverage: {config['label']}"
+    artifact = artifacts.get(config["artifact"], {})
+    if not isinstance(artifact, dict) or not isinstance(artifact.get("integrity"), dict):
+        return [f"{prefix} registered evidence is invalid"]
+    integrity = artifact.get("integrity", {})
+    if (
+        artifact.get("review_status")
+        != config.get("pendingStatus", QUARTER_PENDING_STATUS)
+        or scope.get("canonical_promotion") != "blocked"
+        or integrity.get("public_entries") != config["end"] - config["start"] + 1
+        or integrity.get("source_ordinal_start") != config["start"]
+        or integrity.get("source_ordinal_end") != config["end"]
+        or integrity.get("owned_structural_segments") != config["structuralSegments"]
+        or integrity.get("structural_owners") != config["structuralOwners"]
+        or any(key.startswith("submitted_") for key in integrity)
+    ):
+        return [f"{prefix} scope or pending-admission evidence is incorrect"]
+    proposal_path = config["proposalPath"]
+    try:
+        proposal = load_json(proposal_path)
+        proposal_sha = hashlib.sha256(proposal_path.read_bytes()).hexdigest()
+    except (OSError, ValueError, UnicodeError):
+        return [f"{prefix} proposal is missing or invalid"]
+    records = proposal.get("records", [])
+    policy = proposal.get("policy")
+    title_profile = proposal.get("entryTitleDecisions")
+    if not isinstance(policy, dict):
+        return [f"{prefix} execution binding is invalid"]
+    if not isinstance(title_profile, dict):
+        return [f"{prefix} title-profile binding is invalid"]
+    if (
+        proposal.get("proposalId") != config["proposalId"]
+        or proposal.get("schemaVersion") != config.get("schemaVersion", "1.2.0")
+        or proposal_sha != integrity.get("proposal_sha256")
+        or not isinstance(records, list)
+        or any(not isinstance(record, dict) for record in records)
+        or [record.get("sourceOrdinal") for record in records]
+        != list(range(config["start"], config["end"] + 1))
+        or any(record.get("volume") != config.get("volume", 3) for record in records)
+        or policy.get("bindingSha256") != config["policySha256"]
+        or title_profile.get("profileId") != config["titleProfileId"]
+        or title_profile.get("profileSha256") != config["titleProfileSha256"]
+        or integrity.get("execution_policy_binding_sha256") != policy.get("bindingSha256")
+    ):
+        return [f"{prefix} exact proposal range, hash or execution binding is incorrect"]
+    if _strict_public_proposal_errors(proposal_path, proposal_sha, proposal):
+        return [f"{prefix} strict public proposal is invalid"]
+    owned_context = [
+        [item for item in record["precedingMaterial"] if item["kind"] != "continued_structural_heading"]
+        for record in records
+    ]
+    if (
+        sum(map(len, owned_context)) != config["structuralSegments"]
+        or sum(bool(items) for items in owned_context) != config["structuralOwners"]
+    ):
+        return [f"{prefix} owned structural coverage is incorrect"]
+    return []
+
+
 def validate_translation_governance(
     reference: dict[str, Any],
     registry: dict[str, Any],
@@ -781,7 +1167,7 @@ def validate_translation_governance(
 ) -> list[str]:
     errors = validate_formula_registry(registry)
     errors.extend(validate_execution_governance())
-    if validate_schema_instance(reference, load_json(ROOT / "schemas/translation-governance-reference.v4.schema.json")):
+    if validate_schema_instance(reference, load_json(ROOT / "schemas/translation-governance-reference.v12.schema.json")):
         errors.append("governance reference: schema validation failed")
     expected_top_level = {
         "schema",
@@ -796,24 +1182,24 @@ def validate_translation_governance(
         "deprecatedConsumerAuthorities",
     }
     if set(reference) != expected_top_level:
-        errors.append("governance reference: fields do not match the v4 contract")
-    if reference.get("schema") != "al-isabah.translation-governance-reference.v4":
+        errors.append("governance reference: fields do not match the v12 contract")
+    if reference.get("schema") != "al-isabah.translation-governance-reference.v12":
         errors.append("governance reference: unexpected schema")
-    if reference.get("referenceVersion") != "4.0.0":
-        errors.append("governance reference: breaking semantics require version 4.0.0")
+    if reference.get("referenceVersion") != "12.0.0":
+        errors.append("governance reference: active discovery requires version 12.0.0")
     if reference.get("supersedes") != {
-        "path": "docs/contracts/translation-governance-reference.v3.json",
-        "referenceVersion": "3.0.0",
-        "sha256": "7b6f04c9954a67dda51f049a1f0fc584cbb495df10f4eaddd7708110c0191906",
+        "path": "docs/contracts/translation-governance-reference.v11.json",
+        "referenceVersion": "11.0.0",
+        "sha256": "677a0adbc03da9a2aa510cd086bc7f4d72862b26faa6c56be42bd8049c335263",
     }:
-        errors.append("governance reference: immutable v3 supersession binding is incorrect")
-    if canonical_text_sha256(ROOT / "docs/contracts/translation-governance-reference.v3.json") != reference.get("supersedes", {}).get("sha256"):
-        errors.append("governance reference: immutable v3 reference changed")
+        errors.append("governance reference: immutable v11 supersession binding is incorrect")
+    if canonical_text_sha256(ROOT / "docs/contracts/translation-governance-reference.v11.json") != reference.get("supersedes", {}).get("sha256"):
+        errors.append("governance reference: immutable v11 reference changed")
 
     authority = reference.get("authority")
     expected_authority = {
         "repository": "https://github.com/yaqub0r/al-isabah",
-        "repositoryPath": "docs/contracts/translation-governance-reference.v4.json",
+        "repositoryPath": "docs/contracts/translation-governance-reference.v12.json",
         "requiredPin": "immutable-repository-commit",
     }
     if authority != expected_authority:
@@ -843,7 +1229,7 @@ def validate_translation_governance(
         artifacts[artifact_id] = artifact
 
     if set(artifacts) != set(REQUIRED_GOVERNANCE_ARTIFACTS):
-        errors.append("governance reference: exact v4 artifact set is required")
+        errors.append("governance reference: exact v12 artifact set is required")
     for artifact_id, (path, status, version) in REQUIRED_GOVERNANCE_ARTIFACTS.items():
         artifact = artifacts.get(artifact_id)
         if artifact is None:

@@ -1,0 +1,88 @@
+{
+  "schema": "al-isabah.local-policy-binding.v10",
+  "authority": {
+    "repository": "https://github.com/yaqub0r/al-isabah",
+    "scope": "repository-local",
+    "issue": "https://github.com/yaqub0r/al-isabah/issues/91"
+  },
+  "contracts": [
+    {
+      "id": "translation-quality-workflow",
+      "path": "docs/contracts/translation-quality-workflow.md",
+      "sha256": "0051e4224b3ec2094be1e01c9ff3cdaf8a73dea0dddafc2e570a1ef6664a28b2"
+    },
+    {
+      "id": "al-isabah-translation-profile",
+      "path": "docs/translation-profiles/al-isabah.md",
+      "sha256": "a220dd0ff8ce0ece5e4024ed7ab5f9430decf8860129e0966767f5088f07d2e9"
+    },
+    {
+      "id": "entry-title-structure",
+      "path": "docs/contracts/entry-title-structure.md",
+      "sha256": "27383c02be89301e1e8d45762beed01a09bc540bf805588e6a90738dd826a7b3"
+    },
+    {
+      "id": "entry-title-decisions",
+      "path": "profiles/entry-title-decisions.v9.json",
+      "sha256": "e929ff952e8ed082bbd724d0fc009deca48cd3073fc6be9fb4095f9f92f147ab"
+    },
+    {
+      "id": "entry-title-decision-schema",
+      "path": "schemas/entry-title-decisions.v3.schema.json",
+      "sha256": "8b1abf566c4aa47017db575803ae9b1f46f47eccf28dd168b59a81c13aec6437"
+    },
+    {
+      "id": "honorific-formula-registry",
+      "path": "profiles/honorific-formulas.v1.json",
+      "sha256": "1fe9a57ac5c87d54947174a3aacf5e8230a36cb1c1f955ad9cdce42ca204ef70"
+    },
+    {
+      "id": "translation-source-profile",
+      "path": "profiles/translation-source.v1.json",
+      "sha256": "c3db1e037a9f98ed7c6ada57d076084e5451c5651ed972ea68867ed5ad580ead"
+    },
+    {
+      "id": "execution-method-contract",
+      "path": "docs/contracts/translation-execution-methods.md",
+      "sha256": "dde72e9a0561bb5e363bda84e7a86adf46751a1c6055e9c8a67ed1a2b47826e5"
+    },
+    {
+      "id": "execution-method-registry",
+      "path": "profiles/execution-methods.v2.json",
+      "sha256": "9c0b1ef2cc208edb9885b81b16ff5ec10b3ea978b2742e9cb3c68b15ceeab809"
+    },
+    {
+      "id": "execution-method-registry-schema",
+      "path": "schemas/execution-method-registry.v2.schema.json",
+      "sha256": "2e60b173601daf248a8a233e68f47640976af680eeb0ce70d3d8910a7b2159a8"
+    },
+    {
+      "id": "execution-evaluation-schema",
+      "path": "schemas/execution-evaluation.v1.schema.json",
+      "sha256": "c4d6f82ab172d0d43eac63aea91893af5dda91927b9183355a58d72c0ed2d2e5"
+    },
+    {
+      "id": "runtime-host-evidence-schema",
+      "path": "schemas/runtime-host-evidence.v1.schema.json",
+      "sha256": "e77ba3dd9e8eaea5d770683bbdfc80fb215f8c7dfc9a4d3736f09019cad4c9eb"
+    },
+    {
+      "id": "translation-work-packet-schema",
+      "path": "schemas/translation-work-packet.v8.schema.json",
+      "sha256": "47c5128d46bf5ab559adba2cee03dec24eca2d1987a967c4f9177351b409110c"
+    },
+    {
+      "id": "translation-agent-workflow",
+      "path": "docs/translation/agent-workflow.md",
+      "sha256": "f2bd486f2894aa965b53be9dbb96736ca734519a0456c7bd69842796437ac0d8"
+    },
+    {
+      "id": "local-policy-binding-schema",
+      "path": "compliance/schemas/policy-binding.v10.schema.json",
+      "sha256": "63007ed7ab1e61fb728d7a537e0c17edef5ef0f904cd78d8eeff62d7577aee11"
+    }
+  ],
+  "supersedes": "compliance/policy-binding.v9.json",
+  "applied_by_issue": "https://github.com/yaqub0r/al-isabah/issues/91",
+  "note": "Issue 91 adds source-unit-keyed title/body-opening decisions for Volume 6 ordinals 7763-9484 through additive profile v9, preserves ordinal 9484 as one cross-volume entry while keeping its four preceding terminal structural segments distinct, and records the exact title-only units at ordinals 8282, 8357 and 9010. It advances the honorific formula registry to v1.7.0 with 86 reviewed exact Volume 6 source forms so quoted, damaged, named and structural devotional occurrences remain enforceable at the corresponding English occurrence rather than escaping inventory as unregistered contextual text. Packet-schema document v8 pins registry 1.7.0 to this v10 binding. Packet, shard, tool and stage-provenance data remain version 3.0.0; public-proposal v2, execution registry v2 and sol-xhigh-explicit-host-v1 remain unchanged. Earlier bindings, title profiles, schemas, proposals, releases and evidence retain their original immutable pins."
+}

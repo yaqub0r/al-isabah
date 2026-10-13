@@ -2,6 +2,7 @@ import copy
 import importlib.util
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -65,6 +66,46 @@ class ComplianceTests(unittest.TestCase):
 
     def test_current_blocked_manifest_is_valid(self):
         self.assertEqual(self.validate(), [])
+
+    def test_strict_proposal_cache_is_bound_to_dependency_state(self):
+        scope = next(
+            item
+            for item in self.translation_coverage["scopes"]
+            if item["scope_id"] == MODULE.VOLUME7_SCOPE_ID
+        )
+        register_errors, artifacts = MODULE.validate_register(
+            copy.deepcopy(self.register)
+        )
+        self.assertEqual(register_errors, [])
+        config = dict(MODULE.QUARTER_COMPLETIONS[MODULE.VOLUME7_SCOPE_ID])
+        config["proposalPath"] = MODULE.VOLUME7_PROPOSAL_PATH
+        same_state = (("dependency", "same"),)
+        changed_state = (("dependency", "changed"),)
+        original_cache = dict(MODULE._STRICT_PROPOSAL_VALIDATION_CACHE)
+        MODULE._STRICT_PROPOSAL_VALIDATION_CACHE.clear()
+
+        def restore_cache():
+            MODULE._STRICT_PROPOSAL_VALIDATION_CACHE.clear()
+            MODULE._STRICT_PROPOSAL_VALIDATION_CACHE.update(original_cache)
+
+        self.addCleanup(restore_cache)
+
+        with patch.object(
+            MODULE,
+            "_public_proposal_validation_fingerprint",
+            side_effect=(same_state, same_state, changed_state),
+        ), patch(
+            "validate_public_proposal.validate", return_value=[]
+        ) as strict_validate:
+            for _ in range(3):
+                self.assertEqual(
+                    MODULE.validate_quarter_completion(
+                        copy.deepcopy(scope), artifacts, config
+                    ),
+                    [],
+                )
+
+        self.assertEqual(strict_validate.call_count, 2)
 
     def test_eligible_claim_rejects_non_public_dependency(self):
         promotion = copy.deepcopy(self.promotion)
@@ -143,9 +184,19 @@ class ComplianceTests(unittest.TestCase):
             contracts["entry-title-decisions"],
             {
                 "id": "entry-title-decisions",
-                "path": "profiles/entry-title-decisions.v3.json",
+                "path": "profiles/entry-title-decisions.v11.json",
                 "sha256": MODULE.canonical_text_sha256(
-                    ROOT / "profiles" / "entry-title-decisions.v3.json"
+                    ROOT / "profiles" / "entry-title-decisions.v11.json"
+                ),
+            },
+        )
+        self.assertEqual(
+            contracts["entry-title-decision-schema"],
+            {
+                "id": "entry-title-decision-schema",
+                "path": "schemas/entry-title-decisions.v3.schema.json",
+                "sha256": MODULE.canonical_text_sha256(
+                    ROOT / "schemas" / "entry-title-decisions.v3.schema.json"
                 ),
             },
         )
@@ -161,7 +212,7 @@ class ComplianceTests(unittest.TestCase):
         )
 
     def test_registry_contains_exact_quoted_prayer_record(self):
-        self.assertEqual(self.formula_registry["registryVersion"], "1.3.0")
+        self.assertEqual(self.formula_registry["registryVersion"], "1.9.0")
         prayer = "اللهم بارك على محمد وعلى آل محمد"
         records = [
             item for item in self.formula_registry["entries"]
@@ -186,6 +237,118 @@ class ComplianceTests(unittest.TestCase):
                 }
             ],
         )
+
+    def test_registry_contains_exact_damaged_prophetic_blessing_variants(self):
+        family_expansions = {
+            "صلى الله عليه وسلم وعلى آله وسلم": "صلى الله عليه وعلى آله وسلم",
+            "صلى الله عليه وسلم وآله": "صلى الله عليه وآله وسلم",
+            "صلى الله عيه وآله وسلم": "صلى الله عليه وآله وسلم",
+            "صلى الله عليه وسلم وآوله وسلم": "صلى الله عليه وآله وسلم",
+            "صلى الله علي وآله وسلم": "صلى الله عليه وآله وسلم",
+            "صلى الله عليه وسلم وآله سلم": "صلى الله عليه وآله وسلم",
+            "صلى الله عيله وآله وسلم": "صلى الله عليه وآله وسلم",
+            "صلى الله عله وآله وسلم": "صلى الله عليه وآله وسلم",
+            "صلى الله عليه وسلم وآله ولم": "صلى الله عليه وآله وسلم",
+        }
+        records = {
+            item["source"]: item for item in self.formula_registry["entries"]
+        }
+        for source, expanded_arabic in family_expansions.items():
+            self.assertEqual(
+                records[source],
+                {
+                    "source": source,
+                    "target": "﵌",
+                    "semanticClass": "prophetic_blessing_with_family",
+                    "referentScope": "the Prophet and his family",
+                    "grammaticalAgreement": (
+                        "masculine singular with family inclusion"
+                    ),
+                    "expandedArabic": expanded_arabic,
+                    "accessibleEnglish": (
+                        "May God bless him and his family and grant them peace."
+                    ),
+                },
+            )
+
+        damaged_plain = "صلى الله عيله وسلم"
+        self.assertEqual(
+            records[damaged_plain],
+            {
+                "source": damaged_plain,
+                "target": "ﷺ",
+                "semanticClass": "prophetic_blessing",
+                "referentScope": "the Prophet",
+                "grammaticalAgreement": "masculine singular",
+                "expandedArabic": "صلى الله عليه وسلم",
+                "accessibleEnglish": "May God bless him and grant him peace.",
+            },
+        )
+
+    def test_registry_contains_volume_five_formula_successor_rules(self):
+        records = {
+            item["source"]: item for item in self.formula_registry["entries"]
+        }
+        expected = {
+            "والله الموفق": (
+                "والله الموفق",
+                "divine_success_qualification",
+            ),
+            "ان شاء الله تعالى": (
+                "ان شاء الله تعالى",
+                "divine_will_qualification",
+            ),
+            "ان شاء الله": (
+                "ان شاء الله",
+                "divine_will_qualification",
+            ),
+            "نسأل الله التوفيق": (
+                "نسأل الله التوفيق",
+                "divine_success_supplication",
+            ),
+            "والله عنده حسن المآب": (
+                "والله عنده حسن المآب",
+                "divine_return_qualification",
+            ),
+            "والله سبحانه وتعالى اعلم": (
+                "والله سبحانه وتعالى اعلم",
+                "divine_knowledge_with_exaltation_qualification",
+            ),
+            "وبالله التوفيق": (
+                "وبالله التوفيق",
+                "divine_success_qualification",
+            ),
+            "صلى الله عليه وسلم وأله وسلم": (
+                "﵌",
+                "prophetic_blessing_with_family",
+            ),
+            "صلى الله عليه وسلم آله وسلم": (
+                "﵌",
+                "prophetic_blessing_with_family",
+            ),
+            "صل الله عليه وآله وسلم": (
+                "﵌",
+                "prophetic_blessing_with_family",
+            ),
+            "صلى الله": (
+                "صلى الله",
+                "truncated_prophetic_blessing",
+            ),
+            "اللهم صل على النبي والوصي": (
+                "اللهم صل على النبي والوصي",
+                "quoted_prophetic_blessing_with_legatee",
+            ),
+            "رحم الله عائشة": ("رحم الله عائشة", "mercy_invocation"),
+            "رحم الله هشاما": ("رحم الله هشاما", "mercy_invocation"),
+            "رحم الله عبادا": ("رحم الله عبادا", "mercy_invocation"),
+            "رحم الله لبيدا": ("رحم الله لبيدا", "mercy_invocation"),
+            "رحم الله عروة": ("رحم الله عروة", "mercy_invocation"),
+            "رحم الله قسا": ("رحم الله قسا", "mercy_invocation"),
+            "يرحمك الله": ("يرحمك الله", "mercy_invocation"),
+        }
+        for source, (target, semantic_class) in expected.items():
+            self.assertEqual(records[source]["target"], target)
+            self.assertEqual(records[source]["semanticClass"], semantic_class)
 
     def test_governance_reference_rejects_external_authority(self):
         reference = copy.deepcopy(self.governance_reference)
@@ -298,6 +461,117 @@ class ComplianceTests(unittest.TestCase):
             ),
             errors,
         )
+
+    def test_volume_four_completion_is_full_and_nonadditive(self):
+        coverage = copy.deepcopy(self.translation_coverage)
+        scopes = {scope["scope_id"]: scope for scope in coverage["scopes"]}
+        cohort = scopes["issue-0086-volume-04"]
+        volume = scopes["volume-04"]
+        for scope in (cohort, volume):
+            completion = scope["agent_completion"]
+            self.assertEqual(completion["status"], "agent_complete")
+            self.assertEqual(completion["locked_units"], 1633)
+            self.assertEqual(completion["translated_units"], 1633)
+            self.assertEqual(completion["remaining_agent_units"], 0)
+            self.assertEqual(
+                completion["evidence"]["source_register_artifact"],
+                "issue-0086-public-proposal-v1",
+            )
+            self.assertEqual(scope["public_working_status"], "blocked")
+            self.assertEqual(scope["canonical_promotion"], "blocked")
+            self.assertEqual(scope["human_review"]["unreviewed_units"], 1633)
+        self.assertIn("not additive", cohort["agent_completion"]["basis"])
+        self.assertIn("must not be added", volume["agent_completion"]["basis"])
+        self.assertEqual(self.validate(translation_coverage=coverage), [])
+
+    def test_volume_five_completion_is_full_and_nonadditive(self):
+        coverage = copy.deepcopy(self.translation_coverage)
+        scopes = {scope["scope_id"]: scope for scope in coverage["scopes"]}
+        cohort = scopes["issue-0085-volume-05"]
+        volume = scopes["volume-05"]
+        for scope in (cohort, volume):
+            completion = scope["agent_completion"]
+            self.assertEqual(completion["status"], "agent_complete")
+            self.assertEqual(completion["locked_units"], 1604)
+            self.assertEqual(completion["translated_units"], 1604)
+            self.assertEqual(completion["remaining_agent_units"], 0)
+            self.assertEqual(
+                completion["evidence"]["source_register_artifact"],
+                "issue-0085-public-proposal-v1",
+            )
+            self.assertEqual(scope["public_working_status"], "blocked")
+            self.assertEqual(scope["canonical_promotion"], "blocked")
+            self.assertEqual(scope["human_review"]["unreviewed_units"], 1604)
+        self.assertIn("not additive", cohort["agent_completion"]["basis"])
+        self.assertIn("must not be added", volume["agent_completion"]["basis"])
+        self.assertEqual(self.validate(translation_coverage=coverage), [])
+
+    def test_volume_six_completion_is_full_and_nonadditive(self):
+        coverage = copy.deepcopy(self.translation_coverage)
+        scopes = {scope["scope_id"]: scope for scope in coverage["scopes"]}
+        cohort = scopes["issue-0091-volume-06"]
+        volume = scopes["volume-06"]
+        for scope in (cohort, volume):
+            completion = scope["agent_completion"]
+            self.assertEqual(completion["status"], "agent_complete")
+            self.assertEqual(completion["locked_units"], 1722)
+            self.assertEqual(completion["translated_units"], 1722)
+            self.assertEqual(completion["remaining_agent_units"], 0)
+            self.assertEqual(
+                completion["evidence"]["source_register_artifact"],
+                "issue-0091-public-proposal-v1",
+            )
+            self.assertEqual(scope["public_working_status"], "blocked")
+            self.assertEqual(scope["canonical_promotion"], "blocked")
+            self.assertEqual(scope["human_review"]["unreviewed_units"], 1722)
+        self.assertIn("not additive", cohort["agent_completion"]["basis"])
+        self.assertIn("must not be added", volume["agent_completion"]["basis"])
+        self.assertEqual(self.validate(translation_coverage=coverage), [])
+
+    def test_volume_seven_completion_is_full_and_nonadditive(self):
+        coverage = copy.deepcopy(self.translation_coverage)
+        scopes = {scope["scope_id"]: scope for scope in coverage["scopes"]}
+        cohort = scopes["issue-0096-volume-07"]
+        volume = scopes["volume-07"]
+        for scope in (cohort, volume):
+            completion = scope["agent_completion"]
+            self.assertEqual(completion["status"], "agent_complete")
+            self.assertEqual(completion["locked_units"], 1940)
+            self.assertEqual(completion["translated_units"], 1940)
+            self.assertEqual(completion["remaining_agent_units"], 0)
+            self.assertEqual(
+                completion["evidence"]["source_register_artifact"],
+                "issue-0096-public-proposal-v1",
+            )
+            self.assertEqual(scope["public_working_status"], "blocked")
+            self.assertEqual(scope["canonical_promotion"], "blocked")
+            self.assertEqual(scope["human_review"]["unreviewed_units"], 1940)
+        self.assertIn("not additive", cohort["agent_completion"]["basis"])
+        self.assertIn("must not be added", volume["agent_completion"]["basis"])
+        self.assertEqual(self.validate(translation_coverage=coverage), [])
+
+    def test_volume_eight_completion_supersedes_legacy_inventory(self):
+        coverage = copy.deepcopy(self.translation_coverage)
+        scopes = {scope["scope_id"]: scope for scope in coverage["scopes"]}
+        cohort = scopes["issue-0098-volume-08"]
+        volume = scopes["volume-08"]
+        for scope in (cohort, volume):
+            completion = scope["agent_completion"]
+            self.assertEqual(completion["status"], "agent_complete")
+            self.assertEqual(completion["locked_units"], 879)
+            self.assertEqual(completion["translated_units"], 879)
+            self.assertEqual(completion["remaining_agent_units"], 0)
+            self.assertEqual(
+                completion["evidence"]["source_register_artifact"],
+                "issue-0098-public-proposal-v1",
+            )
+            self.assertEqual(scope["public_working_status"], "blocked")
+            self.assertEqual(scope["canonical_promotion"], "blocked")
+            self.assertEqual(scope["human_review"]["unreviewed_units"], 879)
+            self.assertIn("supersede", completion["basis"])
+        self.assertIn("not additive", cohort["agent_completion"]["basis"])
+        self.assertIn("must not be added", volume["agent_completion"]["basis"])
+        self.assertEqual(self.validate(translation_coverage=coverage), [])
 
     def test_volume_two_completion_uses_the_corrected_proposal(self):
         coverage = copy.deepcopy(self.translation_coverage)

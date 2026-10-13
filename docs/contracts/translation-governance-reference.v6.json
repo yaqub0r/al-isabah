@@ -1,0 +1,297 @@
+{
+  "schema": "al-isabah.translation-governance-reference.v6",
+  "referenceVersion": "6.0.0",
+  "supersedes": {
+    "path": "docs/contracts/translation-governance-reference.v5.json",
+    "referenceVersion": "5.0.0",
+    "sha256": "a8579b3ee30042cc1f051e5d6ccd0dc846e397bad17ffed8f2c5b2a195a03439"
+  },
+  "authority": {
+    "repository": "https://github.com/yaqub0r/al-isabah",
+    "repositoryPath": "docs/contracts/translation-governance-reference.v6.json",
+    "requiredPin": "immutable-repository-commit"
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "textNormalization": "utf-8-lf"
+  },
+  "governanceArtifacts": [
+    {
+      "id": "policy-binding",
+      "path": "compliance/policy-binding.v6.json",
+      "sha256": "faf1078753c33c278098e71d0392a2af1e955320f090660da24ba64bc1831692",
+      "status": "active"
+    },
+    {
+      "id": "governance-reference-schema",
+      "path": "schemas/translation-governance-reference.v6.schema.json",
+      "sha256": "1d814746920a035073613c92e4669ce6a2fbee464724a4488721ee7a8595b60d",
+      "status": "active",
+      "version": "6.0.0"
+    },
+    {
+      "id": "translation-quality-workflow",
+      "path": "docs/contracts/translation-quality-workflow.md",
+      "sha256": "cb78512085a81ee2e2439cc44e0672a6b0d5cf41fa7dc545147f727049fa7254",
+      "status": "active"
+    },
+    {
+      "id": "al-isabah-translation-profile",
+      "path": "docs/translation-profiles/al-isabah.md",
+      "sha256": "e9f166b79fbee21c228d6f67656bbebd1bbdf639927f6b10cabb8a6adff20460",
+      "status": "active"
+    },
+    {
+      "id": "entry-title-structure",
+      "path": "docs/contracts/entry-title-structure.md",
+      "sha256": "026edf7cac6092b37cfca3b887ab6a1a6983b454692a9d6b06898b5c5b0b2bef",
+      "status": "active"
+    },
+    {
+      "id": "entry-title-decisions",
+      "path": "profiles/entry-title-decisions.v5.json",
+      "sha256": "3f338cf5e748d142c3de86d9926db5f97b727de3790a92be7afb9bcc9d1d8221",
+      "status": "active",
+      "version": "5.0.0"
+    },
+    {
+      "id": "translation-source-profile",
+      "path": "profiles/translation-source.v1.json",
+      "sha256": "c3db1e037a9f98ed7c6ada57d076084e5451c5651ed972ea68867ed5ad580ead",
+      "status": "active",
+      "version": "1.0.0"
+    },
+    {
+      "id": "honorific-formula-registry",
+      "path": "profiles/honorific-formulas.v1.json",
+      "sha256": "b23fcd528b840b0e5bbe8932fca6eeaaa576ee51263d9838d4f8d18e40c9e100",
+      "status": "active",
+      "version": "1.3.0"
+    },
+    {
+      "id": "translation-coverage",
+      "path": "compliance/translation-coverage.v1.json",
+      "sha256": "8f2e479ff9b44be0972e7b07c9cd3eddf4cab4879c7be5bb5bdbdefd37ad3f47",
+      "status": "active",
+      "version": "1.1.0"
+    },
+    {
+      "id": "translation-coverage-schema",
+      "path": "compliance/schemas/translation-coverage.v1.schema.json",
+      "sha256": "3337a075cca03022259ebcf33cad517d9598021aa6e9b7c17325f58e13334506",
+      "status": "active",
+      "version": "1.1.0"
+    },
+    {
+      "id": "promotion-readiness",
+      "path": "compliance/promotions/available-data.v2.json",
+      "sha256": "7a728a341bcff5354024f4b1dadc5c0ba4e66771aadb1c40725254637323d37e",
+      "status": "active",
+      "version": "2.0.0"
+    },
+    {
+      "id": "promotion-readiness-schema",
+      "path": "compliance/schemas/promotion-readiness.v2.schema.json",
+      "sha256": "dff8bbd27684f6e693d70f826ebe6014bc96c52852c5b45054b47847fd20730c",
+      "status": "active",
+      "version": "2.0.0"
+    },
+    {
+      "id": "canonical-entry-v2",
+      "path": "schemas/canonical-entry.v2.schema.json",
+      "sha256": "80b12fffbe4523ce8718ab27f74c969aa9db98c5f1d77b511cf9fa33244399e6",
+      "status": "active",
+      "version": "2.0.0"
+    },
+    {
+      "id": "canonical-entry-v1",
+      "path": "schemas/canonical-entry.v1.schema.json",
+      "sha256": "15a2c16e7b996373aebd2840114cb7a3eafbb90bca16a5400203259e99f3b584",
+      "status": "rollback-only",
+      "version": "1.0.0"
+    },
+    {
+      "id": "public-proposal-v1",
+      "path": "schemas/public-proposal.v1.schema.json",
+      "sha256": "ebb95f2884b5317301b2018cd1a2036f8c2732c497fa6251d0f7d64c4bd99099",
+      "status": "active",
+      "version": "1.2.0"
+    },
+    {
+      "id": "public-distribution-contract",
+      "path": "docs/architecture/public-distribution.md",
+      "sha256": "0cd6637be240c4a9541749ad527795e994e7ceaa7a1855ab8a9f402916532bde",
+      "status": "reference"
+    },
+    {
+      "id": "public-distribution-v2",
+      "path": "schemas/public-distribution.v2.schema.json",
+      "sha256": "87b471dc0bbba4f6242ab4fe74677d7ee254c0181fa4f29b26057601be6f5f7b",
+      "status": "active",
+      "version": "2.0.0"
+    },
+    {
+      "id": "public-distribution-v1",
+      "path": "schemas/public-distribution.v1.schema.json",
+      "sha256": "ada509899ee4b0d5d2f1afbcd31034135a614f7822c030eb5a2d402accd36614",
+      "status": "rollback-only",
+      "version": "1.0.0"
+    },
+    {
+      "id": "execution-method-contract",
+      "path": "docs/contracts/translation-execution-methods.md",
+      "sha256": "e730bb904e552301b45ce7cdecbe0faec2070d2a7d1570c53cff53b38138afae",
+      "status": "active"
+    },
+    {
+      "id": "execution-method-registry",
+      "path": "profiles/execution-methods.v2.json",
+      "sha256": "9c0b1ef2cc208edb9885b81b16ff5ec10b3ea978b2742e9cb3c68b15ceeab809",
+      "status": "active",
+      "version": "2.0.0"
+    },
+    {
+      "id": "execution-method-registry-schema",
+      "path": "schemas/execution-method-registry.v2.schema.json",
+      "sha256": "2e60b173601daf248a8a233e68f47640976af680eeb0ce70d3d8910a7b2159a8",
+      "status": "active"
+    },
+    {
+      "id": "execution-evaluation-schema",
+      "path": "schemas/execution-evaluation.v1.schema.json",
+      "sha256": "c4d6f82ab172d0d43eac63aea91893af5dda91927b9183355a58d72c0ed2d2e5",
+      "status": "active"
+    },
+    {
+      "id": "runtime-host-evidence-schema",
+      "path": "schemas/runtime-host-evidence.v1.schema.json",
+      "sha256": "e77ba3dd9e8eaea5d770683bbdfc80fb215f8c7dfc9a4d3736f09019cad4c9eb",
+      "status": "active"
+    },
+    {
+      "id": "translation-work-packet-schema",
+      "path": "schemas/translation-work-packet.v4.schema.json",
+      "sha256": "9c5ff6430b6353f8c779d79ab1c654cb100d077f9327b3896f9b4b516178b03f",
+      "status": "active",
+      "version": "3.0.0"
+    },
+    {
+      "id": "translation-agent-workflow",
+      "path": "docs/translation/agent-workflow.md",
+      "sha256": "a22c403d0c7ca6210352fd997b3edd5d16e942829fea7fa6fce0e0a8dbdd7654",
+      "status": "active"
+    },
+    {
+      "id": "local-policy-binding-schema",
+      "path": "compliance/schemas/policy-binding.v6.schema.json",
+      "sha256": "b0d7b9fcbb821329e9e9272f9e702c738bcf6bc93c017051a049a5002e46aa9e",
+      "status": "active"
+    }
+  ],
+  "releaseSemantics": {
+    "agentCompletionScope": "locked-volume-or-cohort-revision",
+    "agentCompletionIndependentOfHumanReview": true,
+    "humanReviewScope": "append-only-per-record-metadata-and-confidence",
+    "humanReviewManagementState": "ongoing-nonterminal",
+    "humanReviewDisclosureRequired": true,
+    "humanReviewAffectsEligibility": false,
+    "humanReviewChangesReleaseClass": false,
+    "substantiveDefectsAffectEligibility": true,
+    "promotionEligibilityControls": [
+      "source-binding",
+      "provenance-binding",
+      "rights-eligibility",
+      "public-output-boundary",
+      "deterministic-validation",
+      "substantive-eligibility",
+      "unresolved-state-disclosure"
+    ],
+    "immutableCycleChangeKinds": [
+      "incremental-translation",
+      "correction",
+      "review-coverage"
+    ],
+    "correctionMode": "new-immutable-release-with-supersession"
+  },
+  "consumerBoundary": {
+    "allowed": [
+      "verify-and-ingest-checksum-pinned-releases",
+      "manage-private-evidence-without-exporting-it-upstream",
+      "provide-review-and-reader-interfaces",
+      "store-and-present-release-and-review-metadata"
+    ],
+    "prohibited": [
+      "define-al-isabah-translation-policy",
+      "treat-a-local-copy-as-governing",
+      "gate-publication-or-promotion-on-human-review-coverage",
+      "infer-terminal-human-review-completion",
+      "change-release-class-from-human-review",
+      "rewrite-or-mutate-an-immutable-release"
+    ]
+  },
+  "deprecatedConsumerAuthorities": [
+    {
+      "consumerRepository": "https://github.com/yaqub0r/sabiqah",
+      "path": "docs/contracts/translation-quality-workflow.md",
+      "kind": "governing-contract-copy",
+      "replacement": "translation-quality-workflow"
+    },
+    {
+      "consumerRepository": "https://github.com/yaqub0r/sabiqah",
+      "path": "docs/translation-profiles/al-isabah.md",
+      "kind": "governing-profile-copy",
+      "replacement": "al-isabah-translation-profile"
+    },
+    {
+      "consumerRepository": "https://github.com/yaqub0r/sabiqah",
+      "path": "packages/release-model/src/honorifics.registry.json",
+      "kind": "semantic-registry-authority",
+      "replacement": "honorific-formula-registry"
+    },
+    {
+      "consumerRepository": "https://github.com/yaqub0r/sabiqah",
+      "path": "docs/contracts/contracts.registry.json",
+      "selector": "contracts[id=translation-quality-workflow]",
+      "kind": "local-governance-registration",
+      "replacement": "pinned-upstream-reference"
+    },
+    {
+      "consumerRepository": "https://github.com/yaqub0r/sabiqah",
+      "path": "tools/contracts/check-contract-ack.node-test.mjs",
+      "selector": "translation-quality-workflow expectations",
+      "kind": "local-governance-acknowledgement",
+      "replacement": "consumer-compatibility-check"
+    },
+    {
+      "consumerRepository": "https://github.com/yaqub0r/sabiqah",
+      "path": ".github/workflows/application-validate.yml",
+      "selector": "docs/translation-profiles/al-isabah.md path filters",
+      "kind": "duplicate-profile-ci-reference",
+      "replacement": "pinned-upstream-reference compatibility validation"
+    },
+    {
+      "consumerRepository": "https://github.com/yaqub0r/sabiqah",
+      "path": "docs/contracts/INDEX.md",
+      "selector": "translation-quality-workflow row and Al-Isabah book-profile section",
+      "kind": "local-policy-discovery",
+      "replacement": "pinned-upstream-reference documentation"
+    }
+  ],
+  "executionSemantics": {
+    "scope": "new-production-semantic-stages",
+    "methodSelection": "exact-active-stage-specific-method-id",
+    "configurationOrigin": "explicit-only",
+    "runtimeBinding": "explicit-launch-and-captured-host-settings-bound-to-checkpoint",
+    "workerSelfReportSufficient": false,
+    "approvalIsEmpiricalProof": false,
+    "evaluationHistory": "append-only-with-hash-bound-supersession",
+    "historicalValidation": "original-immutable-governance-pin",
+    "packetSchemaVersion": "3.0.0",
+    "stageProvenanceVersion": "3.0.0",
+    "entryShardSchemaVersion": "3.0.0",
+    "structuralShardSchemaVersion": "3.1.0",
+    "trustModel": "trusted-local-host-not-malicious-editor-proof",
+    "signingKeyRequired": false,
+    "launchConfiguration": "explicit-production-task-and-every-semantic-worker"
+  }
+}

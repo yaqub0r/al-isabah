@@ -107,9 +107,68 @@ validate old packets using code and governance at their original immutable
 commit. Never reinterpret a historical signed receipt as unsigned new work or
 relabel an old high run as the approved baseline.
 
+Machine reference v5.0.0 and policy binding v6 succeed those discovery and
+policy artifacts for Issue 82 so the next immutable title-decision profile can
+be bound without changing Issue 80. The packet-schema document advances to v4
+only to hard-pin the v6 policy path; packet, shard, stage-provenance and tool
+data remain version 3.0.0, and registry v2 plus the approved execution method
+remain unchanged. References v1–v4, bindings v1–v5, and packet schemas v1–v3
+remain immutable historical provenance.
+
 Run the full tests, compliance validator, execution-governance validator, and
 public-tree validator. New packet validation and shard merging must exercise
 runtime admission, not merely parse the envelope. A downstream client must pin
 the new machine reference at an immutable commit and verify all listed hashes
 before executing new production work. Release creation remains separately
 authorized; this contract changes no publication trigger or setting.
+
+Machine reference v7.0.0 and policy binding v7 succeed v6 for Issue 84's
+additive Volume 3 title-decision profile. Packet-schema document v5
+hard-pins the v7 binding; packet, shard, tool and stage-provenance data
+remain version 3.0.0. Registry v2 and the approved execution method
+remain unchanged. Reference v6, binding v6, title profile v5, packet
+schema v4, prior executions and releases retain their immutable pins.
+
+Machine reference v8.0.0 and policy binding v8 succeed v7 for Issue 86's
+additive Volume 4 title profile and exact title-only source-unit
+representation. Packet-schema document v6 hard-pins the v8 binding; packet,
+shard, tool and stage-provenance data remain version 3.0.0. Registry v2 and the
+approved execution method remain unchanged. Reference v7, binding v7, title
+profile v6, packet schema v5, prior executions and releases retain their
+immutable pins.
+
+Machine reference v9.0.0 and policy binding v9 succeed v8 for Issue 85's
+additive Volume 5 source-unit-keyed title profile and exact structural
+invocation boundary. Packet-schema document v7 hard-pins the v9 binding;
+packet, shard, tool and stage-provenance data remain version 3.0.0. Registry v2
+and the approved execution method remain unchanged. Reference v8, binding v8,
+title profile v7, packet schema v6, prior executions and releases retain their
+immutable pins.
+
+Machine reference v10.0.0 and policy binding v10 succeed v9 for Issue 91's
+additive Volume 6 source-unit-keyed title profile and exact occurrence-level
+coverage of Volume 6 devotional formulas. Formula registry v1.7.0 appends the
+reviewed exact source forms without changing earlier entries. Packet-schema
+document v8 hard-pins the v10 binding and registry v1.7.0; packet, shard, tool,
+stage-provenance, execution-registry v2, and approved execution-method versions
+remain unchanged. Reference v9, binding v9, title profile v8, packet schema v7,
+prior executions, proposals, and releases retain their immutable pins.
+
+Machine reference v11.0.0 and policy binding v11 succeed v10 for Issue 96's
+additive Volume 7 source-unit-keyed title profile and exact occurrence-level
+review of Volume 7 devotional formulas. Formula registry v1.8.0 appends only
+reviewed exact source forms and leaves non-formula Arabic or translation defects
+outside the registry. Packet-schema document v9 hard-pins the v11 binding and
+registry v1.8.0; packet, shard, tool, stage-provenance, execution-registry v2,
+and approved execution-method versions remain unchanged. Reference v10,
+binding v10, title profile v9, packet schema v8, prior executions, proposals,
+and releases retain their immutable pins.
+
+Machine reference v12.0.0 and policy binding v12 succeed v11 for Issue 98's
+additive Volume 8 source-unit-keyed title profile and exact occurrence-level
+review of eleven additional devotional-formula surfaces. Formula registry v1.9.0
+appends only those reviewed exact source forms. Packet-schema document v10
+hard-pins the v12 binding and registry v1.9.0; packet, shard, tool,
+stage-provenance, execution-registry v2, and approved execution-method versions
+remain unchanged. Reference v11, binding v11, title profile v10, packet schema
+v9, prior executions, proposals, and releases retain their immutable pins.

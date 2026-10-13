@@ -1,7 +1,7 @@
 {
   "schema": "al-isabah.translation-coverage.v1",
   "schema_version": "1.1.0",
-  "status_id": "translation-coverage-2026-08-28",
+  "status_id": "translation-coverage-2026-10-11",
   "work_id": "ibn-hajar-al-isabah",
   "policy_binding": "compliance/policy-binding.v2.json",
   "semantics": {
@@ -84,21 +84,346 @@
       "volume": 8,
       "agent_completion": {
         "status": "agent_complete",
-        "locked_units": 1550,
-        "translated_units": 1550,
+        "locked_units": 879,
+        "translated_units": 879,
         "remaining_agent_units": 0,
-        "basis": "legacy-machine-validated-volume-draft-with-review-presentation",
+        "basis": "Source ordinals 11425–12303 are complete in Issue 98. This current machine-ready scope supersedes the legacy 1,550-unit private Volume 8 inventory for completion reporting; legacy and current counts must not be added. The volume view includes the overlapping Issue 98 cohort, so cohort and volume counts are likewise not additive. External evidence submission and current distribution admission remain pending.",
         "evidence": {
-          "source_register_artifact": "volume-08-structured-english",
-          "sha256": "f12585cea28d7c7b318728f74b1a95a0d8b2812cb25d6e70f1b9e7b0b9422a3f"
+          "source_register_artifact": "issue-0098-public-proposal-v1",
+          "sha256": "8888df7b1a6c3114b2276a6a5efa657a2711071feff1e4a95f7708d6fbb94607"
         }
       },
       "human_review": {
         "management_state": "ongoing",
         "reviewed_units": 0,
-        "unreviewed_units": 1550
+        "unreviewed_units": 879
       },
-      "workflow_conformance": "legacy_audit_required",
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "issue-0080-volume-03-quarter-01",
+      "scope_kind": "cohort",
+      "label": "Issue 80 — Volume 3 first quarter (3035–3407)",
+      "volume": 3,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 373,
+        "translated_units": 373,
+        "remaining_agent_units": 0,
+        "basis": "Machine-ready first-quarter proposal and bilingual review; external evidence submission and current distribution admission remain pending. This cohort overlaps the Volume 3 view and is not additive to it.",
+        "evidence": {
+          "source_register_artifact": "issue-0080-public-proposal-v1",
+          "sha256": "1881b4e86df921c3bd81bd1c354586a8697e07dfaa870558863a3e5f3cc7b94e"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 373
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "issue-0082-volume-03-quarter-02",
+      "scope_kind": "cohort",
+      "label": "Issue 82 — Volume 3 second quarter (3408–3780)",
+      "volume": 3,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 373,
+        "translated_units": 373,
+        "remaining_agent_units": 0,
+        "basis": "Machine-ready second-quarter proposal and bilingual review; external evidence submission and current distribution admission remain pending. This cohort overlaps the Volume 3 view and is not additive to it.",
+        "evidence": {
+          "source_register_artifact": "issue-0082-public-proposal-v1",
+          "sha256": "6d1251afe2ae69e3f8c88f5f435c78215501bbe32d3a34269f6e9b8e4ba6f22b"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 373
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "issue-0084-volume-03-final-half",
+      "scope_kind": "cohort",
+      "label": "Issue 84 — Volume 3 final half (3781–4525)",
+      "volume": 3,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 745,
+        "translated_units": 745,
+        "remaining_agent_units": 0,
+        "basis": "Machine-ready final-half proposal and bilingual review; external evidence submission and current distribution admission remain pending. This cohort overlaps the Volume 3 view and is not additive to it.",
+        "evidence": {
+          "source_register_artifact": "issue-0084-public-proposal-v1",
+          "sha256": "74efb72d5fd82f8600d8c77fd7ac720956f35c34eb85b20f6eeccee81783566b"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 745
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "volume-03",
+      "scope_kind": "volume",
+      "label": "Volume 3",
+      "volume": 3,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 1491,
+        "translated_units": 1491,
+        "remaining_agent_units": 0,
+        "basis": "Source ordinals 3035–3407 are complete in Issue 80, 3408–3780 are complete in Issue 82, and 3781–4525 are complete in Issue 84. The volume view includes all three overlapping cohorts; cohort and volume counts must not be added. External evidence submission and current distribution admission remain pending.",
+        "evidence": {
+          "source_register_artifact": "issue-0084-public-proposal-v1",
+          "sha256": "74efb72d5fd82f8600d8c77fd7ac720956f35c34eb85b20f6eeccee81783566b"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 1491
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "issue-0086-volume-04",
+      "scope_kind": "cohort",
+      "label": "Issue 86 — Volume 4 (4526–6158)",
+      "volume": 4,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 1633,
+        "translated_units": 1633,
+        "remaining_agent_units": 0,
+        "basis": "Machine-ready full-volume proposal and bilingual review; external evidence submission and current distribution admission remain pending. This cohort overlaps the Volume 4 view and is not additive to it.",
+        "evidence": {
+          "source_register_artifact": "issue-0086-public-proposal-v1",
+          "sha256": "54d2eaaeebc7a4567f4df5dbac30c4555bfbef5ad0e1e80e6d71c60420ddce71"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 1633
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "volume-04",
+      "scope_kind": "volume",
+      "label": "Volume 4",
+      "volume": 4,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 1633,
+        "translated_units": 1633,
+        "remaining_agent_units": 0,
+        "basis": "Source ordinals 4526–6158 are complete in Issue 86. The volume view includes the overlapping Issue 86 cohort; cohort and volume counts must not be added. External evidence submission and current distribution admission remain pending.",
+        "evidence": {
+          "source_register_artifact": "issue-0086-public-proposal-v1",
+          "sha256": "54d2eaaeebc7a4567f4df5dbac30c4555bfbef5ad0e1e80e6d71c60420ddce71"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 1633
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "issue-0085-volume-05",
+      "scope_kind": "cohort",
+      "label": "Issue 85 — Volume 5 (6159–7762)",
+      "volume": 5,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 1604,
+        "translated_units": 1604,
+        "remaining_agent_units": 0,
+        "basis": "Machine-ready full-volume proposal and bilingual review; external evidence submission and current distribution admission remain pending. This cohort overlaps the Volume 5 view and is not additive to it.",
+        "evidence": {
+          "source_register_artifact": "issue-0085-public-proposal-v1",
+          "sha256": "fa1f5b8820dc7a1ba007f00d17ff40d0f70a6179e80842507adbd9aa4c29c27e"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 1604
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "volume-05",
+      "scope_kind": "volume",
+      "label": "Volume 5",
+      "volume": 5,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 1604,
+        "translated_units": 1604,
+        "remaining_agent_units": 0,
+        "basis": "Source ordinals 6159–7762 are complete in Issue 85. The volume view includes the overlapping Issue 85 cohort; cohort and volume counts must not be added. External evidence submission and current distribution admission remain pending.",
+        "evidence": {
+          "source_register_artifact": "issue-0085-public-proposal-v1",
+          "sha256": "fa1f5b8820dc7a1ba007f00d17ff40d0f70a6179e80842507adbd9aa4c29c27e"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 1604
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "issue-0091-volume-06",
+      "scope_kind": "cohort",
+      "label": "Issue 91 — Volume 6 (7763–9484)",
+      "volume": 6,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 1722,
+        "translated_units": 1722,
+        "remaining_agent_units": 0,
+        "basis": "Machine-ready full-volume proposal and bilingual review; external evidence submission and current distribution admission remain pending. This cohort overlaps the Volume 6 view and is not additive to it.",
+        "evidence": {
+          "source_register_artifact": "issue-0091-public-proposal-v1",
+          "sha256": "298e3e108bd08105aecc1a66fc3641b622c017ce5c64ab926b0b7472e7001314"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 1722
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "volume-06",
+      "scope_kind": "volume",
+      "label": "Volume 6",
+      "volume": 6,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 1722,
+        "translated_units": 1722,
+        "remaining_agent_units": 0,
+        "basis": "Source ordinals 7763–9484 are complete in Issue 91. The volume view includes the overlapping Issue 91 cohort; cohort and volume counts must not be added. External evidence submission and current distribution admission remain pending.",
+        "evidence": {
+          "source_register_artifact": "issue-0091-public-proposal-v1",
+          "sha256": "298e3e108bd08105aecc1a66fc3641b622c017ce5c64ab926b0b7472e7001314"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 1722
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "issue-0096-volume-07",
+      "scope_kind": "cohort",
+      "label": "Issue 96 — Volume 7 (9485–11424)",
+      "volume": 7,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 1940,
+        "translated_units": 1940,
+        "remaining_agent_units": 0,
+        "basis": "Machine-ready full-volume proposal and bilingual review; external evidence submission and current distribution admission remain pending. This cohort overlaps the Volume 7 view and is not additive to it.",
+        "evidence": {
+          "source_register_artifact": "issue-0096-public-proposal-v1",
+          "sha256": "d7c8fbe0bd06e0e836d3f7167149995d269b17f81e21d09288c26b4d201a7850"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 1940
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "volume-07",
+      "scope_kind": "volume",
+      "label": "Volume 7",
+      "volume": 7,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 1940,
+        "translated_units": 1940,
+        "remaining_agent_units": 0,
+        "basis": "Source ordinals 9485–11424 are complete in Issue 96. The volume view includes the overlapping Issue 96 cohort; cohort and volume counts must not be added. External evidence submission and current distribution admission remain pending.",
+        "evidence": {
+          "source_register_artifact": "issue-0096-public-proposal-v1",
+          "sha256": "d7c8fbe0bd06e0e836d3f7167149995d269b17f81e21d09288c26b4d201a7850"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 1940
+      },
+      "workflow_conformance": "current",
+      "public_working_status": "blocked",
+      "canonical_promotion": "blocked"
+    },
+    {
+      "scope_id": "issue-0098-volume-08",
+      "scope_kind": "cohort",
+      "label": "Issue 98 — Volume 8 (11425–12303)",
+      "volume": 8,
+      "agent_completion": {
+        "status": "agent_complete",
+        "locked_units": 879,
+        "translated_units": 879,
+        "remaining_agent_units": 0,
+        "basis": "Machine-ready full-volume proposal and bilingual review; external evidence submission and current distribution admission remain pending. This current cohort supersedes the legacy 1,550-unit private Volume 8 inventory for completion reporting and overlaps the Volume 8 view; the legacy/current and cohort/volume counts are not additive.",
+        "evidence": {
+          "source_register_artifact": "issue-0098-public-proposal-v1",
+          "sha256": "8888df7b1a6c3114b2276a6a5efa657a2711071feff1e4a95f7708d6fbb94607"
+        }
+      },
+      "human_review": {
+        "management_state": "ongoing",
+        "reviewed_units": 0,
+        "unreviewed_units": 879
+      },
+      "workflow_conformance": "current",
       "public_working_status": "blocked",
       "canonical_promotion": "blocked"
     }

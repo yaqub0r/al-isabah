@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/schemas/entry-title-decisions.v2.schema.json",
+  "title": "Al-Isabah entry-title decisions with exact title-only units",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "contractId", "workId", "status", "sourceAuthority", "decisions"],
+  "properties": {
+    "schemaVersion": {"const": "1.2.0"},
+    "contractId": {"const": "al-isabah-entry-title-structure"},
+    "workId": {"const": "ibn-hajar-al-isabah"},
+    "status": {"const": "active"},
+    "sourceAuthority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "commit", "artifact", "license"],
+      "properties": {
+        "repository": {"type": "string", "format": "uri"},
+        "commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "artifact": {"type": "string", "minLength": 1},
+        "license": {"type": "string", "minLength": 1}
+      }
+    },
+    "decisions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "anyOf": [
+          {"$ref": "#/$defs/ordinaryDecision"},
+          {"$ref": "#/$defs/titleOnlyDecision"}
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "bilingualText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ar", "en"],
+      "properties": {
+        "ar": {"type": "string", "minLength": 1},
+        "en": {"type": "string", "minLength": 1}
+      }
+    },
+    "emptyBilingualText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ar", "en"],
+      "properties": {
+        "ar": {"const": ""},
+        "en": {"const": ""}
+      }
+    },
+    "ordinaryDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceEntryNumber", "role", "title", "bodyOpeningKind", "bodyOpening"],
+      "properties": {
+        "sourceEntryNumber": {"type": "integer", "minimum": 1},
+        "role": {"enum": ["positive-reference", "corrective", "typography-reference"]},
+        "title": {"$ref": "#/$defs/bilingualText"},
+        "bodyOpeningKind": {"enum": ["lineage", "prose"]},
+        "bodyOpening": {"$ref": "#/$defs/bilingualText"},
+        "editorialSupply": {"type": "object"}
+      }
+    },
+    "titleOnlyDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceEntryNumber", "role", "title", "bodyOpeningKind", "bodyOpening", "sourceUnitSha256"],
+      "properties": {
+        "sourceEntryNumber": {"type": "integer", "minimum": 1},
+        "role": {"enum": ["positive-reference", "corrective", "typography-reference"]},
+        "title": {"$ref": "#/$defs/bilingualText"},
+        "bodyOpeningKind": {"const": "none"},
+        "bodyOpening": {"$ref": "#/$defs/emptyBilingualText"},
+        "sourceUnitSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}
