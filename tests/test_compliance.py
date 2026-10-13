@@ -2,6 +2,7 @@ import copy
 import importlib.util
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -65,6 +66,46 @@ class ComplianceTests(unittest.TestCase):
 
     def test_current_blocked_manifest_is_valid(self):
         self.assertEqual(self.validate(), [])
+
+    def test_strict_proposal_cache_is_bound_to_dependency_state(self):
+        scope = next(
+            item
+            for item in self.translation_coverage["scopes"]
+            if item["scope_id"] == MODULE.VOLUME7_SCOPE_ID
+        )
+        register_errors, artifacts = MODULE.validate_register(
+            copy.deepcopy(self.register)
+        )
+        self.assertEqual(register_errors, [])
+        config = dict(MODULE.QUARTER_COMPLETIONS[MODULE.VOLUME7_SCOPE_ID])
+        config["proposalPath"] = MODULE.VOLUME7_PROPOSAL_PATH
+        same_state = (("dependency", "same"),)
+        changed_state = (("dependency", "changed"),)
+        original_cache = dict(MODULE._STRICT_PROPOSAL_VALIDATION_CACHE)
+        MODULE._STRICT_PROPOSAL_VALIDATION_CACHE.clear()
+
+        def restore_cache():
+            MODULE._STRICT_PROPOSAL_VALIDATION_CACHE.clear()
+            MODULE._STRICT_PROPOSAL_VALIDATION_CACHE.update(original_cache)
+
+        self.addCleanup(restore_cache)
+
+        with patch.object(
+            MODULE,
+            "_public_proposal_validation_fingerprint",
+            side_effect=(same_state, same_state, changed_state),
+        ), patch(
+            "validate_public_proposal.validate", return_value=[]
+        ) as strict_validate:
+            for _ in range(3):
+                self.assertEqual(
+                    MODULE.validate_quarter_completion(
+                        copy.deepcopy(scope), artifacts, config
+                    ),
+                    [],
+                )
+
+        self.assertEqual(strict_validate.call_count, 2)
 
     def test_eligible_claim_rejects_non_public_dependency(self):
         promotion = copy.deepcopy(self.promotion)

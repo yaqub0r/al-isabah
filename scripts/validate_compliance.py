@@ -55,6 +55,24 @@ GOVERNANCE_REFERENCE_PATH = (
 )
 FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 
+# Compliance tests exercise many independent failure modes against the same
+# immutable public proposals.  Strict proposal validation is intentionally
+# expensive, so retain its result only while both the proposal bytes and every
+# repository file it consults remain identical.  Returning a copy prevents a
+# caller from mutating the cached result.
+_STRICT_PROPOSAL_VALIDATION_CACHE: dict[
+    tuple[str, str, tuple[tuple[str, str], ...]], tuple[str, ...]
+] = {}
+_STRICT_PROPOSAL_SHARED_DEPENDENCIES = (
+    ROOT / "profiles" / "honorific-formulas.v1.json",
+    ROOT / "schemas" / "public-proposal.v2.schema.json",
+    ROOT / "compliance" / "source-register.v1.json",
+    ROOT / "compliance" / "rights-matrix.al-isabah.v1.json",
+    ROOT / "compliance" / "policy-binding.v1.json",
+    ROOT / "compliance" / "policy-binding.v7.json",
+    ROOT / "compliance" / "policy-binding.v11.json",
+)
+
 CLASSIFICATIONS = {
     "approved-for-publication",
     "external-reference",
@@ -461,6 +479,45 @@ def load_json(path: Path) -> dict[str, Any]:
     if not isinstance(value, dict):
         raise ComplianceError(f"{path}: top level must be an object")
     return value
+
+
+def _public_proposal_validation_fingerprint(
+    proposal: dict[str, Any],
+) -> tuple[tuple[str, str], ...]:
+    """Bind a cached strict validation to every repository file it reads."""
+    profile_id = proposal.get("entryTitleDecisions", {}).get("profileId")
+    dependencies = list(_STRICT_PROPOSAL_SHARED_DEPENDENCIES)
+    if isinstance(profile_id, str) and profile_id:
+        dependencies.append(ROOT / "profiles" / f"{profile_id}.json")
+    fingerprint: list[tuple[str, str]] = []
+    for path in dependencies:
+        try:
+            digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        except OSError:
+            digest = "missing"
+        fingerprint.append((path.relative_to(ROOT).as_posix(), digest))
+    return tuple(fingerprint)
+
+
+def _strict_public_proposal_errors(
+    proposal_path: Path,
+    proposal_sha256: str,
+    proposal: dict[str, Any],
+) -> list[str]:
+    """Validate once per exact proposal and dependency state."""
+    dependency_fingerprint = _public_proposal_validation_fingerprint(proposal)
+    key = (
+        str(proposal_path.resolve()),
+        proposal_sha256,
+        dependency_fingerprint,
+    )
+    cached = _STRICT_PROPOSAL_VALIDATION_CACHE.get(key)
+    if cached is None:
+        from validate_public_proposal import validate as validate_proposal
+
+        cached = tuple(validate_proposal(proposal_path, require_current=True))
+        _STRICT_PROPOSAL_VALIDATION_CACHE[key] = cached
+    return list(cached)
 
 
 def canonical_text_sha256(path: Path) -> str:
@@ -1054,9 +1111,7 @@ def validate_quarter_completion(
         or integrity.get("execution_policy_binding_sha256") != policy.get("bindingSha256")
     ):
         return [f"{prefix} exact proposal range, hash or execution binding is incorrect"]
-    from validate_public_proposal import validate as validate_proposal
-
-    if validate_proposal(proposal_path, require_current=True):
+    if _strict_public_proposal_errors(proposal_path, proposal_sha, proposal):
         return [f"{prefix} strict public proposal is invalid"]
     owned_context = [
         [item for item in record["precedingMaterial"] if item["kind"] != "continued_structural_heading"]
