@@ -62,7 +62,7 @@ jobs:
             --archive "${archive}" \
             --repository-commit "${REPOSITORY_COMMIT}"
           python3 scripts/validate_public_distribution.py .runtime/public-distribution
-          python3 -c 'import sys; from pathlib import Path; from scripts.build_public_distribution import package; package(Path(".runtime/public-distribution"), Path(sys.argv[1]))' "${verification_archive}"
+          python3 -c 'import sys; from pathlib import Path; sys.path.insert(0, str(Path("scripts").resolve())); from build_public_distribution import package; package(Path(".runtime/public-distribution"), Path(sys.argv[1]))' "${verification_archive}"
           cmp "${archive}" "${verification_archive}"
           archive_dir="$(dirname "${archive}")"
           archive_name="$(basename "${archive}")"
