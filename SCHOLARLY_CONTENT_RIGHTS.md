@@ -38,12 +38,14 @@ deliberate licensing decision. Consult
 and [`compliance/source-register.v1.json`](compliance/source-register.v1.json)
 before reusing a particular artifact.
 
-## Current public-working remediation
+## Current public-working edition
 
-Issue #35 is a repository public-boundary remediation, not a legal or copyright
-conclusion. The current tree exposes the approved reader-facing content only
-through a strict public proposal and exact closure manifest. Internal translation
-stages, reconstructive evidence, raw findings, restricted witness wording, and
-operational metadata are excluded. Canonical promotion and automated publication
-remain blocked pending their separate reviewed gates. Existing history and
-releases are preserved by explicit forward-fix decision.
+The Issue #100 closure admits the approved reader-facing content for all 12,303
+source units through ten strict public proposals and their exact reviews. It is
+a repository publication-boundary decision, not a new legal or copyright
+conclusion. Internal translation stages, reconstructive evidence, raw findings,
+restricted witness wording, and operational metadata remain excluded. The
+existing rights matrix continues to authorize only the stated noncommercial
+public-working use; canonical promotion remains blocked. Publication is manual
+and separately authorized, and every earlier closure and release remains
+preserved as immutable history or rollback evidence.

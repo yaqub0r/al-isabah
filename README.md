@@ -25,7 +25,7 @@ model](docs/architecture/canonical-publication-repository.md) for the complete
 responsibility and trust-boundary model.
 
 Downstream consumers discover and pin the versioned
-[translation-governance reference](docs/contracts/translation-governance-reference.v12.json).
+[translation-governance reference](docs/contracts/translation-governance-reference.v13.json).
 Its [compatibility guide](docs/contracts/downstream-consumer-compatibility.md)
 documents immutable-commit pinning, the Al-Isabah-owned formula registry,
 consumer responsibilities, and the downstream deprecation path. Human review
@@ -94,11 +94,13 @@ evidence. Reader applications consume this structure and must not infer titles
 from typography or body length.
 
 The [source compliance register](compliance/source-register.v1.json) applies
-the repository-local policy binding to the data currently available on the
-Volume 8 and Khadijah development branches. The corresponding [promotion
-readiness manifest](compliance/promotions/available-data.v2.json) is
-**blocked**: the current Arabic and English records remain useful research and
-review material, but they are not approved for a public release.
+the repository-local policy binding to the available evidence and exact public
+proposals. The current [promotion-readiness
+manifest](compliance/promotions/available-data.v3.json) approves the exact
+Issue #100 full-book package for a controlled, immutable public-working release
+after protected merge. Canonical promotion remains blocked by separate source,
+rights, provenance, and substantive controls; human review remains ongoing and
+nonterminal.
 
 The repository is public, but public repository visibility is not a rights or
 release decision for any source artifact. Eligible public scholarly content is
@@ -143,15 +145,18 @@ integrity and retirement record remains in
 Current public-working builds consume only strict
 [`public-proposal.v2`](schemas/public-proposal.v2.schema.json) artifacts and their
 exact release closure. Internal translation-work packets and detailed review
-evidence are not public build inputs. The cumulative closure admits the 1,537
-Volume 1 records and the corrected 1,497-record Volume 2 proposal while excluding
-internal, reconstructive, restricted-reference, and operational material from
-the current tree. All Volume 2 records remain human-unreviewed, 66 unresolved
-items remain visible at public-safe granularity, and canonical promotion remains
-blocked.
+evidence are not public build inputs. The Issue #100 cumulative closure admits
+exactly 12,303 ordered source units across Volumes 1–8 from ten accepted
+proposal/review pairs. It preserves 1,382 owned structural segments and 23
+inherited display contexts, emits the three Volume 3 cohorts as one cumulative
+volume shard, and excludes the superseded Issue #53 proposal and legacy private
+Volume 8 corpus. All 12,303 records remain human-unreviewed; that disclosure is
+not a release blocker, while canonical promotion remains blocked.
 
-Automated publication is intentionally paused. See the
-[public-boundary remediation record](docs/architecture/public-boundary-remediation.md)
-for the preserved-history decision and the conditions for deliberate future
-re-enablement.
+Publication is controlled and manual. A merge does not create a release: a
+maintainer must dispatch the publication workflow with the exact immutable
+`main` commit after repository release immutability and all release gates are
+verified. Earlier releases remain rollback and historical pins. See the
+[public distribution contract](docs/architecture/public-distribution.md) for
+the exact closure, asset, checksum, and supersession rules.
 

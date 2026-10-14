@@ -35,9 +35,9 @@ contains the 1,722-record Volume 6 assignment range; and Issue 96 contains the
 1,940-record Volume 7 assignment range. Issue 98 contains the 879-record Volume
 8 assignment range. Each proposal has a
 deterministic public review beside it and remains human-unreviewed. These are
-strict local public-safe proposals: external evidence submission, admission to
-the current public-working distribution, canonical promotion, and release all
-remain separately blocked. Issue 91 also preserves ordinal 9484 as one
+strict local public-safe proposals. Issue #100 admits all ten accepted slices
+to the cumulative public-working distribution; canonical promotion and an
+actual release remain separate decisions. Issue 91 also preserves ordinal 9484 as one
 cross-volume entry while keeping its four preceding terminal structural
 segments distinct.
 Issue 96 explicitly inherits that validated structural context and owns 201 new
@@ -47,15 +47,17 @@ structural segments. It supersedes the earlier private-provisional Volume 8
 handoff for current review, while the preserved historical evidence remains
 outside the public proposal.
 
-`compliance/publication/issue-0053.release-closure.v1.json` remains the exact
-historical cumulative closure. The current distribution closure is
-`compliance/publication/issue-0070.release-closure.v1.json`; it binds the
-governed translation-coverage state and includes only the current-ready Volume
-1 and corrected Volume 2 proposals and reviews. The superseded Issue #53
-proposal remains historical and excluded. Volume 8 now has a current-policy
-strict proposal, but external public-working distribution admission remains a
-separate blocked decision.
+`compliance/publication/issue-0053.release-closure.v1.json` remains an immutable
+historical closure, and the Issue #70 closure remains the immediate rollback
+predecessor. The current distribution closure is
+`compliance/publication/issue-0100.release-closure.v1.json`; it binds all ten
+accepted proposal/review pairs, source ordinals 1–12,303, eight volume outputs,
+1,382 owned structural segments, 23 inherited display contexts, and explicit
+front/terminal completeness. Volume 3 is one cumulative output sourced from the
+three Issue #80/#82/#84 proposals. The superseded Issue #53 proposal and the
+legacy private 1,550-record Volume 8 corpus remain historical and excluded.
 
-These artifacts are approved only for `public-working` distribution. Canonical
-promotion remains blocked and requires its own human scholarly and compliance
-decision.
+These artifacts are approved only for `public-working` distribution. All
+12,303 records remain human-unreviewed; the required disclosure does not block
+that release class. Canonical promotion remains blocked and requires its own
+substantive scholarly and compliance decision.

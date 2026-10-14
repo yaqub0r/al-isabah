@@ -16,6 +16,7 @@ from typing import Any
 from public_boundary import boundary_errors, canonical_json, sha256_bytes, sha256_file, summarize
 from validate_current_release_closure import (
     CURRENT_CLOSURE,
+    cumulative_record,
     output_review_path,
     public_review_path,
     validate as validate_closure,
@@ -69,8 +70,9 @@ def build(output: Path, repository_commit: str, generated_at: str) -> dict[str, 
     all_records: list[dict[str, Any]] = []
     for proposal_path, proposal in proposals:
         for record in proposal["records"]:
-            records_by_volume[record["volume"]].append(record)
-            all_records.append(record)
+            projected = cumulative_record(proposal["proposalId"], record)
+            records_by_volume[projected["volume"]].append(projected)
+            all_records.append(projected)
         review_source = public_review_path(proposal_path)
         review_output = output / output_review_path(proposal)
         review_output.write_bytes(review_source.read_bytes())

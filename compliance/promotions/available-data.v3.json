@@ -1,0 +1,90 @@
+{
+  "schema": "al-isabah.promotion-readiness.v3",
+  "manifest_id": "issue-0100-full-book-public-working-2026-10-13",
+  "issue": "https://github.com/yaqub0r/al-isabah/issues/100",
+  "work_id": "ibn-hajar-al-isabah",
+  "policy_binding": "compliance/policy-binding.v12.json",
+  "source_register": "compliance/source-register.v1.json",
+  "rights_matrix": "compliance/rights-matrix.al-isabah.v1.json",
+  "translation_coverage": "compliance/translation-coverage.v1.json",
+  "public_working_release": {
+    "status": "approved-controlled-release",
+    "eligible": true,
+    "publication_status": "public-working",
+    "canonical_promotion": "blocked",
+    "source_unit_count": 12303,
+    "volume_count": 8,
+    "proposal_ids": [
+      "issue-0026-public-proposal-v1",
+      "issue-0070-public-proposal-v1",
+      "issue-0080-public-proposal-v1",
+      "issue-0082-public-proposal-v1",
+      "issue-0084-public-proposal-v1",
+      "issue-0086-public-proposal-v1",
+      "issue-0085-public-proposal-v1",
+      "issue-0091-public-proposal-v1",
+      "issue-0096-public-proposal-v1",
+      "issue-0098-public-proposal-v1"
+    ],
+    "release_operation": "manual-dispatch-after-protected-merge",
+    "publication_workflow": "enabled-manual-exact-commit",
+    "automatic_push_publication": false,
+    "immutable_release_required": true,
+    "gates": {
+      "source_binding": "passed",
+      "provenance_binding": "passed",
+      "rights_eligibility": "passed",
+      "public_output_boundary": "passed",
+      "deterministic_validation": "passed",
+      "honorific_preservation": "passed",
+      "unresolved_state_disclosure": "passed"
+    }
+  },
+  "canonical_promotion": {
+    "status": "blocked",
+    "human_review_effect": "none",
+    "controls": {
+      "source_binding": "blocked",
+      "provenance_binding": "blocked",
+      "rights_eligibility": "blocked",
+      "substantive_eligibility": "incomplete"
+    },
+    "blockers": [
+      {
+        "id": "canonical-source-binding-required",
+        "control": "source_binding",
+        "summary": "Canonical promotion requires an independently approved canonical source binding beyond the public-working comparison authority."
+      },
+      {
+        "id": "canonical-provenance-resolution-required",
+        "control": "provenance_binding",
+        "summary": "Canonical promotion requires complete reviewable lineage for every promoted Arabic and English record."
+      },
+      {
+        "id": "canonical-rights-resolution-required",
+        "control": "rights_eligibility",
+        "summary": "Canonical promotion requires resolution of the retained restricted-witness and historical-rights limitations."
+      },
+      {
+        "id": "canonical-substantive-resolution-required",
+        "control": "substantive_eligibility",
+        "summary": "Canonical promotion requires deterministic resolution or explicit adjudication of every substantive finding."
+      }
+    ]
+  },
+  "human_review": {
+    "management_state": "ongoing-nonterminal",
+    "evidence_mode": "append-only",
+    "coverage_record": "compliance/translation-coverage.v1.json",
+    "reviewed_units": 0,
+    "unreviewed_units": 12303,
+    "eligibility_effect": "none",
+    "release_class_effect": "none",
+    "terminal_completion_claim": false
+  },
+  "supersedes": {
+    "path": "compliance/promotions/available-data.v2.json",
+    "sha256": "7a728a341bcff5354024f4b1dadc5c0ba4e66771aadb1c40725254637323d37e"
+  },
+  "decision": "Approve the exact Issue 100 full-book package for a controlled, immutable public-working release after protected merge and exact-commit validation. This decision does not approve canonical promotion, human review completion, automatic push publication, or any excluded private research evidence."
+}

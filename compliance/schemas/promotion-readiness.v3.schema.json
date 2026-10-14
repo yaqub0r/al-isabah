@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/compliance/schemas/promotion-readiness.v3.schema.json",
+  "title": "Al-Isabah split public-working release and canonical-promotion decision v3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema", "manifest_id", "issue", "work_id", "policy_binding",
+    "source_register", "rights_matrix", "translation_coverage",
+    "public_working_release", "canonical_promotion", "human_review",
+    "supersedes", "decision"
+  ],
+  "properties": {
+    "schema": {"const": "al-isabah.promotion-readiness.v3"},
+    "manifest_id": {"const": "issue-0100-full-book-public-working-2026-10-13"},
+    "issue": {"const": "https://github.com/yaqub0r/al-isabah/issues/100"},
+    "work_id": {"const": "ibn-hajar-al-isabah"},
+    "policy_binding": {"const": "compliance/policy-binding.v12.json"},
+    "source_register": {"const": "compliance/source-register.v1.json"},
+    "rights_matrix": {"const": "compliance/rights-matrix.al-isabah.v1.json"},
+    "translation_coverage": {"const": "compliance/translation-coverage.v1.json"},
+    "public_working_release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status", "eligible", "publication_status", "canonical_promotion",
+        "source_unit_count", "volume_count", "proposal_ids",
+        "release_operation", "publication_workflow",
+        "automatic_push_publication", "immutable_release_required", "gates"
+      ],
+      "properties": {
+        "status": {"const": "approved-controlled-release"},
+        "eligible": {"const": true},
+        "publication_status": {"const": "public-working"},
+        "canonical_promotion": {"const": "blocked"},
+        "source_unit_count": {"const": 12303},
+        "volume_count": {"const": 8},
+        "proposal_ids": {
+          "type": "array",
+          "minItems": 10,
+          "maxItems": 10,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "release_operation": {"const": "manual-dispatch-after-protected-merge"},
+        "publication_workflow": {"const": "enabled-manual-exact-commit"},
+        "automatic_push_publication": {"const": false},
+        "immutable_release_required": {"const": true},
+        "gates": {"$ref": "#/$defs/releaseGates"}
+      }
+    },
+    "canonical_promotion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "human_review_effect", "controls", "blockers"],
+      "properties": {
+        "status": {"const": "blocked"},
+        "human_review_effect": {"const": "none"},
+        "controls": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["source_binding", "provenance_binding", "rights_eligibility", "substantive_eligibility"],
+          "properties": {
+            "source_binding": {"const": "blocked"},
+            "provenance_binding": {"const": "blocked"},
+            "rights_eligibility": {"const": "blocked"},
+            "substantive_eligibility": {"const": "incomplete"}
+          }
+        },
+        "blockers": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "control", "summary"],
+            "properties": {
+              "id": {"type": "string", "minLength": 1},
+              "control": {"enum": ["source_binding", "provenance_binding", "rights_eligibility", "substantive_eligibility"]},
+              "summary": {"type": "string", "minLength": 1}
+            }
+          }
+        }
+      }
+    },
+    "human_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["management_state", "evidence_mode", "coverage_record", "reviewed_units", "unreviewed_units", "eligibility_effect", "release_class_effect", "terminal_completion_claim"],
+      "properties": {
+        "management_state": {"const": "ongoing-nonterminal"},
+        "evidence_mode": {"const": "append-only"},
+        "coverage_record": {"const": "compliance/translation-coverage.v1.json"},
+        "reviewed_units": {"const": 0},
+        "unreviewed_units": {"const": 12303},
+        "eligibility_effect": {"const": "none"},
+        "release_class_effect": {"const": "none"},
+        "terminal_completion_claim": {"const": false}
+      }
+    },
+    "supersedes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"const": "compliance/promotions/available-data.v2.json"},
+        "sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "decision": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "releaseGates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_binding", "provenance_binding", "rights_eligibility", "public_output_boundary", "deterministic_validation", "honorific_preservation", "unresolved_state_disclosure"],
+      "properties": {
+        "source_binding": {"const": "passed"},
+        "provenance_binding": {"const": "passed"},
+        "rights_eligibility": {"const": "passed"},
+        "public_output_boundary": {"const": "passed"},
+        "deterministic_validation": {"const": "passed"},
+        "honorific_preservation": {"const": "passed"},
+        "unresolved_state_disclosure": {"const": "passed"}
+      }
+    }
+  }
+}

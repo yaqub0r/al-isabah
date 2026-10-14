@@ -3,7 +3,7 @@
 - **Status:** Active
 - **Issue:** [#45](https://github.com/yaqub0r/al-isabah/issues/45)
 - **Machine reference:**
-  [`translation-governance-reference.v12.json`](translation-governance-reference.v12.json)
+  [`translation-governance-reference.v13.json`](translation-governance-reference.v13.json)
 
 ## Authority and pinning
 
@@ -116,6 +116,17 @@ machine-reference path and exact active artifact-identity set that a pinned
 consumer must explicitly select. Their unchanged translation, execution, and
 release semantics do not make that consumer discovery transition additive to
 the preceding reference artifact.
+
+Reference v13.0.0 supersedes v12 by exact hash without changing translation
+policy, execution semantics, proposal bytes, or review bytes. It makes the
+Issue #100 full-book public-working closure discoverable and binds its closure
+schema, current coverage ledger, rights matrix, and public-distribution
+contract. Consumers verify the exact closure and then ingest one shard for each
+of Volumes 1–8, including the single cumulative Volume 3 shard derived from its
+three accepted proposals. They must require exactly 12,303 ordered records,
+1,382 owned structural segments, 23 inherited display contexts, all ten public
+reviews, and the disclosed zero-of-12,303 human-review coverage. The superseded
+Issue #53 proposal and legacy private Volume 8 corpus are not release inputs.
 
 ## Review, correction, and release semantics
 

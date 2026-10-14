@@ -20,7 +20,10 @@ from execution_governance import validate as validate_execution_governance
 
 ROOT = SCRIPT_DIR.parent
 REGISTER_PATH = ROOT / "compliance" / "source-register.v1.json"
-PROMOTION_PATH = ROOT / "compliance" / "promotions" / "available-data.v2.json"
+PROMOTION_PATH = ROOT / "compliance" / "promotions" / "available-data.v3.json"
+PROMOTION_SCHEMA_PATH = (
+    ROOT / "compliance" / "schemas" / "promotion-readiness.v3.schema.json"
+)
 POLICY_PATH = ROOT / "compliance" / "policy-binding.v12.json"
 FROZEN_POLICY_V11_PATH = ROOT / "compliance" / "policy-binding.v11.json"
 FROZEN_POLICY_V10_PATH = ROOT / "compliance" / "policy-binding.v10.json"
@@ -43,7 +46,9 @@ FINAL_HALF_PROPOSAL_PATH = (
     ROOT / "content" / "public-proposals" / "issue-0084.public-proposal.json"
 )
 FINAL_HALF_SCOPE_ID = "issue-0084-volume-03-final-half"
-QUARTER_PENDING_STATUS = "machine-ready-quarter-proposal-pending-submission-and-distribution-admission"
+CURRENT_DISTRIBUTION_REVIEW_STATUS = (
+    "approved-current-public-working-distribution-canonical-promotion-blocked"
+)
 VOLUME7_PROPOSAL_PATH = (
     ROOT / "content" / "public-proposals" / "issue-0096.public-proposal.json"
 )
@@ -52,11 +57,10 @@ VOLUME8_PROPOSAL_PATH = (
     ROOT / "content" / "public-proposals" / "issue-0098.public-proposal.json"
 )
 VOLUME8_SCOPE_ID = "issue-0098-volume-08"
-VOLUME_PENDING_STATUS = "machine-ready-volume-proposal-pending-submission-and-distribution-admission"
 RETIREMENT_PATH = ROOT / "compliance" / "research-retirement.v1.json"
 RIGHTS_MATRIX_PATH = ROOT / "compliance" / "rights-matrix.al-isabah.v1.json"
 GOVERNANCE_REFERENCE_PATH = (
-    ROOT / "docs" / "contracts" / "translation-governance-reference.v12.json"
+    ROOT / "docs" / "contracts" / "translation-governance-reference.v13.json"
 )
 FORMULA_REGISTRY_PATH = ROOT / "profiles" / "honorific-formulas.v1.json"
 
@@ -160,18 +164,28 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
         "1.1.0",
     ),
     "governance-reference-schema": (
-        "schemas/translation-governance-reference.v12.schema.json",
+        "schemas/translation-governance-reference.v13.schema.json",
         "active",
-        "12.0.0",
+        "13.0.0",
     ),
     "promotion-readiness": (
-        "compliance/promotions/available-data.v2.json",
+        "compliance/promotions/available-data.v3.json",
         "active",
-        "2.0.0",
+        "3.0.0",
     ),
     "promotion-readiness-schema": (
-        "compliance/schemas/promotion-readiness.v2.schema.json",
+        "compliance/schemas/promotion-readiness.v3.schema.json",
         "active",
+        "3.0.0",
+    ),
+    "historical-promotion-readiness-v2": (
+        "compliance/promotions/available-data.v2.json",
+        "reference",
+        "2.0.0",
+    ),
+    "historical-promotion-readiness-schema-v2": (
+        "compliance/schemas/promotion-readiness.v2.schema.json",
+        "reference",
         "2.0.0",
     ),
     "canonical-entry-v2": (
@@ -207,6 +221,21 @@ REQUIRED_GOVERNANCE_ARTIFACTS = {
     "public-distribution-v1": (
         "schemas/public-distribution.v1.schema.json",
         "rollback-only",
+        "1.0.0",
+    ),
+    "current-release-closure": (
+        "compliance/publication/issue-0100.release-closure.v1.json",
+        "active",
+        "2.0.0",
+    ),
+    "current-release-closure-schema": (
+        "schemas/current-release-closure.v2.schema.json",
+        "active",
+        "2.0.0",
+    ),
+    "book-rights-matrix": (
+        "compliance/rights-matrix.al-isabah.v1.json",
+        "active",
         "1.0.0",
     ),
 }
@@ -334,7 +363,7 @@ QUARTER_COMPLETIONS = {
         "end": 11424,
         "volume": 7,
         "schemaVersion": "1.3.0",
-        "pendingStatus": VOLUME_PENDING_STATUS,
+        "reviewStatus": CURRENT_DISTRIBUTION_REVIEW_STATUS,
         "structuralSegments": 201,
         "structuralOwners": 134,
         "policySha256": "a335f829c16c05dbd8071ccca94f3ae1e2a57eaa1a949926971ca74fcdffc404",
@@ -350,7 +379,7 @@ QUARTER_COMPLETIONS = {
         "end": 12303,
         "volume": 8,
         "schemaVersion": "1.3.0",
-        "pendingStatus": VOLUME_PENDING_STATUS,
+        "reviewStatus": CURRENT_DISTRIBUTION_REVIEW_STATUS,
         "structuralSegments": 139,
         "structuralOwners": 80,
         "policySha256": ACTIVE_POLICY_V12_SHA256,
@@ -396,14 +425,14 @@ REQUIRED_COMPLETED_SCOPES = {
         "artifact": "issue-0098-public-proposal-v1",
         "units": 879,
         "workflow_conformance": "current",
-        "public_working_status": "blocked",
+        "public_working_status": "available",
     },
     "volume-08": {
         "volume": 8,
         "artifact": "issue-0098-public-proposal-v1",
         "units": 879,
         "workflow_conformance": "current",
-        "public_working_status": "blocked",
+        "public_working_status": "available",
     },
     QUARTER_SCOPE_ID: {
         "scope_kind": "cohort",
@@ -411,7 +440,7 @@ REQUIRED_COMPLETED_SCOPES = {
         "artifact": "issue-0080-public-proposal-v1",
         "units": 373,
         "workflow_conformance": "current",
-        "public_working_status": "blocked",
+        "public_working_status": "available",
     },
     SECOND_QUARTER_SCOPE_ID: {
         "scope_kind": "cohort",
@@ -419,7 +448,7 @@ REQUIRED_COMPLETED_SCOPES = {
         "artifact": "issue-0082-public-proposal-v1",
         "units": 373,
         "workflow_conformance": "current",
-        "public_working_status": "blocked",
+        "public_working_status": "available",
     },
     FINAL_HALF_SCOPE_ID: {
         "scope_kind": "cohort",
@@ -427,14 +456,14 @@ REQUIRED_COMPLETED_SCOPES = {
         "artifact": "issue-0084-public-proposal-v1",
         "units": 745,
         "workflow_conformance": "current",
-        "public_working_status": "blocked",
+        "public_working_status": "available",
     },
     "volume-03": {
         "volume": 3,
         "artifact": "issue-0084-public-proposal-v1",
         "units": 1491,
         "workflow_conformance": "current",
-        "public_working_status": "blocked",
+        "public_working_status": "available",
     },
     "issue-0086-volume-04": {
         "scope_kind": "cohort",
@@ -442,14 +471,14 @@ REQUIRED_COMPLETED_SCOPES = {
         "artifact": "issue-0086-public-proposal-v1",
         "units": 1633,
         "workflow_conformance": "current",
-        "public_working_status": "blocked",
+        "public_working_status": "available",
     },
     "volume-04": {
         "volume": 4,
         "artifact": "issue-0086-public-proposal-v1",
         "units": 1633,
         "workflow_conformance": "current",
-        "public_working_status": "blocked",
+        "public_working_status": "available",
     },
     "issue-0085-volume-05": {
         "scope_kind": "cohort",
@@ -457,14 +486,14 @@ REQUIRED_COMPLETED_SCOPES = {
         "artifact": "issue-0085-public-proposal-v1",
         "units": 1604,
         "workflow_conformance": "current",
-        "public_working_status": "blocked",
+        "public_working_status": "available",
     },
     "volume-05": {
         "volume": 5,
         "artifact": "issue-0085-public-proposal-v1",
         "units": 1604,
         "workflow_conformance": "current",
-        "public_working_status": "blocked",
+        "public_working_status": "available",
     },
     "issue-0091-volume-06": {
         "scope_kind": "cohort",
@@ -472,14 +501,14 @@ REQUIRED_COMPLETED_SCOPES = {
         "artifact": "issue-0091-public-proposal-v1",
         "units": 1722,
         "workflow_conformance": "current",
-        "public_working_status": "blocked",
+        "public_working_status": "available",
     },
     "volume-06": {
         "volume": 6,
         "artifact": "issue-0091-public-proposal-v1",
         "units": 1722,
         "workflow_conformance": "current",
-        "public_working_status": "blocked",
+        "public_working_status": "available",
     },
     VOLUME7_SCOPE_ID: {
         "scope_kind": "cohort",
@@ -487,14 +516,14 @@ REQUIRED_COMPLETED_SCOPES = {
         "artifact": "issue-0096-public-proposal-v1",
         "units": 1940,
         "workflow_conformance": "current",
-        "public_working_status": "blocked",
+        "public_working_status": "available",
     },
     "volume-07": {
         "volume": 7,
         "artifact": "issue-0096-public-proposal-v1",
         "units": 1940,
         "workflow_conformance": "current",
-        "public_working_status": "blocked",
+        "public_working_status": "available",
     },
 }
 REQUIRED_REOPENED_SCOPES = {}
@@ -1099,7 +1128,7 @@ def validate_quarter_completion(
     artifacts: dict[str, dict[str, Any]],
     config: dict[str, Any] | None = None,
 ) -> list[str]:
-    """Bind the completed cohort to its exact, still non-admitted proposal."""
+    """Bind an admitted completed cohort to its exact frozen proposal."""
     config = config or QUARTER_COMPLETIONS[QUARTER_SCOPE_ID]
     prefix = f"translation coverage: {config['label']}"
     artifact = artifacts.get(config["artifact"], {})
@@ -1108,7 +1137,7 @@ def validate_quarter_completion(
     integrity = artifact.get("integrity", {})
     if (
         artifact.get("review_status")
-        != config.get("pendingStatus", QUARTER_PENDING_STATUS)
+        != config.get("reviewStatus", CURRENT_DISTRIBUTION_REVIEW_STATUS)
         or scope.get("canonical_promotion") != "blocked"
         or integrity.get("public_entries") != config["end"] - config["start"] + 1
         or integrity.get("source_ordinal_start") != config["start"]
@@ -1117,7 +1146,7 @@ def validate_quarter_completion(
         or integrity.get("structural_owners") != config["structuralOwners"]
         or any(key.startswith("submitted_") for key in integrity)
     ):
-        return [f"{prefix} scope or pending-admission evidence is incorrect"]
+        return [f"{prefix} scope or distribution-admission evidence is incorrect"]
     proposal_path = config["proposalPath"]
     try:
         proposal = load_json(proposal_path)
@@ -1167,7 +1196,7 @@ def validate_translation_governance(
 ) -> list[str]:
     errors = validate_formula_registry(registry)
     errors.extend(validate_execution_governance())
-    if validate_schema_instance(reference, load_json(ROOT / "schemas/translation-governance-reference.v12.schema.json")):
+    if validate_schema_instance(reference, load_json(ROOT / "schemas/translation-governance-reference.v13.schema.json")):
         errors.append("governance reference: schema validation failed")
     expected_top_level = {
         "schema",
@@ -1182,24 +1211,24 @@ def validate_translation_governance(
         "deprecatedConsumerAuthorities",
     }
     if set(reference) != expected_top_level:
-        errors.append("governance reference: fields do not match the v12 contract")
-    if reference.get("schema") != "al-isabah.translation-governance-reference.v12":
+        errors.append("governance reference: fields do not match the v13 contract")
+    if reference.get("schema") != "al-isabah.translation-governance-reference.v13":
         errors.append("governance reference: unexpected schema")
-    if reference.get("referenceVersion") != "12.0.0":
-        errors.append("governance reference: active discovery requires version 12.0.0")
+    if reference.get("referenceVersion") != "13.0.0":
+        errors.append("governance reference: active discovery requires version 13.0.0")
     if reference.get("supersedes") != {
-        "path": "docs/contracts/translation-governance-reference.v11.json",
-        "referenceVersion": "11.0.0",
-        "sha256": "677a0adbc03da9a2aa510cd086bc7f4d72862b26faa6c56be42bd8049c335263",
+        "path": "docs/contracts/translation-governance-reference.v12.json",
+        "referenceVersion": "12.0.0",
+        "sha256": "895e984c5a623f7262d95c778c1e78b4dab7d0418d794a1e14394573a79fe45e",
     }:
-        errors.append("governance reference: immutable v11 supersession binding is incorrect")
-    if canonical_text_sha256(ROOT / "docs/contracts/translation-governance-reference.v11.json") != reference.get("supersedes", {}).get("sha256"):
-        errors.append("governance reference: immutable v11 reference changed")
+        errors.append("governance reference: immutable v12 supersession binding is incorrect")
+    if canonical_text_sha256(ROOT / "docs/contracts/translation-governance-reference.v12.json") != reference.get("supersedes", {}).get("sha256"):
+        errors.append("governance reference: immutable v12 reference changed")
 
     authority = reference.get("authority")
     expected_authority = {
         "repository": "https://github.com/yaqub0r/al-isabah",
-        "repositoryPath": "docs/contracts/translation-governance-reference.v12.json",
+        "repositoryPath": "docs/contracts/translation-governance-reference.v13.json",
         "requiredPin": "immutable-repository-commit",
     }
     if authority != expected_authority:
@@ -1229,7 +1258,7 @@ def validate_translation_governance(
         artifacts[artifact_id] = artifact
 
     if set(artifacts) != set(REQUIRED_GOVERNANCE_ARTIFACTS):
-        errors.append("governance reference: exact v12 artifact set is required")
+        errors.append("governance reference: exact v13 artifact set is required")
     for artifact_id, (path, status, version) in REQUIRED_GOVERNANCE_ARTIFACTS.items():
         artifact = artifacts.get(artifact_id)
         if artifact is None:
@@ -1388,6 +1417,18 @@ def validate_register(register: dict[str, Any]) -> tuple[list[str], dict[str, di
                 isinstance(value, str) and value.strip() for value in values
             ):
                 errors.append(f"{location}: {field} must be a non-empty string list")
+        if artifact.get("review_status") == CURRENT_DISTRIBUTION_REVIEW_STATUS:
+            admission_language = "\n".join(
+                [str(artifact.get("rights_basis", ""))]
+                + [str(value) for value in artifact.get("prohibited_public_actions", [])]
+            ).casefold()
+            if (
+                "current distribution admission" in admission_language
+                or "admission to the current distribution" in admission_language
+            ):
+                errors.append(
+                    f"{location}: current distribution admission contradicts its restrictions"
+                )
         dependencies = artifact.get("depends_on", [])
         if not isinstance(dependencies, list):
             errors.append(f"{location}: depends_on must be a list")
@@ -1464,7 +1505,7 @@ def _dependency_closure(
     return seen
 
 
-def validate_promotion(
+def _validate_promotion_v2_legacy(
     promotion: dict[str, Any], artifacts: dict[str, dict[str, Any]]
 ) -> list[str]:
     errors: list[str] = []
@@ -1630,6 +1671,134 @@ def validate_promotion(
             "promotion: eligible release depends on non-approved artifacts: "
             + ", ".join(non_public)
         )
+    errors.extend(_walk(promotion, "promotion"))
+    return errors
+
+
+FULL_BOOK_PROPOSAL_IDS = (
+    "issue-0026-public-proposal-v1",
+    "issue-0070-public-proposal-v1",
+    "issue-0080-public-proposal-v1",
+    "issue-0082-public-proposal-v1",
+    "issue-0084-public-proposal-v1",
+    "issue-0086-public-proposal-v1",
+    "issue-0085-public-proposal-v1",
+    "issue-0091-public-proposal-v1",
+    "issue-0096-public-proposal-v1",
+    "issue-0098-public-proposal-v1",
+)
+CANONICAL_PROMOTION_CONTROLS = {
+    "source_binding": "blocked",
+    "provenance_binding": "blocked",
+    "rights_eligibility": "blocked",
+    "substantive_eligibility": "incomplete",
+}
+
+
+def validate_promotion(
+    promotion: dict[str, Any], artifacts: dict[str, dict[str, Any]]
+) -> list[str]:
+    """Validate the explicit Issue 100 split release/promotion decision."""
+    errors: list[str] = []
+    if validate_schema_instance(promotion, load_json(PROMOTION_SCHEMA_PATH)):
+        errors.append("promotion: v3 schema validation failed")
+    expected_bindings = {
+        "schema": "al-isabah.promotion-readiness.v3",
+        "manifest_id": "issue-0100-full-book-public-working-2026-10-13",
+        "issue": "https://github.com/yaqub0r/al-isabah/issues/100",
+        "work_id": "ibn-hajar-al-isabah",
+        "policy_binding": "compliance/policy-binding.v12.json",
+        "source_register": "compliance/source-register.v1.json",
+        "rights_matrix": "compliance/rights-matrix.al-isabah.v1.json",
+        "translation_coverage": "compliance/translation-coverage.v1.json",
+    }
+    for field, expected in expected_bindings.items():
+        if promotion.get(field) != expected:
+            errors.append(f"promotion: {field} binding is incorrect")
+
+    release = promotion.get("public_working_release")
+    if not isinstance(release, dict):
+        errors.append("promotion: public_working_release must be an object")
+        release = {}
+    expected_release_decision = {
+        "status": "approved-controlled-release",
+        "eligible": True,
+        "publication_status": "public-working",
+        "canonical_promotion": "blocked",
+        "source_unit_count": 12303,
+        "volume_count": 8,
+        "release_operation": "manual-dispatch-after-protected-merge",
+        "publication_workflow": "enabled-manual-exact-commit",
+        "automatic_push_publication": False,
+        "immutable_release_required": True,
+    }
+    for field, expected in expected_release_decision.items():
+        if release.get(field) != expected:
+            errors.append(f"promotion: public-working release {field} is incorrect")
+    if release.get("proposal_ids") != list(FULL_BOOK_PROPOSAL_IDS):
+        errors.append("promotion: exact full-book proposal inventory is required")
+    for proposal_id in FULL_BOOK_PROPOSAL_IDS:
+        artifact = artifacts.get(proposal_id)
+        if (
+            artifact is None
+            or artifact.get("classification") != PUBLIC_CLASSIFICATION
+            or artifact.get("review_status")
+            != CURRENT_DISTRIBUTION_REVIEW_STATUS
+        ):
+            errors.append(
+                f"promotion: release proposal is not public-approved: {proposal_id}"
+            )
+
+    release_gates = release.get("gates")
+    if not isinstance(release_gates, dict) or set(release_gates) != WORKING_PUBLICATION_GATES:
+        errors.append("promotion: exact public-working release gates are required")
+        release_gates = {}
+    for gate in WORKING_PUBLICATION_GATES:
+        if release_gates.get(gate) != "passed":
+            errors.append(f"promotion: public-working release gate {gate} must pass")
+
+    canonical = promotion.get("canonical_promotion")
+    if not isinstance(canonical, dict):
+        errors.append("promotion: canonical_promotion must be an object")
+        canonical = {}
+    if canonical.get("status") != "blocked":
+        errors.append("promotion: canonical promotion must remain blocked")
+    if canonical.get("human_review_effect") != "none":
+        errors.append("promotion: human review cannot be a canonical-promotion gate")
+    controls = canonical.get("controls")
+    if controls != CANONICAL_PROMOTION_CONTROLS:
+        errors.append("promotion: exact canonical-promotion controls are required")
+    blockers = canonical.get("blockers")
+    blocker_controls = {
+        item.get("control")
+        for item in blockers
+        if isinstance(item, dict)
+    } if isinstance(blockers, list) else set()
+    if blocker_controls != set(CANONICAL_PROMOTION_CONTROLS):
+        errors.append(
+            "promotion: every non-passing canonical promotion control needs its own blocker"
+        )
+
+    expected_human_review = {
+        "management_state": "ongoing-nonterminal",
+        "evidence_mode": "append-only",
+        "coverage_record": "compliance/translation-coverage.v1.json",
+        "reviewed_units": 0,
+        "unreviewed_units": 12303,
+        "eligibility_effect": "none",
+        "release_class_effect": "none",
+        "terminal_completion_claim": False,
+    }
+    if promotion.get("human_review") != expected_human_review:
+        errors.append("promotion: complete non-gating human-review disclosure is required")
+    expected_supersedes = {
+        "path": "compliance/promotions/available-data.v2.json",
+        "sha256": canonical_text_sha256(
+            ROOT / "compliance" / "promotions" / "available-data.v2.json"
+        ),
+    }
+    if promotion.get("supersedes") != expected_supersedes:
+        errors.append("promotion: immutable v2 predecessor binding is incorrect")
     errors.extend(_walk(promotion, "promotion"))
     return errors
 
@@ -1838,9 +2007,11 @@ def main(argv: list[str] | None = None) -> int:
         for error in errors:
             print(error, file=sys.stderr)
         return 1
+    release_status = promotion.get("public_working_release", {}).get("status")
+    canonical_status = promotion.get("canonical_promotion", {}).get("status")
     print(
-        "Compliance records are internally consistent; promotion status: "
-        f"{promotion.get('status')}."
+        "Compliance records are internally consistent; public-working release "
+        f"status: {release_status}; canonical promotion: {canonical_status}."
     )
     return 0
 
