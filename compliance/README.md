@@ -28,8 +28,10 @@ resolves outside the repository, or names another repository as its authority.
 - [`source-register.v1.json`](source-register.v1.json) classifies source and
   derived-data classes without publishing restricted expression, private
   storage locations, or access credentials.
-- [`promotions/available-data.v2.json`](promotions/available-data.v2.json)
-  evaluates the presently available Volume 8 and Khadijah data for promotion.
+- [`promotions/available-data.v3.json`](promotions/available-data.v3.json)
+  records the explicit Issue #100 controlled public-working release decision
+  separately from the still-blocked canonical-promotion decision. Version 2 is
+  retained as immutable historical evaluation evidence.
 - [`translation-coverage.v1.json`](translation-coverage.v1.json) reports whether
   each locked volume or cohort is agent-complete while keeping human-review,
   current-policy, public-working, and canonical-promotion states independent.
@@ -42,14 +44,15 @@ resolves outside the repository, or names another repository as its authority.
 
 ## Current result
 
-Public working display and canonical promotion now have separate decisions.
-An application may anonymously serve `al-isabah-public-openiti-5835c18-v1` because all
-1,565 legacy book entries are rebuilt against the pinned licensed OpenITI
-authority, attributed under CC BY-NC-SA 4.0, and stripped of private apparatus
-and locators. The 1,496 translations that pass the public-output and Arabic-form
-honorific checks retain English; the other 69 entries remain public in approved
-Arabic while their legacy English is withheld. The 14 legacy contextual
-passages are not book entries and remain named in the corpus quarantine ledger.
+Public-working distribution and canonical promotion have separate decisions.
+The Issue #100 closure admits exactly 12,303 ordered source units across Volumes
+1–8 from ten strict proposal/review pairs. It binds 1,382 owned structural
+segments, 23 inherited display contexts, eight cumulative volume outputs, and
+explicit front/terminal completeness. All 12,303 records remain
+human-unreviewed; that state is disclosed but is not itself a publication or
+promotion blocker. The distribution uses the pinned licensed OpenITI authority,
+required CC BY-NC-SA 4.0 attribution, and a public boundary that excludes
+private apparatus and operational locators.
 
 Canonical promotion into this repository remains blocked by concrete source,
 rights, provenance, and substantive conditions. In particular:
@@ -75,13 +78,14 @@ carried forward and every applicable repository gate passes. Human scholarly
 review remains append-only, ongoing, nonterminal metadata; zero or incomplete
 coverage is disclosed and never blocks publication or promotion by itself.
 
-The release-bound v1 promotion record, v1 source register, v1/v2 policy
-bindings, and publication closures retain their historical wording and hashes.
-They are immutable evidence, not the active interpretation contract. New
-consumers pin the v6 governance reference and v2 promotion-readiness record.
-The current closure keeps its last preserved and validated source-register and
-coverage snapshot; later blocked cohort entries are validated in the live
-ledgers without rewriting that closure.
+The release-bound v1 promotion record, v2 candidate evaluation, prior
+source-register snapshots, policy bindings, and earlier publication closures
+retain their historical wording and hashes. They are immutable evidence, not
+the active Issue #100 decision. New consumers pin governance reference v13 at
+an immutable repository commit and verify both
+`promotions/available-data.v3.json` and
+`publication/issue-0100.release-closure.v1.json`. The superseded Issue #53
+proposal and legacy private 1,550-record Volume 8 corpus remain excluded.
 
 ## Public content license and boundary
 

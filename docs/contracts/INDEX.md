@@ -31,17 +31,20 @@ coverage is an independent, ongoing management state.
 
 ## Local supporting controls
 
-- [`translation-governance-reference.v12.json`](translation-governance-reference.v12.json)
+- [`translation-governance-reference.v13.json`](translation-governance-reference.v13.json)
   is the versioned, integrity-bound discovery document for downstream
-  consumers. The companion [compatibility guide](downstream-consumer-compatibility.md)
+  consumers. It binds the Issue #100 full-book release closure without changing
+  semantic policy. The companion [compatibility guide](downstream-consumer-compatibility.md)
   defines pinning, release semantics, and the Sabiqah deprecation inventory.
 - [`profiles/honorific-formulas.v1.json`](../../profiles/honorific-formulas.v1.json)
   is the machine-readable Al-Isabah formula registry implemented by the local
   translation workflow.
 - [`compliance/source-register.v1.json`](../../compliance/source-register.v1.json)
   classifies authorities and witnesses and records publication eligibility.
-- [`compliance/promotions/available-data.v2.json`](../../compliance/promotions/available-data.v2.json)
-  records current public-working and canonical-promotion readiness.
+- [`compliance/promotions/available-data.v3.json`](../../compliance/promotions/available-data.v3.json)
+  records the active controlled public-working release decision separately
+  from canonical-promotion readiness. Version 2 remains immutable historical
+  candidate-evaluation evidence.
 - [`compliance/translation-coverage.v1.json`](../../compliance/translation-coverage.v1.json)
   records aggregate agent completion separately from human-review coverage and
   promotion state.

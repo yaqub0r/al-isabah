@@ -1,7 +1,7 @@
 {
   "schema": "al-isabah.source-compliance-register.v1",
   "work_id": "ibn-hajar-al-isabah",
-  "assessed_at": "2026-09-28",
+  "assessed_at": "2026-10-13",
   "policy_binding": "compliance/policy-binding.v1.json",
   "classification_definitions": {
     "approved-for-publication": "An affirmative public reuse basis has been verified for this exact artifact and intended use.",
@@ -465,7 +465,7 @@
       "kind": "public-working-bilingual-proposal",
       "title": "Issue 0080 Volume 3 first-quarter strict public proposal",
       "classification": "approved-for-publication",
-      "rights_basis": "Strict allowlisted projection of the newly machine-ready first quarter, source ordinals3035–3407. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, formulas, structural hierarchy and public uncertainty disclosures. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is not evidence of external submission or admission to the current distribution.",
+      "rights_basis": "Strict allowlisted projection of the newly machine-ready first quarter, source ordinals3035–3407. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, formulas, structural hierarchy and public uncertainty disclosures. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is admitted to the current public-working distribution; it is not evidence of external evidence submission, canonical promotion, human approval or release.",
       "license": {
         "spdx": "CC-BY-NC-SA-4.0",
         "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
@@ -495,18 +495,18 @@
         "report the exact cohort completion independently of ongoing human review"
       ],
       "prohibited_public_actions": [
-        "claim external evidence submission, current distribution admission, canonical promotion, human approval or release",
+        "claim external evidence submission, canonical promotion, human approval or release",
         "publish private evidence, detailed findings, witness expression, model traces, source coordinates or operational paths",
         "treat this cohort as completion of the whole third volume"
       ],
-      "review_status": "machine-ready-quarter-proposal-pending-submission-and-distribution-admission"
+      "review_status": "approved-current-public-working-distribution-canonical-promotion-blocked"
     },
     {
       "id": "issue-0082-public-proposal-v1",
       "kind": "public-working-bilingual-proposal",
       "title": "Issue 0082 Volume 3 second-quarter strict public proposal",
       "classification": "approved-for-publication",
-      "rights_basis": "Strict allowlisted projection of the newly machine-ready second quarter, source ordinals 3408–3780. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, formulas, structural hierarchy and public uncertainty disclosures. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is not evidence of external submission or admission to the current distribution.",
+      "rights_basis": "Strict allowlisted projection of the newly machine-ready second quarter, source ordinals 3408–3780. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, formulas, structural hierarchy and public uncertainty disclosures. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is admitted to the current public-working distribution; it is not evidence of external evidence submission, canonical promotion, human approval or release.",
       "license": {
         "spdx": "CC-BY-NC-SA-4.0",
         "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
@@ -536,18 +536,18 @@
         "report the exact cohort completion independently of ongoing human review"
       ],
       "prohibited_public_actions": [
-        "claim external evidence submission, current distribution admission, canonical promotion, human approval or release",
+        "claim external evidence submission, canonical promotion, human approval or release",
         "publish private evidence, detailed findings, witness expression, model traces, source coordinates or operational paths",
         "treat this cohort as completion of the whole third volume"
       ],
-      "review_status": "machine-ready-quarter-proposal-pending-submission-and-distribution-admission"
+      "review_status": "approved-current-public-working-distribution-canonical-promotion-blocked"
     },
     {
       "id": "issue-0084-public-proposal-v1",
       "kind": "public-working-bilingual-proposal",
       "title": "Issue 0084 Volume 3 final-half strict public proposal",
       "classification": "approved-for-publication",
-      "rights_basis": "Strict allowlisted projection of the newly machine-ready final half, source ordinals 3781–4525. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, formulas, structural hierarchy and public uncertainty disclosures. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal completes the 1,491-biography Volume 3 aggregate when combined with the exact Issue 80 and Issue 82 cohorts; it is not evidence of external submission or admission to the current distribution.",
+      "rights_basis": "Strict allowlisted projection of the newly machine-ready final half, source ordinals 3781–4525. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, formulas, structural hierarchy and public uncertainty disclosures. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal completes the 1,491-biography Volume 3 aggregate when combined with the exact Issue 80 and Issue 82 cohorts and is admitted to the current public-working distribution; it is not evidence of external evidence submission, canonical promotion, human approval or release.",
       "license": {
         "spdx": "CC-BY-NC-SA-4.0",
         "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
@@ -577,18 +577,18 @@
         "report final-half completion and whole-volume completion only with the exact Issue 80 and Issue 82 cohort bindings"
       ],
       "prohibited_public_actions": [
-        "claim external evidence submission, current distribution admission, canonical promotion, human approval or release",
+        "claim external evidence submission, canonical promotion, human approval or release",
         "publish private evidence, detailed findings, witness expression, model traces, source coordinates or operational paths",
         "treat this cohort alone as evidence for the preceding Issue 80 and Issue 82 ranges"
       ],
-      "review_status": "machine-ready-quarter-proposal-pending-submission-and-distribution-admission"
+      "review_status": "approved-current-public-working-distribution-canonical-promotion-blocked"
     },
     {
       "id": "issue-0086-public-proposal-v1",
       "kind": "public-working-bilingual-proposal",
       "title": "Issue 0086 Volume 4 strict public proposal",
       "classification": "approved-for-publication",
-      "rights_basis": "Strict allowlisted projection of the newly machine-ready full Volume 4, source ordinals 4526–6158 and 1,633 biographies. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, formulas, structural hierarchy and public uncertainty disclosures. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is not evidence of external submission or admission to the current distribution.",
+      "rights_basis": "Strict allowlisted projection of the newly machine-ready full Volume 4, source ordinals 4526–6158 and 1,633 biographies. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, formulas, structural hierarchy and public uncertainty disclosures. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is admitted to the current public-working distribution; it is not evidence of external evidence submission, canonical promotion, human approval or release.",
       "license": {
         "spdx": "CC-BY-NC-SA-4.0",
         "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
@@ -618,18 +618,18 @@
         "report full Volume 4 agent completion independently of ongoing human review"
       ],
       "prohibited_public_actions": [
-        "claim external evidence submission, current distribution admission, canonical promotion, human approval or release",
+        "claim external evidence submission, canonical promotion, human approval or release",
         "publish private evidence, detailed findings, witness expression, model traces, source coordinates or operational paths",
         "treat this local proposal as a published release"
       ],
-      "review_status": "machine-ready-volume-proposal-pending-submission-and-distribution-admission"
+      "review_status": "approved-current-public-working-distribution-canonical-promotion-blocked"
     },
     {
       "id": "issue-0085-public-proposal-v1",
       "kind": "public-working-bilingual-proposal",
       "title": "Issue 0085 Volume 5 strict public proposal",
       "classification": "approved-for-publication",
-      "rights_basis": "Strict allowlisted projection of the newly machine-ready full Volume 5, source ordinals 6159–7762 and 1,604 biographies. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, formulas, structural hierarchy and public uncertainty disclosures. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is not evidence of external submission or admission to the current distribution.",
+      "rights_basis": "Strict allowlisted projection of the newly machine-ready full Volume 5, source ordinals 6159–7762 and 1,604 biographies. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, formulas, structural hierarchy and public uncertainty disclosures. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is admitted to the current public-working distribution; it is not evidence of external evidence submission, canonical promotion, human approval or release.",
       "license": {
         "spdx": "CC-BY-NC-SA-4.0",
         "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
@@ -659,18 +659,18 @@
         "report full Volume 5 agent completion independently of ongoing human review"
       ],
       "prohibited_public_actions": [
-        "claim external evidence submission, current distribution admission, canonical promotion, human approval or release",
+        "claim external evidence submission, canonical promotion, human approval or release",
         "publish private evidence, detailed findings, witness expression, model traces, source coordinates or operational paths",
         "treat this local proposal as a published release"
       ],
-      "review_status": "machine-ready-volume-proposal-pending-submission-and-distribution-admission"
+      "review_status": "approved-current-public-working-distribution-canonical-promotion-blocked"
     },
     {
       "id": "issue-0091-public-proposal-v1",
       "kind": "public-working-bilingual-proposal",
       "title": "Issue 0091 Volume 6 strict public proposal",
       "classification": "approved-for-publication",
-      "rights_basis": "Strict allowlisted projection of the newly machine-ready Volume 6 assignment range, source ordinals 7763–9484 and 1,722 biographies. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, formulas, structural hierarchy and public uncertainty disclosures. Ordinal 9484 remains one cross-volume entry with its four preceding terminal structural segments distinct. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is not evidence of external submission or admission to the current distribution.",
+      "rights_basis": "Strict allowlisted projection of the newly machine-ready Volume 6 assignment range, source ordinals 7763–9484 and 1,722 biographies. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, formulas, structural hierarchy and public uncertainty disclosures. Ordinal 9484 remains one cross-volume entry with its four preceding terminal structural segments distinct. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is admitted to the current public-working distribution; it is not evidence of external evidence submission, canonical promotion, human approval or release.",
       "license": {
         "spdx": "CC-BY-NC-SA-4.0",
         "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
@@ -700,18 +700,18 @@
         "report full Volume 6 agent completion independently of ongoing human review"
       ],
       "prohibited_public_actions": [
-        "claim external evidence submission, current distribution admission, canonical promotion, human approval or release",
+        "claim external evidence submission, canonical promotion, human approval or release",
         "publish private evidence, detailed findings, witness expression, model traces, source coordinates or operational paths",
         "treat this local proposal as a published release"
       ],
-      "review_status": "machine-ready-volume-proposal-pending-submission-and-distribution-admission"
+      "review_status": "approved-current-public-working-distribution-canonical-promotion-blocked"
     },
     {
       "id": "issue-0096-public-proposal-v1",
       "kind": "public-working-bilingual-proposal",
       "title": "Issue 0096 Volume 7 strict public proposal",
       "classification": "approved-for-publication",
-      "rights_basis": "Strict allowlisted projection of the newly machine-ready Volume 7 assignment range, source ordinals 9485–11424 and 1,940 biographies. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, exact governed formulas, structural hierarchy and public uncertainty disclosures. The slice explicitly inherits its active structural context from the validated Issue 91 proposal while owning 201 new structural segments across 134 records. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is not evidence of external submission or admission to the current distribution.",
+      "rights_basis": "Strict allowlisted projection of the newly machine-ready Volume 7 assignment range, source ordinals 9485–11424 and 1,940 biographies. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, exact governed formulas, structural hierarchy and public uncertainty disclosures. The slice explicitly inherits its active structural context from the validated Issue 91 proposal while owning 201 new structural segments across 134 records. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is admitted to the current public-working distribution; it is not evidence of external evidence submission, canonical promotion, human approval or release.",
       "license": {
         "spdx": "CC-BY-NC-SA-4.0",
         "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
@@ -741,18 +741,18 @@
         "report full Volume 7 agent completion independently of ongoing human review"
       ],
       "prohibited_public_actions": [
-        "claim external evidence submission, current distribution admission, canonical promotion, human approval or release",
+        "claim external evidence submission, canonical promotion, human approval or release",
         "publish private evidence, detailed findings, witness expression, model traces, source coordinates or operational paths",
         "treat this local proposal as a published release"
       ],
-      "review_status": "machine-ready-volume-proposal-pending-submission-and-distribution-admission"
+      "review_status": "approved-current-public-working-distribution-canonical-promotion-blocked"
     },
     {
       "id": "issue-0098-public-proposal-v1",
       "kind": "public-working-bilingual-proposal",
       "title": "Issue 0098 Volume 8 strict public proposal",
       "classification": "approved-for-publication",
-      "rights_basis": "Strict allowlisted projection of the newly machine-ready Volume 8 assignment range, source ordinals 11425–12303 and 879 biographies. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, exact governed formulas, structural hierarchy and public uncertainty disclosures. The slice explicitly inherits its active structural context from the validated Issue 96 proposal while owning 139 new structural segments across 80 records. It supersedes the legacy Volume 8 private translation inventory for completion reporting; the two counts are not additive. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is not evidence of external submission or admission to the current distribution.",
+      "rights_basis": "Strict allowlisted projection of the newly machine-ready Volume 8 assignment range, source ordinals 11425–12303 and 879 biographies. It uses the approved pinned OpenITI Arabic authority and independently authored project English, retaining bilingual titles, names, exact governed formulas, structural hierarchy and public uncertainty disclosures. The slice explicitly inherits its active structural context from the validated Issue 96 proposal while owning 139 new structural segments across 80 records. It supersedes the legacy Volume 8 private translation inventory for completion reporting; the two counts are not additive. Private packets, source coordinates, detailed findings, restricted witness expression and execution records are excluded. This reviewable proposal is admitted to the current public-working distribution; it is not evidence of external evidence submission, canonical promotion, human approval or release.",
       "license": {
         "spdx": "CC-BY-NC-SA-4.0",
         "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
@@ -782,11 +782,11 @@
         "report full Volume 8 agent completion independently of ongoing human review"
       ],
       "prohibited_public_actions": [
-        "claim external evidence submission, current distribution admission, canonical promotion, human approval or release",
+        "claim external evidence submission, canonical promotion, human approval or release",
         "publish private evidence, detailed findings, witness expression, model traces, source coordinates or operational paths",
         "treat this local proposal as a published release"
       ],
-      "review_status": "machine-ready-volume-proposal-pending-submission-and-distribution-admission"
+      "review_status": "approved-current-public-working-distribution-canonical-promotion-blocked"
     }
   ]
 }

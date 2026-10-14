@@ -67,7 +67,7 @@ class VolumeThreeQuarterDeliveryTests(unittest.TestCase):
         ):
             self.assertEqual(scope["human_review"], {
                 "management_state": "ongoing", "reviewed_units": 0, "unreviewed_units": count})
-            self.assertEqual(scope["public_working_status"], "blocked")
+            self.assertEqual(scope["public_working_status"], "available")
             self.assertEqual(scope["canonical_promotion"], "blocked")
         # Coverage semantics retain their historical v2 envelope; Issues 80,
         # 82, and 84 retain their exact v5/v6/v7 bindings after v8 becomes active.
@@ -247,32 +247,57 @@ class VolumeThreeQuarterDeliveryTests(unittest.TestCase):
                     )
                 )
 
-    def test_no_submission_or_distribution_admission_is_claimed(self):
+    def test_issue_100_distribution_admission_preserves_slice_evidence(self):
         artifact = self.artifacts["issue-0080-public-proposal-v1"]
-        self.assertEqual(artifact["review_status"], compliance.QUARTER_PENDING_STATUS)
+        self.assertEqual(
+            artifact["review_status"],
+            closure.CURRENT_DISTRIBUTION_REVIEW_STATUS,
+        )
         self.assertFalse(any(key.startswith("submitted_") for key in artifact["integrity"]))
         paths, errors = closure.current_proposal_paths()
         self.assertEqual(errors, [])
-        self.assertEqual([p.name for p in paths], [
-            "issue-0026.public-proposal.json", "issue-0070.public-proposal.json"])
+        self.assertEqual(
+            [p.name for p in paths],
+            [
+                "issue-0026.public-proposal.json",
+                "issue-0070.public-proposal.json",
+                "issue-0080.public-proposal.json",
+                "issue-0082.public-proposal.json",
+                "issue-0084.public-proposal.json",
+                "issue-0086.public-proposal.json",
+                "issue-0085.public-proposal.json",
+                "issue-0091.public-proposal.json",
+                "issue-0096.public-proposal.json",
+                "issue-0098.public-proposal.json",
+            ],
+        )
         current = compliance.load_json(closure.CURRENT_CLOSURE)
-        self.assertEqual(current["closureId"], "issue-0070-current-public-working-closure-v1")
-        self.assertNotIn("issue-0080-public-proposal-v1", [p["proposalId"] for p in current["proposals"]])
-        self.assertNotIn("issue-0082-public-proposal-v1", [p["proposalId"] for p in current["proposals"]])
-        self.assertNotIn("issue-0084-public-proposal-v1", [p["proposalId"] for p in current["proposals"]])
-        self.assertFalse(any("volume-03" in item["path"] for item in current["outputInventory"]))
+        self.assertEqual(current["closureId"], "issue-0100-full-book-public-working-closure-v1")
+        proposal_ids = [item["proposalId"] for item in current["proposals"]]
+        self.assertIn("issue-0080-public-proposal-v1", proposal_ids)
+        self.assertIn("issue-0082-public-proposal-v1", proposal_ids)
+        self.assertIn("issue-0084-public-proposal-v1", proposal_ids)
+        volume_three = next(item for item in current["volumeInventory"] if item["volume"] == 3)
+        self.assertEqual(volume_three["recordCount"], 1491)
+        self.assertEqual(
+            volume_three["proposalIds"],
+            [
+                "issue-0080-public-proposal-v1",
+                "issue-0082-public-proposal-v1",
+                "issue-0084-public-proposal-v1",
+            ],
+        )
         self.assertFalse((ROOT / "compliance/publication/issue-0080.release-closure.v1.json").exists())
         self.assertFalse((ROOT / "compliance/publication/issue-0082.release-closure.v1.json").exists())
         self.assertFalse((ROOT / "compliance/publication/issue-0084.release-closure.v1.json").exists())
         artifacts = copy.deepcopy(self.artifacts)
-        artifacts["issue-0080-public-proposal-v1"]["review_status"] = closure.CURRENT_DISTRIBUTION_REVIEW_STATUS
+        artifacts["issue-0080-public-proposal-v1"]["review_status"] = "publication-ready-pending-current-public-working-admission"
         self.assertTrue(compliance.validate_translation_coverage(self.coverage, artifacts))
 
-    def test_current_ready_cohort_cannot_be_silently_admitted(self):
+    def test_admitted_cohort_cannot_be_silently_reverted(self):
         coverage = copy.deepcopy(self.coverage)
-        self.scope(coverage)["public_working_status"] = "available"
+        self.scope(coverage)["public_working_status"] = "blocked"
         register = copy.deepcopy(self.register)
-        next(a for a in register["artifacts"] if a["id"] == "issue-0080-public-proposal-v1")["review_status"] = closure.CURRENT_DISTRIBUTION_REVIEW_STATUS
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             coverage_path, register_path = root / "coverage.json", root / "register.json"
@@ -285,19 +310,11 @@ class VolumeThreeQuarterDeliveryTests(unittest.TestCase):
     def test_current_closure_metadata_drift_is_rejected(self):
         current = compliance.load_json(closure.CURRENT_CLOSURE)
         self.assertEqual(
-            current["sourceRegister"], closure.CURRENT_CLOSURE_SOURCE_REGISTER
+            current["sourceRegister"], closure.file_binding(closure.REGISTER)
         )
         self.assertEqual(
             current["translationCoverage"],
-            closure.CURRENT_CLOSURE_TRANSLATION_COVERAGE,
-        )
-        self.assertNotEqual(
-            current["sourceRegister"]["sha256"],
-            compliance.canonical_text_sha256(compliance.REGISTER_PATH),
-        )
-        self.assertNotEqual(
-            current["translationCoverage"]["sha256"],
-            compliance.canonical_text_sha256(compliance.COVERAGE_PATH),
+            closure.file_binding(closure.COVERAGE),
         )
         current["translationCoverage"]["sha256"] = "0" * 64
         with tempfile.TemporaryDirectory() as directory:

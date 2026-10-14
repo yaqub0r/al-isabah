@@ -67,6 +67,24 @@ class ComplianceTests(unittest.TestCase):
     def test_current_blocked_manifest_is_valid(self):
         self.assertEqual(self.validate(), [])
 
+    def test_current_distribution_admission_cannot_remain_prohibited(self):
+        register = copy.deepcopy(self.register)
+        artifact = next(
+            item
+            for item in register["artifacts"]
+            if item.get("review_status") == MODULE.CURRENT_DISTRIBUTION_REVIEW_STATUS
+        )
+        artifact["prohibited_public_actions"].append(
+            "claim current distribution admission"
+        )
+        errors, _ = MODULE.validate_register(register)
+        self.assertTrue(
+            any(
+                "current distribution admission contradicts its restrictions" in error
+                for error in errors
+            )
+        )
+
     def test_strict_proposal_cache_is_bound_to_dependency_state(self):
         scope = next(
             item
@@ -107,38 +125,30 @@ class ComplianceTests(unittest.TestCase):
 
         self.assertEqual(strict_validate.call_count, 2)
 
-    def test_eligible_claim_rejects_non_public_dependency(self):
-        promotion = copy.deepcopy(self.promotion)
-        promotion["status"] = "eligible"
-        promotion["public_release_eligible"] = True
-        promotion["blockers"] = []
-        promotion["eligibility_controls"] = {
-            control: "passed" for control in MODULE.REQUIRED_ELIGIBILITY_CONTROLS
-        }
-        errors = self.validate(promotion=promotion)
+    def test_controlled_release_rejects_non_public_proposal(self):
+        register = copy.deepcopy(self.register)
+        artifact = next(
+            item
+            for item in register["artifacts"]
+            if item["id"] == MODULE.FULL_BOOK_PROPOSAL_IDS[0]
+        )
+        artifact["classification"] = "reference-only"
+        errors = self.validate(register=register)
         self.assertTrue(
-            any("depends on non-approved artifacts" in error for error in errors),
+            any("release proposal is not public-approved" in error for error in errors),
             errors,
         )
 
-    def test_eligible_claim_allows_zero_human_reviews(self):
-        register = copy.deepcopy(self.register)
-        for artifact in register["artifacts"]:
-            artifact["classification"] = "approved-for-publication"
-        promotion = copy.deepcopy(self.promotion)
-        promotion["status"] = "eligible"
-        promotion["public_release_eligible"] = True
-        promotion["blockers"] = []
-        promotion["eligibility_controls"] = {
-            control: "passed" for control in MODULE.REQUIRED_ELIGIBILITY_CONTROLS
-        }
+    def test_controlled_release_allows_zero_human_reviews(self):
         self.assertTrue(
             all(
                 scope["human_review"]["reviewed_units"] == 0
                 for scope in self.translation_coverage["scopes"]
             )
         )
-        self.assertEqual(self.validate(register=register, promotion=promotion), [])
+        self.assertEqual(self.promotion["human_review"]["reviewed_units"], 0)
+        self.assertEqual(self.promotion["human_review"]["unreviewed_units"], 12303)
+        self.assertEqual(self.validate(), [])
 
     def test_missing_human_review_disclosure_fails(self):
         promotion = copy.deepcopy(self.promotion)
@@ -477,7 +487,7 @@ class ComplianceTests(unittest.TestCase):
                 completion["evidence"]["source_register_artifact"],
                 "issue-0086-public-proposal-v1",
             )
-            self.assertEqual(scope["public_working_status"], "blocked")
+            self.assertEqual(scope["public_working_status"], "available")
             self.assertEqual(scope["canonical_promotion"], "blocked")
             self.assertEqual(scope["human_review"]["unreviewed_units"], 1633)
         self.assertIn("not additive", cohort["agent_completion"]["basis"])
@@ -499,7 +509,7 @@ class ComplianceTests(unittest.TestCase):
                 completion["evidence"]["source_register_artifact"],
                 "issue-0085-public-proposal-v1",
             )
-            self.assertEqual(scope["public_working_status"], "blocked")
+            self.assertEqual(scope["public_working_status"], "available")
             self.assertEqual(scope["canonical_promotion"], "blocked")
             self.assertEqual(scope["human_review"]["unreviewed_units"], 1604)
         self.assertIn("not additive", cohort["agent_completion"]["basis"])
@@ -521,7 +531,7 @@ class ComplianceTests(unittest.TestCase):
                 completion["evidence"]["source_register_artifact"],
                 "issue-0091-public-proposal-v1",
             )
-            self.assertEqual(scope["public_working_status"], "blocked")
+            self.assertEqual(scope["public_working_status"], "available")
             self.assertEqual(scope["canonical_promotion"], "blocked")
             self.assertEqual(scope["human_review"]["unreviewed_units"], 1722)
         self.assertIn("not additive", cohort["agent_completion"]["basis"])
@@ -543,7 +553,7 @@ class ComplianceTests(unittest.TestCase):
                 completion["evidence"]["source_register_artifact"],
                 "issue-0096-public-proposal-v1",
             )
-            self.assertEqual(scope["public_working_status"], "blocked")
+            self.assertEqual(scope["public_working_status"], "available")
             self.assertEqual(scope["canonical_promotion"], "blocked")
             self.assertEqual(scope["human_review"]["unreviewed_units"], 1940)
         self.assertIn("not additive", cohort["agent_completion"]["basis"])
@@ -565,7 +575,7 @@ class ComplianceTests(unittest.TestCase):
                 completion["evidence"]["source_register_artifact"],
                 "issue-0098-public-proposal-v1",
             )
-            self.assertEqual(scope["public_working_status"], "blocked")
+            self.assertEqual(scope["public_working_status"], "available")
             self.assertEqual(scope["canonical_promotion"], "blocked")
             self.assertEqual(scope["human_review"]["unreviewed_units"], 879)
             self.assertIn("supersede", completion["basis"])
@@ -640,84 +650,66 @@ class ComplianceTests(unittest.TestCase):
             )
         )
 
-    def test_eligible_claim_requires_substantive_controls(self):
-        register = copy.deepcopy(self.register)
-        for artifact in register["artifacts"]:
-            artifact["classification"] = "approved-for-publication"
+    def test_controlled_release_requires_every_public_working_gate(self):
         promotion = copy.deepcopy(self.promotion)
-        promotion["status"] = "eligible"
-        promotion["public_release_eligible"] = True
-        promotion["blockers"] = []
-        errors = self.validate(register=register, promotion=promotion)
+        promotion["public_working_release"]["gates"]["deterministic_validation"] = (
+            "incomplete"
+        )
+        errors = self.validate(promotion=promotion)
         self.assertIn(
-            "promotion: eligible release requires every substantive control to pass",
+            "promotion: public-working release gate deterministic_validation must pass",
             errors,
         )
 
     def test_source_rights_provenance_and_substantive_blockers_fail_closed(self):
-        register = copy.deepcopy(self.register)
-        for artifact in register["artifacts"]:
-            artifact["classification"] = "approved-for-publication"
-        for control in (
-            "source_binding",
-            "rights_eligibility",
-            "provenance_binding",
-            "substantive_eligibility",
-        ):
+        for control in MODULE.CANONICAL_PROMOTION_CONTROLS:
             with self.subTest(control=control):
                 promotion = copy.deepcopy(self.promotion)
-                promotion["status"] = "eligible"
-                promotion["public_release_eligible"] = True
-                promotion["blockers"] = []
-                promotion["eligibility_controls"] = {
-                    name: "passed"
-                    for name in MODULE.REQUIRED_ELIGIBILITY_CONTROLS
-                }
-                promotion["eligibility_controls"][control] = "blocked"
-                errors = self.validate(register=register, promotion=promotion)
+                promotion["canonical_promotion"]["blockers"] = [
+                    item
+                    for item in promotion["canonical_promotion"]["blockers"]
+                    if item["control"] != control
+                ]
+                errors = self.validate(promotion=promotion)
                 self.assertIn(
-                    "promotion: eligible release requires every substantive control to pass",
+                    "promotion: every non-passing canonical promotion control needs its own blocker",
                     errors,
                 )
 
-    def test_fully_attested_eligible_claim_passes(self):
-        register = copy.deepcopy(self.register)
-        for artifact in register["artifacts"]:
-            artifact["classification"] = "approved-for-publication"
+    def test_issue_100_manifest_cannot_claim_canonical_promotion(self):
         promotion = copy.deepcopy(self.promotion)
-        promotion["status"] = "eligible"
-        promotion["public_release_eligible"] = True
-        promotion["blockers"] = []
-        promotion["eligibility_controls"] = {
-            control: "passed" for control in MODULE.REQUIRED_ELIGIBILITY_CONTROLS
-        }
-        self.assertEqual(self.validate(register=register, promotion=promotion), [])
+        promotion["canonical_promotion"]["status"] = "eligible"
+        self.assertIn(
+            "promotion: canonical promotion must remain blocked",
+            self.validate(promotion=promotion),
+        )
 
-    def test_public_output_cannot_pass_before_source_authority(self):
+    def test_public_working_source_gate_fails_closed(self):
         promotion = copy.deepcopy(self.promotion)
-        promotion["eligibility_controls"]["public_output_boundary"] = "passed"
+        promotion["public_working_release"]["gates"]["source_binding"] = "blocked"
         errors = self.validate(promotion=promotion)
         self.assertIn(
-            "promotion: public output cannot pass before source binding",
+            "promotion: public-working release gate source_binding must pass",
             errors,
         )
 
     def test_public_working_display_requires_all_public_gates(self):
         promotion = copy.deepcopy(self.promotion)
-        promotion["working_publication"]["gates"]["honorific_preservation"] = (
+        promotion["public_working_release"]["gates"]["honorific_preservation"] = (
             "incomplete"
         )
         errors = self.validate(promotion=promotion)
         self.assertIn(
-            "promotion: public working gate honorific_preservation must pass", errors
+            "promotion: public-working release gate honorific_preservation must pass",
+            errors,
         )
 
-    def test_public_working_counts_must_match_registered_artifact(self):
+    def test_public_working_counts_must_match_full_book_scope(self):
         promotion = copy.deepcopy(self.promotion)
-        promotion["working_publication"]["public_entries"] += 1
+        promotion["public_working_release"]["source_unit_count"] += 1
         errors = self.validate(promotion=promotion)
         self.assertIn(
-            "promotion: working public count differs from its register", errors
+            "promotion: public-working release source_unit_count is incorrect", errors
         )
 
     def test_public_working_translation_counts_must_cover_public_entries(self):
@@ -753,25 +745,26 @@ class ComplianceTests(unittest.TestCase):
         artifact = next(
             item
             for item in register["artifacts"]
-            if item["id"] == MODULE.PUBLIC_CORPUS_ID
+            if item["id"] == MODULE.FULL_BOOK_PROPOSAL_IDS[0]
         )
         artifact["classification"] = "unresolved"
         errors = self.validate(register=register)
         self.assertIn(
-            "promotion: working publication artifact is not public-approved", errors
+            f"promotion: release proposal is not public-approved: {artifact['id']}",
+            errors,
         )
 
-    def test_unknown_dependency_fails(self):
+    def test_unknown_release_proposal_fails(self):
         promotion = copy.deepcopy(self.promotion)
-        promotion["candidate_revisions"][0]["dependencies"].append("not-registered")
+        promotion["public_working_release"]["proposal_ids"].append("not-registered")
         errors = self.validate(promotion=promotion)
-        self.assertTrue(any("unknown dependency not-registered" in e for e in errors))
+        self.assertIn("promotion: exact full-book proposal inventory is required", errors)
 
     def test_promotion_must_link_the_book_rights_matrix(self):
         promotion = copy.deepcopy(self.promotion)
         promotion["rights_matrix"] = "compliance/other-rights.json"
         self.assertIn(
-            "promotion: rights matrix must use the repository-relative v1 path",
+            "promotion: rights_matrix binding is incorrect",
             self.validate(promotion=promotion),
         )
 

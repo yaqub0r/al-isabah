@@ -1,0 +1,315 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yaqub0r/al-isabah/schemas/current-release-closure.v2.schema.json",
+  "title": "Al-Isabah full-book public-working release closure v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "closureId",
+    "issue",
+    "publicationStatus",
+    "canonicalPromotion",
+    "consumerSchemaVersion",
+    "proposals",
+    "sourceAuthorities",
+    "sourceRegister",
+    "translationCoverage",
+    "governance",
+    "rights",
+    "promotion",
+    "previousClosure",
+    "sourceUnitCoverage",
+    "structuralCoverage",
+    "volumeInventory",
+    "contentIntegrity",
+    "reviewDisclosure",
+    "supersededInputs",
+    "publicationDecision",
+    "outputInventory"
+  ],
+  "properties": {
+    "schemaVersion": {"const": "2.0.0"},
+    "closureId": {"const": "issue-0100-full-book-public-working-closure-v1"},
+    "issue": {"const": "https://github.com/yaqub0r/al-isabah/issues/100"},
+    "publicationStatus": {"const": "public-working"},
+    "canonicalPromotion": {"const": "blocked"},
+    "consumerSchemaVersion": {"const": "2.0.0"},
+    "proposals": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {"$ref": "#/$defs/proposal"}
+    },
+    "sourceAuthorities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/sourceAuthority"}
+    },
+    "sourceRegister": {"$ref": "#/$defs/fileBinding"},
+    "translationCoverage": {"$ref": "#/$defs/fileBinding"},
+    "governance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["translationGovernanceReference", "policyBinding"],
+      "properties": {
+        "translationGovernanceReference": {"$ref": "#/$defs/fileBinding"},
+        "policyBinding": {"$ref": "#/$defs/fileBinding"}
+      }
+    },
+    "rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "matrixId", "license", "exclusionsSha256", "publicationDecisionSha256", "publicBoundaryDecisionSha256", "followUpReviewSha256"],
+      "properties": {
+        "path": {"const": "compliance/rights-matrix.al-isabah.v1.json"},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "matrixId": {"type": "string", "minLength": 1},
+        "license": {"const": "CC-BY-NC-SA-4.0"},
+        "exclusionsSha256": {"$ref": "#/$defs/sha256"},
+        "publicationDecisionSha256": {"$ref": "#/$defs/sha256"},
+        "publicBoundaryDecisionSha256": {"$ref": "#/$defs/sha256"},
+        "followUpReviewSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "promotion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "manifestId", "status", "canonicalPromotion"],
+      "properties": {
+        "path": {"const": "compliance/promotions/available-data.v3.json"},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "manifestId": {"const": "issue-0100-full-book-public-working-2026-10-13"},
+        "status": {"const": "approved-controlled-release"},
+        "canonicalPromotion": {"const": "blocked"}
+      }
+    },
+    "previousClosure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "closureId"],
+      "properties": {
+        "path": {"const": "compliance/publication/issue-0070.release-closure.v1.json"},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "closureId": {"const": "issue-0070-current-public-working-closure-v1"}
+      }
+    },
+    "sourceUnitCoverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceUnitCount", "firstSourceOrdinal", "lastSourceOrdinal", "uniqueSourceUnitIdCount", "identityOrderSha256"],
+      "properties": {
+        "sourceUnitCount": {"const": 12303},
+        "firstSourceOrdinal": {"const": 1},
+        "lastSourceOrdinal": {"const": 12303},
+        "uniqueSourceUnitIdCount": {"const": 12303},
+        "identityOrderSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "structuralCoverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ownedStructuralSegmentCount", "ownedStructuralIdsSha256", "inheritedDisplayContextCount", "inheritedDisplayContextIdsSha256", "displayStructuralItemCount", "suppressedAdjacentRestatementCount", "frontMaterial", "terminalMaterial"],
+      "properties": {
+        "ownedStructuralSegmentCount": {"const": 1382},
+        "ownedStructuralIdsSha256": {"$ref": "#/$defs/sha256"},
+        "inheritedDisplayContextCount": {"const": 23},
+        "inheritedDisplayContextIdsSha256": {"$ref": "#/$defs/sha256"},
+        "displayStructuralItemCount": {"const": 1405},
+        "suppressedAdjacentRestatementCount": {"const": 3},
+        "frontMaterial": {"$ref": "#/$defs/materialCoverage"},
+        "terminalMaterial": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["ownerSourceUnitId", "structuralItemCount", "structuralIdsSha256", "unownedTerminalMaterialCount"],
+          "properties": {
+            "ownerSourceUnitId": {"type": "string", "minLength": 1},
+            "structuralItemCount": {"type": "integer", "minimum": 0},
+            "structuralIdsSha256": {"$ref": "#/$defs/sha256"},
+            "unownedTerminalMaterialCount": {"const": 0}
+          }
+        }
+      }
+    },
+    "volumeInventory": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {"$ref": "#/$defs/volume"}
+    },
+    "contentIntegrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["titleBodySha256", "formulaOccurrenceCount", "formulaOccurrencesSha256", "nameMentionCount", "nameMentionsSha256", "unresolvedAndReviewSha256"],
+      "properties": {
+        "titleBodySha256": {"$ref": "#/$defs/sha256"},
+        "formulaOccurrenceCount": {"type": "integer", "minimum": 0},
+        "formulaOccurrencesSha256": {"$ref": "#/$defs/sha256"},
+        "nameMentionCount": {"type": "integer", "minimum": 0},
+        "nameMentionsSha256": {"$ref": "#/$defs/sha256"},
+        "unresolvedAndReviewSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "reviewDisclosure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["machinePassed", "needsAttention", "humanReviewed", "humanUnreviewed", "managementState", "coverageAffectsEligibility", "terminalCompletionClaim"],
+      "properties": {
+        "machinePassed": {"type": "integer", "minimum": 0},
+        "needsAttention": {"type": "integer", "minimum": 0},
+        "humanReviewed": {"const": 0},
+        "humanUnreviewed": {"const": 12303},
+        "managementState": {"const": "ongoing-nonterminal"},
+        "coverageAffectsEligibility": {"const": false},
+        "terminalCompletionClaim": {"const": false}
+      }
+    },
+    "supersededInputs": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {"$ref": "#/$defs/supersededInput"}
+    },
+    "publicationDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision", "automaticPushPublication", "operation", "immutableReleaseRequired", "commitAddressedTagPattern", "assetNamePattern", "checksumAssetNamePattern", "previousReleaseRetainedForRollback"],
+      "properties": {
+        "decision": {"const": "approved-for-controlled-public-working-release"},
+        "automaticPushPublication": {"const": false},
+        "operation": {"const": "manual-dispatch-after-protected-merge"},
+        "immutableReleaseRequired": {"const": true},
+        "commitAddressedTagPattern": {"const": "public-working-{repositoryCommit}"},
+        "assetNamePattern": {"const": "al-isabah-public-distribution-{repositoryCommit}.zip"},
+        "checksumAssetNamePattern": {"const": "al-isabah-public-distribution-{repositoryCommit}.zip.sha256"},
+        "previousReleaseRetainedForRollback": {"const": true}
+      }
+    },
+    "outputInventory": {
+      "type": "array",
+      "minItems": 18,
+      "maxItems": 18,
+      "items": {"$ref": "#/$defs/output"}
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "fileBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._/-]+$"},
+        "sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "proposal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["proposalId", "slice", "publicProposal", "publicReview", "policyBinding", "projection"],
+      "properties": {
+        "proposalId": {"pattern": "^issue-[0-9]{4}-public-proposal-v1$"},
+        "slice": {"$ref": "#/$defs/slice"},
+        "publicProposal": {"$ref": "#/$defs/fileBinding"},
+        "publicReview": {"$ref": "#/$defs/fileBinding"},
+        "policyBinding": {"$ref": "#/$defs/fileBinding"},
+        "projection": {"$ref": "#/$defs/projection"}
+      }
+    },
+    "slice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["volume", "startSourceOrdinal", "endSourceOrdinal", "sourceUnitCount", "ownedStructuralSegmentCount", "inheritedDisplayContextCount"],
+      "properties": {
+        "volume": {"type": "integer", "minimum": 1, "maximum": 8},
+        "startSourceOrdinal": {"type": "integer", "minimum": 1},
+        "endSourceOrdinal": {"type": "integer", "minimum": 1},
+        "sourceUnitCount": {"type": "integer", "minimum": 1},
+        "ownedStructuralSegmentCount": {"type": "integer", "minimum": 0},
+        "inheritedDisplayContextCount": {"type": "integer", "minimum": 0}
+      }
+    },
+    "projection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entryCount", "orderSha256", "userFacingSha256", "recordsSha256"],
+      "properties": {
+        "entryCount": {"type": "integer", "minimum": 1},
+        "orderSha256": {"$ref": "#/$defs/sha256"},
+        "userFacingSha256": {"$ref": "#/$defs/sha256"},
+        "recordsSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "sourceAuthority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceId", "commit", "artifactSha256", "license", "attributionRequired"],
+      "properties": {
+        "sourceId": {"type": "string", "minLength": 1},
+        "commit": {"type": "string", "pattern": "^[a-f0-9]{40}$"},
+        "artifactSha256": {"$ref": "#/$defs/sha256"},
+        "license": {"const": "CC-BY-NC-SA-4.0"},
+        "attributionRequired": {"const": true}
+      }
+    },
+    "materialCoverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ownerSourceUnitId", "structuralItemCount", "structuralIdsSha256"],
+      "properties": {
+        "ownerSourceUnitId": {"type": "string", "minLength": 1},
+        "structuralItemCount": {"type": "integer", "minimum": 0},
+        "structuralIdsSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "volume": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["volume", "proposalIds", "outputPath", "recordCount", "startSourceOrdinal", "endSourceOrdinal", "firstSourceUnitId", "lastSourceUnitId", "firstPage", "lastPage"],
+      "properties": {
+        "volume": {"type": "integer", "minimum": 1, "maximum": 8},
+        "proposalIds": {"type": "array", "minItems": 1, "items": {"pattern": "^issue-[0-9]{4}-public-proposal-v1$"}},
+        "outputPath": {"pattern": "^records/volume-[0-9]{2}\\.jsonl$"},
+        "recordCount": {"type": "integer", "minimum": 1},
+        "startSourceOrdinal": {"type": "integer", "minimum": 1},
+        "endSourceOrdinal": {"type": "integer", "minimum": 1},
+        "firstSourceUnitId": {"type": "string", "minLength": 1},
+        "lastSourceUnitId": {"type": "string", "minLength": 1},
+        "firstPage": {"$ref": "#/$defs/pageOwner"},
+        "lastPage": {"$ref": "#/$defs/pageOwner"}
+      }
+    },
+    "pageOwner": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["page", "ownerSourceUnitId"],
+      "properties": {
+        "page": {"type": "integer", "minimum": 1},
+        "ownerSourceUnitId": {"type": "string", "minLength": 1}
+      }
+    },
+    "supersededInput": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "recordCount", "replacement", "decision"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "recordCount": {"type": "integer", "minimum": 1},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "replacement": {"pattern": "^issue-[0-9]{4}-public-proposal-v1$"},
+        "decision": {"enum": ["excluded-superseded-public-proposal", "excluded-nonpublic-historical-evidence"]}
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "bytes", "recordCount"],
+      "properties": {
+        "path": {"pattern": "^(?:records/volume-[0-9]{2}\\.jsonl|reviews/issue-[0-9]{4}\\.json)$"},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "bytes": {"type": "integer", "minimum": 1},
+        "recordCount": {"type": "integer", "minimum": 1}
+      }
+    }
+  }
+}

@@ -1,22 +1,12 @@
 name: Publish public-working distribution
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "content/translation-proposals/**"
-      - "content/public-proposals/**"
-      - "compliance/**"
-      - "profiles/**"
-      - "schemas/**"
-      - "scripts/build_public_distribution.py"
-      - "scripts/validate_public_distribution.py"
-      - "scripts/validate_public_proposal.py"
-      - "scripts/validate_release_closure.py"
-      - "scripts/validate_current_release_closure.py"
-      - ".github/workflows/publish-public-distribution.yml"
   workflow_dispatch:
+    inputs:
+      repository_commit:
+        description: Exact reviewed main commit to publish
+        required: true
+        type: string
 
 permissions:
   contents: read
@@ -33,7 +23,7 @@ jobs:
     name: Build, validate, and publish immutable bundle
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 45
     permissions:
       contents: write
 
@@ -42,41 +32,61 @@ jobs:
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           fetch-depth: 0
+          ref: ${{ inputs.repository_commit }}
 
-      - name: Build deterministic distribution
+      - name: Require the exact current protected main commit
+        env:
+          REPOSITORY_COMMIT: ${{ inputs.repository_commit }}
         run: |
           set -euo pipefail
-          archive=".runtime/al-isabah-public-distribution-${GITHUB_SHA}.zip"
-          python3 scripts/validate_public_tree.py
-          python3 scripts/validate_public_proposal.py
-          python3 scripts/build_public_review.py \
-            --output content/public-proposals/issue-0026.public-review.json \
-            --check
-          python3 scripts/build_public_review.py \
-            --proposal content/public-proposals/issue-0053.public-proposal.json \
-            --output content/public-proposals/issue-0053.public-review.json \
-            --check
-          python3 scripts/validate_release_closure.py
-          python3 scripts/validate_current_release_closure.py
+          [[ "${REPOSITORY_COMMIT}" =~ ^[a-f0-9]{40}$ ]]
+          git fetch origin main
+          test "$(git rev-parse HEAD)" = "${REPOSITORY_COMMIT}"
+          test "$(git rev-parse origin/main)" = "${REPOSITORY_COMMIT}"
+
+      - name: Build deterministic distribution
+        env:
+          REPOSITORY_COMMIT: ${{ inputs.repository_commit }}
+        run: |
+          set -euo pipefail
+          archive=".runtime/al-isabah-public-distribution-${REPOSITORY_COMMIT}.zip"
+          verification_archive="${archive%.zip}.verification.zip"
+          python3 scripts/build_translation_governance_reference.py
+          python3 -m unittest discover -s tests
+          python3 scripts/validate_compliance.py
+          python3 scripts/validate_content.py
+          python3 scripts/validate_entry_titles.py
+          python3 scripts/execution_governance.py
           python3 scripts/build_public_distribution.py \
             --output .runtime/public-distribution \
             --archive "${archive}" \
-            --repository-commit "${GITHUB_SHA}"
+            --repository-commit "${REPOSITORY_COMMIT}"
           python3 scripts/validate_public_distribution.py .runtime/public-distribution
+          python3 -c 'import sys; from pathlib import Path; from scripts.build_public_distribution import package; package(Path(".runtime/public-distribution"), Path(sys.argv[1]))' "${verification_archive}"
+          cmp "${archive}" "${verification_archive}"
+          archive_dir="$(dirname "${archive}")"
+          archive_name="$(basename "${archive}")"
+          (cd "${archive_dir}" && sha256sum "${archive_name}" > "${archive_name}.sha256")
           echo "ARCHIVE=${archive}" >> "${GITHUB_ENV}"
+          echo "CHECKSUM=${archive}.sha256" >> "${GITHUB_ENV}"
 
       - name: Publish commit-addressed public-working pre-release
         env:
           GH_TOKEN: ${{ github.token }}
+          REPOSITORY_COMMIT: ${{ inputs.repository_commit }}
         run: |
           set -euo pipefail
-          tag="public-working-${GITHUB_SHA}"
-          if gh release view "${tag}" >/dev/null 2>&1; then
-            echo "${tag} already exists; immutable release retained."
-            exit 0
+          tag="public-working-${REPOSITORY_COMMIT}"
+          if git ls-remote --exit-code --tags origin "refs/tags/${tag}" >/dev/null 2>&1; then
+            echo "${tag} already exists as a remote tag; refusing to reuse it." >&2
+            exit 1
           fi
-          gh release create "${tag}" "${ARCHIVE}" \
-            --target "${GITHUB_SHA}" \
-            --title "Al-Isabah public-working distribution ${GITHUB_SHA::12}" \
-            --notes "Application-neutral, machine-ready public-working distribution. This is not a canonical or human-approved edition." \
+          if gh release view "${tag}" >/dev/null 2>&1; then
+            echo "${tag} already exists; refusing to mutate or replace it." >&2
+            exit 1
+          fi
+          gh release create "${tag}" "${ARCHIVE}" "${CHECKSUM}" \
+            --target "${REPOSITORY_COMMIT}" \
+            --title "Al-Isabah public-working distribution ${REPOSITORY_COMMIT::12}" \
+            --notes "Application-neutral, complete machine-ready public-working distribution. Human review remains ongoing and canonical promotion remains blocked. Verify the archive with the attached SHA-256 checksum." \
             --prerelease

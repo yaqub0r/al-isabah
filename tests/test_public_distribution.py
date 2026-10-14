@@ -97,6 +97,113 @@ class PublicDistributionTests(unittest.TestCase):
             ISSUE_0098_PROPOSAL_PATH.read_text(encoding="utf-8")
         )
 
+    def validate_against_frozen_current_closure(self, path):
+        expected = json.loads(
+            CURRENT_CLOSURE.CURRENT_CLOSURE.read_text(encoding="utf-8")
+        )
+        with patch.object(CURRENT_CLOSURE, "expected", return_value=(expected, [])):
+            return CURRENT_CLOSURE.validate(path)
+
+    def validate_distribution_with_verified_closure(self, path):
+        with patch.object(VALIDATE, "validate_closure", return_value=[]):
+            return VALIDATE.validate(path)
+
+    def build_historical_issue_70_distribution(self, output):
+        closure_path = ROOT / "compliance/publication/issue-0070.release-closure.v1.json"
+        closure = json.loads(closure_path.read_text(encoding="utf-8"))
+        proposals = [self.proposal, self.issue_0070_proposal]
+        output.mkdir(parents=True)
+        (output / "records").mkdir()
+        (output / "reviews").mkdir()
+        files = []
+        all_records = []
+        for volume, proposal in enumerate(proposals, start=1):
+            records = proposal["records"]
+            all_records.extend(records)
+            record_bytes = b"".join(BOUNDARY.canonical_json(record) for record in records)
+            relative = f"records/volume-{volume:02}.jsonl"
+            (output / relative).write_bytes(record_bytes)
+            files.append(
+                {
+                    "path": relative,
+                    "sha256": BOUNDARY.sha256_bytes(record_bytes),
+                    "bytes": len(record_bytes),
+                    "recordCount": len(records),
+                    "volume": volume,
+                }
+            )
+        for item in closure["proposals"]:
+            issue = item["proposalId"].split("-")[1]
+            source = ROOT / item["publicReview"]["path"]
+            (output / f"reviews/issue-{issue}.json").write_bytes(source.read_bytes())
+        (output / "release-closure.json").write_bytes(closure_path.read_bytes())
+
+        printed = {}
+        for record in all_records:
+            printed.setdefault(record["printedEntryNumber"], []).append(record["id"])
+        rights_matrix = json.loads(
+            (ROOT / "compliance/rights-matrix.al-isabah.v1.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        license_record = rights_matrix["public_content_license"]
+        authorities = {
+            proposal["sourceAuthority"]["sourceId"]: proposal["sourceAuthority"]
+            for proposal in proposals
+        }
+        manifest = {
+            "schemaVersion": "2.0.0",
+            "distributionId": f"al-isabah-public-working-{COMMIT[:12]}",
+            "publicationStatus": "public-working",
+            "canonicalPromotion": "blocked",
+            "work": {
+                "id": "ibn-hajar-al-isabah",
+                "titleArabic": "الإصابة في تمييز الصحابة",
+                "titleEnglish": "Al-Isabah fi Tamyiz al-Sahabah",
+            },
+            "repository": {
+                "url": "https://github.com/yaqub0r/al-isabah",
+                "commit": COMMIT,
+            },
+            "generatedAt": GENERATED_AT,
+            "rights": {
+                "matrixId": rights_matrix["matrix_id"],
+                "license": {
+                    "spdx": license_record["spdx"],
+                    "url": license_record["url"],
+                },
+                "softwareLicenseGranted": license_record["software_license_granted"],
+                "attribution": rights_matrix["attribution"],
+                "excludedMaterial": rights_matrix["exclusions"],
+            },
+            "packets": [
+                {
+                    "packetId": item["proposalId"],
+                    "sha256": item["publicProposal"]["sha256"],
+                    "entryCount": item["projection"]["entryCount"],
+                }
+                for item in closure["proposals"]
+            ],
+            "authorities": [authorities[key] for key in sorted(authorities)],
+            "counts": {
+                "entries": len(all_records),
+                "machinePassed": sum(p["review"]["machinePassed"] for p in proposals),
+                "needsAttention": sum(p["review"]["needsAttention"] for p in proposals),
+                "humanReviewed": sum(p["review"]["humanReviewed"] for p in proposals),
+            },
+            "duplicatePrintedEntryNumbers": [
+                {"printedEntryNumber": number, "recordIds": ids}
+                for number, ids in sorted(printed.items())
+                if len(ids) > 1
+            ],
+            "files": files,
+            "releaseClosure": {
+                "closureId": closure["closureId"],
+                "sha256": BOUNDARY.sha256_file(closure_path),
+            },
+        }
+        (output / "manifest.json").write_bytes(BOUNDARY.canonical_json(manifest))
+
     def test_issue_98_volume_eight_proposal_and_review_are_current(self):
         proposal = self.issue_0098_proposal
         records = proposal["records"]
@@ -875,18 +982,19 @@ class PublicDistributionTests(unittest.TestCase):
             closure = json.loads(
                 CURRENT_CLOSURE.CURRENT_CLOSURE.read_text(encoding="utf-8")
             )
-            del closure["reviewCounts"]
+            del closure["reviewDisclosure"]
             closure_path = root / "closure.json"
             closure_path.write_bytes(BOUNDARY.canonical_json(closure))
             self.assertTrue(
                 any(
                     "category=current-closure-mismatch" in error
-                    for error in CURRENT_CLOSURE.validate(closure_path)
+                    for error in self.validate_against_frozen_current_closure(closure_path)
                 )
             )
 
             output = root / "distribution"
-            BUILD.build(output, COMMIT, GENERATED_AT)
+            with patch.object(BUILD, "validate_closure", return_value=[]):
+                BUILD.build(output, COMMIT, GENERATED_AT)
             manifest_path = output / "manifest.json"
             manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
             del manifest["counts"]["humanReviewed"]
@@ -895,28 +1003,81 @@ class PublicDistributionTests(unittest.TestCase):
                 any(
                     "category=missing-field" in error
                     and ".counts.humanReviewed" in error
-                    for error in VALIDATE.validate(output)
+                    for error in self.validate_distribution_with_verified_closure(output)
                 )
             )
 
-    def test_current_closure_admits_corrected_volume2_and_quarantines_history(self):
+    def test_current_closure_admits_full_book_and_quarantines_history(self):
         paths, errors = CURRENT_CLOSURE.current_proposal_paths()
         self.assertEqual(errors, [])
-        self.assertEqual(paths, [PROPOSAL_PATH, ISSUE_0070_PROPOSAL_PATH])
+        self.assertEqual(
+            paths,
+            [
+                PROPOSAL_PATH,
+                ISSUE_0070_PROPOSAL_PATH,
+                ISSUE_0080_PROPOSAL_PATH,
+                ISSUE_0082_PROPOSAL_PATH,
+                ISSUE_0084_PROPOSAL_PATH,
+                ISSUE_0086_PROPOSAL_PATH,
+                ISSUE_0085_PROPOSAL_PATH,
+                ISSUE_0091_PROPOSAL_PATH,
+                ISSUE_0096_PROPOSAL_PATH,
+                ISSUE_0098_PROPOSAL_PATH,
+            ],
+        )
         closure = json.loads(
             CURRENT_CLOSURE.CURRENT_CLOSURE.read_text(encoding="utf-8")
         )
         self.assertEqual(
             [item["proposalId"] for item in closure["proposals"]],
-            ["issue-0026-public-proposal-v1", "issue-0070-public-proposal-v1"],
+            [
+                "issue-0026-public-proposal-v1",
+                "issue-0070-public-proposal-v1",
+                "issue-0080-public-proposal-v1",
+                "issue-0082-public-proposal-v1",
+                "issue-0084-public-proposal-v1",
+                "issue-0086-public-proposal-v1",
+                "issue-0085-public-proposal-v1",
+                "issue-0091-public-proposal-v1",
+                "issue-0096-public-proposal-v1",
+                "issue-0098-public-proposal-v1",
+            ],
         )
         self.assertEqual(
-            closure["historicalClosure"]["path"],
-            "compliance/publication/issue-0053.release-closure.v1.json",
+            closure["previousClosure"]["path"],
+            "compliance/publication/issue-0070.release-closure.v1.json",
         )
         self.assertEqual(
             closure["translationCoverage"]["path"],
             "compliance/translation-coverage.v1.json",
+        )
+        self.assertEqual(closure["sourceUnitCoverage"]["sourceUnitCount"], 12303)
+        self.assertEqual(
+            closure["structuralCoverage"]["ownedStructuralSegmentCount"], 1382
+        )
+        self.assertEqual(
+            closure["structuralCoverage"]["inheritedDisplayContextCount"], 23
+        )
+        self.assertEqual(
+            [(item["volume"], item["recordCount"]) for item in closure["volumeInventory"]],
+            [(1, 1537), (2, 1497), (3, 1491), (4, 1633), (5, 1604), (6, 1722), (7, 1940), (8, 879)],
+        )
+        self.assertEqual(
+            closure["volumeInventory"][2]["proposalIds"],
+            [
+                "issue-0080-public-proposal-v1",
+                "issue-0082-public-proposal-v1",
+                "issue-0084-public-proposal-v1",
+            ],
+        )
+        self.assertEqual(closure["reviewDisclosure"]["humanReviewed"], 0)
+        self.assertEqual(closure["reviewDisclosure"]["humanUnreviewed"], 12303)
+        self.assertEqual(
+            [(item["id"], item["recordCount"]) for item in closure["supersededInputs"]],
+            [
+                ("issue-0053-public-proposal-v1", 1497),
+                ("legacy-volume-08-private-provisional", 1550),
+            ],
         )
         register = json.loads(
             (ROOT / "compliance" / "source-register.v1.json").read_text(
@@ -1295,16 +1456,17 @@ class PublicDistributionTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
             output = root / "distribution"
-            manifest = BUILD.build(output, COMMIT, GENERATED_AT)
-            self.assertEqual(manifest["counts"]["entries"], 3034)
+            with patch.object(BUILD, "validate_closure", return_value=[]):
+                manifest = BUILD.build(output, COMMIT, GENERATED_AT)
+            self.assertEqual(manifest["counts"]["entries"], 12303)
             self.assertEqual(manifest["counts"]["humanReviewed"], 0)
             self.assertEqual(
                 [item["entryCount"] for item in manifest["packets"]],
-                [1537, 1497],
+                [1537, 1497, 373, 373, 745, 1633, 1604, 1722, 1940, 879],
             )
             self.assertEqual(manifest["schemaVersion"], "2.0.0")
             self.assertEqual(manifest["canonicalPromotion"], "blocked")
-            self.assertEqual(VALIDATE.validate(output), [])
+            self.assertEqual(self.validate_distribution_with_verified_closure(output), [])
             first = root / "first.zip"
             second = root / "second.zip"
             BUILD.package(output, first)
@@ -1317,11 +1479,161 @@ class PublicDistributionTests(unittest.TestCase):
                         "manifest.json",
                         "records/volume-01.jsonl",
                         "records/volume-02.jsonl",
+                        "records/volume-03.jsonl",
+                        "records/volume-04.jsonl",
+                        "records/volume-05.jsonl",
+                        "records/volume-06.jsonl",
+                        "records/volume-07.jsonl",
+                        "records/volume-08.jsonl",
                         "release-closure.json",
                         "reviews/issue-0026.json",
                         "reviews/issue-0070.json",
+                        "reviews/issue-0080.json",
+                        "reviews/issue-0082.json",
+                        "reviews/issue-0084.json",
+                        "reviews/issue-0085.json",
+                        "reviews/issue-0086.json",
+                        "reviews/issue-0091.json",
+                        "reviews/issue-0096.json",
+                        "reviews/issue-0098.json",
                     ],
                 )
+
+    def test_cumulative_records_preserve_frozen_proposals_except_adjacent_context(self):
+        proposals = [
+            self.proposal,
+            self.issue_0070_proposal,
+            self.issue_0080_proposal,
+            self.issue_0082_proposal,
+            self.issue_0084_proposal,
+            self.issue_0086_proposal,
+            self.issue_0085_proposal,
+            self.issue_0091_proposal,
+            self.issue_0096_proposal,
+            self.issue_0098_proposal,
+        ]
+        expected = []
+        for proposal in proposals:
+            for source_record in proposal["records"]:
+                record = copy.deepcopy(source_record)
+                if proposal["proposalId"] == "issue-0098-public-proposal-v1":
+                    record["precedingMaterial"] = [
+                        item
+                        for item in record["precedingMaterial"]
+                        if item["kind"] != "continued_structural_heading"
+                    ]
+                expected.append(record)
+
+        with tempfile.TemporaryDirectory() as temp:
+            output = Path(temp) / "distribution"
+            with patch.object(BUILD, "validate_closure", return_value=[]):
+                BUILD.build(output, COMMIT, GENERATED_AT)
+            actual = []
+            for path in sorted((output / "records").glob("volume-*.jsonl")):
+                actual.extend(
+                    json.loads(line)
+                    for line in path.read_text(encoding="utf-8").splitlines()
+                )
+        self.assertEqual(actual, expected)
+
+    def test_publication_workflow_is_manual_exact_commit_and_nonmutating(self):
+        workflow = (ROOT / ".github/workflows/publish-public-distribution.yml").read_text(
+            encoding="utf-8"
+        )
+        trigger = workflow.split("permissions:", 1)[0]
+        self.assertIn("workflow_dispatch:", trigger)
+        self.assertIn("repository_commit:", trigger)
+        self.assertNotIn("push:", trigger)
+        self.assertIn('ref: ${{ inputs.repository_commit }}', workflow)
+        self.assertIn('git rev-parse origin/main)', workflow)
+        self.assertIn('al-isabah-public-distribution-${REPOSITORY_COMMIT}.zip', workflow)
+        self.assertIn(
+            'sha256sum "${archive_name}" > "${archive_name}.sha256"', workflow
+        )
+        self.assertIn(
+            'git ls-remote --exit-code --tags origin "refs/tags/${tag}"', workflow
+        )
+        self.assertIn('already exists; refusing to mutate or replace it.', workflow)
+
+    def test_historical_schema_v2_distribution_remains_consumer_valid(self):
+        with tempfile.TemporaryDirectory() as temp:
+            output = Path(temp) / "distribution"
+            self.build_historical_issue_70_distribution(output)
+            self.assertEqual(VALIDATE.validate(output), [])
+
+    def test_distribution_rejects_authority_and_rights_tampering(self):
+        with tempfile.TemporaryDirectory() as temp:
+            output = Path(temp) / "distribution"
+            self.build_historical_issue_70_distribution(output)
+            manifest_path = output / "manifest.json"
+            original = json.loads(manifest_path.read_text(encoding="utf-8"))
+
+            authority_tampering = copy.deepcopy(original)
+            authority_tampering["authorities"][0]["commit"] = "0" * 40
+            manifest_path.write_bytes(BOUNDARY.canonical_json(authority_tampering))
+            self.assertTrue(
+                any(
+                    "category=source-mismatch" in error
+                    for error in VALIDATE.validate(output)
+                )
+            )
+
+            rights_tampering = copy.deepcopy(original)
+            rights_tampering["rights"]["attribution"] += " synthetic drift"
+            manifest_path.write_bytes(BOUNDARY.canonical_json(rights_tampering))
+            self.assertTrue(
+                any(
+                    "category=rights-mismatch" in error
+                    for error in VALIDATE.validate(output)
+                )
+            )
+
+            commit_tampering = copy.deepcopy(original)
+            commit_tampering["repository"]["commit"] = "0" * 40
+            manifest_path.write_bytes(BOUNDARY.canonical_json(commit_tampering))
+            self.assertTrue(
+                any(
+                    "category=distribution-id-mismatch" in error
+                    for error in VALIDATE.validate(output)
+                )
+            )
+
+            id_tampering = copy.deepcopy(original)
+            id_tampering["distributionId"] = "al-isabah-public-working-synthetic"
+            manifest_path.write_bytes(BOUNDARY.canonical_json(id_tampering))
+            self.assertTrue(
+                any(
+                    "category=distribution-id-mismatch" in error
+                    for error in VALIDATE.validate(output)
+                )
+            )
+
+    def test_closure_authority_binding_expands_to_exact_manifest_authority(self):
+        closure = json.loads(
+            CURRENT_CLOSURE.CURRENT_CLOSURE.read_text(encoding="utf-8")
+        )
+        self.assertEqual(
+            VALIDATE.expected_manifest_authorities(
+                closure, VALIDATE.proposal_bindings(closure)
+            ),
+            [self.proposal["sourceAuthority"]],
+        )
+
+    def test_full_book_invariant_rejects_a_truncated_sequence(self):
+        errors = VALIDATE.full_book_coverage_errors(
+            ordinals=list(range(1, 12303)),
+            unique_id_count=12302,
+            expected_count=12303,
+            file_volumes=list(range(1, 9)),
+            volume_three_ordinals=list(range(3035, 4526)),
+            owned_structural_ids=[f"owned-{index}" for index in range(1382)],
+            inherited_structural_ids=[
+                f"inherited-{index}" for index in range(23)
+            ],
+        )
+        self.assertTrue(
+            any("category=full-book-source-coverage-mismatch" in error for error in errors)
+        )
 
     def test_build_rejects_a_stale_quarantined_output(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -1333,7 +1645,8 @@ class PublicDistributionTests(unittest.TestCase):
                 BUILD.DistributionError,
                 "output directory must be empty",
             ):
-                BUILD.build(output, COMMIT, GENERATED_AT)
+                with patch.object(BUILD, "validate_closure", return_value=[]):
+                    BUILD.build(output, COMMIT, GENERATED_AT)
             with self.assertRaises(BUILD.DistributionError):
                 BUILD.package(output, Path(temp) / "stale.zip")
 
@@ -1395,21 +1708,42 @@ class PublicDistributionTests(unittest.TestCase):
             path.write_bytes(BOUNDARY.canonical_json(closure))
             self.assertTrue(any("category=projection-mismatch" in error for error in CLOSURE.validate(path)))
 
-    def test_current_closure_mismatch_fails_closed(self):
+    def test_current_closure_rejects_coverage_structure_and_governance_drift(self):
+        mutations = [
+            lambda value: value["sourceUnitCoverage"].__setitem__(
+                "sourceUnitCount", 12302
+            ),
+            lambda value: value["sourceUnitCoverage"].__setitem__(
+                "identityOrderSha256", "0" * 64
+            ),
+            lambda value: value["structuralCoverage"].__setitem__(
+                "ownedStructuralSegmentCount", 1381
+            ),
+            lambda value: value["rights"].__setitem__("sha256", "0" * 64),
+            lambda value: value["governance"][
+                "translationGovernanceReference"
+            ].__setitem__("sha256", "0" * 64),
+            lambda value: value["proposals"][0]["policyBinding"].__setitem__(
+                "sha256", "0" * 64
+            ),
+            lambda value: value["reviewDisclosure"].__setitem__(
+                "humanReviewed", 1
+            ),
+        ]
         with tempfile.TemporaryDirectory() as temp:
             path = Path(temp) / "closure.json"
-            closure = json.loads(
-                CURRENT_CLOSURE.CURRENT_CLOSURE.read_text(encoding="utf-8")
-            )
-            closure["reviewCounts"]["humanReviewed"] += 1
-            path.write_bytes(BOUNDARY.canonical_json(closure))
-            self.assertTrue(
-                any(
-                    "category=current-closure-mismatch" in error
-                    for error in CURRENT_CLOSURE.validate(path)
+            for mutate in mutations:
+                closure = json.loads(
+                    CURRENT_CLOSURE.CURRENT_CLOSURE.read_text(encoding="utf-8")
                 )
-            )
-
+                mutate(closure)
+                path.write_bytes(BOUNDARY.canonical_json(closure))
+                self.assertTrue(
+                    any(
+                        "category=current-closure-mismatch" in error
+                        for error in self.validate_against_frozen_current_closure(path)
+                    )
+                )
     def test_diagnostics_do_not_echo_rejected_values(self):
         rejected = "ghp_" + "9" * 24
         errors = BOUNDARY.boundary_errors({"outer": [{"inner": rejected}]})

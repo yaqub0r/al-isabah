@@ -1,7 +1,8 @@
 # Public distribution contract
 
 - **Status:** Accepted
-- **Issue:** [#28](https://github.com/yaqub0r/al-isabah/issues/28)
+- **Issues:** [#28](https://github.com/yaqub0r/al-isabah/issues/28),
+  [#100](https://github.com/yaqub0r/al-isabah/issues/100)
 - **Schema:** [`public-distribution.v2.schema.json`](../../schemas/public-distribution.v2.schema.json)
 
 ## Purpose
@@ -11,7 +12,7 @@ application-neutral public-working distributions. Applications consume this
 contract; they do not inspect translation packets, infer scholarly policy, or
 depend on the repository's internal working layout.
 
-Each strict `public-proposal.v1` artifact contributes its approved public-working
+Each strict public-proposal artifact contributes its approved public-working
 records to a deterministic distribution. Internal translation-work packets are
 not build inputs. A distribution is immutable,
 checksum-addressed, bound to the exact repository commit and source authority,
@@ -71,21 +72,40 @@ because human review is absent.
 `manifest.json` is the entry point. `release-closure.json` binds every current
 proposal, projection, public review, source authority, source register, rights
 decision, policy binding, review count, and non-manifest output hash. The
-historical issue-0026 closure remains immutable and is itself bound by the
-current cumulative closure. Record shards are newline-delimited JSON,
+historical Issue #70 closure remains immutable and is itself bound by the
+Issue #100 cumulative closure. That closure admits exactly the ten proposal and
+review pairs from Issues #26, #70, #80, #82, #84, #86, #85, #91, #96, and #98.
+It covers source ordinals 1–12,303 exactly once, binds 1,382 owned structural
+segments and 23 inherited display contexts, and proves front and terminal
+material completeness. The superseded Issue #53 Volume 2 proposal and the
+legacy private 1,550-record Volume 8 corpus are explicitly excluded.
+
+Record shards are newline-delimited JSON,
 split by volume and sorted by `(sourceOrdinal, id)`. The manifest records the
 SHA-256 digest, byte length, record count, and volume for every shard. A
 consumer rejects missing, extra, reordered, duplicated, or hash-mismatched
-content and rejects unknown major schema versions.
+content and rejects unknown major schema versions. The three disjoint Volume 3
+proposals are projected into one cumulative Volume 3 shard. At proposal
+boundaries, a `continued_structural_heading` already displayed by the preceding
+accepted slice is omitted from the cumulative display only; the frozen proposal
+and review bytes are never rewritten.
 
 Each proposal's deterministic review is emitted under `reviews/`, preserving
-its separate human-review management state. The CI pipeline builds and
-validates the cumulative distribution for every pull request. The publication
-workflow remains manually disabled between controlled releases; merging does
-not enable or dispatch it. A later, separately authorized immutable prerelease
-must still pass the protected test, public-boundary, historical-closure, and
-cumulative-closure checks. Any such release remains a transport for a
-public-working distribution, not a declaration of canonical publication.
+its separate human-review management state. The full-book closure discloses
+zero human-reviewed and 12,303 human-unreviewed records; that coverage does not
+change release eligibility or class. The CI pipeline builds and validates the
+cumulative distribution for every pull request.
+
+The publication workflow has no push trigger. A separately authorized
+maintainer dispatches it with `repository_commit` set to the full 40-character
+commit that must equal both checked-out `HEAD` and `origin/main`. The workflow
+reruns the protected validators, builds the archive twice and compares the
+bytes, refuses an existing commit tag, and creates a commit-addressed
+prerelease. For commit `<commit>`, the exact release asset is
+`al-isabah-public-distribution-<commit>.zip` with the attached
+`al-isabah-public-distribution-<commit>.zip.sha256`. This remains a transport
+for a `public-working` distribution, not canonical publication. No merge or
+ordinary push dispatches it.
 
 ## Compatibility changes
 
@@ -119,3 +139,8 @@ No predecessor is replaced by this supersession. Existing schema-v2 releases
 remain rollback and historical pins. Legacy schema-v1 releases remain retained
 for history but are superseded for new consumers because they contain the
 already documented legacy operational metadata.
+
+Issue #100 adds a full-book successor without mutating any predecessor. A
+correction, later human-review update, or additional scholarly decision must
+produce a new closure, commit, tag, and asset with explicit supersession; it
+must never replace bytes under an existing release identity.

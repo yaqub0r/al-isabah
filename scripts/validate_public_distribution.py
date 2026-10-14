@@ -10,7 +10,14 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-from public_boundary import boundary_errors, exact_keys, safe_error, sha256_file, summarize
+from public_boundary import (
+    boundary_errors,
+    exact_keys,
+    safe_error,
+    sha256_file,
+    sha256_text_file,
+    summarize,
+)
 from validate_public_proposal import KEYS as PROPOSAL_KEYS, RECORD_KEYS
 from validate_current_release_closure import (
     CURRENT_CLOSURE,
@@ -18,15 +25,139 @@ from validate_current_release_closure import (
 )
 
 
+ROOT = Path(__file__).resolve().parents[1]
 COMMIT = re.compile(r"^[a-f0-9]{40}$")
 IDENTIFIER = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._:-]{2,199}$")
 UTC_TIMESTAMP = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z$")
+FULL_BOOK_CLOSURE_ID = "issue-0100-full-book-public-working-closure-v1"
+SUPPORTED_CLOSURES = (
+    ROOT / "compliance/publication/issue-0026.release-closure.v1.json",
+    ROOT / "compliance/publication/issue-0053.release-closure.v1.json",
+    ROOT / "compliance/publication/issue-0070.release-closure.v1.json",
+    CURRENT_CLOSURE,
+)
 MANIFEST_KEYS = {"schemaVersion", "distributionId", "publicationStatus", "canonicalPromotion", "work", "repository", "generatedAt", "rights", "packets", "authorities", "counts", "duplicatePrintedEntryNumbers", "files", "releaseClosure"}
 COUNT_KEYS = {"entries", "machinePassed", "needsAttention", "humanReviewed"}
+WORK_KEYS = {"id", "titleArabic", "titleEnglish"}
+REPOSITORY_KEYS = {"url", "commit"}
+RIGHTS_MATRIX_PATH = "compliance/rights-matrix.al-isabah.v1.json"
+
+
+def proposal_bindings(closure: dict[str, Any]) -> list[dict[str, Any]]:
+    proposals = closure.get("proposals")
+    if isinstance(proposals, list):
+        return proposals
+    proposal = closure.get("publicProposal")
+    review = closure.get("publicReview")
+    projection = closure.get("projection")
+    if not all(isinstance(item, dict) for item in (proposal, review, projection)):
+        return []
+    proposal_document = json.loads((ROOT / proposal["path"]).read_text(encoding="utf-8"))
+    return [
+        {
+            "proposalId": proposal_document["proposalId"],
+            "publicProposal": proposal,
+            "publicReview": review,
+            "projection": projection,
+        }
+    ]
+
+
+def expected_manifest_rights(closure: dict[str, Any]) -> dict[str, Any] | None:
+    binding = closure.get("rights")
+    if not isinstance(binding, dict) or binding.get("path") != RIGHTS_MATRIX_PATH:
+        return None
+    path = ROOT / RIGHTS_MATRIX_PATH
+    if not path.is_file() or binding.get("sha256") != sha256_text_file(path):
+        return None
+    rights_matrix = json.loads(path.read_text(encoding="utf-8"))
+    license_record = rights_matrix["public_content_license"]
+    if (
+        binding.get("matrixId") != rights_matrix.get("matrix_id")
+        or binding.get("license") != license_record.get("spdx")
+    ):
+        return None
+    return {
+        "matrixId": rights_matrix["matrix_id"],
+        "license": {
+            "spdx": license_record["spdx"],
+            "url": license_record["url"],
+        },
+        "softwareLicenseGranted": license_record["software_license_granted"],
+        "attribution": rights_matrix["attribution"],
+        "excludedMaterial": rights_matrix["exclusions"],
+    }
+
+
+def expected_manifest_authorities(
+    closure: dict[str, Any], proposals: list[dict[str, Any]]
+) -> list[dict[str, Any]] | None:
+    authority_map: dict[str, dict[str, Any]] = {}
+    for item in proposals:
+        proposal_binding = item.get("publicProposal")
+        if not isinstance(proposal_binding, dict):
+            return None
+        relative = proposal_binding.get("path")
+        if not isinstance(relative, str):
+            return None
+        path = ROOT / relative
+        if (
+            not path.is_file()
+            or proposal_binding.get("sha256") != sha256_file(path)
+        ):
+            return None
+        proposal = json.loads(path.read_text(encoding="utf-8"))
+        authority = proposal.get("sourceAuthority")
+        if not isinstance(authority, dict) or not isinstance(
+            authority.get("sourceId"), str
+        ):
+            return None
+        previous = authority_map.get(authority["sourceId"])
+        if previous is not None and previous != authority:
+            return None
+        authority_map[authority["sourceId"]] = authority
+
+    authorities = [authority_map[key] for key in sorted(authority_map)]
+    closure_authorities = closure.get("sourceAuthorities")
+    if not isinstance(closure_authorities, list):
+        singular = closure.get("sourceAuthority")
+        if not isinstance(singular, dict):
+            return None
+        closure_authorities = [singular]
+    flattened = []
+    for authority in authorities:
+        license_record = authority.get("license")
+        if not isinstance(license_record, dict):
+            return None
+        flattened.append(
+            {
+                "sourceId": authority["sourceId"],
+                "commit": authority.get("commit"),
+                "artifactSha256": authority.get("sha256"),
+                "license": license_record.get("spdx"),
+                "attributionRequired": bool(license_record.get("attribution")),
+            }
+        )
+    if closure_authorities != flattened:
+        return None
+    return authorities
 
 
 def record_key_errors(record: dict[str, Any], base: str) -> list[str]:
-    errors = exact_keys(record, RECORD_KEYS, base)
+    allowed_keys = RECORD_KEYS | ({"bodyState"} if "bodyState" in record else set())
+    errors = exact_keys(record, allowed_keys, base)
+    if "bodyState" in record and (
+        record.get("bodyState") != "title-only"
+        or record.get("arabic") != ""
+        or record.get("english") != ""
+    ):
+        errors.append(safe_error(f"{base}.bodyState", "consumer-contract-mismatch"))
+    if (
+        record.get("arabic") == ""
+        and record.get("english") == ""
+        and record.get("bodyState") != "title-only"
+    ):
+        errors.append(safe_error(f"{base}.bodyState", "missing-field"))
     errors.extend(exact_keys(record.get("title"), PROPOSAL_KEYS["title"], f"{base}.title"))
     errors.extend(exact_keys(record.get("source"), PROPOSAL_KEYS["source"], f"{base}.source"))
     errors.extend(exact_keys(record.get("policy"), PROPOSAL_KEYS["policy"], f"{base}.policy"))
@@ -50,6 +181,37 @@ def record_key_errors(record: dict[str, Any], base: str) -> list[str]:
     return errors
 
 
+def full_book_coverage_errors(
+    *,
+    ordinals: list[Any],
+    unique_id_count: int,
+    expected_count: int,
+    file_volumes: list[Any],
+    volume_three_ordinals: list[Any],
+    owned_structural_ids: list[Any],
+    inherited_structural_ids: list[Any],
+) -> list[str]:
+    errors: list[str] = []
+    if (
+        ordinals != list(range(1, 12304))
+        or unique_id_count != 12303
+        or expected_count != 12303
+    ):
+        errors.append(safe_error("$.output.records", "full-book-source-coverage-mismatch"))
+    if file_volumes != list(range(1, 9)):
+        errors.append(safe_error("$.manifest.files", "volume-inventory-mismatch"))
+    if volume_three_ordinals != list(range(3035, 4526)):
+        errors.append(safe_error("$.output.records.volume-03", "volume-coverage-mismatch"))
+    if (
+        len(owned_structural_ids) != 1382
+        or len(set(owned_structural_ids)) != 1382
+        or len(inherited_structural_ids) != 23
+        or len(set(inherited_structural_ids)) != 23
+    ):
+        errors.append(safe_error("$.output.records", "structural-coverage-mismatch"))
+    return errors
+
+
 def validate(root: Path) -> list[str]:
     errors: list[str] = []
     manifest_path = root / "manifest.json"
@@ -61,6 +223,12 @@ def validate(root: Path) -> list[str]:
         return [safe_error(f"$.manifest.line[{getattr(error, 'lineno', 0)}]", "invalid-json")]
     errors.extend(exact_keys(manifest, MANIFEST_KEYS, "$.manifest"))
     errors.extend(exact_keys(manifest.get("counts"), COUNT_KEYS, "$.manifest.counts"))
+    errors.extend(exact_keys(manifest.get("work"), WORK_KEYS, "$.manifest.work"))
+    errors.extend(
+        exact_keys(
+            manifest.get("repository"), REPOSITORY_KEYS, "$.manifest.repository"
+        )
+    )
     errors.extend(boundary_errors(manifest, "$.manifest"))
     if manifest.get("schemaVersion") != "2.0.0" or manifest.get("publicationStatus") != "public-working" or manifest.get("canonicalPromotion") != "blocked":
         errors.append(safe_error("$.manifest", "consumer-contract-mismatch"))
@@ -72,35 +240,90 @@ def validate(root: Path) -> list[str]:
             datetime.fromisoformat(generated_at.replace("Z", "+00:00"))
         except ValueError:
             errors.append(safe_error("$.manifest.generatedAt", "timestamp-mismatch"))
+    work = manifest.get("work", {})
+    if work != {
+        "id": "ibn-hajar-al-isabah",
+        "titleArabic": "الإصابة في تمييز الصحابة",
+        "titleEnglish": "Al-Isabah fi Tamyiz al-Sahabah",
+    }:
+        errors.append(safe_error("$.manifest.work", "work-mismatch"))
     repository = manifest.get("repository", {})
-    if repository.get("url") != "https://github.com/yaqub0r/al-isabah" or not COMMIT.fullmatch(str(repository.get("commit", ""))):
+    if not isinstance(repository, dict):
+        repository = {}
+    repository_commit = str(repository.get("commit", ""))
+    if (
+        repository.get("url") != "https://github.com/yaqub0r/al-isabah"
+        or not COMMIT.fullmatch(repository_commit)
+    ):
         errors.append(safe_error("$.manifest.repository", "repository-mismatch"))
-    closure = json.loads(CURRENT_CLOSURE.read_text(encoding="utf-8"))
+    if manifest.get("distributionId") != (
+        f"al-isabah-public-working-{repository_commit[:12]}"
+    ):
+        errors.append(safe_error("$.manifest.distributionId", "distribution-id-mismatch"))
+    closure_copy = root / "release-closure.json"
+    if not closure_copy.is_file():
+        errors.append(safe_error("$.release-closure", "missing-file"))
+        return errors
+    try:
+        closure = json.loads(closure_copy.read_text(encoding="utf-8"))
+    except (UnicodeError, json.JSONDecodeError) as error:
+        errors.append(
+            safe_error(
+                f"$.release-closure.line[{getattr(error, 'lineno', 0)}]",
+                "invalid-json",
+            )
+        )
+        return errors
+    closure_id = closure.get("closureId")
+    supported_closure = next(
+        (
+            path
+            for path in SUPPORTED_CLOSURES
+            if json.loads(path.read_text(encoding="utf-8")).get("closureId")
+            == closure_id
+        ),
+        None,
+    )
+    if (
+        supported_closure is None
+        or closure_copy.read_bytes() != supported_closure.read_bytes()
+    ):
+        errors.append(safe_error("$.release-closure", "closure-copy-mismatch"))
+        return errors
     closure_binding = manifest.get("releaseClosure", {})
     if closure_binding != {
         "closureId": closure["closureId"],
-        "sha256": sha256_file(CURRENT_CLOSURE),
+        "sha256": sha256_file(supported_closure),
     }:
         errors.append(safe_error("$.manifest.releaseClosure", "closure-mismatch"))
-    closure_errors = validate_closure(CURRENT_CLOSURE)
-    if closure_errors:
-        errors.append(safe_error("$.manifest.releaseClosure", "closure-invalid"))
-    if not (root / "release-closure.json").is_file() or (root / "release-closure.json").read_bytes() != CURRENT_CLOSURE.read_bytes():
-        errors.append(safe_error("$.release-closure", "closure-copy-mismatch"))
-    authorities = {item.get("sourceId"): item for item in manifest.get("authorities", [])}
-    expected_authorities = {
-        item["sourceId"]
-        for item in closure.get("sourceAuthorities", [])
-    }
-    if set(authorities) != expected_authorities:
+    if closure_id == FULL_BOOK_CLOSURE_ID:
+        closure_errors = validate_closure(CURRENT_CLOSURE)
+        if closure_errors:
+            errors.append(safe_error("$.manifest.releaseClosure", "closure-invalid"))
+    if manifest.get("schemaVersion") != closure.get("consumerSchemaVersion"):
+        errors.append(safe_error("$.manifest.schemaVersion", "consumer-contract-mismatch"))
+    proposals = proposal_bindings(closure)
+    manifest_authorities = manifest.get("authorities")
+    authorities = {
+        item.get("sourceId"): item
+        for item in manifest_authorities
+        if isinstance(item, dict)
+    } if isinstance(manifest_authorities, list) else {}
+    expected_authorities = expected_manifest_authorities(closure, proposals)
+    if expected_authorities is None or manifest_authorities != expected_authorities:
         errors.append(safe_error("$.manifest.authorities", "source-mismatch"))
+    expected_rights = expected_manifest_rights(closure)
+    if expected_rights is None:
+        errors.append(safe_error("$.release-closure.rights", "rights-mismatch"))
+    elif manifest.get("rights") != expected_rights:
+        errors.append(safe_error("$.manifest.rights", "rights-mismatch"))
     expected_packets = [
         {
             "packetId": item["proposalId"],
             "sha256": item["publicProposal"]["sha256"],
             "entryCount": item["projection"]["entryCount"],
         }
-        for item in closure.get("proposals", [])
+        for item in proposals
     ]
     if manifest.get("packets") != expected_packets:
         errors.append(safe_error("$.manifest.packets", "proposal-set-mismatch"))
@@ -112,6 +335,7 @@ def validate(root: Path) -> list[str]:
     needs_attention = 0
     human_reviewed = 0
     previous: tuple[int, str] | None = None
+    all_records: list[dict[str, Any]] = []
     for item in manifest.get("files", []):
         relative = item.get("path")
         volume = item.get("volume")
@@ -131,6 +355,7 @@ def validate(root: Path) -> list[str]:
         for index, record in enumerate(records):
             base = f"$.output.records[{index}]"
             count += 1
+            all_records.append(record)
             errors.extend(record_key_errors(record, base))
             errors.extend(boundary_errors(record, base))
             record_id = record.get("id")
@@ -162,7 +387,7 @@ def validate(root: Path) -> list[str]:
         errors.append(safe_error("$.output.records", "output-inventory-mismatch"))
     counts = manifest.get("counts", {})
     expected_count = sum(
-        item["projection"]["entryCount"] for item in closure.get("proposals", [])
+        item["projection"]["entryCount"] for item in proposals
     )
     if counts != {
         "entries": count,
@@ -171,6 +396,36 @@ def validate(root: Path) -> list[str]:
         "humanReviewed": human_reviewed,
     } or count != expected_count:
         errors.append(safe_error("$.manifest.counts", "record-count-mismatch"))
+    if closure_id == FULL_BOOK_CLOSURE_ID:
+        file_volumes = [item.get("volume") for item in manifest.get("files", [])]
+        volume_three = [record for record in all_records if record.get("volume") == 3]
+        owned_structural = [
+            item
+            for record in all_records
+            for item in record.get("precedingMaterial", [])
+            if item.get("kind") != "continued_structural_heading"
+        ]
+        inherited_structural = [
+            item
+            for record in all_records
+            for item in record.get("precedingMaterial", [])
+            if item.get("kind") == "continued_structural_heading"
+        ]
+        errors.extend(
+            full_book_coverage_errors(
+                ordinals=[record.get("sourceOrdinal") for record in all_records],
+                unique_id_count=len(seen),
+                expected_count=expected_count,
+                file_volumes=file_volumes,
+                volume_three_ordinals=[
+                    record.get("sourceOrdinal") for record in volume_three
+                ],
+                owned_structural_ids=[item.get("id") for item in owned_structural],
+                inherited_structural_ids=[
+                    item.get("id") for item in inherited_structural
+                ],
+            )
+        )
     declared = {int(item["printedEntryNumber"]): item["recordIds"] for item in manifest.get("duplicatePrintedEntryNumbers", [])}
     actual = {number: ids for number, ids in printed.items() if len(ids) > 1}
     if declared != actual:
