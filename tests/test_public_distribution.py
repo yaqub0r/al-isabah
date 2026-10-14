@@ -1548,6 +1548,11 @@ class PublicDistributionTests(unittest.TestCase):
         self.assertIn('git rev-parse origin/main)', workflow)
         self.assertIn('al-isabah-public-distribution-${REPOSITORY_COMMIT}.zip', workflow)
         self.assertIn(
+            'sys.path.insert(0, str(Path("scripts").resolve())); '
+            'from build_public_distribution import package',
+            workflow,
+        )
+        self.assertIn(
             'sha256sum "${archive_name}" > "${archive_name}.sha256"', workflow
         )
         self.assertIn(
